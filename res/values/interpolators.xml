@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="interpolator" name="dummy_ae_6">false</item>
+    <item type="interpolator" name="dummy_ae_7">false</item>
+    <item type="interpolator" name="dummy_ae_9">false</item>
+    <item type="interpolator" name="dummy_ae_c">false</item>
+    <item type="interpolator" name="dummy_ae_d">false</item>
+    <item type="interpolator" name="dummy_ae_e">false</item>
+    <item type="interpolator" name="dummy_ae_f">false</item>
+</resources>

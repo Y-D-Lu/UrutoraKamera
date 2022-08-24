@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="font" name="dummy_ae_1">false</item>
+    <item type="font" name="dummy_ae_8">false</item>
+    <item type="font" name="dummy_ae_d">false</item>
+    <item type="font" name="dummy_ae_e">false</item>
+    <item type="font" name="settingslib_config_headlineFontFamily">@font/google_sans</item>
+</resources>

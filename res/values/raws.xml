@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="raw" name="dummy_ae_0">false</item>
+    <item type="raw" name="dummy_ae_2">false</item>
+    <item type="raw" name="dummy_ae_3">false</item>
+    <item type="raw" name="dummy_ae_6">false</item>
+    <item type="raw" name="dummy_ae_7">false</item>
+    <item type="raw" name="dummy_ae_8">false</item>
+    <item type="raw" name="dummy_ae_c">false</item>
+    <item type="raw" name="dummy_ae_d">false</item>
+    <item type="raw" name="dummy_ae_e">false</item>
+    <item type="raw" name="dummy_ae_11">false</item>
+</resources>

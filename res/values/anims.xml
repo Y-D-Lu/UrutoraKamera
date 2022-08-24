@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="anim" name="dummy_ae_0">false</item>
+    <item type="anim" name="dummy_ae_1">false</item>
+    <item type="anim" name="dummy_ae_6">false</item>
+    <item type="anim" name="dummy_ae_7">false</item>
+    <item type="anim" name="dummy_ae_8">false</item>
+    <item type="anim" name="dummy_ae_9">false</item>
+    <item type="anim" name="dummy_ae_a">false</item>
+    <item type="anim" name="dummy_ae_b">false</item>
+    <item type="anim" name="dummy_ae_1a">false</item>
+    <item type="anim" name="dummy_ae_1b">false</item>
+    <item type="anim" name="dummy_ae_1c">false</item>
+    <item type="anim" name="dummy_ae_1d">false</item>
+    <item type="anim" name="dummy_ae_22">false</item>
+    <item type="anim" name="dummy_ae_23">false</item>
+    <item type="anim" name="dummy_ae_24">false</item>
+    <item type="anim" name="dummy_ae_25">false</item>
+    <item type="anim" name="dummy_ae_26">false</item>
+    <item type="anim" name="dummy_ae_27">false</item>
+    <item type="anim" name="dummy_ae_28">false</item>
+    <item type="anim" name="dummy_ae_29">false</item>
+    <item type="anim" name="dummy_ae_2c">false</item>
+    <item type="anim" name="dummy_ae_3b">false</item>
+    <item type="anim" name="dummy_ae_3c">false</item>
+    <item type="anim" name="dummy_ae_3d">false</item>
+    <item type="anim" name="dummy_ae_3e">false</item>
+    <item type="anim" name="dummy_ae_3f">false</item>
+</resources>
