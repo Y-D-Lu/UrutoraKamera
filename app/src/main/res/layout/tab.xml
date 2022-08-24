@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+    <TextView android:textAppearance="?attr/textAppearanceSubtitle2" android:textColor="?attr/colorOnSurfaceVariant" android:layout_gravity="center_vertical" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:drawablePadding="4dp"/>
+</LinearLayout>

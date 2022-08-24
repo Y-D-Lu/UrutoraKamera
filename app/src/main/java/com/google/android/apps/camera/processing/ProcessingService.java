@@ -1,0 +1,242 @@
+package com.google.android.apps.camera.processing;
+
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.Service;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.PowerManager;
+import com.Helper;
+import com.google.android.apps.camera.processing.ProcessingService;
+import java.util.concurrent.TimeUnit;
+import org.codeaurora.snapcam.R;
+
+/* compiled from: PG */
+/* loaded from: classes.dex */
+public class ProcessingService extends Service implements hho {
+    private static final long t = TimeUnit.SECONDS.toMillis(60);
+    public Notification.Builder a;
+    public hhp c;
+    public hhn d;
+    public boolean g;
+    public boolean h;
+    public boolean i;
+    public NotificationManager j;
+    public hhl k;
+    public PowerManager l;
+    public afp m;
+    public ljf n;
+    public lar o;
+    public Handler p;
+    public lzh q;
+    public fjr r;
+    public enw s;
+    private Thread v;
+    private boolean w;
+    private final hhk u = new hhk(this);
+    public final Object b = new Object();
+    public volatile boolean e = false;
+    public final Object f = new Object();
+
+    private final void d() {
+        if (this.w) {
+            return;
+        }
+        this.w = true;
+        ((hhj) ((enc) getApplication()).c(hhj.class)).q(this);
+        if (!this.q.d) {
+            return;
+        }
+        this.j.deleteNotificationChannel("camera");
+        for (NotificationChannel notificationChannel : this.j.getNotificationChannels()) {
+            if ("processing".equals(notificationChannel.getId())) {
+                return;
+            }
+        }
+        NotificationChannel notificationChannel2 = new NotificationChannel("processing", getText(R.string.processing_notification_channel), 2);
+        notificationChannel2.setShowBadge(false);
+        this.j.createNotificationChannel(notificationChannel2);
+    }
+
+    @Override // defpackage.hho
+    public final void a(lif lifVar) {
+        this.a.setProgress(100, lifVar.e, false);
+        c();
+    }
+
+    @Override // defpackage.hho
+    public final void b(jmo jmoVar) {
+        this.a.setContentText(jmoVar.a(getResources()));
+        c();
+    }
+
+    public final void c() {
+        synchronized (this.f) {
+            if (!this.g || this.i) {
+                this.h = true;
+            } else {
+                this.j.notify(2, this.a.build());
+                this.g = false;
+                this.h = false;
+                this.p.postDelayed(new Runnable() { // from class: hhh
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        ProcessingService processingService = ProcessingService.this;
+                        synchronized (processingService.f) {
+                            processingService.g = true;
+                            if (processingService.h) {
+                                processingService.c();
+                            }
+                        }
+                    }
+                }, 1000L);
+                Helper.sHdr_process = 1;
+                Helper.sHdrProcessTime(1);
+            }
+        }
+    }
+
+    @Override // android.app.Service
+    public final IBinder onBind(Intent intent) {
+        return null;
+    }
+
+    @Override // android.app.Service
+    public final void onCreate() {
+        d();
+        super.onCreate();
+        synchronized (this.f) {
+            this.g = true;
+            this.h = false;
+            this.i = false;
+        }
+        this.n.e("ProcessingService#onCreate");
+        this.n.e("WakeLock#new");
+        hhp hhpVar = new hhp(this.l, t);
+        this.c = hhpVar;
+        hhpVar.a("onCreate");
+        this.s.a();
+        this.n.f();
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction("com.google.android.apps.camera.legacy.app.processing.PAUSE");
+        intentFilter.addAction("com.google.android.apps.camera.legacy.app.processing.RESUME");
+        this.m.b(this.u, intentFilter);
+        this.a = (this.q.d ? new Notification.Builder(this, "processing") : new Notification.Builder(this)).setSmallIcon(R.drawable.ic_notification).setColor(getResources().getColor(R.color.processing_notification)).setWhen(System.currentTimeMillis()).setOngoing(true).setContentTitle(getText(R.string.app_name));
+        this.n.f();
+    }
+
+    @Override // android.app.Service
+    public final void onDestroy() {
+        pih pihVar;
+        this.c.b();
+        this.s.b();
+        this.m.c(this.u);
+        stopForeground(true);
+        hhl hhlVar = this.k;
+        synchronized (hhlVar.b) {
+            hhlVar.g = 3;
+            lis lisVar = hhlVar.a;
+            String str = true != hhlVar.d ? "No" : "Yes";
+            lisVar.f(str.length() != 0 ? "Service destroyed, restarting? ".concat(str) : new String("Service destroyed, restarting? "));
+            if (hhlVar.d) {
+                hhlVar.d = false;
+                hhlVar.b();
+                pihVar = null;
+            } else if (!hhlVar.c.isEmpty()) {
+                throw new IllegalStateException("Service destroyed, not restarting but queue has items.");
+            } else {
+                pihVar = hhlVar.f;
+                hhlVar.f = pih.f();
+            }
+        }
+        if (pihVar != null) {
+            pihVar.o(Object.class);
+        }
+        Helper.sHdr_process = 0;
+        Helper.sHdrProcessTime(0);
+    }
+
+    @Override // android.app.Service
+    public final int onStartCommand(Intent intent, int i, int i2) {
+        d();
+        startForeground(2, this.a.build());
+        if (this.v == null) {
+            final fjq fjqVar = new fjq(this.r);
+            lab labVar = new lab(9, new Runnable() { // from class: hhi
+                @Override // java.lang.Runnable
+                public final void run() {
+                    hhn hhnVar;
+                    ProcessingService processingService = ProcessingService.this;
+                    fjq fjqVar2 = fjqVar;
+                    while (true) {
+                        try {
+                            hhl hhlVar = processingService.k;
+                            synchronized (hhlVar.b) {
+                                if (hhlVar.c.isEmpty() || hhlVar.e) {
+                                    lis lisVar = hhlVar.a;
+                                    boolean z = hhlVar.e;
+                                    StringBuilder sb = new StringBuilder(28);
+                                    sb.append("Popping null. On hold? ");
+                                    sb.append(z);
+                                    lisVar.b(sb.toString());
+                                    hhlVar.g = 2;
+                                    hhnVar = null;
+                                } else {
+                                    hhnVar = (hhn) hhlVar.c.remove();
+                                    lis lisVar2 = hhlVar.a;
+                                    int size = hhlVar.c.size();
+                                    String valueOf = String.valueOf(hhnVar);
+                                    StringBuilder sb2 = new StringBuilder(String.valueOf(valueOf).length() + 49);
+                                    sb2.append("Popping a session. Remaining: ");
+                                    sb2.append(size);
+                                    sb2.append(" , task ");
+                                    sb2.append(valueOf);
+                                    lisVar2.b(sb2.toString());
+                                }
+                            }
+                            if (hhnVar == null) {
+                                break;
+                            }
+                            synchronized (processingService.b) {
+                                processingService.d = hhnVar;
+                                if (processingService.e) {
+                                    processingService.d.g();
+                                }
+                            }
+                            fjqVar2.d(hhnVar.b());
+                            processingService.a.setContentText("…").setProgress(100, 0, false);
+                            processingService.c();
+                            hhm a = hhnVar.a();
+                            if (a != null) {
+                                a.c(processingService);
+                            }
+                            System.gc();
+                            processingService.c.a(hhnVar.b());
+                            hhnVar.d(processingService);
+                            fjqVar2.b();
+                        } finally {
+                            try {
+                            } finally {
+                            }
+                        }
+                    }
+                    synchronized (processingService.b) {
+                        processingService.d = null;
+                    }
+                    synchronized (processingService.f) {
+                        processingService.g = false;
+                        processingService.h = false;
+                        processingService.i = true;
+                    }
+                }
+            }, "CameraProcessingThread");
+            this.v = labVar;
+            labVar.start();
+            return 1;
+        }
+        return 1;
+    }
+}

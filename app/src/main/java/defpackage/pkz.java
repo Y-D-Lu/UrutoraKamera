@@ -1,0 +1,24 @@
+package defpackage;
+
+import com.google.googlex.gcam.ShotMetadata;
+import com.google.googlex.gcam.hdrplus.HdrPlusInterface;
+import com.google.googlex.gcam.hdrplus.ManagedImageCallback;
+
+/* renamed from: pkz  reason: default package */
+/* loaded from: classes2.dex */
+public final class pkz {
+    public final HdrPlusInterface a;
+
+    public pkz(HdrPlusInterface hdrPlusInterface) {
+        this.a = hdrPlusInterface;
+    }
+
+    public static ManagedImageCallback a(final pky pkyVar) {
+        return new ManagedImageCallback() { // from class: pkw
+            @Override // com.google.googlex.gcam.hdrplus.ManagedImageCallback
+            public final void accept(int i, long j, long j2, int i2) {
+                pky.this.a(i, j, new ShotMetadata(j2), i2);
+            }
+        };
+    }
+}

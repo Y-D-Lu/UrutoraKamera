@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId 'org.codeaurora.snapcam'
+        minSdkVersion 29
+        targetSdkVersion 29
+        versionCode 64764891
+        versionName "8.4.300.414775575.18"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+        lintOptions {
+            abortOnError false
+        }
+}
+
+dependencies {
+    // some dependencies
+}

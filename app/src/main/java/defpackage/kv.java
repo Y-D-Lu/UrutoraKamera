@@ -1,0 +1,7 @@
+package defpackage;
+
+/* renamed from: kv  reason: default package */
+/* loaded from: classes.dex */
+public interface kv {
+    boolean b(kz kzVar);
+}

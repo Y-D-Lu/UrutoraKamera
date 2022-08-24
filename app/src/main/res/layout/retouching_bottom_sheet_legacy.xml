@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?attr/textAppearanceBody2" android:textSize="14sp" android:textColor="@color/google_white" android:id="@+id/retouching_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/retouching_edu_desc" android:fontFamily="roboto" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:lineHeight="20sp"/>
+        <FrameLayout android:id="@+id/content_level_selector" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/example_images_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/google_white" android:id="@+id/disclaimer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/retouching_edu_disc" android:fontFamily="roboto" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:lineHeight="16sp"/>
+        <com.google.android.material.button.MaterialButton android:textColor="@color/google_blue300" android:id="@+id/apply_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/retouching_edu_apply" android:fontFamily="@font/google_sans_medium_compat" android:layout_marginHorizontal="24dp" android:layout_marginVertical="18dp" android:paddingVertical="8dp" android:lineHeight="20sp" app:backgroundTint="@color/google_grey800" app:backgroundTintMode="src_atop" app:cornerRadius="4dp" app:rippleColor="#33ffffff" style="@style/Widget.GoogleMaterial.Button"/>
+    </LinearLayout>
+</merge>

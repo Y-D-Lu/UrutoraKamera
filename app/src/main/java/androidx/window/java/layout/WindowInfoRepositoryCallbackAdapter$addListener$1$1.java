@@ -1,0 +1,55 @@
+package androidx.window.java.layout;
+
+@qlw(b = "androidx.window.java.layout.WindowInfoRepositoryCallbackAdapter$addListener$1$1", c = "WindowInfoRepositoryCallbackAdapter.kt", d = "invokeSuspend", e = {112})
+/* loaded from: classes.dex */
+final class WindowInfoRepositoryCallbackAdapter$addListener$1$1 extends qmb implements qmy {
+    final /* synthetic */ fb $consumer;
+    final /* synthetic */ qtr $flow;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public WindowInfoRepositoryCallbackAdapter$addListener$1$1(qtr qtrVar, fb fbVar, qlh qlhVar) {
+        super(2, qlhVar);
+        this.$flow = qtrVar;
+        this.$consumer = fbVar;
+    }
+
+    @Override // defpackage.qls
+    public final qlh create(Object obj, qlh qlhVar) {
+        return new WindowInfoRepositoryCallbackAdapter$addListener$1$1(this.$flow, this.$consumer, qlhVar);
+    }
+
+    @Override // defpackage.qmy
+    public final Object invoke(qqj qqjVar, qlh qlhVar) {
+        return ((WindowInfoRepositoryCallbackAdapter$addListener$1$1) create(qqjVar, qlhVar)).invokeSuspend(qks.a);
+    }
+
+    @Override // defpackage.qls
+    public final Object invokeSuspend(Object obj) {
+        qlp qlpVar = qlp.COROUTINE_SUSPENDED;
+        switch (this.label) {
+            case 0:
+                qmd.M(obj);
+                qtr qtrVar = this.$flow;
+                final fb fbVar = this.$consumer;
+                qts qtsVar = new qts() { // from class: androidx.window.java.layout.WindowInfoRepositoryCallbackAdapter$addListener$1$1$invokeSuspend$$inlined$collect$1
+                    @Override // defpackage.qts
+                    public Object emit(Object obj2, qlh qlhVar) {
+                        fb.this.accept(obj2);
+                        return qks.a;
+                    }
+                };
+                this.label = 1;
+                if (qtrVar.a(qtsVar, this) == qlpVar) {
+                    return qlpVar;
+                }
+                break;
+            case 1:
+                qmd.M(obj);
+                break;
+            default:
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        return qks.a;
+    }
+}

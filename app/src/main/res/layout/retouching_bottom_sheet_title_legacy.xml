@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?attr/textAppearanceHeadline5" android:gravity="start" android:id="@+id/retouching_sheet_title" android:paddingTop="4dp" android:paddingBottom="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retouching_edu_title" android:fontFamily="@font/google_sans_medium_compat"/>
+    <FrameLayout android:gravity="center" android:id="@+id/title_level_selector" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

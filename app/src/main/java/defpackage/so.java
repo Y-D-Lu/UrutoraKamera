@@ -1,0 +1,8 @@
+package defpackage;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* renamed from: so  reason: default package */
+/* loaded from: classes2.dex */
+public interface so {
+    void a();
+}

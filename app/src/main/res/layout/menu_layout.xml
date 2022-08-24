@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/menu_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/menu_right_margin" android:layout_marginBottom="@dimen/menu_bottom_margin">
+        <ImageView android:layout_gravity="right" android:id="@+id/arrow_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/menu_arrow_right_margin" android:src="@drawable/ic_arrow_down" android:scaleX="-1" android:scaleY="-1"/>
+        <LinearLayout android:id="@+id/menu_background" android:background="@drawable/menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/menu_inner_layout" android:paddingTop="24dp" android:clickable="true" android:layout_width="@dimen/menu_width" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/menu_header_container" android:paddingLeft="24dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="@dimen/menu_header_height">
+                    <TextView android:textAppearance="?attr/textAppearanceSubhead2" android:textColor="?attr/colorOnSurface" android:layout_gravity="center" android:id="@+id/menu_header_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <ImageButton android:layout_gravity="end|center_vertical" android:id="@+id/menu_help_button" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_gm_ic_help_outline_black_18" android:tint="?attr/colorOnSurface"/>
+                </FrameLayout>
+                <ListView android:id="@+id/option_list" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:choiceMode="singleChoice" android:soundEffectsEnabled="false"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@+id/arrow_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/menu_arrow_right_margin" android:src="@drawable/ic_arrow_down"/>
+    </LinearLayout>
+</merge>

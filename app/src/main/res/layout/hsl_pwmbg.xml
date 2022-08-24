@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:background="@color/gm3_sys_color_dynamic_dark_outline" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="50dp" android:paddingEnd="?android:attr/scrollbarSize">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="6dp">
+        <TextView android:textSize="@dimen/camera_settings_preference_font_size" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:fontFamily="@font/google_sans"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@android:color/white" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@android:id/title" android:layout_alignStart="@android:id/title"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="16dp"/>
+</LinearLayout>

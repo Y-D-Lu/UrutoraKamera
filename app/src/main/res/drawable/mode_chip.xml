@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="@dimen/mode_chip_inset_horizontal" android:insetRight="@dimen/mode_chip_inset_horizontal" android:insetTop="@dimen/mode_chip_inset_top" android:insetBottom="@dimen/mode_chip_inset_vertical">
+    <shape>
+        <solid android:color="@color/mode_chip_color"/>
+        <padding android:left="16dp" android:top="7dp" android:right="16dp" android:bottom="7dp"/>
+        <corners android:radius="100dp"/>
+    </shape>
+</inset>

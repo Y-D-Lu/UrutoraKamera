@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/item_framelayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/item_framelayout_inner" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_linearlayout_row_container" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="8dp" android:layout_marginBottom="12dp" android:layout_marginStart="8dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/item_linearlayout_row_first" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@+id/item_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?attr/colorOnSurface"/>
+                <TextView android:textAppearance="?attr/textAppearanceSubhead2" android:textColor="?attr/colorOnSurface" android:layout_gravity="center_vertical" android:id="@+id/item_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="17dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/item_linearlayout_row_second" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@+id/item_button_icon_second" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?attr/colorOnSurfaceVariant"/>
+                <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceVariant" android:layout_gravity="top" android:id="@+id/item_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="17dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

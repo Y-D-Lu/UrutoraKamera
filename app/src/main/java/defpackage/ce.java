@@ -1,0 +1,27 @@
+package defpackage;
+
+/* renamed from: ce  reason: default package */
+/* loaded from: classes.dex */
+public class ce {
+    private static final xf a = new xf();
+
+    public static Class a(ClassLoader classLoader, String str) {
+        xf xfVar = a;
+        xf xfVar2 = (xf) xfVar.get(classLoader);
+        if (xfVar2 == null) {
+            xfVar2 = new xf();
+            xfVar.put(classLoader, xfVar2);
+        }
+        Class cls = (Class) xfVar2.get(str);
+        if (cls == null) {
+            Class<?> cls2 = Class.forName(str, false, classLoader);
+            xfVar2.put(str, cls2);
+            return cls2;
+        }
+        return cls;
+    }
+
+    public bu b(String str) {
+        throw null;
+    }
+}
