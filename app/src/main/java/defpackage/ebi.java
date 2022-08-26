@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.hardware.HardwareBuffer;
 import android.hardware.camera2.CaptureResult;
 import android.util.DisplayMetrics;
+
 import com.Helper;
 import com.google.googlex.gcam.AeResults;
 import com.google.googlex.gcam.AeShotParams;
@@ -32,6 +33,7 @@ import com.google.googlex.gcam.ViewfinderProcessingOptions;
 import com.google.googlex.gcam.ViewfinderResults;
 import com.google.googlex.gcam.hdrplus.HdrPlusInterface;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;

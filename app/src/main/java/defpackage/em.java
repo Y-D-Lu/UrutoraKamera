@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Path;
 import android.util.Log;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
 

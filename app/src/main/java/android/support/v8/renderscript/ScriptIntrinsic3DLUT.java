@@ -1,7 +1,5 @@
 package android.support.v8.renderscript;
 
-import android.support.v8.renderscript.Script;
-
 /* loaded from: classes.dex */
 public class ScriptIntrinsic3DLUT extends ScriptIntrinsic {
     private static final int INTRINSIC_API_LEVEL = 19;

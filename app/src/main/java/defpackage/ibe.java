@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.os.Handler;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ibe  reason: default package */

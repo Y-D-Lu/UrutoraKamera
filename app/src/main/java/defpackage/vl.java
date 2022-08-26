@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.List;
 
 @qlw(b = "androidx.camera.camera2.pipe.compat.Camera2CameraDevices$findAll$1", c = "Camera2CameraDevices.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_activityChooserViewStyle})

@@ -1,13 +1,14 @@
 package j$.time;
 
-import j$.time.zone.ZoneRules;
-import j$.time.zone.ZoneRulesException;
-import j$.time.zone.ZoneRulesProvider;
-import j$.util.Objects;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.InvalidObjectException;
 import java.io.ObjectInputStream;
+
+import j$.time.zone.ZoneRules;
+import j$.time.zone.ZoneRulesException;
+import j$.time.zone.ZoneRulesProvider;
+import j$.util.Objects;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

@@ -3,9 +3,9 @@ package android.support.v8.renderscript;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Build;
-import android.support.v8.renderscript.Element;
 import android.util.Log;
 import android.view.Surface;
+
 import java.io.File;
 import java.lang.reflect.Method;
 import java.nio.ByteBuffer;

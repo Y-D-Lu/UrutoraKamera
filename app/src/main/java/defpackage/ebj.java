@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.util.DisplayMetrics;
+
 import com.google.googlex.gcam.BuildPayloadBurstSpecOptions;
 import com.google.googlex.gcam.Gcam;
 import com.google.googlex.gcam.ViewfinderProcessingOptions;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: ebj  reason: default package */

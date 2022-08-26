@@ -3,14 +3,17 @@ package defpackage;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.util.ArrayMap;
+
 import com.google.android.apps.camera.bottombar.R;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: czl  reason: default package */
 /* loaded from: classes.dex */

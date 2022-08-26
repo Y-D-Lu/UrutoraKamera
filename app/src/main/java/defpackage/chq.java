@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.PointF;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: chq  reason: default package */

@@ -2,9 +2,11 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: eht  reason: default package */
 /* loaded from: classes2.dex */

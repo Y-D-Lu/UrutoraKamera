@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.InflateException;
 import android.view.MenuItem;
+
 import java.lang.reflect.Method;
 
 /* renamed from: ka  reason: default package */

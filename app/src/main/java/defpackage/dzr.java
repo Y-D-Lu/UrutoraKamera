@@ -2,11 +2,14 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
+
 import com.google.android.libraries.camera.jni.yuv.YuvUtilNative;
 import com.hdrindicator.DisplayHelper;
 import com.hdrindicator.HDRProgress;
-import java.util.concurrent.atomic.AtomicBoolean;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: dzr  reason: default package */
 /* loaded from: classes.dex */

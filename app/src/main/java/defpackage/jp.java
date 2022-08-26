@@ -16,8 +16,10 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* renamed from: jp  reason: default package */
 /* loaded from: classes2.dex */

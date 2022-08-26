@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.Objects;
 
 /* renamed from: nur  reason: default package */

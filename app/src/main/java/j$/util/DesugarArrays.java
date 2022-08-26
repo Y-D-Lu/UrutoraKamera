@@ -1,6 +1,5 @@
 package j$.util;
 
-import j$.util.Spliterator;
 import j$.util.stream.Stream;
 import j$.util.stream.StreamSupport;
 

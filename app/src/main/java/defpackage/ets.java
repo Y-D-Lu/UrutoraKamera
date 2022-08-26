@@ -1,11 +1,12 @@
 package defpackage;
 
-import j$.util.Collection;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.util.Collection;
+import j$.util.function.Function;
+import j$.util.stream.Collectors;
 
 /* renamed from: ets  reason: default package */
 /* loaded from: classes.dex */

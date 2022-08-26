@@ -9,10 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeProvider;
+
+import org.codeaurora.snapcam.R;
+
 import java.lang.ref.WeakReference;
 import java.util.Collections;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fg  reason: default package */
 /* loaded from: classes.dex */

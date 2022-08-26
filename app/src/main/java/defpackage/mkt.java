@@ -2,8 +2,9 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.media.MediaFormat;
+
 import com.google.android.apps.camera.bottombar.R;
-import j$.nio.charset.StandardCharsets;
+
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,6 +12,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
+
+import j$.nio.charset.StandardCharsets;
 
 /* renamed from: mkt  reason: default package */
 /* loaded from: classes2.dex */

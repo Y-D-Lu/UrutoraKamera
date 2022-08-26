@@ -1,14 +1,17 @@
 package defpackage;
 
 import android.text.TextUtils;
+
 import com.google.android.libraries.barhopper.Barcode;
-import j$.net.URLEncoder;
+
 import java.io.UnsupportedEncodingException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.LinkedBlockingDeque;
+
+import j$.net.URLEncoder;
 
 /* renamed from: nmb  reason: default package */
 /* loaded from: classes2.dex */

@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.util.Log;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
 import com.google.common.io.ByteStreams;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteOrder;

@@ -3,8 +3,10 @@ package defpackage;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+
 import com.google.geo.lightfield.processing.ProgressCallback;
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: pjf  reason: default package */

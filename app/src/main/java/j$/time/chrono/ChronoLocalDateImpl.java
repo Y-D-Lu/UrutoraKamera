@@ -1,9 +1,10 @@
 package j$.time.chrono;
 
+import java.io.Serializable;
+
 import j$.lang.DesugarMath$$ExternalSyntheticBackport3;
 import j$.time.Clock$OffsetClock$$ExternalSyntheticBackport0;
 import j$.time.LocalTime;
-import j$.time.chrono.ChronoLocalDate;
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.ChronoUnit;
 import j$.time.temporal.Temporal;
@@ -14,7 +15,6 @@ import j$.time.temporal.TemporalQuery;
 import j$.time.temporal.TemporalUnit;
 import j$.time.temporal.UnsupportedTemporalTypeException;
 import j$.util.Objects;
-import java.io.Serializable;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

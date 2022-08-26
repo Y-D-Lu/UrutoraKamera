@@ -4,6 +4,7 @@ import android.graphics.Point;
 import android.media.MediaCodecInfo;
 import android.media.MediaCodecList;
 import android.view.WindowManager;
+
 import java.util.ArrayList;
 import java.util.List;
 

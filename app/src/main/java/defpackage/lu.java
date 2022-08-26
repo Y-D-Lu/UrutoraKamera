@@ -10,7 +10,9 @@ import android.view.ContextThemeWrapper;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: lu  reason: default package */

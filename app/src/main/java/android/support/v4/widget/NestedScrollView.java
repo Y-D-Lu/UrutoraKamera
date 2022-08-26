@@ -20,9 +20,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.EdgeEffect;
 import android.widget.FrameLayout;
 import android.widget.OverScroller;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* loaded from: classes.dex */
 public class NestedScrollView extends FrameLayout implements fs, fp {

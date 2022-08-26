@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureResult;
+
 import java.util.Arrays;
 
 /* renamed from: efe  reason: default package */

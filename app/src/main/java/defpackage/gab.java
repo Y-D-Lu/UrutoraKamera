@@ -3,6 +3,7 @@ package defpackage;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
+
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 
 /* renamed from: gab  reason: default package */

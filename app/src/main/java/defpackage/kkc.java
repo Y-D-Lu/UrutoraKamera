@@ -7,7 +7,9 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.google.android.gms.common.api.Status;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

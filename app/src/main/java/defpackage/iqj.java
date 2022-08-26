@@ -6,15 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: iqj  reason: default package */
 /* loaded from: classes.dex */

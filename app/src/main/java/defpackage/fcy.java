@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
 import android.view.WindowManager;
+
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

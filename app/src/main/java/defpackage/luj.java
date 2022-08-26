@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CameraCharacteristics;
+
 import java.util.Set;
 
 /* renamed from: luj  reason: default package */

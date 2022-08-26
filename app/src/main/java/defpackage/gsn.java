@@ -3,7 +3,9 @@ package defpackage;
 import android.graphics.Rect;
 import android.hardware.camera2.CameraCharacteristics;
 import android.util.SizeF;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Collections;
 import java.util.List;
 

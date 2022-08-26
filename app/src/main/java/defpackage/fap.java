@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.params.Face;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: fap  reason: default package */

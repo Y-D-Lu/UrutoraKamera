@@ -3,6 +3,7 @@ package defpackage;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaMetadataRetriever;
 import android.os.ParcelFileDescriptor;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: bic  reason: default package */

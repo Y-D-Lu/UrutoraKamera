@@ -9,14 +9,17 @@ import android.preference.PreferenceManager;
 import android.util.Base64;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import com.google.android.apps.camera.bottombar.DLock$GestureListener;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: xxx2  reason: default package */
 /* loaded from: classes3.dex */

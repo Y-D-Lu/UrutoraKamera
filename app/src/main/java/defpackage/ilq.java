@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ilq  reason: default package */

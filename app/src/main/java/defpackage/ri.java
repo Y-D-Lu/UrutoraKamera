@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: ri  reason: default package */

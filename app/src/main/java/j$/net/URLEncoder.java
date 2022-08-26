@@ -1,13 +1,14 @@
 package j$.net;
 
-import j$.sun.security.action.GetPropertyAction;
-import j$.util.Objects;
 import java.io.CharArrayWriter;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.IllegalCharsetNameException;
 import java.nio.charset.UnsupportedCharsetException;
 import java.util.BitSet;
+
+import j$.sun.security.action.GetPropertyAction;
+import j$.util.Objects;
 
 /* loaded from: classes2.dex */
 public class URLEncoder {

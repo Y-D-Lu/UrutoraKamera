@@ -1,10 +1,10 @@
 package defpackage;
 
+import java.util.ArrayDeque;
+import java.util.NoSuchElementException;
+
 import j$.util.Iterator;
 import j$.util.function.Consumer;
-import java.util.ArrayDeque;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: pqz  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CameraCharacteristics;
+
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.StaticMetadata;
 import com.google.googlex.gcam.StaticMetadataVector;

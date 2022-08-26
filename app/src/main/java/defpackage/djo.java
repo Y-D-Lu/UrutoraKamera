@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.widget.SearchView;
+
 import com.google.android.apps.camera.debug.ui.MaterialSearchViewPreference;
 
 /* renamed from: djo  reason: default package */

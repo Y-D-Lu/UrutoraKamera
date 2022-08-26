@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.text.TextUtils;
+
 import androidx.preference.EditTextPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: agd  reason: default package */

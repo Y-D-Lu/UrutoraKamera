@@ -12,6 +12,7 @@ import android.os.Parcel;
 import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import android.support.wearable.complications.rendering.ComplicationDrawable;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.common.api.Scope;
@@ -19,6 +20,7 @@ import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.data.BitmapTeleporter;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.feedback.ErrorReport;
+
 import java.util.ArrayList;
 
 /* renamed from: sk  reason: default package */

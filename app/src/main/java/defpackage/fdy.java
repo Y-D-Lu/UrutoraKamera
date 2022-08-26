@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.legacy.lightcycle.storage.LocalSessionStorage;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;

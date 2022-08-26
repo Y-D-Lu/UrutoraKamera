@@ -2,6 +2,7 @@ package defpackage;
 
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.view.accessibility.AccessibilityManager;
+
 import java.util.List;
 
 /* renamed from: iuf  reason: default package */

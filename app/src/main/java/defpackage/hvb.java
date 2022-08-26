@@ -2,9 +2,12 @@ package defpackage;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+
 import com.mdmitriev.auxlenses.AuxButtonsLayout;
-import java.util.Map;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Map;
 
 /* renamed from: hvb  reason: default package */
 /* loaded from: classes.dex */

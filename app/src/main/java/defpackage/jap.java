@@ -7,7 +7,9 @@ import android.net.TrafficStats;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.LinearLayout;
+
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jap  reason: default package */

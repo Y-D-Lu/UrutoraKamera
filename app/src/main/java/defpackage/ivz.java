@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Bitmap;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
+
 import j$.util.function.Consumer;
 import j$.util.function.Supplier;
 

@@ -3,6 +3,7 @@ package defpackage;
 import android.content.DialogInterface;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ckm  reason: default package */

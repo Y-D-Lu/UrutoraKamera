@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.Looper;
+
 import com.google.vr.cardboard.ExternalSurfaceManager;
 
 /* renamed from: pwk  reason: default package */

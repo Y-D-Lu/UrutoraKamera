@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 

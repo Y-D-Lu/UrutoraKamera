@@ -10,8 +10,10 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import java.lang.reflect.Field;
+
 import org.codeaurora.snapcam.R;
+
+import java.lang.reflect.Field;
 
 /* renamed from: om  reason: default package */
 /* loaded from: classes2.dex */

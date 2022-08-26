@@ -12,7 +12,9 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowInsets;
+
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.Objects;
 
 @Deprecated

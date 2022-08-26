@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Typeface;
 import android.widget.TextView;
+
 import java.lang.ref.WeakReference;
 
 /* JADX INFO: Access modifiers changed from: package-private */

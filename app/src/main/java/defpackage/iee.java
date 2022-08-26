@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
+
 import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */

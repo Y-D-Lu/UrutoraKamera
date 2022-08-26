@@ -1,13 +1,16 @@
 package defpackage;
 
 import android.content.IntentFilter;
-import j$.util.Collection;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Collection;
 
 /* renamed from: cfe  reason: default package */
 /* loaded from: classes3.dex */

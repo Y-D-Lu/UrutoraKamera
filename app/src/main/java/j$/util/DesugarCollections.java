@@ -1,11 +1,5 @@
 package j$.util;
 
-import j$.util.Collection;
-import j$.util.Map;
-import j$.util.function.BiConsumer;
-import j$.util.function.BiFunction;
-import j$.util.function.Function;
-import j$.util.function.Predicate;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.lang.reflect.Constructor;
@@ -16,6 +10,11 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
+
+import j$.util.function.BiConsumer;
+import j$.util.function.BiFunction;
+import j$.util.function.Function;
+import j$.util.function.Predicate;
 
 /* loaded from: classes2.dex */
 public class DesugarCollections {

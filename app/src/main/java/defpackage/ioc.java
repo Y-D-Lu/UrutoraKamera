@@ -2,6 +2,7 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.media.MediaFormat;
+
 import java.util.concurrent.TimeUnit;
 
 /* JADX INFO: Access modifiers changed from: package-private */

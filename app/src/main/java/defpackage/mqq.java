@@ -4,6 +4,7 @@ import android.opengl.EGLConfig;
 import android.opengl.EGLContext;
 import android.opengl.EGLDisplay;
 import android.opengl.EGLSurface;
+
 import java.nio.Buffer;
 
 /* renamed from: mqq  reason: default package */

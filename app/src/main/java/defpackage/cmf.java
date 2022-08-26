@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
+
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;

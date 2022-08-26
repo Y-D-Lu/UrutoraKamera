@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+
 import java.security.MessageDigest;
 
 /* renamed from: biv  reason: default package */

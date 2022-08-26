@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.material.behavior.SwipeDismissBehavior;
 
 /* renamed from: nxl  reason: default package */

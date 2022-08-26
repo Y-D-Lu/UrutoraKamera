@@ -3,10 +3,12 @@ package defpackage;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Handler;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fnf  reason: default package */
 /* loaded from: classes.dex */

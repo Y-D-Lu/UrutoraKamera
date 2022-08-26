@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Map;
 
 /* renamed from: dcy  reason: default package */

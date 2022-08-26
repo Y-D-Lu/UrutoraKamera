@@ -10,9 +10,12 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* renamed from: jom  reason: default package */
 /* loaded from: classes2.dex */

@@ -4,7 +4,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.text.TextUtils;
-import j$.net.URLEncoder;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
@@ -14,6 +14,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Locale;
 import java.util.Map;
+
+import j$.net.URLEncoder;
 
 /* renamed from: kfd  reason: default package */
 /* loaded from: classes2.dex */

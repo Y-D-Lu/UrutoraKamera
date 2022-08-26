@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.text.TextUtils;
+
 import java.util.Collections;
 import java.util.List;
 

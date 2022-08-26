@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.preference.Preference;
+
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
 
 /* renamed from: jhy  reason: default package */

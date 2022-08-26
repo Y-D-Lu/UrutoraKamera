@@ -1,10 +1,12 @@
 package defpackage;
 
 import android.content.Context;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fno  reason: default package */
 /* loaded from: classes.dex */

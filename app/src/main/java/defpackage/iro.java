@@ -5,11 +5,14 @@ import android.content.res.Resources;
 import android.text.format.DateUtils;
 import android.view.View;
 import android.widget.FrameLayout;
-import j$.time.Duration;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
-import org.codeaurora.snapcam.R;
+
+import j$.time.Duration;
 
 /* renamed from: iro  reason: default package */
 /* loaded from: classes.dex */

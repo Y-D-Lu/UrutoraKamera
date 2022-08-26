@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.view.View;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import j$.util.Objects;
 
 /* renamed from: aac  reason: default package */

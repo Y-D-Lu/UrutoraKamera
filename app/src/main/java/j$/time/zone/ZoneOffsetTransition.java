@@ -1,9 +1,5 @@
 package j$.time.zone;
 
-import j$.desugar.sun.nio.fs.DesugarLinuxFileSystem$$ExternalSyntheticBackport1;
-import j$.time.Duration;
-import j$.time.LocalDateTime;
-import j$.time.ZoneOffset;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.InvalidObjectException;
@@ -11,6 +7,11 @@ import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
+
+import j$.desugar.sun.nio.fs.DesugarLinuxFileSystem$$ExternalSyntheticBackport1;
+import j$.time.Duration;
+import j$.time.LocalDateTime;
+import j$.time.ZoneOffset;
 
 /* loaded from: classes2.dex */
 public final class ZoneOffsetTransition implements Comparable, Serializable {

@@ -1,5 +1,11 @@
 package j$.time;
 
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+
 import j$.lang.DesugarMath$$ExternalSyntheticBackport2;
 import j$.lang.DesugarMath$$ExternalSyntheticBackport3;
 import j$.time.chrono.ChronoLocalDate;
@@ -16,11 +22,6 @@ import j$.time.temporal.TemporalUnit;
 import j$.time.temporal.UnsupportedTemporalTypeException;
 import j$.time.temporal.ValueRange;
 import j$.util.Objects;
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
 
 /* loaded from: classes2.dex */
 public final class LocalDate implements Temporal, TemporalAdjuster, ChronoLocalDate, Serializable {

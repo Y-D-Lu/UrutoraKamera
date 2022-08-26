@@ -2,6 +2,9 @@ package androidx.window.layout;
 
 import java.util.List;
 
+import defpackage.qmd;
+import defpackage.qno;
+
 /* loaded from: classes.dex */
 public final class WindowLayoutInfo {
     private final List displayFeatures;

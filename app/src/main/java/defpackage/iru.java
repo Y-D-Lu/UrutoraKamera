@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.content.res.Resources;
 import android.widget.TextView;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 /* renamed from: iru  reason: default package */

@@ -5,6 +5,7 @@ import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Parcelable;
+
 import java.io.Serializable;
 
 /* renamed from: hoa  reason: default package */

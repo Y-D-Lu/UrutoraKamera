@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.HardwareBuffer;
 import android.util.Base64;
+
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthResult;
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.InterleavedImageU16;
@@ -19,6 +20,7 @@ import com.google.googlex.gcam.creativecamera.portraitmode.PortraitImageCallback
 import com.google.googlex.gcam.creativecamera.portraitmode.PortraitOpaqueHandleCallback;
 import com.google.googlex.gcam.creativecamera.portraitmode.PortraitProcessorInterface;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.HashMap;
 import java.util.concurrent.Executor;
 

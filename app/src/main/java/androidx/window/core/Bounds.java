@@ -2,6 +2,8 @@ package androidx.window.core;
 
 import android.graphics.Rect;
 
+import defpackage.qno;
+
 /* loaded from: classes.dex */
 public final class Bounds {
     private final int bottom;

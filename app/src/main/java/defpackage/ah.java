@@ -5,7 +5,9 @@ import android.support.constraint.ConstraintLayout;
 import android.support.constraint.Guideline;
 import android.util.SparseIntArray;
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;

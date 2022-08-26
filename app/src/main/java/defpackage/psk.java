@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.support.v8.renderscript.ScriptIntrinsicBLAS;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: psk  reason: default package */

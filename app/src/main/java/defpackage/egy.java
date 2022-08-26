@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.opengl.GLSurfaceView;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: egy  reason: default package */

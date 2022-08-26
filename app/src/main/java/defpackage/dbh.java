@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import j$.util.function.IntFunction;
 
 /* renamed from: dbh  reason: default package */

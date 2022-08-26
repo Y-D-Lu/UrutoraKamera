@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Context;
+
 import j$.util.function.Supplier;
 
 /* renamed from: hwx  reason: default package */

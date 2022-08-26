@@ -1,6 +1,7 @@
 package defpackage;
 
 import androidx.viewpager2.widget.ViewPager2;
+
 import com.google.android.material.tabs.TabLayout;
 
 /* renamed from: odg  reason: default package */

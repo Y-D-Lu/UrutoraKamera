@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 /* renamed from: nxt  reason: default package */

@@ -1,9 +1,9 @@
 package j$.util.stream;
 
+import java.util.EnumMap;
+
 import j$.util.Map;
 import j$.util.Spliterator;
-import java.util.EnumMap;
-import java.util.Map;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* JADX WARN: Init of enum DISTINCT can be incorrect */

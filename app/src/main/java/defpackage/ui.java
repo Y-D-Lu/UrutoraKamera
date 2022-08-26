@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.lens.sdk.LensApi;
 
 /* renamed from: ui  reason: default package */

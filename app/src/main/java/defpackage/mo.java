@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.AutoCompleteTextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: mo  reason: default package */

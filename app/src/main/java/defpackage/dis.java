@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.debug.shottracker.db.ShotDatabase_Impl;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;

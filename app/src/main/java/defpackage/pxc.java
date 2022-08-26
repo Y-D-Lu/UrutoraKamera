@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.util.Log;
-import j$.util.Objects;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import j$.util.Objects;
 
 /* renamed from: pxc  reason: default package */
 /* loaded from: classes2.dex */

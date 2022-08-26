@@ -4,6 +4,7 @@ import android.content.ContentResolver;
 import android.content.UriMatcher;
 import android.net.Uri;
 import android.provider.ContactsContract;
+
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 

@@ -1,9 +1,10 @@
 package defpackage;
 
-import j$.util.Optional;
-import j$.util.function.Consumer;
 import java.io.IOException;
 import java.io.OutputStream;
+
+import j$.util.Optional;
+import j$.util.function.Consumer;
 
 /* renamed from: ogy  reason: default package */
 /* loaded from: classes2.dex */

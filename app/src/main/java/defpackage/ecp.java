@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.HardwareBuffer;
+
 import com.google.googlex.gcam.InterleavedImageU8;
 import com.google.googlex.gcam.ShotMetadata;
 

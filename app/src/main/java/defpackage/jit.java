@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.ui.remotecontrol.RemoteControlView;
+
 import java.util.Date;
 
 /* renamed from: jit  reason: default package */

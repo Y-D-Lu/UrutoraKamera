@@ -3,6 +3,7 @@ package defpackage;
 import android.app.Application;
 import android.content.Context;
 import android.content.IntentFilter;
+
 import java.io.File;
 import java.util.concurrent.atomic.AtomicBoolean;
 

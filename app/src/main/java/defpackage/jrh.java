@@ -3,7 +3,9 @@ package defpackage;
 import android.content.res.Resources;
 import android.view.MotionEvent;
 import android.widget.ImageView;
+
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jrh  reason: default package */

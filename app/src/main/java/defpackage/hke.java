@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.os.Trace;
+
 import com.google.android.apps.camera.jni.aesthetic.AestheticScorerNima;
 import com.google.android.apps.camera.jni.aesthetic.AestheticScorerNimaV2;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 import java.util.List;
 

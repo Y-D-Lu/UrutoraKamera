@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.ContentValues;
 import android.graphics.Rect;
+
 import com.google.googlex.gcam.DebugParams;
+
 import java.util.List;
 import java.util.concurrent.CancellationException;
 

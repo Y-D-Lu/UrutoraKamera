@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.app.job.JobParameters;
+
 import com.google.android.apps.camera.brella.mediastore.MediaListeningService;
 
 /* renamed from: ceg  reason: default package */

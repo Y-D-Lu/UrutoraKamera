@@ -1,5 +1,10 @@
 package j$.util.stream;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Iterator;
+
 import j$.util.DesugarArrays;
 import j$.util.PrimitiveIterator$OfDouble;
 import j$.util.PrimitiveIterator$OfInt;
@@ -11,10 +16,6 @@ import j$.util.function.DoubleConsumer;
 import j$.util.function.IntConsumer;
 import j$.util.function.IntFunction;
 import j$.util.function.LongConsumer;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Iterator;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

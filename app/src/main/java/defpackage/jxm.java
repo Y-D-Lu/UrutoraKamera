@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Point;
 import android.graphics.PointF;
 import android.view.View;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jxm  reason: default package */

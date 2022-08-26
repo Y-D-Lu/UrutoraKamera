@@ -4,10 +4,12 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.SystemClock;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fyc  reason: default package */
 /* loaded from: classes.dex */

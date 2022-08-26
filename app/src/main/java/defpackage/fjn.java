@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.Log;
+
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: fjn  reason: default package */

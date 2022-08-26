@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.PointF;
+
 import java.util.Set;
 
 /* renamed from: bpf  reason: default package */

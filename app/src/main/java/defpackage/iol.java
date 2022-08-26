@@ -2,12 +2,14 @@ package defpackage;
 
 import android.content.Context;
 import android.view.Surface;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
-import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: iol  reason: default package */

@@ -1,7 +1,8 @@
 package defpackage;
 
-import j$.time.Duration;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.time.Duration;
 
 /* renamed from: cin  reason: default package */
 /* loaded from: classes.dex */

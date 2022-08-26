@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.jni.eis.EisNative;
 
 /* renamed from: kfm  reason: default package */

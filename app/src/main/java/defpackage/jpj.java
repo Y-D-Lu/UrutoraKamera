@@ -3,8 +3,10 @@ package defpackage;
 import android.animation.ValueAnimator;
 import android.graphics.Color;
 import android.view.animation.LinearInterpolator;
+
 import com.google.android.apps.camera.ui.captureframe.CaptureFrameUi;
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jpj  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.database.Cursor;
+
 import java.util.concurrent.Callable;
 
 /* renamed from: npg  reason: default package */

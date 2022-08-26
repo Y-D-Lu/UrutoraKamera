@@ -10,13 +10,16 @@ import android.support.wearable.complications.ComplicationText;
 import android.support.wearable.complications.TimeDifferenceText;
 import android.support.wearable.complications.TimeFormatText;
 import android.support.wearable.complications.rendering.ComplicationStyle$Builder;
+
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.SignInAccount;
 import com.google.android.gms.auth.api.signin.internal.SignInConfiguration;
 import com.google.android.gms.common.api.Scope;
-import j$.time.Instant;
+
 import java.util.ArrayList;
+
+import j$.time.Instant;
 
 /* renamed from: si  reason: default package */
 /* loaded from: classes2.dex */

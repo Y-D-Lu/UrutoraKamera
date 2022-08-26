@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.material.appbar.AppBarLayout;
 
 /* renamed from: nws  reason: default package */

@@ -6,7 +6,9 @@ import android.hardware.camera2.CameraManager;
 import android.media.MediaActionSound;
 import android.os.Handler;
 import android.os.HandlerThread;
+
 import com.eszdman;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;

@@ -7,6 +7,7 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.OverScroller;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 /* renamed from: nxc  reason: default package */

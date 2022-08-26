@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import com.google.android.libraries.camera.jni.jpeg.JpegUtilNative;
+
 import java.nio.ByteBuffer;
 import java.util.concurrent.Executor;
 

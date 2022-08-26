@@ -8,6 +8,7 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.LinearLayout;
+
 import com.google.android.material.tabs.TabLayout;
 import com.hdrindicator.DisplayHelper;
 

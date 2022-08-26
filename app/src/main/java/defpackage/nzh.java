@@ -6,8 +6,10 @@ import android.animation.ObjectAnimator;
 import android.animation.StateListAnimator;
 import android.graphics.Rect;
 import android.view.View;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 
 /* renamed from: nzh  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.app.Activity;
+
 import androidx.window.java.layout.WindowInfoRepositoryCallbackAdapter;
 import androidx.window.layout.DisplayFeature;
 import androidx.window.layout.FoldingFeature;

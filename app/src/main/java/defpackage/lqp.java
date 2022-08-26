@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
+
 import java.util.Set;
 
 /* renamed from: lqp  reason: default package */

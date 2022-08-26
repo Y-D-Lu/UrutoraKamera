@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.hardware.camera2.params.MeteringRectangle;
-import j$.util.Objects;
+
 import java.util.Arrays;
+
+import j$.util.Objects;
 
 /* renamed from: loj  reason: default package */
 /* loaded from: classes2.dex */

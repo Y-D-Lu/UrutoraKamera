@@ -17,6 +17,7 @@ import android.util.Range;
 import android.util.Rational;
 import android.util.Size;
 import android.util.SizeF;
+
 import com.AGC;
 import com.Fix.ColorTransform;
 import com.Fix.IsoTime;
@@ -56,10 +57,12 @@ import com.google.googlex.gcam.WeightedPixelRect;
 import com.google.googlex.gcam.WeightedPixelRectVector;
 import com.hdrindicator.DisplayHelper;
 import com.juliantsependa.ColorTune;
-import j$.util.Collection;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import j$.util.Collection;
 import overwhelmer.simplified_lol;
 
 /* renamed from: pkr  reason: default package */

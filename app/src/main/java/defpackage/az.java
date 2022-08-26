@@ -3,6 +3,7 @@ package defpackage;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
+
 import java.util.ArrayList;
 
 /* JADX INFO: Access modifiers changed from: package-private */

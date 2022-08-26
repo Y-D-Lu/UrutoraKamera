@@ -9,10 +9,12 @@ import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.text.TextUtils;
 import android.util.ArrayMap;
+
+import java.util.Map;
+
 import j$.util.concurrent.ConcurrentHashMap;
 import j$.util.function.Function;
 import j$.util.function.Predicate;
-import java.util.Map;
 
 /* renamed from: icf  reason: default package */
 /* loaded from: classes.dex */

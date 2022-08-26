@@ -2,9 +2,11 @@ package defpackage;
 
 import android.content.Context;
 import android.hardware.camera2.CaptureRequest;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthUtils;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;

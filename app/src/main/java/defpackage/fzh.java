@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.res.Resources;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fzh  reason: default package */

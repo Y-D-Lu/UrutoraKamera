@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.common.flogger.backend.google.GooglePlatform;
 import com.google.common.flogger.backend.system.DefaultPlatform;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;

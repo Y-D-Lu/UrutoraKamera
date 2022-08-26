@@ -1,7 +1,7 @@
 package android.support.v8.renderscript;
 
-import android.renderscript.Script;
 import android.util.SparseArray;
+
 import java.io.UnsupportedEncodingException;
 
 /* loaded from: classes.dex */

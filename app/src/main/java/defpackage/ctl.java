@@ -7,15 +7,18 @@ import android.graphics.drawable.InsetDrawable;
 import android.view.View;
 import android.view.ViewStub;
 import android.view.animation.LinearInterpolator;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.camcorder.ui.modeslider.recordspeed.RecordSpeedSlider;
 import com.google.android.apps.camera.ui.modeslider.ModeSlider;
 import com.google.android.apps.camera.ui.modeslider.ModeSliderUi;
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: ctl  reason: default package */
 /* loaded from: classes.dex */

@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureResult;
+
 import com.google.googlex.gcam.RawReadView;
 import com.google.googlex.gcam.ShotMetadata;
+
 import java.util.List;
 
 /* renamed from: eev  reason: default package */

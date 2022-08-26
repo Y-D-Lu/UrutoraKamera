@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
 
 /* renamed from: hin  reason: default package */

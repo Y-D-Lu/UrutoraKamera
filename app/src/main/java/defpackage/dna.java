@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.evcomp.EvCompView;
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: dna  reason: default package */

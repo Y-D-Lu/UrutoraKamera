@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.hdrindicator.DisplayHelper;
 
 /* loaded from: classes.dex */

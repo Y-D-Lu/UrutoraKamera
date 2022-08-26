@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.util.Log;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import j$.time.Duration;
 
 /* renamed from: jtx  reason: default package */

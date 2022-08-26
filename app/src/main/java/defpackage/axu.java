@@ -2,6 +2,7 @@ package defpackage;
 
 import android.widget.FrameLayout;
 import android.widget.Toolbar;
+
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 

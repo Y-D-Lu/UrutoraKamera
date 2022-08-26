@@ -2,8 +2,10 @@ package defpackage;
 
 import android.graphics.Point;
 import android.graphics.Rect;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.jni.facebeautification.FaceInfo;
+
 import java.util.Arrays;
 
 /* renamed from: enj  reason: default package */

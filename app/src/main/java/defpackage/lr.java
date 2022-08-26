@@ -13,6 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: lr  reason: default package */

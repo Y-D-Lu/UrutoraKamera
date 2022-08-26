@@ -1,10 +1,11 @@
 package j$.util.stream;
 
+import java.util.Set;
+
 import j$.util.function.BiConsumer;
 import j$.util.function.BinaryOperator;
 import j$.util.function.Function;
 import j$.util.function.Supplier;
-import java.util.Set;
 
 /* loaded from: classes2.dex */
 public interface Collector {

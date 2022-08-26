@@ -1,5 +1,12 @@
 package j$.time.chrono;
 
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 import j$.time.DateTimeException;
 import j$.time.Instant;
 import j$.time.LocalDate;
@@ -7,12 +14,6 @@ import j$.time.ZoneId;
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.TemporalAccessor;
 import j$.time.temporal.ValueRange;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /* loaded from: classes2.dex */
 public final class HijrahChronology extends AbstractChronology implements Serializable {

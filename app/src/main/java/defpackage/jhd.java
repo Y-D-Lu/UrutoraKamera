@@ -3,8 +3,10 @@ package defpackage;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
-import java.util.concurrent.Executor;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.Executor;
 
 /* renamed from: jhd  reason: default package */
 /* loaded from: classes.dex */

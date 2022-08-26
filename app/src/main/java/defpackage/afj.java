@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.Log;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;

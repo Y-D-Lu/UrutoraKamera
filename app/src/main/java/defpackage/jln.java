@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.res.Resources;
-import j$.util.function.Function;
+
 import org.codeaurora.snapcam.R;
+
+import j$.util.function.Function;
 
 /* renamed from: jln  reason: default package */
 /* loaded from: classes2.dex */

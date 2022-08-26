@@ -1,7 +1,5 @@
 package defpackage;
 
-import java.lang.Thread;
-
 /* renamed from: myh  reason: default package */
 /* loaded from: classes2.dex */
 final class myh implements Thread.UncaughtExceptionHandler {

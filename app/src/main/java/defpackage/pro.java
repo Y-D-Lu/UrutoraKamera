@@ -1,8 +1,9 @@
 package defpackage;
 
+import java.util.ListIterator;
+
 import j$.util.Iterator;
 import j$.util.function.Consumer;
-import java.util.ListIterator;
 
 /* renamed from: pro  reason: default package */
 /* loaded from: classes2.dex */

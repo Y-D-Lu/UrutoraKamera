@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.DisplayCutout;
 import android.view.WindowInsets;
+
 import j$.util.Objects;
 
 /* renamed from: gu  reason: default package */

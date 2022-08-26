@@ -5,6 +5,7 @@ import android.hardware.camera2.CaptureRequest;
 import android.media.Image;
 import android.media.ImageReader;
 import android.os.Handler;
+
 import java.nio.ByteBuffer;
 
 /* JADX INFO: Access modifiers changed from: package-private */

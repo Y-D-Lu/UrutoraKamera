@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.ActivityManager;
 import android.content.Context;
+
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.Collections;

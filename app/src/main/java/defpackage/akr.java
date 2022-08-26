@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import androidx.versionedparcelable.ParcelImpl;
 
 /* renamed from: akr  reason: default package */

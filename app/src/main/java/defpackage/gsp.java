@@ -1,11 +1,13 @@
 package defpackage;
 
-import j$.util.Collection;
-import j$.util.stream.Collectors;
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Collection;
+import j$.util.stream.Collectors;
 
 /* renamed from: gsp  reason: default package */
 /* loaded from: classes.dex */

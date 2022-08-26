@@ -4,12 +4,16 @@ import android.animation.ObjectAnimator;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.Collection;
-import j$.util.stream.Collectors;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Collection;
+import j$.util.stream.Collectors;
 
 /* renamed from: ipy  reason: default package */
 /* loaded from: classes.dex */

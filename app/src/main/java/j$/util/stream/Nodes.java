@@ -1,5 +1,11 @@
 package j$.util.stream;
 
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Deque;
+import java.util.concurrent.CountedCompleter;
+
 import j$.util.DesugarArrays;
 import j$.util.Spliterator;
 import j$.util.Spliterators;
@@ -10,14 +16,6 @@ import j$.util.function.IntConsumer;
 import j$.util.function.IntFunction;
 import j$.util.function.LongConsumer;
 import j$.util.function.LongFunction;
-import j$.util.stream.Node;
-import j$.util.stream.Sink;
-import j$.util.stream.SpinedBuffer;
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Deque;
-import java.util.concurrent.CountedCompleter;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

@@ -2,7 +2,9 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.util.Log;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: mrv  reason: default package */

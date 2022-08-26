@@ -12,9 +12,10 @@ import android.provider.Settings;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewParent;
+
 import com.google.android.material.tabs.TabLayout;
 import com.hdrindicator.DisplayHelper;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -35,6 +36,8 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: obr  reason: default package */
 /* loaded from: classes2.dex */

@@ -5,8 +5,6 @@ import j$.util.function.BooleanSupplier;
 import j$.util.function.Consumer;
 import j$.util.function.LongConsumer;
 import j$.util.function.Supplier;
-import j$.util.stream.Sink;
-import j$.util.stream.SpinedBuffer;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

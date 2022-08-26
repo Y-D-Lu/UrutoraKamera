@@ -1,10 +1,12 @@
 package defpackage;
 
 import android.content.res.Resources;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fkh  reason: default package */
 /* loaded from: classes.dex */

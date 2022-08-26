@@ -4,18 +4,23 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.widget.Toast;
+
 import androidx.preference.PreferenceScreen;
+
 import com.google.android.apps.camera.ui.preference.MaterialManagedSwitchPreference;
+
+import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import j$.util.Collection;
 import j$.util.Comparator$CC;
 import j$.util.concurrent.ConcurrentHashMap;
 import j$.util.function.Function;
 import j$.util.stream.Collectors;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: idk  reason: default package */
 /* loaded from: classes.dex */

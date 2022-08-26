@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
 import androidx.viewpager2.widget.ViewPager2;
 
 /* renamed from: alp  reason: default package */

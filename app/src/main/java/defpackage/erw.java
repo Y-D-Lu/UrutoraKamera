@@ -1,12 +1,14 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.googlex.gcam.BurstSpec;
 import com.google.googlex.gcam.Gcam;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.ShotParams;
 import com.google.googlex.gcam.StaticMetadata;
 import com.google.googlex.gcam.lasagna.LasagnaInputParamsImpl;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;

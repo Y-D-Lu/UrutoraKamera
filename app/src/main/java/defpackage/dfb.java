@@ -3,15 +3,17 @@ package defpackage;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
-import j$.time.Instant;
-import j$.util.Collection;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import j$.time.Instant;
+import j$.util.Collection;
+import j$.util.function.Function;
+import j$.util.stream.Collectors;
 
 /* renamed from: dfb  reason: default package */
 /* loaded from: classes2.dex */

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.media.MediaFormat;
 import android.util.Log;
+
 import java.util.concurrent.Callable;
 
 /* renamed from: lgw  reason: default package */

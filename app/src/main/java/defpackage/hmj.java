@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: hmj  reason: default package */

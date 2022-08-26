@@ -1,16 +1,20 @@
 package androidx.window.layout;
 
 import android.graphics.Rect;
+
 import androidx.window.core.Bounds;
-import androidx.window.layout.FoldingFeature;
-import androidx.window.layout.HardwareFoldingFeature;
 import androidx.window.sidecar.SidecarDeviceState;
 import androidx.window.sidecar.SidecarDisplayFeature;
 import androidx.window.sidecar.SidecarWindowLayoutInfo;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import defpackage.qkx;
+import defpackage.qnm;
+import defpackage.qno;
 
 /* loaded from: classes.dex */
 public final class SidecarAdapter {

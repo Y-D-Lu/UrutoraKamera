@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Rect;
 import android.hardware.camera2.CameraCharacteristics;
 import android.util.SizeF;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;

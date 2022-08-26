@@ -1,11 +1,9 @@
 package j$.util.concurrent;
 
 import j$.util.Map;
-import j$.util.concurrent.ConcurrentMap;
 import j$.util.function.BiConsumer;
 import j$.util.function.BiFunction;
 import j$.util.function.Function;
-import java.util.Map;
 
 /* loaded from: classes2.dex */
 public interface ConcurrentMap extends Map {

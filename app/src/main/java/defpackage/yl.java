@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Arrays;

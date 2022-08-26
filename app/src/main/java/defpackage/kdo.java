@@ -2,7 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.util.LogPrinter;
-import java.lang.Thread;
+
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /* renamed from: kdo  reason: default package */

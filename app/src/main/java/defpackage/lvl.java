@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.params.OutputConfiguration;
 import android.view.Surface;
+
 import java.util.List;
 
 /* renamed from: lvl  reason: default package */

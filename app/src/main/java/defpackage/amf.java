@@ -1,6 +1,7 @@
 package defpackage;
 
 import androidx.wear.widget.drawer.PageIndicatorView;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: amf  reason: default package */

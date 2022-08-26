@@ -10,7 +10,9 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.Toast;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ibb  reason: default package */

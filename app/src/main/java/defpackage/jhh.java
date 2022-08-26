@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.Context;
-import java.util.concurrent.Executor;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.Executor;
 
 /* renamed from: jhh  reason: default package */
 /* loaded from: classes.dex */

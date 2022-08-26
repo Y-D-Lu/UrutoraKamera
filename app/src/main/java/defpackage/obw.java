@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.RectF;
+
 import java.util.Arrays;
 
 /* renamed from: obw  reason: default package */

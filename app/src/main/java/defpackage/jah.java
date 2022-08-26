@@ -6,8 +6,10 @@ import android.view.Choreographer;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.widget.TracedFrameLayout;
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jah  reason: default package */

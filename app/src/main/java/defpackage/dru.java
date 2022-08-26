@@ -1,11 +1,12 @@
 package defpackage;
 
-import j$.util.List$CC;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+
+import j$.util.List$CC;
 
 /* renamed from: dru  reason: default package */
 /* loaded from: classes.dex */

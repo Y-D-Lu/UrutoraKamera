@@ -1,7 +1,10 @@
 package androidx.window.layout;
 
 import android.graphics.Rect;
+
 import androidx.window.core.Bounds;
+
+import defpackage.qno;
 
 /* loaded from: classes.dex */
 public final class WindowMetrics {

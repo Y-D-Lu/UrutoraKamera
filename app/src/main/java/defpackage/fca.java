@@ -3,7 +3,9 @@ package defpackage;
 import android.content.Context;
 import android.preference.Preference;
 import android.view.View;
+
 import com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fca  reason: default package */

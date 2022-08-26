@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import androidx.preference.Preference;
 
 /* renamed from: agj  reason: default package */

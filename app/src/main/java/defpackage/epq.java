@@ -4,8 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
 
 /* renamed from: epq  reason: default package */
 /* loaded from: classes.dex */

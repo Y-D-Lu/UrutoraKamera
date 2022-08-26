@@ -3,6 +3,7 @@ package defpackage;
 import android.os.SystemClock;
 import android.view.View;
 import android.view.ViewTreeObserver;
+
 import java.util.concurrent.atomic.AtomicReference;
 
 /* JADX INFO: Access modifiers changed from: package-private */

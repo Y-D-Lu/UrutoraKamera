@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.util.Log;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.util.NoSuchElementException;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: knx  reason: default package */
 /* loaded from: classes2.dex */

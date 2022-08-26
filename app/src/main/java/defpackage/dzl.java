@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.googlex.gcam.ShotMetadata;
+
 import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */

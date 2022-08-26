@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.libraries.camera.jni.jpeg.JpegUtilNative;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: hnn  reason: default package */

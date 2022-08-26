@@ -9,7 +9,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.ahm;
+import defpackage.ahn;
+import defpackage.aho;
+import defpackage.ahp;
+import defpackage.ahq;
 
 /* loaded from: classes.dex */
 public class SeekBarPreference extends Preference {

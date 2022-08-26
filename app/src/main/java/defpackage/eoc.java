@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.content.Intent;
+
 import com.google.android.apps.camera.prewarm.NoOpPrewarmService;
 
 /* renamed from: eoc  reason: default package */

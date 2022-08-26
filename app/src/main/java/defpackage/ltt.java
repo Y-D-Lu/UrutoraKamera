@@ -5,7 +5,9 @@ import android.hardware.camera2.CaptureRequest;
 import android.os.Handler;
 import android.util.ArrayMap;
 import android.view.Surface;
+
 import com.mf.manualfocus;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

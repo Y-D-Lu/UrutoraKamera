@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.os.Looper;
+
 import java.io.PrintWriter;
 
 /* renamed from: afh  reason: default package */

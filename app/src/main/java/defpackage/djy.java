@@ -4,7 +4,9 @@ import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.hardware.camera2.CaptureResult;
+
 import com.google.android.apps.camera.debugui.DebugCanvasView;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 

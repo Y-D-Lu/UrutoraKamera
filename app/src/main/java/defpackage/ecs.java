@@ -5,6 +5,7 @@ import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.YuvImage;
 import com.google.googlex.gcam.YuvWriteView;
 import com.google.googlex.gcam.image.YuvUtils;
+
 import java.util.concurrent.ExecutionException;
 
 /* renamed from: ecs  reason: default package */

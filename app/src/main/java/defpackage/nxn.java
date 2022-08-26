@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 /* renamed from: nxn  reason: default package */

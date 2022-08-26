@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase_Impl;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;

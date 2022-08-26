@@ -2,7 +2,9 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.media.MediaFormat;
+
 import com.google.android.libraries.microvideo.gcamuxer.AnnexBToAvcc;
+
 import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;

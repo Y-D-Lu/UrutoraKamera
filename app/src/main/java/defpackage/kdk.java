@@ -1,7 +1,7 @@
 package defpackage;
 
 import android.util.Log;
-import java.lang.Thread;
+
 import java.util.concurrent.FutureTask;
 
 /* renamed from: kdk  reason: default package */

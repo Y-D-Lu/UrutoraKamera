@@ -8,15 +8,18 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
 import com.gcam.simple.filechooser.internals.DirAdapter;
 import com.gcam.simple.filechooser.internals.ExtFileFilter;
 import com.gcam.simple.filechooser.internals.RegexFileFilter;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes2.dex */
 public class ChooserDialog implements DialogInterface.OnClickListener, AdapterView.OnItemClickListener {

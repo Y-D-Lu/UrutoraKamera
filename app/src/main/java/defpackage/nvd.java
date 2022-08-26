@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.cerebra.federatedperception.shared.communications.CommunicationsManager;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: nvd  reason: default package */

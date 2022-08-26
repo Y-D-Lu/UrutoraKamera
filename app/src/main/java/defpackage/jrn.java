@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+
 import j$.util.function.Consumer;
 
 /* renamed from: jrn  reason: default package */

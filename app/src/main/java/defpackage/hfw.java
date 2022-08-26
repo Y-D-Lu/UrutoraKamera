@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.HardwareBuffer;
+
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.InterleavedImageU16;
 import com.google.googlex.gcam.InterleavedImageU8;
@@ -8,6 +9,7 @@ import com.google.googlex.gcam.PortraitRequest;
 import com.google.googlex.gcam.RawReadView;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.creativecamera.portraitmode.PortraitOutputsInterface;
+
 import java.io.File;
 import java.util.HashMap;
 import java.util.concurrent.Executor;

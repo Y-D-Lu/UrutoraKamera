@@ -3,8 +3,10 @@ package defpackage;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.view.ViewStub;
+
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.ui.views.ToggleUi;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jpt  reason: default package */

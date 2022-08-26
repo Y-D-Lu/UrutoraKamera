@@ -17,7 +17,9 @@ import android.text.style.SuperscriptSpan;
 import android.text.style.TypefaceSpan;
 import android.text.style.UnderlineSpan;
 import android.view.Gravity;
+
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.Objects;
 
 /* renamed from: su  reason: default package */

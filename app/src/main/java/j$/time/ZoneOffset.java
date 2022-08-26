@@ -1,5 +1,11 @@
 package j$.time;
 
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.util.concurrent.ConcurrentMap;
+
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.Temporal;
 import j$.time.temporal.TemporalAccessor;
@@ -12,11 +18,6 @@ import j$.time.temporal.ValueRange;
 import j$.time.zone.ZoneRules;
 import j$.util.Objects;
 import j$.util.concurrent.ConcurrentHashMap;
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.util.concurrent.ConcurrentMap;
 
 /* loaded from: classes2.dex */
 public final class ZoneOffset extends ZoneId implements TemporalAccessor, TemporalAdjuster, Comparable {

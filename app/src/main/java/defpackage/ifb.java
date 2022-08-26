@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.Animator;
+
 import j$.util.function.Consumer;
 
 /* renamed from: ifb  reason: default package */

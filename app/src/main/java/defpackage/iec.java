@@ -4,13 +4,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.util.ArraySet;
-import j$.util.Collection;
-import j$.util.Comparator$CC;
-import j$.util.concurrent.ConcurrentHashMap;
-import j$.util.function.Predicate;
-import j$.util.function.ToIntFunction;
-import j$.util.stream.Collectors;
-import j$.util.stream.Stream;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -18,6 +12,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
+
+import j$.util.Collection;
+import j$.util.Comparator$CC;
+import j$.util.concurrent.ConcurrentHashMap;
+import j$.util.function.Predicate;
+import j$.util.function.ToIntFunction;
+import j$.util.stream.Collectors;
+import j$.util.stream.Stream;
 
 /* renamed from: iec  reason: default package */
 /* loaded from: classes.dex */

@@ -2,8 +2,10 @@ package defpackage;
 
 import android.app.KeyguardManager;
 import android.content.Context;
+
 import com.google.android.apps.camera.hdrplus.deblurfusion.DeblurFusionControllerImpl;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
+
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;

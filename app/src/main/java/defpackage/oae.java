@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewParent;
 import android.widget.ProgressBar;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: oae  reason: default package */

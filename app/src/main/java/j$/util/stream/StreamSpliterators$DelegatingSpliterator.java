@@ -1,10 +1,11 @@
 package j$.util.stream;
 
+import java.util.Comparator;
+
 import j$.util.Spliterator;
 import j$.util.function.Consumer;
 import j$.util.function.LongConsumer;
 import j$.util.function.Supplier;
-import java.util.Comparator;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

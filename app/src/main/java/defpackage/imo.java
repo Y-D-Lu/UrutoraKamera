@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.PowerManager;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: imo  reason: default package */

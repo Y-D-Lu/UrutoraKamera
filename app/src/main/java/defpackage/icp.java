@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.pm.ResolveInfo;
+
 import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */

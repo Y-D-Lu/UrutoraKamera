@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: hwl  reason: default package */

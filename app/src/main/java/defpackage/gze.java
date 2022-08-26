@@ -1,11 +1,13 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureResult;
-import j$.util.function.Supplier;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+
+import j$.util.function.Supplier;
 
 /* renamed from: gze  reason: default package */
 /* loaded from: classes.dex */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.IInterface;
+
 import com.google.android.apps.camera.remotecontrol.RemoteControlService;
 
 /* renamed from: hlt  reason: default package */

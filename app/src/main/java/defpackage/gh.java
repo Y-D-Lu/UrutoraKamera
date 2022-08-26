@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: gh  reason: default package */

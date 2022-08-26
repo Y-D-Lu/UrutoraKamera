@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Color;
+
 import com.hdrindicator.DisplayHelper;
 
 /* JADX INFO: Access modifiers changed from: package-private */

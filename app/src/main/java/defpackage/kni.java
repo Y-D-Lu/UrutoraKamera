@@ -3,6 +3,7 @@ package defpackage;
 import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
 /* renamed from: kni  reason: default package */

@@ -9,16 +9,18 @@ import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.os.SystemClock;
 import android.widget.TextView;
-import com.google.android.apps.camera.bottombar.R;
+
 import com.google.android.apps.camera.legacy.lightcycle.ui.PhotoSphereMessageOverlay;
 import com.google.android.apps.lightcycle.panorama.LightCycleNative;
 import com.hdrindicator.DisplayHelper;
+
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
+
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 

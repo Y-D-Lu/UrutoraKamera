@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.media.MediaFormat;
+
 import com.google.android.apps.camera.moments.MomentsUtils;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;

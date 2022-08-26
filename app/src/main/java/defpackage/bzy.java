@@ -10,6 +10,7 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: bzy  reason: default package */

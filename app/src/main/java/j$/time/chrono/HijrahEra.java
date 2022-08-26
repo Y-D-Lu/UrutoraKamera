@@ -1,6 +1,5 @@
 package j$.time.chrono;
 
-import j$.time.chrono.Era;
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.Temporal;
 import j$.time.temporal.TemporalAccessor;

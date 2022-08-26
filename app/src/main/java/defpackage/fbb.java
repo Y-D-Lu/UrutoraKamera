@@ -2,11 +2,12 @@ package defpackage;
 
 import android.content.res.Configuration;
 import android.view.accessibility.AccessibilityManager;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fbb  reason: default package */
 /* loaded from: classes.dex */

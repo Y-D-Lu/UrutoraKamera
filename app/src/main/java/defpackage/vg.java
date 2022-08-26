@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.HandlerThread;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: vg  reason: default package */

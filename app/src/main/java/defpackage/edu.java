@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.googlex.gcam.ShotMetadata;
+
 import java.util.UUID;
 import java.util.concurrent.Executor;
 

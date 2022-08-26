@@ -2,7 +2,9 @@ package defpackage;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
 import androidx.viewpager2.widget.ViewPager2;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: alj  reason: default package */

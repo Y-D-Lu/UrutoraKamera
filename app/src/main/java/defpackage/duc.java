@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionLayout;
 
 /* renamed from: duc  reason: default package */

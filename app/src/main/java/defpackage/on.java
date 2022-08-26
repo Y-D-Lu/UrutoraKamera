@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: on  reason: default package */

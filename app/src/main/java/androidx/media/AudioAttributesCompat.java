@@ -2,6 +2,8 @@ package androidx.media;
 
 import android.util.SparseIntArray;
 
+import defpackage.akt;
+
 /* loaded from: classes.dex */
 public class AudioAttributesCompat implements akt {
     private static final SparseIntArray b;

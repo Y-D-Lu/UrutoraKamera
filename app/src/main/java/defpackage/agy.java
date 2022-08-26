@@ -11,12 +11,12 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.preference.EditTextPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.MultiSelectListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: agy  reason: default package */
 /* loaded from: classes.dex */

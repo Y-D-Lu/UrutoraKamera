@@ -3,10 +3,12 @@ package defpackage;
 import android.content.SharedPreferences;
 import android.media.MediaFormat;
 import android.os.Handler;
-import j$.util.function.Supplier;
+
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
+
+import j$.util.function.Supplier;
 
 /* renamed from: bsr  reason: default package */
 /* loaded from: classes.dex */

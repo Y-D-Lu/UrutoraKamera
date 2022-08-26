@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.android.libraries.oliveoil.natives.BitmapNativeBuffer;
 
 /* renamed from: mtr  reason: default package */

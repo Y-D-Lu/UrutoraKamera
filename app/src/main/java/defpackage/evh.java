@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.bottombar.dagger.BottomBarControllerModule;
 import com.google.android.apps.camera.bottombar.dagger.BottomBarControllerModule_ProvideBottomBarControllerFactory;
+
 import java.util.LinkedHashMap;
 import java.util.List;
 

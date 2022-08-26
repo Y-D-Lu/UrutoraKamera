@@ -1,13 +1,15 @@
 package defpackage;
 
 import android.database.Cursor;
+
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase;
-import j$.util.Map;
+
 import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.util.Map;
 
 /* renamed from: cxc  reason: default package */
 /* loaded from: classes.dex */

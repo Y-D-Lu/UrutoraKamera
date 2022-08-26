@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureResult;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: bnr  reason: default package */

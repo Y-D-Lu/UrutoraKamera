@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.libraries.camera.exif.ExifInterface;
 import com.google.googlex.gcam.DebugParams;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;

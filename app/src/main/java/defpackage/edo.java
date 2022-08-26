@@ -2,11 +2,13 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.hardware.HardwareBuffer;
+
 import com.google.googlex.gcam.BufferUtils;
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.GrayReadViewU8;
 import com.google.googlex.gcam.InterleavedReadViewU8;
 import com.google.googlex.gcam.YuvReadView;
+
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.List;

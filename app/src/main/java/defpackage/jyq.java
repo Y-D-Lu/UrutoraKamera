@@ -11,8 +11,10 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.os.Vibrator;
 import android.text.TextUtils;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.gms.common.api.Status;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 

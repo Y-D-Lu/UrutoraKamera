@@ -7,9 +7,12 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.hardware.camera2.TotalCaptureResult;
 import android.os.SystemClock;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.concurrent.ScheduledExecutorService;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: flb  reason: default package */
 /* loaded from: classes2.dex */

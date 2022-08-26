@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.ApplicationErrorReport;
 import android.os.Bundle;
+
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;

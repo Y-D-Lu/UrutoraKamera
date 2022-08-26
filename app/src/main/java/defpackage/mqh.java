@@ -6,6 +6,7 @@ import android.opengl.EGLContext;
 import android.opengl.EGLDisplay;
 import android.opengl.EGLSurface;
 import android.opengl.GLES30;
+
 import java.nio.Buffer;
 
 /* renamed from: mqh  reason: default package */

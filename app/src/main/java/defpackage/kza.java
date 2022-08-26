@@ -3,7 +3,9 @@ package defpackage;
 import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.libraries.barhopper.Barcode;
+
 import java.util.ArrayList;
 
 /* renamed from: kza  reason: default package */

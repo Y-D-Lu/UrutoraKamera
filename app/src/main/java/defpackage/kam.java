@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.view.ViewGroup;
+
 import com.google.android.apps.camera.zoomui.ZoomUi;
 import com.hdrindicator.DisplayHelper;
 

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.location.Location;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;

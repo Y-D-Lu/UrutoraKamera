@@ -3,6 +3,7 @@ package defpackage;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewTreeObserver;
+
 import j$.util.function.Supplier;
 
 /* JADX INFO: Access modifiers changed from: package-private */

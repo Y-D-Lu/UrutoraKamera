@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.Matrix;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 
 /* JADX INFO: Access modifiers changed from: package-private */

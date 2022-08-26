@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.ExifInterface;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

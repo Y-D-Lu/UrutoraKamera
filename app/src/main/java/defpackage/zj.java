@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.SparseIntArray;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: zj  reason: default package */

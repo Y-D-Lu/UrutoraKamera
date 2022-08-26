@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.camera2.CaptureRequest;
 import android.os.Handler;
 import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

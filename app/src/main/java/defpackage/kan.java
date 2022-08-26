@@ -2,7 +2,9 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+
 import com.google.android.apps.camera.zoomui.ZoomUi;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: kan  reason: default package */

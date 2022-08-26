@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.content.res.Resources;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Iterator;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: ejf  reason: default package */
 /* loaded from: classes2.dex */

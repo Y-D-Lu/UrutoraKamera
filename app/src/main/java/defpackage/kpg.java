@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.googlehelp.GoogleHelp;
@@ -13,6 +14,7 @@ import com.google.android.gms.googlehelp.ND4CSettings;
 import com.google.android.gms.googlehelp.internal.common.TogglingData;
 import com.google.android.gms.location.LocationRequest;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 

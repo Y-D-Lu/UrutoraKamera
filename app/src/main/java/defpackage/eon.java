@@ -4,6 +4,7 @@ import com.google.googlex.gcam.BurstSpec;
 import com.google.googlex.gcam.FrameRequest;
 import com.google.googlex.gcam.FrameRequestVector;
 import com.google.googlex.gcam.GcamModuleJNI;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

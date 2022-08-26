@@ -20,19 +20,23 @@ import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
 import com.Fix.FileFilterSo;
 import com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity;
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
 import com.google.android.apps.camera.ui.preference.StorageStatusPreference;
 import com.mycompany.myapp40.MainActivity$100000001;
-import j$.util.Collection;
-import j$.util.function.Function;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Collection;
+import j$.util.function.Function;
 
 /* renamed from: fcb  reason: default package */
 /* loaded from: classes3.dex */

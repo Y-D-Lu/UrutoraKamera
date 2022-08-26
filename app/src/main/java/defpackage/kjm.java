@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+
 import com.google.android.gms.common.api.internal.LifecycleCallback;
+
 import java.util.concurrent.atomic.AtomicReference;
 
 /* renamed from: kjm  reason: default package */

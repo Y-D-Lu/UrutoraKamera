@@ -2,7 +2,9 @@ package defpackage;
 
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.OisSample;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;

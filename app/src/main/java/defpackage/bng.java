@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.jni.federatedphoto.ModeSuggestionClient;
+
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;

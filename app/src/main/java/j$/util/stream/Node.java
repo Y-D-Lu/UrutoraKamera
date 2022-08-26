@@ -6,7 +6,6 @@ import j$.util.function.DoubleConsumer;
 import j$.util.function.IntConsumer;
 import j$.util.function.IntFunction;
 import j$.util.function.LongConsumer;
-import j$.util.stream.Sink;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

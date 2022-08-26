@@ -2,11 +2,13 @@ package defpackage;
 
 import android.os.Looper;
 import android.view.Choreographer;
-import j$.time.Duration;
-import j$.time.Instant;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
+
+import j$.time.Duration;
+import j$.time.Instant;
 
 /* renamed from: ohw  reason: default package */
 /* loaded from: classes2.dex */

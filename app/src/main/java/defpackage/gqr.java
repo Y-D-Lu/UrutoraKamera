@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
+
 import com.Helper;
 import com.google.android.apps.camera.stats.ViewfinderJankSession;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;

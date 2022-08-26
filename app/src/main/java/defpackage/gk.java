@@ -2,12 +2,15 @@ package defpackage;
 
 import android.view.ContentInfo;
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.R;
-import java.util.ArrayList;
-import java.util.Iterator;
+
 import org.w3c.dom.Attr;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /* renamed from: gk  reason: default package */
 /* loaded from: classes.dex */

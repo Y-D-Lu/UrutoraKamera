@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.DialogInterface;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
+
 import java.util.concurrent.Executor;
 
 /* JADX INFO: Access modifiers changed from: package-private */

@@ -4,7 +4,9 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.os.Build;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
+
 import java.security.SecureRandom;
 import java.util.TimeZone;
 import java.util.concurrent.Executor;

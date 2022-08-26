@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.hardware.camera2.CameraCharacteristics;
+
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 

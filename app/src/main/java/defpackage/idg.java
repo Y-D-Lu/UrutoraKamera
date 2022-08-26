@@ -3,7 +3,6 @@ package defpackage;
 import j$.util.Map;
 import j$.util.function.Function;
 import j$.util.function.Predicate;
-import java.util.Map;
 
 /* renamed from: idg  reason: default package */
 /* loaded from: classes.dex */

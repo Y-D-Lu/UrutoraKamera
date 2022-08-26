@@ -2,6 +2,7 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.media.MediaFormat;
+
 import java.io.IOException;
 import java.util.concurrent.atomic.AtomicInteger;
 

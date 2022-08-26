@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: gai  reason: default package */

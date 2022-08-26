@@ -4,6 +4,7 @@ import androidx.lifecycle.CompositeGeneratedAdaptersObserver;
 import androidx.lifecycle.FullLifecycleObserverAdapter;
 import androidx.lifecycle.ReflectiveGenericLifecycleObserver;
 import androidx.lifecycle.SingleGeneratedAdapterObserver;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;

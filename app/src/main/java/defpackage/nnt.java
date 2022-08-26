@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;

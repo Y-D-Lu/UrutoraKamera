@@ -6,6 +6,7 @@ import android.graphics.drawable.Animatable;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
+
 import java.util.concurrent.locks.Lock;
 
 /* renamed from: bhg  reason: default package */

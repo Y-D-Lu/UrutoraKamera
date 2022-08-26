@@ -1,9 +1,12 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.bottombar.BottomBarListener;
-import java.util.concurrent.TimeUnit;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.TimeUnit;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: iqe  reason: default package */

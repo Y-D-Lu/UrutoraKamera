@@ -1,10 +1,12 @@
 package defpackage;
 
 import com.hdrindicator.DisplayHelper;
-import j$.util.List$CC;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import j$.util.List$CC;
 
 /* renamed from: gaf  reason: default package */
 /* loaded from: classes.dex */

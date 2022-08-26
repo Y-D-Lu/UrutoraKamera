@@ -2,6 +2,7 @@ package defpackage;
 
 import android.media.MediaCodecList;
 import android.os.Trace;
+
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthUtils;
 
 /* renamed from: bvf  reason: default package */

@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.Context;
 import android.widget.ImageView;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: dmf  reason: default package */

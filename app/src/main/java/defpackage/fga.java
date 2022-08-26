@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.android.libraries.lens.lenslite.api.LinkChipResult;
 
 /* JADX INFO: Access modifiers changed from: package-private */

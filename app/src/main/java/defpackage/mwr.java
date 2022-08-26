@@ -3,9 +3,11 @@ package defpackage;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: mwr  reason: default package */
 /* loaded from: classes2.dex */

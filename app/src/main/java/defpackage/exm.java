@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.res.Resources;
 import android.os.Looper;
+
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
+
 import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */

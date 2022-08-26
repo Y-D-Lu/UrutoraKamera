@@ -1,13 +1,16 @@
 package defpackage;
 
 import android.content.res.Resources;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.elapsedtimeui.ElapsedTimerView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: cgx  reason: default package */
 /* loaded from: classes.dex */

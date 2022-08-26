@@ -1,11 +1,13 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthResult;
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthUtils;
 import com.google.googlex.gcam.BurstSpec;
 import com.google.googlex.gcam.DebugParams;
 import com.google.googlex.gcam.ShotMetadata;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

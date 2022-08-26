@@ -4,6 +4,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: oaw  reason: default package */

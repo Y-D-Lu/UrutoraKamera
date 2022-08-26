@@ -2,7 +2,9 @@ package defpackage;
 
 import android.view.View;
 import android.view.ViewPropertyAnimator;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 
 /* renamed from: ob  reason: default package */

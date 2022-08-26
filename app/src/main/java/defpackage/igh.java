@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.babelfish.device.avenh.l2l.modelutils.androidmodelextractor.AndroidModelExtractor;
+
 import java.nio.file.Paths;
 
 /* renamed from: igh  reason: default package */

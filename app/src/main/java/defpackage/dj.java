@@ -4,6 +4,7 @@ import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.os.Bundle;
+
 import java.util.ArrayList;
 
 /* renamed from: dj  reason: default package */

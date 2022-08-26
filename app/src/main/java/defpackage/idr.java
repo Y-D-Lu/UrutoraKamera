@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.drawable.Drawable;
+
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
 
 /* renamed from: idr  reason: default package */

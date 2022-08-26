@@ -4,6 +4,7 @@ import android.content.ComponentName;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.os.IInterface;
+
 import com.google.android.apps.camera.remotecontrol.RemoteControlService;
 
 /* renamed from: hlx  reason: default package */

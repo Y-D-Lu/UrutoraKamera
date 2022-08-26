@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.hardware.camera2.CameraCharacteristics;
+
 import java.util.List;
 import java.util.Set;
 

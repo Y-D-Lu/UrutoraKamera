@@ -5,6 +5,7 @@ import android.content.ServiceConnection;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
+
 import java.util.HashMap;
 
 /* renamed from: kmr  reason: default package */

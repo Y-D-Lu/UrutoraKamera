@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fvn  reason: default package */

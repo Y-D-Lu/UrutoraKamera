@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+
 import com.google.android.material.behavior.HideBottomViewOnScrollBehavior;
 
 /* renamed from: nxi  reason: default package */

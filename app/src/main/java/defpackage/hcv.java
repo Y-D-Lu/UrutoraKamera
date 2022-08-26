@@ -6,16 +6,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.smarts.SmartsChipView;
 import com.google.android.apps.camera.smarts.SmartsUiGleamingView;
 import com.google.android.apps.camera.uiutils.ReplaceableView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: hcv  reason: default package */
 /* loaded from: classes.dex */

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.widget.FrameLayout;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: cac  reason: default package */

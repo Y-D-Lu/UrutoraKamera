@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.Context;
 import android.graphics.Color;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: nyl  reason: default package */

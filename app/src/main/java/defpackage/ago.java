@@ -8,7 +8,9 @@ import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
 import androidx.preference.Preference;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ago  reason: default package */

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */

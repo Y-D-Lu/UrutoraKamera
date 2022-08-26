@@ -5,8 +5,10 @@ import android.content.res.Resources;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import java.util.concurrent.ScheduledExecutorService;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: dbv  reason: default package */
 /* loaded from: classes.dex */

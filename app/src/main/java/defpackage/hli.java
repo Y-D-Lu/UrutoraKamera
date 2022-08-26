@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.hardware.HardwareBuffer;
+
 import com.google.android.apps.camera.rectiface.Rectiface$RectifaceProgressCallback;
 import com.google.googlex.gcam.InterleavedImageU8;
 import com.google.googlex.gcam.InterleavedWriteViewU8;

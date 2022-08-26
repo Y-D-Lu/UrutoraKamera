@@ -3,7 +3,9 @@ package defpackage;
 import android.content.Context;
 import android.os.Trace;
 import android.util.Log;
+
 import com.google.android.libraries.vision.smartcapture.BurstCurator;
+
 import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.concurrent.Executor;

@@ -1,5 +1,9 @@
 package j$.time.chrono;
 
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+
 import j$.time.Instant;
 import j$.time.LocalDate;
 import j$.time.LocalDateTime;
@@ -8,9 +12,6 @@ import j$.time.ZonedDateTime;
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.TemporalAccessor;
 import j$.time.temporal.ValueRange;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
 
 /* loaded from: classes2.dex */
 public final class IsoChronology extends AbstractChronology implements Serializable {

@@ -1,12 +1,15 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.android.apps.lightcycle.panorama.LightCycleNative;
 import com.google.android.apps.lightcycle.panorama.NewTarget;
 import com.hdrindicator.DisplayHelper;
-import j$.util.DesugarCollections;
+
 import java.util.Map;
 import java.util.TreeMap;
+
+import j$.util.DesugarCollections;
 
 /* renamed from: fdv  reason: default package */
 /* loaded from: classes.dex */

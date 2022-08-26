@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.io.File;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: odu  reason: default package */
 /* loaded from: classes2.dex */

@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* loaded from: classes.dex */

@@ -2,11 +2,13 @@ package defpackage;
 
 import android.view.View;
 import android.view.ViewStub;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.views.CutoutBar;
 import com.google.android.apps.camera.ui.views.FrontLensIndicatorOverlay;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.uiutils.ReplaceableView;
+
 import org.codeaurora.snapcam.R;
 
 @Deprecated

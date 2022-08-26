@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import java.io.IOException;
 
 /* renamed from: bhv  reason: default package */

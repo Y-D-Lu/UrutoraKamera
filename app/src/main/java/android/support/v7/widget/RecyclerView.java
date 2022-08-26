@@ -27,13 +27,16 @@ import android.view.accessibility.AccessibilityManager;
 import android.view.animation.Interpolator;
 import android.widget.EdgeEffect;
 import android.widget.OverScroller;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
-import org.codeaurora.snapcam.R;
+
+import defpackage.aby;
 
 /* loaded from: classes.dex */
 public class RecyclerView extends ViewGroup implements fp {

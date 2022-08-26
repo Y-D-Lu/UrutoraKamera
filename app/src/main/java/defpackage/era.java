@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.apps.camera.ui.modeslider.ModeSlider;
 
 /* renamed from: era  reason: default package */

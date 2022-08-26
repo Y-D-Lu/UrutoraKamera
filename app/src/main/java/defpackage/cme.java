@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.Arrays;

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.CountDownTimer;
+
 import java.util.concurrent.TimeUnit;
 
 /* JADX INFO: Access modifiers changed from: package-private */

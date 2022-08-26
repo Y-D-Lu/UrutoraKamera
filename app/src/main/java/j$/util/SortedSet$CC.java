@@ -1,6 +1,5 @@
 package j$.util;
 
-import j$.util.Spliterators;
 import java.util.Comparator;
 import java.util.SortedSet;
 

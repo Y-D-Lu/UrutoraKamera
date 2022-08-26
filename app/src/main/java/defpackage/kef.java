@@ -3,6 +3,7 @@ package defpackage;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.text.TextUtils;
+
 import java.io.Closeable;
 import java.net.URI;
 import java.net.URISyntaxException;

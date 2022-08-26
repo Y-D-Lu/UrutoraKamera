@@ -2,7 +2,12 @@ package androidx.window.layout;
 
 import android.app.Activity;
 import android.os.Looper;
+
 import androidx.window.R;
+
+import defpackage.qmj;
+import defpackage.qno;
+import defpackage.qtr;
 
 /* loaded from: classes.dex */
 public interface WindowInfoRepository {

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.ValueAnimator;
 import android.graphics.Matrix;
+
 import com.hdrindicator.DisplayHelper;
 
 /* JADX INFO: Access modifiers changed from: package-private */

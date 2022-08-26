@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import java.io.UnsupportedEncodingException;
 
 /* renamed from: gj  reason: default package */

@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.AppCompatImageView;
+
 import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */

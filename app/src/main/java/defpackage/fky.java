@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.res.Resources;
-import java.util.Date;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Date;
 
 /* renamed from: fky  reason: default package */
 /* loaded from: classes2.dex */

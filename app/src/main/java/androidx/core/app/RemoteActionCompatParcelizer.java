@@ -4,6 +4,8 @@ import android.app.PendingIntent;
 import android.support.v4.app.RemoteActionCompat;
 import android.support.v4.graphics.drawable.IconCompat;
 
+import defpackage.aks;
+
 /* loaded from: classes.dex */
 public class RemoteActionCompatParcelizer {
     public static RemoteActionCompat read(aks aksVar) {

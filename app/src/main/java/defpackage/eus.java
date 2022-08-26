@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Handler;
 import android.view.Window;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: eus  reason: default package */

@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.support.constraint.ConstraintLayout;
 import android.view.MotionEvent;
 import android.view.View;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: bzg  reason: default package */

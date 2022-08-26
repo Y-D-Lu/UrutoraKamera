@@ -1,14 +1,15 @@
 package defpackage;
 
 import android.os.SystemClock;
-import j$.util.Collection;
-import j$.util.stream.Collectors;
+
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
+
+import j$.util.Collection;
+import j$.util.stream.Collectors;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: czv  reason: default package */

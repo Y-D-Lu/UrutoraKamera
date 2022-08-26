@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.util.Log;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.util.Arrays;
 import java.util.List;
 

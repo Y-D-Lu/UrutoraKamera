@@ -1,6 +1,7 @@
 package com.mf;
 
 import android.util.Log;
+
 import com.Fix.Pref;
 import com.hdrindicator.DisplayHelper;
 

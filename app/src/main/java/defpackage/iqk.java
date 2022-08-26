@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.BottomBarController;
+
 import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: iqk  reason: default package */

@@ -6,13 +6,16 @@ import android.os.Handler;
 import android.os.Parcelable;
 import android.view.ViewGroup;
 import android.view.ViewStub;
+
 import com.google.android.apps.camera.bottombar.BottomBar;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: ibz  reason: default package */
 /* loaded from: classes.dex */

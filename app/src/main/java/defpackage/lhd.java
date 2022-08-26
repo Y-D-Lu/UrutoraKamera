@@ -2,6 +2,7 @@ package defpackage;
 
 import android.media.MediaRecorder;
 import android.view.Surface;
+
 import java.io.FileDescriptor;
 
 /* renamed from: lhd  reason: default package */

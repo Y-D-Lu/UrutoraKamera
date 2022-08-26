@@ -2,7 +2,6 @@ package defpackage;
 
 import j$.util.Iterator;
 import j$.util.function.Consumer;
-import java.util.Iterator;
 
 /* renamed from: atk  reason: default package */
 /* loaded from: classes.dex */

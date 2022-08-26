@@ -13,9 +13,12 @@ import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.widget.PopupWindow;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: iq  reason: default package */

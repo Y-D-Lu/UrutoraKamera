@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.res.Resources;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: hvo  reason: default package */

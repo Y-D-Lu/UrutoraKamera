@@ -1,5 +1,10 @@
 package androidx.window.layout;
 
+import defpackage.qks;
+import defpackage.qmj;
+import defpackage.qnp;
+import defpackage.qsu;
+
 /* loaded from: classes.dex */
 final class WindowInfoRepositoryImpl$configurationChanged$1$publish$1 extends qnp implements qmj {
     final /* synthetic */ qsu $channel;

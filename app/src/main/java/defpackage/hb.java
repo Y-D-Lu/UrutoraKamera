@@ -4,6 +4,7 @@ import android.graphics.Rect;
 import android.text.SpannableString;
 import android.text.TextUtils;
 import android.view.accessibility.AccessibilityNodeInfo;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

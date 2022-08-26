@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.ColorSpace;
 import android.graphics.Matrix;
 import android.hardware.HardwareBuffer;
+
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.YuvImage;
 

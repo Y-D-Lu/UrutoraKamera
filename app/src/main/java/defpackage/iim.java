@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.os.SystemClock;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 

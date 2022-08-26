@@ -5,7 +5,9 @@ import android.graphics.Rect;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
 import android.hardware.camera2.params.MeteringRectangle;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;

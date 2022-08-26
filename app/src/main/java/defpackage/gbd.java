@@ -7,6 +7,7 @@ import android.media.MediaFormat;
 import android.opengl.EGLExt;
 import android.os.Bundle;
 import android.view.Surface;
+
 import com.google.android.libraries.oliveoil.gl.EGLImage;
 
 /* JADX INFO: Access modifiers changed from: package-private */

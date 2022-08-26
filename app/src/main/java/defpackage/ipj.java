@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.res.Resources;
-import java.util.Map;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Map;
 
 /* renamed from: ipj  reason: default package */
 /* loaded from: classes.dex */

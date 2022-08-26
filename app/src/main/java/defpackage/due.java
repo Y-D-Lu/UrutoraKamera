@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.PointF;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: due  reason: default package */

@@ -1,10 +1,11 @@
 package defpackage;
 
-import j$.util.Collection;
-import j$.util.stream.Collectors;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
+
+import j$.util.Collection;
+import j$.util.stream.Collectors;
 
 /* renamed from: bqm  reason: default package */
 /* loaded from: classes.dex */

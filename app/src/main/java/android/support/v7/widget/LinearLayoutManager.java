@@ -8,8 +8,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.List;
 
 /* loaded from: classes.dex */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureResult;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: cml  reason: default package */

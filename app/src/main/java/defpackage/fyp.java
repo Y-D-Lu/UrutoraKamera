@@ -2,9 +2,11 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.Message;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.legacy.lightcycle.storage.LocalSessionStorage;
 import com.google.android.apps.lightcycle.panorama.LightCycleNative;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: fyp  reason: default package */

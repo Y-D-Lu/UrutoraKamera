@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.DialogInterface;
 import android.net.Uri;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: cvp  reason: default package */

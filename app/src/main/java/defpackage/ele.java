@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: ele  reason: default package */

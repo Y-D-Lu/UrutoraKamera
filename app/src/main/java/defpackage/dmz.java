@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.evcomp.EvCompView;
+
 import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */

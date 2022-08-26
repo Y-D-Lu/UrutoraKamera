@@ -1,17 +1,18 @@
 package j$.time;
 
-import j$.time.temporal.TemporalAccessor;
-import j$.time.temporal.TemporalQueries;
-import j$.time.zone.ZoneRules;
-import j$.time.zone.ZoneRulesException;
-import j$.util.DesugarTimeZone;
-import j$.util.Objects;
 import java.io.DataOutput;
 import java.io.InvalidObjectException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.util.Map;
 import java.util.TimeZone;
+
+import j$.time.temporal.TemporalAccessor;
+import j$.time.temporal.TemporalQueries;
+import j$.time.zone.ZoneRules;
+import j$.time.zone.ZoneRulesException;
+import j$.util.DesugarTimeZone;
+import j$.util.Objects;
 
 /* loaded from: classes2.dex */
 public abstract class ZoneId implements Serializable {

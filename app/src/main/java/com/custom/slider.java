@@ -5,8 +5,11 @@ import android.hardware.camera2.CameraCharacteristics;
 import android.os.Build;
 import android.util.Log;
 import android.util.Range;
+
 import com.Helper;
 import com.google.android.apps.camera.bottombar.R;
+
+import defpackage.kvg;
 
 /* loaded from: classes2.dex */
 public class slider {

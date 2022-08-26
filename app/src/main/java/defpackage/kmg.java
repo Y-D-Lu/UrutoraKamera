@@ -5,8 +5,10 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.text.TextUtils;
 import android.util.Log;
-import java.util.Locale;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Locale;
 
 /* renamed from: kmg  reason: default package */
 /* loaded from: classes2.dex */

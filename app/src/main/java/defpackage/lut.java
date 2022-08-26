@@ -6,6 +6,7 @@ import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.TotalCaptureResult;
 import android.view.Surface;
+
 import java.util.Map;
 
 /* renamed from: lut  reason: default package */

@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.view.View;
+
 import com.google.android.material.tabs.TabLayout;
 
 /* renamed from: oco  reason: default package */

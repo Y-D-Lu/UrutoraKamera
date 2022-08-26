@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.ui.layout.GcaLayout;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
+
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 

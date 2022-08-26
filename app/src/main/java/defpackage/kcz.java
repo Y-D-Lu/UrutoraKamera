@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.CaptureResult;
+
 import com.google.android.camera.experimental2017.ExperimentalKeys;
 
 /* renamed from: kcz  reason: default package */

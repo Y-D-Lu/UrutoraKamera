@@ -2,6 +2,7 @@ package defpackage;
 
 import android.support.constraint.ConstraintLayout;
 import android.view.View;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jnr  reason: default package */

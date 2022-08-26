@@ -2,7 +2,9 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.media.AudioManager;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

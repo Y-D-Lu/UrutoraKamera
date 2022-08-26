@@ -9,12 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes2.dex */
 public class DirAdapter extends ArrayAdapter {

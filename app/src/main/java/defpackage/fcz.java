@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.legacy.lightcycle.panorama.LightCycle$LightCycleProgressCallback;
 import com.google.android.apps.lightcycle.panorama.LightCycleNative;
+
 import java.util.HashMap;
 import java.util.Map;
 

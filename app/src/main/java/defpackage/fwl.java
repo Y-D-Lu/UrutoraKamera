@@ -3,7 +3,9 @@ package defpackage;
 import android.animation.AnimatorSet;
 import android.view.View;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.ui.wirers.PreviewOverlay;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fwl  reason: default package */

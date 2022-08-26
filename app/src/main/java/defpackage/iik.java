@@ -3,7 +3,9 @@ package defpackage;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
 import android.os.SystemClock;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;

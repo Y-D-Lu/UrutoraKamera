@@ -11,9 +11,10 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.SystemClock;
 import android.util.Log;
+
 import com.google.android.gms.common.api.GoogleApiActivity;
 import com.google.android.gms.common.api.Status;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -21,6 +22,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: kkg  reason: default package */
 /* loaded from: classes2.dex */

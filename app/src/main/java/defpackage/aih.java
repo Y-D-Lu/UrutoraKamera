@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.Log;
+
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.HashMap;

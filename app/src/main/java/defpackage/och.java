@@ -2,7 +2,9 @@ package defpackage;
 
 import android.graphics.Matrix;
 import android.graphics.Path;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 

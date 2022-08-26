@@ -5,7 +5,9 @@ import android.hardware.Camera;
 import android.os.Looper;
 import android.os.Message;
 import android.view.SurfaceHolder;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.HardwareBuffer;
+
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthResult;
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthUtils;
 import com.google.android.apps.camera.moments.MomentsUtils;
@@ -10,6 +11,7 @@ import com.google.googlex.gcam.RawWriteView;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.YuvWriteView;
 import com.google.googlex.gcam.image.ImageUtils;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 

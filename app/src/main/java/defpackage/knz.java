@@ -1,6 +1,5 @@
 package defpackage;
 
-import j$.net.URLDecoder;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.util.Collections;
@@ -8,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
+
+import j$.net.URLDecoder;
 
 /* renamed from: knz  reason: default package */
 /* loaded from: classes2.dex */

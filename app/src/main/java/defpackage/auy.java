@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.Handler;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: auy  reason: default package */

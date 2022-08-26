@@ -2,6 +2,7 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.media.MediaFormat;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: mah  reason: default package */

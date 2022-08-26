@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ahm  reason: default package */

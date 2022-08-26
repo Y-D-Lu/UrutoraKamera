@@ -6,9 +6,11 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.Drawable;
 import android.util.TypedValue;
+
+import org.codeaurora.snapcam.R;
+
 import java.lang.ref.WeakReference;
 import java.util.WeakHashMap;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: qw  reason: default package */
 /* loaded from: classes2.dex */

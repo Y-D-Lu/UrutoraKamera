@@ -3,6 +3,7 @@ package defpackage;
 import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import java.util.Arrays;
 
 /* renamed from: kqk  reason: default package */

@@ -2,7 +2,10 @@ package androidx.preference;
 
 import android.content.Context;
 import android.util.AttributeSet;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.ahh;
 
 /* loaded from: classes.dex */
 public final class PreferenceScreen extends PreferenceGroup {

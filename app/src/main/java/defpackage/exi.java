@@ -5,12 +5,13 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.SystemClock;
 import android.view.accessibility.AccessibilityManager;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 import com.google.android.apps.camera.ui.views.CaptureAnimationOverlay;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: exi  reason: default package */
 /* loaded from: classes.dex */

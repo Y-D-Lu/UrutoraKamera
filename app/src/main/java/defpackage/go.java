@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: go  reason: default package */

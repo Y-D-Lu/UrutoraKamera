@@ -5,9 +5,12 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
-import j$.time.Duration;
+
 import org.codeaurora.snapcam.R;
+
+import j$.time.Duration;
 
 /* renamed from: fne  reason: default package */
 /* loaded from: classes.dex */

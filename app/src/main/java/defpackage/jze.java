@@ -2,6 +2,7 @@ package defpackage;
 
 import android.widget.FrameLayout;
 import android.widget.SeekBar;
+
 import com.google.android.apps.camera.whitebalance.ManualWhiteBalanceKnob;
 import com.hdrindicator.DisplayHelper;
 

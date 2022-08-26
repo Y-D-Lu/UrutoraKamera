@@ -3,6 +3,7 @@ package defpackage;
 import android.media.MediaCodec;
 import android.media.MediaFormat;
 import android.os.Handler;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.concurrent.atomic.AtomicInteger;

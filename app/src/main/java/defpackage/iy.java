@@ -35,10 +35,11 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+
 import com.Helper;
-import com.google.android.apps.camera.bottombar.R;
 import com.google.lens.sdk.LensApi;
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.ref.WeakReference;
 import java.util.Calendar;
 

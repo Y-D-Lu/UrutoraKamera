@@ -4,9 +4,11 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.net.Uri;
 import android.view.View;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: ihg  reason: default package */
 /* loaded from: classes.dex */

@@ -8,10 +8,14 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewStub;
 import android.widget.ImageButton;
+
 import com.google.android.apps.camera.ui.views.ToggleUi;
-import j$.util.function.Supplier;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
+
+import j$.util.function.Supplier;
 
 /* renamed from: byp  reason: default package */
 /* loaded from: classes.dex */

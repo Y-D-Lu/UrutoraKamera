@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ScheduledExecutorService;

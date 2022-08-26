@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.compression.brotli.wrapper.dec.DecoderJNI;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.ReadableByteChannel;

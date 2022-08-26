@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+
 import java.util.List;
 
 /* renamed from: oap  reason: default package */

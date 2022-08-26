@@ -4,15 +4,18 @@ import android.graphics.Rect;
 import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.Collection;
-import j$.util.stream.Collectors;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+
+import j$.util.Collection;
+import j$.util.stream.Collectors;
 
 /* renamed from: gvs  reason: default package */
 /* loaded from: classes.dex */

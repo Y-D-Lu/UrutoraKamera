@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.Activity;
 import android.text.TextUtils;
+
 import java.util.Arrays;
 
 /* renamed from: aan  reason: default package */

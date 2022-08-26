@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 import j$.util.Objects;
 
 /* renamed from: nwx  reason: default package */

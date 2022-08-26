@@ -7,6 +7,7 @@ import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.GrayWriteViewU16;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.YuvWriteView;
+
 import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.concurrent.Executor;

@@ -14,8 +14,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
+
 import androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;
-import j$.util.DesugarCollections;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
@@ -27,7 +30,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.codeaurora.snapcam.R;
+
+import j$.util.DesugarCollections;
 
 /* renamed from: cu  reason: default package */
 /* loaded from: classes.dex */

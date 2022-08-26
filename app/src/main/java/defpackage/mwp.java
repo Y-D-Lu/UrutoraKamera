@@ -14,6 +14,7 @@ import android.opengl.GLES31;
 import android.os.Process;
 import android.os.health.HealthStats;
 import android.util.Log;
+
 import java.util.Collections;
 import java.util.Locale;
 import java.util.concurrent.Executor;

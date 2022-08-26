@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.ui.elapsedtimeui.ElapsedTimerView;
 import com.google.android.apps.camera.ui.elapsedtimeui.LongPressElapsedTimeView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jpo  reason: default package */

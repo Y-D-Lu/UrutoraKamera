@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.Looper;
+
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.atomic.AtomicBoolean;
 

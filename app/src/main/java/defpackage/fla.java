@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: fla  reason: default package */

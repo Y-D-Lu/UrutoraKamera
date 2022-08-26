@@ -3,6 +3,7 @@ package defpackage;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.progressoverlay.ProgressOverlay;
 
 /* renamed from: hjn  reason: default package */

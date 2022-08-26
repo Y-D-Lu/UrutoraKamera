@@ -7,6 +7,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.util.Base64;
 import android.util.TypedValue;
+
 import java.lang.reflect.Array;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

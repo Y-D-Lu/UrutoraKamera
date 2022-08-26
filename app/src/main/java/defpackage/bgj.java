@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Context;
+
 import java.security.MessageDigest;
 
 /* renamed from: bgj  reason: default package */

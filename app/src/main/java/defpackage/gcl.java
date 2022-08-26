@@ -3,6 +3,7 @@ package defpackage;
 import com.google.android.apps.camera.moments.MomentsUtils;
 import com.google.googlex.gcam.BurstSpec;
 import com.google.googlex.gcam.PostviewParams;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicInteger;

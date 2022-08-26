@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
 import android.view.Surface;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;

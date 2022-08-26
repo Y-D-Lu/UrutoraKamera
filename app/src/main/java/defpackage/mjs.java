@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.Log;
+
 import java.io.IOException;
 
 /* renamed from: mjs  reason: default package */

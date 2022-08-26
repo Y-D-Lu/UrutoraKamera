@@ -6,7 +6,9 @@ import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+
 import com.google.android.apps.camera.processing.ProcessingService;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Set;

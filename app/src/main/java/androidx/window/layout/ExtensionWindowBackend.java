@@ -2,15 +2,19 @@ package androidx.window.layout;
 
 import android.app.Activity;
 import android.content.Context;
+
 import androidx.window.core.Version;
-import androidx.window.layout.ExtensionInterfaceCompat;
-import androidx.window.layout.ExtensionWindowBackend;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.Executor;
 import java.util.concurrent.locks.ReentrantLock;
+
+import defpackage.qkx;
+import defpackage.qnm;
+import defpackage.qno;
 
 /* loaded from: classes.dex */
 public final class ExtensionWindowBackend implements WindowBackend {

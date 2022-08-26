@@ -11,7 +11,9 @@ import android.support.wearable.complications.ComplicationData;
 import android.support.wearable.complications.ComplicationText;
 import android.text.Layout;
 import android.text.TextPaint;
+
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.Objects;
 
 /* renamed from: sq  reason: default package */

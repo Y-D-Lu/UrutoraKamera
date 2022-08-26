@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.concurrent.Executor;

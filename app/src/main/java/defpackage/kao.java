@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+
 import com.google.android.apps.camera.zoomui.ZoomUi;
 
 /* renamed from: kao  reason: default package */

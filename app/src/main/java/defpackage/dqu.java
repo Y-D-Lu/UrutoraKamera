@@ -1,7 +1,8 @@
 package defpackage;
 
-import j$.util.Objects;
 import java.util.Arrays;
+
+import j$.util.Objects;
 
 /* renamed from: dqu  reason: default package */
 /* loaded from: classes.dex */

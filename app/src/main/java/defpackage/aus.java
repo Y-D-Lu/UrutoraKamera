@@ -6,6 +6,7 @@ import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.MediaRecorder;
 import android.util.Range;
 import android.util.Rational;
+
 import java.util.Arrays;
 
 /* renamed from: aus  reason: default package */

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.util.Pair;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

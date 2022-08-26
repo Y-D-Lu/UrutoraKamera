@@ -1,10 +1,12 @@
 package defpackage;
 
 import com.hdrindicator.DisplayHelper;
-import j$.util.function.Consumer;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
+
+import j$.util.function.Consumer;
 
 /* renamed from: gui  reason: default package */
 /* loaded from: classes.dex */

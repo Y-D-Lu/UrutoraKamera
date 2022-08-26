@@ -4,13 +4,17 @@ import android.content.Context;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.view.View;
 import android.widget.TextView;
+
 import androidx.viewpager2.widget.ViewPager2;
-import j$.util.Collection;
-import j$.util.stream.Collectors;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Collection;
+import j$.util.stream.Collectors;
 
 /* renamed from: epw  reason: default package */
 /* loaded from: classes.dex */

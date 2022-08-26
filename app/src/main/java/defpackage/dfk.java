@@ -5,10 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import org.codeaurora.snapcam.R;
+
 import j$.time.ZoneId;
 import j$.time.format.DateTimeFormatter;
 import j$.time.format.FormatStyle;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: dfk  reason: default package */
 /* loaded from: classes2.dex */

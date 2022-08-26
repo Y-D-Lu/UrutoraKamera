@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 import android.view.Surface;
+
 import java.util.ArrayList;
 
 /* renamed from: lsc  reason: default package */

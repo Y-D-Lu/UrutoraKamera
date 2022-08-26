@@ -6,6 +6,7 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: obz  reason: default package */

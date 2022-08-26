@@ -1,9 +1,8 @@
 package android.support.v8.renderscript;
 
-import android.support.v8.renderscript.Allocation;
-import android.support.v8.renderscript.Script;
 import android.util.Log;
 import android.util.Pair;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

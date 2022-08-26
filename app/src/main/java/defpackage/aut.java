@@ -9,7 +9,9 @@ import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.params.MeteringRectangle;
 import android.util.Range;
 import android.util.Size;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.List;
 
 /* renamed from: aut  reason: default package */

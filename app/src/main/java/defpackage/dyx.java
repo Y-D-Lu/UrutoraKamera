@@ -2,7 +2,9 @@ package defpackage;
 
 import android.hardware.camera2.CameraCharacteristics;
 import android.util.SizeF;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 

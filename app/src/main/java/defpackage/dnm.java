@@ -4,9 +4,11 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
+
 import com.google.android.apps.camera.jni.facebeautification.FaceBeautificationNative;
 import com.google.android.apps.camera.jni.facebeautification.FaceInfo;
 import com.google.googlex.gcam.MeshWarp;
+
 import java.nio.ByteBuffer;
 import java.util.concurrent.Callable;
 

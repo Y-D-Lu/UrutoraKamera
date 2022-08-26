@@ -3,6 +3,7 @@ package defpackage;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.Toast;
+
 import com.google.android.libraries.memorymonitor.MemoryMonitorView;
 
 /* renamed from: miv  reason: default package */

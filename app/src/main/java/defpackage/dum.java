@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Canvas;
 import android.graphics.drawable.ShapeDrawable;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: dum  reason: default package */

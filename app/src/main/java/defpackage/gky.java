@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import java.util.concurrent.Executor;
 
 /* JADX INFO: Access modifiers changed from: package-private */

@@ -3,6 +3,7 @@ package defpackage;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: lao  reason: default package */

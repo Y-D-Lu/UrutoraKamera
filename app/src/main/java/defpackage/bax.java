@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.ContentResolver;
+
 import java.util.List;
 
 /* renamed from: bax  reason: default package */

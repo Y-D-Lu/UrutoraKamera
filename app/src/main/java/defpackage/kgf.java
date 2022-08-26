@@ -4,16 +4,19 @@ import android.accounts.Account;
 import android.content.Context;
 import android.net.Uri;
 import android.text.TextUtils;
+
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.Scope;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /* renamed from: kgf  reason: default package */
 /* loaded from: classes2.dex */

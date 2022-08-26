@@ -5,6 +5,8 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
+import defpackage.ahn;
+
 /* loaded from: classes.dex */
 public class PreferenceImageView extends ImageView {
     private int a;

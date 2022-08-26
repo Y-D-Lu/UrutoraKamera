@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.os.Handler;
 import android.view.ViewStub;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.remotecontrol.RemoteControlView;
 
 /* renamed from: jiy  reason: default package */

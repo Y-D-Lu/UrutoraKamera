@@ -6,16 +6,19 @@ import android.os.SystemClock;
 import android.util.Log;
 import android.util.Range;
 import android.view.Surface;
+
 import com.google.googlex.gcam.FrameMetadata;
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.PhysicalStabilityThresholds;
 import com.google.googlex.gcam.ShotParams;
 import com.google.googlex.gcam.YuvWriteView;
 import com.hdrindicator.DisplayHelper;
-import j$.time.Duration;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+
+import j$.time.Duration;
 
 /* renamed from: gzy  reason: default package */
 /* loaded from: classes.dex */

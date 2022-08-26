@@ -1,7 +1,5 @@
 package defpackage;
 
-import java.lang.Thread;
-
 /* renamed from: bup  reason: default package */
 /* loaded from: classes.dex */
 public abstract class bup implements Thread.UncaughtExceptionHandler {

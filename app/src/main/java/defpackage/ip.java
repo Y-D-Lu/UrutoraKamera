@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.Menu;
 import android.view.MenuItem;
+
 import com.hdrindicator.DisplayHelper;
 
 /* JADX INFO: Access modifiers changed from: package-private */

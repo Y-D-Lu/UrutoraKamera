@@ -3,7 +3,9 @@ package defpackage;
 import android.content.DialogInterface;
 import android.os.Handler;
 import android.os.Message;
+
 import com.google.lens.sdk.LensApi;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: ia  reason: default package */

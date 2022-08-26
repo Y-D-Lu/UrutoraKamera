@@ -3,6 +3,7 @@ package defpackage;
 import android.media.MediaRecorder;
 import android.os.HandlerThread;
 import android.os.SystemClock;
+
 import java.util.concurrent.ExecutorService;
 
 /* renamed from: jwg  reason: default package */

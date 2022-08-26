@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.util.DisplayMetrics;
+
 import com.google.googlex.gcam.InterleavedImageU8;
 import com.google.googlex.gcam.InterleavedReadViewU8;
 import com.google.googlex.gcam.InterleavedWriteViewU8;

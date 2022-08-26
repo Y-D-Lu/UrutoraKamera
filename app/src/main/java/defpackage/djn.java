@@ -3,12 +3,15 @@ package defpackage;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.SearchView;
+
 import androidx.preference.EditTextPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.debug.ui.MaterialSearchViewPreference;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

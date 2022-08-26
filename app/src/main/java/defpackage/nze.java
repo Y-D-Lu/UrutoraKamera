@@ -3,6 +3,7 @@ package defpackage;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
+
 import com.hdrindicator.DisplayHelper;
 
 /* JADX INFO: Access modifiers changed from: package-private */

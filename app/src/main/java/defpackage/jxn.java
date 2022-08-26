@@ -6,6 +6,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jxn  reason: default package */

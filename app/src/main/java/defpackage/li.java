@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: li  reason: default package */

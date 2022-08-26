@@ -5,11 +5,14 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.IOException;
 import java.util.concurrent.Executor;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: gac  reason: default package */
 /* loaded from: classes.dex */

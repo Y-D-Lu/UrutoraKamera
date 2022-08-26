@@ -1,11 +1,13 @@
 package defpackage;
 
 import android.hardware.HardwareBuffer;
+
 import com.google.android.libraries.camera.jni.yuv.YuvUtilNative;
 import com.google.android.libraries.oliveoil.gl.EGLImage;
 import com.google.googlex.gcam.YuvWriteView;
 import com.google.googlex.gcam.imageproc.Resample;
 import com.hdrindicator.DisplayHelper;
+
 import java.nio.ByteBuffer;
 import java.util.List;
 

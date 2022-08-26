@@ -5,6 +5,7 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.SeekBar;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: nf  reason: default package */

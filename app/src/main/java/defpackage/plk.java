@@ -9,11 +9,13 @@ import android.support.v8.renderscript.ScriptIntrinsicBLAS;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.lasagna.LasagnaCallbacks;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;

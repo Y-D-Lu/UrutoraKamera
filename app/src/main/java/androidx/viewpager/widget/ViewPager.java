@@ -20,10 +20,22 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.animation.Interpolator;
 import android.widget.EdgeEffect;
 import android.widget.Scroller;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import defpackage.aby;
+import defpackage.aku;
+import defpackage.akv;
+import defpackage.akw;
+import defpackage.akx;
+import defpackage.aky;
+import defpackage.akz;
+import defpackage.ala;
+import defpackage.alb;
 
 /* loaded from: classes.dex */
 public class ViewPager extends ViewGroup {

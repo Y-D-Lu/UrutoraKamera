@@ -2,7 +2,9 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.Message;
+
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: jke  reason: default package */

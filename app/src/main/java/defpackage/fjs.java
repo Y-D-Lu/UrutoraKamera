@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.PointF;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.util.List;
 
 /* renamed from: fjs  reason: default package */

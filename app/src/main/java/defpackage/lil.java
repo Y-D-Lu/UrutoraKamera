@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.eszdman.rampatcher.PatcherSession;
+
 import java.util.HashMap;
 import java.util.Map;
 

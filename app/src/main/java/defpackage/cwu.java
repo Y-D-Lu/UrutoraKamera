@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.SharedPreferences;
+
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase;
 
 /* renamed from: cwu  reason: default package */

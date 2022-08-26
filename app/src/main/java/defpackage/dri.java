@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
+
 import java.util.Collections;
 import java.util.Set;
 

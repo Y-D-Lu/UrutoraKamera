@@ -2,7 +2,9 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
+
 import j$.util.Collection;
 
 /* renamed from: guj  reason: default package */

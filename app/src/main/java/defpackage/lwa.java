@@ -2,9 +2,11 @@ package defpackage;
 
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
+
 import com.Fix.Lens;
 import com.Helper;
 import com.eszdman;
+
 import java.util.ArrayList;
 import java.util.List;
 

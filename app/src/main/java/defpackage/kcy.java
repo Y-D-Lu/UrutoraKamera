@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.CaptureResult;
+
 import com.google.android.camera.experimental2016.ExperimentalKeys;
 
 /* renamed from: kcy  reason: default package */

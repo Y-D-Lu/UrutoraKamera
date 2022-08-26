@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.ActivityManager;
 import android.content.Context;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: bds  reason: default package */

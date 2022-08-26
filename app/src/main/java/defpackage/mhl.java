@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+
 import com.google.android.libraries.lens.lenslite.api.DownloadEvent;
 import com.google.android.libraries.lens.lenslite.api.DownloadListener;
 import com.google.android.libraries.lens.lenslite.api.DownloadParam;
@@ -19,6 +20,7 @@ import com.google.android.libraries.lens.lenslite.dynamicloading.DLEngineApi;
 import com.google.android.libraries.lens.lenslite.dynamicloading.DLLinkResultListener;
 import com.google.android.libraries.lens.lenslite.dynamicloading.EngineApiLoader;
 import com.google.android.libraries.lens.smartsapi.SmartsResult$SmartsEngineType;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;

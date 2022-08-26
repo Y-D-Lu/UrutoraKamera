@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.view.WindowManager;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: jev  reason: default package */

@@ -2,8 +2,10 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.Trace;
+
 import com.google.android.apps.camera.moments.MomentsUtils;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Deque;
 import java.util.HashSet;
 import java.util.Iterator;

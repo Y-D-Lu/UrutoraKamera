@@ -4,6 +4,7 @@ import android.content.Context;
 import android.hardware.camera2.CaptureRequest;
 import android.os.Build;
 import android.os.Handler;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 

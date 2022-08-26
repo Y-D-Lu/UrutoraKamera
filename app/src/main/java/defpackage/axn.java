@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Point;
 import android.hardware.Camera;
 import android.util.Size;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

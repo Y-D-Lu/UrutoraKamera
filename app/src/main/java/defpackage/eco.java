@@ -3,6 +3,7 @@ package defpackage;
 import com.google.googlex.gcam.InterleavedImageU8;
 import com.google.googlex.gcam.PortraitRequest;
 import com.google.googlex.gcam.ShotMetadata;
+
 import java.util.List;
 
 /* renamed from: eco  reason: default package */

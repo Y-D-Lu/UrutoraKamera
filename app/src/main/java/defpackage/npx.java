@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.database.Cursor;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.F250RoomDatabase_Impl;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;

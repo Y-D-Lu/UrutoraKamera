@@ -3,8 +3,10 @@ package defpackage;
 import android.content.res.Resources;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.ui.widget.ReviewImageView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fle  reason: default package */

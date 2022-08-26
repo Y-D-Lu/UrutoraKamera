@@ -2,8 +2,10 @@ package defpackage;
 
 import android.opengl.GLES20;
 import android.opengl.Matrix;
+
 import com.google.android.libraries.vision.opengl.Texture;
 import com.hdrindicator.DisplayHelper;
+
 import java.nio.FloatBuffer;
 
 /* renamed from: eli  reason: default package */

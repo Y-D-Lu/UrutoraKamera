@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.HardwareBuffer;
 import android.location.Location;
+
 import com.Helper;
 import com.google.android.libraries.camera.exif.ExifInterface;
 import com.google.googlex.gcam.GcamModuleJNI;
@@ -13,6 +14,7 @@ import com.google.googlex.gcam.JpgEncodeOptions;
 import com.google.googlex.gcam.LockedHardwareBuffer;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.imageio.JpgHelper;
+
 import java.io.ByteArrayOutputStream;
 
 /* renamed from: eds  reason: default package */

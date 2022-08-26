@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.Context;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.nio.charset.Charset;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: khf  reason: default package */
 /* loaded from: classes2.dex */

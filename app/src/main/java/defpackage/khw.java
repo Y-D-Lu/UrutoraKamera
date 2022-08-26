@@ -8,10 +8,13 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+
 import com.google.android.gms.common.GooglePlayServicesIncorrectManifestValueException;
 import com.google.android.gms.common.GooglePlayServicesMissingManifestValueException;
-import java.util.concurrent.atomic.AtomicBoolean;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: khw  reason: default package */
 /* loaded from: classes2.dex */

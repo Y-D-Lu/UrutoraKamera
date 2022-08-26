@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
+
 import com.Fix.Pref;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 

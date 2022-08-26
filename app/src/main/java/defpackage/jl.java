@@ -2,6 +2,7 @@ package defpackage;
 
 import android.support.v7.widget.ActionBarOverlayLayout;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
 
 /* JADX INFO: Access modifiers changed from: package-private */

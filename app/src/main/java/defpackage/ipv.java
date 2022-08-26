@@ -2,9 +2,11 @@ package defpackage;
 
 import android.view.View;
 import android.widget.FrameLayout;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Timer;
 import java.util.concurrent.atomic.AtomicLong;
-import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: ipv  reason: default package */

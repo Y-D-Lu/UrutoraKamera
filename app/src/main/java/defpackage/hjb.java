@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.processing.imagebackend.ImgUtilNative;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.concurrent.Executor;
 

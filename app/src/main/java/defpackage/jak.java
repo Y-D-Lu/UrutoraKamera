@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.hardware.SensorEventListener;
 import android.os.Vibrator;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 
 /* renamed from: jak  reason: default package */

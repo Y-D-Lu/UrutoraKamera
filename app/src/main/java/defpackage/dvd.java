@@ -7,14 +7,17 @@ import android.content.Context;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.os.Handler;
+
 import com.google.android.apps.camera.hdrplus.deblurfusion.DeblurFusionMergedCropCalculator;
 import com.google.googlex.gcam.Gcam;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: dvd  reason: default package */
 /* loaded from: classes.dex */

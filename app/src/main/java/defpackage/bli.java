@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.ViewTreeObserver;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 

@@ -1,7 +1,8 @@
 package defpackage;
 
-import j$.time.Instant;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.time.Instant;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dhq  reason: default package */

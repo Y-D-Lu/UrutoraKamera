@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.Parcel;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.Status;

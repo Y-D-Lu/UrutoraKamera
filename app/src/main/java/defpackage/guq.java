@@ -8,10 +8,12 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: guq  reason: default package */
 /* loaded from: classes.dex */

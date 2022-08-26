@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.ValueAnimator;
 import android.os.Handler;
+
 import com.google.android.apps.camera.ui.views.CutoutBar;
 import com.google.android.apps.camera.ui.views.FrontLensIndicatorOverlay;
 import com.hdrindicator.DisplayHelper;

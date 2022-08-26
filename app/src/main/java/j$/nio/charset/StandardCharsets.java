@@ -1,12 +1,10 @@
 package j$.nio.charset;
 
-import j$.sun.nio.cs.ISO_8859_1;
-import j$.sun.nio.cs.US_ASCII;
+import java.nio.charset.Charset;
+
 import j$.sun.nio.cs.UTF_16;
 import j$.sun.nio.cs.UTF_16BE;
 import j$.sun.nio.cs.UTF_16LE;
-import j$.sun.nio.cs.UTF_8;
-import java.nio.charset.Charset;
 
 /* loaded from: classes2.dex */
 public final class StandardCharsets {

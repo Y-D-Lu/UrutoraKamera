@@ -6,9 +6,12 @@ import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Range;
+
 import com.Helper;
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.kvg;
 
 /* loaded from: classes2.dex */
 public class lol {

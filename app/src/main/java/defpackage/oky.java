@@ -1,11 +1,11 @@
 package defpackage;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
 import java.util.Collection;
 import java.util.ConcurrentModificationException;
-import java.util.Iterator;
 import java.util.List;
+
+import j$.util.Iterator;
+import j$.util.function.Consumer;
 
 /* renamed from: oky  reason: default package */
 /* loaded from: classes2.dex */

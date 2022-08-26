@@ -2,9 +2,12 @@ package defpackage;
 
 import android.text.format.DateUtils;
 import android.widget.FrameLayout;
-import j$.time.Duration;
-import java.util.concurrent.TimeUnit;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.TimeUnit;
+
+import j$.time.Duration;
 
 /* renamed from: ios  reason: default package */
 /* loaded from: classes.dex */

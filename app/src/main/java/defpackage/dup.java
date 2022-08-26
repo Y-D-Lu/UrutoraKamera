@@ -3,8 +3,10 @@ package defpackage;
 import android.content.Context;
 import android.content.res.Resources;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.focusindicator.FocusIndicatorRingView;
 import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: dup  reason: default package */

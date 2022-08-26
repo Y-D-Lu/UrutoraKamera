@@ -2,6 +2,7 @@ package defpackage;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+
 import java.io.File;
 
 /* renamed from: ajq  reason: default package */

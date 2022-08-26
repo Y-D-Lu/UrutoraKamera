@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.hardware.camera2.params.Face;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: hjy  reason: default package */

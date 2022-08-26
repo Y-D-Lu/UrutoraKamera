@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 import android.view.animation.Interpolator;
+
 import j$.util.function.ToLongFunction;
 
 /* renamed from: jkq  reason: default package */

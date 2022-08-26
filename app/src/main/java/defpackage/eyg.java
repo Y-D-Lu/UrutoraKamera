@@ -2,11 +2,12 @@ package defpackage;
 
 import android.os.CountDownTimer;
 import android.view.accessibility.AccessibilityManager;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 import com.google.android.apps.camera.progressoverlay.ProgressOverlay;
+
 import java.io.File;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: eyg  reason: default package */
 /* loaded from: classes.dex */

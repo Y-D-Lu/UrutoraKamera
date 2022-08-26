@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.PointF;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Iterator;
 
 /* renamed from: nmc  reason: default package */

@@ -58,6 +58,7 @@ import android.view.WindowInsets;
 import android.view.WindowMetrics;
 import android.webkit.MimeTypeMap;
 import android.widget.FrameLayout;
+
 import com.CamcorderProfile;
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -66,8 +67,9 @@ import com.google.android.libraries.camera.exif.ExifInterface;
 import com.google.common.io.ByteStreams;
 import com.google.lens.sdk.LensApi;
 import com.hdrindicator.DisplayHelper;
-import j$.nio.charset.StandardCharsets;
-import j$.util.function.Consumer;
+
+import org.xmlpull.v1.XmlPullParserException;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
@@ -101,7 +103,9 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-import org.xmlpull.v1.XmlPullParserException;
+
+import j$.nio.charset.StandardCharsets;
+import j$.util.function.Consumer;
 
 /* renamed from: mip  reason: default package */
 /* loaded from: classes3.dex */

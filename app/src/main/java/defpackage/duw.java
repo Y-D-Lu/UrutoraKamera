@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: duw  reason: default package */

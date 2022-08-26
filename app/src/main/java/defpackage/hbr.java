@@ -1,9 +1,12 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureResult;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.Collection;
+
 import java.util.Map;
+
+import j$.util.Collection;
 
 /* renamed from: hbr  reason: default package */
 /* loaded from: classes.dex */

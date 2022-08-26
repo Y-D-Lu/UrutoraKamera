@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.googlehelp.GoogleHelp;
 
 /* renamed from: kpq  reason: default package */

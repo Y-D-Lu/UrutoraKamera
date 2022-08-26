@@ -12,7 +12,9 @@ import android.os.Message;
 import android.util.Range;
 import android.util.Size;
 import android.view.Surface;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.Arrays;
 
 /* JADX INFO: Access modifiers changed from: package-private */

@@ -3,6 +3,7 @@ package defpackage;
 import android.app.Activity;
 import android.content.Context;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: cvr  reason: default package */

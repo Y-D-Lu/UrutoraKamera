@@ -4,7 +4,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.google.lens.sdk.PendingIntentConsumer;
+
 import java.util.ArrayDeque;
 import java.util.Queue;
 

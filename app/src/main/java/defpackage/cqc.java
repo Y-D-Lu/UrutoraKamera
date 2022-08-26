@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.location.Location;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.io.File;
 import java.io.IOException;
 

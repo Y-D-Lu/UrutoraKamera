@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.jni.facebeautification.FaceBeautificationNative;
+
 import java.util.concurrent.Executor;
 
 /* JADX INFO: Access modifiers changed from: package-private */

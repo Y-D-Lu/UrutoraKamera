@@ -3,7 +3,9 @@ package defpackage;
 import android.graphics.Point;
 import android.graphics.PointF;
 import android.os.CountDownTimer;
+
 import com.google.android.apps.camera.smarts.SmartsUiGleamingView;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import j$.util.function.Supplier;
 
 /* renamed from: ivw  reason: default package */

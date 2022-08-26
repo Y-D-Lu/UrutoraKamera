@@ -1,13 +1,16 @@
 package defpackage;
 
 import android.graphics.Rect;
+
+import org.codeaurora.snapcam.R;
+
+import java.util.List;
+import java.util.Map;
+
 import j$.time.temporal.ChronoUnit;
 import j$.util.Collection;
 import j$.util.function.Function;
 import j$.util.stream.Collectors;
-import java.util.List;
-import java.util.Map;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: cgw  reason: default package */
 /* loaded from: classes.dex */

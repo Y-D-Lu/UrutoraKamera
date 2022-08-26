@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.material.tabs.TabLayout;
 
 /* renamed from: ocr  reason: default package */

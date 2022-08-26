@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.display.DisplayManager;
 import android.view.WindowManager;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;

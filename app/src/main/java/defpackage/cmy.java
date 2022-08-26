@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.content.res.Resources;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.List;
 import java.util.concurrent.Executor;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: cmy  reason: default package */
 /* loaded from: classes.dex */

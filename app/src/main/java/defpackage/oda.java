@@ -16,7 +16,9 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.google.android.material.tabs.TabLayout;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: oda  reason: default package */

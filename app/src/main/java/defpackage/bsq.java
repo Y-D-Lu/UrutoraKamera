@@ -3,6 +3,7 @@ package defpackage;
 import android.content.res.Resources;
 import android.os.Handler;
 import android.os.Looper;
+
 import com.google.googlex.gcam.DirtyLensHistory;
 import com.google.googlex.gcam.FloatDeque;
 import com.google.googlex.gcam.GcamModuleJNI;

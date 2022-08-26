@@ -1,9 +1,10 @@
 package defpackage;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
+
+import j$.util.Iterator;
+import j$.util.function.Consumer;
 
 /* renamed from: qkw  reason: default package */
 /* loaded from: classes2.dex */

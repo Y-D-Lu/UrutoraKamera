@@ -1,8 +1,9 @@
 package defpackage;
 
-import j$.util.Iterator;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
+
+import j$.util.Iterator;
 
 /* renamed from: otj  reason: default package */
 /* loaded from: classes2.dex */

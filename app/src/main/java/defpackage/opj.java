@@ -1,13 +1,13 @@
 package defpackage;
 
-import j$.util.Map;
 import java.util.Collection;
 import java.util.Comparator;
-import java.util.Map;
 import java.util.NavigableMap;
 import java.util.NavigableSet;
 import java.util.Set;
 import java.util.SortedMap;
+
+import j$.util.Map;
 
 /* renamed from: opj  reason: default package */
 /* loaded from: classes2.dex */

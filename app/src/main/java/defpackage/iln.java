@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: iln  reason: default package */

@@ -3,6 +3,7 @@ package defpackage;
 import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: iva  reason: default package */

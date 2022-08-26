@@ -7,7 +7,9 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import java.util.Collection;
 
 /* renamed from: aae  reason: default package */

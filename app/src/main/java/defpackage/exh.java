@@ -2,10 +2,12 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.view.accessibility.AccessibilityManager;
-import j$.util.Collection;
+
 import java.util.List;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.atomic.AtomicReference;
+
+import j$.util.Collection;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: exh  reason: default package */

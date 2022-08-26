@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: aar  reason: default package */

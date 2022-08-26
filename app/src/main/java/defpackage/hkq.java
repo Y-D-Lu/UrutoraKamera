@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.os.Trace;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 
 /* renamed from: hkq  reason: default package */

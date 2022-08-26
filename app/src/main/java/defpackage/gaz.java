@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CaptureResult;
 import android.location.Location;
+
 import com.google.googlex.gcam.AeShotParams;
 import com.google.googlex.gcam.ClientShotMetadata;
 import com.google.googlex.gcam.FrameMetadata;

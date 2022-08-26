@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.legacy.app.app.CameraApp;
 

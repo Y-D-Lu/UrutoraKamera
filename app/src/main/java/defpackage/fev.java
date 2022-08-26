@@ -4,8 +4,9 @@ import android.graphics.BitmapFactory;
 import android.location.Location;
 import android.media.ExifInterface;
 import android.os.Build;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.DesugarTimeZone;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,6 +21,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
+
+import j$.util.DesugarTimeZone;
 
 /* renamed from: fev  reason: default package */
 /* loaded from: classes.dex */

@@ -2,7 +2,9 @@ package defpackage;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Collections;
 import java.util.List;
 

@@ -11,11 +11,15 @@ import android.view.accessibility.AccessibilityManager;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.elapsedtimeui.ElapsedTimerView;
 import com.hdrindicator.DisplayHelper;
-import j$.time.Duration;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
+
+import j$.time.Duration;
 
 /* renamed from: jay  reason: default package */
 /* loaded from: classes.dex */

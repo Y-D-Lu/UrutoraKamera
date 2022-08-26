@@ -17,7 +17,26 @@ import android.view.WindowInsets;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Scroller;
+
 import java.util.ArrayList;
+
+import defpackage.alc;
+import defpackage.ald;
+import defpackage.alf;
+import defpackage.alg;
+import defpackage.alh;
+import defpackage.ali;
+import defpackage.alj;
+import defpackage.alk;
+import defpackage.all;
+import defpackage.alm;
+import defpackage.aln;
+import defpackage.alp;
+import defpackage.als;
+import defpackage.alt;
+import defpackage.alu;
+import defpackage.alv;
+import defpackage.alw;
 
 /* loaded from: classes.dex */
 public final class ViewPager2 extends ViewGroup {

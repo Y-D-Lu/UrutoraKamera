@@ -1,7 +1,8 @@
 package defpackage;
 
-import j$.nio.charset.StandardCharsets;
 import java.util.Locale;
+
+import j$.nio.charset.StandardCharsets;
 
 /* renamed from: mld  reason: default package */
 /* loaded from: classes2.dex */

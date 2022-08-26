@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.googlehelp.GoogleHelp;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: kpu  reason: default package */

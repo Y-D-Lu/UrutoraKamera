@@ -3,13 +3,17 @@ package defpackage;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.toast.EducationToastView;
 import com.google.android.apps.camera.toast.ToastView;
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
+import java.util.Date;
+
 import j$.time.Duration;
 import j$.util.Objects;
-import java.util.Date;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: isi  reason: default package */
 /* loaded from: classes.dex */

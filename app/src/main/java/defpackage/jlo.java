@@ -1,9 +1,12 @@
 package defpackage;
 
 import android.content.res.Resources;
-import j$.util.function.Function;
-import java.nio.ByteBuffer;
+
 import org.codeaurora.snapcam.R;
+
+import java.nio.ByteBuffer;
+
+import j$.util.function.Function;
 
 /* renamed from: jlo  reason: default package */
 /* loaded from: classes2.dex */

@@ -11,11 +11,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
 import com.google.android.libraries.social.licenses.LicenseActivity;
 import com.google.android.libraries.social.licenses.LicenseMenuActivity;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: nig  reason: default package */
 /* loaded from: classes2.dex */

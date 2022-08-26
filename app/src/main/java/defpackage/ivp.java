@@ -2,14 +2,17 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
+
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
-import j$.util.function.Supplier;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import j$.util.function.Supplier;
 
 /* renamed from: ivp  reason: default package */
 /* loaded from: classes2.dex */

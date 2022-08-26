@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.Intent;
 import android.os.Parcelable;
+
 import java.io.Serializable;
 
 /* renamed from: hnx  reason: default package */

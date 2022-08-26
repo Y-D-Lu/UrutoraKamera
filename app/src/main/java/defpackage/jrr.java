@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Matrix;
 import android.graphics.PointF;
 import android.graphics.RectF;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: jrr  reason: default package */

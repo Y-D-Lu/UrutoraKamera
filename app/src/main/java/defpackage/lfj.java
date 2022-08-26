@@ -2,6 +2,7 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.media.MediaFormat;
+
 import java.io.FileDescriptor;
 
 /* renamed from: lfj  reason: default package */

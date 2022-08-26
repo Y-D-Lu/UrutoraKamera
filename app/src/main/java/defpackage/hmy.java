@@ -10,13 +10,16 @@ import android.support.constraint.Guideline;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.DecelerateInterpolator;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 import com.google.android.apps.camera.rewind.ui.RewindControllerView;
 import com.google.android.apps.camera.rewind.ui.RewindPreview;
 import com.hdrindicator.DisplayHelper;
-import j$.time.Duration;
+
 import org.codeaurora.snapcam.R;
+
+import j$.time.Duration;
 
 /* renamed from: hmy  reason: default package */
 /* loaded from: classes.dex */

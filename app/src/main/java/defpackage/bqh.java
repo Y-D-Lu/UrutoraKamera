@@ -6,7 +6,9 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Process;
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 

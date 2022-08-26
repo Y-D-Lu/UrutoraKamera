@@ -8,10 +8,12 @@ import android.hardware.camera2.params.StreamConfigurationMap;
 import android.util.Range;
 import android.util.Rational;
 import android.util.Size;
+
 import com.Fix.IsoTime;
 import com.Fix.Pref;
 import com.Helper;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

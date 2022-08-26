@@ -1,5 +1,7 @@
 package androidx.window.layout;
 
+import defpackage.qnm;
+
 /* loaded from: classes.dex */
 public interface FoldingFeature extends DisplayFeature {
 

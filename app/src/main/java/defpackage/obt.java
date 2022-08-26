@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: obt  reason: default package */

@@ -6,12 +6,16 @@ import android.content.Context;
 import android.graphics.ColorFilter;
 import android.graphics.drawable.GradientDrawable;
 import android.widget.LinearLayout;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
+
 import j$.time.Duration;
 import j$.util.Collection;
 import j$.util.function.Consumer;
-import java.util.ArrayList;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: ies  reason: default package */
 /* loaded from: classes.dex */

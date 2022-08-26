@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.SensorManager;
 import android.opengl.GLSurfaceView;
+
 import java.util.Set;
 
 /* renamed from: edn  reason: default package */

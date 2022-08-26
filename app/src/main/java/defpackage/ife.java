@@ -21,14 +21,18 @@ import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 import com.hdrindicator.DisplayHelper;
-import j$.util.Collection;
-import j$.util.function.Consumer;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.concurrent.Executor;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Collection;
+import j$.util.function.Consumer;
 
 /* renamed from: ife  reason: default package */
 /* loaded from: classes.dex */

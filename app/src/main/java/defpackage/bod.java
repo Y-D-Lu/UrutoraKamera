@@ -1,10 +1,13 @@
 package defpackage;
 
-import agc.Agc;
 import android.hardware.camera2.CaptureResult;
+
 import com.AGC;
+
 import java.util.HashSet;
 import java.util.Set;
+
+import agc.Agc;
 
 /* renamed from: bod  reason: default package */
 /* loaded from: classes3.dex */

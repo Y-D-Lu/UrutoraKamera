@@ -1,9 +1,10 @@
 package defpackage;
 
-import j$.util.concurrent.ConcurrentHashMap;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: mws  reason: default package */
 /* loaded from: classes2.dex */

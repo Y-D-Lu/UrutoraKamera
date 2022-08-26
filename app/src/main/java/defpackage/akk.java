@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Paint;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: akk  reason: default package */

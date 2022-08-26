@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionLayout;
 
 /* renamed from: dud  reason: default package */

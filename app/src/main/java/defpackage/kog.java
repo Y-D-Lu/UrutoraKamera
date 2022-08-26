@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.IBinder;
+
 import java.lang.reflect.Field;
 
 /* renamed from: kog  reason: default package */

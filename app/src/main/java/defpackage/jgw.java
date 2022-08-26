@@ -6,11 +6,15 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
+
 import com.google.android.apps.camera.ui.notificationchip.NotificationChipView;
 import com.hdrindicator.DisplayHelper;
-import j$.util.Objects;
-import java.util.Date;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Date;
+
+import j$.util.Objects;
 
 /* renamed from: jgw  reason: default package */
 /* loaded from: classes.dex */

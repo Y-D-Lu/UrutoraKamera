@@ -1,8 +1,9 @@
 package j$.util.stream;
 
-import j$.util.Spliterator;
 import java.util.concurrent.CountedCompleter;
 import java.util.concurrent.ForkJoinPool;
+
+import j$.util.Spliterator;
 
 /* loaded from: classes2.dex */
 abstract class AbstractTask extends CountedCompleter {

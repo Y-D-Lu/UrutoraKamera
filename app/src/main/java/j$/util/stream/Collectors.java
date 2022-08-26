@@ -1,16 +1,15 @@
 package j$.util.stream;
 
+import java.util.Collections;
+import java.util.EnumSet;
+import java.util.Set;
+
 import j$.util.Map;
 import j$.util.StringJoiner;
 import j$.util.function.BiConsumer;
 import j$.util.function.BinaryOperator;
 import j$.util.function.Function;
 import j$.util.function.Supplier;
-import j$.util.stream.Collector;
-import java.util.Collections;
-import java.util.EnumSet;
-import java.util.Map;
-import java.util.Set;
 
 /* loaded from: classes2.dex */
 public final class Collectors {

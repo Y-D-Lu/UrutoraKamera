@@ -1,7 +1,8 @@
 package defpackage;
 
-import java.util.Arrays;
 import org.codeaurora.snapcam.R;
+
+import java.util.Arrays;
 
 /* renamed from: qxu  reason: default package */
 /* loaded from: classes2.dex */

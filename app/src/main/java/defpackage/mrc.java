@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.opengl.GLES20;
+
 import java.util.concurrent.Callable;
 
 /* JADX INFO: Access modifiers changed from: package-private */

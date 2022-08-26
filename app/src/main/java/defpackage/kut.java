@@ -5,6 +5,7 @@ import android.os.PowerManager;
 import android.os.WorkSource;
 import android.text.TextUtils;
 import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

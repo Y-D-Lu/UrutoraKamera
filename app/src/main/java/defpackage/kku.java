@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.common.api.Status;
 

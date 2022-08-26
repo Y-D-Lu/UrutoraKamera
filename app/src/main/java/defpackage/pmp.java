@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.KeyguardManager;
 import android.util.Log;
+
 import com.google.lens.sdk.LensApi;
 
 /* renamed from: pmp  reason: default package */

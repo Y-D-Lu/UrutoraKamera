@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.view.WindowManager;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.io.IOException;
 
 /* JADX INFO: Access modifiers changed from: package-private */

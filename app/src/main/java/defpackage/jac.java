@@ -4,9 +4,11 @@ import android.hardware.camera2.CaptureRequest;
 import android.os.Handler;
 import android.view.View;
 import android.widget.FrameLayout;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.HashSet;
 import java.util.concurrent.CancellationException;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: jac  reason: default package */
 /* loaded from: classes.dex */

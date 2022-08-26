@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Paint;
+
 import com.google.android.apps.camera.ui.captureframe.CaptureFrameUi;
 
 /* renamed from: ivc  reason: default package */

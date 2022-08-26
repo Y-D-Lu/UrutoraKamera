@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.util.Pair;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: bkh  reason: default package */

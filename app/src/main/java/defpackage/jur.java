@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
 import j$.time.Duration;
 
 /* renamed from: jur  reason: default package */

@@ -2,8 +2,10 @@ package defpackage;
 
 import android.content.Context;
 import android.view.View;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* renamed from: cuk  reason: default package */
 /* loaded from: classes.dex */

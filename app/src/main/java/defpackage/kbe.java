@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.PointF;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: kbe  reason: default package */

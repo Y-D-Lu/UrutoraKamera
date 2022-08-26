@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.Activity;
 import android.content.Context;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 
 /* renamed from: jyr  reason: default package */

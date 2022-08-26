@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase;
+
 import java.util.Locale;
 import java.util.Set;
 

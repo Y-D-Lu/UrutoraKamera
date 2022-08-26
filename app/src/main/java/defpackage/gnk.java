@@ -4,6 +4,7 @@ import android.graphics.Rect;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
 import android.util.Pair;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: gnk  reason: default package */

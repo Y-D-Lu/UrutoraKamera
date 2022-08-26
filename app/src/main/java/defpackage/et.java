@@ -9,8 +9,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.TypedValue;
-import java.util.ArrayList;
+
 import org.xmlpull.v1.XmlPullParser;
+
+import java.util.ArrayList;
 
 /* renamed from: et  reason: default package */
 /* loaded from: classes3.dex */

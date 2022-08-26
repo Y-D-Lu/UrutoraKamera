@@ -5,8 +5,10 @@ import android.graphics.PointF;
 import android.graphics.Rect;
 import android.os.Process;
 import android.os.SystemClock;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;

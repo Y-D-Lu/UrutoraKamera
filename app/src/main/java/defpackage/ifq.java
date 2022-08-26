@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.Looper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ifq  reason: default package */

@@ -5,6 +5,7 @@ import android.content.res.Configuration;
 import android.view.View;
 import android.view.ViewParent;
 import android.view.accessibility.AccessibilityEvent;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ga  reason: default package */

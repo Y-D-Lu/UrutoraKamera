@@ -4,6 +4,11 @@ import java.math.BigInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import defpackage.qkj;
+import defpackage.qmd;
+import defpackage.qnm;
+import defpackage.qno;
+
 /* loaded from: classes.dex */
 public final class Version implements Comparable {
     private static final Version CURRENT;

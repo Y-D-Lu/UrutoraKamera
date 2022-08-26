@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 

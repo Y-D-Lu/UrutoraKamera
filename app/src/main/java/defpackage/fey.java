@@ -2,7 +2,9 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.hardware.HardwareBuffer;
+
 import com.google.android.libraries.lens.lenslite.api.ImageProxy;
+
 import java.util.List;
 
 /* renamed from: fey  reason: default package */

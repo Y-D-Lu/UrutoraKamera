@@ -1,13 +1,14 @@
 package j$.util;
 
-import j$.util.function.Consumer;
-import j$.util.function.Predicate;
-import j$.util.stream.Stream;
-import j$.util.stream.StreamSupport;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
+
+import j$.util.function.Consumer;
+import j$.util.function.Predicate;
+import j$.util.stream.Stream;
+import j$.util.stream.StreamSupport;
 
 /* loaded from: classes2.dex */
 public interface Collection {

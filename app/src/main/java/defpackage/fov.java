@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.os.Handler;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: fov  reason: default package */

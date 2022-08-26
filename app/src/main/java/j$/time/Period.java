@@ -1,5 +1,13 @@
 package j$.time;
 
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+import java.util.List;
+import java.util.regex.Pattern;
+
 import j$.desugar.sun.nio.fs.DesugarLinuxFileSystem$$ExternalSyntheticBackport1;
 import j$.time.chrono.Chronology;
 import j$.time.chrono.IsoChronology;
@@ -9,13 +17,6 @@ import j$.time.temporal.TemporalAccessor;
 import j$.time.temporal.TemporalAmount;
 import j$.time.temporal.TemporalQueries;
 import j$.util.Objects;
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.util.List;
-import java.util.regex.Pattern;
 
 /* loaded from: classes2.dex */
 public final class Period implements TemporalAmount, Serializable {

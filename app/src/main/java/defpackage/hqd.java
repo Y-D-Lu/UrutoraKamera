@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.googlex.gcam.DebugParams;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 

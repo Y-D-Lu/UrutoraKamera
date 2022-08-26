@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 
 /* renamed from: jjw  reason: default package */

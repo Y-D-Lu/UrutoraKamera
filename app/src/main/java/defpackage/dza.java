@@ -2,7 +2,9 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.util.SizeF;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;

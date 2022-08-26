@@ -2,6 +2,7 @@ package j$.sun.misc;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+
 import sun.misc.Unsafe;
 
 /* loaded from: classes2.dex */

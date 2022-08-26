@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Parcelable;
 import android.view.ViewStub;
+
 import java.io.Serializable;
 
 /* renamed from: idc  reason: default package */

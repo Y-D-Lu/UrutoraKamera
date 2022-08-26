@@ -7,10 +7,13 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
+
 import com.google.android.apps.camera.evcomp.EvCompView;
 import com.hdrindicator.DisplayHelper;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* renamed from: dmn  reason: default package */
 /* loaded from: classes.dex */

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.view.View;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.google.android.material.appbar.AppBarLayout;
 
 /* renamed from: nwr  reason: default package */

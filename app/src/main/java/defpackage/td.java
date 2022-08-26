@@ -10,8 +10,10 @@ import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.DisplayMetrics;
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.Objects;
 
 @Deprecated

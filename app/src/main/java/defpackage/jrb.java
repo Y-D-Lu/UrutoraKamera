@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.ValueAnimator;
 import android.graphics.drawable.GradientDrawable;
+
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
 
 /* renamed from: jrb  reason: default package */

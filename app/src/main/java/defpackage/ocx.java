@@ -2,6 +2,7 @@ package defpackage;
 
 import android.text.TextUtils;
 import android.view.View;
+
 import com.google.android.material.tabs.TabLayout;
 
 /* renamed from: ocx  reason: default package */

@@ -1,11 +1,12 @@
 package j$.sun.nio.cs;
 
-import j$.lang.DesugarCharacter;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CoderResult;
+
+import j$.lang.DesugarCharacter;
 
 /* loaded from: classes2.dex */
 abstract class UnicodeDecoder extends CharsetDecoder {

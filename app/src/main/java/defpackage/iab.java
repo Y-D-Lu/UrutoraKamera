@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.Drawable;
+
 import com.google.android.apps.camera.smarts.SmartsUiGleamingView;
 
 /* renamed from: iab  reason: default package */

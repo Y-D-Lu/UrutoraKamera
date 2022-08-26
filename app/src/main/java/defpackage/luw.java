@@ -5,7 +5,9 @@ import android.hardware.camera2.CameraDevice;
 import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.params.SessionConfiguration;
 import android.os.Handler;
+
 import com.Helper;
+
 import java.util.List;
 
 /* renamed from: luw  reason: default package */

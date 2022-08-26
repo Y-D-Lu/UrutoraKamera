@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Rect;
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.google.android.apps.camera.camcorder.ui.modeslider.recordspeed.RecordSpeedSlider;
 
 /* renamed from: ctu  reason: default package */

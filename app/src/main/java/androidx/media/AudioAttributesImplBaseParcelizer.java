@@ -1,5 +1,7 @@
 package androidx.media;
 
+import defpackage.aks;
+
 /* loaded from: classes.dex */
 public class AudioAttributesImplBaseParcelizer {
     public static AudioAttributesImplBase read(aks aksVar) {

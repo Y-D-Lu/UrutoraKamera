@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.ui.preference.MaterialStorageStatusPreference;
+
 import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: ila  reason: default package */

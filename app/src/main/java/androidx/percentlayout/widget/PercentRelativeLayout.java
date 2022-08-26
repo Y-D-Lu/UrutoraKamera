@@ -5,7 +5,12 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.afr;
+import defpackage.aft;
+import defpackage.afu;
 
 @Deprecated
 /* loaded from: classes.dex */

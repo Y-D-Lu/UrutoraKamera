@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;

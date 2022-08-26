@@ -4,9 +4,11 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.view.WindowManager;
+
 import com.Helper;
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
+
 import java.util.ArrayList;
 import java.util.List;
 

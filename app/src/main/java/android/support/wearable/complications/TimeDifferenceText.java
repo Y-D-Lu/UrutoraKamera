@@ -4,9 +4,11 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */
 public class TimeDifferenceText implements TimeDependentText {

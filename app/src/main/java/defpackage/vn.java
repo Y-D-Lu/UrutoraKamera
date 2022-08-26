@@ -4,6 +4,7 @@ import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.CaptureResult;
 import android.os.Trace;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;

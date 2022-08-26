@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.coach.CameraCoachHudView;
 
 /* renamed from: dbk  reason: default package */

@@ -2,7 +2,9 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
+
 import com.google.android.apps.camera.jni.eisutil.FrameUtilNative;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: hoh  reason: default package */

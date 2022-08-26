@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.jni.lensoffset.LensOffsetQueueNative;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;

@@ -5,9 +5,12 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
 
 /* renamed from: ida  reason: default package */
 /* loaded from: classes.dex */

@@ -5,6 +5,10 @@ import java.util.HashSet;
 import java.util.UUID;
 import java.util.concurrent.Executor;
 
+import defpackage.amq;
+import defpackage.ani;
+import defpackage.aso;
+
 /* loaded from: classes.dex */
 public final class WorkerParameters {
     public UUID a;

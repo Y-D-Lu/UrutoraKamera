@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.opengl.GLES30;
+
 import com.google.android.libraries.oliveoil.gl.EGLImage;
+
 import java.util.concurrent.Callable;
 
 /* JADX INFO: Access modifiers changed from: package-private */

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.os.Build;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.HashMap;
 import java.util.Map;
 

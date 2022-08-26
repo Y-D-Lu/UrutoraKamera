@@ -3,6 +3,7 @@ package defpackage;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.google.android.apps.camera.smarts.SmartsChipView;
 
 /* renamed from: hxz  reason: default package */

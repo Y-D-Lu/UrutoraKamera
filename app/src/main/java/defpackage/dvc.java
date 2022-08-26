@@ -3,7 +3,9 @@ package defpackage;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.res.Resources;
+
 import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: dvc  reason: default package */

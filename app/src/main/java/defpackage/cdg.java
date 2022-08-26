@@ -2,7 +2,9 @@ package defpackage;
 
 import android.hardware.camera2.params.Face;
 import android.util.Range;
+
 import com.google.android.gms.common.api.Scope;
+
 import java.util.Comparator;
 
 /* renamed from: cdg  reason: default package */

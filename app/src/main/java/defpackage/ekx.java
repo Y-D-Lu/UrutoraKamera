@@ -5,6 +5,7 @@ import android.opengl.EGLExt;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: ekx  reason: default package */

@@ -1,11 +1,11 @@
 package defpackage;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import j$.util.Iterator;
+import j$.util.function.Consumer;
 
 /* renamed from: opz  reason: default package */
 /* loaded from: classes2.dex */

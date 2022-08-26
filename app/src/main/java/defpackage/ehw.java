@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.imax.cyclops.capture.TrackerStats;
 import com.google.android.libraries.vision.opengl.Texture;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.EnumMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;

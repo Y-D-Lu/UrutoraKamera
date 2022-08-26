@@ -5,6 +5,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.opengl.Matrix;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: ekf  reason: default package */

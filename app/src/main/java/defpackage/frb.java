@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.media.MediaCodec;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: frb  reason: default package */

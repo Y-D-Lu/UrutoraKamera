@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Intent;
 import android.os.PowerManager;
 import android.view.Window;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 

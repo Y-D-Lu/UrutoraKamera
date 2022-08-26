@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.util.Log;
+
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;

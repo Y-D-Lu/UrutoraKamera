@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Rect;
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.google.android.apps.camera.ui.modeslider.ModeSlider;
 
 /* renamed from: jdw  reason: default package */

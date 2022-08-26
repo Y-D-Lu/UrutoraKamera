@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.android.apps.camera.ui.mars.MarsSwitch;
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuButton;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: jdk  reason: default package */

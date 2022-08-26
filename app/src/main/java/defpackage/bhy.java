@@ -9,7 +9,9 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.os.Build;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;

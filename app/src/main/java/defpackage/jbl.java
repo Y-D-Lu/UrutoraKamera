@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.view.View;
+
 import com.google.android.apps.camera.ui.gridlines.GridLinesUi;
 
 /* renamed from: jbl  reason: default package */

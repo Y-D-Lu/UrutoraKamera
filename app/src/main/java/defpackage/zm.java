@@ -3,8 +3,10 @@ package defpackage;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.Xml;
-import java.util.ArrayList;
+
 import org.xmlpull.v1.XmlPullParser;
+
+import java.util.ArrayList;
 
 /* renamed from: zm  reason: default package */
 /* loaded from: classes2.dex */

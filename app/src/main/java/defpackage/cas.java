@@ -9,9 +9,10 @@ import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.params.MeteringRectangle;
 import android.os.SystemClock;
 import android.util.Pair;
-import com.google.android.apps.camera.bottombar.R;
+
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 import com.google.android.libraries.oliveoil.gl.EGLImage;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;

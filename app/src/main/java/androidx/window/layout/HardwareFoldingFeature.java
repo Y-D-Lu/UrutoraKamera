@@ -1,8 +1,11 @@
 package androidx.window.layout;
 
 import android.graphics.Rect;
+
 import androidx.window.core.Bounds;
-import androidx.window.layout.FoldingFeature;
+
+import defpackage.qnm;
+import defpackage.qno;
 
 /* loaded from: classes.dex */
 public final class HardwareFoldingFeature implements FoldingFeature {

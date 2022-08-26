@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.opengl.GLES20;
+
 import com.google.android.libraries.vision.opengl.Texture;
 import com.hdrindicator.DisplayHelper;
 

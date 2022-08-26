@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.Context;
 import android.net.Uri;
+
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
+
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.List;

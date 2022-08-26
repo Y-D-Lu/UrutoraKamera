@@ -5,6 +5,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.view.View;
 import android.view.ViewOutlineProvider;
+
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 
 /* renamed from: jkd  reason: default package */

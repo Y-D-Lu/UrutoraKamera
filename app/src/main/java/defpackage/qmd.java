@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.IBinder;
+
 import com.google.vr.vrcore.base.api.VrCoreUtils;
+
 import java.io.Closeable;
 import java.lang.reflect.Method;
 import java.util.ArrayList;

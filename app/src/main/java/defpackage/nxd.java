@@ -5,7 +5,9 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import java.util.List;
 
 /* renamed from: nxd  reason: default package */

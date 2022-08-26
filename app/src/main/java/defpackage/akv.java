@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.view.View;
+
 import androidx.viewpager.widget.ViewPager;
 
 /* renamed from: akv  reason: default package */

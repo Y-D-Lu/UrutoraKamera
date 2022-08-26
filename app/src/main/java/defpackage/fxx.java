@@ -1,8 +1,8 @@
 package defpackage;
 
 import android.os.Handler;
+
 import com.hdrindicator.DisplayHelper;
-import java.lang.Thread;
 
 /* renamed from: fxx  reason: default package */
 /* loaded from: classes.dex */

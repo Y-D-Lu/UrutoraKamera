@@ -5,6 +5,9 @@ import android.view.accessibility.AccessibilityManager;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 
+import defpackage.afv;
+import defpackage.ahm;
+
 /* loaded from: classes.dex */
 public class CheckBoxPreference extends TwoStatePreference {
     private final afv c;

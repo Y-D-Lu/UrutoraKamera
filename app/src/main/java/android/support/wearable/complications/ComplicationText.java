@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
-import j$.util.DesugarTimeZone;
+
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
+
+import j$.util.DesugarTimeZone;
 
 /* loaded from: classes.dex */
 public class ComplicationText implements Parcelable, TimeDependentText {

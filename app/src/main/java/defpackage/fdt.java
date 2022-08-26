@@ -3,8 +3,10 @@ package defpackage;
 import android.content.Context;
 import android.graphics.Point;
 import android.os.SystemClock;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* renamed from: fdt  reason: default package */
 /* loaded from: classes.dex */

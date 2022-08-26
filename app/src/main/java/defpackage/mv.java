@@ -12,6 +12,7 @@ import android.view.DragEvent;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.EditText;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: mv  reason: default package */

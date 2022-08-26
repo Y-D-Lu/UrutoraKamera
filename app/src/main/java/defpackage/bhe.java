@@ -3,7 +3,9 @@ package defpackage;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.DisplayMetrics;
+
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.AnimatorInflater;
 import android.animation.ObjectAnimator;
+
 import com.google.android.apps.camera.whitebalance.ManualWhiteBalanceUi;
 
 /* renamed from: jzq  reason: default package */

@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.os.Process;
+
 import com.google.android.apps.camera.toast.EducationToastView;
 import com.google.android.apps.camera.toast.ToastView;
+
 import j$.time.Duration;
 
 /* renamed from: isd  reason: default package */

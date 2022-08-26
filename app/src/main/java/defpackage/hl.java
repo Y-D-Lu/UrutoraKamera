@@ -3,6 +3,7 @@ package defpackage;
 import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.animation.AnimationUtils;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: hl  reason: default package */

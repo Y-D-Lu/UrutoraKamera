@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.stats.timing.TimingSession;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

@@ -7,6 +7,7 @@ import android.util.Size;
 import android.view.PixelCopy;
 import android.view.SurfaceView;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 
 /* renamed from: jng  reason: default package */

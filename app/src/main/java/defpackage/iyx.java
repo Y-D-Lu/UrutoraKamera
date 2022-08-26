@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 import android.view.Window;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 
 /* renamed from: iyx  reason: default package */

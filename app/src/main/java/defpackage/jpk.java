@@ -4,6 +4,7 @@ import android.app.DownloadManager;
 import android.content.Context;
 import android.hardware.camera2.CaptureRequest;
 import android.os.HandlerThread;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: jpk  reason: default package */

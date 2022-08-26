@@ -12,6 +12,7 @@ import android.provider.MediaStore;
 import android.support.constraint.ConstraintLayout;
 import android.view.Window;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 import com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity;
@@ -19,6 +20,7 @@ import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
 import com.google.android.apps.camera.ui.wirers.PreviewOverlay;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.Serializable;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.Callable;

@@ -2,12 +2,14 @@ package defpackage;
 
 import android.os.Bundle;
 import android.os.Looper;
-import j$.util.Collection;
-import j$.util.function.BiFunction;
-import j$.util.function.Consumer;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+
+import j$.util.Collection;
+import j$.util.function.BiFunction;
+import j$.util.function.Consumer;
 
 /* renamed from: fhv  reason: default package */
 /* loaded from: classes.dex */

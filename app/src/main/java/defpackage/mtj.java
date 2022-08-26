@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.libraries.oliveoil.natives.BitmapNativeBuffer;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: mtj  reason: default package */

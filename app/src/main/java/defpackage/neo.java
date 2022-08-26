@@ -2,6 +2,7 @@ package defpackage;
 
 import android.util.Base64;
 import android.util.Log;
+
 import java.io.IOException;
 
 /* renamed from: neo  reason: default package */

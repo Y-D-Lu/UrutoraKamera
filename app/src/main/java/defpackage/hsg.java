@@ -1,8 +1,7 @@
 package defpackage;
 
 import android.content.Context;
-import j$.util.Collection;
-import j$.util.DesugarTimeZone;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -10,6 +9,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+
+import j$.util.Collection;
+import j$.util.DesugarTimeZone;
 
 /* renamed from: hsg  reason: default package */
 /* loaded from: classes2.dex */

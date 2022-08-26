@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.SensorEvent;
 import android.opengl.Matrix;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: jug  reason: default package */

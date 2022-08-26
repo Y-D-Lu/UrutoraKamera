@@ -2,7 +2,9 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionLayout;
+
 import java.util.concurrent.CancellationException;
 
 /* renamed from: dub  reason: default package */

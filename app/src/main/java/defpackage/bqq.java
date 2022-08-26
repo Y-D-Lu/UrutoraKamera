@@ -3,7 +3,9 @@ package defpackage;
 import android.content.Context;
 import android.os.Build;
 import android.os.Handler;
+
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;

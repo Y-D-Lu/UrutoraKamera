@@ -7,14 +7,17 @@ import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
+
 import com.Helper;
 import com.google.android.libraries.camera.exif.ExifInterface;
 import com.google.googlex.gcam.DebugParams;
-import j$.util.function.Consumer;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
+
+import j$.util.function.Consumer;
 
 /* renamed from: hps  reason: default package */
 /* loaded from: classes2.dex */

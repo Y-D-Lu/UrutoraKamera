@@ -4,6 +4,7 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
+
 import java.io.InputStream;
 
 /* renamed from: bfo  reason: default package */

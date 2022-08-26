@@ -1,10 +1,11 @@
 package defpackage;
 
-import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.WeakHashMap;
+
+import j$.util.DesugarCollections;
 
 /* renamed from: mot  reason: default package */
 /* loaded from: classes2.dex */

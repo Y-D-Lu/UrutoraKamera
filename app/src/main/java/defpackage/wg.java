@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.HandlerThread;
+
 import java.util.concurrent.Executors;
 
 /* renamed from: wg  reason: default package */

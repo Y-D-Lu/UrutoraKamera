@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+
 import androidx.viewpager.widget.ViewPager;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: aky  reason: default package */

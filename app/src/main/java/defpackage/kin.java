@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.gms.common.api.internal.BasePendingResult;
+
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: kin  reason: default package */

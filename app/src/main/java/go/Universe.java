@@ -1,7 +1,5 @@
 package go;
 
-import go.Seq;
-
 /* loaded from: classes2.dex */
 public abstract class Universe {
 

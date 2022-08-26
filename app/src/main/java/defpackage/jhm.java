@@ -9,6 +9,7 @@ import android.graphics.drawable.InsetDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jhm  reason: default package */

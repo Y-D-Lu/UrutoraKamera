@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.HardwareBuffer;
+
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.InterleavedWriteViewU8;
 import com.google.googlex.gcam.LockedHardwareBuffer;

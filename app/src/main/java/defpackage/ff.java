@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.accessibility.AccessibilityNodeProvider;
+
 import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */

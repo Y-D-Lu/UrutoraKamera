@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.hardware.camera2.CaptureResult;
+
 import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedQueue;
 

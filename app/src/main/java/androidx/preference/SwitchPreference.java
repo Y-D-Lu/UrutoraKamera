@@ -7,7 +7,12 @@ import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.Checkable;
 import android.widget.Switch;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.ahm;
+import defpackage.ahn;
+import defpackage.ahr;
 
 /* loaded from: classes.dex */
 public class SwitchPreference extends TwoStatePreference {

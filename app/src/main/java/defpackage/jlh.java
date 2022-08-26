@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.os.Handler;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.RectF;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 
 /* renamed from: obo  reason: default package */

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.database.Cursor;
+
 import androidx.work.impl.WorkDatabase;
+
 import java.util.ArrayList;
 
 /* JADX INFO: Access modifiers changed from: package-private */

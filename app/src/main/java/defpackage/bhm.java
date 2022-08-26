@@ -2,7 +2,9 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
+
 import java.io.InputStream;
 import java.util.List;
 

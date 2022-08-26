@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
+
 import com.Helper;
 import com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity;
 

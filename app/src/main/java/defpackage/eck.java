@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Rect;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
+
 import com.google.googlex.gcam.Tuning;
 
 /* renamed from: eck  reason: default package */

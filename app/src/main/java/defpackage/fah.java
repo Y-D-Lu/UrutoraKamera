@@ -10,13 +10,16 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import android.os.Trace;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fah  reason: default package */
 /* loaded from: classes.dex */

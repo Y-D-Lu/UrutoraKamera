@@ -1,8 +1,14 @@
 package j$.time.chrono;
 
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+import java.util.List;
+
 import j$.desugar.sun.nio.fs.DesugarLinuxFileSystem$$ExternalSyntheticBackport1;
 import j$.time.DateTimeException;
-import j$.time.chrono.Chronology;
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.ChronoUnit;
 import j$.time.temporal.Temporal;
@@ -11,12 +17,6 @@ import j$.time.temporal.TemporalAmount;
 import j$.time.temporal.TemporalQueries;
 import j$.time.temporal.ValueRange;
 import j$.util.Objects;
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.util.List;
 
 /* loaded from: classes2.dex */
 final class ChronoPeriodImpl implements TemporalAmount, Serializable {

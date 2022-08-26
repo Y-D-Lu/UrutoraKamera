@@ -6,11 +6,14 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.Resources;
 import android.hardware.camera2.CameraManager;
+
 import com.google.android.apps.camera.debugui.DebugCanvasView;
 import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.List;
 import java.util.concurrent.Executor;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: bno  reason: default package */
 /* loaded from: classes.dex */

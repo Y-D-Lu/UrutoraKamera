@@ -7,12 +7,15 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
 
 /* compiled from: PG */
 /* renamed from: jqi  reason: default package */

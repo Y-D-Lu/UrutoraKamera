@@ -8,10 +8,12 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: jhs  reason: default package */
 /* loaded from: classes.dex */

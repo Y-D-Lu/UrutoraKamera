@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.AppOpsManager;
 import android.content.Context;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: aao  reason: default package */

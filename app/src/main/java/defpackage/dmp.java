@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.Animator;
+
 import com.google.android.apps.camera.evcomp.EvCompView;
 import com.hdrindicator.DisplayHelper;
 

@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.view.ViewPropertyAnimator;
 import android.view.Window;
 import android.widget.OverScroller;
+
 import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */

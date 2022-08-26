@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Typeface;
+
 import com.google.android.apps.camera.zoomui.ZoomKnob;
 
 /* renamed from: kaf  reason: default package */

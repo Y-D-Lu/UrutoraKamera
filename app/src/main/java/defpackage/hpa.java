@@ -4,8 +4,10 @@ import android.animation.Animator;
 import android.content.res.Resources;
 import android.graphics.drawable.GradientDrawable;
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.views.GradientBar;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: hpa  reason: default package */

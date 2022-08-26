@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.Context;
-import java.util.Timer;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Timer;
 
 /* renamed from: hgf  reason: default package */
 /* loaded from: classes.dex */

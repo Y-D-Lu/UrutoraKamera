@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.io.IOException;
 
 /* renamed from: ecg  reason: default package */

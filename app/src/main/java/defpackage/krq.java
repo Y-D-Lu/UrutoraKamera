@@ -7,6 +7,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.os.PersistableBundle;
 import android.util.Log;
+
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: krq  reason: default package */

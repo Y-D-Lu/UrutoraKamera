@@ -1,10 +1,10 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 import com.google.android.apps.camera.ui.views.ToggleUi;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: ezg  reason: default package */
 /* loaded from: classes.dex */

@@ -4,6 +4,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.os.Vibrator;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 
 /* JADX INFO: Access modifiers changed from: package-private */

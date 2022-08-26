@@ -2,8 +2,10 @@ package defpackage;
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
-import java.util.Map;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Map;
 
 /* renamed from: jri  reason: default package */
 /* loaded from: classes2.dex */

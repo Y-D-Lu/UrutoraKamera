@@ -1,7 +1,6 @@
 package j$.util.stream;
 
 import j$.util.Spliterator;
-import j$.util.stream.ReferencePipeline;
 
 /* loaded from: classes2.dex */
 public abstract class StreamSupport {

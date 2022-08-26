@@ -4,7 +4,9 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Parcelable;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.ArrayList;
 import java.util.List;
 

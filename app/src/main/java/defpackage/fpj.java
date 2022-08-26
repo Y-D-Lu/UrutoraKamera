@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.DisplayMetrics;
+
 import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: fpj  reason: default package */

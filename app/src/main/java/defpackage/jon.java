@@ -3,6 +3,7 @@ package defpackage;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
+
 import com.google.android.apps.camera.ui.views.FrontLensIndicatorOverlay;
 
 /* renamed from: jon  reason: default package */

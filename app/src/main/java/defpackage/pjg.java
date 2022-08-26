@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Looper;
 import android.util.Log;
+
 import com.google.geo.lightfield.processing.ProgressCallback;
 import com.hdrindicator.DisplayHelper;
 

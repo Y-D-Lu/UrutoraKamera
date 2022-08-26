@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.Display;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.lens.sdk.LensApi;
 

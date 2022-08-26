@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.widget.ImageView;
+
 import com.google.android.apps.camera.rewind.RewindExportShotView;
+
 import java.util.List;
 
 /* renamed from: hmq  reason: default package */

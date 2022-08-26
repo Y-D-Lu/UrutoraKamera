@@ -2,6 +2,12 @@ package androidx.window.layout;
 
 import android.app.Activity;
 
+import defpackage.qmj;
+import defpackage.qnm;
+import defpackage.qtq;
+import defpackage.qtr;
+import defpackage.qtw;
+
 /* loaded from: classes.dex */
 public final class WindowInfoRepositoryImpl implements WindowInfoRepository {
     private static final int BUFFER_CAPACITY = 10;

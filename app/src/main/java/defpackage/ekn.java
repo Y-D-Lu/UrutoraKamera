@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.opengl.Matrix;
+
 import com.google.android.libraries.vision.opengl.Texture;
 import com.hdrindicator.DisplayHelper;
+
 import java.nio.FloatBuffer;
 
 /* renamed from: ekn  reason: default package */

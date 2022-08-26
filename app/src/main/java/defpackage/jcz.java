@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
 import android.widget.FrameLayout;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jcz  reason: default package */

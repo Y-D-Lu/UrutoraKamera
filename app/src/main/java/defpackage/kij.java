@@ -6,8 +6,10 @@ import android.location.Location;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Parcel;
+
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.common.api.internal.BasePendingResult;
+
 import java.util.Collections;
 import java.util.Set;
 

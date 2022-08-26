@@ -3,9 +3,11 @@ package defpackage;
 import android.hardware.camera2.CameraDevice;
 import android.hardware.camera2.CaptureRequest;
 import android.view.Surface;
-import j$.util.Objects;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import j$.util.Objects;
 
 /* renamed from: axr  reason: default package */
 /* loaded from: classes.dex */

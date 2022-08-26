@@ -1,5 +1,10 @@
 package androidx.lifecycle;
 
+import defpackage.adx;
+import defpackage.adz;
+import defpackage.aec;
+import defpackage.aee;
+
 /* loaded from: classes.dex */
 public class FullLifecycleObserverAdapter implements aec {
     private final adx a;

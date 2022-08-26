@@ -5,8 +5,10 @@ import android.graphics.Rect;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
-import java.util.concurrent.ScheduledExecutorService;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: hgb  reason: default package */
 /* loaded from: classes.dex */

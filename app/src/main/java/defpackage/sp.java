@@ -10,6 +10,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.support.wearable.complications.rendering.ComplicationStyle$Builder;
 import android.text.TextPaint;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: sp  reason: default package */

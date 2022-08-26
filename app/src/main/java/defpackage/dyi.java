@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.SurfaceTexture;
 import android.os.Handler;
+
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.egl.EGLContext;

@@ -2,7 +2,9 @@ package defpackage;
 
 import android.app.admin.DevicePolicyManager;
 import android.os.Handler;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
+
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Map;

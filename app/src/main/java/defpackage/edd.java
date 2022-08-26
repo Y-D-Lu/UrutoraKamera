@@ -1,10 +1,12 @@
 package defpackage;
 
 import android.util.DisplayMetrics;
+
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.ShotParams;
 import com.google.googlex.gcam.clientallocator.InterleavedU8ClientAllocator;
 import com.google.googlex.gcam.hdrplus.HdrPlusInterface;
+
 import java.util.ArrayList;
 import java.util.List;
 

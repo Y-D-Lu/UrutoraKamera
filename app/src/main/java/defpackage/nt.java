@@ -13,7 +13,9 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.widget.TextView;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: nt  reason: default package */

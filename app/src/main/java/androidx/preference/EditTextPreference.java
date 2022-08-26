@@ -4,6 +4,8 @@ import android.content.res.TypedArray;
 import android.os.Parcelable;
 import android.text.TextUtils;
 
+import defpackage.afy;
+
 /* loaded from: classes.dex */
 public class EditTextPreference extends DialogPreference {
     public String g;

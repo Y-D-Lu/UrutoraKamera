@@ -1,14 +1,17 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.common.io.ByteStreams;
 import com.google.googlex.gcam.BufferUtils;
 import com.google.googlex.gcam.creativecamera.portraitmode.PortraitSegmenterInterface;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
+
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;

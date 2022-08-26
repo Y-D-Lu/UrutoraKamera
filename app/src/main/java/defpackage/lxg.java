@@ -3,8 +3,10 @@ package defpackage;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

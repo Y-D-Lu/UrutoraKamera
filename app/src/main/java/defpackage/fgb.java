@@ -6,8 +6,10 @@ import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.graphics.PointF;
 import android.media.Image;
+
 import com.google.android.libraries.lens.lenslite.api.ImageProxy;
 import com.google.android.libraries.lens.lenslite.api.LinkImage;
+
 import java.util.Locale;
 import java.util.concurrent.Executor;
 

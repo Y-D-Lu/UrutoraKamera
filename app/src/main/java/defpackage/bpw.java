@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.Looper;
+
 import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: bpw  reason: default package */

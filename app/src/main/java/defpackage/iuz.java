@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.widget.LinearLayout;
+
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
 
 /* renamed from: iuz  reason: default package */

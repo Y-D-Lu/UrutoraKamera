@@ -1,7 +1,6 @@
 package j$.util.stream;
 
 import j$.util.function.Supplier;
-import j$.util.stream.FindOps;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class FindOps$FindSink$OfRef$$ExternalSyntheticLambda1 implements Supplier {

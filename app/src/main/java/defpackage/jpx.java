@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.android.apps.camera.ui.mars.MarsSwitch;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: jpx  reason: default package */

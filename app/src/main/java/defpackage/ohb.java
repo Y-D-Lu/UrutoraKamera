@@ -1,14 +1,16 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
-import j$.time.Duration;
-import j$.time.Instant;
-import j$.util.Optional;
+
 import java.io.InputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.nio.ByteBuffer;
 import java.util.concurrent.atomic.AtomicReference;
+
+import j$.time.Duration;
+import j$.time.Instant;
+import j$.util.Optional;
 
 /* renamed from: ohb  reason: default package */
 /* loaded from: classes2.dex */

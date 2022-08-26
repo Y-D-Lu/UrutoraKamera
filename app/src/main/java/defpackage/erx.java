@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.googlex.gcam.Gcam;
+
 import java.util.HashSet;
 import java.util.concurrent.Executor;
 

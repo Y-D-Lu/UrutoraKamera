@@ -6,8 +6,10 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
+
 import com.google.android.apps.camera.whitebalance.ManualWhiteBalanceUi;
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jzf  reason: default package */

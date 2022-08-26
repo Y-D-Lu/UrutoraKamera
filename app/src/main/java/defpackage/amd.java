@@ -9,6 +9,7 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.util.Property;
 import android.view.animation.LinearInterpolator;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: amd  reason: default package */

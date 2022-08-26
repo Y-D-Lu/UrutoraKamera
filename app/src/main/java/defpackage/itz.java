@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.RectF;
 import android.support.v8.renderscript.ScriptIntrinsicBLAS;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: itz  reason: default package */

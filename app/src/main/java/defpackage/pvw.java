@@ -12,8 +12,10 @@ import android.os.PowerManager;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.Window;
-import java.util.Iterator;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Iterator;
 
 /* renamed from: pvw  reason: default package */
 /* loaded from: classes2.dex */

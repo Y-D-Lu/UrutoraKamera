@@ -9,6 +9,7 @@ import android.hardware.SensorManager;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.WindowManager;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

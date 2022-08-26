@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.android.apps.camera.jni.microvideotonemap.MicrovideoToneMapNative;
+
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.concurrent.Executor;

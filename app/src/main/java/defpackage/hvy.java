@@ -2,7 +2,9 @@ package defpackage;
 
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
+
 import com.eszdman;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;

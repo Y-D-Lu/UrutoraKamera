@@ -2,13 +2,16 @@ package defpackage;
 
 import android.hardware.camera2.TotalCaptureResult;
 import android.os.SystemClock;
+
 import com.Helper;
 import com.custom.Astro;
 import com.custom.OneShot;
-import j$.util.function.Supplier;
+
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
+
+import j$.util.function.Supplier;
 
 /* renamed from: eam  reason: default package */
 /* loaded from: classes3.dex */

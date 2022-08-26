@@ -2,6 +2,7 @@ package defpackage;
 
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
+
 import java.util.Random;
 
 /* renamed from: ccm  reason: default package */

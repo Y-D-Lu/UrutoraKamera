@@ -9,6 +9,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.google.android.gms.common.api.Scope;
 
 /* renamed from: kmm  reason: default package */

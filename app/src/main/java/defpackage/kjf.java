@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.RemoteException;
+
 import com.google.android.gms.common.api.Status;
 
 /* renamed from: kjf  reason: default package */

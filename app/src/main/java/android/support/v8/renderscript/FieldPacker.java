@@ -1,6 +1,7 @@
 package android.support.v8.renderscript;
 
 import android.util.Log;
+
 import java.util.BitSet;
 
 /* loaded from: classes.dex */

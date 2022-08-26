@@ -2,12 +2,15 @@ package defpackage;
 
 import android.os.Looper;
 import android.view.Choreographer;
+
 import com.google.android.apps.camera.bottombar.R;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import j$.time.Duration;
 import j$.time.Instant;
 import j$.util.Optional;
 import j$.util.function.Consumer;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: oho  reason: default package */
 /* loaded from: classes2.dex */

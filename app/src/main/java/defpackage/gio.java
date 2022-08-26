@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CameraCharacteristics;
+
 import java.util.List;
 
 /* renamed from: gio  reason: default package */

@@ -5,12 +5,15 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Looper;
+
 import com.google.android.gms.common.api.internal.LifecycleCallback;
-import j$.util.DesugarCollections;
+
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.Map;
 import java.util.WeakHashMap;
+
+import j$.util.DesugarCollections;
 
 /* renamed from: kkp  reason: default package */
 /* loaded from: classes2.dex */

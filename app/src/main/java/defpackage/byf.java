@@ -4,6 +4,7 @@ import android.media.AudioManager;
 import android.media.AudioRecord;
 import android.os.Handler;
 import android.os.HandlerThread;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: byf  reason: default package */

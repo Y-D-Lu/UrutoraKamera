@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ic  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.Window;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 
 /* renamed from: izg  reason: default package */

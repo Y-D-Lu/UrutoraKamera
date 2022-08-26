@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.drawable.Drawable;
+
 import androidx.wear.widget.CircledImageView;
 
 /* renamed from: alz  reason: default package */

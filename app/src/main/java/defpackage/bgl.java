@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.drawable.BitmapDrawable;
+
 import java.io.File;
 
 /* renamed from: bgl  reason: default package */

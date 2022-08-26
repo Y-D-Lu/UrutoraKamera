@@ -4,6 +4,7 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fz  reason: default package */

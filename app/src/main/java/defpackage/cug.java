@@ -4,11 +4,15 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewStub;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.camcorder.ui.stabilization.StabilizationUi;
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuButton;
-import j$.util.Collection;
-import java.util.concurrent.atomic.AtomicBoolean;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.util.Collection;
 
 /* renamed from: cug  reason: default package */
 /* loaded from: classes.dex */

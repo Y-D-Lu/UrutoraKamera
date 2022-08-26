@@ -6,11 +6,13 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.Toast;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: jsu  reason: default package */
 /* loaded from: classes2.dex */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.googlex.gcam.DebugParams;
 
 /* renamed from: hsa  reason: default package */

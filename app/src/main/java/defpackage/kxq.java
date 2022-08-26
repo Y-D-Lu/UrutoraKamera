@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.net.Uri;
+
 import com.google.android.gms.common.data.DataHolder;
+
 import java.util.HashMap;
 
 /* renamed from: kxq  reason: default package */

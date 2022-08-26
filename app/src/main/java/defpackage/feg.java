@@ -4,7 +4,9 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.opengl.Matrix;
 import android.os.HandlerThread;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 
 /* renamed from: feg  reason: default package */

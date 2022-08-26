@@ -1,7 +1,8 @@
 package j$.util.stream;
 
-import j$.util.Spliterator;
 import java.util.concurrent.atomic.AtomicReference;
+
+import j$.util.Spliterator;
 
 /* loaded from: classes2.dex */
 abstract class AbstractShortCircuitTask extends AbstractTask {

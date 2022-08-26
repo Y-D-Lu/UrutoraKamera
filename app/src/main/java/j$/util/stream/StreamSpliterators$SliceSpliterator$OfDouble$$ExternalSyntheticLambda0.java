@@ -1,7 +1,6 @@
 package j$.util.stream;
 
 import j$.util.function.DoubleConsumer;
-import j$.util.stream.StreamSpliterators$SliceSpliterator;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class StreamSpliterators$SliceSpliterator$OfDouble$$ExternalSyntheticLambda0 implements DoubleConsumer {

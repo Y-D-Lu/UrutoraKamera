@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.Button;
+
 import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */

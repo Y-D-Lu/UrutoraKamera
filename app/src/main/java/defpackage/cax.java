@@ -2,8 +2,10 @@ package defpackage;
 
 import android.content.SharedPreferences;
 import android.os.Handler;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.Executor;

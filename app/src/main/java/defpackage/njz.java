@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.net.Uri;
+
 import java.io.IOException;
 
 /* renamed from: njz  reason: default package */

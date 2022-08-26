@@ -4,6 +4,7 @@ import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
 import android.os.Handler;
 import android.view.WindowManager;
+
 import java.util.ArrayList;
 
 /* renamed from: fck  reason: default package */

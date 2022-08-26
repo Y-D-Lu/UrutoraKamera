@@ -3,7 +3,9 @@ package defpackage;
 import android.hardware.Sensor;
 import android.os.Handler;
 import android.util.Log;
+
 import com.google.android.libraries.camera.gyro.hardwarebuffer.ReadHardwareBufferJniFunctions;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 

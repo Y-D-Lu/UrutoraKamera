@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.view.WindowManager;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.camcorder.ui.modeslider.recordspeed.RecordSpeedSlider;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;

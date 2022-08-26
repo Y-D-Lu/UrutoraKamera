@@ -6,11 +6,14 @@ import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import j$.util.function.Supplier;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
+
+import j$.util.function.Supplier;
 
 /* renamed from: fnc  reason: default package */
 /* loaded from: classes.dex */

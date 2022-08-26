@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
+
 import java.io.InputStream;
 
 /* renamed from: qx  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.Looper;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* JADX INFO: Access modifiers changed from: package-private */

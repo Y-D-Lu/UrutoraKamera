@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.View;
 import android.view.ViewTreeObserver;
+
 import java.util.concurrent.atomic.AtomicReference;
 
 /* renamed from: nas  reason: default package */

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.v8.renderscript.ScriptIntrinsicBLAS;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: cvz  reason: default package */

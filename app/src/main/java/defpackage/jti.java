@@ -4,7 +4,9 @@ import android.graphics.Rect;
 import android.util.DisplayMetrics;
 import android.view.Window;
 import android.view.WindowManager;
+
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.DesugarArrays;
 
 /* renamed from: jti  reason: default package */

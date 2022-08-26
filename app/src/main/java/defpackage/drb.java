@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
+
 import java.util.Set;
 
 /* renamed from: drb  reason: default package */

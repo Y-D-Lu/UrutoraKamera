@@ -4,8 +4,10 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.view.View;
 import android.view.ViewGroup;
-import java.util.concurrent.ExecutionException;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.ExecutionException;
 
 /* renamed from: dfy  reason: default package */
 /* loaded from: classes2.dex */

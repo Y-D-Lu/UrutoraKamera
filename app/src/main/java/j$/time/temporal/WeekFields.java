@@ -1,16 +1,17 @@
 package j$.time.temporal;
 
-import j$.time.DayOfWeek;
-import j$.time.chrono.ChronoLocalDate;
-import j$.time.chrono.Chronology;
-import j$.util.Objects;
-import j$.util.concurrent.ConcurrentHashMap;
 import java.io.InvalidObjectException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.concurrent.ConcurrentMap;
+
+import j$.time.DayOfWeek;
+import j$.time.chrono.ChronoLocalDate;
+import j$.time.chrono.Chronology;
+import j$.util.Objects;
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: classes2.dex */
 public final class WeekFields implements Serializable {

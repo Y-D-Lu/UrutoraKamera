@@ -2,12 +2,15 @@ package defpackage;
 
 import android.content.Context;
 import android.text.TextUtils;
+
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: agb  reason: default package */
 /* loaded from: classes.dex */

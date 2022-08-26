@@ -3,6 +3,7 @@ package defpackage;
 import com.google.android.apps.camera.stats.Instrumentation;
 import com.google.android.apps.camera.stats.ViewfinderJankSession;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
 import java.util.HashMap;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;

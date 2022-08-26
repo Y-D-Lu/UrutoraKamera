@@ -8,10 +8,13 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fkp  reason: default package */
 /* loaded from: classes.dex */

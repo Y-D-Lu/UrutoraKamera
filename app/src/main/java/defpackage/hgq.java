@@ -3,6 +3,7 @@ package defpackage;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Trace;
+
 import com.google.android.apps.camera.prewarm.ProcessingBoostService;
 
 /* renamed from: hgq  reason: default package */

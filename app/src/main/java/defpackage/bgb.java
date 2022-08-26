@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.net.Uri;
+
 import java.io.File;
 
 /* renamed from: bgb  reason: default package */

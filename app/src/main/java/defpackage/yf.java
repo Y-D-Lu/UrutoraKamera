@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 
 /* renamed from: yf  reason: default package */

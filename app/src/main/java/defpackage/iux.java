@@ -5,10 +5,14 @@ import android.content.DialogInterface;
 import android.graphics.drawable.GradientDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
 import androidx.viewpager2.widget.ViewPager2;
+
 import com.google.android.material.tabs.TabLayout;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
 
 /* renamed from: iux  reason: default package */
 /* loaded from: classes2.dex */

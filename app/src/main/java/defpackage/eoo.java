@@ -2,8 +2,10 @@ package defpackage;
 
 import android.media.MediaFormat;
 import android.os.Handler;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.googlex.gcam.Gcam;
+
 import java.util.Map;
 import java.util.concurrent.Executor;
 

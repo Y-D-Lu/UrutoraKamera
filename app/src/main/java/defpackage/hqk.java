@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.Helper;
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

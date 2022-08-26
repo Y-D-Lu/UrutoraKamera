@@ -5,13 +5,16 @@ import android.content.Intent;
 import android.util.AttributeSet;
 import android.util.Xml;
 import android.view.InflateException;
+
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
 
 /* renamed from: ahf  reason: default package */
 /* loaded from: classes.dex */

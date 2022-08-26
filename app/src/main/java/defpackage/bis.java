@@ -8,7 +8,9 @@ import android.graphics.Rect;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.view.Gravity;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: bis  reason: default package */

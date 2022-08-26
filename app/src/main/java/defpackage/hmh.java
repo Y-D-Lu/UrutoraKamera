@@ -1,8 +1,9 @@
 package defpackage;
 
-import j$.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: hmh  reason: default package */
 /* loaded from: classes.dex */

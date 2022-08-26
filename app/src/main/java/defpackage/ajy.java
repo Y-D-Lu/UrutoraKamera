@@ -2,6 +2,7 @@ package defpackage;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
 import java.io.Closeable;
 
 /* renamed from: ajy  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.TimeInterpolator;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: ti  reason: default package */

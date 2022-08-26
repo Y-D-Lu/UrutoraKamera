@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Paint;
+
 import com.google.android.apps.camera.coach.CameraCoachHudView;
 
 /* renamed from: dbc  reason: default package */

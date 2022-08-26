@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.accounts.Account;
+
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.Scope;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;

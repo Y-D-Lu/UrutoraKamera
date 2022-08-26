@@ -16,9 +16,11 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */
 public class Toolbar extends ViewGroup {

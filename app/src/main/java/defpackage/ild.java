@@ -6,6 +6,7 @@ import android.text.SpannableStringBuilder;
 import android.text.style.TextAppearanceSpan;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ild  reason: default package */

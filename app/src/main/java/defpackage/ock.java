@@ -9,6 +9,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ock  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.animation.Interpolator;
+
 import j$.util.function.BiConsumer;
 
 /* renamed from: jkt  reason: default package */

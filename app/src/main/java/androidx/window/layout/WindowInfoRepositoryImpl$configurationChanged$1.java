@@ -2,6 +2,14 @@ package androidx.window.layout;
 
 import com.google.android.apps.camera.bottombar.R;
 
+import defpackage.qks;
+import defpackage.qlh;
+import defpackage.qlw;
+import defpackage.qmb;
+import defpackage.qmj;
+import defpackage.qmy;
+import defpackage.qts;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 @qlw(b = "androidx.window.layout.WindowInfoRepositoryImpl$configurationChanged$1", c = "WindowInfoRepositoryImpl.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_listPreferredItemHeightLarge, R.styleable.AppCompatTheme_listPreferredItemHeightSmall})
 /* loaded from: classes.dex */

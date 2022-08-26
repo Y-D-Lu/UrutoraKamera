@@ -1,12 +1,11 @@
 package defpackage;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
-import java.lang.Character;
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import j$.util.Iterator;
+import j$.util.function.Consumer;
 
 /* renamed from: nha  reason: default package */
 /* loaded from: classes2.dex */

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
 

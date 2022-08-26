@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.View;
 import android.view.WindowInsets;
+
 import j$.util.Objects;
 
 /* renamed from: gy  reason: default package */

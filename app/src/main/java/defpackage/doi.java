@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.hardware.HardwareBuffer;
+
 import com.google.android.apps.camera.jni.facebeautification.GpuRetoucherNative;
+
 import java.util.concurrent.Executor;
 
 /* JADX INFO: Access modifiers changed from: package-private */

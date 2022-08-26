@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Binder;
 import android.os.Process;
+
 import java.util.concurrent.Callable;
 
 /* renamed from: afi  reason: default package */

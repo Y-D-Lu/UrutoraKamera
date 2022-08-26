@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 

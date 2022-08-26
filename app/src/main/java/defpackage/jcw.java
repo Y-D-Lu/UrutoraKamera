@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.app.KeyguardManager;
 import android.graphics.Bitmap;
 import android.graphics.PointF;
+
 import com.google.lens.sdk.LensApi;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: jcw  reason: default package */

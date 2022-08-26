@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: hja  reason: default package */

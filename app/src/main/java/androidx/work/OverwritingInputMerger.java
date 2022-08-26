@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
+import defpackage.amq;
+import defpackage.amt;
+
 /* loaded from: classes.dex */
 public final class OverwritingInputMerger extends amt {
     @Override // defpackage.amt

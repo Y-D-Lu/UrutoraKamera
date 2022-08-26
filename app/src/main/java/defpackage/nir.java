@@ -3,6 +3,7 @@ package defpackage;
 import android.accounts.Account;
 import android.content.Context;
 import android.net.Uri;
+
 import java.util.regex.Pattern;
 
 /* renamed from: nir  reason: default package */

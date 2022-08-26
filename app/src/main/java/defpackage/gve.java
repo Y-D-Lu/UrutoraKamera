@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.graphics.Point;
 import android.view.Display;
 import android.view.WindowManager;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;

@@ -6,11 +6,15 @@ import android.animation.PropertyValuesHolder;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
+import java.util.EnumMap;
+
 import j$.util.function.Consumer;
 import j$.util.function.Function;
-import java.util.EnumMap;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: icd  reason: default package */
 /* loaded from: classes.dex */

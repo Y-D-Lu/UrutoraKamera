@@ -1,10 +1,5 @@
 package j$.time.format;
 
-import j$.time.chrono.Chronology;
-import j$.time.chrono.IsoChronology;
-import j$.time.temporal.ChronoField;
-import j$.time.temporal.TemporalField;
-import j$.util.concurrent.ConcurrentHashMap;
 import java.text.DateFormatSymbols;
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -14,6 +9,12 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentMap;
+
+import j$.time.chrono.Chronology;
+import j$.time.chrono.IsoChronology;
+import j$.time.temporal.ChronoField;
+import j$.time.temporal.TemporalField;
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

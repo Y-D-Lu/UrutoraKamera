@@ -2,6 +2,7 @@ package defpackage;
 
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
+
 import java.util.ArrayList;
 
 /* renamed from: rg  reason: default package */

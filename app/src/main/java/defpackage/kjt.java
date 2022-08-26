@@ -2,10 +2,12 @@ package defpackage;
 
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.api.internal.BasePendingResult;
-import j$.util.DesugarCollections;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
+
+import j$.util.DesugarCollections;
 
 /* renamed from: kjt  reason: default package */
 /* loaded from: classes2.dex */

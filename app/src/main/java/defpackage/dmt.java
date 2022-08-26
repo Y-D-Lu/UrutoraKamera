@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.ObjectAnimator;
 import android.widget.CheckBox;
+
 import com.google.android.apps.camera.evcomp.EvCompView;
 
 /* renamed from: dmt  reason: default package */

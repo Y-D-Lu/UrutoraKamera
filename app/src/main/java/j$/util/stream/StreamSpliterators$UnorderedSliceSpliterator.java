@@ -1,10 +1,10 @@
 package j$.util.stream;
 
-import j$.util.Spliterator;
-import j$.util.function.Consumer;
-import j$.util.stream.StreamSpliterators$ArrayBuffer;
 import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicLong;
+
+import j$.util.Spliterator;
+import j$.util.function.Consumer;
 
 /* loaded from: classes2.dex */
 abstract class StreamSpliterators$UnorderedSliceSpliterator {

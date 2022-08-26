@@ -2,7 +2,9 @@ package defpackage;
 
 import android.view.View;
 import android.widget.PopupWindow;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.Locale;
 
 /* renamed from: hq  reason: default package */

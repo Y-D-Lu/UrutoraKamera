@@ -4,8 +4,10 @@ import android.app.ActivityManager;
 import android.hardware.camera2.CaptureRequest;
 import android.media.MediaFormat;
 import android.util.DisplayMetrics;
+
 import com.google.android.apps.camera.moments.FastMomentsHdrImpl;
 import com.google.googlex.gcam.Gcam;
+
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;

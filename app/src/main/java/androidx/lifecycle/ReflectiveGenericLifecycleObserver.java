@@ -2,6 +2,12 @@ package androidx.lifecycle;
 
 import java.util.List;
 
+import defpackage.adw;
+import defpackage.adz;
+import defpackage.aec;
+import defpackage.aee;
+import defpackage.bci;
+
 /* loaded from: classes.dex */
 public class ReflectiveGenericLifecycleObserver implements aec {
     private final Object a;

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: jzl  reason: default package */

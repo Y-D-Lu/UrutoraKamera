@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.SystemClock;
 import android.util.Pair;
+
 import com.google.android.apps.camera.coach.CameraCoachHudView;
 
 /* renamed from: dcg  reason: default package */

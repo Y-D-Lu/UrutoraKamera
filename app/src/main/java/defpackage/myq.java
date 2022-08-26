@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.health.HealthStats;
 import android.os.health.TimerStat;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +15,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: myq  reason: default package */
 /* loaded from: classes2.dex */

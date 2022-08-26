@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.widget.CompoundButton;
+
 import androidx.preference.SwitchPreference;
 
 /* renamed from: ahr  reason: default package */

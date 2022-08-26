@@ -5,6 +5,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.ListView;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: ot  reason: default package */

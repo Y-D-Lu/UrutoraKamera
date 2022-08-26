@@ -3,6 +3,7 @@ package defpackage;
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthResult;
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthUtils;
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;

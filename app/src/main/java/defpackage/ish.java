@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.View;
 import android.view.ViewGroup;
+
 import j$.time.Duration;
 
 /* renamed from: ish  reason: default package */

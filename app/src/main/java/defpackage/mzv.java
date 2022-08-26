@@ -4,11 +4,13 @@ import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
 import android.os.Process;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicReference;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: mzv  reason: default package */
 /* loaded from: classes2.dex */

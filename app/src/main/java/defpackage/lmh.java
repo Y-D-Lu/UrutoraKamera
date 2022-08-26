@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.io.OutputStream;
 
 /* renamed from: lmh  reason: default package */

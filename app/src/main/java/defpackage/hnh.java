@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.animation.Animator;
+
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.function.Consumer;
 
 /* JADX INFO: Access modifiers changed from: package-private */

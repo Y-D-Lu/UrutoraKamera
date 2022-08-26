@@ -1,10 +1,10 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.babelfish.device.avenh.l2l.speechenhancer2.jni.SpeechEnhancerJniWrapperRealtime;
 import com.google.googlex.gcam.BufferUtils;
-import j$.time.Duration;
-import j$.util.Optional;
+
 import java.io.IOException;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
@@ -13,6 +13,9 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
+
+import j$.time.Duration;
+import j$.util.Optional;
 
 /* renamed from: igq  reason: default package */
 /* loaded from: classes.dex */

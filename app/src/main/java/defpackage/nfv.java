@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.Process;
+
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: nfv  reason: default package */

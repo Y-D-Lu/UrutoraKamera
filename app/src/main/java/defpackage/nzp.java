@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.LinearLayoutCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: nzp  reason: default package */

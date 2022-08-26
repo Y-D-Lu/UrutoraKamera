@@ -3,8 +3,10 @@ package defpackage;
 import android.app.PendingIntent;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.lens.sdk.LensApi;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 

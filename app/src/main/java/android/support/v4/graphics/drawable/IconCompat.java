@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Icon;
 import android.os.Parcelable;
+
 import androidx.versionedparcelable.CustomVersionedParcelable;
 
 /* loaded from: classes.dex */

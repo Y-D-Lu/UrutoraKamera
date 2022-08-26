@@ -8,6 +8,7 @@ import android.view.ActionMode;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+
 import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */

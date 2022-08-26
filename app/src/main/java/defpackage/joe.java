@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.apps.camera.ui.views.CaptureAnimationOverlay;
 
 /* renamed from: joe  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.Bundle;
+
 import com.google.android.gms.common.api.internal.LifecycleCallback;
 
 /* renamed from: kko  reason: default package */

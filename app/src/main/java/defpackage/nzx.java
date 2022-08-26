@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 /* renamed from: nzx  reason: default package */

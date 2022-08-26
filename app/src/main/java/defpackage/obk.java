@@ -5,6 +5,7 @@ import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: obk  reason: default package */

@@ -1,8 +1,9 @@
 package defpackage;
 
-import j$.util.function.Supplier;
 import java.util.HashSet;
 import java.util.Iterator;
+
+import j$.util.function.Supplier;
 
 /* renamed from: heq  reason: default package */
 /* loaded from: classes.dex */

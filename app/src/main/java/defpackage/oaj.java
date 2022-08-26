@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.Property;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: oaj  reason: default package */

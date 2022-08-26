@@ -3,7 +3,9 @@ package defpackage;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 
 /* renamed from: ksh  reason: default package */

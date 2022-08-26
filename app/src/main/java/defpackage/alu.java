@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
 import android.view.accessibility.AccessibilityEvent;
+
 import androidx.viewpager2.widget.ViewPager2;
 
 /* renamed from: alu  reason: default package */

@@ -1,6 +1,5 @@
 package android.support.v8.renderscript;
 
-import android.support.v8.renderscript.Script;
 import com.hdrindicator.DisplayHelper;
 
 /* loaded from: classes.dex */

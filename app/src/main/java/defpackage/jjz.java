@@ -3,7 +3,9 @@ package defpackage;
 import android.graphics.RectF;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: jjz  reason: default package */

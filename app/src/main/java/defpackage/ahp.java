@@ -4,6 +4,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.SeekBar;
+
 import androidx.preference.SeekBarPreference;
 
 /* renamed from: ahp  reason: default package */

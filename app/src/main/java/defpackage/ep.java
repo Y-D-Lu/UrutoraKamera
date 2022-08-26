@@ -11,6 +11,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: ep  reason: default package */

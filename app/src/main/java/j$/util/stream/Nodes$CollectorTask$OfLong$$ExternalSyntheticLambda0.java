@@ -3,8 +3,6 @@ package j$.util.stream;
 import j$.util.function.BiFunction;
 import j$.util.function.BinaryOperator;
 import j$.util.function.Function;
-import j$.util.stream.Node;
-import j$.util.stream.Nodes;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class Nodes$CollectorTask$OfLong$$ExternalSyntheticLambda0 implements BinaryOperator {

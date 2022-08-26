@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.ActivityManager;
 import android.util.Log;
+
 import java.util.concurrent.Executors;
 import java.util.regex.Pattern;
 

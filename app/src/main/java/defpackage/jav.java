@@ -3,8 +3,10 @@ package defpackage;
 import android.text.format.DateUtils;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
-import j$.time.Duration;
+
 import org.codeaurora.snapcam.R;
+
+import j$.time.Duration;
 
 /* renamed from: jav  reason: default package */
 /* loaded from: classes.dex */

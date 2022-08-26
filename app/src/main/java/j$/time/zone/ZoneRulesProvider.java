@@ -1,7 +1,5 @@
 package j$.time.zone;
 
-import j$.util.Objects;
-import j$.util.concurrent.ConcurrentHashMap;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.util.ArrayList;
@@ -12,6 +10,9 @@ import java.util.Set;
 import java.util.TimeZone;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+
+import j$.util.Objects;
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: classes2.dex */
 public abstract class ZoneRulesProvider {

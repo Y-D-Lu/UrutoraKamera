@@ -1,10 +1,10 @@
 package defpackage;
 
+import java.util.ConcurrentModificationException;
+import java.util.NoSuchElementException;
+
 import j$.util.Iterator;
 import j$.util.function.Consumer;
-import java.util.ConcurrentModificationException;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: olg  reason: default package */

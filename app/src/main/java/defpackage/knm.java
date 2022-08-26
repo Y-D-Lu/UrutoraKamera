@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import java.util.List;
 
 /* renamed from: knm  reason: default package */

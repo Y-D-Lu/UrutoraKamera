@@ -2,7 +2,9 @@ package defpackage;
 
 import android.animation.Animator;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.function.Consumer;
 
 /* renamed from: icy  reason: default package */

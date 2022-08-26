@@ -5,11 +5,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.support.v8.renderscript.Element;
-import android.support.v8.renderscript.Type;
 import android.util.Log;
 import android.view.Surface;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.reflect.Array;
 import java.nio.ByteBuffer;
 import java.util.concurrent.locks.ReentrantReadWriteLock;

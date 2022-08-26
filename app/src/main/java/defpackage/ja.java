@@ -7,6 +7,7 @@ import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ja  reason: default package */

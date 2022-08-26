@@ -1,5 +1,7 @@
 package j$.util.stream;
 
+import java.util.concurrent.CountedCompleter;
+
 import j$.util.OptionalLong;
 import j$.util.Spliterator;
 import j$.util.function.BiConsumer;
@@ -7,10 +9,6 @@ import j$.util.function.BinaryOperator;
 import j$.util.function.Consumer;
 import j$.util.function.LongBinaryOperator;
 import j$.util.function.Supplier;
-import j$.util.stream.Collector;
-import j$.util.stream.Sink;
-import j$.util.stream.TerminalOp;
-import java.util.concurrent.CountedCompleter;
 
 /* loaded from: classes2.dex */
 abstract class ReduceOps {

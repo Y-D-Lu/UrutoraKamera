@@ -2,6 +2,7 @@ package defpackage;
 
 import android.media.AudioRecord;
 import android.media.MediaCodec;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: ejw  reason: default package */

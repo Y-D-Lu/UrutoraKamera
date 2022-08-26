@@ -9,13 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+
 import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
 import com.mdmitriev.auxlenses.AuxButtonsLayout;
-import j$.util.DesugarArrays;
-import j$.util.List$CC;
-import j$.util.stream.Collectors;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -24,7 +23,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
+
+import j$.util.DesugarArrays;
+import j$.util.List$CC;
+import j$.util.stream.Collectors;
 
 /* renamed from: gtg  reason: default package */
 /* loaded from: classes.dex */

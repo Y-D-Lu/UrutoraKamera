@@ -15,10 +15,12 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionLayout;
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionThumbnailView;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;

@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
 import java.util.concurrent.ExecutorService;
 
 /* renamed from: cat  reason: default package */

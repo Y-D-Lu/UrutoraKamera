@@ -2,6 +2,9 @@ package androidx.window.layout;
 
 import android.app.Activity;
 
+import defpackage.qmj;
+import defpackage.qnp;
+
 /* loaded from: classes2.dex */
 final class WindowInfoRepositoryImpl$currentWindowMetrics$1 extends qnp implements qmj {
     final /* synthetic */ WindowInfoRepositoryImpl this$0;

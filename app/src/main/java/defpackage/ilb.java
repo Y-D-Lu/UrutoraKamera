@@ -4,6 +4,7 @@ import android.content.res.Resources;
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ilb  reason: default package */

@@ -1,7 +1,6 @@
 package j$.util.stream;
 
 import j$.util.function.LongConsumer;
-import j$.util.stream.Node;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class Node$OfLong$$ExternalSyntheticLambda0 implements LongConsumer {

@@ -1,10 +1,17 @@
 package androidx.window.java.layout;
 
 import androidx.window.layout.WindowInfoRepository;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.locks.ReentrantLock;
+
+import defpackage.qmd;
+import defpackage.qnm;
+import defpackage.qno;
+import defpackage.qrg;
+import defpackage.qtr;
 
 /* loaded from: classes.dex */
 public final class WindowInfoRepositoryCallbackAdapter implements WindowInfoRepository {

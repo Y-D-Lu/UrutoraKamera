@@ -2,6 +2,7 @@ package defpackage;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
 import java.util.HashMap;
 
 /* renamed from: ccg  reason: default package */

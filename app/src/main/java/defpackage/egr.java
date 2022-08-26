@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.res.Resources;
-import java.util.concurrent.ScheduledExecutorService;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: egr  reason: default package */
 /* loaded from: classes.dex */

@@ -10,9 +10,11 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.SeekBar;
+
 import com.Helper;
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
+
 import za.lol;
 
 /* loaded from: classes2.dex */

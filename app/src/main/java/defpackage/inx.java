@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.hardware.camera2.params.MeteringRectangle;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;

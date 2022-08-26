@@ -1,11 +1,13 @@
 package defpackage;
 
 import android.util.Log;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.googlex.gcam.BufferUtils;
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.RawWriteView;
 import com.google.googlex.gcam.YuvWriteView;
+
 import java.nio.ByteBuffer;
 import java.util.List;
 

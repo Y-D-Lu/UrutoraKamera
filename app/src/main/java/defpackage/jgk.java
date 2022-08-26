@@ -7,13 +7,17 @@ import android.content.Context;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.modeswitcher.ModeSwitcher;
 import com.google.android.apps.camera.ui.modeswitcher.MoreModesGrid;
 import com.hdrindicator.DisplayHelper;
-import j$.util.Collection;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.EnumMap;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Collection;
 
 /* renamed from: jgk  reason: default package */
 /* loaded from: classes.dex */

@@ -6,6 +6,7 @@ import android.hardware.camera2.CameraManager;
 import android.os.SystemClock;
 import android.os.Trace;
 import android.util.ArrayMap;
+
 import java.util.Arrays;
 
 /* renamed from: vr  reason: default package */

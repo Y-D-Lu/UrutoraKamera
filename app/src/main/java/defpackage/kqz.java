@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.database.sqlite.SQLiteDatabase;
+
 import java.util.Random;
 
 /* renamed from: kqz  reason: default package */

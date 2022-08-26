@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.HardwareBuffer;
+
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.YuvWriteView;
 

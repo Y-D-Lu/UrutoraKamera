@@ -4,7 +4,9 @@ import android.content.Context;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jna  reason: default package */

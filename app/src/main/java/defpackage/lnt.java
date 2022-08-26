@@ -1,7 +1,8 @@
 package defpackage;
 
-import j$.util.Objects;
 import java.util.List;
+
+import j$.util.Objects;
 
 /* renamed from: lnt  reason: default package */
 /* loaded from: classes2.dex */

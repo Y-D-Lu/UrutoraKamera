@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.Context;
 import android.os.CountDownTimer;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 

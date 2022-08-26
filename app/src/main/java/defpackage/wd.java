@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CameraManager;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

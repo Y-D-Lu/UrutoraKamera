@@ -9,9 +9,11 @@ import android.os.HandlerThread;
 import android.os.Looper;
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.google.android.apps.camera.legacy.lightcycle.storage.LocalSessionStorage;
 import com.google.android.apps.lightcycle.panorama.LightCycleNative;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;

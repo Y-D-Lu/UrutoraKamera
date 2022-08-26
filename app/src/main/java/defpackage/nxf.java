@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 /* renamed from: nxf  reason: default package */

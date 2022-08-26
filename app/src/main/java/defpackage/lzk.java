@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.Log;
+
 import java.lang.reflect.Method;
 
 /* renamed from: lzk  reason: default package */

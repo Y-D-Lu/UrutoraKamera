@@ -1,5 +1,10 @@
 package j$.time.chrono;
 
+import java.io.InvalidObjectException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+
 import j$.lang.DesugarMath$$ExternalSyntheticBackport2;
 import j$.nio.file.attribute.FileTime$$ExternalSyntheticBackport0;
 import j$.time.LocalTime;
@@ -11,10 +16,6 @@ import j$.time.temporal.TemporalField;
 import j$.time.temporal.TemporalUnit;
 import j$.time.temporal.UnsupportedTemporalTypeException;
 import j$.time.temporal.ValueRange;
-import java.io.InvalidObjectException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
 
 /* loaded from: classes2.dex */
 public final class HijrahDate extends ChronoLocalDateImpl {

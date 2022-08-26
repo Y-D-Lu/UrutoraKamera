@@ -1,14 +1,16 @@
 package defpackage;
 
 import android.media.MediaFormat;
-import j$.util.Collection;
-import j$.util.function.Consumer;
-import j$.util.stream.Stream;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
+
+import j$.util.Collection;
+import j$.util.function.Consumer;
+import j$.util.stream.Stream;
 
 /* renamed from: fci  reason: default package */
 /* loaded from: classes.dex */

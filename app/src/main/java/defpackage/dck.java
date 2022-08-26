@@ -3,8 +3,10 @@ package defpackage;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+
 import com.google.android.apps.camera.coach.CameraCoachHudView;
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.function.BooleanSupplier;
 
 /* renamed from: dck  reason: default package */

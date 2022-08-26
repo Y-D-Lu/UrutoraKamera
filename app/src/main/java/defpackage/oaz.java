@@ -2,7 +2,9 @@ package defpackage;
 
 import android.animation.ObjectAnimator;
 import android.util.Property;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 
 /* renamed from: oaz  reason: default package */

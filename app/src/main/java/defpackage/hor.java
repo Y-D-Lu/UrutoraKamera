@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.view.Choreographer;
 import android.view.MotionEvent;
+
 import com.google.android.apps.camera.ui.layout.GcaLayout;
 
 /* renamed from: hor  reason: default package */

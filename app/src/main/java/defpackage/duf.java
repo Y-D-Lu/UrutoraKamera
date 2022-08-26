@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.PointF;
 import android.graphics.RectF;
 import android.util.SizeF;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: duf  reason: default package */

@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RatingBar;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: nc  reason: default package */

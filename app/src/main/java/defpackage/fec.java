@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.opengl.Matrix;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 
 /* renamed from: fec  reason: default package */

@@ -1,9 +1,10 @@
 package j$.util;
 
-import j$.lang.DesugarInteger$$ExternalSyntheticBackport0;
-import j$.util.function.ToIntFunction;
 import java.io.Serializable;
 import java.util.Comparator;
+
+import j$.lang.DesugarInteger$$ExternalSyntheticBackport0;
+import j$.util.function.ToIntFunction;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class Comparator$$ExternalSyntheticLambda4 implements Comparator, Serializable {

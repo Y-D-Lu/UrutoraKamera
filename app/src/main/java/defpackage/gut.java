@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
 
 /* renamed from: gut  reason: default package */

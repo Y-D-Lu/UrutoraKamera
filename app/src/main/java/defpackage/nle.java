@@ -5,8 +5,10 @@ import android.content.Context;
 import android.graphics.PointF;
 import android.opengl.GLES20;
 import android.view.WindowManager;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.libraries.vision.opengl.Texture;
+
 import java.nio.Buffer;
 import java.nio.FloatBuffer;
 

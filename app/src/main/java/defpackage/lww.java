@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.SensorManager;
+
 import java.util.HashSet;
 import java.util.Set;
 

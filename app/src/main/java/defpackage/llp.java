@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CameraManager;
 import android.os.Handler;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;

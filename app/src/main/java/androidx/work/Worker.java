@@ -2,6 +2,10 @@ package androidx.work;
 
 import android.content.Context;
 
+import defpackage.ang;
+import defpackage.asl;
+import defpackage.pht;
+
 /* loaded from: classes.dex */
 public abstract class Worker extends ListenableWorker {
     public asl a;

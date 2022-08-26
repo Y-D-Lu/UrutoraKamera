@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.Point;
+
 import com.google.android.libraries.lens.lenslite.api.LinkChipResult;
+
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: ffc  reason: default package */

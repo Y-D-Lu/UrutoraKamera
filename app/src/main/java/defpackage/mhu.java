@@ -5,14 +5,17 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
+
 import com.google.android.libraries.lens.lenslite.dynamicloading.ApiVersion;
 import com.google.android.libraries.lens.lenslite.dynamicloading.DLEngineApi;
 import com.google.android.libraries.lens.lenslite.dynamicloading.EngineApiLoader;
-import dalvik.system.DexClassLoader;
+
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Set;
 import java.util.concurrent.Callable;
+
+import dalvik.system.DexClassLoader;
 
 /* renamed from: mhu  reason: default package */
 /* loaded from: classes2.dex */

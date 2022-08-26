@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.List;
 import java.util.regex.Pattern;
 

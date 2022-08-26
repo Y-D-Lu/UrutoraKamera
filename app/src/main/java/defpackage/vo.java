@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CameraCharacteristics;
 import android.util.ArrayMap;
+
 import java.util.Set;
 
 /* renamed from: vo  reason: default package */

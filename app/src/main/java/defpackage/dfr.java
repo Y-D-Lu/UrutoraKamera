@@ -5,11 +5,13 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
-import j$.time.Instant;
-import j$.util.function.Function;
+
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Locale;
+
+import j$.time.Instant;
+import j$.util.function.Function;
 
 /* renamed from: dfr  reason: default package */
 /* loaded from: classes2.dex */

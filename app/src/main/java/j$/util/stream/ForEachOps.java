@@ -1,11 +1,10 @@
 package j$.util.stream;
 
+import java.util.concurrent.CountedCompleter;
+
 import j$.util.Spliterator;
 import j$.util.concurrent.ConcurrentHashMap;
 import j$.util.function.Consumer;
-import j$.util.stream.Node;
-import j$.util.stream.Sink;
-import java.util.concurrent.CountedCompleter;
 
 /* loaded from: classes2.dex */
 abstract class ForEachOps {

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.PointF;
 import android.graphics.RectF;
 import android.hardware.HardwareBuffer;
+
 import com.google.android.apps.camera.jni.tracking.RoiTrackerNative;
 import com.hdrindicator.DisplayHelper;
 

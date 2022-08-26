@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Rect;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: oao  reason: default package */

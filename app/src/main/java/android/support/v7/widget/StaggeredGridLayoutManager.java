@@ -8,7 +8,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 import java.util.BitSet;
 import java.util.List;

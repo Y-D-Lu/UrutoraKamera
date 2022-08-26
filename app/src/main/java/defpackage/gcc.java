@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
 import android.util.Range;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.EnumMap;

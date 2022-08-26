@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.stats.ViewfinderJankSession;
+
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.Map;

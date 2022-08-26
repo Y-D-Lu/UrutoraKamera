@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.view.ViewGroup;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dq  reason: default package */

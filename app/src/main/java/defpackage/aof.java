@@ -2,10 +2,13 @@ package defpackage;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
+
 import androidx.work.impl.WorkDatabase;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Arrays;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: aof  reason: default package */
 /* loaded from: classes.dex */

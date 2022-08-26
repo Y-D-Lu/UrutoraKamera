@@ -6,8 +6,10 @@ import android.media.MediaCodec;
 import android.media.MediaFormat;
 import android.opengl.Matrix;
 import android.view.Surface;
+
 import com.google.android.libraries.oliveoil.gl.EGLImage;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.concurrent.Executor;

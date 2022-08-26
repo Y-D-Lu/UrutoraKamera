@@ -3,8 +3,10 @@ package defpackage;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* renamed from: kr  reason: default package */
 /* loaded from: classes2.dex */

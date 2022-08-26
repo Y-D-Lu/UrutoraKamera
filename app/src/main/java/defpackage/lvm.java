@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.TotalCaptureResult;
+
 import java.util.Map;
 
 /* renamed from: lvm  reason: default package */

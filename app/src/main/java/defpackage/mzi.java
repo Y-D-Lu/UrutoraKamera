@@ -8,7 +8,9 @@ import android.os.StrictMode;
 import android.system.Os;
 import android.system.StructStat;
 import android.util.Log;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;

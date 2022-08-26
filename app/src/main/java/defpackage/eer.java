@@ -4,6 +4,7 @@ import com.google.googlex.gcam.InterleavedImageU8;
 import com.google.googlex.gcam.PortraitRequest;
 import com.google.googlex.gcam.ShotMetadata;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.List;
 
 /* renamed from: eer  reason: default package */

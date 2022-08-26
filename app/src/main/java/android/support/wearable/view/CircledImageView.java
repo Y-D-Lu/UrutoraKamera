@@ -11,7 +11,10 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.ama;
 
 @Deprecated
 /* loaded from: classes.dex */

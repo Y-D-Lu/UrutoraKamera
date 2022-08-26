@@ -3,6 +3,7 @@ package android.support.wearable.watchface.decomposition;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;

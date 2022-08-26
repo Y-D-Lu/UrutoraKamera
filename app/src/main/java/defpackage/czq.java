@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Context;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: czq  reason: default package */

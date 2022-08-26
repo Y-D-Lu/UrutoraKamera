@@ -1,5 +1,12 @@
 package j$.time;
 
+import java.io.DataOutput;
+import java.io.InvalidObjectException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+import java.util.List;
+
 import j$.time.chrono.ChronoZonedDateTime;
 import j$.time.chrono.Chronology;
 import j$.time.temporal.ChronoField;
@@ -16,12 +23,6 @@ import j$.time.temporal.ValueRange;
 import j$.time.zone.ZoneOffsetTransition;
 import j$.time.zone.ZoneRules;
 import j$.util.Objects;
-import java.io.DataOutput;
-import java.io.InvalidObjectException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.util.List;
 
 /* loaded from: classes2.dex */
 public final class ZonedDateTime implements Temporal, ChronoZonedDateTime, Serializable {

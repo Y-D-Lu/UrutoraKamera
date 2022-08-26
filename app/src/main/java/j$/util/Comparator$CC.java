@@ -1,8 +1,9 @@
 package j$.util;
 
+import java.util.Comparator;
+
 import j$.util.function.Function;
 import j$.util.function.ToIntFunction;
-import java.util.Comparator;
 
 /* renamed from: j$.util.Comparator$-CC */
 /* loaded from: classes2.dex */

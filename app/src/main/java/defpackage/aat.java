@@ -2,9 +2,11 @@ package defpackage;
 
 import android.content.Context;
 import android.view.View;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.File;
 import java.util.concurrent.Future;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: aat  reason: default package */
 /* loaded from: classes.dex */

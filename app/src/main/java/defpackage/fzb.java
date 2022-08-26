@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.BottomBarController;
+
 import java.util.Set;
 
 /* renamed from: fzb  reason: default package */

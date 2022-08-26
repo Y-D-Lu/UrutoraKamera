@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.YuvImage;
 import com.google.googlex.gcam.YuvWriteView;

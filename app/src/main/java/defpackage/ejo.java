@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.android.apps.camera.imax.cyclops.capture.TrackerStats;
 import com.google.android.libraries.vision.opengl.Texture;
 

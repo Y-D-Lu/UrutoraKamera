@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

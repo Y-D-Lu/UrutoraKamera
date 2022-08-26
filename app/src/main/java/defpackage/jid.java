@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.View;
 import android.widget.Button;
+
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
 
 /* renamed from: jid  reason: default package */

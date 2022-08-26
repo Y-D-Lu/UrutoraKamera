@@ -2,7 +2,9 @@ package defpackage;
 
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: exj  reason: default package */

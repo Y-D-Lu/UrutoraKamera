@@ -3,6 +3,7 @@ package defpackage;
 import android.app.Activity;
 import android.content.Context;
 import android.view.WindowManager;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 
 /* renamed from: jeu  reason: default package */

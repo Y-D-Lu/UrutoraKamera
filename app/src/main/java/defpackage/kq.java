@@ -9,9 +9,11 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ListView;
 import android.widget.PopupWindow;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: kq  reason: default package */
 /* loaded from: classes2.dex */

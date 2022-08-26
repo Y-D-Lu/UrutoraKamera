@@ -3,7 +3,9 @@ package defpackage;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.SharedPreferences;
+
 import com.google.android.libraries.lens.lenslite.dynamicloading.ClientContextProvider;
+
 import java.io.File;
 
 /* renamed from: mhj  reason: default package */

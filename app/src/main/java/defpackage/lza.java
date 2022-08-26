@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.view.OrientationEventListener;
+
 import java.util.Iterator;
 
 /* renamed from: lza  reason: default package */

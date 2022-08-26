@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: odl  reason: default package */

@@ -2,10 +2,14 @@ package defpackage;
 
 import android.content.Context;
 import android.view.View;
+
 import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
-import j$.util.function.Supplier;
-import java.util.concurrent.Executor;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.Executor;
+
+import j$.util.function.Supplier;
 
 /* renamed from: igu  reason: default package */
 /* loaded from: classes.dex */

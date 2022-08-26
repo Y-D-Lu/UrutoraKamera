@@ -3,12 +3,15 @@ package defpackage;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
+
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionLayout;
 import com.google.googlex.gcam.Gcam;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: dsd  reason: default package */
 /* loaded from: classes.dex */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import androidx.work.CoroutineWorker;
+
 import com.google.android.apps.camera.bottombar.R;
 
 @qlw(b = "androidx.work.CoroutineWorker$startWork$1", c = "CoroutineWorker.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_editTextBackground})

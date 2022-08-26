@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.PointF;
 import android.view.MotionEvent;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: fvs  reason: default package */

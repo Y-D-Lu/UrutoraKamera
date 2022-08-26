@@ -4,13 +4,16 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.InsetDrawable;
 import android.view.ViewStub;
+
 import com.google.android.apps.camera.ui.modeslider.ModeSlider;
 import com.google.android.apps.camera.ui.modeslider.ModeSliderUi;
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: erb  reason: default package */
 /* loaded from: classes.dex */

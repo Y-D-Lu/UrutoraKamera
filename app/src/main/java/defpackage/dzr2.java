@@ -10,7 +10,9 @@ import android.os.Environment;
 import android.preference.Preference;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import com.google.android.apps.camera.bottombar.BottomBar;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

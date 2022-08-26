@@ -1,10 +1,13 @@
 package defpackage;
 
 import android.view.ViewPropertyAnimator;
+
 import com.google.android.apps.camera.autotimer.ui.AutoTimerIndicatorView;
 import com.hdrindicator.DisplayHelper;
-import java.util.concurrent.TimeUnit;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.TimeUnit;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: iwk  reason: default package */

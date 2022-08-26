@@ -1,6 +1,7 @@
 package com.gcam.simple.filechooser.internals;
 
 import com.hdrindicator.DisplayHelper;
+
 import java.io.File;
 import java.text.DecimalFormat;
 

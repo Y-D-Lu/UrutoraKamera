@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.pm.ResolveInfo;
 import android.widget.Toast;
+
 import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */

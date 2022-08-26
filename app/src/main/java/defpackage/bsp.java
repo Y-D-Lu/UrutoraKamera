@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.googlex.gcam.DirtyLensHistory;
 import com.google.googlex.gcam.GcamModuleJNI;
+
 import java.util.ArrayList;
 
 /* renamed from: bsp  reason: default package */

@@ -7,6 +7,7 @@ import android.hardware.SensorManager;
 import android.opengl.Matrix;
 import android.os.Handler;
 import android.os.HandlerThread;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: ftr  reason: default package */

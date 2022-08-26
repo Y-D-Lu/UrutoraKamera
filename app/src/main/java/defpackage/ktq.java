@@ -3,6 +3,7 @@ package defpackage;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Base64;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

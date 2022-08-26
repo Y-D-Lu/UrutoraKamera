@@ -8,10 +8,12 @@ import android.os.Parcelable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.internal.common.TogglingData;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: kpt  reason: default package */

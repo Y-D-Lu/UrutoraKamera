@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
-import com.google.android.apps.camera.bottombar.R;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: af  reason: default package */

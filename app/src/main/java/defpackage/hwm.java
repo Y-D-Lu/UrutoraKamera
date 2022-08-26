@@ -4,6 +4,9 @@ import android.content.pm.PackageInfo;
 import android.os.Build;
 import android.os.SystemClock;
 import android.os.UserManager;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,7 +14,6 @@ import java.util.concurrent.Callable;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
 import java.util.zip.ZipInputStream;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: hwm  reason: default package */
 /* loaded from: classes.dex */

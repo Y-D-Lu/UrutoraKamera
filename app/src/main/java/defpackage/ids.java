@@ -5,17 +5,20 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.preference.PreferenceScreen;
 import android.widget.Toast;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import j$.util.Collection;
 import j$.util.Comparator$CC;
 import j$.util.concurrent.ConcurrentHashMap;
 import j$.util.function.Function;
 import j$.util.stream.Collectors;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /* renamed from: ids  reason: default package */
 /* loaded from: classes.dex */

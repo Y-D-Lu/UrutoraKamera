@@ -6,8 +6,6 @@ import j$.util.function.IntFunction;
 import j$.util.function.LongBinaryOperator;
 import j$.util.function.LongConsumer;
 import j$.util.function.Supplier;
-import j$.util.stream.Node;
-import j$.util.stream.StreamSpliterators$DelegatingSpliterator;
 
 /* loaded from: classes2.dex */
 abstract class LongPipeline extends AbstractPipeline implements LongStream {

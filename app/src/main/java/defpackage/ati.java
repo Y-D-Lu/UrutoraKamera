@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.GregorianCalendar;
 
 /* renamed from: ati  reason: default package */

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.content.SharedPreferences;
+
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase;
+
 import j$.util.DesugarArrays;
 import j$.util.function.Consumer;
 

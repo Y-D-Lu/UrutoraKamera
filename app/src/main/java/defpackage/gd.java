@@ -5,8 +5,10 @@ import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.view.View;
 import android.view.WindowInsets;
-import java.util.Map;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Map;
 
 /* renamed from: gd  reason: default package */
 /* loaded from: classes.dex */

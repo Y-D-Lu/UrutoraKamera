@@ -1,6 +1,5 @@
 package j$.util;
 
-import j$.util.AbstractList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;

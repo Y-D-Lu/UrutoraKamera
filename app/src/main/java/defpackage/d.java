@@ -21,12 +21,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.Objects;
-import java.util.ArrayList;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
 import org.xmlpull.v1.XmlPullParser;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import j$.util.Objects;
 
 /* renamed from: d */
 /* loaded from: classes.dex */

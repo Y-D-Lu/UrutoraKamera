@@ -6,7 +6,9 @@ import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.params.Face;
 import android.view.View;
 import android.view.accessibility.AccessibilityManager;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fws  reason: default package */

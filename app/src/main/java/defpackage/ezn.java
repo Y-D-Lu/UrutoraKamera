@@ -3,12 +3,15 @@ package defpackage;
 import android.graphics.Bitmap;
 import android.view.View;
 import android.view.ViewStub;
+
 import com.google.android.apps.camera.progressoverlay.ProgressOverlay;
 import com.google.android.apps.camera.ui.views.CaptureAnimationOverlay;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
 import com.google.android.apps.camera.ui.widget.ReviewImageView;
-import java.util.concurrent.Executor;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.Executor;
 
 /* renamed from: ezn  reason: default package */
 /* loaded from: classes.dex */

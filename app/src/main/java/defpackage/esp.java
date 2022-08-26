@@ -4,10 +4,12 @@ import android.app.ActivityManager;
 import android.app.Application;
 import android.media.MediaFormat;
 import android.view.View;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.concurrent.Executor;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: esp  reason: default package */
 /* loaded from: classes.dex */

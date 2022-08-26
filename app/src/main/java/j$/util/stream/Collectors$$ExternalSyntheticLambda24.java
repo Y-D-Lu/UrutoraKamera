@@ -1,7 +1,8 @@
 package j$.util.stream;
 
-import j$.util.function.BiConsumer;
 import java.util.Set;
+
+import j$.util.function.BiConsumer;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class Collectors$$ExternalSyntheticLambda24 implements BiConsumer {

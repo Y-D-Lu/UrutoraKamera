@@ -1,9 +1,11 @@
 package defpackage;
 
 import com.google.googlex.gcam.BurstSpec;
-import j$.util.Map;
+
 import java.util.HashMap;
 import java.util.Iterator;
+
+import j$.util.Map;
 
 /* renamed from: hej  reason: default package */
 /* loaded from: classes.dex */

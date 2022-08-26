@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.support.v7.widget.RecyclerView;
+
 import java.util.Arrays;
 
 /* renamed from: ou  reason: default package */

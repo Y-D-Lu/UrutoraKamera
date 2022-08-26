@@ -5,12 +5,15 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.preference.ListPreference;
 import android.preference.SwitchPreference;
+
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fce  reason: default package */
 /* loaded from: classes.dex */

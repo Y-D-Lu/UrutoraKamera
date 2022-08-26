@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.camera2.CameraCharacteristics;
 import android.media.ImageReader;
 import android.os.Handler;
+
 import java.util.Locale;
 
 /* renamed from: lpp  reason: default package */

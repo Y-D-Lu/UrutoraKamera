@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.res.AssetManager;
+
 import java.io.InputStream;
 
 /* renamed from: bar  reason: default package */

@@ -1,6 +1,5 @@
 package j$.time.zone;
 
-import j$.time.ZoneOffset;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.Externalizable;
@@ -8,6 +7,8 @@ import java.io.InvalidClassException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 import java.io.StreamCorruptedException;
+
+import j$.time.ZoneOffset;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

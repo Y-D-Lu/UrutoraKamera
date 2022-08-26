@@ -8,8 +8,14 @@ import android.graphics.RadialGradient;
 import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.ala;
+import defpackage.alx;
+import defpackage.amf;
 
 /* loaded from: classes.dex */
 public class PageIndicatorView extends View implements ala {

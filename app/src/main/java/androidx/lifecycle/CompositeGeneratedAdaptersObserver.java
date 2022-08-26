@@ -2,6 +2,11 @@ package androidx.lifecycle;
 
 import java.util.HashMap;
 
+import defpackage.ady;
+import defpackage.adz;
+import defpackage.aec;
+import defpackage.aee;
+
 /* loaded from: classes.dex */
 public class CompositeGeneratedAdaptersObserver implements aec {
     private final ady[] a;

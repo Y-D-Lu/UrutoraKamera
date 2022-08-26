@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.app.Activity;
+
 import com.google.lens.sdk.LensApi;
 
 /* renamed from: pmm  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.WindowInsets;
+
 import j$.util.Objects;
 
 /* JADX INFO: Access modifiers changed from: package-private */

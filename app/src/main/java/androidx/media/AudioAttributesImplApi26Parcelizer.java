@@ -2,6 +2,8 @@ package androidx.media;
 
 import android.media.AudioAttributes;
 
+import defpackage.aks;
+
 /* loaded from: classes.dex */
 public class AudioAttributesImplApi26Parcelizer {
     public static AudioAttributesImplApi26 read(aks aksVar) {

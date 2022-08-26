@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.support.v4.widget.NestedScrollView;
 import android.util.TypedValue;
 import android.view.KeyEvent;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ie  reason: default package */

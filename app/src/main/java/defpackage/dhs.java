@@ -1,9 +1,5 @@
 package defpackage;
 
-import j$.time.Clock;
-import j$.time.Duration;
-import j$.time.Instant;
-import j$.util.Collection;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -15,6 +11,11 @@ import java.util.concurrent.Phaser;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.time.Clock;
+import j$.time.Duration;
+import j$.time.Instant;
+import j$.util.Collection;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dhs  reason: default package */

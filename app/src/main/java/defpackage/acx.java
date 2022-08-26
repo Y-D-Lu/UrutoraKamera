@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.AndroidRuntimeException;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: acx  reason: default package */

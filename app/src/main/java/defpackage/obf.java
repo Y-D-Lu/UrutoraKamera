@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: obf  reason: default package */

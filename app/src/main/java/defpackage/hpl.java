@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+
 import java.util.Iterator;
 import java.util.concurrent.Executor;
 

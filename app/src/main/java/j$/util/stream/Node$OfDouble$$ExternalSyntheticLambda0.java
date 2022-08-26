@@ -1,7 +1,6 @@
 package j$.util.stream;
 
 import j$.util.function.DoubleConsumer;
-import j$.util.stream.Node;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class Node$OfDouble$$ExternalSyntheticLambda0 implements DoubleConsumer {

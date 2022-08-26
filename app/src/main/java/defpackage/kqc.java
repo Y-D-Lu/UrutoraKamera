@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.Base64;
+
 import java.util.Random;
 
 /* renamed from: kqc  reason: default package */

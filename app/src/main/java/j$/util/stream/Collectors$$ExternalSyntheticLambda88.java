@@ -1,7 +1,8 @@
 package j$.util.stream;
 
-import j$.util.function.Supplier;
 import java.util.HashMap;
+
+import j$.util.function.Supplier;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class Collectors$$ExternalSyntheticLambda88 implements Supplier {

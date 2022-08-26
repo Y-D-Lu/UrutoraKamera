@@ -4,6 +4,7 @@ import android.hardware.HardwareBuffer;
 import android.media.MediaFormat;
 import android.os.Handler;
 import android.view.Surface;
+
 import com.google.android.libraries.oliveoil.gl.EGLImage;
 import com.hdrindicator.DisplayHelper;
 

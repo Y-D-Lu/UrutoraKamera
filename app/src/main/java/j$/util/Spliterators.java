@@ -1,16 +1,12 @@
 package j$.util;
 
-import j$.util.Iterator;
-import j$.util.PrimitiveIterator$OfDouble;
-import j$.util.PrimitiveIterator$OfInt;
-import j$.util.PrimitiveIterator$OfLong;
-import j$.util.Spliterator;
+import java.util.Comparator;
+import java.util.NoSuchElementException;
+
 import j$.util.function.Consumer;
 import j$.util.function.DoubleConsumer;
 import j$.util.function.IntConsumer;
 import j$.util.function.LongConsumer;
-import java.util.Comparator;
-import java.util.NoSuchElementException;
 
 /* loaded from: classes2.dex */
 public abstract class Spliterators {

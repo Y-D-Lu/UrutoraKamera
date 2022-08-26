@@ -1,8 +1,10 @@
 package defpackage;
 
 import com.google.babelfish.device.avenh.l2l.apps.common.VideoProcessorUtils;
-import j$.time.Duration;
+
 import java.nio.ByteBuffer;
+
+import j$.time.Duration;
 
 /* renamed from: igw  reason: default package */
 /* loaded from: classes.dex */

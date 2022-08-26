@@ -1,11 +1,11 @@
 package j$.util;
 
-import j$.util.Spliterator;
-import j$.util.function.Consumer;
 import java.util.AbstractCollection;
 import java.util.Comparator;
 import java.util.ConcurrentModificationException;
 import java.util.List;
+
+import j$.util.function.Consumer;
 
 /* loaded from: classes2.dex */
 public abstract class AbstractList extends AbstractCollection implements List {

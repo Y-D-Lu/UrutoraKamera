@@ -11,15 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+
 import com.google.android.apps.camera.rewind.RewindExportShotView;
 import com.google.android.apps.camera.rewind.RewindThumbnailScrollView;
 import com.google.android.apps.camera.ui.views.CaptureAnimationOverlay;
-import j$.util.concurrent.ConcurrentHashMap;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import org.codeaurora.snapcam.R;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: hnf  reason: default package */

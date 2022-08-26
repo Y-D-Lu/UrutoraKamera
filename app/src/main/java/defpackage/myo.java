@@ -3,7 +3,9 @@ package defpackage;
 import android.app.ActivityManager;
 import android.app.ApplicationExitInfo;
 import android.content.Context;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.List;
 
 /* renamed from: myo  reason: default package */

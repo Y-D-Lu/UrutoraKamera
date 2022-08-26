@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.graphics.ColorFilter;
+
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 import com.google.android.apps.camera.ui.modeswitcher.MoreModesGrid;
+
 import j$.util.function.Predicate;
 
 /* renamed from: bql  reason: default package */

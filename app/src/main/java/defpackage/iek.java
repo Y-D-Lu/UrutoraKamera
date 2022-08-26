@@ -8,9 +8,12 @@ import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.view.View;
 import android.widget.ImageButton;
+
 import com.hdrindicator.DisplayHelper;
-import j$.time.Duration;
+
 import org.codeaurora.snapcam.R;
+
+import j$.time.Duration;
 
 /* renamed from: iek  reason: default package */
 /* loaded from: classes.dex */

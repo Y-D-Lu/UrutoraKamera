@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.support.wearable.view.SwipeDismissFrameLayout;
+
 import java.util.ArrayList;
 
 /* renamed from: to  reason: default package */

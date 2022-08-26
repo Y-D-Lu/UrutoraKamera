@@ -1,12 +1,12 @@
 package j$.util.stream;
 
+import java.util.concurrent.CountedCompleter;
+
 import j$.util.Optional;
 import j$.util.Spliterator;
 import j$.util.function.Consumer;
 import j$.util.function.Predicate;
 import j$.util.function.Supplier;
-import j$.util.stream.Sink;
-import java.util.concurrent.CountedCompleter;
 
 /* loaded from: classes2.dex */
 abstract class FindOps {

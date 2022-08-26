@@ -3,7 +3,9 @@ package defpackage;
 import android.graphics.Rect;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
+
 import com.google.android.apps.camera.jni.federatedphoto.ModeSuggestionClient;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

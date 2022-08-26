@@ -8,12 +8,15 @@ import android.os.Looper;
 import android.util.Range;
 import android.view.PixelCopy;
 import android.view.Surface;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.imax.cyclops.processing.NativePoseEstimatorImpl;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.File;
 import java.util.HashSet;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: ejl  reason: default package */
 /* loaded from: classes2.dex */

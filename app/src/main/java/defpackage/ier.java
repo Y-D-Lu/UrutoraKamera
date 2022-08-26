@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.animation.Animator;
-import j$.util.function.Consumer;
+
 import org.codeaurora.snapcam.R;
+
+import j$.util.function.Consumer;
 
 /* renamed from: ier  reason: default package */
 /* loaded from: classes.dex */

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+
 import com.google.android.apps.camera.ui.compositevideoview.CompositeVideoView;
 
 /* renamed from: iwf  reason: default package */

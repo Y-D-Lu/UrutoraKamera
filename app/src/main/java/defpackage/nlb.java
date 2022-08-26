@@ -6,9 +6,11 @@ import android.opengl.EGLContext;
 import android.opengl.EGLDisplay;
 import android.opengl.EGLSurface;
 import android.view.Surface;
-import j$.util.Objects;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import j$.util.Objects;
 
 /* renamed from: nlb  reason: default package */
 /* loaded from: classes2.dex */

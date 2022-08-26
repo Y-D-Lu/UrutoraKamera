@@ -1,16 +1,15 @@
 package j$.util.stream;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Iterator;
+
 import j$.util.Collection;
 import j$.util.List$CC;
 import j$.util.Spliterator;
 import j$.util.function.Consumer;
 import j$.util.function.IntFunction;
-import j$.util.stream.ReferencePipeline;
-import j$.util.stream.Sink;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Iterator;
 
 /* loaded from: classes2.dex */
 abstract class SortedOps {

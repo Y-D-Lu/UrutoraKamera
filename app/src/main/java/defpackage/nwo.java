@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.material.appbar.AppBarLayout;
+
 import j$.util.Objects;
 
 /* renamed from: nwo  reason: default package */

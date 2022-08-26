@@ -7,11 +7,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.feedback.ErrorReport;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.ND4CSettings;
 import com.google.android.gms.googlehelp.internal.common.TogglingData;
+
 import java.util.ArrayList;
 
 /* renamed from: kpk  reason: default package */

@@ -8,8 +8,10 @@ import android.net.Uri;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import java.util.concurrent.ExecutionException;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.ExecutionException;
 
 /* renamed from: dfv  reason: default package */
 /* loaded from: classes2.dex */

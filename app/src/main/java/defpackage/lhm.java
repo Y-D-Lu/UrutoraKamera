@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.Camera;
 import android.hardware.camera2.CameraCharacteristics;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;

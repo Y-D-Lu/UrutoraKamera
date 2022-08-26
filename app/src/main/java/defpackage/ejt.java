@@ -4,6 +4,7 @@ import android.media.MediaCodec;
 import android.media.MediaCrypto;
 import android.media.MediaFormat;
 import android.view.Surface;
+
 import java.io.IOException;
 
 /* renamed from: ejt  reason: default package */

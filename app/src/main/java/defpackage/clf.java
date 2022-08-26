@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import java.util.List;
 
 /* renamed from: clf  reason: default package */

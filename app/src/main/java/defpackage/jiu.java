@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.remotecontrol.RemoteControlView;
 import com.hdrindicator.DisplayHelper;
 

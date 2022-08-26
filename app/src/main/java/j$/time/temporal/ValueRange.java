@@ -1,9 +1,10 @@
 package j$.time.temporal;
 
-import j$.time.DateTimeException;
 import java.io.InvalidObjectException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
+
+import j$.time.DateTimeException;
 
 /* loaded from: classes2.dex */
 public final class ValueRange implements Serializable {

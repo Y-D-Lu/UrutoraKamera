@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.google.android.material.appbar.AppBarLayout;
 
 /* renamed from: nwq  reason: default package */

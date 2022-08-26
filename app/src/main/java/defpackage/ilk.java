@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.Context;
 import android.content.Intent;
+
 import com.google.android.apps.camera.ui.preference.StorageStatusPreference;
+
 import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: ilk  reason: default package */

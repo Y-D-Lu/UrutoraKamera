@@ -1,7 +1,6 @@
 package j$.util.stream;
 
 import j$.util.function.IntFunction;
-import j$.util.stream.ForEachOps;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class ForEachOps$ForEachOrderedTask$$ExternalSyntheticLambda0 implements IntFunction {

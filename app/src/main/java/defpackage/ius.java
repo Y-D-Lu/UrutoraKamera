@@ -10,8 +10,10 @@ import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
 
 /* renamed from: ius  reason: default package */
 /* loaded from: classes2.dex */

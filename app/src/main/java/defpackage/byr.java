@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.HandlerThread;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: byr  reason: default package */

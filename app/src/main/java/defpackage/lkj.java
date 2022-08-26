@@ -4,7 +4,9 @@ import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 import android.os.Handler;
 import android.util.Log;
+
 import com.google.android.apps.camera.bottombar.R;
+
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;
 

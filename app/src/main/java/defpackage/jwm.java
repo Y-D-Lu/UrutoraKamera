@@ -5,14 +5,17 @@ import android.hardware.HardwareBuffer;
 import android.os.SystemClock;
 import android.util.Size;
 import android.view.Surface;
+
 import com.google.android.libraries.oliveoil.bufferflinger.BufferFlinger;
-import j$.time.Duration;
-import j$.util.Collection;
-import j$.util.stream.Collectors;
+
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.time.Duration;
+import j$.util.Collection;
+import j$.util.stream.Collectors;
 
 /* renamed from: jwm  reason: default package */
 /* loaded from: classes2.dex */

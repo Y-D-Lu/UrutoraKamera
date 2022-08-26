@@ -8,9 +8,12 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
 
 /* renamed from: iuv  reason: default package */
 /* loaded from: classes2.dex */

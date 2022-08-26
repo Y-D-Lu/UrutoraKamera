@@ -4,6 +4,7 @@ import android.content.res.Resources;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.LinearLayout;
+
 import java.util.ArrayList;
 
 /* renamed from: jsa  reason: default package */

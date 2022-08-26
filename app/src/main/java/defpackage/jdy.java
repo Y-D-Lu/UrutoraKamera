@@ -3,12 +3,14 @@ package defpackage;
 import android.content.Context;
 import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.CaptureResult;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: jdy  reason: default package */
 /* loaded from: classes.dex */

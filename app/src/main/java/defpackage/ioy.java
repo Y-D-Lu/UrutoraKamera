@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
+
 import java.util.concurrent.TimeUnit;
 
 /* JADX INFO: Access modifiers changed from: package-private */

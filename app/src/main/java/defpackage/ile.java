@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ile  reason: default package */

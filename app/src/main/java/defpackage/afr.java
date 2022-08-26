@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.ViewGroup;
+
 import com.hdrindicator.DisplayHelper;
 
 @Deprecated

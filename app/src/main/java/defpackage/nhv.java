@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.database.Cursor;
+
 import java.util.concurrent.Callable;
 
 /* renamed from: nhv  reason: default package */

@@ -19,14 +19,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
-import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.legacy.lightcycle.storage.LocalSessionStorage;
 import com.google.android.apps.camera.legacy.lightcycle.ui.PhotoSphereMessageOverlay;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.lightcycle.panorama.LightCycleNative;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CameraAccessException;
 import android.os.Handler;
+
 import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */

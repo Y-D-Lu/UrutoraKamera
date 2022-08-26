@@ -1,8 +1,9 @@
 package defpackage;
 
-import j$.util.Collection;
 import java.util.ArrayList;
 import java.util.List;
+
+import j$.util.Collection;
 
 /* renamed from: iuc  reason: default package */
 /* loaded from: classes2.dex */

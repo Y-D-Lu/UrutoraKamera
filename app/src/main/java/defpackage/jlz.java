@@ -3,12 +3,15 @@ package defpackage;
 import android.util.Pair;
 import android.view.View;
 import android.view.ViewTreeObserver;
-import j$.util.function.Supplier;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Executor;
-import org.codeaurora.snapcam.R;
+
+import j$.util.function.Supplier;
 
 /* renamed from: jlz  reason: default package */
 /* loaded from: classes2.dex */

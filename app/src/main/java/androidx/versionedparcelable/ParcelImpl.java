@@ -3,6 +3,10 @@ package androidx.versionedparcelable;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import defpackage.akr;
+import defpackage.aks;
+import defpackage.akt;
+
 /* loaded from: classes.dex */
 public class ParcelImpl implements Parcelable {
     public static final Parcelable.Creator CREATOR = new akr(0);

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.ParcelFileDescriptor;
+
 import com.bumptech.glide.load.data.ParcelFileDescriptorRewinder$InternalRewinder;
 
 /* renamed from: baq  reason: default package */

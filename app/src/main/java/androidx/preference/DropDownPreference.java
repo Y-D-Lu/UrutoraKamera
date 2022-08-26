@@ -7,7 +7,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.afx;
+import defpackage.ahm;
 
 /* loaded from: classes.dex */
 public class DropDownPreference extends ListPreference {

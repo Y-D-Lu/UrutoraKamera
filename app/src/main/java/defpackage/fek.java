@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.preference.PreferenceManager;
+
 import com.google.android.apps.camera.legacy.lightcycle.storage.LocalSessionStorage;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.File;
 
 /* renamed from: fek  reason: default package */

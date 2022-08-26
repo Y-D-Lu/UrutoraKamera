@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.ConditionVariable;
 import android.os.SystemClock;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.RejectedExecutionException;
@@ -14,7 +16,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: eig  reason: default package */
 /* loaded from: classes2.dex */

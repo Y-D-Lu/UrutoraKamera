@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CameraManager;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: dkj  reason: default package */

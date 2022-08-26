@@ -4,8 +4,10 @@ import android.hardware.camera2.CaptureResult;
 import android.location.Location;
 import android.os.Build;
 import android.util.Log;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.TimeZone;

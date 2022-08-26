@@ -3,6 +3,7 @@ package defpackage;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: mgd  reason: default package */

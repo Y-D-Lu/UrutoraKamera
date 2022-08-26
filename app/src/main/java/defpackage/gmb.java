@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CaptureResult;
+
 import java.util.Arrays;
 import java.util.Set;
 

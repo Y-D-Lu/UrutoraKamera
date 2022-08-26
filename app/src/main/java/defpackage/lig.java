@@ -3,6 +3,7 @@ package defpackage;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.util.Size;
+
 import java.io.Serializable;
 import java.util.Arrays;
 

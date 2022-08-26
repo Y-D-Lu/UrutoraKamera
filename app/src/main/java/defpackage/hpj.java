@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.Executor;

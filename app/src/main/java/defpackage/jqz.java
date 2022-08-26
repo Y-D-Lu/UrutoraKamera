@@ -6,11 +6,14 @@ import android.graphics.drawable.Drawable;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.zoomui.ZoomUi;
 import com.hdrindicator.DisplayHelper;
-import java.util.concurrent.atomic.AtomicBoolean;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: jqz  reason: default package */
 /* loaded from: classes2.dex */

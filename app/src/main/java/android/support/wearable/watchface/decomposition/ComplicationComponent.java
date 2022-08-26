@@ -2,8 +2,6 @@ package android.support.wearable.watchface.decomposition;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.wearable.watchface.decomposition.BaseComponent;
-import android.support.wearable.watchface.decomposition.BaseDrawnComponent;
 
 /* loaded from: classes.dex */
 public class ComplicationComponent extends BaseDrawnComponent implements Parcelable {

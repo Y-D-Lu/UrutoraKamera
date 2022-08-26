@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.evcomp.EvCompView;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jpq  reason: default package */

@@ -16,9 +16,12 @@ import android.graphics.RectF;
 import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import android.os.Looper;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.Objects;
+
 import java.util.BitSet;
+
+import j$.util.Objects;
 
 /* renamed from: obu  reason: default package */
 /* loaded from: classes2.dex */

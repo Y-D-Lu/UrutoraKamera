@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.CheckBox;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: mq  reason: default package */

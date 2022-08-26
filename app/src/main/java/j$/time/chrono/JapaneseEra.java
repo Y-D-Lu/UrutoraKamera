@@ -1,19 +1,19 @@
 package j$.time.chrono;
 
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+
 import j$.time.DateTimeException;
 import j$.time.LocalDate;
-import j$.time.chrono.Era;
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.Temporal;
 import j$.time.temporal.TemporalAccessor;
 import j$.time.temporal.TemporalField;
 import j$.time.temporal.TemporalQuery;
 import j$.time.temporal.ValueRange;
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
 
 /* loaded from: classes2.dex */
 public final class JapaneseEra implements Era, Serializable {

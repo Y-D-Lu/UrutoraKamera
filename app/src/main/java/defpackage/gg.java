@@ -2,6 +2,7 @@ package defpackage;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
 import java.util.Collections;
 
 /* renamed from: gg  reason: default package */

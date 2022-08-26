@@ -3,9 +3,12 @@ package defpackage;
 import android.content.res.Resources;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.MeteringRectangle;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.concurrent.ScheduledExecutorService;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: esb  reason: default package */
 /* loaded from: classes.dex */

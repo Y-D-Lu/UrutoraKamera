@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.ui.gridlines.GridLinesUi;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jps  reason: default package */

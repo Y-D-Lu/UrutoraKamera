@@ -2,7 +2,9 @@ package defpackage;
 
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionLayout;
+
 import java.util.ArrayList;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;

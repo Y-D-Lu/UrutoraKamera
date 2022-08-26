@@ -3,10 +3,12 @@ package defpackage;
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.os.Handler;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButtonProgressOverlay;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 

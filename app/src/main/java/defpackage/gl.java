@@ -15,11 +15,13 @@ import android.view.ViewParent;
 import android.view.WindowInsets;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.WeakHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: gl  reason: default package */
 /* loaded from: classes.dex */

@@ -3,8 +3,10 @@ package defpackage;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.EdgeEffect;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;

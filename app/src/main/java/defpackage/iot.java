@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.ViewGroup;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: iot  reason: default package */

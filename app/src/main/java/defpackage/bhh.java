@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+
 import java.security.MessageDigest;
 
 /* renamed from: bhh  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* renamed from: bqa  reason: default package */

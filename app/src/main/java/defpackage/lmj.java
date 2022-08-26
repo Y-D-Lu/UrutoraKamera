@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.util.SparseArray;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.util.Arrays;
 
 /* renamed from: lmj  reason: default package */

@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.widget.TextView;
+
 import com.google.android.apps.camera.legacy.lightcycle.ui.PhotoSphereMessageOverlay;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fes  reason: default package */

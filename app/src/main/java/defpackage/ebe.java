@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.googlex.gcam.AeResults;
 import com.google.googlex.gcam.BurstSpec;
 import com.google.googlex.gcam.FrameMetadata;

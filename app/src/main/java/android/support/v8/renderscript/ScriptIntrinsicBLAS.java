@@ -1,6 +1,7 @@
 package android.support.v8.renderscript;
 
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.google.android.apps.camera.rewind.RewindThumbnailScrollView;
 
 /* renamed from: hmv  reason: default package */

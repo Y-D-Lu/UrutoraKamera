@@ -1,13 +1,5 @@
 package j$.time.zone;
 
-import j$.lang.DesugarMath$$ExternalSyntheticBackport2;
-import j$.time.Clock;
-import j$.time.Instant;
-import j$.time.LocalDate;
-import j$.time.LocalDateTime;
-import j$.time.ZoneOffset;
-import j$.util.Objects;
-import j$.util.concurrent.ConcurrentHashMap;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.InvalidObjectException;
@@ -19,6 +11,15 @@ import java.util.Collections;
 import java.util.List;
 import java.util.TimeZone;
 import java.util.concurrent.ConcurrentMap;
+
+import j$.lang.DesugarMath$$ExternalSyntheticBackport2;
+import j$.time.Clock;
+import j$.time.Instant;
+import j$.time.LocalDate;
+import j$.time.LocalDateTime;
+import j$.time.ZoneOffset;
+import j$.util.Objects;
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: classes2.dex */
 public final class ZoneRules implements Serializable {

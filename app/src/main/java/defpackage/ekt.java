@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.opengl.EGLContext;
+
 import com.google.android.libraries.vision.opengl.Texture;
 
 /* renamed from: ekt  reason: default package */

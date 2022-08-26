@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.IntentFilter;
 import android.widget.ProgressBar;
+
 import com.google.android.gms.common.api.GoogleApiActivity;
 
 /* JADX INFO: Access modifiers changed from: package-private */

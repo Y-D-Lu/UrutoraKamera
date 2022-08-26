@@ -1,10 +1,10 @@
 package defpackage;
 
+import java.util.Collection;
+import java.util.Map;
+
 import j$.util.Iterator;
 import j$.util.function.Consumer;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Map;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: oku  reason: default package */

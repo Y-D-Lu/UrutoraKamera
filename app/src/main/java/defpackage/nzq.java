@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.material.internal.NavigationMenuItemView;
 
 /* renamed from: nzq  reason: default package */

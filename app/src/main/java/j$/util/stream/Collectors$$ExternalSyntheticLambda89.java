@@ -1,7 +1,8 @@
 package j$.util.stream;
 
-import j$.util.function.Supplier;
 import java.util.HashSet;
+
+import j$.util.function.Supplier;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class Collectors$$ExternalSyntheticLambda89 implements Supplier {

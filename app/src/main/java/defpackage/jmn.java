@@ -14,12 +14,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: jmn  reason: default package */

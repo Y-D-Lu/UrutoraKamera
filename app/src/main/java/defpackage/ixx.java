@@ -6,9 +6,11 @@ import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.gridlines.GridLinesUi;
 import com.google.android.apps.camera.ui.wirers.PreviewOverlay;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ixx  reason: default package */

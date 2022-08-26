@@ -1,10 +1,11 @@
 package j$.util;
 
+import java.util.Comparator;
+
 import j$.util.function.Consumer;
 import j$.util.function.DoubleConsumer;
 import j$.util.function.IntConsumer;
 import j$.util.function.LongConsumer;
-import java.util.Comparator;
 
 /* loaded from: classes2.dex */
 public interface Spliterator {

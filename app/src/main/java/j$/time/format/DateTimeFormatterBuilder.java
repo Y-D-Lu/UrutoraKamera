@@ -1,32 +1,7 @@
 package j$.time.format;
 
 import com.google.android.apps.camera.bottombar.R;
-import j$.lang.DesugarMath$$ExternalSyntheticBackport2;
-import j$.nio.file.attribute.FileTime$$ExternalSyntheticBackport0;
-import j$.time.DateTimeException;
-import j$.time.Instant;
-import j$.time.LocalDate;
-import j$.time.LocalDate$$ExternalSyntheticBackport0;
-import j$.time.LocalDateTime;
-import j$.time.LocalTime;
-import j$.time.ZoneId;
-import j$.time.ZoneId$$ExternalSyntheticBackport0;
-import j$.time.ZoneOffset;
-import j$.time.chrono.ChronoLocalDate;
-import j$.time.chrono.Chronology;
-import j$.time.chrono.IsoChronology;
-import j$.time.format.DateTimeTextProvider;
-import j$.time.temporal.ChronoField;
-import j$.time.temporal.IsoFields;
-import j$.time.temporal.JulianFields;
-import j$.time.temporal.TemporalAccessor;
-import j$.time.temporal.TemporalField;
-import j$.time.temporal.TemporalQueries;
-import j$.time.temporal.TemporalQuery;
-import j$.time.temporal.ValueRange;
-import j$.time.temporal.WeekFields;
-import j$.util.Objects;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.lang.ref.SoftReference;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -43,6 +18,32 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TimeZone;
 import java.util.concurrent.ConcurrentMap;
+
+import j$.lang.DesugarMath$$ExternalSyntheticBackport2;
+import j$.nio.file.attribute.FileTime$$ExternalSyntheticBackport0;
+import j$.time.DateTimeException;
+import j$.time.Instant;
+import j$.time.LocalDate;
+import j$.time.LocalDate$$ExternalSyntheticBackport0;
+import j$.time.LocalDateTime;
+import j$.time.LocalTime;
+import j$.time.ZoneId;
+import j$.time.ZoneId$$ExternalSyntheticBackport0;
+import j$.time.ZoneOffset;
+import j$.time.chrono.ChronoLocalDate;
+import j$.time.chrono.Chronology;
+import j$.time.chrono.IsoChronology;
+import j$.time.temporal.ChronoField;
+import j$.time.temporal.IsoFields;
+import j$.time.temporal.JulianFields;
+import j$.time.temporal.TemporalAccessor;
+import j$.time.temporal.TemporalField;
+import j$.time.temporal.TemporalQueries;
+import j$.time.temporal.TemporalQuery;
+import j$.time.temporal.ValueRange;
+import j$.time.temporal.WeekFields;
+import j$.util.Objects;
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: classes2.dex */
 public final class DateTimeFormatterBuilder {

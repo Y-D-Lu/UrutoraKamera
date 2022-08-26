@@ -8,9 +8,11 @@ import android.os.Handler;
 import android.os.SystemClock;
 import android.util.Pair;
 import android.view.Surface;
+
 import com.google.android.apps.camera.jni.eisutil.FrameUtilNative;
 import com.google.android.libraries.oliveoil.gl.EGLImage;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashSet;

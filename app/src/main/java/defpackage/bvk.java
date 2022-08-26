@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewStub;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.debugui.DebugCanvasView;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
@@ -18,10 +19,10 @@ import com.google.android.apps.camera.ui.views.CaptureAnimationOverlay;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
 import com.google.android.apps.camera.ui.wirers.PreviewOverlay;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: bvk  reason: default package */
 /* loaded from: classes.dex */

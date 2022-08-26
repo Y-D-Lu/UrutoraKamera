@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.drawable.Drawable;
+
 import androidx.cardview.widget.CardView;
 
 /* renamed from: wp  reason: default package */

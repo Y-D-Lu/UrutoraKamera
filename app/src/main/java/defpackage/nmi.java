@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.net.Uri;
+
 import java.util.regex.Pattern;
 
 /* renamed from: nmi  reason: default package */

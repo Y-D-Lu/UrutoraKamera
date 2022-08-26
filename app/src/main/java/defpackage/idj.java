@@ -1,8 +1,11 @@
 package defpackage;
 
 import android.widget.Toast;
+
 import androidx.preference.Preference;
+
 import com.google.android.apps.camera.ui.preference.MaterialManagedSwitchPreference;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: idj  reason: default package */

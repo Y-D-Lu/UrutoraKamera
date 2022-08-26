@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.Bundle;
+
 import androidx.preference.ListPreference;
 
 /* renamed from: agf  reason: default package */

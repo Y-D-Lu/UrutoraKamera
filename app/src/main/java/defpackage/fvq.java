@@ -5,9 +5,11 @@ import android.hardware.camera2.CaptureResult;
 import android.media.MediaFormat;
 import android.os.Handler;
 import android.os.HandlerThread;
+
 import com.Helper;
 import com.google.android.apps.camera.bottombar.R;
 import com.google.googlex.gcam.BurstSpec;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;

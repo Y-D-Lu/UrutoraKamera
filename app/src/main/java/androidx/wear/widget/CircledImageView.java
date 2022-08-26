@@ -11,7 +11,14 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.alx;
+import defpackage.alz;
+import defpackage.ama;
+import defpackage.amb;
+import defpackage.amd;
 
 /* loaded from: classes.dex */
 public class CircledImageView extends View {

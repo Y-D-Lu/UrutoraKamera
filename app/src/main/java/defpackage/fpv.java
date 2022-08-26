@@ -2,7 +2,9 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.media.MediaFormat;
+
 import com.google.android.libraries.microvideo.xmp.nativemotionphotos.NativeMotionPhotoProcessor;
+
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;

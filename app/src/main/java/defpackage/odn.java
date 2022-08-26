@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: odn  reason: default package */

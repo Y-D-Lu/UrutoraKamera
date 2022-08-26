@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.mars.MarsSwitch;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jdj  reason: default package */

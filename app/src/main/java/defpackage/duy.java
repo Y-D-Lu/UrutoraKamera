@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.apps.camera.focusindicator.FocusIndicatorRingView;
 
 /* renamed from: duy  reason: default package */

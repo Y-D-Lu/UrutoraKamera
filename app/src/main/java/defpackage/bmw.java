@@ -2,8 +2,10 @@ package defpackage;
 
 import android.content.Context;
 import android.hardware.camera2.CaptureRequest;
+
 import com.google.android.apps.camera.autotimer.analysis.jni.Curator;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 

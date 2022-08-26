@@ -2,6 +2,9 @@ package androidx.window.core;
 
 import java.math.BigInteger;
 
+import defpackage.qmj;
+import defpackage.qnp;
+
 /* loaded from: classes.dex */
 final class Version$bigInteger$2 extends qnp implements qmj {
     final /* synthetic */ Version this$0;

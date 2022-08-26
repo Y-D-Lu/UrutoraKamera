@@ -9,6 +9,7 @@ import android.content.pm.ResolveInfo;
 import android.content.res.ColorStateList;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
+
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -16,12 +17,12 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
+
 import com.google.android.apps.camera.legacy.app.settings.CameraMaterialSettingsActivity;
 import com.google.android.apps.camera.ui.preference.MaterialKeyListenerPreference;
 import com.google.android.apps.camera.ui.preference.MaterialManagedSwitchPreference;
 import com.google.android.apps.camera.ui.preference.MaterialStorageStatusPreference;
-import j$.util.Collection;
-import j$.util.function.Function;
+
 import java.io.File;
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -30,7 +31,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ScheduledExecutorService;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Collection;
+import j$.util.function.Function;
 
 /* renamed from: fbn  reason: default package */
 /* loaded from: classes.dex */

@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.Context;
-import java.util.LinkedHashMap;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.LinkedHashMap;
 
 /* renamed from: ctn  reason: default package */
 /* loaded from: classes.dex */

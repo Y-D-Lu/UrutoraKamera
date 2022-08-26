@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.GestureDetector;
 import android.view.View;
+
 import com.google.android.apps.camera.bottombar.BottomBar;
 
 /* renamed from: ibv  reason: default package */

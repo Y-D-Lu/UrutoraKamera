@@ -8,6 +8,7 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.widget.ListView;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: hm  reason: default package */

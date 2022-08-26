@@ -1,7 +1,7 @@
 package defpackage;
 
 import android.net.Uri;
-import j$.util.concurrent.ConcurrentHashMap;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,6 +9,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: nit  reason: default package */
 /* loaded from: classes2.dex */

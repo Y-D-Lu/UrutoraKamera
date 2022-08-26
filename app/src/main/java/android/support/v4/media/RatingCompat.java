@@ -2,6 +2,7 @@ package android.support.v4.media;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.hdrindicator.DisplayHelper;
 
 /* loaded from: classes.dex */

@@ -2,8 +2,10 @@ package defpackage;
 
 import android.util.SparseArray;
 import android.view.View;
+
 import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: gts  reason: default package */

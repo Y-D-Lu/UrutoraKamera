@@ -1,7 +1,7 @@
 package defpackage;
 
 import android.util.Log;
-import j$.nio.charset.StandardCharsets;
+
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -16,6 +16,8 @@ import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Iterator;
 import java.util.List;
+
+import j$.nio.charset.StandardCharsets;
 
 /* renamed from: mde  reason: default package */
 /* loaded from: classes2.dex */

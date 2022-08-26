@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.libraries.camera.jni.graphics.HardwarePixels;
+
 import java.nio.ByteBuffer;
 
 /* renamed from: lxj  reason: default package */

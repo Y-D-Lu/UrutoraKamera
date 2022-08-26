@@ -8,6 +8,7 @@ import android.os.Trace;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: akf  reason: default package */

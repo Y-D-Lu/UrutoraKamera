@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import java.security.MessageDigest;
 
 /* renamed from: bgp  reason: default package */

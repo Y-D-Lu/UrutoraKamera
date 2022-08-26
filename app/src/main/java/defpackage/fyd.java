@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.bottombar.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */

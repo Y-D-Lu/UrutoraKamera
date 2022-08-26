@@ -4,11 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+
 import com.google.android.gms.feedback.ErrorReport;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.libraries.social.licenses.LicenseMenuActivity;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* renamed from: bre  reason: default package */
 /* loaded from: classes.dex */

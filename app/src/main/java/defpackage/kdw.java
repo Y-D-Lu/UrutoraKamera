@@ -1,7 +1,5 @@
 package defpackage;
 
-import java.lang.Thread;
-
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: kdw  reason: default package */
 /* loaded from: classes2.dex */

@@ -16,10 +16,13 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.PathInterpolator;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.hdrindicator.DisplayHelper;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
 
 /* renamed from: nzf  reason: default package */
 /* loaded from: classes2.dex */

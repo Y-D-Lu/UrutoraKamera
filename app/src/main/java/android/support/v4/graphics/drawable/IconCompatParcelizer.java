@@ -1,5 +1,7 @@
 package android.support.v4.graphics.drawable;
 
+import defpackage.aks;
+
 /* loaded from: classes.dex */
 public final class IconCompatParcelizer extends androidx.core.graphics.drawable.IconCompatParcelizer {
     public static IconCompat read(aks aksVar) {

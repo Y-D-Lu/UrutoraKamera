@@ -4,6 +4,7 @@ import android.graphics.PointF;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
 import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

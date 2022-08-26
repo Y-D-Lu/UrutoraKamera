@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.opengl.Matrix;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Vector;
 
 /* renamed from: fdr  reason: default package */

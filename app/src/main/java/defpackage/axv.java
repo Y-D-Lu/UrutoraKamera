@@ -14,8 +14,10 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import android.util.Log;
+
 import com.bumptech.glide.GeneratedAppGlideModule;
 import com.google.android.apps.camera.filmstrip.GlideConfiguration;
+
 import java.io.File;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;

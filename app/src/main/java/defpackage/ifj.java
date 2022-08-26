@@ -7,9 +7,12 @@ import android.support.constraint.ConstraintLayout;
 import android.util.Size;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
-import j$.time.Duration;
+
 import org.codeaurora.snapcam.R;
+
+import j$.time.Duration;
 
 /* renamed from: ifj  reason: default package */
 /* loaded from: classes.dex */

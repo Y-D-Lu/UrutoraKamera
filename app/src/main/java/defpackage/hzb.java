@@ -2,7 +2,9 @@ package defpackage;
 
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.google.android.apps.camera.smarts.SmartsChipView;
+
 import java.util.Date;
 
 /* renamed from: hzb  reason: default package */

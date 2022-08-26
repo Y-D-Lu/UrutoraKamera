@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.googlex.gcam.StaticMetadata;
 import com.google.googlex.gcam.creativecamera.seedark.SeeDarkNativeImpl;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;

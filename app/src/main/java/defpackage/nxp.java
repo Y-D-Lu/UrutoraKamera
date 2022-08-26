@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: nxp  reason: default package */

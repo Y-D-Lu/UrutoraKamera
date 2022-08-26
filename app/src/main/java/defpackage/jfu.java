@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import com.google.android.apps.camera.ui.modeswitcher.ModeSwitcher;
 
 /* renamed from: jfu  reason: default package */

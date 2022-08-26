@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.Surface;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: ehj  reason: default package */

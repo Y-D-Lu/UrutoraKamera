@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CameraManager;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;

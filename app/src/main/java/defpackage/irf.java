@@ -2,10 +2,12 @@ package defpackage;
 
 import android.opengl.GLES30;
 import android.opengl.GLSurfaceView;
+
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
+
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 

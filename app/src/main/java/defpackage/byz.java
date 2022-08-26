@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.autotimer.analysis.jni.BaseCurator;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: byz  reason: default package */

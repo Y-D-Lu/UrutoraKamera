@@ -1,13 +1,16 @@
 package defpackage;
 
 import android.database.sqlite.SQLiteException;
+
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase;
-import j$.util.Collection;
-import j$.util.DesugarArrays;
-import j$.util.function.Consumer;
+
 import java.util.Arrays;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
+
+import j$.util.Collection;
+import j$.util.DesugarArrays;
+import j$.util.function.Consumer;
 
 /* renamed from: cye  reason: default package */
 /* loaded from: classes.dex */

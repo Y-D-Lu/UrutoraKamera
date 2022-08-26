@@ -7,9 +7,11 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Collections;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: fyx  reason: default package */
 /* loaded from: classes.dex */

@@ -7,7 +7,9 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.google.vr.ndk.base.DaydreamApi;
+
 import java.util.ArrayList;
 
 /* renamed from: pwr  reason: default package */

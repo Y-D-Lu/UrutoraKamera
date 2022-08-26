@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+
 import java.io.File;
 
 /* renamed from: bin  reason: default package */

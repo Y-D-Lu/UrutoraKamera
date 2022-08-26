@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.smarts.SmartsChipView;
 import com.google.android.apps.camera.smarts.SmartsUiGleamingView;
+
 import java.util.Map;
 
 /* renamed from: hzz  reason: default package */

@@ -4,9 +4,11 @@ import android.graphics.Bitmap;
 import android.hardware.HardwareBuffer;
 import android.util.Size;
 import android.view.Surface;
+
 import com.google.android.libraries.camera.jni.surface.SurfaceNative;
 import com.google.android.libraries.oliveoil.gl.EGLImage;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;

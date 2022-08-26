@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.util.Pair;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.coach.CameraCoachHudView;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.atomic.AtomicBoolean;
 

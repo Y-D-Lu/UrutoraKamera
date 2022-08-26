@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: iba  reason: default package */

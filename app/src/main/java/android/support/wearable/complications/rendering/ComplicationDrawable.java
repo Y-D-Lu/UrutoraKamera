@@ -21,9 +21,11 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.Xml;
-import j$.util.Objects;
+
 import org.codeaurora.snapcam.R;
 import org.xmlpull.v1.XmlPullParser;
+
+import j$.util.Objects;
 
 /* loaded from: classes.dex */
 public class ComplicationDrawable extends Drawable implements Parcelable {

@@ -8,6 +8,7 @@ import android.graphics.drawable.InsetDrawable;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.Window;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: nyj  reason: default package */

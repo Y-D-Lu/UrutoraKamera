@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jqc  reason: default package */

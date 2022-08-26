@@ -5,14 +5,18 @@ import android.graphics.Rect;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.MotionEvent;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.hdrindicator.DisplayHelper;
-import j$.util.Optional;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
-import org.codeaurora.snapcam.R;
+
+import j$.util.Optional;
 
 /* renamed from: fnj  reason: default package */
 /* loaded from: classes.dex */

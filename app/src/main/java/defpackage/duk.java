@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Canvas;
 import android.graphics.drawable.GradientDrawable;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: duk  reason: default package */

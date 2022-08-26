@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import java.io.ByteArrayOutputStream;
 
 /* renamed from: cqa  reason: default package */

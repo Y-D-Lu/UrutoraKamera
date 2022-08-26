@@ -3,7 +3,7 @@ package defpackage;
 import android.database.Cursor;
 import android.os.Looper;
 import android.util.Log;
-import j$.util.DesugarCollections;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -12,6 +12,8 @@ import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import j$.util.DesugarCollections;
 
 /* renamed from: aii  reason: default package */
 /* loaded from: classes.dex */

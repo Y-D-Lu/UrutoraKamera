@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.os.Handler;
+
 import java.util.Iterator;
 
 /* renamed from: kgd  reason: default package */

@@ -4,6 +4,7 @@ import android.content.ContentProviderOperation;
 import android.hardware.camera2.params.OutputConfiguration;
 import android.location.Location;
 import android.media.MediaCodec;
+
 import java.io.FileDescriptor;
 import java.io.Serializable;
 import java.util.List;

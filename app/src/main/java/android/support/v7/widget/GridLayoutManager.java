@@ -8,6 +8,8 @@ import android.util.SparseIntArray;
 import android.view.View;
 import android.view.ViewGroup;
 
+import defpackage.kkm;
+
 /* loaded from: classes.dex */
 public class GridLayoutManager extends LinearLayoutManager {
     boolean a;

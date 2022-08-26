@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.content.Context;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: iud  reason: default package */
 /* loaded from: classes2.dex */

@@ -1,13 +1,16 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.common.io.ByteStreams;
 import com.google.googlex.gcam.creativecamera.portraitmode.PortraitRelightingProcessorInterface;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.MessageDigest;
 import java.util.concurrent.Executor;
 import java.util.concurrent.locks.ReentrantLock;
+
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;

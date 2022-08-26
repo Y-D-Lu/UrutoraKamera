@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.app.NotificationManager;
+
 import com.google.android.apps.camera.backup.CameraBackupAgent;
 import com.google.android.apps.camera.brella.examplestore.beholder.BeholderExampleStoreDataTtlService;
 import com.google.android.apps.camera.brella.examplestore.beholder.BeholderExampleStoreService;
@@ -18,6 +19,7 @@ import com.google.android.apps.camera.sideline.SidelineInstallerService;
 import com.google.android.apps.camera.sideline.SidelineJobService;
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
 import com.google.android.apps.camera.ui.preference.MaterialManagedSwitchPreference;
+
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;

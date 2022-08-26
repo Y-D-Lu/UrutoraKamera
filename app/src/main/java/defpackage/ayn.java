@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /* renamed from: ayn  reason: default package */

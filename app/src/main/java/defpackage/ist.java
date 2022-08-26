@@ -6,10 +6,13 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.view.ViewGroup;
-import j$.time.Duration;
+
+import org.codeaurora.snapcam.R;
+
 import java.lang.ref.WeakReference;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
+
+import j$.time.Duration;
 
 /* renamed from: ist  reason: default package */
 /* loaded from: classes2.dex */

@@ -6,6 +6,7 @@ import android.graphics.drawable.TransitionDrawable;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: ief  reason: default package */

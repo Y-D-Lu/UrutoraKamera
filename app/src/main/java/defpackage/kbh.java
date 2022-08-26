@@ -1,7 +1,8 @@
 package defpackage;
 
-import j$.util.function.Supplier;
 import org.codeaurora.snapcam.R;
+
+import j$.util.function.Supplier;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: kbh  reason: default package */

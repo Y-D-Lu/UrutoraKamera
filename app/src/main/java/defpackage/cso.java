@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.content.Intent;
+
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthUtils;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 

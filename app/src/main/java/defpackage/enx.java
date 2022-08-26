@@ -5,7 +5,9 @@ import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
 import android.content.ComponentName;
 import android.os.PersistableBundle;
+
 import com.google.android.apps.camera.keepalive.ProcessGcService;
+
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: enx  reason: default package */

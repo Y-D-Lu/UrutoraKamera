@@ -4,8 +4,6 @@ import j$.util.Spliterator;
 import j$.util.function.Consumer;
 import j$.util.function.Predicate;
 import j$.util.function.Supplier;
-import j$.util.stream.MatchOps;
-import j$.util.stream.Sink;
 
 /* loaded from: classes2.dex */
 abstract class MatchOps {

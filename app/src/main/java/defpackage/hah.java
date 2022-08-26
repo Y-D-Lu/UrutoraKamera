@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.concurrent.Executor;

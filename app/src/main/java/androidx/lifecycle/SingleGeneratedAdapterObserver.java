@@ -1,5 +1,10 @@
 package androidx.lifecycle;
 
+import defpackage.ady;
+import defpackage.adz;
+import defpackage.aec;
+import defpackage.aee;
+
 /* loaded from: classes.dex */
 public class SingleGeneratedAdapterObserver implements aec {
     private final ady a;

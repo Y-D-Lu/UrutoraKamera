@@ -10,6 +10,7 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.SeekBar;
+
 import overwhelmer.Menu;
 import overwhelmer.simplified_lol;
 

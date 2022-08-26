@@ -4,6 +4,7 @@ import android.app.AppGlobals;
 import android.app.Application;
 import android.content.Context;
 import android.preference.PreferenceManager;
+
 import com.hdrindicator.DisplayHelper;
 
 /* loaded from: classes2.dex */

@@ -1,9 +1,10 @@
 package j$.util.stream;
 
+import java.util.List;
+
 import j$.util.function.BiFunction;
 import j$.util.function.BinaryOperator;
 import j$.util.function.Function;
-import java.util.List;
 
 /* loaded from: classes2.dex */
 public final /* synthetic */ class Collectors$$ExternalSyntheticLambda37 implements BinaryOperator {

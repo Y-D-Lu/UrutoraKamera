@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.media.CamcorderProfile;
+
 import com.Helper;
 
 /* renamed from: les  reason: default package */

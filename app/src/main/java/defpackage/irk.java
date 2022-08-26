@@ -1,13 +1,16 @@
 package defpackage;
 
 import android.view.animation.DecelerateInterpolator;
+
 import com.Helper;
 import com.google.android.apps.camera.ui.breadcrumbs.BreadcrumbsView;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
+
+import java.util.concurrent.ScheduledExecutorService;
+
 import j$.util.function.Consumer;
 import j$.util.function.Supplier;
-import java.util.concurrent.ScheduledExecutorService;
 
 /* renamed from: irk  reason: default package */
 /* loaded from: classes3.dex */

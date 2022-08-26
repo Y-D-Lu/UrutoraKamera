@@ -6,7 +6,9 @@ import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CaptureResult;
 import android.util.ArrayMap;
 import android.util.SizeF;
+
 import com.google.android.libraries.oliveoil.gl.EGLImage;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.List;

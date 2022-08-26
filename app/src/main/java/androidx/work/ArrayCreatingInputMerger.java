@@ -6,6 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import defpackage.amq;
+import defpackage.amt;
+
 /* loaded from: classes.dex */
 public final class ArrayCreatingInputMerger extends amt {
     private static final Object c(Object obj, Object obj2) {

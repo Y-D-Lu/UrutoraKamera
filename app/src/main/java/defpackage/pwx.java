@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.google.vr.ndk.base.DaydreamApi;
 
 /* renamed from: pwx  reason: default package */

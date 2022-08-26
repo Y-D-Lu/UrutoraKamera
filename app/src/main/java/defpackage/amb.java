@@ -4,6 +4,7 @@ import android.graphics.Paint;
 import android.graphics.RadialGradient;
 import android.graphics.RectF;
 import android.graphics.Shader;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: amb  reason: default package */

@@ -13,13 +13,13 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.RandomAccessFile;
 import java.io.StringWriter;
-import java.lang.Thread;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

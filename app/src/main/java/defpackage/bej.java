@@ -3,6 +3,7 @@ package defpackage;
 import android.content.res.AssetFileDescriptor;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
+
 import java.io.InputStream;
 
 /* renamed from: bej  reason: default package */

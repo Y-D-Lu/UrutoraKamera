@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 /* renamed from: nwy  reason: default package */

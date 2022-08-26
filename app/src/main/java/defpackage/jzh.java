@@ -6,7 +6,9 @@ import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jzh  reason: default package */

@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.ValueAnimator;
 import android.graphics.drawable.Drawable;
+
 import com.google.android.material.appbar.AppBarLayout;
 
 /* renamed from: nwp  reason: default package */

@@ -1,7 +1,8 @@
 package defpackage;
 
-import j$.util.Optional;
 import java.nio.file.Path;
+
+import j$.util.Optional;
 
 /* renamed from: ohc  reason: default package */
 /* loaded from: classes2.dex */

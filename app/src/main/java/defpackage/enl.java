@@ -10,13 +10,16 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.hardware.camera2.CaptureRequest;
 import android.net.Uri;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: enl  reason: default package */
 /* loaded from: classes.dex */

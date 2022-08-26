@@ -4,11 +4,14 @@ import android.graphics.Rect;
 import android.util.DisplayMetrics;
 import android.util.Range;
 import android.view.MotionEvent;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.Optional;
+
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.util.Optional;
 
 /* renamed from: fpi  reason: default package */
 /* loaded from: classes.dex */

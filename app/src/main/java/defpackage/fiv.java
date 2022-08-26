@@ -2,6 +2,7 @@ package defpackage;
 
 import android.location.Location;
 import android.location.LocationManager;
+
 import com.hdrindicator.DisplayHelper;
 
 /* JADX INFO: Access modifiers changed from: package-private */

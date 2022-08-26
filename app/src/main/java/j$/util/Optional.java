@@ -1,8 +1,9 @@
 package j$.util;
 
+import java.util.NoSuchElementException;
+
 import j$.util.function.Consumer;
 import j$.util.function.Function;
-import java.util.NoSuchElementException;
 
 /* loaded from: classes2.dex */
 public final class Optional {

@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.wirers.PreviewOverlay;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jqy  reason: default package */

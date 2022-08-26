@@ -5,9 +5,11 @@ import android.location.Location;
 import android.net.Uri;
 import android.os.SystemClock;
 import android.util.Log;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.location.LocationRequest;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.concurrent.Executor;
 
 /* JADX INFO: Access modifiers changed from: package-private */

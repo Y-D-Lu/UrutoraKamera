@@ -5,6 +5,7 @@ import android.support.v7.widget.ActionBarContextView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
 import org.codeaurora.snapcam.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */

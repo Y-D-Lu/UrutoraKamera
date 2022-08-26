@@ -1,13 +1,13 @@
 package j$.util.stream;
 
+import java.util.Comparator;
+
 import j$.util.Optional;
 import j$.util.function.Consumer;
 import j$.util.function.Function;
 import j$.util.function.IntFunction;
 import j$.util.function.Predicate;
 import j$.util.function.ToLongFunction;
-import j$.util.stream.Streams;
-import java.util.Comparator;
 
 /* loaded from: classes2.dex */
 public interface Stream extends BaseStream {

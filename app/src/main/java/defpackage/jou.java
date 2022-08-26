@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.View;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 
 /* renamed from: jou  reason: default package */

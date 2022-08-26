@@ -2,7 +2,9 @@ package defpackage;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
 import com.google.android.gms.common.api.Scope;
+
 import java.util.Comparator;
 
 /* renamed from: yc  reason: default package */

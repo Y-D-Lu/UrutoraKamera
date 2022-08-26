@@ -8,14 +8,17 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.DesugarArrays;
-import j$.util.function.Consumer;
+
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
+
+import j$.util.DesugarArrays;
+import j$.util.function.Consumer;
 
 /* renamed from: nvb  reason: default package */
 /* loaded from: classes2.dex */

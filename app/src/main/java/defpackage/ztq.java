@@ -3,7 +3,9 @@ package defpackage;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
+
 import java.io.File;
 
 /* renamed from: ztq  reason: default package */

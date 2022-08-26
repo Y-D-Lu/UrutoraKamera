@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.Context;
 import android.os.Build;
+
 import com.google.android.apps.camera.stats.Instrumentation;
+
 import java.util.Locale;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;

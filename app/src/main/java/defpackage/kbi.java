@@ -10,9 +10,11 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
+
 import com.google.android.apps.camera.zoomui.ZoomKnob;
 import com.google.android.apps.camera.zoomui.ZoomUi;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

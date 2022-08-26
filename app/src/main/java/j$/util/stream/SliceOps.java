@@ -1,13 +1,9 @@
 package j$.util.stream;
 
+import java.util.concurrent.CountedCompleter;
+
 import j$.util.Spliterator;
 import j$.util.function.IntFunction;
-import j$.util.stream.Node;
-import j$.util.stream.ReferencePipeline;
-import j$.util.stream.Sink;
-import j$.util.stream.StreamSpliterators$SliceSpliterator;
-import j$.util.stream.StreamSpliterators$UnorderedSliceSpliterator;
-import java.util.concurrent.CountedCompleter;
 
 /* loaded from: classes2.dex */
 abstract class SliceOps {

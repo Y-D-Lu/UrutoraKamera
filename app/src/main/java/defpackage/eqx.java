@@ -1,10 +1,12 @@
 package defpackage;
 
 import android.graphics.Rect;
+
 import com.google.googlex.gcam.FrameMetadata;
 import com.google.googlex.gcam.YuvWriteView;
 import com.google.googlex.gcam.lasagna.LasagnaCallbacks;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;

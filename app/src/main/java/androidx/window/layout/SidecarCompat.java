@@ -11,13 +11,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
 import androidx.window.core.Version;
-import androidx.window.layout.ExtensionInterfaceCompat;
 import androidx.window.sidecar.SidecarDeviceState;
 import androidx.window.sidecar.SidecarDisplayFeature;
 import androidx.window.sidecar.SidecarInterface;
 import androidx.window.sidecar.SidecarProvider;
 import androidx.window.sidecar.SidecarWindowLayoutInfo;
+
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -27,6 +28,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.WeakHashMap;
 import java.util.concurrent.locks.ReentrantLock;
+
+import defpackage.qkx;
+import defpackage.qnm;
+import defpackage.qno;
 
 /* loaded from: classes.dex */
 public final class SidecarCompat implements ExtensionInterfaceCompat {

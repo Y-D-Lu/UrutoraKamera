@@ -3,7 +3,9 @@ package defpackage;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.ParcelFileDescriptor;
+
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
+
 import java.util.List;
 
 /* renamed from: bhn  reason: default package */

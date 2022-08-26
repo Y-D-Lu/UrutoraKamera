@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.opengl.Matrix;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.nio.FloatBuffer;
 
 /* renamed from: elh  reason: default package */

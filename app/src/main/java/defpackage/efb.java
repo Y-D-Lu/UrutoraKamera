@@ -3,6 +3,7 @@ package defpackage;
 import android.hardware.camera2.CaptureRequest;
 import android.os.Handler;
 import android.os.Looper;
+
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;

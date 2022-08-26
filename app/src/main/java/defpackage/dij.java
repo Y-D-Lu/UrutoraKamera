@@ -2,10 +2,9 @@ package defpackage;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
+
 import com.google.android.apps.camera.debug.shottracker.db.ShotDatabase;
-import j$.time.Clock;
-import j$.time.Duration;
-import j$.time.Instant;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -13,6 +12,10 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
+
+import j$.time.Clock;
+import j$.time.Duration;
+import j$.time.Instant;
 
 /* renamed from: dij  reason: default package */
 /* loaded from: classes.dex */

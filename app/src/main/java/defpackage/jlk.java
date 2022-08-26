@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButtonProgressOverlay;
 
 /* renamed from: jlk  reason: default package */

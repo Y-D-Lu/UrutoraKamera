@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.ValueAnimator;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.zoomui.ZoomUi;
 
 /* renamed from: kai  reason: default package */

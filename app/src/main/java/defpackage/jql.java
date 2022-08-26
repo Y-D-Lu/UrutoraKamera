@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.ViewStub;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jql  reason: default package */

@@ -2,7 +2,9 @@ package defpackage;
 
 import android.content.Context;
 import android.os.Handler;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: izc  reason: default package */

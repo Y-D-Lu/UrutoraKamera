@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+
 import androidx.viewpager2.widget.ViewPager2;
 
 /* renamed from: alt  reason: default package */

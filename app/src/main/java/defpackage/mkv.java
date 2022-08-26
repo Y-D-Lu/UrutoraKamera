@@ -2,8 +2,9 @@ package defpackage;
 
 import android.media.MediaCodec;
 import android.util.Pair;
+
 import com.google.android.libraries.microvideo.gcamuxer.AnnexBToAvcc;
-import j$.nio.charset.StandardCharsets;
+
 import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -12,6 +13,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import j$.nio.charset.StandardCharsets;
 
 /* renamed from: mkv  reason: default package */
 /* loaded from: classes2.dex */

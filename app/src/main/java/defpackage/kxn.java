@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
+
 import com.google.android.gms.wearable.ConnectionConfiguration;
 import com.google.android.gms.wearable.internal.DataItemAssetParcelable;
+
 import java.util.ArrayList;
 
 /* renamed from: kxn  reason: default package */

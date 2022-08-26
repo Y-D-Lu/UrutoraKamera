@@ -1,6 +1,9 @@
 package j$.time.format;
 
 import android.support.v8.renderscript.ScriptIntrinsicBLAS;
+
+import java.util.Locale;
+
 import j$.time.DateTimeException;
 import j$.time.Instant;
 import j$.time.ZoneId;
@@ -16,7 +19,6 @@ import j$.time.temporal.TemporalQueries;
 import j$.time.temporal.TemporalQuery;
 import j$.time.temporal.ValueRange;
 import j$.util.Objects;
-import java.util.Locale;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Intent;
+
 import j$.util.Collection;
 
 /* JADX INFO: Access modifiers changed from: package-private */

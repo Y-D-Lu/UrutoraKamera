@@ -15,11 +15,14 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.HashMap;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: jfs  reason: default package */
 /* loaded from: classes.dex */

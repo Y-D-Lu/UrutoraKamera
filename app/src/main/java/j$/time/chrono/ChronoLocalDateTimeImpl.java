@@ -1,5 +1,11 @@
 package j$.time.chrono;
 
+import java.io.InvalidObjectException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.Serializable;
+
 import j$.lang.DesugarMath$$ExternalSyntheticBackport2;
 import j$.lang.DesugarMath$$ExternalSyntheticBackport3;
 import j$.nio.file.attribute.FileTime$$ExternalSyntheticBackport0;
@@ -8,7 +14,6 @@ import j$.time.Instant;
 import j$.time.LocalTime;
 import j$.time.ZoneId;
 import j$.time.ZoneOffset;
-import j$.time.chrono.ChronoLocalDateTime;
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.ChronoUnit;
 import j$.time.temporal.Temporal;
@@ -18,11 +23,6 @@ import j$.time.temporal.TemporalQuery;
 import j$.time.temporal.TemporalUnit;
 import j$.time.temporal.ValueRange;
 import j$.util.Objects;
-import java.io.InvalidObjectException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
-import java.io.Serializable;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes2.dex */

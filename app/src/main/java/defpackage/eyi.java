@@ -2,7 +2,9 @@ package defpackage;
 
 import android.media.MediaFormat;
 import android.os.HandlerThread;
+
 import com.google.android.apps.camera.logging.InstrumentationCameraEventLogger;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.atomic.AtomicBoolean;
 

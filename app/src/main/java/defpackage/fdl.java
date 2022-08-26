@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.opengl.Matrix;
+
 import com.google.android.apps.lightcycle.panorama.LightCycleNative;
 
 /* JADX INFO: Access modifiers changed from: package-private */

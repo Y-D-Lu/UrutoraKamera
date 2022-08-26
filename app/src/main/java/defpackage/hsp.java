@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.os.Parcelable;
+
 import java.util.Locale;
 import java.util.concurrent.atomic.AtomicInteger;
 

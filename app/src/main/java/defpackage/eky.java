@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.HandlerThread;
 import android.os.Looper;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 /* renamed from: eky  reason: default package */

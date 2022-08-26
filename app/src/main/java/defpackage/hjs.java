@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.drawable.AnimatedVectorDrawable;
+
 import com.google.android.apps.camera.progressoverlay.ProgressOverlay;
 
 /* renamed from: hjs  reason: default package */

@@ -16,7 +16,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import com.google.android.apps.camera.bottombar.R;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: nzn  reason: default package */

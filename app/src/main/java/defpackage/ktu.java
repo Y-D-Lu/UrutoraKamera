@@ -5,7 +5,9 @@ import android.content.IntentFilter;
 import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.wearable.ConnectionConfiguration;
+
 import java.util.ArrayList;
 
 /* renamed from: ktu  reason: default package */

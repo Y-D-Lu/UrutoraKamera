@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
 import android.util.Log;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;

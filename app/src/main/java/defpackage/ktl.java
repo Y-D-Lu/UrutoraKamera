@@ -2,7 +2,9 @@ package defpackage;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.location.LocationRequest;
+
 import java.util.Collections;
 import java.util.List;
 

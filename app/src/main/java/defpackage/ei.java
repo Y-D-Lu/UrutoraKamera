@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.util.TypedValue;
+
 import java.util.WeakHashMap;
 
 /* renamed from: ei  reason: default package */

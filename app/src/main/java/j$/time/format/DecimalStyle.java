@@ -1,7 +1,8 @@
 package j$.time.format;
 
-import j$.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
+
+import j$.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: classes2.dex */
 public final class DecimalStyle {

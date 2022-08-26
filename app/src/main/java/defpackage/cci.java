@@ -1,6 +1,5 @@
 package defpackage;
 
-import j$.util.StringJoiner;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -9,6 +8,8 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import j$.util.StringJoiner;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: cci  reason: default package */

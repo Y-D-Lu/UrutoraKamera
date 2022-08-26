@@ -2,7 +2,9 @@ package defpackage;
 
 import android.os.Handler;
 import android.os.SystemClock;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;

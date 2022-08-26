@@ -1,5 +1,11 @@
 package j$.time;
 
+import java.io.InvalidObjectException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.Serializable;
+
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.ChronoUnit;
 import j$.time.temporal.Temporal;
@@ -12,11 +18,6 @@ import j$.time.temporal.TemporalUnit;
 import j$.time.temporal.UnsupportedTemporalTypeException;
 import j$.time.temporal.ValueRange;
 import j$.util.Objects;
-import java.io.InvalidObjectException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
-import java.io.Serializable;
 
 /* loaded from: classes2.dex */
 public final class OffsetTime implements Temporal, TemporalAdjuster, Comparable, Serializable {

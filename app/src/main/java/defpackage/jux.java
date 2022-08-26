@@ -12,7 +12,6 @@ import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.VideoView;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: jux  reason: default package */
 /* loaded from: classes2.dex */

@@ -2,8 +2,10 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.location.Location;
+
 import com.google.android.libraries.camera.exif.ExifInterface;
 import com.google.googlex.gcam.DebugParams;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;

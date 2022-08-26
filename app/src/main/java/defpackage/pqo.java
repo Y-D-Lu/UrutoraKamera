@@ -2,12 +2,14 @@ package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
+
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
 import sun.misc.Unsafe;
 
 /* renamed from: pqo  reason: default package */

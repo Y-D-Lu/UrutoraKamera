@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.hardware.HardwareBuffer;
+
 import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */

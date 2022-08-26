@@ -2,10 +2,13 @@ package com.Fix;
 
 import android.content.SharedPreferences;
 import android.hardware.camera2.CaptureResult;
+
 import com.Helper;
 import com.google.googlex.gcam.FloatArray9;
 import com.hdrindicator.DisplayHelper;
 import com.juliantsependa.ColorTune;
+
+import defpackage.lzv;
 
 /* loaded from: classes2.dex */
 public class ColorTransform {

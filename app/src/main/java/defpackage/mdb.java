@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.common.io.ByteStreams;
+
 import java.io.InputStream;
 
 /* renamed from: mdb  reason: default package */

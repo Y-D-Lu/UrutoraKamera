@@ -1,7 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
-import java.lang.Thread;
+
 import java.util.Iterator;
 
 /* renamed from: bun  reason: default package */

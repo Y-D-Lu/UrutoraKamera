@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.content.Context;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: egg  reason: default package */
 /* loaded from: classes2.dex */

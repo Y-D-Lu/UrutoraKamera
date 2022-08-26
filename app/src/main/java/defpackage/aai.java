@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.ViewTreeObserver;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 /* renamed from: aai  reason: default package */

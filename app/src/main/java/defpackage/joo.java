@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.animation.ValueAnimator;
+
 import com.google.android.apps.camera.ui.views.FrontLensIndicatorOverlay;
 import com.hdrindicator.DisplayHelper;
 

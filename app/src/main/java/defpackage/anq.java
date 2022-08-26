@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.text.TextUtils;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

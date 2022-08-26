@@ -1,9 +1,10 @@
 package j$.util.stream;
 
+import java.util.Comparator;
+
 import j$.util.Spliterator;
 import j$.util.function.BooleanSupplier;
 import j$.util.function.Supplier;
-import java.util.Comparator;
 
 /* loaded from: classes2.dex */
 abstract class StreamSpliterators$AbstractWrappingSpliterator implements Spliterator {

@@ -7,14 +7,15 @@ import android.animation.PropertyValuesHolder;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
+
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
 import com.hdrindicator.DisplayHelper;
+
 import j$.util.Collection;
 import j$.util.function.Consumer;
 import j$.util.function.Function;
 import j$.util.stream.Collectors;
-import java.util.Collection;
 
 /* renamed from: gtz  reason: default package */
 /* loaded from: classes.dex */

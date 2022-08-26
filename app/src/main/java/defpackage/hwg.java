@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CameraAccessException;
 import android.os.SystemClock;
+
 import java.util.concurrent.TimeoutException;
 
 /* renamed from: hwg  reason: default package */

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.graphics.drawable.Drawable;
+
 import com.google.android.apps.camera.ui.preference.MaterialManagedSwitchPreference;
 
 /* renamed from: idi  reason: default package */

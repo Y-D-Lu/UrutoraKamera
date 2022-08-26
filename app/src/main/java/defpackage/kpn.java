@@ -3,7 +3,9 @@ package defpackage;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Looper;
+
 import com.google.android.gms.googlehelp.GoogleHelp;
+
 import java.lang.ref.WeakReference;
 
 /* renamed from: kpn  reason: default package */

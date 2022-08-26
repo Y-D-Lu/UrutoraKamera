@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
+
 import java.io.IOException;
 import java.text.AttributedCharacterIterator;
 import java.text.AttributedString;

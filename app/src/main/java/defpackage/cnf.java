@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.os.SystemClock;
+
 import com.google.lens.sdk.LensApi;
 
 /* renamed from: cnf  reason: default package */

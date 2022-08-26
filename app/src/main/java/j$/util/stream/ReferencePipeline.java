@@ -1,5 +1,7 @@
 package j$.util.stream;
 
+import java.util.Comparator;
+
 import j$.util.Optional;
 import j$.util.Spliterator;
 import j$.util.function.BiConsumer;
@@ -9,12 +11,6 @@ import j$.util.function.IntFunction;
 import j$.util.function.Predicate;
 import j$.util.function.Supplier;
 import j$.util.function.ToLongFunction;
-import j$.util.stream.Collector;
-import j$.util.stream.LongPipeline;
-import j$.util.stream.MatchOps;
-import j$.util.stream.Node;
-import j$.util.stream.Sink;
-import java.util.Comparator;
 
 /* loaded from: classes2.dex */
 abstract class ReferencePipeline extends AbstractPipeline implements Stream {

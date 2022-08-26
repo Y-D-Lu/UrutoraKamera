@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.ViewStub;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.bottombar.BottomBar;
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
@@ -14,6 +15,7 @@ import com.google.android.apps.camera.ui.views.GradientBar;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jns  reason: default package */

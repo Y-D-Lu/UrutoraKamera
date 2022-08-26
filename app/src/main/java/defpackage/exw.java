@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.os.CountDownTimer;
+
 import com.google.android.apps.camera.coach.CameraCoachHudView;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.concurrent.TimeUnit;
 
 /* JADX INFO: Access modifiers changed from: package-private */

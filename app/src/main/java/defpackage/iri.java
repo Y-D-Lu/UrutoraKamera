@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.View;
 import android.view.accessibility.AccessibilityNodeInfo;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: iri  reason: default package */

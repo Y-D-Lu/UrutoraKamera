@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.view.WindowManager;
 import android.widget.SeekBar;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: irr  reason: default package */

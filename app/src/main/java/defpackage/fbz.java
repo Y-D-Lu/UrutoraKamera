@@ -3,7 +3,9 @@ package defpackage;
 import android.content.Context;
 import android.preference.PreferenceCategory;
 import android.view.View;
+
 import com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: fbz  reason: default package */

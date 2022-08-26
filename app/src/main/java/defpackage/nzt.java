@@ -2,6 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
+
 import java.util.ArrayList;
 
 /* renamed from: nzt  reason: default package */

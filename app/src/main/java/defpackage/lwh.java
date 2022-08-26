@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CameraAccessException;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;

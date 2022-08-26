@@ -6,7 +6,9 @@ import android.util.AttributeSet;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 
 /* loaded from: classes.dex */

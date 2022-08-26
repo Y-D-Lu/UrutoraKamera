@@ -1,14 +1,14 @@
 package defpackage;
 
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.Set;
+import java.util.SortedMap;
+
 import j$.util.Map;
 import j$.util.function.BiConsumer;
 import j$.util.function.BiFunction;
 import j$.util.function.Function;
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
 
 /* renamed from: oor  reason: default package */
 /* loaded from: classes2.dex */

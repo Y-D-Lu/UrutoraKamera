@@ -5,7 +5,9 @@ import android.graphics.Rect;
 import android.hardware.HardwareBuffer;
 import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.params.Face;
+
 import com.google.android.apps.camera.jni.faceobfuscation.GpuRedactorNative;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;

@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.widget.CompoundButton;
+
 import androidx.preference.CheckBoxPreference;
 
 /* renamed from: afv  reason: default package */

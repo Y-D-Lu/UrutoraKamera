@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.Trace;
 import android.support.v7.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

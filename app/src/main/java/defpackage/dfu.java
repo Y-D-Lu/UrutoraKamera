@@ -1,8 +1,7 @@
 package defpackage;
 
 import android.net.Uri;
-import j$.util.Comparator$CC;
-import j$.util.Comparator$EL;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
@@ -12,6 +11,9 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
+
+import j$.util.Comparator$CC;
+import j$.util.Comparator$EL;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dfu  reason: default package */

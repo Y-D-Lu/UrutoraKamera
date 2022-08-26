@@ -3,7 +3,9 @@ package defpackage;
 import android.hardware.camera2.CaptureRequest;
 import android.location.Location;
 import android.text.TextUtils;
+
 import com.google.googlex.gcam.BurstSpec;
+
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 

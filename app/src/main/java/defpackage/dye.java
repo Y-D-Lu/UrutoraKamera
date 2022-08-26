@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.opengl.EGL14;
+
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.opengles.GL10;
 

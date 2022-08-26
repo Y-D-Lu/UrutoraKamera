@@ -2,6 +2,7 @@ package defpackage;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: pz  reason: default package */

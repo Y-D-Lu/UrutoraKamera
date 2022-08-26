@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.util.Log;
+
 import java.util.logging.Level;
 
 /* JADX INFO: Access modifiers changed from: package-private */

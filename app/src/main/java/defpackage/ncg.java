@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Random;
 
 /* renamed from: ncg  reason: default package */

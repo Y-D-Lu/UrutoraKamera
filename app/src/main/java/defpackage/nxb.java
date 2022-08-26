@@ -2,6 +2,7 @@ package defpackage;
 
 import android.view.View;
 import android.widget.OverScroller;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 /* renamed from: nxb  reason: default package */

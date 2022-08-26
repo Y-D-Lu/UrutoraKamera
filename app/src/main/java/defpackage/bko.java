@@ -4,8 +4,10 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import java.util.Map;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Map;
 
 /* renamed from: bko  reason: default package */
 /* loaded from: classes.dex */

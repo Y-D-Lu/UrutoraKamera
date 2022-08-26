@@ -1,6 +1,5 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
 import java.util.Map;
 
 /* renamed from: dcu  reason: default package */

@@ -2,7 +2,6 @@ package defpackage;
 
 import j$.util.Iterator;
 import j$.util.function.Consumer;
-import java.util.Iterator;
 
 /* renamed from: qos  reason: default package */
 /* loaded from: classes2.dex */

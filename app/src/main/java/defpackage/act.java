@@ -1,8 +1,10 @@
 package defpackage;
 
 import android.util.AndroidRuntimeException;
+
 import com.google.android.apps.camera.ui.modeswitcher.ModeSwitcher;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 
 /* renamed from: act  reason: default package */

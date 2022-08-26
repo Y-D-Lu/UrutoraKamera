@@ -1,11 +1,12 @@
 package defpackage;
 
-import j$.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
+
+import j$.time.Duration;
 
 /* renamed from: cmq  reason: default package */
 /* loaded from: classes.dex */

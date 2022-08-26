@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.hdrindicator.DisplayHelper;
+
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: ihh  reason: default package */

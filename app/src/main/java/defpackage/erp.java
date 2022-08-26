@@ -1,15 +1,18 @@
 package defpackage;
 
 import android.graphics.Bitmap;
+
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.InterleavedImageU8;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.lasagna.LasagnaCallbacks;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: erp  reason: default package */
 /* loaded from: classes.dex */

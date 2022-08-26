@@ -8,18 +8,21 @@ import android.view.ViewPropertyAnimator;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
+
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
+
+import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
+import java.util.EnumMap;
+import java.util.List;
+
 import j$.util.Collection;
 import j$.util.Map;
 import j$.util.function.BiConsumer;
 import j$.util.function.BiFunction;
 import j$.util.function.Consumer;
 import j$.util.function.Supplier;
-import java.util.ArrayList;
-import java.util.EnumMap;
-import java.util.List;
-import java.util.Map;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: jkz  reason: default package */
 /* loaded from: classes2.dex */

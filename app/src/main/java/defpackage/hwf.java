@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Intent;
+
 import com.google.android.apps.camera.sideline.SidelineInstallerService;
 
 /* JADX INFO: Access modifiers changed from: package-private */

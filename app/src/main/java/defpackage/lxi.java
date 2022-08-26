@@ -2,9 +2,11 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.hardware.HardwareBuffer;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.libraries.camera.jni.graphics.HardwareBuffers;
 import com.google.android.libraries.camera.jni.graphics.HardwarePixels;
+
 import java.util.ArrayList;
 import java.util.List;
 

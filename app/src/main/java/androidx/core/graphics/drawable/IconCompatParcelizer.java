@@ -4,8 +4,12 @@ import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.os.Parcelable;
 import android.support.v4.graphics.drawable.IconCompat;
+
 import com.google.lens.sdk.LensApi;
+
 import java.nio.charset.Charset;
+
+import defpackage.aks;
 
 /* loaded from: classes.dex */
 public class IconCompatParcelizer {

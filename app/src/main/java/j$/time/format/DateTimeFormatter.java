@@ -1,19 +1,19 @@
 package j$.time.format;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Set;
+
 import j$.time.DateTimeException;
 import j$.time.ZoneId;
 import j$.time.chrono.Chronology;
 import j$.time.chrono.IsoChronology;
-import j$.time.format.DateTimeFormatterBuilder;
 import j$.time.temporal.ChronoField;
 import j$.time.temporal.IsoFields;
 import j$.time.temporal.TemporalAccessor;
 import j$.time.temporal.TemporalQuery;
 import j$.util.Objects;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Set;
 
 /* loaded from: classes2.dex */
 public final class DateTimeFormatter {

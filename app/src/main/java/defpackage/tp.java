@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.support.wearable.view.drawer.PageIndicatorView;
+
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: tp  reason: default package */

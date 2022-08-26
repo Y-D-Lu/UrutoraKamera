@@ -8,8 +8,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import java.util.Objects;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Objects;
 
 @RequiresApi(api = 26)
 /* loaded from: classes2.dex */

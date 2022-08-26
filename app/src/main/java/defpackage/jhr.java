@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jhr  reason: default package */

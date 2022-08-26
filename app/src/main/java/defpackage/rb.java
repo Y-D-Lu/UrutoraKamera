@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.support.v7.widget.StaggeredGridLayoutManager;
+
 import java.util.Arrays;
 
 /* renamed from: rb  reason: default package */

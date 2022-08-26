@@ -2,6 +2,7 @@ package overwhelmer;
 
 import android.content.Context;
 import android.util.AttributeSet;
+
 import com.SDE.getToneCurve;
 import com.softmoore.android.graphlib.GraphView;
 import com.softmoore.android.graphlib.Point;

@@ -2,7 +2,9 @@ package defpackage;
 
 import android.graphics.Bitmap;
 import android.view.ViewStub;
+
 import com.google.android.apps.camera.ui.widget.ReviewImageView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: cgq  reason: default package */

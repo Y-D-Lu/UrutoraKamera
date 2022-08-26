@@ -2,8 +2,10 @@ package defpackage;
 
 import android.app.Activity;
 import android.graphics.RectF;
+
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
 
 @Deprecated

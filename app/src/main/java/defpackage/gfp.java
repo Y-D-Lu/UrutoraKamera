@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureRequest;
+
 import com.Helper;
+
 import java.util.concurrent.ExecutorService;
 
 /* renamed from: gfp  reason: default package */

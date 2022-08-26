@@ -5,13 +5,15 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.os.Handler;
-import j$.util.Collection;
-import j$.util.function.Consumer;
-import j$.util.stream.Collectors;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import j$.util.Collection;
+import j$.util.function.Consumer;
+import j$.util.stream.Collectors;
 
 /* renamed from: icw  reason: default package */
 /* loaded from: classes.dex */

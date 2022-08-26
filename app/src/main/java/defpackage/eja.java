@@ -5,11 +5,14 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.opengl.GLES20;
 import android.opengl.Matrix;
+
 import com.google.android.libraries.vision.opengl.Texture;
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.EnumMap;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: eja  reason: default package */
 /* loaded from: classes2.dex */

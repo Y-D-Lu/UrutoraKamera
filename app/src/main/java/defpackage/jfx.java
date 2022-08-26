@@ -4,6 +4,7 @@ import android.util.AndroidRuntimeException;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.google.android.apps.camera.ui.modeswitcher.ModeSwitcher;
 import com.hdrindicator.DisplayHelper;
 

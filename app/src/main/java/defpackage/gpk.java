@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.hardware.camera2.CaptureResult;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: gpk  reason: default package */

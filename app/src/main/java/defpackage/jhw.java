@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.view.KeyEvent;
 import android.widget.Button;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.preference.KeyListenerPreference;
 
 /* renamed from: jhw  reason: default package */

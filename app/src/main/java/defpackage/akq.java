@@ -15,10 +15,13 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.ArrayDeque;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
+
+import java.util.ArrayDeque;
 
 /* renamed from: akq  reason: default package */
 /* loaded from: classes.dex */

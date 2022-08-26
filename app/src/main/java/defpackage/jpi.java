@@ -1,6 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.coach.CameraCoachHudView;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: jpi  reason: default package */

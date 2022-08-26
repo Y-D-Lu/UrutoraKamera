@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 
 /* renamed from: inp  reason: default package */

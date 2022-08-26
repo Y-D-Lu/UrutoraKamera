@@ -2,16 +2,19 @@ package defpackage;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import com.google.android.apps.camera.stats.Instrumentation;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /* renamed from: ine  reason: default package */
 /* loaded from: classes.dex */

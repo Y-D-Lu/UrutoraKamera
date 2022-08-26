@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.util.Property;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 
 /* renamed from: obb  reason: default package */

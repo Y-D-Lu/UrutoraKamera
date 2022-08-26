@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Intent;
+
 import java.util.ArrayList;
 
 /* renamed from: afn  reason: default package */

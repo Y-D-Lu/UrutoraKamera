@@ -16,6 +16,7 @@ import android.media.MediaRecorder;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.view.Surface;
+
 import java.io.FileDescriptor;
 import java.io.IOException;
 import java.util.Arrays;
@@ -26,7 +27,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
 
 /* renamed from: ipf  reason: default package */
 /* loaded from: classes.dex */

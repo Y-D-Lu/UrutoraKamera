@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.Context;
 import android.os.Looper;
+
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
 /* renamed from: kfo  reason: default package */

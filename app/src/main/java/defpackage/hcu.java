@@ -1,9 +1,11 @@
 package defpackage;
 
 import android.content.Context;
+
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.dynamicdepth.DynamicDepthUtils;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
+
 import java.util.concurrent.Executor;
 
 /* renamed from: hcu  reason: default package */

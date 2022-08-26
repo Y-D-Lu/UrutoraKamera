@@ -10,10 +10,12 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.SeekBar;
+
 import com.Helper;
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Locale;
 
 /* loaded from: classes3.dex */

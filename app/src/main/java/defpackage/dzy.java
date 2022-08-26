@@ -6,12 +6,14 @@ import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.PostviewParams;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.imageio.ExifEncode;
-import j$.util.DesugarTimeZone;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
+
+import j$.util.DesugarTimeZone;
 
 /* renamed from: dzy  reason: default package */
 /* loaded from: classes.dex */
