@@ -800,4 +800,86 @@
     <dimen name="zoom_togglebar_touch_area_width">188.0dip</dimen>
     <dimen name="zoom_touch_area_expand">48.0dip</dimen>
     <dimen name="zoom_ui_height">108.0dip</dimen>
+    <dimen name="gm_sys_typescale_overline_letter_spacing">0.07272727</dimen>
+    <dimen name="gm_sys_typescale_subtitle1_letter_spacing">0.0125</dimen>
+    <dimen name="abc_dialog_min_width_major">65.0%</dimen>
+    <dimen name="abc_list_item_padding_horizontal_material">@dimen/abc_action_bar_content_inset_material</dimen>
+    <dimen name="mtrl_snackbar_action_text_color_alpha">0.5</dimen>
+    <dimen name="mtrl_snackbar_background_overlay_color_alpha">0.8</dimen>
+    <dimen name="gm_sys_typescale_subtitle2_letter_spacing">0.01785714</dimen>
+    <dimen name="abc_dialog_min_width_minor">95.00001%</dimen>
+    <item type="dimen" name="gm3_fab_corner_size">29.999996%</item>
+    <item type="dimen" name="gm_sys_typescale_body2_letter_spacing">0.01428571</item>
+    <item type="dimen" name="gm_sys_typescale_button_letter_spacing">0.01785714</item>
+    <item type="dimen" name="gm_sys_typescale_caption_letter_spacing">0.025</item>
+    <item type="dimen" name="gm_sys_typescale_display1_letter_spacing">0.0</item>
+    <item type="dimen" name="gm_sys_typescale_display2_letter_spacing">0.0</item>
+    <item type="dimen" name="gm_sys_typescale_display3_letter_spacing">0.0</item>
+    <item type="dimen" name="gm_sys_typescale_headline1_letter_spacing">0.0</item>
+    <item type="dimen" name="gm_sys_typescale_headline2_letter_spacing">0.0</item>
+    <item type="dimen" name="gm_sys_typescale_headline3_letter_spacing">0.0</item>
+    <item type="dimen" name="gm_sys_typescale_headline4_letter_spacing">0.0</item>
+    <item type="dimen" name="gm_sys_typescale_headline5_letter_spacing">0.0</item>
+    <item type="dimen" name="gm_sys_typescale_headline6_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_body1_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_body2_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_button_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_caption_letter_spacing">0.00833333</item>
+    <item type="dimen" name="gm3_sys_typescale_display1_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_display2_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_display3_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_headline1_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_headline2_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_headline3_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_headline4_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_headline5_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_headline6_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_overline_letter_spacing">0.00833333</item>
+    <item type="dimen" name="gm3_sys_typescale_subhead1_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_subhead2_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_subtitle1_letter_spacing">0.0</item>
+    <item type="dimen" name="gm3_sys_typescale_subtitle2_letter_spacing">0.0</item>
+    <item type="dimen" name="google_btn_letter_spacing">0.025</item>
+    <item type="dimen" name="design_snackbar_action_text_color_alpha">1.0</item>
+    <item type="dimen" name="material_emphasis_high_type">0.87</item>
+    <item type="dimen" name="gm_sys_typescale_subhead1_letter_spacing">0.00625</item>
+    <item type="dimen" name="gm_sys_typescale_subhead2_letter_spacing">0.01785714</item>
+    <item type="dimen" name="gm_sys_typescale_body1_letter_spacing">0.00625</item>
+    <item type="dimen" name="highlight_alpha_material_colored">0.26</item>
+    <item type="dimen" name="hint_alpha_material_dark">0.5</item>
+    <item type="dimen" name="hint_alpha_material_light">0.38</item>
+    <item type="dimen" name="hint_pressed_alpha_material_dark">0.7</item>
+    <item type="dimen" name="hint_pressed_alpha_material_light">0.54</item>
+    <item type="dimen" name="material_emphasis_disabled">0.38</item>
+    <item type="dimen" name="material_emphasis_disabled_background">0.12</item>
+    <item type="dimen" name="material_emphasis_medium">0.6</item>
+    <item type="dimen" name="gm3_high_ripple_default_alpha">0.16</item>
+    <item type="dimen" name="gm3_high_ripple_focused_alpha">0.4</item>
+    <item type="dimen" name="gm3_high_ripple_hovered_alpha">0.8</item>
+    <item type="dimen" name="gm3_high_ripple_pressed_alpha">0.2</item>
+    <item type="dimen" name="gm3_high_ripple_selectable_pressed_alpha">0.1</item>
+    <item type="dimen" name="gm3_low_ripple_default_alpha">0.08</item>
+    <item type="dimen" name="gm3_low_ripple_focused_alpha">0.2</item>
+    <item type="dimen" name="gm3_low_ripple_hovered_alpha">0.2</item>
+    <item type="dimen" name="gm3_low_ripple_pressed_alpha">0.1</item>
+    <item type="dimen" name="gm3_low_ripple_selectable_pressed_alpha">0.1</item>
+    <item type="dimen" name="google_high_ripple_default_alpha">0.2</item>
+    <item type="dimen" name="google_high_ripple_focused_alpha">0.4</item>
+    <item type="dimen" name="google_high_ripple_hovered_alpha">0.8</item>
+    <item type="dimen" name="google_high_ripple_pressed_alpha">0.2</item>
+    <item type="dimen" name="google_low_ripple_default_alpha">0.1</item>
+    <item type="dimen" name="google_low_ripple_focused_alpha">0.2</item>
+    <item type="dimen" name="google_low_ripple_hovered_alpha">0.2</item>
+    <item type="dimen" name="google_low_ripple_pressed_alpha">0.1</item>
+    <item type="dimen" name="mtrl_high_ripple_default_alpha">0.24</item>
+    <item type="dimen" name="mtrl_high_ripple_focused_alpha">0.4</item>
+    <item type="dimen" name="mtrl_high_ripple_hovered_alpha">0.4</item>
+    <item type="dimen" name="mtrl_high_ripple_pressed_alpha">0.24</item>
+    <item type="dimen" name="mtrl_low_ripple_default_alpha">0.12</item>
+    <item type="dimen" name="mtrl_low_ripple_focused_alpha">0.2</item>
+    <item type="dimen" name="mtrl_low_ripple_hovered_alpha">0.2</item>
+    <item type="dimen" name="mtrl_low_ripple_pressed_alpha">0.12</item>
+    <item type="dimen" name="abc_button_inset_horizontal_material">@dimen/abc_control_inset_material</item>
+    <item type="dimen" name="abc_button_padding_vertical_material">@dimen/abc_control_padding_material</item>
+    <item type="dimen" name="mode_chip_letter_spacing">0.01</item>
 </resources>

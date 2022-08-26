@@ -2611,7 +2611,7 @@
         <item name="extraMultilineHeightEnabled">true</item>
         <item name="forceApplySystemWindowInsetTop">true</item>
         <item name="scrimAnimationDuration">@integer/app_bar_elevation_anim_duration</item>
-        <item name="statusBarScrim">@empty</item>
+<!--        <item name="statusBarScrim">@empty</item>-->
         <item name="titleCollapseMode">fade</item>
     </style>
     <style name="Base.Widget.GoogleMaterial3.CompoundButton.CheckBox" parent="@style/Widget.GoogleMaterial.CompoundButton.CheckBox">
@@ -6069,7 +6069,7 @@
     <style name="Widget.MaterialComponents.Button" parent="@style/Widget.AppCompat.Button">
         <item name="android:textAppearance">?textAppearanceButton</item>
         <item name="android:textColor">@color/mtrl_btn_text_color_selector</item>
-        <item name="android:background">@empty</item>
+<!--        <item name="android:background">@empty</item>-->
         <item name="android:paddingLeft">@dimen/mtrl_btn_padding_left</item>
         <item name="android:paddingTop">@dimen/mtrl_btn_padding_top</item>
         <item name="android:paddingRight">@dimen/mtrl_btn_padding_right</item>
