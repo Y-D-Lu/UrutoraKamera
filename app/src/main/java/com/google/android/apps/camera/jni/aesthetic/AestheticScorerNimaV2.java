@@ -1,8 +1,11 @@
 package com.google.android.apps.camera.jni.aesthetic;
 
 import com.hdrindicator.DisplayHelper;
+
 import java.nio.Buffer;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import defpackage.enh;
 
 /* loaded from: classes.dex */
 public final class AestheticScorerNimaV2 implements enh {

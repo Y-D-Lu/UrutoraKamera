@@ -2,8 +2,18 @@ package com.google.android.material.behavior;
 
 import android.view.MotionEvent;
 import android.view.View;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.aae;
+import defpackage.aca;
+import defpackage.acb;
+import defpackage.gl;
+import defpackage.ha;
+import defpackage.nxj;
+import defpackage.nxk;
 
 /* loaded from: classes.dex */
 public class SwipeDismissBehavior extends aae {

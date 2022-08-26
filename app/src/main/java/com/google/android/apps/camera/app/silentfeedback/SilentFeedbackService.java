@@ -5,7 +5,16 @@ import android.app.Service;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.IBinder;
-import com.google.android.apps.camera.app.silentfeedback.SilentFeedbackService;
+
+import defpackage.kij;
+import defpackage.kim;
+import defpackage.kox;
+import defpackage.kpa;
+import defpackage.kpb;
+import defpackage.kvc;
+import defpackage.kvk;
+import defpackage.mip;
+import defpackage.pgr;
 
 /* loaded from: classes.dex */
 public final class SilentFeedbackService extends Service {

@@ -13,9 +13,29 @@ import android.preference.TwoStatePreference;
 import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.MenuItem;
+
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 import com.google.android.apps.camera.legacy.app.app.CameraApp;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.bui;
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.etd;
+import defpackage.euv;
+import defpackage.ewb;
+import defpackage.fcb;
+import defpackage.fhq;
+import defpackage.fjs;
+import defpackage.hu;
+import defpackage.iy;
+import defpackage.jh;
+import defpackage.jp;
+import defpackage.ljf;
+import defpackage.lzi;
+import defpackage.miq;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class CameraSettingsActivity extends etd {

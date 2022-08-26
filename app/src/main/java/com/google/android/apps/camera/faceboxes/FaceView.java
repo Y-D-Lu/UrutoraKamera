@@ -4,8 +4,12 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import java.util.HashMap;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.HashMap;
+
+import defpackage.doz;
 
 /* loaded from: classes.dex */
 public class FaceView extends doz {

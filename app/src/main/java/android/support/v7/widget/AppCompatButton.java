@@ -9,6 +9,11 @@ import android.widget.Button;
 
 import org.codeaurora.snapcam.R;
 
+import defpackage.mp;
+import defpackage.nt;
+import defpackage.ri;
+import defpackage.rk;
+
 /* loaded from: classes.dex */
 public class AppCompatButton extends Button {
     public final mp a;

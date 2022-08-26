@@ -13,6 +13,7 @@ import org.codeaurora.snapcam.R;
 import defpackage.ahm;
 import defpackage.ahn;
 import defpackage.ahr;
+import defpackage.et;
 
 /* loaded from: classes.dex */
 public class SwitchPreference extends TwoStatePreference {

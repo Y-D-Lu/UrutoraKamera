@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Toast;
+
 import com.Helper;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 

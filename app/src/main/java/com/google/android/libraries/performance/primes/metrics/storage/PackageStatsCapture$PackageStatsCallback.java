@@ -2,7 +2,10 @@ package com.google.android.libraries.performance.primes.metrics.storage;
 
 import android.content.pm.IPackageStatsObserver;
 import android.content.pm.PackageStats;
+
 import java.util.concurrent.Semaphore;
+
+import defpackage.nbg;
 
 /* loaded from: classes.dex */
 final class PackageStatsCapture$PackageStatsCallback extends IPackageStatsObserver.Stub {
@@ -16,7 +19,7 @@ final class PackageStatsCapture$PackageStatsCallback extends IPackageStatsObserv
         if (z) {
             this.b = packageStats;
         } else {
-            d.v(nbg.a.c(), "Failure getting PackageStats", (char) 3653);
+            defpackage.d.v(nbg.a.c(), "Failure getting PackageStats", (char) 3653);
         }
         this.a.release();
     }

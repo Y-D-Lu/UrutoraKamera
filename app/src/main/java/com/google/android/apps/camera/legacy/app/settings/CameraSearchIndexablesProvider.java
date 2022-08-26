@@ -5,8 +5,17 @@ import android.database.MatrixCursor;
 import android.preference.Preference;
 import android.provider.SearchIndexablesContract;
 import android.provider.SearchIndexablesProvider;
-import java.util.Collection;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Collection;
+
+import defpackage.ewc;
+import defpackage.fce;
+import defpackage.khx;
+import defpackage.olj;
+import defpackage.olk;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class CameraSearchIndexablesProvider extends SearchIndexablesProvider {
@@ -39,12 +48,12 @@ public class CameraSearchIndexablesProvider extends SearchIndexablesProvider {
     }
 
     public final boolean onCreate() {
-        d.v(a.c(), "Called onCreate", (char) 1625);
+        defpackage.d.v(a.c(), "Called onCreate", (char) 1625);
         return true;
     }
 
     public final Cursor queryNonIndexableKeys(String[] strArr) {
-        d.v(a.c(), "Called queryNonIndexableKeys", (char) 1620);
+        defpackage.d.v(a.c(), "Called queryNonIndexableKeys", (char) 1620);
         MatrixCursor matrixCursor = new MatrixCursor(SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS);
         for (String str : a().m) {
             Object[] objArr = new Object[SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS.length];
@@ -55,7 +64,7 @@ public class CameraSearchIndexablesProvider extends SearchIndexablesProvider {
     }
 
     public final Cursor queryRawData(String[] strArr) {
-        d.v(a.c(), "Called queryRawData", (char) 1622);
+        defpackage.d.v(a.c(), "Called queryRawData", (char) 1622);
         String string = getContext().getString(R.string.app_name);
         MatrixCursor matrixCursor = new MatrixCursor(SearchIndexablesContract.INDEXABLES_RAW_COLUMNS);
         matrixCursor.addRow(c(string, getContext().getString(R.string.mode_settings), "camera_settings"));
@@ -75,7 +84,7 @@ public class CameraSearchIndexablesProvider extends SearchIndexablesProvider {
     }
 
     public final Cursor queryXmlResources(String[] strArr) {
-        d.v(a.c(), "Called queryXmlResources", (char) 1624);
+        defpackage.d.v(a.c(), "Called queryXmlResources", (char) 1624);
         MatrixCursor matrixCursor = new MatrixCursor(SearchIndexablesContract.INDEXABLES_XML_RES_COLUMNS);
         Object[] objArr = new Object[SearchIndexablesContract.INDEXABLES_XML_RES_COLUMNS.length];
         objArr[0] = 1;

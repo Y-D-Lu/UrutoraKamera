@@ -13,6 +13,12 @@ import com.hdrindicator.DisplayHelper;
 
 import org.codeaurora.snapcam.R;
 
+import defpackage.gl;
+import defpackage.wo;
+import defpackage.wp;
+import defpackage.wq;
+import defpackage.wr;
+
 /* loaded from: classes.dex */
 public class CardView extends FrameLayout {
     private static final int[] e = {16842801};

@@ -28,6 +28,16 @@ import com.hdrindicator.DisplayHelper;
 
 import org.codeaurora.snapcam.R;
 
+import defpackage.gl;
+import defpackage.jq;
+import defpackage.ju;
+import defpackage.nt;
+import defpackage.oj;
+import defpackage.rh;
+import defpackage.ri;
+import defpackage.rn;
+import defpackage.sd;
+
 /* loaded from: classes.dex */
 public class SwitchCompat extends CompoundButton {
     private static final Property e = new rh(Float.class);

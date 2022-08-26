@@ -14,6 +14,9 @@ import android.os.ParcelFileDescriptor;
 import android.os.Trace;
 import android.text.TextUtils;
 import android.util.Size;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileDescriptor;
@@ -22,7 +25,23 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
-import org.codeaurora.snapcam.R;
+
+import defpackage.bcl;
+import defpackage.der;
+import defpackage.det;
+import defpackage.deu;
+import defpackage.dev;
+import defpackage.dws;
+import defpackage.dwz;
+import defpackage.dxa;
+import defpackage.dxv;
+import defpackage.dxx;
+import defpackage.dxy;
+import defpackage.ljf;
+import defpackage.mip;
+import defpackage.oih;
+import defpackage.ojc;
+import defpackage.oug;
 
 /* loaded from: classes.dex */
 public class CameraContentProvider extends ContentProvider {

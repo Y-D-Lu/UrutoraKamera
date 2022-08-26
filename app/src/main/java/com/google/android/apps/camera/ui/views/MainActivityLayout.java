@@ -10,6 +10,7 @@ import android.util.Size;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowInsets;
+
 import com.google.android.apps.camera.bottombar.BottomBar;
 import com.google.android.apps.camera.evcomp.EvCompView;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
@@ -18,13 +19,57 @@ import com.google.android.apps.camera.ui.layout.GcaLayout;
 import com.google.android.apps.camera.ui.mars.MarsSwitch;
 import com.google.android.apps.camera.ui.modeswitcher.ModeSwitcher;
 import com.google.android.apps.camera.ui.modeswitcher.MoreModesGrid;
-import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.zoomui.ZoomUi;
-import j$.util.Objects;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
-import org.codeaurora.snapcam.R;
+
+import defpackage.bys;
+import defpackage.ctm;
+import defpackage.cuj;
+import defpackage.cwj;
+import defpackage.dcu;
+import defpackage.ddf;
+import defpackage.ddv;
+import defpackage.end;
+import defpackage.eso;
+import defpackage.eua;
+import defpackage.fhv;
+import defpackage.fie;
+import defpackage.fik;
+import defpackage.hnj;
+import defpackage.idc;
+import defpackage.img;
+import defpackage.jbq;
+import defpackage.jbr;
+import defpackage.jbt;
+import defpackage.jbu;
+import defpackage.jbv;
+import defpackage.jbw;
+import defpackage.jcd;
+import defpackage.jce;
+import defpackage.jot;
+import defpackage.jrl;
+import defpackage.jrt;
+import defpackage.jrz;
+import defpackage.jsa;
+import defpackage.jtw;
+import defpackage.jzr;
+import defpackage.lar;
+import defpackage.lda;
+import defpackage.lwd;
+import defpackage.lzi;
+import defpackage.mip;
+import defpackage.nle;
+import defpackage.obr;
+import defpackage.oih;
+import defpackage.ojc;
+import defpackage.ojz;
+import defpackage.pyn;
+import j$.util.Objects;
 
 /* loaded from: classes.dex */
 public class MainActivityLayout extends GcaLayout implements fik, fie {

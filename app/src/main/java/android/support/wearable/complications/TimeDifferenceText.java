@@ -10,6 +10,9 @@ import org.codeaurora.snapcam.R;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
+import defpackage.si;
+import defpackage.sj;
+
 /* loaded from: classes.dex */
 public class TimeDifferenceText implements TimeDependentText {
     public static final Parcelable.Creator CREATOR = new si(2);

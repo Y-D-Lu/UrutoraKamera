@@ -9,11 +9,17 @@ import android.graphics.RectF;
 import android.hardware.camera2.params.Face;
 import android.hardware.camera2.params.MeteringRectangle;
 import android.util.AttributeSet;
-import com.google.android.apps.camera.debugui.DebugCanvasView;
+
 import com.hdrindicator.DisplayHelper;
+
+import java.util.List;
+
+import defpackage.djx;
+import defpackage.dka;
+import defpackage.ohz;
+import defpackage.oom;
 import j$.util.Collection;
 import j$.util.function.Consumer;
-import java.util.List;
 
 /* loaded from: classes.dex */
 public class DebugCanvasView extends dka {

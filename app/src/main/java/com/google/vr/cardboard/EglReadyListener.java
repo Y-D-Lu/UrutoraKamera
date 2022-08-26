@@ -2,8 +2,11 @@ package com.google.vr.cardboard;
 
 import android.opengl.GLES20;
 import android.util.Log;
+
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLContext;
+
+import defpackage.pwa;
 
 /* loaded from: classes.dex */
 public class EglReadyListener {

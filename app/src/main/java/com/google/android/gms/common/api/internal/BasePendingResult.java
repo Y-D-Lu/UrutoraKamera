@@ -2,12 +2,28 @@ package com.google.android.gms.common.api.internal;
 
 import android.os.Looper;
 import android.util.Log;
+
 import com.google.android.gms.common.api.Status;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
+
+import defpackage.kim;
+import defpackage.kio;
+import defpackage.kip;
+import defpackage.kis;
+import defpackage.kiv;
+import defpackage.kiw;
+import defpackage.kix;
+import defpackage.kjn;
+import defpackage.kjo;
+import defpackage.kjp;
+import defpackage.kkh;
+import defpackage.kll;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public abstract class BasePendingResult extends kip {

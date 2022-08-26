@@ -1,9 +1,11 @@
 package com.juliantsependa;
 
 import android.util.Log;
+
 import com.Fix.Pref;
 import com.Helper;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
 
 /* compiled from: Experimental.java */

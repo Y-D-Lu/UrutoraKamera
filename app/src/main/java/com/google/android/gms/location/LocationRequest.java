@@ -3,10 +3,16 @@ package com.google.android.gms.location;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.bottombar.R;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.hdrindicator.DisplayHelper;
+
 import java.util.Arrays;
+
+import defpackage.kno;
+import defpackage.kpg;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public final class LocationRequest extends kno implements ReflectedParcelable {

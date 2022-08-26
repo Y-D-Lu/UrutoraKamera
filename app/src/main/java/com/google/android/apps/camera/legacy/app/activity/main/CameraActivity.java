@@ -7,6 +7,7 @@ import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.view.Window;
 import android.view.WindowManager;
+
 import com.AGC;
 import com.Fix.Lens;
 import com.Fix.Pref;
@@ -16,9 +17,72 @@ import com.google.android.apps.camera.legacy.app.app.CameraApp;
 import com.google.android.apps.camera.stats.Instrumentation;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 import com.save.exception.CustomizedExceptionHandler;
+
+import org.codeaurora.snapcam.R;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import org.codeaurora.snapcam.R;
+
+import defpackage.bpx;
+import defpackage.bqe;
+import defpackage.bui;
+import defpackage.bxj;
+import defpackage.ddf;
+import defpackage.ddi;
+import defpackage.ddl;
+import defpackage.dke;
+import defpackage.efb;
+import defpackage.emb;
+import defpackage.emg;
+import defpackage.emi;
+import defpackage.end;
+import defpackage.ene;
+import defpackage.enf;
+import defpackage.eng;
+import defpackage.etd;
+import defpackage.ete;
+import defpackage.etk;
+import defpackage.etl;
+import defpackage.etm;
+import defpackage.ets;
+import defpackage.evc;
+import defpackage.evh;
+import defpackage.ewb;
+import defpackage.fhq;
+import defpackage.fji;
+import defpackage.fjs;
+import defpackage.hug;
+import defpackage.ih;
+import defpackage.iid;
+import defpackage.iiz;
+import defpackage.ijc;
+import defpackage.ijf;
+import defpackage.ijy;
+import defpackage.irk;
+import defpackage.jcw;
+import defpackage.jns;
+import defpackage.jnu;
+import defpackage.jrl;
+import defpackage.jtx;
+import defpackage.jup;
+import defpackage.jus;
+import defpackage.khx;
+import defpackage.lar;
+import defpackage.lie;
+import defpackage.ljf;
+import defpackage.lld;
+import defpackage.lqv;
+import defpackage.lzi;
+import defpackage.mcu;
+import defpackage.mip;
+import defpackage.myw;
+import defpackage.nav;
+import defpackage.obr;
+import defpackage.ojc;
+import defpackage.ojz;
+import defpackage.ouj;
+import defpackage.qiz;
+import defpackage.qkg;
 
 /* loaded from: classes.dex */
 public class CameraActivity extends etd implements end, bpx {
@@ -164,7 +228,7 @@ public class CameraActivity extends etd implements end, bpx {
             eng.a(intent, !c.g(), activity, hugVar);
             activity.setIntent(intent);
             if (c.g() && eng.d((jrl) c.c(), jcwVar, qkgVar, a, activity, fjsVar, khxVar)) {
-                d.v(s.c(), "Warning: have Launched outside activity and coming soon finish activity.", (char) 1508);
+                defpackage.d.v(s.c(), "Warning: have Launched outside activity and coming soon finish activity.", (char) 1508);
                 this.y = true;
             }
         }
@@ -207,7 +271,7 @@ public class CameraActivity extends etd implements end, bpx {
             method.setAccessible(true);
             method.invoke(this, true);
         } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
-            d.v(s.c(), "Could not find method: setDisablePreviewScreenshots", (char) 1506);
+            defpackage.d.v(s.c(), "Could not find method: setDisablePreviewScreenshots", (char) 1506);
         }
         m().f();
         this.x.j(ijf.ACTIVITY_ONCREATE_END, CameraActivityTiming.b);

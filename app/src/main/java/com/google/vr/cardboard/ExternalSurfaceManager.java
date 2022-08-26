@@ -3,8 +3,18 @@ package com.google.vr.cardboard;
 import android.os.Handler;
 import android.util.Log;
 import android.view.Surface;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import defpackage.pwb;
+import defpackage.pwc;
+import defpackage.pwd;
+import defpackage.pwf;
+import defpackage.pwg;
+import defpackage.pwh;
+import defpackage.pwi;
+import defpackage.pwk;
 
 /* loaded from: classes.dex */
 public class ExternalSurfaceManager {

@@ -2,8 +2,13 @@ package com.google.android.material.snackbar;
 
 import android.view.MotionEvent;
 import android.view.View;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.google.android.material.behavior.SwipeDismissBehavior;
+
+import defpackage.kkm;
+import defpackage.ock;
 
 /* loaded from: classes.dex */
 public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior {

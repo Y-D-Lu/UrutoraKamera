@@ -12,7 +12,13 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
+
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.joe;
+import defpackage.jof;
+import defpackage.jog;
+import defpackage.joh;
 
 /* loaded from: classes.dex */
 public class CaptureAnimationOverlay extends View {

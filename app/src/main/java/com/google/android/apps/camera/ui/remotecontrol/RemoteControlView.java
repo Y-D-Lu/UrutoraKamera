@@ -8,7 +8,10 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.jrz;
 
 /* loaded from: classes.dex */
 public class RemoteControlView extends FrameLayout {

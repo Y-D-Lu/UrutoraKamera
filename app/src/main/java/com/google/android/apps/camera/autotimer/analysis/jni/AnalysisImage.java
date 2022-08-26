@@ -3,6 +3,10 @@ package com.google.android.apps.camera.autotimer.analysis.jni;
 import java.nio.ByteBuffer;
 import java.util.List;
 
+import defpackage.mac;
+import defpackage.mad;
+import defpackage.obr;
+
 /* loaded from: classes2.dex */
 class AnalysisImage {
     private final mad a;

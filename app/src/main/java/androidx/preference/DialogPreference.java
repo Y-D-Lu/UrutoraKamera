@@ -9,6 +9,7 @@ import org.codeaurora.snapcam.R;
 
 import defpackage.ahg;
 import defpackage.ahn;
+import defpackage.et;
 
 /* loaded from: classes.dex */
 public abstract class DialogPreference extends Preference {

@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
+import defpackage.rn;
+
 /* loaded from: classes.dex */
 public class ActivityChooserView$InnerLayout extends LinearLayout {
     private static final int[] a = {16842964};

@@ -5,7 +5,12 @@ import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.jqq;
+import defpackage.jxf;
+import defpackage.jxn;
 
 @Deprecated
 /* loaded from: classes2.dex */

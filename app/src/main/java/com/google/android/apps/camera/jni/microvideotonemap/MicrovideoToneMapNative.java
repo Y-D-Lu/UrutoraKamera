@@ -1,7 +1,10 @@
 package com.google.android.apps.camera.jni.microvideotonemap;
 
 import android.graphics.Bitmap;
+
 import java.nio.ByteBuffer;
+
+import defpackage.lil;
 
 /* loaded from: classes.dex */
 public class MicrovideoToneMapNative {

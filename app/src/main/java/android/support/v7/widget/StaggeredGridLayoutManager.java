@@ -15,6 +15,25 @@ import java.util.Arrays;
 import java.util.BitSet;
 import java.util.List;
 
+import defpackage.gh;
+import defpackage.ou;
+import defpackage.oz;
+import defpackage.pq;
+import defpackage.qb;
+import defpackage.qc;
+import defpackage.qd;
+import defpackage.qi;
+import defpackage.qn;
+import defpackage.qo;
+import defpackage.qp;
+import defpackage.ra;
+import defpackage.rb;
+import defpackage.rc;
+import defpackage.rd;
+import defpackage.re;
+import defpackage.rf;
+import defpackage.rg;
+
 /* loaded from: classes.dex */
 public class StaggeredGridLayoutManager extends qc implements qn {
     private boolean E;

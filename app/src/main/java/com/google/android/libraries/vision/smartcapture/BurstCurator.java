@@ -3,6 +3,12 @@ package com.google.android.libraries.vision.smartcapture;
 import java.io.Closeable;
 import java.nio.ByteBuffer;
 
+import defpackage.ojr;
+import defpackage.poq;
+import defpackage.por;
+import defpackage.pos;
+import defpackage.puj;
+
 /* loaded from: classes.dex */
 public final class BurstCurator implements Closeable {
     public final pos a;

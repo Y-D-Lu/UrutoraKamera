@@ -7,6 +7,12 @@ import android.view.View;
 
 import java.lang.reflect.Constructor;
 
+import defpackage.mo;
+import defpackage.mq;
+import defpackage.nb;
+import defpackage.nu;
+import defpackage.xf;
+
 /* loaded from: classes.dex */
 public class AppCompatViewInflater {
     public final Object[] c = new Object[2];

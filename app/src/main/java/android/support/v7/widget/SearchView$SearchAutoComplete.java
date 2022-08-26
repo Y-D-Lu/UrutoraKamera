@@ -10,6 +10,8 @@ import android.view.KeyEvent;
 
 import org.codeaurora.snapcam.R;
 
+import defpackage.mo;
+
 /* loaded from: classes.dex */
 public class SearchView$SearchAutoComplete extends mo {
     private int a;

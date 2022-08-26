@@ -4,8 +4,12 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
+
 import androidx.preference.DialogPreference;
+
 import com.google.android.apps.camera.bottombar.R;
+
+import defpackage.oje;
 
 /* loaded from: classes.dex */
 public class MaterialKeyListenerPreference extends DialogPreference {

@@ -6,6 +6,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import defpackage.kv;
+import defpackage.kw;
+import defpackage.kz;
+import defpackage.lm;
+import defpackage.rn;
+
 /* loaded from: classes.dex */
 public final class ExpandedMenuView extends ListView implements AdapterView.OnItemClickListener, kv, lm {
     private static final int[] a = {16842964, 16843049};

@@ -3,6 +3,8 @@ package com.google.googlex.gcam.imageio;
 import com.google.googlex.gcam.InterleavedReadViewU8;
 import com.google.googlex.gcam.JpgEncodeOptions;
 
+import defpackage.ojc;
+
 /* loaded from: classes.dex */
 public final class JpgHelper {
     private JpgHelper() {

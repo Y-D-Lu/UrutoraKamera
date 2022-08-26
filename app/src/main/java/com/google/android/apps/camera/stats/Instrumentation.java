@@ -1,7 +1,7 @@
 package com.google.android.apps.camera.stats;
 
-import com.google.android.apps.camera.stats.Instrumentation;
 import com.google.android.apps.camera.stats.timing.TimingSession;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;

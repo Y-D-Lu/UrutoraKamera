@@ -5,6 +5,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import defpackage.mw;
+
 /* loaded from: classes.dex */
 public class ScalableButton extends mw {
     private static final float DEFAULT_SIZE = 1.0f;

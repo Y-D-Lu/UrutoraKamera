@@ -5,7 +5,13 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.dd;
+import defpackage.ih;
+import defpackage.juv;
+import defpackage.jux;
 
 /* loaded from: classes.dex */
 public class VideoPlayerActivity extends ih {

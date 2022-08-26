@@ -3,7 +3,12 @@ package com.google.android.gms.common.data;
 import android.os.Parcel;
 import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
+
 import com.google.android.gms.common.internal.ReflectedParcelable;
+
+import defpackage.kno;
+import defpackage.mip;
+import defpackage.sk;
 
 /* loaded from: classes.dex */
 public class BitmapTeleporter extends kno implements ReflectedParcelable {

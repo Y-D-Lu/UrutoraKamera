@@ -8,7 +8,17 @@ import android.util.AttributeSet;
 import android.util.Size;
 import android.view.View;
 import android.view.ViewGroup;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.af;
+import defpackage.ah;
+import defpackage.end;
+import defpackage.jca;
+import defpackage.jcb;
+import defpackage.jrz;
+import defpackage.obr;
+import defpackage.ojz;
 
 /* loaded from: classes.dex */
 public class GcaLayout extends ConstraintLayout {

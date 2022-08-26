@@ -5,17 +5,31 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
-import com.google.android.apps.camera.debug.contentprovider.DebugContentProvider;
+
 import com.google.android.apps.camera.stats.Instrumentation;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
-import j$.util.Collection;
-import j$.util.function.Predicate;
-import j$.util.stream.Collectors;
+
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import defpackage.bql;
+import defpackage.ddf;
+import defpackage.dgm;
+import defpackage.dgs;
+import defpackage.dgt;
+import defpackage.enc;
+import defpackage.ijf;
+import defpackage.ijo;
+import defpackage.ijp;
+import defpackage.ojz;
+import defpackage.oug;
+import defpackage.ouj;
+import j$.util.Collection;
+import j$.util.function.Predicate;
+import j$.util.stream.Collectors;
 
 /* loaded from: classes.dex */
 public class DebugContentProvider extends ContentProvider {
@@ -31,7 +45,7 @@ public class DebugContentProvider extends ContentProvider {
             instrumentation = null;
         }
         if (instrumentation == null) {
-            d.v(b.b(), "Could not get an instance of the instrumentation.", (char) 772);
+            defpackage.d.v(b.b(), "Could not get an instance of the instrumentation.", (char) 772);
             return new ArrayList();
         }
         return (List) Collection.EL.stream(instrumentation.b(cls)).filter(predicate).collect(Collectors.toList());
@@ -80,7 +94,7 @@ public class DebugContentProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public final int delete(Uri uri, String str, String[] strArr) {
-        d.v(b.b(), "Delete not supported for DebugContentProvider.", (char) 768);
+        defpackage.d.v(b.b(), "Delete not supported for DebugContentProvider.", (char) 768);
         throw new IllegalArgumentException();
     }
 
@@ -123,7 +137,7 @@ public class DebugContentProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public final Uri insert(Uri uri, ContentValues contentValues) {
-        d.v(b.b(), "Insert not supported for DebugContentProvider.", (char) 771);
+        defpackage.d.v(b.b(), "Insert not supported for DebugContentProvider.", (char) 771);
         throw new IllegalArgumentException();
     }
 
@@ -155,7 +169,7 @@ public class DebugContentProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
-        d.v(b.b(), "Update not supported for DebugContentProvider.", (char) 769);
+        defpackage.d.v(b.b(), "Update not supported for DebugContentProvider.", (char) 769);
         throw new IllegalArgumentException();
     }
 }

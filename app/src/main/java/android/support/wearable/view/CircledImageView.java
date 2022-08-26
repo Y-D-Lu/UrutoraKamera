@@ -15,6 +15,10 @@ import android.view.View;
 import com.hdrindicator.DisplayHelper;
 
 import defpackage.ama;
+import defpackage.sf;
+import defpackage.te;
+import defpackage.tf;
+import defpackage.tk;
 
 @Deprecated
 /* loaded from: classes.dex */

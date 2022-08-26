@@ -9,6 +9,22 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.os.RemoteException;
 
+import defpackage.afp;
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.dei;
+import defpackage.enc;
+import defpackage.fhi;
+import defpackage.fip;
+import defpackage.hlt;
+import defpackage.hlv;
+import defpackage.hlx;
+import defpackage.hly;
+import defpackage.hlz;
+import defpackage.kcw;
+import defpackage.obr;
+import defpackage.ouj;
+
 /* loaded from: classes.dex */
 public class RemoteControlService extends Service {
     public static final ouj a = ouj.h("com/google/android/apps/camera/remotecontrol/RemoteControlService");

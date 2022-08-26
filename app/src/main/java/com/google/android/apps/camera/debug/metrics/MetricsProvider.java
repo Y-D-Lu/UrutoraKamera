@@ -2,12 +2,26 @@ package com.google.android.apps.camera.debug.metrics;
 
 import android.content.Context;
 import android.util.PrintWriterPrinter;
+
 import java.io.PrintWriter;
 import java.lang.reflect.Array;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
+
+import defpackage.dgu;
+import defpackage.dhh;
+import defpackage.enc;
+import defpackage.lyd;
+import defpackage.lye;
+import defpackage.lys;
+import defpackage.lyv;
+import defpackage.lyw;
+import defpackage.lyx;
+import defpackage.mip;
+import defpackage.nvb;
+import defpackage.obr;
 
 /* loaded from: classes.dex */
 public class MetricsProvider extends dgu {

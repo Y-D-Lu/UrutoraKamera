@@ -25,6 +25,15 @@ import android.util.Xml;
 import org.codeaurora.snapcam.R;
 import org.xmlpull.v1.XmlPullParser;
 
+import defpackage.sf;
+import defpackage.sh;
+import defpackage.sk;
+import defpackage.sl;
+import defpackage.sm;
+import defpackage.so;
+import defpackage.sq;
+import defpackage.sr;
+import defpackage.tr;
 import j$.util.Objects;
 
 /* loaded from: classes.dex */

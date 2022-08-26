@@ -8,7 +8,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.google.android.apps.camera.ui.elapsedtimeui.LongPressElapsedTimeView;
+
 import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */

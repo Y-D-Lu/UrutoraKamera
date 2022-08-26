@@ -1,5 +1,9 @@
 package com.google.android.apps.camera.jni.federatedphoto;
 
+import defpackage.lie;
+import defpackage.lil;
+import defpackage.ouj;
+
 /* loaded from: classes.dex */
 public final class ModeSuggestionClient implements lie {
     public static final ouj a = ouj.h("com/google/android/apps/camera/jni/federatedphoto/ModeSuggestionClient");

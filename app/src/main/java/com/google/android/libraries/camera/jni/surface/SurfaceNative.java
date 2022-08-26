@@ -2,6 +2,8 @@ package com.google.android.libraries.camera.jni.surface;
 
 import android.view.Surface;
 
+import defpackage.lil;
+
 /* loaded from: classes.dex */
 public class SurfaceNative {
     static {

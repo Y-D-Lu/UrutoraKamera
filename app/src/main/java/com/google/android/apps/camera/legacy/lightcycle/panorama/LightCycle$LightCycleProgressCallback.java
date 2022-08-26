@@ -2,6 +2,11 @@ package com.google.android.apps.camera.legacy.lightcycle.panorama;
 
 import java.util.Map;
 
+import defpackage.fcy;
+import defpackage.fcz;
+import defpackage.fdx;
+import defpackage.lif;
+
 /* loaded from: classes.dex */
 public final class LightCycle$LightCycleProgressCallback {
     private LightCycle$LightCycleProgressCallback() {

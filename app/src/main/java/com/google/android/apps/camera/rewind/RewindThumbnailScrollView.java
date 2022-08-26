@@ -18,11 +18,21 @@ import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.google.android.apps.camera.rewind.RewindThumbnailScrollView;
+
 import com.hdrindicator.DisplayHelper;
-import j$.util.function.Consumer;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
+
+import defpackage.hmq;
+import defpackage.hmy;
+import defpackage.hnk;
+import defpackage.mip;
+import defpackage.oug;
+import defpackage.ouj;
+import defpackage.ovl;
+import j$.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class RewindThumbnailScrollView extends HorizontalScrollView {

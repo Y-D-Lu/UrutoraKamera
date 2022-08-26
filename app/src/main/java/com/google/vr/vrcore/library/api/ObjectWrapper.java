@@ -1,5 +1,7 @@
 package com.google.vr.vrcore.library.api;
 
+import defpackage.bmo;
+
 /* loaded from: classes.dex */
 public final class ObjectWrapper extends bmo {
     private final Object wrappedObject;

@@ -2,6 +2,9 @@ package android.support.wearable.view;
 
 import android.support.v7.widget.LinearLayoutManager;
 
+import defpackage.qi;
+import defpackage.qp;
+
 /* loaded from: classes.dex */
 public abstract class WearableRecyclerView$ChildLayoutManager extends LinearLayoutManager {
     @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc

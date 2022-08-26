@@ -17,13 +17,27 @@ import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+
 import com.Helper;
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
+import java.io.File;
+
+import defpackage.img;
+import defpackage.jce;
+import defpackage.jrp;
+import defpackage.jrz;
+import defpackage.jsa;
+import defpackage.jur;
+import defpackage.jus;
+import defpackage.lar;
+import defpackage.mip;
 import j$.util.Collection;
 import j$.util.function.Consumer;
-import java.io.File;
 
 /* loaded from: classes.dex */
 public class BottomBar extends LinearLayout {

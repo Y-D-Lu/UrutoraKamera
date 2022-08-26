@@ -9,6 +9,8 @@ import java.util.Date;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
+import defpackage.si;
+
 /* loaded from: classes.dex */
 public class TimeFormatText implements TimeDependentText {
     public final SimpleDateFormat a;

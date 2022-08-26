@@ -2,6 +2,8 @@ package com.google.android.apps.camera.imax.cyclops.processing;
 
 import com.google.android.apps.camera.imax.cyclops.image.StereoPanorama;
 
+import defpackage.ejq;
+
 /* loaded from: classes.dex */
 public class OmnistereoRendererImpl implements ejq {
     public boolean b;

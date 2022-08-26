@@ -1,8 +1,11 @@
 package com;
 
 import android.hardware.camera2.CaptureResult;
+
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.SpatialGainMap;
+
+import defpackage.lzs;
 
 /* loaded from: classes3.dex */
 public class SpatialGainMapValue {

@@ -2,7 +2,12 @@ package com.google.android.gms.auth.api.signin;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.common.internal.ReflectedParcelable;
+
+import defpackage.kno;
+import defpackage.mip;
+import defpackage.si;
 
 /* loaded from: classes.dex */
 public class SignInAccount extends kno implements ReflectedParcelable {

@@ -5,7 +5,19 @@ import android.content.res.Resources;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
+
 import java.lang.reflect.Field;
+
+import defpackage.plk;
+import defpackage.pos;
+import defpackage.ppd;
+import defpackage.ppp;
+import defpackage.pvx;
+import defpackage.pwo;
+import defpackage.pwz;
+import defpackage.pxd;
+import defpackage.pxe;
+import defpackage.pxf;
 
 /* loaded from: classes.dex */
 public class VrParamsProviderJni {

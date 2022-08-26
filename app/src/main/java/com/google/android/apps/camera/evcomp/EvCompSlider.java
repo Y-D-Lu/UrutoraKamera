@@ -10,8 +10,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.FrameLayout;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.dmf;
 
 /* loaded from: classes.dex */
 public class EvCompSlider extends FrameLayout {

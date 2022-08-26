@@ -2,7 +2,16 @@ package com.google.android.material.progressindicator;
 
 import android.content.Context;
 import android.util.AttributeSet;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.oae;
+import defpackage.oaf;
+import defpackage.oag;
+import defpackage.oal;
+import defpackage.oam;
+import defpackage.oao;
+import defpackage.oav;
 
 /* loaded from: classes.dex */
 public final class CircularProgressIndicator extends oae {

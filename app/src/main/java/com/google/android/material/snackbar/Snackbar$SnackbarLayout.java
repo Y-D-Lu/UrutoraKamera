@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
+import defpackage.ock;
+
 /* loaded from: classes.dex */
 public final class Snackbar$SnackbarLayout extends ock {
     public Snackbar$SnackbarLayout(Context context) {

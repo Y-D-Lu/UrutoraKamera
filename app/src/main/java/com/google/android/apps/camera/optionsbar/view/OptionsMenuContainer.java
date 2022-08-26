@@ -20,12 +20,44 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
 import com.Helper;
-import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 import com.hdrindicator.DisplayHelper;
-import j$.util.Collection;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
+
+import defpackage.bpx;
+import defpackage.dcw;
+import defpackage.dcy;
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.ddv;
+import defpackage.elw;
+import defpackage.gtu;
+import defpackage.gtz;
+import defpackage.gug;
+import defpackage.guh;
+import defpackage.guj;
+import defpackage.guk;
+import defpackage.gum;
+import defpackage.gun;
+import defpackage.guq;
+import defpackage.htf;
+import defpackage.huj;
+import defpackage.iem;
+import defpackage.jgu;
+import defpackage.jru;
+import defpackage.jrz;
+import defpackage.jsh;
+import defpackage.mip;
+import defpackage.obr;
+import defpackage.ouj;
+import defpackage.pht;
+import defpackage.pih;
+import defpackage.plk;
+import j$.util.Collection;
 
 /* loaded from: classes.dex */
 public class OptionsMenuContainer extends RelativeLayout {

@@ -12,11 +12,26 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
-import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
+
+import defpackage.gtk;
+import defpackage.gtl;
+import defpackage.gtm;
+import defpackage.gtp;
+import defpackage.gtv;
+import defpackage.gtw;
+import defpackage.gug;
+import defpackage.guq;
+import defpackage.gut;
+import defpackage.jrz;
+import defpackage.mip;
+import defpackage.oug;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class OptionsMenuView extends ScrollView {

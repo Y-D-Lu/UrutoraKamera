@@ -6,6 +6,8 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 
+import org.codeaurora.snapcam.R;
+
 /* loaded from: classes.dex */
 public class PauseResumeButton extends ImageButton {
     private static final int[] STATE_PAUSED = {R.attr.state_paused};

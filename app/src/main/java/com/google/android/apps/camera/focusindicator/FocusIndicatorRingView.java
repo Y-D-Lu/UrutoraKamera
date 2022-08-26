@@ -8,7 +8,15 @@ import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.util.AttributeSet;
 import android.view.View;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.duj;
+import defpackage.duk;
+import defpackage.dul;
+import defpackage.dum;
+import defpackage.jrz;
+import defpackage.lic;
 
 /* loaded from: classes.dex */
 public class FocusIndicatorRingView extends View {

@@ -1,5 +1,7 @@
 package android.support.v7.widget;
 
+import static defpackage.qc.as;
+
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
@@ -8,7 +10,17 @@ import android.util.SparseIntArray;
 import android.view.View;
 import android.view.ViewGroup;
 
+import defpackage.hb;
 import defpackage.kkm;
+import defpackage.ou;
+import defpackage.ox;
+import defpackage.oy;
+import defpackage.pb;
+import defpackage.pd;
+import defpackage.qc;
+import defpackage.qd;
+import defpackage.qi;
+import defpackage.qp;
 
 /* loaded from: classes.dex */
 public class GridLayoutManager extends LinearLayoutManager {

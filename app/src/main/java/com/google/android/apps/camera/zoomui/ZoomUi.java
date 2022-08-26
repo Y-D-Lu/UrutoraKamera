@@ -21,11 +21,26 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.Space;
 import android.widget.TextView;
-import com.google.android.apps.camera.zoomui.ZoomUi;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
+import defpackage.aar;
+import defpackage.adt;
+import defpackage.ei;
+import defpackage.jrz;
+import defpackage.jsa;
+import defpackage.kae;
+import defpackage.kaf;
+import defpackage.kai;
+import defpackage.lzi;
+import defpackage.mip;
+import defpackage.obr;
+import defpackage.ope;
+import defpackage.ouj;
 import j$.util.Collection;
 import j$.util.function.Consumer;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */
 public class ZoomUi extends FrameLayout {

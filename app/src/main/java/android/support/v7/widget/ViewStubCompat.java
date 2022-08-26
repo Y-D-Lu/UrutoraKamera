@@ -11,6 +11,8 @@ import android.view.ViewParent;
 
 import java.lang.ref.WeakReference;
 
+import defpackage.jq;
+
 /* loaded from: classes.dex */
 public final class ViewStubCompat extends View {
     public LayoutInflater a;

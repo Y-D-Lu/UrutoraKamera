@@ -2,10 +2,7 @@ package com.google.android.apps.camera.debug.shottracker.db;
 
 import android.content.Context;
 import android.database.Cursor;
-import j$.time.Duration;
-import j$.time.Instant;
-import j$.time.ZoneId;
-import j$.time.format.DateTimeFormatter;
+
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,6 +10,22 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import defpackage.aig;
+import defpackage.ais;
+import defpackage.dgu;
+import defpackage.dil;
+import defpackage.dir;
+import defpackage.dit;
+import defpackage.diu;
+import defpackage.diy;
+import defpackage.diz;
+import defpackage.fw;
+import defpackage.fy;
+import j$.time.Duration;
+import j$.time.Instant;
+import j$.time.ZoneId;
+import j$.time.format.DateTimeFormatter;
 
 /* loaded from: classes.dex */
 public class DbDebugDumper extends dgu {

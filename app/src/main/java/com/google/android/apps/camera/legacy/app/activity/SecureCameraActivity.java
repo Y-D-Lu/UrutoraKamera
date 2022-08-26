@@ -1,7 +1,10 @@
 package com.google.android.apps.camera.legacy.app.activity;
 
 import android.os.Bundle;
+
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
+
+import defpackage.bqe;
 
 /* loaded from: classes.dex */
 public class SecureCameraActivity extends CameraActivity {

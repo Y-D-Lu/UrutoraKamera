@@ -2,7 +2,12 @@ package com.google.android.gms.common.api;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.common.internal.ReflectedParcelable;
+
+import defpackage.kno;
+import defpackage.mip;
+import defpackage.sk;
 
 /* loaded from: classes.dex */
 public final class Scope extends kno implements ReflectedParcelable {

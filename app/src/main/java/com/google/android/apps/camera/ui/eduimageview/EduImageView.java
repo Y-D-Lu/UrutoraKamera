@@ -7,7 +7,13 @@ import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.bottombar.R;
+
+import defpackage.fyb;
+import defpackage.iuz;
+import defpackage.jap;
+import defpackage.nyj;
 
 /* loaded from: classes.dex */
 public class EduImageView extends FrameLayout {

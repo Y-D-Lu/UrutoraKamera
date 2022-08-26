@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import defpackage.ba;
+import defpackage.et;
+import defpackage.eu;
+
 /* loaded from: classes2.dex */
 public final class MediaDescriptionCompat implements Parcelable {
     public static final Parcelable.Creator CREATOR = new ba(6);

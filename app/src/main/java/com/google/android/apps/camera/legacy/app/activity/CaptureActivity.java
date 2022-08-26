@@ -3,7 +3,12 @@ package com.google.android.apps.camera.legacy.app.activity;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
+
+import defpackage.bqe;
+import defpackage.oug;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class CaptureActivity extends CameraActivity {
@@ -50,7 +55,7 @@ public class CaptureActivity extends CameraActivity {
             ((oug) ((oug) s.c()).G((char) 1501)).r("Package %s doesn't have location permissions, location info won't be included in EXIF", callingPackage);
             return;
         }
-        d.v(s.c(), "Allowing location in intent", (char) 1500);
+        defpackage.d.v(s.c(), "Allowing location in intent", (char) 1500);
         getIntent().putExtra("include_location_in_exif", true);
     }
 }

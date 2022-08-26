@@ -37,6 +37,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 import defpackage.aby;
+import defpackage.fp;
+import defpackage.fq;
+import defpackage.gb;
+import defpackage.ge;
+import defpackage.gf;
+import defpackage.gg;
+import defpackage.gl;
+import defpackage.jt;
+import defpackage.mm;
+import defpackage.mn;
+import defpackage.ny;
+import defpackage.or;
+import defpackage.ou;
+import defpackage.ow;
+import defpackage.pt;
+import defpackage.pu;
+import defpackage.px;
+import defpackage.py;
+import defpackage.pz;
+import defpackage.qc;
+import defpackage.qd;
+import defpackage.qe;
+import defpackage.qf;
+import defpackage.qg;
+import defpackage.qh;
+import defpackage.qi;
+import defpackage.qk;
+import defpackage.ql;
+import defpackage.qo;
+import defpackage.qp;
+import defpackage.qq;
+import defpackage.qr;
+import defpackage.qs;
+import defpackage.qu;
+import defpackage.sb;
+import defpackage.sc;
 
 /* loaded from: classes.dex */
 public class RecyclerView extends ViewGroup implements fp {

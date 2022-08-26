@@ -2,6 +2,8 @@ package com.google.vr.ndk.base;
 
 import android.app.Activity;
 
+import defpackage.pvw;
+
 /* loaded from: classes.dex */
 public final class AndroidCompat {
     private AndroidCompat() {

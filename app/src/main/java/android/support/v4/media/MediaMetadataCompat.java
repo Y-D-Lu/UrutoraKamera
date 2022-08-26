@@ -4,6 +4,10 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import defpackage.ba;
+import defpackage.ew;
+import defpackage.wy;
+
 /* loaded from: classes.dex */
 public final class MediaMetadataCompat implements Parcelable {
     public static final Parcelable.Creator CREATOR;

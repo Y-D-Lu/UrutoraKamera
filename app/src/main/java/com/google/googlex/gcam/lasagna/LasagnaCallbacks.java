@@ -2,6 +2,8 @@ package com.google.googlex.gcam.lasagna;
 
 import com.google.googlex.gcam.ShotMetadata;
 
+import defpackage.ojc;
+
 /* loaded from: classes.dex */
 public interface LasagnaCallbacks {
     void a(int i, int i2, String str, ojc ojcVar);

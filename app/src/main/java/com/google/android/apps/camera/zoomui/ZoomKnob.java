@@ -6,12 +6,24 @@ import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
-import org.codeaurora.snapcam.R;
+
+import defpackage.bpx;
+import defpackage.ddf;
+import defpackage.ddi;
+import defpackage.ddl;
+import defpackage.kag;
+import defpackage.lzi;
+import defpackage.oug;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class ZoomKnob extends TextView {

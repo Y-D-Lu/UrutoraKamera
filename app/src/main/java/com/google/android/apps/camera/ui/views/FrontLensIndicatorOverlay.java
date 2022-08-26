@@ -11,8 +11,20 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.bpx;
+import defpackage.dcw;
+import defpackage.dcy;
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.jrz;
+import defpackage.mip;
+import defpackage.obr;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class FrontLensIndicatorOverlay extends View {

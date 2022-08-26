@@ -4,6 +4,7 @@ import android.graphics.Rect;
 import android.hardware.HardwareBuffer;
 import android.util.Log;
 import android.view.Surface;
+
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -16,6 +17,9 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import defpackage.lil;
+import defpackage.mmc;
 
 /* loaded from: classes.dex */
 public class BufferFlinger implements mmc {

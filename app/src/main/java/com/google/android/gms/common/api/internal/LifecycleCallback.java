@@ -4,6 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import defpackage.kkm;
+import defpackage.kkn;
+import defpackage.mip;
+
 /* loaded from: classes.dex */
 public class LifecycleCallback {
     public final kkn f;

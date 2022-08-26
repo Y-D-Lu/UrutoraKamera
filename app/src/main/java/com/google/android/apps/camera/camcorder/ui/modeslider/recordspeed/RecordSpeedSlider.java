@@ -7,8 +7,19 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import java.util.concurrent.atomic.AtomicInteger;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.atomic.AtomicInteger;
+
+import defpackage.ctv;
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.ei;
+import defpackage.jem;
+import defpackage.jen;
+import defpackage.obr;
+import defpackage.ols;
 
 /* loaded from: classes.dex */
 public class RecordSpeedSlider extends LinearLayout implements jen {

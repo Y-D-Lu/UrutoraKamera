@@ -3,6 +3,7 @@ package com.google.android.apps.camera.rewind;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextSwitcher;
+
 import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */

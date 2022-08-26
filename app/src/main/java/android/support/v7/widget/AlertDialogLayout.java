@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 
 import com.google.android.apps.camera.bottombar.R;
 
+import defpackage.gl;
+import defpackage.pa;
+
 /* loaded from: classes.dex */
 public class AlertDialogLayout extends LinearLayoutCompat {
     public AlertDialogLayout(Context context) {

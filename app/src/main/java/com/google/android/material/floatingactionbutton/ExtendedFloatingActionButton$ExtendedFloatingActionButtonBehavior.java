@@ -6,10 +6,20 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
 import java.util.List;
+
+import defpackage.aae;
+import defpackage.aah;
+import defpackage.nyu;
+import defpackage.nzi;
+import defpackage.nzj;
+import defpackage.nzo;
 
 /* loaded from: classes.dex */
 public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior extends aae {

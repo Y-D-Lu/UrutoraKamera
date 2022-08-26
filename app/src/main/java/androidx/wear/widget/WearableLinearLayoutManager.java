@@ -2,6 +2,9 @@ package androidx.wear.widget;
 
 import android.support.v7.widget.LinearLayoutManager;
 
+import defpackage.qi;
+import defpackage.qp;
+
 /* loaded from: classes.dex */
 public class WearableLinearLayoutManager extends LinearLayoutManager {
     @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc

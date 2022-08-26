@@ -1,5 +1,7 @@
 package com.google.googlex.gcam;
 
+import defpackage.pjk;
+
 /* loaded from: classes.dex */
 public class RawWriteView extends RawReadView {
     private transient long c;

@@ -12,7 +12,7 @@ import j$.util.function.Function;
 
 /* renamed from: oor  reason: default package */
 /* loaded from: classes2.dex */
-public abstract class oor implements Map, Serializable, j$.util.Map {
+public abstract class oor implements Map, Serializable {
     private transient ope a;
     private transient ope b;
     private transient ood c;

@@ -11,6 +11,7 @@ import com.hdrindicator.DisplayHelper;
 import defpackage.afr;
 import defpackage.aft;
 import defpackage.afu;
+import defpackage.gl;
 
 @Deprecated
 /* loaded from: classes.dex */

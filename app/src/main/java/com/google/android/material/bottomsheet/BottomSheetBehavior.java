@@ -14,14 +14,35 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.ViewParent;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
+
+import defpackage.aae;
+import defpackage.aah;
+import defpackage.aca;
+import defpackage.acb;
+import defpackage.gl;
+import defpackage.ha;
+import defpackage.hj;
+import defpackage.nxm;
+import defpackage.nxn;
+import defpackage.nxp;
+import defpackage.nxq;
+import defpackage.nxr;
+import defpackage.nxt;
+import defpackage.nxu;
+import defpackage.nyb;
+import defpackage.obr;
+import defpackage.obu;
+import defpackage.obz;
 
 /* loaded from: classes.dex */
 public class BottomSheetBehavior extends aae {

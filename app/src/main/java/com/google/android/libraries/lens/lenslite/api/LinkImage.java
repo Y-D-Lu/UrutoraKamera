@@ -3,6 +3,10 @@ package com.google.android.libraries.lens.lenslite.api;
 import android.graphics.Bitmap;
 import android.media.Image;
 
+import defpackage.obr;
+import defpackage.oih;
+import defpackage.ojc;
+
 /* loaded from: classes.dex */
 public final class LinkImage {
     private final ojc height;

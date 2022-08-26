@@ -17,9 +17,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.codeaurora.snapcam.R;
+
+import defpackage.gl;
+import defpackage.gy;
+import defpackage.nwj;
+import defpackage.nwx;
+import defpackage.nwy;
+import defpackage.nwz;
+import defpackage.nxa;
+import defpackage.nxe;
+import defpackage.nxg;
+import defpackage.nyl;
+import defpackage.nzn;
+import defpackage.nzo;
+import defpackage.nzw;
+import defpackage.obr;
+import defpackage.odn;
 
 /* loaded from: classes2.dex */
 public class CollapsingToolbarLayout extends FrameLayout {

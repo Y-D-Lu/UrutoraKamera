@@ -14,9 +14,21 @@ import android.view.WindowInsets;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.dty;
+import defpackage.dub;
+import defpackage.duc;
+import defpackage.dud;
+import defpackage.due;
+import defpackage.duf;
+import defpackage.jsa;
+import defpackage.lzh;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class FilmstripTransitionLayout extends FrameLayout {

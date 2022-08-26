@@ -7,7 +7,7 @@ import java.util.concurrent.TimeoutException;
 
 /* renamed from: hwg  reason: default package */
 /* loaded from: classes.dex */
-final class hwg implements phh {
+public final class hwg implements phh {
     final /* synthetic */ long a;
     final /* synthetic */ hwh b;
 

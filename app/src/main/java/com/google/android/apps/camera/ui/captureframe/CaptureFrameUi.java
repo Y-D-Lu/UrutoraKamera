@@ -7,12 +7,17 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
-import com.google.android.apps.camera.ui.captureframe.CaptureFrameUi;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
+import java.util.List;
+
+import defpackage.ivc;
+import defpackage.oom;
 import j$.util.Collection;
 import j$.util.function.Consumer;
-import java.util.List;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */
 public class CaptureFrameUi extends View {

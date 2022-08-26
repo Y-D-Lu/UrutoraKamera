@@ -10,8 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.bottombar.R;
-import com.google.android.apps.camera.ui.preference.KeyListenerPreference;
+
+import defpackage.jhw;
+import defpackage.oje;
 
 /* loaded from: classes.dex */
 public class KeyListenerPreference extends DialogPreference {

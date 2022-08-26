@@ -951,7 +951,7 @@ public class RenderScript {
                 throw th;
             }
         } catch (Throwable th2) {
-            th = th2;
+            // th = th2;
         }
     }
 

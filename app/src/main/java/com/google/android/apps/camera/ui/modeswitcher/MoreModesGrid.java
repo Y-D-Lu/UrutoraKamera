@@ -15,9 +15,24 @@ import android.view.accessibility.AccessibilityManager;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.GridLayout;
 import android.widget.TextView;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.ArrayList;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.ArrayList;
+
+import defpackage.fjs;
+import defpackage.jgm;
+import defpackage.jgp;
+import defpackage.jrl;
+import defpackage.jrz;
+import defpackage.lar;
+import defpackage.obr;
+import defpackage.oih;
+import defpackage.ojc;
+import defpackage.oug;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class MoreModesGrid extends GridLayout implements jgm {

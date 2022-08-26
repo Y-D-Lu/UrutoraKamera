@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.PointF;
 import android.media.Image;
 import android.os.Handler;
+
 import com.google.android.libraries.lens.lenslite.api.DownloadListener;
 import com.google.android.libraries.lens.lenslite.api.DownloadParam;
 import com.google.android.libraries.lens.lenslite.api.ImageProxy;
@@ -14,6 +15,7 @@ import com.google.android.libraries.lens.lenslite.api.LinkEventListener;
 import com.google.android.libraries.lens.lenslite.api.LinkHighResBitmapRequester;
 import com.google.android.libraries.lens.lenslite.api.LoggingListener;
 import com.google.android.libraries.lens.lenslite.api.ModelInfoListener;
+
 import java.util.List;
 
 /* loaded from: classes.dex */

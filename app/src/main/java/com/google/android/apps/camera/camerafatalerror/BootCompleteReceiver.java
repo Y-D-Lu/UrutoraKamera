@@ -4,6 +4,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
+import defpackage.ahj;
+
 /* loaded from: classes.dex */
 public class BootCompleteReceiver extends BroadcastReceiver {
     @Override // android.content.BroadcastReceiver

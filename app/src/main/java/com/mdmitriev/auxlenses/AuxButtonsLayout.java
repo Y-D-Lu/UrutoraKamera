@@ -10,15 +10,17 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+
 import com.Fix.Pref;
 import com.Helper;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
-import com.mdmitriev.auxlenses.AuxButtonsLayout;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.function.Consumer;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */
 public class AuxButtonsLayout extends RelativeLayout {

@@ -8,6 +8,9 @@ import android.widget.LinearLayout;
 
 import org.codeaurora.snapcam.R;
 
+import defpackage.gl;
+import defpackage.jq;
+
 /* loaded from: classes.dex */
 public class ButtonBarLayout extends LinearLayout {
     private boolean a;

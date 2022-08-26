@@ -6,7 +6,11 @@ import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.iab;
+import defpackage.lar;
 
 /* loaded from: classes.dex */
 public class SmartsUiGleamingView extends View {

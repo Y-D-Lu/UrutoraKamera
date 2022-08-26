@@ -2,7 +2,10 @@ package com.google.googlex.gcam.creativecamera.seedark;
 
 import android.hardware.HardwareBuffer;
 import android.view.Surface;
+
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import defpackage.pjw;
 
 /* loaded from: classes.dex */
 public final class SeeDarkNativeImpl implements pjw {

@@ -6,10 +6,20 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
+
 import com.google.android.gms.common.data.BitmapTeleporter;
 import com.google.android.gms.common.internal.ReflectedParcelable;
+
 import java.io.File;
 import java.util.List;
+
+import defpackage.kno;
+import defpackage.kpb;
+import defpackage.kpd;
+import defpackage.kpe;
+import defpackage.kpf;
+import defpackage.mip;
+import defpackage.sk;
 
 /* loaded from: classes.dex */
 public class ErrorReport extends kno implements ReflectedParcelable {

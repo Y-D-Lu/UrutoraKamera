@@ -5,11 +5,16 @@ import android.text.Layout;
 import android.view.MenuItem;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import com.google.android.libraries.social.licenses.LicenseActivity;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import org.codeaurora.snapcam.R;
+
+import defpackage.ih;
+import defpackage.myq;
+import defpackage.nic;
 
 /* loaded from: classes.dex */
 public final class LicenseActivity extends ih {

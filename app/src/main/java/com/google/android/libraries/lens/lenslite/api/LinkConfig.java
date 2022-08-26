@@ -1,10 +1,31 @@
 package com.google.android.libraries.lens.lenslite.api;
 
 import android.util.Log;
+
 import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import defpackage.mgp;
+import defpackage.mhf;
+import defpackage.mhy;
+import defpackage.mhz;
+import defpackage.mia;
+import defpackage.mib;
+import defpackage.mic;
+import defpackage.mid;
+import defpackage.mie;
+import defpackage.mif;
+import defpackage.mio;
+import defpackage.mip;
+import defpackage.pnl;
+import defpackage.poc;
+import defpackage.pos;
+import defpackage.poy;
+import defpackage.ppd;
+import defpackage.ppm;
+import defpackage.ppp;
 
 /* loaded from: classes.dex */
 public abstract class LinkConfig {

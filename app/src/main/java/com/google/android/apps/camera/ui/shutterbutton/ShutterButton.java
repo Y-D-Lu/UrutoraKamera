@@ -19,11 +19,41 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.view.accessibility.AccessibilityNodeInfo;
-import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
-import j$.util.function.Consumer;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
+
+import defpackage.adt;
+import defpackage.hti;
+import defpackage.jjw;
+import defpackage.jjz;
+import defpackage.jka;
+import defpackage.jkb;
+import defpackage.jkc;
+import defpackage.jkd;
+import defpackage.jke;
+import defpackage.jkf;
+import defpackage.jkz;
+import defpackage.jli;
+import defpackage.jlp;
+import defpackage.jlq;
+import defpackage.jrl;
+import defpackage.jrw;
+import defpackage.jsa;
+import defpackage.jty;
+import defpackage.lci;
+import defpackage.lco;
+import defpackage.lcw;
+import defpackage.mip;
+import defpackage.mw;
+import defpackage.obr;
+import defpackage.ojz;
+import defpackage.ope;
+import defpackage.oug;
+import defpackage.ouj;
+import j$.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class ShutterButton extends mw {

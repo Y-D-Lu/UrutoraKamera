@@ -6,7 +6,11 @@ import android.support.v7.widget.LinearLayoutCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.htf;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class LinearMinibarImpl extends LinearLayoutCompat {

@@ -1,6 +1,7 @@
 package com.google.vr.vrcore.controller.api;
 
-import com.google.vr.vrcore.controller.api.ControllerServiceBridge;
+import defpackage.pxs;
+import defpackage.pxv;
 
 /* loaded from: classes.dex */
 public final class NativeCallbacks implements ControllerServiceBridge.Callbacks {

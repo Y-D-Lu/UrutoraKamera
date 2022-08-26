@@ -7,6 +7,10 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 
+import org.codeaurora.snapcam.R;
+
+import defpackage.jsa;
+
 @Deprecated
 /* loaded from: classes.dex */
 public class RoundedStateView extends ImageButton {

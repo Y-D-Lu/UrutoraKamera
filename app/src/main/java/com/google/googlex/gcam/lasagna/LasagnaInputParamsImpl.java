@@ -2,8 +2,13 @@ package com.google.googlex.gcam.lasagna;
 
 import com.google.googlex.gcam.FrameMetadata;
 import com.google.googlex.gcam.RawWriteView;
+
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import defpackage.obr;
+import defpackage.plj;
+import defpackage.pll;
 
 /* loaded from: classes.dex */
 public class LasagnaInputParamsImpl implements pll {

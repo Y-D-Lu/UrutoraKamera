@@ -1,7 +1,5 @@
 package com.google.android.apps.camera.bottombar;
 
-import com.google.android.apps.camera.bottombar.PauseResumeButton;
-
 /* loaded from: classes2.dex */
 public abstract class BottomBarListener implements PauseResumeButton.PauseResumeButtonListener {
     public void onCameraSwitchButtonClicked() {

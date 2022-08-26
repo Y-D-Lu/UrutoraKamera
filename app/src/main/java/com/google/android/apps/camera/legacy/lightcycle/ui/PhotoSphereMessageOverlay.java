@@ -6,7 +6,13 @@ import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.feo;
+import defpackage.fer;
+import defpackage.fes;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class PhotoSphereMessageOverlay extends FrameLayout {

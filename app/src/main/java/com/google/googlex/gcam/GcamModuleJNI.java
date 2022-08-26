@@ -1,8 +1,5 @@
 package com.google.googlex.gcam;
 
-import com.google.googlex.gcam.FaceInfo;
-import com.google.googlex.gcam.QcColorCalibration;
-
 /* loaded from: classes2.dex */
 public class GcamModuleJNI {
     public static final native void AeMetadata_exposure_compensation_set(long j, AeMetadata aeMetadata, float f);

@@ -3,8 +3,12 @@ package com;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CaptureResult;
 import android.util.Pair;
+
 import com.Fix.Pref;
 import com.google.android.apps.camera.bottombar.R;
+
+import defpackage.lvp;
+import defpackage.lzv;
 
 /* loaded from: classes2.dex */
 public class NoiseModels {

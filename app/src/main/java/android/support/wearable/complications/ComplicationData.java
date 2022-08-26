@@ -8,6 +8,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
+import defpackage.sg;
+import defpackage.si;
+
 /* loaded from: classes.dex */
 public class ComplicationData implements Parcelable {
     public final int b;

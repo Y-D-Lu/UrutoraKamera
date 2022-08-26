@@ -6,6 +6,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import defpackage.jpc;
+import defpackage.jpd;
+import defpackage.jpe;
+
 /* loaded from: classes.dex */
 public class TracedFrameLayout extends FrameLayout {
     private final jpd a;

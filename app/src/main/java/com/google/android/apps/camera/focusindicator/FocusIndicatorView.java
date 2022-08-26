@@ -10,9 +10,31 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 import com.Fix.Pref;
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.bnl;
+import defpackage.duh;
+import defpackage.dui;
+import defpackage.duj;
+import defpackage.dul;
+import defpackage.dun;
+import defpackage.duo;
+import defpackage.dup;
+import defpackage.dur;
+import defpackage.duu;
+import defpackage.duv;
+import defpackage.ggm;
+import defpackage.ggn;
+import defpackage.ggp;
+import defpackage.jrz;
+import defpackage.jsj;
+import defpackage.jsk;
+import defpackage.ojc;
+import defpackage.qmd;
 
 /* loaded from: classes.dex */
 public class FocusIndicatorView extends RelativeLayout implements bnl {

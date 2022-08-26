@@ -13,9 +13,19 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
-import j$.util.function.Function;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.enc;
+import defpackage.hts;
+import defpackage.hub;
+import defpackage.huf;
+import defpackage.jhu;
+import defpackage.jhy;
+import defpackage.jia;
+import defpackage.jid;
+import defpackage.jif;
+import j$.util.function.Function;
 
 /* loaded from: classes.dex */
 public class ManagedSwitchPreference extends SwitchPreference implements Preference.OnPreferenceChangeListener, jhu {

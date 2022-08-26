@@ -4,8 +4,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
+
 import java.util.Locale;
+
+import defpackage.jri;
+import defpackage.jrl;
+import defpackage.oit;
+import defpackage.ojc;
+import defpackage.oug;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class CameraDeepLinkActivity extends Activity {
@@ -28,7 +37,7 @@ public class CameraDeepLinkActivity extends Activity {
         intent.addFlags(268435456);
         Uri data = getIntent().getData();
         if (data == null) {
-            d.v(a.c(), "Received intent to launch DeepLinkActivity with null intentUri", (char) 1496);
+            defpackage.d.v(a.c(), "Received intent to launch DeepLinkActivity with null intentUri", (char) 1496);
             startActivity(intent);
             this.b = true;
             return;

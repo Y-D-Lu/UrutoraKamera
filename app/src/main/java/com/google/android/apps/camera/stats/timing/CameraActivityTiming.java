@@ -1,5 +1,14 @@
 package com.google.android.apps.camera.stats.timing;
 
+import defpackage.iiz;
+import defpackage.ijf;
+import defpackage.ijq;
+import defpackage.ijr;
+import defpackage.ijs;
+import defpackage.ljf;
+import defpackage.lji;
+import defpackage.mcx;
+
 /* loaded from: classes.dex */
 public class CameraActivityTiming extends ijs {
     public static final ijr a;

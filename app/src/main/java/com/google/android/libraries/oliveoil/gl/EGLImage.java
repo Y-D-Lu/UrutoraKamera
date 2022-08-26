@@ -2,7 +2,12 @@ package com.google.android.libraries.oliveoil.gl;
 
 import android.hardware.HardwareBuffer;
 import android.opengl.EGL14;
+
 import com.google.android.libraries.oliveoil.util.JniUtil;
+
+import defpackage.mmc;
+import defpackage.mme;
+import defpackage.mmf;
 
 /* loaded from: classes.dex */
 public class EGLImage implements mmc {

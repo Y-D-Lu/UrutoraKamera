@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.gl;
+import defpackage.ocl;
 
 /* loaded from: classes.dex */
 public class SnackbarContentLayout extends LinearLayout {

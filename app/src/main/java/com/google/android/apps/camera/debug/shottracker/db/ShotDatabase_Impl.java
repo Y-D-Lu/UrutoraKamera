@@ -8,6 +8,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import defpackage.ahy;
+import defpackage.aif;
+import defpackage.ajd;
+import defpackage.ajq;
+import defpackage.ajr;
+import defpackage.ajs;
+import defpackage.aju;
+import defpackage.dil;
+import defpackage.dir;
+import defpackage.dis;
+import defpackage.diu;
+import defpackage.diy;
+
 /* loaded from: classes2.dex */
 public final class ShotDatabase_Impl extends ShotDatabase {
     private volatile dil m;

@@ -2,7 +2,12 @@ package com.google.android.gms.googlehelp.internal.common;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.common.internal.ReflectedParcelable;
+
+import defpackage.kno;
+import defpackage.kpg;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class TogglingData extends kno implements ReflectedParcelable {

@@ -12,8 +12,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.adt;
+import defpackage.jra;
+import defpackage.jrb;
+import defpackage.jrc;
+import defpackage.jrd;
+import defpackage.jre;
+import defpackage.jrf;
+import defpackage.jrg;
+import defpackage.jrz;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class ZoomLockView extends RelativeLayout {

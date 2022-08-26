@@ -11,11 +11,24 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
-import com.google.android.apps.camera.ui.preference.MaterialManagedSwitchPreference;
-import j$.util.function.Function;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.agm;
+import defpackage.ahm;
+import defpackage.enc;
+import defpackage.hts;
+import defpackage.hub;
+import defpackage.huf;
+import defpackage.jib;
+import defpackage.jid;
+import defpackage.jif;
+import defpackage.jig;
+import defpackage.jih;
+import j$.util.function.Function;
 
 /* loaded from: classes.dex */
 public class MaterialManagedSwitchPreference extends SwitchPreference implements agm, jib {

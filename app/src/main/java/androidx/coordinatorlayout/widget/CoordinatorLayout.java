@@ -40,6 +40,15 @@ import defpackage.aai;
 import defpackage.aaj;
 import defpackage.aak;
 import defpackage.aal;
+import defpackage.fc;
+import defpackage.fe;
+import defpackage.fr;
+import defpackage.fs;
+import defpackage.ft;
+import defpackage.gl;
+import defpackage.gy;
+import defpackage.px;
+import defpackage.yc;
 
 /* loaded from: classes.dex */
 public class CoordinatorLayout extends ViewGroup implements fr, fs {

@@ -1,5 +1,12 @@
 package com.google.android.apps.camera.autotimer.analysis.jni;
 
+import defpackage.lil;
+import defpackage.mad;
+import defpackage.ppd;
+import defpackage.pud;
+import defpackage.pum;
+import defpackage.pvb;
+
 /* loaded from: classes2.dex */
 public class Curator implements BaseCurator {
     private long pointer;

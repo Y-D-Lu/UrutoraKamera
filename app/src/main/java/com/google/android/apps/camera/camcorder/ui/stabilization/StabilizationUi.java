@@ -6,9 +6,15 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.animation.LinearInterpolator;
 import android.widget.FrameLayout;
-import com.google.android.apps.camera.camcorder.ui.stabilization.StabilizationUi;
+
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuButton;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.cuv;
+import defpackage.jrz;
+import defpackage.mip;
+import defpackage.oor;
 
 /* loaded from: classes.dex */
 public class StabilizationUi extends FrameLayout {

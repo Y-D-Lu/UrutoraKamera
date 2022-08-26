@@ -1,8 +1,9 @@
 package com.eszdman.rampatcher;
 
+import org.codeaurora.snapcam.R;
+
 import java.io.ObjectInputStream;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes2.dex */
 public class PatcherSession {

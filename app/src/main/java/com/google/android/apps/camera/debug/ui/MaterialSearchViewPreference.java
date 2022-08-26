@@ -2,8 +2,13 @@ package com.google.android.apps.camera.debug.ui;
 
 import android.content.Context;
 import android.widget.SearchView;
+
 import androidx.preference.Preference;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.ahm;
+import defpackage.djo;
 
 /* loaded from: classes.dex */
 public class MaterialSearchViewPreference extends Preference {

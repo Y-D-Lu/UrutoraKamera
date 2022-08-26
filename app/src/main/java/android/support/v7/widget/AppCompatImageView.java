@@ -7,6 +7,11 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
+import defpackage.mp;
+import defpackage.mx;
+import defpackage.ri;
+import defpackage.rk;
+
 /* loaded from: classes.dex */
 public class AppCompatImageView extends ImageView {
     private final mp a;

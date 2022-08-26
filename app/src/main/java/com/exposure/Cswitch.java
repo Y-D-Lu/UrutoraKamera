@@ -6,7 +6,9 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.view.View;
+
 import com.Helper;
+
 import org.codeaurora.snapcam.R;
 
 /* renamed from: com.exposure.switch  reason: invalid class name */

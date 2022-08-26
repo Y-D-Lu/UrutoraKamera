@@ -4,6 +4,16 @@ import com.google.googlex.gcam.RawWriteView;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.YuvWriteView;
 
+import defpackage.bvf;
+import defpackage.hlr;
+import defpackage.lzi;
+import defpackage.mad;
+import defpackage.ojc;
+import defpackage.ouj;
+import defpackage.ovd;
+import defpackage.ovl;
+import defpackage.pko;
+
 /* loaded from: classes.dex */
 public class DynamicDepthUtils {
     public static final ouj a = ouj.h("com/google/android/apps/camera/dynamicdepth/DynamicDepthUtils");
@@ -50,7 +60,7 @@ public class DynamicDepthUtils {
         pko pkoVar = new pko();
         ojc a2 = pkoVar.a(madVar);
         if (!a2.g()) {
-            d.v(a.b().g(ovl.a, "CAM_DynDepthUtils"), "Error converting the PD image.", (char) 837);
+            defpackage.d.v(a.b().g(ovl.a, "CAM_DynDepthUtils"), "Error converting the PD image.", (char) 837);
             return false;
         }
         return c((RawWriteView) a2.c(), pkoVar.c(madVar2), dynamicDepthResult, shotMetadata);

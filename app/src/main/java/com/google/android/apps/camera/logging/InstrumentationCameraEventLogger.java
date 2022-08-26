@@ -3,6 +3,9 @@ package com.google.android.apps.camera.logging;
 import java.util.ArrayList;
 import java.util.List;
 
+import defpackage.fjt;
+import defpackage.pac;
+
 /* loaded from: classes.dex */
 public class InstrumentationCameraEventLogger implements fjt {
     private static final Integer a = 100;

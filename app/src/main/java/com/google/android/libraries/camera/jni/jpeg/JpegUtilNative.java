@@ -2,10 +2,19 @@ package com.google.android.libraries.camera.jni.jpeg;
 
 import android.graphics.Rect;
 import android.os.SystemClock;
+
 import com.Helper;
+
 import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.Locale;
+
+import defpackage.lic;
+import defpackage.lil;
+import defpackage.mac;
+import defpackage.mad;
+import defpackage.obr;
+import defpackage.oxh;
 
 /* loaded from: classes.dex */
 public class JpegUtilNative {

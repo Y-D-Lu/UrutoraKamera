@@ -1,13 +1,21 @@
 package com;
 
-import agc.Agc;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CaptureResult;
+
 import com.Fix.Pref;
+
+import agc.Agc;
+import defpackage.ddm;
+import defpackage.ddq;
+import defpackage.ddx;
+import defpackage.dep;
+import defpackage.lvp;
+import defpackage.lzv;
 
 /* loaded from: classes2.dex */
 public class AGC {
-    public static dep dep;
+    public static defpackage.dep dep;
 
     public AGC() {
         new Pref();

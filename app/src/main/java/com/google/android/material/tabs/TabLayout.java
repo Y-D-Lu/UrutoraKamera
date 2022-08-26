@@ -19,12 +19,41 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
+
 import androidx.viewpager.widget.ViewPager;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.codeaurora.snapcam.R;
+
+import defpackage.akw;
+import defpackage.fc;
+import defpackage.fd;
+import defpackage.fe;
+import defpackage.gl;
+import defpackage.hb;
+import defpackage.jq;
+import defpackage.kkm;
+import defpackage.nwj;
+import defpackage.nzw;
+import defpackage.obr;
+import defpackage.obu;
+import defpackage.oco;
+import defpackage.ocp;
+import defpackage.ocq;
+import defpackage.ocr;
+import defpackage.ocs;
+import defpackage.ocw;
+import defpackage.ocx;
+import defpackage.ocy;
+import defpackage.oda;
+import defpackage.odb;
+import defpackage.odn;
+import defpackage.ohh;
 
 @akw
 /* loaded from: classes.dex */

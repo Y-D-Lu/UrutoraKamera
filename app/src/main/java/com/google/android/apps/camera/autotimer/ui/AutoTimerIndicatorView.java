@@ -12,10 +12,12 @@ import android.view.Display;
 import android.view.View;
 import android.view.ViewPropertyAnimator;
 import android.view.animation.DecelerateInterpolator;
-import com.google.android.apps.camera.autotimer.ui.AutoTimerIndicatorView;
+
 import com.hdrindicator.DisplayHelper;
-import j$.time.Duration;
+
 import org.codeaurora.snapcam.R;
+
+import j$.time.Duration;
 
 /* loaded from: classes.dex */
 public final class AutoTimerIndicatorView extends View {

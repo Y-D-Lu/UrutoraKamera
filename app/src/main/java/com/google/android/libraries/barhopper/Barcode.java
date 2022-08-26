@@ -5,6 +5,9 @@ import android.graphics.Rect;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import defpackage.kza;
+import defpackage.laa;
+
 /* loaded from: classes.dex */
 public class Barcode implements Parcelable {
     public static final int AZTEC = 4096;

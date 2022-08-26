@@ -11,6 +11,10 @@ import android.widget.FrameLayout;
 
 import org.codeaurora.snapcam.R;
 
+import defpackage.gl;
+import defpackage.jq;
+import defpackage.lv;
+
 /* loaded from: classes.dex */
 public class ActionBarContainer extends FrameLayout {
     public Drawable a;

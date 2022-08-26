@@ -2,12 +2,26 @@ package com.google.android.apps.camera.legacy.app.settings;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.TwoStatePreference;
+
 import com.google.android.apps.camera.legacy.app.app.CameraApp;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.agm;
+import defpackage.axt;
+import defpackage.dd;
+import defpackage.ddf;
+import defpackage.euv;
+import defpackage.ewb;
+import defpackage.fbn;
+import defpackage.fjs;
+import defpackage.lzi;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class CameraMaterialSettingsActivity extends axt {

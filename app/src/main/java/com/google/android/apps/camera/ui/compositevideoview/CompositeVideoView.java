@@ -11,9 +11,16 @@ import android.view.ViewOutlineProvider;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.VideoView;
-import com.google.android.apps.camera.ui.compositevideoview.CompositeVideoView;
+
 import com.google.android.material.progressindicator.CircularProgressIndicator;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.iwd;
+import defpackage.iwe;
+import defpackage.iwf;
+import defpackage.iwg;
+import defpackage.iwh;
 
 /* loaded from: classes.dex */
 public final class CompositeVideoView extends FrameLayout implements iwh {

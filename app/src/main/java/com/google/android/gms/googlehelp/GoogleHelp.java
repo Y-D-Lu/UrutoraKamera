@@ -9,10 +9,18 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
+
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.feedback.ErrorReport;
 import com.google.android.gms.googlehelp.internal.common.TogglingData;
+
 import java.util.List;
+
+import defpackage.kno;
+import defpackage.kpf;
+import defpackage.kpk;
+import defpackage.kqa;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class GoogleHelp extends kno implements ReflectedParcelable {

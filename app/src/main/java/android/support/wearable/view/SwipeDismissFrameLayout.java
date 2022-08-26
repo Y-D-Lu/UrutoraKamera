@@ -7,6 +7,9 @@ import android.view.animation.DecelerateInterpolator;
 
 import java.util.ArrayList;
 
+import defpackage.tc;
+import defpackage.to;
+
 @Deprecated
 /* loaded from: classes.dex */
 public class SwipeDismissFrameLayout extends tc {

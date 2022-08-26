@@ -1,7 +1,10 @@
 package com.google.android.libraries.oliveoil.natives;
 
 import com.google.android.libraries.oliveoil.util.JniUtil;
+
 import java.nio.ByteBuffer;
+
+import defpackage.mtn;
 
 /* loaded from: classes.dex */
 public class NativeMemCopier implements mtn {

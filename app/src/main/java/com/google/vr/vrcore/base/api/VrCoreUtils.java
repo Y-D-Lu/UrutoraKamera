@@ -6,7 +6,12 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageInstaller;
 import android.content.pm.PackageManager;
 import android.util.Log;
+
 import java.util.List;
+
+import defpackage.pxi;
+import defpackage.pxj;
+import defpackage.qmd;
 
 /* loaded from: classes.dex */
 public final class VrCoreUtils {

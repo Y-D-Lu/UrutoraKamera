@@ -1,5 +1,9 @@
 package com;
 
+import defpackage.ddf;
+import defpackage.ddj;
+import defpackage.dep;
+
 /* loaded from: classes.dex */
 public class RMX3085 {
     public static void overrideDefaults(ddj ddjVar, ddf ddfVar) {

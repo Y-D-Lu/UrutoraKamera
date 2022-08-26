@@ -15,9 +15,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
+
 import com.Helper;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 import com.mycompany.myapp40.MainActivity$100000001;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

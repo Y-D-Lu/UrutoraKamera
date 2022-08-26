@@ -1,8 +1,17 @@
 package com.google.android.libraries.oliveoil.natives;
 
 import android.graphics.Bitmap;
+
 import com.google.android.libraries.oliveoil.util.JniUtil;
+
 import java.nio.ByteBuffer;
+
+import defpackage.mmf;
+import defpackage.mor;
+import defpackage.mtj;
+import defpackage.mtq;
+import defpackage.mtu;
+import defpackage.obr;
 
 /* loaded from: classes.dex */
 public class BitmapNativeBuffer extends mtq {

@@ -10,7 +10,7 @@ import com.google.googlex.gcam.clientallocator.InterleavedU16ClientAllocator;
 import com.google.googlex.gcam.clientallocator.InterleavedU8ClientAllocator;
 import com.google.googlex.gcam.clientallocator.RawClientAllocator;
 import com.google.googlex.gcam.clientallocator.YuvClientAllocator;
-import com.google.googlex.gcam.hdrplus.EncodedBlobCallback;
+
 import java.nio.ByteBuffer;
 import java.util.concurrent.atomic.AtomicBoolean;
 

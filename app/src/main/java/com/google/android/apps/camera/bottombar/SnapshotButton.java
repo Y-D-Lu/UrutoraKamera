@@ -3,7 +3,15 @@ package com.google.android.apps.camera.bottombar;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
+
+import org.codeaurora.snapcam.R;
+
+import defpackage.jkc;
+import defpackage.jkz;
+import defpackage.jlj;
+import defpackage.jsa;
 
 /* loaded from: classes.dex */
 public class SnapshotButton extends ShutterButton {

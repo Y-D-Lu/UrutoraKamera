@@ -3,6 +3,7 @@ package com.google.android.apps.camera.rectiface.jni;
 import android.graphics.Bitmap;
 import android.hardware.HardwareBuffer;
 import android.os.Build;
+
 import com.google.android.apps.camera.rectiface.Rectiface$RectifaceProgressCallback;
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.InterleavedImageU8;
@@ -13,11 +14,34 @@ import com.google.googlex.gcam.LockedHardwareBuffer;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.image.ImageUtils;
 import com.google.googlex.gcam.imageio.JpgHelper;
+
 import java.io.FileOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.FileAttribute;
+
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.dds;
+import defpackage.ddy;
+import defpackage.hgl;
+import defpackage.hgm;
+import defpackage.hli;
+import defpackage.hlr;
+import defpackage.hls;
+import defpackage.iij;
+import defpackage.iik;
+import defpackage.lda;
+import defpackage.lie;
+import defpackage.obr;
+import defpackage.ojc;
+import defpackage.oug;
+import defpackage.ouj;
+import defpackage.oxh;
+import defpackage.pbg;
+import defpackage.plk;
+import defpackage.poy;
 
 /* loaded from: classes.dex */
 public final class RectifaceImpl implements hli, lie {

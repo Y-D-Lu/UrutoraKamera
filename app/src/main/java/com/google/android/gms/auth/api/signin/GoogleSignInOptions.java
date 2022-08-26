@@ -4,8 +4,13 @@ import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
+
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.internal.ReflectedParcelable;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -14,8 +19,15 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.json.JSONArray;
-import org.json.JSONObject;
+
+import defpackage.kfr;
+import defpackage.kge;
+import defpackage.kid;
+import defpackage.kno;
+import defpackage.kus;
+import defpackage.mip;
+import defpackage.si;
+import defpackage.yc;
 
 /* loaded from: classes.dex */
 public class GoogleSignInOptions extends kno implements ReflectedParcelable, kid {

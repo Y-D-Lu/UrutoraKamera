@@ -3,7 +3,13 @@ package com.google.android.apps.camera.ui.notificationchip;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.jgt;
+import defpackage.jgz;
+import defpackage.jrz;
+import defpackage.nu;
 
 /* loaded from: classes.dex */
 public class NotificationChipView extends nu {

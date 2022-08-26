@@ -8,12 +8,25 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.google.android.apps.camera.ui.modeslider.ModeSlider;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.codeaurora.snapcam.R;
+
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.ei;
+import defpackage.jdw;
+import defpackage.jdx;
+import defpackage.jdy;
+import defpackage.jdz;
+import defpackage.jem;
+import defpackage.jen;
+import defpackage.jsa;
+import defpackage.obr;
 
 /* loaded from: classes.dex */
 public class ModeSlider extends LinearLayout implements jen {

@@ -11,7 +11,12 @@ import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.mis;
+import defpackage.mit;
+import defpackage.miv;
 
 /* loaded from: classes.dex */
 public class MemoryMonitorView extends View {

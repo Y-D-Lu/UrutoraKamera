@@ -5,6 +5,9 @@ import android.os.Trace;
 import android.util.AttributeSet;
 import android.view.View;
 
+import defpackage.jrz;
+import defpackage.mip;
+
 /* loaded from: classes.dex */
 public class GradientBar extends View {
     public jrz a;

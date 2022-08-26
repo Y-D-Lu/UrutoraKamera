@@ -1,8 +1,19 @@
 package com.google.android.libraries.vision.visionkit.pipeline;
 
 import android.util.Log;
+
 import com.google.android.apps.cerebra.federatedperception.shared.communications.CommunicationsManager;
+
 import java.nio.ByteBuffer;
+
+import defpackage.nmk;
+import defpackage.nvd;
+import defpackage.nvg;
+import defpackage.nvj;
+import defpackage.nvk;
+import defpackage.pos;
+import defpackage.ppd;
+import defpackage.ppp;
 
 /* loaded from: classes.dex */
 public class NativePipelineImpl implements nvd {

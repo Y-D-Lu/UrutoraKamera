@@ -2,8 +2,8 @@ package com.google.android.apps.camera.moments;
 
 import android.hardware.HardwareBuffer;
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.bottombar.R;
-import com.google.android.apps.camera.moments.FastMomentsHdrImpl;
 import com.google.googlex.gcam.AeShotParams;
 import com.google.googlex.gcam.Gcam;
 import com.google.googlex.gcam.GcamModuleJNI;
@@ -12,8 +12,23 @@ import com.google.googlex.gcam.RawWriteView;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.WeightedNormalizedRectVector;
 import com.google.googlex.gcam.YuvImage;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
+
+import defpackage.bxy;
+import defpackage.enl;
+import defpackage.geo;
+import defpackage.gep;
+import defpackage.geq;
+import defpackage.ger;
+import defpackage.hcg;
+import defpackage.lig;
+import defpackage.lis;
+import defpackage.lmr;
+import defpackage.mad;
+import defpackage.obr;
+import defpackage.pko;
 
 /* loaded from: classes.dex */
 public class FastMomentsHdrImpl implements geq {

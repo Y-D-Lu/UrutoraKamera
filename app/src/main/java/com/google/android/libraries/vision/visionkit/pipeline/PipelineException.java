@@ -2,6 +2,16 @@ package com.google.android.libraries.vision.visionkit.pipeline;
 
 import java.util.List;
 
+import defpackage.nvi;
+import defpackage.nvo;
+import defpackage.ohh;
+import defpackage.oih;
+import defpackage.ojc;
+import defpackage.ojq;
+import defpackage.oom;
+import defpackage.pos;
+import defpackage.ppd;
+
 /* loaded from: classes.dex */
 public class PipelineException extends Exception {
     private static final String ROOT_CAUSE_DELIMITER = "#vk ";

@@ -1,7 +1,5 @@
 package com.google.googlex.gcam;
 
-import com.google.googlex.gcam.FaceInfo;
-
 /* loaded from: classes.dex */
 public class LandmarkMap {
     private transient long a;

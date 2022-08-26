@@ -1,5 +1,8 @@
 package com.google.android.libraries.microvideo.xmp.nativemotionphotos;
 
+import defpackage.ovk;
+import defpackage.psp;
+
 /* loaded from: classes.dex */
 public final class NativeMotionPhotoProcessor {
     static {

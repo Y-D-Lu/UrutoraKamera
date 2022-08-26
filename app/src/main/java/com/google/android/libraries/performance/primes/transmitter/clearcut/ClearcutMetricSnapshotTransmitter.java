@@ -1,8 +1,45 @@
 package com.google.android.libraries.performance.primes.transmitter.clearcut;
 
 import android.content.Context;
+
 import com.google.android.gms.common.api.internal.BasePendingResult;
+
 import java.util.ArrayList;
+
+import defpackage.fob;
+import defpackage.kgp;
+import defpackage.kgs;
+import defpackage.kgt;
+import defpackage.khb;
+import defpackage.khf;
+import defpackage.kig;
+import defpackage.kip;
+import defpackage.kit;
+import defpackage.kiv;
+import defpackage.kiw;
+import defpackage.kix;
+import defpackage.mdv;
+import defpackage.mes;
+import defpackage.mip;
+import defpackage.ndf;
+import defpackage.ndh;
+import defpackage.ndm;
+import defpackage.ndv;
+import defpackage.obr;
+import defpackage.oiv;
+import defpackage.oje;
+import defpackage.ojz;
+import defpackage.pgb;
+import defpackage.pgr;
+import defpackage.phq;
+import defpackage.pht;
+import defpackage.pih;
+import defpackage.poq;
+import defpackage.ppa;
+import defpackage.ppk;
+import defpackage.pyk;
+import defpackage.qaj;
+import defpackage.qyk;
 
 /* loaded from: classes.dex */
 public final class ClearcutMetricSnapshotTransmitter implements ndh {

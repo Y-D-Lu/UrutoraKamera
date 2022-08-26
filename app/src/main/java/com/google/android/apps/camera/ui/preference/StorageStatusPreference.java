@@ -11,9 +11,12 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
 import com.hdrindicator.DisplayHelper;
-import java.text.NumberFormat;
+
 import org.codeaurora.snapcam.R;
+
+import java.text.NumberFormat;
 
 /* loaded from: classes.dex */
 public class StorageStatusPreference extends Preference {

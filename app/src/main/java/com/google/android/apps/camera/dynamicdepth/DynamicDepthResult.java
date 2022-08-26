@@ -2,6 +2,11 @@ package com.google.android.apps.camera.dynamicdepth;
 
 import android.hardware.camera2.CaptureResult;
 
+import defpackage.dkr;
+import defpackage.lie;
+import defpackage.lig;
+import defpackage.lzv;
+
 /* loaded from: classes.dex */
 public class DynamicDepthResult implements lie {
     public long a;

@@ -10,10 +10,25 @@ import android.widget.CheckBox;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.codeaurora.snapcam.R;
+
+import defpackage.dme;
+import defpackage.dmf;
+import defpackage.dmg;
+import defpackage.ek;
+import defpackage.guf;
+import defpackage.jrz;
+import defpackage.lce;
+import defpackage.lda;
+import defpackage.mip;
+import defpackage.oih;
+import defpackage.ojc;
 
 /* loaded from: classes2.dex */
 public class EvCompView extends FrameLayout {

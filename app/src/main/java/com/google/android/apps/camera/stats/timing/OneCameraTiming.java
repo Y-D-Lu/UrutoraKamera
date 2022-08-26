@@ -1,5 +1,11 @@
 package com.google.android.apps.camera.stats.timing;
 
+import defpackage.ijl;
+import defpackage.ijs;
+import defpackage.ljf;
+import defpackage.lji;
+import defpackage.mcu;
+
 /* loaded from: classes.dex */
 public class OneCameraTiming extends ijs {
     public final ljf a;

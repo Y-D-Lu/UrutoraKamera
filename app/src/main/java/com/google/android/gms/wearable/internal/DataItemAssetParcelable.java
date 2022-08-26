@@ -2,7 +2,13 @@ package com.google.android.gms.wearable.internal;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.common.internal.ReflectedParcelable;
+
+import defpackage.kno;
+import defpackage.kwi;
+import defpackage.kxn;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class DataItemAssetParcelable extends kno implements ReflectedParcelable, kwi {

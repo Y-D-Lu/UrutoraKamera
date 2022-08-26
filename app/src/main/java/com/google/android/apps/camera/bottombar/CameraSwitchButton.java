@@ -6,8 +6,11 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.RippleDrawable;
 import android.util.AttributeSet;
 import android.view.View;
+
 import com.Helper;
 import com.custom.Cswitch;
+
+import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */
 public class CameraSwitchButton extends ScalableButton {

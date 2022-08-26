@@ -12,7 +12,17 @@ import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.CheckedTextView;
 import android.widget.FrameLayout;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.fg;
+import defpackage.fz;
+import defpackage.gl;
+import defpackage.kz;
+import defpackage.ll;
+import defpackage.nzp;
+import defpackage.nzq;
+import defpackage.pa;
 
 /* loaded from: classes.dex */
 public class NavigationMenuItemView extends nzp implements ll {

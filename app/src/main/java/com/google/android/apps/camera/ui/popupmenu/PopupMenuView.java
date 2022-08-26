@@ -14,9 +14,15 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.google.android.apps.camera.ui.popupmenu.PopupMenuView;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.jhs;
+import defpackage.jrz;
+import defpackage.jty;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class PopupMenuView extends FrameLayout {

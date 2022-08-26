@@ -5,7 +5,16 @@ import android.app.job.JobService;
 import android.os.Handler;
 import android.os.Process;
 import android.os.SystemClock;
-import com.google.android.apps.camera.keepalive.ProcessGcService;
+
+import defpackage.enc;
+import defpackage.enw;
+import defpackage.eoc;
+import defpackage.eoi;
+import defpackage.fjs;
+import defpackage.mos;
+import defpackage.ouj;
+import defpackage.pdt;
+import defpackage.poy;
 
 /* loaded from: classes.dex */
 public class ProcessGcService extends JobService {
@@ -66,7 +75,7 @@ public class ProcessGcService extends JobService {
                         }, 500L);
                         return;
                     }
-                    d.v(ProcessGcService.a.c(), "Process is Alive! Rescheduling.", (char) 1287);
+                    defpackage.d.v(ProcessGcService.a.c(), "Process is Alive! Rescheduling.", (char) 1287);
                     processGcService.a(3);
                     processGcService.jobFinished(jobParameters2, true);
                     eoc.b(processGcService);

@@ -13,9 +13,35 @@ import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.TextView;
+
+import org.codeaurora.snapcam.R;
+
 import java.util.EnumMap;
 import java.util.Map;
-import org.codeaurora.snapcam.R;
+
+import defpackage.fjs;
+import defpackage.gl;
+import defpackage.jfs;
+import defpackage.jft;
+import defpackage.jfu;
+import defpackage.jfx;
+import defpackage.jfy;
+import defpackage.jgb;
+import defpackage.jgl;
+import defpackage.jgm;
+import defpackage.jgr;
+import defpackage.jhm;
+import defpackage.jri;
+import defpackage.jrl;
+import defpackage.jrz;
+import defpackage.lar;
+import defpackage.lqe;
+import defpackage.mip;
+import defpackage.obr;
+import defpackage.ojc;
+import defpackage.oom;
+import defpackage.ore;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class ModeSwitcher extends HorizontalScrollView implements jgm {
@@ -259,9 +285,9 @@ public class ModeSwitcher extends HorizontalScrollView implements jgm {
             return;
         }
         if (z && this.f) {
-            d.v(a.c(), "ModeSwitcher WAS ALREADY ENABLED!", (char) 3341);
+            defpackage.d.v(a.c(), "ModeSwitcher WAS ALREADY ENABLED!", (char) 3341);
         } else if (!z && !this.f) {
-            d.v(a.c(), "ModeSwitcher WAS ALREADY DISABLED!", (char) 3340);
+            defpackage.d.v(a.c(), "ModeSwitcher WAS ALREADY DISABLED!", (char) 3340);
         }
         this.c.setEnabled(z);
         this.f = z;

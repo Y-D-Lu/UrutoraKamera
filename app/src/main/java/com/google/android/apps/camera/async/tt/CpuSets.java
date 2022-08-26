@@ -1,5 +1,7 @@
 package com.google.android.apps.camera.async.tt;
 
+import defpackage.kfm;
+
 /* loaded from: classes.dex */
 public final class CpuSets {
     private CpuSets() {

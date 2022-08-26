@@ -10,11 +10,21 @@ import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import com.google.android.apps.camera.ui.views.ToggleUi;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
+import defpackage.adt;
+import defpackage.iem;
+import defpackage.jow;
+import defpackage.jrz;
+import defpackage.mip;
+import defpackage.ope;
+import defpackage.oug;
+import defpackage.ouj;
 import j$.time.Duration;
 import j$.util.Collection;
-import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */
 public class ToggleUi extends FrameLayout {
@@ -96,7 +106,7 @@ public class ToggleUi extends FrameLayout {
         if (drawable != null) {
             this.c.setImageDrawable(drawable);
         } else {
-            d.v(f.b(), "Invalid button image resource.", (char) 3471);
+            defpackage.d.v(f.b(), "Invalid button image resource.", (char) 3471);
         }
     }
 

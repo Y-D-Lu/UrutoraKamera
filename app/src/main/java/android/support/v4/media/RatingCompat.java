@@ -5,6 +5,8 @@ import android.os.Parcelable;
 
 import com.hdrindicator.DisplayHelper;
 
+import defpackage.ba;
+
 /* loaded from: classes.dex */
 public final class RatingCompat implements Parcelable {
     public static final Parcelable.Creator CREATOR = new ba(8);

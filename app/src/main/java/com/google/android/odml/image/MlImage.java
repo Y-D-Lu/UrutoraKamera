@@ -1,6 +1,7 @@
 package com.google.android.odml.image;
 
 import android.graphics.Rect;
+
 import java.io.Closeable;
 import java.util.HashMap;
 import java.util.Map;

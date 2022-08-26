@@ -1,5 +1,7 @@
 package com.google.android.odml.image;
 
+import defpackage.odo;
+
 /* loaded from: classes.dex */
 public abstract class ImageProperties {
 

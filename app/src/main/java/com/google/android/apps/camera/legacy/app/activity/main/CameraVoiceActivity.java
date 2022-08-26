@@ -1,5 +1,7 @@
 package com.google.android.apps.camera.legacy.app.activity.main;
 
+import defpackage.bqe;
+
 /* loaded from: classes.dex */
 public class CameraVoiceActivity extends CameraActivity {
     @Override // com.google.android.apps.camera.legacy.app.activity.main.CameraActivity

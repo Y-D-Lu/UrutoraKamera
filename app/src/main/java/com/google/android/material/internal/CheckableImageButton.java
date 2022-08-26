@@ -4,7 +4,13 @@ import android.content.Context;
 import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.widget.Checkable;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.gl;
+import defpackage.mw;
+import defpackage.nzk;
+import defpackage.nzl;
 
 /* loaded from: classes.dex */
 public class CheckableImageButton extends mw implements Checkable {

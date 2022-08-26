@@ -22,6 +22,29 @@ import org.codeaurora.snapcam.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import defpackage.gl;
+import defpackage.hs;
+import defpackage.jd;
+import defpackage.jq;
+import defpackage.kc;
+import defpackage.ku;
+import defpackage.kw;
+import defpackage.kz;
+import defpackage.lj;
+import defpackage.mh;
+import defpackage.mw;
+import defpackage.nu;
+import defpackage.oa;
+import defpackage.qy;
+import defpackage.rn;
+import defpackage.ro;
+import defpackage.rp;
+import defpackage.rr;
+import defpackage.rs;
+import defpackage.ru;
+import defpackage.rx;
+import defpackage.sd;
+
 /* loaded from: classes.dex */
 public class Toolbar extends ViewGroup {
     private ImageView A;

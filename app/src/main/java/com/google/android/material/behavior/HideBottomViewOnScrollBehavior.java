@@ -6,7 +6,12 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewPropertyAnimator;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import defpackage.aae;
+import defpackage.nwj;
+import defpackage.nxi;
 
 /* loaded from: classes.dex */
 public class HideBottomViewOnScrollBehavior extends aae {

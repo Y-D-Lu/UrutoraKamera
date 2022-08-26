@@ -1,8 +1,20 @@
 package com.google.android.libraries.performance.primes.metrics.crash;
 
-import com.google.android.libraries.performance.primes.metrics.crash.NativeCrashHandlerImpl;
 import java.nio.ByteBuffer;
 import java.util.concurrent.CountDownLatch;
+
+import defpackage.mye;
+import defpackage.myi;
+import defpackage.myj;
+import defpackage.ojc;
+import defpackage.oug;
+import defpackage.ouj;
+import defpackage.pos;
+import defpackage.poy;
+import defpackage.ppd;
+import defpackage.ptg;
+import defpackage.qkg;
+import defpackage.qxy;
 
 /* loaded from: classes.dex */
 public final class NativeCrashHandlerImpl implements myj {

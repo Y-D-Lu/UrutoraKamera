@@ -20,13 +20,47 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.lens.sdk.LensApi;
 import com.hdrindicator.DisplayHelper;
-import java.util.List;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.List;
+
+import defpackage.aad;
+import defpackage.aae;
+import defpackage.aah;
+import defpackage.aas;
+import defpackage.ew;
+import defpackage.gl;
+import defpackage.mx;
+import defpackage.nwm;
+import defpackage.nym;
+import defpackage.nyn;
+import defpackage.nyp;
+import defpackage.nyv;
+import defpackage.nyw;
+import defpackage.nyx;
+import defpackage.nzf;
+import defpackage.nzg;
+import defpackage.nzh;
+import defpackage.nzj;
+import defpackage.nzo;
+import defpackage.nzw;
+import defpackage.oaa;
+import defpackage.obm;
+import defpackage.obr;
+import defpackage.obu;
+import defpackage.obz;
+import defpackage.oci;
+import defpackage.ocn;
+import defpackage.odn;
+import defpackage.xf;
 
 /* loaded from: classes.dex */
 public class FloatingActionButton extends oaa implements nym, oci, aad {

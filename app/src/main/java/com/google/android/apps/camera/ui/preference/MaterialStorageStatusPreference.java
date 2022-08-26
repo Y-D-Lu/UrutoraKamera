@@ -9,10 +9,16 @@ import android.text.style.TypefaceSpan;
 import android.util.AttributeSet;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
 import androidx.preference.Preference;
+
 import com.hdrindicator.DisplayHelper;
-import java.text.NumberFormat;
+
 import org.codeaurora.snapcam.R;
+
+import java.text.NumberFormat;
+
+import defpackage.ahm;
 
 /* loaded from: classes.dex */
 public class MaterialStorageStatusPreference extends Preference {

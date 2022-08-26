@@ -1,5 +1,7 @@
 package com;
 
+import defpackage.ler;
+
 /* loaded from: classes2.dex */
 public final class CamcorderProfile {
     public static ler getProfile(int i) {

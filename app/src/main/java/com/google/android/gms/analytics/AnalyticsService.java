@@ -5,6 +5,9 @@ import android.app.job.JobParameters;
 import android.content.Intent;
 import android.os.IBinder;
 
+import defpackage.kfk;
+import defpackage.kfl;
+
 /* loaded from: classes.dex */
 public final class AnalyticsService extends Service implements kfk {
     private kfl a;

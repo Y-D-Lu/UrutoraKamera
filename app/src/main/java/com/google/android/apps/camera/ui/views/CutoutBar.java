@@ -6,7 +6,16 @@ import android.graphics.Paint;
 import android.os.Trace;
 import android.util.AttributeSet;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
+
+import defpackage.bpx;
+import defpackage.dcw;
+import defpackage.dcy;
+import defpackage.ddf;
+import defpackage.jrz;
+import defpackage.mip;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class CutoutBar extends View {

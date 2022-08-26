@@ -2,6 +2,13 @@ package com.google.android.apps.camera.bottombar.dagger;
 
 import com.google.android.apps.camera.bottombar.BottomBarController;
 
+import defpackage.ddf;
+import defpackage.img;
+import defpackage.jns;
+import defpackage.pys;
+import defpackage.qkg;
+import defpackage.qmd;
+
 /* loaded from: classes.dex */
 public final class BottomBarControllerModule_ProvideBottomBarControllerFactory implements pys {
     private final qkg cameraUiProvider;

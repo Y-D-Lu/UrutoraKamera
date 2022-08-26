@@ -12,16 +12,39 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.SystemClock;
-import com.google.android.apps.camera.sideline.SidelineInstallerService;
+
 import com.google.common.io.ByteStreams;
 import com.google.lens.sdk.LensApi;
-import j$.util.Optional;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-import org.codeaurora.snapcam.R;
+
+import defpackage.dei;
+import defpackage.emv;
+import defpackage.enc;
+import defpackage.eto;
+import defpackage.htu;
+import defpackage.hwg;
+import defpackage.hwh;
+import defpackage.hwi;
+import defpackage.hwl;
+import defpackage.hwn;
+import defpackage.mcu;
+import defpackage.nhu;
+import defpackage.obr;
+import defpackage.oug;
+import defpackage.pfj;
+import defpackage.pgj;
+import defpackage.pgr;
+import defpackage.pht;
+import defpackage.pih;
+import defpackage.plk;
+import j$.util.Optional;
 
 /* loaded from: classes.dex */
 public class SidelineInstallerService extends Service {
@@ -70,7 +93,7 @@ public class SidelineInstallerService extends Service {
                 final hwh hwhVar = this.a;
                 pih pihVar = hwhVar.s;
                 if (pihVar != null && !pihVar.isDone()) {
-                    d.v(hwh.a.b(), "startHalUpdate called when HAL is still updating!", (char) 2694);
+                    defpackage.d.v(hwh.a.b(), "startHalUpdate called when HAL is still updating!", (char) 2694);
                     return 2;
                 }
                 hwhVar.s = pih.f();
@@ -199,7 +222,7 @@ public class SidelineInstallerService extends Service {
                 final hwh hwhVar2 = this.a;
                 Bundle extras = intent.getExtras();
                 if (extras == null) {
-                    d.v(hwh.a.c(), "extras is null from PackageInstaller.", (char) 2688);
+                    defpackage.d.v(hwh.a.c(), "extras is null from PackageInstaller.", (char) 2688);
                     return 2;
                 }
                 int i3 = extras.getInt("android.content.pm.extra.STATUS");
@@ -207,7 +230,7 @@ public class SidelineInstallerService extends Service {
                 ofNullable.orElse(null);
                 switch (i3) {
                     case LensApi.LensAvailabilityStatus.LENS_AVAILABILITY_UNKNOWN /* -1 */:
-                        d.v(hwh.a.b(), "Package installer is asking user for permission. This should not happen in HAL update!", (char) 2687);
+                        defpackage.d.v(hwh.a.b(), "Package installer is asking user for permission. This should not happen in HAL update!", (char) 2687);
                         break;
                     case 0:
                         hwhVar2.c();
@@ -238,7 +261,7 @@ public class SidelineInstallerService extends Service {
                         break;
                     case 6:
                         if (((emv) hwhVar2.q).mo37get().schedule(new JobInfo.Builder(58451, new ComponentName(hwhVar2.b, SidelineJobService.class)).setPersisted(true).setRequiresStorageNotLow(true).build()) != 1) {
-                            d.v(hwh.a.c(), "Failed to schedule retry!", (char) 2692);
+                            defpackage.d.v(hwh.a.c(), "Failed to schedule retry!", (char) 2692);
                             break;
                         }
                         break;

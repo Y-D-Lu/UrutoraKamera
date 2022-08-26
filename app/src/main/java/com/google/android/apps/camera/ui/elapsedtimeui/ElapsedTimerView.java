@@ -5,6 +5,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import org.codeaurora.snapcam.R;
 
 /* loaded from: classes.dex */

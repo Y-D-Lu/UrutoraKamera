@@ -6,6 +6,13 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
 
+import defpackage.kog;
+import defpackage.krk;
+import defpackage.krn;
+import defpackage.krp;
+import defpackage.krv;
+import defpackage.krw;
+
 /* loaded from: classes.dex */
 public final class InAppTrainingService extends Service {
     private static final String TAG = "brella.InAppTrngSvc";

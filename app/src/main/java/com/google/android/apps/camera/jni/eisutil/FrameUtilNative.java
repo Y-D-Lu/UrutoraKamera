@@ -2,6 +2,8 @@ package com.google.android.apps.camera.jni.eisutil;
 
 import java.nio.ByteBuffer;
 
+import defpackage.lil;
+
 /* loaded from: classes.dex */
 public final class FrameUtilNative {
     static {

@@ -3,9 +3,56 @@ package com.google.android.apps.camera.legacy.app.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraVoiceActivity;
 import com.google.android.apps.camera.legacy.app.app.CameraApp;
+
+import defpackage.bmw;
+import defpackage.bng;
+import defpackage.bqq;
+import defpackage.btq;
+import defpackage.cax;
+import defpackage.cly;
+import defpackage.cpk;
+import defpackage.cso;
+import defpackage.ddf;
+import defpackage.dei;
+import defpackage.dug;
+import defpackage.edj;
+import defpackage.emb;
+import defpackage.emd;
+import defpackage.eme;
+import defpackage.emj;
+import defpackage.emk;
+import defpackage.enf;
+import defpackage.eng;
+import defpackage.etd;
+import defpackage.ete;
+import defpackage.etf;
+import defpackage.etg;
+import defpackage.eti;
+import defpackage.etj;
+import defpackage.euv;
+import defpackage.ewb;
+import defpackage.fjs;
+import defpackage.hgg;
+import defpackage.hug;
+import defpackage.hvh;
+import defpackage.hvp;
+import defpackage.irk;
+import defpackage.iwa;
+import defpackage.jcw;
+import defpackage.jho;
+import defpackage.jrl;
+import defpackage.jtx;
+import defpackage.khx;
+import defpackage.lqv;
+import defpackage.obr;
+import defpackage.ojc;
+import defpackage.ojz;
+import defpackage.pyr;
+import defpackage.qkg;
 
 /* loaded from: classes.dex */
 public class CameraImageActivity extends etd {

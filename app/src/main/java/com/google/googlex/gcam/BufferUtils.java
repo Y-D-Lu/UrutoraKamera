@@ -4,6 +4,8 @@ import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
+import defpackage.obr;
+
 /* loaded from: classes.dex */
 public final class BufferUtils {
     private BufferUtils() {

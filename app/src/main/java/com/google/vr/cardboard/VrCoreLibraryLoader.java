@@ -8,8 +8,17 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.google.vr.vrcore.base.api.VrCoreUtils;
 import com.google.vr.vrcore.library.api.ObjectWrapper;
+
+import defpackage.bmo;
+import defpackage.bmp;
+import defpackage.pxc;
+import defpackage.pxj;
+import defpackage.pyi;
+import defpackage.pyj;
+import defpackage.qmd;
 
 /* loaded from: classes.dex */
 public class VrCoreLibraryLoader {

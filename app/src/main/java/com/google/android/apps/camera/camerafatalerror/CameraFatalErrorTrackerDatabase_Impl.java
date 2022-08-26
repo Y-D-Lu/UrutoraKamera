@@ -8,6 +8,21 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import defpackage.ahy;
+import defpackage.aif;
+import defpackage.ajd;
+import defpackage.ajq;
+import defpackage.ajr;
+import defpackage.ajs;
+import defpackage.aju;
+import defpackage.cwv;
+import defpackage.cxf;
+import defpackage.cxk;
+import defpackage.cxm;
+import defpackage.cxr;
+import defpackage.cxt;
+import defpackage.cxx;
+
 /* loaded from: classes.dex */
 public final class CameraFatalErrorTrackerDatabase_Impl extends CameraFatalErrorTrackerDatabase {
     private volatile cxm m;

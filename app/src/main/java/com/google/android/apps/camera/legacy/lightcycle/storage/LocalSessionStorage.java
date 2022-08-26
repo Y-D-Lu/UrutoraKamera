@@ -2,6 +2,8 @@ package com.google.android.apps.camera.legacy.lightcycle.storage;
 
 import java.io.Serializable;
 
+import defpackage.hqz;
+
 /* loaded from: classes2.dex */
 public class LocalSessionStorage implements Serializable {
     public String a;

@@ -2,7 +2,10 @@ package com.google.android.apps.camera.ui.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
+
 import com.google.android.apps.camera.ui.layout.GcaLayout;
+
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class CameraAppRootLayout extends GcaLayout {

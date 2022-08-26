@@ -2,6 +2,7 @@ package com.google.android.libraries.barhopper;
 
 import android.graphics.Bitmap;
 import android.util.Log;
+
 import java.nio.ByteBuffer;
 
 /* loaded from: classes.dex */

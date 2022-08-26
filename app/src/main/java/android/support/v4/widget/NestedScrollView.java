@@ -27,6 +27,15 @@ import org.codeaurora.snapcam.R;
 
 import java.util.ArrayList;
 
+import defpackage.fp;
+import defpackage.fq;
+import defpackage.fs;
+import defpackage.gl;
+import defpackage.hn;
+import defpackage.ho;
+import defpackage.hp;
+import defpackage.px;
+
 /* loaded from: classes.dex */
 public class NestedScrollView extends FrameLayout implements fs, fp {
     private static final ho c = new ho();

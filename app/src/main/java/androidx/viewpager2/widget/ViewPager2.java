@@ -37,6 +37,14 @@ import defpackage.alt;
 import defpackage.alu;
 import defpackage.alv;
 import defpackage.alw;
+import defpackage.fx;
+import defpackage.gb;
+import defpackage.gd;
+import defpackage.gl;
+import defpackage.gr;
+import defpackage.gy;
+import defpackage.ps;
+import defpackage.pu;
 
 /* loaded from: classes.dex */
 public final class ViewPager2 extends ViewGroup {

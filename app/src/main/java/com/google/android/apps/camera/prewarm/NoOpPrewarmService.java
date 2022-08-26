@@ -2,7 +2,15 @@ package com.google.android.apps.camera.prewarm;
 
 import android.content.Intent;
 import android.service.media.CameraPrewarmService;
-import com.google.android.apps.camera.prewarm.NoOpPrewarmService;
+
+import defpackage.bux;
+import defpackage.enc;
+import defpackage.eoc;
+import defpackage.fjs;
+import defpackage.hgo;
+import defpackage.lbk;
+import defpackage.ouj;
+import defpackage.qiz;
 
 /* loaded from: classes.dex */
 public class NoOpPrewarmService extends CameraPrewarmService {
@@ -31,7 +39,7 @@ public class NoOpPrewarmService extends CameraPrewarmService {
             @Override // java.lang.Runnable
             public final void run() {
                 NoOpPrewarmService noOpPrewarmService = NoOpPrewarmService.this;
-                d.v(NoOpPrewarmService.a.b(), "Prewarm timed out! This should not happen.", (char) 2454);
+                defpackage.d.v(NoOpPrewarmService.a.b(), "Prewarm timed out! This should not happen.", (char) 2454);
                 noOpPrewarmService.b.F();
             }
         });
@@ -41,7 +49,7 @@ public class NoOpPrewarmService extends CameraPrewarmService {
     @Override // android.app.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
         if (!this.d.a()) {
-            d.v(a.b(), "KeepAlive is off. Skipping.", (char) 2453);
+            defpackage.d.v(a.b(), "KeepAlive is off. Skipping.", (char) 2453);
             return 2;
         }
         ((bux) getApplicationContext()).b().a(2);

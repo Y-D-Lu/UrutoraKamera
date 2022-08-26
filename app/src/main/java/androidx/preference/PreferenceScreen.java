@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import org.codeaurora.snapcam.R;
 
 import defpackage.ahh;
+import defpackage.et;
 
 /* loaded from: classes.dex */
 public final class PreferenceScreen extends PreferenceGroup {

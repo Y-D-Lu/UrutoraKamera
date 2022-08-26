@@ -12,7 +12,28 @@ import android.os.RemoteException;
 import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.Log;
-import com.google.lens.sdk.LensApi;
+
+import defpackage.kcd;
+import defpackage.kch;
+import defpackage.kcj;
+import defpackage.kcq;
+import defpackage.mfk;
+import defpackage.mfl;
+import defpackage.mfm;
+import defpackage.mfn;
+import defpackage.mfp;
+import defpackage.mfv;
+import defpackage.mip;
+import defpackage.pmg;
+import defpackage.pmh;
+import defpackage.pmk;
+import defpackage.pmm;
+import defpackage.pmp;
+import defpackage.pmq;
+import defpackage.pmr;
+import defpackage.pms;
+import defpackage.poy;
+import defpackage.ppa;
 
 /* loaded from: classes.dex */
 public class LensApi {

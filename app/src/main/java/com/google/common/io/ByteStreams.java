@@ -13,6 +13,16 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Queue;
 
+import defpackage.obr;
+import defpackage.oxh;
+import defpackage.oyx;
+import defpackage.oyy;
+import defpackage.oyz;
+import defpackage.oza;
+import defpackage.ozb;
+import defpackage.ozc;
+import defpackage.ozd;
+
 /* loaded from: classes.dex */
 public final class ByteStreams {
     private static final int BUFFER_SIZE = 8192;

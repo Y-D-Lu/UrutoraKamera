@@ -8,8 +8,18 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.net.Uri;
 import android.provider.MediaStore;
+
 import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
+
+import defpackage.cef;
+import defpackage.ceg;
+import defpackage.ceh;
+import defpackage.enc;
+import defpackage.ojc;
+import defpackage.ouj;
+import defpackage.pho;
+import defpackage.plk;
 
 /* loaded from: classes.dex */
 public class MediaListeningService extends JobService {
@@ -24,7 +34,7 @@ public class MediaListeningService extends JobService {
         if (jobScheduler != null) {
             return jobScheduler.schedule(new JobInfo.Builder(371692952, new ComponentName(context, MediaListeningService.class)).addTriggerContentUri(triggerContentUri).setTriggerContentUpdateDelay(60000L).setTriggerContentMaxDelay(300000L).build()) == 1;
         }
-        d.v(d.c(), "Cannot get scheduler for media listener service.", (char) 297);
+        defpackage.d.v(d.c(), "Cannot get scheduler for media listener service.", (char) 297);
         return false;
     }
 

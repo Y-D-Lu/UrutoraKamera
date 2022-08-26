@@ -7,7 +7,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Parcelable;
 import android.widget.Toast;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.afp;
+import defpackage.dl;
 
 /* loaded from: classes.dex */
 public class InstallWearRequestReceiver extends BroadcastReceiver {

@@ -11,10 +11,40 @@ import android.view.MotionEvent;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.google.android.apps.camera.ui.layout.GcaLayout;
 import com.hdrindicator.DisplayHelper;
-import java.util.concurrent.Callable;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.Callable;
+
+import defpackage.bpx;
+import defpackage.cwh;
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.isd;
+import defpackage.jbw;
+import defpackage.jfa;
+import defpackage.jfe;
+import defpackage.jff;
+import defpackage.jfg;
+import defpackage.jfi;
+import defpackage.jfj;
+import defpackage.jnm;
+import defpackage.jpa;
+import defpackage.jpb;
+import defpackage.jri;
+import defpackage.jrl;
+import defpackage.jrz;
+import defpackage.lhs;
+import defpackage.lwd;
+import defpackage.oih;
+import defpackage.ojc;
+import defpackage.oug;
+import defpackage.ouj;
+import defpackage.pht;
+import defpackage.pih;
 
 /* loaded from: classes.dex */
 public class ViewfinderCover extends GcaLayout implements jfi, cwh {

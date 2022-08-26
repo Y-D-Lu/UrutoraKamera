@@ -2,6 +2,8 @@ package com.google.googlex.gcam;
 
 import android.hardware.HardwareBuffer;
 
+import defpackage.obr;
+
 /* loaded from: classes.dex */
 public class LockedHardwareBuffer implements AutoCloseable {
     private long a;

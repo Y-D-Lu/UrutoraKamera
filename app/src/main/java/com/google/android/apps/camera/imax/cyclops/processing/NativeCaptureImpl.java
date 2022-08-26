@@ -1,8 +1,11 @@
 package com.google.android.apps.camera.imax.cyclops.processing;
 
 import android.graphics.Bitmap;
+
 import com.google.android.apps.camera.imax.cyclops.capture.TrackerStats;
 import com.google.android.libraries.vision.opengl.Texture;
+
+import defpackage.ejo;
 
 /* loaded from: classes.dex */
 public class NativeCaptureImpl implements ejo {

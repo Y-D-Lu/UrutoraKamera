@@ -8,9 +8,14 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-import com.google.android.apps.camera.toast.ToastView;
-import j$.time.Duration;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.isd;
+import defpackage.isi;
+import defpackage.isk;
+import defpackage.ouj;
+import j$.time.Duration;
 
 /* loaded from: classes.dex */
 public class ToastView extends FrameLayout {

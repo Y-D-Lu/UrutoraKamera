@@ -15,6 +15,9 @@ import android.view.WindowInsets;
 
 import com.hdrindicator.DisplayHelper;
 
+import defpackage.sf;
+import defpackage.td;
+import defpackage.th;
 import j$.util.Objects;
 
 @Deprecated

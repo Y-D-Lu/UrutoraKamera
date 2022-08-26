@@ -1,8 +1,22 @@
 package com.google.android.apps.camera.bottombar;
 
 import android.view.View;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import defpackage.dcu;
+import defpackage.ddf;
+import defpackage.ddl;
+import defpackage.deg;
+import defpackage.img;
+import defpackage.jrl;
+import defpackage.jrp;
+import defpackage.jrz;
+import defpackage.lar;
+import defpackage.lie;
+import defpackage.oih;
+import defpackage.ojc;
 
 /* loaded from: classes.dex */
 public class BottomBarController {

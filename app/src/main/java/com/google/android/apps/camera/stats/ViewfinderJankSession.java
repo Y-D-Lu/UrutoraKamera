@@ -2,9 +2,16 @@ package com.google.android.apps.camera.stats;
 
 import android.hardware.camera2.CaptureResult;
 import android.os.SystemClock;
+
 import com.google.android.apps.camera.stats.timing.TimingSession;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import defpackage.lzv;
+import defpackage.mip;
+import defpackage.pbo;
+import defpackage.poy;
 
 /* loaded from: classes.dex */
 public class ViewfinderJankSession implements TimingSession {

@@ -2,6 +2,8 @@ package com.google.android.libraries.camera.gyro.hardwarebuffer;
 
 import android.hardware.HardwareBuffer;
 
+import defpackage.lil;
+
 /* loaded from: classes.dex */
 public class ReadHardwareBufferJniFunctions {
     static {

@@ -17,6 +17,24 @@ import android.widget.OverScroller;
 
 import org.codeaurora.snapcam.R;
 
+import defpackage.el;
+import defpackage.fs;
+import defpackage.fr;
+import defpackage.fx;
+import defpackage.gl;
+import defpackage.gr;
+import defpackage.gy;
+import defpackage.jp;
+import defpackage.ke;
+import defpackage.lj;
+import defpackage.lx;
+import defpackage.ly;
+import defpackage.lz;
+import defpackage.ma;
+import defpackage.nz;
+import defpackage.oa;
+import defpackage.px;
+
 /* loaded from: classes.dex */
 public class ActionBarOverlayLayout extends ViewGroup implements nz, fr, fs {
     static final int[] a = {R.attr.actionBarSize, 16842841};

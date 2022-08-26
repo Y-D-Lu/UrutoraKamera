@@ -2,7 +2,7 @@ package com.google.android.libraries.camera.exif;
 
 import android.util.Log;
 import android.util.SparseIntArray;
-import j$.util.DesugarTimeZone;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;
@@ -18,6 +18,20 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
+
+import defpackage.lid;
+import defpackage.lly;
+import defpackage.llz;
+import defpackage.lma;
+import defpackage.lmc;
+import defpackage.lmf;
+import defpackage.lmg;
+import defpackage.lmh;
+import defpackage.lmj;
+import defpackage.lmn;
+import defpackage.mip;
+import defpackage.obr;
+import j$.util.DesugarTimeZone;
 
 /* loaded from: classes.dex */
 public class ExifInterface implements llz {

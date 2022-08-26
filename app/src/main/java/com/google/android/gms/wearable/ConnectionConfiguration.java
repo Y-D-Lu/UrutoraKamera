@@ -2,8 +2,14 @@ package com.google.android.gms.wearable;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import com.google.android.gms.common.internal.ReflectedParcelable;
+
 import java.util.Arrays;
+
+import defpackage.kno;
+import defpackage.ktu;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class ConnectionConfiguration extends kno implements ReflectedParcelable {

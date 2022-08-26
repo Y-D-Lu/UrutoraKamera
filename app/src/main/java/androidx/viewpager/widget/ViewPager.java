@@ -36,6 +36,8 @@ import defpackage.aky;
 import defpackage.akz;
 import defpackage.ala;
 import defpackage.alb;
+import defpackage.gl;
+import defpackage.hn;
 
 /* loaded from: classes.dex */
 public class ViewPager extends ViewGroup {

@@ -10,7 +10,13 @@ import android.content.IntentSender;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+
 import com.google.lens.sdk.LensApi;
+
+import defpackage.khi;
+import defpackage.khm;
+import defpackage.kkg;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class GoogleApiActivity extends Activity implements DialogInterface.OnCancelListener {

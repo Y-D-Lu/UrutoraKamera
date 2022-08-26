@@ -5,6 +5,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 
+import defpackage.kw;
+import defpackage.lm;
+
 /* loaded from: classes.dex */
 public class NavigationMenuView extends RecyclerView implements lm {
     public NavigationMenuView(Context context) {

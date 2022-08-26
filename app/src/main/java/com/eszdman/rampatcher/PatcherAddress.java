@@ -2,6 +2,7 @@ package com.eszdman.rampatcher;
 
 import android.app.Application;
 import android.util.Log;
+
 import java.lang.reflect.InvocationTargetException;
 
 /* loaded from: classes2.dex */

@@ -21,10 +21,20 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.widget.ImageButton;
+
 import com.eclipse.switchMaxb;
 import com.exposure.Cswitch;
-import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
+import defpackage.jrx;
+import defpackage.lar;
+import defpackage.mip;
+import defpackage.obr;
+import defpackage.oih;
+import defpackage.ojc;
+import defpackage.ouj;
 
 /* loaded from: classes.dex */
 public class RoundedThumbnailView extends ImageButton {

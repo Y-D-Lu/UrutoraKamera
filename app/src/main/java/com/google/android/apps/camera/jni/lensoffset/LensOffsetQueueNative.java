@@ -1,5 +1,7 @@
 package com.google.android.apps.camera.jni.lensoffset;
 
+import defpackage.lil;
+
 /* loaded from: classes.dex */
 public final class LensOffsetQueueNative {
     static {

@@ -1,5 +1,10 @@
 package com.google.android.apps.camera.rectiface.jni;
 
+import defpackage.hlr;
+import defpackage.hls;
+import defpackage.lie;
+import defpackage.ouj;
+
 /* loaded from: classes.dex */
 public final class RectifaceWarpfieldImpl implements hlr, lie {
     public static final ouj a = ouj.h("com/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl");

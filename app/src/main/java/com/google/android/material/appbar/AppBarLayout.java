@@ -21,12 +21,47 @@ import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.hdrindicator.DisplayHelper;
+
+import org.codeaurora.snapcam.R;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
-import org.codeaurora.snapcam.R;
+
+import defpackage.aad;
+import defpackage.aae;
+import defpackage.aah;
+import defpackage.aao;
+import defpackage.fp;
+import defpackage.gl;
+import defpackage.gy;
+import defpackage.ha;
+import defpackage.nwj;
+import defpackage.nwo;
+import defpackage.nwp;
+import defpackage.nwq;
+import defpackage.nwr;
+import defpackage.nws;
+import defpackage.nwt;
+import defpackage.nwu;
+import defpackage.nwv;
+import defpackage.nwz;
+import defpackage.nxa;
+import defpackage.nxc;
+import defpackage.nxd;
+import defpackage.nxe;
+import defpackage.nxg;
+import defpackage.nxh;
+import defpackage.nzn;
+import defpackage.nzw;
+import defpackage.obr;
+import defpackage.obu;
+import defpackage.odn;
+import defpackage.ohh;
 
 /* loaded from: classes2.dex */
 public class AppBarLayout extends LinearLayout implements aad {

@@ -1,5 +1,10 @@
 package com;
 
+import defpackage.dcu;
+import defpackage.ddf;
+import defpackage.ddj;
+import defpackage.dep;
+
 /* loaded from: classes.dex */
 public class OppoVivoRealme {
     public static void overrideDefaults(ddj ddjVar, ddf ddfVar) {

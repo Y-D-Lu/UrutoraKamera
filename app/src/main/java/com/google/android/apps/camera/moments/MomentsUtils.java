@@ -1,9 +1,19 @@
 package com.google.android.apps.camera.moments;
 
 import android.hardware.HardwareBuffer;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.nio.ByteBuffer;
 import java.util.Collection;
+
+import defpackage.gan;
+import defpackage.geb;
+import defpackage.hkg;
+import defpackage.hla;
+import defpackage.lmr;
+import defpackage.pht;
+import defpackage.pih;
 
 /* loaded from: classes.dex */
 public final class MomentsUtils {

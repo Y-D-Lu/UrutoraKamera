@@ -4,6 +4,10 @@ import android.content.Context;
 import android.os.Trace;
 import android.util.AttributeSet;
 
+import defpackage.jjn;
+import defpackage.jrz;
+import defpackage.mip;
+
 /* loaded from: classes.dex */
 public class BreadcrumbsView extends jjn {
     public jrz d;

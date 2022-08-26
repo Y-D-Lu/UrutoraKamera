@@ -330,7 +330,7 @@ public class Script extends BaseObj {
 
     protected void reduce(int i, Allocation[] allocationArr, Allocation allocation, LaunchOptions launchOptions) {
         this.mRS.validate();
-        if (allocationArr == null || (r0 = allocationArr.length) <= 0) {
+        if (allocationArr == null || allocationArr.length <= 0) {
             throw new RSIllegalArgumentException("At least one input is required.");
         }
         if (allocation == null) {

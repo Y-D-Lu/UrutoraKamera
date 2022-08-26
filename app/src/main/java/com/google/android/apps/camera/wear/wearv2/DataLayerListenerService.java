@@ -4,6 +4,12 @@ import android.app.KeyguardManager;
 import android.content.Intent;
 import android.os.PowerManager;
 
+import defpackage.jyq;
+import defpackage.kww;
+import defpackage.kyw;
+import defpackage.oug;
+import defpackage.ouj;
+
 /* loaded from: classes.dex */
 public class DataLayerListenerService extends kww {
     private static final ouj f = ouj.h("com/google/android/apps/camera/wear/wearv2/DataLayerListenerService");

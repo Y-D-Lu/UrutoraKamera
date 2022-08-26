@@ -3,6 +3,7 @@ package com.google.android.apps.camera.wear.wearappv2.ui;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.accessibility.AccessibilityNodeInfo;
+
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 
 /* loaded from: classes.dex */

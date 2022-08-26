@@ -7,8 +7,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
+
 import com.Helper;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
+
 import org.codeaurora.snapcam.R;
 
 /* loaded from: classes2.dex */

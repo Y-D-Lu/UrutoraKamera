@@ -3,6 +3,8 @@ package com.google.googlex.gcam.image;
 import com.google.googlex.gcam.InterleavedWriteViewU8;
 import com.google.googlex.gcam.YuvReadView;
 
+import defpackage.obr;
+
 /* loaded from: classes.dex */
 public final class YuvUtils {
     public static boolean a(YuvReadView yuvReadView, InterleavedWriteViewU8 interleavedWriteViewU8) {

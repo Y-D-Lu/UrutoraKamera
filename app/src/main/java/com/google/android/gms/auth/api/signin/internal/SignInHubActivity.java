@@ -5,9 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.SignInAccount;
 import com.google.android.gms.common.api.Status;
+
+import defpackage.afa;
+import defpackage.by;
+import defpackage.kgf;
+import defpackage.kgj;
 
 /* loaded from: classes.dex */
 public class SignInHubActivity extends by {

@@ -7,6 +7,9 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
+import defpackage.ts;
+import defpackage.tt;
+
 /* loaded from: classes.dex */
 public class DecompositionConfigView extends ImageView {
     private final GestureDetector.SimpleOnGestureListener a;

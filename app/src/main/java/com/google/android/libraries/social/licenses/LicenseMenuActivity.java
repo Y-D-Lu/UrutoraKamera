@@ -2,7 +2,13 @@ package com.google.android.libraries.social.licenses;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.cu;
+import defpackage.dd;
+import defpackage.ih;
+import defpackage.nig;
 
 /* loaded from: classes.dex */
 public final class LicenseMenuActivity extends ih {

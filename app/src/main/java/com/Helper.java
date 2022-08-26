@@ -20,17 +20,24 @@ import android.view.Display;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
 import com.Fix.IsoTime;
 import com.Fix.Pref;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 import com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity;
 import com.hdrindicator.DisplayHelper;
 import com.hdrindicator.HDRProgress;
+
+import org.codeaurora.snapcam.R;
+
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.util.regex.Pattern;
-import org.codeaurora.snapcam.R;
+
+import defpackage.jrl;
+import defpackage.lvp;
+import defpackage.pkr;
 
 /* loaded from: classes2.dex */
 public class Helper {

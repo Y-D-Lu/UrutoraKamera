@@ -5,6 +5,8 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 
+import defpackage.kqe;
+
 /* loaded from: classes.dex */
 public class BackgroundProcessDetectorContentProvider extends ContentProvider {
     @Override // android.content.ContentProvider

@@ -1,7 +1,9 @@
 package com;
 
 import android.graphics.PointF;
+
 import com.hdrindicator.DisplayHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 

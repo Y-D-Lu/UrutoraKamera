@@ -1,5 +1,7 @@
 package com.google.android.apps.camera.rectiface.jni;
 
+import defpackage.hls;
+
 /* loaded from: classes.dex */
 public final class RectifaceOutput {
     public long a = initializeImpl();

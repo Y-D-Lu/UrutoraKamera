@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
+import defpackage.kgg;
+
 /* loaded from: classes.dex */
 public final class RevocationBoundService extends Service {
     @Override // android.app.Service

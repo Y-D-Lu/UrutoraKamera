@@ -4,9 +4,16 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
+
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.List;
+
+import defpackage.aae;
+import defpackage.aah;
+import defpackage.mir;
 
 /* loaded from: classes.dex */
 public class FloatingSpeedDialView$Behavior extends aae {

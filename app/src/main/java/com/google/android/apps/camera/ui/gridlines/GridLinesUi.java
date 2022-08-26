@@ -6,9 +6,19 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
+
 import com.hdrindicator.DisplayHelper;
-import java.util.Map;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.Map;
+
+import defpackage.jbj;
+import defpackage.jbl;
+import defpackage.jbm;
+import defpackage.jbn;
+import defpackage.jbp;
+import defpackage.oor;
 
 /* loaded from: classes.dex */
 public class GridLinesUi extends View {

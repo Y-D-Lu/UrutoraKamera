@@ -4,6 +4,10 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 
+import defpackage.yh;
+import defpackage.zi;
+import defpackage.zz;
+
 /* loaded from: classes.dex */
 public class Barrier extends zi {
     public int a;

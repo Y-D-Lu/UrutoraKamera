@@ -2,7 +2,18 @@ package com.google.android.material.progressindicator;
 
 import android.content.Context;
 import android.util.AttributeSet;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.gl;
+import defpackage.oae;
+import defpackage.oaf;
+import defpackage.oao;
+import defpackage.oav;
+import defpackage.oaw;
+import defpackage.oaz;
+import defpackage.obc;
+import defpackage.obd;
 
 /* loaded from: classes.dex */
 public final class LinearProgressIndicator extends oae {

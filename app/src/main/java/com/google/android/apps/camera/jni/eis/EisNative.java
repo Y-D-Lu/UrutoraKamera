@@ -1,5 +1,7 @@
 package com.google.android.apps.camera.jni.eis;
 
+import defpackage.lil;
+
 /* loaded from: classes.dex */
 public final class EisNative {
     static {

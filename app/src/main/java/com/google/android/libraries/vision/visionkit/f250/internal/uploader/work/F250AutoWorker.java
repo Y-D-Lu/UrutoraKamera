@@ -1,8 +1,17 @@
 package com.google.android.libraries.vision.visionkit.f250.internal.uploader.work;
 
 import android.content.Context;
+
 import androidx.work.CoroutineWorker;
 import androidx.work.WorkerParameters;
+
+import defpackage.mdf;
+import defpackage.nnz;
+import defpackage.nom;
+import defpackage.nrk;
+import defpackage.nrm;
+import defpackage.nsv;
+import defpackage.qqf;
 
 /* loaded from: classes.dex */
 public final class F250AutoWorker extends CoroutineWorker {

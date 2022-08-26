@@ -3,6 +3,7 @@ package com.google.android.libraries.lens.lenslite.api;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.graphics.drawable.Drawable;
+
 import java.util.List;
 
 /* loaded from: classes2.dex */

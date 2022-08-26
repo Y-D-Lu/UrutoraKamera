@@ -5,6 +5,9 @@ import android.content.res.TypedArray;
 import android.text.Layout;
 import android.util.AttributeSet;
 
+import defpackage.jq;
+import defpackage.nu;
+
 /* loaded from: classes.dex */
 public class DialogTitle extends nu {
     public DialogTitle(Context context) {

@@ -3,7 +3,6 @@ package overwhelmer;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.preference.Preference;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.SeekBar;
@@ -13,7 +12,6 @@ import org.codeaurora.snapcam.R;
 
 import java.util.Objects;
 
-@RequiresApi(api = 26)
 /* loaded from: classes2.dex */
 public class SeekBar7 extends Preference implements SeekBar.OnSeekBarChangeListener {
     private int mProgress;

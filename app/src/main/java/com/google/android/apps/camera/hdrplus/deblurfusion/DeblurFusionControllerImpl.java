@@ -1,9 +1,34 @@
 package com.google.android.apps.camera.hdrplus.deblurfusion;
 
 import com.google.googlex.gcam.clientallocator.InterleavedU8ClientAllocator;
+
 import java.io.File;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import defpackage.ddf;
+import defpackage.ddi;
+import defpackage.ddm;
+import defpackage.edw;
+import defpackage.edx;
+import defpackage.eev;
+import defpackage.eew;
+import defpackage.eey;
+import defpackage.fsr;
+import defpackage.ghx;
+import defpackage.hgm;
+import defpackage.lce;
+import defpackage.lig;
+import defpackage.ljf;
+import defpackage.ojc;
+import defpackage.ouj;
+import defpackage.ovd;
+import defpackage.ovl;
+import defpackage.pgr;
+import defpackage.pht;
+import defpackage.pih;
+import defpackage.pjl;
+import defpackage.qkg;
 
 /* loaded from: classes.dex */
 public class DeblurFusionControllerImpl implements eew {
@@ -55,10 +80,10 @@ public class DeblurFusionControllerImpl implements eew {
     public final pht d(long j, ghx ghxVar, eev eevVar, eev eevVar2, eey eeyVar, lig ligVar) {
         c();
         if (eevVar.a.b()) {
-            d.v(a.b().g(ovl.a, "FalconController"), "Empty primary raw image.", (char) 1084);
+            defpackage.d.v(a.b().g(ovl.a, "FalconController"), "Empty primary raw image.", (char) 1084);
         }
         if (eevVar2.a.b()) {
-            d.v(a.b().g(ovl.a, "FalconController"), "Empty secondary raw image.", (char) 1083);
+            defpackage.d.v(a.b().g(ovl.a, "FalconController"), "Empty secondary raw image.", (char) 1083);
         }
         ovd ovdVar = ovl.a;
         pih f = pih.f();

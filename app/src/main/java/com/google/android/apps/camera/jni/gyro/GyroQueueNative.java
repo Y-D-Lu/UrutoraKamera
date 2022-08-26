@@ -1,5 +1,7 @@
 package com.google.android.apps.camera.jni.gyro;
 
+import defpackage.lil;
+
 /* loaded from: classes.dex */
 public final class GyroQueueNative {
     static {

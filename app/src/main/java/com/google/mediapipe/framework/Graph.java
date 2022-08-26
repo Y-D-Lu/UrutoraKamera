@@ -5,6 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import defpackage.obr;
+import defpackage.oug;
+import defpackage.ouj;
+import defpackage.pmx;
+
 /* loaded from: classes.dex */
 public class Graph {
     private static final ouj a = ouj.h("com/google/mediapipe/framework/Graph");

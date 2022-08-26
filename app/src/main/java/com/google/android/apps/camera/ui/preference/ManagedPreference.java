@@ -6,6 +6,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
+import defpackage.jhx;
+
 /* loaded from: classes.dex */
 public class ManagedPreference extends Preference {
     public ManagedPreference(Context context) {

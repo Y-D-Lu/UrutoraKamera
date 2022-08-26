@@ -1,5 +1,10 @@
 package com;
 
+import defpackage.ddf;
+import defpackage.ddj;
+import defpackage.ddx;
+import defpackage.dep;
+
 /* loaded from: classes.dex */
 public class Nokia {
     public static void overrideDefaults(ddj ddjVar, ddf ddfVar) {

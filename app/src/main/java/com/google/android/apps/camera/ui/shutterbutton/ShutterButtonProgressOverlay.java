@@ -11,8 +11,14 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.jlk;
+import defpackage.jll;
+import defpackage.jlm;
 
 /* loaded from: classes.dex */
 public class ShutterButtonProgressOverlay extends View {

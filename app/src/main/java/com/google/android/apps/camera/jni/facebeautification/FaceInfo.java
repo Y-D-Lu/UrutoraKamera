@@ -3,6 +3,8 @@ package com.google.android.apps.camera.jni.facebeautification;
 import android.graphics.Point;
 import android.graphics.Rect;
 
+import defpackage.enk;
+
 /* loaded from: classes.dex */
 public abstract class FaceInfo {
     public static enk builder(Rect rect) {

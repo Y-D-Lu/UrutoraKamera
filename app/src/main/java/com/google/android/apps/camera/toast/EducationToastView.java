@@ -8,8 +8,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.Space;
-import com.google.android.apps.camera.toast.EducationToastView;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.isd;
+import defpackage.isi;
+import defpackage.jrz;
 
 /* loaded from: classes2.dex */
 public class EducationToastView extends ToastView {

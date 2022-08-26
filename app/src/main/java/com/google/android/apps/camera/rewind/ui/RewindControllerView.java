@@ -4,6 +4,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
+import defpackage.jrz;
+import defpackage.mip;
+
 /* loaded from: classes.dex */
 public class RewindControllerView extends FrameLayout {
     public jrz a;

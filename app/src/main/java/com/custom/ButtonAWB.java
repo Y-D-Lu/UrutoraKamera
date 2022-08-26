@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
+
 import com.Helper;
 
 /* loaded from: classes2.dex */

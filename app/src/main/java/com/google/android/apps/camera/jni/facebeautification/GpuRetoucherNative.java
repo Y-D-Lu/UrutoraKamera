@@ -2,6 +2,8 @@ package com.google.android.apps.camera.jni.facebeautification;
 
 import android.hardware.HardwareBuffer;
 
+import defpackage.lil;
+
 /* loaded from: classes.dex */
 public final class GpuRetoucherNative {
     static {

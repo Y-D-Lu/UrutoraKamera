@@ -10,10 +10,23 @@ import android.content.ServiceConnection;
 import android.content.pm.ResolveInfo;
 import android.os.Looper;
 import android.util.Log;
+
 import com.google.vr.vrcore.base.api.VrCoreUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import defpackage.pwr;
+import defpackage.pws;
+import defpackage.pwt;
+import defpackage.pwu;
+import defpackage.pww;
+import defpackage.pwx;
+import defpackage.pxj;
+import defpackage.pxk;
+import defpackage.pxl;
+import defpackage.pxm;
 
 /* loaded from: classes.dex */
 public class DaydreamApi implements AutoCloseable {

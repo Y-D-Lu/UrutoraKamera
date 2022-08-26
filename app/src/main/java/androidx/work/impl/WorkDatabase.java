@@ -18,6 +18,7 @@ import defpackage.aqk;
 import defpackage.aqq;
 import defpackage.aqu;
 import defpackage.arg;
+import defpackage.fw;
 
 /* loaded from: classes.dex */
 public abstract class WorkDatabase extends aii {

@@ -3,7 +3,10 @@ package com.google.android.apps.camera.whitebalance;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.guf;
 
 /* loaded from: classes.dex */
 public class ManualWhiteBalanceKnob extends ImageView {

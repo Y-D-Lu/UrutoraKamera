@@ -2,6 +2,8 @@ package com.google.android.libraries.microvideo.gcamuxer;
 
 import java.nio.ByteBuffer;
 
+import defpackage.obr;
+
 /* loaded from: classes.dex */
 public class AnnexBToAvcc {
     static {

@@ -3,7 +3,13 @@ package com.google.android.apps.camera.coach;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
-import com.google.android.apps.camera.coach.CameraCoachHudView;
+
+import defpackage.dbc;
+import defpackage.dbq;
+import defpackage.dck;
+import defpackage.lic;
+import defpackage.oih;
+import defpackage.ojc;
 import j$.util.function.BooleanSupplier;
 
 /* loaded from: classes.dex */

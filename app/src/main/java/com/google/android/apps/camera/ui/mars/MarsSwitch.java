@@ -4,9 +4,16 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.FrameLayout;
+
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuButton;
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuView;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.hss;
+import defpackage.jhp;
+import defpackage.jrz;
+import defpackage.mip;
 
 /* loaded from: classes.dex */
 public class MarsSwitch extends FrameLayout {

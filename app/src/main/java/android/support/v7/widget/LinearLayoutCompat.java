@@ -11,6 +11,12 @@ import android.view.accessibility.AccessibilityNodeInfo;
 
 import com.google.android.apps.camera.bottombar.R;
 
+import defpackage.gl;
+import defpackage.jq;
+import defpackage.pa;
+import defpackage.rn;
+import defpackage.sd;
+
 /* loaded from: classes.dex */
 public class LinearLayoutCompat extends ViewGroup {
     private boolean a;

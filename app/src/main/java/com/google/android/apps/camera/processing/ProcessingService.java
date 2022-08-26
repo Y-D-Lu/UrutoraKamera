@@ -9,10 +9,33 @@ import android.content.IntentFilter;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.PowerManager;
+
 import com.Helper;
-import com.google.android.apps.camera.processing.ProcessingService;
-import java.util.concurrent.TimeUnit;
+
 import org.codeaurora.snapcam.R;
+
+import java.util.concurrent.TimeUnit;
+
+import defpackage.afp;
+import defpackage.enc;
+import defpackage.enw;
+import defpackage.fjq;
+import defpackage.fjr;
+import defpackage.hhj;
+import defpackage.hhk;
+import defpackage.hhl;
+import defpackage.hhm;
+import defpackage.hhn;
+import defpackage.hho;
+import defpackage.hhp;
+import defpackage.jmo;
+import defpackage.lab;
+import defpackage.lar;
+import defpackage.lif;
+import defpackage.lis;
+import defpackage.ljf;
+import defpackage.lzh;
+import defpackage.pih;
 
 /* compiled from: PG */
 /* loaded from: classes.dex */

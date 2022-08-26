@@ -10,9 +10,22 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.google.android.apps.camera.smarts.SmartsChipView;
+
 import com.hdrindicator.DisplayHelper;
+
 import org.codeaurora.snapcam.R;
+
+import defpackage.huq;
+import defpackage.hxa;
+import defpackage.hxy;
+import defpackage.hxz;
+import defpackage.hya;
+import defpackage.hzb;
+import defpackage.iap;
+import defpackage.iax;
+import defpackage.jsa;
+import defpackage.lap;
+import defpackage.lce;
 
 /* loaded from: classes.dex */
 public class SmartsChipView extends LinearLayout {

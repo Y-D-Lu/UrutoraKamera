@@ -3,7 +3,11 @@ package com.google.android.apps.camera.ui.preference;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
+
 import androidx.preference.Preference;
+
+import defpackage.ahm;
+import defpackage.jic;
 
 /* loaded from: classes.dex */
 public class MaterialManagedPreference extends Preference {

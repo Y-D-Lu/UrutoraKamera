@@ -3,6 +3,8 @@ package android.support.v4.media.session;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import defpackage.ba;
+
 /* loaded from: classes.dex */
 public class ParcelableVolumeInfo implements Parcelable {
     public static final Parcelable.Creator CREATOR = new ba(12);
