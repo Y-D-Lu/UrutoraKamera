@@ -17,7 +17,7 @@ public final class aa implements Cloneable {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     static {
         char c;
-        String a = b.a();
+        String a = defpackage.b.a();
         int i = 1;
         switch (a.hashCode()) {
             case -413919155:
@@ -72,7 +72,7 @@ public final class aa implements Cloneable {
 
     private final int k(int i) {
         String str = this.a;
-        byte[] bArr = e.a;
+        byte[] bArr = defpackage.e.a;
         while (i < str.length()) {
             char charAt = str.charAt(i);
             if (charAt > 255) {
@@ -89,14 +89,14 @@ public final class aa implements Cloneable {
                         } else {
                             continue;
                         }
-                    } else if (((e.c[e.b[(charAt - 8192) >> 5]] >> (charAt & 31)) & 1) != 0) {
+                    } else if (((defpackage.e.c[defpackage.e.b[(charAt - 8192) >> 5]] >> (charAt & 31)) & 1) != 0) {
                         break;
                     }
                 } else {
                     continue;
                 }
                 i++;
-            } else if (e.a[charAt] != 0) {
+            } else if (defpackage.e.a[charAt] != 0) {
                 break;
             } else {
                 i++;
@@ -107,8 +107,8 @@ public final class aa implements Cloneable {
 
     private final int l(int i) {
         String str = this.a;
-        byte[] bArr = e.a;
-        while (i < str.length() && e.a(str.charAt(i))) {
+        byte[] bArr = defpackage.e.a;
+        while (i < str.length() && defpackage.e.a(str.charAt(i))) {
             i++;
         }
         return i;
