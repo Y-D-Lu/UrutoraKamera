@@ -260,6 +260,8 @@ public final class gdy {
                 synchronized (gdyVar) {
                     try {
                         gdyVar.c.signalEndOfInputStream();
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
                 }
             }
