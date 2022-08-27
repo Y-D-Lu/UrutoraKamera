@@ -133,7 +133,7 @@ public final class fxa implements fxh {
         ojc i = ojc.i(this.u);
         ojc i2 = ojc.i(this.r);
         hlv hlvVar = this.z;
-        ?? mo37get = hqvVar.a.mo37get();
+        Object mo37get = hqvVar.a.mo37get();
         efh efhVar = (efh) hqvVar.b.mo37get();
         efhVar.getClass();
         lco lcoVar = (lco) hqvVar.c.mo37get();
@@ -149,7 +149,7 @@ public final class fxa implements fxh {
         ldaVar.getClass();
         hsrVar.getClass();
         hlvVar.getClass();
-        hqu hquVar = new hqu(mo37get, efhVar, lcoVar, gqyVar, ljfVar, hhlVar, c2, c, d, ojcVar, ldaVar, i, i2, hsrVar, hlvVar);
+        hqu hquVar = new hqu((hpr) mo37get, efhVar, lcoVar, gqyVar, ljfVar, hhlVar, c2, c, d, ojcVar, ldaVar, i, i2, hsrVar, hlvVar);
         this.A.g("getDeviceSize");
         lig ligVar = fvxVar.d.a;
         lig d2 = fvq.F(this.f.j()) ? ligVar.d() : ligVar.e();

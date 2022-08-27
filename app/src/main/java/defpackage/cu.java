@@ -1767,9 +1767,9 @@ public final class cu {
             }
             this.t.g = S();
             this.a.d = this.t;
-            ?? r5 = this.j;
+            Object r5 = this.j;
             if ((r5 instanceof ajo) && buVar == null) {
-                ajm D = r5.D();
+                ajm D = ((ajo) r5).D();
                 D.b("android:support:fragments", new ajl() { // from class: ck
                     @Override // defpackage.ajl
                     public final Bundle a() {

@@ -149,7 +149,7 @@ public class hnf extends hnd {
                     String a3 = hmzVar.j.a(currentTimeMillis);
                     hsg a4 = hmzVar.i.a(currentTimeMillis, dxh.NONE, "REWIND");
                     mbg mbgVar = hmzVar.k;
-                    ?? mo37get = mbgVar.c.mo37get();
+                    Object mo37get = mbgVar.c.mo37get();
                     ljf ljfVar = (ljf) mbgVar.b.mo37get();
                     ljfVar.getClass();
                     lco lcoVar = (lco) mbgVar.d.mo37get();
@@ -159,7 +159,7 @@ public class hnf extends hnd {
                     hhl hhlVar = (hhl) mbgVar.e.mo37get();
                     hhlVar.getClass();
                     a3.getClass();
-                    hri hriVar = new hri(mo37get, ljfVar, lcoVar, gqyVar, hhlVar, a3, c, a4);
+                    hri hriVar = new hri((hpr) mo37get, ljfVar, lcoVar, gqyVar, hhlVar, a3, c, a4);
                     hmzVar.b.e(hriVar);
                     hmzVar.c.a(hriVar);
                     hriVar.P(new lig(hnkVar.b(), hnkVar.a()));

@@ -141,13 +141,13 @@ public final class dqj implements jws {
         if (str != null) {
             lzvVar = c2;
             if (!g2.isEmpty()) {
-                ?? r4 = (lzr) g2.get(str);
-                lzvVar = r4;
-                if (r4 == 0) {
+                Object r4 = (lzr) g2.get(str);
+                lzvVar = (lzv) r4;
+                if (r4 == null) {
                     Map.Entry entry = (Map.Entry) ((oor) g2).entrySet().iterator().next();
                     ((oug) ((oug) a.c()).G(905)).y("Missing camera metadata for activeId=%s. Resorting to metadata from id=%s", str, entry.getKey());
                     str = (String) entry.getKey();
-                    lzvVar = (lzr) entry.getValue();
+                    lzvVar = (lzv) entry.getValue();
                 }
             }
         }

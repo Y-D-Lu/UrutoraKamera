@@ -39,7 +39,7 @@ public abstract class qqo extends qwg {
         qwh qwhVar = this.h;
         try {
             quz quzVar = (quz) l();
-            ?? r2 = quzVar.b;
+            qlh r2 = quzVar.b;
             Object obj = quzVar.d;
             qln context = r2.getContext();
             Object b = qvt.b(context, obj);
@@ -52,7 +52,7 @@ public abstract class qqo extends qwg {
                 Throwable m = qrgVar.m();
                 o(j, m);
                 if (qql.b) {
-                    m = qvq.a(m, r2);
+                    m = qvq.a(m, (qlv) r2);
                 }
                 r2.resumeWith(qmd.L(m));
             } else if (k != null) {

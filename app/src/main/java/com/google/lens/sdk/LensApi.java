@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
@@ -413,7 +414,7 @@ public class LensApi {
     public void onPause() {
         mfn mfnVar = this.b;
         mip.F();
-        ?? r1 = mfnVar.a;
+        Object r1 = mfnVar.a;
         mip.F();
         mfv mfvVar = (mfv) r1;
         if (mfvVar.l()) {
@@ -440,7 +441,7 @@ public class LensApi {
         }
         if (mfvVar.k()) {
             try {
-                ((mfv) r1).b.unbindService(r1);
+                ((mfv) r1).b.unbindService((ServiceConnection) r1);
             } catch (IllegalArgumentException e2) {
                 Log.w("LensServiceConnImpl", "Unable to unbind, service is not registered.");
             }

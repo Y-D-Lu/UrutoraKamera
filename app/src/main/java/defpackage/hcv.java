@@ -371,7 +371,7 @@ public final class hcv implements pys {
                                 ReplaceableView replaceableView = (ReplaceableView) iacVar2.d.c(R.id.smarts_ui_replaceableview);
                                 Object c = iacVar2.d.c(R.id.smarts_ui_overlay);
                                 Object c2 = iacVar2.d.c(R.id.smarts_preview_overlay);
-                                ?? r4 = iacVar2.a;
+                                Object r4 = iacVar2.a;
                                 Context context = iacVar2.c;
                                 gvb gvbVar = iacVar2.f;
                                 elw elwVar = iacVar2.i;
@@ -401,7 +401,7 @@ public final class hcv implements pys {
                                             hzaVar2.d.i(hyzVar);
                                         }
                                     });
-                                    hzaVar.n.c(hzaVar.k.a(r4));
+                                    hzaVar.n.c(hzaVar.k.a((hxi) r4));
                                     hzaVar.n.c(hzaVar.h.a(new hyg(hzaVar, 0), mip.bS()));
                                     hzo hzoVar = iacVar2.b;
                                     cvo cvoVar = iacVar2.e;

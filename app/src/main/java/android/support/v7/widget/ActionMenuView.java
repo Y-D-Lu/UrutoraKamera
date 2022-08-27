@@ -306,7 +306,7 @@ public class ActionMenuView extends LinearLayoutCompat implements kv, lm {
         boolean z3;
         boolean z4;
         int i5;
-        ?? r6;
+        int r6;
         int i6;
         int i7;
         int i8;
@@ -369,12 +369,12 @@ public class ActionMenuView extends LinearLayoutCompat implements kv, lm {
                         r6 = 0;
                     }
                     mk mkVar = (mk) childAt.getLayoutParams();
-                    mkVar.f = r6;
-                    int i21 = r6 == true ? 1 : 0;
-                    int i22 = r6 == true ? 1 : 0;
+                    mkVar.f = false;
+                    int i21 = r6;
+                    int i22 = r6;
                     mkVar.c = i21;
                     mkVar.b = r6;
-                    mkVar.d = r6;
+                    mkVar.d = false;
                     mkVar.leftMargin = r6;
                     mkVar.rightMargin = r6;
                     mkVar.e = z8 && ((ActionMenuItemView) childAt).b();

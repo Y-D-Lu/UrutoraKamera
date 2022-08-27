@@ -91,7 +91,7 @@ public final class ngi implements ojz {
                     Map map2 = nggVar.b;
                     Map map3 = map2;
                     if (map2 == null) {
-                        ?? a3 = nggVar.c.a();
+                        Map a3 = (Map) nggVar.c.a();
                         a3.getClass();
                         nggVar.b = a3;
                         nggVar.c = null;

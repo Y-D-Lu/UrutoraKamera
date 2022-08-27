@@ -43,12 +43,12 @@ public final class fjh implements fjt {
     @Override // defpackage.fjt
     public final void a(pac pacVar) {
         if (!this.b.offer(new fjg(pacVar))) {
-            d.v(a.c(), "Queue full. Discarded camera event.", (char) 1721);
+            defpackage.d.v(a.c(), "Queue full. Discarded camera event.", (char) 1721);
         }
         if (this.b.peek() == null) {
             return;
         }
-        ?? mo37get = this.i.mo37get();
+        pht mo37get = (pht) this.i.mo37get();
         kiu kiuVar = (kiu) mip.bY(mo37get);
         if (kiuVar != null) {
             b(kiuVar);

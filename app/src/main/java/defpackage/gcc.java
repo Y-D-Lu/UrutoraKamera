@@ -263,12 +263,12 @@ public final class gcc implements pys {
                 lapVar.getClass();
                 ojc a = ((evv) mo37get4.e).a();
                 Object mo37get5 = mo37get4.a.mo37get();
-                ?? mo37get6 = mo37get4.d.mo37get();
+                Object mo37get6 = mo37get4.d.mo37get();
                 lda ldaVar = (lda) mo37get4.c.mo37get();
                 ldaVar.getClass();
                 qkg qkgVar = mo37get4.g;
                 goyVar.getClass();
-                return new eqh(henVar, lcoVar, lapVar, a, (eqa) mo37get5, mo37get6, ldaVar, qkgVar, goyVar);
+                return new eqh(henVar, lcoVar, lapVar, a, (eqa) mo37get5, (lco) mo37get6, ldaVar, qkgVar, goyVar);
             case 15:
                 Object gxqVar = ((gjo) this.a).mo37get().k() == lwd.FRONT ? (gxl) this.b.mo37get() : new gxq();
                 qmd.ae(gxqVar);

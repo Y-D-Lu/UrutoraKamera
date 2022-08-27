@@ -15,7 +15,7 @@ import java.util.List;
 public final class lwa implements lvx {
     private final CameraManager a;
     private final lis b;
-    private final eszdman cameraManager2;
+    public eszdman cameraManager2;
 
     public lwa(CameraManager cameraManager, lis lisVar) {
         this.a = cameraManager;

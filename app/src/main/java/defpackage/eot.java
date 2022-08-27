@@ -47,7 +47,7 @@ public final class eot implements lie {
         createVideoFormat.setInteger("color-format", 2130708361);
         createVideoFormat.setInteger("frame-rate", 10);
         createVideoFormat.setFloat("i-frame-interval", 1.0f);
-        ?? h = mwp.h(executor);
+        mtb h = (mtb) mwp.h(executor);
         h.c(fileOutputStream.getFD());
         h.b(0);
         ojc d = fixVar.d();
@@ -100,7 +100,7 @@ public final class eot implements lie {
 
     public final synchronized void b(final HardwareBuffer hardwareBuffer, long j) {
         if (this.k.get()) {
-            d.v(a.c().g(ovl.a, "KeplerEncoder"), "Shutdown already called. Skipping additional requests.", (char) 1314);
+            defpackage.d.v(a.c().g(ovl.a, "KeplerEncoder"), "Shutdown already called. Skipping additional requests.", (char) 1314);
             hardwareBuffer.close();
             return;
         }
@@ -125,7 +125,7 @@ public final class eot implements lie {
 
     public final void c() {
         if (this.k.getAndSet(true)) {
-            d.v(a.c().g(ovl.a, "KeplerEncoder"), "Shutdown already called. Skipping additional requests.", (char) 1316);
+            defpackage.d.v(a.c().g(ovl.a, "KeplerEncoder"), "Shutdown already called. Skipping additional requests.", (char) 1316);
             return;
         }
         ovd ovdVar = ovl.a;

@@ -432,11 +432,11 @@ public final class fyr extends buf implements dyh {
             }
             mhm mhmVar = felVar.i;
             bww c = felVar.e.c();
-            ?? mo37get = mhmVar.a.mo37get();
+            Object mo37get = mhmVar.a.mo37get();
             hhl hhlVar = (hhl) mhmVar.b.mo37get();
             hhlVar.getClass();
             b2.getClass();
-            localSessionStorage.b = new hqz(mo37get, hhlVar, hsmVar, b2, c, a);
+            localSessionStorage.b = new hqz((hpr) mo37get, hhlVar, hsmVar, b2, c, a);
             String str2 = mbs.c.j;
             StringBuilder sb = new StringBuilder(String.valueOf(b2).length() + 1 + String.valueOf(str2).length());
             sb.append(b2);

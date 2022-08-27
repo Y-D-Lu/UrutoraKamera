@@ -284,9 +284,9 @@ public final class itu implements pys {
                 fhv mo37get3 = ((etj) this.b).mo37get();
                 lar larVar = (lar) this.c.mo37get();
                 if (mo37get2.getPackageManager().getPackageInfo("com.google.android.wearable.app", 0) != null) {
-                    ?? r0 = (jyq) a3.get();
-                    enl.f(larVar, mo37get3, r0);
-                    jygVar = r0;
+                    Object r0 = (jyq) a3.get();
+                    enl.f(larVar, mo37get3, (fik) r0);
+                    jygVar = (jyg) r0;
                     qmd.ae(jygVar);
                     return jygVar;
                 }

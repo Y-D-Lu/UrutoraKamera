@@ -58,9 +58,9 @@ final class ioo extends mip {
                 if (ioqVar.j.e() && lvpVar.L()) {
                     String str = (String) c.d(CaptureResult.LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_ID);
                     str.getClass();
-                    ?? r3 = (lzr) c.g().get(str);
-                    if (r3 != 0) {
-                        c = r3;
+                    Object r3 = (lzr) c.g().get(str);
+                    if (r3 != null) {
+                        c = (lzv) r3;
                     }
                     lvpVar = this.b.M.a(str);
                     lce lceVar = new lce((Float) this.b.r.fA());

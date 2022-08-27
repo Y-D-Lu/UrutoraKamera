@@ -71,13 +71,13 @@ public final class fwv implements fxh {
         String a2 = this.p.a(currentTimeMillis);
         bww c = this.a.c();
         ojc i = ojc.i(this.o);
-        ?? mo37get = mehVar.b.mo37get();
+        Object mo37get = mehVar.b.mo37get();
         hhl hhlVar = (hhl) mehVar.c.mo37get();
         hhlVar.getClass();
         ljf ljfVar = (ljf) mehVar.a.mo37get();
         ljfVar.getClass();
         a2.getClass();
-        hqq hqqVar = new hqq(mo37get, hhlVar, ljfVar, hsrVar2, a2, c, a, i);
+        hqq hqqVar = new hqq((hpr) mo37get, hhlVar, ljfVar, hsrVar2, a2, c, a, i);
         lig ligVar = fvxVar.d.a;
         lig d = fvq.F(this.c.j()) ? ligVar.d() : ligVar.e();
         this.b.e(hqqVar);

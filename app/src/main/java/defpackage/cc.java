@@ -51,12 +51,12 @@ public final class cc extends FrameLayout {
             bu b = e.b(classAttribute);
             b.getClass();
             b.ad();
-            ?? h = cuVar.h();
+            dd h = cuVar.h();
             h.s = true;
             b.L = this;
             h.m(getId(), b, string);
             h.o();
-            ((ay) h).a.C(h, true);
+            ((ay) h).a.C((cs) h, true);
         }
         for (da daVar : cuVar.a.e()) {
             bu buVar = daVar.c;

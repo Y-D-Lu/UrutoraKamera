@@ -241,7 +241,7 @@ public final class eyg extends buf implements jad {
             String a = fwtVar.w.a(currentTimeMillis);
             bww c3 = fwtVar.a.c();
             ojc i = ojc.i(fwtVar.s);
-            ?? mo37get = mbgVar.a.mo37get();
+            Object mo37get = mbgVar.a.mo37get();
             ljf ljfVar = (ljf) mbgVar.b.mo37get();
             ljfVar.getClass();
             efh efhVar = (efh) mbgVar.c.mo37get();
@@ -251,7 +251,7 @@ public final class eyg extends buf implements jad {
             hhl hhlVar = (hhl) mbgVar.e.mo37get();
             hhlVar.getClass();
             a.getClass();
-            hqo hqoVar = new hqo(mo37get, ljfVar, efhVar, lcoVar, hhlVar, a, c3, c2, i);
+            hqo hqoVar = new hqo((hpr) mo37get, ljfVar, efhVar, lcoVar, hhlVar, a, c3, c2, i);
             lig ligVar = fvxVar.d.a;
             lig d = fvq.F(fwtVar.c.j()) ? ligVar.d() : ligVar.e();
             fwtVar.b.e(hqoVar);

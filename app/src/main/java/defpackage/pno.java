@@ -20,10 +20,10 @@ public abstract class pno implements pqs {
     @Override // defpackage.pqs
     public final /* bridge */ /* synthetic */ Object a(InputStream inputStream, pos posVar) {
         poh H = poh.H(inputStream);
-        ?? d = d(H, posVar);
+        Object d = d(H, posVar);
         try {
             H.z(0);
-            e(d);
+            e((pqm) d);
             return d;
         } catch (ppp e) {
             throw e;

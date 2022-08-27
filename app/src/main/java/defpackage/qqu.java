@@ -90,11 +90,11 @@ public abstract class qqu extends qqf {
         int i = qutVar.b;
         qqo qqoVar = null;
         if (i != qutVar.c) {
-            ?? r3 = qutVar.a;
-            ?? r6 = r3[i];
+            Object[] r3 = qutVar.a;
+            qqo r6 = (qqo) r3[i];
             r3[i] = 0;
             qutVar.b = (i + 1) & (r3.length - 1);
-            if (r6 == 0) {
+            if (r6 == null) {
                 throw new NullPointerException("null cannot be cast to non-null type T of kotlinx.coroutines.internal.ArrayQueue");
             }
             qqoVar = r6;

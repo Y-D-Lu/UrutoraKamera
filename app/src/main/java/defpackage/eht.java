@@ -38,9 +38,9 @@ public final class eht implements hhn {
         this.g = ddfVar;
         String concat = String.valueOf(ehcVar.a).concat(".vr");
         hsg a = hshVar.a(System.currentTimeMillis(), dxh.PANORAMA, "PANO");
-        ?? mo37get = noxVar.a.mo37get();
+        Object mo37get = noxVar.a.mo37get();
         concat.getClass();
-        hqh hqhVar = new hqh(mo37get, concat, c, a);
+        hqh hqhVar = new hqh((hpr) mo37get, concat, c, a);
         this.a = hqhVar;
         int i = true != z ? 0 : 270;
         if (z) {

@@ -42,14 +42,14 @@ public final class ohw extends Thread implements ohs {
     @Override // java.lang.Thread, java.lang.Runnable
     public final void run() {
         this.f.set(true);
-        ?? r0 = this.e;
+        Object r0 = this.e;
         Duration ofNanos = Duration.ofNanos(1000000000 / this.b.a);
         oho ohoVar = (oho) r0;
         ohoVar.a = this;
         ohoVar.b = ofNanos;
         ohoVar.d.set(false);
         Looper.prepare();
-        Choreographer.getInstance().postFrameCallback(r0);
+        Choreographer.getInstance().postFrameCallback((Choreographer.FrameCallback) r0);
         Looper.loop();
     }
 }

@@ -101,10 +101,10 @@ public final class hb {
     /* JADX WARN: Type inference failed for: r6v1, types: [java.lang.CharSequence] */
     /* JADX WARN: Type inference failed for: r6v3, types: [android.text.SpannableString, android.text.Spannable] */
     public final String toString() {
-        ?? text;
+        SpannableString text;
         List emptyList;
         String str;
-        ?? sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         sb.append(super.toString());
         Rect rect = new Rect();
         this.a.getBoundsInParent(rect);
@@ -126,7 +126,7 @@ public final class hb {
                 text.setSpan(new gz(((Integer) k4.get(i)).intValue(), this, this.a.getExtras().getInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ACTION_ID_KEY")), ((Integer) k.get(i)).intValue(), ((Integer) k2.get(i)).intValue(), ((Integer) k3.get(i)).intValue());
             }
         } else {
-            text = this.a.getText();
+            text = (SpannableString) this.a.getText();
         }
         sb.append(text);
         sb.append("; contentDescription: ");

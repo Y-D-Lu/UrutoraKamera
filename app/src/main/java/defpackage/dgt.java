@@ -37,7 +37,7 @@ public final class dgt {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r0v0, types: [java.util.List, java.lang.Object] */
     public final Cursor a(dgs dgsVar, boolean z, dgr dgrVar) {
-        ?? a2 = dgsVar.a();
+        List a2 = (List) dgsVar.a();
         int i = 1;
         MatrixCursor matrixCursor = new MatrixCursor(z ? new String[]{"_id", "run", "name", "time_ns"} : new String[]{"run", "time_ns"});
         if (!a2.isEmpty()) {

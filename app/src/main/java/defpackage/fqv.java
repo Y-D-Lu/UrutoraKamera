@@ -12,7 +12,7 @@ public final class fqv implements fpp {
     public final mlk a(final FileOutputStream fileOutputStream, int i, pht phtVar, Executor executor) {
         pht h = pgb.h(phtVar, eto.e, pgr.a);
         try {
-            ?? h2 = mwp.h(executor);
+            mtb h2 = (mtb) mwp.h(executor);
             h2.c(fileOutputStream.getFD());
             h2.b(i);
             ((mtb) h2).b = pgb.h(h, imd.m, ((mtb) h2).a);

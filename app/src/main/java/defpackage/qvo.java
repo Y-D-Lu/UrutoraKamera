@@ -16,9 +16,9 @@ public class qvo extends qpg implements qlv {
     /* JADX WARN: Type inference failed for: r0v0, types: [qlv, qlh] */
     @Override // defpackage.qlv
     public final qlv getCallerFrame() {
-        ?? r0 = this.f;
+        Object r0 = this.f;
         if (r0 instanceof qlv) {
-            return r0;
+            return (qlv) r0;
         }
         return null;
     }

@@ -132,9 +132,9 @@ public final class qun extends qlu implements qts, qlv {
     /* JADX WARN: Type inference failed for: r0v0, types: [qlv, qlh] */
     @Override // defpackage.qls, defpackage.qlv
     public final qlv getCallerFrame() {
-        ?? r0 = this.e;
+        Object r0 = this.e;
         if (r0 instanceof qlv) {
-            return r0;
+            return (qlv) r0;
         }
         return null;
     }

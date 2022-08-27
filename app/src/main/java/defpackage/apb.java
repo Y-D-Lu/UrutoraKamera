@@ -28,7 +28,7 @@ public final class apb {
 
     /* JADX WARN: Type inference failed for: r0v0, types: [int, boolean] */
     public final int hashCode() {
-        ?? r0 = this.a;
+        int r0 = this.a ? 1 : 0;
         int i = r0;
         if (this.b) {
             i = r0 + 16;

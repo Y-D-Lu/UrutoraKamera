@@ -22,8 +22,8 @@ public final class hvy {
     /* JADX WARN: Type inference failed for: r0v1, types: [lwa, hvy, com.eszdman] */
     public hvy(CameraManager cameraManager, Executor executor, ScheduledExecutorService scheduledExecutorService) {
         this.b = cameraManager;
-        ?? eszdmanVar = new eszdman(cameraManager);
-        ((lwa) eszdmanVar).cameraManager2 = eszdmanVar;
+        Object eszdmanVar = new eszdman(cameraManager);
+        ((lwa) eszdmanVar).cameraManager2 = (eszdman)eszdmanVar;
         eszdmanVar.c = executor;
         eszdmanVar.d = scheduledExecutorService;
     }

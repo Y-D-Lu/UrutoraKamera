@@ -110,7 +110,7 @@ public final class gzf {
         lapVar.getClass();
         giq giqVar = (giq) this.b.mo37get();
         giqVar.getClass();
-        ?? mo37get = this.c.mo37get();
+        Object mo37get = this.c.mo37get();
         hes mo37get2 = ((het) this.d).mo37get();
         Set mo37get3 = ((pyw) this.e).mo37get();
         mo37get3.getClass();
@@ -122,7 +122,7 @@ public final class gzf {
         ljfVar.getClass();
         lmvVar.getClass();
         ojzVar.getClass();
-        return new gze(lapVar, giqVar, mo37get, mo37get2, mo37get3, dzeVar, lncVar, ljfVar, j, lmvVar, ojzVar, i);
+        return new gze(lapVar, giqVar, (pht) mo37get, mo37get2, mo37get3, dzeVar, lncVar, ljfVar, j, lmvVar, ojzVar, i);
     }
 
     public final fow b(gog gogVar) {
