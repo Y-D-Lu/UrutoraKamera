@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: qoe  reason: default package */
 /* loaded from: classes2.dex */
-public final class qoe implements Iterator, j$.util.Iterator {
+public final class qoe implements Iterator {
     final /* synthetic */ qot a;
     private final Iterator b;
     private int c = -1;

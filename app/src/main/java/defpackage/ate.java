@@ -9,7 +9,7 @@ import j$.util.function.Consumer;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: ate  reason: default package */
 /* loaded from: classes.dex */
-public class ate implements Iterator, j$.util.Iterator {
+public class ate implements Iterator {
     final /* synthetic */ atg a;
     public atd b;
     private int c;
@@ -24,7 +24,7 @@ public class ate implements Iterator, j$.util.Iterator {
         this.c = 0;
         this.f = null;
         this.g = 0;
-        this.h = Collections.EMPTY_LIST.iterator();
+        this.h = (Iterator) Collections.EMPTY_LIST.iterator();
         this.b = null;
     }
 

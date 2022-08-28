@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: prp  reason: default package */
 /* loaded from: classes2.dex */
-final class prp implements Iterator, j$.util.Iterator {
+final class prp implements Iterator {
     final Iterator a;
     final /* synthetic */ prq b;
 

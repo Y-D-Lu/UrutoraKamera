@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: qng  reason: default package */
 /* loaded from: classes2.dex */
-public final class qng implements Iterator, j$.util.Iterator {
+public final class qng implements Iterator {
     private int a;
     private final Object[] b;
 

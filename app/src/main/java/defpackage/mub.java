@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: mub  reason: default package */
 /* loaded from: classes2.dex */
-final class mub implements Iterator, j$.util.Iterator {
+final class mub implements Iterator {
     final /* synthetic */ muc a;
     private int b = 0;
 

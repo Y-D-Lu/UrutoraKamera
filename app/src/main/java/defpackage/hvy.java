@@ -3,7 +3,7 @@ package defpackage;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 
-import com.eszdman;
+import com.eszdmanClass;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
@@ -16,14 +16,14 @@ public final class hvy {
     public static final ouj a = ouj.h("com/google/android/apps/camera/sideline/SidelineCameraAvailabilityChecker");
     public final CameraManager b;
     public final Executor c;
-    private final eszdman cameraManager2;
+    private final eszdmanClass cameraManager2;
     private final ScheduledExecutorService d;
 
     /* JADX WARN: Type inference failed for: r0v1, types: [lwa, hvy, com.eszdman] */
     public hvy(CameraManager cameraManager, Executor executor, ScheduledExecutorService scheduledExecutorService) {
         this.b = cameraManager;
-        Object eszdmanVar = new eszdman(cameraManager);
-        ((lwa) eszdmanVar).cameraManager2 = (eszdman)eszdmanVar;
+        Object eszdmanVar = new eszdmanClass(cameraManager);
+        ((lwa) eszdmanVar).cameraManager2 = (eszdmanClass)eszdmanVar;
         eszdmanVar.c = executor;
         eszdmanVar.d = scheduledExecutorService;
     }

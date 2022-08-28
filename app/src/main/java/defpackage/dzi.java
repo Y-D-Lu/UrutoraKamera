@@ -1,5 +1,7 @@
 package defpackage;
 
+import com.google.googlex.gcam.ShotMetadata;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dzi  reason: default package */
 /* loaded from: classes.dex */
@@ -22,7 +24,7 @@ public final class dzi implements ebo {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void r(defpackage.edd r8, android.graphics.Bitmap r9, com.google.googlex.gcam.ShotMetadata r10) {
+    public final void r(defpackage.edd r8, android.graphics.Bitmap r9, ShotMetadata r10) {
         /*
             r7 = this;
             dzr r8 = r7.c

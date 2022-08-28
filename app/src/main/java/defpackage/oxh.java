@@ -1,7 +1,7 @@
 package defpackage;
 
-import com.google.common.flogger.backend.google.GooglePlatform;
-import com.google.common.flogger.backend.system.DefaultPlatform;
+//import com.google.common.flogger.backend.google.GooglePlatform;
+//import com.google.common.flogger.backend.system.DefaultPlatform;
 
 import java.io.File;
 import java.io.IOException;
@@ -579,15 +579,17 @@ public class oxh {
         try {
             return (owp) owz.class.getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
         } catch (IllegalAccessException | InstantiationException | NoClassDefFoundError | NoSuchMethodException | InvocationTargetException e) {
-            try {
-                return (owp) GooglePlatform.class.getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
-            } catch (IllegalAccessException | InstantiationException | NoClassDefFoundError | NoSuchMethodException | InvocationTargetException e2) {
-                try {
-                    return (owp) DefaultPlatform.class.getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
-                } catch (IllegalAccessException | InstantiationException | NoClassDefFoundError | NoSuchMethodException | InvocationTargetException e3) {
-                    return null;
-                }
-            }
+            // luyuedong666 TODO: fix out
+//            try {
+//                return (owp) GooglePlatform.class.getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
+//            } catch (IllegalAccessException | InstantiationException | NoClassDefFoundError | NoSuchMethodException | InvocationTargetException e2) {
+//                try {
+//                    return (owp) DefaultPlatform.class.getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
+//                } catch (IllegalAccessException | InstantiationException | NoClassDefFoundError | NoSuchMethodException | InvocationTargetException e3) {
+//                    return null;
+//                }
+//            }
+            return null;
         }
     }
 

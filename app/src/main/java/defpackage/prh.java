@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: prh  reason: default package */
 /* loaded from: classes2.dex */
-final class prh implements Iterator, j$.util.Iterator {
+final class prh implements Iterator {
     final /* synthetic */ prj a;
     private int b = -1;
     private boolean c;

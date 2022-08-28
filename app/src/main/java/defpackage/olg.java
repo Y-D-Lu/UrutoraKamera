@@ -9,7 +9,7 @@ import j$.util.function.Consumer;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: olg  reason: default package */
 /* loaded from: classes2.dex */
-public abstract class olg implements Iterator, j$.util.Iterator {
+public abstract class olg implements Iterator {
     int b;
     int c = -1;
     int d;

@@ -57,13 +57,13 @@ public final class ExtensionWindowBackend implements WindowBackend {
         public final ExtensionInterfaceCompat initAndVerifyExtension(Context context) {
             context.getClass();
             try {
-                if (!isSidecarVersionSupported(SidecarCompat.Companion.getSidecarVersion())) {
-                    return null;
-                }
-                SidecarCompat sidecarCompat = new SidecarCompat(context);
-                if (sidecarCompat.validateExtensionInterface()) {
-                    return sidecarCompat;
-                }
+//                if (!isSidecarVersionSupported(SidecarCompat.Companion.getSidecarVersion())) {
+//                    return null;
+//                }
+//                SidecarCompat sidecarCompat = new SidecarCompat(context);
+//                if (sidecarCompat.validateExtensionInterface()) {
+//                    return sidecarCompat;
+//                }
                 return null;
             } catch (Throwable th) {
                 return null;

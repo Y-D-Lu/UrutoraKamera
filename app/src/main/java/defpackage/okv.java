@@ -8,7 +8,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: okv  reason: default package */
 /* loaded from: classes2.dex */
-final class okv implements Iterator, j$.util.Iterator {
+final class okv implements Iterator {
     Map.Entry a;
     final /* synthetic */ Iterator b;
     final /* synthetic */ okw c;

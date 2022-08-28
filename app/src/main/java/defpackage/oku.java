@@ -9,7 +9,7 @@ import j$.util.function.Consumer;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: oku  reason: default package */
 /* loaded from: classes2.dex */
-public abstract class oku implements Iterator, j$.util.Iterator {
+public abstract class oku implements Iterator {
     final Iterator a;
     Object b = null;
     Collection c = null;

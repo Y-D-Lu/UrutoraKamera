@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: qlb  reason: default package */
 /* loaded from: classes2.dex */
-public final class qlb implements Iterator, j$.util.Iterator {
+public final class qlb implements Iterator {
     public boolean a;
     private final int b;
     private int c;

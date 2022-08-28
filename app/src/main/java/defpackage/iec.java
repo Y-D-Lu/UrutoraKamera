@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 
 import j$.util.Collection;
 import j$.util.Comparator$CC;
-import j$.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 import j$.util.function.Predicate;
 import j$.util.function.ToIntFunction;
 import j$.util.stream.Collectors;

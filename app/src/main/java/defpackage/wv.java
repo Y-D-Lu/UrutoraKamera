@@ -8,7 +8,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: wv  reason: default package */
 /* loaded from: classes2.dex */
-final class wv implements Iterator, Map.Entry, j$.util.Iterator, Map.Entry {
+final class wv implements Iterator, Map.Entry {
     int a;
     int b = -1;
     boolean c;

@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: oii  reason: default package */
 /* loaded from: classes2.dex */
-abstract class oii implements Iterator, j$.util.Iterator {
+abstract class oii implements Iterator {
     final CharSequence b;
     final boolean c;
     private Object f;

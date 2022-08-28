@@ -9,7 +9,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: qkt  reason: default package */
 /* loaded from: classes2.dex */
-public final class qkt implements Iterator, j$.util.Iterator {
+public final class qkt implements Iterator {
     public Object a;
     public int b = 2;
     private final ArrayDeque c;

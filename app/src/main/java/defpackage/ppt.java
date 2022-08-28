@@ -8,7 +8,7 @@ import j$.util.function.Consumer;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: ppt  reason: default package */
 /* loaded from: classes2.dex */
-public final class ppt implements Iterator, j$.util.Iterator {
+public final class ppt implements Iterator {
     private final Iterator a;
 
     public ppt(Iterator it) {

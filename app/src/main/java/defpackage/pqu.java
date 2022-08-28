@@ -2,7 +2,7 @@ package defpackage;
 
 import java.util.concurrent.ConcurrentMap;
 
-import j$.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: pqu  reason: default package */
 /* loaded from: classes2.dex */

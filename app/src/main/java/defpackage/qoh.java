@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: qoh  reason: default package */
 /* loaded from: classes2.dex */
-public final class qoh implements Iterator, j$.util.Iterator {
+public final class qoh implements Iterator {
     private final Iterator a;
     private int b;
 

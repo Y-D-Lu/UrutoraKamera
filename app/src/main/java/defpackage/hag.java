@@ -1,5 +1,7 @@
 package defpackage;
 
+import com.google.googlex.gcam.BurstSpec;
+
 import java.util.List;
 
 /* renamed from: hag  reason: default package */
@@ -39,7 +41,7 @@ public final class hag implements hea {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void b(java.util.List r20, defpackage.gog r21, int r22, defpackage.lzv r23, defpackage.dzu r24, com.google.googlex.gcam.BurstSpec r25, defpackage.ojc r26, defpackage.ojc r27, int r28) {
+    public final void b(java.util.List r20, defpackage.gog r21, int r22, defpackage.lzv r23, defpackage.dzu r24, BurstSpec r25, defpackage.ojc r26, defpackage.ojc r27, int r28) {
         /*
             Method dump skipped, instructions count: 358
             To view this dump change 'Code comments level' option to 'DEBUG'

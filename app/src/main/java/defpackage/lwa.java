@@ -5,7 +5,7 @@ import android.hardware.camera2.CameraManager;
 
 import com.Fix.Lens;
 import com.Helper;
-import com.eszdman;
+import com.eszdmanClass;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,11 +15,11 @@ import java.util.List;
 public final class lwa implements lvx {
     private final CameraManager a;
     private final lis b;
-    public eszdman cameraManager2;
+    public eszdmanClass cameraManager2;
 
     public lwa(CameraManager cameraManager, lis lisVar) {
         this.a = cameraManager;
-        this.cameraManager2 = new eszdman(cameraManager);
+        this.cameraManager2 = new eszdmanClass(cameraManager);
         this.b = lisVar.a("DefaultCamIdsPrdr");
     }
 

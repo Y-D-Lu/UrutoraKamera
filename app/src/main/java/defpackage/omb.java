@@ -8,7 +8,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: omb  reason: default package */
 /* loaded from: classes2.dex */
-abstract class omb implements Iterator, j$.util.Iterator {
+abstract class omb implements Iterator {
     int b;
     int c;
     int d = -1;

@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: owh  reason: default package */
 /* loaded from: classes2.dex */
-final class owh implements Iterator, j$.util.Iterator {
+final class owh implements Iterator {
     final /* synthetic */ owi a;
     private int b = 0;
 

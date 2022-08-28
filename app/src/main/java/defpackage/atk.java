@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: atk  reason: default package */
 /* loaded from: classes.dex */
-final class atk implements Iterator, j$.util.Iterator {
+final class atk implements Iterator {
     final /* synthetic */ Iterator a;
 
     public atk(Iterator it) {

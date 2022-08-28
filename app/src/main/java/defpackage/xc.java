@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: xc  reason: default package */
 /* loaded from: classes2.dex */
-abstract class xc implements Iterator, j$.util.Iterator {
+abstract class xc implements Iterator {
     private int a;
     private int b;
     private boolean c;

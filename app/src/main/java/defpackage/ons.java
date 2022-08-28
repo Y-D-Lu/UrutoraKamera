@@ -8,7 +8,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: ons  reason: default package */
 /* loaded from: classes2.dex */
-final class ons implements Iterator, j$.util.Iterator {
+final class ons implements Iterator {
     final /* synthetic */ ont a;
     private int b;
     private int c;

@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: oxl  reason: default package */
 /* loaded from: classes2.dex */
-final class oxl implements Iterator, j$.util.Iterator {
+final class oxl implements Iterator {
     final /* synthetic */ oxm a;
     private int b = 0;
 

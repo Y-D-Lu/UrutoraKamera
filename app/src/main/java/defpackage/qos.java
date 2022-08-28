@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: qos  reason: default package */
 /* loaded from: classes2.dex */
-public final class qos implements Iterator, j$.util.Iterator {
+public final class qos implements Iterator {
     final /* synthetic */ qot a;
     private final Iterator b;
 

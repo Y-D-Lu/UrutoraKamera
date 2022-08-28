@@ -50,7 +50,7 @@ public final class dx {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public static android.content.res.ColorStateList b(android.content.res.Resources r34, org.xmlpull.v1.XmlPullParser r35, android.util.AttributeSet r36, android.content.res.Resources.Theme r37) {
+    public static android.content.res.ColorStateList b(android.content.res.Resources r34, XmlPullParser r35, android.util.AttributeSet r36, android.content.res.Resources.Theme r37) {
         /*
             Method dump skipped, instructions count: 908
             To view this dump change 'Code comments level' option to 'DEBUG'

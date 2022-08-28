@@ -7,6 +7,7 @@ import com.google.common.io.ByteStreams;
 import com.google.mediapipe.framework.AndroidPacketCreator;
 import com.google.mediapipe.framework.Graph;
 import com.google.mediapipe.framework.MediaPipeException;
+import com.google.mediapipe.framework.TextureFrame;
 
 import java.io.File;
 import java.io.IOException;
@@ -69,7 +70,7 @@ public final class pmv implements pmw {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void a(com.google.mediapipe.framework.TextureFrame r15) {
+    public final void a(TextureFrame r15) {
         /*
             r14 = this;
             long r0 = r15.getTimestamp()

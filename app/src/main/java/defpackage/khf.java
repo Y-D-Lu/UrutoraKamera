@@ -4,7 +4,7 @@ import android.content.Context;
 
 import java.nio.charset.Charset;
 
-import j$.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: khf  reason: default package */
 /* loaded from: classes2.dex */

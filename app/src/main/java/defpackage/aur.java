@@ -7,7 +7,7 @@ import android.media.MediaActionSound;
 import android.os.Handler;
 import android.os.HandlerThread;
 
-import com.eszdman;
+import com.eszdmanClass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,7 +21,7 @@ public final class aur extends awr {
     public static final axo a = new axo("AndCam2AgntImp");
     public final aup b;
     public final axi c;
-    public final eszdman cameraManager2;
+    public final eszdmanClass cameraManager2;
     public final axk d;
     public final CameraManager e;
     public final MediaActionSound f;
@@ -43,7 +43,7 @@ public final class aur extends awr {
         axkVar.start();
         CameraManager cameraManager = (CameraManager) context.getSystemService("camera");
         this.e = cameraManager;
-        this.cameraManager2 = new eszdman(cameraManager);
+        this.cameraManager2 = new eszdmanClass(cameraManager);
         MediaActionSound mediaActionSound = new MediaActionSound();
         this.f = mediaActionSound;
         mediaActionSound.load(0);

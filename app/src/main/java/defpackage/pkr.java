@@ -673,7 +673,7 @@ public final class pkr {
         	at jadx.core.dex.visitors.blocks.BlockProcessor.processBlocksTree(BlockProcessor.java:46)
         	at jadx.core.dex.visitors.blocks.BlockProcessor.visit(BlockProcessor.java:40)
         */
-    public final com.google.googlex.gcam.FrameMetadata m(defpackage.lzv r36, com.google.googlex.gcam.GyroSampleVector r37, java.util.Map r38) {
+    public final FrameMetadata m(defpackage.lzv r36, GyroSampleVector r37, java.util.Map r38) {
         /*
             Method dump skipped, instructions count: 2198
             To view this dump change 'Code comments level' option to 'DEBUG'

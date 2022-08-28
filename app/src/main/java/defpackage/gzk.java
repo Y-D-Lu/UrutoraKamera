@@ -2,6 +2,8 @@ package defpackage;
 
 import android.hardware.camera2.CaptureResult;
 
+import com.google.googlex.gcam.BurstSpec;
+
 /* renamed from: gzk  reason: default package */
 /* loaded from: classes.dex */
 public final class gzk {
@@ -194,7 +196,7 @@ public final class gzk {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final boolean c(defpackage.edd r23, com.google.googlex.gcam.BurstSpec r24, defpackage.ojc r25, defpackage.lzv r26, defpackage.goe r27, defpackage.lpc r28, defpackage.lqd r29, defpackage.lie r30, defpackage.iij r31, int r32, int r33, int r34) {
+    public final boolean c(defpackage.edd r23, BurstSpec r24, defpackage.ojc r25, defpackage.lzv r26, defpackage.goe r27, defpackage.lpc r28, defpackage.lqd r29, defpackage.lie r30, defpackage.iij r31, int r32, int r33, int r34) {
         /*
             Method dump skipped, instructions count: 1466
             To view this dump change 'Code comments level' option to 'DEBUG'

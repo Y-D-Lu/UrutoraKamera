@@ -18,6 +18,8 @@ import com.google.android.apps.camera.bottombar.R;
 import com.google.lens.sdk.LensApi;
 import com.hdrindicator.DisplayHelper;
 
+import org.xmlpull.v1.XmlPullParser;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -1431,7 +1433,7 @@ public final class zu {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void d(android.content.Context r21, org.xmlpull.v1.XmlPullParser r22) {
+    public final void d(Context r21, XmlPullParser r22) {
         /*
             Method dump skipped, instructions count: 2318
             To view this dump change 'Code comments level' option to 'DEBUG'

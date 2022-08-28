@@ -9,5 +9,6 @@ public final class mix {
     public int d = 1;
     public miy e;
     public miw f;
-    public miz g;
+    // luyuedong666 TODO: fix out
+    //public miz g;
 }

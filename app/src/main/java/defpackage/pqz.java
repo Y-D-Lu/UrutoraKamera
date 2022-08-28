@@ -9,7 +9,7 @@ import j$.util.function.Consumer;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: pqz  reason: default package */
 /* loaded from: classes2.dex */
-public final class pqz implements Iterator, j$.util.Iterator {
+public final class pqz implements Iterator {
     private final ArrayDeque a;
     private poa b;
 

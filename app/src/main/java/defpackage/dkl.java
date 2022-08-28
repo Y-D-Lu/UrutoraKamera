@@ -3,7 +3,7 @@ package defpackage;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 
-import com.eszdman;
+import com.eszdmanClass;
 
 import java.util.concurrent.Executor;
 
@@ -13,7 +13,7 @@ public final class dkl {
     private static final ouj c = ouj.h("com/google/android/apps/camera/device/CameraDeviceVerifier");
     public final Object a = new Object();
     public pih b;
-    private final eszdman cameraManager2;
+    private final eszdmanClass cameraManager2;
     private final CameraManager d;
     private final pyn e;
     private final Executor f;
@@ -21,7 +21,7 @@ public final class dkl {
 
     public dkl(CameraManager cameraManager, pyn pynVar, Executor executor, lle lleVar) {
         this.d = cameraManager;
-        this.cameraManager2 = new eszdman(cameraManager);
+        this.cameraManager2 = new eszdmanClass(cameraManager);
         this.e = pynVar;
         this.f = executor;
         this.g = lleVar;

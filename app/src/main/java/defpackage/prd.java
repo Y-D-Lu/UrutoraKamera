@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: prd  reason: default package */
 /* loaded from: classes2.dex */
-final class prd implements Iterator, j$.util.Iterator {
+final class prd implements Iterator {
     @Override // j$.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
         Iterator.CC.$default$forEachRemaining(this, consumer);

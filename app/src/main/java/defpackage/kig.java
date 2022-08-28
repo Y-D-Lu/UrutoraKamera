@@ -13,7 +13,7 @@ public class kig extends Exception {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public kig(com.google.android.gms.common.api.Status r5) {
+    public kig(Status r5) {
         /*
             r4 = this;
             int r0 = r5.g

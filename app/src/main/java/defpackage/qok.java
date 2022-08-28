@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: qok  reason: default package */
 /* loaded from: classes2.dex */
-final class qok extends qol implements Iterator, j$.util.Iterator, qlh {
+final class qok extends qol implements Iterator, qlh {
     public qlh a;
     private int b;
     private Object c;

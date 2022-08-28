@@ -15,13 +15,13 @@ import java.util.Set;
 import defpackage.dep;
 
 /* loaded from: classes2.dex */
-public class eszdman {
+public class eszdmanClass {
     private static String TAG = "CameraManager2";
-    public static eszdman cameraManager2;
+    public static eszdmanClass cameraManager2;
     public final SharedPreferences SharedPreferences;
     private Set<String> mCameraIDs;
 
-    public eszdman(CameraManager cameraManager) {
+    public eszdmanClass(CameraManager cameraManager) {
         cameraManager2 = this;
         this.mCameraIDs = new HashSet();
         SharedPreferences sharedPreferences = dep.d.b;

@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: ops  reason: default package */
 /* loaded from: classes2.dex */
-final class ops implements Iterator, j$.util.Iterator {
+final class ops implements Iterator {
     boolean a = true;
     final /* synthetic */ Iterator b;
 

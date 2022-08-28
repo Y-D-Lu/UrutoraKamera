@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: okg  reason: default package */
 /* loaded from: classes2.dex */
-final class okg implements Iterator, j$.util.Iterator {
+final class okg implements Iterator {
     Map.Entry a;
     final /* synthetic */ Iterator b;
     final /* synthetic */ okm c;

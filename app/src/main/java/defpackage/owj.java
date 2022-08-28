@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: owj  reason: default package */
 /* loaded from: classes2.dex */
-final class owj implements Iterator, j$.util.Iterator {
+final class owj implements Iterator {
     final /* synthetic */ owk a;
     private final ovd b;
     private int c;

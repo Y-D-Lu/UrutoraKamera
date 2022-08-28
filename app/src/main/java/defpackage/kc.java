@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.view.MenuInflater;
 
+import org.xmlpull.v1.XmlPullParser;
+
 /* renamed from: kc  reason: default package */
 /* loaded from: classes2.dex */
 public final class kc extends MenuInflater {
@@ -37,7 +39,7 @@ public final class kc extends MenuInflater {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final void b(org.xmlpull.v1.XmlPullParser r17, android.util.AttributeSet r18, android.view.Menu r19) {
+    private final void b(XmlPullParser r17, android.util.AttributeSet r18, android.view.Menu r19) {
         /*
             Method dump skipped, instructions count: 598
             To view this dump change 'Code comments level' option to 'DEBUG'

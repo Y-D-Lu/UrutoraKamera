@@ -7,7 +7,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: klq  reason: default package */
 /* loaded from: classes2.dex */
-public final class klq implements Iterator, j$.util.Iterator {
+public final class klq implements Iterator {
     protected final klp a;
     protected int b = -1;
 

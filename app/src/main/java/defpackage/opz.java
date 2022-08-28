@@ -9,7 +9,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: opz  reason: default package */
 /* loaded from: classes2.dex */
-final class opz implements Iterator, j$.util.Iterator {
+final class opz implements Iterator {
     private Iterator a;
     private Iterator b = opy.a;
     private Iterator c;

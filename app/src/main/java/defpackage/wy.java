@@ -11,7 +11,7 @@ import j$.util.function.Function;
 
 /* renamed from: wy  reason: default package */
 /* loaded from: classes.dex */
-public class wy extends xf implements Map, j$.util.Map {
+public class wy extends xf implements Map {
     ws a;
     wu b;
     ww c;

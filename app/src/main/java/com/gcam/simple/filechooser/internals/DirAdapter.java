@@ -3,7 +3,6 @@ package com.gcam.simple.filechooser.internals;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,8 +68,7 @@ public class DirAdapter extends ArrayAdapter {
     }
 
     @Override // android.widget.ArrayAdapter, android.widget.Adapter
-    @NonNull
-    public View getView(int i, View view, @NonNull ViewGroup viewGroup) {
+    public View getView(int i, View view, ViewGroup viewGroup) {
         SimpleDateFormat simpleDateFormat;
         Date date;
         ViewGroup viewGroup2 = (ViewGroup) super.getView(i, view, viewGroup);

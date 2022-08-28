@@ -1,13 +1,14 @@
 package defpackage;
 
 import android.os.Parcelable;
-import android.support.v4.media.MediaBrowserCompat$MediaItem;
+// luyuedong666 TODO: fix out
+//import android.support.v4.media.MediaBrowserCompat$MediaItem;
 import android.support.v4.media.MediaDescriptionCompat;
 import android.support.v4.media.MediaMetadataCompat;
 import android.support.v4.media.RatingCompat;
-import android.support.v4.media.session.MediaSessionCompat$QueueItem;
-import android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper;
-import android.support.v4.media.session.MediaSessionCompat$Token;
+//import android.support.v4.media.session.MediaSessionCompat$QueueItem;
+//import android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper;
+//import android.support.v4.media.session.MediaSessionCompat$Token;
 import android.support.v4.media.session.ParcelableVolumeInfo;
 import android.support.v4.media.session.PlaybackStateCompat;
 
@@ -48,20 +49,20 @@ public final class ba implements Parcelable.Creator {
                 return new cv[i];
             case 4:
                 return new cy[i];
-            case 5:
-                return new MediaBrowserCompat$MediaItem[i];
+//            case 5:
+//                return new MediaBrowserCompat$MediaItem[i];
             case 6:
                 return new MediaDescriptionCompat[i];
             case 7:
                 return new MediaMetadataCompat[i];
             case 8:
                 return new RatingCompat[i];
-            case 9:
-                return new MediaSessionCompat$QueueItem[i];
-            case 10:
-                return new MediaSessionCompat$ResultReceiverWrapper[i];
-            case 11:
-                return new MediaSessionCompat$Token[i];
+//            case 9:
+//                return new MediaSessionCompat$QueueItem[i];
+//            case 10:
+//                return new MediaSessionCompat$ResultReceiverWrapper[i];
+//            case 11:
+//                return new MediaSessionCompat$Token[i];
             case 12:
                 return new ParcelableVolumeInfo[i];
             case 13:

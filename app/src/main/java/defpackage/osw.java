@@ -8,7 +8,7 @@ import j$.util.function.Consumer;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: osw  reason: default package */
 /* loaded from: classes2.dex */
-public final class osw implements Iterator, j$.util.Iterator {
+public final class osw implements Iterator {
     osx a;
     oqv b;
     final /* synthetic */ osz c;

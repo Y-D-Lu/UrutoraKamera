@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Typeface;
 
-import j$.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: en  reason: default package */
 /* loaded from: classes.dex */

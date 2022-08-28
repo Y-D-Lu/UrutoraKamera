@@ -9,7 +9,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: nha  reason: default package */
 /* loaded from: classes2.dex */
-final class nha implements Iterator, j$.util.Iterator {
+final class nha implements Iterator {
     private static final Pattern a;
     private static final Pattern h;
     private final nhd i;

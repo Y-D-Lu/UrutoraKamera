@@ -209,7 +209,7 @@ public final class ebi implements ebe {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final defpackage.edd E(int r38, defpackage.hsp r39, defpackage.gog r40, com.google.googlex.gcam.PostviewParams r41, defpackage.gqt r42, defpackage.lzv r43, boolean r44, int r45, int r46, boolean r47, int r48, boolean r49, defpackage.ojc r50) {
+    private final defpackage.edd E(int r38, defpackage.hsp r39, defpackage.gog r40, PostviewParams r41, defpackage.gqt r42, defpackage.lzv r43, boolean r44, int r45, int r46, boolean r47, int r48, boolean r49, defpackage.ojc r50) {
         /*
             Method dump skipped, instructions count: 1686
             To view this dump change 'Code comments level' option to 'DEBUG'
@@ -254,7 +254,7 @@ public final class ebi implements ebe {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final com.google.googlex.gcam.ShotParams G(float r15, int r16, defpackage.gqt r17, int r18, boolean r19, boolean r20, boolean r21, defpackage.ojc r22, defpackage.ecb r23, boolean r24, boolean r25) {
+    private final ShotParams G(float r15, int r16, defpackage.gqt r17, int r18, boolean r19, boolean r20, boolean r21, defpackage.ojc r22, defpackage.ecb r23, boolean r24, boolean r25) {
         /*
             Method dump skipped, instructions count: 1094
             To view this dump change 'Code comments level' option to 'DEBUG'

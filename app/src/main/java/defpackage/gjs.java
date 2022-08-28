@@ -2,7 +2,7 @@ package defpackage;
 
 import java.util.Map;
 
-import j$.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: gjs  reason: default package */
 /* loaded from: classes.dex */

@@ -5,7 +5,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: ost  reason: default package */
 /* loaded from: classes2.dex */
-abstract class ost implements Iterator, j$.util.Iterator {
+abstract class ost implements Iterator {
     final Iterator b;
 
     public ost(Iterator it) {

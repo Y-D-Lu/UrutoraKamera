@@ -5,7 +5,7 @@ import android.hardware.camera2.CaptureResult;
 import java.util.List;
 import java.util.Map;
 
-import j$.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: lvb  reason: default package */
 /* loaded from: classes2.dex */

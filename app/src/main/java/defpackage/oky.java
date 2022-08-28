@@ -9,7 +9,7 @@ import j$.util.function.Consumer;
 
 /* renamed from: oky  reason: default package */
 /* loaded from: classes2.dex */
-class oky implements Iterator, j$.util.Iterator {
+class oky implements Iterator {
     final Iterator a;
     final Collection b;
     final /* synthetic */ okz c;
