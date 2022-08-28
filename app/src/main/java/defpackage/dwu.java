@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: dwu  reason: default package */
 /* loaded from: classes.dex */
@@ -12,7 +13,7 @@ public final class dwu {
     private final Map b = new HashMap();
 
     private final synchronized dws f(long j) {
-        for (dws dwsVar : this.b.values()) {
+        for (dws dwsVar : (Set<dws>)this.b.values()) {
             if (dwsVar.a.a == j) {
                 return dwsVar;
             }
@@ -32,7 +33,7 @@ public final class dwu {
     public final synchronized List c() {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (dws dwsVar : this.b.values()) {
+        for (dws dwsVar : (Set<dws>)this.b.values()) {
             if (dwsVar.e()) {
                 arrayList.add(dwsVar);
             }

@@ -14,7 +14,8 @@ public final class mrh implements Comparable {
 
     @Override // java.lang.Comparable
     /* renamed from: a */
-    public final int compareTo(mrh mrhVar) {
+    public final int compareTo(Object obj) {
+        mrh mrhVar = (mrh) obj;
         int i = this.b;
         int i2 = mrhVar.b;
         if (i < i2) {

@@ -17,7 +17,7 @@ public final class mua extends mmb implements mtu {
     }
 
     @Override // defpackage.mmb
-    protected final mne b() {
+    public final mne b() {
         this.b.set(false);
         mtz mtzVar = this.a;
         int decrementAndGet = mtzVar.a.decrementAndGet();

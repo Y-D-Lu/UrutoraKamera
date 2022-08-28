@@ -54,7 +54,7 @@ public class mrd extends mpo {
         return new mrd(mpiVar, mpiVar.h().e(new mqj() { // from class: mpb
             @Override // defpackage.mqj
             public final String a() {
-                String valueOf = String.valueOf(mme.this);
+                String valueOf = String.valueOf(mmeVar);
                 StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 24);
                 sb.append("createCanvasForSurface(");
                 sb.append(valueOf);
@@ -64,7 +64,7 @@ public class mrd extends mpo {
         }, new mlu() { // from class: mpe
             @Override // defpackage.mlu
             public final Object a(Object obj) {
-                mtu mtuVar2 = mtu.this;
+                mtu mtuVar2 = mtuVar;
                 mme mmeVar2 = mmeVar;
                 mqq mqqVar = (mqq) obj;
                 EGLDisplay f = mqqVar.f();
@@ -87,7 +87,7 @@ public class mrd extends mpo {
         e(new mqj() { // from class: mpc
             @Override // defpackage.mqj
             public final String a() {
-                String valueOf = String.valueOf(((mtq) mtp.this).a);
+                String valueOf = String.valueOf(((mtq) mtpVar).a);
                 StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 16);
                 sb.append("readCanvasInto(");
                 sb.append(valueOf);
@@ -97,7 +97,7 @@ public class mrd extends mpo {
         }, new mlu() { // from class: mpd
             @Override // defpackage.mlu
             public final Object a(Object obj) {
-                mtp mtpVar2 = mtp.this;
+                mtp mtpVar2 = mtpVar;
                 mqq mqqVar = (mqq) obj;
                 mqqVar.i();
                 mtu c = ((mtq) mtpVar2).c();

@@ -338,9 +338,6 @@ public final class amq {
                 z = Arrays.deepEquals((Object[]) obj2, (Object[]) obj3);
                 continue;
             }
-            if (!z) {
-                return false;
-            }
         }
         return true;
     }
