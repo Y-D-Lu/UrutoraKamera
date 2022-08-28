@@ -12,14 +12,14 @@ final class opx extends oti {
         this.b = obj;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return !this.a;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (!this.a) {
             this.a = true;
             return this.b;

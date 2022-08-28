@@ -5,7 +5,7 @@ import android.animation.Animator;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.hdrindicator.DisplayHelper;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: hnh  reason: default package */
@@ -32,7 +32,7 @@ public class hnh extends hnd {
             d.v(hmy.b.b().g(ovl.a, "McFlyControllerImpl"), "Rewind has not been initialized.", (char) 2562);
         } else {
             hmyVar.u(mip.ew(new Consumer() { // from class: hms
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     hmy hmyVar2 = hmy.this;
                     Animator animator = (Animator) obj;
@@ -40,7 +40,7 @@ public class hnh extends hnd {
                     hmyVar2.i.setVisibility(0);
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     return consumer.getClass();
                 }

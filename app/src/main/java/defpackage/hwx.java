@@ -2,7 +2,7 @@ package defpackage;
 
 import android.content.Context;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: hwx  reason: default package */
 /* loaded from: classes.dex */
@@ -11,7 +11,7 @@ public final class hwx {
 
     public hwx(final Context context) {
         Supplier supplier = new Supplier() { // from class: hww
-            @Override // j$.util.function.Supplier
+            @Override // java.util.function.Supplier
             /* renamed from: get */
             public final Object mo291get() {
                 return Long.valueOf(hwv.b(context));

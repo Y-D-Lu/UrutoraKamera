@@ -34,7 +34,7 @@ import defpackage.so;
 import defpackage.sq;
 import defpackage.sr;
 import defpackage.tr;
-import j$.util.Objects;
+import java.util.Objects;
 
 /* loaded from: classes.dex */
 public class ComplicationDrawable extends Drawable implements Parcelable {

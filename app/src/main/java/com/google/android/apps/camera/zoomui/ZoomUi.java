@@ -39,8 +39,8 @@ import defpackage.mip;
 import defpackage.obr;
 import defpackage.ope;
 import defpackage.ouj;
-import j$.util.Collection;
-import j$.util.function.Consumer;
+import java.util.Collection;
+import java.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class ZoomUi extends FrameLayout {
@@ -72,12 +72,12 @@ public class ZoomUi extends FrameLayout {
     private final void v() {
         mip.es(this, this.c);
         Collection.EL.forEach(ope.M(c(), d(), n(), j(), l(), k(), m()), new Consumer() { // from class: kah
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 mip.et((View) obj, ZoomUi.this.c);
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

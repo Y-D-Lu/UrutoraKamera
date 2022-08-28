@@ -3,8 +3,8 @@ package defpackage;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import j$.util.Optional;
-import j$.util.function.Consumer;
+import java.util.Optional;
+import java.util.function.Consumer;
 
 /* renamed from: ogy  reason: default package */
 /* loaded from: classes2.dex */
@@ -22,7 +22,7 @@ public final class ogy implements ohe {
     public final void a(final byte[] bArr) {
         if (this.c == 1) {
             this.b.ifPresent(new Consumer() { // from class: ogx
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     switch (r2) {
                         case 0:
@@ -40,7 +40,7 @@ public final class ogy implements ohe {
                     }
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     switch (r2) {
                         case 0:
@@ -52,7 +52,7 @@ public final class ogy implements ohe {
             });
         } else {
             this.a.ifPresent(new Consumer() { // from class: ogx
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     switch (r2) {
                         case 0:
@@ -70,7 +70,7 @@ public final class ogy implements ohe {
                     }
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     switch (r2) {
                         case 0:
@@ -86,12 +86,12 @@ public final class ogy implements ohe {
     @Override // defpackage.ohe
     public final void b(final int i) {
         this.b.ifPresent(new Consumer() { // from class: ogw
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 ((mip) obj).s(i);
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.text.TextUtils;
 import android.view.SurfaceView;
 
-import j$.nio.charset.StandardCharsets;
+import java.nio.charset.StandardCharsets;
 
 /* renamed from: jyo  reason: default package */
 /* loaded from: classes2.dex */

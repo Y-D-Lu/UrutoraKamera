@@ -10,7 +10,7 @@ import defpackage.dck;
 import defpackage.lic;
 import defpackage.oih;
 import defpackage.ojc;
-import j$.util.function.BooleanSupplier;
+import java.util.function.BooleanSupplier;
 
 /* loaded from: classes.dex */
 public class CameraCoachHudView extends View {
@@ -52,7 +52,7 @@ public class CameraCoachHudView extends View {
     protected final void onFinishInflate() {
         super.onFinishInflate();
         BooleanSupplier booleanSupplier = new BooleanSupplier() { // from class: dak
-            @Override // j$.util.function.BooleanSupplier
+            @Override // java.util.function.BooleanSupplier
             public final boolean getAsBoolean() {
                 return CameraCoachHudView.this.e;
             }

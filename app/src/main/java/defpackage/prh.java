@@ -2,8 +2,8 @@ package defpackage;
 
 import java.util.Map;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: prh  reason: default package */
 /* loaded from: classes2.dex */
@@ -24,12 +24,12 @@ final class prh implements Iterator {
         return this.d;
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         if (this.b + 1 >= this.a.a.size()) {
             return !this.a.b.isEmpty() && a().hasNext();
@@ -37,16 +37,16 @@ final class prh implements Iterator {
         return true;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final /* bridge */ /* synthetic */ Object mo197next() {
+    public final /* bridge */ /* synthetic */ Object next() {
         this.c = true;
         int i = this.b + 1;
         this.b = i;
         return i < this.a.a.size() ? (Map.Entry) this.a.a.get(this.b) : (Map.Entry) a().next();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         if (this.c) {
             this.c = false;

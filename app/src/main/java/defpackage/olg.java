@@ -3,8 +3,8 @@ package defpackage;
 import java.util.ConcurrentModificationException;
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: olg  reason: default package */
@@ -30,20 +30,20 @@ public abstract class olg implements Iterator {
 
     public abstract Object a(int i);
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         b();
         return this.b >= 0;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             Object a = a(this.b);
             int i = this.b;
@@ -54,7 +54,7 @@ public abstract class olg implements Iterator {
         throw new NoSuchElementException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         olh olhVar;
         b();

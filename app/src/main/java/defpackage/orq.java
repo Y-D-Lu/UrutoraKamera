@@ -60,7 +60,7 @@ public final class orq extends oob {
         return false;
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     public final Object get(Object obj) {
         Object g = orw.g(this.d, this.b, this.f, this.e, obj);
         if (g == null) {
@@ -69,7 +69,7 @@ public final class orq extends oob {
         return g;
     }
 
-    @Override // java.util.Map, j$.util.Map
+    @Override // java.util.Map, java.util.Map
     public final int size() {
         return this.f;
     }

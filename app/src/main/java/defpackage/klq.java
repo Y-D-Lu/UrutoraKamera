@@ -2,8 +2,8 @@ package defpackage;
 
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: klq  reason: default package */
 /* loaded from: classes2.dex */
@@ -15,19 +15,19 @@ public final class klq implements Iterator {
         this.a = klpVar;
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.b < this.a.c() + (-1);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             klp klpVar = this.a;
             int i = this.b + 1;
@@ -41,7 +41,7 @@ public final class klq implements Iterator {
         throw new NoSuchElementException(sb.toString());
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException("Cannot remove elements from a DataBufferIterator");
     }

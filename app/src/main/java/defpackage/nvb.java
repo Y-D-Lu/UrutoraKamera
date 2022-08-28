@@ -17,8 +17,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-import j$.util.DesugarArrays;
-import j$.util.function.Consumer;
+import java.util.Arrays;
+import java.util.function.Consumer;
 
 /* renamed from: nvb  reason: default package */
 /* loaded from: classes2.dex */
@@ -84,13 +84,13 @@ public final class nvb {
     public nvb(char[] cArr, byte[] bArr) {
         EnumMap enumMap = new EnumMap(cqj.class);
         this.a = enumMap;
-        DesugarArrays.stream(cqj.values()).forEach(new Consumer(null, null, null) { // from class: cpq
-            @Override // j$.util.function.Consumer
+        Arrays.stream(cqj.values()).forEach(new Consumer(null, null, null) { // from class: cpq
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 nvb.this.a.put((cqj) obj, Float.valueOf(1.0f));
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

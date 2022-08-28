@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.util.function.Predicate;
+import java.util.function.Predicate;
 
 /* renamed from: cvm  reason: default package */
 /* loaded from: classes.dex */
@@ -13,7 +13,7 @@ public final /* synthetic */ class cvm implements Predicate {
         this.a = lwdVar;
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate and(Predicate predicate) {
         switch (this.b) {
             case 0:
@@ -29,7 +29,7 @@ public final /* synthetic */ class cvm implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate negate() {
         switch (this.b) {
             case 0:
@@ -45,7 +45,7 @@ public final /* synthetic */ class cvm implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate or(Predicate predicate) {
         switch (this.b) {
             case 0:
@@ -61,7 +61,7 @@ public final /* synthetic */ class cvm implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final boolean test(Object obj) {
         switch (this.b) {
             case 0:

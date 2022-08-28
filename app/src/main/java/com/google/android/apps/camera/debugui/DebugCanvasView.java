@@ -18,8 +18,8 @@ import defpackage.djx;
 import defpackage.dka;
 import defpackage.ohz;
 import defpackage.oom;
-import j$.util.Collection;
-import j$.util.function.Consumer;
+import java.util.Collection;
+import java.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class DebugCanvasView extends dka {
@@ -134,7 +134,7 @@ public class DebugCanvasView extends dka {
                 this.a = this;
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 switch (r3) {
                     case 0:
@@ -172,7 +172,7 @@ public class DebugCanvasView extends dka {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 switch (r3) {
                     case 0:
@@ -190,7 +190,7 @@ public class DebugCanvasView extends dka {
                     this.a = this;
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     switch (r3) {
                         case 0:
@@ -228,7 +228,7 @@ public class DebugCanvasView extends dka {
                     }
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     switch (r3) {
                         case 0:

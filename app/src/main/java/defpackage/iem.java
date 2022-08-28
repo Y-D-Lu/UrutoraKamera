@@ -3,7 +3,7 @@ package defpackage;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: iem  reason: default package */
 /* loaded from: classes.dex */
@@ -16,7 +16,7 @@ public final /* synthetic */ class iem implements Consumer {
         this.a = jrzVar;
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final void accept(Object obj) {
         switch (this.b) {
             case 0:
@@ -31,7 +31,7 @@ public final /* synthetic */ class iem implements Consumer {
         }
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.b) {
             case 0:

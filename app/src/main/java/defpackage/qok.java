@@ -2,8 +2,8 @@ package defpackage;
 
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: qok  reason: default package */
 /* loaded from: classes2.dex */
@@ -45,9 +45,9 @@ final class qok extends qol implements Iterator, qlh {
         return qlpVar == qlp.COROUTINE_SUSPENDED ? qlpVar : qks.a;
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
     @Override // defpackage.qlh
@@ -55,7 +55,7 @@ final class qok extends qol implements Iterator, qlh {
         return qlo.a;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         while (true) {
             switch (this.b) {
@@ -87,9 +87,9 @@ final class qok extends qol implements Iterator, qlh {
         }
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         switch (this.b) {
             case 0:
             case 1:
@@ -112,7 +112,7 @@ final class qok extends qol implements Iterator, qlh {
         }
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }

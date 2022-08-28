@@ -19,7 +19,7 @@ import com.hdrindicator.DisplayHelper;
 
 import org.codeaurora.snapcam.R;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: hmy  reason: default package */
 /* loaded from: classes.dex */

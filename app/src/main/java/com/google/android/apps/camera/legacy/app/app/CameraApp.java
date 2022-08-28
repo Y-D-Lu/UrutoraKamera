@@ -128,7 +128,7 @@ public class CameraApp extends fip implements HasCameraContentProviderComponent,
                 if (likVar == null) {
                     lil.b.put("gcastartup", new lik("gcastartup"));
                 } else if (likVar.a()) {
-                    throw new UnsatisfiedLinkError(String.format(null, "Registering \"%s\" after \"%s\" was loaded is racy.", cls.getSimpleName(), "gcastartup"));
+                    // throw new UnsatisfiedLinkError(String.format(null, "Registering \"%s\" after \"%s\" was loaded is racy.", cls.getSimpleName(), "gcastartup"));
                 }
             }
         }

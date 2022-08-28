@@ -5,7 +5,7 @@ import android.preference.ListPreference;
 import android.util.AttributeSet;
 
 import defpackage.jhu;
-import j$.util.function.Function;
+import java.util.function.Function;
 
 /* loaded from: classes.dex */
 public class BlockableListPreference extends ListPreference implements jhu {

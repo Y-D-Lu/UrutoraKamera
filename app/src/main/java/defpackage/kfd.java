@@ -15,7 +15,7 @@ import java.net.URLConnection;
 import java.util.Locale;
 import java.util.Map;
 
-import j$.net.URLEncoder;
+import java.net.URLEncoder;
 
 /* renamed from: kfd  reason: default package */
 /* loaded from: classes2.dex */

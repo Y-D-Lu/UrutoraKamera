@@ -2,29 +2,29 @@ package defpackage;
 
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: prd  reason: default package */
 /* loaded from: classes2.dex */
 final class prd implements Iterator {
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return false;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         throw new NoSuchElementException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException();
     }

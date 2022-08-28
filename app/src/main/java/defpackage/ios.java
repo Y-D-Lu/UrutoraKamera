@@ -7,7 +7,7 @@ import org.codeaurora.snapcam.R;
 
 import java.util.concurrent.TimeUnit;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: ios  reason: default package */
 /* loaded from: classes.dex */

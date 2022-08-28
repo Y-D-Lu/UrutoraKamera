@@ -2,7 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: jkv  reason: default package */
 /* loaded from: classes2.dex */
@@ -17,7 +17,7 @@ public final /* synthetic */ class jkv implements Consumer {
         this.b = ojcVar;
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final void accept(Object obj) {
         switch (this.c) {
             case 0:
@@ -33,7 +33,7 @@ public final /* synthetic */ class jkv implements Consumer {
         }
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.c) {
             case 0:

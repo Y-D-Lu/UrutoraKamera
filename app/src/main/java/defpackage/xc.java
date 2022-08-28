@@ -2,8 +2,8 @@ package defpackage;
 
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: xc  reason: default package */
 /* loaded from: classes2.dex */
@@ -20,19 +20,19 @@ abstract class xc implements Iterator {
 
     protected abstract void b(int i);
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.b < this.a;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             Object a = a(this.b);
             this.b++;
@@ -42,7 +42,7 @@ abstract class xc implements Iterator {
         throw new NoSuchElementException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         if (this.c) {
             int i = this.b - 1;

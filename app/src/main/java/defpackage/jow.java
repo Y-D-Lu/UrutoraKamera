@@ -6,7 +6,7 @@ import android.animation.AnimatorListenerAdapter;
 import com.google.android.apps.camera.ui.views.ToggleUi;
 import com.hdrindicator.DisplayHelper;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: jow  reason: default package */
 /* loaded from: classes2.dex */

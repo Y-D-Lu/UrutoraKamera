@@ -31,8 +31,8 @@ import org.codeaurora.snapcam.R;
 import java.util.ArrayList;
 import java.util.concurrent.Executor;
 
-import j$.util.Collection;
-import j$.util.function.Consumer;
+import java.util.Collection;
+import java.util.function.Consumer;
 
 /* renamed from: ife  reason: default package */
 /* loaded from: classes.dex */
@@ -223,13 +223,13 @@ public final class ife implements iet {
             if (!this.o.k(ddl.aI) || ((Boolean) this.d.c(htu.B)).booleanValue() || this.a) {
                 d = this.j.d();
                 d.addListener(mip.ev(new Consumer() { // from class: ieu
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         Animator animator = (Animator) obj;
                         pih.this.o(Boolean.TRUE);
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }
@@ -247,7 +247,7 @@ public final class ife implements iet {
                 valueAnimator.setIntValues(0, iesVar.c() + iesVar.a(R.dimen.social_share_menu_bounce_height));
                 valueAnimator.setInterpolator(new DecelerateInterpolator());
                 valueAnimator.addListener(mip.ev(new Consumer() { // from class: iel
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         final ies iesVar2 = ies.this;
                         acr acrVar2 = acrVar;
@@ -274,7 +274,7 @@ public final class ife implements iet {
                         acxVar.e();
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }
@@ -429,7 +429,7 @@ public final class ife implements iet {
             }
         }
         Collection.EL.forEach(this.j.b, new Consumer() { // from class: iev
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 iek iekVar = (iek) obj;
                 boolean z = !arrayList.contains(iekVar.c.activityInfo.packageName);
@@ -437,7 +437,7 @@ public final class ife implements iet {
                 iekVar.setColorFilter(z ? null : iek.a);
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }
@@ -489,13 +489,13 @@ public final class ife implements iet {
             final ifj ifjVar = this.r;
             ObjectAnimator ofPropertyValuesHolder = ObjectAnimator.ofPropertyValuesHolder(ifjVar.a, PropertyValuesHolder.ofFloat(View.ALPHA, ifjVar.a.getAlpha(), DisplayHelper.DENSITY));
             ofPropertyValuesHolder.addListener(mip.ev(new Consumer() { // from class: ifi
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     Animator animator = (Animator) obj;
                     ifj.this.a.setVisibility(4);
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     return consumer.getClass();
                 }

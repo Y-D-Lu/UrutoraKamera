@@ -4,8 +4,8 @@ import android.graphics.Bitmap;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
-import j$.util.function.Consumer;
-import j$.util.function.Supplier;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 /* renamed from: ivz  reason: default package */
 /* loaded from: classes2.dex */
@@ -41,7 +41,7 @@ public final class ivz implements btw {
     @Override // defpackage.btw
     public final void a() {
         this.e.accept(new Supplier() { // from class: ivy
-            @Override // j$.util.function.Supplier
+            @Override // java.util.function.Supplier
             /* renamed from: get */
             public final Object mo291get() {
                 ivz ivzVar = ivz.this;

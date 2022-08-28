@@ -13,8 +13,8 @@ import org.codeaurora.snapcam.R;
 
 import java.util.EnumMap;
 
-import j$.util.function.Consumer;
-import j$.util.function.Function;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 /* renamed from: icd  reason: default package */
 /* loaded from: classes.dex */
@@ -46,7 +46,7 @@ public final /* synthetic */ class icd implements Function {
         this.v = i2;
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final /* synthetic */ Function andThen(Function function) {
         switch (this.v) {
             case 0:
@@ -94,7 +94,7 @@ public final /* synthetic */ class icd implements Function {
         }
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final Object apply(Object obj) {
         switch (this.v) {
             case 0:
@@ -144,13 +144,13 @@ public final /* synthetic */ class icd implements Function {
                 final iek iekVar2 = (iek) obj;
                 ObjectAnimator ofPropertyValuesHolder2 = ObjectAnimator.ofPropertyValuesHolder(iekVar2, PropertyValuesHolder.ofFloat(View.ALPHA, iekVar2.getAlpha(), DisplayHelper.DENSITY), PropertyValuesHolder.ofFloat(View.SCALE_X, iekVar2.getScaleX(), DisplayHelper.DENSITY), PropertyValuesHolder.ofFloat(View.SCALE_Y, iekVar2.getScaleY(), DisplayHelper.DENSITY));
                 ofPropertyValuesHolder2.addListener(mip.ev(new Consumer() { // from class: iej
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj2) {
                         Animator animator = (Animator) obj2;
                         iek.this.setVisibility(8);
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }
@@ -198,7 +198,7 @@ public final /* synthetic */ class icd implements Function {
         }
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final /* synthetic */ Function compose(Function function) {
         switch (this.v) {
             case 0:

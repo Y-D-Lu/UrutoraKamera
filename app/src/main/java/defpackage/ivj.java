@@ -2,7 +2,7 @@ package defpackage;
 
 import android.graphics.Bitmap;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: ivj  reason: default package */
 /* loaded from: classes2.dex */

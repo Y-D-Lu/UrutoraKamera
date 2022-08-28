@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* renamed from: dzy  reason: default package */
 /* loaded from: classes.dex */
@@ -109,7 +109,7 @@ public final class dzy {
 
     public static String d(long j) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss_SSS");
-        DesugarTimeZone.getTimeZone("UTC");
+        TimeZone.getTimeZone("UTC");
         String valueOf = String.valueOf(simpleDateFormat.format(Long.valueOf(j)));
         return valueOf.length() != 0 ? "XXXX_".concat(valueOf) : new String("XXXX_");
     }

@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: eam  reason: default package */
 /* loaded from: classes3.dex */
@@ -65,7 +65,7 @@ public final class eam {
                     /*
                         r4 = this;
                         eam r0 = defpackage.eam.this
-                        j$.util.function.Supplier r1 = r2
+                        java.util.function.Supplier r1 = r2
                         java.lang.Float r5 = (java.lang.Float) r5
                         lce r2 = r0.d
                         java.lang.Object r2 = r2.d

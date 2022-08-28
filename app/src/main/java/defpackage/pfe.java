@@ -1,7 +1,7 @@
 package defpackage;
 
-import j$.time.Duration;
-import j$.time.temporal.ChronoUnit;
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 
 /* renamed from: pfe  reason: default package */
 /* loaded from: classes2.dex */

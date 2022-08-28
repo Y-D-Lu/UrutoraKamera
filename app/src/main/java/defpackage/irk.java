@@ -9,8 +9,8 @@ import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
 
 import java.util.concurrent.ScheduledExecutorService;
 
-import j$.util.function.Consumer;
-import j$.util.function.Supplier;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 /* renamed from: irk  reason: default package */
 /* loaded from: classes3.dex */
@@ -51,12 +51,12 @@ public final class irk implements pys {
                 final ivj ivjVar = (ivj) this.a.mo37get();
                 ivjVar.getClass();
                 return new Consumer() { // from class: ivv
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         ivj.this.i((Supplier) obj);
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }

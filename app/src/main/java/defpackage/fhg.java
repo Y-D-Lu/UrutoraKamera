@@ -1,7 +1,7 @@
 package defpackage;
 
-import j$.util.function.BiFunction;
-import j$.util.function.Function;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 
 /* renamed from: fhg  reason: default package */
 /* loaded from: classes.dex */
@@ -28,7 +28,7 @@ public final /* synthetic */ class fhg implements BiFunction {
         this.q = i2;
     }
 
-    @Override // j$.util.function.BiFunction
+    @Override // java.util.function.BiFunction
     public final /* synthetic */ BiFunction andThen(Function function) {
         switch (this.q) {
             case 0:
@@ -76,7 +76,7 @@ public final /* synthetic */ class fhg implements BiFunction {
         }
     }
 
-    @Override // j$.util.function.BiFunction
+    @Override // java.util.function.BiFunction
     public final Object apply(Object obj, Object obj2) {
         switch (this.q) {
             case 0:

@@ -2,7 +2,7 @@ package defpackage;
 
 import org.codeaurora.snapcam.R;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: kbh  reason: default package */
@@ -36,7 +36,7 @@ public final class kbh implements kaq {
             jlzVar.c = 1000;
             jlzVar.d = kbiVar.E.getInteger(R.integer.zoom_seekbar_timeout_ms) - 1000;
             jlzVar.d(new Supplier() { // from class: kaw
-                @Override // j$.util.function.Supplier
+                @Override // java.util.function.Supplier
                 /* renamed from: get */
                 public final Object mo291get() {
                     kbi kbiVar2 = kbi.this;

@@ -2,7 +2,7 @@ package defpackage;
 
 import android.content.Intent;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: cfd  reason: default package */

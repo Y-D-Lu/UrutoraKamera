@@ -15,7 +15,7 @@ import defpackage.isd;
 import defpackage.isi;
 import defpackage.isk;
 import defpackage.ouj;
-import j$.time.Duration;
+import java.time.Duration;
 
 /* loaded from: classes.dex */
 public class ToastView extends FrameLayout {

@@ -8,9 +8,9 @@ import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 
-import j$.util.Collection;
-import j$.util.function.Consumer;
-import j$.util.stream.Stream;
+import java.util.Collection;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 /* renamed from: fci  reason: default package */
 /* loaded from: classes.dex */
@@ -194,12 +194,12 @@ public final class fci implements pys {
                         Stream concat = Stream.CC.concat(Collection.EL.stream((Set) ((pyt) qkgVar5).a), Collection.EL.stream(((pyw) qkgVar6).mo37get()).map(cgw.o));
                         executor4.getClass();
                         concat.forEach(new Consumer() { // from class: gnh
-                            @Override // j$.util.function.Consumer
+                            @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
                                 executor4.execute((Runnable) obj);
                             }
 
-                            @Override // j$.util.function.Consumer
+                            @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                                 return consumer.getClass();
                             }

@@ -6,7 +6,7 @@ import android.view.accessibility.AccessibilityEvent;
 
 import org.codeaurora.snapcam.R;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: jav  reason: default package */
 /* loaded from: classes.dex */

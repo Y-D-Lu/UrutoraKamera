@@ -57,7 +57,7 @@ import defpackage.ouj;
 import defpackage.pht;
 import defpackage.pih;
 import defpackage.plk;
-import j$.util.Collection;
+import java.util.Collection;
 
 /* loaded from: classes.dex */
 public class OptionsMenuContainer extends RelativeLayout {

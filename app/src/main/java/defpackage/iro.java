@@ -12,7 +12,7 @@ import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: iro  reason: default package */
 /* loaded from: classes.dex */

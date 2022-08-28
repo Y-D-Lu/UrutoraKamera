@@ -4,8 +4,8 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: opz  reason: default package */
 /* loaded from: classes2.dex */
@@ -19,12 +19,12 @@ final class opz implements Iterator {
         this.c = it;
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         java.util.Iterator it;
         while (true) {
@@ -70,9 +70,9 @@ final class opz implements Iterator {
         }
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             java.util.Iterator it = this.b;
             this.a = it;
@@ -81,7 +81,7 @@ final class opz implements Iterator {
         throw new NoSuchElementException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         java.util.Iterator it = this.a;
         if (it != null) {

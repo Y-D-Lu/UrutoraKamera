@@ -6,7 +6,7 @@ import com.google.android.apps.camera.ui.popupmenu.PopupMenuViewContainer;
 import java.util.ArrayList;
 import java.util.List;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: cus  reason: default package */
 /* loaded from: classes.dex */

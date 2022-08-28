@@ -16,7 +16,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-import j$.util.Optional;
+import java.util.Optional;
 
 /* renamed from: fnj  reason: default package */
 /* loaded from: classes.dex */

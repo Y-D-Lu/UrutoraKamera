@@ -2,7 +2,7 @@ package defpackage;
 
 import android.database.sqlite.SQLiteException;
 
-import j$.time.Instant;
+import java.time.Instant;
 
 /* renamed from: dif  reason: default package */
 /* loaded from: classes.dex */

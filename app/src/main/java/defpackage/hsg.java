@@ -10,8 +10,8 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import j$.util.Collection;
-import j$.util.DesugarTimeZone;
+import java.util.Collection;
+import java.util.TimeZone;
 
 /* renamed from: hsg  reason: default package */
 /* loaded from: classes2.dex */
@@ -29,7 +29,7 @@ public final class hsg {
 
     static {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmssSSS", Locale.ROOT);
-        DesugarTimeZone.getTimeZone("UTC");
+        TimeZone.getTimeZone("UTC");
         h = simpleDateFormat;
     }
 

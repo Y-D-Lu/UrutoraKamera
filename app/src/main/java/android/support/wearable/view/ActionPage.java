@@ -18,7 +18,7 @@ import com.hdrindicator.DisplayHelper;
 import defpackage.sf;
 import defpackage.td;
 import defpackage.th;
-import j$.util.Objects;
+import java.util.Objects;
 
 @Deprecated
 /* loaded from: classes.dex */

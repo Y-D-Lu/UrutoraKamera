@@ -20,7 +20,7 @@ import android.view.Gravity;
 
 import com.hdrindicator.DisplayHelper;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 /* renamed from: su  reason: default package */
 /* loaded from: classes2.dex */

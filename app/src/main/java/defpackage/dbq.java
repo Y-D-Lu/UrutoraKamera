@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import com.google.android.apps.camera.coach.CameraCoachHudView;
 import com.hdrindicator.DisplayHelper;
 
-import j$.util.function.BooleanSupplier;
+import java.util.function.BooleanSupplier;
 
 /* renamed from: dbq  reason: default package */
 /* loaded from: classes.dex */

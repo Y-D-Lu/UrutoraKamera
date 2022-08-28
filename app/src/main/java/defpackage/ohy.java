@@ -2,7 +2,7 @@ package defpackage;
 
 import java.nio.ByteBuffer;
 
-import j$.util.Optional;
+import java.util.Optional;
 
 /* renamed from: ohy  reason: default package */
 /* loaded from: classes2.dex */

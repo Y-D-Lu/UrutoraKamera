@@ -2,7 +2,7 @@ package defpackage;
 
 import java.util.List;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 /* renamed from: lnt  reason: default package */
 /* loaded from: classes2.dex */

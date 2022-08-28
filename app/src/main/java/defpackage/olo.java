@@ -14,14 +14,14 @@ public abstract class olo extends oti {
 
     protected abstract Object a(Object obj);
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.a != null;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         Object obj = this.a;
         if (obj != null) {
             this.a = a(obj);

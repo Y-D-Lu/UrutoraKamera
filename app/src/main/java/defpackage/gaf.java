@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import j$.util.List$CC;
-
 /* renamed from: gaf  reason: default package */
 /* loaded from: classes.dex */
 public final class gaf implements gcf {
@@ -40,7 +38,7 @@ public final class gaf implements gcf {
     public final synchronized int a(List list) {
         this.e.clear();
         ArrayList arrayList = new ArrayList(list);
-        List$CC.$default$sort(arrayList, cdg.g);
+        arrayList.sort(cdg.g);
         oom j = oom.j(arrayList);
         int size = j.size();
         int b = this.d.b();

@@ -23,8 +23,8 @@ import defpackage.mip;
 import defpackage.ope;
 import defpackage.oug;
 import defpackage.ouj;
-import j$.time.Duration;
-import j$.util.Collection;
+import java.time.Duration;
+import java.util.Collection;
 
 /* loaded from: classes.dex */
 public class ToggleUi extends FrameLayout {

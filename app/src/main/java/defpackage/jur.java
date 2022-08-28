@@ -4,7 +4,7 @@ import android.view.View;
 
 import com.hdrindicator.DisplayHelper;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: jur  reason: default package */
 /* loaded from: classes2.dex */

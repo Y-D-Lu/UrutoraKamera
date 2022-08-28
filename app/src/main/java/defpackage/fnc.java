@@ -13,7 +13,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: fnc  reason: default package */
 /* loaded from: classes.dex */
@@ -65,7 +65,7 @@ public final class fnc implements hsb {
             jlzVar.c = 200;
             jlzVar.d = 30000;
             jlzVar.d(new Supplier() { // from class: fna
-                @Override // j$.util.function.Supplier
+                @Override // java.util.function.Supplier
                 /* renamed from: get */
                 public final Object mo291get() {
                     return Boolean.valueOf(!fnc.this.b.get());

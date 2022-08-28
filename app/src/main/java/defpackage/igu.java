@@ -9,7 +9,7 @@ import org.codeaurora.snapcam.R;
 
 import java.util.concurrent.Executor;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: igu  reason: default package */
 /* loaded from: classes.dex */
@@ -117,7 +117,7 @@ public final class igu implements ihc, gtu {
                     jlzVar.h = iguVar.c.k(ddl.ay);
                     jlzVar.n();
                     jlzVar.d(new Supplier() { // from class: igt
-                        @Override // j$.util.function.Supplier
+                        @Override // java.util.function.Supplier
                         /* renamed from: get */
                         public final Object mo291get() {
                             return Boolean.valueOf(igu.this.h());

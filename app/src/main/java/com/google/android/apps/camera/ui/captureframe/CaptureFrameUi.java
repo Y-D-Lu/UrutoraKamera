@@ -16,8 +16,8 @@ import java.util.List;
 
 import defpackage.ivc;
 import defpackage.oom;
-import j$.util.Collection;
-import j$.util.function.Consumer;
+import java.util.Collection;
+import java.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class CaptureFrameUi extends View {
@@ -43,7 +43,7 @@ public class CaptureFrameUi extends View {
     @Override // android.view.View
     public final void onDraw(final Canvas canvas) {
         Collection.EL.stream(this.c).forEach(new Consumer() { // from class: ivb
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 CaptureFrameUi captureFrameUi = CaptureFrameUi.this;
                 Canvas canvas2 = canvas;
@@ -98,7 +98,7 @@ public class CaptureFrameUi extends View {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

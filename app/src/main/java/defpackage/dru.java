@@ -6,8 +6,6 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
-import j$.util.List$CC;
-
 /* renamed from: dru  reason: default package */
 /* loaded from: classes.dex */
 public final class dru {
@@ -15,7 +13,7 @@ public final class dru {
 
     public static List a(Collection collection) {
         ArrayList arrayList = new ArrayList(collection);
-        List$CC.$default$sort(arrayList, cdg.e);
+        arrayList.sort(cdg.e);
         return arrayList;
     }
 

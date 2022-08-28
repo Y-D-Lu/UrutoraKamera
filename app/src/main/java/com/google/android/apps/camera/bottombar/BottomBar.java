@@ -36,8 +36,8 @@ import defpackage.jur;
 import defpackage.jus;
 import defpackage.lar;
 import defpackage.mip;
-import j$.util.Collection;
-import j$.util.function.Consumer;
+import java.util.Collection;
+import java.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class BottomBar extends LinearLayout {
@@ -138,12 +138,12 @@ public class BottomBar extends LinearLayout {
         }
         mip.es(this, this.orientation);
         Collection.EL.stream(mip.em(this)).forEach(new Consumer() { // from class: com.google.android.apps.camera.bottombar.BottomBar$$ExternalSyntheticLambda1
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 BottomBar.this.m7x5662d6c8((View) obj);
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }
@@ -357,12 +357,12 @@ public class BottomBar extends LinearLayout {
     public /* synthetic */ void m7x5662d6c8(View view) {
         if (view.getId() == R.id.zoom_lock_view_parent) {
             Collection.EL.stream(mip.em((ViewGroup) view)).forEach(new Consumer() { // from class: com.google.android.apps.camera.bottombar.BottomBar$$ExternalSyntheticLambda0
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     BottomBar.this.m6x288a3c69((View) obj);
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public /* synthetic */ Consumer andThen(Consumer consumer) {
                     return consumer.getClass();
                 }

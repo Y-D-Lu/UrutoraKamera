@@ -25,7 +25,7 @@ import defpackage.jhy;
 import defpackage.jia;
 import defpackage.jid;
 import defpackage.jif;
-import j$.util.function.Function;
+import java.util.function.Function;
 
 /* loaded from: classes.dex */
 public class ManagedSwitchPreference extends SwitchPreference implements Preference.OnPreferenceChangeListener, jhu {

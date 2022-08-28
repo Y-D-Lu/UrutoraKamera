@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 
 import java.util.concurrent.ConcurrentHashMap;
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: hrx  reason: default package */
 /* loaded from: classes2.dex */
@@ -81,12 +81,12 @@ public final class hrx {
 
     public final void f(final Bitmap bitmap) {
         d(new Consumer() { // from class: hrl
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 ((hsb) obj).n(bitmap);
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }
@@ -112,7 +112,7 @@ public final class hrx {
                 final hsj hsjVar = (hsj) obj;
                 hssVar2.name();
                 hrxVar.d(new Consumer() { // from class: hro
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj2) {
                         hsp hspVar3 = hsp.this;
                         hsj hsjVar2 = hsjVar;
@@ -121,7 +121,7 @@ public final class hrx {
                         ((hsb) obj2).p(hspVar3, hsjVar2, hssVar3);
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }

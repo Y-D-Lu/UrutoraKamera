@@ -8,9 +8,9 @@ import android.widget.ImageView;
 
 import org.codeaurora.snapcam.R;
 
-import j$.time.ZoneId;
-import j$.time.format.DateTimeFormatter;
-import j$.time.format.FormatStyle;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 /* renamed from: dfk  reason: default package */
 /* loaded from: classes2.dex */

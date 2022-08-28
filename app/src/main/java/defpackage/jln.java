@@ -4,7 +4,7 @@ import android.content.res.Resources;
 
 import org.codeaurora.snapcam.R;
 
-import j$.util.function.Function;
+import java.util.function.Function;
 
 /* renamed from: jln  reason: default package */
 /* loaded from: classes2.dex */
@@ -36,7 +36,7 @@ public final /* synthetic */ class jln implements Function {
         this.v = i2;
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final /* synthetic */ Function andThen(Function function) {
         switch (this.v) {
             case 0:
@@ -84,7 +84,7 @@ public final /* synthetic */ class jln implements Function {
         }
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final Object apply(Object obj) {
         switch (this.v) {
             case 0:
@@ -686,7 +686,7 @@ public final /* synthetic */ class jln implements Function {
         }
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final /* synthetic */ Function compose(Function function) {
         switch (this.v) {
             case 0:

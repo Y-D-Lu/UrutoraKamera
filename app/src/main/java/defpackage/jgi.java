@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: jgi  reason: default package */
@@ -52,7 +52,7 @@ public final class jgi implements ViewTreeObserver.OnGlobalLayoutListener {
                 }, pgr.a);
                 final jgk jgkVar3 = jgiVar.b;
                 jlzVar.d(new Supplier() { // from class: jgh
-                    @Override // j$.util.function.Supplier
+                    @Override // java.util.function.Supplier
                     /* renamed from: get */
                     public final Object mo291get() {
                         jgk jgkVar4 = jgk.this;

@@ -2,7 +2,7 @@ package defpackage;
 
 import java.nio.ByteBuffer;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: ihb  reason: default package */
 /* loaded from: classes.dex */

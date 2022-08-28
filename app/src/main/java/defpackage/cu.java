@@ -31,7 +31,7 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import j$.util.DesugarCollections;
+import java.util.Collections;
 
 /* renamed from: cu  reason: default package */
 /* loaded from: classes.dex */
@@ -68,11 +68,11 @@ public final class cu {
     public final ch c = new ch(this);
     public final uc e = new uc(this);
     public final AtomicInteger f = new AtomicInteger();
-    private final Map x = DesugarCollections.synchronizedMap(new HashMap());
-    private final Map y = DesugarCollections.synchronizedMap(new HashMap());
+    private final Map x = Collections.synchronizedMap(new HashMap());
+    private final Map y = Collections.synchronizedMap(new HashMap());
 
     public cu() {
-        DesugarCollections.synchronizedMap(new HashMap());
+        Collections.synchronizedMap(new HashMap());
         this.g = new cj(this);
         this.h = new CopyOnWriteArrayList();
         this.i = -1;

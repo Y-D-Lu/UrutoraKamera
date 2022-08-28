@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
 
-import j$.util.Collection;
-import j$.util.stream.Collectors;
+import java.util.Collection;
+import java.util.stream.Collectors;
 
 /* renamed from: hal  reason: default package */
 /* loaded from: classes.dex */

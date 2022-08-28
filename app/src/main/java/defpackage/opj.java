@@ -7,7 +7,7 @@ import java.util.NavigableSet;
 import java.util.Set;
 import java.util.SortedMap;
 
-import j$.util.Map;
+import java.util.Map;
 
 /* renamed from: opj  reason: default package */
 /* loaded from: classes2.dex */
@@ -73,7 +73,7 @@ public final class opj extends opk implements NavigableMap, Map {
         return opjVar == null ? isEmpty() ? f(orh.b(comparator()).a()) : new opj((ory) this.a.descendingSet(), this.b.a(), this) : opjVar;
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     public final /* bridge */ /* synthetic */ Set entrySet() {
         return entrySet();
     }
@@ -129,7 +129,7 @@ public final class opj extends opk implements NavigableMap, Map {
      */
     /* JADX WARN: Removed duplicated region for block: B:11:0x0016 A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:13:0x0018  */
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -206,7 +206,7 @@ public final class opj extends opk implements NavigableMap, Map {
         return l(oryVar.f(obj, z), size());
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     public final /* synthetic */ Set keySet() {
         return this.a;
     }
@@ -251,7 +251,7 @@ public final class opj extends opk implements NavigableMap, Map {
         throw new UnsupportedOperationException();
     }
 
-    @Override // java.util.Map, j$.util.Map
+    @Override // java.util.Map, java.util.Map
     public final int size() {
         return this.b.size();
     }
@@ -271,7 +271,7 @@ public final class opj extends opk implements NavigableMap, Map {
         return this.a;
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     public final /* synthetic */ Collection values() {
         return this.b;
     }

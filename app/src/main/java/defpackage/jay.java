@@ -19,7 +19,7 @@ import org.codeaurora.snapcam.R;
 
 import java.util.List;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: jay  reason: default package */
 /* loaded from: classes.dex */

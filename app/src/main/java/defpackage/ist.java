@@ -12,7 +12,7 @@ import org.codeaurora.snapcam.R;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: ist  reason: default package */
 /* loaded from: classes2.dex */

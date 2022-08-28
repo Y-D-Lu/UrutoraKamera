@@ -12,8 +12,7 @@ import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import j$.util.Comparator$CC;
-import j$.util.Comparator$EL;
+import java.util.Comparator;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dfu  reason: default package */
@@ -27,8 +26,9 @@ public final class dfu implements Iterable {
     public dfu() {
         Comparator thenComparing;
         Comparator reverseOrder;
-        thenComparing = Comparator$EL.thenComparing(Comparator$CC.comparing(cgw.i), Comparator$CC.comparing(cgw.j));
-        reverseOrder = Collections.reverseOrder(thenComparing);
+        // luyuedong666 TODO: fix out
+        // thenComparing = Comparator$EL.thenComparing(Comparator.comparing(cgw.i), Comparator.comparing(cgw.j));
+        // reverseOrder = Collections.reverseOrder(thenComparing);
         this.b = new TreeSet(reverseOrder);
         this.c = new HashMap();
         this.d = new HashMap();

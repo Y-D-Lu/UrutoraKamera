@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: cez  reason: default package */
 /* loaded from: classes.dex */
@@ -29,7 +29,7 @@ public final /* synthetic */ class cez implements Consumer {
         this.s = i2;
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final void accept(Object obj) {
         switch (this.s) {
             case 0:
@@ -169,7 +169,7 @@ public final /* synthetic */ class cez implements Consumer {
         }
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.s) {
             case 0:

@@ -15,7 +15,7 @@ public abstract class okn extends oti {
         this.b = 3;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         obr.aQ(this.b != 4);
         int i = this.b;
@@ -40,9 +40,9 @@ public abstract class okn extends oti {
         throw null;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             this.b = 2;
             Object obj = this.a;

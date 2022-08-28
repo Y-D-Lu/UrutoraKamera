@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* renamed from: fev  reason: default package */
 /* loaded from: classes.dex */
@@ -171,7 +171,7 @@ public final class fev {
                     }
                 }
                 if (date != null) {
-                    DesugarTimeZone.getTimeZone("UTC");
+                    TimeZone.getTimeZone("UTC");
                     exifInterface.setAttribute("GPSDateStamp", new SimpleDateFormat("yyyy:MM:dd", Locale.US).format(date));
                     exifInterface.setAttribute("GPSTimeStamp", new SimpleDateFormat("HH:mm:ss", Locale.US).format(date));
                 }
@@ -243,10 +243,10 @@ public final class fev {
                         a2.k("CroppedAreaLeftPixels", num6.intValue());
                     }
                     if (date2 != null) {
-                        a2.c("http://ns.google.com/photos/1.0/panorama/", "FirstPhotoDate", new atc(date2, DesugarTimeZone.getTimeZone("GMT")));
+                        a2.c("http://ns.google.com/photos/1.0/panorama/", "FirstPhotoDate", new atc(date2, TimeZone.getTimeZone("GMT")));
                     }
                     if (date3 != null) {
-                        ((ati) a2).d("http://ns.google.com/photos/1.0/panorama/", "LastPhotoDate", new atc(date3, DesugarTimeZone.getTimeZone("GMT")), null);
+                        ((ati) a2).d("http://ns.google.com/photos/1.0/panorama/", "LastPhotoDate", new atc(date3, TimeZone.getTimeZone("GMT")), null);
                     }
                     if (num7 != null) {
                         a2.k("SourcePhotosCount", num7.intValue());

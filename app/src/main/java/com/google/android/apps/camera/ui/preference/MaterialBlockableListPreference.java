@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import androidx.preference.ListPreference;
 
 import defpackage.jib;
-import j$.util.function.Function;
+import java.util.function.Function;
 
 /* loaded from: classes.dex */
 public class MaterialBlockableListPreference extends ListPreference implements jib {

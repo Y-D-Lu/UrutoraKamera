@@ -35,8 +35,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import j$.util.Collection;
-import j$.util.function.Function;
+import java.util.Collection;
+import java.util.function.Function;
 
 /* renamed from: fcb  reason: default package */
 /* loaded from: classes3.dex */
@@ -606,18 +606,18 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
             if (jhuVar != null) {
                 final fce fceVar = this.a;
                 jhuVar.a(new Function() { // from class: fcd
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final /* synthetic */ Function andThen(Function function) {
                         return function.getClass();
                     }
 
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final Object apply(Object obj) {
                         Preference preference2 = (Preference) obj;
                         return Boolean.valueOf(((iln) fce.this.g.get()).a());
                     }
 
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final /* synthetic */ Function compose(Function function) {
                         return function.getClass();
                     }

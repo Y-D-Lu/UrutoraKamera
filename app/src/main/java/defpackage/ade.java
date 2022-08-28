@@ -20,7 +20,7 @@ import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.zip.CRC32;
 
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* renamed from: ade  reason: default package */
 /* loaded from: classes.dex */
@@ -133,9 +133,9 @@ public final class ade {
         i = "Exif\u0000\u0000".getBytes(forName);
         N = "http://ns.adobe.com/xap/1.0/\u0000".getBytes(forName);
         w = new SimpleDateFormat("yyyy:MM:dd HH:mm:ss", Locale.US);
-        DesugarTimeZone.getTimeZone("UTC");
+        TimeZone.getTimeZone("UTC");
         x = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US);
-        DesugarTimeZone.getTimeZone("UTC");
+        TimeZone.getTimeZone("UTC");
         int i2 = 0;
         while (true) {
             adc[][] adcVarArr11 = g;

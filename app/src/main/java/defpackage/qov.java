@@ -2,8 +2,8 @@ package defpackage;
 
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: qov  reason: default package */
 /* loaded from: classes2.dex */
@@ -114,12 +114,12 @@ public final class qov implements Iterator {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.qov.a():void");
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         if (this.b == -1) {
             a();
@@ -127,9 +127,9 @@ public final class qov implements Iterator {
         return this.b == 1;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final /* bridge */ /* synthetic */ Object mo197next() {
+    public final /* bridge */ /* synthetic */ Object next() {
         if (this.b == -1) {
             a();
         }
@@ -145,7 +145,7 @@ public final class qov implements Iterator {
         throw new NoSuchElementException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }

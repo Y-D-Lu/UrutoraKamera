@@ -27,9 +27,9 @@ import defpackage.ijp;
 import defpackage.ojz;
 import defpackage.oug;
 import defpackage.ouj;
-import j$.util.Collection;
-import j$.util.function.Predicate;
-import j$.util.stream.Collectors;
+import java.util.Collection;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 /* loaded from: classes.dex */
 public class DebugContentProvider extends ContentProvider {

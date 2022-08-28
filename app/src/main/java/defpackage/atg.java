@@ -1,11 +1,11 @@
 package defpackage;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: atg  reason: default package */
 /* loaded from: classes.dex */
-public final class atg implements Iterator, java.util.Iterator {
+public final class atg implements Iterator {
     public final atu a;
     public String b = null;
     private java.util.Iterator c;
@@ -22,23 +22,23 @@ public final class atg implements Iterator, java.util.Iterator {
         }
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final boolean hasNext() {
         return this.c.hasNext();
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         return this.c.next();
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException("The XMPIterator does not support remove().");
     }

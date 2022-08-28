@@ -28,7 +28,7 @@ import defpackage.jid;
 import defpackage.jif;
 import defpackage.jig;
 import defpackage.jih;
-import j$.util.function.Function;
+import java.util.function.Function;
 
 /* loaded from: classes.dex */
 public class MaterialManagedSwitchPreference extends SwitchPreference implements agm, jib {

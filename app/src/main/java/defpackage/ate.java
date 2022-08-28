@@ -3,8 +3,8 @@ package defpackage;
 import java.util.Collections;
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: ate  reason: default package */
@@ -93,12 +93,12 @@ public class ate implements Iterator {
         return sb2.toString();
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public boolean hasNext() {
         if (this.b != null) {
             return true;
@@ -130,9 +130,9 @@ public class ate implements Iterator {
         }
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             atd atdVar = this.b;
             this.b = null;
@@ -141,7 +141,7 @@ public class ate implements Iterator {
         throw new NoSuchElementException("There are no more nodes to return");
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException();
     }

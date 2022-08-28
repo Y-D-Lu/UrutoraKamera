@@ -2,8 +2,8 @@ package defpackage;
 
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: osw  reason: default package */
@@ -103,19 +103,19 @@ public final class osw implements Iterator {
         }
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
         switch (this.d) {
             case 0:
-                Iterator.CC.$default$forEachRemaining(this, consumer);
+                forEachRemaining(consumer);
                 return;
             default:
-                Iterator.CC.$default$forEachRemaining(this, consumer);
+                forEachRemaining(consumer);
                 return;
         }
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         switch (this.d) {
             case 0:
@@ -141,9 +141,9 @@ public final class osw implements Iterator {
         }
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final /* synthetic */ Object mo197next() {
+    public final /* synthetic */ Object next() {
         switch (this.d) {
             case 0:
                 return a();
@@ -152,7 +152,7 @@ public final class osw implements Iterator {
         }
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         boolean z = true;
         switch (this.d) {

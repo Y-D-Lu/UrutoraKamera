@@ -14,14 +14,14 @@ public final class oow extends oti {
         this.a = oozVar.a.entrySet().iterator();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.a.hasNext();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         return ((Map.Entry) this.a.mo197next()).getValue();
     }
 }

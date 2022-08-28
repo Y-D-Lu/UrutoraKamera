@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.nio.charset.StandardCharsets;
+import java.nio.charset.StandardCharsets;
 
 /* renamed from: mlc  reason: default package */
 /* loaded from: classes2.dex */

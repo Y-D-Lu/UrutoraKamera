@@ -17,12 +17,12 @@ public final class oog extends oop {
         return new oql(this.a.entrySet().iterator());
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     public final boolean containsKey(Object obj) {
         return this.a.containsKey(obj);
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     public final boolean equals(Object obj) {
         if (obj == this) {
             return true;
@@ -43,12 +43,12 @@ public final class oog extends oop {
         return false;
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     public final Object get(Object obj) {
         return this.a.get(obj);
     }
 
-    @Override // java.util.Map, j$.util.Map
+    @Override // java.util.Map, java.util.Map
     public final int size() {
         return this.a.size();
     }

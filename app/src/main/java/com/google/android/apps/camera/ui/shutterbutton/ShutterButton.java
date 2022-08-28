@@ -53,7 +53,7 @@ import defpackage.ojz;
 import defpackage.ope;
 import defpackage.oug;
 import defpackage.ouj;
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class ShutterButton extends mw {
@@ -166,12 +166,12 @@ public class ShutterButton extends mw {
         AnimatorSet a = jkzVar.a(jkzVar.b.getCurrentSpec(), b);
         setSpecsForAnimatorTransition(currentSpec, b);
         a.addListener(mip.ev(new Consumer() { // from class: jjy
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 ShutterButton.this.m45x7a0dc3(b, (Animator) obj);
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

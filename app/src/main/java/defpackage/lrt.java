@@ -4,7 +4,7 @@ import android.hardware.camera2.params.MeteringRectangle;
 
 import java.util.Arrays;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 /* renamed from: lrt  reason: default package */
 /* loaded from: classes2.dex */

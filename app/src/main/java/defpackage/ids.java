@@ -14,11 +14,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import j$.util.Collection;
-import j$.util.Comparator$CC;
+import java.util.Collection;
+import java.util.Comparator;
 import java.util.concurrent.ConcurrentHashMap;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /* renamed from: ids  reason: default package */
 /* loaded from: classes.dex */
@@ -80,22 +80,22 @@ public final class ids {
         e.h(list);
         e.h(list2);
         return oom.j((ArrayList) Collection.EL.stream(e.f()).filter(new idg(new ConcurrentHashMap(), icd.g, 2)).map(new Function() { // from class: idq
-            @Override // j$.util.function.Function
+            @Override // java.util.function.Function
             public final /* synthetic */ Function andThen(Function function) {
                 return function.getClass();
             }
 
-            @Override // j$.util.function.Function
+            @Override // java.util.function.Function
             public final Object apply(Object obj) {
                 ResolveInfo resolveInfo = (ResolveInfo) obj;
                 return ojd.a(resolveInfo.activityInfo.applicationInfo.loadLabel(ids.this.k).toString(), resolveInfo);
             }
 
-            @Override // j$.util.function.Function
+            @Override // java.util.function.Function
             public final /* synthetic */ Function compose(Function function) {
                 return function.getClass();
             }
-        }).sorted(Comparator$CC.comparing(icd.h)).map(icd.i).collect(Collectors.toCollection(idh.c)));
+        }).sorted(Comparator.comparing(icd.h)).map(icd.i).collect(Collectors.toCollection(idh.c)));
     }
 
     public final String d(boolean z) {

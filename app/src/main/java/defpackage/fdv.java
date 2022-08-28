@@ -9,7 +9,7 @@ import com.hdrindicator.DisplayHelper;
 import java.util.Map;
 import java.util.TreeMap;
 
-import j$.util.DesugarCollections;
+import java.util.Collections;
 
 /* renamed from: fdv  reason: default package */
 /* loaded from: classes.dex */
@@ -24,7 +24,7 @@ public final class fdv {
     public float m;
     public float n;
     public fdt x;
-    public final Map d = DesugarCollections.synchronizedMap(new TreeMap());
+    public final Map d = Collections.synchronizedMap(new TreeMap());
     public final float[] i = {DisplayHelper.DENSITY, DisplayHelper.DENSITY, -1.0f, 1.0f};
     public final float[] j = new float[4];
     public final float[] k = new float[16];

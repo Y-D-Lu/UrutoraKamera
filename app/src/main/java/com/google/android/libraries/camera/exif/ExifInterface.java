@@ -31,7 +31,7 @@ import defpackage.lmj;
 import defpackage.lmn;
 import defpackage.mip;
 import defpackage.obr;
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* loaded from: classes.dex */
 public class ExifInterface implements llz {
@@ -322,9 +322,9 @@ public class ExifInterface implements llz {
     public ExifInterface() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy:MM:dd", Locale.ROOT);
         this.bC = simpleDateFormat;
-        this.bD = Calendar.getInstance(DesugarTimeZone.getTimeZone("UTC"));
+        this.bD = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
         this.bH = null;
-        simpleDateFormat.setTimeZone(DesugarTimeZone.getTimeZone("UTC"));
+        simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
     }
 
     public static int c(int i2, short s2) {

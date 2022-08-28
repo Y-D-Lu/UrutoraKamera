@@ -6,7 +6,7 @@ import org.codeaurora.snapcam.R;
 
 import java.nio.ByteBuffer;
 
-import j$.util.function.Function;
+import java.util.function.Function;
 
 /* renamed from: jlo  reason: default package */
 /* loaded from: classes2.dex */
@@ -32,7 +32,7 @@ public final /* synthetic */ class jlo implements Function {
         this.p = i2;
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final /* synthetic */ Function andThen(Function function) {
         switch (this.p) {
             case 0:
@@ -68,7 +68,7 @@ public final /* synthetic */ class jlo implements Function {
         }
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final Object apply(Object obj) {
         switch (this.p) {
             case 0:
@@ -420,7 +420,7 @@ public final /* synthetic */ class jlo implements Function {
         }
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final /* synthetic */ Function compose(Function function) {
         switch (this.p) {
             case 0:

@@ -2,7 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: idh  reason: default package */
 /* loaded from: classes.dex */
@@ -17,7 +17,7 @@ public final /* synthetic */ class idh implements Supplier {
         this.e = i;
     }
 
-    @Override // j$.util.function.Supplier
+    @Override // java.util.function.Supplier
     /* renamed from: get */
     public final Object mo291get() {
         switch (this.e) {

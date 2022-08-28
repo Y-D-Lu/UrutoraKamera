@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: cmz  reason: default package */
 /* loaded from: classes.dex */

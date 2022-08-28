@@ -32,7 +32,7 @@ import defpackage.mip;
 import defpackage.oug;
 import defpackage.ouj;
 import defpackage.ovl;
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class RewindThumbnailScrollView extends HorizontalScrollView {
@@ -125,13 +125,13 @@ public class RewindThumbnailScrollView extends HorizontalScrollView {
             ofInt.setDuration(200L);
             ofInt.setInterpolator(new AccelerateDecelerateInterpolator());
             ofInt.addListener(mip.ev(new Consumer() { // from class: hnc
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     Animator animator = (Animator) obj;
                     RewindThumbnailScrollView.this.f = null;
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     return consumer.getClass();
                 }

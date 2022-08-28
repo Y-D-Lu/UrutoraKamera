@@ -7,10 +7,10 @@ import org.codeaurora.snapcam.R;
 import java.util.List;
 import java.util.Map;
 
-import j$.time.temporal.ChronoUnit;
-import j$.util.Collection;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
+import java.time.temporal.ChronoUnit;
+import java.util.Collection;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /* renamed from: cgw  reason: default package */
 /* loaded from: classes.dex */
@@ -41,7 +41,7 @@ public final /* synthetic */ class cgw implements Function {
         this.u = i2;
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final /* synthetic */ Function andThen(Function function) {
         switch (this.u) {
             case 0:
@@ -89,7 +89,7 @@ public final /* synthetic */ class cgw implements Function {
         }
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final Object apply(Object obj) {
         switch (this.u) {
             case 0:
@@ -190,19 +190,19 @@ public final /* synthetic */ class cgw implements Function {
                 gtoVar.l();
                 gtoVar.k();
                 return gtk.a(d2, R.string.speech_enhance_label, R.string.speech_enhance_content_desc, oom.j((List) Collection.EL.stream(gtoVar.g()).map(new Function() { // from class: gso
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final /* synthetic */ Function andThen(Function function) {
                         return function.getClass();
                     }
 
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final Object apply(Object obj2) {
                         gto gtoVar2 = gto.this;
                         gtv gtvVar = (gtv) obj2;
                         return new gtl(gtvVar, gtoVar2.b(gtvVar), gtoVar2.c(gtvVar), gtoVar2.a(gtvVar));
                     }
 
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final /* synthetic */ Function compose(Function function) {
                         return function.getClass();
                     }
@@ -223,7 +223,7 @@ public final /* synthetic */ class cgw implements Function {
         }
     }
 
-    @Override // j$.util.function.Function
+    @Override // java.util.function.Function
     public final /* synthetic */ Function compose(Function function) {
         switch (this.u) {
             case 0:

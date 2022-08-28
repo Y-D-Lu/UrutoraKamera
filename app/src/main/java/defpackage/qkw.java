@@ -3,8 +3,8 @@ package defpackage;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: qkw  reason: default package */
 /* loaded from: classes2.dex */
@@ -19,12 +19,12 @@ public final class qkw implements ListIterator, Iterator {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return false;
     }
@@ -34,9 +34,9 @@ public final class qkw implements ListIterator, Iterator {
         return false;
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final /* bridge */ /* synthetic */ Object mo197next() {
+    public final /* bridge */ /* synthetic */ Object next() {
         throw new NoSuchElementException();
     }
 
@@ -55,7 +55,7 @@ public final class qkw implements ListIterator, Iterator {
         return -1;
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }

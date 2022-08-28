@@ -4,8 +4,8 @@ import java.util.NoSuchElementException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: nha  reason: default package */
 /* loaded from: classes2.dex */
@@ -195,15 +195,15 @@ final class nha implements Iterator {
         return c2 == '%' || Character.getType(c2) == 26;
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:57:0x00d6, code lost:
         continue;
      */
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -216,9 +216,9 @@ final class nha implements Iterator {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.nha.hasNext():boolean");
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final /* bridge */ /* synthetic */ Object mo197next() {
+    public final /* bridge */ /* synthetic */ Object next() {
         if (hasNext()) {
             ngz ngzVar = this.n;
             this.n = null;
@@ -228,7 +228,7 @@ final class nha implements Iterator {
         throw new NoSuchElementException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException();
     }

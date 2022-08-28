@@ -13,7 +13,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import j$.util.DesugarCollections;
+import java.util.Collections;
 
 /* renamed from: aii  reason: default package */
 /* loaded from: classes.dex */
@@ -28,7 +28,7 @@ public abstract class aii {
     public volatile ajy l;
     public final ReentrantReadWriteLock h = new ReentrantReadWriteLock();
     public final ThreadLocal i = new ThreadLocal();
-    public final Map j = DesugarCollections.synchronizedMap(new HashMap());
+    public final Map j = Collections.synchronizedMap(new HashMap());
     public final aif d = a();
     public final Map k = new HashMap();
     protected final Map g = new HashMap();

@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.util.function.BiConsumer;
+import java.util.function.BiConsumer;
 
 /* renamed from: hei  reason: default package */
 /* loaded from: classes.dex */
@@ -13,7 +13,7 @@ public final /* synthetic */ class hei implements BiConsumer {
         this.c = i;
     }
 
-    @Override // j$.util.function.BiConsumer
+    @Override // java.util.function.BiConsumer
     public final void accept(Object obj, Object obj2) {
         switch (this.c) {
             case 0:
@@ -35,7 +35,7 @@ public final /* synthetic */ class hei implements BiConsumer {
         }
     }
 
-    @Override // j$.util.function.BiConsumer
+    @Override // java.util.function.BiConsumer
     public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
         switch (this.c) {
             case 0:

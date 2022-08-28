@@ -13,9 +13,9 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 
-import j$.util.function.BiFunction;
-import j$.util.function.Consumer;
-import j$.util.function.Function;
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 /* renamed from: fio  reason: default package */
 /* loaded from: classes.dex */
@@ -47,12 +47,12 @@ public class fio extends ih {
     @Override // android.app.Activity, android.view.Window.Callback
     public final boolean dispatchTouchEvent(final MotionEvent motionEvent) {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhf
-            @Override // j$.util.function.BiFunction
+            @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
                 return function.getClass();
             }
 
-            @Override // j$.util.function.BiFunction
+            @Override // java.util.function.BiFunction
             public final Object apply(Object obj, Object obj2) {
                 fik fikVar = (fik) obj;
                 Boolean bool = (Boolean) obj2;
@@ -90,7 +90,7 @@ public class fio extends ih {
     @Override // defpackage.by, defpackage.ub, android.app.Activity
     public final void onActivityResult(final int i, final int i2, Intent intent) {
         this.t.b(new Consumer() { // from class: fht
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 int i3 = i;
                 int i4 = i2;
@@ -101,7 +101,7 @@ public class fio extends ih {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }
@@ -128,7 +128,7 @@ public class fio extends ih {
     @Override // defpackage.ih, defpackage.by, android.app.Activity, android.content.ComponentCallbacks
     public final void onConfigurationChanged(final Configuration configuration) {
         this.t.b(new Consumer() { // from class: fha
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 Configuration configuration2 = configuration;
                 fik fikVar = (fik) obj;
@@ -138,7 +138,7 @@ public class fio extends ih {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }
@@ -209,12 +209,12 @@ public class fio extends ih {
     @Override // android.app.Activity, android.view.KeyEvent.Callback
     public final boolean onKeyDown(final int i, final KeyEvent keyEvent) {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhd
-            @Override // j$.util.function.BiFunction
+            @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
                 return function.getClass();
             }
 
-            @Override // j$.util.function.BiFunction
+            @Override // java.util.function.BiFunction
             public final Object apply(Object obj, Object obj2) {
                 int i2 = i;
                 KeyEvent keyEvent2 = keyEvent;
@@ -235,12 +235,12 @@ public class fio extends ih {
     @Override // android.app.Activity, android.view.KeyEvent.Callback
     public final boolean onKeyUp(final int i, KeyEvent keyEvent) {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhe
-            @Override // j$.util.function.BiFunction
+            @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
                 return function.getClass();
             }
 
-            @Override // j$.util.function.BiFunction
+            @Override // java.util.function.BiFunction
             public final Object apply(Object obj, Object obj2) {
                 int i2 = i;
                 fik fikVar = (fik) obj;
@@ -267,7 +267,7 @@ public class fio extends ih {
     @Override // defpackage.by, android.app.Activity
     public void onNewIntent(final Intent intent) {
         this.t.b(new Consumer() { // from class: fgz
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 Intent intent2 = intent;
                 fik fikVar = (fik) obj;
@@ -277,7 +277,7 @@ public class fio extends ih {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }
@@ -342,7 +342,7 @@ public class fio extends ih {
     @Override // defpackage.by, defpackage.ub, android.app.Activity
     public void onRequestPermissionsResult(final int i, final String[] strArr, final int[] iArr) {
         this.t.b(new Consumer() { // from class: fhh
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 int i2 = i;
                 String[] strArr2 = strArr;
@@ -354,7 +354,7 @@ public class fio extends ih {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

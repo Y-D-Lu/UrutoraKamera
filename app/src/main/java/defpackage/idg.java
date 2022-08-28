@@ -1,8 +1,8 @@
 package defpackage;
 
-import j$.util.Map;
-import j$.util.function.Function;
-import j$.util.function.Predicate;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 /* renamed from: idg  reason: default package */
 /* loaded from: classes.dex */
@@ -17,7 +17,7 @@ public final /* synthetic */ class idg implements Predicate {
         this.b = function;
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate and(Predicate predicate) {
         switch (this.c) {
             case 0:
@@ -31,7 +31,7 @@ public final /* synthetic */ class idg implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate negate() {
         switch (this.c) {
             case 0:
@@ -45,7 +45,7 @@ public final /* synthetic */ class idg implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate or(Predicate predicate) {
         switch (this.c) {
             case 0:
@@ -59,7 +59,7 @@ public final /* synthetic */ class idg implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final boolean test(Object obj) {
         switch (this.c) {
             case 0:

@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: dtt  reason: default package */
 /* loaded from: classes.dex */

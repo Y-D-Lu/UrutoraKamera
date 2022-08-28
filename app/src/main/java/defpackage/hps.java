@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: hps  reason: default package */
 /* loaded from: classes2.dex */
@@ -151,12 +151,12 @@ public final class hps implements hsa {
                 final Bitmap bitmap2 = bitmap;
                 final int i2 = i;
                 hrxVar2.d(new Consumer() { // from class: hrn
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         ((hsb) obj).k(hsp.this, bitmap2, i2);
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }
@@ -222,12 +222,12 @@ public final class hps implements hsa {
                 final hsp hspVar = h;
                 final lif lifVar2 = lifVar;
                 hrxVar2.d(new Consumer() { // from class: hrp
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         ((hsb) obj).o(hsp.this, lifVar2);
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }
@@ -368,12 +368,12 @@ public final class hps implements hsa {
     @Override // defpackage.hsa
     public final void Q(final long j) {
         this.z.d(new Consumer() { // from class: hrv
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 ((hsb) obj).m(j);
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

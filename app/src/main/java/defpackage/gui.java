@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: gui  reason: default package */
 /* loaded from: classes.dex */
@@ -26,7 +26,7 @@ public final /* synthetic */ class gui implements Consumer {
         this.j = i2;
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final void accept(Object obj) {
         boolean z = false;
         switch (this.j) {
@@ -147,7 +147,7 @@ public final /* synthetic */ class gui implements Consumer {
         }
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.j) {
             case 0:

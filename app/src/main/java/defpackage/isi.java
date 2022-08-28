@@ -12,8 +12,8 @@ import org.codeaurora.snapcam.R;
 
 import java.util.Date;
 
-import j$.time.Duration;
-import j$.util.Objects;
+import java.time.Duration;
+import java.util.Objects;
 
 /* renamed from: isi  reason: default package */
 /* loaded from: classes.dex */

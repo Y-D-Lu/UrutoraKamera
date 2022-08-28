@@ -13,8 +13,8 @@ import android.util.ArrayMap;
 import java.util.Map;
 
 import java.util.concurrent.ConcurrentHashMap;
-import j$.util.function.Function;
-import j$.util.function.Predicate;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 /* renamed from: icf  reason: default package */
 /* loaded from: classes.dex */

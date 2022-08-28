@@ -5,7 +5,7 @@ import android.graphics.ColorFilter;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 import com.google.android.apps.camera.ui.modeswitcher.MoreModesGrid;
 
-import j$.util.function.Predicate;
+import java.util.function.Predicate;
 
 /* renamed from: bql  reason: default package */
 /* loaded from: classes.dex */
@@ -34,7 +34,7 @@ public final /* synthetic */ class bql implements Predicate {
         this.s = i2;
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate and(Predicate predicate) {
         switch (this.s) {
             case 0:
@@ -76,7 +76,7 @@ public final /* synthetic */ class bql implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate negate() {
         switch (this.s) {
             case 0:
@@ -118,7 +118,7 @@ public final /* synthetic */ class bql implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final /* synthetic */ Predicate or(Predicate predicate) {
         switch (this.s) {
             case 0:
@@ -160,7 +160,7 @@ public final /* synthetic */ class bql implements Predicate {
         }
     }
 
-    @Override // j$.util.function.Predicate
+    @Override // java.util.function.Predicate
     public final boolean test(Object obj) {
         switch (this.s) {
             case 0:

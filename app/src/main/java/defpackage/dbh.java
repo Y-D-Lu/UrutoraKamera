@@ -2,7 +2,7 @@ package defpackage;
 
 import android.graphics.Rect;
 
-import j$.util.function.IntFunction;
+import java.util.function.IntFunction;
 
 /* renamed from: dbh  reason: default package */
 /* loaded from: classes.dex */
@@ -16,7 +16,7 @@ public final /* synthetic */ class dbh implements IntFunction {
         this.d = i;
     }
 
-    @Override // j$.util.function.IntFunction
+    @Override // java.util.function.IntFunction
     public final Object apply(int i) {
         switch (this.d) {
             case 0:

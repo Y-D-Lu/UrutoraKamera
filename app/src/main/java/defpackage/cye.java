@@ -8,9 +8,9 @@ import java.util.Arrays;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 
-import j$.util.Collection;
-import j$.util.DesugarArrays;
-import j$.util.function.Consumer;
+import java.util.Collection;
+import java.util.Arrays;
+import java.util.function.Consumer;
 
 /* renamed from: cye  reason: default package */
 /* loaded from: classes.dex */
@@ -74,12 +74,12 @@ public final class cye implements cxz {
             public final void run() {
                 final cye cyeVar = cye.this;
                 Collection.EL.forEach(Arrays.asList(cxyVarArr), new Consumer() { // from class: cyd
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         cye.this.b.t().b(new cxs((cxy) obj));
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }
@@ -110,7 +110,7 @@ public final class cye implements cxz {
 
     @Override // defpackage.cxz
     public final void e(lwd... lwdVarArr) {
-        p((cxy[]) DesugarArrays.stream(lwdVarArr).map(cgw.f).toArray(dbh.b));
+        p((cxy[]) Arrays.stream(lwdVarArr).map(cgw.f).toArray(dbh.b));
     }
 
     @Override // defpackage.cxz

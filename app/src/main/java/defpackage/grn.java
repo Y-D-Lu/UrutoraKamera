@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: grn  reason: default package */
 /* loaded from: classes.dex */
@@ -42,12 +42,12 @@ public final class grn implements pys {
             final int intValue3 = ((Integer) ddfVar.a(ddu.h).c()).intValue();
             final lce lceVar = new lce(Integer.valueOf(intValue2));
             final Consumer consumer = new Consumer() { // from class: grm
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     lce.this.fB((Integer) obj);
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer2) {
                     return consumer2.getClass();
                 }

@@ -3,7 +3,7 @@ package defpackage;
 import android.view.View;
 import android.view.ViewGroup;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: ish  reason: default package */
 /* loaded from: classes.dex */

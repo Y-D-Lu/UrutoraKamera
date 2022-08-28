@@ -10,7 +10,7 @@ import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import defpackage.si;
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* loaded from: classes.dex */
 public class ComplicationText implements Parcelable, TimeDependentText {
@@ -46,7 +46,7 @@ public class ComplicationText implements Parcelable, TimeDependentText {
         } else if (!readBundle.containsKey("format_format_string") || !readBundle.containsKey("format_style")) {
             this.b = null;
         } else {
-            this.b = new TimeFormatText(readBundle.getString("format_format_string"), readBundle.getInt("format_style"), readBundle.containsKey("format_time_zone") ? DesugarTimeZone.getTimeZone(readBundle.getString("format_time_zone")) : timeZone);
+            this.b = new TimeFormatText(readBundle.getString("format_format_string"), readBundle.getInt("format_style"), readBundle.containsKey("format_time_zone") ? TimeZone.getTimeZone(readBundle.getString("format_time_zone")) : timeZone);
         }
         c();
     }

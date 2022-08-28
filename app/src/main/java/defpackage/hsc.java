@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* renamed from: hsc  reason: default package */
 /* loaded from: classes2.dex */
@@ -16,7 +16,7 @@ public final class hsc {
 
     static {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmssSSS", Locale.ROOT);
-        DesugarTimeZone.getTimeZone("UTC");
+        TimeZone.getTimeZone("UTC");
         c = simpleDateFormat;
     }
 

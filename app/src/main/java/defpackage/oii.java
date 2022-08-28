@@ -2,8 +2,8 @@ package defpackage;
 
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: oii  reason: default package */
 /* loaded from: classes2.dex */
@@ -25,9 +25,9 @@ abstract class oii implements Iterator {
 
     public abstract int b(int i);
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:30:0x0064, code lost:
@@ -52,7 +52,7 @@ abstract class oii implements Iterator {
     /* JADX WARN: Code restructure failed: missing block: B:36:0x007d, code lost:
         r5 = r9.b.subSequence(r0, r1).toString();
      */
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -167,9 +167,9 @@ abstract class oii implements Iterator {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.oii.hasNext():boolean");
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             this.a = 2;
             Object obj = this.f;
@@ -179,7 +179,7 @@ abstract class oii implements Iterator {
         throw new NoSuchElementException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException();
     }

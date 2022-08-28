@@ -3,7 +3,7 @@ package defpackage;
 import android.animation.Animator;
 import android.view.animation.Interpolator;
 
-import j$.util.function.ToLongFunction;
+import java.util.function.ToLongFunction;
 
 /* renamed from: jkq  reason: default package */
 /* loaded from: classes2.dex */
@@ -13,7 +13,7 @@ public final /* synthetic */ class jkq implements ToLongFunction {
     private /* synthetic */ jkq() {
     }
 
-    @Override // j$.util.function.ToLongFunction
+    @Override // java.util.function.ToLongFunction
     public final long applyAsLong(Object obj) {
         Animator animator = (Animator) obj;
         Interpolator interpolator = jkz.a;

@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Executor;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: jlz  reason: default package */
 /* loaded from: classes2.dex */

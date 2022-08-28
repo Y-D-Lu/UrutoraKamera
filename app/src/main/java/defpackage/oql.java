@@ -12,14 +12,14 @@ final class oql extends oti {
         this.a = it;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.a.hasNext();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final /* bridge */ /* synthetic */ Object mo197next() {
+    public final /* bridge */ /* synthetic */ Object next() {
         return obr.af((Map.Entry) this.a.next());
     }
 }

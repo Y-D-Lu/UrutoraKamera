@@ -6,7 +6,7 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* renamed from: atc  reason: default package */
 /* loaded from: classes.dex */
@@ -27,7 +27,7 @@ public final class atc implements Comparable {
         this.d = 0;
         this.e = 0;
         this.f = 0;
-        this.g = DesugarTimeZone.getTimeZone("UTC");
+        this.g = TimeZone.getTimeZone("UTC");
     }
 
     public atc(Calendar calendar) {
@@ -37,7 +37,7 @@ public final class atc implements Comparable {
         this.d = 0;
         this.e = 0;
         this.f = 0;
-        this.g = DesugarTimeZone.getTimeZone("UTC");
+        this.g = TimeZone.getTimeZone("UTC");
         Date time = calendar.getTime();
         TimeZone timeZone = calendar.getTimeZone();
         GregorianCalendar gregorianCalendar = (GregorianCalendar) Calendar.getInstance(Locale.US);
@@ -61,7 +61,7 @@ public final class atc implements Comparable {
         this.d = 0;
         this.e = 0;
         this.f = 0;
-        this.g = DesugarTimeZone.getTimeZone("UTC");
+        this.g = TimeZone.getTimeZone("UTC");
         GregorianCalendar gregorianCalendar = new GregorianCalendar(timeZone);
         gregorianCalendar.setTime(date);
         this.a = gregorianCalendar.get(1);

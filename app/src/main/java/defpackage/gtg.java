@@ -24,9 +24,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import j$.util.DesugarArrays;
-import j$.util.List$CC;
-import j$.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /* renamed from: gtg  reason: default package */
 /* loaded from: classes.dex */
@@ -237,7 +237,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
         this.be = pynVar;
         this.bg = iudVar;
         this.bh = gspVar.t;
-        this.bi = oob.a((Map) DesugarArrays.stream(gtv.values()).collect(Collectors.toMap(cgw.q, cgw.r)));
+        this.bi = oob.a((Map) Arrays.stream(gtv.values()).collect(Collectors.toMap(cgw.q, cgw.r)));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -383,7 +383,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
         });
         obr.aQ(!P.isEmpty());
         ArrayList<lig> arrayList = new ArrayList(P);
-        List$CC.$default$sort(arrayList, Collections.reverseOrder(yc.b));
+        arrayList.sort(Collections.reverseOrder(yc.b));
         if (str.equals("full")) {
             ligVar = (lig) arrayList.get(0);
         } else {

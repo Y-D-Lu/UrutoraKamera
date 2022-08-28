@@ -6,7 +6,7 @@ import android.view.View;
 
 import org.codeaurora.snapcam.R;
 
-import j$.util.function.Function;
+import java.util.function.Function;
 
 /* renamed from: jlq  reason: default package */
 /* loaded from: classes2.dex */

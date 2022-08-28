@@ -10,7 +10,7 @@ import com.google.android.apps.camera.bottombar.DLock$GestureListener;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* renamed from: ikv  reason: default package */
 /* loaded from: classes3.dex */
@@ -37,7 +37,7 @@ public final class ikv implements pys {
             str6 = DLock$GestureListener.getCfgFileName(str6);
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(str6, locale);
-        DesugarTimeZone.getTimeZone("UTC");
+        TimeZone.getTimeZone("UTC");
         mbi mbiVar = new mbi();
         mbiVar.a = "IMG_";
         mbiVar.b = "IMG_";

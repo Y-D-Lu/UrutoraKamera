@@ -2,9 +2,9 @@ package defpackage;
 
 import java.util.concurrent.Executor;
 
-import j$.util.Collection;
-import j$.util.function.Consumer;
-import j$.util.stream.Stream;
+import java.util.Collection;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 /* renamed from: cbh  reason: default package */
 /* loaded from: classes.dex */
@@ -193,12 +193,12 @@ public final class cbh implements pys {
                         final cvo cvoVar = (cvo) qkgVar6.mo37get();
                         cvoVar.getClass();
                         stream.forEach(new Consumer() { // from class: cwq
-                            @Override // j$.util.function.Consumer
+                            @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
                                 cvo.this.c.add((cwh) obj);
                             }
 
-                            @Override // j$.util.function.Consumer
+                            @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                                 return consumer.getClass();
                             }

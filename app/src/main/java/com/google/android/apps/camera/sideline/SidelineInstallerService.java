@@ -44,7 +44,7 @@ import defpackage.pgr;
 import defpackage.pht;
 import defpackage.pih;
 import defpackage.plk;
-import j$.util.Optional;
+import java.util.Optional;
 
 /* loaded from: classes.dex */
 public class SidelineInstallerService extends Service {

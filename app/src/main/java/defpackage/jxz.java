@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: jxz  reason: default package */
 /* loaded from: classes2.dex */

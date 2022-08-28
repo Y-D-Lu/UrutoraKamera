@@ -5,7 +5,7 @@ import android.os.Process;
 import com.google.android.apps.camera.toast.EducationToastView;
 import com.google.android.apps.camera.toast.ToastView;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: isd  reason: default package */
 /* loaded from: classes.dex */

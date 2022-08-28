@@ -3,7 +3,7 @@ package defpackage;
 import java.util.Collection;
 import java.util.Set;
 
-import j$.util.Map;
+import java.util.Map;
 
 /* renamed from: oob  reason: default package */
 /* loaded from: classes2.dex */
@@ -73,7 +73,7 @@ public abstract class oob extends oor implements Map, olt {
         throw null;
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     /* renamed from: l */
     public final ope values() {
         return b().keySet();

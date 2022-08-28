@@ -10,10 +10,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import j$.time.Instant;
-import j$.util.Collection;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
+import java.time.Instant;
+import java.util.Collection;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /* renamed from: dfb  reason: default package */
 /* loaded from: classes2.dex */
@@ -107,7 +107,7 @@ public final /* synthetic */ class dfb implements Runnable {
                     final dfx dfxVar = dffVar3.e;
                     final dfr dfrVar = dfxVar.f;
                     e.h((List) Collection.EL.stream(dfrVar.d(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, dfr.c, g2.toEpochMilli(), instant.getEpochSecond(), 5, new Function() { // from class: dfp
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             switch (r2) {
                                 case 0:
@@ -117,7 +117,7 @@ public final /* synthetic */ class dfb implements Runnable {
                             }
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final Object apply(Object obj) {
                             switch (r2) {
                                 case 0:
@@ -127,7 +127,7 @@ public final /* synthetic */ class dfb implements Runnable {
                             }
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
                             switch (r2) {
                                 case 0:
@@ -137,18 +137,18 @@ public final /* synthetic */ class dfb implements Runnable {
                             }
                         }
                     })).map(new Function() { // from class: dfw
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             return function.getClass();
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final Object apply(Object obj) {
                             dfx dfxVar2 = dfx.this;
                             return new dfv(dfxVar2.c, dfxVar2.d, (dfo) obj, dfxVar2.h, hss.MEDIA_STORE);
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
                             return function.getClass();
                         }
@@ -156,7 +156,7 @@ public final /* synthetic */ class dfb implements Runnable {
                     final dga dgaVar = dffVar3.f;
                     final dfr dfrVar2 = dgaVar.d;
                     e.h((List) Collection.EL.stream(dfrVar2.d(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, dfr.c, g2.toEpochMilli(), instant.getEpochSecond(), 5, new Function() { // from class: dfp
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             switch (r2) {
                                 case 0:
@@ -166,7 +166,7 @@ public final /* synthetic */ class dfb implements Runnable {
                             }
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final Object apply(Object obj) {
                             switch (r2) {
                                 case 0:
@@ -176,7 +176,7 @@ public final /* synthetic */ class dfb implements Runnable {
                             }
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
                             switch (r2) {
                                 case 0:
@@ -186,18 +186,18 @@ public final /* synthetic */ class dfb implements Runnable {
                             }
                         }
                     })).map(new Function() { // from class: dfz
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             return function.getClass();
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final Object apply(Object obj) {
                             dga dgaVar2 = dga.this;
                             return new dfy(dgaVar2.a, dgaVar2.b, (dfo) obj, hss.MEDIA_STORE);
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
                             return function.getClass();
                         }

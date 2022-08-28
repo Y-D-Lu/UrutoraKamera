@@ -6,7 +6,7 @@ import com.hdrindicator.DisplayHelper;
 
 import java.util.Map;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: hbr  reason: default package */
 /* loaded from: classes.dex */

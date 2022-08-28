@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.LinkedBlockingDeque;
 
-import j$.net.URLEncoder;
+import java.net.URLEncoder;
 
 /* renamed from: nmb  reason: default package */
 /* loaded from: classes2.dex */

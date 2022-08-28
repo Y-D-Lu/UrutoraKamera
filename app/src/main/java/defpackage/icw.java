@@ -11,9 +11,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import j$.util.Collection;
-import j$.util.function.Consumer;
-import j$.util.stream.Collectors;
+import java.util.Collection;
+import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 /* renamed from: icw  reason: default package */
 /* loaded from: classes.dex */
@@ -130,7 +130,7 @@ public class icw implements icl, fik {
         arrayList2.addAll(c2);
         icfVar.a.h((List) Collection.EL.stream(arrayList2).filter(icf.a(icd.b)).collect(Collectors.toList()));
         Collection.EL.stream(c).forEachOrdered(new Consumer() { // from class: icb
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 switch (r4) {
                     case 0:
@@ -158,7 +158,7 @@ public class icw implements icl, fik {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 switch (r4) {
                     case 0:
@@ -169,7 +169,7 @@ public class icw implements icl, fik {
             }
         });
         Collection.EL.stream(c2).forEachOrdered(new Consumer() { // from class: icb
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 switch (r4) {
                     case 0:
@@ -197,7 +197,7 @@ public class icw implements icl, fik {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 switch (r4) {
                     case 0:
@@ -227,7 +227,7 @@ public class icw implements icl, fik {
         final AtomicInteger atomicInteger = new AtomicInteger();
         final AtomicInteger atomicInteger2 = new AtomicInteger();
         Collection.EL.stream(arrayList3).forEachOrdered(new Consumer() { // from class: icc
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 AtomicInteger atomicInteger3 = atomicInteger;
                 AtomicInteger atomicInteger4 = atomicInteger2;
@@ -239,7 +239,7 @@ public class icw implements icl, fik {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

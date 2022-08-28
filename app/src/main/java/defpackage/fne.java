@@ -10,7 +10,7 @@ import com.google.android.apps.camera.ui.views.MainActivityLayout;
 
 import org.codeaurora.snapcam.R;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: fne  reason: default package */
 /* loaded from: classes.dex */

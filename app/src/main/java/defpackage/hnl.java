@@ -2,7 +2,7 @@ package defpackage;
 
 import android.util.Range;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: hnl  reason: default package */
 /* loaded from: classes.dex */

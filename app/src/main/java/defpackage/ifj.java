@@ -12,7 +12,7 @@ import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 
 import org.codeaurora.snapcam.R;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: ifj  reason: default package */
 /* loaded from: classes.dex */

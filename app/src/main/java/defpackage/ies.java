@@ -13,9 +13,9 @@ import org.codeaurora.snapcam.R;
 
 import java.util.ArrayList;
 
-import j$.time.Duration;
-import j$.util.Collection;
-import j$.util.function.Consumer;
+import java.time.Duration;
+import java.util.Collection;
+import java.util.function.Consumer;
 
 /* renamed from: ies  reason: default package */
 /* loaded from: classes.dex */
@@ -104,12 +104,12 @@ public final class ies extends LinearLayout {
 
     public final void g(final ojc ojcVar) {
         Collection.EL.stream(this.b).forEachOrdered(new Consumer() { // from class: ien
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 ((iek) obj).setColorFilter((ColorFilter) ojc.this.f());
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 return consumer.getClass();
             }

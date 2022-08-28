@@ -27,7 +27,7 @@ public final class qja {
             java.util.concurrent.atomic.AtomicReference r0 = new java.util.concurrent.atomic.AtomicReference
             r0.<init>()
             defpackage.qja.c = r0
-            j$.util.concurrent.ConcurrentHashMap r0 = new j$.util.concurrent.ConcurrentHashMap
+            java.util.concurrent.ConcurrentHashMap r0 = new java.util.concurrent.ConcurrentHashMap
             r0.<init>()
             defpackage.qja.d = r0
             java.util.Properties r0 = java.lang.System.getProperties()

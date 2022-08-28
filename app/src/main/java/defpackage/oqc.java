@@ -3,8 +3,8 @@ package defpackage;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: oqc  reason: default package */
 /* loaded from: classes2.dex */
@@ -25,12 +25,12 @@ final class oqc implements ListIterator, Iterator {
         this.a = false;
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.b.hasPrevious();
     }
@@ -40,9 +40,9 @@ final class oqc implements ListIterator, Iterator {
         return this.b.hasNext();
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             this.a = true;
             return this.b.previous();
@@ -69,7 +69,7 @@ final class oqc implements ListIterator, Iterator {
         return nextIndex() - 1;
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     public final void remove() {
         ohh.T(this.a);
         this.b.remove();

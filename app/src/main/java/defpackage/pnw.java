@@ -25,7 +25,7 @@ public final class pnw extends pnx {
         throw new NoSuchElementException();
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final boolean hasNext() {
         return this.b < this.c;
     }

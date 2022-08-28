@@ -2,7 +2,7 @@ package defpackage;
 
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: dzd  reason: default package */
 /* loaded from: classes.dex */
@@ -26,7 +26,7 @@ public final class dzd implements Supplier {
         this.g = Math.min(((Float) ddfVar.g(ddm.ag).c()).floatValue(), max);
     }
 
-    @Override // j$.util.function.Supplier
+    @Override // java.util.function.Supplier
     /* renamed from: get */
     public final /* bridge */ /* synthetic */ Object mo291get() {
         ReentrantReadWriteLock.ReadLock readLock = this.a.readLock();

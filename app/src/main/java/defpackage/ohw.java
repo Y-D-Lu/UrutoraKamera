@@ -7,8 +7,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-import j$.time.Duration;
-import j$.time.Instant;
+import java.time.Duration;
+import java.time.Instant;
 
 /* renamed from: ohw  reason: default package */
 /* loaded from: classes2.dex */

@@ -2,7 +2,7 @@ package defpackage;
 
 import java.util.ListIterator;
 
-import j$.util.Iterator;
+import java.util.Iterator;
 
 /* renamed from: osu  reason: default package */
 /* loaded from: classes2.dex */

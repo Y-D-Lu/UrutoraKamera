@@ -157,7 +157,7 @@ public final class orw extends oor {
         return false;
     }
 
-    @Override // defpackage.oor, java.util.Map, j$.util.Map
+    @Override // defpackage.oor, java.util.Map, java.util.Map
     public final Object get(Object obj) {
         Object g = g(this.d, this.b, this.c, 0, obj);
         if (g == null) {
@@ -171,7 +171,7 @@ public final class orw extends oor {
         return new orv(this.b, 1, this.c);
     }
 
-    @Override // java.util.Map, j$.util.Map
+    @Override // java.util.Map, java.util.Map
     public final int size() {
         return this.c;
     }

@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 /* renamed from: hkn  reason: default package */
 /* loaded from: classes.dex */

@@ -4,8 +4,8 @@ import android.content.SharedPreferences;
 
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase;
 
-import j$.util.DesugarArrays;
-import j$.util.function.Consumer;
+import java.util.Arrays;
+import java.util.function.Consumer;
 
 /* renamed from: cwt  reason: default package */
 /* loaded from: classes.dex */
@@ -47,8 +47,8 @@ public final class cwt {
                             ((cxk) r).a.j();
                             cxkVar.a.i();
                             cxkVar.d.f(e2);
-                            DesugarArrays.stream(cxy.values()).forEach(new Consumer() { // from class: cws
-                                @Override // j$.util.function.Consumer
+                            Arrays.stream(cxy.values()).forEach(new Consumer() { // from class: cws
+                                @Override // java.util.function.Consumer
                                 public final void accept(Object obj) {
                                     cwt cwtVar2 = cwt.this;
                                     cxy cxyVar = (cxy) obj;
@@ -73,7 +73,7 @@ public final class cwt {
                                     }
                                 }
 
-                                @Override // j$.util.function.Consumer
+                                @Override // java.util.function.Consumer
                                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                                     return consumer.getClass();
                                 }

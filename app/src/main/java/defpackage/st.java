@@ -10,7 +10,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 /* renamed from: st  reason: default package */
 /* loaded from: classes2.dex */

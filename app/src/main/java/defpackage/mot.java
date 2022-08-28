@@ -5,14 +5,14 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import j$.util.DesugarCollections;
+import java.util.Collections;
 
 /* renamed from: mot  reason: default package */
 /* loaded from: classes2.dex */
 public final class mot {
     public static volatile boolean a = false;
     private static volatile boolean c = false;
-    public static final Map b = DesugarCollections.synchronizedMap(new WeakHashMap());
+    public static final Map b = Collections.synchronizedMap(new WeakHashMap());
 
     public static void a() {
         ArrayList arrayList = new ArrayList();

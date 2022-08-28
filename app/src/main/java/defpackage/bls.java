@@ -5,7 +5,7 @@ package defpackage;
 public final class bls extends wy {
     private int k;
 
-    @Override // defpackage.xf, java.util.Map, j$.util.Map
+    @Override // defpackage.xf, java.util.Map, java.util.Map
     public final void clear() {
         this.k = 0;
         super.clear();
@@ -23,7 +23,7 @@ public final class bls extends wy {
         return super.h(i, obj);
     }
 
-    @Override // defpackage.xf, java.util.Map, j$.util.Map
+    @Override // defpackage.xf, java.util.Map, java.util.Map
     public final int hashCode() {
         int i = this.k;
         if (i == 0) {
@@ -50,7 +50,7 @@ public final class bls extends wy {
         }
     }
 
-    @Override // defpackage.xf, java.util.Map, j$.util.Map
+    @Override // defpackage.xf, java.util.Map, java.util.Map
     public final Object put(Object obj, Object obj2) {
         this.k = 0;
         return super.put(obj, obj2);

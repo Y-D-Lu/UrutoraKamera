@@ -12,10 +12,10 @@ import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
 import com.hdrindicator.DisplayHelper;
 
-import j$.util.Collection;
-import j$.util.function.Consumer;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
+import java.util.Collection;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /* renamed from: gtz  reason: default package */
 /* loaded from: classes.dex */
@@ -101,7 +101,7 @@ public final class gtz {
                 this.a = this;
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 switch (r2) {
                     case 0:
@@ -115,7 +115,7 @@ public final class gtz {
                 }
             }
 
-            @Override // j$.util.function.Consumer
+            @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 switch (r2) {
                     case 0:
@@ -129,12 +129,12 @@ public final class gtz {
         if (!this.h) {
             AnimatorSet animatorSet = new AnimatorSet();
             animatorSet.playTogether((Collection) Collection.EL.stream(this.f).map(new Function() { // from class: gty
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
                     return function.getClass();
                 }
 
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final Object apply(Object obj) {
                     gtz gtzVar = gtz.this;
                     View view = (View) obj;
@@ -146,7 +146,7 @@ public final class gtz {
                     return ofFloat2;
                 }
 
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final /* synthetic */ Function compose(Function function) {
                     return function.getClass();
                 }
@@ -163,7 +163,7 @@ public final class gtz {
                     this.a = this;
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     switch (r2) {
                         case 0:
@@ -177,7 +177,7 @@ public final class gtz {
                     }
                 }
 
-                @Override // j$.util.function.Consumer
+                @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     switch (r2) {
                         case 0:

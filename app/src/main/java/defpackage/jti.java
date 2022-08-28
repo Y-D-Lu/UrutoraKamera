@@ -7,7 +7,7 @@ import android.view.WindowManager;
 
 import com.hdrindicator.DisplayHelper;
 
-import j$.util.DesugarArrays;
+import java.util.Arrays;
 
 /* renamed from: jti  reason: default package */
 /* loaded from: classes2.dex */
@@ -35,7 +35,7 @@ public final class jti {
             return false;
         }
         int i = 0;
-        for (Rect rect2 : (Rect[]) DesugarArrays.stream(hjyVarArr).map(cgw.h).toArray(dbh.a)) {
+        for (Rect rect2 : (Rect[]) Arrays.stream(hjyVarArr).map(cgw.h).toArray(dbh.a)) {
             if ((rect2.width() / rect.width()) * (rect2.height() / rect.height()) > this.a) {
                 i++;
             }

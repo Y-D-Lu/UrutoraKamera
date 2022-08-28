@@ -5,7 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: guj  reason: default package */
 /* loaded from: classes.dex */

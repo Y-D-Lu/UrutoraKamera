@@ -2,7 +2,7 @@ package defpackage;
 
 import java.util.Collection;
 
-import j$.time.Instant;
+import java.time.Instant;
 
 /* renamed from: dia  reason: default package */
 /* loaded from: classes.dex */

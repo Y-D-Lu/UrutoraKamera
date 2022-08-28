@@ -4,7 +4,7 @@ import android.animation.Animator;
 
 import org.codeaurora.snapcam.R;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: ier  reason: default package */
 /* loaded from: classes.dex */
@@ -17,7 +17,7 @@ public final /* synthetic */ class ier implements Consumer {
         this.a = iesVar;
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final void accept(Object obj) {
         switch (this.b) {
             case 0:
@@ -58,7 +58,7 @@ public final /* synthetic */ class ier implements Consumer {
         }
     }
 
-    @Override // j$.util.function.Consumer
+    @Override // java.util.function.Consumer
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.b) {
             case 0:

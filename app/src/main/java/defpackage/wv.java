@@ -2,9 +2,9 @@ package defpackage;
 
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
-import j$.util.Map;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.function.Consumer;
 
 /* renamed from: wv  reason: default package */
 /* loaded from: classes2.dex */
@@ -19,7 +19,7 @@ final class wv implements Iterator, Map.Entry {
         this.a = wyVar.j - 1;
     }
 
-    @Override // java.util.Map.Entry, j$.util.Map.Entry
+    @Override // java.util.Map.Entry, java.util.Map.Entry
     public final boolean equals(Object obj) {
         if (this.c) {
             if (!(obj instanceof Map.Entry)) {
@@ -31,12 +31,12 @@ final class wv implements Iterator, Map.Entry {
         throw new IllegalStateException("This container does not support retaining Map.Entry objects");
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.Map.Entry, j$.util.Map.Entry
+    @Override // java.util.Map.Entry, java.util.Map.Entry
     public final Object getKey() {
         if (this.c) {
             return this.d.f(this.b);
@@ -44,7 +44,7 @@ final class wv implements Iterator, Map.Entry {
         throw new IllegalStateException("This container does not support retaining Map.Entry objects");
     }
 
-    @Override // java.util.Map.Entry, j$.util.Map.Entry
+    @Override // java.util.Map.Entry, java.util.Map.Entry
     public final Object getValue() {
         if (this.c) {
             return this.d.i(this.b);
@@ -52,12 +52,12 @@ final class wv implements Iterator, Map.Entry {
         throw new IllegalStateException("This container does not support retaining Map.Entry objects");
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.b < this.a;
     }
 
-    @Override // java.util.Map.Entry, j$.util.Map.Entry
+    @Override // java.util.Map.Entry, java.util.Map.Entry
     public final int hashCode() {
         if (this.c) {
             Object f = this.d.f(this.b);
@@ -72,9 +72,9 @@ final class wv implements Iterator, Map.Entry {
         throw new IllegalStateException("This container does not support retaining Map.Entry objects");
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final /* bridge */ /* synthetic */ Object mo197next() {
+    public final /* bridge */ /* synthetic */ Object next() {
         if (hasNext()) {
             this.b++;
             this.c = true;
@@ -83,7 +83,7 @@ final class wv implements Iterator, Map.Entry {
         throw new NoSuchElementException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
         if (this.c) {
             this.d.g(this.b);
@@ -95,7 +95,7 @@ final class wv implements Iterator, Map.Entry {
         throw new IllegalStateException();
     }
 
-    @Override // java.util.Map.Entry, j$.util.Map.Entry
+    @Override // java.util.Map.Entry, java.util.Map.Entry
     public final Object setValue(Object obj) {
         if (this.c) {
             return this.d.h(this.b, obj);

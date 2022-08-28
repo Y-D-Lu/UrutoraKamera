@@ -3,7 +3,7 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.List;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: fhi  reason: default package */
 /* loaded from: classes.dex */

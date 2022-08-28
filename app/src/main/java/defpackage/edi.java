@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: edi  reason: default package */
@@ -25,7 +25,7 @@ public final class edi implements Supplier {
         lapVar.c(imtVar.d(a.a()));
     }
 
-    @Override // j$.util.function.Supplier
+    @Override // java.util.function.Supplier
     /* renamed from: get */
     public final /* bridge */ /* synthetic */ Object mo291get() {
         synchronized (this) {

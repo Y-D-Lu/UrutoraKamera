@@ -13,13 +13,13 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import j$.util.Collection;
-import j$.util.Comparator$CC;
+import java.util.Collection;
+import java.util.Comparator;
 import java.util.concurrent.ConcurrentHashMap;
-import j$.util.function.Predicate;
-import j$.util.function.ToIntFunction;
-import j$.util.stream.Collectors;
-import j$.util.stream.Stream;
+import java.util.function.Predicate;
+import java.util.function.ToIntFunction;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /* renamed from: iec  reason: default package */
 /* loaded from: classes.dex */
@@ -85,8 +85,8 @@ public final class iec implements idt {
 
     @Override // defpackage.idt
     public final Comparator b() {
-        return Comparator$CC.comparingInt(new ToIntFunction() { // from class: idy
-            @Override // j$.util.function.ToIntFunction
+        return Comparator.comparingInt(new ToIntFunction() { // from class: idy
+            @Override // java.util.function.ToIntFunction
             public final int applyAsInt(Object obj) {
                 iec iecVar = iec.this;
                 String str = ((ResolveInfo) obj).activityInfo.packageName;
@@ -121,22 +121,22 @@ public final class iec implements idt {
     public final /* bridge */ /* synthetic */ List d(String str) {
         ArrayList c = c(str);
         Collection.EL.removeIf(c, new Predicate() { // from class: ieb
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
                 return Predicate.CC.$default$negate(this);
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 return !iec.this.c.m(idm.c(((ResolveInfo) obj).activityInfo.packageName));
             }
@@ -148,22 +148,22 @@ public final class iec implements idt {
     public final void e(List list) {
         final List list2 = (List) Collection.EL.stream(list).map(icd.j).collect(Collectors.toList());
         Stream map = Collection.EL.stream(this.d.keySet()).filter(new Predicate() { // from class: idw
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
                 return Predicate.CC.$default$negate(this);
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 ouj oujVar = iec.a;
                 return !list2.contains((String) obj);
@@ -172,22 +172,22 @@ public final class iec implements idt {
         final hub hubVar = this.c;
         hubVar.getClass();
         map.filter(new Predicate() { // from class: iea
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
                 return Predicate.CC.$default$negate(this);
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 return hub.this.m((String) obj);
             }
@@ -248,22 +248,22 @@ public final class iec implements idt {
         final oor oorVar = this.d;
         oorVar.getClass();
         return map.anyMatch(new Predicate() { // from class: idv
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
                 return Predicate.CC.$default$negate(this);
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 return oor.this.containsKey((String) obj);
             }
@@ -276,22 +276,22 @@ public final class iec implements idt {
         Stream map = Collection.EL.stream(n(str)).map(icd.m);
         set.getClass();
         return map.anyMatch(new Predicate() { // from class: idx
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
                 return Predicate.CC.$default$negate(this);
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 return set.contains((String) obj);
             }
@@ -302,22 +302,22 @@ public final class iec implements idt {
     /* renamed from: l */
     public final ArrayList c(final String str) {
         return (ArrayList) Collection.EL.stream(n(str)).filter(new Predicate() { // from class: idu
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
                 return Predicate.CC.$default$negate(this);
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
                 return predicate.getClass();
             }
 
-            @Override // j$.util.function.Predicate
+            @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 iec iecVar = iec.this;
                 String str2 = str;

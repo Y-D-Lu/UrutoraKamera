@@ -12,7 +12,7 @@ import org.codeaurora.snapcam.R;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: cug  reason: default package */
 /* loaded from: classes.dex */

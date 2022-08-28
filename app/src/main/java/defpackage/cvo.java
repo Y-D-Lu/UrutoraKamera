@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
 
-import j$.util.Collection;
-import j$.util.Optional;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
+import java.util.Collection;
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /* renamed from: cvo  reason: default package */
 /* loaded from: classes.dex */
@@ -169,17 +169,17 @@ public final class cvo implements cwj, lco {
             g(i() ? lwd.FRONT : lwd.BACK);
             d();
             mip.ca(plk.R((Iterable) Collection.EL.stream(this.c).map(new Function() { // from class: cvl
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
                     return function.getClass();
                 }
 
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final Object apply(Object obj) {
                     return ((cwh) obj).a((lwd) ((lce) cvo.this.b).d);
                 }
 
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final /* synthetic */ Function compose(Function function) {
                     return function.getClass();
                 }

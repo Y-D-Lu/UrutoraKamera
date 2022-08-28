@@ -2,8 +2,8 @@ package defpackage;
 
 import java.util.ListIterator;
 
-import j$.util.Iterator;
-import j$.util.function.Consumer;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* renamed from: pro  reason: default package */
 /* loaded from: classes2.dex */
@@ -24,12 +24,12 @@ final class pro implements ListIterator, Iterator {
         throw new UnsupportedOperationException();
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final /* synthetic */ void forEachRemaining(Consumer consumer) {
-        Iterator.CC.$default$forEachRemaining(this, consumer);
+        forEachRemaining(consumer);
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.a.hasNext();
     }
@@ -39,9 +39,9 @@ final class pro implements ListIterator, Iterator {
         return this.a.hasPrevious();
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final /* bridge */ /* synthetic */ Object mo197next() {
+    public final /* bridge */ /* synthetic */ Object next() {
         return (String) this.a.next();
     }
 
@@ -60,7 +60,7 @@ final class pro implements ListIterator, Iterator {
         return this.a.previousIndex();
     }
 
-    @Override // java.util.ListIterator, java.util.Iterator, j$.util.Iterator
+    @Override // java.util.ListIterator, java.util.Iterator, java.util.Iterator
     public final void remove() {
         throw new UnsupportedOperationException();
     }

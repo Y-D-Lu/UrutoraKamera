@@ -3,7 +3,7 @@ package defpackage;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
 
-import j$.util.Iterator;
+import java.util.Iterator;
 
 /* renamed from: otj  reason: default package */
 /* loaded from: classes2.dex */
@@ -26,7 +26,7 @@ public abstract class otj extends oti implements ListIterator, Iterator {
         throw new UnsupportedOperationException();
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.b < this.a;
     }
@@ -36,9 +36,9 @@ public abstract class otj extends oti implements ListIterator, Iterator {
         return this.b > 0;
     }
 
-    @Override // java.util.Iterator, j$.util.Iterator
+    @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
-    public final Object mo197next() {
+    public final Object next() {
         if (hasNext()) {
             int i = this.b;
             this.b = i + 1;

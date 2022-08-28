@@ -10,8 +10,8 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Locale;
 
-import j$.time.Instant;
-import j$.util.function.Function;
+import java.time.Instant;
+import java.util.function.Function;
 
 /* renamed from: dfr  reason: default package */
 /* loaded from: classes2.dex */
@@ -182,12 +182,12 @@ public final class dfr {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final List e(Instant instant, Instant instant2, final boolean z) {
         return d(z ? MediaStore.Video.Media.EXTERNAL_CONTENT_URI : MediaStore.Images.Media.EXTERNAL_CONTENT_URI, d, instant.minusMillis(1L).toEpochMilli(), instant2.minusSeconds(1L).getEpochSecond(), Integer.MAX_VALUE, new Function() { // from class: dfq
-            @Override // j$.util.function.Function
+            @Override // java.util.function.Function
             public final /* synthetic */ Function andThen(Function function) {
                 return function.getClass();
             }
 
-            @Override // j$.util.function.Function
+            @Override // java.util.function.Function
             public final Object apply(Object obj) {
                 boolean z2 = z;
                 Cursor cursor = (Cursor) obj;
@@ -195,7 +195,7 @@ public final class dfr {
                 return dfr.a(cursor.getLong(cursor.getColumnIndexOrThrow("_id")), z2);
             }
 
-            @Override // j$.util.function.Function
+            @Override // java.util.function.Function
             public final /* synthetic */ Function compose(Function function) {
                 return function.getClass();
             }

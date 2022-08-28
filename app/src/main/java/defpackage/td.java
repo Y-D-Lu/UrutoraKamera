@@ -14,7 +14,7 @@ import android.view.View;
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 @Deprecated
 /* renamed from: td  reason: default package */

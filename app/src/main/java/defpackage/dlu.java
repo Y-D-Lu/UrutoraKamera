@@ -22,7 +22,7 @@ public final class dlu extends Exception {
             java.lang.String r1 = "before opening: "
             goto L2b
         Lb:
-            j$.time.Duration r1 = j$.time.Duration.ofNanos(r10)
+            java.time.Duration r1 = java.time.Duration.ofNanos(r10)
             long r1 = r1.toMillis()
             java.lang.StringBuilder r3 = new java.lang.StringBuilder
             r4 = 57

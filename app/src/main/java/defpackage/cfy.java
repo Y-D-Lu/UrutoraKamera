@@ -11,9 +11,9 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
-import j$.util.Collection;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
+import java.util.Collection;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /* renamed from: cfy  reason: default package */
 /* loaded from: classes.dex */
@@ -407,12 +407,12 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
             pemVar9.a = 262144 | i19;
             pemVar9.t = c2;
             Iterable<peo> iterable = (Iterable) Collection.EL.stream(ckwVar.n).map(new Function() { // from class: cvb
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
                     return function.getClass();
                 }
 
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final Object apply(Object obj) {
                     cvc cvcVar2 = cvc.this;
                     lwd lwdVar2 = lwdVar;
@@ -444,7 +444,7 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
                     }
                 }
 
-                @Override // j$.util.function.Function
+                @Override // java.util.function.Function
                 public final /* synthetic */ Function compose(Function function) {
                     return function.getClass();
                 }

@@ -2,7 +2,7 @@ package defpackage;
 
 import android.view.WindowInsets;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: gs  reason: default package */

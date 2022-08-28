@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: ita  reason: default package */
 /* loaded from: classes.dex */

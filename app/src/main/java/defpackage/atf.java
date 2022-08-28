@@ -23,7 +23,7 @@ public final class atf extends ate {
         this.e = atlVar.h();
     }
 
-    @Override // defpackage.ate, java.util.Iterator, j$.util.Iterator
+    @Override // defpackage.ate, java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         if (this.b != null) {
             return true;

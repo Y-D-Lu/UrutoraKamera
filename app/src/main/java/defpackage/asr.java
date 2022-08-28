@@ -2,13 +2,13 @@ package defpackage;
 
 import java.util.Calendar;
 
-import j$.util.DesugarTimeZone;
+import java.util.TimeZone;
 
 /* renamed from: asr  reason: default package */
 /* loaded from: classes.dex */
 public final class asr {
     static {
-        DesugarTimeZone.getTimeZone("UTC");
+        TimeZone.getTimeZone("UTC");
     }
 
     public static atc a(Calendar calendar) {

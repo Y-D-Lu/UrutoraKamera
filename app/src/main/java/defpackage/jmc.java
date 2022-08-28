@@ -2,7 +2,7 @@ package defpackage;
 
 import java.util.concurrent.Executor;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: jmc  reason: default package */
 /* loaded from: classes2.dex */

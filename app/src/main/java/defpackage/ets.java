@@ -4,9 +4,9 @@ import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import j$.util.Collection;
-import j$.util.function.Function;
-import j$.util.stream.Collectors;
+import java.util.Collection;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /* renamed from: ets  reason: default package */
 /* loaded from: classes.dex */
@@ -54,17 +54,17 @@ public final class ets implements bvv {
                 qkg qkgVar2 = qkgVar;
                 final bxy bxyVar = (bxy) etsVar.a.get();
                 return (Set) Collection.EL.stream(((pyw) qkgVar2).mo37get()).map(new Function() { // from class: etp
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final /* synthetic */ Function andThen(Function function) {
                         return function.getClass();
                     }
 
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final Object apply(Object obj) {
                         return new dks(bxy.this.a((iho) obj), 2);
                     }
 
-                    @Override // j$.util.function.Function
+                    @Override // java.util.function.Function
                     public final /* synthetic */ Function compose(Function function) {
                         return function.getClass();
                     }

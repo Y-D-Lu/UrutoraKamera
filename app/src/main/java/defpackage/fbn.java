@@ -32,8 +32,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ScheduledExecutorService;
 
-import j$.util.Collection;
-import j$.util.function.Function;
+import java.util.Collection;
+import java.util.function.Function;
 
 /* renamed from: fbn  reason: default package */
 /* loaded from: classes.dex */
@@ -794,18 +794,18 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                 if (jibVar != null) {
                     final fbq fbqVar2 = this.ab;
                     jibVar.ac(new Function() { // from class: fbp
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             return function.getClass();
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final Object apply(Object obj) {
                             Preference preference3 = (Preference) obj;
                             return Boolean.valueOf(((iln) fbq.this.l.get()).a());
                         }
 
-                        @Override // j$.util.function.Function
+                        @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
                             return function.getClass();
                         }

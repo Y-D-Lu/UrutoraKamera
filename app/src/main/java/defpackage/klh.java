@@ -12,14 +12,14 @@ import java.io.PrintWriter;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import j$.util.DesugarCollections;
+import java.util.Collections;
 
 /* renamed from: klh  reason: default package */
 /* loaded from: classes2.dex */
 public final class klh extends bu implements kkn {
     public static final WeakHashMap a = new WeakHashMap();
     public Bundle c;
-    private final Map d = DesugarCollections.synchronizedMap(new wy());
+    private final Map d = Collections.synchronizedMap(new wy());
     public int b = 0;
 
     @Override // defpackage.bu

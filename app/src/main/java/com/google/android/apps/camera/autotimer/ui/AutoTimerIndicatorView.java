@@ -17,7 +17,7 @@ import com.hdrindicator.DisplayHelper;
 
 import org.codeaurora.snapcam.R;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* loaded from: classes.dex */
 public final class AutoTimerIndicatorView extends View {

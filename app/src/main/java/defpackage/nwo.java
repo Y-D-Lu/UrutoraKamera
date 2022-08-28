@@ -4,7 +4,7 @@ import android.view.View;
 
 import com.google.android.material.appbar.AppBarLayout;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 /* renamed from: nwo  reason: default package */
 /* loaded from: classes2.dex */

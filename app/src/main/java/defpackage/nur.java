@@ -2,7 +2,7 @@ package defpackage;
 
 import com.hdrindicator.DisplayHelper;
 
-import j$.util.Objects;
+import java.util.Objects;
 
 /* renamed from: nur  reason: default package */
 /* loaded from: classes2.dex */

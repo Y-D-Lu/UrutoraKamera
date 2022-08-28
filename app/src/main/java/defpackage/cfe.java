@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: cfe  reason: default package */
 /* loaded from: classes3.dex */

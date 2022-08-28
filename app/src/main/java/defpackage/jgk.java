@@ -17,7 +17,7 @@ import org.codeaurora.snapcam.R;
 import java.util.EnumMap;
 import java.util.Map;
 
-import j$.util.Collection;
+import java.util.Collection;
 
 /* renamed from: jgk  reason: default package */
 /* loaded from: classes.dex */

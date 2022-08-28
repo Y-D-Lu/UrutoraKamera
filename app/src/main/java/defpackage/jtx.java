@@ -7,7 +7,7 @@ import android.util.Log;
 
 import com.google.android.libraries.camera.exif.ExifInterface;
 
-import j$.time.Duration;
+import java.time.Duration;
 
 /* renamed from: jtx  reason: default package */
 /* loaded from: classes2.dex */

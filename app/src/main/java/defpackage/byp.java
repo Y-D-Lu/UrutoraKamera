@@ -15,7 +15,7 @@ import org.codeaurora.snapcam.R;
 
 import java.util.List;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: byp  reason: default package */
 /* loaded from: classes.dex */
@@ -862,7 +862,7 @@ public final class byp implements bys {
         jlzVar.d = 6000;
         jlzVar.b = false;
         jlzVar.d(new Supplier() { // from class: byk
-            @Override // j$.util.function.Supplier
+            @Override // java.util.function.Supplier
             /* renamed from: get */
             public final Object mo291get() {
                 byp bypVar = byp.this;

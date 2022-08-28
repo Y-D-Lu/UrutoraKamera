@@ -1,6 +1,6 @@
 package defpackage;
 
-import j$.util.function.Consumer;
+import java.util.function.Consumer;
 
 /* renamed from: hrq  reason: default package */
 /* loaded from: classes2.dex */
@@ -22,7 +22,7 @@ public final /* synthetic */ class hrq implements Runnable {
                 hrx hrxVar = this.a;
                 final hsp hspVar = this.b;
                 hrxVar.b(new Consumer() { // from class: hrm
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         switch (r2) {
                             case 0:
@@ -40,7 +40,7 @@ public final /* synthetic */ class hrq implements Runnable {
                         }
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         switch (r2) {
                             case 0:
@@ -59,7 +59,7 @@ public final /* synthetic */ class hrq implements Runnable {
                 hrx hrxVar2 = this.a;
                 final hsp hspVar2 = this.b;
                 hrxVar2.d(new Consumer() { // from class: hrm
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         switch (r2) {
                             case 0:
@@ -77,7 +77,7 @@ public final /* synthetic */ class hrq implements Runnable {
                         }
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         switch (r2) {
                             case 0:
@@ -96,7 +96,7 @@ public final /* synthetic */ class hrq implements Runnable {
                 hrx hrxVar3 = this.a;
                 final hsp hspVar3 = this.b;
                 hrxVar3.b(new Consumer() { // from class: hrm
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         switch (r2) {
                             case 0:
@@ -114,7 +114,7 @@ public final /* synthetic */ class hrq implements Runnable {
                         }
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         switch (r2) {
                             case 0:
@@ -133,7 +133,7 @@ public final /* synthetic */ class hrq implements Runnable {
                 hrx hrxVar4 = this.a;
                 final hsp hspVar4 = this.b;
                 hrxVar4.b(new Consumer() { // from class: hrm
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         switch (r2) {
                             case 0:
@@ -151,7 +151,7 @@ public final /* synthetic */ class hrq implements Runnable {
                         }
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         switch (r2) {
                             case 0:

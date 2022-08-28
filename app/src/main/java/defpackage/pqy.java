@@ -34,7 +34,7 @@ final class pqy extends pnx {
         throw new NoSuchElementException();
     }
 
-    @Override // j$.util.Iterator
+    @Override // java.util.Iterator
     public final boolean hasNext() {
         return this.b != null;
     }

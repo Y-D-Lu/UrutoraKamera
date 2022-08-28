@@ -7,10 +7,10 @@ import com.google.android.apps.camera.bottombar.R;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import j$.time.Duration;
-import j$.time.Instant;
-import j$.util.Optional;
-import j$.util.function.Consumer;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.Optional;
+import java.util.function.Consumer;
 
 /* renamed from: oho  reason: default package */
 /* loaded from: classes2.dex */
@@ -75,12 +75,12 @@ public final class oho implements Choreographer.FrameCallback, oht {
                 final oha ohaVar2 = ohwVar.k;
                 ohaVar2.getClass();
                 ofNullable.ifPresent(new Consumer() { // from class: ohu
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         oha.this.a.provideVideoFrame((ohy) obj);
                     }
 
-                    @Override // j$.util.function.Consumer
+                    @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return consumer.getClass();
                     }

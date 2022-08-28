@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 
-import j$.util.function.Supplier;
+import java.util.function.Supplier;
 
 /* renamed from: bsr  reason: default package */
 /* loaded from: classes.dex */

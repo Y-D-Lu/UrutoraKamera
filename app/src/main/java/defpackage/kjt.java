@@ -7,13 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import j$.util.DesugarCollections;
+import java.util.Collections;
 
 /* renamed from: kjt  reason: default package */
 /* loaded from: classes2.dex */
 public final class kjt {
-    public final Map a = DesugarCollections.synchronizedMap(new WeakHashMap());
-    public final Map b = DesugarCollections.synchronizedMap(new WeakHashMap());
+    public final Map a = Collections.synchronizedMap(new WeakHashMap());
+    public final Map b = Collections.synchronizedMap(new WeakHashMap());
 
     public final void a(boolean z, Status status) {
         HashMap hashMap;
