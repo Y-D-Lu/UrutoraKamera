@@ -71,7 +71,7 @@ public final class su {
                 }
             }
             CharSequence charSequence2 = this.f;
-            String str2 = charSequence2;
+            String str2 = (String) charSequence2;
             if (this.o) {
                 int i3 = ss.a;
                 if (charSequence2 == null) {
@@ -108,7 +108,7 @@ public final class su {
         }
         if (this.q || !this.b.equals(rect)) {
             this.b.set(rect);
-            int i5 = !h();
+            int i5 = !h() ? 1 : 0;
             this.m.set(this.b.left + ((int) (this.b.width() * (h() ? this.g : DisplayHelper.DENSITY))), this.b.top + ((int) (this.b.height() * DisplayHelper.DENSITY)), this.b.right - ((int) (this.b.width() * (h() ? DisplayHelper.DENSITY : this.g))), this.b.bottom - ((int) (this.b.height() * DisplayHelper.DENSITY)));
             Gravity.apply(this.i, this.h.getWidth(), this.h.getHeight(), this.m, this.n, i5);
             this.q = false;

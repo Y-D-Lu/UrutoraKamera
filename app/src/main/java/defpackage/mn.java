@@ -356,7 +356,6 @@ public final class mn {
                         o(mmVar);
                         break;
                     }
-                    break;
                 case 4:
                     int i7 = mmVar.b;
                     int i8 = mmVar.d + i7;
@@ -394,7 +393,6 @@ public final class mn {
                         o(mmVar);
                         break;
                     }
-                    break;
             }
         }
         this.a.clear();

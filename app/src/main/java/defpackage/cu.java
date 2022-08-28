@@ -90,7 +90,7 @@ public final class cu {
         boolean z = buVar.J;
         db dbVar = buVar.A.a;
         ArrayList<bu> arrayList = new ArrayList();
-        for (da daVar : dbVar.b.values()) {
+        for (da daVar : (Set<da>)dbVar.b.values()) {
             if (daVar != null) {
                 arrayList.add(daVar.c);
             } else {
@@ -140,7 +140,7 @@ public final class cu {
 
     private final Set ab() {
         HashSet hashSet = new HashSet();
-        for (da daVar : this.a.e()) {
+        for (da daVar : (Set<da>)this.a.e()) {
             ViewGroup viewGroup = daVar.c.L;
             if (viewGroup != null) {
                 Z();
@@ -171,7 +171,7 @@ public final class cu {
     }
 
     private final void af() {
-        for (dq dqVar : ab()) {
+        for (dq dqVar : (Set<dq>)ab()) {
             dqVar.c();
         }
     }
@@ -228,7 +228,7 @@ public final class cu {
         int i6 = i;
         boolean z4 = false;
         while (true) {
-            byte[] bArr2 = 0;
+            bu bArr2 = new bu();
             if (i6 >= i2) {
                 this.F.clear();
                 if (!z3 && this.i > 0) {
@@ -421,7 +421,7 @@ public final class cu {
                         while (true) {
                             if (size7 >= 0) {
                                 dp dpVar = (dp) dqVar2.b.get(size7);
-                                int n = d.n(dpVar.a.M);
+                                int n = defpackage.d.n(dpVar.a.M);
                                 if (dpVar.e != 2 || n == 2) {
                                     size7--;
                                 } else {
@@ -461,7 +461,7 @@ public final class cu {
                                 dp dpVar3 = null;
                                 dp dpVar4 = null;
                                 for (dp dpVar5 : arrayList10) {
-                                    int n2 = d.n(dpVar5.a.M);
+                                    int n2 = defpackage.d.n(dpVar5.a.M);
                                     int i15 = dpVar5.e;
                                     int i16 = i15 - 1;
                                     if (i15 == 0) {
@@ -732,7 +732,7 @@ public final class cu {
                             break;
                     }
                     i20++;
-                    bArr2 = 0;
+                    bArr2 = new bu();
                 }
             } else {
                 ArrayList arrayList16 = this.F;
@@ -803,14 +803,14 @@ public final class cu {
         if (aa == null || buVar.n() + buVar.o() + buVar.p() + buVar.q() <= 0) {
             return;
         }
-        if (aa.getTag(R.id.visible_removing_fragment_view_tag) == null) {
-            aa.setTag(R.id.visible_removing_fragment_view_tag, buVar);
+        if (aa.getTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag) == null) {
+            aa.setTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag, buVar);
         }
-        ((bu) aa.getTag(R.id.visible_removing_fragment_view_tag)).T(buVar.V());
+        ((bu) aa.getTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag)).T(buVar.V());
     }
 
     private final void ak() {
-        for (da daVar : this.a.e()) {
+        for (da daVar : (Set<da>)this.a.e()) {
             bu buVar = daVar.c;
             if (buVar.N) {
                 if (this.v) {
@@ -832,7 +832,7 @@ public final class cu {
         if (!dbVar.b.isEmpty()) {
             printWriter.print(str);
             printWriter.println("Active Fragments:");
-            for (da daVar : dbVar.b.values()) {
+            for (da daVar : (Set<da>)dbVar.b.values()) {
                 printWriter.print(str);
                 if (daVar != null) {
                     bu buVar = daVar.c;
@@ -1001,7 +1001,7 @@ public final class cu {
                     daVar.d();
                 }
             }
-            for (da daVar2 : dbVar.b.values()) {
+            for (da daVar2 : (Set<da>)dbVar.b.values()) {
                 if (daVar2 != null) {
                     daVar2.d();
                     bu buVar = daVar2.c;
@@ -1030,7 +1030,7 @@ public final class cu {
         this.q = false;
         this.r = false;
         this.t.g = false;
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>)this.a.f()) {
             if (buVar != null) {
                 buVar.A.F();
             }
@@ -1092,7 +1092,7 @@ public final class cu {
                 daVar.d = this.i;
             }
         }
-        for (bu buVar3 : new ArrayList(this.t.b.values())) {
+        for (bu buVar3 : (Set<bu>)new ArrayList(this.t.b.values())) {
             if (!this.a.l(buVar3.k)) {
                 if (Q(2)) {
                     String str3 = "Discarding retained Fragment " + buVar3 + " that was not found in the set of active Fragments " + cvVar.b;
@@ -1267,7 +1267,7 @@ public final class cu {
         if (this.i <= 0) {
             return false;
         }
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>)this.a.f()) {
             if (buVar != null && !buVar.F && buVar.A.M(menuItem)) {
                 return true;
             }
@@ -1282,7 +1282,7 @@ public final class cu {
         }
         ArrayList arrayList = null;
         boolean z = false;
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>)this.a.f()) {
             if (buVar != null && V(buVar) && !buVar.F && buVar.A.N(menu, menuInflater)) {
                 if (arrayList == null) {
                     arrayList = new ArrayList();
@@ -1308,7 +1308,7 @@ public final class cu {
         if (this.i <= 0) {
             return false;
         }
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>)this.a.f()) {
             if (buVar != null && !buVar.F && buVar.A.O(menuItem)) {
                 return true;
             }
@@ -1322,7 +1322,7 @@ public final class cu {
         if (this.i <= 0) {
             return false;
         }
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>)this.a.f()) {
             if (buVar != null && V(buVar) && !buVar.F && buVar.A.P(menu)) {
                 z = true;
             }
@@ -1505,7 +1505,7 @@ public final class cu {
         az[] azVarArr;
         ArrayList arrayList;
         int size;
-        for (dq dqVar : ab()) {
+        for (dq dqVar : (Set<dq>)ab()) {
         }
         af();
         Y(true);
@@ -1642,7 +1642,7 @@ public final class cu {
                 return buVar;
             }
         }
-        for (da daVar : dbVar.b.values()) {
+        for (da daVar : (Set<da>)dbVar.b.values()) {
             if (daVar != null) {
                 bu buVar2 = daVar.c;
                 if (buVar2.C == i) {
@@ -1661,7 +1661,7 @@ public final class cu {
                 return buVar;
             }
         }
-        for (da daVar : dbVar.b.values()) {
+        for (da daVar : (Set<da>)dbVar.b.values()) {
             if (daVar != null) {
                 bu buVar2 = daVar.c;
                 if (str.equals(buVar2.E)) {
@@ -1734,7 +1734,7 @@ public final class cu {
             if (buVar != null) {
                 i(new cn());
             } else if (cfVar instanceof cx) {
-                i(cfVar);
+                i((cx) cfVar);
             }
             if (this.l != null) {
                 L();
