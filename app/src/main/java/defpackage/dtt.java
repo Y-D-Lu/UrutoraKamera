@@ -51,7 +51,7 @@ public final class dtt implements buc, fii, fig, fie, fij {
 
     @Override // defpackage.buc
     public final void f() {
-        Collection.EL.forEach(this.a, cez.g);
+        this.a.forEach(cez.g);
         this.c.setVisibility(4);
     }
 
@@ -97,7 +97,7 @@ public final class dtt implements buc, fii, fig, fie, fij {
 
     @Override // defpackage.buc
     public final void h() {
-        Collection.EL.forEach(this.a, cez.h);
+        this.a.forEach(cez.h);
         this.b.b();
     }
 

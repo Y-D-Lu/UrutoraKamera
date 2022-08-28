@@ -73,7 +73,7 @@ public final class cye implements cxz {
             @Override // java.lang.Runnable
             public final void run() {
                 final cye cyeVar = cye.this;
-                Collection.EL.forEach(Arrays.asList(cxyVarArr), new Consumer() { // from class: cyd
+                Arrays.asList(cxyVarArr).forEach(new Consumer() { // from class: cyd
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         cye.this.b.t().b(new cxs((cxy) obj));

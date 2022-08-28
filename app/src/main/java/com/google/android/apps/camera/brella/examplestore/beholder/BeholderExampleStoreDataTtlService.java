@@ -36,16 +36,17 @@ public class BeholderExampleStoreDataTtlService extends cby {
 
     @Override // defpackage.cby
     public final pht c() {
-        return pgb.i(pho.q(pgb.i(pho.q(a().g()), new pgk(this) { // from class: cbo
+        return pgb.i(pho.q(pgb.i(pho.q(a().g()), new pgk() { // from class: cbo
             public final /* synthetic */ BeholderExampleStoreDataTtlService a;
 
             {
-                this.a = this;
+                a = BeholderExampleStoreDataTtlService.this;
             }
 
             @Override // defpackage.pgk
             public final pht a(Object obj) {
-                switch (r2) {
+                // luyuedong666 TODO: fix out
+                switch (0) {
                     case 0:
                         Void r4 = (Void) obj;
                         return this.a.a().f(TimeUnit.DAYS.toMillis(7L));
@@ -53,16 +54,17 @@ public class BeholderExampleStoreDataTtlService extends cby {
                         return this.a.c.b(((ope) obj).v());
                 }
             }
-        }, this.d)), new pgk(this) { // from class: cbo
+        }, this.d)), new pgk() { // from class: cbo
             public final /* synthetic */ BeholderExampleStoreDataTtlService a;
 
             {
-                this.a = this;
+                a = BeholderExampleStoreDataTtlService.this;
             }
 
             @Override // defpackage.pgk
             public final pht a(Object obj) {
-                switch (r2) {
+                // luyuedong666 TODO: fix out
+                switch (0) {
                     case 0:
                         Void r4 = (Void) obj;
                         return this.a.a().f(TimeUnit.DAYS.toMillis(7L));
@@ -79,11 +81,11 @@ public class BeholderExampleStoreDataTtlService extends cby {
         return pgb.h(pho.q(a().k()), new oiu() { // from class: cbn
             @Override // defpackage.oiu
             public final Object a(Object obj) {
-                hub hubVar = hub.this;
+                hub hubVar = b;
                 Map map = (Map) obj;
                 int i = 0;
-                for (Integer num : map.values()) {
-                    i += num.intValue();
+                for (Object num : map.values()) {
+                    i += ((Integer)num).intValue();
                 }
                 Integer num2 = (Integer) map.get(0);
                 long j = -1;

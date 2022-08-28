@@ -70,8 +70,8 @@ public final class loy {
             i = lqdVar.e;
         }
         synchronized (this) {
-            for (low lowVar2 : this.b) {
-                obr.aO(mip.aZ(lqdVar, lowVar2.h, this.e), "Cannot attach %s because it conflicts with %s (%s)", lqdVar, lowVar2, lowVar2.h);
+            for (Object lowVar2 : this.b) {
+                obr.aO(mip.aZ(lqdVar, ((low)lowVar2).h, this.e), "Cannot attach %s because it conflicts with %s (%s)", lqdVar, lowVar2, ((low)lowVar2).h);
             }
             lowVar = new low(this, this.d, lqdVar, this.f, i);
             this.a.c(lowVar);

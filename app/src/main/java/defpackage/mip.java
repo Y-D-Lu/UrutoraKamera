@@ -78,6 +78,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.nio.ByteBuffer;
@@ -150,7 +151,7 @@ public class mip {
         return i - 2;
     }
 
-    public static int B(mhl mhlVar) {
+    public static int B(mhl mhlVar) throws mhn {
         try {
             return (int) w(mhlVar).getDeclaredField("MIN_VERSION").getLong(null);
         } catch (IllegalAccessException | NoSuchFieldException e2) {
@@ -158,7 +159,7 @@ public class mip {
         }
     }
 
-    public static int C(mhl mhlVar) {
+    public static int C(mhl mhlVar) throws mhn {
         try {
             return (int) w(mhlVar).getDeclaredField("CURRENT_VERSION").getLong(null);
         } catch (IllegalAccessException | NoSuchFieldException e2) {
@@ -237,7 +238,7 @@ public class mip {
         kvkVar.g(pgr.a, new kvc() { // from class: mfc
             @Override // defpackage.kvc
             public final void a(kvk kvkVar2) {
-                pih pihVar = pih.this;
+                pih pihVar = f2;
                 if (((kvp) kvkVar2).c) {
                     pihVar.cancel(false);
                 } else if (kvkVar2.e()) {
@@ -347,15 +348,15 @@ public class mip {
         return str.startsWith("video/");
     }
 
-    public static long M(InputStream inputStream, mak makVar) {
+    public static long M(InputStream inputStream, mak makVar) throws IOException {
         return O(inputStream, null, makVar);
     }
 
-    public static long N(byte[] bArr, mak makVar) {
+    public static long N(byte[] bArr, mak makVar) throws IOException {
         return P(bArr, null, makVar);
     }
 
-    public static long O(InputStream inputStream, ExifInterface exifInterface, mak makVar) {
+    public static long O(InputStream inputStream, ExifInterface exifInterface, mak makVar) throws IOException {
         long copy;
         FileOutputStream e2 = makVar.e();
         try {
@@ -382,15 +383,15 @@ public class mip {
         }
     }
 
-    public static long P(byte[] bArr, ExifInterface exifInterface, mak makVar) {
+    public static long P(byte[] bArr, ExifInterface exifInterface, mak makVar) throws IOException {
         return O(new ByteArrayInputStream(bArr), exifInterface, makVar);
     }
 
-    public static long Q(InputStream inputStream, ExifInterface exifInterface, mak makVar) {
+    public static long Q(InputStream inputStream, ExifInterface exifInterface, mak makVar) throws IOException {
         return exifInterface == null ? M(inputStream, makVar) : R(ByteStreams.toByteArray(inputStream), exifInterface, makVar);
     }
 
-    public static long R(byte[] bArr, ExifInterface exifInterface, mak makVar) {
+    public static long R(byte[] bArr, ExifInterface exifInterface, mak makVar) throws IOException {
         if (exifInterface == null) {
             return N(bArr, makVar);
         }
@@ -563,7 +564,7 @@ public class mip {
 
     /* JADX WARN: Multi-variable type inference failed */
     public static mnb Z(Iterable iterable) {
-        return iterable.isEmpty() ? Y(Collections.emptyList()) : new mnm(iterable).a;
+        return iterable == null ? Y(Collections.emptyList()) : new mnm(iterable).a;
     }
 
     public static List aA(ByteBuffer byteBuffer) {
@@ -591,7 +592,7 @@ public class mip {
         return ((Integer) eY(new mjd(astVar, 1), new mjd(astVar, 0), mje.a)).intValue();
     }
 
-    public static int aC(ast astVar) {
+    public static int aC(ast astVar) throws ass {
         int a2;
         boolean z = true;
         if (aB(astVar) != 1) {
@@ -625,14 +626,14 @@ public class mip {
                 jdyVar.e(a3.a());
             }
             int i2 = 0;
-            for (mlq mlqVar : jdyVar.d()) {
+            for (Object mlqVar : jdyVar.d()) {
                 if (z) {
-                    aE(mlqVar);
-                    i2 += mlqVar.d;
+                    aE((mlq) mlqVar);
+                    i2 += ((mlq)mlqVar).d;
                     z = false;
                 } else {
-                    aF(mlqVar);
-                    i2 += mlqVar.c + mlqVar.d;
+                    aF((mlq) mlqVar);
+                    i2 += ((mlq)mlqVar).c + ((mlq)mlqVar).d;
                 }
             }
             return i2;
@@ -640,7 +641,7 @@ public class mip {
         return ((Integer) eY(new mjd(astVar, 2), mje.b)).intValue();
     }
 
-    public static Object aD(String str) {
+    public static Object aD(String str) throws ass {
         throw new ass(str.length() != 0 ? "Property value missing for ".concat(str) : new String("Property value missing for "), 5);
     }
 
@@ -685,7 +686,7 @@ public class mip {
     }
 
     public static int aH(int i, Context context) {
-        return new nyl(context).a(ohh.X(context, org.codeaurora.snapcam.R.attr.colorSurface, 0), context.getResources().getDimension(i));
+        return new nyl(context).a(ohh.X(context, /*org.codeaurora.snapcam.R.attr.colorSurface*/0x7f040152, 0), context.getResources().getDimension(i));
     }
 
     public static void aI(String str, lyd[] lydVarArr, lyd[] lydVarArr2) {
@@ -793,8 +794,8 @@ public class mip {
         handler.post(new Runnable() { // from class: ltg
             @Override // java.lang.Runnable
             public final void run() {
-                for (mip mipVar : ltm.this.d) {
-                    mipVar.fw(null);
+                for (Object mipVar : ltmVar.d) {
+                    ((mip)mipVar).fw(null);
                 }
             }
         });
@@ -804,9 +805,9 @@ public class mip {
         handler.post(new Runnable() { // from class: lth
             @Override // java.lang.Runnable
             public final void run() {
-                for (ltm ltmVar : collection) {
-                    for (mip mipVar : ltmVar.d) {
-                        mipVar.fw(null);
+                for (Object ltmVar : collection) {
+                    for (Object mipVar : ((ltm)ltmVar).d) {
+                        ((mip)mipVar).fw(null);
                     }
                 }
             }
@@ -818,13 +819,13 @@ public class mip {
             return true;
         }
         boolean z = true;
-        for (lnq lnqVar : lqdVar2.d) {
-            for (lnq lnqVar2 : lqdVar.d) {
-                if (lnqVar.a.equals(lnqVar2.a) && !lnqVar.b.equals(lnqVar2.b)) {
+        for (Object lnqVar : lqdVar2.d) {
+            for (Object lnqVar2 : lqdVar.d) {
+                if (((lnq)lnqVar).a.equals(((lnq)lnqVar2).a) && !((lnq)lnqVar).b.equals(((lnq)lnqVar2).b)) {
                     if (lisVar == null) {
                         return false;
                     }
-                    lisVar.d(bp("%s on %s (%s) conflicts with %s (%s)", lnqVar2.a(), lqdVar, lnqVar2.b, lqdVar2, lnqVar.b));
+                    lisVar.d(bp("%s on %s (%s) conflicts with %s (%s)", ((lnq)lnqVar2).a(), lqdVar, ((lnq)lnqVar2).b, lqdVar2, ((lnq)lnqVar).b));
                     z = false;
                 }
             }
@@ -855,7 +856,7 @@ public class mip {
     public static Object ac(mnb mnbVar) {
         try {
             return ad(mnbVar);
-        } catch (mnc e2) {
+        } catch (Exception e2) {
             throw new piq(e2);
         }
     }
@@ -867,7 +868,7 @@ public class mip {
             try {
                 e2 = mnbVar.e();
                 break;
-            } catch (InterruptedException e3) {
+            } catch (Exception e3) {
                 z = true;
             } catch (Throwable th) {
                 if (z) {
@@ -907,7 +908,7 @@ public class mip {
         return new mlz();
     }
 
-    public static mla ak(mlb mlbVar) {
+    public static mla ak(mlb mlbVar) throws mky, IOException {
         if (mlbVar.a() >= 8) {
             mlbVar.a.getChannel().position(mlbVar.b + mlbVar.d);
             long readInt = new DataInputStream(mlbVar.a).readInt();
@@ -926,7 +927,7 @@ public class mip {
         throw new mky(String.format(Locale.US, "Box too small: remaining=%s", Long.valueOf(mlbVar.a())));
     }
 
-    public static mlb al(mlb mlbVar) {
+    public static mlb al(mlb mlbVar) throws mky, IOException {
         if (mlbVar.a() != 0) {
             long j = ak(mlbVar).a;
             if (j > mlbVar.a()) {
@@ -943,7 +944,7 @@ public class mip {
         return null;
     }
 
-    public static byte[] am(mlb mlbVar) {
+    public static byte[] am(mlb mlbVar) throws IOException, mky {
         boolean z = false;
         if (mlbVar.a() >= 8) {
             if (mlbVar.a() >= 8) {
@@ -993,7 +994,7 @@ public class mip {
         return mediaFormat.getString("mime").contains("video/");
     }
 
-    public static mkd ar(FileOutputStream fileOutputStream, mkg mkgVar) {
+    public static mkd ar(FileOutputStream fileOutputStream, mkg mkgVar) throws IOException {
         mkq mkqVar = new mkq();
         mkt mktVar = new mkt(mkqVar, mkgVar);
         mkp mkpVar = new mkp();
@@ -1229,7 +1230,7 @@ public class mip {
         return (CamcorderProfile.getProfilehasHfr(i) ? CamcorderProfile.getProfileHfr(i) : les.a(android.media.CamcorderProfile.get(Integer.parseInt(lvsVar.a), i))).a();
     }
 
-    public static les bE(lvs lvsVar, lep lepVar) {
+    public static les bE(lvs lvsVar, lep lepVar) throws PackageManager.NameNotFoundException {
         android.media.CamcorderProfile camcorderProfile;
         try {
             camcorderProfile = android.media.CamcorderProfile.get(Integer.parseInt(lvsVar.a), lepVar.k);
@@ -1256,7 +1257,7 @@ public class mip {
         return (!ojcVar.g() || ((Integer) ojcVar.c()).intValue() <= 0) ? i : ((Integer) ojcVar.c()).intValue();
     }
 
-    public static MediaCodec bG(lek lekVar) {
+    public static MediaCodec bG(lek lekVar) throws lej {
         String b2 = lekVar.b();
         String valueOf = String.valueOf(b2);
         if (valueOf.length() != 0) {
@@ -1940,7 +1941,7 @@ public class mip {
         return new Status(i, str);
     }
 
-    public static Object cd(kvk kvkVar, long j, TimeUnit timeUnit) {
+    public static Object cd(kvk kvkVar, long j, TimeUnit timeUnit) throws TimeoutException, InterruptedException, ExecutionException {
         if (!cn()) {
             du(timeUnit, "TimeUnit must not be null");
             if (kvkVar.d()) {
@@ -2895,15 +2896,18 @@ public class mip {
     }
 
     public static int dN(View view) {
-        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnPrimaryContainer);
+//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnPrimaryContainer);
+        return obr.e(view, 0x7f040120);
     }
 
     public static int dO(View view) {
-        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnSurfaceVariant);
+//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnSurfaceVariant);
+        return obr.e(view, 0x7f040132);
     }
 
     public static int dP(View view) {
-        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnTertiaryContainer);
+//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnTertiaryContainer);
+        return obr.e(view, 0x7f040136);
     }
 
     public static int dQ(View view) {
@@ -2911,19 +2915,23 @@ public class mip {
     }
 
     public static int dR(View view) {
-        return obr.e(view, org.codeaurora.snapcam.R.attr.colorPrimaryContainer);
+//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorPrimaryContainer);
+        return obr.e(view, 0x7f04013c);
     }
 
     public static int dS(View view) {
-        return obr.e(view, org.codeaurora.snapcam.R.attr.colorSecondary);
+//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorSecondary);
+        return obr.e(view, 0x7f04014d);
     }
 
     public static int dT(View view) {
-        return aH(org.codeaurora.snapcam.R.dimen.gm_sys_elevation_level1, view.getContext());
+//        return aH(org.codeaurora.snapcam.R.dimen.gm_sys_elevation_level1, view.getContext());
+        return aH(0x7f0701c5, view.getContext());
     }
 
     public static int dU(View view) {
-        return obr.e(view, org.codeaurora.snapcam.R.attr.colorTertiaryContainer);
+//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorTertiaryContainer);
+        return obr.e(view, 0x7f040157);
     }
 
     public static int dV(Context context, int i) {
@@ -3048,7 +3056,7 @@ public class mip {
             return null;
         }
         int readInt = parcel.readInt();
-        byte[][] bArr = new byte[readInt];
+        byte[][] bArr = new byte[readInt][];
         for (int i2 = 0; i2 < readInt; i2++) {
             bArr[i2] = parcel.createByteArray();
         }
@@ -3185,7 +3193,7 @@ public class mip {
         return new lie() { // from class: jla
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                jlb.this.F(false);
+                jlbVar.F(false);
             }
         };
     }
@@ -3370,10 +3378,10 @@ public class mip {
         executor.execute(new Runnable() { // from class: ihp
             @Override // java.lang.Runnable
             public final void run() {
-                qkg qkgVar2 = qkg.this;
+                qkg qkgVar2 = qkgVar;
                 Executor executor2 = executor;
-                for (iho ihoVar : ((pyw) qkgVar2).mo37get()) {
-                    executor2.execute(ihoVar);
+                for (Object ihoVar : ((pyw) qkgVar2).mo37get()) {
+                    executor2.execute((iho) ihoVar);
                 }
             }
         });
@@ -3391,7 +3399,7 @@ public class mip {
         if (split.length == 0) {
             return list;
         }
-        HashSet hashSet = new HashSet(obr.aj(split));
+        HashSet hashSet = new HashSet(obr.aj((Object[]) split));
         ArrayList arrayList = new ArrayList();
         Iterator it = list.iterator();
         while (it.hasNext()) {
@@ -3537,8 +3545,8 @@ public class mip {
         }
         return cls.cast(Proxy.newProxyInstance(cls.getClassLoader(), new Class[]{cls}, new InvocationHandler() { // from class: jtg
             @Override // java.lang.reflect.InvocationHandler
-            public final Object invoke(Object obj, Method method, Object[] objArr) {
-                oti it = ope.this.iterator();
+            public final Object invoke(Object obj, Method method, Object[] objArr) throws InvocationTargetException, IllegalAccessException {
+                oti it = opeVar.iterator();
                 while (it.hasNext()) {
                     method.invoke(it.next(), objArr);
                 }
@@ -3687,7 +3695,7 @@ public class mip {
         throw new IllegalArgumentException(obr.aw("Thread name %s is too long, must be less than %s", str, 13));
     }
 
-    private static Object fb(kvk kvkVar) {
+    private static Object fb(kvk kvkVar) throws ExecutionException {
         if (!kvkVar.e()) {
             if (!((kvp) kvkVar).c) {
                 throw new ExecutionException(kvkVar.b());
@@ -3862,7 +3870,7 @@ public class mip {
     private static Class w(mhl mhlVar) {
         try {
             return mhlVar.b("com.google.android.libraries.lens.lenslite.dynamicloading.PackageVersion");
-        } catch (mhn e2) {
+        } catch (Exception e2) {
             return mhlVar.b("com.google.android.libraries.lens.lenslite.dynamicloading.ApiVersion");
         }
     }

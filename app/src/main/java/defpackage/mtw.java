@@ -13,8 +13,8 @@ public final class mtw {
 
     public final mne a() {
         ArrayList arrayList = new ArrayList();
-        for (mls mlsVar : this.a) {
-            arrayList.add(mlsVar.a());
+        for (Object mlsVar : this.a) {
+            arrayList.add(((mls)mlsVar).a());
         }
         return mne.i(mip.Z(arrayList).a(pgr.a, mip.ai()));
     }

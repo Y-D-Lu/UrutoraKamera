@@ -54,8 +54,8 @@ public final class lyk implements lyj, lyb, lyg {
                 System.nanoTime();
                 lyp lypVar = ((lys) lylVar).c;
                 lyr lyrVar = ((lys) lylVar).b;
-                for (lyk lykVar : lypVar.a.values()) {
-                    lykVar.c.b(lyrVar, lykVar);
+                for (Object lykVar : lypVar.a.values()) {
+                    ((lyk)lykVar).c.b(lyrVar, ((lyk)lykVar));
                 }
             }
             return;

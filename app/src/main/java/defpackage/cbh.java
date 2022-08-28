@@ -189,7 +189,7 @@ public final class cbh implements pys {
                     public final void a() {
                         qkg qkgVar5 = qkg.this;
                         qkg qkgVar6 = qkgVar3;
-                        Stream stream = Collection.EL.stream(((pyw) qkgVar5).mo37get());
+                        Stream stream = (((pyw) qkgVar5).mo37get().stream());
                         final cvo cvoVar = (cvo) qkgVar6.mo37get();
                         cvoVar.getClass();
                         stream.forEach(new Consumer() { // from class: cwq

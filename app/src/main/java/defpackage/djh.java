@@ -91,22 +91,23 @@ public final class djh {
         this.c = preferenceScreen;
         Preference preference = new Preference(this.a);
         preference.setTitle("Reset to default values");
-        preference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener(this) { // from class: dje
+        preference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() { // from class: dje
             public final /* synthetic */ djh a;
 
             {
-                this.a = this;
+                a = djh.this;
             }
 
             @Override // android.preference.Preference.OnPreferenceClickListener
             public final boolean onPreferenceClick(Preference preference2) {
-                switch (r2) {
+                // luyuedong666 TODO: fix out
+                switch (0) {
                     case 0:
                         djh djhVar = this.a;
                         int preferenceCount = djhVar.c.getPreferenceCount();
                         SharedPreferences.Editor edit = djhVar.b.edit();
-                        for (djg djgVar : djhVar.d) {
-                            edit.remove(djgVar.b.getKey());
+                        for (Object djgVar : djhVar.d) {
+                            edit.remove(((djg)djgVar).b.getKey());
                         }
                         for (int i = 0; i < preferenceCount; i++) {
                             edit.remove(djhVar.c.getPreference(i).getKey());
@@ -124,22 +125,23 @@ public final class djh {
         this.c.addPreference(preference);
         Preference preference2 = new Preference(this.a);
         preference2.setTitle("Primes Log");
-        preference2.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener(this) { // from class: dje
+        preference2.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() { // from class: dje
             public final /* synthetic */ djh a;
 
             {
-                this.a = this;
+                a = djh.this;
             }
 
             @Override // android.preference.Preference.OnPreferenceClickListener
             public final boolean onPreferenceClick(Preference preference22) {
-                switch (r2) {
+                // luyuedong666 TODO: fix out
+                switch (0) {
                     case 0:
                         djh djhVar = this.a;
                         int preferenceCount = djhVar.c.getPreferenceCount();
                         SharedPreferences.Editor edit = djhVar.b.edit();
-                        for (djg djgVar : djhVar.d) {
-                            edit.remove(djgVar.b.getKey());
+                        for (Object djgVar : djhVar.d) {
+                            edit.remove(((djg)djgVar).b.getKey());
                         }
                         for (int i = 0; i < preferenceCount; i++) {
                             edit.remove(djhVar.c.getPreference(i).getKey());
@@ -196,13 +198,13 @@ public final class djh {
         preferenceScreen.addPreference(preferenceCategory);
         Collections.sort(this.d, cdg.c);
         String[] split = this.b.getString("dev_setting_filter_key", "").split("(,|\\s)+", -1);
-        for (djg djgVar : this.d) {
+        for (Object djgVar : this.d) {
             int length = split.length;
             int i = 0;
             while (true) {
                 if (i < length) {
-                    if (djgVar.a.contains(split[i])) {
-                        preferenceCategory.addPreference(djgVar.b);
+                    if (((djg)djgVar).a.contains(split[i])) {
+                        preferenceCategory.addPreference(((djg)djgVar).b);
                         break;
                     }
                     i++;
@@ -229,8 +231,8 @@ public final class djh {
 
     public final void c() {
         int i = 0;
-        for (Map.Entry entry : this.sh.sh().entrySet()) {
-            e(d(entry.getValue()), d(entry.getKey()));
+        for (Object entry : this.sh.sh().entrySet()) {
+            e(d(((Map.Entry)entry).getValue()), d(((Map.Entry)entry).getKey()));
             i++;
         }
     }

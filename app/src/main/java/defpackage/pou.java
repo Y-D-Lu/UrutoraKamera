@@ -257,8 +257,8 @@ public final class pou {
             Map.Entry f = this.b.f(i);
             pouVar.l((ppc) f.getKey(), f.getValue());
         }
-        for (Map.Entry entry : this.b.c()) {
-            pouVar.l((ppc) entry.getKey(), entry.getValue());
+        for (Object entry : this.b.c()) {
+            pouVar.l((ppc) ((Map.Entry)entry).getKey(), ((Map.Entry)entry).getValue());
         }
         pouVar.d = this.d;
         return pouVar;
@@ -277,8 +277,8 @@ public final class pou {
             for (int i = 0; i < prjVar.a(); i++) {
                 ppc ppcVar = (ppc) prjVar.f(i).getKey();
             }
-            for (Map.Entry entry : prjVar.c()) {
-                ppc ppcVar2 = (ppc) entry.getKey();
+            for (Object entry : prjVar.c()) {
+                ppc ppcVar2 = (ppc) ((Map.Entry)entry).getKey();
             }
         }
         if (!prjVar.c) {
@@ -338,8 +338,8 @@ public final class pou {
                 return false;
             }
         }
-        for (Map.Entry entry : this.b.c()) {
-            if (!n(entry)) {
+        for (Object entry : this.b.c()) {
+            if (!n(((Map.Entry)entry))) {
                 return false;
             }
         }

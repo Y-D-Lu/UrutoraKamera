@@ -369,7 +369,7 @@ public final class jgk implements jgq, jgr, jfy, fik, fie {
             if (lcoVar != null && ((Boolean) lcoVar.fA()).booleanValue()) {
                 return;
             }
-            jgp jgpVar = (jgp) Collection.EL.stream(this.e.b).filter(bql.r).findFirst().orElse(null);
+            jgp jgpVar = (jgp) (this.e.b.stream()).filter(bql.r).findFirst().orElse(null);
             ojc i = jgpVar == null ? oih.a : ojc.i(jgpVar.b);
             if (!i.g()) {
                 return;

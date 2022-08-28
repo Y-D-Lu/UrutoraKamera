@@ -51,7 +51,7 @@ public class oon {
     /* JADX WARN: Multi-variable type inference failed */
     public final void f(Iterable iterable) {
         if (iterable instanceof Collection) {
-            a(this.b + iterable.size());
+            a(this.b + ((Collection<?>) iterable).size());
         }
         Iterator it = iterable.iterator();
         while (it.hasNext()) {

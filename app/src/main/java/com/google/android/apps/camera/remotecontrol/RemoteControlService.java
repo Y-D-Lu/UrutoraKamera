@@ -86,8 +86,8 @@ public class RemoteControlService extends Service {
             } else {
                 kcwVar.A(2, kcwVar.a());
             }
-        } catch (RemoteException e) {
-            d.v(a.b(), "Error when calling into Photos service", (char) 2545);
+        } catch (Exception e) {
+            defpackage.d.v(a.b(), "Error when calling into Photos service", (char) 2545);
             e.printStackTrace();
         }
     }
@@ -96,20 +96,20 @@ public class RemoteControlService extends Service {
         int callingUid = Binder.getCallingUid();
         boolean z = false;
         if (!a().k(ddl.ba)) {
-            d.v(a.b(), "Feature not enabled.", (char) 2549);
+            defpackage.d.v(a.b(), "Feature not enabled.", (char) 2549);
             return false;
         } else if (this.j == callingUid) {
             return true;
         } else {
             String[] packagesForUid = this.i.getPackagesForUid(callingUid);
             if (packagesForUid == null || packagesForUid.length == 0) {
-                d.v(a.b(), "Failed to get calling package name.", (char) 2547);
+                defpackage.d.v(a.b(), "Failed to get calling package name.", (char) 2547);
                 return false;
             }
             if (b() != dei.ENG) {
                 int i = hlz.a;
                 if (!hlz.a(packagesForUid[0], this.i)) {
-                    d.v(a.b(), "Failed to verify calling package.", (char) 2548);
+                    defpackage.d.v(a.b(), "Failed to verify calling package.", (char) 2548);
                     return false;
                 }
             }

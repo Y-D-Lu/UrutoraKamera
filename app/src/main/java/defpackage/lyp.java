@@ -24,7 +24,7 @@ public final class lyp implements lyl {
             mip.aI(str, lykVar.b, lydVarArr);
             return lykVar;
         }
-        return c(str, lydVarArr, new lyk(str, lydVarArr, this, lya.c(lydVarArr, lyh.b)));
+        return (lyb) c(str, lydVarArr, new lyk(str, lydVarArr, this, lya.c(lydVarArr, lyh.b)));
     }
 
     /* JADX WARN: Type inference failed for: r0v4, types: [lyg, lyj] */
@@ -34,6 +34,6 @@ public final class lyp implements lyl {
             mip.aI(str, lykVar.b, lydVarArr);
             return lykVar;
         }
-        return c(str, lydVarArr, new lyk(str, lydVarArr, this, lya.c(lydVarArr, lyh.a)));
+        return (lyg) c(str, lydVarArr, new lyk(str, lydVarArr, this, lya.c(lydVarArr, lyh.a)));
     }
 }

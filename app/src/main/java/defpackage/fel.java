@@ -22,7 +22,7 @@ public final class fel {
         this.d = hpuVar.c("panorama_sessions");
         File file = new File(Environment.getExternalStorageDirectory(), "panoramas");
         if (!file.mkdirs() && !file.exists()) {
-            d.v(a.b(), "Panorama directory not created.", (char) 1666);
+            defpackage.d.v(a.b(), "Panorama directory not created.", (char) 1666);
             file = null;
         }
         this.b = file;
@@ -44,7 +44,7 @@ public final class fel {
         if (file.mkdirs() || file.exists()) {
             return file;
         }
-        d.v(a.b(), "Thumbnails directory not created.", (char) 1667);
+        defpackage.d.v(a.b(), "Thumbnails directory not created.", (char) 1667);
         return null;
     }
 }

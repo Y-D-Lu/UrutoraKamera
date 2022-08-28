@@ -29,9 +29,9 @@ public final /* synthetic */ class dhp implements Predicate {
     public final /* synthetic */ Predicate negate() {
         switch (this.b) {
             case 0:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             default:
-                return Predicate.CC.$default$negate(this);
+                return negate();
         }
     }
 

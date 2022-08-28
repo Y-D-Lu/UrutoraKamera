@@ -311,7 +311,7 @@ public final class ife implements iet {
                     iesVar.setAlpha(DisplayHelper.DENSITY);
                 }
                 iesVar.setLayoutParams(layoutParams);
-                Collection.EL.forEach(this.j.b, gui.b);
+                this.j.b.forEach(gui.b);
                 ifj ifjVar = this.r;
                 ifjVar.a.setAlpha(1.0f);
                 ifjVar.a.setVisibility(0);
@@ -336,7 +336,7 @@ public final class ife implements iet {
             ofInt.addListener(mip.ev(new ier(iesVar2, 0)));
             ofInt.addUpdateListener(new iep(iesVar2, 1));
             e.g(ofInt);
-            Collection.EL.stream(this.j.b).map(icd.q).forEachOrdered(new ifb(e));
+            (this.j.b.stream()).map(icd.q).forEachOrdered(new ifb(e));
             if (i == 3) {
                 ifj ifjVar2 = this.r;
                 ifjVar2.a.setVisibility(0);
@@ -409,12 +409,12 @@ public final class ife implements iet {
             ifjVar.a(ifjVar.a);
             mip.et(ifjVar.a, jrzVar);
         }
-        Collection.EL.stream(this.j.b).forEachOrdered(new iem(jrzVar, 0));
+        (this.j.b.stream()).forEachOrdered(new iem(jrzVar, 0));
     }
 
     @Override // defpackage.iet
     public final void g() {
-        Collection.EL.forEach(this.j.b, gui.c);
+        this.j.b.forEach(gui.c);
     }
 
     @Override // defpackage.iet
@@ -428,7 +428,7 @@ public final class ife implements iet {
                 arrayList.add(ifmVar.a.activityInfo.packageName);
             }
         }
-        Collection.EL.forEach(this.j.b, new Consumer() { // from class: iev
+       this.j.b.forEach(new Consumer() { // from class: iev
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 iek iekVar = (iek) obj;
@@ -485,7 +485,7 @@ public final class ife implements iet {
             ofInt.addListener(mip.ev(new ifa(this, 0)));
             ooh e = oom.e();
             e.g(ofInt);
-            Collection.EL.stream(this.j.b).map(icd.p).forEachOrdered(new ifb(e));
+            (this.j.b.stream()).map(icd.p).forEachOrdered(new ifb(e));
             final ifj ifjVar = this.r;
             ObjectAnimator ofPropertyValuesHolder = ObjectAnimator.ofPropertyValuesHolder(ifjVar.a, PropertyValuesHolder.ofFloat(View.ALPHA, ifjVar.a.getAlpha(), DisplayHelper.DENSITY));
             ofPropertyValuesHolder.addListener(mip.ev(new Consumer() { // from class: ifi

@@ -13,9 +13,9 @@ public final class muz {
         if (!this.b) {
             this.b = true;
             synchronized (this.a) {
-                for (mva mvaVar : this.a) {
+                for (Object mvaVar : this.a) {
                     try {
-                        mvaVar.a();
+                        ((mva)mvaVar).a();
                     } catch (RuntimeException e) {
                     }
                 }

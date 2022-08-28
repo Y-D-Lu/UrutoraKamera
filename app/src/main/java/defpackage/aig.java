@@ -113,15 +113,15 @@ public final class aig {
                     aiiVar.e = ahyVar.h;
                     Map c = aiiVar.c();
                     BitSet bitSet2 = new BitSet();
-                    for (Map.Entry entry : c.entrySet()) {
-                        Class cls = (Class) entry.getKey();
-                        for (Class cls2 : (List) entry.getValue()) {
+                    for (Object entry : c.entrySet()) {
+                        Class cls = (Class) ((Map.Entry)entry).getKey();
+                        for (Object cls2 : (List) ((Map.Entry)entry).getValue()) {
                             int size2 = ahyVar.f.size() - 1;
                             while (true) {
                                 if (size2 < 0) {
                                     size2 = -1;
                                     break;
-                                } else if (cls2.isAssignableFrom(ahyVar.f.get(size2).getClass())) {
+                                } else if (((Class)cls2).isAssignableFrom(ahyVar.f.get(size2).getClass())) {
                                     bitSet2.set(size2);
                                     break;
                                 } else {

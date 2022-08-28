@@ -5,8 +5,6 @@ import org.codeaurora.snapcam.R;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
-
-import java.util.Collection;
 import java.util.stream.Collectors;
 
 /* renamed from: gsp  reason: default package */
@@ -92,7 +90,7 @@ public final class gsp {
         this.p = gtk.a(gtm.VIDEO_ASPECT_RATIO, R.string.aspect_ratio_desc, R.string.aspect_ratio_desc, oohVar4.f());
         this.q = gtk.a(gtm.PHOTO_SPHERE, R.string.photosphere_type, R.string.photosphere_type_desc, oom.q(new gtl(gtv.PHOTO_SPHERE, R.drawable.quantum_ic_panorama_photosphere_white_24, R.string.panorama, R.string.panorama_desc), new gtl(gtv.HORIZONTAL_PHOTO_SPHERE, R.drawable.quantum_gm_ic_panorama_horizontal_white_24, R.string.panorama_horizontal, R.string.panorama_horizontal_desc), new gtl(gtv.VERTICAL_PHOTO_SPHERE, R.drawable.quantum_gm_ic_panorama_vertical_white_24, R.string.panorama_vertical, R.string.panorama_vertical_desc), new gtl(gtv.WIDE_ANGLE_PHOTO_SPHERE, R.drawable.quantum_gm_ic_panorama_wide_angle_white_24, R.string.panorama_wide, R.string.panorama_wide_desc), new gtl(gtv.FISH_EYE_PHOTO_SPHERE, R.drawable.quantum_gm_ic_panorama_fish_eye_white_24, R.string.panorama_fish_eye, R.string.panorama_fish_eye_desc)));
         this.r = gtk.a(gtm.ASTRO, R.string.astro_desc, R.string.astro_option_desc, oom.n(new gtl(gtv.ASTRO_OFF, R.drawable.quantum_gm_ic_astrophotography_off_white_24, R.string.astro_off_desc, R.string.astro_off_acc_desc), new gtl(gtv.ASTRO_AUTO, R.drawable.quantum_gm_ic_astrophotography_auto_white_24, R.string.astro_auto_desc, R.string.astro_auto_acc_desc)));
-        this.t = oor.o((Map) Collection.EL.stream(set).collect(Collectors.toMap(cgw.p, new cgw(15))));
+        this.t = oor.o((Map) (set.stream()).collect(Collectors.toMap(cgw.p, new cgw(15))));
         this.s = gtk.a(gtm.VIDEO_RESOLUTION, R.string.video_res, R.string.video_res_desc, oom.n(new gtl(gtv.RES_1080P, R.drawable.ic_fhd_24px, R.string.video_res_fhd, R.string.video_res_fhd_desc), new gtl(gtv.RES_2160P, R.drawable.ic_4k_24px, R.string.video_res_4k, R.string.video_res_4k_desc)));
     }
 

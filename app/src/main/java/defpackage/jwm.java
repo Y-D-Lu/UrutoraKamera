@@ -240,6 +240,6 @@ public final class jwm implements jww, lms {
     public final void g(List list) {
         this.t.addAll(list);
         this.j = oom.j(list);
-        Collection.EL.stream(list).map(jlo.n).collect(Collectors.joining(","));
+        (list.stream()).map(jlo.n).collect(Collectors.joining(","));
     }
 }

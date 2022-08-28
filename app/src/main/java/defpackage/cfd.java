@@ -2,8 +2,6 @@ package defpackage;
 
 import android.content.Intent;
 
-import java.util.Collection;
-
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: cfd  reason: default package */
 /* loaded from: classes.dex */
@@ -69,7 +67,7 @@ public final class cfd implements phh {
                 }
                 cfe cfeVar4 = this.b;
                 cfeVar4.q.C = cfeVar4.y;
-                Collection.EL.stream(cfeVar4.f).forEach(cez.c);
+                (cfeVar4.f.stream()).forEach(cez.c);
                 this.b.r.a(cjr.CAPTURE_SESSION_ACTIVE);
                 this.b.j.i(ijt.CAPTURE_SESSION_STARTED);
                 cfe cfeVar5 = this.b;

@@ -90,7 +90,7 @@ public final class prj extends AbstractMap {
         return h(comparable) >= 0 || this.b.containsKey(comparable);
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
+    //@Override // java.util.AbstractMap, java.util.Map
     /* renamed from: d */
     public final Object put(Comparable comparable, Object obj) {
         g();

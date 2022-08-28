@@ -427,7 +427,7 @@ public class OptionsMenuContainer extends RelativeLayout {
         n.i = jrzVar;
         if (n.l != null && (guqVar = n.j) != null) {
             Trace.beginSection("OptionsMenuRow:applyOrientation");
-            Collection.EL.forEach(guqVar.d, new iem(jrzVar, 1));
+            guqVar.d.forEach(new iem(jrzVar, 1));
             Trace.endSection();
         }
         Trace.endSection();

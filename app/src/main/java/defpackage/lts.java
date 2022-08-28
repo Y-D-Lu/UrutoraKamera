@@ -17,7 +17,7 @@ public final class lts {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(int i) {
-        oti it = this.a.entrySet().iterator();
+        oti it = (oti) this.a.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry entry = (Map.Entry) it.next();
             ((mip) entry.getValue()).m(((Long) entry.getKey()).longValue(), i);

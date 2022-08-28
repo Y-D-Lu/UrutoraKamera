@@ -17,7 +17,7 @@ public final class pkz {
         return new ManagedImageCallback() { // from class: pkw
             @Override // com.google.googlex.gcam.hdrplus.ManagedImageCallback
             public final void accept(int i, long j, long j2, int i2) {
-                pky.this.a(i, j, new ShotMetadata(j2), i2);
+                pkyVar.a(i, j, new ShotMetadata(j2), i2);
             }
         };
     }

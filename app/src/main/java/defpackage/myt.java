@@ -132,7 +132,7 @@ public final class myt extends myq implements mxo, mwa {
                 return null;
             }
         } while (i < 3);
-        d.v(a.c(), "Failed to persist most recent App Exit", (char) 3627);
+        defpackage.d.v(a.c(), "Failed to persist most recent App Exit", (char) 3627);
         return null;
     }
 

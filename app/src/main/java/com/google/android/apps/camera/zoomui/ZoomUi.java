@@ -71,7 +71,7 @@ public class ZoomUi extends FrameLayout {
 
     private final void v() {
         mip.es(this, this.c);
-        Collection.EL.forEach(ope.M(c(), d(), n(), j(), l(), k(), m()), new Consumer() { // from class: kah
+        ope.M(c(), d(), n(), j(), l(), k(), m()).forEach(new Consumer() { // from class: kah
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 mip.et((View) obj, ZoomUi.this.c);

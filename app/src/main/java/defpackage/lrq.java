@@ -25,7 +25,7 @@ public final class lrq {
         return (lxu) this.b.b(ltwVar, new lhv() { // from class: lro
             @Override // defpackage.lhv
             public final Object a() {
-                return ltw.this.b.a.e(1L);
+                return ltwVar.b.a.e(1L);
             }
         });
     }

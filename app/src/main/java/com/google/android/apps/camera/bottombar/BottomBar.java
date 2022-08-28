@@ -137,7 +137,7 @@ public class BottomBar extends LinearLayout {
             zoomLockView.a();
         }
         mip.es(this, this.orientation);
-        Collection.EL.stream(mip.em(this)).forEach(new Consumer() { // from class: com.google.android.apps.camera.bottombar.BottomBar$$ExternalSyntheticLambda1
+        (mip.em(this).stream()).forEach(new Consumer() { // from class: com.google.android.apps.camera.bottombar.BottomBar$$ExternalSyntheticLambda1
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 BottomBar.this.m7x5662d6c8((View) obj);
@@ -356,7 +356,7 @@ public class BottomBar extends LinearLayout {
     /* renamed from: lambda$applyOrientation$1$com-google-android-apps-camera-bottombar-BottomBar  reason: not valid java name */
     public /* synthetic */ void m7x5662d6c8(View view) {
         if (view.getId() == R.id.zoom_lock_view_parent) {
-            Collection.EL.stream(mip.em((ViewGroup) view)).forEach(new Consumer() { // from class: com.google.android.apps.camera.bottombar.BottomBar$$ExternalSyntheticLambda0
+            (mip.em((ViewGroup) view).stream()).forEach(new Consumer() { // from class: com.google.android.apps.camera.bottombar.BottomBar$$ExternalSyntheticLambda0
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     BottomBar.this.m6x288a3c69((View) obj);

@@ -31,8 +31,8 @@ public final class lqt {
     private final lqh h(lqd lqdVar) {
         nox noxVar = this.j;
         opc D = ope.D();
-        for (lnx lnxVar : lqdVar.c) {
-            D.d(ltz.f(lnxVar));
+        for (Object lnxVar : lqdVar.c) {
+            D.d(ltz.f(((lnx)lnxVar)));
         }
         lqh n = lqh.n(noxVar, lqdVar, D.f());
         n.f();
@@ -103,12 +103,12 @@ public final class lqt {
             return;
         }
         this.h = true;
-        for (lqq lqqVar : this.e) {
-            lqqVar.k(h(lqqVar.a));
+        for (Object lqqVar : this.e) {
+            ((lqq)lqqVar).k(h(((lqq)lqqVar).a));
         }
         this.e.clear();
-        for (Set<lqh> set : this.f) {
-            for (lqh lqhVar : set) {
+        for (Object set : this.f) {
+            for (lqh lqhVar : (Set<lqh>)set) {
                 lqhVar.f();
                 lqhVar.g();
             }

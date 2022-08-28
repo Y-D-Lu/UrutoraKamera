@@ -6,8 +6,6 @@ import android.os.Looper;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-
-import java.util.Collection;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
@@ -78,6 +76,6 @@ public final class fhv {
             this.m.add(f);
         }
         this.a.add(fikVar);
-        Collection.EL.forEach(this.b, new fhs(fikVar, 0));
+        this.b.forEach(new fhs(fikVar, 0));
     }
 }

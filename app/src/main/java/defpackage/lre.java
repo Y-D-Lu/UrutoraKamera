@@ -22,8 +22,8 @@ public final class lre implements lij {
     @Override // defpackage.lij
     public final /* bridge */ /* synthetic */ void fB(Object obj) {
         lzr lzrVar = (lzr) obj;
-        for (lrd lrdVar : this.b) {
-            lrdVar.fB(lzrVar);
+        for (Object lrdVar : this.b) {
+            ((lrd)lrdVar).fB(lzrVar);
         }
     }
 }

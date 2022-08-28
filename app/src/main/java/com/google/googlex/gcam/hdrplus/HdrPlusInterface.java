@@ -28,7 +28,7 @@ public final class HdrPlusInterface {
         return new EncodedBlobCallback() { // from class: pkk
             @Override // com.google.googlex.gcam.hdrplus.EncodedBlobCallback
             public final void onDataAvailable(int i, ByteBuffer byteBuffer, int i2, int i3) {
-                EncodedBlobCallback.this.onDataAvailable(i, BufferUtils.d(byteBuffer, z), i2, i3);
+                encodedBlobCallback.onDataAvailable(i, BufferUtils.d(byteBuffer, z), i2, i3);
             }
         };
     }

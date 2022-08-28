@@ -122,15 +122,15 @@ public final class ltc implements ltd, lie {
                 if (ltmVar != null) {
                     ltdVar.c(ltmVar);
                 }
-                for (lta ltaVar : this.h) {
+                for (Object ltaVar : this.h) {
                     ltd ltdVar2 = this.a;
                     ltdVar2.getClass();
-                    ltaVar.b(ltdVar2);
+                    ((lta) ltaVar).b(ltdVar2);
                 }
                 this.h.clear();
             }
             return this.e;
-        } catch (llv e) {
+        } catch (Exception e) {
             this.g.i("Failed to submit queued requests.", e);
             close();
             return null;

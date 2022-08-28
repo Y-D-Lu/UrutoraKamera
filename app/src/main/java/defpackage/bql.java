@@ -80,41 +80,41 @@ public final /* synthetic */ class bql implements Predicate {
     public final /* synthetic */ Predicate negate() {
         switch (this.s) {
             case 0:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 1:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 2:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 3:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 4:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 5:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 6:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 7:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 8:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 9:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 10:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 11:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 12:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 13:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 14:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 15:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 16:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             default:
-                return Predicate.CC.$default$negate(this);
+                return negate();
         }
     }
 

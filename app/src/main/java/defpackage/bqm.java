@@ -54,7 +54,7 @@ public final class bqm {
                                 if (b2.isEmpty()) {
                                     z2 = new dkk(true);
                                 } else {
-                                    List list = (List) Collection.EL.stream(b2).map(cgw.b).filter(bql.b).collect(Collectors.toList());
+                                    List list = (List) (b2.stream()).map(cgw.b).filter(bql.b).collect(Collectors.toList());
                                     if (list.isEmpty()) {
                                         z2 = new dkk(true);
                                     } else {
@@ -70,7 +70,7 @@ public final class bqm {
                                 }
                                 if (e instanceof lvv) {
                                     List list2 = ((lvv) e).a;
-                                    if (list2 != null && Collection.EL.stream(list2).anyMatch(bql.a)) {
+                                    if (list2 != null && (list2.stream()).anyMatch(bql.a)) {
                                         ljuVar = lju.CAMERAS_NOT_ENUMERATED;
                                     }
                                 } else if (e instanceof lvy) {

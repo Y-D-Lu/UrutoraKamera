@@ -53,7 +53,7 @@ public final class ets implements bvv {
                 ets etsVar = ets.this;
                 qkg qkgVar2 = qkgVar;
                 final bxy bxyVar = (bxy) etsVar.a.get();
-                return (Set) Collection.EL.stream(((pyw) qkgVar2).mo37get()).map(new Function() { // from class: etp
+                return (Set) (((pyw) qkgVar2).mo37get().stream()).map(new Function() { // from class: etp
                     @Override // java.util.function.Function
                     public final /* synthetic */ Function andThen(Function function) {
                         return function.getClass();

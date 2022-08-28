@@ -48,7 +48,7 @@ public class DebugContentProvider extends ContentProvider {
             defpackage.d.v(b.b(), "Could not get an instance of the instrumentation.", (char) 772);
             return new ArrayList();
         }
-        return (List) Collection.EL.stream(instrumentation.b(cls)).filter(predicate).collect(Collectors.toList());
+        return (List) (instrumentation.b(cls).stream()).filter(predicate).collect(Collectors.toList());
     }
 
     private final synchronized dgt c() {
@@ -59,7 +59,8 @@ public class DebugContentProvider extends ContentProvider {
             dgtVar.b("startup_timing_latest", ijf.class, new dgs() { // from class: dgl
                 @Override // defpackage.ojz
                 public final Object a() {
-                    switch (r1) {
+                    // luyuedong666 TODO: fix out
+                    switch (0) {
                         case 0:
                             return DebugContentProvider.b(ijp.class, bql.f);
                         default:
@@ -70,7 +71,8 @@ public class DebugContentProvider extends ContentProvider {
             dgtVar.b("shutter_lag_latest", ijo.class, new dgs() { // from class: dgl
                 @Override // defpackage.ojz
                 public final Object a() {
-                    switch (r1) {
+                    // luyuedong666 TODO: fix out
+                    switch (0) {
                         case 0:
                             return DebugContentProvider.b(ijp.class, bql.f);
                         default:
@@ -105,11 +107,11 @@ public class DebugContentProvider extends ContentProvider {
             int i = 5;
             printWriter.printf("%s,%s,%s,%s,%s", "path", "_id", "run", "name", "time_ns");
             printWriter.println();
-            for (Map.Entry entry : c.e.entrySet()) {
-                Cursor a = c.a((dgs) entry.getValue(), true, dgt.b);
+            for (Object entry : c.e.entrySet()) {
+                Cursor a = c.a((dgs) ((Map.Entry)entry).getValue(), true, dgt.b);
                 while (a.moveToNext()) {
                     Object[] objArr = new Object[i];
-                    objArr[0] = entry.getKey();
+                    objArr[0] = ((Map.Entry)entry).getKey();
                     objArr[1] = Integer.valueOf(a.getInt(a.getColumnIndex("_id")));
                     objArr[2] = Integer.valueOf(a.getInt(a.getColumnIndex("run")));
                     objArr[3] = a.getString(a.getColumnIndex("name"));

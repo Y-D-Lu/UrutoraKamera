@@ -191,7 +191,7 @@ public final class fci implements pys {
                         qkg qkgVar5 = qkg.this;
                         qkg qkgVar6 = qkgVar4;
                         final Executor executor4 = executor3;
-                        Stream concat = Stream.CC.concat(Collection.EL.stream((Set) ((pyt) qkgVar5).a), Collection.EL.stream(((pyw) qkgVar6).mo37get()).map(cgw.o));
+                        Stream concat = Stream.CC.concat((((Set) ((pyt) qkgVar5).a).stream()), (((pyw) qkgVar6).mo37get().stream()).map(cgw.o));
                         executor4.getClass();
                         concat.forEach(new Consumer() { // from class: gnh
                             @Override // java.util.function.Consumer

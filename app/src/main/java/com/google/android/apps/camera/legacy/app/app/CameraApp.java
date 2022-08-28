@@ -341,7 +341,7 @@ public class CameraApp extends fip implements HasCameraContentProviderComponent,
                 myw.h(new Runnable() { // from class: nam
                     @Override // java.lang.Runnable
                     public final void run() {
-                        nav navVar2 = nav.this;
+                        nav navVar2 = navVar;
                         navVar2.b = navVar2.m.b != null;
                     }
                 });

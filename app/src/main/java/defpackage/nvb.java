@@ -211,12 +211,12 @@ public final class nvb {
                 kyoVar = queryLocalInterface instanceof kyo ? (kyo) queryLocalInterface : new kyo(iBinder);
             }
             kzo kzoVar = new kzo();
-            for (Map.Entry entry : this.a.entrySet()) {
-                kzs kzsVar = (kzs) entry.getValue();
+            for (Object entry : this.a.entrySet()) {
+                kzs kzsVar = (kzs) ((Map.Entry) entry).getValue();
                 try {
                     kyoVar.e(kzoVar, new kwx(kzsVar));
-                } catch (RemoteException e) {
-                    String valueOf = String.valueOf(entry.getKey());
+                } catch (Exception e) {
+                    String valueOf = String.valueOf(((Map.Entry) entry).getKey());
                     String valueOf2 = String.valueOf(kzsVar);
                     StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 32 + String.valueOf(valueOf2).length());
                     sb.append("onPostInitHandler: Didn't add: ");

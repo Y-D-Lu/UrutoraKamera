@@ -48,13 +48,13 @@ public class MetricsProvider extends dgu {
             nvb nvbVar2 = lysVar.b.b;
             lywVar = null;
             nvbVar = new nvb((byte[]) null);
-            for (Map.Entry entry : nvbVar2.a.entrySet()) {
+            for (Object entry : nvbVar2.a.entrySet()) {
                 Map map = nvbVar.a;
-                String str = (String) entry.getKey();
-                lyv lyvVar = (lyv) entry.getValue();
+                String str = (String) ((Map.Entry)entry).getKey();
+                lyv lyvVar = (lyv) ((Map.Entry)entry).getValue();
                 lyv lyvVar2 = new lyv(lyvVar.a);
-                for (Map.Entry entry2 : lyvVar.b.entrySet()) {
-                    lyvVar2.b.put((lye) entry2.getKey(), ((lyw) entry2.getValue()).a());
+                for (Object entry2 : lyvVar.b.entrySet()) {
+                    lyvVar2.b.put((lye) ((Map.Entry)entry2).getKey(), ((lyw) ((Map.Entry)entry2).getValue()).a());
                 }
                 map.put(str, lyvVar2);
             }
@@ -155,10 +155,10 @@ public class MetricsProvider extends dgu {
                 StringBuilder sb7 = new StringBuilder();
                 sb7.append(lyvVar3.a());
                 sb7.append("\n");
-                sb7.append(String.format(Locale.ROOT, sb5, strArr[0]));
+                sb7.append(String.format(Locale.ROOT, sb5, (Object[]) strArr[0]));
                 for (int i9 = 1; i9 < strArr.length; i9++) {
                     sb7.append("\n");
-                    sb7.append(String.format(Locale.ROOT, sb6, strArr[i9]));
+                    sb7.append(String.format(Locale.ROOT, sb6, (Object[]) strArr[i9]));
                 }
                 sb = sb7.toString();
             }

@@ -105,11 +105,11 @@ public final class khx {
         return this.a.checkCallingOrSelfPermission(str);
     }
 
-    public final ApplicationInfo f(String str, int i) {
+    public final ApplicationInfo f(String str, int i) throws PackageManager.NameNotFoundException {
         return this.a.getPackageManager().getApplicationInfo(str, i);
     }
 
-    public final PackageInfo g(String str, int i) {
+    public final PackageInfo g(String str, int i) throws PackageManager.NameNotFoundException {
         return this.a.getPackageManager().getPackageInfo(str, i);
     }
 

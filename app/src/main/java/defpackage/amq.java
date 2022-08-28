@@ -352,7 +352,7 @@ public final class amq {
     public final String toString() {
         StringBuilder sb = new StringBuilder("Data {");
         if (!this.b.isEmpty()) {
-            for (String str : this.b.keySet()) {
+            for (Object str : this.b.keySet()) {
                 sb.append(str);
                 sb.append(" : ");
                 Object obj = this.b.get(str);

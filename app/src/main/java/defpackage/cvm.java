@@ -33,15 +33,15 @@ public final /* synthetic */ class cvm implements Predicate {
     public final /* synthetic */ Predicate negate() {
         switch (this.b) {
             case 0:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 1:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 2:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 3:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             default:
-                return Predicate.CC.$default$negate(this);
+                return negate();
         }
     }
 

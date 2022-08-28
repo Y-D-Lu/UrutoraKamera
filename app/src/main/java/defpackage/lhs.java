@@ -102,6 +102,6 @@ public final class lhs {
     }
 
     public final String toString() {
-        return String.format(null, "AspectRatio[%d:%d]", Integer.valueOf(this.d), Integer.valueOf(this.e));
+        return String.format((String) null, "AspectRatio[%d:%d]", Integer.valueOf(this.d), Integer.valueOf(this.e));
     }
 }

@@ -24,18 +24,18 @@ public final class lqh implements lum {
     }
 
     public static lqh n(nox noxVar, lqd lqdVar, Set set) {
-        ope<lun> F = ope.F(set);
+        ope F = ope.F(set);
         obr.ap(F.size() == lqdVar.c.size());
-        for (lun lunVar : F) {
-            obr.as(lqdVar.c.contains(lunVar.d()), "%s is not present in %s", lunVar.d(), lqdVar);
+        for (Object lunVar : F) {
+            obr.as(lqdVar.c.contains(((lun)lunVar).d()), "%s is not present in %s", ((lun)lunVar).d(), lqdVar);
         }
         lpb lpbVar = (lpb) noxVar.a.mo37get();
         lpbVar.getClass();
         lqdVar.getClass();
         F.getClass();
         lqh lqhVar = new lqh(lpbVar, lqdVar, F);
-        for (lun lunVar2 : F) {
-            lunVar2.i(lqhVar);
+        for (Object lunVar2 : F) {
+            ((lun) lunVar2).i(lqhVar);
         }
         return lqhVar;
     }
@@ -62,8 +62,8 @@ public final class lqh implements lum {
         }
         lap lapVar = new lap();
         boolean z2 = true;
-        for (lun lunVar2 : this.a) {
-            lie b = z ? lunVar2.b() : lunVar2.a();
+        for (Object lunVar2 : this.a) {
+            lie b = z ? ((lun)lunVar2).b() : ((lun)lunVar2).a();
             z2 &= b != null;
             if (b != null) {
                 lapVar.c(b);
@@ -81,8 +81,9 @@ public final class lqh implements lum {
     }
 
     public final synchronized lun c(lnx lnxVar) {
-        for (lun lunVar : this.a) {
-            if (lunVar.d().equals(lnxVar)) {
+        for (Object lunVar : this.a) {
+            if (((lun)lunVar).d().equals(lnxVar)) {
+                return ((lun)lunVar);
             }
         }
         String valueOf = String.valueOf(lnxVar);
@@ -93,7 +94,6 @@ public final class lqh implements lum {
         sb.append(" requested for ");
         sb.append(valueOf2);
         throw new IllegalArgumentException(sb.toString());
-        return lunVar;
     }
 
     public final synchronized lzv d() {
@@ -112,8 +112,8 @@ public final class lqh implements lum {
     public final synchronized void f() {
         if (!this.i && !p()) {
             this.i = true;
-            for (mip mipVar : this.d) {
-                q(mipVar);
+            for (Object mipVar : this.d) {
+                q((mip) mipVar);
             }
             this.d.clear();
         }
@@ -138,8 +138,8 @@ public final class lqh implements lum {
         obr.ap(z);
         if (this.g == this.a.size()) {
             boolean p = p();
-            for (mip mipVar : this.d) {
-                this.e.a(mipVar, false, false, null, false, null, true, p);
+            for (Object mipVar : this.d) {
+                this.e.a((mip) mipVar, false, false, null, false, null, true, p);
             }
             if (p) {
                 this.d.clear();
@@ -156,12 +156,12 @@ public final class lqh implements lum {
         obr.ar(this.f == null, "setFrameId must ALWAYS come before setMetadata.", new Object[0]);
         obr.aq(true ^ this.h, "Metadata was already set for frame %s!", lmwVar);
         this.b = lmwVar;
-        for (lun lunVar : this.a) {
-            lunVar.j(lmwVar);
+        for (Object lunVar : this.a) {
+            ((lun)lunVar).j(lmwVar);
         }
         boolean p = p();
-        for (mip mipVar : this.d) {
-            this.e.a(mipVar, false, true, this.b, false, null, false, p);
+        for (Object mipVar : this.d) {
+            this.e.a((mip) mipVar, false, true, this.b, false, null, false, p);
         }
         if (p) {
             this.d.clear();
@@ -177,8 +177,8 @@ public final class lqh implements lum {
         this.h = true;
         this.f = lzvVar;
         boolean p = p();
-        for (mip mipVar : this.d) {
-            this.e.a(mipVar, false, false, null, true, this.f, false, p);
+        for (Object mipVar : this.d) {
+            this.e.a((mip) mipVar, false, false, null, true, this.f, false, p);
         }
         if (p) {
             this.d.clear();

@@ -27,7 +27,7 @@ public final class euy {
             pihVar.e(pgb.h(plk.R(oom.q(plk.Y(bvfVar, executor), plk.Y(new Runnable() { // from class: euw
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r2) {
+                    switch (euy.a) {
                         case 0:
                             eux euxVar2 = euxVar;
                             int i = euy.a;
@@ -52,7 +52,7 @@ public final class euy {
             }, executor), plk.Y(new Runnable() { // from class: euw
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r2) {
+                    switch (euy.a) {
                         case 0:
                             eux euxVar2 = euxVar;
                             int i = euy.a;
@@ -77,7 +77,7 @@ public final class euy {
             }, executor), plk.Y(new Runnable() { // from class: euw
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r2) {
+                    switch (euy.a) {
                         case 0:
                             eux euxVar2 = euxVar;
                             int i = euy.a;

@@ -23,10 +23,11 @@ public final class lrd implements lij {
 
     @Override // defpackage.lij
     /* renamed from: b */
-    public final void fB(lzr lzrVar) {
+    public final void fB(Object obj) {
         if (this.a.isDone()) {
             return;
         }
+        lzr lzrVar = (lzr) obj;
         Long l = (Long) lzrVar.d(CaptureResult.SENSOR_TIMESTAMP);
         lmw lmwVar = new lmw(l == null ? -1L : l.longValue(), lzrVar.b(), lzrVar.a());
         if (this.c.isEmpty()) {

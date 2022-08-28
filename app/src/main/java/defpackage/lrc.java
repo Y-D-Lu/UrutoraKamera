@@ -36,11 +36,11 @@ public final class lrc {
         this.m = ljfVar;
         this.o = new HashSet();
         this.n = lisVar.a("RequestQueue");
-        Runnable runnable = new Runnable(this) { // from class: lra
+        Runnable runnable = new Runnable() { // from class: lra
             public final /* synthetic */ lrc a;
 
             {
-                this.a = this;
+                a = lrc.this;
             }
 
             @Override // java.lang.Runnable
@@ -78,11 +78,11 @@ public final class lrc {
                 }
             }
         };
-        Runnable runnable2 = new Runnable(this) { // from class: lra
+        Runnable runnable2 = new Runnable() { // from class: lra
             public final /* synthetic */ lrc a;
 
             {
-                this.a = this;
+                a = lrc.this;
             }
 
             @Override // java.lang.Runnable
@@ -124,11 +124,11 @@ public final class lrc {
         ltvVar.b(runnable);
         lomVar.b(runnable);
         lqtVar.c(runnable2);
-        Runnable runnable3 = new Runnable(this) { // from class: lra
+        Runnable runnable3 = new Runnable() { // from class: lra
             public final /* synthetic */ lrc a;
 
             {
-                this.a = this;
+                a = lrc.this;
             }
 
             @Override // java.lang.Runnable

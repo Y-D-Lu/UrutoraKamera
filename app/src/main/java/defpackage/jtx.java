@@ -113,7 +113,7 @@ public final class jtx {
             this.a.e();
             this.a.d();
             return new mqe(l);
-        } catch (mnc e) {
+        } catch (Exception e) {
             throw new RuntimeException("Failed to create GLContext!", e.getCause());
         }
     }

@@ -41,7 +41,7 @@ public final class cus implements cuu {
     @Override // defpackage.cuu
     public final void b() {
         this.b.b();
-        Collection.EL.stream(this.d).forEach(cez.e);
+        this.d.stream().forEach(cez.e);
     }
 
     @Override // defpackage.cuu

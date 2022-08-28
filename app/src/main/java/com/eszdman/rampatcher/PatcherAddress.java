@@ -31,7 +31,7 @@ public class PatcherAddress {
 
     public static Application getApplicationUsingReflection() {
         try {
-            return (Application) Class.forName("android.app.AppGlobals").getMethod("getInitialApplication", new Class[0]).invoke(null, null);
+            return (Application) Class.forName("android.app.AppGlobals").getMethod("getInitialApplication", new Class[0]).invoke(null, (Object[]) null);
         } catch (ClassNotFoundException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
             Log.e(TAG, "Error at getting application context");
             e.printStackTrace();

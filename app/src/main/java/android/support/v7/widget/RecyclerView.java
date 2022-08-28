@@ -160,7 +160,7 @@ public class RecyclerView extends ViewGroup implements fp {
     }
 
     public RecyclerView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, R.attr.recyclerViewStyle);
+        this(context, attributeSet, org.codeaurora.snapcam.R.attr.recyclerViewStyle);
     }
 
     public RecyclerView(Context context, AttributeSet attributeSet, int i) {
@@ -241,7 +241,7 @@ public class RecyclerView extends ViewGroup implements fp {
             }
             Resources resources = getContext().getResources();
             str = string;
-            new or(this, stateListDrawable, drawable, stateListDrawable2, drawable2, resources.getDimensionPixelSize(R.dimen.fastscroll_default_thickness), resources.getDimensionPixelSize(R.dimen.fastscroll_minimum_range), resources.getDimensionPixelOffset(R.dimen.fastscroll_margin));
+            new or(this, stateListDrawable, drawable, stateListDrawable2, drawable2, resources.getDimensionPixelSize(org.codeaurora.snapcam.R.dimen.fastscroll_default_thickness), resources.getDimensionPixelSize(org.codeaurora.snapcam.R.dimen.fastscroll_minimum_range), resources.getDimensionPixelOffset(org.codeaurora.snapcam.R.dimen.fastscroll_margin));
         } else {
             str = string;
         }

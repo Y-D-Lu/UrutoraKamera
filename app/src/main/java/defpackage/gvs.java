@@ -41,7 +41,7 @@ public final class gvs extends mip {
                 CaptureRequest.Key key = kdd.d;
                 ByteBuffer allocate = ByteBuffer.allocate(404);
                 allocate.order(ByteOrder.nativeOrder());
-                List<dwr> list2 = (List) Collection.EL.stream(list).filter(bql.g).collect(Collectors.toList());
+                List<dwr> list2 = (List) (list.stream()).filter(bql.g).collect(Collectors.toList());
                 allocate.putInt(list2.size());
                 for (dwr dwrVar : list2) {
                     if (dwrVar.c.g()) {

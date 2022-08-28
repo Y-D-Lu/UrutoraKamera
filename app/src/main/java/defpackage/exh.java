@@ -172,7 +172,7 @@ public final class exh implements phh {
                                     ((lie) atomicReference2.get()).close();
                                 }
                                 ppm ppmVar = pjt.b.a;
-                                hjy[] hjyVarArr = (hjy[]) Collection.EL.stream(ppmVar).map(cgw.l).toArray(dbh.c);
+                                hjy[] hjyVarArr = (hjy[]) (ppmVar.stream()).map(cgw.l).toArray(dbh.c);
                                 if (ppmVar.isEmpty()) {
                                     return;
                                 }

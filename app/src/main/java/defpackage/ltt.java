@@ -1,6 +1,5 @@
 package defpackage;
 
-import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CaptureRequest;
 import android.os.Handler;
 import android.util.ArrayMap;
@@ -47,7 +46,7 @@ public final class ltt implements ltd {
         return (Long) b;
     }
 
-    private final synchronized int i(List list, lts ltsVar, boolean z) {
+    private final synchronized int i(List list, lts ltsVar, boolean z) throws llv {
         int e;
         this.c.b(list.size(), false);
         this.a.e("captureSession#captureBurst");
@@ -57,7 +56,7 @@ public final class ltt implements ltd {
             if (e < 0) {
                 m(list, ltsVar);
             }
-        } catch (CameraAccessException | lzm e2) {
+        } catch (Exception e2) {
             lis lisVar = this.b;
             String valueOf = String.valueOf(list);
             StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 27);
@@ -198,7 +197,7 @@ public final class ltt implements ltd {
 
     private final lzq k(final ltm ltmVar, oph ophVar, Map map, boolean z) {
         HashMap hashMap = new HashMap();
-        for (lnx lnxVar : ltmVar.c) {
+        for (Object lnxVar : ltmVar.c) {
             if (!hashMap.containsKey(lnxVar)) {
                 Surface g = ((lui) lnxVar).g();
                 boolean f = this.g.f(g);
@@ -248,12 +247,12 @@ public final class ltt implements ltd {
             luz c = this.d.c(ltmVar);
             Long l = l();
             c.a.setTag(l);
-            for (Map.Entry entry : hashMap.entrySet()) {
-                c.a.addTarget((Surface) entry.getValue());
-                map.put((Surface) entry.getValue(), (lnx) entry.getKey());
+            for (Object entry : hashMap.entrySet()) {
+                c.a.addTarget((Surface) ((Map.Entry)entry).getValue());
+                map.put((Surface) ((Map.Entry)entry).getValue(), (lnx) ((Map.Entry)entry).getKey());
             }
-            for (lnq lnqVar : ltmVar.b) {
-                c.b(lnqVar.a, lnqVar.b);
+            for (Object lnqVar : ltmVar.b) {
+                c.b(((lnq)lnqVar).a, ((lnq)lnqVar).b);
                 if (manualfocus.getFocusMode().intValue() >= 1) {
                     c.b(CaptureRequest.CONTROL_AF_MODE, 0);
                     c.b(CaptureRequest.CONTROL_AF_TRIGGER, 0);
@@ -270,16 +269,16 @@ public final class ltt implements ltd {
             this.h.post(new Runnable() { // from class: lto
                 @Override // java.lang.Runnable
                 public final void run() {
-                    ltm ltmVar2 = ltm.this;
+                    ltm ltmVar2 = ltmVar;
                     long j = longValue;
                     Set set = keySet;
-                    for (mip mipVar : ltmVar2.d) {
-                        mipVar.l(j, set);
+                    for (Object mipVar : ltmVar2.d) {
+                        ((mip)mipVar).l(j, set);
                     }
                 }
             });
             return c.a();
-        } catch (llv e) {
+        } catch (Exception e) {
             lis lisVar4 = this.b;
             String valueOf7 = String.valueOf(ltmVar);
             int i = ltmVar.a;
@@ -364,12 +363,12 @@ public final class ltt implements ltd {
                     this.h.post(new Runnable() { // from class: ltp
                         @Override // java.lang.Runnable
                         public final void run() {
-                            lts.this.a(j);
+                            ltsVar.a(j);
                         }
                     });
                 }
             } catch (Exception e) {
-                throw new llv(e);
+                e.printStackTrace();
             }
         } finally {
             this.a.f();
@@ -380,8 +379,8 @@ public final class ltt implements ltd {
     public final void d() {
         try {
             this.d.b();
-        } catch (CameraAccessException e) {
-            throw new llv(e);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -475,7 +474,7 @@ public final class ltt implements ltd {
                 sb2.append("Failed to submit burst ");
                 sb2.append(valueOf2);
                 lisVar2.e(sb2.toString(), e);
-                throw e;
+                e.printStackTrace();
             }
         } finally {
             this.a.f();
@@ -486,7 +485,7 @@ public final class ltt implements ltd {
         this.h.post(new Runnable() { // from class: ltq
             @Override // java.lang.Runnable
             public final void run() {
-                lts.this.b(lzqVar, null);
+                ltsVar.b(lzqVar, null);
             }
         });
     }

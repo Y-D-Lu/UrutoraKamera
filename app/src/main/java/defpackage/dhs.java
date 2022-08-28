@@ -119,7 +119,7 @@ public final class dhs implements dib {
         synchronized (this) {
             arrayList = new ArrayList(this.j.keySet());
         }
-        Collection.EL.removeIf(arrayList, new dhp(j, 0));
+        arrayList.removeIf(new dhp(j, 0));
         this.n.execute(new Runnable() { // from class: dho
             @Override // java.lang.Runnable
             public final void run() {

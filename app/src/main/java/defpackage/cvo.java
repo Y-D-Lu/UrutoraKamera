@@ -89,18 +89,18 @@ public final class cvo implements cwj, lco {
     }
 
     private final void l(lwd lwdVar) {
-        cvn cvnVar = (cvn) Collection.EL.stream(this.m).filter(new cvm(lwdVar, 4)).findFirst().orElse(null);
+        cvn cvnVar = (cvn) (this.m.stream()).filter(new cvm(lwdVar, 4)).findFirst().orElse(null);
         if (cvnVar != null) {
             cvnVar.d = true;
         }
     }
 
     private final boolean m() {
-        return Collection.EL.stream(this.m).filter(bql.d).count() == 2;
+        return (this.m.stream()).filter(bql.d).count() == 2;
     }
 
     private final boolean n(lwd lwdVar) {
-        return Collection.EL.stream(this.m).anyMatch(new cvm(lwdVar, 3));
+        return (this.m.stream()).anyMatch(new cvm(lwdVar, 3));
     }
 
     private final synchronized ghx o() {
@@ -148,7 +148,7 @@ public final class cvo implements cwj, lco {
     }
 
     public final void f(lwd lwdVar) {
-        cvn cvnVar = (cvn) Collection.EL.stream(this.m).filter(new cvm(lwdVar, 1)).findFirst().orElse(null);
+        cvn cvnVar = (cvn) (this.m.stream()).filter(new cvm(lwdVar, 1)).findFirst().orElse(null);
         if (cvnVar != null) {
             cvnVar.c = false;
         }
@@ -168,7 +168,7 @@ public final class cvo implements cwj, lco {
         if (n(lwdVar)) {
             g(i() ? lwd.FRONT : lwd.BACK);
             d();
-            mip.ca(plk.R((Iterable) Collection.EL.stream(this.c).map(new Function() { // from class: cvl
+            mip.ca(plk.R((Iterable) (this.c.stream()).map(new Function() { // from class: cvl
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
                     return function.getClass();
@@ -199,9 +199,9 @@ public final class cvo implements cwj, lco {
             dltVar.e(new dlr(sb.toString(), lju.CAMERAS_NOT_ENUMERATED, lwdVar));
         }
         if (n(d2) && !n(lwdVar) && this.r.s()) {
-            Optional findFirst = Collection.EL.stream(this.m).filter(new cvm(lwdVar, 0)).findFirst();
+            Optional findFirst = (this.m.stream()).filter(new cvm(lwdVar, 0)).findFirst();
             int i = (!findFirst.isPresent() || !((cvn) findFirst.get()).b) ? 2 : 3;
-            if (i == 2 && ((cvnVar = (cvn) Collection.EL.stream(this.m).filter(new cvm(lwdVar, 2)).findFirst().orElse(null)) == null || !cvnVar.d)) {
+            if (i == 2 && ((cvnVar = (cvn) (this.m.stream()).filter(new cvm(lwdVar, 2)).findFirst().orElse(null)) == null || !cvnVar.d)) {
                 this.j.f(lwdVar);
             }
             this.q.a(lwdVar, 3, i);

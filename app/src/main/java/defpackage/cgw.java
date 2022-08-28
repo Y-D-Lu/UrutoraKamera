@@ -189,7 +189,7 @@ public final /* synthetic */ class cgw implements Function {
                 gtm d2 = gtoVar.d();
                 gtoVar.l();
                 gtoVar.k();
-                return gtk.a(d2, R.string.speech_enhance_label, R.string.speech_enhance_content_desc, oom.j((List) Collection.EL.stream(gtoVar.g()).map(new Function() { // from class: gso
+                return gtk.a(d2, R.string.speech_enhance_label, R.string.speech_enhance_content_desc, oom.j((List) (gtoVar.g().stream()).map(new Function() { // from class: gso
                     @Override // java.util.function.Function
                     public final /* synthetic */ Function andThen(Function function) {
                         return function.getClass();

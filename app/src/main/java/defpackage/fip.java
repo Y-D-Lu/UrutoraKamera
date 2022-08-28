@@ -30,7 +30,7 @@ public class fip extends Application {
     public final void onTerminate() {
         fhi fhiVar = this.k;
         fhiVar.a(fhiVar.d);
-        for (fik fikVar : fhiVar.a) {
+        for (Object fikVar : fhiVar.a) {
             if (fikVar instanceof fho) {
                 ((fho) fikVar).a();
             }

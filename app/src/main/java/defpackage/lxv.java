@@ -49,8 +49,8 @@ public final class lxv {
         return new lie() { // from class: lxr
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                lie lieVar = lie.this;
-                lie lieVar2 = d;
+                lie lieVar = d;
+                lie lieVar2 = d2;
                 lieVar.close();
                 lieVar2.close();
             }
@@ -90,15 +90,14 @@ public final class lxv {
     public final void h(long j) {
         if (j != 0) {
             final ldi ldiVar = this.b;
-            final pwc pwcVar = new pwc(j, null);
+            final pwc pwcVar = new pwc(j);
             ldiVar.c.execute(new Runnable(pwcVar, null) { // from class: lca
-                public final /* synthetic */ pwc b;
+                public final /* synthetic */ pwc b = pwcVar;
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    lce lceVar = lce.this;
                     pwc pwcVar2 = this.b;
-                    ldi ldiVar2 = (ldi) lceVar;
+                    ldi ldiVar2 = ldiVar;
                     lceVar.c(Long.valueOf(((Long) (ldiVar2.e != null ? ldiVar2.e : lceVar.d)).longValue() + pwcVar2.a));
                 }
             });

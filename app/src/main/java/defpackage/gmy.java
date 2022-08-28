@@ -26,7 +26,7 @@ public final class gmy {
 
     public final pht a() {
         this.b.size();
-        Collection.EL.stream(this.b).map(cgw.m).collect(Collectors.joining(","));
+        (this.b.stream()).map(cgw.m).collect(Collectors.joining(","));
         ArrayList arrayList = new ArrayList();
         this.c.e("CameraStarter.start");
         for (final bvv bvvVar : this.b) {
@@ -46,7 +46,7 @@ public final class gmy {
             }
         }
         this.c.f();
-        long count = Collection.EL.stream(arrayList).map(cgw.n).filter(bql.h).count();
+        long count = (arrayList.stream()).map(cgw.n).filter(bql.h).count();
         ljf ljfVar = this.c;
         StringBuilder sb = new StringBuilder(45);
         sb.append("CameraStarter.startAsync:");

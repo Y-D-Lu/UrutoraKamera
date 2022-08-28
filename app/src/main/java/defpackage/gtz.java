@@ -128,7 +128,7 @@ public final class gtz {
         oohVar.g(ofPropertyValuesHolder);
         if (!this.h) {
             AnimatorSet animatorSet = new AnimatorSet();
-            animatorSet.playTogether((Collection) Collection.EL.stream(this.f).map(new Function() { // from class: gty
+            animatorSet.playTogether((Collection) (this.f.stream()).map(new Function() { // from class: gty
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
                     return function.getClass();

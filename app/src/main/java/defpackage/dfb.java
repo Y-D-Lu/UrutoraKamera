@@ -106,7 +106,7 @@ public final /* synthetic */ class dfb implements Runnable {
                     ooh e = oom.e();
                     final dfx dfxVar = dffVar3.e;
                     final dfr dfrVar = dfxVar.f;
-                    e.h((List) Collection.EL.stream(dfrVar.d(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, dfr.c, g2.toEpochMilli(), instant.getEpochSecond(), 5, new Function() { // from class: dfp
+                    (dfrVar.d(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, dfr.c, g2.toEpochMilli(), instant.getEpochSecond(), 5, new Function() { // from class: dfp
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             switch (r2) {
@@ -136,7 +136,7 @@ public final /* synthetic */ class dfb implements Runnable {
                                     return function.getClass();
                             }
                         }
-                    })).map(new Function() { // from class: dfw
+                    }).stream()).map(new Function() { // from class: dfw
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             return function.getClass();
@@ -152,10 +152,10 @@ public final /* synthetic */ class dfb implements Runnable {
                         public final /* synthetic */ Function compose(Function function) {
                             return function.getClass();
                         }
-                    }).collect(Collectors.toList()));
+                    }).collect(Collectors.toList());
                     final dga dgaVar = dffVar3.f;
                     final dfr dfrVar2 = dgaVar.d;
-                    e.h((List) Collection.EL.stream(dfrVar2.d(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, dfr.c, g2.toEpochMilli(), instant.getEpochSecond(), 5, new Function() { // from class: dfp
+                    e.h((List) (dfrVar2.d(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, dfr.c, g2.toEpochMilli(), instant.getEpochSecond(), 5, new Function() { // from class: dfp
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             switch (r2) {
@@ -185,7 +185,7 @@ public final /* synthetic */ class dfb implements Runnable {
                                     return function.getClass();
                             }
                         }
-                    })).map(new Function() { // from class: dfz
+                    }).stream()).map(new Function() { // from class: dfz
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
                             return function.getClass();

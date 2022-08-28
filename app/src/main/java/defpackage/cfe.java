@@ -223,7 +223,7 @@ public final class cfe {
             this.t = false;
             this.L.l(cms.CAPTURE_SESSION);
             this.L.l(cms.VIDEO_RECORDER);
-            Collection.EL.stream(this.f).forEach(cez.b);
+            (this.f.stream()).forEach(cez.b);
             cju cjuVar = this.r;
             if (cjuVar != null) {
                 cjuVar.a(cjr.CAPTURE_SESSION_CLOSED);

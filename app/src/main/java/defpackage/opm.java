@@ -61,7 +61,7 @@ public abstract class opm extends opn implements NavigableSet, osf {
     }
 
     public Object first() {
-        return iterator().mo197next();
+        return iterator().next();
     }
 
     public Object floor(Object obj) {
@@ -102,7 +102,7 @@ public abstract class opm extends opn implements NavigableSet, osf {
     }
 
     public Object last() {
-        return descendingIterator().mo197next();
+        return descendingIterator().next();
     }
 
     public Object lower(Object obj) {

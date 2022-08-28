@@ -110,7 +110,7 @@ public class SidelineInstallerService extends Service {
                     @Override // java.lang.Runnable
                     public final void run() {
                         PendingIntent service;
-                        hwh hwhVar2 = hwh.this;
+                        hwh hwhVar2 = hwhVar;
                         String str2 = str;
                         int i3 = 5;
                         int i4 = 2;
@@ -168,7 +168,7 @@ public class SidelineInstallerService extends Service {
                                         try {
                                             openSession.commit(service.getIntentSender());
                                         } catch (Throwable th2) {
-                                            th = th2;
+                                            Throwable th = th2;
                                             ((oug) ((oug) ((oug) hwh.a.b()).h(th)).G(2684)).p("Exception when trying to install HAL at anchor %d", i3);
                                             String localizedMessage = th.getLocalizedMessage();
                                             boolean z = th instanceof SecurityException;
@@ -195,15 +195,15 @@ public class SidelineInstallerService extends Service {
                                         throw th3;
                                     }
                                 } catch (Throwable th5) {
-                                    th = th5;
+                                    Throwable th = th5;
                                     i3 = 3;
                                 }
                             } catch (Throwable th6) {
-                                th = th6;
+                                Throwable th = th6;
                                 i3 = 2;
                             }
                         } catch (Throwable th7) {
-                            th = th7;
+                            Throwable th = th7;
                             i3 = 1;
                         }
                     }
@@ -211,7 +211,7 @@ public class SidelineInstallerService extends Service {
                 hwhVar.s.d(new Runnable() { // from class: hwc
                     @Override // java.lang.Runnable
                     public final void run() {
-                        hwh hwhVar2 = hwh.this;
+                        hwh hwhVar2 = hwhVar;
                         hwhVar2.k.a(4);
                         hwhVar2.b.stopService(new Intent(hwhVar2.b, SidelineInstallerService.class));
                     }
@@ -242,7 +242,7 @@ public class SidelineInstallerService extends Service {
                         plk.X(new pgj() { // from class: hwb
                             @Override // defpackage.pgj
                             public final pht a() {
-                                hwh hwhVar3 = hwh.this;
+                                hwh hwhVar3 = hwhVar;
                                 long j3 = uptimeMillis;
                                 pht c2 = hwhVar3.l.c(60000);
                                 plk.af(c2, new hwg(hwhVar3, j3), hwhVar3.h);

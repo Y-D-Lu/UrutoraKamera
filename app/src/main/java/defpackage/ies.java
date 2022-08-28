@@ -99,11 +99,11 @@ public final class ies extends LinearLayout {
         if (iefVar != null) {
             iefVar.setEnabled(z);
         }
-        Collection.EL.stream(this.b).forEachOrdered(new ieo(z, 0));
+        (this.b.stream()).forEachOrdered(new ieo(z, 0));
     }
 
     public final void g(final ojc ojcVar) {
-        Collection.EL.stream(this.b).forEachOrdered(new Consumer() { // from class: ien
+        (this.b.stream()).forEachOrdered(new Consumer() { // from class: ien
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 ((iek) obj).setColorFilter((ColorFilter) ojc.this.f());

@@ -3,8 +3,6 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.Collection;
-
 /* renamed from: fhi  reason: default package */
 /* loaded from: classes.dex */
 public final class fhi implements fik, fie, fig, fii, fij {
@@ -27,7 +25,7 @@ public final class fhi implements fik, fie, fig, fii, fij {
         obr.aF(i >= 0);
         if (this.e == 0) {
             a(this.f);
-            for (fik fikVar : this.a) {
+            for (Object fikVar : this.a) {
                 if (fikVar instanceof fhn) {
                     ((fhn) fikVar).b();
                 }
@@ -36,7 +34,7 @@ public final class fhi implements fik, fie, fig, fii, fij {
     }
 
     public final void f(fhu fhuVar) {
-        Collection.EL.forEach(this.a, new fhr(fhuVar, 1));
+        this.a.forEach(new fhr(fhuVar, 1));
         this.b.add(fhuVar);
     }
 
@@ -47,7 +45,7 @@ public final class fhi implements fik, fie, fig, fii, fij {
         obr.aF(i >= 0);
         if (this.c == 0) {
             a(this.g);
-            for (fik fikVar : this.a) {
+            for (Object fikVar : this.a) {
                 if (fikVar instanceof fhk) {
                     ((fhk) fikVar).b();
                 }
@@ -82,6 +80,6 @@ public final class fhi implements fik, fie, fig, fii, fij {
     public final void g(fik fikVar) {
         lar.a();
         this.a.add(fikVar);
-        Collection.EL.forEach(this.b, new fhs(fikVar, 1));
+        this.b.forEach(new fhs(fikVar, 1));
     }
 }

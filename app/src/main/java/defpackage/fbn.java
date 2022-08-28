@@ -565,7 +565,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                                         map.put(str8, Boolean.valueOf(idkVar2.b.m(str8)));
                                         idkVar2.d(materialManagedSwitchPreference7, false);
                                     }
-                                } else if (Collection.EL.stream(idkVar2.i.values()).anyMatch(bql.k)) {
+                                } else if ((idkVar2.i.values().stream()).anyMatch(bql.k)) {
                                     oom f2 = idkVar2.g.f();
                                     int i7 = ((orr) f2).c;
                                     while (i4 < i7) {
@@ -576,7 +576,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                                         i4++;
                                     }
                                     idkVar2.i.clear();
-                                } else if (Collection.EL.stream(idkVar2.h.values()).anyMatch(bql.k)) {
+                                } else if ((idkVar2.h.values().stream()).anyMatch(bql.k)) {
                                     oom f3 = idkVar2.g.f();
                                     int i8 = ((orr) f3).c;
                                     while (i4 < i8) {

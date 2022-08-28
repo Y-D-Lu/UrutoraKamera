@@ -6,8 +6,6 @@ import com.hdrindicator.DisplayHelper;
 
 import java.util.Map;
 
-import java.util.Collection;
-
 /* renamed from: hbr  reason: default package */
 /* loaded from: classes.dex */
 public final class hbr extends mip {
@@ -38,7 +36,7 @@ public final class hbr extends mip {
             lvp lvpVar = this.b;
             Map g = lzvVar.g();
             if (((orw) g).c == 1) {
-                String e = ((lzr) Collection.EL.stream(((oor) g).values()).findFirst().get()).e();
+                String e = ((lzr) (((oor) g).values().stream()).findFirst().get()).e();
                 if (e != null && (d = this.a.d(e)) != null) {
                     lvpVar = this.a.a(d);
                 }

@@ -107,8 +107,8 @@ public class jdy {
     public final boolean c(CaptureResult.Key key, Object... objArr) {
         obr.aF(objArr.length > 0);
         HashSet hashSet = new HashSet(Arrays.asList(objArr));
-        for (lzv lzvVar : this.h) {
-            if (!hashSet.contains(lzvVar.d(key))) {
+        for (Object lzvVar : this.h) {
+            if (!hashSet.contains(((lzv)lzvVar).d(key))) {
                 return false;
             }
         }
@@ -125,8 +125,8 @@ public class jdy {
 
     public final synchronized lie f(final fmp fmpVar) {
         this.h.add(fmpVar);
-        return new lie(fmpVar, null, null, null) { // from class: fmn
-            public final /* synthetic */ fmp a;
+        return new lie() { // from class: fmn
+            public final /* synthetic */ fmp a = fmpVar;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
@@ -145,8 +145,8 @@ public class jdy {
 
     public final void h() {
         synchronized (this.h) {
-            for (bwt bwtVar : this.h) {
-                bwtVar.a.fB(bwtVar.b);
+            for (Object bwtVar : this.h) {
+                ((bwt)bwtVar).a.fB(((bwt)bwtVar).b);
             }
         }
     }
@@ -261,9 +261,9 @@ public class jdy {
         if (cls2.isAssignableFrom(cls)) {
             return bji.a;
         }
-        for (bjh bjhVar : this.h) {
-            if (bjhVar.a(cls, cls2)) {
-                return bjhVar.c;
+        for (Object bjhVar : this.h) {
+            if (((bjh)bjhVar).a(cls, cls2)) {
+                return ((bjh)bjhVar).c;
             }
         }
         String valueOf = String.valueOf(cls);
@@ -282,9 +282,9 @@ public class jdy {
             arrayList.add(cls2);
             return arrayList;
         }
-        for (bjh bjhVar : this.h) {
-            if (bjhVar.a(cls, cls2) && !arrayList.contains(bjhVar.b)) {
-                arrayList.add(bjhVar.b);
+        for (Object bjhVar : this.h) {
+            if (((bjh)bjhVar).a(cls, cls2) && !arrayList.contains(((bjh)bjhVar).b)) {
+                arrayList.add(((bjh)bjhVar).b);
             }
         }
         return arrayList;

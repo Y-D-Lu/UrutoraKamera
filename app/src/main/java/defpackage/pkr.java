@@ -531,7 +531,7 @@ public final class pkr {
             return lvqVar.a((lvs) B.iterator().next());
         }
         Map g = lzvVar.g();
-        String e = (!g.isEmpty() || d.d()) ? ((orw) g).c == 1 ? ((lzr) Collection.EL.stream(((oor) g).values()).findFirst().get()).e() : null : lzvVar.e();
+        String e = (!g.isEmpty() || d.d()) ? ((orw) g).c == 1 ? ((lzr) (((oor) g).values().stream()).findFirst().get()).e() : null : lzvVar.e();
         if (e != null) {
             for (lvs lvsVar : B) {
                 if (e.equals(lvsVar.a)) {
@@ -542,7 +542,7 @@ public final class pkr {
             throw new IllegalArgumentException(e.length() != 0 ? "Physical camera with matching ID not found: ".concat(e) : new String("Physical camera with matching ID not found: "));
         }
         Map g2 = lzvVar.g();
-        Float f = ((orw) g2).c == 1 ? (Float) ((lzr) Collection.EL.stream(((oor) g2).values()).findFirst().get()).d(CaptureResult.LENS_FOCAL_LENGTH) : (Float) lzvVar.d(CaptureResult.LENS_FOCAL_LENGTH);
+        Float f = ((orw) g2).c == 1 ? (Float) ((lzr) (((oor) g2).values().stream()).findFirst().get()).d(CaptureResult.LENS_FOCAL_LENGTH) : (Float) lzvVar.d(CaptureResult.LENS_FOCAL_LENGTH);
         f.getClass();
         for (lvs lvsVar2 : B) {
             lvp a = lvqVar.a(lvsVar2);

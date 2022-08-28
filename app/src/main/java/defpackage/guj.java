@@ -5,8 +5,6 @@ import android.animation.AnimatorListenerAdapter;
 
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 
-import java.util.Collection;
-
 /* renamed from: guj  reason: default package */
 /* loaded from: classes.dex */
 public final class guj extends AnimatorListenerAdapter {
@@ -18,6 +16,6 @@ public final class guj extends AnimatorListenerAdapter {
 
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationEnd(Animator animator) {
-        Collection.EL.forEach(this.a.l, gui.a);
+        this.a.l.forEach(gui.a);
     }
 }

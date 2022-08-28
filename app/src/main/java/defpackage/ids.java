@@ -79,7 +79,7 @@ public final class ids {
         ooh e = oom.e();
         e.h(list);
         e.h(list2);
-        return oom.j((ArrayList) Collection.EL.stream(e.f()).filter(new idg(new ConcurrentHashMap(), icd.g, 2)).map(new Function() { // from class: idq
+        return oom.j((ArrayList) e.f().stream().filter(new idg(new ConcurrentHashMap(), icd.g, 2)).map(new Function() { // from class: idq
             @Override // java.util.function.Function
             public final /* synthetic */ Function andThen(Function function) {
                 return function.getClass();

@@ -214,7 +214,7 @@ public final class cug implements cuj {
                     } else {
                         cus cusVar2 = (cus) cugVar.a;
                         cusVar2.b.d();
-                        Collection.EL.stream(cusVar2.d).forEach(cez.f);
+                        (cusVar2.d.stream()).forEach(cez.f);
                     }
                     cugVar.k.e(htu.w, 0);
                     cugVar.k.e(htu.y, true);

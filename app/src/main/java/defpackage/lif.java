@@ -32,16 +32,16 @@ public final class lif implements Comparable {
         return new lif(i);
     }
 
-    @Override // java.lang.Comparable
-    /* renamed from: a */
-    public final int compareTo(lif lifVar) {
-        int i = this.e;
-        int i2 = lifVar.e;
-        if (i == i2) {
-            return 0;
-        }
-        return i >= i2 ? 1 : -1;
-    }
+//    @Override // java.lang.Comparable
+//    /* renamed from: a */
+//    public final int compareTo(lif lifVar) {
+//        int i = this.e;
+//        int i2 = lifVar.e;
+//        if (i == i2) {
+//            return 0;
+//        }
+//        return i >= i2 ? 1 : -1;
+//    }
 
     public final boolean d() {
         return this.e >= 0;
@@ -64,5 +64,15 @@ public final class lif implements Comparable {
         sb.append(i);
         sb.append("%");
         return sb.toString();
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        int i = this.e;
+        int i2 = o.hashCode();
+        if (i == i2) {
+            return 0;
+        }
+        return i >= i2 ? 1 : -1;
     }
 }

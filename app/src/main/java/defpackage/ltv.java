@@ -33,8 +33,8 @@ public final class ltv {
         this.g = new HashMap(lukVar.a.size());
         this.h = new HashMap(lukVar.a.size());
         this.c = lisVar.a("SurfaceMap");
-        for (lty ltyVar : lukVar.c) {
-            lapVar.c(ltyVar.a.a(new ltu(this, ltyVar), executor));
+        for (Object ltyVar : lukVar.c) {
+            lapVar.c(((lty)ltyVar).a.a(new ltu(this, ((lty)ltyVar)), executor));
         }
     }
 
@@ -99,30 +99,30 @@ public final class ltv {
         Surface surface;
         synchronized (this) {
             z = false;
-            for (lui luiVar : this.e.a) {
-                Surface g = luiVar.g();
+            for (Object luiVar : this.e.a) {
+                Surface g = ((lui)luiVar).g();
                 if (g == null || !g.isValid()) {
-                    if (this.g.containsKey(luiVar) && (surface = (Surface) this.g.get(luiVar)) != g) {
+                    if (this.g.containsKey(((lui)luiVar)) && (surface = (Surface) this.g.get(((lui)luiVar))) != g) {
                         this.f.remove(surface);
-                        this.g.remove(luiVar);
-                        this.h.put(luiVar, surface);
+                        this.g.remove(((lui)luiVar));
+                        this.h.put(((lui)luiVar), surface);
                         z = true;
                     }
-                } else if (!this.g.containsKey(luiVar)) {
+                } else if (!this.g.containsKey(((lui)luiVar))) {
                     this.f.add(g);
-                    this.g.put(luiVar, g);
-                    Surface surface2 = (Surface) this.h.remove(luiVar);
+                    this.g.put(((lui)luiVar), g);
+                    Surface surface2 = (Surface) this.h.remove(((lui)luiVar));
                     if (surface2 != g && surface2 != null) {
                         this.j = true;
                     }
                     z = true;
                 } else {
-                    Surface surface3 = (Surface) this.g.get(luiVar);
+                    Surface surface3 = (Surface) this.g.get(((lui)luiVar));
                     if (surface3 != g) {
                         this.j = true;
                         this.f.remove(surface3);
                         this.f.add(g);
-                        this.g.put(luiVar, g);
+                        this.g.put(((lui)luiVar), g);
                     }
                 }
             }

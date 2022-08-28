@@ -59,8 +59,8 @@ public final class iec implements idt {
         oti it = opeVar.iterator();
         while (it.hasNext()) {
             ArrayList arrayList = new ArrayList(b2.g((String) it.next()));
-            Collection.EL.removeIf(arrayList, bql.m);
-            if (arrayList.size() >= 2 && Collection.EL.stream(arrayList).allMatch(bql.o)) {
+            arrayList.removeIf( bql.m);
+            if (arrayList.size() >= 2 && (arrayList.stream()).allMatch(bql.o)) {
                 ArraySet arraySet = new ArraySet();
                 int size = arrayList.size();
                 String str = "";
@@ -120,7 +120,7 @@ public final class iec implements idt {
     @Override // defpackage.idt
     public final /* bridge */ /* synthetic */ List d(String str) {
         ArrayList c = c(str);
-        Collection.EL.removeIf(c, new Predicate() { // from class: ieb
+        c.removeIf(new Predicate() { // from class: ieb
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
@@ -128,7 +128,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
-                return Predicate.CC.$default$negate(this);
+                return negate();
             }
 
             @Override // java.util.function.Predicate
@@ -146,8 +146,8 @@ public final class iec implements idt {
 
     @Override // defpackage.idt
     public final void e(List list) {
-        final List list2 = (List) Collection.EL.stream(list).map(icd.j).collect(Collectors.toList());
-        Stream map = Collection.EL.stream(this.d.keySet()).filter(new Predicate() { // from class: idw
+        final List list2 = (List) (list.stream()).map(icd.j).collect(Collectors.toList());
+        Stream map = (this.d.keySet().stream()).filter(new Predicate() { // from class: idw
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
@@ -155,7 +155,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
-                return Predicate.CC.$default$negate(this);
+                return negate();
             }
 
             @Override // java.util.function.Predicate
@@ -179,7 +179,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
-                return Predicate.CC.$default$negate(this);
+                return negate();
             }
 
             @Override // java.util.function.Predicate
@@ -231,7 +231,7 @@ public final class iec implements idt {
     @Override // defpackage.idt
     public final void g(List list) {
         e(oom.l());
-        Collection.EL.stream(list).sorted(b()).limit(3L).map(icd.n).forEach(new idz(this, 0));
+        (list.stream()).sorted(b()).limit(3L).map(icd.n).forEach(new idz(this, 0));
     }
 
     @Override // defpackage.idt
@@ -244,7 +244,7 @@ public final class iec implements idt {
 
     @Override // defpackage.idt
     public final boolean i(String str) {
-        Stream map = Collection.EL.stream(n(str)).map(icd.l);
+        Stream map = (n(str).stream()).map(icd.l);
         final oor oorVar = this.d;
         oorVar.getClass();
         return map.anyMatch(new Predicate() { // from class: idv
@@ -255,7 +255,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
-                return Predicate.CC.$default$negate(this);
+                return negate();
             }
 
             @Override // java.util.function.Predicate
@@ -272,8 +272,8 @@ public final class iec implements idt {
 
     @Override // defpackage.idt
     public final boolean j(String str) {
-        final Set set = (Set) Collection.EL.stream(this.d.keySet()).filter(bql.n).collect(Collectors.toSet());
-        Stream map = Collection.EL.stream(n(str)).map(icd.m);
+        final Set set = (Set) (this.d.keySet().stream()).filter(bql.n).collect(Collectors.toSet());
+        Stream map = (n(str).stream()).map(icd.m);
         set.getClass();
         return map.anyMatch(new Predicate() { // from class: idx
             @Override // java.util.function.Predicate
@@ -283,7 +283,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
-                return Predicate.CC.$default$negate(this);
+                return negate();
             }
 
             @Override // java.util.function.Predicate
@@ -301,7 +301,7 @@ public final class iec implements idt {
     @Override // defpackage.idt
     /* renamed from: l */
     public final ArrayList c(final String str) {
-        return (ArrayList) Collection.EL.stream(n(str)).filter(new Predicate() { // from class: idu
+        return (ArrayList) (n(str).stream()).filter(new Predicate() { // from class: idu
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return predicate.getClass();
@@ -309,7 +309,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate negate() {
-                return Predicate.CC.$default$negate(this);
+                return negate();
             }
 
             @Override // java.util.function.Predicate

@@ -33,14 +33,14 @@ public final class lot {
         Iterator it = set.iterator();
         while (it.hasNext()) {
             lqd lqdVar = (lqd) it.next();
-            for (final ltw ltwVar : lqdVar.a) {
-                if (!losVar.b.contains(ltwVar)) {
+            for (Object ltwVar : lqdVar.a) {
+                if (!losVar.b.contains(((ltw)(ltwVar)))) {
                     lrq lrqVar = losVar.d.a;
-                    lxu b = lrqVar.b(ltwVar);
-                    pht g = b == null ? ltwVar.b.a.g(1L) : null;
-                    obr.ap(ltwVar.d > 0);
-                    lxu a = lrqVar.a(ltwVar.d);
-                    pht g2 = a == null ? lrqVar.a.g(ltwVar.d) : null;
+                    lxu b = lrqVar.b(((ltw)(ltwVar)));
+                    pht g = b == null ? ((ltw)(ltwVar)).b.a.g(1L) : null;
+                    obr.ap(((ltw)(ltwVar)).d > 0);
+                    lxu a = lrqVar.a(((ltw)(ltwVar)).d);
+                    pht g2 = a == null ? lrqVar.a.g(((ltw)(ltwVar)).d) : null;
                     if (b == null || a == null) {
                         if (g == null) {
                             b.getClass();
@@ -62,27 +62,27 @@ public final class lot {
                     losVar.a.add(pgb.h(bX, new oiu() { // from class: loq
                         @Override // defpackage.oiu
                         public final Object a(Object obj) {
-                            return luh.e(ltw.this, (lup) obj);
+                            return luh.e(((ltw)(ltwVar)), (lup) obj);
                         }
                     }, pgr.a));
                     losVar.b.add(ltwVar);
                 }
             }
-            for (final lty ltyVar : lqdVar.b) {
+            for (Object ltyVar : lqdVar.b) {
                 if (!losVar.b.contains(ltyVar)) {
-                    long j = ltyVar.b;
+                    long j = ((lty)ltyVar).b;
                     if (j > 0) {
                         lrq lrqVar2 = losVar.d.a;
                         obr.ap(j > 0);
-                        lxu a2 = lrqVar2.a(ltyVar.b);
-                        losVar.a.add(pgb.h(a2 == null ? pgb.h(lrqVar2.a.g(ltyVar.b), new imd(9), pgr.a) : plk.V(lup.f(a2, null)), new oiu() { // from class: lor
+                        lxu a2 = lrqVar2.a(((lty)ltyVar).b);
+                        losVar.a.add(pgb.h(a2 == null ? pgb.h(lrqVar2.a.g(((lty)ltyVar).b), new imd(9), pgr.a) : plk.V(lup.f(a2, null)), new oiu() { // from class: lor
                             @Override // defpackage.oiu
                             public final Object a(Object obj) {
-                                return ltz.e(lty.this, (lup) obj);
+                                return ltz.e(((lty)ltyVar), (lup) obj);
                             }
                         }, pgr.a));
                     } else {
-                        losVar.a.add(plk.V(ltz.g(ltyVar)));
+                        losVar.a.add(plk.V(ltz.g(((lty)ltyVar))));
                     }
                     losVar.b.add(ltyVar);
                 }
@@ -92,18 +92,18 @@ public final class lot {
         h = pgb.h(plk.R(losVar.a), new oiu() { // from class: lop
             @Override // defpackage.oiu
             public final Object a(Object obj) {
-                los losVar2 = los.this;
+                los losVar2 = losVar;
                 List<lun> list = (List) obj;
                 opc D = ope.D();
-                for (lqd lqdVar2 : losVar2.c) {
+                for (Object lqdVar2 : losVar2.c) {
                     lot lotVar = losVar2.d;
                     opc D2 = ope.D();
                     for (lun lunVar : list) {
-                        if (lqdVar2.c.contains(lunVar.d())) {
+                        if (((lqd)lqdVar2).c.contains(lunVar.d())) {
                             D2.d(lunVar);
                         }
                     }
-                    D.d(lqh.n(lotVar.b, lqdVar2, D2.f()));
+                    D.d(lqh.n(lotVar.b, ((lqd)lqdVar2), D2.f()));
                 }
                 return D.f();
             }
@@ -130,13 +130,13 @@ public final class lot {
         Iterator it = set2.iterator();
         while (it.hasNext()) {
             lqh lqhVar = (lqh) it.next();
-            for (lun lunVar : lqhVar.a) {
-                lnx d = lunVar.d();
+            for (Object lunVar : lqhVar.a) {
+                lnx d = ((lun)lunVar).d();
                 if (!arrayList6.contains(d)) {
                     arrayList6.add(d);
-                    arrayList3.add(lunVar);
+                    arrayList3.add(((lun)lunVar));
                 } else {
-                    obr.aF(arrayList3.contains(lunVar));
+                    obr.aF(arrayList3.contains(((lun)lunVar)));
                 }
             }
             lqd lqdVar = lqhVar.c;
@@ -185,19 +185,19 @@ public final class lot {
                         }
                     } else {
                         arrayList = arrayList7;
-                        for (lty ltyVar : lqdVar2.b) {
+                        for (Object ltyVar : lqdVar2.b) {
                             if (!arrayList6.contains(ltyVar)) {
-                                long j = ltyVar.b;
+                                long j = ((lty)ltyVar).b;
                                 if (j > 0) {
                                     lrq lrqVar2 = this.a;
                                     obr.aF(j > 0);
-                                    lxu a2 = lrqVar2.a(ltyVar.b);
+                                    lxu a2 = lrqVar2.a(((lty)ltyVar).b);
                                     lup f3 = a2 == null ? null : lup.f(a2, null);
                                     if (f3 != null) {
-                                        arrayList.add(ltz.e(ltyVar, f3));
+                                        arrayList.add(ltz.e(((lty)ltyVar), f3));
                                     }
                                 } else {
-                                    arrayList.add(ltz.g(ltyVar));
+                                    arrayList.add(ltz.g(((lty)ltyVar)));
                                 }
                             }
                         }

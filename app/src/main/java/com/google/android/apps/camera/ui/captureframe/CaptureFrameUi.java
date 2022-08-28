@@ -42,7 +42,7 @@ public class CaptureFrameUi extends View {
 
     @Override // android.view.View
     public final void onDraw(final Canvas canvas) {
-        Collection.EL.stream(this.c).forEach(new Consumer() { // from class: ivb
+        (this.c.stream()).forEach(new Consumer() { // from class: ivb
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 CaptureFrameUi captureFrameUi = CaptureFrameUi.this;

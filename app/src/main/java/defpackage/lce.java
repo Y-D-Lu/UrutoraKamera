@@ -36,9 +36,9 @@ public class lce implements lda, cpl {
             obr.aR(!this.a, "Re-entrance isn't supported.");
             this.a = true;
             this.d = obj;
-            for (lij lijVar : this.b) {
+            for (Object lijVar : this.b) {
                 try {
-                    lijVar.fB(obj);
+                    ((lij)lijVar).fB(obj);
                 } catch (RejectedExecutionException e) {
                 }
             }

@@ -49,7 +49,7 @@ public class MediaListeningService extends JobService {
     @Override // android.app.job.JobService
     public final boolean onStartJob(JobParameters jobParameters) {
         Uri[] triggeredContentUris = jobParameters.getTriggeredContentUris();
-        if (triggeredContentUris == null || (r2 = triggeredContentUris.length) == 0) {
+        if (triggeredContentUris == null || triggeredContentUris.length == 0) {
             a(getApplicationContext());
             return false;
         }

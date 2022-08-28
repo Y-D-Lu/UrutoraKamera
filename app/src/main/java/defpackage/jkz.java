@@ -55762,7 +55762,7 @@ public final class jkz {
         } else {
             ((oug) ((oug) u.c()).G(3437)).y("Unsupported transition from %s -> %s", jlqVar.x, jlqVar2.x);
         }
-        this.p.setDuration(Collection.EL.stream(this.q).mapToLong(jkq.a).max().orElseThrow(new Supplier() { // from class: jkp
+        this.p.setDuration((this.q.stream()).mapToLong(jkq.a).max().orElseThrow(new Supplier() { // from class: jkp
             @Override // java.util.function.Supplier
             /* renamed from: get */
             public final Object mo291get() {

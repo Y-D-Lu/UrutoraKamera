@@ -3,8 +3,6 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.Collection;
-
 /* renamed from: iuc  reason: default package */
 /* loaded from: classes2.dex */
 public final /* synthetic */ class iuc implements lij {
@@ -48,7 +46,7 @@ public final /* synthetic */ class iuc implements lij {
                 return;
             default:
                 iud iudVar2 = this.a;
-                if (!Collection.EL.stream((List) obj).allMatch(bql.q)) {
+                if (!(((List) obj).stream()).allMatch(bql.q)) {
                     return;
                 }
                 ArrayList aj = obr.aj(iudVar2.e.a(), iudVar2.e.c());

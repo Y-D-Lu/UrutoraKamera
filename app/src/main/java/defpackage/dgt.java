@@ -87,7 +87,7 @@ public final class dgt {
                 return dgt.this.a(dgsVar, true, dgt.b);
             }
         });
-        for (final String str2 : ijs.h(cls)) {
+        for (Object str2 : ijs.h(cls)) {
             String str3 = this.f;
             StringBuilder sb = new StringBuilder(str.length() + 1 + String.valueOf(str2).length());
             sb.append(str);
@@ -98,7 +98,7 @@ public final class dgt {
                 public final Object a() {
                     dgt dgtVar = dgt.this;
                     dgs dgsVar2 = dgsVar;
-                    final String str4 = str2;
+                    final String str4 = (String) str2;
                     return dgtVar.a(dgsVar2, false, new dgr() { // from class: dgn
                         @Override // defpackage.dgr
                         public final boolean a(List list, int i, ijm ijmVar) {

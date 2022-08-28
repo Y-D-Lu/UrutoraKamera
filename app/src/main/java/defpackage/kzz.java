@@ -9,6 +9,7 @@ import android.os.ParcelFileDescriptor;
 import android.util.Log;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -79,13 +80,13 @@ public abstract class kzz extends BackupAgentHelper {
     }
 
     @Override // android.app.backup.BackupAgentHelper, android.app.backup.BackupAgent
-    public void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) {
+    public void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) throws IOException {
         Map a = a();
         SharedPreferences.Editor edit = getSharedPreferences("persistent_backup_agent_helper", 0).edit();
         edit.clear();
-        for (Map.Entry entry : ((oor) a).entrySet()) {
-            String str = (String) entry.getKey();
-            mip mipVar = (mip) entry.getValue();
+        for (Object entry : ((oor) a).entrySet()) {
+            String str = (String) ((Map.Entry)entry).getKey();
+            mip mipVar = (mip) ((Map.Entry)entry).getValue();
             if (!d(str)) {
                 StringBuilder sb = new StringBuilder(String.valueOf(str).length() + 43);
                 sb.append("Unsupported shared preferences file name \"");
@@ -114,7 +115,7 @@ public abstract class kzz extends BackupAgentHelper {
     }
 
     @Override // android.app.backup.BackupAgentHelper, android.app.backup.BackupAgent
-    public void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) {
+    public void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) throws IOException {
         super.onRestore(backupDataInput, i, parcelFileDescriptor);
         SharedPreferences sharedPreferences = getSharedPreferences("persistent_backup_agent_helper", 0);
         HashMap hashMap = new HashMap();
@@ -147,8 +148,8 @@ public abstract class kzz extends BackupAgentHelper {
                 c(editor, substring2, value);
             }
         }
-        for (SharedPreferences.Editor editor2 : hashMap.values()) {
-            editor2.apply();
+        for (Object editor2 : hashMap.values()) {
+            ((SharedPreferences.Editor)editor2).apply();
         }
         hashMap.keySet();
         e();

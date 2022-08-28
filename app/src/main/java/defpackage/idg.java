@@ -35,13 +35,13 @@ public final /* synthetic */ class idg implements Predicate {
     public final /* synthetic */ Predicate negate() {
         switch (this.c) {
             case 0:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 1:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             case 2:
-                return Predicate.CC.$default$negate(this);
+                return negate();
             default:
-                return Predicate.CC.$default$negate(this);
+                return negate();
         }
     }
 
@@ -63,19 +63,19 @@ public final /* synthetic */ class idg implements Predicate {
     public final boolean test(Object obj) {
         switch (this.c) {
             case 0:
-                return Map.EL.putIfAbsent(this.a, this.b.apply(obj), Boolean.TRUE) == null;
+                return this.a.putIfAbsent(this.b.apply(obj), Boolean.TRUE) == null;
             case 1:
                 java.util.Map map = this.a;
                 Function function = this.b;
                 int i = icf.d;
-                return Map.EL.putIfAbsent(map, function.apply(obj), Boolean.TRUE) == null;
+                return map.putIfAbsent(function.apply(obj), Boolean.TRUE) == null;
             case 2:
-                return Map.EL.putIfAbsent(this.a, this.b.apply(obj), Boolean.TRUE) == null;
+                return this.a.putIfAbsent(this.b.apply(obj), Boolean.TRUE) == null;
             default:
                 java.util.Map map2 = this.a;
                 Function function2 = this.b;
                 ouj oujVar = iec.a;
-                return Map.EL.putIfAbsent(map2, function2.apply(obj), Boolean.TRUE) == null;
+                return map2.putIfAbsent(function2.apply(obj), Boolean.TRUE) == null;
         }
     }
 }

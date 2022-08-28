@@ -335,7 +335,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                                 idsVar2.j.put(managedSwitchPreference4.getKey(), Boolean.valueOf(idsVar2.b.m(managedSwitchPreference4.getKey())));
                                 idsVar2.e(managedSwitchPreference4, false);
                             }
-                        } else if (Collection.EL.stream(idsVar2.j.values()).anyMatch(bql.l)) {
+                        } else if ((idsVar2.j.values().stream()).anyMatch(bql.l)) {
                             oom f2 = idsVar2.h.f();
                             int i6 = ((orr) f2).c;
                             while (i3 < i6) {
@@ -346,7 +346,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                                 i3++;
                             }
                             idsVar2.j.clear();
-                        } else if (Collection.EL.stream(idsVar2.i.values()).anyMatch(bql.l)) {
+                        } else if ((idsVar2.i.values().stream()).anyMatch(bql.l)) {
                             oom f3 = idsVar2.h.f();
                             int i7 = ((orr) f3).c;
                             while (i3 < i7) {

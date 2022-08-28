@@ -128,8 +128,8 @@ public class icw implements icl, fik {
         }
         ArrayList arrayList2 = new ArrayList(c);
         arrayList2.addAll(c2);
-        icfVar.a.h((List) Collection.EL.stream(arrayList2).filter(icf.a(icd.b)).collect(Collectors.toList()));
-        Collection.EL.stream(c).forEachOrdered(new Consumer() { // from class: icb
+        icfVar.a.h((List) (arrayList2.stream()).filter(icf.a(icd.b)).collect(Collectors.toList()));
+        (c.stream()).forEachOrdered(new Consumer() { // from class: icb
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 switch (r4) {
@@ -168,7 +168,7 @@ public class icw implements icl, fik {
                 }
             }
         });
-        Collection.EL.stream(c2).forEachOrdered(new Consumer() { // from class: icb
+        (c2.stream()).forEachOrdered(new Consumer() { // from class: icb
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 switch (r4) {
@@ -207,7 +207,7 @@ public class icw implements icl, fik {
                 }
             }
         });
-        ArrayList arrayList3 = (ArrayList) Collection.EL.stream(arrayList).sorted(new Comparator() { // from class: ica
+        ArrayList arrayList3 = (ArrayList) (arrayList.stream()).sorted(new Comparator() { // from class: ica
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
                 ifm ifmVar = (ifm) obj;
@@ -226,7 +226,7 @@ public class icw implements icl, fik {
         ifl a = ifm.a();
         final AtomicInteger atomicInteger = new AtomicInteger();
         final AtomicInteger atomicInteger2 = new AtomicInteger();
-        Collection.EL.stream(arrayList3).forEachOrdered(new Consumer() { // from class: icc
+        (arrayList3.stream()).forEachOrdered(new Consumer() { // from class: icc
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 AtomicInteger atomicInteger3 = atomicInteger;
@@ -248,8 +248,8 @@ public class icw implements icl, fik {
         a.c(true);
         a.d(true);
         arrayList3.add(a.a());
-        ArrayList arrayList4 = (ArrayList) Collection.EL.stream(arrayList3).filter(bql.j).collect(Collectors.toCollection(idh.b));
-        List<ResolveInfo> list = (List) Collection.EL.stream(arrayList4).map(icd.c).collect(Collectors.toList());
+        ArrayList arrayList4 = (ArrayList) (arrayList3.stream()).filter(bql.j).collect(Collectors.toCollection(idh.b));
+        List<ResolveInfo> list = (List) (arrayList4.stream()).map(icd.c).collect(Collectors.toList());
         ick ickVar = this.p;
         Context context = this.h;
         obr.aQ(ickVar.c);

@@ -42,7 +42,7 @@ public final class czv {
                     czv czvVar = czv.this;
                     ArrayList<Long> arrayList = new ArrayList();
                     synchronized (czvVar) {
-                        arrayList.addAll((Collection) Collection.EL.stream(czvVar.b.entrySet()).filter(new dhp(SystemClock.elapsedRealtime(), 1)).map(cgw.g).collect(Collectors.toList()));
+                        arrayList.addAll((Collection) (czvVar.b.entrySet().stream()).filter(new dhp(SystemClock.elapsedRealtime(), 1)).map(cgw.g).collect(Collectors.toList()));
                         for (Long l : arrayList) {
                             czvVar.b.remove(l);
                         }

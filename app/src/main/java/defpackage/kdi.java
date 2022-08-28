@@ -54,8 +54,8 @@ public final class kdi {
             StringBuilder sb2 = new StringBuilder();
             boolean z = false;
             int i2 = 0;
-            for (Map.Entry entry : new TreeMap((Map) obj).entrySet()) {
-                String a = a(entry.getValue(), i + 1);
+            for (Object entry : new TreeMap((Map) obj).entrySet()) {
+                String a = a(((Map.Entry)entry).getValue(), i + 1);
                 if (!TextUtils.isEmpty(a)) {
                     if (i > 0 && !z) {
                         sb2.append("{");
@@ -65,7 +65,7 @@ public final class kdi {
                     if (sb2.length() > i2) {
                         sb2.append(", ");
                     }
-                    sb2.append((String) entry.getKey());
+                    sb2.append((String) ((Map.Entry)entry).getKey());
                     sb2.append('=');
                     sb2.append(a);
                 }

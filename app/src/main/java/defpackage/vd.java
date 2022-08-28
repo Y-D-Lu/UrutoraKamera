@@ -27,8 +27,8 @@ public class vd implements Iterable {
         }
         this.e--;
         if (!this.d.isEmpty()) {
-            for (vc vcVar : this.d.keySet()) {
-                vcVar.fo(a);
+            for (Object vcVar : this.d.keySet()) {
+                ((vc)vcVar).fo(a);
             }
         }
         uz uzVar = a.d;

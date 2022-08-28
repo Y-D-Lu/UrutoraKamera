@@ -18,7 +18,7 @@ public final class lmg {
     public int g;
 
     static {
-        i = r0;
+        i = null;
         int[] iArr = {0, 1, 1, 2, 4, 8, 0, 1, 0, 4, 8};
         new SimpleDateFormat("yyyy:MM:dd HH:mm:ss");
     }

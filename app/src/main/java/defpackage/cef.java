@@ -115,7 +115,7 @@ public final class cef {
         return pgb.i(i, new pgk() { // from class: ced
             @Override // defpackage.pgk
             public final pht a(Object obj) {
-                return cdf.this.e((ope) obj);
+                return cdfVar.e((ope) obj);
             }
         }, this.d);
     }

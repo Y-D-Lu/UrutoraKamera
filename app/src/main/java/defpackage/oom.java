@@ -109,7 +109,7 @@ public abstract class oom extends ood implements List, RandomAccess {
         return w(objArr2);
     }
 
-    private void readObject(ObjectInputStream objectInputStream) {
+    private void readObject(ObjectInputStream objectInputStream) throws InvalidObjectException {
         throw new InvalidObjectException("Use SerializedForm");
     }
 
@@ -160,7 +160,7 @@ public abstract class oom extends ood implements List, RandomAccess {
         return obr.an(this, obj);
     }
 
-    @Override // defpackage.ood
+//    @Override // defpackage.ood
     public final oti gH() {
         return listIterator();
     }

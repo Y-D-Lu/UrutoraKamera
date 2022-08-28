@@ -46,7 +46,7 @@ final class kfd extends kdu {
         this.c = new kfm();
     }
 
-    private static final void I(StringBuilder sb, String str, String str2) {
+    private static final void I(StringBuilder sb, String str, String str2) throws UnsupportedEncodingException {
         if (sb.length() != 0) {
             sb.append('&');
         }
@@ -56,7 +56,7 @@ final class kfd extends kdu {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final HttpURLConnection C(URL url) {
+    public final HttpURLConnection C(URL url) throws IOException {
         URLConnection openConnection = url.openConnection();
         if (openConnection instanceof HttpURLConnection) {
             HttpURLConnection httpURLConnection = (HttpURLConnection) openConnection;
@@ -132,7 +132,7 @@ final class kfd extends kdu {
         }
     }
 
-    public final void G(HttpURLConnection httpURLConnection) {
+    public final void G(HttpURLConnection httpURLConnection) throws IOException {
         InputStream inputStream;
         try {
             inputStream = httpURLConnection.getInputStream();
@@ -152,7 +152,6 @@ final class kfd extends kdu {
                 o("Error closing http connection input stream", e);
             }
         } catch (Throwable th2) {
-            th = th2;
             if (inputStream != null) {
                 try {
                     inputStream.close();
@@ -160,7 +159,7 @@ final class kfd extends kdu {
                     o("Error closing http connection input stream", e2);
                 }
             }
-            throw th;
+            throw th2;
         }
     }
 
@@ -297,10 +296,10 @@ final class kfd extends kdu {
         mip.dk(kexVar);
         StringBuilder sb = new StringBuilder();
         try {
-            for (Map.Entry entry : kexVar.a.entrySet()) {
-                String str = (String) entry.getKey();
+            for (Object entry : kexVar.a.entrySet()) {
+                String str = (String) ((Map.Entry)entry).getKey();
                 if (!"ht".equals(str) && !"qt".equals(str) && !"AppUID".equals(str) && !"z".equals(str) && !"_gmsv".equals(str)) {
-                    I(sb, str, (String) entry.getValue());
+                    I(sb, str, (String) ((Map.Entry)entry).getValue());
                 }
             }
             I(sb, "ht", String.valueOf(kexVar.c));
@@ -321,7 +320,7 @@ final class kfd extends kdu {
                 I(sb, "z", j != 0 ? String.valueOf(j) : String.valueOf(kexVar.b));
             }
             return sb.toString();
-        } catch (UnsupportedEncodingException e2) {
+        } catch (Exception e2) {
             o("Failed to encode name or value", e2);
             return null;
         }

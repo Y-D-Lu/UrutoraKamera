@@ -25,7 +25,7 @@ public final class mun {
         synchronized (mun.class) {
             if (f == d) {
                 if (!myw.i()) {
-                    d.v(c.c(), "Primes.initialize() should only be called from the main thread.", (char) 3587);
+                    defpackage.d.v(c.c(), "Primes.initialize() should only be called from the main thread.", (char) 3587);
                 }
                 f = muiVar.a;
             }

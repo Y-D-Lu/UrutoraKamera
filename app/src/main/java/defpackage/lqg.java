@@ -140,7 +140,7 @@ public final class lqg {
         }
         long a = this.a.a();
         long aW = mip.aW(F);
-        Iterator<E> it2 = F.iterator();
+        Iterator it2 = F.iterator();
         int i = Integer.MAX_VALUE;
         while (true) {
             boolean z = true;

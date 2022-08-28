@@ -406,7 +406,7 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
             pemVar9.s = c;
             pemVar9.a = 262144 | i19;
             pemVar9.t = c2;
-            Iterable<peo> iterable = (Iterable) Collection.EL.stream(ckwVar.n).map(new Function() { // from class: cvb
+            Iterable<peo> iterable = (Iterable) (ckwVar.n.stream()).map(new Function() { // from class: cvb
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
                     return function.getClass();

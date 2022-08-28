@@ -51,13 +51,13 @@ public class kqh extends Service {
                         bmp.e(a, kriVar);
                         krjVar.z(1, a);
                         this.b = krjVar;
-                    } catch (RemoteException e) {
+                    } catch (Exception e) {
                         if (Log.isLoggable("brella.InAppExStProxy", 5)) {
                             Log.w("brella.InAppExStProxy", "RemoteException in IInAppExampleStoreProxy.init", e);
                         }
                         return new krk("No IInAppExampleStoreProxy implementation found");
                     }
-                } catch (krn e2) {
+                } catch (Exception e2) {
                     if (Log.isLoggable("brella.InAppExStProxy", 5)) {
                         Log.w("brella.InAppExStProxy", "LoadingException during onBind", e2);
                     }
@@ -72,7 +72,7 @@ public class kqh extends Service {
             IBinder readStrongBinder = y.readStrongBinder();
             y.recycle();
             return readStrongBinder;
-        } catch (RemoteException e3) {
+        } catch (Exception e3) {
             if (Log.isLoggable("brella.InAppExStProxy", 5)) {
                 Log.w("brella.InAppExStProxy", "RemoteException in IInAppExampleStoreProxy.onBind", e3);
             }
@@ -86,7 +86,7 @@ public class kqh extends Service {
         if (a != null) {
             try {
                 a.z(2, a.a());
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable("brella.InAppExStProxy", 5)) {
                     Log.w("brella.InAppExStProxy", "RemoteException in IInAppExampleStoreProxy.onCreate", e);
                 }
@@ -104,7 +104,7 @@ public class kqh extends Service {
                 bmp.c(a2, intent);
                 a.z(6, a2);
                 return;
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable("brella.InAppExStProxy", 5)) {
                     Log.w("brella.InAppExStProxy", "RemoteException in IInAppExampleStoreProxy.onRebind", e);
                 }
@@ -121,7 +121,7 @@ public class kqh extends Service {
                 Parcel a2 = a.a();
                 a2.writeInt(i);
                 a.z(4, a2);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable("brella.InAppExStProxy", 5)) {
                     Log.w("brella.InAppExStProxy", "RemoteException in IInAppExampleStoreProxy.onTrimMemory", e);
                 }
@@ -141,7 +141,7 @@ public class kqh extends Service {
                 boolean f = bmp.f(y);
                 y.recycle();
                 return f;
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable("brella.InAppExStProxy", 5)) {
                     Log.w("brella.InAppExStProxy", "RemoteException in IInAppExampleStoreProxy.onUnbind", e);
                 }

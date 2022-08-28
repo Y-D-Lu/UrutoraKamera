@@ -85,7 +85,7 @@ public abstract class cbz extends kqh {
                                             try {
                                                 kreVar.b(a(getApplicationContext(), ccuVar2, (ccs) ppd.s(ccs.c, bArr2, pos.b())));
                                                 return;
-                                            } catch (ppp e) {
+                                            } catch (Exception e) {
                                                 ((oug) ((oug) ((oug) a.c()).h(e)).G((char) 224)).o("Error parsing ResumptionPoint proto: ");
                                                 kreVar.a(10, e.getMessage());
                                                 return;
@@ -104,11 +104,6 @@ public abstract class cbz extends kqh {
                             throw e3;
                         }
                         throw new ppp(e3);
-                    } catch (IOException e4) {
-                        if (!(e4.getCause() instanceof ppp)) {
-                            throw new ppp(e4);
-                        }
-                        throw ((ppp) e4.getCause());
                     } catch (RuntimeException e5) {
                         if (!(e5.getCause() instanceof ppp)) {
                             throw e5;
@@ -123,7 +118,7 @@ public abstract class cbz extends kqh {
                 String valueOf = String.valueOf(e7.getMessage());
                 kreVar.a(10, valueOf.length() != 0 ? "Error parsing SelectionCriteria proto: ".concat(valueOf) : new String("Error parsing SelectionCriteria proto: "));
             }
-        } catch (ppp e8) {
+        } catch (Exception e8) {
             d.v(a.c(), "Error parsing Any proto from criteria", (char) 226);
             kreVar.a(10, "Error parsing Any proto from criteria");
         }

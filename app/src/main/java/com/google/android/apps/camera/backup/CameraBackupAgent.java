@@ -5,6 +5,7 @@ import android.app.backup.BackupDataOutput;
 import android.os.ParcelFileDescriptor;
 import android.preference.PreferenceManager;
 
+import java.io.IOException;
 import java.util.Map;
 
 import defpackage.caj;
@@ -30,14 +31,14 @@ public class CameraBackupAgent extends kzz {
     }
 
     @Override // defpackage.kzz, android.app.backup.BackupAgentHelper, android.app.backup.BackupAgent
-    public final void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) {
+    public final void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) throws IOException {
         super.onBackup(parcelFileDescriptor, backupDataOutput, parcelFileDescriptor2);
         e();
         this.a.h();
     }
 
     @Override // defpackage.kzz, android.app.backup.BackupAgentHelper, android.app.backup.BackupAgent
-    public final void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) {
+    public final void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) throws IOException {
         super.onRestore(backupDataInput, i, parcelFileDescriptor);
         e();
         this.a.i();

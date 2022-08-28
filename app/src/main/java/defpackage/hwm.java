@@ -47,7 +47,7 @@ public final class hwm {
                 case 3:
                     final hwh hwhVar = (hwh) this.h.mo37get();
                     if (hwhVar.d == null) {
-                        d.v(hwh.a.c(), "Not eligible for HAL update.", (char) 2678);
+                        defpackage.d.v(hwh.a.c(), "Not eligible for HAL update.", (char) 2678);
                         return;
                     } else if (((Integer) hwhVar.n.c(htu.U)).intValue() > pyz.b()) {
                         ((oug) ((oug) hwh.a.c()).G(2677)).q("Attempted HAL update for more than %d times. Skipping update.", pyz.b());
@@ -64,7 +64,7 @@ public final class hwm {
                                 long j;
                                 Object obj;
                                 int i3;
-                                hwh hwhVar2 = hwh.this;
+                                hwh hwhVar2 = hwhVar;
                                 String str2 = str;
                                 hwhVar2.r.e("SidelineInstaller#shouldStartUpdate");
                                 long b = hwv.b(hwhVar2.b);

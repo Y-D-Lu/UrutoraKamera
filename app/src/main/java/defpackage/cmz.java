@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import java.util.Collection;
-
 /* renamed from: cmz  reason: default package */
 /* loaded from: classes.dex */
 public final class cmz implements lie {
@@ -31,7 +29,7 @@ public final class cmz implements lie {
     public final void close() {
         if (this.c.compareAndSet(false, true)) {
             this.a.close();
-            Collection.EL.stream(this.b).map(cgw.e).forEach(cez.d);
+            this.b.stream().map(cgw.e).forEach(cez.d);
         }
     }
 }

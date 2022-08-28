@@ -84,9 +84,9 @@ public class gd {
     }
 
     public static void o(Map map, Map map2) {
-        for (Map.Entry entry : map.entrySet()) {
-            String str = (String) entry.getKey();
-            Object value = entry.getValue();
+        for (Object entry : map.entrySet()) {
+            String str = (String) ((Map.Entry)entry).getKey();
+            Object value = ((Map.Entry)entry).getValue();
             if (value == null) {
                 map2.put(str, null);
             } else {

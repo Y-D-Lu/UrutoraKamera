@@ -30,8 +30,8 @@ public final class lrl {
         this.d = lrgVar;
         opc opcVar = new opc();
         synchronized (loyVar) {
-            for (low lowVar : loyVar.b) {
-                opcVar.d(lowVar.h);
+            for (Object lowVar : loyVar.b) {
+                opcVar.d(((low)lowVar).h);
             }
         }
         this.e = opcVar.f();
@@ -58,13 +58,13 @@ public final class lrl {
         }
         Iterator it4 = set3.iterator();
         while (it4.hasNext()) {
-            for (lnq lnqVar2 : ((lqd) it4.next()).d) {
-                if (hashMap.containsKey(lnqVar2.a)) {
-                    lnq lnqVar3 = (lnq) hashMap.get(lnqVar2.a);
+            for (Object lnqVar2 : ((lqd) it4.next()).d) {
+                if (hashMap.containsKey(((lnq)lnqVar2).a)) {
+                    lnq lnqVar3 = (lnq) hashMap.get(((lnq)lnqVar2).a);
                     lnqVar3.getClass();
                     if (!lnqVar2.equals(lnqVar3)) {
-                        String valueOf = String.valueOf(lnqVar2.a);
-                        String valueOf2 = String.valueOf(lnqVar2.b);
+                        String valueOf = String.valueOf(((lnq)lnqVar2).a);
+                        String valueOf2 = String.valueOf(((lnq)lnqVar2).b);
                         String valueOf3 = String.valueOf(lnqVar3.b);
                         int length = String.valueOf(valueOf).length();
                         StringBuilder sb = new StringBuilder(length + 53 + String.valueOf(valueOf2).length() + String.valueOf(valueOf3).length());
@@ -78,7 +78,7 @@ public final class lrl {
                         throw new IllegalStateException(sb.toString());
                     }
                 } else {
-                    hashMap.put(lnqVar2.a, lnqVar2);
+                    hashMap.put(((lnq)lnqVar2).a, lnqVar2);
                 }
             }
         }
@@ -148,9 +148,9 @@ public final class lrl {
 
     private final synchronized void l() {
         k();
-        for (lqh lqhVar : this.g) {
-            lqhVar.f();
-            lqhVar.g();
+        for (Object lqhVar : this.g) {
+            ((lqh)lqhVar).f();
+            ((lqh)lqhVar).g();
         }
         this.g.clear();
     }
@@ -163,8 +163,8 @@ public final class lrl {
     private static final boolean n(Set set) {
         Iterator it = set.iterator();
         while (it.hasNext()) {
-            for (lnx lnxVar : ((lqd) it.next()).c) {
-                if (lnxVar.e()) {
+            for (Object lnxVar : ((lqd) it.next()).c) {
+                if (((lnx)lnxVar).e()) {
                     return true;
                 }
             }
@@ -185,7 +185,7 @@ public final class lrl {
         return i(n(set3) ? this.a.d : this.a.c, set, set2, set3, set4);
     }
 
-    public final synchronized void c() {
+    public final synchronized void c() throws Throwable {
         oor o;
         try {
             ltd ltdVar = this.c;
@@ -252,8 +252,7 @@ public final class lrl {
                                     ((ltt) ltdVar2).f = false;
                                     throw th2;
                                 } catch (Throwable th3) {
-                                    th = th3;
-                                    throw th;
+                                    throw th3;
                                 }
                             }
                         }

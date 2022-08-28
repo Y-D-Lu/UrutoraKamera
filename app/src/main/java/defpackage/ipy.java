@@ -97,7 +97,7 @@ public final /* synthetic */ class ipy implements Runnable {
                     f = oohVar.f();
                 }
                 boolean z = true;
-                if (((List) Collection.EL.stream(f).map(icd.r).filter(bql.p).map(icd.s).collect(Collectors.toList())).size() <= 1) {
+                if (((List) (f.stream()).map(icd.r).filter(bql.p).map(icd.s).collect(Collectors.toList())).size() <= 1) {
                     z = false;
                 }
                 gtgVar.aw = z;

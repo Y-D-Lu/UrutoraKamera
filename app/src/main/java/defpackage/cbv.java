@@ -41,10 +41,7 @@ public final class cbv implements kqg {
                 final ccu ccuVar = this.g;
                 final ccs ccsVar = (ccs) this.c.get();
                 int i = this.g.g;
-                final int i2 = 100;
-                if (i > 0) {
-                    i2 = Math.min(100, i - this.d.get());
-                }
+                final int i2 = i > 0 ? Math.min(100, i - this.d.get()) : 100;
                 boolean z = true;
                 if (ccuVar.i && ccuVar.h.size() > 0) {
                     z = false;
@@ -53,7 +50,7 @@ public final class cbv implements kqg {
                 h = pgb.h(ccuVar.i ? plk.aa(new pgj() { // from class: cce
                     @Override // defpackage.pgj
                     public final pht a() {
-                        ccn ccnVar2 = ccn.this;
+                        ccn ccnVar2 = ccnVar;
                         ccu ccuVar2 = ccuVar;
                         ccs ccsVar2 = ccsVar;
                         int i3 = i2;

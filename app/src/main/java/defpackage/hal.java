@@ -86,7 +86,7 @@ public final class hal {
                             goc gocVar = new goc();
                             lpc a3 = lpc.a(i);
                             gzuVar.c(a3, gocVar, lqdVar, a2, 0, true);
-                            List list = (List) Collection.EL.stream(gzuVar.b(a3, b, lzvVar, a2)).map(cgw.t).collect(Collectors.toList());
+                            List list = (List) (gzuVar.b(a3, b, lzvVar, a2).stream()).map(cgw.t).collect(Collectors.toList());
                             this.h.g("submitRequests");
                             list.size();
                             List c = lngVar.c(list);

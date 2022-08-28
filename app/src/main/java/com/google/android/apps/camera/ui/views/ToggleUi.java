@@ -87,7 +87,7 @@ public class ToggleUi extends FrameLayout {
     public final void a(jrz jrzVar) {
         this.b = jrzVar;
         mip.es(this, jrzVar);
-        Collection.EL.stream(ope.H(this.c)).forEach(new iem(jrzVar, 2));
+        ope.H(this.c).stream().forEach(new iem(jrzVar, 2));
     }
 
     public final void b() {

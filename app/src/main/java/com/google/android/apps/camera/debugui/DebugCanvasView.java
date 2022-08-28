@@ -127,7 +127,7 @@ public class DebugCanvasView extends dka {
         if (!d()) {
             return;
         }
-        Collection.EL.stream(this.k).forEach(new Consumer(this) { // from class: djw
+        (this.k.stream()).forEach(new Consumer(this) { // from class: djw
             public final /* synthetic */ DebugCanvasView a;
 
             {
@@ -183,7 +183,7 @@ public class DebugCanvasView extends dka {
             }
         });
         if (!this.l.isEmpty()) {
-            Collection.EL.stream(this.l).forEach(new Consumer(this) { // from class: djw
+            (this.l.stream()).forEach(new Consumer(this) { // from class: djw
                 public final /* synthetic */ DebugCanvasView a;
 
                 {

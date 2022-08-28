@@ -16,12 +16,6 @@ public final class lmw implements Comparable {
         this.d = j3;
     }
 
-    @Override // java.lang.Comparable
-    /* renamed from: a */
-    public final int compareTo(lmw lmwVar) {
-        return (this.d > lmwVar.d ? 1 : (this.d == lmwVar.d ? 0 : -1));
-    }
-
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -43,5 +37,10 @@ public final class lmw implements Comparable {
         aZ.f("onStartedId", this.d);
         aZ.f("frameNumber", this.c);
         return aZ.toString();
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return (this.d > ((lmw)o).d ? 1 : (this.d == ((lmw)o).d ? 0 : -1));
     }
 }

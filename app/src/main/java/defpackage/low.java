@@ -103,8 +103,8 @@ public final class low implements lmv {
                 return;
             }
             this.g = true;
-            for (lrr lrrVar : this.d) {
-                lrrVar.c();
+            for (Object lrrVar : this.d) {
+                ((lrr)lrrVar).c();
             }
             this.d.clear();
             this.c.clear();
@@ -124,9 +124,9 @@ public final class low implements lmv {
     @Override // defpackage.lmv
     public final synchronized lmr d(ojf ojfVar) {
         if (!this.g && !this.d.isEmpty()) {
-            for (lrr lrrVar : this.d) {
+            for (Object lrrVar : this.d) {
                 if (ojfVar.a(lrrVar)) {
-                    return lrrVar.a();
+                    return ((lrr)lrrVar).a();
                 }
             }
             return null;
@@ -150,14 +150,14 @@ public final class low implements lmv {
     public final synchronized lmr f(ojf ojfVar) {
         if (!this.g && !this.d.isEmpty()) {
             final Deque deque = this.d;
-            for (lrr lrrVar : new Iterable() { // from class: lou
+            for (Object lrrVar : new Iterable() { // from class: lou
                 @Override // java.lang.Iterable
                 public final Iterator iterator() {
                     return deque.descendingIterator();
                 }
             }) {
                 if (ojfVar.a(lrrVar)) {
-                    return lrrVar.a();
+                    return ((lrr)lrrVar).a();
                 }
             }
             return null;
@@ -197,8 +197,8 @@ public final class low implements lmv {
     public final synchronized List i() {
         if (!this.g && !this.d.isEmpty()) {
             ooh f = oom.f(this.d.size());
-            for (lrr lrrVar : this.d) {
-                lmr a = lrrVar.a();
+            for (Object lrrVar : this.d) {
+                lmr a = ((lrr)lrrVar).a();
                 if (a != null) {
                     f.g(a);
                 }
@@ -212,13 +212,13 @@ public final class low implements lmv {
     public final synchronized List j() {
         if (!this.g && !this.d.isEmpty()) {
             ooh f = oom.f(this.d.size());
-            for (lrr lrrVar : this.d) {
-                lmr a = lrrVar.a();
+            for (Object lrrVar : this.d) {
+                lmr a = ((lrr)lrrVar).a();
                 if (a != null) {
                     f.g(a);
                 }
                 this.c.addLast(lrrVar);
-                lrrVar.c();
+                ((lrr)lrrVar).c();
             }
             this.d.clear();
             return f.f();
@@ -290,9 +290,9 @@ public final class low implements lmv {
     @Override // defpackage.lmv
     public final synchronized boolean p() {
         if (!this.g && !this.d.isEmpty()) {
-            for (lrr lrrVar : this.d) {
+            for (Object lrrVar : this.d) {
                 this.c.addLast(lrrVar);
-                lrrVar.c();
+                ((lrr)lrrVar).c();
             }
             this.d.clear();
             return true;

@@ -40,17 +40,17 @@ public class wy extends xf implements Map {
 
     @Override // java.util.Map
     public final /* synthetic */ Object compute(Object obj, BiFunction biFunction) {
-        return Map.CC.$default$compute(this, obj, biFunction);
+        return compute(obj, biFunction);
     }
 
     @Override // java.util.Map
     public final /* synthetic */ Object computeIfAbsent(Object obj, Function function) {
-        return Map.CC.$default$computeIfAbsent(this, obj, function);
+        return computeIfAbsent(obj, function);
     }
 
     @Override // java.util.Map
     public final /* synthetic */ Object computeIfPresent(Object obj, BiFunction biFunction) {
-        return Map.CC.$default$computeIfPresent(this, obj, biFunction);
+        return computeIfPresent(obj, biFunction);
     }
 
     @Override // java.util.Map, java.util.Map
@@ -66,7 +66,7 @@ public class wy extends xf implements Map {
 
     @Override // java.util.Map
     public final /* synthetic */ void forEach(BiConsumer biConsumer) {
-        Map.CC.$default$forEach(this, biConsumer);
+        forEach(biConsumer);
     }
 
     @Override // java.util.Map, java.util.Map
@@ -82,20 +82,20 @@ public class wy extends xf implements Map {
 
     @Override // java.util.Map
     public final /* synthetic */ Object merge(Object obj, Object obj2, BiFunction biFunction) {
-        return Map.CC.$default$merge(this, obj, obj2, biFunction);
+        return merge(obj, obj2, biFunction);
     }
 
     @Override // java.util.Map, java.util.Map
     public final void putAll(java.util.Map map) {
         j(this.j + map.size());
-        for (Map.Entry entry : map.entrySet()) {
-            put(entry.getKey(), entry.getValue());
+        for (Object entry : map.entrySet()) {
+            put(((Map.Entry)entry).getKey(), ((Map.Entry)entry).getValue());
         }
     }
 
     @Override // java.util.Map
     public final /* synthetic */ void replaceAll(BiFunction biFunction) {
-        Map.CC.$default$replaceAll(this, biFunction);
+        replaceAll(biFunction);
     }
 
     @Override // java.util.Map, java.util.Map

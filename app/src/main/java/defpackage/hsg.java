@@ -9,8 +9,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-
-import java.util.Collection;
 import java.util.TimeZone;
 
 /* renamed from: hsg  reason: default package */
@@ -59,7 +57,7 @@ public final class hsg {
     private final synchronized hsc j(String str, boolean z) {
         hsc hscVar;
         if (z) {
-            obr.aT(Collection.EL.stream(this.j.keySet()).noneMatch(bql.i), "Already created a primary item: %s", this.j);
+            obr.aT(this.j.keySet().stream().noneMatch(bql.i), "Already created a primary item: %s", this.j);
         }
         mas masVar = this.a;
         String J = mip.J(str);
@@ -81,12 +79,12 @@ public final class hsg {
         lisVar.f(sb.toString());
         hsc hscVar = null;
         hsc hscVar2 = null;
-        for (hsc hscVar3 : this.j.keySet()) {
-            if (hscVar3.b) {
+        for (Object hscVar3 : this.j.keySet()) {
+            if (((hsc)hscVar3).b) {
                 obr.aW(hscVar2 == null, "Found multiple primaries (%s and %s) in %s: %s", hscVar2, hscVar3, this, this.j);
-                hscVar2 = hscVar3;
+                hscVar2 = (hsc) hscVar3;
             } else if (hscVar == null && this.j.get(hscVar3) == hsf.PUBLISH) {
-                hscVar = hscVar3;
+                hscVar = (hsc) hscVar3;
             }
         }
         Map map = this.j;
@@ -116,16 +114,16 @@ public final class hsg {
                 this.a.a();
             }
         }
-        for (hsc hscVar4 : this.j.keySet()) {
+        for (Object hscVar4 : this.j.keySet()) {
             hsf hsfVar = (hsf) this.j.get(hscVar4);
             hsfVar.getClass();
             switch (hsfVar.ordinal()) {
                 case 0:
-                    hscVar4.a.g();
+                    ((hsc) hscVar4).a.g();
                     break;
                 case 1:
                 case 2:
-                    hscVar4.a.f();
+                    ((hsc) hscVar4).a.f();
                     break;
             }
         }
@@ -152,13 +150,13 @@ public final class hsg {
     }
 
     public final synchronized mak c() {
-        return ((hsc) Collection.EL.stream(this.j.keySet()).filter(bql.i).findFirst().get()).a;
+        return ((hsc) this.j.keySet().stream().filter(bql.i).findFirst().get()).a;
     }
 
     public final synchronized void d() {
         if (l()) {
-            for (hsc hscVar : this.j.keySet()) {
-                hscVar.a.f();
+            for (Object hscVar : this.j.keySet()) {
+                ((hsc) hscVar).a.f();
             }
             this.a.a();
         }

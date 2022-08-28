@@ -1,10 +1,8 @@
 package defpackage;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
-
-import java.util.Collection;
-import java.util.Comparator;
 import java.util.stream.Collectors;
 
 /* renamed from: cko  reason: default package */
@@ -19,7 +17,7 @@ public final class cko implements pys {
     @Override // defpackage.qkg
     /* renamed from: a */
     public final List mo37get() {
-        List list = (List) Collection.EL.stream((Set) ((pyt) this.a).a).sorted(Comparator.comparing(cgw.d)).collect(Collectors.toList());
+        List list = (List) ((Set) ((pyt) this.a).a).stream().sorted(Comparator.comparing(cgw.d)).collect(Collectors.toList());
         qmd.ae(list);
         return list;
     }
