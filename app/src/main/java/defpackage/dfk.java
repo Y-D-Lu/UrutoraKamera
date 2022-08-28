@@ -78,7 +78,7 @@ public abstract class dfk implements bty {
     @Override // defpackage.bty
     public final void h(int i, int i2) {
         if (i <= 0 || i2 <= 0) {
-            d.v(a.c(), "Suggested size was set to a zero area value!", (char) 740);
+            defpackage.d.v(a.c(), "Suggested size was set to a zero area value!", (char) 740);
         } else {
             this.g = new lig(i, i2);
         }
@@ -94,7 +94,7 @@ public abstract class dfk implements bty {
     public final void l(View view) {
         dfj k = k(view);
         if (k == null) {
-            d.v(a.c(), "renderThumbnail was called with an invalid view!", (char) 739);
+            defpackage.d.v(a.c(), "renderThumbnail was called with an invalid view!", (char) 739);
         } else {
             m(k);
         }

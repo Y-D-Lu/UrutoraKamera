@@ -15,7 +15,7 @@ public final class ejc implements SurfaceTexture.OnFrameAvailableListener {
     @Override // android.graphics.SurfaceTexture.OnFrameAvailableListener
     public final void onFrameAvailable(SurfaceTexture surfaceTexture) {
         if (this.a.h.getAndSet(true)) {
-            d.v(ejd.a.c(), "Skipped a camera frame", (char) 1198);
+            defpackage.d.v(ejd.a.c(), "Skipped a camera frame", (char) 1198);
         }
     }
 }

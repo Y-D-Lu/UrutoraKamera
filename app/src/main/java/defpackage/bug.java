@@ -39,7 +39,7 @@ public final /* synthetic */ class bug implements lie {
             case 4:
                 return;
             case 5:
-                d.v(cos.a.c(), "Shutting down OneCamcorder.", (char) 592);
+                defpackage.d.v(cos.a.c(), "Shutting down OneCamcorder.", (char) 592);
                 return;
             case 6:
             case 7:

@@ -44,7 +44,7 @@ public final class fck {
                 } else if (e.e(awu.AUTO)) {
                     awuVar = awu.AUTO;
                 } else if (!e.e(awu.NO_FLASH)) {
-                    d.v(fcn.a.b(), "no supported flash mode found, need OFF, AUTO or NO_FLASH!", (char) 1635);
+                    defpackage.d.v(fcn.a.b(), "no supported flash mode found, need OFF, AUTO or NO_FLASH!", (char) 1635);
                     throw new IllegalStateException("no supported flash mode found!");
                 } else {
                     awuVar = awu.NO_FLASH;
@@ -59,7 +59,7 @@ public final class fck {
                 f.l(axnVar);
                 ArrayList<int[]> arrayList = new ArrayList(e.b);
                 if (arrayList.isEmpty()) {
-                    d.v(fcn.a.b(), "No suppoted frame rates returned!", (char) 1640);
+                    defpackage.d.v(fcn.a.b(), "No suppoted frame rates returned!", (char) 1640);
                     iArr = null;
                 } else {
                     int i = 400000;
@@ -83,12 +83,12 @@ public final class fck {
                     if (i3 >= 0) {
                         iArr = (int[]) arrayList.get(i3);
                     } else {
-                        d.v(fcn.a.b(), "Can't find an appropriate frame rate range!", (char) 1639);
+                        defpackage.d.v(fcn.a.b(), "Can't find an appropriate frame rate range!", (char) 1639);
                         iArr = null;
                     }
                 }
                 if (iArr == null || iArr.length <= 0) {
-                    d.v(fcn.a.b(), "No supported frame rates returned!", (char) 1638);
+                    defpackage.d.v(fcn.a.b(), "No supported frame rates returned!", (char) 1638);
                 } else {
                     f.j(iArr[0], iArr[1]);
                 }

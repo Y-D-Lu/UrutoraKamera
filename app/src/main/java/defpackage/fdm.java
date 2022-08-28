@@ -636,7 +636,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                         float f22 = fdtVar4.e.x;
                         float f23 = fdtVar4.e.y;
                         if (!fctVar2.l) {
-                            d.v(fct.f.b(), "Sprite not initialized.", (char) 1644);
+                            defpackage.d.v(fct.f.b(), "Sprite not initialized.", (char) 1644);
                         } else {
                             fcr fcrVar = fctVar2.e;
                             if (fcrVar != null) {

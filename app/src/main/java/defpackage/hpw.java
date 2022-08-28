@@ -60,7 +60,7 @@ public final class hpw implements hpu {
         if (hsaVar != null) {
             hsaVar.A();
         } else {
-            d.v(a.c(), "Session was already removed, cannot be finalized", (char) 2592);
+            defpackage.d.v(a.c(), "Session was already removed, cannot be finalized", (char) 2592);
         }
     }
 

@@ -66,7 +66,7 @@ public final class hzi implements hxi {
                                 SystemClock.elapsedRealtime();
                                 hzhVar.k(k);
                             } else {
-                                d.v(hzi.a.b(), "Unable to fork ref counted image", (char) 2733);
+                                defpackage.d.v(hzi.a.b(), "Unable to fork ref counted image", (char) 2733);
                             }
                             lwkVar.l();
                         }

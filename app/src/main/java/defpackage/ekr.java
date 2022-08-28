@@ -37,7 +37,7 @@ public final class ekr {
             }
             this.i = false;
             if (this.m.isAlive()) {
-                d.v(a.b(), "Stopping drainer timed out, forcing stop", (char) 1230);
+                defpackage.d.v(a.b(), "Stopping drainer timed out, forcing stop", (char) 1230);
                 try {
                     this.m.join();
                 } catch (InterruptedException e2) {
@@ -56,7 +56,7 @@ public final class ekr {
             }
             this.j = false;
             if (this.n.isAlive()) {
-                d.v(a.b(), "Stopping writer timed out, forcing stop", (char) 1233);
+                defpackage.d.v(a.b(), "Stopping writer timed out, forcing stop", (char) 1233);
                 try {
                     this.n.join();
                 } catch (InterruptedException e4) {
@@ -68,7 +68,7 @@ public final class ekr {
             this.b.c();
             return;
         }
-        d.v(a.b(), "stop called more than once!", (char) 1229);
+        defpackage.d.v(a.b(), "stop called more than once!", (char) 1229);
     }
 
     public final synchronized boolean b() {
@@ -81,7 +81,7 @@ public final class ekr {
             this.k = 0;
             this.l = 0;
             if (!this.b.d()) {
-                d.v(a.b(), "Failed to start the encoder.", (char) 1239);
+                defpackage.d.v(a.b(), "Failed to start the encoder.", (char) 1239);
                 return false;
             }
             ekp ekpVar = new ekp(this);
@@ -92,7 +92,7 @@ public final class ekr {
             ekqVar.start();
             return true;
         }
-        d.v(a.b(), "start called more than once!", (char) 1238);
+        defpackage.d.v(a.b(), "start called more than once!", (char) 1238);
         return true;
     }
 }

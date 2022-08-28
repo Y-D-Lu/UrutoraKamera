@@ -22,7 +22,7 @@ public class jzp extends jzi {
 
     @Override // defpackage.jzi, defpackage.ihs, defpackage.iht
     public final void f() {
-        d.v(jzq.f.c(), "Enter [VisibleAndScrolled] state", (char) 3550);
+        defpackage.d.v(jzq.f.c(), "Enter [VisibleAndScrolled] state", (char) 3550);
     }
 
     @Override // defpackage.jzi

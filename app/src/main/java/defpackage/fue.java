@@ -28,7 +28,7 @@ public final class fue {
                 mad madVar = (mad) plk.ae(phtVar3);
                 Bitmap bitmap = (Bitmap) plk.ae(phtVar4);
                 if (bitmap == null || madVar == null) {
-                    d.v(fue.a.c(), "Skip tone mapping extraction, either shutter frame or postview bitmap is null.", (char) 1954);
+                    defpackage.d.v(fue.a.c(), "Skip tone mapping extraction, either shutter frame or postview bitmap is null.", (char) 1954);
                     return;
                 }
                 poy m = psv.c.m();

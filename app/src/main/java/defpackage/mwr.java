@@ -97,7 +97,7 @@ public final class mwr extends mwp implements mvt, mwb, mwa, mxo {
         if (!this.a.getAndSet(true)) {
             return u(qwt.BACKGROUND_TO_FOREGROUND);
         }
-        d.v(b.c(), "App is already in the foreground.", (char) 3607);
+        defpackage.d.v(b.c(), "App is already in the foreground.", (char) 3607);
         return plk.T();
     }
 

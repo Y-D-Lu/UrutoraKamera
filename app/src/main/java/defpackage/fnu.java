@@ -216,7 +216,7 @@ public final class fnu implements fnv {
         if (this.l == null) {
             this.l = foxVar;
         } else {
-            d.v(a.c(), "Cannot attach UI controller when already attached!", (char) 1782);
+            defpackage.d.v(a.c(), "Cannot attach UI controller when already attached!", (char) 1782);
         }
     }
 
@@ -225,7 +225,7 @@ public final class fnu implements fnv {
         if (this.l == foxVar) {
             this.l = null;
         } else {
-            d.v(a.c(), "Cannot detach UI controller. Values mismatch.", (char) 1784);
+            defpackage.d.v(a.c(), "Cannot detach UI controller. Values mismatch.", (char) 1784);
         }
     }
 }

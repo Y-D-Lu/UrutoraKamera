@@ -33,7 +33,7 @@ public final /* synthetic */ class dbk implements Runnable {
             case 2:
                 dbl dblVar3 = this.a;
                 if (((dqx) ((ojj) dblVar3.c).a).e()) {
-                    d.v(dbl.a.c(), "Can not update pitch roll indicator because camera orientation feature is empty.", (char) 675);
+                    defpackage.d.v(dbl.a.c(), "Can not update pitch roll indicator because camera orientation feature is empty.", (char) 675);
                     return;
                 }
                 ftm a = ftm.a(((dqx) ((ojj) dblVar3.c).a).d());

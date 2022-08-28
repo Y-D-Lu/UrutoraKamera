@@ -15,7 +15,7 @@ final class fop implements phh {
 
     @Override // defpackage.phh
     public final void a(Throwable th) {
-        d.v(fou.a.c(), "Cannot get final shutter timestamp from microvideo as it failed to start!", (char) 1791);
+        defpackage.d.v(fou.a.c(), "Cannot get final shutter timestamp from microvideo as it failed to start!", (char) 1791);
     }
 
     @Override // defpackage.phh

@@ -41,7 +41,7 @@ public final class bxv {
         int i = this.f + 1;
         this.f = i;
         if (i >= 50) {
-            d.v(a.c(), "Failed to throttle the executor!", (char) 148);
+            defpackage.d.v(a.c(), "Failed to throttle the executor!", (char) 148);
         } else {
             this.c.schedule(new bxu(this), 10L, TimeUnit.MILLISECONDS);
         }

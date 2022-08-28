@@ -29,7 +29,7 @@ final class fre implements mln {
     public final void b(ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) {
         this.b.b(byteBuffer, bufferInfo);
         if (!this.a.isDone()) {
-            d.v(frg.a.c(), "Configured format not yet available for packet; stats might be inaccurate", (char) 1922);
+            defpackage.d.v(frg.a.c(), "Configured format not yet available for packet; stats might be inaccurate", (char) 1922);
         } else if (this.a.isCancelled()) {
         } else {
             try {

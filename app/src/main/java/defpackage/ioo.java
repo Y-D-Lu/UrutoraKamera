@@ -137,7 +137,7 @@ final class ioo extends mip {
                         } else {
                             mad d2 = lmrVar.d(lnxVar);
                             if (d2 == null) {
-                                d.v(iod.a.b(), "onImageAvailable() ImageProxy is null", (char) 3054);
+                                defpackage.d.v(iod.a.b(), "onImageAvailable() ImageProxy is null", (char) 3054);
                                 lmrVar.close();
                             } else {
                                 iodVar.q.b();
@@ -197,7 +197,7 @@ final class ioo extends mip {
                     inkVar.w.b();
                     mad d3 = lmrVar2.d(lnxVar2);
                     if (d3 == null) {
-                        d.v(ink.a.c(), "onImageAvailable() imageProxy is null", (char) 3029);
+                        defpackage.d.v(ink.a.c(), "onImageAvailable() imageProxy is null", (char) 3029);
                         lmrVar2.close();
                     } else {
                         boolean z = inkVar.c.get();

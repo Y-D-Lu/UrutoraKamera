@@ -20,7 +20,7 @@ final class jcv extends KeyguardManager.KeyguardDismissCallback {
 
     @Override // android.app.KeyguardManager.KeyguardDismissCallback
     public final void onDismissError() {
-        d.v(jcw.a.b(), "Error dismissing keyguard", (char) 3247);
+        defpackage.d.v(jcw.a.b(), "Error dismissing keyguard", (char) 3247);
         this.b.o(false);
     }
 

@@ -75,7 +75,7 @@ public final class iik implements iij {
     private final int l() {
         fkb fkbVar = this.w;
         if (fkbVar == null) {
-            d.v(y.b(), "inferPhotoMode called while atTimeRequestData not present yet", (char) 2940);
+            defpackage.d.v(y.b(), "inferPhotoMode called while atTimeRequestData not present yet", (char) 2940);
             return 1;
         } else if (this.x != null) {
             return 22;
@@ -105,7 +105,7 @@ public final class iik implements iij {
             if (fkbVar2 != null) {
                 return fkbVar2.o;
             }
-            d.v(y.b(), "inferPhotoMode called while atTimeRequestData not present yet", (char) 2939);
+            defpackage.d.v(y.b(), "inferPhotoMode called while atTimeRequestData not present yet", (char) 2939);
             return 1;
         }
     }

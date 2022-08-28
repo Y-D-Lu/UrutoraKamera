@@ -68,7 +68,7 @@ public final class hew implements lie {
                 return;
             }
         }
-        d.v(a.c(), "BufferFilter: Received invalid frame.", (char) 2415);
+        defpackage.d.v(a.c(), "BufferFilter: Received invalid frame.", (char) 2415);
     }
 
     @Override // defpackage.lie, java.lang.AutoCloseable

@@ -56,7 +56,7 @@ public final class ejl extends buf implements ehk {
         }
         ehl ehlVar = (ehl) ((evm) elbVar).d.mo37get();
         if (!ehlVar.getHolder().getSurface().isValid()) {
-            d.v(jng.a.c(), "getScreenshotFrom(): the surface is not valid", (char) 3448);
+            defpackage.d.v(jng.a.c(), "getScreenshotFrom(): the surface is not valid", (char) 3448);
             ojcVar = oih.a;
         } else {
             int width = ehlVar.getWidth() / 2;
@@ -66,7 +66,7 @@ public final class ejl extends buf implements ehk {
                 PixelCopy.request(ehlVar, createBitmap, jnd.d, mip.bV(Looper.getMainLooper()));
                 ojcVar = ojc.i(jnm.b(createBitmap, 2));
             }
-            d.v(jng.a.c(), "getScreenshotFrom(): the surface size is invalid", (char) 3447);
+            defpackage.d.v(jng.a.c(), "getScreenshotFrom(): the surface size is invalid", (char) 3447);
             ojcVar = oih.a;
         }
         return ojcVar;

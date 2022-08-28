@@ -55,7 +55,7 @@ public final class oho implements Choreographer.FrameCallback, oht {
                             sb.append((int) d2);
                             sb.append(").");
                             ((oug) ((oug) ohw.a.c()).G((char) 3699)).r("%s", sb.toString());
-                            d.v(ohw.a.c(), "SVFP: Output FPS warning", (char) 3700);
+                            defpackage.d.v(ohw.a.c(), "SVFP: Output FPS warning", (char) 3700);
                         }
                     }
                 }

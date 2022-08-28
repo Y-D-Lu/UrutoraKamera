@@ -150,9 +150,9 @@ public final class fbb extends buf implements jad {
         this.W.e("PortraitModule#takePictureNow");
         fwc fwcVar = this.V;
         if (fwcVar == null) {
-            d.v(b.c(), "Not taking picture since Camera is closed.", (char) 1611);
+            defpackage.d.v(b.c(), "Not taking picture since Camera is closed.", (char) 1611);
         } else if (!((Boolean) fwcVar.b().fA()).booleanValue()) {
-            d.v(b.c(), "Not taking picture since the Camera is not ready to take a picture.", (char) 1610);
+            defpackage.d.v(b.c(), "Not taking picture since the Camera is not ready to take a picture.", (char) 1610);
         } else {
             v(false);
             this.u.b();

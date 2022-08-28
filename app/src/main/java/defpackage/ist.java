@@ -40,7 +40,7 @@ public final class ist {
         }
         Activity activity = (Activity) this.c.get();
         if (activity == null) {
-            d.v(b.c(), "Activity reference returns null, skipping", (char) 3149);
+            defpackage.d.v(b.c(), "Activity reference returns null, skipping", (char) 3149);
             return;
         }
         Resources resources = activity.getResources();

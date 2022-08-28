@@ -227,7 +227,7 @@ public final class ipf {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c() {
         if (inr.a((inr) this.j.d)) {
-            d.v(a.c(), "onCriticalStateHandled()", (char) 3082);
+            defpackage.d.v(a.c(), "onCriticalStateHandled()", (char) 3082);
             i(false);
         }
     }
@@ -472,9 +472,9 @@ public final class ipf {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void g() {
         if (!((inr) this.j.d).equals(inr.STATE_IDLE)) {
-            d.v(a.c(), "Recording state is not IDLE. Ignore start recording", (char) 3097);
+            defpackage.d.v(a.c(), "Recording state is not IDLE. Ignore start recording", (char) 3097);
         } else if (this.e.get()) {
-            d.v(a.b(), "Device status is not allowed to start recording", (char) 3096);
+            defpackage.d.v(a.b(), "Device status is not allowed to start recording", (char) 3096);
         } else {
             this.j.fB(inr.STATE_PRE_RECORDING);
             this.C.d();
@@ -722,14 +722,14 @@ public final class ipf {
                         case 0:
                             ioq ioqVar2 = ioqVar;
                             Void r6 = (Void) obj2;
-                            d.v(ioq.a.c(), "stopRecording() stop camcorder", (char) 3069);
+                            defpackage.d.v(ioq.a.c(), "stopRecording() stop camcorder", (char) 3069);
                             ioqVar2.ad.b();
                             ioqVar2.u.d();
                             return null;
                         default:
                             ioq ioqVar3 = ioqVar;
                             lvj lvjVar = (lvj) obj2;
-                            d.v(ioq.a.c(), "stopRecording() stop camcorder", (char) 3068);
+                            defpackage.d.v(ioq.a.c(), "stopRecording() stop camcorder", (char) 3068);
                             ioqVar3.ad.b();
                             lvjVar.getClass();
                             lvjVar.close();
@@ -753,14 +753,14 @@ public final class ipf {
                         case 0:
                             ioq ioqVar2 = ioqVar;
                             Void r6 = (Void) obj2;
-                            d.v(ioq.a.c(), "stopRecording() stop camcorder", (char) 3069);
+                            defpackage.d.v(ioq.a.c(), "stopRecording() stop camcorder", (char) 3069);
                             ioqVar2.ad.b();
                             ioqVar2.u.d();
                             return null;
                         default:
                             ioq ioqVar3 = ioqVar;
                             lvj lvjVar = (lvj) obj2;
-                            d.v(ioq.a.c(), "stopRecording() stop camcorder", (char) 3068);
+                            defpackage.d.v(ioq.a.c(), "stopRecording() stop camcorder", (char) 3068);
                             ioqVar3.ad.b();
                             lvjVar.getClass();
                             lvjVar.close();

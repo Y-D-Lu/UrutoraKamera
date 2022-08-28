@@ -162,7 +162,7 @@ public final class itp implements itw {
                 d = ((itq) this.k.c()).d(madVar);
             }
             if (this.d) {
-                d.v(b.c(), "tracking is disabled due the thermal issue", (char) 3159);
+                defpackage.d.v(b.c(), "tracking is disabled due the thermal issue", (char) 3159);
             } else {
                 if (d.c < 0.6f) {
                     this.l.incrementAndGet();

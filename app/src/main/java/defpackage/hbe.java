@@ -29,7 +29,7 @@ public final class hbe implements goy {
     }
 
     private static final void d(goy goyVar, List list, gox goxVar, gog gogVar) {
-        d.v(a.b(), "Executing fallback", (char) 2320);
+        defpackage.d.v(a.b(), "Executing fallback", (char) 2320);
         Iterator it = list.iterator();
         while (it.hasNext()) {
             ((lmr) it.next()).close();

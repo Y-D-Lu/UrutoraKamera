@@ -46,7 +46,7 @@ public final /* synthetic */ class iot implements Runnable {
             case 5:
                 ipf ipfVar4 = this.a;
                 if (((inr) ipfVar4.j.d).equals(inr.STATE_PRE_RECORDING)) {
-                    d.v(ipf.a.c(), "Pre-recording state, set statechart back to stop recording.", (char) 3078);
+                    defpackage.d.v(ipf.a.c(), "Pre-recording state, set statechart back to stop recording.", (char) 3078);
                     ipfVar4.j.fB(inr.STATE_RECORDING_ERROR);
                     ipfVar4.C.b();
                 }
@@ -103,7 +103,7 @@ public final /* synthetic */ class iot implements Runnable {
                         switch (r2) {
                             case 0:
                                 ipr iprVar2 = iprVar;
-                                d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);
+                                defpackage.d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);
                                 iprVar2.j.a();
                                 iprVar2.g.e(ims.HEAT_EMERGENCY, iprVar2.j.h());
                                 ipc ipcVar = iprVar2.m;
@@ -117,7 +117,7 @@ public final /* synthetic */ class iot implements Runnable {
                                 return;
                             default:
                                 ipr iprVar4 = iprVar;
-                                d.v(ipr.a.c(), "Device temperature is too high that may impact video quality.", (char) 3107);
+                                defpackage.d.v(ipr.a.c(), "Device temperature is too high that may impact video quality.", (char) 3107);
                                 iprVar4.g.e(ims.HEAT_CRITICAL, iprVar4.j.h());
                                 return;
                         }
@@ -129,7 +129,7 @@ public final /* synthetic */ class iot implements Runnable {
                         switch (r2) {
                             case 0:
                                 ipr iprVar2 = iprVar;
-                                d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);
+                                defpackage.d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);
                                 iprVar2.j.a();
                                 iprVar2.g.e(ims.HEAT_EMERGENCY, iprVar2.j.h());
                                 ipc ipcVar = iprVar2.m;
@@ -143,7 +143,7 @@ public final /* synthetic */ class iot implements Runnable {
                                 return;
                             default:
                                 ipr iprVar4 = iprVar;
-                                d.v(ipr.a.c(), "Device temperature is too high that may impact video quality.", (char) 3107);
+                                defpackage.d.v(ipr.a.c(), "Device temperature is too high that may impact video quality.", (char) 3107);
                                 iprVar4.g.e(ims.HEAT_CRITICAL, iprVar4.j.h());
                                 return;
                         }
@@ -162,7 +162,7 @@ public final /* synthetic */ class iot implements Runnable {
                         switch (r2) {
                             case 0:
                                 ipr iprVar2 = iprVar;
-                                d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);
+                                defpackage.d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);
                                 iprVar2.j.a();
                                 iprVar2.g.e(ims.HEAT_EMERGENCY, iprVar2.j.h());
                                 ipc ipcVar = iprVar2.m;
@@ -176,7 +176,7 @@ public final /* synthetic */ class iot implements Runnable {
                                 return;
                             default:
                                 ipr iprVar4 = iprVar;
-                                d.v(ipr.a.c(), "Device temperature is too high that may impact video quality.", (char) 3107);
+                                defpackage.d.v(ipr.a.c(), "Device temperature is too high that may impact video quality.", (char) 3107);
                                 iprVar4.g.e(ims.HEAT_CRITICAL, iprVar4.j.h());
                                 return;
                         }

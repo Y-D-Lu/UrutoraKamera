@@ -133,7 +133,7 @@ public final class ink {
         boolean z2 = j % ((long) ((int) (d2 / d))) == 0;
         if (ojcVar.g()) {
             if (!((Boolean) ojcVar.c()).booleanValue() && z2) {
-                d.v(a.b(), "The frame is not warped. Ignore", (char) 3035);
+                defpackage.d.v(a.b(), "The frame is not warped. Ignore", (char) 3035);
             }
             z2 &= ((Boolean) ojcVar.c()).booleanValue();
         }

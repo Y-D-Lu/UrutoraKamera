@@ -398,7 +398,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                     }
                 }
             }
-            d.v(a.c(), "Invalid resolution setting, using default.", (char) 2123);
+            defpackage.d.v(a.c(), "Invalid resolution setting, using default.", (char) 2123);
             ligVar = (lig) arrayList.get(0);
         }
         htl htlVar = htl.RES_1080P;

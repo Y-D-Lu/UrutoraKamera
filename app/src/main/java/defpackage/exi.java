@@ -412,7 +412,7 @@ public final class exi extends buf implements jad, gft {
     public final void K(final boolean z) {
         this.f.e("CaptureModule#takePictureNow");
         if (this.F == null) {
-            d.v(b.c(), "Not taking picture since Camera is closed.", (char) 1569);
+            defpackage.d.v(b.c(), "Not taking picture since Camera is closed.", (char) 1569);
             this.f.f();
             return;
         }
@@ -423,7 +423,7 @@ public final class exi extends buf implements jad, gft {
         gfu gfuVar = this.F;
         gfuVar.getClass();
         if (!((Boolean) gfuVar.h().a.fA()).booleanValue()) {
-            d.v(b.c(), "Not taking picture since the Camera is not ready to take a picture.", (char) 1568);
+            defpackage.d.v(b.c(), "Not taking picture since the Camera is not ready to take a picture.", (char) 1568);
             this.f.f();
             this.f.f();
             return;

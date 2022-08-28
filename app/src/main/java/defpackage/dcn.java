@@ -42,14 +42,14 @@ public final class dcn implements dcl {
         if (this.e.g()) {
             ((dco) this.e.c()).b(System.currentTimeMillis());
         } else {
-            d.v(b.b(), "framing hint heed but no hint is showing.", (char) 684);
+            defpackage.d.v(b.b(), "framing hint heed but no hint is showing.", (char) 684);
         }
     }
 
     @Override // defpackage.dcl
     public final synchronized void e(ojc ojcVar) {
         if (!this.d.g()) {
-            d.v(b.b(), "Log framing shown hint but status info is not available.", (char) 685);
+            defpackage.d.v(b.b(), "Log framing shown hint but status info is not available.", (char) 685);
             return;
         }
         ((dcp) this.d.c()).b();
@@ -65,7 +65,7 @@ public final class dcn implements dcl {
         if (this.d.g()) {
             ((dcp) this.d.c()).c();
         } else {
-            d.v(b.b(), "Update framing hint but status info is not available.", (char) 686);
+            defpackage.d.v(b.b(), "Update framing hint but status info is not available.", (char) 686);
         }
     }
 

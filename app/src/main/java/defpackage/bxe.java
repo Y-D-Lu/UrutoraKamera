@@ -138,7 +138,7 @@ public final /* synthetic */ class bxe implements oiu {
                     bool.booleanValue();
                     return 1;
                 }
-                d.v(eeg.a.c().g(ovl.a, "FalconModule"), "Turning off due to thermals.", (char) 1096);
+                defpackage.d.v(eeg.a.c().g(ovl.a, "FalconModule"), "Turning off due to thermals.", (char) 1096);
                 return 2;
             case 19:
                 return (eez) obj;

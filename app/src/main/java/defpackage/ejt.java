@@ -45,7 +45,7 @@ public final class ejt implements eko {
     @Override // defpackage.eko
     public final boolean d() {
         if (this.d) {
-            d.v(a.b(), "AudioEncoder already started!", (char) 1204);
+            defpackage.d.v(a.b(), "AudioEncoder already started!", (char) 1204);
             return true;
         }
         this.e.setInteger("aac-profile", 2);

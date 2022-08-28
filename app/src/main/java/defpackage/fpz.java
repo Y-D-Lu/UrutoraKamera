@@ -49,7 +49,7 @@ public final class fpz implements AutoCloseable {
             return;
         }
         if (this.f != null) {
-            d.v(h.c(), "Attempting to re-initialize AudioTrackSampler!", (char) 1869);
+            defpackage.d.v(h.c(), "Attempting to re-initialize AudioTrackSampler!", (char) 1869);
             return;
         }
         ((dve) this.c.c()).d(new fpw(this, 2), this.d);

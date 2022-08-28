@@ -36,16 +36,16 @@ public final class hvm {
                     arrayList = arrayList2;
                 }
                 if (arrayList.isEmpty()) {
-                    d.v(a.c(), "Only one supported resolution.", (char) 2663);
+                    defpackage.d.v(a.c(), "Only one supported resolution.", (char) 2663);
                     lig ligVar3 = hvlVar2.a;
                     hvlVar2.b = ligVar3;
                     hvlVar2.c = ligVar3;
                 } else if (arrayList.size() == 1) {
-                    d.v(a.c(), "Only two supported resolutions.", (char) 2662);
+                    defpackage.d.v(a.c(), "Only two supported resolutions.", (char) 2662);
                     hvlVar2.b = (lig) arrayList.get(0);
                     hvlVar2.c = (lig) arrayList.get(0);
                 } else if (arrayList.size() == 2) {
-                    d.v(a.c(), "Exactly three supported resolutions.", (char) 2661);
+                    defpackage.d.v(a.c(), "Exactly three supported resolutions.", (char) 2661);
                     hvlVar2.b = (lig) arrayList.get(0);
                     hvlVar2.c = (lig) arrayList.get(1);
                 } else {

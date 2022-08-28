@@ -74,7 +74,7 @@ public final class igu implements ihc, gtu {
         guq guqVar = (guq) gtgVar.aT.f.get(gtmVar);
         ojc h = guqVar != null ? ojc.h((View) guqVar.e.get(gtvVar)) : oih.a;
         if (!h.g()) {
-            d.v(i.c(), "showMenuTooltipIfAppropriate: absent anchorView!", (char) 2914);
+            defpackage.d.v(i.c(), "showMenuTooltipIfAppropriate: absent anchorView!", (char) 2914);
             return;
         }
         jlz jlzVar = new jlz(this.a.getString(R.string.reduce_noise_when_talk_tooltip));

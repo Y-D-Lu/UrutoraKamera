@@ -65,7 +65,7 @@ final class eds implements Runnable {
         }
         ojc a2 = JpgHelper.a(a, new JpgEncodeOptions(), i);
         if (!a2.g()) {
-            d.v(edu.a.b(), "Error encoding burst image", (char) 1074);
+            defpackage.d.v(edu.a.b(), "Error encoding burst image", (char) 1074);
             this.b.a(new RuntimeException("Image couldn't be encoded."));
             return;
         }

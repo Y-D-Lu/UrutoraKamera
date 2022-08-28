@@ -46,7 +46,7 @@ final class Cfor implements phh {
                     this.c.t.a(((fmp) this.a.q.c()).a);
                     str = "No video frames available. Trigger backup shot.";
                 } else {
-                    d.v(fou.a.c(), "Didn't take second shot since UI resources are missing", (char) 1794);
+                    defpackage.d.v(fou.a.c(), "Didn't take second shot since UI resources are missing", (char) 1794);
                     str = "No video frames available. Unable to trigger backup shot.";
                 }
                 this.a.k.w(new Throwable(str));

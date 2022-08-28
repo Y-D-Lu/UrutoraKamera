@@ -345,7 +345,7 @@ public final class eur implements btt, fik, fhy, fib, fii, fig, fie, fij, fgl, f
         this.ax.fB(hti.e);
         if (this.am.k(dcu.r)) {
             gtg gtgVar = this.t;
-            d.v(gtg.a.c(), "MicInput reset to Phone", (char) 2127);
+            defpackage.d.v(gtg.a.c(), "MicInput reset to Phone", (char) 2127);
             gtgVar.u.fB(hth.PHONE);
             gtgVar.v.fB(false);
             gtgVar.x.fB("");
@@ -664,7 +664,7 @@ public final class eur implements btt, fik, fhy, fib, fii, fig, fie, fij, fgl, f
         this.ap.a(true);
         this.o.gg();
         if (((buc) this.q.get()).i()) {
-            d.v(a.c(), "Disconnecting the camera device because filmstrip was launched.", (char) 1530);
+            defpackage.d.v(a.c(), "Disconnecting the camera device because filmstrip was launched.", (char) 1530);
             this.g.a();
             this.E = true;
             this.o.p();

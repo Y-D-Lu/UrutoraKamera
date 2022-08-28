@@ -30,7 +30,7 @@ public final class djy extends mip {
         rect.getClass();
         DebugCanvasView debugCanvasView = djuVar.b;
         if (debugCanvasView == null) {
-            d.v(dju.a.c(), "UI view not yet initialized", (char) 792);
+            defpackage.d.v(dju.a.c(), "UI view not yet initialized", (char) 792);
         } else {
             ljm ljmVar = debugCanvasView.d;
             Rect rect2 = ljmVar.b;

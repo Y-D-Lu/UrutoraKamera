@@ -21,7 +21,7 @@ public class jzn extends jzi {
 
     @Override // defpackage.jzi, defpackage.ihs, defpackage.iht
     public final void f() {
-        d.v(jzq.f.c(), "Enter [Scrolling] state", (char) 3548);
+        defpackage.d.v(jzq.f.c(), "Enter [Scrolling] state", (char) 3548);
         this.b.i.fB(false);
         this.b.k();
     }

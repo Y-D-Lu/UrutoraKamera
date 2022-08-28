@@ -78,7 +78,7 @@ public final class egd implements eco {
         if (efyVar.c.k(ddx.l) && b.g()) {
             File file = new File((File) b.c(), "portrait");
             if (!file.exists() && !file.mkdirs()) {
-                d.v(efy.a.b(), "Could not create portrait mode debug data folder.", (char) 1129);
+                defpackage.d.v(efy.a.b(), "Could not create portrait mode debug data folder.", (char) 1129);
             }
             GcamModuleJNI.PortraitRequest_portrait_raw_path_set(portraitRequest2.a, portraitRequest2, file.getAbsolutePath());
             GcamModuleJNI.PortraitRequest_shot_prefix_set(portraitRequest2.a, portraitRequest2, dzy.d(d));
@@ -92,13 +92,13 @@ public final class egd implements eco {
         PortraitRequest portraitRequest;
         int PixelRectVector_size;
         if (this.f.e.k(ddx.x) && this.l == null) {
-            d.v(ege.b.c(), "Attempting to close the session but no primary RAW image has been received.", (char) 1144);
+            defpackage.d.v(ege.b.c(), "Attempting to close the session but no primary RAW image has been received.", (char) 1144);
         } else if (this.k == null) {
-            d.v(ege.b.c(), "Attempting to close the session but no RGB image has been received.", (char) 1143);
+            defpackage.d.v(ege.b.c(), "Attempting to close the session but no RGB image has been received.", (char) 1143);
         } else {
             ege egeVar = this.f;
             if (egeVar.f && this.n == null) {
-                d.v(ege.b.c(), "Attempting to close the session but no RAW image has been received.", (char) 1142);
+                defpackage.d.v(ege.b.c(), "Attempting to close the session but no RAW image has been received.", (char) 1142);
                 return;
             }
             egeVar.g.remove(this.a.s());

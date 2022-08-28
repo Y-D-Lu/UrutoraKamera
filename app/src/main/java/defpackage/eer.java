@@ -72,9 +72,9 @@ public final class eer implements eco {
     @Override // defpackage.lie, java.lang.AutoCloseable
     public final void close() {
         if (this.l == null) {
-            d.v(ees.a.c().g(ovl.a, "FalconPostProcImgSaver"), "Attempting to close the session but no primary RAW image has been received.", (char) 1115);
+            defpackage.d.v(ees.a.c().g(ovl.a, "FalconPostProcImgSaver"), "Attempting to close the session but no primary RAW image has been received.", (char) 1115);
         } else if (this.o == null) {
-            d.v(ees.a.c().g(ovl.a, "FalconPostProcImgSaver"), "Attempting to close the session but no RAW image has been received.", (char) 1114);
+            defpackage.d.v(ees.a.c().g(ovl.a, "FalconPostProcImgSaver"), "Attempting to close the session but no RAW image has been received.", (char) 1114);
         } else {
             ouj oujVar = ees.a;
             ovd ovdVar = ovl.a;

@@ -30,7 +30,7 @@ public final class ekx extends Handler {
                 float[] fArr = (float[]) message.obj;
                 eku ekuVar = ekyVar.b;
                 if (!ekuVar.h) {
-                    d.v(eku.a.b(), "Received a frame to process, but the encoder either hasn't started or has already stopped. This should not happen.", (char) 1247);
+                    defpackage.d.v(eku.a.b(), "Received a frame to process, but the encoder either hasn't started or has already stopped. This should not happen.", (char) 1247);
                     ekuVar.f();
                     return;
                 }

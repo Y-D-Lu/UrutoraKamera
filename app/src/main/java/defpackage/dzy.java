@@ -71,7 +71,7 @@ public final class dzy {
                 } catch (ass e3) {
                 }
             } else {
-                d.v(b.c(), "Extended XMP section not found to append slowraw directory", (char) 1015);
+                defpackage.d.v(b.c(), "Extended XMP section not found to append slowraw directory", (char) 1015);
             }
         }
         exifInterface.bA = j;

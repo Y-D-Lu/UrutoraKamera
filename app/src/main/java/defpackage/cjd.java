@@ -42,7 +42,7 @@ public final class cjd {
     public final synchronized void b(long j, int i) {
         obr.aF(i > 0);
         if (this.f + i > this.c) {
-            d.v(a.c(), "The size offered is over the capacity.", (char) 444);
+            defpackage.d.v(a.c(), "The size offered is over the capacity.", (char) 444);
             return;
         }
         if (this.d == Long.MIN_VALUE) {

@@ -41,9 +41,9 @@ public abstract class buf implements lie {
     public final void gg() {
         lar.a();
         if (!this.a) {
-            d.v(b.c(), "Module is already stopped; skipping pause.", 'e');
+            defpackage.d.v(b.c(), "Module is already stopped; skipping pause.", 'e');
         } else if (!this.c) {
-            d.v(b.c(), "Duplicate call to pauseModule; skipping pause.", 'd');
+            defpackage.d.v(b.c(), "Duplicate call to pauseModule; skipping pause.", 'd');
         } else {
             this.c = false;
             gf();
@@ -56,7 +56,7 @@ public abstract class buf implements lie {
         lar.a();
         obr.aR(this.a, "Cannot resume a stopped module");
         if (this.c) {
-            d.v(b.c(), "Duplicate call to resumeModule; skipping resume.", 'f');
+            defpackage.d.v(b.c(), "Duplicate call to resumeModule; skipping resume.", 'f');
             return;
         }
         this.c = true;
@@ -68,9 +68,9 @@ public abstract class buf implements lie {
     public final void n() {
         lar.a();
         if (this.c) {
-            d.v(b.c(), "Module is already resumed; skipping start.", 'h');
+            defpackage.d.v(b.c(), "Module is already resumed; skipping start.", 'h');
         } else if (this.a) {
-            d.v(b.c(), "Duplicate call to startModule; skipping start.", 'g');
+            defpackage.d.v(b.c(), "Duplicate call to startModule; skipping start.", 'g');
         } else {
             this.a = true;
             m();
@@ -82,11 +82,11 @@ public abstract class buf implements lie {
     public final void p() {
         lar.a();
         if (this.c) {
-            d.v(b.c(), "Attempting to stop a resumed module!", 'j');
+            defpackage.d.v(b.c(), "Attempting to stop a resumed module!", 'j');
             gg();
         }
         if (!this.a) {
-            d.v(b.c(), "Duplicate call to stopModule; skipping stop.", 'i');
+            defpackage.d.v(b.c(), "Duplicate call to stopModule; skipping stop.", 'i');
             return;
         }
         this.a = false;

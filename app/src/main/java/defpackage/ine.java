@@ -36,11 +36,11 @@ public final class ine implements ind {
         int b;
         Bundle extras = intent.getExtras();
         if (extras == null) {
-            d.v(a.c(), "Intent needs some extra parameters", (char) 3025);
+            defpackage.d.v(a.c(), "Intent needs some extra parameters", (char) 3025);
         }
         String string = extras.getString("com.google.android.apps.camera.testing.prod.scoreprint.SCORE_TYPE");
         if (string == null) {
-            d.v(ind.a.c(), "No score type given", (char) 3020);
+            defpackage.d.v(ind.a.c(), "No score type given", (char) 3020);
             l = oom.l();
         } else {
             try {
@@ -57,7 +57,7 @@ public final class ine implements ind {
         if (!l.isEmpty()) {
             String string2 = extras.getString("com.google.android.apps.camera.testing.prod.scoreprint.OUT_FILE_NAME");
             if (string2 == null) {
-                d.v(ind.a.c(), "No file name given", (char) 3018);
+                defpackage.d.v(ind.a.c(), "No file name given", (char) 3018);
                 i = oih.a;
             } else {
                 i = ojc.i(string2);
@@ -134,7 +134,7 @@ public final class ine implements ind {
 
     final int b(ijf ijfVar) {
         if (!this.c.e(CameraActivityTiming.class)) {
-            d.v(a.c(), "No CameraActivitySession has recorded.", (char) 3021);
+            defpackage.d.v(a.c(), "No CameraActivitySession has recorded.", (char) 3021);
             return 0;
         }
         CameraActivityTiming cameraActivityTiming = (CameraActivityTiming) this.c.a(CameraActivityTiming.class);

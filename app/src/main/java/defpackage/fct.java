@@ -48,7 +48,7 @@ public class fct extends fcp {
 
     public final void f(float[] fArr, float f2, float f3, float f4) {
         if (!this.l) {
-            d.v(f.b(), "Sprite not initialized.", (char) 1643);
+            defpackage.d.v(f.b(), "Sprite not initialized.", (char) 1643);
             return;
         }
         fcr fcrVar = this.e;

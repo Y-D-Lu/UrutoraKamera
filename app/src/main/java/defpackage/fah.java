@@ -292,7 +292,7 @@ public final class fah extends buf implements jad {
     }
 
     public final synchronized void v() {
-        d.v(b.c(), "takePictureInvoked", (char) 1603);
+        defpackage.d.v(b.c(), "takePictureInvoked", (char) 1603);
         fwc fwcVar = this.v;
         fwcVar.getClass();
         long currentTimeMillis = System.currentTimeMillis();

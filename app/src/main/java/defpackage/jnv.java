@@ -30,7 +30,7 @@ public final class jnv implements pys {
                 ljf ljfVar2 = ljfVar;
                 pih pihVar = f;
                 if (ihVar.isDestroyed()) {
-                    d.v(jnu.a.b(), "Error at inflateCameraActivityUi: activity is destroyed", (char) 3456);
+                    defpackage.d.v(jnu.a.b(), "Error at inflateCameraActivityUi: activity is destroyed", (char) 3456);
                 }
                 ljfVar2.e("CameraActivityUi#mainInflate");
                 jnuVar2.b.a.inflate();

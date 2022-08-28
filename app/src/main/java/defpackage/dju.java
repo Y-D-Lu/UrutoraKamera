@@ -13,7 +13,7 @@ public final class dju {
     public final void a() {
         DebugCanvasView debugCanvasView = this.b;
         if (debugCanvasView == null) {
-            d.v(a.c(), "UI view not yet initialized", (char) 793);
+            defpackage.d.v(a.c(), "UI view not yet initialized", (char) 793);
         } else {
             debugCanvasView.invalidate();
         }

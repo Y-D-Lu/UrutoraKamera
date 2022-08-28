@@ -75,7 +75,7 @@ public final /* synthetic */ class dfb implements Runnable {
                     a = bqgVar.g.a();
                 }
                 if (a) {
-                    d.v(dff.a.c(), "Activity is destroyed. Canceling load.", (char) 731);
+                    defpackage.d.v(dff.a.c(), "Activity is destroyed. Canceling load.", (char) 731);
                     return;
                 }
                 dffVar.i.e("RemoveDeleted");

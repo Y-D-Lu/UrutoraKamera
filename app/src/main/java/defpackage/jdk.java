@@ -67,7 +67,7 @@ public final class jdk implements fik, fii, fig {
                 hug hugVar = jdkVar.e;
                 hugVar.getClass();
                 hugVar.e(htu.ab, false);
-                d.v(jdk.a.c(), "Mars not set up", (char) 3260);
+                defpackage.d.v(jdk.a.c(), "Mars not set up", (char) 3260);
             }
         });
     }

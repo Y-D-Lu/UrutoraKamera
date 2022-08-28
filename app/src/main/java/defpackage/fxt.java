@@ -22,9 +22,9 @@ final class fxt extends BottomBarListener {
         fyr fyrVar = this.a;
         fyrVar.N++;
         if (fyrVar.p == 0) {
-            d.v(fyr.b.b(), "Can't undo capture, no images captured.", (char) 1974);
+            defpackage.d.v(fyr.b.b(), "Can't undo capture, no images captured.", (char) 1974);
         } else if (!fcz.r() || this.a.i.b.g().a() == 8) {
-            d.v(fyr.b.b(), "Can't undo capture, LightCycle not ready to undo.", (char) 1973);
+            defpackage.d.v(fyr.b.b(), "Can't undo capture, LightCycle not ready to undo.", (char) 1973);
         } else {
             fyr fyrVar2 = this.a;
             int i = fyrVar2.p;

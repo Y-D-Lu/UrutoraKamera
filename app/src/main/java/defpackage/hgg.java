@@ -146,7 +146,7 @@ public final class hgg implements pys {
                     if (mo37get5.isKeyguardLocked() || ActivityManager.isRunningInTestHarness()) {
                         z = true;
                     } else {
-                        d.v(hoc.a.c(), "Warning: Overriding the secure camera intent because the keyguard is not currently locked. The camera will open in normal mode.", (char) 2579);
+                        defpackage.d.v(hoc.a.c(), "Warning: Overriding the secure camera intent because the keyguard is not currently locked. The camera will open in normal mode.", (char) 2579);
                     }
                 }
                 return Boolean.valueOf(z);

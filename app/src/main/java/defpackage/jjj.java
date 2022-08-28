@@ -82,7 +82,7 @@ public final class jjj implements jje, fik, fhy, fii, fie, fig, lie, fgq, fgv {
     @Override // defpackage.jje
     public final synchronized void e() {
         if (this.k) {
-            d.v(b.c(), "session closed. will NOT mute ringtone.", (char) 3410);
+            defpackage.d.v(b.c(), "session closed. will NOT mute ringtone.", (char) 3410);
         } else {
             this.i.a();
         }
@@ -91,7 +91,7 @@ public final class jjj implements jje, fik, fhy, fii, fie, fig, lie, fgq, fgv {
     @Override // defpackage.jje
     public final synchronized void f() {
         if (this.k) {
-            d.v(b.c(), "session closed. will NOT restore ringtone.", (char) 3411);
+            defpackage.d.v(b.c(), "session closed. will NOT restore ringtone.", (char) 3411);
         } else {
             this.i.d();
         }

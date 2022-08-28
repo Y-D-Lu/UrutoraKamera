@@ -22,7 +22,7 @@ public final class duf {
         float f3;
         float f4;
         if (!rectF.contains(rectF2)) {
-            d.v(a.b(), "Expected that the photos target area is contained in the camera window area.", (char) 937);
+            defpackage.d.v(a.b(), "Expected that the photos target area is contained in the camera window area.", (char) 937);
         }
         RectF rectF4 = new RectF(rectF2);
         rectF4.intersect(rectF);

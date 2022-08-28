@@ -129,7 +129,7 @@ public final class dfv extends dfk {
             ImageView imageView = dfjVar.a;
             ojc a = this.k.a(d);
             if (!a.g()) {
-                d.v(dfk.a.c(), "renderPlaceholderInto: No placeholder. Use default resource.", (char) 738);
+                defpackage.d.v(dfk.a.c(), "renderPlaceholderInto: No placeholder. Use default resource.", (char) 738);
                 imageView.setImageResource(R.color.photo_placeholder);
                 return;
             }

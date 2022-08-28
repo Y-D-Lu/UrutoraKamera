@@ -43,7 +43,7 @@ public final class jip implements jio {
         jil jilVar;
         fyr fyrVar = this.a;
         if (fyrVar.I != null) {
-            d.v(fyr.b.c(), "onCameraAvailable queued before onSurfaceTextureAvailable", (char) 1983);
+            defpackage.d.v(fyr.b.c(), "onCameraAvailable queued before onSurfaceTextureAvailable", (char) 1983);
             return;
         }
         fyrVar.w = i;
@@ -53,7 +53,7 @@ public final class jip implements jio {
         bvk bvkVar = (bvk) this.a.s.g();
         SurfaceTexture surfaceTexture2 = bvkVar.s;
         if (surfaceTexture2 == null || (jilVar = bvkVar.q) == null) {
-            d.v(bvk.a.c(), "Could not set SurfaceTexture default buffer dimensions, not yet setup", (char) 132);
+            defpackage.d.v(bvk.a.c(), "Could not set SurfaceTexture default buffer dimensions, not yet setup", (char) 132);
         } else {
             surfaceTexture2.setDefaultBufferSize(jilVar.b(), bvkVar.q.a());
         }

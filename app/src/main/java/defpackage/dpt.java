@@ -105,7 +105,7 @@ public final class dpt implements dpx {
             this.e.execute(a);
             return a;
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            d.v(d.c(), "couldn't create input texture frame", (char) 893);
+            defpackage.d.v(d.c(), "couldn't create input texture frame", (char) 893);
             return plk.U(e);
         }
     }
@@ -178,10 +178,10 @@ public final class dpt implements dpx {
                 });
                 return;
             }
-            d.v(d.c(), "couldn't set result frame", (char) 897);
+            defpackage.d.v(d.c(), "couldn't set result frame", (char) 897);
             textureFrame.release();
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            d.v(d.c(), "couldn't wait for initialization of result texture", (char) 896);
+            defpackage.d.v(d.c(), "couldn't wait for initialization of result texture", (char) 896);
             textureFrame.release();
         }
     }

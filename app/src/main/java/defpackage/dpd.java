@@ -248,7 +248,7 @@ public final class dpd implements pys {
                 dsz dszVar = (dsz) this.b.mo37get();
                 Sensor defaultSensor = mo37get2.getDefaultSensor(1);
                 if (defaultSensor == null) {
-                    d.v(dsj.a.c(), "Accelerometer sensor not found! Signal will be missing.", (char) 910);
+                    defpackage.d.v(dsj.a.c(), "Accelerometer sensor not found! Signal will be missing.", (char) 910);
                     return dru.b(dszVar).a();
                 }
                 dsi dsiVar = new dsi(dszVar);

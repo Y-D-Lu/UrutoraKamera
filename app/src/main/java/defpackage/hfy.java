@@ -79,11 +79,11 @@ public final class hfy implements hgl, fik, fhl, fhk {
             byte[] bArr2 = new byte[available];
             int read = ByteStreams.read(open, bArr2, 0, available);
             if (open.available() != 0) {
-                d.v(a.b(), "There is more data. This is problematic", (char) 2443);
+                defpackage.d.v(a.b(), "There is more data. This is problematic", (char) 2443);
             }
             open.close();
             if (read != available) {
-                d.v(a.b(), "Didn't finish reading the asset.", (char) 2442);
+                defpackage.d.v(a.b(), "Didn't finish reading the asset.", (char) 2442);
             }
             bArr = bArr2;
         } catch (IOException e) {

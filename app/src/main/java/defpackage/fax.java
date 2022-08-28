@@ -15,7 +15,7 @@ final class fax extends jlj {
     public final void onShutterButtonClick() {
         fbb fbbVar = this.b;
         if (fbbVar.V == null) {
-            d.v(fbb.b.b(), "Not taking picture because there's no active camera.", (char) 1604);
+            defpackage.d.v(fbb.b.b(), "Not taking picture because there's no active camera.", (char) 1604);
             return;
         }
         fbbVar.P.f();

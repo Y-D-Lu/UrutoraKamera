@@ -29,7 +29,7 @@ public final class bth implements iho {
             f.z();
             f.A();
         } else {
-            d.v(a.c(), "No back-facing camera found.", 'L');
+            defpackage.d.v(a.c(), "No back-facing camera found.", 'L');
         }
         this.b.f();
     }

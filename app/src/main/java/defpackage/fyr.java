@@ -227,7 +227,7 @@ public final class fyr extends buf implements dyh {
         try {
             f.get(500L, TimeUnit.MILLISECONDS);
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            d.v(b.b(), "Fail to wait freeGLMemory to finish", (char) 1994);
+            defpackage.d.v(b.b(), "Fail to wait freeGLMemory to finish", (char) 1994);
         }
     }
 
@@ -389,7 +389,7 @@ public final class fyr extends buf implements dyh {
     public final void F() {
         PackageInfo packageInfo;
         if (this.i == null) {
-            d.v(b.c(), "startCapture: camera device not open yet.", (char) 1997);
+            defpackage.d.v(b.c(), "startCapture: camera device not open yet.", (char) 1997);
             return;
         }
         if (this.k) {
@@ -414,7 +414,7 @@ public final class fyr extends buf implements dyh {
                     }
                 }
             } catch (Exception e) {
-                d.v(fel.a.b(), "Could not delete temporary images.", (char) 1664);
+                defpackage.d.v(fel.a.b(), "Could not delete temporary images.", (char) 1664);
             }
             LocalSessionStorage localSessionStorage = new LocalSessionStorage();
             localSessionStorage.a = format;
@@ -444,7 +444,7 @@ public final class fyr extends buf implements dyh {
             sb.append(str2);
             String sb2 = sb.toString();
             if (felVar.a() == null) {
-                d.v(fel.a.b(), "Could not get the thumbnail directory.", (char) 1665);
+                defpackage.d.v(fel.a.b(), "Could not get the thumbnail directory.", (char) 1665);
                 localSessionStorage.g = "";
             } else {
                 localSessionStorage.g = new File(felVar.a(), sb2).getAbsolutePath();
@@ -510,7 +510,7 @@ public final class fyr extends buf implements dyh {
             fdj fdjVar3 = this.r;
             int i = this.Q;
             if (fdjVar3.c == null) {
-                d.v(b.c(), "Can't setup LightCycleController for startPreview.", (char) 1995);
+                defpackage.d.v(b.c(), "Can't setup LightCycleController for startPreview.", (char) 1995);
                 return;
             }
             if (fdjVar3.b() <= DisplayHelper.DENSITY) {
@@ -708,7 +708,7 @@ public final class fyr extends buf implements dyh {
         fel felVar = this.T;
         felVar.b = new File(a.b());
         if (!felVar.b.exists() && !felVar.b.mkdirs()) {
-            d.v(fel.a.b(), "Panorama directory not created.", (char) 1669);
+            defpackage.d.v(fel.a.b(), "Panorama directory not created.", (char) 1669);
         }
         ((DisplayManager) this.s.f().getSystemService("display")).registerDisplayListener(this.af, null);
         this.ag = new fds();
@@ -790,7 +790,7 @@ public final class fyr extends buf implements dyh {
     public final void x() {
         fdm fdmVar = this.q;
         if (fdmVar != null && fdmVar.q) {
-            d.v(b.c(), "Not finishing capture since photo taking is in progress.", (char) 1989);
+            defpackage.d.v(b.c(), "Not finishing capture since photo taking is in progress.", (char) 1989);
             return;
         }
         this.e.b(org.codeaurora.snapcam.R.raw.staged_shot_complete);

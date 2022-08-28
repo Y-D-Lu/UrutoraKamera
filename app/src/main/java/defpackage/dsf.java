@@ -30,7 +30,7 @@ public final class dsf implements dqs {
                         dsf dsfVar = dsf.this;
                         long j2 = j;
                         if (list.size() > 10) {
-                            d.v(dyq.a.c(), "Warning: Samples used for vector determination is larger than 10 elements. This code is O(n) and expects small list sizes!", (char) 993);
+                            defpackage.d.v(dyq.a.c(), "Warning: Samples used for vector determination is larger than 10 elements. This code is O(n) and expects small list sizes!", (char) 993);
                         }
                         Iterator it = list.iterator();
                         float[] fArr = null;

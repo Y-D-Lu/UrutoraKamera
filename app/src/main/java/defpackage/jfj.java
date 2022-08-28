@@ -226,7 +226,7 @@ public final class jfj {
         this.p = ((Float) this.q.fA()).floatValue();
         int i = this.F;
         if (i == 5) {
-            d.v(a.b(), "Somehow trying to go from FADING to WAITING_FOR_BITMAP: Illegal!", (char) 3310);
+            defpackage.d.v(a.b(), "Somehow trying to go from FADING to WAITING_FOR_BITMAP: Illegal!", (char) 3310);
             throw new IllegalStateException("Going from FADING to WAITING_FOR_BITMAP");
         }
         if (i == 1) {

@@ -29,7 +29,7 @@ public class hnh extends hnd {
         this.b.f.animate().alpha(DisplayHelper.DENSITY).withEndAction(new hng(this.b.f, 0)).start();
         final hmy hmyVar = this.b.e;
         if (hmyVar.h == null || hmyVar.i == null) {
-            d.v(hmy.b.b().g(ovl.a, "McFlyControllerImpl"), "Rewind has not been initialized.", (char) 2562);
+            defpackage.d.v(hmy.b.b().g(ovl.a, "McFlyControllerImpl"), "Rewind has not been initialized.", (char) 2562);
         } else {
             hmyVar.u(mip.ew(new Consumer() { // from class: hms
                 @Override // java.util.function.Consumer
@@ -52,7 +52,7 @@ public class hnh extends hnd {
     public final void g() {
         hmy hmyVar = this.b.e;
         if (hmyVar.h == null || hmyVar.i == null) {
-            d.v(hmy.b.b().g(ovl.a, "McFlyControllerImpl"), "Rewind has not been initialized.", (char) 2561);
+            defpackage.d.v(hmy.b.b().g(ovl.a, "McFlyControllerImpl"), "Rewind has not been initialized.", (char) 2561);
             return;
         }
         mip mipVar = hmyVar.o;

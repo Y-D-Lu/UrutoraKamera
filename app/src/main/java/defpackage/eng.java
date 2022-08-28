@@ -47,7 +47,7 @@ public final class eng {
     public static final ojc c(ojc ojcVar, Intent intent, jcw jcwVar, qkg qkgVar, jtx jtxVar, Activity activity, fjs fjsVar, khx khxVar, ojz ojzVar, hug hugVar, lqv lqvVar) {
         e(intent);
         if (!ojcVar.g()) {
-            d.v(a.c(), "the mode is unknown or unsupported", (char) 1264);
+            defpackage.d.v(a.c(), "the mode is unknown or unsupported", (char) 1264);
             return oih.a;
         }
         ((oug) ((oug) a.c()).G((char) 1263)).r("launch mode: %s", ((jrl) ojcVar.c()).name());

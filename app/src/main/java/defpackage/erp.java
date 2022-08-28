@@ -579,7 +579,7 @@ public final class erp implements LasagnaCallbacks, esj {
                 pljVar2.d.run();
             }
         }) != 1) {
-            d.v(a.c().g(ovl.a, "LasagnaProcSession"), "Couldn't post PSL frame", (char) 1450);
+            defpackage.d.v(a.c().g(ovl.a, "LasagnaProcSession"), "Couldn't post PSL frame", (char) 1450);
         }
     }
 
@@ -604,7 +604,7 @@ public final class erp implements LasagnaCallbacks, esj {
         if (eddVar != null) {
             eddVar.c.d.a(esl.u, f);
         } else {
-            d.v(a.c().g(ovl.a, "LasagnaProcSession"), "Shot has been aborted.", (char) 1448);
+            defpackage.d.v(a.c().g(ovl.a, "LasagnaProcSession"), "Shot has been aborted.", (char) 1448);
         }
     }
 

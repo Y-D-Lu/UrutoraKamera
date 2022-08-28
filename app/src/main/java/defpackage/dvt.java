@@ -34,9 +34,9 @@ public final class dvt implements lie {
 
     public final synchronized void a() {
         if (this.f.get()) {
-            d.v(a.c(), "Attempted to start audio sampler after it has been closed.", (char) 944);
+            defpackage.d.v(a.c(), "Attempted to start audio sampler after it has been closed.", (char) 944);
         } else if (this.g != null) {
-            d.v(a.c(), "Sampler already started.", (char) 943);
+            defpackage.d.v(a.c(), "Sampler already started.", (char) 943);
         } else {
             this.b.c();
             ScheduledExecutorService scheduledExecutorService = this.d;

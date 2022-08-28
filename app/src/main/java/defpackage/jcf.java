@@ -22,7 +22,7 @@ public final class jcf {
     public final RectF a() {
         jbw jbwVar = (jbw) b().r.get();
         if (jbwVar == null) {
-            d.v(a.c(), "Preview rectangle is not available now", (char) 3245);
+            defpackage.d.v(a.c(), "Preview rectangle is not available now", (char) 3245);
             return new RectF(DisplayHelper.DENSITY, DisplayHelper.DENSITY, 1.0f, 1.0f);
         }
         return new RectF(jbwVar.b.e);

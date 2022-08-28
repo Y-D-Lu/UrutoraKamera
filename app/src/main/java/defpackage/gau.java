@@ -34,7 +34,7 @@ public final class gau implements gbp {
     @Override // defpackage.gbp, defpackage.lie, java.lang.AutoCloseable
     public final synchronized void close() {
         if (this.f) {
-            d.v(a.c(), "Closing sink more than once", (char) 2052);
+            defpackage.d.v(a.c(), "Closing sink more than once", (char) 2052);
             return;
         }
         gbp gbpVar = this.e;

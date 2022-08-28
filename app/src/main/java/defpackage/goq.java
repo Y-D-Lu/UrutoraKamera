@@ -43,7 +43,7 @@ public final class goq implements goy {
         grx grxVar = z ? new grx(grzVar) : null;
         this.d.a.fA();
         if (grxVar == null) {
-            d.v(a.c(), "Ticket not available", (char) 2094);
+            defpackage.d.v(a.c(), "Ticket not available", (char) 2094);
             return;
         }
         hsa hsaVar = gogVar.b;

@@ -49,13 +49,13 @@ public final class jng {
 
     public static ojc e(SurfaceView surfaceView, lic licVar, boolean z, int i) {
         if (!surfaceView.getHolder().getSurface().isValid()) {
-            d.v(a.c(), "getScreenshotFrom(): the surface is not valid", (char) 3450);
+            defpackage.d.v(a.c(), "getScreenshotFrom(): the surface is not valid", (char) 3450);
             return oih.a;
         }
         int min = Math.min(surfaceView.getWidth(), surfaceView.getHeight()) / i;
         int max = Math.max(surfaceView.getHeight(), surfaceView.getWidth()) / i;
         if (min <= 0 || max <= 0) {
-            d.v(a.c(), "getScreenshotFrom(): the surface size is invalid", (char) 3449);
+            defpackage.d.v(a.c(), "getScreenshotFrom(): the surface size is invalid", (char) 3449);
             return oih.a;
         }
         Bitmap createBitmap = Bitmap.createBitmap(min, max, Bitmap.Config.ARGB_8888);

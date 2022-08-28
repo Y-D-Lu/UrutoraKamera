@@ -155,7 +155,7 @@ public final class btp implements avw, bud {
     public final synchronized void h() {
         lvs lvsVar = this.e;
         if (lvsVar == null) {
-            d.v(a.c(), "doRequestCamera: might be interrupted by early release. return", '\\');
+            defpackage.d.v(a.c(), "doRequestCamera: might be interrupted by early release. return", '\\');
             return;
         }
         this.o.a(lvsVar);

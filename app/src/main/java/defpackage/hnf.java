@@ -88,11 +88,11 @@ public class hnf extends hnd {
                 while (listIterator.hasNext()) {
                     lmr lmrVar = (lmr) listIterator.next();
                     if (lmrVar == null) {
-                        d.v(hmh.a.b().g(ovl.a, "McFlyBuffer"), "Error adding Raw frame to Rewind buffer: Frame is null.", (char) 2558);
+                        defpackage.d.v(hmh.a.b().g(ovl.a, "McFlyBuffer"), "Error adding Raw frame to Rewind buffer: Frame is null.", (char) 2558);
                     } else {
                         lmw b = lmrVar.b();
                         if (b == null) {
-                            d.v(hmh.a.b().g(ovl.a, "McFlyBuffer"), "Error adding Raw frame to Rewind buffer: Frame id is null.", (char) 2557);
+                            defpackage.d.v(hmh.a.b().g(ovl.a, "McFlyBuffer"), "Error adding Raw frame to Rewind buffer: Frame id is null.", (char) 2557);
                         } else if (hmhVar.c.containsKey(Long.valueOf(b.b))) {
                             lmrVar.close();
                         } else {

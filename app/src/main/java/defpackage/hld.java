@@ -203,15 +203,15 @@ public final class hld implements dwj, lie {
         pud pudVar2;
         BurstCurator burstCurator = this.e ? null : (BurstCurator) mip.bY(this.b);
         if (burstCurator == null) {
-            d.v(a.b(), "Input frame and metadata cannot be null.", (char) 2518);
+            defpackage.d.v(a.b(), "Input frame and metadata cannot be null.", (char) 2518);
             return oih.a;
         } else if (hjzVar.n == null) {
-            d.v(a.b(), "Sensor region cannot be null.", (char) 2523);
+            defpackage.d.v(a.b(), "Sensor region cannot be null.", (char) 2523);
             return oih.a;
         } else {
             hjy[] hjyVarArr = hjzVar.p;
             if (hjyVarArr == null) {
-                d.v(a.b(), "Faces array cannot be null.", (char) 2522);
+                defpackage.d.v(a.b(), "Faces array cannot be null.", (char) 2522);
                 return oih.a;
             }
             if (hjyVarArr.length == 0 && !this.c) {

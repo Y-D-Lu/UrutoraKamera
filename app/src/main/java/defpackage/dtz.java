@@ -122,7 +122,7 @@ public final class dtz implements dtp {
             return;
         }
         if (this.o.a() == null) {
-            d.v(a.c(), "Cannot find Photos package info. Canceling.", (char) 929);
+            defpackage.d.v(a.c(), "Cannot find Photos package info. Canceling.", (char) 929);
             final ikm ikmVar = this.v;
             nyj nyjVar = new nyj(ikmVar.a, ikmVar.b);
             nyjVar.s(org.codeaurora.snapcam.R.string.photos_required_title);
@@ -198,7 +198,7 @@ public final class dtz implements dtp {
                     public final Object a() {
                         final dtz dtzVar = dtz.this;
                         final bty btyVar = f;
-                        d.v(dtz.a.c(), "Thumbnail is null when startLaunchingPhotos. Launch Photos Anyway.", (char) 918);
+                        defpackage.d.v(dtz.a.c(), "Thumbnail is null when startLaunchingPhotos. Launch Photos Anyway.", (char) 918);
                         return plk.aa(new pgj() { // from class: dtw
                             @Override // defpackage.pgj
                             public final pht a() {
@@ -214,7 +214,7 @@ public final class dtz implements dtp {
         } catch (IllegalArgumentException e) {
             ((oug) ((oug) ((oug) jue.a.c()).h(e)).G((char) 3520)).o("Photos app package not found.");
         }
-        d.v(a.c(), "Photos is disabled. Canceling.", (char) 928);
+        defpackage.d.v(a.c(), "Photos is disabled. Canceling.", (char) 928);
         final ikm ikmVar2 = this.v;
         nyj nyjVar2 = new nyj(ikmVar2.a, ikmVar2.b);
         nyjVar2.s(org.codeaurora.snapcam.R.string.photos_disabled_title);

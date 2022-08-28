@@ -52,7 +52,7 @@ public final class itg implements itq {
     @Override // defpackage.itq
     public final synchronized itz c(mad madVar, PointF pointF) {
         if (this.b) {
-            d.v(a.c(), "Cannot start tracking: tracker is closed", (char) 3155);
+            defpackage.d.v(a.c(), "Cannot start tracking: tracker is closed", (char) 3155);
             return itz.b();
         }
         this.d = madVar.d();
@@ -60,7 +60,7 @@ public final class itg implements itq {
         itr itrVar = this.g.g() ? (itr) this.g.c() : itr.OPTICAL_FLOW;
         if (this.f.g()) {
             if (!((itx) this.f.c()).b(new lig(madVar.c(), madVar.b()), madVar.d())) {
-                d.v(a.c(), "Cannot start motion estimator for tracking", (char) 3154);
+                defpackage.d.v(a.c(), "Cannot start motion estimator for tracking", (char) 3154);
             }
             hjz b = ((itx) this.f.c()).a.b();
             if (b != null && b.c > 50000000 && b.e > 350) {

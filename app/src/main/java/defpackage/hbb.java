@@ -93,7 +93,7 @@ public final class hbb implements hea {
                 mad f = a.f();
                 lnx b2 = a.b();
                 if (b2 == null) {
-                    d.v(c.b(), "Can't find the source camera for the secondary image.", (char) 2285);
+                    defpackage.d.v(c.b(), "Can't find the source camera for the secondary image.", (char) 2285);
                     throw new llv("Can't find the source camera for the secondary image.");
                 }
                 str = b2.c().a;

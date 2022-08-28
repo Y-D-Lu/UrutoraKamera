@@ -70,7 +70,7 @@ public final class hfw implements hgi {
         try {
             return ojc.i(asv.c(str));
         } catch (ass e) {
-            d.v(a.b(), "String was not a serialized XMPMeta.", (char) 2428);
+            defpackage.d.v(a.b(), "String was not a serialized XMPMeta.", (char) 2428);
             return oih.a;
         }
     }

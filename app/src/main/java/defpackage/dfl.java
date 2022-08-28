@@ -73,7 +73,7 @@ public final class dfl {
             int[] iArr2 = new int[1];
             EGL14.eglChooseConfig(eglGetDisplay, new int[]{12351, 12430, 12329, 0, 12352, 4, 12339, 1, 12344}, 0, eGLConfigArr, 0, 1, iArr2, 0);
             if (iArr2[0] == 0) {
-                d.v(c.c(), "No EGL configurations found!", (char) 741);
+                defpackage.d.v(c.c(), "No EGL configurations found!", (char) 741);
                 valueOf = null;
             } else {
                 EGLConfig eGLConfig = eGLConfigArr[0];

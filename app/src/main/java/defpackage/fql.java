@@ -157,7 +157,7 @@ public final class fql implements fqi {
                             kfmVar = fqlVar.d;
                         }
                         if (kfmVar == null) {
-                            d.v(fql.a.b(), "processGyroSamples called with a null eisNativeWrapper", (char) 1898);
+                            defpackage.d.v(fql.a.b(), "processGyroSamples called with a null eisNativeWrapper", (char) 1898);
                             return;
                         }
                         Iterator it = list.iterator();

@@ -123,7 +123,7 @@ public final class ohb extends InputStream implements ogs {
                     sb.append((int) d2);
                     sb.append(").");
                     ((oug) ((oug) ohw.a.c()).G((char) 3697)).r("%s", sb.toString());
-                    d.v(ohw.a.c(), "SVFP: Input FPS warning", (char) 3698);
+                    defpackage.d.v(ohw.a.c(), "SVFP: Input FPS warning", (char) 3698);
                 }
             }
         }

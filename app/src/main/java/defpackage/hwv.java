@@ -12,7 +12,7 @@ public final class hwv {
         try {
             return context.getPackageManager().getPackageInfo("com.google.pixel.camera.hal", i | 1073741824).getLongVersionCode();
         } catch (PackageManager.NameNotFoundException e) {
-            d.v(a.c(), "Camera HAL package not found.", (char) 2725);
+            defpackage.d.v(a.c(), "Camera HAL package not found.", (char) 2725);
             return -1L;
         }
     }

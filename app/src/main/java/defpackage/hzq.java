@@ -16,7 +16,7 @@ public final class hzq {
         ojc b = this.c.b();
         ojc c = this.c.c();
         if (!b.g() || !c.g()) {
-            d.v(a.c(), "No frame provider.", (char) 2744);
+            defpackage.d.v(a.c(), "No frame provider.", (char) 2744);
             iarVar.a(null);
             return;
         }
@@ -24,13 +24,13 @@ public final class hzq {
         try {
             lmr c2 = hxqVar.a.c();
             if (c2 == null) {
-                d.v(hxr.a.b(), "Requesting high resolution image failed, frame is null.", (char) 2727);
+                defpackage.d.v(hxr.a.b(), "Requesting high resolution image failed, frame is null.", (char) 2727);
                 mip.eT(null, null, this, c, iarVar);
                 return;
             }
             lzv c3 = c2.c();
             if (c3 == null) {
-                d.v(hxr.a.b(), "Image metadata is null.", (char) 2726);
+                defpackage.d.v(hxr.a.b(), "Image metadata is null.", (char) 2726);
                 mip.eT(null, null, this, c, iarVar);
                 return;
             }

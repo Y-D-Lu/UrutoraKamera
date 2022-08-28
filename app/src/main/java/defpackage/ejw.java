@@ -36,7 +36,7 @@ public final class ejw extends Thread {
         while (this.b) {
             int read = this.d.read(this.f, 0, 2048);
             if (read == -3 || read == -2) {
-                d.v(a.b(), "Error reading audio", (char) 1213);
+                defpackage.d.v(a.b(), "Error reading audio", (char) 1213);
                 break;
             } else if (this.c != 0) {
                 long nanoTime = (System.nanoTime() / 1000) + this.c;
@@ -47,7 +47,7 @@ public final class ejw extends Thread {
                         ByteBuffer[] inputBuffers = ejtVar.b.getInputBuffers();
                         int dequeueInputBuffer = ejtVar.b.dequeueInputBuffer(-1L);
                         if (dequeueInputBuffer < 0) {
-                            d.v(ejt.a.b(), "Could not find a valid buffer, will drop frame!", (char) 1201);
+                            defpackage.d.v(ejt.a.b(), "Could not find a valid buffer, will drop frame!", (char) 1201);
                         } else {
                             ByteBuffer byteBuffer = inputBuffers[dequeueInputBuffer];
                             ByteBuffer byteBuffer2 = (ByteBuffer) byteBuffer.clear();

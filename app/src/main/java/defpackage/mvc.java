@@ -16,7 +16,7 @@ public final class mvc {
             intent.addFlags(268435456);
             context.startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            d.v(a.c(), "PrimesEventActivity not found: primes/debug is not included in the app.", (char) 3598);
+            defpackage.d.v(a.c(), "PrimesEventActivity not found: primes/debug is not included in the app.", (char) 3598);
         }
     }
 }

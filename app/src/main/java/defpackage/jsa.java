@@ -37,7 +37,7 @@ public final class jsa {
             if (view.getRootWindowInsets() != null) {
                 return view.getRootWindowInsets().getDisplayCutout() != null;
             }
-            d.v(a.b(), "WindowInsets is null. Not able to check cutouts status!", (char) 3490);
+            defpackage.d.v(a.b(), "WindowInsets is null. Not able to check cutouts status!", (char) 3490);
             return false;
         }
         return true;

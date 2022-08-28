@@ -24,7 +24,7 @@ final class coe implements mar {
     @Override // defpackage.mar
     public final void a() {
         this.f.e.c(this.c.b, "onAbandoned");
-        d.v(cof.a.b(), "Video publish abandoned.", (char) 585);
+        defpackage.d.v(cof.a.b(), "Video publish abandoned.", (char) 585);
     }
 
     @Override // defpackage.mar

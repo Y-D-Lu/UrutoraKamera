@@ -73,7 +73,7 @@ public final class ekb implements ejy {
             ejx ejxVar = this.h;
             this.c = new eku(MediaCodec.createEncoderByType("video/avc"), new ekt(ejxVar.a, ejxVar.b, ejxVar.c, EGL14.eglGetCurrentContext(), this.i, i));
         } catch (IOException e) {
-            d.v(a.b(), "Could not instantiate a video recorder!", (char) 1215);
+            defpackage.d.v(a.b(), "Could not instantiate a video recorder!", (char) 1215);
             this.c = null;
         }
     }

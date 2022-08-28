@@ -31,7 +31,7 @@ public final class ebb implements iho {
                 bxg bxgVar = (bxg) obj;
                 ebbVar.d.e("HdrPlusPrewarm");
                 if (ebbVar.c.k(ddl.I) && !Mallopt.setOptions(256, 33554432)) {
-                    d.v(ebb.a.c(), "Failed to set mallopt options.", (char) 1043);
+                    defpackage.d.v(ebb.a.c(), "Failed to set mallopt options.", (char) 1043);
                 }
                 ebbVar.d.e("gcamdeps");
                 enl.b();

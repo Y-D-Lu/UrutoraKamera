@@ -216,9 +216,9 @@ public final class eyg extends buf implements jad {
         this.U.e("CuttlefishModule#takePictureNow");
         fwc fwcVar = this.T;
         if (fwcVar == null) {
-            d.v(b.c(), "Not taking picture since Camera is closed.", (char) 1582);
+            defpackage.d.v(b.c(), "Not taking picture since Camera is closed.", (char) 1582);
         } else if (!((Boolean) fwcVar.b().fA()).booleanValue()) {
-            d.v(b.c(), "Not taking picture since the Camera is not ready to take a picture.", (char) 1581);
+            defpackage.d.v(b.c(), "Not taking picture since the Camera is not ready to take a picture.", (char) 1581);
         } else {
             x(false);
             this.X.b(R.raw.longexposure_start);

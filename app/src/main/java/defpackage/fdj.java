@@ -270,7 +270,7 @@ public final class fdj implements View.OnClickListener {
 
     public final synchronized void f() {
         if (!this.s) {
-            d.v(a.c(), "stopCamera invoked, but camera is already stopped!", (char) 1658);
+            defpackage.d.v(a.c(), "stopCamera invoked, but camera is already stopped!", (char) 1658);
         } else {
             this.s = false;
             this.b.s = true;

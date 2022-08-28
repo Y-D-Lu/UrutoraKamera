@@ -40,7 +40,7 @@ public final class exf extends jlj {
         } else if (exiVar2.N.f()) {
             exiVar2.O.a();
         } else {
-            d.v(exi.b.c(), "Not starting or stopping auto-timer capture since the state is disabled.", (char) 1565);
+            defpackage.d.v(exi.b.c(), "Not starting or stopping auto-timer capture since the state is disabled.", (char) 1565);
         }
     }
 

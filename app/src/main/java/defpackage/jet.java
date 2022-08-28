@@ -420,13 +420,13 @@ public final class jet implements jfn {
     public final boolean t(jrl jrlVar) {
         obr.aG(jrlVar != null, "requested mode is null");
         if (this.g == jrlVar) {
-            d.v(a.c(), "requested mode is currently active", (char) 3283);
+            defpackage.d.v(a.c(), "requested mode is currently active", (char) 3283);
             return true;
         } else if (this.f) {
-            d.v(a.b(), "scroll is currently in progress; don't know what to do with this.", (char) 3282);
+            defpackage.d.v(a.b(), "scroll is currently in progress; don't know what to do with this.", (char) 3282);
             return false;
         } else if (!this.x) {
-            d.v(a.c(), "mode switch requested when switcher is disabled. Ignoring.", (char) 3281);
+            defpackage.d.v(a.c(), "mode switch requested when switcher is disabled. Ignoring.", (char) 3281);
             return false;
         } else {
             if (s(jrlVar)) {

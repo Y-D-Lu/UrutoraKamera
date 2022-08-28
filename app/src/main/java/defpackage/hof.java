@@ -51,7 +51,7 @@ public final class hof implements hoj {
                         boolean equals = jrlVar2.equals(jrl.LONG_EXPOSURE);
                         dcw dcwVar = frontLensIndicatorOverlay.c;
                         if (dcwVar == null) {
-                            d.v(FrontLensIndicatorOverlay.a.b(), "Not showing due to cutout info is null.", (char) 3458);
+                            defpackage.d.v(FrontLensIndicatorOverlay.a.b(), "Not showing due to cutout info is null.", (char) 3458);
                             return;
                         }
                         frontLensIndicatorOverlay.l = equals ? dcwVar.d : dcwVar.c;
@@ -84,7 +84,7 @@ public final class hof implements hoj {
         CutoutBar cutoutBar = this.b;
         dcw dcwVar = cutoutBar.b;
         if (dcwVar == null) {
-            d.v(CutoutBar.a.b(), "Not showing due to cutout info is null.", (char) 3457);
+            defpackage.d.v(CutoutBar.a.b(), "Not showing due to cutout info is null.", (char) 3457);
             return;
         }
         cutoutBar.e = dcwVar.d;

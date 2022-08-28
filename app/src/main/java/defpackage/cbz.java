@@ -119,7 +119,7 @@ public abstract class cbz extends kqh {
                 kreVar.a(10, valueOf.length() != 0 ? "Error parsing SelectionCriteria proto: ".concat(valueOf) : new String("Error parsing SelectionCriteria proto: "));
             }
         } catch (Exception e8) {
-            d.v(a.c(), "Error parsing Any proto from criteria", (char) 226);
+            defpackage.d.v(a.c(), "Error parsing Any proto from criteria", (char) 226);
             kreVar.a(10, "Error parsing Any proto from criteria");
         }
     }

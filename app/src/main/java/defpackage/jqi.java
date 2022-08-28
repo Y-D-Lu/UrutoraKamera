@@ -216,7 +216,7 @@ public final class jqi implements jqn {
                         gtgVar2.aq = !((String) gtgVar2.x.fA()).isEmpty();
                     }
                 } else if (((hth) gtgVar2.u.fA()).equals(hth.EXT_BLUETOOTH) && gtgVar2.aq && ((String) gtgVar2.x.fA()).isEmpty()) {
-                    d.v(gtg.a.c(), "Bluetooth is disconnected during recording. Reset to phone mic", (char) 2129);
+                    defpackage.d.v(gtg.a.c(), "Bluetooth is disconnected during recording. Reset to phone mic", (char) 2129);
                     gtgVar2.u.fB(hth.PHONE);
                 }
                 gtgVar2.p(true);

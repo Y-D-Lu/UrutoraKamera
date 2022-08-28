@@ -957,7 +957,7 @@ public final class bno implements pys {
                         djuVar2.c = false;
                         DebugCanvasView debugCanvasView = djuVar2.b;
                         if (debugCanvasView == null) {
-                            d.v(dju.a.c(), "UI view not yet initialized", (char) 810);
+                            defpackage.d.v(dju.a.c(), "UI view not yet initialized", (char) 810);
                         } else {
                             debugCanvasView.setVisibility(4);
                         }

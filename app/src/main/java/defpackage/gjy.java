@@ -113,7 +113,7 @@ final class gjy implements gmt {
                 if (bitmap != null) {
                     egmVar2.c.f(bitmap);
                 } else {
-                    d.v(egm.a.b(), "Could not map YUV to Bitmap.", (char) 1151);
+                    defpackage.d.v(egm.a.b(), "Could not map YUV to Bitmap.", (char) 1151);
                 }
             }
         });

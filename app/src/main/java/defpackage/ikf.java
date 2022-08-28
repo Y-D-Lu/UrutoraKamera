@@ -17,7 +17,7 @@ public final class ikf implements oiu {
             ((ayu) obj).h(this.a.c);
             return null;
         } catch (IOException e) {
-            d.v(ikh.a.b(), "Purge cache failed.", (char) 2974);
+            defpackage.d.v(ikh.a.b(), "Purge cache failed.", (char) 2974);
             return null;
         }
     }

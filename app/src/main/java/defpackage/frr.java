@@ -129,7 +129,7 @@ public final class frr implements frn {
     @Override // defpackage.frn, java.lang.AutoCloseable
     public final synchronized void close() {
         if (this.h) {
-            d.v(u.c(), "Trying to close after handler shutdown", (char) 1926);
+            defpackage.d.v(u.c(), "Trying to close after handler shutdown", (char) 1926);
             return;
         }
         for (Long l : this.a.f(this.K)) {
@@ -153,7 +153,7 @@ public final class frr implements frn {
     @Override // defpackage.frn
     public final void e() {
         if (this.h) {
-            d.v(u.c(), "Trying to start after handler shutdown", (char) 1935);
+            defpackage.d.v(u.c(), "Trying to start after handler shutdown", (char) 1935);
         } else {
             this.d.post(new frp(this, 3));
         }
@@ -161,7 +161,7 @@ public final class frr implements frn {
 
     public final void f() {
         if (this.v.getAndSet(true)) {
-            d.v(u.c(), "Shutdown already called. Skipping additional requests.", (char) 1934);
+            defpackage.d.v(u.c(), "Shutdown already called. Skipping additional requests.", (char) 1934);
             return;
         }
         h();

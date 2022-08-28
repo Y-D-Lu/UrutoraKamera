@@ -59,7 +59,7 @@ public final class NativeCrashHandlerImpl implements myj {
         try {
             System.loadLibrary("native_crash_handler_jni");
             if (!initializeSignalHandler()) {
-                d.v(c.c(), "unable to initialize signal handler", (char) 3625);
+                defpackage.d.v(c.c(), "unable to initialize signal handler", (char) 3625);
                 return;
             }
             try {

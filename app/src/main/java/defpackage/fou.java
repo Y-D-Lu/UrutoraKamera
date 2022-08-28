@@ -230,7 +230,7 @@ public final class fou implements fpm {
     public static final void k(fot fotVar, Throwable th, fos fosVar) {
         hsp hspVar = fotVar.a;
         if (fotVar.l.getAndSet(true)) {
-            d.v(a.c(), "Cancelling microvideo but result has been submitted already", (char) 1826);
+            defpackage.d.v(a.c(), "Cancelling microvideo but result has been submitted already", (char) 1826);
             return;
         }
         if (fotVar.p) {

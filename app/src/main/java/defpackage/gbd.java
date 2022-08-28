@@ -23,7 +23,7 @@ public final class gbd implements gbg {
 
     public gbd(MediaCodec mediaCodec, MediaFormat mediaFormat, mpi mpiVar, mrg mrgVar) {
         if (lzi.a().a) {
-            d.v(b.c(), "Using GL-based image encoder on emulator can cause individual frames to fail to encode. Consider using a retryingEncoder wrapper.", (char) 2055);
+            defpackage.d.v(b.c(), "Using GL-based image encoder on emulator can cause individual frames to fail to encode. Consider using a retryingEncoder wrapper.", (char) 2055);
         }
         MediaFormat mediaFormat2 = new MediaFormat(mediaFormat);
         mediaFormat2.setInteger("latency", 1);
@@ -103,7 +103,7 @@ public final class gbd implements gbg {
                             throw new IllegalStateException(sb.toString());
                         }
                     } else if (integer == -42) {
-                        d.v(b.c(), "Media codec does not specify latency, and may ignore latency key. This could cause ad-hoc encoding to fail.", (char) 2056);
+                        defpackage.d.v(b.c(), "Media codec does not specify latency, and may ignore latency key. This could cause ad-hoc encoding to fail.", (char) 2056);
                     }
                 }
             }

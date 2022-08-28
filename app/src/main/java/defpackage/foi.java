@@ -48,7 +48,7 @@ final class foi implements fuv {
             if (this.d.q.g()) {
                 this.h.t.a(((fmp) this.d.q.c()).a);
             } else {
-                d.v(fou.a.c(), "Didn't take second shot since UI resources are missing", (char) 1787);
+                defpackage.d.v(fou.a.c(), "Didn't take second shot since UI resources are missing", (char) 1787);
             }
         }
         this.d.q = oih.a;

@@ -218,7 +218,7 @@ public final class cea implements dbg, ias {
         try {
             pixVar7 = (pix) ppd.s(pix.i, modeSuggestionClient.nativeProcess(modeSuggestionClient.b, pixVar7.g()), pos.b());
         } catch (ppp e) {
-            d.v(ModeSuggestionClient.a.b(), "Proto serialization error.", (char) 1268);
+            defpackage.d.v(ModeSuggestionClient.a.b(), "Proto serialization error.", (char) 1268);
         }
         pjd pjdVar = pixVar7.h;
         if (pjdVar == null) {

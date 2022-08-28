@@ -23,7 +23,7 @@ final class nbh {
         myw.f();
         StorageManager storageManager = (StorageManager) context.getSystemService(StorageManager.class);
         if (storageManager == null) {
-            d.v(a.b(), "StorageManager is not available", (char) 3664);
+            defpackage.d.v(a.b(), "StorageManager is not available", (char) 3664);
             return null;
         }
         try {

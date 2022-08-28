@@ -37,7 +37,7 @@ public final class hvb extends hvi {
                 str = AuxButtonsLayout.switchToPicturesize();
                 break;
             default:
-                d.v(b.c(), "Ignoring attempt to upgrade size of unhandled camera facing direction", (char) 2650);
+                defpackage.d.v(b.c(), "Ignoring attempt to upgrade size of unhandled camera facing direction", (char) 2650);
                 return;
         }
         lig br = mip.br(hubVar.e(str));
@@ -71,7 +71,7 @@ public final class hvb extends hvi {
                 str = AuxButtonsLayout.switchToPicturesize();
                 break;
             default:
-                d.v(b.c(), "Ignoring attempt to upgrade size of unhandled camera facing direction", (char) 2651);
+                defpackage.d.v(b.c(), "Ignoring attempt to upgrade size of unhandled camera facing direction", (char) 2651);
                 return;
         }
         lvs e = this.f.e(lwdVar);

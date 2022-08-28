@@ -46,7 +46,7 @@ public final class dfy extends dfk {
             jrx jrxVar = jrx.PLACEHOLDER;
             return new jry(h2);
         } catch (InterruptedException | ExecutionException e) {
-            d.v(h.b(), "Fails to generate thumbnail", (char) 761);
+            defpackage.d.v(h.b(), "Fails to generate thumbnail", (char) 761);
             oih oihVar = oih.a;
             jrx jrxVar2 = jrx.PLACEHOLDER;
             return new jry(oihVar);

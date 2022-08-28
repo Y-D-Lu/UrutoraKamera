@@ -46,7 +46,7 @@ final class fyc extends Thread {
             fyr fyrVar2 = this.a;
             fyrVar2.u.av(fyrVar2.p, fyrVar2.N, ((float) elapsedRealtime) * 0.001f);
         } catch (IOException e) {
-            d.v(fyr.b.b(), "Could not write temporary panorama image.", (char) 1979);
+            defpackage.d.v(fyr.b.b(), "Could not write temporary panorama image.", (char) 1979);
         }
     }
 }

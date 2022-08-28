@@ -45,7 +45,7 @@ public final class hjb extends hja {
         double measureSharpnessOnEdgeGivenCropNative = ImgUtilNative.measureSharpnessOnEdgeGivenCropNative(madVar.c(), madVar.b(), macVar.getBuffer(), macVar.getPixelStride(), macVar.getRowStride(), hinVar.e.left, hinVar.e.top, hinVar.e.right, hinVar.e.bottom);
         hiqVar.b.f();
         if (measureSharpnessOnEdgeGivenCropNative <= 0.0d) {
-            d.v(hiq.a.c(), "invalid metric value from LS metric calculation.", (char) 2492);
+            defpackage.d.v(hiq.a.c(), "invalid metric value from LS metric calculation.", (char) 2492);
         }
         ojc i = ojc.i(new fju(fjv.LUCKY_SHOT_DEFAULT_METRIC, (float) measureSharpnessOnEdgeGivenCropNative, SystemClock.elapsedRealtimeNanos() - elapsedRealtimeNanos2));
         long elapsedRealtimeNanos3 = SystemClock.elapsedRealtimeNanos();

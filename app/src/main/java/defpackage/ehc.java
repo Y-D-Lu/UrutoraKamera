@@ -24,7 +24,7 @@ public final class ehc {
             file.mkdir();
         }
         if (!file2.mkdirs()) {
-            d.v(b.b(), "Failed to create directory", (char) 1158);
+            defpackage.d.v(b.b(), "Failed to create directory", (char) 1158);
         }
         this.c = file2;
         this.a = file2.getName();

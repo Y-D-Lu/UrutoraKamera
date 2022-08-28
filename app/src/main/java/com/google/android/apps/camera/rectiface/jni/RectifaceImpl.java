@@ -146,7 +146,7 @@ public final class RectifaceImpl implements hli, lie {
         if (rectifaceWarpfieldImpl.b == 0) {
             rectifaceWarpfieldImpl.b = RectifaceWarpfieldImpl.initializeImpl();
         }
-        d.v(RectifaceWarpfieldImpl.a.c(), "Ignored Rectiface warpfield re-initialization.", (char) 2539);
+        defpackage.d.v(RectifaceWarpfieldImpl.a.c(), "Ignored Rectiface warpfield re-initialization.", (char) 2539);
         obr.aR(rectifaceWarpfieldImpl.b != 0, "Invalid rectiface warpfield.");
         return rectifaceWarpfieldImpl;
     }
@@ -185,7 +185,7 @@ public final class RectifaceImpl implements hli, lie {
     public final void c(Bitmap bitmap, ShotMetadata shotMetadata) {
         bitmap.getClass();
         if (!correctLensDistortionImpl(bitmap, ShotMetadata.c(shotMetadata))) {
-            d.v(a.b(), "Lens correction failed.", (char) 2530);
+            defpackage.d.v(a.b(), "Lens correction failed.", (char) 2530);
         }
     }
 
@@ -209,10 +209,10 @@ public final class RectifaceImpl implements hli, lie {
         hgm hgmVar;
         boolean z = false;
         if (this.c != 0 || (hgmVar = this.g) == null) {
-            d.v(a.c(), "Ignored Rectiface (Segmenter) re-initialization.", (char) 2531);
+            defpackage.d.v(a.c(), "Ignored Rectiface (Segmenter) re-initialization.", (char) 2531);
         } else {
             if (hgmVar.a() == 0 && f()) {
-                d.v(a.c(), "Expected portrait segmenter to be initialized, but it wasn't. Initializing again.", (char) 2533);
+                defpackage.d.v(a.c(), "Expected portrait segmenter to be initialized, but it wasn't. Initializing again.", (char) 2533);
                 this.g.b();
             }
             long a2 = this.g.a();
@@ -230,7 +230,7 @@ public final class RectifaceImpl implements hli, lie {
         }
         obr.aR(z, "Invalid segmenter.");
         if (this.h.a() == 0 && i()) {
-            d.v(a.c(), "Expected firefly to be initialized, but it wasn't. Initializing again.", (char) 2532);
+            defpackage.d.v(a.c(), "Expected firefly to be initialized, but it wasn't. Initializing again.", (char) 2532);
             this.h.d();
         }
         this.e = true;
@@ -242,7 +242,7 @@ public final class RectifaceImpl implements hli, lie {
             hardwareBuffer.getClass();
             return correctLensDistortionAHWBZeroCopyImpl(hardwareBuffer, hardwareBuffer2, ShotMetadata.c(shotMetadata), this.d);
         }
-        d.v(a.c(), "Lens distortion correction skipped because of format mismatch.", (char) 2538);
+        defpackage.d.v(a.c(), "Lens distortion correction skipped because of format mismatch.", (char) 2538);
         return false;
     }
 

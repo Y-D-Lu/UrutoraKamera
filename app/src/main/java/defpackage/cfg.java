@@ -12,7 +12,7 @@ public final class cfg implements lhc {
 
     @Override // defpackage.lhc
     public final void a() {
-        d.v(a.b(), "onMediaRecorderError", (char) 332);
+        defpackage.d.v(a.b(), "onMediaRecorderError", (char) 332);
         this.b.i();
     }
 }

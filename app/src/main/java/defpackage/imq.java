@@ -35,7 +35,7 @@ public final class imq implements PowerManager.OnThermalStatusChangedListener, i
         if (!this.f) {
             this.e.a(this);
         } else {
-            d.v(c.c(), "Was already registered as ThermalStatusListener on AppStart", (char) 3006);
+            defpackage.d.v(c.c(), "Was already registered as ThermalStatusListener on AppStart", (char) 3006);
         }
         this.f = true;
     }
@@ -46,7 +46,7 @@ public final class imq implements PowerManager.OnThermalStatusChangedListener, i
             imo imoVar = this.e;
             imoVar.e.execute(new imn(imoVar, this, 0));
         } else {
-            d.v(c.c(), "Was not registered as ThermalStatusListener on AppStop", (char) 3008);
+            defpackage.d.v(c.c(), "Was not registered as ThermalStatusListener on AppStop", (char) 3008);
         }
         this.f = false;
     }

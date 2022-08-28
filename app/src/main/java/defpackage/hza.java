@@ -190,7 +190,7 @@ public final class hza implements iao, hxi, fii, fie, fig, fib {
                                     hza hzaVar3 = hza.this;
                                     mad k = lwkVar.k();
                                     if (k == null) {
-                                        d.v(hza.a.b(), "Unable to fork ref counted image", (char) 2730);
+                                        defpackage.d.v(hza.a.b(), "Unable to fork ref counted image", (char) 2730);
                                         return;
                                     }
                                     int i = hzaVar3.C;

@@ -50,7 +50,7 @@ public final class ioa extends buf {
     @Override // defpackage.buf
     public final void gf() {
         if (this.h == null) {
-            d.v(b.c(), "Cheetah component is not initialized, aborting pause", (char) 3046);
+            defpackage.d.v(b.c(), "Cheetah component is not initialized, aborting pause", (char) 3046);
             return;
         }
         ipf a = u().a();
@@ -66,7 +66,7 @@ public final class ioa extends buf {
     @Override // defpackage.buf
     public final void k() {
         if (this.h == null) {
-            d.v(b.c(), "Cheetah component is not initialized, aborting resume", (char) 3047);
+            defpackage.d.v(b.c(), "Cheetah component is not initialized, aborting resume", (char) 3047);
             return;
         }
         ipf a = u().a();
@@ -326,13 +326,13 @@ public final class ioa extends buf {
     @Override // defpackage.buf
     public final void o() {
         if (this.h == null) {
-            d.v(b.c(), "Cheetah component is not initialized, aborting stop", (char) 3048);
+            defpackage.d.v(b.c(), "Cheetah component is not initialized, aborting stop", (char) 3048);
             return;
         }
         this.e.e("Cheetah-StopModule");
         ipf a = u().a();
         if (((inr) a.j.d).equals(inr.STATE_RECORDING_ERROR)) {
-            d.v(ipf.a.b(), "onStop(): STATE_RECORDING_ERROR", (char) 3090);
+            defpackage.d.v(ipf.a.b(), "onStop(): STATE_RECORDING_ERROR", (char) 3090);
             a.i(true);
         } else if (((inr) a.j.d).equals(inr.STATE_PROCESSING)) {
             a.M.d(new iot(a, 9), a.q);
@@ -354,7 +354,7 @@ public final class ioa extends buf {
     @Override // defpackage.buf
     public final boolean q() {
         if (this.h == null) {
-            d.v(b.c(), "Cheetah component is not initialized, aborting onBackPressed", (char) 3049);
+            defpackage.d.v(b.c(), "Cheetah component is not initialized, aborting onBackPressed", (char) 3049);
             return false;
         }
         ipf a = u().a();

@@ -202,7 +202,7 @@ public final class iqs implements iqq {
                     });
                     return;
                 } else {
-                    d.v(ira.a.c(), "Executor service is shut down", (char) 3130);
+                    defpackage.d.v(ira.a.c(), "Executor service is shut down", (char) 3130);
                     return;
                 }
             }
@@ -262,7 +262,7 @@ public final class iqs implements iqq {
         try {
             iraVar.c.awaitTermination(2000L, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e) {
-            d.v(ira.a.c(), "Eis executorService is interrupted while waiting", (char) 3129);
+            defpackage.d.v(ira.a.c(), "Eis executorService is interrupted while waiting", (char) 3129);
         }
         for (mad madVar : iraVar.d) {
             madVar.close();
@@ -361,7 +361,7 @@ public final class iqs implements iqq {
                         irg irgVar2 = ireVar.a;
                         irgVar2.l = ireVar.b;
                         if (!Thread.currentThread().getName().equals(irgVar2.d)) {
-                            d.v(irg.a.b(), "setRenderer: This thread does not own the OpenGL context.", (char) 3133);
+                            defpackage.d.v(irg.a.b(), "setRenderer: This thread does not own the OpenGL context.", (char) 3133);
                             return;
                         } else {
                             irgVar2.l.onSurfaceChanged(irgVar2.k, irgVar2.c, irgVar2.b);

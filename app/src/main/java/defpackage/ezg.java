@@ -344,9 +344,9 @@ public final class ezg extends buf implements ezk {
         this.F.e("LasagnaModule#takePictureNow");
         fwc fwcVar = this.E;
         if (fwcVar == null) {
-            d.v(b.c().g(ovl.a, "LasagnaMode"), "Not taking picture since Camera is closed.", (char) 1595);
+            defpackage.d.v(b.c().g(ovl.a, "LasagnaMode"), "Not taking picture since Camera is closed.", (char) 1595);
         } else if (!((Boolean) fwcVar.b().fA()).booleanValue()) {
-            d.v(b.c().g(ovl.a, "LasagnaMode"), "Not taking picture since the Camera is not ready to take a picture.", (char) 1594);
+            defpackage.d.v(b.c().g(ovl.a, "LasagnaMode"), "Not taking picture since the Camera is not ready to take a picture.", (char) 1594);
         } else {
             v(false);
             this.g.b();

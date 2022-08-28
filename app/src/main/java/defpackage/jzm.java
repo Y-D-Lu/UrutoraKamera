@@ -21,7 +21,7 @@ class jzm extends jzi {
 
     @Override // defpackage.jzi, defpackage.ihs, defpackage.iht
     public final void f() {
-        d.v(jzq.f.c(), "Enter [Invisible] state", (char) 3547);
+        defpackage.d.v(jzq.f.c(), "Enter [Invisible] state", (char) 3547);
     }
 
     @Override // defpackage.jzi

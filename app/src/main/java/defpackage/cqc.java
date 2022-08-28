@@ -29,7 +29,7 @@ final class cqc {
         try {
             exifInterface.r(bArr);
         } catch (IOException e) {
-            d.v(a.b(), "fail to read EXIF from JPEG byte array.", (char) 608);
+            defpackage.d.v(a.b(), "fail to read EXIF from JPEG byte array.", (char) 608);
         }
         Integer b = exifInterface.b(ExifInterface.ai);
         boolean z = false;

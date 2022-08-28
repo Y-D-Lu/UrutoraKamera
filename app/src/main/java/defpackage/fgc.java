@@ -11,7 +11,7 @@ final class fgc implements phh {
 
     @Override // defpackage.phh
     public final void a(Throwable th) {
-        d.v(fgd.a.c(), "Failed to check Lens capabilities.", (char) 1681);
+        defpackage.d.v(fgd.a.c(), "Failed to check Lens capabilities.", (char) 1681);
         ffh ffhVar = this.a.d;
         if (ffhVar != null) {
             ffhVar.a(jch.a().a());

@@ -53,7 +53,7 @@ public final class equ implements LasagnaCallbacks {
         if (eddVar != null) {
             eddVar.c.d.a(esl.u, f);
         } else {
-            d.v(erp.a.c().g(ovl.a, "LasagnaProcSession"), "Shot has been aborted.", (char) 1448);
+            defpackage.d.v(erp.a.c().g(ovl.a, "LasagnaProcSession"), "Shot has been aborted.", (char) 1448);
         }
     }
 

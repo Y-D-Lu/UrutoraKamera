@@ -171,18 +171,18 @@ public final class dqj implements jws {
         }
         Rect rect = (Rect) lzvVar.d(CaptureResult.SCALER_CROP_REGION);
         if (rect == null) {
-            d.v(a.b(), "Scaler crop region unexpectedly missing.", (char) 904);
+            defpackage.d.v(a.b(), "Scaler crop region unexpectedly missing.", (char) 904);
             return;
         }
         Float f2 = (Float) lzvVar.d(CaptureResult.LENS_FOCAL_LENGTH);
         if (f2 == null) {
-            d.v(a.b(), "Focal length unexpectedly missing.", (char) 903);
+            defpackage.d.v(a.b(), "Focal length unexpectedly missing.", (char) 903);
             return;
         }
         float floatValue = this.e.containsKey(str) ? ((Float) this.e.get(str)).floatValue() * f2.floatValue() : 1.0f;
         Rect rect2 = (Rect) a2.a.a(str).l(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE);
         if (rect2 == null) {
-            d.v(a.b(), "Active array size unexpectedly missing.", (char) 902);
+            defpackage.d.v(a.b(), "Active array size unexpectedly missing.", (char) 902);
             return;
         }
         float width = (rect2.width() / rect.width()) * floatValue;

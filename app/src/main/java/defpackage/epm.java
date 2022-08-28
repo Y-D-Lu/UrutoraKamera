@@ -19,7 +19,7 @@ public final class epm {
         if (j != 0) {
             this.c.abortShot(j, i);
         } else {
-            d.v(a.c(), "abortShot(): processor hasn't been initialized.", (char) 1345);
+            defpackage.d.v(a.c(), "abortShot(): processor hasn't been initialized.", (char) 1345);
         }
     }
 
@@ -40,7 +40,7 @@ public final class epm {
         if (j != 0) {
             this.c.endShot(j, i);
         } else {
-            d.v(a.c(), "endShot(): processor hasn't been initialized.", (char) 1349);
+            defpackage.d.v(a.c(), "endShot(): processor hasn't been initialized.", (char) 1349);
         }
     }
 
@@ -57,7 +57,7 @@ public final class epm {
         if (j != 0) {
             this.c.printDiagnosticsToLog(j);
         } else {
-            d.v(a.c(), "printDiagnostics(): processor hasn't been initialized.", (char) 1350);
+            defpackage.d.v(a.c(), "printDiagnostics(): processor hasn't been initialized.", (char) 1350);
         }
     }
 
@@ -67,7 +67,7 @@ public final class epm {
             this.c.beginShot(j, i);
             return true;
         }
-        d.v(a.c(), "beginShot(): processor hasn't been initialized.", (char) 1352);
+        defpackage.d.v(a.c(), "beginShot(): processor hasn't been initialized.", (char) 1352);
         return false;
     }
 
@@ -76,7 +76,7 @@ public final class epm {
         if (j != 0) {
             this.c.processPslFrame(j, i, RawWriteView.c(pljVar.a), FrameMetadata.b(pljVar.b), pljVar.c.a, pljVar.d);
         } else {
-            d.v(a.c(), "processZslBurst(): processor hasn't been initialized.", (char) 1353);
+            defpackage.d.v(a.c(), "processZslBurst(): processor hasn't been initialized.", (char) 1353);
         }
     }
 
@@ -86,7 +86,7 @@ public final class epm {
             this.c.setOptions(j, i, false, f, i2, false, z);
             return true;
         }
-        d.v(a.c(), "setOptions(): processor hasn't been initialized.", (char) 1355);
+        defpackage.d.v(a.c(), "setOptions(): processor hasn't been initialized.", (char) 1355);
         return false;
     }
 
@@ -96,7 +96,7 @@ public final class epm {
             this.c.processZslBurst(j, i, pllVar.a(), 0L);
             return true;
         }
-        d.v(a.c(), "processZslBurst(): processor hasn't been initialized.", (char) 1354);
+        defpackage.d.v(a.c(), "processZslBurst(): processor hasn't been initialized.", (char) 1354);
         return false;
     }
 }

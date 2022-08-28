@@ -62,7 +62,7 @@ public final class flb extends iam {
         this.l = k2;
         float b = ddq.b(this.p, k2);
         if (b == Float.POSITIVE_INFINITY) {
-            d.v(j.b(), "Unknown device type. Advice will not fire.", (char) 1743);
+            defpackage.d.v(j.b(), "Unknown device type. Advice will not fire.", (char) 1743);
         }
         this.n = b;
     }

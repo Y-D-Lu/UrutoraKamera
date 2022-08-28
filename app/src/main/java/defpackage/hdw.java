@@ -11,7 +11,7 @@ public final class hdw {
         String str;
         lzv c = hcfVar.a.c();
         if (c == null) {
-            d.v(a.c(), "Couldn't acquire metadata from the frame.", (char) 2382);
+            defpackage.d.v(a.c(), "Couldn't acquire metadata from the frame.", (char) 2382);
             return null;
         } else if (!hcfVar.h()) {
             return c;

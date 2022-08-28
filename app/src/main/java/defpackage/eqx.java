@@ -264,7 +264,7 @@ public final class eqx implements esl {
     @Override // defpackage.esl
     public final void e(final mad madVar, final FrameMetadata frameMetadata) {
         if (madVar == null) {
-            d.v(a.c().g(ovl.a, "LasagnaController"), "Viewfinder image not found.", (char) 1417);
+            defpackage.d.v(a.c().g(ovl.a, "LasagnaController"), "Viewfinder image not found.", (char) 1417);
         } else if (!((Boolean) this.e.d).booleanValue() || this.r == 2) {
             madVar.close();
         } else {
@@ -325,7 +325,7 @@ public final class eqx implements esl {
                 int i2 = i;
                 boolean z2 = z;
                 if (!((Boolean) eqxVar.e.d).booleanValue()) {
-                    d.v(eqx.a.b().g(ovl.a, "LasagnaController"), "Proccesor not available to set options!", (char) 1411);
+                    defpackage.d.v(eqx.a.b().g(ovl.a, "LasagnaController"), "Proccesor not available to set options!", (char) 1411);
                     return;
                 }
                 try {

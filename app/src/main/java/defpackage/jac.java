@@ -56,7 +56,7 @@ public final class jac implements jag {
 
     public final void b(boolean z, lng lngVar, boolean z2, boolean z3) {
         if (!gxm.b() || this.b.j() || !this.g.g() || this.i == null || !this.c.k(ddl.bo) || !((Boolean) this.e.fA()).booleanValue()) {
-            d.v(a.b(), "Unsupported to set torch on for countdown request", (char) 3231);
+            defpackage.d.v(a.b(), "Unsupported to set torch on for countdown request", (char) 3231);
             return;
         }
         try {

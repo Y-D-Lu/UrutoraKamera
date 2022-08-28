@@ -21,7 +21,7 @@ public final class fek extends Thread {
     @Override // java.lang.Thread, java.lang.Runnable
     public final void run() {
         if (!new File(this.a.e).exists()) {
-            d.v(fel.a.b(), "The storage directory does not exist.", (char) 1668);
+            defpackage.d.v(fel.a.b(), "The storage directory does not exist.", (char) 1668);
         }
         fyg fygVar = this.b;
         fyr fyrVar = fygVar.b;

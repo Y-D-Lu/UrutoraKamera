@@ -187,7 +187,7 @@ public final class dvd implements pys {
                     AtomicBoolean atomicBoolean = new AtomicBoolean(true);
                     return ojc.i(new dvg((mrp) this.b.mo37get(), dvu.a * 10, atomicBoolean, mip.ec(new dvf(atomicBoolean, new AtomicBoolean(true), convert))));
                 } catch (Exception e) {
-                    d.v(dvh.a.b(), "Error trying to initialize audio", (char) 939);
+                    defpackage.d.v(dvh.a.b(), "Error trying to initialize audio", (char) 939);
                     return oih.a;
                 }
             case 5:

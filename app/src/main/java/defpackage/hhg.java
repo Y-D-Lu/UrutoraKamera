@@ -113,7 +113,7 @@ public final class hhg implements pys {
                 hashSet.remove(htg.FPS_24);
                 if (!hashSet.contains(htg.FPS_AUTO) || !ddfVar.k(ddl.L)) {
                     if (!hashSet.contains(htg.FPS_30)) {
-                        d.v(hus.a.b(), "30 FPS is not available", (char) 2648);
+                        defpackage.d.v(hus.a.b(), "30 FPS is not available", (char) 2648);
                     }
                     htgVar = htg.FPS_30;
                 } else {

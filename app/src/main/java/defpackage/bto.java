@@ -13,7 +13,7 @@ final class bto implements axf {
 
     @Override // defpackage.axf
     public final void a(int i) {
-        d.v(btp.a.c(), "cameraExceptionCallback.onCameraError", 'Q');
+        defpackage.d.v(btp.a.c(), "cameraExceptionCallback.onCameraError", 'Q');
         Iterator it = this.a.f.iterator();
         while (it.hasNext()) {
             ((axg) it.next()).a(i);
@@ -22,7 +22,7 @@ final class bto implements axf {
 
     @Override // defpackage.axf
     public final void b(RuntimeException runtimeException, String str, int i, int i2) {
-        d.v(btp.a.c(), "cameraExceptionCallback.onCameraException", 'R');
+        defpackage.d.v(btp.a.c(), "cameraExceptionCallback.onCameraException", 'R');
         Iterator it = this.a.f.iterator();
         while (it.hasNext()) {
             ((axg) it.next()).b(runtimeException, str, i, i2);
@@ -31,7 +31,7 @@ final class bto implements axf {
 
     @Override // defpackage.axf
     public final void c(RuntimeException runtimeException) {
-        d.v(btp.a.c(), "cameraExceptionCallback.onDispatchThreadException", 'S');
+        defpackage.d.v(btp.a.c(), "cameraExceptionCallback.onDispatchThreadException", 'S');
         Iterator it = this.a.f.iterator();
         while (it.hasNext()) {
             ((axg) it.next()).c(runtimeException);

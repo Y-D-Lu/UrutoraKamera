@@ -43,11 +43,11 @@ public final class eks {
 
     public final synchronized void b() {
         if (this.e <= 0) {
-            d.v(a.b(), "stopTrack called but no tracks were added!", (char) 1244);
+            defpackage.d.v(a.b(), "stopTrack called but no tracks were added!", (char) 1244);
             return;
         }
         if (!d()) {
-            d.v(a.b(), "stopTrack called but the muxer is not started!", (char) 1243);
+            defpackage.d.v(a.b(), "stopTrack called but the muxer is not started!", (char) 1243);
         } else {
             int i = this.e - 1;
             this.e = i;
@@ -75,7 +75,7 @@ public final class eks {
                 ((oug) ((oug) ((oug) a.b()).h(e)).G((char) 1245)).r("%s", e.getMessage());
             }
         } catch (InterruptedException e2) {
-            d.v(a.b(), "writeSampleData called but muxer was not started!", (char) 1246);
+            defpackage.d.v(a.b(), "writeSampleData called but muxer was not started!", (char) 1246);
         }
     }
 

@@ -35,7 +35,7 @@ final class fyp extends Handler {
                 LocalSessionStorage localSessionStorage = fyrVar.m;
                 hsm hsmVar = localSessionStorage.b.d;
                 if (!hsmVar.b()) {
-                    d.v(fyr.b.b(), "Could not create temporary mosaic file. Not able to stitch.", (char) 1998);
+                    defpackage.d.v(fyr.b.b(), "Could not create temporary mosaic file. Not able to stitch.", (char) 1998);
                 } else {
                     String path = hsmVar.a().getPath();
                     long a = fyrVar.c.a() / 1000000;

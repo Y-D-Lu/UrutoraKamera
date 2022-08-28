@@ -24,7 +24,7 @@ public final class hlz {
             MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
             Signature[] signingCertificateHistory = packageInfo.signingInfo.getSigningCertificateHistory();
             if (signingCertificateHistory.length == 0) {
-                d.v(b.b(), "Unsigned package", (char) 2550);
+                defpackage.d.v(b.b(), "Unsigned package", (char) 2550);
                 f = "";
             } else {
                 byte[] digest = messageDigest.digest(signingCertificateHistory[0].toByteArray());

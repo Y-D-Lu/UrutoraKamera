@@ -43,7 +43,7 @@ public final class hzp implements geo {
 
     @Override // defpackage.geo
     public final void c(YuvImage yuvImage, ShotMetadata shotMetadata) {
-        d.v(hzq.a.b(), "Got unexpected YUV buffer.", (char) 2740);
+        defpackage.d.v(hzq.a.b(), "Got unexpected YUV buffer.", (char) 2740);
         this.a.close();
         this.b.a(null);
         throw new IllegalStateException("Got unexpected YUV buffer.");

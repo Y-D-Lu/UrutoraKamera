@@ -2320,7 +2320,7 @@ public final class iiw implements fjs {
         pdhVar.a |= 2;
         pdhVar.b = z;
         if (l3 == null) {
-            d.v(l.c(), "Submitting log event with zero file size", (char) 2966);
+            defpackage.d.v(l.c(), "Submitting log event with zero file size", (char) 2966);
         }
         long longValue = l3 != null ? l3.longValue() / 1024 : 0L;
         if (m.c) {

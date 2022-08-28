@@ -104,11 +104,11 @@ public final class hfz implements hgm {
                     byte[] bArr4 = new byte[available];
                     int read = ByteStreams.read(open, bArr4, 0, available);
                     if (open.available() != 0) {
-                        d.v(a.b(), "There is more data. This is problematic", (char) 2451);
+                        defpackage.d.v(a.b(), "There is more data. This is problematic", (char) 2451);
                     }
                     open.close();
                     if (read != available) {
-                        d.v(a.b(), "Didn't finish reading the asset...", (char) 2450);
+                        defpackage.d.v(a.b(), "Didn't finish reading the asset...", (char) 2450);
                     }
                     bArr3 = bArr4;
                 } catch (IOException e) {
@@ -152,7 +152,7 @@ public final class hfz implements hgm {
                 String absolutePath = b.g() ? new File((File) b.c(), "tflite_vakunov_multi-subject_2018-06-09.fb.enc.cache").getAbsolutePath() : "";
                 boolean initSegmenter = portraitSegmenterInterface.initSegmenter(a2, capacity, "tflite_vakunov_multi-subject_2018-06-09.fb.enc", absolutePath, this.g, this.h, this.i, this.m, this.j);
                 if (initSegmenter && !this.g && this.m && !(initSegmenter = portraitSegmenterInterface.dummyImageProducesReasonableMask())) {
-                    d.v(a.b(), "OpenCL segmenter failed to produce a reasonable mask, falling back to OpenGL.", (char) 2447);
+                    defpackage.d.v(a.b(), "OpenCL segmenter failed to produce a reasonable mask, falling back to OpenGL.", (char) 2447);
                     portraitSegmenterInterface.release();
                     c(5);
                     ByteBuffer byteBuffer = (ByteBuffer) allocateDirect.clear();

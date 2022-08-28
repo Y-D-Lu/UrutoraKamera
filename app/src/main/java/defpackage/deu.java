@@ -23,7 +23,7 @@ public final class deu {
 
     public final boolean a(String str) {
         if (TextUtils.isEmpty(str)) {
-            d.v(a.c(), "null or empty package name; do not trust", (char) 701);
+            defpackage.d.v(a.c(), "null or empty package name; do not trust", (char) 701);
             return false;
         }
         try {

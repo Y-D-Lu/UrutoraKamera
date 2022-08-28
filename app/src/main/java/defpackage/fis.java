@@ -140,7 +140,7 @@ public final class fis implements fiw, ksz {
 
     public static final boolean e(Location location) {
         if (location == null) {
-            d.v(a.c(), "Fused location API did not provide a location.", (char) 1700);
+            defpackage.d.v(a.c(), "Fused location API did not provide a location.", (char) 1700);
             return false;
         } else if (Double.isInfinite(location.getLatitude()) || Double.isNaN(location.getLatitude()) || Double.isInfinite(location.getLongitude()) || Double.isNaN(location.getLongitude()) || (location.getLatitude() == 0.0d && location.getLongitude() == 0.0d)) {
             ((oug) ((oug) a.c()).G((char) 1698)).r("Fused location API provided a location that is probably incorrect: %s", location);

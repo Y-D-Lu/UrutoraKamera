@@ -128,7 +128,7 @@ public final class dba implements lyy, iat, ian {
             }
             this.t.a = true;
             if (!this.r.g()) {
-                d.v(u.c(), "No camera pose data available.", (char) 672);
+                defpackage.d.v(u.c(), "No camera pose data available.", (char) 672);
                 return;
             }
             if (!this.q.g()) {

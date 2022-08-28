@@ -192,7 +192,7 @@ public final class jfs extends LinearLayout {
         if (this.m.isVisible()) {
             this.m.draw(canvas);
         } else {
-            d.v(a.c(), "highlight chip is not visible", (char) 3321);
+            defpackage.d.v(a.c(), "highlight chip is not visible", (char) 3321);
         }
     }
 
