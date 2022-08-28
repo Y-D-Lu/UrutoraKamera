@@ -278,7 +278,7 @@ public final class kkc implements kik, kil {
                 Context context2 = kleVar.a;
                 Looper looper = kleVar.b.getLooper();
                 kmf kmfVar = kleVar.d;
-                kleVar.e = mipVar.u(context2, looper, kmfVar, kmfVar.g, kleVar, kleVar);
+                kleVar.e = (kui) mipVar.u(context2, looper, kmfVar, kmfVar.g, kleVar, kleVar);
                 kleVar.f = kkfVar;
                 Set set = kleVar.c;
                 if (set == null || set.isEmpty()) {
@@ -430,7 +430,7 @@ public final class kkc implements kik, kil {
         Handler handler2 = this.j.o;
         handler2.sendMessageDelayed(Message.obtain(handler2, 11, this.c), 120000L);
         this.j.i.a();
-        for (kla klaVar : this.e.values()) {
+        for (kla klaVar : (Set<kla>)this.e.values()) {
             Runnable runnable = klaVar.c;
         }
     }

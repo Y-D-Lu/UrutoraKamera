@@ -34,14 +34,14 @@ public final class hxj {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final synchronized void d(lvp lvpVar) {
         this.d = lvpVar;
-        for (hxi hxiVar : this.a) {
+        for (hxi hxiVar : (Set<hxi>)this.a) {
             hxiVar.e(lvpVar);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final synchronized void e(lzv lzvVar) {
-        for (hxi hxiVar : this.a) {
+        for (hxi hxiVar : (Set<hxi>)this.a) {
             hxiVar.f(lzvVar);
         }
     }
@@ -58,7 +58,7 @@ public final class hxj {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final synchronized void h(lrr lrrVar, lnx lnxVar) {
-        for (hxi hxiVar : this.a) {
+        for (hxi hxiVar : (Set<hxi>)this.a) {
             hxiVar.g(lrrVar, lnxVar);
         }
     }

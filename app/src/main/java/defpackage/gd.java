@@ -6,8 +6,6 @@ import android.graphics.Rect;
 import android.view.View;
 import android.view.WindowInsets;
 
-import org.codeaurora.snapcam.R;
-
 import java.util.Map;
 
 /* renamed from: gd  reason: default package */
@@ -61,7 +59,8 @@ public class gd {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void i(View view, ft ftVar) {
         if (ftVar == null) {
-            view.setOnApplyWindowInsetsListener((View.OnApplyWindowInsetsListener) view.getTag(R.id.tag_window_insets_animation_callback));
+            view.setOnApplyWindowInsetsListener((View.OnApplyWindowInsetsListener) view.getTag(0x7f0b0307));
+            //view.setOnApplyWindowInsetsListener((View.OnApplyWindowInsetsListener) view.getTag(R.id.tag_window_insets_animation_callback));
         } else {
             view.setOnApplyWindowInsetsListener(new gc(ftVar));
         }

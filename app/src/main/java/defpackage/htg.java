@@ -6,5 +6,9 @@ public enum htg {
     FPS_AUTO,
     FPS_24,
     FPS_30,
-    FPS_60
-}
+    FPS_60;
+
+    public static htg a(String str) {
+        return (htg) Enum.valueOf(htg.class, str);
+    }
+    }

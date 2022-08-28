@@ -29,7 +29,7 @@ public final class kmf {
         this.f = str2;
         this.g = kujVar;
         HashSet hashSet = new HashSet(emptySet);
-        for (kme kmeVar : emptyMap.values()) {
+        for (kme kmeVar : (Set<kme>)emptyMap.values()) {
             Set set2 = kmeVar.a;
             hashSet.addAll(null);
         }

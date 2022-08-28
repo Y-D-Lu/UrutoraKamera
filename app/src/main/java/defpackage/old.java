@@ -63,7 +63,7 @@ public abstract class old extends olk implements Serializable {
 
     @Override // defpackage.oqt
     public final void j() {
-        for (Collection collection : this.a.values()) {
+        for (Collection collection : (Collection<Collection>) this.a.values()) {
             collection.clear();
         }
         this.a.clear();
@@ -74,7 +74,7 @@ public abstract class old extends olk implements Serializable {
     public final void k(Map map) {
         this.a = map;
         this.b = 0;
-        for (Collection collection : map.values()) {
+        for (Collection collection : (Collection<Collection>)map.values()) {
             obr.aF(!collection.isEmpty());
             this.b += collection.size();
         }

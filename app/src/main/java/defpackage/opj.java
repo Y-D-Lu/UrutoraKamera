@@ -74,7 +74,7 @@ public final class opj extends opk implements NavigableMap, Map {
     }
 
     @Override // defpackage.oor, java.util.Map, java.util.Map
-    public final /* bridge */ /* synthetic */ Set entrySet() {
+    public /* bridge */ /* synthetic */ Set entrySet() {
         return entrySet();
     }
 

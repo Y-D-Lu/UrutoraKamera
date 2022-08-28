@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: mmd  reason: default package */
 /* loaded from: classes2.dex */
@@ -12,7 +13,7 @@ public final class mmd extends mma implements List, mmc {
     @Override // defpackage.mmc, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
         RuntimeException runtimeException = null;
-        for (mmc mmcVar : this.a) {
+        for (mmc mmcVar : (Set<mmc>)this.a) {
             if (mmcVar != null) {
                 try {
                     mmcVar.close();

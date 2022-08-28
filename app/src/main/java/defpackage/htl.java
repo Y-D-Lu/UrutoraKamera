@@ -10,6 +10,10 @@ public enum htl {
         leb lebVar = leb.RES_UNKNOWN;
     }
 
+    public static htl a(String str) {
+        return (htl) Enum.valueOf(htl.class, str);
+    }
+
     public static ojc b(leb lebVar) {
         hte hteVar = hte.ON;
         leb lebVar2 = leb.RES_UNKNOWN;

@@ -42,7 +42,7 @@ public final class det {
         this.c = ljfVar;
     }
 
-    public final ParcelFileDescriptor a(Uri uri, int i) {
+    public final ParcelFileDescriptor a(Uri uri, int i) throws FileNotFoundException {
         Bitmap createBitmap;
         ParcelFileDescriptor parcelFileDescriptor;
         int parseInt = Integer.parseInt(uri.getPathSegments().get(1));
@@ -97,27 +97,20 @@ public final class det {
                     }
                     return parcelFileDescriptor2;
                 } catch (IOException e3) {
-                    e = e3;
                     bufferedOutputStream = bufferedOutputStream2;
                     if (bufferedOutputStream != null) {
                         try {
                             bufferedOutputStream.close();
                         } catch (IOException e4) {
-                            e = e4;
                         }
                     }
                     if (parcelFileDescriptor != null) {
                         try {
                             parcelFileDescriptor.close();
                         } catch (IOException e5) {
-                            e = e5;
                         }
                     }
-                    String message = e.getMessage();
-                    if (message == null) {
-                        throw new FileNotFoundException();
-                    }
-                    throw new FileNotFoundException(message);
+                    throw new FileNotFoundException();
                 } catch (Throwable th) {
                     th = th;
                     bufferedOutputStream = bufferedOutputStream2;
@@ -136,16 +129,16 @@ public final class det {
                     throw th;
                 }
             } catch (IOException e8) {
-                e = e8;
+
             } catch (Throwable th2) {
-                th = th2;
+
             }
         } catch (IOException e9) {
-            e = e9;
+
             parcelFileDescriptor = null;
         } catch (Throwable th3) {
-            th = th3;
             parcelFileDescriptor = null;
         }
+        return null;
     }
 }

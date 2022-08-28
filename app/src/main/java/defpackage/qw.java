@@ -116,7 +116,7 @@ public final class qw {
                 } else if (i == R.drawable.abc_switch_track_mtrl_alpha) {
                     colorStateList = jr.a(context, R.color.abc_tint_switch_track);
                 } else if (i == R.drawable.abc_switch_thumb_material) {
-                    int[][] iArr = new int[3];
+                    int[][] iArr = new int[3][];
                     int[] iArr2 = new int[3];
                     ColorStateList c = ri.c(context, R.attr.colorSwitchThumbNormal);
                     if (c == null || !c.isStateful()) {

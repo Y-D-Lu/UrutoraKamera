@@ -5,6 +5,7 @@ import android.util.Log;
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Set;
 import java.util.TreeMap;
 
 /* renamed from: aih  reason: default package */
@@ -40,7 +41,7 @@ public final class aih {
     }
 
     public final void b() {
-        for (aeu aeuVar : this.a.values()) {
+        for (aeu aeuVar : (Set<aeu>)this.a.values()) {
             aeuVar.i = true;
             synchronized (aeuVar.h) {
                 for (Object obj : aeuVar.h.values()) {

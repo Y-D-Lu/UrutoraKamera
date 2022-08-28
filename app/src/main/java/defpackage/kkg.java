@@ -17,13 +17,13 @@ import com.google.android.gms.common.api.Status;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /* renamed from: kkg  reason: default package */
 /* loaded from: classes2.dex */
@@ -219,7 +219,7 @@ public final class kkg implements Handler.Callback {
                 }
                 this.e = j;
                 this.o.removeMessages(12);
-                for (kjg kjgVar : this.l.keySet()) {
+                for (kjg kjgVar : (Set<kjg>)this.l.keySet()) {
                     Handler handler = this.o;
                     handler.sendMessageDelayed(handler.obtainMessage(12, kjgVar), this.e);
                 }
@@ -228,7 +228,7 @@ public final class kkg implements Handler.Callback {
                 mip mipVar = (mip) message.obj;
                 throw null;
             case 3:
-                for (kkc kkcVar2 : this.l.values()) {
+                for (kkc kkcVar2 : (Set<kkc>)this.l.values()) {
                     kkcVar2.c();
                     kkcVar2.d();
                 }
@@ -327,7 +327,7 @@ public final class kkg implements Handler.Callback {
                 }
                 break;
             case 10:
-                for (kjg kjgVar2 : this.r) {
+                for (kjg kjgVar2 : (Set<kjg>)this.r) {
                     kkc kkcVar6 = (kkc) this.l.remove(kjgVar2);
                     if (kkcVar6 != null) {
                         kkcVar6.m();
@@ -391,7 +391,7 @@ public final class kkg implements Handler.Callback {
                         kkcVar10.j.o.removeMessages(16, kkdVar2);
                         khk khkVar = kkdVar2.b;
                         ArrayList arrayList = new ArrayList(kkcVar10.a.size());
-                        for (kjf kjfVar : kkcVar10.a) {
+                        for (kjf kjfVar : (Set<kjf>)kkcVar10.a) {
                             if ((kjfVar instanceof kiz) && (b2 = ((kiz) kjfVar).b(kkcVar10)) != null && mip.cs(b2, khkVar)) {
                                 arrayList.add(kjfVar);
                             }

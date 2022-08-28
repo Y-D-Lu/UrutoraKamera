@@ -109,14 +109,15 @@ public class SidelineInstallerService extends Service {
                 hwhVar.f.execute(new Runnable() { // from class: hwd
                     @Override // java.lang.Runnable
                     public final void run() {
-                        PendingIntent service;
+                        PendingIntent service = null;
                         hwh hwhVar2 = hwhVar;
                         String str2 = str;
                         int i3 = 5;
                         int i4 = 2;
                         try {
                             PackageInstaller.SessionParams sessionParams = new PackageInstaller.SessionParams(1);
-                            sessionParams.setInstallAsApex();
+                            // luyuedong666 TODO: fix out
+                            // sessionParams.setInstallAsApex();
                             try {
                                 PackageInstaller.Session openSession = hwhVar2.i.openSession(hwhVar2.i.createSession(sessionParams));
                                 try {
@@ -242,9 +243,9 @@ public class SidelineInstallerService extends Service {
                         plk.X(new pgj() { // from class: hwb
                             @Override // defpackage.pgj
                             public final pht a() {
-                                hwh hwhVar3 = hwhVar;
+                                hwh hwhVar3 = hwhVar2;
                                 long j3 = uptimeMillis;
-                                pht c2 = hwhVar3.l.c(60000);
+                                pht c2 = hwhVar3.l.b;
                                 plk.af(c2, new hwg(hwhVar3, j3), hwhVar3.h);
                                 return c2;
                             }

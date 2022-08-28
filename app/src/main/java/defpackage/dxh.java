@@ -42,6 +42,10 @@ public enum dxh {
         d(false, "Action promotion message cannot be null");
     }
 
+    public static dxh a(String str) {
+        return (dxh) Enum.valueOf(dxh.class, str);
+    }
+
     public static ojc b(String str) {
         if (oje.d(str)) {
             return oih.a;

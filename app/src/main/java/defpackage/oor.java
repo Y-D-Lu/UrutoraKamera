@@ -205,7 +205,7 @@ public abstract class oor implements Map, Serializable {
 
     @Override // java.util.Map, java.util.Map
     /* renamed from: t */
-    public final ope entrySet() {
+    public ope entrySet() {
         ope opeVar = this.a;
         if (opeVar == null) {
             ope gJ = gJ();

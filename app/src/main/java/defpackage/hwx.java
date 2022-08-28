@@ -13,16 +13,16 @@ public final class hwx {
         Supplier supplier = new Supplier() { // from class: hww
             @Override // java.util.function.Supplier
             /* renamed from: get */
-            public final Object mo291get() {
+            public final Object get() {
                 return Long.valueOf(hwv.b(context));
             }
         };
         this.a = supplier;
-        ((Long) supplier.mo291get()).longValue();
+        ((Long) supplier.get()).longValue();
     }
 
     public final long a() {
-        return ((Long) this.a.mo291get()).longValue();
+        return ((Long) this.a.get()).longValue();
     }
 
     public final boolean b(long j) {

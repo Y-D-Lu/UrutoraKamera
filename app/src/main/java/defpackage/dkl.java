@@ -1,6 +1,5 @@
 package defpackage;
 
-import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 
 import com.eszdmanClass;
@@ -51,7 +50,7 @@ public final class dkl {
                 this.g.i();
                 return plk.V(new dkk(true));
             }
-        } catch (CameraAccessException e) {
+        } catch (Exception e) {
         }
         synchronized (this.a) {
             if (this.b == null) {

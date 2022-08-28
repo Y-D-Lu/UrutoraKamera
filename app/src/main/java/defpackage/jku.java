@@ -22,7 +22,7 @@ public final class jku {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(jks jksVar) {
         for (jkc jkcVar : jkc.values()) {
-            Map.EL.putIfAbsent(this.b, jkcVar, jksVar);
+            this.b.putIfAbsent(jkcVar, jksVar);
         }
     }
 

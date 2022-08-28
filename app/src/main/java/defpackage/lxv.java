@@ -91,14 +91,14 @@ public final class lxv {
         if (j != 0) {
             final ldi ldiVar = this.b;
             final pwc pwcVar = new pwc(j);
-            ldiVar.c.execute(new Runnable(pwcVar, null) { // from class: lca
+            ldiVar.c.execute(new Runnable() { // from class: lca
                 public final /* synthetic */ pwc b = pwcVar;
 
                 @Override // java.lang.Runnable
                 public final void run() {
                     pwc pwcVar2 = this.b;
                     ldi ldiVar2 = ldiVar;
-                    lceVar.c(Long.valueOf(((Long) (ldiVar2.e != null ? ldiVar2.e : lceVar.d)).longValue() + pwcVar2.a));
+                    lxv.this.c.c(Long.valueOf(((Long) (ldiVar2.e != null ? ldiVar2.e : lxv.this.c.d)).longValue() + pwcVar2.a));
                 }
             });
         }

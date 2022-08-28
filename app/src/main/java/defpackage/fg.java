@@ -10,8 +10,6 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeProvider;
 
-import org.codeaurora.snapcam.R;
-
 import java.lang.ref.WeakReference;
 import java.util.Collections;
 import java.util.List;
@@ -34,7 +32,8 @@ public class fg {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static List a(View view) {
-        List list = (List) view.getTag(R.id.tag_accessibility_actions);
+//        List list = (List) view.getTag(R.id.tag_accessibility_actions);
+        List list = (List) view.getTag(0x7f0b02fb);
         return list == null ? Collections.emptyList() : list;
     }
 
@@ -97,11 +96,13 @@ public class fg {
         if (!z) {
             z = this.c.performAccessibilityAction(view, i, bundle);
         }
-        if (z || i != R.id.accessibility_action_clickable_span) {
+        if (z || i != 0x7f0b0011) {
+        //if (z || i != R.id.accessibility_action_clickable_span) {
             return z;
         }
         int i3 = bundle.getInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", -1);
-        SparseArray sparseArray = (SparseArray) view.getTag(R.id.tag_accessibility_clickable_spans);
+        SparseArray sparseArray = (SparseArray) view.getTag(0x7f0b02fc);
+        //SparseArray sparseArray = (SparseArray) view.getTag(R.id.tag_accessibility_clickable_spans);
         if (sparseArray == null || (weakReference = (WeakReference) sparseArray.get(i3)) == null || (clickableSpan = (ClickableSpan) weakReference.get()) == null) {
             return false;
         }

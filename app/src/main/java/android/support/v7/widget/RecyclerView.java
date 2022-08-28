@@ -366,7 +366,7 @@ public class RecyclerView extends ViewGroup implements fp {
                 trim = RecyclerView.class.getPackage().getName() + '.' + trim;
             }
             try {
-                Class<? extends U> asSubclass = Class.forName(trim, false, isInEditMode() ? getClass().getClassLoader() : context.getClassLoader()).asSubclass(qc.class);
+                Class asSubclass = Class.forName(trim, false, isInEditMode() ? getClass().getClassLoader() : context.getClassLoader()).asSubclass(qc.class);
                 try {
                     constructor = asSubclass.getConstructor(U);
                     objArr = new Object[]{context, attributeSet, Integer.valueOf(i), 0};
@@ -638,7 +638,7 @@ public class RecyclerView extends ViewGroup implements fp {
     }
 
     private final void aw() {
-        boolean z;
+        boolean z = false;
         boolean z2;
         if (this.y) {
             this.e.j();
@@ -1776,7 +1776,7 @@ public class RecyclerView extends ViewGroup implements fp {
                     f = refreshRate;
                 }
             }
-            this.J.e = 1.0E9f / f;
+            this.J.e = (long) (1.0E9f / f);
             ow.a.set(this.J);
         }
         this.J.c.add(this);

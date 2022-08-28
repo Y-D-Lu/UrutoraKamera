@@ -267,7 +267,7 @@ public final class mh extends kj {
             ls lsVar3 = lsVar;
             if (ljVar != null) {
                 if (lsVar == null) {
-                    lsVar3 = this.c;
+                    lsVar3 = (ls) this.c;
                 }
                 ljVar.b(lsVar3);
             }

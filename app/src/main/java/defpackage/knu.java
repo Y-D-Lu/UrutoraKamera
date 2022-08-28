@@ -26,7 +26,7 @@ public final class knu extends kij {
         a2.a = new klb() { // from class: kns
             @Override // defpackage.klb
             public final void a(Object obj, Object obj2) {
-                knm knmVar2 = knm.this;
+                knm knmVar2 = knmVar;
                 knr knrVar = (knr) ((knv) obj).u();
                 Parcel a3 = knrVar.a();
                 bmp.c(a3, knmVar2);

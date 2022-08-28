@@ -35,6 +35,10 @@ public enum leb {
         this.o = i2;
     }
 
+    public static leb b(String str) {
+        return (leb) Enum.valueOf(leb.class, str);
+    }
+
     public static Comparator d() {
         return new yc(9);
     }

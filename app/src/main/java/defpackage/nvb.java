@@ -6,18 +6,17 @@ import android.media.MediaCodecList;
 import android.net.Uri;
 import android.os.IBinder;
 import android.os.IInterface;
-import android.os.RemoteException;
 import android.util.Log;
 
 import com.hdrindicator.DisplayHelper;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
-
-import java.util.Arrays;
 import java.util.function.Consumer;
 
 /* renamed from: nvb  reason: default package */
@@ -84,7 +83,7 @@ public final class nvb {
     public nvb(char[] cArr, byte[] bArr) {
         EnumMap enumMap = new EnumMap(cqj.class);
         this.a = enumMap;
-        Arrays.stream(cqj.values()).forEach(new Consumer(null, null, null) { // from class: cpq
+        Arrays.stream(cqj.values()).forEach(new Consumer() { // from class: cpq
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 nvb.this.a.put((cqj) obj, Float.valueOf(1.0f));
@@ -95,7 +94,7 @@ public final class nvb {
                 return consumer.getClass();
             }
         });
-        enumMap.put((EnumMap) cqj.LOCKED, (cqj) Float.valueOf(2.0f));
+        enumMap.put(cqj.LOCKED, Float.valueOf(2.0f));
     }
 
     public nvb(char[] cArr, byte[] bArr, byte[] bArr2) {
