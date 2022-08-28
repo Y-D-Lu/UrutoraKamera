@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: coq  reason: default package */
 /* loaded from: classes.dex */
 public final class coq implements pys {
-    private final com a;
+    private final comClass a;
 
-    public coq(com comVar) {
-        this.a = comVar;
+    public coq(comClass comClassVar) {
+        this.a = comClassVar;
     }
 
     @Override // defpackage.qkg

@@ -439,7 +439,7 @@ public final class clx implements clg {
                 }
                 this.m.b(a9, ckdVar2);
                 if (ckdVar2.C && lnzVar2 != null) {
-                    this.C.a(new com(a9, lnzVar2, ckdVar2, gvmVar)).a().a();
+                    this.C.a(new comClass(a9, lnzVar2, ckdVar2, gvmVar)).a().a();
                 }
             }
         }

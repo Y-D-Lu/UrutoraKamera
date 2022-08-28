@@ -5,7 +5,7 @@ package defpackage;
 public final class evn {
     public final ewb a;
     public cou b;
-    public com c;
+    public comClass c;
 
     public evn(ewb ewbVar) {
         this.a = ewbVar;

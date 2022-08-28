@@ -11,12 +11,12 @@ public final class cox {
         this.b = couVar;
     }
 
-    public final cot a(com comVar) {
+    public final cot a(comClass comClassVar) {
         evn mo37get = ((eva) this.a).mo37get();
         mo37get.b = this.b;
-        mo37get.c = comVar;
+        mo37get.c = comClassVar;
         qmd.ad(mo37get.b, cou.class);
-        qmd.ad(mo37get.c, com.class);
+        qmd.ad(mo37get.c, comClass.class);
         return new evo(mo37get.a, mo37get.c, mo37get.b);
     }
 }

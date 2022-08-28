@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: cop  reason: default package */
 /* loaded from: classes.dex */
 public final class cop implements pys {
-    private final com a;
+    private final comClass a;
 
-    public cop(com comVar) {
-        this.a = comVar;
+    public cop(comClass comClassVar) {
+        this.a = comClassVar;
     }
 
     @Override // defpackage.qkg

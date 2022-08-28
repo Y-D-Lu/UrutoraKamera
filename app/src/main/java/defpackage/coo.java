@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: coo  reason: default package */
 /* loaded from: classes.dex */
 public final class coo implements pys {
-    private final com a;
+    private final comClass a;
 
-    public coo(com comVar) {
-        this.a = comVar;
+    public coo(comClass comClassVar) {
+        this.a = comClassVar;
     }
 
     @Override // defpackage.qkg

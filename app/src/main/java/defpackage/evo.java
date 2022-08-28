@@ -66,7 +66,7 @@ public final class evo implements cot {
     private final qkg y;
     private final qkg z;
 
-    public evo(ewb ewbVar, com comVar, cou couVar) {
+    public evo(ewb ewbVar, comClass comClassVar, cou couVar) {
         this.b = ewbVar;
         this.a = couVar;
         pyr.b(coz.a);
@@ -81,9 +81,9 @@ public final class evo implements cot {
         qkg b2 = pyr.b(gnj.a);
         this.e = b2;
         this.f = pyr.b(gcc.i(ewbVar.N, b2));
-        cop copVar = new cop(comVar);
+        cop copVar = new cop(comClassVar);
         this.g = copVar;
-        con conVar = new con(comVar);
+        con conVar = new con(comClassVar);
         this.h = conVar;
         qkg b3 = pyr.b(conVar);
         this.i = b3;
@@ -101,7 +101,7 @@ public final class evo implements cot {
         this.o = b6;
         csn csnVar = new csn(copVar);
         this.p = csnVar;
-        coo cooVar = new coo(comVar);
+        coo cooVar = new coo(comClassVar);
         this.q = cooVar;
         cso csoVar = new cso(copVar, csnVar, cooVar, 0);
         this.r = csoVar;
@@ -211,7 +211,7 @@ public final class evo implements cot {
         qmd.ab(e, ah12);
         pyw aa5 = qmd.aa(ah11, ah12);
         this.ae = aa5;
-        coq coqVar = new coq(comVar);
+        coq coqVar = new coq(comClassVar);
         this.af = coqVar;
         this.ag = pyr.b(gqr.l(aa5, coqVar));
     }

@@ -422,7 +422,7 @@ public final class clp implements clg {
                 }
                 this.n.b(a7, ckdVar2);
                 if (ckdVar2.C && lnzVar2 != null) {
-                    this.q.a(new com(a7, lnzVar2, ckdVar2, gvmVar)).a().a();
+                    this.q.a(new comClass(a7, lnzVar2, ckdVar2, gvmVar)).a().a();
                 }
             }
         }
