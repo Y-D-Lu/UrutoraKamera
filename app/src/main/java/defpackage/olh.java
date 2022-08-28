@@ -10,7 +10,7 @@ import java.util.Iterator;
 /* loaded from: classes2.dex */
 public abstract class olh extends oln implements Serializable {
     private static final long serialVersionUID = 0;
-    public transient org a = g();
+    public transient orgClass a = g();
     public transient long b;
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -50,13 +50,13 @@ public abstract class olh extends oln implements Serializable {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final void clear() {
-        org orgVar = this.a;
-        orgVar.d++;
-        Arrays.fill(orgVar.a, 0, orgVar.c, (Object) null);
-        Arrays.fill(orgVar.b, 0, orgVar.c, 0);
-        Arrays.fill(orgVar.e, -1);
-        Arrays.fill(orgVar.f, -1L);
-        orgVar.c = 0;
+        orgClass orgClassVar = this.a;
+        orgClassVar.d++;
+        Arrays.fill(orgClassVar.a, 0, orgClassVar.c, (Object) null);
+        Arrays.fill(orgClassVar.b, 0, orgClassVar.c, 0);
+        Arrays.fill(orgClassVar.e, -1);
+        Arrays.fill(orgClassVar.f, -1L);
+        orgClassVar.c = 0;
         this.b = 0L;
     }
 
@@ -94,16 +94,16 @@ public abstract class olh extends oln implements Serializable {
         this.b += j;
     }
 
-    public abstract org g();
+    public abstract orgClass g();
 
     @Override // defpackage.oqw
     public final int gD(Object obj) {
-        org orgVar = this.a;
-        int c = orgVar.c(obj);
+        orgClass orgClassVar = this.a;
+        int c = orgClassVar.c(obj);
         if (c == -1) {
             return 0;
         }
-        return orgVar.b[c];
+        return orgClassVar.b[c];
     }
 
     @Override // defpackage.oln, defpackage.oqw

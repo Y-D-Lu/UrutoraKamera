@@ -5,11 +5,11 @@ package defpackage;
 final class orf extends oqy {
     final Object a;
     int b;
-    final /* synthetic */ org c;
+    final /* synthetic */ orgClass c;
 
-    public orf(org orgVar, int i) {
-        this.c = orgVar;
-        this.a = orgVar.a[i];
+    public orf(orgClass orgClassVar, int i) {
+        this.c = orgClassVar;
+        this.a = orgClassVar.a[i];
         this.b = i;
     }
 

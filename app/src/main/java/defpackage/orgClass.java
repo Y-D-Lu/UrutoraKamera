@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /* renamed from: org  reason: default package */
 /* loaded from: classes2.dex */
-public final class org {
+public final class orgClass {
     transient Object[] a;
     transient int[] b;
     transient int c;
@@ -14,11 +14,11 @@ public final class org {
     private transient float g;
     private transient int h;
 
-    org() {
+    orgClass() {
         j();
     }
 
-    public org(byte[] bArr) {
+    public orgClass(byte[] bArr) {
         j();
     }
 

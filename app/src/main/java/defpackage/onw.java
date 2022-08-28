@@ -6,7 +6,7 @@ public final class onw extends olh {
     private static final long serialVersionUID = 0;
 
     @Override // defpackage.olh
-    public final org g() {
-        return new org(null);
+    public final orgClass g() {
+        return new orgClass(null);
     }
 }

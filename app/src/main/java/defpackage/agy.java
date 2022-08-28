@@ -18,8 +18,6 @@ import androidx.preference.MultiSelectListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
-import org.codeaurora.snapcam.R;
-
 /* renamed from: agy  reason: default package */
 /* loaded from: classes.dex */
 public class agy extends bu implements ahi, ahg, ahh, afw {

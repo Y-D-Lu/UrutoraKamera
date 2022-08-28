@@ -13,8 +13,8 @@ final class olf extends olg {
 
     @Override // defpackage.olg
     public final /* bridge */ /* synthetic */ Object a(int i) {
-        org orgVar = this.a.a;
-        obr.aX(i, orgVar.c);
-        return new orf(orgVar, i);
+        orgClass orgClassVar = this.a.a;
+        obr.aX(i, orgClassVar.c);
+        return new orf(orgClassVar, i);
     }
 }

@@ -224,7 +224,7 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
         ViewGroup viewGroup;
         if (!this.r) {
             TypedArray obtainStyledAttributes = this.f.obtainStyledAttributes(jq.j);
-            if (!obtainStyledAttributes.hasValue(R.styleable.AppCompatTheme_windowActionBar)) {
+            if (!obtainStyledAttributes.hasValue(org.codeaurora.snapcam.R.styleable.AppCompatTheme_windowActionBar)) {
                 obtainStyledAttributes.recycle();
                 throw new IllegalStateException("You need to use a Theme.AppCompat theme (or descendant) with this activity.");
             }
