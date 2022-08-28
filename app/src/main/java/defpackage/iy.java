@@ -224,19 +224,19 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
         ViewGroup viewGroup;
         if (!this.r) {
             TypedArray obtainStyledAttributes = this.f.obtainStyledAttributes(jq.j);
-            if (!obtainStyledAttributes.hasValue(org.codeaurora.snapcam.R.styleable.AppCompatTheme_windowActionBar)) {
+            if (!obtainStyledAttributes.hasValue(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowActionBar)) {
                 obtainStyledAttributes.recycle();
                 throw new IllegalStateException("You need to use a Theme.AppCompat theme (or descendant) with this activity.");
             }
-            if (obtainStyledAttributes.getBoolean(R.styleable.AppCompatTheme_windowNoTitle, false)) {
+            if (obtainStyledAttributes.getBoolean(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowNoTitle, false)) {
                 n(1);
-            } else if (obtainStyledAttributes.getBoolean(R.styleable.AppCompatTheme_windowActionBar, false)) {
-                n(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle);
+            } else if (obtainStyledAttributes.getBoolean(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowActionBar, false)) {
+                n(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle);
             }
-            if (obtainStyledAttributes.getBoolean(R.styleable.AppCompatTheme_windowActionBarOverlay, false)) {
-                n(R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu);
+            if (obtainStyledAttributes.getBoolean(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowActionBarOverlay, false)) {
+                n(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu);
             }
-            if (obtainStyledAttributes.getBoolean(R.styleable.AppCompatTheme_windowActionModeOverlay, false)) {
+            if (obtainStyledAttributes.getBoolean(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowActionModeOverlay, false)) {
                 n(10);
             }
             this.x = obtainStyledAttributes.getBoolean(0, false);
@@ -258,7 +258,7 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
                 this.k = nzVar;
                 nzVar.o(t());
                 if (this.v) {
-                    this.k.i(R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu);
+                    this.k.i(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu);
                 }
                 if (this.N) {
                     this.k.i(2);
@@ -321,28 +321,28 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
             if (contentFrameLayout2.b == null) {
                 contentFrameLayout2.b = new TypedValue();
             }
-            obtainStyledAttributes2.getValue(R.styleable.AppCompatTheme_windowMinWidthMajor, contentFrameLayout2.b);
+            obtainStyledAttributes2.getValue(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowMinWidthMajor, contentFrameLayout2.b);
             if (contentFrameLayout2.c == null) {
                 contentFrameLayout2.c = new TypedValue();
             }
-            obtainStyledAttributes2.getValue(R.styleable.AppCompatTheme_windowMinWidthMinor, contentFrameLayout2.c);
+            obtainStyledAttributes2.getValue(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowMinWidthMinor, contentFrameLayout2.c);
             if (obtainStyledAttributes2.hasValue(122)) {
                 if (contentFrameLayout2.d == null) {
                     contentFrameLayout2.d = new TypedValue();
                 }
                 obtainStyledAttributes2.getValue(122, contentFrameLayout2.d);
             }
-            if (obtainStyledAttributes2.hasValue(R.styleable.AppCompatTheme_windowFixedWidthMinor)) {
+            if (obtainStyledAttributes2.hasValue(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedWidthMinor)) {
                 if (contentFrameLayout2.e == null) {
                     contentFrameLayout2.e = new TypedValue();
                 }
-                obtainStyledAttributes2.getValue(R.styleable.AppCompatTheme_windowFixedWidthMinor, contentFrameLayout2.e);
+                obtainStyledAttributes2.getValue(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedWidthMinor, contentFrameLayout2.e);
             }
-            if (obtainStyledAttributes2.hasValue(R.styleable.AppCompatTheme_windowFixedHeightMajor)) {
+            if (obtainStyledAttributes2.hasValue(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedHeightMajor)) {
                 if (contentFrameLayout2.f == null) {
                     contentFrameLayout2.f = new TypedValue();
                 }
-                obtainStyledAttributes2.getValue(R.styleable.AppCompatTheme_windowFixedHeightMajor, contentFrameLayout2.f);
+                obtainStyledAttributes2.getValue(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedHeightMajor, contentFrameLayout2.f);
             }
             if (obtainStyledAttributes2.hasValue(121)) {
                 if (contentFrameLayout2.g == null) {
@@ -357,7 +357,7 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
             if (this.C || J2.h != null) {
                 return;
             }
-            Q(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle);
+            Q(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle);
         }
     }
 
@@ -395,7 +395,7 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
             if (this.C) {
                 return;
             }
-            t.onPanelClosed(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, J(0).h);
+            t.onPanelClosed(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, J(0).h);
         } else if (t == null || this.C) {
         } else {
             if (this.E && (1 & this.F) != 0) {
@@ -407,7 +407,7 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
             if (kwVar2 == null || J3.o || !t.onPreparePanel(0, J3.g, kwVar2)) {
                 return;
             }
-            t.onMenuOpened(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, J3.h);
+            t.onMenuOpened(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, J3.h);
             this.k.u();
         }
     }
@@ -815,9 +815,9 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
     @Override // defpackage.ii
     public final void n(int i) {
         if (i == 8) {
-            i = R.styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+            i = com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle;
         } else if (i == 9) {
-            i = R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+            i = com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
         }
         if (!this.y || i != 108) {
             if (this.u && i == 1) {
@@ -840,11 +840,11 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
                     S();
                     this.w = true;
                     return;
-                case R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
                     S();
                     this.u = true;
                     return;
-                case R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
                     S();
                     this.v = true;
                     return;
@@ -1013,7 +1013,7 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
         this.k.g();
         Window.Callback t = t();
         if (t != null && !this.C) {
-            t.onPanelClosed(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
+            t.onPanelClosed(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
         }
         this.P = false;
     }

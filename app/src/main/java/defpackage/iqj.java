@@ -166,10 +166,10 @@ public final class iqj {
                 }
                 if (!iqjVar.k.k(dcu.J)) {
                     irj irjVar = iqjVar.i.f;
-                    irjVar.setBackground(irjVar.b.getDrawable(R.drawable.bg_frame_based_timer, null));
+                    irjVar.setBackground(irjVar.b.getDrawable(org.codeaurora.snapcam.R.drawable.bg_frame_based_timer, null));
                     irr irrVar = iqjVar.v.o;
                     if (irrVar != null) {
-                        irrVar.setBackground(irrVar.a.getResources().getDrawable(R.drawable.bg_speed_up_seekbar, null));
+                        irrVar.setBackground(irrVar.a.getResources().getDrawable(org.codeaurora.snapcam.R.drawable.bg_speed_up_seekbar, null));
                     }
                 }
                 ObjectAnimator objectAnimator = iqjVar.G;
@@ -219,7 +219,7 @@ public final class iqj {
             jgvVar.i = 2;
             jgvVar.a = true;
             jgvVar.f = this.g;
-            jgvVar.e = this.g.getResources().getString(R.string.notification_static_recording_af_locked);
+            jgvVar.e = this.g.getResources().getString(org.codeaurora.snapcam.R.string.notification_static_recording_af_locked);
             jgvVar.h = this.k.k(ddl.ay);
             this.V = jgvVar.a();
         }

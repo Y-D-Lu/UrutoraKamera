@@ -165,7 +165,7 @@ public final class fbb extends buf implements jad {
             }
             this.D.j(true);
             if (((Boolean) this.D.a().fA()).booleanValue()) {
-                this.h.b(R.raw.longexposure_start);
+                this.h.b(org.codeaurora.snapcam.R.raw.longexposure_start);
                 this.r.v(false);
                 this.w.X();
                 this.C.e();
@@ -213,10 +213,10 @@ public final class fbb extends buf implements jad {
     @Override // defpackage.jad
     public final void C(int i) {
         if (i == 1) {
-            this.h.c(R.raw.timer_final);
+            this.h.c(org.codeaurora.snapcam.R.raw.timer_final);
         } else if (i != 2 && i != 3) {
         } else {
-            this.h.c(R.raw.timer_increment);
+            this.h.c(org.codeaurora.snapcam.R.raw.timer_increment);
         }
     }
 

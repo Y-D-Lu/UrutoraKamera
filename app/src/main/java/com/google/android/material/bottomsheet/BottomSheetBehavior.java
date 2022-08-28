@@ -126,7 +126,7 @@ public class BottomSheetBehavior extends aae {
         this.y = new ArrayList();
         this.W = -1;
         this.X = new nxp(this);
-        this.F = context.getResources().getDimensionPixelSize(R.dimen.mtrl_min_touch_target_size);
+        this.F = context.getResources().getDimensionPixelSize(org.codeaurora.snapcam.R.dimen.mtrl_min_touch_target_size);
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, nyb.a);
         this.G = obtainStyledAttributes.hasValue(17);
         int i = 3;
@@ -212,7 +212,7 @@ public class BottomSheetBehavior extends aae {
 
     private final void P(Context context, AttributeSet attributeSet, boolean z, ColorStateList colorStateList) {
         if (this.G) {
-            this.L = obz.a(context, attributeSet, R.attr.bottomSheetStyle, 2132083960).a();
+            this.L = obz.a(context, attributeSet, org.codeaurora.snapcam.R.attr.bottomSheetStyle, 2132083960).a();
             obu obuVar = new obu(this.L);
             this.c = obuVar;
             obuVar.f(context);

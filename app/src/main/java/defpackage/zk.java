@@ -404,10 +404,10 @@ public final class zk extends ViewGroup.MarginLayoutParams {
                 case 29:
                     this.D = obtainStyledAttributes.getFloat(index, this.D);
                     break;
-                case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                     this.E = obtainStyledAttributes.getFloat(index, this.E);
                     break;
-                case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     int i2 = obtainStyledAttributes.getInt(index, 0);
                     this.K = i2;
                     if (i2 == 1) {
@@ -425,7 +425,7 @@ public final class zk extends ViewGroup.MarginLayoutParams {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                     try {
                         this.M = obtainStyledAttributes.getDimensionPixelSize(index, this.M);
                         break;
@@ -437,7 +437,7 @@ public final class zk extends ViewGroup.MarginLayoutParams {
                             break;
                         }
                     }
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                     try {
                         this.O = obtainStyledAttributes.getDimensionPixelSize(index, this.O);
                         break;
@@ -449,11 +449,11 @@ public final class zk extends ViewGroup.MarginLayoutParams {
                             break;
                         }
                     }
-                case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                     this.Q = Math.max((float) DisplayHelper.DENSITY, obtainStyledAttributes.getFloat(index, this.Q));
                     this.K = 2;
                     break;
-                case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                     try {
                         this.N = obtainStyledAttributes.getDimensionPixelSize(index, this.N);
                         break;
@@ -465,7 +465,7 @@ public final class zk extends ViewGroup.MarginLayoutParams {
                             break;
                         }
                     }
-                case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                     try {
                         this.P = obtainStyledAttributes.getDimensionPixelSize(index, this.P);
                         break;
@@ -477,35 +477,35 @@ public final class zk extends ViewGroup.MarginLayoutParams {
                             break;
                         }
                     }
-                case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                     this.R = Math.max((float) DisplayHelper.DENSITY, obtainStyledAttributes.getFloat(index, this.R));
                     this.L = 2;
                     break;
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                     zu.f(this, obtainStyledAttributes.getString(index));
                     break;
-                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                     this.G = obtainStyledAttributes.getFloat(index, this.G);
                     break;
-                case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonStyle /* 46 */:
                     this.H = obtainStyledAttributes.getFloat(index, this.H);
                     break;
-                case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                     this.I = obtainStyledAttributes.getInt(index, 0);
                     break;
-                case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                     this.J = obtainStyledAttributes.getInt(index, 0);
                     break;
-                case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                     this.S = obtainStyledAttributes.getDimensionPixelOffset(index, this.S);
                     break;
-                case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorAccent /* 50 */:
                     this.T = obtainStyledAttributes.getDimensionPixelOffset(index, this.T);
                     break;
-                case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                     this.X = obtainStyledAttributes.getString(index);
                     break;
-                case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                     int resourceId15 = obtainStyledAttributes.getResourceId(index, this.m);
                     this.m = resourceId15;
                     if (resourceId15 == -1) {
@@ -514,7 +514,7 @@ public final class zk extends ViewGroup.MarginLayoutParams {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                     int resourceId16 = obtainStyledAttributes.getResourceId(index, this.n);
                     this.n = resourceId16;
                     if (resourceId16 == -1) {
@@ -523,19 +523,19 @@ public final class zk extends ViewGroup.MarginLayoutParams {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                     this.C = obtainStyledAttributes.getDimensionPixelSize(index, this.C);
                     break;
-                case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                     this.B = obtainStyledAttributes.getDimensionPixelSize(index, this.B);
                     break;
                 case 64:
                     zu.e(this, obtainStyledAttributes, index, 0);
                     break;
-                case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dividerVertical /* 65 */:
                     zu.e(this, obtainStyledAttributes, index, 1);
                     break;
-                case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                     this.Y = obtainStyledAttributes.getInt(index, this.Y);
                     break;
             }

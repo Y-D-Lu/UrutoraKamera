@@ -479,7 +479,7 @@ public final class ipf {
             this.j.fB(inr.STATE_PRE_RECORDING);
             this.C.d();
             this.q.c(new iot(this, 1));
-            this.h.b(R.raw.video_start);
+            this.h.b(org.codeaurora.snapcam.R.raw.video_start);
             this.w.e();
             this.Y.a();
             final ioq ioqVar = this.B;
@@ -778,6 +778,6 @@ public final class ipf {
         this.Y.b();
         h(true);
         this.q.c(new iot(this, 0));
-        this.h.b(R.raw.video_stop);
+        this.h.b(org.codeaurora.snapcam.R.raw.video_stop);
     }
 }

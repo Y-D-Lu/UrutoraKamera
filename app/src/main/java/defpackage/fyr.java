@@ -166,7 +166,7 @@ public final class fyr extends buf implements dyh {
         this.D = ldaVar;
         this.E = set;
         this.z = hpuVar;
-        this.F = true != ddfVar.k(ddl.ay) ? 0 : R.style.Theme_Camera_MaterialAlertDialog;
+        this.F = true != ddfVar.k(ddl.ay) ? 0 : com.google.android.apps.camera.bottombar.R.style.Theme_Camera_MaterialAlertDialog;
         this.am = new ceo(ljfVar, set);
         this.W = new feg(budVar);
         fynVar.d(bttVar.k());
@@ -201,7 +201,7 @@ public final class fyr extends buf implements dyh {
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
                     Boolean bool = (Boolean) obj;
-                    fyr.this.B.sendEmptyMessage(R.styleable.AppCompatTheme_textAppearanceListItemSmall);
+                    fyr.this.B.sendEmptyMessage(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItemSmall);
                 }
             }, pgr.a));
         } catch (IOException e) {
@@ -767,7 +767,7 @@ public final class fyr extends buf implements dyh {
         D(false);
         I();
         if (this.h.isInterrupted() || !this.h.isAlive()) {
-            this.B.sendEmptyMessage(R.styleable.AppCompatTheme_textAppearanceListItemSmall);
+            this.B.sendEmptyMessage(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItemSmall);
         } else {
             this.h.a(new fyd(this, 1));
         }

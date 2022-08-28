@@ -230,9 +230,9 @@ public class af extends ViewGroup.MarginLayoutParams {
                     this.l = obtainStyledAttributes.getInt(59, -1);
                 }
             } else if (index == 102) {
-                this.K = obtainStyledAttributes.getDimensionPixelOffset(R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, this.K);
+                this.K = obtainStyledAttributes.getDimensionPixelOffset(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, this.K);
             } else if (index == 103) {
-                this.L = obtainStyledAttributes.getDimensionPixelOffset(R.styleable.AppCompatTheme_textAppearanceListItem, this.L);
+                this.L = obtainStyledAttributes.getDimensionPixelOffset(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItem, this.L);
             } else if (index == 71) {
                 this.a = obtainStyledAttributes.getDimensionPixelOffset(71, this.a);
             } else if (index == 72) {
@@ -266,17 +266,17 @@ public class af extends ViewGroup.MarginLayoutParams {
                     this.p = obtainStyledAttributes.getInt(69, -1);
                 }
             } else if (index == 107) {
-                this.q = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, this.q);
+                this.q = obtainStyledAttributes.getDimensionPixelSize(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, this.q);
             } else if (index == 110) {
-                this.r = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AppCompatTheme_textColorAlertDialogListItem, this.r);
+                this.r = obtainStyledAttributes.getDimensionPixelSize(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textColorAlertDialogListItem, this.r);
             } else if (index == 108) {
-                this.s = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, this.s);
+                this.s = obtainStyledAttributes.getDimensionPixelSize(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, this.s);
             } else if (index == 105) {
-                this.t = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AppCompatTheme_textAppearanceListItemSmall, this.t);
+                this.t = obtainStyledAttributes.getDimensionPixelSize(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItemSmall, this.t);
             } else if (index == 109) {
-                this.u = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu, this.u);
+                this.u = obtainStyledAttributes.getDimensionPixelSize(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu, this.u);
             } else if (index == 106) {
-                this.v = obtainStyledAttributes.getDimensionPixelSize(R.styleable.AppCompatTheme_textAppearancePopupMenuHeader, this.v);
+                this.v = obtainStyledAttributes.getDimensionPixelSize(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearancePopupMenuHeader, this.v);
             } else if (index == 79) {
                 this.w = obtainStyledAttributes.getFloat(79, this.w);
             } else if (index == 94) {
