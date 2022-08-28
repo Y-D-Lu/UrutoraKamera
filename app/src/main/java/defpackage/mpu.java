@@ -67,7 +67,7 @@ public final class mpu extends mmh {
         mmd af = mip.af(this.a.f.size());
         try {
             int i8 = mqyVar.b;
-            for (Map.Entry entry : this.a.f.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) this.a.f.entrySet()) {
                 int intValue = ((Integer) entry.getValue()).intValue();
                 int glGetAttribLocation = GLES20.glGetAttribLocation(i8, (String) entry.getKey());
                 if (glGetAttribLocation != -1) {

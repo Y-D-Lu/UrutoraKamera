@@ -20,7 +20,7 @@ public final class bci {
     public bci(Map map) {
         this.b = map;
         this.a = new HashMap();
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             adz adzVar = (adz) entry.getValue();
             List list = (List) this.a.get(adzVar);
             if (list == null) {

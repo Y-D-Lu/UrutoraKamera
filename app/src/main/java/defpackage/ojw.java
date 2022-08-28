@@ -18,7 +18,7 @@ final class ojw {
 
     public final void b() {
         char[][] cArr = new char[this.b + 1];
-        for (Map.Entry entry : this.a.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
             cArr[((Character) entry.getKey()).charValue()] = ((String) entry.getValue()).toCharArray();
         }
     }

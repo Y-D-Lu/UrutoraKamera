@@ -164,7 +164,7 @@ public final class nhd {
     public nhd(ngx ngxVar, Map map) {
         this.x = ngxVar;
         this.s = map;
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             List list = (List) entry.getValue();
             if (list.size() != 1 || !"001".equals(list.get(0))) {
                 this.v.addAll(list);

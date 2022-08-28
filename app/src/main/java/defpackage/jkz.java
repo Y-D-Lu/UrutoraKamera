@@ -55656,7 +55656,7 @@ public final class jkz {
         for (jku jkuVar : arrayList) {
             for (jkc jkcVar : jkuVar.a) {
                 EnumMap enumMap2 = (EnumMap) Map.EL.computeIfAbsent(enumMap, jkcVar, icd.t);
-                for (Map.Entry entry : jkuVar.b.entrySet()) {
+                for (Map.Entry entry : (Set<Map.Entry>) jkuVar.b.entrySet()) {
                     enumMap2.put((EnumMap) ((jkc) entry.getKey()), (jkc) ((jks) entry.getValue()));
                 }
             }

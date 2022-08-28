@@ -42,7 +42,7 @@ public final class pqp implements prb {
             for (int i5 = 0; i5 < g.b.a(); i5++) {
                 i4 += g.b(g.b.f(i5));
             }
-            for (Map.Entry entry : g.b.c()) {
+            for (Map.Entry entry : (Set<Map.Entry>) g.b.c()) {
                 i4 += g.b(entry);
             }
             return i + i4;

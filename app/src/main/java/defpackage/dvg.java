@@ -66,7 +66,7 @@ public final class dvg implements dve {
         ByteBuffer byteBuffer = (ByteBuffer) ((ByteBuffer) b.a.limit(b.b)).rewind();
         if (this.e.get()) {
             this.f.e(b.c, new lhu(b));
-            for (Map.Entry entry : this.c.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) this.c.entrySet()) {
                 ((Executor) entry.getValue()).execute((Runnable) entry.getKey());
             }
         }

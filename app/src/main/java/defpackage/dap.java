@@ -26,7 +26,7 @@ final class dap implements dbr {
     public final Map fM() {
         ArrayMap arrayMap = new ArrayMap();
         for (dbr dbrVar : this.b) {
-            for (Map.Entry entry : dbrVar.fM().entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) dbrVar.fM().entrySet()) {
                 String str = (String) entry.getKey();
                 Float f = (Float) entry.getValue();
                 if (!arrayMap.containsKey(str) || ((Float) arrayMap.get(str)).compareTo(f) > 0) {

@@ -458,7 +458,7 @@ public final class ScriptGroup extends BaseObj {
             long[] jArr3 = new long[size];
             long[] jArr4 = new long[size];
             int i = 0;
-            for (Map.Entry entry : map.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
                 Object value = entry.getValue();
                 Script.FieldID fieldID = (Script.FieldID) entry.getKey();
                 jArr[i] = fieldID.getID(renderScript);
@@ -497,7 +497,7 @@ public final class ScriptGroup extends BaseObj {
             long[] jArr8 = jArr3;
             int[] iArr2 = iArr;
             long[] jArr9 = jArr2;
-            for (Map.Entry entry : map.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
                 Object value = entry.getValue();
                 Script.FieldID fieldID = (Script.FieldID) entry.getKey();
                 jArr[i2] = fieldID.getID(renderScript);

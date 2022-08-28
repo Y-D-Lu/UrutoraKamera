@@ -451,7 +451,7 @@ public /* synthetic */ class plk {
                 aL(sb, i, str, obj2);
             }
         } else if (obj instanceof Map) {
-            for (Map.Entry entry : ((Map) obj).entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) ((Map) obj).entrySet()) {
                 aL(sb, i, str, entry);
             }
         } else {
@@ -614,7 +614,7 @@ public /* synthetic */ class plk {
         pqg pqgVar = (pqg) obj2;
         int i2 = 0;
         if (!pqhVar.isEmpty()) {
-            for (Map.Entry entry : pqhVar.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) pqhVar.entrySet()) {
                 i2 += pom.ab(i) + pom.R(pqg.a(pqgVar.a, entry.getKey(), entry.getValue()));
             }
         }

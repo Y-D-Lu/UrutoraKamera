@@ -201,7 +201,7 @@ public final class iec implements idt {
         ope k2 = k(pzi.a.a().d(), idn.e);
         Map o = o(k);
         Map o2 = o(k2);
-        for (Map.Entry entry : o.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) o.entrySet()) {
             String str = (String) entry.getKey();
             ope F = ope.F((java.util.Collection) entry.getValue());
             ope opeVar = orx.a;
@@ -217,7 +217,7 @@ public final class iec implements idt {
             a2.d(opeVar);
             m.e(str, a2.a());
         }
-        for (Map.Entry entry2 : o2.entrySet()) {
+        for (Map.Entry entry2 : (Set<Map.Entry>) o2.entrySet()) {
             entry2.getKey();
             idl a3 = idm.a();
             a3.b((String) entry2.getKey());

@@ -27,12 +27,12 @@ public final class kex {
         Collections.emptyList();
         TextUtils.isEmpty(null);
         HashMap hashMap = new HashMap();
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             if (c(entry.getKey()) && (a2 = a(kdtVar, entry.getKey())) != null) {
                 hashMap.put(a2, b(kdtVar, entry.getValue()));
             }
         }
-        for (Map.Entry entry2 : map.entrySet()) {
+        for (Map.Entry entry2 : (Set<Map.Entry>) map.entrySet()) {
             if (!c(entry2.getKey()) && (a = a(kdtVar, entry2.getKey())) != null) {
                 hashMap.put(a, b(kdtVar, entry2.getValue()));
             }

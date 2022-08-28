@@ -291,7 +291,7 @@ public final class kad {
     public final kae d(float f) {
         Map f2 = f((jrl) this.a.fA());
         float c = c(f, ((Float) ((lce) this.c).d).floatValue());
-        for (Map.Entry entry : ((oor) f2).entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) ((oor) f2).entrySet()) {
             jrl jrlVar = jrl.UNINITIALIZED;
             kag kagVar = kag.OFF;
             kae kaeVar = kae.ULTRAWIDE;
@@ -402,7 +402,7 @@ public final class kad {
         TextView k;
         Map f2 = f((jrl) this.a.fA());
         boolean z = zoomUi.getResources().getConfiguration().getLayoutDirection() == 1;
-        for (Map.Entry entry : ((oor) f2).entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) ((oor) f2).entrySet()) {
             boolean z2 = entry.getKey() == kaeVar;
             if (z2) {
                 Typeface create = Typeface.create("google-sans-text-medium", 0);
@@ -495,7 +495,7 @@ public final class kad {
         double round2 = Math.round(f * 10.0f);
         Double.isNaN(round2);
         if (!f2.containsValue(Float.valueOf((float) (round2 / 10.0d)))) {
-            for (Map.Entry entry : ((oor) f2).entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) ((oor) f2).entrySet()) {
                 double round3 = Math.round(c(((Float) entry.getValue()).floatValue(), ((Float) ((lce) this.c).d).floatValue()) * 10.0f);
                 Double.isNaN(round3);
                 if (f3 == ((float) (round3 / 10.0d))) {

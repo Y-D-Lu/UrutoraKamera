@@ -83,7 +83,7 @@ public final class bdj implements bde {
         sb.append("SizeConfigStrategy{groupedMap=");
         sb.append(this.g);
         sb.append(", sortedSizes=(");
-        for (Map.Entry entry : this.h.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.h.entrySet()) {
             sb.append(entry.getKey());
             sb.append('[');
             sb.append(entry.getValue());

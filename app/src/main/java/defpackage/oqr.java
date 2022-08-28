@@ -40,7 +40,7 @@ class oqr extends AbstractCollection {
         try {
             return super.remove(obj);
         } catch (UnsupportedOperationException e) {
-            for (Map.Entry entry : this.a.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
                 if (obr.bc(obj, entry.getValue())) {
                     this.a.remove(entry.getKey());
                     return true;
@@ -57,7 +57,7 @@ class oqr extends AbstractCollection {
             return super.removeAll(collection);
         } catch (UnsupportedOperationException e) {
             HashSet B = obr.B();
-            for (Map.Entry entry : this.a.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
                 if (collection.contains(entry.getValue())) {
                     B.add(entry.getKey());
                 }
@@ -73,7 +73,7 @@ class oqr extends AbstractCollection {
             return super.retainAll(collection);
         } catch (UnsupportedOperationException e) {
             HashSet B = obr.B();
-            for (Map.Entry entry : this.a.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
                 if (collection.contains(entry.getValue())) {
                     B.add(entry.getKey());
                 }

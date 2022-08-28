@@ -26,7 +26,7 @@ public final class ArrayCreatingInputMerger extends amt {
         HashMap hashMap2 = new HashMap();
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            for (Map.Entry entry : ((amq) it.next()).b().entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) ((amq) it.next()).b().entrySet()) {
                 String str = (String) entry.getKey();
                 Object value = entry.getValue();
                 Class<?> cls = value.getClass();

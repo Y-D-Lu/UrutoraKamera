@@ -237,7 +237,7 @@ public final class nvb {
         this.a.put(jtiVar, Float.valueOf(f));
         f2 = DisplayHelper.DENSITY;
         f3 = DisplayHelper.DENSITY;
-        for (Map.Entry entry : this.a.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
             float floatValue = ((Float) entry.getValue()).floatValue();
             float f4 = ((jti) entry.getKey()).a;
             f3 += floatValue * f4;

@@ -65,7 +65,7 @@ public final class kxp extends kno {
         ClassLoader classLoader = DataItemAssetParcelable.class.getClassLoader();
         mip.dk(classLoader);
         bundle.setClassLoader(classLoader);
-        for (Map.Entry entry : this.c.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.c.entrySet()) {
             bundle.putParcelable((String) entry.getKey(), new DataItemAssetParcelable((kwi) entry.getValue()));
         }
         mip.cC(parcel, 4, bundle);

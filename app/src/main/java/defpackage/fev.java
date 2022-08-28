@@ -142,7 +142,7 @@ public final class fev {
                 Double d2 = null;
                 Double d3 = null;
                 Date date = null;
-                for (Map.Entry entry : map.entrySet()) {
+                for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
                     if (((String) entry.getKey()).equals("location_altitude")) {
                         d = e(entry);
                     } else if (((String) entry.getKey()).equals("location_latitude")) {
@@ -205,7 +205,7 @@ public final class fev {
                     Integer num7 = null;
                     Integer num8 = null;
                     Integer num9 = null;
-                    for (Map.Entry entry2 : map.entrySet()) {
+                    for (Map.Entry entry2 : (Set<Map.Entry>) map.entrySet()) {
                         if (((String) entry2.getKey()).equals("full_pano_width")) {
                             num3 = f(entry2);
                         } else if (((String) entry2.getKey()).equals("full_pano_height")) {

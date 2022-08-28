@@ -99,7 +99,7 @@ public final class lge implements lie {
                 sb.append(valueOf);
                 Log.w("EncWatcher", sb.toString());
             }
-            for (Map.Entry entry : this.a.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
                 ((Boolean) entry.getValue()).booleanValue();
             }
         }

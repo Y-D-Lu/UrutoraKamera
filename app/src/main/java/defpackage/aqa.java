@@ -109,7 +109,7 @@ public final class aqa implements apc, ank {
         if (intExtra2 == 0) {
             return;
         }
-        for (Map.Entry entry : this.e.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.e.entrySet()) {
             i |= ((ams) entry.getValue()).b;
         }
         ams amsVar = (ams) this.e.get(this.d);

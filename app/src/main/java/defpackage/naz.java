@@ -698,7 +698,7 @@ public final class naz extends myq implements mxo, mwa {
                                 Map map = (Map) ((ojc) plk.ad(phtVar2)).f();
                                 if (map != null) {
                                     long j32 = ((qxr) poyVar4.b).b;
-                                    for (Map.Entry entry : map.entrySet()) {
+                                    for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
                                         int intValue = ((Integer) entry.getKey()).intValue();
                                         long longValue3 = ((Long) entry.getValue()).longValue() - j32;
                                         if (poyVar4.c) {

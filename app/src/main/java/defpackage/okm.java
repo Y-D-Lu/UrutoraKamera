@@ -144,7 +144,7 @@ public class okm extends ong implements Serializable, olt {
 
     @Override // defpackage.ong, java.util.Map
     public final void putAll(Map map) {
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             put(entry.getKey(), entry.getValue());
         }
     }

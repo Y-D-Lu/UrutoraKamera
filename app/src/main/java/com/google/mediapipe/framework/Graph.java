@@ -24,7 +24,7 @@ public class Graph {
     private static void i(Map map, String[] strArr, long[] jArr) {
         if (map.size() == strArr.length && map.size() == jArr.length) {
             int i = 0;
-            for (Map.Entry entry : map.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
                 strArr[i] = (String) entry.getKey();
                 jArr[i] = ((Packet) entry.getValue()).getNativeHandle();
                 i++;
@@ -71,7 +71,7 @@ public class Graph {
             packet.release();
             return;
         }
-        for (Map.Entry entry : this.e.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.e.entrySet()) {
             if (entry.getValue() == null) {
                 ((oug) ((oug) a.b()).G((char) 3705)).r("Stream: %s might be missing.", entry.getKey());
             }
@@ -104,7 +104,7 @@ public class Graph {
     public final synchronized void f() {
         obr.aR(this.b != 0, "Invalid context, tearDown() might have been called.");
         this.f = true;
-        for (Map.Entry entry : this.e.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.e.entrySet()) {
             if (entry.getValue() == null) {
                 return;
             }
@@ -118,7 +118,7 @@ public class Graph {
         nativeStartRunningGraph(this.b, strArr, jArr, strArr2, jArr2);
         this.g = true;
         if (!this.h.isEmpty()) {
-            for (Map.Entry entry2 : this.h.entrySet()) {
+            for (Map.Entry entry2 : (Set<Map.Entry>) this.h.entrySet()) {
                 ArrayList arrayList = (ArrayList) entry2.getValue();
                 int size = arrayList.size();
                 for (int i = 0; i < size; i++) {

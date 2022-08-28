@@ -66,7 +66,7 @@ public final class kkp extends Fragment implements kkn {
         super.onCreate(bundle);
         this.b = 1;
         this.c = bundle;
-        for (Map.Entry entry : this.d.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.d.entrySet()) {
             ((LifecycleCallback) entry.getValue()).d(bundle != null ? bundle.getBundle((String) entry.getKey()) : null);
         }
     }
@@ -94,7 +94,7 @@ public final class kkp extends Fragment implements kkn {
         if (bundle == null) {
             return;
         }
-        for (Map.Entry entry : this.d.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.d.entrySet()) {
             Bundle bundle2 = new Bundle();
             ((LifecycleCallback) entry.getValue()).g(bundle2);
             bundle.putBundle((String) entry.getKey(), bundle2);

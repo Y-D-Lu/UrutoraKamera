@@ -38,7 +38,7 @@ public final class lxy extends lya {
             this.b = new HashMap();
             this.c = 0;
             lyrVar.a(lyjVar);
-            for (Map.Entry entry : map.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
                 ((lym) entry.getValue()).b(lyrVar, ((lye) entry.getKey()).b);
             }
         }

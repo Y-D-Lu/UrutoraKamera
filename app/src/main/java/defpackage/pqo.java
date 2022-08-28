@@ -1853,7 +1853,7 @@ public final class pqo implements prb {
                 Map.Entry f = g2.b.f(i9);
                 i8 += pou.j((ppc) f.getKey(), f.getValue());
             }
-            for (Map.Entry entry : g2.b.c()) {
+            for (Map.Entry entry : (Set<Map.Entry>) g2.b.c()) {
                 i8 += pou.j((ppc) entry.getKey(), entry.getValue());
             }
             return ac + i8;

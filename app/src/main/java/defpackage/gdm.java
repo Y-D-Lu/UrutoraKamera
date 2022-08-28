@@ -244,7 +244,7 @@ public final class gdm implements gez {
                 }
             }
         }
-        for (Map.Entry entry2 : this.e.entrySet()) {
+        for (Map.Entry entry2 : (Set<Map.Entry>) this.e.entrySet()) {
             if (((gdl) entry2.getValue()).b < SystemClock.elapsedRealtimeNanos() - 600000000000L) {
                 lis lisVar10 = this.b;
                 String valueOf3 = String.valueOf(entry2.getKey());

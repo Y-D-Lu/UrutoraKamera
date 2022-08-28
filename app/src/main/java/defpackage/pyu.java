@@ -21,7 +21,7 @@ public final class pyu extends pyp {
     /* renamed from: a */
     public final Map mo37get() {
         LinkedHashMap ag = qmd.ag(this.a.size());
-        for (Map.Entry entry : this.a.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
             ag.put(entry.getKey(), ((qkg) entry.getValue()).mo37get());
         }
         return Collections.unmodifiableMap(ag);

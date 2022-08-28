@@ -83,14 +83,14 @@ public final class qnk implements qob, qnj {
             qkl K = qmd.K(sb2, str + ".Companion");
             hashMap3.put(K.a, K.b);
         }
-        for (Map.Entry entry : a.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) a.entrySet()) {
             int intValue = ((Number) entry.getValue()).intValue();
             String name = ((Class) entry.getKey()).getName();
             hashMap3.put(name, "kotlin.Function" + intValue);
         }
         d = hashMap3;
         LinkedHashMap linkedHashMap = new LinkedHashMap(qmd.o(hashMap3.size()));
-        for (Map.Entry entry2 : hashMap3.entrySet()) {
+        for (Map.Entry entry2 : (Set<Map.Entry>) hashMap3.entrySet()) {
             linkedHashMap.put(entry2.getKey(), qno.v((String) entry2.getValue()));
         }
     }

@@ -46,7 +46,7 @@ public final class aif {
                 this.b[i] = lowerCase;
             }
         }
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             String lowerCase2 = ((String) entry.getValue()).toLowerCase(Locale.US);
             if (this.a.containsKey(lowerCase2)) {
                 String lowerCase3 = ((String) entry.getKey()).toLowerCase(Locale.US);

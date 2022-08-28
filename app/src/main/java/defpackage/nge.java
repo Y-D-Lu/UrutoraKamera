@@ -19,7 +19,7 @@ public final class nge extends BroadcastReceiver {
         if (stringExtra == null) {
             return;
         }
-        for (Map.Entry entry : c.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) c.entrySet()) {
             if (((String) ((ojd) entry.getKey()).a).equals(stringExtra)) {
                 ((nfi) entry.getValue()).a.c();
             }

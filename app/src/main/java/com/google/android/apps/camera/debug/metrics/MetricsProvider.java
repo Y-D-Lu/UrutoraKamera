@@ -110,7 +110,7 @@ public class MetricsProvider extends dgu {
                 strArr[0][length] = "";
                 iArr[length] = 1;
                 int i6 = 1;
-                for (Map.Entry entry4 : entrySet) {
+                for (Map.Entry entry4 : (Set<Map.Entry>) entrySet) {
                     int i7 = 0;
                     while (i7 < length) {
                         Locale locale2 = Locale.ROOT;

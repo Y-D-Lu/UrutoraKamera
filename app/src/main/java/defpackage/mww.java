@@ -17,7 +17,7 @@ public abstract class mww {
     public final List d(Map map) {
         pqm a;
         ArrayList arrayList = new ArrayList();
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             if (entry.getValue() != null && (a = a((String) entry.getKey(), entry.getValue())) != null) {
                 arrayList.add(a);
             }

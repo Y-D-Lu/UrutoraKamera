@@ -321,7 +321,7 @@ public class kbx extends kbk {
                 if (!kadVar3.i(floatValue2)) {
                     boolean z = zoomUi3.getResources().getConfiguration().getLayoutDirection() == 1;
                     float c2 = kadVar3.c(floatValue2, ((Float) ((lce) kadVar3.c).d).floatValue());
-                    for (Map.Entry entry : ((oor) f).entrySet()) {
+                    for (Map.Entry entry : (Set<Map.Entry>) ((oor) f).entrySet()) {
                         jrl jrlVar = jrl.UNINITIALIZED;
                         kag kagVar = kag.OFF;
                         switch (((kae) entry.getKey()).ordinal()) {

@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.RandomAccess;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: prc  reason: default package */
@@ -439,7 +440,7 @@ public final class prc {
             for (int i = 0; i < g.b.a(); i++) {
                 h.f(g.b.f(i));
             }
-            for (Map.Entry entry : g.b.c()) {
+            for (Map.Entry entry : (Set<Map.Entry>) g.b.c()) {
                 h.f(entry);
             }
         }

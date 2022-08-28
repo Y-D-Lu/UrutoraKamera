@@ -79,7 +79,7 @@ public final class klh extends bu implements kkn {
 
     @Override // defpackage.bu
     public final void f(Bundle bundle) {
-        for (Map.Entry entry : this.d.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.d.entrySet()) {
             Bundle bundle2 = new Bundle();
             ((LifecycleCallback) entry.getValue()).g(bundle2);
             bundle.putBundle((String) entry.getKey(), bundle2);
@@ -100,7 +100,7 @@ public final class klh extends bu implements kkn {
         super.gA(bundle);
         this.b = 1;
         this.c = bundle;
-        for (Map.Entry entry : this.d.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.d.entrySet()) {
             ((LifecycleCallback) entry.getValue()).d(bundle != null ? bundle.getBundle((String) entry.getKey()) : null);
         }
     }

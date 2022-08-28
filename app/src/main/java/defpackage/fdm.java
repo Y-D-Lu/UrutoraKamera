@@ -510,7 +510,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                 fdvVar2.g.j(1.0f);
                 try {
                     synchronized (fdvVar2.d) {
-                        for (Map.Entry entry : fdvVar2.d.entrySet()) {
+                        for (Map.Entry entry : (Set<Map.Entry>) fdvVar2.d.entrySet()) {
                             float[] fArr6 = (float[]) entry.getValue();
                             Matrix.multiplyMM(fdvVar2.k, 0, fArr3, 0, fArr6, 0);
                             Matrix.multiplyMV(fdvVar2.j, 0, fdvVar2.k, 0, fdvVar2.i, 0);

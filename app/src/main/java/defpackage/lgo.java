@@ -365,7 +365,7 @@ public final class lgo implements lfe {
                 obr.aF(z);
                 i++;
             }
-            for (Map.Entry entry : this.y.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) this.y.entrySet()) {
                 mah mahVar2 = this.f;
                 mahVar2.getClass();
                 mahVar2.b((String) entry.getKey(), entry.getValue());

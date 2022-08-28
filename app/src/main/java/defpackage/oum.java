@@ -12,7 +12,7 @@ final class oum extends ovd {
 
     @Override // defpackage.ovd
     public final /* bridge */ /* synthetic */ void b(Object obj, ovc ovcVar) {
-        for (Map.Entry entry : ((oxp) obj).c.d) {
+        for (Map.Entry entry : (Set<Map.Entry>) ((oxp) obj).c.d) {
             if (!((Set) entry.getValue()).isEmpty()) {
                 for (Object obj2 : (Set) entry.getValue()) {
                     ovcVar.a((String) entry.getKey(), obj2);

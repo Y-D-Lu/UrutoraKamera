@@ -402,7 +402,7 @@ public abstract class LinkConfig {
             miaVar9.d = booleanValue6;
             Map sceneClassificationMap = sceneClassificationMap();
             if (sceneClassificationMap != null) {
-                for (Map.Entry entry : sceneClassificationMap.entrySet()) {
+                for (Map.Entry entry : (Set<Map.Entry>) sceneClassificationMap.entrySet()) {
                     poy m4 = mif.d.m();
                     String str = (String) entry.getKey();
                     if (m4.c) {

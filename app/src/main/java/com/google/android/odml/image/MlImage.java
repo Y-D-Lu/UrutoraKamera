@@ -38,7 +38,7 @@ public class MlImage implements Closeable {
     }
 
     ImageContainer getContainer(int i) {
-        for (Map.Entry entry : this.a.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
             if (((ImageProperties) entry.getKey()).b() == i) {
                 return (ImageContainer) entry.getValue();
             }

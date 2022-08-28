@@ -48,7 +48,7 @@ public final class bal implements bac {
             }
             try {
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-                for (Map.Entry entry : map.entrySet()) {
+                for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
                     httpURLConnection.addRequestProperty((String) entry.getKey(), (String) entry.getValue());
                 }
                 httpURLConnection.setConnectTimeout(this.b);
@@ -154,7 +154,7 @@ public final class bal implements bac {
                 synchronized (bewVar) {
                     if (((bez) bewVar).c == null) {
                         HashMap hashMap = new HashMap();
-                        for (Map.Entry entry : ((bez) bewVar).b.entrySet()) {
+                        for (Map.Entry entry : (Set<Map.Entry>) ((bez) bewVar).b.entrySet()) {
                             List list = (List) entry.getValue();
                             StringBuilder sb = new StringBuilder();
                             int size = list.size();

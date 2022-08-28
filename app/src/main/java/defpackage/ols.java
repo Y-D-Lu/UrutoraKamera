@@ -30,7 +30,7 @@ public final class ols extends oko {
             collection = new oqu(olkVar);
             olkVar.c = collection;
         }
-        for (Map.Entry entry : collection) {
+        for (Map.Entry entry : (Set<Map.Entry>) collection) {
             l(entry.getKey(), entry.getValue());
         }
     }

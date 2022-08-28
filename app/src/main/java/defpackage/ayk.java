@@ -36,7 +36,7 @@ public final class ayk extends bko implements Cloneable {
         aya ayaVar = aynVar.a.b;
         ayo ayoVar = (ayo) ayaVar.e.get(cls);
         if (ayoVar == null) {
-            for (Map.Entry entry : ayaVar.e.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) ayaVar.e.entrySet()) {
                 if (((Class) entry.getKey()).isAssignableFrom(cls)) {
                     ayoVar = (ayo) entry.getValue();
                 }

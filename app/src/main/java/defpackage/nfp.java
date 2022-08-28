@@ -45,7 +45,7 @@ public final /* synthetic */ class nfp implements oiu {
                 String str3 = this.a;
                 nes nesVar3 = nfq.a;
                 poy m = nff.b.m();
-                for (Map.Entry entry : Collections.unmodifiableMap(((nff) obj).a).entrySet()) {
+                for (Map.Entry entry : (Set<Map.Entry>) Collections.unmodifiableMap(((nff) obj).a).entrySet()) {
                     nfb nfbVar3 = (nfb) entry.getValue();
                     poy m2 = nfb.d.m();
                     if (!nfbVar3.c.equals(str3)) {

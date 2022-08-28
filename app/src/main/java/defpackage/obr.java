@@ -131,7 +131,7 @@ public class obr {
 
     public static void K(Map map, ObjectOutputStream objectOutputStream) {
         objectOutputStream.writeInt(map.size());
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             objectOutputStream.writeObject(entry.getKey());
             objectOutputStream.writeObject(entry.getValue());
         }
@@ -139,7 +139,7 @@ public class obr {
 
     public static void L(oqt oqtVar, ObjectOutputStream objectOutputStream) {
         objectOutputStream.writeInt(oqtVar.m().size());
-        for (Map.Entry entry : oqtVar.m().entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) oqtVar.m().entrySet()) {
             objectOutputStream.writeObject(entry.getKey());
             objectOutputStream.writeInt(((Collection) entry.getValue()).size());
             for (Object obj : (Collection) entry.getValue()) {
@@ -446,7 +446,7 @@ public class obr {
         StringBuilder O = ohh.O(map.size());
         O.append('{');
         boolean z = true;
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             if (!z) {
                 O.append(", ");
             }

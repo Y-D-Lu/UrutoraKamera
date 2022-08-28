@@ -18,7 +18,7 @@ public final class otf extends AbstractMap {
 
     public final boolean a(ojf ojfVar) {
         ArrayList ag = obr.ag();
-        for (Map.Entry entry : entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) entrySet()) {
             if (ojfVar.a(entry)) {
                 ag.add((orj) entry.getKey());
             }

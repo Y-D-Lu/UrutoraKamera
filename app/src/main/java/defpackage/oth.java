@@ -36,7 +36,7 @@ public final class oth implements orl {
 
     @Override // defpackage.orl
     public final void d(orl orlVar) {
-        for (Map.Entry entry : ((opb) orlVar).b().entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) ((opb) orlVar).b().entrySet()) {
             c((orj) entry.getKey(), entry.getValue());
         }
     }

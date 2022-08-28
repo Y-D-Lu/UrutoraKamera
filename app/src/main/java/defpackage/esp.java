@@ -127,7 +127,7 @@ public final class esp implements pys {
                 ljf ljfVar = (ljf) this.a.mo37get();
                 ljfVar.e("ModuleManager#provide");
                 ArrayList arrayList = new ArrayList();
-                for (Map.Entry entry : mo37get.entrySet()) {
+                for (Map.Entry entry : (Set<Map.Entry>) mo37get.entrySet()) {
                     if (((ojc) entry.getValue()).g()) {
                         arrayList.add((fxj) ((ojc) entry.getValue()).c());
                     }

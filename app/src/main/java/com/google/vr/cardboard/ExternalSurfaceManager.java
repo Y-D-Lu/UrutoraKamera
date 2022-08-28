@@ -6,6 +6,7 @@ import android.view.Surface;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import defpackage.pwb;
 import defpackage.pwc;
@@ -86,7 +87,7 @@ public class ExternalSurfaceManager {
             }
         }
         if (!map.isEmpty()) {
-            for (Map.Entry entry : map.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) (Set<Map.Entry>) map.entrySet()) {
                 if (pwiVar.a.containsKey(entry.getKey())) {
                     ((pwf) pwiVar.a.get(entry.getKey())).b(((Integer) entry.getValue()).intValue());
                 } else {
@@ -180,12 +181,12 @@ public class ExternalSurfaceManager {
             pwi pwiVar = this.d;
             this.d = new pwi();
             if (!pwiVar.a.isEmpty()) {
-                for (Map.Entry entry : pwiVar.a.entrySet()) {
+                for (Map.Entry entry : (Set<Map.Entry>) pwiVar.a.entrySet()) {
                     ((pwf) entry.getValue()).c(this.a);
                 }
             }
             if (!pwiVar.b.isEmpty()) {
-                for (Map.Entry entry2 : pwiVar.b.entrySet()) {
+                for (Map.Entry entry2 : (Set<Map.Entry>) pwiVar.b.entrySet()) {
                     ((pwf) entry2.getValue()).c(this.a);
                 }
             }

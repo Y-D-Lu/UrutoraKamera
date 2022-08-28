@@ -16,7 +16,7 @@ public final class owl extends owm {
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         d(linkedHashMap, ovvVar);
         d(linkedHashMap, ovvVar2);
-        for (Map.Entry entry : linkedHashMap.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) linkedHashMap.entrySet()) {
             if (((ovd) entry.getKey()).b) {
                 entry.setValue(Collections.unmodifiableList((List) entry.getValue()));
             }
@@ -53,7 +53,7 @@ public final class owl extends owm {
 
     @Override // defpackage.owm
     public final void c(owc owcVar, Object obj) {
-        for (Map.Entry entry : this.a.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) this.a.entrySet()) {
             ovd ovdVar = (ovd) entry.getKey();
             Object value = entry.getValue();
             if (ovdVar.b) {

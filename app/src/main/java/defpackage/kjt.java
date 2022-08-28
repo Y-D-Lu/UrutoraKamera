@@ -24,12 +24,12 @@ public final class kjt {
         synchronized (this.b) {
             hashMap2 = new HashMap(this.b);
         }
-        for (Map.Entry entry : hashMap.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) hashMap.entrySet()) {
             if (z || ((Boolean) entry.getValue()).booleanValue()) {
                 ((BasePendingResult) entry.getKey()).h(status);
             }
         }
-        for (Map.Entry entry2 : hashMap2.entrySet()) {
+        for (Map.Entry entry2 : (Set<Map.Entry>) hashMap2.entrySet()) {
             if (z || ((Boolean) entry2.getValue()).booleanValue()) {
                 ((kvm) entry2.getKey()).c(new kig(status));
             }

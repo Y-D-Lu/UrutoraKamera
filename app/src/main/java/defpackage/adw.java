@@ -40,7 +40,7 @@ public final class adw {
             hashMap.putAll(c(superclass).b);
         }
         for (Class<?> cls2 : cls.getInterfaces()) {
-            for (Map.Entry entry : c(cls2).b.entrySet()) {
+            for (Map.Entry entry : (Set<Map.Entry>) c(cls2).b.entrySet()) {
                 d(hashMap, (adv) entry.getKey(), (adz) entry.getValue(), cls);
             }
         }

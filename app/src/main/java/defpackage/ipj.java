@@ -73,7 +73,7 @@ public final class ipj extends dcc {
         if (this.d) {
             return false;
         }
-        for (Map.Entry entry : map.entrySet()) {
+        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
             if (((Float) e.getOrDefault((String) entry.getKey(), Float.valueOf(Float.MAX_VALUE))).floatValue() <= ((Float) entry.getValue()).floatValue()) {
                 return true;
             }
