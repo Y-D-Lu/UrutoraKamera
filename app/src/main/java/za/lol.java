@@ -1,11 +1,9 @@
 package za;
 
 import android.graphics.Rect;
-import android.hardware.camera2.CameraCharacteristics;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
-import android.util.Range;
 
 import com.Helper;
 import com.google.android.apps.camera.bottombar.R;
@@ -46,7 +44,7 @@ public class lol {
     }
 
     private static long ISO_100() {
-        return ((float) Shutter_AE) * (ISO_AE / 100);
+        return (long) (((float) Shutter_AE) * (ISO_AE / 100));
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -118,12 +116,12 @@ public class lol {
             case 1:
             case 2:
             case 3:
-                return 500.0f / (CROP_1_255 * f);
+                return (long) (500.0f / (CROP_1_255 * f));
             case 4:
             case 5:
             case 6:
             case 7:
-                return 500.0f / (CROP_1_255 * f);
+                return (long) (500.0f / (CROP_1_255 * f));
             default:
                 return 19000000000L;
         }
@@ -135,7 +133,7 @@ public class lol {
 
     public static void calc_quantization(kvg kvgVar) {
         try {
-            ISO_to_Gain_Quant = 100.0f / ((Integer) ((Range) kvgVar.b(CameraCharacteristics.SENSOR_INFO_SENSITIVITY_RANGE)).getLower()).intValue();
+            ISO_to_Gain_Quant = 2.0f;//100.0f / ((Integer) ((Range) kvgVar.b(CameraCharacteristics.SENSOR_INFO_SENSITIVITY_RANGE)).getLower()).intValue();
         } catch (Exception e) {
             ISO_to_Gain_Quant = 2.0f;
         }
@@ -790,7 +788,7 @@ public class lol {
         sb.append(i2);
         logMSG(sb.toString());
         if (i2 != 0) {
-            Helper.ShowToast("Use HDR+ Enhanced or Night Sight");
+            Helper.showT("Use HDR+ Enhanced or Night Sight");
         }
     }
 
@@ -802,7 +800,7 @@ public class lol {
         sb.append(i2);
         logMSG(sb.toString());
         if (i2 != 0) {
-            Helper.ShowToast("Use HDR+ Enhanced or Night Sight");
+            Helper.showT("Use HDR+ Enhanced or Night Sight");
         }
     }
 
@@ -830,7 +828,7 @@ public class lol {
         sb.append(i2);
         logMSG(sb.toString());
         if (i2 != 0) {
-            Helper.ShowToast("Use HDR+ Enhanced or Night Sight");
+            Helper.showT("Use HDR+ Enhanced or Night Sight");
         }
     }
 

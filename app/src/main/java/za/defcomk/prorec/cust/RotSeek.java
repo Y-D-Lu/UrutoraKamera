@@ -76,7 +76,7 @@ public class RotSeek extends View {
     }
 
     private float convertDpiToPixel(int i) {
-        return TypedValue.applyDimension(1, i, getResources().getDisplayMetrics());
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, i, getResources().getDisplayMetrics());
     }
 
     private int getSignedDistance(int i, int i2) {
@@ -236,7 +236,7 @@ public class RotSeek extends View {
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         if (Helper.MenuValue("pref_pro_key") == 0) {
-            setVisibility(8);
+            setVisibility(GONE);
             return;
         }
         super.onDraw(canvas);

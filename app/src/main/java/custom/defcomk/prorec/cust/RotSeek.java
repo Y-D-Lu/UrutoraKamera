@@ -113,7 +113,7 @@ public class RotSeek extends View {
     }
 
     private float convertDpiToPixel(int i) {
-        return TypedValue.applyDimension(1, i, getResources().getDisplayMetrics());
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, i, getResources().getDisplayMetrics());
     }
 
     public static int getManualFocus() {
@@ -256,7 +256,7 @@ public class RotSeek extends View {
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         if (getManualFocus() != 0) {
-            setVisibility(8);
+            setVisibility(GONE);
             return;
         }
         super.onDraw(canvas);

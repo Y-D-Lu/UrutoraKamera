@@ -4,8 +4,8 @@ package defpackage;
 /* renamed from: kvg  reason: default package */
 /* loaded from: classes2.dex */
 public final class kvg implements Runnable {
-    final /* synthetic */ kvk a;
-    final /* synthetic */ kvh b;
+    /* synthetic */ kvk a;
+    /* synthetic */ kvh b;
 
     public kvg(kvh kvhVar, kvk kvkVar) {
         this.b = kvhVar;

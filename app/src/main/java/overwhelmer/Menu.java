@@ -3,6 +3,7 @@ package overwhelmer;
 import android.app.AppGlobals;
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 
 import com.hdrindicator.DisplayHelper;
@@ -13,7 +14,12 @@ public class Menu {
 
     public static double getDoubleValue(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         if (PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str)) {
             return Double.parseDouble(PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null));
         }
@@ -22,13 +28,23 @@ public class Menu {
 
     public static float getFloatValue(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         return PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str) ? Float.parseFloat(PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null)) : DisplayHelper.DENSITY;
     }
 
     public static long getLongValue(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         if (PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str)) {
             return Long.parseLong(PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null));
         }
@@ -37,7 +53,12 @@ public class Menu {
 
     public static String getStringValue(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         if (PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str)) {
             return PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null);
         }
@@ -46,7 +67,12 @@ public class Menu {
 
     public static String getStringValue(String str, int i) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         if (applicationContext.getSharedPreferences("settings", 0).contains(str)) {
             return applicationContext.getSharedPreferences("settings", 0).getString(str, "");
         }
@@ -55,7 +81,12 @@ public class Menu {
 
     public static int getValue(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         if (PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str)) {
             return Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null));
         }
@@ -69,31 +100,55 @@ public class Menu {
 
     public static void setDoubleValue(String str, double d) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).edit().putString(str, String.valueOf(d)).apply();
+        try {
+            PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext()).edit().putString(str, String.valueOf(d)).apply();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void setFloatValue(String str, float f) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).edit().putString(str, String.valueOf(f)).apply();
+        try {
+            PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext()).edit().putString(str, String.valueOf(f)).apply();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void setLongValue(String str, long j) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).edit().putString(str, String.valueOf(j)).apply();
+        try {
+            PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext()).edit().putString(str, String.valueOf(j)).apply();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void setStringValue(String str, String str2) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).edit().putString(str, str2).apply();
+        try {
+            PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext()).edit().putString(str, str2).apply();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void setStringValue(String str, String str2, int i) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext().getSharedPreferences("settings", 0).edit().putString(str, str2).apply();
+        try {
+            initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext().getSharedPreferences("settings", 0).edit().putString(str, str2).apply();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void setValue(String str, int i) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).edit().putString(str, String.valueOf(i)).apply();
+        try {
+            PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext()).edit().putString(str, String.valueOf(i)).apply();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
