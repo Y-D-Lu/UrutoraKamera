@@ -15,7 +15,7 @@ public final class mfe {
         mfgVar.b(70.0d, new mff() { // from class: mfd
             @Override // defpackage.mff
             public final void a(double d) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dhdVar.a(1, d, 0.25d);
                         return;
@@ -43,7 +43,7 @@ public final class mfe {
         mfgVar.c(new mff() { // from class: mfd
             @Override // defpackage.mff
             public final void a(double d) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dhdVar.a(1, d, 0.25d);
                         return;
@@ -73,7 +73,7 @@ public final class mfe {
         mfgVar2.b(1.1d, new mff() { // from class: mfd
             @Override // defpackage.mff
             public final void a(double d) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dhdVar.a(1, d, 0.25d);
                         return;
@@ -103,7 +103,7 @@ public final class mfe {
         mfgVar3.b(70.0d, new mff() { // from class: mfd
             @Override // defpackage.mff
             public final void a(double d) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dhdVar.a(1, d, 0.25d);
                         return;
@@ -131,7 +131,7 @@ public final class mfe {
         mfgVar3.c(new mff() { // from class: mfd
             @Override // defpackage.mff
             public final void a(double d) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dhdVar.a(1, d, 0.25d);
                         return;
@@ -161,7 +161,7 @@ public final class mfe {
         mfgVar4.b(125.0d, new mff() { // from class: mfd
             @Override // defpackage.mff
             public final void a(double d) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dhdVar.a(1, d, 0.25d);
                         return;
@@ -189,7 +189,7 @@ public final class mfe {
         mfgVar4.c(new mff() { // from class: mfd
             @Override // defpackage.mff
             public final void a(double d) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dhdVar.a(1, d, 0.25d);
                         return;

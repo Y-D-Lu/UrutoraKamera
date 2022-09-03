@@ -26,7 +26,7 @@ public final /* synthetic */ class bzz implements Runnable {
                 cacVar.animate().withStartAction(new Runnable() { // from class: cab
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 cac cacVar2 = cacVar;
                                 cacVar2.setAlpha(DisplayHelper.DENSITY);
@@ -62,7 +62,7 @@ public final /* synthetic */ class bzz implements Runnable {
                 cacVar2.animate().alpha(DisplayHelper.DENSITY).withEndAction(new Runnable() { // from class: cab
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 cac cacVar22 = cacVar2;
                                 cacVar22.setAlpha(DisplayHelper.DENSITY);

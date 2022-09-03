@@ -43,7 +43,7 @@ public final class fnt implements imr {
         a.d(new Runnable() { // from class: fnr
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         atomicBoolean.set(false);
                         return;
@@ -56,7 +56,7 @@ public final class fnt implements imr {
         a.e(new Runnable() { // from class: fnr
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         atomicBoolean.set(false);
                         return;

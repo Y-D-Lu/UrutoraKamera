@@ -31,7 +31,7 @@ public final class ngn {
         return new ngi(this.a, str, obj, new nfg(this.b, this.c, new ngm() { // from class: ngk
             @Override // defpackage.ngm
             public final Object a(Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return ngmVar.a(Base64.decode((String) obj2, 3));
                     default:
@@ -41,7 +41,7 @@ public final class ngn {
         }, new ngm() { // from class: ngk
             @Override // defpackage.ngm
             public final Object a(Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return ngmVar.a(Base64.decode((String) obj2, 3));
                     default:

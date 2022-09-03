@@ -24,7 +24,7 @@ public final /* synthetic */ class hrq implements Runnable {
                 hrxVar.b(new Consumer() { // from class: hrm
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 ((hsb) obj).j(hspVar);
                                 return;
@@ -42,7 +42,7 @@ public final /* synthetic */ class hrq implements Runnable {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 return consumer.getClass();
                             case 1:
@@ -61,7 +61,7 @@ public final /* synthetic */ class hrq implements Runnable {
                 hrxVar2.d(new Consumer() { // from class: hrm
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 ((hsb) obj).j(hspVar2);
                                 return;
@@ -79,7 +79,7 @@ public final /* synthetic */ class hrq implements Runnable {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 return consumer.getClass();
                             case 1:
@@ -98,7 +98,7 @@ public final /* synthetic */ class hrq implements Runnable {
                 hrxVar3.b(new Consumer() { // from class: hrm
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 ((hsb) obj).j(hspVar3);
                                 return;
@@ -116,7 +116,7 @@ public final /* synthetic */ class hrq implements Runnable {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 return consumer.getClass();
                             case 1:
@@ -135,7 +135,7 @@ public final /* synthetic */ class hrq implements Runnable {
                 hrxVar4.b(new Consumer() { // from class: hrm
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 ((hsb) obj).j(hspVar4);
                                 return;
@@ -153,7 +153,7 @@ public final /* synthetic */ class hrq implements Runnable {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 return consumer.getClass();
                             case 1:

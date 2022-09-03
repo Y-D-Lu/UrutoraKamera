@@ -98,7 +98,7 @@ public final class jlz implements jmd, jma, jmb, jmc {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         jlz jlzVar = this.a;
                         jlzVar.i.g(jluVar);
@@ -148,7 +148,7 @@ public final class jlz implements jmd, jma, jmb, jmc {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         jlz jlzVar = this.a;
                         jlzVar.i.g(jluVar);
@@ -184,7 +184,7 @@ public final class jlz implements jmd, jma, jmb, jmc {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             jlz jlzVar = this.a;
                             jlzVar.i.g(jluVar);

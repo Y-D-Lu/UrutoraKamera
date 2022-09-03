@@ -18,7 +18,7 @@ public final /* synthetic */ class fzk {
                 fznVar.f.c(new Runnable() { // from class: fzl
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r4) {
+                        switch (-1) {
                             case 0:
                                 final fzn fznVar2 = fznVar;
                                 ViewfinderCover viewfinderCover2 = viewfinderCover;
@@ -27,7 +27,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover2.o(jrlVar2, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar3 = fznVar2;
                                                 fznVar3.u((buf) fznVar3.c.mo37get(), jrlVar2);
@@ -52,7 +52,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover3.o(jrlVar3, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar32 = fznVar3;
                                                 fznVar32.u((buf) fznVar32.c.mo37get(), jrlVar3);
@@ -77,7 +77,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover4.o(jrlVar4, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar32 = fznVar4;
                                                 fznVar32.u((buf) fznVar32.c.mo37get(), jrlVar4);
@@ -101,7 +101,7 @@ public final /* synthetic */ class fzk {
                 fznVar.f.c(new Runnable() { // from class: fzl
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r4) {
+                        switch (-1) {
                             case 0:
                                 final fzn fznVar2 = fznVar;
                                 ViewfinderCover viewfinderCover2 = viewfinderCover;
@@ -110,7 +110,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover2.o(jrlVar2, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar32 = fznVar2;
                                                 fznVar32.u((buf) fznVar32.c.mo37get(), jrlVar2);
@@ -135,7 +135,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover3.o(jrlVar3, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar32 = fznVar3;
                                                 fznVar32.u((buf) fznVar32.c.mo37get(), jrlVar3);
@@ -160,7 +160,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover4.o(jrlVar4, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar32 = fznVar4;
                                                 fznVar32.u((buf) fznVar32.c.mo37get(), jrlVar4);
@@ -186,7 +186,7 @@ public final /* synthetic */ class fzk {
                 fznVar.f.c(new Runnable() { // from class: fzl
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r4) {
+                        switch (-1) {
                             case 0:
                                 final fzn fznVar2 = fznVar;
                                 ViewfinderCover viewfinderCover2 = viewfinderCover;
@@ -195,7 +195,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover2.o(jrlVar2, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar32 = fznVar2;
                                                 fznVar32.u((buf) fznVar32.c.mo37get(), jrlVar2);
@@ -220,7 +220,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover3.o(jrlVar3, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar32 = fznVar3;
                                                 fznVar32.u((buf) fznVar32.c.mo37get(), jrlVar3);
@@ -245,7 +245,7 @@ public final /* synthetic */ class fzk {
                                 viewfinderCover4.o(jrlVar4, new Runnable() { // from class: fzm
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r3) {
+                                        switch (-1) {
                                             case 0:
                                                 fzn fznVar32 = fznVar4;
                                                 fznVar32.u((buf) fznVar32.c.mo37get(), jrlVar4);

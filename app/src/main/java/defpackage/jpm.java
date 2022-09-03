@@ -71,7 +71,7 @@ public final class jpm implements jqn {
                     hofVar.l.i().c(hofVar.h.a(new lij() { // from class: hod
                         @Override // defpackage.lij
                         public final void fB(Object obj) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     hof hofVar2 = hofVar;
                                     jrl jrlVar = (jrl) obj;
@@ -98,7 +98,7 @@ public final class jpm implements jqn {
                     hofVar.l.i().c(hofVar.i.a(new lij() { // from class: hod
                         @Override // defpackage.lij
                         public final void fB(Object obj) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     hof hofVar2 = hofVar;
                                     jrl jrlVar = (jrl) obj;

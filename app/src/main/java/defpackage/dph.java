@@ -43,7 +43,7 @@ public final class dph implements jwu {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ojc ojcVar = this.a.a;
                         ojcVar.getClass();
@@ -66,7 +66,7 @@ public final class dph implements jwu {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ojc ojcVar = this.a.a;
                         ojcVar.getClass();

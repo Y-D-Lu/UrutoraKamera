@@ -31,7 +31,7 @@ public final /* synthetic */ class fwf implements Runnable {
                 fwgVar.f = lcoVar.a(new lij() { // from class: fwd
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 Boolean bool = (Boolean) obj;
                                 fwgVar.e();
@@ -59,7 +59,7 @@ public final /* synthetic */ class fwf implements Runnable {
                 fwgVar2.e = lcoVar2.a(new lij() { // from class: fwd
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 Boolean bool = (Boolean) obj;
                                 fwgVar2.e();

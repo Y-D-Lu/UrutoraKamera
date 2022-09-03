@@ -42,7 +42,7 @@ public final class ejf extends dcc {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.d = true;
                         return;
@@ -61,7 +61,7 @@ public final class ejf extends dcc {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.d = true;
                         return;

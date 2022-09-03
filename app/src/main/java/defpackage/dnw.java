@@ -215,7 +215,7 @@ public final class dnw implements doq {
                 findViewById.setOnClickListener(new View.OnClickListener() { // from class: dnt
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
-                        switch (r18) {
+                        switch (-1) {
                             case 0:
                                 dnw dnwVar2 = dnwVar;
                                 View view2 = findViewById;
@@ -296,7 +296,7 @@ public final class dnw implements doq {
                 findViewById2.setOnClickListener(new View.OnClickListener() { // from class: dnt
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
-                        switch (r18) {
+                        switch (-1) {
                             case 0:
                                 dnw dnwVar2 = dnwVar;
                                 View view2 = findViewById;
@@ -377,7 +377,7 @@ public final class dnw implements doq {
                 findViewById3.setOnClickListener(new View.OnClickListener() { // from class: dnt
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
-                        switch (r18) {
+                        switch (-1) {
                             case 0:
                                 dnw dnwVar2 = dnwVar;
                                 View view2 = findViewById;

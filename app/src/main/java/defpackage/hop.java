@@ -96,7 +96,7 @@ public final class hop implements hpb {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jrl jrlVar = (jrl) obj;
                         this.a.c();
@@ -130,7 +130,7 @@ public final class hop implements hpb {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jrl jrlVar = (jrl) obj;
                         this.a.c();
@@ -164,7 +164,7 @@ public final class hop implements hpb {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jrl jrlVar = (jrl) obj;
                         this.a.c();
@@ -198,7 +198,7 @@ public final class hop implements hpb {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jrl jrlVar = (jrl) obj;
                         this.a.c();
@@ -232,7 +232,7 @@ public final class hop implements hpb {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jrl jrlVar = (jrl) obj;
                         this.a.c();

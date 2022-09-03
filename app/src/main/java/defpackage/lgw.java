@@ -60,7 +60,7 @@ public final /* synthetic */ class lgw implements Callable {
                             ((lfy) lfmVar).C = ((lfy) lfmVar).k.a(new lij() { // from class: lfn
                                 @Override // defpackage.lij
                                 public final void fB(Object obj) {
-                                    switch (r2) {
+                                    switch (-1) {
                                         case 0:
                                             Long l = (Long) obj;
                                             lfyVar.h();
@@ -85,7 +85,7 @@ public final /* synthetic */ class lgw implements Callable {
                             ((lfy) lfmVar).D = ((lfy) lfmVar).u.a(new lij() { // from class: lfn
                                 @Override // defpackage.lij
                                 public final void fB(Object obj) {
-                                    switch (r2) {
+                                    switch (-1) {
                                         case 0:
                                             Long l = (Long) obj;
                                             lfyVar2.h();

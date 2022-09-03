@@ -77,7 +77,7 @@ public final class ilq extends iai implements fik, fhy, fgq {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ilq ilqVar = this.a;
                             ilqVar.d.ag(3);
@@ -98,7 +98,7 @@ public final class ilq extends iai implements fik, fhy, fgq {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ilq ilqVar = this.a;
                             ilqVar.d.ag(3);

@@ -718,7 +718,7 @@ public final class ipf {
             pihVar = pgb.h(phtVar, new oiu() { // from class: ioh
                 @Override // defpackage.oiu
                 public final Object a(Object obj2) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ioq ioqVar2 = ioqVar;
                             Void r6 = (Void) obj2;
@@ -749,7 +749,7 @@ public final class ipf {
             pihVar = pgb.h(inkVar.J, new oiu() { // from class: ioh
                 @Override // defpackage.oiu
                 public final Object a(Object obj2) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ioq ioqVar2 = ioqVar;
                             Void r6 = (Void) obj2;

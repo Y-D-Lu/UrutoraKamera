@@ -324,7 +324,7 @@ public final class cax implements pys {
                         D.d(new iho() { // from class: dan
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r6) {
+                                switch (-1) {
                                     case 0:
                                         hyc hycVar2 = hycVar;
                                         pyn pynVar = a2;
@@ -363,7 +363,7 @@ public final class cax implements pys {
                         D.d(new iho() { // from class: dan
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r6) {
+                                switch (-1) {
                                     case 0:
                                         hyc hycVar2 = hycVar;
                                         pyn pynVar = a3;
@@ -402,7 +402,7 @@ public final class cax implements pys {
                         D.d(new iho() { // from class: dam
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r4) {
+                                switch (-1) {
                                     case 0:
                                         hyc hycVar2 = hycVar;
                                         pyn pynVar = a4;
@@ -436,7 +436,7 @@ public final class cax implements pys {
                         D.d(new iho() { // from class: dam
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r4) {
+                                switch (-1) {
                                     case 0:
                                         hyc hycVar2 = hycVar;
                                         pyn pynVar = a5;
@@ -580,7 +580,7 @@ public final class cax implements pys {
                         a7.e(new Runnable() { // from class: eeb
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r2) {
+                                switch (-1) {
                                     case 0:
                                         lceVar2.fB(false);
                                         return;
@@ -593,7 +593,7 @@ public final class cax implements pys {
                         a7.d(new Runnable() { // from class: eeb
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r2) {
+                                switch (-1) {
                                     case 0:
                                         lceVar2.fB(false);
                                         return;

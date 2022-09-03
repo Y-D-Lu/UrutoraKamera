@@ -68,7 +68,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -320,7 +320,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -375,7 +375,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -627,7 +627,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -682,7 +682,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -904,7 +904,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -959,7 +959,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -1211,7 +1211,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -1266,7 +1266,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -1518,7 +1518,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -1573,7 +1573,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -1825,7 +1825,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -1880,7 +1880,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -2144,7 +2144,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -2199,7 +2199,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -2451,7 +2451,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -2507,7 +2507,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -2729,7 +2729,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -2784,7 +2784,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -3048,7 +3048,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -3104,7 +3104,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -3356,7 +3356,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -3411,7 +3411,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -3663,7 +3663,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -3719,7 +3719,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -3941,7 +3941,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -3996,7 +3996,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -4123,7 +4123,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -4152,7 +4152,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -4416,7 +4416,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -4471,7 +4471,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -4735,7 +4735,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -4791,7 +4791,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -5013,7 +5013,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -5068,7 +5068,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -5320,7 +5320,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -5376,7 +5376,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -5598,7 +5598,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -5653,7 +5653,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -5917,7 +5917,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -5972,7 +5972,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -6194,7 +6194,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -6249,7 +6249,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -6471,7 +6471,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -6526,7 +6526,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -6748,7 +6748,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -6803,7 +6803,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -6930,7 +6930,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -6959,7 +6959,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -7211,7 +7211,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -7267,7 +7267,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -7489,7 +7489,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -7544,7 +7544,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -7796,7 +7796,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -7852,7 +7852,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -8074,7 +8074,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -8130,7 +8130,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -8394,7 +8394,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -8449,7 +8449,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -8576,7 +8576,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -8605,7 +8605,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -8869,7 +8869,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -8924,7 +8924,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -9188,7 +9188,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -9243,7 +9243,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -9507,7 +9507,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -9562,7 +9562,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -9826,7 +9826,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -9881,7 +9881,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -10133,7 +10133,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -10188,7 +10188,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -10410,7 +10410,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -10465,7 +10465,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -10717,7 +10717,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -10775,7 +10775,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -11027,7 +11027,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -11082,7 +11082,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -11334,7 +11334,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -11391,7 +11391,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -11655,7 +11655,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -11710,7 +11710,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -11962,7 +11962,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -12018,7 +12018,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -12282,7 +12282,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -12337,7 +12337,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -12601,7 +12601,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -12657,7 +12657,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -12879,7 +12879,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -12934,7 +12934,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -13186,7 +13186,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -13241,7 +13241,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -13505,7 +13505,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -13560,7 +13560,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -13782,7 +13782,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -13839,7 +13839,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -14091,7 +14091,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -14147,7 +14147,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -14274,7 +14274,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -14303,7 +14303,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -14555,7 +14555,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -14610,7 +14610,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -14862,7 +14862,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -14917,7 +14917,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -15169,7 +15169,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -15224,7 +15224,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -15446,7 +15446,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -15503,7 +15503,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -15767,7 +15767,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -15822,7 +15822,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -16074,7 +16074,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -16129,7 +16129,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -16393,7 +16393,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -16448,7 +16448,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -16712,7 +16712,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -16767,7 +16767,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -17031,7 +17031,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -17086,7 +17086,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -17350,7 +17350,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -17405,7 +17405,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -17627,7 +17627,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -17683,7 +17683,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -17947,7 +17947,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -18002,7 +18002,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -18254,7 +18254,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -18309,7 +18309,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -18561,7 +18561,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -18617,7 +18617,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -18839,7 +18839,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -18894,7 +18894,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -19146,7 +19146,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -19202,7 +19202,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -19424,7 +19424,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -19479,7 +19479,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -19731,7 +19731,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -19786,7 +19786,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -20038,7 +20038,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -20093,7 +20093,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -20345,7 +20345,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -20401,7 +20401,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -20623,7 +20623,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -20678,7 +20678,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -20942,7 +20942,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -20997,7 +20997,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -21219,7 +21219,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -21274,7 +21274,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -21496,7 +21496,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -21552,7 +21552,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -21679,7 +21679,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -21711,7 +21711,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -21975,7 +21975,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -22031,7 +22031,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -22253,7 +22253,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -22309,7 +22309,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -22561,7 +22561,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -22616,7 +22616,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -22880,7 +22880,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -22935,7 +22935,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -23157,7 +23157,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -23212,7 +23212,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -23434,7 +23434,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -23489,7 +23489,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -23711,7 +23711,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -23766,7 +23766,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -24018,7 +24018,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -24073,7 +24073,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -24295,7 +24295,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -24352,7 +24352,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -24604,7 +24604,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -24659,7 +24659,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -24786,7 +24786,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -24815,7 +24815,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -24942,7 +24942,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -24971,7 +24971,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -25235,7 +25235,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -25290,7 +25290,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -25512,7 +25512,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -25567,7 +25567,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -25819,7 +25819,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -25874,7 +25874,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -26096,7 +26096,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -26152,7 +26152,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -26416,7 +26416,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -26471,7 +26471,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -26735,7 +26735,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -26790,7 +26790,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -27054,7 +27054,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -27109,7 +27109,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -27361,7 +27361,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -27416,7 +27416,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -27668,7 +27668,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -27724,7 +27724,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -27946,7 +27946,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -28001,7 +28001,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -28223,7 +28223,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -28278,7 +28278,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -28500,7 +28500,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -28555,7 +28555,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -28807,7 +28807,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -28862,7 +28862,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -29126,7 +29126,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -29181,7 +29181,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -29403,7 +29403,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -29458,7 +29458,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -29680,7 +29680,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -29735,7 +29735,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -29957,7 +29957,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -30012,7 +30012,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -30234,7 +30234,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -30291,7 +30291,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -30543,7 +30543,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -30598,7 +30598,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -30725,7 +30725,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -30754,7 +30754,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -30881,7 +30881,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -30910,7 +30910,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -31174,7 +31174,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -31229,7 +31229,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -31451,7 +31451,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -31506,7 +31506,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -31758,7 +31758,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -31814,7 +31814,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -32078,7 +32078,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -32133,7 +32133,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -32397,7 +32397,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -32452,7 +32452,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -32716,7 +32716,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -32771,7 +32771,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -33023,7 +33023,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -33079,7 +33079,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -33301,7 +33301,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -33357,7 +33357,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -33579,7 +33579,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -33634,7 +33634,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -33886,7 +33886,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -33941,7 +33941,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -34163,7 +34163,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -34218,7 +34218,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -34440,7 +34440,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -34495,7 +34495,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -34717,7 +34717,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -34772,7 +34772,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -34994,7 +34994,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -35050,7 +35050,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -35302,7 +35302,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -35357,7 +35357,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -35484,7 +35484,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -35513,7 +35513,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -35640,7 +35640,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -35669,7 +35669,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -35933,7 +35933,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -35988,7 +35988,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -36240,7 +36240,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -36295,7 +36295,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -36547,7 +36547,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -36602,7 +36602,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -36729,7 +36729,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -36759,7 +36759,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -36981,7 +36981,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -37038,7 +37038,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -37290,7 +37290,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -37345,7 +37345,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -37567,7 +37567,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -37622,7 +37622,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -37844,7 +37844,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -37899,7 +37899,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -38121,7 +38121,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -38176,7 +38176,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -38398,7 +38398,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -38454,7 +38454,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -38706,7 +38706,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -38761,7 +38761,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -38888,7 +38888,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -38917,7 +38917,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -39044,7 +39044,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -39073,7 +39073,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -39295,7 +39295,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -39350,7 +39350,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -39602,7 +39602,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -39658,7 +39658,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -39922,7 +39922,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -39977,7 +39977,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -40241,7 +40241,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -40296,7 +40296,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -40560,7 +40560,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -40615,7 +40615,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -40867,7 +40867,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -40923,7 +40923,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -41187,7 +41187,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -41242,7 +41242,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -41506,7 +41506,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -41561,7 +41561,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -41783,7 +41783,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -41838,7 +41838,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -42090,7 +42090,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -42146,7 +42146,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -42368,7 +42368,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -42423,7 +42423,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -42687,7 +42687,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -42742,7 +42742,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -42994,7 +42994,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -43050,7 +43050,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -43272,7 +43272,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -43327,7 +43327,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -43591,7 +43591,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -43646,7 +43646,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -43898,7 +43898,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -43954,7 +43954,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -44176,7 +44176,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -44231,7 +44231,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -44495,7 +44495,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -44550,7 +44550,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -44802,7 +44802,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -44858,7 +44858,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -45080,7 +45080,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -45135,7 +45135,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -45357,7 +45357,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -45412,7 +45412,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -45634,7 +45634,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -45690,7 +45690,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -45954,7 +45954,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -46009,7 +46009,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -46231,7 +46231,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -46287,7 +46287,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -46509,7 +46509,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -46566,7 +46566,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -46818,7 +46818,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -46873,7 +46873,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -47125,7 +47125,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -47180,7 +47180,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -47444,7 +47444,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -47499,7 +47499,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -47626,7 +47626,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -47655,7 +47655,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -47919,7 +47919,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -47974,7 +47974,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -48196,7 +48196,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -48252,7 +48252,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -48516,7 +48516,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -48571,7 +48571,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -48823,7 +48823,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -48878,7 +48878,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -49142,7 +49142,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -49197,7 +49197,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -49449,7 +49449,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -49505,7 +49505,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -49769,7 +49769,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -49824,7 +49824,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -50076,7 +50076,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -50132,7 +50132,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -50354,7 +50354,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -50409,7 +50409,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -50631,7 +50631,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -50686,7 +50686,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -50908,7 +50908,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -50963,7 +50963,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -51185,7 +51185,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -51240,7 +51240,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -51462,7 +51462,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -51518,7 +51518,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -51782,7 +51782,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -51837,7 +51837,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -51964,7 +51964,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -51993,7 +51993,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -52245,7 +52245,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -52300,7 +52300,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -52552,7 +52552,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -52607,7 +52607,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -52871,7 +52871,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -52926,7 +52926,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -53178,7 +53178,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -53233,7 +53233,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -53485,7 +53485,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -53541,7 +53541,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -53805,7 +53805,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -53860,7 +53860,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -53987,7 +53987,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -54016,7 +54016,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -54143,7 +54143,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -54173,7 +54173,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -54425,7 +54425,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -54480,7 +54480,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -54744,7 +54744,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -54799,7 +54799,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -55051,7 +55051,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -55107,7 +55107,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -55329,7 +55329,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:
@@ -55384,7 +55384,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jkz jkzVar = this.a;
                         jlq jlqVar = (jlq) obj;
@@ -55606,7 +55606,7 @@ public final class jkz {
 
             @Override // java.util.function.BiConsumer
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return biConsumer.getClass();
                     case 1:

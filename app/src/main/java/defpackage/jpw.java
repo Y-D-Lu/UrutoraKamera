@@ -89,7 +89,7 @@ public final class jpw implements phh {
                     marsSwitch.postDelayed(new Runnable() { // from class: jde
                         @Override // java.lang.Runnable
                         public final void run() {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     marsSwitch.b.setVisibility(0);
                                     return;
@@ -102,7 +102,7 @@ public final class jpw implements phh {
                     marsSwitch.b.postDelayed(new Runnable() { // from class: jde
                         @Override // java.lang.Runnable
                         public final void run() {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     marsSwitch.b.setVisibility(0);
                                     return;

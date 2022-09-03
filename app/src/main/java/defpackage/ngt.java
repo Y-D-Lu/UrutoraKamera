@@ -261,7 +261,7 @@ public final class ngt {
             pht b2 = g(neiVar, neg.b(neiVar.g, str), str2, z).b(new oiu() { // from class: ngr
                 @Override // defpackage.oiu
                 public final Object a(Object obj) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ngu nguVar2 = nguVar;
                             ngu nguVar3 = (ngu) obj;
@@ -280,7 +280,7 @@ public final class ngt {
         return g(neiVar, str, str2, z).b(new oiu() { // from class: ngr
             @Override // defpackage.oiu
             public final Object a(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ngu nguVar2 = nguVar;
                         ngu nguVar3 = (ngu) obj;

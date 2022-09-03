@@ -280,7 +280,7 @@ public final class ejl extends buf implements ehk {
         ehrVar.l.c(new lie() { // from class: ehm
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ehr ehrVar2 = ehrVar;
                         ehrVar2.e.b(ehrVar2.k);
@@ -295,7 +295,7 @@ public final class ejl extends buf implements ehk {
         ehrVar.l.c(new lie() { // from class: ehm
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ehr ehrVar2 = ehrVar;
                         ehrVar2.e.b(ehrVar2.k);

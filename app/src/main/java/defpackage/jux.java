@@ -56,7 +56,7 @@ public final class jux extends bu {
         jwdVar.d.setOnClickListener(new View.OnClickListener() { // from class: jvz
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jwd jwdVar2 = jwdVar;
                         jwdVar2.a.a();
@@ -76,7 +76,7 @@ public final class jux extends bu {
         jwdVar.h.setOnClickListener(new View.OnClickListener() { // from class: jvz
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jwd jwdVar2 = jwdVar;
                         jwdVar2.a.a();
@@ -95,7 +95,7 @@ public final class jux extends bu {
         jwdVar.g.setOnClickListener(new View.OnClickListener() { // from class: jvz
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jwd jwdVar2 = jwdVar;
                         jwdVar2.a.a();

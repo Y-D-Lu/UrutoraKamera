@@ -401,7 +401,7 @@ public final class dmn implements dmh, lie {
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             dmn dmnVar = this.a;
                             if (!((Boolean) ((lce) dmnVar.d).d).booleanValue()) {
@@ -430,7 +430,7 @@ public final class dmn implements dmh, lie {
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             dmn dmnVar = this.a;
                             if (!((Boolean) ((lce) dmnVar.d).d).booleanValue()) {

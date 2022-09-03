@@ -143,7 +143,7 @@ public final class dhv implements pys {
                 a2.b(new dtk() { // from class: dsn
                     @Override // defpackage.dtk
                     public final float a(long j) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 hkn c = hkoVar.c(j);
                                 hla hlaVar = null;
@@ -208,7 +208,7 @@ public final class dhv implements pys {
                 a4.b(new dtk() { // from class: dsn
                     @Override // defpackage.dtk
                     public final float a(long j) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 hkn c = hkoVar2.c(j);
                                 hla hlaVar = null;
@@ -243,7 +243,7 @@ public final class dhv implements pys {
                 a5.b(new dtk() { // from class: dsn
                     @Override // defpackage.dtk
                     public final float a(long j) {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 hkn c = hkoVar3.c(j);
                                 hla hlaVar = null;

@@ -49,7 +49,7 @@ public class fio extends ih {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhf
             @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
-                return function.getClass();
+                return function;
             }
 
             @Override // java.util.function.BiFunction
@@ -211,7 +211,7 @@ public class fio extends ih {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhd
             @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
-                return function.getClass();
+                return function;
             }
 
             @Override // java.util.function.BiFunction
@@ -237,7 +237,7 @@ public class fio extends ih {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhe
             @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
-                return function.getClass();
+                return function;
             }
 
             @Override // java.util.function.BiFunction

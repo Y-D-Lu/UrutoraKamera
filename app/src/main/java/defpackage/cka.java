@@ -129,7 +129,7 @@ public final class cka implements lie {
                 k.c(this.h.b.a(new lij() { // from class: cjy
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        switch (r3) {
+                        switch (-1) {
                             case 0:
                                 lda ldaVar15 = lceVar5;
                                 lda ldaVar16 = lceVar6;
@@ -158,7 +158,7 @@ public final class cka implements lie {
                 k.c(lceVar4.a(new lij() { // from class: cjy
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        switch (r3) {
+                        switch (-1) {
                             case 0:
                                 lda ldaVar15 = lceVar5;
                                 lda ldaVar16 = lceVar6;
@@ -186,7 +186,7 @@ public final class cka implements lie {
                 k.c(gsnVar2.a(new lij() { // from class: cjy
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        switch (r3) {
+                        switch (-1) {
                             case 0:
                                 lda ldaVar15 = lceVar5;
                                 lda ldaVar16 = lceVar6;

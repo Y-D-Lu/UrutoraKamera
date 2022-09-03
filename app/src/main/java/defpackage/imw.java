@@ -48,7 +48,7 @@ public final class imw implements imr {
 
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 imw imwVar = this.a;
                                 imwVar.b.run();
@@ -72,7 +72,7 @@ public final class imw implements imr {
 
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 imw imwVar = this.a;
                                 imwVar.b.run();

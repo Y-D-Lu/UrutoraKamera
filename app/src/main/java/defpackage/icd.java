@@ -50,47 +50,47 @@ public final /* synthetic */ class icd implements Function {
     public final /* synthetic */ Function andThen(Function function) {
         switch (this.v) {
             case 0:
-                return function.getClass();
+                return function;
             case 1:
-                return function.getClass();
+                return function;
             case 2:
-                return function.getClass();
+                return function;
             case 3:
-                return function.getClass();
+                return function;
             case 4:
-                return function.getClass();
+                return function;
             case 5:
-                return function.getClass();
+                return function;
             case 6:
-                return function.getClass();
+                return function;
             case 7:
-                return function.getClass();
+                return function;
             case 8:
-                return function.getClass();
+                return function;
             case 9:
-                return function.getClass();
+                return function;
             case 10:
-                return function.getClass();
+                return function;
             case 11:
-                return function.getClass();
+                return function;
             case 12:
-                return function.getClass();
+                return function;
             case 13:
-                return function.getClass();
+                return function;
             case 14:
-                return function.getClass();
+                return function;
             case 15:
-                return function.getClass();
+                return function;
             case 16:
-                return function.getClass();
+                return function;
             case 17:
-                return function.getClass();
+                return function;
             case 18:
-                return function.getClass();
+                return function;
             case 19:
-                return function.getClass();
+                return function;
             default:
-                return function.getClass();
+                return function;
         }
     }
 
@@ -202,47 +202,47 @@ public final /* synthetic */ class icd implements Function {
     public final /* synthetic */ Function compose(Function function) {
         switch (this.v) {
             case 0:
-                return function.getClass();
+                return function;
             case 1:
-                return function.getClass();
+                return function;
             case 2:
-                return function.getClass();
+                return function;
             case 3:
-                return function.getClass();
+                return function;
             case 4:
-                return function.getClass();
+                return function;
             case 5:
-                return function.getClass();
+                return function;
             case 6:
-                return function.getClass();
+                return function;
             case 7:
-                return function.getClass();
+                return function;
             case 8:
-                return function.getClass();
+                return function;
             case 9:
-                return function.getClass();
+                return function;
             case 10:
-                return function.getClass();
+                return function;
             case 11:
-                return function.getClass();
+                return function;
             case 12:
-                return function.getClass();
+                return function;
             case 13:
-                return function.getClass();
+                return function;
             case 14:
-                return function.getClass();
+                return function;
             case 15:
-                return function.getClass();
+                return function;
             case 16:
-                return function.getClass();
+                return function;
             case 17:
-                return function.getClass();
+                return function;
             case 18:
-                return function.getClass();
+                return function;
             case 19:
-                return function.getClass();
+                return function;
             default:
-                return function.getClass();
+                return function;
         }
     }
 }

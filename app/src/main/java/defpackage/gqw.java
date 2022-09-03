@@ -29,7 +29,7 @@ public final class gqw implements lda {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         gqw gqwVar = this.a;
                         lij lijVar2 = lijVar;
@@ -60,7 +60,7 @@ public final class gqw implements lda {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         gqw gqwVar = this.a;
                         lij lijVar2 = lijVar;

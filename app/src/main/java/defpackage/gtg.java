@@ -589,7 +589,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                         onDismissListener.setNegativeButton(optionsMenuContainer.getResources().getString(org.codeaurora.snapcam.R.string.infopane_learn_more), new DialogInterface.OnClickListener() { // from class: gua
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i) {
-                                switch (r2) {
+                                switch (-1) {
                                     case 0:
                                         OptionsMenuContainer optionsMenuContainer2 = optionsMenuContainer;
                                         optionsMenuContainer2.w();
@@ -609,7 +609,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                         onDismissListener.setPositiveButton(optionsMenuContainer.getResources().getString(org.codeaurora.snapcam.R.string.infopane_got_it), new DialogInterface.OnClickListener() { // from class: gua
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i) {
-                                switch (r2) {
+                                switch (-1) {
                                     case 0:
                                         OptionsMenuContainer optionsMenuContainer2 = optionsMenuContainer;
                                         optionsMenuContainer2.w();
@@ -699,7 +699,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
 
                 @Override // defpackage.gtp
                 public final void a(gtv gtvVar, boolean z) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ((fli) this.a.bb.c()).a();
                             return;
@@ -736,7 +736,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
 
                 @Override // defpackage.gtp
                 public final void a(gtv gtvVar, boolean z) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ((fli) this.a.bb.c()).a();
                             return;
@@ -775,7 +775,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
 
             @Override // defpackage.gtp
             public final void a(gtv gtvVar, boolean z) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ((fli) this.a.bb.c()).a();
                         return;

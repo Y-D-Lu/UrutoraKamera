@@ -144,7 +144,7 @@ public final class brs implements bro {
         oxh.g(new ouk() { // from class: brp
             @Override // defpackage.ouk
             public final Object a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return (Integer) lcoVar.fA();
                     default:
@@ -157,7 +157,7 @@ public final class brs implements bro {
         oxh.g(new ouk() { // from class: brp
             @Override // defpackage.ouk
             public final Object a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return (Integer) lcoVar2.fA();
                     default:
@@ -170,7 +170,7 @@ public final class brs implements bro {
         oxh.g(new ouk() { // from class: brp
             @Override // defpackage.ouk
             public final Object a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return (Integer) lcoVar3.fA();
                     default:
@@ -183,7 +183,7 @@ public final class brs implements bro {
         oxh.g(new ouk() { // from class: brp
             @Override // defpackage.ouk
             public final Object a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return (Integer) lcoVar4.fA();
                     default:

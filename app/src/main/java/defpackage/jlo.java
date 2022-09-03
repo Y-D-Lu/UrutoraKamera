@@ -36,35 +36,35 @@ public final /* synthetic */ class jlo implements Function {
     public final /* synthetic */ Function andThen(Function function) {
         switch (this.p) {
             case 0:
-                return function.getClass();
+                return function;
             case 1:
-                return function.getClass();
+                return function;
             case 2:
-                return function.getClass();
+                return function;
             case 3:
-                return function.getClass();
+                return function;
             case 4:
-                return function.getClass();
+                return function;
             case 5:
-                return function.getClass();
+                return function;
             case 6:
-                return function.getClass();
+                return function;
             case 7:
-                return function.getClass();
+                return function;
             case 8:
-                return function.getClass();
+                return function;
             case 9:
-                return function.getClass();
+                return function;
             case 10:
-                return function.getClass();
+                return function;
             case 11:
-                return function.getClass();
+                return function;
             case 12:
-                return function.getClass();
+                return function;
             case 13:
-                return function.getClass();
+                return function;
             default:
-                return function.getClass();
+                return function;
         }
     }
 
@@ -424,35 +424,35 @@ public final /* synthetic */ class jlo implements Function {
     public final /* synthetic */ Function compose(Function function) {
         switch (this.p) {
             case 0:
-                return function.getClass();
+                return function;
             case 1:
-                return function.getClass();
+                return function;
             case 2:
-                return function.getClass();
+                return function;
             case 3:
-                return function.getClass();
+                return function;
             case 4:
-                return function.getClass();
+                return function;
             case 5:
-                return function.getClass();
+                return function;
             case 6:
-                return function.getClass();
+                return function;
             case 7:
-                return function.getClass();
+                return function;
             case 8:
-                return function.getClass();
+                return function;
             case 9:
-                return function.getClass();
+                return function;
             case 10:
-                return function.getClass();
+                return function;
             case 11:
-                return function.getClass();
+                return function;
             case 12:
-                return function.getClass();
+                return function;
             case 13:
-                return function.getClass();
+                return function;
             default:
-                return function.getClass();
+                return function;
         }
     }
 }

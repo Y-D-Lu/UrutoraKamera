@@ -169,7 +169,7 @@ public final class bng implements pys {
                     brsVar.b.c(lcv.k(bsbVar.b().a(), new Runnable() { // from class: brq
                         @Override // java.lang.Runnable
                         public final void run() {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     brsVar.k();
                                     return;
@@ -182,7 +182,7 @@ public final class bng implements pys {
                     brsVar.b.c(lcv.k(bsbVar.b().b(), new Runnable() { // from class: brq
                         @Override // java.lang.Runnable
                         public final void run() {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     brsVar.k();
                                     return;

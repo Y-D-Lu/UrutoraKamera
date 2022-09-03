@@ -391,7 +391,7 @@ public final class eyg extends buf implements jad {
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         eyg eygVar = this.a;
                         eygVar.i.b(eygVar.R);
@@ -424,7 +424,7 @@ public final class eyg extends buf implements jad {
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         eyg eygVar = this.a;
                         eygVar.i.b(eygVar.R);
@@ -457,7 +457,7 @@ public final class eyg extends buf implements jad {
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         eyg eygVar = this.a;
                         eygVar.i.b(eygVar.R);

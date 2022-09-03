@@ -159,7 +159,7 @@ public final class mhu implements mhs {
 
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     return this.a.a.a().toByteArray();
                                 default:
@@ -177,7 +177,7 @@ public final class mhu implements mhs {
 
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     return this.a.a.a().toByteArray();
                                 default:

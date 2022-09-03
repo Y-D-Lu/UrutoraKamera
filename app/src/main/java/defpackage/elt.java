@@ -295,7 +295,7 @@ public final class elt implements pys {
                         obj = ope.H(new iho() { // from class: ekz
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r4) {
+                                switch (-1) {
                                     case 0:
                                         hycVar.a((iat) a2.get(), a3.a());
                                         return;
@@ -310,7 +310,7 @@ public final class elt implements pys {
                         obj = ope.H(new iho() { // from class: ekz
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r4) {
+                                switch (-1) {
                                     case 0:
                                         hycVar.a((iat) a.get(), a3.a());
                                         return;
@@ -482,7 +482,7 @@ public final class elt implements pys {
                 ((lap) this.c.mo37get()).c(new lie() { // from class: gic
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 gib gibVar2 = gibVar;
                                 synchronized (gibVar2.c) {
@@ -510,7 +510,7 @@ public final class elt implements pys {
                 ((lap) this.d.mo37get()).c(new lie() { // from class: gic
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 gib gibVar2 = gibVar;
                                 synchronized (gibVar2.c) {

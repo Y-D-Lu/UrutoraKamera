@@ -517,7 +517,7 @@ public final class ife implements iet {
             iefVar.b = new View.OnClickListener() { // from class: ied
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ((icw) ibyVar.a.c.mo37get()).k();
                             return;
@@ -530,7 +530,7 @@ public final class ife implements iet {
             iefVar.c = new View.OnClickListener() { // from class: ied
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             ((icw) ibyVar.a.c.mo37get()).k();
                             return;

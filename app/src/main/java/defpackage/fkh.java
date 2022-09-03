@@ -59,7 +59,7 @@ public final class fkh implements iat {
             @Override // java.lang.Runnable
             public final void run() {
                 iay iayVar2;
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fkh fkhVar = this.a;
                         fkhVar.j = true;
@@ -91,7 +91,7 @@ public final class fkh implements iat {
             @Override // java.lang.Runnable
             public final void run() {
                 iay iayVar2;
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fkh fkhVar = this.a;
                         fkhVar.j = true;
@@ -123,7 +123,7 @@ public final class fkh implements iat {
             @Override // java.lang.Runnable
             public final void run() {
                 iay iayVar2;
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fkh fkhVar = this.a;
                         fkhVar.j = true;

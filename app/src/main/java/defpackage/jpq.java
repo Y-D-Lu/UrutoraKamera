@@ -63,7 +63,7 @@ public final class jpq implements jqn, fik, fig {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jpq jpqVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {
@@ -130,7 +130,7 @@ public final class jpq implements jqn, fik, fig {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jpq jpqVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {
@@ -197,7 +197,7 @@ public final class jpq implements jqn, fik, fig {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jpq jpqVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {
@@ -264,7 +264,7 @@ public final class jpq implements jqn, fik, fig {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jpq jpqVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {

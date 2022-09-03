@@ -184,7 +184,7 @@ public final class dfr {
         return d(z ? MediaStore.Video.Media.EXTERNAL_CONTENT_URI : MediaStore.Images.Media.EXTERNAL_CONTENT_URI, d, instant.minusMillis(1L).toEpochMilli(), instant2.minusSeconds(1L).getEpochSecond(), Integer.MAX_VALUE, new Function() { // from class: dfq
             @Override // java.util.function.Function
             public final /* synthetic */ Function andThen(Function function) {
-                return function.getClass();
+                return function;
             }
 
             @Override // java.util.function.Function
@@ -197,7 +197,7 @@ public final class dfr {
 
             @Override // java.util.function.Function
             public final /* synthetic */ Function compose(Function function) {
-                return function.getClass();
+                return function;
             }
         });
     }

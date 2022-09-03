@@ -166,7 +166,7 @@ public final class byp implements bys {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         byp bypVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {
@@ -239,7 +239,7 @@ public final class byp implements bys {
             public final void fB(Object obj) {
                 boolean z = true;
                 boolean z2 = false;
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         byp bypVar = this.a;
                         hti htiVar = (hti) obj;
@@ -276,7 +276,7 @@ public final class byp implements bys {
             public final void fB(Object obj) {
                 boolean z = true;
                 boolean z2 = false;
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         byp bypVar = this.a;
                         hti htiVar = (hti) obj;
@@ -323,7 +323,7 @@ public final class byp implements bys {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         byp bypVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {
@@ -397,7 +397,7 @@ public final class byp implements bys {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         byp bypVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {
@@ -468,7 +468,7 @@ public final class byp implements bys {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         byp bypVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {
@@ -539,7 +539,7 @@ public final class byp implements bys {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         byp bypVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {
@@ -610,7 +610,7 @@ public final class byp implements bys {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         byp bypVar = this.a;
                         if (!((Boolean) obj).booleanValue()) {

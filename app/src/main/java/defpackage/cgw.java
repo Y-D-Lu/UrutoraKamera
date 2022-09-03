@@ -45,47 +45,47 @@ public final /* synthetic */ class cgw implements Function {
     public final /* synthetic */ Function andThen(Function function) {
         switch (this.u) {
             case 0:
-                return function.getClass();
+                return function;
             case 1:
-                return function.getClass();
+                return function;
             case 2:
-                return function.getClass();
+                return function;
             case 3:
-                return function.getClass();
+                return function;
             case 4:
-                return function.getClass();
+                return function;
             case 5:
-                return function.getClass();
+                return function;
             case 6:
-                return function.getClass();
+                return function;
             case 7:
-                return function.getClass();
+                return function;
             case 8:
-                return function.getClass();
+                return function;
             case 9:
-                return function.getClass();
+                return function;
             case 10:
-                return function.getClass();
+                return function;
             case 11:
-                return function.getClass();
+                return function;
             case 12:
-                return function.getClass();
+                return function;
             case 13:
-                return function.getClass();
+                return function;
             case 14:
-                return function.getClass();
+                return function;
             case 15:
-                return function.getClass();
+                return function;
             case 16:
-                return function.getClass();
+                return function;
             case 17:
-                return function.getClass();
+                return function;
             case 18:
-                return function.getClass();
+                return function;
             case 19:
-                return function.getClass();
+                return function;
             default:
-                return function.getClass();
+                return function;
         }
     }
 
@@ -192,7 +192,7 @@ public final /* synthetic */ class cgw implements Function {
                 return gtk.a(d2, R.string.speech_enhance_label, R.string.speech_enhance_content_desc, oom.j((List) (gtoVar.g().stream()).map(new Function() { // from class: gso
                     @Override // java.util.function.Function
                     public final /* synthetic */ Function andThen(Function function) {
-                        return function.getClass();
+                        return function;
                     }
 
                     @Override // java.util.function.Function
@@ -204,7 +204,7 @@ public final /* synthetic */ class cgw implements Function {
 
                     @Override // java.util.function.Function
                     public final /* synthetic */ Function compose(Function function) {
-                        return function.getClass();
+                        return function;
                     }
                 }).collect(Collectors.toList())));
             case 16:
@@ -227,47 +227,47 @@ public final /* synthetic */ class cgw implements Function {
     public final /* synthetic */ Function compose(Function function) {
         switch (this.u) {
             case 0:
-                return function.getClass();
+                return function;
             case 1:
-                return function.getClass();
+                return function;
             case 2:
-                return function.getClass();
+                return function;
             case 3:
-                return function.getClass();
+                return function;
             case 4:
-                return function.getClass();
+                return function;
             case 5:
-                return function.getClass();
+                return function;
             case 6:
-                return function.getClass();
+                return function;
             case 7:
-                return function.getClass();
+                return function;
             case 8:
-                return function.getClass();
+                return function;
             case 9:
-                return function.getClass();
+                return function;
             case 10:
-                return function.getClass();
+                return function;
             case 11:
-                return function.getClass();
+                return function;
             case 12:
-                return function.getClass();
+                return function;
             case 13:
-                return function.getClass();
+                return function;
             case 14:
-                return function.getClass();
+                return function;
             case 15:
-                return function.getClass();
+                return function;
             case 16:
-                return function.getClass();
+                return function;
             case 17:
-                return function.getClass();
+                return function;
             case 18:
-                return function.getClass();
+                return function;
             case 19:
-                return function.getClass();
+                return function;
             default:
-                return function.getClass();
+                return function;
         }
     }
 }

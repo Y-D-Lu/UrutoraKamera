@@ -49,7 +49,7 @@ public class iai implements iat {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             iai iaiVar = this.a;
                             Runnable runnable2 = runnable;
@@ -92,7 +92,7 @@ public class iai implements iat {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             iai iaiVar = this.a;
                             Runnable runnable22 = runnable2;
@@ -135,7 +135,7 @@ public class iai implements iat {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             iai iaiVar = this.a;
                             Runnable runnable22 = runnable3;
@@ -178,7 +178,7 @@ public class iai implements iat {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             iai iaiVar = this.a;
                             Runnable runnable22 = runnable4;

@@ -221,7 +221,7 @@ public final class gko implements gmt {
                 public final pht a(Object obj) {
                     pht a4;
                     pht phtVar;
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             gko gkoVar = this.a;
                             hin hinVar3 = (hin) obj;
@@ -271,7 +271,7 @@ public final class gko implements gmt {
                 public final pht a(Object obj) {
                     pht a4;
                     pht phtVar;
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             gko gkoVar = this.a;
                             hin hinVar3 = (hin) obj;

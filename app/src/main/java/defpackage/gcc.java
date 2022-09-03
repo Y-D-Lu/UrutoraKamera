@@ -182,7 +182,7 @@ public final class gcc implements pys {
                 ((lap) this.b.mo37get()).c(new lie() { // from class: gid
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 bP.shutdownNow();
                                 return;
@@ -195,7 +195,7 @@ public final class gcc implements pys {
                 ((lap) this.a.mo37get()).c(new lie() { // from class: gid
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 bP.shutdownNow();
                                 return;

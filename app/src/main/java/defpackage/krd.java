@@ -30,7 +30,7 @@ public final class krd {
             bmp.c(a2, status);
             a2.writeLong(a);
             krfVar.z(3, a2);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.w("brella.ExampleStoreSvc", "onIteratorNextFailure AIDL call failed, closing iterator", e);
             this.c.b();
         }
@@ -50,7 +50,7 @@ public final class krd {
             bmp.e(a2, kohVar);
             a2.writeLong(a);
             krfVar.z(2, a2);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.w("brella.ExampleStoreSvc", "onIteratorNextSuccess AIDL call failed, closing iterator", e);
             this.c.b();
         }

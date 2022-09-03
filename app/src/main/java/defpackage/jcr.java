@@ -34,7 +34,7 @@ public final /* synthetic */ class jcr implements Runnable {
                     @Override // com.google.lens.sdk.LensApi.LensAvailabilityCallback
                     public final void onAvailabilityStatusFetched(int i) {
                         boolean z = false;
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 jcw jcwVar3 = jcwVar2;
                                 System.currentTimeMillis();
@@ -71,7 +71,7 @@ public final /* synthetic */ class jcr implements Runnable {
                     @Override // com.google.lens.sdk.LensApi.LensAvailabilityCallback
                     public final void onAvailabilityStatusFetched(int i) {
                         boolean z = false;
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 jcw jcwVar3 = jcwVar2;
                                 System.currentTimeMillis();

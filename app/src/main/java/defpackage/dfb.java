@@ -109,17 +109,17 @@ public final /* synthetic */ class dfb implements Runnable {
                     (dfrVar.d(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, dfr.c, g2.toEpochMilli(), instant.getEpochSecond(), 5, new Function() { // from class: dfp
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
-                                    return function.getClass();
+                                    return function;
                                 default:
-                                    return function.getClass();
+                                    return function;
                             }
                         }
 
                         @Override // java.util.function.Function
                         public final Object apply(Object obj) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     return dfrVar.b((Cursor) obj).a();
                                 default:
@@ -129,17 +129,17 @@ public final /* synthetic */ class dfb implements Runnable {
 
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
-                                    return function.getClass();
+                                    return function;
                                 default:
-                                    return function.getClass();
+                                    return function;
                             }
                         }
                     }).stream()).map(new Function() { // from class: dfw
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
-                            return function.getClass();
+                            return function;
                         }
 
                         @Override // java.util.function.Function
@@ -150,7 +150,7 @@ public final /* synthetic */ class dfb implements Runnable {
 
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
-                            return function.getClass();
+                            return function;
                         }
                     }).collect(Collectors.toList());
                     final dga dgaVar = dffVar3.f;
@@ -158,17 +158,17 @@ public final /* synthetic */ class dfb implements Runnable {
                     e.h((List) (dfrVar2.d(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, dfr.c, g2.toEpochMilli(), instant.getEpochSecond(), 5, new Function() { // from class: dfp
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
-                                    return function.getClass();
+                                    return function;
                                 default:
-                                    return function.getClass();
+                                    return function;
                             }
                         }
 
                         @Override // java.util.function.Function
                         public final Object apply(Object obj) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     return dfrVar2.b((Cursor) obj).a();
                                 default:
@@ -178,17 +178,17 @@ public final /* synthetic */ class dfb implements Runnable {
 
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
-                                    return function.getClass();
+                                    return function;
                                 default:
-                                    return function.getClass();
+                                    return function;
                             }
                         }
                     }).stream()).map(new Function() { // from class: dfz
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
-                            return function.getClass();
+                            return function;
                         }
 
                         @Override // java.util.function.Function
@@ -199,7 +199,7 @@ public final /* synthetic */ class dfb implements Runnable {
 
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
-                            return function.getClass();
+                            return function;
                         }
                     }).collect(Collectors.toList()));
                     oom f3 = e.f();

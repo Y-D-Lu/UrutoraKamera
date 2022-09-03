@@ -258,7 +258,7 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
 
                             @Override // java.lang.Runnable
                             public final void run() {
-                                switch (r3) {
+                                switch (-1) {
                                     case 0:
                                         this.a.m(eddVar, oih.a);
                                         return;
@@ -281,7 +281,7 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
 
                         @Override // java.lang.Runnable
                         public final void run() {
-                            switch (r3) {
+                            switch (-1) {
                                 case 0:
                                     this.a.m(eddVar, oih.a);
                                     return;
@@ -317,7 +317,7 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
 
                         @Override // java.lang.Runnable
                         public final void run() {
-                            switch (r3) {
+                            switch (-1) {
                                 case 0:
                                     this.a.m(eddVar, oih.a);
                                     return;

@@ -52,7 +52,7 @@ public final class fky implements iat {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fky fkyVar = this.a;
                         fkyVar.f = true;
@@ -73,7 +73,7 @@ public final class fky implements iat {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fky fkyVar = this.a;
                         fkyVar.f = true;
@@ -95,7 +95,7 @@ public final class fky implements iat {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fky fkyVar = this.a;
                         if (((String) obj).equals("on")) {
@@ -125,7 +125,7 @@ public final class fky implements iat {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fky fkyVar = this.a;
                         if (((String) obj).equals("on")) {

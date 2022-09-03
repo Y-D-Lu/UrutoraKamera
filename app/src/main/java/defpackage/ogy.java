@@ -24,7 +24,7 @@ public final class ogy implements ohe {
             this.b.ifPresent(new Consumer() { // from class: ogx
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             byte[] bArr2 = bArr;
                             try {
@@ -42,7 +42,7 @@ public final class ogy implements ohe {
 
                 @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             return consumer.getClass();
                         default:
@@ -54,7 +54,7 @@ public final class ogy implements ohe {
             this.a.ifPresent(new Consumer() { // from class: ogx
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             byte[] bArr2 = bArr;
                             try {
@@ -72,7 +72,7 @@ public final class ogy implements ohe {
 
                 @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             return consumer.getClass();
                         default:

@@ -56,7 +56,7 @@ public final class ets implements bvv {
                 return (Set) (((pyw) qkgVar2).mo37get().stream()).map(new Function() { // from class: etp
                     @Override // java.util.function.Function
                     public final /* synthetic */ Function andThen(Function function) {
-                        return function.getClass();
+                        return function;
                     }
 
                     @Override // java.util.function.Function
@@ -66,7 +66,7 @@ public final class ets implements bvv {
 
                     @Override // java.util.function.Function
                     public final /* synthetic */ Function compose(Function function) {
-                        return function.getClass();
+                        return function;
                     }
                 }).collect(Collectors.toSet());
             }

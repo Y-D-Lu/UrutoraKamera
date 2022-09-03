@@ -918,7 +918,7 @@ public final class eur implements btt, fik, fhy, fib, fii, fig, fie, fij, fgl, f
                 @Override // defpackage.lht
                 public final void a(Object obj) {
                     boolean z = true;
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             final eur eurVar = this.a;
                             final btp btpVar = (btp) obj;
@@ -1033,7 +1033,7 @@ public final class eur implements btt, fik, fhy, fib, fii, fig, fie, fij, fgl, f
                 @Override // defpackage.lht
                 public final void a(Object obj) {
                     boolean z = true;
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             final eur eurVar = this.a;
                             final btp btpVar = (btp) obj;

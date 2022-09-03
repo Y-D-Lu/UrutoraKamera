@@ -270,7 +270,7 @@ public final class jlu implements AutoCloseable, elv {
                 public final void run() {
                     PopupWindow popupWindow2;
                     View view2;
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             jmn jmnVar2 = jmnVar;
                             WeakReference weakReference2 = weakReference;
@@ -303,7 +303,7 @@ public final class jlu implements AutoCloseable, elv {
                 public final void run() {
                     PopupWindow popupWindow2;
                     View view2;
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             jmn jmnVar2 = jmnVar;
                             WeakReference weakReference2 = weakReference;

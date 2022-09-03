@@ -69,7 +69,7 @@ public final class idk {
         return oom.j((ArrayList) e.f().stream().filter(new idg(new ConcurrentHashMap(), icd.d, 0)).map(new Function() { // from class: idf
             @Override // java.util.function.Function
             public final /* synthetic */ Function andThen(Function function) {
-                return function.getClass();
+                return function;
             }
 
             @Override // java.util.function.Function
@@ -80,7 +80,7 @@ public final class idk {
 
             @Override // java.util.function.Function
             public final /* synthetic */ Function compose(Function function) {
-                return function.getClass();
+                return function;
             }
         }).sorted(Comparator.comparing(icd.e)).map(icd.f).collect(Collectors.toCollection(idh.a)));
     }

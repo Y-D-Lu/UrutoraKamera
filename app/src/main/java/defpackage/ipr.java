@@ -52,7 +52,7 @@ public final class ipr {
                     iprVar.k = iprVar.l.c(new DialogInterface.OnClickListener() { // from class: ipk
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     iprVar.c.g().d();
                                     dialogInterface.dismiss();
@@ -68,7 +68,7 @@ public final class ipr {
                     iprVar.k = iprVar.l.d(new DialogInterface.OnClickListener() { // from class: ipk
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     iprVar.c.g().d();
                                     dialogInterface.dismiss();

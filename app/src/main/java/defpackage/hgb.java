@@ -48,7 +48,7 @@ public final class hgb extends iam {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.c = true;
                         return;
@@ -70,7 +70,7 @@ public final class hgb extends iam {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.c = true;
                         return;
@@ -92,7 +92,7 @@ public final class hgb extends iam {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.c = true;
                         return;

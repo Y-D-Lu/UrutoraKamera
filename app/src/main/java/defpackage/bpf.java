@@ -176,7 +176,7 @@ public final class bpf implements jxj, lie {
 
                 @Override // defpackage.lht
                 public final void a(Object obj) {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             bpf bpfVar = this.a;
                             Void r3 = (Void) obj;
@@ -211,7 +211,7 @@ public final class bpf implements jxj, lie {
 
                 @Override // defpackage.lht
                 public final void a(Object obj) {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             bpf bpfVar = this.a;
                             Void r3 = (Void) obj;

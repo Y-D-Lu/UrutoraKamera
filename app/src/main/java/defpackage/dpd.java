@@ -266,7 +266,7 @@ public final class dpd implements pys {
                 b3.a.add(new drj(new Runnable() { // from class: dsh
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 dsf dsfVar2 = dsfVar;
                                 synchronized (dsfVar2.b) {
@@ -291,7 +291,7 @@ public final class dpd implements pys {
                 b3.a.add(new drk(new Runnable() { // from class: dsh
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 dsf dsfVar2 = dsfVar;
                                 synchronized (dsfVar2.b) {

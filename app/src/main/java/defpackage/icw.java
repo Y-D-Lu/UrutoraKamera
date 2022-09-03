@@ -132,7 +132,7 @@ public class icw implements icl, fik {
         (c.stream()).forEachOrdered(new Consumer() { // from class: icb
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
-                switch (r4) {
+                switch (-1) {
                     case 0:
                         icf icfVar2 = icfVar;
                         ArrayList arrayList3 = arrayList;
@@ -160,7 +160,7 @@ public class icw implements icl, fik {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                switch (r4) {
+                switch (-1) {
                     case 0:
                         return consumer.getClass();
                     default:
@@ -171,7 +171,7 @@ public class icw implements icl, fik {
         (c2.stream()).forEachOrdered(new Consumer() { // from class: icb
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
-                switch (r4) {
+                switch (-1) {
                     case 0:
                         icf icfVar2 = icfVar;
                         ArrayList arrayList3 = arrayList;
@@ -199,7 +199,7 @@ public class icw implements icl, fik {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                switch (r4) {
+                switch (-1) {
                     case 0:
                         return consumer.getClass();
                     default:

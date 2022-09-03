@@ -37,7 +37,7 @@ public final class bqz implements bqs, fik, fgt, fih, fgu {
 
         @Override // android.content.DialogInterface.OnClickListener
         public final void onClick(DialogInterface dialogInterface, int i) {
-            switch (r2) {
+            switch (-1) {
                 case 0:
                     bqz bqzVar = this.a;
                     Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
@@ -65,7 +65,7 @@ public final class bqz implements bqs, fik, fgt, fih, fgu {
 
         @Override // android.content.DialogInterface.OnClickListener
         public final void onClick(DialogInterface dialogInterface, int i) {
-            switch (r2) {
+            switch (-1) {
                 case 0:
                     bqz bqzVar = this.a;
                     Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");

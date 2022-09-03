@@ -43,7 +43,7 @@ public final class djn {
 
             @Override // defpackage.agn
             public final boolean a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         djn djnVar = this.a;
                         int k = djnVar.c.k();
@@ -76,7 +76,7 @@ public final class djn {
 
             @Override // defpackage.agn
             public final boolean a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         djn djnVar = this.a;
                         int k = djnVar.c.k();

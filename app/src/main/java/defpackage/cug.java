@@ -250,7 +250,7 @@ public final class cug implements cuj {
                 jlzVar.g(new Runnable() { // from class: ctz
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 cugVar.d();
                                 return;
@@ -263,7 +263,7 @@ public final class cug implements cuj {
                 jlzVar.f(new Runnable() { // from class: ctz
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 cugVar.d();
                                 return;

@@ -141,7 +141,7 @@ public final class esp implements pys {
                 return new iho() { // from class: ewg
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r3) {
+                        switch (-1) {
                             case 0:
                                 ghwVar.a(ghuVar);
                                 return;
@@ -157,7 +157,7 @@ public final class esp implements pys {
                 return new iho() { // from class: ewg
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r3) {
+                        switch (-1) {
                             case 0:
                                 ghwVar2.a(ghuVar2);
                                 return;

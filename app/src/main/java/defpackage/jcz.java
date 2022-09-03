@@ -26,7 +26,7 @@ public final class jcz {
         frameLayout.findViewById(R.id.learn_more_button).setOnClickListener(new View.OnClickListener() { // from class: jcx
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         context.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://support.google.com/photos/answer/10694388")));
                         return;
@@ -58,7 +58,7 @@ public final class jcz {
         frameLayout3.findViewById(R.id.learn_more_button).setOnClickListener(new View.OnClickListener() { // from class: jcx
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         context.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://support.google.com/photos/answer/10694388")));
                         return;

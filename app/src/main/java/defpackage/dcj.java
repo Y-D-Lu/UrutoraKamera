@@ -48,7 +48,7 @@ public final class dcj {
 
                 @Override // defpackage.dcq
                 public final boolean a() {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             dcj dcjVar = this.a;
                             return dcjVar.e.g() && Math.abs(((hkm) dcjVar.e.c()).a) < dcj.a && Math.abs(((hkm) dcjVar.e.c()).b) < dcj.b;
@@ -69,7 +69,7 @@ public final class dcj {
 
                 @Override // defpackage.dcq
                 public final boolean a() {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             dcj dcjVar = this.a;
                             return dcjVar.e.g() && Math.abs(((hkm) dcjVar.e.c()).a) < dcj.a && Math.abs(((hkm) dcjVar.e.c()).b) < dcj.b;

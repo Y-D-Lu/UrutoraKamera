@@ -52,7 +52,7 @@ public final class dbv extends iam {
         a2.g = new Runnable() { // from class: dbt
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dbxVar.b();
                         return;
@@ -72,7 +72,7 @@ public final class dbv extends iam {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dbv dbvVar = this.a;
                         if (!dbvVar.h.g() || !dbvVar.e) {
@@ -104,7 +104,7 @@ public final class dbv extends iam {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dbv dbvVar = this.a;
                         if (!dbvVar.h.g() || !dbvVar.e) {
@@ -132,7 +132,7 @@ public final class dbv extends iam {
         a2.i = new Runnable() { // from class: dbt
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         dbxVar2.b();
                         return;

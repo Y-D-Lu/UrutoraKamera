@@ -46,7 +46,7 @@ public final class bph implements bnf {
         lapVar3.c(lcoVar2.a(new lij() { // from class: bpg
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         bnlVar.j(!((Boolean) obj).booleanValue());
                         return;

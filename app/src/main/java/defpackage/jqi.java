@@ -231,7 +231,7 @@ public final class jqi implements jqn {
         gtgVar.bj.c(gtgVar.G.a(new lij() { // from class: gsu
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         String str = (String) obj;
                         gtgVar.w();
@@ -263,7 +263,7 @@ public final class jqi implements jqn {
         gtgVar.bj.c(gtgVar.p.a(new lij() { // from class: gsu
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         String str = (String) obj;
                         gtgVar.w();
@@ -287,7 +287,7 @@ public final class jqi implements jqn {
         gtgVar.bj.c(gtgVar.q.a(new lij() { // from class: gsu
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         String str = (String) obj;
                         gtgVar.w();
@@ -370,7 +370,7 @@ public final class jqi implements jqn {
                     int i;
                     String str;
                     boolean z = true;
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             fox foxVar = (fox) this.a.b.c();
                             switch (hls.d(((Integer) obj).intValue()) - 1) {
@@ -474,7 +474,7 @@ public final class jqi implements jqn {
                     int i;
                     String str;
                     boolean z = true;
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             fox foxVar = (fox) this.a.b.c();
                             switch (hls.d(((Integer) obj).intValue()) - 1) {

@@ -164,7 +164,7 @@ public final class ctl implements ctm, lie, fik, fig, fie {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ctl ctlVar = this.a;
                         if (!((fxl) obj).c || !ctlVar.e.f.containsKey(ctlVar.a.fA())) {
@@ -216,7 +216,7 @@ public final class ctl implements ctm, lie, fik, fig, fie {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ctl ctlVar = this.a;
                         if (!((fxl) obj).c || !ctlVar.e.f.containsKey(ctlVar.a.fA())) {
@@ -268,7 +268,7 @@ public final class ctl implements ctm, lie, fik, fig, fie {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ctl ctlVar = this.a;
                         if (!((fxl) obj).c || !ctlVar.e.f.containsKey(ctlVar.a.fA())) {

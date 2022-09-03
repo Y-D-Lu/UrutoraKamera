@@ -147,7 +147,7 @@ public final class cbh implements pys {
                                 a.d(new Runnable() { // from class: csp
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r2) {
+                                        switch (-1) {
                                             case 0:
                                                 csqVar.e.fB(false);
                                                 return;
@@ -160,7 +160,7 @@ public final class cbh implements pys {
                                 a.e(new Runnable() { // from class: csp
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        switch (r2) {
+                                        switch (-1) {
                                             case 0:
                                                 csqVar.e.fB(false);
                                                 return;

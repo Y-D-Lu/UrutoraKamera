@@ -102,7 +102,7 @@ public final class ioa extends buf {
         iqjVar.D.setOnTouchListener(new View.OnTouchListener() { // from class: iqb
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         iqjVar.e();
                         return true;
@@ -120,7 +120,7 @@ public final class ioa extends buf {
         iqjVar.O.setOnTouchListener(new View.OnTouchListener() { // from class: iqb
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         iqjVar.e();
                         return true;
@@ -158,7 +158,7 @@ public final class ioa extends buf {
         iqjVar.l.c(new lie() { // from class: iqd
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         iqj iqjVar2 = iqjVar;
                         iqjVar2.w.b(iqjVar2.x);
@@ -173,7 +173,7 @@ public final class ioa extends buf {
         iqjVar.l.c(new lie() { // from class: iqd
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         iqj iqjVar2 = iqjVar;
                         iqjVar2.w.b(iqjVar2.x);

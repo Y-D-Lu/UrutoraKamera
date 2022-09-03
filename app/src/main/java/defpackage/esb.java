@@ -75,7 +75,7 @@ public final class esb extends iam {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.e = false;
                         ovd ovdVar = ovl.a;
@@ -107,7 +107,7 @@ public final class esb extends iam {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.e = false;
                         ovd ovdVar = ovl.a;
@@ -139,7 +139,7 @@ public final class esb extends iam {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.e = false;
                         ovd ovdVar = ovl.a;

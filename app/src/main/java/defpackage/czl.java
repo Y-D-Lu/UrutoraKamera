@@ -166,7 +166,7 @@ public final class czl implements iat, hzh, cyv {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         czl czlVar = this.a;
                         cyk cykVar2 = cykVar;
@@ -294,7 +294,7 @@ public final class czl implements iat, hzh, cyv {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         czl czlVar = this.a;
                         cyk cykVar2 = cykVar;
@@ -422,7 +422,7 @@ public final class czl implements iat, hzh, cyv {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         czl czlVar = this.a;
                         cyk cykVar2 = cykVar;

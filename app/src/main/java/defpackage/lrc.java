@@ -46,7 +46,7 @@ public final class lrc {
             @Override // java.lang.Runnable
             public final void run() {
                 boolean z2 = true;
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         lrc lrcVar = this.a;
                         synchronized (lrc.a) {
@@ -88,7 +88,7 @@ public final class lrc {
             @Override // java.lang.Runnable
             public final void run() {
                 boolean z2 = true;
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         lrc lrcVar = this.a;
                         synchronized (lrc.a) {
@@ -134,7 +134,7 @@ public final class lrc {
             @Override // java.lang.Runnable
             public final void run() {
                 boolean z2 = true;
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         lrc lrcVar = this.a;
                         synchronized (lrc.a) {

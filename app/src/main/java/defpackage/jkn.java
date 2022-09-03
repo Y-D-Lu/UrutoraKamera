@@ -19,11 +19,11 @@ public final /* synthetic */ class jkn implements BiFunction {
     public final /* synthetic */ BiFunction andThen(Function function) {
         switch (this.d) {
             case 0:
-                return function.getClass();
+                return function;
             case 1:
-                return function.getClass();
+                return function;
             default:
-                return function.getClass();
+                return function;
         }
     }
 

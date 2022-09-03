@@ -130,7 +130,7 @@ public final class jqz implements jqn {
         lij lijVar = new lij() { // from class: kbb
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         Float f = (Float) obj;
                         kbiVar.h();
@@ -146,7 +146,7 @@ public final class jqz implements jqn {
         lij lijVar2 = new lij() { // from class: kbb
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         Float f = (Float) obj;
                         kbiVar.h();

@@ -59,7 +59,7 @@ public final class grn implements pys {
             a2.e(new Runnable() { // from class: grl
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             consumer.accept(Integer.valueOf(intValue2));
                             return;
@@ -72,7 +72,7 @@ public final class grn implements pys {
             a2.d(new Runnable() { // from class: grl
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             consumer.accept(Integer.valueOf(intValue3));
                             return;

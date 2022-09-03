@@ -240,7 +240,7 @@ public final class hfs implements gjt {
                                     hft hftVar3 = new hft() { // from class: hfk
                                         @Override // defpackage.hft
                                         public final void a(long j6, msq msqVar, int i, String str, String str2) {
-                                            switch (r2) {
+                                            switch (-1) {
                                                 case 0:
                                                     ega egaVar3 = egaVar2;
                                                     ouj oujVar2 = hfw.a;
@@ -281,7 +281,7 @@ public final class hfs implements gjt {
                                     hft hftVar4 = new hft() { // from class: hfk
                                         @Override // defpackage.hft
                                         public final void a(long j6, msq msqVar, int i, String str, String str2) {
-                                            switch (r2) {
+                                            switch (-1) {
                                                 case 0:
                                                     ega egaVar3 = egaVar2;
                                                     ouj oujVar2 = hfw.a;

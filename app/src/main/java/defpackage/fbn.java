@@ -796,7 +796,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                     jibVar.ac(new Function() { // from class: fbp
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function andThen(Function function) {
-                            return function.getClass();
+                            return function;
                         }
 
                         @Override // java.util.function.Function
@@ -807,7 +807,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
 
                         @Override // java.util.function.Function
                         public final /* synthetic */ Function compose(Function function) {
-                            return function.getClass();
+                            return function;
                         }
                     });
                 }

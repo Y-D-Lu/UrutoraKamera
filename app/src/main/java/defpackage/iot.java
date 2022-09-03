@@ -100,7 +100,7 @@ public final /* synthetic */ class iot implements Runnable {
                 a.e(new Runnable() { // from class: ipo
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 ipr iprVar2 = iprVar;
                                 defpackage.d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);
@@ -126,7 +126,7 @@ public final /* synthetic */ class iot implements Runnable {
                 a.d(new Runnable() { // from class: ipo
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 ipr iprVar2 = iprVar;
                                 defpackage.d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);
@@ -159,7 +159,7 @@ public final /* synthetic */ class iot implements Runnable {
                 a2.d(new Runnable() { // from class: ipo
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 ipr iprVar2 = iprVar;
                                 defpackage.d.v(ipr.a.c(), "Device temperature is too high to do recording.", (char) 3106);

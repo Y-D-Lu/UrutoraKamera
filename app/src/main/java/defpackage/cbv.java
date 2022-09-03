@@ -60,7 +60,7 @@ public final class cbv implements kqg {
                             oxh.g(new ouk() { // from class: ccc
                                 @Override // defpackage.ouk
                                 public final Object a() {
-                                    switch (r2) {
+                                    switch (-1) {
                                         case 0:
                                             return Arrays.toString(cclVar.a());
                                         default:
@@ -71,7 +71,7 @@ public final class cbv implements kqg {
                             oxh.g(new ouk() { // from class: ccc
                                 @Override // defpackage.ouk
                                 public final Object a() {
-                                    switch (r2) {
+                                    switch (-1) {
                                         case 0:
                                             return Arrays.toString(cclVar.a());
                                         default:

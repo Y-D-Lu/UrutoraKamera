@@ -46,7 +46,7 @@ public final class cuf implements ViewTreeObserver.OnGlobalLayoutListener {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.b.d();
                         return;
@@ -65,7 +65,7 @@ public final class cuf implements ViewTreeObserver.OnGlobalLayoutListener {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.b.d();
                         return;

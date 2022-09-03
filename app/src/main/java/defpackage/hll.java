@@ -14,7 +14,7 @@ public final class hll implements imr {
         a.e(new Runnable() { // from class: hlk
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         lda ldaVar3 = ldaVar;
                         lda ldaVar4 = ldaVar2;
@@ -37,7 +37,7 @@ public final class hll implements imr {
         a.d(new Runnable() { // from class: hlk
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         lda ldaVar3 = ldaVar;
                         lda ldaVar4 = ldaVar2;

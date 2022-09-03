@@ -494,7 +494,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
             preferenceScreen3.findPreference("pref_free_up_space").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() { // from class: fbv
                 @Override // android.preference.Preference.OnPreferenceClickListener
                 public final boolean onPreferenceClick(Preference preference) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             Activity activity3 = activity2;
                             int i3 = fcb.c;
@@ -608,7 +608,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                 jhuVar.a(new Function() { // from class: fcd
                     @Override // java.util.function.Function
                     public final /* synthetic */ Function andThen(Function function) {
-                        return function.getClass();
+                        return function;
                     }
 
                     @Override // java.util.function.Function
@@ -619,7 +619,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
 
                     @Override // java.util.function.Function
                     public final /* synthetic */ Function compose(Function function) {
-                        return function.getClass();
+                        return function;
                     }
                 });
             }

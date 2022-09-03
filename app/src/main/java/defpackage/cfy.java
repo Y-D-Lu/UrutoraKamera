@@ -409,7 +409,7 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
             Iterable<peo> iterable = (Iterable) (ckwVar.n.stream()).map(new Function() { // from class: cvb
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
-                    return function.getClass();
+                    return function;
                 }
 
                 @Override // java.util.function.Function
@@ -446,7 +446,7 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
 
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function compose(Function function) {
-                    return function.getClass();
+                    return function;
                 }
             }).collect(Collectors.toList());
             if (m.c) {

@@ -164,7 +164,7 @@ public final class ezg extends buf implements ezk {
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ezg ezgVar = this.a;
                         ezgVar.o.b(ezgVar.z);
@@ -187,7 +187,7 @@ public final class ezg extends buf implements ezk {
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ezg ezgVar = this.a;
                         ezgVar.o.b(ezgVar.z);

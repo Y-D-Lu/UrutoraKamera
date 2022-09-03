@@ -106,7 +106,7 @@ public final class jzf implements jzr, lie {
 
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             jzf jzfVar = this.a;
                             jrl jrlVar = (jrl) obj;
@@ -152,7 +152,7 @@ public final class jzf implements jzr, lie {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jzf jzfVar = this.a;
                         jrl jrlVar = (jrl) obj;
@@ -197,7 +197,7 @@ public final class jzf implements jzr, lie {
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         jzf jzfVar = this.a;
                         jrl jrlVar = (jrl) obj;
@@ -309,7 +309,7 @@ public final class jzf implements jzr, lie {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             this.a.d.setVisibility(8);
                             return;
@@ -329,7 +329,7 @@ public final class jzf implements jzr, lie {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             this.a.d.setVisibility(8);
                             return;

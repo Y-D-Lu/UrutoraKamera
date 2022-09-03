@@ -149,7 +149,7 @@ public final class jsu extends iai implements jsv, jtc, hsb {
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             this.a.b.f();
                             return;
@@ -175,7 +175,7 @@ public final class jsu extends iai implements jsv, jtc, hsb {
 
                     @Override // java.lang.Runnable
                     public final void run() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 this.a.b.f();
                                 return;

@@ -172,7 +172,7 @@ public final class hvz implements pys {
                 return new ijn() { // from class: ijb
                     @Override // defpackage.ijn
                     public final Object a() {
-                        switch (r4) {
+                        switch (-1) {
                             case 0:
                                 Instrumentation instrumentation2 = instrumentation;
                                 OneCameraTiming oneCameraTiming = new OneCameraTiming(mcuVar, ljfVar);
@@ -198,7 +198,7 @@ public final class hvz implements pys {
                 return new ijn() { // from class: ijb
                     @Override // defpackage.ijn
                     public final Object a() {
-                        switch (r4) {
+                        switch (-1) {
                             case 0:
                                 Instrumentation instrumentation22 = instrumentation2;
                                 OneCameraTiming oneCameraTiming = new OneCameraTiming(mcuVar2, ljfVar2);
@@ -224,7 +224,7 @@ public final class hvz implements pys {
                 return new ijn() { // from class: ijb
                     @Override // defpackage.ijn
                     public final Object a() {
-                        switch (r4) {
+                        switch (-1) {
                             case 0:
                                 Instrumentation instrumentation22 = instrumentation3;
                                 OneCameraTiming oneCameraTiming = new OneCameraTiming(mcuVar3, ljfVar3);

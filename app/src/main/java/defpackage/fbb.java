@@ -271,7 +271,7 @@ public final class fbb extends buf implements jad {
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fbb fbbVar = this.a;
                         fbbVar.k.b(fbbVar.U);
@@ -299,7 +299,7 @@ public final class fbb extends buf implements jad {
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         fbb fbbVar = this.a;
                         fbbVar.k.b(fbbVar.U);

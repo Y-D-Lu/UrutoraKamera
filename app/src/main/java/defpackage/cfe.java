@@ -529,7 +529,7 @@ public final class cfe {
                     mo37get2.d.c(lcv.j(mo37get2.f, bxe.m).a(new lij() { // from class: cne
                         @Override // defpackage.lij
                         public final void fB(Object obj) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     cng cngVar = mo37get2;
                                     String str = (String) obj;
@@ -562,7 +562,7 @@ public final class cfe {
                     mo37get2.d.c(mo37get2.g.a(new lij() { // from class: cne
                         @Override // defpackage.lij
                         public final void fB(Object obj) {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     cng cngVar = mo37get2;
                                     String str = (String) obj;

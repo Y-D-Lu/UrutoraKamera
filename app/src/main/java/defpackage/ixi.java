@@ -49,7 +49,7 @@ public class ixi extends ihr {
 
             @Override // defpackage.iib
             public final lie a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         final ixi ixiVar = this.a;
                         ((dnj) ixiVar.b.g.mo37get()).a();
@@ -82,7 +82,7 @@ public class ixi extends ihr {
 
             @Override // defpackage.iib
             public final lie a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         final ixi ixiVar = this.a;
                         ((dnj) ixiVar.b.g.mo37get()).a();
@@ -128,7 +128,7 @@ public class ixi extends ihr {
                     return new lie() { // from class: kba
                         @Override // defpackage.lie, java.lang.AutoCloseable
                         public final void close() {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     kbi kbiVar2 = kbiVar;
                                     kbiVar2.v(true);
@@ -144,7 +144,7 @@ public class ixi extends ihr {
                 return new lie() { // from class: kba
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        switch (r2) {
+                        switch (-1) {
                             case 0:
                                 kbi kbiVar2 = kbiVar;
                                 kbiVar2.v(true);
@@ -160,7 +160,7 @@ public class ixi extends ihr {
         }, new iib() { // from class: ixh
             @Override // defpackage.iib
             public final lie a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return jgqVar.h();
                     default:
@@ -170,7 +170,7 @@ public class ixi extends ihr {
         }, new iwz(jlbVar, 0), new iwy(bottomBarController, 0), new iwy(bottomBarController2, 2), new iib() { // from class: ixh
             @Override // defpackage.iib
             public final lie a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return jgqVar2.h();
                     default:
@@ -186,7 +186,7 @@ public class ixi extends ihr {
 
             @Override // defpackage.iib
             public final lie a() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         final ixi ixiVar = this.a;
                         ((dnj) ixiVar.b.g.mo37get()).a();

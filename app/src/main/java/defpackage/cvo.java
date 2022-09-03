@@ -171,7 +171,7 @@ public final class cvo implements cwj, lco {
             mip.ca(plk.R((Iterable) (this.c.stream()).map(new Function() { // from class: cvl
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
-                    return function.getClass();
+                    return function;
                 }
 
                 @Override // java.util.function.Function
@@ -181,7 +181,7 @@ public final class cvo implements cwj, lco {
 
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function compose(Function function) {
-                    return function.getClass();
+                    return function;
                 }
             }).collect(Collectors.toList())), new lht() { // from class: cvj
                 @Override // defpackage.lht

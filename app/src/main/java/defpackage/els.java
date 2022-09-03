@@ -133,7 +133,7 @@ public final class els implements elw, kaq, jel, jrt, fik, fib, fig, fie {
 
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        switch (r3) {
+                        switch (-1) {
                             case 0:
                                 this.a.g(elvVar);
                                 return;
@@ -168,7 +168,7 @@ public final class els implements elw, kaq, jel, jrt, fik, fib, fig, fie {
 
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        switch (r3) {
+                        switch (-1) {
                             case 0:
                                 this.a.g(elvVar);
                                 return;

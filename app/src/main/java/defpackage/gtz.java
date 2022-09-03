@@ -103,7 +103,7 @@ public final class gtz {
 
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         Animator animator = (Animator) obj;
                         this.a.a.setTranslationY(DisplayHelper.DENSITY);
@@ -117,7 +117,7 @@ public final class gtz {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return consumer.getClass();
                     default:
@@ -131,7 +131,7 @@ public final class gtz {
             animatorSet.playTogether((Collection) (this.f.stream()).map(new Function() { // from class: gty
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function andThen(Function function) {
-                    return function.getClass();
+                    return function;
                 }
 
                 @Override // java.util.function.Function
@@ -148,7 +148,7 @@ public final class gtz {
 
                 @Override // java.util.function.Function
                 public final /* synthetic */ Function compose(Function function) {
-                    return function.getClass();
+                    return function;
                 }
             }).collect(Collectors.toList()));
             oohVar.g(animatorSet);
@@ -165,7 +165,7 @@ public final class gtz {
 
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             Animator animator = (Animator) obj;
                             this.a.a.setTranslationY(DisplayHelper.DENSITY);
@@ -179,7 +179,7 @@ public final class gtz {
 
                 @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             return consumer.getClass();
                         default:

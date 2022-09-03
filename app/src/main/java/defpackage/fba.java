@@ -42,7 +42,7 @@ public final class fba implements phh {
 
             @Override // defpackage.lij
             public final void fB(Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.a.v(((Boolean) obj2).booleanValue());
                         return;
@@ -89,7 +89,7 @@ public final class fba implements phh {
 
             @Override // defpackage.lij
             public final void fB(Object obj2) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.a.v(((Boolean) obj2).booleanValue());
                         return;

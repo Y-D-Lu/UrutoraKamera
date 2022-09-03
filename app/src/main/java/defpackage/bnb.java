@@ -125,7 +125,7 @@ public final class bnb implements bnw, lij {
 
                         @Override // defpackage.jsi
                         public final void a() {
-                            switch (r2) {
+                            switch (-1) {
                                 case 0:
                                     this.a.b = null;
                                     return;
@@ -213,7 +213,7 @@ public final class bnb implements bnw, lij {
 
                             @Override // defpackage.jsi
                             public final void a() {
-                                switch (r2) {
+                                switch (-1) {
                                     case 0:
                                         this.a.b = null;
                                         return;

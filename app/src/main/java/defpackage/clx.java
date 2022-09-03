@@ -145,14 +145,14 @@ public final class clx implements clg {
 
                         @Override // defpackage.lmu
                         public final void a(lrr lrrVar) {
-                            switch (r3) {
+                            switch (-1) {
                                 case 0:
                                     final clx clxVar = this.a;
                                     final lnx lnxVar5 = lnxVar4;
                                     mip.bj(lrrVar, new lnn() { // from class: cls
                                         @Override // defpackage.lnn
                                         public final void a(lmr lmrVar) {
-                                            switch (r3) {
+                                            switch (-1) {
                                                 case 0:
                                                     clx clxVar2 = clxVar;
                                                     lnx lnxVar6 = lnxVar5;
@@ -187,7 +187,7 @@ public final class clx implements clg {
                                     mip.bj(lrrVar, new lnn() { // from class: cls
                                         @Override // defpackage.lnn
                                         public final void a(lmr lmrVar) {
-                                            switch (r3) {
+                                            switch (-1) {
                                                 case 0:
                                                     clx clxVar22 = clxVar2;
                                                     lnx lnxVar62 = lnxVar6;
@@ -232,14 +232,14 @@ public final class clx implements clg {
 
                         @Override // defpackage.lmu
                         public final void a(lrr lrrVar) {
-                            switch (r3) {
+                            switch (-1) {
                                 case 0:
                                     final clx clxVar = this.a;
                                     final lnx lnxVar5 = lnxVar4;
                                     mip.bj(lrrVar, new lnn() { // from class: cls
                                         @Override // defpackage.lnn
                                         public final void a(lmr lmrVar) {
-                                            switch (r3) {
+                                            switch (-1) {
                                                 case 0:
                                                     clx clxVar22 = clxVar;
                                                     lnx lnxVar62 = lnxVar5;
@@ -274,7 +274,7 @@ public final class clx implements clg {
                                     mip.bj(lrrVar, new lnn() { // from class: cls
                                         @Override // defpackage.lnn
                                         public final void a(lmr lmrVar) {
-                                            switch (r3) {
+                                            switch (-1) {
                                                 case 0:
                                                     clx clxVar22 = clxVar2;
                                                     lnx lnxVar62 = lnxVar6;

@@ -41,7 +41,7 @@ public final class itp implements itw {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.k(false);
                         return;
@@ -60,7 +60,7 @@ public final class itp implements itw {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.k(false);
                         return;

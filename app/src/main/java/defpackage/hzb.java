@@ -102,7 +102,7 @@ public final class hzb implements iap {
             smartsChipView.l.c(this.h.b.a(new lij() { // from class: hxx
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             SmartsChipView smartsChipView2 = smartsChipView;
                             Boolean bool = (Boolean) obj;
@@ -129,7 +129,7 @@ public final class hzb implements iap {
             smartsChipView.l.c(this.h.c.a(new lij() { // from class: hxx
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             SmartsChipView smartsChipView2 = smartsChipView;
                             Boolean bool = (Boolean) obj;

@@ -465,7 +465,7 @@ public final class kbi implements kas, lie {
 
                 @Override // defpackage.ojf
                 public final boolean a(Object obj) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             return ((Float) obj).floatValue() < ((Float) this.a.g.fA()).floatValue();
                         default:
@@ -485,7 +485,7 @@ public final class kbi implements kas, lie {
 
                 @Override // defpackage.ojf
                 public final boolean a(Object obj) {
-                    switch (r2) {
+                    switch (-1) {
                         case 0:
                             return ((Float) obj).floatValue() < ((Float) this.a.g.fA()).floatValue();
                         default:

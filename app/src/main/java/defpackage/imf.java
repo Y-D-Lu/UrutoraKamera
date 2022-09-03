@@ -36,7 +36,7 @@ public final class imf {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.a.fB(false);
                         return;
@@ -55,7 +55,7 @@ public final class imf {
 
             @Override // java.lang.Runnable
             public final void run() {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         this.a.a.fB(false);
                         return;

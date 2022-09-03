@@ -66,7 +66,7 @@ public final class lgy implements lfj {
 
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
-                    switch (r5) {
+                    switch (-1) {
                         case 0:
                             lgy lgyVar = this.a;
                             boolean z2 = z;
@@ -135,7 +135,7 @@ public final class lgy implements lfj {
 
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
-                    switch (r5) {
+                    switch (-1) {
                         case 0:
                             lgy lgyVar = this.a;
                             boolean z2 = z;
