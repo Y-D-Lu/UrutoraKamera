@@ -165,7 +165,7 @@ public final class bng implements pys {
                     return new brt();
                 }
                 final brs brsVar = new brs(mo37get2, buiVar.b);
-                for (bsb bsbVar : brsVar.a) {
+                for (bsb bsbVar : (Set<bsb>) brsVar.a) {
                     brsVar.b.c(lcv.k(bsbVar.b().a(), new Runnable() { // from class: brq
                         @Override // java.lang.Runnable
                         public final void run() {
@@ -211,12 +211,12 @@ public final class bng implements pys {
                 return !booleanValue ? bqi.c : new iho() { // from class: cay
                     @Override // java.lang.Runnable
                     public final void run() {
-                        final cas casVar2 = cas.this;
+                        final cas casVar2 = casVar;
                         hyc hycVar2 = hycVar;
                         casVar2.e.execute(new Runnable() { // from class: caq
                             @Override // java.lang.Runnable
                             public final void run() {
-                                cas casVar3 = cas.this;
+                                cas casVar3 = casVar;
                                 casVar3.k.e(casVar3);
                             }
                         });
@@ -236,7 +236,7 @@ public final class bng implements pys {
                 return !booleanValue2 ? bqi.d : new iho() { // from class: caz
                     @Override // java.lang.Runnable
                     public final void run() {
-                        cea ceaVar2 = cea.this;
+                        cea ceaVar2 = ceaVar;
                         hyc hycVar3 = hycVar2;
                         ceaVar2.a = new ModeSuggestionClient();
                         ceaVar2.b = new cdj();

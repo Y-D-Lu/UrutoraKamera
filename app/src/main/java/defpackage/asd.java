@@ -12,10 +12,10 @@ final class asd {
         if (asl.a) {
             b = null;
             a = null;
-            return;
+        } else {
+            b = new asd(false, null);
+            a = new asd(true, null);
         }
-        b = new asd(false, null);
-        a = new asd(true, null);
     }
 
     public asd(boolean z, Throwable th) {

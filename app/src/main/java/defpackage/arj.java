@@ -3,6 +3,7 @@ package defpackage;
 import androidx.work.impl.WorkDatabase;
 
 import java.util.LinkedList;
+import java.util.Set;
 
 /* renamed from: arj  reason: default package */
 /* loaded from: classes.dex */
@@ -40,7 +41,7 @@ public abstract class arj implements Runnable {
                 annVar.d();
             }
         }
-        for (ano anoVar : aofVar.e) {
+        for (ano anoVar : (Set<ano>) aofVar.e) {
             anoVar.b(str);
         }
     }

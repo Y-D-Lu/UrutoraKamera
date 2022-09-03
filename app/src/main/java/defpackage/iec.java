@@ -123,7 +123,7 @@ public final class iec implements idt {
         c.removeIf(new Predicate() { // from class: ieb
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -133,7 +133,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -150,7 +150,7 @@ public final class iec implements idt {
         Stream map = (this.d.keySet().stream()).filter(new Predicate() { // from class: idw
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -160,7 +160,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -174,7 +174,7 @@ public final class iec implements idt {
         map.filter(new Predicate() { // from class: iea
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -184,7 +184,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -250,7 +250,7 @@ public final class iec implements idt {
         return map.anyMatch(new Predicate() { // from class: idv
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -260,7 +260,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -278,7 +278,7 @@ public final class iec implements idt {
         return map.anyMatch(new Predicate() { // from class: idx
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -288,7 +288,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -304,7 +304,7 @@ public final class iec implements idt {
         return (ArrayList) (n(str).stream()).filter(new Predicate() { // from class: idu
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate and(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate
@@ -314,7 +314,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final /* synthetic */ Predicate or(Predicate predicate) {
-                return predicate.getClass();
+                return predicate;
             }
 
             @Override // java.util.function.Predicate

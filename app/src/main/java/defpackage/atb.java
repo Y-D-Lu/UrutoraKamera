@@ -22,7 +22,7 @@ public final class atb {
                 zArr[c] = z;
                 c = (char) (c + 1);
             } else {
-                return;
+                break;
             }
         }
     }

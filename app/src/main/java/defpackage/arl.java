@@ -21,6 +21,7 @@ import androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver;
 import java.io.File;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: arl  reason: default package */
@@ -57,8 +58,8 @@ public final class arl implements Runnable {
     public final void run() {
         aof aofVar;
         List<ApplicationExitInfo> historicalProcessExitReasons;
-        File a2;
-        File file;
+        File a2 = null;
+        File file = null;
         try {
             if (TextUtils.isEmpty(null)) {
                 kus.l().h(new Throwable[0]);
@@ -85,7 +86,7 @@ public final class arl implements Runnable {
                         String str = strArr[i];
                         hashMap.put(new File(a2.getPath() + str), new File(file.getPath() + str));
                     }
-                    for (File file2 : hashMap.keySet()) {
+                    for (File file2 : (Set<File>) hashMap.keySet()) {
                         File file3 = (File) hashMap.get(file2);
                         if (file2.exists() && file3 != null) {
                             if (file3.exists()) {
@@ -136,18 +137,18 @@ public final class arl implements Runnable {
                                 }
                                 historicalProcessExitReasons = ((ActivityManager) this.c.getSystemService("activity")).getHistoricalProcessExitReasons(null, 0, 0);
                             } catch (IllegalArgumentException e2) {
-                                e = e2;
+                                e2.printStackTrace();
                                 kus.l();
-                                kus.k(a, "Ignoring exception", e);
+                                kus.k(a, "Ignoring exception", e2);
                                 kus.l().h(new Throwable[0]);
                                 this.d.g();
                                 aofVar = this.d;
                                 aofVar.f();
                                 return;
                             } catch (SecurityException e3) {
-                                e = e3;
+                                e3.printStackTrace();
                                 kus.l();
-                                kus.k(a, "Ignoring exception", e);
+                                kus.k(a, "Ignoring exception", e3);
                                 kus.l().h(new Throwable[0]);
                                 this.d.g();
                                 aofVar = this.d;

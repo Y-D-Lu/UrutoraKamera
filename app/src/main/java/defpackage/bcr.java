@@ -71,10 +71,10 @@ public final class bcr implements bbh, bbg {
                     this.f = new bbd(Collections.singletonList(this.g.a), this.a, this);
                     this.g.c.d();
                 } catch (Throwable th2) {
-                    th = th2;
+                    th2.printStackTrace();
                     z = false;
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
             }
         }
         if (this.f == null || !this.f.c()) {

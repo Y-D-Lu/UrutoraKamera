@@ -32,7 +32,7 @@ public final class avo extends awr {
     }
 
     @Override // defpackage.awr
-    protected final Handler a() {
+    public final Handler a() {
         return this.d;
     }
 

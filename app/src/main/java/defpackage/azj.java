@@ -29,20 +29,21 @@ public final class azj implements azo {
             ImageHeaderParser$ImageType c = azgVar.c(bhtVar);
             try {
                 bhtVar.close();
-            } catch (IOException e) {
+            } catch (Exception e) {
             }
             this.a.a();
             return c;
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
             if (bhtVar != null) {
                 try {
                     bhtVar.close();
-                } catch (IOException e2) {
+                } catch (Exception e2) {
+                    e2.printStackTrace();
                 }
             }
             this.a.a();
-            throw th;
         }
+        return null;
     }
 }

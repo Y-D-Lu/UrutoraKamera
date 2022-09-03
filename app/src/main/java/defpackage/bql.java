@@ -38,41 +38,41 @@ public final /* synthetic */ class bql implements Predicate {
     public final /* synthetic */ Predicate and(Predicate predicate) {
         switch (this.s) {
             case 0:
-                return predicate.getClass();
+                return predicate;
             case 1:
-                return predicate.getClass();
+                return predicate;
             case 2:
-                return predicate.getClass();
+                return predicate;
             case 3:
-                return predicate.getClass();
+                return predicate;
             case 4:
-                return predicate.getClass();
+                return predicate;
             case 5:
-                return predicate.getClass();
+                return predicate;
             case 6:
-                return predicate.getClass();
+                return predicate;
             case 7:
-                return predicate.getClass();
+                return predicate;
             case 8:
-                return predicate.getClass();
+                return predicate;
             case 9:
-                return predicate.getClass();
+                return predicate;
             case 10:
-                return predicate.getClass();
+                return predicate;
             case 11:
-                return predicate.getClass();
+                return predicate;
             case 12:
-                return predicate.getClass();
+                return predicate;
             case 13:
-                return predicate.getClass();
+                return predicate;
             case 14:
-                return predicate.getClass();
+                return predicate;
             case 15:
-                return predicate.getClass();
+                return predicate;
             case 16:
-                return predicate.getClass();
+                return predicate;
             default:
-                return predicate.getClass();
+                return predicate;
         }
     }
 
@@ -122,41 +122,41 @@ public final /* synthetic */ class bql implements Predicate {
     public final /* synthetic */ Predicate or(Predicate predicate) {
         switch (this.s) {
             case 0:
-                return predicate.getClass();
+                return predicate;
             case 1:
-                return predicate.getClass();
+                return predicate;
             case 2:
-                return predicate.getClass();
+                return predicate;
             case 3:
-                return predicate.getClass();
+                return predicate;
             case 4:
-                return predicate.getClass();
+                return predicate;
             case 5:
-                return predicate.getClass();
+                return predicate;
             case 6:
-                return predicate.getClass();
+                return predicate;
             case 7:
-                return predicate.getClass();
+                return predicate;
             case 8:
-                return predicate.getClass();
+                return predicate;
             case 9:
-                return predicate.getClass();
+                return predicate;
             case 10:
-                return predicate.getClass();
+                return predicate;
             case 11:
-                return predicate.getClass();
+                return predicate;
             case 12:
-                return predicate.getClass();
+                return predicate;
             case 13:
-                return predicate.getClass();
+                return predicate;
             case 14:
-                return predicate.getClass();
+                return predicate;
             case 15:
-                return predicate.getClass();
+                return predicate;
             case 16:
-                return predicate.getClass();
+                return predicate;
             default:
-                return predicate.getClass();
+                return predicate;
         }
     }
 

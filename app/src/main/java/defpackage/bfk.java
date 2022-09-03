@@ -3,6 +3,7 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: bfk  reason: default package */
@@ -37,7 +38,7 @@ public final class bfk implements bfg {
 
     @Override // defpackage.bfg
     public final boolean b(Object obj) {
-        for (bfg bfgVar : this.a) {
+        for (bfg bfgVar : (Set<bfg>) this.a) {
             if (bfgVar.b(obj)) {
                 return true;
             }

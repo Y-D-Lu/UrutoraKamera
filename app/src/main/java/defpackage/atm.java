@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: atm  reason: default package */
 /* loaded from: classes.dex */
@@ -39,7 +40,7 @@ public final class atm {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static void a(ati atiVar, atw atwVar) {
+    public static void a(ati atiVar, atw atwVar) throws ass {
         atl e;
         atl d;
         atl atlVar = atiVar.a;
@@ -87,7 +88,8 @@ public final class atm {
                             a2.set(5, l2.c);
                             d2.b = gi.k(new atc(a2));
                         }
-                    } catch (ass e3) {
+                    } catch (Exception e3) {
+                        e3.printStackTrace();
                     }
                 }
                 atl d4 = gk.d(atlVar2, "exif:UserComment", false);
@@ -129,7 +131,8 @@ public final class atm {
                         String valueOf3 = String.valueOf(str);
                         atiVar.i(valueOf3.length() != 0 ? "\n\n".concat(valueOf3) : new String("\n\n"));
                         d5.c.o(d5);
-                    } catch (ass e5) {
+                    } catch (Exception e5) {
+                        e5.printStackTrace();
                     }
                 }
             } else if ("http://ns.adobe.com/xap/1.0/rights/".equals(atlVar2.a) && (d = gk.d(atlVar2, "xmpRights:UsageTerms", false)) != null) {
@@ -139,7 +142,7 @@ public final class atm {
         if (atlVar.g) {
             atlVar.g = false;
             boolean h2 = atwVar.h(4);
-            for (atl atlVar4 : Collections.unmodifiableList(new ArrayList(atlVar.j()))) {
+            for (atl atlVar4 : (Set<atl>) Collections.unmodifiableList(new ArrayList(atlVar.j()))) {
                 if (atlVar4.g) {
                     Iterator h3 = atlVar4.h();
                     while (h3.hasNext()) {
@@ -226,7 +229,7 @@ public final class atm {
         }
     }
 
-    private static void b(atl atlVar, atl atlVar2, boolean z) {
+    private static void b(atl atlVar, atl atlVar2, boolean z) throws ass {
         if (!atlVar.b.equals(atlVar2.b) || atlVar.a() != atlVar2.a()) {
             throw new ass("Mismatch between alias and base nodes", 203);
         }
@@ -269,7 +272,7 @@ public final class atm {
         }
     }
 
-    private static void d(Iterator it, atl atlVar, atl atlVar2) {
+    private static void d(Iterator it, atl atlVar, atl atlVar2) throws ass {
         if (atlVar2.g().i()) {
             if (atlVar.g().c()) {
                 throw new ass("Alias to x-default already has a language qualifier", 203);

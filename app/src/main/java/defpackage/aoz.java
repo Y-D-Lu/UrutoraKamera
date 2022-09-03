@@ -17,6 +17,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
 /* renamed from: aoz  reason: default package */
 /* loaded from: classes.dex */
@@ -273,7 +274,7 @@ public final class aoz implements ano {
             extras.setImportantWhileForeground(true);
         }
         if (amlVar.a()) {
-            for (amm ammVar : amlVar.h.a) {
+            for (amm ammVar : (Set<amm>) amlVar.h.a) {
                 extras.addTriggerContentUri(new JobInfo.TriggerContentUri(ammVar.a, ammVar.b ? 1 : 0));
             }
             extras.setTriggerContentUpdateDelay(amlVar.f);

@@ -62,7 +62,7 @@ public class bof extends mip {
             koqVar.c = ((Face) ojcVar.c()).getId();
         }
         Face[] faceArr2 = (Face[]) lzvVar.d(CaptureResult.STATISTICS_FACES);
-        if (faceArr2 != null && (r5 = faceArr2.length) > 0) {
+        if (faceArr2 != null && faceArr2.length > 0) {
             for (Face face2 : faceArr2) {
                 if (koqVar.c == face2.getId()) {
                     i = ojc.i(bpv.a(face2.getId(), new Rect(face2.getBounds())));

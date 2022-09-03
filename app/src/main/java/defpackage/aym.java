@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Set;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: aym  reason: default package */
 /* loaded from: classes.dex */
@@ -17,7 +19,7 @@ public final class aym implements bjl {
         if (z) {
             synchronized (this.a) {
                 bjw bjwVar = this.b;
-                for (bks bksVar : bmf.g(bjwVar.a)) {
+                for (bks bksVar : (Set<bks>) bmf.g(bjwVar.a)) {
                     if (!bksVar.l() && !bksVar.k()) {
                         bksVar.c();
                         if (!bjwVar.c) {

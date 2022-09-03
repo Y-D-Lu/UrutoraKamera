@@ -53,7 +53,7 @@ public final class bou extends jxi implements lie {
             if (lieVar != null) {
                 lieVar.close();
             }
-            for (jxi jxiVar : this.g) {
+            for (jxi jxiVar : (Set<jxi>) this.g) {
                 jxiVar.a(pointF);
             }
             final bpn a = this.j.a();

@@ -17,15 +17,15 @@ public final /* synthetic */ class cvm implements Predicate {
     public final /* synthetic */ Predicate and(Predicate predicate) {
         switch (this.b) {
             case 0:
-                return predicate.getClass();
+                return predicate;
             case 1:
-                return predicate.getClass();
+                return predicate;
             case 2:
-                return predicate.getClass();
+                return predicate;
             case 3:
-                return predicate.getClass();
+                return predicate;
             default:
-                return predicate.getClass();
+                return predicate;
         }
     }
 
@@ -49,15 +49,15 @@ public final /* synthetic */ class cvm implements Predicate {
     public final /* synthetic */ Predicate or(Predicate predicate) {
         switch (this.b) {
             case 0:
-                return predicate.getClass();
+                return predicate;
             case 1:
-                return predicate.getClass();
+                return predicate;
             case 2:
-                return predicate.getClass();
+                return predicate;
             case 3:
-                return predicate.getClass();
+                return predicate;
             default:
-                return predicate.getClass();
+                return predicate;
         }
     }
 

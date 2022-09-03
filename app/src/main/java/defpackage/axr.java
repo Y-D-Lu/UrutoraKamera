@@ -1,13 +1,14 @@
 package defpackage;
 
+import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraDevice;
 import android.hardware.camera2.CaptureRequest;
 import android.view.Surface;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import java.util.Objects;
+import java.util.Set;
 
 /* renamed from: axr  reason: default package */
 /* loaded from: classes.dex */
@@ -31,8 +32,13 @@ public final class axr {
 
     public final CaptureRequest a(CameraDevice cameraDevice, int i, Surface... surfaceArr) {
         if (cameraDevice != null) {
-            CaptureRequest.Builder createCaptureRequest = cameraDevice.createCaptureRequest(i);
-            for (CaptureRequest.Key key : this.a.keySet()) {
+            CaptureRequest.Builder createCaptureRequest = null;
+            try {
+                createCaptureRequest = cameraDevice.createCaptureRequest(i);
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
+            for (CaptureRequest.Key key : (Set<CaptureRequest.Key>) this.a.keySet()) {
                 Object b = b(key);
                 if (b != null) {
                     createCaptureRequest.set(key, b);

@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: ijr  reason: default package */
 /* loaded from: classes.dex */
 public final class ijr {
-    public final boolean a;
-    public final boolean b;
+    public boolean a;
+    public boolean b;
 
     public ijr() {
     }

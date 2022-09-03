@@ -21,7 +21,7 @@ public final class asw {
                 bArr2[13] = -2;
                 bArr2[32] = -2;
                 bArr2[61] = -3;
-                return;
+                break;
             }
             b[bArr[i]] = (byte) i;
             i++;

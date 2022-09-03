@@ -60,7 +60,8 @@ public final class bfq implements aze {
             return true;
         } catch (IOException e5) {
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
         }
+        return false;
     }
 }

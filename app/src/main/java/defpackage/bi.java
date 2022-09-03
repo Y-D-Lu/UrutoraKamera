@@ -20,7 +20,7 @@ public final class bi extends bj {
     public final bz a(Context context) {
         if (!this.d) {
             dp dpVar = this.a;
-            bz e = d.e(context, dpVar.a, dpVar.e == 2, this.c);
+            bz e = defpackage.d.e(context, dpVar.a, dpVar.e == 2, this.c);
             this.e = e;
             this.d = true;
             return e;

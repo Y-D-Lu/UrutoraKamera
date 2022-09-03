@@ -224,7 +224,7 @@ public final class bkz implements bks, blg, bky {
                 bcl bclVar = this.o;
                 if (bclVar != null) {
                     this.o = null;
-                    bceVar = bclVar;
+                    bceVar = (bce) bclVar;
                 }
                 bku bkuVar = this.c;
                 if (bkuVar == null || bkuVar.g(this)) {
@@ -356,7 +356,7 @@ public final class bkz implements bks, blg, bky {
                                     break;
                                 } catch (Throwable th4) {
                                     th = th4;
-                                    bceVar2 = bclVar;
+                                    bceVar2 = (bce) bclVar;
                                     if (bceVar2 != null) {
                                         bceVar2.f();
                                     }
@@ -507,15 +507,14 @@ public final class bkz implements bks, blg, bky {
                                 bkzVar.p = null;
                             }
                         } catch (Throwable th2) {
-                            th = th2;
+                            th2.printStackTrace();
                         }
                     }
                 } catch (Throwable th3) {
-                    th = th3;
-                    throw th;
+                    th3.printStackTrace();
                 }
             } catch (Throwable th4) {
-                th = th4;
+                th4.printStackTrace();
             }
         }
     }

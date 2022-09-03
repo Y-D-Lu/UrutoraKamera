@@ -63,9 +63,10 @@ public final class blr {
                 throw th;
             }
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
             randomAccessFile = null;
         }
+        return null;
     }
 
     public static ByteBuffer c(InputStream inputStream) {
@@ -75,7 +76,12 @@ public final class blr {
             bArr = new byte[16384];
         }
         while (true) {
-            int read = inputStream.read(bArr);
+            int read = 0;
+            try {
+                read = inputStream.read(bArr);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             if (read < 0) {
                 b.set(bArr);
                 byte[] byteArray = byteArrayOutputStream.toByteArray();
@@ -116,7 +122,7 @@ public final class blr {
             } catch (IOException e2) {
             }
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
             if (fileChannel != null) {
                 try {
                     fileChannel.close();
@@ -129,7 +135,6 @@ public final class blr {
                 } catch (IOException e4) {
                 }
             }
-            throw th;
         }
     }
 }

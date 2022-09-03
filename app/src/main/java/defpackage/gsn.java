@@ -18,9 +18,9 @@ public final class gsn extends ldl {
     private final double d;
     private final int e;
     private final int f;
-    private final int g;
-    private final lwd h;
-    private final Rect i;
+    private int g;
+    private lwd h;
+    private Rect i;
     private boolean j;
     private gsm k;
 
@@ -52,12 +52,12 @@ public final class gsn extends ldl {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // defpackage.ldl
+//    @Override // defpackage.ldl
     /* renamed from: e */
     public final synchronized gsm c(Float f) {
         float floatValue;
-        List list;
-        double d;
+        List list = null;
+        double d = 0.0;
         int size;
         if (!Float.isNaN(f.floatValue()) && f.floatValue() > DisplayHelper.DENSITY) {
             if (!this.j) {
@@ -118,5 +118,10 @@ public final class gsn extends ldl {
     }
 
     public final synchronized void f(lwd lwdVar) {
+    }
+
+    @Override
+    protected Object c(Object obj) {
+        return c((Float)obj);
     }
 }

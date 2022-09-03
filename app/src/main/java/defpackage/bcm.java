@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: bcm  reason: default package */
@@ -68,8 +69,8 @@ public final class bcm implements bbh, bab {
         bkkVar.a.set(bmdVar);
         if (list == null) {
             list = new ArrayList();
-            for (Class cls4 : ayiVar.a.a(cls)) {
-                for (Class cls5 : ayiVar.b.b(cls4, cls2)) {
+            for (Class cls4 : (Set<Class>) ayiVar.a.a(cls)) {
+                for (Class cls5 : (Set<Class>) ayiVar.b.b(cls4, cls2)) {
                     if (!ayiVar.h.q(cls5, cls3).isEmpty() && !list.contains(cls5)) {
                         list.add(cls5);
                     }

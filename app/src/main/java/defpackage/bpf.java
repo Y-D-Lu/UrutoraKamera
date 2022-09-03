@@ -132,7 +132,7 @@ public final class bpf implements jxj, lie {
             if (lieVar2 != null) {
                 lieVar2.close();
             }
-            for (jxi jxiVar : this.i) {
+            for (jxi jxiVar : (Set<jxi>) this.i) {
                 jxiVar.a(pointF);
             }
             jsj g = this.a.g(pointF);
@@ -167,12 +167,8 @@ public final class bpf implements jxj, lie {
                 }
             }, mip.bS());
             this.p = ((bpr) a).a.a(new bpb(this, 0), mip.bS());
-            mip.ca(this.d.c(), new lht(this) { // from class: bpa
-                public final /* synthetic */ bpf a;
-
-                {
-                    this.a = this;
-                }
+            mip.ca(this.d.c(), new lht() { // from class: bpa
+                public final /* synthetic */ bpf a = bpf.this;
 
                 @Override // defpackage.lht
                 public final void a(Object obj) {
@@ -202,12 +198,8 @@ public final class bpf implements jxj, lie {
                     }
                 }
             }, pgr.a);
-            mip.ca(this.d.c(), new lht(this) { // from class: bpa
-                public final /* synthetic */ bpf a;
-
-                {
-                    this.a = this;
-                }
+            mip.ca(this.d.c(), new lht() { // from class: bpa
+                public final /* synthetic */ bpf a = bpf.this;
 
                 @Override // defpackage.lht
                 public final void a(Object obj) {

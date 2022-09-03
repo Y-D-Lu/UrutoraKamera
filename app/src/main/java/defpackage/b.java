@@ -17,10 +17,9 @@ public final class b {
         a = properties;
         try {
             InputStream resourceAsStream = System.getSecurityManager() != null ? (InputStream) AccessController.doPrivileged(new c(d.class)) : d.class.getResourceAsStream("/android/icumessageformat/ICUConfig.properties");
-            if (resourceAsStream == null) {
-                return;
+            if (resourceAsStream != null) {
+                properties.load(resourceAsStream);
             }
-            properties.load(resourceAsStream);
         } catch (IOException e) {
         } catch (MissingResourceException e2) {
         }

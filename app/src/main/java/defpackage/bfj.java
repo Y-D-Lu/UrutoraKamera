@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: bfj  reason: default package */
 /* loaded from: classes.dex */
@@ -55,7 +56,7 @@ final class bfj implements bac, bab {
             this.b.b(list);
         }
         this.f = null;
-        for (bac bacVar : this.a) {
+        for (bac bacVar : (Set<bac>) this.a) {
             bacVar.d();
         }
     }
@@ -82,7 +83,7 @@ final class bfj implements bac, bab {
     @Override // defpackage.bac
     public final void fu() {
         this.g = true;
-        for (bac bacVar : this.a) {
+        for (bac bacVar : (Set<bac>) this.a) {
             bacVar.fu();
         }
     }

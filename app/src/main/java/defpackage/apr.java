@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.List;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: apr  reason: default package */
@@ -16,7 +17,7 @@ public final class apr implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        for (apa apaVar : this.a) {
+        for (apa apaVar : (Set<apa>) this.a) {
             apaVar.a(this.b.d);
         }
     }

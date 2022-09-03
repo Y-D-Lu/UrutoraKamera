@@ -252,10 +252,11 @@ public final class dyx {
                 dzaVar.f.set(arrayList7);
                 return arrayList8;
             } catch (Throwable th2) {
-                th = th2;
+                th2.printStackTrace();
                 obj = obj4;
             }
         }
+        return null;
     }
 
     public final synchronized void c() {
@@ -265,7 +266,7 @@ public final class dyx {
             oxh.g(new ouk() { // from class: dyw
                 @Override // defpackage.ouk
                 public final Object a() {
-                    return lxa.this.a();
+                    return lxaVar.a();
                 }
             });
         }

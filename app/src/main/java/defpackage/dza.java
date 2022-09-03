@@ -53,13 +53,13 @@ public final class dza {
 
     public final long b(long j, float[] fArr) {
         float f = this.j;
-        return (((float) j) * (1.0f - (f + f))) / fArr[1];
+        return (long) ((((float) j) * (1.0f - (f + f))) / fArr[1]);
     }
 
     public final long c(long j, long j2, float[] fArr) {
         if (j > 0) {
             float f = (float) j2;
-            return j + (this.j * f) + ((0.5f - (0.5f / fArr[1])) * f);
+            return (long) (j + (this.j * f) + ((0.5f - (0.5f / fArr[1])) * f));
         }
         return j;
     }

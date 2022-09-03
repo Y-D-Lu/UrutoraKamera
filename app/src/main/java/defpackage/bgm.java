@@ -40,16 +40,15 @@ public final class bgm implements azw {
             FileOutputStream fileOutputStream2 = new FileOutputStream(file);
             try {
                 bct bctVar = this.c;
-                fileOutputStream = bctVar != null ? new baa(fileOutputStream2, bctVar) : fileOutputStream2;
-            } catch (IOException e) {
                 fileOutputStream = fileOutputStream2;
-            } catch (Throwable th) {
-                th = th;
+                //fileOutputStream = bctVar != null ? new baa(fileOutputStream2, bctVar) : fileOutputStream2;
+            } catch (Exception ex) {
+                ex.printStackTrace();
                 fileOutputStream = fileOutputStream2;
             }
         } catch (IOException e2) {
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
         }
         try {
             bitmap.compress(compressFormat, intValue, fileOutputStream);
@@ -71,15 +70,15 @@ public final class bgm implements azw {
             }
             return false;
         } catch (Throwable th3) {
-            th = th3;
+            th3.printStackTrace();
             if (fileOutputStream != null) {
                 try {
                     fileOutputStream.close();
                 } catch (IOException e6) {
                 }
             }
-            throw th;
         }
+        return false;
     }
 
     @Override // defpackage.azw

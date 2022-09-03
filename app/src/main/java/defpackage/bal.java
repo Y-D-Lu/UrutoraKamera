@@ -13,6 +13,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: bal  reason: default package */
 /* loaded from: classes.dex */
@@ -36,7 +37,7 @@ public final class bal implements bac {
         }
     }
 
-    private final InputStream e(URL url, int i, URL url2, Map map) {
+    private final InputStream e(URL url, int i, URL url2, Map map) throws azf {
         if (i < 5) {
             if (url2 != null) {
                 try {

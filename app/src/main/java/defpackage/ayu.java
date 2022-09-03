@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -52,7 +53,11 @@ public final class ayu implements Closeable {
             if (file3.exists()) {
                 file2.delete();
             } else {
-                n(file2, file3, false);
+                try {
+                    n(file2, file3, false);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         ayu ayuVar = new ayu(file, j);
@@ -109,13 +114,17 @@ public final class ayu implements Closeable {
         StrictMode.ThreadPolicy threadPolicy = StrictMode.getThreadPolicy();
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder(threadPolicy).permitUnbufferedIo().build());
         try {
-            writer.close();
+            try {
+                writer.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         } finally {
             StrictMode.setThreadPolicy(threadPolicy);
         }
     }
 
-    private static void k(File file) {
+    private static void k(File file) throws IOException {
         if (!file.exists() || file.delete()) {
             return;
         }
@@ -126,7 +135,11 @@ public final class ayu implements Closeable {
         StrictMode.ThreadPolicy threadPolicy = StrictMode.getThreadPolicy();
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder(threadPolicy).permitUnbufferedIo().build());
         try {
-            writer.flush();
+            try {
+                writer.flush();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         } finally {
             StrictMode.setThreadPolicy(threadPolicy);
         }
@@ -156,7 +169,7 @@ public final class ayu implements Closeable {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.ayu.m():void");
     }
 
-    private static void n(File file, File file2, boolean z) {
+    private static void n(File file, File file2, boolean z) throws IOException {
         if (z) {
             k(file2);
         }
@@ -178,10 +191,14 @@ public final class ayu implements Closeable {
                 }
             }
             this.d++;
-            this.c.append((CharSequence) "READ");
-            this.c.append(' ');
-            this.c.append((CharSequence) str);
-            this.c.append('\n');
+            try {
+                this.c.append((CharSequence) "READ");
+                this.c.append(' ');
+                this.c.append((CharSequence) str);
+                this.c.append('\n');
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             if (e()) {
                 this.e.submit(this.n);
             }
@@ -221,7 +238,11 @@ public final class ayu implements Closeable {
                     }
                     i = 1;
                 } else {
-                    k(d);
+                    try {
+                        k(d);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                     i = 1;
                 }
             }
@@ -229,20 +250,28 @@ public final class ayu implements Closeable {
             aysVar.f = null;
             if (aysVar.e || z) {
                 aysVar.e = true;
-                this.c.append((CharSequence) "CLEAN");
-                this.c.append(' ');
-                this.c.append((CharSequence) aysVar.a);
-                this.c.append((CharSequence) aysVar.a());
-                this.c.append('\n');
+                try {
+                    this.c.append((CharSequence) "CLEAN");
+                    this.c.append(' ');
+                    this.c.append((CharSequence) aysVar.a);
+                    this.c.append((CharSequence) aysVar.a());
+                    this.c.append('\n');
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 if (z) {
                     this.m++;
                 }
             } else {
                 this.l.remove(aysVar.a);
-                this.c.append((CharSequence) "REMOVE");
-                this.c.append(' ');
-                this.c.append((CharSequence) aysVar.a);
-                this.c.append('\n');
+                try {
+                    this.c.append((CharSequence) "REMOVE");
+                    this.c.append(' ');
+                    this.c.append((CharSequence) aysVar.a);
+                    this.c.append('\n');
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
             l(this.c);
             if (this.k > this.j || e()) {
@@ -254,46 +283,50 @@ public final class ayu implements Closeable {
     }
 
     public final synchronized void c() {
-        Writer writer = this.c;
-        if (writer != null) {
-            j(writer);
-        }
-        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.g), ayx.a));
-        bufferedWriter.write("libcore.io.DiskLruCache");
-        bufferedWriter.write("\n");
-        bufferedWriter.write("1");
-        bufferedWriter.write("\n");
-        bufferedWriter.write(Integer.toString(this.i));
-        bufferedWriter.write("\n");
-        bufferedWriter.write(Integer.toString(this.b));
-        bufferedWriter.write("\n");
-        bufferedWriter.write("\n");
-        for (ays aysVar : this.l.values()) {
-            if (aysVar.f != null) {
-                String str = aysVar.a;
-                StringBuilder sb = new StringBuilder(String.valueOf(str).length() + 7);
-                sb.append("DIRTY ");
-                sb.append(str);
-                sb.append('\n');
-                bufferedWriter.write(sb.toString());
-            } else {
-                String str2 = aysVar.a;
-                String a = aysVar.a();
-                StringBuilder sb2 = new StringBuilder(String.valueOf(str2).length() + 7 + String.valueOf(a).length());
-                sb2.append("CLEAN ");
-                sb2.append(str2);
-                sb2.append(a);
-                sb2.append('\n');
-                bufferedWriter.write(sb2.toString());
+        try {
+            Writer writer = this.c;
+            if (writer != null) {
+                j(writer);
             }
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.g), ayx.a));
+            bufferedWriter.write("libcore.io.DiskLruCache");
+            bufferedWriter.write("\n");
+            bufferedWriter.write("1");
+            bufferedWriter.write("\n");
+            bufferedWriter.write(Integer.toString(this.i));
+            bufferedWriter.write("\n");
+            bufferedWriter.write(Integer.toString(this.b));
+            bufferedWriter.write("\n");
+            bufferedWriter.write("\n");
+            for (ays aysVar : (Set<ays>) this.l.values()) {
+                if (aysVar.f != null) {
+                    String str = aysVar.a;
+                    StringBuilder sb = new StringBuilder(String.valueOf(str).length() + 7);
+                    sb.append("DIRTY ");
+                    sb.append(str);
+                    sb.append('\n');
+                    bufferedWriter.write(sb.toString());
+                } else {
+                    String str2 = aysVar.a;
+                    String a = aysVar.a();
+                    StringBuilder sb2 = new StringBuilder(String.valueOf(str2).length() + 7 + String.valueOf(a).length());
+                    sb2.append("CLEAN ");
+                    sb2.append(str2);
+                    sb2.append(a);
+                    sb2.append('\n');
+                    bufferedWriter.write(sb2.toString());
+                }
+            }
+            j(bufferedWriter);
+            if (this.f.exists()) {
+                n(this.f, this.h, true);
+            }
+            n(this.g, this.f, false);
+            this.h.delete();
+            this.c = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.f, true), ayx.a));
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        j(bufferedWriter);
-        if (this.f.exists()) {
-            n(this.f, this.h, true);
-        }
-        n(this.g, this.f, false);
-        this.h.delete();
-        this.c = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.f, true), ayx.a));
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -316,7 +349,11 @@ public final class ayu implements Closeable {
 
     public final void d() {
         while (this.k > this.j) {
-            h((String) ((Map.Entry) this.l.entrySet().iterator().next()).getKey());
+            try {
+                h((String) ((Map.Entry) this.l.entrySet().iterator().next()).getKey());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -336,15 +373,19 @@ public final class ayu implements Closeable {
         }
         ayr ayrVar = new ayr(this, aysVar);
         aysVar.f = ayrVar;
-        this.c.append((CharSequence) "DIRTY");
-        this.c.append(' ');
-        this.c.append((CharSequence) str);
-        this.c.append('\n');
+        try {
+            this.c.append((CharSequence) "DIRTY");
+            this.c.append(' ');
+            this.c.append((CharSequence) str);
+            this.c.append('\n');
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         l(this.c);
         return ayrVar;
     }
 
-    public final synchronized void h(String str) {
+    public final synchronized void h(String str) throws IOException {
         i();
         ays aysVar = (ays) this.l.get(str);
         if (aysVar == null || aysVar.f != null) {

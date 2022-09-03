@@ -9,6 +9,7 @@ public final class ayf extends ayd {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public ayf(java.lang.Class r4, java.lang.Class r5) {
+        super(r4.toString());
         /*
             r3 = this;
             java.lang.String r4 = java.lang.String.valueOf(r4)
@@ -40,6 +41,7 @@ public final class ayf extends ayd {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public ayf(java.lang.Object r3) {
+        super(r3.toString());
         /*
             r2 = this;
             java.lang.Class r3 = r3.getClass()
@@ -65,6 +67,7 @@ public final class ayf extends ayd {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public ayf(java.lang.Object r4, java.util.List r5) {
+        super(r4.toString());
         /*
             r3 = this;
             java.lang.String r5 = java.lang.String.valueOf(r5)

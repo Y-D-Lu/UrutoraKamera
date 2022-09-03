@@ -51,7 +51,7 @@ final class bgc implements bac {
 
     @Override // defpackage.bac
     public final void f(ayc aycVar, bab babVar) {
-        bff a2;
+        bff a2 = null;
         try {
             bac bacVar = null;
             Cursor cursor = null;
@@ -90,7 +90,7 @@ final class bgc implements bac {
                     sb2.append(valueOf2);
                     throw new FileNotFoundException(sb2.toString());
                 } catch (Throwable th2) {
-                    th = th2;
+                    th2.printStackTrace();
                 }
             } else {
                 a2 = this.d.a(this.b.checkSelfPermission("android.permission.ACCESS_MEDIA_LOCATION") == 0 ? MediaStore.setRequireOriginal(this.e) : this.e, this.f, this.g, this.h);
@@ -112,8 +112,9 @@ final class bgc implements bac {
             } else {
                 bacVar.f(aycVar, babVar);
             }
-        } catch (FileNotFoundException e) {
-            babVar.e(e);
+        } catch (Exception e) {
+            e.printStackTrace();
+            // babVar.e(e);
         }
     }
 

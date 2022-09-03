@@ -45,9 +45,9 @@ final class aoh implements Runnable {
                 kus.j(e2);
                 aojVar = this.b;
             } catch (ExecutionException e3) {
-                e = e3;
+                e3.printStackTrace();
                 kus.l();
-                kus.i(aoj.a, String.format("%s failed because it threw an exception/error", this.a), e);
+                kus.i(aoj.a, String.format("%s failed because it threw an exception/error", this.a), e3);
                 aojVar = this.b;
             }
             aojVar.a();

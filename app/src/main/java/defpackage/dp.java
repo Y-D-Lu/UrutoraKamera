@@ -3,6 +3,7 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dp  reason: default package */
@@ -31,7 +32,7 @@ public class dp {
             String str = "SpecialEffectsController: " + this + " has called complete.";
         }
         this.d = true;
-        for (Runnable runnable : this.g) {
+        for (Runnable runnable : (Set<Runnable>) this.g) {
             runnable.run();
         }
     }
@@ -99,14 +100,14 @@ public class dp {
                     return;
                 }
                 if (cu.Q(2)) {
-                    String str = "SpecialEffectsController: For fragment " + this.a + " mFinalState = REMOVED -> VISIBLE. mLifecycleImpact = " + ((Object) d.p(this.f)) + " to ADDING.";
+                    String str = "SpecialEffectsController: For fragment " + this.a + " mFinalState = REMOVED -> VISIBLE. mLifecycleImpact = " + ((Object) defpackage.d.p(this.f)) + " to ADDING.";
                 }
                 this.e = 2;
                 this.f = 2;
                 return;
             case 2:
                 if (cu.Q(2)) {
-                    String str2 = "SpecialEffectsController: For fragment " + this.a + " mFinalState = " + ((Object) d.l(this.e)) + " -> REMOVED. mLifecycleImpact  = " + ((Object) d.p(this.f)) + " to REMOVING.";
+                    String str2 = "SpecialEffectsController: For fragment " + this.a + " mFinalState = " + ((Object) defpackage.d.l(this.e)) + " -> REMOVED. mLifecycleImpact  = " + ((Object) defpackage.d.p(this.f)) + " to REMOVING.";
                 }
                 this.e = 1;
                 this.f = 3;
@@ -116,7 +117,7 @@ public class dp {
                     return;
                 }
                 if (cu.Q(2)) {
-                    String str3 = "SpecialEffectsController: For fragment " + this.a + " mFinalState = " + ((Object) d.l(this.e)) + " -> " + ((Object) d.l(i)) + ". ";
+                    String str3 = "SpecialEffectsController: For fragment " + this.a + " mFinalState = " + ((Object) defpackage.d.l(this.e)) + " -> " + ((Object) defpackage.d.l(i)) + ". ";
                 }
                 this.e = i;
                 return;
@@ -124,6 +125,6 @@ public class dp {
     }
 
     public final String toString() {
-        return "Operation {" + Integer.toHexString(System.identityHashCode(this)) + "} {mFinalState = " + ((Object) d.l(this.e)) + "} {mLifecycleImpact = " + ((Object) d.p(this.f)) + "} {mFragment = " + this.a + "}";
+        return "Operation {" + Integer.toHexString(System.identityHashCode(this)) + "} {mFinalState = " + ((Object) defpackage.d.l(this.e)) + "} {mLifecycleImpact = " + ((Object) defpackage.d.p(this.f)) + "} {mFragment = " + this.a + "}";
     }
 }

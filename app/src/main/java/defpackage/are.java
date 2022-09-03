@@ -35,20 +35,20 @@ public final class are implements aqu {
     @Override // defpackage.aqu
     public final aqt a(String str) {
         ais aisVar;
-        int l;
-        int l2;
-        int l3;
-        int l4;
-        int l5;
-        int l6;
-        int l7;
-        int l8;
-        int l9;
-        int l10;
-        int l11;
-        int l12;
-        int l13;
-        int l14;
+        int l = 0;
+        int l2 = 0;
+        int l3 = 0;
+        int l4 = 0;
+        int l5 = 0;
+        int l6 = 0;
+        int l7 = 0;
+        int l8 = 0;
+        int l9 = 0;
+        int l10 = 0;
+        int l11 = 0;
+        int l12 = 0;
+        int l13 = 0;
+        int l14 = 0;
         aqt aqtVar;
         ais a = ais.a("SELECT `required_network_type`, `requires_charging`, `requires_device_idle`, `requires_battery_not_low`, `requires_storage_not_low`, `trigger_content_update_delay`, `trigger_max_content_delay`, `content_uri_triggers`, `WorkSpec`.`id` AS `id`, `WorkSpec`.`state` AS `state`, `WorkSpec`.`worker_class_name` AS `worker_class_name`, `WorkSpec`.`input_merger_class_name` AS `input_merger_class_name`, `WorkSpec`.`input` AS `input`, `WorkSpec`.`output` AS `output`, `WorkSpec`.`initial_delay` AS `initial_delay`, `WorkSpec`.`interval_duration` AS `interval_duration`, `WorkSpec`.`flex_duration` AS `flex_duration`, `WorkSpec`.`run_attempt_count` AS `run_attempt_count`, `WorkSpec`.`backoff_policy` AS `backoff_policy`, `WorkSpec`.`backoff_delay_duration` AS `backoff_delay_duration`, `WorkSpec`.`period_start_time` AS `period_start_time`, `WorkSpec`.`minimum_retention_duration` AS `minimum_retention_duration`, `WorkSpec`.`schedule_requested_at` AS `schedule_requested_at`, `WorkSpec`.`run_in_foreground` AS `run_in_foreground`, `WorkSpec`.`out_of_quota_policy` AS `out_of_quota_policy` FROM workspec WHERE id=?", 1);
         if (str == null) {
@@ -126,11 +126,11 @@ public final class are implements aqu {
             aisVar.j();
             return aqtVar;
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
             i.close();
             aisVar.j();
-            throw th;
         }
+        return null;
     }
 
     @Override // defpackage.aqu
@@ -248,9 +248,10 @@ public final class are implements aqu {
                 throw th;
             }
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
             aisVar = a;
         }
+        return null;
     }
 
     @Override // defpackage.aqu
@@ -368,9 +369,10 @@ public final class are implements aqu {
                 throw th;
             }
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
             aisVar = a;
         }
+        return null;
     }
 
     @Override // defpackage.aqu
@@ -489,20 +491,20 @@ public final class are implements aqu {
     @Override // defpackage.aqu
     public final List i() {
         ais aisVar;
-        int l;
-        int l2;
-        int l3;
-        int l4;
-        int l5;
-        int l6;
-        int l7;
-        int l8;
-        int l9;
-        int l10;
-        int l11;
-        int l12;
-        int l13;
-        int l14;
+        int l = 0;
+        int l2 = 0;
+        int l3 = 0;
+        int l4 = 0;
+        int l5 = 0;
+        int l6 = 0;
+        int l7 = 0;
+        int l8 = 0;
+        int l9 = 0;
+        int l10 = 0;
+        int l11 = 0;
+        int l12 = 0;
+        int l13 = 0;
+        int l14 = 0;
         ais a = ais.a("SELECT `required_network_type`, `requires_charging`, `requires_device_idle`, `requires_battery_not_low`, `requires_storage_not_low`, `trigger_content_update_delay`, `trigger_max_content_delay`, `content_uri_triggers`, `WorkSpec`.`id` AS `id`, `WorkSpec`.`state` AS `state`, `WorkSpec`.`worker_class_name` AS `worker_class_name`, `WorkSpec`.`input_merger_class_name` AS `input_merger_class_name`, `WorkSpec`.`input` AS `input`, `WorkSpec`.`output` AS `output`, `WorkSpec`.`initial_delay` AS `initial_delay`, `WorkSpec`.`interval_duration` AS `interval_duration`, `WorkSpec`.`flex_duration` AS `flex_duration`, `WorkSpec`.`run_attempt_count` AS `run_attempt_count`, `WorkSpec`.`backoff_policy` AS `backoff_policy`, `WorkSpec`.`backoff_delay_duration` AS `backoff_delay_duration`, `WorkSpec`.`period_start_time` AS `period_start_time`, `WorkSpec`.`minimum_retention_duration` AS `minimum_retention_duration`, `WorkSpec`.`schedule_requested_at` AS `schedule_requested_at`, `WorkSpec`.`run_in_foreground` AS `run_in_foreground`, `WorkSpec`.`out_of_quota_policy` AS `out_of_quota_policy` FROM workspec WHERE state=0 ORDER BY period_start_time LIMIT ?", 1);
         a.e(1, 200L);
         this.a.g();
@@ -614,11 +616,11 @@ public final class are implements aqu {
             aisVar.j();
             return arrayList;
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
             i.close();
             aisVar.j();
-            throw th;
         }
+        return null;
     }
 
     @Override // defpackage.aqu

@@ -9,6 +9,7 @@ public final class ayh extends ayd {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public ayh(java.lang.Class r3) {
+        super(r3.toString());
         /*
             r2 = this;
             java.lang.String r3 = java.lang.String.valueOf(r3)

@@ -175,7 +175,7 @@ public final class aot implements Runnable {
                     }
                     kus.l();
                     kus.i(aoo.a, String.format("Invalid request for %s, requires %s.", action2, "KEY_WORKSPEC_ID"), new Throwable[0]);
-                    break;
+                    return;
                 } else {
                     kus l14 = kus.l();
                     String.format("Handling reschedule %s, %s", intent2, valueOf);

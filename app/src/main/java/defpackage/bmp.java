@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -45,10 +46,10 @@ public final class bmp {
 
     /* JADX WARN: Multi-variable type inference failed */
     public static void e(Parcel parcel, IInterface iInterface) {
-        if (iInterface == 0) {
+        if (iInterface == null) {
             parcel.writeStrongBinder(null);
         } else {
-            parcel.writeStrongBinder(iInterface);
+            parcel.writeStrongBinder((IBinder) iInterface);
         }
     }
 

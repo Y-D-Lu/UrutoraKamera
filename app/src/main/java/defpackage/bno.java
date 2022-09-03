@@ -13,6 +13,7 @@ import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
 import org.codeaurora.snapcam.R;
 
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* renamed from: bno  reason: default package */
@@ -251,14 +252,14 @@ public final class bno implements pys {
                 final bzn bznVar = (bzn) this.d.mo37get();
                 final jdy jdyVar = (jdy) this.b.mo37get();
                 final bqg mo37get = ((etg) this.c).mo37get();
-                Object H = !((ddf) this.a.mo37get()).k(ddl.aP) ? orx.a : ope.H(new iho(bzoVar, bznVar, mo37get, null, null) { // from class: bzi
-                    public final /* synthetic */ bzo a;
-                    public final /* synthetic */ bzn b;
-                    public final /* synthetic */ bqg c;
+                Object H = !((ddf) this.a.mo37get()).k(ddl.aP) ? orx.a : ope.H(new iho() { // from class: bzi
+                    public /* synthetic */ bzo a;
+                    public /* synthetic */ bzn b;
+                    public /* synthetic */ bqg c;
 
                     @Override // java.lang.Runnable
                     public final void run() {
-                        jdy jdyVar2 = jdy.this;
+                        jdy jdyVar2 = jdyVar;
                         final bzo bzoVar2 = this.a;
                         final bzn bznVar2 = this.b;
                         bqg bqgVar = this.c;
@@ -266,9 +267,9 @@ public final class bno implements pys {
                             /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
                             @Override // defpackage.bzd
                             public final void a(long j, bzs bzsVar) {
-                                float f;
+                                float f = 0.0f;
                                 char c;
-                                bzo bzoVar3 = bzo.this;
+                                bzo bzoVar3 = bzoVar2;
                                 bzn bznVar3 = bznVar2;
                                 List list = bzoVar3.c;
                                 Long valueOf = Long.valueOf(j);
@@ -417,7 +418,7 @@ public final class bno implements pys {
                                 if (pteVar == null) {
                                     pteVar = pte.b;
                                 }
-                                for (ptd ptdVar : pteVar.a) {
+                                for (ptd ptdVar : (Set<ptd>) pteVar.a) {
                                     poy m2 = pdk.A.m();
                                     if ((ptdVar.a & 1) != 0) {
                                         ptb ptbVar = ptdVar.b;
@@ -526,7 +527,7 @@ public final class bno implements pys {
                                     strArr[17] = "under_exposed";
                                     strArr[18] = "mouth_moving_score";
                                     ope G = ope.G(strArr);
-                                    for (pta ptaVar : ptdVar.i) {
+                                    for (pta ptaVar : (Set<pta>) ptdVar.i) {
                                         if (G.contains(ptaVar.b)) {
                                             int i16 = ptaVar.a;
                                             if ((i16 & 4) != 0) {
@@ -872,12 +873,12 @@ public final class bno implements pys {
                         synchronized (jdyVar2.h) {
                             jdyVar2.h.add(bzdVar);
                         }
-                        bqgVar.i().c(new lie(bzdVar, null, null) { // from class: bzc
-                            public final /* synthetic */ bzd a;
+                        bqgVar.i().c(new lie() { // from class: bzc
+                            public /* synthetic */ bzd a = bzdVar;
 
                             @Override // defpackage.lie, java.lang.AutoCloseable
                             public final void close() {
-                                jdy jdyVar3 = jdy.this;
+                                jdy jdyVar3 = jdyVar;
                                 bzd bzdVar2 = this.a;
                                 synchronized (jdyVar3.h) {
                                     jdyVar3.h.remove(bzdVar2);
@@ -897,7 +898,7 @@ public final class bno implements pys {
                 return aas.d(new Runnable() { // from class: bzj
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ddf ddfVar2 = ddf.this;
+                        ddf ddfVar2 = ddfVar;
                         ghx ghxVar = mo37get2;
                         ojc ojcVar2 = ojcVar;
                         bza bzaVar = mo37get3;
@@ -950,7 +951,7 @@ public final class bno implements pys {
                 return aas.d(new Runnable() { // from class: djz
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ddf ddfVar3 = ddf.this;
+                        ddf ddfVar3 = ddfVar2;
                         dju djuVar2 = djuVar;
                         ddi ddiVar = ddl.a;
                         ddfVar3.b();
@@ -994,7 +995,7 @@ public final class bno implements pys {
                 lapVar3.c(new lie() { // from class: dny
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        mpi.this.close();
+                        h.close();
                     }
                 });
                 return ojc.i(a2);
@@ -1009,7 +1010,7 @@ public final class bno implements pys {
                 b2.d(new drs() { // from class: drw
                     @Override // defpackage.drs
                     public final void a(long j, lzv lzvVar) {
-                        dszVar.g(j, (dqx.this.a(j) * 0.15f) + (dqxVar2.a(j) * 0.25f) + (dqxVar3.a(j) * 0.6f));
+                        dszVar.g(j, (dqxVar.a(j) * 0.15f) + (dqxVar2.a(j) * 0.25f) + (dqxVar3.a(j) * 0.6f));
                     }
                 });
                 return b2.a();

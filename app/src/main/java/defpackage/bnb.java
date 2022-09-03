@@ -84,7 +84,8 @@ public final class bnb implements bnw, lij {
 
     @Override // defpackage.lij
     /* renamed from: d */
-    public final synchronized void fB(ggp ggpVar) {
+    public final synchronized void fB(Object ggpObj) {
+        ggp ggpVar = (ggp) ggpObj;
         boolean z;
         if (!this.f) {
             return;
@@ -116,12 +117,8 @@ public final class bnb implements bnw, lij {
                     } else {
                         this.b = this.a.e(oih.a, 0);
                     }
-                    this.b.b(new jsi(this) { // from class: bmx
-                        public final /* synthetic */ bnb a;
-
-                        {
-                            this.a = this;
-                        }
+                    this.b.b(new jsi() { // from class: bmx
+                        public final /* synthetic */ bnb a = bnb.this;
 
                         @Override // defpackage.jsi
                         public final void a() {
@@ -204,12 +201,8 @@ public final class bnb implements bnw, lij {
                     if (this.c == null) {
                         jsj d = this.a.d();
                         this.c = d;
-                        d.b(new jsi(this) { // from class: bmx
-                            public final /* synthetic */ bnb a;
-
-                            {
-                                this.a = this;
-                            }
+                        d.b(new jsi() { // from class: bmx
+                            public final /* synthetic */ bnb a = bnb.this;
 
                             @Override // defpackage.jsi
                             public final void a() {

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.PowerManager;
 
 import java.util.HashMap;
+import java.util.Set;
 import java.util.WeakHashMap;
 
 /* renamed from: aru  reason: default package */
@@ -28,7 +29,7 @@ public final class aru {
         synchronized (weakHashMap) {
             hashMap.putAll(weakHashMap);
         }
-        for (PowerManager.WakeLock wakeLock : hashMap.keySet()) {
+        for (PowerManager.WakeLock wakeLock : (Set<PowerManager.WakeLock>) hashMap.keySet()) {
             if (wakeLock != null && wakeLock.isHeld()) {
                 String format = String.format("WakeLock held for %s", hashMap.get(wakeLock));
                 kus.l();

@@ -27,20 +27,20 @@ public final class azm implements azn {
             int a = azgVar.a(bhtVar, this.b);
             try {
                 bhtVar.close();
-            } catch (IOException e) {
+            } catch (Exception e) {
             }
             this.a.a();
             return a;
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
             if (bhtVar != null) {
                 try {
                     bhtVar.close();
-                } catch (IOException e2) {
+                } catch (Exception e2) {
                 }
             }
             this.a.a();
-            throw th;
         }
+        return 0;
     }
 }

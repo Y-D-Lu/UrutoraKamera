@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: mlq  reason: default package */
 /* loaded from: classes2.dex */
 public final class mlq {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final int d;
+    public String a;
+    public String b;
+    public int c;
+    public int d;
 
     public mlq() {
     }
@@ -46,7 +46,7 @@ public final class mlq {
         return ((ath) a).a.toString();
     }
 
-    public static void e(Object obj, String str) {
+    public static void e(Object obj, String str) throws ass {
         if (obj == null) {
             throw new ass(str.length() != 0 ? "Missing value for ".concat(str) : new String("Missing value for "), 5);
         }
