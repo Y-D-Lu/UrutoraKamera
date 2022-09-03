@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+import android.view.qc;
 
 import com.google.android.apps.camera.bottombar.R;
 

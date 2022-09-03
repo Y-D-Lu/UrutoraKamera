@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: lvu  reason: default package */
 /* loaded from: classes2.dex */
 public final class lvu {
-    public final String a;
-    public final Throwable b;
+    public String a;
+    public Throwable b;
 
     public lvu() {
     }

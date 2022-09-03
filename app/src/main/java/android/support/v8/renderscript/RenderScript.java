@@ -569,7 +569,11 @@ public class RenderScript {
 
     protected void finalize() {
         helpDestroy();
-        super.finalize();
+        try {
+            super.finalize();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
     }
 
     public void finish() {

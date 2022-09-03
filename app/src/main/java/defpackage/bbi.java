@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: bbi  reason: default package */
 /* loaded from: classes.dex */
@@ -84,8 +85,8 @@ public final class bbi {
             return bcjVar;
         }
         ArrayList arrayList = new ArrayList();
-        for (Class cls4 : ayiVar.b.b(cls, cls2)) {
-            for (Class cls5 : ayiVar.h.q(cls4, cls3)) {
+        for (Class cls4 : (Set<Class>) ayiVar.b.b(cls, cls2)) {
+            for (Class cls5 : (Set<Class>) ayiVar.h.q(cls4, cls3)) {
                 arrayList.add(new bbn(cls, cls4, cls5, ayiVar.b.a(cls, cls4), ayiVar.h.p(cls4, cls5), ayiVar.e));
             }
         }

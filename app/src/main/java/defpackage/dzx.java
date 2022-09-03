@@ -6,7 +6,7 @@ public final class dzx {
     public pbv a;
 
     public dzx(pli pliVar, int i) {
-        int d;
+        int d = 0;
         this.a = pbv.aC;
         poy m = pbv.aC.m();
         pla plaVar = pliVar.a;

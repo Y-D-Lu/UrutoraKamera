@@ -725,7 +725,7 @@ public final class cu {
                                 break;
                             }
                         case 8:
-                            ayVar4.d.add(i20, new dc(9, buVar, bArr2));
+                            ayVar4.d.add(i20, new dc(9, buVar, null));
                             dcVar3.c = true;
                             i20++;
                             buVar = dcVar3.b;
@@ -1742,7 +1742,7 @@ public final class cu {
             if (cfVar instanceof uf) {
                 ue ueVar = ((bx) cfVar).a.h;
                 this.d = ueVar;
-                bu buVar2 = buVar != null ? buVar : cfVar;
+                bu buVar2 = buVar != null ? buVar : null;//cfVar;
                 uc ucVar = this.e;
                 aeb C = buVar2.C();
                 if (C.a != aea.DESTROYED) {
@@ -1758,7 +1758,7 @@ public final class cu {
                 }
                 this.t = cwVar2;
             } else if (cfVar instanceof aey) {
-                aih ag = cfVar.ag();
+                aih ag = ((aey)cfVar).ag();
                 aev aevVar = cw.a;
                 ag.getClass();
                 this.t = (cw) aas.c(cw.class, ag, aevVar);
@@ -1856,7 +1856,7 @@ public final class cu {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void n(Configuration configuration) {
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>) this.a.f()) {
             if (buVar != null) {
                 buVar.onConfigurationChanged(configuration);
                 buVar.A.n(configuration);
@@ -1879,8 +1879,8 @@ public final class cu {
         af();
         cf cfVar = this.j;
         if (cfVar instanceof aey ? this.a.d.f : true ^ ((Activity) cfVar.c).isChangingConfigurations()) {
-            for (bb bbVar : this.x.values()) {
-                for (String str : bbVar.a) {
+            for (bb bbVar : (Set<bb>) this.x.values()) {
+                for (String str : (Set<String>) bbVar.a) {
                     this.a.d.b(str);
                 }
             }
@@ -1906,7 +1906,7 @@ public final class cu {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void q() {
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>) this.a.f()) {
             if (buVar != null) {
                 buVar.onLowMemory();
                 buVar.A.q();
@@ -1916,7 +1916,7 @@ public final class cu {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void r(boolean z) {
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>) this.a.f()) {
             if (buVar != null) {
                 buVar.A.r(z);
             }
@@ -1928,7 +1928,7 @@ public final class cu {
         if (this.i <= 0) {
             return;
         }
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>) this.a.f()) {
             if (buVar != null && !buVar.F) {
                 buVar.A.s(menu);
             }
@@ -1983,7 +1983,7 @@ public final class cu {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void v(boolean z) {
-        for (bu buVar : this.a.f()) {
+        for (bu buVar : (Set<bu>) this.a.f()) {
             if (buVar != null) {
                 buVar.A.v(z);
             }
@@ -2009,13 +2009,13 @@ public final class cu {
     public final void y(int i) {
         try {
             this.v = true;
-            for (da daVar : this.a.b.values()) {
+            for (da daVar : (Set<da>) this.a.b.values()) {
                 if (daVar != null) {
                     daVar.d = i;
                 }
             }
             E(i, false);
-            for (dq dqVar : ab()) {
+            for (dq dqVar : (Set<dq>) ab()) {
                 dqVar.c();
             }
             this.v = false;

@@ -310,7 +310,7 @@ public final class axv implements ComponentCallbacks2 {
     public final void onTrimMemory(int i2) {
         bmf.i();
         synchronized (this.f) {
-            for (ayn aynVar : this.f) {
+            for (ayn aynVar : (Set<ayn>) this.f) {
             }
         }
         bdr bdrVar = this.j;

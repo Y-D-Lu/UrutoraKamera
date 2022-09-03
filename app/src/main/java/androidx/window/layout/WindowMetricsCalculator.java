@@ -4,13 +4,13 @@ import android.app.Activity;
 
 /* loaded from: classes.dex */
 public interface WindowMetricsCalculator {
-    public static final Companion Companion = Companion.$$INSTANCE;
+    public static final Companion mCompanion = Companion.$$INSTANCE;
 
     /* renamed from: androidx.window.layout.WindowMetricsCalculator$-CC  reason: invalid class name */
     /* loaded from: classes.dex */
     public final /* synthetic */ class CC {
         public static WindowMetricsCalculator getOrCreate() {
-            return WindowMetricsCalculator.Companion.getOrCreate();
+            return WindowMetricsCalculator.mCompanion.getOrCreate();
         }
     }
 

@@ -6,6 +6,7 @@ import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 
+import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /* renamed from: ayn  reason: default package */
@@ -93,7 +94,7 @@ public final class ayn implements ComponentCallbacks2, bjq {
         }
         axv axvVar = this.a;
         synchronized (axvVar.f) {
-            for (ayn aynVar : axvVar.f) {
+            for (ayn aynVar : (Set<ayn>) axvVar.f) {
                 if (aynVar.n(blhVar)) {
                     return;
                 }
@@ -109,12 +110,12 @@ public final class ayn implements ComponentCallbacks2, bjq {
     @Override // defpackage.bjq
     public final synchronized void g() {
         this.h.g();
-        for (blh blhVar : bmf.g(this.h.a)) {
+        for (blh blhVar : (Set<blh>) bmf.g(this.h.a)) {
             f(blhVar);
         }
         this.h.a.clear();
         bjw bjwVar = this.f;
-        for (bks bksVar : bmf.g(bjwVar.a)) {
+        for (bks bksVar : (Set<bks>) bmf.g(bjwVar.a)) {
             bjwVar.a(bksVar);
         }
         bjwVar.b.clear();
@@ -145,7 +146,7 @@ public final class ayn implements ComponentCallbacks2, bjq {
     public final synchronized void j() {
         bjw bjwVar = this.f;
         bjwVar.c = true;
-        for (bks bksVar : bmf.g(bjwVar.a)) {
+        for (bks bksVar : (Set<bks>) bmf.g(bjwVar.a)) {
             if (bksVar.n()) {
                 bksVar.f();
                 bjwVar.b.add(bksVar);
@@ -156,7 +157,7 @@ public final class ayn implements ComponentCallbacks2, bjq {
     public final synchronized void k() {
         bjw bjwVar = this.f;
         bjwVar.c = false;
-        for (bks bksVar : bmf.g(bjwVar.a)) {
+        for (bks bksVar : (Set<bks>) bmf.g(bjwVar.a)) {
             if (!bksVar.l() && !bksVar.n()) {
                 bksVar.b();
             }

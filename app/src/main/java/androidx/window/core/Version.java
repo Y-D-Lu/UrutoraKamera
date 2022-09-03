@@ -12,7 +12,7 @@ import defpackage.qno;
 /* loaded from: classes.dex */
 public final class Version implements Comparable {
     private static final Version CURRENT;
-    public static final Companion Companion = new Companion(null);
+    public static final Companion mCompanion = new Companion(null);
     private static final Version UNKNOWN = new Version(0, 0, 0, "");
     private static final Version VERSION_0_1 = new Version(0, 1, 0, "");
     private static final Version VERSION_1_0;
@@ -23,8 +23,13 @@ public final class Version implements Comparable {
     private final int minor;
     private final int patch;
 
+    @Override
+    public int compareTo(Object o) {
+        return getBigInteger().compareTo(((Version)o).getBigInteger());
+    }
+
     /* loaded from: classes.dex */
-    public final class Companion {
+    public static final class Companion {
         private Companion() {
         }
 
@@ -40,7 +45,7 @@ public final class Version implements Comparable {
             return Version.UNKNOWN;
         }
 
-        public final Version getVERSION_0_1() {
+        public Version getVERSION_0_1() {
             return Version.VERSION_0_1;
         }
 
@@ -48,7 +53,7 @@ public final class Version implements Comparable {
             return Version.VERSION_1_0;
         }
 
-        public final Version parse(String str) {
+        public static Version parse(String str) {
             if (str == null || qno.j(str)) {
                 return null;
             }
@@ -106,12 +111,6 @@ public final class Version implements Comparable {
 
     public static final Version parse(String str) {
         return Companion.parse(str);
-    }
-
-    @Override // java.lang.Comparable
-    public int compareTo(Version version) {
-        version.getClass();
-        return getBigInteger().compareTo(version.getBigInteger());
     }
 
     public boolean equals(Object obj) {

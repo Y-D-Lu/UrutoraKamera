@@ -1,6 +1,4 @@
-package defpackage;
-
-import android.view.View;
+package android.view;
 
 /* renamed from: rz  reason: default package */
 /* loaded from: classes2.dex */

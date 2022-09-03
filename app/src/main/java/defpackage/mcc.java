@@ -7,19 +7,19 @@ import android.net.Uri;
 /* renamed from: mcc  reason: default package */
 /* loaded from: classes2.dex */
 public final class mcc {
-    public final Context a;
-    public final ContentResolver b;
-    public final Uri c;
-    public final Uri d;
-    public final String e;
-    public final String f;
-    public final String g;
-    public final int h;
-    public final int i;
-    public final String j;
-    public final String k;
-    public final int l;
-    public final int m;
+    public Context a;
+    public ContentResolver b;
+    public Uri c;
+    public Uri d;
+    public String e;
+    public String f;
+    public String g;
+    public int h;
+    public int i;
+    public String j;
+    public String k;
+    public int l;
+    public int m;
 
     public mcc() {
     }

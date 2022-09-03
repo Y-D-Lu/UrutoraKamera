@@ -245,10 +245,8 @@ public abstract class pom extends pnv {
             int length = bytes.length;
             C(length);
             a(bytes, 0, length);
-        } catch (IndexOutOfBoundsException e2) {
-            throw new pol(e2);
-        } catch (pol e3) {
-            throw e3;
+        } catch (Exception e2) {
+            e2.printStackTrace();
         }
     }
 

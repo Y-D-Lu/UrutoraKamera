@@ -52,7 +52,7 @@ public abstract class ppd extends pnm {
         aE.put(cls, ppdVar);
     }
 
-    public static void H(ppd ppdVar) {
+    public static void H(ppd ppdVar) throws ppp {
         if (ppdVar == null || ppdVar.n()) {
             return;
         }
@@ -63,7 +63,7 @@ public abstract class ppd extends pnm {
         return new poq(pqmVar, obj, pqmVar2, new ppc(i, pryVar));
     }
 
-    public static ppd o(ppd ppdVar, InputStream inputStream) {
+    public static ppd o(ppd ppdVar, InputStream inputStream) throws ppp {
         ppd ppdVar2;
         pos a = pos.a();
         try {
@@ -107,7 +107,7 @@ public abstract class ppd extends pnm {
                     b.f(ppdVar2);
                     try {
                         H.z(0);
-                    } catch (ppp e) {
+                    } catch (Exception e) {
                         throw e;
                     }
                 } catch (RuntimeException e2) {
@@ -115,16 +115,8 @@ public abstract class ppd extends pnm {
                         throw e2;
                     }
                     throw ((ppp) e2.getCause());
-                } catch (ppp e3) {
-                    if (!e3.a) {
-                        throw e3;
-                    }
-                    throw new ppp(e3);
-                } catch (IOException e4) {
-                    if (!(e4.getCause() instanceof ppp)) {
-                        throw new ppp(e4);
-                    }
-                    throw ((ppp) e4.getCause());
+                } catch (Exception e3) {
+                    e3.printStackTrace();
                 }
             }
             H(ppdVar2);
@@ -139,13 +131,13 @@ public abstract class ppd extends pnm {
         }
     }
 
-    public static ppd p(ppd ppdVar, byte[] bArr) {
+    public static ppd p(ppd ppdVar, byte[] bArr) throws ppp {
         ppd u = u(ppdVar, bArr, 0, bArr.length, pos.a());
         H(u);
         return u;
     }
 
-    public static ppd q(ppd ppdVar, InputStream inputStream, pos posVar) {
+    public static ppd q(ppd ppdVar, InputStream inputStream, pos posVar) throws ppp {
         poh H = poh.H(inputStream);
         ppd ppdVar2 = (ppd) ppdVar.G(4);
         try {
@@ -159,11 +151,6 @@ public abstract class ppd extends pnm {
                 throw e;
             }
             throw new ppp(e);
-        } catch (IOException e2) {
-            if (!(e2.getCause() instanceof ppp)) {
-                throw new ppp(e2);
-            }
-            throw ((ppp) e2.getCause());
         } catch (RuntimeException e3) {
             if (!(e3.getCause() instanceof ppp)) {
                 throw e3;
@@ -172,7 +159,7 @@ public abstract class ppd extends pnm {
         }
     }
 
-    public static ppd r(ppd ppdVar, ByteBuffer byteBuffer, pos posVar) {
+    public static ppd r(ppd ppdVar, ByteBuffer byteBuffer, pos posVar) throws ppp {
         poh J;
         int i = poh.d;
         if (byteBuffer.hasArray()) {
@@ -198,11 +185,6 @@ public abstract class ppd extends pnm {
                 throw e;
             }
             throw new ppp(e);
-        } catch (IOException e2) {
-            if (!(e2.getCause() instanceof ppp)) {
-                throw new ppp(e2);
-            }
-            throw ((ppp) e2.getCause());
         } catch (RuntimeException e3) {
             if (!(e3.getCause() instanceof ppp)) {
                 throw e3;
@@ -211,39 +193,27 @@ public abstract class ppd extends pnm {
         }
     }
 
-    public static ppd s(ppd ppdVar, byte[] bArr, pos posVar) {
+    public static ppd s(ppd ppdVar, byte[] bArr, pos posVar) throws ppp {
         ppd u = u(ppdVar, bArr, 0, bArr.length, posVar);
         H(u);
         return u;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static ppd t(ppd ppdVar, poh pohVar, pos posVar) {
+    public static ppd t(ppd ppdVar, poh pohVar, pos posVar) throws ppp {
         ppd ppdVar2 = (ppd) ppdVar.G(4);
         try {
             prb b = pqu.a.b(ppdVar2);
             b.h(ppdVar2, poi.p(pohVar), posVar);
             b.f(ppdVar2);
             return ppdVar2;
-        } catch (ppp e) {
-            if (!e.a) {
-                throw e;
-            }
-            throw new ppp(e);
-        } catch (IOException e2) {
-            if (!(e2.getCause() instanceof ppp)) {
-                throw new ppp(e2);
-            }
-            throw ((ppp) e2.getCause());
-        } catch (RuntimeException e3) {
-            if (!(e3.getCause() instanceof ppp)) {
-                throw e3;
-            }
-            throw ((ppp) e3.getCause());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        return null;
     }
 
-    public static ppd u(ppd ppdVar, byte[] bArr, int i, int i2, pos posVar) {
+    public static ppd u(ppd ppdVar, byte[] bArr, int i, int i2, pos posVar) throws ppp {
         ppd ppdVar2 = (ppd) ppdVar.G(4);
         try {
             prb b = pqu.a.b(ppdVar2);
@@ -253,19 +223,10 @@ public abstract class ppd extends pnm {
                 return ppdVar2;
             }
             throw new RuntimeException();
-        } catch (IOException e) {
-            if (!(e.getCause() instanceof ppp)) {
-                throw new ppp(e);
-            }
-            throw ((ppp) e.getCause());
-        } catch (IndexOutOfBoundsException e2) {
-            throw ppp.i();
-        } catch (ppp e3) {
-            if (!e3.a) {
-                throw e3;
-            }
-            throw new ppp(e3);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        return null;
     }
 
     public static ppj v(ppj ppjVar) {

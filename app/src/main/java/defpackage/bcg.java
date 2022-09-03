@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: bcg  reason: default package */
 /* loaded from: classes.dex */
@@ -33,7 +34,7 @@ public final class bcg extends Exception {
             list.add(th);
             return;
         }
-        for (Throwable th2 : ((bcg) th).b) {
+        for (Throwable th2 : (Set<Throwable>) ((bcg) th).b) {
             c(th2, list);
         }
     }

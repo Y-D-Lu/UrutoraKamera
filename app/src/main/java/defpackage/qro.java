@@ -201,7 +201,7 @@ public class qro implements qrg, qpu, qru {
                     qvrVar = qrp.a;
                     break;
                 }
-                qvrVar = x(v, new qpy(P(obj)));
+                qvrVar = (qvr) x(v, new qpy(P(obj)));
             } while (qvrVar == qrp.c);
             if (qvrVar == qrp.b) {
                 return true;
@@ -239,7 +239,7 @@ public class qro implements qrg, qpu, qru {
                             throw new IllegalStateException(qno.a("Cannot happen in ", v2).toString());
                         }
                         if (x != qrp.c) {
-                            qvrVar = x;
+                            qvrVar = (qvr) x;
                             break;
                         }
                     }
@@ -633,7 +633,7 @@ public class qro implements qrg, qpu, qru {
             th = null;
         }
         if (th instanceof CancellationException) {
-            cancellationException = th;
+            cancellationException = (CancellationException) th;
         }
         return cancellationException == null ? new qrh(qno.a("Parent job is ", O(v)), th, this) : cancellationException;
     }

@@ -26,7 +26,7 @@ public abstract class pnm implements pqm {
             pom ai = pom.ai(bArr);
             fD(ai);
             return plk.l(ai, bArr);
-        } catch (IOException e) {
+        } catch (Exception e) {
             String name = getClass().getName();
             StringBuilder sb = new StringBuilder(String.valueOf(name).length() + 72);
             sb.append("Serializing ");
@@ -55,7 +55,7 @@ public abstract class pnm implements pqm {
             fD(ai);
             ai.ak();
             return bArr;
-        } catch (IOException e) {
+        } catch (Exception e) {
             String name = getClass().getName();
             StringBuilder sb = new StringBuilder(String.valueOf(name).length() + 72);
             sb.append("Serializing ");

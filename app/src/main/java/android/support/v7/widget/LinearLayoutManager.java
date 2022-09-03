@@ -22,8 +22,8 @@ import defpackage.pd;
 import defpackage.pe;
 import defpackage.pq;
 import defpackage.qb;
-import defpackage.qc;
-import defpackage.qd;
+import android.view.qc;
+import android.view.qd;
 import defpackage.qi;
 import defpackage.qn;
 import defpackage.qo;
@@ -317,22 +317,22 @@ public class LinearLayoutManager extends qc implements qn {
         return gh.d(qpVar, this.j, ad(!this.e), ac(!this.e), this, this.e);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int A(qp qpVar) {
         return bs(qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int B(qp qpVar) {
         return c(qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int C(qp qpVar) {
         return br(qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int D(qp qpVar) {
         return bs(qpVar);
     }
@@ -451,7 +451,7 @@ public class LinearLayoutManager extends qc implements qn {
         return this.i == 0 ? new PointF(i2, DisplayHelper.DENSITY) : new PointF(DisplayHelper.DENSITY, i2);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final Parcelable J() {
         pe peVar = this.n;
         if (peVar != null) {
@@ -489,7 +489,7 @@ public class LinearLayoutManager extends qc implements qn {
         return this.i == 0 ? this.r.a(i, i2, i4, i3) : this.s.a(i, i2, i4, i3);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final View L(int i) {
         int ai = ai();
         if (ai == 0) {
@@ -505,7 +505,7 @@ public class LinearLayoutManager extends qc implements qn {
         return super.L(i);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void M(String str) {
         if (this.n == null) {
             super.M(str);
@@ -531,7 +531,7 @@ public class LinearLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void P(AccessibilityEvent accessibilityEvent) {
         super.P(accessibilityEvent);
         if (ai() > 0) {
@@ -545,7 +545,7 @@ public class LinearLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void Q(Parcelable parcelable) {
         if (parcelable instanceof pe) {
             pe peVar = (pe) parcelable;
@@ -557,7 +557,7 @@ public class LinearLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void R(int i) {
         this.l = i;
         this.m = Integer.MIN_VALUE;
@@ -592,17 +592,17 @@ public class LinearLayoutManager extends qc implements qn {
         aN();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean U() {
         return this.i == 0;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean V() {
         return this.i == 1;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean W() {
         return true;
     }
@@ -616,7 +616,7 @@ public class LinearLayoutManager extends qc implements qn {
         return this.j.h() == 0 && this.j.e() == 0;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean Z() {
         if (this.B != 1073741824 && this.A != 1073741824) {
             int ai = ai();
@@ -630,7 +630,7 @@ public class LinearLayoutManager extends qc implements qn {
         return false;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void aa(int i, int i2, qp qpVar, ou ouVar) {
         if (1 == this.i) {
             i = i2;
@@ -643,7 +643,7 @@ public class LinearLayoutManager extends qc implements qn {
         t(qpVar, this.a, ouVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void ab(int i, ou ouVar) {
         boolean z;
         int i2;
@@ -684,18 +684,18 @@ public class LinearLayoutManager extends qc implements qn {
         return this.i == 0 ? this.r.a(i, i2, i3, 320) : this.s.a(i, i2, i3, 320);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void af(RecyclerView recyclerView) {
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void ag(RecyclerView recyclerView, int i) {
         qo qoVar = new qo(recyclerView.getContext());
         qoVar.b = i;
         aT(qoVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public int d(int i, qi qiVar, qp qpVar) {
         if (this.i == 1) {
             return 0;
@@ -703,7 +703,7 @@ public class LinearLayoutManager extends qc implements qn {
         return H(i, qiVar, qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public int e(int i, qi qiVar, qp qpVar) {
         if (this.i == 0) {
             return 0;
@@ -711,7 +711,7 @@ public class LinearLayoutManager extends qc implements qn {
         return H(i, qiVar, qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public qd f() {
         return new qd(-2, -2);
     }
@@ -772,7 +772,7 @@ public class LinearLayoutManager extends qc implements qn {
         return view != null ? view : view2 == null ? view3 : view2;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public View j(View view, int i, qi qiVar, qp qpVar) {
         int E;
         View bv;
@@ -882,7 +882,7 @@ public class LinearLayoutManager extends qc implements qn {
     public void l(qi qiVar, qp qpVar, pb pbVar, int i) {
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public void n(qi qiVar, qp qpVar) {
         View i;
         int i2;
@@ -1130,7 +1130,7 @@ public class LinearLayoutManager extends qc implements qn {
         this.b = this.d;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public void o(qp qpVar) {
         this.n = null;
         this.l = -1;
@@ -1147,7 +1147,7 @@ public class LinearLayoutManager extends qc implements qn {
         aN();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public boolean s() {
         return this.n == null && this.b == this.d;
     }
@@ -1160,12 +1160,12 @@ public class LinearLayoutManager extends qc implements qn {
         ouVar.a(i, Math.max(0, pdVar.g));
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int y(qp qpVar) {
         return c(qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int z(qp qpVar) {
         return br(qpVar);
     }

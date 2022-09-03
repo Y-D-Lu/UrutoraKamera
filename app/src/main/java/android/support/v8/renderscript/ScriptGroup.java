@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* loaded from: classes.dex */
 public final class ScriptGroup extends BaseObj {
@@ -70,11 +71,11 @@ public final class ScriptGroup extends BaseObj {
                     z &= calcOrderRecurse(node, 1);
                 }
             }
-            Collections.sort(this.mNodes, new Comparator() { // from class: android.support.v8.renderscript.ScriptGroup.Builder.1
-                @Override // java.util.Comparator
-                public int compare(Node node2, Node node3) {
-                    return node2.mOrder - node3.mOrder;
-                }
+            Collections.sort(this.mNodes, new Comparator() {
+                @Override
+                public int compare(Object o1, Object o2) {
+                    return ((Node)o1).mOrder - ((Node)o2).mOrder;
+                } // from class: android.support.v8.renderscript.ScriptGroup.Builder.1
             });
             return z;
         }
@@ -654,10 +655,10 @@ public final class ScriptGroup extends BaseObj {
 
         public void set(Object obj) {
             this.mValue = obj;
-            for (Pair pair : this.mArgIndex) {
+            for (Pair pair : (Set<Pair>) this.mArgIndex) {
                 ((Closure) pair.first).setArg(((Integer) pair.second).intValue(), obj);
             }
-            for (Pair pair2 : this.mFieldID) {
+            for (Pair pair2 : (Set<Pair>) this.mFieldID) {
                 ((Closure) pair2.first).setGlobal((Script.FieldID) pair2.second, obj);
             }
         }
@@ -771,7 +772,6 @@ public final class ScriptGroup extends BaseObj {
                     i6++;
                 }
             }
-            i5 = i;
         }
     }
 

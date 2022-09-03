@@ -58,11 +58,11 @@ public final class hwm {
                         hwhVar.k.a(2);
                         plk.af(plk.Z(new Callable() { // from class: hwe
                             @Override // java.util.concurrent.Callable
-                            public final Object call() {
+                            public final Object call() throws IOException {
                                 ljf ljfVar;
-                                InputStream open;
+                                InputStream open = null;
                                 long j;
-                                Object obj;
+                                Object obj = null;
                                 int i3;
                                 hwh hwhVar2 = hwhVar;
                                 String str2 = str;

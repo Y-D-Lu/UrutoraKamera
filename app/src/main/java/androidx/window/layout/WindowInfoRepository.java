@@ -11,11 +11,11 @@ import defpackage.qtr;
 
 /* loaded from: classes.dex */
 public interface WindowInfoRepository {
-    public static final Companion Companion = Companion.$$INSTANCE;
+    public static final Companion mCompanion = Companion.$$INSTANCE;
 
     /* renamed from: androidx.window.layout.WindowInfoRepository$-CC  reason: invalid class name */
     /* loaded from: classes.dex */
-    public final /* synthetic */ class CC {
+    public static final /* synthetic */ class CC {
         public static WindowInfoRepository getOrCreate(Activity activity) {
             return WindowInfoRepository.Companion.getOrCreate(activity);
         }
@@ -55,14 +55,14 @@ public interface WindowInfoRepository {
             return tag;
         }
 
-        public final WindowInfoRepository getOrCreate(Activity activity) {
+        public static WindowInfoRepository getOrCreate(Activity activity) {
             activity.getClass();
             Object tag = activity.getWindow().getDecorView().getTag(R.id.androidx_window_activity_scope);
             WindowInfoRepositoryImpl windowInfoRepositoryImpl = null;
             if (true != (tag instanceof WindowInfoRepository)) {
                 tag = null;
             }
-            WindowInfoRepositoryImpl windowInfoRepositoryImpl2 = (WindowInfoRepository) tag;
+            WindowInfoRepositoryImpl windowInfoRepositoryImpl2 = (WindowInfoRepositoryImpl) tag;
             if (true != (windowInfoRepositoryImpl2 instanceof WindowInfoRepository)) {
                 windowInfoRepositoryImpl2 = null;
             }
@@ -70,7 +70,7 @@ public interface WindowInfoRepository {
                 int i = R.id.androidx_window_activity_scope;
                 Object tag2 = activity.getWindow().getDecorView().getTag(i);
                 if (true == (tag2 instanceof WindowInfoRepositoryImpl)) {
-                    windowInfoRepositoryImpl = tag2;
+                    windowInfoRepositoryImpl = (WindowInfoRepositoryImpl) tag2;
                 }
                 WindowInfoRepositoryImpl windowInfoRepositoryImpl3 = windowInfoRepositoryImpl;
                 if (windowInfoRepositoryImpl3 == null) {
@@ -85,12 +85,12 @@ public interface WindowInfoRepository {
             return decorator.decorate(windowInfoRepositoryImpl2);
         }
 
-        public final void overrideDecorator(WindowInfoRepositoryDecorator windowInfoRepositoryDecorator) {
+        public static void overrideDecorator(WindowInfoRepositoryDecorator windowInfoRepositoryDecorator) {
             windowInfoRepositoryDecorator.getClass();
             decorator = windowInfoRepositoryDecorator;
         }
 
-        public final void reset() {
+        public static void reset() {
             decorator = EmptyDecorator.INSTANCE;
         }
     }

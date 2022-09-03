@@ -3,6 +3,7 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.ConcurrentModificationException;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: alf  reason: default package */
 /* loaded from: classes.dex */
@@ -16,7 +17,7 @@ public final class alf extends gd {
     @Override // defpackage.gd
     public final void p(int i) {
         try {
-            for (gd gdVar : this.a) {
+            for (gd gdVar : (Set<gd>) this.a) {
                 gdVar.p(i);
             }
         } catch (ConcurrentModificationException e) {
@@ -27,7 +28,7 @@ public final class alf extends gd {
     @Override // defpackage.gd
     public final void q(int i, float f, int i2) {
         try {
-            for (gd gdVar : this.a) {
+            for (gd gdVar : (Set<gd>) this.a) {
                 gdVar.q(i, f, i2);
             }
         } catch (ConcurrentModificationException e) {
@@ -38,7 +39,7 @@ public final class alf extends gd {
     @Override // defpackage.gd
     public final void r(int i) {
         try {
-            for (gd gdVar : this.a) {
+            for (gd gdVar : (Set<gd>) this.a) {
                 gdVar.r(i);
             }
         } catch (ConcurrentModificationException e) {

@@ -4,6 +4,7 @@ import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ny;
 
 import com.hdrindicator.DisplayHelper;
 

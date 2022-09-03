@@ -7,7 +7,7 @@ public final class lif implements Comparable {
     public static final lif b = c(0);
     public static final lif c = new lif(-1);
     public static final lif d = c(32);
-    public final int e;
+    public int e;
 
     public lif() {
     }

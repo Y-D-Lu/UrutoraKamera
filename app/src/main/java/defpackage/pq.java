@@ -2,6 +2,7 @@ package defpackage;
 
 import android.graphics.Rect;
 import android.view.View;
+import android.view.qc;
 
 /* renamed from: pq  reason: default package */
 /* loaded from: classes2.dex */

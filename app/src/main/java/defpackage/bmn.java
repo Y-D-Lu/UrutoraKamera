@@ -3,6 +3,7 @@ package defpackage;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
+import android.os.RemoteException;
 
 /* renamed from: bmn  reason: default package */
 /* loaded from: classes.dex */
@@ -19,6 +20,8 @@ public class bmn implements IInterface {
     public final void A(int i, Parcel parcel) {
         try {
             this.a.transact(i, parcel, null, 1);
+        } catch (RemoteException e) {
+            e.printStackTrace();
         } finally {
             parcel.recycle();
         }
@@ -45,10 +48,13 @@ public class bmn implements IInterface {
             } catch (RuntimeException e) {
                 obtain.recycle();
                 throw e;
+            } catch (RemoteException e) {
+                e.printStackTrace();
             }
         } finally {
             parcel.recycle();
         }
+        return obtain;
     }
 
     public final void z(int i, Parcel parcel) {
@@ -56,6 +62,8 @@ public class bmn implements IInterface {
         try {
             this.a.transact(i, parcel, obtain, 0);
             obtain.readException();
+        } catch (RemoteException e) {
+            e.printStackTrace();
         } finally {
             parcel.recycle();
             obtain.recycle();

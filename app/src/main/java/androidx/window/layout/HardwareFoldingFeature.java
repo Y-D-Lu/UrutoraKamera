@@ -9,13 +9,13 @@ import defpackage.qno;
 
 /* loaded from: classes.dex */
 public final class HardwareFoldingFeature implements FoldingFeature {
-    public static final Companion Companion = new Companion(null);
+    public static final Companion mCompanion = new Companion(null);
     private final Bounds featureBounds;
     private final FoldingFeature.State state;
     private final Type type;
 
     /* loaded from: classes.dex */
-    public final class Companion {
+    public static final class Companion {
         private Companion() {
         }
 
@@ -23,7 +23,7 @@ public final class HardwareFoldingFeature implements FoldingFeature {
             this();
         }
 
-        public final void validateFeatureBounds$window_release(Bounds bounds) {
+        public static void validateFeatureBounds$window_release(Bounds bounds) {
             bounds.getClass();
             if (bounds.getWidth() == 0 && bounds.getHeight() == 0) {
                 throw new IllegalArgumentException("Bounds must be non zero".toString());
@@ -35,14 +35,14 @@ public final class HardwareFoldingFeature implements FoldingFeature {
     }
 
     /* loaded from: classes.dex */
-    public final class Type {
-        public static final Companion Companion = new Companion(null);
+    public static final class Type {
+        public static final Companion mCompanion = new Companion(null);
         private static final Type FOLD = new Type("FOLD");
         private static final Type HINGE = new Type("HINGE");
-        private final String description;
+        private static String description;
 
         /* loaded from: classes.dex */
-        public final class Companion {
+        public static final class Companion {
             private Companion() {
             }
 
@@ -122,10 +122,10 @@ public final class HardwareFoldingFeature implements FoldingFeature {
 
     @Override // androidx.window.layout.FoldingFeature
     public boolean isSeparating() {
-        if (qno.c(this.type, Type.Companion.getHINGE())) {
+        if (qno.c(this.type, Type.mCompanion.getHINGE())) {
             return true;
         }
-        return qno.c(this.type, Type.Companion.getFOLD()) && qno.c(getState(), FoldingFeature.State.HALF_OPENED);
+        return qno.c(this.type, Type.mCompanion.getFOLD()) && qno.c(getState(), FoldingFeature.State.HALF_OPENED);
     }
 
     public String toString() {

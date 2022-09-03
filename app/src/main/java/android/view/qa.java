@@ -1,6 +1,4 @@
-package defpackage;
-
-import android.view.View;
+package android.view;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: qa  reason: default package */
@@ -14,7 +12,7 @@ public final class qa implements rz {
         this.a = qcVar;
     }
 
-    @Override // defpackage.rz
+    @Override // android.view.rz
     public final int a(View view) {
         switch (this.b) {
             case 0:
@@ -24,7 +22,7 @@ public final class qa implements rz {
         }
     }
 
-    @Override // defpackage.rz
+    @Override // android.view.rz
     public final int b(View view) {
         switch (this.b) {
             case 0:
@@ -34,7 +32,7 @@ public final class qa implements rz {
         }
     }
 
-    @Override // defpackage.rz
+    @Override // android.view.rz
     public final int c() {
         switch (this.b) {
             case 0:
@@ -46,7 +44,7 @@ public final class qa implements rz {
         }
     }
 
-    @Override // defpackage.rz
+    @Override // android.view.rz
     public final int d() {
         switch (this.b) {
             case 0:
@@ -56,7 +54,7 @@ public final class qa implements rz {
         }
     }
 
-    @Override // defpackage.rz
+    @Override // android.view.rz
     public final View e(int i) {
         switch (this.b) {
             case 0:

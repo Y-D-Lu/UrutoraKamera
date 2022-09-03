@@ -72,7 +72,7 @@ public final class ann implements ank, apx {
             kus l = kus.l();
             String.format("%s %s executed; reschedule = %s", getClass().getSimpleName(), str, Boolean.valueOf(z));
             l.h(new Throwable[0]);
-            for (ank ankVar : this.j) {
+            for (ank ankVar : (Set<ank>) this.j) {
                 ankVar.a(str, z);
             }
         }

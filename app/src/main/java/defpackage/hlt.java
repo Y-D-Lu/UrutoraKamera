@@ -7,7 +7,7 @@ import com.google.android.apps.camera.remotecontrol.RemoteControlService;
 /* renamed from: hlt  reason: default package */
 /* loaded from: classes.dex */
 public final class hlt extends bmo implements IInterface {
-    final /* synthetic */ RemoteControlService a;
+    /* synthetic */ RemoteControlService a;
 
     public hlt() {
         super("com.google.android.apps.camera.remotecontrol.IRemoteControlService");

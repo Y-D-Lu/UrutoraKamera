@@ -51,7 +51,7 @@ public abstract class kmz extends bmo implements kna {
                 return false;
             }
             return Arrays.equals(w(), (byte[]) kog.c(knaVar.d()));
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.e("GoogleCertificates", "Failed to get Google certificates from remote", e);
             return false;
         }

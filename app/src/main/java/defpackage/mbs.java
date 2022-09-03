@@ -6,7 +6,7 @@ import java.util.Set;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: mbs  reason: default package */
 /* loaded from: classes2.dex */
-public final class mbs extends Enum {
+public final class mbs{
     public static final mbs a;
     public static final mbs b;
     public static final mbs c;

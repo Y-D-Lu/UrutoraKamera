@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: fjz  reason: default package */
 /* loaded from: classes.dex */
 public final class fjz {
-    public final hsr a;
-    public final pcw b;
-    public final Float c;
+    public hsr a;
+    public pcw b;
+    public Float c;
 
     public fjz() {
     }

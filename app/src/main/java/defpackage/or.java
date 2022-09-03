@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
+import android.view.qc;
 
 import com.hdrindicator.DisplayHelper;
 

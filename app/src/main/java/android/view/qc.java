@@ -1,4 +1,4 @@
-package defpackage;
+package android.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,11 +10,23 @@ import android.os.Parcelable;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 
 import java.util.ArrayList;
+
+import defpackage.gl;
+import defpackage.hb;
+import defpackage.jt;
+import defpackage.kkm;
+import defpackage.ou;
+import defpackage.pu;
+import defpackage.py;
+import defpackage.qb;
+import defpackage.qi;
+import defpackage.qo;
+import defpackage.qp;
+import defpackage.qs;
+import android.view.rz;
 
 /* renamed from: qc  reason: default package */
 /* loaded from: classes.dex */
@@ -443,7 +455,7 @@ public abstract class qc {
     }
 
     public final void aM(int i) {
-        ny nyVar;
+        ny nyVar = null;
         int b;
         View h;
         if (au(i) == null || (h = nyVar.c.h((b = (nyVar = this.p).b(i)))) == null) {
@@ -723,7 +735,7 @@ public abstract class qc {
         Lc8:
             return r8
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.qc.aX(android.support.v7.widget.RecyclerView, android.view.View, android.graphics.Rect, boolean, boolean):boolean");
+        throw new UnsupportedOperationException("Method not decompiled: android.view.qc.aX(android.support.v7.widget.RecyclerView, android.view.View, android.graphics.Rect, boolean, boolean):boolean");
     }
 
     public final boolean aY(View view, int i, int i2, qd qdVar) {

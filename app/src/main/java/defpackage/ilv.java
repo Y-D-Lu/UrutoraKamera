@@ -4,10 +4,10 @@ package defpackage;
 /* loaded from: classes.dex */
 public final class ilv {
     public static final ilv a = a(-1, -1, 0, 0);
-    public final long b;
-    public final long c;
-    private final long d;
-    private final long e;
+    public long b;
+    public long c;
+    private long d;
+    private long e;
 
     public ilv() {
     }

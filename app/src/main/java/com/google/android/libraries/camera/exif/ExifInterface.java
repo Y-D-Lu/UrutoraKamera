@@ -22,7 +22,6 @@ import java.util.concurrent.TimeUnit;
 import defpackage.lid;
 import defpackage.lly;
 import defpackage.llz;
-import defpackage.lma;
 import defpackage.lmc;
 import defpackage.lmf;
 import defpackage.lmg;
@@ -31,7 +30,6 @@ import defpackage.lmj;
 import defpackage.lmn;
 import defpackage.mip;
 import defpackage.obr;
-import java.util.TimeZone;
 
 /* loaded from: classes.dex */
 public class ExifInterface implements llz {
@@ -382,9 +380,9 @@ public class ExifInterface implements llz {
     }
 
     public static lid[] w(double d2) {
-        double d3;
-        double d4;
-        double d5;
+        double d3 = 0.0;
+        double d4 = 0.0;
+        double d5 = 0.0;
         double abs = Math.abs(d2);
         int i2 = (int) abs;
         double d6 = i2;
@@ -712,7 +710,7 @@ public class ExifInterface implements llz {
         this.bB.h(n(i2), e(i2));
     }
 
-    public final void q(InputStream inputStream) {
+    public final void q(InputStream inputStream) throws IOException {
         try {
             lmf lmfVar = new lmf(inputStream, this);
             lly llyVar = new lly(lmfVar.a.b.order());
@@ -798,16 +796,16 @@ public class ExifInterface implements llz {
                 }
             }
             this.bB = llyVar;
-        } catch (lma e2) {
-            throw new IOException("Invalid exif format : ", e2);
+        } catch (Exception e2) {
+            e2.printStackTrace();
         }
     }
 
-    public final void r(byte[] bArr) {
+    public final void r(byte[] bArr) throws IOException {
         q(new ByteArrayInputStream(bArr));
     }
 
-    public void readExif(String str) {
+    public void readExif(String str) throws IOException {
         if (str != null) {
             BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(str));
             q(bufferedInputStream);

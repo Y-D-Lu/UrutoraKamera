@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+import android.view.qc;
 
 import androidx.viewpager2.widget.ViewPager2;
 

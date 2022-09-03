@@ -5,23 +5,23 @@ import android.graphics.Rect;
 /* renamed from: fkb  reason: default package */
 /* loaded from: classes.dex */
 public final class fkb {
-    public final boolean a;
-    public final float b;
-    public final String c;
-    public final boolean d;
-    public final boolean e;
-    public final float f;
-    public final Boolean g;
-    public final Rect h;
-    public final Boolean i;
-    public final Boolean j;
-    public final pba k;
-    public final ojc l;
-    public final pbt m;
-    public final boolean n;
-    public final int o;
-    public final int p;
-    private final String q;
+    public boolean a;
+    public float b;
+    public String c;
+    public boolean d;
+    public boolean e;
+    public float f;
+    public Boolean g;
+    public Rect h;
+    public Boolean i;
+    public Boolean j;
+    public pba k;
+    public ojc l;
+    public pbt m;
+    public boolean n;
+    public int o;
+    public int p;
+    private String q;
 
     public fkb() {
     }

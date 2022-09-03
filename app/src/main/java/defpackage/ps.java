@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.view.View;
+import android.view.qc;
 
 /* renamed from: ps  reason: default package */
 /* loaded from: classes.dex */

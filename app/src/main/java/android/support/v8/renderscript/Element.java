@@ -15,9 +15,9 @@ public class Element extends BaseObj {
 
     /* renamed from: android.support.v8.renderscript.Element$1  reason: invalid class name */
     /* loaded from: classes.dex */
-    /* synthetic */ class AnonymousClass1 {
-        static final /* synthetic */ int[] $SwitchMap$android$support$v8$renderscript$Element$DataKind;
-        static final /* synthetic */ int[] $SwitchMap$android$support$v8$renderscript$Element$DataType;
+    /* synthetic */static class AnonymousClass1 {
+        static/* synthetic */ int[] $SwitchMap$android$support$v8$renderscript$Element$DataKind;
+        static/* synthetic */ int[] $SwitchMap$android$support$v8$renderscript$Element$DataType;
 
         static {
             int[] iArr = new int[DataKind.values().length];

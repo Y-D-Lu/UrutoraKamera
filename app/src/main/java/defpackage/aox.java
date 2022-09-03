@@ -9,6 +9,7 @@ import android.text.TextUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: aox  reason: default package */
 /* loaded from: classes.dex */
@@ -93,7 +94,7 @@ public final class aox implements ank {
         if ("ACTION_CONSTRAINTS_CHANGED".equals(action)) {
             b();
             synchronized (this.g) {
-                for (Intent intent2 : this.g) {
+                for (Intent intent2 : (Set<Intent>) this.g) {
                     if ("ACTION_CONSTRAINTS_CHANGED".equals(intent2.getAction())) {
                         return;
                     }

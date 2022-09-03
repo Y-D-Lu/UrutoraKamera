@@ -99,7 +99,7 @@ public class Sampler extends BaseObj {
         super(j, renderScript);
     }
 
-    public static Sampler CLAMP_LINEAR(RenderScript renderScript) {
+    public Sampler CLAMP_LINEAR(RenderScript renderScript) {
         if (renderScript.mSampler_CLAMP_LINEAR == null) {
             Builder builder = new Builder(renderScript);
             builder.setMinification(Value.LINEAR);
@@ -111,7 +111,7 @@ public class Sampler extends BaseObj {
         return renderScript.mSampler_CLAMP_LINEAR;
     }
 
-    public static Sampler CLAMP_LINEAR_MIP_LINEAR(RenderScript renderScript) {
+    public Sampler CLAMP_LINEAR_MIP_LINEAR(RenderScript renderScript) {
         if (renderScript.mSampler_CLAMP_LINEAR_MIP_LINEAR == null) {
             Builder builder = new Builder(renderScript);
             builder.setMinification(Value.LINEAR_MIP_LINEAR);
@@ -123,7 +123,7 @@ public class Sampler extends BaseObj {
         return renderScript.mSampler_CLAMP_LINEAR_MIP_LINEAR;
     }
 
-    public static Sampler CLAMP_NEAREST(RenderScript renderScript) {
+    public Sampler CLAMP_NEAREST(RenderScript renderScript) {
         if (renderScript.mSampler_CLAMP_NEAREST == null) {
             Builder builder = new Builder(renderScript);
             builder.setMinification(Value.NEAREST);
@@ -135,7 +135,7 @@ public class Sampler extends BaseObj {
         return renderScript.mSampler_CLAMP_NEAREST;
     }
 
-    public static Sampler MIRRORED_REPEAT_LINEAR(RenderScript renderScript) {
+    public Sampler MIRRORED_REPEAT_LINEAR(RenderScript renderScript) {
         if (renderScript.mSampler_MIRRORED_REPEAT_LINEAR == null) {
             Builder builder = new Builder(renderScript);
             builder.setMinification(Value.LINEAR);
@@ -147,7 +147,7 @@ public class Sampler extends BaseObj {
         return renderScript.mSampler_MIRRORED_REPEAT_LINEAR;
     }
 
-    public static Sampler MIRRORED_REPEAT_NEAREST(RenderScript renderScript) {
+    public Sampler MIRRORED_REPEAT_NEAREST(RenderScript renderScript) {
         if (renderScript.mSampler_MIRRORED_REPEAT_NEAREST == null) {
             Builder builder = new Builder(renderScript);
             builder.setMinification(Value.NEAREST);
@@ -159,7 +159,7 @@ public class Sampler extends BaseObj {
         return renderScript.mSampler_MIRRORED_REPEAT_NEAREST;
     }
 
-    public static Sampler WRAP_LINEAR(RenderScript renderScript) {
+    public Sampler WRAP_LINEAR(RenderScript renderScript) {
         if (renderScript.mSampler_WRAP_LINEAR == null) {
             Builder builder = new Builder(renderScript);
             builder.setMinification(Value.LINEAR);
@@ -171,7 +171,7 @@ public class Sampler extends BaseObj {
         return renderScript.mSampler_WRAP_LINEAR;
     }
 
-    public static Sampler WRAP_LINEAR_MIP_LINEAR(RenderScript renderScript) {
+    public Sampler WRAP_LINEAR_MIP_LINEAR(RenderScript renderScript) {
         if (renderScript.mSampler_WRAP_LINEAR_MIP_LINEAR == null) {
             Builder builder = new Builder(renderScript);
             builder.setMinification(Value.LINEAR_MIP_LINEAR);
@@ -183,7 +183,7 @@ public class Sampler extends BaseObj {
         return renderScript.mSampler_WRAP_LINEAR_MIP_LINEAR;
     }
 
-    public static Sampler WRAP_NEAREST(RenderScript renderScript) {
+    public Sampler WRAP_NEAREST(RenderScript renderScript) {
         if (renderScript.mSampler_WRAP_NEAREST == null) {
             Builder builder = new Builder(renderScript);
             builder.setMinification(Value.NEAREST);

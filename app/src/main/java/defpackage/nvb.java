@@ -91,7 +91,7 @@ public final class nvb {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
         enumMap.put(cqj.LOCKED, Float.valueOf(2.0f));

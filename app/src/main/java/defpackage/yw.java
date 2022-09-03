@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Set;
 
 /* renamed from: yw  reason: default package */
 /* loaded from: classes2.dex */
@@ -25,14 +26,14 @@ public final class yw {
     }
 
     private final void e(zg zgVar, int i, ArrayList arrayList) {
-        for (yv yvVar : zgVar.i.j) {
+        for (yv yvVar : (Set<yv>) zgVar.i.j) {
             if (yvVar instanceof yx) {
                 g((yx) yvVar, i, zgVar.j, arrayList, null);
             } else if (yvVar instanceof zg) {
                 g(((zg) yvVar).i, i, zgVar.j, arrayList, null);
             }
         }
-        for (yv yvVar2 : zgVar.j.j) {
+        for (yv yvVar2 : (Set<yv>) zgVar.j.j) {
             if (yvVar2 instanceof yx) {
                 g((yx) yvVar2, i, zgVar.i, arrayList, null);
             } else if (yvVar2 instanceof zg) {
@@ -40,7 +41,7 @@ public final class yw {
             }
         }
         if (i == 1) {
-            for (yv yvVar3 : ((ze) zgVar).a.j) {
+            for (yv yvVar3 : (Set<yv>) ((ze) zgVar).a.j) {
                 if (yvVar3 instanceof yx) {
                     g((yx) yvVar3, 1, null, arrayList, null);
                 }
@@ -75,33 +76,33 @@ public final class yw {
             }
             zgVar.e = zdVar;
             zdVar.c.add(zgVar);
-            for (yv yvVar : zgVar.i.j) {
+            for (yv yvVar : (Set<yv>) zgVar.i.j) {
                 if (yvVar instanceof yx) {
                     g((yx) yvVar, i, yxVar2, arrayList, zdVar);
                 }
             }
-            for (yv yvVar2 : zgVar.j.j) {
+            for (yv yvVar2 : (Set<yv>) zgVar.j.j) {
                 if (yvVar2 instanceof yx) {
                     g((yx) yvVar2, i, yxVar2, arrayList, zdVar);
                 }
             }
             if (i == 1 && (zgVar instanceof ze)) {
-                for (yv yvVar3 : ((ze) zgVar).a.j) {
+                for (yv yvVar3 : (Set<yv>) ((ze) zgVar).a.j) {
                     if (yvVar3 instanceof yx) {
                         g((yx) yvVar3, 1, yxVar2, arrayList, zdVar);
                     }
                 }
             }
-            for (yx yxVar3 : zgVar.i.k) {
+            for (yx yxVar3 : (Set<yx>) zgVar.i.k) {
                 g(yxVar3, i, yxVar2, arrayList, zdVar);
             }
-            for (yx yxVar4 : zgVar.j.k) {
+            for (yx yxVar4 : (Set<yx>) zgVar.j.k) {
                 g(yxVar4, i, yxVar2, arrayList, zdVar);
             }
             if (i != 1 || !(zgVar instanceof ze)) {
                 return;
             }
-            for (yx yxVar5 : ((ze) zgVar).a.k) {
+            for (yx yxVar5 : (Set<yx>) ((ze) zgVar).a.k) {
                 g(yxVar5, 1, yxVar2, arrayList, zdVar);
             }
         }

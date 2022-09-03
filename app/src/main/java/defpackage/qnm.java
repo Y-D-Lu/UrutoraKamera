@@ -153,21 +153,22 @@ public final class qnm {
     }
 
     public static final String h(qlh qlhVar) {
-        String str;
-        if (qlhVar instanceof quz) {
-            return qlhVar.toString();
-        }
-        try {
-            str = qlhVar + '@' + g(qlhVar);
-        } catch (Throwable th) {
-            str = qmd.L(th);
-        }
-        Throwable a = qkn.a(str);
-        String str2 = str;
-        if (a != null) {
-            str2 = ((Object) qlhVar.getClass().getName()) + '@' + g(qlhVar);
-        }
-        return (String) str2;
+        return "not impl yet...";
+//        String str;
+//        if (qlhVar instanceof quz) {
+//            return qlhVar.toString();
+//        }
+//        try {
+//            str = qlhVar + '@' + g(qlhVar);
+//        } catch (Throwable th) {
+//            str = (String) qmd.L(th);
+//        }
+//        Throwable a = qkn.a(str);
+//        String str2 = str;
+//        if (a != null) {
+//            str2 = ((Object) qlhVar.getClass().getName()) + '@' + g(qlhVar);
+//        }
+//        return (String) str2;
     }
 
     public static final Object i(qmy qmyVar, qlh qlhVar) {

@@ -33,7 +33,7 @@ public abstract class poh {
         try {
             podVar.e(i2);
             return podVar;
-        } catch (ppp e2) {
+        } catch (Exception e2) {
             throw new IllegalArgumentException(e2);
         }
     }

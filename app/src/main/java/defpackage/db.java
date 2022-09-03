@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: db  reason: default package */
@@ -25,7 +26,7 @@ public final class db {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final bu b(String str) {
-        for (da daVar : this.b.values()) {
+        for (da daVar : (Set<da>) this.b.values()) {
             if (daVar != null) {
                 bu buVar = daVar.c;
                 if (!str.equals(buVar.k)) {
@@ -52,7 +53,7 @@ public final class db {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final List e() {
         ArrayList arrayList = new ArrayList();
-        for (da daVar : this.b.values()) {
+        for (da daVar : (Set<da>) this.b.values()) {
             if (daVar != null) {
                 arrayList.add(daVar);
             }

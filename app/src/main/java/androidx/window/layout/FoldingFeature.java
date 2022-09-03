@@ -8,12 +8,12 @@ public interface FoldingFeature extends DisplayFeature {
     /* loaded from: classes.dex */
     public final class OcclusionType {
         private final String description;
-        public static final Companion Companion = new Companion(null);
+        public static final Companion mCompanion = new Companion(null);
         public static final OcclusionType NONE = new OcclusionType("NONE");
         public static final OcclusionType FULL = new OcclusionType("FULL");
 
         /* loaded from: classes.dex */
-        public final class Companion {
+        public static final class Companion {
             private Companion() {
             }
 
@@ -32,14 +32,14 @@ public interface FoldingFeature extends DisplayFeature {
     }
 
     /* loaded from: classes.dex */
-    public final class Orientation {
+    public static final class Orientation {
         private final String description;
-        public static final Companion Companion = new Companion(null);
+        public static final Companion mCompanion = new Companion(null);
         public static final Orientation VERTICAL = new Orientation("VERTICAL");
         public static final Orientation HORIZONTAL = new Orientation("HORIZONTAL");
 
         /* loaded from: classes.dex */
-        public final class Companion {
+        public final static class Companion {
             private Companion() {
             }
 
@@ -58,14 +58,14 @@ public interface FoldingFeature extends DisplayFeature {
     }
 
     /* loaded from: classes.dex */
-    public final class State {
-        public static final Companion Companion = new Companion(null);
+    public static final class State {
+        public static final Companion mCompanion = new Companion(null);
         public static final State FLAT = new State("FLAT");
         public static final State HALF_OPENED = new State("HALF_OPENED");
         private final String description;
 
         /* loaded from: classes.dex */
-        public final class Companion {
+        public static final class Companion {
             private Companion() {
             }
 

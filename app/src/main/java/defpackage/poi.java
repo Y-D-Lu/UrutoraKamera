@@ -60,7 +60,7 @@ public final class poi implements pqx {
         }
     }
 
-    private final Object V(prb prbVar, pos posVar) {
+    private final Object V(prb prbVar, pos posVar) throws ppp {
         int i = this.c;
         this.c = psa.c(psa.a(this.b), 4);
         try {
@@ -76,8 +76,8 @@ public final class poi implements pqx {
         }
     }
 
-    private final Object W(prb prbVar, pos posVar) {
-        poh pohVar;
+    private final Object W(prb prbVar, pos posVar) throws ppp {
+        poh pohVar = null;
         int n = this.a.n();
         poh pohVar2 = this.a;
         if (pohVar2.a < pohVar2.b) {
@@ -94,28 +94,28 @@ public final class poi implements pqx {
         throw new ppp("Protocol message had too many levels of nesting.  May be malicious.  Use CodedInputStream.setRecursionLimit() to increase the depth limit.");
     }
 
-    private final void X(int i) {
+    private final void X(int i) throws ppp {
         if (this.a.d() == i) {
             return;
         }
         throw ppp.i();
     }
 
-    private final void Y(int i) {
+    private final void Y(int i) throws ppo {
         if (psa.b(this.b) == i) {
             return;
         }
         throw ppp.a();
     }
 
-    private static final void Z(int i) {
+    private static final void Z(int i) throws ppp {
         if ((i & 3) == 0) {
             return;
         }
         throw ppp.g();
     }
 
-    private static final void aa(int i) {
+    private static final void aa(int i) throws ppp {
         if ((i & 7) == 0) {
             return;
         }
@@ -137,14 +137,17 @@ public final class poi implements pqx {
                     break;
                 case 2:
                     int n = this.a.n();
-                    aa(n);
+                    try {
+                        aa(n);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     int d = this.a.d() + n;
                     do {
                         list.add(Double.valueOf(this.a.b()));
                     } while (this.a.d() < d);
                     return;
                 default:
-                    throw ppp.a();
             }
             do {
                 list.add(Double.valueOf(this.a.b()));
@@ -162,14 +165,17 @@ public final class poi implements pqx {
                 break;
             case 2:
                 int n2 = this.a.n();
-                aa(n2);
+                try {
+                    aa(n2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 int d2 = this.a.d() + n2;
                 do {
                     pooVar.d(this.a.b());
                 } while (this.a.d() < d2);
                 return;
             default:
-                throw ppp.a();
         }
         do {
             pooVar.d(this.a.b());
@@ -191,13 +197,16 @@ public final class poi implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
                 case 2:
                     int d = this.a.d() + this.a.n();
                     do {
                         list.add(Integer.valueOf(this.a.f()));
                     } while (this.a.d() < d);
-                    X(d);
+                    try {
+                        X(d);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     return;
             }
             do {
@@ -216,13 +225,16 @@ public final class poi implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
             case 2:
                 int d2 = this.a.d() + this.a.n();
                 do {
                     ppeVar.g(this.a.f());
                 } while (this.a.d() < d2);
-                X(d2);
+                try {
+                    X(d2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 return;
         }
         do {
@@ -243,7 +255,11 @@ public final class poi implements pqx {
             switch (psa.b(this.b)) {
                 case 2:
                     int n = this.a.n();
-                    Z(n);
+                    try {
+                        Z(n);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     int d = this.a.d() + n;
                     do {
                         list.add(Integer.valueOf(this.a.g()));
@@ -252,7 +268,6 @@ public final class poi implements pqx {
                 case 5:
                     break;
                 default:
-                    throw ppp.a();
             }
             do {
                 list.add(Integer.valueOf(this.a.g()));
@@ -268,7 +283,11 @@ public final class poi implements pqx {
         switch (psa.b(this.b)) {
             case 2:
                 int n2 = this.a.n();
-                Z(n2);
+                try {
+                    Z(n2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 int d2 = this.a.d() + n2;
                 do {
                     ppeVar.g(this.a.g());
@@ -277,7 +296,6 @@ public final class poi implements pqx {
             case 5:
                 break;
             default:
-                throw ppp.a();
         }
         do {
             ppeVar.g(this.a.g());
@@ -299,14 +317,17 @@ public final class poi implements pqx {
                     break;
                 case 2:
                     int n = this.a.n();
-                    aa(n);
+                    try {
+                        aa(n);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     int d = this.a.d() + n;
                     do {
                         list.add(Long.valueOf(this.a.o()));
                     } while (this.a.d() < d);
                     return;
                 default:
-                    throw ppp.a();
             }
             do {
                 list.add(Long.valueOf(this.a.o()));
@@ -324,14 +345,17 @@ public final class poi implements pqx {
                 break;
             case 2:
                 int n2 = this.a.n();
-                aa(n2);
+                try {
+                    aa(n2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 int d2 = this.a.d() + n2;
                 do {
                     pqbVar.d(this.a.o());
                 } while (this.a.d() < d2);
                 return;
             default:
-                throw ppp.a();
         }
         do {
             pqbVar.d(this.a.o());
@@ -351,7 +375,11 @@ public final class poi implements pqx {
             switch (psa.b(this.b)) {
                 case 2:
                     int n = this.a.n();
-                    Z(n);
+                    try {
+                        Z(n);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     int d = this.a.d() + n;
                     do {
                         list.add(Float.valueOf(this.a.c()));
@@ -360,7 +388,6 @@ public final class poi implements pqx {
                 case 5:
                     break;
                 default:
-                    throw ppp.a();
             }
             do {
                 list.add(Float.valueOf(this.a.c()));
@@ -376,7 +403,11 @@ public final class poi implements pqx {
         switch (psa.b(this.b)) {
             case 2:
                 int n2 = this.a.n();
-                Z(n2);
+                try {
+                    Z(n2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 int d2 = this.a.d() + n2;
                 do {
                     powVar.g(this.a.c());
@@ -385,7 +416,6 @@ public final class poi implements pqx {
             case 5:
                 break;
             default:
-                throw ppp.a();
         }
         do {
             powVar.g(this.a.c());
@@ -403,7 +433,11 @@ public final class poi implements pqx {
         if (psa.b(this.b) == 3) {
             int i = this.b;
             do {
-                list.add(V(prbVar, posVar));
+                try {
+                    list.add(V(prbVar, posVar));
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 if (this.a.C() || this.d != 0) {
                     return;
                 }
@@ -412,7 +446,6 @@ public final class poi implements pqx {
             this.d = m;
             return;
         }
-        throw ppp.a();
     }
 
     @Override // defpackage.pqx
@@ -425,13 +458,16 @@ public final class poi implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
                 case 2:
                     int d = this.a.d() + this.a.n();
                     do {
                         list.add(Integer.valueOf(this.a.h()));
                     } while (this.a.d() < d);
-                    X(d);
+                    try {
+                        X(d);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     return;
             }
             do {
@@ -450,13 +486,16 @@ public final class poi implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
             case 2:
                 int d2 = this.a.d() + this.a.n();
                 do {
                     ppeVar.g(this.a.h());
                 } while (this.a.d() < d2);
-                X(d2);
+                try {
+                    X(d2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 return;
         }
         do {
@@ -479,13 +518,16 @@ public final class poi implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
                 case 2:
                     int d = this.a.d() + this.a.n();
                     do {
                         list.add(Long.valueOf(this.a.p()));
                     } while (this.a.d() < d);
-                    X(d);
+                    try {
+                        X(d);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     return;
             }
             do {
@@ -504,13 +546,16 @@ public final class poi implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
             case 2:
                 int d2 = this.a.d() + this.a.n();
                 do {
                     pqbVar.d(this.a.p());
                 } while (this.a.d() < d2);
-                X(d2);
+                try {
+                    X(d2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 return;
         }
         do {
@@ -525,7 +570,11 @@ public final class poi implements pqx {
 
     @Override // defpackage.pqx
     public final void I(Map map, pqf pqfVar, pos posVar) {
-        Y(2);
+        try {
+            Y(2);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         int e = this.a.e(this.a.n());
         Object obj = pqfVar.b;
         Object obj2 = pqfVar.d;
@@ -543,14 +592,12 @@ public final class poi implements pqx {
                         default:
                             try {
                                 if (!U()) {
-                                    throw new ppp("Unable to parse map entry.");
-                                    break;
+                                    return;
                                 }
-                            } catch (ppo e2) {
+                            } catch (Exception e2) {
                                 if (!U()) {
-                                    throw new ppp("Unable to parse map entry.");
+                                    return;
                                 }
-                                break;
                             }
                             break;
                     }
@@ -559,7 +606,7 @@ public final class poi implements pqx {
                 this.a.A(e);
             }
         }
-        map.put(obj, obj2);
+//        map.put(obj, obj2);
     }
 
     @Override // defpackage.pqx
@@ -568,7 +615,11 @@ public final class poi implements pqx {
         if (psa.b(this.b) == 2) {
             int i = this.b;
             do {
-                list.add(W(prbVar, posVar));
+                try {
+                    list.add(W(prbVar, posVar));
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 if (this.a.C() || this.d != 0) {
                     return;
                 }
@@ -577,7 +628,6 @@ public final class poi implements pqx {
             this.d = m;
             return;
         }
-        throw ppp.a();
     }
 
     @Override // defpackage.pqx
@@ -588,7 +638,11 @@ public final class poi implements pqx {
             switch (psa.b(this.b)) {
                 case 2:
                     int n = this.a.n();
-                    Z(n);
+                    try {
+                        Z(n);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     int d = this.a.d() + n;
                     do {
                         list.add(Integer.valueOf(this.a.k()));
@@ -597,7 +651,6 @@ public final class poi implements pqx {
                 case 5:
                     break;
                 default:
-                    throw ppp.a();
             }
             do {
                 list.add(Integer.valueOf(this.a.k()));
@@ -613,7 +666,11 @@ public final class poi implements pqx {
         switch (psa.b(this.b)) {
             case 2:
                 int n2 = this.a.n();
-                Z(n2);
+                try {
+                    Z(n2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 int d2 = this.a.d() + n2;
                 do {
                     ppeVar.g(this.a.k());
@@ -622,7 +679,6 @@ public final class poi implements pqx {
             case 5:
                 break;
             default:
-                throw ppp.a();
         }
         do {
             ppeVar.g(this.a.k());
@@ -644,14 +700,17 @@ public final class poi implements pqx {
                     break;
                 case 2:
                     int n = this.a.n();
-                    aa(n);
+                    try {
+                        aa(n);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     int d = this.a.d() + n;
                     do {
                         list.add(Long.valueOf(this.a.t()));
                     } while (this.a.d() < d);
                     return;
                 default:
-                    throw ppp.a();
             }
             do {
                 list.add(Long.valueOf(this.a.t()));
@@ -669,14 +728,17 @@ public final class poi implements pqx {
                 break;
             case 2:
                 int n2 = this.a.n();
-                aa(n2);
+                try {
+                    aa(n2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 int d2 = this.a.d() + n2;
                 do {
                     pqbVar.d(this.a.t());
                 } while (this.a.d() < d2);
                 return;
             default:
-                throw ppp.a();
         }
         do {
             pqbVar.d(this.a.t());
@@ -698,13 +760,16 @@ public final class poi implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
                 case 2:
                     int d = this.a.d() + this.a.n();
                     do {
                         list.add(Integer.valueOf(this.a.l()));
                     } while (this.a.d() < d);
-                    X(d);
+                    try {
+                        X(d);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     return;
             }
             do {
@@ -723,13 +788,16 @@ public final class poi implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
             case 2:
                 int d2 = this.a.d() + this.a.n();
                 do {
                     ppeVar.g(this.a.l());
                 } while (this.a.d() < d2);
-                X(d2);
+                try {
+                    X(d2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 return;
         }
         do {
@@ -752,13 +820,16 @@ public final class poi implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
                 case 2:
                     int d = this.a.d() + this.a.n();
                     do {
                         list.add(Long.valueOf(this.a.u()));
                     } while (this.a.d() < d);
-                    X(d);
+                    try {
+                        X(d);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     return;
             }
             do {
@@ -777,13 +848,16 @@ public final class poi implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
             case 2:
                 int d2 = this.a.d() + this.a.n();
                 do {
                     pqbVar.d(this.a.u());
                 } while (this.a.d() < d2);
-                X(d2);
+                try {
+                    X(d2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 return;
         }
         do {
@@ -816,13 +890,16 @@ public final class poi implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
                 case 2:
                     int d = this.a.d() + this.a.n();
                     do {
                         list.add(Integer.valueOf(this.a.n()));
                     } while (this.a.d() < d);
-                    X(d);
+                    try {
+                        X(d);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     return;
             }
             do {
@@ -841,13 +918,16 @@ public final class poi implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
             case 2:
                 int d2 = this.a.d() + this.a.n();
                 do {
                     ppeVar.g(this.a.n());
                 } while (this.a.d() < d2);
-                X(d2);
+                try {
+                    X(d2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 return;
         }
         do {
@@ -870,13 +950,16 @@ public final class poi implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
                 case 2:
                     int d = this.a.d() + this.a.n();
                     do {
                         list.add(Long.valueOf(this.a.v()));
                     } while (this.a.d() < d);
-                    X(d);
+                    try {
+                        X(d);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     return;
             }
             do {
@@ -895,13 +978,16 @@ public final class poi implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
             case 2:
                 int d2 = this.a.d() + this.a.n();
                 do {
                     pqbVar.d(this.a.v());
                 } while (this.a.d() < d2);
-                X(d2);
+                try {
+                    X(d2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 return;
         }
         do {
@@ -916,7 +1002,11 @@ public final class poi implements pqx {
 
     @Override // defpackage.pqx
     public final boolean T() {
-        Y(0);
+        try {
+            Y(0);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.D();
     }
 
@@ -931,13 +1021,21 @@ public final class poi implements pqx {
 
     @Override // defpackage.pqx
     public final double a() {
-        Y(1);
+        try {
+            Y(1);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.b();
     }
 
     @Override // defpackage.pqx
     public final float b() {
-        Y(5);
+        try {
+            Y(5);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.c();
     }
 
@@ -964,103 +1062,191 @@ public final class poi implements pqx {
 
     @Override // defpackage.pqx
     public final int e() {
-        Y(0);
+        try {
+            Y(0);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.f();
     }
 
     @Override // defpackage.pqx
     public final int f() {
-        Y(5);
+        try {
+            Y(5);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.g();
     }
 
     @Override // defpackage.pqx
     public final int g() {
-        Y(0);
+        try {
+            Y(0);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.h();
     }
 
     @Override // defpackage.pqx
     public final int h() {
-        Y(5);
+        try {
+            Y(5);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.k();
     }
 
     @Override // defpackage.pqx
     public final int i() {
-        Y(0);
+        try {
+            Y(0);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.l();
     }
 
     @Override // defpackage.pqx
     public final int j() {
-        Y(0);
+        try {
+            Y(0);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.n();
     }
 
     @Override // defpackage.pqx
     public final long k() {
-        Y(1);
+        try {
+            Y(1);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.o();
     }
 
     @Override // defpackage.pqx
     public final long l() {
-        Y(0);
+        try {
+            Y(0);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.p();
     }
 
     @Override // defpackage.pqx
     public final long m() {
-        Y(1);
+        try {
+            Y(1);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.t();
     }
 
     @Override // defpackage.pqx
     public final long n() {
-        Y(0);
+        try {
+            Y(0);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.u();
     }
 
     @Override // defpackage.pqx
     public final long o() {
-        Y(0);
+        try {
+            Y(0);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.v();
     }
 
     @Override // defpackage.pqx
     public final poc q() {
-        Y(2);
+        try {
+            Y(2);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.w();
     }
 
     @Override // defpackage.pqx
     public final Object r(Class cls, pos posVar) {
-        Y(3);
-        return V(pqu.a.a(cls), posVar);
+        try {
+            Y(3);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
+        try {
+            return V(pqu.a.a(cls), posVar);
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.pqx
-    public final Object s(prb prbVar, pos posVar) {
-        Y(3);
-        return V(prbVar, posVar);
+    public final Object s(prb prbVar, pos posVar){
+        try {
+            Y(3);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
+        try {
+            return V(prbVar, posVar);
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.pqx
     public final Object t(Class cls, pos posVar) {
-        Y(2);
-        return W(pqu.a.a(cls), posVar);
+        try {
+            Y(2);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
+        try {
+            return W(pqu.a.a(cls), posVar);
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.pqx
     public final Object u(prb prbVar, pos posVar) {
-        Y(2);
-        return W(prbVar, posVar);
+        try {
+            Y(2);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
+        try {
+            return W(prbVar, posVar);
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.pqx
     public final String v() {
-        Y(2);
+        try {
+            Y(2);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.x();
     }
 
@@ -1090,12 +1276,15 @@ public final class poi implements pqx {
             this.d = m2;
             return;
         }
-        throw ppp.a();
     }
 
     @Override // defpackage.pqx
     public final String x() {
-        Y(2);
+        try {
+            Y(2);
+        } catch (ppo e) {
+            e.printStackTrace();
+        }
         return this.a.y();
     }
 
@@ -1109,13 +1298,16 @@ public final class poi implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
                 case 2:
                     int d = this.a.d() + this.a.n();
                     do {
                         list.add(Boolean.valueOf(this.a.D()));
                     } while (this.a.d() < d);
-                    X(d);
+                    try {
+                        X(d);
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                     return;
             }
             do {
@@ -1134,13 +1326,16 @@ public final class poi implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
             case 2:
                 int d2 = this.a.d() + this.a.n();
                 do {
                     pnuVar.f(this.a.D());
                 } while (this.a.d() < d2);
-                X(d2);
+                try {
+                    X(d2);
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
                 return;
         }
         do {
@@ -1167,6 +1362,5 @@ public final class poi implements pqx {
             this.d = m;
             return;
         }
-        throw ppp.a();
     }
 }

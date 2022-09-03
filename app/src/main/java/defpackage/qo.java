@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
+import android.view.qc;
+import android.view.qd;
 
 import com.google.lens.sdk.LensApi;
 import com.hdrindicator.DisplayHelper;
@@ -23,12 +25,12 @@ public class qo {
     public boolean f;
     public View g;
     public boolean h;
-    protected final LinearInterpolator i;
-    protected final DecelerateInterpolator j;
+    protected LinearInterpolator i;
+    protected DecelerateInterpolator j;
     protected PointF k;
     protected int l;
     protected int m;
-    private final DisplayMetrics n;
+    private DisplayMetrics n;
     private boolean o;
     private float p;
 

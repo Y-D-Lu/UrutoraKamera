@@ -792,7 +792,7 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
         Object obj = this.e;
         if (obj instanceof Activity) {
             try {
-                str = d.s((Activity) obj);
+                str = defpackage.d.s((Activity) obj);
             } catch (IllegalArgumentException e) {
                 str = null;
             }
@@ -894,8 +894,8 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
                     z = jjVar.a;
                 } else {
                     Location location = null;
-                    Location a = d.k(jkVar.b, "android.permission.ACCESS_COARSE_LOCATION") == 0 ? jkVar.a("network") : null;
-                    if (d.k(jkVar.b, "android.permission.ACCESS_FINE_LOCATION") == 0) {
+                    Location a = defpackage.d.k(jkVar.b, "android.permission.ACCESS_COARSE_LOCATION") == 0 ? jkVar.a("network") : null;
+                    if (defpackage.d.k(jkVar.b, "android.permission.ACCESS_FINE_LOCATION") == 0) {
                         location = jkVar.a("gps");
                     }
                     if (location == null || a == null ? location != null : location.getTime() > a.getTime()) {

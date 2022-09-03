@@ -27,7 +27,7 @@ public final class bfn {
         try {
             ArrayList arrayList = new ArrayList();
             boolean z = false;
-            for (bfm bfmVar : this.b) {
+            for (bfm bfmVar : (Set<bfm>) this.b) {
                 if (this.c.contains(bfmVar)) {
                     z = true;
                 } else if (bfmVar.a(cls) && bfmVar.a.isAssignableFrom(cls2)) {
@@ -56,7 +56,7 @@ public final class bfn {
         ArrayList arrayList;
         try {
             arrayList = new ArrayList();
-            for (bfm bfmVar : this.b) {
+            for (bfm bfmVar : (Set<bfm>) this.b) {
                 if (!this.c.contains(bfmVar) && bfmVar.a(cls)) {
                     this.c.add(bfmVar);
                     arrayList.add(e(bfmVar));
@@ -74,7 +74,7 @@ public final class bfn {
     public final synchronized List c(Class cls) {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (bfm bfmVar : this.b) {
+        for (bfm bfmVar : (Set<bfm>) this.b) {
             if (!arrayList.contains(bfmVar.a) && bfmVar.a(cls)) {
                 arrayList.add(bfmVar.a);
             }

@@ -22,6 +22,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 import defpackage.ew;
 import defpackage.yk;
@@ -214,12 +215,12 @@ public class ConstraintLayout extends ViewGroup {
         int i6;
         boolean z2;
         int i7;
-        View findViewById;
+        View findViewById = null;
         int i8;
         String str2;
         int i9;
-        int i10;
-        int i11;
+        int i10 = 0;
+        int i11 = 0;
         String str3;
         yk ykVar5;
         ConstraintLayout constraintLayout2 = this;
@@ -333,7 +334,7 @@ public class ConstraintLayout extends ViewGroup {
                             zpVar.a(zkVar);
                             HashMap hashMap2 = zpVar.f;
                             Class<?> cls = childAt3.getClass();
-                            for (String str5 : hashMap2.keySet()) {
+                            for (String str5 : (Set<String>) hashMap2.keySet()) {
                                 boolean z3 = isInEditMode;
                                 zh zhVar = (zh) hashMap2.get(str5);
                                 HashMap hashMap3 = hashMap2;
@@ -350,14 +351,7 @@ public class ConstraintLayout extends ViewGroup {
                                 try {
                                     i10 = zhVar.h;
                                     i11 = i10 - 1;
-                                } catch (IllegalAccessException e3) {
-                                    e = e3;
-                                    i9 = childCount2;
-                                } catch (NoSuchMethodException e4) {
-                                    e = e4;
-                                    i9 = childCount2;
-                                } catch (InvocationTargetException e5) {
-                                    e = e5;
+                                } catch (Exception e3) {
                                     i9 = childCount2;
                                 }
                                 if (i10 == 0) {
@@ -366,21 +360,45 @@ public class ConstraintLayout extends ViewGroup {
                                 }
                                 switch (i11) {
                                     case 0:
-                                        cls.getMethod(str2, Integer.TYPE).invoke(childAt3, Integer.valueOf(zhVar.c));
+                                        try {
+                                            cls.getMethod(str2, Integer.TYPE).invoke(childAt3, Integer.valueOf(zhVar.c));
+                                        } catch (IllegalAccessException ex) {
+                                            ex.printStackTrace();
+                                        } catch (InvocationTargetException ex) {
+                                            ex.printStackTrace();
+                                        } catch (NoSuchMethodException ex) {
+                                            ex.printStackTrace();
+                                        }
                                         isInEditMode = z3;
                                         hashMap2 = hashMap3;
                                         childCount = i8;
                                         childCount2 = childCount2;
                                         break;
                                     case 1:
-                                        cls.getMethod(str2, Float.TYPE).invoke(childAt3, Float.valueOf(zhVar.d));
+                                        try {
+                                            cls.getMethod(str2, Float.TYPE).invoke(childAt3, Float.valueOf(zhVar.d));
+                                        } catch (IllegalAccessException ex) {
+                                            ex.printStackTrace();
+                                        } catch (InvocationTargetException ex) {
+                                            ex.printStackTrace();
+                                        } catch (NoSuchMethodException ex) {
+                                            ex.printStackTrace();
+                                        }
                                         isInEditMode = z3;
                                         hashMap2 = hashMap3;
                                         childCount = i8;
                                         childCount2 = childCount2;
                                         break;
                                     case 2:
-                                        cls.getMethod(str2, Integer.TYPE).invoke(childAt3, Integer.valueOf(zhVar.g));
+                                        try {
+                                            cls.getMethod(str2, Integer.TYPE).invoke(childAt3, Integer.valueOf(zhVar.g));
+                                        } catch (IllegalAccessException ex) {
+                                            ex.printStackTrace();
+                                        } catch (InvocationTargetException ex) {
+                                            ex.printStackTrace();
+                                        } catch (NoSuchMethodException ex) {
+                                            ex.printStackTrace();
+                                        }
                                         isInEditMode = z3;
                                         hashMap2 = hashMap3;
                                         childCount = i8;
@@ -388,31 +406,66 @@ public class ConstraintLayout extends ViewGroup {
                                         break;
                                     case 3:
                                         int i18 = childCount2;
-                                        Method method = cls.getMethod(str2, Drawable.class);
+                                        Method method = null;
+                                        try {
+                                            method = cls.getMethod(str2, Drawable.class);
+                                        } catch (NoSuchMethodException ex) {
+                                            ex.printStackTrace();
+                                        }
                                         ColorDrawable colorDrawable = new ColorDrawable();
                                         colorDrawable.setColor(zhVar.g);
-                                        method.invoke(childAt3, colorDrawable);
+                                        try {
+                                            method.invoke(childAt3, colorDrawable);
+                                        } catch (IllegalAccessException ex) {
+                                            ex.printStackTrace();
+                                        } catch (InvocationTargetException ex) {
+                                            ex.printStackTrace();
+                                        }
                                         isInEditMode = z3;
                                         hashMap2 = hashMap3;
                                         childCount = i8;
                                         childCount2 = i18;
                                         break;
                                     case 4:
-                                        cls.getMethod(str2, CharSequence.class).invoke(childAt3, zhVar.e);
+                                        try {
+                                            cls.getMethod(str2, CharSequence.class).invoke(childAt3, zhVar.e);
+                                        } catch (IllegalAccessException ex) {
+                                            ex.printStackTrace();
+                                        } catch (InvocationTargetException ex) {
+                                            ex.printStackTrace();
+                                        } catch (NoSuchMethodException ex) {
+                                            ex.printStackTrace();
+                                        }
                                         isInEditMode = z3;
                                         hashMap2 = hashMap3;
                                         childCount = i8;
                                         childCount2 = childCount2;
                                         break;
                                     case 5:
-                                        cls.getMethod(str2, Boolean.TYPE).invoke(childAt3, Boolean.valueOf(zhVar.f));
+                                        try {
+                                            cls.getMethod(str2, Boolean.TYPE).invoke(childAt3, Boolean.valueOf(zhVar.f));
+                                        } catch (IllegalAccessException ex) {
+                                            ex.printStackTrace();
+                                        } catch (InvocationTargetException ex) {
+                                            ex.printStackTrace();
+                                        } catch (NoSuchMethodException ex) {
+                                            ex.printStackTrace();
+                                        }
                                         isInEditMode = z3;
                                         hashMap2 = hashMap3;
                                         childCount = i8;
                                         childCount2 = childCount2;
                                         break;
                                     case 6:
-                                        cls.getMethod(str2, Float.TYPE).invoke(childAt3, Float.valueOf(zhVar.d));
+                                        try {
+                                            cls.getMethod(str2, Float.TYPE).invoke(childAt3, Float.valueOf(zhVar.d));
+                                        } catch (IllegalAccessException ex) {
+                                            ex.printStackTrace();
+                                        } catch (InvocationTargetException ex) {
+                                            ex.printStackTrace();
+                                        } catch (NoSuchMethodException ex) {
+                                            ex.printStackTrace();
+                                        }
                                         isInEditMode = z3;
                                         hashMap2 = hashMap3;
                                         childCount = i8;
@@ -427,16 +480,14 @@ public class ConstraintLayout extends ViewGroup {
                                             childCount = i8;
                                             childCount2 = i9;
                                         } catch (IllegalAccessException e6) {
-                                            e = e6;
                                             Log.e("TransitionLayout", " Custom Attribute \"" + str5 + "\" not found on " + cls.getName());
-                                            e.printStackTrace();
+                                            e6.printStackTrace();
                                             isInEditMode = z3;
                                             hashMap2 = hashMap3;
                                             childCount = i8;
                                             childCount2 = i9;
                                         } catch (NoSuchMethodException e7) {
-                                            e = e7;
-                                            Log.e("TransitionLayout", e.getMessage());
+                                            Log.e("TransitionLayout", e7.getMessage());
                                             Log.e("TransitionLayout", " Custom Attribute \"" + str5 + "\" not found on " + cls.getName());
                                             StringBuilder sb3 = new StringBuilder();
                                             sb3.append(cls.getName());
@@ -448,9 +499,8 @@ public class ConstraintLayout extends ViewGroup {
                                             childCount = i8;
                                             childCount2 = i9;
                                         } catch (InvocationTargetException e8) {
-                                            e = e8;
                                             Log.e("TransitionLayout", " Custom Attribute \"" + str5 + "\" not found on " + cls.getName());
-                                            e.printStackTrace();
+                                            e8.printStackTrace();
                                             isInEditMode = z3;
                                             hashMap2 = hashMap3;
                                             childCount = i8;

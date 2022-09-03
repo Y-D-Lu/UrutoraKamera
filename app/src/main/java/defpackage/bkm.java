@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: bkm  reason: default package */
 /* loaded from: classes.dex */
@@ -28,7 +29,7 @@ public final class bkm {
     public final synchronized List a(Class cls, Class cls2) {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (String str : this.a) {
+        for (String str : (Set<String>) this.a) {
             List<bkl> list = (List) this.b.get(str);
             if (list != null) {
                 for (bkl bklVar : list) {
@@ -44,7 +45,7 @@ public final class bkm {
     public final synchronized List b(Class cls, Class cls2) {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (String str : this.a) {
+        for (String str : (Set<String>) this.a) {
             List<bkl> list = (List) this.b.get(str);
             if (list != null) {
                 for (bkl bklVar : list) {

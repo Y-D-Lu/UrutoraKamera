@@ -2,6 +2,7 @@ package defpackage;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /* renamed from: qls  reason: default package */
@@ -79,13 +80,26 @@ public abstract class qls implements Serializable, qlh, qlv {
                     qly.b = qlxVar;
                 }
             }
-            if (qlxVar != qly.a && (method = qlxVar.a) != null && (invoke = method.invoke(getClass(), new Object[0])) != null && (method2 = qlxVar.b) != null && (invoke2 = method2.invoke(invoke, new Object[0])) != null) {
-                Method method3 = qlxVar.c;
-                Object invoke3 = method3 != null ? method3.invoke(invoke2, new Object[0]) : null;
-                if (true == (invoke3 instanceof String)) {
-                    str2 = invoke3;
+            try {
+                if (qlxVar != qly.a && (method = qlxVar.a) != null && (invoke = method.invoke(getClass(), new Object[0])) != null && (method2 = qlxVar.b) != null && (invoke2 = method2.invoke(invoke, new Object[0])) != null) {
+                    Method method3 = qlxVar.c;
+                    Object invoke3 = null;
+                    try {
+                        invoke3 = method3 != null ? method3.invoke(invoke2, new Object[0]) : null;
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
+                    } catch (InvocationTargetException e) {
+                        e.printStackTrace();
+                    }
+                    if (true == (invoke3 instanceof String)) {
+                        str2 = (String) invoke3;
+                    }
+                    str2 = str2;
                 }
-                str2 = str2;
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
             }
             if (str2 == null) {
                 str = qlwVar.b();

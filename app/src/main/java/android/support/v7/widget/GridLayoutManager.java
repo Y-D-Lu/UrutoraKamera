@@ -1,7 +1,5 @@
 package android.support.v7.widget;
 
-import static defpackage.qc.as;
-
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
@@ -17,8 +15,8 @@ import defpackage.ox;
 import defpackage.oy;
 import defpackage.pb;
 import defpackage.pd;
-import defpackage.qc;
-import defpackage.qd;
+import android.view.qc;
+import android.view.qd;
 import defpackage.qi;
 import defpackage.qp;
 
@@ -168,7 +166,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         bu(this.i == 1 ? (this.C - aq()) - ap() : (this.D - ao()) - ar());
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int a(qi qiVar, qp qpVar) {
         if (this.i == 1) {
             return this.b;
@@ -179,7 +177,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         return 0;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int b(qi qiVar, qp qpVar) {
         if (this.i == 0) {
             return this.b;
@@ -200,31 +198,31 @@ public class GridLayoutManager extends LinearLayoutManager {
         return iArr2[i3] - iArr2[i3 - i2];
     }
 
-    @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc
+    @Override // android.support.v7.widget.LinearLayoutManager, android.view.qc
     public final int d(int i, qi qiVar, qp qpVar) {
         by();
         bv();
         return super.d(i, qiVar, qpVar);
     }
 
-    @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc
+    @Override // android.support.v7.widget.LinearLayoutManager, android.view.qc
     public final int e(int i, qi qiVar, qp qpVar) {
         by();
         bv();
         return super.e(i, qiVar, qpVar);
     }
 
-    @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc
+    @Override // android.support.v7.widget.LinearLayoutManager, android.view.qc
     public final qd f() {
         return this.i == 0 ? new ox(-2, -1) : new ox(-1, -2);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final qd g(ViewGroup.LayoutParams layoutParams) {
         return layoutParams instanceof ViewGroup.MarginLayoutParams ? new ox((ViewGroup.MarginLayoutParams) layoutParams) : new ox(layoutParams);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final qd h(Context context, AttributeSet attributeSet) {
         return new ox(context, attributeSet);
     }
@@ -276,7 +274,7 @@ public class GridLayoutManager extends LinearLayoutManager {
     /* JADX WARN: Code restructure failed: missing block: B:68:0x00f0, code lost:
         if (r13 != (r2 > r8)) goto L28;
      */
-    @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc
+    @Override // android.support.v7.widget.LinearLayoutManager, android.view.qc
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -575,7 +573,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         bv();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void m(qi qiVar, qp qpVar, View view, hb hbVar) {
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         if (!(layoutParams instanceof ox)) {
@@ -591,7 +589,7 @@ public class GridLayoutManager extends LinearLayoutManager {
         }
     }
 
-    @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc
+    @Override // android.support.v7.widget.LinearLayoutManager, android.view.qc
     public final void n(qi qiVar, qp qpVar) {
         if (qpVar.g) {
             int ai = ai();
@@ -607,13 +605,13 @@ public class GridLayoutManager extends LinearLayoutManager {
         this.f.clear();
     }
 
-    @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc
+    @Override // android.support.v7.widget.LinearLayoutManager, android.view.qc
     public final void o(qp qpVar) {
         super.o(qpVar);
         this.a = false;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void p(Rect rect, int i, int i2) {
         int ah;
         int ah2;
@@ -643,12 +641,12 @@ public class GridLayoutManager extends LinearLayoutManager {
         throw new UnsupportedOperationException("GridLayoutManager does not support stack from end. Consider using reverse layout");
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean r(qd qdVar) {
         return qdVar instanceof ox;
     }
 
-    @Override // android.support.v7.widget.LinearLayoutManager, defpackage.qc
+    @Override // android.support.v7.widget.LinearLayoutManager, android.view.qc
     public final boolean s() {
         return this.n == null && !this.a;
     }
@@ -663,25 +661,25 @@ public class GridLayoutManager extends LinearLayoutManager {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void u(int i, int i2) {
         this.g.b();
         this.g.a();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void v() {
         this.g.b();
         this.g.a();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void w(int i, int i2) {
         this.g.b();
         this.g.a();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void x(int i, int i2) {
         this.g.b();
         this.g.a();

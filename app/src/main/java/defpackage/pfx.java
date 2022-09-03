@@ -73,7 +73,7 @@ public abstract class pfx extends pir implements pht {
                 if (z) {
                     Thread.currentThread().interrupt();
                 }
-                throw th;
+                th.printStackTrace();
             }
         }
         if (z) {
@@ -102,7 +102,7 @@ public abstract class pfx extends pir implements pht {
             sb.append("UNKNOWN, cause=[");
             sb.append(e3.getClass());
             sb.append(" thrown from get()]");
-        } catch (ExecutionException e4) {
+        } catch (Exception e4) {
             sb.append("FAILURE, cause=[");
             sb.append(e4.getCause());
             sb.append("]");
@@ -197,7 +197,7 @@ public abstract class pfx extends pir implements pht {
                 sb2.append("get() threw CancellationException, despite reporting isCancelled() == false: ");
                 sb2.append(valueOf2);
                 return new pfn(new IllegalArgumentException(sb2.toString(), e2));
-            } catch (ExecutionException e3) {
+            } catch (Exception e3) {
                 if (!isCancelled) {
                     return new pfn(e3.getCause());
                 }
@@ -309,7 +309,7 @@ public abstract class pfx extends pir implements pht {
         }
     }
 
-    private static final Object s(Object obj) {
+    private static final Object s(Object obj) throws ExecutionException {
         if (obj instanceof pfl) {
             Throwable th = ((pfl) obj).d;
             CancellationException cancellationException = new CancellationException("Task was cancelled.");
@@ -384,7 +384,7 @@ public abstract class pfx extends pir implements pht {
 
     @Override // defpackage.pht
     public void d(Runnable runnable, Executor executor) {
-        pfo pfoVar;
+        pfo pfoVar = null;
         runnable.getClass();
         executor.getClass();
         if (isDone() || (pfoVar = this.listeners) == pfo.a) {
@@ -450,7 +450,7 @@ public abstract class pfx extends pir implements pht {
     }
 
     @Override // java.util.concurrent.Future
-    public Object get() {
+    public Object get() throws ExecutionException, InterruptedException {
         Object obj;
         if (!Thread.interrupted()) {
             Object obj2 = this.value;
@@ -487,7 +487,7 @@ public abstract class pfx extends pir implements pht {
     }
 
     @Override // java.util.concurrent.Future
-    public Object get(long j, TimeUnit timeUnit) {
+    public Object get(long j, TimeUnit timeUnit) throws ExecutionException, InterruptedException, TimeoutException {
         long nanos = timeUnit.toNanos(j);
         if (!Thread.interrupted()) {
             Object obj = this.value;

@@ -3,20 +3,20 @@ package defpackage;
 /* renamed from: edf  reason: default package */
 /* loaded from: classes.dex */
 public final class edf {
-    private final ope a;
-    private final ope b;
-    private final ope c;
-    private final ope d;
-    private final ope e;
-    private final ope f;
-    private final ope g;
-    private final ope h;
-    private final ope i;
-    private final ope j;
-    private final ope k;
-    private final ope l;
-    private final ope m;
-    private final ope n;
+    private ope a;
+    private ope b;
+    private ope c;
+    private ope d;
+    private ope e;
+    private ope f;
+    private ope g;
+    private ope h;
+    private ope i;
+    private ope j;
+    private ope k;
+    private ope l;
+    private ope m;
+    private ope n;
 
     public edf() {
     }

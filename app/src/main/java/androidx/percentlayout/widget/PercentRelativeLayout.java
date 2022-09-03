@@ -33,11 +33,11 @@ public class PercentRelativeLayout extends RelativeLayout {
         this.a = new aft(this);
     }
 
-    @Override // android.widget.RelativeLayout, android.view.ViewGroup
-    /* renamed from: a */
-    public final afu mo0generateLayoutParams(AttributeSet attributeSet) {
-        return new afu(getContext(), attributeSet);
-    }
+//    @Override // android.widget.RelativeLayout, android.view.ViewGroup
+//    /* renamed from: a */
+//    public final afu mo0generateLayoutParams(AttributeSet attributeSet) {
+//        return new afu(getContext(), attributeSet);
+//    }
 
     @Override // android.widget.RelativeLayout, android.view.ViewGroup
     protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateDefaultLayoutParams() {

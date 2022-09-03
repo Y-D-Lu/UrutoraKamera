@@ -13,6 +13,7 @@ import android.view.Window;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /* renamed from: ub  reason: default package */
@@ -182,7 +183,7 @@ public class ub extends ds implements aee, aey, ajo, uf, un {
         this.g.b(bundle);
         ug ugVar = this.f;
         ugVar.b = this;
-        for (uh uhVar : ugVar.a) {
+        for (uh uhVar : (Set<uh>) ugVar.a) {
             uhVar.a();
         }
         super.onCreate(bundle);

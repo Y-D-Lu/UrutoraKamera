@@ -1,11 +1,16 @@
-package defpackage;
+package android.view;
 
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import defpackage.gb;
+import defpackage.gl;
+import defpackage.nx;
+import defpackage.pu;
+import defpackage.pz;
+import defpackage.qs;
 
 /* renamed from: ny  reason: default package */
 /* loaded from: classes2.dex */

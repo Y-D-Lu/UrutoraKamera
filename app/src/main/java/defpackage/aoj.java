@@ -11,6 +11,7 @@ import androidx.work.impl.background.systemalarm.RescheduleReceiver;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.Executor;
 
@@ -177,7 +178,7 @@ public final class aoj implements Runnable {
                             this.p.k(3, this.k);
                             this.p.f(this.k, ((amw) this.i).a);
                             long currentTimeMillis = System.currentTimeMillis();
-                            for (String str2 : this.t.d(this.k)) {
+                            for (String str2 : (Set<String>) this.t.d(this.k)) {
                                 if (this.p.h(str2) == 5) {
                                     arg argVar = this.t;
                                     ais a2 = ais.a("SELECT COUNT(*)=0 FROM dependency WHERE work_spec_id=? AND prerequisite_id IN (SELECT id FROM workspec WHERE state!=2)", 1);

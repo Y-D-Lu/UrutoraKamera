@@ -34,7 +34,7 @@ public class ppv {
                     try {
                         this.a = pqmVar;
                         this.b = poc.b;
-                    } catch (ppp e) {
+                    } catch (Exception e) {
                         this.a = pqmVar;
                         this.b = poc.b;
                     }

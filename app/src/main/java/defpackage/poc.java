@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.nio.ByteBuffer;
@@ -145,7 +146,12 @@ public abstract class poc implements Iterable, Serializable {
             byte[] bArr = new byte[i];
             int i2 = 0;
             while (i2 < i) {
-                int read = inputStream.read(bArr, i2, i - i2);
+                int read = 0;
+                try {
+                    read = inputStream.read(bArr, i2, i - i2);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 if (read == -1) {
                     break;
                 }

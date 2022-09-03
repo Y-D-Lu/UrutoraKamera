@@ -23,6 +23,7 @@ import org.xmlpull.v1.XmlPullParser;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Set;
 
 /* renamed from: zu  reason: default package */
 /* loaded from: classes2.dex */
@@ -1240,7 +1241,7 @@ public final class zu {
                 HashMap hashMap2 = zuVar.e;
                 HashMap hashMap3 = new HashMap();
                 Class<?> cls = childAt.getClass();
-                for (String str : hashMap2.keySet()) {
+                for (String str : (Set<String>) hashMap2.keySet()) {
                     zh zhVar = (zh) hashMap2.get(str);
                     try {
                         if (str.equals("BackgroundColor")) {
@@ -1249,22 +1250,15 @@ public final class zu {
                             try {
                                 hashMap3.put(str, new zh(zhVar, cls.getMethod("getMap" + str, new Class[0]).invoke(childAt, new Object[0])));
                             } catch (IllegalAccessException e) {
-                                e = e;
                                 e.printStackTrace();
                             } catch (NoSuchMethodException e2) {
-                                e = e2;
-                                e.printStackTrace();
+                                e2.printStackTrace();
                             } catch (InvocationTargetException e3) {
-                                e = e3;
-                                e.printStackTrace();
+                                e3.printStackTrace();
                             }
                         }
-                    } catch (IllegalAccessException e4) {
-                        e = e4;
-                    } catch (NoSuchMethodException e5) {
-                        e = e5;
-                    } catch (InvocationTargetException e6) {
-                        e = e6;
+                    } catch (Exception e4) {
+                        e4.printStackTrace();
                     }
                 }
                 zpVar.f = hashMap3;

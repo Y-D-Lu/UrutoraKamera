@@ -1,9 +1,10 @@
-package defpackage;
+package android.view;
 
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
-import android.view.ViewGroup;
+
+import defpackage.qs;
 
 /* renamed from: qd  reason: default package */
 /* loaded from: classes2.dex */

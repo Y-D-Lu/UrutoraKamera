@@ -21,6 +21,7 @@ public class MultiSelectListPreference extends DialogPreference {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public MultiSelectListPreference(android.content.Context r4, android.util.AttributeSet r5) {
+        super(r4, r5);
         /*
             r3 = this;
             r0 = 2130969001(0x7f0401a9, float:1.7546672E38)

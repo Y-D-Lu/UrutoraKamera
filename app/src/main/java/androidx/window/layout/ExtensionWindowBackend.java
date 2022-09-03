@@ -24,11 +24,11 @@ public final class ExtensionWindowBackend implements WindowBackend {
     private static volatile ExtensionWindowBackend globalInstance;
     private ExtensionInterfaceCompat windowExtension;
     private final CopyOnWriteArrayList windowLayoutChangeCallbacks;
-    public static final Companion Companion = new Companion(null);
+    public static final Companion mCompanion = new Companion(null);
     private static final ReentrantLock globalLock = new ReentrantLock();
 
     /* loaded from: classes.dex */
-    public final class Companion {
+    public static final class Companion {
         private Companion() {
         }
 
@@ -36,7 +36,7 @@ public final class ExtensionWindowBackend implements WindowBackend {
             this();
         }
 
-        public final ExtensionWindowBackend getInstance(Context context) {
+        public static ExtensionWindowBackend getInstance(Context context) {
             context.getClass();
             if (ExtensionWindowBackend.globalInstance == null) {
                 ReentrantLock reentrantLock = ExtensionWindowBackend.globalLock;
@@ -54,7 +54,7 @@ public final class ExtensionWindowBackend implements WindowBackend {
             return extensionWindowBackend;
         }
 
-        public final ExtensionInterfaceCompat initAndVerifyExtension(Context context) {
+        public static ExtensionInterfaceCompat initAndVerifyExtension(Context context) {
             context.getClass();
             try {
 //                if (!isSidecarVersionSupported(SidecarCompat.Companion.getSidecarVersion())) {
@@ -70,11 +70,11 @@ public final class ExtensionWindowBackend implements WindowBackend {
             }
         }
 
-        public final boolean isSidecarVersionSupported(Version version) {
-            return version != null && version.compareTo(Version.Companion.getVERSION_0_1()) >= 0;
+        public static boolean isSidecarVersionSupported(Version version) {
+            return version != null && version.compareTo(Version.mCompanion.getVERSION_0_1()) >= 0;
         }
 
-        public final void resetInstance() {
+        public static void resetInstance() {
             ExtensionWindowBackend.globalInstance = null;
         }
     }

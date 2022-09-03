@@ -8,7 +8,6 @@ import defpackage.qlw;
 import defpackage.qmb;
 import defpackage.qmd;
 import defpackage.qmy;
-import defpackage.qqj;
 import defpackage.qtr;
 import defpackage.qts;
 
@@ -31,11 +30,6 @@ final class WindowInfoRepositoryCallbackAdapter$addListener$1$1 extends qmb impl
         return new WindowInfoRepositoryCallbackAdapter$addListener$1$1(this.$flow, this.$consumer, qlhVar);
     }
 
-    @Override // defpackage.qmy
-    public final Object invoke(qqj qqjVar, qlh qlhVar) {
-        return ((WindowInfoRepositoryCallbackAdapter$addListener$1$1) create(qqjVar, qlhVar)).invokeSuspend(qks.a);
-    }
-
     @Override // defpackage.qls
     public final Object invokeSuspend(Object obj) {
         qlp qlpVar = qlp.COROUTINE_SUSPENDED;
@@ -47,7 +41,7 @@ final class WindowInfoRepositoryCallbackAdapter$addListener$1$1 extends qmb impl
                 qts qtsVar = new qts() { // from class: androidx.window.java.layout.WindowInfoRepositoryCallbackAdapter$addListener$1$1$invokeSuspend$$inlined$collect$1
                     @Override // defpackage.qts
                     public Object emit(Object obj2, qlh qlhVar) {
-                        fb.this.accept(obj2);
+                        fbVar.accept(obj2);
                         return qks.a;
                     }
                 };
@@ -63,5 +57,10 @@ final class WindowInfoRepositoryCallbackAdapter$addListener$1$1 extends qmb impl
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         return qks.a;
+    }
+
+    @Override
+    public Object invoke(Object obj, Object obj2) {
+        return ((WindowInfoRepositoryCallbackAdapter$addListener$1$1) create(obj, (qlh) obj2)).invokeSuspend(qks.a);
     }
 }

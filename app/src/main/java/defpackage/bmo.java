@@ -4,6 +4,7 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
+import android.os.RemoteException;
 
 /* renamed from: bmo  reason: default package */
 /* loaded from: classes.dex */
@@ -22,8 +23,14 @@ public class bmo extends Binder implements IInterface {
     public final boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) {
         if (i <= 16777215) {
             parcel.enforceInterface(getInterfaceDescriptor());
-        } else if (super.onTransact(i, parcel, parcel2, i2)) {
-            return true;
+        } else {
+            try {
+                if (super.onTransact(i, parcel, parcel2, i2)) {
+                    return true;
+                }
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
         }
         return x(i, parcel, parcel2);
     }

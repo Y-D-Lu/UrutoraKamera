@@ -8,7 +8,6 @@ import defpackage.qlw;
 import defpackage.qmb;
 import defpackage.qmj;
 import defpackage.qmy;
-import defpackage.qts;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @qlw(b = "androidx.window.layout.WindowInfoRepositoryImpl$configurationChanged$1", c = "WindowInfoRepositoryImpl.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_listPreferredItemHeightLarge, R.styleable.AppCompatTheme_listPreferredItemHeightSmall})
@@ -35,11 +34,6 @@ public final class WindowInfoRepositoryImpl$configurationChanged$1 extends qmb i
         return windowInfoRepositoryImpl$configurationChanged$1;
     }
 
-    @Override // defpackage.qmy
-    public final Object invoke(qts qtsVar, qlh qlhVar) {
-        return ((WindowInfoRepositoryImpl$configurationChanged$1) create(qtsVar, qlhVar)).invokeSuspend(qks.a);
-    }
-
     /* JADX WARN: Removed duplicated region for block: B:24:0x0081  */
     /* JADX WARN: Removed duplicated region for block: B:27:0x008c A[Catch: all -> 0x00bb, TRY_LEAVE, TryCatch #1 {all -> 0x00bb, blocks: (B:22:0x0072, B:25:0x0084, B:27:0x008c), top: B:54:0x0072 }] */
     /* JADX WARN: Removed duplicated region for block: B:32:0x00a1  */
@@ -56,5 +50,10 @@ public final class WindowInfoRepositoryImpl$configurationChanged$1 extends qmb i
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: androidx.window.layout.WindowInfoRepositoryImpl$configurationChanged$1.invokeSuspend(java.lang.Object):java.lang.Object");
+    }
+
+    @Override
+    public Object invoke(Object obj, Object obj2) {
+        return ((WindowInfoRepositoryImpl$configurationChanged$1) create(obj, (qlh) obj2)).invokeSuspend(qks.a);
     }
 }

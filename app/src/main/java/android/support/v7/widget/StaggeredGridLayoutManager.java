@@ -20,8 +20,8 @@ import defpackage.ou;
 import defpackage.oz;
 import defpackage.pq;
 import defpackage.qb;
-import defpackage.qc;
-import defpackage.qd;
+import android.view.qc;
+import android.view.qd;
 import defpackage.qi;
 import defpackage.qn;
 import defpackage.qo;
@@ -641,22 +641,22 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int A(qp qpVar) {
         return T(qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int B(qp qpVar) {
         return O(qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int C(qp qpVar) {
         return S(qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int D(qp qpVar) {
         return T(qpVar);
     }
@@ -732,7 +732,7 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         return pointF;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final Parcelable J() {
         int f;
         int[] iArr;
@@ -789,14 +789,14 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         return al() == 1;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void M(String str) {
         if (this.F == null) {
             super.M(str);
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void P(AccessibilityEvent accessibilityEvent) {
         super.P(accessibilityEvent);
         if (ai() > 0) {
@@ -817,7 +817,7 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void Q(Parcelable parcelable) {
         if (parcelable instanceof rf) {
             rf rfVar = (rf) parcelable;
@@ -830,7 +830,7 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void R(int i) {
         rf rfVar = this.F;
         if (rfVar != null && rfVar.a != i) {
@@ -841,22 +841,22 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         aN();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean U() {
         return this.j == 0;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean V() {
         return this.j == 1;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean W() {
         return this.n != 0;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void aD(int i) {
         super.aD(i);
         for (int i2 = 0; i2 < this.i; i2++) {
@@ -864,7 +864,7 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void aE(int i) {
         super.aE(i);
         for (int i2 = 0; i2 < this.i; i2++) {
@@ -872,14 +872,14 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void aH(int i) {
         if (i == 0) {
             H();
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void aa(int i, int i2, qp qpVar, ou ouVar) {
         int i3;
         int i4;
@@ -922,7 +922,7 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         }
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void af(RecyclerView recyclerView) {
         bl(this.K);
         for (int i = 0; i < this.i; i++) {
@@ -931,14 +931,14 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         recyclerView.requestLayout();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void ag(RecyclerView recyclerView, int i) {
         qo qoVar = new qo(recyclerView.getContext());
         qoVar.b = i;
         aT(qoVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void bj() {
         this.h.a();
         for (int i = 0; i < this.i; i++) {
@@ -953,27 +953,27 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         return be(au(0));
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int d(int i, qi qiVar, qp qpVar) {
         return k(i, qiVar, qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int e(int i, qi qiVar, qp qpVar) {
         return k(i, qiVar, qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final qd f() {
         return this.j == 0 ? new rc(-2, -1) : new rc(-1, -2);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final qd g(ViewGroup.LayoutParams layoutParams) {
         return layoutParams instanceof ViewGroup.MarginLayoutParams ? new rc((ViewGroup.MarginLayoutParams) layoutParams) : new rc(layoutParams);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final qd h(Context context, AttributeSet attributeSet) {
         return new rc(context, attributeSet);
     }
@@ -1007,7 +1007,7 @@ public class StaggeredGridLayoutManager extends qc implements qn {
     /* JADX WARN: Code restructure failed: missing block: B:35:0x004e, code lost:
         if (K() != false) goto L93;
      */
-    @Override // defpackage.qc
+    @Override // android.view.qc
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -1057,12 +1057,12 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         return view;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void n(qi qiVar, qp qpVar) {
         bs(qiVar, qpVar, true);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void o(qp qpVar) {
         this.f = -1;
         this.g = Integer.MIN_VALUE;
@@ -1070,7 +1070,7 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         this.H.a();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void p(Rect rect, int i, int i2) {
         int ah;
         int ah2;
@@ -1106,12 +1106,12 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         return view;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean r(qd qdVar) {
         return qdVar instanceof rc;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean s() {
         return this.F == null;
     }
@@ -1134,33 +1134,33 @@ public class StaggeredGridLayoutManager extends qc implements qn {
         throw new UnsupportedOperationException("Method not decompiled: android.support.v7.widget.StaggeredGridLayoutManager.t():android.view.View");
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void u(int i, int i2) {
         br(i, i2, 1);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void v() {
         this.h.a();
         aN();
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void w(int i, int i2) {
         br(i, i2, 2);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void x(int i, int i2) {
         br(i, i2, 4);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int y(qp qpVar) {
         return O(qpVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final int z(qp qpVar) {
         return S(qpVar);
     }

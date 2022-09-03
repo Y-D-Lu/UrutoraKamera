@@ -39,13 +39,13 @@ public final class alp extends LinearLayoutManager {
         iArr[1] = 0;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void aF(qi qiVar, qp qpVar, hb hbVar) {
         super.aF(qiVar, qpVar, hbVar);
         this.a.k.j(hbVar);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean aW(qi qiVar, qp qpVar, int i, Bundle bundle) {
         if (this.a.k.s(i)) {
             this.a.k.w(i);
@@ -54,12 +54,12 @@ public final class alp extends LinearLayoutManager {
         return super.aW(qiVar, qpVar, i, bundle);
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final boolean aX(RecyclerView recyclerView, View view, Rect rect, boolean z, boolean z2) {
         return false;
     }
 
-    @Override // defpackage.qc
+    @Override // android.view.qc
     public final void m(qi qiVar, qp qpVar, View view, hb hbVar) {
         this.a.k.k(view, hbVar);
     }

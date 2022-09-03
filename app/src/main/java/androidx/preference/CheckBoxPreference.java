@@ -18,6 +18,7 @@ public class CheckBoxPreference extends TwoStatePreference {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public CheckBoxPreference(android.content.Context r4, android.util.AttributeSet r5) {
+        super(r4, r5);
         /*
             r3 = this;
             r0 = 2130968764(0x7f0400bc, float:1.754619E38)

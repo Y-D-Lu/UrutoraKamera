@@ -5,6 +5,7 @@ import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.PointerIcon;
 import android.view.View;
+import android.view.qd;
 
 /* renamed from: gf  reason: default package */
 /* loaded from: classes.dex */

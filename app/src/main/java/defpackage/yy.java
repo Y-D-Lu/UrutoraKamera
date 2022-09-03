@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Set;
+
 /* renamed from: yy  reason: default package */
 /* loaded from: classes2.dex */
 public final class yy extends yx {
@@ -17,7 +19,7 @@ public final class yy extends yx {
         }
         this.i = true;
         this.f = i;
-        for (yv yvVar : this.j) {
+        for (yv yvVar : (Set<yv>) this.j) {
             yvVar.f();
         }
     }

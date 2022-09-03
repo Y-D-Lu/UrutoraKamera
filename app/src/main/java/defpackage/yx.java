@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: yx  reason: default package */
 /* loaded from: classes2.dex */
@@ -45,14 +46,14 @@ public class yx implements yv {
         }
         this.i = true;
         this.f = i;
-        for (yv yvVar : this.j) {
+        for (yv yvVar : (Set<yv>) this.j) {
             yvVar.f();
         }
     }
 
     @Override // defpackage.yv
     public final void f() {
-        for (yx yxVar : this.k) {
+        for (yx yxVar : (Set<yx>) this.k) {
             if (!yxVar.i) {
                 return;
             }
@@ -68,7 +69,7 @@ public class yx implements yv {
         }
         yx yxVar2 = null;
         int i = 0;
-        for (yx yxVar3 : this.k) {
+        for (yx yxVar3 : (Set<yx>) this.k) {
             if (!(yxVar3 instanceof yy)) {
                 i++;
                 yxVar2 = yxVar3;

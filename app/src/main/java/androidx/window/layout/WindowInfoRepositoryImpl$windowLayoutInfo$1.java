@@ -9,7 +9,6 @@ import defpackage.qlh;
 import defpackage.qlw;
 import defpackage.qmb;
 import defpackage.qmy;
-import defpackage.qts;
 
 @qlw(b = "androidx.window.layout.WindowInfoRepositoryImpl$windowLayoutInfo$1", c = "WindowInfoRepositoryImpl.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_textAppearancePopupMenuHeader, R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle})
 /* loaded from: classes.dex */
@@ -20,11 +19,16 @@ final class WindowInfoRepositoryImpl$windowLayoutInfo$1 extends qmb implements q
     int label;
     final /* synthetic */ WindowInfoRepositoryImpl this$0;
 
+    @Override
+    public Object invoke(Object obj, Object obj2) {
+        return ((WindowInfoRepositoryImpl$windowLayoutInfo$1) create(obj, (qlh) obj2)).invokeSuspend(qks.a);
+    }
+
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: androidx.window.layout.WindowInfoRepositoryImpl$windowLayoutInfo$1$1  reason: invalid class name */
     /* loaded from: classes.dex */
     public final /* synthetic */ class AnonymousClass1 implements Executor {
-        public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
+        public final AnonymousClass1 INSTANCE = new AnonymousClass1();
 
         @Override // java.util.concurrent.Executor
         public final void execute(Runnable runnable) {
@@ -44,11 +48,6 @@ final class WindowInfoRepositoryImpl$windowLayoutInfo$1 extends qmb implements q
         WindowInfoRepositoryImpl$windowLayoutInfo$1 windowInfoRepositoryImpl$windowLayoutInfo$1 = new WindowInfoRepositoryImpl$windowLayoutInfo$1(this.this$0, qlhVar);
         windowInfoRepositoryImpl$windowLayoutInfo$1.L$0 = obj;
         return windowInfoRepositoryImpl$windowLayoutInfo$1;
-    }
-
-    @Override // defpackage.qmy
-    public final Object invoke(qts qtsVar, qlh qlhVar) {
-        return ((WindowInfoRepositoryImpl$windowLayoutInfo$1) create(qtsVar, qlhVar)).invokeSuspend(qks.a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x0071  */

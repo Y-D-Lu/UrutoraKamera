@@ -2,6 +2,8 @@ package defpackage;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.qc;
+import android.view.qd;
 
 import com.hdrindicator.DisplayHelper;
 

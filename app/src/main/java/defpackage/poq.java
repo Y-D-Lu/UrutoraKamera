@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: poq  reason: default package */
 /* loaded from: classes2.dex */
 public final class poq {
-    public final pqm a;
-    public final Object b;
-    public final pqm c;
-    public final ppc d;
+    public pqm a;
+    public Object b;
+    public pqm c;
+    public ppc d;
 
     public poq() {
     }

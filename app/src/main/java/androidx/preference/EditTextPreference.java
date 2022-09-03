@@ -16,6 +16,7 @@ public class EditTextPreference extends DialogPreference {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public EditTextPreference(android.content.Context r4, android.util.AttributeSet r5) {
+        super(r4, r5);
         /*
             r3 = this;
             r0 = 2130969056(0x7f0401e0, float:1.7546783E38)

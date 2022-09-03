@@ -11,10 +11,10 @@ import defpackage.qtw;
 /* loaded from: classes.dex */
 public final class WindowInfoRepositoryImpl implements WindowInfoRepository {
     private static final int BUFFER_CAPACITY = 10;
-    public static final Companion Companion = new Companion(null);
-    private final Activity activity;
+    public Companion mCompanion = new Companion(null);
+    final Activity activity;
     private final WindowBackend windowBackend;
-    private final WindowMetricsCalculator windowMetricsCalculator;
+    final WindowMetricsCalculator windowMetricsCalculator;
 
     /* loaded from: classes.dex */
     public final class Companion {

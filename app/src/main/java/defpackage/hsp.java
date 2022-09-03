@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /* loaded from: classes2.dex */
 public abstract class hsp implements Comparable, Parcelable {
     private static final AtomicInteger b = new AtomicInteger(0);
-    public final int a;
+    public int a;
 
     public hsp() {
     }

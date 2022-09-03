@@ -620,12 +620,8 @@ public class poy extends pnl implements pqn {
         }
         try {
             pqu.a.b(this.b).i(this.b, bArr, 0, i, new pnr(posVar));
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new RuntimeException("Reading from byte array should not throw IOException.", e);
-        } catch (IndexOutOfBoundsException e2) {
-            throw ppp.i();
-        } catch (ppp e3) {
-            throw e3;
         }
     }
 
