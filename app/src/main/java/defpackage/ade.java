@@ -4,7 +4,6 @@ import android.content.res.AssetManager;
 import android.system.OsConstants;
 import android.util.Log;
 
-import java.io.EOFException;
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,10 +16,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
+import java.util.TimeZone;
 import java.util.regex.Pattern;
 import java.util.zip.CRC32;
-
-import java.util.TimeZone;
 
 /* renamed from: ade  reason: default package */
 /* loaded from: classes.dex */
@@ -64,8 +62,8 @@ public final class ade {
     private static SimpleDateFormat x;
     private static final adc[] y;
     private static final adc[] z;
-    private final FileDescriptor O;
-    private final AssetManager.AssetInputStream P;
+    private FileDescriptor O;
+    private AssetManager.AssetInputStream P;
     private int Q;
     private final HashMap[] R;
     private final Set S;
@@ -153,7 +151,7 @@ public final class ade {
                 Pattern.compile("^(\\d{2}):(\\d{2}):(\\d{2})$");
                 Pattern.compile("^(\\d{4}):(\\d{2}):(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
                 Pattern.compile("^(\\d{4})-(\\d{2})-(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
-                return;
+                break;
             }
             J[i2] = new HashMap();
             K[i2] = new HashMap();
@@ -228,7 +226,7 @@ public final class ade {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.ade.d(ada, int, int):void");
     }
 
-    private final void e(ada adaVar) {
+    private final void e(ada adaVar) throws IOException {
         adaVar.b = ByteOrder.BIG_ENDIAN;
         byte[] bArr = p;
         int length = bArr.length;
@@ -273,13 +271,13 @@ public final class ade {
                 int i4 = readInt + 4;
                 adaVar.b(i4);
                 i2 = i3 + i4;
-            } catch (EOFException e2) {
+            } catch (IOException e2) {
                 throw new IOException("Encountered corrupt PNG file.");
             }
         }
     }
 
-    private final void f(ada adaVar) {
+    private final void f(ada adaVar) throws IOException {
         adaVar.b = ByteOrder.LITTLE_ENDIAN;
         int length = t.length;
         adaVar.b(4);
@@ -318,7 +316,7 @@ public final class ade {
                     throw new IOException("Encountered WebP file with invalid chunk size");
                 }
                 adaVar.b(readInt2);
-            } catch (EOFException e2) {
+            } catch (IOException e2) {
                 throw new IOException("Encountered corrupt WebP file.");
             }
         }
@@ -338,8 +336,12 @@ public final class ade {
         if (a2 <= 0 || a3 <= 0 || this.P != null || this.O != null) {
             return;
         }
-        adaVar.skip(a2);
-        adaVar.read(new byte[a3]);
+        try {
+            adaVar.skip(a2);
+            adaVar.read(new byte[a3]);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:24:0x007f, code lost:
@@ -366,7 +368,7 @@ public final class ade {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.ade.h(java.io.InputStream):void");
     }
 
-    private final void i(ada adaVar) {
+    private final void i(ada adaVar) throws IOException {
         ByteOrder s2 = s(adaVar);
         this.j = s2;
         adaVar.b = s2;
@@ -388,7 +390,11 @@ public final class ade {
 
     private final void j(byte[] bArr, int i2) {
         ada adaVar = new ada(bArr, (byte[]) null);
-        i(adaVar);
+        try {
+            i(adaVar);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         q(adaVar, i2);
     }
 
@@ -478,13 +484,21 @@ public final class ade {
                             return;
                         }
                         long j4 = i7;
-                        if (adaVar.skip(j4) != j4) {
-                            return;
+                        try {
+                            if (adaVar.skip(j4) != j4) {
+                                return;
+                            }
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
                         }
                         int i8 = i3 + i7;
                         byte[] bArr2 = new byte[i6];
-                        if (adaVar.read(bArr2) != i6) {
-                            return;
+                        try {
+                            if (adaVar.read(bArr2) != i6) {
+                                return;
+                            }
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
                         }
                         i3 = i8 + i6;
                         System.arraycopy(bArr2, 0, bArr, i4, i6);
@@ -492,7 +506,6 @@ public final class ade {
                         i2++;
                     }
                 }
-                break;
             case 6:
                 g(adaVar, hashMap);
                 return;
@@ -563,7 +576,11 @@ public final class ade {
 
     private final void p(ada adaVar) {
         adb adbVar;
-        i(adaVar);
+        try {
+            i(adaVar);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         q(adaVar, 0);
         r(adaVar, 0);
         r(adaVar, 5);
@@ -659,12 +676,16 @@ public final class ade {
             int a7 = adbVar8.a(this.j);
             adaVar.c(a6);
             byte[] bArr = new byte[a7];
-            adaVar.read(bArr);
+            try {
+                adaVar.read(bArr);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             d(new ada(bArr), a6, i2);
         }
     }
 
-    private static final ByteOrder s(ada adaVar) {
+    private static final ByteOrder s(ada adaVar) throws IOException {
         short readShort = adaVar.readShort();
         switch (readShort) {
             case 18761:

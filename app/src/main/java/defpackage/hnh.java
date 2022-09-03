@@ -42,7 +42,7 @@ public class hnh extends hnd {
 
                 @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                    return consumer.getClass();
+                    return consumer;
                 }
             })).start();
         }

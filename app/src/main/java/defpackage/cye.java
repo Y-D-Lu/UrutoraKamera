@@ -81,7 +81,7 @@ public final class cye implements cxz {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        return consumer.getClass();
+                        return consumer;
                     }
                 });
             }

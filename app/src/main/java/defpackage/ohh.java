@@ -140,13 +140,13 @@ public /* synthetic */ class ohh {
                 J = i6;
             }
         }
-        int i7 = i3 & i;
-        if (i5 == -1) {
-            N(obj3, i4, i7);
-        } else {
-            iArr[i5] = G(iArr[i5], i7, i);
-        }
-        return i2;
+//        int i7 = i3 & i;
+//        if (i5 == -1) {
+//            N(obj3, i4, i7);
+//        } else {
+//            iArr[i5] = G(iArr[i5], i7, i);
+//        }
+//        return i2;
     }
 
     public static int J(Object obj, int i) {
@@ -356,7 +356,7 @@ public /* synthetic */ class ohh {
     }
 
     public static qbm ac(pvd pvdVar, String str, String str2) {
-        final pvl pvlVar = str == null ? null : new pvl(str, "PUT", null, pvdVar, true);
+        pvl pvlVar = str == null ? null : new pvl(str, "PUT", null, pvdVar, true);
         if (pvlVar == null) {
             pvf pvfVar = new pvf();
             pvfVar.d("X-Goog-Upload-Header-Content-Length", String.valueOf(pvdVar.d()));
@@ -367,6 +367,7 @@ public /* synthetic */ class ohh {
             obr.aF(z);
             pvlVar = new pvl(str2, "POST", pvfVar, pvdVar, false);
         }
+        final pvl pvfFinal = pvlVar;
         ovk ovkVar = nuf.a;
         nuc nucVar = new nuc(pvlVar);
         pvlVar.g(nucVar, 4194304, 250);
@@ -375,13 +376,11 @@ public /* synthetic */ class ohh {
             public final Object call() {
                 pvq pvqVar;
                 pvo pvoVar;
-                pvl pvlVar2 = pvl.this;
+                pvl pvlVar2 = pvfFinal;
                 try {
                     pvqVar = new pvq(pvlVar2.a == null ? pvlVar2.d() : pvlVar2.b(true));
-                } catch (pvp e) {
-                    pvqVar = new pvq(e);
-                } catch (Throwable th) {
-                    pvqVar = new pvq(new pvp(pvo.UNKNOWN, th));
+                } catch (Exception ex) {
+                    pvqVar = new pvq(new pvp(pvo.UNKNOWN, ex));
                 }
                 synchronized (pvlVar2) {
                     plk plkVar = pvlVar2.d;
@@ -757,17 +756,17 @@ public /* synthetic */ class ohh {
     /* JADX WARN: Multi-variable type inference failed */
     public static Object t(Iterable iterable) {
         if (iterable instanceof List) {
-            if (iterable.isEmpty()) {
+            if (((List)iterable).isEmpty()) {
                 throw new NoSuchElementException();
             }
-            return ai(iterable);
+            return ai((List) iterable);
         }
         return l(iterable.iterator());
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public static Object u(Iterable iterable, Object obj) {
-        if (iterable.isEmpty()) {
+        if (((List)iterable).isEmpty()) {
             return obj;
         }
         if (iterable instanceof List) {
@@ -825,7 +824,7 @@ public /* synthetic */ class ohh {
     public static void z(Iterable iterable, ojf ojfVar) {
         if ((iterable instanceof RandomAccess) && (iterable instanceof List)) {
             ojfVar.getClass();
-            al(iterable, ojfVar);
+            al((List) iterable, ojfVar);
             return;
         }
         Iterator it = iterable.iterator();

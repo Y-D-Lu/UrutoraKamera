@@ -15,8 +15,8 @@ import com.google.googlex.gcam.DebugParams;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
-
 import java.util.function.Consumer;
 
 /* renamed from: hps  reason: default package */
@@ -146,19 +146,19 @@ public final class hps implements hsa {
         Runnable runnable = new Runnable() { // from class: hrr
             @Override // java.lang.Runnable
             public final void run() {
-                hrx hrxVar2 = hrx.this;
+                hrx hrxVar2 = hrxVar;
                 final hsp hspVar = h;
                 final Bitmap bitmap2 = bitmap;
                 final int i2 = i;
                 hrxVar2.d(new Consumer() { // from class: hrn
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        ((hsb) obj).k(hsp.this, bitmap2, i2);
+                        ((hsb) obj).k(hspVar, bitmap2, i2);
                     }
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        return consumer.getClass();
+                        return consumer;
                     }
                 });
             }
@@ -218,18 +218,18 @@ public final class hps implements hsa {
         Runnable runnable = new Runnable() { // from class: hrs
             @Override // java.lang.Runnable
             public final void run() {
-                hrx hrxVar2 = hrx.this;
+                hrx hrxVar2 = hrxVar;
                 final hsp hspVar = h;
                 final lif lifVar2 = lifVar;
                 hrxVar2.d(new Consumer() { // from class: hrp
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        ((hsb) obj).o(hsp.this, lifVar2);
+                        ((hsb) obj).o(hspVar, lifVar2);
                     }
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        return consumer.getClass();
+                        return consumer;
                     }
                 });
             }
@@ -375,7 +375,7 @@ public final class hps implements hsa {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
     }
@@ -445,7 +445,7 @@ public final class hps implements hsa {
             plk.af(pgb.h(hsgVar.c().c(), new oiu() { // from class: hsd
                 @Override // defpackage.oiu
                 public final Object a(Object obj) {
-                    hsg hsgVar2 = hsg.this;
+                    hsg hsgVar2 = hsgVar;
                     Bitmap bitmap2 = bitmap;
                     Uri uri = (Uri) obj;
                     uri.getClass();
@@ -654,7 +654,7 @@ public final class hps implements hsa {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final synchronized void t() {
-        for (Runnable runnable : this.B) {
+        for (Runnable runnable : (Set<Runnable>) this.B) {
             runnable.run();
         }
         x();

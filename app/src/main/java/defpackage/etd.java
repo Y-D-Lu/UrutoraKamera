@@ -134,7 +134,7 @@ public class etd extends fio {
     }
 
     @Override // defpackage.fio, defpackage.by, android.app.Activity
-    protected final void onNewIntent(Intent intent) {
+    public final void onNewIntent(Intent intent) {
         String.valueOf(this.v).concat("#onNewIntent");
         o();
         super.onNewIntent(intent);

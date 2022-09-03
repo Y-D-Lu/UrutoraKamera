@@ -117,7 +117,6 @@ public final class hql {
                                     } finally {
                                     }
                                 } catch (IOException e4) {
-                                    e = e4;
                                     hscVar = a2;
                                     if (hscVar != null) {
                                         hscVar.b();
@@ -125,10 +124,10 @@ public final class hql {
                                     if (hsgVar != null) {
                                         hsgVar.d();
                                     }
-                                    throw e;
+                                    e4.printStackTrace();
                                 }
-                            } catch (IOException e5) {
-                                e = e5;
+                            } catch (Exception e5) {
+                                e5.printStackTrace();
                                 hscVar = null;
                             }
                         }
@@ -141,7 +140,7 @@ public final class hql {
                         throw th;
                     }
                 } catch (IOException e7) {
-                    e = e7;
+                    e7.printStackTrace();
                     hscVar = null;
                     hsgVar = null;
                 }

@@ -3,11 +3,11 @@ package defpackage;
 /* renamed from: fvx  reason: default package */
 /* loaded from: classes.dex */
 public final class fvx {
-    public final lvs a;
-    public final lwd b;
-    public final lig c;
-    public final jnl d;
-    private final lhs e;
+    public lvs a;
+    public lwd b;
+    public lig c;
+    public jnl d;
+    private lhs e;
 
     public fvx() {
     }

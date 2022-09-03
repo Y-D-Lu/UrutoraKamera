@@ -29,9 +29,9 @@ public final /* synthetic */ class fhr implements Consumer {
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.b) {
             case 0:
-                return consumer.getClass();
+                return consumer;
             default:
-                return consumer.getClass();
+                return consumer;
         }
     }
 }

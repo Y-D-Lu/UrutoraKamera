@@ -84,7 +84,7 @@ public abstract class qbh implements qyl {
     @Override // defpackage.qyl
     public final void g(qym qymVar) {
         if (qymVar instanceof qbi) {
-            f(qymVar);
+            f((qbi) qymVar);
             return;
         }
         qmd.W(qymVar, "s is null");

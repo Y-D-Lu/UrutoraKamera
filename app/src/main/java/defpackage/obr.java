@@ -16,6 +16,7 @@ import android.view.ViewParent;
 import com.google.android.material.tabs.TabLayout;
 import com.hdrindicator.DisplayHelper;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -109,50 +110,81 @@ public class obr {
 
     public static void H(Map map, ObjectInputStream objectInputStream, int i) {
         for (int i2 = 0; i2 < i; i2++) {
-            map.put(objectInputStream.readObject(), objectInputStream.readObject());
+            try {
+                map.put(objectInputStream.readObject(), objectInputStream.readObject());
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
     public static void I(oqt oqtVar, ObjectInputStream objectInputStream, int i) {
         for (int i2 = 0; i2 < i; i2++) {
-            Collection b = oqtVar.b(objectInputStream.readObject());
-            int readInt = objectInputStream.readInt();
-            for (int i3 = 0; i3 < readInt; i3++) {
-                b.add(objectInputStream.readObject());
+            Collection b = null;
+            try {
+                b = oqtVar.b(objectInputStream.readObject());
+                int readInt = objectInputStream.readInt();
+                for (int i3 = 0; i3 < readInt; i3++) {
+                    b.add(objectInputStream.readObject());
+                }
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
 
     public static void J(oqw oqwVar, ObjectInputStream objectInputStream, int i) {
         for (int i2 = 0; i2 < i; i2++) {
-            oqwVar.f(objectInputStream.readObject(), objectInputStream.readInt());
-        }
-    }
-
-    public static void K(Map map, ObjectOutputStream objectOutputStream) {
-        objectOutputStream.writeInt(map.size());
-        for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
-            objectOutputStream.writeObject(entry.getKey());
-            objectOutputStream.writeObject(entry.getValue());
-        }
-    }
-
-    public static void L(oqt oqtVar, ObjectOutputStream objectOutputStream) {
-        objectOutputStream.writeInt(oqtVar.m().size());
-        for (Map.Entry entry : (Set<Map.Entry>) oqtVar.m().entrySet()) {
-            objectOutputStream.writeObject(entry.getKey());
-            objectOutputStream.writeInt(((Collection) entry.getValue()).size());
-            for (Object obj : (Collection) entry.getValue()) {
-                objectOutputStream.writeObject(obj);
+            try {
+                oqwVar.f(objectInputStream.readObject(), objectInputStream.readInt());
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
 
+    public static void K(Map map, ObjectOutputStream objectOutputStream) {
+        try {
+            objectOutputStream.writeInt(map.size());
+            for (Map.Entry entry : (Set<Map.Entry>) map.entrySet()) {
+                objectOutputStream.writeObject(entry.getKey());
+                objectOutputStream.writeObject(entry.getValue());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void L(oqt oqtVar, ObjectOutputStream objectOutputStream) {
+        try {
+            objectOutputStream.writeInt(oqtVar.m().size());
+            for (Map.Entry entry : (Set<Map.Entry>) oqtVar.m().entrySet()) {
+                objectOutputStream.writeObject(entry.getKey());
+                objectOutputStream.writeInt(((Collection) entry.getValue()).size());
+                for (Object obj : (Collection) entry.getValue()) {
+                    objectOutputStream.writeObject(obj);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void M(oqw oqwVar, ObjectOutputStream objectOutputStream) {
-        objectOutputStream.writeInt(oqwVar.k().size());
-        for (oqv oqvVar : oqwVar.k()) {
-            objectOutputStream.writeObject(oqvVar.b());
-            objectOutputStream.writeInt(oqvVar.a());
+        try {
+            objectOutputStream.writeInt(oqwVar.k().size());
+            for (oqv oqvVar : (Set<oqv>) oqwVar.k()) {
+                objectOutputStream.writeObject(oqvVar.b());
+                objectOutputStream.writeInt(oqvVar.a());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -234,13 +266,13 @@ public class obr {
         Object value = entry.getValue();
         ohh.S(r1, value);
         EnumMap enumMap = new EnumMap(r1.getDeclaringClass());
-        enumMap.put((EnumMap) r1, (Enum) value);
+        enumMap.put(r1, (Enum) value);
         while (it.hasNext()) {
             Map.Entry entry2 = (Map.Entry) it.next();
             Enum r12 = (Enum) entry2.getKey();
             Object value2 = entry2.getValue();
             ohh.S(r12, value2);
-            enumMap.put((EnumMap) r12, (Enum) value2);
+            enumMap.put(r12, (Enum) value2);
         }
         switch (enumMap.size()) {
             case 0:
@@ -277,7 +309,7 @@ public class obr {
     }
 
     public static void aB(ojx ojxVar, Set set) {
-        for (Integer num : ojxVar.b) {
+        for (Integer num : (Set<Integer>) ojxVar.b) {
             set.add(Integer.valueOf(num.intValue()));
         }
     }

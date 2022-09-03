@@ -44,9 +44,9 @@ public final class ogy implements ohe {
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     switch (-1) {
                         case 0:
-                            return consumer.getClass();
+                            return consumer;
                         default:
-                            return consumer.getClass();
+                            return consumer;
                     }
                 }
             });
@@ -74,9 +74,9 @@ public final class ogy implements ohe {
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                     switch (-1) {
                         case 0:
-                            return consumer.getClass();
+                            return consumer;
                         default:
-                            return consumer.getClass();
+                            return consumer;
                     }
                 }
             });
@@ -93,7 +93,7 @@ public final class ogy implements ohe {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
     }

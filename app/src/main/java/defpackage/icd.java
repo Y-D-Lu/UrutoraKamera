@@ -152,7 +152,7 @@ public final /* synthetic */ class icd implements Function {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        return consumer.getClass();
+                        return consumer;
                     }
                 }));
                 ofPropertyValuesHolder2.setDuration(iekVar2.b.toMillis());

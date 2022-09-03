@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -53,7 +54,7 @@ public final class gza implements lmv {
         C2.getClass();
         this.d = C2.a;
         final HashMap hashMap = new HashMap();
-        for (hdr hdrVar : map.keySet()) {
+        for (hdr hdrVar : (Set<hdr>) map.keySet()) {
             lqd lqdVar2 = (lqd) map.get(hdrVar);
             if (lqdVar2 != null && (C = fvq.C(lqdVar2)) != null) {
                 hashMap.put(C.a, lqdVar2);
@@ -70,7 +71,7 @@ public final class gza implements lmv {
     private static void t(lnc lncVar, lmv lmvVar) {
         if (lmvVar != null) {
             lmvVar.close();
-            for (lnx lnxVar : ((low) lmvVar).h.c) {
+            for (lnx lnxVar :(Set<lnx>)  ((low) lmvVar).h.c) {
                 if (fvq.z(lnxVar)) {
                     lncVar.d(lnxVar);
                 }

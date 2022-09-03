@@ -162,9 +162,9 @@ public class icw implements icl, fik {
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 switch (-1) {
                     case 0:
-                        return consumer.getClass();
+                        return consumer;
                     default:
-                        return consumer.getClass();
+                        return consumer;
                 }
             }
         });
@@ -201,9 +201,9 @@ public class icw implements icl, fik {
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                 switch (-1) {
                     case 0:
-                        return consumer.getClass();
+                        return consumer;
                     default:
-                        return consumer.getClass();
+                        return consumer;
                 }
             }
         });
@@ -241,7 +241,7 @@ public class icw implements icl, fik {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
         a.b((atomicInteger.get() >= 3 || atomicInteger2.get() <= 0) ? icfVar.d(3) : icfVar.d(2));

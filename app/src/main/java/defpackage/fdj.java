@@ -158,7 +158,7 @@ public final class fdj implements View.OnClickListener {
             fileWriter.write(sb.toString());
             this.o.flush();
         } catch (IOException e) {
-            d.w(a.b(), "undo image exception:", (char) 1655, e);
+            defpackage.d.w(a.b(), "undo image exception:", (char) 1655, e);
         }
         int i4 = this.n;
         if (i4 == 0) {

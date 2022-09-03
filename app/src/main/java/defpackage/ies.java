@@ -111,7 +111,7 @@ public final class ies extends LinearLayout {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
     }

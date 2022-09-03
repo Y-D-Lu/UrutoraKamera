@@ -33,9 +33,9 @@ public final class bxy {
                         autoCloseable = bug.e;
                     } else {
                         Trace.beginSection("LimitCpuSet");
-                        autoCloseable = new lie(myTid, a2, null, null, null) { // from class: bxw
-                            public final /* synthetic */ int a;
-                            public final /* synthetic */ kfm b;
+                        autoCloseable = new lie() { // from class: bxw
+                            public final /* synthetic */ int a = myTid;
+                            public final /* synthetic */ kfm b = a2;
 
                             @Override // defpackage.lie, java.lang.AutoCloseable
                             public final void close() {
@@ -53,7 +53,11 @@ public final class bxy {
                 try {
                     runnable2.run();
                 } finally {
-                    autoCloseable.close();
+                    try {
+                        autoCloseable.close();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         };

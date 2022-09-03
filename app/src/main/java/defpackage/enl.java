@@ -138,7 +138,7 @@ public final class enl {
         b.d(new drs() { // from class: drv
             @Override // defpackage.drs
             public final void a(long j, lzv lzvVar) {
-                dsz.this.g(j, hnpVar.a(lzvVar));
+                dszVar.g(j, hnpVar.a(lzvVar));
             }
         });
         return b.a();

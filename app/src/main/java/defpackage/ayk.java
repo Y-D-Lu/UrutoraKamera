@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* renamed from: ayk  reason: default package */
@@ -44,7 +45,7 @@ public final class ayk extends bko implements Cloneable {
         }
         this.x = ayoVar == null ? aya.a : ayoVar;
         this.w = axvVar.b;
-        for (bkw bkwVar : aynVar.d) {
+        for (bkw bkwVar : (Set<bkw>) aynVar.d) {
             a(bkwVar);
         }
         g(aynVar.e());
@@ -62,7 +63,7 @@ public final class ayk extends bko implements Cloneable {
         int i6;
         if (this.B != null) {
             bku bkpVar2 = new bkp(obj, bkuVar);
-            bkpVar = bkpVar2;
+            bkpVar = (bkp) bkpVar2;
             bkuVar2 = bkpVar2;
         } else {
             bkpVar = null;

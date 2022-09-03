@@ -281,7 +281,6 @@ public final class as extends aw {
         ar arVar3;
         int i2;
         boolean z = false;
-        r3 = 0;
         int i3 = 0;
         z = false;
         z = false;
@@ -396,7 +395,6 @@ public final class as extends aw {
         aq aqVar5;
         ar arVar3;
         boolean z2 = false;
-        r2 = 0;
         int i2 = 0;
         z2 = false;
         z2 = false;

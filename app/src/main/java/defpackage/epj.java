@@ -53,7 +53,7 @@ public final class epj implements fik, fii, fig, fij, fgo, fgp {
         switch (((hvn) this.g.fA()).ordinal()) {
             case 0:
                 synchronized (this.e) {
-                    for (epi epiVar : this.b) {
+                    for (epi epiVar : (Set<epi>) this.b) {
                         epiVar.d(z);
                         z2 = true;
                     }
@@ -62,13 +62,13 @@ public final class epj implements fik, fii, fig, fij, fgo, fgp {
             case 1:
                 if (i == 25) {
                     synchronized (this.e) {
-                        for (epi epiVar2 : this.b) {
+                        for (epi epiVar2 : (Set<epi>) this.b) {
                             epiVar2.f(z);
                         }
                     }
                 } else {
                     synchronized (this.e) {
-                        for (epi epiVar3 : this.b) {
+                        for (epi epiVar3 : (Set<epi>) this.b) {
                             epiVar3.e(z);
                         }
                     }
@@ -142,7 +142,7 @@ public final class epj implements fik, fii, fig, fij, fgo, fgp {
 
     public final void h(boolean z) {
         synchronized (this.e) {
-            for (epi epiVar : this.b) {
+            for (epi epiVar : (Set<epi>) this.b) {
                 epiVar.a(z);
             }
         }

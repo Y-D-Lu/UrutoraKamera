@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: cqq  reason: default package */
@@ -97,7 +98,7 @@ public final class cqq {
     public final void d(cqj cqjVar, boolean z) {
         cqj cqjVar2 = (cqj) this.i.fA();
         if (cqjVar2 != cqjVar) {
-            for (cqp cqpVar : this.a) {
+            for (cqp cqpVar : (Set<cqp>) this.a) {
                 cqpVar.a(cqjVar2, cqjVar, z);
             }
             this.i.fB(cqjVar);

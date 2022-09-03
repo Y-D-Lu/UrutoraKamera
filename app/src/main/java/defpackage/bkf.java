@@ -11,21 +11,21 @@ public final class bkf implements bjq {
 
     @Override // defpackage.bjq
     public final void g() {
-        for (blh blhVar : bmf.g(this.a)) {
+        for (blh blhVar : (Set<blh>) bmf.g(this.a)) {
             blhVar.g();
         }
     }
 
     @Override // defpackage.bjq
     public final void h() {
-        for (blh blhVar : bmf.g(this.a)) {
+        for (blh blhVar : (Set<blh>) bmf.g(this.a)) {
             blhVar.h();
         }
     }
 
     @Override // defpackage.bjq
     public final void i() {
-        for (blh blhVar : bmf.g(this.a)) {
+        for (blh blhVar : (Set<blh>) bmf.g(this.a)) {
             blhVar.i();
         }
     }

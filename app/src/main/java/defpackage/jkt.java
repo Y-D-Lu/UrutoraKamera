@@ -21,6 +21,6 @@ public final /* synthetic */ class jkt implements jks {
 
     @Override // java.util.function.BiConsumer
     public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
-        return biConsumer.getClass();
+        return biConsumer;
     }
 }

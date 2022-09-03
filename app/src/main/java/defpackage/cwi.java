@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: cwi  reason: default package */
 /* loaded from: classes.dex */
 public final class cwi {
-    public final ghx a;
+    public ghx a;
 
     public cwi() {
     }

@@ -95,7 +95,7 @@ public class hqd implements hsa {
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 hsj a2;
-                hps hpsVar2 = hps.this;
+                hps hpsVar2 = hpsVar;
                 synchronized (hpsVar2.l) {
                     hpsVar2.r.a.i();
                     hsi a3 = hsj.a();

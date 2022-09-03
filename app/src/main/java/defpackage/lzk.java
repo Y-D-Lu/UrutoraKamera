@@ -7,10 +7,10 @@ import java.lang.reflect.Method;
 /* renamed from: lzk  reason: default package */
 /* loaded from: classes2.dex */
 public final class lzk {
-    private final Method a;
+    private Method a;
 
     public lzk() {
-        Class<?> cls;
+        Class<?> cls = null;
         Method method = null;
         try {
             cls = Class.forName("android.os.SystemProperties");
@@ -20,7 +20,7 @@ public final class lzk {
         } catch (Throwable th) {
             th = th;
             this.a = method;
-            throw th;
+            th.printStackTrace();
         }
         try {
             try {
@@ -29,13 +29,10 @@ public final class lzk {
                 cls.getMethod("getLong", String.class, Long.TYPE);
                 this.a = method;
             } catch (Throwable th2) {
-                th = th2;
-                this.a = method;
-                throw th;
+                th2.printStackTrace();
             }
         } catch (Exception e2) {
-            e = e2;
-            throw new IllegalStateException("Unable to reflect SystemProperties.", e);
+            throw new IllegalStateException("Unable to reflect SystemProperties.", e2);
         }
     }
 

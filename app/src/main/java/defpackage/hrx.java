@@ -49,10 +49,10 @@ public final class hrx {
     }
 
     public final void c(Consumer consumer) {
-        for (hsb hsbVar : (Set) this.e.get()) {
+        for (hsb hsbVar : (Set<hsb>) this.e.get()) {
             consumer.accept(hsbVar);
         }
-        for (hsb hsbVar2 : this.b) {
+        for (hsb hsbVar2 : (Set<hsb>) this.b) {
             consumer.accept(hsbVar2);
         }
     }
@@ -88,7 +88,7 @@ public final class hrx {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
     }
@@ -114,7 +114,7 @@ public final class hrx {
                 hrxVar.d(new Consumer() { // from class: hro
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj2) {
-                        hsp hspVar3 = hsp.this;
+                        hsp hspVar3 = hspVar;
                         hsj hsjVar2 = hsjVar;
                         hss hssVar3 = hssVar2;
                         hsjVar2.getClass();
@@ -123,7 +123,7 @@ public final class hrx {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        return consumer.getClass();
+                        return consumer;
                     }
                 });
                 return null;

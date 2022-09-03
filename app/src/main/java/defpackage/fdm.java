@@ -19,6 +19,7 @@ import java.nio.ShortBuffer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.Vector;
 
 import javax.microedition.khronos.egl.EGLConfig;
@@ -66,7 +67,7 @@ public final class fdm implements GLSurfaceView.Renderer {
     private float T = 60.0f;
     private float U = 100.0f;
     private float V = 100.0f;
-    private int W = R.styleable.AppCompatTheme_windowFixedHeightMajor;
+    private int W = com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedHeightMajor;
     private int X = 80;
     public boolean l = false;
     public boolean m = false;
@@ -284,7 +285,7 @@ public final class fdm implements GLSurfaceView.Renderer {
     public final void onDrawFrame(GL10 gl10) {
         boolean booleanValue;
         float[] fArr;
-        double d;
+        double d = 0.0;
         float[] fArr2;
         if (!this.m || this.s || this.ab == 0) {
             return;
@@ -403,7 +404,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                 try {
                     fdvVar.g = new fei();
                     fdvVar.h = new feh();
-                } catch (fcq e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
                 fct fctVar = fdvVar.e;
@@ -433,7 +434,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                 this.g.b(pointF2);
                 try {
                     this.k = new feh();
-                } catch (fcq e2) {
+                } catch (Exception e2) {
                     e2.printStackTrace();
                 }
                 fco fcoVar = this.f;
@@ -657,7 +658,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                             }
                         }
                     }
-                } catch (fcq e3) {
+                } catch (Exception e3) {
                     e3.printStackTrace();
                 }
                 GLES20.glBlendFunc(770, 771);
@@ -715,7 +716,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                             this.k.c();
                             this.k.j(0.5f);
                             this.g.a(fArr11);
-                        } catch (fcq e4) {
+                        } catch (Exception e4) {
                             e4.printStackTrace();
                         }
                     }
@@ -733,7 +734,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                     PhotoSphereMessageOverlay photoSphereMessageOverlay3 = this.e;
                     photoSphereMessageOverlay3.a.post(new fer(photoSphereMessageOverlay3, 0));
                 }
-            } catch (fcq e5) {
+            } catch (Exception e5) {
                 e5.printStackTrace();
             }
         }
@@ -798,7 +799,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                 this.e.d(true, 0);
             }
             Matrix.setIdentityM(this.R, 0);
-        } catch (fcq e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         this.z = false;

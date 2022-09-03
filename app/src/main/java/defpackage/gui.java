@@ -151,31 +151,31 @@ public final /* synthetic */ class gui implements Consumer {
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.j) {
             case 0:
-                return consumer.getClass();
+                return consumer;
             case 1:
-                return consumer.getClass();
+                return consumer;
             case 2:
-                return consumer.getClass();
+                return consumer;
             case 3:
-                return consumer.getClass();
+                return consumer;
             case 4:
-                return consumer.getClass();
+                return consumer;
             case 5:
-                return consumer.getClass();
+                return consumer;
             case 6:
-                return consumer.getClass();
+                return consumer;
             case 7:
-                return consumer.getClass();
+                return consumer;
             case 8:
-                return consumer.getClass();
+                return consumer;
             case 9:
-                return consumer.getClass();
+                return consumer;
             case 10:
-                return consumer.getClass();
+                return consumer;
             case 11:
-                return consumer.getClass();
+                return consumer;
             default:
-                return consumer.getClass();
+                return consumer;
         }
     }
 }

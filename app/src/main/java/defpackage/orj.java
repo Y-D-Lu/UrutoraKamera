@@ -79,6 +79,13 @@ public final class orj extends ork implements Serializable, ojf {
         return sb.toString();
     }
 
+    @Override
+    public boolean a(Object obj) {
+        Comparable comparable = (Comparable) obj;
+        comparable.getClass();
+        return this.b.g(comparable) && !this.c.g(comparable);
+    }
+
     @Override // defpackage.ojf
     public final boolean equals(Object obj) {
         if (obj instanceof orj) {
@@ -114,7 +121,7 @@ public final class orj extends ork implements Serializable, ojf {
         return this.c.b();
     }
 
-    @Override // defpackage.ojf
+//    @Override // defpackage.ojf
     /* renamed from: l */
     public final boolean a(Comparable comparable) {
         comparable.getClass();

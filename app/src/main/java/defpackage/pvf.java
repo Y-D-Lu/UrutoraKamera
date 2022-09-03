@@ -21,7 +21,7 @@ public final class pvf {
         }
         StringBuilder sb = new StringBuilder();
         boolean z = true;
-        for (String str2 : (List) this.a.get(str.toLowerCase(Locale.US))) {
+        for (String str2 : (Set<String>) (List) this.a.get(str.toLowerCase(Locale.US))) {
             if (str2 != null) {
                 if (!z) {
                     sb.append(",");
@@ -90,8 +90,8 @@ public final class pvf {
             }
             sb.append('}');
             return sb.toString();
-        } catch (IOException e2) {
-            throw new AssertionError(e2);
+        } catch (Exception e2) {
+            e2.printStackTrace();
         }
     }
 }

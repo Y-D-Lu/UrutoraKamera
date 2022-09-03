@@ -193,7 +193,7 @@ public final class jfj {
             k(new Runnable() { // from class: jez
                 @Override // java.lang.Runnable
                 public final void run() {
-                    ojc ojcVar2 = ojc.this;
+                    ojc ojcVar2 = ojcVar;
                     Runnable runnable3 = runnable2;
                     ouj oujVar = jfj.a;
                     if (ojcVar2.g()) {

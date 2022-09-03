@@ -24,6 +24,7 @@ final class krc extends SQLiteOpenHelper {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public krc(android.content.Context r5, defpackage.oom r6) {
+        super(r5, "primes_example_store", null, 0);
         /*
             r4 = this;
             r0 = r6

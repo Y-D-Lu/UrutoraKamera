@@ -70,7 +70,7 @@ import overwhelmer.simplified_lol;
 public final class pkr {
     public static final String c = pkr.class.getSimpleName();
     public static final lzi d = lzi.a();
-    private static final lvp k = null;
+    public static lvp k = null;
     public final lvp a;
     public final lvq b;
 

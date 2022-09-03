@@ -33,7 +33,7 @@ public final class aip extends qmb implements qmy {
     @Override // defpackage.qls
     public final Object invokeSuspend(Object obj) {
         aiz aizVar;
-        Object a;
+        Object a = null;
         qlp qlpVar = qlp.COROUTINE_SUSPENDED;
         switch (this.a) {
             case 0:
@@ -58,9 +58,8 @@ public final class aip extends qmb implements qmy {
                         throw th;
                     }
                 } catch (Throwable th2) {
-                    th = th2;
                     aizVar.a();
-                    throw th;
+                    th2.printStackTrace();
                 }
                 try {
                     this.b.j();
@@ -69,14 +68,12 @@ public final class aip extends qmb implements qmy {
                         aizVar.a();
                         return a;
                     } catch (Throwable th3) {
-                        th = th3;
+                        th3.printStackTrace();
                         aizVar.a();
-                        throw th;
                     }
                 } catch (Throwable th4) {
-                    th = th4;
+                    th4.printStackTrace();
                     this.b.i();
-                    throw th;
                 }
             default:
                 aiz aizVar2 = (aiz) this.d;
@@ -89,11 +86,11 @@ public final class aip extends qmb implements qmy {
                     aizVar.a();
                     return a;
                 } catch (Throwable th5) {
-                    th = th5;
+                    th5.printStackTrace();
                     aizVar = aizVar2;
                     this.b.i();
-                    throw th;
                 }
         }
+        return null;
     }
 }

@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 
@@ -35,7 +36,7 @@ public final class bxj {
         this.c = i;
         this.b.c(i);
         if (this.c == 1) {
-            for (bxo bxoVar : this.d) {
+            for (bxo bxoVar : (Set<bxo>) this.d) {
                 bxoVar.a();
             }
         }
@@ -48,7 +49,7 @@ public final class bxj {
         this.b.c(i);
         obr.aQ(this.c >= 0);
         if (this.c == 0) {
-            for (bxo bxoVar : this.d) {
+            for (bxo bxoVar : (Set<bxo>) this.d) {
                 bxoVar.b();
             }
         }

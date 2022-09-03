@@ -16,6 +16,7 @@ import androidx.preference.PreferenceScreen;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: ahe  reason: default package */
 /* loaded from: classes.dex */
@@ -63,7 +64,7 @@ public final class ahe extends pu implements agl {
                     } else if (n(preferenceGroup) && n(preferenceGroup2)) {
                         throw new IllegalStateException("Nesting an expandable group inside of another expandable group is not supported!");
                     } else {
-                        for (Preference preference : l(preferenceGroup2)) {
+                        for (Preference preference : (Set<Preference>) l(preferenceGroup2)) {
                             if (!n(preferenceGroup) || i < preferenceGroup.d) {
                                 arrayList.add(preference);
                             } else {
@@ -191,7 +192,7 @@ public final class ahe extends pu implements agl {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void k() {
-        for (Preference preference : this.f) {
+        for (Preference preference : (Set<Preference>) this.f) {
             preference.C = null;
         }
         ArrayList arrayList = new ArrayList(this.f.size());
@@ -200,7 +201,7 @@ public final class ahe extends pu implements agl {
         this.d = l(this.e);
         ahj ahjVar = this.e.k;
         this.a.a();
-        for (Preference preference2 : this.f) {
+        for (Preference preference2 : (Set<Preference>) this.f) {
         }
     }
 }

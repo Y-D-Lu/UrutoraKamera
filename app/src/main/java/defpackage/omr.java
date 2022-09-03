@@ -23,7 +23,7 @@ public abstract class omr implements Comparable, Serializable {
         return new omq(comparable);
     }
 
-    @Override // java.lang.Comparable
+//    @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(omr omrVar) {
         if (omrVar != omp.a) {

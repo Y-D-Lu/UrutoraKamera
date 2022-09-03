@@ -190,7 +190,7 @@ public class ih extends by implements dt {
 
     @Override // defpackage.dt
     public final Intent fR() {
-        return d.q(this);
+        return defpackage.d.q(this);
     }
 
     @Override // android.app.Activity
@@ -251,7 +251,7 @@ public class ih extends by implements dt {
             return true;
         }
         hu f = f();
-        if (menuItem.getItemId() != 16908332 || f == null || (f.a() & 4) == 0 || (q = d.q(this)) == null) {
+        if (menuItem.getItemId() != 16908332 || f == null || (f.a() & 4) == 0 || (q = defpackage.d.q(this)) == null) {
             return false;
         }
         if (!shouldUpRecreateTask(q)) {
@@ -261,7 +261,7 @@ public class ih extends by implements dt {
         du duVar = new du(this);
         Intent fR = fR();
         if (fR == null) {
-            fR = d.q(this);
+            fR = defpackage.d.q(this);
         }
         if (fR != null) {
             ComponentName component = fR.getComponent();
@@ -270,11 +270,11 @@ public class ih extends by implements dt {
             }
             int size = duVar.a.size();
             try {
-                for (Intent r = d.r(duVar.b, component); r != null; r = d.r(duVar.b, r.getComponent())) {
+                for (Intent r = defpackage.d.r(duVar.b, component); r != null; r = defpackage.d.r(duVar.b, r.getComponent())) {
                     duVar.a.add(size, r);
                 }
                 duVar.a.add(fR);
-            } catch (PackageManager.NameNotFoundException e) {
+            } catch (Exception e) {
                 Log.e("TaskStackBuilder", "Bad ComponentName while traversing activity parent metadata");
                 throw new IllegalArgumentException(e);
             }

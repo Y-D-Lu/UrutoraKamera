@@ -38,7 +38,7 @@ final class agb extends Preference {
                     arrayList.add((PreferenceGroup) preference);
                 }
             } else if (!TextUtils.isEmpty(charSequence)) {
-                str = str == null ? charSequence : this.j.getString(R.string.summary_collapsed_preference_list, str, charSequence);
+                str = str == null ? (String) charSequence : this.j.getString(R.string.summary_collapsed_preference_list, str, charSequence);
             }
         }
         n(str);

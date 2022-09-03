@@ -34,8 +34,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-
-import java.util.Collection;
+import java.util.Set;
 import java.util.function.Function;
 
 /* renamed from: fcb  reason: default package */
@@ -246,7 +245,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                 findPreference("pref_category_general").setLayoutResource(true != CameraSettingsActivity.p ? R.layout.preference_category_layout_legacy : R.layout.preference_category_layout);
             }
             int size = hvcVar.d().size() - 1;
-            for (hvd hvdVar : hvcVar.d()) {
+            for (hvd hvdVar : (Set<hvd>) hvcVar.d()) {
                 fca fcaVar = new fca(fbzVar.getContext(), i, size);
                 i++;
                 fcaVar.setTitle(hvdVar.b());
@@ -261,7 +260,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                 fbzVar.addPreference(fcaVar);
             }
         }
-        for (lie lieVar : this.a.n) {
+        for (lie lieVar : (Set<lie>) this.a.n) {
             this.f.c(lieVar);
         }
         if (!list.contains("pref_audio_zoom_key")) {
@@ -321,7 +320,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                 managedSwitchPreference3.c = new Preference.OnPreferenceChangeListener() { // from class: idp
                     @Override // android.preference.Preference.OnPreferenceChangeListener
                     public final boolean onPreferenceChange(Preference preference, Object obj) {
-                        ids idsVar2 = ids.this;
+                        ids idsVar2 = idsVar;
                         idsVar2.f.p(preference.getKey(), Boolean.valueOf(managedSwitchPreference3.isChecked()), obj);
                         Boolean bool = (Boolean) obj;
                         idsVar2.f(bool.booleanValue());
@@ -378,9 +377,9 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
             idsVar.l = idsVar.c(idsVar.e.c("image/*"), idsVar.e.c("video/*"));
             idsVar.e.h(idsVar.l);
             idsVar.e.e(idsVar.l);
-            oom<ResolveInfo> oomVar = idsVar.l;
+            oom oomVar = idsVar.l;
             oor a2 = idsVar.e.a();
-            for (ResolveInfo resolveInfo : oomVar) {
+            for (ResolveInfo resolveInfo : (Set<ResolveInfo>) oomVar) {
                 idm idmVar = (idm) a2.get(resolveInfo.activityInfo.packageName);
                 idmVar.getClass();
                 ManagedSwitchPreference managedSwitchPreference4 = new ManagedSwitchPreference(idsVar.a);
@@ -399,7 +398,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                 managedSwitchPreference4.c = new Preference.OnPreferenceChangeListener() { // from class: ido
                     @Override // android.preference.Preference.OnPreferenceChangeListener
                     public final boolean onPreferenceChange(Preference preference, Object obj) {
-                        ids idsVar2 = ids.this;
+                        ids idsVar2 = idsVar;
                         int a3 = idsVar2.a();
                         boolean z = true;
                         idsVar2.d.e(htu.D, true);
@@ -441,10 +440,10 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
             ManagedSwitchPreference managedSwitchPreference5 = (ManagedSwitchPreference) ((PreferenceScreen) findPreference("pref_category_frequent_faces")).findPreference("key_ff_opt_in");
             if (managedSwitchPreference5 != null) {
                 managedSwitchPreference5.setChecked(((Boolean) dwdVar.b.fA()).booleanValue());
-                managedSwitchPreference5.c = new Preference.OnPreferenceChangeListener(null) { // from class: dwa
+                managedSwitchPreference5.c = new Preference.OnPreferenceChangeListener() { // from class: dwa
                     @Override // android.preference.Preference.OnPreferenceChangeListener
                     public final boolean onPreferenceChange(Preference preference, Object obj) {
-                        dwd dwdVar2 = dwd.this;
+                        dwd dwdVar2 = dwdVar;
                         boolean booleanValue2 = ((Boolean) obj).booleanValue();
                         if (!booleanValue2) {
                             dwd.a(dwdVar2.a);
@@ -472,7 +471,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
             managedSwitchPreference6.c = new Preference.OnPreferenceChangeListener() { // from class: ili
                 @Override // android.preference.Preference.OnPreferenceChangeListener
                 public final boolean onPreferenceChange(Preference preference, Object obj) {
-                    ilk ilkVar2 = ilk.this;
+                    ilk ilkVar2 = ilkVar;
                     ManagedSwitchPreference managedSwitchPreference8 = managedSwitchPreference7;
                     ManagedSwitchPreference managedSwitchPreference9 = managedSwitchPreference6;
                     if (Boolean.TRUE.equals(obj)) {
@@ -591,9 +590,9 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
             }
         }
         oqt oqtVar = this.a.o;
-        for (String str2 : oqtVar.n()) {
+        for (String str2 : (Set<String>) oqtVar.n()) {
             PreferenceGroup preferenceGroup = (PreferenceGroup) findPreference(str2);
-            for (Preference preference : ((olp) oqtVar).b(str2)) {
+            for (Preference preference : (Set<Preference>) ((olp) oqtVar).b(str2)) {
                 if (!preferenceGroup.addPreference(preference)) {
                     ((oug) ((oug) CameraSettingsActivity.o.c()).G((char) 1627)).r("Could not add %s", preference.getTitle());
                 } else {
@@ -601,7 +600,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                 }
             }
         }
-        for (String str3 : this.a.f) {
+        for (String str3 : (Set<String>) this.a.f) {
             jhu jhuVar = (jhu) findPreference(str3);
             if (jhuVar != null) {
                 final fce fceVar = this.a;
@@ -614,7 +613,7 @@ public final class fcb extends PreferenceFragment implements SharedPreferences.O
                     @Override // java.util.function.Function
                     public final Object apply(Object obj) {
                         Preference preference2 = (Preference) obj;
-                        return Boolean.valueOf(((iln) fce.this.g.get()).a());
+                        return Boolean.valueOf(((iln) fceVar.g.get()).a());
                     }
 
                     @Override // java.util.function.Function

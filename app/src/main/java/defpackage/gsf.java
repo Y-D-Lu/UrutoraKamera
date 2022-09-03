@@ -20,7 +20,7 @@ public final class gsf {
         this.c = rect;
     }
 
-    public static gsf a(lvp lvpVar, lig ligVar, int i) {
+    public static gsf a(lvp lvpVar, lig ligVar, int i) throws gse {
         List<lig> x = lvpVar.x(i);
         if (x.isEmpty()) {
             StringBuilder sb = new StringBuilder(50);

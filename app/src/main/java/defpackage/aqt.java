@@ -71,7 +71,7 @@ public final class aqt {
 
     public final long a() {
         if (c()) {
-            return this.l + Math.min(18000000L, this.q == 2 ? this.k * this.j : Math.scalb((float) this.k, this.j - 1));
+            return (long) (this.l + Math.min(18000000L, this.q == 2 ? this.k * this.j : Math.scalb((float) this.k, this.j - 1)));
         }
         long j = 0;
         if (!d()) {

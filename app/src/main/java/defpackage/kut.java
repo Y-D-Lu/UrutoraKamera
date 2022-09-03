@@ -135,7 +135,7 @@ public final class kut {
                 this.d = 0;
             }
             a();
-            for (kus kusVar : this.l.values()) {
+            for (kus kusVar :(Set<kus>)  this.l.values()) {
                 kusVar.a = 0;
             }
             this.l.clear();

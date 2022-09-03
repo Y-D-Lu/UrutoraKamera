@@ -54,7 +54,7 @@ public final class jwq implements jwy {
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
                     Boolean bool = (Boolean) obj;
-                    jwp.this.b();
+                    jwpVar.b();
                 }
             }, pgr.a));
         }

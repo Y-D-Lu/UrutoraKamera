@@ -1,10 +1,8 @@
 package defpackage;
 
-import java.util.Collection;
 import java.util.Comparator;
 import java.util.NavigableMap;
 import java.util.NavigableSet;
-import java.util.Set;
 import java.util.SortedMap;
 
 import java.util.Map;
@@ -74,7 +72,7 @@ public final class opj extends opk implements NavigableMap, Map {
     }
 
     @Override // defpackage.oor, java.util.Map, java.util.Map
-    public /* bridge */ /* synthetic */ Set entrySet() {
+    public /* bridge */ /* synthetic */ ope entrySet() {
         return entrySet();
     }
 
@@ -83,7 +81,8 @@ public final class opj extends opk implements NavigableMap, Map {
         if (isEmpty()) {
             return null;
         }
-        return (Map.Entry) entrySet().v().get(0);
+        return (Map.Entry) entrySet();
+        //return (Map.Entry) entrySet().v().get(0);
     }
 
     @Override // java.util.SortedMap
@@ -193,7 +192,7 @@ public final class opj extends opk implements NavigableMap, Map {
         throw new AssertionError("should never be called");
     }
 
-    @Override // defpackage.oor
+//    @Override // defpackage.oor
     public final ood j() {
         return this.b;
     }
@@ -207,7 +206,7 @@ public final class opj extends opk implements NavigableMap, Map {
     }
 
     @Override // defpackage.oor, java.util.Map, java.util.Map
-    public final /* synthetic */ Set keySet() {
+    public final /* synthetic */ ope keySet() {
         return this.a;
     }
 
@@ -266,13 +265,13 @@ public final class opj extends opk implements NavigableMap, Map {
         return tailMap(obj, true);
     }
 
-    @Override // defpackage.oor
+//    @Override // defpackage.oor
     public final /* synthetic */ ope u() {
         return this.a;
     }
 
     @Override // defpackage.oor, java.util.Map, java.util.Map
-    public final /* synthetic */ Collection values() {
+    public final /* synthetic */ ood values() {
         return this.b;
     }
 

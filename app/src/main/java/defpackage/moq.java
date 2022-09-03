@@ -25,7 +25,7 @@ public class moq {
         }
     }
 
-    @Override // 
+//    @Override //
     /* renamed from: a */
     public moq b(mmf mmfVar) {
         return new moq(this.c, mmfVar.c());

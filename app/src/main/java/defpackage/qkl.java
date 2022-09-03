@@ -36,6 +36,6 @@ public final class qkl implements Serializable {
     }
 
     public final String toString() {
-        return '(' + this.a + ", " + this.b + ')';
+        return '(' + this.a.toString() + ", " + this.b + ')';
     }
 }

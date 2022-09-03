@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: ijm  reason: default package */
 /* loaded from: classes.dex */
 public final class ijm {
-    public final String a;
-    public final int b;
-    public final long c;
+    public String a;
+    public int b;
+    public long c;
 
     public ijm() {
     }

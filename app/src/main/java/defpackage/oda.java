@@ -60,7 +60,7 @@ public final class oda extends LinearLayout {
             gradientDrawable3.setColor(-1);
             ColorStateList a = obm.a(tabLayout.h);
             boolean z = tabLayout.v;
-            gradientDrawable2 = new RippleDrawable(a, true == z ? null : gradientDrawable2, true != z ? gradientDrawable3 : gradientDrawable);
+            //gradientDrawable2 = new RippleDrawable(a, true == z ? null : gradientDrawable2, true != z ? gradientDrawable3 : gradientDrawable);
         }
         gl.G(this, gradientDrawable2);
         tabLayout.invalidate();

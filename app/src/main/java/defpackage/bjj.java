@@ -26,7 +26,7 @@ final class bjj implements bjp {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void b() {
         this.c = true;
-        for (bjq bjqVar : bmf.g(this.a)) {
+        for (bjq bjqVar : (Set<bjq>) bmf.g(this.a)) {
             bjqVar.g();
         }
     }
@@ -34,7 +34,7 @@ final class bjj implements bjp {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c() {
         this.b = true;
-        for (bjq bjqVar : bmf.g(this.a)) {
+        for (bjq bjqVar : (Set<bjq>) bmf.g(this.a)) {
             bjqVar.h();
         }
     }
@@ -42,7 +42,7 @@ final class bjj implements bjp {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void d() {
         this.b = false;
-        for (bjq bjqVar : bmf.g(this.a)) {
+        for (bjq bjqVar : (Set<bjq>) bmf.g(this.a)) {
             bjqVar.i();
         }
     }

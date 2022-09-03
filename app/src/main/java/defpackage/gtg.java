@@ -579,7 +579,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                         AlertDialog.Builder onDismissListener = new AlertDialog.Builder(optionsMenuContainer.k, org.codeaurora.snapcam.R.style.DialogTutorialStyle).setTitle(optionsMenuContainer.getResources().getString(org.codeaurora.snapcam.R.string.micro_tutorial_title)).setMessage(optionsMenuContainer.getResources().getString(org.codeaurora.snapcam.R.string.micro_tutorial_text)).setCancelable(false).setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: gub
                             @Override // android.content.DialogInterface.OnDismissListener
                             public final void onDismiss(DialogInterface dialogInterface) {
-                                OptionsMenuContainer optionsMenuContainer2 = OptionsMenuContainer.this;
+                                OptionsMenuContainer optionsMenuContainer2 = optionsMenuContainer;
                                 elwVar.n();
                                 if (dialogInterface == optionsMenuContainer2.m) {
                                     optionsMenuContainer2.m = null;
@@ -690,12 +690,8 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
             optionsMenuView2.e.put(gtkVar, new gtb(this));
         }
         if (gtkVar.a == gtm.BEAUTIFICATION && this.e.k(dda.f) && this.bc != null) {
-            this.aT.g(gtkVar, new gtp(this) { // from class: gta
-                public final /* synthetic */ gtg a;
-
-                {
-                    this.a = this;
-                }
+            this.aT.g(gtkVar, new gtp() { // from class: gta
+                public final /* synthetic */ gtg a = gtg.this;
 
                 @Override // defpackage.gtp
                 public final void a(gtv gtvVar, boolean z) {
@@ -727,12 +723,8 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
             });
         }
         if (gtkVar.a == gtm.ASTRO && this.bb.g()) {
-            this.aT.g(gtkVar, new gtp(this) { // from class: gta
-                public final /* synthetic */ gtg a;
-
-                {
-                    this.a = this;
-                }
+            this.aT.g(gtkVar, new gtp() { // from class: gta
+                public final /* synthetic */ gtg a = gtg.this;
 
                 @Override // defpackage.gtp
                 public final void a(gtv gtvVar, boolean z) {
@@ -766,12 +758,8 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
         if (gtkVar.a != gtm.MICROVIDEO || !this.e.k(ddr.p)) {
             return;
         }
-        this.aT.g(gtkVar, new gtp(this) { // from class: gta
-            public final /* synthetic */ gtg a;
-
-            {
-                this.a = this;
-            }
+        this.aT.g(gtkVar, new gtp() { // from class: gta
+            public final /* synthetic */ gtg a = gtg.this;
 
             @Override // defpackage.gtp
             public final void a(gtv gtvVar, boolean z) {
@@ -914,7 +902,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
     }
 
     public final void v() {
-        for (gto gtoVar : this.bh.keySet()) {
+        for (gto gtoVar : (Set<gto>) this.bh.keySet()) {
             OptionsMenuView optionsMenuView = this.aT;
             gtk gtkVar = (gtk) this.bh.get(gtoVar);
             gtkVar.getClass();

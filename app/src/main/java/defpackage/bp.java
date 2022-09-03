@@ -237,7 +237,7 @@ public class bp extends bu implements DialogInterface.OnCancelListener, DialogIn
     public void onDismiss(DialogInterface dialogInterface) {
         if (!this.ah) {
             if (cu.Q(3)) {
-                r0 = "onDismiss called for DialogFragment " + this;
+                //r0 = "onDismiss called for DialogFragment " + this;
             }
             if (this.ai) {
                 return;

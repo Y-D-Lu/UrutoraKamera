@@ -201,7 +201,7 @@ public final class fci implements pys {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         });
                         return plk.V(true);

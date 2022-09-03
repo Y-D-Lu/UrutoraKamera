@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: jnl  reason: default package */
 /* loaded from: classes2.dex */
 public final class jnl {
-    public final lig a;
-    public final lhs b;
-    public final ojc c;
-    private final lwd d;
+    public lig a;
+    public lhs b;
+    public ojc c;
+    private lwd d;
 
     public jnl() {
     }

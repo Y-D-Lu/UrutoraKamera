@@ -27,12 +27,8 @@ public final class imf {
         a.a = "Swiss";
         a.c(larVar);
         a.f(imsVar);
-        a.e(new Runnable(this) { // from class: ime
-            public final /* synthetic */ imf a;
-
-            {
-                this.a = this;
-            }
+        a.e(new Runnable() { // from class: ime
+            public final /* synthetic */ imf a = imf.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -46,12 +42,8 @@ public final class imf {
                 }
             }
         });
-        a.d(new Runnable(this) { // from class: ime
-            public final /* synthetic */ imf a;
-
-            {
-                this.a = this;
-            }
+        a.d(new Runnable() { // from class: ime
+            public final /* synthetic */ imf a = imf.this;
 
             @Override // java.lang.Runnable
             public final void run() {

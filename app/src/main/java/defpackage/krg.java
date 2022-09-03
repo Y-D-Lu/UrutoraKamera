@@ -8,9 +8,9 @@ import android.util.Log;
 /* renamed from: krg  reason: default package */
 /* loaded from: classes2.dex */
 public final class krg extends bmo implements IInterface {
-    private final kqg a;
-    private final oke b;
-    private final Object c;
+    private kqg a;
+    private oke b;
+    private Object c;
     private boolean d;
 
     public krg() {

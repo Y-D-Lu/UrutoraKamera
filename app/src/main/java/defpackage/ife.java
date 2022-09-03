@@ -231,7 +231,7 @@ public final class ife implements iet {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        return consumer.getClass();
+                        return consumer;
                     }
                 }));
             } else {
@@ -276,7 +276,7 @@ public final class ife implements iet {
 
                     @Override // java.util.function.Consumer
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                        return consumer.getClass();
+                        return consumer;
                     }
                 }));
             }
@@ -439,7 +439,7 @@ public final class ife implements iet {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
     }
@@ -497,7 +497,7 @@ public final class ife implements iet {
 
                 @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                    return consumer.getClass();
+                    return consumer;
                 }
             }));
             ofPropertyValuesHolder.setDuration(ifjVar.b.toMillis());

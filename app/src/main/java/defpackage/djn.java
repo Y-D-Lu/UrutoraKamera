@@ -15,6 +15,7 @@ import com.google.android.apps.camera.debug.ui.MaterialSearchViewPreference;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: djn  reason: default package */
 /* loaded from: classes.dex */
@@ -34,12 +35,8 @@ public final class djn {
         this.c = preferenceScreen;
         Preference preference = new Preference(this.a);
         preference.R("Reset to default values");
-        preference.o = new agn(this) { // from class: djk
-            public final /* synthetic */ djn a;
-
-            {
-                this.a = this;
-            }
+        preference.o = new agn() { // from class: djk
+            public final /* synthetic */ djn a = djn.this;
 
             @Override // defpackage.agn
             public final boolean a() {
@@ -48,7 +45,7 @@ public final class djn {
                         djn djnVar = this.a;
                         int k = djnVar.c.k();
                         SharedPreferences.Editor edit = djnVar.b.edit();
-                        for (djm djmVar : djnVar.d) {
+                        for (djm djmVar : (Set<djm>) djnVar.d) {
                             edit.remove(djmVar.b.t);
                         }
                         for (int i = 0; i < k; i++) {
@@ -67,12 +64,8 @@ public final class djn {
         this.c.ag(preference);
         Preference preference2 = new Preference(this.a);
         preference2.R("Primes Log");
-        preference2.o = new agn(this) { // from class: djk
-            public final /* synthetic */ djn a;
-
-            {
-                this.a = this;
-            }
+        preference2.o = new agn() { // from class: djk
+            public final /* synthetic */ djn a = djn.this;
 
             @Override // defpackage.agn
             public final boolean a() {
@@ -81,7 +74,7 @@ public final class djn {
                         djn djnVar = this.a;
                         int k = djnVar.c.k();
                         SharedPreferences.Editor edit = djnVar.b.edit();
-                        for (djm djmVar : djnVar.d) {
+                        for (djm djmVar : (Set<djm>) djnVar.d) {
                             edit.remove(djmVar.b.t);
                         }
                         for (int i = 0; i < k; i++) {
@@ -136,7 +129,7 @@ public final class djn {
         preferenceScreen.ag(preferenceCategory);
         Collections.sort(this.d, cdg.d);
         String[] split = this.b.getString("dev_setting_filter_key", "").split("(,|\\s)+", -1);
-        for (djm djmVar : this.d) {
+        for (djm djmVar : (Set<djm>) this.d) {
             int length = split.length;
             int i = 0;
             while (true) {

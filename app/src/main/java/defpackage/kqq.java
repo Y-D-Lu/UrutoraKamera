@@ -18,10 +18,10 @@ public abstract class kqq extends kqh {
 
     @Override // defpackage.kqh
     public final void d(String str, byte[] bArr, byte[] bArr2, kre kreVar) {
-        poh l;
-        ppd ppdVar;
-        poh l2;
-        ppd ppdVar2;
+        poh l = null;
+        ppd ppdVar = null;
+        poh l2 = null;
+        ppd ppdVar2 = null;
         try {
             pnq pnqVar = (pnq) ppd.s(pnq.c, bArr, pos.b());
             try {
@@ -38,8 +38,8 @@ public abstract class kqq extends kqh {
                 try {
                     l = pocVar.l();
                     ppdVar = (ppd) plrVar.G(4);
-                } catch (ppp e2) {
-                    e = e2;
+                } catch (Exception e2) {
+                    e2.printStackTrace();
                 }
                 try {
                     try {
@@ -111,8 +111,8 @@ public abstract class kqq extends kqh {
                                                                 try {
                                                                     l2 = pocVar2.l();
                                                                     ppdVar2 = (ppd) plqVar.G(4);
-                                                                } catch (ppp e3) {
-                                                                    e = e3;
+                                                                } catch (Exception e3) {
+                                                                    e3.printStackTrace();
                                                                 }
                                                                 try {
                                                                     try {
@@ -152,17 +152,14 @@ public abstract class kqq extends kqh {
                                                                         throw ((ppp) e7.getCause());
                                                                     }
                                                                 } catch (ppp e8) {
-                                                                    e = e8;
-                                                                    throw e;
+                                                                    e8.printStackTrace();
                                                                 }
-                                                            } catch (ppp e9) {
-                                                                e = e9;
-                                                                Log.w("ExampleStoreSvc", e.getMessage());
-                                                                kreVar.a(10, e.getMessage());
+                                                            } catch (Exception e9) {
+                                                                Log.w("ExampleStoreSvc", e9.getMessage());
+                                                                kreVar.a(10, e9.getMessage());
                                                                 return;
                                                             }
-                                                        } catch (ppp e10) {
-                                                            e = e10;
+                                                        } catch (Exception e10) {
                                                         }
                                                     } catch (ppp e11) {
                                                         Log.w("ExampleStoreSvc", "Error parsing Any proto from resumptionPoint");
@@ -197,12 +194,10 @@ public abstract class kqq extends kqh {
                         throw new ppp(e15);
                     }
                 } catch (ppp e16) {
-                    e = e16;
-                    throw e;
+                    e16.printStackTrace();
                 }
-            } catch (ppp e17) {
-                e = e17;
-                String valueOf = String.valueOf(e.getMessage());
+            } catch (Exception e17) {
+                String valueOf = String.valueOf(e17.getMessage());
                 String concat = valueOf.length() != 0 ? "Error parsing SelectionCriteria proto: ".concat(valueOf) : new String("Error parsing SelectionCriteria proto: ");
                 Log.w("ExampleStoreSvc", concat);
                 kreVar.a(10, concat);

@@ -153,7 +153,7 @@ public final class cug implements cuj {
         cusVar.b.b.setOnClickListener(new View.OnClickListener() { // from class: cuo
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                cub cubVar2 = cub.this;
+                cub cubVar2 = cubVar;
                 synchronized (cubVar2.a.v) {
                     cubVar2.a.b.a();
                     cubVar2.a.k.e(htu.t, true);
@@ -163,7 +163,7 @@ public final class cug implements cuj {
         cusVar.g.c(new jhq() { // from class: cup
             @Override // defpackage.jhq
             public final void a(jhp jhpVar) {
-                cub cubVar2 = cub.this;
+                cub cubVar2 = cubVar;
                 cuv cuvVar = (cuv) jhpVar.a;
                 synchronized (cubVar2.a.v) {
                     cubVar2.a.a.b();

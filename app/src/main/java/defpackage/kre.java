@@ -29,7 +29,7 @@ public final class kre {
             bmp.c(a2, status);
             a2.writeLong(a);
             krhVar.z(3, a2);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.w("brella.ExampleStoreSvc", "onStartQueryFailure AIDL call failed, ignoring", e);
         }
     }
@@ -44,7 +44,7 @@ public final class kre {
             bmp.e(a2, krgVar);
             a2.writeLong(a);
             krhVar.z(2, a2);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.w("brella.ExampleStoreSvc", "onStartQuerySuccess AIDL call failed, closing iterator", e);
             krgVar.b();
         }

@@ -58,7 +58,7 @@ public final class bke extends bu {
             if (buVar == null) {
                 break;
             }
-            bkeVar = buVar;
+            bkeVar = (bke) buVar;
         }
         cu cuVar = bkeVar.y;
         if (cuVar == null) {

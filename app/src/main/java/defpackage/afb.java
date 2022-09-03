@@ -20,7 +20,7 @@ public final class afb extends aen {
     }
 
     @Override // defpackage.aem
-    protected final void d() {
+    public final void d() {
         if (afa.b(2)) {
             String str = "  Starting: " + this;
         }
@@ -32,7 +32,7 @@ public final class afb extends aen {
     }
 
     @Override // defpackage.aem
-    protected final void e() {
+    public final void e() {
         if (afa.b(2)) {
             String str = "  Stopping: " + this;
         }

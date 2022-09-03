@@ -75,7 +75,7 @@ public final class cwt {
 
                                 @Override // java.util.function.Consumer
                                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                    return consumer.getClass();
+                                    return consumer;
                                 }
                             });
                         } catch (Throwable th) {

@@ -87,11 +87,11 @@ public final class iuv extends pu {
                 i++;
             }
         }
-        final iut iutVar = new iut(this);
+        final iut iutVar = new iut();
         ivaVar.w.setOnScrollChangeListener(new View.OnScrollChangeListener() { // from class: iuy
             @Override // android.view.View.OnScrollChangeListener
             public final void onScrollChange(View view2, int i2, int i3, int i4, int i5) {
-                iva ivaVar2 = iva.this;
+                iva ivaVar2 = ivaVar;
                 iut iutVar2 = iutVar;
                 int width = ivaVar2.w.getChildAt(0).getWidth();
                 int width2 = ivaVar2.w.getWidth();

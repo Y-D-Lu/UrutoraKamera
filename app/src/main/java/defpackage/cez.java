@@ -173,47 +173,47 @@ public final /* synthetic */ class cez implements Consumer {
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.s) {
             case 0:
-                return consumer.getClass();
+                return consumer;
             case 1:
-                return consumer.getClass();
+                return consumer;
             case 2:
-                return consumer.getClass();
+                return consumer;
             case 3:
-                return consumer.getClass();
+                return consumer;
             case 4:
-                return consumer.getClass();
+                return consumer;
             case 5:
-                return consumer.getClass();
+                return consumer;
             case 6:
-                return consumer.getClass();
+                return consumer;
             case 7:
-                return consumer.getClass();
+                return consumer;
             case 8:
-                return consumer.getClass();
+                return consumer;
             case 9:
-                return consumer.getClass();
+                return consumer;
             case 10:
-                return consumer.getClass();
+                return consumer;
             case 11:
-                return consumer.getClass();
+                return consumer;
             case 12:
-                return consumer.getClass();
+                return consumer;
             case 13:
-                return consumer.getClass();
+                return consumer;
             case 14:
-                return consumer.getClass();
+                return consumer;
             case 15:
-                return consumer.getClass();
+                return consumer;
             case 16:
-                return consumer.getClass();
+                return consumer;
             case 17:
-                return consumer.getClass();
+                return consumer;
             case 18:
-                return consumer.getClass();
+                return consumer;
             case 19:
-                return consumer.getClass();
+                return consumer;
             default:
-                return consumer.getClass();
+                return consumer;
         }
     }
 }

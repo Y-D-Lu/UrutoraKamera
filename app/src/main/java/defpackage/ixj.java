@@ -34,10 +34,10 @@ public class ixj extends ihr {
         this.m = ldaVar;
         this.n = elwVar;
         jdyVar.getClass();
-        final Runnable runnable = new Runnable(null, null) { // from class: iwu
+        final Runnable runnable = new Runnable() { // from class: iwu
             @Override // java.lang.Runnable
             public final void run() {
-                jdy.this.h();
+                jdyVar.h();
             }
         };
         a(new iib() { // from class: ihx

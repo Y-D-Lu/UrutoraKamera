@@ -91,7 +91,7 @@ public final class jdk implements fik, fii, fig {
         popupMenuButton.postDelayed(new Runnable() { // from class: jdg
             @Override // java.lang.Runnable
             public final void run() {
-                PopupMenuButton.this.setVisibility(0);
+                popupMenuButton.setVisibility(0);
             }
         }, 2000L);
     }

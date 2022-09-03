@@ -220,7 +220,7 @@ public final class dsz implements dqx {
                 }
                 return d;
             } catch (Throwable th2) {
-                th = th2;
+                th2.printStackTrace();
             }
         }
     }

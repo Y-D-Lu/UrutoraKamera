@@ -44,13 +44,13 @@ public final /* synthetic */ class hrq implements Runnable {
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         switch (-1) {
                             case 0:
-                                return consumer.getClass();
+                                return consumer;
                             case 1:
-                                return consumer.getClass();
+                                return consumer;
                             case 2:
-                                return consumer.getClass();
+                                return consumer;
                             default:
-                                return consumer.getClass();
+                                return consumer;
                         }
                     }
                 }, hspVar);
@@ -81,13 +81,13 @@ public final /* synthetic */ class hrq implements Runnable {
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         switch (-1) {
                             case 0:
-                                return consumer.getClass();
+                                return consumer;
                             case 1:
-                                return consumer.getClass();
+                                return consumer;
                             case 2:
-                                return consumer.getClass();
+                                return consumer;
                             default:
-                                return consumer.getClass();
+                                return consumer;
                         }
                     }
                 });
@@ -118,13 +118,13 @@ public final /* synthetic */ class hrq implements Runnable {
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         switch (-1) {
                             case 0:
-                                return consumer.getClass();
+                                return consumer;
                             case 1:
-                                return consumer.getClass();
+                                return consumer;
                             case 2:
-                                return consumer.getClass();
+                                return consumer;
                             default:
-                                return consumer.getClass();
+                                return consumer;
                         }
                     }
                 }, hspVar3);
@@ -155,13 +155,13 @@ public final /* synthetic */ class hrq implements Runnable {
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         switch (-1) {
                             case 0:
-                                return consumer.getClass();
+                                return consumer;
                             case 1:
-                                return consumer.getClass();
+                                return consumer;
                             case 2:
-                                return consumer.getClass();
+                                return consumer;
                             default:
-                                return consumer.getClass();
+                                return consumer;
                         }
                     }
                 }, hspVar4);

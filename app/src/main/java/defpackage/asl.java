@@ -27,15 +27,11 @@ public final class asl implements pht {
         asc asjVar;
         try {
             asjVar = new ash(AtomicReferenceFieldUpdater.newUpdater(ask.class, Thread.class, "b"), AtomicReferenceFieldUpdater.newUpdater(ask.class, ask.class, "c"), AtomicReferenceFieldUpdater.newUpdater(asl.class, ask.class, "f"), AtomicReferenceFieldUpdater.newUpdater(asl.class, asg.class, "e"), AtomicReferenceFieldUpdater.newUpdater(asl.class, Object.class, "d"));
-            th = null;
         } catch (Throwable th) {
-            th = th;
+            g.log(Level.SEVERE, "SafeAtomicHelper is broken!", th);
             asjVar = new asj();
         }
         b = asjVar;
-        if (th != null) {
-            g.log(Level.SEVERE, "SafeAtomicHelper is broken!", th);
-        }
         c = new Object();
     }
 
@@ -68,7 +64,7 @@ public final class asl implements pht {
                 return new asd(false, e);
             }
             return new asf(new IllegalArgumentException("get() threw CancellationException, despite reporting isCancelled() == false: " + phtVar, e));
-        } catch (ExecutionException e2) {
+        } catch (Exception e2) {
             return new asf(e2.getCause());
         } catch (Throwable th2) {
             return new asf(th2);
@@ -151,7 +147,7 @@ public final class asl implements pht {
                 if (z) {
                     Thread.currentThread().interrupt();
                 }
-                throw th;
+                th.printStackTrace();
             }
         }
         if (z) {
@@ -176,7 +172,7 @@ public final class asl implements pht {
             sb.append("UNKNOWN, cause=[");
             sb.append(e2.getClass());
             sb.append(" thrown from get()]");
-        } catch (ExecutionException e3) {
+        } catch (Exception e3) {
             sb.append("FAILURE, cause=[");
             sb.append(e3.getCause());
             sb.append("]");
@@ -219,7 +215,7 @@ public final class asl implements pht {
         }
     }
 
-    private static final Object n(Object obj) {
+    private static final Object n(Object obj) throws ExecutionException {
         if (obj instanceof asd) {
             Throwable th = ((asd) obj).d;
             CancellationException cancellationException = new CancellationException("Task was cancelled.");
@@ -394,7 +390,7 @@ public final class asl implements pht {
     }
 
     @Override // java.util.concurrent.Future
-    public final Object get() {
+    public final Object get() throws ExecutionException, InterruptedException {
         Object obj;
         if (!Thread.interrupted()) {
             Object obj2 = this.d;
@@ -427,7 +423,7 @@ public final class asl implements pht {
     }
 
     @Override // java.util.concurrent.Future
-    public final Object get(long j, TimeUnit timeUnit) {
+    public final Object get(long j, TimeUnit timeUnit) throws ExecutionException, InterruptedException, TimeoutException {
         long nanos = timeUnit.toNanos(j);
         if (!Thread.interrupted()) {
             Object obj = this.d;
@@ -518,7 +514,7 @@ public final class asl implements pht {
 
     public final String toString() {
         String str;
-        Object obj;
+        Object obj = null;
         StringBuilder sb = new StringBuilder();
         sb.append(super.toString());
         sb.append("[status=");

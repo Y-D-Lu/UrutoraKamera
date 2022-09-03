@@ -16,9 +16,8 @@ import org.codeaurora.snapcam.R;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.List;
-
-import java.util.Collection;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
@@ -59,12 +58,8 @@ public final class jkz {
         this.w = AnimationUtils.loadInterpolator(shutterButton.getContext(), 17563661);
         ArrayList<jku> arrayList = new ArrayList();
         jku eB = mip.eB(jkc.AUTOTIMER_IDLE, arrayList);
-        eB.b(jkc.AUTOTIMER_RUNNING, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
-
-            {
-                this.a = this;
-            }
+        eB.b(jkc.AUTOTIMER_RUNNING, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -322,56 +317,52 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
-
-            {
-                this.a = this;
-            }
+        eB.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -629,56 +620,52 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
-
-            {
-                this.a = this;
-            }
+        eB.b(jkc.NIGHT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -895,7 +882,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -906,56 +893,52 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
-
-            {
-                this.a = this;
-            }
+        eB.b(jkc.IMAX_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -1213,56 +1196,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB.b(jkc.PHOTO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -1520,56 +1500,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -1827,56 +1804,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -2146,56 +2120,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -2453,57 +2424,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB.c(jkc.TIMELAPSE_IDLE);
-        eB.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB.b(jkc.VIDEO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -2720,7 +2688,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -2731,56 +2699,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        mip.eB(jkc.AUTOTIMER_RUNNING, arrayList).b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        mip.eB(jkc.AUTOTIMER_RUNNING, arrayList).b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -3050,57 +3015,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB2 = mip.eB(jkc.IMAX_RECORDING, arrayList);
-        eB2.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB2.b(jkc.PHOTO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -3358,56 +3320,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB2.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB2.b(jkc.IMAX_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -3665,57 +3624,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB3 = mip.eB(jkc.IMAX_IDLE, arrayList);
-        eB3.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB3.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -3932,7 +3888,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -3943,56 +3899,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB3.b(jkc.IMAX_RECORDING, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB3.b(jkc.IMAX_RECORDING, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -4125,30 +4078,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB3.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB3.b(jkc.PHOTO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -4418,56 +4368,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB3.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB3.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -4737,57 +4684,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB3.c(jkc.TIMELAPSE_IDLE);
-        eB3.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB3.b(jkc.VIDEO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -5004,7 +4948,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -5015,56 +4959,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB3.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB3.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -5322,57 +5263,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB4 = mip.eB(jkc.TIMELAPSE_IDLE, arrayList);
-        eB4.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -5589,7 +5527,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -5600,56 +5538,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB4.b(jkc.TIMELAPSE_PRESSED, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.TIMELAPSE_PRESSED, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -5919,56 +5854,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB4.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.IMAX_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -6185,7 +6117,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -6196,56 +6128,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB4.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -6462,7 +6391,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -6473,56 +6402,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB4.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -6739,7 +6665,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -6750,56 +6676,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB4.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -6932,30 +6855,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB4.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.NIGHT_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -7213,57 +7133,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB4.c(jkc.VIDEO_IDLE);
-        eB4.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -7480,7 +7397,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -7491,56 +7408,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB4.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB4.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -7798,57 +7712,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB5 = mip.eB(jkc.VIDEO_IDLE, arrayList);
-        eB5.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -8065,7 +7976,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -8076,57 +7987,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB5.c(jkc.TIMELAPSE_IDLE);
-        eB5.b(jkc.VIDEO_RECORDING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.VIDEO_RECORDING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -8396,56 +8304,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB5.b(jkc.VIDEO_PRESSED, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.VIDEO_PRESSED, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -8578,30 +8483,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB5.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.IMAX_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -8871,56 +8773,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB5.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.PHOTO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -9190,56 +9089,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB5.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -9509,56 +9405,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB5.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -9828,56 +9721,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB5.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.NIGHT_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -10135,56 +10025,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB5.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -10401,7 +10288,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -10412,56 +10299,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB5.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB5.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -10719,59 +10603,56 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB6 = mip.eB(jkc.VIDEO_PRESSED, arrayList);
         eB6.c(jkc.TIMELAPSE_IDLE);
         eB6.c(jkc.VIDEO_IDLE);
-        eB6.b(jkc.VIDEO_RECORDING, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB6.b(jkc.VIDEO_RECORDING, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -11029,56 +10910,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB6.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB6.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -11336,58 +11214,55 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB7 = mip.eB(jkc.TIMELAPSE_PRESSED, arrayList);
         eB7.c(jkc.TIMELAPSE_IDLE);
-        eB7.b(jkc.TIMELAPSE_RECORDING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB7.b(jkc.TIMELAPSE_RECORDING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -11657,56 +11532,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB7.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB7.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -11964,57 +11836,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB8 = mip.eB(jkc.TIMELAPSE_RECORDING, arrayList);
-        eB8.b(jkc.TIMELAPSE_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB8.b(jkc.TIMELAPSE_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -12284,56 +12153,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB8.b(jkc.CONFIRM_ENABLED, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB8.b(jkc.CONFIRM_ENABLED, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -12603,57 +12469,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB9 = mip.eB(jkc.VIDEO_RECORDING, arrayList);
-        eB9.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB9.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -12870,7 +12733,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -12881,56 +12744,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB9.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB9.b(jkc.VIDEO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -13188,56 +13048,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB9.b(jkc.TIMELAPSE_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB9.b(jkc.TIMELAPSE_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -13507,56 +13364,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB9.b(jkc.CONFIRM_ENABLED, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB9.b(jkc.CONFIRM_ENABLED, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -13773,7 +13627,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -13784,58 +13638,55 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB10 = mip.eB(jkc.PHOTO_IDLE, arrayList);
         eB10.a.add(jkc.PHOTOSPHERE_IDLE);
-        eB10.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.IMAX_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -14093,57 +13944,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB10.c(jkc.TIMELAPSE_IDLE);
-        eB10.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.VIDEO_IDLE, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -14276,30 +14124,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -14557,56 +14402,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.PHOTO_PRESSED, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.PHOTO_PRESSED, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -14864,56 +14706,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.CONFIRM_DISABLED, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.CONFIRM_DISABLED, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -15171,56 +15010,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -15437,7 +15273,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -15448,58 +15284,55 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB10.c(jkc.PHOTO_IDLE);
         eB10.c(jkc.PHOTOSPHERE_IDLE);
-        eB10.b(jkc.CONFIRM_ENABLED, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.CONFIRM_ENABLED, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -15769,56 +15602,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -16076,56 +15906,52 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.CATSHARK_PHOTO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
-
-            {
-                this.a = this;
-            }
+        eB10.b(jkc.CATSHARK_PHOTO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -16395,56 +16221,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -16714,56 +16537,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.NIGHT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -17033,56 +16853,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -17352,56 +17169,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB10.b(jkc.PHOTO_LONGPRESS, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB10.b(jkc.PHOTO_LONGPRESS, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -17618,7 +17432,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -17629,57 +17443,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB11 = mip.eB(jkc.PHOTO_PRESSED, arrayList);
-        eB11.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB11.b(jkc.PHOTO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -17949,56 +17760,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB11.b(jkc.PHOTO_LONGPRESS, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB11.b(jkc.PHOTO_LONGPRESS, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -18256,56 +18064,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB11.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB11.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -18563,57 +18368,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB12 = mip.eB(jkc.PORTRAIT_IDLE, arrayList);
-        eB12.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -18830,7 +18632,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -18841,56 +18643,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB12.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -19148,57 +18947,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB12.c(jkc.PORTRAIT_IDLE);
-        eB12.b(jkc.PORTRAIT_PRESSED, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.PORTRAIT_PRESSED, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -19415,7 +19211,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -19426,56 +19222,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB12.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.IMAX_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -19733,56 +19526,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB12.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.PHOTO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -20040,56 +19830,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB12.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -20347,57 +20134,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB12.c(jkc.TIMELAPSE_IDLE);
-        eB12.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -20614,7 +20398,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -20625,56 +20409,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB12.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.VIDEO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -20944,56 +20725,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB12.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.NIGHT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -21210,7 +20988,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -21221,56 +20999,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB12.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB12.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -21487,7 +21262,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -21498,57 +21273,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB13 = mip.eB(jkc.PORTRAIT_PRESSED, arrayList);
-        eB13.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB13.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -21681,33 +21453,30 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB13.c(jkc.IMAX_IDLE);
         eB13.c(jkc.PHOTO_IDLE);
         eB13.c(jkc.VIDEO_IDLE);
-        eB13.a(new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB13.a(new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -21977,57 +21746,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB14 = mip.eB(jkc.CATSHARK_PHOTO_IDLE, arrayList);
-        eB14.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -22244,7 +22010,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -22255,57 +22021,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB14.c(jkc.NIGHT_IDLE);
-        eB14.b(jkc.CATSHARK_PHOTO_PRESSED, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.CATSHARK_PHOTO_PRESSED, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -22563,56 +22326,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.CATSHARK_PHOTO_PROCESSING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.CATSHARK_PHOTO_PROCESSING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -22882,56 +22642,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.IMAX_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -23148,7 +22905,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -23159,56 +22916,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -23425,7 +23179,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -23436,56 +23190,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -23702,7 +23453,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -23713,56 +23464,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -24020,56 +23768,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -24286,7 +24031,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -24297,58 +24042,55 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB14.c(jkc.TIMELAPSE_IDLE);
         eB14.c(jkc.CATSHARK_PHOTO_IDLE);
-        eB14.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.VIDEO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -24606,56 +24348,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.NIGHT_STOP, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.NIGHT_STOP, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -24788,30 +24527,26 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
-
-            {
-                this.a = this;
-            }
+        eB14.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -24944,30 +24679,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.ASTRO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.ASTRO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -25237,56 +24969,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -25503,7 +25232,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -25514,56 +25243,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -25821,56 +25547,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB14.b(jkc.PHOTO_LONGPRESS, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB14.b(jkc.PHOTO_LONGPRESS, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -26087,7 +25810,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -26098,57 +25821,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB15 = mip.eB(jkc.CATSHARK_PHOTO_PRESSED, arrayList);
-        eB15.b(jkc.CATSHARK_PHOTO_PROCESSING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB15.b(jkc.CATSHARK_PHOTO_PROCESSING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -26418,56 +26138,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB15.b(jkc.CATSHARK_PHOTO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB15.b(jkc.CATSHARK_PHOTO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -26737,56 +26454,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB15.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB15.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -27056,56 +26770,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB15.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB15.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -27363,56 +27074,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB15.b(jkc.PHOTO_LONGPRESS, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB15.b(jkc.PHOTO_LONGPRESS, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -27670,57 +27378,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB16 = mip.eB(jkc.CATSHARK_PORTRAIT_IDLE, arrayList);
-        eB16.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -27937,7 +27642,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -27948,56 +27653,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.NIGHT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -28214,7 +27916,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -28225,56 +27927,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.CATSHARK_PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.CATSHARK_PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -28491,7 +28190,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -28502,56 +28201,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.CATSHARK_PORTRAIT_PRESSED, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.CATSHARK_PORTRAIT_PRESSED, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -28809,56 +28505,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.CATSHARK_PORTRAIT_PROCESSING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.CATSHARK_PORTRAIT_PROCESSING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -29128,56 +28821,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.IMAX_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -29394,7 +29084,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -29405,56 +29095,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -29671,7 +29358,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -29682,56 +29369,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -29948,7 +29632,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -29959,56 +29643,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -30225,7 +29906,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -30236,58 +29917,55 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB16.c(jkc.TIMELAPSE_IDLE);
         eB16.c(jkc.CATSHARK_PORTRAIT_IDLE);
-        eB16.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.VIDEO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -30545,56 +30223,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.NIGHT_STOP, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.NIGHT_STOP, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -30727,30 +30402,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -30883,30 +30555,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.ASTRO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.ASTRO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -31176,56 +30845,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -31442,7 +31108,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -31453,56 +31119,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB16.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB16.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -31760,57 +31423,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB17 = mip.eB(jkc.CATSHARK_PORTRAIT_PRESSED, arrayList);
-        eB17.b(jkc.CATSHARK_PORTRAIT_PROCESSING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB17.b(jkc.CATSHARK_PORTRAIT_PROCESSING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -32080,56 +31740,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB17.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB17.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -32399,56 +32056,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB17.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB17.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -32718,56 +32372,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB17.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB17.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -33025,57 +32676,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB18 = mip.eB(jkc.NIGHT_IDLE, arrayList);
-        eB18.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -33292,7 +32940,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -33303,57 +32951,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB18.c(jkc.NIGHT_IDLE);
-        eB18.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -33570,7 +33215,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -33581,56 +33226,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.NIGHT_PRESSED, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.NIGHT_PRESSED, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -33888,56 +33530,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.IMAX_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -34154,7 +33793,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -34165,56 +33804,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -34431,7 +34067,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -34442,56 +34078,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -34708,7 +34341,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -34719,56 +34352,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -34985,7 +34615,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -34996,57 +34626,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB18.c(jkc.TIMELAPSE_IDLE);
-        eB18.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.VIDEO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -35304,56 +34931,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.NIGHT_STOP, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.NIGHT_STOP, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -35486,30 +35110,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -35642,30 +35263,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.ASTRO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.ASTRO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -35935,56 +35553,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -36242,56 +35857,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -36549,56 +36161,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB18.b(jkc.NIGHT_PROCESSING, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB18.b(jkc.NIGHT_PROCESSING, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -36731,31 +36340,28 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB19 = mip.eB(jkc.ASTRO_IDLE, arrayList);
-        eB19.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -36972,7 +36578,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -36983,58 +36589,55 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB19.c(jkc.NIGHT_IDLE);
         eB19.c(jkc.ASTRO_IDLE);
-        eB19.b(jkc.ASTRO_PRESSED, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.ASTRO_PRESSED, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -37292,56 +36895,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB19.b(jkc.IMAX_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.IMAX_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -37558,7 +37158,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -37569,56 +37169,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB19.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -37835,7 +37432,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -37846,56 +37443,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB19.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -38112,7 +37706,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -38123,56 +37717,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB19.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -38389,7 +37980,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -38400,57 +37991,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB19.c(jkc.TIMELAPSE_IDLE);
-        eB19.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.VIDEO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -38708,56 +38296,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB19.b(jkc.NIGHT_STOP, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.NIGHT_STOP, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -38890,30 +38475,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB19.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -39046,30 +38628,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB19.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -39286,7 +38865,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -39297,56 +38876,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB19.b(jkc.CANCEL, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB19.b(jkc.CANCEL, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -39604,57 +39180,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB20 = mip.eB(jkc.NIGHT_PRESSED, arrayList);
-        eB20.b(jkc.NIGHT_PROCESSING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB20.b(jkc.NIGHT_PROCESSING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -39924,56 +39497,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB20.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB20.b(jkc.NIGHT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -40243,56 +39813,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB20.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB20.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -40562,56 +40129,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB20.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB20.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -40869,57 +40433,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB21 = mip.eB(jkc.ASTRO_PRESSED, arrayList);
-        eB21.b(jkc.NIGHT_PROCESSING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB21.b(jkc.NIGHT_PROCESSING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -41189,56 +40750,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB21.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB21.b(jkc.NIGHT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -41508,56 +41066,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB21.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB21.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -41774,7 +41329,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -41785,56 +41340,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB21.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB21.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -42092,57 +41644,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB22 = mip.eB(jkc.NIGHT_PROCESSING, arrayList);
-        eB22.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB22.b(jkc.NIGHT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -42359,7 +41908,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -42370,56 +41919,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB22.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB22.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -42689,56 +42235,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB22.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB22.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -42996,57 +42539,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB23 = mip.eB(jkc.CATSHARK_PHOTO_PROCESSING, arrayList);
-        eB23.b(jkc.CATSHARK_PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB23.b(jkc.CATSHARK_PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -43263,7 +42803,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -43274,56 +42814,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB23.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB23.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -43593,56 +43130,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB23.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB23.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -43900,57 +43434,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB24 = mip.eB(jkc.CATSHARK_PORTRAIT_PROCESSING, arrayList);
-        eB24.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB24.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -44167,7 +43698,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -44178,56 +43709,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB24.b(jkc.NIGHT_CANCEL, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB24.b(jkc.NIGHT_CANCEL, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -44497,56 +44025,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB24.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB24.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -44804,57 +44329,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB25 = mip.eB(jkc.NIGHT_CANCEL, arrayList);
-        eB25.b(jkc.NIGHT_STOP, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB25.b(jkc.NIGHT_STOP, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -45071,7 +44593,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -45082,56 +44604,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB25.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB25.b(jkc.NIGHT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -45348,7 +44867,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -45359,56 +44878,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB25.a(new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB25.a(new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -45625,7 +45141,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -45636,57 +45152,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB26 = mip.eB(jkc.NIGHT_STOP, arrayList);
-        eB26.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB26.b(jkc.NIGHT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -45956,56 +45469,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB26.a(new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB26.a(new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -46222,7 +45732,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -46233,57 +45743,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB27 = mip.eB(jkc.LASAGNA_IDLE, arrayList);
-        eB27.b(jkc.AUTOTIMER_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB27.b(jkc.AUTOTIMER_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -46500,7 +46007,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -46511,58 +46018,55 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         eB27.c(jkc.PHOTO_IDLE);
         eB27.c(jkc.LASAGNA_IDLE);
-        eB27.b(jkc.LASAGNA_PRESSED, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB27.b(jkc.LASAGNA_PRESSED, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -46820,56 +46324,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB27.b(jkc.LASAGNA_PROCESSING, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB27.b(jkc.LASAGNA_PROCESSING, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -47127,56 +46628,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB27.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB27.b(jkc.PHOTO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -47446,56 +46944,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB27.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB27.b(jkc.VIDEO_IDLE, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -47628,30 +47123,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB27.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB27.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -47921,56 +47413,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB27.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB27.b(jkc.NIGHT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -48187,7 +47676,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -48198,57 +47687,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB28 = mip.eB(jkc.LASAGNA_PRESSED, arrayList);
-        eB28.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB28.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -48518,56 +48004,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB28.b(jkc.PHOTO_LONGPRESS, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB28.b(jkc.PHOTO_LONGPRESS, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -48825,56 +48308,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB28.b(jkc.LASAGNA_PROCESSING, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB28.b(jkc.LASAGNA_PROCESSING, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -49144,56 +48624,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB28.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB28.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -49451,57 +48928,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB29 = mip.eB(jkc.LASAGNA_PROCESSING, arrayList);
-        eB29.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB29.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -49771,56 +49245,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB29.a(new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB29.a(new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -50078,57 +49549,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB30 = mip.eB(jkc.CONFIRM_ENABLED, arrayList);
-        eB30.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB30.b(jkc.VIDEO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -50345,7 +49813,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -50356,56 +49824,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB30.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB30.b(jkc.PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -50622,7 +50087,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -50633,56 +50098,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB30.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB30.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -50899,7 +50361,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -50910,56 +50372,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB30.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB30.b(jkc.NIGHT_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -51176,7 +50635,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -51187,56 +50646,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB30.b(jkc.CONFIRM_YES_TRANSIENT, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB30.b(jkc.CONFIRM_YES_TRANSIENT, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -51453,7 +50909,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -51464,57 +50920,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB31 = mip.eB(jkc.CANCEL, arrayList);
-        eB31.b(jkc.PORTRAIT_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB31.b(jkc.PORTRAIT_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -51784,56 +51237,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB31.b(jkc.VIDEO_IDLE, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB31.b(jkc.VIDEO_IDLE, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -51966,30 +51416,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB31.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB31.b(jkc.PHOTO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -52247,56 +51694,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB31.b(jkc.NIGHT_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB31.b(jkc.NIGHT_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -52554,56 +51998,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB31.b(jkc.CATSHARK_PHOTO_IDLE, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB31.b(jkc.CATSHARK_PHOTO_IDLE, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -52873,56 +52314,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB31.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB31.b(jkc.CATSHARK_PORTRAIT_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -53180,56 +52618,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB31.b(jkc.LASAGNA_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB31.b(jkc.LASAGNA_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -53487,57 +52922,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB32 = mip.eB(jkc.CONFIRM_DISABLED, arrayList);
-        eB32.b(jkc.CONFIRM_ENABLED, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB32.b(jkc.CONFIRM_ENABLED, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -53807,56 +53239,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB32.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB32.b(jkc.PHOTO_IDLE, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -53989,30 +53418,27 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB32.b(jkc.PHOTOSPHERE_IDLE, new jks(this) { // from class: jkm
-            public final /* synthetic */ jkz a;
+        eB32.b(jkc.PHOTOSPHERE_IDLE, new jks() { // from class: jkm
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -54145,31 +53571,28 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB33 = mip.eB(jkc.PHOTO_LONGPRESS, arrayList);
-        eB33.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB33.b(jkc.PHOTO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -54427,56 +53850,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB33.b(jkc.PHOTO_LONGPRESS_LOCKED, new jks(this) { // from class: jkk
-            public final /* synthetic */ jkz a;
+        eB33.b(jkc.PHOTO_LONGPRESS_LOCKED, new jks() { // from class: jkk
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -54746,56 +54166,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB33.b(jkc.CATSHARK_PHOTO_IDLE, new jks(this) { // from class: jkl
-            public final /* synthetic */ jkz a;
+        eB33.b(jkc.CATSHARK_PHOTO_IDLE, new jks() { // from class: jkl
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -55053,57 +54470,54 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         jku eB34 = mip.eB(jkc.PHOTO_LONGPRESS_LOCKED, arrayList);
-        eB34.b(jkc.PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB34.b(jkc.PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -55320,7 +54734,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -55331,56 +54745,53 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
-        eB34.b(jkc.CATSHARK_PHOTO_IDLE, new jks(this) { // from class: jkh
-            public final /* synthetic */ jkz a;
+        eB34.b(jkc.CATSHARK_PHOTO_IDLE, new jks() { // from class: jkh
+            public final /* synthetic */ jkz a = jkz.this;
 
-            {
-                this.a = this;
-            }
 
             @Override // java.util.function.BiConsumer
             public final void accept(Object obj, Object obj2) {
@@ -55597,7 +55008,7 @@ public final class jkz {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         }));
                         return;
@@ -55608,56 +55019,57 @@ public final class jkz {
             public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
                 switch (-1) {
                     case 0:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 1:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 2:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 3:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 4:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 5:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 6:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 7:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 8:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 9:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 10:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 11:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 12:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 13:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 14:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 15:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 16:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 17:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 18:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     case 19:
-                        return biConsumer.getClass();
+                        return biConsumer;
                     default:
-                        return biConsumer.getClass();
+                        return biConsumer;
                 }
             }
         });
         EnumMap enumMap = new EnumMap(jkc.class);
         for (jku jkuVar : arrayList) {
-            for (jkc jkcVar : jkuVar.a) {
-                EnumMap enumMap2 = (EnumMap) Map.EL.computeIfAbsent(enumMap, jkcVar, icd.t);
+            for (jkc jkcVar : (Set<jkc>) jkuVar.a) {
+                EnumMap enumMap2 = (EnumMap) enumMap.computeIfAbsent(jkcVar, icd.t);
                 for (Map.Entry entry : (Set<Map.Entry>) jkuVar.b.entrySet()) {
-                    enumMap2.put((EnumMap) ((jkc) entry.getKey()), (jkc) ((jks) entry.getValue()));
+                    enumMap2.put(((jkc) entry.getKey()), ((jks) entry.getValue()));
+                    //enumMap2.put((EnumMap) ((jkc) entry.getKey()), (jkc) ((jks) entry.getValue()));
                 }
             }
         }
@@ -55756,22 +55168,21 @@ public final class jkz {
         m3.getClass();
         m4.getClass();
         this.q = oom.r(l, valueAnimator, valueAnimator2, valueAnimator3, valueAnimator4, valueAnimator5, valueAnimator6, valueAnimator7, valueAnimator8, valueAnimator9, valueAnimator10, valueAnimator11, valueAnimator12, valueAnimator13, valueAnimator14, m, m2, m3, m4);
-        jks jksVar = (jks) Map.EL.getOrDefault((java.util.Map) Map.EL.getOrDefault(this.x, jlqVar.x, orw.a), jlqVar2.x, null);
+        jks jksVar = (jks) ((java.util.Map) this.x.getOrDefault(jlqVar.x, orw.a)).getOrDefault(jlqVar2.x, null);
         if (jksVar != null) {
             jksVar.accept(jlqVar, jlqVar2);
         } else {
             ((oug) ((oug) u.c()).G(3437)).y("Unsupported transition from %s -> %s", jlqVar.x, jlqVar2.x);
         }
-        this.p.setDuration((this.q.stream()).mapToLong(jkq.a).max().orElseThrow(new Supplier() { // from class: jkp
-            @Override // java.util.function.Supplier
-            /* renamed from: get */
-            public final Object mo291get() {
+        this.p.setDuration((this.q.stream()).mapToLong(jkq.a).max().orElseThrow(new Supplier() {
+            @Override
+            public Object get() {
                 String valueOf = String.valueOf(jkz.this.q);
                 StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 48);
                 sb.append("Could not find longest duration among animators ");
                 sb.append(valueOf);
                 return new IllegalStateException(sb.toString());
-            }
+            } // from class: jkp
         }));
         this.p.addListener(new jkr(this, jlqVar2));
         AnimatorSet animatorSet = new AnimatorSet();

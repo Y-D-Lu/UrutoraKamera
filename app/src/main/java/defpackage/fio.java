@@ -49,7 +49,7 @@ public class fio extends ih {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhf
             @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
-                return function;
+                return (BiFunction) function;
             }
 
             @Override // java.util.function.BiFunction
@@ -103,7 +103,7 @@ public class fio extends ih {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
         super.onActivityResult(i, i2, intent);
@@ -140,7 +140,7 @@ public class fio extends ih {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
         super.onConfigurationChanged(configuration);
@@ -202,7 +202,7 @@ public class fio extends ih {
 
     @Override // android.app.Activity
     public final /* synthetic */ void onGetDirectActions(CancellationSignal cancellationSignal, java.util.function.Consumer consumer) {
-        Consumer.VivifiedWrapper.convert(consumer);
+        //Consumer.VivifiedWrapper.convert(consumer);
         this.t.b(new cez(9));
     }
 
@@ -211,7 +211,7 @@ public class fio extends ih {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhd
             @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
-                return function;
+                return (BiFunction) function;
             }
 
             @Override // java.util.function.BiFunction
@@ -237,7 +237,7 @@ public class fio extends ih {
         if (((Boolean) this.t.a(new BiFunction() { // from class: fhe
             @Override // java.util.function.BiFunction
             public final /* synthetic */ BiFunction andThen(Function function) {
-                return function;
+                return (BiFunction) function;
             }
 
             @Override // java.util.function.BiFunction
@@ -279,7 +279,7 @@ public class fio extends ih {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
         super.onNewIntent(intent);
@@ -307,7 +307,7 @@ public class fio extends ih {
 
     @Override // android.app.Activity
     public final /* synthetic */ void onPerformDirectAction(String str, Bundle bundle, CancellationSignal cancellationSignal, java.util.function.Consumer consumer) {
-        Consumer.VivifiedWrapper.convert(consumer);
+        //Consumer.VivifiedWrapper.convert(consumer);
         this.t.b(new cez(10));
     }
 
@@ -356,7 +356,7 @@ public class fio extends ih {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
         super.onRequestPermissionsResult(i, strArr, iArr);

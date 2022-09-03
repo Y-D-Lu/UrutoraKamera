@@ -66,7 +66,7 @@ public final class pqh extends LinkedHashMap {
 
     @Override // java.util.AbstractMap, java.util.Map
     public final boolean equals(Object obj) {
-        boolean equals;
+        boolean equals = false;
         if (obj instanceof Map) {
             Map map = (Map) obj;
             if (this == map) {
@@ -85,10 +85,8 @@ public final class pqh extends LinkedHashMap {
                 Object obj2 = map.get(entry.getKey());
                 if (!(value instanceof byte[]) || !(obj2 instanceof byte[])) {
                     equals = value.equals(obj2);
-                    continue;
                 } else {
                     equals = Arrays.equals((byte[]) value, (byte[]) obj2);
-                    continue;
                 }
                 if (!equals) {
                     return false;

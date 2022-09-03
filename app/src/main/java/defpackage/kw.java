@@ -512,7 +512,7 @@ public class kw implements er {
                 if (sparseArray == null) {
                     sparseArray = new SparseArray<>();
                 }
-                actionView.saveHierarchyState(sparseArray);
+                actionView.saveHierarchyState((SparseArray<Parcelable>) sparseArray);
                 if (item.isActionViewExpanded()) {
                     bundle.putInt("android:menu:expandedactionview", item.getItemId());
                 }

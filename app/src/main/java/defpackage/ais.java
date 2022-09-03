@@ -24,7 +24,7 @@ public final class ais implements ajw, ajv {
         this.b = new long[i2];
         this.c = new double[i2];
         this.d = new String[i2];
-        this.e = new byte[i2];
+        this.e = new byte[i2][];
     }
 
     public static ais a(String str, int i) {

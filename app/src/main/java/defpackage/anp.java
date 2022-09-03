@@ -26,22 +26,22 @@ public final class anp {
     }
 
     public static void b(amj amjVar, WorkDatabase workDatabase, List list) {
-        ais aisVar;
-        int l;
-        int l2;
-        int l3;
-        int l4;
-        int l5;
-        int l6;
-        int l7;
-        int l8;
-        int l9;
-        int l10;
-        int l11;
-        int l12;
-        int l13;
-        aqu aquVar;
-        int l14;
+        ais aisVar = null;
+        int l = 0;
+        int l2 = 0;
+        int l3 = 0;
+        int l4 = 0;
+        int l5 = 0;
+        int l6 = 0;
+        int l7 = 0;
+        int l8 = 0;
+        int l9 = 0;
+        int l10 = 0;
+        int l11 = 0;
+        int l12 = 0;
+        int l13 = 0;
+        aqu aquVar = null;
+        int l14 = 0;
         if (list == null || list.size() == 0) {
             return;
         }
@@ -192,10 +192,9 @@ public final class anp {
                     }
                 }
             } catch (Throwable th2) {
-                th = th2;
+                th2.printStackTrace();
                 i2.close();
                 aisVar.j();
-                throw th;
             }
         } catch (Throwable th3) {
             workDatabase.i();

@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.content.Context;
 import android.content.res.ColorStateList;
 
 import com.google.android.material.button.MaterialButton;
@@ -8,16 +9,20 @@ import com.google.android.material.button.MaterialButton;
 /* loaded from: classes2.dex */
 public final class nyu extends MaterialButton implements aad {
     public static final /* synthetic */ int f = 0;
-    public final nzi b;
-    public final nzi c;
-    public final nzi d;
-    public final nzi e;
+    public nzi b;
+    public nzi c;
+    public nzi d;
+    public nzi e;
 
     static {
         new nyq(Float.class);
         new nyr(Float.class);
         new nys(Float.class);
         new nyt(Float.class);
+    }
+
+    public nyu(Context context) {
+        super(context);
     }
 
     @Override // defpackage.aad
@@ -27,7 +32,7 @@ public final class nyu extends MaterialButton implements aad {
 
     @Override // com.google.android.material.button.MaterialButton, android.widget.TextView, android.view.View
     protected final void onAttachedToWindow() {
-        throw null;
+        super.onAttachedToWindow();
     }
 
     @Override // android.widget.TextView, android.view.View

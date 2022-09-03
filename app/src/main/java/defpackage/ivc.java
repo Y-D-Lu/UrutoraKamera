@@ -7,10 +7,10 @@ import com.google.android.apps.camera.ui.captureframe.CaptureFrameUi;
 /* renamed from: ivc  reason: default package */
 /* loaded from: classes2.dex */
 public final class ivc {
-    final Paint a;
-    final float b;
-    final /* synthetic */ CaptureFrameUi c;
-    final int d;
+    public final Paint a;
+    public final float b;
+    public final /* synthetic */ CaptureFrameUi c;
+    public final int d;
 
     public ivc(CaptureFrameUi captureFrameUi, Paint paint, int i, float f) {
         this.c = captureFrameUi;

@@ -37,9 +37,9 @@ public final /* synthetic */ class jkv implements Consumer {
     public final /* synthetic */ Consumer andThen(Consumer consumer) {
         switch (this.c) {
             case 0:
-                return consumer.getClass();
+                return consumer;
             default:
-                return consumer.getClass();
+                return consumer;
         }
     }
 }

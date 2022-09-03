@@ -24,12 +24,12 @@ public final class lt implements gp {
         }
         lu luVar = this.b;
         luVar.f = null;
-        super/*android.view.ViewGroup*/.setVisibility(this.a);
+        luVar/*android.view.ViewGroup*/.setVisibility(this.a);
     }
 
     @Override // defpackage.gp
     public final void c() {
-        super/*android.view.ViewGroup*/.setVisibility(0);
+        b/*android.view.ViewGroup*/.setVisibility(0);
         this.c = false;
     }
 

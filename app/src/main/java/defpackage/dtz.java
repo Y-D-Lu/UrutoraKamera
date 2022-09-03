@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Locale;
+import java.util.Set;
 import java.util.concurrent.CancellationException;
 
 /* renamed from: dtz  reason: default package */
@@ -127,9 +128,9 @@ public final class dtz implements dtp {
             nyj nyjVar = new nyj(ikmVar.a, ikmVar.b);
             nyjVar.s(org.codeaurora.snapcam.R.string.photos_required_title);
             nyjVar.l(org.codeaurora.snapcam.R.string.photos_required_message);
-            nyjVar.q(org.codeaurora.snapcam.R.string.play_store_button, new DialogInterface.OnClickListener(ikmVar, 0, null) { // from class: dtq
-                public final /* synthetic */ ikm a;
-                private final /* synthetic */ int b;
+            nyjVar.q(org.codeaurora.snapcam.R.string.play_store_button, new DialogInterface.OnClickListener() { // from class: dtq
+                public final /* synthetic */ ikm a = ikmVar;
+                private final /* synthetic */ int b = 0;
 
                 @Override // android.content.DialogInterface.OnClickListener
                 public final void onClick(DialogInterface dialogInterface, int i) {
@@ -219,9 +220,9 @@ public final class dtz implements dtp {
         nyj nyjVar2 = new nyj(ikmVar2.a, ikmVar2.b);
         nyjVar2.s(org.codeaurora.snapcam.R.string.photos_disabled_title);
         nyjVar2.l(org.codeaurora.snapcam.R.string.photos_disabled_message);
-        nyjVar2.q(org.codeaurora.snapcam.R.string.settings_button, new DialogInterface.OnClickListener(ikmVar2, 1, null) { // from class: dtq
-            public final /* synthetic */ ikm a;
-            private final /* synthetic */ int b;
+        nyjVar2.q(org.codeaurora.snapcam.R.string.settings_button, new DialogInterface.OnClickListener() { // from class: dtq
+            public final /* synthetic */ ikm a = ikmVar2;
+            private final /* synthetic */ int b = 0;
 
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i) {
@@ -293,10 +294,10 @@ public final class dtz implements dtp {
         boolean z = this.j;
         boolean booleanValue = ((Boolean) this.f.c(htu.ab)).booleanValue();
         boolean isVoiceInteractionRoot = this.r.isVoiceInteractionRoot();
-        btx<bty> btxVar = (btx) this.b.get();
+        btx btxVar = (btx) this.b.get();
         btxVar.a();
         ArrayList arrayList = new ArrayList();
-        for (bty btyVar2 : btxVar) {
+        for (bty btyVar2 : (Set<bty>) btxVar) {
             oom f = btyVar2.a().f();
             if (!f.isEmpty()) {
                 int size = f.size();

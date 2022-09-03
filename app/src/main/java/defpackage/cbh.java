@@ -200,7 +200,7 @@ public final class cbh implements pys {
 
                             @Override // java.util.function.Consumer
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                                return consumer.getClass();
+                                return consumer;
                             }
                         });
                     }

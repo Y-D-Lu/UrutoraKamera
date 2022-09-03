@@ -23,6 +23,7 @@ import org.codeaurora.snapcam.R;
 import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.HashMap;
+import java.util.Set;
 
 /* renamed from: jfs  reason: default package */
 /* loaded from: classes.dex */
@@ -213,7 +214,7 @@ public final class jfs extends LinearLayout {
                 }
             }
             if (enumSet != null) {
-                for (jrl jrlVar : this.b.keySet()) {
+                for (jrl jrlVar : (Set<jrl>) this.b.keySet()) {
                     boolean z2 = ((TextView) this.b.get(jrlVar)).getForeground() != null;
                     boolean contains = enumSet.contains(jrlVar);
                     if (z2 != contains && (jhmVar = (jhm) this.e.get(jrlVar)) != null) {
@@ -246,7 +247,7 @@ public final class jfs extends LinearLayout {
 
     @Override // android.widget.LinearLayout, android.view.View
     protected final void onMeasure(int i, int i2) {
-        int i3;
+        int i3 = 0;
         super.onMeasure(i, i2);
         lar.a();
         Size size = new Size(i, i2);

@@ -30,6 +30,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeSet;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -1416,7 +1417,7 @@ public /* synthetic */ class plk {
                     i2 = i7;
                     b = 0;
                 } else {
-                    b = i >> 16;
+                    b = (byte) (i >> 16);
                 }
                 if (b == 0) {
                     int i8 = i2 + 1;

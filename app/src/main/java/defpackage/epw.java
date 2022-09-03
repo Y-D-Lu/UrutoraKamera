@@ -12,8 +12,6 @@ import org.codeaurora.snapcam.R;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import java.util.Collection;
 import java.util.stream.Collectors;
 
 /* renamed from: epw  reason: default package */
@@ -106,6 +104,6 @@ public final class epw extends iux implements esi {
         }
         f.d(i2, false);
         e.addOnAttachStateChangeListener(new ept(animatedVectorDrawable, animatedVectorDrawable2, e));
-        g(2, e, context, new epp(this));
+        g(2, e, context, new epp());
     }
 }

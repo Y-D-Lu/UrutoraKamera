@@ -50,7 +50,7 @@ public final class lld {
     public final lie b(final String str) {
         lie lieVar;
         synchronized (this.b) {
-            final lie a2 = this.g.a();
+            lie a2 = this.g.a();
             if (a2 == null) {
                 lis lisVar = this.c;
                 StringBuilder sb = new StringBuilder(String.valueOf(str).length() + 60);
@@ -65,6 +65,7 @@ public final class lld {
                 a2 = c.a();
                 a2.getClass();
             }
+            final lie a2Final = a2;
             lis lisVar2 = this.c;
             String valueOf = String.valueOf(str);
             lisVar2.b(valueOf.length() != 0 ? "Acquired by ".concat(valueOf) : new String("Acquired by "));
@@ -73,7 +74,7 @@ public final class lld {
                 public final void close() {
                     lld lldVar = lld.this;
                     String str2 = str;
-                    lie lieVar2 = a2;
+                    lie lieVar2 = a2Final;
                     lis lisVar3 = lldVar.c;
                     String valueOf2 = String.valueOf(str2);
                     lisVar3.b(valueOf2.length() != 0 ? "Closed by ".concat(valueOf2) : new String("Closed by "));

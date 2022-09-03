@@ -7,7 +7,7 @@ import android.os.Parcel;
 /* renamed from: kri  reason: default package */
 /* loaded from: classes2.dex */
 public final class kri extends bmo implements IInterface {
-    final /* synthetic */ kqh a;
+    /* synthetic */ kqh a;
 
     public kri() {
         super("com.google.android.gms.learning.internal.IExampleStoreV2");

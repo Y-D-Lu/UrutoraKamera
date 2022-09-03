@@ -39,9 +39,9 @@ public final /* synthetic */ class hei implements BiConsumer {
     public final /* synthetic */ BiConsumer andThen(BiConsumer biConsumer) {
         switch (this.c) {
             case 0:
-                return biConsumer.getClass();
+                return biConsumer;
             default:
-                return biConsumer.getClass();
+                return biConsumer;
         }
     }
 }
