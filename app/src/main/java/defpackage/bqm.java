@@ -3,8 +3,6 @@ package defpackage;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
-
-import java.util.Collection;
 import java.util.stream.Collectors;
 
 /* renamed from: bqm  reason: default package */
@@ -45,9 +43,9 @@ public final class bqm {
                     pih pihVar2;
                     bqm bqmVar = bqm.this;
                     try {
-                        boolean z2 = (dkk) b.get();
-                        if (z2.a) {
-                            z2 = 0;
+                        dkk z2 = (dkk) b.get();
+                        if (z2 != null) {
+                            z2 = null;
                             try {
                                 bqmVar.a.a();
                                 List b2 = bqmVar.a.b();
@@ -76,7 +74,7 @@ public final class bqm {
                                 } else if (e instanceof lvy) {
                                     ljuVar = lju.a(((lvy) e).a);
                                 }
-                                dkk dkkVar2 = new dkk(z2);
+                                dkk dkkVar2 = new dkk(z2.a);
                                 dkkVar2.b = ljuVar;
                                 dkkVar2.c = e;
                                 z2 = dkkVar2;

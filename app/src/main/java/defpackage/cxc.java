@@ -32,7 +32,7 @@ public final class cxc implements lle, fik, fhk, fhl {
         this.e = new ojz() { // from class: cww
             @Override // defpackage.ojz
             public final Object a() {
-                return (Integer) ddf.this.a(ddl.G).c();
+                return (Integer) ddfVar.a(ddl.G).c();
             }
         };
         this.d = cwtVar;
@@ -155,7 +155,7 @@ public final class cxc implements lle, fik, fhk, fhl {
             return;
         }
         final long currentTimeMillis = System.currentTimeMillis();
-        long longValue = ((Long) Map.EL.getOrDefault(this.i, lvsVar, 0L)).longValue();
+        long longValue = ((Long) this.i.getOrDefault(lvsVar, 0L)).longValue();
         final long j = longValue != 0 ? currentTimeMillis - longValue : 0L;
         this.i.put(lvsVar, 0L);
         this.f.execute(new Runnable() { // from class: cxa

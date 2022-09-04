@@ -36,7 +36,7 @@ public final class fab implements phh {
                 int width;
                 int height;
                 Bitmap a2;
-                ezn eznVar2 = ezn.this;
+                ezn eznVar2 = eznVar;
                 int i = a;
                 boolean z = j;
                 bvk bvkVar = (bvk) eznVar2.b;

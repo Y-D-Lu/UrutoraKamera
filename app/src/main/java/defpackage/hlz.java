@@ -29,7 +29,7 @@ public final class hlz {
             } else {
                 byte[] digest = messageDigest.digest(signingCertificateHistory[0].toByteArray());
                 oyw oywVar = oyw.e;
-                oys oysVar = ((oyv) oywVar).d;
+                oys oysVar = (oys) ((oyv) oywVar).d;
                 if (oysVar == null) {
                     oyr oyrVar = ((oyv) oywVar).b;
                     char[] cArr = oyrVar.b;
@@ -75,7 +75,7 @@ public final class hlz {
                         }
                     }
                     if (oyrVar == ((oyv) oywVar).b) {
-                        oysVar = oywVar;
+                        oysVar = (oys) oywVar;
                     } else {
                         Character ch = ((oyv) oywVar).c;
                         oysVar = new oys(oyrVar);

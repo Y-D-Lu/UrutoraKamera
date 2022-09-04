@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: hak  reason: default package */
 /* loaded from: classes.dex */
@@ -24,7 +25,7 @@ public final class hak implements lie {
         if (!this.a.isDone()) {
             this.a.cancel(true);
         }
-        for (lmr lmrVar : this.c) {
+        for (lmr lmrVar : (Set<lmr>) this.c) {
             lmrVar.close();
         }
     }

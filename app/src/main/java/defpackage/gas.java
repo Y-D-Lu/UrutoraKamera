@@ -26,7 +26,7 @@ public final class gas implements gey {
         this.c.postDelayed(new Runnable() { // from class: gap
             @Override // java.lang.Runnable
             public final void run() {
-                gex.this.c(garVar);
+                gexVar.c(garVar);
             }
         }, 100L);
     }

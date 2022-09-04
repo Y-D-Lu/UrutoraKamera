@@ -83,7 +83,7 @@ public class ViewfinderCover extends GcaLayout implements jfi, cwh {
         this.i.n(jrl.UNINITIALIZED, isd.k, new jpa(this), new jfe() { // from class: joy
             @Override // defpackage.jfe
             public final void a(jrl jrlVar) {
-                pih.this.o(null);
+                f.o(null);
             }
         }, false);
         return f;
@@ -188,7 +188,7 @@ public class ViewfinderCover extends GcaLayout implements jfi, cwh {
         jfjVar.n(jrlVar, runnable, this, new jfe() { // from class: jox
             @Override // defpackage.jfe
             public final void a(jrl jrlVar2) {
-                jpb.this.a(jrlVar2);
+                jpbVar.a(jrlVar2);
             }
         }, false);
     }

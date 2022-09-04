@@ -28,12 +28,8 @@ public final class bqz implements bqs, fik, fgt, fih, fgu {
     private final boolean m;
     private final emb o;
     public final AtomicInteger c = new AtomicInteger();
-    public final DialogInterface.OnClickListener d = new DialogInterface.OnClickListener(this) { // from class: bqu
-        public final /* synthetic */ bqz a;
-
-        {
-            this.a = this;
-        }
+    public final DialogInterface.OnClickListener d = new DialogInterface.OnClickListener() { // from class: bqu
+        public final /* synthetic */ bqz a = bqz.this;
 
         @Override // android.content.DialogInterface.OnClickListener
         public final void onClick(DialogInterface dialogInterface, int i) {
@@ -56,12 +52,8 @@ public final class bqz implements bqs, fik, fgt, fih, fgu {
             }
         }
     };
-    public final DialogInterface.OnClickListener e = new DialogInterface.OnClickListener(this) { // from class: bqu
-        public final /* synthetic */ bqz a;
-
-        {
-            this.a = this;
-        }
+    public final DialogInterface.OnClickListener e = new DialogInterface.OnClickListener() { // from class: bqu
+        public final /* synthetic */ bqz a = bqz.this;
 
         @Override // android.content.DialogInterface.OnClickListener
         public final void onClick(DialogInterface dialogInterface, int i) {

@@ -108,7 +108,7 @@ public final class dhv implements pys {
 
                     @Override // defpackage.bvv
                     public final pht fz() {
-                        ljf ljfVar2 = ljf.this;
+                        ljf ljfVar2 = ljfVar;
                         pyn pynVar = a;
                         pynVar.getClass();
                         ljfVar2.d("GpuFaceObfuscationStartup", new doa(pynVar, 2));
@@ -179,7 +179,7 @@ public final class dhv implements pys {
                     @Override // defpackage.dti
                     public final int a(long j, float[] fArr) {
                         dwg dwgVar;
-                        dwk dwkVar = (dwk) qkg.this.mo37get();
+                        dwk dwkVar = (dwk) qkgVar.mo37get();
                         synchronized (dwkVar.c) {
                             int g = dwkVar.a.g(j);
                             dwgVar = g >= 0 ? dwkVar.b[g] : null;

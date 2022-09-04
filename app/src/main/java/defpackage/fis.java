@@ -296,7 +296,7 @@ public final class fis implements fiw, ksz {
                                 @Override // defpackage.klb
                                 public final void a(Object obj, Object obj2) {
                                     ksx ksxVar;
-                                    kij kijVar2 = kij.this;
+                                    kij kijVar2 = kijVar;
                                     ksp kspVar2 = kspVar;
                                     kkt kktVar = dD;
                                     ktl ktlVar2 = ktlVar;

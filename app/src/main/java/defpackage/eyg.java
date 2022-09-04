@@ -187,10 +187,10 @@ public final class eyg extends buf implements jad {
     @Override // defpackage.jad
     public final void C(int i) {
         if (i == 1) {
-            this.X.c(R.raw.timer_final);
+            this.X.c(org.codeaurora.snapcam.R.raw.timer_final);
         } else if (i != 2 && i != 3) {
         } else {
-            this.X.c(R.raw.timer_increment);
+            this.X.c(org.codeaurora.snapcam.R.raw.timer_increment);
         }
     }
 
@@ -203,10 +203,10 @@ public final class eyg extends buf implements jad {
     public final void E(boolean z) {
         this.O.f();
         if (!z) {
-            this.X.b(R.raw.camera_shutter);
+            this.X.b(org.codeaurora.snapcam.R.raw.camera_shutter);
             return;
         }
-        this.X.b(R.raw.astro_longexposure_stop);
+        this.X.b(org.codeaurora.snapcam.R.raw.astro_longexposure_stop);
         this.e.g().n();
     }
 
@@ -221,7 +221,7 @@ public final class eyg extends buf implements jad {
             defpackage.d.v(b.c(), "Not taking picture since the Camera is not ready to take a picture.", (char) 1581);
         } else {
             x(false);
-            this.X.b(R.raw.longexposure_start);
+            this.X.b(org.codeaurora.snapcam.R.raw.longexposure_start);
             this.z.k(true);
             this.o.b();
             this.A.d();
@@ -382,12 +382,8 @@ public final class eyg extends buf implements jad {
         x(true);
         this.u.addListener(this.Q);
         this.I.c(this.ag.a(htu.d).a(this.an, this.f));
-        this.I.c(new lie(this) { // from class: exo
-            public final /* synthetic */ eyg a;
-
-            {
-                this.a = this;
-            }
+        this.I.c(new lie() { // from class: exo
+            public final /* synthetic */ eyg a = eyg.this;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
@@ -415,12 +411,8 @@ public final class eyg extends buf implements jad {
         }, this.f));
         this.I.c(this.z.d(this.ap));
         this.i.a(this.R);
-        this.I.c(new lie(this) { // from class: exo
-            public final /* synthetic */ eyg a;
-
-            {
-                this.a = this;
-            }
+        this.I.c(new lie() { // from class: exo
+            public final /* synthetic */ eyg a = eyg.this;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
@@ -439,7 +431,7 @@ public final class eyg extends buf implements jad {
                 }
             }
         });
-        this.ai = (ProgressOverlay) ((jnr) this.Y.mo37get()).c.c(R.id.progress_overlay);
+        this.ai = (ProgressOverlay) ((jnr) this.Y.mo37get()).c.c(org.codeaurora.snapcam.R.id.progress_overlay);
         I(true);
         if (bqe.v(this.ar)) {
             D(bqe.b(this.ar.a()));
@@ -448,12 +440,8 @@ public final class eyg extends buf implements jad {
         this.m.b();
         this.m.a();
         this.A.b();
-        this.I.c(new lie(this) { // from class: exo
-            public final /* synthetic */ eyg a;
-
-            {
-                this.a = this;
-            }
+        this.I.c(new lie() { // from class: exo
+            public final /* synthetic */ eyg a = eyg.this;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
@@ -594,6 +582,6 @@ public final class eyg extends buf implements jad {
             return;
         }
         this.Z.a();
-        this.X.c(R.raw.timer_start);
+        this.X.c(org.codeaurora.snapcam.R.raw.timer_start);
     }
 }

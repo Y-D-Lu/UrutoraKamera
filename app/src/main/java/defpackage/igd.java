@@ -30,13 +30,13 @@ public final class igd implements iha {
             cja.d(new Runnable() { // from class: ciw
                 @Override // java.lang.Runnable
                 public final void run() {
-                    cir cirVar;
-                    cja cjaVar2 = cja.this;
+                    cir cirVar = null;
+                    cja cjaVar2 = cjaVar;
                     lgp lgpVar2 = lgpVar;
                     synchronized (cjaVar2.d) {
                         try {
                             cirVar = cjaVar2.g;
-                        } catch (IOException e) {
+                        } catch (Exception e) {
                             ((oug) ((oug) ((oug) cja.a.b()).h(e)).G(436)).o("Failed to write to piped audio buffer.");
                         }
                         if (!lgpVar2.c().hasArray()) {
@@ -53,7 +53,11 @@ public final class igd implements iha {
                             ciqVar.a.b(lgpVar2);
                             cirVar.a();
                         } catch (IOException e2) {
-                            throw new IOException("Failed to write audio packet into audio piped output stream.", e2);
+                            try {
+                                throw new IOException("Failed to write audio packet into audio piped output stream.", e2);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 }
@@ -63,7 +67,7 @@ public final class igd implements iha {
         cja.d(new Runnable() { // from class: cix
             @Override // java.lang.Runnable
             public final void run() {
-                ciy.this.a.b(lgpVar.a());
+                ciyVar.a.b(lgpVar.a());
             }
         }, ciyVar.a.b);
     }

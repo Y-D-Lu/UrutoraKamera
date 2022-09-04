@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: dru  reason: default package */
 /* loaded from: classes.dex */
@@ -30,7 +31,7 @@ public final class dru {
         Iterator it2 = collection.iterator();
         while (it2.hasNext()) {
             dqw dqwVar = ((drt) it2.next()).a.b;
-            for (dqw dqwVar2 : dqwVar.c()) {
+            for (dqw dqwVar2 : (Set<dqw>) dqwVar.c()) {
                 if (!hashSet.contains(dqwVar2)) {
                     ((oug) ((oug) a.c()).G(909)).A("Extractor (%s) of type %s depends on foreign type %s! Feature values may be calculated out of order!", str, dqwVar, dqwVar2);
                 }

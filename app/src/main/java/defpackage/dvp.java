@@ -3,6 +3,7 @@ package defpackage;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionException;
 
@@ -47,7 +48,7 @@ public final class dvp {
     }
 
     public final synchronized void d(final hjz hjzVar) {
-        for (final Map.Entry entry : this.c.entrySet()) {
+        for (final Map.Entry entry : (Set<Map.Entry>) this.c.entrySet()) {
             try {
                 ((Executor) entry.getValue()).execute(new Runnable() { // from class: dvo
                     @Override // java.lang.Runnable

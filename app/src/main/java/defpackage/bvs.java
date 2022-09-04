@@ -34,7 +34,7 @@ public final class bvs implements phh {
                     String str2 = str;
                     qkg qkgVar2 = qkgVar;
                     bvsVar.c.b.e(str2.concat("#get-all"));
-                    for (iho ihoVar : (Set) qkgVar2.mo37get()) {
+                    for (iho ihoVar : (Set<iho>) qkgVar2.mo37get()) {
                         Runnable c = bvsVar.c.b.c(str2, ihoVar);
                         c.getClass();
                         new dks(c, 1).run();

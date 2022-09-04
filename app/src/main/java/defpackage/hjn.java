@@ -39,13 +39,13 @@ public final class hjn {
             this.c.removeCallbacks(new Runnable() { // from class: hjm
                 @Override // java.lang.Runnable
                 public final void run() {
-                    hjs.this.b();
+                    hjsVar.b();
                 }
             });
             this.c.postDelayed(new Runnable() { // from class: hjm
                 @Override // java.lang.Runnable
                 public final void run() {
-                    hjs.this.b();
+                    hjsVar.b();
                 }
             }, 300L);
         }

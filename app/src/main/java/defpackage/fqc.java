@@ -84,7 +84,7 @@ public final class fqc implements fqs, fqn {
     public final void b(long j) {
         synchronized (this.d) {
             long j2 = Long.MAX_VALUE;
-            for (fqb fqbVar : this.f) {
+            for (fqb fqbVar : (Set<fqb>) this.f) {
                 if (!fqbVar.d && !fqbVar.g) {
                     j2 = Math.min(j2, ((Long) fqbVar.c.j()).longValue());
                 }
@@ -103,7 +103,7 @@ public final class fqc implements fqs, fqn {
             this.i.c();
             this.j.c();
             this.k.c();
-            for (fqb fqbVar : this.f) {
+            for (fqb fqbVar : (Set<fqb>) this.f) {
                 orj orjVar = fqbVar.c;
                 if (orjVar != null) {
                     String.format(Locale.US, "%s to %s", orjVar.m() ? String.format(Locale.US, "<%d>", orjVar.j()) : "n/a", orjVar.n() ? String.format(Locale.US, "<%d>", orjVar.k()) : "n/a");
@@ -145,12 +145,12 @@ public final class fqc implements fqs, fqn {
     public final void f() {
         synchronized (this.d) {
             long j = Long.MIN_VALUE;
-            for (fqb fqbVar : this.f) {
+            for (fqb fqbVar : (Set<fqb>) this.f) {
                 if (fqbVar.c.n() && ((Long) fqbVar.c.k()).longValue() < this.h) {
                     j = Math.max(j, ((Long) fqbVar.c.k()).longValue());
                 }
             }
-            for (fqb fqbVar2 : this.f) {
+            for (fqb fqbVar2 : (Set<fqb>) this.f) {
                 if (!fqbVar2.d && !fqbVar2.g && (fqbVar2.c.n() || fqbVar2.f)) {
                     boolean z = fqbVar2.f ? this.m : this.l;
                     hsp hspVar = fqbVar2.a;
@@ -167,7 +167,7 @@ public final class fqc implements fqs, fqn {
                     fqbVar2.d = true;
                 }
             }
-            for (fqb fqbVar3 : this.f) {
+            for (fqb fqbVar3 : (Set<fqb>) this.f) {
                 if (fqbVar3.d && !fqbVar3.c.n() && !fqbVar3.g && fqbVar3.f) {
                     hsp hspVar2 = fqbVar3.a;
                     fqe fqeVar = fqbVar3.i;
@@ -183,7 +183,7 @@ public final class fqc implements fqs, fqn {
                     }
                 }
             }
-            for (fqb fqbVar4 : this.f) {
+            for (fqb fqbVar4 : (Set<fqb>) this.f) {
                 if (fqbVar4.d && fqbVar4.c.n() && !fqbVar4.g && !fqbVar4.e) {
                     hsp hspVar3 = fqbVar4.a;
                     fqbVar4.c.j();
@@ -209,7 +209,7 @@ public final class fqc implements fqs, fqn {
                 }
             }
             ArrayList arrayList = new ArrayList();
-            for (fqb fqbVar5 : this.f) {
+            for (fqb fqbVar5 : (Set<fqb>) this.f) {
                 if (fqbVar5.g || (fqbVar5.e && fqbVar5.c.n() && ((Long) fqbVar5.c.k()).longValue() < this.h)) {
                     arrayList.add(fqbVar5);
                 }
@@ -223,7 +223,7 @@ public final class fqc implements fqs, fqn {
         synchronized (this.d) {
             int i = 0;
             boolean z = false;
-            for (fqb fqbVar : this.f) {
+            for (fqb fqbVar : (Set<fqb>) this.f) {
                 if (!fqbVar.g) {
                     boolean z2 = fqbVar.f ? this.m : this.l;
                     orj orjVar = fqbVar.c;

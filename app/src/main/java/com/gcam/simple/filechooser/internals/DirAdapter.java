@@ -19,7 +19,7 @@ import java.util.Locale;
 
 /* loaded from: classes2.dex */
 public class DirAdapter extends ArrayAdapter {
-    private static final Object a = null;
+    private static Object a = null;
 
     /* renamed from: a  reason: collision with other field name */
     static SimpleDateFormat f0a;
@@ -69,8 +69,8 @@ public class DirAdapter extends ArrayAdapter {
 
     @Override // android.widget.ArrayAdapter, android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
-        SimpleDateFormat simpleDateFormat;
-        Date date;
+        SimpleDateFormat simpleDateFormat = null;
+        Date date = null;
         ViewGroup viewGroup2 = (ViewGroup) super.getView(i, view, viewGroup);
         if (viewGroup2 == null) {
             return null;

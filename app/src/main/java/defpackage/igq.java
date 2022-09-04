@@ -257,16 +257,16 @@ public final class igq implements ihb {
                 Path path;
                 Integer num;
                 Optional empty;
-                int i2;
-                ogv ogvVar;
-                ogy ogyVar;
-                int i3;
-                Path path2;
-                int i4;
-                float f;
-                boolean z2;
-                ohg ohgVar;
-                boolean z3;
+                int i2 = 0;
+                ogv ogvVar = null;
+                ogy ogyVar = null;
+                int i3 = 0;
+                Path path2 = null;
+                int i4 = 0;
+                float f = 0;
+                boolean z2 = false;
+                ohg ohgVar = null;
+                boolean z3 = false;
                 igq igqVar = igq.this;
                 igqVar.g.e("SEController#createInstance");
                 ohc ohcVar = new ohc(null);
@@ -347,7 +347,7 @@ public final class igq implements ihb {
                         z2 = ohdVar3.g;
                         ohgVar = new ohg();
                         z3 = i3 == 2;
-                    } catch (IOException e) {
+                    } catch (Exception e) {
                         ((oug) ((oug) ((oug) ogt.a.b()).h(e)).G((char) 3682)).o("Failed to create SpeechEnhancerImpl instance.");
                         empty = Optional.empty();
                     }
@@ -380,7 +380,12 @@ public final class igq implements ihb {
                     obr.aG(z4, "Callback must be set before calling build().");
                     ohw ohwVar = new ohw(ohvVar.c, ohvVar.a, ohvVar.d, ohvVar.b);
                     PipedInputStream pipedInputStream = new PipedInputStream(((int) ogv.a.getSeconds()) * ((int) speechEnhancerModelInfo.b) * speechEnhancerModelInfo.d * speechEnhancerModelInfo.c);
-                    PipedOutputStream pipedOutputStream = new PipedOutputStream(pipedInputStream);
+                    PipedOutputStream pipedOutputStream = null;
+                    try {
+                        pipedOutputStream = new PipedOutputStream(pipedInputStream);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                     ogyVar.a = Optional.of(pipedOutputStream);
                     empty = Optional.of(new ohb(ogvVar.b, ohwVar, pipedInputStream, pipedOutputStream, speechEnhancerJniWrapperRealtime));
                     ojc i6 = empty.isPresent() ? ojc.i(new ihk((ogs) empty.get())) : oih.a;

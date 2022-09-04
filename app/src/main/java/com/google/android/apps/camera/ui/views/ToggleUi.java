@@ -36,7 +36,7 @@ public class ToggleUi extends FrameLayout {
     public static final Duration a = Duration.ofMillis(200);
 
     /* loaded from: classes.dex */
-    public class ToggleButton extends ImageButton {
+    public static class ToggleButton extends ImageButton {
         private static final ouj b = ouj.h("com/google/android/apps/camera/ui/views/ToggleUi$ToggleButton");
         public boolean a;
 
@@ -129,16 +129,12 @@ public class ToggleUi extends FrameLayout {
         this.c = (ToggleButton) findViewById(R.id.toggle_button);
         this.d = (ImageView) findViewById(R.id.toggle_background);
         ValueAnimator ofFloat = ValueAnimator.ofFloat(DisplayHelper.DENSITY, 1.0f);
-        g(ofFloat, new ValueAnimator.AnimatorUpdateListener(this) { // from class: jov
-            public final /* synthetic */ ToggleUi a;
-
-            {
-                this.a = this;
-            }
+        g(ofFloat, new ValueAnimator.AnimatorUpdateListener() { // from class: jov
+            public final /* synthetic */ ToggleUi a = ToggleUi.this;
 
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ToggleUi toggleUi = this.a;
                         toggleUi.c.setScaleX(((Float) valueAnimator.getAnimatedValue()).floatValue());
@@ -151,16 +147,12 @@ public class ToggleUi extends FrameLayout {
             }
         });
         ValueAnimator ofFloat2 = ValueAnimator.ofFloat(DisplayHelper.DENSITY, 1.0f);
-        g(ofFloat2, new ValueAnimator.AnimatorUpdateListener(this) { // from class: jov
-            public final /* synthetic */ ToggleUi a;
-
-            {
-                this.a = this;
-            }
+        g(ofFloat2, new ValueAnimator.AnimatorUpdateListener() { // from class: jov
+            public final /* synthetic */ ToggleUi a = ToggleUi.this;
 
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         ToggleUi toggleUi = this.a;
                         toggleUi.c.setScaleX(((Float) valueAnimator.getAnimatedValue()).floatValue());

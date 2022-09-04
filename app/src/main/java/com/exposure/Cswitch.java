@@ -18,12 +18,8 @@ public class Cswitch {
     }
 
     public static void setLongClickListener(View view, Context context) {
-        view.setOnLongClickListener(new View.OnLongClickListener(context) { // from class: com.exposure.switch.1
-            private final Context this$0;
-
-            {
-                this.this$0 = context;
-            }
+        view.setOnLongClickListener(new View.OnLongClickListener() { // from class: com.exposure.switch.1
+            private final Context this$0 = context;
 
             public int getKeyValue(String str) {
                 SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this.this$0);
@@ -44,7 +40,7 @@ public class Cswitch {
                 if (Helper.sFront != 0) {
                     title = builder.setTitle(context2.getString(R.string.pref_aemode_front_title));
                     keyValue = getKeyValue("pref_aemode_back_key");
-                    onClickListener = new DialogInterface.OnClickListener(context2) { // from class: com.exposure.switch.2
+                    onClickListener = new DialogInterface.OnClickListener() { // from class: com.exposure.switch.2
                         private final Context this$0;
 
                         {
@@ -63,7 +59,7 @@ public class Cswitch {
                 } else {
                     title = builder.setTitle(context2.getString(R.string.pref_aemode_back_title));
                     keyValue = getKeyValue("pref_aemode_back_key");
-                    onClickListener = new DialogInterface.OnClickListener(context2) { // from class: com.exposure.switch.2
+                    onClickListener = new DialogInterface.OnClickListener() { // from class: com.exposure.switch.2
                         private final Context this$0;
 
                         {

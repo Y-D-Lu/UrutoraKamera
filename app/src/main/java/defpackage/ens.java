@@ -70,7 +70,7 @@ public final class ens implements enr {
         synchronized (this.a) {
             if (!this.d) {
                 if (LensOffsetQueueNative.processAndEnqueueLensOffset(this.c, j, f, f2)) {
-                    for (enq enqVar : this.b) {
+                    for (enq enqVar : (Set<enq>) this.b) {
                         enqVar.a();
                     }
                 }

@@ -88,7 +88,7 @@ public final class fgb implements iaq {
         lapVar.c(new lie() { // from class: ffs
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                fgd.this.d = null;
+                fgdVar.d = null;
             }
         });
         fgd fgdVar2 = this.D;

@@ -2,6 +2,7 @@ package defpackage;
 
 import java.io.File;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: eqs  reason: default package */
 /* loaded from: classes.dex */
@@ -28,7 +29,7 @@ public final /* synthetic */ class eqs implements Runnable {
                         lvp a = eqxVar.g.a(lvsVar);
                         h = eqx.k(h, a);
                         if (a.L()) {
-                            for (lvs lvsVar2 : ((lvo) a).b) {
+                            for (lvs lvsVar2 : (Set<lvs>) ((lvo) a).b) {
                                 h = eqx.k(h, eqxVar.g.a(lvsVar2));
                             }
                         }

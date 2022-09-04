@@ -41,7 +41,7 @@ public final class irk implements pys {
                 return new iho() { // from class: isr
                     @Override // java.lang.Runnable
                     public final void run() {
-                        isl.this.a();
+                        islVar.a();
                     }
                 };
             case 3:
@@ -53,7 +53,7 @@ public final class irk implements pys {
                 return new Consumer() { // from class: ivv
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        ivj.this.i((Supplier) obj);
+                        ivjVar.i((Supplier) obj);
                     }
 
                     @Override // java.util.function.Consumer

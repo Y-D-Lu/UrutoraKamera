@@ -44,7 +44,7 @@ final class gjy implements gmt {
         egmVar.d.execute(new Runnable() { // from class: egl
             @Override // java.lang.Runnable
             public final void run() {
-                egm egmVar2 = egm.this;
+                egm egmVar2 = egmVar;
                 mad madVar2 = madVar;
                 Bitmap bitmap = null;
                 try {

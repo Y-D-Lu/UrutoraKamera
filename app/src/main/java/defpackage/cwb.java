@@ -38,7 +38,7 @@ public final class cwb implements phh {
         cwcVar.a.execute(new Runnable() { // from class: cwa
             @Override // java.lang.Runnable
             public final void run() {
-                cwc cwcVar2 = cwc.this;
+                cwc cwcVar2 = cwcVar;
                 ie ieVar = c;
                 lwd lwdVar2 = lwdVar;
                 int i3 = i;

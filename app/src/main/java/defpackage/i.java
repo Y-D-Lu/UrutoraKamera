@@ -14,7 +14,7 @@ public final class i extends Format.Field {
     }
 
     @Override // java.text.AttributedCharacterIterator.Attribute
-    protected Object readResolve() {
+    protected Object readResolve() throws InvalidObjectException {
         if (getClass() == i.class) {
             String name = getName();
             i iVar = a;

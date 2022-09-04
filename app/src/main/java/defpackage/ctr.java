@@ -83,7 +83,7 @@ public final class ctr implements View.OnLayoutChangeListener {
         float a = jsa.a(resources.getDimension(R.dimen.record_speed_slider_text_letter_spacing));
         Drawable drawable2 = resources.getDrawable(R.drawable.quantum_gm_ic_arrow_back_white_18, null);
         Drawable drawable3 = resources.getDrawable(R.drawable.quantum_gm_ic_arrow_forward_white_18, null);
-        final int i14 = 0;
+        int i14 = 0;
         while (i14 < size) {
             int i15 = size;
             if (i14 == recordSpeedSlider.f) {
@@ -116,11 +116,12 @@ public final class ctr implements View.OnLayoutChangeListener {
             textView.setLetterSpacing(a);
             textView.setAlpha(DisplayHelper.DENSITY);
             textView.setContentDescription(string);
+            final int i14Final = i14;
             textView.setOnClickListener(new View.OnClickListener() { // from class: ctt
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
-                    RecordSpeedSlider recordSpeedSlider2 = RecordSpeedSlider.this;
-                    int i20 = i14;
+                    RecordSpeedSlider recordSpeedSlider2 = recordSpeedSlider;
+                    int i20 = i14Final;
                     recordSpeedSlider2.d.c(true);
                     recordSpeedSlider2.g(i20, true);
                     recordSpeedSlider2.d.b(recordSpeedSlider2, true);

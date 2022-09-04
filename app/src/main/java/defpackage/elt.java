@@ -262,7 +262,7 @@ public final class elt implements pys {
                     @Override // defpackage.lyy
                     public final void h(lic licVar) {
                         elv[] elvVarArr;
-                        els elsVar2 = els.this;
+                        els elsVar2 = elsVar;
                         synchronized (els.a) {
                             for (elv elvVar : (elv[]) elsVar2.d.toArray(new elv[0])) {
                                 if (!elvVar.o() && !elvVar.equals(elsVar2.j)) {
@@ -339,7 +339,7 @@ public final class elt implements pys {
                     I = ope.I(new iho() { // from class: eny
                         @Override // java.lang.Runnable
                         public final void run() {
-                            eoc eocVar2 = eoc.this;
+                            eoc eocVar2 = eocVar;
                             if (eocVar2.a()) {
                                 eoc.b(eocVar2.a);
                             }
@@ -354,7 +354,7 @@ public final class elt implements pys {
                 return new erb((lda) this.e.mo37get(), (ddf) this.c.mo37get(), new jdu(), ((pyw) this.a).mo37get(), (jdy) this.b.mo37get(), ((etg) this.d).mo37get());
             case 5:
                 jrl mo37get3 = ((jrj) this.e).mo37get();
-                final pyn a6 = pyr.a(this.b);
+                pyn a6 = pyr.a(this.b);
                 pyn a7 = pyr.a(this.c);
                 final phv phvVar = (phv) this.d.mo37get();
                 final ljf ljfVar = (ljf) this.a.mo37get();
@@ -364,6 +364,7 @@ public final class elt implements pys {
                 if (mo37get3 != jrl.PHOTO) {
                     a6 = a7;
                 }
+                final pyn a6Final = a6;
                 return new bvv() { // from class: ewf
                     @Override // defpackage.bvv
                     public final /* synthetic */ String c() {
@@ -372,13 +373,13 @@ public final class elt implements pys {
 
                     @Override // defpackage.bvv
                     public final pht fz() {
-                        phv phvVar2 = phv.this;
+                        phv phvVar2 = phvVar;
                         final ljf ljfVar2 = ljfVar;
-                        final pyn pynVar = a6;
+                        final pyn pynVar = a6Final;
                         return phvVar2.b(new Callable() { // from class: ewh
                             @Override // java.util.concurrent.Callable
                             public final Object call() {
-                                ljf ljfVar3 = ljf.this;
+                                ljf ljfVar3 = ljfVar2;
                                 pyn pynVar2 = pynVar;
                                 ljfVar3.e("PhotoModeStartup");
                                 ljfVar3.e("get");
@@ -428,7 +429,7 @@ public final class elt implements pys {
                         obj2 = ope.H(new gnl() { // from class: fst
                             @Override // defpackage.gnl, java.lang.Runnable
                             public final void run() {
-                                ljf ljfVar3 = ljf.this;
+                                ljf ljfVar3 = ljfVar2;
                                 qkg qkgVar4 = qkgVar3;
                                 qkg qkgVar5 = qkgVar2;
                                 ljfVar3.e("MICRO_GyroModule#stopGyroCapture");
@@ -563,7 +564,7 @@ public final class elt implements pys {
                 a11.a(new lij() { // from class: gqo
                     @Override // defpackage.lij
                     public final void fB(Object obj3) {
-                        gqy gqyVar2 = gqy.this;
+                        gqy gqyVar2 = gqyVar;
                         if (!((Boolean) obj3).booleanValue() || !((gqx) gqyVar2.fA()).equals(gqx.OFF)) {
                             return;
                         }
@@ -573,7 +574,7 @@ public final class elt implements pys {
                 lda b2 = lcz.b(a11, new oiu() { // from class: gqq
                     @Override // defpackage.oiu
                     public final Object a(Object obj3) {
-                        imf imfVar2 = imf.this;
+                        imf imfVar2 = imfVar;
                         boolean z = false;
                         if (Boolean.TRUE.equals((Boolean) obj3) && !((Boolean) imfVar2.a().fA()).booleanValue()) {
                             z = true;
@@ -584,7 +585,7 @@ public final class elt implements pys {
                 return ddfVar4.k(ddl.bp) ? lcz.b(b2, new oiu() { // from class: gqp
                     @Override // defpackage.oiu
                     public final Object a(Object obj3) {
-                        huf hufVar2 = huf.this;
+                        huf hufVar2 = hufVar;
                         boolean z = false;
                         if (Boolean.TRUE.equals((Boolean) obj3) && !((Boolean) hufVar2.c(htu.ab)).booleanValue()) {
                             z = true;
@@ -599,7 +600,7 @@ public final class elt implements pys {
                 grb grbVar = new grb((ebe) this.e.mo37get(), new ojz() { // from class: grj
                     @Override // defpackage.ojz
                     public final Object a() {
-                        ecb ecbVar2 = ecb.this;
+                        ecb ecbVar2 = ecbVar;
                         eam eamVar2 = eamVar;
                         boolean z = true;
                         if (ecbVar2 != ecb.LONG_EXPOSURE && !((Boolean) eamVar2.a().fA()).booleanValue()) {
@@ -621,7 +622,7 @@ public final class elt implements pys {
                 lco j = (!gsn.g(mo37get8, ddfVar5) || !((lzh) qkgVar6.mo37get()).g) ? lcv.j((lco) qkgVar7.mo37get(), eto.n) : lcv.j((lco) qkgVar7.mo37get(), new oiu() { // from class: gsl
                     @Override // defpackage.oiu
                     public final Object a(Object obj3) {
-                        return fcy.k(mip.be(CaptureRequest.SCALER_CROP_REGION, ((gsm) obj3).b), mip.be(CaptureRequest.CONTROL_ZOOM_RATIO, (Float) ((lco) qkg.this.mo37get()).fA()));
+                        return fcy.k(mip.be(CaptureRequest.SCALER_CROP_REGION, ((gsm) obj3).b), mip.be(CaptureRequest.CONTROL_ZOOM_RATIO, (Float) ((lco) qkgVar8.mo37get()).fA()));
                     }
                 });
                 qmd.ae(j);

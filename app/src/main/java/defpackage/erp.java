@@ -618,7 +618,7 @@ public final class erp implements LasagnaCallbacks, esj {
             return;
         }
         try {
-            long millis = ((float) TimeUnit.SECONDS.toMillis(1L)) * f;
+            long millis = (long) (((float) TimeUnit.SECONDS.toMillis(1L)) * f);
             gof gofVar = this.k;
             if (gofVar != null) {
                 gofVar.d().f(millis);

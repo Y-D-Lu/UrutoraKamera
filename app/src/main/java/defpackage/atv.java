@@ -11,11 +11,15 @@ public abstract class atv {
     }
 
     public atv(int i) {
-        b(i);
+        try {
+            b(i);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
         g(i);
     }
 
-    private final void b(int i) {
+    private final void b(int i) throws ass {
         int a = (a() ^ (-1)) & i;
         if (a == 0) {
             e(i);
@@ -31,7 +35,7 @@ public abstract class atv {
 
     protected abstract int a();
 
-    protected void e(int i) {
+    protected void e(int i) throws ass {
     }
 
     public final boolean equals(Object obj) {
@@ -49,7 +53,11 @@ public abstract class atv {
     }
 
     public final void g(int i) {
-        b(i);
+        try {
+            b(i);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
         this.a = i;
     }
 

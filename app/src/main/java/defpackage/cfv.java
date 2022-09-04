@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.List;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: cfv  reason: default package */
@@ -24,7 +25,7 @@ public final class cfv implements phh {
     public final /* bridge */ /* synthetic */ void b(Object obj) {
         clf clfVar = (clf) obj;
         this.b.D.l(cms.RECORDING_SESSION);
-        for (chy chyVar : this.a) {
+        for (chy chyVar : (Set<chy>) this.a) {
             chyVar.i(clfVar);
         }
     }

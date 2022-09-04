@@ -2,7 +2,6 @@ package defpackage;
 
 import android.util.Log;
 
-import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.concurrent.ScheduledFuture;
 
@@ -64,7 +63,7 @@ public final class cza implements cyw, dab {
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
                 ScheduledFuture scheduledFuture;
-                czv czvVar2 = czv.this;
+                czv czvVar2 = czvVar;
                 synchronized (czvVar2) {
                     czvVar2.c = czv.a;
                     scheduledFuture = czvVar2.d;
@@ -80,7 +79,7 @@ public final class cza implements cyw, dab {
         lapVar.c(new lie() { // from class: czy
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                dac dacVar2 = dac.this;
+                dac dacVar2 = dacVar;
                 lie lieVar2 = lieVar;
                 dacVar2.h = dac.a;
                 lieVar2.close();
@@ -128,7 +127,7 @@ public final class cza implements cyw, dab {
                 obr.ao(cyzVar);
                 cyzVar.c();
                 this.f.d();
-            } catch (IOException | RuntimeException e) {
+            } catch (Exception e) {
                 j(e, "Unable to close Vision kit");
             }
             this.g = null;

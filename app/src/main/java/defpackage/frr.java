@@ -5,6 +5,7 @@ import android.os.Handler;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -132,7 +133,7 @@ public final class frr implements frn {
             defpackage.d.v(u.c(), "Trying to close after handler shutdown", (char) 1926);
             return;
         }
-        for (Long l : this.a.f(this.K)) {
+        for (Long l : (Set<Long>) this.a.f(this.K)) {
             long longValue = l.longValue();
             if (this.f.g()) {
                 ((fqi) this.f.c()).b(longValue);

@@ -23,7 +23,7 @@ public final class lvj implements lie {
                 image.setTimestamp(j);
                 this.b.queueInputImage(image);
             } catch (IllegalStateException e) {
-                throw new llv(e);
+                e.printStackTrace();
             }
         }
         madVar.close();

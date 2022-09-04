@@ -32,47 +32,47 @@ public final /* synthetic */ class fhg implements BiFunction {
     public final /* synthetic */ BiFunction andThen(Function function) {
         switch (this.q) {
             case 0:
-                return function;
+                return (BiFunction) function;
             case 1:
-                return function;
+                return (BiFunction) function;
             case 2:
-                return function;
+                return (BiFunction) function;
             case 3:
-                return function;
+                return (BiFunction) function;
             case 4:
-                return function;
+                return (BiFunction) function;
             case 5:
-                return function;
+                return (BiFunction) function;
             case 6:
-                return function;
+                return (BiFunction) function;
             case 7:
-                return function;
+                return (BiFunction) function;
             case 8:
-                return function;
+                return (BiFunction) function;
             case 9:
-                return function;
+                return (BiFunction) function;
             case 10:
-                return function;
+                return (BiFunction) function;
             case 11:
-                return function;
+                return (BiFunction) function;
             case 12:
-                return function;
+                return (BiFunction) function;
             case 13:
-                return function;
+                return (BiFunction) function;
             case 14:
-                return function;
+                return (BiFunction) function;
             case 15:
-                return function;
+                return (BiFunction) function;
             case 16:
-                return function;
+                return (BiFunction) function;
             case 17:
-                return function;
+                return (BiFunction) function;
             case 18:
-                return function;
+                return (BiFunction) function;
             case 19:
-                return function;
+                return (BiFunction) function;
             default:
-                return function;
+                return (BiFunction) function;
         }
     }
 

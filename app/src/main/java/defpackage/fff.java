@@ -20,7 +20,7 @@ public final class fff {
         return z ? ope.H(new iho() { // from class: ffe
             @Override // java.lang.Runnable
             public final void run() {
-                bqg bqgVar2 = bqg.this;
+                bqg bqgVar2 = bqgVar;
                 imt imtVar2 = imtVar;
                 fez fezVar2 = fezVar;
                 hyc hycVar2 = hycVar;

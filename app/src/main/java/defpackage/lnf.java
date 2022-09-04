@@ -3,21 +3,21 @@ package defpackage;
 /* renamed from: lnf  reason: default package */
 /* loaded from: classes2.dex */
 public final class lnf {
-    public final lvs a;
-    public final lnp b;
-    public final lnt c;
-    public final lnt d;
-    public final lnt e;
-    public final lnt f;
-    public final oom g;
-    public final ope h;
-    public final llt i;
-    public final lmo j;
-    public final long k;
-    public final int l;
-    public final ope m;
-    public final mip n;
-    private final lnt o;
+    public lvs a;
+    public lnp b;
+    public lnt c;
+    public lnt d;
+    public lnt e;
+    public lnt f;
+    public oom g;
+    public ope h;
+    public llt i;
+    public lmo j;
+    public long k;
+    public int l;
+    public ope m;
+    public mip n;
+    private lnt o;
 
     public lnf() {
     }

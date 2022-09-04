@@ -45,7 +45,7 @@ public final class mhl {
         this.f = str;
     }
 
-    public static String c(Context context, String str) {
+    public static String c(Context context, String str) throws mho {
         try {
             long j = context.getPackageManager().getPackageInfo(str, 0).lastUpdateTime;
             StringBuilder sb = new StringBuilder(str.length() + 21);
@@ -64,7 +64,7 @@ public final class mhl {
         return context;
     }
 
-    public final Class b(String str) {
+    public final Class b(String str) throws mhn {
         try {
             return Class.forName(str, true, (ClassLoader) c.get(c(a(), this.f)));
         } catch (ClassNotFoundException e) {

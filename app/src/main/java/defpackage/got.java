@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Set;
+
 /* renamed from: got  reason: default package */
 /* loaded from: classes2.dex */
 public final class got implements goy {
@@ -32,7 +34,7 @@ public final class got implements goy {
                 }
                 if (hslVar.b.isEmpty()) {
                     hslVar.a.e("#notifyPipelineResumed");
-                    for (hsk hskVar : hslVar.a()) {
+                    for (hsk hskVar : (Set<hsk>) hslVar.a()) {
                         hskVar.c();
                     }
                     hslVar.a.f();
@@ -57,7 +59,7 @@ public final class got implements goy {
                     }
                     if (z2) {
                         hslVar2.a.e("#notifyPipelinePaused");
-                        for (hsk hskVar2 : hslVar2.a()) {
+                        for (hsk hskVar2 : (Set<hsk>) hslVar2.a()) {
                             hskVar2.b();
                         }
                         hslVar2.a.f();
@@ -69,7 +71,10 @@ public final class got implements goy {
             }, pgr.a);
             this.b.c(goxVar, gogVar);
         } catch (IllegalStateException e) {
-            throw new llv("ShotPipeline not available", e);
+            e.printStackTrace();
+            //throw new llv("ShotPipeline not available", e);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 

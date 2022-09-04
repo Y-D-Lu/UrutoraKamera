@@ -31,21 +31,17 @@ public class ixi extends ihr {
         a(mip.eO("CameraUi.SocialShare"), new ixd(epjVar, 0), new iib() { // from class: ixe
             @Override // defpackage.iib
             public final lie a() {
-                final gtg gtgVar2 = gtg.this;
+                final gtg gtgVar2 = gtgVar;
                 gtgVar2.l();
                 return new lie() { // from class: gsq
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        gtg.this.j();
+                        gtgVar2.j();
                     }
                 };
             }
-        }, new iib(this) { // from class: ixf
-            public final /* synthetic */ ixi a;
-
-            {
-                this.a = this;
-            }
+        }, new iib() { // from class: ixf
+            public final /* synthetic */ ixi a = ixi.this;
 
             @Override // defpackage.iib
             public final lie a() {
@@ -73,12 +69,8 @@ public class ixi extends ihr {
                         return this.a.b.n.e(elx.FIRST_RUN_TOAST);
                 }
             }
-        }, new iib(this) { // from class: ixf
-            public final /* synthetic */ ixi a;
-
-            {
-                this.a = this;
-            }
+        }, new iib() { // from class: ixf
+            public final /* synthetic */ ixi a = ixi.this;
 
             @Override // defpackage.iib
             public final lie a() {
@@ -109,19 +101,19 @@ public class ixi extends ihr {
         }, new iib() { // from class: ixg
             @Override // defpackage.iib
             public final lie a() {
-                final jak jakVar2 = jak.this;
+                final jak jakVar2 = jakVar;
                 jakVar2.d(false);
                 return new lie() { // from class: jai
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        jak.this.d(true);
+                        jakVar2.d(true);
                     }
                 };
             }
         }, new iib() { // from class: ixa
             @Override // defpackage.iib
             public final lie a() {
-                final kbi kbiVar = (kbi) kas.this;
+                final kbi kbiVar = (kbi) kasVar;
                 ZoomUi zoomUi = kbiVar.H;
                 if (zoomUi == null || zoomUi.getVisibility() != 8) {
                     kbiVar.v(false);
@@ -177,12 +169,8 @@ public class ixi extends ihr {
                         return jgqVar2.e();
                 }
             }
-        }, new iib(this) { // from class: ixf
-            public final /* synthetic */ ixi a;
-
-            {
-                this.a = this;
-            }
+        }, new iib() { // from class: ixf
+            public final /* synthetic */ ixi a = ixi.this;
 
             @Override // defpackage.iib
             public final lie a() {

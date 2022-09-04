@@ -6,6 +6,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.hardware.camera2.CameraCharacteristics;
 import android.os.Build;
@@ -155,7 +156,7 @@ public class Helper {
         if (i != 0) {
             intent.putExtra("android.intent.extra.USE_FRONT_CAMERA", true);
         }
-        int i2 = Visibility.IsMode;
+        int i2 = IsMode;
         if (i2 == 1) {
             intent.setAction("android.media.action.STILL_IMAGE_CAMERA");
         } else if (i2 == 2) {
@@ -257,7 +258,12 @@ public class Helper {
 
     public static int MenuValue(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext());
+        SharedPreferences defaultSharedPreferences = null;
+        try {
+            defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext());
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         if (defaultSharedPreferences.contains(str)) {
             String string = defaultSharedPreferences.getString(str, null);
             if (TextUtils.isEmpty(string)) {
@@ -270,7 +276,12 @@ public class Helper {
 
     public static int MenuValue1(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         boolean contains = PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str);
         return contains ? Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null)) : contains ? 1 : 0;
     }
@@ -281,7 +292,12 @@ public class Helper {
 
     public static String MenuValueString(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         boolean contains = PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str);
         return !contains ? Integer.toString(contains ? 1 : 0) : PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null);
     }
@@ -429,8 +445,13 @@ public class Helper {
 
     public static void Toast(int i) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
-        Toast makeText = Toast.makeText(applicationContext, i, 1);
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        Toast makeText = Toast.makeText(applicationContext, i, Toast.LENGTH_LONG);
         makeText.setGravity(17, 0, 0);
         ImageView imageView = new ImageView(applicationContext);
         imageView.setImageResource(R.drawable.error);
@@ -607,7 +628,12 @@ public class Helper {
 
     public static Context getAppContext() {
         Application initialApplication = AppGlobals.getInitialApplication();
-        return initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        try {
+            return initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /*  JADX ERROR: JadxRuntimeException in pass: ProcessInstructionsVisitor
@@ -764,7 +790,12 @@ public class Helper {
 
     public static int getValue(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         boolean contains = PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str);
         return contains ? Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null)) : contains ? 1 : 0;
     }
@@ -790,7 +821,12 @@ public class Helper {
 
     public static void loadDistances() {
         Application initialApplication = AppGlobals.getInitialApplication();
-        SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext());
+        SharedPreferences defaultSharedPreferences = null;
+        try {
+            defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext());
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         if (MenuValue("pref_macro_ns_key") != 0) {
             DistanceNear = ((Float) pkr.k.n(CameraCharacteristics.LENS_INFO_MINIMUM_FOCUS_DISTANCE)).floatValue();
         } else {
@@ -826,12 +862,21 @@ public class Helper {
             NeedRestart = i + 1;
             return;
         }
-        Thread.sleep(500L);
+        try {
+            Thread.sleep(500L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context createPackageContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 0);
+        Context createPackageContext = null;
+        try {
+            createPackageContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         Intent intent = new Intent(createPackageContext, CameraActivity.class);
-        intent.addFlags(32768);
-        intent.addFlags(268435456);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         if (i != 0) {
             intent.putExtra("android.intent.extra.USE_FRONT_CAMERA", true);
         }
@@ -930,7 +975,11 @@ public class Helper {
 
     public static void setMenuValue(String str, String str2) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).edit().putString(str, String.valueOf(str2)).apply();
+        try {
+            PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext()).edit().putString(str, String.valueOf(str2)).apply();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static int setSabre(int i) {
@@ -964,18 +1013,22 @@ public class Helper {
 
     public static void setValue(String str, int i) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).edit().putString(str, String.valueOf(i)).apply();
+        try {
+            PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), Context.CONTEXT_INCLUDE_CODE).getApplicationContext()).edit().putString(str, String.valueOf(i)).apply();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void showT(String str) {
-        Toast.makeText(getAppContext(), str, 1).show();
+        Toast.makeText(getAppContext(), str, Toast.LENGTH_LONG).show();
     }
 
     public void OpenPreference0(String str) {
         Context appContext = getAppContext();
         Intent intent = new Intent(appContext, CameraSettingsActivity.class);
         intent.putExtra("pref_open_setting_page", str);
-        intent.addFlags(268435456);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         appContext.startActivity(intent);
     }
 }

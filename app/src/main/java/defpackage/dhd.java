@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: dhd  reason: default package */
 /* loaded from: classes.dex */
@@ -14,7 +15,7 @@ public final class dhd {
     public final void a(int i, double d, double d2) {
         String format;
         synchronized (this.a) {
-            for (dhf dhfVar : this.a.b) {
+            for (dhf dhfVar : (Set<dhf>) this.a.b) {
                 double d3 = d / d2;
                 Map map = dhfVar.b;
                 Integer valueOf = Integer.valueOf(i);

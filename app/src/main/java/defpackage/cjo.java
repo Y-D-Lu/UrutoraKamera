@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: cjo  reason: default package */
 /* loaded from: classes.dex */
@@ -12,7 +13,7 @@ public final class cjo {
     public cjo(ghx ghxVar, Map map) {
         this.b = ghxVar;
         this.a = map;
-        for (ldz ldzVar : map.keySet()) {
+        for (ldz ldzVar : (Set<ldz>) map.keySet()) {
             map.get(ldzVar);
         }
     }

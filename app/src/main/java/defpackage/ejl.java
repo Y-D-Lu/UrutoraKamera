@@ -22,12 +22,12 @@ import java.util.HashSet;
 /* loaded from: classes2.dex */
 public final class ejl extends buf implements ehk {
     private elb b;
-    private final egz c;
-    private final Activity d;
-    private final jns e;
-    private final Runnable f;
+    private egz c;
+    private Activity d;
+    private jns e;
+    private Runnable f;
     private jii g;
-    private final evl h;
+    private evl h;
 
     public ejl() {
     }
@@ -209,7 +209,7 @@ public final class ejl extends buf implements ehk {
         ehjVar.m = new lmu() { // from class: ehd
             @Override // defpackage.lmu
             public final void a(lrr lrrVar) {
-                ehj ehjVar2 = ehj.this;
+                ehj ehjVar2 = ehjVar;
                 lij lijVar2 = lijVar;
                 lmr a2 = lrrVar.a();
                 if (a2 == null) {
@@ -271,7 +271,7 @@ public final class ejl extends buf implements ehk {
         ehrVar.l.c(new lie() { // from class: ehn
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                jiiVar.b(ehr.this.a);
+                jiiVar.b(ehrVar.a);
             }
         });
         ehrVar.l.c(ehrVar.c.d(ehrVar.j));

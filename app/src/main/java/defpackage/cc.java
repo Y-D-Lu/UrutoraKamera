@@ -14,6 +14,7 @@ import org.codeaurora.snapcam.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: cc  reason: default package */
 /* loaded from: classes.dex */
@@ -58,7 +59,7 @@ public final class cc extends FrameLayout {
             h.o();
             ((ay) h).a.C((cs) h, true);
         }
-        for (da daVar : cuVar.a.e()) {
+        for (da daVar : (Set<da>) cuVar.a.e()) {
             bu buVar = daVar.c;
             if (buVar.D == getId() && (view = buVar.M) != null && view.getParent() == null) {
                 buVar.L = this;
@@ -76,7 +77,7 @@ public final class cc extends FrameLayout {
     @Override // android.view.ViewGroup
     public final void addView(View view, int i, ViewGroup.LayoutParams layoutParams) {
         view.getClass();
-        Object tag = view.getTag(R.id.fragment_container_view_tag);
+        Object tag = view.getTag(com.google.android.apps.camera.bottombar.R.id.fragment_container_view_tag);
         if ((tag instanceof bu ? (bu) tag : null) != null) {
             super.addView(view, i, layoutParams);
             return;
@@ -116,7 +117,7 @@ public final class cc extends FrameLayout {
     protected final void dispatchDraw(Canvas canvas) {
         canvas.getClass();
         if (this.a) {
-            for (View view : this.b) {
+            for (View view : (Set<View>) this.b) {
                 super.drawChild(canvas, view, getDrawingTime());
             }
         }

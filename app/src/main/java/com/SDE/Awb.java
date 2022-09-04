@@ -70,7 +70,7 @@ public class Awb {
             }
             GcamModuleJNI.QcColorCalibration_illuminant_data_set(qcColorCalibration.a, qcColorCalibration, qcIlluminantVector.a, qcIlluminantVector);
             float f3 = awbArr_GR_GB;
-            qcColorCalibration.a(f3);
+            qcColorCalibration.a();
             sb.append("AWB worked, GB/GR=");
             sb.append(Float.toString(f3));
         } catch (Throwable unused) {
@@ -80,8 +80,8 @@ public class Awb {
     }
 
     private static void setAWB() {
-        float[] fArr;
-        float[] fArr2;
+        float[] fArr = new float[0];
+        float[] fArr2 = new float[0];
         int AuxCamKey = AuxCamKey();
         if (AuxCamKey >= 0) {
             switch (AuxCamKey) {

@@ -13,7 +13,7 @@ public class jeg extends jea {
     public Set i;
 
     public final void i(boolean z) {
-        for (jel jelVar : this.i) {
+        for (jel jelVar : (Set<jel>) this.i) {
             jelVar.l(z);
         }
     }

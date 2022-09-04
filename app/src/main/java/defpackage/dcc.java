@@ -46,7 +46,7 @@ public abstract class dcc implements iat, dbr {
             b.g = new Runnable() { // from class: dbz
                 @Override // java.lang.Runnable
                 public final void run() {
-                    iay iayVar2 = iay.this;
+                    iay iayVar2 = iayVar;
                     Runnable runnable2 = runnable;
                     iayVar2.a();
                     runnable2.run();

@@ -108,7 +108,7 @@ public final class hue extends hub {
                 SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener() { // from class: huc
                     @Override // android.content.SharedPreferences.OnSharedPreferenceChangeListener
                     public final void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String str) {
-                        htd.this.a(str);
+                        htdVar.a(str);
                     }
                 };
                 this.g.add(onSharedPreferenceChangeListener);
@@ -212,7 +212,7 @@ public final class hue extends hub {
         SharedPreferences sharedPreferences;
         synchronized (this.b) {
             sharedPreferences = this.c.getSharedPreferences(String.valueOf(this.d).concat("_preferences_camera"), 0);
-            for (SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener : this.g) {
+            for (SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener : (List<SharedPreferences.OnSharedPreferenceChangeListener>) this.g) {
                 sharedPreferences.registerOnSharedPreferenceChangeListener(onSharedPreferenceChangeListener);
             }
         }

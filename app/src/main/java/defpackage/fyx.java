@@ -135,7 +135,7 @@ public final class fyx extends buf {
             lig ligVar = (lig) Collections.max(ohh.P(a.y(), new ojf() { // from class: fys
                 @Override // defpackage.ojf
                 public final boolean a(Object obj) {
-                    lig ligVar2 = lig.this;
+                    lig ligVar2 = e2;
                     lig ligVar3 = (lig) obj;
                     ligVar3.getClass();
                     return lhs.h(ligVar3).k(lhs.b) && ligVar3.e().a <= ligVar2.a && ligVar3.e().b <= ligVar2.b;

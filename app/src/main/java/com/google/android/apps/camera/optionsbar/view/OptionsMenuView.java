@@ -218,8 +218,8 @@ public class OptionsMenuView extends ScrollView {
                     double d = dimensionPixelSize2;
                     Double.isNaN(d);
                     double d2 = d - 0.5d;
-                    Double.isNaN(r4);
-                    size = (int) (d2 * r4);
+                    Double.isNaN(d2);
+                    size = (int) (d2 * d2);
                 }
                 i2 = View.MeasureSpec.makeMeasureSpec(size, Integer.MIN_VALUE);
                 try {
@@ -230,7 +230,7 @@ public class OptionsMenuView extends ScrollView {
                     super.onMeasure(i, i2);
                 }
             } catch (RuntimeException e2) {
-                e = e2;
+                e2.printStackTrace();
             }
         }
         super.onMeasure(i, i2);

@@ -11,7 +11,7 @@ final class h {
     public int d;
 
     public h(Object obj, int i, int i2) {
-        a(i.a, obj, i, i2);
+        a(defpackage.i.a, obj, i, i2);
     }
 
     public h(AttributedCharacterIterator.Attribute attribute, Object obj, int i, int i2) {

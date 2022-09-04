@@ -43,7 +43,7 @@ public final class PhenotypeUpdateBackgroundBroadcastReceiver extends BroadcastR
             a2.d(new Runnable() { // from class: ngc
                 @Override // java.lang.Runnable
                 public final void run() {
-                    pht phtVar = pht.this;
+                    pht phtVar = a2;
                     String str = stringExtra;
                     BroadcastReceiver.PendingResult pendingResult = goAsync;
                     try {
@@ -54,7 +54,7 @@ public final class PhenotypeUpdateBackgroundBroadcastReceiver extends BroadcastR
                             } else {
                                 new String("Successfully updated snapshot for ");
                             }
-                        } catch (ExecutionException e) {
+                        } catch (Exception e) {
                             Log.w("PhenotypeBackgroundRecv", str.length() != 0 ? "Failed to update local snapshot for ".concat(str) : new String("Failed to update local snapshot for "), e);
                         }
                     } finally {

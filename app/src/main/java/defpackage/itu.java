@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.util.DisplayMetrics;
 
@@ -248,7 +249,7 @@ public final class itu implements pys {
                 Object H2 = !((ddf) this.a.mo37get()).k(ddl.bq) ? orx.a : ope.H(new iho() { // from class: jsq
                     @Override // java.lang.Runnable
                     public final void run() {
-                        qkg qkgVar5 = qkg.this;
+                        qkg qkgVar5 = qkgVar3;
                         hyc hycVar2 = hycVar;
                         qkg qkgVar6 = qkgVar4;
                         iau a3 = iav.a();
@@ -283,12 +284,16 @@ public final class itu implements pys {
                 pyn a3 = pyr.a(this.d);
                 fhv mo37get3 = ((etj) this.b).mo37get();
                 lar larVar = (lar) this.c.mo37get();
-                if (mo37get2.getPackageManager().getPackageInfo("com.google.android.wearable.app", 0) != null) {
-                    Object r0 = (jyq) a3.get();
-                    enl.f(larVar, mo37get3, (fik) r0);
-                    jygVar = (jyg) r0;
-                    qmd.ae(jygVar);
-                    return jygVar;
+                try {
+                    if (mo37get2.getPackageManager().getPackageInfo("com.google.android.wearable.app", 0) != null) {
+                        Object r0 = (jyq) a3.get();
+                        enl.f(larVar, mo37get3, (fik) r0);
+                        jygVar = (jyg) r0;
+                        qmd.ae(jygVar);
+                        return jygVar;
+                    }
+                } catch (PackageManager.NameNotFoundException ex) {
+                    ex.printStackTrace();
                 }
                 jygVar = new jyg();
                 qmd.ae(jygVar);
@@ -312,7 +317,7 @@ public final class itu implements pys {
                         handler.postDelayed(new Runnable() { // from class: lpi
                             @Override // java.lang.Runnable
                             public final void run() {
-                                lis lisVar2 = lis.this;
+                                lis lisVar2 = lisVar;
                                 lpr lprVar3 = lprVar2;
                                 lap lapVar4 = lapVar3;
                                 String valueOf = String.valueOf(lprVar3);

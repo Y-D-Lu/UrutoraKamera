@@ -40,12 +40,8 @@ public class iai implements iat {
         iaw b = iaxVar.b();
         final Runnable runnable = iaxVar.e;
         if (runnable != null) {
-            b.d = new Runnable(this) { // from class: iah
-                public final /* synthetic */ iai a;
-
-                {
-                    this.a = this;
-                }
+            b.d = new Runnable() { // from class: iah
+                public final /* synthetic */ iai a = iai.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -83,12 +79,8 @@ public class iai implements iat {
         }
         final Runnable runnable2 = iaxVar.h;
         if (runnable2 != null) {
-            b.g = new Runnable(this) { // from class: iah
-                public final /* synthetic */ iai a;
-
-                {
-                    this.a = this;
-                }
+            b.g = new Runnable() { // from class: iah
+                public final /* synthetic */ iai a = iai.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -126,12 +118,8 @@ public class iai implements iat {
         }
         final Runnable runnable3 = iaxVar.f;
         if (runnable3 != null) {
-            b.e = new Runnable(this) { // from class: iah
-                public final /* synthetic */ iai a;
-
-                {
-                    this.a = this;
-                }
+            b.e = new Runnable() { // from class: iah
+                public final /* synthetic */ iai a = iai.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -169,12 +157,8 @@ public class iai implements iat {
         }
         final Runnable runnable4 = iaxVar.k;
         if (!iaxVar.l) {
-            b.j = new Runnable(this) { // from class: iah
-                public final /* synthetic */ iai a;
-
-                {
-                    this.a = this;
-                }
+            b.j = new Runnable() { // from class: iah
+                public final /* synthetic */ iai a = iai.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {

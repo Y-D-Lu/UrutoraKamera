@@ -34,12 +34,8 @@ public final class dph implements jwu {
         a.a = "FaceObfuscation";
         a.c(this.c);
         a.f(this.d);
-        a.e(new Runnable(this) { // from class: dpg
-            public final /* synthetic */ dph a;
-
-            {
-                this.a = this;
-            }
+        a.e(new Runnable() { // from class: dpg
+            public final /* synthetic */ dph a = dph.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -57,12 +53,8 @@ public final class dph implements jwu {
                 }
             }
         });
-        a.d(new Runnable(this) { // from class: dpg
-            public final /* synthetic */ dph a;
-
-            {
-                this.a = this;
-            }
+        a.d(new Runnable() { // from class: dpg
+            public final /* synthetic */ dph a = dph.this;
 
             @Override // java.lang.Runnable
             public final void run() {

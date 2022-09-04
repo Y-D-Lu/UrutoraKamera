@@ -23,7 +23,7 @@ public final class jhj {
             jgvVar.i = 11;
             jgvVar.b = 5000;
             jgvVar.h = k;
-            enumMap.put((EnumMap) jhiVar, (jhi) jgvVar.a());
+            enumMap.put(jhiVar, jgvVar.a());
         }
         this.b = enumMap;
     }

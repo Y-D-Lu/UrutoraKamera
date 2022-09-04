@@ -4,7 +4,7 @@ package com.google.android.apps.camera.bottombar;
 public final class R {
 
     /* loaded from: classes.dex */
-    public final class anim {
+    public static final class anim {
         public static final int abc_fade_in = 0x7f010000;
         public static final int abc_fade_out = 0x7f010001;
         public static final int abc_grow_fade_in_from_bottom = 0x7f010002;
@@ -49,7 +49,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class animator {
+    public static final class animator {
         public static final int fragment_close_enter = 0x7f020016;
         public static final int fragment_close_exit = 0x7f020017;
         public static final int fragment_fade_enter = 0x7f020018;
@@ -62,7 +62,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class array {
+    public static final class array {
         public static final int camcorder_profile_names = 0x7f030001;
         public static final int camera_id_entryvalues = 0x7f030002;
         public static final int pref_camera_flashmode_entryvalues = 0x7f03000b;
@@ -94,7 +94,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class attr {
+    public static final class attr {
         public static final int actionBarDivider = 0x7f040003;
         public static final int actionBarItemBackground = 0x7f040004;
         public static final int actionBarPopupTheme = 0x7f040005;
@@ -404,13 +404,13 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class bool {
+    public static final class bool {
         public static final int abc_action_bar_embed_tabs = 0x7f050000;
         public static final int abc_config_actionMenuItemAllCaps = 0x7f050001;
     }
 
     /* loaded from: classes.dex */
-    public final class color {
+    public static final class color {
         public static final int abc_background_cache_hint_selector_material_dark = 0x7f060000;
         public static final int abc_background_cache_hint_selector_material_light = 0x7f060001;
         public static final int abc_btn_colored_borderless_text_material = 0x7f060002;
@@ -602,7 +602,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class dimen {
+    public static final class dimen {
         public static final int P20_lasagna_dots_offset = 0x7f070000;
         public static final int P20_long_shot_transit_radius = 0x7f070001;
         public static final int P20_photo_button_inner_radius = 0x7f070002;
@@ -894,7 +894,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class drawable {
+    public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha = 0x7f0803f2;
         public static final int abc_action_bar_item_background_material = 0x7f0803f3;
         public static final int abc_btn_borderless_material = 0x7f0803f4;
@@ -1121,7 +1121,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class id {
+    public static final class id {
         public static final int ALT = 0x7f0b0000;
         public static final int CTRL = 0x7f0b0003;
         public static final int FUNCTION = 0x7f0b0005;
@@ -1465,7 +1465,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class integer {
+    public static final class integer {
         public static final int abc_config_activityDefaultDur = 0x7f0c0000;
         public static final int abc_config_activityShortDur = 0x7f0c0001;
         public static final int bottom_bar_background_alpha = 0x7f0c000f;
@@ -1481,7 +1481,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class interpolator {
+    public static final class interpolator {
         public static final int btn_checkbox_checked_mtrl_animation_interpolator_0 = 0x7f0d0000;
         public static final int btn_checkbox_checked_mtrl_animation_interpolator_1 = 0x7f0d0001;
         public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_0 = 0x7f0d0002;
@@ -1500,7 +1500,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class layout {
+    public static final class layout {
         public static final int abc_action_bar_title_item = 0x7f0e0000;
         public static final int abc_action_bar_up_container = 0x7f0e0001;
         public static final int abc_action_menu_item_layout = 0x7f0e0002;
@@ -1605,7 +1605,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class menu {
+    public static final class menu {
         public static final int burst_editor_toolbar_menu = 0x7f100000;
         public static final int example_menu = 0x7f100001;
         public static final int example_menu2 = 0x7f100002;
@@ -1613,7 +1613,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class plurals {
+    public static final class plurals {
         public static final int burst_overlay = 0x7f120000;
         public static final int social_apps_selected = 0x7f120005;
         public static final int social_share_info = 0x7f120006;
@@ -1621,7 +1621,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class raw {
+    public static final class raw {
         public static final int animating_frame_list_view_shader = 0x7f130000;
 
         /* renamed from: backdropper */
@@ -1634,7 +1634,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class string {
+    public static final class string {
         public static final int abc_action_bar_home_description = 0x7f140003;
         public static final int abc_action_bar_up_description = 0x7f140004;
         public static final int abc_action_menu_overflow_description = 0x7f140005;
@@ -2136,7 +2136,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class style {
+    public static final class style {
         public static final int AlertDialogBodyText_BigTitle_Centered = 0x7f150002;
         public static final int AlertDialogTitlePanel_BigTitle_Centered = 0x7f150004;
         public static final int AlertDialogTitleText_BigTitle_Centered = 0x7f150005;
@@ -2754,7 +2754,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class styleable {
+    public static final class styleable {
         public static final int ActionBarLayout_android_layout_gravity = 0x00000000;
         public static final int ActionBar_background = 0x00000000;
         public static final int ActionBar_backgroundSplit = 0x00000001;
@@ -3263,7 +3263,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class xml {
+    public static final class xml {
         public static final int camera_material_preferences = 0x7f170000;
         public static final int camera_preferences = 0x7f170001;
     }

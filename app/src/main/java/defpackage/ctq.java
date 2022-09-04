@@ -105,7 +105,7 @@ final class ctq implements jem {
             jlzVar.f(new Runnable() { // from class: cto
                 @Override // java.lang.Runnable
                 public final void run() {
-                    cts ctsVar4 = cts.this;
+                    cts ctsVar4 = ctsVar3;
                     ctsVar4.a.set(b, true);
                 }
             }, ctsVar3.g);

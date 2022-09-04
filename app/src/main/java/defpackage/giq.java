@@ -41,7 +41,7 @@ public final class giq extends mip {
                     pollFirstEntry.getClass();
                     ((Runnable) pollFirstEntry.getValue()).run();
                 }
-                for (gip gipVar : this.h) {
+                for (gip gipVar : (Set<gip>) this.h) {
                     long j2 = this.c;
                     long j3 = gipVar.a;
                     long j4 = gipVar.b;

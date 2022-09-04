@@ -19,7 +19,7 @@ public final class dkz {
         final lcw lcwVar = new lcw(new ojz() { // from class: jcn
             @Override // defpackage.ojz
             public final Object a() {
-                pht phtVar = pht.this;
+                pht phtVar = a;
                 if (phtVar.isDone()) {
                     try {
                         return (Boolean) phtVar.get();
@@ -33,7 +33,7 @@ public final class dkz {
         a.d(new Runnable() { // from class: jck
             @Override // java.lang.Runnable
             public final void run() {
-                lcw.this.c();
+                lcwVar.c();
             }
         }, jcwVar.c);
         this.b = lcwVar;

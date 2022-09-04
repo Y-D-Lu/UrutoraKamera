@@ -4,6 +4,7 @@ import com.hdrindicator.DisplayHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -78,7 +79,7 @@ public final class fuy implements dvq, fuw {
             ojc.i(fuz.MAX_LENGTH);
             return ojc.i(fuz.MAX_LENGTH);
         }
-        for (fvh fvhVar : this.f) {
+        for (fvh fvhVar : (Set<fvh>) this.f) {
             if (fvhVar.b(hjzVar, hjzVar2)) {
                 ojc.i(fvhVar.a());
                 return ojc.i(fvhVar.a());
@@ -121,7 +122,7 @@ public final class fuy implements dvq, fuw {
             return false;
         }
         float f = DisplayHelper.DENSITY;
-        for (hjz hjzVar : this.j) {
+        for (hjz hjzVar : (Set<hjz>) this.j) {
             hkn c2 = ((hko) ((ojj) this.i).a).c(hjzVar.b);
             float f2 = c2 == null ? DisplayHelper.DENSITY : c2.b;
             if (f2 > f) {
@@ -158,7 +159,7 @@ public final class fuy implements dvq, fuw {
         }
         int i2 = 0;
         int i3 = 0;
-        for (hjz hjzVar2 : this.j) {
+        for (hjz hjzVar2 : (Set<hjz>) this.j) {
             float f4 = hjzVar2.o;
             if (f4 > 0.1f) {
                 f4 /= f2;
@@ -207,7 +208,7 @@ public final class fuy implements dvq, fuw {
                     if (j3 < j4 - 1500000000) {
                         this.k = ojc.i(fuz.MAX_LENGTH);
                     } else {
-                        for (fvh fvhVar : this.f) {
+                        for (fvh fvhVar : (Set<fvh>) this.f) {
                             if (fvhVar.b(hjzVar, hjzVar2)) {
                                 this.k = ojc.i(fvhVar.a());
                             }

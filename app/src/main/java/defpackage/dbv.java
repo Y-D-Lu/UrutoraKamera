@@ -63,12 +63,8 @@ public final class dbv extends iam {
             }
         };
         a2.d(6000L);
-        a2.h = new Runnable(this) { // from class: dbs
-            public final /* synthetic */ dbv a;
-
-            {
-                this.a = this;
-            }
+        a2.h = new Runnable() { // from class: dbs
+            public final /* synthetic */ dbv a = dbv.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -95,12 +91,8 @@ public final class dbv extends iam {
                 }
             }
         };
-        a2.d = new Runnable(this) { // from class: dbs
-            public final /* synthetic */ dbv a;
-
-            {
-                this.a = this;
-            }
+        a2.d = new Runnable() { // from class: dbs
+            public final /* synthetic */ dbv a = dbv.this;
 
             @Override // java.lang.Runnable
             public final void run() {

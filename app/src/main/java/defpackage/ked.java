@@ -55,7 +55,7 @@ public final class ked extends kdu {
             keyVar.z(1, a);
             C();
             return true;
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             q("Failed to send hits to AnalyticsService");
             return false;
         }

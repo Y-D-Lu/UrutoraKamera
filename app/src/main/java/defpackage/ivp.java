@@ -120,7 +120,7 @@ public final class ivp implements ivj {
             ((hnx) this.f.get()).f();
             return;
         }
-        for (ivi iviVar : this.b) {
+        for (ivi iviVar : (List<ivi>) this.b) {
             iviVar.a();
         }
     }
@@ -170,7 +170,7 @@ public final class ivp implements ivj {
                 ivp ivpVar = ivp.this;
                 Supplier supplier2 = supplier;
                 if (ivpVar.c.decrementAndGet() <= 0) {
-                    ivt ivtVar = (ivt) supplier2.mo291get();
+                    ivt ivtVar = (ivt) supplier2.get();
                     ivpVar.d.incrementAndGet();
                     return ivtVar;
                 }

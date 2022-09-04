@@ -84,7 +84,7 @@ public class AppBarLayout extends LinearLayout implements aad {
     private int[] q;
 
     /* loaded from: classes.dex */
-    public class BaseBehavior extends nxc {
+    public static class BaseBehavior extends nxc {
         public int a;
         public ohh b;
         private int d;
@@ -626,7 +626,7 @@ public class AppBarLayout extends LinearLayout implements aad {
     }
 
     /* loaded from: classes2.dex */
-    public class ScrollingViewBehavior extends nxd {
+    public static class ScrollingViewBehavior extends nxd {
         public ScrollingViewBehavior() {
         }
 
@@ -1021,36 +1021,36 @@ public class AppBarLayout extends LinearLayout implements aad {
         return max;
     }
 
-    @Override // android.widget.LinearLayout, android.view.ViewGroup
+//    @Override // android.widget.LinearLayout, android.view.ViewGroup
     /* renamed from: g */
     public final nwv mo52generateLayoutParams(AttributeSet attributeSet) {
         return new nwv(getContext(), attributeSet);
     }
 
     @Override // android.widget.LinearLayout, android.view.ViewGroup
-    protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateDefaultLayoutParams() {
+    protected final /* bridge */ /* synthetic */ LayoutParams generateDefaultLayoutParams() {
         return m();
     }
 
-    @Override // android.widget.LinearLayout, android.view.ViewGroup
+//    @Override // android.widget.LinearLayout, android.view.ViewGroup
     /* renamed from: generateDefaultLayoutParams  reason: collision with other method in class */
     protected final /* bridge */ /* synthetic */ LinearLayout.LayoutParams mo51generateDefaultLayoutParams() {
         return m();
     }
 
     @Override // android.widget.LinearLayout, android.view.ViewGroup
-    protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
+    protected final /* bridge */ /* synthetic */ LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         return n(layoutParams);
     }
 
-    @Override // android.widget.LinearLayout, android.view.ViewGroup
+//    @Override // android.widget.LinearLayout, android.view.ViewGroup
     /* renamed from: generateLayoutParams  reason: collision with other method in class */
     protected final /* bridge */ /* synthetic */ LinearLayout.LayoutParams mo53generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         return n(layoutParams);
     }
 
     final void h(int i) {
-        int height;
+        int height = 0;
         this.h = i;
         if (!willNotDraw()) {
             gl.z(this);

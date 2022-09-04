@@ -59,7 +59,7 @@ public final class jhm {
             layerDrawable2.setDrawableByLayerId(R.id.notification_dot_foreground, this.b.getDrawable(R.drawable.notification_dot_foreground_legacy));
             layerDrawable = layerDrawable2;
         } else {
-            layerDrawable = drawable;
+            layerDrawable = (LayerDrawable) drawable;
         }
         int intrinsicWidth = this.a.getResources().getConfiguration().getLayoutDirection() == 1 ? 0 : layerDrawable.getIntrinsicWidth() / 2;
         this.a.setForeground(new InsetDrawable(layerDrawable, ((rect.width() - layerDrawable.getIntrinsicWidth()) - this.e.right) + intrinsicWidth, this.e.top, this.e.right - intrinsicWidth, (rect.height() - layerDrawable.getIntrinsicHeight()) - this.e.top));

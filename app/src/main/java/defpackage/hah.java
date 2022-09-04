@@ -145,7 +145,7 @@ public final class hah implements pys {
                     ((lap) qkgVar2.mo37get()).c(b.a(new lij() { // from class: hcd
                         @Override // defpackage.lij
                         public final void fB(Object obj2) {
-                            ljk.this.c(((Integer) obj2).intValue());
+                            b2.c(((Integer) obj2).intValue());
                         }
                     }, pgr.a));
                     arrayList.add(new hce(b, (k ? 1 : 0) + 1 + (k2 ? 1 : 0) + 1));

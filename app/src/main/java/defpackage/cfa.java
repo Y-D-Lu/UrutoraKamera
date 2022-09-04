@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Set;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: cfa  reason: default package */
 /* loaded from: classes.dex */
@@ -18,7 +20,7 @@ public final class cfa extends jlj {
             ddfVar.d();
             return;
         }
-        for (chy chyVar : this.a.f) {
+        for (chy chyVar : (Set<chy>) this.a.f) {
             chyVar.j(false);
         }
         if (!this.a.m.k(ddl.aw)) {
@@ -30,7 +32,7 @@ public final class cfa extends jlj {
     @Override // defpackage.jlj, defpackage.jli
     public final void onShutterButtonDown() {
         if (!this.a.i.a()) {
-            for (chy chyVar : this.a.f) {
+            for (chy chyVar : (Set<chy>) this.a.f) {
                 chyVar.j(false);
             }
         }

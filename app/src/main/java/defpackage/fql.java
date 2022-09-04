@@ -61,7 +61,7 @@ public final class fql implements fqi {
     }
 
     private final void g(long j) {
-        for (fqh fqhVar : this.h) {
+        for (fqh fqhVar : (Set<fqh>) this.h) {
             fqhVar.a(j);
         }
     }
@@ -124,7 +124,7 @@ public final class fql implements fqi {
                 arrayList.add(mou.a(Arrays.copyOfRange(fArr, i * 9, i2 * 9)));
                 i = i2;
             }
-            for (fqh fqhVar : this.h) {
+            for (fqh fqhVar : (Set<fqh>) this.h) {
                 fqhVar.b(longValue, arrayList);
             }
             this.v++;
@@ -221,7 +221,7 @@ public final class fql implements fqi {
     @Override // defpackage.fqi
     public final synchronized void e() {
         eni eniVar;
-        eni eniVar2;
+        eni eniVar2 = null;
         synchronized (this.c) {
             lzi lziVar = this.o;
             if (lziVar.b()) {
@@ -290,7 +290,7 @@ public final class fql implements fqi {
                 h(a2);
             }
         }
-        for (Long l : this.n.values()) {
+        for (Long l : (Set<Long>) this.n.values()) {
             g(l.longValue());
         }
         this.n.clear();

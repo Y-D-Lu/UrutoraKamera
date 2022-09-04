@@ -289,7 +289,7 @@ public final class gvl implements pys {
                 return (((Integer) ddfVar.a(ddm.c).e(0)).intValue() <= 0 || mo37get4.k() != lwd.BACK) ? fob.c : new ojz() { // from class: gwc
                     @Override // defpackage.ojz
                     public final Object a() {
-                        lco lcoVar = lco.this;
+                        lco lcoVar = a2;
                         ddf ddfVar2 = ddfVar;
                         eam eamVar2 = eamVar;
                         jrl jrlVar = mo37get3;
@@ -338,13 +338,13 @@ public final class gvl implements pys {
 
                     @Override // defpackage.bvv
                     public final pht fz() {
-                        pht phtVar = pht.this;
+                        pht phtVar = mo37get5;
                         final ojc ojcVar5 = a3;
                         final ojc ojcVar6 = ojcVar4;
                         return pfj.i(pgb.h(phtVar, new oiu() { // from class: hdd
                             @Override // defpackage.oiu
                             public final Object a(Object obj) {
-                                ojc ojcVar7 = ojc.this;
+                                ojc ojcVar7 = ojcVar5;
                                 ojc ojcVar8 = ojcVar6;
                                 jnj jnjVar = (jnj) obj;
                                 if (!jnjVar.a.isValid()) {
@@ -444,7 +444,7 @@ public final class gvl implements pys {
                 Object H = !((Boolean) this.d.mo37get()).booleanValue() ? orx.a : ope.H(new Runnable() { // from class: its
                     @Override // java.lang.Runnable
                     public final void run() {
-                        lap lapVar4 = lap.this;
+                        lap lapVar4 = lapVar3;
                         qkg qkgVar11 = qkgVar9;
                         qkg qkgVar12 = qkgVar7;
                         qkg qkgVar13 = qkgVar10;

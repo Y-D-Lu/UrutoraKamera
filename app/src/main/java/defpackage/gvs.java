@@ -13,8 +13,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-
-import java.util.Collection;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /* renamed from: gvs  reason: default package */
@@ -83,7 +82,7 @@ public final class gvs extends mip {
         HashMap hashMap = new HashMap();
         dwg a = this.b.a(longValue);
         if (a != null && !a.b.isEmpty()) {
-            for (dwf dwfVar : a.b) {
+            for (dwf dwfVar : (Set<dwf>) a.b) {
                 ojc ojcVar = dwfVar.c;
                 if (!ojcVar.g() || ((oom) ojcVar.c()).size() != 4) {
                     ojcVar = oih.a;

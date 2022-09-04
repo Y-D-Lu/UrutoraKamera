@@ -28,7 +28,7 @@ public final class eal extends ldl {
         if (!booleanValue) {
             return booleanValue3 ? Float.valueOf(-1.0f) : valueOf;
         }
-        dzc dzcVar = (dzc) this.a.c.mo291get();
+        dzc dzcVar = (dzc) this.a.c.get();
         float f = dzcVar.b;
         float f2 = dzcVar.c;
         return Float.valueOf(f2 >= f ? 1.0f : aao.e((f - floatValue) / Math.abs(f2 - f)));

@@ -24,7 +24,7 @@ public final class lqz {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final lqx a() {
+    public final lqx a() throws llv {
         pht c = this.b.c(1L);
         try {
             lxn lxnVar = (lxn) c.get();
@@ -41,11 +41,12 @@ public final class lqz {
             try {
                 ((lxn) plk.ad(c)).close();
             } catch (CancellationException e2) {
-            } catch (ExecutionException e3) {
+            } catch (Exception e3) {
             }
-            throw e;
+            e.printStackTrace();
         } catch (ExecutionException e4) {
             throw new llv(e4);
         }
+        return null;
     }
 }

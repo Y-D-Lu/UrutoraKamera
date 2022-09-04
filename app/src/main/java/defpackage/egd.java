@@ -35,7 +35,7 @@ public final class egd implements eco {
     public final jtl b = new jtl();
     public final poy g = pdn.f.m();
     public boolean d = false;
-    private boolean t = false;
+    boolean t = false;
     public int e = 1;
 
     public egd(ege egeVar, hsa hsaVar, goh gohVar, ojc ojcVar, UUID uuid, ojc ojcVar2) {

@@ -4,4 +4,8 @@ package defpackage;
 /* loaded from: classes.dex */
 public final /* synthetic */ class eua {
     public final /* synthetic */ eur a;
+
+    public eua(eur aVar) {
+        a = aVar;
+    }
 }

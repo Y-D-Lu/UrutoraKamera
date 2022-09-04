@@ -46,8 +46,8 @@ public final class ehw implements ejy {
         this.a = ekeVar;
         this.j = mcuVar;
         this.e = new AtomicBoolean(false);
-        enumMap.put((EnumMap) ehv.WHITE, (ehv) Float.valueOf(25.0f));
-        enumMap.put((EnumMap) ehv.RED, (ehv) Float.valueOf(35.0f));
+        enumMap.put(ehv.WHITE, Float.valueOf(25.0f));
+        enumMap.put(ehv.RED, Float.valueOf(35.0f));
     }
 
     @Override // defpackage.ejy

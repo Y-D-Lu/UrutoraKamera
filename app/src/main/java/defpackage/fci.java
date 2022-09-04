@@ -7,8 +7,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
-
-import java.util.Collection;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
@@ -182,16 +180,16 @@ public final class fci implements pys {
 
             @Override // defpackage.bvv
             public final pht fz() {
-                final qkg qkgVar3 = qkg.this;
+                final qkg qkgVar3 = qkgVar2;
                 final qkg qkgVar4 = qkgVar;
                 final Executor executor3 = executor2;
                 return plk.aa(new pgj() { // from class: gne
                     @Override // defpackage.pgj
                     public final pht a() {
-                        qkg qkgVar5 = qkg.this;
+                        qkg qkgVar5 = qkgVar3;
                         qkg qkgVar6 = qkgVar4;
                         final Executor executor4 = executor3;
-                        Stream concat = Stream.CC.concat((((Set) ((pyt) qkgVar5).a).stream()), (((pyw) qkgVar6).mo37get().stream()).map(cgw.o));
+                        Stream concat = Stream.concat((((Set) ((pyt) qkgVar5).a).stream()), (((pyw) qkgVar6).mo37get().stream()).map(cgw.o));
                         executor4.getClass();
                         concat.forEach(new Consumer() { // from class: gnh
                             @Override // java.util.function.Consumer
@@ -318,7 +316,7 @@ public final class fci implements pys {
                 Object H = ((ddf) this.a.mo37get()).k(ddr.s) ? ope.H(new iho() { // from class: fta
                     @Override // java.lang.Runnable
                     public final void run() {
-                        qkg qkgVar3 = qkg.this;
+                        qkg qkgVar3 = qkgVar2;
                         final hrx hrxVar2 = hrxVar;
                         bqg bqgVar = mo37get5;
                         final fnc fncVar = (fnc) qkgVar3.mo37get();
@@ -330,7 +328,7 @@ public final class fci implements pys {
                         bqgVar.i().c(new lie() { // from class: ftb
                             @Override // defpackage.lie, java.lang.AutoCloseable
                             public final void close() {
-                                hrx hrxVar3 = hrx.this;
+                                hrx hrxVar3 = hrxVar2;
                                 fnc fncVar2 = fncVar;
                                 hrxVar3.i(fncVar2);
                                 if (fncVar2.c.g()) {
@@ -366,7 +364,7 @@ public final class fci implements pys {
                 b.c = new dqv() { // from class: fts
                     @Override // defpackage.dqv
                     public final boolean e() {
-                        return ((dqz) dqv.this).a;
+                        return ((dqz) a2).a;
                     }
                 };
                 b.c((ftr) mo37get7);

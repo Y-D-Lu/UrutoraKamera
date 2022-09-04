@@ -89,7 +89,7 @@ public final class edn implements pys {
                 return new heu() { // from class: eef
                     @Override // defpackage.heu
                     public final boolean a(lmr lmrVar) {
-                        return hcg.this.a(lmrVar).b() != null;
+                        return hcgVar.a(lmrVar).b() != null;
                     }
                 };
             case 6:

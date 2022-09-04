@@ -1,8 +1,6 @@
 package defpackage;
 
 import java.util.concurrent.Executor;
-
-import java.util.Collection;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
@@ -120,7 +118,7 @@ public final class cbh implements pys {
 
                     @Override // defpackage.bvv
                     public final pht fz() {
-                        lap.this.c(new fsv(((ftz) qkgVar.mo37get()).a(), 1));
+                        lapVar.c(new fsv(((ftz) qkgVar.mo37get()).a(), 1));
                         return plk.V(true);
                     }
                 };
@@ -135,7 +133,7 @@ public final class cbh implements pys {
 
                     @Override // defpackage.bvv
                     public final pht fz() {
-                        ckd ckdVar = ckd.this;
+                        ckd ckdVar = mo37get2;
                         qkg qkgVar3 = qkgVar2;
                         if (ckdVar.C) {
                             final csq csqVar = (csq) qkgVar3.mo37get();
@@ -187,7 +185,7 @@ public final class cbh implements pys {
                 return new jqn() { // from class: cwp
                     @Override // defpackage.jqn
                     public final void a() {
-                        qkg qkgVar5 = qkg.this;
+                        qkg qkgVar5 = qkgVar4;
                         qkg qkgVar6 = qkgVar3;
                         Stream stream = (((pyw) qkgVar5).mo37get().stream());
                         final cvo cvoVar = (cvo) qkgVar6.mo37get();
@@ -195,7 +193,7 @@ public final class cbh implements pys {
                         stream.forEach(new Consumer() { // from class: cwq
                             @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
-                                cvo.this.c.add((cwh) obj);
+                                cvoVar.c.add((cwh) obj);
                             }
 
                             @Override // java.util.function.Consumer

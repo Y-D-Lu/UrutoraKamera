@@ -13,13 +13,12 @@ import android.util.AttributeSet;
 import com.hdrindicator.DisplayHelper;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 import defpackage.djx;
 import defpackage.dka;
 import defpackage.ohz;
 import defpackage.oom;
-import java.util.Collection;
-import java.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class DebugCanvasView extends dka {
@@ -127,16 +126,12 @@ public class DebugCanvasView extends dka {
         if (!d()) {
             return;
         }
-        (this.k.stream()).forEach(new Consumer(this) { // from class: djw
-            public final /* synthetic */ DebugCanvasView a;
-
-            {
-                this.a = this;
-            }
+        (this.k.stream()).forEach(new Consumer() { // from class: djw
+            public final /* synthetic */ DebugCanvasView a = DebugCanvasView.this;
 
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
-                switch (r3) {
+                switch (-1) {
                     case 0:
                         DebugCanvasView debugCanvasView = this.a;
                         Canvas canvas2 = canvas;
@@ -174,25 +169,21 @@ public class DebugCanvasView extends dka {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                switch (r3) {
+                switch (-1) {
                     case 0:
-                        return consumer.getClass();
+                        return consumer;
                     default:
-                        return consumer.getClass();
+                        return consumer;
                 }
             }
         });
         if (!this.l.isEmpty()) {
-            (this.l.stream()).forEach(new Consumer(this) { // from class: djw
-                public final /* synthetic */ DebugCanvasView a;
-
-                {
-                    this.a = this;
-                }
+            (this.l.stream()).forEach(new Consumer() { // from class: djw
+                public final /* synthetic */ DebugCanvasView a = DebugCanvasView.this;
 
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
                             DebugCanvasView debugCanvasView = this.a;
                             Canvas canvas2 = canvas;
@@ -230,11 +221,11 @@ public class DebugCanvasView extends dka {
 
                 @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                    switch (r3) {
+                    switch (-1) {
                         case 0:
-                            return consumer.getClass();
+                            return consumer;
                         default:
-                            return consumer.getClass();
+                            return consumer;
                     }
                 }
             });

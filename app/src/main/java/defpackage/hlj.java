@@ -87,7 +87,7 @@ public final class hlj implements pys {
                 return ojcVar.g() ? ojc.i(new ojz() { // from class: nca
                     @Override // defpackage.ojz
                     public final Object a() {
-                        return (SharedPreferences) ojc.this.c();
+                        return (SharedPreferences) ojcVar.c();
                     }
                 }) : oih.a;
         }

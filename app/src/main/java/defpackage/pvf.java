@@ -21,7 +21,7 @@ public final class pvf {
         }
         StringBuilder sb = new StringBuilder();
         boolean z = true;
-        for (String str2 : (Set<String>) (List) this.a.get(str.toLowerCase(Locale.US))) {
+        for (String str2 : (List<String>) this.a.get(str.toLowerCase(Locale.US))) {
             if (str2 != null) {
                 if (!z) {
                     sb.append(",");

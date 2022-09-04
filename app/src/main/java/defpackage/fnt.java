@@ -2,8 +2,6 @@ package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
 
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -74,7 +72,7 @@ public final class fnt implements imr {
     /* JADX WARN: Type inference failed for: r0v29, types: [ojc] */
     public final fns a(hsa hsaVar, boolean z) {
         oih oihVar;
-        long j;
+        long j = 0;
         if (hsaVar.i() != hsr.LONG_SHOT || !z || this.g.get() || this.m.k() != lwd.BACK) {
             return new fns(oih.a, bug.m, this.d, this.j, this.h, this.k, this.l);
         }
@@ -95,11 +93,11 @@ public final class fnt implements imr {
                 ((lrs) a).e = 2;
                 j = ((lmw) c2.b(((lrs) a).d()).get()).b;
                 this.k.set(true);
-            } catch (InterruptedException | CancellationException | ExecutionException | llv e) {
+            } catch (Exception e) {
                 ((oug) ((oug) ((oug) c.b()).h(e)).G((char) 1780)).o("Couldn't set the torch state for Long Shot");
             }
             if (j != -1) {
-                oihVar = ojc.i(Long.valueOf(j + TimeUnit.MILLISECONDS.toNanos(250L)));
+                oihVar = (oih) ojc.i(Long.valueOf(j + TimeUnit.MILLISECONDS.toNanos(250L)));
                 this.e.f();
                 return new fns(oihVar, c2, this.d, this.j, this.h, this.k, this.l);
             }
@@ -107,7 +105,7 @@ public final class fnt implements imr {
             oihVar = oihVar2;
             this.e.f();
             return new fns(oihVar, c2, this.d, this.j, this.h, this.k, this.l);
-        } catch (InterruptedException | llv e2) {
+        } catch (Exception e2) {
             return new fns(oih.a, bug.n, this.d, this.j, this.h, this.k, this.l);
         }
     }

@@ -42,7 +42,7 @@ public final class els implements elw, kaq, jel, jrt, fik, fib, fig, fie {
                 this.b.execute(new Runnable() { // from class: eln
                     @Override // java.lang.Runnable
                     public final void run() {
-                        elv.this.g();
+                        elvVar.g();
                     }
                 });
                 if (this.j.l()) {
@@ -124,12 +124,8 @@ public final class els implements elw, kaq, jel, jrt, fik, fib, fig, fie {
                         }
                     }
                 }
-                return new lie(this) { // from class: elo
-                    public final /* synthetic */ els a;
-
-                    {
-                        this.a = this;
-                    }
+                return new lie() { // from class: elo
+                    public final /* synthetic */ els a = els.this;
 
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
@@ -159,12 +155,8 @@ public final class els implements elw, kaq, jel, jrt, fik, fib, fig, fie {
                         }
                     }
                 }
-                return new lie(this) { // from class: elo
-                    public final /* synthetic */ els a;
-
-                    {
-                        this.a = this;
-                    }
+                return new lie() { // from class: elo
+                    public final /* synthetic */ els a = els.this;
 
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {

@@ -7,5 +7,5 @@ public interface goy {
 
     lco b();
 
-    void c(gox goxVar, gog gogVar);
+    void c(gox goxVar, gog gogVar) throws InterruptedException;
 }

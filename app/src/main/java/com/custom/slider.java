@@ -42,7 +42,7 @@ public class slider {
     }
 
     private static long ISO_100() {
-        return ((float) Shutter_AE) * (ISO_AE / 100);
+        return (long) (((float) Shutter_AE) * (ISO_AE / 100));
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -114,12 +114,12 @@ public class slider {
             case 1:
             case 2:
             case 3:
-                return 500.0f / (CROP_1_255 * f);
+                return (long) (500.0f / (CROP_1_255 * f));
             case 4:
             case 5:
             case 6:
             case 7:
-                return 500.0f / (CROP_1_255 * f);
+                return (long) (500.0f / (CROP_1_255 * f));
             default:
                 return 19000000000L;
         }

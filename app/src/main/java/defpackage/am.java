@@ -63,6 +63,9 @@ public final class am {
                     str2 = i2 < 5 ? str3 + ", " : str3 + "] ";
                     i2++;
                 }
+                if (false) {
+                    break;
+                }
             }
             sb.append(str2);
             str = sb.toString();

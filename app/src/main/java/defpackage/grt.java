@@ -37,7 +37,7 @@ public final class grt extends mip {
             d = -1.0d;
         }
         this.b = longValue;
-        for (grs grsVar : this.a) {
+        for (grs grsVar : (Set<grs>) this.a) {
             grsVar.a(lzvVar, d2, d);
         }
     }

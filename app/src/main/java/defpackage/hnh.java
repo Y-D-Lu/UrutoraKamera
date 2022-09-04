@@ -34,7 +34,7 @@ public class hnh extends hnd {
             hmyVar.u(mip.ew(new Consumer() { // from class: hms
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    hmy hmyVar2 = hmy.this;
+                    hmy hmyVar2 = hmyVar;
                     Animator animator = (Animator) obj;
                     hmyVar2.h.setVisibility(0);
                     hmyVar2.i.setVisibility(0);

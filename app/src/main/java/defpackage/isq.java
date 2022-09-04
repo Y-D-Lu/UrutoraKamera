@@ -115,7 +115,7 @@ public final class isq implements isl, fik, fii, fij, fgm {
                             textView.setOnClickListener(new View.OnClickListener() { // from class: isy
                                 @Override // android.view.View.OnClickListener
                                 public final void onClick(View view) {
-                                    btt.this.q();
+                                    bttVar.q();
                                 }
                             });
                             if (!k) {
@@ -216,7 +216,7 @@ public final class isq implements isl, fik, fii, fij, fgm {
                 ((Button) frameLayout.findViewById(org.codeaurora.snapcam.R.id.got_it_button)).setOnClickListener(new View.OnClickListener() { // from class: isu
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
-                        isv.this.a();
+                        isvVar.a();
                     }
                 });
                 EduImageView eduImageView = (EduImageView) frameLayout.findViewById(org.codeaurora.snapcam.R.id.bottom_sheet_video);

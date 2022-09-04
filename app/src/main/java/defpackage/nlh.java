@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 /* renamed from: nlh  reason: default package */
@@ -30,7 +31,7 @@ public final class nlh {
             final HashMap hashMap = new HashMap();
             ArrayList arrayList = new ArrayList(pnhVar.c.size());
             int i = 0;
-            for (pnf pnfVar : pnhVar.c) {
+            for (pnf pnfVar : (Set<pnf>) pnhVar.c) {
                 if ((pnfVar.a & 8192) != 0 && !hashMap.containsKey(Integer.valueOf(pnfVar.e))) {
                     hashMap.put(Integer.valueOf(pnfVar.e), Integer.valueOf(i));
                     i++;

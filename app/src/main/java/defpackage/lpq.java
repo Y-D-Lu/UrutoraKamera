@@ -70,7 +70,7 @@ public final class lpq implements lie {
                 }
                 b3.h = Boolean.valueOf(z);
                 c(b3.d());
-                throw th;
+                th.printStackTrace();
             }
         }
     }

@@ -61,21 +61,21 @@ public final /* synthetic */ class imd implements oiu {
             case 5:
                 return ((qyp) obj).d();
             case 6:
-                for (Boolean bool : (List) obj) {
+                for (Boolean bool : (List<Boolean>) obj) {
                     if (bool.booleanValue()) {
                         return true;
                     }
                 }
                 return false;
             case 7:
-                for (Boolean bool2 : (List) obj) {
+                for (Boolean bool2 : (List<Boolean>) obj) {
                     if (!bool2.booleanValue()) {
                         return false;
                     }
                 }
                 return true;
             case 8:
-                List<Comparable> list2 = (List) obj;
+                List<Comparable> list2 = (List<Comparable>) obj;
                 Comparable comparable = (Comparable) list2.get(0);
                 for (Comparable comparable2 : list2) {
                     if (comparable.compareTo(comparable2) > 0) {

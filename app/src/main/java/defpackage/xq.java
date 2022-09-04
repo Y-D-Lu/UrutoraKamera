@@ -28,15 +28,11 @@ public abstract class xq implements pht {
         xh xoVar;
         try {
             xoVar = new xm(AtomicReferenceFieldUpdater.newUpdater(xp.class, Thread.class, "thread"), AtomicReferenceFieldUpdater.newUpdater(xp.class, xp.class, "next"), AtomicReferenceFieldUpdater.newUpdater(xq.class, xp.class, "waiters"), AtomicReferenceFieldUpdater.newUpdater(xq.class, xl.class, "listeners"), AtomicReferenceFieldUpdater.newUpdater(xq.class, Object.class, "value"));
-            th = null;
         } catch (Throwable th) {
-            th = th;
             xoVar = new xo();
-        }
-        b = xoVar;
-        if (th != null) {
             c.log(Level.SEVERE, "SafeAtomicHelper is broken!", th);
         }
+        b = xoVar;
         d = new Object();
     }
 
@@ -65,7 +61,7 @@ public abstract class xq implements pht {
                 return new xi(false, e);
             }
             return new xk(new IllegalArgumentException("get() threw CancellationException, despite reporting isCancelled() == false: " + phtVar, e));
-        } catch (ExecutionException e2) {
+        } catch (Exception e2) {
             return new xk(e2.getCause());
         } catch (Throwable th2) {
             return new xk(th2);
@@ -85,7 +81,7 @@ public abstract class xq implements pht {
                 if (z) {
                     Thread.currentThread().interrupt();
                 }
-                throw th;
+                th.printStackTrace();
             }
         }
         if (z) {
@@ -169,7 +165,7 @@ public abstract class xq implements pht {
             sb.append("UNKNOWN, cause=[");
             sb.append(e2.getClass());
             sb.append(" thrown from get()]");
-        } catch (ExecutionException e3) {
+        } catch (Exception e3) {
             sb.append("FAILURE, cause=[");
             sb.append(e3.getCause());
             sb.append("]");
@@ -212,7 +208,7 @@ public abstract class xq implements pht {
         }
     }
 
-    private static final Object l(Object obj) {
+    private static final Object l(Object obj) throws ExecutionException {
         if (obj instanceof xi) {
             Throwable th = ((xi) obj).d;
             CancellationException cancellationException = new CancellationException("Task was cancelled.");
@@ -307,16 +303,24 @@ public abstract class xq implements pht {
     }
 
     @Override // java.util.concurrent.Future
-    public final Object get() {
+    public final Object get() throws InterruptedException {
         Object obj;
         if (!Thread.interrupted()) {
             Object obj2 = this.value;
             if ((obj2 != null) && (!(obj2 instanceof xn))) {
-                return l(obj2);
+                try {
+                    return l(obj2);
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
             xp xpVar = this.waiters;
             if (xpVar == xp.a) {
-                return l(this.value);
+                try {
+                    return l(this.value);
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
             xp xpVar2 = new xp();
             do {
@@ -330,29 +334,45 @@ public abstract class xq implements pht {
                         }
                         obj = this.value;
                     } while (!((obj != null) & (!(obj instanceof xn))));
-                    return l(obj);
+                    try {
+                        return l(obj);
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    }
                 }
                 xpVar = this.waiters;
             } while (xpVar != xp.a);
-            return l(this.value);
+            try {
+                return l(this.value);
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
         throw new InterruptedException();
     }
 
     @Override // java.util.concurrent.Future
-    public final Object get(long j, TimeUnit timeUnit) {
+    public final Object get(long j, TimeUnit timeUnit) throws InterruptedException, TimeoutException {
         long nanos = timeUnit.toNanos(j);
         if (!Thread.interrupted()) {
             Object obj = this.value;
             boolean z = true;
             if ((obj != null) && (!(obj instanceof xn))) {
-                return l(obj);
+                try {
+                    return l(obj);
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
             long nanoTime = nanos > 0 ? System.nanoTime() + nanos : 0L;
             if (nanos >= 1000) {
                 xp xpVar = this.waiters;
                 if (xpVar == xp.a) {
-                    return l(this.value);
+                    try {
+                        return l(this.value);
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    }
                 }
                 xp xpVar2 = new xp();
                 do {
@@ -366,7 +386,11 @@ public abstract class xq implements pht {
                             }
                             Object obj2 = this.value;
                             if ((obj2 != null) && (!(obj2 instanceof xn))) {
-                                return l(obj2);
+                                try {
+                                    return l(obj2);
+                                } catch (ExecutionException e) {
+                                    e.printStackTrace();
+                                }
                             }
                             nanos = nanoTime - System.nanoTime();
                         } while (nanos >= 1000);
@@ -375,12 +399,20 @@ public abstract class xq implements pht {
                         xpVar = this.waiters;
                     }
                 } while (xpVar != xp.a);
-                return l(this.value);
+                try {
+                    return l(this.value);
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
             while (nanos > 0) {
                 Object obj3 = this.value;
                 if ((obj3 != null) && (!(obj3 instanceof xn))) {
-                    return l(obj3);
+                    try {
+                        return l(obj3);
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    }
                 }
                 if (Thread.interrupted()) {
                     throw new InterruptedException();

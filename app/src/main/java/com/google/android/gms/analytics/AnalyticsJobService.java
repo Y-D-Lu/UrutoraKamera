@@ -61,7 +61,7 @@ public final class AnalyticsJobService extends JobService implements kfk {
             c.c(new Runnable() { // from class: kfi
                 @Override // java.lang.Runnable
                 public final void run() {
-                    kfl kflVar = kfl.this;
+                    kfl kflVar = c;
                     kfa kfaVar = d;
                     JobParameters jobParameters2 = jobParameters;
                     kfaVar.q("AnalyticsJobService processed last dispatch request");

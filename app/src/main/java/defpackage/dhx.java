@@ -38,7 +38,7 @@ public final class dhx implements pys {
                 return new iho() { // from class: dhu
                     @Override // java.lang.Runnable
                     public final void run() {
-                        dib dibVar2 = dib.this;
+                        dib dibVar2 = dibVar;
                         Trace.beginSection("ShotTracker#checkForLostShots");
                         dibVar2.b();
                         Trace.endSection();

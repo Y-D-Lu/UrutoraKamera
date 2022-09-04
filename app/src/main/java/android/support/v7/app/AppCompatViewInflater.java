@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 
 import defpackage.mo;
 import defpackage.mq;
@@ -55,10 +56,25 @@ public class AppCompatViewInflater {
             } else {
                 str3 = str;
             }
-            constructor = Class.forName(str3, false, context.getClassLoader()).asSubclass(View.class).getConstructor(d);
+            try {
+                constructor = Class.forName(str3, false, context.getClassLoader()).asSubclass(View.class).getConstructor(d);
+            } catch (NoSuchMethodException ex) {
+                ex.printStackTrace();
+            } catch (ClassNotFoundException ex) {
+                ex.printStackTrace();
+            }
             xfVar.put(str, constructor);
         }
         constructor.setAccessible(true);
-        return (View) constructor.newInstance(this.c);
+        try {
+            return (View) constructor.newInstance(this.c);
+        } catch (IllegalAccessException ex) {
+            ex.printStackTrace();
+        } catch (InstantiationException ex) {
+            ex.printStackTrace();
+        } catch (InvocationTargetException ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 }

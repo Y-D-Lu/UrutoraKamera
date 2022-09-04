@@ -4,6 +4,7 @@ import android.media.MediaCodec;
 import android.media.MediaFormat;
 
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
@@ -142,12 +143,12 @@ public final class fsf implements frm, dvq {
             this.k.b(convert, new fvo() { // from class: fsd
                 @Override // defpackage.fvo
                 public final void a(Object obj) {
-                    ((fsb) obj).c.o(hjz.this);
+                    ((fsb) obj).c.o(hjzVar);
                 }
             });
         }
         long j = hjzVar.b;
-        for (fsa fsaVar : this.k.a.d()) {
+        for (fsa fsaVar :(Set<fsa>)  this.k.a.d()) {
             fsb fsbVar = fsaVar.a;
             if (j <= fsbVar.b) {
                 break;

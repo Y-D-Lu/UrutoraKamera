@@ -1,11 +1,9 @@
 package defpackage;
 
 import android.content.Context;
-import android.os.DeadObjectException;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.os.RemoteException;
 import android.util.Log;
 
 import com.google.android.gms.common.api.Status;
@@ -122,7 +120,7 @@ public final class kkc implements kik, kil {
         kjfVar.g(this.d, o());
         try {
             kjfVar.f(this);
-        } catch (DeadObjectException e) {
+        } catch (Exception e) {
             a(1);
             this.b.j("DeadObjectException thrown while running ApiCallRunner.");
         }
@@ -350,10 +348,9 @@ public final class kkc implements kik, kil {
             } else {
                 try {
                     klaVar.a.b(this.b, new kvm());
-                } catch (DeadObjectException e) {
+                } catch (Exception e) {
                     a(3);
                     this.b.j("DeadObjectException thrown while calling register listener method.");
-                } catch (RemoteException e2) {
                     it.remove();
                 }
             }

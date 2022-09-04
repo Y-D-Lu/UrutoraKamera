@@ -8,9 +8,9 @@ import com.custom.Astro;
 import com.custom.OneShot;
 
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
-
 import java.util.function.Supplier;
 
 /* renamed from: eam  reason: default package */
@@ -137,7 +137,7 @@ public final class eam {
                 this.h = true;
             }
             boolean z6 = false;
-            for (eak eakVar : this.k) {
+            for (eak eakVar : (Set<eak>) this.k) {
                 eakVar.b(this.h && !z4);
             }
             if (!z3) {
@@ -159,7 +159,7 @@ public final class eam {
             if (z4) {
                 this.i = this.h;
             }
-            for (eak eakVar2 : this.k) {
+            for (eak eakVar2 : (Set<eak>) this.k) {
                 eakVar2.a(this.h, z6, z5, !z4);
             }
         }
@@ -227,8 +227,8 @@ public final class eam {
     }
 
     public final synchronized void g(lzv lzvVar, boolean z, boolean z2, lwd lwdVar, boolean z3) {
-        boolean z4;
-        boolean z5;
+        boolean z4 = false;
+        boolean z5 = false;
         if (!this.r) {
             Long l = (Long) lzvVar.d(TotalCaptureResult.SENSOR_EXPOSURE_TIME);
             Integer num = (Integer) lzvVar.d(TotalCaptureResult.CONTROL_POST_RAW_SENSITIVITY_BOOST);
@@ -273,7 +273,7 @@ public final class eam {
     public final synchronized void l(boolean z) {
         this.g = z;
         if (!z) {
-            for (eak eakVar : this.k) {
+            for (eak eakVar : (Set<eak>) this.k) {
                 eakVar.c();
             }
         }
@@ -292,7 +292,7 @@ public final class eam {
     }
 
     public final synchronized void p() {
-        for (eak eakVar : this.k) {
+        for (eak eakVar : (Set<eak>) this.k) {
             eakVar.d();
         }
     }

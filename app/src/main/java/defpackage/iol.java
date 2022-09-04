@@ -163,16 +163,16 @@ public final class iol implements ldo {
                     oor oorVar;
                     oor o3;
                     oor oorVar2;
-                    iqm a;
+                    iqm a = null;
                     pef[] pefVarArr;
                     long j5;
                     long j6;
-                    iqm a2;
+                    iqm a2 = null;
                     pef[] pefVarArr2;
-                    iqm a3;
+                    iqm a3 = null;
                     iqp iqpVar;
-                    final iqp iqpVar2;
-                    ipf ipfVar2 = ipf.this;
+                    iqp iqpVar2;
+                    ipf ipfVar2 = ipfVar;
                     List list = arrayList;
                     iql iqlVar2 = iqlVar;
                     synchronized (ipfVar2.r) {
@@ -200,11 +200,12 @@ public final class iol implements ldo {
                             iqpVar2.c.close();
                             final cof cofVar = ipfVar2.f;
                             final long currentTimeMillis = System.currentTimeMillis();
+                            final iqp ipqVar2Final = iqpVar2;
                             cofVar.c.execute(new Runnable() { // from class: cod
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    cof cofVar2 = cof.this;
-                                    iqp iqpVar4 = iqpVar2;
+                                    cof cofVar2 = cofVar;
+                                    iqp iqpVar4 = ipqVar2Final;
                                     cofVar2.e(hsr.TIMELAPSE, iqpVar4.c.d(), iqpVar4.c.c(), currentTimeMillis, iqpVar4.g, "", iqpVar4.h, iqpVar4.i);
                                 }
                             });
@@ -224,7 +225,7 @@ public final class iol implements ldo {
                             String str = iqlVar2.b;
                         }
                         lwd lwdVar = ipfVar2.L;
-                        oih i2 = ipfVar2.s.g() ? ojc.i(((hcl) ipfVar2.s.c()).c()) : oih.a;
+                        oih i2 = ipfVar2.s.g() ? (oih) ojc.i(((hcl) ipfVar2.s.c()).c()) : oih.a;
                         synchronized (iqlVar2.a) {
                             pefVar = iqlVar2.h;
                         }
@@ -261,7 +262,6 @@ public final class iol implements ldo {
                                 }
                                 if (!iqlVar2.e.containsKey(a3)) {
                                     throw new IllegalArgumentException();
-                                    break;
                                 }
                                 hashMap.put(pefVar2, (Integer) iqlVar2.e.get(a3));
                                 i3++;
@@ -299,7 +299,6 @@ public final class iol implements ldo {
                                     j5 = j;
                                     j6 = j2;
                                     throw new IllegalArgumentException();
-                                    break;
                                 }
                                 j6 = j2;
                                 try {
@@ -342,7 +341,6 @@ public final class iol implements ldo {
                                 if (!iqlVar2.g.containsKey(a)) {
                                     oorVar2 = o2;
                                     throw new IllegalArgumentException();
-                                    break;
                                 }
                                 oorVar2 = o2;
                                 try {

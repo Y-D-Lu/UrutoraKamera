@@ -8,10 +8,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.StringJoiner;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
-
-import java.util.StringJoiner;
 
 /* renamed from: cde  reason: default package */
 /* loaded from: classes2.dex */
@@ -72,7 +72,7 @@ public final class cde implements cdf {
                 contentValues.put("media_id", Long.valueOf(j2));
                 contentValues.put("time", Long.valueOf(ccmVar.b.a()));
                 contentValues.put("value", bArr2);
-                for (String str3 : ((oor) map2).keySet()) {
+                for (String str3 : (Set<String>) ((oor) map2).keySet()) {
                     if (map2.get(str3) != null) {
                         contentValues.put(str3, (Integer) map2.get(str3));
                     }
@@ -148,7 +148,7 @@ public final class cde implements cdf {
         return plk.aa(new pgj() { // from class: cca
             @Override // defpackage.pgj
             public final pht a() {
-                ccn ccnVar2 = ccn.this;
+                ccn ccnVar2 = ccnVar;
                 List list2 = list;
                 SQLiteDatabase readableDatabase = ccnVar2.b.getReadableDatabase();
                 try {

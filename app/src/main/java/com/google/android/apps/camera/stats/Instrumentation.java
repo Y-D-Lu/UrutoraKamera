@@ -5,6 +5,7 @@ import com.google.android.apps.camera.stats.timing.TimingSession;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /* loaded from: classes.dex */
 public class Instrumentation {
@@ -34,7 +35,7 @@ public class Instrumentation {
     public final synchronized List b(Class cls) {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (WeakReference weakReference : this.b) {
+        for (WeakReference weakReference : (Set<WeakReference>) this.b) {
             TimingSession timingSession = (TimingSession) weakReference.get();
             if (timingSession != null && timingSession.getClass().equals(cls)) {
                 arrayList.add(timingSession);

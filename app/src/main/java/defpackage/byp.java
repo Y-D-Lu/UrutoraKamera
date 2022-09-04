@@ -157,12 +157,8 @@ public final class byp implements bys {
                 bypVar.b.fB(Boolean.valueOf(!((Boolean) ((lce) bypVar.b).d).booleanValue()));
             }
         });
-        final lie a = gqsVar.a(new lij(this) { // from class: byn
-            public final /* synthetic */ byp a;
-
-            {
-                this.a = this;
-            }
+        final lie a = gqsVar.a(new lij() { // from class: byn
+            public final /* synthetic */ byp a = byp.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -228,12 +224,8 @@ public final class byp implements bys {
                 }
             }
         }, this.u);
-        final lie a2 = this.g.a(new lij(this) { // from class: byo
-            public final /* synthetic */ byp a;
-
-            {
-                this.a = this;
-            }
+        final lie a2 = this.g.a(new lij() { // from class: byo
+            public final /* synthetic */ byp a = byp.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -265,12 +257,8 @@ public final class byp implements bys {
                 }
             }
         }, this.u);
-        final lie a3 = this.l.a().a(new lij(this) { // from class: byo
-            public final /* synthetic */ byp a;
-
-            {
-                this.a = this;
-            }
+        final lie a3 = this.l.a().a(new lij() { // from class: byo
+            public final /* synthetic */ byp a = byp.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -314,12 +302,8 @@ public final class byp implements bys {
                 return Boolean.valueOf(z);
             }
         });
-        final lie a4 = lcv.b(this.j, this.i).a(new lij(this) { // from class: byn
-            public final /* synthetic */ byp a;
-
-            {
-                this.a = this;
-            }
+        final lie a4 = lcv.b(this.j, this.i).a(new lij() { // from class: byn
+            public final /* synthetic */ byp a = byp.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -388,12 +372,8 @@ public final class byp implements bys {
         lda ldaVar = this.v;
         ldaVar.getClass();
         final lie a5 = j.a(new cjx(ldaVar, 1), this.u);
-        final lie a6 = this.a.b().a(new lij(this) { // from class: byn
-            public final /* synthetic */ byp a;
-
-            {
-                this.a = this;
-            }
+        final lie a6 = this.a.b().a(new lij() { // from class: byn
+            public final /* synthetic */ byp a = byp.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -459,12 +439,8 @@ public final class byp implements bys {
                 }
             }
         }, this.u);
-        final lie a7 = this.a.a().a(new lij(this) { // from class: byn
-            public final /* synthetic */ byp a;
-
-            {
-                this.a = this;
-            }
+        final lie a7 = this.a.a().a(new lij() { // from class: byn
+            public final /* synthetic */ byp a = byp.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -530,12 +506,8 @@ public final class byp implements bys {
                 }
             }
         }, this.u);
-        final lie a8 = this.h.a(new lij(this) { // from class: byn
-            public final /* synthetic */ byp a;
-
-            {
-                this.a = this;
-            }
+        final lie a8 = this.h.a(new lij() { // from class: byn
+            public final /* synthetic */ byp a = byp.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -601,12 +573,8 @@ public final class byp implements bys {
                 }
             }
         }, this.u);
-        final lie a9 = this.b.a(new lij(this) { // from class: byn
-            public final /* synthetic */ byp a;
-
-            {
-                this.a = this;
-            }
+        final lie a9 = this.b.a(new lij() { // from class: byn
+            public final /* synthetic */ byp a = byp.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -861,8 +829,18 @@ public final class byp implements bys {
         jlzVar.c = 300;
         jlzVar.d = 6000;
         jlzVar.b = false;
-        jlzVar.d(new Supplier() { // from class: byk
-            @Override // java.util.function.Supplier
+        jlzVar.d(new Supplier() {
+            @Override
+            public Object get() {
+                byp bypVar = byp.this;
+                boolean z = false;
+                if (((Boolean) ((lce) bypVar.c).d).booleanValue() && ((Boolean) bypVar.h.fA()).booleanValue()) {
+                    z = true;
+                }
+                return Boolean.valueOf(z);
+            } // from class: byk
+
+//            @Override // java.util.function.Supplier
             /* renamed from: get */
             public final Object mo291get() {
                 byp bypVar = byp.this;

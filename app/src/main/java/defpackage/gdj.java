@@ -97,7 +97,7 @@ public final class gdj implements ges, gfh, gfj {
 
     private final gdi u(gdf gdfVar, List list) {
         gdi gdiVar = new gdi();
-        for (gde gdeVar : this.e) {
+        for (gde gdeVar : (Set<gde>) this.e) {
             if (gdfVar.d.o(gdeVar.c())) {
                 if (gdeVar.d()) {
                     gdiVar.g++;
@@ -150,7 +150,7 @@ public final class gdj implements ges, gfh, gfj {
     }
 
     private final boolean x(gan ganVar) {
-        for (gde gdeVar : this.e) {
+        for (gde gdeVar : (Set<gde>) this.e) {
             if (gdeVar.e() && gdeVar.b().c == ganVar.c()) {
                 return true;
             }
@@ -217,7 +217,7 @@ public final class gdj implements ges, gfh, gfj {
     }
 
     public final void d(long j) {
-        for (hkn hknVar : this.A) {
+        for (hkn hknVar : (Set<hkn>) this.A) {
             if (hknVar.a == j) {
                 this.A.remove(hknVar);
                 return;
@@ -227,7 +227,7 @@ public final class gdj implements ges, gfh, gfj {
 
     public final void e() {
         String sb;
-        for (gde gdeVar : this.e) {
+        for (gde gdeVar : (Set<gde>) this.e) {
             if (gdeVar.e()) {
                 sb = Long.toString(gdeVar.b().c);
             } else {
@@ -254,7 +254,7 @@ public final class gdj implements ges, gfh, gfj {
             objArr[4] = sb;
             lisVar.g(String.format(locale, "   session; type: %s has_image: %s cancel: %s pending: %s timestamps: %s", objArr));
         }
-        for (gdf gdfVar : this.d) {
+        for (gdf gdfVar : (Set<gdf>) this.d) {
             lis lisVar2 = this.b;
             Locale locale2 = Locale.US;
             Object[] objArr2 = new Object[3];
@@ -306,7 +306,7 @@ public final class gdj implements ges, gfh, gfj {
         sb.append(valueOf);
         sb.append(" just about to time out; trying to finish up");
         lisVar.b(sb.toString());
-        for (gdf gdfVar : this.d) {
+        for (gdf gdfVar : (Set<gdf>) this.d) {
             if (gdfVar.a.equals(hspVar)) {
                 gdfVar.e = true;
                 this.b.b("... found it");
@@ -391,7 +391,7 @@ public final class gdj implements ges, gfh, gfj {
     }
 
     public final synchronized void n(hsp hspVar, long j) {
-        for (gde gdeVar : this.e) {
+        for (gde gdeVar : (Set<gde>) this.e) {
             if (gdeVar.d() && gdeVar.a().c.equals(hspVar)) {
                 obr.aQ(gdeVar.a);
                 boolean z = true;

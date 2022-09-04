@@ -36,14 +36,14 @@ public final class gze implements hen {
         this.i = dzeVar;
         this.j = lncVar;
         this.k = ljfVar;
-        for (lnx lnxVar : lmvVar.q().c) {
+        for (lnx lnxVar : (Set<lnx>) lmvVar.q().c) {
             this.b.l(Integer.valueOf(lnxVar.a()), lnxVar);
         }
         lapVar.c(lmvVar);
         mip.ca(phtVar, new lht() { // from class: gzd
             @Override // defpackage.lht
             public final void a(Object obj) {
-                lmv lmvVar2 = lmv.this;
+                lmv lmvVar2 = lmvVar;
                 ojc ojcVar = (ojc) obj;
                 obr.ao(ojcVar);
                 if (ojcVar.g()) {
@@ -124,7 +124,7 @@ public final class gze implements hen {
         oom f;
         oom f2;
         oom f3;
-        lmw b;
+        lmw b = null;
         Float f4;
         this.k.e("zslRingBuffer#filterAndTrim");
         this.k.e("zslRingBuffer#filterByTimestamp");

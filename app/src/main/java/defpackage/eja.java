@@ -49,8 +49,8 @@ public final class eja implements eii {
         this.u = ehjVar;
         this.v = ehwVar;
         this.w = context;
-        enumMap.put((EnumMap) ehv.WHITE, (ehv) Float.valueOf(25.0f));
-        enumMap.put((EnumMap) ehv.RED, (ehv) Float.valueOf(35.0f));
+        enumMap.put(ehv.WHITE, Float.valueOf(25.0f));
+        enumMap.put(ehv.RED, Float.valueOf(35.0f));
         this.m = new ehb();
         this.n = new ele(eiz.IDLE);
         this.o = new ele(eiw.WHITE);
@@ -158,7 +158,6 @@ public final class eja implements eii {
                     eixVar.c = 1;
                     break;
                 }
-                break;
             case 2:
                 eij eijVar3 = this.t;
                 if (!eijVar3.m && !eijVar3.h) {
@@ -173,7 +172,6 @@ public final class eja implements eii {
                     eixVar.c = 1;
                     break;
                 }
-                break;
             case 3:
                 Matrix.setIdentityM(eixVar.b, 0);
                 eixVar.a = this.a[2];

@@ -98,7 +98,7 @@ public final class cml extends mip {
                 ((oug) ((oug) a.c()).G(516)).B("Frame presentation time: %d us. Expected FPS: %d. Delay: %d us. Possible frame loss counts: %d", Long.valueOf(j), Long.valueOf(1000000 / j2), Long.valueOf(j3), Integer.valueOf(i));
             }
         }
-        long j6 = ((float) j2) * 0.4f;
+        long j6 = (long) (((float) j2) * 0.4f);
         this.c = j6;
         this.b = j2;
         this.d = j;

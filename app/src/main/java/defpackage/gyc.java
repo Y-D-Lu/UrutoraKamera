@@ -249,7 +249,7 @@ public final class gyc implements pys {
                 return aas.d(new Runnable() { // from class: hde
                     @Override // java.lang.Runnable
                     public final void run() {
-                        lap lapVar2 = lap.this;
+                        lap lapVar2 = lapVar;
                         pih pihVar2 = pihVar;
                         gvm gvmVar2 = gvmVar;
                         int i2 = intValue;
@@ -270,7 +270,7 @@ public final class gyc implements pys {
                 return aas.d(new Runnable() { // from class: hdf
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ojc ojcVar2 = ojc.this;
+                        ojc ojcVar2 = ojcVar;
                         ((jwx) ojcVar2.c()).a(r, (lnx) ojcVar.c());
                     }
                 }, "pckvfe");
@@ -300,12 +300,12 @@ public final class gyc implements pys {
                 return aas.d(new Runnable() { // from class: hdk
                     @Override // java.lang.Runnable
                     public final void run() {
-                        lnc lncVar3 = lnc.this;
+                        lnc lncVar3 = lncVar2;
                         pyn pynVar = a4;
                         pyn pynVar2 = a5;
                         lap lapVar4 = lapVar3;
                         fvq.p(lncVar3, (Set) pynVar.get());
-                        for (lco lcoVar : (Set) pynVar2.get()) {
+                        for (lco lcoVar : (Set<lco>) pynVar2.get()) {
                             lapVar4.c(lcoVar.a(new cme(lncVar3, 8), pgr.a));
                         }
                     }
@@ -326,6 +326,9 @@ public final class gyc implements pys {
                             } else {
                                 i2++;
                             }
+                        }
+                        if (false) {
+                            break;
                         }
                     }
                     mo37get4 = (ghx) list.get(i);

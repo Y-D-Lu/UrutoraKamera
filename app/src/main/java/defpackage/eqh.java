@@ -25,7 +25,7 @@ public final class eqh implements goy {
         f.k(new lmu() { // from class: eqe
             @Override // defpackage.lmu
             public final void a(lrr lrrVar) {
-                lce.this.fB(Integer.valueOf(f.b()));
+                lceVar.fB(Integer.valueOf(f.b()));
             }
         });
         lapVar.c(lcoVar.a(new eqd(lceVar, 0), pgr.a));
@@ -34,7 +34,7 @@ public final class eqh implements goy {
         lapVar.c(new lie() { // from class: eqb
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                lmv.this.l(eqaVar);
+                f.l(eqaVar);
             }
         });
         lapVar.c(eqaVar);
@@ -51,7 +51,7 @@ public final class eqh implements goy {
     }
 
     @Override // defpackage.goy
-    public final void c(gox goxVar, gog gogVar) {
+    public final void c(gox goxVar, gog gogVar) throws InterruptedException {
         ovd ovdVar = ovl.a;
         gogVar.c.b().e(2);
         hem a = this.a.a();

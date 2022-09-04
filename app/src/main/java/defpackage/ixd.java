@@ -21,7 +21,7 @@ public final /* synthetic */ class ixd implements iib {
                 return new lie() { // from class: epf
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        epj.this.g(i);
+                        epjVar.g(i);
                     }
                 };
             default:
@@ -30,7 +30,7 @@ public final /* synthetic */ class ixd implements iib {
                 return new lie() { // from class: epe
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        epj.this.g(3);
+                        epjVar2.g(3);
                     }
                 };
         }

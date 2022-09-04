@@ -55,4 +55,9 @@ public final class ees implements eez {
     public final eco b(gog gogVar) {
         return d(gogVar, this.n.a());
     }
+
+    @Override
+    public eco c(gog gogVar) {
+        return null;
+    }
 }

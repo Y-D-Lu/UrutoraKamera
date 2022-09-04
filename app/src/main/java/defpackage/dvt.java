@@ -44,7 +44,7 @@ public final class dvt implements lie {
             this.g = scheduledExecutorService.scheduleAtFixedRate(new Runnable() { // from class: dvs
                 @Override // java.lang.Runnable
                 public final void run() {
-                    dve.this.c();
+                    dveVar.c();
                 }
             }, 0L, this.e, TimeUnit.MICROSECONDS);
         }

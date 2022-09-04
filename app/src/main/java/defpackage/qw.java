@@ -103,7 +103,7 @@ public final class qw {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final synchronized ColorStateList a(Context context, int i) {
-        int b2;
+        int b2 = 0;
         xg xgVar;
         WeakHashMap weakHashMap = this.c;
         ColorStateList colorStateList = null;

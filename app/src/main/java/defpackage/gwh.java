@@ -108,7 +108,7 @@ public final class gwh implements pys {
                 return new Executor() { // from class: hbx
                     @Override // java.util.concurrent.Executor
                     public final void execute(Runnable runnable) {
-                        gjw.this.a(new hby(bM, runnable));
+                        gjwVar.a(new hby(bM, runnable));
                     }
                 };
             case 6:
@@ -152,7 +152,7 @@ public final class gwh implements pys {
                     @Override // defpackage.gnl, java.lang.Runnable
                     public final void run() {
                         boolean d;
-                        hsl hslVar2 = hsl.this;
+                        hsl hslVar2 = hslVar;
                         hslVar2.a.e("ShotPipeline#shutdown");
                         synchronized (hslVar2) {
                             hslVar2.c = true;

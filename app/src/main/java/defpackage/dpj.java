@@ -10,6 +10,7 @@ import com.google.android.apps.camera.jni.faceobfuscation.GpuRedactorNative;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* renamed from: dpj  reason: default package */
@@ -86,7 +87,7 @@ public final class dpj implements dpy {
                         arrayList.add(a.a());
                     }
                 } else {
-                    for (lzs lzsVar : lzs.b(c2)) {
+                    for (lzs lzsVar : (Set<lzs>) lzs.b(c2)) {
                         Face face2 = lzsVar.a;
                         Rect bounds2 = face2.getBounds();
                         Point leftEyePosition2 = face2.getLeftEyePosition();

@@ -3,13 +3,17 @@ package defpackage;
 /* renamed from: hyc  reason: default package */
 /* loaded from: classes.dex */
 public final /* synthetic */ class hyc {
-    public final /* synthetic */ pht a;
+    public /* synthetic */ pht a;
+
+    public hyc(pht mo37get) {
+        a = mo37get;
+    }
 
     public final void a(final iat iatVar, final iav iavVar) {
         mip.ca(this.a, new lht() { // from class: hyd
             @Override // defpackage.lht
             public final void a(Object obj) {
-                final iat iatVar2 = iat.this;
+                final iat iatVar2 = iatVar;
                 final iav iavVar2 = iavVar;
                 final hza hzaVar = (hza) obj;
                 obr.ao(hzaVar);
@@ -20,7 +24,7 @@ public final /* synthetic */ class hyc {
                 hzaVar.o.d(new Runnable() { // from class: hyk
                     @Override // java.lang.Runnable
                     public final void run() {
-                        hza hzaVar2 = hza.this;
+                        hza hzaVar2 = hzaVar;
                         iat iatVar3 = iatVar2;
                         iav iavVar3 = iavVar2;
                         if (hzaVar2.i.containsKey(iatVar3)) {
@@ -38,7 +42,7 @@ public final /* synthetic */ class hyc {
                         hzuVar.f.c(hzuVar.b.f.a(new lij() { // from class: hzr
                             @Override // defpackage.lij
                             public final void fB(Object obj2) {
-                                hzu.this.b(hzt.EXTERNAL_TOGGLE, !((Boolean) obj2).booleanValue());
+                                hzuVar.b(hzt.EXTERNAL_TOGGLE, !((Boolean) obj2).booleanValue());
                             }
                         }, mip.bS()));
                         hzaVar2.j.f();

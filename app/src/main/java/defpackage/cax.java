@@ -494,7 +494,7 @@ public final class cax implements pys {
 
                     @Override // defpackage.bvv
                     public final pht fz() {
-                        ljf ljfVar3 = ljf.this;
+                        ljf ljfVar3 = ljfVar2;
                         qkg qkgVar2 = qkgVar;
                         lvp lvpVar2 = lvpVar;
                         brg brgVar = mo37get;
@@ -506,7 +506,7 @@ public final class cax implements pys {
                         lapVar2.c(new lie() { // from class: dqq
                             @Override // defpackage.lie, java.lang.AutoCloseable
                             public final void close() {
-                                dqo.this.b();
+                                dqoVar.b();
                             }
                         });
                         ljfVar3.f();
@@ -530,7 +530,7 @@ public final class cax implements pys {
 
                     @Override // defpackage.bvv
                     public final pht fz() {
-                        qkg qkgVar4 = qkg.this;
+                        qkg qkgVar4 = qkgVar3;
                         bxy bxyVar2 = bxyVar;
                         final ljf ljfVar4 = ljfVar3;
                         final qkg qkgVar5 = qkgVar2;
@@ -541,10 +541,10 @@ public final class cax implements pys {
                         dvnVar.mo37get().post(new Runnable() { // from class: dvm
                             @Override // java.lang.Runnable
                             public final void run() {
-                                ljf ljfVar5 = ljf.this;
+                                ljf ljfVar5 = ljfVar4;
                                 qkg qkgVar6 = qkgVar5;
                                 ljfVar5.e("MICRO_ImageReaderModule_runningStartupTasks");
-                                for (Runnable runnable : ((pyw) qkgVar6).mo37get()) {
+                                for (Runnable runnable : (Set<Runnable>) ((pyw) qkgVar6).mo37get()) {
                                     ljfVar5.e("MICRO_ImageReaderModule_runSingleTask");
                                     runnable.run();
                                     ljfVar5.f();
@@ -565,7 +565,7 @@ public final class cax implements pys {
                 return ((ddf) this.d.mo37get()).k(ddm.ap) ? mip.eR(new Runnable() { // from class: eec
                     @Override // java.lang.Runnable
                     public final void run() {
-                        qkg qkgVar5 = qkg.this;
+                        qkg qkgVar5 = qkgVar4;
                         bui buiVar2 = buiVar;
                         imt imtVar2 = imtVar;
                         lar larVar2 = larVar;

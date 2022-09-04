@@ -60,7 +60,7 @@ public class Barcode implements Parcelable {
     public WiFi wifi;
 
     /* loaded from: classes.dex */
-    public class Address implements Parcelable {
+    public static class Address implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(12);
         public static final int HOME = 2;
         public static final int UNKNOWN = 0;
@@ -71,7 +71,7 @@ public class Barcode implements Parcelable {
         public Address() {
         }
 
-        private Address(Parcel parcel) {
+        public Address(Parcel parcel) {
             this.type = parcel.readInt();
             this.addressLines = parcel.createStringArray();
         }
@@ -89,7 +89,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class BoardingPass implements Parcelable {
+    public static class BoardingPass implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(13);
         public FlightSegment[] flightSegment;
         public String passengerName;
@@ -97,7 +97,7 @@ public class Barcode implements Parcelable {
         public BoardingPass() {
         }
 
-        private BoardingPass(Parcel parcel) {
+        public BoardingPass(Parcel parcel) {
             this.passengerName = parcel.readString();
             this.flightSegment = (FlightSegment[]) parcel.createTypedArray(FlightSegment.CREATOR);
         }
@@ -115,7 +115,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class CalendarDateTime implements Parcelable {
+    public static class CalendarDateTime implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(14);
         public int day;
         public int hours;
@@ -129,7 +129,7 @@ public class Barcode implements Parcelable {
         public CalendarDateTime() {
         }
 
-        private CalendarDateTime(Parcel parcel) {
+        public CalendarDateTime(Parcel parcel) {
             this.year = parcel.readInt();
             this.month = parcel.readInt();
             this.day = parcel.readInt();
@@ -159,7 +159,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class CalendarEvent implements Parcelable {
+    public static class CalendarEvent implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(15);
         public String description;
         public CalendarDateTime end;
@@ -172,7 +172,7 @@ public class Barcode implements Parcelable {
         public CalendarEvent() {
         }
 
-        private CalendarEvent(Parcel parcel) {
+        public CalendarEvent(Parcel parcel) {
             this.summary = parcel.readString();
             this.description = parcel.readString();
             this.location = parcel.readString();
@@ -200,7 +200,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class ContactInfo implements Parcelable {
+    public static class ContactInfo implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(16);
         public Address[] addresses;
         public Email[] emails;
@@ -214,7 +214,7 @@ public class Barcode implements Parcelable {
         public ContactInfo() {
         }
 
-        private ContactInfo(Parcel parcel) {
+        public ContactInfo(Parcel parcel) {
             this.name = (PersonName) parcel.readParcelable(PersonName.class.getClassLoader());
             this.organization = parcel.readString();
             this.title = parcel.readString();
@@ -244,7 +244,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class DriverLicense implements Parcelable {
+    public static class DriverLicense implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(17);
         public String addressCity;
         public String addressState;
@@ -264,7 +264,7 @@ public class Barcode implements Parcelable {
         public DriverLicense() {
         }
 
-        private DriverLicense(Parcel parcel) {
+        public DriverLicense(Parcel parcel) {
             this.documentType = parcel.readString();
             this.firstName = parcel.readString();
             this.middleName = parcel.readString();
@@ -306,7 +306,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class Email implements Parcelable {
+    public static class Email implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(18);
         public static final int HOME = 2;
         public static final int UNKNOWN = 0;
@@ -319,7 +319,7 @@ public class Barcode implements Parcelable {
         public Email() {
         }
 
-        private Email(Parcel parcel) {
+        public Email(Parcel parcel) {
             this.type = parcel.readInt();
             this.address = parcel.readString();
             this.subject = parcel.readString();
@@ -341,7 +341,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class FlightSegment implements Parcelable {
+    public static class FlightSegment implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(19);
         public String carrier;
         public String compartmentCode;
@@ -356,7 +356,7 @@ public class Barcode implements Parcelable {
         public FlightSegment() {
         }
 
-        private FlightSegment(Parcel parcel) {
+        public FlightSegment(Parcel parcel) {
             this.pnrCode = parcel.readString();
             this.origin = parcel.readString();
             this.destination = parcel.readString();
@@ -388,7 +388,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class GeoPoint implements Parcelable {
+    public static class GeoPoint implements Parcelable {
         public static final Parcelable.Creator CREATOR = new kza(20);
         public double lat;
         public double lng;
@@ -396,7 +396,7 @@ public class Barcode implements Parcelable {
         public GeoPoint() {
         }
 
-        private GeoPoint(Parcel parcel) {
+        public GeoPoint(Parcel parcel) {
             this.lat = parcel.readDouble();
             this.lng = parcel.readDouble();
         }
@@ -414,7 +414,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class PersonName implements Parcelable {
+    public static class PersonName implements Parcelable {
         public static final Parcelable.Creator CREATOR = new laa(1);
         public String first;
         public String formattedName;
@@ -427,7 +427,7 @@ public class Barcode implements Parcelable {
         public PersonName() {
         }
 
-        private PersonName(Parcel parcel) {
+        public PersonName(Parcel parcel) {
             this.formattedName = parcel.readString();
             this.pronunciation = parcel.readString();
             this.prefix = parcel.readString();
@@ -455,7 +455,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class Phone implements Parcelable {
+    public static class Phone implements Parcelable {
         public static final Parcelable.Creator CREATOR = new laa(0);
         public static final int FAX = 3;
         public static final int HOME = 2;
@@ -468,7 +468,7 @@ public class Barcode implements Parcelable {
         public Phone() {
         }
 
-        private Phone(Parcel parcel) {
+        public Phone(Parcel parcel) {
             this.type = parcel.readInt();
             this.number = parcel.readString();
         }
@@ -486,7 +486,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes2.dex */
-    public class Sms implements Parcelable {
+    public static class Sms implements Parcelable {
         public static final Parcelable.Creator CREATOR = new laa(2);
         public String message;
         public String phoneNumber;
@@ -494,7 +494,7 @@ public class Barcode implements Parcelable {
         public Sms() {
         }
 
-        private Sms(Parcel parcel) {
+        public Sms(Parcel parcel) {
             this.message = parcel.readString();
             this.phoneNumber = parcel.readString();
         }
@@ -512,7 +512,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class UrlBookmark implements Parcelable {
+    public static class UrlBookmark implements Parcelable {
         public static final Parcelable.Creator CREATOR = new laa(3);
         public String title;
         public String url;
@@ -520,7 +520,7 @@ public class Barcode implements Parcelable {
         public UrlBookmark() {
         }
 
-        private UrlBookmark(Parcel parcel) {
+        public UrlBookmark(Parcel parcel) {
             this.title = parcel.readString();
             this.url = parcel.readString();
         }
@@ -538,7 +538,7 @@ public class Barcode implements Parcelable {
     }
 
     /* loaded from: classes.dex */
-    public class WiFi implements Parcelable {
+    public static class WiFi implements Parcelable {
         public static final Parcelable.Creator CREATOR = new laa(4);
         public static final int OPEN = 1;
         public static final int WEP = 3;
@@ -551,7 +551,7 @@ public class Barcode implements Parcelable {
         public WiFi() {
         }
 
-        private WiFi(Parcel parcel) {
+        public WiFi(Parcel parcel) {
             this.ssid = parcel.readString();
             this.password = parcel.readString();
             this.encryptionType = parcel.readInt();
@@ -575,7 +575,7 @@ public class Barcode implements Parcelable {
     public Barcode() {
     }
 
-    private Barcode(Parcel parcel) {
+    public Barcode(Parcel parcel) {
         this.format = parcel.readInt();
         this.rawValue = parcel.readString();
         this.displayValue = parcel.readString();

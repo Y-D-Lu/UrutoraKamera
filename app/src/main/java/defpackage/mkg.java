@@ -5,11 +5,11 @@ import com.google.android.apps.camera.bottombar.R;
 /* renamed from: mkg  reason: default package */
 /* loaded from: classes2.dex */
 public final class mkg {
-    public final boolean a;
-    public final boolean b;
-    public final int c;
-    public final int d;
-    public final int e;
+    public boolean a;
+    public boolean b;
+    public int c;
+    public int d;
+    public int e;
 
     public mkg() {
     }

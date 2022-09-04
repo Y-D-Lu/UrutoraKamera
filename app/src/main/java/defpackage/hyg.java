@@ -29,7 +29,7 @@ public final /* synthetic */ class hyg implements lij {
                 this.a.h(new hyx() { // from class: hyo
                     @Override // defpackage.hyx
                     public final void a(Object obj2) {
-                        ((hzu) obj2).g(hza.k(hti.this));
+                        ((hzu) obj2).g(hza.k(htiVar));
                     }
                 });
                 return;

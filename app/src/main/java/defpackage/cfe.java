@@ -7,10 +7,9 @@ import org.codeaurora.snapcam.R;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
-
-import java.util.Collection;
 
 /* renamed from: cfe  reason: default package */
 /* loaded from: classes3.dex */
@@ -612,7 +611,7 @@ public final class cfe {
                 cniVar.a();
             }
             nvb nvbVar = this.L;
-            for (cms cmsVar : new HashSet(nvbVar.a.keySet())) {
+            for (cms cmsVar : (Set<cms>) new HashSet(nvbVar.a.keySet())) {
                 nvbVar.l(cmsVar);
             }
             cju cjuVar = this.r;

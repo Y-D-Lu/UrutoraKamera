@@ -20,7 +20,7 @@ public final /* synthetic */ class gvj implements Runnable {
                 gvkVar.c.a(new bur() { // from class: gvi
                     @Override // defpackage.bur
                     public final void a(Throwable th) {
-                        gvk.this.a();
+                        gvkVar.a();
                     }
                 });
                 enl.e(gvkVar.d, gvkVar.b, gvkVar);

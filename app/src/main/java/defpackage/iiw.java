@@ -1529,7 +1529,7 @@ public final class iiw implements fjs {
         aC(new ojz() { // from class: iis
             @Override // defpackage.ojz
             public final Object a() {
-                pax paxVar3 = pax.this;
+                pax paxVar3 = paxVar2;
                 poy m2 = pac.aq.m();
                 pab pabVar = pab.DND_ACCESS_NEEDED_EVENT;
                 if (m2.c) {
@@ -1556,7 +1556,7 @@ public final class iiw implements fjs {
         aC(new ojz() { // from class: iir
             @Override // defpackage.ojz
             public final Object a() {
-                return poy.this;
+                return poyVar;
             }
         });
     }

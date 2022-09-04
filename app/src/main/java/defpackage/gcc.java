@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 
@@ -277,8 +278,8 @@ public final class gcc implements pys {
                 lnc lncVar = (lnc) this.a.mo37get();
                 Map map = (Map) this.b.mo37get();
                 EnumMap enumMap = new EnumMap(hdr.class);
-                for (hdr hdrVar : map.keySet()) {
-                    enumMap.put((EnumMap) hdrVar, (hdr) lncVar.b().a((lnz) map.get(hdrVar)));
+                for (hdr hdrVar : (Set<hdr>) map.keySet()) {
+                    enumMap.put(hdrVar, lncVar.b().a((lnz) map.get(hdrVar)));
                 }
                 return enumMap;
             case 17:

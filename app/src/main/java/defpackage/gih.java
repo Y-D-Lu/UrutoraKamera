@@ -158,7 +158,7 @@ public final class gih implements pys {
                 return new gnl() { // from class: gnb
                     @Override // defpackage.gnl, java.lang.Runnable
                     public final void run() {
-                        lap.this.close();
+                        lapVar2.close();
                     }
                 };
             default:

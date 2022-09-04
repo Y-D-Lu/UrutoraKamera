@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.Collections;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: gmn  reason: default package */
@@ -19,7 +20,7 @@ public final class gmn implements lie {
         gmp gmpVar = this.b;
         gmo gmoVar = this.a;
         synchronized (gmpVar.a) {
-            for (Long l : gmoVar.d) {
+            for (Long l : (Set<Long>) gmoVar.d) {
                 gmpVar.b.remove(l);
             }
             plk.af(plk.S(gmr.a(Collections.unmodifiableMap(gmoVar.c).values()), gmr.a(Collections.unmodifiableList(gmoVar.g))), new gmq(gmpVar.c, gmoVar), pgr.a);

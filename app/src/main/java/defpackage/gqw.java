@@ -20,12 +20,8 @@ public final class gqw implements lda {
     @Override // defpackage.lco
     public final lie a(final lij lijVar, Executor executor) {
         lap lapVar = new lap();
-        lapVar.c(this.c.a(new lij(this) { // from class: gqu
-            public final /* synthetic */ gqw a;
-
-            {
-                this.a = this;
-            }
+        lapVar.c(this.c.a(new lij() { // from class: gqu
+            public final /* synthetic */ gqw a = gqw.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -51,12 +47,8 @@ public final class gqw implements lda {
                 }
             }
         }, executor));
-        lapVar.c(this.d.a(new lij(this) { // from class: gqu
-            public final /* synthetic */ gqw a;
-
-            {
-                this.a = this;
-            }
+        lapVar.c(this.d.a(new lij() { // from class: gqu
+            public final /* synthetic */ gqw a = gqw.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {

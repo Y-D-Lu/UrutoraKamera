@@ -4,6 +4,7 @@ import com.google.googlex.gcam.DirtyLensHistory;
 import com.google.googlex.gcam.GcamModuleJNI;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 /* renamed from: bsp  reason: default package */
 /* loaded from: classes.dex */
@@ -22,7 +23,7 @@ final class bsp implements lij {
     public final /* bridge */ /* synthetic */ void fB(Object obj) {
         if (!((Boolean) obj).booleanValue()) {
             ArrayList<bss> arrayList = new ArrayList();
-            for (lvs lvsVar : this.a.g()) {
+            for (lvs lvsVar : (Set<lvs>) this.a.g()) {
                 arrayList.add(this.b.d(lvsVar));
             }
             bsu bsuVar = this.c;

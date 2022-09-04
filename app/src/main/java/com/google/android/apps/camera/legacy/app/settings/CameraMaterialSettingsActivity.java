@@ -53,7 +53,7 @@ public class CameraMaterialSettingsActivity extends axt {
             preference.M(new agm() { // from class: fbh
                 @Override // defpackage.agm
                 public final boolean b(Preference preference2, Object obj2) {
-                    fjs.this.p(preference2.t, obj, obj2);
+                    fjsVar.p(preference2.t, obj, obj2);
                     return true;
                 }
             });

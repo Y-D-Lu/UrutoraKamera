@@ -55,11 +55,11 @@ public final class kle extends kul implements kik, kil {
             bmp.c(a2, kupVar);
             bmp.e(a2, this);
             kumVar.z(12, a2);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.w("SignInClientImpl", "Remote service probably died when signIn is called");
             try {
                 c(new kuq(1, new khi(8, null), null));
-            } catch (RemoteException e2) {
+            } catch (Exception e2) {
                 Log.wtf("SignInClientImpl", "ISignInCallbacks#onSignInComplete should be executed from the same process, unexpected RemoteException.", e);
             }
         }

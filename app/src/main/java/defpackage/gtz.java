@@ -94,12 +94,8 @@ public final class gtz {
         if (!this.h) {
             ofPropertyValuesHolder.addListener(new jru(this.d));
         }
-        ofPropertyValuesHolder.addListener(mip.ev(new Consumer(this) { // from class: gtx
-            public final /* synthetic */ gtz a;
-
-            {
-                this.a = this;
-            }
+        ofPropertyValuesHolder.addListener(mip.ev(new Consumer() { // from class: gtx
+            public final /* synthetic */ gtz a = gtz.this;
 
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
@@ -156,12 +152,8 @@ public final class gtz {
         AnimatorSet animatorSet2 = new AnimatorSet();
         animatorSet2.playSequentially(this.b ? oohVar.f() : obr.al(oohVar.f()));
         if (this.b) {
-            animatorSet2.addListener(mip.ew(new Consumer(this) { // from class: gtx
-                public final /* synthetic */ gtz a;
-
-                {
-                    this.a = this;
-                }
+            animatorSet2.addListener(mip.ew(new Consumer() { // from class: gtx
+                public final /* synthetic */ gtz a = gtz.this;
 
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {

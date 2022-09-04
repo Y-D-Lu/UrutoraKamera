@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: drp  reason: default package */
 /* loaded from: classes.dex */
@@ -21,7 +22,7 @@ public final class drp {
         return new drt(this.e, this.c, new dqs() { // from class: drg
             @Override // defpackage.dqs
             public final void b(lmr lmrVar, lnx lnxVar) {
-                for (dqs dqsVar : drp.this.b) {
+                for (dqs dqsVar : (Set<dqs>) drp.this.b) {
                     dqsVar.b(lmrVar, lnxVar);
                 }
             }
@@ -40,7 +41,7 @@ public final class drp {
         b(new dqs() { // from class: drh
             @Override // defpackage.dqs
             public final void b(lmr lmrVar, lnx lnxVar) {
-                lmrVar.j(new drm(lmrVar, drs.this));
+                lmrVar.j(new drm(lmrVar, drsVar));
             }
         });
     }

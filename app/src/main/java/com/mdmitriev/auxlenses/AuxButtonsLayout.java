@@ -4,6 +4,7 @@ import android.app.AppGlobals;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Build;
 import android.util.AttributeSet;
@@ -43,14 +44,23 @@ public class AuxButtonsLayout extends RelativeLayout {
         AnonymousClass1() {
         }
 
-        public static void onRestart() {
+        public void onRestart() {
             if (Helper.sHdr_process != 0) {
                 Helper.Toast(R.string.hsl_hdrprocess);
                 return;
             }
-            Thread.sleep(500L);
+            try {
+                Thread.sleep(500L);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             Application initialApplication = AppGlobals.getInitialApplication();
-            Context createPackageContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 0);
+            Context createPackageContext = null;
+            try {
+                createPackageContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 0);
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
             Intent intent = new Intent(createPackageContext, CameraActivity.class);
             intent.addFlags(32768);
             intent.addFlags(268435456);
@@ -69,19 +79,13 @@ public class AuxButtonsLayout extends RelativeLayout {
 
         @Override // android.view.View.OnClickListener
         public void onClick(final View view) {
-            AuxButtonsLayout.this.buttons.forEach(new Consumer(this, view) { // from class: com.mdmitriev.auxlenses.AuxButtonsLayout$1$$Lambda$0
-                private final AuxButtonsLayout.AnonymousClass1 arg$1;
-                private final View arg$2;
-
-                /* JADX INFO: Access modifiers changed from: package-private */
-                {
-                    this.arg$1 = this;
-                    this.arg$2 = view;
-                }
+            AuxButtonsLayout.this.buttons.forEach(new Consumer() { // from class: com.mdmitriev.auxlenses.AuxButtonsLayout$1$$Lambda$0
+                private final AuxButtonsLayout arg$1 = AuxButtonsLayout.this;
+                private final View arg$2 = view;
 
                 @Override // java.util.function.Consumer
                 public void accept(Object obj) {
-                    this.arg$1.lambda$onClick$0$AuxButtonsLayout$1(this.arg$2, (Button) obj);
+//                    this.arg$1.lambda$onClick$0$AuxButtonsLayout$1(this.arg$2, (Button) obj);
                 }
             });
         }
@@ -270,13 +274,8 @@ public class AuxButtonsLayout extends RelativeLayout {
         this.buttons.add(getBackground(2, this.idButtonWide, this.buttonNameWide));
         this.buttons.add(getBackground(3, this.idButtonInfinity, this.buttonNameInfinity));
         this.buttons.add(getBackground(4, this.idButton5, this.buttonName5));
-        this.buttons.forEach(new Consumer(this) { // from class: com.mdmitriev.auxlenses.AuxButtonsLayout$$Lambda$0
-            private final AuxButtonsLayout arg$1;
-
-            /* JADX INFO: Access modifiers changed from: package-private */
-            {
-                this.arg$1 = this;
-            }
+        this.buttons.forEach(new Consumer() { // from class: com.mdmitriev.auxlenses.AuxButtonsLayout$$Lambda$0
+            private final AuxButtonsLayout arg$1 = AuxButtonsLayout.this;
 
             @Override // java.util.function.Consumer
             public void accept(Object obj) {

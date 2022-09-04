@@ -95,7 +95,7 @@ public class ActionMenuView extends LinearLayoutCompat implements kv, lm {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // android.support.v7.widget.LinearLayoutCompat
+//    @Override // android.support.v7.widget.LinearLayoutCompat
     public final /* bridge */ /* synthetic */ pa d() {
         return m();
     }
@@ -127,18 +127,18 @@ public class ActionMenuView extends LinearLayoutCompat implements kv, lm {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // android.support.v7.widget.LinearLayoutCompat
+//    @Override // android.support.v7.widget.LinearLayoutCompat
     public final /* bridge */ /* synthetic */ pa gC(ViewGroup.LayoutParams layoutParams) {
         return n(layoutParams);
     }
 
     @Override // android.support.v7.widget.LinearLayoutCompat, android.view.ViewGroup
-    protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateDefaultLayoutParams() {
+    public final /* bridge */ /* synthetic */ pa generateDefaultLayoutParams() {
         return m();
     }
 
     @Override // android.support.v7.widget.LinearLayoutCompat, android.view.ViewGroup
-    protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
+    public final /* bridge */ /* synthetic */ pa generateLayoutParams(LayoutParams layoutParams) {
         return n(layoutParams);
     }
 

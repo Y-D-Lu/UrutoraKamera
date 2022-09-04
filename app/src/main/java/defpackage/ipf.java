@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.graphics.Rect;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
@@ -352,7 +353,7 @@ public final class ipf {
             ioqVar.aa = new lmu() { // from class: iog
                 @Override // defpackage.lmu
                 public final void a(lrr lrrVar) {
-                    ioq ioqVar2 = ioq.this;
+                    ioq ioqVar2 = ioqVar;
                     lmv lmvVar = r;
                     lmr a12 = lrrVar.a();
                     if (a12 != null) {
@@ -380,7 +381,7 @@ public final class ipf {
                 lapVar5.c(ioqVar.r.a(new lij() { // from class: ioe
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        ioq ioqVar2 = ioq.this;
+                        ioq ioqVar2 = ioqVar;
                         lnc lncVar3 = lncVar2;
                         lncVar3.h(CaptureRequest.CONTROL_ZOOM_RATIO, (Float) obj);
                         lncVar3.h(CaptureRequest.SCALER_CROP_REGION, ((gsm) ioqVar2.R.fA()).b);
@@ -418,7 +419,7 @@ public final class ipf {
         lapVar6.c(inxVar.a.a.a(new lij() { // from class: ins
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                inx inxVar2 = inx.this;
+                inx inxVar2 = inxVar;
                 Boolean bool = (Boolean) obj;
                 ScheduledFuture scheduledFuture = inxVar2.s;
                 if (scheduledFuture != null) {
@@ -497,7 +498,12 @@ public final class ipf {
             lep a2 = lep.a(ioqVar.O);
             a2.getClass();
             mip mipVar2 = ioqVar.ai;
-            les bE = mip.bE(ioqVar.K, a2);
+            les bE = null;
+            try {
+                bE = mip.bE(ioqVar.K, a2);
+            } catch (PackageManager.NameNotFoundException ex) {
+                ex.printStackTrace();
+            }
             final lew lewVar = new lew(ioqVar.O);
             lewVar.d = bE;
             lewVar.c = ioqVar.x.b();
@@ -507,7 +513,7 @@ public final class ipf {
                 @Override // defpackage.pgj
                 public final pht a() {
                     ojc a3;
-                    ioq ioqVar2 = ioq.this;
+                    ioq ioqVar2 = ioqVar;
                     lew lewVar2 = lewVar;
                     cle cleVar3 = cleVar2;
                     lic licVar = c;
@@ -646,7 +652,7 @@ public final class ipf {
                         ioqVar2.X = new iql(iqnVar, z);
                         ioqVar2.ad.c.add(ioqVar2.I);
                         return plk.V(ioqVar2.ad);
-                    } catch (IOException e) {
+                    } catch (Exception e) {
                         throw new IllegalArgumentException("Fail to create video recorder", e);
                     }
                 }
@@ -655,7 +661,7 @@ public final class ipf {
             iprVar.h.b(new ilt() { // from class: ipm
                 @Override // defpackage.ilt
                 public final void a(ilv ilvVar) {
-                    ipr.this.a(ilvVar, false);
+                    iprVar.a(ilvVar, false);
                 }
             });
             ipr iprVar2 = this.D;
@@ -715,7 +721,7 @@ public final class ipf {
                     phtVar = iodVar.x;
                 }
             }
-            pihVar = pgb.h(phtVar, new oiu() { // from class: ioh
+            pihVar = (pih) pgb.h(phtVar, new oiu() { // from class: ioh
                 @Override // defpackage.oiu
                 public final Object a(Object obj2) {
                     switch (-1) {
@@ -746,7 +752,7 @@ public final class ipf {
             }
             inkVar.b.set(true);
             inkVar.J = pih.f();
-            pihVar = pgb.h(inkVar.J, new oiu() { // from class: ioh
+            pihVar = (pih) pgb.h(inkVar.J, new oiu() { // from class: ioh
                 @Override // defpackage.oiu
                 public final Object a(Object obj2) {
                     switch (-1) {

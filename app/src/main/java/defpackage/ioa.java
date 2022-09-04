@@ -313,7 +313,7 @@ public final class ioa extends buf {
         mip.ca(iprVar.n.a(), new lht() { // from class: ipn
             @Override // defpackage.lht
             public final void a(Object obj) {
-                ipr iprVar2 = ipr.this;
+                ipr iprVar2 = iprVar;
                 ilv ilvVar = (ilv) obj;
                 ilvVar.getClass();
                 iprVar2.a(ilvVar, true);

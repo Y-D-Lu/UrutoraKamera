@@ -4,6 +4,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
+import java.util.Set;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: eph  reason: default package */
 /* loaded from: classes.dex */
@@ -28,7 +30,7 @@ public final class eph extends BroadcastReceiver {
                     this.a.d.ak(3);
                 }
                 synchronized (this.a.e) {
-                    for (epi epiVar : this.a.b) {
+                    for (epi epiVar : (Set<epi>) this.a.b) {
                         epiVar.d(booleanExtra);
                     }
                 }
@@ -37,7 +39,7 @@ public final class eph extends BroadcastReceiver {
                 if (booleanExtra) {
                     epj epjVar = this.a;
                     synchronized (epjVar.e) {
-                        for (epi epiVar2 : epjVar.b) {
+                        for (epi epiVar2 : (Set<epi>) epjVar.b) {
                             epiVar2.c();
                         }
                     }
@@ -46,28 +48,28 @@ public final class eph extends BroadcastReceiver {
                 break;
             case 3:
                 synchronized (this.a.e) {
-                    for (epi epiVar3 : this.a.b) {
+                    for (epi epiVar3 : (Set<epi>) this.a.b) {
                         epiVar3.b(booleanExtra);
                     }
                 }
                 break;
             case 4:
                 synchronized (this.a.e) {
-                    for (epi epiVar4 : this.a.b) {
+                    for (epi epiVar4 : (Set<epi>) this.a.b) {
                         epiVar4.b(booleanExtra);
                     }
                 }
                 break;
             case 5:
                 synchronized (this.a.e) {
-                    for (epi epiVar5 : this.a.b) {
+                    for (epi epiVar5 : (Set<epi>) this.a.b) {
                         epiVar5.e(booleanExtra);
                     }
                 }
                 break;
             case 6:
                 synchronized (this.a.e) {
-                    for (epi epiVar6 : this.a.b) {
+                    for (epi epiVar6 : (Set<epi>) this.a.b) {
                         epiVar6.f(booleanExtra);
                     }
                 }
@@ -81,7 +83,7 @@ public final class eph extends BroadcastReceiver {
         }
         epj epjVar2 = this.a;
         synchronized (epjVar2.e) {
-            for (jjg jjgVar : epjVar2.c) {
+            for (jjg jjgVar : (Set<jjg>) epjVar2.c) {
                 jjgVar.a.a();
             }
         }

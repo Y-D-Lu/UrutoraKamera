@@ -3,14 +3,14 @@ package defpackage;
 /* renamed from: mxg  reason: default package */
 /* loaded from: classes2.dex */
 public final class mxg {
-    public final String a;
-    public final boolean b;
-    public final qyk c;
-    public final qxe d;
-    public final String e;
-    public final Long f;
-    public final boolean g;
-    public final mvp h;
+    public String a;
+    public boolean b;
+    public qyk c;
+    public qxe d;
+    public String e;
+    public Long f;
+    public boolean g;
+    public mvp h;
 
     public mxg() {
     }

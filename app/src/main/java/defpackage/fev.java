@@ -19,10 +19,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
-
-import java.util.TimeZone;
 
 /* renamed from: fev  reason: default package */
 /* loaded from: classes.dex */
@@ -61,7 +60,8 @@ public final class fev {
                     } else {
                         try {
                             break;
-                        } catch (IOException e) {
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
                     }
                 }
@@ -89,8 +89,9 @@ public final class fev {
         } catch (IOException e5) {
             bufferedReader = null;
         } catch (Throwable th2) {
-            th = th2;
+            th2.printStackTrace();
         }
+        return null;
     }
 
     public static void c(String str, Map map, String str2, boolean z, boolean z2, ojc ojcVar, long j, boolean z3) {
@@ -264,7 +265,7 @@ public final class fev {
                 a2.k("LargestValidInteriorRectTop", 0);
                 a2.k("LargestValidInteriorRectWidth", i);
                 a2.k("LargestValidInteriorRectHeight", i2);
-            } catch (ass e2) {
+            } catch (Exception e2) {
                 String valueOf = String.valueOf(e2.getLocalizedMessage());
                 if (valueOf.length() != 0) {
                     "Set xmp property failed:".concat(valueOf);

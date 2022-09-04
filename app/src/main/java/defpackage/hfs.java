@@ -60,7 +60,7 @@ public final class hfs implements gjt {
         return new PortraitOpaqueHandleCallback() { // from class: hfq
             @Override // com.google.googlex.gcam.creativecamera.portraitmode.PortraitOpaqueHandleCallback
             public final void onImage(long j, Object obj, int i, String str, String str2, String str3) {
-                hft hftVar2 = hft.this;
+                hft hftVar2 = hftVar;
                 obr.aF(obj instanceof HardwareBuffer);
                 hftVar2.a(j, msq.b((HardwareBuffer) obj), i, str2, str3);
             }
@@ -88,14 +88,14 @@ public final class hfs implements gjt {
             @Override // java.lang.Runnable
             public final void run() {
                 pih pihVar;
-                LongFloatConsumer longFloatConsumer;
-                LongStringConsumer longStringConsumer;
-                LongConsumer longConsumer;
-                Long valueOf;
-                long j2;
-                long j3;
-                long j4;
-                PortraitRequest portraitRequest2;
+                LongFloatConsumer longFloatConsumer = null;
+                LongStringConsumer longStringConsumer = null;
+                LongConsumer longConsumer = null;
+                Long valueOf = null;
+                long j2 = 0;
+                long j3 = 0;
+                long j4 = 0;
+                PortraitRequest portraitRequest2 = null;
                 final hfs hfsVar = hfs.this;
                 final ega egaVar2 = egaVar;
                 final pih pihVar2 = f;
@@ -117,7 +117,7 @@ public final class hfs implements gjt {
                                 longFloatConsumer = new LongFloatConsumer() { // from class: hfn
                                     @Override // com.google.googlex.gcam.base.function.LongFloatConsumer
                                     public final void accept(long j6, float f3) {
-                                        ega egaVar3 = ega.this;
+                                        ega egaVar3 = egaVar2;
                                         ouj oujVar2 = hfw.a;
                                         if (egaVar3 != null) {
                                             boolean z3 = false;
@@ -136,7 +136,7 @@ public final class hfs implements gjt {
                                     @Override // com.google.googlex.gcam.base.function.LongStringConsumer
                                     public final void accept(long j6, String str) {
                                         pdo pdoVar;
-                                        ega egaVar3 = ega.this;
+                                        ega egaVar3 = egaVar2;
                                         try {
                                             pdoVar = (pdo) ppd.s(pdo.a, Base64.decode(str, 0), pos.b());
                                         } catch (ppp e) {
@@ -158,7 +158,7 @@ public final class hfs implements gjt {
                                 longConsumer = new LongConsumer() { // from class: hfm
                                     @Override // com.google.googlex.gcam.base.function.LongConsumer
                                     public final void accept(long j6) {
-                                        pih pihVar4 = pih.this;
+                                        pih pihVar4 = pihVar3;
                                         ega egaVar3 = egaVar2;
                                         ouj oujVar2 = hfw.a;
                                         pihVar4.o(true);
@@ -350,15 +350,15 @@ public final class hfs implements gjt {
                                     j4 = hfuVar.c.a;
                                     portraitRequest2 = hfuVar.d;
                                 } catch (Throwable th2) {
-                                    th = th2;
+                                    th2.printStackTrace();
                                 }
                                 try {
                                     portraitProcessorInterface.processImpl(portraitProcessorInterface.a, j5, j2, j3, j4, 0L, portraitRequest2 == null ? 0L : portraitRequest2.a, ((Integer) hfsVar.l.f.a(ddx.b).c()).intValue());
                                     hfsVar.l.i.remove(valueOf);
                                     portraitProcessorInterface.close();
                                 } catch (Throwable th3) {
-                                    th = th3;
-                                    Throwable th4 = th;
+                                    th3.printStackTrace();
+                                    Throwable th4 = th3;
                                     try {
                                         portraitProcessorInterface.close();
                                     } catch (Throwable th5) {
@@ -366,10 +366,9 @@ public final class hfs implements gjt {
                                     throw th4;
                                 }
                             } catch (Throwable th6) {
-                                th = th6;
-                                egaVar2 = obj;
+                                th6.printStackTrace();
                                 try {
-                                    throw th;
+                                    throw th6;
                                 } catch (Exception e) {
                                     e = e;
                                     ((oug) ((oug) ((oug) hfw.a.b()).h(e)).G((char) 2427)).o("Error processing the input image:");
@@ -378,10 +377,10 @@ public final class hfs implements gjt {
                             }
                         }
                     } catch (Throwable th7) {
-                        th = th7;
+                        th7.printStackTrace();
                     }
                 } catch (Exception e2) {
-                    e = e2;
+                    e2.printStackTrace();
                     pihVar = pihVar2;
                 }
             }

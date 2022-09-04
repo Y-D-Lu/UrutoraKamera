@@ -36,10 +36,15 @@ public final class dxx implements dxt {
                         dataOutputStream.write(array);
                         return c;
                     } catch (IOException e) {
-                        throw new IOException("Could not write into ByteArrayOutputStream", e);
+                        e.printStackTrace();
+//                        throw new IOException("Could not write into ByteArrayOutputStream", e);
                     }
                 } finally {
-                    dataOutputStream.close();
+                    try {
+                        dataOutputStream.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             default:
                 ByteArrayOutputStream c2 = dug.c();

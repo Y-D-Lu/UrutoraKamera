@@ -9,6 +9,7 @@ import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -87,24 +88,30 @@ public class GoogleSignInOptions extends kno implements ReflectedParcelable, kid
         if (TextUtils.isEmpty(str)) {
             return null;
         }
-        JSONObject jSONObject = new JSONObject(str);
-        HashSet hashSet = new HashSet();
-        JSONArray jSONArray = jSONObject.getJSONArray("scopes");
-        int length = jSONArray.length();
-        for (int i = 0; i < length; i++) {
-            hashSet.add(new Scope(jSONArray.getString(i)));
+        JSONObject jSONObject = null;
+        try {
+            jSONObject = new JSONObject(str);
+            HashSet hashSet = new HashSet();
+            JSONArray jSONArray = jSONObject.getJSONArray("scopes");
+            int length = jSONArray.length();
+            for (int i = 0; i < length; i++) {
+                hashSet.add(new Scope(jSONArray.getString(i)));
+            }
+            String optString = jSONObject.has("accountName") ? jSONObject.optString("accountName") : null;
+            Account account = !TextUtils.isEmpty(optString) ? new Account(optString, "com.google") : null;
+            ArrayList arrayList = new ArrayList(hashSet);
+            boolean z = jSONObject.getBoolean("idTokenRequested");
+            boolean z2 = jSONObject.getBoolean("serverAuthRequested");
+            boolean z3 = jSONObject.getBoolean("forceCodeForRefreshToken");
+            String optString2 = jSONObject.has("serverClientId") ? jSONObject.optString("serverClientId") : null;
+            if (jSONObject.has("hostedDomain")) {
+                str2 = jSONObject.optString("hostedDomain");
+            }
+            return new GoogleSignInOptions(3, arrayList, account, z, z2, z3, optString2, str2, new HashMap(), null);
+        } catch (JSONException ex) {
+            ex.printStackTrace();
         }
-        String optString = jSONObject.has("accountName") ? jSONObject.optString("accountName") : null;
-        Account account = !TextUtils.isEmpty(optString) ? new Account(optString, "com.google") : null;
-        ArrayList arrayList = new ArrayList(hashSet);
-        boolean z = jSONObject.getBoolean("idTokenRequested");
-        boolean z2 = jSONObject.getBoolean("serverAuthRequested");
-        boolean z3 = jSONObject.getBoolean("forceCodeForRefreshToken");
-        String optString2 = jSONObject.has("serverClientId") ? jSONObject.optString("serverClientId") : null;
-        if (jSONObject.has("hostedDomain")) {
-            str2 = jSONObject.optString("hostedDomain");
-        }
-        return new GoogleSignInOptions(3, arrayList, account, z, z2, z3, optString2, str2, new HashMap(), null);
+        return null;
     }
 
     public static Map c(List list) {

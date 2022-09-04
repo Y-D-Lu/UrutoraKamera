@@ -14,7 +14,8 @@ public class PatcherAddress {
     String exportName = "Java_com_google_googlex_gcam_GcamModuleJNI_delete_1PortraitRequest";
 
     private long ReadAddr(String str) {
-        return ReadLong(this.properties.getProperty(str)) + this.libStartAddres;
+        return 0;
+        //return ReadLong(this.properties.getProperty(str)) + this.libStartAddres;
     }
 
     private long ReadLong(String str) {

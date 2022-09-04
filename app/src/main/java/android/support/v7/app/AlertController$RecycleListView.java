@@ -5,6 +5,8 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.ListView;
 
+import defpackage.jq;
+
 /* loaded from: classes.dex */
 public class AlertController$RecycleListView extends ListView {
     public final int a;

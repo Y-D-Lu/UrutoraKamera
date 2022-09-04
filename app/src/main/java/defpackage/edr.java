@@ -86,7 +86,7 @@ public final class edr implements phh {
                     try {
                         hpmVar.b(a, b2, f.b, f.a().c(), byteArrayOutputStream);
                         V = ((fpl) ojcVar.c()).b(ikcVar, new ByteArrayInputStream(byteArrayOutputStream.toByteArray()), hsaVar.f(), oih.a, hsaVar.d(), hsaVar.s(), hsaVar.k());
-                    } catch (IOException e) {
+                    } catch (Exception e) {
                         f.b();
                         throw new IllegalStateException(e);
                     }
@@ -98,17 +98,17 @@ public final class edr implements phh {
                     @Override // defpackage.oiu
                     public final Object a(Object obj2) {
                         ikc ikcVar2 = (ikc) obj2;
-                        return gjx.this;
+                        return gjxVar;
                     }
                 }, pgr.a));
             } catch (RuntimeException e2) {
-                e = e2;
+                e2.printStackTrace();
                 edrVar = this;
-                ((oug) ((oug) ((oug) edu.a.b()).h(e)).G((char) 1073)).r("Error attaching jpeg image to the session %s", edrVar.d.s());
+                ((oug) ((oug) ((oug) edu.a.b()).h(e2)).G((char) 1073)).r("Error attaching jpeg image to the session %s", edrVar.d.s());
                 edrVar.g.o(null);
             }
         } catch (RuntimeException e3) {
-            e = e3;
+            e3.printStackTrace();
         }
     }
 }

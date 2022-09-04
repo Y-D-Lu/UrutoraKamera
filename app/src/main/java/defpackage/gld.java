@@ -23,7 +23,7 @@ public final class gld implements oiu {
         long d = hinVar.a.d();
         hinVar.a.close();
         ArrayList arrayList = new ArrayList();
-        for (mad madVar : this.a) {
+        for (mad madVar : (Set<mad>) this.a) {
             arrayList.add(Long.valueOf(madVar.d()));
         }
         int indexOf = arrayList.indexOf(Long.valueOf(d));

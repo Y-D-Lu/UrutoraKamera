@@ -39,12 +39,8 @@ public final class dcj {
     public final synchronized void a(float f, float f2, long j) {
         this.e = ojc.i(new hkm(f, f2, null, null));
         if (!this.f.g()) {
-            this.f = ojc.i(new dcr(new dcq(this) { // from class: dci
-                public final /* synthetic */ dcj a;
-
-                {
-                    this.a = this;
-                }
+            this.f = ojc.i(new dcr(new dcq() { // from class: dci
+                public final /* synthetic */ dcj a = dcj.this;
 
                 @Override // defpackage.dcq
                 public final boolean a() {
@@ -60,12 +56,8 @@ public final class dcj {
                             return Math.abs(((hkm) dcjVar2.e.c()).a) > dcjVar2.c || Math.abs(((hkm) dcjVar2.e.c()).b) > dcjVar2.d;
                     }
                 }
-            }, new dcq(this) { // from class: dci
-                public final /* synthetic */ dcj a;
-
-                {
-                    this.a = this;
-                }
+            }, new dcq() { // from class: dci
+                public final /* synthetic */ dcj a = dcj.this;
 
                 @Override // defpackage.dcq
                 public final boolean a() {

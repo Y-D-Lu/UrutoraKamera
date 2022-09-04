@@ -25,7 +25,7 @@ public final class edi implements Supplier {
         lapVar.c(imtVar.d(a.a()));
     }
 
-    @Override // java.util.function.Supplier
+//    @Override // java.util.function.Supplier
     /* renamed from: get */
     public final /* bridge */ /* synthetic */ Object mo291get() {
         synchronized (this) {
@@ -43,5 +43,10 @@ public final class edi implements Supplier {
             }
             return Boolean.valueOf(z);
         }
+    }
+
+    @Override
+    public Object get() {
+        return mo291get();
     }
 }

@@ -3,12 +3,12 @@ package defpackage;
 /* renamed from: hxa  reason: default package */
 /* loaded from: classes.dex */
 public final class hxa {
-    public final iap a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final boolean e;
-    public final int f;
+    public iap a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public boolean e;
+    public int f;
 
     public hxa() {
     }

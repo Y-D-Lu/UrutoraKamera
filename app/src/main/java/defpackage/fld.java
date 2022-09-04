@@ -38,7 +38,7 @@ public final class fld implements hsb {
         ofInt.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: flc
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                fle.this.b.setImageAlpha(((Integer) valueAnimator.getAnimatedValue()).intValue());
+                fleVar2.b.setImageAlpha(((Integer) valueAnimator.getAnimatedValue()).intValue());
             }
         });
         ofInt.setInterpolator(new AccelerateInterpolator());

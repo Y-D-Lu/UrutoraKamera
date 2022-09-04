@@ -5,6 +5,7 @@ import android.graphics.Rect;
 import java.io.Closeable;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /* loaded from: classes.dex */
 public class MlImage implements Closeable {
@@ -27,7 +28,7 @@ public class MlImage implements Closeable {
         int i = this.c - 1;
         this.c = i;
         if (i == 0) {
-            for (ImageContainer imageContainer : this.a.values()) {
+            for (ImageContainer imageContainer : (Set<ImageContainer>) this.a.values()) {
                 imageContainer.close();
             }
         }

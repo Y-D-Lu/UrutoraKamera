@@ -4,4 +4,8 @@ package defpackage;
 /* loaded from: classes.dex */
 public final /* synthetic */ class foa {
     public final /* synthetic */ hsa a;
+
+    public foa(hsa hsaVar) {
+        a = hsaVar;
+    }
 }

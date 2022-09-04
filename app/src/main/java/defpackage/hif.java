@@ -34,7 +34,7 @@ public class hif implements hid {
             unmodifiableSet = Collections.unmodifiableSet(new HashSet(((hia) hicVar).g));
         }
         HashSet hashSet = new HashSet();
-        for (hin hinVar : this.e) {
+        for (hin hinVar : (Set<hin>) this.e) {
             mad madVar = hinVar.a;
             if (madVar != null && unmodifiableSet.contains(madVar)) {
                 hic hicVar2 = this.f;
@@ -72,7 +72,7 @@ public class hif implements hid {
                 HashSet hashSet = new HashSet(1);
                 hashSet.add(hjbVar);
                 ((hia) hicVar).d(hjbVar.g, hashSet, false, true, i);
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
                 throw new IllegalStateException("Interrupt should NOT happen, because call is non-blocking");
             }

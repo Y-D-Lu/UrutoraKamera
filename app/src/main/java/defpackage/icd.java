@@ -147,7 +147,7 @@ public final /* synthetic */ class icd implements Function {
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj2) {
                         Animator animator = (Animator) obj2;
-                        iek.this.setVisibility(8);
+                        iekVar2.setVisibility(8);
                     }
 
                     @Override // java.util.function.Consumer

@@ -4,11 +4,9 @@ import android.graphics.Rect;
 
 import org.codeaurora.snapcam.R;
 
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Map;
-
-import java.time.temporal.ChronoUnit;
-import java.util.Collection;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -181,7 +179,7 @@ public final /* synthetic */ class cgw implements Function {
                 return new Runnable() { // from class: bvy
                     @Override // java.lang.Runnable
                     public final void run() {
-                        bvv.this.fz();
+                        bvvVar.fz();
                     }
                 };
             case 15:
@@ -197,7 +195,7 @@ public final /* synthetic */ class cgw implements Function {
 
                     @Override // java.util.function.Function
                     public final Object apply(Object obj2) {
-                        gto gtoVar2 = gto.this;
+                        gto gtoVar2 = gtoVar;
                         gtv gtvVar = (gtv) obj2;
                         return new gtl(gtvVar, gtoVar2.b(gtvVar), gtoVar2.c(gtvVar), gtoVar2.a(gtvVar));
                     }

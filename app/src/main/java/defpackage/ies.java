@@ -11,10 +11,8 @@ import com.hdrindicator.DisplayHelper;
 
 import org.codeaurora.snapcam.R;
 
-import java.util.ArrayList;
-
 import java.time.Duration;
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.function.Consumer;
 
 /* renamed from: ies  reason: default package */
@@ -106,7 +104,7 @@ public final class ies extends LinearLayout {
         (this.b.stream()).forEachOrdered(new Consumer() { // from class: ien
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
-                ((iek) obj).setColorFilter((ColorFilter) ojc.this.f());
+                ((iek) obj).setColorFilter((ColorFilter) ojcVar.f());
             }
 
             @Override // java.util.function.Consumer

@@ -31,7 +31,7 @@ public final class dzq implements ebp {
                 @Override // java.lang.Runnable
                 public final void run() {
                     hgz hgzVar;
-                    gkr gkrVar = gkr.this;
+                    gkr gkrVar = b;
                     ByteBuffer byteBuffer = duplicate;
                     try {
                         FileOutputStream e = gkrVar.b.e();

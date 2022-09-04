@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Set;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: cfb  reason: default package */
 /* loaded from: classes.dex */
@@ -37,7 +39,7 @@ public final class cfb implements epi {
         synchronized (this.a.w) {
             cjr cjrVar = (cjr) ((lce) this.a.r.f).d;
             if ((!z && cjrVar != cjr.RECORDING_SESSION_ACTIVE) || (z && cjrVar == cjr.RECORDING_SESSION_ACTIVE)) {
-                for (chy chyVar : this.a.f) {
+                for (chy chyVar : (Set<chy>) this.a.f) {
                     chyVar.j(true);
                 }
                 if (z) {

@@ -91,7 +91,7 @@ public final class igb implements gto {
                 inflate.findViewById(org.codeaurora.snapcam.R.id.learn_more_about_speech_enhance).setOnClickListener(new View.OnClickListener() { // from class: ihe
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
-                        ihg.this.a();
+                        ihgVar.a();
                     }
                 });
                 iusVar.g(10, org.codeaurora.snapcam.R.string.speech_btmsheet_not_available_title, inflate, null, ihgVar.b);

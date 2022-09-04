@@ -33,7 +33,7 @@ public final class frl implements mln {
         phtVar.d(new Runnable() { // from class: frk
             @Override // java.lang.Runnable
             public final void run() {
-                pht phtVar2 = pht.this;
+                pht phtVar2 = phtVar;
                 pih pihVar = f;
                 MediaFormat mediaFormat2 = mediaFormat;
                 if (phtVar2.isCancelled()) {
@@ -126,7 +126,7 @@ public final class frl implements mln {
                     pstVar5.a = i | 4;
                     pstVar5.d = i2;
                     pihVar.o(ojc.i((pst) m.j()));
-                } catch (ExecutionException e) {
+                } catch (Exception e) {
                     throw new IllegalStateException("Format should be done by now", e);
                 }
             }

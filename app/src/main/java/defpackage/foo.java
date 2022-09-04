@@ -40,7 +40,7 @@ public final class foo implements fpl {
                 fouVar.b.execute(new Runnable() { // from class: fnx
                     @Override // java.lang.Runnable
                     public final void run() {
-                        fou fouVar2 = fou.this;
+                        fou fouVar2 = fouVar;
                         ikc ikcVar3 = ikcVar2;
                         ojc ojcVar3 = ojcVar2;
                         iij iijVar3 = iijVar2;
@@ -93,7 +93,7 @@ public final class foo implements fpl {
                             fouVar.p.postDelayed(new Runnable() { // from class: fof
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    fou fouVar2 = fou.this;
+                                    fou fouVar2 = fouVar;
                                     fot fotVar2 = fotVar;
                                     fos fosVar2 = fosVar;
                                     if (fotVar2.l.getAndSet(true)) {
@@ -113,11 +113,11 @@ public final class foo implements fpl {
                         }
                         plk.af(fotVar.o.b(), new foq(fouVar, fotVar, fosVar), fouVar.c);
                         return fotVar.n;
-                    } catch (IOException e) {
+                    } catch (Exception e) {
                         ((oug) ((oug) ((oug) fou.a.b()).h(e)).G((char) 1801)).o("Error occurred fetching jpeg bytes in finishMicrovideo");
                         return plk.U(e);
                     }
-                } catch (ExecutionException e2) {
+                } catch (Exception e2) {
                     ((oug) ((oug) ((oug) fou.a.b()).h(e2)).G((char) 1802)).o("Location info found for a non-long shot");
                     return plk.U(e2);
                 }

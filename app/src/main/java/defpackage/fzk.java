@@ -7,6 +7,10 @@ import com.google.android.apps.camera.ui.views.ViewfinderCover;
 public final /* synthetic */ class fzk {
     public final /* synthetic */ fzn a;
 
+    public fzk(fzn fznVar) {
+        a = fznVar;
+    }
+
     public final void a(final jrl jrlVar) {
         final fzn fznVar = this.a;
         synchronized (fznVar.b) {

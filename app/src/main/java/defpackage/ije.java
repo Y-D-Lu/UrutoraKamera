@@ -118,7 +118,7 @@ public final class ije implements pys {
                     @Override // java.lang.Runnable
                     public final void run() {
                         boolean z;
-                        dei deiVar = dei.this;
+                        dei deiVar = a2;
                         Context context = a;
                         lar larVar2 = larVar;
                         if (deiVar == dei.ENG || deiVar == dei.FISHFOOD) {
@@ -172,7 +172,7 @@ public final class ije implements pys {
                 return ope.H(new iho() { // from class: ill
                     @Override // java.lang.Runnable
                     public final void run() {
-                        qkg qkgVar2 = qkg.this;
+                        qkg qkgVar2 = qkgVar;
                         iau a3 = iav.a();
                         a3.a = "StorageWarning";
                         a3.c(ope.K(jrl.PHOTO, jrl.PORTRAIT, jrl.LONG_EXPOSURE, jrl.VIDEO));
@@ -210,7 +210,7 @@ public final class ije implements pys {
                 return mip.eR(new Runnable() { // from class: ivr
                     @Override // java.lang.Runnable
                     public final void run() {
-                        lis lisVar = lis.this;
+                        lis lisVar = a4;
                         ikh ikhVar2 = ikhVar;
                         lisVar.g("pre-initializing indicator cache");
                         ikhVar2.a();
@@ -226,7 +226,7 @@ public final class ije implements pys {
                 return new jqn() { // from class: ivu
                     @Override // defpackage.jqn
                     public final void a() {
-                        pyn pynVar = pyn.this;
+                        pyn pynVar = a5;
                         ((bue) pynVar.get()).c(ivzVar);
                     }
                 };

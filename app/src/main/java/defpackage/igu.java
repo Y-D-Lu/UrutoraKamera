@@ -116,8 +116,12 @@ public final class igu implements ihc, gtu {
                     jlzVar.i();
                     jlzVar.h = iguVar.c.k(ddl.ay);
                     jlzVar.n();
-                    jlzVar.d(new Supplier() { // from class: igt
-                        @Override // java.util.function.Supplier
+                    jlzVar.d(new Supplier() {
+                        @Override
+                        public Object get() {
+                            return Boolean.valueOf(igu.this.h());
+                        } // from class: igt
+//                        @Override // java.util.function.Supplier
                         /* renamed from: get */
                         public final Object mo291get() {
                             return Boolean.valueOf(igu.this.h());

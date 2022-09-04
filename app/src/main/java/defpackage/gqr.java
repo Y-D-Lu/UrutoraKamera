@@ -149,7 +149,7 @@ public final class gqr implements pys {
                 Set<lnq> set = (Set) this.a.mo37get();
                 lvp mo37get2 = ((gjp) this.b).mo37get();
                 HashSet hashSet = new HashSet();
-                for (CaptureRequest.Key key : mo37get2.A()) {
+                for (CaptureRequest.Key key : (Set<CaptureRequest.Key>) mo37get2.A()) {
                     hashSet.add(key.getName());
                 }
                 opc opcVar = new opc();
@@ -189,7 +189,7 @@ public final class gqr implements pys {
                 return aas.d(new Runnable() { // from class: gwl
                     @Override // java.lang.Runnable
                     public final void run() {
-                        lco.this.a(new eqd(lceVar, 2), pgr.a);
+                        a3.a(new eqd(lceVar, 2), pgr.a);
                     }
                 }, "longexaf");
             case 11:
@@ -198,7 +198,7 @@ public final class gqr implements pys {
                     @Override // defpackage.oiu
                     public final Object a(Object obj) {
                         hte hteVar = (hte) obj;
-                        lwd k = lvp.this.k();
+                        lwd k = mo37get3.k();
                         lwd lwdVar = lwd.FRONT;
                         float f3 = DisplayHelper.DENSITY;
                         if (k == lwdVar) {
@@ -270,7 +270,7 @@ public final class gqr implements pys {
                 return aas.d(new Runnable() { // from class: hdl
                     @Override // java.lang.Runnable
                     public final void run() {
-                        qkg qkgVar3 = qkg.this;
+                        qkg qkgVar3 = qkgVar2;
                         gvm gvmVar2 = gvmVar;
                         Set mo37get5 = ((pyw) qkgVar3).mo37get();
                         mo37get5.size();

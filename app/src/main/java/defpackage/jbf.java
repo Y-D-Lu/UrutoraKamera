@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: jbf  reason: default package */
 /* loaded from: classes.dex */
 public final class jbf {
-    private final ojc a;
-    private final int b;
+    private ojc a;
+    private int b;
 
     public jbf() {
     }

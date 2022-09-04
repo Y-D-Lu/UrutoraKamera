@@ -15,7 +15,7 @@ public interface ast extends Cloneable {
 
     atg f();
 
-    void g(String str, atx atxVar, String str2, atx atxVar2);
+    void g(String str, atx atxVar, String str2, atx atxVar2) throws ass;
 
     void h();
 

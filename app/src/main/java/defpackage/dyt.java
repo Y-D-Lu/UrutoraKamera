@@ -35,7 +35,7 @@ public final class dyt extends mip {
                 dyt dytVar = dyt.this;
                 lzv lzvVar2 = lzvVar;
                 String str = (String) lzvVar2.d(CaptureResult.LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_ID);
-                lzv lzvVar3 = str != null ? (lzr) lzvVar2.g().get(str) : null;
+                lzv lzvVar3 = str != null ? (lzv) lzvVar2.g().get(str) : null;
                 if (lzvVar3 == null) {
                     lzvVar3 = lzvVar2;
                 }
@@ -60,7 +60,6 @@ public final class dyt extends mip {
                             ((oug) ((oug) ((oug) dyt.a.b()).H(TimeUnit.MILLISECONDS)).G((char) 995)).o("Null OIS keys (version: 0)");
                             break;
                         }
-                        break;
                     case 1:
                         if (kcz.g != null && kcz.h != null) {
                             long[] jArr2 = (long[]) lzvVar3.d(kcz.d);
@@ -126,7 +125,7 @@ public final class dyt extends mip {
                         ((oug) ((oug) ((oug) dyt.a.b()).H(TimeUnit.MILLISECONDS)).G(994)).p("Invalid OIS API version: %d", dytVar.b);
                         break;
                 }
-                for (mip mipVar : dytVar.c) {
+                for (mip mipVar : (Set<mip>) dytVar.c) {
                     mipVar.b(lzvVar2);
                 }
             }
@@ -134,7 +133,7 @@ public final class dyt extends mip {
     }
 
     public final void h(long j, float f, float f2) {
-        for (dys dysVar : this.g) {
+        for (dys dysVar : (Set<dys>) this.g) {
             dysVar.a(j, f, f2);
         }
     }

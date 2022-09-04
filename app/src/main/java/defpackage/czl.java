@@ -8,12 +8,12 @@ import com.google.android.apps.camera.bottombar.R;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-
-import java.util.concurrent.ConcurrentHashMap;
 
 /* renamed from: czl  reason: default package */
 /* loaded from: classes.dex */
@@ -129,7 +129,7 @@ public final class czl implements iat, hzh, cyv {
                     return;
                 }
                 ArrayMap arrayMap = new ArrayMap();
-                for (nwg nwgVar : ((nwh) ojcVar2.c()).a) {
+                for (nwg nwgVar : (Set<nwg>) ((nwh) ojcVar2.c()).a) {
                     nwi nwiVar = nwgVar.a;
                     if (nwiVar == null) {
                         nwiVar = nwi.b;
@@ -157,12 +157,8 @@ public final class czl implements iat, hzh, cyv {
         if (drawable != null) {
             a.c = drawable;
         }
-        a.d = new Runnable(this) { // from class: cze
-            public final /* synthetic */ czl a;
-
-            {
-                this.a = this;
-            }
+        a.d = new Runnable() { // from class: cze
+            public final /* synthetic */ czl a = czl.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -285,12 +281,8 @@ public final class czl implements iat, hzh, cyv {
                 }
             }
         };
-        a.g = new Runnable(this) { // from class: cze
-            public final /* synthetic */ czl a;
-
-            {
-                this.a = this;
-            }
+        a.g = new Runnable() { // from class: cze
+            public final /* synthetic */ czl a = czl.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -413,12 +405,8 @@ public final class czl implements iat, hzh, cyv {
                 }
             }
         };
-        a.h = new Runnable(this) { // from class: cze
-            public final /* synthetic */ czl a;
-
-            {
-                this.a = this;
-            }
+        a.h = new Runnable() { // from class: cze
+            public final /* synthetic */ czl a = czl.this;
 
             @Override // java.lang.Runnable
             public final void run() {

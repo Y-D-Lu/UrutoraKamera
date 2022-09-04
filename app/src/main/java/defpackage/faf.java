@@ -40,7 +40,7 @@ public final class faf implements phh {
         lapVar.c(b.a(new lij() { // from class: fae
             @Override // defpackage.lij
             public final void fB(Object obj2) {
-                ezn.this.a(((Boolean) obj2).booleanValue());
+                eznVar2.a(((Boolean) obj2).booleanValue());
             }
         }, this.a.g));
         lapVar.c(new lie() { // from class: fad
@@ -54,7 +54,7 @@ public final class faf implements phh {
         fahVar2.g.execute(new Runnable() { // from class: ezw
             @Override // java.lang.Runnable
             public final void run() {
-                fah fahVar3 = fah.this;
+                fah fahVar3 = fahVar2;
                 fwc fwcVar2 = fahVar3.v;
                 if (fwcVar2 != null) {
                     fahVar3.o.b(fwcVar2.c, fwcVar2.a);

@@ -26,7 +26,7 @@ public final class PlaybackStateCompat implements Parcelable {
     final Bundle k;
 
     /* loaded from: classes.dex */
-    public final class CustomAction implements Parcelable {
+    public static final class CustomAction implements Parcelable {
         public static final Parcelable.Creator CREATOR = new ba(14);
         private final String a;
         private final CharSequence b;

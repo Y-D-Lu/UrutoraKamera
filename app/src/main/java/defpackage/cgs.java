@@ -84,12 +84,12 @@ public final class cgs implements lie {
                     lhj lhjVar;
                     int i;
                     Surface surface;
-                    ckt a3;
+                    ckt a3 = null;
                     int intValue;
                     cmz cmzVar;
                     pht V;
                     ojc ojcVar;
-                    cnd cndVar2 = cnd.this;
+                    cnd cndVar2 = cndVar;
                     ckh ckhVar2 = ckhVar;
                     ckd ckdVar2 = ckdVar;
                     cju cjuVar = a2;
@@ -221,7 +221,7 @@ public final class cgs implements lie {
                                         @Override // defpackage.oiu
                                         public final Object a(Object obj) {
                                             Exception exc = (Exception) obj;
-                                            ((oug) ((oug) bww.a.c()).G(145)).r("Failed to resolve %s, returning absent instead.", bww.this.b);
+                                            ((oug) ((oug) bww.a.c()).G(145)).r("Failed to resolve %s, returning absent instead.", c.b);
                                             return oih.a;
                                         }
                                     }, pgr.a));
@@ -230,12 +230,11 @@ public final class cgs implements lie {
                                 lhjVar.s(cndVar2.f.b.k(dcu.D));
                                 cmzVar = new cmz(lhjVar.a(), a3, (hth) cjuVar.q.fA(), (cik) cjuVar.r.fA());
                             } catch (Exception e2) {
-                                e = e2;
                                 cktVar = a3;
                                 if (cktVar != null) {
                                     cktVar.a.close();
                                 }
-                                throw e;
+                                throw e2;
                             }
                         }
                         csh cshVar2 = ckhVar2.d;

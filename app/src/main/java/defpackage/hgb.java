@@ -39,12 +39,8 @@ public final class hgb extends iam {
         iaw a = iax.a();
         a.b = this.d.getString(R.string.portrait_suggestion_text);
         a.c = this.d.getDrawable(R.drawable.quantum_gm_ic_portrait_white_24, null);
-        a.d = new Runnable(this) { // from class: hga
-            public final /* synthetic */ hgb a;
-
-            {
-                this.a = this;
-            }
+        a.d = new Runnable() { // from class: hga
+            public final /* synthetic */ hgb a = hgb.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -61,12 +57,8 @@ public final class hgb extends iam {
                 }
             }
         };
-        a.g = new Runnable(this) { // from class: hga
-            public final /* synthetic */ hgb a;
-
-            {
-                this.a = this;
-            }
+        a.g = new Runnable() { // from class: hga
+            public final /* synthetic */ hgb a = hgb.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -83,12 +75,8 @@ public final class hgb extends iam {
                 }
             }
         };
-        a.h = new Runnable(this) { // from class: hga
-            public final /* synthetic */ hgb a;
-
-            {
-                this.a = this;
-            }
+        a.h = new Runnable() { // from class: hga
+            public final /* synthetic */ hgb a = hgb.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -117,7 +105,7 @@ public final class hgb extends iam {
     @Override // defpackage.iam
     protected final boolean e(lzv lzvVar) {
         Face[] faceArr;
-        Rect rect;
+        Rect rect = null;
         if (this.c || (faceArr = (Face[]) lzvVar.d(CaptureResult.STATISTICS_FACES)) == null) {
             return false;
         }

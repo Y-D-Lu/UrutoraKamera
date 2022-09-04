@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* renamed from: gyr  reason: default package */
@@ -32,7 +33,7 @@ public final class gyr implements lmv {
                             gyr gyrVar2 = gyr.this;
                             lrr lrrVar2 = lrrVar;
                             synchronized (gyrVar2) {
-                                for (lmu lmuVar : gyrVar2.a) {
+                                for (lmu lmuVar : (Set<lmu>) gyrVar2.a) {
                                     lmuVar.a(lrrVar2);
                                 }
                             }

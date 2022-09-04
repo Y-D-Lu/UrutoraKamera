@@ -27,17 +27,17 @@ public final class dq {
     }
 
     public static void f(dp dpVar) {
-        d.o(dpVar.e, dpVar.a.M);
+        defpackage.d.o(dpVar.e, dpVar.a.M);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static dq g(ViewGroup viewGroup) {
-        Object tag = viewGroup.getTag(R.id.special_effects_controller_view_tag);
+        Object tag = viewGroup.getTag(com.google.android.apps.camera.bottombar.R.id.special_effects_controller_view_tag);
         if (tag instanceof dq) {
             return (dq) tag;
         }
         dq dqVar = new dq(viewGroup);
-        viewGroup.setTag(R.id.special_effects_controller_view_tag, dqVar);
+        viewGroup.setTag(com.google.android.apps.camera.bottombar.R.id.special_effects_controller_view_tag, dqVar);
         return dqVar;
     }
 
@@ -109,7 +109,7 @@ public final class dq {
         for (int i = 0; i < size; i++) {
             dp dpVar = (dp) arrayList.get(i);
             if (dpVar.f == 2) {
-                dpVar.f(d.m(dpVar.a.B().getVisibility()), 1);
+                dpVar.f(defpackage.d.m(dpVar.a.B().getVisibility()), 1);
             }
         }
     }

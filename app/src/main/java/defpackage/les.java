@@ -7,19 +7,19 @@ import com.Helper;
 /* renamed from: les  reason: default package */
 /* loaded from: classes3.dex */
 public final class les {
-    public final int a;
-    public final int b;
-    public final int c;
-    public final int d;
-    public final int e;
-    public final int f;
-    public final int g;
-    public final int h;
-    public final int i;
-    public final int j;
-    public final int k;
-    public final int l;
-    public final int m;
+    public int a;
+    public int b;
+    public int c;
+    public int d;
+    public int e;
+    public int f;
+    public int g;
+    public int h;
+    public int i;
+    public int j;
+    public int k;
+    public int l;
+    public int m;
 
     public les() {
     }

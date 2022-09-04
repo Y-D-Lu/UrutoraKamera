@@ -165,7 +165,7 @@ public final class ife implements iet {
                             iekVar2.setOnClickListener(new View.OnClickListener() { // from class: iei
                                 @Override // android.view.View.OnClickListener
                                 public final void onClick(View view) {
-                                    iek iekVar3 = iek.this;
+                                    iek iekVar3 = iekVar2;
                                     iby ibyVar2 = ibyVar;
                                     if (iekVar3.e) {
                                         ibyVar2.c();
@@ -226,7 +226,7 @@ public final class ife implements iet {
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         Animator animator = (Animator) obj;
-                        pih.this.o(Boolean.TRUE);
+                        f.o(Boolean.TRUE);
                     }
 
                     @Override // java.util.function.Consumer
@@ -239,7 +239,7 @@ public final class ife implements iet {
                 final acr acrVar = new acr() { // from class: iex
                     @Override // defpackage.acr
                     public final void a() {
-                        pih.this.o(Boolean.TRUE);
+                        f.o(Boolean.TRUE);
                     }
                 };
                 d = iesVar.d();
@@ -249,7 +249,7 @@ public final class ife implements iet {
                 valueAnimator.addListener(mip.ev(new Consumer() { // from class: iel
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        final ies iesVar2 = ies.this;
+                        final ies iesVar2 = iesVar;
                         acr acrVar2 = acrVar;
                         Animator animator = (Animator) obj;
                         iesVar2.f(false);
@@ -264,7 +264,7 @@ public final class ife implements iet {
                         acxVar.g(new acr() { // from class: ieq
                             @Override // defpackage.acr
                             public final void a() {
-                                ies iesVar3 = ies.this;
+                                ies iesVar3 = iesVar;
                                 iesVar3.f(true);
                                 iesVar3.setTranslationY(DisplayHelper.DENSITY);
                                 iesVar3.getLayoutParams().height = iesVar3.c();
@@ -492,7 +492,7 @@ public final class ife implements iet {
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     Animator animator = (Animator) obj;
-                    ifj.this.a.setVisibility(4);
+                    ifjVar.a.setVisibility(4);
                 }
 
                 @Override // java.util.function.Consumer

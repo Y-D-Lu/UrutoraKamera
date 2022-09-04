@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: dkm  reason: default package */
 /* loaded from: classes.dex */
@@ -20,7 +21,7 @@ public final class dkm {
         double aR2 = mip.aR(lvpVar);
         double d = -100.0d;
         float f2 = -1.0f;
-        for (Float f3 : lvpVar.t()) {
+        for (Float f3 : (Set<Float>) lvpVar.t()) {
             double aP = mip.aP(f3.floatValue(), aR2);
             double d2 = f;
             Double.isNaN(d2);

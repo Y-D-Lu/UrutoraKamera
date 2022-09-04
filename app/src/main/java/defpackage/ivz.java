@@ -40,8 +40,29 @@ public final class ivz implements btw {
 
     @Override // defpackage.btw
     public final void a() {
-        this.e.accept(new Supplier() { // from class: ivy
-            @Override // java.util.function.Supplier
+        this.e.accept(new Supplier() {
+            @Override
+            public Object get() {
+                ivz ivzVar = ivz.this;
+                try {
+                    int a2 = ivzVar.c.a();
+                    bty b = ivzVar.c.b();
+                    DisplayMetrics displayMetrics = new DisplayMetrics();
+                    ivzVar.b.getDefaultDisplay().getMetrics(displayMetrics);
+                    int i = displayMetrics.widthPixels;
+                    jry e = b != null ? b.e(i, i) : null;
+                    if (e == null || !e.a.g()) {
+                        return a2 == 0 ? ivt.a() : new ivt(null);
+                    }
+                    Bitmap bitmap = (Bitmap) e.a.c();
+                    new lig(bitmap.getWidth(), bitmap.getHeight());
+                    return new ivt(bitmap);
+                } catch (RuntimeException e2) {
+                    ((oug) ((oug) ((oug) ivz.a.c()).h(e2)).G((char) 3174)).o("exception generating thumbnail");
+                    return ivt.a();
+                }
+            } // from class: ivy
+//            @Override // java.util.function.Supplier
             /* renamed from: get */
             public final Object mo291get() {
                 ivz ivzVar = ivz.this;

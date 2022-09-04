@@ -5,8 +5,6 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.TextView;
 
-import org.codeaurora.snapcam.R;
-
 /* renamed from: fz  reason: default package */
 /* loaded from: classes.dex */
 public final class fz {
@@ -28,7 +26,7 @@ public final class fz {
     }
 
     public static void d(View view, ajo ajoVar) {
-        view.setTag(R.id.view_tree_saved_state_registry_owner, ajoVar);
+        view.setTag(com.google.android.apps.camera.bottombar.R.id.view_tree_saved_state_registry_owner, ajoVar);
     }
 
     public static StringBuilder e() {

@@ -136,7 +136,7 @@ public class RoundedThumbnailView extends ImageButton {
 
     /* renamed from: com.google.android.apps.camera.bottombar.RoundedThumbnailView$5  reason: invalid class name */
     /* loaded from: classes.dex */
-    /* synthetic */ class AnonymousClass5 {
+    /* synthetic */static class AnonymousClass5 {
         static final /* synthetic */ int[] $SwitchMap$com$google$android$apps$camera$uiutils$TypedThumbnailBitmap$ThumbnailType;
 
         static {
@@ -176,7 +176,7 @@ public class RoundedThumbnailView extends ImageButton {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: classes.dex */
-    public class RevealRequest {
+    public static class RevealRequest {
         private String accessibilityString;
         private boolean animationDisabled;
         private boolean rippleAnimationFinished;

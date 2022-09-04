@@ -2,14 +2,11 @@ package defpackage;
 
 import android.media.AudioFormat;
 
-import java.io.IOException;
 import java.nio.ByteBuffer;
+import java.time.Duration;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-
-import java.io.UncheckedIOException;
-import java.time.Duration;
 
 /* renamed from: cja  reason: default package */
 /* loaded from: classes.dex */
@@ -73,9 +70,10 @@ public final class cja implements cjb {
                 this.i = ciz.READY;
             }
             return new cis(lxlVar, this, this.g);
-        } catch (IOException e) {
-            throw new UncheckedIOException(e);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        return null;
     }
 
     public final void b(int i) {
@@ -102,7 +100,7 @@ public final class cja implements cjb {
                     cinVar.f++;
                     if (!cinVar.b.compareAndSet(true, false)) {
                         Duration ofNanos = Duration.ofNanos(b - cinVar.h);
-                        int nanos = (int) (ofNanos.minus(Duration.ofNanos(((float) cinVar.g.toNanos()) * 0.2f)).toNanos() / cinVar.g.toNanos());
+                        int nanos = (int) (ofNanos.minus(Duration.ofNanos((long) (((float) cinVar.g.toNanos()) * 0.2f))).toNanos() / cinVar.g.toNanos());
                         if (nanos > 0) {
                             cinVar.e += nanos;
                             ((oug) ((oug) cin.a.c()).G(426)).B("Audio packet timestamp: %d. Expected frame duration: %d ns. Elapsed time: %d ns. Possible frame loss counts: %d", Long.valueOf(b), Long.valueOf(cinVar.g.toNanos()), Long.valueOf(ofNanos.toNanos()), Integer.valueOf(nanos));

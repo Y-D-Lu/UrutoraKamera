@@ -155,12 +155,8 @@ public final class ctl implements ctm, lie, fik, fig, fie {
         b2.i(this.e, this.x);
         b2.a = new cti(this);
         this.f.f();
-        this.s.c(this.a.a(new lij(this) { // from class: ctf
-            public final /* synthetic */ ctl a;
-
-            {
-                this.a = this;
-            }
+        this.s.c(this.a.a(new lij() { // from class: ctf
+            public final /* synthetic */ ctl a = ctl.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -198,7 +194,7 @@ public final class ctl implements ctm, lie, fik, fig, fie {
                         }
                         synchronized (ctlVar3.i) {
                             ctlVar3.k = jrlVar;
-                            for (fzk fzkVar : ctlVar3.c) {
+                            for (fzk fzkVar : (Set<fzk>) ctlVar3.c) {
                                 fzkVar.a(jrlVar);
                             }
                         }
@@ -207,12 +203,8 @@ public final class ctl implements ctm, lie, fik, fig, fie {
                 }
             }
         }, mip.bS()));
-        this.s.c(this.q.a(new lij(this) { // from class: ctf
-            public final /* synthetic */ ctl a;
-
-            {
-                this.a = this;
-            }
+        this.s.c(this.q.a(new lij() { // from class: ctf
+            public final /* synthetic */ ctl a = ctl.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -250,7 +242,7 @@ public final class ctl implements ctm, lie, fik, fig, fie {
                         }
                         synchronized (ctlVar3.i) {
                             ctlVar3.k = jrlVar;
-                            for (fzk fzkVar : ctlVar3.c) {
+                            for (fzk fzkVar : (Set<fzk>) ctlVar3.c) {
                                 fzkVar.a(jrlVar);
                             }
                         }
@@ -259,12 +251,8 @@ public final class ctl implements ctm, lie, fik, fig, fie {
                 }
             }
         }, this.u));
-        this.s.c(this.r.a(new lij(this) { // from class: ctf
-            public final /* synthetic */ ctl a;
-
-            {
-                this.a = this;
-            }
+        this.s.c(this.r.a(new lij() { // from class: ctf
+            public final /* synthetic */ ctl a = ctl.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -302,7 +290,7 @@ public final class ctl implements ctm, lie, fik, fig, fie {
                         }
                         synchronized (ctlVar3.i) {
                             ctlVar3.k = jrlVar;
-                            for (fzk fzkVar : ctlVar3.c) {
+                            for (fzk fzkVar : (Set<fzk>) ctlVar3.c) {
                                 fzkVar.a(jrlVar);
                             }
                         }
@@ -365,7 +353,7 @@ public final class ctl implements ctm, lie, fik, fig, fie {
     public final void j(lwd lwdVar) {
         ModeSlider b = this.l.b();
         int i = 0;
-        for (jdz jdzVar : this.e.h) {
+        for (jdz jdzVar : (Set<jdz>) this.e.h) {
             if (!jdzVar.d) {
                 if (lwdVar.equals(lwd.FRONT)) {
                     b.getChildAt(i).setVisibility(8);
@@ -394,7 +382,7 @@ public final class ctl implements ctm, lie, fik, fig, fie {
                 this.k = jrlVar;
                 this.v.W(jri.f(jrlVar), 2);
                 f(false);
-                for (fzk fzkVar : this.c) {
+                for (fzk fzkVar : (Set<fzk>) this.c) {
                     fzkVar.a(jrlVar);
                 }
                 ModeSlider b = this.l.b();

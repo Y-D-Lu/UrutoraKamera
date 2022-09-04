@@ -94,7 +94,7 @@ public final class bvk implements btv {
         this.j = djuVar;
         this.G = hojVar;
         this.H = ddfVar;
-        this.e = (ViewfinderCover) jnrVar.c.c(R.id.viewfinder_cover);
+        this.e = (ViewfinderCover) jnrVar.c.c(com.google.android.apps.camera.bottombar.R.id.viewfinder_cover);
         this.x = fjsVar;
         this.y = cameraActivityTiming;
         this.z = pihVar;
@@ -107,7 +107,7 @@ public final class bvk implements btv {
         gtgVar.aS = new gtf() { // from class: bvb
             @Override // defpackage.gtf
             public final void a() {
-                bts.this.q();
+                btsVar.q();
             }
         };
         jjpVar.a.f.setOnClickListener(new View.OnClickListener() { // from class: bva
@@ -119,7 +119,7 @@ public final class bvk implements btv {
         bqgVar.i().c(ivjVar.a(new ivi() { // from class: bvd
             @Override // defpackage.ivi
             public final void a() {
-                buc bucVar2 = buc.this;
+                buc bucVar2 = bucVar;
                 ouj oujVar = bvk.a;
                 bucVar2.h();
             }
@@ -129,15 +129,15 @@ public final class bvk implements btv {
         bvi bviVar = new bvi(this);
         this.k = bviVar;
         displayManager.registerDisplayListener(bviVar, null);
-        this.h = (ShutterButton) jnsVar.k.c(R.id.shutter_button);
+        this.h = (ShutterButton) jnsVar.k.c(com.google.android.apps.camera.bottombar.R.id.shutter_button);
         jus a2 = jus.a(constraintLayout);
-        this.g = (FrameLayout) a2.c(R.id.module_layout);
-        this.m = (PreviewOverlay) a2.c(R.id.preview_overlay);
-        this.I = (CaptureAnimationOverlay) a2.c(R.id.capture_animation_overlay);
-        ViewStub viewStub = (ViewStub) a2.c(R.id.face_view_ui_stub);
+        this.g = (FrameLayout) a2.c(com.google.android.apps.camera.bottombar.R.id.module_layout);
+        this.m = (PreviewOverlay) a2.c(com.google.android.apps.camera.bottombar.R.id.preview_overlay);
+        this.I = (CaptureAnimationOverlay) a2.c(com.google.android.apps.camera.bottombar.R.id.capture_animation_overlay);
+        ViewStub viewStub = (ViewStub) a2.c(com.google.android.apps.camera.bottombar.R.id.face_view_ui_stub);
         this.B = new enl(null);
-        djuVar.b((DebugCanvasView) a2.c(R.id.debug_viz_view));
-        jim jimVar = new jim(new jir((ConstraintLayout) mainActivityLayout.findViewById(R.id.activity_root_view), jcfVar, windowManager, this));
+        djuVar.b((DebugCanvasView) a2.c(com.google.android.apps.camera.bottombar.R.id.debug_viz_view));
+        jim jimVar = new jim(new jir((ConstraintLayout) mainActivityLayout.findViewById(com.google.android.apps.camera.bottombar.R.id.activity_root_view), jcfVar, windowManager, this));
         this.M = jimVar;
         this.q = jimVar;
         jim jimVar2 = new jim(new jis(jngVar));

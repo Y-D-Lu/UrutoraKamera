@@ -218,13 +218,13 @@ public final class elc implements pys {
                 final jdy jdyVar = (jdy) this.b.mo37get();
                 final qkg qkgVar5 = this.c;
                 final bqg mo37get3 = ((etg) this.a).mo37get();
-                return new iho(jdyVar, qkgVar5, null, null, null) { // from class: fmo
-                    public final /* synthetic */ qkg a;
-                    public final /* synthetic */ jdy c;
+                return new iho() { // from class: fmo
+                    public final /* synthetic */ qkg a = qkgVar5;
+                    public final /* synthetic */ jdy c = jdyVar;
 
                     @Override // java.lang.Runnable
                     public final void run() {
-                        bqg.this.i().c(this.c.f(((fmr) this.a).mo37get()));
+                        mo37get3.i().c(this.c.f(((fmr) this.a).mo37get()));
                     }
                 };
             case 18:

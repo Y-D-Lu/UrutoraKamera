@@ -243,7 +243,7 @@ public class CameraContentProvider extends ContentProvider {
                             public final void writeDataToPipe(ParcelFileDescriptor parcelFileDescriptor, Uri uri2, String str2, Bundle bundle, Object obj) {
                                 ljf ljfVar4;
                                 BufferedOutputStream bufferedOutputStream;
-                                dxv dxvVar2 = dxv.this;
+                                dxv dxvVar2 = dxvVar;
                                 String str3 = sb5;
                                 ByteArrayOutputStream byteArrayOutputStream = a3;
                                 FileDescriptor fileDescriptor = parcelFileDescriptor.getFileDescriptor();

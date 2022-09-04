@@ -80,7 +80,7 @@ public class FloatingActionButton extends oaa implements nym, oci, aad {
     private nzf o;
 
     /* loaded from: classes.dex */
-    public class BaseBehavior extends aae {
+    public static class BaseBehavior extends aae {
         private Rect a;
         private boolean b;
 

@@ -7,6 +7,7 @@ import com.google.android.libraries.camera.exif.ExifInterface;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
@@ -41,7 +42,7 @@ public final class gko implements gmt {
     }
 
     private final void c() {
-        for (mad madVar : this.g) {
+        for (mad madVar : (Set<mad>) this.g) {
             madVar.close();
         }
     }
@@ -72,7 +73,7 @@ public final class gko implements gmt {
             k.getClass();
             this.a.k().d((lzv) k.get(1000L, TimeUnit.MILLISECONDS), false);
             ArrayList arrayList = new ArrayList();
-            for (gjs gjsVar : this.g) {
+            for (gjs gjsVar : (Set<gjs>) this.g) {
                 if (gjsVar.m()) {
                     arrayList.add(new lwk(gjsVar, 3));
                 } else {
@@ -181,7 +182,7 @@ public final class gko implements gmt {
                     try {
                         glnVar.a.e(a4, K, J, hsaVar, glmVar.d);
                         return new glq(f, f2);
-                    } catch (InterruptedException e) {
+                    } catch (Exception e) {
                         Thread.currentThread().interrupt();
                         throw new IllegalStateException(e);
                     }
@@ -210,12 +211,8 @@ public final class gko implements gmt {
                     b5.a = gkoVar.b.d;
                     return b5.a();
                 }
-            }, pgr.a), new ewp(3), pgr.a), new pgk(this) { // from class: gkl
-                public final /* synthetic */ gko a;
-
-                {
-                    this.a = this;
-                }
+            }, pgr.a), new ewp(3), pgr.a), new pgk() { // from class: gkl
+                public final /* synthetic */ gko a = gko.this;
 
                 @Override // defpackage.pgk
                 public final pht a(Object obj) {
@@ -249,7 +246,7 @@ public final class gko implements gmt {
                             }, pgr.a), new oiu() { // from class: gki
                                 @Override // defpackage.oiu
                                 public final Object a(Object obj2) {
-                                    hin hinVar5 = hin.this;
+                                    hin hinVar5 = hinVar4;
                                     dor dorVar = (dor) obj2;
                                     dorVar.b(hinVar5.d);
                                     if (dorVar.c()) {
@@ -260,12 +257,8 @@ public final class gko implements gmt {
                             }, pgr.a);
                     }
                 }
-            }, pgr.a), new pgk(this) { // from class: gkl
-                public final /* synthetic */ gko a;
-
-                {
-                    this.a = this;
-                }
+            }, pgr.a), new pgk() { // from class: gkl
+                public final /* synthetic */ gko a = gko.this;
 
                 @Override // defpackage.pgk
                 public final pht a(Object obj) {
@@ -299,7 +292,7 @@ public final class gko implements gmt {
                             }, pgr.a), new oiu() { // from class: gki
                                 @Override // defpackage.oiu
                                 public final Object a(Object obj2) {
-                                    hin hinVar5 = hin.this;
+                                    hin hinVar5 = hinVar4;
                                     dor dorVar = (dor) obj2;
                                     dorVar.b(hinVar5.d);
                                     if (dorVar.c()) {

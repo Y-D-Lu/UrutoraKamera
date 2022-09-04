@@ -513,11 +513,11 @@ public class TabLayout extends HorizontalScrollView {
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup
-    public final /* synthetic */ ViewGroup.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
+    public final /* synthetic */ LayoutParams generateLayoutParams(AttributeSet attributeSet) {
         return generateDefaultLayoutParams();
     }
 
-    @Override // android.widget.FrameLayout, android.view.ViewGroup
+//    @Override // android.widget.FrameLayout, android.view.ViewGroup
     /* renamed from: generateLayoutParams  reason: collision with other method in class */
     public final FrameLayout.LayoutParams mo56generateLayoutParams(AttributeSet attributeSet) {
         return generateDefaultLayoutParams();

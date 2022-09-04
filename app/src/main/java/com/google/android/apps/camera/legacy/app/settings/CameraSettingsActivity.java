@@ -70,7 +70,7 @@ public class CameraSettingsActivity extends etd {
             preference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() { // from class: fbs
                 @Override // android.preference.Preference.OnPreferenceChangeListener
                 public final boolean onPreferenceChange(Preference preference2, Object obj) {
-                    fjs.this.p(preference2.getKey(), value, obj);
+                    fjsVar.p(preference2.getKey(), value, obj);
                     return true;
                 }
             });

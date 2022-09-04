@@ -18,7 +18,7 @@ public final class euj implements idd {
             eurVar.e.post(new Runnable() { // from class: etx
                 @Override // java.lang.Runnable
                 public final void run() {
-                    eur eurVar2 = eur.this;
+                    eur eurVar2 = eurVar;
                     if (eurVar2.y || eurVar2.z) {
                         return;
                     }

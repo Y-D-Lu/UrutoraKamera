@@ -17,6 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
@@ -113,7 +114,7 @@ public class hdu implements eav, ebn, ebo, eby {
     public final void e(edd eddVar, lmr lmrVar) {
         String a;
         mad d;
-        FileOutputStream fileOutputStream;
+        FileOutputStream fileOutputStream = null;
         hdv hdvVar = (hdv) this.k.get(eddVar);
         if (hdvVar == null) {
             lmrVar.close();
@@ -135,7 +136,7 @@ public class hdu implements eav, ebn, ebo, eby {
                 ((oug) ((oug) ((oug) DynamicDepthUtils.a.b().g(ovl.a, "CAM_DynDepthUtils")).h(e2)).G(831)).r("IOException while saving Depth debug image %s", file.getName());
             }
             try {
-                for (mac macVar : d.g()) {
+                for (mac macVar : (Set<mac>) d.g()) {
                     ByteBuffer buffer = macVar.getBuffer();
                     int limit = buffer.limit();
                     byte[] bArr = new byte[limit];
@@ -152,7 +153,7 @@ public class hdu implements eav, ebn, ebo, eby {
                     fileOutputStream.close();
                 } catch (Throwable th2) {
                 }
-                throw th;
+                th.printStackTrace();
             }
         } finally {
             d.close();
@@ -200,7 +201,7 @@ public class hdu implements eav, ebn, ebo, eby {
 
     protected DynamicDepthResult j(hcf hcfVar, hdv hdvVar) {
         ljf ljfVar;
-        DynamicDepthResult dynamicDepthResult;
+        DynamicDepthResult dynamicDepthResult = null;
         mad g = hcfVar.g();
         mad d = hcfVar.d();
         hdvVar.d();
@@ -227,11 +228,17 @@ public class hdu implements eav, ebn, ebo, eby {
             g.close();
             throw th;
         }
-        if (this.a.b(d, g, dynamicDepthResult, (ShotMetadata) hdvVar.e.get())) {
-            this.d.f();
-            d.close();
-            g.close();
-            return dynamicDepthResult;
+        try {
+            if (this.a.b(d, g, dynamicDepthResult, (ShotMetadata) hdvVar.e.get())) {
+                this.d.f();
+                d.close();
+                g.close();
+                return dynamicDepthResult;
+            }
+        } catch (ExecutionException ex) {
+            ex.printStackTrace();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
         }
         dynamicDepthResult.close();
         ljfVar = this.d;
@@ -265,13 +272,13 @@ public class hdu implements eav, ebn, ebo, eby {
                 Thread.currentThread().interrupt();
                 ((oug) ((oug) ((oug) e.b()).h(e2)).G(2373)).o("Error retrieving the base frame index.");
             } catch (CancellationException e3) {
-                e = e3;
+                e3.printStackTrace();
                 hdvVar.b();
-                ((oug) ((oug) ((oug) e.b()).h(e)).G(2374)).o("Error retrieving the base frame index.");
+                ((oug) ((oug) ((oug) e.b()).h(e3)).G(2374)).o("Error retrieving the base frame index.");
             } catch (ExecutionException e4) {
-                e = e4;
+                e4.printStackTrace();
                 hdvVar.b();
-                ((oug) ((oug) ((oug) e.b()).h(e)).G(2374)).o("Error retrieving the base frame index.");
+                ((oug) ((oug) ((oug) e.b()).h(e4)).G(2374)).o("Error retrieving the base frame index.");
             }
         } finally {
             l(hdvVar, dynamicDepthResult);

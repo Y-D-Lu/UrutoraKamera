@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dhf  reason: default package */
@@ -27,7 +28,7 @@ public final class dhf {
                     dhf dhfVar = dhf.this;
                     StringBuilder sb = new StringBuilder();
                     sb.append(String.format("REPORT %d %d %d", Integer.valueOf(dhfVar.d - 1), Integer.valueOf(dhfVar.a.t), Integer.valueOf(dhfVar.c)));
-                    for (Integer num : dhfVar.b.keySet()) {
+                    for (Integer num : (Set<Integer>) dhfVar.b.keySet()) {
                         int intValue = num.intValue();
                         Map map = dhfVar.b;
                         Integer valueOf = Integer.valueOf(intValue);
@@ -62,7 +63,7 @@ public final class dhf {
         pcdVar.e = i5;
         pcdVar.a = i6 | 16;
         pcdVar.h = 1;
-        for (Integer num : this.b.keySet()) {
+        for (Integer num : (Set<Integer>) this.b.keySet()) {
             int intValue = num.intValue();
             fcr fcrVar = (fcr) this.b.get(Integer.valueOf(intValue));
             poy m2 = pcb.g.m();
@@ -102,7 +103,7 @@ public final class dhf {
             }
             pcdVar2.f.add(pcbVar2);
         }
-        for (Integer num2 : this.e.keySet()) {
+        for (Integer num2 : (Set<Integer>) this.e.keySet()) {
             int intValue2 = num2.intValue();
             poy m3 = pcc.d.m();
             if (m3.c) {

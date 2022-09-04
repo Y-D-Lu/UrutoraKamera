@@ -26,7 +26,7 @@ final class fop implements phh {
         fouVar.b.execute(new Runnable() { // from class: fod
             @Override // java.lang.Runnable
             public final void run() {
-                fot fotVar2 = fot.this;
+                fot fotVar2 = fotVar;
                 long j = convert;
                 if (fotVar2.h.isDone()) {
                     ((oug) ((oug) fou.a.c()).G(1806)).v("Trying to correct timestamp to %d but it was already set as %d", j, plk.ae(fotVar2.h));

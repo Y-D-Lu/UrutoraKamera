@@ -38,7 +38,7 @@ public final class dob implements pys {
         return !booleanValue ? pid.a : new Runnable() { // from class: dnz
             @Override // java.lang.Runnable
             public final void run() {
-                ghx ghxVar = ghx.this;
+                ghx ghxVar = mo37get;
                 dom domVar2 = domVar;
                 boolean z = booleanValue2;
                 qkg qkgVar3 = qkgVar;

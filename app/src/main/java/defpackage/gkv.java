@@ -20,12 +20,12 @@ final class gkv implements Runnable {
     public final void run() {
         pih pihVar;
         RuntimeException runtimeException;
-        gkw gkwVar;
-        hin hinVar;
-        int width;
-        int i;
-        hjg c;
-        ByteBuffer byteBuffer;
+        gkw gkwVar = null;
+        hin hinVar = null;
+        int width = 0;
+        int i = 0;
+        hjg c = null;
+        ByteBuffer byteBuffer = null;
         try {
             try {
                 gkwVar = this.a;
@@ -69,9 +69,9 @@ final class gkv implements Runnable {
                     }
                     b = gkwVar.d.b(hinVar, byteBuffer.duplicate());
                 } catch (Throwable th2) {
-                    th = th2;
+                    th2.printStackTrace();
                     c.close();
-                    throw th;
+                    throw th2;
                 }
             }
             if (b <= 0) {
@@ -105,7 +105,7 @@ final class gkv implements Runnable {
             if (!this.c.isDone() && !this.c.isCancelled()) {
                 this.c.a(new RuntimeException("Unknown error while encoding imageToProcess"));
             }
-            throw th3;
+            th3.printStackTrace();
         }
     }
 }

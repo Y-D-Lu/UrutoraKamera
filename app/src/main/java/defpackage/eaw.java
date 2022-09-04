@@ -18,7 +18,7 @@ public final class eaw implements eav {
 
     @Override // defpackage.eav
     public final void d(hsp hspVar) {
-        for (eav eavVar : this.a) {
+        for (eav eavVar : (Set<eav>) this.a) {
             ljf ljfVar = this.b;
             String valueOf = String.valueOf(eavVar.getClass().getName());
             ljfVar.e(valueOf.length() != 0 ? "abort#".concat(valueOf) : new String("abort#"));
@@ -29,7 +29,7 @@ public final class eaw implements eav {
 
     @Override // defpackage.eav
     public final void e(edd eddVar, lmr lmrVar) {
-        for (eav eavVar : this.a) {
+        for (eav eavVar : (Set<eav>) this.a) {
             ljf ljfVar = this.b;
             String valueOf = String.valueOf(eavVar.getClass().getName());
             ljfVar.e(valueOf.length() != 0 ? "addPayload#".concat(valueOf) : new String("addPayload#"));
@@ -43,7 +43,7 @@ public final class eaw implements eav {
 
     @Override // defpackage.eav
     public final void f(edd eddVar, BurstSpec burstSpec, lzv lzvVar) {
-        for (eav eavVar : this.a) {
+        for (eav eavVar : (Set<eav>) this.a) {
             ljf ljfVar = this.b;
             String valueOf = String.valueOf(eavVar.getClass().getName());
             ljfVar.e(valueOf.length() != 0 ? "begin#".concat(valueOf) : new String("begin#"));
@@ -54,7 +54,7 @@ public final class eaw implements eav {
 
     @Override // defpackage.eav
     public final void g(hsp hspVar) {
-        for (eav eavVar : this.a) {
+        for (eav eavVar : (Set<eav>) this.a) {
             ljf ljfVar = this.b;
             String valueOf = String.valueOf(eavVar.getClass().getName());
             ljfVar.e(valueOf.length() != 0 ? "start#".concat(valueOf) : new String("start#"));
@@ -65,7 +65,7 @@ public final class eaw implements eav {
 
     @Override // defpackage.eav
     public final void h(edd eddVar) {
-        for (eav eavVar : this.a) {
+        for (eav eavVar : (Set<eav>) this.a) {
             ljf ljfVar = this.b;
             String valueOf = String.valueOf(eavVar.getClass().getName());
             ljfVar.e(valueOf.length() != 0 ? "endPayload#".concat(valueOf) : new String("endPayload#"));
@@ -76,7 +76,7 @@ public final class eaw implements eav {
 
     @Override // defpackage.eav
     public final void i(edd eddVar) {
-        for (eav eavVar : this.a) {
+        for (eav eavVar : (Set<eav>) this.a) {
             ljf ljfVar = this.b;
             String valueOf = String.valueOf(eavVar.getClass().getName());
             ljfVar.e(valueOf.length() != 0 ? "endZslPayload#".concat(valueOf) : new String("endZslPayload#"));

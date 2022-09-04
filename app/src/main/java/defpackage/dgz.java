@@ -11,7 +11,7 @@ public final class dgz {
         return new iho() { // from class: dgw
             @Override // java.lang.Runnable
             public final void run() {
-                bqg bqgVar2 = bqg.this;
+                bqg bqgVar2 = bqgVar;
                 lda ldaVar2 = ldaVar;
                 final dha dhaVar2 = dhaVar;
                 jlb jlbVar2 = jlbVar;
@@ -21,7 +21,7 @@ public final class dgz {
                 i.c(ldaVar2.a(new lij() { // from class: dgx
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        dha.this.d((jrl) obj);
+                        dhaVar2.d((jrl) obj);
                     }
                 }, dgz.a));
                 bqgVar2.i().c(jlbVar2.d(new dgy(dhaVar2)));

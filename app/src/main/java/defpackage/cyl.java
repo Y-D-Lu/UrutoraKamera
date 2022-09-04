@@ -2,8 +2,10 @@ package defpackage;
 
 import android.content.res.AssetFileDescriptor;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: cyl  reason: default package */
@@ -28,9 +30,13 @@ public final class cyl {
     }
 
     public final synchronized AssetFileDescriptor a(String str) {
-        AssetFileDescriptor openFd;
-        openFd = this.f.a.getAssets().openFd(str);
-        this.e.add(openFd);
+        AssetFileDescriptor openFd = null;
+        try {
+            openFd = this.f.a.getAssets().openFd(str);
+            this.e.add(openFd);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         return openFd;
     }
 
@@ -139,8 +145,12 @@ public final class cyl {
     }
 
     public final synchronized void d() {
-        for (AssetFileDescriptor assetFileDescriptor : this.e) {
-            assetFileDescriptor.close();
+        for (AssetFileDescriptor assetFileDescriptor : (Set<AssetFileDescriptor>) this.e) {
+            try {
+                assetFileDescriptor.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
         this.e.clear();
     }

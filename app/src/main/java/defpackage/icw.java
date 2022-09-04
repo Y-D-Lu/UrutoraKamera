@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import java.util.Collection;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
@@ -119,7 +117,7 @@ public class icw implements icl, fik {
     public final pht q(bty btyVar) {
         final icf icfVar = this.n;
         String b = icf.b(btyVar);
-        final String str = "image/*";
+        String str = "image/*";
         List c = icfVar.a.c(str);
         List c2 = icfVar.a.c("video/*");
         final ArrayList arrayList = new ArrayList();
@@ -128,6 +126,7 @@ public class icw implements icl, fik {
         }
         ArrayList arrayList2 = new ArrayList(c);
         arrayList2.addAll(c2);
+        final String strFinal = str;
         icfVar.a.h((List) (arrayList2.stream()).filter(icf.a(icd.b)).collect(Collectors.toList()));
         (c.stream()).forEachOrdered(new Consumer() { // from class: icb
             @Override // java.util.function.Consumer
@@ -136,7 +135,7 @@ public class icw implements icl, fik {
                     case 0:
                         icf icfVar2 = icfVar;
                         ArrayList arrayList3 = arrayList;
-                        String str2 = str;
+                        String str2 = strFinal;
                         ResolveInfo resolveInfo = (ResolveInfo) obj;
                         ifl a = ifm.a();
                         a.b(resolveInfo);
@@ -147,7 +146,7 @@ public class icw implements icl, fik {
                     default:
                         icf icfVar3 = icfVar;
                         ArrayList arrayList4 = arrayList;
-                        String str3 = str;
+                        String str3 = strFinal;
                         ResolveInfo resolveInfo2 = (ResolveInfo) obj;
                         ifl a2 = ifm.a();
                         a2.b(resolveInfo2);
@@ -175,7 +174,7 @@ public class icw implements icl, fik {
                     case 0:
                         icf icfVar2 = icfVar;
                         ArrayList arrayList3 = arrayList;
-                        String str2 = str;
+                        String str2 = strFinal;
                         ResolveInfo resolveInfo = (ResolveInfo) obj;
                         ifl a = ifm.a();
                         a.b(resolveInfo);
@@ -186,7 +185,7 @@ public class icw implements icl, fik {
                     default:
                         icf icfVar3 = icfVar;
                         ArrayList arrayList4 = arrayList;
-                        String str3 = str;
+                        String str3 = strFinal;
                         ResolveInfo resolveInfo2 = (ResolveInfo) obj;
                         ifl a2 = ifm.a();
                         a2.b(resolveInfo2);
@@ -212,7 +211,7 @@ public class icw implements icl, fik {
             public final int compare(Object obj, Object obj2) {
                 ifm ifmVar = (ifm) obj;
                 ifm ifmVar2 = (ifm) obj2;
-                int compare = icf.this.a.b().compare(ifmVar.a, ifmVar2.a);
+                int compare = icfVar.a.b().compare(ifmVar.a, ifmVar2.a);
                 if (compare == 0) {
                     boolean z = ifmVar.c;
                     if (z == ifmVar2.c) {

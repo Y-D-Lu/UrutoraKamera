@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* renamed from: gnm  reason: default package */
@@ -26,7 +27,7 @@ public final class gnm extends lap {
             return;
         }
         Throwable th = null;
-        for (gnl gnlVar : ((pyw) this.b).mo37get()) {
+        for (gnl gnlVar : (Set<gnl>) ((pyw) this.b).mo37get()) {
             try {
                 gnlVar.run();
             } catch (Throwable th2) {

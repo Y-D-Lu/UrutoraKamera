@@ -130,7 +130,7 @@ public class ModeSlider extends LinearLayout implements jen {
         int size = this.b.size();
         float dimensionPixelSize = getResources().getDimensionPixelSize(R.dimen.mode_slider_mode_text_size);
         float a = jsa.a(getResources().getDimension(R.dimen.mode_slider_mode_text_letter_spacing));
-        for (final int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             CharSequence charSequence = ((jdz) this.b.get(i)).b;
             CharSequence charSequence2 = ((jdz) this.b.get(i)).c;
             TextView textView = new TextView(getContext());
@@ -151,11 +151,12 @@ public class ModeSlider extends LinearLayout implements jen {
             int i2 = this.e;
             textView.setPadding(i2, 0, i2, 0);
             textView.setContentDescription(charSequence2);
+            final int iFinal = i;
             textView.setOnClickListener(new View.OnClickListener() { // from class: jdv
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     ModeSlider modeSlider = ModeSlider.this;
-                    int i3 = i;
+                    int i3 = iFinal;
                     modeSlider.a.c(true);
                     modeSlider.l(i3, true);
                     modeSlider.a.b(modeSlider, true);

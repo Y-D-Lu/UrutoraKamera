@@ -5,6 +5,7 @@ import android.hardware.camera2.CaptureRequest;
 import android.os.Build;
 import android.os.Handler;
 
+import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 
@@ -150,7 +151,7 @@ public final class fsy implements pys {
         return aas.d(new Runnable() { // from class: gnf
             @Override // java.lang.Runnable
             public final void run() {
-                lap lapVar2 = lap.this;
+                lap lapVar2 = lapVar;
                 bxj bxjVar2 = bxjVar;
                 pht phtVar2 = phtVar;
                 lie b = bxjVar2.b();
@@ -231,7 +232,7 @@ public final class fsy implements pys {
                 return ((ojc) this.b.mo37get()).b(new oiu() { // from class: ftx
                     @Override // defpackage.oiu
                     public final Object a(Object obj2) {
-                        lap lapVar2 = lap.this;
+                        lap lapVar2 = lapVar;
                         lmv r = lncVar.r((lqd) obj2, 45);
                         lapVar2.c(r);
                         return r;
@@ -330,7 +331,7 @@ public final class fsy implements pys {
                 return (!ojcVar.g() || !((Boolean) ojcVar.c()).booleanValue()) ? plk.V(oih.a) : !ojcVar2.g() ? plk.V(oih.a) : plk.Z(new Callable() { // from class: gfa
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
-                        return ojc.i((lmt) ((qkg) ojc.this.c()).mo37get());
+                        return ojc.i((lmt) ((qkg) ojcVar2.c()).mo37get());
                     }
                 }, (Executor) this.c.mo37get());
             case 12:
@@ -347,7 +348,7 @@ public final class fsy implements pys {
                 lvp mo37get = ((gjp) this.c).mo37get();
                 if (((ddf) this.a.mo37get()).k(ddl.bu) && kdd.t != null) {
                     CaptureRequest.Key key = kdd.t;
-                    for (CaptureRequest.Key key2 : mo37get.z()) {
+                    for (CaptureRequest.Key key2 : (Set<CaptureRequest.Key>) mo37get.z()) {
                         if (key2.getName().equals(key.getName())) {
                             g = fcy.m(kdd.t, lcv.j(lcoVar, eto.h));
                             qmd.ae(g);
@@ -376,7 +377,7 @@ public final class fsy implements pys {
                     lcoVar2 = lcv.j(lcoVar2, new oiu() { // from class: gpl
                         @Override // defpackage.oiu
                         public final Object a(Object obj2) {
-                            return ((Boolean) eam.this.a().fA()).booleanValue() ? gjk.LONG_EXPOSURE : (gjk) obj2;
+                            return ((Boolean) eamVar.a().fA()).booleanValue() ? gjk.LONG_EXPOSURE : (gjk) obj2;
                         }
                     });
                 }

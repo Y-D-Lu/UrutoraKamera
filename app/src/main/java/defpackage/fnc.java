@@ -64,12 +64,11 @@ public final class fnc implements hsb {
             jlzVar.q();
             jlzVar.c = 200;
             jlzVar.d = 30000;
-            jlzVar.d(new Supplier() { // from class: fna
-                @Override // java.util.function.Supplier
-                /* renamed from: get */
-                public final Object mo291get() {
+            jlzVar.d(new Supplier() {
+                @Override
+                public Object get() {
                     return Boolean.valueOf(!fnc.this.b.get());
-                }
+                } // from class: fna
             });
             jlzVar.o();
             jlzVar.f = true;

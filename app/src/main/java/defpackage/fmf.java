@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.EnumMap;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* renamed from: fmf  reason: default package */
@@ -21,7 +22,7 @@ public final class fmf {
         long j;
         synchronized (this.a) {
             long j2 = 0;
-            for (flz flzVar : this.c.keySet()) {
+            for (flz flzVar : (Set<flz>) this.c.keySet()) {
                 j2 += ((Long) ((lce) ((fme) this.c.get(flzVar)).c.b()).d).longValue();
             }
             j = this.e - j2;
@@ -33,7 +34,7 @@ public final class fmf {
         boolean z;
         synchronized (this.a) {
             b();
-            for (flz flzVar : this.c.keySet()) {
+            for (flz flzVar : (Set<flz>) this.c.keySet()) {
                 lce lceVar = ((fme) this.c.get(flzVar)).a;
                 synchronized (this.a) {
                     long b = b();

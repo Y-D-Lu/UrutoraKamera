@@ -145,7 +145,7 @@ public class BottomBar extends LinearLayout {
 
             @Override // java.util.function.Consumer
             public /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         });
         Trace.endSection();
@@ -364,7 +364,7 @@ public class BottomBar extends LinearLayout {
 
                 @Override // java.util.function.Consumer
                 public /* synthetic */ Consumer andThen(Consumer consumer) {
-                    return consumer.getClass();
+                    return consumer;
                 }
             });
         } else {

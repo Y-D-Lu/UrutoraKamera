@@ -58,7 +58,7 @@ final class cis implements lxl {
                 cja.d(new Runnable() { // from class: civ
                     @Override // java.lang.Runnable
                     public final void run() {
-                        cja cjaVar2 = cja.this;
+                        cja cjaVar2 = cjaVar;
                         cjaVar2.b(cjaVar2.h);
                     }
                 }, ((cja) cjbVar).b);

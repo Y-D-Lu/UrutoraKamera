@@ -70,7 +70,7 @@ final class foi implements fuv {
         fouVar.p.postDelayed(new Runnable() { // from class: foe
             @Override // java.lang.Runnable
             public final void run() {
-                fou fouVar2 = fou.this;
+                fou fouVar2 = fouVar;
                 fot fotVar2 = fotVar;
                 if (fotVar2.l.get()) {
                     return;

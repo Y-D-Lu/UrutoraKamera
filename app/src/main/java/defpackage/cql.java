@@ -3,7 +3,11 @@ package defpackage;
 /* renamed from: cql  reason: default package */
 /* loaded from: classes.dex */
 public final /* synthetic */ class cql {
-    public final /* synthetic */ cqq a;
+    public /* synthetic */ cqq a;
+
+    public cql(cqq cqqVar) {
+        a = cqqVar;
+    }
 
     public final void a(cuv cuvVar, boolean z) {
         cqj cqjVar;

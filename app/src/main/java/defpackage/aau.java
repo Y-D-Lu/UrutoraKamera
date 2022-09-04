@@ -15,7 +15,7 @@ public final class aau {
     }
 
     public static void b(View view, aey aeyVar) {
-        view.setTag(R.id.view_tree_view_model_store_owner, aeyVar);
+        view.setTag(com.google.android.apps.camera.bottombar.R.id.view_tree_view_model_store_owner, aeyVar);
     }
 
     public static /* synthetic */ String c(int i) {

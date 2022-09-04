@@ -33,12 +33,8 @@ public final class ejf extends dcc {
         iaw a2 = iax.a();
         a2.b = this.f.getString(R.string.imax_suggestion_text);
         a2.c = this.f.getDrawable(R.drawable.quantum_gm_ic_vrpano_white_24, null);
-        a2.d = new Runnable(this) { // from class: eje
-            public final /* synthetic */ ejf a;
-
-            {
-                this.a = this;
-            }
+        a2.d = new Runnable() { // from class: eje
+            public final /* synthetic */ ejf a = ejf.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -52,12 +48,8 @@ public final class ejf extends dcc {
                 }
             }
         };
-        a2.g = new Runnable(this) { // from class: eje
-            public final /* synthetic */ ejf a;
-
-            {
-                this.a = this;
-            }
+        a2.g = new Runnable() { // from class: eje
+            public final /* synthetic */ ejf a = ejf.this;
 
             @Override // java.lang.Runnable
             public final void run() {

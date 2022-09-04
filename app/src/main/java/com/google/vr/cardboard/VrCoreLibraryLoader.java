@@ -37,136 +37,92 @@ public class VrCoreLibraryLoader {
         int i4;
         pyi pyiVar;
         try {
-            try {
-                ApplicationInfo applicationInfo = context.getPackageManager().getApplicationInfo("com.google.vr.vrcore", 128);
-                if (applicationInfo == null) {
-                    throw new pxj(8);
-                }
-                if (!applicationInfo.enabled) {
-                    throw new pxj(2);
-                }
-                if (applicationInfo.metaData == null) {
-                    throw new pxj(4);
-                }
-                String string = applicationInfo.metaData.getString("com.google.vr.vrcore.SdkLibraryVersion", "");
-                if (string.isEmpty()) {
-                    throw new pxj(4);
-                }
-                String substring = string.substring(1);
-                pxc a = pxc.a(substring);
-                if (a == null) {
-                    throw new pxj(4);
-                }
-                int i5 = a.c;
-                int i6 = pxcVar.c;
-                if (i5 <= i6 && (i5 < i6 || ((i = a.d) <= (i2 = pxcVar.d) && (i < i2 || ((i3 = a.e) <= (i4 = pxcVar.e) && i3 < i4))))) {
-                    Log.w("VrCoreLibraryLoader", String.format("VrCore GVR library version obsolete; VrCore supports %s but client min is %s", substring, pxcVar.toString()));
-                    throw new pxj(4);
-                }
-                Context ak = qmd.ak(context);
-                qmd.ak(context);
-                int i7 = qmd.t;
-                pyj pyjVar = null;
-                if (qmd.u == null) {
-                    IBinder al = qmd.al(qmd.ak(context).getClassLoader());
-                    if (al == null) {
-                        pyiVar = null;
-                    } else {
-                        IInterface queryLocalInterface = al.queryLocalInterface("com.google.vr.vrcore.library.api.IVrCreator");
-                        pyiVar = queryLocalInterface instanceof pyi ? (pyi) queryLocalInterface : new pyi(al);
-                    }
-                    qmd.u = pyiVar;
-                }
-                pyi pyiVar2 = qmd.u;
-                bmo b = ObjectWrapper.b(ak);
-                bmo b2 = ObjectWrapper.b(context);
-                Parcel a2 = pyiVar2.a();
-                bmp.e(a2, b);
-                bmp.e(a2, b2);
-                Parcel y = pyiVar2.y(4, a2);
-                IBinder readStrongBinder = y.readStrongBinder();
-                if (readStrongBinder != null) {
-                    IInterface queryLocalInterface2 = readStrongBinder.queryLocalInterface("com.google.vr.vrcore.library.api.IVrNativeLibraryLoader");
-                    pyjVar = queryLocalInterface2 instanceof pyj ? (pyj) queryLocalInterface2 : new pyj(readStrongBinder);
-                }
-                y.recycle();
-                if (pyjVar == null) {
-                    Log.e("VrCoreLibraryLoader", "Failed to load native GVR library from VrCore: no library loader available.");
-                    return 0L;
-                } else if (i7 >= 19) {
-                    String pxcVar3 = pxcVar.toString();
-                    String pxcVar4 = pxcVar2.toString();
-                    Parcel a3 = pyjVar.a();
-                    a3.writeString(pxcVar3);
-                    a3.writeString(pxcVar4);
-                    Parcel y2 = pyjVar.y(5, a3);
-                    long readLong = y2.readLong();
-                    y2.recycle();
-                    return readLong;
-                } else {
-                    int i8 = pxcVar2.c;
-                    int i9 = pxcVar2.d;
-                    int i10 = pxcVar2.e;
-                    Parcel a4 = pyjVar.a();
-                    a4.writeInt(i8);
-                    a4.writeInt(i9);
-                    a4.writeInt(i10);
-                    Parcel y3 = pyjVar.y(2, a4);
-                    long readLong2 = y3.readLong();
-                    y3.recycle();
-                    return readLong2;
-                }
-            } catch (RemoteException e) {
-                e = e;
-                String valueOf = String.valueOf(e);
-                StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 49);
-                sb.append("Failed to load native GVR library from VrCore:\n  ");
-                sb.append(valueOf);
-                Log.e("VrCoreLibraryLoader", sb.toString());
-                return 0L;
-            } catch (IllegalArgumentException e2) {
-                e = e2;
-                String valueOf2 = String.valueOf(e);
-                StringBuilder sb2 = new StringBuilder(String.valueOf(valueOf2).length() + 49);
-                sb2.append("Failed to load native GVR library from VrCore:\n  ");
-                sb2.append(valueOf2);
-                Log.e("VrCoreLibraryLoader", sb2.toString());
-                return 0L;
-            } catch (IllegalStateException e3) {
-                e = e3;
-                String valueOf22 = String.valueOf(e);
-                StringBuilder sb22 = new StringBuilder(String.valueOf(valueOf22).length() + 49);
-                sb22.append("Failed to load native GVR library from VrCore:\n  ");
-                sb22.append(valueOf22);
-                Log.e("VrCoreLibraryLoader", sb22.toString());
-                return 0L;
-            } catch (SecurityException e4) {
-                e = e4;
-                String valueOf222 = String.valueOf(e);
-                StringBuilder sb222 = new StringBuilder(String.valueOf(valueOf222).length() + 49);
-                sb222.append("Failed to load native GVR library from VrCore:\n  ");
-                sb222.append(valueOf222);
-                Log.e("VrCoreLibraryLoader", sb222.toString());
-                return 0L;
-            } catch (UnsatisfiedLinkError e5) {
-                e = e5;
-                String valueOf2222 = String.valueOf(e);
-                StringBuilder sb2222 = new StringBuilder(String.valueOf(valueOf2222).length() + 49);
-                sb2222.append("Failed to load native GVR library from VrCore:\n  ");
-                sb2222.append(valueOf2222);
-                Log.e("VrCoreLibraryLoader", sb2222.toString());
-                return 0L;
-            } catch (pxj e6) {
-                e = e6;
-                String valueOf22222 = String.valueOf(e);
-                StringBuilder sb22222 = new StringBuilder(String.valueOf(valueOf22222).length() + 49);
-                sb22222.append("Failed to load native GVR library from VrCore:\n  ");
-                sb22222.append(valueOf22222);
-                Log.e("VrCoreLibraryLoader", sb22222.toString());
-                return 0L;
+            ApplicationInfo applicationInfo = context.getPackageManager().getApplicationInfo("com.google.vr.vrcore", 128);
+            if (applicationInfo == null) {
+                throw new pxj(8);
             }
-        } catch (PackageManager.NameNotFoundException e7) {
-            throw new pxj(VrCoreUtils.a(context));
+            if (!applicationInfo.enabled) {
+                throw new pxj(2);
+            }
+            if (applicationInfo.metaData == null) {
+                throw new pxj(4);
+            }
+            String string = applicationInfo.metaData.getString("com.google.vr.vrcore.SdkLibraryVersion", "");
+            if (string.isEmpty()) {
+                throw new pxj(4);
+            }
+            String substring = string.substring(1);
+            pxc a = pxc.a(substring);
+            if (a == null) {
+                throw new pxj(4);
+            }
+            int i5 = a.c;
+            int i6 = pxcVar.c;
+            if (i5 <= i6 && (i5 < i6 || ((i = a.d) <= (i2 = pxcVar.d) && (i < i2 || ((i3 = a.e) <= (i4 = pxcVar.e) && i3 < i4))))) {
+                Log.w("VrCoreLibraryLoader", String.format("VrCore GVR library version obsolete; VrCore supports %s but client min is %s", substring, pxcVar.toString()));
+                throw new pxj(4);
+            }
+            Context ak = qmd.ak(context);
+            qmd.ak(context);
+            int i7 = qmd.t;
+            pyj pyjVar = null;
+            if (qmd.u == null) {
+                IBinder al = qmd.al(qmd.ak(context).getClassLoader());
+                if (al == null) {
+                    pyiVar = null;
+                } else {
+                    IInterface queryLocalInterface = al.queryLocalInterface("com.google.vr.vrcore.library.api.IVrCreator");
+                    pyiVar = queryLocalInterface instanceof pyi ? (pyi) queryLocalInterface : new pyi(al);
+                }
+                qmd.u = pyiVar;
+            }
+            pyi pyiVar2 = qmd.u;
+            bmo b = ObjectWrapper.b(ak);
+            bmo b2 = ObjectWrapper.b(context);
+            Parcel a2 = pyiVar2.a();
+            bmp.e(a2, b);
+            bmp.e(a2, b2);
+            Parcel y = pyiVar2.y(4, a2);
+            IBinder readStrongBinder = y.readStrongBinder();
+            if (readStrongBinder != null) {
+                IInterface queryLocalInterface2 = readStrongBinder.queryLocalInterface("com.google.vr.vrcore.library.api.IVrNativeLibraryLoader");
+                pyjVar = queryLocalInterface2 instanceof pyj ? (pyj) queryLocalInterface2 : new pyj(readStrongBinder);
+            }
+            y.recycle();
+            if (pyjVar == null) {
+                Log.e("VrCoreLibraryLoader", "Failed to load native GVR library from VrCore: no library loader available.");
+                return 0L;
+            } else if (i7 >= 19) {
+                String pxcVar3 = pxcVar.toString();
+                String pxcVar4 = pxcVar2.toString();
+                Parcel a3 = pyjVar.a();
+                a3.writeString(pxcVar3);
+                a3.writeString(pxcVar4);
+                Parcel y2 = pyjVar.y(5, a3);
+                long readLong = y2.readLong();
+                y2.recycle();
+                return readLong;
+            } else {
+                int i8 = pxcVar2.c;
+                int i9 = pxcVar2.d;
+                int i10 = pxcVar2.e;
+                Parcel a4 = pyjVar.a();
+                a4.writeInt(i8);
+                a4.writeInt(i9);
+                a4.writeInt(i10);
+                Parcel y3 = pyjVar.y(2, a4);
+                long readLong2 = y3.readLong();
+                y3.recycle();
+                return readLong2;
+            }
+        } catch (Exception e) {
+            e = e;
+            String valueOf = String.valueOf(e);
+            StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 49);
+            sb.append("Failed to load native GVR library from VrCore:\n  ");
+            sb.append(valueOf);
+            Log.e("VrCoreLibraryLoader", sb.toString());
+            return 0L;
         }
     }
 }

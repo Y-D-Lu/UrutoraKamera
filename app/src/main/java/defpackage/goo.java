@@ -24,7 +24,7 @@ public final class goo {
         executor.execute(new Runnable() { // from class: gon
             @Override // java.lang.Runnable
             public final void run() {
-                ljf ljfVar2 = ljf.this;
+                ljf ljfVar2 = ljfVar;
                 pyn pynVar4 = pynVar;
                 pyn pynVar5 = pynVar2;
                 pyn pynVar6 = pynVar3;

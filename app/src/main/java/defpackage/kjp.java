@@ -15,6 +15,10 @@ public final class kjp {
         BasePendingResult basePendingResult = this.a;
         ThreadLocal threadLocal = BasePendingResult.c;
         BasePendingResult.i(basePendingResult.g);
-        super.finalize();
+        try {
+            super.finalize();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
     }
 }

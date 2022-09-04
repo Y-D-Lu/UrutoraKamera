@@ -43,7 +43,7 @@ public class Pref {
 
     public static SharedPreferences getAppSharedPreferences() {
         if (appSharedPreferences == null) {
-            appSharedPreferences = PreferenceManager.getDefaultSharedPreferences(getAppContext());
+            appSharedPreferences = PreferenceManager.getDefaultSharedPreferences(AppGlobals.getInitialApplication());
         }
         return appSharedPreferences;
     }

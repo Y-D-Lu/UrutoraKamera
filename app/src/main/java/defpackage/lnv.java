@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: lnv  reason: default package */
 /* loaded from: classes2.dex */
 public final class lnv {
-    public final boolean a;
-    public final int b;
-    public final int c;
-    public final int d;
+    public boolean a;
+    public int b;
+    public int c;
+    public int d;
 
     public lnv() {
     }

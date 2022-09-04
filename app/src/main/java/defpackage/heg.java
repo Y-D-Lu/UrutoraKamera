@@ -34,10 +34,10 @@ public final class heg extends hdu {
         long j;
         mad madVar2;
         ljf ljfVar;
-        ShotMetadata shotMetadata;
-        DynamicDepthResult dynamicDepthResult;
-        YuvWriteView c;
-        long j2;
+        ShotMetadata shotMetadata = null;
+        DynamicDepthResult dynamicDepthResult = null;
+        YuvWriteView c = null;
+        long j2 = 0;
         mad g = hcfVar.g();
         mad c2 = hcfVar.c(hcfVar.b.f);
         hdvVar.d();
@@ -99,7 +99,7 @@ public final class heg extends hdu {
             } catch (Exception e2) {
                 madVar2 = g;
             } catch (Throwable th2) {
-                th = th2;
+                th2.printStackTrace();
                 madVar2 = g;
             }
             if (DynamicDepthUtils.createDynamicDepthFromUltradepthImpl(j, j2, YuvWriteView.e(c), ShotMetadata.c(shotMetadata), a, dynamicDepthResult.a)) {

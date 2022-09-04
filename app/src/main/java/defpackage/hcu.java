@@ -234,7 +234,7 @@ public final class hcu implements pys {
                 ddf ddfVar = (ddf) this.i.mo37get();
                 jrl mo37get2 = ((giv) this.j).mo37get();
                 if (ddfVar.k(ddm.am) || ((mo37get.k() != lwd.FRONT || hvjVar.a()) && (mo37get.k() != lwd.BACK || hvjVar.b()))) {
-                    oihVar = ojcVar4;
+                    oihVar = (oih) ojcVar4;
                 } else {
                     fvq.r(mo37get2, ddfVar);
                     oihVar = oih.a;

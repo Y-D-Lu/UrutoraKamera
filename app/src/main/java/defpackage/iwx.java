@@ -9,12 +9,12 @@ class iwx extends ihr {
         a(mip.eO("CameraUi.Photos"), new iib() { // from class: iww
             @Override // defpackage.iib
             public final lie a() {
-                final eah eahVar2 = eah.this;
+                final eah eahVar2 = eahVar;
                 eahVar2.b();
                 return new lie() { // from class: eae
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        eah.this.a();
+                        eahVar2.a();
                     }
                 };
             }

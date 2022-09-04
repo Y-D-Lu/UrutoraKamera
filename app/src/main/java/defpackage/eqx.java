@@ -106,27 +106,29 @@ public final class eqx implements esl {
 
     @Override // defpackage.esl
     public final lie a() {
-        lie lieVar;
+        lie lieVar = null;
         ovd ovdVar = ovl.a;
         l();
         synchronized (this.b) {
             lae laeVar = this.z;
-            final lie a2 = laeVar == null ? null : laeVar.a();
+            lie a2 = laeVar == null ? null : laeVar.a();
             if (a2 == null) {
                 this.l.c("init", new eqs(this, 0));
                 lae laeVar2 = new lae(this.v);
                 this.z = laeVar2;
                 a2 = laeVar2.a();
             }
+            final lie a2Final = a2;
             final lie a3 = this.o.a(new eqr(this, 1), this.x);
             final lie a4 = this.p.c().a(new eqr(this, 0), this.x);
             a2.getClass();
+            lie finalLieVar = lieVar;
             lieVar = new lie() { // from class: eqq
                 @Override // defpackage.lie, java.lang.AutoCloseable
                 public final void close() {
-                    lie lieVar2 = lie.this;
+                    lie lieVar2 = finalLieVar;
                     lie lieVar3 = a4;
-                    lie lieVar4 = a2;
+                    lie lieVar4 = a2Final;
                     ouj oujVar = eqx.a;
                     ovd ovdVar2 = ovl.a;
                     lieVar2.close();
@@ -180,7 +182,7 @@ public final class eqx implements esl {
             return new lie() { // from class: eqj
                 @Override // defpackage.lie, java.lang.AutoCloseable
                 public final void close() {
-                    lie lieVar2 = lie.this;
+                    lie lieVar2 = lieVar;
                     pih pihVar2 = pihVar;
                     ouj oujVar = eqx.a;
                     ovd ovdVar2 = ovl.a;
@@ -319,8 +321,8 @@ public final class eqx implements esl {
             @Override // java.lang.Runnable
             public final void run() {
                 ljf ljfVar;
-                int intValue;
-                epm epmVar;
+                int intValue = 0;
+                epm epmVar = null;
                 eqx eqxVar = eqx.this;
                 int i2 = i;
                 boolean z2 = z;

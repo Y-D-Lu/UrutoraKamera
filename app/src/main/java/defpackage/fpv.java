@@ -8,6 +8,7 @@ import com.google.android.libraries.microvideo.xmp.nativemotionphotos.NativeMoti
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* renamed from: fpv  reason: default package */
@@ -81,7 +82,7 @@ public final class fpv implements mlk {
                 pht phtVar = R;
                 mln mlnVar = a2;
                 long j = -1;
-                for (Long l : (List) plk.ae(phtVar)) {
+                for (Long l : (Set<Long>) (List) plk.ae(phtVar)) {
                     if (l != null && (j < 0 || l.longValue() < j)) {
                         j = l.longValue();
                     }

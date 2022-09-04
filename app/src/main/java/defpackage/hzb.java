@@ -156,7 +156,7 @@ public final class hzb implements iap {
             final View.OnLayoutChangeListener onLayoutChangeListener = new View.OnLayoutChangeListener() { // from class: hxu
                 @Override // android.view.View.OnLayoutChangeListener
                 public final void onLayoutChange(View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
-                    SmartsChipView smartsChipView2 = SmartsChipView.this;
+                    SmartsChipView smartsChipView2 = smartsChipView;
                     hwz a = hxa.a(this);
                     a.f(smartsChipView2.m);
                     a.b(true);
@@ -170,7 +170,7 @@ public final class hzb implements iap {
             smartsChipView.l.c(new lie() { // from class: hxw
                 @Override // defpackage.lie, java.lang.AutoCloseable
                 public final void close() {
-                    SmartsChipView.this.removeOnLayoutChangeListener(onLayoutChangeListener);
+                    smartsChipView.removeOnLayoutChangeListener(onLayoutChangeListener);
                 }
             });
             smartsChipView.c(this);

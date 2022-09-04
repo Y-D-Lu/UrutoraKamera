@@ -106,7 +106,7 @@ public class SmartsChipView extends LinearLayout {
                 View.OnClickListener onClickListener = new View.OnClickListener() { // from class: hxt
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
-                        iap iapVar2 = iap.this;
+                        iap iapVar2 = iapVar;
                         Runnable runnable3 = runnable;
                         hzb hzbVar = (hzb) iapVar2;
                         hzbVar.d.ab(3, hzbVar.a.a);

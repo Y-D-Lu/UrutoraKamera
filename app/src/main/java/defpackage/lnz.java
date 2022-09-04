@@ -3,15 +3,15 @@ package defpackage;
 /* renamed from: lnz  reason: default package */
 /* loaded from: classes2.dex */
 public final class lnz {
-    public final loa a;
-    public final ojc b;
-    public final ojc c;
-    public final lig d;
-    public final int e;
-    public final int f;
-    public final ojc g;
-    public final boolean h;
-    public final boolean i;
+    public loa a;
+    public ojc b;
+    public ojc c;
+    public lig d;
+    public int e;
+    public int f;
+    public ojc g;
+    public boolean h;
+    public boolean i;
 
     public lnz() {
     }

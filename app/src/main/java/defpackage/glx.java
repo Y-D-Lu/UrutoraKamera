@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Set;
 
 /* renamed from: glx  reason: default package */
 /* loaded from: classes.dex */
@@ -20,7 +21,7 @@ final class glx implements phh {
     public final /* bridge */ /* synthetic */ void b(Object obj) {
         gls glsVar = (gls) obj;
         glsVar.getClass();
-        for (glu gluVar : this.a.a) {
+        for (glu gluVar : (Set<glu>) this.a.a) {
             ArrayList arrayList = new ArrayList();
             Iterator it = gluVar.a.iterator();
             while (true) {

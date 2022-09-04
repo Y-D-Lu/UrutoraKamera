@@ -4,6 +4,8 @@ import android.graphics.Bitmap;
 
 import com.google.android.libraries.lens.lenslite.api.LinkChipResult;
 
+import java.util.Set;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: fga  reason: default package */
 /* loaded from: classes.dex */
@@ -65,7 +67,7 @@ public final class fga implements iar {
                             if (mhbVar == null) {
                                 mhbVar = mhb.b;
                             }
-                            for (mha mhaVar : mhbVar.a) {
+                            for (mha mhaVar : (Set<mha>) mhbVar.a) {
                                 if (mhaVar.a == 7) {
                                     plzVar = (plz) mhaVar.b;
                                 }

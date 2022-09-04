@@ -11,13 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.regex.Pattern;
-
-import java.util.Collection;
-import java.util.Comparator;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -189,7 +186,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
-                return hub.this.m((String) obj);
+                return hubVar.m((String) obj);
             }
         }).forEach(new idz(this, 1));
     }
@@ -265,7 +262,7 @@ public final class iec implements idt {
 
             @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
-                return oor.this.containsKey((String) obj);
+                return oorVar.containsKey((String) obj);
             }
         });
     }

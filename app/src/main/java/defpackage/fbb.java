@@ -262,12 +262,8 @@ public final class fbb extends buf implements jad {
         this.D.i(this.s.k(ddm.ab) && this.s.k(ddm.aa));
         v(true);
         this.v.addListener(this.S);
-        this.K.c(new lie(this) { // from class: fao
-            public final /* synthetic */ fbb a;
-
-            {
-                this.a = this;
-            }
+        this.K.c(new lie() { // from class: fao
+            public final /* synthetic */ fbb a = fbb.this;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
@@ -290,12 +286,8 @@ public final class fbb extends buf implements jad {
         this.u.d();
         this.K.c(this.L);
         this.k.a(this.U);
-        this.K.c(new lie(this) { // from class: fao
-            public final /* synthetic */ fbb a;
-
-            {
-                this.a = this;
-            }
+        this.K.c(new lie() { // from class: fao
+            public final /* synthetic */ fbb a = fbb.this;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
@@ -429,6 +421,6 @@ public final class fbb extends buf implements jad {
             return;
         }
         this.ab.a();
-        this.h.c(R.raw.timer_start);
+        this.h.c(org.codeaurora.snapcam.R.raw.timer_start);
     }
 }

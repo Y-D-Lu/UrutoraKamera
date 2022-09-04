@@ -296,28 +296,28 @@ public final class bqq implements pys {
                 final ojc ojcVar = (ojc) ((pyt) this.c).a;
                 final pht phtVar = (pht) this.f.mo37get();
                 elw elwVar = (elw) this.b.mo37get();
-                return new jqn(cameraActivityTiming, ddfVar2, jtxVar, ojcVar, null, null) { // from class: dhj
-                    public final /* synthetic */ CameraActivityTiming b;
-                    public final /* synthetic */ ddf c;
-                    public final /* synthetic */ ojc d;
-                    public final /* synthetic */ jtx e;
+                return new jqn() { // from class: dhj
+                    public final /* synthetic */ CameraActivityTiming b = cameraActivityTiming;
+                    public final /* synthetic */ ddf c = ddfVar2;
+                    public final /* synthetic */ ojc d = ojcVar;
+                    public final /* synthetic */ jtx e = jtxVar;
 
                     @Override // defpackage.jqn
                     public final void a() {
-                        pht phtVar2 = pht.this;
+                        pht phtVar2 = phtVar;
                         final CameraActivityTiming cameraActivityTiming2 = this.b;
                         final ddf ddfVar3 = this.c;
                         final jtx jtxVar2 = this.e;
                         final ojc ojcVar2 = this.d;
-                        phtVar2.d(new Runnable(ddfVar3, jtxVar2, ojcVar2, null, null) { // from class: dhk
-                            public final /* synthetic */ ddf b;
-                            public final /* synthetic */ ojc c;
-                            public final /* synthetic */ jtx d;
+                        phtVar2.d(new Runnable() { // from class: dhk
+                            public /* synthetic */ ddf b = ddfVar3;
+                            public /* synthetic */ ojc c = ojcVar2;
+                            public /* synthetic */ jtx d = jtxVar2;
 
                             @Override // java.lang.Runnable
                             public final void run() {
                                 ojc ojcVar3;
-                                CameraActivityTiming cameraActivityTiming3 = CameraActivityTiming.this;
+                                CameraActivityTiming cameraActivityTiming3 = cameraActivityTiming2;
                                 ddf ddfVar4 = this.b;
                                 jtx jtxVar3 = this.d;
                                 ojc ojcVar4 = this.c;
@@ -359,7 +359,7 @@ public final class bqq implements pys {
                 return new iho() { // from class: dnp
                     @Override // java.lang.Runnable
                     public final void run() {
-                        dom domVar2 = dom.this;
+                        dom domVar2 = domVar;
                         lda ldaVar2 = ldaVar;
                         boolean z = booleanValue;
                         qkg qkgVar3 = qkgVar;

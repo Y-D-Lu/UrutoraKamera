@@ -27,7 +27,7 @@ public final class eer implements eco {
     public final jtl e = new jtl();
     public long f = -1;
     public boolean g = false;
-    private boolean r = false;
+    boolean r = false;
 
     public eer(ees eesVar, gog gogVar, dzu dzuVar, eew eewVar) {
         this.h = eesVar;

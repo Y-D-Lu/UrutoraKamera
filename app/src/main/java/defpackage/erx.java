@@ -4,6 +4,7 @@ import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.googlex.gcam.Gcam;
 
 import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* renamed from: erx  reason: default package */
@@ -180,7 +181,7 @@ public final class erx implements pys {
                         hashSet.add(new Runnable() { // from class: fso
                             @Override // java.lang.Runnable
                             public final void run() {
-                                final ljf ljfVar4 = ljf.this;
+                                final ljf ljfVar4 = ljfVar3;
                                 qkg qkgVar13 = qkgVar;
                                 final qkg qkgVar14 = qkgVar5;
                                 qkg qkgVar15 = qkgVar10;
@@ -197,7 +198,7 @@ public final class erx implements pys {
                                 synchronized (fnuVar.d) {
                                     fnuVar.b.add(fpaVar);
                                     synchronized (fnuVar.d) {
-                                        for (Runnable runnable : fnuVar.c) {
+                                        for (Runnable runnable : (Set<Runnable>) fnuVar.c) {
                                             runnable.run();
                                         }
                                         fnuVar.c.clear();
@@ -206,7 +207,7 @@ public final class erx implements pys {
                                 ((lap) qkgVar15.mo37get()).c(new lie() { // from class: fsm
                                     @Override // defpackage.lie, java.lang.AutoCloseable
                                     public final void close() {
-                                        qkg qkgVar21 = qkg.this;
+                                        qkg qkgVar21 = qkgVar15;
                                         fpa fpaVar2 = fpaVar;
                                         fnu fnuVar2 = (fnu) qkgVar21.mo37get();
                                         synchronized (fnuVar2.d) {
@@ -224,14 +225,14 @@ public final class erx implements pys {
                                 ((lap) qkgVar15.mo37get()).c(new lie() { // from class: fsk
                                     @Override // defpackage.lie, java.lang.AutoCloseable
                                     public final void close() {
-                                        fnt.this.b.close();
+                                        fntVar2.b.close();
                                     }
                                 });
                                 executor3.execute(new dsw(qkgVar18, 2));
                                 ((lap) qkgVar15.mo37get()).c(new lie() { // from class: fsl
                                     @Override // defpackage.lie, java.lang.AutoCloseable
                                     public final void close() {
-                                        ljf ljfVar5 = ljf.this;
+                                        ljf ljfVar5 = ljfVar4;
                                         qkg qkgVar21 = qkgVar19;
                                         qkg qkgVar22 = qkgVar20;
                                         ljfVar5.e("MICRO_EncoderModule#shutdown_controller");
@@ -248,7 +249,7 @@ public final class erx implements pys {
                             hashSet.add(new Runnable() { // from class: fsn
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    ddf ddfVar2 = ddf.this;
+                                    ddf ddfVar2 = ddfVar;
                                     qkg qkgVar13 = qkgVar11;
                                     qkg qkgVar14 = qkgVar12;
                                     fpo fpoVar2 = fpoVar;
@@ -260,7 +261,7 @@ public final class erx implements pys {
                                     fpoVar2.g(new fpn() { // from class: fsi
                                         @Override // defpackage.fpn
                                         public final void a(long j) {
-                                            frn.this.d();
+                                            frnVar.d();
                                         }
                                     }, executor3);
                                     if (ojcVar.g()) {
@@ -278,12 +279,13 @@ public final class erx implements pys {
                     ljfVar.f();
                     return hashSet;
                 } catch (Throwable th2) {
-                    th = th2;
+                    th2.printStackTrace();
                     ljfVar = ljfVar3;
                 }
                 break;
             default:
                 return new fyx(((emd) this.f).mo37get(), (lqv) this.p.mo37get(), (jfn) this.d.mo37get(), (btt) this.n.mo37get(), ((emh) this.c).mo37get(), ((liq) this.i).mo37get(), (ljf) this.b.mo37get(), (jcw) this.l.mo37get(), (cvo) this.h.mo37get(), (gvb) this.j.mo37get(), ((eth) this.m).mo37get(), ((iwi) this.g).mo37get(), (lar) this.k.mo37get(), (ddf) this.a.mo37get(), (lij) this.e.mo37get(), ((jnw) this.o).mo37get(), null, null);
         }
+        return null;
     }
 }

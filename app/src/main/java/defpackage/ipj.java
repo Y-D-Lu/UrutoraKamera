@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import org.codeaurora.snapcam.R;
 
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: ipj  reason: default package */
 /* loaded from: classes.dex */
@@ -25,12 +26,8 @@ public final class ipj extends dcc {
         iaw a2 = iax.a();
         a2.b = this.f.getString(R.string.timelapse_suggestion_text);
         a2.c = this.f.getDrawable(R.drawable.quantum_gm_ic_fast_forward_vd_theme_24, null);
-        a2.d = new Runnable(this) { // from class: ipi
-            public final /* synthetic */ ipj a;
-
-            {
-                this.a = this;
-            }
+        a2.d = new Runnable() { // from class: ipi
+            public final /* synthetic */ ipj a = ipj.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -44,12 +41,8 @@ public final class ipj extends dcc {
                 }
             }
         };
-        a2.g = new Runnable(this) { // from class: ipi
-            public final /* synthetic */ ipj a;
-
-            {
-                this.a = this;
-            }
+        a2.g = new Runnable() { // from class: ipi
+            public final /* synthetic */ ipj a = ipj.this;
 
             @Override // java.lang.Runnable
             public final void run() {

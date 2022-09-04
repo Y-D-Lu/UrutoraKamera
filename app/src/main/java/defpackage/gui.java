@@ -84,7 +84,7 @@ public final /* synthetic */ class gui implements Consumer {
                     @Override // java.lang.Runnable
                     public final void run() {
                         boolean z2;
-                        ohj ohjVar2 = ohj.this;
+                        ohj ohjVar2 = ohjVar;
                         try {
                             InputStream inputStream = ohjVar2.c;
                             byte[] bArr = new byte[400];

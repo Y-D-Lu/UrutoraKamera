@@ -255,7 +255,7 @@ public final class bsr implements pys {
                 return new iho() { // from class: fkk
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ddf ddfVar2 = ddf.this;
+                        ddf ddfVar2 = ddfVar;
                         hyc hycVar2 = hycVar;
                         fkh fkhVar2 = fkhVar;
                         boolean z = booleanValue;
@@ -302,7 +302,7 @@ public final class bsr implements pys {
                         i.c(ldaVar2.a(new lij() { // from class: fkl
                             @Override // defpackage.lij
                             public final void fB(Object obj) {
-                                bod bodVar3 = bod.this;
+                                bod bodVar3 = bodVar2;
                                 lar.a();
                                 bodVar3.a = (jrl) obj;
                             }
@@ -337,7 +337,7 @@ public final class bsr implements pys {
                 Object H = (!mo37get2.c() || !mo37get3.a) ? orx.a : ope.H(new Runnable() { // from class: fsx
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ljf ljfVar2 = ljf.this;
+                        ljf ljfVar2 = ljfVar;
                         lap lapVar3 = lapVar2;
                         qkg qkgVar5 = qkgVar;
                         qkg qkgVar6 = qkgVar4;
@@ -356,7 +356,7 @@ public final class bsr implements pys {
                             lapVar3.c(new lie() { // from class: fsu
                                 @Override // defpackage.lie, java.lang.AutoCloseable
                                 public final void close() {
-                                    fqi.this.f();
+                                    fqiVar.f();
                                 }
                             });
                         }

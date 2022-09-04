@@ -5,6 +5,7 @@ import com.hdrindicator.DisplayHelper;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: gaf  reason: default package */
 /* loaded from: classes.dex */
@@ -129,7 +130,7 @@ public final class gaf implements gcf {
     public final synchronized List c() {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (gae gaeVar : this.e) {
+        for (gae gaeVar : (Set<gae>) this.e) {
             arrayList.add(e(gaeVar));
         }
         return arrayList;

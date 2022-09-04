@@ -6,6 +6,7 @@ import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import defpackage.mgp;
 import defpackage.mhf;
@@ -48,7 +49,12 @@ public abstract class LinkConfig {
 
     public static LinkConfig fromByteArray(byte[] bArr) {
         mhy b;
-        mia miaVar = (mia) ppd.s(mia.L, bArr, pos.b());
+        mia miaVar = null;
+        try {
+            miaVar = (mia) ppd.s(mia.L, bArr, pos.b());
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
         Builder builder = builder();
         if ((miaVar.a & 1) != 0) {
             ((mgp) builder).a = Boolean.valueOf(miaVar.c);
@@ -87,7 +93,7 @@ public abstract class LinkConfig {
             mgpVar2.c = Boolean.valueOf(miaVar.d);
             if (miaVar.p.size() > 0) {
                 HashMap hashMap = new HashMap();
-                for (mif mifVar : miaVar.p) {
+                for (mif mifVar : (Set<mif>) miaVar.p) {
                     hashMap.put(mifVar.b, Float.valueOf(mifVar.c));
                 }
                 mgpVar2.n = hashMap;

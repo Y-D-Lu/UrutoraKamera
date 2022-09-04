@@ -4,14 +4,12 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
-import java.time.Instant;
-import java.util.Collection;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -144,7 +142,7 @@ public final /* synthetic */ class dfb implements Runnable {
 
                         @Override // java.util.function.Function
                         public final Object apply(Object obj) {
-                            dfx dfxVar2 = dfx.this;
+                            dfx dfxVar2 = dfxVar;
                             return new dfv(dfxVar2.c, dfxVar2.d, (dfo) obj, dfxVar2.h, hss.MEDIA_STORE);
                         }
 
@@ -193,7 +191,7 @@ public final /* synthetic */ class dfb implements Runnable {
 
                         @Override // java.util.function.Function
                         public final Object apply(Object obj) {
-                            dga dgaVar2 = dga.this;
+                            dga dgaVar2 = dgaVar;
                             return new dfy(dgaVar2.a, dgaVar2.b, (dfo) obj, hss.MEDIA_STORE);
                         }
 

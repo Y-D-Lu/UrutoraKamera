@@ -78,13 +78,13 @@ public final /* synthetic */ class fne implements Runnable {
                     final Runnable runnable = new Runnable() { // from class: fvj
                         @Override // java.lang.Runnable
                         public final void run() {
-                            fvk.this.b.fB(true);
+                            fvkVar.b.fB(true);
                         }
                     };
                     a2.f = new Runnable() { // from class: ise
                         @Override // java.lang.Runnable
                         public final void run() {
-                            isi isiVar = isi.this;
+                            isi isiVar = a2;
                             runnable.run();
                             isiVar.g();
                         }
@@ -93,7 +93,7 @@ public final /* synthetic */ class fne implements Runnable {
                     lieVar = new lie() { // from class: fvi
                         @Override // defpackage.lie, java.lang.AutoCloseable
                         public final void close() {
-                            isi.this.g();
+                            a2.g();
                         }
                     };
                 }

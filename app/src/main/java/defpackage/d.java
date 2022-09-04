@@ -77,8 +77,8 @@ public final class d {
         int p = z2 ? z ? buVar.p() : buVar.q() : z ? buVar.n() : buVar.o();
         buVar.P(0, 0, 0, 0);
         ViewGroup viewGroup = buVar.L;
-        if (viewGroup != null && viewGroup.getTag(R.id.visible_removing_fragment_view_tag) != null) {
-            buVar.L.setTag(R.id.visible_removing_fragment_view_tag, null);
+        if (viewGroup != null && viewGroup.getTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag) != null) {
+            buVar.L.setTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag, null);
         }
         ViewGroup viewGroup2 = buVar.L;
         if (viewGroup2 == null || viewGroup2.getLayoutTransition() == null) {
@@ -1131,15 +1131,19 @@ public final class d {
 
     public static void j(XmlPullParser xmlPullParser) {
         int i = 1;
-        while (i > 0) {
-            switch (xmlPullParser.next()) {
-                case 2:
-                    i++;
-                    break;
-                case 3:
-                    i--;
-                    break;
+        try {
+            while (i > 0) {
+                switch (xmlPullParser.next()) {
+                    case 2:
+                        i++;
+                        break;
+                    case 3:
+                        i--;
+                        break;
+                }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -1267,7 +1271,7 @@ public final class d {
             ComponentName componentName = new ComponentName(activity, s);
             try {
                 return t(activity, componentName) == null ? Intent.makeMainActivity(componentName) : new Intent().setComponent(componentName);
-            } catch (PackageManager.NameNotFoundException e) {
+            } catch (Exception e) {
                 Log.e("NavUtils", "getParentActivityIntent: bad parentActivityName '" + s + "' in manifest");
                 return null;
             }
@@ -1287,14 +1291,19 @@ public final class d {
     public static String s(Activity activity) {
         try {
             return t(activity, activity.getComponentName());
-        } catch (PackageManager.NameNotFoundException e) {
+        } catch (Exception e) {
             throw new IllegalArgumentException(e);
         }
     }
 
     public static String t(Context context, ComponentName componentName) {
         String string;
-        ActivityInfo activityInfo = context.getPackageManager().getActivityInfo(componentName, 269222528);
+        ActivityInfo activityInfo = null;
+        try {
+            activityInfo = context.getPackageManager().getActivityInfo(componentName, 269222528);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         String str = activityInfo.parentActivityName;
         if (str == null) {
             if (activityInfo.metaData == null || (string = activityInfo.metaData.getString("android.support.PARENT_ACTIVITY")) == null) {

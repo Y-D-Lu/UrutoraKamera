@@ -80,16 +80,16 @@ public class FastMomentsHdrImpl implements geq {
         this.e.execute(new Runnable() { // from class: gaw
             @Override // java.lang.Runnable
             public final void run() {
-                HardwareBuffer hardwareBuffer;
-                long elapsedRealtimeNanos;
-                RawWriteView b;
-                AeShotParams aeShotParams;
-                long j;
-                long a2;
-                long c;
-                geo geoVar2;
+                HardwareBuffer hardwareBuffer = null;
+                long elapsedRealtimeNanos = 0L;
+                RawWriteView b = null;
+                AeShotParams aeShotParams = null;
+                long j = 0;
+                long a2 = 0L;
+                long c = 0L;
+                geo geoVar2 = null;
                 long j2;
-                int i;
+                int i = 0;
                 AeShotParams aeShotParams2;
                 String str;
                 geo geoVar3;
@@ -213,9 +213,8 @@ public class FastMomentsHdrImpl implements geq {
                     aeShotParams2.toString();
                     hardwareBuffer.close();
                 } catch (Throwable th2) {
-                    th = th2;
                     hardwareBuffer.close();
-                    throw th;
+                    th2.printStackTrace();
                 }
             }
         });

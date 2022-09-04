@@ -17,7 +17,7 @@ public final class dqg {
             return ope.H(aas.d(new Runnable() { // from class: dqf
                 @Override // java.lang.Runnable
                 public final void run() {
-                    qkg qkgVar4 = qkg.this;
+                    qkg qkgVar4 = qkgVar;
                     qkg qkgVar5 = qkgVar2;
                     qkg qkgVar6 = qkgVar3;
                     int i = dqg.a;

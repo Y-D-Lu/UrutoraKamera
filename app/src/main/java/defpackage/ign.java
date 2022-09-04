@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.List;
+
 /* renamed from: ign  reason: default package */
 /* loaded from: classes.dex */
 final class ign extends mip {
@@ -14,7 +16,7 @@ final class ign extends mip {
         if (bArr.length > 0) {
             ouj oujVar = igq.a;
         }
-        for (iha ihaVar : this.a.h) {
+        for (iha ihaVar : (List<iha>) this.a.h) {
             ihaVar.a(bArr);
         }
     }
@@ -22,7 +24,7 @@ final class ign extends mip {
     @Override // defpackage.mip
     public final void r() {
         ouj oujVar = igq.a;
-        for (iha ihaVar : this.a.h) {
+        for (iha ihaVar : (List<iha>) this.a.h) {
             ihaVar.b();
         }
     }
@@ -31,7 +33,7 @@ final class ign extends mip {
     public final void s(int i) {
         int i2;
         ouj oujVar = igq.a;
-        for (iha ihaVar : this.a.h) {
+        for (iha ihaVar : (List<iha>) this.a.h) {
             switch (i) {
                 case 0:
                     i2 = 1;

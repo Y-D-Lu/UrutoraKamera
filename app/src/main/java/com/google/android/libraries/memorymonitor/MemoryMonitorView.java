@@ -168,7 +168,7 @@ public class MemoryMonitorView extends View {
             if (f != mivVar.a) {
                 mivVar.a("Inflating heap utilization to %.2f%% (%.2f MB)", Float.valueOf(f * 100.0f), Float.valueOf(mivVar.b * a));
                 mit mitVar = mivVar.c.f;
-                long a2 = mitVar.c + ((mivVar.b - mit.a()) * ((float) mitVar.a));
+                long a2 = (long) (mitVar.c + ((mivVar.b - mit.a()) * ((float) mitVar.a)));
                 while (mitVar.c > a2 && !mitVar.b.isEmpty()) {
                     mitVar.c -= ((byte[]) mitVar.b.pop()).length;
                 }

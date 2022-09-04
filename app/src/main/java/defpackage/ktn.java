@@ -5,6 +5,7 @@ import android.os.Parcelable;
 
 import java.util.Arrays;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 /* renamed from: ktn  reason: default package */
@@ -47,7 +48,7 @@ public final class ktn extends kno implements Comparable {
         StringBuilder sb = new StringBuilder("Configuration(");
         sb.append(this.a);
         sb.append(", (");
-        for (kts ktsVar : this.d.values()) {
+        for (kts ktsVar : (Set<kts>) this.d.values()) {
             sb.append(ktsVar);
             sb.append(", ");
         }

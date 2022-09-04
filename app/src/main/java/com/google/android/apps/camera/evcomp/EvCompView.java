@@ -16,6 +16,7 @@ import com.hdrindicator.DisplayHelper;
 import org.codeaurora.snapcam.R;
 
 import java.util.ArrayList;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import defpackage.dme;
@@ -304,7 +305,7 @@ public class EvCompView extends FrameLayout {
             dmfVar.a(m);
             fArr[0] = m;
             if (ojcVar.g()) {
-                for (dmf dmfVar3 : this.a) {
+                for (dmf dmfVar3 : (Set<dmf>) this.a) {
                     if (!dmfVar3.equals(view)) {
                         float m2 = m(((Integer) ojcVar.c()).intValue(), dmfVar3);
                         dmfVar3.a(m2);
@@ -384,7 +385,7 @@ public class EvCompView extends FrameLayout {
     @Override // android.view.View
     public final void setVisibility(int i) {
         super.setVisibility(i);
-        for (dmf dmfVar : this.a) {
+        for (dmf dmfVar : (Set<dmf>) this.a) {
             dmfVar.setVisibility(i);
         }
     }

@@ -6,11 +6,11 @@ import android.support.v8.renderscript.ScriptIntrinsicBLAS;
 /* loaded from: classes2.dex */
 public final class lbd {
     private static final lbb e = lbb.a;
-    public final int a;
-    public final String b;
-    public final int c;
-    public final boolean d;
-    private final lbb f;
+    public int a;
+    public String b;
+    public int c;
+    public boolean d;
+    private lbb f;
 
     public lbd() {
     }

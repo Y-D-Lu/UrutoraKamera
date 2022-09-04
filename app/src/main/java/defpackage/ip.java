@@ -43,7 +43,7 @@ public final class ip implements jv {
     @Override // defpackage.jv
     public final boolean b(jw jwVar, MenuItem menuItem) {
         jy jyVar = (jy) this.b;
-        return jyVar.a.onActionItemClicked(jyVar.e(jwVar), new lf(jyVar.b, menuItem));
+        return jyVar.a.onActionItemClicked(jyVar.e(jwVar), new lf(jyVar.b, (es) menuItem));
     }
 
     @Override // defpackage.jv

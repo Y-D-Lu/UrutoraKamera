@@ -22,7 +22,7 @@ public final class flh implements lie {
                 pkeVar.h = pkeVar.e.submit(new Callable() { // from class: pkc
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
-                        pke pkeVar2 = pke.this;
+                        pke pkeVar2 = pkeVar;
                         pkeVar2.a.finishCapture(pkeVar2.i);
                         return null;
                     }

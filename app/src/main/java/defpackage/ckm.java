@@ -29,7 +29,7 @@ public final /* synthetic */ class ckm implements Runnable {
                 ieVar.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: ckl
                     @Override // android.content.DialogInterface.OnDismissListener
                     public final void onDismiss(DialogInterface dialogInterface) {
-                        ckn.this.e = null;
+                        cknVar.e = null;
                     }
                 });
                 if (ieVar.isShowing()) {

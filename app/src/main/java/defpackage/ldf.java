@@ -15,7 +15,7 @@ public final class ldf implements lco {
         lcoVar.a(new lij() { // from class: lde
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                ldi.this.fB(obj);
+                ldiVar.fB(obj);
             }
         }, pgr.a);
     }

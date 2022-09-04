@@ -27,7 +27,7 @@ public final /* synthetic */ class byx implements Runnable {
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
                         Boolean bool = (Boolean) obj;
-                        BaseCurator baseCurator = byz.this.n;
+                        BaseCurator baseCurator = byzVar.n;
                         if (baseCurator != null) {
                             baseCurator.b(bool.booleanValue());
                         }
@@ -37,11 +37,11 @@ public final /* synthetic */ class byx implements Runnable {
                 byzVar.o.k(new lmu() { // from class: byu
                     @Override // defpackage.lmu
                     public final void a(lrr lrrVar) {
-                        final byz byzVar2 = byz.this;
+                        final byz byzVar2 = byzVar;
                         mip.bj(lrrVar, new lnn() { // from class: byv
                             @Override // defpackage.lnn
                             public final void a(final lmr lmrVar) {
-                                final byz byzVar3 = byz.this;
+                                final byz byzVar3 = byzVar2;
                                 byzVar3.f.execute(new Runnable() { // from class: byy
                                     /* JADX WARN: Code restructure failed: missing block: B:125:0x03af, code lost:
                                         if (r4 != null) goto L17;

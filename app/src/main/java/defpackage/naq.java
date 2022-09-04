@@ -706,9 +706,9 @@ public /* synthetic */ class naq {
             @Override // java.lang.Runnable
             public final void run() {
                 try {
-                    plk.ad(pht.this);
-                } catch (ExecutionException e) {
-                    myw.h(new nfs(e, 0));
+                    plk.ad(phtVar);
+                } catch (Exception e) {
+                    myw.h(new nfs((ExecutionException) e, 0));
                 }
             }
         }, pgr.a);

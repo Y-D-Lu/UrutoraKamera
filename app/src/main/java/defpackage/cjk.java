@@ -91,8 +91,8 @@ public final class cjk extends mip {
 
     public final lie g(final mip mipVar) {
         this.a.add(mipVar);
-        return new lie(mipVar, null, null, null) { // from class: cjj
-            public final /* synthetic */ mip b;
+        return new lie() { // from class: cjj
+            public final /* synthetic */ mip b = mipVar;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {

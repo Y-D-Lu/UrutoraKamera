@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
 /* renamed from: fqf  reason: default package */
 /* loaded from: classes.dex */
@@ -47,7 +48,7 @@ public final class fqf implements fqd {
             long j2 = this.e;
             this.e = 1 + j2;
             this.b.put(Long.valueOf(j2), a);
-            for (fqe fqeVar : this.h) {
+            for (fqe fqeVar : (Set<fqe>) this.h) {
                 if (bufferInfo.presentationTimeUs >= fqeVar.a && bufferInfo.presentationTimeUs <= fqeVar.b) {
                     fqeVar.c(a, j2);
                 }
@@ -68,7 +69,7 @@ public final class fqf implements fqd {
         objArr[3] = this.b.isEmpty() ? "n/a" : this.b.get(Long.valueOf(this.e - 1));
         objArr[4] = Long.valueOf(this.c);
         lisVar.b(String.format(locale, "mime %s, %d entries, span: <%s> - <%s> available to %d", objArr));
-        for (fqe fqeVar : this.h) {
+        for (fqe fqeVar : (Set<fqe>) this.h) {
             lis lisVar2 = this.a;
             Locale locale2 = Locale.US;
             Object[] objArr2 = new Object[4];
@@ -83,7 +84,7 @@ public final class fqf implements fqd {
     @Override // defpackage.msx, java.lang.AutoCloseable
     public final synchronized void close() {
         this.f = true;
-        for (fqe fqeVar : this.h) {
+        for (fqe fqeVar : (Set<fqe>) this.h) {
             fqeVar.b();
         }
     }
@@ -107,7 +108,7 @@ public final class fqf implements fqd {
             this.d++;
         }
         ArrayList arrayList = new ArrayList();
-        for (fqe fqeVar : this.h) {
+        for (fqe fqeVar : (Set<fqe>) this.h) {
             if (fqeVar.e) {
                 arrayList.add(fqeVar);
             }

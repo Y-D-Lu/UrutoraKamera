@@ -40,21 +40,21 @@ public final class lqx implements lie {
         lapVar.c(lrkVar);
     }
 
-    public final synchronized lmp a() {
+    public final synchronized lmp a() throws llv {
         if (this.f) {
             throw new llv("getConfig3ABuilder() cannot be called after the session is closed.");
         }
         return this.d.a();
     }
 
-    public final synchronized lpc b() {
+    public final synchronized lpc b() throws llv {
         if (this.f) {
             throw new llv("getRequestBuilder() cannot be called after the session is closed.");
         }
         return this.a.a();
     }
 
-    public final synchronized pht c(lnv lnvVar, boolean z) {
+    public final synchronized pht c(lnv lnvVar, boolean z) throws llv {
         if (this.f) {
             throw new llv("trigger3A() cannot be called after the session is closed.");
         }
@@ -87,28 +87,32 @@ public final class lqx implements lie {
         }
     }
 
-    public final synchronized pht d(boolean z, boolean z2, boolean z3, boolean z4) {
+    public final synchronized pht d(boolean z, boolean z2, boolean z3, boolean z4) throws llv {
         if (this.f) {
             throw new llv("unlock3A() cannot be called after the session is closed.");
         }
         return this.d.c(z, z2, z3, z4);
     }
 
-    public final synchronized pht e(lmq lmqVar, boolean z) {
+    public final synchronized pht e(lmq lmqVar, boolean z) throws llv {
         if (this.f) {
             throw new llv("update3A() cannot be called after the session is closed.");
         }
         return this.d.d(lmqVar, z);
     }
 
-    public final synchronized void f() {
+    public final synchronized void f() throws llv {
         if (this.f) {
             throw new llv("abortCaptures() cannot be called after the session is closed.");
         }
-        this.a.c();
+        try {
+            this.a.c();
+        } catch (Throwable ex) {
+            ex.printStackTrace();
+        }
     }
 
-    public final synchronized void g() {
+    public final synchronized void g() throws llv {
         if (this.f) {
             throw new llv("stopRepeating() cannot be called after the session is closed.");
         }
@@ -116,49 +120,49 @@ public final class lqx implements lie {
         this.a.d();
     }
 
-    public final synchronized void h(List list, List list2) {
+    public final synchronized void h(List list, List list2) throws llv {
         if (this.f) {
             throw new llv("submit() cannot be called after the session is closed.");
         }
         this.a.e(list, list2);
     }
 
-    public final synchronized void i(lpd lpdVar) {
+    public final synchronized void i(lpd lpdVar) throws llv {
         if (this.f) {
             throw new llv("setRepeating() cannot be called after the session is closed.");
         }
         this.a.f(lpdVar);
     }
 
-    public final synchronized void j(lpd lpdVar, Set set) {
+    public final synchronized void j(lpd lpdVar, Set set) throws llv {
         if (this.f) {
             throw new llv("submit() cannot be called after the session is closed.");
         }
         this.a.g(lpdVar, set);
     }
 
-    public final synchronized pht k(lmq lmqVar) {
+    public final synchronized pht k(lmq lmqVar) throws llv {
         if (this.f) {
             throw new llv("lock3AImmediately() with config3a cannot be called after the session is closed.");
         }
         return this.d.e(lmqVar);
     }
 
-    public final synchronized void l(lmq lmqVar) {
+    public final synchronized void l(lmq lmqVar) throws llv {
         if (this.f) {
             throw new llv("updateConfig3AWithLocksRetained() cannot be called after the session is closed.");
         }
         this.d.f(lmqVar);
     }
 
-    public final synchronized void m(lmq lmqVar) {
+    public final synchronized void m(lmq lmqVar) throws llv {
         if (this.f) {
             throw new llv("submit3A() cannot be called after the session is closed.");
         }
         this.d.g(lmqVar);
     }
 
-    public final synchronized void n(Set set, mip mipVar) {
+    public final synchronized void n(Set set, mip mipVar) throws llv {
         if (this.f) {
             throw new llv("submit(parameters, listener) cannot be called after the session is closed.");
         }

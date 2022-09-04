@@ -38,7 +38,7 @@ public final class efu implements imr, fik, fie, fii {
             bqgVar.i().c(ldaVar2.a(new lij() { // from class: efp
                 @Override // defpackage.lij
                 public final void fB(Object obj2) {
-                    lda ldaVar3 = lda.this;
+                    lda ldaVar3 = ldaVar2;
                     jhh jhhVar2 = jhhVar;
                     jrl jrlVar = (jrl) obj2;
                     if (!efu.e((jrl) ldaVar3.fA())) {
@@ -49,7 +49,7 @@ public final class efu implements imr, fik, fie, fii {
             bqgVar.i().c(cvoVar.a(new lij() { // from class: efo
                 @Override // defpackage.lij
                 public final void fB(Object obj2) {
-                    jhh jhhVar2 = jhh.this;
+                    jhh jhhVar2 = jhhVar;
                     hug hugVar2 = hugVar;
                     lda ldaVar3 = ldaVar2;
                     if (((cwi) obj2).b()) {

@@ -88,7 +88,7 @@ public final class hzo extends jxh {
         hzzVar.f.c(new Runnable() { // from class: hzw
             @Override // java.lang.Runnable
             public final void run() {
-                hzz hzzVar2 = hzz.this;
+                hzz hzzVar2 = hzzVar;
                 Point point2 = point;
                 SmartsUiGleamingView smartsUiGleamingView = hzzVar2.b;
                 lar.a();

@@ -43,12 +43,8 @@ public final class fky implements iat {
         iaw a = iax.a();
         a.b = this.g.getString(R.string.longexposure_suggestion_text);
         a.c = this.g.getDrawable(R.drawable.ic_night_suggestion, null);
-        a.d = new Runnable(this) { // from class: fkx
-            public final /* synthetic */ fky a;
-
-            {
-                this.a = this;
-            }
+        a.d = new Runnable() { // from class: fkx
+            public final /* synthetic */ fky a = fky.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -64,12 +60,8 @@ public final class fky implements iat {
                 }
             }
         };
-        a.g = new Runnable(this) { // from class: fkx
-            public final /* synthetic */ fky a;
-
-            {
-                this.a = this;
-            }
+        a.g = new Runnable() { // from class: fkx
+            public final /* synthetic */ fky a = fky.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -86,12 +78,8 @@ public final class fky implements iat {
             }
         };
         this.a = a.a();
-        this.h.b(new lij(this) { // from class: fkw
-            public final /* synthetic */ fky a;
-
-            {
-                this.a = this;
-            }
+        this.h.b(new lij() { // from class: fkw
+            public final /* synthetic */ fky a = fky.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -116,12 +104,8 @@ public final class fky implements iat {
                 }
             }
         }, pgr.a);
-        this.i = this.c.a(htu.j).a(new lij(this) { // from class: fkw
-            public final /* synthetic */ fky a;
-
-            {
-                this.a = this;
-            }
+        this.i = this.c.a(htu.j).a(new lij() { // from class: fkw
+            public final /* synthetic */ fky a = fky.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {

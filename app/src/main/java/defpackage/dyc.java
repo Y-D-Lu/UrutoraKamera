@@ -32,7 +32,7 @@ public final class dyc implements lie {
         this.b.c.execute(new Runnable() { // from class: dyb
             @Override // java.lang.Runnable
             public final void run() {
-                pih pihVar = pih.this;
+                pih pihVar = f2;
                 pih pihVar2 = f;
                 EGLDisplay eglGetCurrentDisplay = EGL14.eglGetCurrentDisplay();
                 pihVar.o(eglGetCurrentDisplay);

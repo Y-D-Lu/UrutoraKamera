@@ -77,7 +77,7 @@ public final class gay implements gey {
             hcf a = this.j.a(lmrVar);
             mad e = a.e();
             mad d2 = a.d();
-            lwj lwjVar = d2 == null ? new lwj(j3) : d2;
+            lwj lwjVar = d2 == null ? new lwj(j3) : (lwj) d2;
             lmrVar.close();
             if (e == null) {
                 gexVar.b(new RuntimeException("Could not get a raw image from input frame"));

@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: off  reason: default package */
 /* loaded from: classes2.dex */
 public final class off {
-    public final Object a;
-    public final ofh b;
+    public Object a;
+    public ofh b;
     public boolean c;
     public Object d;
     public Exception e;

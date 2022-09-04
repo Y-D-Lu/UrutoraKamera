@@ -123,12 +123,8 @@ public final class clp implements clg {
                 if (this.p.a(ckdVar)) {
                     lmv lmvVar = this.x;
                     lmvVar.getClass();
-                    lmvVar.k(new lmu(this) { // from class: cli
-                        public final /* synthetic */ clp a;
-
-                        {
-                            this.a = this;
-                        }
+                    lmvVar.k(new lmu() { // from class: cli
+                        public final /* synthetic */ clp a = clp.this;
 
                         @Override // defpackage.lmu
                         public final void a(lrr lrrVar) {
@@ -210,12 +206,8 @@ public final class clp implements clg {
                 if (ckdVar.D && this.e.h(ckdVar)) {
                     lmv lmvVar2 = this.x;
                     lmvVar2.getClass();
-                    lmvVar2.k(new lmu(this) { // from class: cli
-                        public final /* synthetic */ clp a;
-
-                        {
-                            this.a = this;
-                        }
+                    lmvVar2.k(new lmu() { // from class: cli
+                        public final /* synthetic */ clp a = clp.this;
 
                         @Override // defpackage.lmu
                         public final void a(lrr lrrVar) {
@@ -481,7 +473,7 @@ public final class clp implements clg {
                                                 lvj lvjVar = ckpVar.a.c;
                                                 lvjVar.getClass();
                                                 lvjVar.a(d, longValue);
-                                            } catch (llv e) {
+                                            } catch (Exception e) {
                                                 ((oug) ((oug) ((oug) ckq.a.b()).h(e)).G(457)).o("Error writing video frame.");
                                             }
                                         }

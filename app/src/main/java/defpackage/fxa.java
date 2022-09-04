@@ -170,7 +170,7 @@ public final class fxa implements fxh {
                             lie lieVar;
                             fpa a;
                             gjk gjkVar;
-                            fnj fnjVar2 = fnj.this;
+                            fnj fnjVar2 = fnjVar;
                             if (fnjVar2.o) {
                                 return;
                             }
@@ -182,7 +182,7 @@ public final class fxa implements fxh {
                             larVar.c(new Runnable() { // from class: fni
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    jje.this.g();
+                                    jjeVar.g();
                                 }
                             });
                             fnjVar2.i.e();
@@ -201,7 +201,7 @@ public final class fxa implements fxh {
                                 lieVar = new lie() { // from class: fnn
                                     @Override // defpackage.lie, java.lang.AutoCloseable
                                     public final void close() {
-                                        fno fnoVar2 = fno.this;
+                                        fno fnoVar2 = fnoVar;
                                         fnoVar2.e.g(fnoVar2.c);
                                     }
                                 };

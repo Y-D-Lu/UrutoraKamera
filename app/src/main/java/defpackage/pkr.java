@@ -210,7 +210,7 @@ public final class pkr {
     public static boolean D(lzr lzrVar) {
         lzi lziVar = d;
         if (lziVar.e() || lziVar.g() || lziVar.i || lziVar.h() || lziVar.m) {
-            return (lzrVar == null ? -1 : (Integer) lzrVar.d(CaptureResult.CONTROL_SCENE_MODE)).intValue() == 3;
+            return (lzrVar == null ? -1 : (Integer) lzrVar.d(CaptureResult.CONTROL_SCENE_MODE)) == 3;
         }
         return false;
     }
@@ -778,7 +778,7 @@ public final class pkr {
         boolean z = true;
         gzsVar.a(CaptureRequest.CONTROL_MODE, 1);
         gzsVar.a(CaptureRequest.CONTROL_AE_MODE, 0);
-        gzsVar.a(CaptureRequest.SENSOR_EXPOSURE_TIME, Long.valueOf(c2 * 1000000.0f));
+        gzsVar.a(CaptureRequest.SENSOR_EXPOSURE_TIME, Long.valueOf((long) (c2 * 1000000.0f)));
         gzsVar.a(CaptureRequest.SENSOR_FRAME_DURATION, 0L);
         gzsVar.a(CaptureRequest.SENSOR_SENSITIVITY, Integer.valueOf((int) (b * f * E(g)[0])));
         gzsVar.a(CaptureRequest.BLACK_LEVEL_LOCK, Boolean.valueOf(GcamModuleJNI.FrameRequest_try_to_lock_black_level_get(frameRequest.a, frameRequest)));

@@ -65,14 +65,9 @@ public class dzr2 implements Preference.OnPreferenceClickListener {
         Activity activity = this.a;
         EditText editText = new EditText(activity);
         editText.setHint("");
-        AlertDialog create = new AlertDialog.Builder(activity).setTitle("Enter config name").setView(editText).setPositiveButton("Okay", new DialogInterface.OnClickListener(this.a, editText) { // from class: dzr2.1
-            Activity a;
-            EditText ent_name;
-
-            {
-                this.a = r1;
-                this.ent_name = editText;
-            }
+        AlertDialog create = new AlertDialog.Builder(activity).setTitle("Enter config name").setView(editText).setPositiveButton("Okay", new DialogInterface.OnClickListener() { // from class: dzr2.1
+            Activity a = activity;
+            EditText ent_name = editText;
 
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {

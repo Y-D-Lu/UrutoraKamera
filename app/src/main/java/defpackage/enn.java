@@ -81,9 +81,9 @@ public final class enn implements enm {
                 }
                 return e;
             } catch (Throwable th2) {
-                th = th2;
-                throw th;
+                th2.printStackTrace();
             }
         }
+        return null;
     }
 }

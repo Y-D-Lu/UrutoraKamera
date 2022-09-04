@@ -117,7 +117,7 @@ public class ModeSwitcher extends HorizontalScrollView implements jgm {
         addView(jfsVar);
         this.c = jfsVar;
         jfsVar.setOrientation(0);
-        this.c.o = ojc.i(new jft(this));
+        this.c.o = ojc.i(new jft());
         this.c.setGravity(16);
         this.c.setBackgroundColor(0);
         setHorizontalScrollBarEnabled(false);
@@ -172,7 +172,8 @@ public class ModeSwitcher extends HorizontalScrollView implements jgm {
             i = (int) resources.getDimension(R.dimen.notification_dot_horiz_padding);
         }
         jhmVar.c(dimension, dimension2, i);
-        jfsVar.e.put((EnumMap) jrlVar, (jrl) jhmVar);
+        jfsVar.e.put(jrlVar, jhmVar);
+        //jfsVar.e.put((EnumMap) jrlVar, (jrl) jhmVar);
         jfsVar.addView(textView);
         textView.setOnClickListener(new jfu(this, jrlVar));
     }

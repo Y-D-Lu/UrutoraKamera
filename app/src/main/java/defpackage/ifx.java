@@ -88,7 +88,7 @@ public final class ifx implements ifs, lie {
     public final void d() {
         synchronized (this.b) {
             if (!this.d) {
-                for (Integer num : this.e) {
+                for (Integer num : (Collection<Integer>) this.e) {
                     f().stop(num.intValue());
                 }
             }

@@ -308,7 +308,7 @@ public final class btq implements pys {
                     hashSet.add(new Runnable() { // from class: gca
                         @Override // java.lang.Runnable
                         public final void run() {
-                            qkg qkgVar4 = qkg.this;
+                            qkg qkgVar4 = qkgVar3;
                             qkg qkgVar5 = qkgVar2;
                             ((fpo) qkgVar4.mo37get()).g(new gbw(qkgVar5, 0), executor2);
                         }
@@ -322,7 +322,7 @@ public final class btq implements pys {
                     hashSet.add(new Runnable() { // from class: gbz
                         @Override // java.lang.Runnable
                         public final void run() {
-                            gdp.this.b();
+                            gdpVar.b();
                         }
                     });
                     unmodifiableSet = Collections.unmodifiableSet(hashSet);

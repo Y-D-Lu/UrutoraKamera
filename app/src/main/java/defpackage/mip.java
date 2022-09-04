@@ -3871,8 +3871,13 @@ public class mip {
         try {
             return mhlVar.b("com.google.android.libraries.lens.lenslite.dynamicloading.PackageVersion");
         } catch (Exception e2) {
-            return mhlVar.b("com.google.android.libraries.lens.lenslite.dynamicloading.ApiVersion");
+            try {
+                return mhlVar.b("com.google.android.libraries.lens.lenslite.dynamicloading.ApiVersion");
+            } catch (mhn ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     private static void x(RuntimeException runtimeException) {

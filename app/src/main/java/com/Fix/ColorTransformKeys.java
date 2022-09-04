@@ -2,8 +2,8 @@ package com.Fix;
 
 /* loaded from: classes2.dex */
 public class ColorTransformKeys {
-    static final String[] keys_camera_back = null;
-    static final String[] keys_camera_front = null;
+    static String[] keys_camera_back = null;
+    static String[] keys_camera_front = null;
 
     public ColorTransformKeys(int i) {
         String[] strArr;

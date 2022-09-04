@@ -98,7 +98,7 @@ public final class dfv extends dfk {
             dfjVar.getClass();
         }
         view.getClass();
-        view.setTag(R.id.mediadata_tag_viewtype, Integer.valueOf(bua.PHOTO.ordinal()));
+        view.setTag(com.google.android.apps.camera.bottombar.R.id.mediadata_tag_viewtype, Integer.valueOf(bua.PHOTO.ordinal()));
         dfjVar.b.setVisibility(8);
         if (!this.f.f() || !dfjVar.c.isClickable()) {
             dfjVar.c.setVisibility(8);

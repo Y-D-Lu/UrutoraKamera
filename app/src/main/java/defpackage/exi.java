@@ -604,12 +604,12 @@ public final class exi extends buf implements jad, gft {
         synchronized (jdyVar.h) {
             jdyVar.h.add(ewlVar);
         }
-        lapVar2.c(new lie(ewlVar, null) { // from class: bzq
-            public final /* synthetic */ ewl a;
+        lapVar2.c(new lie() { // from class: bzq
+            public final /* synthetic */ ewl a = ewlVar;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                jdy jdyVar2 = jdy.this;
+                jdy jdyVar2 = jdyVar;
                 ewl ewlVar2 = this.a;
                 synchronized (jdyVar2.h) {
                     jdyVar2.h.remove(ewlVar2);
@@ -766,7 +766,7 @@ public final class exi extends buf implements jad, gft {
                 jgvVar.d = new jgt() { // from class: jhf
                     @Override // defpackage.jgt
                     public final void a(long j) {
-                        jhh jhhVar2 = jhh.this;
+                        jhh jhhVar2 = jhhVar;
                         if (j >= 3000) {
                             jhhVar2.b.l("face_retouching_hint", true);
                         }
@@ -778,7 +778,7 @@ public final class exi extends buf implements jad, gft {
                 jhhVar.q.h().c(jhhVar.a.a(new lij() { // from class: jhg
                     @Override // defpackage.lij
                     public final void fB(Object obj2) {
-                        jhh jhhVar2 = jhh.this;
+                        jhh jhhVar2 = jhhVar;
                         if (((htf) obj2).f != htfVar.f) {
                             jhhVar2.a();
                         }

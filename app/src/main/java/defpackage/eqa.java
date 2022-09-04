@@ -3,6 +3,7 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: eqa  reason: default package */
 /* loaded from: classes.dex */
@@ -97,7 +98,7 @@ public final class eqa implements lmu, esk {
         }
         if (this.i == i) {
             this.h = false;
-            for (lmr lmrVar : this.f) {
+            for (lmr lmrVar : (Set<lmr>) this.f) {
                 lmrVar.b();
                 lmrVar.close();
             }
@@ -128,7 +129,7 @@ public final class eqa implements lmu, esk {
         this.k = new epz(this, pihVar);
         this.j = new hew(j, f, f2, this.k);
         this.f.size();
-        for (lmr lmrVar : this.f) {
+        for (lmr lmrVar : (Set<lmr>) this.f) {
             hew hewVar = this.j;
             hewVar.getClass();
             hewVar.a(lmrVar);

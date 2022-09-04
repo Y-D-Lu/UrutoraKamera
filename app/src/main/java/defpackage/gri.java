@@ -98,7 +98,11 @@ public final class gri implements grp, lie {
                 this.p.submit(runnable).get();
             } catch (RejectedExecutionException e) {
                 ((oug) ((oug) ((oug) a.b()).h(e)).G(2106)).q("Error trying to wait for frame %d", j);
-                throw new ExecutionException(e);
+                e.printStackTrace();
+            } catch (ExecutionException executionException) {
+                executionException.printStackTrace();
+            } catch (InterruptedException interruptedException) {
+                interruptedException.printStackTrace();
             }
         } finally {
             this.i.f();
@@ -129,7 +133,7 @@ public final class gri implements grp, lie {
                     lieVar = new lie() { // from class: grd
                         @Override // defpackage.lie, java.lang.AutoCloseable
                         public final void close() {
-                            grg grgVar2 = grg.this;
+                            grg grgVar2 = grgVar;
                             lmv lmvVar2 = lmvVar;
                             synchronized (grgVar2.a) {
                                 lmvVar2.l(grgVar2);

@@ -908,12 +908,8 @@ public final class eur implements btt, fik, fhy, fib, fii, fig, fie, fij, fgl, f
                     ((iwn) fchVar.a.mo37get()).f();
                     break;
             }
-            mip.ca(this.W, new lht(this) { // from class: eub
-                public final /* synthetic */ eur a;
-
-                {
-                    this.a = this;
-                }
+            mip.ca(this.W, new lht() { // from class: eub
+                public final /* synthetic */ eur a = eur.this;
 
                 @Override // defpackage.lht
                 public final void a(Object obj) {
@@ -1023,12 +1019,8 @@ public final class eur implements btt, fik, fhy, fib, fii, fig, fie, fij, fgl, f
             if (this.p.g()) {
                 ((idc) this.p.c()).a(new euj(this));
             }
-            mip.ca(((ivj) this.l.mo37get()).c(), new lht(this) { // from class: eub
-                public final /* synthetic */ eur a;
-
-                {
-                    this.a = this;
-                }
+            mip.ca(((ivj) this.l.mo37get()).c(), new lht() { // from class: eub
+                public final /* synthetic */ eur a = eur.this;
 
                 @Override // defpackage.lht
                 public final void a(Object obj) {

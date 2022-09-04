@@ -28,14 +28,14 @@ public final class hrz {
             if (file2.lastModified() < (-86400000) + currentTimeMillis) {
                 try {
                     this.d.a(file2);
-                } catch (IOException e) {
+                } catch (Exception e) {
                     ((oug) ((oug) a.c()).G((char) 2642)).r("Could not clean up %s", file2.getAbsolutePath());
                 }
             }
         }
     }
 
-    public final File a(String str) {
+    public final File a(String str) throws IOException {
         boolean z;
         if (this.b.g()) {
             File file = new File((File) this.b.c(), str);

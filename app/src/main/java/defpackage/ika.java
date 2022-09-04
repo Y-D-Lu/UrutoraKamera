@@ -8,7 +8,7 @@ import java.io.IOException;
 public final class ika {
     public static final Object a = new Object();
 
-    public final void a(File file) {
+    public final void a(File file) throws IOException {
         File[] listFiles;
         if (!file.exists() || !file.isDirectory() || (listFiles = file.listFiles()) == null) {
             return;

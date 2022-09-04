@@ -301,7 +301,7 @@ public final class eoo implements pys {
                 lapVar.c(new lie() { // from class: gby
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        mrg.this.close();
+                        a2.close();
                     }
                 });
                 gdz gdzVar = new gdz(mediaFormat, handler, hhrVar, mo37get7, h, ddfVar3, mo37get8, mo37get9);
@@ -335,7 +335,7 @@ public final class eoo implements pys {
                     lapVar2.c(new lie() { // from class: gby
                         @Override // defpackage.lie, java.lang.AutoCloseable
                         public final void close() {
-                            mrg.this.close();
+                            a3.close();
                         }
                     });
                     gdpVar = gdzVar2;
@@ -420,7 +420,7 @@ public final class eoo implements pys {
                 lapVar4.c(mo37get19.a(new lij() { // from class: gsk
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        gsn.this.f(((cwi) obj).a());
+                        gsnVar.f(((cwi) obj).a());
                     }
                 }, pgr.a));
                 return gsnVar;
@@ -444,12 +444,12 @@ public final class eoo implements pys {
                 ((lmv) ojcVar4.c()).k(new lmu() { // from class: gvu
                     @Override // defpackage.lmu
                     public final void a(lrr lrrVar) {
-                        final ojc ojcVar6 = ojc.this;
+                        final ojc ojcVar6 = ojcVar5;
                         final ojc ojcVar7 = a4;
                         mip.bj(lrrVar, new lnn() { // from class: gvv
                             @Override // defpackage.lnn
                             public final void a(lmr lmrVar) {
-                                ojc ojcVar8 = ojc.this;
+                                ojc ojcVar8 = ojcVar6;
                                 ojc ojcVar9 = ojcVar7;
                                 mad d = lmrVar.d((lnx) ojcVar8.c());
                                 if (d != null) {

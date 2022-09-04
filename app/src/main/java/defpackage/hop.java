@@ -87,12 +87,8 @@ public final class hop implements hpb {
         replaceableView.a(this.e);
         this.j = hosVar;
         hosVar.f();
-        lapVar.c(this.f.a(new lij(this) { // from class: hoo
-            public final /* synthetic */ hop a;
-
-            {
-                this.a = this;
-            }
+        lapVar.c(this.f.a(new lij() { // from class: hoo
+            public final /* synthetic */ hop a = hop.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -121,12 +117,8 @@ public final class hop implements hpb {
                 }
             }
         }, this.c));
-        lapVar.c(lcoVar2.a(new lij(this) { // from class: hoo
-            public final /* synthetic */ hop a;
-
-            {
-                this.a = this;
-            }
+        lapVar.c(lcoVar2.a(new lij() { // from class: hoo
+            public final /* synthetic */ hop a = hop.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -155,12 +147,8 @@ public final class hop implements hpb {
                 }
             }
         }, this.c));
-        lapVar.c(lcoVar3.a(new lij(this) { // from class: hoo
-            public final /* synthetic */ hop a;
-
-            {
-                this.a = this;
-            }
+        lapVar.c(lcoVar3.a(new lij() { // from class: hoo
+            public final /* synthetic */ hop a = hop.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -189,12 +177,8 @@ public final class hop implements hpb {
                 }
             }
         }, this.c));
-        lapVar.c(this.d.a(new lij(this) { // from class: hoo
-            public final /* synthetic */ hop a;
-
-            {
-                this.a = this;
-            }
+        lapVar.c(this.d.a(new lij() { // from class: hoo
+            public final /* synthetic */ hop a = hop.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -223,12 +207,8 @@ public final class hop implements hpb {
                 }
             }
         }, this.c));
-        lapVar.c(lcoVar4.a(new lij(this) { // from class: hoo
-            public final /* synthetic */ hop a;
-
-            {
-                this.a = this;
-            }
+        lapVar.c(lcoVar4.a(new lij() { // from class: hoo
+            public final /* synthetic */ hop a = hop.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {

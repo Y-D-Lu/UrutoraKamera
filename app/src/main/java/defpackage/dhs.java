@@ -1,21 +1,20 @@
 package defpackage;
 
+import java.time.Clock;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Phaser;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
-
-import java.time.Clock;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.Collection;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dhs  reason: default package */
@@ -263,7 +262,7 @@ public final class dhs implements dib {
                 Instant minus = instant.minus(dhsVar.g);
                 HashSet<dhq> hashSet = new HashSet();
                 synchronized (dhsVar) {
-                    for (dhq dhqVar : dhsVar.j.values()) {
+                    for (dhq dhqVar : (Set<dhq>) dhsVar.j.values()) {
                         if (!dhqVar.b && dhqVar.c.isBefore(minus)) {
                             hashSet.add(dhqVar);
                         }

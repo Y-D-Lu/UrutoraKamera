@@ -49,7 +49,7 @@ final class gmk implements gmt {
         phtVar.d(new Runnable() { // from class: gmj
             @Override // java.lang.Runnable
             public final void run() {
-                gmn.this.close();
+                gmnVar.close();
             }
         }, pgr.a);
         this.a.close();

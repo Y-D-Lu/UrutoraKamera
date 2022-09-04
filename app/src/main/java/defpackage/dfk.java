@@ -37,7 +37,7 @@ public abstract class dfk implements bty {
     }
 
     public static dfj k(View view) {
-        Object tag = view.getTag(R.id.mediadata_tag_target);
+        Object tag = view.getTag(com.google.android.apps.camera.bottombar.R.id.mediadata_tag_target);
         if (tag instanceof dfj) {
             return (dfj) tag;
         }
@@ -87,7 +87,7 @@ public abstract class dfk implements bty {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final View j(ViewGroup viewGroup) {
         View inflate = LayoutInflater.from(this.c).inflate(R.layout.filmstrip_view, viewGroup, false);
-        inflate.setTag(R.id.mediadata_tag_target, new dfj((ImageView) inflate.findViewById(R.id.content_view), (ImageView) inflate.findViewById(R.id.play_button), (ImageView) inflate.findViewById(R.id.photo_sphere_center_badge)));
+        inflate.setTag(com.google.android.apps.camera.bottombar.R.id.mediadata_tag_target, new dfj((ImageView) inflate.findViewById(R.id.content_view), (ImageView) inflate.findViewById(R.id.play_button), (ImageView) inflate.findViewById(R.id.photo_sphere_center_badge)));
         return inflate;
     }
 

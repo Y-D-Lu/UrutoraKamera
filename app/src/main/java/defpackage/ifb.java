@@ -9,6 +9,10 @@ import java.util.function.Consumer;
 public final /* synthetic */ class ifb implements Consumer {
     public final /* synthetic */ ooh a;
 
+    public ifb(ooh e) {
+        a = e;
+    }
+
     @Override // java.util.function.Consumer
     public final void accept(Object obj) {
         this.a.g((Animator) obj);

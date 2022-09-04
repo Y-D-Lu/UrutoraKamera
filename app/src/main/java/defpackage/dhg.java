@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +22,7 @@ public final class dhg implements dha {
         ArrayList arrayList;
         arrayList = new ArrayList(this.c);
         this.c.clear();
-        for (dhf dhfVar : this.b) {
+        for (dhf dhfVar : (Set<dhf>) this.b) {
             arrayList.add(dhfVar.a());
         }
         this.b.clear();
@@ -32,7 +33,7 @@ public final class dhg implements dha {
     public final void b(long j, long j2) {
         this.e.a(j, j2);
         synchronized (this) {
-            for (dhf dhfVar : this.b) {
+            for (dhf dhfVar : (Set<dhf>) this.b) {
                 dhfVar.c++;
             }
         }
@@ -45,7 +46,7 @@ public final class dhg implements dha {
     @Override // defpackage.dha
     public final synchronized void d(jrl jrlVar) {
         this.d = jrlVar;
-        for (dhf dhfVar : this.b) {
+        for (dhf dhfVar : (Set<dhf>) this.b) {
             this.c.add(dhfVar.a());
         }
         this.b.clear();

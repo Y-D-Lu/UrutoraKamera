@@ -123,7 +123,7 @@ public final class dsd implements pys {
                 return new dys() { // from class: dyn
                     @Override // defpackage.dys
                     public final void a(long j, float f, float f2) {
-                        enr.this.c(j, f, f2);
+                        enrVar.c(j, f, f2);
                     }
                 };
             case 13:
@@ -132,7 +132,7 @@ public final class dsd implements pys {
                 return ope.H(new gnl() { // from class: dyo
                     @Override // defpackage.gnl, java.lang.Runnable
                     public final void run() {
-                        enr.this.close();
+                        enrVar2.close();
                     }
                 });
             case 14:

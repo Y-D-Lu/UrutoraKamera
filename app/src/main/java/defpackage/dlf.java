@@ -243,7 +243,7 @@ public final class dlf implements pys {
                 return new iho() { // from class: dqb
                     @Override // java.lang.Runnable
                     public final void run() {
-                        bqg bqgVar = bqg.this;
+                        bqg bqgVar = mo37get2;
                         lda ldaVar2 = ldaVar;
                         final dqe dqeVar2 = dqeVar;
                         cvo cvoVar2 = cvoVar;
@@ -258,7 +258,7 @@ public final class dlf implements pys {
                         bqgVar.i().c(cvoVar2.a(new lij() { // from class: dqc
                             @Override // defpackage.lij
                             public final void fB(Object obj3) {
-                                dqe.this.b.set(((cwi) obj3).a());
+                                dqeVar2.b.set(((cwi) obj3).a());
                             }
                         }, pgr.a));
                     }

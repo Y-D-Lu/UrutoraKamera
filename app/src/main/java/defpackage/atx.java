@@ -32,7 +32,7 @@ public final class atx extends atv {
     }
 
     @Override // defpackage.atv
-    public final void e(int i) {
+    public final void e(int i) throws ass {
         if ((i & 256) <= 0 || (i & 512) <= 0) {
             if ((i & 2) > 0 && (i & 768) > 0) {
                 throw new ass("Structs and arrays can't have \"value\" options", R.styleable.AppCompatTheme_textAppearanceListItem);

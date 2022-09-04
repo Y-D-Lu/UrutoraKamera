@@ -136,7 +136,7 @@ public final class ibz implements idc, fik, fhw, fig, fij, fii {
         idaVar.f.post(new Runnable() { // from class: icx
             @Override // java.lang.Runnable
             public final void run() {
-                ida.this.b.o(null);
+                idaVar.b.o(null);
             }
         });
         this.d.b.d(new ibv(this, 0), this.l);

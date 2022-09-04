@@ -133,7 +133,7 @@ public class hnf extends hnd {
                 /* JADX WARN: Type inference failed for: r10v1, types: [java.lang.Object, hpr] */
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    hmy hmyVar2 = hmy.this;
+                    hmy hmyVar2 = hmyVar;
                     RewindThumbnailScrollView rewindThumbnailScrollView2 = rewindThumbnailScrollView;
                     List list = arrayList2;
                     CaptureAnimationOverlay captureAnimationOverlay2 = captureAnimationOverlay;
@@ -205,17 +205,18 @@ public class hnf extends hnd {
             Size size2 = ((jbw) hmyVar.d.a()).b.b;
             int width2 = jrz.b(jrz.a(hmyVar.e.getDefaultDisplay(), hmyVar.c)) ? size2.getWidth() : size2.getHeight();
             rewindThumbnailScrollView.e(arrayList2, width2);
-            for (final int i3 = 0; i3 < arrayList2.size(); i3++) {
+            for (int i3 = 0; i3 < arrayList2.size(); i3++) {
                 if (hmyVar.j.b((hnk) arrayList2.get(i3))) {
                     rewindThumbnailScrollView.d("Cannot set new high-quality indicators when uninitialized.");
                     ImageView imageView2 = new ImageView(rewindThumbnailScrollView.b);
                     imageView2.setImageDrawable(rewindThumbnailScrollView.c);
                     FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(rewindThumbnailScrollView.d);
                     layoutParams.leftMargin += rewindThumbnailScrollView.c(i3);
+                    final int i3Final = i3;
                     imageView2.setOnClickListener(new View.OnClickListener() { // from class: hnb
                         @Override // android.view.View.OnClickListener
                         public final void onClick(View view) {
-                            RewindThumbnailScrollView.this.f(i3);
+                            rewindThumbnailScrollView.f(i3Final);
                         }
                     });
                     imageView2.setLayoutParams(layoutParams);
@@ -240,7 +241,7 @@ public class hnf extends hnd {
             handler.post(new Runnable() { // from class: hmr
                 @Override // java.lang.Runnable
                 public final void run() {
-                    RewindThumbnailScrollView rewindThumbnailScrollView2 = RewindThumbnailScrollView.this;
+                    RewindThumbnailScrollView rewindThumbnailScrollView2 = rewindThumbnailScrollView;
                     ObjectAnimator objectAnimator = rewindThumbnailScrollView2.f;
                     if (objectAnimator != null) {
                         objectAnimator.end();

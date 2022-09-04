@@ -109,7 +109,7 @@ public final class nhd {
         hashMap5.put('#', '#');
         Collections.unmodifiableMap(hashMap5);
         HashMap hashMap6 = new HashMap();
-        for (Character ch : unmodifiableMap.keySet()) {
+        for (Character ch : (Set<Character>) unmodifiableMap.keySet()) {
             char charValue = ch.charValue();
             Character valueOf = Character.valueOf(Character.toLowerCase(charValue));
             Character valueOf2 = Character.valueOf(charValue);
@@ -363,7 +363,7 @@ public final class nhd {
 
     public final int A(CharSequence charSequence, nhf nhfVar, int i2) {
         nhh C = C(nhfVar, i2);
-        ArrayList arrayList = C.b.isEmpty() ? nhfVar.a.b : C.b;
+        ArrayList arrayList = (ArrayList) (C.b.isEmpty() ? nhfVar.a.b : C.b);
         List list = C.c;
         if (i2 == 3) {
             if (!I(C(nhfVar, 1))) {
@@ -440,7 +440,7 @@ public final class nhd {
         throw new IllegalArgumentException("Invalid region code: " + str);
     }
 
-    final int b(CharSequence charSequence, nhf nhfVar, StringBuilder sb, boolean z, nhi nhiVar) {
+    final int b(CharSequence charSequence, nhf nhfVar, StringBuilder sb, boolean z, nhi nhiVar) throws ngy {
         int i2;
         int i3 = 0;
         if (charSequence.length() == 0) {

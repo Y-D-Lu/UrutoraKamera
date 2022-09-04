@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
@@ -125,7 +126,7 @@ public class BufferFlinger implements mmc {
     /* renamed from: lambda$close$2$com-google-android-libraries-oliveoil-bufferflinger-BufferFlinger  reason: not valid java name */
     public /* synthetic */ void m49xc0b4072e(Semaphore semaphore) {
         if (this.bufferFlingerHandle != 0) {
-            for (OnBufferReleasedListener onBufferReleasedListener : this.onBufferReleasedListenerQueue) {
+            for (OnBufferReleasedListener onBufferReleasedListener : (Set<OnBufferReleasedListener>) this.onBufferReleasedListenerQueue) {
                 onBufferReleasedListener.onBufferReleased();
             }
             synchronized (this.buffeFlingerHandleLock) {

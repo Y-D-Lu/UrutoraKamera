@@ -16,7 +16,7 @@ public final class hce extends ldl {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // defpackage.ldl
+//    @Override // defpackage.ldl
     /* renamed from: d */
     public final Boolean c(Integer num) {
         if (num.intValue() < this.a) {
@@ -25,5 +25,10 @@ public final class hce extends ldl {
             this.c = true;
         }
         return Boolean.valueOf(this.c);
+    }
+
+    @Override
+    protected Object c(Object obj) {
+        return c((Integer) obj);
     }
 }

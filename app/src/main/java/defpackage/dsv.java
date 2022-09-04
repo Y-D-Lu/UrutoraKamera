@@ -23,9 +23,9 @@ public final class dsv {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final synchronized void a() {
         dru.c("sensor", this.b);
-        for (final drt drtVar : this.b) {
+        for (final drt drtVar : (Set<drt>) this.b) {
             if (drtVar.e()) {
-                for (final Sensor sensor : drtVar.f()) {
+                for (final Sensor sensor : (Set<Sensor>) drtVar.f()) {
                     drtVar.h(sensor);
                     final dsu dsuVar = new dsu(drtVar);
                     this.a.registerListener(dsuVar, sensor, 3);
@@ -46,7 +46,7 @@ public final class dsv {
     }
 
     public final synchronized void b() {
-        for (Runnable runnable : this.c) {
+        for (Runnable runnable : (Set<Runnable>) this.c) {
             runnable.run();
         }
         this.c.clear();

@@ -161,7 +161,7 @@ public final class da {
         if (view != null) {
             view.setSaveFromParentEnabled(false);
             bu buVar5 = this.c;
-            buVar5.M.setTag(R.id.fragment_container_view_tag, buVar5);
+            buVar5.M.setTag(com.google.android.apps.camera.bottombar.R.id.fragment_container_view_tag, buVar5);
             if (viewGroup != null) {
                 a();
             }
@@ -214,7 +214,7 @@ public final class da {
         }
         view.setSaveFromParentEnabled(false);
         bu buVar3 = this.c;
-        buVar3.M.setTag(R.id.fragment_container_view_tag, buVar3);
+        buVar3.M.setTag(com.google.android.apps.camera.bottombar.R.id.fragment_container_view_tag, buVar3);
         bu buVar4 = this.c;
         if (buVar4.F) {
             buVar4.M.setVisibility(8);

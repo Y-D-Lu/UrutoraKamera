@@ -37,7 +37,7 @@ public final /* synthetic */ class ibv implements Runnable {
                 i.c(new lie() { // from class: ibs
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        ibz ibzVar2 = ibz.this;
+                        ibz ibzVar2 = ibzVar;
                         ibzVar2.g.d(ibzVar2.e);
                         ibzVar2.h.i(ibzVar2.e);
                         ibzVar2.e.b();
@@ -47,7 +47,7 @@ public final /* synthetic */ class ibv implements Runnable {
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
                         jrl jrlVar = (jrl) obj;
-                        icw.this.j();
+                        icwVar.j();
                     }
                 }, ibzVar.l));
                 ida idaVar = ibzVar.d;
@@ -59,7 +59,7 @@ public final /* synthetic */ class ibv implements Runnable {
                 ibzVar.j.setOnThumbnailVisibilityChangedListener(new BottomBar.OnVisibilityChangedListener() { // from class: ibr
                     @Override // com.google.android.apps.camera.bottombar.BottomBar.OnVisibilityChangedListener
                     public final void onVisibilityChanged(View view, int i2) {
-                        ibz ibzVar2 = ibz.this;
+                        ibz ibzVar2 = ibzVar;
                         ibzVar2.q = i2;
                         boolean isFinishing = ibzVar2.b.isFinishing();
                         boolean isDestroyed = ibzVar2.b.isDestroyed();
@@ -73,7 +73,7 @@ public final /* synthetic */ class ibv implements Runnable {
                 ibzVar.s.i().c(ibzVar.m.a(htu.ab).a(new lij() { // from class: ibt
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        ibz ibzVar2 = ibz.this;
+                        ibz ibzVar2 = ibzVar;
                         if (((Boolean) obj).booleanValue()) {
                             ibzVar2.k(idb.MARS_ENABLED);
                         } else {

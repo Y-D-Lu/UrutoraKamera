@@ -146,13 +146,13 @@ public final class hvz implements pys {
                 final gxm mo37get2 = ((djc) this.a).mo37get();
                 final ghx mo37get3 = ((gjo) this.b).mo37get();
                 final hxj hxjVar = (hxj) mo37get;
-                return aas.d(new Runnable(hxjVar, mo37get3, null) { // from class: hxl
-                    public final /* synthetic */ hxj a;
-                    public final /* synthetic */ ghx b;
+                return aas.d(new Runnable() { // from class: hxl
+                    public final /* synthetic */ hxj a = hxjVar;
+                    public final /* synthetic */ ghx b = mo37get3;
 
                     @Override // java.lang.Runnable
                     public final void run() {
-                        gxm gxmVar = gxm.this;
+                        gxm gxmVar = mo37get2;
                         hxj hxjVar2 = this.a;
                         ghx ghxVar = this.b;
                         gxmVar.f();
@@ -260,7 +260,7 @@ public final class hvz implements pys {
                 Object H = (!ddfVar2.k(dcv.b) || !ddfVar2.k(dcv.f) || !ddfVar2.k(deg.a)) ? orx.a : ope.H(new iho() { // from class: iny
                     @Override // java.lang.Runnable
                     public final void run() {
-                        hyc hycVar2 = hyc.this;
+                        hyc hycVar2 = hycVar;
                         pyn pynVar = a;
                         iau a2 = iav.a();
                         a2.a = "Cheetah";

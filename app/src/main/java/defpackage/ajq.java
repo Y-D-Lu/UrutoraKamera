@@ -8,11 +8,11 @@ import java.io.File;
 /* renamed from: ajq  reason: default package */
 /* loaded from: classes.dex */
 public final class ajq {
-    public final int a;
+    public int a;
     public ahy b;
-    public final aiq c;
-    public final String d;
-    public final String e;
+    public aiq c;
+    public String d;
+    public String e;
 
     public ajq(int i) {
         this.a = i;

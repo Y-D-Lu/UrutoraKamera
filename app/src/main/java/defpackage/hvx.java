@@ -2,6 +2,7 @@ package defpackage;
 
 import android.hardware.camera2.CameraManager;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
@@ -35,7 +36,7 @@ public final class hvx extends CameraManager.AvailabilityCallback {
             if (this.e.size() < this.b.length) {
                 return;
             }
-            for (Boolean bool : this.e.values()) {
+            for (Boolean bool : (Collection<Boolean>) this.e.values()) {
                 if (!bool.booleanValue()) {
                     return;
                 }

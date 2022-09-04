@@ -199,7 +199,7 @@ public final class eig implements ehu, ehi {
     }
 
     public final void c() {
-        for (elv elvVar : this.Q) {
+        for (elv elvVar : (Set<elv>) this.Q) {
             this.P.g(elvVar);
         }
         this.Q.clear();
@@ -235,7 +235,7 @@ public final class eig implements ehu, ehi {
             larVar.c(new Runnable() { // from class: eie
                 @Override // java.lang.Runnable
                 public final void run() {
-                    ejj.this.a();
+                    ejjVar.a();
                 }
             });
             int requestedOrientation = this.R.getRequestedOrientation();

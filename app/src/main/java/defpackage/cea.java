@@ -138,7 +138,7 @@ public final class cea implements dbg, ias {
             ojcVar = ojc.i(arrayList2);
         }
         if (ojcVar.g()) {
-            for (cdh cdhVar : (List) ojcVar.c()) {
+            for (cdh cdhVar : (List<cdh>) ojcVar.c()) {
                 poy m3 = piz.d.m();
                 float f2 = cdhVar.a;
                 if (m3.c) {

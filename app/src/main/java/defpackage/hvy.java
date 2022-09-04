@@ -14,10 +14,10 @@ import java.util.concurrent.TimeoutException;
 /* loaded from: classes.dex */
 public final class hvy {
     public static final ouj a = ouj.h("com/google/android/apps/camera/sideline/SidelineCameraAvailabilityChecker");
-    public final CameraManager b;
-    public final Executor c;
-    private final eszdmanClass cameraManager2;
-    private final ScheduledExecutorService d;
+    public CameraManager b;
+    public Executor c;
+    private eszdmanClass cameraManager2;
+    private ScheduledExecutorService d;
 
     /* JADX WARN: Type inference failed for: r0v1, types: [lwa, hvy, com.eszdman] */
     public hvy(CameraManager cameraManager, Executor executor, ScheduledExecutorService scheduledExecutorService) {
@@ -54,7 +54,8 @@ public final class hvy {
                 }
             }, this.c);
             return pfj.h(plk.ac(b, 60000L, TimeUnit.MILLISECONDS, this.d), TimeoutException.class, new eto(18), this.c);
-        } catch (CameraAccessException e) {
+        } catch (Exception e) {
+            e.printStackTrace();
             return plk.V(true);
         }
     }

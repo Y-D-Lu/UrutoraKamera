@@ -6,6 +6,7 @@ import android.util.Base64;
 
 import java.util.Arrays;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 /* renamed from: kto  reason: default package */
@@ -52,7 +53,7 @@ public final class kto extends kno {
         sb.append("', '");
         sb.append(this.c);
         sb.append("', (");
-        for (ktn ktnVar : this.e.values()) {
+        for (ktn ktnVar : (Set<ktn>) this.e.values()) {
             sb.append(ktnVar);
             sb.append(", ");
         }

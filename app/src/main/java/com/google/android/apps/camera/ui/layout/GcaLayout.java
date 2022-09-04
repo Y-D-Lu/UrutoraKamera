@@ -142,12 +142,12 @@ public class GcaLayout extends ConstraintLayout {
     }
 
     @Override // android.support.constraint.ConstraintLayout, android.view.ViewGroup
-    protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateDefaultLayoutParams() {
+    public final /* bridge */ /* synthetic */ af generateDefaultLayoutParams() {
         return generateDefaultLayoutParams();
     }
 
     @Override // android.support.constraint.ConstraintLayout, android.view.ViewGroup
-    public final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
+    public final /* bridge */ /* synthetic */ af generateLayoutParams(AttributeSet attributeSet) {
         return generateLayoutParams(attributeSet);
     }
 
@@ -156,12 +156,12 @@ public class GcaLayout extends ConstraintLayout {
         return new jcb(layoutParams);
     }
 
-    @Override // android.support.constraint.ConstraintLayout
+//    @Override // android.support.constraint.ConstraintLayout
     public final af gp() {
         return new jcb();
     }
 
-    @Override // android.support.constraint.ConstraintLayout
+//    @Override // android.support.constraint.ConstraintLayout
     public final af gq(AttributeSet attributeSet) {
         return new jcb(getContext(), attributeSet);
     }

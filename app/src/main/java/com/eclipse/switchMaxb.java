@@ -30,7 +30,7 @@ public class switchMaxb {
 
     public static void setLongClickListener(View view) {
         view.setOnLongClickListener(new View.OnLongClickListener() { // from class: com.eclipse.switchMaxb.1
-            public static void ShowToast(String str) {
+            public void ShowToast(String str) {
                 try {
                     Toast makeText = Toast.makeText(switchMaxb.getContext(), str, 0);
                     makeText.setGravity(17, 0, 0);
@@ -53,7 +53,11 @@ public class switchMaxb {
 
             public void onRestart() {
                 if (Helper.sHdr_process == 0) {
-                    Thread.sleep(500L);
+                    try {
+                        Thread.sleep(500L);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     AppGlobals.getInitialApplication();
                     Context context = switchMaxb.getContext();
                     Intent intent = new Intent(context, CameraActivity.class);

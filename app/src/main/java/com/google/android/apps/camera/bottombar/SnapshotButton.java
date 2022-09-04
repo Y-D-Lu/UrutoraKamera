@@ -22,7 +22,7 @@ public class SnapshotButton extends ShutterButton {
     @Override // com.google.android.apps.camera.ui.shutterbutton.ShutterButton
     protected float getDefaultScale() {
         TypedValue typedValue = new TypedValue();
-        getResources().getValue(R.dimen.snapshot_button_scale, typedValue, true);
+        getResources().getValue(com.google.android.apps.camera.bottombar.R.dimen.snapshot_button_scale, typedValue, true);
         return typedValue.getFloat();
     }
 

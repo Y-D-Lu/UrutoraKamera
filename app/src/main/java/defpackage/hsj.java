@@ -5,10 +5,10 @@ import android.net.Uri;
 /* renamed from: hsj  reason: default package */
 /* loaded from: classes2.dex */
 public final class hsj {
-    public final long a;
-    public final Uri b;
-    public final hsr c;
-    public final boolean d;
+    public long a;
+    public Uri b;
+    public hsr c;
+    public boolean d;
 
     public hsj() {
     }

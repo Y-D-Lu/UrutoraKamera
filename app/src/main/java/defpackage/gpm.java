@@ -127,7 +127,7 @@ public final class gpm implements pys {
                     hdr hdrVar = (hdr) it.next();
                     lnx lnxVar = (lnx) map.get(hdrVar);
                     if (lnxVar != null) {
-                        enumMap.put((EnumMap) hdrVar, (hdr) lnxVar);
+                        enumMap.put(hdrVar, lnxVar);
                     }
                 }
                 return enumMap;

@@ -178,7 +178,7 @@ public final class dzr {
                 f.q.d(dzkVar);
             }
             if (!this.d.c() || !(this.d.b() instanceof ecn)) {
-                pihVar = plk.T();
+                pihVar = (pih) plk.T();
             } else {
                 pih f2 = pih.f();
                 this.i.g("addPdListener");

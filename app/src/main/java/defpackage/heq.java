@@ -26,7 +26,7 @@ public final class heq implements lmu, lie {
 
     @Override // defpackage.lmu
     public final void a(lrr lrrVar) {
-        if (((Boolean) this.g.mo291get()).booleanValue()) {
+        if (((Boolean) this.g.get()).booleanValue()) {
             mip.bj(lrrVar, new lnn() { // from class: heo
                 @Override // defpackage.lnn
                 public final void a(final lmr lmrVar) {

@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 /* renamed from: kin  reason: default package */
 /* loaded from: classes2.dex */
 public final class kin extends kip {
-    private final BasePendingResult a;
+    private BasePendingResult a;
 
     public kin() {
     }

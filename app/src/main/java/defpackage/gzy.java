@@ -77,7 +77,7 @@ public final class gzy implements goy {
                                 pkeVar.e.execute(new Runnable() { // from class: pka
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        pke pkeVar2 = pke.this;
+                                        pke pkeVar2 = pkeVar;
                                         pkeVar2.a.notifySurfaceChanged(pkeVar2.i, surface);
                                     }
                                 });
@@ -190,7 +190,7 @@ public final class gzy implements goy {
                                                             pkeVar.g = pkeVar.e.submit(new Callable() { // from class: pkd
                                                                 @Override // java.util.concurrent.Callable
                                                                 public final Object call() {
-                                                                    pke pkeVar2 = pke.this;
+                                                                    pke pkeVar2 = pkeVar;
                                                                     final mad madVar = d;
                                                                     lzv lzvVar = c2;
                                                                     try {
@@ -316,7 +316,7 @@ public final class gzy implements goy {
                             pkeVar.e.execute(new Runnable() { // from class: pkb
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    pke pkeVar2 = pke.this;
+                                    pke pkeVar2 = pkeVar;
                                     pkg pkgVar2 = pkgVar;
                                     pki pkiVar2 = pkiVar;
                                     ShotParams shotParams = new ShotParams();

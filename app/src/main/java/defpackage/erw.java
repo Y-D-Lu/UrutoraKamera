@@ -14,6 +14,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
@@ -216,7 +217,7 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
     public final void j(final edd eddVar, long j, ShotMetadata shotMetadata) {
         LasagnaInputParamsImpl lasagnaInputParamsImpl;
         LasagnaInputParamsImpl lasagnaInputParamsImpl2;
-        lji a2;
+        lji a2 = null;
         ovd ovdVar = ovl.a;
         eddVar.a();
         pht phtVar = null;
@@ -249,12 +250,8 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
                         if (lasagnaInputParamsImpl != null) {
                             lasagnaInputParamsImpl.b();
                         }
-                        this.k.execute(new Runnable(this) { // from class: err
-                            public final /* synthetic */ erw a;
-
-                            {
-                                this.a = this;
-                            }
+                        this.k.execute(new Runnable() { // from class: err
+                            public final /* synthetic */ erw a = erw.this;
 
                             @Override // java.lang.Runnable
                             public final void run() {
@@ -272,12 +269,8 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
                     throw th;
                 }
                 try {
-                    phtVar = this.i.c(eddVar, ervVar.g, lasagnaInputParamsImpl3, new Runnable(this) { // from class: err
-                        public final /* synthetic */ erw a;
-
-                        {
-                            this.a = this;
-                        }
+                    phtVar = this.i.c(eddVar, ervVar.g, lasagnaInputParamsImpl3, new Runnable() { // from class: err
+                        public final /* synthetic */ erw a = erw.this;
 
                         @Override // java.lang.Runnable
                         public final void run() {
@@ -296,11 +289,11 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
                     plk.af(phtVar, new eru(this, a2, ervVar), this.k);
                     this.c.f();
                 } catch (Exception e2) {
-                    e = e2;
-                    if (e instanceof InterruptedException) {
+                    e2.printStackTrace();
+                    if (e2 instanceof InterruptedException) {
                         Thread.currentThread().interrupt();
                     }
-                    ((oug) ((oug) ((oug) a.b().g(ovl.a, "LasagnaProcessor")).h(e)).G(1477)).p("Error processing shot id %d.", eddVar.a());
+                    ((oug) ((oug) ((oug) a.b().g(ovl.a, "LasagnaProcessor")).h(e2)).G(1477)).p("Error processing shot id %d.", eddVar.a());
                     this.c.f();
                     if (phtVar != null) {
                         return;
@@ -308,12 +301,8 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
                     if (lasagnaInputParamsImpl2 != null) {
                         lasagnaInputParamsImpl2.b();
                     }
-                    this.k.execute(new Runnable(this) { // from class: err
-                        public final /* synthetic */ erw a;
-
-                        {
-                            this.a = this;
-                        }
+                    this.k.execute(new Runnable() { // from class: err
+                        public final /* synthetic */ erw a = erw.this;
 
                         @Override // java.lang.Runnable
                         public final void run() {
@@ -329,14 +318,14 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
                     });
                 }
             } catch (Exception e3) {
-                e = e3;
+                e3.printStackTrace();
                 lasagnaInputParamsImpl2 = null;
             } catch (Throwable th2) {
-                th = th2;
+                th2.printStackTrace();
                 lasagnaInputParamsImpl = null;
             }
         } catch (Throwable th3) {
-            th = th3;
+            th3.printStackTrace();
         }
     }
 
@@ -356,7 +345,7 @@ public final class erw implements eby, esm, esh, ebt, ebn, ebo {
                 ovd ovdVar2 = ovl.a;
                 gogVar2.c.d().fB(null);
                 hsp h = gogVar2.b.h();
-                for (erv ervVar : erwVar.d.values()) {
+                for (erv ervVar : (Set<erv>) erwVar.d.values()) {
                     if (h.equals(ervVar.c.c.b.h()) && ervVar.h.get() != null) {
                         Bitmap bitmap = (Bitmap) ervVar.h.get();
                         bitmap.getClass();

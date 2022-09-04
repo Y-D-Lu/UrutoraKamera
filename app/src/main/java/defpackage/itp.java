@@ -32,12 +32,8 @@ public final class itp implements itw {
         imv a = imw.a();
         a.c(executor);
         a.a = "FocusTracking";
-        a.d(new Runnable(this) { // from class: itm
-            public final /* synthetic */ itp a;
-
-            {
-                this.a = this;
-            }
+        a.d(new Runnable() { // from class: itm
+            public final /* synthetic */ itp a = itp.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -51,12 +47,8 @@ public final class itp implements itw {
                 }
             }
         });
-        a.e(new Runnable(this) { // from class: itm
-            public final /* synthetic */ itp a;
-
-            {
-                this.a = this;
-            }
+        a.e(new Runnable() { // from class: itm
+            public final /* synthetic */ itp a = itp.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -94,7 +86,7 @@ public final class itp implements itw {
                 this.f = true;
                 this.j = pointF;
                 this.l.set(0);
-                for (itv itvVar : this.a) {
+                for (itv itvVar : (List<itv>) this.a) {
                     itvVar.r();
                 }
                 ity a = itz.a();
@@ -180,7 +172,7 @@ public final class itp implements itw {
                             lce lceVar2 = lceVar;
                             itz itzVar = d;
                             lceVar2.fB(itzVar);
-                            for (itv itvVar : itpVar.a) {
+                            for (itv itvVar : (List<itv>) itpVar.a) {
                                 itvVar.t(itzVar.b);
                             }
                         }
@@ -213,7 +205,7 @@ public final class itp implements itw {
                 a.c(itzVar.d);
                 a.f(itzVar.a);
                 lceVar.fB(a.a());
-                for (itv itvVar : this.a) {
+                for (itv itvVar : (List<itv>) this.a) {
                     itvVar.s();
                 }
                 this.o.f();
@@ -238,7 +230,7 @@ public final class itp implements itw {
             executor.execute(new Runnable() { // from class: ito
                 @Override // java.lang.Runnable
                 public final void run() {
-                    itq.this.close();
+                    itqVar.close();
                 }
             });
         }

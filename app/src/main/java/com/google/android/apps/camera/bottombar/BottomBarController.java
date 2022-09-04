@@ -4,6 +4,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import defpackage.dcu;
 import defpackage.ddf;
@@ -33,7 +34,7 @@ public class BottomBarController {
 
     /* renamed from: com.google.android.apps.camera.bottombar.BottomBarController$2  reason: invalid class name */
     /* loaded from: classes.dex */
-    /* synthetic */ class AnonymousClass2 {
+    /* synthetic */ static class AnonymousClass2 {
         static final /* synthetic */ int[] $SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode;
 
         static {
@@ -128,7 +129,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onCameraSwitchButtonClicked() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onCameraSwitchButtonClicked();
                     }
                 }
@@ -137,7 +138,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onCancelButtonPressed() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onCancelButtonPressed();
                     }
                 }
@@ -146,7 +147,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onFpsSwitch(int i) {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onFpsSwitch(i);
                     }
                 }
@@ -155,7 +156,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener, com.google.android.apps.camera.bottombar.PauseResumeButton.PauseResumeButtonListener
             public void onPauseButtonClicked() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onPauseButtonClicked();
                     }
                 }
@@ -164,7 +165,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener, com.google.android.apps.camera.bottombar.PauseResumeButton.PauseResumeButtonListener
             public void onResumeButtonClicked() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onResumeButtonClicked();
                     }
                 }
@@ -173,7 +174,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onRetakeButtonPressed() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onRetakeButtonPressed();
                     }
                 }
@@ -182,7 +183,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onReviewPlayButtonPressed() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onReviewPlayButtonPressed();
                     }
                 }
@@ -191,7 +192,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onShutterButtonClicked() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onShutterButtonClicked();
                     }
                 }
@@ -200,7 +201,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onSnapshotButtonClicked() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onSnapshotButtonClicked();
                     }
                 }
@@ -209,7 +210,7 @@ public class BottomBarController {
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onThumbnailButtonClicked() {
                 synchronized (BottomBarController.this.lock) {
-                    for (BottomBarListener bottomBarListener : BottomBarController.this.listeners) {
+                    for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onThumbnailButtonClicked();
                     }
                 }
@@ -220,7 +221,7 @@ public class BottomBarController {
         bottomBar.post(new Runnable() { // from class: com.google.android.apps.camera.bottombar.BottomBarController$$ExternalSyntheticLambda11
             @Override // java.lang.Runnable
             public final void run() {
-                BottomBar.this.setSysUiFlagApplier(imgVar);
+                bottomBar.setSysUiFlagApplier(imgVar);
             }
         });
         this.cameraSwitchButton = bottomBar.getCameraSwitchButton();

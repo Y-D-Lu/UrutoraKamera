@@ -3,8 +3,6 @@ package defpackage;
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
-
-import java.util.Collection;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -61,7 +59,7 @@ public final class ets implements bvv {
 
                     @Override // java.util.function.Function
                     public final Object apply(Object obj) {
-                        return new dks(bxy.this.a((iho) obj), 2);
+                        return new dks(bxyVar.a((iho) obj), 2);
                     }
 
                     @Override // java.util.function.Function

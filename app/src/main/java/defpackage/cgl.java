@@ -350,7 +350,7 @@ public final class cgl implements lff, lie {
         oor X;
         List list;
         float f;
-        cmh cmhVar;
+        cmh cmhVar = null;
         synchronized (this.f) {
             cle cleVar = cktVar.a;
             long a2 = this.g.a(cktVar.b);
@@ -394,7 +394,7 @@ public final class cgl implements lff, lie {
                     list = list2;
                     f = this.l.d == ldz.FPS_30 ? 1.0f : DisplayHelper.DENSITY;
                 }
-                long j2 = a3;
+                long j2 = (long) a3;
                 long b2 = this.l.h.b();
                 hsq hsqVar = this.V;
                 hsqVar.getClass();

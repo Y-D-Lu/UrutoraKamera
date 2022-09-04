@@ -37,7 +37,7 @@ public final class brr implements oiu {
                 return ((Boolean) obj).booleanValue() ? fcy.i(CaptureRequest.CONTROL_AF_TRIGGER, 1) : fcy.l();
             case 4:
                 ArrayList arrayList = new ArrayList();
-                for (lzv lzvVar : (List) obj) {
+                for (lzv lzvVar : (List<lzv>) obj) {
                     ojb ba = obr.ba("Metadata");
                     ba.b("timestamp", lzvVar.d(CaptureResult.SENSOR_TIMESTAMP));
                     ba.b("NR", lzvVar.d(CaptureResult.NOISE_REDUCTION_MODE));

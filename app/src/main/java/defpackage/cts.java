@@ -45,7 +45,7 @@ public final class cts implements ctw {
     }
 
     private final void m(int i) {
-        for (ctx ctxVar : this.q) {
+        for (ctx ctxVar : (Set<ctx>) this.q) {
             ctxVar.a(i);
         }
     }

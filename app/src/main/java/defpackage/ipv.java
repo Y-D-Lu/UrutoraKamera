@@ -104,7 +104,7 @@ public class ipv extends iph {
         iroVar.f.animate().setDuration(200L).setStartDelay(517L).alpha(1.0f).withStartAction(new Runnable() { // from class: irl
             @Override // java.lang.Runnable
             public final void run() {
-                iro.this.f.setVisibility(0);
+                iroVar.f.setVisibility(0);
             }
         });
     }

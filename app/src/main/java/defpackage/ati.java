@@ -17,7 +17,7 @@ public final class ati implements ast {
         this.a = atlVar;
     }
 
-    static final void m(atl atlVar, Object obj, atx atxVar) {
+    static final void m(atl atlVar, Object obj, atx atxVar) throws ass {
         atlVar.g().b(atxVar);
         if (atlVar.g().l()) {
             if (obj != null && obj.toString().length() > 0) {
@@ -38,7 +38,7 @@ public final class ati implements ast {
         }
     }
 
-    private static final Object n(int i, atl atlVar) {
+    private static final Object n(int i, atl atlVar) throws ass {
         String str = atlVar.b;
         switch (i) {
             case 1:
@@ -105,14 +105,23 @@ public final class ati implements ast {
         gj.e(str2);
         atl e = gk.e(this.a, hn.d(str, str2), false, null);
         if (e != null) {
-            return new ath(n(0, e));
+            try {
+                return new ath(n(0, e));
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
         }
         return null;
     }
 
     @Override // defpackage.ast
     public final Integer b(String str, String str2) {
-        return (Integer) l(str, str2, 2);
+        try {
+            return (Integer) l(str, str2, 2);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.ast
@@ -131,10 +140,14 @@ public final class ati implements ast {
         atx h = gk.h(atxVar, obj);
         atl e = gk.e(this.a, hn.d(str, str2), true, h);
         if (e != null) {
-            m(e, obj, h);
+            try {
+                m(e, obj, h);
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
             return;
         }
-        throw new ass("Specified property does not exist", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        //throw new ass("Specified property does not exist", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
     }
 
     @Override // defpackage.ast
@@ -143,7 +156,7 @@ public final class ati implements ast {
             gj.f(str);
             gj.e(str2);
             return gk.e(this.a, hn.d(str, str2), false, null) != null;
-        } catch (ass e) {
+        } catch (Exception e) {
             return false;
         }
     }
@@ -154,7 +167,7 @@ public final class ati implements ast {
     }
 
     @Override // defpackage.ast
-    public final void g(String str, atx atxVar, String str2, atx atxVar2) {
+    public final void g(String str, atx atxVar, String str2, atx atxVar2) throws ass {
         gj.f("http://ns.google.com/photos/1.0/camera/");
         gj.c(str);
         if ((atxVar.a & (-7681)) == 0) {
@@ -196,7 +209,8 @@ public final class ati implements ast {
                 return;
             }
             gk.j(e);
-        } catch (ass e2) {
+        } catch (Exception e2) {
+            e2.printStackTrace();
         }
     }
 
@@ -480,7 +494,7 @@ public final class ati implements ast {
         d("http://ns.google.com/photos/1.0/panorama/", str, new Integer(i), null);
     }
 
-    public final Object l(String str, String str2, int i) {
+    public final Object l(String str, String str2, int i) throws ass {
         gj.f(str);
         gj.e(str2);
         atl e = gk.e(this.a, hn.d(str, str2), false, null);

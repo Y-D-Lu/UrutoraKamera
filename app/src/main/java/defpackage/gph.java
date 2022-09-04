@@ -32,7 +32,7 @@ public final class gph implements pys {
         lapVar.c(lcv.l(goyVar.a(), new lij() { // from class: gpe
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                lis lisVar = lis.this;
+                lis lisVar = a;
                 goy goyVar2 = goyVar;
                 String valueOf = String.valueOf((Boolean) obj);
                 String valueOf2 = String.valueOf(goyVar2);

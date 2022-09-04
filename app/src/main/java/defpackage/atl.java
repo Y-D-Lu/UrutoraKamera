@@ -40,7 +40,7 @@ public final class atl implements Comparable {
         return this.d;
     }
 
-    private final void v(String str) {
+    private final void v(String str) throws ass {
         if ("[]".equals(str) || c(str) == null) {
             return;
         }
@@ -97,7 +97,7 @@ public final class atl implements Comparable {
         atx atxVar;
         try {
             atxVar = new atx(g().a);
-        } catch (ass e) {
+        } catch (Exception e) {
             atxVar = new atx();
         }
         atl atlVar = new atl(this.a, this.b, atxVar);
@@ -110,7 +110,7 @@ public final class atl implements Comparable {
             while (i.hasNext()) {
                 atlVar.m((atl) ((atl) i.next()).clone());
             }
-        } catch (ass e2) {
+        } catch (Exception e2) {
         }
         return atlVar;
     }
@@ -155,18 +155,26 @@ public final class atl implements Comparable {
     }
 
     public final void k(atl atlVar) {
-        v(atlVar.a);
+        try {
+            v(atlVar.a);
+        } catch (ass ex) {
+            ex.printStackTrace();
+        }
         atlVar.c = this;
         j().add(atlVar);
     }
 
     public final void l(int i, atl atlVar) {
-        v(atlVar.a);
+        try {
+            v(atlVar.a);
+        } catch (ass ex) {
+            ex.printStackTrace();
+        }
         atlVar.c = this;
         j().add(i - 1, atlVar);
     }
 
-    public final void m(atl atlVar) {
+    public final void m(atl atlVar) throws ass {
         String str = atlVar.a;
         if (!"[]".equals(str) && d(str) != null) {
             StringBuilder sb = new StringBuilder(String.valueOf(str).length() + 22);

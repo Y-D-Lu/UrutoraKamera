@@ -87,7 +87,7 @@ import defpackage.qkg;
 /* loaded from: classes.dex */
 public class CameraActivity extends etd implements end, bpx {
     private static final ouj s;
-    private static final CameraActivity sCameraActivity = null;
+    private static CameraActivity sCameraActivity = null;
     public ddf o;
     public bxj p;
     public dke q;
@@ -121,8 +121,6 @@ public class CameraActivity extends etd implements end, bpx {
 
     public static void ReInit() {
         CameraActivity cameraActivity = sCameraActivity;
-        super.onPause();
-        super.onStop();
         cameraActivity.onStart();
         cameraActivity.onResume();
     }
@@ -192,7 +190,7 @@ public class CameraActivity extends etd implements end, bpx {
         dkeVar.b.postDelayed(new Runnable() { // from class: dkd
             @Override // java.lang.Runnable
             public final void run() {
-                dke.this.a();
+                dkeVar.a();
             }
         }, 3000L);
         ddf ddfVar = this.o;
@@ -279,7 +277,7 @@ public class CameraActivity extends etd implements end, bpx {
     }
 
     @Override // defpackage.etd, defpackage.fio, defpackage.ih, defpackage.by, android.app.Activity
-    protected final void onDestroy() {
+    public final void onDestroy() {
         dke dkeVar = this.q;
         lar.a();
         dkeVar.a();
@@ -287,7 +285,7 @@ public class CameraActivity extends etd implements end, bpx {
     }
 
     @Override // defpackage.etd, defpackage.fio, defpackage.by, android.app.Activity
-    protected final void onResume() {
+    public final void onResume() {
         this.x.j(ijf.ACTIVITY_ONRESUME_START, CameraActivityTiming.a);
         super.onResume();
         this.x.j(ijf.ACTIVITY_ONRESUME_END, CameraActivityTiming.b);
@@ -298,7 +296,7 @@ public class CameraActivity extends etd implements end, bpx {
     }
 
     @Override // defpackage.etd, defpackage.fio, defpackage.ih, defpackage.by, android.app.Activity
-    protected final void onStart() {
+    public final void onStart() {
         String str;
         ijf[] values;
         CameraActivityTiming cameraActivityTiming = this.x;
@@ -349,7 +347,7 @@ public class CameraActivity extends etd implements end, bpx {
     }
 
     @Override // defpackage.etd, defpackage.fio, defpackage.ih, defpackage.by, android.app.Activity
-    protected final void onStop() {
+    public final void onStop() {
         dke dkeVar = this.q;
         lar.a();
         lie lieVar = dkeVar.c;

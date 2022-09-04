@@ -49,13 +49,13 @@ public class ExternalSurfaceManager {
     private final void b(pwh pwhVar) {
         pwi pwiVar = this.d;
         if (this.f && !pwiVar.a.isEmpty()) {
-            for (pwf pwfVar : pwiVar.a.values()) {
+            for (pwf pwfVar : (Set<pwf>) pwiVar.a.values()) {
                 pwfVar.a();
                 pwhVar.a(pwfVar);
             }
         }
         if (!pwiVar.b.isEmpty()) {
-            for (pwf pwfVar2 : pwiVar.b.values()) {
+            for (pwf pwfVar2 : (Set<pwf>) pwiVar.b.values()) {
                 pwfVar2.c(this.a);
             }
         }
@@ -69,7 +69,7 @@ public class ExternalSurfaceManager {
         this.f = true;
         pwi pwiVar = this.d;
         if (!pwiVar.a.isEmpty()) {
-            for (pwf pwfVar : pwiVar.a.values()) {
+            for (pwf pwfVar : (Set<pwf>) pwiVar.a.values()) {
                 pwfVar.a();
             }
         }
@@ -79,7 +79,7 @@ public class ExternalSurfaceManager {
         this.f = true;
         pwi pwiVar = this.d;
         if (!this.d.a.isEmpty()) {
-            for (Integer num : this.d.a.keySet()) {
+            for (Integer num : (Set<Integer>) this.d.a.keySet()) {
                 if (!map.containsKey(num)) {
                     Log.e(b, String.format("Surface %d's texture ID is not provided, abandoning attaching to current GL context.", num));
                     return;
@@ -101,7 +101,7 @@ public class ExternalSurfaceManager {
         this.f = false;
         pwi pwiVar = this.d;
         if (!pwiVar.a.isEmpty()) {
-            for (pwf pwfVar : pwiVar.a.values()) {
+            for (pwf pwfVar : (Set<pwf>) pwiVar.a.values()) {
                 if (pwfVar.i) {
                     pwg pwgVar = pwfVar.b;
                     if (pwgVar != null) {

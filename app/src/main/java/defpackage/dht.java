@@ -37,7 +37,7 @@ public final class dht implements pys {
             @Override // defpackage.bur
             public final void a(Throwable th) {
                 HashSet hashSet;
-                dhs dhsVar2 = dhs.this;
+                dhs dhsVar2 = dhsVar;
                 dhsVar2.d.h("Uncaught exception. Annotating all active shots.");
                 dhsVar2.d.b("annotateAllActiveShots begin");
                 synchronized (dhsVar2) {

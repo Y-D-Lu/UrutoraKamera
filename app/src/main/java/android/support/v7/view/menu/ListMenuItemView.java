@@ -145,7 +145,7 @@ public class ListMenuItemView extends LinearLayout implements AbsListView.Select
                 }
                 compoundButton = this.i;
                 checkBox = this.g;
-                checkBox2 = compoundButton;
+                checkBox2 = (CheckBox) compoundButton;
             }
             if (isCheckable) {
                 compoundButton.setChecked(this.a.isChecked());

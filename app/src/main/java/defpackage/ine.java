@@ -45,7 +45,7 @@ public final class ine implements ind {
         } else {
             try {
                 ooh e = oom.e();
-                for (String str : ojq.d(",").e(string)) {
+                for (String str : (Iterable<String>) ojq.d(",").e(string)) {
                     e.g(inc.a(str));
                 }
                 l = e.f();
@@ -72,7 +72,7 @@ public final class ine implements ind {
             } else {
                 try {
                     i2 = ojc.i(new String(oxh.w(file)));
-                } catch (IOException e3) {
+                } catch (Exception e3) {
                     throw new RuntimeException(e3);
                 }
             }

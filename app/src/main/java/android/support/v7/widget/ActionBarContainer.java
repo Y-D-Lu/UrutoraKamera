@@ -39,7 +39,7 @@ public class ActionBarContainer extends FrameLayout {
         this.a = obtainStyledAttributes.getDrawable(0);
         this.b = obtainStyledAttributes.getDrawable(2);
         this.i = obtainStyledAttributes.getDimensionPixelSize(13, -1);
-        if (getId() == R.id.split_action_bar) {
+        if (getId() == com.google.android.apps.camera.bottombar.R.id.split_action_bar) {
             this.d = true;
             this.c = obtainStyledAttributes.getDrawable(1);
         }

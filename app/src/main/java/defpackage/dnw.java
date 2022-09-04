@@ -522,7 +522,7 @@ public final class dnw implements doq {
                 iusVar2.b.execute(new Runnable() { // from class: iup
                     @Override // java.lang.Runnable
                     public final void run() {
-                        final ius iusVar3 = ius.this;
+                        final ius iusVar3 = iusVar2;
                         View view = frameLayout;
                         View view2 = frameLayout2;
                         ViewGroup a = iusVar3.a(view, iusVar3.a);
@@ -533,7 +533,7 @@ public final class dnw implements doq {
                             nyaVar.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: iui
                                 @Override // android.content.DialogInterface.OnDismissListener
                                 public final void onDismiss(DialogInterface dialogInterface) {
-                                    ius.this.e();
+                                    iusVar3.e();
                                 }
                             });
                             iusVar3.d.show();

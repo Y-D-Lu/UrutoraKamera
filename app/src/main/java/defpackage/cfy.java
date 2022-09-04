@@ -5,13 +5,12 @@ import org.codeaurora.snapcam.R;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-
-import java.util.Collection;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -185,7 +184,7 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
 
     @Override // defpackage.chy
     public final void i(clf clfVar) {
-        for (ckw ckwVar : clfVar.a) {
+        for (ckw ckwVar : (Set<ckw>) clfVar.a) {
             final cvc cvcVar = this.d;
             final lwd lwdVar = this.b;
             int c = cvcVar.e.c(ijv.RECORD_STARTING, ijv.RECORD_STARTED);
@@ -262,7 +261,7 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
             pemVar6.k = j;
             Map map = ckwVar.l;
             poy m2 = pel.k.m();
-            for (lga lgaVar : map.keySet()) {
+            for (lga lgaVar : (Set<lga>) map.keySet()) {
                 Integer num = (Integer) map.get(lgaVar);
                 if (num != null) {
                     cqj cqjVar = cqj.OFF;
@@ -414,7 +413,7 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
 
                 @Override // java.util.function.Function
                 public final Object apply(Object obj) {
-                    cvc cvcVar2 = cvc.this;
+                    cvc cvcVar2 = cvcVar;
                     lwd lwdVar2 = lwdVar;
                     cqj cqjVar2 = (cqj) obj;
                     if (!cvcVar2.b.c()) {
@@ -524,7 +523,7 @@ public final class cfy implements lie, cia, chy, cmu, bmq {
             }
             cvcVar.a.ao(cvc.c(cvcVar.c.a(), false), lwdVar, ckwVar.c, ((Integer) cvcVar.b.a.c(htu.c)).intValue() != jbp.OFF.e, (pem) m.j(), cvcVar.d.c().j, ckwVar.a.b() == hss.MARS_STORE, ckwVar.x);
         }
-        for (ckv ckvVar : clfVar.b) {
+        for (ckv ckvVar : (Set<ckv>) clfVar.b) {
             this.d.b(ckvVar, this.b);
         }
     }

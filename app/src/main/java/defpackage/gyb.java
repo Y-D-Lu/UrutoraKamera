@@ -1,6 +1,5 @@
 package defpackage;
 
-import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 
 /* renamed from: gyb  reason: default package */
@@ -49,17 +48,19 @@ public final class gyb implements gxl {
                         gsjVar.a.d(new Runnable() { // from class: gxr
                             @Override // java.lang.Runnable
                             public final void run() {
-                                gxt gxtVar2 = gxt.this;
+                                gxt gxtVar2 = gxtVar;
                                 gxtVar2.a.o(gxsVar);
                             }
                         }, pgr.a);
                         ((Boolean) gsjVar.a.get()).booleanValue();
                     } catch (ExecutionException e) {
                         throw new RuntimeException(e);
+                    } catch (InterruptedException interruptedException) {
+                        interruptedException.printStackTrace();
                     }
                 }
             }
-        } catch (CancellationException | ExecutionException | llv e2) {
+        } catch (Exception e2) {
             ((oug) ((oug) ((oug) b.b()).h(e2)).G((char) 2188)).o("Couldn't turn on selfie flash");
         }
         return gyaVar;

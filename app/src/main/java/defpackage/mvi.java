@@ -12,7 +12,7 @@ import java.util.concurrent.Executor;
 /* renamed from: mvi  reason: default package */
 /* loaded from: classes2.dex */
 public final class mvi implements mve {
-    private static final ouj a = ouj.h("com/google/android/libraries/performance/primes/federatedlearning/FederatedLearningExampleStoreImpl");
+    public static final ouj a = ouj.h("com/google/android/libraries/performance/primes/federatedlearning/FederatedLearningExampleStoreImpl");
     private final Context b;
     private final Executor c;
 

@@ -8,6 +8,7 @@ public final class GooglePlayServicesIncorrectManifestValueException extends Goo
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public GooglePlayServicesIncorrectManifestValueException(int r4) {
+        super("");
         /*
             r3 = this;
             int r0 = defpackage.khn.c

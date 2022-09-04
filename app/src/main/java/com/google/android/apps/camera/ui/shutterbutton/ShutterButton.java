@@ -125,7 +125,7 @@ public class ShutterButton extends mw {
     private boolean visualFeedbackForEnableState;
     private static final ouj logger = ouj.h("com/google/android/apps/camera/ui/shutterbutton/ShutterButton");
     private static final ope CAROUSEL_IDLE_MODES = ope.M(jkc.NIGHT_IDLE, jkc.ASTRO_IDLE, jkc.PORTRAIT_IDLE, jkc.PHOTO_IDLE, jkc.TIMELAPSE_IDLE, jkc.VIDEO_IDLE, jkc.LASAGNA_IDLE);
-    private static jkf progressState = jkf.STATE_NONE;
+    public static jkf progressState = jkf.STATE_NONE;
 
     public ShutterButton(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -150,8 +150,8 @@ public class ShutterButton extends mw {
         this.isZoomLockEnabled = false;
         this.hasPressAndReleaseHaptic = false;
         this.visualFeedbackForEnableState = true;
-        this.longShotStartAccessibilityAction = new AccessibilityNodeInfo.AccessibilityAction(R.id.action_long_shot_start, getResources().getString(R.string.accessibility_longshot_capture));
-        this.longShotEndAccessibilityAction = new AccessibilityNodeInfo.AccessibilityAction(R.id.action_long_shot_end, getResources().getString(R.string.accessibility_capture_video_stop));
+        this.longShotStartAccessibilityAction = new AccessibilityNodeInfo.AccessibilityAction(com.google.android.apps.camera.bottombar.R.id.action_long_shot_start, getResources().getString(R.string.accessibility_longshot_capture));
+        this.longShotEndAccessibilityAction = new AccessibilityNodeInfo.AccessibilityAction(com.google.android.apps.camera.bottombar.R.id.action_long_shot_end, getResources().getString(R.string.accessibility_capture_video_stop));
         long longPressTimeout = ViewConfiguration.getLongPressTimeout();
         if (longPressTimeout <= 0) {
             ((oug) ((oug) logger.c()).G(3419)).q("System has invalid long press threshold value=%d ms", longPressTimeout);
@@ -173,7 +173,7 @@ public class ShutterButton extends mw {
 
             @Override // java.util.function.Consumer
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
-                return consumer.getClass();
+                return consumer;
             }
         }));
         this.modeTransitionAnimatorSet = a;
@@ -811,10 +811,10 @@ public class ShutterButton extends mw {
 
     @Override // android.view.View
     public boolean performAccessibilityAction(int i, Bundle bundle) {
-        if (i == R.id.action_long_shot_start) {
+        if (i == com.google.android.apps.camera.bottombar.R.id.action_long_shot_start) {
             startAccessibleLongShot();
             return true;
-        } else if (i != R.id.action_long_shot_end) {
+        } else if (i != com.google.android.apps.camera.bottombar.R.id.action_long_shot_end) {
             return super.performAccessibilityAction(i, bundle);
         } else {
             endAccessibleLongShot();

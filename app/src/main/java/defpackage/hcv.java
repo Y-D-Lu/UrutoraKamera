@@ -275,7 +275,7 @@ public final class hcv implements pys {
                 jrl mo37get = ((giv) this.h).mo37get();
                 obr.aQ(map.containsKey(hdr.RAW_WIDE));
                 EnumMap enumMap = new EnumMap(hdr.class);
-                for (hdr hdrVar : map.keySet()) {
+                for (hdr hdrVar : (Set<hdr>) map.keySet()) {
                     opc D = ope.D();
                     lnx lnxVar = (lnx) map.get(hdrVar);
                     lnxVar.getClass();
@@ -286,16 +286,16 @@ public final class hcv implements pys {
                         D.d(lnxVar2);
                     }
                     ope f = D.f();
-                    oih oihVar2 = hdrVar == hdr.RAW_WIDE ? (ojc) qkgVar.mo37get() : oih.a;
+                    oih oihVar2 = hdrVar == hdr.RAW_WIDE ? (oih) qkgVar.mo37get() : oih.a;
                     if (ddfVar.k(ddm.am) || ((hvj) qkgVar3.mo37get()).b()) {
-                        oihVar = ojcVar;
+                        oihVar = (oih) ojcVar;
                     } else {
                         fvq.r(mo37get, ddfVar);
                         oihVar = oih.a;
                     }
                     lqd lqdVar = (lqd) fvq.q(lncVar, f, oihVar, oihVar2, oih.a, qkgVar2).f();
                     lqdVar.getClass();
-                    enumMap.put((EnumMap) hdrVar, (hdr) lqdVar);
+                    enumMap.put(hdrVar, lqdVar);
                     lncVar = lncVar;
                 }
                 return enumMap;
@@ -348,7 +348,7 @@ public final class hcv implements pys {
                 return ope.H(new iho() { // from class: hxc
                     @Override // java.lang.Runnable
                     public final void run() {
-                        pih pihVar3 = pih.this;
+                        pih pihVar3 = pihVar2;
                         pyn pynVar = a4;
                         pyn pynVar2 = a3;
                         pih pihVar4 = pihVar;
@@ -365,7 +365,7 @@ public final class hcv implements pys {
                             /* JADX WARN: Type inference failed for: r4v1, types: [iao, hxi] */
                             @Override // java.lang.Runnable
                             public final void run() {
-                                iac iacVar2 = iac.this;
+                                iac iacVar2 = iacVar;
                                 lar.a();
                                 iacVar2.h.e("SmartUiWirer#wire");
                                 ReplaceableView replaceableView = (ReplaceableView) iacVar2.d.c(R.id.smarts_ui_replaceableview);
@@ -397,7 +397,7 @@ public final class hcv implements pys {
                                     hzaVar.n.c(new lie() { // from class: hye
                                         @Override // defpackage.lie, java.lang.AutoCloseable
                                         public final void close() {
-                                            hza hzaVar2 = hza.this;
+                                            hza hzaVar2 = hzaVar;
                                             hzaVar2.d.i(hyzVar);
                                         }
                                     });
@@ -411,7 +411,7 @@ public final class hcv implements pys {
                                     hzoVar.i = new Callable() { // from class: hzk
                                         @Override // java.util.concurrent.Callable
                                         public final Object call() {
-                                            return jng.this.c();
+                                            return jngVar.c();
                                         }
                                     };
                                     hzoVar.h = cvoVar;
@@ -440,7 +440,7 @@ public final class hcv implements pys {
                 Object H = ojcVar2.g() ? ope.H(aas.d(new Runnable() { // from class: hxp
                     @Override // java.lang.Runnable
                     public final void run() {
-                        lnc lncVar3 = lnc.this;
+                        lnc lncVar3 = lncVar2;
                         final ojc ojcVar3 = ojcVar2;
                         final hxj hxjVar2 = hxjVar;
                         lap lapVar2 = lapVar;
@@ -451,14 +451,14 @@ public final class hcv implements pys {
                         r.k(new lmu() { // from class: hxo
                             @Override // defpackage.lmu
                             public final void a(lrr lrrVar) {
-                                hxj.this.h(lrrVar, (lnx) ojcVar3.c());
+                                hxjVar2.h(lrrVar, (lnx) ojcVar3.c());
                             }
                         });
                         lapVar2.c(r);
                         lapVar2.c(new lie() { // from class: hxn
                             @Override // defpackage.lie, java.lang.AutoCloseable
                             public final void close() {
-                                hxj hxjVar3 = hxj.this;
+                                hxj hxjVar3 = hxjVar2;
                                 hxjVar3.g(oih.a);
                                 hxjVar3.f(oih.a);
                             }

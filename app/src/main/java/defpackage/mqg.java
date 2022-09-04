@@ -15,7 +15,7 @@ public final class mqg extends mpo {
         mqgVar.e(new mqj() { // from class: moy
             @Override // defpackage.mqj
             public final String a() {
-                String valueOf = String.valueOf(mqg.this.g());
+                String valueOf = String.valueOf(mqgVar.g());
                 StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 22);
                 sb.append("attachImageToTexture(");
                 sb.append(valueOf);
@@ -25,7 +25,7 @@ public final class mqg extends mpo {
         }, new mlu() { // from class: mox
             @Override // defpackage.mlu
             public final Object a(Object obj) {
-                EGLImage eGLImage2 = EGLImage.this;
+                EGLImage eGLImage2 = eGLImage;
                 ((mrb) obj).d();
                 EGLImage.attachToTexture(eGLImage2.a);
                 return mlt.a;

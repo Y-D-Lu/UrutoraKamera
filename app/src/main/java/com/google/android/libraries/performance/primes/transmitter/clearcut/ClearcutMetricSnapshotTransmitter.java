@@ -160,7 +160,7 @@ public final class ClearcutMetricSnapshotTransmitter implements ndh {
             kiw kiwVar = new kiw() { // from class: mfb
                 @Override // defpackage.kiw
                 public final void a(kiv kivVar) {
-                    pih pihVar = pih.this;
+                    pih pihVar = f;
                     if (kivVar.a().g == 16) {
                         pihVar.cancel(false);
                     } else if (kivVar.a().b()) {

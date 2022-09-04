@@ -4,4 +4,8 @@ package defpackage;
 /* loaded from: classes.dex */
 public final /* synthetic */ class ewl {
     public final /* synthetic */ exi a;
+
+    public ewl(exi exi) {
+        a = exi;
+    }
 }

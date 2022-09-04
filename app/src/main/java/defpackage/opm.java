@@ -42,7 +42,7 @@ public abstract class opm extends opn implements NavigableSet, osf {
         return ore.a.equals(comparator) ? ory.a : new ory(oom.l(), comparator);
     }
 
-    private void readObject(ObjectInputStream objectInputStream) {
+    private void readObject(ObjectInputStream objectInputStream) throws InvalidObjectException {
         throw new InvalidObjectException("Use SerializedForm");
     }
 

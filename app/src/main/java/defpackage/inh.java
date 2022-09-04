@@ -4,4 +4,8 @@ package defpackage;
 /* loaded from: classes.dex */
 public final /* synthetic */ class inh {
     public final /* synthetic */ ink a;
+
+    public inh(ink aVar) {
+        a = aVar;
+    }
 }

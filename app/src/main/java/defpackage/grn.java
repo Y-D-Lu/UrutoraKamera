@@ -44,12 +44,12 @@ public final class grn implements pys {
             final Consumer consumer = new Consumer() { // from class: grm
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    lce.this.fB((Integer) obj);
+                    lceVar.fB((Integer) obj);
                 }
 
                 @Override // java.util.function.Consumer
                 public final /* synthetic */ Consumer andThen(Consumer consumer2) {
-                    return consumer2.getClass();
+                    return consumer2;
                 }
             };
             imv a2 = imw.a();

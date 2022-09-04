@@ -40,7 +40,7 @@ public final class ifj {
                     roundedThumbnailView2.post(new Runnable() { // from class: ifg
                         @Override // java.lang.Runnable
                         public final void run() {
-                            RoundedThumbnailView.this.requestLayout();
+                            roundedThumbnailView.requestLayout();
                         }
                     });
                 }

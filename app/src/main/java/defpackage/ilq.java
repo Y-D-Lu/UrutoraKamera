@@ -68,12 +68,8 @@ public final class ilq extends iai implements fik, fhy, fgq {
             a2.b = resources.getString(R.string.storage_low_warning_toast);
             a2.c = resources.getDrawable(R.drawable.quantum_gm_ic_sd_card_alert_white_24, null);
             a2.d(6000L);
-            a2.d = new Runnable(this) { // from class: ilp
-                public final /* synthetic */ ilq a;
-
-                {
-                    this.a = this;
-                }
+            a2.d = new Runnable() { // from class: ilp
+                public final /* synthetic */ ilq a = ilq.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -89,12 +85,8 @@ public final class ilq extends iai implements fik, fhy, fgq {
                     }
                 }
             };
-            a2.g = new Runnable(this) { // from class: ilp
-                public final /* synthetic */ ilq a;
-
-                {
-                    this.a = this;
-                }
+            a2.g = new Runnable() { // from class: ilp
+                public final /* synthetic */ ilq a = ilq.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {

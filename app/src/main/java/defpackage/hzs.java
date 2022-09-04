@@ -46,7 +46,7 @@ final class hzs implements iay {
             hzyVar.c.f.c(new Runnable() { // from class: hzx
                 @Override // java.lang.Runnable
                 public final void run() {
-                    iap.this.r(iaxVar);
+                    iapVar.r(iaxVar);
                 }
             });
         }

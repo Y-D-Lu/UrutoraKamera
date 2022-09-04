@@ -3,6 +3,8 @@ package defpackage;
 import android.content.Context;
 import android.graphics.Rect;
 
+import java.util.Set;
+
 /* renamed from: ckh  reason: default package */
 /* loaded from: classes.dex */
 public final class ckh {
@@ -50,7 +52,7 @@ public final class ckh {
         lvp a = this.l.a(b);
         if (a.k() == lwd.FRONT && a.L() && this.j.k(ddl.U)) {
             Rect rect = new Rect(0, 0, 0, 0);
-            for (lvs lvsVar : ((lvo) a).b) {
+            for (lvs lvsVar : (Set<lvs>) ((lvo) a).b) {
                 lvp a2 = this.l.a(lvsVar);
                 if (a2.h().right > rect.right) {
                     rect = a2.h();

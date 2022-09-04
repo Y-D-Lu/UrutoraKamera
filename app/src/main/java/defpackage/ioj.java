@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.List;
+
 /* renamed from: ioj  reason: default package */
 /* loaded from: classes.dex */
 public final /* synthetic */ class ioj implements Runnable {
@@ -59,7 +61,7 @@ public final /* synthetic */ class ioj implements Runnable {
                 return;
             default:
                 ioq ioqVar2 = this.a;
-                for (hsq hsqVar : ioqVar2.F) {
+                for (hsq hsqVar : (List<hsq>) ioqVar2.F) {
                     ioqVar2.C.g(hsqVar.b, null);
                 }
                 return;

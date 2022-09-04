@@ -548,11 +548,11 @@ public class CollapsingToolbarLayout extends FrameLayout {
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup
-    protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateDefaultLayoutParams() {
+    protected final /* bridge */ /* synthetic */ LayoutParams generateDefaultLayoutParams() {
         return h();
     }
 
-    @Override // android.widget.FrameLayout, android.view.ViewGroup
+//    @Override // android.widget.FrameLayout, android.view.ViewGroup
     /* renamed from: generateDefaultLayoutParams  reason: collision with other method in class */
     protected final /* bridge */ /* synthetic */ FrameLayout.LayoutParams mo54generateDefaultLayoutParams() {
         return h();

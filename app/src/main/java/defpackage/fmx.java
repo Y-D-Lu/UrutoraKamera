@@ -3,6 +3,7 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -58,7 +59,7 @@ public final class fmx implements fpo {
             }
             return madVar;
         }
-        for (lmr lmrVar : this.d) {
+        for (lmr lmrVar : (Set<lmr>) this.d) {
             lmw b = lmrVar.b();
             if (b != null && b.b > j) {
                 return lmrVar.d(this.b);
@@ -80,7 +81,7 @@ public final class fmx implements fpo {
             }
             return madVar;
         }
-        for (lmr lmrVar : this.d) {
+        for (lmr lmrVar : (Set<lmr>) this.d) {
             lmw b = lmrVar.b();
             if (b != null && b.b == j) {
                 return lmrVar.d(this.b);
@@ -178,7 +179,7 @@ public final class fmx implements fpo {
                 fb fbVar = new fb() { // from class: fms
                     @Override // defpackage.fb
                     public final void accept(Object obj) {
-                        lrr lrrVar2 = lrr.this;
+                        lrr lrrVar2 = lrrVar;
                         fpn fpnVar3 = fpnVar2;
                         lmr lmrVar = (lmr) obj;
                         lmw b = lrrVar2.b();
@@ -197,7 +198,7 @@ public final class fmx implements fpo {
 
     @Override // defpackage.fpo
     public final synchronized void h() {
-        for (lmr lmrVar : this.d) {
+        for (lmr lmrVar : (Set<lmr>) this.d) {
             lmrVar.close();
         }
         this.d.clear();

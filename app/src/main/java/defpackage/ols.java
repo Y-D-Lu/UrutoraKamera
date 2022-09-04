@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
@@ -41,9 +42,20 @@ public final class ols extends oko {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        objectInputStream.defaultReadObject();
+        try {
+            objectInputStream.defaultReadObject();
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         this.e = 3;
-        int readInt = objectInputStream.readInt();
+        int readInt = 0;
+        try {
+            readInt = objectInputStream.readInt();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         k(new omf());
         obr.I(this, objectInputStream, readInt);
     }
@@ -53,7 +65,11 @@ public final class ols extends oko {
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        objectOutputStream.defaultWriteObject();
+        try {
+            objectOutputStream.defaultWriteObject();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         obr.L(this, objectOutputStream);
     }
 

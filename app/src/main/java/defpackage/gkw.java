@@ -24,7 +24,7 @@ public final class gkw implements glc, lie {
         this.e = ljfVar;
     }
 
-    @Override // defpackage.glb
+//    @Override // defpackage.glb
     /* renamed from: b */
     public final pht a(hin hinVar) {
         if (hinVar.a.a() != 35) {
@@ -46,5 +46,10 @@ public final class gkw implements glc, lie {
             this.i.close();
             this.g.fB(0);
         }
+    }
+
+    @Override
+    public pht a(Object obj) {
+        return a((hin)obj);
     }
 }

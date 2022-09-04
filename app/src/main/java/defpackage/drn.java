@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Set;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: drn  reason: default package */
 /* loaded from: classes.dex */
@@ -12,7 +14,7 @@ public final class drn implements dqt {
 
     @Override // defpackage.dqt
     public final void a() {
-        for (dqt dqtVar : this.a.a) {
+        for (dqt dqtVar : (Set<dqt>) this.a.a) {
             dqtVar.a();
         }
     }
@@ -23,7 +25,7 @@ public final class drn implements dqt {
 
     @Override // defpackage.dqt
     public final void d(lvp lvpVar, brg brgVar) {
-        for (dqt dqtVar : this.a.a) {
+        for (dqt dqtVar : (Set<dqt>) this.a.a) {
             dqtVar.d(lvpVar, brgVar);
         }
     }

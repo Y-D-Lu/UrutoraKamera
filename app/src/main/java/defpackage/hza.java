@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.os.SystemClock;
 import android.view.View;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -83,7 +84,7 @@ public final class hza implements iao, hxi, fii, fie, fig, fib {
                 hzaVar.h(new hyx() { // from class: hyq
                     @Override // defpackage.hyx
                     public final void a(Object obj) {
-                        ((hzu) obj).a(lvp.this);
+                        ((hzu) obj).a(lvpVar2);
                     }
                 });
                 hzaVar.r = lvpVar2;
@@ -101,7 +102,7 @@ public final class hza implements iao, hxi, fii, fie, fig, fib {
                 hzaVar.h(new hyx() { // from class: hyr
                     @Override // defpackage.hyx
                     public final void a(Object obj) {
-                        lzv lzvVar3 = lzv.this;
+                        lzv lzvVar3 = lzvVar2;
                         hzu hzuVar = (hzu) obj;
                         obr.aQ(hzuVar.d);
                         if (hzuVar.e) {
@@ -217,7 +218,7 @@ public final class hza implements iao, hxi, fii, fie, fig, fib {
     }
 
     public final void h(hyx hyxVar) {
-        for (hzu hzuVar : this.i.values()) {
+        for (hzu hzuVar : (Collection<hzu>) this.i.values()) {
             hyxVar.a(hzuVar);
         }
     }

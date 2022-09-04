@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
@@ -185,18 +186,18 @@ public final class cof implements chy {
     @Override // defpackage.chy
     public final void i(clf clfVar) {
         if (this.f.n()) {
-            for (ckw ckwVar : clfVar.a) {
+            for (ckw ckwVar : (Set<ckw>) clfVar.a) {
                 d(ckwVar);
             }
-            for (ckv ckvVar : clfVar.b) {
+            for (ckv ckvVar : (Set<ckv>) clfVar.b) {
                 b(ckvVar);
             }
             return;
         }
-        for (ckw ckwVar2 : clfVar.a) {
+        for (ckw ckwVar2 : (Set<ckw>) clfVar.a) {
             this.e.h(ckwVar2.t.b);
         }
-        for (ckv ckvVar2 : clfVar.b) {
+        for (ckv ckvVar2 : (Set<ckv>) clfVar.b) {
             this.e.h(ckvVar2.h.b);
         }
     }

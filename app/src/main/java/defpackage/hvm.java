@@ -63,7 +63,7 @@ public final class hvm {
                     hvlVar2.b = (lig) arrayList.get(b2);
                     hvlVar2.c = (lig) arrayList.get(b3);
                 }
-                b.put((EnumMap) lwdVar, (lwd) hvlVar2);
+                b.put(lwdVar, hvlVar2);
                 hvlVar = hvlVar2;
             }
             hvlVar.getClass();

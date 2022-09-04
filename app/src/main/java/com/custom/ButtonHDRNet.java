@@ -172,10 +172,11 @@ public class ButtonHDRNet extends ToggleButton {
     }
 
     @Override // android.view.View
-    public void getVisibility() {
+    public int getVisibility() {
         if (Helper.MenuValue("pref_show_button_hdrnet") == 0) {
             setVisibility(8);
         }
+        return super.getVisibility();
     }
 
     public void init(Context context) {

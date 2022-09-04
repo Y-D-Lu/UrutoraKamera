@@ -23,7 +23,7 @@ public final class fxi {
                     sb.append(" is registered already");
                     throw new IllegalArgumentException(sb.toString());
                 }
-                this.a.put((EnumMap) jrlVar2, (jrl) fxjVar);
+                this.a.put(jrlVar2, fxjVar);
             }
         }
         ((fxj) this.a.get(jrlVar)).getClass();

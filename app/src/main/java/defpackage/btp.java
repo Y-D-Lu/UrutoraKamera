@@ -57,9 +57,11 @@ public final class btp implements avw, bud {
             handler.post(new Runnable() { // from class: btm
                 @Override // java.lang.Runnable
                 public final void run() {
-                    avw.this.a(lvsVar.a());
+                    avwVar.a(lvsVar.a());
                 }
             });
+        } catch (InterruptedException interruptedException) {
+            interruptedException.printStackTrace();
         }
     }
 

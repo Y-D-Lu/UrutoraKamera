@@ -28,7 +28,7 @@ public final class brs implements bro {
     @Override // defpackage.bro
     public final void b() {
         this.g = false;
-        for (bsb bsbVar : this.a) {
+        for (bsb bsbVar : (Set<bsb>) this.a) {
             bsbVar.c();
         }
     }
@@ -40,14 +40,14 @@ public final class brs implements bro {
 
     @Override // defpackage.bro
     public final void d(lvs lvsVar) {
-        for (bsb bsbVar : this.a) {
+        for (bsb bsbVar : (Set<bsb>) this.a) {
             bsbVar.d(lvsVar);
         }
     }
 
     @Override // defpackage.bro
     public final void e(cwi cwiVar) {
-        for (bsb bsbVar : this.a) {
+        for (bsb bsbVar : (Set<bsb>) this.a) {
             bsbVar.e(cwiVar.a);
         }
     }
@@ -60,7 +60,7 @@ public final class brs implements bro {
                 return;
             }
             lwk lwkVar = new lwk(hinVar.a, this.a.size());
-            for (bsb bsbVar : this.a) {
+            for (bsb bsbVar : (Set<bsb>) this.a) {
                 if (!((Boolean) bsbVar.b().a().fA()).booleanValue() || !(bsbVar instanceof bry)) {
                     lwkVar.l();
                 } else {
@@ -78,7 +78,7 @@ public final class brs implements bro {
             return;
         }
         lwk lwkVar = new lwk(hinVar.a, this.a.size());
-        for (bsb bsbVar : this.a) {
+        for (bsb bsbVar : (Set<bsb>) this.a) {
             if (!((Boolean) bsbVar.b().a().fA()).booleanValue() || !(bsbVar instanceof bsa)) {
                 lwkVar.l();
             } else {
@@ -92,7 +92,7 @@ public final class brs implements bro {
         if (!this.g || !((Boolean) this.e.fA()).booleanValue()) {
             return;
         }
-        for (bsb bsbVar : this.a) {
+        for (bsb bsbVar : (Set<bsb>) this.a) {
             if (((Boolean) bsbVar.b().a().fA()).booleanValue() && (bsbVar instanceof brz)) {
                 ((brz) bsbVar).a(lzvVar);
             }
@@ -106,7 +106,7 @@ public final class brs implements bro {
 
     @Override // defpackage.bro
     public final void j(bsg bsgVar) {
-        for (bsb bsbVar : this.a) {
+        for (bsb bsbVar : (Set<bsb>) this.a) {
             bsbVar.f(bsgVar);
         }
     }
@@ -119,7 +119,7 @@ public final class brs implements bro {
         arrayList2.add(lcv.g(false));
         arrayList3.add(lcv.g(false));
         arrayList4.add(lcv.g(false));
-        for (bsb bsbVar : this.a) {
+        for (bsb bsbVar : (Set<bsb>) this.a) {
             brx b = bsbVar.b();
             if (bsbVar instanceof bsa) {
                 arrayList2.add(b.a());

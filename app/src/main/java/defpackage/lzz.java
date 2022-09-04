@@ -8,11 +8,11 @@ import java.util.concurrent.Executor;
 /* renamed from: lzz  reason: default package */
 /* loaded from: classes2.dex */
 public final class lzz {
-    public final int a;
-    public final List b;
-    public final Executor c;
-    public final lzn d;
-    public final lzq e;
+    public int a;
+    public List b;
+    public Executor c;
+    public lzn d;
+    public lzq e;
 
     public lzz() {
     }

@@ -260,16 +260,12 @@ public class OptionsMenuContainer extends RelativeLayout {
         ((LayoutInflater) getContext().getSystemService("layout_inflater")).inflate(R.layout.options_menu_container, this);
         setLayerType(1, null);
         this.n.addListener(new guh(this));
-        f().setOnTouchListener(new View.OnTouchListener(this) { // from class: gue
-            public final /* synthetic */ OptionsMenuContainer a;
-
-            {
-                this.a = this;
-            }
+        f().setOnTouchListener(new View.OnTouchListener() { // from class: gue
+            public final /* synthetic */ OptionsMenuContainer a = OptionsMenuContainer.this;
 
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return this.a.j.onTouchEvent(motionEvent);
                     default:
@@ -289,16 +285,12 @@ public class OptionsMenuContainer extends RelativeLayout {
                 OptionsMenuContainer.this.w();
             }
         });
-        setOnTouchListener(new View.OnTouchListener(this) { // from class: gue
-            public final /* synthetic */ OptionsMenuContainer a;
-
-            {
-                this.a = this;
-            }
+        setOnTouchListener(new View.OnTouchListener() { // from class: gue
+            public final /* synthetic */ OptionsMenuContainer a = OptionsMenuContainer.this;
 
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
-                switch (r2) {
+                switch (-1) {
                     case 0:
                         return this.a.j.onTouchEvent(motionEvent);
                     default:
@@ -313,7 +305,7 @@ public class OptionsMenuContainer extends RelativeLayout {
             }
         });
         f().setAlpha(0.72f);
-        n().m = new gug(this);
+        n().m = new gug();
         f().setClickable(true);
         if (this.g) {
             FrameLayout f = f();
@@ -339,8 +331,8 @@ public class OptionsMenuContainer extends RelativeLayout {
 
     @Override // android.widget.RelativeLayout, android.view.View
     public final void onMeasure(int i, int i2) {
-        int i3;
-        float f;
+        int i3 = 0;
+        float f = 0.0f;
         View childAt;
         if (this.f) {
             int i4 = 0;

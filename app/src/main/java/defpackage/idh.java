@@ -17,7 +17,7 @@ public final /* synthetic */ class idh implements Supplier {
         this.e = i;
     }
 
-    @Override // java.util.function.Supplier
+//    @Override // java.util.function.Supplier
     /* renamed from: get */
     public final Object mo291get() {
         switch (this.e) {
@@ -30,5 +30,10 @@ public final /* synthetic */ class idh implements Supplier {
             default:
                 return new ArrayList();
         }
+    }
+
+    @Override
+    public Object get() {
+        return mo291get();
     }
 }

@@ -46,7 +46,7 @@ public final class dtm {
         this.b = new dti() { // from class: dtl
             @Override // defpackage.dti
             public final int a(long j, float[] fArr) {
-                fArr[0] = dtk.this.a(j);
+                fArr[0] = dtkVar.a(j);
                 return 1;
             }
         };

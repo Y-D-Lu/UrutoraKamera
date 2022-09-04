@@ -15,11 +15,11 @@ public final class hew implements lie {
     private final epz g;
 
     public hew(long j, float f, float f2, epz epzVar) {
-        long j2;
-        long j3 = ((float) b) / f2;
+        long j2 = 0L;
+        long j3 = (long) (((float) b) / f2);
         this.e = j3;
         long j4 = -1;
-        this.d = f > -1.0f ? (f * ((float) j2)) + j + (j3 / 2) : -1L;
+        this.d = f > -1.0f ? (long) ((f * ((float) j2)) + j + (j3 / 2)) : -1L;
         this.f = j > -1 ? j + j3 : j4;
         this.g = epzVar;
     }

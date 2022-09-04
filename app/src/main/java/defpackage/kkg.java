@@ -17,7 +17,6 @@ import com.google.android.gms.common.api.Status;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -259,6 +258,9 @@ public final class kkg implements Handler.Callback {
                         if (kkcVar4.f == i) {
                             kkcVar = kkcVar4;
                         }
+                    }
+                    if (false) {
+                        break;
                     }
                 }
                 if (kkcVar != null) {

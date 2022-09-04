@@ -14,6 +14,7 @@ import com.hdrindicator.DisplayHelper;
 import org.codeaurora.snapcam.R;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 /* renamed from: dmn  reason: default package */
 /* loaded from: classes.dex */
@@ -323,7 +324,7 @@ public final class dmn implements dmh, lie {
         obr.ao(dnaVar);
         dnaVar.a();
         dnaVar.j();
-        for (dmf dmfVar3 : this.e.a) {
+        for (dmf dmfVar3 : (Set<dmf>) this.e.a) {
             dmfVar3.setOnTouchListener(new View.OnTouchListener() { // from class: dmj
                 /* JADX WARN: Multi-variable type inference failed */
                 /* JADX WARN: Removed duplicated region for block: B:55:0x016c  */
@@ -392,12 +393,8 @@ public final class dmn implements dmh, lie {
             CheckBox checkBox = this.t;
             obr.ao(checkBox);
             checkBox.setVisibility(8);
-            evCompView.e.setOnClickListener(new View.OnClickListener(this) { // from class: dmi
-                public final /* synthetic */ dmn a;
-
-                {
-                    this.a = this;
-                }
+            evCompView.e.setOnClickListener(new View.OnClickListener() { // from class: dmi
+                public final /* synthetic */ dmn a = dmn.this;
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
@@ -421,12 +418,8 @@ public final class dmn implements dmh, lie {
                 }
             });
         } else {
-            this.t.setOnClickListener(new View.OnClickListener(this) { // from class: dmi
-                public final /* synthetic */ dmn a;
-
-                {
-                    this.a = this;
-                }
+            this.t.setOnClickListener(new View.OnClickListener() { // from class: dmi
+                public final /* synthetic */ dmn a = dmn.this;
 
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {

@@ -26,7 +26,7 @@ public final class dzd implements Supplier {
         this.g = Math.min(((Float) ddfVar.g(ddm.ag).c()).floatValue(), max);
     }
 
-    @Override // java.util.function.Supplier
+//    @Override // java.util.function.Supplier
     /* renamed from: get */
     public final /* bridge */ /* synthetic */ Object mo291get() {
         ReentrantReadWriteLock.ReadLock readLock = this.a.readLock();
@@ -39,5 +39,10 @@ public final class dzd implements Supplier {
             readLock.unlock();
             throw th;
         }
+    }
+
+    @Override
+    public Object get() {
+        return mo291get();
     }
 }

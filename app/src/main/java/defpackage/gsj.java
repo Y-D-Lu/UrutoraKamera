@@ -15,7 +15,7 @@ public final class gsj implements lij {
         this.c = j;
     }
 
-    @Override // defpackage.lij
+//    @Override // defpackage.lij
     /* renamed from: b */
     public final void fB(lzr lzrVar) {
         if (this.e) {
@@ -38,5 +38,10 @@ public final class gsj implements lij {
             this.e = true;
             this.a.o(false);
         }
+    }
+
+    @Override
+    public void fB(Object obj) {
+        fB((lzr)obj);
     }
 }

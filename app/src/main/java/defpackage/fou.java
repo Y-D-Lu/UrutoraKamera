@@ -9,7 +9,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
@@ -85,7 +84,7 @@ public final class fou implements fpm {
         return pfj.i(pgb.i(phtVar, pgkVar, pgr.a), RuntimeException.class, new pgk() { // from class: foc
             @Override // defpackage.pgk
             public final pht a(Object obj) {
-                pgk pgkVar3 = pgk.this;
+                pgk pgkVar3 = pgkVar2;
                 RuntimeException runtimeException = (RuntimeException) obj;
                 ((oug) ((oug) ((oug) fou.a.c()).h(runtimeException)).G((char) 1803)).o("Could not finish microvideo session as it previously failed with cause:");
                 return pgkVar3.a(runtimeException);
@@ -97,7 +96,7 @@ public final class fou implements fpm {
         handler.postDelayed(new Runnable() { // from class: fny
             @Override // java.lang.Runnable
             public final void run() {
-                gfh.this.g(hspVar);
+                gfhVar.g(hspVar);
             }
         }, hspVar, 11000L);
     }
@@ -194,7 +193,7 @@ public final class fou implements fpm {
             }
             fotVar.i.e(m);
             return (pcw) m.j();
-        } catch (ExecutionException e) {
+        } catch (Exception e) {
             throw new IllegalStateException("Shutter timestamp unavailable for stats collection", e);
         }
     }
@@ -359,7 +358,7 @@ public final class fou implements fpm {
                     hsc i3;
                     int i4;
                     int i5;
-                    frl frlVar;
+                    frl frlVar = null;
                     fou fouVar = fou.this;
                     hsp hspVar = h;
                     pih pihVar2 = f;
@@ -420,7 +419,7 @@ public final class fou implements fpm {
                                 a5.d(new Runnable() { // from class: fnz
                                     @Override // java.lang.Runnable
                                     public final void run() {
-                                        pih.this.e(a5);
+                                        f4.e(a5);
                                     }
                                 }, pgr.a);
                                 pih f5 = pih.f();
@@ -468,13 +467,13 @@ public final class fou implements fpm {
                                     mln a7 = frgVar.a();
                                     if (!fouVar.l.k(ddr.d) || !z5) {
                                         f5.o(oih.a);
-                                        frlVar = a7;
+                                        frlVar = (frl) a7;
                                     } else {
                                         final frl frlVar2 = new frl(a7, i4);
                                         frlVar2.a.d(new Runnable() { // from class: frj
                                             @Override // java.lang.Runnable
                                             public final void run() {
-                                                frl.this.c();
+                                                frlVar2.c();
                                             }
                                         }, pgr.a);
                                         f5.e(frlVar2.b);
@@ -495,12 +494,12 @@ public final class fou implements fpm {
                                     fuwVar2.d(new foi(fouVar, a9, a10, a2, fotVar, z5, frgVar, e2));
                                     frgVar.b().d(bvf.n, fouVar.b);
                                     pihVar3.o(fotVar);
-                                } catch (IOException e3) {
+                                } catch (Exception e3) {
                                     throw new RuntimeException(e3);
                                 }
                             } catch (Throwable th2) {
-                                th = th2;
-                                fuwVar = obj;
+                                th2.printStackTrace();
+                                fuwVar = (fuw) obj;
                             }
                         }
                     } catch (RuntimeException e4) {

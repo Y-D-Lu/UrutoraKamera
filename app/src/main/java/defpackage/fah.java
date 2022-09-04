@@ -156,7 +156,7 @@ public final class fah extends buf implements jad {
         bqaVar.b.c(new Runnable() { // from class: bpz
             @Override // java.lang.Runnable
             public final void run() {
-                final bqa bqaVar2 = bqa.this;
+                final bqa bqaVar2 = bqaVar;
                 nyj nyjVar = new nyj(bqaVar2.a, bqaVar2.d);
                 nyjVar.k(false);
                 nyjVar.s(R.string.cant_save_photo_dialog_title);
@@ -164,7 +164,7 @@ public final class fah extends buf implements jad {
                 nyjVar.r(bqaVar2.a.getResources().getString(R.string.dialog_ok), new DialogInterface.OnClickListener() { // from class: bpy
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i) {
-                        bqa.this.c.a("ImageIntent: No write permission to intent media output uri.");
+                        bqaVar2.c.a("ImageIntent: No write permission to intent media output uri.");
                     }
                 });
                 nyjVar.c();
@@ -253,7 +253,7 @@ public final class fah extends buf implements jad {
                 plk.af(plk.Y(new Runnable() { // from class: ezp
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ezr ezrVar2 = ezr.this;
+                        ezr ezrVar2 = ezrVar;
                         Uri uri2 = uri;
                         byte[] bArr3 = bArr2;
                         Activity activity = (Activity) ezrVar2.b.get();
@@ -267,7 +267,7 @@ public final class fah extends buf implements jad {
                             } catch (IOException e) {
                                 throw new IllegalStateException(e);
                             }
-                        } catch (FileNotFoundException e2) {
+                        } catch (Exception e2) {
                             throw new IllegalArgumentException(obr.aw("Could not open output uri %s for writing. Called from %s ", uri2, activity.getReferrer()), e2);
                         }
                     }
@@ -282,7 +282,7 @@ public final class fah extends buf implements jad {
             ezrVar.c.execute(new Runnable() { // from class: ezo
                 @Override // java.lang.Runnable
                 public final void run() {
-                    ezr ezrVar2 = ezr.this;
+                    ezr ezrVar2 = ezrVar;
                     ezrVar2.e.n(putExtra);
                 }
             });

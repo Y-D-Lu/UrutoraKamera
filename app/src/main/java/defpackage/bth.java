@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Set;
+
 /* renamed from: bth  reason: default package */
 /* loaded from: classes.dex */
 public final class bth implements iho {
@@ -23,7 +25,7 @@ public final class bth implements iho {
         if (b != null) {
             ghx f = this.e.f(b);
             f.y();
-            for (lvs lvsVar : f.B()) {
+            for (lvs lvsVar : (Set<lvs>) f.B()) {
                 this.e.f(lvsVar).y();
             }
             f.z();

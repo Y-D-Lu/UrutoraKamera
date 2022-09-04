@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: hua  reason: default package */
 /* loaded from: classes.dex */
@@ -86,7 +87,7 @@ public final class hua implements huf, hug, lie {
         synchronized (this) {
             this.b.unregisterOnSharedPreferenceChangeListener(this.d);
         }
-        for (lie lieVar : this.e) {
+        for (lie lieVar : (Set<lie>) this.e) {
             lieVar.close();
         }
     }

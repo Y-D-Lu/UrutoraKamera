@@ -25,7 +25,7 @@ final class dap implements dbr {
     @Override // defpackage.dbr
     public final Map fM() {
         ArrayMap arrayMap = new ArrayMap();
-        for (dbr dbrVar : this.b) {
+        for (dbr dbrVar : (Set<dbr>) this.b) {
             for (Map.Entry entry : (Set<Map.Entry>) dbrVar.fM().entrySet()) {
                 String str = (String) entry.getKey();
                 Float f = (Float) entry.getValue();

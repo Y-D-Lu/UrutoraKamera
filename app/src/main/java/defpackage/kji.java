@@ -29,11 +29,9 @@ public abstract class kji extends BasePendingResult implements kjj {
     public final void e(khz khzVar) {
         try {
             b(khzVar);
-        } catch (DeadObjectException e) {
-            d(e);
-            throw e;
-        } catch (RemoteException e2) {
-            d(e2);
+        } catch (Exception e) {
+            e.printStackTrace();
+            //d(e);
         }
     }
 

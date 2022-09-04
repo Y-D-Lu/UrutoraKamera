@@ -34,7 +34,7 @@ public final class fvq {
     }
 
     public static ghx B(lvp lvpVar, lvq lvqVar) {
-        for (lvs lvsVar : lvpVar.B()) {
+        for (lvs lvsVar : (Set<lvs>) lvpVar.B()) {
             lvp a = lvqVar.a(lvsVar);
             if (a.h().width() > lvpVar.h().width()) {
                 lvpVar = a;
@@ -44,7 +44,7 @@ public final class fvq {
     }
 
     public static lvs C(lqd lqdVar) {
-        for (lnx lnxVar : lqdVar.c) {
+        for (lnx lnxVar : (Set<lnx>) lqdVar.c) {
             if (lnxVar.a() == 37) {
                 return lnxVar.c();
             }
@@ -190,7 +190,7 @@ public final class fvq {
 
     public static Set o(gjm gjmVar) {
         opc D = ope.D();
-        for (lnq lnqVar : gjmVar.a) {
+        for (lnq lnqVar : (Set<lnq>) gjmVar.a) {
             D.d(lnqVar);
         }
         return D.f();
@@ -278,7 +278,7 @@ public final class fvq {
     }
 
     public static oom t(lvp lvpVar) {
-        for (CaptureRequest.Key key : lvpVar.A()) {
+        for (CaptureRequest.Key key : (Set<CaptureRequest.Key>) lvpVar.A()) {
             if (key.getName().equals(ghy.a.getName())) {
                 return oom.m(mip.be(ghy.a, 1));
             }
@@ -334,7 +334,7 @@ public final class fvq {
     }
 
     public static void x(lnc lncVar, lmv lmvVar) {
-        for (lnx lnxVar : lmvVar.q().c) {
+        for (lnx lnxVar : (Set<lnx>) lmvVar.q().c) {
             lncVar.d(lnxVar);
         }
     }

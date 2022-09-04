@@ -12,7 +12,11 @@ import java.time.Duration;
 /* renamed from: ios  reason: default package */
 /* loaded from: classes.dex */
 public final /* synthetic */ class ios {
-    public final /* synthetic */ iqj a;
+    public /* synthetic */ iqj a;
+
+    public ios(iqj iqjVar2) {
+        a = iqjVar2;
+    }
 
     public final void a(final long j, final float f) {
         final iqj iqjVar = this.a;
@@ -20,16 +24,16 @@ public final /* synthetic */ class ios {
             @Override // java.lang.Runnable
             public final void run() {
                 boolean z;
-                iqj iqjVar2 = iqj.this;
+                iqj iqjVar2 = iqjVar;
                 long j2 = j;
                 float f2 = f;
                 if (iqjVar2.k.k(dcu.J)) {
-                    long millis = ((float) TimeUnit.SECONDS.toMillis(j2)) / f2;
+                    long millis = (long) (((float) TimeUnit.SECONDS.toMillis(j2)) / f2);
                     iqjVar2.j.g(millis);
                     iqjVar2.B.g("/video_state_recording_output", millis);
                 } else {
                     iro iroVar = iqjVar2.i;
-                    iroVar.b.set(((float) TimeUnit.SECONDS.toMillis(j2)) / f2);
+                    iroVar.b.set((long) (((float) TimeUnit.SECONDS.toMillis(j2)) / f2));
                     if (TimeUnit.MILLISECONDS.toHours(iroVar.b.get()) > 0) {
                         int dimensionPixelSize = iroVar.g.getDimensionPixelSize(R.dimen.frame_based_timer_expand_width);
                         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) iroVar.f.getLayoutParams();

@@ -40,7 +40,7 @@ public final class hzq {
             } else {
                 mip.eT(null, null, this, c, iarVar);
             }
-        } catch (InterruptedException e2) {
+        } catch (Exception e2) {
             ((oug) ((oug) ((oug) hxr.a.b()).h(e2)).G((char) 2728)).o("Requesting high resolution image failed.");
             mip.eT(null, null, this, c, iarVar);
         }

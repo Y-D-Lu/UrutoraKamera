@@ -11,6 +11,7 @@ import android.view.Surface;
 import com.hdrindicator.DisplayHelper;
 
 import java.lang.reflect.Array;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.ByteBuffer;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -50,7 +51,7 @@ public class Allocation extends BaseObj {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: android.support.v8.renderscript.Allocation$1  reason: invalid class name */
     /* loaded from: classes.dex */
-    public /* synthetic */ class AnonymousClass1 {
+    public static/* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$android$graphics$Bitmap$Config;
 
         static {
@@ -943,7 +944,13 @@ public class Allocation extends BaseObj {
     @Override // android.support.v8.renderscript.BaseObj
     public void finalize() {
         if (RenderScript.sUseGCHooks) {
-            RenderScript.registerNativeFree.invoke(RenderScript.sRuntime, Integer.valueOf(this.mSize));
+            try {
+                RenderScript.registerNativeFree.invoke(RenderScript.sRuntime, Integer.valueOf(this.mSize));
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            }
         }
         super.finalize();
     }

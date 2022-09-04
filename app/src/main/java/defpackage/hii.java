@@ -3,6 +3,7 @@ package defpackage;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 /* renamed from: hii  reason: default package */
 /* loaded from: classes.dex */
@@ -12,7 +13,7 @@ public final class hii implements hih {
 
     private final List e(long j) {
         ArrayList arrayList = new ArrayList();
-        for (hih hihVar : this.a) {
+        for (hih hihVar : (Set<hih>) this.a) {
             if (this.b.get(hihVar) == null || ((Long) this.b.get(hihVar)).longValue() == j) {
                 arrayList.add(hihVar);
             }

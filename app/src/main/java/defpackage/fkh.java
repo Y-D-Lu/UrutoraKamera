@@ -49,12 +49,8 @@ public final class fkh implements iat {
         iaw a = iax.a();
         a.b = this.k.getString(R.string.astrophotography_suggestion_text);
         a.c = this.k.getDrawable(R.drawable.quantum_gm_ic_auto_awesome_white_24, null);
-        a.h = new Runnable(this) { // from class: fke
-            public final /* synthetic */ fkh a;
-
-            {
-                this.a = this;
-            }
+        a.h = new Runnable() { // from class: fke
+            public final /* synthetic */ fkh a = fkh.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -81,12 +77,8 @@ public final class fkh implements iat {
                 }
             }
         };
-        a.d = new Runnable(this) { // from class: fke
-            public final /* synthetic */ fkh a;
-
-            {
-                this.a = this;
-            }
+        a.d = new Runnable() { // from class: fke
+            public final /* synthetic */ fkh a = fkh.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -113,12 +105,8 @@ public final class fkh implements iat {
                 }
             }
         };
-        a.g = new Runnable(this) { // from class: fke
-            public final /* synthetic */ fkh a;
-
-            {
-                this.a = this;
-            }
+        a.g = new Runnable() { // from class: fke
+            public final /* synthetic */ fkh a = fkh.this;
 
             @Override // java.lang.Runnable
             public final void run() {

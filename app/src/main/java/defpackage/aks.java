@@ -44,7 +44,12 @@ public final class aks {
     private final Class v(Class cls) {
         Class cls2 = (Class) this.c.get(cls.getName());
         if (cls2 == null) {
-            Class<?> cls3 = Class.forName(String.format("%s.%sParcelizer", cls.getPackage().getName(), cls.getSimpleName()), false, cls.getClassLoader());
+            Class<?> cls3 = null;
+            try {
+                cls3 = Class.forName(String.format("%s.%sParcelizer", cls.getPackage().getName(), cls.getSimpleName()), false, cls.getClassLoader());
+            } catch (ClassNotFoundException ex) {
+                ex.printStackTrace();
+            }
             this.c.put(cls.getName(), cls3);
             return cls3;
         }
@@ -140,8 +145,6 @@ public final class aks {
                 }
                 method.invoke(null, aktVar, m);
                 m.o();
-            } catch (ClassNotFoundException e) {
-                throw new RuntimeException(e);
             } catch (IllegalAccessException e2) {
                 throw new RuntimeException(e2);
             } catch (NoSuchMethodException e3) {
@@ -156,7 +159,7 @@ public final class aks {
                 }
                 throw ((Error) cause);
             }
-        } catch (ClassNotFoundException e5) {
+        } catch (Exception e5) {
             throw new RuntimeException(aktVar.getClass().getSimpleName() + " does not have a Parcelizer", e5);
         }
     }

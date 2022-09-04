@@ -30,7 +30,7 @@ public final class dqo {
         obr.aQ(this.e.g());
         dru.c("frame", this.b);
         this.f.a = lvpVar;
-        for (drt drtVar : this.b) {
+        for (drt drtVar : (Set<drt>) this.b) {
             drtVar.d(lvpVar, brgVar);
         }
         ((lmv) this.e.c()).k(new lmu() { // from class: dqm
@@ -44,7 +44,7 @@ public final class dqo {
                         public final void run() {
                             dqo dqoVar2 = dqo.this;
                             lmr lmrVar = a2;
-                            for (drt drtVar2 : dqoVar2.b) {
+                            for (drt drtVar2 : (Set<drt>) dqoVar2.b) {
                                 if (drtVar2.e()) {
                                     drtVar2.b(lmrVar, (lnx) dqoVar2.c.c());
                                 }
@@ -59,7 +59,7 @@ public final class dqo {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final synchronized void b() {
-        for (drt drtVar : this.b) {
+        for (drt drtVar : (Set<drt>) this.b) {
             drtVar.a();
         }
     }

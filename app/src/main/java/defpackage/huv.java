@@ -156,7 +156,7 @@ public final class huv implements pys {
                 mip.bZ(iiiVar.d, new lht() { // from class: iic
                     @Override // defpackage.lht
                     public final void a(Object obj) {
-                        CameraActivityTiming.this.j(ijf.ACTIVITY_STEADY, CameraActivityTiming.a);
+                        cameraActivityTiming.j(ijf.ACTIVITY_STEADY, CameraActivityTiming.a);
                     }
                 });
                 return iiiVar;
@@ -166,7 +166,7 @@ public final class huv implements pys {
                 return new ijn() { // from class: iif
                     @Override // defpackage.ijn
                     public final Object a() {
-                        Instrumentation instrumentation2 = Instrumentation.this;
+                        Instrumentation instrumentation2 = instrumentation;
                         ViewfinderJankSession viewfinderJankSession = new ViewfinderJankSession();
                         instrumentation2.f(viewfinderJankSession);
                         return viewfinderJankSession;

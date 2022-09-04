@@ -5,6 +5,10 @@ package defpackage;
 public final /* synthetic */ class gnz implements Runnable {
     public final /* synthetic */ goa a;
 
+    public gnz(goa goa) {
+        a = goa;
+    }
+
     @Override // java.lang.Runnable
     public final void run() {
         goa goaVar = this.a;

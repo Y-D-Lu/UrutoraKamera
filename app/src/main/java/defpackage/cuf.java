@@ -37,12 +37,8 @@ public final class cuf implements ViewTreeObserver.OnGlobalLayoutListener {
         jlzVar.i();
         jlzVar.h = this.b.i.k(ddl.ay);
         jlzVar.n();
-        jlzVar.g(new Runnable(this) { // from class: cue
-            public final /* synthetic */ cuf a;
-
-            {
-                this.a = this;
-            }
+        jlzVar.g(new Runnable() { // from class: cue
+            public final /* synthetic */ cuf a = cuf.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -56,12 +52,8 @@ public final class cuf implements ViewTreeObserver.OnGlobalLayoutListener {
                 }
             }
         }, this.b.e);
-        jlzVar.f(new Runnable(this) { // from class: cue
-            public final /* synthetic */ cuf a;
-
-            {
-                this.a = this;
-            }
+        jlzVar.f(new Runnable() { // from class: cue
+            public final /* synthetic */ cuf a = cuf.this;
 
             @Override // java.lang.Runnable
             public final void run() {

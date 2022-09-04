@@ -64,7 +64,7 @@ public class ixx extends ixk {
         jjpVar.a.post(new Runnable() { // from class: jjo
             @Override // java.lang.Runnable
             public final void run() {
-                jjp jjpVar2 = jjp.this;
+                jjp jjpVar2 = jjpVar;
                 boolean z = k;
                 jjn jjnVar = jjpVar2.a;
                 lar.a();

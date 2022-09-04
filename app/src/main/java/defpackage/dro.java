@@ -19,7 +19,7 @@ public final class dro implements drb {
     @Override // defpackage.drb
     public final Set f() {
         HashSet hashSet = new HashSet();
-        for (drb drbVar : this.a.d) {
+        for (drb drbVar : (Set<drb>) this.a.d) {
             hashSet.addAll(drbVar.f());
         }
         return hashSet;
@@ -27,7 +27,7 @@ public final class dro implements drb {
 
     @Override // defpackage.drb
     public final void g(Sensor sensor) {
-        for (drb drbVar : this.a.d) {
+        for (drb drbVar : (Set<drb>) this.a.d) {
             if (drbVar.f().contains(sensor)) {
                 drbVar.g(sensor);
             }
@@ -36,7 +36,7 @@ public final class dro implements drb {
 
     @Override // defpackage.drb
     public final void h(Sensor sensor) {
-        for (drb drbVar : this.a.d) {
+        for (drb drbVar : (Set<drb>) this.a.d) {
             if (drbVar.f().contains(sensor)) {
                 drbVar.h(sensor);
             }
@@ -45,7 +45,7 @@ public final class dro implements drb {
 
     @Override // android.hardware.SensorEventListener
     public final void onAccuracyChanged(Sensor sensor, int i) {
-        for (drb drbVar : this.a.d) {
+        for (drb drbVar : (Set<drb>) this.a.d) {
             if (drbVar.f().contains(sensor)) {
                 drbVar.onAccuracyChanged(sensor, i);
             }
@@ -54,7 +54,7 @@ public final class dro implements drb {
 
     @Override // android.hardware.SensorEventListener
     public final void onSensorChanged(SensorEvent sensorEvent) {
-        for (drb drbVar : this.a.d) {
+        for (drb drbVar : (Set<drb>) this.a.d) {
             if (drbVar.f().contains(sensorEvent.sensor)) {
                 drbVar.onSensorChanged(sensorEvent);
             }

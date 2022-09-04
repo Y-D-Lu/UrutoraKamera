@@ -12,6 +12,7 @@ import com.google.android.apps.camera.jni.eisutil.FrameUtilNative;
 
 import java.nio.ByteBuffer;
 import java.util.List;
+import java.util.Queue;
 import java.util.concurrent.TimeUnit;
 
 import javax.microedition.khronos.egl.EGL10;
@@ -74,7 +75,7 @@ public final class iqs implements iqq {
             Long l3 = (Long) iqxVar.a.d(CaptureResult.SENSOR_ROLLING_SHUTTER_SKEW);
             l3.getClass();
             long longValue3 = l3.longValue();
-            long height2 = ((float) longValue3) * ((iqxVar.f.height() * ((b / c2) / (height / width))) / iqxVar.b.height());
+            long height2 = (long) (((float) longValue3) * ((iqxVar.f.height() * ((b / c2) / (height / width))) / iqxVar.b.height()));
             int width2 = iqxVar.f.width();
             int width3 = iqxVar.b.width();
             SizeF sizeF = iqxVar.c;
@@ -113,7 +114,7 @@ public final class iqs implements iqq {
                     iraVar.c.execute(new Runnable() { // from class: iqz
                         @Override // java.lang.Runnable
                         public final void run() {
-                            ira iraVar2 = ira.this;
+                            ira iraVar2 = iraVar;
                             mad madVar2 = madVar;
                             iqv iqvVar2 = iqvVar;
                             lmr lmrVar2 = lmrVar;
@@ -264,10 +265,10 @@ public final class iqs implements iqq {
         } catch (InterruptedException e) {
             defpackage.d.v(ira.a.c(), "Eis executorService is interrupted while waiting", (char) 3129);
         }
-        for (mad madVar : iraVar.d) {
+        for (mad madVar : (Queue<mad>) iraVar.d) {
             madVar.close();
         }
-        for (lmr lmrVar : iraVar.e) {
+        for (lmr lmrVar :  (Queue<lmr>) iraVar.e) {
             lmrVar.close();
         }
         irc ircVar = iraVar.g;
@@ -312,15 +313,15 @@ public final class iqs implements iqq {
             final enl enlVar = this.f;
             iraVar.f = new iqr(this);
             iraVar.b.set(z2.d());
-            iraVar.c.execute(new Runnable(i, i2, enlVar, z2, null, null, null) { // from class: iqy
-                public final /* synthetic */ int b;
-                public final /* synthetic */ int c;
-                public final /* synthetic */ enl d;
-                public final /* synthetic */ kfm e;
+            iraVar.c.execute(new Runnable() { // from class: iqy
+                public final /* synthetic */ int b = i;
+                public final /* synthetic */ int c = i2;
+                public final /* synthetic */ enl d = enlVar;
+                public final /* synthetic */ kfm e = z2;
 
                 @Override // java.lang.Runnable
                 public final void run() {
-                    ira iraVar2 = ira.this;
+                    ira iraVar2 = iraVar;
                     iraVar2.g = new irc(iraVar2.h, this.b, this.c, this.d, this.e, null, null, null, null, null, null, null);
                     ire ireVar = iraVar2.g.e;
                     irg irgVar = ireVar.a;

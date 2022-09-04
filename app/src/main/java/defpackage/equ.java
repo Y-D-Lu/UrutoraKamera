@@ -69,7 +69,7 @@ public final class equ implements LasagnaCallbacks {
             return;
         }
         try {
-            long millis = ((float) TimeUnit.SECONDS.toMillis(1L)) * f;
+            long millis = (long) (((float) TimeUnit.SECONDS.toMillis(1L)) * f);
             gof gofVar = erpVar.k;
             if (gofVar != null) {
                 gofVar.d().f(millis);

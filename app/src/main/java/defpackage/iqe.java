@@ -53,7 +53,7 @@ public final class iqe extends BottomBarListener {
                         iodVar.x.d(new Runnable() { // from class: iob
                             @Override // java.lang.Runnable
                             public final void run() {
-                                iod iodVar2 = iod.this;
+                                iod iodVar2 = iodVar;
                                 iodVar2.c.set(true);
                                 iodVar2.n.set(TimeUnit.MILLISECONDS.toNanos(SystemClock.uptimeMillis()));
                             }

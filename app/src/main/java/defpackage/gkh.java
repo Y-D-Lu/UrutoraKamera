@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: gkh  reason: default package */
 /* loaded from: classes.dex */
@@ -17,17 +18,17 @@ final class gkh implements gmt {
     }
 
     private final void b() {
-        for (mad madVar : this.a.values()) {
+        for (mad madVar : (Set<mad>) this.a.values()) {
             madVar.close();
         }
-        for (mad madVar2 : this.b.values()) {
+        for (mad madVar2 : (Set<mad>) this.b.values()) {
             madVar2.close();
         }
     }
 
     private static final void c(long j, Map map) {
         ArrayList arrayList = new ArrayList();
-        for (Long l : map.keySet()) {
+        for (Long l : (Set<Long>) map.keySet()) {
             long longValue = l.longValue();
             if (longValue < j) {
                 Long valueOf = Long.valueOf(longValue);
@@ -54,7 +55,7 @@ final class gkh implements gmt {
         } else {
             boolean z = false;
             long j = 0;
-            for (mad madVar2 : this.b.values()) {
+            for (mad madVar2 : (Set<mad>) this.b.values()) {
                 long d = madVar2.d();
                 if (!z || d > j) {
                     j = d;
@@ -79,7 +80,7 @@ final class gkh implements gmt {
                 gjsVar = null;
             } else {
                 gjsVar = null;
-                for (gjs gjsVar2 : this.b.values()) {
+                for (gjs gjsVar2 : (Set<gjs>) this.b.values()) {
                     if (gjsVar == null || gjsVar2.d() > gjsVar.d()) {
                         gjsVar = gjsVar2;
                     }
@@ -117,7 +118,7 @@ final class gkh implements gmt {
                     a.f = gkxVar.d.c;
                     a.b(gkxVar.a.d());
                     hiaVar.e(a.a(), gkxVar.d.d, hashSet, gkxVar.a, ojc.i(gkxVar.c));
-                } catch (InterruptedException e) {
+                } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
             } else {

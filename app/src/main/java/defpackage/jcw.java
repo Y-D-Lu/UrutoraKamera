@@ -35,7 +35,7 @@ public final class jcw {
         executor.execute(new Runnable() { // from class: jcl
             @Override // java.lang.Runnable
             public final void run() {
-                ojz.this.a();
+                au.a();
             }
         });
     }
@@ -97,7 +97,7 @@ public final class jcw {
                                             d.c(activity, null, new Runnable() { // from class: pmo
                                                 @Override // java.lang.Runnable
                                                 public final void run() {
-                                                    LensApi.this.b(bitmap4, a2);
+                                                    d.b(bitmap4, a2);
                                                 }
                                             });
                                         } else {

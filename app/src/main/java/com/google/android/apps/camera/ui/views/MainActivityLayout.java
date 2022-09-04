@@ -24,6 +24,7 @@ import com.google.android.apps.camera.zoomui.ZoomUi;
 import org.codeaurora.snapcam.R;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -69,7 +70,6 @@ import defpackage.oih;
 import defpackage.ojc;
 import defpackage.ojz;
 import defpackage.pyn;
-import java.util.Objects;
 
 /* loaded from: classes.dex */
 public class MainActivityLayout extends GcaLayout implements fik, fie {
@@ -355,7 +355,7 @@ public class MainActivityLayout extends GcaLayout implements fik, fie {
     public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         boolean z;
         boolean z2 = false;
-        for (mip mipVar : this.e) {
+        for (mip mipVar : (Set<mip>) this.e) {
             if (mipVar.gj(motionEvent) && mipVar.p(new jtw(motionEvent, getRootView()))) {
                 float x = motionEvent.getX();
                 float y = motionEvent.getY();
@@ -468,7 +468,7 @@ public class MainActivityLayout extends GcaLayout implements fik, fie {
             r();
             j();
             l();
-            for (jrt jrtVar : this.y) {
+            for (jrt jrtVar : (Set<jrt>) this.y) {
                 jrtVar.k(a.h);
             }
         }

@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Executor;
-
-import java.util.Collection;
 import java.util.stream.Collectors;
 
 /* renamed from: gmy  reason: default package */
@@ -29,13 +27,13 @@ public final class gmy {
         (this.b.stream()).map(cgw.m).collect(Collectors.joining(","));
         ArrayList arrayList = new ArrayList();
         this.c.e("CameraStarter.start");
-        for (final bvv bvvVar : this.b) {
+        for (final bvv bvvVar : (Set<bvv>) this.b) {
             try {
                 arrayList.add(pgb.h(bvvVar.fz(), new oiu() { // from class: gmw
                     @Override // defpackage.oiu
                     public final Object a(Object obj) {
                         Boolean bool = (Boolean) obj;
-                        bvv.this.c();
+                        bvvVar.c();
                         bool.booleanValue();
                         return bool;
                     }
@@ -55,9 +53,9 @@ public final class gmy {
         pht h = pgb.h(plk.R(arrayList), new oiu() { // from class: gmx
             @Override // defpackage.oiu
             public final Object a(Object obj) {
-                lji ljiVar = lji.this;
+                lji ljiVar = a2;
                 boolean z = true;
-                for (Boolean bool : (List) obj) {
+                for (Boolean bool : (List<Boolean>) obj) {
                     boolean z2 = false;
                     if (bool != null && bool.booleanValue()) {
                         z2 = true;

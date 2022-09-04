@@ -368,8 +368,8 @@ public final class cas implements dbg, fik, fii, fij, ias, hsb, cbl, itv, cav, l
         int i2;
         Rect rect;
         Rect rect2;
-        int i3;
-        char c;
+        int i3 = 0;
+        char c = 0;
         if (hssVar == hss.MARS_STORE) {
             x();
             return;
@@ -674,7 +674,7 @@ public final class cas implements dbg, fik, fii, fij, ias, hsb, cbl, itv, cav, l
                                     int i16;
                                     int i17;
                                     float[] fArr15;
-                                    cdp cdpVar2 = cdp.this;
+                                    cdp cdpVar2 = cdpVar;
                                     int i18 = i15;
                                     synchronized (cdpVar2.g) {
                                         bitmap = null;
@@ -716,7 +716,7 @@ public final class cas implements dbg, fik, fii, fij, ias, hsb, cbl, itv, cav, l
                                                                             case 0:
                                                                                 fArr15 = cdp.a;
                                                                                 break;
-                                                                            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                                                                            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                                                                                 fArr15 = cdp.b;
                                                                                 break;
                                                                             case 180:
@@ -778,6 +778,9 @@ public final class cas implements dbg, fik, fii, fij, ias, hsb, cbl, itv, cav, l
                                                         e = e4;
                                                     }
                                                 }
+                                            }
+                                            if (false) {
+                                                break;
                                             }
                                         }
                                     }

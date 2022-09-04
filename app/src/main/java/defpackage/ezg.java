@@ -149,18 +149,14 @@ public final class ezg extends buf implements ezk {
         lapVar2.c(new lie() { // from class: eyo
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                eyp.this.e = null;
+                eypVar.e = null;
             }
         });
         y();
         v(true);
         this.m.addListener(this.y);
-        this.B.c(new lie(this) { // from class: eys
-            public final /* synthetic */ ezg a;
-
-            {
-                this.a = this;
-            }
+        this.B.c(new lie() { // from class: eys
+            public final /* synthetic */ ezg a = ezg.this;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
@@ -178,12 +174,8 @@ public final class ezg extends buf implements ezk {
         });
         this.B.c(this.h.d(this.I));
         this.o.a(this.z);
-        this.B.c(new lie(this) { // from class: eys
-            public final /* synthetic */ ezg a;
-
-            {
-                this.a = this;
-            }
+        this.B.c(new lie() { // from class: eys
+            public final /* synthetic */ ezg a = ezg.this;
 
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
@@ -209,15 +201,15 @@ public final class ezg extends buf implements ezk {
         this.B.c(eymVar.b.a(htu.d).a(new lij() { // from class: eyk
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                eym eymVar2 = eym.this;
-                final ezk ezkVar = this;
+                eym eymVar2 = eymVar;
+                final ezk ezkVar = ezg.this;
                 Integer num = (Integer) obj;
                 if (((buf) ezkVar).a && num.intValue() != eymVar2.d) {
                     eymVar2.d = num.intValue();
                     eymVar2.a.e.n(jrl.MOTION_BLUR, new Runnable() { // from class: eyl
                         @Override // java.lang.Runnable
                         public final void run() {
-                            ezk.this.u();
+                            ezkVar.u();
                         }
                     });
                 }
@@ -242,7 +234,7 @@ public final class ezg extends buf implements ezk {
         ToggleUi toggleUi = jbqVar.b;
         if (toggleUi != null) {
             toggleUi.c.setOnClickListener(onClickListener);
-            jbqVar.b.e(R.string.motion_mode_help_button_accessibility);
+            jbqVar.b.e(org.codeaurora.snapcam.R.string.motion_mode_help_button_accessibility);
         }
         this.T.b();
         this.B.c(this.v.a(new lij() { // from class: eyt

@@ -208,7 +208,7 @@ public final class gth implements pys {
                 return aas.d(new Runnable() { // from class: gvy
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ojc ojcVar = ojc.this;
+                        ojc ojcVar = a2;
                         lap lapVar2 = lapVar;
                         final lnc lncVar3 = lncVar2;
                         if (!ojcVar.g()) {
@@ -218,7 +218,7 @@ public final class gth implements pys {
                         lapVar2.c(hclVar.b().a(new lij() { // from class: gwb
                             @Override // defpackage.lij
                             public final void fB(Object obj2) {
-                                lnc.this.i(hclVar.d((hck) obj2));
+                                lncVar3.i(hclVar.d((hck) obj2));
                             }
                         }, pgr.a));
                     }
@@ -230,7 +230,7 @@ public final class gth implements pys {
                 return new ojz() { // from class: gwd
                     @Override // defpackage.ojz
                     public final Object a() {
-                        ojc ojcVar2 = ojc.this;
+                        ojc ojcVar2 = ojcVar;
                         hcs hcsVar2 = hcsVar;
                         ojc ojcVar3 = h;
                         boolean z = true;
@@ -247,7 +247,7 @@ public final class gth implements pys {
                 return aas.d(new Runnable() { // from class: gwf
                     @Override // java.lang.Runnable
                     public final void run() {
-                        lap.this.c(gfyVar.e.a(new cme(lncVar3, 7), pgr.a));
+                        lapVar2.c(gfyVar.e.a(new cme(lncVar3, 7), pgr.a));
                     }
                 }, "3aaerest");
             case 9:
@@ -257,7 +257,7 @@ public final class gth implements pys {
                 return aas.d(new Runnable() { // from class: gwe
                     @Override // java.lang.Runnable
                     public final void run() {
-                        final hlv hlvVar2 = hlv.this;
+                        final hlv hlvVar2 = hlvVar;
                         lnc lncVar5 = lncVar4;
                         lap lapVar4 = lapVar3;
                         if (!hlvVar2.a || kdd.g == null) {
@@ -268,7 +268,7 @@ public final class gth implements pys {
                         lapVar4.c(new lie() { // from class: gvw
                             @Override // defpackage.lie, java.lang.AutoCloseable
                             public final void close() {
-                                hlv.this.b(boaVar);
+                                hlvVar2.b(boaVar);
                             }
                         });
                     }
@@ -292,7 +292,7 @@ public final class gth implements pys {
                 ((lap) this.c.mo37get()).c(new lie() { // from class: hcp
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        hcr.this.a.close();
+                        hcrVar.a.close();
                     }
                 });
                 return hcrVar;

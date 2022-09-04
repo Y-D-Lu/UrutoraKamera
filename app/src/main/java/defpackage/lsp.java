@@ -1,6 +1,5 @@
 package defpackage;
 
-import android.hardware.camera2.CameraAccessException;
 import android.os.Handler;
 
 import java.util.List;
@@ -126,7 +125,7 @@ public final class lsp implements lzn {
                 this.b.a(this, list);
                 this.j = null;
                 ljfVar = this.e;
-            } catch (CameraAccessException | IllegalArgumentException | IllegalStateException | NullPointerException e) {
+            } catch (Exception e) {
                 lis lisVar2 = this.f;
                 String valueOf3 = String.valueOf(list);
                 String message = e.getMessage();
@@ -217,7 +216,7 @@ public final class lsp implements lzn {
                     this.e.g("captureSession#abortCaptures");
                     lzoVar.b();
                     ljfVar = this.e;
-                } catch (CameraAccessException | lzm e) {
+                } catch (Exception e) {
                     lis lisVar = this.f;
                     String valueOf2 = String.valueOf(this);
                     StringBuilder sb2 = new StringBuilder(String.valueOf(valueOf2).length() + 41);

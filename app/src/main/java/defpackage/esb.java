@@ -66,12 +66,8 @@ public final class esb extends iam {
         iaw a = iax.a();
         a.b = this.j.getString(R.string.moblur_suggestion_text);
         a.c = this.j.getDrawable(R.drawable.quantum_gm_ic_motion_blur_white_24, null);
-        a.d = new Runnable(this) { // from class: erz
-            public final /* synthetic */ esb a;
-
-            {
-                this.a = this;
-            }
+        a.d = new Runnable() { // from class: erz
+            public final /* synthetic */ esb a = esb.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -98,12 +94,8 @@ public final class esb extends iam {
                 }
             }
         };
-        a.g = new Runnable(this) { // from class: erz
-            public final /* synthetic */ esb a;
-
-            {
-                this.a = this;
-            }
+        a.g = new Runnable() { // from class: erz
+            public final /* synthetic */ esb a = esb.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -130,12 +122,8 @@ public final class esb extends iam {
                 }
             }
         };
-        a.h = new Runnable(this) { // from class: erz
-            public final /* synthetic */ esb a;
-
-            {
-                this.a = this;
-            }
+        a.h = new Runnable() { // from class: erz
+            public final /* synthetic */ esb a = esb.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -216,7 +204,6 @@ public final class esb extends iam {
                             if (((Float) b.c()).floatValue() < 0.15f && f5 > f6) {
                                 return true;
                             }
-                            break;
                         }
                     }
                 }

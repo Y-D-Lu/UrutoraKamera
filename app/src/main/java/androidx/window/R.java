@@ -4,7 +4,7 @@ package androidx.window;
 public final class R {
 
     /* loaded from: classes.dex */
-    public final class attr {
+    public static final class attr {
         public static final int alpha = 0x7f040033;
         public static final int font = 0x7f04023e;
         public static final int fontProviderAuthority = 0x7f040240;
@@ -25,7 +25,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class color {
+    public static final class color {
         public static final int androidx_core_ripple_material_light = 0x7f060022;
         public static final int androidx_core_secondary_text_default_material_light = 0x7f060023;
         public static final int notification_action_color_filter = 0x7f060655;
@@ -33,7 +33,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class dimen {
+    public static final class dimen {
         public static final int compat_button_inset_horizontal_material = 0x7f0700aa;
         public static final int compat_button_inset_vertical_material = 0x7f0700ab;
         public static final int compat_button_padding_horizontal_material = 0x7f0700ac;
@@ -59,7 +59,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class drawable {
+    public static final class drawable {
         public static final int notification_action_background = 0x7f0805a6;
         public static final int notification_bg = 0x7f0805a7;
         public static final int notification_bg_low = 0x7f0805a8;
@@ -75,7 +75,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class id {
+    public static final class id {
         public static final int accessibility_action_clickable_span = 0x7f0b0011;
         public static final int accessibility_custom_action_0 = 0x7f0b0012;
         public static final int accessibility_custom_action_1 = 0x7f0b0013;
@@ -157,12 +157,12 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class integer {
+    public static final class integer {
         public static final int status_bar_notification_info_maxnum = 0x7f0c0061;
     }
 
     /* loaded from: classes.dex */
-    public final class layout {
+    public static final class layout {
         public static final int custom_dialog = 0x7f0e0033;
         public static final int notification_action = 0x7f0e009a;
         public static final int notification_action_tombstone = 0x7f0e009b;
@@ -173,18 +173,18 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class menu {
+    public static final class menu {
         public static final int example_menu = 0x7f100001;
         public static final int example_menu2 = 0x7f100002;
     }
 
     /* loaded from: classes2.dex */
-    public final class string {
+    public static final class string {
         public static final int status_bar_notification_info_overflow = 0x7f140483;
     }
 
     /* loaded from: classes.dex */
-    public final class style {
+    public static final class style {
         public static final int TextAppearance_Compat_Notification = 0x7f15029e;
         public static final int TextAppearance_Compat_Notification_Info = 0x7f15029f;
         public static final int TextAppearance_Compat_Notification_Line2 = 0x7f1502a1;
@@ -195,7 +195,7 @@ public final class R {
     }
 
     /* loaded from: classes.dex */
-    public final class styleable {
+    public static final class styleable {
         public static final int Capability_queryPatterns = 0x00000000;
         public static final int Capability_shortcutMatchRequired = 0x00000001;
         public static final int ColorStateListItem_alpha = 0x00000003;

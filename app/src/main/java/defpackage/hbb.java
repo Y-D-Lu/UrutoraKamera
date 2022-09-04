@@ -5,7 +5,6 @@ import com.google.googlex.gcam.PostviewParams;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.ExecutionException;
 
 /* renamed from: hbb  reason: default package */
 /* loaded from: classes.dex */
@@ -56,10 +55,16 @@ public final class hbb implements hea {
 
     @Override // defpackage.hea
     public final void a(List list, gox goxVar, gog gogVar, int i, lzv lzvVar, dzu dzuVar) {
-        h(list, goxVar, gogVar, i, lzvVar, dzuVar, null);
+        try {
+            h(list, goxVar, gogVar, i, lzvVar, dzuVar, null);
+        } catch (dma ex) {
+            ex.printStackTrace();
+        } catch (dlw ex) {
+            ex.printStackTrace();
+        }
     }
 
-    public final int b(lmr lmrVar, edd eddVar, boolean z, int i, int i2, int i3) {
+    public final int b(lmr lmrVar, edd eddVar, boolean z, int i, int i2, int i3) throws llv {
         ljf ljfVar;
         String str;
         mad madVar;
@@ -115,7 +120,7 @@ public final class hbb implements hea {
             }
             this.i.f();
             return i4;
-        } catch (InterruptedException e2) {
+        } catch (Exception e2) {
             lmw b4 = lmrVar.b();
             ((oug) ((oug) ((oug) c.b()).h(e2)).G(2287)).A("Completion failure for frame %d @%d of %d, skipping.", Integer.valueOf(i + 1), Long.valueOf(b4 != null ? b4.c : -1L), Integer.valueOf(i2));
             return i;
@@ -140,14 +145,18 @@ public final class hbb implements hea {
             } else if (a.contains(b)) {
                 lmrVar.close();
             } else {
-                i2 = b(lmrVar, eddVar, z, i2, i, 1);
+                try {
+                    i2 = b(lmrVar, eddVar, z, i2, i, 1);
+                } catch (llv ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         this.i.f();
         return i2;
     }
 
-    public final edd d(List list, gog gogVar, int i, lzv lzvVar, dzu dzuVar, boolean z, boolean z2) {
+    public final edd d(List list, gog gogVar, int i, lzv lzvVar, dzu dzuVar, boolean z, boolean z2) throws dlv {
         String str;
         int i2;
         try {
@@ -207,7 +216,7 @@ public final class hbb implements hea {
                 this.m.e(gogVar);
                 this.i.e("pckHdrZsl#startZslShot");
                 return this.a.g(a, gogVar, b, ((dzt) dzuVar).g, lzvVar, i4, i2, !z);
-            } catch (IllegalStateException | InterruptedException | ExecutionException | llv e) {
+            } catch (Exception e) {
                 ((oug) ((oug) ((oug) c.b()).h(e)).G(2292)).o("Unable to start ZSL shot ");
                 this.i.f();
                 return null;
@@ -224,7 +233,7 @@ public final class hbb implements hea {
         }
     }
 
-    public final void f(int i, gog gogVar, lzv lzvVar, edd eddVar, boolean z) {
+    public final void f(int i, gog gogVar, lzv lzvVar, edd eddVar, boolean z) throws dma {
         this.i.e("pckHdrZsl#endPayload");
         if (this.a.y(eddVar)) {
             if (z) {
@@ -264,7 +273,7 @@ public final class hbb implements hea {
         throw new dma(sb2);
     }
 
-    public final void g(List list, gox goxVar, gog gogVar) {
+    public final void g(List list, gox goxVar, gog gogVar) throws dls, dlz {
         lzv lzvVar;
         if (!list.isEmpty()) {
             dzu a = this.g.a();
@@ -283,7 +292,13 @@ public final class hbb implements hea {
                 i++;
             }
             if (lzvVar != null) {
-                h(list, goxVar, gogVar, -1, lzvVar, a, null);
+                try {
+                    h(list, goxVar, gogVar, -1, lzvVar, a, null);
+                } catch (dma ex) {
+                    ex.printStackTrace();
+                } catch (dlw ex) {
+                    ex.printStackTrace();
+                }
                 return;
             } else {
                 i(list);
@@ -293,7 +308,7 @@ public final class hbb implements hea {
         throw new dls("No frames to process found.");
     }
 
-    public final void h(List list, gox goxVar, gog gogVar, int i, lzv lzvVar, dzu dzuVar, edd eddVar) {
+    public final void h(List list, gox goxVar, gog gogVar, int i, lzv lzvVar, dzu dzuVar, edd eddVar) throws dma, dlw {
         goxVar.close();
         list.size();
         boolean z = i < 0;
@@ -314,7 +329,7 @@ public final class hbb implements hea {
                     c(list, eddVar, z, list.size());
                     this.i.f();
                     f(list.size(), gogVar, lzvVar, eddVar, z);
-                } catch (llv e) {
+                } catch (Exception e) {
                     e = e;
                     ((oug) ((oug) ((oug) c.b()).h(e)).G(2299)).o("Error processing HDR+ payload.");
                     if (eddVar != null) {
@@ -326,8 +341,8 @@ public final class hbb implements hea {
                 i(list);
                 this.i.f();
             }
-        } catch (llv e2) {
-            e = e2;
+        } catch (Exception e2) {
+            e2.printStackTrace();
         }
     }
 }

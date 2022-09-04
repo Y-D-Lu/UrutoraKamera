@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Set;
+
 /* renamed from: cge  reason: default package */
 /* loaded from: classes.dex */
 public final /* synthetic */ class cge implements Runnable {
@@ -16,7 +18,7 @@ public final /* synthetic */ class cge implements Runnable {
         switch (this.b) {
             case 0:
                 cgl cglVar = this.a;
-                for (hsq hsqVar : cglVar.D) {
+                for (hsq hsqVar : (Set<hsq>) cglVar.D) {
                     cglVar.z.g(hsqVar.b, null);
                 }
                 return;

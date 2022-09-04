@@ -42,7 +42,7 @@ public final class csy {
         this.a = scheduledExecutorService.scheduleAtFixedRate(new Runnable() { // from class: csx
             @Override // java.lang.Runnable
             public final void run() {
-                ctd.this.b();
+                ctdVar.b();
             }
         }, 0L, 1000L, TimeUnit.MILLISECONDS);
         ((ctd) this.b.mo37get()).a();

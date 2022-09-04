@@ -81,7 +81,7 @@ public final class cmf {
             k.c(a.b.a(new lij() { // from class: cmb
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
-                    lnc lncVar2 = lnc.this;
+                    lnc lncVar2 = lncVar;
                     cju cjuVar = a;
                     lncVar2.h(CaptureRequest.CONTROL_ZOOM_RATIO, (Float) obj);
                     lncVar2.h(CaptureRequest.SCALER_CROP_REGION, ((gsm) cjuVar.s.fA()).b);
@@ -91,7 +91,7 @@ public final class cmf {
         k.c(a.l.a(new lij() { // from class: cmc
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                ckd ckdVar2 = ckd.this;
+                ckd ckdVar2 = ckdVar;
                 lnc lncVar2 = lncVar;
                 Boolean bool = (Boolean) obj;
                 int i = 1;

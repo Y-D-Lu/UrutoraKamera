@@ -16,7 +16,7 @@ public final class hcr implements hcs {
         HashSet hashSet = new HashSet();
         this.c = hashSet;
         HashMap hashMap = new HashMap();
-        for (lqd lqdVar : map.values()) {
+        for (lqd lqdVar : (Set<lqd>) map.values()) {
             lvs C = fvq.C(lqdVar);
             C.getClass();
             hashMap.put(C.a, lqdVar);

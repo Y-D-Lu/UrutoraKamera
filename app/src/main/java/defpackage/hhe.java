@@ -1,7 +1,6 @@
 package defpackage;
 
 import java.util.ArrayList;
-import java.util.EnumMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -28,7 +27,7 @@ public final class hhe implements hhq {
                 flz.LIGHTCYCLE.name();
             } else {
                 flz.LIGHTCYCLE.name();
-                fmfVar.c.put((EnumMap) flz.LIGHTCYCLE, (flz) new fme(hhaVar, new lce(false), oom.n(hhaVar.b().a(new fmd(fmfVar, 1), fmfVar.b), hhaVar.a().a(new fmd(fmfVar, 0), fmfVar.b))));
+                fmfVar.c.put(flz.LIGHTCYCLE, new fme(hhaVar, new lce(false), oom.n(hhaVar.b().a(new fmd(fmfVar, 1), fmfVar.b), hhaVar.a().a(new fmd(fmfVar, 0), fmfVar.b))));
                 fmfVar.a();
             }
         }

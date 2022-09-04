@@ -14,7 +14,7 @@ public final class eao implements lij {
         this.b = ((Integer) ddfVar.a(ddm.j).e(615)).intValue();
     }
 
-    @Override // defpackage.lij
+//    @Override // defpackage.lij
     /* renamed from: b */
     public final void fB(lmr lmrVar) {
         if (lmrVar == null || lmrVar.e()) {
@@ -25,5 +25,10 @@ public final class eao implements lij {
         }
         this.a = lmrVar;
         this.c.postDelayed(new ean(lmrVar, 0), this.b);
+    }
+
+    @Override
+    public void fB(Object obj) {
+        fB((lmr)obj);
     }
 }

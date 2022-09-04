@@ -6,11 +6,11 @@ import java.util.concurrent.Executor;
 /* loaded from: classes.dex */
 public final class imw implements imr {
     public int a = 1;
-    public final Runnable b;
-    public final Runnable c;
-    private final ims d;
-    private final Executor e;
-    private final String f;
+    public Runnable b;
+    public Runnable c;
+    private ims d;
+    private Executor e;
+    private String f;
 
     public imw() {
     }
@@ -39,12 +39,8 @@ public final class imw implements imr {
                 return;
             }
             if (i == 2) {
-                this.e.execute(new Runnable(this) { // from class: imu
-                    public final /* synthetic */ imw a;
-
-                    {
-                        this.a = this;
-                    }
+                this.e.execute(new Runnable() { // from class: imu
+                    public final /* synthetic */ imw a = imw.this;
 
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -63,12 +59,8 @@ public final class imw implements imr {
                     }
                 });
             } else {
-                this.e.execute(new Runnable(this) { // from class: imu
-                    public final /* synthetic */ imw a;
-
-                    {
-                        this.a = this;
-                    }
+                this.e.execute(new Runnable() { // from class: imu
+                    public final /* synthetic */ imw a = imw.this;
 
                     @Override // java.lang.Runnable
                     public final void run() {

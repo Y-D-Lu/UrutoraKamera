@@ -42,7 +42,7 @@ public abstract class hej implements eav, ebn, eby {
         }
         this.c.g("clear");
         if (hashMap != null) {
-            Map.EL.forEach(hashMap, hei.a);
+            hashMap.forEach(hei.a);
             hashMap.clear();
         }
         this.c.f();
@@ -116,7 +116,7 @@ public abstract class hej implements eav, ebn, eby {
     protected final synchronized void j(edd eddVar) {
         HashMap hashMap = (HashMap) this.b.remove(eddVar);
         if (hashMap != null) {
-            Map.EL.forEach(hashMap, hei.b);
+            hashMap.forEach(hei.b);
             hashMap.clear();
         }
     }

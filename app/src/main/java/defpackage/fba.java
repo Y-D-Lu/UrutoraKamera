@@ -33,12 +33,8 @@ public final class fba implements phh {
         }, this.a.e);
         this.a.z.l(true);
         this.a.r.h();
-        this.a.K.c(fwcVar.b().a(new lij(this) { // from class: faz
-            public final /* synthetic */ fba a;
-
-            {
-                this.a = this;
-            }
+        this.a.K.c(fwcVar.b().a(new lij() { // from class: faz
+            public final /* synthetic */ fba a = fba.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj2) {
@@ -80,12 +76,8 @@ public final class fba implements phh {
         lig ligVar = fvxVar.d.a;
         this.a.s.b();
         fwcVar.a.c(this.a.i.a(fwcVar, fwcVar.c, fwcVar.h().b, lcv.g(false), this.a.s.k(dde.f)));
-        this.a.K.c(fwcVar.h().b.a(new lij(this) { // from class: faz
-            public final /* synthetic */ fba a;
-
-            {
-                this.a = this;
-            }
+        this.a.K.c(fwcVar.h().b.a(new lij() { // from class: faz
+            public final /* synthetic */ fba a = fba.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj2) {

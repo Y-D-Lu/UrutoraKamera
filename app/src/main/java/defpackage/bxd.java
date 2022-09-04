@@ -16,7 +16,7 @@ public final class bxd implements lco {
         return this.a.a(new lij() { // from class: bxc
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                lij lijVar2 = lij.this;
+                lij lijVar2 = lijVar;
                 if (obj != null) {
                     lijVar2.fB(obj);
                 }

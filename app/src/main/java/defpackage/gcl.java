@@ -57,8 +57,8 @@ public final class gcl implements gey {
             @Override // java.lang.Runnable
             public final void run() {
                 lwk lwkVar;
-                int a;
-                mad madVar;
+                int a = 0;
+                mad madVar = null;
                 gcl gclVar = gcl.this;
                 lmr lmrVar2 = lmrVar;
                 lis lisVar = j;
@@ -73,7 +73,7 @@ public final class gcl implements gey {
                     hcf a2 = gclVar.e.a(lmrVar2);
                     mad e = a2.e();
                     mad d = a2.d();
-                    lwj lwjVar = d == null ? new lwj(j3) : d;
+                    lwj lwjVar = d == null ? new lwj(j3) : (lwj) d;
                     if (e == null) {
                         gexVar2.b(new RuntimeException("Could not get a raw image from input frame"));
                         return;
@@ -153,39 +153,26 @@ public final class gcl implements gey {
                                             lwkVar.k();
                                         }
                                     }
-                                } catch (InterruptedException e2) {
-                                    e = e2;
-                                    lisVar.e("Couldn't start ZSL capture", e);
-                                    gexVar2.b(e);
-                                    lwkVar.l();
-                                    lwkVar2.l();
-                                } catch (ExecutionException e3) {
-                                    e = e3;
-                                    lisVar.e("Couldn't start ZSL capture", e);
-                                    gexVar2.b(e);
-                                    lwkVar.l();
-                                    lwkVar2.l();
-                                } catch (llv e4) {
-                                    e = e4;
-                                    lisVar.e("Couldn't start ZSL capture", e);
-                                    gexVar2.b(e);
+                                } catch (Exception e2) {
+                                    e2.printStackTrace();
+                                    lisVar.e("Couldn't start ZSL capture", e2);
+                                    gexVar2.b(e2);
                                     lwkVar.l();
                                     lwkVar2.l();
                                 }
                                 lwkVar.l();
                                 lwkVar2.l();
                             } catch (Throwable th2) {
-                                th = th2;
-                                Throwable th3 = th;
+                                th2.printStackTrace();
                                 try {
                                     lwkVar.l();
                                 } catch (Throwable th4) {
                                 }
-                                throw th3;
+                                throw th2;
                             }
-                        } catch (Throwable th5) {
-                            th = th5;
-                            Throwable th6 = th;
+                        } catch (Throwable th3) {
+                            th3.printStackTrace();
+                            Throwable th6 = th3;
                             try {
                                 lwkVar2.l();
                             } catch (Throwable th7) {
@@ -193,10 +180,9 @@ public final class gcl implements gey {
                             throw th6;
                         }
                     } catch (Throwable th8) {
-                        th = th8;
-                        Throwable th62 = th;
+                        th8.printStackTrace();
+                        Throwable th62 = th8;
                         lwkVar2.l();
-                        throw th62;
                     }
                 } catch (InterruptedException e5) {
                     lisVar.d("metadata get interrupted");

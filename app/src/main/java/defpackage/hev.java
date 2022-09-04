@@ -19,13 +19,13 @@ public final class hev implements heu {
             if (c == null) {
                 return false;
             }
-            for (gig gigVar : this.a) {
+            for (gig gigVar : (Set<gig>) this.a) {
                 if (!gigVar.a(c)) {
                     return false;
                 }
             }
             return true;
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             Thread.currentThread().interrupt();
             return false;
         }

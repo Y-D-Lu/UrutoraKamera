@@ -126,7 +126,7 @@ public final class hia implements hic, hil {
             }
             hhz hhzVar = new hhz(hikVar, keySet);
             HashSet<hhx> hashSet = new HashSet(hashMap.keySet().size());
-            for (mad madVar2 : hashMap.keySet()) {
+            for (mad madVar2 : (Set<mad>) hashMap.keySet()) {
                 int intValue = ((Integer) hashMap.get(madVar2)).intValue();
                 synchronized (this.e) {
                     obr.aR(this.e.get(madVar2) == null, "Image is already being processed by another task.");

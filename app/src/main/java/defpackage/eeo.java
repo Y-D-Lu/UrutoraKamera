@@ -83,7 +83,7 @@ public final class eeo implements eey {
                 eer eerVar2 = this.a;
                 eerVar2.h.c.c(eerVar2.d.f().a, dxh.DEBLUR_FUSION);
                 this.a.d.k().b();
-            } catch (IOException e) {
+            } catch (Exception e) {
                 ((oug) ((oug) ((oug) ees.a.c().g(ovl.a, "FalconPostProcImgSaver")).h(e)).G(1102)).q("Couldn't apply special type for %s", j);
             }
         }

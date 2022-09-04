@@ -31,7 +31,7 @@ final class frw implements fpp {
             phtVar.d(new Runnable() { // from class: mju
                 @Override // java.lang.Runnable
                 public final void run() {
-                    mkb mkbVar2 = mkb.this;
+                    mkb mkbVar2 = mkbVar;
                     try {
                         ojc ojcVar = (ojc) plk.ad(phtVar);
                         if (!ojcVar.g()) {

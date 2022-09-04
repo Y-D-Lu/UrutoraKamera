@@ -4,6 +4,10 @@ import android.content.Context;
 import android.database.Cursor;
 
 import java.io.PrintWriter;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -22,10 +26,6 @@ import defpackage.diy;
 import defpackage.diz;
 import defpackage.fw;
 import defpackage.fy;
-import java.time.Duration;
-import java.time.Instant;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 
 /* loaded from: classes.dex */
 public class DbDebugDumper extends dgu {
@@ -275,7 +275,7 @@ public class DbDebugDumper extends dgu {
                 throw th2;
             }
         } catch (Throwable th3) {
-            th = th3;
+            th3.printStackTrace();
             aisVar = a2;
         }
     }

@@ -80,7 +80,7 @@ public final class dpt implements dpx {
             this.a.execute(new Runnable() { // from class: dpn
                 @Override // java.lang.Runnable
                 public final void run() {
-                    pih.this.o(Integer.valueOf(((mrb) mrfVar.c()).b));
+                    f.o(Integer.valueOf(((mrb) mrfVar.c()).b));
                 }
             });
             dpq dpqVar = new dpq(((Integer) f.get(1000L, TimeUnit.MILLISECONDS)).intValue(), mrfVar, j);
@@ -95,7 +95,15 @@ public final class dpt implements dpx {
                     HardwareBuffer hardwareBuffer3 = hardwareBuffer;
                     dps dpsVar = dptVar.c;
                     dpsVar.getClass();
-                    dpsVar.b.get(3000L, TimeUnit.MILLISECONDS);
+                    try {
+                        dpsVar.b.get(3000L, TimeUnit.MILLISECONDS);
+                    } catch (ExecutionException ex) {
+                        ex.printStackTrace();
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    } catch (TimeoutException ex) {
+                        ex.printStackTrace();
+                    }
                     synchronized (dpsVar.d) {
                         hardwareBuffer2 = dpsVar.e;
                     }
@@ -148,7 +156,7 @@ public final class dpt implements dpx {
                 dpsVar.f.a.execute(new Runnable() { // from class: dpr
                     @Override // java.lang.Runnable
                     public final void run() {
-                        dps dpsVar2 = dps.this;
+                        dps dpsVar2 = dpsVar;
                         TextureFrame textureFrame2 = textureFrame;
                         synchronized (dpsVar2.d) {
                             EGLImage eGLImage = new EGLImage(dpsVar2.e);

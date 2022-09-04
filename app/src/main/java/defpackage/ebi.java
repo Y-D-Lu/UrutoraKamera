@@ -262,7 +262,7 @@ public final class ebi implements ebe {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.ebi.G(float, int, gqt, int, boolean, boolean, boolean, ojc, ecb, boolean, boolean):com.google.googlex.gcam.ShotParams");
     }
 
-    private final void H() {
+    private final void H() throws llv {
         if (!this.x.a()) {
             return;
         }
@@ -438,7 +438,11 @@ public final class ebi implements ebe {
     @Override // defpackage.ebe
     public final BurstSpec i(edd eddVar, mad madVar, lzv lzvVar) {
         this.J.b("buildAfBurstSpec()");
-        H();
+        try {
+            H();
+        } catch (llv ex) {
+            ex.printStackTrace();
+        }
         ecc c2 = c(madVar, lzvVar, this.v);
         Gcam gcam = this.k;
         int a = eddVar.a();
@@ -452,7 +456,11 @@ public final class ebi implements ebe {
     public final BurstSpec j(edd eddVar, mad madVar, lzv lzvVar, boolean z, Boolean bool) {
         Float f;
         this.J.b("buildPayloadBurstSpec()");
-        H();
+        try {
+            H();
+        } catch (llv ex) {
+            ex.printStackTrace();
+        }
         this.d.e("convertFrame");
         ecc c2 = c(madVar, lzvVar, this.v);
         this.d.g("setOptions");
@@ -535,7 +543,7 @@ public final class ebi implements ebe {
             lxaVar.b((-5000000) + longValue, longValue2 + 5000000, new lwz() { // from class: ebg
                 @Override // defpackage.lwz
                 public final void a(List list) {
-                    GyroSampleVector gyroSampleVector2 = GyroSampleVector.this;
+                    GyroSampleVector gyroSampleVector2 = gyroSampleVector;
                     lig ligVar = ebi.b;
                     Iterator it = list.iterator();
                     while (it.hasNext()) {

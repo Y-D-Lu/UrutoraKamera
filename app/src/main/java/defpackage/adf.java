@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.system.ErrnoException;
 import android.system.Os;
 
 import java.io.FileDescriptor;
@@ -11,7 +12,12 @@ import java.util.List;
 public final class adf {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static long a(FileDescriptor fileDescriptor, long j, int i) {
-        return Os.lseek(fileDescriptor, 0L, i);
+        try {
+            return Os.lseek(fileDescriptor, 0L, i);
+        } catch (ErrnoException e) {
+            e.printStackTrace();
+        }
+        return 0L;
     }
 
     public static /* synthetic */ int b(int i, int i2) {

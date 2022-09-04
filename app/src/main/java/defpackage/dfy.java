@@ -70,7 +70,7 @@ public final class dfy extends dfk {
             dfjVar.getClass();
         }
         view.getClass();
-        view.setTag(R.id.mediadata_tag_viewtype, Integer.valueOf(bua.VIDEO.ordinal()));
+        view.setTag(com.google.android.apps.camera.bottombar.R.id.mediadata_tag_viewtype, Integer.valueOf(bua.VIDEO.ordinal()));
         dfjVar.c.setVisibility(8);
         l(view);
         dfjVar.a.setContentDescription(this.c.getResources().getString(R.string.video_date_content_description, b.format(this.e.h())));

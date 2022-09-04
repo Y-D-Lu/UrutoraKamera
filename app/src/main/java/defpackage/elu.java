@@ -94,7 +94,7 @@ public final class elu implements pys {
                     H = ope.H(new dys() { // from class: fss
                         @Override // defpackage.dys
                         public final void a(long j, float f, float f2) {
-                            fqi.this.c(j, f, f2);
+                            fqiVar.c(j, f, f2);
                         }
                     });
                 }

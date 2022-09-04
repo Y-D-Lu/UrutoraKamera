@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* renamed from: eon  reason: default package */
@@ -52,7 +53,7 @@ public final class eon {
     }
 
     public final synchronized void b(eom eomVar) {
-        for (hdv hdvVar : eomVar.f) {
+        for (hdv hdvVar : (Set<hdv>) eomVar.f) {
             hdvVar.d();
         }
         eomVar.g.cancel(true);
@@ -124,8 +125,8 @@ public final class eon {
                 GcamModuleJNI.BurstSpec_frame_requests_set(burstSpec2.a, burstSpec2, frameRequestVector2.a, frameRequestVector2);
                 hdv hdvVar3 = new hdv(gogVar2, hdvVar2.c, burstSpec2, hdvVar2.f);
                 hdvVar3.e(i);
-                oom<lmr> subList = ((oom) a2).subList(((Integer) f.j()).intValue(), ((Integer) f.k()).intValue() + 1);
-                for (lmr lmrVar : subList) {
+                oom subList = ((oom) a2).subList(((Integer) f.j()).intValue(), ((Integer) f.k()).intValue() + 1);
+                for (lmr lmrVar : (Set<lmr>) subList) {
                     lmr a3 = lmrVar.a();
                     if (a3 != null) {
                         hdvVar3.c(a3);

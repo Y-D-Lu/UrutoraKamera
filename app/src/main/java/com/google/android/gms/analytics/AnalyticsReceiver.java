@@ -99,7 +99,7 @@ public final class AnalyticsReceiver extends BroadcastReceiver {
                         kutVar2.e = kutVar2.n.schedule(new Runnable() { // from class: kur
                             @Override // java.lang.Runnable
                             public final void run() {
-                                kut kutVar3 = kut.this;
+                                kut kutVar3 = kutVar2;
                                 synchronized (kutVar3.b) {
                                     if (!kutVar3.b()) {
                                         return;

@@ -23,7 +23,7 @@ final class fmw extends mip {
         executor.execute(new Runnable() { // from class: fmv
             @Override // java.lang.Runnable
             public final void run() {
-                fb fbVar2 = fb.this;
+                fb fbVar2 = fbVar;
                 lmr lmrVar2 = lmrVar;
                 fbVar2.accept(lmrVar2);
                 lmrVar2.close();

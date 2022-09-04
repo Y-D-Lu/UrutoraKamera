@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class aeb {
     public aea a;
     private uw b;
-    private final WeakReference c;
+    private WeakReference c;
     private int d;
     private boolean e;
     private boolean f;

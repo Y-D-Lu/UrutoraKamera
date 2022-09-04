@@ -69,7 +69,7 @@ public final /* synthetic */ class ihh implements lht {
                     ihjVar2.f = ihjVar2.e.schedule(new Runnable() { // from class: ihi
                         @Override // java.lang.Runnable
                         public final void run() {
-                            ihj.this.b();
+                            ihjVar2.b();
                         }
                     }, 150L, TimeUnit.MILLISECONDS);
                     return;

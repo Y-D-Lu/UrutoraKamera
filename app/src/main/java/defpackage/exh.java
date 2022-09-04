@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.atomic.AtomicReference;
 
-import java.util.Collection;
-
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: exh  reason: default package */
 /* loaded from: classes.dex */
@@ -94,7 +92,7 @@ public final class exh implements phh {
                     lco j = lcv.j(lcv.b(h.f, h.a, exiVar.U), new oiu() { // from class: ewo
                         @Override // defpackage.oiu
                         public final Object a(Object obj2) {
-                            exi exiVar2 = exi.this;
+                            exi exiVar2 = exiVar;
                             List list = (List) obj2;
                             list.getClass();
                             boolean z2 = true;
@@ -115,7 +113,7 @@ public final class exh implements phh {
                     mip.bZ(exiVar.I, new lht() { // from class: ewv
                         @Override // defpackage.lht
                         public final void a(Object obj2) {
-                            exi exiVar2 = exi.this;
+                            exi exiVar2 = exiVar;
                             bro broVar = (bro) obj2;
                             if (!lapVar3.a()) {
                                 broVar.getClass();

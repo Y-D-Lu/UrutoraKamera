@@ -136,12 +136,8 @@ public final class clx implements clg {
                 if (this.o.a(ckdVar)) {
                     lmv lmvVar = this.x;
                     lmvVar.getClass();
-                    lmvVar.k(new lmu(this) { // from class: clr
-                        public final /* synthetic */ clx a;
-
-                        {
-                            this.a = this;
-                        }
+                    lmvVar.k(new lmu() { // from class: clr
+                        public final /* synthetic */ clx a = clx.this;
 
                         @Override // defpackage.lmu
                         public final void a(lrr lrrVar) {
@@ -223,12 +219,8 @@ public final class clx implements clg {
                 if (ckdVar.D && this.e.h(ckdVar)) {
                     lmv lmvVar2 = this.x;
                     lmvVar2.getClass();
-                    lmvVar2.k(new lmu(this) { // from class: clr
-                        public final /* synthetic */ clx a;
-
-                        {
-                            this.a = this;
-                        }
+                    lmvVar2.k(new lmu() { // from class: clr
+                        public final /* synthetic */ clx a = clx.this;
 
                         @Override // defpackage.lmu
                         public final void a(lrr lrrVar) {

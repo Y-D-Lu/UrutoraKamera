@@ -1,10 +1,15 @@
 package com.google.vr.ndk.base;
 
+import android.content.Context;
 import android.view.View;
 import android.widget.FrameLayout;
 
 /* loaded from: classes.dex */
 public class GvrLayout extends FrameLayout {
+    public GvrLayout(Context context) {
+        super(context);
+    }
+
     public boolean enableAsyncReprojectionProtected() {
         throw null;
     }
