@@ -137,9 +137,17 @@ public final class qno {
             Throwable th2 = ((qpy) hj).b;
             qlv r1 = (qlv) qvoVar.f;
             if (qql.b && (r1 instanceof qlv)) {
-                throw qvq.a(th2, r1);
+                try {
+                    throw qvq.a(th2, r1);
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
             }
-            throw th2;
+            try {
+                throw th2;
+            } catch (Throwable e) {
+                e.printStackTrace();
+            }
         }
         return qlp.COROUTINE_SUSPENDED;
     }
@@ -373,9 +381,10 @@ public final class qno {
         int i2 = 0;
         String str = strArr[0];
         if (str.length() == 0) {
-            qop<qoa> qopVar = new qop(q(charSequence, strArr, i));
+            qop qopVar = new qop(q(charSequence, strArr, i));
             ArrayList arrayList = new ArrayList(qmd.B(qopVar));
-            for (qoa qoaVar : qopVar) {
+            for (Object qoaObj : qopVar) {
+                qoa qoaVar = (qoa) qoaObj;
                 arrayList.add(l(charSequence, qoaVar));
             }
             return arrayList;

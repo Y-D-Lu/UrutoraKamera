@@ -6,6 +6,7 @@ import java.util.concurrent.Callable;
 /* loaded from: classes2.dex */
 public final class qhh extends qbu {
     final Callable a;
+    private Throwable th;
 
     public qhh(Callable callable) {
         this.a = callable;
@@ -16,7 +17,7 @@ public final class qhh extends qbu {
         try {
             th = (Throwable) ((qdb) this.a).a;
         } catch (Throwable th) {
-            th = th;
+            this.th = th;
             qmd.Y(th);
         }
         qcs.h(th, qbvVar);

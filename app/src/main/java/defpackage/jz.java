@@ -30,7 +30,7 @@ public final class jz extends ActionMode {
     /* JADX WARN: Type inference failed for: r2v1, types: [android.view.Menu, er] */
     @Override // android.view.ActionMode
     public final Menu getMenu() {
-        return new ln(this.a, this.b.a());
+        return new ln(this.a, (er) this.b.a());
     }
 
     @Override // android.view.ActionMode

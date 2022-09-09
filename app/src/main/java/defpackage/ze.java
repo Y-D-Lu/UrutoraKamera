@@ -61,8 +61,8 @@ public final class ze extends zg {
 
     @Override // defpackage.zg, defpackage.yv
     public final void f() {
-        yy yyVar;
-        yy yyVar2;
+        yy yyVar = null;
+        yy yyVar2 = null;
         int i;
         int i2 = this.l;
         int i3 = i2 - 1;

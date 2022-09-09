@@ -97,12 +97,8 @@ public final class jzf implements jzr, lie {
         if (this.b.g()) {
             hcl hclVar = (hcl) this.b.c();
             hclVar.h(this.p);
-            this.p.i().c(hclVar.a().a(new lij(this) { // from class: jzb
-                public final /* synthetic */ jzf a;
-
-                {
-                    this.a = this;
-                }
+            this.p.i().c(hclVar.a().a(new lij() { // from class: jzb
+                public final /* synthetic */ jzf a = jzf.this;
 
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
@@ -143,12 +139,8 @@ public final class jzf implements jzr, lie {
                 }
             }, pgr.a));
         }
-        this.p.i().c(this.k.a(new lij(this) { // from class: jzb
-            public final /* synthetic */ jzf a;
-
-            {
-                this.a = this;
-            }
+        this.p.i().c(this.k.a(new lij() { // from class: jzb
+            public final /* synthetic */ jzf a = jzf.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -188,12 +180,8 @@ public final class jzf implements jzr, lie {
                 }
             }
         }, pgr.a));
-        this.p.i().c(this.h.a(new lij(this) { // from class: jzb
-            public final /* synthetic */ jzf a;
-
-            {
-                this.a = this;
-            }
+        this.p.i().c(this.h.a(new lij() { // from class: jzb
+            public final /* synthetic */ jzf a = jzf.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -300,12 +288,8 @@ public final class jzf implements jzr, lie {
 
     public final void k(boolean z) {
         if (z) {
-            this.d.animate().setStartDelay(0L).alpha(1.0f).withStartAction(new Runnable(this) { // from class: jzc
-                public final /* synthetic */ jzf a;
-
-                {
-                    this.a = this;
-                }
+            this.d.animate().setStartDelay(0L).alpha(1.0f).withStartAction(new Runnable() { // from class: jzc
+                public final /* synthetic */ jzf a = jzf.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -320,12 +304,8 @@ public final class jzf implements jzr, lie {
                 }
             });
         } else {
-            this.d.animate().setStartDelay(0L).alpha(DisplayHelper.DENSITY).withEndAction(new Runnable(this) { // from class: jzc
-                public final /* synthetic */ jzf a;
-
-                {
-                    this.a = this;
-                }
+            this.d.animate().setStartDelay(0L).alpha(DisplayHelper.DENSITY).withEndAction(new Runnable() { // from class: jzc
+                public final /* synthetic */ jzf a = jzf.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {

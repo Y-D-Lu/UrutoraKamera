@@ -28,8 +28,8 @@ public final class td extends View {
     public float f;
     public float g;
     private final TextPaint h;
-    private final float i;
-    private final float j;
+    private float i = 0;
+    private float j = 0;
     private int k;
     private int l;
     private float m;

@@ -35,7 +35,7 @@ public final class pwu implements Runnable {
                     }
                     Log.e("DaydreamApi", "There is no VR homescreen installed.");
                     return;
-                } catch (RemoteException e) {
+                } catch (Exception e) {
                     String valueOf = String.valueOf(e);
                     StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 47);
                     sb.append("RemoteException while launching VR homescreen: ");

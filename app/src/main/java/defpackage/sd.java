@@ -15,10 +15,9 @@ public final class sd {
         try {
             Method declaredMethod = View.class.getDeclaredMethod("computeFitSystemWindows", Rect.class, Rect.class);
             a = declaredMethod;
-            if (declaredMethod.isAccessible()) {
-                return;
+            if (!declaredMethod.isAccessible()) {
+                a.setAccessible(true);
             }
-            a.setAccessible(true);
         } catch (NoSuchMethodException e) {
         }
     }

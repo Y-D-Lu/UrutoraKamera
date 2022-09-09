@@ -308,7 +308,11 @@ public class qro implements qrg, qpu, qru {
     }
 
     public void e(Throwable th) {
-        throw th;
+        try {
+            throw th;
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.qln

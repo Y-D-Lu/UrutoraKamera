@@ -37,13 +37,16 @@ public final class qme {
                 newInstance.getClass();
                 try {
                     qmd qmdVar = (qmd) newInstance;
-                    return;
                 } catch (ClassCastException e3) {
                     ClassLoader classLoader = newInstance.getClass().getClassLoader();
                     ClassLoader classLoader2 = qmd.class.getClassLoader();
                     Throwable initCause = new ClassCastException("Instance classloader: " + classLoader + ", base type classloader: " + classLoader2).initCause(e3);
                     initCause.getClass();
-                    throw initCause;
+                    try {
+                        throw initCause;
+                    } catch (Throwable e) {
+                        e.printStackTrace();
+                    }
                 }
             } catch (ClassNotFoundException e4) {
                 try {
@@ -51,16 +54,27 @@ public final class qme {
                     newInstance2.getClass();
                     try {
                         qmd qmdVar2 = (qmd) newInstance2;
-                        return;
                     } catch (ClassCastException e5) {
                         ClassLoader classLoader3 = newInstance2.getClass().getClassLoader();
                         ClassLoader classLoader4 = qmd.class.getClassLoader();
                         Throwable initCause2 = new ClassCastException("Instance classloader: " + classLoader3 + ", base type classloader: " + classLoader4).initCause(e5);
                         initCause2.getClass();
-                        throw initCause2;
+                        try {
+                            throw initCause2;
+                        } catch (Throwable e) {
+                            e.printStackTrace();
+                        }
                     }
                 } catch (ClassNotFoundException e6) {
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
                 }
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
             }
         }
         if (i >= 65543) {
@@ -74,7 +88,11 @@ public final class qme {
                     ClassLoader classLoader6 = qmd.class.getClassLoader();
                     Throwable initCause3 = new ClassCastException("Instance classloader: " + classLoader5 + ", base type classloader: " + classLoader6).initCause(e7);
                     initCause3.getClass();
-                    throw initCause3;
+                    try {
+                        throw initCause3;
+                    } catch (Throwable e) {
+                        e.printStackTrace();
+                    }
                 }
             } catch (ClassNotFoundException e8) {
                 try {
@@ -87,10 +105,22 @@ public final class qme {
                         ClassLoader classLoader8 = qmd.class.getClassLoader();
                         Throwable initCause4 = new ClassCastException("Instance classloader: " + classLoader7 + ", base type classloader: " + classLoader8).initCause(e9);
                         initCause4.getClass();
-                        throw initCause4;
+                        try {
+                            throw initCause4;
+                        } catch (Throwable e) {
+                            e.printStackTrace();
+                        }
                     }
                 } catch (ClassNotFoundException e10) {
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
                 }
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
             }
         }
     }

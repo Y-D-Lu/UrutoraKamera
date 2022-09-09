@@ -27,6 +27,6 @@ public final class edx implements Runnable {
 
     @Override // java.lang.Runnable
     public void run() {
-        new Object[1][0] = this;
+        //new Object[1][0] = this;
     }
 }

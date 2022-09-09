@@ -80,10 +80,10 @@ public final class qiy extends AtomicReferenceArray implements Runnable, Callabl
 
     @Override // java.lang.Runnable
     public final void run() {
-        Object obj;
-        Object obj2;
-        Object obj3;
-        boolean compareAndSet;
+        Object obj = null;
+        Object obj2 = null;
+        Object obj3 = null;
+        boolean compareAndSet = false;
         Object obj4;
         Object obj5;
         lazySet(2, Thread.currentThread());

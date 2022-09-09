@@ -55,8 +55,7 @@ public final class y extends dgg {
                     sb.append((String) objArr4[1]);
                 }
                 xVar = x.b(sb.toString());
-            } catch (ParseException e) {
-            } catch (MissingResourceException e2) {
+            } catch (Exception e) {
             }
             synchronized (this.e) {
                 if (this.e.containsKey(str)) {

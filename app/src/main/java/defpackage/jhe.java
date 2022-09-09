@@ -155,7 +155,7 @@ public final class jhe implements pys {
                 return new iho() { // from class: jbi
                     @Override // java.lang.Runnable
                     public final void run() {
-                        enl.f(lar.this, mo37get, jbhVar);
+                        enl.f(larVar2, mo37get, jbhVar);
                     }
                 };
             case 2:
@@ -168,7 +168,7 @@ public final class jhe implements pys {
                 Object H = !((ddf) this.b.mo37get()).k(ddo.c) ? orx.a : ope.H(jwv.a(new jwu() { // from class: jnq
                     @Override // defpackage.jwu
                     public final jws a(jww jwwVar) {
-                        pyn pynVar = pyn.this;
+                        pyn pynVar = a;
                         return new jno(jwwVar.b(), (jnn) pynVar.get(), ljfVar);
                     }
                 }, ((jnn) a.get()).a, jwt.BLUR));

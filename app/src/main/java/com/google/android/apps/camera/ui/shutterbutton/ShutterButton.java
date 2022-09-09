@@ -24,6 +24,7 @@ import org.codeaurora.snapcam.R;
 
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.Consumer;
 
 import defpackage.adt;
 import defpackage.hti;
@@ -53,7 +54,7 @@ import defpackage.ojz;
 import defpackage.ope;
 import defpackage.oug;
 import defpackage.ouj;
-import java.util.function.Consumer;
+import defpackage.pub;
 
 /* loaded from: classes.dex */
 public class ShutterButton extends mw {
@@ -78,7 +79,7 @@ public class ShutterButton extends mw {
     private boolean blockClickForAnimation;
     private int buttonCenterX;
     private int buttonCenterY;
-    private RectF buttonRect;
+    public RectF buttonRect;
     private int circleAnimationIndex;
     boolean clickEnabled;
     private final lcw clickEnabledObservable;
@@ -102,15 +103,15 @@ public class ShutterButton extends mw {
     private final AtomicBoolean isAccessibleShot;
     private boolean isCircleProgressVisible;
     private boolean isCircleWaitingVisible;
-    private final AtomicBoolean isLongPressInProgress;
+    public final AtomicBoolean isLongPressInProgress;
     private boolean isMaterialNextEnabled;
     private boolean isP20NewUIEnabled;
     private boolean isP20NewUIUpdated;
     private boolean isVideoButtonAnimating;
     private boolean isZoomLockEnabled;
-    private jli listener;
+    public jli listener;
     private jka longPressMotionListener;
-    private MotionEvent longPressStartMotionEvent;
+    public MotionEvent longPressStartMotionEvent;
     private final AccessibilityNodeInfo.AccessibilityAction longShotEndAccessibilityAction;
     private final AccessibilityNodeInfo.AccessibilityAction longShotStartAccessibilityAction;
     private Paint mainInnerCircleButtonPaint;

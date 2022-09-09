@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: qra  reason: default package */
 /* loaded from: classes2.dex */
 public final class qra implements qrb {
-    public final qrr a;
+    public qrr a;
 
     @Override // defpackage.qrb
     public final qrr gZ() {

@@ -6,6 +6,6 @@ public final class qse extends qlc {
     public static final qli a = new qli();
 
     public qse() {
-        throw null;
+        super(a);
     }
 }

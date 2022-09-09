@@ -45,7 +45,7 @@ public final class jpi implements jqn {
         bqgVar.i().c(new lie() { // from class: dag
             @Override // defpackage.lie, java.lang.AutoCloseable
             public final void close() {
-                gvbVar.h(dah.this);
+                gvbVar.h(dahVar);
             }
         });
         if (dahVar.d.g()) {

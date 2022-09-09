@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: qtn  reason: default package */
 /* loaded from: classes2.dex */
 public final class qtn implements qtr {
-    private final qmy a;
+    private qmy a;
 
     public qtn() {
     }

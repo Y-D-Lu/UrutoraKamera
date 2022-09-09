@@ -8,6 +8,8 @@ import android.os.IBinder;
 import com.google.vr.vrcore.base.api.VrCoreUtils;
 
 import java.io.Closeable;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -51,7 +53,7 @@ public final class qmd {
     private static Context w;
 
     public static void A(Collection collection, Iterable iterable) {
-        collection.addAll(iterable);
+        collection.addAll((Collection) iterable);
     }
 
     public static int B(Iterable iterable) {
@@ -66,7 +68,11 @@ public final class qmd {
     /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.CharSequence, java.lang.Object] */
     public static void C(Iterable iterable, Appendable appendable, CharSequence charSequence, CharSequence charSequence2, CharSequence charSequence3, int i2, CharSequence charSequence4, qmu qmuVar) {
         charSequence2.getClass();
-        appendable.append(charSequence2);
+        try {
+            appendable.append(charSequence2);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         Iterator it = iterable.iterator();
         int i3 = 0;
         while (true) {
@@ -76,25 +82,53 @@ public final class qmd {
             Object next = it.next();
             i3++;
             if (i3 > 1) {
-                appendable.append(charSequence);
+                try {
+                    appendable.append(charSequence);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
             if (i2 >= 0 && i3 > 0) {
                 i2 = 0;
                 break;
             } else if (qmuVar != null) {
-                appendable.append((CharSequence) qmuVar.a(next));
+                try {
+                    appendable.append((CharSequence) qmuVar.a(next));
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             } else if (next == null || (next instanceof CharSequence)) {
-                appendable.append((CharSequence) next);
+                try {
+                    appendable.append((CharSequence) next);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             } else if (next instanceof Character) {
-                appendable.append(((Character) next).charValue());
+                try {
+                    appendable.append(((Character) next).charValue());
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             } else {
-                appendable.append(String.valueOf(next));
+                try {
+                    appendable.append(String.valueOf(next));
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         if (i2 >= 0 && i3 > 0) {
-            appendable.append(charSequence4);
+            try {
+                appendable.append(charSequence4);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
-        appendable.append(charSequence3);
+        try {
+            appendable.append(charSequence3);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public static /* synthetic */ String D(Iterable iterable, CharSequence charSequence, CharSequence charSequence2, CharSequence charSequence3, qmu qmuVar, int i2) {
@@ -102,8 +136,8 @@ public final class qmd {
             charSequence = ", ";
         }
         CharSequence charSequence4 = charSequence;
-        String str = (i2 & 2) != 0 ? "" : charSequence2;
-        String str2 = (i2 & 4) != 0 ? "" : charSequence3;
+        String str = (i2 & 2) != 0 ? "" : (String) charSequence2;
+        String str2 = (i2 & 4) != 0 ? "" : (String) charSequence3;
         int i3 = (i2 & 8) != 0 ? -1 : 0;
         String str3 = (i2 & 16) != 0 ? "..." : null;
         qmu qmuVar2 = (i2 & 32) != 0 ? null : qmuVar;
@@ -179,7 +213,11 @@ public final class qmd {
         if (!(obj instanceof qkm)) {
             return;
         }
-        throw ((qkm) obj).a;
+        try {
+            throw ((qkm) obj).a;
+        } catch (Throwable ex) {
+            ex.printStackTrace();
+        }
     }
 
     public static final qkj N(qmj qmjVar) {
@@ -198,7 +236,13 @@ public final class qmd {
             if (method == null) {
                 return;
             }
-            method.invoke(th, th2);
+            try {
+                method.invoke(th, th2);
+            } catch (IllegalAccessException ex) {
+                ex.printStackTrace();
+            } catch (InvocationTargetException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -287,7 +331,11 @@ public final class qmd {
 
     public static final void a(Closeable closeable, Throwable th) {
         if (th == null) {
-            closeable.close();
+            try {
+                closeable.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             return;
         }
         try {
@@ -355,13 +403,21 @@ public final class qmd {
         if (w == null) {
             int vrCoreClientApiVersion = VrCoreUtils.getVrCoreClientApiVersion(context);
             if (vrCoreClientApiVersion < 9) {
-                throw new pxj(4);
+                try {
+                    throw new pxj(4);
+                } catch (pxj ex) {
+                    ex.printStackTrace();
+                }
             }
             try {
                 w = context.createPackageContext("com.google.vr.vrcore", 3);
                 t = vrCoreClientApiVersion;
             } catch (PackageManager.NameNotFoundException e2) {
-                throw new pxj(1);
+                try {
+                    throw new pxj(1);
+                } catch (pxj ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         return w;
@@ -443,7 +499,7 @@ public final class qmd {
         if (obj instanceof qpy) {
             Throwable th = ((qpy) obj).b;
             if (qql.b) {
-                th = qvq.a(th, qlhVar);
+                th = qvq.a(th, (qlv) qlhVar);
             }
             return L(th);
         }
@@ -592,7 +648,11 @@ public final class qmd {
                         case 2:
                             b2 = qrp.b(qqnVar.v());
                             if (b2 instanceof qpy) {
-                                throw ((qpy) b2).b;
+                                try {
+                                    throw ((qpy) b2).b;
+                                } catch (Throwable ex) {
+                                    ex.printStackTrace();
+                                }
                             }
                             break;
                     }
@@ -653,7 +713,11 @@ public final class qmd {
                 Object b2 = qrp.b(qpjVar.v());
                 qpy qpyVar = b2 instanceof qpy ? (qpy) b2 : null;
                 if (qpyVar != null) {
-                    throw qpyVar.b;
+                    try {
+                        throw qpyVar.b;
+                    } catch (Throwable ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 return b2;
             }
@@ -661,7 +725,12 @@ public final class qmd {
         }
         InterruptedException interruptedException = new InterruptedException();
         qpjVar.E(interruptedException);
-        throw interruptedException;
+        try {
+            throw interruptedException;
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     public static qln n(qln qlnVar, qln qlnVar2) {
@@ -683,17 +752,17 @@ public final class qmd {
 
     /* JADX WARN: Multi-variable type inference failed */
     public static Map p(Iterable iterable) {
-        switch (iterable.size()) {
+        switch (((Collection) iterable).size()) {
             case 0:
                 return qky.a;
             case 1:
-                qkl qklVar = (qkl) iterable.get(0);
+                qkl qklVar = (qkl) ((List)iterable).get(0);
                 qklVar.getClass();
                 Map singletonMap = Collections.singletonMap(qklVar.a, qklVar.b);
                 singletonMap.getClass();
                 return singletonMap;
             default:
-                LinkedHashMap linkedHashMap = new LinkedHashMap(o(iterable.size()));
+                LinkedHashMap linkedHashMap = new LinkedHashMap(o(((Collection) iterable).size()));
                 Iterator it = iterable.iterator();
                 while (it.hasNext()) {
                     qkl qklVar2 = (qkl) it.next();
@@ -733,22 +802,22 @@ public final class qmd {
 
     /* JADX WARN: Multi-variable type inference failed */
     public static List v(Collection collection, Iterable iterable) {
-        ArrayList arrayList = new ArrayList(collection.size() + iterable.size());
+        ArrayList arrayList = new ArrayList(collection.size() + ((Collection) iterable).size());
         arrayList.addAll(collection);
-        arrayList.addAll(iterable);
+        arrayList.addAll((Collection) iterable);
         return arrayList;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public static List w(Iterable iterable) {
         iterable.getClass();
-        switch (iterable.size()) {
+        switch (((Collection) iterable).size()) {
             case 0:
                 return qkx.a;
             case 1:
                 return q(iterable instanceof List ? ((List) iterable).get(0) : iterable.iterator().next());
             default:
-                return x(iterable);
+                return x((Collection) iterable);
         }
     }
 
@@ -759,15 +828,15 @@ public final class qmd {
 
     /* JADX WARN: Multi-variable type inference failed */
     public static Set y(Iterable iterable) {
-        switch (iterable.size()) {
+        switch (((Collection) iterable).size()) {
             case 0:
                 return qkz.a;
             case 1:
-                Set singleton = Collections.singleton(iterable.get(0));
+                Set singleton = Collections.singleton(((List) iterable).get(0));
                 singleton.getClass();
                 return singleton;
             default:
-                LinkedHashSet linkedHashSet = new LinkedHashSet(o(iterable.size()));
+                LinkedHashSet linkedHashSet = new LinkedHashSet(o(((Collection) iterable).size()));
                 for (Object obj : iterable) {
                     linkedHashSet.add(obj);
                 }

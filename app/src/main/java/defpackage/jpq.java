@@ -54,12 +54,8 @@ public final class jpq implements jqn, fik, fig {
         MainActivityLayout mainActivityLayout = (MainActivityLayout) ((jnr) this.k.mo37get()).c.c(R.id.activity_root_view);
         mainActivityLayout.h = evCompView;
         mainActivityLayout.k(mainActivityLayout.d().h);
-        this.m.i().c(this.p.c.a(new lij(this) { // from class: jpp
-            public final /* synthetic */ jpq a;
-
-            {
-                this.a = this;
-            }
+        this.m.i().c(this.p.c.a(new lij() { // from class: jpp
+            public final /* synthetic */ jpq a = jpq.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -121,12 +117,8 @@ public final class jpq implements jqn, fik, fig {
                 }
             }
         }, pgr.a));
-        this.m.i().c(this.a.e.a(new lij(this) { // from class: jpp
-            public final /* synthetic */ jpq a;
-
-            {
-                this.a = this;
-            }
+        this.m.i().c(this.a.e.a(new lij() { // from class: jpp
+            public final /* synthetic */ jpq a = jpq.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -188,12 +180,8 @@ public final class jpq implements jqn, fik, fig {
                 }
             }
         }, this.e));
-        this.m.i().c(this.p.a.a(new lij(this) { // from class: jpp
-            public final /* synthetic */ jpq a;
-
-            {
-                this.a = this;
-            }
+        this.m.i().c(this.p.a.a(new lij() { // from class: jpp
+            public final /* synthetic */ jpq a = jpq.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {
@@ -255,12 +243,8 @@ public final class jpq implements jqn, fik, fig {
                 }
             }
         }, pgr.a));
-        this.m.i().c(this.f.a(new lij(this) { // from class: jpp
-            public final /* synthetic */ jpq a;
-
-            {
-                this.a = this;
-            }
+        this.m.i().c(this.f.a(new lij() { // from class: jpp
+            public final /* synthetic */ jpq a = jpq.this;
 
             @Override // defpackage.lij
             public final void fB(Object obj) {

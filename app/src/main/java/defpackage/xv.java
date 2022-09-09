@@ -3,6 +3,7 @@ package defpackage;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /* renamed from: xv  reason: default package */
 /* loaded from: classes2.dex */
@@ -41,12 +42,24 @@ public final class xv implements pht {
 
     @Override // java.util.concurrent.Future
     public final Object get() {
-        return this.b.get();
+        try {
+            return this.b.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.Future
     public final Object get(long j, TimeUnit timeUnit) {
-        return this.b.get(j, timeUnit);
+        try {
+            return this.b.get(j, timeUnit);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.Future

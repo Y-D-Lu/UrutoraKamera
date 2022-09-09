@@ -94,7 +94,7 @@ public final class pqv extends pnp implements RandomAccess {
 
     @Override // defpackage.pnp, java.util.AbstractList, java.util.List
     public final Object remove(int i) {
-        int i2;
+        int i2 = 0;
         gN();
         f(i);
         Object[] objArr = this.c;

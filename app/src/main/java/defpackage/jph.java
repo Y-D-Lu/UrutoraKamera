@@ -22,7 +22,7 @@ public final class jph implements jqn {
         caeVar.e.i().c(caeVar.a.a(new lij() { // from class: cad
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                cae caeVar2 = cae.this;
+                cae caeVar2 = caeVar;
                 Float f = (Float) obj;
                 if (caeVar2.d) {
                     caeVar2.c.a(f.floatValue());

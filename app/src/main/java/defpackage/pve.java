@@ -1,18 +1,23 @@
 package defpackage;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /* renamed from: pve  reason: default package */
 /* loaded from: classes2.dex */
 public final class pve implements pvd {
-    private final RandomAccessFile a;
+    private RandomAccessFile a;
     private long b = 0;
     private long c = 0;
 
     public pve(File file) {
-        this.a = new RandomAccessFile(file, "r");
+        try {
+            this.a = new RandomAccessFile(file, "r");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.pvd
@@ -21,10 +26,19 @@ public final class pve implements pvd {
         if (i2 == 0) {
             return 0;
         }
-        if (this.c != this.a.getFilePointer()) {
-            this.a.seek(this.c);
+        try {
+            if (this.c != this.a.getFilePointer()) {
+                this.a.seek(this.c);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        int read = this.a.read(bArr, i, i2);
+        int read = 0;
+        try {
+            read = this.a.read(bArr, i, i2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read == -1) {
             return 0;
         }
@@ -44,7 +58,11 @@ public final class pve implements pvd {
 
     @Override // defpackage.pvd, java.io.Closeable, java.lang.AutoCloseable
     public final synchronized void close() {
-        this.a.close();
+        try {
+            this.a.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.pvd
@@ -70,7 +88,12 @@ public final class pve implements pvd {
 
     @Override // defpackage.pvd
     public final synchronized boolean g() {
-        return this.c < this.a.length();
+        try {
+            return this.c < this.a.length();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override // defpackage.pvd
@@ -79,8 +102,17 @@ public final class pve implements pvd {
         if (j == 0) {
             return;
         }
-        long min = Math.min(this.c + j, this.a.length());
-        this.a.seek(min);
+        long min = 0;
+        try {
+            min = Math.min(this.c + j, this.a.length());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            this.a.seek(min);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.c = min;
     }
 }

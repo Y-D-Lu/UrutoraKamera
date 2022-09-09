@@ -89,12 +89,8 @@ public final class jlz implements jmd, jma, jmb, jmc {
         jluVar.a.s = this.v;
         jluVar.a.q = this.c;
         jluVar.a.g = this.f;
-        Runnable runnable = new Runnable(this) { // from class: jlx
-            public final /* synthetic */ jlz a;
-
-            {
-                this.a = this;
-            }
+        Runnable runnable = new Runnable() { // from class: jlx
+            public final /* synthetic */ jlz a = jlz.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -130,7 +126,7 @@ public final class jlz implements jmd, jma, jmb, jmc {
                 jmgVar.f = new lie() { // from class: jme
                     @Override // defpackage.lie, java.lang.AutoCloseable
                     public final void close() {
-                        jmg jmgVar2 = jmg.this;
+                        jmg jmgVar2 = jmgVar;
                         ViewTreeObserver viewTreeObserver2 = viewTreeObserver;
                         if (viewTreeObserver2.isAlive()) {
                             viewTreeObserver2.removeOnGlobalLayoutListener(jmgVar2);
@@ -139,12 +135,8 @@ public final class jlz implements jmd, jma, jmb, jmc {
                 };
             }
         }
-        jmgVar.c.add(new Runnable(this) { // from class: jlx
-            public final /* synthetic */ jlz a;
-
-            {
-                this.a = this;
-            }
+        jmgVar.c.add(new Runnable() { // from class: jlx
+            public final /* synthetic */ jlz a = jlz.this;
 
             @Override // java.lang.Runnable
             public final void run() {
@@ -175,12 +167,8 @@ public final class jlz implements jmd, jma, jmb, jmc {
                 b(jluVar);
             }
         } else {
-            jmgVar.b.add(new Runnable(this) { // from class: jlx
-                public final /* synthetic */ jlz a;
-
-                {
-                    this.a = this;
-                }
+            jmgVar.b.add(new Runnable() { // from class: jlx
+                public final /* synthetic */ jlz a = jlz.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -218,8 +206,8 @@ public final class jlz implements jmd, jma, jmb, jmc {
     public final void b(jlu jluVar) {
         synchronized (this.l) {
             if (!this.k) {
-                for (Supplier supplier : this.q) {
-                    if (!((Boolean) supplier.mo291get()).booleanValue()) {
+                for (Supplier supplier : (List<Supplier>) this.q) {
+                    if (!((Boolean) supplier.get()).booleanValue()) {
                     }
                 }
                 this.i.d(jluVar);

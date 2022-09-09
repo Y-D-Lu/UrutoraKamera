@@ -167,7 +167,7 @@ public final class jmn extends ViewGroup implements AutoCloseable {
         this.i = null;
         this.k = null;
         setVisibility(8);
-        for (Runnable runnable : this.u) {
+        for (Runnable runnable : (List<Runnable>) this.u) {
             runnable.run();
         }
         this.u.clear();

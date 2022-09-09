@@ -12,8 +12,8 @@ import java.util.concurrent.ConcurrentHashMap;
 /* renamed from: qja  reason: default package */
 /* loaded from: classes2.dex */
 public final class qja {
-    public static final boolean a;
-    public static final int b;
+    public static boolean a;
+    public static int b;
     static final AtomicReference c = new AtomicReference();
     public static final Map d = new ConcurrentHashMap();
 
@@ -91,7 +91,7 @@ public final class qja {
         L80:
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.qja.<clinit>():void");
+        //throw new UnsupportedOperationException("Method not decompiled: defpackage.qja.<clinit>():void");
     }
 
     public static ScheduledExecutorService a(ThreadFactory threadFactory) {

@@ -8,6 +8,10 @@ import android.view.SurfaceHolder;
 /* renamed from: tq  reason: default package */
 /* loaded from: classes2.dex */
 public final class tq extends WallpaperService.Engine {
+    public tq(WallpaperService wps) {
+        wps.super();
+    }
+
     public final boolean isInAmbientMode() {
         throw null;
     }

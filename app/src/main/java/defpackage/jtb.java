@@ -1,7 +1,6 @@
 package defpackage;
 
 import android.app.Activity;
-import android.content.IntentSender;
 
 /* renamed from: jtb  reason: default package */
 /* loaded from: classes2.dex */
@@ -39,7 +38,7 @@ public final class jtb implements jsw, fik, fhw, fib {
         this.d = null;
         this.c.e();
         off a2 = this.b.a();
-        jta jtaVar = new jta(this, null);
+        jta jtaVar = new jta(this);
         a2.b.a(new ofd(ofl.a, jtaVar, null));
         a2.a();
         a2.b.a(new ofb(ofl.a));
@@ -69,7 +68,7 @@ public final class jtb implements jsw, fik, fhw, fib {
             odr odrVar2 = this.d;
             odrVar2.getClass();
             odsVar.e(odrVar2, this.e);
-        } catch (IntentSender.SendIntentException e) {
+        } catch (Exception e) {
             ((oug) ((oug) ((oug) a.c()).h(e)).G((char) 3509)).o("Failed to start update flow");
             this.c.y(2, 1);
         }

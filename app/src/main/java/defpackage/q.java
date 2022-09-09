@@ -86,11 +86,19 @@ public final class q extends Number implements Comparable {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        throw new NotSerializableException();
+        try {
+            throw new NotSerializableException();
+        } catch (NotSerializableException ex) {
+            ex.printStackTrace();
+        }
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        throw new NotSerializableException();
+        try {
+            throw new NotSerializableException();
+        } catch (NotSerializableException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // java.lang.Comparable

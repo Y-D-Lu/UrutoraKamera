@@ -81,7 +81,7 @@ public final class qcg extends RuntimeException {
             sb.append('\n');
         }
         int i = 1;
-        for (Throwable th : this.a) {
+        for (Throwable th : (List<Throwable>) this.a) {
             sb.append("  ComposedException ");
             sb.append(i);
             sb.append(" :\n");
@@ -97,7 +97,7 @@ public final class qcg extends RuntimeException {
             qcc qccVar = new qcc();
             HashSet hashSet = new HashSet();
             Throwable th = qccVar;
-            for (Throwable th2 : this.a) {
+            for (Throwable th2 : (List<Throwable>) this.a) {
                 if (!hashSet.contains(th2)) {
                     hashSet.add(th2);
                     ArrayList<Throwable> arrayList = new ArrayList();

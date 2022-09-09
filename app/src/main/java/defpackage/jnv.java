@@ -25,7 +25,7 @@ public final class jnv implements pys {
         ((lar) this.c.mo37get()).c(new Runnable() { // from class: jnt
             @Override // java.lang.Runnable
             public final void run() {
-                jnu jnuVar2 = jnu.this;
+                jnu jnuVar2 = jnuVar;
                 ih ihVar = mo37get;
                 ljf ljfVar2 = ljfVar;
                 pih pihVar = f;

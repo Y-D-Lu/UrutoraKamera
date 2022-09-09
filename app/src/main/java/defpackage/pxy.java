@@ -55,7 +55,7 @@ public final /* synthetic */ class pxy implements Runnable {
                             controllerServiceBridge2.b();
                             return;
                         }
-                    } catch (RemoteException e) {
+                    } catch (Exception e) {
                         String valueOf = String.valueOf(e);
                         StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 54);
                         sb.append("Remote exception while getting number of controllers: ");

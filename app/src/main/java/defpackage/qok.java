@@ -77,7 +77,11 @@ final class qok extends qol implements Iterator, qlh {
                 case 4:
                     return false;
                 default:
-                    throw c();
+                    try {
+                        throw c();
+                    } catch (Throwable e) {
+                        e.printStackTrace();
+                    }
             }
             this.b = 5;
             qlh qlhVar = this.a;
@@ -96,7 +100,7 @@ final class qok extends qol implements Iterator, qlh {
                 if (!hasNext()) {
                     throw new NoSuchElementException();
                 }
-                return mo197next();
+                return next();
             case 2:
                 this.b = 1;
                 java.util.Iterator it = this.d;
@@ -108,8 +112,13 @@ final class qok extends qol implements Iterator, qlh {
                 this.c = null;
                 return obj;
             default:
-                throw c();
+                try {
+                    throw c();
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
         }
+        return null;
     }
 
     @Override // java.util.Iterator, java.util.Iterator

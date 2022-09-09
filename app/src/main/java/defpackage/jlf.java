@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.List;
+
 /* renamed from: jlf  reason: default package */
 /* loaded from: classes2.dex */
 final class jlf implements jli {
@@ -12,7 +14,7 @@ final class jlf implements jli {
     @Override // defpackage.jli
     public final void onShutterButtonClick() {
         synchronized (this.a.b) {
-            for (jli jliVar : this.a.c) {
+            for (jli jliVar : (List<jli>) this.a.c) {
                 jrh jrhVar = this.a.f;
                 if (jrhVar == null || !jrhVar.h) {
                     jliVar.onShutterButtonClick();
@@ -26,7 +28,7 @@ final class jlf implements jli {
     @Override // defpackage.jli
     public final void onShutterButtonDown() {
         synchronized (this.a.b) {
-            for (jli jliVar : this.a.c) {
+            for (jli jliVar : (List<jli>) this.a.c) {
                 jliVar.onShutterButtonDown();
             }
         }
@@ -36,7 +38,7 @@ final class jlf implements jli {
     public final void onShutterButtonLongPressRelease() {
         synchronized (this.a.b) {
             this.a.a.setVisualFeedbackForEnableState(true);
-            for (jli jliVar : this.a.c) {
+            for (jli jliVar : (List<jli>) this.a.c) {
                 jliVar.onShutterButtonLongPressRelease();
             }
         }
@@ -46,7 +48,7 @@ final class jlf implements jli {
     public final void onShutterButtonLongPressUnlock() {
         synchronized (this.a.b) {
             this.a.a.setVisualFeedbackForEnableState(true);
-            for (jli jliVar : this.a.c) {
+            for (jli jliVar : (List<jli>) this.a.c) {
                 jliVar.onShutterButtonLongPressUnlock();
             }
         }
@@ -56,7 +58,7 @@ final class jlf implements jli {
     public final void onShutterButtonLongPressed() {
         synchronized (this.a.b) {
             this.a.a.setVisualFeedbackForEnableState(false);
-            for (jli jliVar : this.a.c) {
+            for (jli jliVar : (List<jli>) this.a.c) {
                 jliVar.onShutterButtonLongPressed();
             }
         }
@@ -65,7 +67,7 @@ final class jlf implements jli {
     @Override // defpackage.jli
     public final void onShutterButtonPressedStateChanged(boolean z) {
         synchronized (this.a.b) {
-            for (jli jliVar : this.a.c) {
+            for (jli jliVar : (List<jli>) this.a.c) {
                 jliVar.onShutterButtonPressedStateChanged(z);
             }
         }
@@ -74,7 +76,7 @@ final class jlf implements jli {
     @Override // defpackage.jli
     public final void onShutterTouch(jrw jrwVar) {
         synchronized (this.a.b) {
-            for (jli jliVar : this.a.c) {
+            for (jli jliVar : (List<jli>) this.a.c) {
                 jliVar.onShutterTouch(jrwVar);
             }
         }
@@ -83,7 +85,7 @@ final class jlf implements jli {
     @Override // defpackage.jli
     public final void onShutterTouchStart() {
         synchronized (this.a.b) {
-            for (jli jliVar : this.a.c) {
+            for (jli jliVar : (List<jli>) this.a.c) {
                 jliVar.onShutterTouchStart();
             }
         }

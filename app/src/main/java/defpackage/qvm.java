@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: qvm  reason: default package */
 /* loaded from: classes2.dex */
 public abstract class qvm {
-    private final qpe a;
+    private qpe a;
 
     public qvm() {
     }

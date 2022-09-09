@@ -13,10 +13,10 @@ public final class xi {
         if (xq.a) {
             b = null;
             a = null;
-            return;
+        } else {
+            b = new xi(false, null);
+            a = new xi(true, null);
         }
-        b = new xi(false, null);
-        a = new xi(true, null);
     }
 
     public xi(boolean z, Throwable th) {

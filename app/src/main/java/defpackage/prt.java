@@ -34,7 +34,7 @@ final class prt extends pru {
     @Override // defpackage.pru
     public final void e(Object obj, long j, boolean z) {
         if (prv.d) {
-            prv.o(obj, j, z);
+            prv.o(obj, j, z ? (byte) 1 : (byte) 0);
         } else {
             prv.p(obj, j, z ? (byte) 1 : (byte) 0);
         }

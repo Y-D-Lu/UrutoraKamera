@@ -5,7 +5,6 @@ import java.io.ObjectInputStream;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /* renamed from: pra  reason: default package */
 /* loaded from: classes2.dex */
@@ -46,7 +45,11 @@ public final class pra extends poc {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        throw new InvalidObjectException("RopeByteStream instances are not to be serialized directly");
+        try {
+            throw new InvalidObjectException("RopeByteStream instances are not to be serialized directly");
+        } catch (InvalidObjectException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.poc
@@ -164,7 +167,7 @@ public final class pra extends poc {
     }
 
     @Override // defpackage.poc, java.lang.Iterable
-    public final /* bridge */ /* synthetic */ Iterator iterator() {
+    public final /* bridge */ /* synthetic */ pnz iterator() {
         return iterator();
     }
 
@@ -242,7 +245,7 @@ public final class pra extends poc {
         return pocVar.j(j, 0, pocVar.d()) == 0;
     }
 
-    @Override // defpackage.poc
+    //@Override // defpackage.poc
     public final pnz r() {
         return new pqy(this);
     }

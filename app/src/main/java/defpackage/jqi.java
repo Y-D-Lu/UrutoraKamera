@@ -16,6 +16,7 @@ import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
 import org.codeaurora.snapcam.R;
 
 import java.util.List;
+import java.util.Set;
 
 /* compiled from: PG */
 /* renamed from: jqi  reason: default package */
@@ -102,7 +103,7 @@ public final class jqi implements jqn {
                 /* JADX WARN: Type inference failed for: r2v5, types: [gtt, java.lang.Object] */
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    gts gtsVar2 = gts.this;
+                    gts gtsVar2 = gtsVar;
                     if (gtsVar2.a.mo37get().F()) {
                         gtsVar2.a.mo37get().g();
                     } else {
@@ -170,7 +171,7 @@ public final class jqi implements jqn {
         gtgVar.bj.c(lcv.b(lcv.j(gtgVar.v, eto.o), lcv.j(gtgVar.x, eto.p)).a(new lij() { // from class: gsv
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                gtg gtgVar2 = gtg.this;
+                gtg gtgVar2 = gtgVar;
                 List list = (List) obj;
                 if (!gtgVar2.ax) {
                     boolean z = false;
@@ -336,7 +337,7 @@ public final class jqi implements jqn {
         gtgVar.m(gtgVar.L, gtgVar.aF, gtgVar.as);
         gtgVar.m(gtgVar.M, gtgVar.aG, gtgVar.ag);
         gtgVar.m(gtgVar.N, gtgVar.aO, gtgVar.ai);
-        for (gto gtoVar : gtgVar.bh.keySet()) {
+        for (gto gtoVar : (Set<gto>) gtgVar.bh.keySet()) {
             gtgVar.m(gtoVar.f(), gtgVar.bi, (gtk) gtgVar.bh.get(gtoVar));
             gtgVar.aT.g((gtk) gtgVar.bh.get(gtoVar), gtoVar.e());
         }
@@ -358,12 +359,8 @@ public final class jqi implements jqn {
         this.h.f(new jqg(this));
         this.r.addListener(new jqd(this));
         if (this.b.g()) {
-            this.u.c(this.d.a(new lij(this) { // from class: jqa
-                public final /* synthetic */ jqi a;
-
-                {
-                    this.a = this;
-                }
+            this.u.c(this.d.a(new lij() { // from class: jqa
+                public final /* synthetic */ jqi a = jqi.this;
 
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
@@ -462,12 +459,8 @@ public final class jqi implements jqn {
             jbeVar.c = jqcVar2;
         }
         if (this.k.k(ddl.aP)) {
-            this.u.c(this.e.a(new lij(this) { // from class: jqa
-                public final /* synthetic */ jqi a;
-
-                {
-                    this.a = this;
-                }
+            this.u.c(this.e.a(new lij() { // from class: jqa
+                public final /* synthetic */ jqi a = jqi.this;
 
                 @Override // defpackage.lij
                 public final void fB(Object obj) {

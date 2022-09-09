@@ -20,7 +20,7 @@ public final class qvt {
         if (obj == null) {
             obj = a(qlnVar);
         }
-        return obj == 0 ? a : obj instanceof Integer ? qlnVar.fold(new qvw(qlnVar, ((Number) obj).intValue()), d) : ((qry) obj).a(qlnVar);
+        return obj == null ? a : obj instanceof Integer ? qlnVar.fold(new qvw(qlnVar, ((Number) obj).intValue()), d) : ((qry) obj).a(qlnVar);
     }
 
     public static final void c(qln qlnVar, Object obj) {

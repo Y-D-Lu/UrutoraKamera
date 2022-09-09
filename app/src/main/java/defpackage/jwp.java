@@ -133,7 +133,7 @@ public final class jwp implements jwx {
         obr.aR(!this.g, "ViewfinderFilter is closed already");
         this.g = true;
         try {
-            for (lie lieVar : this.a) {
+            for (lie lieVar : (List<lie>) this.a) {
                 lieVar.close();
             }
             this.d.close();

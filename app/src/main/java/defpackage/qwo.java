@@ -47,10 +47,10 @@ public final class qwo implements qwm {
                 while (true) {
                     obj = quxVar;
                     while (true) {
-                        if (obj.b >= j && !obj.g()) {
+                        if (((qux)obj).b >= j && !((qux)obj).g()) {
                             break;
                         }
-                        Object a = obj.a();
+                        Object a = ((qux)obj).a();
                         if (a == quw.a) {
                             obj = quw.a;
                             break;
@@ -59,10 +59,10 @@ public final class qwo implements qwm {
                         if (quxVar2 != null) {
                             obj = quxVar2;
                         } else {
-                            qux a2 = qwp.a(obj.b + 1, obj);
-                            if (obj.e(a2)) {
-                                if (obj.g()) {
-                                    obj.c();
+                            qux a2 = qwp.a(((qux)obj).b + 1, ((qux)obj));
+                            if (((qux)obj).e(a2)) {
+                                if (((qux)obj).g()) {
+                                    ((qux)obj).c();
                                 }
                                 obj = a2;
                             }

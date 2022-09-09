@@ -18,13 +18,13 @@ public final class qvb extends qnp implements qmu {
     @Override // defpackage.qmu
     public final /* synthetic */ Object a(Object obj) {
         Object L;
-        Object newInstance;
+        Object newInstance = null;
         Object L2;
-        Object newInstance2;
+        Object newInstance2 = null;
         Throwable th;
-        Object newInstance3;
+        Object newInstance3 = null;
         Throwable th2;
-        Object newInstance4;
+        Object newInstance4 = null;
         Object obj2 = null;
         switch (this.b) {
             case 0:
@@ -65,7 +65,7 @@ public final class qvb extends qnp implements qmu {
                 try {
                     newInstance3 = this.a.newInstance(th7.getMessage());
                 } catch (Throwable th8) {
-                    th = qmd.L(th8);
+                    th = (Throwable) qmd.L(th8);
                 }
                 if (newInstance3 == null) {
                     throw new NullPointerException("null cannot be cast to non-null type kotlin.Throwable");
@@ -73,9 +73,7 @@ public final class qvb extends qnp implements qmu {
                 Throwable th9 = (Throwable) newInstance3;
                 th9.initCause(th7);
                 th = th9;
-                if (true != (th instanceof qkm)) {
-                    obj2 = th;
-                }
+                obj2 = th;
                 return (Throwable) obj2;
             default:
                 Throwable th10 = (Throwable) obj;
@@ -83,7 +81,7 @@ public final class qvb extends qnp implements qmu {
                 try {
                     newInstance4 = this.a.newInstance(new Object[0]);
                 } catch (Throwable th11) {
-                    th2 = qmd.L(th11);
+                    th2 = (Throwable) qmd.L(th11);
                 }
                 if (newInstance4 == null) {
                     throw new NullPointerException("null cannot be cast to non-null type kotlin.Throwable");
@@ -91,9 +89,7 @@ public final class qvb extends qnp implements qmu {
                 Throwable th12 = (Throwable) newInstance4;
                 th12.initCause(th10);
                 th2 = th12;
-                if (true != (th2 instanceof qkm)) {
-                    obj2 = th2;
-                }
+                obj2 = th2;
                 return (Throwable) obj2;
         }
     }

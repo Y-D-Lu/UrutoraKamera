@@ -140,12 +140,8 @@ public final class jsu extends iai implements jsv, jtc, hsb {
             iaw a2 = iax.a();
             a2.b = this.c.getString(R.string.new_version_available);
             a2.c = drawable;
-            a2.d = new Runnable(this) { // from class: jss
-                public final /* synthetic */ jsu a;
-
-                {
-                    this.a = this;
-                }
+            a2.d = new Runnable() { // from class: jss
+                public final /* synthetic */ jsu a = jsu.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -166,12 +162,8 @@ public final class jsu extends iai implements jsv, jtc, hsb {
                 a2.d(c * 1000);
             }
             if (pzc.a.a().d()) {
-                a2.g = new Runnable(this) { // from class: jss
-                    public final /* synthetic */ jsu a;
-
-                    {
-                        this.a = this;
-                    }
+                a2.g = new Runnable() { // from class: jss
+                    public final /* synthetic */ jsu a = jsu.this;
 
                     @Override // java.lang.Runnable
                     public final void run() {

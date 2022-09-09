@@ -68,11 +68,11 @@ public final class jmg implements ViewTreeObserver.OnGlobalLayoutListener, lie {
             return;
         }
         if (visibility == 0) {
-            for (Runnable runnable : this.b) {
+            for (Runnable runnable : (List<Runnable>) this.b) {
                 runnable.run();
             }
         } else if (andSet >= 0) {
-            for (Runnable runnable2 : this.c) {
+            for (Runnable runnable2 : (List<Runnable>) this.c) {
                 runnable2.run();
             }
         }

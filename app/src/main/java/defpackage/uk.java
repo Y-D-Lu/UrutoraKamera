@@ -5,9 +5,9 @@ import android.util.Log;
 /* renamed from: uk  reason: default package */
 /* loaded from: classes2.dex */
 public final class uk {
-    public final /* synthetic */ String a;
-    public final /* synthetic */ up b;
-    public final /* synthetic */ um c;
+    public /* synthetic */ String a;
+    public /* synthetic */ up b;
+    public /* synthetic */ um c;
 
     public uk() {
     }

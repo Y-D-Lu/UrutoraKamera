@@ -127,7 +127,7 @@ public final class th extends View {
 
     @Override // android.view.View
     protected final void onLayout(boolean z, int i, int i2, int i3, int i4) {
-        int i5;
+        int i5 = 0;
         int i6;
         int i7;
         super.onLayout(z, i, i2, i3, i4);

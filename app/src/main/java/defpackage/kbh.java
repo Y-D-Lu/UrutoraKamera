@@ -38,8 +38,8 @@ public final class kbh implements kaq {
             jlzVar.d(new Supplier() { // from class: kaw
                 @Override // java.util.function.Supplier
                 /* renamed from: get */
-                public final Object mo291get() {
-                    kbi kbiVar2 = kbi.this;
+                public final Object get() {
+                    kbi kbiVar2 = kbiVar;
                     boolean z = false;
                     if (kbiVar2.A == lwd.FRONT && kbiVar2.j.a("wide_selfie_tooltip_display_count") == 2) {
                         z = true;

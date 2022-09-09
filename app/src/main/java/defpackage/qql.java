@@ -5,9 +5,9 @@ import java.util.concurrent.atomic.AtomicLong;
 /* renamed from: qql  reason: default package */
 /* loaded from: classes2.dex */
 public final class qql {
-    public static final boolean a;
-    public static final boolean b;
-    public static final AtomicLong c;
+    public static boolean a;
+    public static boolean b;
+    public static AtomicLong c;
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0021, code lost:
         if (r0.equals("off") != false) goto L7;
@@ -100,6 +100,6 @@ public final class qql {
             defpackage.qql.c = r0
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.qql.<clinit>():void");
+        //throw new UnsupportedOperationException("Method not decompiled: defpackage.qql.<clinit>():void");
     }
 }

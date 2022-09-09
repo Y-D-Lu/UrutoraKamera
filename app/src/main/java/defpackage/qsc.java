@@ -23,7 +23,7 @@ public final class qsc extends qvo {
     }
 
     @Override // defpackage.qvo, defpackage.qpg
-    protected final void hi(Object obj) {
+    public final void hi(Object obj) {
         qln qlnVar = this.b;
         qsc qscVar = null;
         if (qlnVar != null) {

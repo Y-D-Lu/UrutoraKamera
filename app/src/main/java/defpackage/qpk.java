@@ -11,7 +11,7 @@ public final class qpk extends qqv {
     }
 
     @Override // defpackage.qqu
-    protected final Thread c() {
+    public final Thread c() {
         return this.b;
     }
 }

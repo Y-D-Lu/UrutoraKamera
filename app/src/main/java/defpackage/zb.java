@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.List;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: zb  reason: default package */
 /* loaded from: classes2.dex */
@@ -116,7 +118,7 @@ public final class zb extends zg {
         int i = yhVar.a;
         int i2 = 0;
         int i3 = -1;
-        for (yx yxVar : this.i.k) {
+        for (yx yxVar : (List<yx>) this.i.k) {
             int i4 = yxVar.f;
             if (i3 == -1 || i4 < i3) {
                 i3 = i4;

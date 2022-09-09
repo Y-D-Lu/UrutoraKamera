@@ -8,13 +8,11 @@ import android.view.Surface;
 
 import com.google.android.libraries.oliveoil.bufferflinger.BufferFlinger;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
-
-import java.time.Duration;
-import java.util.Collection;
 import java.util.stream.Collectors;
 
 /* renamed from: jwm  reason: default package */
@@ -111,7 +109,7 @@ public final class jwm implements jww, lms {
                 this.i = null;
             }
             g(oom.l());
-            for (jws jwsVar : this.t) {
+            for (jws jwsVar : (Set<jws>) this.t) {
                 jwsVar.close();
             }
             this.t.clear();
@@ -193,7 +191,7 @@ public final class jwm implements jww, lms {
                                 lapVar.c(new lie() { // from class: jwi
                                     @Override // defpackage.lie, java.lang.AutoCloseable
                                     public final void close() {
-                                        lji.this.a();
+                                        a3.a();
                                     }
                                 });
                                 this.m.b();
@@ -206,7 +204,7 @@ public final class jwm implements jww, lms {
                                 bufferFlinger.displayBuffer(f, new Rect(0, 0, d.c(), d.b()), new Rect(0, 0, size.getWidth(), size.getHeight()), i, new BufferFlinger.OnBufferReleasedListener() { // from class: jwj
                                     @Override // com.google.android.libraries.oliveoil.bufferflinger.BufferFlinger.OnBufferReleasedListener
                                     public final void onBufferReleased() {
-                                        lap.this.close();
+                                        lapVar.close();
                                     }
                                 });
                             }

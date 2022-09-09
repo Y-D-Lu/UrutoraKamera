@@ -12,6 +12,7 @@ import com.hdrindicator.DisplayHelper;
 import org.codeaurora.snapcam.R;
 
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
 
 /* renamed from: kad  reason: default package */

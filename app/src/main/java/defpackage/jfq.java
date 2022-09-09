@@ -3,6 +3,8 @@ package defpackage;
 import android.animation.Animator;
 import android.widget.TextView;
 
+import java.util.Set;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: jfq  reason: default package */
 /* loaded from: classes.dex */
@@ -44,7 +46,7 @@ public final class jfq implements jrp {
                 }
                 jfs jfsVar3 = this.a;
                 jfsVar3.j = i;
-                for (TextView textView2 : jfsVar3.b.g()) {
+                for (TextView textView2 : (Set<TextView>) jfsVar3.b.g()) {
                     if (textView2.equals(this.a.h)) {
                         textView2.setTextColor(this.a.i);
                     } else {

@@ -109,7 +109,7 @@ public class ListMenuItemView extends LinearLayout implements AbsListView.Select
     @Override // defpackage.ll
     public final void f(kz kzVar) {
         CompoundButton compoundButton;
-        CheckBox checkBox;
+        CheckBox checkBox = null;
         CheckBox checkBox2;
         ImageView imageView;
         String sb;
@@ -142,9 +142,10 @@ public class ListMenuItemView extends LinearLayout implements AbsListView.Select
                     CheckBox checkBox4 = (CheckBox) b().inflate(R.layout.abc_list_menu_item_checkbox, (ViewGroup) this, false);
                     this.i = checkBox4;
                     c(checkBox4);
+                    checkBox = checkBox4;
                 }
                 compoundButton = this.i;
-                checkBox = this.g;
+                //checkBox = this.g;
                 checkBox2 = (CheckBox) compoundButton;
             }
             if (isCheckable) {

@@ -684,7 +684,6 @@ public class SwitchCompat extends CompoundButton {
                     super.onTouchEvent(motionEvent);
                     return true;
                 }
-                break;
             case 2:
                 switch (this.v) {
                     case 2:

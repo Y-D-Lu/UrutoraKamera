@@ -106,7 +106,7 @@ public final class hzb implements iap {
                         case 0:
                             SmartsChipView smartsChipView2 = smartsChipView;
                             Boolean bool = (Boolean) obj;
-                            hwz a = hxa.a(this);
+                            hwz a = hxa.a(hzb.this);
                             a.f(smartsChipView2.m);
                             a.d(smartsChipView2.i);
                             a.c(smartsChipView2.j);
@@ -116,7 +116,7 @@ public final class hzb implements iap {
                         default:
                             SmartsChipView smartsChipView3 = smartsChipView;
                             Boolean bool2 = (Boolean) obj;
-                            hwz a2 = hxa.a(this);
+                            hwz a2 = hxa.a(hzb.this);
                             a2.f(smartsChipView3.m);
                             a2.d(smartsChipView3.i);
                             a2.c(smartsChipView3.j);
@@ -133,7 +133,7 @@ public final class hzb implements iap {
                         case 0:
                             SmartsChipView smartsChipView2 = smartsChipView;
                             Boolean bool = (Boolean) obj;
-                            hwz a = hxa.a(this);
+                            hwz a = hxa.a(hzb.this);
                             a.f(smartsChipView2.m);
                             a.d(smartsChipView2.i);
                             a.c(smartsChipView2.j);
@@ -143,7 +143,7 @@ public final class hzb implements iap {
                         default:
                             SmartsChipView smartsChipView3 = smartsChipView;
                             Boolean bool2 = (Boolean) obj;
-                            hwz a2 = hxa.a(this);
+                            hwz a2 = hxa.a(hzb.this);
                             a2.f(smartsChipView3.m);
                             a2.d(smartsChipView3.i);
                             a2.c(smartsChipView3.j);
@@ -157,7 +157,7 @@ public final class hzb implements iap {
                 @Override // android.view.View.OnLayoutChangeListener
                 public final void onLayoutChange(View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
                     SmartsChipView smartsChipView2 = smartsChipView;
-                    hwz a = hxa.a(this);
+                    hwz a = hxa.a(hzb.this);
                     a.f(smartsChipView2.m);
                     a.b(true);
                     a.d(smartsChipView2.i);

@@ -3,6 +3,7 @@ package defpackage;
 import java.nio.ByteBuffer;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: pqp  reason: default package */
@@ -77,7 +78,7 @@ public final class pqp implements prb {
 
     @Override // defpackage.prb
     public final void h(Object obj, pqx pqxVar, pos posVar) {
-        boolean U;
+        boolean U = false;
         plk plkVar = this.c;
         Object aH = plk.aH(obj);
         pou h = plk.h(obj);
@@ -138,6 +139,8 @@ public final class pqp implements prb {
                         plk.aD(aH, i, pocVar);
                     }
                 }
+            } catch (defpackage.ppp ppp) {
+                ppp.printStackTrace();
             } finally {
                 plk.aG(obj, (prn) aH);
             }

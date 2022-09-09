@@ -5,6 +5,7 @@ import java.text.ParseException;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
@@ -43,7 +44,7 @@ public final class x implements Serializable {
     private x(w wVar) {
         this.h = wVar;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
-        for (v vVar : wVar.b) {
+        for (v vVar : (List<v>) wVar.b) {
             linkedHashSet.add(vVar.a);
         }
         Collections.unmodifiableSet(linkedHashSet);
@@ -136,7 +137,7 @@ public final class x implements Serializable {
         return d2 == ((double) j2) ? String.valueOf(j2) : String.valueOf(d2);
     }
 
-    private static String f(String[] strArr, int i2, String str) {
+    private static String f(String[] strArr, int i2, String str) throws ParseException {
         if (i2 < strArr.length) {
             return strArr[i2];
         }

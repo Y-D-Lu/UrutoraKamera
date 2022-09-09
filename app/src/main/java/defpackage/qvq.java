@@ -180,8 +180,7 @@ public final class qvq {
     }
 
     public static final boolean d(StackTraceElement stackTraceElement) {
-        stackTraceElement.getClass();
-        return stackTraceElement.getClassName().getClass();
+        return false;
     }
 
     public static final StackTraceElement e() {

@@ -71,7 +71,7 @@ public final /* synthetic */ class jqc implements Runnable {
                     gtgVar3.aV.postDelayed(new eqo(f, 2), gtgVar3.aV.getResources().getInteger(R.integer.motion_animation_duration));
                     pihVar = f;
                 } else {
-                    pihVar = gtgVar3.aV.o();
+                    pihVar = (pih) gtgVar3.aV.o();
                 }
                 pihVar.d(new jqc(jqiVar3, 0), pgr.a);
                 return;

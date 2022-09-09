@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: qqd  reason: default package */
 /* loaded from: classes2.dex */
 public final class qqd {
-    public static final boolean a;
+    public static boolean a;
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0021, code lost:
         if (r0.equals("on") != false) goto L15;
@@ -60,7 +60,7 @@ public final class qqd {
             defpackage.qqd.a = r1
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.qqd.<clinit>():void");
+        //throw new UnsupportedOperationException("Method not decompiled: defpackage.qqd.<clinit>():void");
     }
 
     public static final String a(qln qlnVar) {
@@ -88,7 +88,7 @@ public final class qqd {
         qlhVar.getClass();
         qlnVar.getClass();
         qsc qscVar = null;
-        qlv qlvVar = qlhVar;
+        qlv qlvVar = (qlv) qlhVar;
         if (qlnVar.get(qsd.a) != null) {
             while (true) {
                 if ((qlvVar instanceof qqn) || (callerFrame = qlvVar.getCallerFrame()) == null) {

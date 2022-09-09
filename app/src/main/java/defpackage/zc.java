@@ -253,7 +253,7 @@ public final class zc extends zg {
 
     @Override // defpackage.zg, defpackage.yv
     public final void f() {
-        yy yyVar;
+        yy yyVar = null;
         int i;
         int i2 = this.l;
         int i3 = i2 - 1;

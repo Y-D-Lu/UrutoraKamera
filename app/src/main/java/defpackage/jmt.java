@@ -87,7 +87,7 @@ public class jmt implements jni {
             i2 = Math.max(i2, 0);
         }
         ArrayList<lig> arrayList = new ArrayList();
-        for (lig ligVar : list) {
+        for (lig ligVar : (List<lig>) list) {
             int i3 = ligVar.b;
             if (i3 <= i2) {
                 arrayList.add(new lig(ligVar.a, i3));

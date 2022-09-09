@@ -18,7 +18,7 @@ public final class qqg {
     }
 
     public static final void a(qln qlnVar, Throwable th) {
-        for (CoroutineExceptionHandler coroutineExceptionHandler : a) {
+        for (CoroutineExceptionHandler coroutineExceptionHandler : (List<CoroutineExceptionHandler>) a) {
             try {
                 coroutineExceptionHandler.handleException(qlnVar, th);
             } catch (Throwable th2) {

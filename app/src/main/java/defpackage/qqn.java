@@ -14,7 +14,7 @@ public final class qqn extends qvo {
     }
 
     @Override // defpackage.qvo, defpackage.qpg
-    protected final void hi(Object obj) {
+    public final void hi(Object obj) {
         qpc qpcVar = this.b;
         do {
             switch (qpcVar.b) {

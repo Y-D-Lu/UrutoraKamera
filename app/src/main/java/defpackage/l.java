@@ -134,11 +134,11 @@ public final class l extends Format {
                             sb.append("\"");
                             throw new IllegalArgumentException(sb.toString());
                     }
-                    if (this.c == null) {
-                        this.c = new HashMap();
-                    }
-                    this.c.put(Integer.valueOf(i), numberFormat);
-                    i = i3;
+//                    if (this.c == null) {
+//                        this.c = new HashMap();
+//                    }
+//                    this.c.put(Integer.valueOf(i), numberFormat);
+//                    i = i3;
                 }
                 i++;
             }
@@ -168,17 +168,17 @@ public final class l extends Format {
     }
 
     private static final int c(String str, String[] strArr) {
-        byte[] bArr = e.a;
-        if (str.length() != 0 && (e.a(str.charAt(0)) || e.a(str.charAt(str.length() - 1)))) {
+        byte[] bArr = defpackage.e.a;
+        if (str.length() != 0 && (defpackage.e.a(str.charAt(0)) || defpackage.e.a(str.charAt(str.length() - 1)))) {
             int length = str.length();
             int i = 0;
-            while (i < length && e.a(str.charAt(i))) {
+            while (i < length && defpackage.e.a(str.charAt(i))) {
                 i++;
             }
             if (i < length) {
                 while (true) {
                     int i2 = length - 1;
-                    if (!e.a(str.charAt(i2))) {
+                    if (!defpackage.e.a(str.charAt(i2))) {
                         break;
                     }
                     length = i2;
@@ -226,8 +226,8 @@ public final class l extends Format {
         double d2;
         int i5;
         j jVar2;
-        boolean z2;
-        int i6;
+        boolean z2 = false;
+        int i6 = 0;
         int i7;
         int i8;
         int i9;
@@ -342,14 +342,14 @@ public final class l extends Format {
                                     Object obj4 = obj;
                                     if (b != 3) {
                                         Object obj5 = obj4;
-                                        if (!d.b(b)) {
+                                        if (!defpackage.d.b(b)) {
                                             fieldPosition2 = fieldPosition3;
                                             obj3 = obj5;
                                             str = str3;
                                             i2 = i19;
                                             i3 = c;
                                             if (b != 5) {
-                                                String a3 = d.a(b);
+                                                String a3 = defpackage.d.a(b);
                                                 StringBuilder sb2 = new StringBuilder(a3.length() + 19);
                                                 sb2.append("unexpected argType ");
                                                 sb2.append(a3);
@@ -404,12 +404,12 @@ public final class l extends Format {
                                             Number number = (Number) obj2;
                                             aa aaVar3 = lVar.b;
                                             z zVar = (z) aaVar3.b.get(i18);
-                                            j jVar5 = new j(i18, f2, number, d.d(zVar.e) ? aaVar3.a(zVar) : 0.0d);
+                                            j jVar5 = new j(i18, f2, number, defpackage.d.d(zVar.e) ? aaVar3.a(zVar) : 0.0d);
                                             aa aaVar4 = lVar.b;
                                             double doubleValue = number.doubleValue();
                                             int b3 = aaVar4.b();
                                             z d6 = aaVar4.d(i18);
-                                            if (d.d(d6.e)) {
+                                            if (defpackage.d.d(d6.e)) {
                                                 d2 = aaVar4.a(d6);
                                                 i18++;
                                             } else {
@@ -431,7 +431,7 @@ public final class l extends Format {
                                                     i2 = i19;
                                                     break;
                                                 }
-                                                if (d.d(aaVar4.h(i23))) {
+                                                if (defpackage.d.d(aaVar4.h(i23))) {
                                                     int i24 = i23 + 1;
                                                     if (doubleValue == aaVar4.a(aaVar4.d(i23))) {
                                                         i5 = i24;
@@ -466,7 +466,7 @@ public final class l extends Format {
                                                             i6 = i23;
                                                             int b4 = lVar2.b.b();
                                                             obj3 = obj5;
-                                                            if (d.d(lVar2.b.d(i26).e)) {
+                                                            if (defpackage.d.d(lVar2.b.d(i26).e)) {
                                                                 i26++;
                                                             }
                                                             while (true) {
@@ -482,7 +482,7 @@ public final class l extends Format {
                                                                     i8 = 1;
                                                                     break;
                                                                 } else {
-                                                                    if (d.d(lVar2.b.h(i27))) {
+                                                                    if (defpackage.d.d(lVar2.b.h(i27))) {
                                                                         i27++;
                                                                     }
                                                                     int c2 = lVar2.b.c(i27);
@@ -772,7 +772,7 @@ public final class l extends Format {
                     }
                     if (fieldPosition2 == null) {
                         fieldPosition3 = fieldPosition2;
-                    } else if (i.a.equals(fieldPosition2.getFieldAttribute())) {
+                    } else if (defpackage.i.a.equals(fieldPosition2.getFieldAttribute())) {
                         FieldPosition fieldPosition4 = fieldPosition2;
                         fieldPosition4.setBeginIndex(i11);
                         fieldPosition4.setEndIndex(gVar2.b);
@@ -872,12 +872,12 @@ public final class l extends Format {
                         Map map3 = this.c;
                         if (map3 != null && map3.containsKey(Integer.valueOf(i8 - 2))) {
                             str2 = str4;
-                            str3 = f2;
+                            str3 = (String) f2;
                         } else if (b != 3) {
-                            if (d.b(b) || b == 5) {
+                            if (defpackage.d.b(b) || b == 5) {
                                 throw new UnsupportedOperationException("Parsing of plural/select/selectordinal argument is not supported.");
                             }
-                            String a2 = d.a(b);
+                            String a2 = defpackage.d.a(b);
                             StringBuilder sb = new StringBuilder(a2.length() + 19);
                             sb.append("unexpected argType ");
                             sb.append(a2);
@@ -891,7 +891,7 @@ public final class l extends Format {
                             while (true) {
                                 if (aaVar3.h(i8) == 7) {
                                     str2 = str4;
-                                    str3 = f2;
+                                    str3 = (String) f2;
                                     break;
                                 }
                                 double a3 = aaVar3.a(aaVar3.d(i8));
@@ -903,7 +903,7 @@ public final class l extends Format {
                                 int a4 = aaVar3.d(i10).a();
                                 while (true) {
                                     i10++;
-                                    str3 = f2;
+                                    str3 = (String) f2;
                                     z d5 = aaVar3.d(i10);
                                     if (i10 != c2) {
                                         aaVar = aaVar3;
@@ -958,7 +958,7 @@ public final class l extends Format {
                         }
                     } else {
                         str2 = str4;
-                        str3 = f2;
+                        str3 = (String) f2;
                     }
                     StringBuilder sb2 = new StringBuilder();
                     aa aaVar4 = this.b;
@@ -989,7 +989,7 @@ public final class l extends Format {
                     sb4.append("}");
                     boolean equals = substring.equals(sb4.toString());
                     index = indexOf;
-                    i3 = !equals;
+                    i3 = !equals ? 1 : 0;
                     obj2 = true == equals ? null : substring;
                 } else {
                     parsePosition2.setIndex(index);
@@ -1000,7 +1000,7 @@ public final class l extends Format {
                     }
                     index = parsePosition2.getIndex();
                     str2 = str4;
-                    str3 = f2;
+                    str3 = (String) f2;
                 }
                 if (i3 != 0) {
                     if (objArr != null) {
@@ -1043,7 +1043,7 @@ public final class l extends Format {
             gVar.c = new ArrayList();
             d(obj, gVar, null);
             AttributedString attributedString = new AttributedString(sb.toString());
-            for (h hVar : gVar.c) {
+            for (h hVar : (List<h>) gVar.c) {
                 attributedString.addAttribute(hVar.a, hVar.b, hVar.c, hVar.d);
             }
             return attributedString.getIterator();

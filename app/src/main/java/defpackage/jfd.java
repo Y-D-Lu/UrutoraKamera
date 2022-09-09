@@ -3,6 +3,8 @@ package defpackage;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 
+import java.util.List;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: jfd  reason: default package */
 /* loaded from: classes.dex */
@@ -22,7 +24,7 @@ public final class jfd extends AnimatorListenerAdapter {
             jfjVar.t = oih.a;
         }
         try {
-            for (Runnable runnable : jfjVar.E) {
+            for (Runnable runnable : (List<Runnable>) jfjVar.E) {
                 runnable.run();
             }
         } finally {

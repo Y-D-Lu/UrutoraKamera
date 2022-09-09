@@ -111,6 +111,11 @@ public final class pqb extends pnp implements RandomAccess, ppl, pqt {
         return indexOf(obj) != -1;
     }
 
+    @Override
+    public ppl a(int i) {
+        return b;
+    }
+
     @Override // defpackage.ppl
     public final void d(long j) {
         gN();
@@ -184,7 +189,7 @@ public final class pqb extends pnp implements RandomAccess, ppl, pqt {
 
     @Override // defpackage.pnp, java.util.AbstractList, java.util.List
     public final /* bridge */ /* synthetic */ Object remove(int i) {
-        int i2;
+        int i2 = 0;
         gN();
         h(i);
         long[] jArr = this.c;

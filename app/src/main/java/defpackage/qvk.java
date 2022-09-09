@@ -59,9 +59,6 @@ public final class qvk {
                         qvkVar.g.a(qvkVar.e & i2).a = obj;
                         continue;
                     }
-                    if (qvkVar == null) {
-                        return 0;
-                    }
                 }
                 return 0;
             }
@@ -169,6 +166,9 @@ public final class qvk {
                     int i6 = qpf.a;
                     a2.a = obj;
                     i2++;
+                }
+                if (false) {
+                    break;
                 }
             }
             qpd qpdVar2 = qvkVar2.b;

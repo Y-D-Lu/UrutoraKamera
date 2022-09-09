@@ -198,7 +198,7 @@ public final class jyq implements fgq, jxo, kwl, fik, fhy, fii, fij, fib {
         a2.a = new klb() { // from class: kyu
             @Override // defpackage.klb
             public final void a(Object obj, Object obj2) {
-                kwl kwlVar = kwl.this;
+                kwl kwlVar = jyq.this;
                 kkt kktVar = dD;
                 IntentFilter[] intentFilterArr2 = intentFilterArr;
                 kzq kzqVar = (kzq) obj;
@@ -214,7 +214,7 @@ public final class jyq implements fgq, jxo, kwl, fik, fhy, fii, fij, fib {
                     nvbVar.a.put(kwlVar, kzsVar);
                     try {
                         ((kyo) kzqVar.u()).e(new kyp(nvbVar.a, kwlVar, kzkVar), new kwx(kzsVar));
-                    } catch (RemoteException e) {
+                    } catch (Exception e) {
                         nvbVar.a.remove(kwlVar);
                         throw e;
                     }
@@ -224,7 +224,7 @@ public final class jyq implements fgq, jxo, kwl, fik, fhy, fii, fij, fib {
         a2.b = new klb() { // from class: kyt
             @Override // defpackage.klb
             public final void a(Object obj, Object obj2) {
-                kwl kwlVar = kwl.this;
+                kwl kwlVar = jyq.this;
                 kzq kzqVar = (kzq) obj;
                 kzk kzkVar = new kzk((kvm) obj2, 1);
                 nvb nvbVar = kzqVar.a;

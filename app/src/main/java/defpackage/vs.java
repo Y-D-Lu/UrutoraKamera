@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: vs  reason: default package */
 /* loaded from: classes2.dex */
 public final class vs extends hq {
-    public final hr a;
+    public hr a;
 
     public final boolean equals(Object obj) {
         throw null;

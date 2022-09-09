@@ -3,6 +3,7 @@ package com.google.common.io;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.EOFException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
@@ -46,7 +47,7 @@ public final class ByteStreams {
         return bArr;
     }
 
-    public static long copy(InputStream inputStream, OutputStream outputStream) {
+    public static long copy(InputStream inputStream, OutputStream outputStream) throws IOException {
         inputStream.getClass();
         outputStream.getClass();
         byte[] createBuffer = createBuffer();
@@ -61,7 +62,7 @@ public final class ByteStreams {
         }
     }
 
-    public static long copy(ReadableByteChannel readableByteChannel, WritableByteChannel writableByteChannel) {
+    public static long copy(ReadableByteChannel readableByteChannel, WritableByteChannel writableByteChannel) throws IOException {
         readableByteChannel.getClass();
         writableByteChannel.getClass();
         long j = 0;
@@ -93,7 +94,7 @@ public final class ByteStreams {
         return new byte[BUFFER_SIZE];
     }
 
-    public static long exhaust(InputStream inputStream) {
+    public static long exhaust(InputStream inputStream) throws IOException {
         byte[] createBuffer = createBuffer();
         long j = 0;
         while (true) {
@@ -145,7 +146,7 @@ public final class ByteStreams {
         return NULL_OUTPUT_STREAM;
     }
 
-    public static int read(InputStream inputStream, byte[] bArr, int i, int i2) {
+    public static int read(InputStream inputStream, byte[] bArr, int i, int i2) throws IOException {
         inputStream.getClass();
         bArr.getClass();
         int i3 = 0;
@@ -163,7 +164,7 @@ public final class ByteStreams {
         throw new IndexOutOfBoundsException(String.format("len (%s) cannot be negative", Integer.valueOf(i2)));
     }
 
-    public static Object readBytes(InputStream inputStream, oyz oyzVar) {
+    public static Object readBytes(InputStream inputStream, oyz oyzVar) throws IOException {
         inputStream.getClass();
         oyzVar.getClass();
         byte[] createBuffer = createBuffer();
@@ -172,11 +173,11 @@ public final class ByteStreams {
         return oyzVar.a();
     }
 
-    public static void readFully(InputStream inputStream, byte[] bArr) {
+    public static void readFully(InputStream inputStream, byte[] bArr) throws IOException {
         readFully(inputStream, bArr, 0, bArr.length);
     }
 
-    public static void readFully(InputStream inputStream, byte[] bArr, int i, int i2) {
+    public static void readFully(InputStream inputStream, byte[] bArr, int i, int i2) throws IOException {
         int read = read(inputStream, bArr, i, i2);
         if (read == i2) {
             return;
@@ -190,7 +191,7 @@ public final class ByteStreams {
         throw new EOFException(sb.toString());
     }
 
-    public static void skipFully(InputStream inputStream, long j) {
+    public static void skipFully(InputStream inputStream, long j) throws IOException {
         long skipUpTo = skipUpTo(inputStream, j);
         if (skipUpTo >= j) {
             return;
@@ -204,7 +205,7 @@ public final class ByteStreams {
         throw new EOFException(sb.toString());
     }
 
-    private static long skipSafely(InputStream inputStream, long j) {
+    private static long skipSafely(InputStream inputStream, long j) throws IOException {
         int available = inputStream.available();
         if (available == 0) {
             return 0L;
@@ -212,7 +213,7 @@ public final class ByteStreams {
         return inputStream.skip(Math.min(available, j));
     }
 
-    static long skipUpTo(InputStream inputStream, long j) {
+    static long skipUpTo(InputStream inputStream, long j) throws IOException {
         byte[] bArr = null;
         long j2 = 0;
         while (j2 < j) {
@@ -233,12 +234,12 @@ public final class ByteStreams {
         return j2;
     }
 
-    public static byte[] toByteArray(InputStream inputStream) {
+    public static byte[] toByteArray(InputStream inputStream) throws IOException {
         inputStream.getClass();
         return toByteArrayInternal(inputStream, new ArrayDeque(20), 0);
     }
 
-    public static byte[] toByteArray(InputStream inputStream, long j) {
+    public static byte[] toByteArray(InputStream inputStream, long j) throws IOException {
         obr.aJ(j >= 0, "expectedSize (%s) must be non-negative", j);
         if (j > 2147483639) {
             StringBuilder sb = new StringBuilder(62);
@@ -267,7 +268,7 @@ public final class ByteStreams {
         return toByteArrayInternal(inputStream, arrayDeque, i + 1);
     }
 
-    private static byte[] toByteArrayInternal(InputStream inputStream, Queue queue, int i) {
+    private static byte[] toByteArrayInternal(InputStream inputStream, Queue queue, int i) throws IOException {
         int i2 = BUFFER_SIZE;
         while (i < MAX_ARRAY_LEN) {
             int min = Math.min(i2, MAX_ARRAY_LEN - i);

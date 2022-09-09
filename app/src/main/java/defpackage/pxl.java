@@ -8,9 +8,9 @@ import android.os.Parcel;
 /* renamed from: pxl  reason: default package */
 /* loaded from: classes2.dex */
 public final class pxl extends bmo implements IInterface {
-    public final /* synthetic */ Activity a;
-    public final /* synthetic */ PendingIntent b;
-    public final /* synthetic */ int c;
+    public /* synthetic */ Activity a;
+    public /* synthetic */ PendingIntent b;
+    public /* synthetic */ int c;
 
     public pxl() {
         super("com.google.vr.vrcore.common.api.ITransitionCallbacks");

@@ -36,7 +36,7 @@ public final class pvz implements pwo {
         }
         try {
             return pqlVar.d(h).j();
-        } catch (ppp e) {
+        } catch (Exception e) {
             Log.e(a, "Error reading params from ContentProvider", e);
             return null;
         }

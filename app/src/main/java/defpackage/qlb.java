@@ -9,9 +9,9 @@ import java.util.function.Consumer;
 /* loaded from: classes2.dex */
 public final class qlb implements Iterator {
     public boolean a;
-    private final int b;
+    private int b;
     private int c;
-    private final int d;
+    private int d;
 
     public qlb() {
     }

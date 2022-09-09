@@ -36,7 +36,7 @@ public final class pqz implements Iterator {
         return (poa) pocVar;
     }
 
-    @Override // java.util.Iterator, java.util.Iterator
+    //@Override // java.util.Iterator, java.util.Iterator
     /* renamed from: a */
     public final poa mo197next() {
         poa poaVar;
@@ -65,6 +65,11 @@ public final class pqz implements Iterator {
     @Override // java.util.Iterator, java.util.Iterator
     public final boolean hasNext() {
         return this.b != null;
+    }
+
+    @Override
+    public Object next() {
+        return mo197next();
     }
 
     @Override // java.util.Iterator, java.util.Iterator

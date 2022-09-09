@@ -65,10 +65,10 @@ public final class jrk implements pys {
                 return new mip((lnd) this.a.mo37get());
             case 17:
                 final mip mipVar = (mip) this.a.mo37get();
-                return lnb.c(new lij(null, null) { // from class: lus
+                return lnb.c(new lij() { // from class: lus
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        mip mipVar2 = mip.this;
+                        mip mipVar2 = mipVar;
                         if (((Rect) ((lzr) obj).d(CaptureResult.SCALER_CROP_REGION)) == null) {
                             return;
                         }

@@ -31,14 +31,14 @@ public final class pwt implements Runnable {
                 if (f) {
                     return;
                 }
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 Log.e("DaydreamApi", "RemoteException while launching VR transition: ", e);
             }
         }
         Log.w("DaydreamApi", "Can't launch callbacks via DaydreamManager, sending manually");
         try {
             this.b.b();
-        } catch (RemoteException e2) {
+        } catch (Exception e2) {
         }
     }
 }

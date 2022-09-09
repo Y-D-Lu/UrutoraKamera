@@ -10,7 +10,7 @@ final class qsi implements qsw {
         this.a = qsoVar;
     }
 
-    private static final boolean c(Object obj) {
+    private static final boolean c(Object obj) throws Throwable {
         if (obj instanceof qta) {
             qta qtaVar = (qta) obj;
             if (qtaVar.a != null) {
@@ -24,12 +24,20 @@ final class qsi implements qsw {
     @Override // defpackage.qsw
     public final Object a(qlh qlhVar) {
         if (this.b != qsp.d) {
-            return Boolean.valueOf(c(this.b));
+            try {
+                return Boolean.valueOf(c(this.b));
+            } catch (Throwable e) {
+                e.printStackTrace();
+            }
         }
         Object a = this.a.a();
         this.b = a;
         if (a != qsp.d) {
-            return Boolean.valueOf(c(this.b));
+            try {
+                return Boolean.valueOf(c(this.b));
+            } catch (Throwable e) {
+                e.printStackTrace();
+            }
         }
         qpo j = qmd.j(qmd.c(qlhVar));
         qsk qskVar = new qsk(this, j);
@@ -70,6 +78,6 @@ final class qsi implements qsw {
             this.b = qsp.d;
             return obj;
         }
-        throw qvq.b(((qta) obj).e());
+        return null;
     }
 }

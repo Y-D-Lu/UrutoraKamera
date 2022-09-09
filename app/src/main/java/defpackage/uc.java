@@ -5,7 +5,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /* renamed from: uc  reason: default package */
 /* loaded from: classes2.dex */
 public final class uc {
-    final /* synthetic */ cu c;
+    /* synthetic */ cu c;
     public final CopyOnWriteArrayList b = new CopyOnWriteArrayList();
     public boolean a = false;
 

@@ -25,7 +25,8 @@ public final class jud implements Comparable {
 
     @Override // java.lang.Comparable
     /* renamed from: a */
-    public final int compareTo(jud judVar) {
+    public final int compareTo(Object obj) {
+        jud judVar = (jud) obj;
         int length;
         int i = 0;
         while (true) {

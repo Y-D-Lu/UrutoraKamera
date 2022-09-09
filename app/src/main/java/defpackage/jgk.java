@@ -16,8 +16,7 @@ import org.codeaurora.snapcam.R;
 
 import java.util.EnumMap;
 import java.util.Map;
-
-import java.util.Collection;
+import java.util.Set;
 
 /* renamed from: jgk  reason: default package */
 /* loaded from: classes.dex */
@@ -83,7 +82,7 @@ public final class jgk implements jgq, jgr, jfy, fik, fie {
         modeSwitcher.j = jgbVar;
         modeSwitcher.b = this;
         enumMap.putAll(map);
-        for (jrl jrlVar : enumMap.keySet()) {
+        for (jrl jrlVar : (Set<jrl>) enumMap.keySet()) {
             i(jrlVar);
         }
     }
@@ -169,7 +168,7 @@ public final class jgk implements jgq, jgr, jfy, fik, fie {
     @Override // defpackage.jgq
     public final void j(jrl jrlVar) {
         obr.aK(!x(jrlVar), "Mode %s already configured in More Modes", jrlVar);
-        this.c.put((EnumMap) jrlVar, (jrl) this.d);
+        this.c.put(jrlVar, this.d);
         this.d.c(jrlVar);
         s(jrlVar);
     }
@@ -178,7 +177,7 @@ public final class jgk implements jgq, jgr, jfy, fik, fie {
         obr.aK(!B(jrlVar), "Mode %s already configured in mode list", jrlVar);
         MoreModesGrid moreModesGrid = this.e;
         moreModesGrid.getClass();
-        this.c.put((EnumMap) jrlVar, (jrl) moreModesGrid);
+        this.c.put(jrlVar, moreModesGrid);
         MoreModesGrid moreModesGrid2 = this.e;
         lar.a();
         boolean z = false;
@@ -199,7 +198,7 @@ public final class jgk implements jgq, jgr, jfy, fik, fie {
     public final void l(jrl jrlVar) {
         obr.aF(!B(jrl.MORE_MODES));
         this.d.c(jrl.MORE_MODES);
-        this.c.put((EnumMap) jrl.MORE_MODES, (jrl) this.d);
+        this.c.put(jrl.MORE_MODES, this.d);
         ModeSwitcher modeSwitcher = this.d;
         jrlVar.getClass();
         modeSwitcher.k = jrlVar;
@@ -223,7 +222,7 @@ public final class jgk implements jgq, jgr, jfy, fik, fie {
 
     @Override // defpackage.jgq
     public final void n(boolean z) {
-        float f;
+        float f = 0.0f;
         MoreModesGrid moreModesGrid = this.e;
         if (moreModesGrid != null) {
             if (z) {

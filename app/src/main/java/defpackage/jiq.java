@@ -13,7 +13,7 @@ final class jiq implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        for (jik jikVar : this.a) {
+        for (jik jikVar : (List<jik>) this.a) {
             jikVar.a();
         }
     }

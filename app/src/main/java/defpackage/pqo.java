@@ -3,12 +3,12 @@ package defpackage;
 import com.google.android.apps.camera.bottombar.R;
 import com.hdrindicator.DisplayHelper;
 
-import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import sun.misc.Unsafe;
 
@@ -329,10 +329,10 @@ public final class pqo implements prb {
     private final void X(Object obj, byte[] bArr, int i, int i2, pnr pnrVar) {
         byte b2;
         int i3;
-        int i4;
-        int i5;
-        Unsafe unsafe;
-        int i6;
+        int i4 = 0;
+        int i5 = 0;
+        Unsafe unsafe = null;
+        int i6 = 0;
         int i7;
         int i8;
         Unsafe unsafe2;
@@ -358,7 +358,7 @@ public final class pqo implements prb {
             byte b3 = bArr2[i15];
             if (b3 < 0) {
                 i3 = plk.y(b3, bArr2, i20, pnrVar2);
-                b2 = pnrVar2.a;
+                b2 = (byte) pnrVar2.a;
             } else {
                 b2 = b3;
                 i3 = i20;
@@ -707,7 +707,11 @@ public final class pqo implements prb {
                         int i30 = i19;
                         unsafe = unsafe5;
                         i6 = i27;
-                        i15 = w(obj, bArr, i3, i2, b2, i5, i22, i27, i23, B, D, pnrVar);
+                        try {
+                            i15 = w(obj, bArr, i3, i2, b2, i5, i22, i27, i23, B, D, pnrVar);
+                        } catch (ppp ex) {
+                            ex.printStackTrace();
+                        }
                         if (i15 != i28) {
                             pqoVar = this;
                             obj2 = obj;
@@ -732,7 +736,11 @@ public final class pqo implements prb {
                         unsafe = unsafe5;
                         i6 = i27;
                         if (B != 50) {
-                            i15 = v(obj, bArr, i10, i2, b2, i5, i22, i23, B, D, i6, pnrVar);
+                            try {
+                                i15 = v(obj, bArr, i10, i2, b2, i5, i22, i23, B, D, i6, pnrVar);
+                            } catch (ppp ex) {
+                                ex.printStackTrace();
+                            }
                             if (i15 != i10) {
                                 pqoVar = this;
                                 obj2 = obj;
@@ -751,7 +759,11 @@ public final class pqo implements prb {
                                 i19 = i11;
                             }
                         } else if (i22 == 2) {
-                            i15 = u(obj, bArr, i10, i2, i6, D, pnrVar);
+                            try {
+                                i15 = u(obj, bArr, i10, i2, i6, D, pnrVar);
+                            } catch (ppp ex) {
+                                ex.printStackTrace();
+                            }
                             if (i15 != i10) {
                                 pqoVar = this;
                                 obj2 = obj;
@@ -796,7 +808,11 @@ public final class pqo implements prb {
         if (i15 == i2) {
             return;
         }
-        throw ppp.g();
+        try {
+            throw ppp.g();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0030  */
@@ -858,7 +874,7 @@ public final class pqo implements prb {
                     pqg.c(ai, aN, entry.getKey(), entry.getValue());
                     plk.aD(obj2, s, plk.l(ai, bArr));
                     it.remove();
-                } catch (IOException e) {
+                } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
             }
@@ -2321,7 +2337,7 @@ public final class pqo implements prb {
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r1v5, types: [int] */
-    private final int u(Object obj, byte[] bArr, int i, int i2, int i3, long j, pnr pnrVar) {
+    private final int u(Object obj, byte[] bArr, int i, int i2, int i3, long j, pnr pnrVar) throws ppp {
         Unsafe unsafe = b;
         Object H = H(i3);
         Object object = unsafe.getObject(obj, j);
@@ -2346,7 +2362,7 @@ public final class pqo implements prb {
             byte b2 = bArr[x];
             if (b2 < 0) {
                 i6 = plk.y(b2, bArr, i6, pnrVar);
-                b2 = pnrVar.a;
+                b2 = (byte) pnrVar.a;
             }
             int i7 = b2 & 7;
             switch (b2 >>> 3) {
@@ -2378,7 +2394,7 @@ public final class pqo implements prb {
         return i5;
     }
 
-    private final int v(Object obj, byte[] bArr, int i, int i2, int i3, int i4, int i5, int i6, int i7, long j, int i8, pnr pnrVar) {
+    private final int v(Object obj, byte[] bArr, int i, int i2, int i3, int i4, int i5, int i6, int i7, long j, int i8, pnr pnrVar) throws ppp {
         Unsafe unsafe = b;
         long j2 = this.c[i8 + 2] & 1048575;
         switch (i7) {
@@ -2522,8 +2538,8 @@ public final class pqo implements prb {
         return i;
     }
 
-    private final int w(Object obj, byte[] bArr, int i, int i2, int i3, int i4, int i5, int i6, long j, int i7, long j2, pnr pnrVar) {
-        int z;
+    private final int w(Object obj, byte[] bArr, int i, int i2, int i3, int i4, int i5, int i6, long j, int i7, long j2, pnr pnrVar) throws ppp {
+        int z = 0;
         int i8 = i;
         Unsafe unsafe = b;
         ppm ppmVar = (ppm) unsafe.getObject(obj, j2);
@@ -3548,7 +3564,7 @@ public final class pqo implements prb {
 
     @Override // defpackage.prb
     public final boolean j(Object obj, Object obj2) {
-        boolean q;
+        boolean q = false;
         int length = this.c.length;
         for (int i = 0; i < length; i += 3) {
             int C = C(i);

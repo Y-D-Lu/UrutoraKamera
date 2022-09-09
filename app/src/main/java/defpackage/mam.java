@@ -5,11 +5,11 @@ import com.google.android.apps.camera.bottombar.R;
 /* renamed from: mam  reason: default package */
 /* loaded from: classes2.dex */
 public final class mam {
-    public final long a;
-    public final long b;
-    public final String c;
-    public final mcj d;
-    public final mce e;
+    public long a;
+    public long b;
+    public String c;
+    public mcj d;
+    public mce e;
 
     public mam() {
     }

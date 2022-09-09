@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /* renamed from: jsa  reason: default package */
 /* loaded from: classes2.dex */
@@ -26,7 +27,7 @@ public final class jsa {
             arrayList.add(linearLayout.getChildAt(i));
         }
         linearLayout.removeAllViews();
-        for (View view : obr.al(arrayList)) {
+        for (View view : (List<View>) obr.al(arrayList)) {
             linearLayout.addView(view);
         }
     }

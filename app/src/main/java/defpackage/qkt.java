@@ -12,7 +12,7 @@ import java.util.function.Consumer;
 public final class qkt implements Iterator {
     public Object a;
     public int b = 2;
-    private final ArrayDeque c;
+    private ArrayDeque c;
 
     public qkt() {
     }
@@ -66,6 +66,9 @@ public final class qkt implements Iterator {
                             } else if (!qno.c(a, qmhVar.a) && a.isDirectory() && this.c.size() < Integer.MAX_VALUE) {
                                 this.c.push(b(a));
                             }
+                        }
+                        if (false) {
+                            break;
                         }
                     }
                     if (file != null) {

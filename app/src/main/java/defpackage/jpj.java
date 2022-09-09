@@ -31,7 +31,7 @@ public final class jpj implements jqn {
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 int argb;
-                ivf ivfVar2 = ivf.this;
+                ivf ivfVar2 = ivfVar;
                 CaptureFrameUi captureFrameUi2 = captureFrameUi;
                 synchronized (ivfVar2.d) {
                     float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();

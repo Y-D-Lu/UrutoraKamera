@@ -16,7 +16,7 @@ public final class jpf implements jqn {
     public final void a() {
         lar.a();
         if (!this.b) {
-            for (jqn jqnVar : this.a) {
+            for (jqn jqnVar : (Set<jqn>) this.a) {
                 jqnVar.a();
             }
             this.b = true;

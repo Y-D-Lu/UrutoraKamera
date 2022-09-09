@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Context;
+import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 import android.os.SystemClock;
@@ -52,8 +53,11 @@ public final class vr {
             sb.append(str2);
             sb.toString();
             return voVar;
+        } catch (CameraAccessException e) {
+            e.printStackTrace();
         } finally {
             Trace.endSection();
         }
+        return null;
     }
 }

@@ -11,7 +11,7 @@ public final class qsh {
 
     static {
         Object L;
-        Object invoke;
+        Object invoke = null;
         Object obj = null;
         try {
             Looper mainLooper = Looper.getMainLooper();
@@ -26,9 +26,8 @@ public final class qsh {
                 obj = L;
             }
             qsg qsgVar = (qsg) obj;
-            return;
         }
-        throw new NullPointerException("null cannot be cast to non-null type android.os.Handler");
+        //throw new NullPointerException("null cannot be cast to non-null type android.os.Handler");
     }
 
     public static final qsg a(Handler handler) {

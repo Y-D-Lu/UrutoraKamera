@@ -16,7 +16,7 @@ public final class qpw extends qqx {
     static {
         String str;
         int intValue;
-        boolean z;
+        boolean z = false;
         Integer num = null;
         try {
             str = System.getProperty("kotlinx.coroutines.default.parallelism");

@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -49,8 +51,8 @@ public final class pvl implements pvn {
         pvf pvfVar2 = new pvf();
         pvfVar2.e("X-Goog-Upload-Protocol", "resumable");
         pvfVar2.e("X-Goog-Upload-Command", str);
-        for (String str2 : pvfVar.c()) {
-            for (String str3 : pvfVar.b(str2)) {
+        for (String str2 : (Set<String>) pvfVar.c()) {
+            for (String str3 : (List<String>) pvfVar.b(str2)) {
                 pvfVar2.e(str2, str3);
             }
         }
@@ -67,7 +69,7 @@ public final class pvl implements pvn {
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
                     pvg b;
-                    pvi pviVar2 = pvi.this;
+                    pvi pviVar2 = pviVar;
                     try {
                         synchronized (pviVar2) {
                         }
@@ -90,7 +92,7 @@ public final class pvl implements pvn {
                                         } catch (IOException e) {
                                             b = pviVar2.b();
                                         }
-                                    } catch (IOException e2) {
+                                    } catch (Exception e2) {
                                         throw new pvp(pvo.REQUEST_BODY_READ_ERROR, e2);
                                     }
                                 }
@@ -122,7 +124,7 @@ public final class pvl implements pvn {
                         } catch (IOException e4) {
                             try {
                                 b = pviVar2.b();
-                            } catch (pvp e5) {
+                            } catch (Exception e5) {
                                 throw new pvp(pvo.CONNECTION_ERROR, e4);
                             }
                         }
@@ -156,7 +158,10 @@ public final class pvl implements pvn {
         } catch (InterruptedException | ExecutionException e) {
             String valueOf = String.valueOf(e.getMessage());
             throw new RuntimeException(valueOf.length() != 0 ? "Unexpected error occurred: ".concat(valueOf) : new String("Unexpected error occurred: "));
+        } catch (defpackage.pvp pvp) {
+            pvp.printStackTrace();
         }
+        return null;
     }
 
     private final synchronized void h() {
@@ -172,7 +177,11 @@ public final class pvl implements pvn {
             }
         }
         if (i == 3) {
-            throw new pvp(pvo.CANCELED, "");
+            try {
+                throw new pvp(pvo.CANCELED, "");
+            } catch (pvp ex) {
+                ex.printStackTrace();
+            }
         }
         boolean z = true;
         if (i != 1) {
@@ -199,7 +208,11 @@ public final class pvl implements pvn {
             this.j = j2 + j2;
             return;
         }
-        throw pvpVar;
+        try {
+            throw pvpVar;
+        } catch (pvp ex) {
+            ex.printStackTrace();
+        }
     }
 
     private final void j() {
@@ -217,9 +230,14 @@ public final class pvl implements pvn {
     private final boolean l() {
         try {
             return this.h.g();
-        } catch (IOException e) {
-            throw new pvp(pvo.REQUEST_BODY_READ_ERROR, "Could not call hasMoreData() on upload stream.", e);
+        } catch (Exception e) {
+            try {
+                throw new pvp(pvo.REQUEST_BODY_READ_ERROR, "Could not call hasMoreData() on upload stream.", e);
+            } catch (pvp ex) {
+                ex.printStackTrace();
+            }
         }
+        return false;
     }
 
     private static final boolean m(pvg pvgVar) {
@@ -372,8 +390,8 @@ public final class pvl implements pvn {
     }
 
     public final pvg d() {
-        qks qksVar;
-        pvg f;
+        qks qksVar = null;
+        pvg f = null;
         qbn qbnVar;
         synchronized (this) {
         }
@@ -382,11 +400,12 @@ public final class pvl implements pvn {
             try {
                 qksVar = null;
                 f = f(this.g, "start", new pvm(oje.c(null)));
-            } catch (pvp e) {
-                if (!e.a()) {
-                    throw e;
-                }
-                i(e);
+            } catch (Exception e) {
+                e.printStackTrace();
+//                if (!e.a()) {
+//                    throw e;
+//                }
+//                i(e);
             }
             if (n(f)) {
                 return f;
@@ -424,8 +443,12 @@ public final class pvl implements pvn {
                         }
                     }
                     return b(false);
-                } catch (MalformedURLException e3) {
-                    throw new pvp(pvo.SERVER_ERROR, "Server returned an invalid upload url.", e3);
+                } catch (MalformedURLException | pvp e3) {
+                    try {
+                        throw new pvp(pvo.SERVER_ERROR, "Server returned an invalid upload url.", e3);
+                    } catch (pvp ex) {
+                        ex.printStackTrace();
+                    }
                 }
             } else if (m(f)) {
                 return f;

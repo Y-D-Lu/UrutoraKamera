@@ -242,7 +242,11 @@ public final class qwb implements Executor, Closeable {
                 if (qwaVar != i2) {
                     while (qwaVar.isAlive()) {
                         LockSupport.unpark(qwaVar);
-                        qwaVar.join(10000L);
+                        try {
+                            qwaVar.join(10000L);
+                        } catch (InterruptedException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     boolean z = qql.a;
                     qwk qwkVar = qwaVar.a;

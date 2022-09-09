@@ -47,15 +47,15 @@ public final class jgi implements ViewTreeObserver.OnGlobalLayoutListener {
                 jlzVar.g(new Runnable() { // from class: jgg
                     @Override // java.lang.Runnable
                     public final void run() {
-                        jgk.this.m.b("TRANSLATE_TOOLTIP");
+                        jgkVar2.m.b("TRANSLATE_TOOLTIP");
                     }
                 }, pgr.a);
                 final jgk jgkVar3 = jgiVar.b;
                 jlzVar.d(new Supplier() { // from class: jgh
                     @Override // java.util.function.Supplier
                     /* renamed from: get */
-                    public final Object mo291get() {
-                        jgk jgkVar4 = jgk.this;
+                    public final Object get() {
+                        jgk jgkVar4 = jgkVar3;
                         int a = jgkVar4.m.a("TRANSLATE_TOOLTIP");
                         boolean z = false;
                         boolean z2 = a <= 6 && a % 3 == 0;

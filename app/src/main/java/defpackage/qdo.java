@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: qdo  reason: default package */
 /* loaded from: classes2.dex */
 public final class qdo implements qdg {
-    public final qbq a;
-    public final Object[] b;
+    public qbq a;
+    public Object[] b;
     int c;
     public boolean d;
     public volatile boolean e;

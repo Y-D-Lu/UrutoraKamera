@@ -100,7 +100,7 @@ public final class s {
         }
         sb.append(str.toLowerCase(Locale.ENGLISH));
         boolean z = true;
-        for (r rVar : this.a) {
+        for (r rVar : (Set<r>) this.a) {
             if (!z) {
                 sb.append(",");
             }

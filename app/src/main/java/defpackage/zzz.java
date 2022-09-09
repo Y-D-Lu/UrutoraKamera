@@ -24,7 +24,11 @@ public class zzz implements Preference.OnPreferenceClickListener {
     }
 
     private void a(String str) {
-        processFile(str);
+        try {
+            processFile(str);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */

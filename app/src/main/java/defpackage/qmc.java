@@ -24,7 +24,7 @@ public final class qmc {
                 Class<?>[] parameterTypes = method2.getParameterTypes();
                 parameterTypes.getClass();
                 if (parameterTypes.length == 1) {
-                    method = parameterTypes[0];
+                    method = method2;
                 }
                 if (qno.c(method, Throwable.class)) {
                     method = method2;
@@ -37,7 +37,7 @@ public final class qmc {
         for (Method method3 : methods) {
             method3.getClass();
             if (qno.c(method3.getName(), "getSuppressed")) {
-                return;
+                break;
             }
         }
     }

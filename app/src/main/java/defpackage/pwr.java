@@ -44,7 +44,7 @@ public final class pwr implements ServiceConnection {
             }
             y.recycle();
             daydreamApi2.f = pxkVar;
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.e("DaydreamApi", "RemoteException in onServiceConnected");
         }
         if (this.a.f == null) {

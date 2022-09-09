@@ -22,7 +22,7 @@ public final class um {
     public final transient Map f = new HashMap();
     public final Map g = new HashMap();
     public final Bundle h = new Bundle();
-    final /* synthetic */ ub i;
+    /* synthetic */ ub i;
 
     public um() {
     }

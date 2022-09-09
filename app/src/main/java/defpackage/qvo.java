@@ -29,7 +29,7 @@ public class qvo extends qpg implements qlv {
     }
 
     @Override // defpackage.qpg
-    protected void hi(Object obj) {
+    public void hi(Object obj) {
         qlh qlhVar = this.f;
         qlhVar.resumeWith(qmd.h(obj, qlhVar));
     }

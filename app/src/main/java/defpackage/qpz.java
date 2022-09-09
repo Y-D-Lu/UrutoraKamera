@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: qpz  reason: default package */
 /* loaded from: classes2.dex */
 public final class qpz {
-    public final qmu a;
+    public qmu a;
 
     public final boolean equals(Object obj) {
         throw null;

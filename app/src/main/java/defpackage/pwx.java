@@ -59,7 +59,7 @@ public final class pwx implements Runnable {
             }
             Log.w("DaydreamApi", "Failed to exit VR: Invalid request.");
             this.a.run();
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             String valueOf = String.valueOf(e);
             StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 49);
             sb.append("Failed to exit VR: RemoteException while exiting:");

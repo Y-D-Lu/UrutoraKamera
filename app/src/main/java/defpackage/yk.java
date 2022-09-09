@@ -290,7 +290,6 @@ public class yk {
         }
         yj yjVar4 = this.K.e;
         return yjVar4 != null && yjVar4.c && (yjVar = this.M.e) != null && yjVar.c && (yjVar.a() - this.M.b()) - (this.K.e.a() + this.K.b()) >= i2;
-        return false;
     }
 
     public final boolean I() {

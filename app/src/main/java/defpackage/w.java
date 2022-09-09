@@ -13,7 +13,7 @@ final class w implements Serializable {
 
     public final void a(v vVar) {
         String str = vVar.a;
-        for (v vVar2 : this.b) {
+        for (v vVar2 : (List<v>) this.b) {
             if (str.equals(vVar2.a)) {
                 String valueOf = String.valueOf(str);
                 throw new IllegalArgumentException(valueOf.length() != 0 ? "Duplicate keyword: ".concat(valueOf) : new String("Duplicate keyword: "));
@@ -24,7 +24,7 @@ final class w implements Serializable {
 
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        for (v vVar : this.b) {
+        for (v vVar : (List<v>) this.b) {
             if (sb.length() != 0) {
                 sb.append(";  ");
             }

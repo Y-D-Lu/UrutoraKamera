@@ -135,7 +135,7 @@ public class kbx extends kbk {
             return;
         }
         this.E = i;
-        for (kaq kaqVar : this.y) {
+        for (kaq kaqVar : (Set<kaq>) this.y) {
             kaqVar.p(i);
         }
     }
@@ -305,7 +305,6 @@ public class kbx extends kbk {
                         i2 = kae.TELE.ordinal();
                         break;
                     }
-                    break;
                 default:
                     i2 = ordinal;
                     break;

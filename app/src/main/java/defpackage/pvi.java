@@ -6,6 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* renamed from: pvi  reason: default package */
 /* loaded from: classes2.dex */
@@ -38,8 +39,8 @@ public final class pvi implements pvn {
             } else {
                 httpURLConnection.setChunkedStreamingMode(0);
             }
-            for (String str2 : pvfVar.c()) {
-                for (String str3 : pvfVar.b(str2)) {
+            for (String str2 : (Set<String>) pvfVar.c()) {
+                for (String str3 : (List<String>) pvfVar.b(str2)) {
                     httpURLConnection.addRequestProperty(str2, str3);
                 }
             }
@@ -81,8 +82,13 @@ public final class pvi implements pvn {
             }
             return new pvg(responseCode, pvfVar, errorStream);
         } catch (IOException e2) {
-            throw new pvp(pvo.CONNECTION_ERROR, "Error while reading response code.", e2);
+            try {
+                throw new pvp(pvo.CONNECTION_ERROR, "Error while reading response code.", e2);
+            } catch (pvp ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     @Override // defpackage.pvn
@@ -103,7 +109,11 @@ public final class pvi implements pvn {
             }
         }
         if (i == 3) {
-            throw new pvp(pvo.CANCELED, "");
+            try {
+                throw new pvp(pvo.CANCELED, "");
+            } catch (pvp ex) {
+                ex.printStackTrace();
+            }
         }
         boolean z = true;
         if (i != 1) {
@@ -120,9 +130,14 @@ public final class pvi implements pvn {
     public final boolean f() {
         try {
             return this.b.g();
-        } catch (IOException e) {
-            throw new pvp(pvo.REQUEST_BODY_READ_ERROR, e);
+        } catch (Exception e) {
+            try {
+                throw new pvp(pvo.REQUEST_BODY_READ_ERROR, e);
+            } catch (pvp ex) {
+                ex.printStackTrace();
+            }
         }
+        return false;
     }
 
     @Override // defpackage.pvn

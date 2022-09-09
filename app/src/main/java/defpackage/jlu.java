@@ -46,12 +46,12 @@ public final class jlu implements AutoCloseable, elv {
         jmnVar.setOnClickListener(new View.OnClickListener() { // from class: jmh
             @Override // android.view.View.OnClickListener
             public final void onClick(View view3) {
-                jmn jmnVar2 = jmn.this;
+                jmn jmnVar2 = jmnVar;
                 Runnable runnable = jmnVar2.h;
                 if (runnable != null) {
                     runnable.run();
                 }
-                for (Runnable runnable2 : jmnVar2.d) {
+                for (Runnable runnable2 : (List<Runnable>) jmnVar2.d) {
                     runnable2.run();
                 }
             }
@@ -231,7 +231,7 @@ public final class jlu implements AutoCloseable, elv {
             popupWindow.setTouchInterceptor(new View.OnTouchListener() { // from class: jmi
                 @Override // android.view.View.OnTouchListener
                 public final boolean onTouch(View view2, MotionEvent motionEvent) {
-                    jmn jmnVar2 = jmn.this;
+                    jmn jmnVar2 = jmnVar;
                     if (motionEvent.getAction() != 1) {
                         if (motionEvent.getAction() != 4) {
                             return false;
@@ -246,7 +246,7 @@ public final class jlu implements AutoCloseable, elv {
                     if (jmnVar2.g) {
                         jmnVar2.h.run();
                     }
-                    for (Runnable runnable : jmnVar2.d) {
+                    for (Runnable runnable : (List<Runnable>) jmnVar2.d) {
                         runnable.run();
                     }
                     return true;
@@ -255,7 +255,7 @@ public final class jlu implements AutoCloseable, elv {
             popupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() { // from class: jmj
                 @Override // android.widget.PopupWindow.OnDismissListener
                 public final void onDismiss() {
-                    List<Pair> list = jmn.this.t;
+                    List<Pair> list = jmnVar.t;
                     if (list == null) {
                         return;
                     }
@@ -341,7 +341,7 @@ public final class jlu implements AutoCloseable, elv {
                 jmnVar2.postDelayed(new Runnable() { // from class: jls
                     @Override // java.lang.Runnable
                     public final void run() {
-                        jmn jmnVar3 = jmn.this;
+                        jmn jmnVar3 = jmnVar2;
                         jlt jltVar2 = jltVar;
                         PopupWindow popupWindow2 = jmnVar3.f;
                         if (popupWindow2 == null || !popupWindow2.isShowing()) {

@@ -57,7 +57,7 @@ public final class jy implements jv {
     public final Menu f(Menu menu) {
         Menu menu2 = (Menu) this.d.get(menu);
         if (menu2 == null) {
-            ln lnVar = new ln(this.b, menu);
+            ln lnVar = new ln(this.b, (er) menu);
             this.d.put(menu, lnVar);
             return lnVar;
         }

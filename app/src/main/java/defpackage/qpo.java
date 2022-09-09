@@ -92,7 +92,6 @@ public final class qpo extends qqo implements qpn, qlv {
                         } finally {
                         }
                     }
-                    return;
                 default:
                     throw new IllegalStateException("Already resumed".toString());
             }
@@ -265,9 +264,17 @@ public final class qpo extends qqo implements qpn, qlv {
                     if (h instanceof qpy) {
                         Throwable th = ((qpy) h).b;
                         if (!qql.b) {
-                            throw th;
+                            try {
+                                throw th;
+                            } catch (Throwable ex) {
+                                ex.printStackTrace();
+                            }
                         }
-                        throw qvq.a(th, this);
+                        try {
+                            throw qvq.a(th, this);
+                        } catch (Throwable ex) {
+                            ex.printStackTrace();
+                        }
                     } else if (!qnm.e(this.e) || (qrgVar = (qrg) this.f.get(qrg.c)) == null || qrgVar.hl()) {
                         return i(h);
                     } else {
@@ -276,7 +283,11 @@ public final class qpo extends qqo implements qpn, qlv {
                         if (!qql.b) {
                             throw m;
                         }
-                        throw qvq.a(m, this);
+                        try {
+                            throw qvq.a(m, this);
+                        } catch (Throwable ex) {
+                            ex.printStackTrace();
+                        }
                     }
             }
         } while (!this.b.d(0, 1));

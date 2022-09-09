@@ -40,7 +40,7 @@ public final class qun extends qlu implements qts, qlv {
                     ArrayList<String> arrayList = new ArrayList();
                     for (Object obj2 : c) {
                         if (!qno.j((String) obj2)) {
-                            arrayList.add(obj2);
+                            arrayList.add((String) obj2);
                         }
                     }
                     ArrayList arrayList2 = new ArrayList(qmd.B(arrayList));

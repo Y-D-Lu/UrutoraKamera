@@ -223,12 +223,11 @@ public final class pvy {
             }
             try {
                 return pqlVar.d(bArr).j();
-            } catch (ppp e4) {
+            } catch (Exception e4) {
                 Log.e(a, "Error reading params from ContentProvider", e4);
                 return null;
             }
         } catch (Throwable th2) {
-            th = th2;
             if (bufferedInputStream != null) {
                 try {
                     bufferedInputStream.close();
@@ -236,8 +235,8 @@ public final class pvy {
                 }
             }
             try {
-                throw th;
-            } catch (FileNotFoundException e6) {
+                throw th2;
+            } catch (Exception e6) {
                 if (z) {
                     String.valueOf(String.valueOf(e6)).length();
                     bArr = null;
@@ -246,6 +245,7 @@ public final class pvy {
                 }
             }
         }
+        return null;
     }
 
     private static File f(String str) {

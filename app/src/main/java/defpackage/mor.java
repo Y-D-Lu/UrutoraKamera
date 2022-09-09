@@ -15,7 +15,7 @@ public final class mor extends moq {
         return new mor(mmfVar.c());
     }
 
-    @Override // defpackage.moq
+    //@Override // defpackage.moq
     public final /* bridge */ /* synthetic */ moq a(mmf mmfVar) {
         return c(mmfVar);
     }

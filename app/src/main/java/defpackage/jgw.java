@@ -142,7 +142,7 @@ public final class jgw implements jgu {
         notificationChipView.g = new Runnable() { // from class: jgy
             @Override // java.lang.Runnable
             public final void run() {
-                AnimatorSet animatorSet = NotificationChipView.this.b.b;
+                AnimatorSet animatorSet = notificationChipView.b.b;
                 if (animatorSet != null) {
                     animatorSet.start();
                 }
@@ -151,7 +151,7 @@ public final class jgw implements jgu {
         ((ViewGroup) notificationChipView.getParent()).addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: jgx
             @Override // android.view.View.OnLayoutChangeListener
             public final void onLayoutChange(View view, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9) {
-                NotificationChipView.this.b();
+                notificationChipView.b();
             }
         });
         jro b = jro.b(200, new LinearInterpolator());

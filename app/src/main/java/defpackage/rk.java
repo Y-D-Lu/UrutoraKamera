@@ -8,6 +8,10 @@ import android.content.res.Resources;
 /* renamed from: rk  reason: default package */
 /* loaded from: classes2.dex */
 public final class rk extends ContextWrapper {
+    public rk(Context base) {
+        super(base);
+    }
+
     public static void a(Context context) {
         if ((context instanceof rk) || (context.getResources() instanceof rm)) {
             return;

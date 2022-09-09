@@ -21,7 +21,7 @@ public final class quz extends qqo implements qlv, qlh {
     /* JADX WARN: Type inference failed for: r0v0, types: [qlv, qlh] */
     @Override // defpackage.qlv
     public final qlv getCallerFrame() {
-        return this.b;
+        return (qlv) this.b;
     }
 
     @Override // defpackage.qlh

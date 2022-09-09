@@ -46,7 +46,7 @@ public final class irk implements pys {
                 };
             case 3:
                 ((ddf) this.a.mo37get()).j(dec.b);
-                return Boolean.valueOf((boolean) Helper.MenuValue("pref_track_focus_key"));
+                return Boolean.valueOf(Helper.MenuValue("pref_track_focus_key") != 0);
             case 4:
                 final ivj ivjVar = (ivj) this.a.mo37get();
                 ivjVar.getClass();

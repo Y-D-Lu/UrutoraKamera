@@ -1,11 +1,16 @@
 package defpackage;
 
+import android.content.Context;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 
 /* renamed from: zv  reason: default package */
 /* loaded from: classes2.dex */
 public final class zv extends ViewGroup {
+    public zv(Context context) {
+        super(context);
+    }
+
     @Override // android.view.ViewGroup
     protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateDefaultLayoutParams() {
         throw null;

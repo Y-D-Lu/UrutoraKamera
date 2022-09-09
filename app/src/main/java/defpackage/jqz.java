@@ -73,7 +73,7 @@ public final class jqz implements jqn {
             kbiVar.G.setOnTouchListener(new View.OnTouchListener() { // from class: kaz
                 @Override // android.view.View.OnTouchListener
                 public final boolean onTouch(View view, MotionEvent motionEvent) {
-                    final kbi kbiVar2 = kbi.this;
+                    final kbi kbiVar2 = kbiVar;
                     AtomicBoolean atomicBoolean2 = atomicBoolean;
                     GestureDetector gestureDetector2 = gestureDetector;
                     if (kbiVar2.H.s() || kbiVar2.M) {
@@ -101,7 +101,7 @@ public final class jqz implements jqn {
                             view.postDelayed(new Runnable() { // from class: kav
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    kbi kbiVar3 = kbi.this;
+                                    kbi kbiVar3 = kbiVar2;
                                     kbiVar3.G.dispatchTouchEvent(obtain);
                                 }
                             }, 1L);

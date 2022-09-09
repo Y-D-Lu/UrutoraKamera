@@ -372,7 +372,7 @@ public final class kbi implements kas, lie {
     }
 
     public final void N() {
-        for (kar karVar : this.X) {
+        for (kar karVar : (Set<kar>) this.X) {
             karVar.a();
         }
     }
@@ -456,12 +456,8 @@ public final class kbi implements kas, lie {
     public final float U(boolean z) {
         float floatValue;
         if (z) {
-            Float f = (Float) ohh.s(ohh.P(this.aa, new ojf(this) { // from class: kbc
-                public final /* synthetic */ kbi a;
-
-                {
-                    this.a = this;
-                }
+            Float f = (Float) ohh.s(ohh.P(this.aa, new ojf() { // from class: kbc
+                public final /* synthetic */ kbi a = kbi.this;
 
                 @Override // defpackage.ojf
                 public final boolean a(Object obj) {
@@ -476,12 +472,8 @@ public final class kbi implements kas, lie {
             f.getClass();
             floatValue = f.floatValue();
         } else {
-            Float f2 = (Float) ohh.u(ohh.P(this.aa, new ojf(this) { // from class: kbc
-                public final /* synthetic */ kbi a;
-
-                {
-                    this.a = this;
-                }
+            Float f2 = (Float) ohh.u(ohh.P(this.aa, new ojf() { // from class: kbc
+                public final /* synthetic */ kbi a = kbi.this;
 
                 @Override // defpackage.ojf
                 public final boolean a(Object obj) {
@@ -518,7 +510,7 @@ public final class kbi implements kas, lie {
                 if (this.A != lwd.FRONT || !this.L) {
                     return I();
                 }
-                return this.I.a(!this.c.k(ddx.H));
+                return this.I.a(!this.c.k(ddx.H) ? 1 : 0);
             }
         }
         return this.W.a(Z);

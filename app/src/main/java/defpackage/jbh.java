@@ -8,6 +8,8 @@ import androidx.window.layout.FoldingFeature;
 import androidx.window.layout.WindowInfoRepository;
 import androidx.window.layout.WindowLayoutInfo;
 
+import java.util.List;
+
 /* renamed from: jbh  reason: default package */
 /* loaded from: classes.dex */
 public final class jbh implements fik, fii, fij {
@@ -34,10 +36,10 @@ public final class jbh implements fik, fii, fij {
         fb fbVar = new fb() { // from class: jbg
             @Override // defpackage.fb
             public final void accept(Object obj) {
-                jbf eE;
+                jbf eE = null;
                 jbh jbhVar = jbh.this;
                 ooh e = oom.e();
-                for (DisplayFeature displayFeature : ((WindowLayoutInfo) obj).getDisplayFeatures()) {
+                for (DisplayFeature displayFeature : (List<DisplayFeature>) ((WindowLayoutInfo) obj).getDisplayFeatures()) {
                     if (displayFeature instanceof FoldingFeature) {
                         e.g((FoldingFeature) displayFeature);
                     }

@@ -55,4 +55,9 @@ public final class pyr implements qkg, pyn {
         }
         return obj;
     }
+
+    @Override
+    public Object get() {
+        return mo37get();
+    }
 }

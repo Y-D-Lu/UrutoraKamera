@@ -103,7 +103,7 @@ public final class jet implements jfn {
             this.b.setClickable(false);
             this.d.F(false);
             this.e.g(2);
-            final int i = 1;
+            int i = 1;
             this.f = true;
             final jfk jfkVar = new jfk(this.t, this.u, this.g, jrlVar);
             int indexOf = this.o.indexOf(jrlVar);
@@ -117,11 +117,12 @@ public final class jet implements jfn {
                 ValueAnimator ofInt = ValueAnimator.ofInt(250, 0);
                 ofInt.setDuration(250L);
                 if (z) {
+                    final int iFinal = i;
                     ofInt.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: jeo
                         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                         public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                             jet jetVar = jet.this;
-                            jetVar.h.y(valueAnimator.getAnimatedFraction(), i);
+                            jetVar.h.y(valueAnimator.getAnimatedFraction(), iFinal);
                         }
                     });
                 }
@@ -131,7 +132,7 @@ public final class jet implements jfn {
             Runnable runnable = new Runnable() { // from class: jeq
                 @Override // java.lang.Runnable
                 public final void run() {
-                    jfk jfkVar2 = jfk.this;
+                    jfk jfkVar2 = jfkVar;
                     jfkVar2.d.i(iji.a);
                     fjs fjsVar = jfkVar2.a;
                     poy m = pcy.g.m();
@@ -282,7 +283,7 @@ public final class jet implements jfn {
             V = pgb.h(((jcw) eurVar.N.get()).b(), new oiu() { // from class: eue
                 @Override // defpackage.oiu
                 public final Object a(Object obj) {
-                    eur eurVar2 = eur.this;
+                    eur eurVar2 = eurVar;
                     Boolean bool = (Boolean) obj;
                     bool.getClass();
                     if (bool.booleanValue()) {
@@ -312,7 +313,7 @@ public final class jet implements jfn {
                 bvkVar.e.m(jrlVar, new jpb() { // from class: bve
                     @Override // defpackage.jpb
                     public final void a(jrl jrlVar2) {
-                        bvk.this.q(jrlVar2);
+                        bvkVar.q(jrlVar2);
                     }
                 }, bvf.a);
             }

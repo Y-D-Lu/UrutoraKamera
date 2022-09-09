@@ -43,7 +43,7 @@ public final class pws implements Runnable {
             Parcel y = pxkVar.y(7, a);
             bmp.f(y);
             y.recycle();
-        } catch (RemoteException e2) {
+        } catch (Exception e2) {
             Log.e("DaydreamApi", "RemoteException while launching PendingIntent in VR.", e2);
         }
     }

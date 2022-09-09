@@ -51,14 +51,14 @@ public final class jpw implements phh {
                 imageButton.setOnClickListener(new View.OnClickListener() { // from class: jdb
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
-                        jcz jczVar = jdk.this.f;
+                        jcz jczVar = jdkVar.f;
                         jczVar.a.f(9, -1, jczVar.b);
                     }
                 });
                 jhsVar.c(new jhq() { // from class: jdd
                     @Override // defpackage.jhq
                     public final void a(jhp jhpVar) {
-                        jdk jdkVar2 = jdk.this;
+                        jdk jdkVar2 = jdkVar;
                         MarsSwitch marsSwitch2 = marsSwitch;
                         synchronized (jdkVar2) {
                             marsSwitch2.a.b();
@@ -77,7 +77,7 @@ public final class jpw implements phh {
                 marsSwitch.b.setOnClickListener(new View.OnClickListener() { // from class: jdc
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
-                        PopupMenuView popupMenuView2 = PopupMenuView.this;
+                        PopupMenuView popupMenuView2 = popupMenuView;
                         if (popupMenuView2.getVisibility() == 0) {
                             popupMenuView2.b();
                         } else {
