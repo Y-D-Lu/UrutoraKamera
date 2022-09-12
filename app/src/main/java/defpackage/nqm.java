@@ -29,7 +29,7 @@ public final class nqm implements Callable {
         ake m = this.d.a.m(e.toString());
         m.e(1, npy.r(this.b));
         int i = 2;
-        for (nnr nnrVar : this.a) {
+        for (nnr nnrVar : (Set<nnr>) this.a) {
             m.e(i, npy.r(nnrVar));
             i++;
         }

@@ -190,7 +190,7 @@ public class Matrix4f {
     }
 
     public void loadPerspective(float f, float f2, float f3, float f4) {
-        double d;
+        double d = 0;
         Double.isNaN(f);
         float tan = f3 * ((float) Math.tan((float) ((d * 3.141592653589793d) / 360.0d)));
         float f5 = -tan;

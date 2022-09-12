@@ -103,7 +103,7 @@ public final class myt extends myq implements mxo, mwa {
             return pgb.h(mxlVar.b(a3.a()), new oiu() { // from class: myr
                 @Override // defpackage.oiu
                 public final Object a(Object obj) {
-                    myt.this.u(a2, (Void) obj);
+                    mytVar.u(a2, (Void) obj);
                     return null;
                 }
             }, mytVar.e);

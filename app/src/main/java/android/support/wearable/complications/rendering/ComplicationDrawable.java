@@ -24,6 +24,7 @@ import android.util.Xml;
 
 import org.codeaurora.snapcam.R;
 import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
 
 import defpackage.sf;
 import defpackage.sh;
@@ -34,6 +35,8 @@ import defpackage.so;
 import defpackage.sq;
 import defpackage.sr;
 import defpackage.tr;
+
+import java.io.IOException;
 import java.util.Objects;
 
 /* loaded from: classes.dex */
@@ -305,7 +308,14 @@ public class ComplicationDrawable extends Drawable implements Parcelable {
         inflateStyle(false, resources, xmlPullParser);
         inflateStyle(true, resources, xmlPullParser);
         while (true) {
-            int next = xmlPullParser.next();
+            int next = 0;
+            try {
+                next = xmlPullParser.next();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            }
             if (next == 1) {
                 break;
             } else if (next == 3) {

@@ -21,7 +21,7 @@ public final class Recreator implements aec {
 
     @Override // defpackage.aec
     public final void a(aee aeeVar, adz adzVar) {
-        Class cls;
+        Class cls = null;
         if (adzVar == adz.ON_CREATE) {
             aeeVar.C().d(this);
             Bundle a = this.a.D().a("androidx.savedstate.Restarter");

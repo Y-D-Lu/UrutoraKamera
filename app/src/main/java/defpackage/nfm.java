@@ -4,8 +4,6 @@ import android.os.StrictMode;
 import android.util.Log;
 
 import java.util.Map;
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.ExecutionException;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: nfm  reason: default package */
@@ -41,7 +39,7 @@ public final class nfm {
         try {
             try {
                 nguVar = (ngu) plk.I(ngt.g(this.b, this.c, this.d, this.g).a());
-            } catch (CancellationException | ExecutionException e) {
+            } catch (Exception e) {
                 String str = this.c;
                 StringBuilder sb = new StringBuilder(String.valueOf(str).length() + 51);
                 sb.append("Unable to retrieve flag snapshot for ");
@@ -53,12 +51,8 @@ public final class nfm {
             }
             if (nguVar != null && !nguVar.b.isEmpty()) {
                 this.i = nguVar.b;
-                this.b.c().execute(new Runnable(this) { // from class: ngp
-                    public final /* synthetic */ nfm a;
-
-                    {
-                        this.a = this;
-                    }
+                this.b.c().execute(new Runnable() { // from class: ngp
+                    public final /* synthetic */ nfm a = nfm.this;
 
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -78,12 +72,8 @@ public final class nfm {
                         }
                     }
                 });
-                this.b.c().execute(new Runnable(this) { // from class: ngp
-                    public final /* synthetic */ nfm a;
-
-                    {
-                        this.a = this;
-                    }
+                this.b.c().execute(new Runnable() { // from class: ngp
+                    public final /* synthetic */ nfm a = nfm.this;
 
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -105,12 +95,8 @@ public final class nfm {
                 });
                 return ngt.c(nguVar);
             }
-            this.b.c().execute(new Runnable(this) { // from class: ngp
-                public final /* synthetic */ nfm a;
-
-                {
-                    this.a = this;
-                }
+            this.b.c().execute(new Runnable() { // from class: ngp
+                public final /* synthetic */ nfm a = nfm.this;
 
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -166,7 +152,7 @@ public final class nfm {
                 this.b.b();
                 this.b.b().a();
             }
-        } catch (CancellationException | ExecutionException e) {
+        } catch (Exception e) {
             String str = this.c;
             StringBuilder sb = new StringBuilder(String.valueOf(str).length() + 64);
             sb.append("Unable to update local snapshot for ");

@@ -72,10 +72,11 @@ public final class mwh {
                 } catch (IOException e3) {
                     bufferedReader = null;
                 } catch (Throwable th2) {
-                    th = th2;
+                    th2.printStackTrace();
                 }
             }
-        } catch (IOException e4) {
+        } catch (Exception e4) {
+            e4.printStackTrace();
         }
         return str;
     }

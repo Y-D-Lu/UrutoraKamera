@@ -15,7 +15,7 @@ import java.util.Map;
 /* renamed from: mdq  reason: default package */
 /* loaded from: classes2.dex */
 public final class mdq {
-    private static final int c = d.c("DEFAULT");
+    private static final int c = defpackage.d.c("DEFAULT");
     public final LruCache a;
     public qzd b;
     private final LruCache d;
@@ -29,7 +29,7 @@ public final class mdq {
         this.a = lruCache2;
     }
 
-    private static Map e(List list, oom oomVar) {
+    private static Map e(List list, oom oomVar) throws mdp {
         HashMap hashMap = new HashMap();
         Iterator it = list.iterator();
         while (it.hasNext()) {
@@ -59,7 +59,13 @@ public final class mdq {
         qza qzaVar = (qza) lruCache.get(valueOf);
         if (qzaVar == null) {
             if (this.b == null) {
-                this.b = c();
+                try {
+                    this.b = c();
+                } catch (mdp ex) {
+                    ex.printStackTrace();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
             }
             qzaVar = (qza) Collections.unmodifiableMap(this.b.a).get(valueOf);
             if (qzaVar != null) {
@@ -78,7 +84,7 @@ public final class mdq {
         throw new IllegalArgumentException();
     }
 
-    public final qzd c() {
+    public final qzd c() throws IOException {
         qyw qywVar;
         Context context = this.e;
         if (context != null) {
@@ -232,7 +238,7 @@ public final class mdq {
                     }
                     throw ((IOException) e4.getCause());
                 }
-            } catch (Resources.NotFoundException e5) {
+            } catch (Resources.NotFoundException | IOException e5) {
                 throw new IOException(e5);
             }
         }

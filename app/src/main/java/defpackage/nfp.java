@@ -2,7 +2,9 @@ package defpackage;
 
 import android.util.Log;
 
+import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 
 /* renamed from: nfp  reason: default package */
@@ -45,7 +47,7 @@ public final /* synthetic */ class nfp implements oiu {
                 String str3 = this.a;
                 nes nesVar3 = nfq.a;
                 poy m = nff.b.m();
-                for (Map.Entry entry : (Set<Map.Entry>) Collections.unmodifiableMap(((nff) obj).a).entrySet()) {
+                for (Map.Entry entry : (Collection<Map.Entry>) Collections.unmodifiableMap(((nff) obj).a).entrySet()) {
                     nfb nfbVar3 = (nfb) entry.getValue();
                     poy m2 = nfb.d.m();
                     if (!nfbVar3.c.equals(str3)) {
@@ -59,7 +61,7 @@ public final /* synthetic */ class nfp implements oiu {
                         nfbVar4.a |= 1;
                         nfbVar4.c = str4;
                     }
-                    for (String str5 : nfbVar3.b) {
+                    for (String str5 : (List<String>) nfbVar3.b) {
                         if (!str5.equals(str3)) {
                             m2.q(str5);
                         }

@@ -13,10 +13,10 @@ public final class nel extends ner {
     /* JADX WARN: Multi-variable type inference failed */
     @Override // defpackage.ner
     public final /* bridge */ /* synthetic */ Object a(Object obj) {
-        if (kzv.c.matcher(obj).matches()) {
+        if (kzv.c.matcher((CharSequence) obj).matches()) {
             return true;
         }
-        if (kzv.d.matcher(obj).matches()) {
+        if (kzv.d.matcher((CharSequence) obj).matches()) {
             return false;
         }
         String f = super.f();

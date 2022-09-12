@@ -87,7 +87,7 @@ public final class koj {
     private static synchronized Thread c() {
         SecurityException e;
         koi koiVar;
-        koi koiVar2;
+        koi koiVar2 = null;
         ThreadGroup threadGroup;
         synchronized (koj.class) {
             ThreadGroup threadGroup2 = Looper.getMainLooper().getThread().getThreadGroup();
@@ -123,7 +123,7 @@ public final class koj {
                             koiVar2 = null;
                             break;
                         }
-                        koiVar2 = threadArr[i];
+                        koiVar2 = (koi) threadArr[i];
                         if ("GmsDynamite".equals(koiVar2.getName())) {
                             break;
                         }

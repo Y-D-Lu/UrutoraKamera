@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -91,7 +92,7 @@ final class kms implements ServiceConnection, kmu {
             this.g.e.removeMessages(1, this.e);
             this.d = iBinder;
             this.f = componentName;
-            for (ServiceConnection serviceConnection : this.a.values()) {
+            for (ServiceConnection serviceConnection : (Collection<ServiceConnection>) this.a.values()) {
                 serviceConnection.onServiceConnected(componentName, iBinder);
             }
             this.b = 1;
@@ -104,7 +105,7 @@ final class kms implements ServiceConnection, kmu {
             this.g.e.removeMessages(1, this.e);
             this.d = null;
             this.f = componentName;
-            for (ServiceConnection serviceConnection : this.a.values()) {
+            for (ServiceConnection serviceConnection : (Collection<ServiceConnection>) this.a.values()) {
                 serviceConnection.onServiceDisconnected(componentName);
             }
             this.b = 2;

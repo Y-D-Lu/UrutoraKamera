@@ -341,14 +341,12 @@ public abstract class kmb {
             Handler handler = this.d;
             handler.sendMessage(handler.obtainMessage(6, this.o.get(), 3));
         } catch (RemoteException e2) {
-            e = e2;
-            Log.w("GmsClient", "IGmsServiceBroker.getService failed", e);
+            Log.w("GmsClient", "IGmsServiceBroker.getService failed", e2);
             x(8, null, null, this.o.get());
         } catch (SecurityException e3) {
             throw e3;
         } catch (RuntimeException e4) {
-            e = e4;
-            Log.w("GmsClient", "IGmsServiceBroker.getService failed", e);
+            Log.w("GmsClient", "IGmsServiceBroker.getService failed", e4);
             x(8, null, null, this.o.get());
         }
     }
@@ -361,7 +359,7 @@ public abstract class kmb {
         return new Bundle();
     }
 
-    public final IInterface u() {
+    public final IInterface u() throws DeadObjectException {
         IInterface iInterface;
         synchronized (this.e) {
             if (this.i == 5) {

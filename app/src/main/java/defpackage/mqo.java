@@ -12,7 +12,7 @@ public final class mqo {
         return (mri) mpiVar.g(String.valueOf(mqo.class.getName()).concat("_texcoords"), new ojz() { // from class: mqn
             @Override // defpackage.ojz
             public final Object a() {
-                mpi mpiVar2 = mpi.this;
+                mpi mpiVar2 = mpiVar;
                 float[] fArr = mqo.a;
                 return mwp.g(mri.e(mpiVar2, mrj.a(mqo.a), mrj.a(mqo.b)));
             }

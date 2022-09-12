@@ -32,12 +32,12 @@ public final class nqn implements Callable {
         m.e(1, npy.r(this.c));
         m.e(2, npy.r(this.c));
         int i = 3;
-        for (nmt nmtVar : this.a) {
+        for (nmt nmtVar : (Set<nmt>) this.a) {
             m.e(i, npy.e(nmtVar));
             i++;
         }
         int i2 = size + 3;
-        for (nnr nnrVar : this.b) {
+        for (nnr nnrVar : (Set<nnr>) this.b) {
             m.e(i2, npy.r(nnrVar));
             i2++;
         }

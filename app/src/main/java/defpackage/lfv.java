@@ -110,7 +110,7 @@ public final class lfv extends MediaCodec.Callback {
                         @Override // java.lang.Runnable
                         public final void run() {
                             int i3;
-                            lfy lfyVar4 = lfy.this;
+                            lfy lfyVar4 = lfyVar3;
                             MediaCodec mediaCodec2 = mediaCodec;
                             int i4 = i;
                             ByteBuffer inputBuffer2 = mediaCodec2.getInputBuffer(i4);

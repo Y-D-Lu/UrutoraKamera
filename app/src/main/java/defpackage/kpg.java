@@ -472,7 +472,7 @@ public final class kpg implements Parcelable.Creator {
                 return new kte(status);
             case 15:
                 int cT16 = mip.cT(parcel);
-                ArrayList arrayList = ktl.a;
+                ArrayList arrayList = (ArrayList) ktl.a;
                 long j9 = Long.MAX_VALUE;
                 LocationRequest locationRequest = null;
                 String str17 = null;

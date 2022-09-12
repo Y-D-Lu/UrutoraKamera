@@ -49,7 +49,7 @@ final class nie extends afg {
         f();
     }
 
-    @Override // defpackage.afh
+    //@Override // defpackage.afh
     /* renamed from: k */
     public final void g(List list) {
         this.i = list;

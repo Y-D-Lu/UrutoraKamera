@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,7 +102,7 @@ final class ntw implements qco {
                     plxVar.a = 3;
                     plxVar.b = str;
                 }
-                for (oyj oyjVar : nqhVar.m) {
+                for (oyj oyjVar : (List<oyj>) nqhVar.m) {
                     String oyjVar2 = oyjVar.toString();
                     if (m4.c) {
                         m4.m();
@@ -177,7 +178,12 @@ final class ntw implements qco {
                 ptjVar2.a |= 2;
                 ptjVar2.c = str2;
             }
-            FileInputStream fileInputStream = new FileInputStream(ntyVar.h.a(npeVar));
+            FileInputStream fileInputStream = null;
+            try {
+                fileInputStream = new FileInputStream(ntyVar.h.a(npeVar));
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
             try {
                 poc w = poc.w(fileInputStream);
                 qmd.a(fileInputStream, null);
@@ -209,8 +215,8 @@ final class ntw implements qco {
         ArrayList<npe> arrayList2 = new ArrayList();
         for (Object obj2 : list2) {
             nmz nmzVar3 = ((npe) obj2).j;
-            if (nmzVar3 == null || (a = nmzVar3.a()) == null || !a.getClass()) {
-                arrayList2.add(obj2);
+            if (nmzVar3 == null || (a = nmzVar3.a()) == null) {
+                arrayList2.add((npe) obj2);
             }
         }
         ArrayList arrayList3 = new ArrayList(qmd.B(arrayList2));

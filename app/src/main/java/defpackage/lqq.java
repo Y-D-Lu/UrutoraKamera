@@ -143,11 +143,11 @@ public final class lqq implements lmr {
         obr.aR(this.d == null, "FrameStreamResult was set twice!");
         this.d = lqhVar;
         this.e = lqhVar.b();
-        for (mip mipVar : this.b) {
+        for (mip mipVar : (List<mip>) this.b) {
             lqhVar.o(mipVar);
         }
         this.b.clear();
-        for (lqq lqqVar : this.c) {
+        for (lqq lqqVar : (List<lqq>) this.c) {
             lqqVar.k(lqhVar);
         }
         this.c.clear();

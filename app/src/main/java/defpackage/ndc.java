@@ -34,7 +34,7 @@ public final class ndc implements ndi {
             return;
         }
         ooh e = oom.e();
-        for (ndg ndgVar : this.c) {
+        for (ndg ndgVar : (Set<ndg>) this.c) {
             e.g(ndgVar.a());
         }
         plk.ae(pgb.h(plk.ab(e.f()), new oiu() { // from class: ndb
@@ -43,7 +43,7 @@ public final class ndc implements ndi {
                 ndc ndcVar = ndc.this;
                 qyk qykVar2 = qykVar;
                 ppa ppaVar = (ppa) ndf.c.m();
-                for (ndf ndfVar : (List) obj) {
+                for (ndf ndfVar : (List<ndf>) obj) {
                     if (ndfVar != null) {
                         ppaVar.o(ndfVar);
                     }
@@ -58,7 +58,7 @@ public final class ndc implements ndi {
                 ndfVar2.b = qykVar2;
                 ndfVar2.a |= 1;
                 String[] strArr = new String[ndcVar.b.size()];
-                for (ndh ndhVar : ndcVar.b) {
+                for (ndh ndhVar : (Set<ndh>) ndcVar.b) {
                     strArr[i] = ndhVar.getClass().getName();
                     i++;
                 }

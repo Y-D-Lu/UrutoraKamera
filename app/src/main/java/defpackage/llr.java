@@ -30,7 +30,7 @@ public final class llr implements llt {
 
     @Override // defpackage.llt
     public final synchronized void f(Throwable th) {
-        for (llt lltVar : this.a) {
+        for (llt lltVar : (List<llt>) this.a) {
             lltVar.f(th);
         }
     }

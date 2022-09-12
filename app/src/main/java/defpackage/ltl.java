@@ -9,6 +9,7 @@ import android.view.SurfaceHolder;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Executor;
 
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -36,7 +37,7 @@ public abstract class ltl implements lso {
         lstVar.c.d(new gng(lstVar.a.a.a(new lij() { // from class: lti
             @Override // defpackage.lij
             public final void fB(Object obj) {
-                lst lstVar2 = lst.this;
+                lst lstVar2 = lstVar;
                 ojc ojcVar = (ojc) obj;
                 if (ojcVar.g()) {
                     lstVar2.b((Surface) ojcVar.c());
@@ -113,20 +114,20 @@ public abstract class ltl implements lso {
         ArrayList arrayList2 = new ArrayList();
         ArrayList arrayList3 = new ArrayList();
         luk lukVar = this.e;
-        ope<ltw> opeVar = lukVar.b;
-        ope<lty> opeVar2 = lukVar.c;
+        ope opeVar = lukVar.b;
+        ope opeVar2 = lukVar.c;
         obr.aG(opeVar.isEmpty() ? !opeVar2.isEmpty() : true, "Cannot create a capture session without streams.");
         if (this.a == lnp.HIGH_SPEED) {
             obr.aG(opeVar.isEmpty(), "HIGH_SPEED Sessions cannot use buffered streams.");
             obr.aG(!opeVar2.isEmpty(), "HIGH_SPEED Sessions must have streams.");
             obr.aG(opeVar2.size() <= 2, "HIGH_SPEED Sessions may only have 1 or 2 streams.");
         }
-        for (ltw ltwVar : opeVar) {
+        for (ltw ltwVar : (Set<ltw>) opeVar) {
             Surface g = ltwVar.g();
             g.getClass();
             arrayList.add(lsv.b(ltwVar, g));
         }
-        for (lty ltyVar : opeVar2) {
+        for (lty ltyVar : (Set<lty>) opeVar2) {
             Surface g2 = ltyVar.g();
             if (g2 != null) {
                 if (g2.isValid()) {

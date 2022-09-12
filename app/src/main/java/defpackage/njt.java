@@ -30,7 +30,7 @@ public final class njt implements pgk {
         return pgb.i(pgb.i(plk.W(nkpVar.a.c.c()), ogl.b(new pgk() { // from class: nko
             @Override // defpackage.pgk
             public final pht a(Object obj2) {
-                nkp nkpVar2 = nkp.this;
+                nkp nkpVar2 = nkpVar;
                 Void r4 = (Void) obj2;
                 return nkpVar2.a.b.d(b, pgrVar);
             }

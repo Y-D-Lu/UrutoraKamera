@@ -9,7 +9,7 @@ import java.util.Map;
 /* renamed from: mdt  reason: default package */
 /* loaded from: classes2.dex */
 public final class mdt implements mds {
-    public static final int a = d.c(pnq.class.getName());
+    public static final int a = defpackage.d.c(pnq.class.getName());
     public static final Map b;
     public static final meq c;
     public final LruCache d = new mdx();
@@ -54,7 +54,7 @@ public final class mdt implements mds {
             if (a2 == 0) {
                 a2 = 1;
             }
-            psj g = d.g(a2);
+            psj g = defpackage.d.g(a2);
             if (g.a == 1) {
                 mee meeVar = mee.a;
                 if (g.a == 1 && (b2 = psg.b(((Integer) g.b).intValue())) != 0) {
@@ -75,7 +75,7 @@ public final class mdt implements mds {
                     psl pslVar2 = psl.m;
                     pslVar.i = a2 - 1;
                     pslVar.a |= 128;
-                    psj g2 = d.g(a2);
+                    psj g2 = defpackage.d.g(a2);
                     if (b3.c) {
                         b3.m();
                         b3.c = false;

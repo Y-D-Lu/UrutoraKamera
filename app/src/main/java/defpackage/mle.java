@@ -17,7 +17,11 @@ public final class mle {
     public final mle a(String str) {
         List c = c(str);
         if (c.size() != 1) {
-            throw new mli(String.format(Locale.US, "Looking for a unique %s box in a %s box but found %d of them", str, this.a.g() ? ((mld) this.a.c()).a : "n/a", Integer.valueOf(c.size())));
+            try {
+                throw new mli(String.format(Locale.US, "Looking for a unique %s box in a %s box but found %d of them", str, this.a.g() ? ((mld) this.a.c()).a : "n/a", Integer.valueOf(c.size())));
+            } catch (mli e) {
+                e.printStackTrace();
+            }
         }
         return (mle) c.get(0);
     }
@@ -29,12 +33,17 @@ public final class mle {
             mld mldVar = (mld) this.a.c();
             return new mlg(mldVar.d, mldVar.b.a + mlfVar.b);
         }
-        throw new mli(String.format(Locale.US, "Trying to look up offset %d in box %s but the box is only %d bytes long", Integer.valueOf(mlfVar.b), ((mld) this.a.c()).a, Integer.valueOf(((mld) this.a.c()).b.b)));
+        try {
+            throw new mli(String.format(Locale.US, "Trying to look up offset %d in box %s but the box is only %d bytes long", Integer.valueOf(mlfVar.b), ((mld) this.a.c()).a, Integer.valueOf(((mld) this.a.c()).b.b)));
+        } catch (mli e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public final List c(String str) {
         ArrayList arrayList = new ArrayList();
-        for (mle mleVar : this.b) {
+        for (mle mleVar : (List<mle>) this.b) {
             obr.aQ(mleVar.a.g());
             if (((mld) mleVar.a.c()).a.equals(str)) {
                 arrayList.add(mleVar);

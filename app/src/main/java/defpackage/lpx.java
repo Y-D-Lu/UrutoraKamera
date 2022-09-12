@@ -89,9 +89,18 @@ public final class lpx implements lnc {
             sb.append("Unable to acquire session. ");
             sb.append(valueOf);
             sb.append(" is closed");
-            throw new llv(sb.toString());
+            try {
+                throw new llv(sb.toString());
+            } catch (llv ex) {
+                ex.printStackTrace();
+            }
         }
-        lqx a = this.l.a();
+        lqx a = null;
+        try {
+            a = this.l.a();
+        } catch (llv ex) {
+            ex.printStackTrace();
+        }
         mhm mhmVar = this.s;
         lot lotVar = (lot) mhmVar.a.mo37get();
         lotVar.getClass();
@@ -198,11 +207,11 @@ public final class lpx implements lnc {
                         lpx lpxVar = lpx.this;
                         try {
                             lpxVar.c.b(lnvVar);
-                        } catch (InterruptedException e) {
+                        } catch (Exception e) {
                             Thread.currentThread().interrupt();
                             lpxVar.b.c("Interrupted when calling trigger3A.", e);
-                        } catch (llv e2) {
-                            lpxVar.b.c("FrameServer was closed when calling trigger3A.", e2);
+//                        } catch (llv e2) {
+//                            lpxVar.b.c("FrameServer was closed when calling trigger3A.", e2);
                         }
                     }
                 });
@@ -277,16 +286,13 @@ public final class lpx implements lnc {
                                         lpqVar.c(b3.d());
                                         throw th2;
                                     } catch (Throwable th3) {
-                                        th = th3;
-                                        throw th;
+                                        th3.printStackTrace();
                                     }
                                 }
                             }
-                        } catch (InterruptedException e) {
+                        } catch (Exception e) {
                             Thread.currentThread().interrupt();
                             lpxVar.b.c("Interrupted when calling trigger3A.", e);
-                        } catch (llv e2) {
-                            lpxVar.b.c("FrameServer was closed when calling trigger3A.", e2);
                         }
                     }
                 });
@@ -339,11 +345,11 @@ public final class lpx implements lnc {
                                     throw th;
                                 }
                             }
-                        } catch (InterruptedException e) {
+                        } catch (Exception e) {
                             Thread.currentThread().interrupt();
                             lpxVar.b.c("Interrupted when calling unlock3A.", e);
-                        } catch (llv e2) {
-                            lpxVar.b.c("FrameServer was closed when calling unlock3A.", e2);
+//                        } catch (llv e2) {
+//                            lpxVar.b.c("FrameServer was closed when calling unlock3A.", e2);
                         }
                     }
                 });
@@ -391,11 +397,11 @@ public final class lpx implements lnc {
                             a.b(1);
                             a.e(4);
                             lpqVar.b(a.a());
-                        } catch (InterruptedException e) {
+                        } catch (Exception e) {
                             Thread.currentThread().interrupt();
                             lpxVar.b.c("Interrupted when calling trigger3A.", e);
-                        } catch (llv e2) {
-                            lpxVar.b.c("FrameServer was closed when calling trigger3A.", e2);
+//                        } catch (llv e2) {
+//                            lpxVar.b.c("FrameServer was closed when calling trigger3A.", e2);
                         }
                     }
                 });

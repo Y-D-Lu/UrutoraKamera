@@ -28,7 +28,7 @@ public final class ljs implements ljp {
                 int i2 = i;
                 ljsVar.c = i2;
                 if (!ljsVar.b.isEmpty()) {
-                    for (llg llgVar : ljsVar.b) {
+                    for (llg llgVar : (Set<llg>) ljsVar.b) {
                         llgVar.a(i2);
                     }
                     lis lisVar = ljsVar.a;

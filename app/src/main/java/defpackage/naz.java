@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Map;
+import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -89,7 +90,7 @@ public final class naz extends myq implements mxo, mwa {
         Long l;
         long j;
         ojc ojcVar;
-        FileInputStream fileInputStream;
+        FileInputStream fileInputStream = null;
         int i;
         boolean z;
         this.a.b(this);
@@ -309,7 +310,7 @@ public final class naz extends myq implements mxo, mwa {
             ojc ojcVar2 = nba.a;
             if (ojcVar2 == null) {
                 long sysconf = Os.sysconf(OsConstants._SC_CLK_TCK);
-                oih i2 = sysconf > 0 ? ojc.i(Long.valueOf(sysconf)) : oih.a;
+                oih i2 = sysconf > 0 ? (oih) ojc.i(Long.valueOf(sysconf)) : oih.a;
                 if (!i2.g()) {
                     ojcVar2 = oih.a;
                 } else {
@@ -391,7 +392,11 @@ public final class naz extends myq implements mxo, mwa {
                         }
                     } catch (Throwable th3) {
                         StrictMode.setThreadPolicy(allowThreadDiskReads);
-                        throw th3;
+                        try {
+                            throw th3;
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                 }
                 nba.a = ojcVar2;
@@ -673,7 +678,7 @@ public final class naz extends myq implements mxo, mwa {
                 @Override // defpackage.pgj
                 public final pht a() {
                     int F;
-                    final nay nayVar2 = nay.this;
+                    final nay nayVar2 = nayVar;
                     final poy poyVar3 = m;
                     if (!nayVar2.b.c(null)) {
                         return phq.a;
@@ -690,7 +695,7 @@ public final class naz extends myq implements mxo, mwa {
                     return plk.P(V, V2).b(new pgj() { // from class: naw
                         @Override // defpackage.pgj
                         public final pht a() {
-                            nay nayVar3 = nay.this;
+                            nay nayVar3 = nayVar2;
                             poy poyVar4 = poyVar3;
                             pht phtVar2 = V;
                             pht phtVar3 = V2;

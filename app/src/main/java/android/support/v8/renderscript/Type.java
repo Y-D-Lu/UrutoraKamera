@@ -12,7 +12,7 @@ public class Type extends BaseObj {
     int mElementCount;
 
     /* loaded from: classes.dex */
-    public class Builder {
+    public static class Builder {
         boolean mDimFaces;
         boolean mDimMipmaps;
         int mDimX = 1;

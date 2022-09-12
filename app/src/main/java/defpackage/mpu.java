@@ -3,7 +3,10 @@ package defpackage;
 import android.opengl.GLES20;
 import android.util.SparseIntArray;
 
+import java.util.Collection;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: mpu  reason: default package */
@@ -29,11 +32,11 @@ public final class mpu extends mmh {
         if (i3 != i4) {
             GLES20.glUseProgram(i4);
         }
-        for (mqa mqaVar : this.a.e.values()) {
+        for (mqa mqaVar : (Collection<mqa>) this.a.e.values()) {
             mqaVar.a(mqyVar);
         }
         SparseIntArray sparseIntArray = new SparseIntArray();
-        for (mpz mpzVar : this.a.g) {
+        for (mpz mpzVar : (List<mpz>) this.a.g) {
             int i5 = ((mrb) mpzVar.a.c()).c;
             int i6 = sparseIntArray.get(i5, 0);
             int[] iArr2 = new int[1];

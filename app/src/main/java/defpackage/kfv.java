@@ -8,17 +8,19 @@ import android.os.Looper;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.Scope;
 
+import java.util.Set;
+
 /* renamed from: kfv  reason: default package */
 /* loaded from: classes2.dex */
 public final class kfv extends kmp {
-    public final GoogleSignInOptions a;
+    public GoogleSignInOptions a;
 
     public kfv(Context context, Looper looper, kmf kmfVar, GoogleSignInOptions googleSignInOptions, kik kikVar, kil kilVar) {
         super(context, looper, 91, kmfVar, kikVar, kilVar);
         kfr kfrVar = googleSignInOptions != null ? new kfr(googleSignInOptions) : new kfr();
         kfrVar.b = kqc.a();
         if (!kmfVar.c.isEmpty()) {
-            for (Scope scope : kmfVar.c) {
+            for (Scope scope : (Set<Scope>) kmfVar.c) {
                 kfrVar.c(scope, new Scope[0]);
             }
         }

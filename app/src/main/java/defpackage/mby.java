@@ -59,7 +59,7 @@ final class mby implements mcg {
             this.d = true;
             try {
                 ArrayList<ContentProviderOperation> arrayList = new ArrayList<>();
-                for (mct mctVar : this.b) {
+                for (mct mctVar : (List<mct>) this.b) {
                     File b = mctVar.a.i().b(this.c);
                     mcn i = mctVar.a.i();
                     String format = String.format(Locale.ROOT, "%s.%s", i.c, i.d);
@@ -110,7 +110,11 @@ final class mby implements mcg {
                 }
                 return;
             } catch (OperationApplicationException | RemoteException e) {
-                throw new IOException("Error inserting MediaStore record.", e);
+                try {
+                    throw new IOException("Error inserting MediaStore record.", e);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         throw new IllegalStateException("Cannot publish a closed transaction");

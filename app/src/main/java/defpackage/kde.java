@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCaptureSession;
 import android.hardware.camera2.params.OutputConfiguration;
 import android.media.ImageReader;
@@ -36,7 +37,11 @@ public final class kde {
     }
 
     public static void b(CameraCaptureSession cameraCaptureSession, List list) {
-        cameraCaptureSession.finalizeOutputConfigurations(list);
+        try {
+            cameraCaptureSession.finalizeOutputConfigurations(list);
+        } catch (CameraAccessException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void c(OutputConfiguration outputConfiguration, Surface surface) {

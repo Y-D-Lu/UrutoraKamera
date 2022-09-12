@@ -6,6 +6,7 @@ import android.util.Pair;
 
 import java.nio.ByteBuffer;
 import java.util.Collections;
+import java.util.List;
 
 /* renamed from: mke  reason: default package */
 /* loaded from: classes2.dex */
@@ -63,7 +64,7 @@ public final class mke implements mkd {
         if ((mkuVar.g || !mip.aq(mkuVar.a)) && bufferInfo.size != 0) {
             mkuVar.f.addLast(Pair.create(bufferInfo, byteBuffer));
             mkv mkvVar = mkuVar.h;
-            for (mku mkuVar2 : mkvVar.a) {
+            for (mku mkuVar2 : (List<mku>) mkvVar.a) {
                 if (mkuVar2.f.size() > 2 && ((MediaCodec.BufferInfo) ((Pair) mkuVar2.f.peekLast()).first).presentationTimeUs - ((MediaCodec.BufferInfo) ((Pair) mkuVar2.f.peekFirst()).first).presentationTimeUs > 1000000) {
                     mkvVar.a(mkuVar2);
                 }

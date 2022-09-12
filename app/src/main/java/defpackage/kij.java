@@ -3,6 +3,7 @@ package defpackage;
 import android.accounts.Account;
 import android.content.Context;
 import android.location.Location;
+import android.os.DeadObjectException;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Parcel;
@@ -166,12 +167,22 @@ public class kij {
                 String str = kij.this.d;
                 khk[] o = ktkVar.o();
                 if (o == null || !mip.cs(o, ksi.d)) {
-                    kti ktiVar = (kti) ktkVar.u();
+                    kti ktiVar = null;
+                    try {
+                        ktiVar = (kti) ktkVar.u();
+                    } catch (DeadObjectException ex) {
+                        ex.printStackTrace();
+                    }
                     Parcel y = ktiVar.y(7, ktiVar.a());
                     location = (Location) bmp.a(y, Location.CREATOR);
                     y.recycle();
                 } else {
-                    kti ktiVar2 = (kti) ktkVar.u();
+                    kti ktiVar2 = null;
+                    try {
+                        ktiVar2 = (kti) ktkVar.u();
+                    } catch (DeadObjectException ex) {
+                        ex.printStackTrace();
+                    }
                     Parcel a2 = ktiVar2.a();
                     a2.writeString(str);
                     Parcel y2 = ktiVar2.y(80, a2);
@@ -196,7 +207,12 @@ public class kij {
             public final void a(Object obj, Object obj2) {
                 String str2 = str;
                 kud kudVar = new kud((kvm) obj2);
-                kue kueVar = (kue) ((kuf) obj).u();
+                kue kueVar = null;
+                try {
+                    kueVar = (kue) ((kuf) obj).u();
+                } catch (DeadObjectException ex) {
+                    ex.printStackTrace();
+                }
                 Parcel a2 = kueVar.a();
                 bmp.e(a2, kudVar);
                 a2.writeString(str2);
@@ -214,7 +230,12 @@ public class kij {
                 String str3 = str;
                 String str4 = str2;
                 kud kudVar = new kud((kvm) obj2);
-                kue kueVar = (kue) ((kuf) obj).u();
+                kue kueVar = null;
+                try {
+                    kueVar = (kue) ((kuf) obj).u();
+                } catch (DeadObjectException ex) {
+                    ex.printStackTrace();
+                }
                 Parcel a2 = kueVar.a();
                 bmp.e(a2, kudVar);
                 a2.writeString(str3);
@@ -232,7 +253,12 @@ public class kij {
             @Override // defpackage.klb
             public final void a(Object obj, Object obj2) {
                 kvv kvvVar = new kvv((kvm) obj2);
-                kwc kwcVar = (kwc) ((kwf) obj).u();
+                kwc kwcVar = null;
+                try {
+                    kwcVar = (kwc) ((kwf) obj).u();
+                } catch (DeadObjectException ex) {
+                    ex.printStackTrace();
+                }
                 Parcel a2 = kwcVar.a();
                 bmp.e(a2, kvvVar);
                 kwcVar.z(2, a2);

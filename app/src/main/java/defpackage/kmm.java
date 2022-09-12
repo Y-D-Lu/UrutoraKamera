@@ -7,7 +7,6 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.os.RemoteException;
 import android.util.Log;
 
 import com.google.android.gms.common.api.Scope;
@@ -54,7 +53,7 @@ public final class kmm extends kno {
                             y.recycle();
                             Binder.restoreCallingIdentity(clearCallingIdentity);
                             account2 = account3;
-                        } catch (RemoteException e) {
+                        } catch (Exception e) {
                             Log.w("AccountAccessor", "Remote account accessor probably died");
                             Binder.restoreCallingIdentity(clearCallingIdentity);
                         }

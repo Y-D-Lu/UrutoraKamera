@@ -2,6 +2,8 @@ package defpackage;
 
 import android.content.Context;
 
+import java.util.List;
+
 /* renamed from: naj  reason: default package */
 /* loaded from: classes2.dex */
 public final class naj extends mvd {
@@ -21,7 +23,7 @@ public final class naj extends mvd {
             if (qxkVar == null) {
                 qxkVar = qxk.b;
             }
-            for (qxj qxjVar : qxkVar.a) {
+            for (qxj qxjVar : (List<qxj>) qxkVar.a) {
                 D.i(this.d.e(qxjVar.d));
             }
             return D.f();

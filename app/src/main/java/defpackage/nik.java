@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.OutputStream;
 import java.util.List;
 
@@ -16,27 +17,39 @@ public final class nik extends njd {
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        for (njl njlVar : this.a) {
+        for (njl njlVar : (List<njl>) this.a) {
             try {
                 njlVar.close();
             } catch (Throwable th) {
             }
         }
-        super.close();
+        try {
+            super.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream
     public final void write(int i) {
-        this.out.write(i);
-        for (njl njlVar : this.a) {
+        try {
+            this.out.write(i);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for (njl njlVar : (List<njl>) this.a) {
             njlVar.a();
         }
     }
 
     @Override // defpackage.njd, java.io.FilterOutputStream, java.io.OutputStream
     public final void write(byte[] bArr) {
-        this.out.write(bArr);
-        for (njl njlVar : this.a) {
+        try {
+            this.out.write(bArr);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for (njl njlVar : (List<njl>) this.a) {
             int length = bArr.length;
             njlVar.a();
         }
@@ -44,8 +57,12 @@ public final class nik extends njd {
 
     @Override // defpackage.njd, java.io.FilterOutputStream, java.io.OutputStream
     public final void write(byte[] bArr, int i, int i2) {
-        this.out.write(bArr, i, i2);
-        for (njl njlVar : this.a) {
+        try {
+            this.out.write(bArr, i, i2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for (njl njlVar : (List<njl>) this.a) {
             njlVar.a();
         }
     }

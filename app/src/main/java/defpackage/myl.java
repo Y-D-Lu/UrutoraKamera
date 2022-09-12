@@ -2,6 +2,8 @@ package defpackage;
 
 import android.content.Context;
 
+import java.util.List;
+
 /* renamed from: myl  reason: default package */
 /* loaded from: classes2.dex */
 public final class myl extends mvd {
@@ -26,7 +28,7 @@ public final class myl extends mvd {
                 pexVar = pex.f;
             }
             D.d(pexVar.c);
-            for (pex pexVar2 : peyVar.c) {
+            for (pex pexVar2 : (List<pex>) peyVar.c) {
                 D.d(pexVar2.c);
             }
             return D.f();

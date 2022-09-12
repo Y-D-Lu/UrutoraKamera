@@ -2,6 +2,7 @@ package defpackage;
 
 import android.os.SystemClock;
 
+import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
 /* renamed from: lgv  reason: default package */
@@ -33,7 +34,7 @@ public final /* synthetic */ class lgv implements pgj {
                 if (lfmVar != null) {
                     lfmVar.close();
                 }
-                for (lfd lfdVar : lgyVar.f.values()) {
+                for (lfd lfdVar : (Collection<lfd>) lgyVar.f.values()) {
                     lfdVar.c();
                     lfdVar.close();
                 }

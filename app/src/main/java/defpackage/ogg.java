@@ -10,9 +10,9 @@ final class ogg extends ogh {
         if (!oggVar.b) {
             oggVar.b = true;
             a = oggVar;
-            return;
+        } else {
+            throw new IllegalStateException("Already frozen");
         }
-        throw new IllegalStateException("Already frozen");
     }
 
     private ogg(xf xfVar) {

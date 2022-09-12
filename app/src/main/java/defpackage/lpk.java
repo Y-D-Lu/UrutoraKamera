@@ -45,7 +45,7 @@ public final class lpk implements pys {
         final Printer printer = new Printer() { // from class: lpg
             @Override // android.util.Printer
             public final void println(String str3) {
-                lis.this.f(str3);
+                a.f(str3);
             }
         };
         lpf lpfVar = mo37get3.a;

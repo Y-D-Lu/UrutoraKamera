@@ -71,7 +71,7 @@ final class kwv extends kym {
         l(new Runnable() { // from class: kwr
             @Override // java.lang.Runnable
             public final void run() {
-                kyw kywVar2 = kyw.this;
+                kyw kywVar2 = kywVar;
                 kyi kyiVar2 = kyiVar;
                 String str = kywVar2.d;
                 String str2 = kywVar2.b;
@@ -81,7 +81,7 @@ final class kwv extends kym {
                     bmp.b(a, false);
                     a.writeByteArray(null);
                     kyiVar2.A(1, a);
-                } catch (RemoteException e) {
+                } catch (Exception e) {
                     Log.e("WearableLS", "Failed to send a response back", e);
                 }
             }

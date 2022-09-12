@@ -14,7 +14,7 @@ public final class lqt {
     private final ljf d;
     private final Deque e = new ArrayDeque();
     private final Deque f = new ArrayDeque();
-    private boolean g = false;
+    public boolean g = false;
     private boolean h = false;
     private Runnable i;
     private final nox j;

@@ -175,7 +175,7 @@ public final class mfv extends kce implements ServiceConnection, mfp {
             kcd kcdVar = this.j;
             mip.H(kcdVar);
             kcdVar.e(kcjVar2.g());
-        } catch (RemoteException | SecurityException e) {
+        } catch (Exception e) {
             Log.e("LensServiceConnImpl", "Unable to stop Lens service session.", e);
         }
         this.h = 12;
@@ -307,7 +307,7 @@ public final class mfv extends kce implements ServiceConnection, mfp {
                     Parcel a = kccVar2.a();
                     a.writeString("LENS_SERVICE_SESSION");
                     bmp.e(a, mfvVar);
-                    final kcd kcdVar = null;
+                    kcd kcdVar = null;
                     a.writeByteArray(null);
                     Parcel y = kccVar2.y(1, a);
                     IBinder readStrongBinder = y.readStrongBinder();
@@ -316,11 +316,12 @@ public final class mfv extends kce implements ServiceConnection, mfp {
                         kcdVar = queryLocalInterface2 instanceof kcd ? (kcd) queryLocalInterface2 : new kcd(readStrongBinder);
                     }
                     y.recycle();
+                    final kcd kcdVarFinal = kcdVar;
                     mfvVar.a.execute(new Runnable() { // from class: mft
                         @Override // java.lang.Runnable
                         public final void run() {
                             mfv mfvVar2 = mfv.this;
-                            kcd kcdVar2 = kcdVar;
+                            kcd kcdVar2 = kcdVarFinal;
                             mip.F();
                             if (mfvVar2.i == null) {
                                 Log.w("LensServiceConnImpl", "The service is no longer bound.");
@@ -369,13 +370,13 @@ public final class mfv extends kce implements ServiceConnection, mfp {
                                 kcd kcdVar4 = mfvVar2.j;
                                 mip.H(kcdVar4);
                                 kcdVar4.e(((kcj) ppaVar2.j()).g());
-                            } catch (RemoteException e) {
+                            } catch (Exception e) {
                                 Log.w("LensServiceConnImpl", "Failed to call client event callbacks.", e);
                                 mfvVar2.h();
                             }
                         }
                     });
-                } catch (RemoteException e) {
+                } catch (Exception e) {
                     Log.w("LensServiceConnImpl", "Failed to create a Lens service session.", e);
                     mfvVar.a.execute(new Runnable() { // from class: mfr
                         @Override // java.lang.Runnable

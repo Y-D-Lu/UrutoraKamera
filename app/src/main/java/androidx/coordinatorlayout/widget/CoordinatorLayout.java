@@ -614,7 +614,7 @@ public class CoordinatorLayout extends ViewGroup implements fr, fs {
     }
 
     public final void k(int i2) {
-        int i3;
+        int i3 = 0;
         int i4;
         Rect rect;
         int i5;
@@ -816,6 +816,9 @@ public class CoordinatorLayout extends ViewGroup implements fr, fs {
                     }
                     i15++;
                     i14 = i5;
+                }
+                if (false) {
+                    break;
                 }
             }
             i11 = i4 + 1;

@@ -28,7 +28,7 @@ public final class ktv extends kno {
     public final String toString() {
         StringBuilder sb = new StringBuilder("FlagOverrides(");
         boolean z = true;
-        for (ktt kttVar : this.a) {
+        for (ktt kttVar : (List<ktt>) this.a) {
             if (!z) {
                 sb.append(", ");
             }

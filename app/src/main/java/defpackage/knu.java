@@ -1,6 +1,7 @@
 package defpackage;
 
 import android.content.Context;
+import android.os.DeadObjectException;
 import android.os.Parcel;
 
 /* renamed from: knu  reason: default package */
@@ -27,7 +28,12 @@ public final class knu extends kij {
             @Override // defpackage.klb
             public final void a(Object obj, Object obj2) {
                 knm knmVar2 = knmVar;
-                knr knrVar = (knr) ((knv) obj).u();
+                knr knrVar = null;
+                try {
+                    knrVar = (knr) ((knv) obj).u();
+                } catch (DeadObjectException ex) {
+                    ex.printStackTrace();
+                }
                 Parcel a3 = knrVar.a();
                 bmp.c(a3, knmVar2);
                 knrVar.A(1, a3);

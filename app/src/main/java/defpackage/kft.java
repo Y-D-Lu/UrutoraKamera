@@ -51,23 +51,22 @@ public final class kft implements Runnable {
                 sb.append("Response Code: ");
                 sb.append(responseCode);
                 knwVar.b(sb.toString());
-            } catch (IOException e) {
+            } catch (Exception e) {
                 e = e;
                 knw knwVar2 = a;
                 String valueOf = String.valueOf(e.toString());
                 knwVar2.c(valueOf.length() != 0 ? "IOException when revoking access: ".concat(valueOf) : new String("IOException when revoking access: "));
                 this.c.j(status);
-            } catch (Exception e2) {
-                e = e2;
-                knw knwVar3 = a;
-                String valueOf2 = String.valueOf(e.toString());
-                knwVar3.c(valueOf2.length() != 0 ? "Exception when revoking access: ".concat(valueOf2) : new String("Exception when revoking access: "));
-                this.c.j(status);
+//            } catch (Exception e2) {
+//                knw knwVar3 = a;
+//                String valueOf2 = String.valueOf(e2.toString());
+//                knwVar3.c(valueOf2.length() != 0 ? "Exception when revoking access: ".concat(valueOf2) : new String("Exception when revoking access: "));
+//                this.c.j(status);
             }
         } catch (IOException e3) {
-            e = e3;
+
         } catch (Exception e4) {
-            e = e4;
+
         }
         this.c.j(status);
     }

@@ -3,6 +3,8 @@ package defpackage;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
+import java.util.List;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: kl  reason: default package */
 /* loaded from: classes2.dex */
@@ -23,7 +25,7 @@ public final class kl implements ViewTreeObserver.OnGlobalLayoutListener {
             this.a.k();
             return;
         }
-        for (kp kpVar : this.a.b) {
+        for (kp kpVar : (List<kp>) this.a.b) {
             kpVar.a.s();
         }
     }

@@ -77,7 +77,7 @@ public final class oho implements Choreographer.FrameCallback, oht {
                 ofNullable.ifPresent(new Consumer() { // from class: ohu
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
-                        oha.this.a.provideVideoFrame((ohy) obj);
+                        ohaVar2.a.provideVideoFrame((ohy) obj);
                     }
 
                     @Override // java.util.function.Consumer

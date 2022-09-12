@@ -91,7 +91,7 @@ final class mki {
             if (((Integer) mkhVar.a.c()).intValue() != 1 && ((Integer) mkhVar.a.c()).intValue() != 0) {
                 throw new IllegalArgumentException("The trun version number must be 0 or 1.");
             }
-            allocate6.putInt((((Integer) mkhVar.a.c()).intValue() << 24) | mkhVar.c.g() | (true != mkhVar.d.g() ? 0 : 256) | (true != mkhVar.e.g() ? 0 : 512));
+            allocate6.putInt((((Integer) mkhVar.a.c()).intValue() << 24) | (mkhVar.c.g() ? 1 : 0) | (true != mkhVar.d.g() ? 0 : 256) | (true != mkhVar.e.g() ? 0 : 512));
             if (!mkhVar.b.g()) {
                 throw new IllegalArgumentException("Sample count field is required in a 'trun' box and must be set");
             }

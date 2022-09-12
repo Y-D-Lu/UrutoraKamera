@@ -3,6 +3,8 @@ package defpackage;
 import android.media.MediaFormat;
 import android.util.Log;
 
+import java.util.Collection;
+import java.util.List;
 import java.util.concurrent.Callable;
 
 /* renamed from: lgw  reason: default package */
@@ -120,11 +122,11 @@ public final /* synthetic */ class lgw implements Callable {
                                 if (((lfy) lfmVar).n) {
                                     synchronized (((lfy) lfmVar).f) {
                                         ((lfy) lfmVar).E = true;
-                                        for (Integer num : ((lfy) lfmVar).G) {
+                                        for (Integer num : (List<Integer>) ((lfy) lfmVar).G) {
                                             lfy lfyVar3 = (lfy) lfmVar;
                                             lfyVar3.e(((lfy) lfmVar).i, num.intValue());
                                         }
-                                        for (Integer num2 : ((lfy) lfmVar).H) {
+                                        for (Integer num2 : (List<Integer>) ((lfy) lfmVar).H) {
                                             ((lfy) lfmVar).i.releaseOutputBuffer(num2.intValue(), false);
                                         }
                                         ((lfy) lfmVar).f(((lfy) lfmVar).F);
@@ -165,7 +167,7 @@ public final /* synthetic */ class lgw implements Callable {
                                     if (mediaFormat != null) {
                                         ((lgt) lfiVar).c(mediaFormat);
                                     }
-                                    for (Integer num3 : ((lgt) lfiVar).u) {
+                                    for (Integer num3 : (List<Integer>) ((lgt) lfiVar).u) {
                                         ((lgt) lfiVar).c.releaseOutputBuffer(num3.intValue(), false);
                                     }
                                 }
@@ -177,12 +179,12 @@ public final /* synthetic */ class lgw implements Callable {
                 }
                 return null;
             case 2:
-                for (lfd lfdVar : this.a.f.values()) {
+                for (lfd lfdVar : (Collection<lfd>) this.a.f.values()) {
                     lfdVar.e();
                 }
                 return null;
             default:
-                for (lfd lfdVar2 : this.a.f.values()) {
+                for (lfd lfdVar2 : (Collection<lfd>) this.a.f.values()) {
                     lfdVar2.k();
                 }
                 return null;

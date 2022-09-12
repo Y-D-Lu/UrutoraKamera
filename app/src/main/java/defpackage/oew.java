@@ -39,7 +39,7 @@ public final class oew {
             if (oesVar != null) {
                 oesVar.a();
             } else {
-                for (oen oenVar : oewVar.b) {
+                for (oen oenVar : (List<oen>) oewVar.b) {
                     oenVar.b(oewVar.a());
                 }
                 oewVar.b.clear();
@@ -77,7 +77,7 @@ public final class oew {
 
     public final void c() {
         synchronized (this.d) {
-            for (ofi ofiVar : this.c) {
+            for (ofi ofiVar : (Set<ofi>) this.c) {
                 ofiVar.a(a());
             }
             this.c.clear();

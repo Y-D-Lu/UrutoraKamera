@@ -770,7 +770,7 @@ public class FieldPacker {
     }
 
     public long subI64() {
-        int i;
+        int i = 0;
         subalign(8);
         byte[] bArr = this.mData;
         int i2 = this.mPos - 1;

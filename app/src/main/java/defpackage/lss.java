@@ -16,6 +16,7 @@ final class lss extends lst {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public lss(defpackage.lty r2) {
+        super(r2, defpackage.pih.f());
         /*
             r1 = this;
             pih r0 = defpackage.pih.f()

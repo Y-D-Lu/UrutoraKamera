@@ -6,6 +6,7 @@ import android.media.MediaFormat;
 import com.google.android.libraries.microvideo.gcamuxer.AnnexBToAvcc;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.ArrayList;
@@ -64,10 +65,10 @@ public final class mkk implements mkd {
     }
 
     @Override // defpackage.mkd, java.lang.AutoCloseable
-    public final void close() {
+    public final void close() throws IOException {
         int i;
         ArrayList arrayList = new ArrayList();
-        for (mkj mkjVar : this.e) {
+        for (mkj mkjVar : (List<mkj>) this.e) {
             List list = mkjVar.d;
             ArrayList arrayList2 = new ArrayList();
             Iterator it = list.iterator();
@@ -121,11 +122,11 @@ public final class mkk implements mkd {
     }
 
     @Override // defpackage.mkd
-    public final void f(mkc mkcVar, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) {
-        int write;
+    public final void f(mkc mkcVar, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) throws IOException {
+        int write = 0;
         int an;
         mkj mkjVar = (mkj) mkcVar;
-        for (mkj mkjVar2 : this.e) {
+        for (mkj mkjVar2 : (List<mkj>) this.e) {
             if (mkjVar2 == mkjVar) {
                 mkjVar2.d.add(bufferInfo);
             }

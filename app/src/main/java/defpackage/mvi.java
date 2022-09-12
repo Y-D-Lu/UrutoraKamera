@@ -78,7 +78,7 @@ public final class mvi implements mve {
         final List am = obr.am(obr.am(list, new oiu() { // from class: mvg
             @Override // defpackage.oiu
             public final Object a(Object obj) {
-                return mvi.h(poc.this, (poc) obj);
+                return mvi.h(v, (poc) obj);
             }
         }), imd.f);
         kqw.a(str);
@@ -88,7 +88,7 @@ public final class mvi implements mve {
                 public final Object a(Object obj) {
                     String str2 = str;
                     kqz kqzVar = (kqz) obj;
-                    for (poc pocVar : am) {
+                    for (poc pocVar : (List<poc>) am) {
                         ContentValues contentValues = new ContentValues();
                         mdf mdfVar = kqzVar.b;
                         contentValues.put("time", Long.valueOf(System.currentTimeMillis()));

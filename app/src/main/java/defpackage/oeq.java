@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.List;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: oeq  reason: default package */
 /* loaded from: classes2.dex */
@@ -34,7 +36,7 @@ public final class oeq extends oen {
             return;
         }
         oewVar.e = false;
-        for (oen oenVar2 : oewVar.b) {
+        for (oen oenVar2 : (List<oen>) oewVar.b) {
             oenVar2.b(new oex());
         }
         oewVar.b.clear();

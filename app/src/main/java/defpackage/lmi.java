@@ -41,7 +41,7 @@ public final class lmi {
         if (f == null || l == null) {
             return null;
         }
-        return new lid(f.floatValue() * ((float) l.longValue()), l.longValue());
+        return new lid((long) (f.floatValue() * ((float) l.longValue())), l.longValue());
     }
 
     private static final lid j(Double d, Long l) {
@@ -59,7 +59,7 @@ public final class lmi {
     }
 
     public final void d(Location location) {
-        double d;
+        double d = 0.0;
         ExifInterface exifInterface = this.a;
         double latitude = location.getLatitude();
         double longitude = location.getLongitude();

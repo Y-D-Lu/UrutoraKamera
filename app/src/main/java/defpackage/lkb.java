@@ -13,28 +13,28 @@ public final class lkb implements lkc {
 
     @Override // defpackage.lkc
     public final void a() {
-        for (lkc lkcVar : this.a) {
+        for (lkc lkcVar : (List<lkc>) this.a) {
             lkcVar.a();
         }
     }
 
     @Override // defpackage.lkc
     public final void b() {
-        for (lkc lkcVar : this.a) {
+        for (lkc lkcVar : (List<lkc>) this.a) {
             lkcVar.b();
         }
     }
 
     @Override // defpackage.lkc
     public final void c(lju ljuVar) {
-        for (lkc lkcVar : this.a) {
+        for (lkc lkcVar : (List<lkc>) this.a) {
             lkcVar.c(ljuVar);
         }
     }
 
     @Override // defpackage.lkc
     public final void d(lzp lzpVar) {
-        for (lkc lkcVar : this.a) {
+        for (lkc lkcVar : (List<lkc>) this.a) {
             lkcVar.d(lzpVar);
         }
     }

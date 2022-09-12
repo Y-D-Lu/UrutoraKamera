@@ -3,6 +3,7 @@ package defpackage;
 import android.media.MediaCodec;
 import android.media.MediaFormat;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 /* renamed from: mkd  reason: default package */
@@ -15,11 +16,11 @@ public interface mkd extends AutoCloseable {
     void c(float f);
 
     @Override // java.lang.AutoCloseable
-    void close();
+    void close() throws IOException;
 
     void d(float f, float f2);
 
     void e(int i);
 
-    void f(mkc mkcVar, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo);
+    void f(mkc mkcVar, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) throws IOException;
 }

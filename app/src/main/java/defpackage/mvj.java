@@ -29,7 +29,7 @@ public final class mvj implements ndi {
     @Override // defpackage.ndi
     public final void a(qyk qykVar) {
         mve mveVar = (mve) this.a.mo37get();
-        for (mvd mvdVar : this.c) {
+        for (mvd mvdVar : (Set<mvd>) this.c) {
             if (!((pyy) mvdVar.b.get()).a) {
                 String c = c(mvdVar.a);
                 if (c != null) {

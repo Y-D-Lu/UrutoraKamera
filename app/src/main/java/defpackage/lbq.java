@@ -32,7 +32,7 @@ public final /* synthetic */ class lbq implements Executor {
                 a.d(new Runnable() { // from class: lbo
                     @Override // java.lang.Runnable
                     public final void run() {
-                        pht phtVar = pht.this;
+                        pht phtVar = a;
                         Runnable runnable3 = runnable2;
                         if (!((Boolean) plk.ae(phtVar)).booleanValue()) {
                             runnable3.run();

@@ -2,6 +2,8 @@ package defpackage;
 
 import android.content.Context;
 
+import java.util.List;
+
 /* renamed from: nbi  reason: default package */
 /* loaded from: classes2.dex */
 public final class nbi extends mvd {
@@ -21,7 +23,7 @@ public final class nbi extends mvd {
             if (qyfVar == null) {
                 qyfVar = qyf.k;
             }
-            for (qye qyeVar : qyfVar.j) {
+            for (qye qyeVar : (List<qye>) qyfVar.j) {
                 D.i(this.d.g(qyeVar.b));
             }
             return D.f();

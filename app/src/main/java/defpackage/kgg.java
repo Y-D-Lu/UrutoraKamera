@@ -11,7 +11,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 /* renamed from: kgg  reason: default package */
 /* loaded from: classes2.dex */
 public final class kgg extends bmo implements IInterface {
-    private final Context a;
+    private Context a;
 
     public kgg() {
         super("com.google.android.gms.auth.api.signin.internal.IRevocationService");
@@ -60,7 +60,7 @@ public final class kgg extends bmo implements IInterface {
                 String d = kgk.c(context).d("refreshToken");
                 kgd.a(context);
                 if (b == 3) {
-                    kgbVar = kft.a(d);
+                    kgbVar = (kgb) kft.a(d);
                 } else {
                     kgb kgbVar2 = new kgb(kimVar);
                     kimVar.c(kgbVar2);

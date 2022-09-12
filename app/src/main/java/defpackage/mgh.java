@@ -86,10 +86,10 @@ public final class mgh implements mgk, mgg {
                 intent2.setType("vnd.android.cursor.dir/contact");
                 mii miiVar = (mii) this.b.c();
                 ArrayList<? extends Parcelable> arrayList = new ArrayList<>();
-                for (String str : miiVar.b) {
+                for (String str : (List<String>) miiVar.b) {
                     c(arrayList, "vnd.android.cursor.item/email_v2", 2, str);
                 }
-                for (String str2 : miiVar.c) {
+                for (String str2 : (List<String>) miiVar.c) {
                     c(arrayList, "vnd.android.cursor.item/phone_v2", 3, str2);
                 }
                 if (!miiVar.e.isEmpty()) {

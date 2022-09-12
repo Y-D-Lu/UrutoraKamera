@@ -30,7 +30,7 @@ final class nts implements qco {
                 nujVar3.getClass();
                 nty ntyVar2 = this.a;
                 String str = nujVar3.b.n;
-                qfl k = str == null ? null : qbu.k(str);
+                qfl k = str == null ? null : (qfl) qbu.k(str);
                 if (k == null) {
                     nre nreVar = ntyVar2.d;
                     qfh qfhVar = new qfh(new nqy(new nrd(nreVar), nreVar, new ntn(nujVar3)));

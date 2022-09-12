@@ -141,7 +141,7 @@ public final class kq extends lg implements View.OnKeyListener, PopupWindow.OnDi
 
     @Override // defpackage.lk
     public final boolean f(ls lsVar) {
-        for (kp kpVar : this.b) {
+        for (kp kpVar : (List<kp>) this.b) {
             if (lsVar == kpVar.b) {
                 kpVar.a().requestFocus();
                 return true;
@@ -169,7 +169,7 @@ public final class kq extends lg implements View.OnKeyListener, PopupWindow.OnDi
 
     @Override // defpackage.lk
     public final void i() {
-        for (kp kpVar : this.b) {
+        for (kp kpVar : (List<kp>) this.b) {
             v(kpVar.a().getAdapter()).notifyDataSetChanged();
         }
     }
@@ -276,7 +276,7 @@ public final class kq extends lg implements View.OnKeyListener, PopupWindow.OnDi
         if (u()) {
             return;
         }
-        for (kw kwVar : this.l) {
+        for (kw kwVar : (List<kw>) this.l) {
             z(kwVar);
         }
         this.l.clear();

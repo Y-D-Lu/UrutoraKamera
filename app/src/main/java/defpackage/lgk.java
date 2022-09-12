@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.util.Collection;
 import java.util.Collections;
 
 /* renamed from: lgk  reason: default package */
@@ -17,12 +18,12 @@ public final /* synthetic */ class lgk implements Runnable {
     public final void run() {
         switch (this.b) {
             case 0:
-                for (lff lffVar : Collections.unmodifiableCollection(this.a.a)) {
+                for (lff lffVar : (Collection<lff>) Collections.unmodifiableCollection(this.a.a)) {
                     lffVar.i();
                 }
                 return;
             case 1:
-                for (lff lffVar2 : Collections.unmodifiableCollection(this.a.a)) {
+                for (lff lffVar2 : (Collection<lff>) Collections.unmodifiableCollection(this.a.a)) {
                     lffVar2.g();
                 }
                 return;
@@ -31,7 +32,7 @@ public final /* synthetic */ class lgk implements Runnable {
                 if (lgoVar.b) {
                     return;
                 }
-                for (lff lffVar3 : Collections.unmodifiableCollection(lgoVar.a)) {
+                for (lff lffVar3 : (Collection<lff>) Collections.unmodifiableCollection(lgoVar.a)) {
                     lffVar3.h();
                 }
                 lgoVar.b = true;
@@ -41,7 +42,7 @@ public final /* synthetic */ class lgk implements Runnable {
                 if (lgoVar2.b) {
                     return;
                 }
-                for (lff lffVar4 : Collections.unmodifiableCollection(lgoVar2.a)) {
+                for (lff lffVar4 : (Collection<lff>) Collections.unmodifiableCollection(lgoVar2.a)) {
                     lffVar4.h();
                 }
                 lgoVar2.b = true;
@@ -51,7 +52,7 @@ public final /* synthetic */ class lgk implements Runnable {
                 if (lgoVar3.c) {
                     return;
                 }
-                for (lff lffVar5 : Collections.unmodifiableCollection(lgoVar3.a)) {
+                for (lff lffVar5 : (Collection<lff>) Collections.unmodifiableCollection(lgoVar3.a)) {
                     lffVar5.f();
                 }
                 lgoVar3.c = true;

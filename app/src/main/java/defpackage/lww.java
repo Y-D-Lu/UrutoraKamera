@@ -53,7 +53,7 @@ final class lww implements lxb {
         if (this.d.isEmpty()) {
             d();
         } else {
-            for (lxa lxaVar : this.d) {
+            for (lxa lxaVar : (Set<lxa>) this.d) {
                 if (str.equals(lxaVar.a())) {
                     lis lisVar = this.a;
                     String a = lxaVar.a();

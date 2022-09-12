@@ -29,7 +29,7 @@ public final class njh implements nin {
                 arrayList.add(nikVar);
             }
         }
-        for (njn njnVar : nimVar.b) {
+        for (njn njnVar : (List<njn>) nimVar.b) {
             OutputStream outputStream = (OutputStream) ohh.t(arrayList);
             arrayList.add(njnVar.d());
         }

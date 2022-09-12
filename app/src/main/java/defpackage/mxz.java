@@ -52,7 +52,7 @@ public final class mxz implements mxo {
         obr.au(new ojz() { // from class: mxx
             @Override // defpackage.ojz
             public final Object a() {
-                return ((myb) qkg.this).mo37get();
+                return ((myb) qkgVar2).mo37get();
             }
         });
     }

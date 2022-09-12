@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.OrientationEventListener;
 
 import java.util.Iterator;
+import java.util.List;
 
 /* renamed from: lza  reason: default package */
 /* loaded from: classes2.dex */
@@ -79,11 +80,11 @@ final class lza extends OrientationEventListener {
                 return;
             }
             lzbVar.g = b;
-            for (final lyy lyyVar : lzbVar.a) {
+            for (final lyy lyyVar : (List<lyy>) lzbVar.a) {
                 lzbVar.e.execute(new Runnable() { // from class: lyz
                     @Override // java.lang.Runnable
                     public final void run() {
-                        lyy.this.h(b);
+                        lyyVar.h(b);
                     }
                 });
             }

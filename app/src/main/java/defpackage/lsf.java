@@ -48,7 +48,7 @@ public final class lsf extends ltl {
                     c(h, lnqVar);
                 }
             }
-            for (lnq lnqVar2 : this.f) {
+            for (lnq lnqVar2 : (Set<lnq>) this.f) {
                 if (bf.contains(lnqVar2.a())) {
                     c(h, lnqVar2);
                 }

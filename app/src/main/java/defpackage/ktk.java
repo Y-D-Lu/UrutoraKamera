@@ -8,6 +8,7 @@ import android.os.Looper;
 import android.os.Parcel;
 import android.util.Log;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -69,19 +70,19 @@ public final class ktk extends kmp {
             if (k()) {
                 try {
                     synchronized (this.a) {
-                        for (ksx ksxVar : this.a.values()) {
+                        for (ksx ksxVar : (Collection<ksx>) this.a.values()) {
                             ((kti) u()).e(ktm.a(ksxVar, null));
                         }
                         this.a.clear();
                     }
                     synchronized (this.t) {
-                        for (ksu ksuVar : this.t.values()) {
+                        for (ksu ksuVar : (Collection<ksu>) this.t.values()) {
                             ((kti) u()).e(new ktm(2, null, null, ksuVar, null, null, null));
                         }
                         this.t.clear();
                     }
                     synchronized (this.u) {
-                        for (ksr ksrVar : this.u.values()) {
+                        for (ksr ksrVar : (Collection<ksr>) this.u.values()) {
                             kti ktiVar = (kti) u();
                             ktd ktdVar = new ktd(2, null, ksrVar, null);
                             Parcel a = ktiVar.a();

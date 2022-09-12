@@ -5,6 +5,7 @@ import android.database.ContentObserver;
 import android.net.Uri;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -55,7 +56,7 @@ public final class ndz {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static synchronized void b() {
         synchronized (ndz.class) {
-            for (ndz ndzVar : a.values()) {
+            for (ndz ndzVar : (Collection<ndz>) a.values()) {
                 ndzVar.c.unregisterContentObserver(ndzVar.g);
             }
             a.clear();
@@ -68,7 +69,7 @@ public final class ndz {
             ner.g();
         }
         synchronized (this) {
-            for (nea neaVar : this.h) {
+            for (nea neaVar : (Collection<nea>) this.h) {
                 neaVar.a();
             }
         }

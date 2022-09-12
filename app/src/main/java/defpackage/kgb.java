@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.os.DeadObjectException;
 import android.os.Parcel;
 
 import com.google.android.apps.camera.bottombar.R;
@@ -14,14 +15,19 @@ public final class kgb extends kgc {
     }
 
     @Override // com.google.android.gms.common.api.internal.BasePendingResult
-    protected final /* bridge */ /* synthetic */ kiv a(Status status) {
+    public final /* bridge */ /* synthetic */ kiv a(Status status) {
         return status;
     }
 
     @Override // defpackage.kji
     protected final /* bridge */ /* synthetic */ void b(khz khzVar) {
         kfv kfvVar = (kfv) khzVar;
-        kgi kgiVar = (kgi) kfvVar.u();
+        kgi kgiVar = null;
+        try {
+            kgiVar = (kgi) kfvVar.u();
+        } catch (DeadObjectException ex) {
+            ex.printStackTrace();
+        }
         kga kgaVar = new kga(this);
         GoogleSignInOptions googleSignInOptions = kfvVar.a;
         Parcel a = kgiVar.a();

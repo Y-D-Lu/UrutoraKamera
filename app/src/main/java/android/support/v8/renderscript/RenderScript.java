@@ -132,7 +132,7 @@ public class RenderScript {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: classes.dex */
-    public class MessageThread extends Thread {
+    public static class MessageThread extends Thread {
         static final int RS_ERROR_FATAL_UNKNOWN = 4096;
         static final int RS_MESSAGE_TO_CLIENT_ERROR = 3;
         static final int RS_MESSAGE_TO_CLIENT_EXCEPTION = 1;

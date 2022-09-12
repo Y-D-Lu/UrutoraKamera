@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /* renamed from: ngt  reason: default package */
@@ -26,7 +27,7 @@ public final class ngt {
         if (neuVar == null) {
             return (ngu) m.j();
         }
-        for (nev nevVar : neuVar.e) {
+        for (nev nevVar : (List<nev>) neuVar.e) {
             poy m2 = ngv.e.m();
             String str = nevVar.d;
             if (m2.c) {
@@ -192,7 +193,7 @@ public final class ngt {
     public static oor c(ngu nguVar) {
         int i;
         HashMap ab = obr.ab(nguVar.g.size() + 3);
-        for (ngv ngvVar : nguVar.g) {
+        for (ngv ngvVar : (List<ngv>) nguVar.g) {
             int i2 = ngvVar.b;
             boolean z = false;
             switch (i2) {
@@ -324,7 +325,6 @@ public final class ngt {
                                         }
                                     }
                                     throw th;
-                                    break;
                                 }
                             } catch (ppp e2) {
                                 String valueOf2 = String.valueOf(str);

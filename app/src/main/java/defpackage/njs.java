@@ -37,7 +37,7 @@ public final /* synthetic */ class njs implements pgk {
                 return plk.O(list).b(ogl.a(new pgj() { // from class: njq
                     @Override // defpackage.pgj
                     public final pht a() {
-                        njt njtVar2 = njt.this;
+                        njt njtVar2 = njtVar;
                         pqm pqmVar2 = pqmVar;
                         int i2 = i;
                         List list2 = list;
@@ -49,7 +49,7 @@ public final /* synthetic */ class njs implements pgk {
                                     @Override // defpackage.pgk
                                     public final pht a(Object obj2) {
                                         pqm pqmVar3 = (pqm) obj2;
-                                        return njp.this.c();
+                                        return njpVar.c();
                                     }
                                 }), pgr.a);
                             }

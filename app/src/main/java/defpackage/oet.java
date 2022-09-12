@@ -4,6 +4,8 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.RemoteException;
 
+import java.util.List;
+
 /* renamed from: oet  reason: default package */
 /* loaded from: classes2.dex */
 final class oet extends oen {
@@ -34,7 +36,7 @@ final class oet extends oen {
             oewVar2.k.h(e, "linkToDeath failed", new Object[0]);
         }
         this.b.a.e = false;
-        for (Runnable runnable : this.b.a.b) {
+        for (Runnable runnable : (List<Runnable>) this.b.a.b) {
             runnable.run();
         }
         this.b.a.b.clear();

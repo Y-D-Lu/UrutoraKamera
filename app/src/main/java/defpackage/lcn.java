@@ -22,7 +22,7 @@ public final class lcn implements lco {
             executor.execute(new Runnable() { // from class: lcj
                 @Override // java.lang.Runnable
                 public final void run() {
-                    lij.this.fB(Collections.emptyList());
+                    lijVar.fB(Collections.emptyList());
                 }
             });
             return new jmf(3);
@@ -39,7 +39,7 @@ public final class lcn implements lco {
     @Override // defpackage.lco
     public final /* bridge */ /* synthetic */ Object fA() {
         ArrayList arrayList = new ArrayList();
-        for (lco lcoVar : this.a) {
+        for (lco lcoVar : (Collection<lco>) this.a) {
             arrayList.add(lcoVar.fA());
         }
         return arrayList;

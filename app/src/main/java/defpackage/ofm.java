@@ -15,7 +15,7 @@ public final class ofm {
         try {
             if (context.getPackageManager().getApplicationInfo("com.android.vending", 0).enabled) {
                 Signature[] signatureArr = context.getPackageManager().getPackageInfo("com.android.vending", 64).signatures;
-                if (signatureArr == null || (r0 = signatureArr.length) == 0) {
+                if (signatureArr == null || (signatureArr.length) == 0) {
                     oxk oxkVar = a;
                     Object[] objArr = new Object[0];
                     if (Log.isLoggable("PlayCore", 5)) {

@@ -69,7 +69,7 @@ public final class bcg extends Exception {
                 }
                 i = i2;
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }

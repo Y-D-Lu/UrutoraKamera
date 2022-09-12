@@ -6,6 +6,7 @@ import android.util.Pair;
 import com.google.android.libraries.microvideo.gcamuxer.AnnexBToAvcc;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ public final class mkv implements AutoCloseable {
         ByteBuffer aw;
         ByteBuffer aw2;
         long j = Long.MAX_VALUE;
-        for (mku mkuVar : this.a) {
+        for (mku mkuVar : (List<mku>) this.a) {
             if (!mkuVar.c.isEmpty()) {
                 j = Math.min(((MediaCodec.BufferInfo) mkuVar.c.get(0)).presentationTimeUs, j);
             }
@@ -204,81 +205,93 @@ public final class mkv implements AutoCloseable {
     }
 
     private final void c(long j, ByteBuffer byteBuffer) {
-        boolean z = true;
-        obr.aQ(j >= ((Long) this.h.k()).longValue());
-        if (j < this.g) {
-            z = false;
+        try {
+            boolean z = true;
+            obr.aQ(j >= ((Long) this.h.k()).longValue());
+            if (j < this.g) {
+                z = false;
+            }
+            obr.aQ(z);
+            this.c.position(j);
+            this.c.write(mip.ax("free", byteBuffer.duplicate()));
+            this.g = 8 + j;
+            d();
+            this.h = orj.f(Long.valueOf(j), Long.valueOf(j + byteBuffer.limit()));
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
-        obr.aQ(z);
-        this.c.position(j);
-        this.c.write(mip.ax("free", byteBuffer.duplicate()));
-        this.g = 8 + j;
-        d();
-        this.h = orj.f(Long.valueOf(j), Long.valueOf(j + byteBuffer.limit()));
     }
 
     private final void d() {
-        this.c.position(this.e + 8);
-        ByteBuffer allocate = ByteBuffer.allocate(8);
-        allocate.putLong(this.g - this.e);
-        ByteBuffer byteBuffer = (ByteBuffer) allocate.flip();
-        this.c.write(allocate);
+        try {
+            this.c.position(this.e + 8);
+            ByteBuffer allocate = ByteBuffer.allocate(8);
+            allocate.putLong(this.g - this.e);
+            ByteBuffer byteBuffer = (ByteBuffer) allocate.flip();
+            this.c.write(allocate);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(mku mkuVar) {
-        Iterator it;
-        long j;
-        long j2;
-        if (mkuVar.f.isEmpty()) {
-            return;
-        }
-        boolean z = true;
-        if (!this.d.getAndSet(true)) {
-            this.c.position(0L);
-            this.c.write(this.k.a());
-            this.e = this.c.position();
-            ByteBuffer allocate = ByteBuffer.allocate(16);
-            allocate.putInt(1);
-            allocate.put("mdat".getBytes(StandardCharsets.UTF_8));
-            allocate.putLong(16L);
-            ByteBuffer byteBuffer = (ByteBuffer) allocate.flip();
-            this.c.write(allocate);
-            long j3 = this.e + 16;
-            this.f = j3;
-            this.g = j3;
-        }
-        long j4 = 0;
-        while (mkuVar.f.iterator().hasNext()) {
-            j4 += ((ByteBuffer) ((Pair) it.next()).second).limit();
-        }
-        obr.aQ(j4 > 0);
-        if (this.f + j4 >= this.g) {
-            c(Math.max(this.g + Math.max(500000L, ((float) j) * 0.2f) + j4, ((Long) this.h.k()).longValue()), b());
-        }
-        mkuVar.d.add(Long.valueOf(this.f));
-        mkuVar.e.add(Integer.valueOf(mkuVar.f.size()));
-        do {
-            Pair pair = (Pair) mkuVar.f.removeFirst();
-            ByteBuffer byteBuffer2 = (ByteBuffer) pair.second;
-            mkuVar.c.add((MediaCodec.BufferInfo) pair.first);
-            if (mip.aq(mkuVar.a)) {
-                AnnexBToAvcc.a(byteBuffer2);
+        try {
+            Iterator it = null;
+            long j = 0;
+            long j2 = 0;
+            if (mkuVar.f.isEmpty()) {
+                return;
             }
-            ByteBuffer byteBuffer3 = (ByteBuffer) byteBuffer2.rewind();
-            this.f = this.f + this.c.write(byteBuffer2, j2);
-        } while (!mkuVar.f.isEmpty());
-        if (this.f > this.g) {
-            z = false;
+            boolean z = true;
+            if (!this.d.getAndSet(true)) {
+                this.c.position(0L);
+                this.c.write(this.k.a());
+                this.e = this.c.position();
+                ByteBuffer allocate = ByteBuffer.allocate(16);
+                allocate.putInt(1);
+                allocate.put("mdat".getBytes(StandardCharsets.UTF_8));
+                allocate.putLong(16L);
+                ByteBuffer byteBuffer = (ByteBuffer) allocate.flip();
+                this.c.write(allocate);
+                long j3 = this.e + 16;
+                this.f = j3;
+                this.g = j3;
+            }
+            long j4 = 0;
+            while (mkuVar.f.iterator().hasNext()) {
+                j4 += ((ByteBuffer) ((Pair) it.next()).second).limit();
+            }
+            obr.aQ(j4 > 0);
+            if (this.f + j4 >= this.g) {
+                c((long) Math.max(this.g + Math.max(500000L, ((float) j) * 0.2f) + j4, ((Long) this.h.k()).longValue()), b());
+            }
+            mkuVar.d.add(Long.valueOf(this.f));
+            mkuVar.e.add(Integer.valueOf(mkuVar.f.size()));
+            do {
+                Pair pair = (Pair) mkuVar.f.removeFirst();
+                ByteBuffer byteBuffer2 = (ByteBuffer) pair.second;
+                mkuVar.c.add((MediaCodec.BufferInfo) pair.first);
+                if (mip.aq(mkuVar.a)) {
+                    AnnexBToAvcc.a(byteBuffer2);
+                }
+                ByteBuffer byteBuffer3 = (ByteBuffer) byteBuffer2.rewind();
+                this.f = this.f + this.c.write(byteBuffer2, j2);
+            } while (!mkuVar.f.isEmpty());
+            if (this.f > this.g) {
+                z = false;
+            }
+            obr.aQ(z);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        obr.aQ(z);
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [java.io.FileOutputStream, java.nio.channels.FileChannel] */
     @Override // java.lang.AutoCloseable
     public final void close() {
         try {
-            for (mku mkuVar : this.a) {
+            for (mku mkuVar : (List<mku>) this.a) {
                 a(mkuVar);
             }
             if (this.d.get()) {
@@ -312,11 +325,17 @@ public final class mkv implements AutoCloseable {
                 this.h = orj.f(Long.valueOf(j2), Long.valueOf(j2 + b.limit()));
                 this.c.truncate(j3);
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
-            this.c.close();
-            this.b.close();
-            this.c = null;
-            this.b = null;
+            try {
+                this.c.close();
+                this.b.close();
+                this.c = null;
+                this.b = null;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 }

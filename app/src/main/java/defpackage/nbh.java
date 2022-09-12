@@ -19,7 +19,7 @@ final class nbh {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static PackageStats a(Context context) {
-        UUID uuid;
+        UUID uuid = null;
         myw.f();
         StorageManager storageManager = (StorageManager) context.getSystemService(StorageManager.class);
         if (storageManager == null) {
@@ -64,13 +64,11 @@ final class nbh {
                 }
                 return packageStats;
             } catch (Error e3) {
-                e = e3;
-                ((oug) ((oug) ((oug) a.c()).h(e)).G((char) 3663)).o("StorageStatsManager is not available");
+                ((oug) ((oug) ((oug) a.c()).h(e3)).G((char) 3663)).o("StorageStatsManager is not available");
                 return null;
             }
         } catch (RuntimeException e4) {
-            e = e4;
-            ((oug) ((oug) ((oug) a.c()).h(e)).G((char) 3663)).o("StorageStatsManager is not available");
+            ((oug) ((oug) ((oug) a.c()).h(e4)).G((char) 3663)).o("StorageStatsManager is not available");
             return null;
         }
     }

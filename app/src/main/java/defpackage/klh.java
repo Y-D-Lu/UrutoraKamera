@@ -9,10 +9,11 @@ import com.google.android.gms.common.api.internal.LifecycleCallback;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
-import java.util.Map;
-import java.util.WeakHashMap;
-
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Map;
+import java.util.Set;
+import java.util.WeakHashMap;
 
 /* renamed from: klh  reason: default package */
 /* loaded from: classes2.dex */
@@ -25,14 +26,14 @@ public final class klh extends bu implements kkn {
     @Override // defpackage.bu
     public final void F(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         super.F(str, fileDescriptor, printWriter, strArr);
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
         }
     }
 
     @Override // defpackage.bu
     public final void I(int i, int i2, Intent intent) {
         super.I(i, i2, intent);
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
             lifecycleCallback.c(i, i2, intent);
         }
     }
@@ -41,7 +42,7 @@ public final class klh extends bu implements kkn {
     public final void J() {
         super.J();
         this.b = 5;
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
         }
     }
 
@@ -49,7 +50,7 @@ public final class klh extends bu implements kkn {
     public final void L() {
         super.L();
         this.b = 3;
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
             lifecycleCallback.h();
         }
     }
@@ -90,7 +91,7 @@ public final class klh extends bu implements kkn {
     public final void g() {
         super.g();
         this.b = 2;
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
             lifecycleCallback.i();
         }
     }
@@ -109,7 +110,7 @@ public final class klh extends bu implements kkn {
     public final void h() {
         super.h();
         this.b = 4;
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
             lifecycleCallback.j();
         }
     }

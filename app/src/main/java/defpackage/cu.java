@@ -17,12 +17,11 @@ import android.view.animation.Animation;
 
 import androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;
 
-import org.codeaurora.snapcam.R;
-
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -30,8 +29,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import java.util.Collections;
 
 /* renamed from: cu  reason: default package */
 /* loaded from: classes.dex */
@@ -427,6 +424,9 @@ public final class cu {
                                 } else {
                                     br brVar = dpVar.a.P;
                                 }
+                            }
+                            if (false) {
+                                break;
                             }
                         }
                     }

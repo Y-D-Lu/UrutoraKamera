@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.List;
+
 /* renamed from: mel  reason: default package */
 /* loaded from: classes2.dex */
 public final class mel implements mec {
@@ -18,7 +20,7 @@ public final class mel implements mec {
         while (true) {
             int i2 = 1;
             if (i >= pshVar.a.size()) {
-                for (psi psiVar : pshVar.b) {
+                for (psi psiVar : (List<psi>) pshVar.b) {
                     if (!c(psiVar)) {
                         return false;
                     }
@@ -46,7 +48,7 @@ public final class mel implements mec {
                 return true;
             }
         }
-        for (psh pshVar : psiVar.b) {
+        for (psh pshVar : (List<psh>) psiVar.b) {
             if (b(pshVar)) {
                 return true;
             }

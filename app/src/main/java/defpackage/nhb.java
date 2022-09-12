@@ -19,6 +19,6 @@ final class nhb implements Iterable {
 
     @Override // java.lang.Iterable
     public final Iterator iterator() {
-        return new nha(this.d, this.a, this.b, this.c);
+        return new nha(this.d, (String) this.a, this.b, this.c);
     }
 }

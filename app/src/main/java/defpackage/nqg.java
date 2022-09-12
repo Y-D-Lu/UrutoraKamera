@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.LinkedHashSet;
+import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: nqg  reason: default package */
@@ -38,7 +39,7 @@ public final class nqg extends qnp implements qmj {
                 if (nqhVar.l) {
                     linkedHashSet.add(nmv.a);
                 }
-                for (oyj oyjVar : nqhVar.m) {
+                for (oyj oyjVar : (List<oyj>) nqhVar.m) {
                     linkedHashSet.add(new nnc(oyjVar));
                 }
                 String str = nqhVar.n;

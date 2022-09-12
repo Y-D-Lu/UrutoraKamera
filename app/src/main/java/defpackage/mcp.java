@@ -38,7 +38,11 @@ class mcp extends mcm implements mce {
 
     @Override // defpackage.mce
     public final void j() {
-        this.c.writeLock().lockInterruptibly();
+        try {
+            this.c.writeLock().lockInterruptibly();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
         this.c.writeLock().unlock();
     }
 

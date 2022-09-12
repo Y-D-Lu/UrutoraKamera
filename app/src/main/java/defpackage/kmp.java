@@ -20,6 +20,7 @@ public abstract class kmp extends kmb implements kie {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public kmp(android.content.Context r12, android.os.Looper r13, int r14, defpackage.kmf r15, defpackage.kjq r16, defpackage.kkw r17) {
+        super();
         /*
             r11 = this;
             r10 = r11

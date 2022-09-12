@@ -60,7 +60,7 @@ public final class nkq {
         final pgk b = ogl.b(new pgk() { // from class: nkl
             @Override // defpackage.pgk
             public final pht a(Object obj) {
-                return plk.V(oiu.this.a(obj));
+                return plk.V(oiuVar.a(obj));
             }
         });
         ogb ogbVar = this.e;
@@ -71,7 +71,7 @@ public final class nkq {
             this.h.b(new pgj() { // from class: nki
                 @Override // defpackage.pgj
                 public final pht a() {
-                    return pht.this;
+                    return c;
                 }
             }, pgr.a);
             pht b3 = this.h.b(ogl.a(new pgj() { // from class: nkh

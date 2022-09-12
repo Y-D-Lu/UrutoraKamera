@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
@@ -16,20 +17,29 @@ public final class nij extends njc {
 
     @Override // java.io.FilterInputStream, java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        for (njk njkVar : this.a) {
+        for (njk njkVar : (List<njk>) this.a) {
             try {
                 njkVar.close();
             } catch (Throwable th) {
             }
         }
-        super.close();
+        try {
+            super.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final int read() {
-        int read = this.in.read();
+        int read = 0;
+        try {
+            read = this.in.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read != -1) {
-            for (njk njkVar : this.a) {
+            for (njk njkVar : (List<njk>) this.a) {
                 njkVar.a();
             }
         }
@@ -38,9 +48,14 @@ public final class nij extends njc {
 
     @Override // defpackage.njc, java.io.FilterInputStream, java.io.InputStream
     public final int read(byte[] bArr) {
-        int read = this.in.read(bArr);
+        int read = 0;
+        try {
+            read = this.in.read(bArr);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read != -1) {
-            for (njk njkVar : this.a) {
+            for (njk njkVar : (List<njk>) this.a) {
                 njkVar.a();
             }
         }
@@ -49,9 +64,14 @@ public final class nij extends njc {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final int read(byte[] bArr, int i, int i2) {
-        int read = this.in.read(bArr, i, i2);
+        int read = 0;
+        try {
+            read = this.in.read(bArr, i, i2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read != -1) {
-            for (njk njkVar : this.a) {
+            for (njk njkVar : (List<njk>) this.a) {
                 njkVar.a();
             }
         }

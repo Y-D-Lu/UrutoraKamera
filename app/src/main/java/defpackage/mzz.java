@@ -37,8 +37,7 @@ public final class mzz {
         } catch (NoSuchMethodException e2) {
             return oih.a;
         } catch (Exception e3) {
-            e = e3;
-            ((oug) ((oug) ((oug) a.b()).h(e)).G((char) 3641)).o("MemoryInfo.getOtherPss(which) failure");
+            ((oug) ((oug) ((oug) a.b()).h(e3)).G((char) 3641)).o("MemoryInfo.getOtherPss(which) failure");
             return oih.a;
         }
     }
@@ -113,11 +112,11 @@ public final class mzz {
                     mzyVar2.j = e(mzy.e, str3);
                     mzyVar = mzyVar2;
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 ((oug) ((oug) ((oug) a.b()).h(e)).G(3638)).o("Error reading proc status");
             }
             StrictMode.setThreadPolicy(allowThreadDiskReads);
-            allowThreadDiskReads = (ppa) qxi.g.m();
+            ppa ppaAllowThreadDiskReads = (ppa) qxi.g.m();
             poy m = qxh.c.m();
             poy m2 = qxf.z.m();
             if (memoryInfo2 != null) {
@@ -367,11 +366,11 @@ public final class mzz {
             qxfVar25.getClass();
             qxhVar.b = qxfVar25;
             qxhVar.a |= 1;
-            if (allowThreadDiskReads.c) {
-                allowThreadDiskReads.m();
-                allowThreadDiskReads.c = false;
+            if (ppaAllowThreadDiskReads.c) {
+                ppaAllowThreadDiskReads.m();
+                ppaAllowThreadDiskReads.c = false;
             }
-            qxi qxiVar = (qxi) allowThreadDiskReads.b;
+            qxi qxiVar = (qxi) ppaAllowThreadDiskReads.b;
             qxh qxhVar2 = (qxh) m.j();
             qxhVar2.getClass();
             qxiVar.b = qxhVar2;
@@ -386,11 +385,11 @@ public final class mzz {
             e3.getClass();
             qxtVar.b = e3;
             qxtVar.a |= 1;
-            if (allowThreadDiskReads.c) {
-                allowThreadDiskReads.m();
-                allowThreadDiskReads.c = false;
+            if (ppaAllowThreadDiskReads.c) {
+                ppaAllowThreadDiskReads.m();
+                ppaAllowThreadDiskReads.c = false;
             }
-            qxi qxiVar2 = (qxi) allowThreadDiskReads.b;
+            qxi qxiVar2 = (qxi) ppaAllowThreadDiskReads.b;
             qxt qxtVar2 = (qxt) m3.j();
             qxtVar2.getClass();
             qxiVar2.c = qxtVar2;
@@ -408,20 +407,20 @@ public final class mzz {
             qxg qxgVar = (qxg) m4.b;
             qxgVar.a = 1 | qxgVar.a;
             qxgVar.b = isInteractive;
-            if (allowThreadDiskReads.c) {
-                allowThreadDiskReads.m();
-                allowThreadDiskReads.c = false;
+            if (ppaAllowThreadDiskReads.c) {
+                ppaAllowThreadDiskReads.m();
+                ppaAllowThreadDiskReads.c = false;
             }
-            qxi qxiVar3 = (qxi) allowThreadDiskReads.b;
+            qxi qxiVar3 = (qxi) ppaAllowThreadDiskReads.b;
             qxg qxgVar2 = (qxg) m4.j();
             qxgVar2.getClass();
             qxiVar3.e = qxgVar2;
             qxiVar3.a |= 8;
-            if (allowThreadDiskReads.c) {
-                allowThreadDiskReads.m();
-                allowThreadDiskReads.c = false;
+            if (ppaAllowThreadDiskReads.c) {
+                ppaAllowThreadDiskReads.m();
+                ppaAllowThreadDiskReads.c = false;
             }
-            qxi qxiVar4 = (qxi) allowThreadDiskReads.b;
+            qxi qxiVar4 = (qxi) ppaAllowThreadDiskReads.b;
             qxiVar4.d = i - 1;
             int i12 = qxiVar4.a | 4;
             qxiVar4.a = i12;
@@ -429,7 +428,7 @@ public final class mzz {
                 qxiVar4.a = i12 | 16;
                 qxiVar4.f = str2;
             }
-            return (qxi) allowThreadDiskReads.j();
+            return (qxi) ppaAllowThreadDiskReads.j();
         } catch (Throwable th) {
             StrictMode.setThreadPolicy(allowThreadDiskReads);
             throw th;

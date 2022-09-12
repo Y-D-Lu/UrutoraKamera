@@ -23,6 +23,7 @@ public final class nyj extends id {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public nyj(android.content.Context r12, int r13) {
+        super(r12, r13);
         /*
             r11 = this;
             int r0 = v(r12)

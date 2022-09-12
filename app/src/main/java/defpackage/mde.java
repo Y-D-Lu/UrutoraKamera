@@ -25,7 +25,7 @@ public final class mde {
     static {
         try {
             asv.a.c("http://ns.google.com/photos/1.0/panorama/", "GPano");
-        } catch (ass e) {
+        } catch (Exception e) {
             Log.e("XmpUtil", "Could not register pano namespace!");
             e.printStackTrace();
         }
@@ -39,7 +39,7 @@ public final class mde {
         try {
             String str = (String) ((ath) s.a("http://ns.adobe.com/xmp/note/", "HasExtendedXMP")).a;
             return s;
-        } catch (ass e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
@@ -57,7 +57,7 @@ public final class mde {
             }
             try {
                 astVar.c("http://ns.adobe.com/xmp/note/", "HasExtendedXMP", v(bArr));
-            } catch (ass e) {
+            } catch (Exception e) {
                 return;
             }
         } else {
@@ -96,7 +96,7 @@ public final class mde {
         }
         try {
             x(outputStream, w);
-        } catch (IOException e2) {
+        } catch (Exception e2) {
         }
     }
 
@@ -112,7 +112,7 @@ public final class mde {
             try {
                 atg f = astVar2.f();
                 while (true) {
-                    Object mo197next = f.mo197next();
+                    Object mo197next = f.next();
                     mo197next.getClass();
                     atd atdVar = (atd) mo197next;
                     String str = atdVar.b;
@@ -132,7 +132,7 @@ public final class mde {
         }
         try {
             return ojc.i(asv.c(str));
-        } catch (ass e) {
+        } catch (Exception e) {
             Log.e("XmpUtil", "String was not a serialized XMPMeta.");
             return oih.a;
         }
@@ -163,7 +163,7 @@ public final class mde {
                 return null;
             }
             return (String) ((ath) a).a;
-        } catch (ass e) {
+        } catch (Exception e) {
             return null;
         }
     }
@@ -463,7 +463,7 @@ public final class mde {
                 }
                 try {
                     astVar = asv.b(bArr);
-                } catch (ass e) {
+                } catch (Exception e) {
                     astVar = null;
                 }
             }
@@ -471,7 +471,7 @@ public final class mde {
                 return ojd.a(s, astVar);
             }
             return null;
-        } catch (ass e2) {
+        } catch (Exception e2) {
             e2.printStackTrace();
             return null;
         }
@@ -591,7 +591,7 @@ public final class mde {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.mde.w(mdd, boolean, boolean):java.util.List");
     }
 
-    private static void x(OutputStream outputStream, List list) {
+    private static void x(OutputStream outputStream, List list) throws IOException {
         outputStream.write(255);
         outputStream.write(216);
         Iterator it = list.iterator();
@@ -618,7 +618,7 @@ public final class mde {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(2048);
             hn.e((ati) astVar, byteArrayOutputStream, atyVar);
             return byteArrayOutputStream.toByteArray();
-        } catch (ass e) {
+        } catch (Exception e) {
             return null;
         }
     }

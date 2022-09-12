@@ -39,7 +39,7 @@ public final class lsc implements lso {
                 f.d(new gng(ltyVar.a.a(new lij() { // from class: lsa
                     @Override // defpackage.lij
                     public final void fB(Object obj) {
-                        pih pihVar = pih.this;
+                        pih pihVar = f;
                         ojc ojcVar = (ojc) obj;
                         if (ojcVar.g()) {
                             pihVar.o((Surface) ojcVar.c());

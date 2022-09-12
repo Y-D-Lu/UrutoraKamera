@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.IntentFilter;
 import android.util.Log;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -57,7 +56,7 @@ public final class ngi implements ojz {
             ojz ojzVar = new ojz() { // from class: nfj
                 @Override // defpackage.ojz
                 public final Object a() {
-                    return new nfm(nei.this, b2, z, z2);
+                    return new nfm(neiVar, b2, z, z2);
                 }
             };
             ojd a2 = ojd.a(b2, "");
@@ -107,7 +106,7 @@ public final class ngi implements ojz {
             } else {
                 try {
                     obj3 = ((nfg) nfhVar).e.a(obj2);
-                } catch (IOException | ClassCastException e) {
+                } catch (Exception e) {
                     Log.e("PhenotypeCombinedFlags", str2.length() != 0 ? "Invalid Phenotype flag value for flag ".concat(str2) : new String("Invalid Phenotype flag value for flag "), e);
                     obj3 = null;
                 }
@@ -128,7 +127,7 @@ public final class ngi implements ojz {
                 if (b3 != null) {
                     try {
                         obj = ((nfg) nfhVar).d.a(b3);
-                    } catch (IOException | IllegalArgumentException e2) {
+                    } catch (Exception e2) {
                         Log.e("PhenotypeCombinedFlags", str2.length() != 0 ? "Invalid Phenotype flag value for flag ".concat(str2) : new String("Invalid Phenotype flag value for flag "), e2);
                     }
                 }

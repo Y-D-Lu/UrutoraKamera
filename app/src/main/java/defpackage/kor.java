@@ -110,7 +110,7 @@ public final class kor {
         throw new UnsupportedOperationException("Method not decompiled: defpackage.kor.e(android.content.Context):int");
     }
 
-    private static void f(ClassLoader classLoader) {
+    private static void f(ClassLoader classLoader) throws koo {
         kot kotVar;
         try {
             IBinder iBinder = (IBinder) classLoader.loadClass("com.google.android.gms.dynamiteloader.DynamiteLoaderV2").getConstructor(new Class[0]).newInstance(new Object[0]);
@@ -182,30 +182,26 @@ public final class kor {
                                 throw th;
                             }
                         } catch (Exception e2) {
-                            e = e2;
-                            if (!(e instanceof koo)) {
-                                throw new koo("V2 version check failed", e);
+                            if (!(e2 instanceof koo)) {
+                                throw new koo("V2 version check failed", e2);
                             }
-                            throw e;
+                            throw e2;
                         }
                     }
                 } catch (Exception e3) {
-                    e = e3;
                 } catch (Throwable th2) {
                     cursor = query;
-                    th = th2;
                 }
             }
             Log.w("DynamiteModule", "Failed to retrieve remote module version.");
             throw new koo("Failed to connect to dynamite module ContentResolver.");
         } catch (Exception e4) {
-            e = e4;
         } catch (Throwable th3) {
-            th = th3;
         }
+        return 0;
     }
 
-    public final IBinder b(String str) {
+    public final IBinder b(String str) throws koo {
         try {
             return (IBinder) this.i.getClassLoader().loadClass(str).newInstance();
         } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e2) {

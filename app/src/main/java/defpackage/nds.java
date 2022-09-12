@@ -4,6 +4,8 @@ import android.content.Context;
 
 import com.google.android.libraries.performance.primes.transmitter.clearcut.ClearcutMetricSnapshotTransmitter;
 
+import java.util.List;
+
 /* renamed from: nds  reason: default package */
 /* loaded from: classes2.dex */
 public final class nds implements ndi {
@@ -26,7 +28,7 @@ public final class nds implements ndi {
     }
 
     @Override // defpackage.ndi
-    public final void a(final qyk qykVar) {
+    public final void a(qyk qykVar) {
         int i;
         if (this.d) {
             qxy qxyVar = qykVar.g;
@@ -44,11 +46,11 @@ public final class nds implements ndi {
             if (qycVar == null) {
                 qycVar = qyc.o;
             }
-            ppm<qyb> ppmVar = qycVar.j;
+            ppm ppmVar = qycVar.j;
             if (!ppmVar.isEmpty()) {
                 poy m = qyg.c.m();
                 qyb qybVar = null;
-                for (qyb qybVar2 : ppmVar) {
+                for (qyb qybVar2 : (List<qyb>) ppmVar) {
                     if (qybVar != null && (i = qybVar.d + 1) != qybVar2.c) {
                         m.an(0);
                         m.am(i);
@@ -90,11 +92,12 @@ public final class nds implements ndi {
             qykVar2.a |= 2048;
             qykVar = (qyk) poyVar.j();
         }
+        final qyk qykVarFinal = qykVar;
         plk.af(pgb.i(this.e.a(), new pgk() { // from class: ndr
             @Override // defpackage.pgk
             public final pht a(Object obj) {
                 nds ndsVar = nds.this;
-                qyk qykVar3 = qykVar;
+                qyk qykVar3 = qykVarFinal;
                 ClearcutMetricSnapshotTransmitter clearcutMetricSnapshotTransmitter = ndsVar.b;
                 Context context = ndsVar.a;
                 ppa ppaVar = (ppa) ndf.c.m();

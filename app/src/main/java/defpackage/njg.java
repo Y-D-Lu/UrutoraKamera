@@ -26,7 +26,7 @@ public final class njg implements nin {
                 arrayList.add(nijVar);
             }
         }
-        for (njn njnVar : nimVar.b) {
+        for (njn njnVar : (List<njn>) nimVar.b) {
             InputStream inputStream = (InputStream) ohh.t(arrayList);
             arrayList.add(njnVar.c());
         }

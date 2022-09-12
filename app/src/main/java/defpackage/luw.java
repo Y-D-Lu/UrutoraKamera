@@ -24,7 +24,11 @@ public final class luw implements lzp {
         try {
             return this.a.getCameraAudioRestriction();
         } catch (CameraAccessException | IllegalArgumentException | IllegalStateException | SecurityException | UnsupportedOperationException e) {
-            throw new llv(e);
+            try {
+                throw new llv(e);
+            } catch (llv ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -43,7 +47,11 @@ public final class luw implements lzp {
             }
             this.a.createCaptureSession(sessionConfiguration);
         } catch (CameraAccessException | IllegalArgumentException | IllegalStateException | SecurityException | UnsupportedOperationException e) {
-            throw new llv(e);
+            try {
+                throw new llv(e);
+            } catch (llv ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -57,7 +65,11 @@ public final class luw implements lzp {
         try {
             this.a.createCaptureSession(list, new lvc(lznVar), handler);
         } catch (CameraAccessException | IllegalArgumentException | IllegalStateException | SecurityException | UnsupportedOperationException e) {
-            throw new llv(e);
+            try {
+                throw new llv(e);
+            } catch (llv ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -75,7 +87,11 @@ public final class luw implements lzp {
             }
             cameraDevice.createCaptureSessionByOutputConfigurations(mip.aT(list), new lvc(lznVar), handler);
         } catch (CameraAccessException | IllegalArgumentException | IllegalStateException | SecurityException | UnsupportedOperationException e) {
-            throw new llv(e);
+            try {
+                throw new llv(e);
+            } catch (llv ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -84,7 +100,11 @@ public final class luw implements lzp {
         try {
             this.a.createConstrainedHighSpeedCaptureSession(list, new lvc(lznVar), handler);
         } catch (CameraAccessException | IllegalArgumentException | IllegalStateException | SecurityException | UnsupportedOperationException e) {
-            throw new llv(e);
+            try {
+                throw new llv(e);
+            } catch (llv ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -93,7 +113,11 @@ public final class luw implements lzp {
         try {
             this.a.setCameraAudioRestriction(i);
         } catch (CameraAccessException | IllegalArgumentException | IllegalStateException | SecurityException | UnsupportedOperationException e) {
-            throw new llv(e);
+            try {
+                throw new llv(e);
+            } catch (llv ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -108,7 +132,11 @@ public final class luw implements lzp {
             luzVar.b(CaptureRequest.LENS_OPTICAL_STABILIZATION_MODE, Integer.valueOf(Helper.MenuValue("pref_ois_key")));
             return luzVar;
         } catch (CameraAccessException | IllegalArgumentException | IllegalStateException | SecurityException | UnsupportedOperationException e) {
-            throw new llv(e);
+            try {
+                throw new llv(e);
+            } catch (llv ex) {
+                ex.printStackTrace();
+            }
         }
     }
 }

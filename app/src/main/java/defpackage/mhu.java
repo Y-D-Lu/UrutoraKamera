@@ -31,7 +31,7 @@ public final class mhu implements mhs {
     }
 
     @Override // defpackage.mhs
-    public final DLEngineApi a(String str) {
+    public final DLEngineApi a(String str) throws mhn {
         DLEngineApi engineApi;
         mhx mhxVar;
         ClassLoader dexClassLoader;
@@ -78,7 +78,7 @@ public final class mhu implements mhs {
             }
             mhlVar.g = new mhj(createPackageContext, mhlVar.d);
             String str5 = mhlVar.f;
-            for (mhp mhpVar : mhlVar.e) {
+            for (mhp mhpVar : (Set<mhp>) mhlVar.e) {
                 mip mipVar = mhpVar.b;
                 long C = mip.C(mhlVar);
                 mip mipVar2 = mhpVar.b;
@@ -139,7 +139,11 @@ public final class mhu implements mhs {
                         break;
                 }
                 if (c2 == 0 || c2 != 3) {
-                    throw new mhn(String.format("Host package %s is not compatible: %s", str5, mhxVar.b));
+                    try {
+                        throw new mhn(String.format("Host package %s is not compatible: %s", str5, mhxVar.b));
+                    } catch (mhn e) {
+                        e.printStackTrace();
+                    }
                 }
             }
             try {
@@ -150,12 +154,8 @@ public final class mhu implements mhs {
                     bundle.putLong("shim_version_code", 17L);
                     bundle.putString("host_package_name", str);
                     bundle.putString("shim_package_name", this.b.getPackageName());
-                    engineApi = engineApiLoader.getEngineApi(a, new Callable(this) { // from class: mht
-                        public final /* synthetic */ mhu a;
-
-                        {
-                            this.a = this;
-                        }
+                    engineApi = engineApiLoader.getEngineApi(a, new Callable() { // from class: mht
+                        public final /* synthetic */ mhu a = mhu.this;
 
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
@@ -168,12 +168,8 @@ public final class mhu implements mhs {
                         }
                     }, bundle);
                 } else {
-                    engineApi = engineApiLoader.getEngineApi(a, new Callable(this) { // from class: mht
-                        public final /* synthetic */ mhu a;
-
-                        {
-                            this.a = this;
-                        }
+                    engineApi = engineApiLoader.getEngineApi(a, new Callable() { // from class: mht
+                        public final /* synthetic */ mhu a = mhu.this;
 
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
@@ -192,14 +188,11 @@ public final class mhu implements mhs {
                 e = e;
                 throw new mhn("Cannot create new instance of com.google.android.libraries.lens.lenslite.engine.EngineApiLoaderImpl class from loadedClass!", e);
             } catch (InstantiationException e2) {
-                e = e2;
-                throw new mhn("Cannot create new instance of com.google.android.libraries.lens.lenslite.engine.EngineApiLoaderImpl class from loadedClass!", e);
+                throw new mhn("Cannot create new instance of com.google.android.libraries.lens.lenslite.engine.EngineApiLoaderImpl class from loadedClass!", e2);
             } catch (NoSuchMethodException e3) {
-                e = e3;
-                throw new mhn("Cannot get constructor for com.google.android.libraries.lens.lenslite.engine.EngineApiLoaderImpl class from loadedClass!", e);
+                throw new mhn("Cannot get constructor for com.google.android.libraries.lens.lenslite.engine.EngineApiLoaderImpl class from loadedClass!", e3);
             } catch (InvocationTargetException e4) {
-                e = e4;
-                throw new mhn("Cannot get constructor for com.google.android.libraries.lens.lenslite.engine.EngineApiLoaderImpl class from loadedClass!", e);
+                throw new mhn("Cannot get constructor for com.google.android.libraries.lens.lenslite.engine.EngineApiLoaderImpl class from loadedClass!", e4);
             } catch (Throwable th) {
                 throw new mhn(th.getMessage() != null ? th.getMessage() : "Failed to load engine", th);
             }

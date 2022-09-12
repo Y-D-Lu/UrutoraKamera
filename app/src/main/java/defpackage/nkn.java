@@ -32,7 +32,7 @@ public final class nkn implements pgj {
             }
             ArrayList arrayList = new ArrayList(this.a.size());
             nkp nkpVar = new nkp(this.b);
-            for (pgk pgkVar : this.a) {
+            for (pgk pgkVar : (List<pgk>) this.a) {
                 try {
                     arrayList.add(pgkVar.a(nkpVar));
                 } catch (Exception e) {

@@ -32,7 +32,7 @@ public final class luh implements lun, lie {
         }
         this.g = true;
         if (!this.b.isEmpty()) {
-            for (lum lumVar : this.b) {
+            for (lum lumVar : (List<lum>) this.b) {
                 lumVar.h();
             }
             this.b.clear();

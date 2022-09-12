@@ -168,7 +168,7 @@ public final class lpp implements pys {
                 a.i(new maf() { // from class: lud
                     @Override // defpackage.maf
                     public final void a() {
-                        lug.this.a();
+                        lugVar.a();
                     }
                 }, bW);
                 luj lujVar2 = lujVar;

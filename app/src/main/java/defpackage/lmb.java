@@ -10,14 +10,14 @@ import java.util.List;
 /* renamed from: lmb  reason: default package */
 /* loaded from: classes2.dex */
 public enum lmb {
-    TOP_LEFT(1),
-    TOP_RIGHT(2),
-    BOTTOM_RIGHT(3),
-    BOTTOM_LEFT(4),
-    LEFT_TOP(5),
-    RIGHT_TOP(6),
-    RIGHT_BOTTOM(7),
-    LEFT_BOTTOM(8);
+    TOP_LEFT((short)1),
+    TOP_RIGHT((short)2),
+    BOTTOM_RIGHT((short)3),
+    BOTTOM_LEFT((short)4),
+    LEFT_TOP((short)5),
+    RIGHT_TOP((short)6),
+    RIGHT_BOTTOM((short)7),
+    LEFT_BOTTOM((short)8);
     
     private static final oor j;
     public final short i;

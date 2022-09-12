@@ -583,7 +583,7 @@ public class ViewPager extends ViewGroup {
     @Override // android.view.ViewGroup
     public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         float f2;
-        ArrayList arrayList;
+        ArrayList arrayList = null;
         int action = motionEvent.getAction() & 255;
         int i = 0;
         if (action == 3 || action == 1) {

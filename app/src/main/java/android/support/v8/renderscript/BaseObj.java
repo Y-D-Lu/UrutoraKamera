@@ -61,7 +61,11 @@ public class BaseObj {
     /* JADX INFO: Access modifiers changed from: protected */
     public void finalize() {
         helpDestroy();
-        super.finalize();
+        try {
+            super.finalize();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
     }
 
     public long getID(RenderScript renderScript) {

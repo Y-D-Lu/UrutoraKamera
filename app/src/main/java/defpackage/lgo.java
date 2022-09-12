@@ -9,11 +9,13 @@ import android.util.Log;
 import java.io.FileDescriptor;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -174,7 +176,7 @@ public final class lgo implements lfe {
     }
 
     private final boolean u() {
-        for (lfg lfgVar : this.m) {
+        for (lfg lfgVar : (List<lfg>) this.m) {
             if (!lfgVar.e()) {
                 return false;
             }
@@ -215,7 +217,7 @@ public final class lgo implements lfe {
                 } else {
                     String string = mediaFormat.getString("mime");
                     string.getClass();
-                    for (lfg lfgVar2 : this.m) {
+                    for (lfg lfgVar2 : (List<lfg>) this.m) {
                         MediaFormat mediaFormat2 = lfgVar2.d;
                         if (mediaFormat2 != null && string.equals(mediaFormat2.getString("mime"))) {
                             StringBuilder sb = new StringBuilder(string.length() + 37);
@@ -340,7 +342,7 @@ public final class lgo implements lfe {
             if (lfgVar2.a) {
                 arrayList.add(lfgVar2);
             }
-            for (lfg lfgVar3 : this.m) {
+            for (lfg lfgVar3 : (List<lfg>) this.m) {
                 if (lfgVar3.a) {
                     arrayList.add(lfgVar3);
                 }
@@ -371,7 +373,7 @@ public final class lgo implements lfe {
                 mahVar2.b((String) entry.getKey(), entry.getValue());
             }
             this.v = true;
-        } catch (lfb e) {
+        } catch (Exception e) {
             Log.e("MediaMuxerMul", "Fail to create next video file", e);
             throw new IllegalStateException("Fail to create next video file", e);
         }
@@ -496,8 +498,7 @@ public final class lgo implements lfe {
             e = e;
             throw new RuntimeException("Wait for Muxer start is interrupted", e);
         } catch (ExecutionException e2) {
-            e = e2;
-            throw new RuntimeException("Wait for Muxer start is interrupted", e);
+            throw new RuntimeException("Wait for Muxer start is interrupted", e2);
         } catch (TimeoutException e3) {
             throw new RuntimeException(String.format("Wait for muxer to start timed out after %s milliseconds.audio-ready: %s, video-ready: %s, meta-ready: %s", Long.valueOf(j), Boolean.valueOf(this.k.e()), Boolean.valueOf(this.l.e()), Boolean.valueOf(u())));
         }
@@ -623,7 +624,7 @@ public final class lgo implements lfe {
             public final void run() {
                 lgo lgoVar = lgo.this;
                 MediaCodec.BufferInfo bufferInfo2 = bufferInfo;
-                for (lff lffVar : Collections.unmodifiableCollection(lgoVar.a)) {
+                for (lff lffVar : (Collection<lff>) Collections.unmodifiableCollection(lgoVar.a)) {
                     lffVar.j(bufferInfo2.presentationTimeUs, bufferInfo2.size);
                 }
             }

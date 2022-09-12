@@ -61,9 +61,9 @@ final class nha implements Iterator {
     /* JADX WARN: Multi-variable type inference failed */
     private final ngz b(CharSequence charSequence, int i) {
         nhf e2;
-        int i2;
-        int i3;
-        int E;
+        int i2 = 0;
+        int i3 = 0;
+        int E = 0;
         ngz ngzVar = null;
         try {
             if (f.matcher(charSequence).matches() && !b.matcher(charSequence).find()) {
@@ -110,28 +110,30 @@ final class nha implements Iterator {
                                         E = nhd.E(h2, nhdVar.g(substring, "ZZ"));
                                         i2 = i5;
                                         i3 = 4;
-                                    } catch (ngy e3) {
-                                        if (e3.a != 1) {
-                                            return null;
-                                        }
-                                        String l = nhdVar.l(h2.a);
-                                        try {
-                                            if (!l.equals("ZZ")) {
-                                                E = nhd.E(h2, nhdVar.g(substring, l));
-                                                i2 = i5;
-                                                if (E != 5) {
-                                                    i3 = 4;
-                                                }
-                                            } else {
-                                                nhi nhiVar = new nhi();
-                                                i2 = i5;
-                                                i3 = 4;
-                                                nhdVar.o(substring, null, false, false, nhiVar);
-                                                E = nhd.E(h2, nhiVar);
-                                            }
-                                        } catch (ngy e4) {
-                                            return null;
-                                        }
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+//                                    } catch (ngy e3) {
+//                                        if (e3.a != 1) {
+//                                            return null;
+//                                        }
+//                                        String l = nhdVar.l(h2.a);
+//                                        try {
+//                                            if (!l.equals("ZZ")) {
+//                                                E = nhd.E(h2, nhdVar.g(substring, l));
+//                                                i2 = i5;
+//                                                if (E != 5) {
+//                                                    i3 = 4;
+//                                                }
+//                                            } else {
+//                                                nhi nhiVar = new nhi();
+//                                                i2 = i5;
+//                                                i3 = 4;
+//                                                nhdVar.o(substring, null, false, false, nhiVar);
+//                                                E = nhd.E(h2, nhiVar);
+//                                            }
+//                                        } catch (Exception e4) {
+//                                            return null;
+//                                        }
                                     }
                                     if (E != i3) {
                                         return null;
@@ -151,7 +153,7 @@ final class nha implements Iterator {
                                             if (!nhdVar.x(new StringBuilder(nhd.n(h2.h)), e2, null)) {
                                                 return null;
                                             }
-                                        } catch (ngy e5) {
+                                        } catch (Exception e5) {
                                             return null;
                                         }
                                     }
@@ -162,7 +164,7 @@ final class nha implements Iterator {
                                 h2.i = false;
                                 h2.j = "";
                                 return new ngz(i, charSequence.toString(), h2);
-                            } catch (ngy e6) {
+                            } catch (Exception e6) {
                                 return null;
                             }
                         case 2:
@@ -172,12 +174,13 @@ final class nha implements Iterator {
                         default:
                             throw null;
                     }
-                } catch (ngy e7) {
-                    return charSequence;
+                } catch (Exception e7) {
+                    return null;
+                    //return charSequence;
                 }
             }
             return null;
-        } catch (ngy e8) {
+        } catch (Exception e8) {
             return ngzVar;
         }
     }

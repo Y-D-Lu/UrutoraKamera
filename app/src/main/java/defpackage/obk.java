@@ -23,7 +23,7 @@ public final class obk {
     public final float j;
     public Typeface k;
     private final int l;
-    private boolean m = false;
+    public boolean m = false;
 
     public obk(Context context, int i) {
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i, obi.b);

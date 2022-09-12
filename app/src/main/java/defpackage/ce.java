@@ -5,7 +5,7 @@ package defpackage;
 public class ce {
     private static final xf a = new xf();
 
-    public static Class a(ClassLoader classLoader, String str) {
+    public static Class a(ClassLoader classLoader, String str) throws ClassNotFoundException {
         xf xfVar = a;
         xf xfVar2 = (xf) xfVar.get(classLoader);
         if (xfVar2 == null) {

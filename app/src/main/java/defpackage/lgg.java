@@ -37,7 +37,7 @@ final class lgg implements lij {
                     Log.w("MetaEncoder", String.format("Multiple metadata (%d) found for video frame (%d)", Long.valueOf(lghVar.a), Long.valueOf(longValue)));
                 } else if (Math.abs(lghVar.a - longValue) <= lgi.a.longValue()) {
                     cmj cmjVar = lghVar.b;
-                    byte[][] bArr = new byte[3];
+                    byte[][] bArr = new byte[3][];
                     byte[] bArr2 = cmjVar.b;
                     if (bArr2 == null) {
                         array = new byte[0];

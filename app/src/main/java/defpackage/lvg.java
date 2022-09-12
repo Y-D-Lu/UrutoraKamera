@@ -111,7 +111,7 @@ public final class lvg implements mag {
             this.b.setOnImageAvailableListener(new ImageReader.OnImageAvailableListener() { // from class: lvf
                 @Override // android.media.ImageReader.OnImageAvailableListener
                 public final void onImageAvailable(ImageReader imageReader) {
-                    maf.this.a();
+                    mafVar.a();
                 }
             }, handler);
         }

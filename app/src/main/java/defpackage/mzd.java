@@ -6,6 +6,7 @@ import android.content.Context;
 import android.os.Trace;
 import android.util.ArrayMap;
 
+import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
@@ -69,7 +70,7 @@ public final class mzd extends mzi implements mwa, mxo {
         }
         String b = a2.b();
         if (Trace.isEnabled()) {
-            for (mzj mzjVar : ((mzk) this.k.mo37get()).b) {
+            for (mzj mzjVar : (List<mzj>) ((mzk) this.k.mo37get()).b) {
                 int a3 = myw.a(mzjVar.a);
                 if (a3 == 0) {
                     a3 = 1;

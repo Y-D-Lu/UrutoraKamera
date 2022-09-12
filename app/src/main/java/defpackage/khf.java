@@ -24,9 +24,9 @@ public final class khf implements kgq {
             c = new ConcurrentHashMap();
             d = null;
             e = null;
-            return;
+        } else {
+            throw new IllegalStateException("Cannot set GServices prefix and skip GServices");
         }
-        throw new IllegalStateException("Cannot set GServices prefix and skip GServices");
     }
 
     public khf(Context context) {

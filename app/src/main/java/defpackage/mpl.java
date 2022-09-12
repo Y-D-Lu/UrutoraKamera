@@ -32,7 +32,7 @@ public class mpl extends mmb implements mpi {
     }
 
     @Override // defpackage.mmb
-    protected final mne b() {
+    public final mne b() {
         Collection<Object> k = k();
         Executor executor = this.c;
         mpk mpkVar = mpk.a;
@@ -92,7 +92,7 @@ public class mpl extends mmb implements mpi {
 
     @Override // defpackage.mmb
     protected final void gy() {
-        for (mua muaVar : k()) {
+        for (mua muaVar : (Collection<mua>) k()) {
             muaVar.close();
         }
         ((mrd) mip.ac(this.e)).close();

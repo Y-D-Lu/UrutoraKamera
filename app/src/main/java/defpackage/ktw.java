@@ -15,7 +15,7 @@ public final class ktw extends kno implements Comparable {
         this.b = i2;
     }
 
-    @Override // java.lang.Comparable
+    //@Override // java.lang.Comparable
     /* renamed from: a */
     public final int compareTo(ktw ktwVar) {
         int i = this.a;
@@ -52,5 +52,10 @@ public final class ktw extends kno implements Comparable {
         mip.cA(parcel, 1, this.a);
         mip.cA(parcel, 2, this.b);
         mip.cv(parcel, ct);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return compareTo((ktw)o);
     }
 }

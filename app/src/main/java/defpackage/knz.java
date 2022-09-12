@@ -25,7 +25,7 @@ public final class knz {
         if (rawQuery != null && rawQuery.length() > 0) {
             emptyMap = new HashMap();
             ojq b = ojq.b('=');
-            for (String str : ojq.b('&').a().e(rawQuery)) {
+            for (String str : (Iterable<? extends String>) ojq.b('&').a().e(rawQuery)) {
                 List g = b.g(str);
                 if (g.isEmpty() || g.size() > 2) {
                     throw new IllegalArgumentException("bad parameter");

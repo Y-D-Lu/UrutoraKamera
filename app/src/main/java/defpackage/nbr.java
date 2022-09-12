@@ -14,12 +14,12 @@ public final class nbr extends nbp implements mxo {
     public nbr(mxm mxmVar, final pyn pynVar, qkg qkgVar, final nox noxVar, byte[] bArr) {
         new ConcurrentHashMap();
         mxmVar.a(pgr.a, pynVar, qkgVar);
-        obr.au(new ojz(pynVar, null) { // from class: nbq
-            public final /* synthetic */ pyn a;
+        obr.au(new ojz() { // from class: nbq
+            public final /* synthetic */ pyn a = pynVar;
 
             @Override // defpackage.ojz
             public final Object a() {
-                nox noxVar2 = nox.this;
+                nox noxVar2 = noxVar;
                 pyn pynVar2 = this.a;
                 int i = nbr.a;
                 return noxVar2.a(((nbo) pynVar2.get()).b);

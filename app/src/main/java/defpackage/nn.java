@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.ViewTreeObserver;
 import android.widget.ListAdapter;
+import android.widget.SpinnerAdapter;
 
 import org.codeaurora.snapcam.R;
 
@@ -97,7 +98,7 @@ public final class nn extends pk implements np {
         nq nqVar = this.d;
         int i2 = nqVar.c;
         if (i2 == -2) {
-            int a = nqVar.a(this.b, c());
+            int a = nqVar.a((SpinnerAdapter) this.b, c());
             int i3 = (this.d.getContext().getResources().getDisplayMetrics().widthPixels - this.d.d.left) - this.d.d.right;
             if (a > i3) {
                 a = i3;

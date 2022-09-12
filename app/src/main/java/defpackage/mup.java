@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.util.Set;
 import java.util.WeakHashMap;
 
 /* renamed from: mup  reason: default package */
@@ -26,7 +27,7 @@ final class mup implements muo {
         } else if (!((Boolean) ojcVar.e(Boolean.FALSE)).booleanValue()) {
             try {
                 WeakHashMap weakHashMap = ogq.a;
-                for (mxo mxoVar : ((pyw) qkgVar).mo37get()) {
+                for (mxo mxoVar : (Set<mxo>) ((pyw) qkgVar).mo37get()) {
                     mxoVar.t();
                 }
             } catch (RuntimeException e) {

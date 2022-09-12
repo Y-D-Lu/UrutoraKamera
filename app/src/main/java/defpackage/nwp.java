@@ -5,6 +5,8 @@ import android.graphics.drawable.Drawable;
 
 import com.google.android.material.appbar.AppBarLayout;
 
+import java.util.List;
+
 /* renamed from: nwp  reason: default package */
 /* loaded from: classes2.dex */
 public final class nwp implements ValueAnimator.AnimatorUpdateListener {
@@ -24,7 +26,7 @@ public final class nwp implements ValueAnimator.AnimatorUpdateListener {
         if (drawable instanceof obu) {
             ((obu) drawable).g(floatValue);
         }
-        for (nww nwwVar : this.b.f) {
+        for (nww nwwVar : (List<nww>) this.b.f) {
             int i = this.a.f;
             nwwVar.a();
         }

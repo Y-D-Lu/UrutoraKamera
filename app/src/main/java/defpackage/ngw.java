@@ -351,11 +351,10 @@ final class ngw {
                     nhf nhfVar2 = (nhf) list.get(0);
                     nhf nhfVar3 = (nhf) concurrentHashMap.putIfAbsent(obj, nhfVar2);
                     return nhfVar3 != null ? nhfVar3 : nhfVar2;
-                } catch (IOException e2) {
+                } catch (Exception e2) {
                     throw new RuntimeException("cannot load/parse metadata", e2);
                 }
             } catch (Throwable th2) {
-                th = th2;
                 try {
                     if (objectInputStream != null) {
                         objectInputStream.close();
@@ -365,9 +364,9 @@ final class ngw {
                 } catch (IOException e3) {
                     b.log(Level.WARNING, "error closing input stream (ignored)", (Throwable) e3);
                 }
-                throw th;
+                throw th2;
             }
-        } catch (IOException e4) {
+        } catch (Exception e4) {
             throw new RuntimeException("cannot load/parse metadata", e4);
         }
     }

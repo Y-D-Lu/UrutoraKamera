@@ -338,6 +338,9 @@ public final class mkt {
                                                 byteBufferArr5 = byteBufferArr3;
                                                 byteBufferArr6 = byteBufferArr10;
                                             }
+                                            if (false) {
+                                                break;
+                                            }
                                         }
                                         ByteBuffer byteBuffer19 = (ByteBuffer) allocate13.flip();
                                         arrayList8.add(allocate13);
@@ -375,7 +378,6 @@ public final class mkt {
                                     }
                                     ByteBuffer byteBuffer22 = (ByteBuffer) allocate12.flip();
                                     ax4 = mip.ax("hvcC", allocate12);
-                                    break;
                                     break;
                                 case 2:
                                     ByteBuffer byteBuffer23 = b2.getByteBuffer("csd-0");
@@ -565,22 +567,22 @@ public final class mkt {
                         allocate19.putInt(position, i14);
                         ByteBuffer byteBuffer29 = (ByteBuffer) allocate19.flip();
                         byteBufferArr9[1] = mip.ax("stts", allocate19);
-                        oom<MediaCodec.BufferInfo> e2 = mksVar.e();
+                        oom e2 = mksVar.e();
                         ByteBuffer allocate20 = ByteBuffer.allocate((e2.size() * 4) + 200);
                         allocate20.putInt(0);
                         allocate20.putInt(0);
                         allocate20.putInt(e2.size());
-                        for (MediaCodec.BufferInfo bufferInfo : e2) {
+                        for (MediaCodec.BufferInfo bufferInfo : (List<MediaCodec.BufferInfo>) e2) {
                             allocate20.putInt(bufferInfo.size);
                         }
                         ByteBuffer byteBuffer30 = (ByteBuffer) allocate20.flip();
                         byteBufferArr9[2] = mip.ax("stsz", allocate20);
-                        oom<Integer> d = mksVar.d();
+                        oom d = mksVar.d();
                         ByteBuffer allocate21 = ByteBuffer.allocate((d.size() * 12) + 200);
                         allocate21.putInt(0);
                         allocate21.putInt(d.size());
                         int i16 = 1;
-                        for (Integer num : d) {
+                        for (Integer num : (List<Integer>) d) {
                             int intValue = num.intValue();
                             allocate21.putInt(i16);
                             allocate21.putInt(intValue);
@@ -589,24 +591,24 @@ public final class mkt {
                         }
                         ByteBuffer byteBuffer31 = (ByteBuffer) allocate21.flip();
                         byteBufferArr9[3] = mip.ax("stsc", allocate21);
-                        oom<Long> c4 = mksVar.c();
+                        oom c4 = mksVar.c();
                         ByteBuffer allocate22 = ByteBuffer.allocate((c4.size() * 8) + 200);
                         allocate22.putInt(0);
                         allocate22.putInt(c4.size());
-                        for (Long l3 : c4) {
+                        for (Long l3 : (List<Long>) c4) {
                             allocate22.putLong(l3.longValue());
                         }
                         ByteBuffer byteBuffer32 = (ByteBuffer) allocate22.flip();
                         byteBufferArr9[4] = mip.ax("co64", allocate22);
                         if (aq) {
-                            oom<MediaCodec.BufferInfo> e3 = mksVar.e();
+                            oom e3 = mksVar.e();
                             ByteBuffer allocate23 = ByteBuffer.allocate((e3.size() * 4) + 200);
                             allocate23.putInt(0);
                             int position2 = allocate23.position();
                             allocate23.putInt(e3.size());
                             int i17 = 0;
                             int i18 = 1;
-                            for (MediaCodec.BufferInfo bufferInfo2 : e3) {
+                            for (MediaCodec.BufferInfo bufferInfo2 : (List<MediaCodec.BufferInfo>) e3) {
                                 if ((bufferInfo2.flags & 1) > 0) {
                                     allocate23.putInt(i18);
                                     i17++;

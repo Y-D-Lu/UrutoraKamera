@@ -108,6 +108,12 @@ public final class ppe extends pnp implements RandomAccess, ppk, pqt {
         return this.c[i];
     }
 
+    @Override
+    public ppk f(int i) {
+        i(i);
+        return this.b;
+    }
+
     @Override // defpackage.pnp, java.util.AbstractList, java.util.Collection, java.util.List
     public final boolean equals(Object obj) {
         if (this == obj) {
@@ -185,7 +191,7 @@ public final class ppe extends pnp implements RandomAccess, ppk, pqt {
 
     @Override // defpackage.pnp, java.util.AbstractList, java.util.List
     public final /* bridge */ /* synthetic */ Object remove(int i) {
-        int i2;
+        int i2 = 0;
         gN();
         i(i);
         int[] iArr = this.c;

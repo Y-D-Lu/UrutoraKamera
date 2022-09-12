@@ -10,10 +10,11 @@ import com.google.android.gms.common.api.internal.LifecycleCallback;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
-import java.util.Map;
-import java.util.WeakHashMap;
-
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Map;
+import java.util.Set;
+import java.util.WeakHashMap;
 
 /* renamed from: kkp  reason: default package */
 /* loaded from: classes2.dex */
@@ -49,14 +50,14 @@ public final class kkp extends Fragment implements kkn {
     @Override // android.app.Fragment
     public final void dump(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         super.dump(str, fileDescriptor, printWriter, strArr);
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
         }
     }
 
     @Override // android.app.Fragment
     public final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
             lifecycleCallback.c(i, i2, intent);
         }
     }
@@ -75,7 +76,7 @@ public final class kkp extends Fragment implements kkn {
     public final void onDestroy() {
         super.onDestroy();
         this.b = 5;
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
         }
     }
 
@@ -83,7 +84,7 @@ public final class kkp extends Fragment implements kkn {
     public final void onResume() {
         super.onResume();
         this.b = 3;
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
             lifecycleCallback.h();
         }
     }
@@ -105,7 +106,7 @@ public final class kkp extends Fragment implements kkn {
     public final void onStart() {
         super.onStart();
         this.b = 2;
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
             lifecycleCallback.i();
         }
     }
@@ -114,7 +115,7 @@ public final class kkp extends Fragment implements kkn {
     public final void onStop() {
         super.onStop();
         this.b = 4;
-        for (LifecycleCallback lifecycleCallback : this.d.values()) {
+        for (LifecycleCallback lifecycleCallback : (Collection<LifecycleCallback>) this.d.values()) {
             lifecycleCallback.j();
         }
     }

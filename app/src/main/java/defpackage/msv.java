@@ -57,12 +57,8 @@ public final class msv implements msr {
             throw new IllegalStateException("Muxer already started. Cannot call start twice.");
         }
         this.l = true;
-        this.g.d(new Runnable(this) { // from class: msu
-            public final /* synthetic */ msv a;
-
-            {
-                this.a = this;
-            }
+        this.g.d(new Runnable() { // from class: msu
+            public final /* synthetic */ msv a = msv.this;
 
             /* JADX WARN: Code restructure failed: missing block: B:100:0x01d2, code lost:
                 if (r0.g.isDone() != false) goto L73;
@@ -93,9 +89,9 @@ public final class msv implements msr {
             @Override // defpackage.pgk
             public final pht a(Object obj) {
                 MediaMuxer mediaMuxer;
-                ojc h;
-                ojc h2;
-                ojc h3;
+                ojc h = null;
+                ojc h2 = null;
+                ojc h3 = null;
                 msv msvVar = msv.this;
                 List list = (List) obj;
                 try {
@@ -118,27 +114,22 @@ public final class msv implements msr {
                     }
                     return plk.V(mediaMuxer);
                 } catch (Throwable th2) {
-                    th = th2;
-                    Log.e("MuxerImpl", "Error trying to construct MediaMuxer.", th);
+                    Log.e("MuxerImpl", "Error trying to construct MediaMuxer.", th2);
                     if (!msvVar.i && mediaMuxer != null) {
                         mediaMuxer.release();
                         msvVar.i = true;
                     }
-                    return plk.U(th);
+                    return plk.U(th2);
                 }
             }
         }, this.j));
         ArrayList ag = obr.ag();
         ag.add(this.e);
-        for (mta mtaVar : this.h) {
+        for (mta mtaVar : (List<mta>) this.h) {
             ag.add(mtaVar.b);
         }
-        plk.R(ag).d(new Runnable(this) { // from class: msu
-            public final /* synthetic */ msv a;
-
-            {
-                this.a = this;
-            }
+        plk.R(ag).d(new Runnable() { // from class: msu
+            public final /* synthetic */ msv a = msv.this;
 
             @Override // java.lang.Runnable
             /*
@@ -154,15 +145,11 @@ public final class msv implements msr {
             }
         }, this.j);
         ArrayList ag2 = obr.ag();
-        for (mta mtaVar2 : this.h) {
+        for (mta mtaVar2 : (List<mta>) this.h) {
             ag2.add(mtaVar2.e);
         }
-        plk.R(ag2).d(new Runnable(this) { // from class: msu
-            public final /* synthetic */ msv a;
-
-            {
-                this.a = this;
-            }
+        plk.R(ag2).d(new Runnable() { // from class: msu
+            public final /* synthetic */ msv a = msv.this;
 
             @Override // java.lang.Runnable
             /*

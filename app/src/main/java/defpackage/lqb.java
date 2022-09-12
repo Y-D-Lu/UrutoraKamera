@@ -1,7 +1,6 @@
 package defpackage;
 
 import java.util.Set;
-import java.util.concurrent.ExecutionException;
 
 /* renamed from: lqb  reason: default package */
 /* loaded from: classes2.dex */
@@ -18,12 +17,22 @@ public final class lqb implements lng {
 
     @Override // defpackage.lng
     public final lmp a() {
-        return this.a.a();
+        try {
+            return this.a.a();
+        } catch (llv e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.lng
     public final pht b(lmq lmqVar) {
-        return this.a.e(lmqVar, false);
+        try {
+            return this.a.e(lmqVar, false);
+        } catch (llv e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:40:0x00e5 A[Catch: all -> 0x00d2, TryCatch #1 {all -> 0x00d2, blocks: (B:7:0x0046, B:8:0x0057, B:12:0x0065, B:13:0x006f, B:15:0x0075, B:16:0x008d, B:18:0x0093, B:19:0x00a6, B:20:0x00b5, B:37:0x00db, B:38:0x00df, B:40:0x00e5, B:42:0x00f1, B:44:0x00f7, B:46:0x00ff, B:47:0x0103, B:49:0x0109, B:50:0x0113, B:51:0x0117, B:53:0x011d, B:55:0x0129, B:56:0x012d, B:58:0x0133, B:59:0x013d, B:61:0x0143, B:62:0x014d, B:63:0x0152), top: B:67:0x0046 }] */
@@ -73,8 +82,7 @@ public final class lqb implements lng {
                         this.c.g("submit");
                         this.a.j(lpdVar, set3);
                         return lqaVar;
-                    } catch (InterruptedException | ExecutionException | llv e) {
-                        e = e;
+                    } catch (Exception e) {
                         set2 = set3;
                         if ((!b.cancel(true) || b.isDone()) && (set = (Set) mip.bY(b)) != null) {
                             for (lqh lqhVar2 : set) {
@@ -91,43 +99,65 @@ public final class lqb implements lng {
                         }
                         throw new llv(e);
                     }
-                } catch (InterruptedException | ExecutionException | llv e2) {
-                    e = e2;
+                } catch (Exception e2) {
                     lqaVar = null;
                     set2 = set3;
                 }
-            } catch (InterruptedException | ExecutionException | llv e3) {
-                e = e3;
+            } catch (Exception e3) {
                 lqaVar = null;
             }
         } finally {
             this.c.f();
             this.c.f();
         }
+        return null;
     }
 
     @Override // defpackage.lng
     public final void e(lpd lpdVar) {
-        this.a.i(lpdVar);
+        try {
+            this.a.i(lpdVar);
+        } catch (llv e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.lng
     public final pht f(lmq lmqVar) {
-        return this.a.k(lmqVar);
+        try {
+            return this.a.k(lmqVar);
+        } catch (llv e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.lng
     public final void g(lmq lmqVar) {
-        this.a.m(lmqVar);
+        try {
+            this.a.m(lmqVar);
+        } catch (llv e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.lng
     public final lpc h() {
-        return this.a.b();
+        try {
+            return this.a.b();
+        } catch (llv e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.lng
     public final lpc i() {
-        return this.a.b();
+        try {
+            return this.a.b();
+        } catch (llv e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

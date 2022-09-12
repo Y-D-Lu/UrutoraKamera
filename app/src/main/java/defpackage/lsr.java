@@ -17,6 +17,7 @@ final class lsr extends lst {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public lsr(defpackage.lty r2, android.hardware.camera2.params.OutputConfiguration r3) {
+        super(r2, defpackage.pih.f());
         /*
             r1 = this;
             pih r0 = defpackage.pih.f()

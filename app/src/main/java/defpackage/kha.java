@@ -23,6 +23,11 @@ public final class kha extends kji {
         return status;
     }
 
+    @Override
+    protected void b(khz khzVar) {
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.kha.b(khc):void");
+    }
+
     @Override // defpackage.kji, defpackage.kjj
     public final /* bridge */ /* synthetic */ void c(Object obj) {
         super.j((kiv) obj);
@@ -72,17 +77,17 @@ public final class kha extends kji {
     /* JADX WARN: Removed duplicated region for block: B:395:0x07c0  */
     /* JADX WARN: Removed duplicated region for block: B:399:0x07d6  */
     /* JADX WARN: Removed duplicated region for block: B:458:0x064f A[SYNTHETIC] */
-    @Override // defpackage.kji
-    /* renamed from: d */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
-    public final void b(defpackage.khc r33) {
-        /*
-            Method dump skipped, instructions count: 2157
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.kha.b(khc):void");
-    }
+//    @Override // defpackage.kji
+//    /* renamed from: d */
+//    /*
+//        Code decompiled incorrectly, please refer to instructions dump.
+//        To view partially-correct code enable 'Show inconsistent code' option in preferences
+//    */
+//    public final void b(defpackage.khc r33) {
+//        /*
+//            Method dump skipped, instructions count: 2157
+//            To view this dump change 'Code comments level' option to 'DEBUG'
+//        */
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.kha.b(khc):void");
+//    }
 }

@@ -35,6 +35,8 @@ public final class kda {
     private static final boolean x;
     private static final boolean y;
 
+    public static final CaptureRequest.Key KEY = r = a(11) ? ExperimentalKeys.EXPERIMENTAL_PD_BACK_CAL_INDEX : null;
+
     static {
         boolean e2 = kde.e(4);
         v = e2;
@@ -77,7 +79,6 @@ public final class kda {
         o = a(12) ? ExperimentalKeys.EXPERIMENTAL_FACE_LANDMARK_XY : e2 ? com.google.android.camera.experimental2019.ExperimentalKeys.RESULT_FACE_LANDMARK_XY : e3 ? com.google.android.camera.experimental2020_midyear.ExperimentalKeys.RESULT_FACE_LANDMARK_XY : e4 ? com.google.android.camera.experimental2020.ExperimentalKeys.RESULT_FACE_LANDMARK_XY : e5 ? com.google.android.camera.experimental2021.ExperimentalKeys.RESULT_FACE_LANDMARK_XY : null;
         p = a(12) ? ExperimentalKeys.EXPERIMENTAL_FACE_LANDMARK_DEPTH : e2 ? com.google.android.camera.experimental2019.ExperimentalKeys.RESULT_FACE_LANDMARK_DEPTH : e3 ? com.google.android.camera.experimental2020_midyear.ExperimentalKeys.RESULT_FACE_LANDMARK_DEPTH : e4 ? com.google.android.camera.experimental2020.ExperimentalKeys.RESULT_FACE_LANDMARK_DEPTH : e5 ? com.google.android.camera.experimental2021.ExperimentalKeys.RESULT_FACE_LANDMARK_DEPTH : null;
         q = a(12) ? ExperimentalKeys.EXPERIMENTAL_FACE_ORIENTATION : e2 ? com.google.android.camera.experimental2019.ExperimentalKeys.RESULT_FACE_ORIENTATION : e3 ? com.google.android.camera.experimental2020_midyear.ExperimentalKeys.RESULT_FACE_ORIENTATION : e4 ? com.google.android.camera.experimental2020.ExperimentalKeys.RESULT_FACE_ORIENTATION : e5 ? com.google.android.camera.experimental2021.ExperimentalKeys.RESULT_FACE_ORIENTATION : null;
-        r = a(11) ? ExperimentalKeys.EXPERIMENTAL_PD_BACK_CAL_INDEX : null;
         if (a(11)) {
             CaptureResult.Key key7 = ExperimentalKeys.EXPERIMENTAL_PD_BACK_CAL_DATA;
         }

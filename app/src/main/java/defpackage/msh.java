@@ -29,7 +29,7 @@ public final class msh implements msd {
             return plk.V(true);
         }
         if (!this.c) {
-            for (msi msiVar : this.a) {
+            for (msi msiVar : (List<msi>) this.a) {
                 msiVar.e();
             }
         }
@@ -50,7 +50,7 @@ public final class msh implements msd {
         }
         this.i.o(null);
         this.b.c();
-        for (msi msiVar : this.a) {
+        for (msi msiVar : (List<msi>) this.a) {
             msiVar.c();
         }
         this.d = true;

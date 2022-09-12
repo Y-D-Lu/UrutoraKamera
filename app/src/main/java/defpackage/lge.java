@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.os.SystemClock;
 import android.util.Log;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -120,7 +121,7 @@ public final class lge implements lie {
                             synchronized (lgeVar.c) {
                                 long micros = TimeUnit.MILLISECONDS.toMicros(SystemClock.uptimeMillis());
                                 oor o = oor.o(lgeVar.a);
-                                for (lfh lfhVar : o.keySet()) {
+                                for (lfh lfhVar : (Collection<lfh>) o.keySet()) {
                                     if (((Boolean) o.get(lfhVar)).booleanValue()) {
                                         synchronized (lgeVar.c) {
                                             if (lgeVar.a.containsKey(lfhVar)) {

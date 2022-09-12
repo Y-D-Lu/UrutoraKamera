@@ -51,7 +51,7 @@ public final /* synthetic */ class nfy implements pgk {
                         e.g(pgb.i(pgb.i(pho.q(d), new nfy(neiVar, nfnVar, str3, 1), neiVar.c()), new pgk() { // from class: nfx
                             @Override // defpackage.pgk
                             public final pht a(Object obj2) {
-                                final nei neiVar2 = nei.this;
+                                final nei neiVar2 = neiVar;
                                 pht phtVar = d;
                                 final nfn nfnVar2 = nfnVar;
                                 final String str4 = str3;

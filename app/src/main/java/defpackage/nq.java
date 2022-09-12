@@ -31,6 +31,7 @@ public final class nq extends Spinner {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public nq(android.content.Context r11, android.util.AttributeSet r12) {
+        super(r11, r12);
         /*
             r10 = this;
             r0 = 2130969703(0x7f040467, float:1.7548095E38)

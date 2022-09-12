@@ -100,7 +100,7 @@ public final class mbf implements mbc {
                                     sb3.append(valueOf3);
                                     lisVar.f(sb3.toString());
                                     mceVar.j();
-                                } catch (InterruptedException e) {
+                                } catch (Exception e) {
                                     lis lisVar2 = mazVar.f;
                                     String valueOf4 = String.valueOf(maxVar.a);
                                     String valueOf5 = String.valueOf(mceVar);
@@ -115,7 +115,7 @@ public final class mbf implements mbc {
                                     mazVar.d.execute(new Runnable() { // from class: may
                                         @Override // java.lang.Runnable
                                         public final void run() {
-                                            maz mazVar2 = maz.this;
+                                            maz mazVar2 = mazVar;
                                             long j = elapsedRealtimeNanos;
                                             final max maxVar2 = maxVar;
                                             mai maiVar = majVar;
@@ -173,7 +173,7 @@ public final class mbf implements mbc {
                                                                         map.put(maxVar2, maqVar.b.schedule(new Runnable() { // from class: mao
                                                                             @Override // java.lang.Runnable
                                                                             public final void run() {
-                                                                                final maq maqVar2 = maq.this;
+                                                                                final maq maqVar2 = maqVar;
                                                                                 max maxVar3 = maxVar2;
                                                                                 synchronized (maqVar2.e) {
                                                                                     if (!maqVar2.g.containsKey(maxVar3)) {
@@ -184,7 +184,7 @@ public final class mbf implements mbc {
                                                                                     maqVar2.c.execute(new Runnable() { // from class: map
                                                                                         @Override // java.lang.Runnable
                                                                                         public final void run() {
-                                                                                            maq maqVar3 = maq.this;
+                                                                                            maq maqVar3 = maqVar2;
                                                                                             Set<max> set = singleton;
                                                                                             synchronized (maqVar3.e) {
                                                                                                 for (max maxVar4 : set) {
@@ -257,7 +257,7 @@ public final class mbf implements mbc {
                                                         }
                                                         throw th3;
                                                     }
-                                                } catch (IOException e2) {
+                                                } catch (Exception e2) {
                                                     lis lisVar6 = mazVar2.f;
                                                     String valueOf10 = String.valueOf(maxVar2.a);
                                                     int size2 = maxVar2.e.size();
@@ -377,7 +377,7 @@ public final class mbf implements mbc {
                         mazVar.d.execute(new Runnable() { // from class: may
                             @Override // java.lang.Runnable
                             public final void run() {
-                                maz mazVar2 = maz.this;
+                                maz mazVar2 = mazVar;
                                 long j = elapsedRealtimeNanos;
                                 final max maxVar2 = maxVar;
                                 mai maiVar = majVar;
@@ -435,7 +435,7 @@ public final class mbf implements mbc {
                                                             map.put(maxVar2, maqVar.b.schedule(new Runnable() { // from class: mao
                                                                 @Override // java.lang.Runnable
                                                                 public final void run() {
-                                                                    final maq maqVar2 = maq.this;
+                                                                    final maq maqVar2 = maqVar;
                                                                     max maxVar3 = maxVar2;
                                                                     synchronized (maqVar2.e) {
                                                                         if (!maqVar2.g.containsKey(maxVar3)) {
@@ -446,7 +446,7 @@ public final class mbf implements mbc {
                                                                         maqVar2.c.execute(new Runnable() { // from class: map
                                                                             @Override // java.lang.Runnable
                                                                             public final void run() {
-                                                                                maq maqVar3 = maq.this;
+                                                                                maq maqVar3 = maqVar2;
                                                                                 Set<max> set = singleton;
                                                                                 synchronized (maqVar3.e) {
                                                                                     for (max maxVar4 : set) {
@@ -519,7 +519,7 @@ public final class mbf implements mbc {
                                             }
                                             throw th3;
                                         }
-                                    } catch (IOException e22) {
+                                    } catch (Exception e22) {
                                         lis lisVar6 = mazVar2.f;
                                         String valueOf10 = String.valueOf(maxVar2.a);
                                         int size2 = maxVar2.e.size();
@@ -670,7 +670,7 @@ public final class mbf implements mbc {
         opc D = ope.D();
         opc D2 = ope.D();
         opc D3 = ope.D();
-        for (mbr mbrVar : this.f) {
+        for (mbr mbrVar : (List<mbr>) this.f) {
             if (set.contains(mbrVar)) {
                 if (mbrVar.a() <= 0) {
                     lis lisVar = this.b;
@@ -716,7 +716,7 @@ public final class mbf implements mbc {
                 D2.d(j2);
             }
         }
-        for (mbr mbrVar2 : this.g) {
+        for (mbr mbrVar2 : (List<mbr>) this.g) {
             mce k4 = mbrVar2.k();
             if (k4 != null) {
                 D3.d(k4);
@@ -778,7 +778,7 @@ public final class mbf implements mbc {
         sb4.append("Missing required properties:");
         sb4.append(valueOf3);
         throw new IllegalStateException(sb4.toString());
-        return new max(matVar, l.longValue(), mawVar.c.longValue(), mawVar.d, mawVar.e, mawVar.f, mawVar.g, mawVar.h, mawVar.k, mawVar.i, mawVar.j);
+        //return new max(matVar, l.longValue(), mawVar.c.longValue(), mawVar.d, mawVar.e, mawVar.f, mawVar.g, mawVar.h, mawVar.k, mawVar.i, mawVar.j);
     }
 
     @Override // defpackage.mbq

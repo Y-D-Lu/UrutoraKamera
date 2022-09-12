@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Surface;
 
 import java.io.FileDescriptor;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
@@ -57,12 +58,8 @@ public final class lgy implements lfj {
         synchronized (this.a) {
             final long uptimeMillis = SystemClock.uptimeMillis() * 1000;
             this.c.close();
-            W = plk.W(plk.P(this.m.b(new Callable(this) { // from class: lgx
-                public final /* synthetic */ lgy a;
-
-                {
-                    this.a = this;
-                }
+            W = plk.W(plk.P(this.m.b(new Callable() { // from class: lgx
+                public final /* synthetic */ lgy a = lgy.this;
 
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
@@ -84,7 +81,7 @@ public final class lgy implements lfj {
                                                 ((lfy) lfmVar).c.b(new Callable() { // from class: lfr
                                                     @Override // java.util.concurrent.Callable
                                                     public final Object call() {
-                                                        return Boolean.valueOf(lfy.this.N.o(null));
+                                                        return Boolean.valueOf(lfyVar2.N.o(null));
                                                     }
                                                 });
                                             }
@@ -126,12 +123,8 @@ public final class lgy implements lfj {
                             return null;
                     }
                 }
-            }), this.m.b(new Callable(this) { // from class: lgx
-                public final /* synthetic */ lgy a;
-
-                {
-                    this.a = this;
-                }
+            }), this.m.b(new Callable() { // from class: lgx
+                public final /* synthetic */ lgy a = lgy.this;
 
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
@@ -153,7 +146,7 @@ public final class lgy implements lfj {
                                                 ((lfy) lfmVar).c.b(new Callable() { // from class: lfr
                                                     @Override // java.util.concurrent.Callable
                                                     public final Object call() {
-                                                        return Boolean.valueOf(lfy.this.N.o(null));
+                                                        return Boolean.valueOf(lfyVar2.N.o(null));
                                                     }
                                                 });
                                             }
@@ -325,7 +318,7 @@ public final class lgy implements lfj {
                     }
                 }
             }
-            for (lfd lfdVar : this.f.values()) {
+            for (lfd lfdVar : (Collection<lfd>) this.f.values()) {
                 lfdVar.b(uptimeMillis);
             }
             this.l = 3;
@@ -377,7 +370,7 @@ public final class lgy implements lfj {
                     }
                 }
             }
-            for (lfd lfdVar : this.f.values()) {
+            for (lfd lfdVar : (Collection<lfd>) this.f.values()) {
                 lfdVar.d(uptimeMillis);
             }
             lge lgeVar = this.c;

@@ -65,7 +65,7 @@ public class ScriptC extends Script {
                 throw new Resources.NotFoundException();
             }
         }
-        return nScriptCCreate;
+        //return nScriptCCreate;
     }
 
     private static synchronized long internalStringCreate(RenderScript renderScript, String str, byte[] bArr) {

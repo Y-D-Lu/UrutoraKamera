@@ -8,6 +8,8 @@ import android.os.Build;
 import android.os.Handler;
 import android.util.Log;
 
+import java.util.List;
+
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: mfj  reason: default package */
 /* loaded from: classes2.dex */
@@ -25,10 +27,11 @@ public final class mfj extends AsyncTask {
         Cursor cursor;
         if (mfk.c.contains(Build.MANUFACTURER)) {
             try {
+                return this.a.e.getApplicationInfo("com.google.android.googlequicksearchbox", 0).enabled ? 2 : 3;
             } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
                 Log.e("LensSdkParamsReader", "Unable to find agsa package: com.google.android.googlequicksearchbox");
             }
-            return this.a.e.getApplicationInfo("com.google.android.googlequicksearchbox", 0).enabled ? 2 : 3;
         }
         try {
             try {
@@ -82,6 +85,7 @@ public final class mfj extends AsyncTask {
             th = th3;
             cursor = null;
         }
+        return 0;
     }
 
     public final void a(int i, int i2) {
@@ -107,7 +111,7 @@ public final class mfj extends AsyncTask {
             mfkVar.g = (mfx) poyVar.j();
             mfk mfkVar2 = this.a;
             mfkVar2.h = true;
-            for (mfh mfhVar : mfkVar2.f) {
+            for (mfh mfhVar : (List<mfh>) mfkVar2.f) {
                 mfhVar.a(this.a.g);
             }
             this.a.f.clear();

@@ -53,14 +53,14 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
         }
         this.i = bool;
         if (bool.booleanValue()) {
-            for (mwd mwdVar : this.a) {
+            for (mwd mwdVar : (List<mwd>) this.a) {
                 if (mwdVar instanceof mwb) {
                     ((mwb) mwdVar).b(activity);
                 }
             }
             return;
         }
-        for (mwd mwdVar2 : this.a) {
+        for (mwd mwdVar2 : (List<mwd>) this.a) {
             if (mwdVar2 instanceof mwa) {
                 ((mwa) mwdVar2).c(activity);
             }
@@ -71,7 +71,7 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
     public final void onActivityCreated(Activity activity, Bundle bundle) {
         this.d.incrementAndGet();
         this.k = null;
-        for (mwd mwdVar : this.a) {
+        for (mwd mwdVar : (List<mwd>) this.a) {
             if (mwdVar instanceof mvt) {
                 ((mvt) mwdVar).a(activity, bundle);
             }
@@ -84,7 +84,7 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
             b();
         }
         this.k = null;
-        for (mwd mwdVar : this.a) {
+        for (mwd mwdVar : (List<mwd>) this.a) {
             if (mwdVar instanceof mvu) {
                 ((mvu) mwdVar).a();
             }
@@ -97,7 +97,7 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
             b();
         }
         this.j = null;
-        for (mwd mwdVar : this.a) {
+        for (mwd mwdVar : (List<mwd>) this.a) {
             if (mwdVar instanceof mvv) {
                 ((mvv) mwdVar).b(activity);
             }
@@ -111,7 +111,7 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
         }
         this.k = null;
         this.j = activity.getClass().getSimpleName();
-        for (mwd mwdVar : this.a) {
+        for (mwd mwdVar : (List<mwd>) this.a) {
             if (mwdVar instanceof mvw) {
                 ((mvw) mwdVar).a(activity);
             }
@@ -120,7 +120,7 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
-        for (mwd mwdVar : this.a) {
+        for (mwd mwdVar : (List<mwd>) this.a) {
             if (mwdVar instanceof mvx) {
                 ((mvx) mwdVar).a();
             }
@@ -134,7 +134,7 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
         }
         this.k = null;
         a(activity);
-        for (mwd mwdVar : this.a) {
+        for (mwd mwdVar : (List<mwd>) this.a) {
             if (mwdVar instanceof mvy) {
                 ((mvy) mwdVar).b(activity);
             }
@@ -147,7 +147,7 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
             b();
         }
         this.k = activity;
-        for (mwd mwdVar : this.a) {
+        for (mwd mwdVar : (List<mwd>) this.a) {
             if (mwdVar instanceof mvz) {
                 ((mvz) mwdVar).a();
             }
@@ -165,7 +165,7 @@ public final class mwf implements Application.ActivityLifecycleCallbacks, Compon
 
     @Override // android.content.ComponentCallbacks2
     public final void onTrimMemory(int i) {
-        for (mwd mwdVar : this.a) {
+        for (mwd mwdVar : (List<mwd>) this.a) {
             if (mwdVar instanceof mwc) {
                 ((mwc) mwdVar).a();
             }
