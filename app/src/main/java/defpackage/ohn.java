@@ -4,13 +4,13 @@ package defpackage;
 /* loaded from: classes2.dex */
 public final class ohn {
     private static final ohl e;
-    public final int a;
-    public final float b;
-    public final int c;
-    public final int d;
-    private final int f;
-    private final int g;
-    private final ohl h;
+    public int a;
+    public float b;
+    public int c;
+    public int d;
+    private int f;
+    private int g;
+    private ohl h;
 
     static {
         ohl ohlVar = ohl.MONOCHROME;

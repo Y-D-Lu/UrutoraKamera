@@ -5,10 +5,10 @@ import com.google.android.apps.camera.bottombar.R;
 /* renamed from: gtk  reason: default package */
 /* loaded from: classes.dex */
 public final class gtk {
-    public final gtm a;
-    public final int b;
-    public final int c;
-    public final oom d;
+    public gtm a;
+    public int b;
+    public int c;
+    public oom d;
 
     public gtk() {
     }

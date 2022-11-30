@@ -5,8 +5,8 @@ import android.graphics.Typeface;
 /* renamed from: obl  reason: default package */
 /* loaded from: classes2.dex */
 public final class obl {
-    private final Typeface a;
-    private final obh b;
+    private Typeface a;
+    private obh b;
     private boolean c;
 
     public obl() {

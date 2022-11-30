@@ -51,7 +51,11 @@ public final class AestheticScorerNima implements enh {
         try {
             b();
         } finally {
-            super.finalize();
+            try {
+                super.finalize();
+            } catch (Throwable e) {
+                e.printStackTrace();
+            }
         }
     }
 }

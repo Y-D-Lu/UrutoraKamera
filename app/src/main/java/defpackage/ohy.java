@@ -7,13 +7,13 @@ import java.util.Optional;
 /* renamed from: ohy  reason: default package */
 /* loaded from: classes2.dex */
 public final class ohy {
-    public final ByteBuffer a;
-    public final int b;
-    public final int c;
-    public final ohl d;
-    public final int e;
-    public final Optional f;
-    private final Optional g;
+    public ByteBuffer a;
+    public int b;
+    public int c;
+    public ohl d;
+    public int e;
+    public Optional f;
+    private Optional g;
 
     public ohy() {
     }

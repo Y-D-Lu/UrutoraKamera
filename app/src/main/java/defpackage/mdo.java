@@ -5,10 +5,10 @@ import android.content.Context;
 /* renamed from: mdo  reason: default package */
 /* loaded from: classes2.dex */
 public final class mdo {
-    public final Context a;
-    public final ojc b;
-    public final boolean c;
-    private final ojc d;
+    public Context a;
+    public ojc b;
+    public boolean c;
+    private ojc d;
 
     public mdo() {
     }

@@ -163,7 +163,7 @@ public class nzf {
     }
 
     public final void d(float f2, Matrix matrix) {
-        Drawable drawable;
+        Drawable drawable = null;
         matrix.reset();
         if (this.x.getDrawable() == null || this.v == 0) {
             return;

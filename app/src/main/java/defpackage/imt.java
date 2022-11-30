@@ -5,7 +5,7 @@ import java.util.Map;
 /* renamed from: imt  reason: default package */
 /* loaded from: classes.dex */
 public interface imt {
-    public static Map b = null;
+    public static Map b = new init().getMap();
 
 //    static {
 //        oon m = oor.m();
@@ -20,6 +20,7 @@ public interface imt {
 //    }
 
     class init {
+        static Map map;
         static {
             oon m = oor.m();
             m.e(0, ims.NORMAL);
@@ -29,7 +30,11 @@ public interface imt {
             m.e(4, ims.HEAT_CRITICAL);
             m.e(5, ims.HEAT_EMERGENCY);
             m.e(6, ims.HEAT_SHUTDOWN);
-            b = (Map) m.c();
+            map = (Map) m.c();
+        }
+
+        Map getMap() {
+            return map;
         }
     }
 

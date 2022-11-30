@@ -1,10 +1,8 @@
 package com.custom;
 
 import android.graphics.Rect;
-import android.hardware.camera2.CameraCharacteristics;
 import android.os.Build;
 import android.util.Log;
-import android.util.Range;
 
 import com.Helper;
 import com.google.android.apps.camera.bottombar.R;
@@ -130,8 +128,9 @@ public class slider {
     }
 
     public static void calc_quantization(kvg kvgVar) {
+        ISO_to_Gain_Quant = 2.0f;
         try {
-            ISO_to_Gain_Quant = 100.0f / ((Integer) ((Range) kvgVar.b(CameraCharacteristics.SENSOR_INFO_SENSITIVITY_RANGE)).getLower()).intValue();
+            //ISO_to_Gain_Quant = 100.0f / ((Integer) ((Range) kvgVar.b(CameraCharacteristics.SENSOR_INFO_SENSITIVITY_RANGE)).getLower()).intValue();
         } catch (Exception e) {
             ISO_to_Gain_Quant = 2.0f;
         }

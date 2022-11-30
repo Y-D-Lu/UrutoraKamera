@@ -119,7 +119,11 @@ public final class DataHolder extends kno implements Closeable {
                 Log.e("DataBuffer", sb.toString());
             }
         } finally {
-            super.finalize();
+            try {
+                super.finalize();
+            } catch (Throwable ex) {
+                ex.printStackTrace();
+            }
         }
     }
 

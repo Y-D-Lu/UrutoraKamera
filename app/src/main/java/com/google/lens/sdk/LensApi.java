@@ -220,7 +220,7 @@ public class LensApi {
                 kcd kcdVar = ((mfv) mfpVar).j;
                 mip.H(kcdVar);
                 kcdVar.e(g);
-            } catch (RemoteException | SecurityException e) {
+            } catch (Exception e) {
                 Log.e("LensServiceBridge", "Unable to send prewarm signal.", e);
             }
         }
@@ -254,7 +254,7 @@ public class LensApi {
                 mfnVar2.a.c(((kcj) ppaVar.j()).g(), new kch(d2));
                 mfnVar2.a.d();
                 return;
-            } catch (RemoteException | SecurityException e) {
+            } catch (Exception e) {
                 Log.e("LensServiceBridge", "Failed to start Lens", e);
             }
         }
@@ -305,7 +305,7 @@ public class LensApi {
             try {
                 mfnVar2.a.c(((kcj) ppaVar.j()).g(), new kch(d2));
                 return true;
-            } catch (RemoteException | SecurityException e) {
+            } catch (Exception e) {
                 Log.e("LensServiceBridge", "Failed to send Lens service client event", e);
             }
         }
@@ -431,7 +431,7 @@ public class LensApi {
                 kcd kcdVar = ((mfv) r1).j;
                 mip.H(kcdVar);
                 kcdVar.e(kcjVar2.g());
-            } catch (RemoteException | SecurityException e) {
+            } catch (Exception e) {
                 Log.e("LensServiceConnImpl", "Unable to end Lens service session.", e);
             }
             mfvVar.j = null;

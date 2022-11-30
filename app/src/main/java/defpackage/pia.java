@@ -23,7 +23,7 @@ final class pia extends phf implements ScheduledFuture, pht {
         return cancel;
     }
 
-    @Override // java.lang.Comparable
+    //@Override // java.lang.Comparable
     public final /* bridge */ /* synthetic */ int compareTo(Delayed delayed) {
         return this.a.compareTo(delayed);
     }
@@ -31,5 +31,10 @@ final class pia extends phf implements ScheduledFuture, pht {
     @Override // java.util.concurrent.Delayed
     public final long getDelay(TimeUnit timeUnit) {
         return this.a.getDelay(timeUnit);
+    }
+
+    //@Override // java.lang.Comparable
+    public final /* bridge */ /* synthetic */ int compareTo(Object obj) {
+        return 0;
     }
 }

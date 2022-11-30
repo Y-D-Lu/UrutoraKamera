@@ -59,7 +59,7 @@ public final class acb {
     }
 
     private final int m(int i, int i2, int i3) {
-        int width;
+        int width = 0;
         if (i == 0) {
             return 0;
         }

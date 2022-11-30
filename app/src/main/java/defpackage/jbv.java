@@ -6,15 +6,15 @@ import android.util.Size;
 /* loaded from: classes.dex */
 public final class jbv {
     public static final jbv a;
-    public final Size b;
-    public final Size c;
-    public final Size d;
-    public final Integer e;
-    public final boolean f;
-    public final boolean g;
-    public final jrz h;
-    public final jrl i;
-    public final jce j;
+    public Size b;
+    public Size c;
+    public Size d;
+    public Integer e;
+    public boolean f;
+    public boolean g;
+    public jrz h;
+    public jrl i;
+    public jce j;
 
     static {
         jbu jbuVar = new jbu();

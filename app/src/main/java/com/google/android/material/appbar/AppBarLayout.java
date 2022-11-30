@@ -616,7 +616,7 @@ public class AppBarLayout extends LinearLayout implements aad {
     }
 
     /* loaded from: classes2.dex */
-    public class Behavior extends BaseBehavior {
+    public static class Behavior extends BaseBehavior {
         public Behavior() {
         }
 

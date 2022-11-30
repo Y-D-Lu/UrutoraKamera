@@ -54,13 +54,22 @@ public class fcr {
             GLES20.glGetProgramiv(glCreateProgram, 35714, iArr, 0);
             if (iArr[0] != 1) {
                 GLES20.glDeleteProgram(glCreateProgram);
-                throw new fcq("Could not link program", GLES20.glGetProgramInfoLog(glCreateProgram));
+                try {
+                    throw new fcq("Could not link program", GLES20.glGetProgramInfoLog(glCreateProgram));
+                } catch (fcq e) {
+                    e.printStackTrace();
+                }
             }
             GLES20.glDeleteShader(b);
             GLES20.glDeleteShader(b2);
             return glCreateProgram;
         }
-        throw new fcq("Unable to create program");
+        try {
+            throw new fcq("Unable to create program");
+        } catch (fcq e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     protected static int b(int i, String str) {
@@ -78,9 +87,18 @@ public class fcr {
             StringBuilder sb = new StringBuilder(36);
             sb.append("Unable to compile shader ");
             sb.append(i);
-            throw new fcq(sb.toString(), glGetShaderInfoLog);
+            try {
+                throw new fcq(sb.toString(), glGetShaderInfoLog);
+            } catch (fcq e) {
+                e.printStackTrace();
+            }
         }
-        throw new fcq("Unable to create shader");
+        try {
+            throw new fcq("Unable to create shader");
+        } catch (fcq e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -94,7 +112,12 @@ public class fcr {
         sb.append("Unable to find ");
         sb.append(str);
         sb.append(" in shader");
-        throw new fcq(sb.toString());
+        try {
+            throw new fcq(sb.toString());
+        } catch (fcq e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -108,7 +131,12 @@ public class fcr {
         sb.append("Unable to find ");
         sb.append(str);
         sb.append(" in shader");
-        throw new fcq(sb.toString());
+        try {
+            throw new fcq(sb.toString());
+        } catch (fcq e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public final void c() {

@@ -130,7 +130,7 @@ public class CameraContentProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public final ParcelFileDescriptor openFile(Uri uri, String str) {
-        ParcelFileDescriptor openPipeHelper;
+        ParcelFileDescriptor openPipeHelper = null;
         int i;
         a();
         Trace.beginSection("GCA_SpecialTypes#openFile");
@@ -142,15 +142,27 @@ public class CameraContentProvider extends ContentProvider {
         switch (b.b.match(uri)) {
             case 3:
                 i = R.dimen.photos_oemapi_badge_icon_size;
-                openPipeHelper = b.a(uri, i);
+                try {
+                    openPipeHelper = b.a(uri, i);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
                 break;
             case 4:
                 i = R.dimen.photos_oemapi_interact_icon_size;
-                openPipeHelper = b.a(uri, i);
+                try {
+                    openPipeHelper = b.a(uri, i);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
                 break;
             case 5:
                 i = R.dimen.photos_oemapi_dialog_icon_size;
-                openPipeHelper = b.a(uri, i);
+                try {
+                    openPipeHelper = b.a(uri, i);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
                 break;
             case 6:
             case 7:
@@ -242,7 +254,7 @@ public class CameraContentProvider extends ContentProvider {
                             @Override // android.content.ContentProvider.PipeDataWriter
                             public final void writeDataToPipe(ParcelFileDescriptor parcelFileDescriptor, Uri uri2, String str2, Bundle bundle, Object obj) {
                                 ljf ljfVar4;
-                                BufferedOutputStream bufferedOutputStream;
+                                BufferedOutputStream bufferedOutputStream = null;
                                 dxv dxvVar2 = dxvVar;
                                 String str3 = sb5;
                                 ByteArrayOutputStream byteArrayOutputStream = a3;
@@ -258,7 +270,7 @@ public class CameraContentProvider extends ContentProvider {
                                 try {
                                     try {
                                         bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(fileDescriptor));
-                                    } catch (IOException e) {
+                                    } catch (Exception e) {
                                         ((oug) ((oug) ((oug) dxv.a.b()).h(e)).G(988)).o("Error when writeTo the ParcelFileDescriptor");
                                         ljfVar4 = dxvVar2.c;
                                     }
@@ -276,7 +288,11 @@ public class CameraContentProvider extends ContentProvider {
                                     }
                                 } catch (Throwable th3) {
                                     dxvVar2.c.f();
-                                    throw th3;
+                                    try {
+                                        throw th3;
+                                    } catch (IOException e) {
+                                        e.printStackTrace();
+                                    }
                                 }
                             }
                         });
@@ -292,7 +308,11 @@ public class CameraContentProvider extends ContentProvider {
                     sb9.append(valueOf4);
                     sb9.append(" ex=");
                     sb9.append(message);
-                    throw new FileNotFoundException(sb9.toString());
+                    try {
+                        throw new FileNotFoundException(sb9.toString());
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    }
                 }
         }
         Trace.endSection();

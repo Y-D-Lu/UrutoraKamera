@@ -165,9 +165,9 @@ public class obu extends Drawable implements oci {
     }
 
     private final boolean u(int[] iArr) {
-        int color;
+        int color = 0;
         int colorForState;
-        int color2;
+        int color2 = 0;
         int colorForState2;
         boolean z = false;
         if (this.a.d != null && color2 != (colorForState2 = this.a.d.getColorForState(iArr, (color2 = this.p.getColor())))) {

@@ -2,7 +2,6 @@ package defpackage;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.RemoteException;
 import android.util.Log;
 
 import com.google.lens.sdk.PendingIntentConsumer;
@@ -61,7 +60,7 @@ public final class mfn implements mfo {
         try {
             this.a.c(((kcj) ppaVar.j()).g(), new kch(bundle));
             return true;
-        } catch (RemoteException | SecurityException e) {
+        } catch (Exception e) {
             Log.e("LensServiceBridge", "Failed to inject image.", e);
             return false;
         }

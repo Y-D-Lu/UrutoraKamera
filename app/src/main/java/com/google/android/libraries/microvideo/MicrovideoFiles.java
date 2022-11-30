@@ -6,6 +6,7 @@ import com.google.common.io.ByteStreams;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,7 +27,12 @@ public final class MicrovideoFiles {
 
     public static void extractVideo(File file, File file2) {
         long videoOffset = getVideoOffset(file);
-        FileOutputStream fileOutputStream = new FileOutputStream(file2);
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = new FileOutputStream(file2);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
             ByteStreams.skipFully(fileInputStream, videoOffset);
@@ -38,7 +44,11 @@ public final class MicrovideoFiles {
                 fileOutputStream.close();
             } catch (Throwable th2) {
             }
-            throw th;
+            try {
+                throw th;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -47,17 +57,31 @@ public final class MicrovideoFiles {
     }
 
     public static long getVideoOffset(File file) {
-        int aC = mip.aC(extractXMPData(file));
+        int aC = 0;
+        try {
+            aC = mip.aC(extractXMPData(file));
+        } catch (ass e) {
+            e.printStackTrace();
+        }
         long length = file.length() - aC;
         if (length <= 0 || !validateOffset(file, length)) {
             Log.w(TAG, String.format("MicroVideoOffset %d invalid. Attempting recovery", Integer.valueOf(aC)));
             long scanForMpeg4FtypAtom = scanForMpeg4FtypAtom(file);
             if (scanForMpeg4FtypAtom < 0) {
-                throw new IOException("Could not recover starting offset.");
+                try {
+                    throw new IOException("Could not recover starting offset.");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
             return scanForMpeg4FtypAtom;
         }
-        FileInputStream fileInputStream = new FileInputStream(file);
+        FileInputStream fileInputStream = null;
+        try {
+            fileInputStream = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         try {
             fileInputStream.skip((-2) + length);
             fileInputStream.close();
@@ -67,8 +91,13 @@ public final class MicrovideoFiles {
                 fileInputStream.close();
             } catch (Throwable th2) {
             }
-            throw th;
+            try {
+                throw th;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+        return 0;
     }
 
     public static boolean isMicrovideo(InputStream inputStream) {
@@ -85,13 +114,27 @@ public final class MicrovideoFiles {
 
     public static InputStream openVideoStream(File file) {
         long videoOffset = getVideoOffset(file);
-        FileInputStream fileInputStream = new FileInputStream(file);
-        fileInputStream.skip(videoOffset);
+        FileInputStream fileInputStream = null;
+        try {
+            fileInputStream = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            fileInputStream.skip(videoOffset);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return fileInputStream;
     }
 
     private static long scanForMpeg4FtypAtom(File file) {
-        FileInputStream fileInputStream = new FileInputStream(file);
+        FileInputStream fileInputStream = null;
+        try {
+            fileInputStream = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         try {
             byte[] bArr = new byte[4];
             ByteStreams.readFully(fileInputStream, bArr);
@@ -122,8 +165,13 @@ public final class MicrovideoFiles {
                 fileInputStream.close();
             } catch (Throwable th2) {
             }
-            throw th;
+            try {
+                throw th;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+        return 0;
     }
 
     private static boolean validateOffset(File file, long j) {

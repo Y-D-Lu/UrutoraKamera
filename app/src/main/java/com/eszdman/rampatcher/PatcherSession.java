@@ -2,6 +2,7 @@ package com.eszdman.rampatcher;
 
 import org.codeaurora.snapcam.R;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.Map;
 
@@ -18,7 +19,9 @@ public class PatcherSession {
         ReadyToPatch(patcherAddress.libName);
         this.addreses.InsertMemoryAddr(getLibraryOffset(this.addreses.exportName));
         ReadyToPatch(this.addreses.libName);
-        ObjectInputStream objectInputStream = new ObjectInputStream(PatcherAddress.getApplicationUsingReflection().getResources().openRawResource(R.raw.fix_portrait));
+        ObjectInputStream objectInputStream = null;
+        try {
+            objectInputStream = new ObjectInputStream(PatcherAddress.getApplicationUsingReflection().getResources().openRawResource(R.raw.fix_portrait));
         int readInt = objectInputStream.readInt();
         if (readInt >= 0) {
             for (int i = 0; i < readInt; i++) {
@@ -32,6 +35,11 @@ public class PatcherSession {
         }
         objectInputStream.close();
         PatchDone();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     private native void PatchDone();

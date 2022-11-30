@@ -41,13 +41,13 @@ public class InAppJobService extends JobService {
                     Log.w(TAG, "IInAppJobService.init failed");
                 }
                 return false;
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.init", e);
                 }
                 return false;
             }
-        } catch (krn e2) {
+        } catch (Throwable e2) {
             if (Log.isLoggable(TAG, 5)) {
                 Log.w(TAG, "LoadingException during tryLoadDynamiteImpl", e2);
             }
@@ -65,7 +65,7 @@ public class InAppJobService extends JobService {
         if (krsVar != null) {
             try {
                 krsVar.f();
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onDestroy", e);
                 }
@@ -81,7 +81,7 @@ public class InAppJobService extends JobService {
             try {
                 krsVar.g(intent);
                 return;
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onRebind", e);
                 }
@@ -96,7 +96,7 @@ public class InAppJobService extends JobService {
         if (krsVar != null) {
             try {
                 return krsVar.e(intent, i, i2);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onStartCommand", e);
                 }
@@ -116,7 +116,7 @@ public class InAppJobService extends JobService {
         } else {
             try {
                 return this.dynamiteImpl.j(jobParameters);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onStartJob", e);
                 }
@@ -132,7 +132,7 @@ public class InAppJobService extends JobService {
         if (krsVar != null) {
             try {
                 return krsVar.k(jobParameters);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (!Log.isLoggable(TAG, 5)) {
                     return false;
                 }
@@ -149,7 +149,7 @@ public class InAppJobService extends JobService {
         if (krsVar != null) {
             try {
                 krsVar.h(i);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (!Log.isLoggable(TAG, 5)) {
                     return;
                 }
@@ -164,7 +164,7 @@ public class InAppJobService extends JobService {
         if (krsVar != null) {
             try {
                 return krsVar.l(intent);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onUnbind", e);
                 }

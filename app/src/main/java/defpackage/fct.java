@@ -98,7 +98,7 @@ public class fct extends fcp {
             GLUtils.texImage2D(3553, 0, decodeResource, 0);
             fcq.a("Texture : loadBitmap");
             decodeResource.recycle();
-        } catch (fcq e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         decodeResource.recycle();

@@ -5,18 +5,18 @@ import android.graphics.drawable.Drawable;
 /* renamed from: iax  reason: default package */
 /* loaded from: classes.dex */
 public final class iax {
-    public final long a;
-    public final boolean b;
-    public final String c;
-    public final Drawable d;
-    public final Runnable e;
-    public final Runnable f;
-    public final String g;
-    public final Runnable h;
-    public final Runnable i;
-    public final Runnable j;
-    public final Runnable k;
-    public final boolean l;
+    public long a;
+    public boolean b;
+    public String c;
+    public Drawable d;
+    public Runnable e;
+    public Runnable f;
+    public String g;
+    public Runnable h;
+    public Runnable i;
+    public Runnable j;
+    public Runnable k;
+    public boolean l;
 
     public iax() {
     }

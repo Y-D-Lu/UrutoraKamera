@@ -5,11 +5,11 @@ import android.os.Process;
 /* renamed from: hsq  reason: default package */
 /* loaded from: classes2.dex */
 public final class hsq {
-    public final hsp a;
-    public final long b;
-    public final String c;
-    public final hsr d;
-    public final long e;
+    public hsp a;
+    public long b;
+    public String c;
+    public hsr d;
+    public long e;
 
     public hsq() {
     }

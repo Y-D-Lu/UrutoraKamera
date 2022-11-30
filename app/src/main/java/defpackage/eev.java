@@ -10,9 +10,9 @@ import java.util.List;
 /* renamed from: eev  reason: default package */
 /* loaded from: classes.dex */
 public final class eev {
-    public final RawReadView a;
-    public final ShotMetadata b;
-    public final oom c;
+    public RawReadView a;
+    public ShotMetadata b;
+    public oom c;
 
     public eev() {
     }

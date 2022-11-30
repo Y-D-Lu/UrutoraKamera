@@ -24,7 +24,7 @@ public final class fdr extends fcp {
         try {
             this.m = new fej();
             fcq.a("photo collection");
-        } catch (fcq e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         Matrix.setIdentityM(this.j, 0);

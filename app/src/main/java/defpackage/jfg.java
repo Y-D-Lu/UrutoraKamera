@@ -5,8 +5,8 @@ import android.graphics.Rect;
 /* renamed from: jfg  reason: default package */
 /* loaded from: classes.dex */
 public final class jfg {
-    public final Rect a;
-    public final int b;
+    public Rect a;
+    public int b;
 
     public jfg() {
     }

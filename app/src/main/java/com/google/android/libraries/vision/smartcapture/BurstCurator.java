@@ -54,7 +54,11 @@ public final class BurstCurator implements Closeable {
         try {
             close();
         } finally {
-            super.finalize();
+            try {
+                super.finalize();
+            } catch (Throwable e) {
+                e.printStackTrace();
+            }
         }
     }
 

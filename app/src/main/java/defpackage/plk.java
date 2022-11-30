@@ -80,7 +80,7 @@ public /* synthetic */ class plk {
     }
 
     public static int A(byte[] bArr, int i, pnr pnrVar) {
-        byte b;
+        byte b = 0;
         int i2 = i + 1;
         long j = bArr[i];
         if (j >= 0) {
@@ -121,21 +121,38 @@ public /* synthetic */ class plk {
                             if (i2 > i3 && i5 == i4) {
                                 return i2;
                             }
-                            throw ppp.g();
+                            try {
+                                throw ppp.g();
+                            } catch (ppp e) {
+                                e.printStackTrace();
+                            }
                         }
                         i2 = B(i5, bArr, i2, i3, pnrVar);
                     }
                     if (i2 > i3) {
                     }
-                    throw ppp.g();
+                    try {
+                        throw ppp.g();
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                 case 4:
                 default:
-                    throw ppp.c();
+                    try {
+                        throw ppp.c();
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                 case 5:
                     return i2 + 4;
             }
         }
-        throw ppp.c();
+        try {
+            throw ppp.c();
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public static long C(byte[] bArr, int i) {
@@ -225,7 +242,11 @@ public /* synthetic */ class plk {
                 if (z) {
                     Thread.currentThread().interrupt();
                 }
-                throw th;
+                try {
+                    throw th;
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
         }
         if (z) {
@@ -500,7 +521,7 @@ public /* synthetic */ class plk {
 
     public static void aM(pqm pqmVar, StringBuilder sb, int i) {
         Method[] declaredMethods;
-        boolean equals;
+        boolean equals = false;
         HashMap hashMap = new HashMap();
         HashMap hashMap2 = new HashMap();
         TreeSet<String> treeSet = new TreeSet();
@@ -696,7 +717,7 @@ public /* synthetic */ class plk {
         future.getClass();
         try {
             return I(future);
-        } catch (ExecutionException e) {
+        } catch (Exception e) {
             Throwable cause = e.getCause();
             if (!(cause instanceof Error)) {
                 throw new piq(cause);
@@ -1284,21 +1305,33 @@ public /* synthetic */ class plk {
                     }
                 } else if (aB(b2)) {
                     if (i6 >= i3) {
-                        throw ppp.d();
+                        try {
+                            throw ppp.d();
+                        } catch (ppp e) {
+                            e.printStackTrace();
+                        }
                     }
                     ay(b2, byteBuffer.get(i6), cArr, i5);
                     i = i6 + 1;
                     i5++;
                 } else if (aA(b2)) {
                     if (i6 >= i3 - 1) {
-                        throw ppp.d();
+                        try {
+                            throw ppp.d();
+                        } catch (ppp e) {
+                            e.printStackTrace();
+                        }
                     }
                     int i7 = i6 + 1;
                     ax(b2, byteBuffer.get(i6), byteBuffer.get(i7), cArr, i5);
                     i = i7 + 1;
                     i5++;
                 } else if (i6 >= i3 - 2) {
-                    throw ppp.d();
+                    try {
+                        throw ppp.d();
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     int i8 = i6 + 1;
                     int i9 = i8 + 1;
@@ -1345,21 +1378,33 @@ public /* synthetic */ class plk {
                     }
                 } else if (aB(b2)) {
                     if (i5 >= i3) {
-                        throw ppp.d();
+                        try {
+                            throw ppp.d();
+                        } catch (ppp e) {
+                            e.printStackTrace();
+                        }
                     }
                     ay(b2, bArr[i5], cArr, i4);
                     i = i5 + 1;
                     i4++;
                 } else if (aA(b2)) {
                     if (i5 >= i3 - 1) {
-                        throw ppp.d();
+                        try {
+                            throw ppp.d();
+                        } catch (ppp e) {
+                            e.printStackTrace();
+                        }
                     }
                     int i6 = i5 + 1;
                     ax(b2, bArr[i5], bArr[i6], cArr, i4);
                     i = i6 + 1;
                     i4++;
                 } else if (i5 >= i3 - 2) {
-                    throw ppp.d();
+                    try {
+                        throw ppp.d();
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     int i7 = i5 + 1;
                     int i8 = i7 + 1;
@@ -1496,7 +1541,11 @@ public /* synthetic */ class plk {
 
     public static void av(byte b, byte b2, byte b3, byte b4, char[] cArr, int i) {
         if (aS(b2) || (((b << 28) + (b2 + 112)) >> 30) != 0 || aS(b3) || aS(b4)) {
-            throw ppp.d();
+            try {
+                throw ppp.d();
+            } catch (ppp e) {
+                e.printStackTrace();
+            }
         }
         int a = ((b & 7) << 18) | (a(b2) << 12) | (a(b3) << 6) | a(b4);
         cArr[i] = (char) ((a >>> 10) + 55232);
@@ -1524,12 +1573,20 @@ public /* synthetic */ class plk {
                 return;
             }
         }
-        throw ppp.d();
+        try {
+            throw ppp.d();
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
     }
 
     public static void ay(byte b, byte b2, char[] cArr, int i) {
         if (b < -62 || aS(b2)) {
-            throw ppp.d();
+            try {
+                throw ppp.d();
+            } catch (ppp e) {
+                e.printStackTrace();
+            }
         }
         cArr[i] = (char) (((b & 31) << 6) | a(b2));
     }
@@ -1689,7 +1746,11 @@ public /* synthetic */ class plk {
         int i2 = pnrVar.a;
         if (i2 >= 0) {
             if (i2 > bArr.length - x) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp e) {
+                    e.printStackTrace();
+                }
             }
             if (i2 == 0) {
                 pnrVar.c = poc.b;
@@ -1698,7 +1759,12 @@ public /* synthetic */ class plk {
             pnrVar.c = poc.u(bArr, x, i2);
             return x + i2;
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public static int p(byte[] bArr, int i) {
@@ -1726,7 +1792,11 @@ public /* synthetic */ class plk {
             i3 = i4;
         }
         if (i5 < 0 || i5 > i2 - i3) {
-            throw ppp.i();
+            try {
+                throw ppp.i();
+            } catch (ppp e) {
+                e.printStackTrace();
+            }
         }
         Object e = prbVar.e();
         int i6 = i5 + i3;
@@ -1761,7 +1831,12 @@ public /* synthetic */ class plk {
         if (x == i2) {
             return x;
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public static int u(byte[] bArr, int i, pnr pnrVar) {
@@ -1775,7 +1850,12 @@ public /* synthetic */ class plk {
             pnrVar.c = new String(bArr, x, i2, ppn.a);
             return x + i2;
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public static int v(byte[] bArr, int i, pnr pnrVar) {
@@ -1789,7 +1869,12 @@ public /* synthetic */ class plk {
             pnrVar.c = prx.g(bArr, x, i2);
             return x + i2;
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public static int w(int i, byte[] bArr, int i2, int i3, prn prnVar, pnr pnrVar) {
@@ -1806,10 +1891,18 @@ public /* synthetic */ class plk {
                     int x = x(bArr, i2, pnrVar);
                     int i4 = pnrVar.a;
                     if (i4 < 0) {
-                        throw ppp.f();
+                        try {
+                            throw ppp.f();
+                        } catch (ppp e) {
+                            e.printStackTrace();
+                        }
                     }
                     if (i4 > bArr.length - x) {
-                        throw ppp.i();
+                        try {
+                            throw ppp.i();
+                        } catch (ppp e) {
+                            e.printStackTrace();
+                        }
                     }
                     if (i4 == 0) {
                         prnVar.d(i, poc.b);
@@ -1833,21 +1926,37 @@ public /* synthetic */ class plk {
                                 i2 = w(i7, bArr, x2, i3, b, pnrVar);
                             }
                         }
+                        if (false) {
+                            break;
+                        }
                     }
                     if (i2 > i3 || i6 != i5) {
-                        throw ppp.g();
+                        try {
+                            throw ppp.g();
+                        } catch (ppp e) {
+                            e.printStackTrace();
+                        }
                     }
                     prnVar.d(i, b);
                     return i2;
                 case 4:
                 default:
-                    throw ppp.c();
+                    try {
+                        throw ppp.c();
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                 case 5:
                     prnVar.d(i, Integer.valueOf(p(bArr, i2)));
                     return i2 + 4;
             }
         }
-        throw ppp.c();
+        try {
+            throw ppp.c();
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public static int x(byte[] bArr, int i, pnr pnrVar) {
@@ -1934,7 +2043,11 @@ public /* synthetic */ class plk {
                 while (pqxVar.c() != Integer.MAX_VALUE && aC(b, pqxVar)) {
                 }
                 if (c != pqxVar.d()) {
-                    throw ppp.b();
+                    try {
+                        throw ppp.b();
+                    } catch (ppp e) {
+                        e.printStackTrace();
+                    }
                 }
                 b.c();
                 ((prn) obj).d(psa.c(a, 3), b);
@@ -1945,8 +2058,13 @@ public /* synthetic */ class plk {
                 ((prn) obj).d(psa.c(a, 5), Integer.valueOf(pqxVar.f()));
                 return true;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo e) {
+                    e.printStackTrace();
+                }
         }
+        return false;
     }
 
     public void b(pvn pvnVar) {

@@ -12,14 +12,14 @@ import java.util.Arrays;
 /* renamed from: pms  reason: default package */
 /* loaded from: classes2.dex */
 public final class pms {
-    public final Uri a;
-    public final Bitmap b;
-    public final Long c;
-    public final pmh d;
-    public final Integer e;
-    public final Integer f;
-    public final PointF g;
-    private final byte[] h;
+    public Uri a;
+    public Bitmap b;
+    public Long c;
+    public pmh d;
+    public Integer e;
+    public Integer f;
+    public PointF g;
+    private byte[] h;
 
     public pms() {
     }

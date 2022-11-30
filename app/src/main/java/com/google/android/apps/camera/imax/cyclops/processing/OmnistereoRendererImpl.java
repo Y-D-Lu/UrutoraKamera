@@ -24,7 +24,11 @@ public class OmnistereoRendererImpl implements ejq {
     private native boolean nativeInitialize(String str, int i, boolean z, double d, double d2);
 
     public final void finalize() {
-        super.finalize();
+        try {
+            super.finalize();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         nativeRelease();
     }
 

@@ -11,13 +11,14 @@ import defpackage.ojq;
 import defpackage.oom;
 import defpackage.pos;
 import defpackage.ppd;
+import defpackage.ppp;
 
 /* loaded from: classes.dex */
 public class PipelineException extends Exception {
     private static final String ROOT_CAUSE_DELIMITER = "#vk ";
-    private final nvi statusCode;
-    private final String statusMessage;
-    private final nvo visionkitStatus;
+    private nvi statusCode;
+    private String statusMessage;
+    private nvo visionkitStatus;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -95,7 +96,11 @@ public class PipelineException extends Exception {
     }
 
     PipelineException(byte[] bArr) {
-        this((nvo) ppd.s(nvo.d, bArr, pos.a()));
+        try {
+            new PipelineException((nvo) ppd.s(nvo.d, bArr, pos.a()));
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
     }
 
     public List getComponentStatuses() {

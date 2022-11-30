@@ -139,11 +139,11 @@ public abstract class kqq extends kqh {
                                                                                 throw e5;
                                                                             }
                                                                             throw new ppp(e5);
-                                                                        } catch (IOException e6) {
-                                                                            if (!(e6.getCause() instanceof ppp)) {
-                                                                                throw new ppp(e6);
-                                                                            }
-                                                                            throw ((ppp) e6.getCause());
+//                                                                        } catch (Exception e6) {
+//                                                                            if (!(e6.getCause() instanceof ppp)) {
+//                                                                                throw new ppp(e6);
+//                                                                            }
+//                                                                            throw ((ppp) e6.getCause());
                                                                         }
                                                                     } catch (RuntimeException e7) {
                                                                         if (!(e7.getCause() instanceof ppp)) {

@@ -27,7 +27,7 @@ public final class fdt {
         this.i = false;
         try {
             this.d = new feh();
-        } catch (fcq e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         if (this.a == null) {

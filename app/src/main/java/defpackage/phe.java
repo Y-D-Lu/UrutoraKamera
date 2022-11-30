@@ -1,7 +1,9 @@
 package defpackage;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /* renamed from: phe  reason: default package */
 /* loaded from: classes2.dex */
@@ -20,12 +22,28 @@ public abstract class phe extends onj implements Future {
 
     @Override // java.util.concurrent.Future
     public final Object get() {
-        return b().get();
+        try {
+            return b().get();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.Future
     public final Object get(long j, TimeUnit timeUnit) {
-        return b().get(j, timeUnit);
+        try {
+            return b().get(j, timeUnit);
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.Future

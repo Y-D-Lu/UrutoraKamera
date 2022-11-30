@@ -24,7 +24,7 @@ public final class fck {
     }
 
     public final synchronized axn a(WindowManager windowManager, ddf ddfVar, fde fdeVar, boolean z) {
-        int bitsPerPixel;
+        int bitsPerPixel = 0;
         awu awuVar;
         int[] iArr;
         this.e = fdeVar;

@@ -7,6 +7,7 @@ import com.google.common.io.ByteStreams;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 import defpackage.obr;
@@ -34,10 +35,20 @@ public final class AndroidModelExtractor {
     }
 
     private static void b(AssetManager assetManager, String str, File file) {
-        String[] list = assetManager.list(str);
+        String[] list = new String[0];
+        try {
+            list = assetManager.list(str);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (list.length == 0) {
             File file2 = new File(file, str);
-            InputStream open = assetManager.open(str);
+            InputStream open = null;
+            try {
+                open = assetManager.open(str);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             try {
                 FileOutputStream fileOutputStream = new FileOutputStream(file2);
                 ByteStreams.copy(open, fileOutputStream);
@@ -54,7 +65,11 @@ public final class AndroidModelExtractor {
                     } catch (Throwable th2) {
                     }
                 }
-                throw th;
+                try {
+                    throw th;
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
         File file3 = new File(file, str);

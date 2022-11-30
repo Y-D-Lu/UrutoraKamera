@@ -253,7 +253,7 @@ public final class nzn {
                 obtain.setHyphenationFrequency(nzvVar.h);
             }
             staticLayout = obtain.build();
-        } catch (nzu e) {
+        } catch (Exception e) {
             Log.e("CollapsingTextHelper", e.getCause().getMessage(), e);
             staticLayout = null;
         }
@@ -393,7 +393,7 @@ public final class nzn {
     }
 
     public final void g(boolean z) {
-        StaticLayout staticLayout;
+        StaticLayout staticLayout = null;
         StaticLayout staticLayout2;
         if (this.B.getHeight() <= 0 || this.B.getWidth() <= 0) {
             if (!z) {

@@ -223,6 +223,7 @@ public final class dsz implements dqx {
                 th2.printStackTrace();
             }
         }
+        return null;
     }
 
     @Override // defpackage.dqx

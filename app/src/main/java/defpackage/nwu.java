@@ -5,8 +5,8 @@ import android.graphics.Rect;
 /* renamed from: nwu  reason: default package */
 /* loaded from: classes2.dex */
 public final class nwu {
-    public final Rect a;
-    public final Rect b;
+    public Rect a;
+    public Rect b;
 
     public nwu() {
     }

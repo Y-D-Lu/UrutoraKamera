@@ -4,6 +4,7 @@ import android.app.AppGlobals;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
@@ -112,12 +113,22 @@ public class Pref {
 
     public static SharedPreferences getSharedPreferences() {
         Application initialApplication = AppGlobals.getInitialApplication();
-        return PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext());
+        try {
+            return PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext());
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static String getStringValue(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         return PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str) ? PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null) : "0";
     }
 

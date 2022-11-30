@@ -6,6 +6,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.view.ContextThemeWrapper;
@@ -64,7 +65,7 @@ public class DLock$GestureListener extends GestureDetector.SimpleOnGestureListen
                         @Override // android.content.DialogInterface.OnClickListener
                         public void onClick(DialogInterface dialogInterface, int i) {
                             if (Helper.sHdr_process != 0) {
-                                BottomBar.Toast(org.codeaurora.snapcam.R.string.hsl_hdrprocess);
+                                //BottomBar.Toast(org.codeaurora.snapcam.R.string.hsl_hdrprocess);
                             } else {
                                 DLock$GestureListener.this.b(file, fileNames, spinner, dialogInterface, i);
                             }
@@ -123,7 +124,12 @@ public class DLock$GestureListener extends GestureDetector.SimpleOnGestureListen
 
     public static String getCfgFileName(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         if (applicationContext.getSharedPreferences("settings", 0).contains("installed_config")) {
             String replace = applicationContext.getSharedPreferences("settings", 0).getString("installed_config", null).replace("/storage/emulated/0/LMC8.4/", "");
             str = str.replace("lmc_8.4", replace).replace("PANO", replace).replace("lmc_8.4", replace).replace("MVIMG", replace);
@@ -133,7 +139,12 @@ public class DLock$GestureListener extends GestureDetector.SimpleOnGestureListen
 
     public static int getDialogTheme() {
         Application initialApplication = AppGlobals.getInitialApplication();
-        return PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).getBoolean("cfg_dialog_dark", false) ? 16974373 : 16974393;
+        try {
+            return PreferenceManager.getDefaultSharedPreferences(initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext()).getBoolean("cfg_dialog_dark", false) ? 16974373 : 16974393;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public static String[] getFileNames(File[] fileArr) {
@@ -202,7 +213,11 @@ public class DLock$GestureListener extends GestureDetector.SimpleOnGestureListen
 
     public final void onRestart() {
         BottomBar bottomBar = this.this$0;
-        Thread.sleep(500L);
+        try {
+            Thread.sleep(500L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Context context = bottomBar.appContext;
         apply(context);
         Intent intent = new Intent(context, CameraActivity.class);

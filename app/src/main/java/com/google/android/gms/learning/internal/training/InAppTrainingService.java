@@ -24,7 +24,7 @@ public final class InAppTrainingService extends Service {
         if (krvVar != null) {
             try {
                 return krvVar.f(intent);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onBind", e);
                 }
@@ -41,13 +41,13 @@ public final class InAppTrainingService extends Service {
             this.dynamiteImpl = krvVar;
             try {
                 krvVar.g(kog.b(this));
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (!Log.isLoggable(TAG, 5)) {
                     return;
                 }
                 Log.w(TAG, "RemoteException during onCreate", e);
             }
-        } catch (krn e2) {
+        } catch (Exception e2) {
             if (!Log.isLoggable(TAG, 5)) {
                 return;
             }
@@ -61,7 +61,7 @@ public final class InAppTrainingService extends Service {
         if (krvVar != null) {
             try {
                 krvVar.h();
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onDestroy", e);
                 }
@@ -77,7 +77,7 @@ public final class InAppTrainingService extends Service {
             try {
                 krvVar.i(intent);
                 return;
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onRebind", e);
                 }
@@ -92,7 +92,7 @@ public final class InAppTrainingService extends Service {
         if (krvVar != null) {
             try {
                 return krvVar.e(intent, i, i2);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onStartCommand", e);
                 }
@@ -107,7 +107,7 @@ public final class InAppTrainingService extends Service {
         if (krvVar != null) {
             try {
                 krvVar.j(i);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (!Log.isLoggable(TAG, 5)) {
                     return;
                 }
@@ -122,7 +122,7 @@ public final class InAppTrainingService extends Service {
         if (krvVar != null) {
             try {
                 return krvVar.k(intent);
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onUnbind", e);
                 }

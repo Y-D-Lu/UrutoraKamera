@@ -81,7 +81,7 @@ public class ZoomKnob extends TextView {
 
     public final void c(int i, float f, float f2, float f3) {
         float f4;
-        double d;
+        double d = 0;
         int i2 = this.l;
         float f5 = this.g;
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) getLayoutParams();

@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: llc  reason: default package */
 /* loaded from: classes2.dex */
 public final class llc {
-    public final boolean a;
+    public boolean a;
 
     public llc() {
     }

@@ -3,6 +3,7 @@ package com.google.android.apps.camera.autotimer.analysis.jni;
 import defpackage.lil;
 import defpackage.mad;
 import defpackage.ppd;
+import defpackage.ppp;
 import defpackage.pud;
 import defpackage.pum;
 import defpackage.pvb;
@@ -37,7 +38,12 @@ public class Curator implements BaseCurator {
 
     @Override // com.google.android.apps.camera.autotimer.analysis.jni.BaseCurator
     public final pvb a(mad madVar, pud pudVar) {
-        return (pvb) ppd.p(pvb.e, nativeProcessImage(new AnalysisImage(madVar), pudVar.g()));
+        try {
+            return (pvb) ppd.p(pvb.e, nativeProcessImage(new AnalysisImage(madVar), pudVar.g()));
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // com.google.android.apps.camera.autotimer.analysis.jni.BaseCurator

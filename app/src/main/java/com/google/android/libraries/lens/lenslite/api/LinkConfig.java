@@ -33,7 +33,7 @@ public abstract class LinkConfig {
     private static final String TAG = "LinkConfig";
 
     /* loaded from: classes2.dex */
-    public abstract class Builder {
+    public static abstract class Builder {
         public abstract void a(mhy mhyVar);
 
         public abstract LinkConfig build();
