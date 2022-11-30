@@ -1,7 +1,5 @@
 package defpackage;
 
-import java.util.List;
-
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: ooj  reason: default package */
 /* loaded from: classes2.dex */
@@ -25,7 +23,7 @@ public final class ooj extends oom {
         return this.a;
     }
 
-    @Override // defpackage.oom
+    //@Override // defpackage.oom
     public final oom b(int i, int i2) {
         obr.aP(i, i2, size());
         return this.a.subList(B(i2), B(i)).a();
@@ -34,6 +32,11 @@ public final class ooj extends oom {
     @Override // defpackage.oom, defpackage.ood, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
         return this.a.contains(obj);
+    }
+
+    @Override
+    public oti iterator() {
+        return null;
     }
 
     @Override // defpackage.ood
@@ -70,8 +73,8 @@ public final class ooj extends oom {
         return this.a.size();
     }
 
-    @Override // defpackage.oom, java.util.List
-    public final /* bridge */ /* synthetic */ List subList(int i, int i2) {
-        return subList(i, i2);
-    }
+//    @Override // defpackage.oom, java.util.List
+//    public final /* bridge */ /* synthetic */ List subList(int i, int i2) {
+//        return subList(i, i2);
+//    }
 }

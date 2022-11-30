@@ -11,6 +11,7 @@ final class ouc extends otz {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public ouc(defpackage.pfc r8, int r9) {
+        super(r8, r9);
         /*
             r7 = this;
             long[] r9 = new long[r9]

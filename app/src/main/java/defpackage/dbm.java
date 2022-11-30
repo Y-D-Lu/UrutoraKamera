@@ -1,7 +1,5 @@
 package defpackage;
 
-import android.util.Range;
-
 /* renamed from: dbm  reason: default package */
 /* loaded from: classes.dex */
 final class dbm implements dcq {
@@ -26,7 +24,7 @@ final class dbm implements dcq {
                     float f = ((dbn) this.a.c.c()).a;
                     float f2 = ((dbn) this.a.c.c()).b;
                     boolean z = ((dbn) this.a.c.c()).c;
-                    if (dbo.a.contains((Range) Double.valueOf(Math.toDegrees(f))) && Math.abs(Math.toDegrees(f2)) <= 10.0d && !z) {
+                    if (dbo.a.contains(Math.toDegrees(f)) && Math.abs(Math.toDegrees(f2)) <= 10.0d && !z) {
                         return true;
                     }
                 }

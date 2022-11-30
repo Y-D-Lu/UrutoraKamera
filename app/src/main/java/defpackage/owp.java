@@ -9,7 +9,7 @@ public abstract class owp {
     private static String a = "owz";
     private static String b = "com.google.common.flogger.backend.google.GooglePlatform";
     private static String c = "com.google.common.flogger.backend.system.DefaultPlatform";
-    private static final String[] d = {"owz", "com.google.common.flogger.backend.google.GooglePlatform", "com.google.common.flogger.backend.system.DefaultPlatform"};
+    public static final String[] d = {"owz", "com.google.common.flogger.backend.google.GooglePlatform", "com.google.common.flogger.backend.system.DefaultPlatform"};
 
     public static int a() {
         return ((oyd) oyd.a.get()).b;

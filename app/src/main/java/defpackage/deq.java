@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: deq  reason: default package */
 /* loaded from: classes2.dex */
-public final class deq extends Enum {
+public final class deq {
     public static final deq a;
     private static final /* synthetic */ deq[] b;
     private final File c = new File("/sys/fs/selinux/enforce");
@@ -25,7 +25,7 @@ public final class deq extends Enum {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ghb b() {
-        InputStreamReader inputStreamReader;
+        InputStreamReader inputStreamReader = null;
         InputStreamReader inputStreamReader2 = null;
         ghb ghbVar = new ghb(null);
         deq deqVar = a;
@@ -39,24 +39,24 @@ public final class deq extends Enum {
                     try {
                         inputStreamReader = new InputStreamReader(new FileInputStream(deqVar.c));
                         try {
-                        } catch (FileNotFoundException e) {
-                            inputStreamReader2 = inputStreamReader;
-                            if (inputStreamReader2 != null) {
-                                inputStreamReader2.close();
-                            }
-                            ghbVar.b = z;
-                            return ghbVar;
-                        } catch (IOException e2) {
-                            inputStreamReader2 = inputStreamReader;
-                            if (inputStreamReader2 != null) {
-                                inputStreamReader2.close();
-                                z = false;
-                                ghbVar.b = z;
-                                return ghbVar;
-                            }
-                            z = false;
-                            ghbVar.b = z;
-                            return ghbVar;
+//                        } catch (FileNotFoundException e) {
+//                            inputStreamReader2 = inputStreamReader;
+//                            if (inputStreamReader2 != null) {
+//                                inputStreamReader2.close();
+//                            }
+//                            ghbVar.b = z;
+//                            return ghbVar;
+//                        } catch (IOException e2) {
+//                            inputStreamReader2 = inputStreamReader;
+//                            if (inputStreamReader2 != null) {
+//                                inputStreamReader2.close();
+//                                z = false;
+//                                ghbVar.b = z;
+//                                return ghbVar;
+//                            }
+//                            z = false;
+//                            ghbVar.b = z;
+//                            return ghbVar;
                         } catch (Throwable th) {
                             th = th;
                             inputStreamReader2 = inputStreamReader;
@@ -71,7 +71,7 @@ public final class deq extends Enum {
                     } catch (FileNotFoundException e4) {
                     } catch (IOException e5) {
                     } catch (Throwable th2) {
-                        th = th2;
+                        //th = th2;
                     }
                     if (((char) inputStreamReader.read()) == '1') {
                         inputStreamReader.close();
@@ -82,7 +82,7 @@ public final class deq extends Enum {
                 }
             } catch (IOException e6) {
             }
-        } catch (IOException e7) {
+        } catch (Exception e7) {
         }
         ghbVar.b = z;
         return ghbVar;

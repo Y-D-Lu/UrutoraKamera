@@ -55,7 +55,7 @@ public final class cny implements lff, lfd {
     }
 
     private void o() {
-        new Object[1][0] = this;
+        //new Object[1][0] = this;
     }
 
     @Override // defpackage.lfd

@@ -11,6 +11,11 @@ final class oox extends oom {
         this.a = oomVar;
     }
 
+    @Override
+    public oti iterator() {
+        return null;
+    }
+
     @Override // defpackage.ood
     public final boolean gI() {
         return true;

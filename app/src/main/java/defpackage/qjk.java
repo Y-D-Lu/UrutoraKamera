@@ -3,7 +3,7 @@ package defpackage;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: qjk  reason: default package */
 /* loaded from: classes2.dex */
-public final class qjk extends Enum implements qdi {
+public final class qjk implements qdi {
     public static final qjk a;
     private static final /* synthetic */ qjk[] b;
 

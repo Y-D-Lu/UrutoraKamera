@@ -22,6 +22,6 @@ public final class oow extends oti {
     @Override // java.util.Iterator, java.util.Iterator
     /* renamed from: next */
     public final Object next() {
-        return ((Map.Entry) this.a.mo197next()).getValue();
+        return ((Map.Entry) this.a.next()).getValue();
     }
 }

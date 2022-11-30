@@ -20,7 +20,7 @@ public final class olj extends AbstractCollection {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
-        for (Collection collection : this.a.m().values()) {
+        for (Collection collection : (Collection<Collection>) this.a.m().values()) {
             if (collection.contains(obj)) {
                 return true;
             }

@@ -1,6 +1,5 @@
 package defpackage;
 
-import java.util.Iterator;
 import java.util.Map;
 
 /* renamed from: oov  reason: default package */
@@ -22,7 +21,7 @@ final class oov extends opp {
         return this.a.containsKey(obj);
     }
 
-    @Override // defpackage.opp, defpackage.ope, defpackage.ood
+    //@Override // defpackage.opp, defpackage.ope, defpackage.ood
     public final oti gH() {
         return this.a.gL();
     }
@@ -32,10 +31,10 @@ final class oov extends opp {
         return true;
     }
 
-    @Override // defpackage.opp, defpackage.ope, defpackage.ood, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set, java.util.NavigableSet
-    public final /* bridge */ /* synthetic */ Iterator iterator() {
-        return iterator();
-    }
+//    @Override // defpackage.opp, defpackage.ope, defpackage.ood, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set, java.util.NavigableSet
+//    public final /* bridge */ /* synthetic */ Iterator iterator() {
+//        return iterator();
+//    }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {

@@ -116,7 +116,7 @@ public final class dnw implements doq {
                 int i2 = 0;
                 while (i2 < i) {
                     frameLayoutArr[i2] = new FrameLayout(dnwVar.a);
-                    View.inflate(dnwVar.a, c != dnwVar.e.k(ddl.ay) ? R.layout.retouching_examples_legacy : R.layout.retouching_examples, frameLayoutArr[i2]);
+                    View.inflate(dnwVar.a, true != dnwVar.e.k(ddl.ay) ? R.layout.retouching_examples_legacy : R.layout.retouching_examples, frameLayoutArr[i2]);
                     Context context = dnwVar.a;
                     FrameLayout frameLayout4 = frameLayoutArr[i2];
                     gtv gtvVar2 = gtvVarArr[i2];

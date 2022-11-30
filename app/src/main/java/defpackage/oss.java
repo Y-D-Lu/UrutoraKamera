@@ -21,7 +21,7 @@ public class oss extends osq implements SortedSet {
         return comparator;
     }
 
-    @Override // defpackage.osq
+    //@Override // defpackage.osq
     /* renamed from: d */
     public SortedSet c() {
         return (SortedSet) super.a();

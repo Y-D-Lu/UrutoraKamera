@@ -1,7 +1,5 @@
 package defpackage;
 
-import java.util.List;
-
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: ool  reason: default package */
 /* loaded from: classes2.dex */
@@ -21,7 +19,12 @@ public final class ool extends oom {
         return this.c.A();
     }
 
-    @Override // defpackage.oom
+    @Override
+    public oti iterator() {
+        return null;
+    }
+
+    //@Override // defpackage.oom
     public final oom b(int i, int i2) {
         obr.aP(i, i2, this.b);
         oom oomVar = this.c;
@@ -45,10 +48,10 @@ public final class ool extends oom {
         return this.b;
     }
 
-    @Override // defpackage.oom, java.util.List
-    public final /* bridge */ /* synthetic */ List subList(int i, int i2) {
-        return subList(i, i2);
-    }
+//    @Override // defpackage.oom, java.util.List
+//    public final /* bridge */ /* synthetic */ List subList(int i, int i2) {
+//        return subList(i, i2);
+//    }
 
     @Override // defpackage.ood
     public final int y() {

@@ -255,7 +255,7 @@ public class BottomSheetBehavior extends aae {
         }
         int i3 = 6;
         if (!this.a && this.s != 6) {
-            String string = view.getResources().getString(R.string.bottomsheet_action_expand_halfway);
+            String string = view.getResources().getString(0x7f140098); // R.string.bottomsheet_action_expand_halfway
             hj M = M(6);
             List v = gl.v(view);
             int i4 = 0;

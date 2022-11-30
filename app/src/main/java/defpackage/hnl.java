@@ -21,7 +21,7 @@ public final class hnl {
     }
 
     public final synchronized void a(float f, long j) {
-        if (this.d >= 0 && this.a.contains((Range) Float.valueOf(f))) {
+        if (this.d >= 0 && this.a.contains(f)) {
             this.f = Math.min(this.f + 1, 5);
             this.e = j;
             return;

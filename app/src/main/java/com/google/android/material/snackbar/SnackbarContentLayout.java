@@ -55,8 +55,8 @@ public class SnackbarContentLayout extends LinearLayout {
     @Override // android.view.View
     protected final void onFinishInflate() {
         super.onFinishInflate();
-        this.a = (TextView) findViewById(R.id.snackbar_text);
-        this.b = (Button) findViewById(R.id.snackbar_action);
+        this.a = (TextView) findViewById(0x7f0b02b7); // R.id.snackbar_text
+        this.b = (Button) findViewById(0x7f0b02b6); // R.id.snackbar_action
     }
 
     @Override // android.widget.LinearLayout, android.view.View

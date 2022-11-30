@@ -15,7 +15,7 @@ public final class omn extends omr {
         return a;
     }
 
-    @Override // defpackage.omr
+    //@Override // defpackage.omr
     public final int a(omr omrVar) {
         return omrVar == this ? 0 : 1;
     }

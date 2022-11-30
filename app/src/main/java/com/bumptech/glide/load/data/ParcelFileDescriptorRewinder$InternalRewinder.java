@@ -20,7 +20,12 @@ public final class ParcelFileDescriptorRewinder$InternalRewinder {
             Os.lseek(this.a.getFileDescriptor(), 0L, OsConstants.SEEK_SET);
             return this.a;
         } catch (ErrnoException e) {
-            throw new IOException(e);
+            try {
+                throw new IOException(e);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 }

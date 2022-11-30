@@ -3,7 +3,7 @@ package defpackage;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: oix  reason: default package */
 /* loaded from: classes2.dex */
-public final class oix extends Enum implements oiu {
+public final class oix implements oiu {
     public static final oix a;
     private static final /* synthetic */ oix[] b;
 

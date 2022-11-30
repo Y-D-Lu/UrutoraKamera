@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
@@ -16,7 +17,12 @@ public class phz extends pfy {
 
     @Override // java.util.concurrent.ExecutorService
     public final boolean awaitTermination(long j, TimeUnit timeUnit) {
-        return this.a.awaitTermination(j, timeUnit);
+        try {
+            return this.a.awaitTermination(j, timeUnit);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override // java.util.concurrent.Executor
@@ -53,5 +59,20 @@ public class phz extends pfy {
         sb.append(valueOf);
         sb.append("]");
         return sb.toString();
+    }
+
+    @Override
+    public pht a(Runnable runnable) {
+        return null;
+    }
+
+    @Override
+    public pht b(Callable callable) {
+        return null;
+    }
+
+    @Override
+    public pht c(Runnable runnable, Object obj) {
+        return null;
     }
 }

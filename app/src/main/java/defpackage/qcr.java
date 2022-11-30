@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicReference;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: qcr  reason: default package */
 /* loaded from: classes2.dex */
-public final class qcr extends Enum implements qbz {
+public final class qcr implements qbz {
     public static final qcr a;
     private static final /* synthetic */ qcr[] b;
 

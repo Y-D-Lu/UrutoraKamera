@@ -11,6 +11,11 @@ final class ors extends oom {
         this.a = ortVar;
     }
 
+    @Override
+    public oti iterator() {
+        return null;
+    }
+
     @Override // defpackage.ood
     public final boolean gI() {
         return true;

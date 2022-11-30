@@ -3,7 +3,7 @@ package defpackage;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: iji  reason: default package */
 /* loaded from: classes.dex */
-public final class iji extends Enum {
+public final class iji {
     public static final iji a;
     private static final /* synthetic */ iji[] b;
 

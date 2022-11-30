@@ -13,6 +13,11 @@ final class orv extends oom {
         this.c = i2;
     }
 
+    @Override
+    public oti iterator() {
+        return null;
+    }
+
     @Override // defpackage.ood
     public final boolean gI() {
         return true;

@@ -19,4 +19,9 @@ public final class pyt implements pys, pyn {
     public final Object mo37get() {
         return this.a;
     }
+
+    @Override
+    public Object get() {
+        return null;
+    }
 }

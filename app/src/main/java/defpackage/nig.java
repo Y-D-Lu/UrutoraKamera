@@ -26,7 +26,7 @@ public final class nig extends bu implements aez {
 
     @Override // defpackage.bu
     public final View A(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        return layoutInflater.inflate(R.layout.libraries_social_licenses_license_menu_fragment, viewGroup, false);
+        return layoutInflater.inflate(0x7f0e0070, viewGroup, false); // R.layout.libraries_social_licenses_license_menu_fragment
     }
 
     @Override // defpackage.bu
@@ -60,9 +60,9 @@ public final class nig extends bu implements aez {
     @Override // defpackage.bu
     public final void M(View view, Bundle bundle) {
         by w = w();
-        this.b = new ArrayAdapter(w, (int) R.layout.libraries_social_licenses_license, (int) R.id.license, new ArrayList());
+        this.b = new ArrayAdapter(w, 0x7f0e006d, 0x7f0b018e, new ArrayList()); // (int) R.layout.libraries_social_licenses_license (int) R.id.license
         afa.a(w).c(54321, this);
-        ListView listView = (ListView) view.findViewById(R.id.license_list);
+        ListView listView = (ListView) view.findViewById(0x7f0b0191); // R.id.license_list
         listView.setAdapter((ListAdapter) this.b);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: nif
             @Override // android.widget.AdapterView.OnItemClickListener

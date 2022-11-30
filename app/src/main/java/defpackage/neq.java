@@ -5,8 +5,8 @@ import android.content.Context;
 /* renamed from: neq  reason: default package */
 /* loaded from: classes2.dex */
 final class neq {
-    public final Context a;
-    public final ojz b;
+    public Context a;
+    public ojz b;
 
     public neq() {
     }

@@ -11,6 +11,7 @@ final class oub extends otz {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public oub(defpackage.pfc r6, int r7) {
+        super(r6, r7);
         /*
             r5 = this;
             int[] r7 = new int[r7]

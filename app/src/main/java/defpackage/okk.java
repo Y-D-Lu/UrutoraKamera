@@ -20,6 +20,11 @@ final class okk extends onl {
         return this.a.a.keySet();
     }
 
+    @Override
+    protected Set c() {
+        return null;
+    }
+
     @Override // defpackage.one, java.util.Collection, java.util.Set
     public final void clear() {
         this.a.clear();

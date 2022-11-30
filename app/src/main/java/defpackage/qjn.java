@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicReference;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: qjn  reason: default package */
 /* loaded from: classes2.dex */
-public final class qjn extends Enum implements qyn {
+public final class qjn implements qyn {
     public static final qjn a;
     private static final /* synthetic */ qjn[] b;
 

@@ -13,13 +13,17 @@ public final class piu {
     public int c = 3;
 
     public piu() {
-        this.a = r1;
+        this.a = new long[]{0L};
         long[] jArr = {0, 16384};
         this.b = DecoderJNI.nativeCreate(jArr);
         if (jArr[0] != 0) {
             return;
         }
-        throw new IOException("failed to initialize native brotli decoder");
+        try {
+            throw new IOException("failed to initialize native brotli decoder");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public final void a() {
@@ -80,6 +84,10 @@ public final class piu {
         if (this.a[0] != 0) {
             a();
         }
-        super.finalize();
+        try {
+            super.finalize();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
     }
 }

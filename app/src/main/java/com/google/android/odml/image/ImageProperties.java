@@ -7,11 +7,11 @@ public abstract class ImageProperties {
 
     /* loaded from: classes.dex */
     public abstract class Builder {
-        abstract ImageProperties build();
+        public abstract ImageProperties build();
 
-        abstract Builder setImageFormat(int i);
+        public abstract Builder setImageFormat(int i);
 
-        abstract Builder setStorageType(int i);
+        public abstract Builder setStorageType(int i);
     }
 
     static Builder builder() {

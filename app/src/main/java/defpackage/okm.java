@@ -57,6 +57,11 @@ public class okm extends ong implements Serializable, olt {
         return this.b;
     }
 
+    @Override
+    public Set g() {
+        return null;
+    }
+
     @Override // defpackage.ong, java.util.Map
     public final Set entrySet() {
         Set set = this.e;

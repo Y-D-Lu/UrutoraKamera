@@ -132,6 +132,11 @@ public final class pnu extends pnp implements RandomAccess, ppf, pqt {
         return true;
     }
 
+    @Override
+    public ppf d(int i) {
+        return null;
+    }
+
     @Override // defpackage.ppf
     public final void f(boolean z) {
         gN();
@@ -185,7 +190,7 @@ public final class pnu extends pnp implements RandomAccess, ppf, pqt {
 
     @Override // defpackage.pnp, java.util.AbstractList, java.util.List
     public final /* bridge */ /* synthetic */ Object remove(int i) {
-        int i2;
+        int i2 = 0;
         gN();
         i(i);
         boolean[] zArr = this.c;

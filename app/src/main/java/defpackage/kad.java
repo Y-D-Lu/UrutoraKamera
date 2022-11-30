@@ -408,7 +408,7 @@ public final class kad {
             if (z2) {
                 Typeface create = Typeface.create("google-sans-text-medium", 0);
                 TypedValue typedValue = new TypedValue();
-                zoomUi.getResources().getValue(R.dimen.zoom_toggle_bar_letter_spacing, typedValue, true);
+                zoomUi.getResources().getValue(0x7f070660, typedValue, true); // R.dimen.zoom_toggle_bar_letter_spacing
                 float f3 = typedValue.getFloat();
                 if (!zoomUi.e) {
                     i = zoomUi.getResources().getColor(R.color.zoom_toggle_bar_text_color, null);
@@ -418,7 +418,7 @@ public final class kad {
                 } else {
                     int e2 = obr.e(zoomUi, R.attr.colorOnSecondary);
                     e = obr.e(zoomUi, R.attr.colorOnSurface);
-                    zoomUi.getResources().getValue(R.dimen.zoom_toggle_bar_selected_letter_spacing, typedValue, true);
+                    zoomUi.getResources().getValue(0x7f070662, typedValue, true); // R.dimen.zoom_toggle_bar_selected_letter_spacing
                     float f4 = typedValue.getFloat();
                     typeface = create;
                     i = e2;

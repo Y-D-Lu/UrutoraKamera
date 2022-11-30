@@ -984,15 +984,20 @@ public class myq {
 
     public static String o(Context context, String str, long j, int i) {
         Resources resources = context.getApplicationContext().getResources();
-        return n(resources.openRawResource(resources.getIdentifier(str, "raw", resources.getResourcePackageName(R.id.dummy_102))), j, i);
+        return n(resources.openRawResource(resources.getIdentifier(str, "raw", resources.getResourcePackageName(0x7f0b0102))), j, i); // R.id.dummy_102
     }
 
     public static Object p(Callable callable) {
         try {
             return callable.call();
         } catch (Throwable th) {
-            throw new IOException(th);
+            try {
+                throw new IOException(th);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+        return null;
     }
 
     public static int q(int i) {

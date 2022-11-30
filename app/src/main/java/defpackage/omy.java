@@ -45,12 +45,12 @@ public final class omy extends omm {
         return this;
     }
 
-    @Override // defpackage.opm
+    //@Override // defpackage.opm
     public final oti gG() {
         return opy.a;
     }
 
-    @Override // defpackage.opm, defpackage.ope, defpackage.ood
+    //@Override // defpackage.opm, defpackage.ope, defpackage.ood
     public final oti gH() {
         return opy.a;
     }

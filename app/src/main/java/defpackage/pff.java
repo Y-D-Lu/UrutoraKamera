@@ -3,7 +3,7 @@ package defpackage;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: pff  reason: default package */
 /* loaded from: classes2.dex */
-public final class pff extends Enum implements pfg {
+public final class pff implements pfg {
     public static final pff a;
     private static final /* synthetic */ pff[] b;
 

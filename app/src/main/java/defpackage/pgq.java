@@ -7,7 +7,7 @@ import java.util.concurrent.Executor;
 /* renamed from: pgq  reason: default package */
 /* loaded from: classes2.dex */
 public final class pgq extends pge {
-    private pgp c;
+    public pgp c;
 
     public pgq(ood oodVar, boolean z, Executor executor, Callable callable) {
         super(oodVar, z, false);

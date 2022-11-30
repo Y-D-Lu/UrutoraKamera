@@ -56,7 +56,7 @@ public final class nzh extends nzf {
         arrayList.add(ObjectAnimator.ofFloat(this.x, View.TRANSLATION_Z, DisplayHelper.DENSITY).setDuration(100L));
         animatorSet.playSequentially((Animator[]) arrayList.toArray(new Animator[0]));
         animatorSet.setInterpolator(a);
-        stateListAnimator.addState(f, animatorSet);
+        stateListAnimator.addState(nzf.f, animatorSet);
         stateListAnimator.addState(g, o(DisplayHelper.DENSITY, DisplayHelper.DENSITY));
         this.x.setStateListAnimator(stateListAnimator);
         if (l()) {

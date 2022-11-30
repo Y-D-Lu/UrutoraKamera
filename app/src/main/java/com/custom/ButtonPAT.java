@@ -41,7 +41,11 @@ public class ButtonPAT extends ToggleButton {
                     Helper.Toast(R.string.hsl_hdrprocess);
                     return;
                 }
-                Thread.sleep(500L);
+                try {
+                    Thread.sleep(500L);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 AppGlobals.getInitialApplication();
                 Context context2 = Cswitch.getContext();
                 Intent intent = new Intent(context2, CameraActivity.class);
@@ -76,7 +80,11 @@ public class ButtonPAT extends ToggleButton {
                     Helper.Toast(R.string.hsl_hdrprocess);
                     return;
                 }
-                Thread.sleep(500L);
+                try {
+                    Thread.sleep(500L);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 AppGlobals.getInitialApplication();
                 Context context2 = Cswitch.getContext();
                 Intent intent = new Intent(context2, CameraActivity.class);
@@ -111,7 +119,11 @@ public class ButtonPAT extends ToggleButton {
                     Helper.Toast(R.string.hsl_hdrprocess);
                     return;
                 }
-                Thread.sleep(500L);
+                try {
+                    Thread.sleep(500L);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 AppGlobals.getInitialApplication();
                 Context context2 = Cswitch.getContext();
                 Intent intent = new Intent(context2, CameraActivity.class);
@@ -146,7 +158,11 @@ public class ButtonPAT extends ToggleButton {
                     Helper.Toast(R.string.hsl_hdrprocess);
                     return;
                 }
-                Thread.sleep(500L);
+                try {
+                    Thread.sleep(500L);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 AppGlobals.getInitialApplication();
                 Context context2 = Cswitch.getContext();
                 Intent intent = new Intent(context2, CameraActivity.class);

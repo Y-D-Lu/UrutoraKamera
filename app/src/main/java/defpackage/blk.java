@@ -3,8 +3,6 @@ package defpackage;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import org.codeaurora.snapcam.R;
-
 @Deprecated
 /* renamed from: blk  reason: default package */
 /* loaded from: classes.dex */
@@ -20,7 +18,7 @@ public abstract class blk extends blb {
 
     @Override // defpackage.blb, defpackage.blh
     public final bks c() {
-        Object tag = this.a.getTag(R.id.glide_custom_view_target_tag);
+        Object tag = this.a.getTag(0x7f0b0142); // R.id.glide_custom_view_target_tag
         if (tag != null) {
             if (!(tag instanceof bks)) {
                 throw new IllegalArgumentException("You must not call setTag() on a view Glide is targeting");
@@ -57,7 +55,7 @@ public abstract class blk extends blb {
 
     @Override // defpackage.blb, defpackage.blh
     public final void k(bks bksVar) {
-        this.a.setTag(R.id.glide_custom_view_target_tag, bksVar);
+        this.a.setTag(0x7f0b0142, bksVar); // R.id.glide_custom_view_target_tag
     }
 
     public final String toString() {

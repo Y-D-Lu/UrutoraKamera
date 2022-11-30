@@ -5,7 +5,7 @@ import java.util.concurrent.Executor;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: pgr  reason: default package */
 /* loaded from: classes2.dex */
-public final class pgr extends Enum implements Executor {
+public final class pgr implements Executor {
     public static final pgr a;
     private static final /* synthetic */ pgr[] b;
 

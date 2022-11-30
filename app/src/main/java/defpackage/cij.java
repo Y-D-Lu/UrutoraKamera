@@ -154,7 +154,7 @@ public final class cij implements cif {
 
     @Override // defpackage.cif
     public void e() {
-        new Object[1][0] = this;
+        //new Object[1][0] = this;
     }
 
     @Override // defpackage.cif

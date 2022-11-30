@@ -13,10 +13,10 @@ public final class pfl {
         if (pfx.d) {
             b = null;
             a = null;
-            return;
+        } else {
+            b = new pfl(false, null);
+            a = new pfl(true, null);
         }
-        b = new pfl(false, null);
-        a = new pfl(true, null);
     }
 
     public pfl(boolean z, Throwable th) {

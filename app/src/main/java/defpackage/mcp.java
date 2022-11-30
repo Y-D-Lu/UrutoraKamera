@@ -27,13 +27,15 @@ class mcp extends mcm implements mce {
     /* JADX WARN: Type inference failed for: r0v0, types: [mce, mcd] */
     @Override // defpackage.mce
     public final Uri h() {
-        return l().h();
+        return null;
+        //return l().h();
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [mce, mcd] */
     @Override // defpackage.mce
     public final mcn i() {
-        return l().i();
+        return null;
+        //return l().i();
     }
 
     @Override // defpackage.mce
@@ -49,7 +51,8 @@ class mcp extends mcm implements mce {
     /* JADX WARN: Type inference failed for: r0v0, types: [mce, mcd] */
     @Override // defpackage.mce
     public final boolean k() {
-        return l().k();
+        return false;
+        //return l().k();
     }
 
     @Override // defpackage.mcm

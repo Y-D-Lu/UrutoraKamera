@@ -28,9 +28,8 @@ public final class phj implements Runnable {
             e = e;
             this.b.a(e);
         } catch (RuntimeException e2) {
-            e = e2;
-            this.b.a(e);
-        } catch (ExecutionException e3) {
+            this.b.a(e2);
+        } catch (Exception e3) {
             this.b.a(e3.getCause());
         }
     }

@@ -8,8 +8,8 @@ import dalvik.system.VMStack;
 /* renamed from: owz  reason: default package */
 /* loaded from: classes2.dex */
 public final class owz extends owp {
-    private static final boolean a = owy.a();
-    private static final boolean b;
+    public static final boolean a = owy.a();
+    public static final boolean b;
     private static final owo c;
 
     static {

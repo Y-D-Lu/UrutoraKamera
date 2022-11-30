@@ -52,6 +52,11 @@ public class ord extends oni implements Serializable {
         throw new UnsupportedOperationException();
     }
 
+    @Override
+    protected oqw i() {
+        return null;
+    }
+
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // defpackage.oni, defpackage.one
     /* renamed from: i */

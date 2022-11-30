@@ -108,6 +108,11 @@ public final class pow extends pnp implements RandomAccess, ppj, pqt {
         return this.c[i];
     }
 
+    @Override
+    public ppj f(int i) {
+        return null;
+    }
+
     @Override // defpackage.pnp, java.util.AbstractList, java.util.Collection, java.util.List
     public final boolean equals(Object obj) {
         if (this == obj) {
@@ -185,7 +190,7 @@ public final class pow extends pnp implements RandomAccess, ppj, pqt {
 
     @Override // defpackage.pnp, java.util.AbstractList, java.util.List
     public final /* bridge */ /* synthetic */ Object remove(int i) {
-        int i2;
+        int i2 = 0;
         gN();
         i(i);
         float[] fArr = this.c;

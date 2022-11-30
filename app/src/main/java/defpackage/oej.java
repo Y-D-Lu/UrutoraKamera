@@ -9,6 +9,7 @@ public final class oej extends ofj {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public oej(int r7) {
+        super("");
         /*
             r6 = this;
             r0 = 2

@@ -251,7 +251,7 @@ public final class ioa extends buf {
             irr irrVar2 = irzVar.o;
             int i2 = irzVar.k;
             irrVar2.setPadding(i2, 0, i2, 0);
-            irzVar.o.setId(R.id.speedup_seek_bar);
+            irzVar.o.setId(0x7f0b02d9); // R.id.speedup_seek_bar
             irzVar.q = new iry(irzVar, irzVar.c, irzVar.o);
             iru iruVar = irzVar.q;
             int dimensionPixelSize3 = iruVar.b.getDimensionPixelSize(R.dimen.speed_up_seekbar_selected_text_size);

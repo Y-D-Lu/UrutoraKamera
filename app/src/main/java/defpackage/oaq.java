@@ -18,7 +18,8 @@ public final class oaq extends AnimatorListenerAdapter {
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationEnd(Animator animator) {
         super.onAnimationEnd(animator);
-        super/*android.graphics.drawable.Drawable*/.setVisible(false, false);
+        a.setVisible(false, false);
+        //super/*android.graphics.drawable.Drawable*/.setVisible(false, false);
         oas oasVar = this.a;
         List<ga> list = oasVar.f;
         if (list == null || oasVar.g) {

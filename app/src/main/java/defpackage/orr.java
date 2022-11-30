@@ -17,6 +17,11 @@ public final class orr extends oom {
         return this.b;
     }
 
+    @Override
+    public oti iterator() {
+        return null;
+    }
+
     @Override // defpackage.ood
     public final boolean gI() {
         return false;

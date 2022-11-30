@@ -257,7 +257,7 @@ public final class nmb {
                 case 11:
                     nlfVar = nlf.CALENDAR_ENTRY;
                     Barcode.CalendarEvent calendarEvent = barcode.calendarEvent;
-                    geoPoint2 = calendarEvent != 0 ? calendarEvent : null;
+                    geoPoint2 = calendarEvent != null ? barcode.geoPoint : null;
                     a3 = a3.b(calendarEvent.summary);
                     arrayList2 = arrayList;
                     i = i2;

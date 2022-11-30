@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 /* renamed from: ony  reason: default package */
 /* loaded from: classes2.dex */
 final class ony extends oom {
-    final /* synthetic */ orp a;
+    /* synthetic */ orp a;
 
     public ony() {
     }
@@ -16,12 +16,21 @@ final class ony extends oom {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        throw new InvalidObjectException("Use SerializedForm");
+        try {
+            throw new InvalidObjectException("Use SerializedForm");
+        } catch (InvalidObjectException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.oom, defpackage.ood, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
         return this.a.contains(obj);
+    }
+
+    @Override
+    public oti iterator() {
+        return null;
     }
 
     @Override // defpackage.ood

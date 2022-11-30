@@ -2,6 +2,7 @@ package defpackage;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.TimeUnit;
 
@@ -32,7 +33,11 @@ public final class phy extends pfy {
                         return false;
                     }
                     long nanoTime = System.nanoTime();
-                    TimeUnit.NANOSECONDS.timedWait(this.a, nanos);
+                    try {
+                        TimeUnit.NANOSECONDS.timedWait(this.a, nanos);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     nanos -= System.nanoTime() - nanoTime;
                 } else {
                     return true;
@@ -91,5 +96,20 @@ public final class phy extends pfy {
     public final List shutdownNow() {
         shutdown();
         return Collections.emptyList();
+    }
+
+    @Override
+    public pht a(Runnable runnable) {
+        return null;
+    }
+
+    @Override
+    public pht b(Callable callable) {
+        return null;
+    }
+
+    @Override
+    public pht c(Runnable runnable, Object obj) {
+        return null;
     }
 }

@@ -30,7 +30,7 @@ public final class ovz extends owc {
         if (owbVar != null) {
             owbVar.a(ovdVar, obj, obj2);
         } else {
-            ovdVar.b(obj, obj2);
+            ovdVar.b(obj, (ovc) obj2);
         }
     }
 
@@ -42,7 +42,7 @@ public final class ovz extends owc {
         if (owaVar != null) {
             owaVar.a(ovdVar, it, obj);
         } else if (this.c != null && !this.a.containsKey(ovdVar)) {
-            ovdVar.a(it, obj);
+            ovdVar.a(it, (ovc) obj);
         } else {
             while (it.hasNext()) {
                 a(ovdVar, it.next(), obj);

@@ -8,7 +8,7 @@ public final class odo extends ImageProperties.Builder {
     private Integer a;
     private Integer b;
 
-    final ImageProperties build() {
+    public final ImageProperties build() {
         Integer num = this.a;
         if (num == null || this.b == null) {
             StringBuilder sb = new StringBuilder();
@@ -27,12 +27,12 @@ public final class odo extends ImageProperties.Builder {
         return new odq(num.intValue(), this.b.intValue());
     }
 
-    final ImageProperties.Builder setImageFormat(int i) {
+    public final ImageProperties.Builder setImageFormat(int i) {
         this.a = Integer.valueOf(i);
         return this;
     }
 
-    final ImageProperties.Builder setStorageType(int i) {
+    public final ImageProperties.Builder setStorageType(int i) {
         this.b = Integer.valueOf(i);
         return this;
     }

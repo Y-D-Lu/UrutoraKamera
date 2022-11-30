@@ -68,6 +68,11 @@ public final class otk extends ord implements osg {
         return otkVar;
     }
 
+    @Override
+    public NavigableSet q() {
+        return null;
+    }
+
     @Override // defpackage.ord, defpackage.oni, defpackage.oqw
     /* renamed from: q */
     public final NavigableSet j() {

@@ -37,7 +37,7 @@ class ooq implements Serializable {
             oti it = opeVar.iterator();
             oti it2 = ((ood) this.b).iterator();
             while (it.hasNext()) {
-                a.e(it.mo197next(), it2.mo197next());
+                a.e(it.next(), it2.next());
             }
             return a.b();
         }

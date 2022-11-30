@@ -19,7 +19,11 @@ public final class pny extends pob {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        throw new InvalidObjectException("BoundedByteStream instances are not to be serialized directly");
+        try {
+            throw new InvalidObjectException("BoundedByteStream instances are not to be serialized directly");
+        } catch (InvalidObjectException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.pob, defpackage.poc
@@ -44,7 +48,7 @@ public final class pny extends pob {
     }
 
     @Override // defpackage.pob, defpackage.poc
-    protected final void e(byte[] bArr, int i, int i2, int i3) {
+    public final void e(byte[] bArr, int i, int i2, int i3) {
         System.arraycopy(this.a, this.d + i, bArr, i2, i3);
     }
 

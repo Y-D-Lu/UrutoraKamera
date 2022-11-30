@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.AutoCompleteTextView;
+import android.widget.ListAdapter;
 
 import org.codeaurora.snapcam.R;
 
@@ -93,5 +94,8 @@ public class mo extends AutoCompleteTextView {
         if (ntVar != null) {
             ntVar.c(context, i);
         }
+    }
+
+    public void setAdapter(ListAdapter adapter) {
     }
 }

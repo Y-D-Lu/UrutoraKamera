@@ -25,12 +25,12 @@ public final class lil {
     /* JADX WARN: Type inference failed for: r1v4, types: [java.util.Map] */
     public static void b(Class cls, String str) {
         lik likVar;
-        Map map;
+        Map map = new HashMap();
         synchronized (a) {
             String str2 = (String) c.get(cls);
             if (str2 != null) {
                 likVar = (lik) b.get(str2);
-                map = str2;
+                //map = str2;
             } else if (str != null) {
                 Map map2 = b;
                 lik likVar2 = (lik) map2.get(str);
@@ -42,7 +42,7 @@ public final class lil {
                 map = map2;
             } else {
                 likVar = null;
-                map = str2;
+                //map = str2;
             }
         }
         if (likVar == null) {
@@ -61,7 +61,7 @@ public final class lil {
                 sb.append(mapLibraryName);
                 sb.append("\"");
                 if (message.contains(sb.toString())) {
-                    throw new UnsatisfiedLinkError(String.format(null, "Failed to resolve \"%s\" for \"%s\". Did you forget to include the .so or register it with %s.register(%s.class, %s)? \n%s", mapLibraryName, cls.getSimpleName(), lil.class.getSimpleName(), cls.getSimpleName(), likVar.a, e.getMessage()));
+                    //throw new UnsatisfiedLinkError(String.format(null, "Failed to resolve \"%s\" for \"%s\". Did you forget to include the .so or register it with %s.register(%s.class, %s)? \n%s", mapLibraryName, cls.getSimpleName(), lil.class.getSimpleName(), cls.getSimpleName(), likVar.a, e.getMessage()));
                 }
             }
             throw e;

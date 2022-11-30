@@ -31,7 +31,7 @@ public final class iln {
                 @Override // android.content.DialogInterface.OnClickListener
                 public final void onClick(DialogInterface dialogInterface, int i) {
                     iln ilnVar = iln.this;
-                    Intent a = ilk.a(ilnVar.a);
+                    Intent a = ilk.a(ilnVar.a, c);
                     if (ilnVar.b.g()) {
                         ((hnx) ilnVar.b.c()).g(a);
                     } else {

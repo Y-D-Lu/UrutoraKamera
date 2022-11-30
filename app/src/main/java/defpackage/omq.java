@@ -63,4 +63,9 @@ public final class omq extends omr {
         sb.append("/");
         return sb.toString();
     }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }

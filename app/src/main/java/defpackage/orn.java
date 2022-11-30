@@ -16,9 +16,9 @@ final class orn extends olo {
     /* JADX WARN: Multi-variable type inference failed */
     @Override // defpackage.olo
     protected final /* bridge */ /* synthetic */ Object a(Object obj) {
-        if (orp.T(obj, this.a)) {
+        if (orp.T((Comparable) obj, this.a)) {
             return null;
         }
-        return this.b.a.f(obj);
+        return this.b.a.f((Comparable) obj);
     }
 }

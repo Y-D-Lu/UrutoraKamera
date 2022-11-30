@@ -5,7 +5,7 @@ import java.util.concurrent.Executor;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: asm  reason: default package */
 /* loaded from: classes.dex */
-final class asm extends Enum implements Executor {
+final class asm implements Executor {
     public static final asm a;
     private static final /* synthetic */ asm[] b;
 

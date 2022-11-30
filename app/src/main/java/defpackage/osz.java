@@ -1,10 +1,13 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.NavigableSet;
 
 /* renamed from: osz  reason: default package */
 /* loaded from: classes2.dex */
@@ -40,15 +43,32 @@ public final class osz extends olr implements Serializable {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        objectInputStream.defaultReadObject();
-        Comparator comparator = (Comparator) objectInputStream.readObject();
+        try {
+            objectInputStream.defaultReadObject();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Comparator comparator = null;
+        try {
+            comparator = (Comparator) objectInputStream.readObject();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         obr.G(olr.class, "comparator").a(this, comparator);
         obr.G(osz.class, "range").a(this, onn.a(comparator));
         obr.G(osz.class, "rootReference").a(this, new osy());
         osx osxVar = new osx();
         obr.G(osz.class, "header").a(this, osxVar);
         v(osxVar, osxVar);
-        obr.J(this, objectInputStream, objectInputStream.readInt());
+        try {
+            obr.J(this, objectInputStream, objectInputStream.readInt());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -70,8 +90,16 @@ public final class osz extends olr implements Serializable {
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        objectOutputStream.defaultWriteObject();
-        objectOutputStream.writeObject(j().comparator());
+        try {
+            objectOutputStream.defaultWriteObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            objectOutputStream.writeObject(j().comparator());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         obr.M(this, objectOutputStream);
     }
 
@@ -132,6 +160,11 @@ public final class osz extends olr implements Serializable {
         } catch (ClassCastException | NullPointerException e) {
             return 0;
         }
+    }
+
+    @Override
+    public boolean containsAll(Collection collection) {
+        return false;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
@@ -206,6 +239,11 @@ public final class osz extends olr implements Serializable {
     @Override // defpackage.osg
     public final osg gE(Object obj, int i) {
         return new osz(this.b, this.c.b(new onn(((olr) this).a, false, null, 1, true, obj, i)), this.d);
+    }
+
+    @Override
+    public NavigableSet q() {
+        return null;
     }
 
     @Override // defpackage.oln, defpackage.oqw

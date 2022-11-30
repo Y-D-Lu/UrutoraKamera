@@ -32,7 +32,7 @@ public final class ovt {
     /* JADX WARN: Type inference failed for: r1v23 */
     /* JADX WARN: Type inference failed for: r1v24 */
     public static String b(Object obj) {
-        if (obj == 0) {
+        if (obj == null) {
             return "null";
         }
         try {
@@ -42,7 +42,7 @@ public final class ovt {
             } else {
                 obj = obj instanceof int[] ? Arrays.toString((int[]) obj) : obj instanceof long[] ? Arrays.toString((long[]) obj) : obj instanceof byte[] ? Arrays.toString((byte[]) obj) : obj instanceof char[] ? Arrays.toString((char[]) obj) : obj instanceof short[] ? Arrays.toString((short[]) obj) : obj instanceof float[] ? Arrays.toString((float[]) obj) : obj instanceof double[] ? Arrays.toString((double[]) obj) : obj instanceof boolean[] ? Arrays.toString((boolean[]) obj) : Arrays.toString((Object[]) obj);
             }
-            return obj;
+            return (String) obj;
         } catch (RuntimeException e) {
             return a(obj, e);
         }

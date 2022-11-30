@@ -12,6 +12,7 @@ final class oua extends otz {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public oua(defpackage.pfc r13, int r14) {
+        super(r13, r14);
         /*
             r12 = this;
             int[][] r14 = new int[r14]

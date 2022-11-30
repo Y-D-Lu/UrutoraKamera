@@ -11,6 +11,11 @@ final class opf extends oom {
         this.a = opgVar;
     }
 
+    @Override
+    public oti iterator() {
+        return null;
+    }
+
     @Override // defpackage.ood
     public final boolean gI() {
         return true;

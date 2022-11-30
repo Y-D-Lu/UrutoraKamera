@@ -54,7 +54,7 @@ public final class ktm extends kno {
         if (kthVar == null) {
             kthVar = null;
         }
-        return new ktm(2, null, ksyVar, null, null, kthVar, null);
+        return new ktm(2, null, (IBinder) ksyVar, null, null, (IBinder) kthVar, null);
     }
 
     @Override // android.os.Parcelable

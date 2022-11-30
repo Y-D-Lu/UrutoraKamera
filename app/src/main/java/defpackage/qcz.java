@@ -7,7 +7,7 @@ import java.util.concurrent.Callable;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: qcz  reason: default package */
 /* loaded from: classes2.dex */
-public final class qcz extends Enum implements Callable {
+public final class qcz implements Callable {
     public static final qcz a;
     private static final /* synthetic */ qcz[] b;
 

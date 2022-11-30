@@ -82,19 +82,19 @@ public final class nqx implements kvc {
             qdwVar.e(new qdp(new qcn() { // from class: qju
                 @Override // defpackage.qcn
                 public final /* synthetic */ void a(Object obj) {
-                    qmu.this.a(obj);
+                    //qmu.this.a(obj);
                 }
             }, nqwVar == qjv.b ? qdd.c : new qcl() { // from class: qjt
                 @Override // defpackage.qcl
                 public final /* synthetic */ void a() {
-                    qmj.this.mo3invoke();
+                    //qmj.this.mo3invoke();
                 }
             }));
         } else {
             qdwVar.e(new qdp(new qcl() { // from class: qjt
                 @Override // defpackage.qcl
                 public final /* synthetic */ void a() {
-                    qmj.this.mo3invoke();
+                    //qmj.this.mo3invoke();
                 }
             }));
         }

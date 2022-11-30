@@ -32,7 +32,7 @@ public abstract class oln extends AbstractCollection implements oqw {
             if (oqwVar.isEmpty()) {
                 return false;
             }
-            for (oqv oqvVar : oqwVar.k()) {
+            for (oqv oqvVar : (Set<oqv>) oqwVar.k()) {
                 f(oqvVar.b(), oqvVar.a());
             }
             return true;
@@ -72,7 +72,7 @@ public abstract class oln extends AbstractCollection implements oqw {
             if (size() != oqwVar.size() || k().size() != oqwVar.k().size()) {
                 return false;
             }
-            for (oqv oqvVar : oqwVar.k()) {
+            for (oqv oqvVar : (Set<oqv>) oqwVar.k()) {
                 if (gD(oqvVar.b()) != oqvVar.a()) {
                 }
             }

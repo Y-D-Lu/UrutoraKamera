@@ -61,7 +61,7 @@ public final class orp extends omm {
         return ohh.Q(this, collection);
     }
 
-    @Override // defpackage.omm, defpackage.opm
+    //@Override // defpackage.omm, defpackage.opm
     /* renamed from: d */
     public final omm n(Comparable comparable, boolean z) {
         return U(orj.s(comparable, ohh.V(z)));
@@ -81,7 +81,7 @@ public final class orp extends omm {
         return super.equals(obj);
     }
 
-    @Override // defpackage.omm, defpackage.opm
+    //@Override // defpackage.omm, defpackage.opm
     /* renamed from: g */
     public final omm q(Comparable comparable, boolean z, Comparable comparable2, boolean z2) {
         return (comparable.compareTo(comparable2) != 0 || z || z2) ? U(orj.r(comparable, ohh.V(z), comparable2, ohh.V(z2))) : new omy(this.a);
@@ -114,7 +114,7 @@ public final class orp extends omm {
         return false;
     }
 
-    @Override // defpackage.omm, defpackage.opm
+    //@Override // defpackage.omm, defpackage.opm
     /* renamed from: j */
     public final omm t(Comparable comparable, boolean z) {
         return U(orj.q(comparable, ohh.V(z)));
@@ -127,6 +127,21 @@ public final class orp extends omm {
             return Integer.MAX_VALUE;
         }
         return ((int) a) + 1;
+    }
+
+    @Override
+    public omm d(Comparable comparable, boolean z) {
+        return U(orj.s(comparable, ohh.V(z)));
+    }
+
+    @Override
+    public omm g(Comparable comparable, boolean z, Comparable comparable2, boolean z2) {
+        return (comparable.compareTo(comparable2) != 0 || z || z2) ? U(orj.r(comparable, ohh.V(z), comparable2, ohh.V(z2))) : new omy(this.a);
+    }
+
+    @Override
+    public omm j(Comparable comparable, boolean z) {
+        return U(orj.q(comparable, ohh.V(z)));
     }
 
     @Override // defpackage.omm

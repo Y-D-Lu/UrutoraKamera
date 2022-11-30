@@ -8,7 +8,7 @@ import java.util.function.Consumer;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier removed */
 /* renamed from: oqa  reason: default package */
 /* loaded from: classes2.dex */
-final class oqa extends Enum implements Iterator {
+final class oqa implements Iterator {
     public static final oqa a;
     private static final /* synthetic */ oqa[] b;
 

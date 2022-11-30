@@ -42,4 +42,39 @@ public final class pic extends phz implements phw {
         pib pibVar = new pib(runnable);
         return new pia(pibVar, this.a.scheduleWithFixedDelay(pibVar, j, j2, timeUnit));
     }
+
+    @Override
+    public pht a(Runnable runnable) {
+        return null;
+    }
+
+    @Override
+    public pht b(Callable callable) {
+        return null;
+    }
+
+    @Override
+    public pht c(Runnable runnable, Object obj) {
+        return null;
+    }
+
+    @Override
+    public pia d(Runnable runnable, long j, TimeUnit timeUnit) {
+        return null;
+    }
+
+    @Override
+    public pia e(Callable callable, long j, TimeUnit timeUnit) {
+        return null;
+    }
+
+    @Override
+    public pia f(Runnable runnable, long j, long j2, TimeUnit timeUnit) {
+        return null;
+    }
+
+    @Override
+    public pia g(Runnable runnable, long j, long j2, TimeUnit timeUnit) {
+        return null;
+    }
 }

@@ -16,10 +16,9 @@ public final class okd {
         if (e != null) {
             f("getStackTraceElement", Throwable.class, Integer.TYPE);
         }
-        if (e == null) {
-            return;
+        if (e != null) {
+            g(e);
         }
-        g(e);
     }
 
     @Deprecated
@@ -39,7 +38,11 @@ public final class okd {
             d(th);
             return;
         }
-        throw ((Throwable) cls.cast(th));
+        try {
+            throw ((Throwable) cls.cast(th));
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
     }
 
     public static void d(Throwable th) {

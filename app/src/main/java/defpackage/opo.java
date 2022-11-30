@@ -9,6 +9,11 @@ final class opo extends oom {
         this.a = oppVar;
     }
 
+    @Override
+    public oti iterator() {
+        return null;
+    }
+
     @Override // defpackage.ood
     public final boolean gI() {
         return true;

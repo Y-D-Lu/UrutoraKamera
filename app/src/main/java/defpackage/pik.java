@@ -42,7 +42,8 @@ public final class pik implements Runnable {
                 } catch (Throwable th) {
                     th = th;
                     pimVar.a(new pil(str));
-                    throw th;
+                    th.printStackTrace();
+                    //throw th;
                 }
             }
             try {
@@ -54,9 +55,10 @@ public final class pik implements Runnable {
                 sb2.append(valueOf2);
                 pimVar.a(new pil(sb2.toString()));
             } catch (Throwable th2) {
-                th = th2;
+                //th = th2;
                 pimVar.a(new pil(str));
-                throw th;
+                th2.printStackTrace();
+                //throw th;
             }
         } finally {
             phtVar.cancel(true);

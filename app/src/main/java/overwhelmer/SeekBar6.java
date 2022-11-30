@@ -35,7 +35,7 @@ public class SeekBar6 extends Preference implements SeekBar.OnSeekBarChangeListe
         this.min = 0;
         this.max = 16;
         this.step = 1;
-        setLayoutResource(R.layout.dummy_ae_104);
+        setLayoutResource(0x7f0e0104); // R.layout.dummy_ae_104
     }
 
     public static int men2prog(int i) {
@@ -53,11 +53,11 @@ public class SeekBar6 extends Preference implements SeekBar.OnSeekBarChangeListe
     @Override // android.preference.Preference
     protected void onBindView(View view) {
         super.onBindView(view);
-        this.mSeekBar = (SeekBar) view.findViewById(R.id.dummy_386);
+        this.mSeekBar = (SeekBar) view.findViewById(0x7f0b0386); // R.id.dummy_386
         this.mSeekBar.setMax((this.max - this.min) / this.step);
         this.mSeekBar.setProgress(this.mProgress);
         this.mSeekBar.setOnSeekBarChangeListener(this);
-        this.mTextView = (TextView) view.findViewById(R.id.dummy_385);
+        this.mTextView = (TextView) view.findViewById(0x7f0b0385); // R.id.dummy_385
         setInf(this.mProgress);
     }
 

@@ -191,10 +191,10 @@ public class CollapsingToolbarLayout extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static nxg c(View view) {
-        nxg nxgVar = (nxg) view.getTag(R.id.view_offset_helper);
+        nxg nxgVar = (nxg) view.getTag(0x7f0b0360); // R.id.view_offset_helper
         if (nxgVar == null) {
             nxg nxgVar2 = new nxg(view);
-            view.setTag(R.id.view_offset_helper, nxgVar2);
+            view.setTag(0x7f0b0360, nxgVar2); // R.id.view_offset_helper
             return nxgVar2;
         }
         return nxgVar;
