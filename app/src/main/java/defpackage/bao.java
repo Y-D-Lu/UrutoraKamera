@@ -3,9 +3,6 @@ package defpackage;
 import android.content.ContentResolver;
 import android.net.Uri;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 /* renamed from: bao  reason: default package */
 /* loaded from: classes.dex */
 public abstract class bao implements bac {
@@ -28,7 +25,8 @@ public abstract class bao implements bac {
         if (obj != null) {
             try {
                 c(obj);
-            } catch (IOException e) {
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }
@@ -39,7 +37,7 @@ public abstract class bao implements bac {
             Object b = b(this.a, this.b);
             this.c = b;
             babVar.b(b);
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             babVar.e(e);
         }
     }

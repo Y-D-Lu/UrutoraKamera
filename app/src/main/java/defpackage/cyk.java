@@ -6,16 +6,16 @@ import android.graphics.drawable.Drawable;
 /* renamed from: cyk  reason: default package */
 /* loaded from: classes.dex */
 public final class cyk {
-    public final long a;
-    public final String b;
-    public final Runnable c;
-    public final Drawable d;
-    public final Runnable e;
-    public final ojc f;
-    public final int g;
-    public final int h;
-    public final int i;
-    public final int j;
+    public long a;
+    public String b;
+    public Runnable c;
+    public Drawable d;
+    public Runnable e;
+    public ojc f;
+    public int g;
+    public int h;
+    public int i;
+    public int j;
 
     public cyk() {
     }
@@ -44,7 +44,7 @@ public final class cyk {
         return cyjVar;
     }
 
-    public final boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         String str;
         Runnable runnable;
         Drawable drawable;
@@ -75,7 +75,7 @@ public final class cyk {
         return false;
     }
 
-    public final int hashCode() {
+    public int hashCode() {
         long j = this.a;
         int i = (((int) (j ^ (j >>> 32))) ^ 1000003) * 1000003;
         String str = this.b;
@@ -100,7 +100,7 @@ public final class cyk {
         throw null;
     }
 
-    public final String toString() {
+    public String toString() {
         String str;
         long j = this.a;
         String str2 = this.b;

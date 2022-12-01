@@ -72,7 +72,8 @@ public final class mfk {
         } catch (PackageManager.NameNotFoundException e) {
             Log.w("LensSdkParamsReader", "Unable to find agsa package: com.google.android.googlequicksearchbox");
         }
-        new mfj(this).execute(new Void[0]);
+        new mfj(this).execute();
+//        new mfj(this).execute(new Void[0]);
     }
 
     public final void a(mfh mfhVar) {

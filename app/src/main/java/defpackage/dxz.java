@@ -53,6 +53,9 @@ public final class dxz {
                     i3 += i2;
                     i5++;
                 }
+                if (false) {
+                    break;
+                }
             }
             f2 += f5;
         }

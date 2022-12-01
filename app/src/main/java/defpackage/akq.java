@@ -21,6 +21,7 @@ import com.hdrindicator.DisplayHelper;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
+import java.io.IOException;
 import java.util.ArrayDeque;
 
 /* renamed from: akq  reason: default package */
@@ -208,7 +209,13 @@ public final class akq extends aki {
     public final void inflate(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet) {
         Drawable drawable = this.a;
         if (drawable != null) {
-            drawable.inflate(resources, xmlPullParser, attributeSet);
+            try {
+                drawable.inflate(resources, xmlPullParser, attributeSet);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            } catch (XmlPullParserException ex) {
+                ex.printStackTrace();
+            }
         } else {
             inflate(resources, xmlPullParser, attributeSet, null);
         }
@@ -220,7 +227,13 @@ public final class akq extends aki {
         int i;
         Drawable drawable = this.a;
         if (drawable != null) {
-            drawable.inflate(resources, xmlPullParser, attributeSet, theme);
+            try {
+                drawable.inflate(resources, xmlPullParser, attributeSet, theme);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            } catch (XmlPullParserException ex) {
+                ex.printStackTrace();
+            }
             return;
         }
         ako akoVar = this.c;
@@ -274,18 +287,34 @@ public final class akq extends aki {
         float t = et.t(x, xmlPullParser, "viewportHeight", 8, aknVar.h);
         aknVar.h = t;
         if (aknVar.g <= DisplayHelper.DENSITY) {
-            throw new XmlPullParserException(x.getPositionDescription() + "<vector> tag requires viewportWidth > 0");
+            try {
+                throw new XmlPullParserException(x.getPositionDescription() + "<vector> tag requires viewportWidth > 0");
+            } catch (XmlPullParserException ex) {
+                ex.printStackTrace();
+            }
         } else if (t <= DisplayHelper.DENSITY) {
-            throw new XmlPullParserException(x.getPositionDescription() + "<vector> tag requires viewportHeight > 0");
+            try {
+                throw new XmlPullParserException(x.getPositionDescription() + "<vector> tag requires viewportHeight > 0");
+            } catch (XmlPullParserException ex) {
+                ex.printStackTrace();
+            }
         } else {
             int i3 = 3;
             aknVar.e = x.getDimension(3, aknVar.e);
             float dimension = x.getDimension(2, aknVar.f);
             aknVar.f = dimension;
             if (aknVar.e <= DisplayHelper.DENSITY) {
-                throw new XmlPullParserException(x.getPositionDescription() + "<vector> tag requires width > 0");
+                try {
+                    throw new XmlPullParserException(x.getPositionDescription() + "<vector> tag requires width > 0");
+                } catch (XmlPullParserException ex) {
+                    ex.printStackTrace();
+                }
             } else if (dimension <= DisplayHelper.DENSITY) {
-                throw new XmlPullParserException(x.getPositionDescription() + "<vector> tag requires height > 0");
+                try {
+                    throw new XmlPullParserException(x.getPositionDescription() + "<vector> tag requires height > 0");
+                } catch (XmlPullParserException ex) {
+                    ex.printStackTrace();
+                }
             } else {
                 aknVar.setAlpha(et.t(x, xmlPullParser, "alpha", 4, aknVar.getAlpha()));
                 String string = x.getString(0);
@@ -300,7 +329,12 @@ public final class akq extends aki {
                 akn aknVar2 = akoVar3.b;
                 ArrayDeque arrayDeque = new ArrayDeque();
                 arrayDeque.push(aknVar2.d);
-                int eventType = xmlPullParser.getEventType();
+                int eventType = 0;
+                try {
+                    eventType = xmlPullParser.getEventType();
+                } catch (XmlPullParserException ex) {
+                    ex.printStackTrace();
+                }
                 int depth = xmlPullParser.getDepth() + 1;
                 boolean z2 = true;
                 for (int i4 = 1; eventType != i4 && (xmlPullParser.getDepth() >= depth || eventType != i3); i4 = 1) {
@@ -422,13 +456,23 @@ public final class akq extends aki {
                             arrayDeque.pop();
                         }
                     }
-                    eventType = xmlPullParser.next();
+                    try {
+                        eventType = xmlPullParser.next();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    } catch (XmlPullParserException ex) {
+                        ex.printStackTrace();
+                    }
                     depth = i;
                     i3 = 3;
                     i2 = 2;
                 }
                 if (z2) {
-                    throw new XmlPullParserException("no path defined");
+                    try {
+                        throw new XmlPullParserException("no path defined");
+                    } catch (XmlPullParserException ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 this.d = b(akoVar.c, akoVar.d);
             }

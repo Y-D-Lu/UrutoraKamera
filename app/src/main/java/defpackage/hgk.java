@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: hgk  reason: default package */
 /* loaded from: classes.dex */
 public final class hgk {
-    public final ojc a;
-    public final ojc b;
-    public final ojc c;
+    public ojc a;
+    public ojc b;
+    public ojc c;
 
     public hgk() {
     }

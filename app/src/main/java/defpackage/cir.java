@@ -6,8 +6,8 @@ import java.io.IOException;
 /* loaded from: classes.dex */
 final class cir {
     public static final ouj a = ouj.h("com/google/android/apps/camera/camcorder/audio/processor/AudioPipedStream");
-    public final cip b;
-    public final ciq c;
+    public cip b;
+    public ciq c;
 
     public cir(int i, int i2) {
         cip cipVar = new cip(i, i2);
@@ -15,7 +15,11 @@ final class cir {
         try {
             this.c = new ciq(cipVar);
         } catch (IOException e) {
-            throw new IOException("Failed to set up output stream pipe", e);
+            try {
+                throw new IOException("Failed to set up output stream pipe", e);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 

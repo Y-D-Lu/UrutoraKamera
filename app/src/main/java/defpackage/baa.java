@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.OutputStream;
 
 /* renamed from: baa  reason: default package */
@@ -19,7 +20,11 @@ public final class baa extends OutputStream {
     private final void a() {
         int i = this.d;
         if (i > 0) {
-            this.a.write(this.b, 0, i);
+            try {
+                this.a.write(this.b, 0, i);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             this.d = 0;
         }
     }
@@ -42,15 +47,27 @@ public final class baa extends OutputStream {
             this.c.c(bArr);
             this.b = null;
         } catch (Throwable th) {
-            this.a.close();
-            throw th;
+            try {
+                this.a.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                throw th;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
     @Override // java.io.OutputStream, java.io.Flushable
     public final void flush() {
         a();
-        this.a.flush();
+        try {
+            this.a.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // java.io.OutputStream
@@ -76,7 +93,11 @@ public final class baa extends OutputStream {
             int i6 = this.d;
             if (i6 == 0) {
                 if (i4 >= this.b.length) {
-                    this.a.write(bArr, i5, i4);
+                    try {
+                        this.a.write(bArr, i5, i4);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     return;
                 }
                 i6 = 0;

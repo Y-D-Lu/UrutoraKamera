@@ -16,6 +16,7 @@ import com.google.android.apps.camera.bottombar.R;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 import com.hdrindicator.DisplayHelper;
 
+import java.io.IOException;
 import java.util.Locale;
 
 /* loaded from: classes3.dex */
@@ -310,7 +311,11 @@ public class RotSeek extends View {
                     setProgress(this.currentValue, true);
                     Context context = this.appContext;
                     if (Helper.MenuValue("pref_set_focus_key") == 0) {
-                        Helper.execCommands(context);
+                        try {
+                            Helper.execCommands(context);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                         break;
                     } else {
                         CameraActivity.ReInit();

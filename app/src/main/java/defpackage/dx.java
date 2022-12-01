@@ -9,21 +9,34 @@ import android.util.Xml;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
+import java.io.IOException;
+
 /* renamed from: dx  reason: default package */
 /* loaded from: classes.dex */
 public final class dx {
     private static final ThreadLocal a = new ThreadLocal();
 
     public static ColorStateList a(Resources resources, XmlPullParser xmlPullParser, Resources.Theme theme) {
-        int next;
+        int next = 0;
         AttributeSet asAttributeSet = Xml.asAttributeSet(xmlPullParser);
         do {
-            next = xmlPullParser.next();
+            try {
+                next = xmlPullParser.next();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            }
             if (next == 2) {
                 return b(resources, xmlPullParser, asAttributeSet, theme);
             }
         } while (next != 1);
-        throw new XmlPullParserException("No start tag found");
+        try {
+            throw new XmlPullParserException("No start tag found");
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /* JADX WARN: Multi-variable type inference failed */

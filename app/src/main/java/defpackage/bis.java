@@ -90,7 +90,7 @@ public final class bis extends Drawable implements Animatable, bix {
 
     @Override // defpackage.bix
     public final void c() {
-        biz bizVar;
+        biz bizVar = null;
         Drawable.Callback callback = getCallback();
         while (callback instanceof Drawable) {
             callback = ((Drawable) callback).getCallback();

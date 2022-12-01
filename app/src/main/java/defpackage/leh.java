@@ -5,14 +5,14 @@ import com.Fix.IsoTime;
 /* renamed from: leh  reason: default package */
 /* loaded from: classes3.dex */
 public final class leh {
-    public final lea a;
-    public final leb b;
-    public final ldz c;
-    public final int d;
-    public final int e;
-    public final int f;
-    public final int g;
-    private final int h;
+    public lea a;
+    public leb b;
+    public ldz c;
+    public int d;
+    public int e;
+    public int f;
+    public int g;
+    private int h;
 
     public leh() {
     }

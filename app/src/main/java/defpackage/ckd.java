@@ -5,37 +5,37 @@ import android.util.Range;
 /* renamed from: ckd  reason: default package */
 /* loaded from: classes.dex */
 public final class ckd {
-    public final int A;
-    public final boolean B;
-    public final boolean C;
-    public final boolean D;
-    public final boolean E;
-    public final lvs a;
-    public final lvs b;
-    public final cjo c;
-    public final ldz d;
-    public final leb e;
-    public final ojc f;
-    public final lig g;
-    public final leh h;
-    public final ojc i;
-    public final ojc j;
-    public final ojc k;
-    public final ojc l;
-    public final boolean m;
-    public final Range n;
-    public final Range o;
-    public final boolean p;
-    public final boolean q;
-    public final boolean r;
-    public final boolean s;
-    public final boolean t;
-    public final boolean u;
-    public final oom v;
-    public final oom w;
-    public final oom x;
-    public final lwd y;
-    public final hsr z;
+    public int A;
+    public boolean B;
+    public boolean C;
+    public boolean D;
+    public boolean E;
+    public lvs a;
+    public lvs b;
+    public cjo c;
+    public ldz d;
+    public leb e;
+    public ojc f;
+    public lig g;
+    public leh h;
+    public ojc i;
+    public ojc j;
+    public ojc k;
+    public ojc l;
+    public boolean m;
+    public Range n;
+    public Range o;
+    public boolean p;
+    public boolean q;
+    public boolean r;
+    public boolean s;
+    public boolean t;
+    public boolean u;
+    public oom v;
+    public oom w;
+    public oom x;
+    public lwd y;
+    public hsr z;
 
     public ckd() {
     }

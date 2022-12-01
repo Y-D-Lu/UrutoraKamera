@@ -81,7 +81,7 @@ public final class cgs implements lie {
                 /* JADX WARN: Multi-variable type inference failed */
                 @Override // defpackage.pgj
                 public final pht a() {
-                    lhj lhjVar;
+                    lhj lhjVar = null;
                     int i;
                     Surface surface;
                     ckt a3 = null;
@@ -97,6 +97,7 @@ public final class cgs implements lie {
                         cndVar2.a.e("VideoRecorderFactory#CreateVideoRecorder");
                         synchronized (cndVar2.o) {
                             boolean z = true;
+                            lgz lgzLocal = null;
                             if (ckdVar2.B) {
                                 ojc ojcVar2 = cndVar2.c;
                                 cid cidVar = cndVar2.t;
@@ -129,7 +130,7 @@ public final class cgs implements lie {
                                     lgzVar.n = true;
                                 }
                                 lgzVar.f = true != cndVar2.m.k(dcu.ae) ? 2 : 1;
-                                lhjVar = lgzVar;
+                                lgzLocal = lgzVar;
                             } else {
                                 if (!cndVar2.p.g()) {
                                     cndVar2.p = ojc.i(((cnz) cndVar2.g).mo37get());
@@ -139,7 +140,7 @@ public final class cgs implements lie {
                             leh lehVar = ckdVar2.h;
                             lfl lflVar = cndVar2.q;
                             lflVar.getClass();
-                            lfk b = lhjVar.b(lflVar);
+                            lfk b = lhjVar != null ? lhjVar.b(lflVar) : lgzLocal.b(lflVar);
                             b.r(lehVar);
                             b.c((lee) ckdVar2.i.f());
                             b.k(((Long) ckdVar2.l.e(Long.MAX_VALUE)).longValue());

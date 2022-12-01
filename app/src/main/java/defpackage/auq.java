@@ -12,10 +12,10 @@ import java.nio.ByteBuffer;
 /* renamed from: auq  reason: default package */
 /* loaded from: classes.dex */
 public final class auq extends CameraCaptureSession.CaptureCallback implements ImageReader.OnImageAvailableListener {
-    final /* synthetic */ Handler a;
-    final /* synthetic */ awc b;
-    final /* synthetic */ aui c;
-    final /* synthetic */ fde d;
+    /* synthetic */ Handler a;
+    /* synthetic */ awc b;
+    /* synthetic */ aui c;
+    /* synthetic */ fde d;
 
     public auq() {
     }

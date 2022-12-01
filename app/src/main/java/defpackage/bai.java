@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.FilterInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 /* renamed from: bai  reason: default package */
@@ -35,7 +36,12 @@ public final class bai extends FilterInputStream {
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final int read() {
         int i = this.c;
-        int read = (i < 2 || i > 31) ? super.read() : i == 31 ? this.b : a[i - 2] & 255;
+        int read = 0;
+        try {
+            read = (i < 2 || i > 31) ? super.read() : i == 31 ? this.b : a[i - 2] & 255;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read != -1) {
             this.c++;
         }
@@ -44,15 +50,23 @@ public final class bai extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final int read(byte[] bArr, int i, int i2) {
-        int i3;
+        int i3 = 0;
         int i4 = this.c;
         if (i4 > 31) {
-            i3 = super.read(bArr, i, i2);
+            try {
+                i3 = super.read(bArr, i, i2);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else if (i4 == 31) {
             bArr[i] = this.b;
             i3 = 1;
         } else if (i4 < 2) {
-            i3 = super.read(bArr, i, 2 - i4);
+            try {
+                i3 = super.read(bArr, i, 2 - i4);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
             int min = Math.min(31 - i4, i2);
             System.arraycopy(a, this.c - 2, bArr, i, min);
@@ -71,7 +85,12 @@ public final class bai extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final long skip(long j) {
-        long skip = super.skip(j);
+        long skip = 0;
+        try {
+            skip = super.skip(j);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (skip > 0) {
             this.c = (int) (this.c + skip);
         }

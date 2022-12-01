@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: ial  reason: default package */
 /* loaded from: classes.dex */
 public final class ial {
-    public final int a;
-    public final int b;
-    public final iax c;
+    public int a;
+    public int b;
+    public iax c;
 
     public ial() {
     }

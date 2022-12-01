@@ -9,8 +9,8 @@ import java.util.UUID;
 /* renamed from: ars  reason: default package */
 /* loaded from: classes.dex */
 public final class ars implements Runnable {
-    final /* synthetic */ aof a;
-    final /* synthetic */ String b;
+    /* synthetic */ aof a;
+    /* synthetic */ String b;
     public final asl c = asl.h();
 
     public ars() {

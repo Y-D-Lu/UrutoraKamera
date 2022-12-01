@@ -40,7 +40,7 @@ public final class aty extends atv {
             atyVar.c = this.c;
             atyVar.b = this.b;
             return atyVar;
-        } catch (ass e) {
+        } catch (Exception e) {
             return null;
         }
     }

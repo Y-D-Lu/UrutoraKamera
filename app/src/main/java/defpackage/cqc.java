@@ -83,7 +83,12 @@ final class cqc {
             return ckuVar;
         } catch (IOException e2) {
             ((oug) ((oug) ((oug) a.b()).h(e2)).G((char) 607)).o("Failed to create file: ");
-            throw e2;
+            try {
+                throw e2;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 }

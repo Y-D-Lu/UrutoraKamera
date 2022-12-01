@@ -3,11 +3,11 @@ package defpackage;
 /* renamed from: cim  reason: default package */
 /* loaded from: classes.dex */
 public final class cim {
-    public final boolean a;
-    public final boolean b;
-    public final long c;
-    public final int d;
-    public final int e;
+    public boolean a;
+    public boolean b;
+    public long c;
+    public int d;
+    public int e;
 
     public cim() {
     }

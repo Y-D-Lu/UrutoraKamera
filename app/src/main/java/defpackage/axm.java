@@ -5,7 +5,7 @@ import android.util.Log;
 /* renamed from: axm  reason: default package */
 /* loaded from: classes.dex */
 public final class axm {
-    public static final int a;
+    public static int a;
 
     static {
         try {

@@ -7,17 +7,17 @@ import java.time.Instant;
 /* renamed from: dfo  reason: default package */
 /* loaded from: classes2.dex */
 public abstract class dfo implements btz {
-    public final long b;
-    public final hsp c;
-    public final oom d;
-    public final String e;
-    public final String f;
-    public final Instant g;
-    public final Instant h;
-    public final Uri i;
-    public final boolean j;
-    public final lig k;
-    public final int l;
+    public long b;
+    public hsp c;
+    public oom d;
+    public String e;
+    public String f;
+    public Instant g;
+    public Instant h;
+    public Uri i;
+    public boolean j;
+    public lig k;
+    public int l;
 
     public dfo() {
     }
@@ -68,31 +68,31 @@ public abstract class dfo implements btz {
     }
 
     @Override // defpackage.btz
-    public final int a() {
+    public int a() {
         return this.l;
     }
 
     @Override // defpackage.btz
-    public final long b() {
+    public long b() {
         return this.b;
     }
 
     @Override // defpackage.btz
-    public final Uri c() {
+    public Uri c() {
         return this.i;
     }
 
     @Override // defpackage.btz
-    public final hsp d() {
+    public hsp d() {
         return this.c;
     }
 
     @Override // defpackage.btz
-    public final lig e() {
+    public lig e() {
         return this.k;
     }
 
-    public final boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         hsp hspVar;
         if (obj == this) {
             return true;
@@ -107,21 +107,21 @@ public abstract class dfo implements btz {
     }
 
     @Override // defpackage.btz
-    public final oom f() {
+    public oom f() {
         return this.d;
     }
 
     @Override // defpackage.btz
-    public final Instant g() {
+    public Instant g() {
         return this.g;
     }
 
     @Override // defpackage.btz
-    public final Instant h() {
+    public Instant h() {
         return this.h;
     }
 
-    public final int hashCode() {
+    public int hashCode() {
         long j = this.b;
         int i = (((int) (j ^ (j >>> 32))) ^ 1000003) * 1000003;
         hsp hspVar = this.c;
@@ -129,16 +129,16 @@ public abstract class dfo implements btz {
     }
 
     @Override // defpackage.btz
-    public final String i() {
+    public String i() {
         return this.f;
     }
 
     @Override // defpackage.btz
-    public final boolean j() {
+    public boolean j() {
         return this.j;
     }
 
-    public final String toString() {
+    public String toString() {
         long j = this.b;
         String valueOf = String.valueOf(this.c);
         String valueOf2 = String.valueOf(this.d);

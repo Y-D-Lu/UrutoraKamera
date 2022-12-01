@@ -79,7 +79,6 @@ public final class dyt extends mip {
                             ((oug) ((oug) ((oug) dyt.a.b()).H(TimeUnit.MILLISECONDS)).G((char) 996)).o("Null OIS keys (version: 1)");
                             break;
                         }
-                        break;
                     case 2:
                         if (CaptureResult.STATISTICS_OIS_SAMPLES != null) {
                             OisSample[] oisSampleArr = (OisSample[]) lzvVar3.d(CaptureResult.STATISTICS_OIS_SAMPLES);
@@ -120,7 +119,6 @@ public final class dyt extends mip {
                             ((oug) ((oug) ((oug) dyt.a.b()).H(TimeUnit.MILLISECONDS)).G((char) 998)).o("Null OIS keys (version: 3)");
                             break;
                         }
-                        break;
                     default:
                         ((oug) ((oug) ((oug) dyt.a.b()).H(TimeUnit.MILLISECONDS)).G(994)).p("Invalid OIS API version: %d", dytVar.b);
                         break;

@@ -143,10 +143,10 @@ public final class bpf implements jxj, lie {
                     bpf.this.e = null;
                 }
             });
-            final bpn a = this.m.a();
+            final bpn aBpn = this.m.a();
             lap lapVar2 = new lap();
             this.o = lapVar2;
-            this.d = this.h.a(lapVar2, this.b, pointF, a);
+            this.d = this.h.a(lapVar2, this.b, pointF, aBpn);
             kas kasVar = this.k;
             if (!((kbi) kasVar).L) {
                 kasVar.h();
@@ -166,7 +166,7 @@ public final class bpf implements jxj, lie {
                     bpfVar.g = lcoVar.a(new bpb(bpfVar, 1), mip.bS());
                 }
             }, mip.bS());
-            this.p = ((bpr) a).a.a(new bpb(this, 0), mip.bS());
+            this.p = ((bpr) aBpn).a.a(new bpb(this, 0), mip.bS());
             mip.ca(this.d.c(), new lht() { // from class: bpa
                 public final /* synthetic */ bpf a = bpf.this;
 
@@ -176,7 +176,7 @@ public final class bpf implements jxj, lie {
                         case 0:
                             bpf bpfVar = this.a;
                             Void r3 = (Void) obj;
-                            if (((bpo) ((lce) ((bpr) a).a).d).equals(bpo.AE_AF_LOCKED)) {
+                            if (((bpo) ((lce) ((bpr) aBpn).a).d).equals(bpo.AE_AF_LOCKED)) {
                                 return;
                             }
                             bpfVar.d();
@@ -184,7 +184,7 @@ public final class bpf implements jxj, lie {
                         default:
                             bpf bpfVar2 = this.a;
                             Void r32 = (Void) obj;
-                            bpo bpoVar = (bpo) ((lce) ((bpr) a).a).d;
+                            bpo bpoVar = (bpo) ((lce) ((bpr) aBpn).a).d;
                             if (bpoVar.equals(bpo.AE_AF_LOCKED)) {
                                 return;
                             }
@@ -207,7 +207,7 @@ public final class bpf implements jxj, lie {
                         case 0:
                             bpf bpfVar = this.a;
                             Void r3 = (Void) obj;
-                            if (((bpo) ((lce) ((bpr) a).a).d).equals(bpo.AE_AF_LOCKED)) {
+                            if (((bpo) ((lce) ((bpr) aBpn).a).d).equals(bpo.AE_AF_LOCKED)) {
                                 return;
                             }
                             bpfVar.d();
@@ -215,7 +215,7 @@ public final class bpf implements jxj, lie {
                         default:
                             bpf bpfVar2 = this.a;
                             Void r32 = (Void) obj;
-                            bpo bpoVar = (bpo) ((lce) ((bpr) a).a).d;
+                            bpo bpoVar = (bpo) ((lce) ((bpr) aBpn).a).d;
                             if (bpoVar.equals(bpo.AE_AF_LOCKED)) {
                                 return;
                             }

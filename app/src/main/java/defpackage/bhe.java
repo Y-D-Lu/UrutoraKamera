@@ -119,7 +119,7 @@ public final class bhe {
                     options.inBitmap = null;
                     d2 = d(bhoVar, options, bhdVar, bcvVar);
                     lock = bhy.a;
-                } catch (IOException e3) {
+                } catch (Exception e3) {
                     throw iOException;
                 }
             }
@@ -127,8 +127,13 @@ public final class bhe {
             return d2;
         } catch (Throwable th) {
             bhy.a.unlock();
-            throw th;
+            try {
+                throw th;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     private static synchronized BitmapFactory.Options e() {

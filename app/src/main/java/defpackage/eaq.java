@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: eaq  reason: default package */
 /* loaded from: classes.dex */
 final class eaq {
-    public final String a;
-    public final int b;
-    public final lzr c;
+    public String a;
+    public int b;
+    public lzr c;
 
     public eaq() {
     }

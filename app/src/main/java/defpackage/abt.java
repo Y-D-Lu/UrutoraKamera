@@ -20,7 +20,7 @@ public final class abt extends InputConnectionWrapper {
 
     @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
     public final boolean commitContent(InputContentInfo inputContentInfo, int i, Bundle bundle) {
-        Bundle bundle2;
+        Bundle bundle2 = null;
         nd ndVar = this.a;
         abv abvVar = inputContentInfo == null ? null : new abv(new abu(inputContentInfo));
         if ((i & 1) != 0) {

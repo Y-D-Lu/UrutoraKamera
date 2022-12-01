@@ -6,7 +6,7 @@ public class FaceInfo {
     protected transient boolean b;
 
     /* loaded from: classes.dex */
-    public class Landmark {
+    public static class Landmark {
         public transient long a;
         protected transient boolean b;
 

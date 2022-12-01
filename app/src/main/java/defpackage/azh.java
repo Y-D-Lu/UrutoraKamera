@@ -2,6 +2,7 @@ package defpackage;
 
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 /* renamed from: azh  reason: default package */
@@ -18,7 +19,11 @@ public final class azh implements azo {
         try {
             return azgVar.c(this.a);
         } finally {
-            this.a.reset();
+            try {
+                this.a.reset();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

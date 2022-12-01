@@ -21,7 +21,7 @@ class axl extends Handler {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final String c(int i) {
-        Iterator it;
+        Iterator it = r.iterator();
         String str = new String("HIST") + "_ID" + i;
         while (this.r.iterator().hasNext()) {
             str = str + '_' + ((Integer) it.next()).toString();

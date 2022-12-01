@@ -4,9 +4,9 @@ import android.os.Handler;
 
 /* loaded from: classes.dex */
 public final class SurfaceCreateRecord {
-    public final Runnable frameListener;
-    public final Handler handler;
-    public final int height;
-    public final Runnable surfaceListener;
-    public final int width;
+    public Runnable frameListener;
+    public Handler handler;
+    public int height;
+    public Runnable surfaceListener;
+    public int width;
 }

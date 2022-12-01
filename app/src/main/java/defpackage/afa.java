@@ -9,8 +9,8 @@ import java.lang.reflect.Modifier;
 /* renamed from: afa  reason: default package */
 /* loaded from: classes.dex */
 public final class afa {
-    public final afe a;
-    private final aee b;
+    public afe a;
+    private aee b;
 
     public afa() {
     }

@@ -25,7 +25,8 @@ public final class ayr {
         if (!this.d) {
             try {
                 a();
-            } catch (IOException e) {
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }

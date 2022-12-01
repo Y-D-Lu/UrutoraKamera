@@ -41,12 +41,12 @@ public final class cci {
     public cci(ccu ccuVar, ccs ccsVar, int i, Random random) {
         String str;
         StringBuilder sb;
-        prl prlVar;
+        prl prlVar = null;
         long millis;
-        prl prlVar2;
+        prl prlVar2 = null;
         long millis2;
         String str2;
-        String str3;
+        String str3 = null;
         String str4;
         String str5;
         StringBuilder sb2 = new StringBuilder();

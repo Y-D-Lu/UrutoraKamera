@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: cyn  reason: default package */
 /* loaded from: classes.dex */
 final class cyn {
-    public final oor a;
-    public final ojc b;
+    public oor a;
+    public ojc b;
 
     public cyn() {
     }

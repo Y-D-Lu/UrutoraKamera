@@ -36,7 +36,7 @@ final class doc implements dor {
             pbhVar.a |= 4;
             pbhVar.b = i;
             ((iik) iijVar).m = (pbh) m.j();
-        } catch (ppp e) {
+        } catch (Exception e) {
             ((oug) ((oug) ((oug) doe.a.c()).h(e)).G((char) 876)).o("Invalid log buffer");
         }
     }

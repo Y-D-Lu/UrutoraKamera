@@ -5,33 +5,33 @@ import java.util.Collections;
 /* renamed from: nme  reason: default package */
 /* loaded from: classes2.dex */
 public final class nme {
-    private final ojc A;
-    public final nmf a;
-    public final nlf b;
-    public final nmd c;
-    public final ojc d;
-    public final ojc e;
-    public final ojc f;
-    public final ojc g;
-    public final ojc h;
-    public final ojc i;
-    private final Float j;
-    private final oom k;
-    private final ojc l;
-    private final ojc m;
-    private final ojc n;
-    private final ojc o;
-    private final ojc p;
-    private final boolean q;
-    private final ojc r;
-    private final ojc s;
-    private final ojc t;
-    private final ojc u;
-    private final ojc v;
-    private final ojc w;
-    private final ojc x;
-    private final ojc y;
-    private final ojc z;
+    private ojc A;
+    public nmf a;
+    public nlf b;
+    public nmd c;
+    public ojc d;
+    public ojc e;
+    public ojc f;
+    public ojc g;
+    public ojc h;
+    public ojc i;
+    private Float j;
+    private oom k;
+    private ojc l;
+    private ojc m;
+    private ojc n;
+    private ojc o;
+    private ojc p;
+    private boolean q;
+    private ojc r;
+    private ojc s;
+    private ojc t;
+    private ojc u;
+    private ojc v;
+    private ojc w;
+    private ojc x;
+    private ojc y;
+    private ojc z;
 
     static {
         Collections.singleton(nlf.CONTACT);
@@ -151,7 +151,7 @@ public final class nme {
         return nmcVar;
     }
 
-    public final boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         if (obj == this) {
             return true;
         }
@@ -164,11 +164,11 @@ public final class nme {
         return false;
     }
 
-    public final int hashCode() {
+    public int hashCode() {
         return ((((((((((((((((((((((((((((((((((((((((((((((((((((this.a.hashCode() ^ 1000003) * 1000003) ^ this.b.hashCode()) * 1000003) ^ this.c.hashCode()) * 1000003) ^ this.j.hashCode()) * 1000003) ^ this.k.hashCode()) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ this.d.hashCode()) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ (true != this.q ? 1237 : 1231)) * 1000003) ^ this.e.hashCode()) * 1000003) ^ this.f.hashCode()) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ this.g.hashCode()) * 1000003) ^ this.h.hashCode()) * 1000003) ^ this.i.hashCode()) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332) * 1000003) ^ 2040732332;
     }
 
-    public final String toString() {
+    public String toString() {
         String valueOf = String.valueOf(this.a);
         String valueOf2 = String.valueOf(this.b);
         String valueOf3 = String.valueOf(this.c);

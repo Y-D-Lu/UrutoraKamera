@@ -129,10 +129,12 @@ public final class dtg implements drc {
                     j = this.b[f(i)];
                 }
             }
-            StringBuilder sb = new StringBuilder(46);
-            sb.append("Attempting to access illegal index ");
-            sb.append(i);
-            throw new IndexOutOfBoundsException(sb.toString());
+            if (true) {
+                StringBuilder sb = new StringBuilder(46);
+                sb.append("Attempting to access illegal index ");
+                sb.append(i);
+                throw new IndexOutOfBoundsException(sb.toString());
+            }
         }
         return j;
     }

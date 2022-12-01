@@ -27,7 +27,7 @@ final class ber implements bac {
         if (obj != null) {
             try {
                 this.b.c(obj);
-            } catch (IOException e) {
+            } catch (Exception e) {
             }
         }
     }
@@ -38,7 +38,7 @@ final class ber implements bac {
             Object b = this.b.b(this.a);
             this.c = b;
             babVar.b(b);
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             babVar.e(e);
         }
     }

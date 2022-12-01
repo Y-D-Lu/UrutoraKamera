@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: cck  reason: default package */
 /* loaded from: classes2.dex */
 public final class cck {
-    public final String a;
-    public final oom b;
-    public final cbr c;
+    public String a;
+    public oom b;
+    public cbr c;
 
     public cck() {
     }

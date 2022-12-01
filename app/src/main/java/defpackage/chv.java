@@ -216,12 +216,9 @@ public final class chv implements chx {
                 }
                 throw th;
             }
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             float f = pointF.x;
             float f2 = pointF.y;
-        } catch (llv e2) {
-            float f3 = pointF.x;
-            float f4 = pointF.y;
         }
     }
 }

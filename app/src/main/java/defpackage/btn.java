@@ -22,7 +22,7 @@ public final /* synthetic */ class btn implements Runnable {
                 try {
                     btpVar.h();
                     return;
-                } catch (InterruptedException e) {
+                } catch (Exception e) {
                     btpVar.b.post(new btn(btpVar, i, 1));
                     return;
                 }

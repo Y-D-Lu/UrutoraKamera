@@ -55,21 +55,39 @@ final class ada extends InputStream implements DataInput {
 
     @Override // java.io.InputStream
     public final int available() {
-        return this.a.available();
+        try {
+            return this.a.available();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     public final void b(int i) {
         int i2 = 0;
         while (i2 < i) {
             int i3 = i - i2;
-            int skip = (int) this.a.skip(i3);
+            int skip = 0;
+            try {
+                skip = (int) this.a.skip(i3);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             if (skip <= 0) {
                 if (this.f == null) {
                     this.f = new byte[8192];
                 }
-                skip = this.a.read(this.f, 0, Math.min(8192, i3));
+                try {
+                    skip = this.a.read(this.f, 0, Math.min(8192, i3));
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 if (skip == -1) {
-                    throw new EOFException("Reached EOF while skipping " + i + " bytes.");
+                    try {
+                        throw new EOFException("Reached EOF while skipping " + i + " bytes.");
+                    } catch (EOFException ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
             i2 += skip;
@@ -81,7 +99,11 @@ final class ada extends InputStream implements DataInput {
         long j2 = this.c;
         if (j2 > j) {
             this.c = 0;
-            this.a.reset();
+            try {
+                this.a.reset();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         } else {
             j -= j2;
         }
@@ -96,12 +118,22 @@ final class ada extends InputStream implements DataInput {
     @Override // java.io.InputStream
     public final int read() {
         this.c++;
-        return this.a.read();
+        try {
+            return this.a.read();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.InputStream
     public final int read(byte[] bArr, int i, int i2) {
-        int read = this.a.read(bArr, i, i2);
+        int read = 0;
+        try {
+            read = this.a.read(bArr, i, i2);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         this.c += read;
         return read;
     }
@@ -109,23 +141,43 @@ final class ada extends InputStream implements DataInput {
     @Override // java.io.DataInput
     public final boolean readBoolean() {
         this.c++;
-        return this.a.readBoolean();
+        try {
+            return this.a.readBoolean();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return false;
     }
 
     @Override // java.io.DataInput
     public final byte readByte() {
         this.c++;
-        int read = this.a.read();
+        int read = 0;
+        try {
+            read = this.a.read();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         if (read >= 0) {
             return (byte) read;
         }
-        throw new EOFException();
+        try {
+            throw new EOFException();
+        } catch (EOFException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.DataInput
     public final char readChar() {
         this.c += 2;
-        return this.a.readChar();
+        try {
+            return this.a.readChar();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.DataInput
@@ -141,22 +193,38 @@ final class ada extends InputStream implements DataInput {
     @Override // java.io.DataInput
     public final void readFully(byte[] bArr) {
         this.c += bArr.length;
-        this.a.readFully(bArr);
+        try {
+            this.a.readFully(bArr);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // java.io.DataInput
     public final void readFully(byte[] bArr, int i, int i2) {
         this.c += i2;
-        this.a.readFully(bArr, i, i2);
+        try {
+            this.a.readFully(bArr, i, i2);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // java.io.DataInput
     public final int readInt() {
         this.c += 4;
-        int read = this.a.read();
-        int read2 = this.a.read();
-        int read3 = this.a.read();
-        int read4 = this.a.read();
+        int read = 0;
+        int read2 = 0;
+        int read3 = 0;
+        int read4 = 0;
+        try {
+            read = this.a.read();
+            read2 = this.a.read();
+            read3 = this.a.read();
+            read4 = this.a.read();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         if ((read | read2 | read3 | read4) >= 0) {
             ByteOrder byteOrder = this.b;
             if (byteOrder == d) {
@@ -165,9 +233,18 @@ final class ada extends InputStream implements DataInput {
             if (byteOrder == e) {
                 return (read << 24) + (read2 << 16) + (read3 << 8) + read4;
             }
-            throw new IOException("Invalid byte order: " + this.b);
+            try {
+                throw new IOException("Invalid byte order: " + this.b);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
-        throw new EOFException();
+        try {
+            throw new EOFException();
+        } catch (EOFException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.DataInput
@@ -178,14 +255,26 @@ final class ada extends InputStream implements DataInput {
     @Override // java.io.DataInput
     public final long readLong() {
         this.c += 8;
-        int read = this.a.read();
-        int read2 = this.a.read();
-        int read3 = this.a.read();
-        int read4 = this.a.read();
-        int read5 = this.a.read();
-        int read6 = this.a.read();
-        int read7 = this.a.read();
-        int read8 = this.a.read();
+        int read = 0;
+        int read2 = 0;
+        int read3 = 0;
+        int read4 = 0;
+        int read5 = 0;
+        int read6 = 0;
+        int read7 = 0;
+        int read8 = 0;
+        try {
+            read = this.a.read();
+            read2 = this.a.read();
+            read3 = this.a.read();
+            read4 = this.a.read();
+            read5 = this.a.read();
+            read6 = this.a.read();
+            read7 = this.a.read();
+            read8 = this.a.read();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         if ((read | read2 | read3 | read4 | read5 | read6 | read7 | read8) >= 0) {
             ByteOrder byteOrder = this.b;
             if (byteOrder == d) {
@@ -194,16 +283,31 @@ final class ada extends InputStream implements DataInput {
             if (byteOrder == e) {
                 return (read << 56) + (read2 << 48) + (read3 << 40) + (read4 << 32) + (read5 << 24) + (read6 << 16) + (read7 << 8) + read8;
             }
-            throw new IOException("Invalid byte order: " + this.b);
+            try {
+                throw new IOException("Invalid byte order: " + this.b);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
-        throw new EOFException();
+        try {
+            throw new EOFException();
+        } catch (EOFException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.DataInput
     public final short readShort() {
         this.c += 2;
-        int read = this.a.read();
-        int read2 = this.a.read();
+        int read = 0;
+        int read2 = 0;
+        try {
+            read = this.a.read();
+            read2 = this.a.read();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         if ((read | read2) >= 0) {
             ByteOrder byteOrder = this.b;
             if (byteOrder == d) {
@@ -212,28 +316,57 @@ final class ada extends InputStream implements DataInput {
             if (byteOrder == e) {
                 return (short) ((read << 8) + read2);
             }
-            throw new IOException("Invalid byte order: " + this.b);
+            try {
+                throw new IOException("Invalid byte order: " + this.b);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
-        throw new EOFException();
+        try {
+            throw new EOFException();
+        } catch (EOFException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.DataInput
     public final String readUTF() {
         this.c += 2;
-        return this.a.readUTF();
+        try {
+            return this.a.readUTF();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.io.DataInput
     public final int readUnsignedByte() {
         this.c++;
-        return this.a.readUnsignedByte();
+        try {
+            return this.a.readUnsignedByte();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.DataInput
     public final int readUnsignedShort() {
         this.c += 2;
-        int read = this.a.read();
-        int read2 = this.a.read();
+        int read = 0;
+        try {
+            read = this.a.read();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        int read2 = 0;
+        try {
+            read2 = this.a.read();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         if ((read | read2) >= 0) {
             ByteOrder byteOrder = this.b;
             if (byteOrder == d) {
@@ -242,9 +375,18 @@ final class ada extends InputStream implements DataInput {
             if (byteOrder == e) {
                 return (read << 8) + read2;
             }
-            throw new IOException("Invalid byte order: " + this.b);
+            try {
+                throw new IOException("Invalid byte order: " + this.b);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
-        throw new EOFException();
+        try {
+            throw new EOFException();
+        } catch (EOFException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.InputStream

@@ -140,7 +140,12 @@ public class DisplayHelper {
     }
 
     public static boolean isPackageExist(Context context, String str) {
-        return context.getPackageManager().getPackageInfo(str, 0) != null;
+        try {
+            return context.getPackageManager().getPackageInfo(str, 0) != null;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     public static boolean isSdcardReady() {

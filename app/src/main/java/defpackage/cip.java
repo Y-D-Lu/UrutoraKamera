@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.PipedInputStream;
 import java.nio.ByteBuffer;
 
@@ -24,7 +25,12 @@ final class cip extends PipedInputStream {
             nihVar.a = new byte[i];
         }
         byte[] bArr2 = nihVar.a;
-        int read = read(bArr2, 0, bArr2.length);
+        int read = 0;
+        try {
+            read = read(bArr2, 0, bArr2.length);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read <= 0) {
             return null;
         }
@@ -39,7 +45,11 @@ final class cip extends PipedInputStream {
         int i = 0;
         while (a > 0) {
             int i2 = i + 1;
-            receive(array[i]);
+            try {
+                receive(array[i]);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             notifyAll();
             int i3 = a - 1;
             if (this.in > this.out) {

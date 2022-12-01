@@ -8,7 +8,6 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Looper;
 import android.os.Parcel;
-import android.os.RemoteException;
 import android.util.Log;
 import android.util.SparseArray;
 
@@ -18,7 +17,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import defpackage.bmp;
 import defpackage.poy;
-import defpackage.pxj;
 import defpackage.pxr;
 import defpackage.pxs;
 import defpackage.pxu;
@@ -81,7 +79,7 @@ public class ControllerServiceBridge implements ServiceConnection {
         this.k = new pye(this, 0);
         try {
             i3 = VrCoreUtils.getVrCoreClientApiVersion(context);
-        } catch (pxj e) {
+        } catch (Exception e) {
         }
         this.j = i3;
         int incrementAndGet = i.incrementAndGet();
@@ -111,7 +109,7 @@ public class ControllerServiceBridge implements ServiceConnection {
             boolean f = bmp.f(y);
             y.recycle();
             return f;
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.w("VrCtl.ServiceBridge", "RemoteException while registering listener.", e);
             return false;
         }
@@ -133,7 +131,7 @@ public class ControllerServiceBridge implements ServiceConnection {
                 Parcel y = pydVar.y(6, a);
                 bmp.f(y);
                 y.recycle();
-            } catch (RemoteException e) {
+            } catch (Exception e) {
                 Log.w("VrCtl.ServiceBridge", "RemoteException while unregistering listeners.", e);
             }
         }
@@ -151,7 +149,7 @@ public class ControllerServiceBridge implements ServiceConnection {
                         Log.w("VrCtl.ServiceBridge", "Failed to unregister remote service listener.");
                     }
                 }
-            } catch (RemoteException e2) {
+            } catch (Exception e2) {
                 String valueOf = String.valueOf(e2);
                 StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 55);
                 sb.append("Exception while unregistering remote service listener: ");
@@ -190,7 +188,7 @@ public class ControllerServiceBridge implements ServiceConnection {
             a.writeInt(i2);
             bmp.c(a, pxxVar);
             pydVar.z(11, a);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.w("VrCtl.ServiceBridge", "RemoteException while vibrating the controller.", e);
         }
     }
@@ -306,7 +304,7 @@ public class ControllerServiceBridge implements ServiceConnection {
                             a();
                             return;
                         }
-                    } catch (RemoteException e) {
+                    } catch (Exception e) {
                         String valueOf2 = String.valueOf(e);
                         StringBuilder sb2 = new StringBuilder(String.valueOf(valueOf2).length() + 53);
                         sb2.append("Exception while registering remote service listener: ");
@@ -315,7 +313,7 @@ public class ControllerServiceBridge implements ServiceConnection {
                     }
                 }
                 b();
-            } catch (RemoteException e2) {
+            } catch (Exception e2) {
                 Log.e("VrCtl.ServiceBridge", "Failed to call initialize() on controller service (RemoteException).", e2);
                 this.e.a.f();
                 a();

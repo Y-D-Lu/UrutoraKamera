@@ -3,12 +3,12 @@ package defpackage;
 /* renamed from: cvg  reason: default package */
 /* loaded from: classes.dex */
 public final class cvg {
-    public final int a;
-    public final int b;
-    public final int c;
-    public final lwd d;
-    public final int e;
-    public final int f;
+    public int a;
+    public int b;
+    public int c;
+    public lwd d;
+    public int e;
+    public int f;
 
     public cvg() {
     }

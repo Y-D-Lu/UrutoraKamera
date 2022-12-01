@@ -5,9 +5,9 @@ import android.widget.ImageView;
 /* renamed from: dfj  reason: default package */
 /* loaded from: classes2.dex */
 public final class dfj {
-    public final ImageView a;
-    public final ImageView b;
-    public final ImageView c;
+    public ImageView a;
+    public ImageView b;
+    public ImageView c;
 
     public dfj() {
     }

@@ -69,7 +69,7 @@ public final class aur extends awr {
                     this.k++;
                 }
             }
-        } catch (CameraAccessException e) {
+        } catch (Exception e) {
             axp.b(a, "Could not get device listing from camera subsystem", e);
         }
     }

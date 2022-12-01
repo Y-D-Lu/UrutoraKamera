@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.Externalizable;
+import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 import java.util.ArrayList;
@@ -25,42 +26,50 @@ public final class nhe implements Externalizable {
 
     @Override // java.io.Externalizable
     public final void readExternal(ObjectInput objectInput) {
-        this.a = objectInput.readUTF();
-        this.b = objectInput.readUTF();
-        int readInt = objectInput.readInt();
-        for (int i = 0; i < readInt; i++) {
-            this.c.add(objectInput.readUTF());
+        try {
+            this.a = objectInput.readUTF();
+            this.b = objectInput.readUTF();
+            int readInt = objectInput.readInt();
+            for (int i = 0; i < readInt; i++) {
+                this.c.add(objectInput.readUTF());
+            }
+            if (objectInput.readBoolean()) {
+                String readUTF = objectInput.readUTF();
+                this.g = true;
+                this.d = readUTF;
+            }
+            if (objectInput.readBoolean()) {
+                String readUTF2 = objectInput.readUTF();
+                this.h = true;
+                this.f = readUTF2;
+            }
+            this.e = objectInput.readBoolean();
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
-        if (objectInput.readBoolean()) {
-            String readUTF = objectInput.readUTF();
-            this.g = true;
-            this.d = readUTF;
-        }
-        if (objectInput.readBoolean()) {
-            String readUTF2 = objectInput.readUTF();
-            this.h = true;
-            this.f = readUTF2;
-        }
-        this.e = objectInput.readBoolean();
     }
 
     @Override // java.io.Externalizable
     public final void writeExternal(ObjectOutput objectOutput) {
-        objectOutput.writeUTF(this.a);
-        objectOutput.writeUTF(this.b);
-        int a = a();
-        objectOutput.writeInt(a);
-        for (int i = 0; i < a; i++) {
-            objectOutput.writeUTF((String) this.c.get(i));
+        try {
+            objectOutput.writeUTF(this.a);
+            objectOutput.writeUTF(this.b);
+            int a = a();
+            objectOutput.writeInt(a);
+            for (int i = 0; i < a; i++) {
+                objectOutput.writeUTF((String) this.c.get(i));
+            }
+            objectOutput.writeBoolean(this.g);
+            if (this.g) {
+                objectOutput.writeUTF(this.d);
+            }
+            objectOutput.writeBoolean(this.h);
+            if (this.h) {
+                objectOutput.writeUTF(this.f);
+            }
+            objectOutput.writeBoolean(this.e);
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
-        objectOutput.writeBoolean(this.g);
-        if (this.g) {
-            objectOutput.writeUTF(this.d);
-        }
-        objectOutput.writeBoolean(this.h);
-        if (this.h) {
-            objectOutput.writeUTF(this.f);
-        }
-        objectOutput.writeBoolean(this.e);
     }
 }

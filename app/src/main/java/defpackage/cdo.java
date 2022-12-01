@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: cdo  reason: default package */
 /* loaded from: classes.dex */
 public final class cdo {
-    public final lmr a;
-    public final lnx b;
+    public lmr a;
+    public lnx b;
 
     public cdo() {
     }

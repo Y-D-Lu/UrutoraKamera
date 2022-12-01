@@ -4,7 +4,6 @@ import android.media.MediaExtractor;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.Arrays;
@@ -25,9 +24,9 @@ public final class fpc {
     public final void a(mak makVar) {
         ojc ojcVar;
         Throwable th;
-        mlj mljVar;
-        mlh mlhVar;
-        mle mleVar;
+        mlj mljVar = null;
+        mlh mlhVar = null;
+        mle mleVar = null;
         FileInputStream fileInputStream;
         oom o;
         if (this.b == fpr.FRAMEWORK) {
@@ -179,9 +178,13 @@ public final class fpc {
                     th = th5;
                     th = th;
                     fileInputStream2.close();
-                    throw th;
+                    try {
+                        throw th;
+                    } catch (Throwable e) {
+                        e.printStackTrace();
+                    }
                 }
-            } catch (IOException | mli e3) {
+            } catch (Exception e3) {
                 ((oug) ((oug) ((oug) a.b()).h(e3)).G((char) 1835)).o("Couldn't apply MP4 fix");
             }
         }

@@ -3,6 +3,7 @@ package com.SDE;
 import android.app.AppGlobals;
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.widget.Toast;
 
@@ -1202,7 +1203,12 @@ public class LibPatcher {
 
     public Context getAppContext() {
         Application initialApplication = AppGlobals.getInitialApplication();
-        return initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        try {
+            return initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public boolean loadCustomLib(Context context) {

@@ -3,11 +3,11 @@ package defpackage;
 /* renamed from: jar  reason: default package */
 /* loaded from: classes.dex */
 public final class jar {
-    public final boolean a;
-    public final boolean b;
-    public final boolean c;
-    public final lco d;
-    public final lco e;
+    public boolean a;
+    public boolean b;
+    public boolean c;
+    public lco d;
+    public lco e;
 
     public jar() {
     }

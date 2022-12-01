@@ -7,11 +7,11 @@ import java.util.Set;
 /* renamed from: bph  reason: default package */
 /* loaded from: classes.dex */
 public final class bph implements bnf {
-    private final lap a;
-    private final jxb b;
-    private final jwz c;
-    private final bmt d;
-    private final /* synthetic */ int e;
+    private lap a;
+    private jxb b;
+    private jwz c;
+    private bmt d;
+    private /* synthetic */ int e;
 
     public bph(bmt bmtVar, mbg mbgVar, final bnl bnlVar, bnv bnvVar, jxb jxbVar, jwz jwzVar, lar larVar, Set set, jxh jxhVar, kas kasVar, jac jacVar, iud iudVar, ddf ddfVar, dmh dmhVar, bmq bmqVar, lvp lvpVar, lco lcoVar, lco lcoVar2, boolean z, int i, byte[] bArr, byte[] bArr2, byte[] bArr3) {
         bnw bnwVar;

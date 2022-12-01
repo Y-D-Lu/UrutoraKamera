@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.OutputStream;
 
 /* renamed from: asy  reason: default package */
@@ -14,19 +15,31 @@ public final class asy extends OutputStream {
 
     @Override // java.io.OutputStream
     public final void write(int i) {
-        this.b.write(i);
+        try {
+            this.b.write(i);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.a++;
     }
 
     @Override // java.io.OutputStream
     public final void write(byte[] bArr) {
-        this.b.write(bArr);
+        try {
+            this.b.write(bArr);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.a += bArr.length;
     }
 
     @Override // java.io.OutputStream
     public final void write(byte[] bArr, int i, int i2) {
-        this.b.write(bArr, i, i2);
+        try {
+            this.b.write(bArr, i, i2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.a += i2;
     }
 }

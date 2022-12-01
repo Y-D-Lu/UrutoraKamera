@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.content.pm.PackageManager;
 import android.media.CamcorderProfile;
 
 import java.util.HashMap;
@@ -25,8 +26,12 @@ public final class cjp {
         for (lep lepVar : lep.values()) {
             leb lebVar = lepVar.l;
             if (CamcorderProfile.hasProfile(Integer.parseInt(lvsVar.a), lepVar.k)) {
-                if (this.a.d(mip.bE(lvsVar, lepVar), ldzVar, lebVar)) {
-                    linkedList.addFirst(lebVar);
+                try {
+                    if (this.a.d(mip.bE(lvsVar, lepVar), ldzVar, lebVar)) {
+                        linkedList.addFirst(lebVar);
+                    }
+                } catch (PackageManager.NameNotFoundException e) {
+                    e.printStackTrace();
                 }
             }
         }

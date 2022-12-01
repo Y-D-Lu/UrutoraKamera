@@ -4,6 +4,6 @@ package defpackage;
 /* renamed from: ci  reason: default package */
 /* loaded from: classes.dex */
 public final class ci {
-    final boolean a;
-    final d b;
+    boolean a;
+    d b;
 }

@@ -44,7 +44,7 @@ public final class avq extends axh {
             awuVar = awu.values()[0];
         } else {
             try {
-                awuVar = awu.a(hq.c(flashMode));
+                awuVar = awu.valueOf(hq.c(flashMode));
             } catch (IllegalArgumentException e) {
                 awuVar = awu.values()[0];
             }
@@ -55,7 +55,7 @@ public final class avq extends axh {
             awvVar = awv.values()[0];
         } else {
             try {
-                awvVar = awv.a(hq.c(focusMode));
+                awvVar = awv.valueOf(hq.c(focusMode));
             } catch (IllegalArgumentException e2) {
                 awvVar = awv.values()[0];
             }
@@ -66,7 +66,7 @@ public final class avq extends axh {
             awwVar = aww.values()[0];
         } else {
             try {
-                awwVar = aww.a(hq.c(sceneMode));
+                awwVar = aww.valueOf(hq.c(sceneMode));
             } catch (IllegalArgumentException e3) {
                 awwVar = aww.values()[0];
             }

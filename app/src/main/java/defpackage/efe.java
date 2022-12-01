@@ -7,11 +7,11 @@ import java.util.Arrays;
 /* renamed from: efe  reason: default package */
 /* loaded from: classes.dex */
 public final class efe {
-    public final byte[] a;
-    public final byte[] b;
-    public final byte[] c;
-    private final long d;
-    private final long e;
+    public byte[] a;
+    public byte[] b;
+    public byte[] c;
+    private long d;
+    private long e;
 
     public efe() {
     }

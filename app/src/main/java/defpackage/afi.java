@@ -33,10 +33,15 @@ final class afi implements Callable {
             th = th3;
             try {
                 this.a.d.set(true);
-                throw th;
+                try {
+                    throw th;
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
             } finally {
                 this.a.d(obj);
             }
         }
+        return null;
     }
 }

@@ -5,18 +5,18 @@ import java.io.File;
 /* renamed from: ckv  reason: default package */
 /* loaded from: classes.dex */
 public final class ckv {
-    public final llz a;
-    public final File b;
-    public final hsc c;
-    public final hsg d;
-    public final lig e;
-    public final long f;
-    public final int g;
-    public final hsq h;
-    private final ojc i;
-    private final mbs j;
-    private final int k;
-    private final long l;
+    public llz a;
+    public File b;
+    public hsc c;
+    public hsg d;
+    public lig e;
+    public long f;
+    public int g;
+    public hsq h;
+    private ojc i;
+    private mbs j;
+    private int k;
+    private long l;
 
     public ckv() {
     }

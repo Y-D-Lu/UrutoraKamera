@@ -8,9 +8,9 @@ import android.hardware.camera2.params.Face;
 /* renamed from: dov  reason: default package */
 /* loaded from: classes.dex */
 public final class dov {
-    public final oom a;
-    public final float b;
-    private final long c;
+    public oom a;
+    public float b;
+    private long c;
 
     public dov() {
     }

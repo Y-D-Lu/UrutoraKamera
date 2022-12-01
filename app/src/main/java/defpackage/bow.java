@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: bow  reason: default package */
 /* loaded from: classes.dex */
 public final class bow {
-    public final oom a;
-    public final oom b;
-    public final int c;
-    public final int d;
+    public oom a;
+    public oom b;
+    public int c;
+    public int d;
 
     public bow() {
     }

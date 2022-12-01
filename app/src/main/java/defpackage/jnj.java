@@ -6,9 +6,9 @@ import android.view.Surface;
 /* renamed from: jnj  reason: default package */
 /* loaded from: classes2.dex */
 public final class jnj {
-    public final Surface a;
-    public final int b;
-    public final Size c;
+    public Surface a;
+    public int b;
+    public Size c;
 
     public jnj() {
     }

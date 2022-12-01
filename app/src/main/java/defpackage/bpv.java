@@ -5,8 +5,8 @@ import android.graphics.Rect;
 /* renamed from: bpv  reason: default package */
 /* loaded from: classes.dex */
 public final class bpv {
-    public final int a;
-    public final Rect b;
+    public int a;
+    public Rect b;
 
     public bpv() {
     }

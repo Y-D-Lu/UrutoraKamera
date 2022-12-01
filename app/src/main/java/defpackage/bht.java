@@ -101,7 +101,7 @@ public final class bht extends FilterInputStream {
     }
 
     private static IOException d() {
-        throw new IOException("BufferedInputStream is closed");
+        return new IOException("BufferedInputStream is closed");
     }
 
     public final synchronized void a() {
@@ -113,9 +113,18 @@ public final class bht extends FilterInputStream {
         InputStream inputStream;
         inputStream = this.in;
         if (this.a == null || inputStream == null) {
-            throw d();
+            try {
+                throw d();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
-        return (this.b - this.e) + inputStream.available();
+        try {
+            return (this.b - this.e) + inputStream.available();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     public final synchronized void b() {
@@ -134,7 +143,11 @@ public final class bht extends FilterInputStream {
         InputStream inputStream = this.in;
         this.in = null;
         if (inputStream != null) {
-            inputStream.close();
+            try {
+                inputStream.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -154,13 +167,21 @@ public final class bht extends FilterInputStream {
         byte[] bArr = this.a;
         InputStream inputStream = this.in;
         if (bArr == null || inputStream == null) {
-            throw d();
+            try {
+                throw d();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
         if (this.e >= this.b && c(inputStream, bArr) == -1) {
             return -1;
         }
         if (bArr != this.a && (bArr = this.a) == null) {
-            throw d();
+            try {
+                throw d();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
         int i = this.b;
         int i2 = this.e;
@@ -174,7 +195,7 @@ public final class bht extends FilterInputStream {
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final synchronized int read(byte[] bArr, int i, int i2) {
         int i3;
-        int i4;
+        int i4 = 0;
         byte[] bArr2 = this.a;
         if (bArr2 != null) {
             if (i2 == 0) {
@@ -182,7 +203,11 @@ public final class bht extends FilterInputStream {
             }
             InputStream inputStream = this.in;
             if (inputStream == null) {
-                throw d();
+                try {
+                    throw d();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
             int i5 = this.e;
             int i6 = this.b;
@@ -193,8 +218,12 @@ public final class bht extends FilterInputStream {
                 }
                 System.arraycopy(bArr2, i5, bArr, i, i7);
                 this.e += i7;
-                if (i7 == i2 || inputStream.available() == 0) {
-                    return i7;
+                try {
+                    if (i7 == i2 || inputStream.available() == 0) {
+                        return i7;
+                    }
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
                 i += i7;
                 i3 = i2 - i7;
@@ -203,7 +232,11 @@ public final class bht extends FilterInputStream {
             }
             while (true) {
                 if (this.d == -1 && i3 >= bArr2.length) {
-                    i4 = inputStream.read(bArr, i, i3);
+                    try {
+                        i4 = inputStream.read(bArr, i, i3);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                     if (i4 == -1) {
                         if (i3 == i2) {
                             return -1;
@@ -217,7 +250,11 @@ public final class bht extends FilterInputStream {
                     return -1;
                 } else {
                     if (bArr2 != this.a && (bArr2 = this.a) == null) {
-                        throw d();
+                        try {
+                            throw d();
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     int i8 = this.b;
                     int i9 = this.e;
@@ -231,21 +268,36 @@ public final class bht extends FilterInputStream {
                 i3 -= i4;
                 if (i3 == 0) {
                     break;
-                } else if (inputStream.available() == 0) {
-                    return i2 - i3;
                 } else {
-                    i += i4;
+                    try {
+                        if (inputStream.available() == 0) {
+                            return i2 - i3;
+                        } else {
+                            i += i4;
+                        }
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
             return i2;
         }
-        throw d();
+        try {
+            throw d();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final synchronized void reset() {
         if (this.a == null) {
-            throw new IOException("Stream is closed");
+            try {
+                throw new IOException("Stream is closed");
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
         int i = this.d;
         if (i == -1) {
@@ -256,7 +308,11 @@ public final class bht extends FilterInputStream {
             sb.append(i2);
             sb.append(" markLimit: ");
             sb.append(i3);
-            throw new bhs(sb.toString());
+            try {
+                throw new bhs(sb.toString());
+            } catch (bhs ex) {
+                ex.printStackTrace();
+            }
         }
         this.e = i;
     }
@@ -268,11 +324,19 @@ public final class bht extends FilterInputStream {
         }
         byte[] bArr = this.a;
         if (bArr == null) {
-            throw d();
+            try {
+                throw d();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
         InputStream inputStream = this.in;
         if (inputStream == null) {
-            throw d();
+            try {
+                throw d();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
         int i = this.b;
         int i2 = this.e;
@@ -283,7 +347,12 @@ public final class bht extends FilterInputStream {
         long j2 = i - i2;
         this.e = i;
         if (this.d == -1 || j > this.c) {
-            long skip = inputStream.skip(j - j2);
+            long skip = 0;
+            try {
+                skip = inputStream.skip(j - j2);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             if (skip > 0) {
                 this.d = -1;
             }

@@ -24,7 +24,7 @@ public final class ay extends dd implements cs {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(int i) {
-        dc dcVar;
+        dc dcVar = null;
         if (!this.j) {
             return;
         }

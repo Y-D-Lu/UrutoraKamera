@@ -3,6 +3,7 @@ package com.SDE;
 import android.app.AppGlobals;
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 
 /* loaded from: classes.dex */
@@ -15,7 +16,13 @@ public class GetMenuValues {
 
     public static Context getAppContext() {
         Application initialApplication = AppGlobals.getInitialApplication();
-        return initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        try {
+            return initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
+
     }
 
     public static Double getDouble(String str) {
@@ -60,7 +67,12 @@ public class GetMenuValues {
 
     public static String getString(String str) {
         Application initialApplication = AppGlobals.getInitialApplication();
-        Context applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        Context applicationContext = null;
+        try {
+            applicationContext = initialApplication.createPackageContext(initialApplication.getPackageName(), 1).getApplicationContext();
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         return PreferenceManager.getDefaultSharedPreferences(applicationContext).contains(str) ? PreferenceManager.getDefaultSharedPreferences(applicationContext).getString(str, null) : "0";
     }
 }

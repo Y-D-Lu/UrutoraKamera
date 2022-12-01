@@ -5,10 +5,10 @@ import com.google.android.apps.camera.bottombar.R;
 /* renamed from: cdh  reason: default package */
 /* loaded from: classes2.dex */
 public final class cdh {
-    public final float a;
-    public final float b;
-    private final float c;
-    private final float d;
+    public float a;
+    public float b;
+    private float c;
+    private float d;
 
     public cdh() {
     }

@@ -3,13 +3,13 @@ package defpackage;
 /* renamed from: bzs  reason: default package */
 /* loaded from: classes.dex */
 final class bzs {
-    public final long a;
-    public final long b;
-    public final int c;
-    public final int d;
-    public final int e;
-    public final float f;
-    public final pud g;
+    public long a;
+    public long b;
+    public int c;
+    public int d;
+    public int e;
+    public float f;
+    public pud g;
 
     public bzs() {
     }

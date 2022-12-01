@@ -32,7 +32,11 @@ final class ayx {
             StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 26);
             sb.append("not a readable directory: ");
             sb.append(valueOf);
-            throw new IOException(sb.toString());
+            try {
+                throw new IOException(sb.toString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         for (File file2 : listFiles) {
             if (file2.isDirectory()) {
@@ -43,7 +47,11 @@ final class ayx {
                 StringBuilder sb2 = new StringBuilder(String.valueOf(valueOf2).length() + 23);
                 sb2.append("failed to delete file: ");
                 sb2.append(valueOf2);
-                throw new IOException(sb2.toString());
+                try {
+                    throw new IOException(sb2.toString());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }

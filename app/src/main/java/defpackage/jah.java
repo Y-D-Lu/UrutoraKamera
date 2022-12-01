@@ -63,7 +63,7 @@ public final class jah extends TracedFrameLayout {
                     try {
                         ((jac) jagVar).i = ((lnc) jacVar.g.c()).c();
                         ((jac) jagVar).b(true, ((jac) jagVar).i, false, false);
-                    } catch (InterruptedException | llv e) {
+                    } catch (Exception e) {
                         throw new AssertionError("Unhandled exception");
                     }
                 }

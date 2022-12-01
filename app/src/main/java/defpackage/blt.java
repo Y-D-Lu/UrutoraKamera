@@ -30,18 +30,31 @@ public final class blt extends FilterInputStream {
         sb.append(j);
         sb.append(", but read: ");
         sb.append(i2);
-        throw new IOException(sb.toString());
+        try {
+            throw new IOException(sb.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final synchronized int available() {
-        return (int) Math.max(this.a - this.b, this.in.available());
+        try {
+            return (int) Math.max(this.a - this.b, this.in.available());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final synchronized int read() {
-        int read;
-        read = super.read();
+        int read = 0;
+        try {
+            read = super.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         a(read >= 0 ? 1 : -1);
         return read;
     }
@@ -53,8 +66,12 @@ public final class blt extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final synchronized int read(byte[] bArr, int i, int i2) {
-        int read;
-        read = super.read(bArr, i, i2);
+        int read = 0;
+        try {
+            read = super.read(bArr, i, i2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         a(read);
         return read;
     }

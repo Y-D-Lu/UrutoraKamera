@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: dwp  reason: default package */
 /* loaded from: classes.dex */
 public final class dwp {
-    public final int a;
-    public final oom b;
-    public final float c;
+    public int a;
+    public oom b;
+    public float c;
 
     public dwp() {
     }

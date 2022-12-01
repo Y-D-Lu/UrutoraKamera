@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: ccj  reason: default package */
 /* loaded from: classes2.dex */
 public final class ccj {
-    public final String a;
-    public final String b;
+    public String a;
+    public String b;
 
     public ccj() {
     }

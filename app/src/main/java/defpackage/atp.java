@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -163,7 +164,11 @@ public final class atp {
                         }
                     }
                     if (z5 && z6) {
-                        throw new ass("Can't mix rdf:resource qualifier and element fields", 202);
+                        try {
+                            throw new ass("Can't mix rdf:resource qualifier and element fields", 202);
+                        } catch (ass ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     if (!atlVar2.s()) {
                         d(" rdf:parseType=\"Resource\"/>");
@@ -280,7 +285,11 @@ public final class atp {
                 while (h2.hasNext()) {
                     atl atlVar3 = (atl) h2.next();
                     if (!m(atlVar3)) {
-                        throw new ass("Can't mix rdf:resource and complex fields", 202);
+                        try {
+                            throw new ass("Can't mix rdf:resource and complex fields", 202);
+                        } catch (ass ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     f();
                     e(i + 1);
@@ -305,7 +314,11 @@ public final class atp {
                 z3 = true;
             }
         } else if (z5) {
-            throw new ass("Can't mix rdf:resource and general qualifiers", 202);
+            try {
+                throw new ass("Can't mix rdf:resource and general qualifiers", 202);
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
         } else {
             d(" rdf:parseType=\"Resource\">");
             f();
@@ -332,22 +345,38 @@ public final class atp {
     }
 
     public final void c(int i) {
-        this.d.write(i);
+        try {
+            this.d.write(i);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public final void d(String str) {
-        this.d.write(str);
+        try {
+            this.d.write(str);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public final void e(int i) {
         while (i > 0) {
-            this.d.write(this.e.d);
+            try {
+                this.d.write(this.e.d);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             i--;
         }
     }
 
     public final void f() {
-        this.d.write(this.e.c);
+        try {
+            this.d.write(this.e.c);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public final void g() {
@@ -402,7 +431,11 @@ public final class atp {
 
     public final void j(int i) {
         while (i > 0) {
-            this.d.write(32);
+            try {
+                this.d.write(32);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             i--;
         }
     }

@@ -28,6 +28,11 @@ public final class ahv extends qmb implements qmy {
     public final Object invokeSuspend(Object obj) {
         qlp qlpVar = qlp.COROUTINE_SUSPENDED;
         qmd.M(obj);
-        return this.a.call();
+        try {
+            return this.a.call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

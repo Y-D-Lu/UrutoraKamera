@@ -62,7 +62,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import java.util.Collection;
 import overwhelmer.simplified_lol;
 
 /* renamed from: pkr  reason: default package */
@@ -715,7 +714,7 @@ public final class pkr {
             }
             return spatialGainMap;
         }
-        return SpatialGainMapValue.getSpatialGainMap(lzvVar);
+        return SpatialGainMapValue.getSpatialGainMap(null); // lzvVar
     }
 
     public final void u(FrameRequest frameRequest, lzv lzvVar, gzs gzsVar) {

@@ -5,7 +5,7 @@ import android.view.WindowInsets;
 /* renamed from: gr  reason: default package */
 /* loaded from: classes.dex */
 public final class gr {
-    final WindowInsets.Builder a;
+    WindowInsets.Builder a;
 
     public gr() {
     }

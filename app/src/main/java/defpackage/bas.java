@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.provider.ContactsContract;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 
 /* renamed from: bas  reason: default package */
@@ -39,20 +40,28 @@ public final class bas extends bao {
 
     @Override // defpackage.bao
     protected final /* bridge */ /* synthetic */ Object b(Uri uri, ContentResolver contentResolver) {
-        InputStream e;
+        InputStream e = null;
         switch (a.match(uri)) {
             case 1:
             case 5:
                 Uri lookupContact = ContactsContract.Contacts.lookupContact(contentResolver, uri);
                 if (lookupContact == null) {
-                    throw new FileNotFoundException("Contact cannot be found");
+                    try {
+                        throw new FileNotFoundException("Contact cannot be found");
+                    } catch (FileNotFoundException ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 e = e(contentResolver, lookupContact);
                 break;
             case 2:
             case 4:
             default:
-                e = contentResolver.openInputStream(uri);
+                try {
+                    e = contentResolver.openInputStream(uri);
+                } catch (FileNotFoundException ex) {
+                    ex.printStackTrace();
+                }
                 break;
             case 3:
                 e = e(contentResolver, uri);
@@ -65,11 +74,20 @@ public final class bas extends bao {
         StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 24);
         sb.append("InputStream is null for ");
         sb.append(valueOf);
-        throw new FileNotFoundException(sb.toString());
+        try {
+            throw new FileNotFoundException(sb.toString());
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.bao
     protected final /* synthetic */ void c(Object obj) {
-        ((InputStream) obj).close();
+        try {
+            ((InputStream) obj).close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

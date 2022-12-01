@@ -43,7 +43,7 @@ public final class ajz implements DatabaseErrorHandler {
             }
             try {
                 b.close();
-            } catch (IOException e2) {
+            } catch (Exception e2) {
             }
             if (list != null) {
                 for (Pair<String, String> pair2 : list) {

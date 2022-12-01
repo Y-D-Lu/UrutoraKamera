@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: dcb  reason: default package */
 /* loaded from: classes.dex */
 public final class dcb {
-    public final int a;
-    public final iax b;
+    public int a;
+    public iax b;
 
     public dcb() {
     }

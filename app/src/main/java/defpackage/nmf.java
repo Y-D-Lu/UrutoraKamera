@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: nmf  reason: default package */
 /* loaded from: classes2.dex */
 public final class nmf {
-    public final String a;
-    public final ojc b;
+    public String a;
+    public ojc b;
 
     public nmf() {
     }

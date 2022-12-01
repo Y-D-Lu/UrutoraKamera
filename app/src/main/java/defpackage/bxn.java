@@ -3,11 +3,13 @@ package defpackage;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /* renamed from: bxn  reason: default package */
 /* loaded from: classes.dex */
@@ -28,7 +30,12 @@ public final class bxn implements ScheduledExecutorService {
 
     @Override // java.util.concurrent.ExecutorService
     public final boolean awaitTermination(long j, TimeUnit timeUnit) {
-        return this.d.awaitTermination(j, timeUnit);
+        try {
+            return this.d.awaitTermination(j, timeUnit);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override // java.util.concurrent.Executor
@@ -39,25 +46,51 @@ public final class bxn implements ScheduledExecutorService {
     @Override // java.util.concurrent.ExecutorService
     public final List invokeAll(Collection collection) {
         a("invokeAll(1)");
-        return this.d.invokeAll(collection);
+        try {
+            return this.d.invokeAll(collection);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final List invokeAll(Collection collection, long j, TimeUnit timeUnit) {
         a("invokeAll(2)");
-        return this.d.invokeAll(collection, j, timeUnit);
+        try {
+            return this.d.invokeAll(collection, j, timeUnit);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final Object invokeAny(Collection collection) {
         a("invokeAny(1)");
-        return this.d.invokeAny(collection);
+        try {
+            return this.d.invokeAny(collection);
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final Object invokeAny(Collection collection, long j, TimeUnit timeUnit) {
         a("invokeAny(2)");
-        return this.d.invokeAny(collection, j, timeUnit);
+        try {
+            return this.d.invokeAny(collection, j, timeUnit);
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.ExecutorService

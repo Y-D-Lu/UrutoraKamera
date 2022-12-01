@@ -99,6 +99,9 @@ public final class bdd implements bcv {
                     d = ((bdj) bdeVar).f.d(num.intValue(), config2);
                 }
             }
+            if (false) {
+                break;
+            }
         }
         bitmap = (Bitmap) ((bdj) bdeVar).g.a(d);
         if (bitmap != null) {

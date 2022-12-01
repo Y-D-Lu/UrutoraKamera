@@ -6,10 +6,10 @@ import android.graphics.RectF;
 /* renamed from: dpb  reason: default package */
 /* loaded from: classes.dex */
 public final class dpb {
-    private final RectF a;
-    private final PointF b;
-    private final PointF c;
-    private final float d;
+    private RectF a;
+    private PointF b;
+    private PointF c;
+    private float d;
 
     public dpb() {
     }

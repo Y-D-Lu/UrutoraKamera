@@ -54,6 +54,10 @@ public enum ldz {
         return this.i / this.j;
     }
 
+    public static ldz c(String str) {
+        return (ldz) Enum.valueOf(ldz.class, str);
+    }
+
     public final boolean e() {
         return this == FPS_60C_24E || this == FPS_60C_30E;
     }

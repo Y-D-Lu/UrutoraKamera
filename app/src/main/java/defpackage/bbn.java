@@ -1,6 +1,5 @@
 package defpackage;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +41,7 @@ public final class bbn {
                 if (azvVar.b(baeVar.a(), aztVar)) {
                     bclVar = azvVar.a(baeVar.a(), i, i2, aztVar);
                 }
-            } catch (IOException | OutOfMemoryError | RuntimeException e) {
+            } catch (/*IOException | */OutOfMemoryError | RuntimeException e) {
                 list.add(e);
             }
             if (bclVar != null) {
@@ -52,7 +51,12 @@ public final class bbn {
         if (bclVar != null) {
             return bclVar;
         }
-        throw new bcg(this.e, new ArrayList(list));
+        try {
+            throw new bcg(this.e, new ArrayList(list));
+        } catch (bcg ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     public final String toString() {

@@ -97,7 +97,7 @@ final class cis implements lxl {
                 cir cirVar = this.c;
                 try {
                     lgpVar = cirVar.b.a(byteBuffer, i);
-                } catch (IOException e) {
+                } catch (Exception e) {
                     ((oug) ((oug) ((oug) cir.a.b()).h(e)).G((char) 427)).o("Failed to read audio packet from audio piped input stream.");
                 }
                 cirVar.a();

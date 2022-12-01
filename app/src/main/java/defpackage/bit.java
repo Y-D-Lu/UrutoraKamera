@@ -13,7 +13,7 @@ public final class bit implements azw {
         try {
             blr.e(((bis) ((bcl) obj).c()).b(), file);
             return true;
-        } catch (IOException e) {
+        } catch (Exception e) {
             if (!Log.isLoggable("GifEncoder", 5)) {
                 return false;
             }

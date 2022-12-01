@@ -22,7 +22,11 @@ final class bhv implements bhd {
             if (bitmap != null) {
                 bcvVar.d(bitmap);
             }
-            throw iOException;
+            try {
+                throw iOException;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

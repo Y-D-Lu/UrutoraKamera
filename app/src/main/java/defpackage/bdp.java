@@ -33,7 +33,7 @@ public final class bdp implements bdk {
                 return null;
             }
             return a.a();
-        } catch (IOException e) {
+        } catch (Exception e) {
             if (!Log.isLoggable("DiskLruCacheWrapper", 5)) {
                 return null;
             }
@@ -46,7 +46,7 @@ public final class bdp implements bdk {
     public final void b(azp azpVar, bbf bbfVar) {
         bdm bdmVar;
         bdn bdnVar;
-        ayu c;
+        ayu c = null;
         String a = this.a.a(azpVar);
         bdn bdnVar2 = this.c;
         synchronized (bdnVar2) {
@@ -67,7 +67,7 @@ public final class bdp implements bdk {
         try {
             try {
                 c = c();
-            } catch (IOException e) {
+            } catch (Exception e) {
                 if (Log.isLoggable("DiskLruCacheWrapper", 5)) {
                     Log.w("DiskLruCacheWrapper", "Unable to put to disk cache", e);
                 }

@@ -31,7 +31,12 @@ public final class adg {
             qlhVar.getClass();
             return g;
         }
-        return callable.call();
+        try {
+            return callable.call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static final Object c(aii aiiVar, Callable callable, qlh qlhVar) {
@@ -43,7 +48,12 @@ public final class adg {
             }
             return qmd.k(qljVar, new ahv(callable, null), qlhVar);
         }
-        return callable.call();
+        try {
+            return callable.call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static hss d(cle cleVar) {

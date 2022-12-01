@@ -4,9 +4,9 @@ package defpackage;
 /* renamed from: czo  reason: default package */
 /* loaded from: classes.dex */
 public final class czo {
-    public final long a;
-    public final ojc b;
-    public final ojc c;
+    public long a;
+    public ojc b;
+    public ojc c;
 
     public czo() {
     }

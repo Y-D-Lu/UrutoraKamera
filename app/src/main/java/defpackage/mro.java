@@ -5,9 +5,9 @@ import java.nio.ByteBuffer;
 /* renamed from: mro  reason: default package */
 /* loaded from: classes2.dex */
 public final class mro {
-    public final ByteBuffer a;
-    public final int b;
-    public final long c;
+    public ByteBuffer a;
+    public int b;
+    public long c;
 
     public mro() {
     }

@@ -6,7 +6,7 @@ public class QcColorCalibration {
     protected transient boolean b;
 
     /* loaded from: classes2.dex */
-    public class IlluminantData {
+    public static class IlluminantData {
         public transient long a;
         protected transient boolean b;
 

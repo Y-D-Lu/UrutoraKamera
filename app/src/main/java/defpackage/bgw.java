@@ -42,7 +42,7 @@ public final class bgw implements azg {
                 bguVar.c(21L);
                 try {
                     return bguVar.d() >= 3 ? ImageHeaderParser$ImageType.PNG_A : ImageHeaderParser$ImageType.PNG;
-                } catch (bgt e) {
+                } catch (Exception e) {
                     return ImageHeaderParser$ImageType.PNG;
                 }
             } else if (d2 != 1380533830) {
@@ -67,7 +67,7 @@ public final class bgw implements azg {
                     return (bguVar.d() & 8) != 0 ? ImageHeaderParser$ImageType.WEBP_A : ImageHeaderParser$ImageType.WEBP;
                 }
             }
-        } catch (bgt e2) {
+        } catch (Exception e2) {
             return ImageHeaderParser$ImageType.UNKNOWN;
         }
     }

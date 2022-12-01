@@ -89,6 +89,9 @@ public final class nmc {
                     if (it.hasNext()) {
                         ((PointF) it.next()).getClass();
                     }
+                    if (true) {
+                        break;
+                    }
                 }
                 i2 = i;
             }

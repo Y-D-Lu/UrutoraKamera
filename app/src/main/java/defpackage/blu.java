@@ -22,12 +22,21 @@ public final class blu extends InputStream {
 
     @Override // java.io.InputStream
     public final int available() {
-        return this.b.available();
+        try {
+            return this.b.available();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        this.b.close();
+        try {
+            this.b.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // java.io.InputStream
@@ -46,8 +55,13 @@ public final class blu extends InputStream {
             return this.b.read();
         } catch (IOException e) {
             this.c = e;
-            throw e;
+            try {
+                throw e;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 
     @Override // java.io.InputStream
@@ -56,8 +70,13 @@ public final class blu extends InputStream {
             return this.b.read(bArr);
         } catch (IOException e) {
             this.c = e;
-            throw e;
+            try {
+                throw e;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 
     @Override // java.io.InputStream
@@ -66,13 +85,22 @@ public final class blu extends InputStream {
             return this.b.read(bArr, i, i2);
         } catch (IOException e) {
             this.c = e;
-            throw e;
+            try {
+                throw e;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 
     @Override // java.io.InputStream
     public final synchronized void reset() {
-        this.b.reset();
+        try {
+            this.b.reset();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // java.io.InputStream
@@ -81,7 +109,12 @@ public final class blu extends InputStream {
             return this.b.skip(j);
         } catch (IOException e) {
             this.c = e;
-            throw e;
+            try {
+                throw e;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 }

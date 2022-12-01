@@ -7,25 +7,25 @@ import java.text.DateFormat;
 /* renamed from: mbj  reason: default package */
 /* loaded from: classes2.dex */
 public final class mbj {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final int g;
-    public final boolean h;
-    public final boolean i;
-    public final DateFormat j;
-    public final Context k;
-    public final String l;
-    public final String m;
-    public final String n;
-    public final mcc o;
-    public final boolean p;
-    public final long q;
-    public final long r;
-    private final oor s;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public int g;
+    public boolean h;
+    public boolean i;
+    public DateFormat j;
+    public Context k;
+    public String l;
+    public String m;
+    public String n;
+    public mcc o;
+    public boolean p;
+    public long q;
+    public long r;
+    private oor s;
 
     public mbj() {
     }
@@ -52,7 +52,7 @@ public final class mbj {
         this.r = j2;
     }
 
-    public final boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         if (obj == this) {
             return true;
         }
@@ -65,7 +65,7 @@ public final class mbj {
         return false;
     }
 
-    public final int hashCode() {
+    public int hashCode() {
         int i = 1237;
         int hashCode = (((((((((((((((((((((((((((((((this.a.hashCode() ^ 1000003) * 1000003) ^ this.b.hashCode()) * 1000003) ^ this.c.hashCode()) * 1000003) ^ this.d.hashCode()) * 1000003) ^ this.e.hashCode()) * 1000003) ^ this.f.hashCode()) * 1000003) ^ this.g) * 1000003) ^ (true != this.h ? 1237 : 1231)) * 1000003) ^ (true != this.i ? 1237 : 1231)) * 1000003) ^ this.j.hashCode()) * 1000003) ^ this.s.hashCode()) * 1000003) ^ this.k.hashCode()) * 1000003) ^ this.l.hashCode()) * 1000003) ^ this.m.hashCode()) * 1000003) ^ this.n.hashCode()) * 1000003) ^ this.o.hashCode()) * 1000003;
         if (true == this.p) {
@@ -76,7 +76,7 @@ public final class mbj {
         return ((((hashCode ^ i) * 1000003) ^ ((int) (j ^ (j >>> 32)))) * 1000003) ^ ((int) ((j2 >>> 32) ^ j2));
     }
 
-    public final String toString() {
+    public String toString() {
         String str = this.a;
         String str2 = this.b;
         String str3 = this.c;

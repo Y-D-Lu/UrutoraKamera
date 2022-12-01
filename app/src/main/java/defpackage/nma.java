@@ -5,14 +5,14 @@ import com.google.android.apps.camera.bottombar.R;
 /* renamed from: nma  reason: default package */
 /* loaded from: classes2.dex */
 public final class nma {
-    public final ojc a;
-    public final oom b;
-    public final oom c;
-    public final ojc d;
-    public final ojc e;
-    public final ojc f;
-    public final ojc g;
-    private final oom h;
+    public ojc a;
+    public oom b;
+    public oom c;
+    public ojc d;
+    public ojc e;
+    public ojc f;
+    public ojc g;
+    private oom h;
 
     public nma() {
     }

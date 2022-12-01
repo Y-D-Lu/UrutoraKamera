@@ -36,7 +36,12 @@ final class ays {
 
     public static final IOException e(String[] strArr) {
         String valueOf = String.valueOf(Arrays.toString(strArr));
-        throw new IOException(valueOf.length() != 0 ? "unexpected journal line: ".concat(valueOf) : new String("unexpected journal line: "));
+        try {
+            throw new IOException(valueOf.length() != 0 ? "unexpected journal line: ".concat(valueOf) : new String("unexpected journal line: "));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return new IOException(valueOf.length() != 0 ? "unexpected journal line: ".concat(valueOf) : new String("unexpected journal line: "));
     }
 
     public final String a() {

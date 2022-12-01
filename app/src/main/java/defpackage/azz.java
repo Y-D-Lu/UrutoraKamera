@@ -24,7 +24,8 @@ public abstract class azz implements bac {
         if (obj != null) {
             try {
                 e(obj);
-            } catch (IOException e) {
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }
@@ -37,7 +38,7 @@ public abstract class azz implements bac {
             Object b = b(this.b, this.a);
             this.c = b;
             babVar.b(b);
-        } catch (IOException e) {
+        } catch (Exception e) {
             babVar.e(e);
         }
     }

@@ -52,22 +52,36 @@ public final class VrCoreUtils {
                     }
                 }
             }
-            return context.getPackageManager().getApplicationInfo("com.google.vr.vrcore", 8192).enabled ? 3 : 1;
+            try {
+                return context.getPackageManager().getApplicationInfo("com.google.vr.vrcore", 8192).enabled ? 3 : 1;
+            } catch (PackageManager.NameNotFoundException ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 
     public static int getVrCoreClientApiVersion(Context context) {
         try {
             ApplicationInfo applicationInfo = context.getPackageManager().getApplicationInfo("com.google.vr.vrcore", 128);
             if (!applicationInfo.enabled) {
-                throw new pxj(2);
+                try {
+                    throw new pxj(2);
+                } catch (pxj e) {
+                    e.printStackTrace();
+                }
             }
             if (applicationInfo.metaData == null) {
                 return 0;
             }
             return applicationInfo.metaData.getInt("com.google.vr.vrcore.ClientApiVersion", 0);
         } catch (PackageManager.NameNotFoundException e) {
-            throw new pxj(a(context));
+            try {
+                throw new pxj(a(context));
+            } catch (pxj ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 }

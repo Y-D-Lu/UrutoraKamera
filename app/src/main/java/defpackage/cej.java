@@ -5,9 +5,9 @@ import android.net.Uri;
 /* renamed from: cej  reason: default package */
 /* loaded from: classes.dex */
 public final class cej {
-    public final String a;
-    public final boolean b;
-    private final Uri c;
+    public String a;
+    public boolean b;
+    private Uri c;
 
     public cej() {
     }

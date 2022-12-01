@@ -3,11 +3,11 @@ package defpackage;
 /* renamed from: iaf  reason: default package */
 /* loaded from: classes.dex */
 public final class iaf {
-    public final int a;
-    public final int b;
-    public final iax c;
-    public final jrl d;
-    public final float e;
+    public int a;
+    public int b;
+    public iax c;
+    public jrl d;
+    public float e;
 
     public iaf() {
     }

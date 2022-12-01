@@ -1,5 +1,7 @@
 package defpackage;
 
+import android.content.pm.PackageManager;
+
 /* renamed from: leu  reason: default package */
 /* loaded from: classes2.dex */
 public final class leu implements leo {
@@ -17,7 +19,12 @@ public final class leu implements leo {
             case 0:
                 lep a3 = lep.a(lebVar);
                 a3.getClass();
-                les bE = mip.bE(lvsVar, a3);
+                les bE = null;
+                try {
+                    bE = mip.bE(lvsVar, a3);
+                } catch (PackageManager.NameNotFoundException e) {
+                    e.printStackTrace();
+                }
                 int bF = mip.bF(bE.g, lebVar, z, ojcVar);
                 if (z) {
                     ler b = les.b(bE);

@@ -8,12 +8,12 @@ import com.hdrindicator.DisplayHelper;
 /* renamed from: itz  reason: default package */
 /* loaded from: classes.dex */
 public final class itz {
-    public final itr a;
-    public final RectF b;
-    public final float c;
-    public final int d;
-    public final long e;
-    public final int f;
+    public itr a;
+    public RectF b;
+    public float c;
+    public int d;
+    public long e;
+    public int f;
 
     public itz() {
     }

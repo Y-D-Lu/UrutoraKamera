@@ -27,7 +27,7 @@ public final class dv {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static dv b(int i) {
         float f;
-        double d;
+        double d = 0;
         ej ejVar = ej.a;
         float a = dw.a(Color.red(i));
         float a2 = dw.a(Color.green(i));
@@ -142,10 +142,10 @@ public final class dv {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int a(ej ejVar) {
-        double d;
-        double d2;
-        double d3;
-        double d4;
+        double d = 0.0;
+        double d2 = 0.0;
+        double d3 = 0.0;
+        double d4 = 0.0;
         float f = this.b;
         float f2 = DisplayHelper.DENSITY;
         if (f != 0.0d) {

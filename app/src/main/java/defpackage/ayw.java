@@ -4,6 +4,7 @@ import java.io.Closeable;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -33,13 +34,22 @@ public final class ayw implements Closeable {
         InputStream inputStream = this.c;
         byte[] bArr = this.d;
         int length = bArr.length;
-        int read = inputStream.read(bArr, 0, 8192);
+        int read = 0;
+        try {
+            read = inputStream.read(bArr, 0, 8192);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         if (read != -1) {
             this.e = 0;
             this.b = read;
             return;
         }
-        throw new EOFException();
+        try {
+            throw new EOFException();
+        } catch (EOFException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public final String a() {
@@ -85,21 +95,36 @@ public final class ayw implements Closeable {
                             i2 = i3 - 1;
                             if (bArr3[i2] != 13) {
                             }
-                            String str = new String(bArr3, i7, i2 - i7, this.a.name());
+                            String str = null;
+                            try {
+                                str = new String(bArr3, i7, i2 - i7, this.a.name());
+                            } catch (UnsupportedEncodingException ex) {
+                                ex.printStackTrace();
+                            }
                             this.e = i3 + 1;
                             return str;
                         }
                         i2 = i3;
-                        String str2 = new String(bArr3, i7, i2 - i7, this.a.name());
+                        String str2 = null;
+                        try {
+                            str2 = new String(bArr3, i7, i2 - i7, this.a.name());
+                        } catch (UnsupportedEncodingException ex) {
+                            ex.printStackTrace();
+                        }
                         this.e = i3 + 1;
                         return str2;
                     }
                     i3++;
                 }
             } else {
-                throw new IOException("LineReader is closed");
+                try {
+                    throw new IOException("LineReader is closed");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
         }
+        return null;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -107,7 +132,11 @@ public final class ayw implements Closeable {
         synchronized (this.c) {
             if (this.d != null) {
                 this.d = null;
-                this.c.close();
+                try {
+                    this.c.close();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }

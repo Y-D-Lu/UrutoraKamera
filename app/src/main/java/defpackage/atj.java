@@ -35,7 +35,7 @@ public final class atj {
     }
 
     public static ast a(Object obj) {
-        Document b2;
+        Document b2 = null;
         gj.d(obj);
         atw atwVar = new atw();
         if (obj instanceof InputStream) {
@@ -43,8 +43,12 @@ public final class atj {
             if (atwVar.b() || atwVar.c()) {
                 try {
                     b2 = c(new asx(inputStream), atwVar);
-                } catch (IOException e) {
-                    throw new ass("Error reading the XML-file", 204, e);
+                } catch (Exception e) {
+                    try {
+                        throw new ass("Error reading the XML-file", 204, e);
+                    } catch (ass ex) {
+                        ex.printStackTrace();
+                    }
                 }
             } else {
                 b2 = b(new InputSource(inputStream));
@@ -53,14 +57,14 @@ public final class atj {
             b2 = c(new asx((byte[]) obj), atwVar);
         } else {
             String str = (String) obj;
-            try {
+//            try {
                 b2 = b(new InputSource(new StringReader(str)));
-            } catch (ass e2) {
-                if (e2.a != 201 || !atwVar.c()) {
-                    throw e2;
-                }
-                b2 = b(new InputSource(new asz(new StringReader(str))));
-            }
+//            } catch (ass e2) {
+//                if (e2.a != 201 || !atwVar.c()) {
+//                    throw e2;
+//                }
+//                b2 = b(new InputSource(new asz(new StringReader(str))));
+//            }
         }
         Object[] d = d(b2, atwVar.h(1), new Object[3]);
         if (d == null || d[1] != a) {
@@ -69,7 +73,11 @@ public final class atj {
         Node node = (Node) d[0];
         ati atiVar = new ati();
         if (!node.hasAttributes()) {
-            throw new ass("Invalid attributes of rdf:RDF element", 202);
+            try {
+                throw new ass("Invalid attributes of rdf:RDF element", 202);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         atl atlVar = atiVar.a;
         for (int i = 0; i < node.getChildNodes().getLength(); i++) {
@@ -80,7 +88,11 @@ public final class atj {
         }
         String str2 = (String) d[2];
         if (!atwVar.h(32)) {
-            atm.a(atiVar, atwVar);
+            try {
+                atm.a(atiVar, atwVar);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         return atiVar;
     }
@@ -91,22 +103,36 @@ public final class atj {
             newDocumentBuilder.setErrorHandler(null);
             return newDocumentBuilder.parse(inputSource);
         } catch (IOException e) {
-            throw new ass("Error reading the XML-file", 204, e);
+            try {
+                throw new ass("Error reading the XML-file", 204, e);
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
         } catch (ParserConfigurationException e2) {
-            throw new ass("XML Parser not correctly configured", 0, e2);
+            try {
+                throw new ass("XML Parser not correctly configured", 0, e2);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         } catch (SAXException e3) {
-            throw new ass("XML parsing failure", 201, e3);
+            try {
+                throw new ass("XML parsing failure", 201, e3);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
+        return null;
     }
 
     private static Document c(asx asxVar, atw atwVar) {
         try {
             return b(new InputSource(asxVar.a()));
-        } catch (ass e) {
-            int i = e.a;
-            if (i != 201 && i != 204) {
-                throw e;
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
+//            int i = e.a;
+//            if (i != 201 && i != 204) {
+//                throw e;
+//            }
             if (atwVar.b() && "UTF-8".equals(asxVar.b())) {
                 byte[] bArr = new byte[8];
                 asx asxVar2 = new asx((asxVar.b * 4) / 3);
@@ -181,9 +207,14 @@ public final class atj {
             try {
                 return b(new InputSource(new asz(new InputStreamReader(asxVar.a(), asxVar.b()))));
             } catch (UnsupportedEncodingException e2) {
-                throw new ass("Unsupported Encoding", 9, e);
+                try {
+                    throw new ass("Unsupported Encoding", 9, e);
+                } catch (ass ex) {
+                    ex.printStackTrace();
+                }
             }
         }
+        return null;
     }
 
     private static Object[] d(Node node, boolean z, Object[] objArr) {

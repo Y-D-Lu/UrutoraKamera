@@ -5,10 +5,10 @@ import com.google.android.apps.camera.bottombar.R;
 /* renamed from: igz  reason: default package */
 /* loaded from: classes.dex */
 public final class igz {
-    public final int a;
-    public final int b;
-    public final double c;
-    public final int d;
+    public int a;
+    public int b;
+    public double c;
+    public int d;
 
     public igz() {
     }

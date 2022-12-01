@@ -15,8 +15,12 @@ public final class efc implements efh {
 
     private static void c(ByteArrayOutputStream byteArrayOutputStream, String str, byte[] bArr) {
         if (bArr != null) {
-            byteArrayOutputStream.write(str.getBytes());
-            byteArrayOutputStream.write(bArr);
+            try {
+                byteArrayOutputStream.write(str.getBytes());
+                byteArrayOutputStream.write(bArr);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -36,7 +40,7 @@ public final class efc implements efh {
         }
         try {
             return ojc.i(d((efe) a2.c()));
-        } catch (IOException e) {
+        } catch (Exception e) {
             ((oug) ((oug) a.c()).G((char) 1119)).r("Ignoring unexpected exception %s", e);
             return oih.a;
         }

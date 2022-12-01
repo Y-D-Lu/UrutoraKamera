@@ -101,7 +101,7 @@ public final class ato {
             d("http://ns.adobe.com/png/1.0/", "ModificationTime", "http://ns.adobe.com/xap/1.0/", "ModifyDate", null);
             d("http://ns.adobe.com/png/1.0/", "Software", "http://ns.adobe.com/xap/1.0/", "CreatorTool", null);
             d("http://ns.adobe.com/png/1.0/", "Title", "http://purl.org/dc/elements/1.1/", "title", attVar2);
-        } catch (ass e) {
+        } catch (Exception e) {
             throw new RuntimeException("The XMPSchemaRegistry cannot be initialized!");
         }
     }
@@ -122,7 +122,11 @@ public final class ato {
     public final synchronized String c(String str, String str2) {
         gj.f(str);
         if (str2 == null || str2.length() == 0) {
-            throw new ass("Empty prefix", 4);
+            try {
+                throw new ass("Empty prefix", 4);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         int i = 1;
         if (str2.charAt(str2.length() - 1) != ':') {
@@ -132,7 +136,11 @@ public final class ato {
             str2 = sb.toString();
         }
         if (!atb.f(str2.substring(0, str2.length() - 1))) {
-            throw new ass("The prefix is a bad XML name", 201);
+            try {
+                throw new ass("The prefix is a bad XML name", 201);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         String str3 = (String) this.a.get(str);
         String str4 = (String) this.b.get(str2);
@@ -165,22 +173,42 @@ public final class ato {
         gj.e(str4);
         att attVar2 = attVar != null ? new att(gk.h(attVar.b(), null).a) : new att();
         if (this.d.matcher(str2).find() || this.d.matcher(str4).find()) {
-            throw new ass("Alias and actual property names must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+            try {
+                throw new ass("Alias and actual property names must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         String a = a(str);
         String a2 = a(str3);
         if (a == null) {
-            throw new ass("Alias namespace is not registered", R.styleable.AppCompatTheme_switchStyle);
+            try {
+                throw new ass("Alias namespace is not registered", R.styleable.AppCompatTheme_switchStyle);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         if (a2 == null) {
-            throw new ass("Actual namespace is not registered", R.styleable.AppCompatTheme_switchStyle);
+            try {
+                throw new ass("Actual namespace is not registered", R.styleable.AppCompatTheme_switchStyle);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         String concat = str2.length() != 0 ? a.concat(str2) : new String(a);
         if (this.c.containsKey(concat)) {
-            throw new ass("Alias is already existing", 4);
+            try {
+                throw new ass("Alias is already existing", 4);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         if (this.c.containsKey(str4.length() != 0 ? a2.concat(str4) : new String(a2))) {
-            throw new ass("Actual property is already an alias, use the base property", 4);
+            try {
+                throw new ass("Actual property is already an alias, use the base property", 4);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         this.c.put(concat, new atn(str3, a2, str4, attVar2));
     }

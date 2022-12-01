@@ -23,32 +23,56 @@ public final class bkv implements bkr, bkw {
         }
         if (!this.c) {
             if (this.e) {
-                throw new ExecutionException(this.f);
+                try {
+                    throw new ExecutionException(this.f);
+                } catch (ExecutionException ex) {
+                    ex.printStackTrace();
+                }
             }
             if (this.d) {
                 return this.a;
             }
             if (l == null) {
-                wait(0L);
+                try {
+                    wait(0L);
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
             } else if (l.longValue() > 0) {
                 long currentTimeMillis = System.currentTimeMillis();
                 long longValue = l.longValue() + currentTimeMillis;
                 while (!isDone() && currentTimeMillis < longValue) {
-                    wait(longValue - currentTimeMillis);
+                    try {
+                        wait(longValue - currentTimeMillis);
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
                     currentTimeMillis = System.currentTimeMillis();
                 }
             }
             if (Thread.interrupted()) {
-                throw new InterruptedException();
+                try {
+                    throw new InterruptedException();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
             }
             if (this.e) {
-                throw new ExecutionException(this.f);
+                try {
+                    throw new ExecutionException(this.f);
+                } catch (ExecutionException ex) {
+                    ex.printStackTrace();
+                }
             }
             if (this.c) {
                 throw new CancellationException();
             }
             if (!this.d) {
-                throw new TimeoutException();
+                try {
+                    throw new TimeoutException();
+                } catch (TimeoutException ex) {
+                    ex.printStackTrace();
+                }
             }
             return this.a;
         }
@@ -110,7 +134,7 @@ public final class bkv implements bkr, bkw {
     public final Object get() {
         try {
             return n(null);
-        } catch (TimeoutException e) {
+        } catch (Exception e) {
             throw new AssertionError(e);
         }
     }

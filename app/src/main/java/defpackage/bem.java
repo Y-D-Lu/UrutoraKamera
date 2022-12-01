@@ -26,7 +26,7 @@ final class bem implements bac {
     public final void f(ayc aycVar, bab babVar) {
         try {
             babVar.b(blr.b(this.a));
-        } catch (IOException e) {
+        } catch (Exception e) {
             babVar.e(e);
         }
     }

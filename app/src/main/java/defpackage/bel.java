@@ -12,7 +12,7 @@ public final class bel implements aze {
         try {
             blr.e((ByteBuffer) obj, file);
             return true;
-        } catch (IOException e) {
+        } catch (Exception e) {
             return false;
         }
     }

@@ -11,9 +11,9 @@ public final class ccl {
     private final ArrayList b;
 
     public ccl(ccu ccuVar, ccs ccsVar, int i) {
-        prl prlVar;
+        prl prlVar = null;
         long millis;
-        prl prlVar2;
+        prl prlVar2 = null;
         long millis2;
         ArrayList arrayList = new ArrayList();
         this.b = arrayList;

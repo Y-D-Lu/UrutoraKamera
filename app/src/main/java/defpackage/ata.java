@@ -44,7 +44,12 @@ public final class ata {
             }
             return 0;
         }
-        throw new ass(str, 5);
+        try {
+            throw new ass(str, 5);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     public final int d() {

@@ -3,11 +3,11 @@ package defpackage;
 /* renamed from: dwf  reason: default package */
 /* loaded from: classes.dex */
 public final class dwf {
-    public final long a;
-    public final float b;
-    public final ojc c;
-    public final float d;
-    private final ojc e;
+    public long a;
+    public float b;
+    public ojc c;
+    public float d;
+    private ojc e;
 
     public dwf() {
     }

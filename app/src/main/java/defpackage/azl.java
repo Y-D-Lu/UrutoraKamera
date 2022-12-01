@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 /* renamed from: azl  reason: default package */
@@ -18,7 +19,11 @@ public final class azl implements azn {
         try {
             return azgVar.a(this.a, this.b);
         } finally {
-            this.a.reset();
+            try {
+                this.a.reset();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

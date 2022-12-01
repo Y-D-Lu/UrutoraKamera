@@ -66,6 +66,7 @@ public final class bvp implements iho, fik, fii, fij {
             public final pht a() {
                 pht U;
                 bvp bvpVar = bvp.this;
+                ljf ljfVar = null;
                 try {
                     try {
                         bvpVar.c.e("bindPhotosService");
@@ -74,13 +75,13 @@ public final class bvp implements iho, fik, fii, fij {
                         intent.setClassName("com.google.android.apps.photos", "com.google.android.apps.photos.cameraassistant.CameraAssistantService");
                         bvpVar.b.bindService(intent, kwpVar, 5);
                         U = plk.V(kwpVar);
-                        bvpVar = bvpVar.c;
+                        ljfVar = bvpVar.c;
                     } catch (SecurityException e) {
                         ((oug) ((oug) ((oug) bvp.a.c()).h(e)).G(139)).o("Either Photos service does not exist or does not have permission to connect.");
                         U = plk.U(e);
-                        bvpVar = bvpVar.c;
+                        ljfVar = bvpVar.c;
                     }
-                    bvpVar.f();
+                    ljfVar.f();
                     return U;
                 } catch (Throwable th) {
                     bvpVar.c.f();

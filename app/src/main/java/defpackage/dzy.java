@@ -68,7 +68,7 @@ public final class dzy {
                     } catch (UnsupportedEncodingException e2) {
                         j = byteArrayOutputStream.toString();
                     }
-                } catch (ass e3) {
+                } catch (Exception e3) {
                 }
             } else {
                 defpackage.d.v(b.c(), "Extended XMP section not found to append slowraw directory", (char) 1015);
@@ -122,14 +122,23 @@ public final class dzy {
         File file2 = new File(new File(new File(file, "gcam"), d(j)), str);
         if (file2.exists()) {
             String valueOf2 = String.valueOf(file2.getAbsolutePath());
-            throw new IOException(valueOf2.length() != 0 ? "Gcam debug data folder already exists: ".concat(valueOf2) : new String("Gcam debug data folder already exists: "));
+            try {
+                throw new IOException(valueOf2.length() != 0 ? "Gcam debug data folder already exists: ".concat(valueOf2) : new String("Gcam debug data folder already exists: "));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else if (!file2.mkdirs()) {
             String valueOf3 = String.valueOf(file2.getAbsolutePath());
-            throw new IOException(valueOf3.length() != 0 ? "Could not create Gcam debug data folder: ".concat(valueOf3) : new String("Could not create Gcam debug data folder: "));
+            try {
+                throw new IOException(valueOf3.length() != 0 ? "Could not create Gcam debug data folder: ".concat(valueOf3) : new String("Could not create Gcam debug data folder: "));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
             file2.getAbsolutePath();
             return file2.getAbsolutePath();
         }
+        return null;
     }
 
     public final boolean e() {

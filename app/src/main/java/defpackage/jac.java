@@ -94,7 +94,7 @@ public final class jac implements jag {
             }
             lngVar.close();
             this.i = null;
-        } catch (CancellationException | llv e) {
+        } catch (CancellationException e/* | llv e*/) {
             ((oug) ((oug) ((oug) a.b()).h(e)).G(3232)).r("Countdown set torch failed: %s", e);
         }
     }

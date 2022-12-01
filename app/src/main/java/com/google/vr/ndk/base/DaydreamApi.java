@@ -86,7 +86,7 @@ public class DaydreamApi implements AutoCloseable {
                     }
                     Log.e("DaydreamApi", "Unable to bind to VrCoreSdkService");
                 }
-            } catch (pxj e) {
+            } catch (Exception e) {
                 String valueOf = String.valueOf(e);
                 StringBuilder sb2 = new StringBuilder(String.valueOf(valueOf).length() + 22);
                 sb2.append("VrCore not available: ");

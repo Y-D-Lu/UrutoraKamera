@@ -266,7 +266,11 @@ public final class atm {
                 if (str == null || str.length() == 0) {
                     h.remove();
                 } else {
-                    atlVar2.m(new atl("xml:lang", "x-repair", null));
+                    try {
+                        atlVar2.m(new atl("xml:lang", "x-repair", null));
+                    } catch (ass e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }

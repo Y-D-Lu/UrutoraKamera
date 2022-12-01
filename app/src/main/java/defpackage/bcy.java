@@ -46,7 +46,7 @@ final class bcy {
             }
             d(bcxVar);
             this.b.remove(bcxVar.a);
-            bcxVar.a.a();
+            ((bdf) (bcxVar.a)).a();
         }
         return null;
     }

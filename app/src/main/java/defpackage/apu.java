@@ -24,7 +24,7 @@ public final class apu extends aps {
     /* renamed from: a */
     public final apb b() {
         boolean z;
-        NetworkCapabilities networkCapabilities;
+        NetworkCapabilities networkCapabilities = null;
         NetworkInfo activeNetworkInfo = this.h.getActiveNetworkInfo();
         boolean z2 = true;
         boolean z3 = activeNetworkInfo != null && activeNetworkInfo.isConnected();

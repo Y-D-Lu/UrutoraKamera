@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: dwr  reason: default package */
 /* loaded from: classes.dex */
 public final class dwr {
-    public final int a;
-    public final float b;
-    public final ojc c;
-    public final float d;
+    public int a;
+    public float b;
+    public ojc c;
+    public float d;
 
     public dwr() {
     }

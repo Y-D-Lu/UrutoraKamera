@@ -8,11 +8,11 @@ import com.google.googlex.gcam.SpatialGainMap;
 /* renamed from: ecc  reason: default package */
 /* loaded from: classes.dex */
 final class ecc {
-    public final RawWriteView a;
-    public final FrameMetadata b;
-    public final SpatialGainMap c;
-    public final AeShotParams d;
-    public final float e;
+    public RawWriteView a;
+    public FrameMetadata b;
+    public SpatialGainMap c;
+    public AeShotParams d;
+    public float e;
 
     public ecc() {
     }

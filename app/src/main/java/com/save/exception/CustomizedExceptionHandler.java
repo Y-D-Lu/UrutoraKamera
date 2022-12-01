@@ -178,7 +178,12 @@ public class CustomizedExceptionHandler implements Thread.UncaughtExceptionHandl
 
     public Context ctx() {
         Application initialApplication = AppGlobals.getInitialApplication();
-        return initialApplication.createPackageContext(initialApplication.getPackageName(), 1);
+        try {
+            return initialApplication.createPackageContext(initialApplication.getPackageName(), 1);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public String current() {

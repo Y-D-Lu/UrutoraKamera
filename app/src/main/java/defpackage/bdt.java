@@ -10,7 +10,7 @@ public final class bdt {
     public final int c;
 
     public bdt(bds bdsVar) {
-        ActivityManager activityManager;
+        ActivityManager activityManager = null;
         int i = true != bdsVar.a.isLowRamDevice() ? 4194304 : 2097152;
         this.c = i;
         int round = Math.round(activityManager.getMemoryClass() * 1048576 * (true != bdsVar.a.isLowRamDevice() ? 0.4f : 0.33f));

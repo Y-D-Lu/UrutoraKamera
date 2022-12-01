@@ -4,6 +4,8 @@ import android.os.ParcelFileDescriptor;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 
 /* renamed from: bet  reason: default package */
@@ -29,20 +31,37 @@ public final class bet implements bes {
     public final /* synthetic */ Object b(File file) {
         switch (this.a) {
             case 0:
-                return new FileInputStream(file);
+                try {
+                    return new FileInputStream(file);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
             default:
-                return ParcelFileDescriptor.open(file, 268435456);
+                try {
+                    return ParcelFileDescriptor.open(file, 268435456);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
         }
+        return null;
     }
 
     @Override // defpackage.bes
     public final /* synthetic */ void c(Object obj) {
         switch (this.a) {
             case 0:
-                ((InputStream) obj).close();
+                try {
+                    ((InputStream) obj).close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 return;
             default:
-                ((ParcelFileDescriptor) obj).close();
+                try {
+                    ((ParcelFileDescriptor) obj).close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 return;
         }
     }

@@ -338,7 +338,7 @@ public final class aup extends axl {
     public final axh b() {
         try {
             return new aut(this.d, this.g, this.t, this.u);
-        } catch (CameraAccessException e) {
+        } catch (Exception e) {
             axp.a(aur.a, "Unable to query camera device to build settings representation");
             return null;
         }

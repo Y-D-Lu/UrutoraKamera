@@ -26,13 +26,10 @@ public final class aap {
     public static Object c(ExecutorService executorService, Callable callable, int i) {
         try {
             return executorService.submit(callable).get(i, TimeUnit.MILLISECONDS);
-        } catch (InterruptedException e) {
-            throw e;
-        } catch (ExecutionException e2) {
-            throw new RuntimeException(e2);
-        } catch (TimeoutException e3) {
-            throw new InterruptedException("timeout");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        return null;
     }
 
     public static Intent d(boolean z, boolean z2, boolean z3, long[] jArr) {

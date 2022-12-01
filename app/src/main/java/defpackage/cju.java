@@ -2,37 +2,37 @@ package defpackage;
 
 /* renamed from: cju  reason: default package */
 /* loaded from: classes.dex */
-public final class cju {
-    private final lda A;
-    private final lda B;
-    private final lco C;
-    private final lco D;
-    public final lda a;
-    public final lco b;
-    public final lda c;
-    public final lda d;
-    public final lda e;
-    public final lda f;
-    public final lda g;
-    public final lda h;
-    public final lda i;
-    public final ojc j;
-    public final lco k;
-    public final lco l;
-    public final lco m;
-    public final lco n;
-    public final lco o;
-    public final lco p;
-    public final lco q;
-    public final lco r;
-    public final gsn s;
-    private final Object t = new Object();
-    private final lda u;
-    private final lda v;
-    private final lda w;
-    private final lda x;
-    private final lda y;
-    private final lco z;
+public class cju {
+    private lda A;
+    private lda B;
+    private lco C;
+    private lco D;
+    public lda a;
+    public lco b;
+    public lda c;
+    public lda d;
+    public lda e;
+    public lda f;
+    public lda g;
+    public lda h;
+    public lda i;
+    public ojc j;
+    public lco k;
+    public lco l;
+    public lco m;
+    public lco n;
+    public lco o;
+    public lco p;
+    public lco q;
+    public lco r;
+    public gsn s;
+    private Object t = new Object();
+    private lda u;
+    private lda v;
+    private lda w;
+    private lda x;
+    private lda y;
+    private lco z;
 
     public cju() {
     }
@@ -69,7 +69,7 @@ public final class cju {
         this.s = gsnVar;
     }
 
-    public final void a(cjr cjrVar) {
+    public void a(cjr cjrVar) {
         synchronized (this.t) {
             if (cjrVar != ((lce) this.f).d) {
                 Object obj = ((lce) this.f).d;
@@ -78,7 +78,7 @@ public final class cju {
         }
     }
 
-    public final boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         if (obj == this) {
             return true;
         }
@@ -91,11 +91,11 @@ public final class cju {
         return false;
     }
 
-    public final int hashCode() {
+    public int hashCode() {
         return ((((((((((((((((((((((((((((((((((((((((((((((((((((((((this.a.hashCode() ^ 1000003) * 1000003) ^ this.b.hashCode()) * 1000003) ^ this.u.hashCode()) * 1000003) ^ this.v.hashCode()) * 1000003) ^ this.c.hashCode()) * 1000003) ^ this.d.hashCode()) * 1000003) ^ this.w.hashCode()) * 1000003) ^ this.x.hashCode()) * 1000003) ^ this.e.hashCode()) * 1000003) ^ this.y.hashCode()) * 1000003) ^ this.f.hashCode()) * 1000003) ^ this.z.hashCode()) * 1000003) ^ this.A.hashCode()) * 1000003) ^ this.B.hashCode()) * 1000003) ^ this.g.hashCode()) * 1000003) ^ this.h.hashCode()) * 1000003) ^ this.i.hashCode()) * 1000003) ^ this.j.hashCode()) * 1000003) ^ this.k.hashCode()) * 1000003) ^ this.l.hashCode()) * 1000003) ^ this.m.hashCode()) * 1000003) ^ this.n.hashCode()) * 1000003) ^ this.C.hashCode()) * 1000003) ^ this.D.hashCode()) * 1000003) ^ this.o.hashCode()) * 1000003) ^ this.p.hashCode()) * 1000003) ^ this.q.hashCode()) * 1000003) ^ this.r.hashCode()) * 1000003) ^ this.s.hashCode();
     }
 
-    public final String toString() {
+    public String toString() {
         String valueOf = String.valueOf(this.a);
         String valueOf2 = String.valueOf(this.b);
         String valueOf3 = String.valueOf(this.u);

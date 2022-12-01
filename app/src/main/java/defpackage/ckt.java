@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: ckt  reason: default package */
 /* loaded from: classes.dex */
 public final class ckt {
-    public final cle a;
-    public final int b;
+    public cle a;
+    public int b;
 
     public ckt() {
     }

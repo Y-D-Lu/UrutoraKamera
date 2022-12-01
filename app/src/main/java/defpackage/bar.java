@@ -2,6 +2,7 @@ package defpackage;
 
 import android.content.res.AssetManager;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 /* renamed from: bar  reason: default package */
@@ -18,11 +19,20 @@ public final class bar extends azz {
 
     @Override // defpackage.azz
     protected final /* synthetic */ Object b(AssetManager assetManager, String str) {
-        return assetManager.open(str);
+        try {
+            return assetManager.open(str);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.azz
     protected final /* synthetic */ void e(Object obj) {
-        ((InputStream) obj).close();
+        try {
+            ((InputStream) obj).close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

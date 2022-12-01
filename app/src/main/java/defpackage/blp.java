@@ -51,7 +51,11 @@ final class blp extends InputStream {
     public final synchronized void reset() {
         int i = this.b;
         if (i == -1) {
-            throw new IOException("Cannot reset to unset mark position");
+            try {
+                throw new IOException("Cannot reset to unset mark position");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         ByteBuffer byteBuffer = (ByteBuffer) this.a.position(i);
     }

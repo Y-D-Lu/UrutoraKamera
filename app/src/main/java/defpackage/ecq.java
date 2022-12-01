@@ -8,18 +8,18 @@ import com.google.googlex.gcam.ShotMetadata;
 /* renamed from: ecq  reason: default package */
 /* loaded from: classes.dex */
 public final class ecq {
-    public final InterleavedImageU8 a;
-    public final edo b;
-    public final HardwareBuffer c;
-    public final ShotMetadata d;
-    public final lic e;
-    public final lzv f;
-    public final long g;
-    public final dzu h;
-    public final eck i;
-    public final pht j;
-    public final gog k;
-    public final hlr l;
+    public InterleavedImageU8 a;
+    public edo b;
+    public HardwareBuffer c;
+    public ShotMetadata d;
+    public lic e;
+    public lzv f;
+    public long g;
+    public dzu h;
+    public eck i;
+    public pht j;
+    public gog k;
+    public hlr l;
 
     public ecq() {
     }
@@ -43,7 +43,7 @@ public final class ecq {
         return new ecp();
     }
 
-    public final lig b() {
+    public lig b() {
         InterleavedImageU8 interleavedImageU8 = this.a;
         if (interleavedImageU8 == null) {
             edo edoVar = this.b;
@@ -59,11 +59,11 @@ public final class ecq {
         return lig.h(interleavedImageU8.b(), interleavedImageU8.a());
     }
 
-    public final ecp c() {
+    public ecp c() {
         return new ecp(this);
     }
 
-    public final boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         eck eckVar;
         if (obj == this) {
             return true;
@@ -91,7 +91,7 @@ public final class ecq {
         return false;
     }
 
-    public final int hashCode() {
+    public int hashCode() {
         InterleavedImageU8 interleavedImageU8 = this.a;
         int i = 0;
         int hashCode = ((interleavedImageU8 == null ? 0 : interleavedImageU8.hashCode()) ^ 1000003) * 1000003;
@@ -113,7 +113,7 @@ public final class ecq {
         return hashCode8 ^ i;
     }
 
-    public final String toString() {
+    public String toString() {
         String valueOf = String.valueOf(this.a);
         String valueOf2 = String.valueOf(this.b);
         String valueOf3 = String.valueOf(this.c);

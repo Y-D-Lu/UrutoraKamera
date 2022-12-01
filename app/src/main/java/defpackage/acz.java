@@ -48,7 +48,8 @@ final class acz extends MediaDataSource {
                 this.a += read;
                 return read;
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         this.a = -1L;
         return -1;

@@ -8,5 +8,5 @@ public enum awu {
     OFF,
     ON,
     TORCH,
-    RED_EYE
+    RED_EYE;
 }

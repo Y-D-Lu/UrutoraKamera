@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /* renamed from: bak  reason: default package */
 /* loaded from: classes2.dex */
@@ -21,7 +22,12 @@ public final class bak extends bao {
 
     @Override // defpackage.bao
     protected final /* bridge */ /* synthetic */ Object b(Uri uri, ContentResolver contentResolver) {
-        AssetFileDescriptor openAssetFileDescriptor = contentResolver.openAssetFileDescriptor(uri, "r");
+        AssetFileDescriptor openAssetFileDescriptor = null;
+        try {
+            openAssetFileDescriptor = contentResolver.openAssetFileDescriptor(uri, "r");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         if (openAssetFileDescriptor != null) {
             return openAssetFileDescriptor.getParcelFileDescriptor();
         }
@@ -29,11 +35,20 @@ public final class bak extends bao {
         StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 28);
         sb.append("FileDescriptor is null for: ");
         sb.append(valueOf);
-        throw new FileNotFoundException(sb.toString());
+        try {
+            throw new FileNotFoundException(sb.toString());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.bao
     protected final /* synthetic */ void c(Object obj) {
-        ((ParcelFileDescriptor) obj).close();
+        try {
+            ((ParcelFileDescriptor) obj).close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

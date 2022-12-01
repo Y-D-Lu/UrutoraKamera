@@ -14,6 +14,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 /* renamed from: ahf  reason: default package */
@@ -51,6 +52,9 @@ public final class ahf {
                     inflateException2.initCause(e3);
                     throw inflateException2;
                 }
+                if (false) {
+                    break;
+                }
             }
         }
         return preferenceGroup;
@@ -59,7 +63,14 @@ public final class ahf {
     private static final void b(XmlPullParser xmlPullParser, Preference preference, AttributeSet attributeSet, Context context, Object[] objArr, ahj ahjVar, String[] strArr) {
         int depth = xmlPullParser.getDepth();
         while (true) {
-            int next = xmlPullParser.next();
+            int next = 0;
+            try {
+                next = xmlPullParser.next();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            }
             if (next == 3) {
                 if (xmlPullParser.getDepth() <= depth) {
                     return;
@@ -75,21 +86,40 @@ public final class ahf {
                         } catch (IOException e) {
                             XmlPullParserException xmlPullParserException = new XmlPullParserException("Error parsing preference");
                             xmlPullParserException.initCause(e);
-                            throw xmlPullParserException;
+                            try {
+                                throw xmlPullParserException;
+                            } catch (XmlPullParserException ex) {
+                                ex.printStackTrace();
+                            }
+                        } catch (XmlPullParserException e) {
+                            e.printStackTrace();
                         }
                     } else if ("extra".equals(name)) {
-                        context.getResources().parseBundleExtra("extra", attributeSet, preference.r());
+                        try {
+                            context.getResources().parseBundleExtra("extra", attributeSet, preference.r());
+                        } catch (XmlPullParserException e) {
+                            e.printStackTrace();
+                        }
                         try {
                             int depth2 = xmlPullParser.getDepth();
                             while (true) {
-                                int next2 = xmlPullParser.next();
+                                int next2 = 0;
+                                try {
+                                    next2 = xmlPullParser.next();
+                                } catch (XmlPullParserException e) {
+                                    e.printStackTrace();
+                                }
                                 if (next2 != 1 && (next2 != 3 || xmlPullParser.getDepth() > depth2)) {
                                 }
                             }
                         } catch (IOException e2) {
                             XmlPullParserException xmlPullParserException2 = new XmlPullParserException("Error parsing preference");
                             xmlPullParserException2.initCause(e2);
-                            throw xmlPullParserException2;
+                            try {
+                                throw xmlPullParserException2;
+                            } catch (XmlPullParserException e) {
+                                e.printStackTrace();
+                            }
                         }
                     } else {
                         Preference d = d(name, attributeSet, context, objArr, strArr);
@@ -143,7 +173,16 @@ public final class ahf {
             }
         }
         objArr[1] = attributeSet;
-        return (Preference) constructor.newInstance(objArr);
+        try {
+            return (Preference) constructor.newInstance(objArr);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private static final Preference d(String str, AttributeSet attributeSet, Context context, Object[] objArr, String[] strArr) {
@@ -151,10 +190,10 @@ public final class ahf {
             return str.indexOf(46) == -1 ? c(str, strArr, attributeSet, context, objArr) : c(str, null, attributeSet, context, objArr);
         } catch (InflateException e) {
             throw e;
-        } catch (ClassNotFoundException e2) {
-            InflateException inflateException = new InflateException(attributeSet.getPositionDescription() + ": Error inflating class (not found)" + str);
-            inflateException.initCause(e2);
-            throw inflateException;
+//        } catch (ClassNotFoundException e2) {
+//            InflateException inflateException = new InflateException(attributeSet.getPositionDescription() + ": Error inflating class (not found)" + str);
+//            inflateException.initCause(e2);
+//            throw inflateException;
         } catch (Exception e3) {
             InflateException inflateException2 = new InflateException(attributeSet.getPositionDescription() + ": Error inflating class " + str);
             inflateException2.initCause(e3);

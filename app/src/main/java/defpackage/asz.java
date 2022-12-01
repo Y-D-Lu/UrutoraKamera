@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.PushbackReader;
 import java.io.Reader;
 
@@ -25,7 +26,11 @@ public final class asz extends PushbackReader {
         int i4 = 0;
         int i5 = 0;
         while (z && i4 < i2) {
-            z = super.read(cArr2, i5, 1) == 1;
+            try {
+                z = super.read(cArr2, i5, 1) == 1;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             if (z) {
                 char c = cArr2[i5];
                 int i6 = this.a;
@@ -95,7 +100,7 @@ public final class asz extends PushbackReader {
                             i6 = 5;
                             break;
                         }
-                        break;
+                        //break;
                     case 4:
                         if (c >= '0' && c <= '9') {
                             this.b = (this.b * 10) + Character.digit(c, 10);
@@ -139,13 +144,21 @@ public final class asz extends PushbackReader {
                     i3++;
                     i5 = 0;
                 } else if (i6 == 5) {
-                    unread(cArr2, 0, i5 + 1);
+                    try {
+                        unread(cArr2, 0, i5 + 1);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     i5 = 0;
                 } else {
                     i5++;
                 }
             } else if (i5 > 0) {
-                unread(cArr2, 0, i5);
+                try {
+                    unread(cArr2, 0, i5);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 this.a = 5;
                 z = true;
                 i5 = 0;

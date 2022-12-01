@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 /* renamed from: asx  reason: default package */
@@ -21,7 +22,12 @@ public final class asx {
         this.b = 0;
         this.a = new byte[16384];
         while (true) {
-            int read = inputStream.read(this.a, this.b, 16384);
+            int read = 0;
+            try {
+                read = inputStream.read(this.a, this.b, 16384);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             if (read > 0) {
                 int i = this.b + read;
                 this.b = i;

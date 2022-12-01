@@ -3,7 +3,6 @@ package defpackage;
 import android.net.Uri;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -11,8 +10,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-import java.util.Comparator;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dfu  reason: default package */
@@ -25,7 +22,7 @@ public final class dfu implements Iterable {
 
     public dfu() {
         Comparator thenComparing;
-        Comparator reverseOrder;
+        Comparator reverseOrder = null;
         // luyuedong666 TODO: fix out
         // thenComparing = Comparator$EL.thenComparing(Comparator.comparing(cgw.i), Comparator.comparing(cgw.j));
         // reverseOrder = Collections.reverseOrder(thenComparing);

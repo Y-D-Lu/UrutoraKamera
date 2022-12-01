@@ -41,6 +41,11 @@ final class bgs implements bgu {
         if (this.a.remaining() > 0) {
             return (short) (this.a.get() & 255);
         }
-        throw new bgt();
+        try {
+            throw new bgt();
+        } catch (bgt e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }

@@ -4,6 +4,7 @@ import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.hardware.Camera;
+import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraDevice;
 import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.params.MeteringRectangle;
@@ -29,7 +30,12 @@ public final class aut extends axh {
                 throw new NullPointerException("activeArray must not be null");
             }
             boolean z = true;
-            CaptureRequest.Builder createCaptureRequest = cameraDevice.createCaptureRequest(1);
+            CaptureRequest.Builder createCaptureRequest = null;
+            try {
+                createCaptureRequest = cameraDevice.createCaptureRequest(1);
+            } catch (CameraAccessException ex) {
+                ex.printStackTrace();
+            }
             this.A = createCaptureRequest;
             this.b = new axr();
             this.B = rect;

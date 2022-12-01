@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.PipedOutputStream;
 
 /* renamed from: ciq  reason: default package */
@@ -7,7 +8,7 @@ import java.io.PipedOutputStream;
 final class ciq extends PipedOutputStream {
     public final cip a;
 
-    public ciq(cip cipVar) {
+    public ciq(cip cipVar) throws IOException {
         super(cipVar);
         this.a = cipVar;
     }
