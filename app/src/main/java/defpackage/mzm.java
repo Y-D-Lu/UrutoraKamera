@@ -3,13 +3,13 @@ package defpackage;
 /* renamed from: mzm  reason: default package */
 /* loaded from: classes2.dex */
 public final class mzm implements mwi {
-    public final boolean a;
-    public final ojc b;
-    public final boolean c;
-    public final boolean d;
-    public final boolean e;
-    public final int f;
-    private final int g;
+    public boolean a;
+    public ojc b;
+    public boolean c;
+    public boolean d;
+    public boolean e;
+    public int f;
+    private int g;
 
     public mzm() {
     }

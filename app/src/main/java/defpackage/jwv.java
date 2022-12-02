@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: jwv  reason: default package */
 /* loaded from: classes2.dex */
 public final class jwv {
-    public final jwu a;
-    public final lco b;
-    public final jwt c;
+    public jwu a;
+    public lco b;
+    public jwt c;
 
     public jwv() {
     }

@@ -45,7 +45,11 @@ final class poe extends poh {
             O();
             return;
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 
     private final void N() {
@@ -78,7 +82,11 @@ final class poe extends poh {
     private final void P(byte[] bArr, int i) {
         if (i > K()) {
             if (i > 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
             return;
         }
@@ -104,9 +112,17 @@ final class poe extends poh {
     public final void B(int i) {
         if (i < 0 || i > ((this.h - this.l) - this.m) + this.n) {
             if (i >= 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         while (i > 0) {
             if (L() == 0) {
@@ -138,7 +154,11 @@ final class poe extends poh {
                         return true;
                     }
                 }
-                throw ppp.e();
+                try {
+                    throw ppp.e();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             case 1:
                 B(8);
                 return true;
@@ -151,7 +171,12 @@ final class poe extends poh {
                     if (m != 0) {
                     }
                     z(psa.c(psa.a(i), 4));
-                    return true;
+                    if (true) {
+                        return true;
+                    }
+                    if (false) {
+                        break;
+                    }
                 } while (E(m));
                 z(psa.c(psa.a(i), 4));
                 return true;
@@ -161,8 +186,13 @@ final class poe extends poh {
                 B(4);
                 return true;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
+        return false;
     }
 
     public final byte a() {
@@ -195,13 +225,22 @@ final class poe extends poh {
             int d = i + d();
             int i2 = this.j;
             if (d > i2) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
             this.j = d;
             N();
             return i2;
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -342,7 +381,11 @@ final class poe extends poh {
         int j = j();
         this.k = j;
         if (psa.a(j) == 0) {
-            throw ppp.c();
+            try {
+                throw ppp.c();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         return this.k;
     }
@@ -455,7 +498,12 @@ final class poe extends poh {
                 return j;
             }
         }
-        throw ppp.e();
+        try {
+            throw ppp.e();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -495,10 +543,19 @@ final class poe extends poh {
             return poc.b;
         } else {
             if (j >= 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     @Override // defpackage.poh
@@ -524,10 +581,19 @@ final class poe extends poh {
             return "";
         } else {
             if (j >= 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
+        return "";
     }
 
     @Override // defpackage.poh
@@ -551,10 +617,19 @@ final class poe extends poh {
             return "";
         } else {
             if (j > 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
+        return "";
     }
 
     @Override // defpackage.poh
@@ -562,6 +637,10 @@ final class poe extends poh {
         if (this.k == i) {
             return;
         }
-        throw ppp.b();
+        try {
+            throw ppp.b();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 }

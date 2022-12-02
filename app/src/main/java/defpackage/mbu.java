@@ -3,13 +3,13 @@ package defpackage;
 /* renamed from: mbu  reason: default package */
 /* loaded from: classes2.dex */
 final class mbu {
-    public final long a;
-    public final long b;
-    public final long c;
-    private final long d;
-    private final String e;
-    private final String f;
-    private final String g;
+    public long a;
+    public long b;
+    public long c;
+    private long d;
+    private String e;
+    private String f;
+    private String g;
 
     public mbu() {
     }

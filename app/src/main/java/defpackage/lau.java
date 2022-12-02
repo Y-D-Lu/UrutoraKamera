@@ -30,7 +30,7 @@ public final /* synthetic */ class lau implements Runnable {
                     } finally {
                     }
                 }
-                return;
+                //return;
             default:
                 Runnable runnable2 = this.a;
                 pihVar = this.b;

@@ -1,10 +1,12 @@
 package defpackage;
 
+import android.os.DeadObjectException;
+
 /* renamed from: ksp  reason: default package */
 /* loaded from: classes2.dex */
 public final class ksp implements klb {
     public boolean a = true;
-    final /* synthetic */ kkt b;
+    /* synthetic */ kkt b;
 
     protected ksp() {
     }
@@ -28,7 +30,11 @@ public final class ksp implements klb {
                     ksx ksxVar = (ksx) ktkVar.a.remove(kkrVar);
                     if (ksxVar != null) {
                         ksxVar.c();
-                        ((kti) ktkVar.u()).e(ktm.a(ksxVar, ksmVar));
+                        try {
+                            ((kti) ktkVar.u()).e(ktm.a(ksxVar, ksmVar));
+                        } catch (DeadObjectException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
             } catch (RuntimeException e) {

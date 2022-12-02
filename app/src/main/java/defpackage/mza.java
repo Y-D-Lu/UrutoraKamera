@@ -5,7 +5,7 @@ import android.app.Activity;
 /* renamed from: mza  reason: default package */
 /* loaded from: classes2.dex */
 public final class mza {
-    private final mul a;
+    private mul a;
 
     public mza() {
     }

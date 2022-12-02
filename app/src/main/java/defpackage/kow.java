@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.DeadObjectException;
 import android.os.Parcel;
 import android.text.TextUtils;
 import android.util.Log;
@@ -171,7 +172,12 @@ public final class kow extends koy {
             Log.e("gF_BaseMetricsLogger", "MetricsData requires user action type to be set");
         }
         context.sendBroadcast(new Intent().setClassName("com.google.android.gms", "com.google.android.gms.chimera.GmsIntentOperationService$GmsExternalReceiver").setAction("com.google.android.gms.googlehelp.metrics.MetricsIntentOperation.LOG_METRIC").putExtra("EXTRA_METRIC_DATA", kqbVar13.g()));
-        kpi kpiVar = (kpi) kphVar.u();
+        kpi kpiVar = null;
+        try {
+            kpiVar = (kpi) kphVar.u();
+        } catch (DeadObjectException ex) {
+            ex.printStackTrace();
+        }
         ErrorReport errorReport = new ErrorReport(kpbVar, kphVar.a.getCacheDir());
         Parcel a = kpiVar.a();
         bmp.c(a, errorReport);

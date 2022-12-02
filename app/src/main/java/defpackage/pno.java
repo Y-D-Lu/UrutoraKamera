@@ -13,7 +13,11 @@ public abstract class pno implements pqs {
         if (pqmVar == null || pqmVar.n()) {
             return;
         }
-        throw pnm.h().a();
+        try {
+            throw pnm.h().a();
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
     }
 
     /* JADX WARN: Type inference failed for: r3v1, types: [java.lang.Object, pqm] */
@@ -25,7 +29,7 @@ public abstract class pno implements pqs {
             H.z(0);
             e((pqm) d);
             return d;
-        } catch (ppp e) {
+        } catch (Exception e) {
             throw e;
         }
     }

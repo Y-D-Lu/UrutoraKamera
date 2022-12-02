@@ -214,7 +214,7 @@ public class mzi {
             njfVar.a = true;
             File file = (File) nioVar.b(uri, njfVar);
             return file.exists() ? file.isFile() ? file.canRead() ? file.canWrite() ? c(file, iOException) : c(file, iOException) : file.canWrite() ? c(file, iOException) : c(file, iOException) : file.canRead() ? file.canWrite() ? c(file, iOException) : c(file, iOException) : file.canWrite() ? c(file, iOException) : c(file, iOException) : c(file, iOException);
-        } catch (IOException e) {
+        } catch (Exception e) {
             return new IOException(iOException);
         }
     }

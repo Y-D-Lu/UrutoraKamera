@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.os.DeadObjectException;
 import android.os.Parcel;
 
 import com.google.android.gms.common.api.Status;
@@ -22,14 +23,24 @@ public final class kox extends koy {
         kpb kpbVar = this.a;
         mip.ch(kpbVar);
         if (((Boolean) kpj.a.a()).booleanValue()) {
-            kpi kpiVar = (kpi) kphVar.u();
+            kpi kpiVar = null;
+            try {
+                kpiVar = (kpi) kphVar.u();
+            } catch (DeadObjectException ex) {
+                ex.printStackTrace();
+            }
             Parcel a = kpiVar.a();
             bmp.c(a, kpbVar);
             Parcel y = kpiVar.y(7, a);
             bmp.f(y);
             y.recycle();
         } else {
-            kpi kpiVar2 = (kpi) kphVar.u();
+            kpi kpiVar2 = null;
+            try {
+                kpiVar2 = (kpi) kphVar.u();
+            } catch (DeadObjectException ex) {
+                ex.printStackTrace();
+            }
             ErrorReport errorReport = new ErrorReport(kpbVar, kphVar.a.getCacheDir());
             Parcel a2 = kpiVar2.a();
             bmp.c(a2, errorReport);

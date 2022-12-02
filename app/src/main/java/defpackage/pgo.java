@@ -19,7 +19,12 @@ final class pgo extends pgp {
 
     @Override // defpackage.phs
     public final Object a() {
-        return this.c.call();
+        try {
+            return this.c.call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.phs

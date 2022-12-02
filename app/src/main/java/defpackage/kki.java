@@ -5,8 +5,8 @@ import android.app.Dialog;
 /* renamed from: kki  reason: default package */
 /* loaded from: classes2.dex */
 public final class kki {
-    final /* synthetic */ Dialog a;
-    final /* synthetic */ kjl b;
+    /* synthetic */ Dialog a;
+    /* synthetic */ kjl b;
 
     public kki() {
     }

@@ -6,15 +6,15 @@ import android.util.SizeF;
 /* renamed from: iqv  reason: default package */
 /* loaded from: classes.dex */
 public final class iqv {
-    public final long a;
-    public final long b;
-    public final long c;
-    public final long d;
-    public final float e;
-    public final float f;
-    public final Rect g;
-    public final Rect h;
-    private final SizeF i;
+    public long a;
+    public long b;
+    public long c;
+    public long d;
+    public float e;
+    public float f;
+    public Rect g;
+    public Rect h;
+    private SizeF i;
 
     public iqv() {
     }

@@ -105,7 +105,7 @@ public abstract class pge extends pgi {
     public final void h(int i, Future future) {
         try {
             g(i, plk.ad(future));
-        } catch (ExecutionException e) {
+        } catch (Exception e) {
             t(e.getCause());
         } catch (Throwable th) {
             t(th);

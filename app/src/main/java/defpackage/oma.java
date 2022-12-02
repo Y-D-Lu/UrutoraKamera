@@ -41,7 +41,7 @@ final class oma extends AbstractSet {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean remove(Object obj) {
-        omf omfVar;
+        omf omfVar = null;
         Map k = this.a.k();
         if (k != null) {
             return k.entrySet().remove(obj);

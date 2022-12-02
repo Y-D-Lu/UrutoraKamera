@@ -9,22 +9,22 @@ import java.net.URISyntaxException;
 /* renamed from: nhs  reason: default package */
 /* loaded from: classes2.dex */
 public final class nhs {
-    public final Intent a;
-    private final Context b;
-    private final String c;
-    private final String d;
-    private final String e;
-    private final boolean f;
-    private final String g;
-    private final oom h;
-    private final oom i;
-    private final String j;
-    private final Uri k;
-    private final oom l;
-    private final Uri m;
-    private final String n;
-    private final Uri o;
-    private final int p;
+    public Intent a;
+    private Context b;
+    private String c;
+    private String d;
+    private String e;
+    private boolean f;
+    private String g;
+    private oom h;
+    private oom i;
+    private String j;
+    private Uri k;
+    private oom l;
+    private Uri m;
+    private String n;
+    private Uri o;
+    private int p;
 
     public nhs() {
     }

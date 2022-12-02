@@ -56,7 +56,7 @@ public abstract class olg implements Iterator {
 
     @Override // java.util.Iterator, java.util.Iterator
     public final void remove() {
-        olh olhVar;
+        olh olhVar = null;
         b();
         ohh.T(this.c != -1);
         this.e.b -= olhVar.a.g(this.c);

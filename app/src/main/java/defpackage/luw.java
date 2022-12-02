@@ -30,6 +30,7 @@ public final class luw implements lzp {
                 ex.printStackTrace();
             }
         }
+        return 0;
     }
 
     @Override // defpackage.lzp
@@ -81,8 +82,9 @@ public final class luw implements lzp {
                 Integer.parseInt(cameraDevice.getId());
                 int MenuValue = Helper.MenuValue(Helper.SetLensValueOp(Helper.MenuValue("pref_Customop_key") == 0 ? Helper.sModeTo == jrl.PHOTO ? "pref_opmode_normal_key" : Helper.sModeTo == jrl.VIDEO ? "pref_opmode_video_key" : Helper.sModeTo == jrl.SLOW_MOTION ? "pref_opmode_motion_key" : Helper.sModeTo == jrl.LONG_EXPOSURE ? "pref_opmode_night_key" : Helper.sModeTo == jrl.PORTRAIT ? "pref_opmode_portrait_key" : Helper.sModeTo == jrl.UNINITIALIZED ? "pref_opmode_experimental_key" : "pref_opmode_key" : Helper.sModeTo == jrl.PHOTO ? "pref_Copmode_normal_key" : Helper.sModeTo == jrl.VIDEO ? "pref_Copmode_video_key" : Helper.sModeTo == jrl.SLOW_MOTION ? "pref_Copmode_motion_key" : Helper.sModeTo == jrl.LONG_EXPOSURE ? "pref_Copmode_night_key" : Helper.sModeTo == jrl.PORTRAIT ? "pref_Copmode_portrait_key" : Helper.sModeTo == jrl.UNINITIALIZED ? "pref_Copmode_experimental_key" : "pref_Copmode_key"));
                 if (MenuValue != 0) {
-                    cameraDevice.createCustomCaptureSession(null, mip.aT(list), MenuValue, new lvc(lznVar), handler);
-                    return;
+                    throw new UnsupportedOperationException("createCustomCaptureSession unavailable!!!");
+                    //cameraDevice.createCustomCaptureSession(null, mip.aT(list), MenuValue, new lvc(lznVar), handler);
+                    //return;
                 }
             }
             cameraDevice.createCaptureSessionByOutputConfigurations(mip.aT(list), new lvc(lznVar), handler);
@@ -138,5 +140,6 @@ public final class luw implements lzp {
                 ex.printStackTrace();
             }
         }
+        return null;
     }
 }

@@ -9,7 +9,7 @@ import android.view.View;
 /* renamed from: jip  reason: default package */
 /* loaded from: classes.dex */
 public final class jip implements jio {
-    final /* synthetic */ fyr a;
+    /* synthetic */ fyr a;
 
     public jip() {
     }

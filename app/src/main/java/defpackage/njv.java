@@ -6,13 +6,13 @@ import android.support.v8.renderscript.ScriptIntrinsicBLAS;
 /* renamed from: njv  reason: default package */
 /* loaded from: classes2.dex */
 public final class njv {
-    public final Uri a;
-    public final pqm b;
-    public final njo c;
-    public final oom d;
-    public final boolean e;
-    public final boolean f;
-    private final njy g;
+    public Uri a;
+    public pqm b;
+    public njo c;
+    public oom d;
+    public boolean e;
+    public boolean f;
+    private njy g;
 
     public njv() {
     }

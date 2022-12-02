@@ -22,7 +22,7 @@ final class jb implements View.OnClickListener {
 
     @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
-        int id;
+        int id = 0;
         String str;
         Method method;
         if (this.c == null) {

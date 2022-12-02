@@ -1,8 +1,5 @@
 package defpackage;
 
-import android.os.DeadObjectException;
-import android.os.RemoteException;
-
 import com.google.android.gms.common.api.Status;
 
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -32,11 +29,11 @@ public abstract class kja extends kiz {
     public final void f(kkc kkcVar) {
         try {
             c(kkcVar);
-        } catch (DeadObjectException e) {
-            d(kjf.h(e));
-            throw e;
-        } catch (RemoteException e2) {
-            d(kjf.h(e2));
+//        } catch (DeadObjectException e) {
+//            d(kjf.h(e));
+//            throw e;
+//        } catch (RemoteException e2) {
+//            d(kjf.h(e2));
         } catch (RuntimeException e3) {
             e(e3);
         }

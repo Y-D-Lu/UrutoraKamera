@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /* loaded from: classes2.dex */
 public final class mat implements Comparable {
     public static final AtomicInteger a = new AtomicInteger(0);
-    private final int b;
+    private int b;
 
     public mat() {
     }

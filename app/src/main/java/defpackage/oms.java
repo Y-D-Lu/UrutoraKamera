@@ -1,7 +1,5 @@
 package defpackage;
 
-import java.util.NavigableSet;
-
 /* renamed from: oms  reason: default package */
 /* loaded from: classes2.dex */
 final class oms extends opm {
@@ -22,8 +20,14 @@ final class oms extends opm {
         return this.a.contains(obj);
     }
 
-    @Override // defpackage.opm, java.util.NavigableSet
-    public final /* synthetic */ NavigableSet descendingSet() {
+    //@Override // defpackage.opm, java.util.NavigableSet
+//    public final /* synthetic */ NavigableSet descendingSet() {
+//        return this.a;
+//    }
+
+    @Override // java.util.NavigableSet
+    /* renamed from: gF */
+    public opm descendingSet() {
         return this.a;
     }
 

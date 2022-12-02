@@ -30,7 +30,12 @@ public final class nit implements nji {
     @Override // defpackage.nji
     public final InputStream d(Uri uri) {
         File c = myw.c(uri);
-        return new nja(new FileInputStream(c), c);
+        try {
+            return new nja(new FileInputStream(c), c);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.nji
@@ -51,14 +56,23 @@ public final class nit implements nji {
         if (c.renameTo(c2)) {
             return;
         }
-        throw new IOException(String.format("%s could not be renamed to %s", uri, uri2));
+        try {
+            throw new IOException(String.format("%s could not be renamed to %s", uri, uri2));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.nji
     public final OutputStream j(Uri uri) {
         File c = myw.c(uri);
         oxh.v(c);
-        return new njb(new FileOutputStream(c), c);
+        try {
+            return new njb(new FileOutputStream(c), c);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.nji
@@ -69,10 +83,22 @@ public final class nit implements nji {
                 return;
             }
             if (c.exists()) {
-                throw new IOException(String.format("%s could not be deleted", uri));
+                try {
+                    throw new IOException(String.format("%s could not be deleted", uri));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
-            throw new FileNotFoundException(String.format("%s does not exist", uri));
+            try {
+                throw new FileNotFoundException(String.format("%s does not exist", uri));
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
         }
-        throw new FileNotFoundException(String.format("%s is a directory", uri));
+        try {
+            throw new FileNotFoundException(String.format("%s is a directory", uri));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }

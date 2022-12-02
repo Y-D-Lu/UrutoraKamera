@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: nal  reason: default package */
 /* loaded from: classes2.dex */
 public final class nal implements mwi {
-    public final ojc a;
-    public final ojc b;
-    private final int c;
+    public ojc a;
+    public ojc b;
+    private int c;
 
     public nal() {
     }

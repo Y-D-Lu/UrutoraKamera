@@ -32,7 +32,7 @@ public final class ofu {
 
     public final pht c() {
         long j;
-        final int a;
+        int a;
         if (!this.d.isDone()) {
             do {
                 j = this.b.get();
@@ -40,16 +40,17 @@ public final class ofu {
             } while (!this.b.compareAndSet(j, b(a, ((int) j) + 1)));
             final pih f = pih.f();
             pht phtVar = (pht) this.e.getAndSet(f);
+            final int aF = a;
             f.e(phtVar == null ? plk.aa(ogl.a(new pgj() { // from class: ofo
                 @Override // defpackage.pgj
                 public final pht a() {
-                    return ofu.this.d(a);
+                    return ofu.this.d(aF);
                 }
             }), pgr.a) : pfj.i(phtVar, Throwable.class, ogl.b(new pgk() { // from class: ofp
                 @Override // defpackage.pgk
                 public final pht a(Object obj) {
                     Throwable th = (Throwable) obj;
-                    return ofu.this.d(a);
+                    return ofu.this.d(aF);
                 }
             }), this.f));
             final ofs ofsVar = new ofs(this, a);

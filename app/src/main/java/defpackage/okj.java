@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Map;
@@ -14,13 +15,33 @@ final class okj extends okm {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        objectInputStream.defaultReadObject();
-        this.b = (okm) objectInputStream.readObject();
+        try {
+            objectInputStream.defaultReadObject();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            this.b = (okm) objectInputStream.readObject();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        objectOutputStream.defaultWriteObject();
-        objectOutputStream.writeObject(this.b);
+        try {
+            objectOutputStream.defaultWriteObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            objectOutputStream.writeObject(this.b);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.okm

@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: jbw  reason: default package */
 /* loaded from: classes.dex */
 public final class jbw {
-    public final jbv a;
-    public final jbt b;
-    public final jcd c;
+    public jbv a;
+    public jbt b;
+    public jcd c;
 
     public jbw() {
     }

@@ -7,7 +7,7 @@ import java.util.Map;
 /* renamed from: pns  reason: default package */
 /* loaded from: classes2.dex */
 final class pns implements pqx {
-    private final byte[] a;
+    private byte[] a;
     private int b;
     private int c;
     private int d;
@@ -29,7 +29,12 @@ final class pns implements pqx {
             this.b = i + 1;
             return bArr[i];
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     private final int W() {
@@ -88,7 +93,11 @@ final class pns implements pqx {
                                             if (bArr[i5] < 0) {
                                                 i5 = i11 + 1;
                                                 if (bArr[i11] < 0) {
-                                                    throw ppp.e();
+                                                    try {
+                                                        throw ppp.e();
+                                                    } catch (ppp ex) {
+                                                        ex.printStackTrace();
+                                                    }
                                                 }
                                             }
                                         }
@@ -105,7 +114,12 @@ final class pns implements pqx {
                 return i;
             }
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     private final long Z() {
@@ -129,7 +143,12 @@ final class pns implements pqx {
                 return j;
             }
         }
-        throw ppp.e();
+        try {
+            throw ppp.e();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     private final Object ac(pry pryVar, Class cls, pos posVar) {
@@ -185,10 +204,15 @@ final class pns implements pqx {
             if (this.d == this.e) {
                 return e;
             }
-            throw ppp.g();
+            try {
+                throw ppp.g();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         } finally {
             this.e = i;
         }
+        return null;
     }
 
     private final Object ae(prb prbVar, pos posVar) {
@@ -204,15 +228,24 @@ final class pns implements pqx {
             if (this.b == i2) {
                 return e;
             }
-            throw ppp.g();
+            try {
+                throw ppp.g();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         } finally {
             this.c = i;
         }
+        return null;
     }
 
     private final void af(int i) {
         if (i < 0 || i > this.c - this.b) {
-            throw ppp.i();
+            try {
+                throw ppp.i();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -220,14 +253,22 @@ final class pns implements pqx {
         if (this.b == i) {
             return;
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 
     private final void ah(int i) {
         if (psa.b(this.d) == i) {
             return;
         }
-        throw ppp.a();
+        try {
+            throw ppp.a();
+        } catch (ppo ex) {
+            ex.printStackTrace();
+        }
     }
 
     private final void ai(int i) {
@@ -240,7 +281,11 @@ final class pns implements pqx {
         if ((i & 3) == 0) {
             return;
         }
-        throw ppp.g();
+        try {
+            throw ppp.g();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 
     private final void ak(int i) {
@@ -248,7 +293,11 @@ final class pns implements pqx {
         if ((i & 7) == 0) {
             return;
         }
-        throw ppp.g();
+        try {
+            throw ppp.g();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 
     private final boolean al() {
@@ -272,7 +321,11 @@ final class pns implements pqx {
                     }
                     return;
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
             }
             do {
                 list.add(Double.valueOf(a()));
@@ -297,7 +350,11 @@ final class pns implements pqx {
                 }
                 return;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             pooVar.d(a());
@@ -319,7 +376,11 @@ final class pns implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
                 case 2:
                     int Y = this.b + Y();
                     while (this.b < Y) {
@@ -343,7 +404,11 @@ final class pns implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 2:
                 int Y2 = this.b + Y();
                 while (this.b < Y2) {
@@ -378,7 +443,11 @@ final class pns implements pqx {
                 case 5:
                     break;
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
             }
             do {
                 list.add(Integer.valueOf(f()));
@@ -403,7 +472,11 @@ final class pns implements pqx {
             case 5:
                 break;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             ppeVar.g(f());
@@ -432,7 +505,11 @@ final class pns implements pqx {
                     }
                     return;
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
             }
             do {
                 list.add(Long.valueOf(k()));
@@ -457,7 +534,11 @@ final class pns implements pqx {
                 }
                 return;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             pqbVar.d(k());
@@ -486,7 +567,11 @@ final class pns implements pqx {
                 case 5:
                     break;
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
             }
             do {
                 list.add(Float.valueOf(b()));
@@ -511,7 +596,11 @@ final class pns implements pqx {
             case 5:
                 break;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             powVar.g(b());
@@ -538,7 +627,11 @@ final class pns implements pqx {
             this.b = i;
             return;
         }
-        throw ppp.a();
+        try {
+            throw ppp.a();
+        } catch (ppo ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.pqx
@@ -551,7 +644,11 @@ final class pns implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
                 case 2:
                     int Y = this.b + Y();
                     while (this.b < Y) {
@@ -576,7 +673,11 @@ final class pns implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 2:
                 int Y2 = this.b + Y();
                 while (this.b < Y2) {
@@ -605,7 +706,11 @@ final class pns implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
                 case 2:
                     int Y = this.b + Y();
                     while (this.b < Y) {
@@ -630,7 +735,11 @@ final class pns implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 2:
                 int Y2 = this.b + Y();
                 while (this.b < Y2) {
@@ -672,12 +781,20 @@ final class pns implements pqx {
                         default:
                             try {
                                 if (!U()) {
-                                    throw new ppp("Unable to parse map entry.");
+                                    try {
+                                        throw new ppp("Unable to parse map entry.");
+                                    } catch (ppp ex) {
+                                        ex.printStackTrace();
+                                    }
                                     break;
                                 }
-                            } catch (ppo e) {
+                            } catch (Exception e) {
                                 if (!U()) {
-                                    throw new ppp("Unable to parse map entry.");
+                                    try {
+                                        throw new ppp("Unable to parse map entry.");
+                                    } catch (ppp ex) {
+                                        ex.printStackTrace();
+                                    }
                                 }
                                 break;
                             }
@@ -708,7 +825,11 @@ final class pns implements pqx {
             this.b = i;
             return;
         }
-        throw ppp.a();
+        try {
+            throw ppp.a();
+        } catch (ppo ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.pqx
@@ -728,7 +849,11 @@ final class pns implements pqx {
                 case 5:
                     break;
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
             }
             do {
                 list.add(Integer.valueOf(h()));
@@ -753,7 +878,11 @@ final class pns implements pqx {
             case 5:
                 break;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             ppeVar.g(h());
@@ -782,7 +911,11 @@ final class pns implements pqx {
                     }
                     return;
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
             }
             do {
                 list.add(Long.valueOf(m()));
@@ -807,7 +940,11 @@ final class pns implements pqx {
                 }
                 return;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             pqbVar.d(m());
@@ -829,7 +966,11 @@ final class pns implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
                 case 2:
                     int Y = this.b + Y();
                     while (this.b < Y) {
@@ -853,7 +994,11 @@ final class pns implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 2:
                 int Y2 = this.b + Y();
                 while (this.b < Y2) {
@@ -881,7 +1026,11 @@ final class pns implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
                 case 2:
                     int Y = this.b + Y();
                     while (this.b < Y) {
@@ -905,7 +1054,11 @@ final class pns implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 2:
                 int Y2 = this.b + Y();
                 while (this.b < Y2) {
@@ -954,7 +1107,11 @@ final class pns implements pqx {
             this.b = i2;
             return;
         }
-        throw ppp.a();
+        try {
+            throw ppp.a();
+        } catch (ppo ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.pqx
@@ -972,7 +1129,11 @@ final class pns implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
                 case 2:
                     int Y = this.b + Y();
                     while (this.b < Y) {
@@ -996,7 +1157,11 @@ final class pns implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 2:
                 int Y2 = this.b + Y();
                 while (this.b < Y2) {
@@ -1024,7 +1189,11 @@ final class pns implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
                 case 2:
                     int Y = this.b + Y();
                     while (this.b < Y) {
@@ -1049,7 +1218,11 @@ final class pns implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 2:
                 int Y2 = this.b + Y();
                 while (this.b < Y2) {
@@ -1102,7 +1275,11 @@ final class pns implements pqx {
                         return true;
                     }
                 }
-                throw ppp.e();
+                try {
+                    throw ppp.e();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             case 1:
                 ai(8);
                 return true;
@@ -1115,13 +1292,21 @@ final class pns implements pqx {
                 while (c() != Integer.MAX_VALUE && U()) {
                 }
                 if (this.d != this.e) {
-                    throw ppp.g();
+                    try {
+                        throw ppp.g();
+                    } catch (ppp ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 this.e = i7;
                 return true;
             case 4:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 5:
                 ai(4);
                 return true;
@@ -1283,7 +1468,11 @@ final class pns implements pqx {
                                             if (j6 < 0) {
                                                 int i14 = i13 + 1;
                                                 if (bArr[i13] < 0) {
-                                                    throw ppp.e();
+                                                    try {
+                                                        throw ppp.e();
+                                                    } catch (ppp ex) {
+                                                        ex.printStackTrace();
+                                                    }
                                                 }
                                                 j = j6;
                                                 i4 = i14;
@@ -1302,7 +1491,12 @@ final class pns implements pqx {
                 return j;
             }
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.pqx
@@ -1358,7 +1552,11 @@ final class pns implements pqx {
             byte[] bArr = this.a;
             int i = this.b;
             if (!prx.h(bArr, i, i + Y)) {
-                throw ppp.d();
+                try {
+                    throw ppp.d();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         String str = new String(this.a, this.b, Y, ppn.a);
@@ -1381,7 +1579,11 @@ final class pns implements pqx {
                     break;
                 case 1:
                 default:
-                    throw ppp.a();
+                    try {
+                        throw ppp.a();
+                    } catch (ppo ex) {
+                        ex.printStackTrace();
+                    }
                 case 2:
                     int Y = this.b + Y();
                     while (this.b < Y) {
@@ -1406,7 +1608,11 @@ final class pns implements pqx {
                 break;
             case 1:
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
             case 2:
                 int Y2 = this.b + Y();
                 while (this.b < Y2) {
@@ -1439,6 +1645,10 @@ final class pns implements pqx {
             this.b = i;
             return;
         }
-        throw ppp.a();
+        try {
+            throw ppp.a();
+        } catch (ppo ex) {
+            ex.printStackTrace();
+        }
     }
 }

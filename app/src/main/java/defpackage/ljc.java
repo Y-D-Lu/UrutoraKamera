@@ -72,10 +72,15 @@ public final class ljc implements ljf {
                 Callable callable2 = callable;
                 try {
                     ljcVar.e("Primes");
-                    return callable2.call();
+                    try {
+                        return callable2.call();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 } finally {
                     Trace.endSection();
                 }
+                return null;
             }
         };
     }

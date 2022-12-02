@@ -49,7 +49,7 @@ public final class mmq implements Runnable {
             } else {
                 this.e.execute(new mmo(this, I));
             }
-        } catch (ExecutionException e) {
+        } catch (Exception e) {
             b(e.getCause());
         } catch (Throwable th) {
             b(th);

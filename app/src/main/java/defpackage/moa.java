@@ -20,8 +20,8 @@ public final class moa implements mnb {
     public static void j(Object obj, mlu mluVar, moa moaVar) {
         try {
             moaVar.k(mluVar.a(obj));
-        } catch (mnc e) {
-            moaVar.l(e);
+//        } catch (mnc e) {
+//            moaVar.l(e);
         } catch (Throwable th) {
             moaVar.l(mnc.a(th));
         }
@@ -30,8 +30,8 @@ public final class moa implements mnb {
     public static void n(Object obj, mnf mnfVar, Executor executor, moa moaVar) {
         try {
             mnfVar.a(obj, executor).c(pgr.a, new mny(moaVar), new mnx(moaVar)).h(mmg.a);
-        } catch (mnc e) {
-            moaVar.l(e);
+//        } catch (mnc e) {
+//            moaVar.l(e);
         } catch (Throwable th) {
             moaVar.l(mnc.a(th));
         }
@@ -39,7 +39,7 @@ public final class moa implements mnb {
 
     private final void o() {
         mnw mnwVar;
-        moa moaVar;
+        moa moaVar = null;
         synchronized (this) {
             mnwVar = this.c;
             this.c = null;
@@ -204,15 +204,27 @@ public final class moa implements mnb {
             return obj2;
         }
         if (this.b != null) {
-            throw this.b;
+            try {
+                throw this.b;
+            } catch (mnc e) {
+                e.printStackTrace();
+            }
         }
         synchronized (this) {
             while (!f()) {
-                wait();
+                try {
+                    wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
             obj = this.a;
             if (obj == null) {
-                throw this.b;
+                try {
+                    throw this.b;
+                } catch (mnc e) {
+                    e.printStackTrace();
+                }
             }
         }
         return obj;

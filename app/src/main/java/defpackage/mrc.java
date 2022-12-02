@@ -36,8 +36,13 @@ public final class mrc implements Callable {
                 g.close();
             } catch (Throwable th2) {
             }
-            throw th;
+            try {
+                throw th;
+            } catch (mrl e) {
+                e.printStackTrace();
+            }
         }
+        return null;
     }
 
     public final String toString() {

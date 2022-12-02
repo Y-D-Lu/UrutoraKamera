@@ -144,7 +144,7 @@ public final class npy {
     }
 
     public static final String o(List list) {
-        Iterator it;
+        Iterator it = null;
         int size = list.size() - 1;
         String str = "";
         if (size >= 0) {

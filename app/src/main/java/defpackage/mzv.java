@@ -15,14 +15,14 @@ import java.util.concurrent.ConcurrentHashMap;
 /* renamed from: mzv  reason: default package */
 /* loaded from: classes2.dex */
 public final class mzv implements mxo {
-    public final Application a;
-    public final phw b;
-    public final muz c;
-    public final pyn d;
-    public final mxl e;
-    public final mzz f;
-    private final boolean g;
-    private final mzu h;
+    public Application a;
+    public phw b;
+    public muz c;
+    public pyn d;
+    public mxl e;
+    public mzz f;
+    private boolean g;
+    private mzu h;
 
     public mzv() {
     }

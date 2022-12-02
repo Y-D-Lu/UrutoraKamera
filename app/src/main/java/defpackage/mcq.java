@@ -7,6 +7,7 @@ import android.os.ParcelFileDescriptor;
 import android.util.Log;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Locale;
@@ -48,7 +49,12 @@ final class mcq implements mce {
     @Override // defpackage.mcd
     public final FileInputStream b() {
         l();
-        ParcelFileDescriptor openFileDescriptor = this.a.openFileDescriptor(this.c, "r");
+        ParcelFileDescriptor openFileDescriptor = null;
+        try {
+            openFileDescriptor = this.a.openFileDescriptor(this.c, "r");
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
         openFileDescriptor.getClass();
         String.format(Locale.ROOT, "Opened ParcelFileDescriptor(fd = %s) for reading for %s", Integer.valueOf(openFileDescriptor.getFd()), this);
         return new ParcelFileDescriptor.AutoCloseInputStream(openFileDescriptor);
@@ -63,7 +69,12 @@ final class mcq implements mce {
     public final void d() {
         l();
         if (!Uri.EMPTY.equals(this.c)) {
-            ParcelFileDescriptor openFileDescriptor = this.a.openFileDescriptor(this.c, "w");
+            ParcelFileDescriptor openFileDescriptor = null;
+            try {
+                openFileDescriptor = this.a.openFileDescriptor(this.c, "w");
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace();
+            }
             if (openFileDescriptor == null) {
                 String valueOf = String.valueOf(this.c);
                 StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 49);
@@ -74,7 +85,11 @@ final class mcq implements mce {
             if (openFileDescriptor == null) {
                 return;
             }
-            openFileDescriptor.close();
+            try {
+                openFileDescriptor.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -91,7 +106,12 @@ final class mcq implements mce {
     @Override // defpackage.mcd
     public final FileOutputStream g() {
         l();
-        ParcelFileDescriptor openFileDescriptor = this.a.openFileDescriptor(this.c, "w");
+        ParcelFileDescriptor openFileDescriptor = null;
+        try {
+            openFileDescriptor = this.a.openFileDescriptor(this.c, "w");
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
         openFileDescriptor.getClass();
         String.format(Locale.ROOT, "Opened ParcelFileDescriptor(fd = %s) for writing for %s", Integer.valueOf(openFileDescriptor.getFd()), this);
         return new ParcelFileDescriptor.AutoCloseOutputStream(openFileDescriptor);

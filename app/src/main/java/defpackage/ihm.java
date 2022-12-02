@@ -5,13 +5,13 @@ import java.nio.ByteBuffer;
 /* renamed from: ihm  reason: default package */
 /* loaded from: classes.dex */
 public final class ihm {
-    public final ByteBuffer a;
-    public final int b;
-    public final int c;
-    public final ohl d;
-    public final int e;
-    public final ojc f;
-    public final ojc g;
+    public ByteBuffer a;
+    public int b;
+    public int c;
+    public ohl d;
+    public int e;
+    public ojc f;
+    public ojc g;
 
     public ihm() {
     }

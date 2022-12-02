@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.Externalizable;
+import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 import java.util.ArrayList;
@@ -14,7 +15,12 @@ public final class nhg implements Externalizable {
 
     @Override // java.io.Externalizable
     public final void readExternal(ObjectInput objectInput) {
-        int readInt = objectInput.readInt();
+        int readInt = 0;
+        try {
+            readInt = objectInput.readInt();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         for (int i = 0; i < readInt; i++) {
             nhf nhfVar = new nhf();
             nhfVar.readExternal(objectInput);
@@ -25,7 +31,11 @@ public final class nhg implements Externalizable {
     @Override // java.io.Externalizable
     public final void writeExternal(ObjectOutput objectOutput) {
         int size = this.a.size();
-        objectOutput.writeInt(size);
+        try {
+            objectOutput.writeInt(size);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         for (int i = 0; i < size; i++) {
             ((nhf) this.a.get(i)).writeExternal(objectOutput);
         }

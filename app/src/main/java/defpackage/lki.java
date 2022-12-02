@@ -53,7 +53,12 @@ final class lki implements lkc {
             return lkhVar;
         } catch (Throwable th) {
             this.b.f();
-            throw th;
+            try {
+                throw th;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
+        return null;
     }
 }

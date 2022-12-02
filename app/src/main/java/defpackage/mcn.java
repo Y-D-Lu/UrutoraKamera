@@ -6,11 +6,11 @@ import java.util.Locale;
 /* renamed from: mcn  reason: default package */
 /* loaded from: classes2.dex */
 public final class mcn {
-    public final mcf a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
+    public mcf a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
 
     public mcn() {
     }

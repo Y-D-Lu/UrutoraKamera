@@ -1,8 +1,5 @@
 package defpackage;
 
-import android.os.DeadObjectException;
-import android.os.RemoteException;
-
 import com.google.android.gms.common.api.Status;
 
 /* renamed from: kjd  reason: default package */
@@ -46,10 +43,10 @@ public final class kjd extends kiz {
         try {
             klj kljVar = this.a;
             kljVar.d.a.a(kkcVar.b, this.b);
-        } catch (DeadObjectException e) {
-            throw e;
-        } catch (RemoteException e2) {
-            d(kjf.h(e2));
+//        } catch (DeadObjectException e) {
+//            throw e;
+//        } catch (RemoteException e2) {
+//            d(kjf.h(e2));
         } catch (RuntimeException e3) {
             e(e3);
         }

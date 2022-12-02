@@ -24,7 +24,12 @@ public final class lba implements ScheduledExecutorService {
 
     @Override // java.util.concurrent.ExecutorService
     public final boolean awaitTermination(long j, TimeUnit timeUnit) {
-        return this.b.awaitTermination(j, timeUnit);
+        try {
+            return this.b.awaitTermination(j, timeUnit);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override // java.util.concurrent.Executor

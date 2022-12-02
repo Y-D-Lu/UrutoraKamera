@@ -2,6 +2,7 @@ package defpackage;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Locale;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReadWriteLock;
@@ -31,8 +32,13 @@ public class mcm {
             return new mck(this, this.f.b());
         } catch (Throwable th) {
             this.c.readLock().unlock();
-            throw th;
+            try {
+                throw th;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     public final FileOutputStream c() {
@@ -56,8 +62,13 @@ public class mcm {
             return new mcl(this, this.f.g());
         } catch (Throwable th) {
             this.c.writeLock().unlock();
-            throw th;
+            try {
+                throw th;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

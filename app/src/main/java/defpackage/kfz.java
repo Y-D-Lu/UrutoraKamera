@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.os.DeadObjectException;
 import android.os.Parcel;
 
 import com.google.android.apps.camera.bottombar.R;
@@ -22,7 +23,12 @@ public final class kfz extends kgc {
     @Override // defpackage.kji
     protected final /* bridge */ /* synthetic */ void b(khz khzVar) {
         kfv kfvVar = (kfv) khzVar;
-        kgi kgiVar = (kgi) kfvVar.u();
+        kgi kgiVar = null;
+        try {
+            kgiVar = (kgi) kfvVar.u();
+        } catch (DeadObjectException ex) {
+            ex.printStackTrace();
+        }
         kfy kfyVar = new kfy(this);
         GoogleSignInOptions googleSignInOptions = kfvVar.a;
         Parcel a = kgiVar.a();

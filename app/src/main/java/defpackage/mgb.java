@@ -3,17 +3,17 @@ package defpackage;
 /* renamed from: mgb  reason: default package */
 /* loaded from: classes2.dex */
 public final class mgb {
-    public final mgm a;
-    public final mga b;
-    public final String c;
-    public final ojc d;
-    public final ojc e;
-    public final ojc f;
-    public final ojc g;
-    public final ojc h;
-    public final ojc i;
-    public final ojc j;
-    private final ojc k;
+    public mgm a;
+    public mga b;
+    public String c;
+    public ojc d;
+    public ojc e;
+    public ojc f;
+    public ojc g;
+    public ojc h;
+    public ojc i;
+    public ojc j;
+    private ojc k;
 
     public mgb() {
     }

@@ -17,7 +17,12 @@ public final class pio extends phs {
 
     @Override // defpackage.phs
     public final Object a() {
-        return this.b.call();
+        try {
+            return this.b.call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.phs

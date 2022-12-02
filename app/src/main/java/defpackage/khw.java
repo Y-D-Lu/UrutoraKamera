@@ -28,7 +28,7 @@ public final class khw {
     @Deprecated
     public static int a(Context context, int i) {
         PackageInfo packageInfo;
-        Bundle bundle;
+        Bundle bundle = null;
         try {
             context.getResources().getString(R.string.common_google_play_services_unknown_issue);
         } catch (Throwable th) {

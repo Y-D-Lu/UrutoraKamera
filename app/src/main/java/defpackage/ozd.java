@@ -20,7 +20,12 @@ public final class ozd extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final int available() {
-        return (int) Math.min(this.in.available(), this.a);
+        try {
+            return (int) Math.min(this.in.available(), this.a);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
@@ -34,7 +39,12 @@ public final class ozd extends FilterInputStream {
         if (this.a == 0) {
             return -1;
         }
-        int read = this.in.read();
+        int read = 0;
+        try {
+            read = this.in.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read != -1) {
             this.a--;
         }
@@ -47,7 +57,12 @@ public final class ozd extends FilterInputStream {
         if (j == 0) {
             return -1;
         }
-        int read = this.in.read(bArr, i, (int) Math.min(i2, j));
+        int read = 0;
+        try {
+            read = this.in.read(bArr, i, (int) Math.min(i2, j));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read != -1) {
             this.a -= read;
         }
@@ -57,18 +72,35 @@ public final class ozd extends FilterInputStream {
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final synchronized void reset() {
         if (!this.in.markSupported()) {
-            throw new IOException("Mark not supported");
+            try {
+                throw new IOException("Mark not supported");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         if (this.b == -1) {
-            throw new IOException("Mark not set");
+            try {
+                throw new IOException("Mark not set");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        this.in.reset();
+        try {
+            this.in.reset();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.a = this.b;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final long skip(long j) {
-        long skip = this.in.skip(Math.min(j, this.a));
+        long skip = 0;
+        try {
+            skip = this.in.skip(Math.min(j, this.a));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.a -= skip;
         return skip;
     }

@@ -79,19 +79,31 @@ public final class lmf {
             if (d3 == 18761) {
                 llxVar2.e(ByteOrder.LITTLE_ENDIAN);
             } else if (d3 != 19789) {
-                throw new lma("Invalid TIFF header");
+                try {
+                    throw new lma("Invalid TIFF header");
+                } catch (lma ex) {
+                    ex.printStackTrace();
+                }
             } else {
                 llxVar2.e(ByteOrder.BIG_ENDIAN);
             }
             if (llxVar2.d() != 42) {
-                throw new lma("Invalid TIFF header");
+                try {
+                    throw new lma("Invalid TIFF header");
+                } catch (lma ex) {
+                    ex.printStackTrace();
+                }
             }
             long c = llxVar2.c();
             if (c > 2147483647L) {
                 StringBuilder sb = new StringBuilder(35);
                 sb.append("Invalid offset ");
                 sb.append(c);
-                throw new lma(sb.toString());
+                try {
+                    throw new lma(sb.toString());
+                } catch (lma ex) {
+                    ex.printStackTrace();
+                }
             }
             int i2 = (int) c;
             this.v = i2;
@@ -171,11 +183,19 @@ public final class lmf {
             short d2 = this.a.d();
             long c = this.a.c();
             if (c > 2147483647L) {
-                throw new lma("Number of component is larger then Integer.MAX_VALUE");
+                try {
+                    throw new lma("Number of component is larger then Integer.MAX_VALUE");
+                } catch (lma ex) {
+                    ex.printStackTrace();
+                }
             }
             if (!lmg.g(d2)) {
                 Log.w("CAM_ExifParser", String.format("Tag %04x: Invalid data type %d", Short.valueOf(d), Short.valueOf(d2)));
-                ByteStreams.skipFully(this.a, 4L);
+                try {
+                    ByteStreams.skipFully(this.a, 4L);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 lmgVar = null;
             } else {
                 int i5 = (int) c;
@@ -184,7 +204,11 @@ public final class lmf {
                 if (a > 4) {
                     long c2 = this.a.c();
                     if (c2 > 2147483647L) {
-                        throw new lma("offset is larger then Integer.MAX_VALUE");
+                        try {
+                            throw new lma("offset is larger then Integer.MAX_VALUE");
+                        } catch (lma ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     if (c2 >= this.v || d2 != 7) {
                         lmgVar2.g = (int) c2;
@@ -198,7 +222,11 @@ public final class lmf {
                     lmgVar2.c = false;
                     e(lmgVar2);
                     lmgVar2.c = z2;
-                    ByteStreams.skipFully(this.a, 4 - a);
+                    try {
+                        ByteStreams.skipFully(this.a, 4 - a);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                     lmgVar2.g = this.a.a - 4;
                 }
                 lmgVar = lmgVar2;
@@ -311,7 +339,12 @@ public final class lmf {
     }
 
     public final int b(byte[] bArr) {
-        return ByteStreams.read(this.a, bArr, 0, bArr.length);
+        try {
+            return ByteStreams.read(this.a, bArr, 0, bArr.length);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     protected final int c() {

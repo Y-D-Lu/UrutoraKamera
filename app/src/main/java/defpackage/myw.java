@@ -47,16 +47,21 @@ public class myw {
     }
 
     public static File c(Uri uri) {
-        if (uri.getScheme().equals("file")) {
-            if (!TextUtils.isEmpty(uri.getQuery())) {
-                throw new nix("Did not expect uri to have query");
+        try {
+            if (uri.getScheme().equals("file")) {
+                if (!TextUtils.isEmpty(uri.getQuery())) {
+                    throw new nix("Did not expect uri to have query");
+                }
+                if (!TextUtils.isEmpty(uri.getAuthority())) {
+                    throw new nix("Did not expect uri to have authority");
+                }
+                return new File(uri.getPath());
             }
-            if (!TextUtils.isEmpty(uri.getAuthority())) {
-                throw new nix("Did not expect uri to have authority");
-            }
-            return new File(uri.getPath());
+            throw new nix("Scheme must be 'file'");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        throw new nix("Scheme must be 'file'");
+        return null;
     }
 
     public static File d(Context context) {

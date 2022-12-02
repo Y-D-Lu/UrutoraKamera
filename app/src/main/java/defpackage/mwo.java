@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: mwo  reason: default package */
 /* loaded from: classes2.dex */
 public final class mwo implements mwi {
-    private final int a;
-    private final mwm b;
+    private int a;
+    private mwm b;
 
     public mwo() {
     }

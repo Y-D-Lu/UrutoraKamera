@@ -20,7 +20,7 @@ public final class ivs implements Runnable {
     public final void run() {
         try {
             this.b.o(ayu.g(new File(this.a.getCacheDir(), "indicatorDiskCache"), 5000000L));
-        } catch (IOException e) {
+        } catch (Exception e) {
             this.b.a(e);
         }
     }

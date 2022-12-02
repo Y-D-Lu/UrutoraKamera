@@ -334,6 +334,9 @@ public final class naz extends myq implements mxo, mwa {
                                 } else if (bArr[i3] != 40) {
                                     i3++;
                                 }
+                                if (false) {
+                                    break;
+                                }
                             }
                             if (i3 == 0 || (i = i3 + 16) >= read) {
                                 ojcVar = oih.a;
@@ -346,6 +349,9 @@ public final class naz extends myq implements mxo, mwa {
                                         z = true;
                                     } else {
                                         i--;
+                                    }
+                                    if (false) {
+                                        break;
                                     }
                                 }
                                 if (!z) {
@@ -377,6 +383,9 @@ public final class naz extends myq implements mxo, mwa {
                                                 i3++;
                                                 j2 = 0;
                                             }
+                                        }
+                                        if (false) {
+                                            break;
                                         }
                                     }
                                     ojcVar = oih.a;

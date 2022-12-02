@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: ody  reason: default package */
 /* loaded from: classes2.dex */
 public final class ody {
-    public final int a;
-    public final boolean b;
+    public int a;
+    public boolean b;
 
     public ody() {
     }

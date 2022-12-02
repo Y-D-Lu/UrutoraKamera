@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.io.IOException;
+
 /* renamed from: oyq  reason: default package */
 /* loaded from: classes2.dex */
 final class oyq implements Appendable {
@@ -14,10 +16,18 @@ final class oyq implements Appendable {
     @Override // java.lang.Appendable
     public final Appendable append(char c) {
         if (this.a == 0) {
-            this.b.append(this.c);
+            try {
+                this.b.append(this.c);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             this.a = 2;
         }
-        this.b.append(c);
+        try {
+            this.b.append(c);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.a--;
         return this;
     }

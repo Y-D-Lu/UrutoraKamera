@@ -78,7 +78,11 @@ public final class nio {
                 sb.append(str);
                 sb.append(": ");
                 sb.append(valueOf);
-                throw new niz(sb.toString());
+                try {
+                    throw new niz(sb.toString());
+                } catch (niz ex) {
+                    ex.printStackTrace();
+                }
             }
             e.g(njnVar);
         }
@@ -105,7 +109,12 @@ public final class nio {
             nilVar.d = uri;
             return new nim(nilVar);
         }
-        throw new niz(String.format("Cannot open, unregistered backend: %s", scheme));
+        try {
+            throw new niz(String.format("Cannot open, unregistered backend: %s", scheme));
+        } catch (niz ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     public final Object b(Uri uri, nin ninVar) {
@@ -120,7 +129,11 @@ public final class nio {
             njiVar.g(a.d, a2.d);
             return;
         }
-        throw new niz("Cannot rename file across backends");
+        try {
+            throw new niz("Cannot rename file across backends");
+        } catch (niz e) {
+            e.printStackTrace();
+        }
     }
 
     public final boolean d(Uri uri) {

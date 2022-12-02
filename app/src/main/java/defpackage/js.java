@@ -11,7 +11,7 @@ import android.graphics.drawable.Drawable;
 /* renamed from: js  reason: default package */
 /* loaded from: classes2.dex */
 public class js extends Drawable implements Drawable.Callback {
-    public final Drawable a;
+    public Drawable a = null;
 
     public js(Drawable drawable) {
         Drawable drawable2 = this.a;

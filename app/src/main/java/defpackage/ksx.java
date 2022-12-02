@@ -6,7 +6,7 @@ import android.os.Parcel;
 /* renamed from: ksx  reason: default package */
 /* loaded from: classes2.dex */
 public final class ksx extends bmo implements ksy {
-    private final kkt a;
+    private kkt a;
 
     public ksx() {
         super("com.google.android.gms.location.ILocationListener");

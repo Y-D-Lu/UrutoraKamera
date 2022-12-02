@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.OutputStream;
 
 /* renamed from: lmm  reason: default package */
@@ -41,7 +42,11 @@ public abstract class lmm {
         if (this.b.a() >= i && this.e == 0 && this.d == 0) {
             return;
         }
-        throw new lml(i, i2);
+        try {
+            throw new lml(i, i2);
+        } catch (lml ex) {
+            ex.printStackTrace();
+        }
     }
 
     public final void d() {
@@ -62,7 +67,11 @@ public abstract class lmm {
         }
         int i4 = this.e;
         if (i4 >= i2 || i4 < 0) {
-            this.c.write(bArr, i, i2);
+            try {
+                this.c.write(bArr, i, i2);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             int i5 = this.e;
             if (i5 <= 0) {
                 return;
@@ -75,7 +84,11 @@ public abstract class lmm {
             i2 -= i3;
             this.d = 0;
         } else if (i4 > 0) {
-            this.c.write(bArr, i, i4);
+            try {
+                this.c.write(bArr, i, i4);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             int i6 = this.e;
             i += i6;
             i2 -= i6;
@@ -90,28 +103,40 @@ public abstract class lmm {
 
     public final void f() {
         while (this.b.a() >= this.f && this.e == 0 && this.d == 0) {
-            try {
+//            try {
                 this.f = 0;
                 this.a = a(this.a);
-            } catch (lml e) {
-                this.f = e.a;
-                this.a = e.b;
-                return;
-            }
+//            } catch (Ex e) {
+//                this.f = e.a;
+//                this.a = e.b;
+//                return;
+//            }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void g(byte[] bArr) {
         d();
-        this.c.write(bArr);
+        try {
+            this.c.write(bArr);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void h(short s) {
         d();
-        this.c.write((s >> 8) & 255);
-        this.c.write(s & 255);
+        try {
+            this.c.write((s >> 8) & 255);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        try {
+            this.c.write(s & 255);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

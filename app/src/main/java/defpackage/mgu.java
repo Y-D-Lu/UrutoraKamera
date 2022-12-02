@@ -5,9 +5,9 @@ import java.util.List;
 /* renamed from: mgu  reason: default package */
 /* loaded from: classes2.dex */
 public final class mgu {
-    public final mhe a;
-    public final List b;
-    public final mgw c;
+    public mhe a;
+    public List b;
+    public mgw c;
 
     public mgu() {
     }

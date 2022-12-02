@@ -1,6 +1,5 @@
 package defpackage;
 
-import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 
 import com.eszdmanClass;
@@ -24,8 +23,8 @@ public final class hvy {
         this.b = cameraManager;
         Object eszdmanVar = new eszdmanClass(cameraManager);
         ((lwa) eszdmanVar).cameraManager2 = (eszdmanClass)eszdmanVar;
-        eszdmanVar.c = executor;
-        eszdmanVar.d = scheduledExecutorService;
+        c = executor;
+        d = scheduledExecutorService;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

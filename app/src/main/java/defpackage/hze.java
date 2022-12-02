@@ -13,7 +13,7 @@ public final /* synthetic */ class hze implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        hzi hziVar;
+        hzi hziVar = null;
         switch (this.b) {
             case 0:
                 synchronized (this.a.e) {

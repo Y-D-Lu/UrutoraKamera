@@ -18,8 +18,8 @@ final class lay implements Runnable {
     public final void run() {
         try {
             plk.ad(this.b);
-        } catch (ExecutionException e) {
-            this.a.a.execute(new nfs(e, 1));
+        } catch (Exception e) {
+            this.a.a.execute(new nfs((ExecutionException) e, 1));
         } catch (Throwable th) {
             this.a.a.execute(new kqn(th, 3));
         }

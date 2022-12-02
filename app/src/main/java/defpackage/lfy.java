@@ -101,7 +101,12 @@ public final class lfy implements lfm {
         mediaFormat.setInteger("sample-rate", leeVar.c);
         mediaFormat.setInteger("channel-count", leeVar.e);
         mediaFormat.setInteger("bitrate", leeVar.b);
-        MediaCodec bG = mip.bG(a);
+        MediaCodec bG = null;
+        try {
+            bG = mip.bG(a);
+        } catch (lej ex) {
+            ex.printStackTrace();
+        }
         this.i = bG;
         bG.getClass();
         this.a = plk.J(mip.bM("AEncFormat"));

@@ -24,7 +24,7 @@ public final /* synthetic */ class mjs implements Runnable {
                 try {
                     mkbVar.e();
                     return;
-                } catch (IOException e) {
+                } catch (Exception e) {
                     mkbVar.c.a(e);
                     return;
                 }

@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: mux  reason: default package */
 /* loaded from: classes2.dex */
 public final class mux {
-    public final phw a;
-    public final int b;
-    public final int c;
-    public final boolean d;
+    public phw a;
+    public int b;
+    public int c;
+    public boolean d;
 
     public mux() {
     }

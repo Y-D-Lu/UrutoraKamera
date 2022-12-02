@@ -2,7 +2,6 @@ package defpackage;
 
 import android.os.SystemClock;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -371,7 +370,8 @@ public final class mbf implements mbc {
                                 lisVar4.f(sb6.toString());
                                 mceVar2.j();
                             }
-                        } catch (InterruptedException e2) {
+                        } catch (Exception e2) {
+                            e2.printStackTrace();
                         }
                         mazVar.e.f();
                         mazVar.d.execute(new Runnable() { // from class: may

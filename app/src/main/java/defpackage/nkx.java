@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: nkx  reason: default package */
 /* loaded from: classes2.dex */
 public final class nkx {
-    public final pqm a;
-    public final pos b;
+    public pqm a;
+    public pos b;
 
     public nkx() {
     }

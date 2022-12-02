@@ -16,7 +16,7 @@ final class mcl extends FileOutputStream {
     private boolean d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public mcl(mcm mcmVar, FileOutputStream fileOutputStream) {
+    public mcl(mcm mcmVar, FileOutputStream fileOutputStream) throws IOException {
         super(fileOutputStream.getFD());
         this.a = mcmVar;
         this.b = mcm.a.incrementAndGet();
@@ -35,7 +35,11 @@ final class mcl extends FileOutputStream {
             mcm mcmVar = this.a;
             AtomicInteger atomicInteger = mcm.a;
             mip mipVar = mcmVar.e;
-            Os.fdatasync(getFD());
+            try {
+                Os.fdatasync(getFD());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             iOException = null;
         } catch (ErrnoException e) {
             iOException = new IOException(e);
@@ -55,7 +59,11 @@ final class mcl extends FileOutputStream {
             }
         }
         if (iOException != null) {
-            throw iOException;
+            try {
+                throw iOException;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         mcm mcmVar2 = this.a;
         AtomicInteger atomicInteger2 = mcm.a;

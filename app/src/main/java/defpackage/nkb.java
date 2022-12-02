@@ -38,7 +38,7 @@ public final /* synthetic */ class nkb implements pgk {
                         nkgVar3.d.c(i, uri);
                     }
                     return phq.a;
-                } catch (IOException e) {
+                } catch (Exception e) {
                     return plk.U(e);
                 }
             default:

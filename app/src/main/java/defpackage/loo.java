@@ -92,13 +92,13 @@ public final class loo {
                                             }
                                         }
                                     }
-                                } catch (InterruptedException e) {
-                                    Thread.currentThread().interrupt();
-                                    lis lisVar = looVar.b;
-                                    StringBuilder sb = new StringBuilder(53);
-                                    sb.append("Interrupted when updating 3a with locksRetained=");
-                                    sb.append(z2);
-                                    lisVar.c(sb.toString(), e);
+//                                } catch (InterruptedException e) {
+//                                    Thread.currentThread().interrupt();
+//                                    lis lisVar = looVar.b;
+//                                    StringBuilder sb = new StringBuilder(53);
+//                                    sb.append("Interrupted when updating 3a with locksRetained=");
+//                                    sb.append(z2);
+//                                    lisVar.c(sb.toString(), e);
                                 } catch (llv e2) {
                                     lis lisVar2 = looVar.b;
                                     StringBuilder sb2 = new StringBuilder(64);
@@ -111,8 +111,17 @@ public final class loo {
                                 synchronized (lpqVar2) {
                                     lmq a3 = lpqVar2.c.a(lmqVar2, lpqVar2.a);
                                     if (!a3.equals(lpqVar2.a)) {
-                                        lqx a4 = lpqVar2.b.a();
-                                        a4.e(a3, true);
+                                        lqx a4 = null;
+                                        try {
+                                            a4 = lpqVar2.b.a();
+                                        } catch (llv ex) {
+                                            ex.printStackTrace();
+                                        }
+                                        try {
+                                            a4.e(a3, true);
+                                        } catch (llv ex) {
+                                            ex.printStackTrace();
+                                        }
                                         a4.close();
                                         synchronized (lpqVar2) {
                                             try {

@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.OutputStream;
 
 /* renamed from: llw  reason: default package */
@@ -38,7 +39,11 @@ public final class llw {
     public final void c(OutputStream outputStream, int i) {
         int i2 = this.b;
         if (i2 + i <= this.c) {
-            outputStream.write(this.a, i2, i);
+            try {
+                outputStream.write(this.a, i2, i);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             this.b += i;
             return;
         }

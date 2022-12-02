@@ -1,6 +1,5 @@
 package defpackage;
 
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
@@ -23,7 +22,7 @@ public final class omy extends omm {
     }
 
     @Override // defpackage.opm, java.util.NavigableSet
-    public final /* synthetic */ Iterator descendingIterator() {
+    public final /* synthetic */ oti descendingIterator() {
         return opy.a;
     }
 
@@ -71,7 +70,7 @@ public final class omy extends omm {
     }
 
     @Override // defpackage.opm, defpackage.ope, defpackage.ood, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set, java.util.NavigableSet
-    public final /* synthetic */ Iterator iterator() {
+    public final /* synthetic */ oti iterator() {
         return opy.a;
     }
 

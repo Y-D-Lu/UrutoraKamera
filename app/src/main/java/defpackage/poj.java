@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.OutputStream;
 
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -27,7 +28,11 @@ public final class poj extends pom {
     }
 
     private final void aC() {
-        this.g.write(this.a, 0, this.c);
+        try {
+            this.g.write(this.a, 0, this.c);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         this.c = 0;
     }
 
@@ -241,7 +246,11 @@ public final class poj extends pom {
             System.arraycopy(bArr, i6, this.a, 0, i7);
             this.c = i7;
         } else {
-            this.g.write(bArr, i6, i7);
+            try {
+                this.g.write(bArr, i6, i7);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
         this.d += i7;
     }
@@ -389,7 +398,11 @@ public final class poj extends pom {
                 }
                 this.d += b;
             } catch (ArrayIndexOutOfBoundsException e) {
-                throw new pol(e);
+                try {
+                    throw new pol(e);
+                } catch (pol ex) {
+                    ex.printStackTrace();
+                }
             } catch (prw e2) {
                 this.d -= this.c - i3;
                 this.c = i3;

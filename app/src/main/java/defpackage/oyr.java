@@ -74,7 +74,11 @@ public final class oyr {
     public final int b(char c) {
         if (c > 127) {
             String valueOf = String.valueOf(Integer.toHexString(c));
-            throw new oyt(valueOf.length() != 0 ? "Unrecognized character: 0x".concat(valueOf) : new String("Unrecognized character: 0x"));
+            try {
+                throw new oyt(valueOf.length() != 0 ? "Unrecognized character: 0x".concat(valueOf) : new String("Unrecognized character: 0x"));
+            } catch (oyt ex) {
+                ex.printStackTrace();
+            }
         }
         byte b = this.h[c];
         if (b != -1) {
@@ -82,12 +86,21 @@ public final class oyr {
         }
         if (c <= ' ' || c == 127) {
             String valueOf2 = String.valueOf(Integer.toHexString(c));
-            throw new oyt(valueOf2.length() != 0 ? "Unrecognized character: 0x".concat(valueOf2) : new String("Unrecognized character: 0x"));
+            try {
+                throw new oyt(valueOf2.length() != 0 ? "Unrecognized character: 0x".concat(valueOf2) : new String("Unrecognized character: 0x"));
+            } catch (oyt ex) {
+                ex.printStackTrace();
+            }
         }
         StringBuilder sb = new StringBuilder(25);
         sb.append("Unrecognized character: ");
         sb.append(c);
-        throw new oyt(sb.toString());
+        try {
+            throw new oyt(sb.toString());
+        } catch (oyt ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     public final boolean c(char c) {

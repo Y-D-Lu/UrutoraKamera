@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
+import android.os.DeadObjectException;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Parcel;
@@ -216,7 +217,11 @@ public final class jyq implements fgq, jxo, kwl, fik, fhy, fii, fij, fib {
                         ((kyo) kzqVar.u()).e(new kyp(nvbVar.a, kwlVar, kzkVar), new kwx(kzsVar));
                     } catch (Exception e) {
                         nvbVar.a.remove(kwlVar);
-                        throw e;
+                        try {
+                            throw e;
+                        } catch (DeadObjectException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                 }
             }
@@ -235,7 +240,12 @@ public final class jyq implements fgq, jxo, kwl, fik, fhy, fii, fij, fib {
                         return;
                     }
                     kzsVar.l();
-                    kyo kyoVar = (kyo) kzqVar.u();
+                    kyo kyoVar = null;
+                    try {
+                        kyoVar = (kyo) kzqVar.u();
+                    } catch (DeadObjectException ex) {
+                        ex.printStackTrace();
+                    }
                     kyq kyqVar = new kyq(nvbVar.a, kwlVar, kzkVar);
                     kzf kzfVar = new kzf(kzsVar);
                     Parcel a3 = kyoVar.a();

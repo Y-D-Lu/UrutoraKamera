@@ -5,6 +5,8 @@ import android.media.MediaFormat;
 import android.os.Handler;
 import android.view.Surface;
 
+import java.io.IOException;
+
 /* renamed from: msb  reason: default package */
 /* loaded from: classes2.dex */
 final class msb implements msc {
@@ -28,7 +30,12 @@ final class msb implements msc {
                 }
             };
         }
-        MediaCodec createEncoderByType = MediaCodec.createEncoderByType(mrzVar.a.getString("mime"));
+        MediaCodec createEncoderByType = null;
+        try {
+            createEncoderByType = MediaCodec.createEncoderByType(mrzVar.a.getString("mime"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         boolean z2 = mot.a;
         mrx mrxVar = new mrx(createEncoderByType, mrzVar.a, mrzVar.d, mrzVar.c, mrzVar.b);
         this.a = mrxVar;

@@ -21,6 +21,6 @@ public class jva extends juy {
     /* JADX WARN: Type inference failed for: r0v2, types: [java.lang.Object, jvy] */
     @Override // defpackage.juy, defpackage.ihs, defpackage.iht
     public final void f() {
-        this.a.a.mo37get().c();
+        ((jvy)this.a.a.mo37get()).c();
     }
 }

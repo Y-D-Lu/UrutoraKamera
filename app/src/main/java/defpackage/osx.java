@@ -367,8 +367,8 @@ public final class osx {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final osx i(Comparator comparator, Object obj, int[] iArr) {
-        int i;
-        int i2;
+        int i = 0;
+        int i2 = 0;
         int compare = comparator.compare(obj, this.a);
         if (compare < 0) {
             osx osxVar = this.e;

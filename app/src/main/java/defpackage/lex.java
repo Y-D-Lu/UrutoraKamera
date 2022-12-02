@@ -14,7 +14,12 @@ public final class lex implements lfc {
         try {
             return new lvk(new MediaMuxer(fileDescriptor, i));
         } catch (IOException e) {
-            throw new lfb(i, e);
+            try {
+                throw new lfb(i, e);
+            } catch (lfb ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 }

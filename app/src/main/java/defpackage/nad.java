@@ -7,7 +7,7 @@ public final class nad {
     long b;
     int c;
     int d;
-    final String e;
+    String e;
     String f;
     int g;
     String h;

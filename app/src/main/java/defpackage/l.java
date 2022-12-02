@@ -908,7 +908,9 @@ public final class l extends Format {
                                     if (i10 != c2) {
                                         aaVar = aaVar3;
                                         if (d5.e != 3) {
-                                            continue;
+                                            if (true) {
+                                                continue;
+                                            }
                                             f2 = str3;
                                             aaVar3 = aaVar;
                                         }

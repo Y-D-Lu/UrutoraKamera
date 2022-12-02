@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -187,8 +188,19 @@ public final class onu extends AbstractMap implements Serializable, olt {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        objectInputStream.defaultReadObject();
-        int readInt = objectInputStream.readInt();
+        try {
+            objectInputStream.defaultReadObject();
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        int readInt = 0;
+        try {
+            readInt = objectInputStream.readInt();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         l();
         obr.H(this, objectInputStream, readInt);
     }
@@ -201,7 +213,11 @@ public final class onu extends AbstractMap implements Serializable, olt {
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        objectOutputStream.defaultWriteObject();
+        try {
+            objectOutputStream.defaultWriteObject();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         obr.K(this, objectOutputStream);
     }
 

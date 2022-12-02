@@ -14,13 +14,13 @@ public final class kmr {
     public static final Object a = new Object();
     public static HandlerThread b;
     public static kmr h;
-    public final HashMap c;
-    public final Context d;
+    public HashMap c;
+    public Context d;
     public volatile Handler e;
-    public final knx f;
-    public final long g;
-    private final kmt i;
-    private final long j;
+    public knx f;
+    public long g;
+    private kmt i;
+    private long j;
 
     public kmr() {
     }

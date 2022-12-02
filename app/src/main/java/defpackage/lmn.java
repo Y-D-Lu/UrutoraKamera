@@ -2,6 +2,7 @@ package defpackage;
 
 import android.util.Log;
 
+import java.io.IOException;
 import java.io.OutputStream;
 
 /* renamed from: lmn  reason: default package */
@@ -39,12 +40,20 @@ public final class lmn extends OutputStream {
             sb3.append(" bytes");
             Log.w("CAM_ProcFSM", sb3.toString());
         }
-        lmmVar.c.close();
+        try {
+            lmmVar.c.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // java.io.OutputStream, java.io.Flushable
     public final void flush() {
-        this.a.c.flush();
+        try {
+            this.a.c.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // java.io.OutputStream
@@ -57,7 +66,11 @@ public final class lmn extends OutputStream {
             }
             lmmVar.d = i2 - 1;
         } else if (lmmVar.e != 0) {
-            lmmVar.c.write(i);
+            try {
+                lmmVar.c.write(i);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             int i3 = lmmVar.e;
             if (i3 <= 0) {
                 return;

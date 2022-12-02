@@ -11,11 +11,21 @@ public final class poz extends pno {
 
     @Override // defpackage.pno
     public final /* bridge */ /* synthetic */ pqm c(byte[] bArr, int i, pos posVar) {
-        return ppd.u(this.a, bArr, 1, i, posVar);
+        try {
+            return ppd.u(this.a, bArr, 1, i, posVar);
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.pqs
     public final /* bridge */ /* synthetic */ Object d(poh pohVar, pos posVar) {
-        return ppd.t(this.a, pohVar, posVar);
+        try {
+            return ppd.t(this.a, pohVar, posVar);
+        } catch (ppp e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

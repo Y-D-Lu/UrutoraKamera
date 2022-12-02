@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
@@ -18,7 +19,11 @@ class oso implements Serializable {
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
         synchronized (this.h) {
-            objectOutputStream.defaultWriteObject();
+            try {
+                objectOutputStream.defaultWriteObject();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

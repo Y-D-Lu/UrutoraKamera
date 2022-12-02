@@ -16,6 +16,11 @@ public final class mhk extends ClassLoader {
 
     @Override // java.lang.ClassLoader
     protected final Class findClass(String str) {
-        return this.b.contains(str) ? this.a.loadClass(str) : super.findClass(str);
+        try {
+            return this.b.contains(str) ? this.a.loadClass(str) : super.findClass(str);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

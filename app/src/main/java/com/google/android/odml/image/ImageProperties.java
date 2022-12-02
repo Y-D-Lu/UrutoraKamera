@@ -6,7 +6,7 @@ import defpackage.odo;
 public abstract class ImageProperties {
 
     /* loaded from: classes.dex */
-    public abstract class Builder {
+    public static abstract class Builder {
         public abstract ImageProperties build();
 
         public abstract Builder setImageFormat(int i);

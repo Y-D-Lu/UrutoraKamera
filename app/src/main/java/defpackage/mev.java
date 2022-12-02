@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: mev  reason: default package */
 /* loaded from: classes2.dex */
 public final class mev {
-    private final Long a;
-    private final int b;
+    private Long a;
+    private int b;
 
     public mev() {
     }

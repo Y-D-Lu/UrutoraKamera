@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.os.DeadObjectException;
 import android.os.Parcel;
 
 import com.google.android.gms.common.api.Status;
@@ -30,7 +31,12 @@ public final class kyr extends kxb {
         String str = this.a;
         String str2 = this.b;
         byte[] bArr = this.k;
-        kyo kyoVar = (kyo) ((kzq) khzVar).u();
+        kyo kyoVar = null;
+        try {
+            kyoVar = (kyo) ((kzq) khzVar).u();
+        } catch (DeadObjectException ex) {
+            ex.printStackTrace();
+        }
         kzp kzpVar = new kzp(this);
         Parcel a = kyoVar.a();
         bmp.e(a, kzpVar);

@@ -11,6 +11,11 @@ public final class mly implements mlu {
 
     @Override // defpackage.mlu
     public final Object a(Object obj) {
-        throw this.a;
+        try {
+            throw this.a;
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

@@ -37,11 +37,16 @@ public final class mql implements Callable {
                 return mqyVar;
             } catch (Exception e) {
                 mqyVar.close();
-                throw e;
+                try {
+                    throw e;
+                } catch (mrk ex) {
+                    ex.printStackTrace();
+                }
             }
         } finally {
             this.a.a.close();
         }
+        return null;
     }
 
     public final String toString() {

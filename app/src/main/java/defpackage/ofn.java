@@ -6,7 +6,7 @@ import android.os.Parcel;
 /* renamed from: ofn  reason: default package */
 /* loaded from: classes2.dex */
 public final class ofn extends bmo implements IInterface {
-    final /* synthetic */ dku a;
+    /* synthetic */ dku a;
 
     public ofn() {
         super("com.google.android.systemui.elmyra.IElmyraServiceGestureListener");

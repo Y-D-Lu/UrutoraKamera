@@ -44,7 +44,11 @@ public final class pok extends pom {
                 bArr[i2] = (byte) ((i & 127) | 128);
                 i >>>= 7;
             } catch (IndexOutOfBoundsException e) {
-                throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+                try {
+                    throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+                } catch (pol ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         byte[] bArr2 = this.a;
@@ -83,7 +87,11 @@ public final class pok extends pom {
                 bArr3[i3] = (byte) ((((int) j) & 127) | 128);
                 j >>>= 7;
             } catch (IndexOutOfBoundsException e) {
-                throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+                try {
+                    throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+                } catch (pol ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         byte[] bArr4 = this.a;
@@ -113,7 +121,11 @@ public final class pok extends pom {
             System.arraycopy(bArr, i, this.a, this.c, i2);
             this.c += i2;
         } catch (IndexOutOfBoundsException e) {
-            throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), Integer.valueOf(i2)), e);
+            try {
+                throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), Integer.valueOf(i2)), e);
+            } catch (pol ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -129,7 +141,11 @@ public final class pok extends pom {
             this.c = i + 1;
             bArr[i] = b;
         } catch (IndexOutOfBoundsException e) {
-            throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+            try {
+                throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+            } catch (pol ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -174,7 +190,11 @@ public final class pok extends pom {
             this.c = i5 + 1;
             bArr[i5] = (byte) ((i >> 24) & 255);
         } catch (IndexOutOfBoundsException e) {
-            throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+            try {
+                throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+            } catch (pol ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -213,7 +233,11 @@ public final class pok extends pom {
             this.c = i8 + 1;
             bArr[i8] = (byte) (((int) (j >> 56)) & 255);
         } catch (IndexOutOfBoundsException e) {
-            throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+            try {
+                throw new pol(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.c), Integer.valueOf(this.b), 1), e);
+            } catch (pol ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -292,7 +316,11 @@ public final class pok extends pom {
             C((a - i) - ad2);
             this.c = a;
         } catch (IndexOutOfBoundsException e) {
-            throw new pol(e);
+            try {
+                throw new pol(e);
+            } catch (pol ex) {
+                ex.printStackTrace();
+            }
         } catch (prw e2) {
             this.c = i;
             al(str, e2);

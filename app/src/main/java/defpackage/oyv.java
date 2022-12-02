@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.math.RoundingMode;
 import java.util.Arrays;
 
@@ -35,7 +36,11 @@ public class oyv extends oyw {
             StringBuilder sb = new StringBuilder(32);
             sb.append("Invalid input length ");
             sb.append(length);
-            throw new oyt(sb.toString());
+            try {
+                throw new oyt(sb.toString());
+            } catch (oyt ex) {
+                ex.printStackTrace();
+            }
         }
         int i = 0;
         int i2 = 0;
@@ -85,12 +90,20 @@ public class oyv extends oyw {
             int i5 = 0;
             while (i5 < min * 8) {
                 oyr oyrVar = this.b;
-                appendable.append(oyrVar.a(oyrVar.c & ((int) (j >>> (i4 - i5)))));
+                try {
+                    appendable.append(oyrVar.a(oyrVar.c & ((int) (j >>> (i4 - i5)))));
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 i5 += this.b.d;
             }
             if (this.c != null) {
                 while (i5 < this.b.f * 8) {
-                    appendable.append(this.c.charValue());
+                    try {
+                        appendable.append(this.c.charValue());
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                     i5 += this.b.d;
                 }
             }

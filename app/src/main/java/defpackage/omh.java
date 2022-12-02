@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.InvalidObjectException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -81,26 +82,59 @@ public final class omh extends AbstractSet implements Serializable {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        objectInputStream.defaultReadObject();
-        int readInt = objectInputStream.readInt();
+        try {
+            objectInputStream.defaultReadObject();
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        int readInt = 0;
+        try {
+            readInt = objectInputStream.readInt();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         if (readInt < 0) {
             StringBuilder sb = new StringBuilder(25);
             sb.append("Invalid size: ");
             sb.append(readInt);
-            throw new InvalidObjectException(sb.toString());
+            try {
+                throw new InvalidObjectException(sb.toString());
+            } catch (InvalidObjectException ex) {
+                ex.printStackTrace();
+            }
         }
         f(readInt);
         for (int i = 0; i < readInt; i++) {
-            add(objectInputStream.readObject());
+            try {
+                add(objectInputStream.readObject());
+            } catch (ClassNotFoundException ex) {
+                ex.printStackTrace();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        objectOutputStream.defaultWriteObject();
-        objectOutputStream.writeInt(size());
+        try {
+            objectOutputStream.defaultWriteObject();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        try {
+            objectOutputStream.writeInt(size());
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         Iterator it = iterator();
         while (it.hasNext()) {
-            objectOutputStream.writeObject(it.next());
+            try {
+                objectOutputStream.writeObject(it.next());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 

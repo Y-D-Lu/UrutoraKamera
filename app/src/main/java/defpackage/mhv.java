@@ -5,8 +5,8 @@ import com.google.android.libraries.lens.lenslite.dynamicloading.DLEngineApi;
 /* renamed from: mhv  reason: default package */
 /* loaded from: classes2.dex */
 public final class mhv {
-    public final DLEngineApi a;
-    public final String b;
+    public DLEngineApi a;
+    public String b;
 
     public mhv() {
     }

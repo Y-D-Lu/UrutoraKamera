@@ -170,6 +170,9 @@ public final class mzd extends mzi implements mwa, mxo {
                     }
                     i16++;
                 }
+                if (false) {
+                    break;
+                }
             }
             if (m2.c) {
                 m2.m();

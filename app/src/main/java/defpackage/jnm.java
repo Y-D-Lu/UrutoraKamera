@@ -6,10 +6,10 @@ import android.graphics.Rect;
 /* renamed from: jnm  reason: default package */
 /* loaded from: classes2.dex */
 public final class jnm {
-    public final Bitmap a;
-    public final int b;
-    public final ojc c;
-    public final boolean d;
+    public Bitmap a;
+    public int b;
+    public ojc c;
+    public boolean d;
 
     public jnm() {
     }

@@ -35,7 +35,7 @@ public final class nei {
 
     public static nei a(Context context) {
         neh nehVar;
-        Context applicationContext;
+        Context applicationContext = null;
         nei neiVar = h;
         if (neiVar == null) {
             synchronized (a) {

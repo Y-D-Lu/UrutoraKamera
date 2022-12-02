@@ -31,6 +31,10 @@ final class lwn extends maa {
 
     public final void finalize() {
         close();
-        super.finalize();
+        try {
+            super.finalize();
+        } catch (Throwable ex) {
+            ex.printStackTrace();
+        }
     }
 }

@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: pki  reason: default package */
 /* loaded from: classes2.dex */
 public final class pki {
-    public final Runnable a;
-    public final Runnable b;
-    public final Runnable c;
-    private final long d;
+    public Runnable a;
+    public Runnable b;
+    public Runnable c;
+    private long d;
 
     public pki() {
     }

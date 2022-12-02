@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: nbo  reason: default package */
 /* loaded from: classes2.dex */
 public final class nbo implements mwi {
-    public final int a;
-    public final float b;
-    private final ojc c;
-    private final int d;
+    public int a;
+    public float b;
+    private ojc c;
+    private int d;
 
     public nbo() {
     }

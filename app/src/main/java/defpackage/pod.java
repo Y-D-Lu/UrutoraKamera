@@ -51,9 +51,17 @@ public final class pod extends poh {
             }
         }
         if (i < 0) {
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.poh
@@ -78,7 +86,11 @@ public final class pod extends poh {
                             i2++;
                         }
                     }
-                    throw ppp.e();
+                    try {
+                        throw ppp.e();
+                    } catch (ppp ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 while (i2 < 10) {
                     byte[] bArr = this.e;
@@ -88,7 +100,11 @@ public final class pod extends poh {
                         i2++;
                     }
                 }
-                throw ppp.e();
+                try {
+                    throw ppp.e();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
                 return true;
             case 1:
                 B(8);
@@ -104,14 +120,23 @@ public final class pod extends poh {
                 B(4);
                 return true;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             m = m();
             if (m != 0) {
             }
             z(psa.c(psa.a(i), 4));
-            return true;
+            if (true) {
+                return true;
+            }
+            if (false) {
+                break;
+            }
         } while (E(m));
         z(psa.c(psa.a(i), 4));
         return true;
@@ -124,7 +149,12 @@ public final class pod extends poh {
             this.h = i + 1;
             return bArr[i];
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -147,17 +177,30 @@ public final class pod extends poh {
         if (i >= 0) {
             int d = i + d();
             if (d < 0) {
-                throw ppp.g();
+                try {
+                    throw ppp.g();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
             int i2 = this.k;
             if (d > i2) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
             this.k = d;
             K();
             return i2;
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -182,7 +225,12 @@ public final class pod extends poh {
             this.h = i + 4;
             return ((bArr[i + 3] & 255) << 24) | (bArr[i] & 255) | ((bArr[i + 1] & 255) << 8) | ((bArr[i + 2] & 255) << 16);
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:31:0x0068, code lost:
@@ -292,7 +340,11 @@ public final class pod extends poh {
         int j = j();
         this.j = j;
         if (psa.a(j) == 0) {
-            throw ppp.c();
+            try {
+                throw ppp.c();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         return this.j;
     }
@@ -319,11 +371,16 @@ public final class pod extends poh {
             this.h = i + 8;
             return ((bArr[i + 7] & 255) << 56) | (bArr[i] & 255) | ((bArr[i + 1] & 255) << 8) | ((bArr[i + 2] & 255) << 16) | ((bArr[i + 3] & 255) << 24) | ((bArr[i + 4] & 255) << 32) | ((bArr[i + 5] & 255) << 40) | ((bArr[i + 6] & 255) << 48);
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     public final long r() {
-        long j;
+        long j = 0L;
         int i = this.h;
         int i2 = this.f;
         if (i2 != i) {
@@ -409,7 +466,12 @@ public final class pod extends poh {
                 return j;
             }
         }
-        throw ppp.e();
+        try {
+            throw ppp.e();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -450,9 +512,17 @@ public final class pod extends poh {
                 }
             }
             if (j > 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         return poc.b;
     }
@@ -473,9 +543,18 @@ public final class pod extends poh {
             return "";
         }
         if (j >= 0) {
-            throw ppp.i();
+            try {
+                throw ppp.i();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return "";
     }
 
     @Override // defpackage.poh
@@ -494,9 +573,18 @@ public final class pod extends poh {
             return "";
         }
         if (j > 0) {
-            throw ppp.i();
+            try {
+                throw ppp.i();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return "";
     }
 
     @Override // defpackage.poh
@@ -504,6 +592,10 @@ public final class pod extends poh {
         if (this.j == i) {
             return;
         }
-        throw ppp.b();
+        try {
+            throw ppp.b();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 }

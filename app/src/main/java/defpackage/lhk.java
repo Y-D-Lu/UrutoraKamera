@@ -104,7 +104,7 @@ public final class lhk implements lfj {
                 this.c = lflVar;
             }
             this.d = 1;
-        } catch (lhb e) {
+        } catch (Exception e) {
             String valueOf = String.valueOf(e);
             StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 58);
             sb.append("immediateFailedFuture: MediaRecorder.prepare() exception: ");
@@ -147,7 +147,7 @@ public final class lhk implements lfj {
                 if (lflVar != null) {
                     lflVar.c();
                 }
-            } catch (lhb e) {
+            } catch (Exception e) {
                 Log.e("VidRecMedRec", "Fails to stop mediarecorder. Perhaps the recording is too short");
             }
             this.d = 3;
@@ -210,7 +210,7 @@ public final class lhk implements lfj {
             obr.aQ(z);
             try {
                 this.b.r(fileDescriptor);
-            } catch (lhb e) {
+            } catch (Exception e) {
                 Log.e("VidRecMedRec", "Fail to set next file descriptor.");
                 throw new IllegalStateException("Fail to set next file descriptor.", e);
             }

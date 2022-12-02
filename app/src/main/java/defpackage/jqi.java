@@ -104,14 +104,14 @@ public final class jqi implements jqn {
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     gts gtsVar2 = gtsVar;
-                    if (gtsVar2.a.mo37get().F()) {
-                        gtsVar2.a.mo37get().g();
+                    if (((gtt)gtsVar2.a.mo37get()).F()) {
+                        ((gtt)gtsVar2.a.mo37get()).g();
                     } else {
-                        gtsVar2.a.mo37get().n();
+                        ((gtt)gtsVar2.a.mo37get()).n();
                     }
                 }
             });
-            gtsVar.a.mo37get().f(gtsVar);
+            ((gtt)gtsVar.a.mo37get()).f(gtsVar);
             gtgVar.x(false);
         } else {
             optionsMenuContainer.b().setVisibility(8);

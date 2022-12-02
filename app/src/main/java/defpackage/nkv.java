@@ -22,7 +22,12 @@ public final class nkv extends njo {
             @Override // defpackage.pgk
             public final pht a(Object obj) {
                 IOException iOException2 = (IOException) obj;
-                throw iOException;
+                try {
+                    throw iOException;
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                return null;
             }
         }, pgr.a);
     }

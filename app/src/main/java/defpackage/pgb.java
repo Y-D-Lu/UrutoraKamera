@@ -110,7 +110,7 @@ public abstract class pgb extends phb implements Runnable {
             cancel(false);
         } catch (RuntimeException e3) {
             a(e3);
-        } catch (ExecutionException e4) {
+        } catch (Exception e4) {
             a(e4.getCause());
         }
     }

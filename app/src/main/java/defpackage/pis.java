@@ -40,7 +40,12 @@ public final class pis extends InputStream {
             }
             return -1;
         }
-        throw new IOException("read after close");
+        try {
+            throw new IOException("read after close");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return -1;
     }
 
     @Override // java.io.InputStream
@@ -68,7 +73,12 @@ public final class pis extends InputStream {
             }
             return i3;
         }
-        throw new IOException("read after close");
+        try {
+            throw new IOException("read after close");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return -1;
     }
 
     @Override // java.io.InputStream
@@ -89,6 +99,11 @@ public final class pis extends InputStream {
             }
             return j2;
         }
-        throw new IOException("read after close");
+        try {
+            throw new IOException("read after close");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }

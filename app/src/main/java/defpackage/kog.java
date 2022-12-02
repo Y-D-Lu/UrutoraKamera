@@ -7,7 +7,7 @@ import java.lang.reflect.Field;
 /* renamed from: kog  reason: default package */
 /* loaded from: classes2.dex */
 public final class kog extends bmo implements koh {
-    private final Object a;
+    private Object a;
 
     public kog() {
         super("com.google.android.gms.dynamic.IObjectWrapper");

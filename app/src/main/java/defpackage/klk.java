@@ -10,6 +10,11 @@ public final class klk implements kuu {
         if (((Boolean) kvkVar.c()).booleanValue()) {
             return null;
         }
-        throw new kig(new Status(13, "listener already unregistered"));
+        try {
+            throw new kig(new Status(13, "listener already unregistered"));
+        } catch (kig e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

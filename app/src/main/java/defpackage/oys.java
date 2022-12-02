@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.io.IOException;
+
 /* renamed from: oys  reason: default package */
 /* loaded from: classes2.dex */
 public final class oys extends oyv {
@@ -23,7 +25,11 @@ public final class oys extends oyv {
             StringBuilder sb = new StringBuilder(32);
             sb.append("Invalid input length ");
             sb.append(length);
-            throw new oyt(sb.toString());
+            try {
+                throw new oyt(sb.toString());
+            } catch (oyt ex) {
+                ex.printStackTrace();
+            }
         }
         int i = 0;
         int i2 = 0;
@@ -41,8 +47,12 @@ public final class oys extends oyv {
         obr.aP(0, i, bArr.length);
         for (int i2 = 0; i2 < i; i2++) {
             int i3 = bArr[i2] & 255;
-            appendable.append(this.a[i3]);
-            appendable.append(this.a[i3 | 256]);
+            try {
+                appendable.append(this.a[i3]);
+                appendable.append(this.a[i3 | 256]);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 }

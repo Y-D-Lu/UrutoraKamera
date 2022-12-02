@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: idm  reason: default package */
 /* loaded from: classes.dex */
 public final class idm {
-    public final ope a;
-    public final ope b;
-    private final String c;
+    public ope a;
+    public ope b;
+    private String c;
 
     public idm() {
     }

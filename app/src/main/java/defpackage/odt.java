@@ -2,6 +2,7 @@ package defpackage;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.IntentSender;
 import android.os.Handler;
 import android.os.Looper;
 
@@ -60,6 +61,10 @@ public final class odt implements ods {
             return;
         }
         odrVar.d = true;
-        activity.startIntentSenderForResult(odrVar.a(a).getIntentSender(), 57439, null, 0, 0, 0, null);
+        try {
+            activity.startIntentSenderForResult(odrVar.a(a).getIntentSender(), 57439, null, 0, 0, 0, null);
+        } catch (IntentSender.SendIntentException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
@@ -17,8 +18,12 @@ public final class nuf {
         try {
             StringWriter stringWriter = new StringWriter();
             char[] cArr = new char[8192];
-            for (int read = bufferedReader.read(cArr); read >= 0; read = bufferedReader.read(cArr)) {
-                stringWriter.write(cArr, 0, read);
+            try {
+                for (int read = bufferedReader.read(cArr); read >= 0; read = bufferedReader.read(cArr)) {
+                    stringWriter.write(cArr, 0, read);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
             String stringWriter2 = stringWriter.toString();
             stringWriter2.getClass();

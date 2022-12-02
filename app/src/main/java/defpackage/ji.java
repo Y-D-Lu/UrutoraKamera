@@ -9,7 +9,7 @@ final class ji {
     public int d;
 
     public final void a(long j, double d, double d2) {
-        float f;
+        float f = 0;
         float f2 = ((float) ((-946728000000L) + j)) / 8.64E7f;
         double d3 = (0.01720197f * f2) + 6.24006f;
         Double.isNaN(d3);

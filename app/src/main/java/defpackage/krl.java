@@ -25,8 +25,8 @@ final class krl implements krm {
         kor korVar;
         kor c2;
         ThreadLocal threadLocal;
-        int i;
-        Boolean bool;
+        int i = 0;
+        Boolean bool = null;
         koh kofVar;
         kot kotVar;
         Boolean valueOf;
@@ -79,10 +79,10 @@ final class krl implements krm {
                                         synchronized (kor.class) {
                                             bool = kor.a;
                                         }
-                                    } catch (RemoteException e) {
-                                        throw new koo("Failed to load remote module.", e);
-                                    } catch (koo e2) {
-                                        throw e2;
+//                                    } catch (RemoteException e) {
+//                                        throw new koo("Failed to load remote module.", e);
+//                                    } catch (koo e2) {
+//                                        throw e2;
                                     } catch (Throwable th) {
                                         throw new koo("Failed to load remote module.", th);
                                     }
@@ -272,7 +272,11 @@ final class krl implements krm {
             if (a7 != null) {
                 return a7;
             }
-            throw new krn(str.length() != 0 ? "null impl for ".concat(str) : new String("null impl for "));
+            try {
+                throw new krn(str.length() != 0 ? "null impl for ".concat(str) : new String("null impl for "));
+            } catch (krn e) {
+                e.printStackTrace();
+            }
         } catch (koo e6) {
             String message = e6.getMessage();
             StringBuilder sb3 = new StringBuilder(str.length() + 21 + String.valueOf(message).length());
@@ -280,7 +284,12 @@ final class krl implements krm {
             sb3.append(str);
             sb3.append(": ");
             sb3.append(message);
-            throw new krn(sb3.toString(), e6);
+            try {
+                throw new krn(sb3.toString(), e6);
+            } catch (krn e) {
+                e.printStackTrace();
+            }
         }
+        return null;
     }
 }

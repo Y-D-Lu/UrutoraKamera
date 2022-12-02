@@ -5,6 +5,10 @@ package defpackage;
 public final class mlv extends mmh {
     @Override // defpackage.mmh
     public final /* bridge */ /* synthetic */ void b(Object obj) {
-        ((AutoCloseable) obj).close();
+        try {
+            ((AutoCloseable) obj).close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

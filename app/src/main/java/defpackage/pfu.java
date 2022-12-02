@@ -12,7 +12,12 @@ class pfu implements PrivilegedExceptionAction {
         Field[] declaredFields;
         for (Field field : Unsafe.class.getDeclaredFields()) {
             field.setAccessible(true);
-            Object obj = field.get(null);
+            Object obj = null;
+            try {
+                obj = field.get(null);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
             if (Unsafe.class.isInstance(obj)) {
                 return (Unsafe) Unsafe.class.cast(obj);
             }

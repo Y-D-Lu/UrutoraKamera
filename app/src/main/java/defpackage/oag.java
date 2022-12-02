@@ -47,7 +47,7 @@ public final class oag extends oat {
 
     @Override // defpackage.oat
     public final void c(Canvas canvas, float f) {
-        int i;
+        int i = 0;
         oam oamVar = (oam) this.a;
         float f2 = (oamVar.g / 2.0f) + oamVar.h;
         canvas.translate(f2, f2);

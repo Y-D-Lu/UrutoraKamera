@@ -30,7 +30,7 @@ public final class llg {
                 }
                 this.a.g(i3);
                 return;
-            } catch (llv e) {
+            } catch (Exception e) {
                 this.b.i("Failed to set audio restriction on camera device.", e);
                 return;
             }

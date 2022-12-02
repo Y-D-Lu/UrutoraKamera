@@ -7,21 +7,21 @@ import android.util.Size;
 /* loaded from: classes.dex */
 public final class jbt {
     public static final jbt a;
-    public final Size b;
-    public final Rect c;
-    public final Rect d;
-    public final Rect e;
-    public final Rect f;
-    public final Rect g;
-    public final Rect h;
-    public final Rect i;
-    public final Rect j;
-    public final Rect k;
-    public final Rect l;
-    public final Rect m;
-    public final Rect n;
-    public final boolean o;
-    public final boolean p;
+    public Size b;
+    public Rect c;
+    public Rect d;
+    public Rect e;
+    public Rect f;
+    public Rect g;
+    public Rect h;
+    public Rect i;
+    public Rect j;
+    public Rect k;
+    public Rect l;
+    public Rect m;
+    public Rect n;
+    public boolean o;
+    public boolean p;
 
     static {
         jbs b = b();

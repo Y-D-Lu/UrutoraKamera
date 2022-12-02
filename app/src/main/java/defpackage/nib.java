@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: nib  reason: default package */
 /* loaded from: classes2.dex */
 public final class nib {
-    final /* synthetic */ String a;
+    /* synthetic */ String a;
 
     public nib() {
     }

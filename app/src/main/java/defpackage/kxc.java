@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.os.DeadObjectException;
 import android.os.Parcel;
 
 import com.google.android.gms.common.api.Status;
@@ -19,7 +20,12 @@ public final class kxc extends kxb {
 
     @Override // defpackage.kji
     protected final /* bridge */ /* synthetic */ void b(khz khzVar) {
-        kyo kyoVar = (kyo) ((kzq) khzVar).u();
+        kyo kyoVar = null;
+        try {
+            kyoVar = (kyo) ((kzq) khzVar).u();
+        } catch (DeadObjectException ex) {
+            ex.printStackTrace();
+        }
         kzm kzmVar = new kzm(this);
         Parcel a = kyoVar.a();
         bmp.e(a, kzmVar);

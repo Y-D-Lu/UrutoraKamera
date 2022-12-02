@@ -83,13 +83,15 @@ public final class lwh implements lvx {
                     arrayList.add(lvs.b(veVar3.a));
                 }
                 return new lwg(arrayList, qmd.w(linkedHashMap.values()));
-            } catch (CameraAccessException e3) {
+            } catch (Exception e3) {
                 this.c.b("Failed to read the camera list.");
-                throw new lvy("Failed to read the camera list.", e3.getReason(), e3);
+                e3.printStackTrace();
+                //throw new lvy("Failed to read the camera list.", e3.getReason(), e3);
             }
         } finally {
             this.b.f();
         }
+        return null;
     }
 
     private static final Throwable d(IllegalStateException illegalStateException) {

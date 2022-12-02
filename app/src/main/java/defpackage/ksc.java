@@ -134,22 +134,22 @@ public final class ksc implements kqi {
                                             return;
                                         }
                                         kvmVar2.c(new kig(new Status(17, "Failed to init impl")));
-                                    } catch (RemoteException e) {
+                                    } catch (Exception e) {
                                         kvmVar2.c(new kig(new Status(8, okd.b(e))));
                                     }
-                                } catch (RemoteException e2) {
+                                } catch (Exception e2) {
                                     kvmVar2.c(new kig(new Status(8, okd.b(e2))));
                                 }
-                            } catch (RemoteException e3) {
+                            } catch (Exception e3) {
                                 kvmVar2.c(new kig(new Status(8, okd.b(e3))));
                             }
-                        } catch (RemoteException e4) {
+                        } catch (Exception e4) {
                             kvmVar2.c(new kig(new Status(8, okd.b(e4))));
                         }
-                    } catch (RemoteException e5) {
+                    } catch (Exception e5) {
                         kvmVar2.c(new kig(new Status(8, okd.b(e5))));
                     }
-                } catch (krn e6) {
+                } catch (Exception e6) {
                     String valueOf = String.valueOf(e6.getMessage());
                     kvmVar2.c(new kig(new Status(17, valueOf.length() != 0 ? "Cannot create in-app trainer: ".concat(valueOf) : new String("Cannot create in-app trainer: "))));
                 }
@@ -167,7 +167,7 @@ public final class ksc implements kqi {
             Parcel a = krtVar.a();
             bmp.e(a, ksbVar);
             krtVar.z(4, a);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             kvmVar.c(new kig(new Status(8, okd.b(e))));
         }
         return kvmVar.a;
@@ -183,7 +183,7 @@ public final class ksc implements kqi {
             a.writeInt(0);
             bmp.e(a, ksaVar);
             krtVar.z(3, a);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             kvmVar.c(new kig(new Status(8, okd.b(e))));
         }
         return kvmVar.a;

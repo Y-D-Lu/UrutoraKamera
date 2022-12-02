@@ -27,9 +27,13 @@ public final class pit {
     private final void c(String str) {
         try {
             b();
-        } catch (IOException e) {
+        } catch (Exception e) {
         }
-        throw new IOException(str);
+        try {
+            throw new IOException(str);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -53,7 +57,12 @@ public final class pit {
                     case 2:
                         ByteBuffer byteBuffer2 = piuVar.b;
                         byteBuffer2.clear();
-                        int read = this.d.read(byteBuffer2);
+                        int read = 0;
+                        try {
+                            read = this.d.read(byteBuffer2);
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
                         if (read == -1) {
                             c("unexpected end of input");
                         } else {
@@ -103,6 +112,10 @@ public final class pit {
         }
         this.b = true;
         this.e.a();
-        this.d.close();
+        try {
+            this.d.close();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }

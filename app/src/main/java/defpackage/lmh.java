@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.libraries.camera.exif.ExifInterface;
 
+import java.io.IOException;
 import java.io.OutputStream;
 
 /* renamed from: lmh  reason: default package */
@@ -49,7 +50,11 @@ public final class lmh extends lmm {
                 Object obj = lmgVar.f;
                 obj.getClass();
                 System.arraycopy(obj, 0, bArr, 0, i2);
-                lmkVar.write(bArr);
+                try {
+                    lmkVar.write(bArr);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 return;
             case 2:
                 Object obj2 = lmgVar.f;
@@ -57,12 +62,24 @@ public final class lmh extends lmm {
                 byte[] bArr2 = (byte[]) obj2;
                 int length = bArr2.length;
                 if (length != lmgVar.d || length <= 0) {
-                    lmkVar.write(bArr2);
-                    lmkVar.write(0);
+                    try {
+                        lmkVar.write(bArr2);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    try {
+                        lmkVar.write(0);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                     return;
                 }
                 bArr2[length - 1] = 0;
-                lmkVar.write(bArr2);
+                try {
+                    lmkVar.write(bArr2);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 return;
             case 3:
                 int i3 = lmgVar.d;
@@ -129,7 +146,11 @@ public final class lmh extends lmm {
                     l(lmgVar, lmkVar);
                     int a2 = 4 - lmgVar.a();
                     for (int i = 0; i < a2; i++) {
-                        lmkVar.write(0);
+                        try {
+                            lmkVar.write(0);
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                 }
             }

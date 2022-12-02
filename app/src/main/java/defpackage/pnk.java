@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.FilterInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 /* renamed from: pnk  reason: default package */
@@ -15,7 +16,12 @@ public final class pnk extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final int available() {
-        return Math.min(super.available(), this.a);
+        try {
+            return Math.min(super.available(), this.a);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
@@ -23,7 +29,12 @@ public final class pnk extends FilterInputStream {
         if (this.a <= 0) {
             return -1;
         }
-        int read = super.read();
+        int read = 0;
+        try {
+            read = super.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read >= 0) {
             this.a--;
         }
@@ -36,7 +47,12 @@ public final class pnk extends FilterInputStream {
         if (i3 <= 0) {
             return -1;
         }
-        int read = super.read(bArr, i, Math.min(i2, i3));
+        int read = 0;
+        try {
+            read = super.read(bArr, i, Math.min(i2, i3));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (read >= 0) {
             this.a -= read;
         }
@@ -45,7 +61,12 @@ public final class pnk extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public final long skip(long j) {
-        long skip = super.skip(Math.min(j, this.a));
+        long skip = 0;
+        try {
+            skip = super.skip(Math.min(j, this.a));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (skip >= 0) {
             this.a = (int) (this.a - skip);
         }

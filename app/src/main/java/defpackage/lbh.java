@@ -14,9 +14,14 @@ class lbh extends phd implements RunnableScheduledFuture {
         this.a = runnableScheduledFuture;
     }
 
-    @Override // java.lang.Comparable
+    //@Override // java.lang.Comparable
     public final /* bridge */ /* synthetic */ int compareTo(Delayed delayed) {
         return this.a.compareTo(delayed);
+    }
+
+    @Override
+    public final /* bridge */ /* synthetic */ int compareTo(Object delayed) {
+        return compareTo((Delayed) delayed);
     }
 
     @Override // java.util.concurrent.Delayed

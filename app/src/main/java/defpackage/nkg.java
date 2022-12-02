@@ -40,7 +40,7 @@ public final class nkg implements nkr {
             if (phtVar2 != null && phtVar2.isDone()) {
                 try {
                     plk.ad(this.g);
-                } catch (ExecutionException e) {
+                } catch (Exception e) {
                     this.g = null;
                 }
             }
@@ -81,8 +81,13 @@ public final class nkg implements nkr {
                 return this.j.a;
             }
         } catch (IOException e2) {
-            throw mzi.j(this.d, uri, e2);
+            try {
+                throw mzi.j(this.d, uri, e2);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     public final void c(Uri uri, Object obj) {
@@ -126,10 +131,15 @@ public final class nkg implements nkr {
                 try {
                     nim a = this.d.a(i);
                     a.a.k(a.d);
-                } catch (IOException e3) {
+                } catch (Exception e3) {
+                    e3.printStackTrace();
                 }
             }
-            throw e2;
+            try {
+                throw e2;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 

@@ -2,6 +2,7 @@ package defpackage;
 
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /* renamed from: mcr  reason: default package */
@@ -17,7 +18,11 @@ final class mcr extends FileOutputStream {
 
     @Override // java.io.FileOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        super.close();
-        this.a.close();
+        try {
+            super.close();
+            this.a.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

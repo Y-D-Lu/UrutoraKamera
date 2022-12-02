@@ -7,12 +7,12 @@ import java.util.Set;
 /* renamed from: mbb  reason: default package */
 /* loaded from: classes2.dex */
 public final class mbb {
-    public final mak a;
-    public final Set b;
-    public final Set c;
-    public final Set d;
-    public final maw e;
-    public final oom f;
+    public mak a;
+    public Set b;
+    public Set c;
+    public Set d;
+    public maw e;
+    public oom f;
 
     public mbb() {
     }

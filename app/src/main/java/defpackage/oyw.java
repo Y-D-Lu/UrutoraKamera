@@ -42,7 +42,7 @@ public abstract class oyw {
         try {
             b(sb, bArr, length);
             return sb.toString();
-        } catch (IOException e2) {
+        } catch (Exception e2) {
             throw new AssertionError(e2);
         }
     }
@@ -59,7 +59,7 @@ public abstract class oyw {
             byte[] bArr2 = new byte[a];
             System.arraycopy(bArr, 0, bArr2, 0, a);
             return bArr2;
-        } catch (oyt e3) {
+        } catch (Exception e3) {
             throw new IllegalArgumentException(e3);
         }
     }

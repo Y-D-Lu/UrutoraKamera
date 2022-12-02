@@ -10,7 +10,7 @@ import android.util.Log;
 /* loaded from: classes2.dex */
 public final class knb extends bmo implements IInterface {
     private kmb a;
-    private final int b;
+    private int b;
 
     public knb() {
         super("com.google.android.gms.common.internal.IGmsCallbacks");

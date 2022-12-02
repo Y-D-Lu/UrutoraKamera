@@ -17,7 +17,7 @@ public final class lkn implements lhx {
     @Override // defpackage.lhx
     public final /* synthetic */ Object a(Object obj) {
         boolean z = false;
-        if (obj.L()) {
+        if (((lvp)obj).L()) {
             lks lksVar = this.a;
             Iterator it = ((lvo) obj).b.iterator();
             while (true) {

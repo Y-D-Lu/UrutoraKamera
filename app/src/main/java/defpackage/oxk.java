@@ -85,7 +85,7 @@ public final class oxk {
                 sb.append((CharSequence) this.a);
                 sb.append(d(it.next()));
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new AssertionError(e);
         }
     }

@@ -26,7 +26,11 @@ public final class niq extends njj {
     }
 
     private static final void i() {
-        throw new niw("Android backend cannot perform remote operations without a remote backend");
+        try {
+            throw new niw("Android backend cannot perform remote operations without a remote backend");
+        } catch (niw e) {
+            e.printStackTrace();
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -39,7 +43,12 @@ public final class niq extends njj {
             path.path(c.getAbsolutePath());
             return path.encodedFragment(nje.b(e.f())).build();
         }
-        throw new nix("Operation across authorities is not allowed.");
+        try {
+            throw new nix("Operation across authorities is not allowed.");
+        } catch (nix e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.njj
@@ -51,18 +60,30 @@ public final class niq extends njj {
     @Override // defpackage.njj, defpackage.nji
     public final File c(Uri uri) {
         char c;
-        File filesDir;
+        File filesDir = null;
         String str;
         if (!h(uri)) {
             Context context = this.a;
             if (!uri.getScheme().equals("android")) {
-                throw new nix("Scheme must be 'android'");
+                try {
+                    throw new nix("Scheme must be 'android'");
+                } catch (nix e) {
+                    e.printStackTrace();
+                }
             }
             if (uri.getPathSegments().isEmpty()) {
-                throw new nix(String.format("Path must start with a valid logical location: %s", uri));
+                try {
+                    throw new nix(String.format("Path must start with a valid logical location: %s", uri));
+                } catch (nix e) {
+                    e.printStackTrace();
+                }
             }
             if (!TextUtils.isEmpty(uri.getQuery())) {
-                throw new nix("Did not expect uri to have query");
+                try {
+                    throw new nix("Did not expect uri to have query");
+                } catch (nix e) {
+                    e.printStackTrace();
+                }
             }
             ArrayList arrayList = new ArrayList(uri.getPathSegments());
             String str2 = (String) arrayList.get(0);
@@ -131,10 +152,18 @@ public final class niq extends njj {
                     if (arrayList.size() >= 3) {
                         try {
                             if (!nip.c(nip.a((String) arrayList.get(2)))) {
-                                throw new nix("AccountManager cannot be null");
+                                try {
+                                    throw new nix("AccountManager cannot be null");
+                                } catch (nix e) {
+                                    e.printStackTrace();
+                                }
                             }
                         } catch (IllegalArgumentException e) {
-                            throw new nix(e);
+                            try {
+                                throw new nix(e);
+                            } catch (nix ex) {
+                                ex.printStackTrace();
+                            }
                         }
                     }
                     filesDir = file;
@@ -143,7 +172,11 @@ public final class niq extends njj {
                     filesDir = context.getExternalFilesDir(null);
                     break;
                 default:
-                    throw new nix(String.format("Path must start with a valid logical location: %s", uri));
+                    try {
+                        throw new nix(String.format("Path must start with a valid logical location: %s", uri));
+                    } catch (nix e) {
+                        e.printStackTrace();
+                    }
             }
             File file2 = new File(filesDir, TextUtils.join(File.separator, arrayList.subList(1, arrayList.size())));
             if (!mez.c(this.a)) {
@@ -154,12 +187,21 @@ public final class niq extends njj {
                     str = this.d;
                 }
                 if (!file2.getAbsolutePath().startsWith(str)) {
-                    throw new niw("Cannot access credential-protected data from direct boot");
+                    try {
+                        throw new niw("Cannot access credential-protected data from direct boot");
+                    } catch (niw e) {
+                        e.printStackTrace();
+                    }
                 }
             }
             return file2;
         }
-        throw new IOException("operation is not permitted in other authorities.");
+        try {
+            throw new IOException("operation is not permitted in other authorities.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.njj, defpackage.nji

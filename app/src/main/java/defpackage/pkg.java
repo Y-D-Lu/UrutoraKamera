@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: pkg  reason: default package */
 /* loaded from: classes2.dex */
 public final class pkg {
-    public final lic a;
+    public lic a;
 
     public pkg() {
     }

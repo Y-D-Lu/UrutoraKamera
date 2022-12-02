@@ -18,7 +18,8 @@ public final class oxu extends oxs {
             for (int i = 0; i < 10; i++) {
                 oxuVarArr[i] = new oxu(i, ovmVar, ovn.a);
             }
-            enumMap.put((EnumMap) ovmVar, (ovm) oxuVarArr);
+//            enumMap.put((EnumMap) ovmVar, (ovm) oxuVarArr);
+            enumMap.put(ovmVar, oxuVarArr);
         }
         c = Collections.unmodifiableMap(enumMap);
     }

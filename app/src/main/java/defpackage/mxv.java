@@ -3,12 +3,12 @@ package defpackage;
 /* renamed from: mxv  reason: default package */
 /* loaded from: classes2.dex */
 public final class mxv implements mwi {
-    public final int a;
-    public final int b;
-    public final int c;
-    public final int d;
-    public final double e;
-    private final int f;
+    public int a;
+    public int b;
+    public int c;
+    public int d;
+    public double e;
+    private int f;
 
     public mxv() {
     }

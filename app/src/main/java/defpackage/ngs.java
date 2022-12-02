@@ -26,7 +26,7 @@ public final /* synthetic */ class ngs implements Runnable {
                 try {
                     plk.ad(phtVar);
                     return;
-                } catch (ExecutionException e) {
+                } catch (Exception e) {
                     String.valueOf(str).length();
                     return;
                 }

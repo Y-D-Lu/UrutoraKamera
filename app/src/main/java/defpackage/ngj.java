@@ -28,41 +28,46 @@ public final /* synthetic */ class ngj implements ngm {
 
     @Override // defpackage.ngm
     public final Object a(Object obj) {
-        switch (this.r) {
-            case 0:
-                return Boolean.valueOf(Boolean.parseBoolean((String) obj));
-            case 1:
-                return (String) obj;
-            case 2:
-                return Long.valueOf(Long.parseLong((String) obj));
-            case 3:
-                return (pyy) ppd.p(pyy.d, (byte[]) obj);
-            case 4:
-                return (qws) ppd.p(qws.b, (byte[]) obj);
-            case 5:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            case 6:
-                return (myc) ppd.p(myc.a, (byte[]) obj);
-            case 7:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            case 8:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            case 9:
-                return (mzk) ppd.p(mzk.d, (byte[]) obj);
-            case 10:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            case 11:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            case 12:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            case 13:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            case 14:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            case 15:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
-            default:
-                return (qyj) ppd.p(qyj.d, (byte[]) obj);
+        try {
+            switch (this.r) {
+                case 0:
+                    return Boolean.valueOf(Boolean.parseBoolean((String) obj));
+                case 1:
+                    return (String) obj;
+                case 2:
+                    return Long.valueOf(Long.parseLong((String) obj));
+                case 3:
+                    return (pyy) ppd.p(pyy.d, (byte[]) obj);
+                case 4:
+                    return (qws) ppd.p(qws.b, (byte[]) obj);
+                case 5:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                case 6:
+                    return (myc) ppd.p(myc.a, (byte[]) obj);
+                case 7:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                case 8:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                case 9:
+                    return (mzk) ppd.p(mzk.d, (byte[]) obj);
+                case 10:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                case 11:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                case 12:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                case 13:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                case 14:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                case 15:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+                default:
+                    return (qyj) ppd.p(qyj.d, (byte[]) obj);
+            }
+        } catch (ppp ex) {
+            ex.printStackTrace();
         }
+        return null;
     }
 }

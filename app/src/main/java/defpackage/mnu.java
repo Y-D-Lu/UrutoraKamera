@@ -29,9 +29,9 @@ public final class mnu implements Runnable {
                 try {
                     moaVar.k(mluVar.a(obj));
                     return;
-                } catch (mnc e) {
-                    moaVar.l(e);
-                    return;
+//                } catch (mnc e) {
+//                    moaVar.l(e);
+//                    return;
                 } catch (Throwable th) {
                     moaVar.l(mnc.a(th));
                     return;

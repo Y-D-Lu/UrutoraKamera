@@ -48,7 +48,7 @@ final class lsb implements phh {
             this.e.a.a(this.a, arrayList);
             this.b.f(list, this.a, this.c);
             ljfVar = this.e.c;
-        } catch (llv e) {
+        } catch (Exception e) {
             this.d.close();
             ljfVar = this.e.c;
         }

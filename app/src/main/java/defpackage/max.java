@@ -4,17 +4,17 @@ package defpackage;
 /* renamed from: max  reason: default package */
 /* loaded from: classes2.dex */
 public final class max {
-    public final mat a;
-    public final long b;
-    public final String c;
-    public final mam d;
-    public final ope e;
-    public final ope f;
-    public final ope g;
-    public final oom h;
-    public final mcc i;
-    public final int j;
-    private final long k;
+    public mat a;
+    public long b;
+    public String c;
+    public mam d;
+    public ope e;
+    public ope f;
+    public ope g;
+    public oom h;
+    public mcc i;
+    public int j;
+    private long k;
 
     public max() {
     }

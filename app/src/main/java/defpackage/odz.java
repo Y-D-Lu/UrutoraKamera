@@ -47,7 +47,7 @@ final class odz extends oen {
             bmp.c(a, bundle);
             bmp.e(a, oecVar);
             ((bmn) iInterface).A(2, a);
-        } catch (RemoteException e2) {
+        } catch (Exception e2) {
             oed.e.h(e2, "requestUpdateInfo(%s)", this.a);
             this.b.a(new RuntimeException(e2));
         }

@@ -8,7 +8,7 @@ import com.google.android.gms.common.api.Status;
 /* renamed from: kud  reason: default package */
 /* loaded from: classes2.dex */
 public final class kud extends bmo implements IInterface {
-    private final kvm a;
+    private kvm a;
 
     public kud() {
         super("com.google.android.gms.phenotype.internal.IPhenotypeCallbacks");

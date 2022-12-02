@@ -3,7 +3,6 @@ package defpackage;
 import android.os.Bundle;
 import android.os.IInterface;
 import android.os.Parcel;
-import android.os.RemoteException;
 
 /* renamed from: oea  reason: default package */
 /* loaded from: classes2.dex */
@@ -33,7 +32,7 @@ final class oea extends oen {
             bmp.c(a, b);
             bmp.e(a, oebVar);
             ((bmn) iInterface).A(3, a);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             oed.e.h(e, "completeUpdate(%s)", this.b);
             this.a.a(new RuntimeException(e));
         }

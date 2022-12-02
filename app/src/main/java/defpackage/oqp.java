@@ -8,8 +8,8 @@ import java.util.Set;
 /* renamed from: oqp  reason: default package */
 /* loaded from: classes2.dex */
 public final class oqp extends AbstractMap {
-    final Iterable a;
-    final /* synthetic */ oth b;
+    Iterable a;
+    /* synthetic */ oth b;
 
     public oqp() {
     }

@@ -34,8 +34,8 @@ final class mnt implements Runnable {
         moa moaVar = this.c;
         try {
             mnfVar.a(mncVar, executor).c(pgr.a, new mny(moaVar), new mnx(moaVar)).h(mmg.a);
-        } catch (mnc e) {
-            moaVar.l(e);
+//        } catch (mnc e) {
+//            moaVar.l(e);
         } catch (Throwable th) {
             moaVar.l(mnc.a(th));
         }

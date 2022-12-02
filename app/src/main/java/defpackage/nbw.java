@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: nbw  reason: default package */
 /* loaded from: classes2.dex */
 public final class nbw implements mwi {
-    public final float a;
-    private final int b;
+    public float a;
+    private int b;
 
     public nbw() {
     }

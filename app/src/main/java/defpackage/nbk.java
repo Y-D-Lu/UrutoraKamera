@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: nbk  reason: default package */
 /* loaded from: classes2.dex */
 public final class nbk implements mwi {
-    public final boolean a;
-    public final ojc b;
-    private final int c;
+    public boolean a;
+    public ojc b;
+    private int c;
 
     public nbk() {
     }

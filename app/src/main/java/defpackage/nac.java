@@ -5,10 +5,10 @@ import android.support.v8.renderscript.ScriptIntrinsicBLAS;
 /* renamed from: nac  reason: default package */
 /* loaded from: classes2.dex */
 public final class nac implements mwi {
-    private final int a;
-    private final boolean b;
-    private final ojc c;
-    private final int d;
+    private int a;
+    private boolean b;
+    private ojc c;
+    private int d;
 
     public nac() {
     }

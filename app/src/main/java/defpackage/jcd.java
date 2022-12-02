@@ -6,10 +6,10 @@ import android.util.Size;
 /* renamed from: jcd  reason: default package */
 /* loaded from: classes.dex */
 public final class jcd {
-    public final Size a;
-    public final Rect b;
-    public final Rect c;
-    private final int d;
+    public Size a;
+    public Rect b;
+    public Rect c;
+    private int d;
 
     public jcd() {
     }

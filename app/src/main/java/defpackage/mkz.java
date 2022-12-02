@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Locale;
 
@@ -22,7 +23,12 @@ public final class mkz {
     }
 
     public static mkz c(FileInputStream fileInputStream) {
-        long size = fileInputStream.getChannel().size();
+        long size = 0L;
+        try {
+            size = fileInputStream.getChannel().size();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return size < 0 ? a() : new mkz(ojc.i(new mlb(fileInputStream, 0L, size)));
     }
 
@@ -36,9 +42,20 @@ public final class mkz {
             return a();
         }
         mlb mlbVar = (mlb) this.a.c();
-        mla ak = mip.ak(mlbVar);
+        mla ak = null;
+        try {
+            ak = mip.ak(mlbVar);
+        } catch (mky e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (ak.a != mlbVar.a()) {
-            throw new mky(String.format(Locale.US, "contents failed - argument has length %s but claims length of %s", Long.valueOf(mlbVar.a()), Long.valueOf(ak.a)));
+            try {
+                throw new mky(String.format(Locale.US, "contents failed - argument has length %s but claims length of %s", Long.valueOf(mlbVar.a()), Long.valueOf(ak.a)));
+            } catch (mky e) {
+                e.printStackTrace();
+            }
         }
         int i = true != ak.b ? 8 : 16;
         mlb b = mlbVar.b();
@@ -64,14 +81,29 @@ public final class mkz {
         byte[] a = mlc.a(str);
         mlb mlbVar = null;
         while (true) {
-            mlb al = mip.al(b);
+            mlb al = null;
+            try {
+                al = mip.al(b);
+            } catch (mky e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             if (al == null) {
                 return mlbVar == null ? a() : new mkz(ojc.i(mlbVar));
-            } else if (Arrays.equals(mip.am(al), a)) {
-                if (mlbVar != null) {
-                    return a();
+            } else {
+                try {
+                    if (Arrays.equals(mip.am(al), a)) {
+                        if (mlbVar != null) {
+                            return a();
+                        }
+                        mlbVar = al;
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (mky e) {
+                    e.printStackTrace();
                 }
-                mlbVar = al;
             }
         }
     }

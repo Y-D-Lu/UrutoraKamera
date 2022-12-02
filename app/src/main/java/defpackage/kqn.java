@@ -29,7 +29,11 @@ public final /* synthetic */ class kqn implements Runnable {
             case 1:
                 throw new RuntimeException(this.a);
             case 2:
-                throw this.a;
+                try {
+                    throw this.a;
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
             case 3:
                 throw new laz(this.a);
             default:

@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.EnumMap;
@@ -17,15 +18,39 @@ public final class omz extends okm {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        objectInputStream.defaultReadObject();
-        this.c = (Class) objectInputStream.readObject();
+        try {
+            objectInputStream.defaultReadObject();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            this.c = (Class) objectInputStream.readObject();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         i(new EnumMap(this.c), new HashMap((((Enum[]) this.c.getEnumConstants()).length * 3) / 2));
-        obr.H(this, objectInputStream, objectInputStream.readInt());
+        try {
+            obr.H(this, objectInputStream, objectInputStream.readInt());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        objectOutputStream.defaultWriteObject();
-        objectOutputStream.writeObject(this.c);
+        try {
+            objectOutputStream.defaultWriteObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            objectOutputStream.writeObject(this.c);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         obr.K(this, objectOutputStream);
     }
 

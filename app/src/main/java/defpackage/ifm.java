@@ -5,9 +5,9 @@ import android.content.pm.ResolveInfo;
 /* renamed from: ifm  reason: default package */
 /* loaded from: classes.dex */
 public final class ifm {
-    public final ResolveInfo a;
-    public final boolean b;
-    public final boolean c;
+    public ResolveInfo a;
+    public boolean b;
+    public boolean c;
 
     public ifm() {
     }

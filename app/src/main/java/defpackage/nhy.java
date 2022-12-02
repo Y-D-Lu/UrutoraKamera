@@ -55,7 +55,12 @@ public final class nhy {
     }
 
     private static String c(File file) {
-        String canonicalPath = file.getCanonicalPath();
+        String canonicalPath = null;
+        try {
+            canonicalPath = file.getCanonicalPath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return !canonicalPath.endsWith("/") ? String.valueOf(canonicalPath).concat("/") : canonicalPath;
     }
 
@@ -73,7 +78,11 @@ public final class nhy {
         if (obj != null) {
             return;
         }
-        throw new FileNotFoundException("Content resolver returned null value.");
+        try {
+            throw new FileNotFoundException("Content resolver returned null value.");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     private static void f(AssetFileDescriptor assetFileDescriptor) {

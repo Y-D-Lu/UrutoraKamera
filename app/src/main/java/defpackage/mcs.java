@@ -4,6 +4,7 @@ import android.net.Uri;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -32,7 +33,11 @@ public final class mcs implements mce {
         if (parentFile.exists() || parentFile.mkdirs()) {
             return;
         }
-        throw new IOException("Unable to create or find media storage directory");
+        try {
+            throw new IOException("Unable to create or find media storage directory");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override // defpackage.mcd
@@ -45,7 +50,12 @@ public final class mcs implements mce {
 
     @Override // defpackage.mcd
     public final FileInputStream b() {
-        return new FileInputStream(this.a);
+        try {
+            return new FileInputStream(this.a);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.mcd
@@ -67,7 +77,11 @@ public final class mcs implements mce {
             sb.append("Unable to create ");
             sb.append(valueOf);
             sb.append("!");
-            throw new IOException(sb.toString(), th);
+            try {
+                throw new IOException(sb.toString(), th);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -104,8 +118,13 @@ public final class mcs implements mce {
             sb.append("Unable to create ");
             sb.append(valueOf);
             sb.append("!");
-            throw new IOException(sb.toString(), th);
+            try {
+                throw new IOException(sb.toString(), th);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+        return null;
     }
 
     @Override // defpackage.mce

@@ -22,8 +22,8 @@ public final /* synthetic */ class njz implements pgj {
                 nkg nkgVar = this.a;
                 try {
                     return plk.V(nkgVar.b((Uri) plk.ad(nkgVar.b)));
-                } catch (IOException e) {
-                    return ((e instanceof niw) || (e.getCause() instanceof niw)) ? plk.U(e) : pgb.i(nkgVar.e.a(e, new nkf(nkgVar)), ogl.b(new nkb(nkgVar, 3)), nkgVar.c);
+                } catch (Exception e) {
+                    return ((e instanceof niw) || (e.getCause() instanceof niw)) ? plk.U(e) : pgb.i(nkgVar.e.a((IOException) e, new nkf(nkgVar)), ogl.b(new nkb(nkgVar, 3)), nkgVar.c);
                 }
             default:
                 nkg nkgVar2 = this.a;

@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: mzh  reason: default package */
 /* loaded from: classes2.dex */
 public final class mzh implements mwi {
-    private final int a;
-    private final int b;
+    private int a;
+    private int b;
 
     public mzh() {
     }

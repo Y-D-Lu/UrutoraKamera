@@ -8,7 +8,11 @@ public class lnm extends mip {
     public final void w() {
         synchronized (this) {
             while (this.a) {
-                wait();
+                try {
+                    wait();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }

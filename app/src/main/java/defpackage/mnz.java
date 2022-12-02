@@ -36,11 +36,11 @@ final class mnz implements pht {
 
     @Override // java.util.concurrent.Future
     public final Object get() {
-        try {
+//        try {
             return this.a.e();
-        } catch (mnc e) {
-            throw new ExecutionException(e);
-        }
+//        } catch (mnc e) {
+//            throw new ExecutionException(e);
+//        }
     }
 
     @Override // java.util.concurrent.Future
@@ -48,14 +48,26 @@ final class mnz implements pht {
         Object obj;
         synchronized (this.a) {
             if (!isDone()) {
-                timeUnit.timedWait(this.a, j);
+                try {
+                    timeUnit.timedWait(this.a, j);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 if (!isDone()) {
-                    throw new TimeoutException();
+                    try {
+                        throw new TimeoutException();
+                    } catch (TimeoutException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
             obj = this.a.a;
             if (obj == null) {
-                throw new ExecutionException(this.a.b);
+                try {
+                    throw new ExecutionException(this.a.b);
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return obj;

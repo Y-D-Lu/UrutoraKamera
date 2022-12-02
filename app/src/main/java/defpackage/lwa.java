@@ -51,10 +51,12 @@ public final class lwa implements lvx {
             arrayList.add(lvs.b(cameraIdList[i]));
             arrayList.add(lvs.b(cameraIdList[i2]));
             return oom.j(arrayList);
-        } catch (CameraAccessException e) {
+        } catch (Exception e) {
             this.b.d("Unable to read camera list.");
-            throw new lvy("Unable to read camera list.", e.getReason(), e);
+            e.printStackTrace();
+            //throw new lvy("Unable to read camera list.", e.getReason(), e);
         }
+        return null;
     }
 
     @Override // defpackage.lvx

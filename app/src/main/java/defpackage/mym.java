@@ -3,7 +3,7 @@ package defpackage;
 /* renamed from: mym  reason: default package */
 /* loaded from: classes2.dex */
 public final class mym implements mwi {
-    private final int a;
+    private int a;
 
     public mym() {
     }

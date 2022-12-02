@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,12 +28,17 @@ public final class pof extends poh {
     }
 
     private static int K(InputStream inputStream, byte[] bArr, int i, int i2) {
-        try {
-            return inputStream.read(bArr, i, i2);
-        } catch (ppp e) {
-            e.j();
-            throw e;
-        }
+//        try {
+            try {
+                return inputStream.read(bArr, i, i2);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+//        } catch (ppp e) {
+//            e.j();
+//            throw e;
+//        }
+        return 0;
     }
 
     private final List L(int i) {
@@ -42,9 +48,18 @@ public final class pof extends poh {
             byte[] bArr = new byte[min];
             int i2 = 0;
             while (i2 < min) {
-                int read = this.e.read(bArr, i2, min - i2);
+                int read = 0;
+                try {
+                    read = this.e.read(bArr, i2, min - i2);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 if (read == -1) {
-                    throw ppp.i();
+                    try {
+                        throw ppp.i();
+                    } catch (ppp ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 this.k += read;
                 i2 += read;
@@ -72,9 +87,17 @@ public final class pof extends poh {
     private final void N(int i) {
         if (!O(i)) {
             if (i <= (Integer.MAX_VALUE - this.k) - this.i) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.h();
+            try {
+                throw ppp.h();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -129,29 +152,44 @@ public final class pof extends poh {
             return ppn.b;
         }
         if (i < 0) {
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         int i2 = this.k;
         int i3 = this.i;
         int i4 = i2 + i3 + i;
         if ((-2147483647) + i4 > 0) {
-            throw ppp.h();
+            try {
+                throw ppp.h();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         int i5 = this.l;
         if (i4 > i5) {
             B((i5 - i2) - i3);
-            throw ppp.i();
+            try {
+                throw ppp.i();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         int i6 = this.g - i3;
         int i7 = i - i6;
         if (i7 >= 4096) {
             try {
-                if (i7 > this.e.available()) {
-                    return null;
+                try {
+                    if (i7 > this.e.available()) {
+                        return null;
+                    }
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
-            } catch (ppp e) {
-                e.j();
-                throw e;
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
         byte[] bArr = new byte[i];
@@ -162,7 +200,11 @@ public final class pof extends poh {
         while (i6 < i) {
             int K = K(this.e, bArr, i6, i - i6);
             if (K == -1) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
             this.k += K;
             i6 += K;
@@ -205,14 +247,22 @@ public final class pof extends poh {
         if (i <= i4 && i >= 0) {
             this.i = i3 + i;
         } else if (i < 0) {
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         } else {
             int i5 = this.k;
             int i6 = i5 + i3;
             int i7 = this.l;
             if (i6 + i > i7) {
                 B((i7 - i5) - i3);
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
             this.k = i6;
             this.g = 0;
@@ -221,7 +271,12 @@ public final class pof extends poh {
                 try {
                     long j = i - i4;
                     try {
-                        long skip = this.e.skip(j);
+                        long skip = 0L;
+                        try {
+                            skip = this.e.skip(j);
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
                         if (skip < 0 || skip > j) {
                             String valueOf = String.valueOf(this.e.getClass());
                             StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 92);
@@ -235,9 +290,8 @@ public final class pof extends poh {
                         } else {
                             i4 += (int) skip;
                         }
-                    } catch (ppp e) {
-                        e.j();
-                        throw e;
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
                 } finally {
                     this.k += i4;
@@ -287,7 +341,11 @@ public final class pof extends poh {
                             i2++;
                         }
                     }
-                    throw ppp.e();
+                    try {
+                        throw ppp.e();
+                    } catch (ppp ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 while (i2 < 10) {
                     byte[] bArr = this.f;
@@ -297,7 +355,11 @@ public final class pof extends poh {
                         i2++;
                     }
                 }
-                throw ppp.e();
+                try {
+                    throw ppp.e();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
                 return true;
             case 1:
                 B(8);
@@ -313,14 +375,23 @@ public final class pof extends poh {
                 B(4);
                 return true;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             m = m();
             if (m != 0) {
             }
             z(psa.c(psa.a(i), 4));
-            return true;
+            if (true) {
+                return true;
+            }
+            if (false) {
+                break;
+            }
         } while (E(m));
         z(psa.c(psa.a(i), 4));
         return true;
@@ -357,13 +428,22 @@ public final class pof extends poh {
             int i2 = i + this.k + this.i;
             int i3 = this.l;
             if (i2 > i3) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
             this.l = i2;
             M();
             return i3;
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -499,7 +579,11 @@ public final class pof extends poh {
         int j = j();
         this.j = j;
         if (psa.a(j) == 0) {
-            throw ppp.c();
+            try {
+                throw ppp.c();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         return this.j;
     }
@@ -531,7 +615,7 @@ public final class pof extends poh {
     }
 
     public final long r() {
-        long j;
+        long j = 0L;
         int i = this.i;
         int i2 = this.g;
         if (i2 != i) {
@@ -617,7 +701,12 @@ public final class pof extends poh {
                 return j;
             }
         }
-        throw ppp.e();
+        try {
+            throw ppp.e();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return j;
     }
 
     @Override // defpackage.poh
@@ -723,6 +812,10 @@ public final class pof extends poh {
         if (this.j == i) {
             return;
         }
-        throw ppp.b();
+        try {
+            throw ppp.b();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 }

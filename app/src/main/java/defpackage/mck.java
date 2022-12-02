@@ -13,7 +13,7 @@ final class mck extends FileInputStream {
     private boolean d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public mck(mcm mcmVar, FileInputStream fileInputStream) {
+    public mck(mcm mcmVar, FileInputStream fileInputStream) throws IOException {
         super(fileInputStream.getFD());
         this.a = mcmVar;
         this.b = mcm.b.incrementAndGet();
@@ -42,7 +42,11 @@ final class mck extends FileInputStream {
             }
         }
         if (iOException != null) {
-            throw iOException;
+            try {
+                throw iOException;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         mcm mcmVar = this.a;
         AtomicInteger atomicInteger = mcm.a;

@@ -2,8 +2,8 @@ package defpackage;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.DeadObjectException;
 import android.os.Parcel;
-import android.os.RemoteException;
 import android.util.Log;
 
 import com.google.android.gms.common.api.Status;
@@ -34,7 +34,12 @@ public final class kpu extends kji {
     protected final /* bridge */ /* synthetic */ void b(khz khzVar) {
         kpx kpxVar = (kpx) khzVar;
         Context context = kpxVar.c;
-        kpz kpzVar = (kpz) kpxVar.u();
+        kpz kpzVar = null;
+        try {
+            kpzVar = (kpz) kpxVar.u();
+        } catch (DeadObjectException ex) {
+            ex.printStackTrace();
+        }
         GoogleHelp googleHelp = (GoogleHelp) this.a.getParcelableExtra("EXTRA_GOOGLE_HELP");
         try {
             kpt kptVar = new kpt(this.a, this.b, this);
@@ -43,7 +48,7 @@ public final class kpu extends kji {
             bmp.c(a, null);
             bmp.e(a, kptVar);
             kpzVar.z(2, a);
-        } catch (RemoteException e) {
+        } catch (Exception e) {
             Log.e("gH_GoogleHelpApiImpl", "Starting help failed!", e);
             h(kpv.a);
         }

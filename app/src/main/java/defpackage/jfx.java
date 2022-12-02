@@ -43,7 +43,7 @@ public final class jfx extends GestureDetector.SimpleOnGestureListener implement
 
     @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
     public final boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-        final int i;
+        int i;
         float f3;
         ouj oujVar = ModeSwitcher.a;
         acv acvVar = this.d;
@@ -88,11 +88,12 @@ public final class jfx extends GestureDetector.SimpleOnGestureListener implement
             if (!acvVar2.p.contains(jfwVar)) {
                 acvVar2.p.add(jfwVar);
             }
+            final int iF = 1;
             acvVar2.g(new acr() { // from class: jfv
                 @Override // defpackage.acr
                 public final void a() {
                     jfx jfxVar = jfx.this;
-                    int i2 = i;
+                    int i2 = iF;
                     jrl b = jfxVar.c.b();
                     if (jfxVar.c.h != null && jfxVar.a != jrl.UNINITIALIZED) {
                         jfxVar.c.h.aa(i2, jfxVar.a.toString(), b.toString());

@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
@@ -76,9 +77,13 @@ public final class mkb implements mlk {
         if (!this.a || !this.d.isEmpty() || this.b) {
             return;
         }
-        this.f.close();
-        this.b = true;
-        this.g.close();
-        this.c.o(null);
+        try {
+            this.f.close();
+            this.b = true;
+            this.g.close();
+            this.c.o(null);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }

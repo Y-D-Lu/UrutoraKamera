@@ -5,10 +5,10 @@ import com.google.android.apps.camera.bottombar.R;
 /* renamed from: nbf  reason: default package */
 /* loaded from: classes2.dex */
 public final class nbf implements mwi {
-    public final int a;
-    public final oom b;
-    public final boolean c;
-    private final int d;
+    public int a;
+    public oom b;
+    public boolean c;
+    private int d;
 
     public nbf() {
     }

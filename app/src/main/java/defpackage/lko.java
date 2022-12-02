@@ -12,6 +12,6 @@ public final class lko implements lhx {
     /* JADX WARN: Multi-variable type inference failed */
     @Override // defpackage.lhx
     public final /* bridge */ /* synthetic */ Object a(Object obj) {
-        return Boolean.valueOf(obj.k() == this.a);
+        return Boolean.valueOf(((lvp)obj).k() == this.a);
     }
 }

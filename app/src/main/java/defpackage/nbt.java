@@ -5,10 +5,10 @@ import com.google.android.apps.camera.bottombar.R;
 /* renamed from: nbt  reason: default package */
 /* loaded from: classes2.dex */
 public final class nbt implements mwi {
-    private final int a;
-    private final boolean b;
-    private final int c;
-    private final myw d;
+    private int a;
+    private boolean b;
+    private int c;
+    private myw d;
 
     public nbt() {
     }

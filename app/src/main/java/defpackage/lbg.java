@@ -1,7 +1,5 @@
 package defpackage;
 
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.RunnableScheduledFuture;
 
 /* renamed from: lbg  reason: default package */
@@ -19,9 +17,9 @@ public final class lbg extends lbh {
                 return;
             }
             super.get();
-        } catch (InterruptedException e) {
-        } catch (CancellationException e2) {
-        } catch (ExecutionException e3) {
+//        } catch (InterruptedException e) {
+//        } catch (CancellationException e2) {
+        } catch (Exception e3) {
             throw new RuntimeException(e3.getMessage(), e3);
         }
     }

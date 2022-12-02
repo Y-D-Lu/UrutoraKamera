@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCaptureSession;
 import android.hardware.camera2.CaptureRequest;
 import android.os.Handler;
@@ -23,9 +24,17 @@ public class luu implements lzo {
     @Override // defpackage.lzo
     public final void b() {
         try {
-            this.a.abortCaptures();
+            try {
+                this.a.abortCaptures();
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
         } catch (IllegalStateException | SecurityException e) {
-            throw new lzm(e);
+            try {
+                throw new lzm(e);
+            } catch (lzm ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -42,36 +51,71 @@ public class luu implements lzo {
     @Override // defpackage.lzo
     public final void d() {
         try {
-            this.a.stopRepeating();
+            try {
+                this.a.stopRepeating();
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
         } catch (IllegalStateException | SecurityException e) {
-            throw new lzm(e);
+            try {
+                throw new lzm(e);
+            } catch (lzm ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
     @Override // defpackage.lzo
     public final int e(lzq lzqVar, lts ltsVar, Handler handler) {
         try {
-            return this.a.capture((CaptureRequest) mip.aS(lzqVar), new lut(ltsVar), handler);
+            try {
+                return this.a.capture((CaptureRequest) mip.aS(lzqVar), new lut(ltsVar), handler);
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
         } catch (IllegalStateException | SecurityException e) {
-            throw new lzm(e);
+            try {
+                throw new lzm(e);
+            } catch (lzm ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 
     @Override // defpackage.lzo
     public final int f(List list, lts ltsVar, Handler handler) {
         try {
-            return this.a.captureBurst(mip.aT(list), new lut(ltsVar), handler);
+            try {
+                return this.a.captureBurst(mip.aT(list), new lut(ltsVar), handler);
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
         } catch (IllegalStateException | SecurityException e) {
-            throw new lzm(e);
+            try {
+                throw new lzm(e);
+            } catch (lzm ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 
     @Override // defpackage.lzo
     public final int g(lzq lzqVar, lts ltsVar, Handler handler) {
         try {
-            return this.a.setRepeatingRequest((CaptureRequest) mip.aS(lzqVar), new lut(ltsVar), handler);
+            try {
+                return this.a.setRepeatingRequest((CaptureRequest) mip.aS(lzqVar), new lut(ltsVar), handler);
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
         } catch (IllegalStateException | SecurityException e) {
-            throw new lzm(e);
+            try {
+                throw new lzm(e);
+            } catch (lzm ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 }

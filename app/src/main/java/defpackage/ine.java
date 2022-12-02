@@ -46,7 +46,7 @@ public final class ine implements ind {
             try {
                 ooh e = oom.e();
                 for (String str : (Iterable<String>) ojq.d(",").e(string)) {
-                    e.g(inc.a(str));
+                    e.g(inc.valueOf(str));
                 }
                 l = e.f();
             } catch (IllegalArgumentException e2) {

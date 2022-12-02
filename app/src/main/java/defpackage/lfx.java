@@ -7,8 +7,8 @@ import java.nio.ByteBuffer;
 /* renamed from: lfx  reason: default package */
 /* loaded from: classes2.dex */
 final class lfx {
-    public final MediaCodec.BufferInfo a;
-    public final ByteBuffer b;
+    public MediaCodec.BufferInfo a;
+    public ByteBuffer b;
 
     public lfx() {
     }

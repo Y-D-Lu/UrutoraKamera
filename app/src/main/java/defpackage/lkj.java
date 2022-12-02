@@ -56,7 +56,7 @@ public final class lkj implements lke {
         lkyVar.e(lkiVar);
         this.f.e("CameraDeviceOpenerImpl#open");
         try {
-            try {
+//            try {
                 try {
                     try {
                         this.a.length();
@@ -99,10 +99,10 @@ public final class lkj implements lke {
                         return lkhVar;
                     }
                 }
-            } catch (InterruptedException e3) {
-                lkhVar3 = new lkh(5);
-                ljfVar3 = this.f;
-            }
+//            } catch (InterruptedException e3) {
+//                lkhVar3 = new lkh(5);
+//                ljfVar3 = this.f;
+//            }
             ljfVar3.f();
             return lkhVar3;
         } catch (CameraAccessException e4) {

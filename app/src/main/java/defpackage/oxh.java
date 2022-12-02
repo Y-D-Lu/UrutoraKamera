@@ -736,7 +736,12 @@ public class oxh {
     }
 
     public static void v(File file) {
-        File parentFile = file.getCanonicalFile().getParentFile();
+        File parentFile = null;
+        try {
+            parentFile = file.getCanonicalFile().getParentFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         if (parentFile == null) {
             return;
         }
@@ -748,7 +753,11 @@ public class oxh {
         StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + 39);
         sb.append("Unable to create parent directories of ");
         sb.append(valueOf);
-        throw new IOException(sb.toString());
+        try {
+            throw new IOException(sb.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static byte[] w(File file) {

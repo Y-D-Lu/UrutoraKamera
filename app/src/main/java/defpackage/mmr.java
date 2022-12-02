@@ -50,14 +50,28 @@ public final class mmr implements mnb {
     @Override // defpackage.mnb
     public final Object e() {
         try {
-            Object obj = this.a.get();
+            Object obj = null;
+            try {
+                obj = this.a.get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             if (obj != null) {
                 return obj;
             }
-            throw mnc.a(new IllegalStateException("Result value was null"));
+            try {
+                throw mnc.a(new IllegalStateException("Result value was null"));
+            } catch (mnc e) {
+                e.printStackTrace();
+            }
         } catch (ExecutionException e) {
-            throw mnc.a(e.getCause());
+            try {
+                throw mnc.a(e.getCause());
+            } catch (mnc ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     @Override // defpackage.mnb

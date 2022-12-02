@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -14,14 +15,29 @@ public abstract class olh extends oln implements Serializable {
     public transient long b;
 
     private void readObject(ObjectInputStream objectInputStream) {
-        objectInputStream.defaultReadObject();
-        int readInt = objectInputStream.readInt();
+        try {
+            objectInputStream.defaultReadObject();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        int readInt = 0;
+        try {
+            readInt = objectInputStream.readInt();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         this.a = g();
         obr.J(this, objectInputStream, readInt);
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        objectOutputStream.defaultWriteObject();
+        try {
+            objectOutputStream.defaultWriteObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         obr.M(this, objectOutputStream);
     }
 

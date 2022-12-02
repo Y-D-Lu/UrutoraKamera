@@ -90,7 +90,7 @@ public final class kgk {
         if (!TextUtils.isEmpty(d3) && (d2 = d(e("googleSignInOptions", d3))) != null) {
             try {
                 return GoogleSignInOptions.a(d2);
-            } catch (JSONException e) {
+            } catch (Exception e) {
                 return null;
             }
         }

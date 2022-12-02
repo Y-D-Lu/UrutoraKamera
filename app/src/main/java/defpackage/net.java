@@ -9,8 +9,8 @@ import java.util.Map;
 /* loaded from: classes2.dex */
 public final class net {
     private static final Map a = new wy();
-    private final SharedPreferences b;
-    private final SharedPreferences.OnSharedPreferenceChangeListener c;
+    private SharedPreferences b;
+    private SharedPreferences.OnSharedPreferenceChangeListener c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static synchronized void a() {

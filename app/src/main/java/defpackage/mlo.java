@@ -1,7 +1,9 @@
 package defpackage;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /* renamed from: mlo  reason: default package */
 /* loaded from: classes2.dex */
@@ -28,12 +30,28 @@ public final class mlo implements pht {
 
     @Override // java.util.concurrent.Future
     public final Object get() {
-        return this.a.get();
+        try {
+            return this.a.get();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.Future
     public final Object get(long j, TimeUnit timeUnit) {
-        return this.a.get(j, timeUnit);
+        try {
+            return this.a.get(j, timeUnit);
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override // java.util.concurrent.Future

@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CaptureRequest;
 import android.os.Handler;
 import android.util.Log;
@@ -19,7 +20,12 @@ public final class lsq implements lte {
 
     private final List g(lzq lzqVar, boolean z) {
         try {
-            List<CaptureRequest> createHighSpeedRequestList = this.a.b.createHighSpeedRequestList((CaptureRequest) mip.aS(lzqVar));
+            List<CaptureRequest> createHighSpeedRequestList = null;
+            try {
+                createHighSpeedRequestList = this.a.b.createHighSpeedRequestList((CaptureRequest) mip.aS(lzqVar));
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
             ArrayList arrayList = new ArrayList(createHighSpeedRequestList.size());
             for (int i = 0; i < createHighSpeedRequestList.size(); i++) {
                 arrayList.add(new luy(createHighSpeedRequestList.get(i)));
@@ -41,8 +47,13 @@ public final class lsq implements lte {
             if (e instanceof IllegalArgumentException) {
                 Log.w("HFRCaptureSession", "The exception may cause by surface was destroyed before calling createHighSpeedRequestList");
             }
-            throw new lzm(e);
+            try {
+                throw new lzm(e);
+            } catch (lzm ex) {
+                ex.printStackTrace();
+            }
         }
+        return null;
     }
 
     private final int h(List list, lts ltsVar, Handler handler, boolean z) {
@@ -82,9 +93,18 @@ public final class lsq implements lte {
     @Override // defpackage.lte
     public final int f(lzq lzqVar, lts ltsVar, Handler handler, boolean z) {
         try {
-            return this.a.a.setRepeatingBurst(mip.aT(g(lzqVar, z)), new lut(ltsVar), handler);
+            try {
+                return this.a.a.setRepeatingBurst(mip.aT(g(lzqVar, z)), new lut(ltsVar), handler);
+            } catch (CameraAccessException e) {
+                e.printStackTrace();
+            }
         } catch (IllegalStateException | SecurityException e) {
-            throw new lzm(e);
+            try {
+                throw new lzm(e);
+            } catch (lzm ex) {
+                ex.printStackTrace();
+            }
         }
+        return 0;
     }
 }

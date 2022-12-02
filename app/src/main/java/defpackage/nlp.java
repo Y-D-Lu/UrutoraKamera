@@ -6,8 +6,8 @@ import java.util.List;
 /* renamed from: nlp  reason: default package */
 /* loaded from: classes2.dex */
 public final class nlp {
-    public final nmf a;
-    public final List b;
+    public nmf a;
+    public List b;
 
     public nlp() {
     }

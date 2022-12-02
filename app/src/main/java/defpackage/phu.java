@@ -1,9 +1,11 @@
 package defpackage;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /* renamed from: phu  reason: default package */
 /* loaded from: classes2.dex */
@@ -60,6 +62,15 @@ public final class phu extends FutureTask implements pht {
     @Override // java.util.concurrent.FutureTask, java.util.concurrent.Future
     public final Object get(long j, TimeUnit timeUnit) {
         long nanos = timeUnit.toNanos(j);
-        return nanos <= 2147483647999999999L ? super.get(j, timeUnit) : super.get(Math.min(nanos, 2147483647999999999L), TimeUnit.NANOSECONDS);
+        try {
+            return nanos <= 2147483647999999999L ? super.get(j, timeUnit) : super.get(Math.min(nanos, 2147483647999999999L), TimeUnit.NANOSECONDS);
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

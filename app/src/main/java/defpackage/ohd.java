@@ -7,17 +7,17 @@ import java.util.Optional;
 /* renamed from: ohd  reason: default package */
 /* loaded from: classes2.dex */
 public final class ohd {
-    public final Optional a;
-    public final Optional b;
-    public final phv c;
-    public final Path d;
-    public final int e;
-    public final float f;
-    public final boolean g;
-    public final int h;
-    public final int i;
-    public final int j;
-    private final int k;
+    public Optional a;
+    public Optional b;
+    public phv c;
+    public Path d;
+    public int e;
+    public float f;
+    public boolean g;
+    public int h;
+    public int i;
+    public int j;
+    private int k;
 
     public ohd() {
     }

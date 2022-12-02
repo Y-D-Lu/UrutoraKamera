@@ -15,9 +15,18 @@ public final /* synthetic */ class mje implements mjf {
     public final Object a() {
         switch (this.c) {
             case 0:
-                return (Integer) mip.aD("determining file format version");
+                try {
+                    return (Integer) mip.aD("determining file format version");
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             default:
-                return (Integer) mip.aD("payload length");
+                try {
+                    return (Integer) mip.aD("payload length");
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
         }
+        return null;
     }
 }

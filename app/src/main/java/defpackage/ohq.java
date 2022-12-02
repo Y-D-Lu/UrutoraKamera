@@ -7,15 +7,15 @@ import java.time.Duration;
 public final class ohq {
     private static final Duration i = Duration.ofSeconds(3);
     private static final Duration j = Duration.ofSeconds(1);
-    public final int a;
-    public final boolean b;
-    public final Duration c;
-    public final int d;
-    public final int e;
-    public final int f;
-    public final int g;
-    public final Duration h;
-    private final int k;
+    public int a;
+    public boolean b;
+    public Duration c;
+    public int d;
+    public int e;
+    public int f;
+    public int g;
+    public Duration h;
+    private int k;
 
     public ohq() {
     }

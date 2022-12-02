@@ -27,8 +27,8 @@ final class mnr implements Runnable {
         moa moaVar = this.b;
         try {
             moaVar.k(mluVar.a(mncVar));
-        } catch (mnc e) {
-            moaVar.l(e);
+//        } catch (mnc e) {
+//            moaVar.l(e);
         } catch (Throwable th) {
             moaVar.l(mnc.a(th));
         }

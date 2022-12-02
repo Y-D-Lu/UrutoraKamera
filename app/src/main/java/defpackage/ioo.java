@@ -34,7 +34,7 @@ final class ioo extends mip {
     /* JADX WARN: Type inference failed for: r3v29, types: [lzr] */
     @Override // defpackage.mip
     public final void fy() {
-        double d;
+        double d = 0;
         long nanos;
         Rect rect;
         SizeF sizeF;
@@ -174,7 +174,7 @@ final class ioo extends mip {
                                             if (iosVar != null) {
                                                 iosVar.a(iodVar.l.get(), iodVar.y.f);
                                             }
-                                        } catch (llv e) {
+                                        } catch (Exception e) {
                                             e.printStackTrace();
                                         }
                                     }

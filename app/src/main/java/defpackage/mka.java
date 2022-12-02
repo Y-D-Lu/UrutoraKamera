@@ -32,7 +32,7 @@ public final class mka implements mln {
                     try {
                         mkaVar.c.e();
                         return;
-                    } catch (IOException e) {
+                    } catch (Exception e) {
                         mkaVar.c.c.a(e);
                         return;
                     }
@@ -45,7 +45,7 @@ public final class mka implements mln {
                         return;
                     }
                     mkaVar.c.f.c(((Float) ao.c()).floatValue());
-                } catch (ExecutionException e2) {
+                } catch (Exception e2) {
                     mkaVar.c.c.a(e2);
                 }
             }
@@ -79,7 +79,7 @@ public final class mka implements mln {
                 mkaVar.c.d.remove(mkaVar);
                 try {
                     mkaVar.c.e();
-                } catch (IOException e) {
+                } catch (Exception e) {
                     mkaVar.c.c.a(e);
                 }
             }

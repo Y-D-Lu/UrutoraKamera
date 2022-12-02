@@ -1,7 +1,9 @@
 package defpackage;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /* renamed from: phc  reason: default package */
 /* loaded from: classes2.dex */
@@ -25,12 +27,28 @@ final class phc extends pho {
 
     @Override // defpackage.pfx, java.util.concurrent.Future
     public final Object get() {
-        return this.a.get();
+        try {
+            return this.a.get();
+        } catch (ExecutionException ex) {
+            ex.printStackTrace();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.pfx, java.util.concurrent.Future
     public final Object get(long j, TimeUnit timeUnit) {
-        return this.a.get(j, timeUnit);
+        try {
+            return this.a.get(j, timeUnit);
+        } catch (ExecutionException ex) {
+            ex.printStackTrace();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        } catch (TimeoutException ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.pfx, java.util.concurrent.Future

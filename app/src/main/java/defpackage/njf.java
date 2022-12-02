@@ -18,7 +18,11 @@ public final class njf implements nin {
     public final /* bridge */ /* synthetic */ Object a(nim nimVar) {
         if (this.a) {
             if (!nimVar.b.isEmpty()) {
-                throw new niz("Short circuit would skip transforms.");
+                try {
+                    throw new niz("Short circuit would skip transforms.");
+                } catch (niz e) {
+                    e.printStackTrace();
+                }
             }
             return nimVar.a.c(nimVar.d);
         }
@@ -36,7 +40,12 @@ public final class njf implements nin {
                 niyVar.close();
             } catch (Throwable th2) {
             }
-            throw th;
+            try {
+                throw th;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+        return null;
     }
 }

@@ -97,7 +97,12 @@ public final class lgt implements lfi {
             createVideoFormat.setInteger("priority", 0);
         }
         String.valueOf(String.valueOf(createVideoFormat)).length();
-        MediaCodec bG = mip.bG(a2);
+        MediaCodec bG = null;
+        try {
+            bG = mip.bG(a2);
+        } catch (lej ex) {
+            ex.printStackTrace();
+        }
         this.c = bG;
         bG.getClass();
         HandlerThread handlerThread = new HandlerThread("VideoEncoder");

@@ -8,7 +8,7 @@ import java.util.Map;
 /* renamed from: oqu  reason: default package */
 /* loaded from: classes2.dex */
 public final class oqu extends AbstractCollection {
-    final /* synthetic */ olk a;
+    /* synthetic */ olk a;
 
     public oqu() {
     }

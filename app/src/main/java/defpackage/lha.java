@@ -40,7 +40,11 @@ public final class lha implements lhd {
             try {
                 this.a.start();
             } catch (RuntimeException e) {
-                throw new lhb(e);
+                try {
+                    throw new lhb(e);
+                } catch (lhb ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }
@@ -51,7 +55,11 @@ public final class lha implements lhd {
             try {
                 this.a.stop();
             } catch (RuntimeException e) {
-                throw new lhb(e);
+                try {
+                    throw new lhb(e);
+                } catch (lhb ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }
@@ -87,7 +95,11 @@ public final class lha implements lhd {
             try {
                 this.a.pause();
             } catch (RuntimeException e) {
-                throw new lhb(e);
+                try {
+                    throw new lhb(e);
+                } catch (lhb ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }
@@ -98,7 +110,11 @@ public final class lha implements lhd {
             try {
                 this.a.prepare();
             } catch (IOException e) {
-                throw new lhb(e);
+                try {
+                    throw new lhb(e);
+                } catch (lhb ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }
@@ -125,7 +141,11 @@ public final class lha implements lhd {
             try {
                 this.a.resume();
             } catch (RuntimeException e) {
-                throw new lhb(e);
+                try {
+                    throw new lhb(e);
+                } catch (lhb ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }
@@ -207,7 +227,11 @@ public final class lha implements lhd {
             try {
                 this.a.setNextOutputFile(fileDescriptor);
             } catch (IOException e) {
-                throw new lhb(e);
+                try {
+                    throw new lhb(e);
+                } catch (lhb ex) {
+                    ex.printStackTrace();
+                }
             }
         }
     }

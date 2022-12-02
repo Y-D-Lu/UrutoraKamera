@@ -53,9 +53,17 @@ public final class pog extends poh {
         if (i >= 0 && i <= K()) {
             this.h += i;
         } else if (i >= 0) {
-            throw ppp.i();
+            try {
+                throw ppp.i();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         } else {
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -81,7 +89,11 @@ public final class pog extends poh {
                             i2++;
                         }
                     }
-                    throw ppp.e();
+                    try {
+                        throw ppp.e();
+                    } catch (ppp ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 while (i2 < 10) {
                     long j = this.h;
@@ -90,7 +102,11 @@ public final class pog extends poh {
                         i2++;
                     }
                 }
-                throw ppp.e();
+                try {
+                    throw ppp.e();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
                 return true;
             case 1:
                 B(8);
@@ -106,14 +122,23 @@ public final class pog extends poh {
                 B(4);
                 return true;
             default:
-                throw ppp.a();
+                try {
+                    throw ppp.a();
+                } catch (ppo ex) {
+                    ex.printStackTrace();
+                }
         }
         do {
             m = m();
             if (m != 0) {
             }
             z(psa.c(psa.a(i), 4));
-            return true;
+            if (true) {
+                return true;
+            }
+            if (false) {
+                break;
+            }
         } while (E(m));
         z(psa.c(psa.a(i), 4));
         return true;
@@ -125,7 +150,12 @@ public final class pog extends poh {
             this.h = 1 + j;
             return prv.a(j);
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -149,13 +179,22 @@ public final class pog extends poh {
             int d = i + d();
             int i2 = this.l;
             if (d > i2) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
             this.l = d;
             L();
             return i2;
         }
-        throw ppp.f();
+        try {
+            throw ppp.f();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -179,7 +218,12 @@ public final class pog extends poh {
             this.h = 4 + j;
             return ((prv.a(j + 3) & 255) << 24) | (prv.a(j) & 255) | ((prv.a(1 + j) & 255) << 8) | ((prv.a(2 + j) & 255) << 16);
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:31:0x0082, code lost:
@@ -293,7 +337,11 @@ public final class pog extends poh {
         int j = j();
         this.k = j;
         if (psa.a(j) == 0) {
-            throw ppp.c();
+            try {
+                throw ppp.c();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         return this.k;
     }
@@ -319,7 +367,12 @@ public final class pog extends poh {
             this.h = 8 + j;
             return ((prv.a(j + 7) & 255) << 56) | (prv.a(j) & 255) | ((prv.a(1 + j) & 255) << 8) | ((prv.a(2 + j) & 255) << 16) | ((prv.a(3 + j) & 255) << 24) | ((prv.a(4 + j) & 255) << 32) | ((prv.a(5 + j) & 255) << 40) | ((prv.a(6 + j) & 255) << 48);
         }
-        throw ppp.i();
+        try {
+            throw ppp.i();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     public final long r() {
@@ -405,7 +458,12 @@ public final class pog extends poh {
                 return j;
             }
         }
-        throw ppp.e();
+        try {
+            throw ppp.e();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // defpackage.poh
@@ -431,9 +489,17 @@ public final class pog extends poh {
                 return poc.b;
             }
             if (j >= 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         byte[] bArr = new byte[j];
         long j2 = j;
@@ -450,9 +516,17 @@ public final class pog extends poh {
                 return "";
             }
             if (j >= 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         byte[] bArr = new byte[j];
         long j2 = j;
@@ -470,9 +544,17 @@ public final class pog extends poh {
                 return "";
             }
             if (j > 0) {
-                throw ppp.i();
+                try {
+                    throw ppp.i();
+                } catch (ppp ex) {
+                    ex.printStackTrace();
+                }
             }
-            throw ppp.f();
+            try {
+                throw ppp.f();
+            } catch (ppp ex) {
+                ex.printStackTrace();
+            }
         }
         String f = prx.f(this.e, (int) (this.h - this.f), j);
         this.h += j;
@@ -484,6 +566,10 @@ public final class pog extends poh {
         if (this.k == i) {
             return;
         }
-        throw ppp.b();
+        try {
+            throw ppp.b();
+        } catch (ppp ex) {
+            ex.printStackTrace();
+        }
     }
 }

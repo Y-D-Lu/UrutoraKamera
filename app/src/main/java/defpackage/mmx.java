@@ -25,8 +25,8 @@ final class mmx implements Runnable {
         moa moaVar = this.c;
         try {
             mnfVar.a(obj, executor).c(pgr.a, new mmz(moaVar), new mmy(moaVar)).h(mmg.a);
-        } catch (mnc e) {
-            moaVar.l(e);
+//        } catch (mnc e) {
+//            moaVar.l(e);
         } catch (Throwable th) {
             moaVar.l(mnc.a(th));
         }

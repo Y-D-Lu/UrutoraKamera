@@ -2,6 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.bottombar.R;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
@@ -55,7 +56,12 @@ public final class ohb extends InputStream implements ogs {
     public final int available() {
         int i = this.c.j;
         obr.aR(false, "To use InputStream methods on SpeechEnhancer, set the 'processed audio interface type' to 'INPUT_STREAM' when creating the SpeechEnhancer instance.");
-        return this.e.available();
+        try {
+            return this.e.available();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return  0;
     }
 
     @Override // defpackage.ogs
@@ -225,7 +231,12 @@ public final class ohb extends InputStream implements ogs {
             z = true;
         }
         obr.aR(z, "'start()' must be called before calling 'read()'.");
-        return this.e.read();
+        try {
+            return this.e.read();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 
     @Override // java.io.InputStream
@@ -238,6 +249,11 @@ public final class ohb extends InputStream implements ogs {
             z = true;
         }
         obr.aR(z, "'start()' must be called before calling 'read()'.");
-        return this.e.read(bArr, i, i2);
+        try {
+            return this.e.read(bArr, i, i2);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
     }
 }
