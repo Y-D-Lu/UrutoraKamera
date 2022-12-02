@@ -133,7 +133,7 @@ public final class jet implements jfn {
                 @Override // java.lang.Runnable
                 public final void run() {
                     jfk jfkVar2 = jfkVar;
-                    jfkVar2.d.i(iji.a);
+                    jfkVar2.d.i(iji.MODE_SWITCH_END);
                     fjs fjsVar = jfkVar2.a;
                     poy m = pcy.g.m();
                     int f = jri.f(jfkVar2.b);
@@ -160,7 +160,7 @@ public final class jet implements jfn {
                     long j = ijsVar.m;
                     pcyVar2.a = i4 | 4;
                     pcyVar2.d = j;
-                    long g = ijsVar.g(iji.a);
+                    long g = ijsVar.g(iji.MODE_SWITCH_END);
                     if (m.c) {
                         m.m();
                         m.c = false;

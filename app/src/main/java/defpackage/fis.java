@@ -3,6 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.location.Location;
 import android.net.Uri;
+import android.os.DeadObjectException;
 import android.os.SystemClock;
 import android.util.Log;
 
@@ -326,7 +327,11 @@ public final class fis implements fiw, ksz {
                                         sb.append(str);
                                         sb.append("@");
                                         sb.append(identityHashCode);
-                                        ((kti) ktkVar.u()).e(new ktm(1, ktlVar2, ksxVar, null, null, ksnVar, sb.toString()));
+                                        try {
+                                            ((kti) ktkVar.u()).e(new ktm(1, ktlVar2, ksxVar, null, null, ksnVar, sb.toString()));
+                                        } catch (DeadObjectException ex) {
+                                            ex.printStackTrace();
+                                        }
                                     }
                                 }
                             };

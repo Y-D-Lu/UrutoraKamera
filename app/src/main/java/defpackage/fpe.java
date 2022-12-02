@@ -82,9 +82,8 @@ public final class fpe implements iho {
                                     } catch (Throwable th2) {
                                     }
                                     throw th;
-                                    break;
                                 }
-                            } catch (mky e) {
+                            } catch (Exception e) {
                                 ((oug) ((oug) ((oug) a.c()).h(e)).G(1840)).p("Not restoring video id %d due to invalid boxes", i);
                             }
                         }

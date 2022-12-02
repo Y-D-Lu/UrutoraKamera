@@ -7,10 +7,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /* renamed from: eox  reason: default package */
 /* loaded from: classes.dex */
 final class eox {
-    public final hdv a;
-    public final edd b;
-    public final AtomicBoolean c;
-    public final epb d;
+    public hdv a;
+    public edd b;
+    public AtomicBoolean c;
+    public epb d;
 
     public eox() {
     }

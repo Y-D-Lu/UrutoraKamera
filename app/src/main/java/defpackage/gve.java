@@ -36,7 +36,7 @@ public final class gve implements gvb, fik, fii, fij {
         defaultDisplay.getRealSize(point);
         int rotation = defaultDisplay.getRotation();
         boolean z = true;
-        lig j = (rotation == 1 || rotation == 3) ? lig.f(point).j() : j;
+        lig j = (rotation == 1 || rotation == 3) ? lig.f(point).j() : lig.f(point);
         this.e = j.a > j.b ? false : z;
         this.f = lirVar.a("OrientMgrImpl");
     }

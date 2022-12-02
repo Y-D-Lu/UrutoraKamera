@@ -24,12 +24,12 @@ final class gia implements Runnable {
                 ljfVar2.e(sb.toString());
                 this.b.a();
                 ljfVar = this.a.a;
-            } catch (InterruptedException e) {
-                ljfVar = this.a.a;
-                ljfVar.f();
-            } catch (llv e2) {
-                ljfVar = this.a.a;
-                ljfVar.f();
+//            } catch (InterruptedException e) {
+//                ljfVar = this.a.a;
+//                ljfVar.f();
+//            } catch (llv e2) {
+//                ljfVar = this.a.a;
+//                ljfVar.f();
             } catch (Exception e3) {
                 this.a.b.execute(new glt(e3, 1));
                 ljfVar = this.a.a;

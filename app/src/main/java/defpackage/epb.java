@@ -27,7 +27,7 @@ public final class epb {
                 this.e.c(makVar, dxh.NIGHT);
                 ((iik) this.c).s = true;
                 this.f = true;
-            } catch (IOException e) {
+            } catch (Exception e) {
                 ((oug) ((oug) ((oug) d.b().g(ovl.a, "VideoKeplerSession")).h(e)).G((char) 1335)).o("Error adding badge to output file.");
             }
         }

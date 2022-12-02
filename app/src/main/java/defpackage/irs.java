@@ -7,7 +7,7 @@ import org.codeaurora.snapcam.R;
 /* renamed from: irs  reason: default package */
 /* loaded from: classes.dex */
 public final class irs {
-    public final iqn a;
+    public iqn a;
 
     public irs() {
     }

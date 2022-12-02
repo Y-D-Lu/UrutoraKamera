@@ -41,7 +41,7 @@ public final class gmp implements gmm {
             try {
                 fcy.e(madVar);
                 f.b.put(valueOf, byteArrayOutputStream.toByteArray());
-            } catch (IOException e) {
+            } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         }
@@ -75,7 +75,7 @@ public final class gmp implements gmm {
             try {
                 fcy.e(madVar);
                 f.a.put(valueOf, byteArrayOutputStream.toByteArray());
-            } catch (IOException e) {
+            } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         }

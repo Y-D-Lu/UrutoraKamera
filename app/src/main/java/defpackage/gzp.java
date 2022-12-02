@@ -70,7 +70,11 @@ public final class gzp implements goy {
 
     private final void d(String str) {
         this.b.d(str);
-        throw new llv(str);
+        try {
+            throw new llv(str);
+        } catch (llv ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.goy

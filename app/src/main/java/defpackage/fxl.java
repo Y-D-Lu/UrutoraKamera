@@ -5,7 +5,7 @@ package defpackage;
 public final class fxl {
     public static final fxl a = a(false);
     public static final fxl b = a(true);
-    public final boolean c;
+    public boolean c;
 
     public fxl() {
     }

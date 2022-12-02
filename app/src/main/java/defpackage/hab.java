@@ -24,7 +24,11 @@ public final class hab implements goy {
     @Override // defpackage.goy
     public final void c(gox goxVar, gog gogVar) {
         if (gogVar.b.i() != hsr.LONG_SHOT) {
-            this.a.c(goxVar, gogVar);
+            try {
+                this.a.c(goxVar, gogVar);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             return;
         }
         new lig(0, 0);

@@ -29,6 +29,6 @@ public final class fvc implements pys {
         fvhVarArr[3] = mo37get2.e() ? fvq.h(mo37get, fvb.b) : fvq.h(mo37get, fvb.a);
         fvhVarArr[4] = new fvg(mo37get);
         fvhVarArr[5] = new fve(2);
-        return obr.aj(fvhVarArr);
+        return obr.aj((Object[]) fvhVarArr);
     }
 }

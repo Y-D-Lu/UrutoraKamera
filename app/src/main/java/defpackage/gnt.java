@@ -5,8 +5,8 @@ import android.util.Pair;
 /* renamed from: gnt  reason: default package */
 /* loaded from: classes.dex */
 public final class gnt {
-    public final Float a;
-    private final Pair b;
+    public Float a;
+    private Pair b;
 
     public gnt() {
     }

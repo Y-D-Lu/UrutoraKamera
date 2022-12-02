@@ -13,7 +13,7 @@ public final class gei implements gdp {
 
     @Override // defpackage.gdp
     public final synchronized gbp a(mln mlnVar, lic licVar) {
-        int i;
+        int i = 0;
         try {
             i = this.c;
         } catch (RuntimeException e) {

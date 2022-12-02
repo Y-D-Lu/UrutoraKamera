@@ -70,7 +70,7 @@ public final class hik implements hgz {
                     public final void run() {
                         try {
                             hik.this.b.c();
-                        } catch (InterruptedException e) {
+                        } catch (Exception e) {
                             Thread.currentThread().interrupt();
                             ((oug) ((oug) ((oug) hik.a.c()).h(e)).G((char) 2481)).o("ImageShadowTask failed because it was interrupted.");
                         }

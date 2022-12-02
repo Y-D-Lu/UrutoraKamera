@@ -28,7 +28,11 @@ public final class gov implements goy {
     public final void c(gox goxVar, gog gogVar) {
         ((iik) gogVar.b.k()).c = this.b;
         gogVar.b.Y(this.c);
-        this.a.c(goxVar, gogVar);
+        try {
+            this.a.c(goxVar, gogVar);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public final String toString() {

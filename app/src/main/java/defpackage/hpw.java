@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -46,7 +47,12 @@ public final class hpw implements hpu {
 
     @Override // defpackage.hpu
     public final File c(String str) {
-        return this.e.a(str);
+        try {
+            return this.e.a(str);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     @Override // defpackage.hpu

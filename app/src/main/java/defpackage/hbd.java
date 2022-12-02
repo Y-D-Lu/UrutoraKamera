@@ -33,7 +33,11 @@ public abstract class hbd implements goy {
         e(list);
         gogVar.b.k().g();
         gogVar.c.g();
-        goyVar.c(goxVar, gogVar);
+        try {
+            goyVar.c(goxVar, gogVar);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.goy
@@ -49,7 +53,7 @@ public abstract class hbd implements goy {
     @Override // defpackage.goy
     public void c(gox goxVar, gog gogVar) {
         goy goyVar;
-        boolean d;
+        boolean d = false;
         this.e.e("pckZsl#lockBuffer");
         hem a2 = this.b.a();
         try {
@@ -76,7 +80,7 @@ public abstract class hbd implements goy {
                     this.e.e("pckZsl#processZslFrames");
                     d = d(h, goxVar, gogVar);
                     this.e.f();
-                } catch (dmd e) {
+                } catch (Exception e) {
                     if (e instanceof dma) {
                         ((oug) ((oug) ((oug) a.b()).h(e)).G(2303)).o("Aborted main ZSL shot, not executing fallback");
                         z = false;

@@ -122,7 +122,11 @@ public final class kus {
             fcq.a("glBindTexture");
             return;
         }
-        throw new fcq("Trying to bind without a loaded texture");
+        try {
+            throw new fcq("Trying to bind without a loaded texture");
+        } catch (fcq e) {
+            e.printStackTrace();
+        }
     }
 
     public final void h(Throwable... thArr) {

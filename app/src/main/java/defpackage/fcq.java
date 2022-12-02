@@ -30,6 +30,10 @@ public final class fcq extends Exception {
         sb.append(gluErrorString);
         sb.append(" ");
         sb.append(glGetError);
-        throw new fcq(sb.toString());
+        try {
+            throw new fcq(sb.toString());
+        } catch (fcq e) {
+            e.printStackTrace();
+        }
     }
 }

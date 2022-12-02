@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: hfv  reason: default package */
 /* loaded from: classes.dex */
 final class hfv {
-    public final String a;
-    public final String b;
-    public final long c;
-    public final msq d;
+    public String a;
+    public String b;
+    public long c;
+    public msq d;
 
     public hfv() {
     }

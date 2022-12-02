@@ -8,14 +8,14 @@ import java.util.concurrent.atomic.AtomicReference;
 /* renamed from: erv  reason: default package */
 /* loaded from: classes.dex */
 final class erv {
-    public final UUID a;
-    public final hdv b;
-    public final edd c;
-    public final AtomicBoolean d;
-    public final Phaser e;
-    public final lie f;
-    public final esn g;
-    public final AtomicReference h;
+    public UUID a;
+    public hdv b;
+    public edd c;
+    public AtomicBoolean d;
+    public Phaser e;
+    public lie f;
+    public esn g;
+    public AtomicReference h;
 
     public erv() {
     }

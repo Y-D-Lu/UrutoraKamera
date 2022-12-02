@@ -23,7 +23,11 @@ final class gyh implements goy {
 
     @Override // defpackage.goy
     public final void c(gox goxVar, gog gogVar) {
-        this.a.c(goxVar, gogVar);
+        try {
+            this.a.c(goxVar, gogVar);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         this.b.p();
     }
 }

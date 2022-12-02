@@ -89,7 +89,7 @@ public final class eol implements ebq {
                     return;
                 }
                 plk.af(eotVar.a(), new eok(this), this.c.d);
-            } catch (IOException e3) {
+            } catch (Exception e3) {
                 ((oug) ((oug) ((oug) eon.a.b().g(ovl.a, "KeplerController")).h(e3)).G((char) 1295)).o("Encoder creation failed");
                 b(hardwareBuffer, new dmd("Failed to create encoder.", e3));
             }

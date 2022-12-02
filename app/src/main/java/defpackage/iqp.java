@@ -3,20 +3,20 @@ package defpackage;
 /* renamed from: iqp  reason: default package */
 /* loaded from: classes.dex */
 public final class iqp {
-    public final ldz a;
-    public final leb b;
-    public final cle c;
-    public final ojc d;
-    public final iqn e;
-    public final lic f;
-    public final String g;
-    public final boolean h;
-    public final hsq i;
-    private final ojc j;
-    private final long k;
-    private final long l;
-    private final long m;
-    private final long n;
+    public ldz a;
+    public leb b;
+    public cle c;
+    public ojc d;
+    public iqn e;
+    public lic f;
+    public String g;
+    public boolean h;
+    public hsq i;
+    private ojc j;
+    private long k;
+    private long l;
+    private long m;
+    private long n;
 
     public iqp() {
     }

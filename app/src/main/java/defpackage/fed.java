@@ -41,7 +41,7 @@ public final class fed implements fea {
                 if (fctVar != null) {
                     fctVar.f(fArr, pointF.x, pointF.y, 0.4f);
                 }
-            } catch (fcq e) {
+            } catch (Exception e) {
                 e.printStackTrace();
                 return;
             }

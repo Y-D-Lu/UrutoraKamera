@@ -24,7 +24,7 @@ final class gpc implements ghz {
     @Override // defpackage.ghz
     public final void a() {
         Throwable th;
-        goy goyVar;
+        goy goyVar = null;
         Throwable runtimeException = new RuntimeException("Unknown exception in PictureTaker.");
         try {
             try {
@@ -97,7 +97,11 @@ final class gpc implements ghz {
             this.c.b.w(runtimeException);
             this.c.c.f();
             this.c.a.f.close();
-            throw th;
+            try {
+                throw th;
+            } catch (Throwable ex) {
+                ex.printStackTrace();
+            }
         }
     }
 

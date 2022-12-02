@@ -5,9 +5,9 @@ import android.graphics.PointF;
 /* renamed from: ggm  reason: default package */
 /* loaded from: classes.dex */
 public final class ggm {
-    public final PointF a;
-    public final boolean b;
-    private final int c;
+    public PointF a;
+    public boolean b;
+    private int c;
 
     public ggm() {
     }

@@ -25,7 +25,13 @@ public final class haw extends hbd {
     @Override // defpackage.hbd
     protected final boolean d(List list, gox goxVar, gog gogVar) {
         this.b.e("pckHdrZsl#process");
-        this.a.g(list, goxVar, gogVar);
+        try {
+            this.a.g(list, goxVar, gogVar);
+        } catch (dls e) {
+            e.printStackTrace();
+        } catch (dlz e) {
+            e.printStackTrace();
+        }
         this.b.f();
         return true;
     }

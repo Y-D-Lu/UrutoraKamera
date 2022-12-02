@@ -29,7 +29,11 @@ public final class gou implements goy {
     public final void c(gox goxVar, gog gogVar) {
         try {
             d(gfq.RUNNING);
-            this.a.c(goxVar, gogVar);
+            try {
+                this.a.c(goxVar, gogVar);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         } finally {
             d(gfq.IDLE);
         }

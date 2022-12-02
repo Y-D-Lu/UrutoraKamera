@@ -1,5 +1,6 @@
 package defpackage;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -20,14 +21,24 @@ public final class pgl extends Number implements Serializable {
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
-        objectInputStream.defaultReadObject();
-        this.value = new AtomicLong();
-        b(objectInputStream.readDouble());
+        try {
+            objectInputStream.defaultReadObject();
+            this.value = new AtomicLong();
+            b(objectInputStream.readDouble());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void writeObject(ObjectOutputStream objectOutputStream) {
-        objectOutputStream.defaultWriteObject();
-        objectOutputStream.writeDouble(a());
+        try {
+            objectOutputStream.defaultWriteObject();
+            objectOutputStream.writeDouble(a());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public final double a() {

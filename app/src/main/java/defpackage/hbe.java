@@ -36,7 +36,11 @@ public final class hbe implements goy {
         }
         gogVar.b.k().g();
         gogVar.c.g();
-        goyVar.c(goxVar, gogVar);
+        try {
+            goyVar.c(goxVar, gogVar);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override // defpackage.goy

@@ -17,7 +17,12 @@ public final class ejt implements eko {
     private final MediaFormat e;
 
     public ejt() {
-        MediaCodec createEncoderByType = MediaCodec.createEncoderByType("audio/mp4a-latm");
+        MediaCodec createEncoderByType = null;
+        try {
+            createEncoderByType = MediaCodec.createEncoderByType("audio/mp4a-latm");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         MediaFormat createAudioFormat = MediaFormat.createAudioFormat("audio/mp4a-latm", 44100, 1);
         this.c = false;
         this.d = false;

@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: fwh  reason: default package */
 /* loaded from: classes.dex */
 public final class fwh {
-    private final lvs a;
-    private final lig b;
+    private lvs a;
+    private lig b;
 
     public fwh() {
     }

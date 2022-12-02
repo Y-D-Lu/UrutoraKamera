@@ -44,7 +44,7 @@ public final class hav extends hbd {
                                         e.g(new maa(d));
                                     }
                                 }
-                            } catch (InterruptedException e2) {
+                            } catch (Exception e2) {
                                 ((oug) ((oug) gze.a.b()).G((char) 2223)).r("Error retrieving the images from Frame %s", lmrVar.b());
                             }
                         }

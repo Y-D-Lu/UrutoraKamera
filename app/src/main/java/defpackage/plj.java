@@ -7,10 +7,10 @@ import com.google.googlex.gcam.SpatialGainMap;
 /* renamed from: plj  reason: default package */
 /* loaded from: classes2.dex */
 public final class plj {
-    public final RawWriteView a;
-    public final FrameMetadata b;
-    public final SpatialGainMap c;
-    public final Runnable d;
+    public RawWriteView a;
+    public FrameMetadata b;
+    public SpatialGainMap c;
+    public Runnable d;
 
     public plj() {
     }

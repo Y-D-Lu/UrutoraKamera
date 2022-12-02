@@ -42,9 +42,13 @@ public class hn {
     }
 
     public static atr d(String str, String str2) {
-        ats atsVar;
+        ats atsVar = null;
         if (str == null || str2 == null) {
-            throw new ass("Parameter must not be null", 4);
+            try {
+                throw new ass("Parameter must not be null", 4);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         atr atrVar = new atr();
         atq atqVar = new atq();
@@ -55,7 +59,11 @@ public class hn {
         int i = atqVar.e;
         int i2 = atqVar.d;
         if (i == i2) {
-            throw new ass("Empty initial XMPPath step", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+            try {
+                throw new ass("Empty initial XMPPath step", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
         String f = f(str, atqVar.a.substring(i2, i));
         atn e = asv.a.e(f);
@@ -87,14 +95,22 @@ public class hn {
                 int i4 = atqVar.d + 1;
                 atqVar.d = i4;
                 if (i4 >= str2.length()) {
-                    throw new ass("Empty XMPPath segment", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    try {
+                        throw new ass("Empty XMPPath segment", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    } catch (ass ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
             if (str2.charAt(atqVar.d) == '*') {
                 int i5 = atqVar.d + 1;
                 atqVar.d = i5;
                 if (i5 >= str2.length() || str2.charAt(atqVar.d) != '[') {
-                    throw new ass("Missing '[' after '*'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    try {
+                        throw new ass("Missing '[' after '*'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    } catch (ass ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
             int i6 = atqVar.d;
@@ -108,7 +124,11 @@ public class hn {
                 atqVar.c = i7;
                 int i8 = atqVar.d;
                 if (i7 == i8) {
-                    throw new ass("Empty XMPPath segment", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    try {
+                        throw new ass("Empty XMPPath segment", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    } catch (ass ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 atsVar = new ats(atqVar.a.substring(i8, i7), 1);
             } else {
@@ -124,7 +144,11 @@ public class hn {
                         atqVar.e++;
                     }
                     if (atqVar.e >= atqVar.a.length()) {
-                        throw new ass("Missing ']' or '=' for array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        try {
+                            throw new ass("Missing ']' or '=' for array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        } catch (ass ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     if (atqVar.a.charAt(atqVar.e) != ']') {
                         atqVar.b = atqVar.d + 1;
@@ -134,7 +158,11 @@ public class hn {
                         atqVar.e = i11;
                         char charAt = atqVar.a.charAt(i11);
                         if (charAt != '\'' && charAt != '\"') {
-                            throw new ass("Invalid quote in array selector", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                            try {
+                                throw new ass("Invalid quote in array selector", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                            } catch (ass ex) {
+                                ex.printStackTrace();
+                            }
                         }
                         atqVar.e++;
                         while (atqVar.e < atqVar.a.length()) {
@@ -147,18 +175,30 @@ public class hn {
                             atqVar.e++;
                         }
                         if (atqVar.e >= atqVar.a.length()) {
-                            throw new ass("No terminating quote for array selector", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                            try {
+                                throw new ass("No terminating quote for array selector", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                            } catch (ass ex) {
+                                ex.printStackTrace();
+                            }
                         }
                         atqVar.e++;
                         atsVar = new ats(null, 6);
                     } else if (!"[last()".equals(atqVar.a.substring(atqVar.d, atqVar.e))) {
-                        throw new ass("Invalid non-numeric array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        try {
+                            throw new ass("Invalid non-numeric array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        } catch (ass ex) {
+                            ex.printStackTrace();
+                        }
                     } else {
                         atsVar = new ats(null, 4);
                     }
                 }
                 if (atqVar.e >= atqVar.a.length() || atqVar.a.charAt(atqVar.e) != ']') {
-                    throw new ass("Missing ']' for array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    try {
+                        throw new ass("Missing ']' for array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    } catch (ass ex) {
+                        ex.printStackTrace();
+                    }
                 }
                 int i12 = atqVar.e + 1;
                 atqVar.e = i12;
@@ -170,7 +210,11 @@ public class hn {
                     String valueOf = String.valueOf(atsVar.a.substring(1));
                     atsVar.a = valueOf.length() != 0 ? "?".concat(valueOf) : new String("?");
                     if (!"?xml:lang".equals(atsVar.a)) {
-                        throw new ass("Only xml:lang allowed with '@'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        try {
+                            throw new ass("Only xml:lang allowed with '@'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        } catch (ass ex) {
+                            ex.printStackTrace();
+                        }
                     }
                 }
                 if (atsVar.a.charAt(0) == '?') {
@@ -185,7 +229,11 @@ public class hn {
                     String valueOf2 = String.valueOf(atsVar.a.substring(2));
                     atsVar.a = valueOf2.length() != 0 ? "[?".concat(valueOf2) : new String("[?");
                     if (!atsVar.a.startsWith("[?xml:lang=")) {
-                        throw new ass("Only xml:lang allowed with '@'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        try {
+                            throw new ass("Only xml:lang allowed with '@'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        } catch (ass ex) {
+                            ex.printStackTrace();
+                        }
                     }
                 }
                 if (atsVar.a.charAt(1) == '?') {
@@ -361,21 +409,39 @@ public class hn {
             atpVar.d.flush();
             atpVar.c.close();
         } catch (IOException e) {
-            throw new ass("Error writing to the OutputStream", 0);
+            try {
+                throw new ass("Error writing to the OutputStream", 0);
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
+        } catch (ass e) {
+            e.printStackTrace();
         }
     }
 
     private static String f(String str, String str2) {
         if (str.length() != 0) {
             if (str2.charAt(0) == '?' || str2.charAt(0) == '@') {
-                throw new ass("Top level name must not be a qualifier", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                try {
+                    throw new ass("Top level name must not be a qualifier", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             if (str2.indexOf(47) >= 0 || str2.indexOf(91) >= 0) {
-                throw new ass("Top level name must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                try {
+                    throw new ass("Top level name must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             String a = asv.a.a(str);
             if (a == null) {
-                throw new ass("Unregistered schema namespace URI", R.styleable.AppCompatTheme_switchStyle);
+                try {
+                    throw new ass("Unregistered schema namespace URI", R.styleable.AppCompatTheme_switchStyle);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             int indexOf = str2.indexOf(58);
             if (indexOf < 0) {
@@ -388,14 +454,27 @@ public class hn {
             String substring = str2.substring(0, indexOf + 1);
             String a2 = asv.a.a(str);
             if (a2 == null) {
-                throw new ass("Unknown schema namespace prefix", R.styleable.AppCompatTheme_switchStyle);
+                try {
+                    throw new ass("Unknown schema namespace prefix", R.styleable.AppCompatTheme_switchStyle);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             if (!substring.equals(a2)) {
-                throw new ass("Schema namespace URI and prefix mismatch", R.styleable.AppCompatTheme_switchStyle);
+                try {
+                    throw new ass("Schema namespace URI and prefix mismatch", R.styleable.AppCompatTheme_switchStyle);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             return str2;
         }
-        throw new ass("Schema namespace URI is required", R.styleable.AppCompatTheme_switchStyle);
+        try {
+            throw new ass("Schema namespace URI is required", R.styleable.AppCompatTheme_switchStyle);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private static void g(String str) {
@@ -404,18 +483,30 @@ public class hn {
             String substring = str.substring(0, indexOf);
             if (atb.f(substring)) {
                 if (asv.a.b(substring) == null) {
-                    throw new ass("Unknown namespace prefix for qualified name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    try {
+                        throw new ass("Unknown namespace prefix for qualified name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    } catch (ass e) {
+                        e.printStackTrace();
+                    }
                 }
                 return;
             }
         }
-        throw new ass("Ill-formed qualified name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        try {
+            throw new ass("Ill-formed qualified name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
     }
 
     private static void h(String str) {
         if (atb.e(str)) {
             return;
         }
-        throw new ass("Bad XML name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        try {
+            throw new ass("Bad XML name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
     }
 }

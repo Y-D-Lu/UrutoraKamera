@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: ftm  reason: default package */
 /* loaded from: classes.dex */
 public final class ftm {
-    public final int a;
-    public final float b;
-    public final float c;
+    public int a;
+    public float b;
+    public float c;
 
     public ftm() {
     }

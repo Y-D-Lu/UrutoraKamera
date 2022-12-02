@@ -94,7 +94,7 @@ public final class gts implements gtu {
 
     /* JADX WARN: Type inference failed for: r0v1, types: [gtt, java.lang.Object] */
     public final void j(hth hthVar, String str) {
-        boolean H = this.a.mo37get().H();
+        boolean H = ((gtt)this.a.mo37get()).H();
         hth hthVar2 = hth.EXT_WIRED;
         hth hthVar3 = hth.EXT_BLUETOOTH;
         if (H) {
@@ -118,9 +118,9 @@ public final class gts implements gtu {
     /* JADX WARN: Type inference failed for: r0v1, types: [gtt, java.lang.Object] */
     /* JADX WARN: Type inference failed for: r3v3, types: [gtt, java.lang.Object] */
     public final void k() {
-        boolean D = this.a.mo37get().D();
+        boolean D = ((gtt)this.a.mo37get()).D();
         int i = 0;
-        boolean z = D && this.a.mo37get().G() && this.b.v();
+        boolean z = D && ((gtt)this.a.mo37get()).G() && this.b.v();
         LinearMinibarImpl linearMinibarImpl = this.b;
         if (true != D) {
             i = 8;

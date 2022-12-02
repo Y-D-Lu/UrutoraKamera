@@ -41,7 +41,7 @@ public final class gyd implements ghz {
                 }
             }
             q.close();
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             ((oug) ((oug) ((oug) a.c()).h(e)).G((char) 2191)).o("Unable to retrieve frame");
         }
     }

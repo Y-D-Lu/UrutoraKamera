@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: fqm  reason: default package */
 /* loaded from: classes.dex */
 public final class fqm implements lie {
-    public final long a;
-    public final pih b;
-    public final pih c;
+    public long a;
+    public pih b;
+    public pih c;
 
     public fqm() {
     }

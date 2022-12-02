@@ -40,7 +40,7 @@ public final class hvg {
                 String[] split = str.split(",");
                 if (split.length == 0) {
                     z = false;
-                } else if (!mip.eV(ligVar, new HashSet(obr.aj(split)))) {
+                } else if (!mip.eV(ligVar, new HashSet(obr.aj((Object[]) split)))) {
                     z = false;
                 }
             }

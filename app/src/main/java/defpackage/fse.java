@@ -138,7 +138,7 @@ public final /* synthetic */ class fse implements Runnable {
                 if (fsfVar.l != null) {
                     fsfVar.l.b((ByteBuffer) create.first, (MediaCodec.BufferInfo) create.second);
                 }
-            } catch (IOException e2) {
+            } catch (Exception e2) {
                 ((oug) ((oug) ((oug) fsf.a.b()).h(e2)).G((char) 1945)).o("Cannot serialize gyro data.");
             }
         }

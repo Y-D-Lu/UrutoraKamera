@@ -3,15 +3,15 @@ package defpackage;
 /* renamed from: iav  reason: default package */
 /* loaded from: classes.dex */
 public final class iav {
-    public final String a;
-    public final ope b;
-    public final ope c;
-    public final boolean d;
-    public final boolean e;
-    public final lda f;
-    public final ojc g;
-    public final ojc h;
-    public final int i;
+    public String a;
+    public ope b;
+    public ope c;
+    public boolean d;
+    public boolean e;
+    public lda f;
+    public ojc g;
+    public ojc h;
+    public int i;
 
     public iav() {
     }

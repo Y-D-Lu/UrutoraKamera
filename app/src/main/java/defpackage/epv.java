@@ -3,9 +3,9 @@ package defpackage;
 /* renamed from: epv  reason: default package */
 /* loaded from: classes.dex */
 public final class epv {
-    public final esn a;
-    public final String b;
-    public final iuu c;
+    public esn a;
+    public String b;
+    public iuu c;
 
     public epv() {
     }

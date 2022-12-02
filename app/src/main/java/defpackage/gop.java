@@ -74,10 +74,18 @@ public final class gop implements goy {
         }
         if (z || z2 || !this.b.g()) {
             this.g.g("primaryCommand#captureImage");
-            this.a.c(goxVar, gogVar);
+            try {
+                this.a.c(goxVar, gogVar);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
         } else {
             this.g.g("fallbackCommand#captureImage");
-            ((goy) this.b.c()).c(goxVar, gogVar);
+            try {
+                ((goy) this.b.c()).c(goxVar, gogVar);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
         }
         if (fuhVar != null) {
             this.g.g("deactivate");

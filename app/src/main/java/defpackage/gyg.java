@@ -21,7 +21,11 @@ public final class gyg {
 
     public static void c(lng lngVar, hsa hsaVar) {
         int i = hsaVar.h().a;
-        ((lqb) lngVar).a.n(ope.H(mip.be(kda.g, 2)), new gyf(hsaVar));
+        try {
+            ((lqb) lngVar).a.n(ope.H(mip.be(kda.g, 2)), new gyf(hsaVar));
+        } catch (llv ex) {
+            ex.printStackTrace();
+        }
     }
 
     private final boolean d() {
@@ -38,7 +42,7 @@ public final class gyg {
             try {
                 c(lngVar, hsaVar);
                 ljfVar = this.c;
-            } catch (llv e) {
+            } catch (Exception e) {
                 ((oug) ((oug) ((oug) a.b()).h(e)).G(2194)).o("Error submitting 3A debug metadata request.");
                 ljfVar = this.c;
             }
@@ -57,14 +61,14 @@ public final class gyg {
             @Override // java.lang.Runnable
             public final void run() {
                 ljf ljfVar;
-                lng c;
+                lng c = null;
                 gyg gygVar = gyg.this;
                 hsa hsaVar2 = hsaVar;
                 gygVar.c.e("AfDebugFetch#request");
                 try {
                     try {
                         c = gygVar.b.c();
-                    } catch (InterruptedException | llv e) {
+                    } catch (Exception e) {
                         ((oug) ((oug) ((oug) gyg.a.b()).h(e)).G(2193)).o("Error submitting 3A debug metadata request.");
                         ljfVar = gygVar.c;
                     }

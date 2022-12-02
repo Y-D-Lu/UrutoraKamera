@@ -4,11 +4,12 @@ import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Parcel;
+import android.os.RemoteException;
 
 /* renamed from: ey  reason: default package */
 /* loaded from: classes.dex */
 public final class ey extends Binder implements ez {
-    final /* synthetic */ fa a;
+    /* synthetic */ fa a;
 
     public ey() {
         attachInterface(this, "android.support.v4.os.IResultReceiver");
@@ -39,7 +40,12 @@ public final class ey extends Binder implements ez {
                 parcel2.writeString("android.support.v4.os.IResultReceiver");
                 return true;
             default:
-                return super.onTransact(i, parcel, parcel2, i2);
+                try {
+                    return super.onTransact(i, parcel, parcel2, i2);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+                return false;
         }
     }
 }

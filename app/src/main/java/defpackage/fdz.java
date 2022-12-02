@@ -34,7 +34,7 @@ public final class fdz implements fea {
             if (fctVar != null && fdvVar.h != null) {
                 try {
                     fctVar.f(fArr, pointF.x, pointF.y, f4);
-                } catch (fcq e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }

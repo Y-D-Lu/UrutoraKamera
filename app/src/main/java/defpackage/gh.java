@@ -51,7 +51,11 @@ public final class gh {
     public static String g(String str, int i) {
         if (i <= 0) {
             if (i != -1) {
-                throw new ass("Array index must be larger than zero", R.styleable.AppCompatTheme_textAppearanceListItemSecondary);
+                try {
+                    throw new ass("Array index must be larger than zero", R.styleable.AppCompatTheme_textAppearanceListItemSecondary);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             return str.concat("[last()]");
         }
@@ -66,11 +70,19 @@ public final class gh {
     public static String h(String str, String str2) {
         if (str.length() != 0) {
             if (str2.length() == 0) {
-                throw new ass("Empty f name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                try {
+                    throw new ass("Empty f name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             atr d = hn.d(str, str2);
             if (d.a() != 2) {
-                throw new ass("The field name must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                try {
+                    throw new ass("The field name must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             String str3 = d.b(1).a;
             StringBuilder sb = new StringBuilder(String.valueOf(str3).length() + 1);
@@ -78,7 +90,12 @@ public final class gh {
             sb.append(str3);
             return sb.toString();
         }
-        throw new ass("Empty field namespace URI", R.styleable.AppCompatTheme_switchStyle);
+        try {
+            throw new ass("Empty field namespace URI", R.styleable.AppCompatTheme_switchStyle);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:52:0x0065 A[EXC_TOP_SPLITTER, SYNTHETIC] */

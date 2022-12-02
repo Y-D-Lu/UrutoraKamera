@@ -42,7 +42,11 @@ public final class fmk {
 
     public static boolean b(ast astVar, String str) {
         if (astVar.e("http://ns.google.com/photos/1.0/panorama/", str)) {
-            return ((Boolean) ((ati) astVar).l("http://ns.google.com/photos/1.0/panorama/", str, 1)).booleanValue();
+            try {
+                return ((Boolean) ((ati) astVar).l("http://ns.google.com/photos/1.0/panorama/", str, 1)).booleanValue();
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
         }
         return false;
     }
@@ -53,7 +57,11 @@ public final class fmk {
 
     public static void d(ast astVar, String str) {
         if (astVar.e("http://ns.google.com/photos/1.0/panorama/", str)) {
-            Calendar calendar = (Calendar) ((ati) astVar).l("http://ns.google.com/photos/1.0/panorama/", str, 6);
+            try {
+                Calendar calendar = (Calendar) ((ati) astVar).l("http://ns.google.com/photos/1.0/panorama/", str, 6);
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
         }
     }
 }

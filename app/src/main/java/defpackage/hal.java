@@ -6,8 +6,6 @@ import com.google.googlex.gcam.FrameRequestVector;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
-
-import java.util.Collection;
 import java.util.stream.Collectors;
 
 /* renamed from: hal  reason: default package */
@@ -45,7 +43,7 @@ public final class hal {
     }
 
     public final List a(edd eddVar, lzv lzvVar, hcf hcfVar, lqd lqdVar, lng lngVar) {
-        ljf ljfVar;
+        ljf ljfVar = null;
         ljf ljfVar2;
         this.h.e("ShastaZslController#getPslFrames");
         List arrayList = new ArrayList();
@@ -65,7 +63,7 @@ public final class hal {
                                 e.close();
                                 throw th;
                             }
-                        } catch (llv e2) {
+                        } catch (Exception e2) {
                             ((oug) ((oug) a.b()).G(2241)).r("Unable to build payloadBurstSpec %s", e2);
                             e.close();
                             ljfVar2 = this.h;
@@ -93,7 +91,7 @@ public final class hal {
                             try {
                                 this.h.f();
                                 arrayList = c;
-                            } catch (llv e3) {
+                            } catch (Exception e3) {
                                 arrayList = c;
                                 ljfVar = this.h;
                                 ljfVar.f();
@@ -102,7 +100,8 @@ public final class hal {
                         }
                     }
                     ljfVar = this.h;
-                } catch (llv e4) {
+                } catch (Exception e4) {
+                    e4.printStackTrace();
                 }
                 ljfVar.f();
             } finally {

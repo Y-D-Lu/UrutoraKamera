@@ -57,10 +57,10 @@ public final class jom extends View {
 
     public jom(Context context) {
         super(context);
-        String string;
-        float abs;
-        float abs2;
-        float f;
+        String string = null;
+        float abs = 0;
+        float abs2 = 0;
+        float f = 0;
         boolean z = true;
         this.n = 1;
         this.B = 0;

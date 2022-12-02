@@ -70,7 +70,7 @@ public final class gbh implements gbp {
             }
         }
         throw new IllegalStateException("Max attempts to encode reached! Encoding failed!");
-        return true;
+        //return true;
     }
 
     @Override // defpackage.gbp, defpackage.lie, java.lang.AutoCloseable

@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: hck  reason: default package */
 /* loaded from: classes.dex */
 public final class hck {
-    public final int a;
-    public final oom b;
+    public int a;
+    public oom b;
 
     public hck() {
     }

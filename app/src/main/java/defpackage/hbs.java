@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: hbs  reason: default package */
 /* loaded from: classes.dex */
 public final class hbs {
-    public final float a;
-    public final float b;
+    public float a;
+    public float b;
 
     public hbs() {
     }

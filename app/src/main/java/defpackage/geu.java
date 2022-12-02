@@ -3,13 +3,13 @@ package defpackage;
 /* renamed from: geu  reason: default package */
 /* loaded from: classes.dex */
 public final class geu {
-    public final int a;
-    public final int b;
-    public final boolean c;
-    public final long d;
-    public final int e;
-    private final int f;
-    private final int g;
+    public int a;
+    public int b;
+    public boolean c;
+    public long d;
+    public int e;
+    private int f;
+    private int g;
 
     public geu() {
     }

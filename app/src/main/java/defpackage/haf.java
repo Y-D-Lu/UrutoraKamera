@@ -32,7 +32,11 @@ public final class haf implements goy {
     @Override // defpackage.goy
     public final void c(gox goxVar, gog gogVar) {
         if (!this.b.c() || !this.c.c()) {
-            this.a.c(goxVar, gogVar);
+            try {
+                this.a.c(goxVar, gogVar);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             return;
         }
         ((ges) this.b.b()).k(d(this.d), gogVar);
@@ -41,7 +45,11 @@ public final class haf implements goy {
         } else {
             ((gez) this.c.b()).f(gogVar.b.h());
         }
-        this.a.c(goxVar, gogVar);
+        try {
+            this.a.c(goxVar, gogVar);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         ((ges) this.b.b()).i(d(this.d), gogVar);
     }
 

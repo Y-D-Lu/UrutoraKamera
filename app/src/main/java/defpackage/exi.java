@@ -743,8 +743,8 @@ public final class exi extends buf implements jad, gft {
                 if (z2) {
                     exiVar.ak.a(exiVar.m.d() == lwd.BACK ? lwd.FRONT : lwd.BACK, 2, 3);
                 }
-                ijsVar2.i(ijh.a);
-                exiVar.T.V(true != z3 ? 2 : 3, z4 ? 2 : 3, ijsVar2.m, ijsVar2.g(ijh.a));
+                ijsVar2.i(ijh.CAMERA_CHANGE_END);
+                exiVar.T.V(true != z3 ? 2 : 3, z4 ? 2 : 3, ijsVar2.m, ijsVar2.g(ijh.CAMERA_CHANGE_END));
                 ijsVar2.close();
                 if (z4) {
                     exiVar.o.a();

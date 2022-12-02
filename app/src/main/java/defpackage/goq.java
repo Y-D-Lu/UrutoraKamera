@@ -60,7 +60,11 @@ public final class goq implements goy {
             }
         }
         gogVar.a.f.c(grxVar);
-        this.b.c(goxVar, gogVar);
+        try {
+            this.b.c(goxVar, gogVar);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
         b.c();
     }
 }

@@ -78,7 +78,7 @@ public final class fjk implements fjt {
                     }
                 }
             }
-        } catch (IOException e2) {
+        } catch (Exception e2) {
             ((oug) ((oug) ((oug) a.b()).h(e2)).G((char) 1728)).o("Failed to log an event!");
         }
     }

@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: ggh  reason: default package */
 /* loaded from: classes.dex */
 public final class ggh {
-    private final ggd a;
-    private final ggd b;
+    private ggd a;
+    private ggd b;
 
     public ggh() {
     }

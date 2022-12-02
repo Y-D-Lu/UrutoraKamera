@@ -270,13 +270,13 @@ public final class gxi implements bmq, lie {
                             }
                             throw th;
                         }
-                    } catch (InterruptedException e) {
+                    } catch (Exception e) {
                         float f = pointF2.x;
                         float f2 = pointF2.y;
                         Thread.currentThread().interrupt();
-                    } catch (llv e2) {
-                        float f3 = pointF2.x;
-                        float f4 = pointF2.y;
+//                    } catch (llv e2) {
+//                        float f3 = pointF2.x;
+//                        float f4 = pointF2.y;
                     }
                 }
             }

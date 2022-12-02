@@ -49,7 +49,7 @@ public final class fdn extends fcp {
                 f += 0.3f;
             }
             this.g = s;
-        } catch (fcq e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

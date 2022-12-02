@@ -11,7 +11,7 @@ public final class fcm {
         int i;
         double d;
         int i2;
-        int i3;
+        int i3 = 0;
         double d2;
         int abs;
         if (a == null) {

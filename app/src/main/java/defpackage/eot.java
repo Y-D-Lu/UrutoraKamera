@@ -48,7 +48,11 @@ public final class eot implements lie {
         createVideoFormat.setInteger("frame-rate", 10);
         createVideoFormat.setFloat("i-frame-interval", 1.0f);
         mtb h = (mtb) mwp.h(executor);
-        h.c(fileOutputStream.getFD());
+        try {
+            h.c(fileOutputStream.getFD());
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         h.b(0);
         ojc d = fixVar.d();
         if (d.g()) {

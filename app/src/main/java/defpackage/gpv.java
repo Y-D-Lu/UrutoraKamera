@@ -15,6 +15,10 @@ public final class gpv implements goy {
 
     @Override // defpackage.goy
     public final void c(gox goxVar, gog gogVar) {
-        throw new llv("Fallback command not available");
+        try {
+            throw new llv("Fallback command not available");
+        } catch (llv e) {
+            e.printStackTrace();
+        }
     }
 }

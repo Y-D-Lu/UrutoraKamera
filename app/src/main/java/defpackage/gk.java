@@ -38,16 +38,29 @@ public final class gk {
             }
             return -1;
         }
-        throw new ass("Language item must be used on array", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        try {
+            throw new ass("Language item must be used on array", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
+        return -1;
     }
 
     public static atl d(atl atlVar, String str, boolean z) {
         if (!atlVar.g().n() && !atlVar.g().o()) {
             if (!atlVar.f) {
-                throw new ass("Named children only allowed for schemas and structs", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                try {
+                    throw new ass("Named children only allowed for schemas and structs", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             if (atlVar.g().d()) {
-                throw new ass("Named children not allowed for arrays", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                try {
+                    throw new ass("Named children not allowed for arrays", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             if (z) {
                 atlVar.g().x(true);
@@ -95,7 +108,11 @@ public final class gk {
             String a = asv.a.a(str);
             if (a == null) {
                 if (str2 == null || str2.length() == 0) {
-                    throw new ass("Unregistered schema namespace URI", R.styleable.AppCompatTheme_switchStyle);
+                    try {
+                        throw new ass("Unregistered schema namespace URI", R.styleable.AppCompatTheme_switchStyle);
+                    } catch (ass e) {
+                        e.printStackTrace();
+                    }
                 }
                 a = asv.a.c(str, str2);
             }
@@ -119,16 +136,29 @@ public final class gk {
             atxVar.q();
         }
         if (!atxVar.l() || obj == null || obj.toString().length() <= 0) {
-            atxVar.e(atxVar.a);
+            try {
+                atxVar.e(atxVar.a);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
             return atxVar;
         }
-        throw new ass("Structs and arrays can't have values", R.styleable.AppCompatTheme_textAppearanceListItem);
+        try {
+            throw new ass("Structs and arrays can't have values", R.styleable.AppCompatTheme_textAppearanceListItem);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static void i(atl atlVar, String str, String str2) {
         atl atlVar2 = new atl("[]", str2, null);
         atl atlVar3 = new atl("xml:lang", str, null);
-        atlVar2.m(atlVar3);
+        try {
+            atlVar2.m(atlVar3);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
         if (!"x-default".equals(atlVar3.b)) {
             atlVar.k(atlVar2);
         } else {
@@ -158,7 +188,8 @@ public final class gk {
                         atlVar.j().remove(i - 1);
                         atlVar.n();
                         atlVar.l(1, e);
-                    } catch (ass e2) {
+                    } catch (Exception e2) {
+                        e2.printStackTrace();
                     }
                     if (i != 2) {
                         return;
@@ -174,7 +205,11 @@ public final class gk {
         int n = n(node);
         if (n == 8 || n == 0) {
             if (z && n == 0) {
-                throw new ass("Top level typed node not allowed", 203);
+                try {
+                    throw new ass("Top level typed node not allowed", 203);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             char c = 0;
             for (int i = 0; i < node.getAttributes().getLength(); i++) {
@@ -189,19 +224,31 @@ public final class gk {
                         case 4:
                         case 5:
                         default:
-                            throw new ass("Invalid nodeElement attribute", 202);
+                            try {
+                                throw new ass("Invalid nodeElement attribute", 202);
+                            } catch (ass e) {
+                                e.printStackTrace();
+                            }
                         case 2:
                         case 3:
                         case 6:
                             if (c > 0) {
-                                throw new ass("Mutally exclusive about, ID, nodeID attributes", 202);
+                                try {
+                                    throw new ass("Mutally exclusive about, ID, nodeID attributes", 202);
+                                } catch (ass e) {
+                                    e.printStackTrace();
+                                }
                             }
                             if (z && n2 == 3) {
                                 String str = atlVar.a;
                                 if (str == null || str.length() <= 0) {
                                     atlVar.a = item.getNodeValue();
                                 } else if (!atlVar.a.equals(item.getNodeValue())) {
-                                    throw new ass("Mismatched top level rdf:about values", 203);
+                                    try {
+                                        throw new ass("Mismatched top level rdf:about values", 203);
+                                    } catch (ass e) {
+                                        e.printStackTrace();
+                                    }
                                 } else {
                                     c = 1;
                                     continue;
@@ -215,7 +262,11 @@ public final class gk {
             s(atiVar, atlVar, node, z);
             return;
         }
-        throw new ass("Node element must be rdf:Description or typed node", 202);
+        try {
+            throw new ass("Node element must be rdf:Description or typed node", 202);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
     }
 
     public static boolean m(Node node) {
@@ -310,36 +361,65 @@ public final class gk {
             } else {
                 atlVar.l(1, atlVar2);
                 if (z || !atlVar.g().o()) {
-                    throw new ass("Misplaced rdf:value element", 202);
+                    try {
+                        throw new ass("Misplaced rdf:value element", 202);
+                    } catch (ass e) {
+                        e.printStackTrace();
+                    }
                 }
                 atlVar.i = true;
             }
             if (equals) {
                 if (!atlVar.g().d()) {
-                    throw new ass("Misplaced rdf:li element", 202);
+                    try {
+                        throw new ass("Misplaced rdf:li element", 202);
+                    } catch (ass e) {
+                        e.printStackTrace();
+                    }
                 }
                 atlVar2.a = "[]";
             }
             return atlVar2;
         }
-        throw new ass("XML namespace required for all elements and attributes", 202);
+        try {
+            throw new ass("XML namespace required for all elements and attributes", 202);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private static void p(atl atlVar) {
         atl e = atlVar.e(1);
         if (e.g().c()) {
             if (atlVar.g().c()) {
-                throw new ass("Redundant xml:lang for rdf:value element", 203);
+                try {
+                    throw new ass("Redundant xml:lang for rdf:value element", 203);
+                } catch (ass ex) {
+                    ex.printStackTrace();
+                }
             }
             atl f = e.f(1);
             e.q(f);
-            atlVar.m(f);
+            try {
+                atlVar.m(f);
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
         }
         for (int i = 1; i <= e.b(); i++) {
-            atlVar.m(e.f(i));
+            try {
+                atlVar.m(e.f(i));
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
         }
         for (int i2 = 2; i2 <= atlVar.a(); i2++) {
-            atlVar.m(atlVar.e(i2));
+            try {
+                atlVar.m(atlVar.e(i2));
+            } catch (ass ex) {
+                ex.printStackTrace();
+            }
         }
         atlVar.i = false;
         atlVar.g().x(false);
@@ -400,7 +480,11 @@ public final class gk {
                                 case 3:
                                 case 4:
                                 default:
-                                    throw new ass("Unrecognized attribute of empty property element", 202);
+                                    try {
+                                        throw new ass("Unrecognized attribute of empty property element", 202);
+                                    } catch (ass e) {
+                                        e.printStackTrace();
+                                    }
                                 case 2:
                                 case 6:
                                     continue;
@@ -424,7 +508,11 @@ public final class gk {
                                     break;
                                 }
                             } else if (z3) {
-                                throw new ass("Empty property element can't have both rdf:value and rdf:resource", 203);
+                                try {
+                                    throw new ass("Empty property element can't have both rdf:value and rdf:resource", 203);
+                                } catch (ass e) {
+                                    e.printStackTrace();
+                                }
                             } else {
                                 node2 = item2;
                                 z2 = true;
@@ -434,15 +522,27 @@ public final class gk {
                         case 3:
                         case 4:
                         default:
-                            throw new ass("Unrecognized attribute of empty property element", 202);
+                            try {
+                                throw new ass("Unrecognized attribute of empty property element", 202);
+                            } catch (ass e) {
+                                e.printStackTrace();
+                            }
                         case 2:
                             break;
                         case 5:
                             if (z4) {
-                                throw new ass("Empty property element can't have both rdf:resource and rdf:nodeID", 202);
+                                try {
+                                    throw new ass("Empty property element can't have both rdf:resource and rdf:nodeID", 202);
+                                } catch (ass e) {
+                                    e.printStackTrace();
+                                }
                             }
                             if (z2) {
-                                throw new ass("Empty property element can't have both rdf:value and rdf:resource", 203);
+                                try {
+                                    throw new ass("Empty property element can't have both rdf:value and rdf:resource", 203);
+                                } catch (ass e) {
+                                    e.printStackTrace();
+                                }
                             }
                             node2 = item2;
                             z2 = false;
@@ -450,7 +550,11 @@ public final class gk {
                             continue;
                         case 6:
                             if (z3) {
-                                throw new ass("Empty property element can't have both rdf:resource and rdf:nodeID", 202);
+                                try {
+                                    throw new ass("Empty property element can't have both rdf:resource and rdf:nodeID", 202);
+                                } catch (ass e) {
+                                    e.printStackTrace();
+                                }
                             }
                             z4 = true;
                             continue;
@@ -459,7 +563,11 @@ public final class gk {
                 i++;
             }
         } else {
-            throw new ass("Nested content not allowed with rdf:resource or property attributes", 202);
+            try {
+                throw new ass("Nested content not allowed with rdf:resource or property attributes", 202);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -473,7 +581,11 @@ public final class gk {
                 if ("xml:lang".equals(item.getNodeName())) {
                     t(o, "xml:lang", item.getNodeValue());
                 } else if (!"http://www.w3.org/1999/02/22-rdf-syntax-ns#".equals(namespaceURI) || (!"ID".equals(localName) && !"datatype".equals(localName))) {
-                    throw new ass("Invalid attribute for literal property element", 202);
+                    try {
+                        throw new ass("Invalid attribute for literal property element", 202);
+                    } catch (ass e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
@@ -481,7 +593,11 @@ public final class gk {
         for (int i2 = 0; i2 < node.getChildNodes().getLength(); i2++) {
             Node item2 = node.getChildNodes().item(i2);
             if (item2.getNodeType() != 3) {
-                throw new ass("Invalid child of literal property element", 202);
+                try {
+                    throw new ass("Invalid child of literal property element", 202);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             String valueOf = String.valueOf(str);
             String valueOf2 = String.valueOf(item2.getNodeValue());
@@ -495,11 +611,19 @@ public final class gk {
             Node item = node.getChildNodes().item(i);
             if (!m(item)) {
                 if (item.getNodeType() != 1) {
-                    throw new ass("Expected property element node not found", 202);
+                    try {
+                        throw new ass("Expected property element node not found", 202);
+                    } catch (ass e) {
+                        e.printStackTrace();
+                    }
                 }
                 int n = n(item);
                 if (n == 8 || n >= 10 || (n > 0 && n <= 7)) {
-                    throw new ass("Invalid property element name", 202);
+                    try {
+                        throw new ass("Invalid property element name", 202);
+                    } catch (ass e) {
+                        e.printStackTrace();
+                    }
                 }
                 NamedNodeMap attributes = item.getAttributes();
                 ArrayList arrayList = null;
@@ -532,13 +656,25 @@ public final class gk {
                             } else if (!"parseType".equals(localName) || !"http://www.w3.org/1999/02/22-rdf-syntax-ns#".equals(namespaceURI)) {
                                 q(atiVar, atlVar, item, z);
                             } else if ("Literal".equals(nodeValue)) {
-                                throw new ass("ParseTypeLiteral property element not allowed", 203);
+                                try {
+                                    throw new ass("ParseTypeLiteral property element not allowed", 203);
+                                } catch (ass e) {
+                                    e.printStackTrace();
+                                }
                             } else {
                                 if (!"Resource".equals(nodeValue)) {
                                     if (!"Collection".equals(nodeValue)) {
-                                        throw new ass("ParseTypeOther property element not allowed", 203);
+                                        try {
+                                            throw new ass("ParseTypeOther property element not allowed", 203);
+                                        } catch (ass e) {
+                                            e.printStackTrace();
+                                        }
                                     }
-                                    throw new ass("ParseTypeCollection property element not allowed", 203);
+                                    try {
+                                        throw new ass("ParseTypeCollection property element not allowed", 203);
+                                    } catch (ass e) {
+                                        e.printStackTrace();
+                                    }
                                 }
                                 atl o = o(atiVar, atlVar, item, "", z);
                                 o.g().x(true);
@@ -550,7 +686,11 @@ public final class gk {
                                         if ("xml:lang".equals(item4.getNodeName())) {
                                             t(o, "xml:lang", item4.getNodeValue());
                                         } else if (!"http://www.w3.org/1999/02/22-rdf-syntax-ns#".equals(namespaceURI2) || (!"ID".equals(localName2) && !"parseType".equals(localName2))) {
-                                            throw new ass("Invalid attribute for ParseTypeResource property element", 202);
+                                            try {
+                                                throw new ass("Invalid attribute for ParseTypeResource property element", 202);
+                                            } catch (ass e) {
+                                                e.printStackTrace();
+                                            }
                                         }
                                     }
                                 }
@@ -579,7 +719,11 @@ public final class gk {
                                         if ("xml:lang".equals(item5.getNodeName())) {
                                             t(o2, "xml:lang", item5.getNodeValue());
                                         } else if (!"ID".equals(localName3) || !"http://www.w3.org/1999/02/22-rdf-syntax-ns#".equals(namespaceURI3)) {
-                                            throw new ass("Invalid attribute for resource property element", 202);
+                                            try {
+                                                throw new ass("Invalid attribute for resource property element", 202);
+                                            } catch (ass e) {
+                                                e.printStackTrace();
+                                            }
                                         }
                                     }
                                 }
@@ -602,7 +746,11 @@ public final class gk {
                                                     if (!equals && !"Description".equals(localName4)) {
                                                         String namespaceURI4 = item6.getNamespaceURI();
                                                         if (namespaceURI4 == null) {
-                                                            throw new ass("All XML elements must be in a namespace", 203);
+                                                            try {
+                                                                throw new ass("All XML elements must be in a namespace", 203);
+                                                            } catch (ass e) {
+                                                                e.printStackTrace();
+                                                            }
                                                         }
                                                         StringBuilder sb = new StringBuilder(namespaceURI4.length() + 1 + String.valueOf(localName4).length());
                                                         sb.append(namespaceURI4);
@@ -637,13 +785,25 @@ public final class gk {
                                                 }
                                             }
                                         } else if (!z2) {
-                                            throw new ass("Children of resource property element must be XML elements", 202);
+                                            try {
+                                                throw new ass("Children of resource property element must be XML elements", 202);
+                                            } catch (ass e) {
+                                                e.printStackTrace();
+                                            }
                                         }
-                                        throw new ass("Invalid child of resource property element", 202);
+                                        try {
+                                            throw new ass("Invalid child of resource property element", 202);
+                                        } catch (ass e) {
+                                            e.printStackTrace();
+                                        }
                                     }
                                 }
                                 if (!z2) {
-                                    throw new ass("Missing child of resource property element", 202);
+                                    try {
+                                        throw new ass("Missing child of resource property element", 202);
+                                    } catch (ass e) {
+                                        e.printStackTrace();
+                                    }
                                 }
                             }
                         }
@@ -659,6 +819,10 @@ public final class gk {
         if ("xml:lang".equals(str)) {
             str2 = atb.a(str2);
         }
-        atlVar.m(new atl(str, str2, null));
+        try {
+            atlVar.m(new atl(str, str2, null));
+        } catch (ass e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -204,7 +204,7 @@ public final class fyr extends buf implements dyh {
                     fyr.this.B.sendEmptyMessage(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItemSmall);
                 }
             }, pgr.a));
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new IllegalStateException("Cannot instantiate PanoramaModule.", e);
         }
     }

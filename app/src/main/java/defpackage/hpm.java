@@ -126,7 +126,11 @@ public final class hpm {
                 m.close();
             } catch (Throwable th2) {
             }
-            throw th;
+            try {
+                throw th;
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 

@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: hbp  reason: default package */
 /* loaded from: classes.dex */
 public final class hbp {
-    public final float a;
-    public final float b;
-    public final float c;
-    public final int d;
+    public float a;
+    public float b;
+    public float c;
+    public int d;
 
     public hbp() {
     }

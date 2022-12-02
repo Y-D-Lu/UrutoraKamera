@@ -31,7 +31,11 @@ public final class gom implements goy {
         lis lisVar = this.b;
         String valueOf = String.valueOf(goyVar.toString());
         lisVar.b(valueOf.length() != 0 ? "Running command: ".concat(valueOf) : new String("Running command: "));
-        goyVar.c(goxVar, gogVar);
+        try {
+            goyVar.c(goxVar, gogVar);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public final String toString() {

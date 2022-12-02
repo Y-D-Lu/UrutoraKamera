@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: fwm  reason: default package */
 /* loaded from: classes.dex */
 public final class fwm {
-    public final fvx a;
-    public final fwh b;
+    public fvx a;
+    public fwh b;
 
     public fwm() {
     }

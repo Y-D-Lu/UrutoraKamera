@@ -24,28 +24,48 @@ public final class gj {
         if (str.length() != 0) {
             return;
         }
-        throw new ass("Empty array name", 4);
+        try {
+            throw new ass("Empty array name", 4);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
     }
 
     public static void d(Object obj) {
         if (obj != null) {
             if ((obj instanceof String) && ((String) obj).length() == 0) {
-                throw new ass("Parameter must not be null or empty", 4);
+                try {
+                    throw new ass("Parameter must not be null or empty", 4);
+                } catch (ass e) {
+                    e.printStackTrace();
+                }
             }
             return;
         }
-        throw new ass("Parameter must not be null", 4);
+        try {
+            throw new ass("Parameter must not be null", 4);
+        } catch (ass e) {
+            e.printStackTrace();
+        }
     }
 
     public static void e(String str) {
         if (str == null || str.length() == 0) {
-            throw new ass("Empty property name", 4);
+            try {
+                throw new ass("Empty property name", 4);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
     }
 
     public static void f(String str) {
         if (str == null || str.length() == 0) {
-            throw new ass("Empty schema namespace URI", 4);
+            try {
+                throw new ass("Empty schema namespace URI", 4);
+            } catch (ass e) {
+                e.printStackTrace();
+            }
         }
     }
 

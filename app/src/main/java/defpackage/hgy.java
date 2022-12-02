@@ -42,7 +42,11 @@ public class hgy {
                 try {
                     this.c.await();
                 } catch (InterruptedException e) {
-                    throw e;
+                    try {
+                        throw e;
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
                 }
             } finally {
                 this.b.unlock();

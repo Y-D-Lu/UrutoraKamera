@@ -91,7 +91,7 @@ public final class hfz implements hgm {
 
     @Override // defpackage.hgm
     public final void b() {
-        byte[] bArr;
+        byte[] bArr = new byte[0];
         byte[] bArr2;
         synchronized (this.b) {
             if (!this.d) {

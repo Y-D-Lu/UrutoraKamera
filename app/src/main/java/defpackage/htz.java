@@ -3,8 +3,8 @@ package defpackage;
 /* renamed from: htz  reason: default package */
 /* loaded from: classes.dex */
 final class htz {
-    public final hts a;
-    public final lda b;
+    public hts a;
+    public lda b;
 
     public htz() {
     }

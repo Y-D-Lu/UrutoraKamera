@@ -72,7 +72,7 @@ public final class fec implements fea {
                 if (fctVar != null) {
                     fctVar.f(fArr, f7, f10, 0.4f);
                 }
-            } catch (fcq e) {
+            } catch (Exception e) {
                 e.printStackTrace();
                 return;
             }

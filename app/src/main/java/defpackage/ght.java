@@ -5,11 +5,11 @@ import java.util.concurrent.Future;
 /* renamed from: ght  reason: default package */
 /* loaded from: classes.dex */
 final class ght {
-    public final fwh a;
-    public final gfu b;
-    public final pht c;
-    public final bws d;
-    public final Future e;
+    public fwh a;
+    public gfu b;
+    public pht c;
+    public bws d;
+    public Future e;
 
     public ght() {
     }

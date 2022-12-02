@@ -49,7 +49,7 @@ final class hat extends mip {
                 }
                 a.close();
                 return;
-            } catch (InterruptedException | llv e) {
+            } catch (Exception e) {
                 ((oug) ((oug) ((oug) hau.a.b()).h(e)).G((char) 2275)).o("Error saving image.");
             }
         }

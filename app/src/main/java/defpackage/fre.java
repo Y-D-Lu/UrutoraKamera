@@ -51,7 +51,7 @@ final class fre implements mln {
                     frfVar2.c = Math.min(bufferInfo.presentationTimeUs, this.c.b.c);
                     this.c.b.d = Math.max(bufferInfo.presentationTimeUs, this.c.b.d);
                 }
-            } catch (ExecutionException e) {
+            } catch (Exception e) {
                 throw new AssertionError("... we just checked for isDone.");
             }
         }

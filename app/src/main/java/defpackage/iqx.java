@@ -6,13 +6,13 @@ import android.util.SizeF;
 /* renamed from: iqx  reason: default package */
 /* loaded from: classes.dex */
 public final class iqx {
-    public final lzr a;
-    public final Rect b;
-    public final SizeF c;
-    public final boolean d;
-    public final int e;
-    public final Rect f;
-    private final float g;
+    public lzr a;
+    public Rect b;
+    public SizeF c;
+    public boolean d;
+    public int e;
+    public Rect f;
+    private float g;
 
     public iqx() {
     }

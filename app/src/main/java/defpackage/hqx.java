@@ -46,7 +46,7 @@ public final /* synthetic */ class hqx implements Runnable {
                             hqzVar.W(bitmapDrawable.getBitmap());
                             reentrantLock = hqzVar.e;
                         }
-                    } catch (IOException e) {
+                    } catch (Exception e) {
                         File a3 = hqzVar.d.a();
                         a3.getClass();
                         String absolutePath = a3.getAbsolutePath();
@@ -89,7 +89,7 @@ public final /* synthetic */ class hqx implements Runnable {
                             ikcVar.b(lic.CLOCKWISE_0);
                             hqzVar.r(w, ikcVar);
                             reentrantLock2 = hqzVar.e;
-                        } catch (IOException e3) {
+                        } catch (Exception e3) {
                             reentrantLock2 = hqzVar.e;
                         }
                     } else {

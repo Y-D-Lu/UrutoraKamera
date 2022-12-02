@@ -3,10 +3,10 @@ package defpackage;
 /* renamed from: jch  reason: default package */
 /* loaded from: classes.dex */
 public final class jch {
-    public final boolean a;
-    public final oom b;
-    private final boolean c;
-    private final boolean d;
+    public boolean a;
+    public oom b;
+    private boolean c;
+    private boolean d;
 
     public jch() {
     }

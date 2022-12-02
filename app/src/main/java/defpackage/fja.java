@@ -42,13 +42,25 @@ public final class fja implements fix, fik, fhm, fhn {
                 fja fjaVar = fja.this;
                 fjaVar.d.e("Location#isLocationEnabled");
                 fis fisVar = null;
+                fiv fivLocal = null;
+                boolean isFiv = false;
                 if ((fjaVar.a.checkSelfPermission("android.permission.ACCESS_COARSE_LOCATION") == 0 || fjaVar.a.checkSelfPermission("android.permission.ACCESS_FINE_LOCATION") == 0) && ((Boolean) fjaVar.b.c(htu.a)).booleanValue()) {
                     fjaVar.d.e("connectLocationProvider");
-                    fisVar = (khm.a.f(fjaVar.a, 0) != 0 || !fis.d(fjaVar.a)) ? new fiv(fjaVar.c) : new fis(fjaVar.a, fjaVar.e);
-                    fisVar.c(true);
+                    if (khm.a.f(fjaVar.a, 0) != 0 || !fis.d(fjaVar.a)) {
+                        isFiv = true;
+                        fivLocal = new fiv(fjaVar.c);
+                        fivLocal.c(true);
+                    } else {
+                        fisVar = new fis(fjaVar.a, fjaVar.e);
+                        fisVar.c(true);
+                    }
                     fjaVar.d.f();
                 }
-                fjaVar.f = plk.V(fisVar);
+                if (isFiv) {
+                    fjaVar.f = plk.V(fivLocal);
+                } else {
+                    fjaVar.f = plk.V(fisVar);
+                }
                 fjaVar.d.f();
                 return fjaVar.f;
             }
