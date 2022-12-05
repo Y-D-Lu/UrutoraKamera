@@ -11,39 +11,40 @@ public class Unsafe {
         return null;
     }
 
-    public static int arrayBaseOffset(Class cls) {
+    public int arrayBaseOffset(Class cls) {
         return 0;
     }
 
-    public static int getInt(Object obj, long j) {
+    public int getInt(Object obj, long j) {
         return 0;
     }
 
-    public static long getLong(Object obj, long j) {
+    public long getLong(Object obj, long j) {
         return 0;
     }
 
-    public static long objectFieldOffset(Field field) {
+    public long objectFieldOffset(Field field) {
         return 0L;
     }
 
-    public static Object getObject(Object obj, long j) {
+    public Object getObject(Object obj, long j) {
         return null;
     }
 
-    public static void putInt(Object obj, long j, int i) {
+    public void putInt(Object obj, long j, int i) {
     }
 
-    public static void putLong(Object obj, long j, long j2) {
+    public void putLong(Object obj, long j, long j2) {
     }
 
-    public static void putObject(Object obj, long j, Object obj2) {
+    public void putObject(Object obj, long j, Object obj2) {
     }
 
-    public static void arrayIndexScale(Class cls) {
+    public int arrayIndexScale(Class cls) {
+        return 0;
     }
 
-    public static boolean compareAndSwapObject(Object obj1, Object obj2, Object obj3, Object obj4) {
+    public boolean compareAndSwapObject(Object obj1, long obj2, Object obj3, Object obj4) {
         return false;
     }
 }

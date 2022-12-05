@@ -1,6 +1,5 @@
 package defpackage;
 
-import java.io.IOException;
 import java.util.Map;
 
 /* renamed from: poy  reason: default package */
@@ -584,7 +583,7 @@ public class poy extends pnl implements pqn {
             return this.b;
         }
         ppd ppdVar = this.b;
-        pqu.a.b(ppdVar).f(ppdVar);
+        //pqu.a.b(ppdVar).f(ppdVar);
         this.c = true;
         return this.b;
     }

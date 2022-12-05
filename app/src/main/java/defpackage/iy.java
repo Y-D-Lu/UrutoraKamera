@@ -3,8 +3,11 @@ package defpackage;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.UiModeManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -606,11 +609,121 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public final void L(boolean r10) {
+        int i;
+        int i2;
+        it itVar;
+        Object obj;
+        Object obj2;
+        if (this.C) {
+            return;
+        }
+        int o = o();
+        Configuration r = r(this.f, p(this.f, o), null);
+        boolean z2 = false;
+        if (!this.V && (this.e instanceof Activity)) {
+            PackageManager packageManager = this.f.getPackageManager();
+            if (packageManager != null) {
+                try {
+                    ActivityInfo activityInfo = packageManager.getActivityInfo(new ComponentName(this.f, this.e.getClass()), 269221888);
+                    this.U = (activityInfo == null || (activityInfo.configChanges & 512) == 0) ? false : true;
+                } catch (PackageManager.NameNotFoundException e) {
+                    this.U = false;
+                }
+            }
+            i = this.f.getResources().getConfiguration().uiMode & 48;
+            i2 = r.uiMode & 48;
+            if (i != i2 && z != null && !z2 && this.A && (c || this.S)) {
+                obj2 = this.e;
+                if ((obj2 instanceof Activity) && !((Activity) obj2).isChild()) {
+                    ((Activity) this.e).recreate();
+                    obj = this.e;
+                    if (obj instanceof ih) {
+                        ih ihVar = (ih) obj;
+                    }
+                    if (o != 0) {
+                        N(this.f).d();
+                    } else {
+                        it itVar2 = this.W;
+                        if (itVar2 != null) {
+                            itVar2.c();
+                        }
+                        if (o == 3) {
+                            M(this.f).d();
+                            return;
+                        }
+                    }
+                    itVar = this.X;
+                    if (itVar != null) {
+                        return;
+                    }
+                    itVar.c();
+                    return;
+                }
+            }
+            if (i != i2) {
+                Resources resources = this.f.getResources();
+                Configuration configuration = new Configuration(resources.getConfiguration());
+                configuration.uiMode = i2 | (resources.getConfiguration().uiMode & (-49));
+                resources.updateConfiguration(configuration, null);
+                int i3 = this.D;
+                if (i3 != 0) {
+                    this.f.setTheme(i3);
+                    this.f.getTheme().applyStyle(this.D, true);
+                }
+                if (z2) {
+                    Object obj3 = this.e;
+                    if (obj3 instanceof Activity) {
+                        Activity activity = (Activity) obj3;
+                        if (activity instanceof aee) {
+                            if (((aee) activity).C().a.a(aea.STARTED)) {
+                                activity.onConfigurationChanged(configuration);
+                            }
+                        } else if (this.B) {
+                            activity.onConfigurationChanged(configuration);
+                        }
+                    }
+                }
+                obj = this.e;
+                if (obj instanceof ih) {
+                }
+            }
+            if (o != 0) {
+            }
+            itVar = this.X;
+            if (itVar != null) {
+            }
+        }
+        this.V = true;
+        z2 = this.U;
+        i = this.f.getResources().getConfiguration().uiMode & 48;
+        i2 = r.uiMode & 48;
+        if (i != i2) {
+            obj2 = this.e;
+            if (obj2 instanceof Activity) {
+                ((Activity) this.e).recreate();
+                obj = this.e;
+                if (obj instanceof ih) {
+                }
+                if (o != 0) {
+                }
+                itVar = this.X;
+                if (itVar != null) {
+                }
+            }
+        }
+        if (i != i2) {
+        }
+        if (o != 0) {
+        }
+        itVar = this.X;
+        if (itVar != null) {
+        }
+
         /*
             Method dump skipped, instructions count: 282
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.iy.L(boolean):void");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.iy.L(boolean):void");
     }
 
     @Override // defpackage.ii

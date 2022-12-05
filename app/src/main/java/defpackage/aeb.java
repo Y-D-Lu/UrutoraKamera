@@ -88,11 +88,68 @@ public final class aeb {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     private final void k() {
+        aea aeaVar;
+        aea aeaVar2;
+        aee aeeVar = (aee) this.c.get();
+        if (aeeVar != null) {
+            while (true) {
+                uw uwVar = this.b;
+                if (uwVar.e != 0 && ((aeaVar = ((aef) uwVar.b.b).a) != (aeaVar2 = ((aef) uwVar.c.b).a) || this.a != aeaVar2)) {
+                    this.f = false;
+                    if (this.a.compareTo(aeaVar) < 0) {
+                        uw uwVar2 = this.b;
+                        uy uyVar = new uy(uwVar2.c, uwVar2.b);
+                        uwVar2.d.put(uyVar, false);
+                        while (uyVar.hasNext() && !this.f) {
+                            uz uzVar = (uz) uyVar.next();
+                            aef aefVar = (aef) uzVar.b;
+                            while (aefVar.a.compareTo(this.a) > 0 && !this.f && this.b.c((aed) uzVar.a)) {
+                                adz a = adz.a(aefVar.a);
+                                if (a == null) {
+                                    throw new IllegalStateException("no event down from " + aefVar.a);
+                                }
+                                j(a.c());
+                                aefVar.a(aeeVar, a);
+                                i();
+                            }
+                        }
+                    }
+                    uz uzVar2 = this.b.c;
+                    if (!this.f && uzVar2 != null && this.a.compareTo(((aef) uzVar2.b).a) > 0) {
+                        va e = this.b.e();
+                        while (e.hasNext() && !this.f) {
+                            uz uzVar3 = (uz) e.next();
+                            aef aefVar2 = (aef) uzVar3.b;
+                            while (aefVar2.a.compareTo(this.a) < 0 && !this.f && this.b.c((aed) uzVar3.a)) {
+                                j(aefVar2.a);
+                                adz b = adz.b(aefVar2.a);
+                                if (b == null) {
+                                    throw new IllegalStateException("no event up from " + aefVar2.a);
+                                }
+                                aefVar2.a(aeeVar, b);
+                                i();
+                            }
+                        }
+                    }
+                }
+                if (uwVar.e == 0) {
+                    this.f = false;
+                    return;
+                }
+                if ((((aef) uwVar.b.b).a != (aeaVar2 = ((aef) uwVar.c.b).a) || this.a == aeaVar2)) {
+                    this.f = false;
+                    return;
+                }
+            }
+        } else {
+            throw new IllegalStateException("LifecycleOwner of this LifecycleRegistry is alreadygarbage collected. It is too late to change lifecycle state.");
+        }
+
         /*
             Method dump skipped, instructions count: 298
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.aeb.k():void");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.aeb.k():void");
     }
 
     public final void b(aed aedVar) {

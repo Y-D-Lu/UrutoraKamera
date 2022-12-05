@@ -35,7 +35,56 @@ public final class mez {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private static boolean d(android.content.Context r7) {
+    private static boolean d(android.content.Context context) {
+        return false;
+//        if (c == false) goto L6;
+//        return true;
+//        L6:
+//        monitor-enter(mez.class);
+//        L40:
+//        th = move-exception;
+//        throw th;
+//        L9:
+//        if (c == false) goto L12;
+//        monitor-exit(mez.class);     // Catch: Throwable -> L40
+//        return true;
+//        L12:
+//        int i = 1;
+//        L13:
+//        boolean z = false;
+//        if (i > 2) goto L28;
+//        if (b != null) goto L18;
+//        b = (UserManager) context.getSystemService(UserManager.class);     // Catch: Throwable -> L40
+//        L18:
+//        UserManager userManager = b;     // Catch: Throwable -> L40
+//        if (userManager == null) goto L38;
+//        L35:
+//        e = move-exception;
+//        Log.w("DirectBootUtils", "Failed to check if user is unlocked.", e);     // Catch: Throwable -> L40
+//        b = null;     // Catch: Throwable -> L40
+//        i = i + 1;     // Catch: Throwable -> L40
+//        goto L13
+//        L22:
+//        if (userManager.isUserUnlocked() == true) goto L27;
+//        L26:
+//        if (userManager.isUserRunning(Process.myUserHandle()) == true) goto L28;
+//        L27:
+//        z = true;
+//        goto L28
+//        L38:
+//        z = true;
+//        L30:
+//        if (z == false) goto L32;
+//        c = true;     // Catch: Throwable -> L40
+//        L32:
+//        monitor-exit(mez.class);     // Catch: Throwable -> L40
+//        return z;
+//        L28:
+//        if (z == false) goto L30;
+//        b = null;     // Catch: Throwable -> L40
+//        goto L30
+
+
         /*
             boolean r0 = defpackage.mez.c
             r1 = 1
@@ -101,6 +150,6 @@ public final class mez {
         L56:
             goto L55
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.mez.d(android.content.Context):boolean");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.mez.d(android.content.Context):boolean");
     }
 }

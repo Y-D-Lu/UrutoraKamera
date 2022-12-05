@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -53,7 +54,7 @@ public final class db {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final List e() {
         ArrayList arrayList = new ArrayList();
-        for (da daVar : (Set<da>) this.b.values()) {
+        for (da daVar : (Collection<da>) this.b.values()) {
             if (daVar != null) {
                 arrayList.add(daVar);
             }

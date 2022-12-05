@@ -34,6 +34,7 @@ import org.codeaurora.snapcam.R;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.util.Locale;
 import java.util.regex.Pattern;
 
 import defpackage.jrl;
@@ -474,6 +475,22 @@ public class Helper {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public static void c2a() {
+        int MenuValue = MenuValue(SetLensValue("pref_c2a_key"));
+        if (MenuValue >= 0) {
+            if (MenuValue <= 0) {
+                String upperCase = Build.BOARD.toUpperCase(Locale.US);
+                if (!upperCase.equals("SDM845")) {
+                    if (!upperCase.equals("SDM710")) {
+                    }
+                }
+            }
+            sC2API = 1;
+            sC2APIl = 0;
+            return;
+        }
+        sC2API = 0;
+        sC2APIl = 1;
+
         /*
             java.lang.String r0 = "pref_c2a_key"
             java.lang.String r0 = SetLensValue(r0)
@@ -505,7 +522,7 @@ public class Helper {
             com.Helper.sC2APIl = r0
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.Helper.c2a():void");
+        // throw new UnsupportedOperationException("Method not decompiled: com.Helper.c2a():void");
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x002c, code lost:
@@ -516,6 +533,26 @@ public class Helper {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public static void c2aa() {
+        int MenuValue = MenuValue(SetLensValue("pref_img_key"));
+        if (MenuValue < 0) {
+            sImg = 256;
+            return;
+        }
+        if (MenuValue > 0) {
+            sImg = 35;
+            return;
+        }
+        String upperCase = Build.BOARD.toUpperCase(Locale.US);
+        if (upperCase.equals("SDM845") == true) {
+            sImg = 256;
+        }
+        if (upperCase.equals("SDM710") == true) {
+            sImg = 256;
+        }
+        if (upperCase.equals("SDM712") == true) {
+            sImg = 256;
+        }
+
         /*
             java.lang.String r0 = "pref_img_key"
             java.lang.String r0 = SetLensValue(r0)
@@ -543,7 +580,7 @@ public class Helper {
             com.Helper.sImg = r0
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.Helper.c2aa():void");
+//        throw new UnsupportedOperationException("Method not decompiled: com.Helper.c2aa():void");
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x003c, code lost:
@@ -554,6 +591,39 @@ public class Helper {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public static void c2aaa() {
+        int MenuValue = MenuValue(SetLensValue("pref_samsungfix_key"));
+        if (MenuValue < 0) {
+            samsu = 32;
+            sams = 35;
+            return;
+        }
+        if (MenuValue > 0) {
+            samsu = 38;
+            sams = 32;
+            return;
+        }
+        String upperCase = Build.MANUFACTURER.toUpperCase(Locale.US);
+        if (upperCase.equals("SAMSUNG") == true) {
+            samsu = 32;
+            sams = 35;
+        }
+        if (upperCase.equals("ULEFONE") == true) {
+            samsu = 32;
+            sams = 35;
+        }
+        if (upperCase.equals("TECNO MOBILE LIMITED") == true) {
+            samsu = 32;
+            sams = 35;
+        }
+        if (upperCase.equals("VIVO") == true) {
+            samsu = 32;
+            sams = 35;
+        }
+        if (upperCase.equals("OPPO") == true) {
+            samsu = 32;
+            sams = 35;
+        }
+
         /*
             java.lang.String r0 = "pref_samsungfix_key"
             java.lang.String r0 = SetLensValue(r0)
@@ -591,7 +661,7 @@ public class Helper {
             com.Helper.sams = r0
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.Helper.c2aaa():void");
+        // throw new UnsupportedOperationException("Method not decompiled: com.Helper.c2aaa():void");
     }
 
     public static void execCommands(Context context) throws IOException {

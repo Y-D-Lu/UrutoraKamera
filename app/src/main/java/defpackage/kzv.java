@@ -72,14 +72,14 @@ public final class kzv {
         Cursor query = contentResolver.query(b, null, null, strArr, null);
         TreeMap treeMap = new TreeMap();
         if (query != null) {
-            while (query.moveToNext()) {
-                try {
+            try {
+                while (query.moveToNext()) {
                     treeMap.put(query.getString(0), query.getString(1));
-                } finally {
-                    query.close();
                 }
+                return treeMap;
+            } finally {
+                query.close();
             }
-            return treeMap;
         }
         return treeMap;
     }

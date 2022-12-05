@@ -1326,6 +1326,7 @@ public final class pqo implements prb {
                     } else {
                         int i93 = i17 + 1;
                         int charAt26 = str2.charAt(i17);
+                        android.util.Log.e("luyuedong666", "i17 " + i17 + " str2 " + str2);
                         if (charAt26 >= 55296) {
                             int i94 = charAt26 & 8191;
                             int i95 = 13;
@@ -1344,6 +1345,7 @@ public final class pqo implements prb {
                             i22 = i93;
                         }
                         int i96 = i28 + i28 + (charAt26 / 32);
+                        android.util.Log.e("luyuedong666", "objArr " + java.util.Arrays.toString(objArr) + " i96 " + i96 + " i28 " + i28 + " charAt26 " + charAt26);
                         Object obj3 = objArr[i96];
                         i19 = i86;
                         if (obj3 instanceof Field) {

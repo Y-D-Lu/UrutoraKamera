@@ -21,10 +21,12 @@ import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -137,7 +139,7 @@ public final class cu {
 
     private final Set ab() {
         HashSet hashSet = new HashSet();
-        for (da daVar : (Set<da>)this.a.e()) {
+        for (da daVar : (List<da>)this.a.e()) {
             ViewGroup viewGroup = daVar.c.L;
             if (viewGroup != null) {
                 Z();
@@ -810,7 +812,7 @@ public final class cu {
     }
 
     private final void ak() {
-        for (da daVar : (Set<da>)this.a.e()) {
+        for (da daVar : (Collection<da>)this.a.e()) {
             bu buVar = daVar.c;
             if (buVar.N) {
                 if (this.v) {
@@ -1001,7 +1003,7 @@ public final class cu {
                     daVar.d();
                 }
             }
-            for (da daVar2 : (Set<da>)dbVar.b.values()) {
+            for (da daVar2 : (Collection<da>)dbVar.b.values()) {
                 if (daVar2 != null) {
                     daVar2.d();
                     bu buVar = daVar2.c;
@@ -1742,9 +1744,15 @@ public final class cu {
             if (cfVar instanceof uf) {
                 ue ueVar = ((bx) cfVar).a.h;
                 this.d = ueVar;
-                bu buVar2 = buVar != null ? buVar : null;//cfVar;
+                aeb C;
+                if (buVar != null) {
+                    bu buVar2 = buVar;
+                    C = buVar2.C();
+                } else {
+                    cf buVar2 = cfVar;
+                    C = ((bx) cfVar).C();
+                }
                 uc ucVar = this.e;
-                aeb C = buVar2.C();
                 if (C.a != aea.DESTROYED) {
                     ucVar.a(new OnBackPressedDispatcher$LifecycleOnBackPressedCancellable(ueVar, C, ucVar));
                 }
@@ -2009,7 +2017,7 @@ public final class cu {
     public final void y(int i) {
         try {
             this.v = true;
-            for (da daVar : (Set<da>) this.a.b.values()) {
+            for (da daVar : (Collection<da>) this.a.b.values()) {
                 if (daVar != null) {
                     daVar.d = i;
                 }

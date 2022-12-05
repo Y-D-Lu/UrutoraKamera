@@ -1,5 +1,7 @@
 package defpackage;
 
+import java.util.Arrays;
+
 /* renamed from: orw  reason: default package */
 /* loaded from: classes2.dex */
 public final class orw extends oor {
@@ -49,12 +51,97 @@ public final class orw extends oor {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public static java.lang.Object f(java.lang.Object[] r9, int r10, int r11, int r12) {
+    public static java.lang.Object f(java.lang.Object[] objArr, int i, int i2, int i3) {
+        if (i == 1) {
+            Object obj = objArr[i3];
+            obj.getClass();
+            Object obj2 = objArr[i3 ^ 1];
+            obj2.getClass();
+            ohh.S(obj, obj2);
+            return null;
+        }
+        int i4 = i2 - 1;
+        int i5 = 0;
+        if (i2 <= 128) {
+            byte[] bArr = new byte[i2];
+            Arrays.fill(bArr, (byte) -1);
+            while (i5 < i) {
+                int i6 = i5 + i5 + i3;
+                Object obj3 = objArr[i6];
+                obj3.getClass();
+                Object obj4 = objArr[i6 ^ 1];
+                obj4.getClass();
+                ohh.S(obj3, obj4);
+                int C = ohh.C(obj3.hashCode());
+                while (true) {
+                    int i7 = C & i4;
+                    int i8 = bArr[i7] & 255;
+                    if (i8 == 255) {
+                        bArr[i7] = (byte) i6;
+                        i5 = i5 + 1;
+                        break;
+                    } else if (obj3.equals(objArr[i8])) {
+                        throw h(obj3, obj4, objArr, i8);
+                    } else {
+                        C = i7 + 1;
+                    }
+                }
+            }
+            return bArr;
+        } else if (i2 <= 32768) {
+            short[] sArr = new short[i2];
+            Arrays.fill(sArr, (short) -1);
+            while (i5 < i) {
+                int i9 = i5 + i5 + i3;
+                Object obj5 = objArr[i9];
+                obj5.getClass();
+                Object obj6 = objArr[i9 ^ 1];
+                obj6.getClass();
+                ohh.S(obj5, obj6);
+                int C2 = ohh.C(obj5.hashCode());
+                while (true) {
+                    int i10 = C2 & i4;
+                    char c = (char) sArr[i10];
+                    if (c == 65535) {
+                        break;
+                    } else if (obj5.equals(objArr[c])) {
+                        throw h(obj5, obj6, objArr, c);
+                    } else {
+                        C2 = i10 + 1;
+                    }
+                }
+            }
+            return sArr;
+        } else {
+            int[] iArr = new int[i2];
+            Arrays.fill(iArr, -1);
+            while (i5 < i) {
+                int i11 = i5 + i5 + i3;
+                Object obj7 = objArr[i11];
+                obj7.getClass();
+                Object obj8 = objArr[i11 ^ 1];
+                obj8.getClass();
+                ohh.S(obj7, obj8);
+                int C3 = ohh.C(obj7.hashCode());
+                while (true) {
+                    int i12 = C3 & i4;
+                    int i13 = iArr[i12];
+                    if (i13 == -1) {
+                        break;
+                    } else if (obj7.equals(objArr[i13])) {
+                        throw h(obj7, obj8, objArr, i13);
+                    } else {
+                        C3 = i12 + 1;
+                    }
+                }
+            }
+            return iArr;
+        }
         /*
             Method dump skipped, instructions count: 222
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.orw.f(java.lang.Object[], int, int, int):java.lang.Object");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.orw.f(java.lang.Object[], int, int, int):java.lang.Object");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

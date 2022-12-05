@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
 import android.util.TypedValue;
 
 import org.codeaurora.snapcam.R;
@@ -213,12 +215,138 @@ public final class qw {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final synchronized android.graphics.drawable.Drawable d(android.content.Context r17, int r18, boolean r19) {
+    public final synchronized android.graphics.drawable.Drawable d(android.content.Context context, int i, boolean z) {
+        Drawable drawable;
+        int i2;
+        Drawable findDrawableByLayerId = null;
+        int b2 = 0;
+        PorterDuff.Mode mode = null;
+        int i3 = i;
+        synchronized (this) {
+            boolean z2 = false;
+            if (!this.f) {
+                this.f = true;
+                Drawable c = c(context, R.drawable.abc_vector_test);
+                if (c == null || (!(c instanceof akq) && !"android.graphics.drawable.VectorDrawable".equals(c.getClass().getName()))) {
+                    this.f = false;
+                    throw new IllegalStateException("This app has been built with an incorrect configuration. Please configure your build for VectorDrawableCompat.");
+                }
+            }
+            if (this.e == null) {
+                this.e = new TypedValue();
+            }
+            TypedValue typedValue = this.e;
+            context.getResources().getValue(i3, typedValue, true);
+            long j = (typedValue.assetCookie << 32) | typedValue.data;
+            Drawable i4 = i(context, j);
+            drawable = null;
+
+            PorterDuff.Mode mode2 = null;
+            if (i4 == null) {
+                if (this.g == null) {
+                    i4 = null;
+                } else if (i3 == R.drawable.abc_cab_background_top_material) {
+                    i4 = new LayerDrawable(new Drawable[]{c(context, R.drawable.abc_cab_background_internal_bg), c(context, R.drawable.abc_cab_background_top_mtrl_alpha)});
+                } else if (i3 == R.drawable.abc_ratingbar_material) {
+                    i4 = mt.c(this, context, R.dimen.abc_star_big);
+                } else if (i3 == R.drawable.abc_ratingbar_indicator_material) {
+                    i4 = mt.c(this, context, R.dimen.abc_star_medium);
+                } else if (i3 == R.drawable.abc_ratingbar_small_material) {
+                    i4 = mt.c(this, context, R.dimen.abc_star_small);
+                    i3 = R.drawable.abc_ratingbar_small_material;
+                } else {
+                    i4 = null;
+                }
+                if (i4 != null) {
+                    i4.setChangingConfigurations(typedValue.changingConfigurations);
+                    j(context, j, i4);
+                }
+            }
+            if (i4 == null) {
+                i4 = aar.a(context, i3);
+            }
+            if (i4 != null) {
+                ColorStateList a2 = a(context, i3);
+                if (a2 != null) {
+                    if (oj.c(i4)) {
+                        i4 = i4.mutate();
+                    }
+                    i4.setTintList(a2);
+                    if (this.g != null && i3 == R.drawable.abc_switch_thumb_material) {
+                        mode2 = PorterDuff.Mode.MULTIPLY;
+                    }
+                } else {
+                    qv qvVar = this.g;
+                    if (qvVar != null) {
+                        if (i3 == R.drawable.abc_seekbar_track_material) {
+                            LayerDrawable layerDrawable = (LayerDrawable) i4;
+                            mt.d(layerDrawable.findDrawableByLayerId(16908288), ri.b(context, R.attr.colorControlNormal), mu.a);
+                            mt.d(layerDrawable.findDrawableByLayerId(16908303), ri.b(context, R.attr.colorControlNormal), mu.a);
+                            findDrawableByLayerId = layerDrawable.findDrawableByLayerId(16908301);
+                            b2 = ri.b(context, R.attr.colorControlActivated);
+                            mode = mu.a;
+                        } else if (i3 == R.drawable.abc_ratingbar_material || i3 == R.drawable.abc_ratingbar_indicator_material || i3 == R.drawable.abc_ratingbar_small_material) {
+                            LayerDrawable layerDrawable2 = (LayerDrawable) i4;
+                            mt.d(layerDrawable2.findDrawableByLayerId(16908288), ri.a(context, R.attr.colorControlNormal), mu.a);
+                            mt.d(layerDrawable2.findDrawableByLayerId(16908303), ri.b(context, R.attr.colorControlActivated), mu.a);
+                            findDrawableByLayerId = layerDrawable2.findDrawableByLayerId(16908301);
+                            b2 = ri.b(context, R.attr.colorControlActivated);
+                            mode = mu.a;
+                        }
+                        mt.d(findDrawableByLayerId, b2, mode);
+                    }
+                    if (qvVar != null) {
+                        PorterDuff.Mode mode3 = mu.a;
+                        int i5 = 16842801;
+                        if (mt.a(((mt) qvVar).a, i3)) {
+                            i2 = -1;
+                            z2 = true;
+                            i5 = R.attr.colorControlNormal;
+                        } else if (mt.a(((mt) qvVar).c, i3)) {
+                            i2 = -1;
+                            z2 = true;
+                            i5 = R.attr.colorControlActivated;
+                        } else if (mt.a(((mt) qvVar).d, i3)) {
+                            mode3 = PorterDuff.Mode.MULTIPLY;
+                            i2 = -1;
+                            z2 = true;
+                        } else if (i3 == R.drawable.abc_list_divider_mtrl_alpha) {
+                            i2 = Math.round(40.8f);
+                            z2 = true;
+                            i5 = 16842800;
+                        } else if (i3 == R.drawable.abc_dialog_material_background) {
+                            i2 = -1;
+                            z2 = true;
+                        } else {
+                            i2 = -1;
+                            i5 = 0;
+                        }
+                        if (z2) {
+                            Drawable mutate = oj.c(i4) ? i4.mutate() : i4;
+                            mutate.setColorFilter(mu.b(ri.b(context, i5), mode3));
+                            if (i2 != -1) {
+                                mutate.setAlpha(i2);
+                            }
+                        }
+                    }
+                    if (z) {
+                        if (drawable != null) {
+                            Rect rect = oj.a;
+                        }
+                    }
+                }
+            }
+            drawable = i4;
+            if (drawable != null) {
+            }
+        }
+        return drawable;
+
         /*
             Method dump skipped, instructions count: 480
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.qw.d(android.content.Context, int, boolean):android.graphics.drawable.Drawable");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.qw.d(android.content.Context, int, boolean):android.graphics.drawable.Drawable");
     }
 
     public final synchronized void f(Context context) {
