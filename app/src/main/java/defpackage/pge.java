@@ -148,6 +148,13 @@ public abstract class pge extends pgi {
             }
         } else {
             oti it2 = this.a.iterator();
+            try {
+                android.util.Log.d("luyuedong666", "this.a " + this.a);
+                android.util.Log.d("luyuedong666", "it2 " + it2);
+            } catch (Exception e) {
+                android.util.Log.d("luyuedong666", "this.a clazz " + this.a.getClass());
+                e.printStackTrace();
+            }
             int i = 0;
             while (it2.hasNext()) {
                 pht phtVar = (pht) it2.next();

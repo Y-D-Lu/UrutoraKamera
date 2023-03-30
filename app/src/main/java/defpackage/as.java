@@ -2,6 +2,7 @@ package defpackage;
 
 import com.hdrindicator.DisplayHelper;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /* renamed from: as  reason: default package */
@@ -541,11 +542,694 @@ public final class as extends aw {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public final void D() {
+        int i = 0;
+        int i2;
+        boolean z;
+        int size;
+        int i3 = 0;
+        boolean z2;
+        boolean z3;
+        ar arVar = null;
+        as asVar;
+        int i4;
+        int i5 = 0;
+        int i6 = 0;
+        boolean z4;
+        int i7 = 0;
+        int i8;
+        boolean z5;
+        int max;
+        int max2;
+        int i9 = 0;
+        int i10 = 0;
+        boolean z6;
+        boolean z7 = false;
+        boolean z8 = false;
+        int i11 = 0;
+        int i12 = 0;
+        char c = 0;
+        int i13;
+        boolean[] zArr;
+        int i14;
+        int i15 = this.w;
+        int i16 = this.x;
+        int max3 = Math.max(0, h());
+        int max4 = Math.max(0, d());
+        this.aj = false;
+        this.ak = false;
+        if (this.r != null) {
+            if (this.am == null) {
+                this.am = new av(this);
+            }
+            av avVar = this.am;
+            avVar.a = this.w;
+            avVar.b = this.x;
+            avVar.c = h();
+            avVar.d = d();
+            int size2 = avVar.e.size();
+            for (int i17 = 0; i17 < size2; i17++) {
+                au auVar = (au) avVar.e.get(i17);
+                auVar.a = u(auVar.a.g);
+                aq aqVar = auVar.a;
+                if (aqVar != null) {
+                    auVar.b = aqVar.b;
+                    auVar.c = aqVar.a();
+                    aq aqVar2 = auVar.a;
+                    auVar.e = aqVar2.h;
+                    auVar.d = aqVar2.e;
+                } else {
+                    auVar.b = null;
+                    auVar.c = 0;
+                    auVar.e = 2;
+                    auVar.d = 0;
+                }
+            }
+            this.w = 0;
+            this.x = 0;
+            int size3 = this.q.size();
+            for (int i18 = 0; i18 < size3; i18++) {
+                ((aq) this.q.get(i18)).b();
+            }
+            j(this.af.g);
+        } else {
+            this.w = 0;
+            this.x = 0;
+        }
+        int i19 = this.ae;
+        int i20 = this.ad;
+        if (this.ai == 2) {
+            if (i19 != 2) {
+                if (i20 == 2) {
+                    i20 = 2;
+                } else {
+                    i = i16;
+                }
+            }
+            ArrayList arrayList = this.al;
+            boolean[] zArr2 = this.as;
+            int size4 = arrayList.size();
+            zArr2[0] = true;
+            int i21 = 0;
+            int i22 = 0;
+            int i23 = 0;
+            int i24 = 0;
+            int i25 = 0;
+            int i26 = 0;
+            int i27 = 0;
+            //while (true) {
+                if (i24 < size4) {
+                    ar arVar2 = (ar) arrayList.get(i24);
+                    if (arVar2.t()) {
+                        i13 = i20;
+                        i14 = i16;
+                        zArr = zArr2;
+                    } else {
+                        if (!arVar2.T) {
+                            B(arVar2, zArr2);
+                        }
+                        if (!arVar2.U) {
+                            C(arVar2, zArr2);
+                        }
+                        if (!zArr2[0]) {
+                            i12 = i20;
+                            i = i16;
+                            c = 0;
+                            //break;
+                        }
+                        i13 = i20;
+                        int h = (arVar2.M + arVar2.N) - arVar2.h();
+                        int d = (arVar2.L + arVar2.O) - arVar2.d();
+                        int h2 = arVar2.ad == 4 ? arVar2.h() + arVar2.i.c + arVar2.k.c : h;
+                        int d2 = arVar2.ae == 4 ? arVar2.d() + arVar2.j.c + arVar2.l.c : d;
+                        int i28 = arVar2.K;
+                        zArr = zArr2;
+                        if (i28 == 8) {
+                            d2 = 0;
+                        }
+                        int i29 = i28 == 8 ? 0 : h2;
+                        i21 = Math.max(i21, arVar2.M);
+                        i23 = Math.max(i23, arVar2.N);
+                        i14 = i16;
+                        i26 = Math.max(i26, arVar2.O);
+                        i25 = Math.max(i25, arVar2.L);
+                        i22 = Math.max(i22, i29);
+                        i27 = Math.max(i27, d2);
+                    }
+                    i24++;
+                    i20 = i13;
+                    i16 = i14;
+                    zArr2 = zArr;
+                } else {
+                    i12 = i20;
+                    i = i16;
+                    this.ag = Math.max(this.D, Math.max(Math.max(i21, i23), i22));
+                    this.ah = Math.max(this.E, Math.max(Math.max(i25, i26), i27));
+                    for (int i30 = 0; i30 < size4; i30++) {
+                        ar arVar3 = (ar) arrayList.get(i30);
+                        arVar3.T = false;
+                        arVar3.U = false;
+                        arVar3.P = false;
+                        arVar3.Q = false;
+                        arVar3.R = false;
+                        arVar3.S = false;
+                    }
+                    c = 0;
+                }
+            //}
+            z = this.as[c];
+            if (max3 > 0 && max4 > 0) {
+                if (this.ag > max3) {
+                    z = false;
+                } else if (this.ah > max4) {
+                    z = false;
+                }
+            }
+            if (z) {
+                if (this.ad == 2) {
+                    this.ad = 1;
+                    if (max3 <= 0 || max3 >= this.ag) {
+                        q(Math.max(this.D, this.ag));
+                    } else {
+                        this.aj = true;
+                        q(max3);
+                    }
+                }
+                if (this.ae == 2) {
+                    this.ae = 1;
+                    if (max4 <= 0 || max4 >= this.ah) {
+                        k(Math.max(this.E, this.ah));
+                    } else {
+                        this.ak = true;
+                        k(max4);
+                    }
+                }
+            }
+            i2 = i12;
+            this.an = 0;
+            this.ao = 0;
+            size = this.al.size();
+            for (i3 = 0; i3 < size; i3++) {
+                ar arVar4 = (ar) this.al.get(i3);
+                if (arVar4 instanceof aw) {
+                    ((aw) arVar4).D();
+                }
+            }
+            boolean z9 = z;
+            int i31 = 0;
+            z2 = true;
+            while (z2) {
+                int i32 = i31 + 1;
+                try {
+                    this.af.l();
+                    boolean E = E(this.af);
+                    if (E) {
+                        try {
+                            an anVar = this.af;
+                            am amVar = anVar.b;
+                            amVar.a(anVar);
+                            anVar.o(amVar);
+                            for (int i33 = 0; i33 < anVar.e; i33++) {
+                                anVar.d[i33] = false;
+                            }
+                            boolean z10 = false;
+                            int i34 = 0;
+                            while (!z10) {
+                                int size5 = amVar.a.size();
+                                z6 = E;
+                                ap apVar = null;
+                                int i35 = 0;
+                                int i36 = 0;
+                                while (i35 < size5) {
+                                    int i37 = size5;
+                                    try {
+                                        ap apVar2 = (ap) amVar.a.get(i35);
+                                        z4 = z9;
+                                        int i38 = 5;
+                                        while (i38 >= 0) {
+                                            i4 = i15;
+                                            try {
+                                                float f = apVar2.e[i38];
+                                                if (apVar == null && f < DisplayHelper.DENSITY && i38 >= i36) {
+                                                    apVar = apVar2;
+                                                    i36 = i38;
+                                                }
+                                                if (f > DisplayHelper.DENSITY && i38 > i36) {
+                                                    i36 = i38;
+                                                    apVar = null;
+                                                }
+                                                i38--;
+                                                i15 = i4;
+                                            } catch (Exception e) {
+                                                e = e;
+                                                i5 = max3;
+                                                i6 = max4;
+                                                i7 = i19;
+                                                z2 = z6;
+                                                e.printStackTrace();
+                                                if (z2) {
+                                                }
+                                                if (i32 < 8) {
+                                                }
+                                                i8 = i7;
+                                                z5 = false;
+                                                max = Math.max(this.D, h());
+                                                if (max > h()) {
+                                                }
+                                                max2 = Math.max(this.E, d());
+                                                if (max2 > d()) {
+                                                }
+                                                if (z4) {
+                                                }
+                                                max3 = i10;
+                                                i19 = i8;
+                                                max4 = i9;
+                                                z9 = z4;
+                                                i15 = i4;
+                                                z2 = z5;
+                                                i31 = i32;
+                                            }
+                                        }
+                                        i35++;
+                                        size5 = i37;
+                                        z9 = z4;
+                                    } catch (Exception e2) {
+                                        e2.printStackTrace();
+                                        i4 = i15;
+                                        z4 = z9;
+                                    }
+                                }
+                                i4 = i15;
+                                z4 = z9;
+                                if (apVar != null) {
+                                    boolean[] zArr3 = anVar.d;
+                                    int i39 = apVar.a;
+                                    if (zArr3[i39]) {
+                                        z8 = false;
+                                        apVar = null;
+                                    } else {
+                                        zArr3[i39] = true;
+                                        i34++;
+                                        if (i34 >= anVar.e) {
+                                            z8 = true;
+                                        }
+                                    }
+                                    if (apVar == null) {
+                                        float f2 = Float.MAX_VALUE;
+                                        int i40 = 0;
+                                        int i41 = -1;
+                                        while (i40 < anVar.f) {
+                                            ak akVar = anVar.c[i40];
+                                            boolean z11 = z8;
+                                            int i42 = i34;
+                                            try {
+                                                if (akVar.a.h == 1) {
+                                                    i5 = max3;
+                                                    i6 = max4;
+                                                } else {
+                                                    aj ajVar = akVar.d;
+                                                    int i43 = ajVar.f;
+                                                    i6 = max4;
+                                                    i5 = max3;
+                                                    if (i43 != -1) {
+                                                        int i44 = i43;
+                                                        int i45 = 0;
+                                                        for (int i46 = -1; i44 != i46; i46 = -1) {
+                                                            try {
+                                                                if (i45 >= ajVar.a) {
+                                                                    break;
+                                                                }
+                                                                i7 = i19;
+                                                                if (ajVar.c[i44] == apVar.a) {
+                                                                    float a = akVar.d.a(apVar);
+                                                                    if (a < DisplayHelper.DENSITY) {
+                                                                        float f3 = (-akVar.b) / a;
+                                                                        if (f3 < f2) {
+                                                                            f2 = f3;
+                                                                            i41 = i40;
+                                                                            i40++;
+                                                                            z8 = z11;
+                                                                            i34 = i42;
+                                                                            max4 = i6;
+                                                                            max3 = i5;
+                                                                            i19 = i7;
+                                                                        }
+                                                                    }
+                                                                    i40++;
+                                                                    z8 = z11;
+                                                                    i34 = i42;
+                                                                    max4 = i6;
+                                                                    max3 = i5;
+                                                                    i19 = i7;
+                                                                } else {
+                                                                    i44 = ajVar.d[i44];
+                                                                    i45++;
+                                                                    i19 = i7;
+                                                                }
+                                                            } catch (Exception e3) {
+                                                                e3.printStackTrace();
+                                                                i7 = i19;
+                                                                z2 = z6;
+                                                                if (z2) {
+                                                                }
+                                                                if (i32 < 8) {
+                                                                }
+                                                                i8 = i7;
+                                                                z5 = false;
+                                                                max = Math.max(this.D, h());
+                                                                if (max > h()) {
+                                                                }
+                                                                max2 = Math.max(this.E, d());
+                                                                if (max2 > d()) {
+                                                                }
+                                                                if (z4) {
+                                                                }
+                                                                max3 = i10;
+                                                                i19 = i8;
+                                                                max4 = i9;
+                                                                z9 = z4;
+                                                                i15 = i4;
+                                                                z2 = z5;
+                                                                i31 = i32;
+                                                            }
+                                                        }
+                                                        i7 = i19;
+                                                        i40++;
+                                                        z8 = z11;
+                                                        i34 = i42;
+                                                        max4 = i6;
+                                                        max3 = i5;
+                                                        i19 = i7;
+                                                    }
+                                                }
+                                                i40++;
+                                                z8 = z11;
+                                                i34 = i42;
+                                                max4 = i6;
+                                                max3 = i5;
+                                                i19 = i7;
+                                            } catch (Exception e4) {
+                                                e4.printStackTrace();
+                                                z2 = z6;
+                                                if (z2) {
+                                                }
+                                                if (i32 < 8) {
+                                                }
+                                                i8 = i7;
+                                                z5 = false;
+                                                max = Math.max(this.D, h());
+                                                if (max > h()) {
+                                                }
+                                                max2 = Math.max(this.E, d());
+                                                if (max2 > d()) {
+                                                }
+                                                if (z4) {
+                                                }
+                                                max3 = i10;
+                                                i19 = i8;
+                                                max4 = i9;
+                                                z9 = z4;
+                                                i15 = i4;
+                                                z2 = z5;
+                                                i31 = i32;
+                                            }
+                                            i7 = i19;
+                                        }
+                                        boolean z12 = z8;
+                                        i5 = max3;
+                                        i6 = max4;
+                                        i7 = i19;
+                                        i11 = i34;
+                                        if (i41 >= 0) {
+                                            ak akVar2 = anVar.c[i41];
+                                            akVar2.a.b = -1;
+                                            akVar2.a(apVar);
+                                            akVar2.a.b = i41;
+                                            for (int i47 = 0; i47 < anVar.f; i47++) {
+                                                anVar.c[i47].k(akVar2);
+                                            }
+                                            amVar.a(anVar);
+                                            try {
+                                                anVar.o(amVar);
+                                            } catch (Exception e5) {
+                                                e5.printStackTrace();
+                                            }
+                                            z10 = z12;
+                                            E = z6;
+                                            z9 = z4;
+                                            i15 = i4;
+                                            i34 = i11;
+                                            max4 = i6;
+                                            max3 = i5;
+                                            i19 = i7;
+                                        }
+                                    } else {
+                                        i5 = max3;
+                                        i6 = max4;
+                                        i7 = i19;
+                                        i11 = i34;
+                                    }
+                                    z10 = true;
+                                    E = z6;
+                                    z9 = z4;
+                                    i15 = i4;
+                                    i34 = i11;
+                                    max4 = i6;
+                                    max3 = i5;
+                                    i19 = i7;
+                                }
+                                z8 = false;
+                                if (apVar == null) {
+                                }
+                                z10 = true;
+                                E = z6;
+                                z9 = z4;
+                                i15 = i4;
+                                i34 = i11;
+                                max4 = i6;
+                                max3 = i5;
+                                i19 = i7;
+                            }
+                            i4 = i15;
+                            i5 = max3;
+                            i6 = max4;
+                            z4 = z9;
+                            z7 = E;
+                            i7 = i19;
+                            for (int i48 = 0; i48 < anVar.f; i48++) {
+                                ak akVar3 = anVar.c[i48];
+                                akVar3.a.d = akVar3.b;
+                            }
+                        } catch (Exception e6) {
+                            e6.printStackTrace();
+                            i4 = i15;
+                            i5 = max3;
+                            i6 = max4;
+                            z4 = z9;
+                            z6 = E;
+                        }
+                    } else {
+                        i4 = i15;
+                        i5 = max3;
+                        i6 = max4;
+                        z4 = z9;
+                        z7 = E;
+                        i7 = i19;
+                    }
+                    z2 = z7;
+                } catch (Exception e7) {
+                    e7.printStackTrace();
+                    i4 = i15;
+                    i5 = max3;
+                    i6 = max4;
+                    z4 = z9;
+                    i7 = i19;
+                }
+                if (z2) {
+                    z();
+                    int i49 = 0;
+                    while (true) {
+                        if (i49 >= size) {
+                            break;
+                        }
+                        ar arVar5 = (ar) this.al.get(i49);
+                        if (arVar5.ad == 3 && arVar5.h() < arVar5.F) {
+                            this.as[2] = true;
+                            break;
+                        } else if (arVar5.ae == 3 && arVar5.d() < arVar5.G) {
+                            this.as[2] = true;
+                            break;
+                        } else {
+                            i49++;
+                        }
+                    }
+                } else {
+                    boolean[] zArr4 = this.as;
+                    zArr4[2] = false;
+                    z();
+                    int size6 = this.al.size();
+                    for (int i50 = 0; i50 < size6; i50++) {
+                        ar arVar6 = (ar) this.al.get(i50);
+                        arVar6.z();
+                        if (arVar6.ad == 3 && arVar6.h() < arVar6.F) {
+                            zArr4[2] = true;
+                        }
+                        if (arVar6.ae == 3 && arVar6.d() < arVar6.G) {
+                            zArr4[2] = true;
+                        }
+                    }
+                }
+                if (i32 < 8 || !this.as[2]) {
+                    i8 = i7;
+                    z5 = false;
+                } else {
+                    int i51 = 0;
+                    int i52 = 0;
+                    for (int i53 = 0; i53 < size; i53++) {
+                        ar arVar7 = (ar) this.al.get(i53);
+                        i51 = Math.max(i51, arVar7.w + arVar7.h());
+                        i52 = Math.max(i52, arVar7.x + arVar7.d());
+                    }
+                    int max5 = Math.max(this.D, i51);
+                    int max6 = Math.max(this.E, i52);
+                    if (i2 != 2 || h() >= max5) {
+                        z5 = false;
+                    } else {
+                        q(max5);
+                        this.ad = 2;
+                        z5 = true;
+                        z4 = true;
+                    }
+                    i8 = i7;
+                    if (i8 == 2 && d() < max6) {
+                        k(max6);
+                        this.ae = 2;
+                        z5 = true;
+                        z4 = true;
+                    }
+                }
+                max = Math.max(this.D, h());
+                if (max > h()) {
+                    q(max);
+                    this.ad = 1;
+                    z5 = true;
+                    z4 = true;
+                }
+                max2 = Math.max(this.E, d());
+                if (max2 > d()) {
+                    k(max2);
+                    this.ae = 1;
+                    z5 = true;
+                    z4 = true;
+                }
+                if (z4) {
+                    if (this.ad != 2 || i5 <= 0) {
+                        i10 = i5;
+                    } else {
+                        i10 = i5;
+                        if (h() > i10) {
+                            this.aj = true;
+                            this.ad = 1;
+                            q(i10);
+                            z5 = true;
+                            z4 = true;
+                        }
+                    }
+                    if (this.ae != 2 || i6 <= 0) {
+                        i9 = i6;
+                    } else {
+                        i9 = i6;
+                        if (d() > i9) {
+                            this.ak = true;
+                            this.ae = 1;
+                            k(i9);
+                            z5 = true;
+                            z4 = true;
+                        }
+                    }
+                } else {
+                    i9 = i6;
+                    i10 = i5;
+                }
+                max3 = i10;
+                i19 = i8;
+                max4 = i9;
+                z9 = z4;
+                i15 = i4;
+                z2 = z5;
+                i31 = i32;
+            }
+            int i54 = i15;
+            z3 = z9;
+            int i55 = i19;
+            if (this.r == null) {
+                int max7 = Math.max(this.D, h());
+                int max8 = Math.max(this.E, d());
+                if (this.am == null) {
+                    this.am = new av(this);
+                }
+                av avVar2 = this.am;
+                this.w = avVar2.a;
+                this.x = avVar2.b;
+                q(avVar2.c);
+                k(avVar2.d);
+                int size7 = avVar2.e.size();
+                for (int i56 = 0; i56 < size7; i56++) {
+                    au auVar2 = (au) avVar2.e.get(i56);
+                    u(auVar2.a.g).d(auVar2.b, auVar2.c, -1, auVar2.e, auVar2.d, false);
+                }
+                q(max7);
+                k(max8);
+            } else {
+                this.w = i54;
+                this.x = i;
+            }
+            if (z3) {
+                this.ad = i2;
+                this.ae = i55;
+            }
+            j(this.af.g);
+            asVar = this;
+            for (arVar = this.r; arVar != null; arVar = arVar.r) {
+                asVar = (defpackage.as) arVar;
+            }
+            if (this == asVar) {
+                return;
+            }
+            r();
+            return;
+        }
+        i = i16;
+        i2 = i20;
+        z = false;
+        this.an = 0;
+        this.ao = 0;
+        size = this.al.size();
+        while (i3 < size) {
+        }
+        boolean z92 = z;
+        int i312 = 0;
+        z2 = true;
+        while (z2) {
+        }
+        int i542 = i15;
+        z3 = z92;
+        int i552 = i19;
+        if (this.r == null) {
+        }
+        if (z3) {
+        }
+        j(this.af.g);
+        asVar = this;
+        while (arVar != null) {
+        }
+        if (this == asVar) {
+        }
+
         /*
             Method dump skipped, instructions count: 1518
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.as.D():void");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.as.D():void");
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:242:0x06d1, code lost:

@@ -927,6 +927,7 @@ public class Helper {
     }
 
     public static void onRestart(int i) {
+        android.util.Log.i("luyuedong666", "Helper onRestart i " + i);
         if (sHdr_process != 0) {
             Toast(R.string.hsl_hdrprocess);
             NeedRestart = i + 1;

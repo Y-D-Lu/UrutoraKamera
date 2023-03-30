@@ -11,7 +11,7 @@ import android.view.View;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
-import java.util.Set;
+import java.util.List;
 
 /* renamed from: by  reason: default package */
 /* loaded from: classes.dex */
@@ -43,7 +43,7 @@ public class by extends ub implements aam {
 
     private static boolean f(cu cuVar, aea aeaVar) {
         boolean z = false;
-        for (bu buVar : (Set<bu>) cuVar.a.f()) {
+        for (bu buVar : (List<bu>) cuVar.a.f()) {
             if (buVar != null) {
                 cf cfVar = buVar.z;
                 if ((cfVar == null ? null : ((bx) cfVar).a) != null) {

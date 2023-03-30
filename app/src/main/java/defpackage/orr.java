@@ -19,7 +19,7 @@ public final class orr extends oom {
 
     @Override
     public oti iterator() {
-        return null;
+        return gH();
     }
 
     @Override // defpackage.ood

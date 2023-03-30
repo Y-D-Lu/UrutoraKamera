@@ -686,7 +686,7 @@ public class mip {
     }
 
     public static int aH(int i, Context context) {
-        return new nyl(context).a(ohh.X(context, /*org.codeaurora.snapcam.R.attr.colorSurface*/0x7f040152, 0), context.getResources().getDimension(i));
+        return new nyl(context).a(ohh.X(context, org.codeaurora.snapcam.R.attr.colorSurface, 0), context.getResources().getDimension(i));
     }
 
     public static void aI(String str, lyd[] lydVarArr, lyd[] lydVarArr2) {
@@ -2896,18 +2896,18 @@ public class mip {
     }
 
     public static int dN(View view) {
-//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnPrimaryContainer);
-        return obr.e(view, 0x7f040120);
+        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnPrimaryContainer);
+        //return obr.e(view, 0x7f040120);
     }
 
     public static int dO(View view) {
-//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnSurfaceVariant);
-        return obr.e(view, 0x7f040132);
+        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnSurfaceVariant);
+        //return obr.e(view, 0x7f040132);
     }
 
     public static int dP(View view) {
-//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnTertiaryContainer);
-        return obr.e(view, 0x7f040136);
+        return obr.e(view, org.codeaurora.snapcam.R.attr.colorOnTertiaryContainer);
+        //return obr.e(view, 0x7f040136);
     }
 
     public static int dQ(View view) {
@@ -2915,23 +2915,23 @@ public class mip {
     }
 
     public static int dR(View view) {
-//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorPrimaryContainer);
-        return obr.e(view, 0x7f04013c);
+        return obr.e(view, org.codeaurora.snapcam.R.attr.colorPrimaryContainer);
+        //return obr.e(view, 0x7f04013c);
     }
 
     public static int dS(View view) {
-//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorSecondary);
-        return obr.e(view, 0x7f04014d);
+        return obr.e(view, org.codeaurora.snapcam.R.attr.colorSecondary);
+        //return obr.e(view, 0x7f04014d);
     }
 
     public static int dT(View view) {
-//        return aH(org.codeaurora.snapcam.R.dimen.gm_sys_elevation_level1, view.getContext());
-        return aH(0x7f0701c5, view.getContext());
+        return aH(org.codeaurora.snapcam.R.dimen.gm_sys_elevation_level1, view.getContext());
+        //return aH(0x7f0701c5, view.getContext());
     }
 
     public static int dU(View view) {
-//        return obr.e(view, org.codeaurora.snapcam.R.attr.colorTertiaryContainer);
-        return obr.e(view, 0x7f040157);
+        return obr.e(view, org.codeaurora.snapcam.R.attr.colorTertiaryContainer);
+        //return obr.e(view, 0x7f040157);
     }
 
     public static int dV(Context context, int i) {

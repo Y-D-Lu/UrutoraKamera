@@ -157,12 +157,12 @@ public final class dvd implements pys {
                 AnimatorSet animatorSet = new AnimatorSet();
                 animatorSet.playTogether(valueAnimator, valueAnimator2, valueAnimator3, valueAnimator4);
                 animatorSet.addListener(new jse());
-                return animatorSet.getClass();
+                return animatorSet;
             case 1:
                 ValueAnimator valueAnimator5 = (ValueAnimator) AnimatorInflater.loadAnimator(((duq) this.a).mo37get(), R.animator.active_focus_converge_outer_ring_opacity_fade_out);
                 valueAnimator5.addUpdateListener(((duy) this.b.mo37get()).d());
                 valueAnimator5.addListener(new jse());
-                return valueAnimator5.getClass();
+                return valueAnimator5;
             case 2:
                 Context mo37get2 = ((duq) this.a).mo37get();
                 duy duyVar2 = (duy) this.b.mo37get();
@@ -174,12 +174,12 @@ public final class dvd implements pys {
                 animatorSet2.setInterpolator(new adt());
                 animatorSet2.playTogether(valueAnimator6, valueAnimator7);
                 animatorSet2.addListener(new jse());
-                return animatorSet2.getClass();
+                return animatorSet2;
             case 3:
                 ValueAnimator valueAnimator8 = (ValueAnimator) AnimatorInflater.loadAnimator(((duq) this.a).mo37get(), R.animator.passive_focus_converge_outer_ring_opacity_fade_out);
                 valueAnimator8.addUpdateListener(((duy) this.b.mo37get()).d());
                 valueAnimator8.addListener(new jse());
-                return valueAnimator8.getClass();
+                return valueAnimator8;
             case 4:
                 ddf ddfVar = (ddf) this.a.mo37get();
                 try {

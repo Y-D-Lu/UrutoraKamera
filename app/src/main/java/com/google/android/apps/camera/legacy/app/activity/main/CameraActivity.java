@@ -153,6 +153,7 @@ public class CameraActivity extends etd implements end, bpx {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // defpackage.etd, defpackage.fio, defpackage.by, defpackage.ub, defpackage.ds, android.app.Activity
     public void onCreate(Bundle bundle) {
+        android.util.Log.i("luyuedong666", "CameraActivity onCreate");
         refreshBrightness(100);
         m().e("CameraActivity#onCreate");
         long elapsedRealtimeNanos = SystemClock.elapsedRealtimeNanos();
@@ -274,6 +275,7 @@ public class CameraActivity extends etd implements end, bpx {
         m().f();
         this.x.j(ijf.ACTIVITY_ONCREATE_END, CameraActivityTiming.b);
         m().f();
+        android.util.Log.i("luyuedong666", "CameraActivity onCreate end");
     }
 
     @Override // defpackage.etd, defpackage.fio, defpackage.ih, defpackage.by, android.app.Activity
@@ -286,6 +288,7 @@ public class CameraActivity extends etd implements end, bpx {
 
     @Override // defpackage.etd, defpackage.fio, defpackage.by, android.app.Activity
     public final void onResume() {
+        android.util.Log.i("luyuedong666", "CameraActivity onResume");
         this.x.j(ijf.ACTIVITY_ONRESUME_START, CameraActivityTiming.a);
         super.onResume();
         this.x.j(ijf.ACTIVITY_ONRESUME_END, CameraActivityTiming.b);
@@ -293,10 +296,12 @@ public class CameraActivity extends etd implements end, bpx {
         if (this.y) {
             finish();
         }
+        android.util.Log.i("luyuedong666", "CameraActivity onResume end");
     }
 
     @Override // defpackage.etd, defpackage.fio, defpackage.ih, defpackage.by, android.app.Activity
     public final void onStart() {
+        android.util.Log.i("luyuedong666", "CameraActivity onStart");
         String str;
         ijf[] values;
         CameraActivityTiming cameraActivityTiming = this.x;
@@ -344,6 +349,7 @@ public class CameraActivity extends etd implements end, bpx {
         dkeVar.a();
         super.onStart();
         b2.close();
+        android.util.Log.i("luyuedong666", "CameraActivity onStart end");
     }
 
     @Override // defpackage.etd, defpackage.fio, defpackage.ih, defpackage.by, android.app.Activity

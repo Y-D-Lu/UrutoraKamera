@@ -1,5 +1,6 @@
 package defpackage;
 
+import android.content.res.Resources;
 import android.widget.CompoundButton;
 
 /* renamed from: ms  reason: default package */
@@ -19,7 +20,38 @@ final class ms {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void a(android.util.AttributeSet r9, int r10) {
+    public final void a(android.util.AttributeSet attributeSet, int i) {
+        int f;
+        int f2;
+        rn q = rn.q(this.a.getContext(), attributeSet, jq.l, i);
+        CompoundButton compoundButton = this.a;
+        gl.E(compoundButton, compoundButton.getContext(), jq.l, attributeSet, q.b, i, 0);
+        try {
+            if (q.p(1) && (f2 = q.f(1, 0)) != 0) {
+                try {
+                    CompoundButton compoundButton2 = this.a;
+                    compoundButton2.setButtonDrawable(jr.b(compoundButton2.getContext(), f2));
+                } catch (Resources.NotFoundException e) {
+                }
+                if (q.p(2)) {
+                    this.a.setButtonTintList(q.g(2));
+                }
+                if (q.p(3)) {
+                    this.a.setButtonTintMode(oj.a(q.c(3, -1), null));
+                }
+            }
+            if (q.p(0) && (f = q.f(0, 0)) != 0) {
+                CompoundButton compoundButton3 = this.a;
+                compoundButton3.setButtonDrawable(jr.b(compoundButton3.getContext(), f));
+            }
+            if (q.p(2)) {
+            }
+            if (q.p(3)) {
+            }
+        } finally {
+            q.n();
+        }
+
         /*
             r8 = this;
             android.widget.CompoundButton r0 = r8.a
@@ -81,7 +113,7 @@ final class ms {
             r0.n()
             throw r9
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.ms.a(android.util.AttributeSet, int):void");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.ms.a(android.util.AttributeSet, int):void");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

@@ -1,6 +1,7 @@
 package com.google.android.apps.camera.focusindicator;
 
 import android.animation.Animator;
+import android.animation.AnimatorSet;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Matrix;
@@ -33,6 +34,7 @@ import defpackage.ggp;
 import defpackage.jrz;
 import defpackage.jsj;
 import defpackage.jsk;
+import defpackage.jsm;
 import defpackage.ojc;
 import defpackage.qmd;
 
@@ -72,14 +74,26 @@ public class FocusIndicatorView extends RelativeLayout implements bnl {
         TextView textView = duiVar.a.d;
         qmd.ae(textView);
         this.d = textView;
-        this.e = (jsk) duiVar.b.mo37get();
-        this.f = (jsk) duiVar.c.mo37get();
-        this.g = (jsk) duiVar.d.mo37get();
-        this.h = (jsk) duiVar.e.mo37get();
-        this.i = (jsk) duiVar.f.mo37get();
-        this.j = (jsk) duiVar.g.mo37get();
-        this.k = (jsk) duiVar.h.mo37get();
-        this.l = (jsk) duiVar.i.mo37get();
+        android.util.Log.i("luyuedong666", "duiVar " + duiVar + " duiVar.b " + duiVar.b);
+        Object obj = duiVar.b.mo37get();
+        android.util.Log.i("luyuedong666", " obj " + obj);
+        jsm jmsVar1 = new jsm((Animator) duiVar.b.mo37get());
+        jsm jmsVar2 = new jsm((Animator) duiVar.c.mo37get());
+        jsm jmsVar3 = new jsm((Animator) duiVar.d.mo37get());
+        jsm jmsVar4 = new jsm((Animator) duiVar.e.mo37get());
+        jsm jmsVar5 = new jsm((Animator) duiVar.f.mo37get());
+        jsm jmsVar6 = new jsm((Animator) duiVar.g.mo37get());
+        jsm jmsVar7 = new jsm((Animator) duiVar.h.mo37get());
+        jsm jmsVar8 = new jsm((Animator) duiVar.i.mo37get());
+
+        this.e = (jsk) jmsVar1;
+        this.f = (jsk) jmsVar2;
+        this.g = (jsk) jmsVar3;
+        this.h = (jsk) jmsVar4;
+        this.i = (jsk) jmsVar5;
+        this.j = (jsk) jmsVar6;
+        this.k = (jsk) jmsVar7;
+        this.l = (jsk) jmsVar8;
         w(this.e);
         w(this.f);
         w(this.g);

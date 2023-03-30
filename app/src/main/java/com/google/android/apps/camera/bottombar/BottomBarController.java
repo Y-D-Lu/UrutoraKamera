@@ -128,6 +128,7 @@ public class BottomBarController {
         this.listenerDispatcher = new BottomBarListener() { // from class: com.google.android.apps.camera.bottombar.BottomBarController.1
             @Override // com.google.android.apps.camera.bottombar.BottomBarListener
             public void onCameraSwitchButtonClicked() {
+                android.util.Log.i("luyuedong666", "BottomBarController BottomBarListener onCameraSwitchButtonClicked");
                 synchronized (BottomBarController.this.lock) {
                     for (BottomBarListener bottomBarListener : (Set<BottomBarListener>) BottomBarController.this.listeners) {
                         bottomBarListener.onCameraSwitchButtonClicked();
@@ -299,6 +300,7 @@ public class BottomBarController {
 
     /* renamed from: lambda$wireListeners$5$com-google-android-apps-camera-bottombar-BottomBarController  reason: not valid java name */
     public /* synthetic */ void m17xa80caee2(View view) {
+        android.util.Log.i("luyuedong666", "BottomBarController m17xa80caee2 onCameraSwitchButtonClicked");
         this.listenerDispatcher.onCameraSwitchButtonClicked();
     }
 
@@ -611,6 +613,7 @@ public class BottomBarController {
         this.bottomBar.getCameraSwitchButton().setOnClickListener(new View.OnClickListener() { // from class: com.google.android.apps.camera.bottombar.BottomBarController$$ExternalSyntheticLambda3
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
+                android.util.Log.i("luyuedong666", "BottomBarController CameraSwitchButton onClick");
                 BottomBarController.this.m17xa80caee2(view);
             }
         });

@@ -26,7 +26,40 @@ public final class pig implements Executor {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void execute(java.lang.Runnable r8) {
+    public final void execute(java.lang.Runnable runnable) {
+        runnable.getClass();
+        synchronized (this.b) {
+            int i = this.d;
+            if (i != 4 && i != 3) {
+                long j = this.c;
+                pie pieVar = new pie(runnable);
+                this.b.add(pieVar);
+                this.d = 2;
+                try {
+                    this.e.execute(this.f);
+                    if (this.d != 2) {
+                        return;
+                    }
+                    synchronized (this.b) {
+                        if (this.c == j && this.d == 2) {
+                            this.d = 3;
+                        }
+                    }
+                    return;
+                } catch (Error | RuntimeException e) {
+                    synchronized (this.b) {
+                        e.printStackTrace();
+                        if (this.b.removeLastOccurrence(pieVar)) {
+                            e.printStackTrace();
+                        }
+                        e.printStackTrace();
+                    }
+                    return;
+                }
+            }
+            this.b.add(runnable);
+        }
+
         /*
             r7 = this;
             r8.getClass()
@@ -116,7 +149,7 @@ public final class pig implements Executor {
         L6f:
             goto L6e
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.pig.execute(java.lang.Runnable):void");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.pig.execute(java.lang.Runnable):void");
     }
 
     public final String toString() {

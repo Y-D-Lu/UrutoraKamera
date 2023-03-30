@@ -161,7 +161,7 @@ public abstract class oom extends ood implements List, RandomAccess {
     }
 
 //    @Override // defpackage.ood
-    public final oti gH() {
+    public oti gH() {
         return listIterator();
     }
 

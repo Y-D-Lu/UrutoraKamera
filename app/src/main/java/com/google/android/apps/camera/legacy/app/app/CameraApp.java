@@ -293,6 +293,7 @@ public class CameraApp extends fip implements HasCameraContentProviderComponent,
 
     @Override // defpackage.fip, android.app.Application
     public final void onCreate() {
+        android.util.Log.i("luyuedong666", "CameraApp onCreate");
         boolean z;
         Trace.beginSection("GCA_App#onCreate");
         synchronized (kqe.a) {
@@ -351,5 +352,6 @@ public class CameraApp extends fip implements HasCameraContentProviderComponent,
             e.i(ijg.APP_ONCREATE_END);
             Trace.endSection();
         }
+        android.util.Log.i("luyuedong666", "CameraApp onCreate end");
     }
 }

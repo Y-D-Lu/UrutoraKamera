@@ -15,14 +15,17 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationManager;
+import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatViewInflater;
 import android.support.v7.widget.ActionBarContextView;
+import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.ContentFrameLayout;
 import android.text.TextUtils;
 import android.util.AndroidRuntimeException;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
@@ -422,12 +425,112 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final boolean D(android.view.KeyEvent r6) {
+    public final boolean D(android.view.KeyEvent keyEvent) {
+        boolean z;
+        AudioManager audioManager;
+        Object obj = this.e;
+        if (((obj instanceof fm) || (obj instanceof ja)) && this.g.getDecorView() != null) {
+            int[] iArr = gl.a;
+        }
+        boolean z2 = true;
+        if (keyEvent.getKeyCode() != 82 || !this.h.b.dispatchKeyEvent(keyEvent)) {
+            int keyCode = keyEvent.getKeyCode();
+            if (keyEvent.getAction() == 0) {
+                switch (keyCode) {
+                    case 4:
+                        if ((keyEvent.getFlags() & 128) == 0) {
+                            z2 = false;
+                        }
+                        this.R = z2;
+                        return false;
+                    case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
+                        if (keyEvent.getRepeatCount() != 0) {
+                            return true;
+                        }
+                        iw J2 = J(0);
+                        if (J2.m) {
+                            return true;
+                        }
+                        F(J2, keyEvent);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+            switch (keyCode) {
+                case 4:
+                    boolean z3 = this.R;
+                    this.R = false;
+                    iw J3 = J(0);
+                    if (J3.m) {
+                        if (z3) {
+                            return true;
+                        }
+                        x(J3, true);
+                        return true;
+                    }
+                    jw jwVar = this.l;
+                    if (jwVar != null) {
+                        jwVar.f();
+                        return true;
+                    }
+                    hu a = a();
+                    return a != null && a.l();
+                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
+                    if (this.l != null) {
+                        return true;
+                    }
+                    iw J4 = J(0);
+                    nz nzVar = this.k;
+                    if (nzVar == null || !nzVar.q() || ViewConfiguration.get(this.f).hasPermanentMenuKey()) {
+                        boolean z4 = J4.m;
+                        if (!z4 && !J4.l) {
+                            if (!J4.k) {
+                                return true;
+                            }
+                            if (J4.o) {
+                                J4.k = false;
+                                if (!F(J4, keyEvent)) {
+                                    return true;
+                                }
+                            }
+                            R(J4, keyEvent);
+                            audioManager = (AudioManager) this.f.getApplicationContext().getSystemService("audio");
+                            if (audioManager == null) {
+                                audioManager.playSoundEffect(0);
+                                return true;
+                            }
+                            Log.w("AppCompatDelegate", "Couldn't get audio manager");
+                            return true;
+                        }
+                        x(J4, true);
+                        z = z4;
+                    } else if (this.k.t()) {
+                        z = this.k.r();
+                    } else if (this.C || !F(J4, keyEvent)) {
+                        return true;
+                    } else {
+                        z = this.k.u();
+                    }
+                    if (!z) {
+                        return true;
+                    }
+                    audioManager = (AudioManager) this.f.getApplicationContext().getSystemService("audio");
+                    if (audioManager == null) {
+                    }
+                    break;
+                default:
+                    return false;
+            }
+        } else {
+            return true;
+        }
+        return true;
         /*
             Method dump skipped, instructions count: 292
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.iy.D(android.view.KeyEvent):boolean");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.iy.D(android.view.KeyEvent):boolean");
     }
 
     @Override // defpackage.ku
@@ -560,12 +663,222 @@ public final class iy extends ii implements LayoutInflater.Factory2, ku {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final android.view.View I(java.lang.String r9, android.content.Context r10, android.util.AttributeSet r11) {
+    public final android.view.View I(java.lang.String str, android.content.Context context, android.util.AttributeSet attributeSet) {
+        View e;
+        if (this.aa == null) {
+            String string = this.f.obtainStyledAttributes(jq.j).getString(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_viewInflaterClass);
+            if (string == null) {
+                this.aa = new AppCompatViewInflater();
+            } else {
+                try {
+                    this.aa = (AppCompatViewInflater) Class.forName(string).getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
+                } catch (Throwable th) {
+                    this.aa = new AppCompatViewInflater();
+                }
+            }
+        }
+        AppCompatViewInflater appCompatViewInflater = this.aa;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, jq.x, 0, 0);
+        char c2 = 4;
+        int resourceId = obtainStyledAttributes.getResourceId(4, 0);
+        obtainStyledAttributes.recycle();
+        Context usVar = (resourceId == 0 || ((context instanceof us) && ((us) context).a == resourceId)) ? context : new us(context, resourceId);
+        switch (str.hashCode()) {
+            case -1946472170:
+                if (str.equals("RatingBar")) {
+                    c2 = 11;
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case -1455429095:
+                if (str.equals("CheckedTextView")) {
+                    c2 = '\b';
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case -1346021293:
+                if (str.equals("MultiAutoCompleteTextView")) {
+                    c2 = '\n';
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case -938935918:
+                if (str.equals("TextView")) {
+                    c2 = 0;
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case -937446323:
+                if (str.equals("ImageButton")) {
+                    c2 = 5;
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case -658531749:
+                if (str.equals("SeekBar")) {
+                    c2 = '\f';
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case -339785223:
+                break;
+            case 776382189:
+                if (str.equals("RadioButton")) {
+                    c2 = 7;
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case 799298502:
+                if (str.equals("ToggleButton")) {
+                    c2 = '\r';
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case 1125864064:
+                if (str.equals("ImageView")) {
+                    c2 = 1;
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case 1413872058:
+                if (str.equals("AutoCompleteTextView")) {
+                    c2 = '\t';
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case 1601505219:
+                if (str.equals("CheckBox")) {
+                    c2 = 6;
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case 1666676343:
+                if (str.equals("EditText")) {
+                    c2 = 3;
+                    break;
+                }
+                c2 = 65535;
+                break;
+            case 2001146706:
+                if (str.equals("Button")) {
+                    c2 = 2;
+                    break;
+                }
+                c2 = 65535;
+                break;
+            default:
+                c2 = 65535;
+                break;
+        }
+        View view = null;
+        switch (c2) {
+            case 0:
+                e = appCompatViewInflater.e(usVar, attributeSet);
+                break;
+            case 1:
+                e = new AppCompatImageView(usVar, attributeSet);
+                break;
+            case 2:
+                e = appCompatViewInflater.b(usVar, attributeSet);
+                break;
+            case 3:
+                e = new mv(usVar, attributeSet);
+                break;
+            case 4:
+                e = new nq(usVar, attributeSet);
+                break;
+            case 5:
+                e = new mw(usVar, attributeSet);
+                break;
+            case 6:
+                e = appCompatViewInflater.c(usVar, attributeSet);
+                break;
+            case 7:
+                e = appCompatViewInflater.d(usVar, attributeSet);
+                break;
+            case '\b':
+                e = new mr(usVar, attributeSet);
+                break;
+            case '\t':
+                e = appCompatViewInflater.a(usVar, attributeSet);
+                break;
+            case '\n':
+                e = new my(usVar, attributeSet);
+                break;
+            case 11:
+                e = new nc(usVar, attributeSet);
+                break;
+            case '\f':
+                e = new ne(usVar, attributeSet);
+                break;
+            case '\r':
+                e = new nw(usVar, attributeSet);
+                break;
+            default:
+                e = null;
+                break;
+        }
+        if (e == null && context != usVar) {
+            if (str.equals("view")) {
+                str = attributeSet.getAttributeValue(null, "class");
+            }
+            try {
+                Object[] objArr = appCompatViewInflater.c;
+                objArr[0] = usVar;
+                objArr[1] = attributeSet;
+                if (str.indexOf(46) == -1) {
+                    for (int i = 0; i < 3; i++) {
+                        e = appCompatViewInflater.f(usVar, str, AppCompatViewInflater.b[i]);
+                        if (e == null) {
+                        }
+                    }
+                } else {
+                    View f = appCompatViewInflater.f(usVar, str, null);
+                    Object[] objArr2 = appCompatViewInflater.c;
+                    objArr2[0] = null;
+                    objArr2[1] = null;
+                    view = f;
+                }
+            } catch (Exception e2) {
+            } finally {
+                Object[] objArr3 = appCompatViewInflater.c;
+                objArr3[0] = null;
+                objArr3[1] = null;
+            }
+            if (view != null) {
+                Context context2 = view.getContext();
+                if ((context2 instanceof ContextWrapper) && gl.S(view)) {
+                    TypedArray obtainStyledAttributes2 = context2.obtainStyledAttributes(attributeSet, AppCompatViewInflater.a);
+                    String string2 = obtainStyledAttributes2.getString(0);
+                    if (string2 != null) {
+                        view.setOnClickListener(new jb(view, string2));
+                    }
+                    obtainStyledAttributes2.recycle();
+                }
+            }
+            return view;
+        }
+        view = e;
+        if (view != null) {
+        }
+        return view;
+
         /*
             Method dump skipped, instructions count: 562
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.iy.I(java.lang.String, android.content.Context, android.util.AttributeSet):android.view.View");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.iy.I(java.lang.String, android.content.Context, android.util.AttributeSet):android.view.View");
     }
 
     public final iw J(int i) {

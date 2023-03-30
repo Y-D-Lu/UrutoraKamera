@@ -174,7 +174,7 @@ public class ConstraintLayout extends ViewGroup {
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // android.view.View
-    public void onMeasure(int i, int i2) {
+    public void onMeasure(int var1, int var2) {
         int i3;
         int i4;
         int i5;
@@ -202,10 +202,10 @@ public class ConstraintLayout extends ViewGroup {
         as asVar = this.b;
         asVar.w = paddingLeft;
         asVar.x = paddingTop;
-        int mode = View.MeasureSpec.getMode(i);
-        int size = View.MeasureSpec.getSize(i);
-        int mode2 = View.MeasureSpec.getMode(i2);
-        int size2 = View.MeasureSpec.getSize(i2);
+        int mode = View.MeasureSpec.getMode(var1);
+        int size = View.MeasureSpec.getSize(var1);
+        int mode2 = View.MeasureSpec.getMode(var2);
+        int size2 = View.MeasureSpec.getSize(var2);
         int paddingTop2 = getPaddingTop() + getPaddingBottom();
         int paddingLeft2 = getPaddingLeft() + getPaddingRight();
         getLayoutParams();
@@ -495,9 +495,11 @@ public class ConstraintLayout extends ViewGroup {
                             i11++;
                             childCount2 = i7;
                         }
-                    } else {
+//                    } else {
                         i10++;
                     }
+                } else {
+                    break;
                 }
             }
         }
@@ -527,7 +529,7 @@ public class ConstraintLayout extends ViewGroup {
                             View view2 = (View) obj;
                             if (view2.getVisibility() != i34) {
                                 af afVar3 = (af) view2.getLayoutParams();
-                                view2.measure(afVar3.width == -2 ? getChildMeasureSpec(i, paddingRight, afVar3.width) : View.MeasureSpec.makeMeasureSpec(arVar4.h(), 1073741824), afVar3.height == -2 ? getChildMeasureSpec(i2, paddingBottom, afVar3.height) : View.MeasureSpec.makeMeasureSpec(arVar4.d(), 1073741824));
+                                view2.measure(afVar3.width == -2 ? getChildMeasureSpec(var1, paddingRight, afVar3.width) : View.MeasureSpec.makeMeasureSpec(arVar4.h(), 1073741824), afVar3.height == -2 ? getChildMeasureSpec(var2, paddingBottom, afVar3.height) : View.MeasureSpec.makeMeasureSpec(arVar4.d(), 1073741824));
                                 int measuredWidth = view2.getMeasuredWidth();
                                 int measuredHeight2 = view2.getMeasuredHeight();
                                 if (measuredWidth != arVar4.h()) {
@@ -576,8 +578,8 @@ public class ConstraintLayout extends ViewGroup {
                 }
                 int h = this.b.h();
                 int d10 = this.b.d();
-                int resolveSizeAndState = resolveSizeAndState(h + paddingRight, i, i5);
-                int resolveSizeAndState2 = resolveSizeAndState(d10 + paddingBottom, i2, i5 << 16);
+                int resolveSizeAndState = resolveSizeAndState(h + paddingRight, var1, i5);
+                int resolveSizeAndState2 = resolveSizeAndState(d10 + paddingBottom, var2, i5 << 16);
                 int min = Math.min(this.g, resolveSizeAndState) & 16777215;
                 int min2 = Math.min(this.h, resolveSizeAndState2) & 16777215;
                 as asVar4 = this.b;
@@ -599,17 +601,17 @@ public class ConstraintLayout extends ViewGroup {
                     int i40 = afVar4.height;
                     if (afVar4.N || afVar4.O || afVar4.E == 1 || afVar4.width == -1 || (!afVar4.O && (afVar4.F == 1 || afVar4.height == -1))) {
                         if (i39 == 0 || i39 == -1) {
-                            childMeasureSpec = getChildMeasureSpec(i, paddingLeft3, -2);
+                            childMeasureSpec = getChildMeasureSpec(var1, paddingLeft3, -2);
                             z = true;
                         } else {
-                            childMeasureSpec = getChildMeasureSpec(i, paddingLeft3, i39);
+                            childMeasureSpec = getChildMeasureSpec(var1, paddingLeft3, i39);
                             z = false;
                         }
                         if (i40 == 0 || i40 == -1) {
-                            childMeasureSpec2 = getChildMeasureSpec(i2, paddingTop3, -2);
+                            childMeasureSpec2 = getChildMeasureSpec(var2, paddingTop3, -2);
                             z2 = true;
                         } else {
-                            childMeasureSpec2 = getChildMeasureSpec(i2, paddingTop3, i40);
+                            childMeasureSpec2 = getChildMeasureSpec(var2, paddingTop3, i40);
                             z2 = false;
                         }
                         childAt2.measure(childMeasureSpec, childMeasureSpec2);

@@ -66,7 +66,90 @@ public final class aq {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void d(defpackage.aq r8, int r9, int r10, int r11, int r12, boolean r13) {
+    public final void d(defpackage.aq aqVar, int i, int i2, int i3, int i4, boolean z) {
+        boolean z2;
+        boolean z3;
+        boolean z4 = true;
+        if (aqVar == null) {
+            this.b = null;
+            this.c = 0;
+            this.d = -1;
+            this.h = 1;
+            this.e = 2;
+            return;
+        }
+        if (!z) {
+            int i5 = aqVar.g;
+            int i6 = this.g;
+            if (i5 != i6) {
+                switch (i6 - 1) {
+                    case 1:
+                    case 3:
+                        if (i5 == 2) {
+                            z2 = true;
+                        } else if (i5 == 4) {
+                            i5 = 4;
+                            z2 = true;
+                        } else {
+                            z2 = false;
+                        }
+                        if (!(aqVar.a instanceof at)) {
+                            z4 = z2;
+                        } else if (!z2 && i5 != 8) {
+                            z4 = false;
+                        }
+                        if (!z4) {
+                            return;
+                        }
+                        break;
+                    case 2:
+                    case 4:
+                        if (i5 != 3) {
+                            if (i5 == 5) {
+                                i5 = 5;
+                            } else {
+                                z3 = false;
+                                if (aqVar.a instanceof at) {
+                                    z4 = z3;
+                                } else if (!z3 && i5 != 9) {
+                                    z4 = false;
+                                }
+                                if (!z4) {
+                                }
+                            }
+                        }
+                        z3 = true;
+                        if (aqVar.a instanceof at) {
+                        }
+                        if (!z4) {
+                        }
+                        break;
+                    case 5:
+                    default:
+                        return;
+                    case 6:
+                        if (i5 == 6 || i5 == 8 || i5 == 9) {
+                            return;
+                        }
+                        break;
+                }
+            } else if (i6 == 7) {
+                return;
+            } else {
+                if (i6 == 6 && (!aqVar.a.s() || !this.a.s())) {
+                    return;
+                }
+            }
+        }
+        this.b = aqVar;
+        if (i > 0) {
+            this.c = i;
+        } else {
+            this.c = 0;
+        }
+        this.d = i2;
+        this.h = i3;
+        this.e = i4;
         /*
             r7 = this;
             r0 = 2
@@ -186,7 +269,7 @@ public final class aq {
             r7.e = r12
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.aq.d(aq, int, int, int, int, boolean):void");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.aq.d(aq, int, int, int, int, boolean):void");
     }
 
     public final void e() {

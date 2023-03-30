@@ -1038,7 +1038,7 @@ public final class bno implements pys {
                 animatorSet.playTogether(valueAnimator, valueAnimator2, valueAnimator3, valueAnimator4, valueAnimator5);
                 animatorSet.addListener(new duz(mo37get8, mo37get9, mo37get10));
                 animatorSet.addListener(new jse());
-                return animatorSet.getClass();
+                return animatorSet;
             case 17:
                 Context mo37get11 = ((duq) this.a).mo37get();
                 Resources mo37get12 = ((dut) this.e).mo37get();
@@ -1057,7 +1057,7 @@ public final class bno implements pys {
                 animatorSet2.play(valueAnimator6).with(valueAnimator7).with(valueAnimator8).with(valueAnimator9);
                 animatorSet2.addListener(new dvc(mo37get12, mo37get13, mo37get14));
                 animatorSet2.addListener(new jse());
-                return animatorSet2.getClass();
+                return animatorSet2;
             case 18:
                 Context mo37get15 = ((duq) this.a).mo37get();
                 Resources mo37get16 = ((dut) this.e).mo37get();
@@ -1078,7 +1078,7 @@ public final class bno implements pys {
                 animatorSet3.playTogether(valueAnimator10, valueAnimator11, valueAnimator12, valueAnimator13, valueAnimator14);
                 animatorSet3.addListener(new dva(mo37get16, mo37get17, mo37get18));
                 animatorSet3.addListener(new jse());
-                return animatorSet3.getClass();
+                return animatorSet3;
             case 19:
                 Context mo37get19 = ((duq) this.a).mo37get();
                 Resources mo37get20 = ((dut) this.e).mo37get();
@@ -1093,7 +1093,7 @@ public final class bno implements pys {
                 animatorSet4.playTogether(valueAnimator15, valueAnimator16);
                 animatorSet4.addListener(new dvb(mo37get20, mo37get21, mo37get22));
                 animatorSet4.addListener(new jse());
-                return animatorSet4.getClass();
+                return animatorSet4;
             default:
                 return new eem((lce) this.b.mo37get(), (lce) this.c.mo37get(), (ddf) this.a.mo37get(), (lap) this.d.mo37get(), (fjs) this.e.mo37get());
         }

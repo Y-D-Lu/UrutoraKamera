@@ -108,6 +108,7 @@ public class RoundedThumbnailView extends ImageButton {
 
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
+            android.util.Log.i("luyuedong666", "RoundedThumbnailView AnonymousClass1 onClick");
             ValueAnimator ofFloat = ValueAnimator.ofFloat(RoundedThumbnailView.HIT_STATE_CIRCLE_OPACITY_BEGIN, DisplayHelper.DENSITY);
             ofFloat.setDuration(RoundedThumbnailView.HIT_STATE_DURATION_MS);
             ofFloat.setInterpolator(new AccelerateDecelerateInterpolator());

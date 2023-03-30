@@ -117,6 +117,7 @@ public class CameraContentProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public final boolean onCreate() {
+        android.util.Log.i("luyuedong666", "CameraContentProvider onCreate");
         Trace.beginSection("GCA_CameraContentProvider#onCreate");
         Context context = getContext();
         context.getClass();
@@ -125,6 +126,7 @@ public class CameraContentProvider extends ContentProvider {
         hasCameraContentProviderComponent.initAppComponent();
         this.a = new deu(context, new HashSet(Arrays.asList(context.getResources().getStringArray(R.array.exp_entries))));
         Trace.endSection();
+        android.util.Log.i("luyuedong666", "CameraContentProvider onCreate end");
         return true;
     }
 

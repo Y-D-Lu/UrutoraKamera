@@ -380,6 +380,7 @@ public class MainActivityLayout extends GcaLayout implements fik, fie {
 
     @Override // com.google.android.apps.camera.ui.layout.GcaLayout, android.support.constraint.ConstraintLayout, android.view.View
     public final void onMeasure(int i, int i2) {
+        android.util.Log.i("luyuedong666", "MainActivityLayout onMeasure");
         int width;
         int width2;
         Trace.beginSection("MAL.onMeasurePrologue");
@@ -473,7 +474,9 @@ public class MainActivityLayout extends GcaLayout implements fik, fie {
             }
         }
         Trace.endSection();
+        android.util.Log.i("luyuedong666", "MainActivityLayout onMeasure End");
         super.onMeasure(i, i2);
+        android.util.Log.i("luyuedong666", "MainActivityLayout onMeasure super End");
     }
 
     public final void p(jrz jrzVar) {

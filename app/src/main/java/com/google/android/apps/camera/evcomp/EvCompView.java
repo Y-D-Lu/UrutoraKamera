@@ -3,6 +3,7 @@ package com.google.android.apps.camera.evcomp;
 import android.content.Context;
 import android.graphics.drawable.InsetDrawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.accessibility.AccessibilityManager;
@@ -131,8 +132,14 @@ public class EvCompView extends FrameLayout {
             dmfVar.d = f2;
             dmfVar.getDrawable().setTint(getResources().getColor(i2, null));
             return dmfVar;
+        } else {
+            dmfVar.e = f2;
+            dmfVar.d = f2;
+            dmfVar.getDrawable().setTint(getResources().getColor(i2, null));
+            Log.w("", "Min value is greater than max value set to " + f2);
+            return dmfVar;
         }
-        throw new IllegalArgumentException("Min value is greater than max value");
+//        throw new IllegalArgumentException("Min value is greater than max value");
     }
 
     public final void e(dmf dmfVar, float f) {
@@ -337,7 +344,25 @@ public class EvCompView extends FrameLayout {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    protected final void onLayout(boolean r1, int r2, int r3, int r4, int r5) {
+    protected final void onLayout(boolean z, int i, int i2, int i3, int i4) {
+        super.onLayout(z, i, i2, i3, i4);
+        if (this.m.isTouchExplorationEnabled()) {
+            if (!this.n.get()) {
+                this.n.set(true);
+            }
+            if (!z) {
+                return;
+            }
+        } else {
+            if (this.n.get()) {
+                this.n.set(false);
+            }
+            if (z) {
+                return;
+            }
+        }
+        f(this.j);
+
         /*
             r0 = this;
             super.onLayout(r1, r2, r3, r4, r5)
@@ -367,7 +392,7 @@ public class EvCompView extends FrameLayout {
             r0.f(r1)
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.apps.camera.evcomp.EvCompView.onLayout(boolean, int, int, int, int):void");
+//        throw new UnsupportedOperationException("Method not decompiled: com.google.android.apps.camera.evcomp.EvCompView.onLayout(boolean, int, int, int, int):void");
     }
 
     @Override // android.widget.FrameLayout, android.view.View

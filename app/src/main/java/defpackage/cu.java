@@ -1032,7 +1032,7 @@ public final class cu {
         this.q = false;
         this.r = false;
         this.t.g = false;
-        for (bu buVar : (Set<bu>)this.a.f()) {
+        for (bu buVar : (List<bu>)this.a.f()) {
             if (buVar != null) {
                 buVar.A.F();
             }

@@ -4,6 +4,7 @@ import android.graphics.PorterDuff;
 
 import java.util.LinkedHashMap;
 import java.util.Locale;
+import java.util.Map;
 
 /* renamed from: xe  reason: default package */
 /* loaded from: classes2.dex */
@@ -51,7 +52,30 @@ public final class xe {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final java.lang.Object b(java.lang.Object r3, java.lang.Object r4) {
+    public final java.lang.Object b(java.lang.Object obj, java.lang.Object obj2) {
+        if (obj == null)
+
+        this.d++;
+        this.b++;
+        Object put = this.a.put(obj, obj2);     // Catch: Throwable -> L38
+
+        this.b--;
+
+        int i = this.c;
+
+        if (this.b <= i) {
+            return put;
+        }
+        if (this.a.isEmpty() == true) {
+            return put;
+        }
+        Map.Entry entry = (Map.Entry) this.a.entrySet().iterator().next();     // Catch: Throwable -> L34
+        Object key = entry.getKey();     // Catch: Throwable -> L34
+        entry.getValue();     // Catch: Throwable -> L34
+        this.a.remove(key);     // Catch: Throwable -> L34
+        this.b--;
+        this.e++;
+        return put;
         /*
             r2 = this;
             if (r3 == 0) goto L8f
@@ -138,7 +162,7 @@ public final class xe {
         L98:
             goto L97
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.xe.b(java.lang.Object, java.lang.Object):java.lang.Object");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.xe.b(java.lang.Object, java.lang.Object):java.lang.Object");
     }
 
     public final synchronized String toString() {

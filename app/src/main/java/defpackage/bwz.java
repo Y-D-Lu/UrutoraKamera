@@ -1,6 +1,7 @@
 package defpackage;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -34,6 +35,30 @@ public final class bwz implements las {
                     To view partially-correct code enable 'Show inconsistent code' option in preferences
                 */
                 public final void run() {
+                    bwz bwzVar = bwz.this;
+                    obr.ap(lar.d());
+                    obr.ap(bwzVar.d.isEmpty());
+                    try {
+                        bwzVar.c.set(Boolean.TRUE);
+                        int i = 0;
+                        while (true) {
+                            i++;
+                            if (i <= 16) {
+                                if (bwzVar.b.drainTo(bwzVar.d) == 0) {
+                                    break;
+                                }
+                                Iterator it = bwzVar.d.iterator();
+                                while (it.hasNext()) {
+                                    ((Runnable) it.next()).run();
+                                }
+                                bwzVar.d.clear();
+                            } else {
+                                break;
+                            }
+                        }
+                    } finally {
+                        bwzVar.c.set(Boolean.FALSE);
+                    }
                     /*
                         r4 = this;
                         bwz r0 = defpackage.bwz.this
@@ -93,7 +118,7 @@ public final class bwz implements las {
                     L6e:
                         goto L6d
                     */
-                    throw new UnsupportedOperationException("Method not decompiled: defpackage.bwx.run():void");
+//                    throw new UnsupportedOperationException("Method not decompiled: defpackage.bwx.run():void");
                 }
             });
         }

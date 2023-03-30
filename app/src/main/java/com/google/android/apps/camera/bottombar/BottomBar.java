@@ -26,6 +26,7 @@ import com.hdrindicator.DisplayHelper;
 import org.codeaurora.snapcam.R;
 
 import java.io.File;
+import java.util.function.Consumer;
 
 import defpackage.img;
 import defpackage.jce;
@@ -36,8 +37,6 @@ import defpackage.jur;
 import defpackage.jus;
 import defpackage.lar;
 import defpackage.mip;
-import java.util.Collection;
-import java.util.function.Consumer;
 
 /* loaded from: classes.dex */
 public class BottomBar extends LinearLayout {
@@ -191,6 +190,7 @@ public class BottomBar extends LinearLayout {
     }
 
     private void inflate(Context context) {
+        android.util.Log.i("luyuedong666", "inflate BottomBar");
         jus a = jus.a(((LayoutInflater) context.getSystemService("layout_inflater")).inflate(R.layout.bottom_bar_layout, this));
         this.shutterButton = (ShutterButton) a.c(R.id.shutter_button);
         this.zoomLockView = (ZoomLockView) a.c(R.id.zoom_lock_view);

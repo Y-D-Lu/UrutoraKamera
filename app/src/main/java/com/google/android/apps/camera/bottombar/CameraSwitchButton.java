@@ -32,6 +32,7 @@ public class CameraSwitchButton extends ScalableButton {
         super.setOnClickListener(new View.OnClickListener() { // from class: com.google.android.apps.camera.bottombar.CameraSwitchButton$$ExternalSyntheticLambda0
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
+                android.util.Log.i("luyuedong666", "CameraSwitchButton initialize onClick");
                 if (Helper.MenuValue("pref_disable_front_lib_key") != 0) {
                     CameraSwitchButton.this.m22xe6907538(view);
                 } else {

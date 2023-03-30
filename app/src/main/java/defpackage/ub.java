@@ -175,6 +175,7 @@ public class ub extends ds implements aee, aey, ajo, uf, un {
     @Override // android.app.Activity
     public void onBackPressed() {
         this.h.a();
+        super.onBackPressed();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

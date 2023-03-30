@@ -11,6 +11,7 @@ import android.graphics.LightingColorFilter;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -19,6 +20,8 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.view.accessibility.AccessibilityNodeInfo;
+
+import com.hdrindicator.DisplayHelper;
 
 import org.codeaurora.snapcam.R;
 
@@ -54,7 +57,6 @@ import defpackage.ojz;
 import defpackage.ope;
 import defpackage.oug;
 import defpackage.ouj;
-import defpackage.pub;
 
 /* loaded from: classes.dex */
 public class ShutterButton extends mw {
@@ -511,12 +513,80 @@ public class ShutterButton extends mw {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public boolean dispatchTouchEvent(android.view.MotionEvent r13) {
+    public boolean dispatchTouchEvent(android.view.MotionEvent motionEvent) {
+        boolean z = false;
+        boolean z2;
+        Rect rect;
+        jka jkaVar;
+        MotionEvent motionEvent2;
+        jli jliVar = this.listener;
+        boolean z3 = (motionEvent.getX() < DisplayHelper.DENSITY || motionEvent.getY() < DisplayHelper.DENSITY || motionEvent.getX() >= ((float) getWidth())) ? true : motionEvent.getY() >= ((float) getHeight());
+        if (z3) {
+            if (!this.enableLongPressMotion.get()) {
+                z = true;
+            } else if (!this.isLongPressInProgress.get()) {
+                z = true;
+            }
+            z2 = (z | (motionEvent.getPointerCount() <= 1) | ((motionEvent.getAction() == 0 || motionEvent.getDownTime() == motionEvent.getEventTime()) ? false : true)) & (motionEvent.getActionMasked() == 1) & (motionEvent.getActionMasked() == 6);
+            int[] iArr = new int[2];
+            getLocationOnScreen(iArr);
+            int i = iArr[0];
+            rect = new Rect(i, iArr[1], getWidth() + i, iArr[1] + getHeight());
+            if (this.longPressStartMotionEvent == null) {
+                this.longPressStartMotionEvent = MotionEvent.obtain(motionEvent);
+            }
+            jkaVar = this.longPressMotionListener;
+            motionEvent2 = this.longPressStartMotionEvent;
+            if (jkaVar != null && motionEvent2 != null && this.enableLongPressMotion.get() && getMode() == jkc.PHOTO_LONGPRESS) {
+                jkaVar.a(motionEvent, motionEvent2, rect, !z3);
+            }
+            if (!z2) {
+                this.gestureDetector.onTouchEvent(motionEvent);
+            }
+            if (((motionEvent.getActionMasked() != 5 && motionEvent.getActionMasked() != 6 && motionEvent.getActionMasked() != 2) || z2) && this.isLongPressInProgress.compareAndSet(true, false) && (jliVar = this.listener) != null) {
+                jliVar.onShutterButtonLongPressRelease();
+            }
+            if (motionEvent.getActionMasked() == 1) {
+                this.touchCoordinate = new jrw(motionEvent.getX(), motionEvent.getY(), getMeasuredWidth(), getMeasuredHeight());
+                performHapticIfEnabled();
+            } else if (motionEvent.getActionMasked() == 0) {
+                performHapticIfEnabled();
+                performShutterTouchStart();
+                performShutterButtonDown();
+            }
+            return super.dispatchTouchEvent(motionEvent);
+        }
+        z = false;
+        z2 = (z | (motionEvent.getPointerCount() <= 1) | ((motionEvent.getAction() == 0 || motionEvent.getDownTime() == motionEvent.getEventTime()) ? false : true)) & (motionEvent.getActionMasked() == 1) & (motionEvent.getActionMasked() == 6);
+        int[] iArr2 = new int[2];
+        getLocationOnScreen(iArr2);
+        int i2 = iArr2[0];
+        rect = new Rect(i2, iArr2[1], getWidth() + i2, iArr2[1] + getHeight());
+        if (this.longPressStartMotionEvent == null) {
+        }
+        jkaVar = this.longPressMotionListener;
+        motionEvent2 = this.longPressStartMotionEvent;
+        if (jkaVar != null) {
+            jkaVar.a(motionEvent, motionEvent2, rect, !z3);
+        }
+        if (!z2) {
+        }
+        if (motionEvent.getActionMasked() != 5) {
+            //jliVar.onShutterButtonLongPressRelease();
+            if (motionEvent.getActionMasked() == 1) {
+            }
+            return super.dispatchTouchEvent(motionEvent);
+        }
+        //jliVar.onShutterButtonLongPressRelease();
+        if (motionEvent.getActionMasked() == 1) {
+        }
+        return super.dispatchTouchEvent(motionEvent);
+
         /*
             Method dump skipped, instructions count: 289
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.apps.camera.ui.shutterbutton.ShutterButton.dispatchTouchEvent(android.view.MotionEvent):boolean");
+//        throw new UnsupportedOperationException("Method not decompiled: com.google.android.apps.camera.ui.shutterbutton.ShutterButton.dispatchTouchEvent(android.view.MotionEvent):boolean");
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -825,6 +895,7 @@ public class ShutterButton extends mw {
 
     @Override // android.view.View
     public boolean performClick() {
+        android.util.Log.i("luyuedong666", "ShutterButton performClick");
         jli jliVar;
         if (!isClickEnabledAndNotBlocked()) {
             isEnabled();
