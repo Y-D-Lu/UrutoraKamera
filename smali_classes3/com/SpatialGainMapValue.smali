@@ -83,14 +83,14 @@
     return-object v10
 .end method
 
-.method public static final getSpatialGainMap(Llzs;)Lcom/google/googlex/gcam/SpatialGainMap;
+.method public static final getSpatialGainMap(Llzv;)Lcom/google/googlex/gcam/SpatialGainMap;
     .locals 18
 
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureResult$Key;
 
     move-object/from16 v1, p0
 
-    invoke-interface {v1, v0}, Llzs;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Llzv;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 

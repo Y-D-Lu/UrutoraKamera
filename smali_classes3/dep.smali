@@ -558,6 +558,10 @@
 
     const v14, 0x42855555
 
+    invoke-static {}, Lcom/Fix/IsoTime;->aeAutoMax()F
+
+    move-result v14
+
     invoke-static {v14}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v14
@@ -1510,9 +1514,25 @@
 
     invoke-interface {v0, v5, v8}, Lddk;->s(Lddg;Z)V
 
+    const-string v14, "pref_g_matting_key"
+
+    invoke-static {v14}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+
+    move-result v14
+
+    if-eqz v14, :cond_7
+
+    const v14, 0x1
+
+    goto :goto_2
+
+    :cond_7
+    const v14, 0x0
+
+    :goto_2
     sget-object v5, Lddx;->s:Lddg;
 
-    invoke-interface {v0, v5, v8}, Lddk;->s(Lddg;Z)V
+    invoke-interface {v0, v5, v14}, Lddk;->s(Lddg;Z)V
 
     sget-object v5, Lddx;->t:Lddg;
 
@@ -2002,49 +2022,49 @@
 
     move-result v5
 
-    if-eqz v5, :cond_7
+    if-eqz v5, :cond_8
 
     invoke-static {v0, v0, v4}, Lew;->i(Lddj;Lddf;Ldei;)V
 
-    goto/16 :goto_2
-
-    :cond_7
-    invoke-virtual/range {p1 .. p1}, Llzi;->d()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_8
-
-    invoke-static {v0, v0}, Ldae;->a(Lddj;Lddf;)V
-
-    goto/16 :goto_2
+    goto/16 :goto_3
 
     :cond_8
-    invoke-virtual/range {p1 .. p1}, Llzi;->f()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->d()Z
 
     move-result v5
 
     if-eqz v5, :cond_9
 
-    invoke-static {v0, v0, v1}, Let;->I(Lddj;Lddf;Llzi;)V
+    invoke-static {v0, v0}, Ldae;->a(Lddj;Lddf;)V
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
     :cond_9
-    invoke-virtual/range {p1 .. p1}, Llzi;->e()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->f()Z
 
     move-result v5
 
     if-eqz v5, :cond_a
 
-    invoke-static {v0, v0, v1, v4}, Lew;->h(Lddj;Lddf;Llzi;Ldei;)V
+    invoke-static {v0, v0, v1}, Let;->I(Lddj;Lddf;Llzi;)V
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
     :cond_a
-    iget-boolean v5, v1, Llzi;->f:Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->e()Z
+
+    move-result v5
 
     if-eqz v5, :cond_b
+
+    invoke-static {v0, v0, v1, v4}, Lew;->h(Lddj;Lddf;Llzi;Ldei;)V
+
+    goto/16 :goto_3
+
+    :cond_b
+    iget-boolean v5, v1, Llzi;->f:Z
+
+    if-eqz v5, :cond_c
 
     sget-object v3, Ldcs;->e:Lddg;
 
@@ -2320,79 +2340,79 @@
 
     invoke-virtual {v0, v3, v8}, Ldep;->s(Lddg;Z)V
 
-    goto :goto_2
-
-    :cond_b
-    invoke-virtual/range {p1 .. p1}, Llzi;->g()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_c
-
-    invoke-static {v0, v0, v1, v4}, Let;->H(Lddj;Lddf;Llzi;Ldei;)V
-
-    goto :goto_2
+    goto :goto_3
 
     :cond_c
-    invoke-virtual/range {p1 .. p1}, Llzi;->h()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->g()Z
 
     move-result v5
 
     if-eqz v5, :cond_d
 
-    invoke-static {v0, v0, v1, v4, v3}, Leu;->g(Lddj;Lddf;Llzi;Ldei;Lhwx;)V
+    invoke-static {v0, v0, v1, v4}, Let;->H(Lddj;Lddf;Llzi;Ldei;)V
 
-    goto :goto_2
+    goto :goto_3
 
     :cond_d
-    iget-boolean v5, v1, Llzi;->i:Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->h()Z
+
+    move-result v5
 
     if-eqz v5, :cond_e
 
-    invoke-static {v0, v0, v1, v4}, Leu;->f(Lddj;Lddf;Llzi;Ldei;)V
+    invoke-static {v0, v0, v1, v4, v3}, Leu;->g(Lddj;Lddf;Llzi;Ldei;Lhwx;)V
 
-    goto :goto_2
+    goto :goto_3
 
     :cond_e
+    iget-boolean v5, v1, Llzi;->i:Z
+
+    if-eqz v5, :cond_f
+
+    invoke-static {v0, v0, v1, v4}, Leu;->f(Lddj;Lddf;Llzi;Ldei;)V
+
+    goto :goto_3
+
+    :cond_f
     invoke-virtual/range {p1 .. p1}, Llzi;->i()Z
 
     move-result v5
 
-    if-eqz v5, :cond_f
+    if-eqz v5, :cond_10
 
     invoke-static {v0, v0, v1, v4, v3}, Lfw;->k(Lddj;Lddf;Llzi;Ldei;Lhwx;)V
 
-    goto :goto_2
+    goto :goto_3
 
-    :cond_f
+    :cond_10
     iget-boolean v5, v1, Llzi;->m:Z
 
-    if-eqz v5, :cond_10
+    if-eqz v5, :cond_11
 
     invoke-static {v0, v0, v1, v4, v3}, Lew;->g(Lddj;Lddf;Llzi;Ldei;Lhwx;)V
 
-    goto :goto_2
+    goto :goto_3
 
-    :cond_10
+    :cond_11
     iget-boolean v3, v1, Llzi;->a:Z
 
-    if-eqz v3, :cond_11
+    if-eqz v3, :cond_12
 
     invoke-static {v0, v0, v4}, Ldae;->b(Lddj;Lddf;Ldei;)V
 
-    goto :goto_2
+    goto :goto_3
 
-    :cond_11
+    :cond_12
     iget-boolean v3, v1, Llzi;->b:Z
 
-    if-eqz v3, :cond_12
+    if-eqz v3, :cond_13
 
     sget-object v3, Lddl;->at:Lddg;
 
     invoke-virtual {v0, v3, v8}, Ldep;->s(Lddg;Z)V
 
-    :cond_12
-    :goto_2
+    :cond_13
+    :goto_3
     sget-object v3, Lddl;->o:Lddi;
 
     sget-object v4, Lddl;->at:Lddg;
@@ -2401,56 +2421,56 @@
 
     move-result v4
 
-    if-nez v4, :cond_13
+    if-nez v4, :cond_14
 
     const/4 v6, -0x1
 
-    goto :goto_3
+    goto :goto_4
 
-    :cond_13
+    :cond_14
     iget-boolean v4, v1, Llzi;->k:Z
 
-    if-nez v4, :cond_17
+    if-nez v4, :cond_18
 
     iget-boolean v1, v1, Llzi;->j:Z
 
-    if-eqz v1, :cond_14
+    if-eqz v1, :cond_15
 
     const/4 v6, 0x3
 
-    goto :goto_3
-
-    :cond_14
-    iget-boolean v1, v2, Llzh;->e:Z
-
-    if-nez v1, :cond_15
-
-    invoke-static {}, Lcom/google/android/camera/experimental2017/ExperimentalKeys;->getLibraryVersion()I
-
-    move-result v1
-
-    if-gt v1, v13, :cond_15
-
-    const/4 v6, 0x0
-
-    goto :goto_3
+    goto :goto_4
 
     :cond_15
     iget-boolean v1, v2, Llzh;->e:Z
 
     if-nez v1, :cond_16
 
-    goto :goto_3
+    invoke-static {}, Lcom/google/android/camera/experimental2017/ExperimentalKeys;->getLibraryVersion()I
+
+    move-result v1
+
+    if-gt v1, v13, :cond_16
+
+    const/4 v6, 0x0
+
+    goto :goto_4
 
     :cond_16
-    const/4 v6, 0x2
+    iget-boolean v1, v2, Llzh;->e:Z
 
-    goto :goto_3
+    if-nez v1, :cond_17
+
+    goto :goto_4
 
     :cond_17
+    const/4 v6, 0x2
+
+    goto :goto_4
+
+    :cond_18
     const/4 v6, 0x3
 
-    :goto_3
+    :goto_4
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -2461,157 +2481,201 @@
 
     move-result v4
 
-    if-eqz v4, :cond_18
+    if-eqz v4, :cond_19
 
     invoke-static {v0, v0}, Lcom/isDefaults;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
-
-    :cond_18
-    invoke-virtual/range {p1 .. p1}, Llzi;->isnokia()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_19
-
-    invoke-static {v0, v0}, Lcom/Nokia;->overrideDefaults(Lddj;Lddf;)V
-
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_19
-    invoke-virtual/range {p1 .. p1}, Llzi;->isOnePlus()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->isnokia()Z
 
     move-result v4
 
     if-eqz v4, :cond_1a
 
-    invoke-static {v0, v0}, Lcom/OnePlus;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/Nokia;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_1a
-    invoke-virtual/range {p1 .. p1}, Llzi;->OppoVivoRealme()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->isOnePlus()Z
 
     move-result v4
 
     if-eqz v4, :cond_1b
 
-    invoke-static {v0, v0}, Lcom/OppoVivoRealme;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/OnePlus;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_1b
-    invoke-virtual/range {p1 .. p1}, Llzi;->isOnePlus9()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->OppoVivoRealme()Z
 
     move-result v4
 
     if-eqz v4, :cond_1c
 
-    invoke-static {v0, v0}, Lcom/OnePlus9;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/OppoVivoRealme;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_1c
-    invoke-virtual/range {p1 .. p1}, Llzi;->isOnePlus7()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->isOnePlus9()Z
 
     move-result v4
 
     if-eqz v4, :cond_1d
 
-    invoke-static {v0, v0}, Lcom/OnePlus7;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/OnePlus9;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_1d
-    invoke-virtual/range {p1 .. p1}, Llzi;->isTucana()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->isOnePlus7()Z
 
     move-result v4
 
     if-eqz v4, :cond_1e
 
-    invoke-static {v0, v0}, Lcom/Tucana;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/OnePlus7;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_1e
-    invoke-virtual/range {p1 .. p1}, Llzi;->Fog()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->isTucana()Z
 
     move-result v4
 
     if-eqz v4, :cond_1f
 
-    invoke-static {v0, v0}, Lcom/Fog;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/Tucana;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_1f
-    invoke-virtual/range {p1 .. p1}, Llzi;->Samsungs22UExynos()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->Fog()Z
 
     move-result v4
 
     if-eqz v4, :cond_20
 
-    invoke-static {v0, v0}, Lcom/Samsungs22UExynos;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/Fog;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_20
-    invoke-virtual/range {p1 .. p1}, Llzi;->Samsungs22USnapdragon()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->Samsungs22UExynos()Z
 
     move-result v4
 
     if-eqz v4, :cond_21
 
-    invoke-static {v0, v0}, Lcom/Samsungs22USnapdragon;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/Samsungs22UExynos;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_21
-    invoke-virtual/range {p1 .. p1}, Llzi;->Mi12Ultra()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->Samsungs22USnapdragon()Z
 
     move-result v4
 
     if-eqz v4, :cond_22
 
-    invoke-static {v0, v0}, Lcom/Mi12Ultra;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/Samsungs22USnapdragon;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_22
-    invoke-virtual/range {p1 .. p1}, Llzi;->M52()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->Mi12Ultra()Z
 
     move-result v4
 
     if-eqz v4, :cond_23
 
-    invoke-static {v0, v0}, Lcom/M52;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/Mi12Ultra;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_23
-    invoke-virtual/range {p1 .. p1}, Llzi;->RMX3085()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->M52()Z
 
     move-result v4
 
     if-eqz v4, :cond_24
 
-    invoke-static {v0, v0}, Lcom/RMX3085;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/M52;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_24
-    invoke-virtual/range {p1 .. p1}, Llzi;->SM-G780G()Z
+    invoke-virtual/range {p1 .. p1}, Llzi;->RMX3085()Z
 
     move-result v4
 
     if-eqz v4, :cond_25
 
-    invoke-static {v0, v0}, Lcom/G780G;->overrideDefaults(Lddj;Lddf;)V
+    invoke-static {v0, v0}, Lcom/RMX3085;->overrideDefaults(Lddj;Lddf;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
     :cond_25
-    :goto_4
+    invoke-virtual/range {p1 .. p1}, Llzi;->SM-G780G()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_26
+
+    invoke-static {v0, v0}, Lcom/G780G;->overrideDefaults(Lddj;Lddf;)V
+
+    goto/16 :goto_5
+
+    :cond_26
+    invoke-virtual/range {p1 .. p1}, Llzi;->isStar()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_27
+
+    invoke-static {v0, v0}, Lcom/Mi11Ultra;->overrideDefaults(Lddj;Lddf;)V
+
+    goto/16 :goto_5
+
+    :cond_27
+    invoke-virtual/range {p1 .. p1}, Llzi;->is12tpro()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_28
+
+    invoke-static {v0, v0}, Lcom/12tpro;->overrideDefaults(Lddj;Lddf;)V
+
+    goto/16 :goto_5
+
+    :cond_28
+    invoke-virtual/range {p1 .. p1}, Llzi;->isRealme9()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_29
+
+    invoke-static {v0, v0}, Lcom/Realme9;->overrideDefaults(Lddj;Lddf;)V
+
+    goto/16 :goto_5
+
+    :cond_29
+    invoke-virtual/range {p1 .. p1}, Llzi;->is10tpro()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2a
+
+    invoke-static {v0, v0}, Lcom/10tpro;->overrideDefaults(Lddj;Lddf;)V
+
+    goto/16 :goto_5
+
+    :cond_2a
+    :goto_5
     const-string v1, "pref_awbrec_key"
 
     const-string v4, "0"
@@ -2670,15 +2734,9 @@
 
     invoke-virtual {v0, v3, v9}, Ldep;->s(Lddg;Z)V
 
-    const-string v7, "pref_4k_60fps_key"
-
-    invoke-static {v7}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
-
-    move-result v7
-
     sget-object v3, Ldcu;->E:Lddg;
 
-    invoke-virtual {v0, v3, v7}, Ldep;->s(Lddg;Z)V
+    invoke-virtual {v0, v3, v6}, Ldep;->s(Lddg;Z)V
 
     sget-object v3, Lddx;->y:Lddg;
 
@@ -2737,6 +2795,8 @@
     invoke-static {v0}, Lcom/AGC;->setDeveloperSettings(Ldep;)V
 
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0

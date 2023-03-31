@@ -158,7 +158,7 @@
     :pswitch_6
     sget-object v0, Landroid/hardware/camera2/CaptureRequest;->NOISE_REDUCTION_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    sget v1, Lcom/Helper;->sCam2ApiModeVFNR:I
+    sget v1, Lcom/Helper;->getVFDenoise:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

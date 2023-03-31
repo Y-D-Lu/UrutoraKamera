@@ -24,7 +24,7 @@
     <color name="autotimer_indicator_foreground">#ffffffff</color>
     <color name="autotimer_tutorial_background">#55000000</color>
     <color name="autotimer_tutorial_text">#ffffffff</color>
-    <color name="background_color">#db202124</color>
+    <color name="background_color">#ff202124</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -59,16 +59,16 @@
     <color name="button_material_light">#ffd6d7d7</color>
     <item type="color" name="dummy_ae_4b">false</item>
     <color name="camera_button_cancel_color">#ff78909c</color>
-    <color name="camera_google_blue_600">#ff5da8de</color>
+    <color name="camera_google_blue_600">#ff1a73e8</color>
     <color name="camera_google_grey_700">#ff5f6368</color>
-    <color name="camera_google_grey_900">#db202124</color>
+    <color name="camera_google_grey_900">#ff202124</color>
     <color name="camera_gray_background">#ff1b1b1b</color>
     <color name="camera_main_button_color">#ff000000</color>
-    <color name="camera_mode_color">#ff62b0de</color>
+    <color name="camera_mode_color">#ff4285f4</color>
     <item type="color" name="dummy_ae_53">false</item>
     <color name="camera_mode_idle_color">#ffcfd8dc</color>
     <color name="camera_mode_idle_color_p20">#ffffffff</color>
-    <color name="camera_mode_pressed_color">#ff5da8de</color>
+    <color name="camera_mode_pressed_color">#ff1a73e8</color>
     <color name="camera_on_tertiary_color">#ff002021</color>
     <item type="color" name="dummy_ae_58">false</item>
     <item type="color" name="dummy_ae_59">false</item>
@@ -411,15 +411,15 @@
     <item type="color" name="dummy_ae_1d7">false</item>
     <color name="gm3_ref_palette_primary0">#ffffffff</color>
     <item type="color" name="dummy_ae_1d9">false</item>
-    <color name="gm3_ref_palette_primary100">#ffb6e4f2</color>
+    <color name="gm3_ref_palette_primary100">#ffd3e3fd</color>
     <item type="color" name="dummy_ae_1db">false</item>
-    <color name="gm3_ref_palette_primary200">#ff97d3e5</color>
-    <color name="gm3_ref_palette_primary300">#ff75a7e0</color>
+    <color name="gm3_ref_palette_primary200">#ffa8c7fa</color>
+    <color name="gm3_ref_palette_primary300">#ff7cacf8</color>
     <item type="color" name="dummy_ae_1de">false</item>
     <item type="color" name="dummy_ae_1df">false</item>
     <item type="color" name="dummy_ae_1e0">false</item>
-    <color name="gm3_ref_palette_primary600">#ff5da8de</color>
-    <color name="gm3_ref_palette_primary700">#ff66a7cc</color>
+    <color name="gm3_ref_palette_primary600">#ff0b57d0</color>
+    <color name="gm3_ref_palette_primary700">#ff0842a0</color>
     <color name="gm3_ref_palette_primary800">#ff062e6f</color>
     <color name="gm3_ref_palette_primary900">#ff041e49</color>
     <item type="color" name="dummy_ae_1e5">false</item>
@@ -609,16 +609,16 @@
     <item type="color" name="dummy_ae_2a5">false</item>
     <item type="color" name="dummy_ae_2a6">false</item>
     <item type="color" name="dummy_ae_2b8">false</item>
-    <color name="gm_ref_palette_blue100">#ffb6e4f2</color>
-    <color name="gm_ref_palette_blue200">#ff97d3e5</color>
-    <color name="gm_ref_palette_blue300">#ff84bfd9</color>
-    <color name="gm_ref_palette_blue400">#ff70c2e5</color>
-    <color name="gm_ref_palette_blue50">#ffcbe8f5</color>
-    <color name="gm_ref_palette_blue500">#ff62b0de</color>
-    <color name="gm_ref_palette_blue600">#ff5da8de</color>
-    <color name="gm_ref_palette_blue700">#ff66a7cc</color>
-    <color name="gm_ref_palette_blue800">#ff63a2c7</color>
-    <color name="gm_ref_palette_blue900">#ff678ca6</color>
+    <color name="gm_ref_palette_blue100">#ffd2e3fc</color>
+    <color name="gm_ref_palette_blue200">#ffaecbfa</color>
+    <color name="gm_ref_palette_blue300">#ff8ab4f8</color>
+    <color name="gm_ref_palette_blue400">#ff669df6</color>
+    <color name="gm_ref_palette_blue50">#ffe8f0fe</color>
+    <color name="gm_ref_palette_blue500">#ff4285f4</color>
+    <color name="gm_ref_palette_blue600">#ff1a73e8</color>
+    <color name="gm_ref_palette_blue700">#ff1967d2</color>
+    <color name="gm_ref_palette_blue800">#ff185abc</color>
+    <color name="gm_ref_palette_blue900">#ff174ea6</color>
     <item type="color" name="dummy_ae_2c3">false</item>
     <item type="color" name="dummy_ae_2c4">false</item>
     <item type="color" name="dummy_ae_2c5">false</item>
@@ -648,7 +648,7 @@
     <color name="gm_ref_palette_grey600">#ff80868b</color>
     <color name="gm_ref_palette_grey700">#ff5f6368</color>
     <color name="gm_ref_palette_grey800">#ff3c4043</color>
-    <color name="gm_ref_palette_grey900">#ff1b1b1b</color>
+    <color name="gm_ref_palette_grey900">#ff202124</color>
     <item type="color" name="dummy_ae_2e1">false</item>
     <item type="color" name="dummy_ae_2e2">false</item>
     <item type="color" name="dummy_ae_2e3">false</item>
@@ -788,7 +788,7 @@
     <item type="color" name="dummy_ae_380">false</item>
     <item type="color" name="dummy_ae_381">false</item>
     <item type="color" name="dummy_ae_382">false</item>
-    <color name="google_dark_blue500">#ff72b1d6</color>
+    <color name="google_dark_blue500">#ff5195ea</color>
     <item type="color" name="dummy_ae_384">false</item>
     <item type="color" name="dummy_ae_385">false</item>
     <item type="color" name="dummy_ae_386">false</item>
@@ -1367,10 +1367,10 @@
     <item type="color" name="dummy_ae_602">false</item>
     <color name="menu_bg_color">#db222222</color>
     <color name="menu_bg_color_legacy">#db202124</color>
-    <color name="mode_chip_color">?android:colorAccent</color>
-    <color name="mode_chip_color_legacy">@color/gm_ref_palette_blue300</color>
-    <color name="mode_chip_ripple_color">?android:colorAccent</color>
-    <color name="mode_chip_ripple_color_legacy">@color/gm_ref_palette_blue400</color>
+    <color name="mode_chip_color">@android:color/system_accent1_600</color>
+    <color name="mode_chip_color_legacy">#db757575</color>
+    <color name="mode_chip_ripple_color">@android:color/system_accent1_600</color>
+    <color name="mode_chip_ripple_color_legacy">#4c909090</color>
     <color name="mode_chip_selfieflash_color">@android:color/black</color>
     <item type="color" name="dummy_ae_60a">false</item>
     <color name="mode_chip_text_color_selected_legacy">@android:color/white</color>
@@ -1382,7 +1382,7 @@
     <item type="color" name="dummy_ae_611">false</item>
     <color name="mode_slider_bg_color">#db222222</color>
     <color name="mode_slider_bg_color_legacy">#db202124</color>
-    <color name="mode_slider_knob_bg_color">?colorSecondary</color>
+    <color name="mode_slider_knob_bg_color">@android:color/system_accent1_600</color>
     <color name="mode_slider_knob_bg_color_legacy">#52e8eaed</color>
     <item type="color" name="dummy_ae_616">false</item>
     <color name="mode_slider_text_color_legacy">#ffffffff</color>
@@ -1405,7 +1405,7 @@
     <color name="mtrl_textinput_focused_box_stroke_color">#00000000</color>
     <color name="mtrl_textinput_hovered_box_stroke_color">#de000000</color>
     <color name="night_mode_idle_color">#ff1a1c18</color>
-    <color name="night_sight_pressed_color">#ff678ca6</color>
+    <color name="night_sight_pressed_color">#ff174ea6</color>
     <item type="color" name="dummy_ae_653">false</item>
     <color name="normal_selected_legacy">@color/google_grey700</color>
     <item type="color" name="dummy_ae_655">false</item>
@@ -1413,12 +1413,12 @@
     <color name="notification_chip_background_color_legacy">#99000000</color>
     <color name="notification_chip_text_color_legacy">#ffffffff</color>
     <color name="notification_dot_color">?colorPrimary</color>
-    <color name="notification_dot_color_legacy">#ff5da8de</color>
+    <color name="notification_dot_color_legacy">#ff1a73e8</color>
     <color name="notification_dot_stroke_color">@android:color/white</color>
     <item type="color" name="dummy_ae_65c">false</item>
     <item type="color" name="dummy_ae_65d">false</item>
     <item type="color" name="dummy_ae_65e">false</item>
-    <color name="on_focus_color">#ff75a7e0</color>
+    <color name="on_focus_color">#ff8ab4f8</color>
     <color name="on_video_recording_counter_background_color">#55000000</color>
     <item type="color" name="dummy_ae_661">false</item>
     <color name="options_menu_background_closed">#db202124</color>
@@ -1426,7 +1426,7 @@
     <color name="options_menu_line_color">#1fffffff</color>
     <color name="options_menu_scroll_bar_color">#6bffffff</color>
     <color name="options_menu_text_color">#ffffffff</color>
-    <color name="options_menu_value_color">#ff5daee8</color>
+    <color name="options_menu_value_color">#ff669df6</color>
     <color name="options_menu_value_color_disabled">#ffbdc1c6</color>
     <item type="color" name="dummy_ae_669">false</item>
     <item type="color" name="dummy_ae_66a">false</item>
@@ -1451,7 +1451,7 @@
     <color name="primary_text_disabled_material_dark">#4dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
     <item type="color" name="dummy_ae_67f">false</item>
-    <color name="processing_notification">#ff62b0de</color>
+    <color name="processing_notification">#ff4285f4</color>
     <item type="color" name="dummy_ae_681">false</item>
     <item type="color" name="dummy_ae_682">false</item>
     <item type="color" name="dummy_ae_683">false</item>
@@ -1798,7 +1798,7 @@
     <item type="color" name="dummy_ae_7d8">false</item>
     <color name="record_speed_slider_bg_color">#db222222</color>
     <color name="record_speed_slider_bg_color_legacy">#db202124</color>
-    <color name="record_speed_slider_knob_bg_color">?colorSecondary</color>
+    <color name="record_speed_slider_knob_bg_color">@android:color/system_accent1_600</color>
     <color name="record_speed_slider_knob_bg_color_legacy">#52e8eaed</color>
     <item type="color" name="dummy_ae_7dd">false</item>
     <color name="record_speed_slider_text_color_legacy">#ffffffff</color>
@@ -1818,11 +1818,11 @@
     <color name="selected_item_bg_color_legacy">#33ffffff</color>
     <color name="selfie_flash_warmer_color">#ffffdab3</color>
     <item type="color" name="dummy_ae_7ee">false</item>
-    <color name="settings_accent_color">#ff62b0de</color>
+    <color name="settings_accent_color">#ff4285f4</color>
     <item type="color" name="dummy_ae_7f0">false</item>
     <color name="settings_switch_button_background_disable">#ff80868b</color>
     <color name="settings_switch_button_thumb">#ffffffff</color>
-    <color name="settings_switch_button_track_activity">#ff5daee8</color>
+    <color name="settings_switch_button_track_activity">#ff669df6</color>
     <color name="settings_switch_button_track_disable">#ff9aa0a6</color>
     <color name="settings_window_background">#ffffffff</color>
     <color name="settingslib_accent_device_default_dark">@android:color/system_accent1_400</color>
@@ -1840,7 +1840,7 @@
     <color name="settingslib_primary_dark_device_default_settings">@android:color/system_neutral1_1000</color>
     <color name="settingslib_primary_device_default_settings_light">@android:color/system_neutral1_100</color>
     <item type="color" name="dummy_ae_804">false</item>
-    <color name="settingslib_state_on_color">@android:color/system_accent1_400</color>
+    <color name="settingslib_state_on_color">@android:color/system_accent1_600</color>
     <color name="settingslib_text_color_primary_device_default">@android:color/system_neutral1_1000</color>
     <color name="settingslib_thumb_disabled_color">@android:color/system_neutral2_300</color>
     <color name="settingslib_thumb_off_color">@android:color/system_neutral2_500</color>
@@ -1875,7 +1875,7 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <item type="color" name="dummy_ae_82d">false</item>
     <color name="toast_background_color">#b8000000</color>
-    <color name="toast_learn_more_text_color">#ff75a7e0</color>
+    <color name="toast_learn_more_text_color">#ff8ab4f8</color>
     <color name="toast_text_color">#ffffffff</color>
     <color name="tooltip_background_color">@color/google_blue700</color>
     <color name="tooltip_background_dark">#e6616161</color>
@@ -1885,7 +1885,7 @@
     <item type="color" name="dummy_ae_836">false</item>
     <color name="transparent">#00000000</color>
     <item type="color" name="dummy_ae_838">false</item>
-    <color name="update_notification_icon_color">#ff62b0de</color>
+    <color name="update_notification_icon_color">#ff4285f4</color>
     <color name="video_mode_color">#ffdb4437</color>
     <color name="video_mode_idle_color">@color/google_red400</color>
     <color name="video_mode_idle_color_legacy">#ffd93025</color>
@@ -1940,19 +1940,19 @@
     <item type="color" name="dummy_ae_86d">false</item>
     <item type="color" name="dummy_ae_86e">false</item>
     <item type="color" name="dummy_ae_86f">false</item>
-    <color name="zoom_knob_background_color">?colorSecondary</color>
-    <color name="zoom_knob_background_color_legacy">#ff454545</color>
+    <color name="zoom_knob_background_color">@android:color/system_accent1_600</color>
+    <color name="zoom_knob_background_color_legacy">#fff1f3f4</color>
     <item type="color" name="dummy_ae_872">false</item>
     <color name="zoom_knob_text_color">#ffffffff</color>
-    <color name="zoom_knob_text_color_new">#ffffffff</color>
+    <color name="zoom_knob_text_color_new">#ff3c4043</color>
     <color name="zoom_lock_button_end_color">@color/google_red400</color>
     <color name="zoom_lock_button_start_color">#fff2b8b5</color>
-    <color name="zoom_seek_bar_background_color">#99444444</color>
+    <color name="zoom_seek_bar_background_color">#db222222</color>
     <item type="color" name="dummy_ae_878">false</item>
     <color name="zoom_seek_bar_stroke_color">#80ffffff</color>
-    <color name="zoom_slider_text">#ffffffff</color>
+    <color name="zoom_slider_text">#ff412e27</color>
     <color name="zoom_toggle_bar_text_color">#ffffffff</color>
     <item type="color" name="dummy_ae_87c">false</item>
-    <color name="zoom_toggle_button_background_color">?colorSecondary</color>
-    <color name="zoom_toggle_button_background_color_legacy">#ff454545</color>
+    <color name="zoom_toggle_button_background_color">@android:color/system_accent1_600</color>
+    <color name="zoom_toggle_button_background_color_legacy">#52e8eaed</color>
 </resources>

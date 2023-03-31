@@ -226,7 +226,7 @@
 
     iput-object v2, p0, Ljfj;->c:Landroid/animation/ObjectAnimator;
 
-    const-wide/16 v4, 0xfa
+    const-wide/16 v4, 0x0
 
     invoke-virtual {v2, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 

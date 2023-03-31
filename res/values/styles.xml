@@ -34,8 +34,8 @@
     </style>
     <item type="style" name="dummy_ae_9">false</item>
     <style name="Animation.MaterialComponents.BottomSheetDialog" parent="@style/Animation.AppCompat.Dialog">
-        <item name="android:windowEnterAnimation">@anim/mtrl_bottom_sheet_slide_in</item>
-        <item name="android:windowExitAnimation">@anim/mtrl_bottom_sheet_slide_out</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
     </style>
     <style name="AutotimerTutorial" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/autotimer_tutorial_text</item>
@@ -58,12 +58,12 @@
     </style>
     <style name="Base.AlertDialog.AppCompat.Light" parent="@style/Base.AlertDialog.AppCompat" />
     <style name="Base.Animation.AppCompat.Dialog" parent="@android:style/Animation">
-        <item name="android:windowEnterAnimation">@anim/abc_popup_enter</item>
-        <item name="android:windowExitAnimation">@anim/abc_popup_exit</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
     </style>
     <style name="Base.Animation.AppCompat.DropDownUp" parent="@android:style/Animation">
-        <item name="android:windowEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
-        <item name="android:windowExitAnimation">@anim/abc_shrink_fade_out_from_bottom</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
     </style>
     <item type="style" name="dummy_ae_12">false</item>
     <style name="Base.CardView" parent="@android:style/Widget">
@@ -3236,9 +3236,9 @@
     <style name="PageIndicatorViewStyle">
         <item name="pageIndicatorDotColor">?android:colorForeground</item>
         <item name="pageIndicatorDotColorSelected">?android:colorForeground</item>
-        <item name="pageIndicatorDotFadeInDuration">100</item>
+        <item name="pageIndicatorDotFadeInDuration">0</item>
         <item name="pageIndicatorDotFadeOutDelay">1000</item>
-        <item name="pageIndicatorDotFadeOutDuration">250</item>
+        <item name="pageIndicatorDotFadeOutDuration">0</item>
         <item name="pageIndicatorDotFadeWhenIdle">true</item>
         <item name="pageIndicatorDotRadius">2.0999756dip</item>
         <item name="pageIndicatorDotRadiusSelected">3.0999756dip</item>
@@ -7437,9 +7437,9 @@
     <style name="WsPageIndicatorViewStyle">
         <item name="wsPageIndicatorDotColor">?android:colorForeground</item>
         <item name="wsPageIndicatorDotColorSelected">?android:colorForeground</item>
-        <item name="wsPageIndicatorDotFadeInDuration">100</item>
+        <item name="wsPageIndicatorDotFadeInDuration">0</item>
         <item name="wsPageIndicatorDotFadeOutDelay">1000</item>
-        <item name="wsPageIndicatorDotFadeOutDuration">250</item>
+        <item name="wsPageIndicatorDotFadeOutDuration">0</item>
         <item name="wsPageIndicatorDotFadeWhenIdle">true</item>
         <item name="wsPageIndicatorDotRadius">2.0999756dip</item>
         <item name="wsPageIndicatorDotRadiusSelected">3.0999756dip</item>

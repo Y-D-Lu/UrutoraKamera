@@ -1251,7 +1251,7 @@
 
     sget-object v0, Ldde;->c:Lddg;
 
-    invoke-virtual {v1, v0, v2}, Ldep;->s(Lddg;Z)V
+    invoke-virtual {v1, v0, v3}, Ldep;->s(Lddg;Z)V
 
     sget-object v0, Ldcu;->t:Lddg;
 
@@ -1361,7 +1361,7 @@
 
     sget-object v0, Lddm;->B:Lddg;
 
-    invoke-virtual {v1, v0, v2}, Ldep;->s(Lddg;Z)V
+    invoke-virtual {v1, v0, v3}, Ldep;->s(Lddg;Z)V
 
     sget-object v0, Lddq;->f:Lddg;
 

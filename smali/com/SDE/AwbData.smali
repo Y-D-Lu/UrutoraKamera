@@ -3,6 +3,10 @@
 
 
 # static fields
+.field public static AWB_PIXEL3MOD2_WB_CALIB_B_G:[F
+
+.field public static AWB_PIXEL3MOD2_WB_CALIB_R_G:[F
+
 .field public static GC02M1_RN10_MACRO_WB_CALIB_B_G:[F
 
 .field public static GC02M1_RN10_MACRO_WB_CALIB_R_G:[F
@@ -229,6 +233,8 @@
 
 .field public static OV8856_RN9SWIDE_WB_CALIB_R_G:[F
 
+.field public static PIXEL3MOD2_WB_CALIB_GR_GB:F
+
 .field public static S5K2L7_WB_CALIB_B_G:[F
 
 .field public static S5K2L7_WB_CALIB_R_G:[F
@@ -385,6 +391,10 @@
     const v0, 0x3f80201d    # 1.00098f
 
     sput v0, Lcom/SDE/AwbData;->NEXUS_DEFAULT_2016_FRONT_WB_CALIB_GR_GB:F
+
+    const v0, 0x3f802000    # 1.0009766f
+
+    sput v0, Lcom/SDE/AwbData;->PIXEL3MOD2_WB_CALIB_GR_GB:F
 
     const/16 v0, 0x8
 
@@ -1964,7 +1974,25 @@
 
     sput-object v0, Lcom/SDE/AwbData;->imx582_X3p_MAIN_WB_CALIB_R_G:[F
 
+    const/16 v1, 0x5
+
+    new-array v0, v1, [F
+
+    fill-array-data v0, :array_aa
+
+    sput-object v0, Lcom/SDE/AwbData;->AWB_PIXEL3MOD2_WB_CALIB_B_G:[F
+
+    const/16 v1, 0x5
+
+    new-array v0, v1, [F
+
+    fill-array-data v0, :array_ab
+
+    sput-object v0, Lcom/SDE/AwbData;->AWB_PIXEL3MOD2_WB_CALIB_R_G:[F
+
     return-void
+
+    nop
 
     :array_0
     .array-data 4
@@ -4172,6 +4200,24 @@
         0x3f89462c
         0x3f0f4fc6
         0x3f1f7f39
+    .end array-data
+
+    :array_aa
+    .array-data 4
+        0x3f340000    # 0.703125f
+        0x3f273333
+        0x3f09c000
+        0x3ee80000    # 0.453125f
+        0x3e85eb85
+    .end array-data
+
+    :array_ab
+    .array-data 4
+        0x3ef523d5
+        0x3f1eeafe
+        0x3f2e5c29
+        0x3f3e91c9
+        0x3f7b8f15
     .end array-data
 .end method
 

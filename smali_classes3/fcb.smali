@@ -422,20 +422,50 @@
 
     move-result-object v7
 
+    const-string v2, "pref_libs_fromdir_key_front"
+
+    const-string v1, "Front Camera Lib from Dir"
+
+    invoke-virtual {p0, v1, v2, v7, v7}, Lfcb;->CreateListeDirFront(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+
     const-string v2, "pref_libs_fromdir_key"
 
-    const-string v1, "Lib from Dir"
+    const-string v1, "Main Camera Lib from Dir"
 
     invoke-virtual {p0, v1, v2, v7, v7}, Lfcb;->CreateListeDirMain(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+
+    const-string v2, "pref_libs_fromdir_key_2"
+
+    const-string v1, "Camera Tele Lib from Dir"
+
+    invoke-virtual {p0, v1, v2, v7, v7}, Lfcb;->CreateListeDir2(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+
+    const-string v2, "pref_libs_fromdir_key_3"
+
+    const-string v1, "Camera Wide Lib from Dir"
+
+    invoke-virtual {p0, v1, v2, v7, v7}, Lfcb;->CreateListeDir3(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+
+    const-string v2, "pref_libs_fromdir_key_4"
+
+    const-string v1, "Camera ID4 Lib from Dir"
+
+    invoke-virtual {p0, v1, v2, v7, v7}, Lfcb;->CreateListeDir4(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+
+    const-string v2, "pref_libs_fromdir_key_5"
+
+    const-string v1, "Camera ID5 Lib from Dir"
+
+    invoke-virtual {p0, v1, v2, v7, v7}, Lfcb;->CreateListeDir5(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
 
     :cond_0
     return-void
 .end method
 
-.method public final CreateListeDirMain(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+.method public final CreateListeDir2(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
     .locals 9
 
-    const-string v1, "libs_key_group"
+    const-string v1, "camera2lib_group_key"
 
     invoke-virtual {p0, v1}, Lfcb;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -459,11 +489,302 @@
 
     invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
 
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setKey(Ljava/lang/String;)V
 
     const v1, 0x7f0e00cb
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setLayoutResource(I)V
+
+    const v1, 0x7f0806fb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setIcon(I)V
+
+    const-string v1, "%s"
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p3}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p4}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+
+    const v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValueIndex(I)V
+
+    invoke-virtual {v7, v0}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public final CreateListeDir3(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+    .locals 9
+
+    const-string v1, "camera3lib_group_key"
+
+    invoke-virtual {p0, v1}, Lfcb;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/preference/PreferenceScreen;
+
+    if-eqz v7, :cond_0
+
+    new-instance v0, Landroid/preference/ListPreference;
+
+    invoke-virtual {p0}, Lfcb;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/preference/PreferenceScreen;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setKey(Ljava/lang/String;)V
+
+    const v1, 0x7f0e00cb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setLayoutResource(I)V
+
+    const v1, 0x7f0806fb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setIcon(I)V
+
+    const-string v1, "%s"
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p3}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p4}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+
+    const v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValueIndex(I)V
+
+    invoke-virtual {v7, v0}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public final CreateListeDir4(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+    .locals 9
+
+    const-string v1, "camera4lib_group_key"
+
+    invoke-virtual {p0, v1}, Lfcb;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/preference/PreferenceScreen;
+
+    if-eqz v7, :cond_0
+
+    new-instance v0, Landroid/preference/ListPreference;
+
+    invoke-virtual {p0}, Lfcb;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/preference/PreferenceScreen;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setKey(Ljava/lang/String;)V
+
+    const v1, 0x7f0e00cb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setLayoutResource(I)V
+
+    const v1, 0x7f0806fb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setIcon(I)V
+
+    const-string v1, "%s"
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p3}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p4}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+
+    const v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValueIndex(I)V
+
+    invoke-virtual {v7, v0}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public final CreateListeDir5(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+    .locals 9
+
+    const-string v1, "camera5lib_group_key"
+
+    invoke-virtual {p0, v1}, Lfcb;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/preference/PreferenceScreen;
+
+    if-eqz v7, :cond_0
+
+    new-instance v0, Landroid/preference/ListPreference;
+
+    invoke-virtual {p0}, Lfcb;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/preference/PreferenceScreen;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setKey(Ljava/lang/String;)V
+
+    const v1, 0x7f0e00cb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setLayoutResource(I)V
+
+    const v1, 0x7f0806fb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setIcon(I)V
+
+    const-string v1, "%s"
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p3}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p4}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+
+    const v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValueIndex(I)V
+
+    invoke-virtual {v7, v0}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public final CreateListeDirFront(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+    .locals 9
+
+    const-string v1, "frontcameralib_group_key"
+
+    invoke-virtual {p0, v1}, Lfcb;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/preference/PreferenceScreen;
+
+    if-eqz v7, :cond_0
+
+    new-instance v0, Landroid/preference/ListPreference;
+
+    invoke-virtual {p0}, Lfcb;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/preference/PreferenceScreen;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setKey(Ljava/lang/String;)V
+
+    const v1, 0x7f0e00cb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setLayoutResource(I)V
+
+    const v1, 0x7f0806fb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setIcon(I)V
+
+    const-string v1, "%s"
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p3}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p4}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+
+    const v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValueIndex(I)V
+
+    invoke-virtual {v7, v0}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public final CreateListeDirMain(Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
+    .locals 9
+
+    const-string v1, "maincameralib_group_key"
+
+    invoke-virtual {p0, v1}, Lfcb;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/preference/PreferenceScreen;
+
+    if-eqz v7, :cond_0
+
+    new-instance v0, Landroid/preference/ListPreference;
+
+    invoke-virtual {p0}, Lfcb;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/preference/PreferenceScreen;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setKey(Ljava/lang/String;)V
+
+    const v1, 0x7f0e00cb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setLayoutResource(I)V
+
+    const v1, 0x7f0806fb
+
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setIcon(I)V
 
     const-string v1, "%s"
 

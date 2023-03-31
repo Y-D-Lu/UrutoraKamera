@@ -2234,7 +2234,7 @@
 
     move-result-object p1
 
-    const-wide/16 v0, 0x28
+    const-wide/16 v0, 0x0
 
     invoke-virtual {p1, v0, v1}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
@@ -2764,7 +2764,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0x1f4
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 
@@ -2784,7 +2784,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0x190
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 
@@ -2820,7 +2820,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0x12c
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 
@@ -2854,7 +2854,7 @@
 
     move-result-object v0
 
-    const/16 v2, 0x190
+    const/16 v2, 0x0
 
     invoke-virtual {v0, v2}, Ljky;->d(I)V
 
@@ -2864,7 +2864,7 @@
 
     move-result-object v0
 
-    const/16 v2, 0x258
+    const/16 v2, 0x0
 
     invoke-virtual {v0, v2}, Ljky;->d(I)V
 
@@ -2874,7 +2874,7 @@
 
     move-result-object v0
 
-    const/16 v2, 0x320
+    const/16 v2, 0x0
 
     invoke-virtual {v0, v2}, Ljky;->d(I)V
 
@@ -2898,7 +2898,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0xfa
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 
@@ -2918,7 +2918,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0x190
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 
@@ -2936,7 +2936,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0xfa
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 
@@ -2956,7 +2956,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0x12c
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 
@@ -3000,7 +3000,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0x190
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 
@@ -3020,7 +3020,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0x320
+    const/16 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljky;->d(I)V
 

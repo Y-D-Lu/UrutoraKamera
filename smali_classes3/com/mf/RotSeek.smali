@@ -68,7 +68,7 @@
 
     invoke-virtual {p0}, Lcom/mf/RotSeek;->setFocusString()V
 
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     iput v0, p0, Lcom/mf/RotSeek;->textsize:I
 
@@ -110,7 +110,7 @@
 
     invoke-virtual {p0}, Lcom/mf/RotSeek;->setFocusString()V
 
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     iput v0, p0, Lcom/mf/RotSeek;->textsize:I
 
@@ -150,7 +150,7 @@
 
     invoke-virtual {p0}, Lcom/mf/RotSeek;->setFocusString()V
 
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     iput v0, p0, Lcom/mf/RotSeek;->textsize:I
 
@@ -713,7 +713,7 @@
     mul-int/lit8 v6, v6, -0x1
 
     :cond_0
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     if-gt v6, v0, :cond_1
 
@@ -873,7 +873,7 @@
     return-void
 
     :cond_3
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     invoke-virtual {p0, v0}, Lcom/mf/RotSeek;->setVisibility(I)V
 

@@ -756,7 +756,7 @@
 
     iget-object v0, p0, Lor;->p:Landroid/animation/ValueAnimator;
 
-    const-wide/16 v1, 0x1f4
+    const-wide/16 v1, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

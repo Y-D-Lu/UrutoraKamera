@@ -298,5 +298,11 @@
 
     invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
 
+    const-string v0, "pref_ois_key"
+
+    const-string v4, "1"
+
+    invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
+
     return-void
 .end method

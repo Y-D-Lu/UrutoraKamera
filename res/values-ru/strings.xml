@@ -203,8 +203,8 @@
     <string name="hsl_catprocessing">Обработка</string>
     <string name="hsl_catdenoise">Шумоподавление</string>
     <string name="hsl_catlightandshadow">Свет и Тень</string>
-    <string name="hsl_catleveldenoise">Тонкие уровни шумоподавления</string>
-    <string name="hsl_catleveldenoise2">Тонкие уровни шумоподавления 2</string>
+    <string name="hsl_catleveldenoise">Тонкие уровни шумоподавления (Merge 1)</string>
+    <string name="hsl_catleveldenoise2">Тонкие уровни шумоподавления (Merge 3)</string>
     <string name="connect_internet_for_examples">Чтобы посмотреть примеры, требуется подключение к Интернету.</string>
     <string name="hsl_catlevelsabre">Тонкие уровни Sabre</string>
     <string name="hsl_enablepatcher">Включить патчер</string>
@@ -555,7 +555,7 @@
     <string name="mic_input_desc">Микрофон</string>
     <string name="hsl_onopmodemanual">Использовать значения вручную</string>
     <string name="mic_input_ext_bluetooth_connecting">Подключение по Bluetooth…</string>
-    <string name="hsl_opphoto">Фото Основные камеры</string>
+    <string name="hsl_opphoto">Фото</string>
     <string name="mic_input_ext_wired_acc_desc">Проводной микрофон</string>
     <string name="mic_input_ext_wired_desc">Проводной микрофон</string>
     <string name="mic_input_options_desc">Параметры микрофона</string>
@@ -821,6 +821,7 @@ Resampling - Выбор метода интерполяции итогового
     <string name="pref_countdown_indicator_title">Световой таймер</string>
     <string name="pref_depth_every_photo_summary">Приложения соцсетей смогут использовать сохраненные данные глубины резкости. Функция \"Отличный снимок\" будет отключена. Возможно, фотографии будут обрабатываться дольше.</string>
     <string name="pref_depth_every_photo_title">Изменение глубины резкости снимков в соцсетях</string>
+    <string name="pref_developer_settings">Настройки разработчика</string>
     <string name="pref_dnd_access_needed_title">Доступ к функции \"Не беспокоить\"</string>
     <string name="pref_exposure_control">Экспозиция</string>
     <string name="pref_exposure_control_summary">Изменить яркость и тени</string>
@@ -837,10 +838,16 @@ Resampling - Выбор метода интерполяции итогового
     <string name="pref_low_storage_mode_auto_disable_summary">Функция \"Сжатие файлов\" автоматически отключится, если в хранилище устройства будет более %d ГБ свободного пространства</string>
     <string name="pref_low_storage_mode_summary">Чтобы освободить место в хранилище устройства, функция \"Сжатие файлов\" изменяет некоторые настройки. В результате может снизиться качество фото и видео.</string>
     <string name="hsl_expotime">Отключить лимит времени экспозиции</string>
+    <string name="hsl_denoisevf">Шумоподавление видоискателя</string>
+    <string name="hsl_geometricfix">Исправление геометрии RAW</string>
     <string name="pref_raw_output_control_action_button">Открыть папку с файлами RAW</string>
     <string name="pref_raw_output_control_summary">Показывать выключатель режима RAW + JPEG в окне просмотра. Файлы в формате RAW (DNG) и идентификационные данные камеры сохраняются отдельно в папке устройства в Google Фото. Они занимают дополнительное место в хранилище.</string>
     <string name="pref_raw_output_control_title">Управление режимом RAW + JPEG</string>
     <string name="pref_storage_summary">%1$s, %2$s</string>
+    <string name="hsl_geometricfix_desc">Это позволит вам импортировать файлы RAW DNG в Snapseed и Lightroom для устройств Oneplus, но может увеличить шум на фотографиях.</string>
+    <string name="hsl_designvf">Дизайн видоискателя</string>
+    <string name="hsl_kepler">Включить Астро режим</string>
+    <string name="hsl_kepler_desc">После включения опции режим астрографии будет включен принудительно.</string>
     <string name="pref_video_hevc">Эффективный алгоритм сжатия</string>
     <string name="pref_video_stabilization">Стабилизация видео</string>
     <string name="pref_video_stabilization_summary">Уменьшает дрожание камеры и улучшает качество видео. При этом масштаб будет увеличен.</string>
@@ -1091,6 +1098,8 @@ Resampling - Выбор метода интерполяции итогового
     <string name="hsl_entrypresetcurve">Выбрать пресет кривой</string>
     <string name="hsl_curvepoint">Установить начальные точки</string>
     <string name="hsl_curveparametric">Параметрическая кривая</string>
+    <string name="pref_aemode_0">Авто</string>
+    <string name="pref_aemodef_0">Авто</string>
     <string name="hsl_hdrnet">Режим съёмки HDRNet</string>
     <string name="hsl_tf">Следящий фокус</string>
     <string name="hsl_mergemethod">Merge метод</string>
@@ -1105,4 +1114,19 @@ Resampling - Выбор метода интерполяции итогового
     <string name="hsl_portraitzoom_desc">По умолчанию используется зум 1.5х в портретном режиме</string>
     <string name="hsl_opexperimental">Экпериментально</string>
     <string name="hsl_opsystem">Система</string>
+    <string name="shortcut_opensett_long_label">Настройки мода</string>
+    <string name="shortcut_opensett_short_label">Настройки</string>
+    <string name="hsl_noisemanualiso">Ручное значение ISO</string>
+    <string name="hsl_noisecoefiso">Коэф-т шумоподавления по ISO</string>
+    <string name="hsl_noisesystem">Системная модель</string>
+    <string name="hsl_noisedynamic">Динамический ISO коэф-т</string>
+    <string name="hsl_videodenoise">Шумоподавление</string>
+    <string name="hsl_edgemode">Резкость по краям</string>
+    <string name="hsl_info_noisem">Используйте динамический ISO коэф-т в диапазоне 0.1-1.0 для наилучшей работы модели шума.</string>
+    <string name="hsl_info_uxmode">UX Mode изменяет логику обработки в активном режиме на выбранный. Это может сказаться на итоговом качестве, задействованных настройках в патчере, и увеличить время обработки снимка.</string>
+    <string name="hsl_aperture">Апертура (Самсунг)</string>
+    <string name="hsl_aperture_s">Переключение апертуры с 1.5f на 2.4f</string>
+    <string name="hsl_livehdr">Включить LiveHDR</string>
+    <string name="hsl_info_samsung">Изменяемая апертура была на флагманах Samsung прошлых лет: Galaxy S10, S9 и др.</string>
+    <string name="hsl_gmatting">Улучшенные грани (Портрет)</string>
 </resources>

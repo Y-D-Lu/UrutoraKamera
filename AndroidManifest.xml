@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="org.codeaurora.snapcam" platformBuildVersionCode="32" platformBuildVersionName="13">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="org.codeaurora.snapcam" platformBuildVersionCode="31" platformBuildVersionName="12">
     <original-package android:name="com.android.camera2"/>
     <uses-feature android:name="android.hardware.camera.level.full" android:required="true"/>
     <uses-feature android:name="android.hardware.location" android:required="false"/>
@@ -205,7 +205,7 @@
         </service>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.apps.camera.brella.mediastore.MediaListeningService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <meta-data android:name="com.android.device.restriction" android:value="           brand=google, deviceName=blueline;           brand=google, deviceName=crosshatch;           brand=google, deviceName=bonito;           brand=google, deviceName=sargo;           brand=google, deviceName=coral;           brand=google, deviceName=flame;           brand=google, deviceName=sunfish;           brand=google, deviceName=bramble;           brand=google, deviceName=redfin;           brand=google, deviceName=barbet;"/>
-        <provider android:authorities="com.google.android.apps.camera.specialtypes.SpecialTypesProviderR13Snap" android:exported="true" android:name="com.google.android.apps.camera.contentprovider.CameraContentProvider" android:syncable="false"/>
+        <provider android:authorities="com.google.android.apps.camera.specialtypes.SpecialTypesProviderSN" android:exported="true" android:name="com.google.android.apps.camera.contentprovider.CameraContentProvider" android:syncable="false"/>
         <provider android:authorities="org.codeaurora.snapcam" android:enabled="true" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.google.android.apps.camera.legacy.app.settings.CameraSearchIndexablesProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
             <intent-filter>
                 <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>

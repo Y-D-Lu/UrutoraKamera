@@ -202,7 +202,7 @@
 
     iput-object v1, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->e:Landroid/animation/ValueAnimator;
 
-    const-wide/16 v2, 0x3e8
+    const-wide/16 v2, 0x0
 
     invoke-virtual {v1, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

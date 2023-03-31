@@ -20,6 +20,9 @@
         <item>Pixel 5a (barbet)</item>
         <item>Pixel 6 (oriole)</item>
         <item>Pixel 6 Pro (raven)</item>
+        <item>Pixel 6a (bluejay)</item>
+        <item>Pixel 7 (cloudripper)</item>
+        <item>Pixel 7 Pro (pipit)</item>
     </string-array>
     <string-array name="model_entryvalues">
         <item>3</item>
@@ -38,6 +41,9 @@
         <item>13</item>
         <item>14</item>
         <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
     </string-array>
     <string-array name="pref_c2aa_entries">
         <item>@string/hsl_auto</item>
@@ -120,7 +126,7 @@
         <item>Realme 5 pro</item>
         <item>HMX Mi Note 10 NEW</item>
         <item>IMX582 Mi9T</item>
-        <item>Custom color transmission</item>
+        <item>@string/hsl_manualcolor</item>
     </string-array>
     <string-array name="pref_color_transform_entryvalues">
         <item>0</item>
@@ -395,7 +401,7 @@
         <item>3</item>
     </string-array>
     <string-array name="pref_awb_entries">
-        <item>Manual Awb</item>
+        <item>@string/hsl_manualawb</item>
         <item>0.Google Pixel 2</item>
         <item>1.Google Pixel 2 Front</item>
         <item>2.Google Pixel 3</item>
@@ -474,6 +480,7 @@
         <item>75.S5K3L6 (Mi9T Ultrawide)</item>
         <item>76.OV8856 (X3Pro Ultrawide)</item>
         <item>77.IMX582 (X3Pro Main)</item>
+        <item>78.PIXEL 3 MOD 2</item>
     </string-array>
     <string-array name="pref_qjpg_entries">
         <item>50%</item>
@@ -621,6 +628,7 @@
         <item>75</item>
         <item>76</item>
         <item>77</item>
+        <item>78</item>
     </string-array>
     <string-array name="pref_grgb_entries">
         <item>Nexus default(1.0)</item>
@@ -629,6 +637,7 @@
         <item>Google Pixel 4</item>
         <item>Google Pixel 4 Front</item>
         <item>Google Pixel 4 Tele</item>
+        <item>Pixel 3 Mod 2</item>
     </string-array>
     <string-array name="trusted_certificates">
         <item>4BA713DFECE93D47572DC5E845A7A82C4A891F2F</item>
@@ -641,6 +650,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
     <string-array name="exp_entries">
         <item>@string/hsl_auto</item>
@@ -793,7 +803,7 @@
         <item>-3,2</item>
     </string-array>
     <string-array name="pref_noise_model_entries">
-        <item>@string/hsl_default</item>
+        <item>@string/hsl_noisesystem</item>
         <item>1. IMX363 by CSTARK</item>
         <item>2. S5K3T2 by SAVITAR</item>
         <item>3. S5KHMX1 by SAVITAR</item>
@@ -911,15 +921,7 @@
         <item>115. JN1 (EdgeX30)</item>
         <item>116. OV50A (EdgeX30)</item>
         <item>117. OV60A (EdgeX30)</item>
-        <item>118. IMX586 (Mi9 MAIN)</item>
-        <item>119. S5KJN1 (RN11 MAIN)</item>
-        <item>120. IMX582 (Mi9T MAIN)</item>
-        <item>121. IMX350 (UW MN10 Burial)</item>
-        <item>122. OV08A10 (3.7x MN10 Burial)</item>
-        <item>123. S5K2L7 (TELE 2X MN10 Burial)</item>
-        <item>124. S5KHMX (Main MN10 Burial)</item>
-        <item>125. HMX (MN10 Hasli)</item>
-        <item>126. MANUAL NOISE MODELER</item>
+        <item>@string/hsl_manualnoise</item>
     </string-array>
     <string-array name="pref_noise_model_entryvalues">
         <item>0</item>
@@ -1041,14 +1043,6 @@
         <item>116</item>
         <item>117</item>
         <item>118</item>
-        <item>119</item>
-        <item>120</item>
-        <item>121</item>
-        <item>122</item>
-        <item>123</item>
-        <item>124</item>
-        <item>125</item>
-        <item>126</item>
     </string-array>
     <string-array name="pref_libs_entries">
         <item>Custom Lib from Dir</item>
@@ -1820,7 +1814,8 @@
         <item>15.0</item>
         <item>16.0</item>
         <item>17.0</item>
-        <item>18.0 (default)</item>
+        <item>17.875</item>
+        <item>18.0</item>
         <item>19.0</item>
         <item>20.0</item>
         <item>21.0</item>
@@ -1869,6 +1864,7 @@
         <item>092EA872</item>
         <item>0930A872</item>
         <item>0931A872</item>
+        <item>E931A872</item>
         <item>0932A872</item>
         <item>0933A872</item>
         <item>0934A872</item>
@@ -5335,7 +5331,7 @@
         <item>-4</item>
         <item>-3</item>
         <item>-2</item>
-        <item>-1</item>
+        <item>-1 (Default)</item>
         <item>0</item>
         <item>1</item>
         <item>@string/hsl_offasinlib</item>
@@ -5406,7 +5402,7 @@
         <item>0.25</item>
         <item>0.50</item>
         <item>0.75</item>
-        <item>1.00</item>
+        <item>1.00 (Default)</item>
         <item>1.25</item>
         <item>1.50</item>
         <item>1.75</item>
@@ -7889,7 +7885,7 @@
     </string-array>
     <string-array name="lib_hex_resampling_entries">
         <item>(Default)</item>
-        <item>Off</item>
+        <item>Off (Disable upscale)</item>
         <item>1 (Lanczos)</item>
         <item>2 (Raisr2020)</item>
         <item>@string/hsl_offasinlib</item>
@@ -8236,7 +8232,7 @@
         <item>0.625</item>
         <item>0.750</item>
         <item>0.875</item>
-        <item>1.000</item>
+        <item>1.000 (Default)</item>
         <item>1.125</item>
         <item>1.250</item>
         <item>1.375</item>
@@ -9219,7 +9215,7 @@
         <item>-0.25</item>
         <item>-0.30</item>
         <item>-0.35</item>
-        <item>-0.40</item>
+        <item>-0.40 (Default CG1)</item>
         <item>-0.45</item>
         <item>-0.50</item>
         <item>-0.51</item>
@@ -10385,39 +10381,67 @@
         <item>0</item>
     </string-array>
     <string-array name="lib_hex_hdroverlight_entries">
-        <item>0.00</item>
+        <item>0</item>
         <item>0.125</item>
         <item>0.25</item>
+        <item>0.375</item>
         <item>0.50</item>
         <item>0.625</item>
         <item>0.75</item>
         <item>0.875</item>
-        <item>1.00 (Default)</item>
+        <item>1.0 (Default)</item>
         <item>1.125</item>
         <item>1.25</item>
-        <item>1.50</item>
+        <item>1.375</item>
+        <item>1.5</item>
         <item>1.625</item>
         <item>1.75</item>
         <item>1.875</item>
-        <item>2.00</item>
-        <item>2.125</item>
+        <item>2.0</item>
         <item>2.25</item>
         <item>2.50</item>
-        <item>2.625</item>
-        <item>2.875</item>
+        <item>2.75</item>
         <item>3.00</item>
-        <item>3.125</item>
         <item>3.25</item>
         <item>3.50</item>
-        <item>3.625</item>
-        <item>3.875</item>
-        <item>4.0</item>
+        <item>3.75</item>
+        <item>4.00</item>
+        <item>4.25</item>
+        <item>4.50</item>
+        <item>4.75</item>
+        <item>5.00</item>
+        <item>5.25</item>
+        <item>5.50</item>
+        <item>5.75</item>
+        <item>6.00</item>
+        <item>6.25</item>
+        <item>6.50</item>
+        <item>6.75</item>
+        <item>7.00</item>
+        <item>7.25</item>
+        <item>7.50</item>
+        <item>7.75</item>
+        <item>8.00</item>
+        <item>9.00</item>
+        <item>10.0</item>
+        <item>12.0</item>
+        <item>15.0</item>
+        <item>16.0</item>
+        <item>18.0</item>
+        <item>20.0</item>
+        <item>22.0</item>
+        <item>24.0</item>
+        <item>25.0</item>
+        <item>28.0</item>
+        <item>30.0</item>
+        <item>31.0</item>
         <item>@string/hsl_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdroverlight_entryvalues">
         <item>EC03271E</item>
         <item>0C10281E</item>
         <item>0C102A1E</item>
+        <item>0C102B1E</item>
         <item>0C102C1E</item>
         <item>0C902C1E</item>
         <item>0C102D1E</item>
@@ -10425,23 +10449,49 @@
         <item>0C102E1E</item>
         <item>0C502E1E</item>
         <item>0C902E1E</item>
+        <item>0CD02E1E</item>
         <item>0C102F1E</item>
         <item>0C502F1E</item>
         <item>0C902F1E</item>
         <item>0CD02F1E</item>
         <item>0C10201E</item>
-        <item>0C30201E</item>
         <item>0C50201E</item>
         <item>0C90201E</item>
-        <item>0CB0201E</item>
-        <item>0CF0201E</item>
+        <item>0CD0201E</item>
         <item>0C10211E</item>
-        <item>0C30211E</item>
         <item>0C50211E</item>
         <item>0C90211E</item>
-        <item>0CB0211E</item>
-        <item>0CF0211E</item>
+        <item>0CD0211E</item>
         <item>0C10221E</item>
+        <item>0C30221E</item>
+        <item>0C50221E</item>
+        <item>0C70221E</item>
+        <item>0C90221E</item>
+        <item>0CB0221E</item>
+        <item>0CD0221E</item>
+        <item>0CF0221E</item>
+        <item>0C10231E</item>
+        <item>0C30231E</item>
+        <item>0C50231E</item>
+        <item>0C70231E</item>
+        <item>0C90231E</item>
+        <item>0CB0231E</item>
+        <item>0CD0231E</item>
+        <item>0CF0231E</item>
+        <item>0C10241E</item>
+        <item>0C50241E</item>
+        <item>0C90241E</item>
+        <item>0C10251E</item>
+        <item>0CD0251E</item>
+        <item>0C10261E</item>
+        <item>0C50261E</item>
+        <item>0C90261E</item>
+        <item>0CD0261E</item>
+        <item>0C10271E</item>
+        <item>0C30271E</item>
+        <item>0C90271E</item>
+        <item>0CD0271E</item>
+        <item>0CF0271E</item>
         <item>0</item>
     </string-array>
     <string-array name="lib_hex_softsharpb_entryvalues">
@@ -10816,33 +10866,60 @@
         <item>0</item>
     </string-array>
     <string-array name="lib_hex_lutnoisefix1_entries">
-        <item>0.00</item>
+        <item>0</item>
         <item>0.125</item>
         <item>0.25</item>
+        <item>0.375</item>
         <item>0.50</item>
         <item>0.625</item>
         <item>0.75</item>
         <item>0.875</item>
-        <item>1.00</item>
+        <item>1.0</item>
         <item>1.125</item>
         <item>1.25</item>
-        <item>1.50</item>
+        <item>1.375</item>
+        <item>1.5</item>
         <item>1.625</item>
         <item>1.75</item>
         <item>1.875</item>
-        <item>2.00</item>
-        <item>2.125</item>
+        <item>2.0</item>
         <item>2.25</item>
         <item>2.50</item>
-        <item>2.625</item>
-        <item>2.875</item>
+        <item>2.75</item>
         <item>3.00</item>
-        <item>3.125</item>
         <item>3.25</item>
         <item>3.50</item>
-        <item>3.625</item>
-        <item>3.875</item>
-        <item>4.0 (ON)</item>
+        <item>3.75</item>
+        <item>4.00 (Activate)</item>
+        <item>4.25</item>
+        <item>4.50</item>
+        <item>4.75</item>
+        <item>5.00</item>
+        <item>5.25</item>
+        <item>5.50</item>
+        <item>5.75</item>
+        <item>6.00</item>
+        <item>6.25</item>
+        <item>6.50</item>
+        <item>6.75</item>
+        <item>7.00</item>
+        <item>7.25</item>
+        <item>7.50</item>
+        <item>7.75</item>
+        <item>8.00</item>
+        <item>9.00</item>
+        <item>10.0</item>
+        <item>12.0</item>
+        <item>15.0</item>
+        <item>16.0</item>
+        <item>18.0</item>
+        <item>20.0</item>
+        <item>22.0</item>
+        <item>24.0</item>
+        <item>25.0</item>
+        <item>28.0</item>
+        <item>30.0</item>
+        <item>31.0</item>
         <item>@string/hsl_offasinlib</item>
     </string-array>
     <string-array name="pref_bitrate_entries">
@@ -11124,9 +11201,12 @@
         <item>0000804315000000001D0000003F0A0F0D0000C04215000000001D0000003F0A0F0D0000804215000000001D0000003F0A0F0D0000A04015000000001D0000803F0A0A0D000000001D00000000000000000000000000000000000000000A0F0D00002041150000803F1D0000803F0A0F0D00002041150000803F1D0000803F0A0F0D00002041150000803F1D0000803F0A0F0D00002041150000803F1D0000803F0A0A0D000000001DAF56A93E000000000000000000000000000000000A0F0D0000F04015000000001D0000803F0A0F0D0000000015000000001D0000803F0A0F0D0000F04015000000001D0000803F0A0F0D0000F04015000000001D0000803F0A0A0D000000001D9A99193F</item>
         <item>3333733F15CDCC4C3E1D1093243F0A0F0D0000403F15CDCCCC3D1DD08A203F0A0F0D0000003F15CDCCCC3D1D54EEF13E0A0F0DCDCC4C3F15CDCCCC3D1D93D7B93E0A0A0D0000803F1DAF3C9F3D000000000000000000000000000000000A0F0DCDCCAC3F159A99193E1DAE50223F0A0F0D3333D33F15CDCCCC3D1D95806D3E0A0F0D9A99993F150AD7A33D1D09997A3E0A0F0D3333D33F158FC2F53D1D0E06743E0A0A0D3333F33F1D68CEB13E000000000000000000000000000000000A0F0D0000803F159A99193E1D14FA003F0A0F0D3333B33F15CDCCCC3D1D49CCBD3E0A0F0D9A99B93F15CDCCCC3D1D37E0A43E0A0F0D6666C63F15295C0F3E1D7B0A023F0A0A0D0000A03F1DD1FF143F</item>
         <item>3333733F15CDCC4C3E1D1093243F0A0F0DCDCC4C3F15CDCCCC3D1DD08A203F0A0F0D6666E63E15CDCCCC3D1D54EEF13E0A0F0DCDCC4C3F15CDCCCC3D1D93D7B93E0A0A0D6666663F1DAF3C9F3D000000000000000000000000000000000A0F0D0000803F159A99193E1DAE50223F0A0F0D0000A03F15CDCCCC3D1D95806D3E0A0F0D9A99593F150AD7A33D1D09997A3E0A0F0D0000A03F158FC2F53D1D0E06743E0A0A0D6666A63F1D68CEB13E000000000000000000000000000000000A0F0D0000803F159A99193E1D14FA003F0A0F0D9A99993F15CDCCCC3D1D49CCBD3E0A0F0DCDCCAC3F15CDCCCC3D1D37E0A43E0A0F0D9A99993F15295C0F3E1D7B0A023F0A0A0D0000803F1DD1FF143F</item>
+        <item>0000A04015CDCC4C3E1D1093243F0A0F0D9A99D93F15CDCCCC3D1DD08A203F0A0F0D3333B33F15CDCCCC3D1D54EEF13E0A0F0D3333333F15CDCCCC3D1D93D7B93E0A0A0D9A99E93E1DAF3C9F3D000000000000000000000000000000000A0F0D9A992940159A99193E1DAE50223F0A0F0D6666E63F15CDCCCC3D1D95806D3E0A0F0DCDCCAC3F150AD7A33D1D09997A3E0A0F0DCDCC4C3F158FC2F53D1D0E06743E0A0A0D9A99193F1D68CEB13E000000000000000000000000000000000A0F0DCDCC0C3F159A99193E1D14FA003F0A0F0D0000003F15CDCCCC3D1D49CCBD3E0A0F0D9A99E93E15CDCCCC3D1D37E0A43E0A0F0DCDCC4C3E15295C0F3E1D7B0A023F0A0A0DCDCC4C3E1DD1FF143F</item>
         <item>0000004015000000001D0000003F0A0F0D0000000015000000001D0000803F0A0F0D0000A04015000000001D0000803F0A0F0D0000A04015000000001D0000803F0A0A0D000000001DCDCC4C3D000000000000000000000000000000000A0F0D6666A63F15000000001D0000803F0A0F0D9A99993F15000000001D0000803F0A0F0D9A99993F15000000001D0000803F0A0F0DCDCC8C3F15000000001D0000803F0A0A0D0000803F1DAF56A93E000000000000000000000000000000000A0F0D6666A63F15000000001D0000803F0A0F0DCDCC8C3F15000000001D0000803F0A0F0D0000803F15000000001D0000803F0A0F0D3333333F15000000001D000000000A0A0DCDCCDC3D1D9A99193F</item>
         <item>9A99993F150000C0411D1093243F0A0F0D000080BF15CDCCCC3D1DD08A203F0A0F0D000080BF15CDCCCC3D1D54EEF13E0A0F0D000080BF15CDCCCC3D1D93D7B93E0A0A0D000080BF1DAF3C9F3D000000000000000000000000000000000A0F0D9A99993F150000C0411DAE50223F0A0F0D000080BF15CDCCCC3D1D95806D3E0A0F0D000080BF150AD7A33D1D09997A3E0A0F0D000080BF158FC2F53D1D0E06743E0A0A0D000080BF1D68CEB13E000000000000000000000000000000000A0F0D9A99993F150000C0411D14FA003F0A0F0D000080BF15CDCCCC3D1D49CCBD3E0A0F0D000080BF15CDCCCC3D1D37E0A43E0A0F0D000080BF15295C0F3E1D7B0A023F0A0A0D000080BF1DD1FF143F</item>
         <item>9A99993F153333B33F1D1093243F0A0F0D0000000015CDCCCC3D1DD08A203F0A0F0D0000000015CDCCCC3D1D54EEF13E0A0F0D0000000015CDCCCC3D1D93D7B93E0A0A0D000000001DAF3C9F3D000000000000000000000000000000000A0F0D9A99993F15000000001DAE50223F0A0F0D0000000015CDCCCC3D1D95806D3E0A0F0D000080BF15000000001D09997A3E0A0F0D00000000158FC2F53D1D0E06743E0A0A0D000000001D68CEB13E000000000000000000000000000000000A0F0D9A99993F15000000001D14FA003F0A0F0D0000000015CDCCCC3D1D49CCBD3E0A0F0D0000004015CDCCCC3D1D37E0A43E0A0F0D0000000015295C0F3E1D7B0A023F0A0A0D000000001DD1FF143F</item>
+        <item>00001841153333B33F1D1093243F0A0F0D0000000015CDCCCC3D1DD08A203F0A0F0D0000000015CDCCCC3D1D54EEF13E0A0F0D0000000015CDCCCC3D1D93D7B93E0A0A0D000000001DAF3C9F3D000000000000000000000000000000000A0F0D9A99993F15000000001DAE50223F0A0F0D0000000015CDCCCC3D1D95806D3E0A0F0D000080BF15000000001D09997A3E0A0F0D00000000158FC2F53D1D0E06743E0A0A0D000000001D68CEB13E000000000000000000000000000000000A0F0D9A99993F15000000001D14FA003F0A0F0D0000000015CDCCCC3D1D49CCBD3E0A0F0D0000004015CDCCCC3D1D37E0A43E0A0F0D0000000015295C0F3E1D7B0A023F0A0A0D000000001DD1FF143F</item>
+        <item>00009040153333B33F1D1093243F0A0F0D0000803E15CDCCCC3D1DD08A203F0A0F0D0000000015CDCCCC3D1D54EEF13E0A0F0D0000000015CDCCCC3D1D93D7B93E0A0A0D000000001DAF3C9F3D000000000000000000000000000000000A0F0D9A99993F15000000001DAE50223F0A0F0DCDCCCC3E15CDCCCC3D1D95806D3E0A0F0D0000000015000000001D09997A3E0A0F0D00000000158FC2F53D1D0E06743E0A0A0D000000001D68CEB13E000000000000000000000000000000000A0F0D9A99993F15000000001D14FA003F0A0F0D3333B33E15CDCCCC3D1D49CCBD3E0A0F0D0000000015CDCCCC3D1D37E0A43E0A0F0D0000000015295C0F3E1D7B0A023F0A0A0D000000001DD1FF143F</item>
         <item>0</item>
     </string-array>
     <string-array name="lib_hex_levelluma_preset_entries">
@@ -11136,9 +11216,12 @@
         <item>CSeUs</item>
         <item>Arcide(0304)</item>
         <item>Arcide(0313)</item>
+        <item>Arcide(v6.2)</item>
         <item>HSL</item>
         <item>HSL R2</item>
         <item>HSL R3</item>
+        <item>HSL R4</item>
+        <item>HSL R5</item>
         <item>@string/hsl_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_initparams_entryvalues">
@@ -11217,6 +11300,7 @@
         <item>Burial</item>
         <item>Hasli</item>
         <item>Arcide</item>
+        <item>GCAM 8.6</item>
     </string-array>
     <string-array name="pref_tonecurve_preset_entryvalues">
         <item>0</item>
@@ -11276,6 +11360,7 @@
         <item>54</item>
         <item>55</item>
         <item>56</item>
+        <item>57</item>
     </string-array>
     <string-array name="pref_gammacurve_preset_entries">
         <item>Google Stock</item>
@@ -14425,7 +14510,7 @@
         <item>1000</item>
     </string-array>
     <string-array name="gcam_lens_logic_entries">
-        <item>@string/gcam_lens_logic_auto</item>
+        <item>@string/hsl_auto</item>
         <item>@string/gcam_lens_logic_0</item>
         <item>@string/gcam_lens_logic_1</item>
         <item>@string/gcam_lens_logic_2</item>
@@ -14455,7 +14540,7 @@
         <item>12</item>
     </string-array>
     <string-array name="design_entries">
-        <item>AUTO</item>
+        <item>@string/hsl_auto</item>
         <item>Ordinary</item>
         <item>Pixel 4a</item>
         <item>Pixel 4a 5g</item>
@@ -14755,5 +14840,165 @@
         <item>7D520639</item>
         <item>7F520639</item>
         <item>0</item>
+    </string-array>
+    <string-array name="pref_noise_iso_entries">
+        <item>@string/hsl_default</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>@string/hsl_noisedynamic</item>
+        <item>@string/hsl_noisemanualiso</item>
+    </string-array>
+    <string-array name="pref_noise_iso_entryvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="lib_hex_hardux_entries">
+        <item>Default</item>
+        <item>ZSL</item>
+        <item>HDR++</item>
+        <item>Portrait</item>
+        <item>NightSight</item>
+        <item>@string/hsl_offasinlib</item>
+    </string-array>
+    <string-array name="lib_hex_hardux_entryvalues">
+        <item>420000B4</item>
+        <item>24008052</item>
+        <item>44008052</item>
+        <item>64008052</item>
+        <item>84008052</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="lib_hex_nightsky_entries">
+        <item>0</item>
+        <item>0.125</item>
+        <item>0.25</item>
+        <item>0.375</item>
+        <item>0.50 (Default)</item>
+        <item>0.625</item>
+        <item>0.75</item>
+        <item>0.875</item>
+        <item>1.0</item>
+        <item>1.125</item>
+        <item>1.25</item>
+        <item>1.375</item>
+        <item>1.5</item>
+        <item>1.625</item>
+        <item>1.75</item>
+        <item>1.875</item>
+        <item>2.0</item>
+        <item>2.25</item>
+        <item>2.50</item>
+        <item>2.75</item>
+        <item>3.00</item>
+        <item>3.25</item>
+        <item>3.50</item>
+        <item>3.75</item>
+        <item>4.00</item>
+        <item>4.25</item>
+        <item>4.50</item>
+        <item>4.75</item>
+        <item>5.00</item>
+        <item>5.25</item>
+        <item>5.50</item>
+        <item>5.75</item>
+        <item>6.00</item>
+        <item>6.25</item>
+        <item>6.50</item>
+        <item>6.75</item>
+        <item>7.00</item>
+        <item>7.25</item>
+        <item>7.50</item>
+        <item>7.75</item>
+        <item>8.00</item>
+        <item>9.00</item>
+        <item>10.0</item>
+        <item>@string/hsl_offasinlib</item>
+    </string-array>
+    <string-array name="lib_hex_nightsky_entryvalues">
+        <item>E103271E</item>
+        <item>0110281E</item>
+        <item>01102A1E</item>
+        <item>01102B1E</item>
+        <item>01102C1E</item>
+        <item>01902C1E</item>
+        <item>01102D1E</item>
+        <item>01902D1E</item>
+        <item>01102E1E</item>
+        <item>01502E1E</item>
+        <item>01902E1E</item>
+        <item>01D02E1E</item>
+        <item>01102F1E</item>
+        <item>01502F1E</item>
+        <item>01902F1E</item>
+        <item>01D02F1E</item>
+        <item>0110201E</item>
+        <item>0150201E</item>
+        <item>0190201E</item>
+        <item>01D0201E</item>
+        <item>0110211E</item>
+        <item>0150211E</item>
+        <item>0190211E</item>
+        <item>01D0211E</item>
+        <item>0110221E</item>
+        <item>0130221E</item>
+        <item>0150221E</item>
+        <item>0170221E</item>
+        <item>0190221E</item>
+        <item>01B0221E</item>
+        <item>01D0221E</item>
+        <item>01F0221E</item>
+        <item>0110231E</item>
+        <item>0130231E</item>
+        <item>0150231E</item>
+        <item>0170231E</item>
+        <item>0190231E</item>
+        <item>01B0231E</item>
+        <item>01D0231E</item>
+        <item>01F0231E</item>
+        <item>0110241E</item>
+        <item>0150241E</item>
+        <item>0190241E</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="pref_aeautomax_entries">
+        <item>Time 1.0 s</item>
+        <item>Time 1/2 s</item>
+        <item>Time 1/3 s</item>
+        <item>Time 1/4 s</item>
+        <item>Time 1/5 s</item>
+        <item>Time 1/6 s</item>
+        <item>Time 1/7 s</item>
+        <item>Time 1/8 s</item>
+        <item>Time 1/9 s</item>
+        <item>Time 1/10 s</item>
+        <item>Time 1/12 s</item>
+        <item>Time 1/15 s (Default)</item>
+        <item>Time 1/17 s</item>
+        <item>Time 1/20 s</item>
+        <item>Time 1/33 s</item>
+        <item>Time 1/50 s</item>
+    </string-array>
+    <string-array name="pref_aeautomax_entryvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
     </string-array>
 </resources>

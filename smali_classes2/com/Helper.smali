@@ -13,6 +13,10 @@
 
 .field public static GeometricCalibration:I
 
+.field public static GetISO:I
+
+.field public static GetISOsystem:I
+
 .field public static IsMode:I
 
 .field public static NeedRestart:I
@@ -21,15 +25,11 @@
 
 .field public static getSunlightFix:I
 
+.field public static getVFDenoise:I
+
 .field public static mv_h:I
 
 .field public static mv_w:I
-
-.field public static s4k60FPS:I
-
-.field public static s60fps_front:I
-
-.field public static s60fps_main:I
 
 .field public static sAppsPhotosGallery:Ljava/lang/String;
 
@@ -40,8 +40,6 @@
 .field public static sC2APIl:I
 
 .field public static sCam:I
-
-.field public static sCam2ApiModeVFNR:I
 
 .field public static sColorTransform:I
 
@@ -56,8 +54,6 @@
 .field public static sHdr_process:I
 
 .field public static sImg:I
-
-.field public static sJPGQuality:I
 
 .field public static sMode:Ljrl;
 
@@ -100,8 +96,6 @@
 
     invoke-static {}, Lcom/Helper;->setKeyOnStart()V
 
-    invoke-static {}, Lcom/Helper;->getJPGQuality()V
-
     invoke-static {}, Lcom/Helper;->c2a()V
 
     invoke-static {}, Lcom/Helper;->c2aa()V
@@ -111,6 +105,8 @@
     invoke-static {}, Lcom/Helper;->setColorTransform()V
 
     invoke-static {}, Lcom/Helper;->c2aaa()V
+
+    invoke-static {}, Lcom/Helper;->Exynos()V
 
     new-instance v0, Lcom/NoiseModels;
 
@@ -132,7 +128,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
@@ -170,20 +166,39 @@
 .end method
 
 .method public static Exynos()Z
-    .locals 3
+    .locals 5
 
-    sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+    sget-object v1, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     move-result-object v1
 
-    const-string v0, "SAMSUNG"
+    const-string v0, ".*EXYNOS.*"
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/regex/Pattern;->matches(Ljava/lang/String;Ljava/lang/CharSequence;)Z
 
     move-result v1
 
+    if-nez v1, :cond_0
+
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "VIVO 1901"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    :cond_0
     return v1
 .end method
 
@@ -623,6 +638,84 @@
     return-void
 .end method
 
+.method public static LogWriteToFile(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 6
+
+    new-instance v2, Ljava/io/File;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "/LMC8.4/files/"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
+
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v3, Ljava/io/File;
+
+    invoke-direct {v3, v2, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    :try_start_0
+    new-instance v1, Ljava/io/OutputStreamWriter;
+
+    new-instance v2, Ljava/io/FileOutputStream;
+
+    invoke-direct {v2, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v1, v2}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+
+    invoke-virtual {v1, p1}, Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+.end method
+
 .method public static MenuValue(Ljava/lang/String;)I
     .locals 3
 
@@ -793,6 +886,53 @@
     goto :goto_0
 .end method
 
+.method public static MnFix()Z
+    .locals 2
+
+    sget-object v0, Landroid/os/Build$VERSION;->SDK:Ljava/lang/String;
+
+    const-string/jumbo v1, "27"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Landroid/os/Build$VERSION;->SDK:Ljava/lang/String;
+
+    const-string/jumbo v1, "28"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Landroid/os/Build$VERSION;->SDK:Ljava/lang/String;
+
+    const-string/jumbo v1, "29"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Landroid/os/Build$VERSION;->SDK:Ljava/lang/String;
+
+    const-string/jumbo v1, "30"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    :cond_0
+    return v0
+.end method
+
 .method public static SelectTint()I
     .locals 1
 
@@ -856,7 +996,7 @@
 .end method
 
 .method public static SetDevice(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -961,12 +1101,12 @@
     goto :goto_0
 
     :pswitch_12
-    sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
-
-    goto :goto_0
+    const-string v0, "pipit"
 
     :goto_0
     return-object v0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -1056,8 +1196,6 @@
         :pswitch_4
     .end packed-switch
 
-    nop
-
     :goto_0
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1069,7 +1207,7 @@
 .end method
 
 .method public static SetLensValueBack(Ljava/lang/String;)Ljava/lang/String;
-    .locals 5
+    .locals 4
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1128,7 +1266,7 @@
 .end method
 
 .method public static SetLensValueOp(Ljava/lang/String;)Ljava/lang/String;
-    .locals 5
+    .locals 4
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1317,20 +1455,6 @@
     invoke-virtual {v0, v2, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;I)V
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
-
-    return-void
-.end method
-
-.method public static UpdateParam()V
-    .locals 0
-
-    invoke-static {}, Lcom/Helper;->setKeyOnStart()V
-
-    invoke-static {}, Lcom/Helper;->getJPGQuality()V
-
-    invoke-static {}, Lcom/Helper;->setMVresolution()V
-
-    invoke-static {}, Lcom/Helper;->setColorTransform()V
 
     return-void
 .end method
@@ -1733,6 +1857,100 @@
     return-object v0
 .end method
 
+.method public static getAwbLog([F[FI)V
+    .locals 11
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "\n\n"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v6, "\n\nArray length= "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v6, "\n\nR_G=\n"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, p2, :cond_0
+
+    aget v4, p0, v3
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v3, v3, 0x1
+
+    if-ge v3, p2, :cond_0
+
+    const-string v6, "\n"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_0
+
+    :cond_0
+    const-string v6, "\n\n\nArray length= "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v6, "\n\nB_G=\n"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v3, 0x0
+
+    :goto_1
+    if-ge v3, p2, :cond_1
+
+    aget v4, p1, v3
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v3, v3, 0x1
+
+    if-ge v3, p2, :cond_1
+
+    const-string v6, "\n"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :cond_1
+    const-string v6, "\n\nGB/GR= "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v2, Lcom/SDE/Awb;->awbArr_GR_GB:F
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v0, "AWB"
+
+    invoke-static {v0}, Lcom/SDE/LensValue;->SetLensValueLog(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v5}, Lcom/Helper;->LogWriteToFile(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
 .method public static getBlackLevel(Llvp;)[F
     .locals 5
 
@@ -1948,8 +2166,128 @@
     .end array-data
 .end method
 
-.method public static getJPGQuality()V
-    .locals 1
+.method public static getISONm(Llzr;)I
+    .locals 9
+
+    const-string v5, "pref_iso_noise_key"
+
+    invoke-static {v5}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+
+    move-result v5
+
+    packed-switch v5, :pswitch_data_0
+
+    sget-object v5, Landroid/hardware/camera2/CaptureResult;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureResult$Key;
+
+    invoke-interface {p0, v5}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/Integer;
+
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v5
+
+    return v5
+
+    :pswitch_0
+    sget-object v5, Landroid/hardware/camera2/CaptureResult;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureResult$Key;
+
+    invoke-interface {p0, v5}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/Integer;
+
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v5
+
+    return v5
+
+    :pswitch_1
+    const/16 v5, 0x64
+
+    return v5
+
+    :pswitch_2
+    const/16 v5, 0xc8
+
+    return v5
+
+    :pswitch_3
+    const/16 v5, 0x12c
+
+    return v5
+
+    :pswitch_4
+    sget-object v5, Landroid/hardware/camera2/CaptureResult;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureResult$Key;
+
+    invoke-interface {p0, v5}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/Integer;
+
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v5
+
+    int-to-float v5, v5
+
+    const v1, 0x42480000    # 50.0f
+
+    sub-float/2addr v5, v1
+
+    const-string v3, "pref_iso_noise_coeff_key"
+
+    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/Fix/Pref;->getFloatValue(Ljava/lang/String;)F
+
+    move-result v3
+
+    mul-float/2addr v5, v3
+
+    add-float/2addr v5, v1
+
+    float-to-int v5, v5
+
+    return v5
+
+    :pswitch_5
+    const-string v5, "pref_manual_iso_noise_key"
+
+    invoke-static {v5}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+
+    move-result v5
+
+    return v5
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+    .end packed-switch
+.end method
+
+.method public static getJPGQuality()I
+    .locals 5
 
     const-string v0, "pref_qjpg_key"
 
@@ -1959,15 +2297,12 @@
 
     if-eqz v0, :cond_0
 
-    :goto_0
-    sput v0, Lcom/Helper;->sJPGQuality:I
-
-    return-void
+    return v0
 
     :cond_0
-    const/16 v0, 0x61
+    const/16 v3, 0x61
 
-    goto :goto_0
+    return v3
 .end method
 
 .method public static getMerge()I
@@ -2030,6 +2365,204 @@
         :pswitch_3
         :pswitch_4
     .end packed-switch
+.end method
+
+.method public static getNoiseModelerLog([Landroid/util/Pair;Llzv;)V
+    .locals 12
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v6, Landroid/hardware/camera2/CaptureResult;->SENSOR_NOISE_PROFILE:Landroid/hardware/camera2/CaptureResult$Key;
+
+    invoke-interface {p1, v6}, Llzv;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, [Landroid/util/Pair;
+
+    const-string v0, "System Noise modeler:-"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n\n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "First Pair values:- \n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v3, 0x4
+
+    const/4 v5, 0x0
+
+    :goto_0
+    if-ge v5, v3, :cond_0
+
+    aget-object v4, v6, v5
+
+    iget-object v4, v4, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v5, v5, 0x1
+
+    if-ge v5, v3, :cond_0
+
+    const-string v0, "\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "\n\nSecond Pair values:- \n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v3, 0x4
+
+    const/4 v5, 0x0
+
+    :goto_1
+    if-ge v5, v3, :cond_1
+
+    aget-object v4, v6, v5
+
+    iget-object v4, v4, Landroid/util/Pair;->second:Ljava/lang/Object;
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v5, v5, 0x1
+
+    if-ge v5, v3, :cond_1
+
+    const-string v0, "\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :cond_1
+    const-string v0, "\n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "System ISO:- "
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v0, Lcom/Helper;->GetISOsystem:I
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n\n\n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "Working Noise modeler:-"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n\n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "First Pair values:- \n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v3, 0x4
+
+    const/4 v5, 0x0
+
+    :goto_2
+    if-ge v5, v3, :cond_2
+
+    aget-object v4, p0, v5
+
+    iget-object v4, v4, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v5, v5, 0x1
+
+    if-ge v5, v3, :cond_2
+
+    const-string v0, "\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_2
+
+    :cond_2
+    const-string v0, "\n\nSecond Pair values:- \n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v3, 0x4
+
+    const/4 v5, 0x0
+
+    :goto_3
+    if-ge v5, v3, :cond_3
+
+    aget-object v4, p0, v5
+
+    iget-object v4, v4, Landroid/util/Pair;->second:Ljava/lang/Object;
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v5, v5, 0x1
+
+    if-ge v5, v3, :cond_3
+
+    const-string v0, "\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_3
+
+    :cond_3
+    const-string v0, "\n\n"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "Working ISO:- "
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v0, Lcom/Helper;->GetISO:I
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Noise model"
+
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValueLog(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2, v1}, Lcom/Helper;->LogWriteToFile(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
 .end method
 
 .method public static getUpscale()I
@@ -2141,26 +2674,6 @@
 
     :cond_0
     return v2
-.end method
-
-.method public static getWhiteLevel(I)I
-    .locals 1
-
-    const-string v0, "pref_white_level_key"
-
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    move p0, v0
-
-    :goto_0
-    return p0
 .end method
 
 .method public static intentMode(Landroid/content/Intent;)V
@@ -2398,7 +2911,7 @@
 .end method
 
 .method public static onRestart(I)V
-    .locals 4
+    .locals 3
 
     sget v0, Lcom/Helper;->sHdr_process:I
 
@@ -2468,7 +2981,7 @@
 .end method
 
 .method public static sHdrProcessTime(I)V
-    .locals 7
+    .locals 6
 
     const-wide/16 v0, 0x0
 
@@ -2528,8 +3041,30 @@
     return-void
 .end method
 
+.method public static setAperture()F
+    .locals 3
+
+    const-string v2, "pref_aperture_key"
+
+    invoke-static {v2}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/high16 v0, 0x3fc00000    # 1.5f
+
+    goto :goto_0
+
+    :cond_0
+    const v0, 0x4019999a    # 2.4f
+
+    :goto_0
+    return v0
+.end method
+
 .method public static setColorTransform()V
-    .locals 2
+    .locals 1
 
     const-string v0, "pref_color_transform_key_front"
 
@@ -2646,7 +3181,7 @@
 
     move-result v0
 
-    sput v0, Lcom/Helper;->sCam2ApiModeVFNR:I
+    sput v0, Lcom/Helper;->getVFDenoise:I
 
     const-string v0, "pref_camera_lightroom_key"
 
@@ -2655,22 +3190,6 @@
     move-result v0
 
     sput v0, Lcom/Helper;->GeometricCalibration:I
-
-    const-string v0, "pref_60_fps_main_key"
-
-    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    sput v0, Lcom/Helper;->s60fps_main:I
-
-    const-string v0, "pref_60_fps_front_key"
-
-    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    sput v0, Lcom/Helper;->s60fps_front:I
 
     const-string v0, "pref_track_focus_key"
 
@@ -2820,58 +3339,65 @@
 .end method
 
 .method public static setSabre(I)I
-    .locals 0
+    .locals 4
 
-    sget p0, Lcom/Helper;->sFront:I
+    sget v0, Lcom/Helper;->sFront:I
 
-    if-eqz p0, :cond_0
+    if-eqz v0, :cond_0
 
-    const-string p0, "pref_sabre_key_front"
+    const-string v0, "pref_sabre_key_front"
 
     goto :goto_0
 
     :cond_0
-    const-string p0, "pref_aux_key"
+    const-string v0, "pref_aux_key"
 
-    invoke-static {p0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
 
-    move-result p0
+    move-result v0
 
-    packed-switch p0, :pswitch_data_0
+    packed-switch v0, :pswitch_data_0
 
-    const-string p0, "pref_sabre_key"
+    const-string v0, "pref_sabre_key_main"
 
     goto :goto_0
 
     :pswitch_0
-    const-string p0, "pref_sabre_key"
+    const-string v0, "pref_sabre_key_main"
 
     goto :goto_0
 
     :pswitch_1
-    const-string p0, "pref_sabre_key_tele"
+    const-string v0, "pref_sabre_key_tele"
 
     goto :goto_0
 
     :pswitch_2
-    const-string p0, "pref_sabre_key_wide"
+    const-string v0, "pref_sabre_key_wide"
 
     goto :goto_0
 
     :pswitch_3
-    const-string p0, "pref_sabre_key_id4"
+    const-string v0, "pref_sabre_key_id4"
 
     goto :goto_0
 
     :pswitch_4
-    const-string p0, "pref_sabre_key_id5"
+    const-string v0, "pref_sabre_key_id5"
 
     :goto_0
-    invoke-static {p0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
 
-    move-result p0
+    move-result v0
 
+    if-ltz v0, :cond_1
+
+    return v0
+
+    :cond_1
     return p0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0

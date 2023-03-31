@@ -1453,7 +1453,7 @@
 
     sget-object p2, Lddq;->c:Lddg;
 
-    const v4, 0x4c4622aa    # 5.1940008E7f
+    const v4, 0x4c4622aa    # 5.194001E7f
 
     invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 

@@ -19,7 +19,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    sget v0, Lcom/Helper;->sJPGQuality:I
+    const/16 v0, 0x5a
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

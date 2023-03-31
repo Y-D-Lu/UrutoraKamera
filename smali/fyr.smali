@@ -3127,7 +3127,7 @@
 
     iget-object v3, v1, Lfen;->a:Landroid/animation/ObjectAnimator;
 
-    const-wide/16 v4, 0x12c
+    const-wide/16 v4, 0x0
 
     invoke-virtual {v3, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 

@@ -350,7 +350,7 @@
 
     move-result-object v1
 
-    const-wide/16 v3, 0xfa
+    const-wide/16 v3, 0x0
 
     invoke-virtual {v1, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
@@ -431,7 +431,7 @@
 
     :array_0
     .array-data 4
-        0xfa
+        0x0
         0x0
     .end array-data
 .end method

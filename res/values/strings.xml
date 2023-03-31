@@ -264,8 +264,8 @@ Clean your lens for better photo quality."</string>
     <string name="hsl_catprocessing">Processing</string>
     <string name="hsl_catdenoise">Noise reduction</string>
     <string name="hsl_catlightandshadow">Light and Shadow</string>
-    <string name="hsl_catleveldenoise">Subtle levels of noise reduction</string>
-    <string name="hsl_catleveldenoise2">Subtle denoise levels 2</string>
+    <string name="hsl_catleveldenoise">Subtle denoise levels (Merge 1)</string>
+    <string name="hsl_catleveldenoise2">Subtle denoise levels (Merge 3)</string>
     <string name="connect_internet_for_examples">Connect to internet to see examples</string>
     <string name="hsl_catlevelsabre">Subtle Sabre Levels</string>
     <string name="hsl_enablepatcher">Enable patcher</string>
@@ -670,7 +670,7 @@ Frequent Faces won’t be available when saving photos and videos to Locked Fold
     <string name="mic_input_desc">Microphone</string>
     <string name="hsl_onopmodemanual">Use Manual Values</string>
     <string name="mic_input_ext_bluetooth_connecting">Connecting bluetooth</string>
-    <string name="hsl_opphoto">Photo Main cameras</string>
+    <string name="hsl_opphoto">Photo</string>
     <string name="mic_input_ext_wired_acc_desc">Wired microphone</string>
     <string name="mic_input_ext_wired_desc">Wired mic</string>
     <string name="mic_input_options_desc">Microphone options</string>
@@ -996,16 +996,16 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="gcam_lens_logic_10">10 Rear Binned</string>
     <string name="gcam_lens_logic_11">11 Rear Remozaiked</string>
     <string name="hsl_expotime">Disable exposure time limit</string>
-    <item type="string" name="dummy_ae_3c2">false</item>
-    <item type="string" name="dummy_ae_3c3">false</item>
+    <string name="hsl_denoisevf">Viewfinder noise reduction</string>
+    <string name="hsl_geometricfix">RAW geometric fix</string>
     <string name="pref_raw_output_control_action_button">View RAW folder</string>
     <string name="pref_raw_output_control_summary">Show option to turn on RAW+JPEG in the viewer. The RAW (DNG) file is saved separately and uses additional storage.</string>
     <string name="pref_raw_output_control_title">RAW+JPEG control</string>
     <string name="pref_storage_summary">%1$s, %2$s</string>
-    <item type="string" name="dummy_ae_3c8">false</item>
-    <item type="string" name="dummy_ae_3c9">false</item>
-    <item type="string" name="dummy_ae_3ca">false</item>
-    <item type="string" name="dummy_ae_3cb">false</item>
+    <string name="hsl_geometricfix_desc">This will allow you to import RAW DNG files into Snapseed and Lightroom for Oneplus devices, but may increase noise in photos.</string>
+    <string name="hsl_designvf">Viewfinder design</string>
+    <string name="hsl_kepler">Enable kepler mode</string>
+    <string name="hsl_kepler_desc">After enabling the option astrograpy mode would be forcedly enabled.</string>
     <string name="pref_video_hevc">Store videos efficiently</string>
     <item type="string" name="dummy_ae_3cd">false</item>
     <item type="string" name="dummy_ae_3ce">false</item>
@@ -1446,4 +1446,21 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="hsl_portraitzoom_desc">Default zoom is 1.5x in portrait mode</string>
     <string name="hsl_opexperimental">Experimental</string>
     <string name="hsl_opsystem">System</string>
+    <string name="shortcut_opensett_long_label">Open settings</string>
+    <string name="shortcut_opensett_short_label">Settings</string>
+    <item type="string" name="dummy_ae_583">false</item>
+    <item type="string" name="dummy_ae_584">false</item>
+    <string name="hsl_noisemanualiso">Manual ISO value</string>
+    <string name="hsl_noisecoefiso">ISO noise reduction coefficient</string>
+    <string name="hsl_noisesystem">System model</string>
+    <string name="hsl_noisedynamic">Dynamic ISO coefficient</string>
+    <string name="hsl_videodenoise">Noise reduction</string>
+    <string name="hsl_edgemode">Edge sharpness</string>
+    <string name="hsl_info_noisem">Use a dynamic ISO factor in the range of 0.1-1.0 for best noise model performance.</string>
+    <string name="hsl_info_uxmode">UX Mode changes the processing logic in active mode to the selected one. This may affect the final quality, the settings used in the patcher, and increase the processing time of the image.</string>
+    <string name="hsl_aperture">Aperture (Samsung)</string>
+    <string name="hsl_aperture_s">Switching aperture from 1.5f to 2.4f</string>
+    <string name="hsl_livehdr">Enable LiveHDR</string>
+    <string name="hsl_info_samsung">Variable aperture was on Samsung flagships of yesteryear: Galaxy S10, S9, etc.</string>
+    <string name="hsl_gmatting">Enhanced Edges (Portrait)</string>
 </resources>

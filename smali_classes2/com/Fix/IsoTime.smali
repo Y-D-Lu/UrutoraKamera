@@ -201,6 +201,123 @@
     .end packed-switch
 .end method
 
+.method public static aeAutoMax()F
+    .locals 10
+
+    const-string v0, "pref_aeautomax_key"
+
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v0
+
+    packed-switch v0, :pswitch_data_0
+
+    :pswitch_0
+    const v0, 0x447a0000    # 1000.0f
+
+    goto/32 :goto_0
+
+    :pswitch_1
+    const v0, 0x43fa0000    # 500.0f
+
+    goto/32 :goto_0
+
+    :pswitch_2
+    const v0, 0x43a6aaa0
+
+    goto/32 :goto_0
+
+    :pswitch_3
+    const v0, 0x437a0000    # 250.0f
+
+    goto/32 :goto_0
+
+    :pswitch_4
+    const v0, 0x43480000    # 200.0f
+
+    goto/32 :goto_0
+
+    :pswitch_5
+    const v0, 0x4326aaab
+
+    goto/32 :goto_0
+
+    :pswitch_6
+    const v0, 0x430edb64
+
+    goto/32 :goto_0
+
+    :pswitch_7
+    const v0, 0x42fa0000    # 125.0f
+
+    goto/32 :goto_0
+
+    :pswitch_8
+    const v0, 0x42de38e4
+
+    goto/32 :goto_0
+
+    :pswitch_9
+    const v0, 0x42c80000    # 100.0f
+
+    goto/32 :goto_0
+
+    :pswitch_a
+    const v0, 0x42a6aa7f    # 83.333f
+
+    goto/32 :goto_0
+
+    :pswitch_b
+    const v0, 0x428554fe    # 66.666f
+
+    goto/32 :goto_0
+
+    :pswitch_c
+    const v0, 0x426b4ac1
+
+    goto/32 :goto_0
+
+    :pswitch_d
+    const v0, 0x42480000    # 50.0f
+
+    goto/32 :goto_0
+
+    :pswitch_e
+    const v0, 0x41f00000    # 30.0f
+
+    goto/32 :goto_0
+
+    :pswitch_f
+    const v0, 0x41a00000    # 20.0f
+
+    goto/32 :goto_0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+        :pswitch_6
+        :pswitch_7
+        :pswitch_8
+        :pswitch_9
+        :pswitch_a
+        :pswitch_b
+        :pswitch_c
+        :pswitch_d
+        :pswitch_e
+        :pswitch_f
+    .end packed-switch
+
+    :goto_0
+    return v0
+.end method
+
 .method public static getBitrate()I
     .locals 1
 

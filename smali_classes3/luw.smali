@@ -234,6 +234,10 @@
 
     const-string v1, "pref_opmodes_key"
 
+    invoke-static {v1}, Lcom/Helper;->SetLensValueOp(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
     invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
@@ -635,6 +639,65 @@
     move-result-object p0
 
     invoke-virtual {v0, p1, p0}, Lluz;->b(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+
+    const-string p1, "samsung"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const-string p0, "pref_getlivehdr_key"
+
+    invoke-static {p0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+
+    move-result p0
+
+    const/4 p0, 0x1
+
+    if-eq p0, p0, :cond_1
+
+    const/4 p0, 0x2
+
+    if-eq p0, p0, :cond_2
+
+    goto :goto_0
+
+    :cond_1
+    sget-object p1, Lcom/CameraAPI2Keys;->CONTROL_LIVE_HDR_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p1, p0}, Lluz;->b(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :cond_2
+    sget-object p1, Lcom/CameraAPI2Keys;->CONTROL_LIVE_HDR_LEVEL:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p1, p0}, Lluz;->b(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    :goto_0
+    sget-object p0, Lcom/CameraAPI2Keys;->LENS_APERTURE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    invoke-static {}, Lcom/Helper;->setAperture()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    invoke-virtual {v0, p0, v1}, Lluz;->b(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_4
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_3
@@ -642,32 +705,33 @@
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_0
 
+    :cond_3
     return-object v0
 
     :catch_0
     move-exception p1
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_1
     move-exception p1
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_2
     move-exception p1
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_3
     move-exception p1
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_4
     move-exception p1
 
-    :goto_0
+    :goto_1
     new-instance v0, Lllv;
 
     invoke-direct {v0, p1}, Lllv;-><init>(Ljava/lang/Throwable;)V

@@ -30,7 +30,7 @@
 
     sput-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->f:Louj;
 
-    const-wide/16 v0, 0xc8
+    const-wide/16 v0, 0x0
 
     invoke-static {v0, v1}, Lj$/time/Duration;->ofMillis(J)Lj$/time/Duration;
 

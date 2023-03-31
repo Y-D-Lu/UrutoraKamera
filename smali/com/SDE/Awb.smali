@@ -3,13 +3,13 @@
 
 
 # static fields
-.field private static awbArr_B_G:[F
+.field public static awbArr_B_G:[F
 
-.field private static awbArr_GR_GB:F
+.field public static awbArr_GR_GB:F
 
-.field private static awbArr_R_G:[F
+.field public static awbArr_R_G:[F
 
-.field private static awbArr_len:I
+.field public static awbArr_len:I
 
 
 # direct methods
@@ -92,10 +92,6 @@
 
     invoke-direct {v5}, Lcom/google/googlex/gcam/QcColorCalibration;-><init>()V
 
-    new-instance v13, Ljava/lang/StringBuilder;
-
-    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
-
     :try_start_0
     sget-object v0, Lcom/SDE/Awb;->awbArr_R_G:[F
 
@@ -103,21 +99,13 @@
 
     sget v2, Lcom/SDE/Awb;->awbArr_len:I
 
+    invoke-static {v0, v1, v2}, Lcom/Helper;->getAwbLog([F[FI)V
+
     new-instance v8, Lcom/google/googlex/gcam/QcIlluminantVector;
 
     invoke-direct {v8}, Lcom/google/googlex/gcam/QcIlluminantVector;-><init>()V
 
     const/4 v3, 0x0
-
-    invoke-static {v2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v12, "\n"
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_0
     if-ge v3, v2, :cond_0
@@ -128,31 +116,11 @@
 
     aget v4, v0, v3
 
-    invoke-static {v4}, Ljava/lang/Float;->toString(F)Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v12, ";"
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     iget-wide v9, v11, Lcom/google/googlex/gcam/QcColorCalibration$IlluminantData;->a:J
 
     invoke-static {v9, v10, v11, v4}, Lcom/google/googlex/gcam/GcamModuleJNI;->QcColorCalibration_IlluminantData_rg_ratio_set(JLcom/google/googlex/gcam/QcColorCalibration$IlluminantData;F)V
 
     aget v4, v1, v3
-
-    invoke-static {v4}, Ljava/lang/Float;->toString(F)Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v12, "\n"
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-wide v9, v11, Lcom/google/googlex/gcam/QcColorCalibration$IlluminantData;->a:J
 
@@ -178,16 +146,6 @@
     sget v2, Lcom/SDE/Awb;->awbArr_GR_GB:F
 
     invoke-virtual {v5, v2}, Lcom/google/googlex/gcam/QcColorCalibration;->a(F)V
-
-    const-string v12, "AWB worked, GB/GR="
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-static {v2}, Ljava/lang/Float;->toString(F)Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -203,15 +161,11 @@
     return-void
 
     :catchall_0
-    const-string v12, "AWB didn\'t work"
-
-    invoke-virtual {v13, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     goto :goto_1
 .end method
 
 .method private static setAWB()V
-    .locals 2
+    .locals 3
 
     invoke-static {}, Lcom/SDE/Awb;->AuxCamKey()I
 
@@ -235,9 +189,9 @@
 
     sput-object v1, Lcom/SDE/Awb;->awbArr_B_G:[F
 
-    array-length v1, v0
+    array-length v2, v0
 
-    sput v1, Lcom/SDE/Awb;->awbArr_len:I
+    sput v2, Lcom/SDE/Awb;->awbArr_len:I
 
     return-void
 
@@ -787,6 +741,13 @@
 
     goto/16 :goto_0
 
+    :pswitch_4e
+    sget-object v0, Lcom/SDE/AwbData;->AWB_PIXEL3MOD2_WB_CALIB_R_G:[F
+
+    sget-object v1, Lcom/SDE/AwbData;->AWB_PIXEL3MOD2_WB_CALIB_B_G:[F
+
+    goto/16 :goto_0
+
     nop
 
     :pswitch_data_0
@@ -869,6 +830,7 @@
         :pswitch_4b
         :pswitch_4c
         :pswitch_4d
+        :pswitch_4e
     .end packed-switch
 .end method
 
@@ -930,6 +892,11 @@
 
     goto/16 :goto_1
 
+    :pswitch_6
+    sget v0, Lcom/SDE/AwbData;->PIXEL3MOD2_WB_CALIB_GR_GB:F
+
+    goto/16 :goto_1
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -938,5 +905,6 @@
         :pswitch_3
         :pswitch_4
         :pswitch_5
+        :pswitch_6
     .end packed-switch
 .end method

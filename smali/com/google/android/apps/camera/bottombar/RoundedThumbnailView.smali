@@ -682,7 +682,7 @@
 
     iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->burstFlashAnimator:Landroid/animation/ValueAnimator;
 
-    const-wide/16 v2, 0xc8
+    const-wide/16 v2, 0x32
 
     invoke-virtual {v0, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
@@ -828,7 +828,7 @@
 
     move-result-object v3
 
-    const-wide/16 v4, 0xc8
+    const-wide/16 v4, 0x32
 
     invoke-virtual {v3, v4, v5}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

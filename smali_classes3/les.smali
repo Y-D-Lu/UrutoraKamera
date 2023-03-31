@@ -70,25 +70,13 @@
 
     if-nez p1, :cond_0
 
-    sget p1, Lcom/Helper;->s60fps_main:I
-
-    if-eqz p1, :cond_1
-
-    goto :goto_0
-
-    :cond_0
-    sget p1, Lcom/Helper;->s60fps_front:I
-
-    if-eqz p1, :cond_1
-
-    :goto_0
     const/16 p1, 0x1e
 
-    if-ne p1, p12, :cond_1
+    if-ne p1, p12, :cond_0
 
     const/16 p12, 0x3c
 
-    :cond_1
+    :cond_0
     iput p12, p0, Lles;->l:I
 
     iput p13, p0, Lles;->m:I

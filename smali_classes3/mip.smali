@@ -8045,7 +8045,7 @@
 
     int-to-long v3, v0
 
-    const-wide v5, -0x3c5a37a36834ced9L    # -7.8480313857871552E17
+    const-wide v5, -0x3c5a37a36834ced9L    # -7.848031385787155E17
 
     mul-long v3, v3, v5
 
@@ -8589,7 +8589,7 @@
 
     move-result-wide v2
 
-    const-wide v4, -0x3c5a37a36834ced9L    # -7.8480313857871552E17
+    const-wide v4, -0x3c5a37a36834ced9L    # -7.848031385787155E17
 
     mul-long v2, v2, v4
 
@@ -12824,7 +12824,7 @@
 
     if-gtz p1, :cond_0
 
-    const-wide/16 v0, 0xfa
+    const-wide/16 v0, 0x0
 
     goto :goto_0
 

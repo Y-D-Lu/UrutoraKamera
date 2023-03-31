@@ -1,6 +1,5 @@
 .class Lcom/custom/ButtonEXP$1;
 .super Ljava/lang/Object;
-.source "ButtonEXP$1.java"
 
 # interfaces
 .implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
@@ -25,9 +24,9 @@
 .method constructor <init>(Lcom/custom/ButtonEXP;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     iput-object p1, p0, Lcom/custom/ButtonEXP$1;->this$0:Lcom/custom/ButtonEXP;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -35,31 +34,27 @@
 
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
-    .locals 2
+    .locals 6
 
-    sget v0, Lcom/custom/ButtonEXP;->SelState:I
+    sget v2, Lcom/custom/ButtonEXP;->SelState:I
 
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v2, v2, 0x1
 
-    sget-object v1, Lcom/custom/ButtonEXP;->Icon:[Ljava/lang/String;
+    rem-int/lit8 v2, v2, 0x2
 
-    array-length v1, v1
+    sput v2, Lcom/custom/ButtonEXP;->SelState:I
 
-    rem-int v0, v0, v1
+    const-string v1, "auto_exp_key"
 
-    sput v0, Lcom/custom/ButtonEXP;->SelState:I
-
-    sget-object v1, Lcom/custom/ButtonEXP;->prefString:Ljava/lang/String;
-
-    iget-object p1, p0, Lcom/custom/ButtonEXP$1;->this$0:Lcom/custom/ButtonEXP;
-
-    invoke-virtual {p1, v1, v0}, Lcom/custom/ButtonEXP;->setInt(Ljava/lang/String;I)V
+    invoke-static {v1, v2}, Lcom/Helper;->setValue(Ljava/lang/String;I)V
 
     invoke-virtual {p1}, Landroid/widget/CompoundButton;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Lcom/custom/ButtonEXP;->UpdateUi(Landroid/content/Context;)V
+    iget-object v3, p0, Lcom/custom/ButtonEXP$1;->this$0:Lcom/custom/ButtonEXP;
+
+    invoke-virtual {v3, v0}, Lcom/custom/ButtonEXP;->UpdateUi(Landroid/content/Context;)V
 
     return-void
 .end method

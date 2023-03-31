@@ -76,7 +76,7 @@
 
     iput-object v2, p0, Lcom/google/android/apps/camera/filmstrip/transition/FilmstripTransitionLayout;->a:Landroid/animation/ValueAnimator;
 
-    const-wide/16 v3, 0xfa
+    const-wide/16 v3, 0x0
 
     invoke-virtual {v2, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

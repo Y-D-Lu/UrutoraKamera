@@ -52,7 +52,7 @@
 
     sput-object v0, Lhmy;->b:Louj;
 
-    const-wide/16 v0, 0xfa
+    const-wide/16 v0, 0x0
 
     invoke-static {v0, v1}, Lj$/time/Duration;->ofMillis(J)Lj$/time/Duration;
 

@@ -344,7 +344,7 @@
 
     move-result-object v0
 
-    const-string v1, "pref_camera_recordlocation_key"
+    const-string v1, "pref_video_hevc_setting_key"
 
     invoke-interface {v0, v1}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
 
@@ -357,6 +357,23 @@
     invoke-static {v1, v3}, Lcom/Fix/Pref;->setMenuValue(Ljava/lang/String;I)V
 
     :cond_2
+    invoke-static {}, Lcom/Fix/Pref;->getAppSharedPreferences()Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    const-string v1, "pref_camera_recordlocation_key"
+
+    invoke-interface {v0, v1}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+
+    move-result v0
+
+    const/4 v3, 0x0
+
+    if-nez v0, :cond_3
+
+    invoke-static {v1, v3}, Lcom/Fix/Pref;->setMenuValue(Ljava/lang/String;I)V
+
+    :cond_3
     invoke-static {}, Lcom/Fix/Pref;->getAppSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v0

@@ -123,7 +123,7 @@
 
     iput-boolean v0, p0, Lcom/hdrindicator/CircleProgressView;->mShowAnimation:Z
 
-    const/16 v0, 0x3e8
+    const/16 v0, 0x0
 
     iput v0, p0, Lcom/hdrindicator/CircleProgressView;->mDuration:I
 

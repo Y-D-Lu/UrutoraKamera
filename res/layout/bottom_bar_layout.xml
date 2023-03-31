@@ -21,6 +21,6 @@
         <ViewStub android:id="@id/snapshot_button_stub" android:layout="@layout/snapshot_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/accessibility_shutter_button" />
         <ViewStub android:layout_gravity="center" android:id="@id/cancel_button_stub" android:layout="@layout/cancel_button" android:layout_width="@dimen/recording_control_button_diameter" android:layout_height="@dimen/recording_control_button_diameter" android:contentDescription="@string/cancel_button_description" />
         <ViewStub android:layout_gravity="center" android:id="@id/review_play_button_view_stub" android:background="@drawable/crossfade_button_background" android:visibility="gone" android:layout="@layout/review_play_button" android:layout_width="@dimen/recording_control_button_diameter" android:layout_height="@dimen/recording_control_button_diameter" android:contentDescription="@string/review_button_description" />
-        <com.hdrindicator.HDRProgress android:layout_gravity="center" android:layout_width="63.0dip" android:layout_height="63.0dip" />
+        <com.hdrindicator.HDRProgress android:layout_gravity="center" android:layout_width="68.0dip" android:layout_height="68.0dip" />
     </FrameLayout>
 </merge>

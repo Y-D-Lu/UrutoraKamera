@@ -314,7 +314,9 @@
 
     move-result v20
 
-    sget v22, Lcom/Helper;->sJPGQuality:I
+    invoke-static {}, Lcom/Helper;->getJPGQuality()I
+
+    move-result v22
 
     move-object/from16 v0, p3
 

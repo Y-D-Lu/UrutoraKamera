@@ -1271,10 +1271,10 @@
     <item type="dimen" name="dummy_ae_4f7">false</item>
     <item type="dimen" name="dummy_ae_4f8">false</item>
     <item type="dimen" name="dummy_ae_4f9">false</item>
-    <dimen name="rounded_thumbnail_diameter">52.0dip</dimen>
-    <dimen name="rounded_thumbnail_diameter_max">52.0dip</dimen>
+    <dimen name="rounded_thumbnail_diameter">56.0dip</dimen>
+    <dimen name="rounded_thumbnail_diameter_max">56.0dip</dimen>
     <dimen name="rounded_thumbnail_diameter_min">24.0dip</dimen>
-    <dimen name="rounded_thumbnail_diameter_normal">52.0dip</dimen>
+    <dimen name="rounded_thumbnail_diameter_normal">56.0dip</dimen>
     <dimen name="rounded_thumbnail_inner_stroke_width">2.0dip</dimen>
     <dimen name="rounded_thumbnail_padding">12.0dip</dimen>
     <dimen name="rounded_thumbnail_ripple_ring_diameter_max">96.0dip</dimen>

@@ -83,7 +83,7 @@
     move-result-object v0
 
     :goto_1
-    const-wide/16 v1, 0xd9
+    const-wide/16 v1, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 

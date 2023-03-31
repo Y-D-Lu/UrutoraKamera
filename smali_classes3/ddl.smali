@@ -3515,7 +3515,7 @@
 
     sget-object p2, Lddl;->ay:Lddg;
 
-    iget-boolean p1, p1, Llzh;->h:Z
+    const p1, 0x1
 
     invoke-interface {p0, p2, p1}, Lddk;->s(Lddg;Z)V
 

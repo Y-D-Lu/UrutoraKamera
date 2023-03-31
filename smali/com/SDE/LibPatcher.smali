@@ -29,6 +29,8 @@
 
 .field private static final _CContrast2:I = 0x1ff8444
 
+.field private static final _CG1:I = 0x297ba28
+
 .field private static final _CG10:I = 0x297ba58
 
 .field private static final _CG2:I = 0x297ba2c
@@ -140,6 +142,8 @@
 .field private static final _HardJPGQuality:I = 0x2a81a1c
 
 .field private static final _HardMerge:I = 0x11eb1a8
+
+.field private static final _HardUX:I = 0x11e3fac
 
 .field private static final _HdrPlusInterface:I = 0x1ec0908
 
@@ -545,6 +549,8 @@
 
 .field private static final _SkipMetadataCheck:I = 0x1ece754
 
+.field private static final _SkyBrightnessNight:I = 0x2119608
+
 .field private static final _Smoothing1:I = 0x27ff208
 
 .field private static final _Smoothing2:I = 0x27ff29c
@@ -663,8 +669,71 @@
     return-void
 .end method
 
+.method public static SetLensValueWithFront(Ljava/lang/String;)Ljava/lang/String;
+    .locals 5
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "pref_aux_key"
+
+    invoke-static {v2}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+
+    move-result v2
+
+    const v3, 0x1
+
+    if-ne v2, v3, :cond_0
+
+    const-string v1, "_2"
+
+    goto :goto_0
+
+    :cond_0
+    const v3, 0x2
+
+    if-ne v2, v3, :cond_1
+
+    const-string v1, "_3"
+
+    goto :goto_0
+
+    :cond_1
+    const v3, 0x3
+
+    if-ne v2, v3, :cond_2
+
+    const-string v1, "_4"
+
+    goto :goto_0
+
+    :cond_2
+    const v3, 0x4
+
+    if-ne v2, v3, :cond_3
+
+    const-string v1, "_5"
+
+    goto :goto_0
+
+    :cond_3
+    const-string v1, ""
+
+    :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method private static applyPatcher(Ljava/lang/String;)Z
-    .locals 6
+    .locals 4
 
     new-instance v1, Lcom/SDE/LibPatcher;
 
@@ -804,7 +873,7 @@
 .end method
 
 .method private static copyLib(Lcom/SDE/LibPatcher;)Z
-    .locals 7
+    .locals 5
 
     const-string v3, "lib_curve_key"
 
@@ -836,9 +905,29 @@
     invoke-virtual {p0}, Lcom/SDE/LibPatcher;->setGammaCurve()V
 
     :cond_1
+    sget v0, Lcom/SDE/LibPatcher;->_HardUX:I
+
+    const-string v2, "lib_hardux_key"
+
+    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
+
     sget v0, Lcom/SDE/LibPatcher;->_Contr:I
 
     const-string v2, "lib_contr_key"
+
+    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_SkyBrightnessNight:I
+
+    const-string v2, "lib_nightsky_key"
 
     invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2169,6 +2258,16 @@
     sget v0, Lcom/SDE/LibPatcher;->_TunColSatPar2:I
 
     const-string v2, "lib_tuncolsatpar2_key"
+
+    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_CG1:I
+
+    const-string v2, "lib_cg1_key"
 
     invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
@@ -3841,6 +3940,12 @@
 
     if-eqz v3, :cond_d
 
+    sget v0, Lcom/SDE/LibPatcher;->_SkyBrightnessNight:I
+
+    const-string v2, "lib_nightsky_pro_key"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
+
     sget v0, Lcom/SDE/LibPatcher;->_NoiseReductSabre1:I
 
     const-string v2, "lib_noisereductsabre1_pro_key"
@@ -4048,6 +4153,12 @@
     sget v0, Lcom/SDE/LibPatcher;->_ShastaFactor:I
 
     const-string v2, "lib_shastafactor_pro_key"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_HardUX:I
+
+    const-string v2, "lib_hardux_pro_key"
 
     invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
 
@@ -4666,6 +4777,12 @@
     sget v0, Lcom/SDE/LibPatcher;->_InitParams_1simultaneous_1merge_1and_1finish_1set:I
 
     const-string v2, "lib_simultaneousmerge_pro_key"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_CG1:I
+
+    const-string v2, "lib_cg1_pro_key"
 
     invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
 
@@ -5710,7 +5827,15 @@
 
     const-string v0, "libs_key"
 
+    invoke-static {v0}, Lcom/SDE/LibPatcher;->SetLensValueWithFront(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
     const-string v1, "pref_libs_fromdir_key"
+
+    invoke-static {v1}, Lcom/SDE/LibPatcher;->SetLensValueWithFront(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
 
     const-string v2, "pref_enable_patcher_key"
 
@@ -6406,6 +6531,10 @@
     .locals 6
 
     const-string v0, "libs_key"
+
+    invoke-static {v0}, Lcom/SDE/LibPatcher;->SetLensValueWithFront(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
 
     invoke-static {v0}, Lcom/SDE/GetMenuValues;->getIntValue(Ljava/lang/String;)I
 

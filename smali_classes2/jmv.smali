@@ -26,9 +26,9 @@
 
     sput-object v0, Ljmv;->a:Louj;
 
-    const/16 v0, 0x400
+    const/16 v0, 0x1e0
 
-    const/16 v1, 0x300
+    const/16 v1, 0x140
 
     invoke-static {v0, v1}, Llig;->h(II)Llig;
 
@@ -36,9 +36,9 @@
 
     sput-object v0, Ljmv;->b:Llig;
 
-    const/16 v0, 0x500
+    const/16 v0, 0x1e0
 
-    const/16 v1, 0x2d0
+    const/16 v1, 0x140
 
     invoke-static {v0, v1}, Llig;->h(II)Llig;
 
