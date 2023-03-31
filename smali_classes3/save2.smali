@@ -806,7 +806,7 @@
 
     move-result-object v7
 
-    const-string v8, "/LMC8.4/"
+    const-string v8, "/UrutoraKamera/"
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

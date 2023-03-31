@@ -103,7 +103,7 @@
 .method public static init(Landroid/content/Context;)V
     .locals 2
 
-    const-string v0, "lmc"
+    const-string v0, "UrutoraKamera"
 
     const/4 v1, 0x0
 
