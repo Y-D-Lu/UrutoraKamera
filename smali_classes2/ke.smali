@@ -203,7 +203,7 @@
 
     if-nez v0, :cond_0
 
-    const-wide/16 v0, 0x0
+    const-wide/16 v0, 0xfa
 
     iput-wide v0, p0, Lke;->d:J
 

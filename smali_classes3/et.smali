@@ -881,7 +881,7 @@
 
     if-eqz p2, :cond_0
 
-    const/16 p2, 0x578
+    const/4 p2, -0x1
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -890,7 +890,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 p2, 0x3e8
+    const/4 p2, -0x1
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1299,7 +1299,7 @@
 
     sget-object v0, Lddl;->m:Lddi;
 
-    const/16 v3, 0x258
+    const/4 v3, -0x1
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1359,7 +1359,11 @@
     :goto_0
     sget-object p2, Ldde;->a:Lddg;
 
-    const/high16 v0, 0x42340000    # 45.0f
+    const v0, 0x42340000    # 45.0f
+
+    invoke-static {}, Lhsld;->setHDRregion()F
+
+    move-result v0
 
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -1371,17 +1375,13 @@
 
     invoke-virtual {v1, p2, v2}, Ldep;->s(Lddg;Z)V
 
-    sget-object p2, Lddm;->g:Lddi;
+    sget-object p2, Lddm;->r:Lddi;
 
-    const/4 v0, 0x5
+    const/16 v0, 0xa
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
-
-    invoke-interface {p0, p2, v0}, Lddj;->l(Lddi;Ljava/lang/Integer;)V
-
-    sget-object p2, Lddm;->h:Lddi;
 
     invoke-interface {p0, p2, v0}, Lddj;->l(Lddi;Ljava/lang/Integer;)V
 
@@ -1402,20 +1402,6 @@
     sget-object p2, Lddm;->W:Lddg;
 
     invoke-virtual {v1, p2, v2}, Ldep;->s(Lddg;Z)V
-
-    sget-object p2, Lddm;->q:Lddi;
-
-    const/16 v4, 0xa
-
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    invoke-interface {p0, p2, v4}, Lddj;->l(Lddi;Ljava/lang/Integer;)V
-
-    sget-object p2, Lddm;->r:Lddi;
-
-    invoke-interface {p0, p2, v4}, Lddj;->l(Lddi;Ljava/lang/Integer;)V
 
     sget-object p2, Lddm;->am:Lddg;
 

@@ -12824,7 +12824,7 @@
 
     if-gtz p1, :cond_0
 
-    const-wide/16 v0, 0x0
+    const-wide/16 v0, 0x5a
 
     goto :goto_0
 

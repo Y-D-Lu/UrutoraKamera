@@ -155,7 +155,7 @@
 
     const-string v1, "pref_show_button_aperture"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -174,7 +174,7 @@
 
     const-string v0, "pref_aperture_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 

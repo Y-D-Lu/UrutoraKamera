@@ -280,7 +280,7 @@
 
     invoke-virtual {p0, p1, v1}, Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;->copyFile(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;->onRestart()V
+    invoke-static {}, Lcom/Helper;->onRestart()V
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -509,7 +509,7 @@
     :cond_0
     const-string v0, "without_xml_prefix"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
@@ -874,40 +874,4 @@
     move v4, v5
 
     goto :goto_0
-.end method
-
-.method public final onRestart()V
-    .locals 3
-
-    iget-object v2, p0, Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;->this$0:Lcom/google/android/apps/camera/bottombar/BottomBar;
-
-    const-wide/16 v0, 0x1f4
-
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-
-    iget-object v2, v2, Lcom/google/android/apps/camera/bottombar/BottomBar;->appContext:Landroid/content/Context;
-
-    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;->apply(Landroid/content/Context;)V
-
-    new-instance v0, Landroid/content/Intent;
-
-    const-class v1, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;
-
-    invoke-direct {v0, v2, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    const v1, 0x8000
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    const/high16 v1, 0x10000000
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    invoke-virtual {v2, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-
-    const/4 v2, 0x0
-
-    invoke-static {v2}, Ljava/lang/System;->exit(I)V
-
-    return-void
 .end method

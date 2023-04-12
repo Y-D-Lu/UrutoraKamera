@@ -787,7 +787,7 @@
 
     const-string v0, "pref_enable_manual_array_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 

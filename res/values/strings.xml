@@ -310,8 +310,8 @@ Clean your lens for better photo quality."</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_ok_cased">Ok</string>
     <string name="hsl_functionphoto_desc">Advanced settings for photo processing functions</string>
-    <string name="hsl_screenexposure">Shutter speed and exposure compensation</string>
-    <string name="hsl_screenexposure_desc">Adjust shutter speed with exposure compensation correction</string>
+    <string name="hsl_screenexposure">Exposure and Shutter</string>
+    <string name="hsl_screenexposure_desc">Adjust shutter speed and control shooting modes</string>
     <string name="hsl_exposure">Exposure</string>
     <string name="dialog_title_warning">Warning</string>
     <string name="dialog_vr_core_not_enabled">This application may not work properly without enabling Google VR Services, please enable this in phone Settings before continuing.</string>
@@ -460,7 +460,7 @@ Frequent Faces won’t be available when saving photos and videos to Locked Fold
     <string name="hsl_focusslider">Focus Slider</string>
     <string name="hsl_focusslider_desc">Set the Minimum Focusslider value</string>
     <string name="hsl_colortransform">Color correction</string>
-    <string name="hsl_colortransformauto">Auto-CT Color Correction</string>
+    <string name="hsl_colortransformauto">Auto-CT Color Correction (JAWB)</string>
     <string name="gm3_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="gm3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
@@ -1007,19 +1007,19 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="hsl_kepler">Enable kepler mode</string>
     <string name="hsl_kepler_desc">After enabling the option astrograpy mode would be forcedly enabled.</string>
     <string name="pref_video_hevc">Store videos efficiently</string>
-    <item type="string" name="dummy_ae_3cd">false</item>
-    <item type="string" name="dummy_ae_3ce">false</item>
-    <item type="string" name="dummy_ae_3cf">false</item>
-    <item type="string" name="dummy_ae_3d0">false</item>
-    <item type="string" name="dummy_ae_3d1">false</item>
-    <item type="string" name="dummy_ae_3d2">false</item>
-    <item type="string" name="dummy_ae_3d3">false</item>
-    <item type="string" name="dummy_ae_3d4">false</item>
-    <item type="string" name="dummy_ae_3d5">false</item>
+    <string name="hsl_framezslfix">Merge all frames in ZSL / HDRNet</string>
+    <string name="hsl_vfres">High resolution viewfinder</string>
+    <string name="hsl_zoomset">Zoom button value</string>
+    <string name="hsl_zoomset_desc">Set a custom value for the Zoom button on the viewfinder screen.</string>
+    <string name="hsl_autoexp">Exposure threshold in auto mode</string>
+    <string name="hsl_autoexp_desc">Set the maximum exposure threshold in auto-mode (shasta_zsl.max_exptime_ms)</string>
+    <string name="hsl_fixexpo">Fix dark viewfinder and shots</string>
+    <string name="hsl_fixexpo_desc">Set the flag if your viewfinder and photos are too dark. (For example on RN8P)</string>
+    <string name="hsl_auxlayout">AUX Button Layout</string>
     <string name="pref_video_quality_large">large</string>
-    <item type="string" name="dummy_ae_3d7">false</item>
-    <item type="string" name="dummy_ae_3d8">false</item>
-    <item type="string" name="dummy_ae_3d9">false</item>
+    <string name="hsl_info_framehdr">Set the number of stitched frames for HDR+ Advanced mode.</string>
+    <string name="hsl_info_framezsl">Set the number of stitched frames for ZSL and HDRNet mode. You must enable the Merge all frames in ZSL option and activate the patcher.</string>
+    <string name="hsl_screen_frames">Number of frames in stitching</string>
     <string name="pref_video_stabilization">Video stabilization</string>
     <string name="pref_video_stabilization_summary">Reduce camera shake to make videos smoother. Will result in a zoomed-in view.</string>
     <string name="pref_white_balance_control">White balance</string>
@@ -1032,7 +1032,7 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="preference_volume_key_shutter">shutter</string>
     <string name="preference_volume_key_volume">nothing</string>
     <string name="preference_volume_key_zoom">zoom</string>
-    <item type="string" name="dummy_ae_3e6">false</item>
+    <string name="hsl_screen_frames_desc">Set the number of stitched frames for each lens</string>
     <string name="preferences_license_title">Open source licenses</string>
     <string name="preparing_updates">Preparing update</string>
     <string name="primes_marker">PrImEs</string>
@@ -1043,24 +1043,24 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="processing_notification_channel">Background Processing</string>
     <string name="processing_panorama">Processing Panorama</string>
     <string name="processing_photo_sphere">Processing Photo Sphere</string>
-    <item type="string" name="dummy_ae_3f1">false</item>
-    <item type="string" name="dummy_ae_3f2">false</item>
-    <item type="string" name="dummy_ae_3f3">false</item>
+    <string name="hsl_tempbin">Temporal Binning</string>
+    <string name="hsl_tempbin_desc">Turn off to use the full range of ZSl / HDRN frame rate selections. Enable this option if you experience problems with merging frames.</string>
+    <string name="hsl_longtap">Long tap action</string>
     <string name="qr_unsupported">QR code</string>
-    <item type="string" name="dummy_ae_3f5">false</item>
-    <item type="string" name="dummy_ae_3f6">false</item>
-    <item type="string" name="dummy_ae_3f7">false</item>
-    <item type="string" name="dummy_ae_3f8">false</item>
-    <item type="string" name="dummy_ae_3f9">false</item>
-    <item type="string" name="dummy_ae_3fa">false</item>
-    <item type="string" name="dummy_ae_3fb">false</item>
-    <item type="string" name="dummy_ae_3fc">false</item>
+    <string name="hsl_longtap_gallery">Long tap on Gallery</string>
+    <string name="hsl_longtap_switch">Long tap on Change front camera</string>
+    <string name="hsl_arrays_switchAWB">White Balance</string>
+    <string name="hsl_arrays_switchEX">Exposure</string>
+    <string name="hsl_arrays_switchHDREXPO">Shadow exposure on tap</string>
+    <string name="hsl_arrays_switchHDRF">HDR++ Frames</string>
+    <string name="hsl_arrays_switchNOISE">Noise model</string>
+    <string name="hsl_arrays_switchPSCREEN">Patcher Page</string>
     <string name="raw_desc">RAW</string>
     <string name="raw_output_desc">RAW mode options</string>
     <string name="raw_output_off_desc">JPEG only</string>
     <string name="raw_output_on_desc">RAW + JPEG</string>
-    <item type="string" name="dummy_ae_401">false</item>
-    <item type="string" name="dummy_ae_402">false</item>
+    <string name="hsl_arrays_switchUPS">Upscale</string>
+    <string name="hsl_arrays_switchZSLF">ZSL frame count</string>
     <string name="record_location_notification">Save location</string>
     <string name="reduce_noise_when_talk_tooltip">Helps reduce unwanted noises when you talk</string>
     <string name="resume_video_recording">Resume recording</string>
@@ -1072,8 +1072,8 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="retouching_edu_image_light_desc">Portrait of a person with subtle face retouching applied. Their skin texture is smoothed slightly, and skin features like stubble and freckles are reduced but still visible.</string>
     <string name="retouching_edu_image_off_desc">Portrait of a person with no face retouching applied. Their skin is not smoothed with Face Retouching.</string>
     <string name="retouching_edu_image_strong_desc">Portrait photo of a person with smooth face retouching applied. Their skin texture is visibly smoothed, and skin features like freckles and stubble may not be apparent.</string>
-    <item type="string" name="dummy_ae_40e">false</item>
-    <item type="string" name="dummy_ae_40f">false</item>
+    <string name="hsl_buttonsave">Config save</string>
+    <string name="hsl_expslideswitch">New exposure slider</string>
     <string name="retouching_edu_title">Apply face retouching</string>
     <string name="review_button_description">Review</string>
     <string name="review_photo_description">Review photo</string>
@@ -1081,43 +1081,38 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="rotate_ccw_description">Rotate device counter-clockwise</string>
     <string name="rotate_cw_description">Rotate device clockwise</string>
     <string name="scan_document">Scan document</string>
-    <item type="string" name="dummy_ae_417">false</item>
-    <item type="string" name="dummy_ae_418">false</item>
-    <item type="string" name="dummy_ae_419">false</item>
+    <string name="hsl_expslideswitch_desc">The look and functionality of the slider will change. Exposure will not reset on tap while using the slider.</string>
+    <string name="hsl_exptap">HDR (shadow) effect on tap</string>
+    <string name="hsl_exptap_desc">Not related to the patcher, similar to the effect of adjusting the lower exposure on Pixel, only works when tapping.</string>
     <string name="selfie_angle_bottom_sheet_description">When you take a selfie, try holding the camera slightly above your eyes.</string>
     <string name="selfie_angle_bottom_sheet_setting_button">Turn off hints in Settings</string>
     <string name="selfie_angle_bottom_sheet_title">Take a great selfie</string>
     <string name="selfie_angle_bottom_sheet_turn_off_button">Dismiss</string>
     <string name="selfie_angle_message">Try lifting camera for a different angle</string>
-    <item type="string" name="dummy_ae_41f">false</item>
-    <item type="string" name="dummy_ae_420">false</item>
-    <item type="string" name="dummy_ae_421">false</item>
+    <string name="hsl_screenexpcomp">Exposure compensation and HDR</string>
+    <string name="hsl_screenexpcomp_desc">Adjust the exposure compensation and the strength of the HDR effect</string>
+    <string name="hsl_screenfocus">Focus</string>
     <string name="session_saving_image">Saving…</string>
-    <item type="string" name="dummy_ae_423">false</item>
+    <string name="hsl_screenfocuscomp">Adjust focus and enable additional options</string>
     <string name="setting_camera_photo">Camera photo resolution</string>
     <string name="setting_composition">Composition</string>
-    <item type="string" name="dummy_ae_426">false</item>
+    <string name="hsl_toastpatcher">Patcher must be enabled to activate</string>
     <string name="setting_general">General</string>
     <string name="setting_google_feedback">Send feedback</string>
     <string name="setting_google_help">Help</string>
     <string name="setting_google_help_and_feedback">Help &amp; feedback</string>
     <string name="setting_grid_mode">Grid type</string>
-    <item type="string" name="dummy_ae_42c">false</item>
-    <item type="string" name="dummy_ae_42d">false</item>
-    <item type="string" name="dummy_ae_42e">false</item>
+    <string name="hsl_arrays_switchAFTIME">Focus lock time</string>
+    <string name="hsl_arrays_switchCOLORT">Color transform</string>
+    <string name="hsl_evslidersize">Standard exposure slider size</string>
     <string name="setting_off">Off</string>
-    <item type="string" name="dummy_ae_430">false</item>
-    <item type="string" name="dummy_ae_431">false</item>
-    <item type="string" name="dummy_ae_432">false</item>
-    <item type="string" name="dummy_ae_433">false</item>
-    <item type="string" name="dummy_ae_434">false</item>
+    <string name="hsl_jawbbutton">Auto white balance by Julian T.</string>
+    <string name="hsl_libdesc">Select (Third party library from /LMC8.4/ folder) and browse for library file</string>
+    <string name="hsl_libentry">Third Party Library</string>
     <string name="settings_button">Settings</string>
-    <item type="string" name="dummy_ae_436">false</item>
     <string name="settings_changed_item_description">If enabled, %s setting will change.</string>
-    <item type="string" name="dummy_ae_438">false</item>
     <string name="settings_impacted_button">Settings that will change</string>
     <string name="settings_open_desc">Open settings</string>
-    <item type="string" name="dummy_ae_43b">false</item>
     <string name="setup_mars_description">Save your photos and videos to a private storage space in Google Photos on your device. Open Locked Folder using your current device screen lock option.</string>
     <string name="setup_mars_title">Set up Locked Folder</string>
     <string name="shadow_ev_announcement">Shadow is now %1$s</string>
@@ -1126,9 +1121,7 @@ Resampling - Selecting the interpolation method for the final image when shootin
  of image"</string>
     <string name="shadow_knob_tooltip_with_tips_description">"Adjusts only dark parts
  of image. Tap to learn more"</string>
-    <item type="string" name="dummy_ae_442">false</item>
     <string name="share_starting">Sharing to %s…</string>
-    <item type="string" name="dummy_ae_444">false</item>
     <string name="shared_camera_mode_chip_description">Return to camera</string>
     <string name="shared_camera_mode_name">Camera</string>
     <string name="shortcut_selfie_long_label">Take a selfie</string>
@@ -1137,7 +1130,6 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="shortcut_video_short_label">Video</string>
     <string name="sixteen_by_nine">Wide crop (16:9)</string>
     <string name="sixteen_by_nine_desc">wide crop sixteen by nine</string>
-    <item type="string" name="dummy_ae_44d">false</item>
     <string name="social_share_off">Off</string>
     <string name="social_share_on">On</string>
     <string name="social_toast_activity_not_found">Cannot share to %s! Please try again.</string>
@@ -1154,7 +1146,6 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="speech_enhance_off_desc">Speech enhancement off</string>
     <string name="speech_enhance_on">On</string>
     <string name="speech_enhance_on_desc">Speech enhancement on</string>
-    <item type="string" name="dummy_ae_45e">false</item>
     <string name="speed_up_ratio_no_translated">%sx</string>
     <string name="split_1213954198">smartcapture</string>
     <string name="split_141653832">Portrait Native and Assets</string>
@@ -1191,9 +1182,6 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="stabilization_title_enhanced">Standard</string>
     <string name="stabilization_title_locking">Locked</string>
     <string name="stabilization_title_panning">Cinematic Pan</string>
-    <item type="string" name="dummy_ae_483">false</item>
-    <item type="string" name="dummy_ae_484">false</item>
-    <item type="string" name="dummy_ae_485">false</item>
     <string name="storage_estimate">%1$s or %2$s</string>
     <string name="storage_low_warning_toast">Storage low. Tap to manage</string>
     <string name="storage_remaining">%s remaining</string>
@@ -1212,39 +1200,25 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="storage_saver_settings_changed_detail_6">Videos will be recorded in Full HD (1080p)</string>
     <string name="storage_saver_settings_changed_detail_7">Videos will be recorded in 30 frames a second</string>
     <string name="subject_moved_fast_chip">Subject moved too fast</string>
-    <item type="string" name="dummy_ae_498">false</item>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
-    <item type="string" name="dummy_ae_49a">false</item>
-    <item type="string" name="dummy_ae_49b">false</item>
-    <item type="string" name="dummy_ae_49c">false</item>
     <string name="tap_to_start">To start, touch the icon below</string>
     <string name="terms_of_service">Terms of Service</string>
     <string name="text_copied_to_clipboard">Text copied to clipboard</string>
-    <item type="string" name="dummy_ae_4a0">false</item>
-    <item type="string" name="dummy_ae_4a1">false</item>
-    <item type="string" name="dummy_ae_4a2">false</item>
-    <item type="string" name="dummy_ae_4a3">false</item>
-    <item type="string" name="dummy_ae_4a4">false</item>
     <string name="thermal_ev_controls_limited_chip_text">Device is too hot. Exposure controls are limited.</string>
     <string name="thermal_flash_disabled_chip_text">Device is too hot. Flash has been turned off.</string>
-    <item type="string" name="dummy_ae_4a7">false</item>
     <string name="thermal_recording_disasbled_chip_text">Device is too hot. Close Camera until device cools off.</string>
     <string name="thermal_recording_stopped_chip_text">Recording stopped. Close Camera until device cools off.</string>
     <string name="thermal_video_quality_chip_text">Device is too hot. Video quality may be affected.</string>
     <string name="three_by_four">Immersive crop</string>
     <string name="three_by_four_desc">immersive crop</string>
-    <item type="string" name="dummy_ae_4ad">false</item>
     <string name="time_difference_now">Now</string>
     <string name="time_difference_short_days_and_hours">%1$s %2$s</string>
     <string name="time_difference_short_hours_and_minutes">%1$s %2$s</string>
-    <item type="string" name="dummy_ae_4b1">false</item>
     <string name="timelapse_record_speed">%d×</string>
     <string name="timelapse_suggestion_text">Take a Timelapse</string>
     <string name="timer_10_seconds">10 sec</string>
-    <item type="string" name="dummy_ae_4b5">false</item>
     <string name="timer_10_seconds_option_desc">Timer 10 Seconds</string>
     <string name="timer_3_seconds">3 sec</string>
-    <item type="string" name="dummy_ae_4b8">false</item>
     <string name="timer_3_seconds_option_desc">Timer 3 Seconds</string>
     <string name="timer_auto">Auto</string>
     <string name="timer_auto_desc">Timer auto</string>
@@ -1252,12 +1226,9 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="timer_off">Off</string>
     <string name="timer_off_desc">Timer off</string>
     <string name="timer_options_desc">Timer options</string>
-    <item type="string" name="dummy_ae_4c0">false</item>
-    <item type="string" name="dummy_ae_4c1">false</item>
     <string name="toast_cannot_play_video">"Can't preview in Camera. Try Photos."</string>
     <string name="toast_motion_text">Top Shot</string>
     <string name="toast_options">Options</string>
-    <item type="string" name="dummy_ae_4c5">false</item>
     <string name="too_fast">Too fast</string>
     <string name="tooltip_msg_hfr_record_speed_1_4x">Good for sports</string>
     <string name="tooltip_msg_hfr_record_speed_1_8x">Good for fast movements</string>
@@ -1274,26 +1245,16 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="top_center">Top-center</string>
     <string name="top_left">Top-left</string>
     <string name="top_right">Top-right</string>
-    <item type="string" name="dummy_ae_4d6">false</item>
-    <item type="string" name="dummy_ae_4d7">false</item>
-    <item type="string" name="dummy_ae_4d8">false</item>
     <string name="translate_tooltip_body">Translate text instantly or get info about things you see</string>
     <string name="translate_tooltip_title">Live Translate and more</string>
     <string name="translate_tooltip_try_it">Try it</string>
     <string name="try_speech_enhancement_tooltip">Try speech enhancement</string>
     <string name="try_stabilization_tooltip">Try video stabilization</string>
-    <item type="string" name="dummy_ae_4de">false</item>
     <string name="turn_off_lsm_dialog_message">To change this setting, turn off Storage Saver in Settings.</string>
     <string name="turn_off_lsm_dialog_title">Turn off Storage Saver?</string>
-    <item type="string" name="dummy_ae_4e1">false</item>
-    <item type="string" name="dummy_ae_4e2">false</item>
-    <item type="string" name="dummy_ae_4e3">false</item>
-    <item type="string" name="dummy_ae_4e4">false</item>
     <string name="update_camera_to_use_lens">Check for updates</string>
     <string name="update_failed_notification_text">Failed to update camera. Please file a bug.</string>
     <string name="update_failed_notification_title">Camera Update</string>
-    <item type="string" name="dummy_ae_4e8">false</item>
-    <item type="string" name="dummy_ae_4e9">false</item>
     <string name="update_ready_tap_restart">Update is ready. Tap to restart and install.</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
@@ -1307,13 +1268,10 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="vid_chip_recording_too_short">Video not saved. Recording time too short.</string>
     <string name="vid_chip_session_err">"Couldn't record video. Leave video mode, then try again."</string>
     <string name="video_accessibility_peek">Video taken</string>
-    <item type="string" name="dummy_ae_4f7">false</item>
     <string name="video_control_play">Play Video</string>
     <string name="video_date_content_description">Video taken on %s</string>
-    <item type="string" name="dummy_ae_4fa">false</item>
     <string name="video_intent_label">Video</string>
     <string name="video_mode_title">Normal</string>
-    <item type="string" name="dummy_ae_4fd">false</item>
     <string name="video_recording_paused_indicator">PAUSED %1$s</string>
     <string name="video_res">Resolution</string>
     <string name="video_res_4k">4K (Ultra-high resolution)</string>
@@ -1322,9 +1280,7 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="video_res_fhd">Full HD (1080p)</string>
     <string name="video_res_fhd_desc">1080p Full HD</string>
     <string name="video_storage_full_error_free_up_space">Free up space</string>
-    <item type="string" name="dummy_ae_506">false</item>
     <string name="video_storage_full_error_recording_dialog_title">"Can't record more video"</string>
-    <item type="string" name="dummy_ae_508">false</item>
     <string name="video_storage_max_duration_dialog_body">Video reached the duration limit.</string>
     <string name="video_storage_max_file_size_dialog_body">Video reached the 4 GB size limit.</string>
     <string name="view_in_settings_button">Go to Settings</string>
@@ -1332,8 +1288,6 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="volume_key_shutter">Shutter</string>
     <string name="volume_key_volume">Volume</string>
     <string name="volume_key_zoom">Zoom</string>
-    <item type="string" name="dummy_ae_510">false</item>
-    <item type="string" name="dummy_ae_511">false</item>
     <string name="warm_light_on_with_flash">Screen will light up</string>
     <string name="wb_accessibility_content_description_reset_button">Reset white balance button</string>
     <string name="wb_accessibility_content_description_slider">White balance</string>
@@ -1343,36 +1297,8 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="wb_education_bottom_sheet_info">To adjust how colors are displayed on your device, turn on Color correction.</string>
     <string name="wb_education_bottom_sheet_information_settings">Settings</string>
     <string name="wb_education_bottom_sheet_title">White balance</string>
-    <item type="string" name="dummy_ae_51b">false</item>
-    <item type="string" name="dummy_ae_51c">false</item>
-    <item type="string" name="dummy_ae_51d">false</item>
-    <item type="string" name="dummy_ae_51e">false</item>
     <string name="wear_install_notification_toast">Finish setup on watch</string>
-    <item type="string" name="dummy_ae_520">false</item>
-    <item type="string" name="dummy_ae_521">false</item>
-    <item type="string" name="dummy_ae_522">false</item>
-    <item type="string" name="dummy_ae_523">false</item>
-    <item type="string" name="dummy_ae_524">false</item>
-    <item type="string" name="dummy_ae_525">false</item>
-    <item type="string" name="dummy_ae_526">false</item>
-    <item type="string" name="dummy_ae_527">false</item>
-    <item type="string" name="dummy_ae_528">false</item>
-    <item type="string" name="dummy_ae_529">false</item>
-    <item type="string" name="dummy_ae_52a">false</item>
-    <item type="string" name="dummy_ae_52b">false</item>
-    <item type="string" name="dummy_ae_52c">false</item>
-    <item type="string" name="dummy_ae_52d">false</item>
-    <item type="string" name="dummy_ae_52e">false</item>
-    <item type="string" name="dummy_ae_52f">false</item>
     <string name="wide_angle_accessibility_peek">Wide angle photo taken</string>
-    <item type="string" name="dummy_ae_531">false</item>
-    <item type="string" name="dummy_ae_532">false</item>
-    <item type="string" name="dummy_ae_533">false</item>
-    <item type="string" name="dummy_ae_534">false</item>
-    <item type="string" name="dummy_ae_535">false</item>
-    <item type="string" name="dummy_ae_536">false</item>
-    <item type="string" name="dummy_ae_537">false</item>
-    <item type="string" name="dummy_ae_538">false</item>
     <string name="zoom_ffc_wide_tooltip">Zoom out for wider selfies</string>
     <string name="zoom_minus_desc">Zoom out</string>
     <string name="zoom_plus_desc">Zoom in</string>
@@ -1381,8 +1307,8 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="hsl_ldrhdr">HDR</string>
     <string name="hsl_ldrextra">Optional</string>
     <string name="hsl_ldrlight">Light and Shadow</string>
-    <string name="hsl_confimport">Import ready-made configs</string>
-    <string name="hsl_confimport_desc">Current settings will be reset. Configs for your phone model will appear in the /LMC8.4/ folder.</string>
+    <string name="hsl_confimport">Reset settings</string>
+    <string name="hsl_confimport_desc">Current settings will be reset.</string>
     <string name="pref_aemode_back_title">Rear camera shutter HDR+</string>
     <string name="pref_aemode_front_title">Front camera shutter HDR+</string>
     <string name="hsl_libs_title">Library</string>
@@ -1448,8 +1374,6 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="hsl_opsystem">System</string>
     <string name="shortcut_opensett_long_label">Open settings</string>
     <string name="shortcut_opensett_short_label">Settings</string>
-    <item type="string" name="dummy_ae_583">false</item>
-    <item type="string" name="dummy_ae_584">false</item>
     <string name="hsl_noisemanualiso">Manual ISO value</string>
     <string name="hsl_noisecoefiso">ISO noise reduction coefficient</string>
     <string name="hsl_noisesystem">System model</string>
@@ -1463,4 +1387,81 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="hsl_livehdr">Enable LiveHDR</string>
     <string name="hsl_info_samsung">Variable aperture was on Samsung flagships of yesteryear: Galaxy S10, S9, etc.</string>
     <string name="hsl_gmatting">Enhanced Edges (Portrait)</string>
+    <string name="hsl_framezsl">ZSL / HDRNet frame count</string>
+    <item type="string" name="APKTOOL_DUMMY_433" />
+    <item type="string" name="APKTOOL_DUMMY_434" />
+    <item type="string" name="APKTOOL_DUMMY_436" />
+    <item type="string" name="APKTOOL_DUMMY_438" />
+    <item type="string" name="APKTOOL_DUMMY_43b" />
+    <item type="string" name="APKTOOL_DUMMY_442" />
+    <item type="string" name="APKTOOL_DUMMY_444" />
+    <item type="string" name="APKTOOL_DUMMY_44d" />
+    <item type="string" name="APKTOOL_DUMMY_45e" />
+    <item type="string" name="APKTOOL_DUMMY_483" />
+    <item type="string" name="APKTOOL_DUMMY_484" />
+    <item type="string" name="APKTOOL_DUMMY_485" />
+    <item type="string" name="APKTOOL_DUMMY_498" />
+    <item type="string" name="APKTOOL_DUMMY_49a" />
+    <item type="string" name="APKTOOL_DUMMY_49b" />
+    <item type="string" name="APKTOOL_DUMMY_49c" />
+    <item type="string" name="APKTOOL_DUMMY_4a0" />
+    <item type="string" name="APKTOOL_DUMMY_4a1" />
+    <item type="string" name="APKTOOL_DUMMY_4a2" />
+    <item type="string" name="APKTOOL_DUMMY_4a3" />
+    <item type="string" name="APKTOOL_DUMMY_4a4" />
+    <item type="string" name="APKTOOL_DUMMY_4a7" />
+    <item type="string" name="APKTOOL_DUMMY_4ad" />
+    <item type="string" name="APKTOOL_DUMMY_4b1" />
+    <item type="string" name="APKTOOL_DUMMY_4b5" />
+    <item type="string" name="APKTOOL_DUMMY_4b8" />
+    <item type="string" name="APKTOOL_DUMMY_4c0" />
+    <item type="string" name="APKTOOL_DUMMY_4c1" />
+    <item type="string" name="APKTOOL_DUMMY_4c5" />
+    <item type="string" name="APKTOOL_DUMMY_4d6" />
+    <item type="string" name="APKTOOL_DUMMY_4d7" />
+    <item type="string" name="APKTOOL_DUMMY_4d8" />
+    <item type="string" name="APKTOOL_DUMMY_4de" />
+    <item type="string" name="APKTOOL_DUMMY_4e1" />
+    <item type="string" name="APKTOOL_DUMMY_4e2" />
+    <item type="string" name="APKTOOL_DUMMY_4e3" />
+    <item type="string" name="APKTOOL_DUMMY_4e4" />
+    <item type="string" name="APKTOOL_DUMMY_4e8" />
+    <item type="string" name="APKTOOL_DUMMY_4e9" />
+    <item type="string" name="APKTOOL_DUMMY_4f7" />
+    <item type="string" name="APKTOOL_DUMMY_4fa" />
+    <item type="string" name="APKTOOL_DUMMY_4fd" />
+    <item type="string" name="APKTOOL_DUMMY_506" />
+    <item type="string" name="APKTOOL_DUMMY_508" />
+    <item type="string" name="APKTOOL_DUMMY_510" />
+    <item type="string" name="APKTOOL_DUMMY_511" />
+    <item type="string" name="APKTOOL_DUMMY_51b" />
+    <item type="string" name="APKTOOL_DUMMY_51c" />
+    <item type="string" name="APKTOOL_DUMMY_51d" />
+    <item type="string" name="APKTOOL_DUMMY_51e" />
+    <item type="string" name="APKTOOL_DUMMY_520" />
+    <item type="string" name="APKTOOL_DUMMY_521" />
+    <item type="string" name="APKTOOL_DUMMY_522" />
+    <item type="string" name="APKTOOL_DUMMY_523" />
+    <item type="string" name="APKTOOL_DUMMY_524" />
+    <item type="string" name="APKTOOL_DUMMY_525" />
+    <item type="string" name="APKTOOL_DUMMY_526" />
+    <item type="string" name="APKTOOL_DUMMY_527" />
+    <item type="string" name="APKTOOL_DUMMY_528" />
+    <item type="string" name="APKTOOL_DUMMY_529" />
+    <item type="string" name="APKTOOL_DUMMY_52a" />
+    <item type="string" name="APKTOOL_DUMMY_52b" />
+    <item type="string" name="APKTOOL_DUMMY_52c" />
+    <item type="string" name="APKTOOL_DUMMY_52d" />
+    <item type="string" name="APKTOOL_DUMMY_52e" />
+    <item type="string" name="APKTOOL_DUMMY_52f" />
+    <item type="string" name="APKTOOL_DUMMY_531" />
+    <item type="string" name="APKTOOL_DUMMY_532" />
+    <item type="string" name="APKTOOL_DUMMY_533" />
+    <item type="string" name="APKTOOL_DUMMY_534" />
+    <item type="string" name="APKTOOL_DUMMY_535" />
+    <item type="string" name="APKTOOL_DUMMY_536" />
+    <item type="string" name="APKTOOL_DUMMY_537" />
+    <item type="string" name="APKTOOL_DUMMY_538" />
+    <item type="string" name="APKTOOL_DUMMY_583" />
+    <item type="string" name="APKTOOL_DUMMY_584" />
 </resources>

@@ -133,7 +133,7 @@
     :try_start_1
     sget-object v4, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
-    sget v5, Lcom/Helper;->sJPGQuality:I
+    const/16 v5, 0x5a
 
     invoke-virtual {v1, v4, v5, v3}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
     :try_end_1

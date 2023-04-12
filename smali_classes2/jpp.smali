@@ -27,7 +27,7 @@
 
 # virtual methods
 .method public final fB(Ljava/lang/Object;)V
-    .locals 4
+    .locals 6
 
     iget v0, p0, Ljpp;->b:I
 
@@ -45,15 +45,15 @@
 
     move-result p1
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_9
 
     iget-object p1, v0, Ljpq;->d:Ljhh;
 
     iget-boolean v0, p1, Ljhh;->p:Z
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_8
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
     :pswitch_0
     iget-object v0, p0, Ljpp;->a:Ljpq;
@@ -86,11 +86,11 @@
 
     iget-boolean v3, p1, Lhbt;->b:Z
 
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_5
 
     iget-boolean p1, p1, Lhbt;->a:Z
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_3
 
     iget-object p1, v0, Ljpq;->b:Ldmh;
 
@@ -100,13 +100,31 @@
 
     iget-object p1, v0, Ljpq;->c:Lddf;
 
+    const-string v5, "pref_rn8p_key"
+
+    invoke-static {v5}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
     sget-object v2, Lddm;->X:Lddg;
 
     invoke-interface {p1, v2}, Lddf;->k(Lddg;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_1
+    goto :goto_0
+
+    :cond_1
+    sget-object v2, Lddm;->XF:Lddg;
+
+    invoke-interface {p1, v2}, Lddf;->k(Lddg;)Z
+
+    move-result p1
+
+    :goto_0
+    if-eqz p1, :cond_2
 
     iget-object p1, v0, Ljpq;->c:Lddf;
 
@@ -116,16 +134,16 @@
 
     move-result p1
 
-    if-nez p1, :cond_1
+    if-nez p1, :cond_2
 
     iget-object p1, v0, Ljpq;->b:Ldmh;
 
     invoke-interface {p1, v1}, Ldmh;->l(Z)V
 
-    :cond_1
+    :cond_2
     return-void
 
-    :cond_2
+    :cond_3
     iget-object p1, v0, Ljpq;->b:Ldmh;
 
     invoke-interface {p1, v2}, Ldmh;->l(Z)V
@@ -138,7 +156,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_4
 
     iget-object p1, v0, Ljpq;->b:Ldmh;
 
@@ -148,7 +166,7 @@
 
     return-void
 
-    :cond_3
+    :cond_4
     iget-object p1, v0, Ljpq;->b:Ldmh;
 
     sget-object v0, Ldme;->c:Ldme;
@@ -157,7 +175,7 @@
 
     return-void
 
-    :cond_4
+    :cond_5
     iget-object p1, v0, Ljpq;->b:Ldmh;
 
     invoke-interface {p1, v2}, Ldmh;->l(Z)V
@@ -179,7 +197,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_7
 
     iget-object p1, v0, Ljpq;->c:Lddf;
 
@@ -189,13 +207,13 @@
 
     move-result p1
 
-    if-nez p1, :cond_5
+    if-nez p1, :cond_6
 
     iget-object p1, v0, Ljpq;->b:Ldmh;
 
     invoke-interface {p1, v1}, Ldmh;->j(Z)V
 
-    :cond_5
+    :cond_6
     iget-object p1, v0, Ljpq;->b:Ldmh;
 
     invoke-interface {p1}, Ldmh;->k()V
@@ -204,10 +222,10 @@
 
     invoke-interface {p1, v2}, Ldmh;->m(Z)V
 
-    :cond_6
+    :cond_7
     return-void
 
-    :cond_7
+    :cond_8
     iput-boolean v2, p1, Ljhh;->p:Z
 
     iget-object v0, p1, Ljhh;->c:Lelw;
@@ -218,11 +236,9 @@
 
     return-void
 
-    :cond_8
-    :goto_0
+    :cond_9
+    :goto_1
     return-void
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0

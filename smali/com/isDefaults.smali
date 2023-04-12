@@ -24,7 +24,7 @@
 
     sget-object v0, Lddq;->e:Lddg;
 
-    invoke-interface {v1, v0, v2}, Lddk;->s(Lddg;Z)V
+    invoke-interface {v1, v0, v3}, Lddk;->s(Lddg;Z)V
 
     return-void
 .end method

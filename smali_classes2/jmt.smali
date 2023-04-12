@@ -339,11 +339,25 @@
 
     move-result p4
 
+    const-string p5, "pref_vfres_key"
+
+    invoke-static {p5}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result p5
+
+    if-nez p5, :cond_2
+
+    const/16 p5, 0x1e0
+
+    goto :goto_1
+
+    :cond_2
     const/16 p5, 0x438
 
+    :goto_1
     const/4 p6, 0x0
 
-    if-eqz p4, :cond_3
+    if-eqz p4, :cond_4
 
     iget-object p4, p0, Ljmt;->c:Lddf;
 
@@ -361,7 +375,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     invoke-virtual {p4}, Lojc;->c()Ljava/lang/Object;
 
@@ -373,18 +387,18 @@
 
     move-result p5
 
-    goto :goto_1
-
-    :cond_2
-    :goto_1
-    invoke-static {p5, p6}, Ljava/lang/Math;->max(II)I
-
-    move-result p5
-
     goto :goto_2
 
     :cond_3
     :goto_2
+    invoke-static {p5, p6}, Ljava/lang/Math;->max(II)I
+
+    move-result p5
+
+    goto :goto_3
+
+    :cond_4
+    :goto_3
     new-instance p4, Ljava/util/ArrayList;
 
     invoke-direct {p4}, Ljava/util/ArrayList;-><init>()V
@@ -393,13 +407,13 @@
 
     move-result-object p1
 
-    :cond_4
-    :goto_3
+    :cond_5
+    :goto_4
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_6
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -409,7 +423,7 @@
 
     iget v1, v0, Llig;->b:I
 
-    if-gt v1, p5, :cond_4
+    if-gt v1, p5, :cond_5
 
     new-instance v2, Llig;
 
@@ -419,9 +433,9 @@
 
     invoke-virtual {p4, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto :goto_3
+    goto :goto_4
 
-    :cond_5
+    :cond_6
     iget-object p1, p0, Ljmt;->d:Ljava/lang/String;
 
     new-instance p5, Landroid/media/MediaCodecList;
@@ -436,8 +450,8 @@
 
     const/4 v1, 0x0
 
-    :goto_4
-    if-ge v1, v0, :cond_8
+    :goto_5
+    if-ge v1, v0, :cond_9
 
     aget-object v2, p5, v1
 
@@ -449,8 +463,8 @@
 
     const/4 v5, 0x0
 
-    :goto_5
-    if-ge v5, v4, :cond_7
+    :goto_6
+    if-ge v5, v4, :cond_8
 
     aget-object v6, v3, v5
 
@@ -458,37 +472,37 @@
 
     move-result v6
 
-    if-eqz v6, :cond_6
+    if-eqz v6, :cond_7
 
     invoke-virtual {v2}, Landroid/media/MediaCodecInfo;->isEncoder()Z
 
     move-result v6
 
-    if-eqz v6, :cond_6
+    if-eqz v6, :cond_7
 
     invoke-virtual {v2}, Landroid/media/MediaCodecInfo;->isHardwareAccelerated()Z
 
     move-result v6
 
-    if-eqz v6, :cond_6
+    if-eqz v6, :cond_7
+
+    goto :goto_7
+
+    :cond_7
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_6
 
-    :cond_6
-    add-int/lit8 v5, v5, 0x1
+    :cond_8
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_5
 
-    :cond_7
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_4
-
-    :cond_8
+    :cond_9
     const/4 v2, 0x0
 
-    :goto_6
-    if-nez v2, :cond_9
+    :goto_7
+    if-nez v2, :cond_a
 
     sget-object p5, Ljmt;->a:Louj;
 
@@ -502,9 +516,9 @@
 
     invoke-static {p5, v0, p1, p6}, Ld;->u(Lova;Ljava/lang/String;Ljava/lang/Object;C)V
 
-    goto :goto_8
+    goto :goto_9
 
-    :cond_9
+    :cond_a
     invoke-virtual {v2, p1}, Landroid/media/MediaCodecInfo;->getCapabilitiesForType(Ljava/lang/String;)Landroid/media/MediaCodecInfo$CodecCapabilities;
 
     move-result-object p1
@@ -521,13 +535,13 @@
 
     move-result-object p4
 
-    :cond_a
-    :goto_7
+    :cond_b
+    :goto_8
     invoke-interface {p4}, Ljava/util/Iterator;->hasNext()Z
 
     move-result p6
 
-    if-eqz p6, :cond_b
+    if-eqz p6, :cond_c
 
     invoke-interface {p4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -543,16 +557,16 @@
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_b
 
     invoke-virtual {p5, p6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto :goto_7
+    goto :goto_8
 
-    :cond_b
+    :cond_c
     move-object p4, p5
 
-    :goto_8
+    :goto_9
     invoke-virtual {p0, p4, p2, p3}, Ljmt;->a(Ljava/util/List;D)Llig;
 
     move-result-object p1

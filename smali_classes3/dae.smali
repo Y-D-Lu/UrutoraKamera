@@ -62,7 +62,7 @@
 
     sget-object v0, Lddl;->m:Lddi;
 
-    const/16 v3, 0x258
+    const/4 v3, -0x1
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -90,7 +90,11 @@
 
     sget-object v0, Ldde;->a:Lddg;
 
-    const/high16 v4, 0x42340000    # 45.0f
+    const v4, 0x42340000    # 45.0f
+
+    invoke-static {}, Lhsld;->setHDRregion()F
+
+    move-result v4
 
     invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -118,17 +122,13 @@
 
     invoke-virtual {v1, v0, v2}, Ldep;->s(Lddg;Z)V
 
-    sget-object v0, Lddm;->g:Lddi;
+    sget-object v0, Lddm;->i:Lddi;
 
-    const/4 v4, 0x5
+    const/16 v4, 0xf
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
-
-    invoke-interface {p0, v0, v4}, Lddj;->l(Lddi;Ljava/lang/Integer;)V
-
-    sget-object v0, Lddm;->h:Lddi;
 
     invoke-interface {p0, v0, v4}, Lddj;->l(Lddi;Ljava/lang/Integer;)V
 
@@ -140,17 +140,13 @@
 
     invoke-virtual {v1, v0, v2}, Ldep;->s(Lddg;Z)V
 
-    sget-object v0, Lddm;->q:Lddi;
+    sget-object v0, Lddm;->r:Lddi;
 
     const/16 v5, 0xa
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
-
-    invoke-interface {p0, v0, v5}, Lddj;->l(Lddi;Ljava/lang/Integer;)V
-
-    sget-object v0, Lddm;->r:Lddi;
 
     invoke-interface {p0, v0, v5}, Lddj;->l(Lddi;Ljava/lang/Integer;)V
 

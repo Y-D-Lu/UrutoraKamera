@@ -65,7 +65,7 @@
     const-string v0, "pref_awb_key_5"
 
     :goto_0
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
@@ -849,7 +849,7 @@
     const-string v0, "pref_grgb_front_key"
 
     :goto_0
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 

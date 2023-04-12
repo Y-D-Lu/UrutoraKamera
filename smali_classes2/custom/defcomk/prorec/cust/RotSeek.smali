@@ -404,7 +404,7 @@
 
     const-string v1, "pref_camera_vibrator_key"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -463,7 +463,7 @@
 
     const-string v0, "pref_manual_focus_slider_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -1078,7 +1078,7 @@
 
     const-string v0, "manualfocus_restart"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 

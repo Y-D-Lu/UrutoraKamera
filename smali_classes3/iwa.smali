@@ -520,11 +520,11 @@
 
     const-string v8, "pref_stream_opmode_key"
 
-    invoke-static {v8}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    invoke-static {v8}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v8}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v8
 

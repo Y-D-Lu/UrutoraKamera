@@ -80,7 +80,7 @@
 
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setRepeatMode(I)V
 
-    const-wide/16 v1, 0x1770
+    const-wide/16 v1, 0xbb8
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 

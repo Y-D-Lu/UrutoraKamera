@@ -508,7 +508,7 @@
     :goto_1
     iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->e:Landroid/animation/ValueAnimator;
 
-    const/16 p2, 0x0
+    const/16 p2, 0xfa
 
     invoke-static {v0, p2}, Ljava/lang/Math;->min(II)I
 

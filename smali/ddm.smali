@@ -51,6 +51,8 @@
 
 .field public static final X:Lddg;
 
+.field public static final XF:Lddg;
+
 .field public static final Y:Lddg;
 
 .field public static final Z:Lddg;
@@ -891,6 +893,20 @@
     move-result-object v0
 
     sput-object v0, Lddm;->X:Lddg;
+
+    new-instance v0, Lddh;
+
+    invoke-direct {v0}, Lddh;-><init>()V
+
+    const-string v1, "dualev_enabled"
+
+    iput-object v1, v0, Lddh;->a:Ljava/lang/String;
+
+    invoke-virtual {v0}, Lddh;->f()Lddg;
+
+    move-result-object v0
+
+    sput-object v0, Lddm;->XF:Lddg;
 
     new-instance v0, Lddh;
 

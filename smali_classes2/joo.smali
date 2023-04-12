@@ -104,7 +104,7 @@
 
     move-result-object v1
 
-    const-wide/16 v2, 0x0
+    const-wide/16 v2, 0xfa
 
     invoke-virtual {v1, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

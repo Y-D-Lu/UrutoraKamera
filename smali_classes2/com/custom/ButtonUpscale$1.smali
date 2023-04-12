@@ -44,7 +44,7 @@
 
     sput v2, Lcom/custom/ButtonUpscale;->SelState:I
 
-    const-string v1, "pref_upscale_key"
+    const-string v1, "pref_upscaleon_key"
 
     invoke-static {v1, v2}, Lcom/Helper;->setValue(Ljava/lang/String;I)V
 

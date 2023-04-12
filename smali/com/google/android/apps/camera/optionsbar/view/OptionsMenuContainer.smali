@@ -561,6 +561,147 @@
     return-object p1
 .end method
 
+.method public final getVisibityButtons()V
+    .locals 9
+
+    const-string v1, "pref_aux_layout"
+
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v1
+
+    packed-switch v1, :pswitch_data_0
+
+    :pswitch_0
+    sget-object v7, Lcom/Helper;->sModeTo:Ljrl;
+
+    sget-object v8, Ljrl;->p:Ljrl;
+
+    if-ne v7, v8, :cond_0
+
+    const v1, 0x8
+
+    const v2, 0x7f0b0049
+
+    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getFrameLayout(I)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    const v1, 0x8
+
+    const v2, 0x7f0b0048
+
+    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getFrameLayout(I)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    goto :goto_0
+
+    :cond_0
+    const v1, 0x8
+
+    const v2, 0x7f0b0049
+
+    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getFrameLayout(I)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    const v1, 0x0
+
+    const v2, 0x7f0b0048
+
+    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getFrameLayout(I)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    :goto_0
+    goto/16 :goto_2
+
+    :pswitch_1
+    sget-object v7, Lcom/Helper;->sModeTo:Ljrl;
+
+    sget-object v8, Ljrl;->p:Ljrl;
+
+    if-ne v7, v8, :cond_1
+
+    const v1, 0x8
+
+    const v2, 0x7f0b0049
+
+    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getFrameLayout(I)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    const v1, 0x8
+
+    const v2, 0x7f0b0048
+
+    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getFrameLayout(I)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    goto :goto_1
+
+    :cond_1
+    const v1, 0x0
+
+    const v2, 0x7f0b0049
+
+    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getFrameLayout(I)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    const v1, 0x8
+
+    const v2, 0x7f0b0048
+
+    invoke-virtual {p0, v2}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getFrameLayout(I)Landroid/widget/FrameLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    :goto_1
+    goto :goto_2
+
+    :goto_2
+    sget-object v7, Lcom/Helper;->sModeTo:Ljrl;
+
+    sget-object v8, Ljrl;->m:Ljrl;
+
+    if-ne v7, v8, :cond_2
+
+    const v1, 0x0
+
+    goto :goto_3
+
+    :cond_2
+    const v1, 0x8
+
+    :goto_3
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
 .method public final h()Landroid/widget/ImageButton;
     .locals 1
 
@@ -1560,6 +1701,8 @@
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->z()V
 
     :cond_0
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getVisibityButtons()V
+
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->zz()V
 
     return-void
@@ -1583,6 +1726,8 @@
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->z()V
 
     :cond_0
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->getVisibityButtons()V
+
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->zz()V
 
     return-void

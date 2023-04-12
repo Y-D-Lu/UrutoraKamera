@@ -4947,7 +4947,7 @@
     :cond_3
     const-string v7, "pref_camera_hdrplus_option_available_key"
 
-    invoke-static {v7}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v7}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v7
 

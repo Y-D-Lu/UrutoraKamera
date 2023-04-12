@@ -98,7 +98,7 @@
 
     iput-object v0, p0, Ljsh;->c:Landroid/animation/Animator;
 
-    const-wide/16 v1, 0x0
+    const-wide/16 v1, 0x3c
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
 
@@ -154,7 +154,7 @@
 
     iput-object v0, p0, Ljsh;->c:Landroid/animation/Animator;
 
-    const-wide/16 v1, 0x0
+    const-wide/16 v1, 0x3c
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
 

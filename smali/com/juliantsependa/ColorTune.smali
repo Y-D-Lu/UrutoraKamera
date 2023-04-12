@@ -111,7 +111,7 @@
 
     const-string v2, "WB_correction_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -123,7 +123,7 @@
 
     const-string v2, "WB_color_space_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -217,7 +217,7 @@
 
     const-string v10, "CCT_WB_Offset_key"
 
-    invoke-static {v10}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -390,7 +390,7 @@
 
     const-string v10, "CCT_WB_intensity_key"
 
-    invoke-static {v10}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -624,10 +624,6 @@
 
     const-string v0, "pref_autocct_key"
 
-    invoke-static {v0}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
     invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
@@ -641,7 +637,7 @@
 
     const-string v10, "pref_satCCT_key"
 
-    invoke-static {v10}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -655,7 +651,7 @@
 
     const-string v11, "pref_R_hue_key"
 
-    invoke-static {v11}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v11}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -669,7 +665,7 @@
 
     const-string v10, "pref_satCCT_R_key"
 
-    invoke-static {v10}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -683,7 +679,7 @@
 
     const-string v10, "pref_G_hue_key"
 
-    invoke-static {v10}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -697,7 +693,7 @@
 
     const-string v10, "pref_satCCT_G_key"
 
-    invoke-static {v10}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -711,7 +707,7 @@
 
     const-string v9, "pref_B_hue_key"
 
-    invoke-static {v9}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -725,7 +721,7 @@
 
     const-string v10, "pref_satCCT_B_key"
 
-    invoke-static {v10}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -777,7 +773,7 @@
 
     const-string v9, "pref_global_hue_key"
 
-    invoke-static {v9}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9}, Lcom/SDE/LensValue;->SetLensValueCT(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 

@@ -404,7 +404,7 @@
 
     const-string v3, "d65_bg_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -414,7 +414,7 @@
 
     const-string v4, "d65_rg_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -430,7 +430,7 @@
 
     const-string v3, "d75_bg_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -440,7 +440,7 @@
 
     const-string v4, "d75_rg_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -456,7 +456,7 @@
 
     const-string v3, "a_bg_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -466,7 +466,7 @@
 
     const-string v4, "a_rg_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -482,7 +482,7 @@
 
     const-string v3, "tl84_bg_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -492,7 +492,7 @@
 
     const-string v4, "tl84_rg_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -508,7 +508,7 @@
 
     const-string v3, "cw_bg_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -518,7 +518,7 @@
 
     const-string v4, "cw_rg_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -534,7 +534,7 @@
 
     const-string v3, "h_bg_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -544,7 +544,7 @@
 
     const-string v4, "h_rg_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -560,7 +560,7 @@
 
     const-string v3, "d50_bg_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -570,7 +570,7 @@
 
     const-string v4, "d50_rg_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -586,7 +586,7 @@
 
     const-string v3, "f_bg_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -596,7 +596,7 @@
 
     const-string v4, "f_rg_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 

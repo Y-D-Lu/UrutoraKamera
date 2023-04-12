@@ -22,36 +22,170 @@
     return-void
 .end method
 
-.method public static getCaptureResult(Llzv;)Z
-    .locals 2
+.method public static final a(Lkbi;ZLjrl;)F
+    .locals 3
 
-    invoke-static {}, Lagc/Agc;->noNeedFixLens()Z
+    sget-object v0, Ljrl;->g:Ljrl;
 
-    move-result v0
+    if-ne p2, v0, :cond_0
 
-    const/4 v1, 0x1
+    iget-object v0, p0, Lkbi;->A:Llwd;
 
-    if-eqz v0, :cond_0
+    sget-object v1, Llwd;->a:Llwd;
 
-    sget-object v0, Landroid/hardware/camera2/CaptureResult;->CONTROL_AF_SCENE_CHANGE:Landroid/hardware/camera2/CaptureResult$Key;
+    if-ne v0, v1, :cond_0
 
-    invoke-interface {p0, v0}, Llzv;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    iget-object v0, p0, Lkbi;->c:Lddf;
 
-    move-result-object p0
+    invoke-interface {v0}, Lddf;->b()V
 
-    check-cast p0, Ljava/lang/Integer;
+    :cond_0
+    invoke-virtual {p0}, Lkbi;->Z()Lghx;
 
-    if-eqz p0, :cond_1
+    move-result-object v0
 
-    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+    iget-object v1, p0, Lkbi;->o:Llco;
+
+    invoke-interface {v1}, Llco;->fA()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Float;
+
+    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
+
+    move-result v1
+
+    invoke-virtual {p0, v0}, Lkbi;->aa(Lghx;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    if-nez p1, :cond_1
+
+    iget-object p0, p0, Lkbi;->W:Ldkm;
+
+    invoke-virtual {p0, v0}, Ldkm;->a(Llvp;)F
 
     move-result p0
 
-    if-ne p0, v1, :cond_1
+    return p0
+
+    :cond_1
+    invoke-virtual {p0}, Lkbi;->X()Z
+
+    move-result p1
+
+    const/4 v0, 0x1
+
+    if-eqz p1, :cond_6
+
+    iget-object p1, p0, Lkbi;->A:Llwd;
+
+    sget-object v2, Llwd;->a:Llwd;
+
+    if-ne p1, v2, :cond_4
+
+    iget-boolean p1, p0, Lkbi;->L:Z
+
+    if-nez p1, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {p0}, Lkbi;->Y()Z
+
+    move-result p1
+
+    iget-object p0, p0, Lkbi;->I:Lkad;
+
+    if-eqz p1, :cond_3
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Lkad;->a(I)F
+
+    move-result v1
+
+    goto :goto_1
+
+    :cond_3
+    invoke-virtual {p0, v0}, Lkad;->a(I)F
+
+    move-result v1
+
+    goto :goto_1
+
+    :cond_4
+    :goto_0
+    sget-object p1, Ljrl;->g:Ljrl;
+
+    if-eq p2, p1, :cond_5
+
+    goto :goto_1
+
+    :cond_5
+    invoke-virtual {p0}, Lkbi;->I()F
+
+    move-result v1
+
+    :goto_1
+    return v1
+
+    :cond_6
+    sget-object p1, Ljrl;->g:Ljrl;
+
+    if-eq p2, p1, :cond_7
 
     return v1
 
-    :cond_0
+    :cond_7
+    iget-object p1, p0, Lkbi;->A:Llwd;
+
+    sget-object p2, Llwd;->a:Llwd;
+
+    if-ne p1, p2, :cond_9
+
+    iget-boolean p1, p0, Lkbi;->L:Z
+
+    if-nez p1, :cond_8
+
+    goto :goto_2
+
+    :cond_8
+    iget-object p1, p0, Lkbi;->I:Lkad;
+
+    iget-object p0, p0, Lkbi;->c:Lddf;
+
+    sget-object p2, Lddx;->H:Lddg;
+
+    invoke-interface {p0, p2}, Lddf;->k(Lddg;)Z
+
+    move-result p0
+
+    xor-int/2addr p0, v0
+
+    invoke-virtual {p1, p0}, Lkad;->a(I)F
+
+    move-result p0
+
+    return p0
+
+    :cond_9
+    :goto_2
+    invoke-virtual {p0}, Lkbi;->I()F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static getCaptureResult(Llzv;)Z
+    .locals 2
+
+    const/4 v1, 0x1
+
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->CONTROL_AF_MODE:Landroid/hardware/camera2/CaptureResult$Key;
 
     invoke-interface {p0, v0}, Llzv;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
@@ -60,11 +194,11 @@
 
     check-cast p0, Ljava/lang/Integer;
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_0
 
     return v1
 
-    :cond_1
+    :cond_0
     const/4 p0, 0x0
 
     return p0
@@ -73,20 +207,8 @@
 .method public static getCaptureResultKey(Llzv;)Ljava/lang/Integer;
     .locals 1
 
-    invoke-static {}, Lagc/Agc;->noNeedFixLens()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Landroid/hardware/camera2/CaptureResult;->CONTROL_AF_SCENE_CHANGE:Landroid/hardware/camera2/CaptureResult$Key;
-
-    goto :goto_0
-
-    :cond_0
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->CONTROL_AF_MODE:Landroid/hardware/camera2/CaptureResult$Key;
 
-    :goto_0
     invoke-interface {p0, v0}, Llzv;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object p0
@@ -238,11 +360,11 @@
 
     const-string v3, "pref_gcam_lens_logic_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v3
 
@@ -308,7 +430,7 @@
 .method private static initMenuValue()V
     .locals 4
 
-    invoke-static {}, Lcom/Fix/Pref;->getAppSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-static {}, Lcom/Fix/Pref;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -325,7 +447,7 @@
     invoke-static {v1, v2}, Lcom/Fix/Pref;->setMenuValue(Ljava/lang/String;I)V
 
     :cond_0
-    invoke-static {}, Lcom/Fix/Pref;->getAppSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-static {}, Lcom/Fix/Pref;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -340,7 +462,7 @@
     invoke-static {v1, v2}, Lcom/Fix/Pref;->setMenuValue(Ljava/lang/String;I)V
 
     :cond_1
-    invoke-static {}, Lcom/Fix/Pref;->getAppSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-static {}, Lcom/Fix/Pref;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -357,7 +479,7 @@
     invoke-static {v1, v3}, Lcom/Fix/Pref;->setMenuValue(Ljava/lang/String;I)V
 
     :cond_2
-    invoke-static {}, Lcom/Fix/Pref;->getAppSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-static {}, Lcom/Fix/Pref;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -374,45 +496,78 @@
     invoke-static {v1, v3}, Lcom/Fix/Pref;->setMenuValue(Ljava/lang/String;I)V
 
     :cond_3
-    invoke-static {}, Lcom/Fix/Pref;->getAppSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-static {}, Lcom/Fix/Pref;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
     return-void
 .end method
 
-.method public static setDeveloperSettings(Ldep;)V
-    .locals 4
+.method public static minObject(Ljava/util/List;)Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljava/lang/Comparable;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
 
-    sput-object p0, Lcom/AGC;->dep:Ldep;
+    if-eqz p0, :cond_3
 
-    sget-object v0, Lddx;->r:Lddg;
+    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
-    const/4 v1, 0x0
+    move-result v0
 
-    invoke-virtual {p0, v0, v1}, Ldep;->s(Lddg;Z)V
+    if-eqz v0, :cond_0
 
-    const/4 v3, 0x1
+    goto :goto_1
 
-    sget-object v0, Lddm;->A:Lddg;
+    :cond_0
+    const/4 v0, 0x0
 
-    invoke-virtual {p0, v0, v3}, Ldep;->s(Lddg;Z)V
+    invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    sget-object v0, Lddm;->D:Lddg;
+    move-result-object v0
 
-    invoke-virtual {p0, v0, v3}, Ldep;->s(Lddg;Z)V
+    check-cast v0, Ljava/lang/Comparable;
 
-    sget-object v0, Lddq;->h:Lddg;
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    invoke-virtual {p0, v0, v3}, Ldep;->s(Lddg;Z)V
+    move-result-object p0
 
-    sget-object v0, Lddx;->o:Lddg;
+    :cond_1
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
-    invoke-virtual {p0, v0, v1}, Ldep;->s(Lddg;Z)V
+    move-result v1
 
-    sget-object v0, Lddx;->p:Lddg;
+    if-eqz v1, :cond_2
 
-    invoke-virtual {p0, v0, v1}, Ldep;->s(Lddg;Z)V
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    return-void
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Comparable;
+
+    invoke-interface {v0, v1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+
+    move-result v2
+
+    if-lez v2, :cond_1
+
+    move-object v0, v1
+
+    goto :goto_0
+
+    :cond_2
+    return-object v0
+
+    :cond_3
+    :goto_1
+    const/4 p0, 0x0
+
+    return-object p0
 .end method

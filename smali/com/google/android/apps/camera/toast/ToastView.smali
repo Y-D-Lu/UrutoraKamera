@@ -34,7 +34,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    const-wide/16 v0, 0x0
+    const-wide/16 v0, 0x12c
 
     invoke-static {v0, v1}, Lj$/time/Duration;->ofMillis(J)Lj$/time/Duration;
 

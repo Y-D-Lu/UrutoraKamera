@@ -231,7 +231,7 @@
 .method public final i(I)V
     .locals 2
 
-    const-string v0, "pref_upscale_key"
+    const-string v0, "pref_upscaleon_key"
 
     invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
@@ -247,7 +247,7 @@
 
     mul-int/2addr p1, v0
 
-    div-int/lit16 p1, p1, 0x64
+    div-int/lit16 p1, p1, 0xa
 
     :cond_0
     iget-wide v0, p0, Lcom/google/googlex/gcam/AeShotParams;->a:J
@@ -261,14 +261,6 @@
 .method public final j(I)V
     .locals 2
 
-    const-string v0, "pref_upscale_key"
-
-    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
     invoke-static {}, Lcom/Helper;->getUpscale()I
 
     move-result v0
@@ -277,14 +269,13 @@
 
     mul-int/2addr p1, v0
 
-    div-int/lit16 p1, p1, 0x64
+    div-int/lit16 p1, p1, 0xa
 
     :cond_0
     iget-wide v0, p0, Lcom/google/googlex/gcam/AeShotParams;->a:J
 
     invoke-static {v0, v1, p0, p1}, Lcom/google/googlex/gcam/GcamModuleJNI;->AeShotParams_target_width_set(JLcom/google/googlex/gcam/AeShotParams;I)V
 
-    :cond_1
     return-void
 .end method
 

@@ -269,7 +269,7 @@
 
     move-result-object p2
 
-    const-wide/16 v0, 0x7d0
+    const-wide/16 v0, 0x0
 
     invoke-virtual {p2, v0, v1}, Landroid/view/ViewPropertyAnimator;->setStartDelay(J)Landroid/view/ViewPropertyAnimator;
 

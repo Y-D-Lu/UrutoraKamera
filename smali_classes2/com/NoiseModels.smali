@@ -18186,7 +18186,7 @@
 
     const-string v1, "pref_noise_modeler_manual_a_0_key"
 
-    invoke-static {v1}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -18204,7 +18204,7 @@
 
     const-string v2, "pref_noise_modeler_manual_b_0_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -18226,7 +18226,7 @@
 
     const-string v2, "pref_noise_modeler_manual_a_1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -18244,7 +18244,7 @@
 
     const-string v3, "pref_noise_modeler_manual_b_1_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -18266,7 +18266,7 @@
 
     const-string v3, "pref_noise_modeler_manual_a_2_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -18284,7 +18284,7 @@
 
     const-string v4, "pref_noise_modeler_manual_b_2_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -18306,7 +18306,7 @@
 
     const-string v4, "pref_noise_modeler_manual_a_3_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -18324,7 +18324,7 @@
 
     const-string v5, "pref_noise_modeler_manual_b_3_key"
 
-    invoke-static {v5}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -18358,7 +18358,7 @@
 
     const-string v1, "pref_noise_modeler_manual_c_0_key"
 
-    invoke-static {v1}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -18376,7 +18376,7 @@
 
     const-string v2, "pref_noise_modeler_manual_d_0_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -18398,7 +18398,7 @@
 
     const-string v2, "pref_noise_modeler_manual_c_1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -18416,7 +18416,7 @@
 
     const-string v3, "pref_noise_modeler_manual_d_1_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -18438,7 +18438,7 @@
 
     const-string v3, "pref_noise_modeler_manual_c_2_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -18456,7 +18456,7 @@
 
     const-string v4, "pref_noise_modeler_manual_d_2_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -18478,7 +18478,7 @@
 
     const-string v4, "pref_noise_modeler_manual_c_3_key"
 
-    invoke-static {v4}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -18496,7 +18496,7 @@
 
     const-string v5, "pref_noise_modeler_manual_d_3_key"
 
-    invoke-static {v5}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -18544,9 +18544,9 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "pref_noise_model_front_key"
+    const-string v0, "pref_noise_model_key_front"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
@@ -18555,52 +18555,52 @@
     :cond_0
     const-string v0, "pref_aux_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
     :pswitch_0
-    const-string v0, "pref_noise_model_main_key"
+    const-string v0, "pref_noise_model_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
     goto :goto_0
 
     :pswitch_1
-    const-string v0, "pref_noise_model_tele_key"
+    const-string v0, "pref_noise_model_key_2"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
     goto :goto_0
 
     :pswitch_2
-    const-string v0, "pref_noise_model_wide_key"
+    const-string v0, "pref_noise_model_key_3"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
     goto :goto_0
 
     :pswitch_3
-    const-string v0, "pref_noise_model_id4_key"
+    const-string v0, "pref_noise_model_key_4"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
     goto :goto_0
 
     :pswitch_4
-    const-string v0, "pref_noise_model_id5_key"
+    const-string v0, "pref_noise_model_key_5"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 

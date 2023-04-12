@@ -210,8 +210,6 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p0}, Lcom/eclipse/switchMaxb;->setLongClickListener(Landroid/view/View;)V
-
     iput-boolean p1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->shrinkTouchArea:Z
 
     new-instance p1, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$1;
@@ -331,10 +329,119 @@
 
     invoke-super {p0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    const-string v0, "pref_rounded_key"
+
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_2
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_3
+
+    const/4 v1, 0x4
+
+    if-eq v0, v1, :cond_4
+
+    const/4 v1, 0x5
+
+    if-eq v0, v1, :cond_5
+
+    const/4 v1, 0x6
+
+    if-eq v0, v1, :cond_6
+
+    const/4 v1, 0x7
+
+    if-eq v0, v1, :cond_7
+
+    const/16 v1, 0x8
+
+    if-eq v0, v1, :cond_8
+
+    const/16 v1, 0x9
+
+    if-eq v0, v1, :cond_9
+
+    :cond_0
     iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
 
-    invoke-static {p0, v1}, Lcom/exposure/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+    invoke-static {p0, v1}, Lcom/longtap/exposure/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
 
+    goto :goto_0
+
+    :cond_1
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v1}, Lcom/longtap/exptap/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_2
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v1}, Lcom/longtap/awb/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_3
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v1}, Lcom/longtap/upscale/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_4
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v1}, Lcom/longtap/noisemodel/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_5
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v1}, Lcom/longtap/framehdr/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_6
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v1}, Lcom/longtap/framezsl/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_7
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v1}, Lcom/longtap/colort/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_8
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v1}, Lcom/longtap/aftime/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_9
+    invoke-static {p0}, Lcom/longtap/page/switch;->setLongClickListener(Landroid/view/View;)V
+
+    :goto_0
     invoke-virtual {p0}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -559,7 +666,7 @@
 
     instance-of v1, v0, Landroid/graphics/drawable/RippleDrawable;
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_a
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
 
@@ -593,7 +700,7 @@
 
     invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    :cond_0
+    :cond_a
     return-void
 .end method
 
@@ -682,7 +789,7 @@
 
     iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->burstFlashAnimator:Landroid/animation/ValueAnimator;
 
-    const-wide/16 v2, 0x32
+    const-wide/16 v2, 0x5a
 
     invoke-virtual {v0, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
@@ -828,7 +935,7 @@
 
     move-result-object v3
 
-    const-wide/16 v4, 0x32
+    const-wide/16 v4, 0x5a
 
     invoke-virtual {v3, v4, v5}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

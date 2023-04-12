@@ -60,7 +60,7 @@
 
     const-string v6, "pref_aux_key"
 
-    invoke-static {v6}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v6}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v6
 

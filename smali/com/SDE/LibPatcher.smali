@@ -617,6 +617,12 @@
 
 .field private static final _YBP:I = 0x373168
 
+.field private static final _ZSLBurstCountFix1:I = 0x1ee73f8
+
+.field private static final _ZSLBurstCountFix2:I = 0x1ee6fac
+
+.field private static final _ZSLBurstCountFix3:I = 0x1eeb288
+
 .field private static final _Zipper1:I = 0x364818
 
 .field private static final _Zipper2:I = 0x364868
@@ -669,71 +675,8 @@
     return-void
 .end method
 
-.method public static SetLensValueWithFront(Ljava/lang/String;)Ljava/lang/String;
-    .locals 5
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "pref_aux_key"
-
-    invoke-static {v2}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
-
-    move-result v2
-
-    const v3, 0x1
-
-    if-ne v2, v3, :cond_0
-
-    const-string v1, "_2"
-
-    goto :goto_0
-
-    :cond_0
-    const v3, 0x2
-
-    if-ne v2, v3, :cond_1
-
-    const-string v1, "_3"
-
-    goto :goto_0
-
-    :cond_1
-    const v3, 0x3
-
-    if-ne v2, v3, :cond_2
-
-    const-string v1, "_4"
-
-    goto :goto_0
-
-    :cond_2
-    const v3, 0x4
-
-    if-ne v2, v3, :cond_3
-
-    const-string v1, "_5"
-
-    goto :goto_0
-
-    :cond_3
-    const-string v1, ""
-
-    :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method private static applyPatcher(Ljava/lang/String;)Z
-    .locals 4
+    .locals 9
 
     new-instance v1, Lcom/SDE/LibPatcher;
 
@@ -760,11 +703,11 @@
 
     invoke-static {v1}, Lcom/SDE/LibPatcher;->copyLib(Lcom/SDE/LibPatcher;)Z
 
-    move-result v2
+    move-result v6
 
     const-string v0, "pref_save_patchedlib_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
@@ -773,11 +716,23 @@
     invoke-virtual {v1, p0}, Lcom/SDE/LibPatcher;->moveLibToDir2(Ljava/lang/String;)Ljava/lang/String;
 
     :cond_1
-    return v2
+    return v6
 .end method
 
 .method private static applyPatcherDisabled(Ljava/lang/String;)Z
-    .locals 6
+    .locals 8
+
+    const-string v4, "pref_libs"
+
+    invoke-static {v4}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/SDE/GetMenuValues;->getIntValue(Ljava/lang/String;)I
+
+    move-result v4
+
+    if-gez v4, :cond_2
 
     new-instance v1, Lcom/SDE/LibPatcher;
 
@@ -804,11 +759,11 @@
 
     invoke-static {v1}, Lcom/SDE/LibPatcher;->copyLibDisabled(Lcom/SDE/LibPatcher;)Z
 
-    move-result v2
+    move-result v6
 
     const-string v0, "pref_save_patchedlib_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
@@ -817,7 +772,12 @@
     invoke-virtual {v1, p0}, Lcom/SDE/LibPatcher;->moveLibToDir2(Ljava/lang/String;)Ljava/lang/String;
 
     :cond_1
-    return v2
+    return v6
+
+    :cond_2
+    const/4 v1, 0x0
+
+    return v1
 .end method
 
 .method private bytesToHex([B)Ljava/lang/String;
@@ -877,7 +837,7 @@
 
     const-string v3, "lib_curve_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -892,7 +852,7 @@
     :cond_0
     const-string v3, "lib_gamma_key"
 
-    invoke-static {v3}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -909,7 +869,7 @@
 
     const-string v2, "lib_hardux_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -919,7 +879,7 @@
 
     const-string v2, "lib_contr_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -929,7 +889,7 @@
 
     const-string v2, "lib_nightsky_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -939,7 +899,7 @@
 
     const-string v2, "lib_sat4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -949,7 +909,7 @@
 
     const-string v2, "lib_hightlight2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -959,7 +919,7 @@
 
     const-string v2, "lib_tunsupresshotpixel_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -969,7 +929,7 @@
 
     const-string v2, "lib_tripod_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -979,7 +939,7 @@
 
     const-string v2, "lib_downsamplebybeforemerge_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -989,7 +949,7 @@
 
     const-string v2, "lib_allowtemporalbinning_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -999,7 +959,7 @@
 
     const-string v2, "lib_allowbaseframereuse_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1009,7 +969,7 @@
 
     const-string v2, "lib_simultaneousmerge_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1019,7 +979,7 @@
 
     const-string v2, "lib_noisereductsabre1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1029,7 +989,7 @@
 
     const-string v2, "lib_sabrenoiseestimals_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1039,7 +999,7 @@
 
     const-string v2, "lib_hdrratio3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1049,7 +1009,7 @@
 
     const-string v2, "lib_contrast4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1059,7 +1019,7 @@
 
     const-string v2, "lib_contrast5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1069,7 +1029,7 @@
 
     const-string v2, "lib_wbbaseframe_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1079,7 +1039,7 @@
 
     const-string v2, "lib_lumadenoise_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1089,7 +1049,7 @@
 
     const-string v2, "lib_brightn_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1099,7 +1059,7 @@
 
     const-string v2, "lib_darker_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1109,7 +1069,7 @@
 
     const-string v2, "lib_lumasmooth_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1119,7 +1079,7 @@
 
     const-string v2, "lib_noisereductopacity_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1129,7 +1089,7 @@
 
     const-string v2, "lib_lumasmoothing_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1139,7 +1099,7 @@
 
     const-string v2, "lib_denoisesmoothing_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1149,7 +1109,7 @@
 
     const-string v2, "lib_dehazedblack_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1159,7 +1119,7 @@
 
     const-string v2, "lib_ncontrast1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1169,7 +1129,7 @@
 
     const-string v2, "lib_lumanoise1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1179,7 +1139,7 @@
 
     const-string v2, "lib_lumanew_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1189,7 +1149,7 @@
 
     const-string v2, "lib_hdrraw2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1199,7 +1159,7 @@
 
     const-string v2, "lib_hdrsabrecalcval1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1209,7 +1169,7 @@
 
     const-string v2, "lib_hdrsabrecalcval2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1219,7 +1179,7 @@
 
     const-string v2, "lib_robustness_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1229,7 +1189,7 @@
 
     const-string v2, "lib_noisemodelunblock_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1239,7 +1199,7 @@
 
     const-string v2, "lib_raw_compress_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1249,7 +1209,7 @@
 
     const-string v2, "lib_night_mode_gain_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1259,7 +1219,7 @@
 
     const-string v2, "lib_hdrmodel_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1269,7 +1229,7 @@
 
     const-string v2, "lib_blurpreview_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1279,7 +1239,7 @@
 
     const-string v2, "lib_fixraw16merge_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1289,7 +1249,7 @@
 
     const-string v2, "lib_hardjpgquality_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1299,7 +1259,7 @@
 
     const-string v2, "lib_lutnoisefix_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1309,7 +1269,7 @@
 
     const-string v2, "lib_lightfix_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1319,7 +1279,7 @@
 
     const-string v2, "lib_lightfix2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1329,7 +1289,7 @@
 
     const-string v2, "lib_lightfix3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1339,7 +1299,7 @@
 
     const-string v2, "lib_skipmetadatacheck_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1349,7 +1309,7 @@
 
     const-string v2, "lib_shastaforce_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1359,7 +1319,7 @@
 
     const-string v2, "lib_shastafactor_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1369,7 +1329,7 @@
 
     const-string v2, "lib_resamplmethod_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1379,7 +1339,7 @@
 
     const-string v2, "lib_appdigainset_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1389,7 +1349,7 @@
 
     const-string v2, "lib_sharpnessa_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1399,7 +1359,7 @@
 
     const-string v2, "lib_withtetmismatch_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1409,7 +1369,7 @@
 
     const-string v2, "lib_maxrelativetetfactor_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1419,7 +1379,7 @@
 
     const-string v2, "lib_sharpgain_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1429,7 +1389,7 @@
 
     const-string v2, "lib_sharpgainmacro_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1439,7 +1399,7 @@
 
     const-string v2, "lib_sharpgainmicro_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1449,7 +1409,7 @@
 
     const-string v2, "lib_sharpnessb_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1459,7 +1419,7 @@
 
     const-string v2, "lib_denoise_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1469,7 +1429,7 @@
 
     const-string v2, "lib_spatiala_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1479,7 +1439,7 @@
 
     const-string v2, "lib_spatialb_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1489,7 +1449,7 @@
 
     const-string v2, "lib_chromaa_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1499,7 +1459,7 @@
 
     const-string v2, "lib_chromab_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1509,7 +1469,7 @@
 
     const-string v2, "lib_lumaa_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1519,7 +1479,7 @@
 
     const-string v2, "lib_lumab_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1529,7 +1489,7 @@
 
     const-string v2, "lib_temporala_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1539,7 +1499,7 @@
 
     const-string v2, "lib_temporalb_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1549,7 +1509,7 @@
 
     const-string v2, "lib_lumanoise_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1559,7 +1519,7 @@
 
     const-string v2, "lib_saturation_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1569,7 +1529,7 @@
 
     const-string v2, "lib_saturation2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1579,7 +1539,7 @@
 
     const-string v2, "lib_saturation3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1589,7 +1549,7 @@
 
     const-string v2, "pref_lib_iso_option_available_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1599,7 +1559,7 @@
 
     const-string v2, "lib_sharpshastamotion_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1609,7 +1569,7 @@
 
     const-string v2, "lib_depth1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1619,7 +1579,7 @@
 
     const-string v2, "lib_depth2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1629,7 +1589,7 @@
 
     const-string v2, "lib_sharpmini_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1639,7 +1599,7 @@
 
     const-string v2, "lib_sharpmacro_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1649,7 +1609,7 @@
 
     const-string v2, "lib_sharpeningedge_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1659,7 +1619,7 @@
 
     const-string v2, "lib_softsharpa_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1669,7 +1629,7 @@
 
     const-string v2, "lib_softsharpb_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1679,7 +1639,7 @@
 
     const-string v2, "lib_softsharpc_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1689,7 +1649,7 @@
 
     const-string v2, "lib_sharpnessnoisemodel_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1699,7 +1659,7 @@
 
     const-string v2, "lib_raisrzftuning1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1709,7 +1669,7 @@
 
     const-string v2, "lib_raisrzftuning2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1719,7 +1679,7 @@
 
     const-string v2, "lib_zipper1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1729,7 +1689,7 @@
 
     const-string v2, "lib_zipper2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1739,7 +1699,7 @@
 
     const-string v2, "lib_zipper3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1749,7 +1709,7 @@
 
     const-string v2, "lib_sabresharp_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1759,7 +1719,7 @@
 
     const-string v2, "lib_sabresharp_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1769,7 +1729,7 @@
 
     const-string v2, "lib_sabresharp2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1779,7 +1739,7 @@
 
     const-string v2, "lib_sabresharp3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1789,7 +1749,7 @@
 
     const-string v2, "lib_sabrecontrastsharp_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1799,7 +1759,7 @@
 
     const-string v2, "lib_exposition_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1809,7 +1769,7 @@
 
     const-string v2, "lib_exposure_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1819,7 +1779,7 @@
 
     const-string v2, "lib_darkenlight_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1829,7 +1789,7 @@
 
     const-string v2, "lib_expocomp_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1839,7 +1799,7 @@
 
     const-string v2, "lib_expocor_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1849,7 +1809,7 @@
 
     const-string v2, "lib_isoexpotun_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1859,7 +1819,7 @@
 
     const-string v2, "lib_exposure_darker_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1869,7 +1829,7 @@
 
     const-string v2, "lib_exposure_darker2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1879,7 +1839,7 @@
 
     const-string v2, "lib_hardmerge_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1889,7 +1849,7 @@
 
     const-string v2, "lib_sabre1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1899,7 +1859,7 @@
 
     const-string v2, "lib_sabre2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1909,7 +1869,7 @@
 
     const-string v2, "lib_sabre3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1919,7 +1879,7 @@
 
     const-string v2, "lib_coefsabrtunoise_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1929,7 +1889,7 @@
 
     const-string v2, "lib_sabrburmerge1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1939,7 +1899,7 @@
 
     const-string v2, "lib_sabrburmerge2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1949,7 +1909,7 @@
 
     const-string v2, "lib_sabrburmerge3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1959,7 +1919,7 @@
 
     const-string v2, "lib_smoothingsabre_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1969,7 +1929,7 @@
 
     const-string v2, "lib_noisereductsabre_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1979,7 +1939,7 @@
 
     const-string v2, "lib_sabrenoiseart_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1989,7 +1949,7 @@
 
     const-string v2, "lib_bettercolwiener_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1999,7 +1959,7 @@
 
     const-string v2, "lib_savmergchrden_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2009,7 +1969,7 @@
 
     const-string v2, "lib_fixnoisesabre_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2019,7 +1979,7 @@
 
     const-string v2, "lib_colprocessing_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2029,7 +1989,7 @@
 
     const-string v2, "lib_fixshastamerge_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2039,7 +1999,7 @@
 
     const-string v2, "lib_volumeprocessing1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2049,7 +2009,7 @@
 
     const-string v2, "lib_volumeprocessing2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2059,7 +2019,7 @@
 
     const-string v2, "lib_hotpixelsuppres_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2069,7 +2029,7 @@
 
     const-string v2, "lib_sensorid_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2079,7 +2039,7 @@
 
     const-string v2, "lib_smoothness_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2089,7 +2049,7 @@
 
     const-string v2, "lib_sabrebyrawtoyuv_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2099,7 +2059,7 @@
 
     const-string v2, "lib_smoothing1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2109,7 +2069,7 @@
 
     const-string v2, "lib_smoothing2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2119,7 +2079,7 @@
 
     const-string v2, "lib_smoothingnew_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2129,7 +2089,7 @@
 
     const-string v2, "lib_brightnessintensity_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2139,7 +2099,7 @@
 
     const-string v2, "lib_hdrbrightness_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2149,7 +2109,7 @@
 
     const-string v2, "lib_hdr2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2159,7 +2119,7 @@
 
     const-string v2, "lib_highlight2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2169,7 +2129,7 @@
 
     const-string v2, "lib_hdrratio2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2179,7 +2139,7 @@
 
     const-string v2, "lib_avgldr_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2189,7 +2149,7 @@
 
     const-string v2, "lib_ccontrast_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2199,7 +2159,7 @@
 
     const-string v2, "lib_ccontrast2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2209,7 +2169,7 @@
 
     const-string v2, "lib_dehazedregulator2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2219,7 +2179,7 @@
 
     const-string v2, "lib_temporalbin_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2229,7 +2189,7 @@
 
     const-string v2, "lib_temporal_radius_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2239,7 +2199,7 @@
 
     const-string v2, "lib_shotnoisefactor_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2249,7 +2209,7 @@
 
     const-string v2, "lib_tuncolsatpar1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2259,7 +2219,7 @@
 
     const-string v2, "lib_tuncolsatpar2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2269,7 +2229,7 @@
 
     const-string v2, "lib_cg1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2279,7 +2239,7 @@
 
     const-string v2, "lib_cg2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2289,7 +2249,7 @@
 
     const-string v2, "lib_cg3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2299,7 +2259,7 @@
 
     const-string v2, "lib_cg4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2309,7 +2269,7 @@
 
     const-string v2, "lib_cg5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2319,7 +2279,7 @@
 
     const-string v2, "lib_cg6_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2329,7 +2289,7 @@
 
     const-string v2, "lib_cg9_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2339,7 +2299,7 @@
 
     const-string v2, "lib_cg10_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2349,7 +2309,7 @@
 
     const-string v2, "lib_green_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2359,7 +2319,7 @@
 
     const-string v2, "lib_red_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2369,7 +2329,7 @@
 
     const-string v2, "lib_by_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2379,7 +2339,7 @@
 
     const-string v2, "lib_ybp_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2389,7 +2349,7 @@
 
     const-string v2, "lib_gro_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2399,7 +2359,7 @@
 
     const-string v2, "lib_orgb_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2409,7 +2369,7 @@
 
     const-string v2, "lib_vignette_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2419,7 +2379,7 @@
 
     const-string v2, "lib_vignettec_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2429,7 +2389,7 @@
 
     const-string v2, "lib_dehazedexpo_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2439,7 +2399,7 @@
 
     const-string v2, "lib_clarity_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2449,7 +2409,7 @@
 
     const-string v2, "lib_contrast_1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2459,7 +2419,7 @@
 
     const-string v2, "lib_contrast_2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2469,7 +2429,7 @@
 
     const-string v2, "lib_lighting_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2479,7 +2439,7 @@
 
     const-string v2, "lib_hdrrangeplus_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2489,7 +2449,7 @@
 
     const-string v2, "lib_hdrrangeminus_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2499,7 +2459,7 @@
 
     const-string v2, "lib_nightmodeexposition_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2509,7 +2469,7 @@
 
     const-string v2, "lib_light_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2519,7 +2479,7 @@
 
     const-string v2, "lib_whitelevel_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2529,7 +2489,7 @@
 
     const-string v2, "lib_hdroverlight_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2539,7 +2499,7 @@
 
     const-string v2, "lib_hdreffectint_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2549,7 +2509,7 @@
 
     const-string v2, "lib_hdreffect_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2559,7 +2519,7 @@
 
     const-string v2, "lib_sabrecontrast_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2569,7 +2529,7 @@
 
     const-string v2, "lib_contrastblack_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2579,7 +2539,7 @@
 
     const-string v2, "lib_shadowtuning_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2589,7 +2549,7 @@
 
     const-string v2, "lib_lumadhsabre_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2599,7 +2559,7 @@
 
     const-string v2, "lib_lumadhsabre_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2609,7 +2569,7 @@
 
     const-string v2, "lib_lumadhsabre_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2619,7 +2579,7 @@
 
     const-string v2, "lib_lumadhsabre_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2629,7 +2589,7 @@
 
     const-string v2, "lib_lumadhsabre_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2639,7 +2599,7 @@
 
     const-string v2, "lib_lumadlsabre_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2649,7 +2609,7 @@
 
     const-string v2, "lib_lumadlsabre_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2659,7 +2619,7 @@
 
     const-string v2, "lib_lumadlsabre_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2669,7 +2629,7 @@
 
     const-string v2, "lib_lumadlsabre_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2679,7 +2639,7 @@
 
     const-string v2, "lib_lumadlsabre_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2689,7 +2649,7 @@
 
     const-string v2, "lib_lumadmsabre_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2699,7 +2659,7 @@
 
     const-string v2, "lib_lumadmsabre_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2709,7 +2669,7 @@
 
     const-string v2, "lib_lumadmsabre_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2719,7 +2679,7 @@
 
     const-string v2, "lib_lumadmsabre_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2729,7 +2689,7 @@
 
     const-string v2, "lib_lumadmsabre_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2739,7 +2699,7 @@
 
     const-string v2, "lib_spatialdenmi1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2749,7 +2709,7 @@
 
     const-string v2, "lib_spatialdenmi2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2759,7 +2719,7 @@
 
     const-string v2, "lib_spatialdenmi3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2769,7 +2729,7 @@
 
     const-string v2, "lib_spatialdenmi4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2779,7 +2739,7 @@
 
     const-string v2, "lib_lumadhsabre_l1a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2789,7 +2749,7 @@
 
     const-string v2, "lib_lumadhsabre_l1b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2799,7 +2759,7 @@
 
     const-string v2, "lib_lumadhsabre_l2a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2809,7 +2769,7 @@
 
     const-string v2, "lib_lumadhsabre_l2b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2819,7 +2779,7 @@
 
     const-string v2, "lib_lumadhsabre_l3a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2829,7 +2789,7 @@
 
     const-string v2, "lib_lumadhsabre_l3b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2839,7 +2799,7 @@
 
     const-string v2, "lib_lumadhsabre_l4a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2849,7 +2809,7 @@
 
     const-string v2, "lib_lumadhsabre_l4b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2859,7 +2819,7 @@
 
     const-string v2, "lib_lumadhsabre_l5a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2869,7 +2829,7 @@
 
     const-string v2, "lib_lumadlsabre_l1a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2879,7 +2839,7 @@
 
     const-string v2, "lib_lumadlsabre_l1b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2889,7 +2849,7 @@
 
     const-string v2, "lib_lumadlsabre_l2a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2899,7 +2859,7 @@
 
     const-string v2, "lib_lumadlsabre_l2b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2909,7 +2869,7 @@
 
     const-string v2, "lib_lumadlsabre_l3a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2919,7 +2879,7 @@
 
     const-string v2, "lib_lumadlsabre_l3b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2929,7 +2889,7 @@
 
     const-string v2, "lib_lumadlsabre_l4a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2939,7 +2899,7 @@
 
     const-string v2, "lib_lumadlsabre_l4b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2949,7 +2909,7 @@
 
     const-string v2, "lib_lumadlsabre_l5a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2959,7 +2919,7 @@
 
     const-string v2, "lib_lumadmsabre_l1a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2969,7 +2929,7 @@
 
     const-string v2, "lib_lumadmsabre_l1b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2979,7 +2939,7 @@
 
     const-string v2, "lib_lumadmsabre_l2a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2989,7 +2949,7 @@
 
     const-string v2, "lib_lumadmsabre_l2b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2999,7 +2959,7 @@
 
     const-string v2, "lib_lumadmsabre_l3a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3009,7 +2969,7 @@
 
     const-string v2, "lib_lumadmsabre_l3b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3019,7 +2979,7 @@
 
     const-string v2, "lib_lumadmsabre_l4a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3029,7 +2989,7 @@
 
     const-string v2, "lib_lumadmsabre_l4b_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3039,7 +2999,7 @@
 
     const-string v2, "lib_lumadmsabre_l5a_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3049,7 +3009,7 @@
 
     const-string v2, "lib_lumadnewa_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3059,7 +3019,7 @@
 
     const-string v2, "lib_lumadnewb_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3069,7 +3029,7 @@
 
     const-string v2, "lib_lumadh_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3079,7 +3039,7 @@
 
     const-string v2, "lib_lumadh_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3089,7 +3049,7 @@
 
     const-string v2, "lib_lumadh_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3099,7 +3059,7 @@
 
     const-string v2, "lib_lumadh_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3109,7 +3069,7 @@
 
     const-string v2, "lib_lumadh_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3119,7 +3079,7 @@
 
     const-string v2, "lib_lumadl_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3129,7 +3089,7 @@
 
     const-string v2, "lib_lumadl_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3139,7 +3099,7 @@
 
     const-string v2, "lib_lumadl_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3149,7 +3109,7 @@
 
     const-string v2, "lib_lumadl_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3159,7 +3119,7 @@
 
     const-string v2, "lib_lumadl_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3169,7 +3129,7 @@
 
     const-string v2, "lib_lumadm_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3179,7 +3139,7 @@
 
     const-string v2, "lib_lumadm_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3189,7 +3149,7 @@
 
     const-string v2, "lib_lumadm_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3199,7 +3159,7 @@
 
     const-string v2, "lib_lumadm_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3209,7 +3169,7 @@
 
     const-string v2, "lib_lumadm_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3219,7 +3179,7 @@
 
     const-string v2, "lib_lumadhs_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3229,7 +3189,7 @@
 
     const-string v2, "lib_lumadhs_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3239,7 +3199,7 @@
 
     const-string v2, "lib_lumadhs_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3249,7 +3209,7 @@
 
     const-string v2, "lib_lumadhs_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3259,7 +3219,7 @@
 
     const-string v2, "lib_lumadhs_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3269,7 +3229,7 @@
 
     const-string v2, "lib_lumadls_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3279,7 +3239,7 @@
 
     const-string v2, "lib_lumadls_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3289,7 +3249,7 @@
 
     const-string v2, "lib_lumadls_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3299,7 +3259,7 @@
 
     const-string v2, "lib_lumadls_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3309,7 +3269,7 @@
 
     const-string v2, "lib_lumadls_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3319,7 +3279,7 @@
 
     const-string v2, "lib_lumadms_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3329,7 +3289,7 @@
 
     const-string v2, "lib_lumadms_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3339,7 +3299,7 @@
 
     const-string v2, "lib_lumadms_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3349,7 +3309,7 @@
 
     const-string v2, "lib_lumadms_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3359,7 +3319,7 @@
 
     const-string v2, "lib_lumadms_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3369,7 +3329,7 @@
 
     const-string v2, "lib_sabrelnew_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3379,7 +3339,7 @@
 
     const-string v2, "lib_sabrelnew_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3389,7 +3349,7 @@
 
     const-string v2, "lib_sabrelnew_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3399,7 +3359,7 @@
 
     const-string v2, "lib_sabrelnew_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3409,7 +3369,7 @@
 
     const-string v2, "lib_sabrelnew_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3419,7 +3379,7 @@
 
     const-string v2, "lib_sabrelnewn_l1_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3429,7 +3389,7 @@
 
     const-string v2, "lib_sabrelnewn_l2_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3439,7 +3399,7 @@
 
     const-string v2, "lib_sabrelnewn_l3_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3449,7 +3409,7 @@
 
     const-string v2, "lib_sabrelnewn_l4_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3459,7 +3419,7 @@
 
     const-string v2, "lib_sabrelnewn_l5_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3469,7 +3429,7 @@
 
     const-string v2, "lib_sabrelnewn_l6_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3479,7 +3439,7 @@
 
     const-string v2, "lib_sabrelnewn_l7_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3489,7 +3449,7 @@
 
     const-string v2, "lib_sabrelnewn_l8_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3499,7 +3459,7 @@
 
     const-string v2, "lib_sabrelnewn_l9_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3509,7 +3469,7 @@
 
     const-string v2, "lib_lumalevel_preset_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3519,7 +3479,7 @@
 
     const-string v2, "lib_init_params_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3529,7 +3489,7 @@
 
     const-string v2, "lib_init_params_key"
 
-    invoke-static {v2}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3727,11 +3687,23 @@
     :cond_b
     const-string v0, "pref_enable_ldr_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 
     if-eqz v0, :cond_c
+
+    sget v0, Lcom/SDE/LibPatcher;->_ExposureDarker:I
+
+    const-string v2, "lib_exposure_darker_ldr_key"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_ExpoCor:I
+
+    const-string v2, "lib_expocor_ldr_key"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
 
     sget v0, Lcom/SDE/LibPatcher;->_LDR:I
 
@@ -3934,7 +3906,7 @@
     :cond_c
     const-string v3, "pref_enable_pro_key"
 
-    invoke-static {v3}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v3
 
@@ -5560,7 +5532,64 @@
 
     invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHex(ILjava/lang/String;)V
 
+    const-string v0, "pref_zsl_burstfix_pro_key"
+
+    invoke-static {v0}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_d
+
+    sget v0, Lcom/SDE/LibPatcher;->_ZSLBurstCountFix1:I
+
+    const-string v2, "1F2003D5"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHexToo(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_ZSLBurstCountFix2:I
+
+    const-string v2, "1F2003D5"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHexToo(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_ZSLBurstCountFix3:I
+
+    const-string v2, "e903271e"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHexToo(ILjava/lang/String;)V
+
     :cond_d
+    const-string v0, "pref_zsl_burstfix_key"
+
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_e
+
+    sget v0, Lcom/SDE/LibPatcher;->_ZSLBurstCountFix1:I
+
+    const-string v2, "1F2003D5"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHexToo(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_ZSLBurstCountFix2:I
+
+    const-string v2, "1F2003D5"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHexToo(ILjava/lang/String;)V
+
+    sget v0, Lcom/SDE/LibPatcher;->_ZSLBurstCountFix3:I
+
+    const-string v2, "e903271e"
+
+    invoke-virtual {p0, v0, v2}, Lcom/SDE/LibPatcher;->setValueHexToo(ILjava/lang/String;)V
+
+    :cond_e
     invoke-virtual {p0}, Lcom/SDE/LibPatcher;->getAppContext()Landroid/content/Context;
 
     move-result-object v2
@@ -5569,7 +5598,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_e
+    if-nez v4, :cond_f
 
     const-string v3, "loadCustomLib ERROR"
 
@@ -5583,7 +5612,7 @@
 
     const/4 v4, 0x0
 
-    :cond_e
+    :cond_f
     return v4
 .end method
 
@@ -5827,13 +5856,13 @@
 
     const-string v0, "libs_key"
 
-    invoke-static {v0}, Lcom/SDE/LibPatcher;->SetLensValueWithFront(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "pref_libs_fromdir_key"
 
-    invoke-static {v1}, Lcom/SDE/LibPatcher;->SetLensValueWithFront(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -5857,7 +5886,7 @@
     const-string v1, "libgcastartup.so"
 
     :goto_0
-    invoke-static {v2}, Lcom/SDE/GetMenuValues;->getIntValue(Ljava/lang/String;)I
+    invoke-static {v2}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v2
 
@@ -6532,7 +6561,7 @@
 
     const-string v0, "libs_key"
 
-    invoke-static {v0}, Lcom/SDE/LibPatcher;->SetLensValueWithFront(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

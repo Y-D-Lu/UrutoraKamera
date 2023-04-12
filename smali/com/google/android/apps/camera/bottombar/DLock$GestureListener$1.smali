@@ -37,17 +37,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 6
 
-    sget v0, Lcom/Helper;->sHdr_process:I
-
-    if-eqz v0, :cond_0
-
-    const v0, 0x7f140288
-
-    invoke-static {v0}, Lcom/google/android/apps/camera/bottombar/BottomBar;->Toast(I)V
-
-    goto :goto_0
-
-    :cond_0
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/DLock$GestureListener$1;->f$0:Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;
 
     iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/DLock$GestureListener$1;->f$1:Ljava/io/File;
@@ -62,6 +51,5 @@
 
     invoke-static/range {v0 .. v5}, Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;->a(Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;Ljava/io/File;[Ljava/lang/String;Landroid/widget/Spinner;Landroid/content/DialogInterface;I)V
 
-    :goto_0
     return-void
 .end method

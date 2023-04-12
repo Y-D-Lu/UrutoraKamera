@@ -539,7 +539,7 @@
 
     invoke-virtual {v4, v6}, Landroid/animation/AnimatorSet;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    const-wide/16 v6, 0x0
+    const-wide/16 v6, 0x12c
 
     invoke-virtual {v4, v6, v7}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
 

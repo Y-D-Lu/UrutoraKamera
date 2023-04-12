@@ -96,37 +96,55 @@
 
     const-string v0, "pref_device_key_front"
 
-    const-string v4, "4"
+    const-string v4, "2"
 
     invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "pref_device_key_tele"
 
-    const-string v4, "4"
+    const-string v4, "2"
 
     invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "pref_device_key_wide"
 
-    const-string v4, "4"
+    const-string v4, "2"
 
     invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "pref_device_key_id4"
 
-    const-string v4, "4"
+    const-string v4, "2"
 
     invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "pref_device_key_id5"
 
-    const-string v4, "4"
+    const-string v4, "2"
 
     invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "pref_device_key"
 
-    const-string v4, "4"
+    const-string v4, "2"
+
+    invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "pref_exynosfix_key"
+
+    const-string v4, "-1"
+
+    invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "pref_exynosfix_key_2"
+
+    const-string v4, "-1"
+
+    invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "pref_exynosfix_key_3"
+
+    const-string v4, "-1"
 
     invoke-virtual {v1, v0, v4}, Ldep;->sh(Ljava/lang/String;Ljava/lang/String;)V
 

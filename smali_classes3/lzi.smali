@@ -452,61 +452,7 @@
 
     const-string v0, "Google"
 
-    sget v6, Lcom/Helper;->sFront:I
-
-    if-eqz v6, :cond_0
-
-    const-string v1, "pref_device_key_front"
-
-    goto :goto_0
-
-    :cond_0
-    const-string v6, "pref_aux_key"
-
-    invoke-static {v6}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
-
-    move-result v6
-
-    const v7, 0x1
-
-    if-eq v6, v7, :cond_1
-
-    const v7, 0x2
-
-    if-eq v6, v7, :cond_2
-
-    const v7, 0x3
-
-    if-eq v6, v7, :cond_3
-
-    const v7, 0x4
-
-    if-eq v6, v7, :cond_4
-
-    const-string v1, "pref_device_key"
-
-    goto :goto_0
-
-    :cond_1
-    const-string v1, "pref_device_key_tele"
-
-    goto :goto_0
-
-    :cond_2
-    const-string v1, "pref_device_key_wide"
-
-    goto :goto_0
-
-    :cond_3
-    const-string v1, "pref_device_key_id4"
-
-    goto :goto_0
-
-    :cond_4
-    const-string v1, "pref_device_key_id5"
-
-    :goto_0
-    invoke-static {v1}, Lcom/Helper;->SetDevice(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {}, Lcom/Helper;->SetInterface()Ljava/lang/String;
 
     move-result-object v1
 
@@ -530,13 +476,13 @@
 
     move-result v4
 
-    if-nez v4, :cond_b
+    if-nez v4, :cond_6
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v3
 
-    if-nez v3, :cond_b
+    if-nez v3, :cond_6
 
     const-string v3, "SDK_"
 
@@ -544,7 +490,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_b
+    if-nez v3, :cond_6
 
     const-string v3, "_SDK"
 
@@ -552,11 +498,11 @@
 
     move-result v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_0
 
-    goto/16 :goto_6
+    goto/16 :goto_5
 
-    :cond_5
+    :cond_0
     new-instance v2, Llzi;
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -619,16 +565,16 @@
 
     const/4 v5, 0x1
 
-    if-ltz v3, :cond_6
+    if-ltz v3, :cond_1
 
     const/4 v6, 0x1
 
-    goto :goto_1
+    goto :goto_0
 
-    :cond_6
+    :cond_1
     const/4 v6, 0x0
 
-    :goto_1
+    :goto_0
     const-string v7, "expectedInputSize must be >= 0 but was %s"
 
     invoke-static {v6, v7, v3}, Lobr;->aI(ZLjava/lang/String;I)V
@@ -645,8 +591,8 @@
 
     const/4 v6, 0x0
 
-    :goto_2
-    if-ge v6, v3, :cond_7
+    :goto_1
+    if-ge v6, v3, :cond_2
 
     invoke-interface {v0, v6}, Ljava/lang/CharSequence;->charAt(I)C
 
@@ -685,7 +631,7 @@
 
     add-int/lit8 v6, v6, 0x1
 
-    goto :goto_2
+    goto :goto_1
 
     :catchall_0
     move-exception v0
@@ -696,7 +642,7 @@
 
     throw v0
 
-    :cond_7
+    :cond_2
     check-cast v1, Loyn;
 
     invoke-virtual {v1}, Loyn;->af()V
@@ -711,7 +657,7 @@
 
     move-result v3
 
-    if-ne v0, v3, :cond_8
+    if-ne v0, v3, :cond_3
 
     iget-object v0, v1, Loyn;->b:Ljava/security/MessageDigest;
 
@@ -723,9 +669,9 @@
 
     move-result-object v0
 
-    goto :goto_3
+    goto :goto_2
 
-    :cond_8
+    :cond_3
     iget-object v0, v1, Loyn;->b:Ljava/security/MessageDigest;
 
     invoke-virtual {v0}, Ljava/security/MessageDigest;->digest()[B
@@ -742,7 +688,7 @@
 
     move-result-object v0
 
-    :goto_3
+    :goto_2
     check-cast v0, Loyi;
 
     iget-object v1, v0, Loyi;->a:[B
@@ -751,16 +697,16 @@
 
     const/16 v3, 0x8
 
-    if-lt v1, v3, :cond_9
+    if-lt v1, v3, :cond_4
 
     const/4 v6, 0x1
 
-    goto :goto_4
+    goto :goto_3
 
-    :cond_9
+    :cond_4
     const/4 v6, 0x0
 
-    :goto_4
+    :goto_3
     const-string v7, "HashCode#asLong() requires >= 8 bytes (it only has %s bytes)."
 
     invoke-static {v6, v7, v1}, Lobr;->aS(ZLjava/lang/String;I)V
@@ -773,7 +719,7 @@
 
     int-to-long v6, v1
 
-    :goto_5
+    :goto_4
     iget-object v1, v0, Loyi;->a:[B
 
     array-length v1, v1
@@ -782,7 +728,7 @@
 
     move-result v1
 
-    if-ge v5, v1, :cond_a
+    if-ge v5, v1, :cond_5
 
     iget-object v1, v0, Loyi;->a:[B
 
@@ -802,22 +748,22 @@
 
     add-int/lit8 v5, v5, 0x1
 
-    goto :goto_5
+    goto :goto_4
 
-    :cond_a
+    :cond_5
     invoke-direct {v2, v6, v7}, Llzi;-><init>(J)V
 
-    goto :goto_7
+    goto :goto_6
 
-    :cond_b
-    :goto_6
+    :cond_6
+    :goto_5
     new-instance v2, Llzi;
 
     const-wide v0, -0x7c963b3dec50fbe5L
 
     invoke-direct {v2, v0, v1}, Llzi;-><init>(J)V
 
-    :goto_7
+    :goto_6
     return-object v2
 .end method
 
@@ -1529,6 +1475,40 @@
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
     const-string v0, "OnePlus8"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+.end method
+
+.method public final isRN8P()Z
+    .locals 2
+
+    sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+
+    const-string v0, "begoniain"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+
+    const-string v0, "begonia"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

@@ -119,7 +119,7 @@
 
     sget-object v0, Lbqe;->a:Ljrl;
 
-    if-eqz p0, :cond_5
+    if-eqz p0, :cond_7
 
     invoke-virtual {p0}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -131,7 +131,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_6
 
     invoke-static {p0}, Lbqe;->s(Landroid/content/Intent;)Z
 
@@ -155,13 +155,39 @@
     goto :goto_2
 
     :cond_1
+    const-string v2, "android.media.action.PORTRAIT"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    sget-object v0, Ljrl;->g:Ljrl;
+
+    goto :goto_2
+
+    :cond_2
+    const-string v2, "android.media.action.NIGHTSIGHT"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    sget-object v0, Ljrl;->m:Ljrl;
+
+    goto :goto_2
+
+    :cond_3
     const-string v2, "android.media.action.IMAGE_CAPTURE"
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-nez v2, :cond_3
+    if-nez v2, :cond_5
 
     const-string v2, "android.media.action.IMAGE_CAPTURE_SECURE"
 
@@ -169,24 +195,24 @@
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_4
 
     goto :goto_0
 
-    :cond_2
+    :cond_4
     invoke-static {v0, p0}, Lbqe;->x(Ljrl;Landroid/content/Intent;)Ljrl;
 
     move-result-object v0
 
     goto :goto_2
 
-    :cond_3
+    :cond_5
     :goto_0
     sget-object v0, Ljrl;->h:Ljrl;
 
     goto :goto_2
 
-    :cond_4
+    :cond_6
     :goto_1
     sget-object v0, Ljrl;->c:Ljrl;
 
@@ -196,7 +222,7 @@
 
     goto :goto_2
 
-    :cond_5
+    :cond_7
     :goto_2
     return-object v0
 .end method

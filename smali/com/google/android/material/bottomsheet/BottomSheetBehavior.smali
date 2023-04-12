@@ -268,7 +268,7 @@
 
     iput-object v3, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->O:Landroid/animation/ValueAnimator;
 
-    const-wide/16 v9, 0x0
+    const-wide/16 v9, 0xfa
 
     invoke-virtual {v3, v9, v10}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

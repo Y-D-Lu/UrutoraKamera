@@ -926,7 +926,7 @@
     :goto_0
     const-string v1, "pref_max_zoom_key"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -1657,7 +1657,7 @@
     :cond_0
     const-string p0, "fix_resolution_key"
 
-    invoke-static {p0}, Lcom/Helper;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/SDE/LensValue;->SetLensValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

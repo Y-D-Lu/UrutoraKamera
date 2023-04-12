@@ -41,7 +41,7 @@
 
     const-string v12, "pref_date_key"
 
-    invoke-static {v12}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v12}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v12
 
@@ -57,7 +57,7 @@
     :goto_0
     const-string v12, "pref_xmlfilename_key"
 
-    invoke-static {v12}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v12}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v12
 

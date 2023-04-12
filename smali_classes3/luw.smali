@@ -234,11 +234,11 @@
 
     const-string v1, "pref_opmodes_key"
 
-    invoke-static {v1}, Lcom/Helper;->SetLensValueOp(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/SDE/LensValue;->SetLensValueOp(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -256,7 +256,7 @@
 
     const-string v2, "pref_Customop_key"
 
-    invoke-static {v2}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v2}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v2
 
@@ -402,11 +402,11 @@
     const-string v3, "pref_Copmode_key"
 
     :goto_0
-    invoke-static {v3}, Lcom/Helper;->SetLensValueOp(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/SDE/LensValue;->SetLensValueOp(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v3}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v3
 
@@ -576,7 +576,7 @@
 .end method
 
 .method public final h(I)Lluz;
-    .locals 2
+    .locals 5
 
     :try_start_0
     new-instance v0, Lluz;
@@ -593,7 +593,7 @@
 
     const-string v1, "pref_antibanding_key"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -605,7 +605,7 @@
 
     const-string v1, "pref_shading_mode_key"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -615,7 +615,7 @@
 
     const-string v1, "pref_shading_key"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -630,7 +630,7 @@
 
     const-string v1, "pref_ois_key"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -652,7 +652,7 @@
 
     const-string p0, "pref_getlivehdr_key"
 
-    invoke-static {p0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {p0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result p0
 

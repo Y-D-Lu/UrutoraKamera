@@ -3495,9 +3495,15 @@
 
     invoke-interface {p0, v0, v4}, Lddk;->s(Lddg;Z)V
 
+    const-string v4, "pref_expslideswitch_key"
+
+    invoke-static {v4}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v4
+
     sget-object p2, Lddl;->br:Lddg;
 
-    invoke-interface {p0, p2, v1}, Lddk;->s(Lddg;Z)V
+    invoke-interface {p0, p2, v4}, Lddk;->s(Lddg;Z)V
 
     sget-object p2, Lddl;->bs:Lddg;
 
@@ -3508,6 +3514,8 @@
     move-result-object v0
 
     invoke-interface {p0, p2, v0}, Lddk;->r(Lddg;Ljava/lang/Float;)V
+
+    const/4 v4, 0x0
 
     sget-object p2, Lddl;->bt:Lddg;
 

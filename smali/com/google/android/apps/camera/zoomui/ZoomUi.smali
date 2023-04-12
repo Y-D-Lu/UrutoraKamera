@@ -92,7 +92,7 @@
     move-result-object p0
 
     :goto_0
-    const-wide/16 v0, 0x64
+    const-wide/16 v0, 0x3c
 
     invoke-virtual {p0, v0, v1}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
@@ -654,7 +654,7 @@
 
     iput-object v1, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->g:Landroid/animation/ObjectAnimator;
 
-    const-wide/16 v3, 0x12c
+    const-wide/16 v3, 0x78
 
     invoke-virtual {v1, v3, v4}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
@@ -1258,7 +1258,7 @@
 
     move-result-object p2
 
-    const-wide/16 v0, 0xc8
+    const-wide/16 v0, 0x78
 
     invoke-virtual {p2, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
@@ -1528,13 +1528,13 @@
 
     invoke-direct {v2}, Landroid/animation/AnimatorSet;-><init>()V
 
-    const-wide/16 v3, 0x0
+    const-wide/16 v3, 0x3c
 
     invoke-virtual {v0, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     invoke-virtual {v1, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    const-wide/16 v3, 0x0
+    const-wide/16 v3, 0x78
 
     invoke-virtual {p1, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

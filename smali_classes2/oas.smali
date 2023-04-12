@@ -103,7 +103,7 @@
 
     iget-object v0, p0, Loas;->b:Landroid/animation/ValueAnimator;
 
-    const-wide/16 v1, 0x0
+    const-wide/16 v1, 0xfa
 
     const/4 v3, 0x2
 

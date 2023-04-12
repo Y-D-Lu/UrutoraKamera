@@ -88,7 +88,7 @@
 
     sget-object v3, Lkae;->a:Lkae;
 
-    const v2, 0x3f1d70a4    # 0.615f
+    const v2, 0x3f800000    # 1.0f
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -105,6 +105,14 @@
     sget-object v7, Lkae;->c:Lkae;
 
     const/high16 v4, 0x40000000    # 2.0f
+
+    invoke-static {}, Lcom/Helper;->getizoom()I
+
+    move-result v4
+
+    invoke-static {v4}, Lcom/Helper;->getizoomv(I)F
+
+    move-result v4
 
     invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -168,7 +176,7 @@
 
     const-string v5, "pref_pzoom_key"
 
-    invoke-static {v5}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v5}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v5
 

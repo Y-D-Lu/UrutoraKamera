@@ -2640,7 +2640,7 @@
 
     const-string v4, "pref_p3_key"
 
-    invoke-static {v4}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v4}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v4
 
@@ -2751,7 +2751,7 @@
     :goto_5
     const-string v4, "pref_awbrec_key"
 
-    invoke-static {v4}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v4}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v4
 
@@ -4876,7 +4876,11 @@
     :goto_2
     const-string v5, "pref_frames_hdr_key"
 
-    invoke-static {v5}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v5}, Lcom/SDE/LensValue;->SetLensValue1(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v5
 

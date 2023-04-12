@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="plurals" name="dummy_ae_0">false</item>
-    <item type="plurals" name="dummy_ae_1">false</item>
-    <item type="plurals" name="dummy_ae_2">false</item>
     <plurals name="number_of_faces_announcement">
         <item quantity="other">%1$d faces.</item>
         <item quantity="one">%1$d face.</item>
@@ -52,4 +49,7 @@
         <item quantity="other">%s minutes of videos</item>
         <item quantity="one">%s minute of videos</item>
     </plurals>
+    <item type="plurals" name="APKTOOL_DUMMY_0" />
+    <item type="plurals" name="APKTOOL_DUMMY_1" />
+    <item type="plurals" name="APKTOOL_DUMMY_2" />
 </resources>

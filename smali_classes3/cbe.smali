@@ -166,7 +166,7 @@
     :pswitch_4
     const-string v1, "pref_focus_lock_time_key"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 

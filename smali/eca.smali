@@ -151,7 +151,7 @@
 
     const-string/jumbo p1, "pref_hexagon_key"
 
-    invoke-static {p1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {p1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result p1
 

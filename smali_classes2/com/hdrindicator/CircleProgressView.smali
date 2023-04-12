@@ -123,7 +123,7 @@
 
     iput-boolean v0, p0, Lcom/hdrindicator/CircleProgressView;->mShowAnimation:Z
 
-    const/16 v0, 0x0
+    const/16 v0, 0x3e8
 
     iput v0, p0, Lcom/hdrindicator/CircleProgressView;->mDuration:I
 
@@ -229,13 +229,7 @@
 
     move-result v1
 
-    const/high16 v2, -0x80000000
-
-    if-eq v1, v2, :cond_2
-
-    const/high16 v2, 0x40000000    # 2.0f
-
-    if-eq v1, v2, :cond_0
+    sparse-switch v1, :sswitch_data_0
 
     invoke-virtual {p0}, Lcom/hdrindicator/CircleProgressView;->getContext()Landroid/content/Context;
 
@@ -247,20 +241,20 @@
 
     goto :goto_1
 
-    :cond_0
+    :sswitch_0
     iget v2, p0, Lcom/hdrindicator/CircleProgressView;->mProgressWidth:I
 
-    if-ge v0, v2, :cond_1
+    if-ge v0, v2, :cond_0
 
     goto :goto_0
 
-    :cond_1
+    :cond_0
     move v2, v0
 
     :goto_0
     goto :goto_1
 
-    :cond_2
+    :sswitch_1
     iget v2, p0, Lcom/hdrindicator/CircleProgressView;->mDefaultWidth:I
 
     mul-int/lit8 v2, v2, 0x2
@@ -269,6 +263,14 @@
 
     :goto_1
     return v2
+
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        -0x80000000 -> :sswitch_1
+        0x40000000 -> :sswitch_0
+    .end sparse-switch
 .end method
 
 .method private measureWidth(I)I
@@ -282,13 +284,7 @@
 
     move-result v1
 
-    const/high16 v2, -0x80000000
-
-    if-eq v1, v2, :cond_2
-
-    const/high16 v2, 0x40000000    # 2.0f
-
-    if-eq v1, v2, :cond_0
+    sparse-switch v1, :sswitch_data_0
 
     invoke-virtual {p0}, Lcom/hdrindicator/CircleProgressView;->getContext()Landroid/content/Context;
 
@@ -300,20 +296,20 @@
 
     goto :goto_1
 
-    :cond_0
+    :sswitch_0
     iget v2, p0, Lcom/hdrindicator/CircleProgressView;->mProgressWidth:I
 
-    if-ge v0, v2, :cond_1
+    if-ge v0, v2, :cond_0
 
     goto :goto_0
 
-    :cond_1
+    :cond_0
     move v2, v0
 
     :goto_0
     goto :goto_1
 
-    :cond_2
+    :sswitch_1
     iget v2, p0, Lcom/hdrindicator/CircleProgressView;->mDefaultWidth:I
 
     mul-int/lit8 v2, v2, 0x2
@@ -322,6 +318,14 @@
 
     :goto_1
     return v2
+
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        -0x80000000 -> :sswitch_1
+        0x40000000 -> :sswitch_0
+    .end sparse-switch
 .end method
 
 

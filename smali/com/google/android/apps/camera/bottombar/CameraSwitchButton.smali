@@ -30,7 +30,7 @@
 .end method
 
 .method private initialize()V
-    .locals 3
+    .locals 6
 
     invoke-virtual {p0}, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -46,9 +46,120 @@
 
     invoke-super {p0, v0}, Lcom/google/android/apps/camera/bottombar/ScalableButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const/4 v0, 0x0
+    const-string v0, "pref_switch_key"
 
-    invoke-static {p0}, Lcom/custom/switch;->setLongClickListener(Landroid/view/View;)V
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_2
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_3
+
+    const/4 v1, 0x4
+
+    if-eq v0, v1, :cond_4
+
+    const/4 v1, 0x5
+
+    if-eq v0, v1, :cond_5
+
+    const/4 v1, 0x6
+
+    if-eq v0, v1, :cond_6
+
+    const/4 v1, 0x7
+
+    if-eq v0, v1, :cond_7
+
+    const/16 v1, 0x8
+
+    if-eq v0, v1, :cond_8
+
+    const/16 v1, 0x9
+
+    if-eq v0, v1, :cond_9
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/exposure/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/exptap/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_2
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/awb/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_3
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/upscale/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_4
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/noisemodel/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_5
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/framehdr/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_6
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/framezsl/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_7
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/colort/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_8
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->app_context:Landroid/content/Context;
+
+    invoke-static {p0, v0}, Lcom/longtap/aftime/switch;->setLongClickListener(Landroid/view/View;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_9
+    invoke-static {p0}, Lcom/longtap/page/switch;->setLongClickListener(Landroid/view/View;)V
+
+    :goto_0
+    const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->setFocusable(Z)V
 
@@ -58,7 +169,7 @@
 
     instance-of v1, v0, Landroid/graphics/drawable/RippleDrawable;
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_a
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
 
@@ -92,7 +203,7 @@
 
     invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    :cond_0
+    :cond_a
     return-void
 .end method
 

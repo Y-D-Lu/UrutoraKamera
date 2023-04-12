@@ -128,7 +128,7 @@
 
     invoke-virtual {v13, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    const-wide/16 v13, 0x0
+    const-wide/16 v13, 0x3c
 
     invoke-virtual {v2, v13, v14}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 

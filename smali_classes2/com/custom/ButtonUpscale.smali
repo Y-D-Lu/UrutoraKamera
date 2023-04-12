@@ -155,7 +155,7 @@
 
     const-string v1, "pref_show_button_upscale"
 
-    invoke-static {v1}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v1}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -172,9 +172,9 @@
 .method public init(Landroid/content/Context;)V
     .locals 1
 
-    const-string v0, "pref_upscale_key"
+    const-string v0, "pref_upscaleon_key"
 
-    invoke-static {v0}, Lcom/Helper;->MenuValue(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
 
     move-result v0
 

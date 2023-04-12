@@ -130,7 +130,7 @@
 
     sget-object p2, Lddl;->m:Lddi;
 
-    const/16 v0, 0x3e8
+    const/4 v0, -0x1
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -513,7 +513,7 @@
 
     sget-object v0, Lddl;->m:Lddi;
 
-    const/16 v3, 0x578
+    const/4 v3, -0x1
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
