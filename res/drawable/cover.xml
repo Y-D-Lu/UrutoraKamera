@@ -4,6 +4,6 @@
     <item>
         <color android:color="#ff000000" />
     </item>
-    <item android:gravity="center" android:height="54.0dip" android:width="54.0dip" android:drawable="@drawable/lmc54px" android:bottom="67.0dip" />
-    <item android:gravity="bottom|center" android:height="54.0dip" android:width="100.0dip" android:drawable="@drawable/coverhasli" android:bottom="90.0dip" />
+    <item android:gravity="center" android:height="54.0dip" android:width="54.0dip" android:drawable="@drawable/uk54px" android:bottom="67.0dip" />
+    <item android:gravity="bottom|center" android:height="54.0dip" android:width="100.0dip" android:drawable="@drawable/cover_arsenals" android:bottom="90.0dip" />
 </layer-list>

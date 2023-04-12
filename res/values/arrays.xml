@@ -46,7 +46,7 @@
         <item>18</item>
     </string-array>
     <string-array name="pref_c2aa_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>JPEG</item>
         <item>YUV</item>
     </string-array>
@@ -66,7 +66,7 @@
         <item>1</item>
     </string-array>
     <string-array name="pref_c2a_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>HARDWARE LEVEL FULL</item>
         <item>HARDWARE LEVEL 3</item>
     </string-array>
@@ -76,7 +76,7 @@
         <item>1</item>
     </string-array>
     <string-array name="fix_resolution_entries">
-        <item>@string/hsl_default</item>
+        <item>@string/uk_default</item>
         <item>RAW16</item>
         <item>PRIVATE</item>
         <item>YUV_420_888</item>
@@ -98,7 +98,7 @@
         <item>1212500294</item>
     </string-array>
     <string-array name="pref_antibanding_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>50 Hz</item>
         <item>60 Hz</item>
         <item>Off</item>
@@ -126,7 +126,7 @@
         <item>Realme 5 pro</item>
         <item>HMX Mi Note 10 NEW</item>
         <item>IMX582 Mi9T</item>
-        <item>@string/hsl_manualcolor</item>
+        <item>@string/uk_manualcolor</item>
     </string-array>
     <string-array name="pref_color_transform_entryvalues">
         <item>0</item>
@@ -409,7 +409,7 @@
         <item>3</item>
     </string-array>
     <string-array name="pref_awb_entries">
-        <item>@string/hsl_manualawb</item>
+        <item>@string/uk_manualawb</item>
         <item>0.Google Pixel 2</item>
         <item>1.Google Pixel 2 Front</item>
         <item>2.Google Pixel 3</item>
@@ -512,7 +512,7 @@
     </string-array>
     <string-array name="pref_auto_ns_entries">
         <item>Off</item>
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>Always</item>
     </string-array>
     <string-array name="pref_auto_ns_entryvalues">
@@ -661,7 +661,7 @@
         <item>6</item>
     </string-array>
     <string-array name="exp_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>Min ISO / Max Time</item>
         <item>32 Sec</item>
         <item>25 Sec</item>
@@ -811,7 +811,7 @@
         <item>-3,2</item>
     </string-array>
     <string-array name="pref_noise_model_entries">
-        <item>@string/hsl_noisesystem</item>
+        <item>@string/uk_noisesystem</item>
         <item>1. IMX363 by CSTARK</item>
         <item>2. S5K3T2 by SAVITAR</item>
         <item>3. S5KHMX1 by SAVITAR</item>
@@ -929,7 +929,7 @@
         <item>115. JN1 (EdgeX30)</item>
         <item>116. OV50A (EdgeX30)</item>
         <item>117. OV60A (EdgeX30)</item>
-        <item>@string/hsl_manualnoise</item>
+        <item>@string/uk_manualnoise</item>
     </string-array>
     <string-array name="pref_noise_model_entryvalues">
         <item>0</item>
@@ -1061,7 +1061,7 @@
         <item>0</item>
     </string-array>
     <string-array name="pref_nightmode_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>Dark theme</item>
         <item>Light theme</item>
     </string-array>
@@ -1191,7 +1191,7 @@
         <item>2.75</item>
         <item>2.875</item>
         <item>3.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lumanoise_entryvalues">
         <item>00F5044F</item>
@@ -1253,7 +1253,7 @@
         <item>0</item>
     </string-array>
     <string-array name="pref_samsung_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>Fix enable</item>
         <item>Fix disable</item>
     </string-array>
@@ -1299,7 +1299,7 @@
         <item>2.75</item>
         <item>2.875</item>
         <item>3</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex2_entryvalues">
         <item>080080D2</item>
@@ -1394,7 +1394,7 @@
         <item>ISO 90000</item>
         <item>ISO 95000</item>
         <item>ISO 100000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_iso1_entryvalues">
         <item>09F0A752</item>
@@ -1582,7 +1582,7 @@
         <item>2.75</item>
         <item>2.875</item>
         <item>3</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex1_entryvalues">
         <item>0801F8D2</item>
@@ -1719,10 +1719,10 @@
     <string-array name="lib_noisemodelunblock_entries">
         <item>Unblock</item>
         <item>Block (Default)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="libs_entries">
-        <item>@string/hsl_libentry</item>
+        <item>@string/uk_libentry</item>
         <item>Google</item>
     </string-array>
     <string-array name="libs_entryvalues">
@@ -1730,7 +1730,7 @@
         <item>0</item>
     </string-array>
     <string-array name="pref_frames_2_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>3</item>
         <item>7</item>
         <item>15</item>
@@ -1780,15 +1780,15 @@
         <item>200.0</item>
     </string-array>
     <string-array name="pref_set_focus_entries">
-        <item>@string/hsl_touchfocus</item>
-        <item>@string/hsl_reinitfocus</item>
+        <item>@string/uk_touchfocus</item>
+        <item>@string/uk_reinitfocus</item>
     </string-array>
     <string-array name="pref_set_focus_entryvalues">
         <item>0</item>
         <item>1</item>
     </string-array>
     <string-array name="tf_af_entries">
-        <item>@string/hsl_focusmid</item>
+        <item>@string/uk_focusmid</item>
         <item>1 sec</item>
         <item>2 sec</item>
         <item>4 sec</item>
@@ -1812,7 +1812,7 @@
         <item>60</item>
     </string-array>
     <string-array name="lib_hex_nightexposition_entries">
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
         <item>0 (The light is brighter)</item>
         <item>0.5</item>
         <item>1</item>
@@ -1971,7 +1971,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_saturation2_entryvalues">
         <item>0710301E</item>
@@ -2129,7 +2129,7 @@
         <item>28.00</item>
         <item>30.00</item>
         <item>31.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_saturation3_entryvalues">
         <item>00F0771E</item>
@@ -2235,7 +2235,7 @@
     <string-array name="lib_hex_shastaforce_entries">
         <item>On</item>
         <item>Off</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_shastaforce_entryvalues">
         <item>28008052</item>
@@ -2273,7 +2273,7 @@
         <item>20.0</item>
         <item>25.0</item>
         <item>30.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_temporaldenoise_entryvalues">
         <item>E103271E</item>
@@ -2311,7 +2311,7 @@
     <string-array name="lib_hex_fixraw16merge_entries">
         <item>On</item>
         <item>Off</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_fixraw16merge_entryvalues">
         <item>08028052</item>
@@ -2321,7 +2321,7 @@
     <string-array name="lib_hex_lightfix2_entries">
         <item>On</item>
         <item>Off</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lightfix2_entryvalues">
         <item>1F2003D5</item>
@@ -2336,7 +2336,7 @@
         <item>96%</item>
         <item>95%</item>
         <item>94%</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hardjpgquality_entryvalues">
         <item>15008052</item>
@@ -2443,7 +2443,7 @@
         <item>9.00</item>
         <item>9.50</item>
         <item>10.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_underexpo1_entryvalues">
         <item>000080BF</item>
@@ -2611,7 +2611,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabresharp2_entryvalues">
         <item>0090321E</item>
@@ -2739,7 +2739,7 @@
         <item>30.0</item>
         <item>31.0</item>
         <item>(Default)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabresharp3_entryvalues">
         <item>E003271E</item>
@@ -2923,7 +2923,7 @@
         <item>5000.0</item>
         <item>(ret)</item>
         <item>(Infinity (NAN) plus)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sharpradius_entryvalues">
         <item>0000F07F</item>
@@ -3078,7 +3078,7 @@
         <item>1.875</item>
         <item>2.000</item>
         <item>(Default)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_softsharp_entryvalues">
         <item>E303679E</item>
@@ -3462,7 +3462,7 @@
         <item>9.00</item>
         <item>9.50</item>
         <item>10.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_smoothingsabre_entries">
         <item>-1.0</item>
@@ -3818,7 +3818,7 @@
         <item>9.00</item>
         <item>9.50</item>
         <item>10.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_smoothingsabre_entryvalues">
         <item>000080BF</item>
@@ -4262,7 +4262,7 @@
         <item>4.0</item>
         <item>4.5</item>
         <item>5.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_depth2_entryvalues">
         <item>0410301e</item>
@@ -4350,7 +4350,7 @@
         <item>4.0</item>
         <item>4.5</item>
         <item>5.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabretext_entries">
         <item>0.000</item>
@@ -4383,7 +4383,7 @@
         <item>20.0</item>
         <item>25.0</item>
         <item>30.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_vignettec_entries">
         <item>-16.0</item>
@@ -4443,7 +4443,7 @@
         <item>14.0</item>
         <item>15.0</item>
         <item>16.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_vignettec_entryvalues">
         <item>0E10E61E</item>
@@ -4563,7 +4563,7 @@
         <item>14.0</item>
         <item>15.0</item>
         <item>16.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hardmerge_entries">
         <item>0 wiener_filter</item>
@@ -4571,7 +4571,7 @@
         <item>2 spatial_bayer</item>
         <item>3 spatial_rgb</item>
         <item>4</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hardmerge_entryvalues">
         <item>04008052</item>
@@ -4612,7 +4612,7 @@
         <item>20.0</item>
         <item>25.0</item>
         <item>30.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabrburmerge2_entries">
         <item>-20.0</item>
@@ -4710,7 +4710,7 @@
         <item>28.0</item>
         <item>29.0</item>
         <item>30.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdr_rang_entryvalues">
         <item>0390361E</item>
@@ -4906,7 +4906,7 @@
         <item>28.0</item>
         <item>29.0</item>
         <item>30.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdr_range_entryvalues">
         <item>0290361E</item>
@@ -5048,7 +5048,7 @@
         <item>4.50</item>
         <item>4.75</item>
         <item>5.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lutnoise1_entryvalues">
         <item>0A90321E</item>
@@ -5196,7 +5196,7 @@
         <item>28.00</item>
         <item>30.00</item>
         <item>31.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabrenoiseart_entryvalues">
         <item>02F0371E</item>
@@ -5310,7 +5310,7 @@
         <item>0.125</item>
         <item>0.000099659 (Default)</item>
         <item>0.00000622869</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_fixnoisesabre_entryvalues">
         <item>289AA872</item>
@@ -5325,7 +5325,7 @@
     <string-array name="lib_hex_colprocessing_entries">
         <item>Off</item>
         <item>On</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_colprocessing_entryvalues">
         <item>08008052</item>
@@ -5366,7 +5366,7 @@
         <item>-1 (Default)</item>
         <item>0</item>
         <item>1</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_shastamerge_entryvalues">
         <item>09F0371E</item>
@@ -5457,7 +5457,7 @@
         <item>27.0</item>
         <item>29.0</item>
         <item>31.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_volumeprocessing1_entryvalues">
         <item>0DF0371E</item>
@@ -5567,7 +5567,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_noiseaberr_entryvalues">
         <item>0010281E</item>
@@ -5708,7 +5708,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_smoothness_entryvalues">
         <item>00F0371E</item>
@@ -5880,7 +5880,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_smoothing_entryvalues">
         <item>E807F8D2</item>
@@ -5999,7 +5999,7 @@
         <item>20.0</item>
         <item>25.0</item>
         <item>30.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_radius_entryvalues">
         <item>0C00A052</item>
@@ -6055,7 +6055,7 @@
         <item>8192</item>
         <item>16384</item>
         <item>32768</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_denoisesize_entryvalues">
         <item>01008052</item>
@@ -6089,7 +6089,7 @@
         <item>8.0</item>
         <item>9.0</item>
         <item>10.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_vignette_entries">
         <item>-2.000</item>
@@ -6126,7 +6126,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_vignette_entryvalues">
         <item>0810301E</item>
@@ -6198,7 +6198,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_clarity_entryvalues">
         <item>0890321E</item>
@@ -6303,7 +6303,7 @@
         <item>0.18</item>
         <item>0.19</item>
         <item>0.20</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_contr2_entryvalues">
         <item>9A9999999999D93F</item>
@@ -6341,7 +6341,7 @@
         <item>0.53</item>
         <item>0.54</item>
         <item>0.55</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lighting_entries">
         <item>-2.000</item>
@@ -6428,7 +6428,7 @@
         <item>28.00</item>
         <item>30.00</item>
         <item>31.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lighting_entryvalues">
         <item>0210301E</item>
@@ -6531,7 +6531,7 @@
         <item>48</item>
         <item>16</item>
         <item>2</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_light_entryvalues">
         <item>09008452</item>
@@ -6573,7 +6573,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_libpatcher_e_entryvalues">
         <item>e803271e</item>
@@ -6617,7 +6617,7 @@
         <item>4.00</item>
         <item>4.50</item>
         <item>5.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hdroverlight_entryvalues">
         <item>EE03271E</item>
@@ -6732,7 +6732,7 @@
         <item>9.00</item>
         <item>9.50</item>
         <item>10.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_exposuren_entries">
         <item>0.125</item>
@@ -6789,7 +6789,7 @@
         <item>14.0</item>
         <item>14.5</item>
         <item>15.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_exposuren_entryvalues">
         <item>0010281E</item>
@@ -6866,7 +6866,7 @@
         <item>1.25</item>
         <item>1.375</item>
         <item>1.5</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_exposuredep_entryvalues">
         <item>00103E1E</item>
@@ -6906,7 +6906,7 @@
         <item>1.500</item>
         <item>1.750</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_darkenlight_entryvalues">
         <item>0D10301E</item>
@@ -6945,7 +6945,7 @@
         <item>-0.500</item>
         <item>-0.125</item>
         <item>0.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabre_entryvalues">
         <item>0190321E</item>
@@ -6991,7 +6991,7 @@
         <item>2000</item>
         <item>2500</item>
         <item>3000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabre2_entryvalues">
         <item>09008052</item>
@@ -7145,7 +7145,7 @@
         <item>5000.0</item>
         <item>(ret)</item>
         <item>(Infinity (NAN) plus)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="finelib_hex2_entries">
         <item>-4.000</item>
@@ -7243,7 +7243,7 @@
         <item>28.00</item>
         <item>30.00</item>
         <item>31.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="finelib_hex2_entryvalues">
         <item>0010721E</item>
@@ -7392,7 +7392,7 @@
         <item>(medium)</item>
         <item>(ret)</item>
         <item>(Infinity (NAN) plus)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_noisesup_entryvalues">
         <item>0000F07F</item>
@@ -7504,7 +7504,7 @@
         <item>1.875</item>
         <item>1.9375</item>
         <item>2</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_global_entryvalues">
         <item>E0F7076F</item>
@@ -7651,7 +7651,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sharpshastamotion_entryvalues">
         <item>00F0371E</item>
@@ -7793,7 +7793,7 @@
         <item>30</item>
         <item>31</item>
         <item>(Default)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sharpnessnoisemodel_entryvalues">
         <item>09F0371E</item>
@@ -7853,7 +7853,7 @@
     </string-array>
     <string-array name="lib_hex_blurpreview_entries">
         <item>On</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_blurpreview_entryvalues">
         <item>84048052</item>
@@ -7885,7 +7885,7 @@
         <item>23.</item>
         <item>24.</item>
         <item>25.</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdrmodel_entryvalues">
         <item>08000014</item>
@@ -7920,7 +7920,7 @@
         <item>Off (Disable upscale)</item>
         <item>1 (Lanczos)</item>
         <item>2 (Raisr2020)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_resampling_entryvalues">
         <item>7C5C0094</item>
@@ -8025,7 +8025,7 @@
         <item>28.0</item>
         <item>29.0</item>
         <item>30.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lightfix_entryvalues">
         <item>40530036</item>
@@ -8039,7 +8039,7 @@
     </string-array>
     <string-array name="lib_hex_lutnoisefix_entries">
         <item>On</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lutnoisefix_entryvalues">
         <item>0C10221E</item>
@@ -8144,7 +8144,7 @@
         <item>0.009</item>
         <item>0.0095</item>
         <item>0.01</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_expocomp_entryvalues">
         <item>1800A072</item>
@@ -8193,7 +8193,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_exposuredarker2_entryvalues">
         <item>E103271E</item>
@@ -8233,7 +8233,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_exposuredarker_entryvalues">
         <item>E203271E</item>
@@ -8273,7 +8273,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_shastamerge3_entryvalues">
         <item>0110681E</item>
@@ -8417,7 +8417,7 @@
         <item>28.00</item>
         <item>30.00</item>
         <item>31.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hotpixelsuppres_entries">
         <item>0.125</item>
@@ -8472,7 +8472,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_bayernmodhal1_entries">
         <item>-5.0</item>
@@ -8496,7 +8496,7 @@
         <item>4.0</item>
         <item>4.5</item>
         <item>5.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_bayernmodhal1_entryvalues">
         <item>92F6044F</item>
@@ -8606,7 +8606,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_noisemodelshot_entries">
         <item>-31.00</item>
@@ -8730,7 +8730,7 @@
         <item>28.00</item>
         <item>30.00</item>
         <item>31.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_noisemodelshot_entryvalues">
         <item>08F0371E</item>
@@ -9210,7 +9210,7 @@
         <item>9.00</item>
         <item>9.50</item>
         <item>10.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_bluecor2_entries">
         <item>2.00</item>
@@ -9267,7 +9267,7 @@
         <item>-1.40</item>
         <item>-1.50</item>
         <item>-2.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_bluecor2_entryvalues">
         <item>0800A872</item>
@@ -9628,7 +9628,7 @@
         <item>1.98</item>
         <item>1.99</item>
         <item>2.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_color_entryvalues">
         <item>000080BF</item>
@@ -9968,7 +9968,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_contr3a_entryvalues">
         <item>0210301E</item>
@@ -10035,7 +10035,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_contr3b_entryvalues">
         <item>E503271E</item>
@@ -10072,7 +10072,7 @@
         <item>-0.5</item>
         <item>0.0 (Default)</item>
         <item>0.5</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdreffect_entryvalues">
         <item>0A103C1E</item>
@@ -10099,7 +10099,7 @@
         <item>0.048</item>
         <item>0.049</item>
         <item>0.05</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_whitelevel_entryvalues">
         <item>7AA0A772</item>
@@ -10149,7 +10149,7 @@
         <item>4.50</item>
         <item>5.00</item>
         <item>10.0 (weaker)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_shadowtuning_entryvalues">
         <item>0110281E</item>
@@ -10215,7 +10215,7 @@
         <item>245</item>
         <item>250</item>
         <item>255 (Default)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_softcontrast_entryvalues">
         <item>084EA872</item>
@@ -10331,7 +10331,7 @@
         <item>-1.40</item>
         <item>-1.50</item>
         <item>-2.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_bluecor_entryvalues">
         <item>0900A872</item>
@@ -10467,7 +10467,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdroverlight_entryvalues">
         <item>EC03271E</item>
@@ -10631,10 +10631,10 @@
         <item>(medium)</item>
         <item>(ret)</item>
         <item>(Infinity (NAN) plus)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sensorid_entries">
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -10707,7 +10707,7 @@
         <item>4.50</item>
         <item>5.00</item>
         <item>10.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lumadnewa_entryvalues">
         <item>0110321E</item>
@@ -10851,7 +10851,7 @@
         <item>28.0</item>
         <item>29.0</item>
         <item>30.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabre3_entries">
         <item>0</item>
@@ -10873,7 +10873,7 @@
         <item>80</item>
         <item>85</item>
         <item>90</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabre3_entryvalues">
         <item>08008052</item>
@@ -10952,7 +10952,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="pref_bitrate_entries">
         <item>@string/pref_bitrate_0</item>
@@ -10997,7 +10997,7 @@
         <item>18</item>
     </string-array>
     <string-array name="lib_hex_tone_entries">
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
         <item>Straigt line</item>
         <item>GMM W12</item>
         <item>GMM R5</item>
@@ -11067,7 +11067,7 @@
         <item>00000000000000005839B4C876BE8F3F894160E5D022AB3FD9CEF753E3A5BB3F666666666666C63F000000000000D03F6F1283C0CAA1D53F83C0CAA145B6DB3F736891ED7C3FE13FD7A3703D0AD7E33F6ABC74931804E63F7F6ABC749318E83F448B6CE7FBA9E93F8716D9CEF753EB3FF853E3A59BC4EC3F931804560E2DEE3F000000000000F03F</item>
     </string-array>
     <string-array name="lib_hex_gamma_entries">
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
         <item>Linear line</item>
         <item>GMM A4 for tone U5</item>
         <item>GMM A5</item>
@@ -11104,7 +11104,7 @@
     </string-array>
     <string-array name="lib_hex_ldr_entries">
         <item>On</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_ldr_entryvalues">
         <item>E003679E</item>
@@ -11113,7 +11113,7 @@
     <string-array name="lib_raw_compress_entries">
         <item>Off</item>
         <item>On</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_raw_compress_entryvalues">
         <item>08008052</item>
@@ -11121,7 +11121,7 @@
         <item>0</item>
     </string-array>
     <string-array name="lib_nightmodegain_entries">
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
         <item>0.25</item>
         <item>0.50</item>
         <item>0.75</item>
@@ -11190,8 +11190,8 @@
         <item>8.0</item>
         <item>8.5</item>
         <item>9.0</item>
-        <item>@string/hsl_default</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_default</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_shadowcompens_entryvalues">
         <item>0A102E1E</item>
@@ -11260,7 +11260,7 @@
         <item>DeD KH</item>
         <item>Arcide v0.4</item>
         <item>Rivov 8.7</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_initparams_entryvalues">
         <item>04008052</item>
@@ -11270,11 +11270,11 @@
     <string-array name="lib_hex_initparams_entries">
         <item>CPU</item>
         <item>HEXAGON</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="pref_curve_mode_entries">
-        <item>@string/hsl_curvepreset</item>
-        <item>@string/hsl_curveparam</item>
+        <item>@string/uk_curvepreset</item>
+        <item>@string/uk_curveparam</item>
     </string-array>
     <string-array name="pref_curve_mode_entryvalues">
         <item>-1</item>
@@ -11466,8 +11466,8 @@
         <item>Enabled</item>
     </string-array>
     <string-array name="pref_curve_mode3_entries">
-        <item>@string/hsl_curvepreset</item>
-        <item>@string/hsl_curveparam</item>
+        <item>@string/uk_curvepreset</item>
+        <item>@string/uk_curveparam</item>
     </string-array>
     <string-array name="pref_curve_mode3_entryvalues">
         <item>-1</item>
@@ -11527,7 +11527,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sharpgainm_entryvalues">
         <item>0800A052</item>
@@ -11625,7 +11625,7 @@
         <item>2.0</item>
         <item>2.5</item>
         <item>3.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sharpgain_entryvalues">
         <item>0808B852</item>
@@ -11691,7 +11691,7 @@
         <item>9</item>
         <item>9.5</item>
         <item>10</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_relativetetfactor_entryvalues">
         <item>E003271E</item>
@@ -11720,7 +11720,7 @@
     <string-array name="lib_hex_dframeswithtetm_entries">
         <item>Off</item>
         <item>On</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_dframeswithtetm_entryvalues">
         <item>1F2003D5</item>
@@ -11772,7 +11772,7 @@
         <item>1.875</item>
         <item>2.000</item>
         <item>(Default)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_dehazed2_entryvalues">
         <item>0010301e</item>
@@ -11839,7 +11839,7 @@
         <item>1.750</item>
         <item>1.875</item>
         <item>2.000</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lasintens_entryvalues">
         <item>E903271e</item>
@@ -11882,7 +11882,7 @@
         <item>1.125</item>
         <item>1.1875</item>
         <item>1.25</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_brightintens_entryvalues">
         <item>E803679E</item>
@@ -11932,7 +11932,7 @@
         <item>262144</item>
     </string-array>
     <string-array name="raw_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>RAW10</item>
         <item>RAW16</item>
     </string-array>
@@ -11947,7 +11947,7 @@
         <item>20332e</item>
         <item>20352e</item>
         <item>20392e</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_robustness_entryvalues">
         <item>20302e</item>
@@ -12041,7 +12041,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdrraw2_entryvalues">
         <item>08F0771E</item>
@@ -12213,7 +12213,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_noisereductsabre_entryvalues">
         <item>0AF0371E</item>
@@ -12355,7 +12355,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lumanoise1_entryvalues">
         <item>1400A052</item>
@@ -12468,7 +12468,7 @@
         <item>30.0</item>
         <item>31.0</item>
         <item>(Default)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lumasmooth_entryvalues">
         <item>E003271E</item>
@@ -12714,7 +12714,7 @@
         <item>4.50</item>
         <item>4.75</item>
         <item>5.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_dehazeexpo_entryvalues">
         <item>01102F1E</item>
@@ -12977,7 +12977,7 @@
         <item>27.0</item>
         <item>29.0</item>
         <item>31.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_lumadenoise_entryvalues">
         <item>09F0371E</item>
@@ -13104,7 +13104,7 @@
         <item>4.5</item>
         <item>4.75</item>
         <item>5.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_brightn_entryvalues">
         <item>0310281E</item>
@@ -13234,7 +13234,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_ccontrast_entryvalues">
         <item>01F0771E</item>
@@ -13412,7 +13412,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdrbrightness_entryvalues">
         <item>09F0371E</item>
@@ -13533,7 +13533,7 @@
         <item>4.50</item>
         <item>4.75</item>
         <item>5.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_ccontrast2_entryvalues">
         <item>E103271E</item>
@@ -13585,7 +13585,7 @@
         <item>1.75</item>
         <item>1.875</item>
         <item>2.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdr2_entryvalues">
         <item>EC03271E</item>
@@ -13610,7 +13610,7 @@
     <string-array name="lib_hex_highlight2_entries">
         <item>Off</item>
         <item>On</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_highlight2_entryvalues">
         <item>08102E1E</item>
@@ -13638,7 +13638,7 @@
         <item>1.875</item>
         <item>2.000</item>
         <item>Default</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdrratio2_entryvalues">
         <item>E203271E</item>
@@ -13692,7 +13692,7 @@
         <item>4.00</item>
         <item>4.50</item>
         <item>5.00</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_avgldr_entryvalues">
         <item>E103271E</item>
@@ -13728,7 +13728,7 @@
     <string-array name="lib_hex_wbbaseframe_entries">
         <item>On</item>
         <item>Default</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_wbbaseframe_entryvalues">
         <item>28008052</item>
@@ -13803,7 +13803,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_noisereductsabre1_entryvalues">
         <item>ED03271E</item>
@@ -13915,7 +13915,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_contrast5_entryvalues">
         <item>E3F7074F</item>
@@ -14060,7 +14060,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_contrast4_entryvalues">
         <item>E0F7054F</item>
@@ -14238,7 +14238,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_sabrenoiseestimals_entryvalues">
         <item>00F0371E</item>
@@ -14384,7 +14384,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hdrratio3_entryvalues">
         <item>E303271E</item>
@@ -14444,7 +14444,7 @@
         <item>0</item>
     </string-array>
     <string-array name="white_level_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>1023</item>
         <item>4095</item>
     </string-array>
@@ -14534,7 +14534,7 @@
         <item>100</item>
     </string-array>
     <string-array name="gcam_lens_logic_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>@string/gcam_lens_logic_0</item>
         <item>@string/gcam_lens_logic_1</item>
         <item>@string/gcam_lens_logic_2</item>
@@ -14564,7 +14564,7 @@
         <item>12</item>
     </string-array>
     <string-array name="design_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>Ordinary</item>
         <item>Pixel 4a</item>
         <item>Pixel 4a 5g</item>
@@ -14598,7 +14598,7 @@
     <string-array name="lib_hex_onoffw8ne_entries">
         <item>Off</item>
         <item>On</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_onoffw8ne_entryvalues">
         <item>08008052</item>
@@ -14661,7 +14661,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_brightness1_entryvalues">
         <item>E203271E</item>
@@ -14728,7 +14728,7 @@
         <item>1.0 (Default)</item>
         <item>1.0625</item>
         <item>1.125</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_glare_entryvalues">
         <item>05B02D1E</item>
@@ -14795,7 +14795,7 @@
         <item>28.0</item>
         <item>30.0</item>
         <item>31.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_highlight2compensation_entryvalues">
         <item>E203271E</item>
@@ -14858,7 +14858,7 @@
     <string-array name="lib_hex_hotpixel_entries">
         <item>On</item>
         <item>Off (Default)</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hotpixel_entryvalues">
         <item>7D520639</item>
@@ -14866,12 +14866,12 @@
         <item>0</item>
     </string-array>
     <string-array name="pref_noise_iso_entries">
-        <item>@string/hsl_default</item>
+        <item>@string/uk_default</item>
         <item>100</item>
         <item>200</item>
         <item>300</item>
-        <item>@string/hsl_noisedynamic</item>
-        <item>@string/hsl_noisemanualiso</item>
+        <item>@string/uk_noisedynamic</item>
+        <item>@string/uk_noisemanualiso</item>
     </string-array>
     <string-array name="pref_noise_iso_entryvalues">
         <item>0</item>
@@ -14887,7 +14887,7 @@
         <item>HDR++</item>
         <item>Portrait</item>
         <item>NightSight</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_hardux_entryvalues">
         <item>420000B4</item>
@@ -14941,7 +14941,7 @@
         <item>8.00</item>
         <item>9.00</item>
         <item>10.0</item>
-        <item>@string/hsl_offasinlib</item>
+        <item>@string/uk_offasinlib</item>
     </string-array>
     <string-array name="lib_hex_nightsky_entryvalues">
         <item>E103271E</item>
@@ -15038,7 +15038,7 @@
         <item>21</item>
     </string-array>
     <string-array name="pref_frames_fix_entries">
-        <item>@string/hsl_auto</item>
+        <item>@string/uk_auto</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -15100,7 +15100,7 @@
         <item>28</item>
     </string-array>
     <string-array name="pref_izoom_entries">
-        <item>@string/hsl_default</item>
+        <item>@string/uk_default</item>
         <item>x1.1</item>
         <item>x1.2</item>
         <item>x1.3</item>
@@ -15152,16 +15152,16 @@
         <item>1</item>
     </string-array>
     <string-array name="switch_entries">
-        <item>@string/hsl_arrays_switchEX</item>
-        <item>@string/hsl_arrays_switchHDREXPO</item>
-        <item>@string/hsl_arrays_switchAWB</item>
-        <item>@string/hsl_arrays_switchUPS</item>
-        <item>@string/hsl_arrays_switchNOISE</item>
-        <item>@string/hsl_arrays_switchHDRF</item>
-        <item>@string/hsl_arrays_switchZSLF</item>
-        <item>@string/hsl_arrays_switchCOLORT</item>
-        <item>@string/hsl_arrays_switchAFTIME</item>
-        <item>@string/hsl_arrays_switchPSCREEN</item>
+        <item>@string/uk_arrays_switchEX</item>
+        <item>@string/uk_arrays_switchHDREXPO</item>
+        <item>@string/uk_arrays_switchAWB</item>
+        <item>@string/uk_arrays_switchUPS</item>
+        <item>@string/uk_arrays_switchNOISE</item>
+        <item>@string/uk_arrays_switchHDRF</item>
+        <item>@string/uk_arrays_switchZSLF</item>
+        <item>@string/uk_arrays_switchCOLORT</item>
+        <item>@string/uk_arrays_switchAFTIME</item>
+        <item>@string/uk_arrays_switchPSCREEN</item>
     </string-array>
     <string-array name="switch_entryvalues">
         <item>0</item>

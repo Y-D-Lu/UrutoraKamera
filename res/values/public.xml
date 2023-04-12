@@ -7275,8 +7275,8 @@
     <public type="drawable" name="pref_focus_off" id="0x7f080715" />
     <public type="drawable" name="pref_focus_on" id="0x7f080716" />
     <public type="drawable" name="cover" id="0x7f080719" />
-    <public type="drawable" name="coverhasli" id="0x7f08071a" />
-    <public type="drawable" name="lmc54px" id="0x7f08071b" />
+    <public type="drawable" name="cover_arsenals" id="0x7f08071a" />
+    <public type="drawable" name="uk54px" id="0x7f08071b" />
     <public type="drawable" name="pref_expslide_off" id="0x7f08071e" />
     <public type="drawable" name="pref_tf_off" id="0x7f08071f" />
     <public type="drawable" name="pref_tf_on" id="0x7f080720" />
@@ -7496,19 +7496,19 @@
     <public type="drawable" name="abc_textfield_search_default_mtrl_alpha" id="0x7f08043e" />
     <public type="drawable" name="coloredicons_cic_create_300_36" id="0x7f08047b" />
     <public type="drawable" name="coloredicons_cic_create_700_36" id="0x7f08047e" />
-    <public type="drawable" name="hsl_awb" id="0x7f08047f" />
-    <public type="drawable" name="hsl_tg" id="0x7f080480" />
-    <public type="drawable" name="hsl_sid" id="0x7f080483" />
-    <public type="drawable" name="hsl_f" id="0x7f08049c" />
-    <public type="drawable" name="hsl_hdrp" id="0x7f08049e" />
+    <public type="drawable" name="uk_awb" id="0x7f08047f" />
+    <public type="drawable" name="uk_tg" id="0x7f080480" />
+    <public type="drawable" name="uk_sid" id="0x7f080483" />
+    <public type="drawable" name="uk_f" id="0x7f08049c" />
+    <public type="drawable" name="uk_hdrp" id="0x7f08049e" />
     <public type="drawable" name="focus_quadrant_1" id="0x7f08049f" />
     <public type="drawable" name="focus_quadrant_2" id="0x7f0804a0" />
     <public type="drawable" name="focus_quadrant_3" id="0x7f0804a1" />
     <public type="drawable" name="focus_quadrant_4" id="0x7f0804a2" />
-    <public type="drawable" name="hsl_zsl" id="0x7f0804a5" />
+    <public type="drawable" name="uk_zsl" id="0x7f0804a5" />
     <public type="drawable" name="gm_filled_bluetooth_connected_white_18" id="0x7f0804ae" />
     <public type="drawable" name="gm_filled_bluetooth_connected_white_24" id="0x7f0804af" />
-    <public type="drawable" name="hsl_jawb" id="0x7f0804b0" />
+    <public type="drawable" name="uk_jawb" id="0x7f0804b0" />
     <public type="drawable" name="gm_filled_mic_external_on_white_18" id="0x7f0804b1" />
     <public type="drawable" name="gm_filled_mic_external_on_white_24" id="0x7f0804b2" />
     <public type="drawable" name="gm_filled_play_arrow_white_24" id="0x7f0804b3" />
@@ -7628,79 +7628,79 @@
     <public type="drawable" name="quantum_ic_open_in_new_grey600_24" id="0x7f080683" />
     <public type="drawable" name="quantum_ic_panorama_photosphere_white_24" id="0x7f080686" />
     <public type="drawable" name="baseline_auto_fix_high_white_20" id="0x7f080687" />
-    <public type="drawable" name="hsl_expocorrect" id="0x7f080688" />
+    <public type="drawable" name="uk_expocorrect" id="0x7f080688" />
     <public type="drawable" name="quantum_ic_pause_white_24" id="0x7f080689" />
     <public type="drawable" name="quantum_ic_phone_white_24" id="0x7f08068a" />
     <public type="drawable" name="quantum_ic_photosphere_white_18" id="0x7f08068c" />
     <public type="drawable" name="quantum_ic_photosphere_white_24" id="0x7f08068d" />
     <public type="drawable" name="quantum_ic_play_arrow_white_24" id="0x7f08068e" />
     <public type="drawable" name="quantum_ic_public_white_24" id="0x7f08068f" />
-    <public type="drawable" name="hsl_exposure" id="0x7f080690" />
-    <public type="drawable" name="hsl_lens_1" id="0x7f080691" />
-    <public type="drawable" name="hsl_lens_2" id="0x7f080692" />
-    <public type="drawable" name="hsl_lens_3" id="0x7f080693" />
-    <public type="drawable" name="hsl_lens_4" id="0x7f080694" />
-    <public type="drawable" name="hsl_lens_5" id="0x7f080695" />
-    <public type="drawable" name="hsl_lens_front" id="0x7f080696" />
-    <public type="drawable" name="hsl_lightandshadow" id="0x7f080697" />
-    <public type="drawable" name="hsl_mod" id="0x7f080698" />
-    <public type="drawable" name="hsl_modname" id="0x7f0806a2" />
-    <public type="drawable" name="hsl_pat_extra" id="0x7f0806a3" />
-    <public type="drawable" name="hsl_pat_processing" id="0x7f0806ae" />
-    <public type="drawable" name="hsl_patcher" id="0x7f0806b5" />
-    <public type="drawable" name="hsl_sabre" id="0x7f0806be" />
-    <public type="drawable" name="hsl_sabrelevel" id="0x7f0806bf" />
-    <public type="drawable" name="hsl_sharp" id="0x7f0806c1" />
-    <public type="drawable" name="hsl_smoothing" id="0x7f0806c2" />
-    <public type="drawable" name="hsl_smoothing_level" id="0x7f0806d4" />
-    <public type="drawable" name="hsl_aftime" id="0x7f0806e2" />
-    <public type="drawable" name="hsl_antibanding" id="0x7f0806e5" />
-    <public type="drawable" name="hsl_autons" id="0x7f0806e7" />
-    <public type="drawable" name="hsl_aux" id="0x7f0806e8" />
-    <public type="drawable" name="hsl_b" id="0x7f0806e9" />
-    <public type="drawable" name="hsl_bitrate" id="0x7f0806ea" />
-    <public type="drawable" name="hsl_bl" id="0x7f0806eb" />
-    <public type="drawable" name="hsl_c2a" id="0x7f0806ec" />
-    <public type="drawable" name="hsl_color" id="0x7f0806ed" />
-    <public type="drawable" name="hsl_ct" id="0x7f0806ee" />
-    <public type="drawable" name="hsl_dcip3" id="0x7f0806ef" />
-    <public type="drawable" name="hsl_focusmode" id="0x7f0806f0" />
-    <public type="drawable" name="hsl_focusnight" id="0x7f0806f1" />
-    <public type="drawable" name="hsl_focusset" id="0x7f0806f2" />
-    <public type="drawable" name="hsl_g" id="0x7f0806f3" />
-    <public type="drawable" name="hsl_hdrframe" id="0x7f0806f4" />
-    <public type="drawable" name="hsl_hexagon" id="0x7f0806f5" />
-    <public type="drawable" name="hsl_jpg" id="0x7f0806f8" />
-    <public type="drawable" name="hsl_ldr" id="0x7f0806f9" />
-    <public type="drawable" name="hsl_leica" id="0x7f0806fa" />
-    <public type="drawable" name="hsl_load" id="0x7f0806fb" />
-    <public type="drawable" name="hsl_manual" id="0x7f0806fc" />
-    <public type="drawable" name="hsl_manualfocus" id="0x7f0806fd" />
-    <public type="drawable" name="hsl_noisemodel" id="0x7f0806fe" />
-    <public type="drawable" name="hsl_prefix" id="0x7f0806ff" />
-    <public type="drawable" name="hsl_pro" id="0x7f080700" />
-    <public type="drawable" name="hsl_r" id="0x7f080701" />
-    <public type="drawable" name="hsl_resvideo" id="0x7f080702" />
-    <public type="drawable" name="hsl_save" id="0x7f080703" />
-    <public type="drawable" name="hsl_standart" id="0x7f080704" />
-    <public type="drawable" name="hsl_style" id="0x7f080705" />
-    <public type="drawable" name="hsl_switch" id="0x7f080706" />
-    <public type="drawable" name="hsl_theme" id="0x7f080707" />
-    <public type="drawable" name="hsl_touchfocus" id="0x7f080708" />
-    <public type="drawable" name="hsl_tweak" id="0x7f080709" />
-    <public type="drawable" name="hsl_ui" id="0x7f08070a" />
-    <public type="drawable" name="hsl_video" id="0x7f08070b" />
-    <public type="drawable" name="hsl_whitebalance" id="0x7f08070c" />
-    <public type="drawable" name="hsl_curve" id="0x7f080717" />
-    <public type="drawable" name="hsl_confimport" id="0x7f080718" />
-    <public type="drawable" name="hsl_restart" id="0x7f08071c" />
-    <public type="drawable" name="hsl_expslide" id="0x7f08071d" />
-    <public type="drawable" name="hsl_hdrplusraw" id="0x7f080725" />
-    <public type="drawable" name="hsl_oneplusraw" id="0x7f080726" />
-    <public type="drawable" name="hsl_raw" id="0x7f080727" />
-    <public type="drawable" name="hsl_sunfix" id="0x7f080728" />
-    <public type="drawable" name="hsl_dynamiciso" id="0x7f08072e" />
-    <public type="drawable" name="hsl_unlock" id="0x7f08072f" />
+    <public type="drawable" name="uk_exposure" id="0x7f080690" />
+    <public type="drawable" name="uk_lens_1" id="0x7f080691" />
+    <public type="drawable" name="uk_lens_2" id="0x7f080692" />
+    <public type="drawable" name="uk_lens_3" id="0x7f080693" />
+    <public type="drawable" name="uk_lens_4" id="0x7f080694" />
+    <public type="drawable" name="uk_lens_5" id="0x7f080695" />
+    <public type="drawable" name="uk_lens_front" id="0x7f080696" />
+    <public type="drawable" name="uk_lightandshadow" id="0x7f080697" />
+    <public type="drawable" name="uk_mod" id="0x7f080698" />
+    <public type="drawable" name="uk_modname" id="0x7f0806a2" />
+    <public type="drawable" name="uk_pat_extra" id="0x7f0806a3" />
+    <public type="drawable" name="uk_pat_processing" id="0x7f0806ae" />
+    <public type="drawable" name="uk_patcher" id="0x7f0806b5" />
+    <public type="drawable" name="uk_sabre" id="0x7f0806be" />
+    <public type="drawable" name="uk_sabrelevel" id="0x7f0806bf" />
+    <public type="drawable" name="uk_sharp" id="0x7f0806c1" />
+    <public type="drawable" name="uk_smoothing" id="0x7f0806c2" />
+    <public type="drawable" name="uk_smoothing_level" id="0x7f0806d4" />
+    <public type="drawable" name="uk_aftime" id="0x7f0806e2" />
+    <public type="drawable" name="uk_antibanding" id="0x7f0806e5" />
+    <public type="drawable" name="uk_autons" id="0x7f0806e7" />
+    <public type="drawable" name="uk_aux" id="0x7f0806e8" />
+    <public type="drawable" name="uk_b" id="0x7f0806e9" />
+    <public type="drawable" name="uk_bitrate" id="0x7f0806ea" />
+    <public type="drawable" name="uk_bl" id="0x7f0806eb" />
+    <public type="drawable" name="uk_c2a" id="0x7f0806ec" />
+    <public type="drawable" name="uk_color" id="0x7f0806ed" />
+    <public type="drawable" name="uk_ct" id="0x7f0806ee" />
+    <public type="drawable" name="uk_dcip3" id="0x7f0806ef" />
+    <public type="drawable" name="uk_focusmode" id="0x7f0806f0" />
+    <public type="drawable" name="uk_focusnight" id="0x7f0806f1" />
+    <public type="drawable" name="uk_focusset" id="0x7f0806f2" />
+    <public type="drawable" name="uk_g" id="0x7f0806f3" />
+    <public type="drawable" name="uk_hdrframe" id="0x7f0806f4" />
+    <public type="drawable" name="uk_hexagon" id="0x7f0806f5" />
+    <public type="drawable" name="uk_jpg" id="0x7f0806f8" />
+    <public type="drawable" name="uk_ldr" id="0x7f0806f9" />
+    <public type="drawable" name="uk_leica" id="0x7f0806fa" />
+    <public type="drawable" name="uk_load" id="0x7f0806fb" />
+    <public type="drawable" name="uk_manual" id="0x7f0806fc" />
+    <public type="drawable" name="uk_manualfocus" id="0x7f0806fd" />
+    <public type="drawable" name="uk_noisemodel" id="0x7f0806fe" />
+    <public type="drawable" name="uk_prefix" id="0x7f0806ff" />
+    <public type="drawable" name="uk_pro" id="0x7f080700" />
+    <public type="drawable" name="uk_r" id="0x7f080701" />
+    <public type="drawable" name="uk_resvideo" id="0x7f080702" />
+    <public type="drawable" name="uk_save" id="0x7f080703" />
+    <public type="drawable" name="uk_standart" id="0x7f080704" />
+    <public type="drawable" name="uk_style" id="0x7f080705" />
+    <public type="drawable" name="uk_switch" id="0x7f080706" />
+    <public type="drawable" name="uk_theme" id="0x7f080707" />
+    <public type="drawable" name="uk_touchfocus" id="0x7f080708" />
+    <public type="drawable" name="uk_tweak" id="0x7f080709" />
+    <public type="drawable" name="uk_ui" id="0x7f08070a" />
+    <public type="drawable" name="uk_video" id="0x7f08070b" />
+    <public type="drawable" name="uk_whitebalance" id="0x7f08070c" />
+    <public type="drawable" name="uk_curve" id="0x7f080717" />
+    <public type="drawable" name="uk_confimport" id="0x7f080718" />
+    <public type="drawable" name="uk_restart" id="0x7f08071c" />
+    <public type="drawable" name="uk_expslide" id="0x7f08071d" />
+    <public type="drawable" name="uk_hdrplusraw" id="0x7f080725" />
+    <public type="drawable" name="uk_oneplusraw" id="0x7f080726" />
+    <public type="drawable" name="uk_raw" id="0x7f080727" />
+    <public type="drawable" name="uk_sunfix" id="0x7f080728" />
+    <public type="drawable" name="uk_dynamiciso" id="0x7f08072e" />
+    <public type="drawable" name="uk_unlock" id="0x7f08072f" />
     <public type="font" name="google_sans" id="0x7f090000" />
     <public type="font" name="google_sans_compat" id="0x7f090002" />
     <public type="font" name="google_sans_display" id="0x7f090003" />
@@ -8867,20 +8867,20 @@
     <public type="layout" name="preference_updates" id="0x7f0e001b" />
     <public type="layout" name="li_row_textview" id="0x7f0e001c" />
     <public type="layout" name="hide" id="0x7f0e001d" />
-    <public type="layout" name="hsl_150" id="0x7f0e001e" />
-    <public type="layout" name="hsl_170" id="0x7f0e001f" />
+    <public type="layout" name="uk_150" id="0x7f0e001e" />
+    <public type="layout" name="uk_170" id="0x7f0e001f" />
     <public type="layout" name="activity_main" id="0x7f0e0020" />
-    <public type="layout" name="hsl_200" id="0x7f0e0021" />
-    <public type="layout" name="hsl_50" id="0x7f0e0022" />
+    <public type="layout" name="uk_200" id="0x7f0e0021" />
+    <public type="layout" name="uk_50" id="0x7f0e0022" />
     <public type="layout" name="autotimer_tutorial_layout" id="0x7f0e0023" />
-    <public type="layout" name="hsl_author" id="0x7f0e0024" />
+    <public type="layout" name="uk_author" id="0x7f0e0024" />
     <public type="layout" name="beta" id="0x7f0e0025" />
     <public type="layout" name="bottom_bar_layout" id="0x7f0e0026" />
     <public type="layout" name="bottom_sheet" id="0x7f0e0027" />
     <public type="layout" name="bottom_sheet_frame" id="0x7f0e0028" />
     <public type="layout" name="bottom_sheet_frame_legacy" id="0x7f0e0029" />
     <public type="layout" name="bottom_sheet_legacy" id="0x7f0e002a" />
-    <public type="layout" name="hsl_modname" id="0x7f0e002b" />
+    <public type="layout" name="uk_modname" id="0x7f0e002b" />
     <public type="layout" name="camera" id="0x7f0e002c" />
     <public type="layout" name="camera_overlay" id="0x7f0e002d" />
     <public type="layout" name="cancel_button" id="0x7f0e002e" />
@@ -8888,11 +8888,11 @@
     <public type="layout" name="chameleon_layout" id="0x7f0e0030" />
     <public type="layout" name="chameleon_ui" id="0x7f0e0031" />
     <public type="layout" name="collapsing_toolbar_base_layout" id="0x7f0e0032" />
-    <public type="layout" name="hsl_pwmbg" id="0x7f0e0033" />
-    <public type="layout" name="hsl_pwmsecond" id="0x7f0e0034" />
+    <public type="layout" name="uk_pwmbg" id="0x7f0e0033" />
+    <public type="layout" name="uk_pwmsecond" id="0x7f0e0034" />
     <public type="layout" name="cvv_root" id="0x7f0e0035" />
-    <public type="layout" name="hsl_pwmsmall" id="0x7f0e0036" />
-    <public type="layout" name="hsl_tg" id="0x7f0e0037" />
+    <public type="layout" name="uk_pwmsmall" id="0x7f0e0036" />
+    <public type="layout" name="uk_tg" id="0x7f0e0037" />
     <public type="layout" name="design_bottom_sheet_dialog" id="0x7f0e0038" />
     <public type="layout" name="preference_category_center_layout" id="0x7f0e0039" />
     <public type="layout" name="preference_gamma" id="0x7f0e003a" />
@@ -8901,14 +8901,14 @@
     <public type="layout" name="design_menu_item_action_area" id="0x7f0e003d" />
     <public type="layout" name="preference_tone" id="0x7f0e003e" />
     <public type="layout" name="preference_with_margin1" id="0x7f0e003f" />
-    <public type="layout" name="hsl_tg1" id="0x7f0e0040" />
+    <public type="layout" name="uk_tg1" id="0x7f0e0040" />
     <public type="layout" name="preference_with_margin_extra" id="0x7f0e0041" />
     <public type="layout" name="pwm_ns" id="0x7f0e0042" />
     <public type="layout" name="design_navigation_menu_item" id="0x7f0e0043" />
     <public type="layout" name="pwm_info" id="0x7f0e0044" />
     <public type="layout" name="pwm_info1" id="0x7f0e0045" />
     <public type="layout" name="pwm_info2" id="0x7f0e0046" />
-    <public type="layout" name="hsl_tg2" id="0x7f0e0047" />
+    <public type="layout" name="uk_tg2" id="0x7f0e0047" />
     <public type="layout" name="double_tap_bottom_sheet" id="0x7f0e0048" />
     <public type="layout" name="double_tap_bottom_sheet_legacy" id="0x7f0e0049" />
     <public type="layout" name="dumpling_layout" id="0x7f0e004a" />
@@ -9051,7 +9051,7 @@
     <public type="layout" name="washington_menu_layout" id="0x7f0e010b" />
     <public type="layout" name="zoom_lock_layout" id="0x7f0e011f" />
     <public type="layout" name="zoom_ui_layout" id="0x7f0e0120" />
-    <public type="layout" name="hsl_author1" id="0x7f0e0121" />
+    <public type="layout" name="uk_author1" id="0x7f0e0121" />
     <public type="layout" name="libsignature" id="0x7f0e0122" />
     <public type="layout" name="preference_gamma_2" id="0x7f0e0123" />
     <public type="layout" name="preference_gamma_3" id="0x7f0e0124" />
@@ -9429,7 +9429,7 @@
     <public type="string" name="cinematic_movements_description" id="0x7f1400ea" />
     <public type="string" name="cinematic_movements_name" id="0x7f1400eb" />
     <public type="string" name="maxbright_summary" id="0x7f1400ec" />
-    <public type="string" name="hsl_catextra" id="0x7f1400ed" />
+    <public type="string" name="uk_catextra" id="0x7f1400ed" />
     <public type="string" name="common_google_play_services_enable_button" id="0x7f1400ee" />
     <public type="string" name="common_google_play_services_enable_text" id="0x7f1400ef" />
     <public type="string" name="common_google_play_services_enable_title" id="0x7f1400f0" />
@@ -9444,26 +9444,26 @@
     <public type="string" name="common_google_play_services_update_text" id="0x7f1400f9" />
     <public type="string" name="common_google_play_services_update_title" id="0x7f1400fa" />
     <public type="string" name="common_google_play_services_updating_text" id="0x7f1400fb" />
-    <public type="string" name="hsl_catmain" id="0x7f1400fc" />
-    <public type="string" name="hsl_catsharp" id="0x7f1400fd" />
-    <public type="string" name="hsl_catexposure" id="0x7f1400fe" />
-    <public type="string" name="hsl_catsabre" id="0x7f1400ff" />
+    <public type="string" name="uk_catmain" id="0x7f1400fc" />
+    <public type="string" name="uk_catsharp" id="0x7f1400fd" />
+    <public type="string" name="uk_catexposure" id="0x7f1400fe" />
+    <public type="string" name="uk_catsabre" id="0x7f1400ff" />
     <public type="string" name="complicationDrawable_noDataText" id="0x7f140100" />
     <public type="string" name="complicationDrawable_textTypeface" id="0x7f140101" />
     <public type="string" name="complicationDrawable_titleTypeface" id="0x7f140102" />
-    <public type="string" name="hsl_catprocessing" id="0x7f140103" />
-    <public type="string" name="hsl_catdenoise" id="0x7f140104" />
-    <public type="string" name="hsl_catlightandshadow" id="0x7f140105" />
-    <public type="string" name="hsl_catleveldenoise" id="0x7f140106" />
-    <public type="string" name="hsl_catleveldenoise2" id="0x7f140107" />
+    <public type="string" name="uk_catprocessing" id="0x7f140103" />
+    <public type="string" name="uk_catdenoise" id="0x7f140104" />
+    <public type="string" name="uk_catlightandshadow" id="0x7f140105" />
+    <public type="string" name="uk_catleveldenoise" id="0x7f140106" />
+    <public type="string" name="uk_catleveldenoise2" id="0x7f140107" />
     <public type="string" name="connect_internet_for_examples" id="0x7f140108" />
-    <public type="string" name="hsl_catlevelsabre" id="0x7f140109" />
-    <public type="string" name="hsl_enablepatcher" id="0x7f14010a" />
+    <public type="string" name="uk_catlevelsabre" id="0x7f140109" />
+    <public type="string" name="uk_enablepatcher" id="0x7f14010a" />
     <public type="string" name="contact_us" id="0x7f14010b" />
     <public type="string" name="continue_anyway" id="0x7f14010c" />
     <public type="string" name="copy" id="0x7f14010d" />
-    <public type="string" name="hsl_patcheractive" id="0x7f14010e" />
-    <public type="string" name="hsl_patcheroff" id="0x7f14010f" />
+    <public type="string" name="uk_patcheractive" id="0x7f14010e" />
+    <public type="string" name="uk_patcheroff" id="0x7f14010f" />
     <public type="string" name="cuttleface_capturing_first" id="0x7f140110" />
     <public type="string" name="cuttlefish_almost_stable_text" id="0x7f140111" />
     <public type="string" name="cuttlefish_capture_text_1" id="0x7f140112" />
@@ -9475,44 +9475,44 @@
     <public type="string" name="cuttlefish_name" id="0x7f140118" />
     <public type="string" name="cuttlefish_stable_text" id="0x7f140119" />
     <public type="string" name="cuttlefish_zoom_advice_text" id="0x7f14011a" />
-    <public type="string" name="hsl_entrylib" id="0x7f14011b" />
+    <public type="string" name="uk_entrylib" id="0x7f14011b" />
     <public type="string" name="cvv_download_desc" id="0x7f14011c" />
     <public type="string" name="cvv_play_desc" id="0x7f14011d" />
     <public type="string" name="deblur_fusion" id="0x7f14011e" />
     <public type="string" name="deblur_fusion_description" id="0x7f14011f" />
     <public type="string" name="default_desc" id="0x7f140120" />
     <public type="string" name="default_title" id="0x7f140121" />
-    <public type="string" name="hsl_lens_1" id="0x7f140122" />
-    <public type="string" name="hsl_lens_2" id="0x7f140123" />
-    <public type="string" name="hsl_lens_3" id="0x7f140124" />
+    <public type="string" name="uk_lens_1" id="0x7f140122" />
+    <public type="string" name="uk_lens_2" id="0x7f140123" />
+    <public type="string" name="uk_lens_3" id="0x7f140124" />
     <public type="string" name="detailed_face_announcement" id="0x7f140125" />
-    <public type="string" name="hsl_lens_4" id="0x7f140126" />
-    <public type="string" name="hsl_lens_5" id="0x7f140127" />
-    <public type="string" name="hsl_lens_front" id="0x7f140128" />
+    <public type="string" name="uk_lens_4" id="0x7f140126" />
+    <public type="string" name="uk_lens_5" id="0x7f140127" />
+    <public type="string" name="uk_lens_front" id="0x7f140128" />
     <public type="string" name="device_out_of_storage_body" id="0x7f140129" />
     <public type="string" name="device_out_of_storage_title" id="0x7f14012a" />
-    <public type="string" name="hsl_screenpatcher" id="0x7f14012b" />
-    <public type="string" name="hsl_screenpatcher_desc" id="0x7f14012c" />
+    <public type="string" name="uk_screenpatcher" id="0x7f14012b" />
+    <public type="string" name="uk_screenpatcher_desc" id="0x7f14012c" />
     <public type="string" name="dialog_cancel" id="0x7f14012d" />
     <public type="string" name="dialog_dismiss" id="0x7f14012e" />
-    <public type="string" name="hsl_catcolor" id="0x7f14012f" />
-    <public type="string" name="hsl_functionphoto" id="0x7f140130" />
+    <public type="string" name="uk_catcolor" id="0x7f14012f" />
+    <public type="string" name="uk_functionphoto" id="0x7f140130" />
     <public type="string" name="dialog_ok" id="0x7f140131" />
     <public type="string" name="dialog_ok_cased" id="0x7f140132" />
-    <public type="string" name="hsl_functionphoto_desc" id="0x7f140133" />
-    <public type="string" name="hsl_screenexposure" id="0x7f140134" />
-    <public type="string" name="hsl_screenexposure_desc" id="0x7f140135" />
-    <public type="string" name="hsl_exposure" id="0x7f140136" />
+    <public type="string" name="uk_functionphoto_desc" id="0x7f140133" />
+    <public type="string" name="uk_screenexposure" id="0x7f140134" />
+    <public type="string" name="uk_screenexposure_desc" id="0x7f140135" />
+    <public type="string" name="uk_exposure" id="0x7f140136" />
     <public type="string" name="dialog_title_warning" id="0x7f140137" />
     <public type="string" name="dialog_vr_core_not_enabled" id="0x7f140138" />
     <public type="string" name="dialog_vr_core_not_installed" id="0x7f140139" />
-    <public type="string" name="hsl_exposureslider" id="0x7f14013a" />
-    <public type="string" name="hsl_exposurenight" id="0x7f14013b" />
+    <public type="string" name="uk_exposureslider" id="0x7f14013a" />
+    <public type="string" name="uk_exposurenight" id="0x7f14013b" />
     <public type="string" name="dnd_access_needed_info" id="0x7f14013c" />
     <public type="string" name="dogfood_description" id="0x7f14013d" />
     <public type="string" name="dogfood_name" id="0x7f14013e" />
-    <public type="string" name="hsl_exposurecomp" id="0x7f14013f" />
-    <public type="string" name="hsl_exposurecompenable" id="0x7f140140" />
+    <public type="string" name="uk_exposurecomp" id="0x7f14013f" />
+    <public type="string" name="uk_exposurecompenable" id="0x7f140140" />
     <public type="string" name="double_tap_edu_url" id="0x7f140141" />
     <public type="string" name="double_tap_launch_bottomsheet_got_it" id="0x7f140142" />
     <public type="string" name="double_tap_launch_bottomsheet_text" id="0x7f140143" />
@@ -9521,50 +9521,50 @@
     <public type="string" name="double_tap_switch_camera" id="0x7f140146" />
     <public type="string" name="double_tap_zoom" id="0x7f140147" />
     <public type="string" name="downloading_updates" id="0x7f140148" />
-    <public type="string" name="hsl_exposurecompnight" id="0x7f140149" />
-    <public type="string" name="hsl_screenmodelstyle" id="0x7f14014a" />
+    <public type="string" name="uk_exposurecompnight" id="0x7f140149" />
+    <public type="string" name="uk_screenmodelstyle" id="0x7f14014a" />
     <public type="string" name="education_swipe_toast_message" id="0x7f14014b" />
     <public type="string" name="enable_stabilization_tooltip" id="0x7f14014c" />
-    <public type="string" name="hsl_screenmodelstyle_desc" id="0x7f14014d" />
-    <public type="string" name="hsl_model" id="0x7f14014e" />
-    <public type="string" name="hsl_style" id="0x7f14014f" />
-    <public type="string" name="hsl_screensabre" id="0x7f140150" />
-    <public type="string" name="hsl_screensabre_desc" id="0x7f140151" />
-    <public type="string" name="hsl_screenmerge" id="0x7f140152" />
-    <public type="string" name="hsl_screennoisemodel" id="0x7f140153" />
-    <public type="string" name="hsl_screennoisemodel_desc" id="0x7f140154" />
-    <public type="string" name="hsl_screenawb" id="0x7f140155" />
-    <public type="string" name="hsl_screenawb_desc" id="0x7f140156" />
-    <public type="string" name="hsl_screenbl" id="0x7f140157" />
-    <public type="string" name="hsl_screenbl_desc" id="0x7f140158" />
+    <public type="string" name="uk_screenmodelstyle_desc" id="0x7f14014d" />
+    <public type="string" name="uk_model" id="0x7f14014e" />
+    <public type="string" name="uk_style" id="0x7f14014f" />
+    <public type="string" name="uk_screensabre" id="0x7f140150" />
+    <public type="string" name="uk_screensabre_desc" id="0x7f140151" />
+    <public type="string" name="uk_screenmerge" id="0x7f140152" />
+    <public type="string" name="uk_screennoisemodel" id="0x7f140153" />
+    <public type="string" name="uk_screennoisemodel_desc" id="0x7f140154" />
+    <public type="string" name="uk_screenawb" id="0x7f140155" />
+    <public type="string" name="uk_screenawb_desc" id="0x7f140156" />
+    <public type="string" name="uk_screenbl" id="0x7f140157" />
+    <public type="string" name="uk_screenbl_desc" id="0x7f140158" />
     <public type="string" name="error_permissions_keyguard_updated" id="0x7f140159" />
     <public type="string" name="error_permissions_updated" id="0x7f14015a" />
-    <public type="string" name="hsl_dynamicbl" id="0x7f14015b" />
+    <public type="string" name="uk_dynamicbl" id="0x7f14015b" />
     <public type="string" name="ev_announcement" id="0x7f14015c" />
     <public type="string" name="ev_reset_button_accessibility_description" id="0x7f14015d" />
-    <public type="string" name="hsl_saveconfig" id="0x7f14015e" />
-    <public type="string" name="hsl_saveconfig_desc" id="0x7f14015f" />
-    <public type="string" name="hsl_zoomfactor" id="0x7f140160" />
-    <public type="string" name="hsl_motionres" id="0x7f140161" />
-    <public type="string" name="hsl_motionres_desc" id="0x7f140162" />
-    <public type="string" name="hsl_autons" id="0x7f140163" />
-    <public type="string" name="hsl_ois" id="0x7f140164" />
-    <public type="string" name="hsl_ois_desc" id="0x7f140165" />
-    <public type="string" name="hsl_antibanding" id="0x7f140166" />
-    <public type="string" name="hsl_theme" id="0x7f140167" />
-    <public type="string" name="hsl_dcip3" id="0x7f140168" />
-    <public type="string" name="hsl_dcip3_desc" id="0x7f140169" />
-    <public type="string" name="hsl_jpgquality" id="0x7f14016a" />
+    <public type="string" name="uk_saveconfig" id="0x7f14015e" />
+    <public type="string" name="uk_saveconfig_desc" id="0x7f14015f" />
+    <public type="string" name="uk_zoomfactor" id="0x7f140160" />
+    <public type="string" name="uk_motionres" id="0x7f140161" />
+    <public type="string" name="uk_motionres_desc" id="0x7f140162" />
+    <public type="string" name="uk_autons" id="0x7f140163" />
+    <public type="string" name="uk_ois" id="0x7f140164" />
+    <public type="string" name="uk_ois_desc" id="0x7f140165" />
+    <public type="string" name="uk_antibanding" id="0x7f140166" />
+    <public type="string" name="uk_theme" id="0x7f140167" />
+    <public type="string" name="uk_dcip3" id="0x7f140168" />
+    <public type="string" name="uk_dcip3_desc" id="0x7f140169" />
+    <public type="string" name="uk_jpgquality" id="0x7f14016a" />
     <public type="string" name="expand_button_title" id="0x7f14016b" />
-    <public type="string" name="hsl_framehdr" id="0x7f14016c" />
+    <public type="string" name="uk_framehdr" id="0x7f14016c" />
     <public type="string" name="exposure_knob_description" id="0x7f14016d" />
-    <public type="string" name="hsl_framehdrnight" id="0x7f14016e" />
+    <public type="string" name="uk_framehdrnight" id="0x7f14016e" />
     <public type="string" name="ext_mic_desc" id="0x7f14016f" />
     <public type="string" name="ext_mic_off_acc_desc" id="0x7f140170" />
-    <public type="string" name="hsl_gphoto" id="0x7f140171" />
+    <public type="string" name="uk_gphoto" id="0x7f140171" />
     <public type="string" name="ext_mic_off_option_desc" id="0x7f140172" />
     <public type="string" name="ext_mic_on_acc_desc" id="0x7f140173" />
-    <public type="string" name="hsl_gphoto_desc" id="0x7f140174" />
+    <public type="string" name="uk_gphoto_desc" id="0x7f140174" />
     <public type="string" name="ext_mic_on_option_desc" id="0x7f140175" />
     <public type="string" name="ext_mic_options_desc" id="0x7f140176" />
     <public type="string" name="external_bluetooth_mic_connected" id="0x7f140177" />
@@ -9589,29 +9589,29 @@
     <public type="string" name="faceretouch_on_light_option_desc" id="0x7f14018a" />
     <public type="string" name="faceretouch_on_strong_acc_desc" id="0x7f14018b" />
     <public type="string" name="faceretouch_on_strong_option_desc" id="0x7f14018c" />
-    <public type="string" name="hsl_afnight" id="0x7f14018d" />
+    <public type="string" name="uk_afnight" id="0x7f14018d" />
     <public type="string" name="feedback_description_empty" id="0x7f14018e" />
-    <public type="string" name="hsl_afnight_desc" id="0x7f14018f" />
+    <public type="string" name="uk_afnight_desc" id="0x7f14018f" />
     <public type="string" name="first_run_done" id="0x7f140190" />
     <public type="string" name="first_run_title" id="0x7f140191" />
     <public type="string" name="fisheye_accessibility_peek" id="0x7f140192" />
-    <public type="string" name="hsl_screenstandart" id="0x7f140193" />
+    <public type="string" name="uk_screenstandart" id="0x7f140193" />
     <public type="string" name="flash_auto_desc" id="0x7f140194" />
     <public type="string" name="flash_chip_text" id="0x7f140195" />
     <public type="string" name="flash_desc" id="0x7f140196" />
     <public type="string" name="flash_ns_desc" id="0x7f140197" />
-    <public type="string" name="hsl_screentweak" id="0x7f140198" />
+    <public type="string" name="uk_screentweak" id="0x7f140198" />
     <public type="string" name="flash_off_desc" id="0x7f140199" />
-    <public type="string" name="hsl_screentweak_desc" id="0x7f14019a" />
+    <public type="string" name="uk_screentweak_desc" id="0x7f14019a" />
     <public type="string" name="flash_on_desc" id="0x7f14019b" />
     <public type="string" name="flash_options_desc" id="0x7f14019c" />
-    <public type="string" name="hsl_screenvideo" id="0x7f14019d" />
-    <public type="string" name="hsl_exposurecompportrait" id="0x7f14019e" />
-    <public type="string" name="hsl_hexagon" id="0x7f14019f" />
-    <public type="string" name="hsl_hexagon_desc" id="0x7f1401a0" />
-    <public type="string" name="hsl_prefix" id="0x7f1401a1" />
-    <public type="string" name="hsl_datatime" id="0x7f1401a2" />
-    <public type="string" name="hsl_datatime_desc" id="0x7f1401a3" />
+    <public type="string" name="uk_screenvideo" id="0x7f14019d" />
+    <public type="string" name="uk_exposurecompportrait" id="0x7f14019e" />
+    <public type="string" name="uk_hexagon" id="0x7f14019f" />
+    <public type="string" name="uk_hexagon_desc" id="0x7f1401a0" />
+    <public type="string" name="uk_prefix" id="0x7f1401a1" />
+    <public type="string" name="uk_datatime" id="0x7f1401a2" />
+    <public type="string" name="uk_datatime_desc" id="0x7f1401a3" />
     <public type="string" name="four_by_three" id="0x7f1401a4" />
     <public type="string" name="four_by_three_desc" id="0x7f1401a5" />
     <public type="string" name="fps_24" id="0x7f1401a6" />
@@ -9622,25 +9622,25 @@
     <public type="string" name="fps_60_desc" id="0x7f1401ab" />
     <public type="string" name="fps_auto" id="0x7f1401ac" />
     <public type="string" name="fps_auto_desc" id="0x7f1401ad" />
-    <public type="string" name="hsl_auxshow" id="0x7f1401ae" />
-    <public type="string" name="hsl_auxname" id="0x7f1401af" />
+    <public type="string" name="uk_auxshow" id="0x7f1401ae" />
+    <public type="string" name="uk_auxname" id="0x7f1401af" />
     <public type="string" name="fps_option_desc" id="0x7f1401b0" />
     <public type="string" name="fps_options_desc" id="0x7f1401b1" />
     <public type="string" name="frequent_faces_info" id="0x7f1401b2" />
     <public type="string" name="frequent_faces_learn_more" id="0x7f1401b3" />
     <public type="string" name="frequent_faces_off" id="0x7f1401b4" />
     <public type="string" name="frequent_faces_on" id="0x7f1401b5" />
-    <public type="string" name="hsl_enableusertext" id="0x7f1401b6" />
-    <public type="string" name="hsl_idmanual" id="0x7f1401b7" />
+    <public type="string" name="uk_enableusertext" id="0x7f1401b6" />
+    <public type="string" name="uk_idmanual" id="0x7f1401b7" />
     <public type="string" name="gcam_HDR_plus_enhanced_processing" id="0x7f1401b8" />
-    <public type="string" name="hsl_idback" id="0x7f1401b9" />
-    <public type="string" name="hsl_idfront" id="0x7f1401ba" />
-    <public type="string" name="hsl_macrofocus" id="0x7f1401bb" />
-    <public type="string" name="hsl_infinityfocus" id="0x7f1401bc" />
-    <public type="string" name="hsl_focusslider" id="0x7f1401bd" />
-    <public type="string" name="hsl_focusslider_desc" id="0x7f1401be" />
-    <public type="string" name="hsl_colortransform" id="0x7f1401bf" />
-    <public type="string" name="hsl_colortransformauto" id="0x7f1401c0" />
+    <public type="string" name="uk_idback" id="0x7f1401b9" />
+    <public type="string" name="uk_idfront" id="0x7f1401ba" />
+    <public type="string" name="uk_macrofocus" id="0x7f1401bb" />
+    <public type="string" name="uk_infinityfocus" id="0x7f1401bc" />
+    <public type="string" name="uk_focusslider" id="0x7f1401bd" />
+    <public type="string" name="uk_focusslider_desc" id="0x7f1401be" />
+    <public type="string" name="uk_colortransform" id="0x7f1401bf" />
+    <public type="string" name="uk_colortransformauto" id="0x7f1401c0" />
     <public type="string" name="gm3_sys_motion_easing_accelerated" id="0x7f1401c1" />
     <public type="string" name="gm3_sys_motion_easing_decelerated" id="0x7f1401c2" />
     <public type="string" name="gm3_sys_motion_easing_emphasized" id="0x7f1401c3" />
@@ -9652,21 +9652,21 @@
     <public type="string" name="gm_sys_motion_easing_linear" id="0x7f1401c9" />
     <public type="string" name="gm_sys_motion_easing_standard" id="0x7f1401ca" />
     <public type="string" name="go_to_photos_btn_text" id="0x7f1401cb" />
-    <public type="string" name="hsl_colortransform_desc" id="0x7f1401cc" />
+    <public type="string" name="uk_colortransform_desc" id="0x7f1401cc" />
     <public type="string" name="go_to_playstore_button" id="0x7f1401cd" />
     <public type="string" name="go_to_vr_listeners_settings_button" id="0x7f1401ce" />
-    <public type="string" name="hsl_awbgain" id="0x7f1401cf" />
-    <public type="string" name="hsl_enableautoct" id="0x7f1401d0" />
+    <public type="string" name="uk_awbgain" id="0x7f1401cf" />
+    <public type="string" name="uk_enableautoct" id="0x7f1401d0" />
     <public type="string" name="grid_mode_four_by_four" id="0x7f1401d1" />
     <public type="string" name="grid_mode_golden_ratio" id="0x7f1401d2" />
     <public type="string" name="grid_mode_off" id="0x7f1401d3" />
     <public type="string" name="grid_mode_three_by_three" id="0x7f1401d4" />
-    <public type="string" name="hsl_cctwbcorrect" id="0x7f1401d5" />
-    <public type="string" name="hsl_fixspacewb" id="0x7f1401d6" />
-    <public type="string" name="hsl_awbbutton" id="0x7f1401d7" />
-    <public type="string" name="hsl_awbenable" id="0x7f1401d8" />
-    <public type="string" name="hsl_configimport" id="0x7f1401d9" />
-    <public type="string" name="hsl_configimport_desc" id="0x7f1401da" />
+    <public type="string" name="uk_cctwbcorrect" id="0x7f1401d5" />
+    <public type="string" name="uk_fixspacewb" id="0x7f1401d6" />
+    <public type="string" name="uk_awbbutton" id="0x7f1401d7" />
+    <public type="string" name="uk_awbenable" id="0x7f1401d8" />
+    <public type="string" name="uk_configimport" id="0x7f1401d9" />
+    <public type="string" name="uk_configimport_desc" id="0x7f1401da" />
     <public type="string" name="hdr_desc" id="0x7f1401db" />
     <public type="string" name="hdr_enhanced" id="0x7f1401dc" />
     <public type="string" name="hdr_enhanced_desc" id="0x7f1401dd" />
@@ -9674,23 +9674,23 @@
     <public type="string" name="hdr_off_desc" id="0x7f1401df" />
     <public type="string" name="hdr_on" id="0x7f1401e0" />
     <public type="string" name="hdr_on_desc" id="0x7f1401e1" />
-    <public type="string" name="hsl_confxml" id="0x7f1401e2" />
-    <public type="string" name="hsl_confxml_desc" id="0x7f1401e3" />
-    <public type="string" name="hsl_screenconf" id="0x7f1401e4" />
+    <public type="string" name="uk_confxml" id="0x7f1401e2" />
+    <public type="string" name="uk_confxml_desc" id="0x7f1401e3" />
+    <public type="string" name="uk_screenconf" id="0x7f1401e4" />
     <public type="string" name="hdr_plus_options_desc" id="0x7f1401e5" />
-    <public type="string" name="hsl_screenconf_desc" id="0x7f1401e6" />
-    <public type="string" name="hsl_afdebug" id="0x7f1401e7" />
-    <public type="string" name="hsl_focuslocked" id="0x7f1401e8" />
-    <public type="string" name="hsl_focuslocktime" id="0x7f1401e9" />
-    <public type="string" name="hsl_focustracking" id="0x7f1401ea" />
-    <public type="string" name="hsl_focustracking_desc" id="0x7f1401eb" />
+    <public type="string" name="uk_screenconf_desc" id="0x7f1401e6" />
+    <public type="string" name="uk_afdebug" id="0x7f1401e7" />
+    <public type="string" name="uk_focuslocked" id="0x7f1401e8" />
+    <public type="string" name="uk_focuslocktime" id="0x7f1401e9" />
+    <public type="string" name="uk_focustracking" id="0x7f1401ea" />
+    <public type="string" name="uk_focustracking_desc" id="0x7f1401eb" />
     <public type="string" name="hfr_record_speed" id="0x7f1401ec" />
-    <public type="string" name="hsl_pref_focus_string_title" id="0x7f1401ed" />
-    <public type="string" name="hsl_pref_set_focus_title" id="0x7f1401ee" />
-    <public type="string" name="hsl_pref_focus_string_summary" id="0x7f1401ef" />
-    <public type="string" name="hsl_expocorrect" id="0x7f1401f0" />
-    <public type="string" name="hsl_focusmode" id="0x7f1401f1" />
-    <public type="string" name="hsl_framecount" id="0x7f1401f2" />
+    <public type="string" name="uk_pref_focus_string_title" id="0x7f1401ed" />
+    <public type="string" name="uk_pref_set_focus_title" id="0x7f1401ee" />
+    <public type="string" name="uk_pref_focus_string_summary" id="0x7f1401ef" />
+    <public type="string" name="uk_expocorrect" id="0x7f1401f0" />
+    <public type="string" name="uk_focusmode" id="0x7f1401f1" />
+    <public type="string" name="uk_framecount" id="0x7f1401f2" />
     <public type="string" name="hit_target_to_start" id="0x7f1401f3" />
     <public type="string" name="horizontal_panorama_accessibility_peek" id="0x7f1401f4" />
     <public type="string" name="icon_content_description" id="0x7f1401f5" />
@@ -9702,8 +9702,8 @@
     <public type="string" name="illumination_on_option_desc" id="0x7f1401fb" />
     <public type="string" name="illumination_options_desc" id="0x7f1401fc" />
     <public type="string" name="image_intent_label" id="0x7f1401fd" />
-    <public type="string" name="hsl_uibutton" id="0x7f1401fe" />
-    <public type="string" name="hsl_uibutton_desc" id="0x7f1401ff" />
+    <public type="string" name="uk_uibutton" id="0x7f1401fe" />
+    <public type="string" name="uk_uibutton_desc" id="0x7f1401ff" />
     <public type="string" name="imax_audio_recording_desc" id="0x7f140200" />
     <public type="string" name="imax_disable_audio_recording" id="0x7f140201" />
     <public type="string" name="imax_disable_audio_recording_desc" id="0x7f140202" />
@@ -9718,7 +9718,7 @@
     <public type="string" name="imax_too_much_horizontal_tilt" id="0x7f14020b" />
     <public type="string" name="imax_too_much_vertical_tilt" id="0x7f14020c" />
     <public type="string" name="imax_vertical_hint" id="0x7f14020d" />
-    <public type="string" name="hsl_modeleica" id="0x7f14020e" />
+    <public type="string" name="uk_modeleica" id="0x7f14020e" />
     <public type="string" name="infopane_got_it" id="0x7f14020f" />
     <public type="string" name="infopane_learn_more" id="0x7f140210" />
     <public type="string" name="installing_updates_dialog_message" id="0x7f140211" />
@@ -9726,15 +9726,15 @@
     <public type="string" name="installing_updates_notification_text" id="0x7f140213" />
     <public type="string" name="installing_updates_notification_title" id="0x7f140214" />
     <public type="string" name="internet_required" id="0x7f140215" />
-    <public type="string" name="hsl_modeldr" id="0x7f140216" />
-    <public type="string" name="hsl_modepro" id="0x7f140217" />
-    <public type="string" name="hsl_moremode" id="0x7f140218" />
+    <public type="string" name="uk_modeldr" id="0x7f140216" />
+    <public type="string" name="uk_modepro" id="0x7f140217" />
+    <public type="string" name="uk_moremode" id="0x7f140218" />
     <public type="string" name="iris_talkback_label_contact" id="0x7f140219" />
-    <public type="string" name="hsl_userhex" id="0x7f14021a" />
-    <public type="string" name="hsl_screenaux" id="0x7f14021b" />
-    <public type="string" name="hsl_catauxbutton" id="0x7f14021c" />
-    <public type="string" name="hsl_catmanual" id="0x7f14021d" />
-    <public type="string" name="hsl_nightmod" id="0x7f14021e" />
+    <public type="string" name="uk_userhex" id="0x7f14021a" />
+    <public type="string" name="uk_screenaux" id="0x7f14021b" />
+    <public type="string" name="uk_catauxbutton" id="0x7f14021c" />
+    <public type="string" name="uk_catmanual" id="0x7f14021d" />
+    <public type="string" name="uk_nightmod" id="0x7f14021e" />
     <public type="string" name="pref_bitrate_0" id="0x7f14021f" />
     <public type="string" name="pref_bitrate_1" id="0x7f140220" />
     <public type="string" name="pref_bitrate_2" id="0x7f140221" />
@@ -9775,88 +9775,88 @@
     <public type="string" name="pref_bitrate_16" id="0x7f140244" />
     <public type="string" name="pref_bitrate_17" id="0x7f140245" />
     <public type="string" name="pref_bitrate_18" id="0x7f140246" />
-    <public type="string" name="hsl_isoexposureastro" id="0x7f140247" />
-    <public type="string" name="hsl_isoexposureoneshot" id="0x7f140248" />
-    <public type="string" name="hsl_astrodef" id="0x7f140249" />
-    <public type="string" name="hsl_oneshotdef" id="0x7f14024a" />
-    <public type="string" name="hsl_settings" id="0x7f14024b" />
-    <public type="string" name="hsl_settings_desc" id="0x7f14024c" />
-    <public type="string" name="hsl_fix16" id="0x7f14024d" />
-    <public type="string" name="hsl_fix16_desc" id="0x7f14024e" />
-    <public type="string" name="hsl_fixsun" id="0x7f14024f" />
-    <public type="string" name="hsl_fixsun_desc" id="0x7f140250" />
-    <public type="string" name="hsl_formatraw" id="0x7f140251" />
-    <public type="string" name="hsl_formatraw_desc" id="0x7f140252" />
-    <public type="string" name="hsl_formatview" id="0x7f140253" />
-    <public type="string" name="hsl_formatview_desc" id="0x7f140254" />
-    <public type="string" name="hsl_formathard" id="0x7f140255" />
-    <public type="string" name="hsl_formathard_desc" id="0x7f140256" />
-    <public type="string" name="hsl_modelstyle" id="0x7f140257" />
-    <public type="string" name="hsl_modelstyle_desc" id="0x7f140258" />
-    <public type="string" name="hsl_modelhdr" id="0x7f140259" />
-    <public type="string" name="hsl_modelhdr_desc" id="0x7f14025a" />
+    <public type="string" name="uk_isoexposureastro" id="0x7f140247" />
+    <public type="string" name="uk_isoexposureoneshot" id="0x7f140248" />
+    <public type="string" name="uk_astrodef" id="0x7f140249" />
+    <public type="string" name="uk_oneshotdef" id="0x7f14024a" />
+    <public type="string" name="uk_settings" id="0x7f14024b" />
+    <public type="string" name="uk_settings_desc" id="0x7f14024c" />
+    <public type="string" name="uk_fix16" id="0x7f14024d" />
+    <public type="string" name="uk_fix16_desc" id="0x7f14024e" />
+    <public type="string" name="uk_fixsun" id="0x7f14024f" />
+    <public type="string" name="uk_fixsun_desc" id="0x7f140250" />
+    <public type="string" name="uk_formatraw" id="0x7f140251" />
+    <public type="string" name="uk_formatraw_desc" id="0x7f140252" />
+    <public type="string" name="uk_formatview" id="0x7f140253" />
+    <public type="string" name="uk_formatview_desc" id="0x7f140254" />
+    <public type="string" name="uk_formathard" id="0x7f140255" />
+    <public type="string" name="uk_formathard_desc" id="0x7f140256" />
+    <public type="string" name="uk_modelstyle" id="0x7f140257" />
+    <public type="string" name="uk_modelstyle_desc" id="0x7f140258" />
+    <public type="string" name="uk_modelhdr" id="0x7f140259" />
+    <public type="string" name="uk_modelhdr_desc" id="0x7f14025a" />
     <public type="string" name="makeup_desc" id="0x7f14025b" />
     <public type="string" name="makeup_makeup1_desc" id="0x7f14025c" />
     <public type="string" name="makeup_makeup2_desc" id="0x7f14025d" />
     <public type="string" name="makeup_makeup3_desc" id="0x7f14025e" />
     <public type="string" name="makeup_off_desc" id="0x7f14025f" />
-    <public type="string" name="hsl_fixres" id="0x7f140260" />
+    <public type="string" name="uk_fixres" id="0x7f140260" />
     <public type="string" name="manual_controls" id="0x7f140261" />
     <public type="string" name="mars_desc" id="0x7f140262" />
-    <public type="string" name="hsl_fixres_desc" id="0x7f140263" />
+    <public type="string" name="uk_fixres_desc" id="0x7f140263" />
     <public type="string" name="mars_learn_more" id="0x7f140264" />
     <public type="string" name="mars_menu_title" id="0x7f140265" />
     <public type="string" name="mars_not_available" id="0x7f140266" />
     <public type="string" name="mars_not_available_reason_account" id="0x7f140267" />
     <public type="string" name="mars_not_available_reason_work_profile" id="0x7f140268" />
     <public type="string" name="mars_title" id="0x7f140269" />
-    <public type="string" name="hsl_promode" id="0x7f14026a" />
-    <public type="string" name="hsl_motion" id="0x7f14026b" />
-    <public type="string" name="hsl_motion_desc" id="0x7f14026c" />
-    <public type="string" name="hsl_motionr" id="0x7f14026d" />
+    <public type="string" name="uk_promode" id="0x7f14026a" />
+    <public type="string" name="uk_motion" id="0x7f14026b" />
+    <public type="string" name="uk_motion_desc" id="0x7f14026c" />
+    <public type="string" name="uk_motionr" id="0x7f14026d" />
     <public type="string" name="material_clock_display_divider" id="0x7f14026e" />
-    <public type="string" name="hsl_frontrestart" id="0x7f14026f" />
-    <public type="string" name="hsl_frontrestart_desc" id="0x7f140270" />
-    <public type="string" name="hsl_video60" id="0x7f140271" />
-    <public type="string" name="hsl_video60front" id="0x7f140272" />
-    <public type="string" name="hsl_video4k60" id="0x7f140273" />
+    <public type="string" name="uk_frontrestart" id="0x7f14026f" />
+    <public type="string" name="uk_frontrestart_desc" id="0x7f140270" />
+    <public type="string" name="uk_video60" id="0x7f140271" />
+    <public type="string" name="uk_video60front" id="0x7f140272" />
+    <public type="string" name="uk_video4k60" id="0x7f140273" />
     <public type="string" name="material_motion_easing_accelerated" id="0x7f140274" />
     <public type="string" name="material_motion_easing_decelerated" id="0x7f140275" />
     <public type="string" name="material_motion_easing_emphasized" id="0x7f140276" />
     <public type="string" name="material_motion_easing_linear" id="0x7f140277" />
     <public type="string" name="material_motion_easing_standard" id="0x7f140278" />
-    <public type="string" name="hsl_bitrate" id="0x7f140279" />
-    <public type="string" name="hsl_savelibpatch" id="0x7f14027a" />
-    <public type="string" name="hsl_save" id="0x7f14027b" />
-    <public type="string" name="hsl_nosave" id="0x7f14027c" />
-    <public type="string" name="hsl_signlibpatch" id="0x7f14027d" />
-    <public type="string" name="hsl_sign" id="0x7f14027e" />
-    <public type="string" name="hsl_nosign" id="0x7f14027f" />
-    <public type="string" name="hsl_entrysignlib" id="0x7f140280" />
-    <public type="string" name="hsl_samplesignlib" id="0x7f140281" />
+    <public type="string" name="uk_bitrate" id="0x7f140279" />
+    <public type="string" name="uk_savelibpatch" id="0x7f14027a" />
+    <public type="string" name="uk_save" id="0x7f14027b" />
+    <public type="string" name="uk_nosave" id="0x7f14027c" />
+    <public type="string" name="uk_signlibpatch" id="0x7f14027d" />
+    <public type="string" name="uk_sign" id="0x7f14027e" />
+    <public type="string" name="uk_nosign" id="0x7f14027f" />
+    <public type="string" name="uk_entrysignlib" id="0x7f140280" />
+    <public type="string" name="uk_samplesignlib" id="0x7f140281" />
     <public type="string" name="max_face_announcement" id="0x7f140282" />
     <public type="string" name="mcfly_current_image_content_description" id="0x7f140283" />
     <public type="string" name="mcfly_export_hdr_shot_button_text" id="0x7f140284" />
     <public type="string" name="mcfly_export_shot_button_text" id="0x7f140285" />
     <public type="string" name="media_accessibility_peek" id="0x7f140286" />
     <public type="string" name="media_processing_content_description" id="0x7f140287" />
-    <public type="string" name="hsl_hdrprocess" id="0x7f140288" />
+    <public type="string" name="uk_hdrprocess" id="0x7f140288" />
     <public type="string" name="menu_help_button_announce" id="0x7f140289" />
     <public type="string" name="menu_open_announce" id="0x7f14028a" />
     <public type="string" name="menu_selected_accessibility_announce" id="0x7f14028b" />
-    <public type="string" name="hsl_opmode" id="0x7f14028c" />
-    <public type="string" name="hsl_opmode_desc" id="0x7f14028d" />
-    <public type="string" name="hsl_onopmode" id="0x7f14028e" />
+    <public type="string" name="uk_opmode" id="0x7f14028c" />
+    <public type="string" name="uk_opmode_desc" id="0x7f14028d" />
+    <public type="string" name="uk_onopmode" id="0x7f14028e" />
     <public type="string" name="mic_input_desc" id="0x7f14028f" />
-    <public type="string" name="hsl_onopmodemanual" id="0x7f140290" />
+    <public type="string" name="uk_onopmodemanual" id="0x7f140290" />
     <public type="string" name="mic_input_ext_bluetooth_connecting" id="0x7f140291" />
-    <public type="string" name="hsl_opphoto" id="0x7f140292" />
+    <public type="string" name="uk_opphoto" id="0x7f140292" />
     <public type="string" name="mic_input_ext_wired_acc_desc" id="0x7f140293" />
     <public type="string" name="mic_input_ext_wired_desc" id="0x7f140294" />
     <public type="string" name="mic_input_options_desc" id="0x7f140295" />
     <public type="string" name="mic_input_phone_acc_desc" id="0x7f140296" />
     <public type="string" name="mic_input_phone_desc" id="0x7f140297" />
-    <public type="string" name="hsl_opfront" id="0x7f140298" />
+    <public type="string" name="uk_opfront" id="0x7f140298" />
     <public type="string" name="micro_auto" id="0x7f140299" />
     <public type="string" name="micro_auto_desc" id="0x7f14029a" />
     <public type="string" name="micro_desc" id="0x7f14029b" />
@@ -9864,16 +9864,16 @@
     <public type="string" name="micro_off_desc" id="0x7f14029d" />
     <public type="string" name="micro_on" id="0x7f14029e" />
     <public type="string" name="micro_on_desc" id="0x7f14029f" />
-    <public type="string" name="hsl_opportrait" id="0x7f1402a0" />
+    <public type="string" name="uk_opportrait" id="0x7f1402a0" />
     <public type="string" name="micro_option_desc" id="0x7f1402a1" />
     <public type="string" name="micro_tutorial_text" id="0x7f1402a2" />
     <public type="string" name="micro_tutorial_title" id="0x7f1402a3" />
-    <public type="string" name="hsl_opnight" id="0x7f1402a4" />
+    <public type="string" name="uk_opnight" id="0x7f1402a4" />
     <public type="string" name="moblur_action_acc_desc" id="0x7f1402a5" />
     <public type="string" name="moblur_action_edu_animation_acc" id="0x7f1402a6" />
     <public type="string" name="moblur_action_edu_desc" id="0x7f1402a7" />
     <public type="string" name="moblur_action_edu_photo_acc" id="0x7f1402a8" />
-    <public type="string" name="hsl_opslowmo" id="0x7f1402a9" />
+    <public type="string" name="uk_opslowmo" id="0x7f1402a9" />
     <public type="string" name="moblur_action_title" id="0x7f1402aa" />
     <public type="string" name="moblur_action_url1" id="0x7f1402ab" />
     <public type="string" name="moblur_action_url2" id="0x7f1402ac" />
@@ -9882,7 +9882,7 @@
     <public type="string" name="moblur_landscape_edu_animation_acc" id="0x7f1402af" />
     <public type="string" name="moblur_landscape_edu_desc" id="0x7f1402b0" />
     <public type="string" name="moblur_landscape_edu_photo_acc" id="0x7f1402b1" />
-    <public type="string" name="hsl_opvideo" id="0x7f1402b2" />
+    <public type="string" name="uk_opvideo" id="0x7f1402b2" />
     <public type="string" name="moblur_landscape_title" id="0x7f1402b3" />
     <public type="string" name="moblur_landscape_url1" id="0x7f1402b4" />
     <public type="string" name="moblur_landscape_url2" id="0x7f1402b5" />
@@ -9902,7 +9902,7 @@
     <public type="string" name="mode_motion_blur_desc" id="0x7f1402c3" />
     <public type="string" name="mode_ornament" id="0x7f1402c4" />
     <public type="string" name="mode_ornament_desc" id="0x7f1402c5" />
-    <public type="string" name="hsl_opextra" id="0x7f1402c6" />
+    <public type="string" name="uk_opextra" id="0x7f1402c6" />
     <public type="string" name="mode_panorama" id="0x7f1402c7" />
     <public type="string" name="mode_panorama_desc" id="0x7f1402c8" />
     <public type="string" name="mode_photobooth" id="0x7f1402c9" />
@@ -9919,8 +9919,8 @@
     <public type="string" name="mode_video_desc" id="0x7f1402d4" />
     <public type="string" name="mode_video_slomo" id="0x7f1402d5" />
     <public type="string" name="mode_video_slomo_desc" id="0x7f1402d6" />
-    <public type="string" name="hsl_focusmid" id="0x7f1402d7" />
-    <public type="string" name="hsl_tfaf" id="0x7f1402d8" />
+    <public type="string" name="uk_focusmid" id="0x7f1402d7" />
+    <public type="string" name="uk_tfaf" id="0x7f1402d8" />
     <public type="string" name="modes" id="0x7f1402d9" />
     <public type="string" name="more_light_desc" id="0x7f1402da" />
     <public type="string" name="more_light_options_desc" id="0x7f1402db" />
@@ -9939,72 +9939,72 @@
     <public type="string" name="motion_photos_video_caption" id="0x7f1402e8" />
     <public type="string" name="motion_photos_video_content_description" id="0x7f1402e9" />
     <public type="string" name="motion_photos_video_url" id="0x7f1402ea" />
-    <public type="string" name="hsl_tfaf_desc" id="0x7f1402eb" />
-    <public type="string" name="hsl_touchfocus" id="0x7f1402ec" />
-    <public type="string" name="hsl_reinitfocus" id="0x7f1402ed" />
-    <public type="string" name="hsl_default" id="0x7f1402ee" />
-    <public type="string" name="hsl_auto" id="0x7f1402ef" />
-    <public type="string" name="hsl_offasinlib" id="0x7f1402f0" />
-    <public type="string" name="hsl_curvepreset" id="0x7f1402f1" />
-    <public type="string" name="hsl_curveparam" id="0x7f1402f2" />
-    <public type="string" name="hsl_disablelog" id="0x7f1402f3" />
-    <public type="string" name="hsl_disablelog_desc" id="0x7f1402f4" />
-    <public type="string" name="hsl_afslider" id="0x7f1402f5" />
-    <public type="string" name="hsl_expslider" id="0x7f1402f6" />
-    <public type="string" name="hsl_buttonpat" id="0x7f1402f7" />
-    <public type="string" name="hsl_info_viewfinder" id="0x7f1402f8" />
-    <public type="string" name="hsl_info_sabre" id="0x7f1402f9" />
-    <public type="string" name="hsl_info_exposure" id="0x7f1402fa" />
-    <public type="string" name="hsl_info_noisemodel" id="0x7f1402fb" />
-    <public type="string" name="hsl_info_colortransform" id="0x7f1402fc" />
-    <public type="string" name="hsl_info_awb" id="0x7f1402fd" />
-    <public type="string" name="hsl_info_bl" id="0x7f1402fe" />
-    <public type="string" name="hsl_info_mf" id="0x7f1402ff" />
-    <public type="string" name="hsl_info_ldr" id="0x7f140300" />
-    <public type="string" name="hsl_info_pro" id="0x7f140301" />
-    <public type="string" name="hsl_info_raw" id="0x7f140302" />
-    <public type="string" name="hsl_info_hardware" id="0x7f140303" />
-    <public type="string" name="hsl_info_vf" id="0x7f140304" />
-    <public type="string" name="hsl_info_style" id="0x7f140305" />
-    <public type="string" name="hsl_info_modelhdr" id="0x7f140306" />
-    <public type="string" name="hsl_info_sunlight" id="0x7f140307" />
-    <public type="string" name="hsl_info_resfix" id="0x7f140308" />
-    <public type="string" name="hsl_manualid" id="0x7f140309" />
-    <public type="string" name="hsl_entryid" id="0x7f14030a" />
-    <public type="string" name="hsl_info_sensorid" id="0x7f14030b" />
-    <public type="string" name="hsl_info_author" id="0x7f14030c" />
-    <public type="string" name="hsl_info_thx" id="0x7f14030d" />
-    <public type="string" name="hsl_info_focusnight" id="0x7f14030e" />
+    <public type="string" name="uk_tfaf_desc" id="0x7f1402eb" />
+    <public type="string" name="uk_touchfocus" id="0x7f1402ec" />
+    <public type="string" name="uk_reinitfocus" id="0x7f1402ed" />
+    <public type="string" name="uk_default" id="0x7f1402ee" />
+    <public type="string" name="uk_auto" id="0x7f1402ef" />
+    <public type="string" name="uk_offasinlib" id="0x7f1402f0" />
+    <public type="string" name="uk_curvepreset" id="0x7f1402f1" />
+    <public type="string" name="uk_curveparam" id="0x7f1402f2" />
+    <public type="string" name="uk_disablelog" id="0x7f1402f3" />
+    <public type="string" name="uk_disablelog_desc" id="0x7f1402f4" />
+    <public type="string" name="uk_afslider" id="0x7f1402f5" />
+    <public type="string" name="uk_expslider" id="0x7f1402f6" />
+    <public type="string" name="uk_buttonpat" id="0x7f1402f7" />
+    <public type="string" name="uk_info_viewfinder" id="0x7f1402f8" />
+    <public type="string" name="uk_info_sabre" id="0x7f1402f9" />
+    <public type="string" name="uk_info_exposure" id="0x7f1402fa" />
+    <public type="string" name="uk_info_noisemodel" id="0x7f1402fb" />
+    <public type="string" name="uk_info_colortransform" id="0x7f1402fc" />
+    <public type="string" name="uk_info_awb" id="0x7f1402fd" />
+    <public type="string" name="uk_info_bl" id="0x7f1402fe" />
+    <public type="string" name="uk_info_mf" id="0x7f1402ff" />
+    <public type="string" name="uk_info_ldr" id="0x7f140300" />
+    <public type="string" name="uk_info_pro" id="0x7f140301" />
+    <public type="string" name="uk_info_raw" id="0x7f140302" />
+    <public type="string" name="uk_info_hardware" id="0x7f140303" />
+    <public type="string" name="uk_info_vf" id="0x7f140304" />
+    <public type="string" name="uk_info_style" id="0x7f140305" />
+    <public type="string" name="uk_info_modelhdr" id="0x7f140306" />
+    <public type="string" name="uk_info_sunlight" id="0x7f140307" />
+    <public type="string" name="uk_info_resfix" id="0x7f140308" />
+    <public type="string" name="uk_manualid" id="0x7f140309" />
+    <public type="string" name="uk_entryid" id="0x7f14030a" />
+    <public type="string" name="uk_info_sensorid" id="0x7f14030b" />
+    <public type="string" name="uk_info_author" id="0x7f14030c" />
+    <public type="string" name="uk_info_thx" id="0x7f14030d" />
+    <public type="string" name="uk_info_focusnight" id="0x7f14030e" />
     <public type="string" name="new_version_available" id="0x7f14030f" />
-    <public type="string" name="hsl_info_config" id="0x7f140310" />
-    <public type="string" name="hsl_info_version" id="0x7f140311" />
-    <public type="string" name="hsl_info_aux" id="0x7f140312" />
+    <public type="string" name="uk_info_config" id="0x7f140310" />
+    <public type="string" name="uk_info_version" id="0x7f140311" />
+    <public type="string" name="uk_info_aux" id="0x7f140312" />
     <public type="string" name="not_enough_motion_chip" id="0x7f140313" />
-    <public type="string" name="hsl_info_system" id="0x7f140314" />
+    <public type="string" name="uk_info_system" id="0x7f140314" />
     <public type="string" name="not_set" id="0x7f140315" />
     <public type="string" name="notification_enter_power_saving_mode" id="0x7f140316" />
     <public type="string" name="notification_enter_power_saving_mode_stage_2" id="0x7f140317" />
-    <public type="string" name="hsl_info_levelhorizont" id="0x7f140318" />
-    <public type="string" name="hsl_info_uservalue" id="0x7f140319" />
+    <public type="string" name="uk_info_levelhorizont" id="0x7f140318" />
+    <public type="string" name="uk_info_uservalue" id="0x7f140319" />
     <public type="string" name="notification_static_recording_af_locked" id="0x7f14031a" />
     <public type="string" name="notification_update_channel_name" id="0x7f14031b" />
     <public type="string" name="ok" id="0x7f14031c" />
-    <public type="string" name="hsl_info_curve" id="0x7f14031d" />
-    <public type="string" name="hsl_info_main" id="0x7f14031e" />
-    <public type="string" name="hsl_info_sharp" id="0x7f14031f" />
-    <public type="string" name="hsl_info_color" id="0x7f140320" />
+    <public type="string" name="uk_info_curve" id="0x7f14031d" />
+    <public type="string" name="uk_info_main" id="0x7f14031e" />
+    <public type="string" name="uk_info_sharp" id="0x7f14031f" />
+    <public type="string" name="uk_info_color" id="0x7f140320" />
     <public type="string" name="open_source_licenses" id="0x7f140321" />
-    <public type="string" name="hsl_info_expo" id="0x7f140322" />
-    <public type="string" name="hsl_info_sabreden" id="0x7f140323" />
-    <public type="string" name="hsl_info_denoise" id="0x7f140324" />
-    <public type="string" name="hsl_info_smooth" id="0x7f140325" />
+    <public type="string" name="uk_info_expo" id="0x7f140322" />
+    <public type="string" name="uk_info_sabreden" id="0x7f140323" />
+    <public type="string" name="uk_info_denoise" id="0x7f140324" />
+    <public type="string" name="uk_info_smooth" id="0x7f140325" />
     <public type="string" name="options_menu_button_desc" id="0x7f140326" />
     <public type="string" name="options_menu_close_desc" id="0x7f140327" />
     <public type="string" name="options_menu_disabled" id="0x7f140328" />
     <public type="string" name="options_menu_disabled_desc" id="0x7f140329" />
     <public type="string" name="options_menu_gear_desc" id="0x7f14032a" />
     <public type="string" name="options_menu_title" id="0x7f14032b" />
-    <public type="string" name="hsl_info_lightandshadow" id="0x7f14032c" />
+    <public type="string" name="uk_info_lightandshadow" id="0x7f14032c" />
     <public type="string" name="pano_orientation_fisheye" id="0x7f14032d" />
     <public type="string" name="pano_orientation_horizontal" id="0x7f14032e" />
     <public type="string" name="pano_orientation_photosphere" id="0x7f14032f" />
@@ -10024,7 +10024,7 @@
     <public type="string" name="panorama_wide" id="0x7f14033d" />
     <public type="string" name="panorama_wide_desc" id="0x7f14033e" />
     <public type="string" name="password_toggle_content_description" id="0x7f14033f" />
-    <public type="string" name="hsl_info_presetdenoise" id="0x7f140340" />
+    <public type="string" name="uk_info_presetdenoise" id="0x7f140340" />
     <public type="string" name="path_password_eye" id="0x7f140341" />
     <public type="string" name="path_password_eye_mask_strike_through" id="0x7f140342" />
     <public type="string" name="path_password_eye_mask_visible" id="0x7f140343" />
@@ -10034,14 +10034,14 @@
     <public type="string" name="phone_moved_fast_chip" id="0x7f140347" />
     <public type="string" name="photo" id="0x7f140348" />
     <public type="string" name="photo_accessibility_peek" id="0x7f140349" />
-    <public type="string" name="hsl_info_presetdenoise2" id="0x7f14034a" />
-    <public type="string" name="hsl_info_sabrelevel" id="0x7f14034b" />
+    <public type="string" name="uk_info_presetdenoise2" id="0x7f14034a" />
+    <public type="string" name="uk_info_sabrelevel" id="0x7f14034b" />
     <public type="string" name="photo_date_content_description" id="0x7f14034c" />
     <public type="string" name="photo_description" id="0x7f14034d" />
     <public type="string" name="photo_name" id="0x7f14034e" />
     <public type="string" name="photo_processing" id="0x7f14034f" />
-    <public type="string" name="hsl_info_night" id="0x7f140350" />
-    <public type="string" name="hsl_info_extra" id="0x7f140351" />
+    <public type="string" name="uk_info_night" id="0x7f140350" />
+    <public type="string" name="uk_info_extra" id="0x7f140351" />
     <public type="string" name="photos_disabled_message" id="0x7f140352" />
     <public type="string" name="photos_disabled_title" id="0x7f140353" />
     <public type="string" name="photos_required_message" id="0x7f140354" />
@@ -10053,24 +10053,24 @@
     <public type="string" name="photosphere_calibration_step_two" id="0x7f14035a" />
     <public type="string" name="photosphere_date_content_description" id="0x7f14035b" />
     <public type="string" name="photosphere_description" id="0x7f14035c" />
-    <public type="string" name="hsl_info_test" id="0x7f14035d" />
+    <public type="string" name="uk_info_test" id="0x7f14035d" />
     <public type="string" name="photosphere_fisheye_confirm_dialog" id="0x7f14035e" />
     <public type="string" name="photosphere_name" id="0x7f14035f" />
     <public type="string" name="photosphere_no_back_camera" id="0x7f140360" />
     <public type="string" name="photosphere_type" id="0x7f140361" />
     <public type="string" name="photosphere_type_desc" id="0x7f140362" />
-    <public type="string" name="hsl_info_autoct" id="0x7f140363" />
-    <public type="string" name="hsl_info_modenight" id="0x7f140364" />
+    <public type="string" name="uk_info_autoct" id="0x7f140363" />
+    <public type="string" name="uk_info_modenight" id="0x7f140364" />
     <public type="string" name="play_store_button" id="0x7f140365" />
     <public type="string" name="play_video" id="0x7f140366" />
-    <public type="string" name="hsl_info_compexp" id="0x7f140367" />
+    <public type="string" name="uk_info_compexp" id="0x7f140367" />
     <public type="string" name="portrait_description" id="0x7f140368" />
     <public type="string" name="portrait_name" id="0x7f140369" />
     <public type="string" name="portrait_notification_tap_to_focus" id="0x7f14036a" />
     <public type="string" name="portrait_suggestion_text" id="0x7f14036b" />
     <public type="string" name="pref_audio_zoom_summary" id="0x7f14036c" />
     <public type="string" name="pref_audio_zoom_title" id="0x7f14036d" />
-    <public type="string" name="hsl_buttonresraw" id="0x7f14036e" />
+    <public type="string" name="uk_buttonresraw" id="0x7f14036e" />
     <public type="string" name="pref_camera_coach_summary" id="0x7f14036f" />
     <public type="string" name="pref_camera_coach_title" id="0x7f140370" />
     <public type="string" name="pref_camera_custom_hotkeys_summary" id="0x7f140371" />
@@ -10078,30 +10078,30 @@
     <public type="string" name="pref_camera_dirty_lens_summary" id="0x7f140373" />
     <public type="string" name="pref_camera_dirty_lens_title" id="0x7f140374" />
     <public type="string" name="pref_camera_double_tap_action_title" id="0x7f140375" />
-    <public type="string" name="hsl_info_reshelp" id="0x7f140376" />
-    <public type="string" name="hsl_googlelogic" id="0x7f140377" />
-    <public type="string" name="hsl_googlelogic_desc" id="0x7f140378" />
+    <public type="string" name="uk_info_reshelp" id="0x7f140376" />
+    <public type="string" name="uk_googlelogic" id="0x7f140377" />
+    <public type="string" name="uk_googlelogic_desc" id="0x7f140378" />
     <public type="string" name="pref_camera_frequent_faces_title" id="0x7f140379" />
     <public type="string" name="pref_camera_gestures_title" id="0x7f14037a" />
-    <public type="string" name="hsl_info_googlelogic" id="0x7f14037b" />
-    <public type="string" name="hsl_upscale" id="0x7f14037c" />
-    <public type="string" name="hsl_upscale_desc" id="0x7f14037d" />
-    <public type="string" name="hsl_info_upscale" id="0x7f14037e" />
-    <public type="string" name="hsl_manualnoise" id="0x7f14037f" />
-    <public type="string" name="hsl_manualcolor" id="0x7f140380" />
-    <public type="string" name="hsl_manualawb" id="0x7f140381" />
-    <public type="string" name="hsl_gcambook" id="0x7f140382" />
-    <public type="string" name="hsl_info_donatepaypal" id="0x7f140383" />
-    <public type="string" name="hsl_info_donateqiwi" id="0x7f140384" />
-    <public type="string" name="hsl_buttonupscale" id="0x7f140385" />
-    <public type="string" name="hsl_onupscale" id="0x7f140386" />
+    <public type="string" name="uk_info_googlelogic" id="0x7f14037b" />
+    <public type="string" name="uk_upscale" id="0x7f14037c" />
+    <public type="string" name="uk_upscale_desc" id="0x7f14037d" />
+    <public type="string" name="uk_info_upscale" id="0x7f14037e" />
+    <public type="string" name="uk_manualnoise" id="0x7f14037f" />
+    <public type="string" name="uk_manualcolor" id="0x7f140380" />
+    <public type="string" name="uk_manualawb" id="0x7f140381" />
+    <public type="string" name="uk_gcambook" id="0x7f140382" />
+    <public type="string" name="uk_info_donatepaypal" id="0x7f140383" />
+    <public type="string" name="uk_info_donateqiwi" id="0x7f140384" />
+    <public type="string" name="uk_buttonupscale" id="0x7f140385" />
+    <public type="string" name="uk_onupscale" id="0x7f140386" />
     <public type="string" name="pref_camera_lens_subtitle" id="0x7f140387" />
     <public type="string" name="pref_camera_lens_subtitle_legacy" id="0x7f140388" />
     <public type="string" name="pref_camera_lens_subtitle_p21" id="0x7f140389" />
     <public type="string" name="pref_camera_lens_title" id="0x7f14038a" />
     <public type="string" name="pref_camera_mirror_image_title" id="0x7f14038b" />
     <public type="string" name="pref_camera_picturesize_default" id="0x7f14038c" />
-    <public type="string" name="hsl_info_upscaled" id="0x7f14038d" />
+    <public type="string" name="uk_info_upscaled" id="0x7f14038d" />
     <public type="string" name="gcam_lens_logic_auto" id="0x7f14038e" />
     <public type="string" name="gcam_lens_logic_0" id="0x7f14038f" />
     <public type="string" name="pref_camera_picturesize_medium" id="0x7f140390" />
@@ -10153,31 +10153,31 @@
     <public type="string" name="gcam_lens_logic_9" id="0x7f1403be" />
     <public type="string" name="gcam_lens_logic_10" id="0x7f1403bf" />
     <public type="string" name="gcam_lens_logic_11" id="0x7f1403c0" />
-    <public type="string" name="hsl_expotime" id="0x7f1403c1" />
-    <public type="string" name="hsl_denoisevf" id="0x7f1403c2" />
-    <public type="string" name="hsl_geometricfix" id="0x7f1403c3" />
+    <public type="string" name="uk_expotime" id="0x7f1403c1" />
+    <public type="string" name="uk_denoisevf" id="0x7f1403c2" />
+    <public type="string" name="uk_geometricfix" id="0x7f1403c3" />
     <public type="string" name="pref_raw_output_control_action_button" id="0x7f1403c4" />
     <public type="string" name="pref_raw_output_control_summary" id="0x7f1403c5" />
     <public type="string" name="pref_raw_output_control_title" id="0x7f1403c6" />
     <public type="string" name="pref_storage_summary" id="0x7f1403c7" />
-    <public type="string" name="hsl_geometricfix_desc" id="0x7f1403c8" />
-    <public type="string" name="hsl_designvf" id="0x7f1403c9" />
-    <public type="string" name="hsl_kepler" id="0x7f1403ca" />
-    <public type="string" name="hsl_kepler_desc" id="0x7f1403cb" />
+    <public type="string" name="uk_geometricfix_desc" id="0x7f1403c8" />
+    <public type="string" name="uk_designvf" id="0x7f1403c9" />
+    <public type="string" name="uk_kepler" id="0x7f1403ca" />
+    <public type="string" name="uk_kepler_desc" id="0x7f1403cb" />
     <public type="string" name="pref_video_hevc" id="0x7f1403cc" />
-    <public type="string" name="hsl_framezslfix" id="0x7f1403cd" />
-    <public type="string" name="hsl_vfres" id="0x7f1403ce" />
-    <public type="string" name="hsl_zoomset" id="0x7f1403cf" />
-    <public type="string" name="hsl_zoomset_desc" id="0x7f1403d0" />
-    <public type="string" name="hsl_autoexp" id="0x7f1403d1" />
-    <public type="string" name="hsl_autoexp_desc" id="0x7f1403d2" />
-    <public type="string" name="hsl_fixexpo" id="0x7f1403d3" />
-    <public type="string" name="hsl_fixexpo_desc" id="0x7f1403d4" />
-    <public type="string" name="hsl_auxlayout" id="0x7f1403d5" />
+    <public type="string" name="uk_framezslfix" id="0x7f1403cd" />
+    <public type="string" name="uk_vfres" id="0x7f1403ce" />
+    <public type="string" name="uk_zoomset" id="0x7f1403cf" />
+    <public type="string" name="uk_zoomset_desc" id="0x7f1403d0" />
+    <public type="string" name="uk_autoexp" id="0x7f1403d1" />
+    <public type="string" name="uk_autoexp_desc" id="0x7f1403d2" />
+    <public type="string" name="uk_fixexpo" id="0x7f1403d3" />
+    <public type="string" name="uk_fixexpo_desc" id="0x7f1403d4" />
+    <public type="string" name="uk_auxlayout" id="0x7f1403d5" />
     <public type="string" name="pref_video_quality_large" id="0x7f1403d6" />
-    <public type="string" name="hsl_info_framehdr" id="0x7f1403d7" />
-    <public type="string" name="hsl_info_framezsl" id="0x7f1403d8" />
-    <public type="string" name="hsl_screen_frames" id="0x7f1403d9" />
+    <public type="string" name="uk_info_framehdr" id="0x7f1403d7" />
+    <public type="string" name="uk_info_framezsl" id="0x7f1403d8" />
+    <public type="string" name="uk_screen_frames" id="0x7f1403d9" />
     <public type="string" name="pref_video_stabilization" id="0x7f1403da" />
     <public type="string" name="pref_video_stabilization_summary" id="0x7f1403db" />
     <public type="string" name="pref_white_balance_control" id="0x7f1403dc" />
@@ -10190,7 +10190,7 @@
     <public type="string" name="preference_volume_key_shutter" id="0x7f1403e3" />
     <public type="string" name="preference_volume_key_volume" id="0x7f1403e4" />
     <public type="string" name="preference_volume_key_zoom" id="0x7f1403e5" />
-    <public type="string" name="hsl_screen_frames_desc" id="0x7f1403e6" />
+    <public type="string" name="uk_screen_frames_desc" id="0x7f1403e6" />
     <public type="string" name="preferences_license_title" id="0x7f1403e7" />
     <public type="string" name="preparing_updates" id="0x7f1403e8" />
     <public type="string" name="primes_marker" id="0x7f1403e9" />
@@ -10201,24 +10201,24 @@
     <public type="string" name="processing_notification_channel" id="0x7f1403ee" />
     <public type="string" name="processing_panorama" id="0x7f1403ef" />
     <public type="string" name="processing_photo_sphere" id="0x7f1403f0" />
-    <public type="string" name="hsl_tempbin" id="0x7f1403f1" />
-    <public type="string" name="hsl_tempbin_desc" id="0x7f1403f2" />
-    <public type="string" name="hsl_longtap" id="0x7f1403f3" />
+    <public type="string" name="uk_tempbin" id="0x7f1403f1" />
+    <public type="string" name="uk_tempbin_desc" id="0x7f1403f2" />
+    <public type="string" name="uk_longtap" id="0x7f1403f3" />
     <public type="string" name="qr_unsupported" id="0x7f1403f4" />
-    <public type="string" name="hsl_longtap_gallery" id="0x7f1403f5" />
-    <public type="string" name="hsl_longtap_switch" id="0x7f1403f6" />
-    <public type="string" name="hsl_arrays_switchAWB" id="0x7f1403f7" />
-    <public type="string" name="hsl_arrays_switchEX" id="0x7f1403f8" />
-    <public type="string" name="hsl_arrays_switchHDREXPO" id="0x7f1403f9" />
-    <public type="string" name="hsl_arrays_switchHDRF" id="0x7f1403fa" />
-    <public type="string" name="hsl_arrays_switchNOISE" id="0x7f1403fb" />
-    <public type="string" name="hsl_arrays_switchPSCREEN" id="0x7f1403fc" />
+    <public type="string" name="uk_longtap_gallery" id="0x7f1403f5" />
+    <public type="string" name="uk_longtap_switch" id="0x7f1403f6" />
+    <public type="string" name="uk_arrays_switchAWB" id="0x7f1403f7" />
+    <public type="string" name="uk_arrays_switchEX" id="0x7f1403f8" />
+    <public type="string" name="uk_arrays_switchHDREXPO" id="0x7f1403f9" />
+    <public type="string" name="uk_arrays_switchHDRF" id="0x7f1403fa" />
+    <public type="string" name="uk_arrays_switchNOISE" id="0x7f1403fb" />
+    <public type="string" name="uk_arrays_switchPSCREEN" id="0x7f1403fc" />
     <public type="string" name="raw_desc" id="0x7f1403fd" />
     <public type="string" name="raw_output_desc" id="0x7f1403fe" />
     <public type="string" name="raw_output_off_desc" id="0x7f1403ff" />
     <public type="string" name="raw_output_on_desc" id="0x7f140400" />
-    <public type="string" name="hsl_arrays_switchUPS" id="0x7f140401" />
-    <public type="string" name="hsl_arrays_switchZSLF" id="0x7f140402" />
+    <public type="string" name="uk_arrays_switchUPS" id="0x7f140401" />
+    <public type="string" name="uk_arrays_switchZSLF" id="0x7f140402" />
     <public type="string" name="record_location_notification" id="0x7f140403" />
     <public type="string" name="reduce_noise_when_talk_tooltip" id="0x7f140404" />
     <public type="string" name="resume_video_recording" id="0x7f140405" />
@@ -10230,8 +10230,8 @@
     <public type="string" name="retouching_edu_image_light_desc" id="0x7f14040b" />
     <public type="string" name="retouching_edu_image_off_desc" id="0x7f14040c" />
     <public type="string" name="retouching_edu_image_strong_desc" id="0x7f14040d" />
-    <public type="string" name="hsl_buttonsave" id="0x7f14040e" />
-    <public type="string" name="hsl_expslideswitch" id="0x7f14040f" />
+    <public type="string" name="uk_buttonsave" id="0x7f14040e" />
+    <public type="string" name="uk_expslideswitch" id="0x7f14040f" />
     <public type="string" name="retouching_edu_title" id="0x7f140410" />
     <public type="string" name="review_button_description" id="0x7f140411" />
     <public type="string" name="review_photo_description" id="0x7f140412" />
@@ -10239,34 +10239,34 @@
     <public type="string" name="rotate_ccw_description" id="0x7f140414" />
     <public type="string" name="rotate_cw_description" id="0x7f140415" />
     <public type="string" name="scan_document" id="0x7f140416" />
-    <public type="string" name="hsl_expslideswitch_desc" id="0x7f140417" />
-    <public type="string" name="hsl_exptap" id="0x7f140418" />
-    <public type="string" name="hsl_exptap_desc" id="0x7f140419" />
+    <public type="string" name="uk_expslideswitch_desc" id="0x7f140417" />
+    <public type="string" name="uk_exptap" id="0x7f140418" />
+    <public type="string" name="uk_exptap_desc" id="0x7f140419" />
     <public type="string" name="selfie_angle_bottom_sheet_description" id="0x7f14041a" />
     <public type="string" name="selfie_angle_bottom_sheet_setting_button" id="0x7f14041b" />
     <public type="string" name="selfie_angle_bottom_sheet_title" id="0x7f14041c" />
     <public type="string" name="selfie_angle_bottom_sheet_turn_off_button" id="0x7f14041d" />
     <public type="string" name="selfie_angle_message" id="0x7f14041e" />
-    <public type="string" name="hsl_screenexpcomp" id="0x7f14041f" />
-    <public type="string" name="hsl_screenexpcomp_desc" id="0x7f140420" />
-    <public type="string" name="hsl_screenfocus" id="0x7f140421" />
+    <public type="string" name="uk_screenexpcomp" id="0x7f14041f" />
+    <public type="string" name="uk_screenexpcomp_desc" id="0x7f140420" />
+    <public type="string" name="uk_screenfocus" id="0x7f140421" />
     <public type="string" name="session_saving_image" id="0x7f140422" />
-    <public type="string" name="hsl_screenfocuscomp" id="0x7f140423" />
+    <public type="string" name="uk_screenfocuscomp" id="0x7f140423" />
     <public type="string" name="setting_camera_photo" id="0x7f140424" />
     <public type="string" name="setting_composition" id="0x7f140425" />
-    <public type="string" name="hsl_toastpatcher" id="0x7f140426" />
+    <public type="string" name="uk_toastpatcher" id="0x7f140426" />
     <public type="string" name="setting_general" id="0x7f140427" />
     <public type="string" name="setting_google_feedback" id="0x7f140428" />
     <public type="string" name="setting_google_help" id="0x7f140429" />
     <public type="string" name="setting_google_help_and_feedback" id="0x7f14042a" />
     <public type="string" name="setting_grid_mode" id="0x7f14042b" />
-    <public type="string" name="hsl_arrays_switchAFTIME" id="0x7f14042c" />
-    <public type="string" name="hsl_arrays_switchCOLORT" id="0x7f14042d" />
-    <public type="string" name="hsl_evslidersize" id="0x7f14042e" />
+    <public type="string" name="uk_arrays_switchAFTIME" id="0x7f14042c" />
+    <public type="string" name="uk_arrays_switchCOLORT" id="0x7f14042d" />
+    <public type="string" name="uk_evslidersize" id="0x7f14042e" />
     <public type="string" name="setting_off" id="0x7f14042f" />
-    <public type="string" name="hsl_jawbbutton" id="0x7f140430" />
-    <public type="string" name="hsl_libdesc" id="0x7f140431" />
-    <public type="string" name="hsl_libentry" id="0x7f140432" />
+    <public type="string" name="uk_jawbbutton" id="0x7f140430" />
+    <public type="string" name="uk_libdesc" id="0x7f140431" />
+    <public type="string" name="uk_libentry" id="0x7f140432" />
     <public type="string" name="settings_button" id="0x7f140435" />
     <public type="string" name="settings_changed_item_description" id="0x7f140437" />
     <public type="string" name="settings_impacted_button" id="0x7f140439" />
@@ -10458,29 +10458,29 @@
     <public type="string" name="zoom_ffc_wide_tooltip" id="0x7f140539" />
     <public type="string" name="zoom_minus_desc" id="0x7f14053a" />
     <public type="string" name="zoom_plus_desc" id="0x7f14053b" />
-    <public type="string" name="hsl_ldrmain" id="0x7f14053c" />
-    <public type="string" name="hsl_ldrexpo" id="0x7f14053d" />
-    <public type="string" name="hsl_ldrhdr" id="0x7f14053e" />
-    <public type="string" name="hsl_ldrextra" id="0x7f14053f" />
-    <public type="string" name="hsl_ldrlight" id="0x7f140540" />
-    <public type="string" name="hsl_confimport" id="0x7f140541" />
-    <public type="string" name="hsl_confimport_desc" id="0x7f140542" />
+    <public type="string" name="uk_ldrmain" id="0x7f14053c" />
+    <public type="string" name="uk_ldrexpo" id="0x7f14053d" />
+    <public type="string" name="uk_ldrhdr" id="0x7f14053e" />
+    <public type="string" name="uk_ldrextra" id="0x7f14053f" />
+    <public type="string" name="uk_ldrlight" id="0x7f140540" />
+    <public type="string" name="uk_confimport" id="0x7f140541" />
+    <public type="string" name="uk_confimport_desc" id="0x7f140542" />
     <public type="string" name="pref_aemode_back_title" id="0x7f140543" />
     <public type="string" name="pref_aemode_front_title" id="0x7f140544" />
-    <public type="string" name="hsl_libs_title" id="0x7f140545" />
-    <public type="string" name="hsl_libs_title_summary" id="0x7f140546" />
-    <public type="string" name="hsl_libsave" id="0x7f140547" />
-    <public type="string" name="hsl_libload" id="0x7f140548" />
-    <public type="string" name="hsl_infolibsignature" id="0x7f140549" />
+    <public type="string" name="uk_libs_title" id="0x7f140545" />
+    <public type="string" name="uk_libs_title_summary" id="0x7f140546" />
+    <public type="string" name="uk_libsave" id="0x7f140547" />
+    <public type="string" name="uk_libload" id="0x7f140548" />
+    <public type="string" name="uk_infolibsignature" id="0x7f140549" />
     <public type="string" name="libsignature" id="0x7f14054a" />
-    <public type="string" name="hsl_curves" id="0x7f14054b" />
-    <public type="string" name="hsl_tonecurve" id="0x7f14054c" />
-    <public type="string" name="hsl_gammacurve" id="0x7f14054d" />
-    <public type="string" name="hsl_enablecurve" id="0x7f14054e" />
-    <public type="string" name="hsl_entrymodecurve" id="0x7f14054f" />
-    <public type="string" name="hsl_entrypresetcurve" id="0x7f140550" />
-    <public type="string" name="hsl_curvepoint" id="0x7f140551" />
-    <public type="string" name="hsl_curveparametric" id="0x7f140552" />
+    <public type="string" name="uk_curves" id="0x7f14054b" />
+    <public type="string" name="uk_tonecurve" id="0x7f14054c" />
+    <public type="string" name="uk_gammacurve" id="0x7f14054d" />
+    <public type="string" name="uk_enablecurve" id="0x7f14054e" />
+    <public type="string" name="uk_entrymodecurve" id="0x7f14054f" />
+    <public type="string" name="uk_entrypresetcurve" id="0x7f140550" />
+    <public type="string" name="uk_curvepoint" id="0x7f140551" />
+    <public type="string" name="uk_curveparametric" id="0x7f140552" />
     <public type="string" name="pref_aemode_6" id="0x7f140553" />
     <public type="string" name="pref_aemode_7" id="0x7f140554" />
     <public type="string" name="pref_aemode_8" id="0x7f140555" />
@@ -10514,35 +10514,35 @@
     <public type="string" name="pref_exposure_max_time_3" id="0x7f140571" />
     <public type="string" name="pref_exposure_max_time_4" id="0x7f140572" />
     <public type="string" name="pref_exposure_max_time_5" id="0x7f140573" />
-    <public type="string" name="hsl_hdrnet" id="0x7f140574" />
-    <public type="string" name="hsl_tf" id="0x7f140575" />
-    <public type="string" name="hsl_mergemethod" id="0x7f140576" />
-    <public type="string" name="hsl_isoexposure" id="0x7f140577" />
-    <public type="string" name="hsl_maxtime" id="0x7f140578" />
-    <public type="string" name="hsl_unblocknoise" id="0x7f140579" />
-    <public type="string" name="hsl_unblocknoise_desc" id="0x7f14057a" />
-    <public type="string" name="hsl_maxbrightness" id="0x7f14057b" />
-    <public type="string" name="hsl_maxbrightness_desc" id="0x7f14057c" />
-    <public type="string" name="hsl_portraitzoom" id="0x7f14057d" />
-    <public type="string" name="hsl_portraitzoom_desc" id="0x7f14057e" />
-    <public type="string" name="hsl_opexperimental" id="0x7f14057f" />
-    <public type="string" name="hsl_opsystem" id="0x7f140580" />
+    <public type="string" name="uk_hdrnet" id="0x7f140574" />
+    <public type="string" name="uk_tf" id="0x7f140575" />
+    <public type="string" name="uk_mergemethod" id="0x7f140576" />
+    <public type="string" name="uk_isoexposure" id="0x7f140577" />
+    <public type="string" name="uk_maxtime" id="0x7f140578" />
+    <public type="string" name="uk_unblocknoise" id="0x7f140579" />
+    <public type="string" name="uk_unblocknoise_desc" id="0x7f14057a" />
+    <public type="string" name="uk_maxbrightness" id="0x7f14057b" />
+    <public type="string" name="uk_maxbrightness_desc" id="0x7f14057c" />
+    <public type="string" name="uk_portraitzoom" id="0x7f14057d" />
+    <public type="string" name="uk_portraitzoom_desc" id="0x7f14057e" />
+    <public type="string" name="uk_opexperimental" id="0x7f14057f" />
+    <public type="string" name="uk_opsystem" id="0x7f140580" />
     <public type="string" name="shortcut_opensett_long_label" id="0x7f140581" />
     <public type="string" name="shortcut_opensett_short_label" id="0x7f140582" />
-    <public type="string" name="hsl_noisemanualiso" id="0x7f140585" />
-    <public type="string" name="hsl_noisecoefiso" id="0x7f140586" />
-    <public type="string" name="hsl_noisesystem" id="0x7f140587" />
-    <public type="string" name="hsl_noisedynamic" id="0x7f140588" />
-    <public type="string" name="hsl_videodenoise" id="0x7f140589" />
-    <public type="string" name="hsl_edgemode" id="0x7f14058a" />
-    <public type="string" name="hsl_info_noisem" id="0x7f14058b" />
-    <public type="string" name="hsl_info_uxmode" id="0x7f14058c" />
-    <public type="string" name="hsl_aperture" id="0x7f14058d" />
-    <public type="string" name="hsl_aperture_s" id="0x7f14058e" />
-    <public type="string" name="hsl_livehdr" id="0x7f14058f" />
-    <public type="string" name="hsl_info_samsung" id="0x7f140590" />
-    <public type="string" name="hsl_gmatting" id="0x7f140591" />
-    <public type="string" name="hsl_framezsl" id="0x7f140592" />
+    <public type="string" name="uk_noisemanualiso" id="0x7f140585" />
+    <public type="string" name="uk_noisecoefiso" id="0x7f140586" />
+    <public type="string" name="uk_noisesystem" id="0x7f140587" />
+    <public type="string" name="uk_noisedynamic" id="0x7f140588" />
+    <public type="string" name="uk_videodenoise" id="0x7f140589" />
+    <public type="string" name="uk_edgemode" id="0x7f14058a" />
+    <public type="string" name="uk_info_noisem" id="0x7f14058b" />
+    <public type="string" name="uk_info_uxmode" id="0x7f14058c" />
+    <public type="string" name="uk_aperture" id="0x7f14058d" />
+    <public type="string" name="uk_aperture_s" id="0x7f14058e" />
+    <public type="string" name="uk_livehdr" id="0x7f14058f" />
+    <public type="string" name="uk_info_samsung" id="0x7f140590" />
+    <public type="string" name="uk_gmatting" id="0x7f140591" />
+    <public type="string" name="uk_framezsl" id="0x7f140592" />
     <public type="string" name="APKTOOL_DUMMY_433" id="0x7f140433" />
     <public type="string" name="APKTOOL_DUMMY_434" id="0x7f140434" />
     <public type="string" name="APKTOOL_DUMMY_436" id="0x7f140436" />
