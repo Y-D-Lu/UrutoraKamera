@@ -6619,7 +6619,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "/LMC8.4/libs/"
+    const-string v3, "/UrutoraKamera/libs/"
 
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -6754,7 +6754,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "/LMC8.4/patchedlibs/"
+    const-string v3, "/UrutoraKamera/patchedlibs/"
 
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

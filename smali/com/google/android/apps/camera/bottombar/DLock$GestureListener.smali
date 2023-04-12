@@ -40,7 +40,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, "/LMC8.4/"
+    const-string v1, "/UrutoraKamera/"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -410,7 +410,7 @@
 
     move-result-object v0
 
-    const-string v1, "/storage/emulated/0/LMC8.4/"
+    const-string v1, "/storage/emulated/0/UrutoraKamera/"
 
     const-string v2, ""
 
@@ -474,7 +474,7 @@
 
     move-result-object v0
 
-    const-string v1, "/storage/emulated/0/LMC8.4/"
+    const-string v1, "/storage/emulated/0/UrutoraKamera/"
 
     const-string v2, ""
 

@@ -1259,7 +1259,7 @@
 
     move-result-object v2
 
-    const-string v3, "/LMC8.4/patchedlibs/"
+    const-string v3, "/UrutoraKamera/patchedlibs/"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1294,7 +1294,7 @@
 
     move-result-object v2
 
-    const-string v3, "/LMC8.4/libs/"
+    const-string v3, "/UrutoraKamera/libs/"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1335,7 +1335,7 @@
 
     move-result-object v0
 
-    const-string v1, "/LMC8.4/files/"
+    const-string v1, "/UrutoraKamera/files/"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

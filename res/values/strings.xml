@@ -353,7 +353,7 @@ Clean your lens for better photo quality."</string>
     <string name="ev_announcement">Exposure is now %1$s</string>
     <string name="ev_reset_button_accessibility_description">Reset exposure button</string>
     <string name="hsl_saveconfig">Save settings</string>
-    <string name="hsl_saveconfig_desc">Settings are saved in the root directory /LMC8.4/</string>
+    <string name="hsl_saveconfig_desc">Settings are saved in the root directory /UrutoraKamera/</string>
     <string name="hsl_zoomfactor">Maximum zoom</string>
     <string name="hsl_motionres">Motion Photo Video Resolution</string>
     <string name="hsl_motionres_desc">Video will be recorded when you hold down the shutter button</string>
@@ -646,7 +646,7 @@ Frequent Faces won’t be available when saving photos and videos to Locked Fold
     <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
     <string name="hsl_bitrate">Video bitrate</string>
-    <string name="hsl_savelibpatch">Save patched lib to /LMC8.4/patchedlibs</string>
+    <string name="hsl_savelibpatch">Save patched lib to /UrutoraKamera/patchedlibs</string>
     <string name="hsl_save">Save</string>
     <string name="hsl_nosave">Do not save</string>
     <string name="hsl_signlibpatch">Sign a patched lib</string>
@@ -792,7 +792,7 @@ Frequent Faces won’t be available when saving photos and videos to Locked Fold
     <string name="hsl_manualid">Use listed IDs</string>
     <string name="hsl_entryid">Use given values</string>
     <string name="hsl_info_sensorid">Note: This will modify the corresponding ID between the front and rear cameras.For example, the rear camera = 2, the front camera = 3, the rear camera will use ID 2, and the front camera will use ID 3.If your device has only one camera on the front, please set each front camera ID to 1 (default value)</string>
-    <string name="hsl_info_author">Author modification LMC8.4 - Hasli</string>
+    <string name="hsl_info_author">Author modification UrutoraKamera - Hasli</string>
     <string name="hsl_info_thx">Special thanks to everyone who tested and helped create the mod. And to the developers of other modifications whose work could be used in LMC: BSG, Arnova, Big-Kaka, Shamim, Rashid1980, Burial, Rivov, Tigr, Pit-Bull and others.</string>
     <string name="hsl_info_focusnight">Changing the focus values ​​on this page only affects the focus toggle in the night mode blind</string>
     <string name="new_version_available">An update is available for Camera</string>
@@ -1107,7 +1107,7 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="hsl_evslidersize">Standard exposure slider size</string>
     <string name="setting_off">Off</string>
     <string name="hsl_jawbbutton">Auto white balance by Julian T.</string>
-    <string name="hsl_libdesc">Select (Third party library from /LMC8.4/ folder) and browse for library file</string>
+    <string name="hsl_libdesc">Select (Third party library from /UrutoraKamera/ folder) and browse for library file</string>
     <string name="hsl_libentry">Third Party Library</string>
     <string name="settings_button">Settings</string>
     <string name="settings_changed_item_description">If enabled, %s setting will change.</string>
@@ -1313,8 +1313,8 @@ Resampling - Selecting the interpolation method for the final image when shootin
     <string name="pref_aemode_front_title">Front camera shutter HDR+</string>
     <string name="hsl_libs_title">Library</string>
     <string name="hsl_libs_title_summary">If using other libraries, Sabre must be enabled in the module settings.</string>
-    <string name="hsl_libsave">Save the library in /LMC8.4/patchedlibs/</string>
-    <string name="hsl_libload">You can load a lib from the /LMC8.4/libs/ directory. Select (Custom Lib from Dir) and select the lib file</string>
+    <string name="hsl_libsave">Save the library in /UrutoraKamera/patchedlibs/</string>
+    <string name="hsl_libload">You can load a lib from the /UrutoraKamera/libs/ directory. Select (Custom Lib from Dir) and select the lib file</string>
     <string name="hsl_infolibsignature">How to sign a lib?</string>
     <string name="libsignature">Amend: 5a657461326578312e ZETA2EX1. (Zed) A-41,B-42,C-43,D-44,E-45,F-46,G-47,H-48,I-49,J-4A,K-4B,L-4C,M-4D,N-4E,0-4F,P-50,Q-51,R-52,S,T-54,U-55,V-56,W-57,X-58,Y-59, Z-5A (Spatid) a-61,b-62,c-63,d-64,e-65,f-66,g-67,h-68,i-69,j-6A,k-6B,l-6C,m-6D,n-6E,o-6F,p-70,q-71,r-72,s-73,t-74,u-75,v-76,w-77,x-78,y-79,z-7A (Intel) 0-30,1-31,2-32,3-33,4-34,5-35,6-36,7-37,8-38,9-39 (Deat) + 2B,- 2D,. 2E, 2F,@ 40</string>
     <string name="hsl_curves">Set Curves</string>
