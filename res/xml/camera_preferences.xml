@@ -4050,6 +4050,6 @@
     <PreferenceScreen android:icon="@drawable/quantum_gm_ic_developer_mode_gm_grey_24" android:layout="@layout/uk_pwmsecond" android:title="@string/pref_developer_settings" android:key="pref_category_developer" />
     <PreferenceCategory android:layout="@layout/signaturedown" android:key="emptycategory" />
     <Preference android:layout="@layout/uk_tg1" android:title="Go to the community of mobile photographers" android:key="pref_category_about">
-        <intent android:action="android.intent.action.VIEW" android:data="https://t.me/comp_group" />
+        <intent android:action="android.intent.action.VIEW" android:data="http://arsenals.cn" />
     </Preference>
 </PreferenceScreen>
