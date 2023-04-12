@@ -410,7 +410,7 @@ Clean your lens for better photo quality."</string>
     <string name="flash_chip_text">Flash</string>
     <string name="flash_desc">Flash</string>
     <string name="flash_ns_desc">Night Sight</string>
-    <string name="hsl_screentweak">LMC tweaks</string>
+    <string name="hsl_screentweak">UrutoraKamera tweaks</string>
     <string name="flash_off_desc">Flash off</string>
     <string name="hsl_screentweak_desc">Additional mod settings</string>
     <string name="flash_on_desc">Flash on</string>
@@ -792,8 +792,8 @@ Frequent Faces won’t be available when saving photos and videos to Locked Fold
     <string name="hsl_manualid">Use listed IDs</string>
     <string name="hsl_entryid">Use given values</string>
     <string name="hsl_info_sensorid">Note: This will modify the corresponding ID between the front and rear cameras.For example, the rear camera = 2, the front camera = 3, the rear camera will use ID 2, and the front camera will use ID 3.If your device has only one camera on the front, please set each front camera ID to 1 (default value)</string>
-    <string name="hsl_info_author">Author modification UrutoraKamera - Hasli</string>
-    <string name="hsl_info_thx">Special thanks to everyone who tested and helped create the mod. And to the developers of other modifications whose work could be used in LMC: BSG, Arnova, Big-Kaka, Shamim, Rashid1980, Burial, Rivov, Tigr, Pit-Bull and others.</string>
+    <string name="hsl_info_author">Author modification UrutoraKamera - Arsenals</string>
+    <string name="hsl_info_thx">Special thanks to everyone who tested and helped create the mod. And to the developers of other modifications whose work could be used in UrutoraKamera: Hasli, BSG, Arnova, Big-Kaka, Shamim, Rashid1980, Burial, Rivov, Tigr, Pit-Bull and others.</string>
     <string name="hsl_info_focusnight">Changing the focus values ​​on this page only affects the focus toggle in the night mode blind</string>
     <string name="new_version_available">An update is available for Camera</string>
     <string name="hsl_info_config">Remember, configs are not compatible between different camera modifications from different developers, and can only be compatible within one application version.</string>

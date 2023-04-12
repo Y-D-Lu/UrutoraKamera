@@ -410,7 +410,7 @@
     <string name="flash_chip_text">闪光灯</string>
     <string name="flash_desc">闪光灯</string>
     <string name="flash_ns_desc">夜视</string>
-    <string name="hsl_screentweak">LMC调整</string>
+    <string name="hsl_screentweak">UrutoraKamera调整</string>
     <string name="flash_off_desc">闪光灯已关闭</string>
     <string name="hsl_screentweak_desc">附加的相机设置</string>
     <string name="flash_on_desc">开启闪光灯</string>

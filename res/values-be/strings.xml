@@ -343,7 +343,7 @@
     <string name="flash_chip_text">Успышка</string>
     <string name="flash_desc">Успышка</string>
     <string name="flash_ns_desc">Начная здымка</string>
-    <string name="hsl_screentweak">Твікі LMC</string>
+    <string name="hsl_screentweak">Твікі UrutoraKamera</string>
     <string name="flash_off_desc">Без ўспышкі</string>
     <string name="hsl_screentweak_desc">Дадатковыя наладкі мода</string>
     <string name="flash_on_desc">Са выбліскам</string>
@@ -668,8 +668,8 @@
     <string name="hsl_manualid">Выкарыстоўваць пералічаныя ID</string>
     <string name="hsl_entryid">Выкарыстоўваць зададзеныя значэння</string>
     <string name="hsl_info_sensorid">Заўвага. Гэта зменіць які адпавядае ідэнтыфікатар паміж перадпакоем і задняй камерамі. Напрыклад, задняя камера = 2, пярэдняя камера = 3, задняя камера будзе выкарыстоўваць ідэнтыфікатар 2, а пярэдняя камера будзе выкарыстоўваць ідэнтыфікатар 3. Калі ваша прылада мае толькі адну камеру на пярэдняй панэлі, усталюйце ідэнтыфікатар кожнай пярэдняй камеры на 1 (значэнне па змаўчанні)</string>
-    <string name="hsl_info_author">Аўтар мадыфікацыі UrutoraKamera - Hasli</string>
-    <string name="hsl_info_thx">Асобная падзяка ўсім хто тэсціраваў і дапамагаў пры стварэнні мадыфікацыі. І распрацоўнікам іншых мадыфікацый, чые напрацоўкі маглі быць скарыстаны ў LMC: BSG, Arnova, Big-Kaka, Shamim, Rashid1980, Burial, Rivov, Tigr, Pit-Bull і іншыя.</string>
+    <string name="hsl_info_author">Аўтар мадыфікацыі UrutoraKamera - Arsenals</string>
+    <string name="hsl_info_thx">Асобная падзяка ўсім хто тэсціраваў і дапамагаў пры стварэнні мадыфікацыі. І распрацоўнікам іншых мадыфікацый, чые напрацоўкі маглі быць скарыстаны ў UrutoraKamera: Hasli, BSG, Arnova, Big-Kaka, Shamim, Rashid1980, Burial, Rivov, Tigr, Pit-Bull і іншыя.</string>
     <string name="hsl_info_focusnight">Змена значэнняў фокусу на дадзенай старонцы ўплывае толькі на перамыкач фокусу ў шторцы ў начным рэжыме</string>
     <string name="new_version_available">Для прылады \"Камера\" даступна абнаўленне.</string>
     <string name="hsl_info_config">Памятайце, канфігі не сумяшчальныя паміж рознымі мадыфікацыямі камеры ад розных распрацоўшчыкаў, і могуць мець сумяшчальнасць толькі ўнутры адной версіі прыкладання.</string>

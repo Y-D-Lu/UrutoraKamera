@@ -482,7 +482,7 @@
 
     move-result-object v3
 
-    const-string v2, "lmc_8.4"
+    const-string v2, "UrutoraKamera"
 
     invoke-virtual {p0, v2, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
@@ -494,7 +494,7 @@
 
     move-result-object p0
 
-    const-string v2, "lmc_8.4"
+    const-string v2, "UrutoraKamera"
 
     invoke-virtual {p0, v2, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
