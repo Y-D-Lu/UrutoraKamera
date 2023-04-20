@@ -24,7 +24,7 @@ import android.widget.RelativeLayout;
 import com.Helper;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 

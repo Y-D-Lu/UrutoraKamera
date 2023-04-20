@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 import com.google.android.apps.camera.camcorder.ui.stabilization.StabilizationUi;
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuButton;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

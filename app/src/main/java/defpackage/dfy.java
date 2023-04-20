@@ -5,7 +5,9 @@ import android.graphics.Bitmap;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.ExecutionException;
 
@@ -70,7 +72,7 @@ public final class dfy extends dfk {
             dfjVar.getClass();
         }
         view.getClass();
-        view.setTag(com.google.android.apps.camera.bottombar.R.id.mediadata_tag_viewtype, Integer.valueOf(bua.VIDEO.ordinal()));
+        view.setTag(Rb.id.mediadata_tag_viewtype, Integer.valueOf(bua.VIDEO.ordinal()));
         dfjVar.c.setVisibility(8);
         l(view);
         dfjVar.a.setContentDescription(this.c.getResources().getString(R.string.video_date_content_description, b.format(this.e.h())));

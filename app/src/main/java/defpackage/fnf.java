@@ -4,7 +4,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Handler;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;

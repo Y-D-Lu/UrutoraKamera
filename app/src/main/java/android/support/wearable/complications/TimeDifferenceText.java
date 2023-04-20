@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;

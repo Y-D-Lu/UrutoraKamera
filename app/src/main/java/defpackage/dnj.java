@@ -3,7 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.view.View;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: dnj  reason: default package */
 /* loaded from: classes.dex */

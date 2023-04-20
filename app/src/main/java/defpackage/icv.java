@@ -3,7 +3,7 @@ package defpackage;
 import android.content.pm.ResolveInfo;
 import android.widget.Toast;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: icv  reason: default package */

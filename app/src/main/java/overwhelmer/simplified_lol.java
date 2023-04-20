@@ -1,6 +1,6 @@
 package overwhelmer;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 /* loaded from: classes2.dex */
@@ -80,51 +80,51 @@ public class simplified_lol {
                 return 4.0f;
             case 29:
                 return 3.33333f;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 return 2.857142f;
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 return 2.5f;
             case 32:
                 return 2.222222f;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 return 2.0f;
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 return 1.66666f;
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 return 1.33333f;
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 return 1.0f;
-            case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                 return 0.8f;
-            case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                 return 0.666666f;
-            case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                 return 0.625f;
-            case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+            case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                 return 0.5f;
-            case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+            case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                 return 0.4f;
-            case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                 return 0.33333f;
-            case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                 return 0.25f;
-            case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+            case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                 return 0.2f;
-            case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+            case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                 return 0.166666f;
-            case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+            case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                 return 0.142857f;
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                 return 0.125f;
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 return 0.1f;
-            case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+            case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                 return 0.066666f;
-            case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+            case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                 return 0.033333f;
-            case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+            case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                 return 0.025f;
-            case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+            case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                 return 0.02f;
             default:
                 return 3333.3333f;

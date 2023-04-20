@@ -1,6 +1,6 @@
 package androidx.window.layout;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.concurrent.Executor;
 
@@ -10,7 +10,7 @@ import defpackage.qlw;
 import defpackage.qmb;
 import defpackage.qmy;
 
-@qlw(b = "androidx.window.layout.WindowInfoRepositoryImpl$windowLayoutInfo$1", c = "WindowInfoRepositoryImpl.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_textAppearancePopupMenuHeader, R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle})
+@qlw(b = "androidx.window.layout.WindowInfoRepositoryImpl$windowLayoutInfo$1", c = "WindowInfoRepositoryImpl.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader, Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle})
 /* loaded from: classes.dex */
 final class WindowInfoRepositoryImpl$windowLayoutInfo$1 extends qmb implements qmy {
     private /* synthetic */ Object L$0;

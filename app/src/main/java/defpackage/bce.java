@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: bce  reason: default package */
 /* loaded from: classes.dex */
@@ -87,7 +87,7 @@ public final class bce implements bcl {
         String valueOf3 = String.valueOf(this.b);
         int length = String.valueOf(valueOf).length();
         int length2 = String.valueOf(valueOf2).length();
-        sb = new StringBuilder(length + R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle + length2 + String.valueOf(valueOf3).length());
+        sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle + length2 + String.valueOf(valueOf3).length());
         sb.append("EngineResource{isMemoryCacheable=");
         sb.append(z);
         sb.append(", listener=");

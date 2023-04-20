@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: fzx  reason: default package */
 /* loaded from: classes.dex */

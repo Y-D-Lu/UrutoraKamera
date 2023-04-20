@@ -3,7 +3,7 @@ package androidx.preference;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.ahh;
 import defpackage.et;

@@ -50,7 +50,7 @@ public final class save extends Activity {
         if (ExistsInArray(list, !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? "rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1")) {
             try {
                 Log.i(str2, "");
-                unZipIt(assetManager.open(!Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? "rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1"), "/data/data/org.codeaurora.snapcam/");
+                unZipIt(assetManager.open(!Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? !Build.DEVICE.equals("xxx") ? "rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1" : "xxx_rad1"), "/data/data/cn.arsenals.ultracamera/");
                 Log.i(str2, "");
             } catch (Exception e) {
                 Log.e(str2, "" + e.getMessage());

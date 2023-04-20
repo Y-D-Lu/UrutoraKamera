@@ -6,7 +6,7 @@ import android.support.v4.widget.NestedScrollView;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ie  reason: default package */
 /* loaded from: classes.dex */

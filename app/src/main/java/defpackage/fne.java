@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.time.Duration;
 

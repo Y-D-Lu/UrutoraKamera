@@ -3,7 +3,7 @@ package com.google.android.libraries.social.licenses;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.cu;
 import defpackage.dd;

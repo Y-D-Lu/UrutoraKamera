@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: cdh  reason: default package */
 /* loaded from: classes2.dex */
@@ -42,7 +42,7 @@ public final class cdh {
         float f2 = this.b;
         float f3 = this.c;
         float f4 = this.d;
-        StringBuilder sb = new StringBuilder((int) R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu);
+        StringBuilder sb = new StringBuilder((int) Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu);
         sb.append("FaceFeatures{width=");
         sb.append(f);
         sb.append(", height=");

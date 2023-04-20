@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import defpackage.gl;
 import defpackage.jq;
@@ -147,7 +147,7 @@ public class LinearLayoutCompat extends ViewGroup {
                 case 16:
                     i3 += ((((getBottom() - getTop()) - getPaddingTop()) - getPaddingBottom()) - this.e) / 2;
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                     i3 = ((getBottom() - getTop()) - getPaddingBottom()) - this.e;
                     break;
             }

@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.io.IOException;
 import java.text.AttributedCharacterIterator;
@@ -571,7 +571,7 @@ public final class l extends Format {
                                                                 } else {
                                                                     jVar2 = jVar5;
                                                                     String format2 = String.format(Locale.ENGLISH, "%1.15e", Double.valueOf(d11));
-                                                                    int lastIndexOf = format2.lastIndexOf(R.styleable.AppCompatTheme_switchStyle);
+                                                                    int lastIndexOf = format2.lastIndexOf(Rb.styleable.AppCompatTheme_switchStyle);
                                                                     int i32 = lastIndexOf + 1;
                                                                     if (format2.charAt(i32) == '+') {
                                                                         i32++;

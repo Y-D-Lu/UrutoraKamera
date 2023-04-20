@@ -17,7 +17,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.TypedValue;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 

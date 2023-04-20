@@ -39,7 +39,7 @@ public class bu implements ComponentCallbacks, View.OnCreateContextMenuListener,
     boolean N;
     public br P;
     boolean Q;
-    public LayoutInflater R;
+    public LayoutInflater varR;
     boolean S;
     public String T;
     dg V;
@@ -469,7 +469,7 @@ public class bu implements ComponentCallbacks, View.OnCreateContextMenuListener,
 
     public final LayoutInflater af() {
         LayoutInflater m = m();
-        this.R = m;
+        this.varR = m;
         return m;
     }
 

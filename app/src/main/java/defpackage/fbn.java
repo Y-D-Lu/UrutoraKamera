@@ -31,9 +31,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ScheduledExecutorService;
-
-import java.util.Collection;
 import java.util.function.Function;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: fbn  reason: default package */
 /* loaded from: classes.dex */
@@ -178,25 +178,25 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                     z = true;
                 }
             } else {
-                string = idkVar.a.getResources().getString(com.google.android.apps.camera.bottombar.R.string.social_share_off);
+                string = idkVar.a.getResources().getString(com.google.android.apps.camera.bottombar.Rb.string.social_share_off);
             }
             preferenceScreen.n(string);
         }
         PreferenceScreen preferenceScreen2 = (PreferenceScreen) a("pref_category_frequent_faces");
         if (preferenceScreen2 != null) {
             dwd dwdVar = this.ab.i;
-            preferenceScreen2.n(dwdVar.a.getResources().getString(true != ((Boolean) dwdVar.b.fA()).booleanValue() ? com.google.android.apps.camera.bottombar.R.string.frequent_faces_off : com.google.android.apps.camera.bottombar.R.string.frequent_faces_on));
+            preferenceScreen2.n(dwdVar.a.getResources().getString(true != ((Boolean) dwdVar.b.fA()).booleanValue() ? com.google.android.apps.camera.bottombar.Rb.string.frequent_faces_off : com.google.android.apps.camera.bottombar.Rb.string.frequent_faces_on));
         }
         if (!this.ab.u.contains("pref_category_custom_hotkeys")) {
             ap("pref_category_custom_hotkeys");
         }
         Preference a = a("pref_category_gestures");
         if (a != null) {
-            a.n(a(htu.e.a) != null ? t().getString(com.google.android.apps.camera.bottombar.R.string.pref_gestures_summary, t().getString(com.google.android.apps.camera.bottombar.R.string.pref_camera_volume_key_action_title), t().getString(com.google.android.apps.camera.bottombar.R.string.pref_camera_double_tap_action_title)) : t().getString(com.google.android.apps.camera.bottombar.R.string.pref_camera_volume_key_action_title));
+            a.n(a(htu.e.a) != null ? t().getString(com.google.android.apps.camera.bottombar.Rb.string.pref_gestures_summary, t().getString(com.google.android.apps.camera.bottombar.Rb.string.pref_camera_volume_key_action_title), t().getString(com.google.android.apps.camera.bottombar.Rb.string.pref_camera_double_tap_action_title)) : t().getString(com.google.android.apps.camera.bottombar.Rb.string.pref_camera_volume_key_action_title));
         }
         Preference a2 = a("pref_category_storage");
         if (a2 != null) {
-            a2.n(t().getString(com.google.android.apps.camera.bottombar.R.string.pref_storage_summary, t().getString(com.google.android.apps.camera.bottombar.R.string.pref_low_storage_mode), t().getString(com.google.android.apps.camera.bottombar.R.string.pref_free_up_space)));
+            a2.n(t().getString(com.google.android.apps.camera.bottombar.Rb.string.pref_storage_summary, t().getString(com.google.android.apps.camera.bottombar.Rb.string.pref_low_storage_mode), t().getString(com.google.android.apps.camera.bottombar.Rb.string.pref_free_up_space)));
         }
         ListPreference listPreference = (ListPreference) a(htu.c.a);
         if (listPreference != null) {
@@ -395,7 +395,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                 listPreference.x = hveVar.f();
                 listPreference.J(hveVar.c());
                 listPreference.O(hveVar.d());
-                listPreference.A = com.google.android.apps.camera.bottombar.R.layout.preference_with_margin;
+                listPreference.A = com.google.android.apps.camera.bottombar.Rb.layout.preference_with_margin;
                 listPreference.N(3);
                 fbqVar.w.l("pref_category_resolution_camera", listPreference);
                 i2 = 0;
@@ -423,7 +423,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                 materialManagedSwitchPreference4.K(switchPreference.s);
                 materialManagedSwitchPreference4.e = switchPreference.n;
                 materialManagedSwitchPreference4.N(switchPreference.p);
-                materialManagedSwitchPreference4.A = com.google.android.apps.camera.bottombar.R.layout.preference_with_margin;
+                materialManagedSwitchPreference4.A = com.google.android.apps.camera.bottombar.Rb.layout.preference_with_margin;
                 fbqVar.w.l("pref_category_advanced", materialManagedSwitchPreference4);
             }
         }
@@ -443,7 +443,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
         int i3 = ahf.a;
         Object[] objArr = new Object[2];
         String[] strArr = {Preference.class.getPackage().getName() + ".", SwitchPreference.class.getPackage().getName() + "."};
-        XmlResourceParser xml = r2.getResources().getXml(com.google.android.apps.camera.bottombar.R.xml.camera_material_preferences);
+        XmlResourceParser xml = r2.getResources().getXml(com.google.android.apps.camera.bottombar.Rb.xml.camera_material_preferences);
         try {
             Preference a = ahf.a(xml, k, r2, objArr, ahjVar, strArr);
             xml.close();
@@ -486,7 +486,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                         if (c != null) {
                             preference.u = c;
                         }
-                        preference.A = com.google.android.apps.camera.bottombar.R.layout.preference_with_margin;
+                        preference.A = com.google.android.apps.camera.bottombar.Rb.layout.preference_with_margin;
                         preferenceCategory.ag(preference);
                         preferenceScreen5 = preferenceScreen6;
                     }
@@ -506,7 +506,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                 };
             }
             if (!list17.contains("pref_camera_enable_iris") && (materialManagedSwitchPreference2 = (MaterialManagedSwitchPreference) a("pref_camera_enable_iris")) != null) {
-                materialManagedSwitchPreference2.n(E(true != CameraMaterialSettingsActivity.l ? com.google.android.apps.camera.bottombar.R.string.pref_camera_lens_subtitle_legacy : com.google.android.apps.camera.bottombar.R.string.pref_camera_lens_subtitle_p21));
+                materialManagedSwitchPreference2.n(E(true != CameraMaterialSettingsActivity.l ? com.google.android.apps.camera.bottombar.Rb.string.pref_camera_lens_subtitle_legacy : com.google.android.apps.camera.bottombar.Rb.string.pref_camera_lens_subtitle_p21));
             }
             Preference a2 = a(htu.a.a);
             a2.getClass();
@@ -537,14 +537,14 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                     final MaterialManagedSwitchPreference materialManagedSwitchPreference6 = (MaterialManagedSwitchPreference) preferenceScreen7.l(htu.z.a);
                     if (materialManagedSwitchPreference6 != null) {
                         materialManagedSwitchPreference6.R(idkVar.c(booleanValue));
-                        int X = ohh.X(idkVar.a, org.codeaurora.snapcam.R.attr.colorOnPrimary, -1);
+                        int X = ohh.X(idkVar.a, R.attr.colorOnPrimary, -1);
                         materialManagedSwitchPreference6.i = Integer.valueOf(X);
                         bundle2 = bundle4;
                         charSequence2 = "pref_camera_kepler_enabled_key";
                         charSequence = "pref_camera_raw_output_option_available_key";
                         materialManagedSwitchPreference6.f = new ColorStateList(new int[][]{new int[]{-16842912}, new int[]{16842912}}, new int[]{X, X});
                         materialManagedSwitchPreference6.g = new ColorStateList(new int[][]{new int[]{-16842912}, new int[]{16842912}}, new int[]{X, X});
-                        materialManagedSwitchPreference6.h = Integer.valueOf(ohh.X(idkVar.a, com.google.android.apps.camera.bottombar.R.attr.colorPrimary, -16777216));
+                        materialManagedSwitchPreference6.h = Integer.valueOf(ohh.X(idkVar.a, com.google.android.apps.camera.bottombar.Rb.attr.colorPrimary, -16777216));
                         materialManagedSwitchPreference6.k(booleanValue);
                         materialManagedSwitchPreference6.e = new agm() { // from class: ide
                             @Override // defpackage.agm
@@ -607,7 +607,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                     }
                     Preference l = preferenceScreen7.l("key_social_share_info");
                     if (l != null) {
-                        l.n(mip.ey(com.google.android.apps.camera.bottombar.R.plurals.social_share_info, 3, 3).a(idkVar.a.getResources()));
+                        l.n(mip.ey(com.google.android.apps.camera.bottombar.Rb.plurals.social_share_info, 3, 3).a(idkVar.a.getResources()));
                     }
                     idkVar.k = idkVar.b(idkVar.e.c("image/*"), idkVar.e.c("video/*"));
                     idkVar.e.h(idkVar.k);
@@ -627,9 +627,9 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                         materialManagedSwitchPreference7.L(idmVar.b());
                         materialManagedSwitchPreference7.x = Boolean.valueOf(idkVar.b.m(idmVar.b()));
                         materialManagedSwitchPreference7.w = true;
-                        int dimensionPixelSize = idkVar.a.getResources().getDimensionPixelSize(com.google.android.apps.camera.bottombar.R.dimen.camera_settings_switch_button_icon_size);
+                        int dimensionPixelSize = idkVar.a.getResources().getDimensionPixelSize(com.google.android.apps.camera.bottombar.Rb.dimen.camera_settings_switch_button_icon_size);
                         ((ayk) axv.c(idkVar.a).c().d(resolveInfo.loadIcon(idkVar.j)).g(bkx.a()).t(dimensionPixelSize, dimensionPixelSize)).k(new idi(materialManagedSwitchPreference7));
-                        materialManagedSwitchPreference7.A = com.google.android.apps.camera.bottombar.R.layout.material_preference_with_social_app_margin;
+                        materialManagedSwitchPreference7.A = com.google.android.apps.camera.bottombar.Rb.layout.material_preference_with_social_app_margin;
                         materialManagedSwitchPreference7.e = new idj(idkVar);
                         preferenceScreen7.ag(materialManagedSwitchPreference7);
                         idkVar.g.g(materialManagedSwitchPreference7);
@@ -678,7 +678,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                             }
                         };
                         byVar = w;
-                        materialManagedSwitchPreference8.ae(dwdVar.a.getResources().getString(com.google.android.apps.camera.bottombar.R.string.frequent_faces_learn_more), new dwb(byVar, 2));
+                        materialManagedSwitchPreference8.ae(dwdVar.a.getResources().getString(com.google.android.apps.camera.bottombar.Rb.string.frequent_faces_learn_more), new dwb(byVar, 2));
                     } else {
                         byVar = w;
                     }
@@ -694,11 +694,11 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                 MaterialStorageStatusPreference materialStorageStatusPreference = (MaterialStorageStatusPreference) preferenceScreen.l("pref_storage_status");
                 materialStorageStatusPreference.getClass();
                 ilaVar.e = materialStorageStatusPreference;
-                ilaVar.e.A = com.google.android.apps.camera.bottombar.R.layout.material_preference_storage_status;
+                ilaVar.e.A = com.google.android.apps.camera.bottombar.Rb.layout.material_preference_storage_status;
                 final MaterialManagedSwitchPreference materialManagedSwitchPreference9 = (MaterialManagedSwitchPreference) preferenceScreen.l(htu.F.a);
                 final MaterialManagedSwitchPreference materialManagedSwitchPreference10 = (MaterialManagedSwitchPreference) preferenceScreen.l(htu.G.a);
                 if (materialManagedSwitchPreference10 != null && materialManagedSwitchPreference9 != null) {
-                    materialManagedSwitchPreference10.n(byVar.getResources().getString(org.codeaurora.snapcam.R.string.pref_low_storage_mode_auto_disable_summary, 1));
+                    materialManagedSwitchPreference10.n(byVar.getResources().getString(R.string.pref_low_storage_mode_auto_disable_summary, 1));
                     materialManagedSwitchPreference10.I(((TwoStatePreference) materialManagedSwitchPreference9).a);
                     materialManagedSwitchPreference9.e = new agm() { // from class: iky
                         @Override // defpackage.agm
@@ -718,7 +718,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                             return true;
                         }
                     };
-                    String string2 = byVar.getResources().getString(org.codeaurora.snapcam.R.string.settings_impacted_button);
+                    String string2 = byVar.getResources().getString(R.string.settings_impacted_button);
                     ile ileVar = new ile(byVar);
                     materialManagedSwitchPreference9.H = string2;
                     materialManagedSwitchPreference9.J = ileVar;
@@ -740,7 +740,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                         intent.setPackage("com.google.android.apps.photos");
                         intent.putExtra("android.intent.extra.FROM_STORAGE", true);
                         intent.setType("image/*");
-                        materialManagedSwitchPreference11.ae(E(com.google.android.apps.camera.bottombar.R.string.pref_raw_output_control_action_button), new Runnable() { // from class: fbm
+                        materialManagedSwitchPreference11.ae(E(com.google.android.apps.camera.bottombar.Rb.string.pref_raw_output_control_action_button), new Runnable() { // from class: fbm
                             @Override // java.lang.Runnable
                             public final void run() {
                                 fbn fbnVar = fbn.this;
@@ -766,9 +766,9 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
             CharSequence charSequence5 = charSequence2;
             if (!list17.contains(charSequence5) && ojcVar.g() && (materialManagedSwitchPreference = (MaterialManagedSwitchPreference) a(charSequence5)) != null) {
                 enl enlVar = (enl) ojcVar.c();
-                materialManagedSwitchPreference.Q(org.codeaurora.snapcam.R.string.pref_kepler_title);
+                materialManagedSwitchPreference.Q(R.string.pref_kepler_title);
                 enl enlVar2 = (enl) ojcVar.c();
-                materialManagedSwitchPreference.O(org.codeaurora.snapcam.R.string.pref_kepler_summary);
+                materialManagedSwitchPreference.O(R.string.pref_kepler_summary);
             }
             if (bundle2 != null && (string = (bundle3 = bundle2).getString("pref_open_setting_page")) != null) {
                 Preference a4 = a(string);
@@ -849,7 +849,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                 this.ag.put(str, string);
                 int parseInt = Integer.parseInt(string);
                 if ((parseInt == 24 || parseInt == 25) && (listPreference2 = (ListPreference) a(htu.f.a)) != null) {
-                    listPreference2.o(t().getString(com.google.android.apps.camera.bottombar.R.string.preference_volume_key_off));
+                    listPreference2.o(t().getString(com.google.android.apps.camera.bottombar.Rb.string.preference_volume_key_off));
                 }
                 if (!string.equals("-1") && this.ag.containsValue(string)) {
                     HashMap hashMap = new HashMap();
@@ -865,7 +865,7 @@ public final class fbn extends agy implements SharedPreferences.OnSharedPreferen
                     this.ag.putAll(hashMap);
                 }
             }
-            if (!str.equals(htu.f.a) || (listPreference = (ListPreference) a(str)) == null || listPreference.i.equals(t().getString(com.google.android.apps.camera.bottombar.R.string.preference_volume_key_off))) {
+            if (!str.equals(htu.f.a) || (listPreference = (ListPreference) a(str)) == null || listPreference.i.equals(t().getString(com.google.android.apps.camera.bottombar.Rb.string.preference_volume_key_off))) {
                 return;
             }
             HashMap hashMap2 = new HashMap();

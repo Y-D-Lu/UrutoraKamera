@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* loaded from: classes.dex */
 public class ProgressOverlay extends FrameLayout {

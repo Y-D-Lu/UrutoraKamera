@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.Point;
 import android.os.SystemClock;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 

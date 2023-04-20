@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.camerafatalerror.CameraFatalErrorTrackerDatabase_Impl;
 
 import java.util.HashMap;
@@ -45,7 +45,7 @@ public final class cwv extends aiq {
             String valueOf = String.valueOf(ajjVar);
             String valueOf2 = String.valueOf(a);
             int length = String.valueOf(valueOf).length();
-            StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_textAppearanceListItemSecondary + String.valueOf(valueOf2).length());
+            StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary + String.valueOf(valueOf2).length());
             sb.append("FatalErrorCounts(com.google.android.apps.camera.camerafatalerror.FatalErrorCounts).\n Expected:\n");
             sb.append(valueOf);
             sb.append("\n Found:\n");
@@ -64,7 +64,7 @@ public final class cwv extends aiq {
             String valueOf3 = String.valueOf(ajjVar2);
             String valueOf4 = String.valueOf(a2);
             int length2 = String.valueOf(valueOf3).length();
-            StringBuilder sb2 = new StringBuilder(length2 + R.styleable.AppCompatTheme_viewInflaterClass + String.valueOf(valueOf4).length());
+            StringBuilder sb2 = new StringBuilder(length2 + Rb.styleable.AppCompatTheme_viewInflaterClass + String.valueOf(valueOf4).length());
             sb2.append("EnumerationErrorCounts(com.google.android.apps.camera.camerafatalerror.EnumerationErrorCounts).\n Expected:\n");
             sb2.append(valueOf3);
             sb2.append("\n Found:\n");
@@ -84,7 +84,7 @@ public final class cwv extends aiq {
         String valueOf5 = String.valueOf(ajjVar3);
         String valueOf6 = String.valueOf(a3);
         int length3 = String.valueOf(valueOf5).length();
-        StringBuilder sb3 = new StringBuilder(length3 + R.styleable.AppCompatTheme_windowFixedHeightMajor + String.valueOf(valueOf6).length());
+        StringBuilder sb3 = new StringBuilder(length3 + Rb.styleable.AppCompatTheme_windowFixedHeightMajor + String.valueOf(valueOf6).length());
         sb3.append("HardwareHelpDialogCounts(com.google.android.apps.camera.camerafatalerror.HardwareHelpDialogCounts).\n Expected:\n");
         sb3.append(valueOf5);
         sb3.append("\n Found:\n");

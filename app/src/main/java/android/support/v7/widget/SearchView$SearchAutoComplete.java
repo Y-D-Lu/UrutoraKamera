@@ -8,7 +8,7 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.mo;
 

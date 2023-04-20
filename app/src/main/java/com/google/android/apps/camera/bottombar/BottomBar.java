@@ -23,7 +23,7 @@ import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.File;
 import java.util.function.Consumer;

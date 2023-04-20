@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Parcelable;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +62,7 @@ public final class mgh implements mgk, mgg {
                     mij mijVar = (mij) this.b.c();
                     double d = mijVar.a;
                     double d2 = mijVar.b;
-                    StringBuilder sb = new StringBuilder((int) R.styleable.AppCompatTheme_textAppearanceListItemSmall);
+                    StringBuilder sb = new StringBuilder((int) Rb.styleable.AppCompatTheme_textAppearanceListItemSmall);
                     sb.append("geo:");
                     sb.append(d);
                     sb.append(",");

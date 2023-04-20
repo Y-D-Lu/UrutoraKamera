@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: awd  reason: default package */
@@ -16,6 +16,6 @@ public final class awd implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        this.b.c().obtainMessage(R.styleable.AppCompatTheme_textAppearanceListItemSmall, this.a).sendToTarget();
+        this.b.c().obtainMessage(Rb.styleable.AppCompatTheme_textAppearanceListItemSmall, this.a).sendToTarget();
     }
 }

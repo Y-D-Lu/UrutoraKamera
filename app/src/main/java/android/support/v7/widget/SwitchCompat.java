@@ -24,9 +24,10 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.CompoundButton;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.gl;
 import defpackage.jq;
@@ -530,7 +531,7 @@ public class SwitchCompat extends CompoundButton {
                 i7 = (((paddingTop + height) - paddingBottom) / 2) - (i10 / 2);
                 i8 = i7 + i10;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 i8 = getHeight() - getPaddingBottom();
                 i7 = i8 - this.C;
                 break;

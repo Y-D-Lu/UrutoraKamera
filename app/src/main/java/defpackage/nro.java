@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker", c = "F250AutoWorker.kt", d = "deleteResourcesToAutoExpire", e = {R.styleable.AppCompatTheme_listPreferredItemHeight, R.styleable.AppCompatTheme_listPreferredItemHeightSmall})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker", c = "F250AutoWorker.kt", d = "deleteResourcesToAutoExpire", e = {Rb.styleable.AppCompatTheme_listPreferredItemHeight, Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall})
 /* renamed from: nro  reason: default package */
 /* loaded from: classes2.dex */
 public final class nro extends qlu {

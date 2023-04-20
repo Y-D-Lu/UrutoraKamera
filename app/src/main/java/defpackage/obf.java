@@ -5,7 +5,7 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: obf  reason: default package */
 /* loaded from: classes2.dex */

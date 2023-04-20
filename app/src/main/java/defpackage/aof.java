@@ -5,7 +5,7 @@ import android.content.Context;
 
 import androidx.work.impl.WorkDatabase;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Arrays;
 import java.util.List;

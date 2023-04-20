@@ -1,6 +1,6 @@
 package defpackage;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jcc  reason: default package */
 /* loaded from: classes.dex */

@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.AutoUploadExpireQueryer$snapshotNextAutoUploadOrExpireTimestamp$2", c = "Queryer.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_editTextColor})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.AutoUploadExpireQueryer$snapshotNextAutoUploadOrExpireTimestamp$2", c = "Queryer.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_editTextColor})
 /* renamed from: nny  reason: default package */
 /* loaded from: classes2.dex */
 public final class nny extends qmb implements qmu {

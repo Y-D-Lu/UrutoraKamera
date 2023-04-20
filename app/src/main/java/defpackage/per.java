@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: per  reason: default package */
 /* loaded from: classes2.dex */
@@ -107,9 +107,9 @@ public final class per implements ppi {
                     case 11:
                     case 12:
                     case 13:
-                    case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
-                    case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
-                    case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                     case 200:
                     case 220:
                     case 221:

@@ -2,7 +2,7 @@ package defpackage;
 
 import android.database.Cursor;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.F250RoomDatabase_Impl;
 
 import java.util.Arrays;
@@ -65,7 +65,7 @@ public final class npx extends aiq {
         if (!ajjVar.equals(a)) {
             String valueOf = String.valueOf(ajjVar);
             String valueOf2 = String.valueOf(a);
-            StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + R.styleable.AppCompatTheme_windowMinWidthMinor + String.valueOf(valueOf2).length());
+            StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + Rb.styleable.AppCompatTheme_windowMinWidthMinor + String.valueOf(valueOf2).length());
             sb.append("ResourceEntity(com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.ResourceEntity).\n Expected:\n");
             sb.append(valueOf);
             sb.append("\n Found:\n");
@@ -98,7 +98,7 @@ public final class npx extends aiq {
                 if (!ajeVar.equals(ajeVar2)) {
                     String valueOf3 = String.valueOf(ajeVar);
                     String valueOf4 = String.valueOf(ajeVar2);
-                    StringBuilder sb2 = new StringBuilder(String.valueOf(valueOf3).length() + R.styleable.AppCompatTheme_windowActionModeOverlay + String.valueOf(valueOf4).length());
+                    StringBuilder sb2 = new StringBuilder(String.valueOf(valueOf3).length() + Rb.styleable.AppCompatTheme_windowActionModeOverlay + String.valueOf(valueOf4).length());
                     sb2.append("ResourceFts(com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.ResourceFts).\n Expected:\n");
                     sb2.append(valueOf3);
                     sb2.append("\n Found:\n");
@@ -151,7 +151,7 @@ public final class npx extends aiq {
                 }
                 String valueOf7 = String.valueOf(ajjVar3);
                 String valueOf8 = String.valueOf(a3);
-                StringBuilder sb4 = new StringBuilder(String.valueOf(valueOf7).length() + R.styleable.AppCompatTheme_windowFixedWidthMinor + String.valueOf(valueOf8).length());
+                StringBuilder sb4 = new StringBuilder(String.valueOf(valueOf7).length() + Rb.styleable.AppCompatTheme_windowFixedWidthMinor + String.valueOf(valueOf8).length());
                 sb4.append("F250LogEntity(com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.F250LogEntity).\n Expected:\n");
                 sb4.append(valueOf7);
                 sb4.append("\n Found:\n");

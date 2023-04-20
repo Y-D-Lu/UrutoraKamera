@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1", c = "ChannelFlow.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_controlBackground})
+@qlw(b = "kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1", c = "ChannelFlow.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_controlBackground})
 /* renamed from: quc  reason: default package */
 /* loaded from: classes2.dex */
 final class quc extends qmb implements qmy {

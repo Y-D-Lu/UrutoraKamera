@@ -3,7 +3,7 @@ package defpackage;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.legacy.app.app.CameraApp;
 
 /* renamed from: etd  reason: default package */
@@ -93,7 +93,7 @@ public class etd extends fio {
         if (this.m.k(ddl.ay)) {
             miq.a(this);
         } else {
-            setTheme(R.style.Theme_Camera_Legacy);
+            setTheme(Rb.style.Theme_Camera_Legacy);
         }
         String.valueOf(this.v).concat("#onCreate");
         o();

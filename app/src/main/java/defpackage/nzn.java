@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: nzn  reason: default package */
@@ -412,10 +413,10 @@ public final class nzn {
         float measureText = charSequence2 != null ? this.P.measureText(charSequence2, 0, charSequence2.length()) : DisplayHelper.DENSITY;
         int absoluteGravity = Gravity.getAbsoluteGravity(this.i, this.M ? 1 : 0);
         switch (absoluteGravity & 112) {
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 this.G = this.g.top;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 this.G = this.g.bottom + this.P.ascent();
                 break;
             default:
@@ -450,10 +451,10 @@ public final class nzn {
         this.ac = f2;
         int absoluteGravity2 = Gravity.getAbsoluteGravity(this.h, this.M ? 1 : 0);
         switch (absoluteGravity2 & 112) {
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 this.F = this.f.top;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 this.F = (this.f.bottom - height) + this.P.descent();
                 break;
             default:

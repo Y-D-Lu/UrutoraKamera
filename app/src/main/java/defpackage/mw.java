@@ -9,7 +9,7 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: mw  reason: default package */
 /* loaded from: classes.dex */

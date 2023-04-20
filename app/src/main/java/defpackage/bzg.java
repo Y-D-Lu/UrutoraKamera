@@ -5,7 +5,7 @@ import android.support.constraint.ConstraintLayout;
 import android.view.MotionEvent;
 import android.view.View;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: bzg  reason: default package */
 /* loaded from: classes.dex */

@@ -16,7 +16,7 @@ import android.os.SystemClock;
 import com.google.common.io.ByteStreams;
 import com.google.lens.sdk.LensApi;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.IOException;
 import java.io.InputStream;

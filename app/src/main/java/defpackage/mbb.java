@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Set;
 
@@ -64,7 +64,7 @@ public final class mbb {
         int length3 = String.valueOf(valueOf3).length();
         int length4 = String.valueOf(valueOf4).length();
         int length5 = String.valueOf(valueOf5).length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_windowMinWidthMajor + length2 + length3 + length4 + length5 + String.valueOf(valueOf6).length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_windowMinWidthMajor + length2 + length3 + length4 + length5 + String.valueOf(valueOf6).length());
         sb.append("PublishInfo{primaryMediaFile=");
         sb.append(valueOf);
         sb.append(", publicMediaFiles=");

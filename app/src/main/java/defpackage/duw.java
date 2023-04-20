@@ -2,7 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: duw  reason: default package */
 /* loaded from: classes.dex */

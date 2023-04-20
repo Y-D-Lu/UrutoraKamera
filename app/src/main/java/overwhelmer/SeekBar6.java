@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Objects;
 
@@ -39,11 +39,11 @@ public class SeekBar6 extends Preference implements SeekBar.OnSeekBarChangeListe
     }
 
     public static int men2prog(int i) {
-        return i / com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowMinWidthMinor;
+        return i / Rb.styleable.AppCompatTheme_windowMinWidthMinor;
     }
 
     public static int prog2men(int i) {
-        return i * com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowMinWidthMinor;
+        return i * Rb.styleable.AppCompatTheme_windowMinWidthMinor;
     }
 
     public int getMval() {

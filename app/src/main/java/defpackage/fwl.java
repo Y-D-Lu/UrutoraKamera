@@ -6,7 +6,7 @@ import android.widget.FrameLayout;
 
 import com.google.android.apps.camera.ui.wirers.PreviewOverlay;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: fwl  reason: default package */
 /* loaded from: classes.dex */

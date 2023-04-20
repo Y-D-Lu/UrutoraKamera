@@ -15,7 +15,9 @@ import android.view.ViewPropertyAnimator;
 import android.view.Window;
 import android.widget.OverScroller;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 import defpackage.el;
 import defpackage.fs;
@@ -226,7 +228,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements nz, fr, fs {
             case 5:
                 this.m.g();
                 return;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
                 boolean z = true;
                 this.d = true;
                 if (getContext().getApplicationInfo().targetSdkVersion >= 19) {

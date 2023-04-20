@@ -17,7 +17,7 @@ import com.google.android.apps.camera.rewind.ui.RewindControllerView;
 import com.google.android.apps.camera.rewind.ui.RewindPreview;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.time.Duration;
 

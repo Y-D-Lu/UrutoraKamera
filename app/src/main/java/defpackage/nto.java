@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 
@@ -24,6 +24,6 @@ final class nto implements qco {
         nuj nujVar = this.a;
         List x = qmd.x(this.b);
         x.set(this.c, npeVar);
-        return nuj.b(nujVar, null, null, x, R.styleable.AppCompatTheme_windowActionModeOverlay);
+        return nuj.b(nujVar, null, null, x, Rb.styleable.AppCompatTheme_windowActionModeOverlay);
     }
 }

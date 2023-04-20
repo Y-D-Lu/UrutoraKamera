@@ -6,7 +6,7 @@ import android.text.format.DateUtils;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;

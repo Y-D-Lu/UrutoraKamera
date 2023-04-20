@@ -7,7 +7,7 @@ import android.widget.FrameLayout;
 
 import com.google.android.apps.camera.camcorder.ui.modeslider.recordspeed.RecordSpeedSlider;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.jrz;
 import defpackage.mip;

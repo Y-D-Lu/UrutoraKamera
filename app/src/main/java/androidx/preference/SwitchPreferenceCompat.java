@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.Checkable;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.ahm;
 import defpackage.ahn;

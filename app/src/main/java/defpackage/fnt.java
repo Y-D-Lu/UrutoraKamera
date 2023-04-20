@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
@@ -80,7 +80,7 @@ public final class fnt implements imr {
         try {
             if (gxm.b() && this.l.k(ddu.j) && this.m.k().equals(lwd.BACK)) {
                 if (this.i.g()) {
-                    this.d.g(mip.be(kdc.b, Integer.valueOf((int) R.styleable.AppCompatTheme_windowMinWidthMinor)));
+                    this.d.g(mip.be(kdc.b, Integer.valueOf((int) Rb.styleable.AppCompatTheme_windowMinWidthMinor)));
                 } else {
                     this.d.g(mip.be(kdc.c, false));
                 }

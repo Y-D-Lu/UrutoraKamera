@@ -5,7 +5,7 @@ import android.os.Build;
 import android.util.Log;
 
 import com.Helper;
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import defpackage.kvg;
 
@@ -230,127 +230,127 @@ public class slider {
             case 29:
                 focusDistance = 1.81f;
                 return;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 focusDistance = 2.01f;
                 return;
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 focusDistance = 2.21f;
                 return;
             case 32:
                 focusDistance = 2.41f;
                 return;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 focusDistance = 2.61f;
                 return;
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 focusDistance = 2.81f;
                 return;
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 focusDistance = 3.01f;
                 return;
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 focusDistance = 3.21f;
                 return;
-            case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                 focusDistance = 3.41f;
                 return;
-            case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                 focusDistance = 3.61f;
                 return;
-            case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                 focusDistance = 3.81f;
                 return;
-            case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+            case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                 focusDistance = 4.01f;
                 return;
-            case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+            case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                 focusDistance = 4.21f;
                 return;
-            case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                 focusDistance = 4.41f;
                 return;
-            case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                 focusDistance = 4.61f;
                 return;
-            case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+            case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                 focusDistance = 4.81f;
                 return;
-            case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+            case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                 focusDistance = 5.01f;
                 return;
-            case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+            case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                 focusDistance = 5.21f;
                 return;
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                 focusDistance = 5.41f;
                 return;
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 focusDistance = 5.61f;
                 return;
-            case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+            case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                 focusDistance = 5.81f;
                 return;
-            case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+            case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                 focusDistance = 6.01f;
                 return;
-            case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+            case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                 focusDistance = 6.21f;
                 return;
-            case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+            case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                 focusDistance = 6.41f;
                 return;
-            case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+            case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                 focusDistance = 6.61f;
                 return;
-            case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+            case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                 focusDistance = 6.81f;
                 return;
-            case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+            case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                 focusDistance = 7.01f;
                 return;
-            case R.styleable.AppCompatTheme_colorError /* 56 */:
+            case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                 focusDistance = 7.21f;
                 return;
-            case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+            case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                 focusDistance = 7.41f;
                 return;
-            case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+            case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                 focusDistance = 7.61f;
                 return;
-            case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+            case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                 focusDistance = 7.81f;
                 return;
-            case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+            case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                 focusDistance = 8.01f;
                 return;
-            case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+            case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                 focusDistance = 8.21f;
                 return;
-            case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+            case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                 focusDistance = 8.41f;
                 return;
-            case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+            case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                 focusDistance = 8.61f;
                 return;
             case 64:
                 focusDistance = 9.01f;
                 return;
-            case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+            case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                 focusDistance = 9.21f;
                 return;
-            case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                 focusDistance = 9.41f;
                 return;
-            case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+            case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                 focusDistance = 9.61f;
                 return;
-            case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+            case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                 focusDistance = 9.81f;
                 return;
-            case R.styleable.AppCompatTheme_editTextColor /* 69 */:
+            case Rb.styleable.AppCompatTheme_editTextColor /* 69 */:
                 focusDistance = 9.9f;
                 return;
-            case R.styleable.AppCompatTheme_editTextStyle /* 70 */:
+            case Rb.styleable.AppCompatTheme_editTextStyle /* 70 */:
                 focusDistance = 10.0f;
                 return;
             default:
@@ -451,7 +451,7 @@ public class slider {
 
     public static int getIsoVal() {
         if (shutterVal == 9001) {
-            return R.styleable.AppCompatTheme_textAppearanceListItemSecondary;
+            return Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary;
         }
         if (shutterVal == 9002) {
             return 800;
@@ -835,19 +835,19 @@ public class slider {
                 return 125000000L;
             case 29:
                 return 166666666L;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 return 250000000L;
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 return 333333333L;
             case 32:
                 return 500000000L;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 return S_2_NS;
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 return 2000000000L;
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 return 3000000000L;
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 return 4000000000L;
             default:
                 return 33333333L;

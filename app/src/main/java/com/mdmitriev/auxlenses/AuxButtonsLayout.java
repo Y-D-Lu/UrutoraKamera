@@ -16,7 +16,7 @@ import com.Fix.Pref;
 import com.Helper;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.List;

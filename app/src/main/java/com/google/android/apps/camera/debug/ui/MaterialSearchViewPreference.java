@@ -5,7 +5,7 @@ import android.widget.SearchView;
 
 import androidx.preference.Preference;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.ahm;
 import defpackage.djo;

@@ -21,7 +21,7 @@ import com.google.android.apps.camera.ui.modeswitcher.ModeSwitcher;
 import com.google.android.apps.camera.ui.modeswitcher.MoreModesGrid;
 import com.google.android.apps.camera.zoomui.ZoomUi;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.HashSet;
 import java.util.Objects;

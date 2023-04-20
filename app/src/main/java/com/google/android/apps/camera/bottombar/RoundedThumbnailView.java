@@ -26,7 +26,7 @@ import com.eclipse.switchMaxb;
 import com.exposure.Cswitch;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.jrx;
 import defpackage.lar;

@@ -7,7 +7,7 @@ import android.text.style.TextAppearanceSpan;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ild  reason: default package */
 /* loaded from: classes.dex */

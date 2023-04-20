@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 
@@ -32,7 +32,7 @@ public final class ntu implements qco {
                         g = qbu.k(nujVar);
                     } else {
                         nqh d = nqh.d(nujVar.b, null, str, null, 1015807);
-                        g = ntyVar.e.d(nujVar.a, d).d(nuj.b(nujVar, d, null, null, R.styleable.AppCompatTheme_windowMinWidthMinor));
+                        g = ntyVar.e.d(nujVar.a, d).d(nuj.b(nujVar, d, null, null, Rb.styleable.AppCompatTheme_windowMinWidthMinor));
                     }
                 } else if (obrVar instanceof nuk) {
                     long j = ((nuk) obrVar).a;

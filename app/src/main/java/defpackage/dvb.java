@@ -6,7 +6,7 @@ import android.content.res.Resources;
 
 import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: dvb  reason: default package */
 /* loaded from: classes.dex */

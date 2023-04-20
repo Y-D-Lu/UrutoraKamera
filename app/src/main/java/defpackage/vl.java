@@ -1,10 +1,10 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 
-@qlw(b = "androidx.camera.camera2.pipe.compat.Camera2CameraDevices$findAll$1", c = "Camera2CameraDevices.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_activityChooserViewStyle})
+@qlw(b = "androidx.camera.camera2.pipe.compat.Camera2CameraDevices$findAll$1", c = "Camera2CameraDevices.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_activityChooserViewStyle})
 /* renamed from: vl  reason: default package */
 /* loaded from: classes2.dex */
 public final class vl extends qmb implements qmy {

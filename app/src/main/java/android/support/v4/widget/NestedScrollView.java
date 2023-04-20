@@ -21,9 +21,10 @@ import android.widget.EdgeEffect;
 import android.widget.FrameLayout;
 import android.widget.OverScroller;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 
@@ -673,7 +674,7 @@ public class NestedScrollView extends FrameLayout implements fs, fp {
                         return !keyEvent.isAltPressed() ? k(33) : n(33);
                     case 20:
                         return !keyEvent.isAltPressed() ? k(130) : n(130);
-                    case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                    case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                         if (true != keyEvent.isShiftPressed()) {
                             i = 130;
                         }

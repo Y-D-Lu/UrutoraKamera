@@ -3,7 +3,7 @@ package defpackage;
 import android.graphics.Path;
 import android.util.Log;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 /* renamed from: em  reason: default package */
@@ -52,35 +52,35 @@ public final class em {
             float f11 = fArr2[4];
             float f12 = fArr2[5];
             switch (c4) {
-                case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
-                case R.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
+                case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                case Rb.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
                     i = 7;
                     break;
-                case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
-                case R.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
+                case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                case Rb.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
                     i = 6;
                     break;
-                case R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
-                case R.styleable.AppCompatTheme_panelBackground /* 86 */:
-                case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
-                case R.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
+                case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+                case Rb.styleable.AppCompatTheme_panelBackground /* 86 */:
+                case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+                case Rb.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
                     i = 1;
                     break;
-                case R.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
-                case R.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
-                case R.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
-                case R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
-                case R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
-                case R.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
+                case Rb.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
+                case Rb.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
+                case Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+                case Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
+                case Rb.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
                     i = 2;
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
-                case R.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
                 case 'q':
-                case R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+                case Rb.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
                     i = 4;
                     break;
-                case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                 case 'z':
                     path.close();
                     path.moveTo(f11, f12);
@@ -102,7 +102,7 @@ public final class em {
             while (i5 < fArr3.length) {
                 float f17 = DisplayHelper.DENSITY;
                 switch (c4) {
-                    case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                    case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                         i2 = i5;
                         fArr = fArr3;
                         c = c4;
@@ -115,7 +115,7 @@ public final class em {
                         f10 = f16;
                         f9 = f13;
                         break;
-                    case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                    case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                         i2 = i5;
                         fArr = fArr3;
                         c = c4;
@@ -133,7 +133,7 @@ public final class em {
                         f13 = f18;
                         f10 = f20;
                         break;
-                    case R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+                    case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
                         i2 = i5;
                         fArr = fArr3;
                         c = c4;
@@ -141,7 +141,7 @@ public final class em {
                         path.lineTo(fArr[i2], f16);
                         f13 = fArr[i2];
                         break;
-                    case R.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
+                    case Rb.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
                         i2 = i5;
                         fArr = fArr3;
                         c = c4;
@@ -151,7 +151,7 @@ public final class em {
                         f13 = fArr[i2];
                         f16 = fArr[i12];
                         break;
-                    case R.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
+                    case Rb.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
                         i2 = i5;
                         fArr = fArr3;
                         c = c4;
@@ -167,7 +167,7 @@ public final class em {
                             path.lineTo(f13, f16);
                             break;
                         }
-                    case R.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
                         i2 = i5;
                         fArr = fArr3;
                         c = c4;
@@ -183,7 +183,7 @@ public final class em {
                         f9 = f21;
                         f10 = f22;
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
                         i2 = i5;
                         float f23 = f16;
                         fArr = fArr3;
@@ -208,7 +208,7 @@ public final class em {
                         f10 = f26;
                         f9 = f25;
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
                         i2 = i5;
                         float f27 = f16;
                         fArr = fArr3;
@@ -229,7 +229,7 @@ public final class em {
                         f13 = fArr[i2];
                         f16 = fArr[i19];
                         break;
-                    case R.styleable.AppCompatTheme_panelBackground /* 86 */:
+                    case Rb.styleable.AppCompatTheme_panelBackground /* 86 */:
                         i2 = i5;
                         fArr = fArr3;
                         c = c4;
@@ -237,7 +237,7 @@ public final class em {
                         path.lineTo(f13, fArr[i2]);
                         f16 = fArr[i2];
                         break;
-                    case R.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
+                    case Rb.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
                         i2 = i5;
                         float f29 = f16;
                         int i20 = i2 + 5;
@@ -251,7 +251,7 @@ public final class em {
                         f10 = f16;
                         f9 = f13;
                         break;
-                    case R.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
+                    case Rb.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
                         i2 = i5;
                         float f30 = f16;
                         int i22 = i2 + 2;
@@ -269,7 +269,7 @@ public final class em {
                         i3 = i4;
                         f16 = f30 + fArr3[i25];
                         break;
-                    case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
                         i2 = i5;
                         path.rLineTo(fArr3[i2], DisplayHelper.DENSITY);
                         f13 += fArr3[i2];
@@ -277,7 +277,7 @@ public final class em {
                         c = c4;
                         i3 = i4;
                         break;
-                    case R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
                         i2 = i5;
                         int i26 = i2 + 1;
                         path.rLineTo(fArr3[i2], fArr3[i26]);
@@ -287,7 +287,7 @@ public final class em {
                         c = c4;
                         i3 = i4;
                         break;
-                    case R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
                         i2 = i5;
                         float f33 = fArr3[i2];
                         f13 += f33;
@@ -325,7 +325,7 @@ public final class em {
                         i3 = i4;
                         f16 = f35 + fArr3[i29];
                         break;
-                    case R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+                    case Rb.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
                         if (c3 == 'c' || c3 == 's' || c3 == 'C' || c3 == 'S') {
                             f5 = f16 - f10;
                             f17 = f13 - f9;
@@ -348,7 +348,7 @@ public final class em {
                         i3 = i4;
                         f16 = f38 + fArr3[i32];
                         break;
-                    case R.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
+                    case Rb.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
                         if (c3 == 'q' || c3 == 't' || c3 == 'Q' || c3 == 'T') {
                             f17 = f13 - f9;
                             f6 = f16 - f10;
@@ -368,7 +368,7 @@ public final class em {
                         c = c4;
                         i3 = i4;
                         break;
-                    case R.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
+                    case Rb.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
                         path.rLineTo(DisplayHelper.DENSITY, fArr3[i5]);
                         f16 += fArr3[i5];
                         i2 = i5;

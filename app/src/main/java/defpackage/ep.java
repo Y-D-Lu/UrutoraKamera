@@ -12,7 +12,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: ep  reason: default package */
 /* loaded from: classes.dex */
@@ -23,7 +23,7 @@ public class ep extends Drawable {
     private int f;
     private final int k;
     private final int l;
-    private final int g = R.styleable.AppCompatTheme_windowActionModeOverlay;
+    private final int g = Rb.styleable.AppCompatTheme_windowActionModeOverlay;
     public final Paint b = new Paint(3);
     private final Matrix h = new Matrix();
     final Rect e = new Rect();

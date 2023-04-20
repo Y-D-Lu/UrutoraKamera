@@ -6,18 +6,19 @@ import android.content.pm.ResolveInfo;
 import android.preference.PreferenceScreen;
 import android.widget.Toast;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import java.util.Comparator;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ids  reason: default package */
 /* loaded from: classes.dex */
@@ -41,7 +42,7 @@ public final class ids {
         if (ddfVar.k(ddl.ay)) {
             this.a = context;
         } else {
-            this.a = new us(context, (int) R.style.SocialAppSwitchPreferenceStyle_Legacy);
+            this.a = new us(context, (int) Rb.style.SocialAppSwitchPreferenceStyle_Legacy);
         }
         this.b = hubVar;
         this.c = hufVar;
@@ -69,9 +70,9 @@ public final class ids {
 
     public final int b(boolean z) {
         if (this.g.k(ddl.ay)) {
-            return ohh.X(this.a, org.codeaurora.snapcam.R.attr.colorPrimary, -16777216);
+            return ohh.X(this.a, R.attr.colorPrimary, -16777216);
         }
-        return this.a.getResources().getColor(true != z ? org.codeaurora.snapcam.R.color.settings_switch_button_background_disable : org.codeaurora.snapcam.R.color.camera_google_blue_600, null);
+        return this.a.getResources().getColor(true != z ? R.color.settings_switch_button_background_disable : R.color.camera_google_blue_600, null);
     }
 
     public final oom c(List list, List list2) {
@@ -98,7 +99,7 @@ public final class ids {
     }
 
     public final String d(boolean z) {
-        return this.a.getResources().getString(true != z ? org.codeaurora.snapcam.R.string.social_share_off : org.codeaurora.snapcam.R.string.social_share_on);
+        return this.a.getResources().getString(true != z ? R.string.social_share_off : R.string.social_share_on);
     }
 
     public final void e(ManagedSwitchPreference managedSwitchPreference, boolean z) {
@@ -117,11 +118,11 @@ public final class ids {
 
     public final void g() {
         int a = a();
-        String a2 = mip.ey(org.codeaurora.snapcam.R.plurals.social_apps_selected, a, Integer.valueOf(a)).a(this.a.getResources());
+        String a2 = mip.ey(R.plurals.social_apps_selected, a, Integer.valueOf(a)).a(this.a.getResources());
         ManagedSwitchPreference managedSwitchPreference = (ManagedSwitchPreference) this.m.findPreference(htu.z.a);
         int i = -1;
         if (this.g.k(ddl.ay)) {
-            i = ohh.X(this.a, org.codeaurora.snapcam.R.attr.colorOnPrimary, -1);
+            i = ohh.X(this.a, R.attr.colorOnPrimary, -1);
         }
         Integer valueOf = Integer.valueOf(i);
         managedSwitchPreference.k = a2;

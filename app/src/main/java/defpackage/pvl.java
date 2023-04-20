@@ -346,7 +346,7 @@ public final class pvl implements pvn {
     /* JADX WARN: Code restructure failed: missing block: B:71:0x0148, code lost:
         r3 = defpackage.pvo.SERVER_ERROR;
         r4 = r8.h.b();
-        r8 = new java.lang.StringBuilder((int) com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedWidthMinor);
+        r8 = new java.lang.StringBuilder((int) com.google.android.apps.camera.bottombar.Rb.styleable.AppCompatTheme_windowFixedWidthMinor);
         r8.append("The server lost bytes that were previously committed. Our offset: ");
         r8.append(r4);
         r8.append(", server offset: ");

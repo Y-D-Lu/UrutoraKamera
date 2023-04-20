@@ -7,7 +7,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 
 import com.Helper;
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.googlex.gcam.BurstSpec;
 
 import java.util.ArrayList;
@@ -293,7 +293,7 @@ public final class fvq {
             jrl jrlVar2 = jrl.UNINITIALIZED;
             switch (jrlVar.ordinal()) {
                 case 3:
-                    i = R.styleable.AppCompatTheme_switchStyle;
+                    i = Rb.styleable.AppCompatTheme_switchStyle;
                     break;
                 case 6:
                     i = 3;

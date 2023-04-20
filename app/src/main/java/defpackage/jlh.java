@@ -2,7 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 
 import java.util.ArrayList;
@@ -349,7 +349,7 @@ public final class jlh implements jlb {
         jrl jrlVar = jrl.UNINITIALIZED;
         switch (jkcVar.ordinal()) {
             case 0:
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 if (htiVar == hti.AUTO) {
                     this.a.setMode(jkc.AUTOTIMER_IDLE, htiVar, this.j, false);
                     return;

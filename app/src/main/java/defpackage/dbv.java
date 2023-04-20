@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.ScheduledExecutorService;
 

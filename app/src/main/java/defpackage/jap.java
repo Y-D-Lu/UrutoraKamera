@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jap  reason: default package */
 /* loaded from: classes.dex */

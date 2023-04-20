@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: rx  reason: default package */
 /* loaded from: classes2.dex */

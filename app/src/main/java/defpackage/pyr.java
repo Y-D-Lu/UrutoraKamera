@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: pyr  reason: default package */
 /* loaded from: classes2.dex */
@@ -40,7 +40,7 @@ public final class pyr implements qkg, pyn {
                     if (obj3 != obj2 && obj3 != obj) {
                         String valueOf = String.valueOf(obj3);
                         String valueOf2 = String.valueOf(obj);
-                        StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + R.styleable.AppCompatTheme_windowActionBarOverlay + String.valueOf(valueOf2).length());
+                        StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + Rb.styleable.AppCompatTheme_windowActionBarOverlay + String.valueOf(valueOf2).length());
                         sb.append("Scoped provider was invoked recursively returning different results: ");
                         sb.append(valueOf);
                         sb.append(" & ");

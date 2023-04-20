@@ -25,6 +25,9 @@ import android.view.ViewParent;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
 import android.view.animation.Interpolator;
+import android.view.ny;
+import android.view.qc;
+import android.view.qd;
 import android.widget.EdgeEffect;
 import android.widget.OverScroller;
 
@@ -36,6 +39,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.arsenals.ultracamera.R;
 import defpackage.aby;
 import defpackage.fp;
 import defpackage.fq;
@@ -47,7 +51,6 @@ import defpackage.gl;
 import defpackage.jt;
 import defpackage.mm;
 import defpackage.mn;
-import android.view.ny;
 import defpackage.or;
 import defpackage.ou;
 import defpackage.ow;
@@ -56,8 +59,6 @@ import defpackage.pu;
 import defpackage.px;
 import defpackage.py;
 import defpackage.pz;
-import android.view.qc;
-import android.view.qd;
 import defpackage.qe;
 import defpackage.qf;
 import defpackage.qg;
@@ -98,7 +99,7 @@ public class RecyclerView extends ViewGroup implements fp {
     public boolean O;
     public qu P;
     public final int[] Q;
-    final List R;
+    final List varR;
     private final qk V;
     private final Rect W;
     private pz aA;
@@ -160,7 +161,7 @@ public class RecyclerView extends ViewGroup implements fp {
     }
 
     public RecyclerView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, org.codeaurora.snapcam.R.attr.recyclerViewStyle);
+        this(context, attributeSet, R.attr.recyclerViewStyle);
     }
 
     public RecyclerView(Context context, AttributeSet attributeSet, int i) {
@@ -199,7 +200,7 @@ public class RecyclerView extends ViewGroup implements fp {
         this.au = new int[2];
         this.av = new int[2];
         this.Q = new int[2];
-        this.R = new ArrayList();
+        this.varR = new ArrayList();
         this.aw = new pt(this, 0);
         this.ay = 0;
         this.az = 0;
@@ -241,7 +242,7 @@ public class RecyclerView extends ViewGroup implements fp {
             }
             Resources resources = getContext().getResources();
             str = string;
-            new or(this, stateListDrawable, drawable, stateListDrawable2, drawable2, resources.getDimensionPixelSize(org.codeaurora.snapcam.R.dimen.fastscroll_default_thickness), resources.getDimensionPixelSize(org.codeaurora.snapcam.R.dimen.fastscroll_minimum_range), resources.getDimensionPixelOffset(org.codeaurora.snapcam.R.dimen.fastscroll_margin));
+            new or(this, stateListDrawable, drawable, stateListDrawable2, drawable2, resources.getDimensionPixelSize(R.dimen.fastscroll_default_thickness), resources.getDimensionPixelSize(R.dimen.fastscroll_minimum_range), resources.getDimensionPixelOffset(R.dimen.fastscroll_margin));
         } else {
             str = string;
         }
@@ -928,14 +929,14 @@ public class RecyclerView extends ViewGroup implements fp {
                 obtain.setContentChangeTypes(i3);
                 sendAccessibilityEventUnchecked(obtain);
             }
-            for (int size = this.R.size() - 1; size >= 0; size--) {
-                qs qsVar = (qs) this.R.get(size);
+            for (int size = this.varR.size() - 1; size >= 0; size--) {
+                qs qsVar = (qs) this.varR.get(size);
                 if (qsVar.a.getParent() == this && !qsVar.z() && (i = qsVar.p) != -1) {
                     gl.M(qsVar.a, i);
                     qsVar.p = -1;
                 }
             }
-            this.R.clear();
+            this.varR.clear();
         }
     }
 
@@ -1243,7 +1244,7 @@ public class RecyclerView extends ViewGroup implements fp {
             return;
         }
         qsVar.p = i;
-        this.R.add(qsVar);
+        this.varR.add(qsVar);
     }
 
     public final void ak(int i, int i2, boolean z) {
@@ -1795,7 +1796,7 @@ public class RecyclerView extends ViewGroup implements fp {
         if (qcVar != null) {
             qcVar.bm(this);
         }
-        this.R.clear();
+        this.varR.clear();
         removeCallbacks(this.aw);
         do {
         } while (sb.a.a() != null);

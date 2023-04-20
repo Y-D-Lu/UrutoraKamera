@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.hdrindicator.DisplayHelper;
 
@@ -29,7 +29,7 @@ public final class LocationRequest extends kno implements ReflectedParcelable {
 
     @Deprecated
     public LocationRequest() {
-        this(R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 3600000L, 600000L, false, Long.MAX_VALUE, Integer.MAX_VALUE, DisplayHelper.DENSITY, 0L, false);
+        this(Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 3600000L, 600000L, false, Long.MAX_VALUE, Integer.MAX_VALUE, DisplayHelper.DENSITY, 0L, false);
     }
 
     public LocationRequest(int i, long j, long j2, boolean z, long j3, int i2, float f, long j4, boolean z2) {
@@ -69,21 +69,21 @@ public final class LocationRequest extends kno implements ReflectedParcelable {
         StringBuilder sb = new StringBuilder();
         sb.append("Request[");
         switch (this.a) {
-            case R.styleable.AppCompatTheme_spinnerStyle /* 100 */:
+            case Rb.styleable.AppCompatTheme_spinnerStyle /* 100 */:
                 str = "PRIORITY_HIGH_ACCURACY";
                 break;
-            case R.styleable.AppCompatTheme_switchStyle /* 101 */:
-            case R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+            case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
             default:
                 str = "???";
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
                 str = "PRIORITY_BALANCED_POWER_ACCURACY";
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
                 str = "PRIORITY_LOW_POWER";
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
                 str = "PRIORITY_NO_POWER";
                 break;
         }

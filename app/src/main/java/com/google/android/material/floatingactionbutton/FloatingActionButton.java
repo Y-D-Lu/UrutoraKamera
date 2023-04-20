@@ -28,7 +28,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.lens.sdk.LensApi;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.List;
 

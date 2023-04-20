@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: nbt  reason: default package */
 /* loaded from: classes2.dex */
@@ -58,7 +58,7 @@ public final class nbt implements mwi {
         String valueOf = String.valueOf(this.d);
         boolean z = this.b;
         int length = a.length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_tooltipForegroundColor + String.valueOf(valueOf).length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_tooltipForegroundColor + String.valueOf(valueOf).length());
         sb.append("TikTokTraceConfigurations{enablement=");
         sb.append(a);
         sb.append(", rateLimitPerSecond=");

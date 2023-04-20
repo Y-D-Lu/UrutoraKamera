@@ -7,7 +7,7 @@ import android.widget.FrameLayout;
 
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jna  reason: default package */
 /* loaded from: classes2.dex */

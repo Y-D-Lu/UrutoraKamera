@@ -3,7 +3,7 @@ package defpackage;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: gla  reason: default package */
 /* loaded from: classes.dex */

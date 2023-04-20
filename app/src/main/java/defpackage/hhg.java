@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -88,7 +88,7 @@ public final class hhg implements pys {
                 ((pht) this.c.mo37get()).d(hgxVar, pgr.a);
                 return hgxVar;
             case 2:
-                return new hia(mip.bR("BckndCritEx", -8), mip.bR("BckndFastEx", 8), mip.bR("BckndAvgEx", 11), mip.bR("BckndSlowEx", 9), new hjd(), (hhl) this.b.mo37get(), (ljf) this.c.mo37get(), ((emn) this.a).mo37get().getDimensionPixelSize(R.dimen.rounded_thumbnail_diameter_max));
+                return new hia(mip.bR("BckndCritEx", -8), mip.bR("BckndFastEx", 8), mip.bR("BckndAvgEx", 11), mip.bR("BckndSlowEx", 9), new hjd(), (hhl) this.b.mo37get(), (ljf) this.c.mo37get(), ((emn) this.a).mo37get().getDimensionPixelSize(Rb.dimen.rounded_thumbnail_diameter_max));
             case 3:
                 return new hnv(((emd) this.b).mo37get(), (brc) this.a.mo37get(), ((dgb) this.c).mo37get());
             case 4:

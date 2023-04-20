@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -174,7 +174,7 @@ public final class ato {
         att attVar2 = attVar != null ? new att(gk.h(attVar.b(), null).a) : new att();
         if (this.d.matcher(str2).find() || this.d.matcher(str4).find()) {
             try {
-                throw new ass("Alias and actual property names must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                throw new ass("Alias and actual property names must be simple", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
             } catch (ass e) {
                 e.printStackTrace();
             }
@@ -183,14 +183,14 @@ public final class ato {
         String a2 = a(str3);
         if (a == null) {
             try {
-                throw new ass("Alias namespace is not registered", R.styleable.AppCompatTheme_switchStyle);
+                throw new ass("Alias namespace is not registered", Rb.styleable.AppCompatTheme_switchStyle);
             } catch (ass e) {
                 e.printStackTrace();
             }
         }
         if (a2 == null) {
             try {
-                throw new ass("Actual namespace is not registered", R.styleable.AppCompatTheme_switchStyle);
+                throw new ass("Actual namespace is not registered", Rb.styleable.AppCompatTheme_switchStyle);
             } catch (ass e) {
                 e.printStackTrace();
             }

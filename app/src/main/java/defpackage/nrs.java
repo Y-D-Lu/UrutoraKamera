@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker", c = "F250AutoWorker.kt", d = "enqueueResourcesToAutoUpload", e = {R.styleable.AppCompatTheme_editTextColor, R.styleable.AppCompatTheme_homeAsUpIndicator})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker", c = "F250AutoWorker.kt", d = "enqueueResourcesToAutoUpload", e = {Rb.styleable.AppCompatTheme_editTextColor, Rb.styleable.AppCompatTheme_homeAsUpIndicator})
 /* renamed from: nrs  reason: default package */
 /* loaded from: classes2.dex */
 public final class nrs extends qlu {

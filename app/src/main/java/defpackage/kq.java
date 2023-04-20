@@ -10,7 +10,7 @@ import android.view.ViewTreeObserver;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.List;

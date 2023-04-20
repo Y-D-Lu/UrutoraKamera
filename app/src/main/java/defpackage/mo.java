@@ -8,7 +8,7 @@ import android.view.inputmethod.InputConnection;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListAdapter;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: mo  reason: default package */
 /* loaded from: classes.dex */

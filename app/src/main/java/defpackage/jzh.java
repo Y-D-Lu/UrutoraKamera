@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jzh  reason: default package */
 /* loaded from: classes2.dex */

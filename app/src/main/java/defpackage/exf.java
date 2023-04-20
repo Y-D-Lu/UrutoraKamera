@@ -13,7 +13,7 @@ public final class exf extends jlj {
     }
 
     private final boolean a() {
-        return ((hti) this.a.J.fA()) != hti.AUTO && !this.a.v.e() && this.a.L && !(this.a.R.g() && ((Boolean) ((ima) this.a.R.c()).a().fA()).booleanValue());
+        return ((hti) this.a.J.fA()) != hti.AUTO && !this.a.v.e() && this.a.L && !(this.a.varR.g() && ((Boolean) ((ima) this.a.varR.c()).a().fA()).booleanValue());
     }
 
     @Override // defpackage.jlj, defpackage.jli

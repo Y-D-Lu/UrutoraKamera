@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.google.android.apps.camera.ui.widget.TracedFrameLayout;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jah  reason: default package */
 /* loaded from: classes.dex */

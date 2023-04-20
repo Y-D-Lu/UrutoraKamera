@@ -5,7 +5,7 @@ import android.hardware.camera2.CameraManager;
 import android.os.Handler;
 import android.util.Log;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;
@@ -136,7 +136,7 @@ public final class lkj implements lke {
                     break;
                 case 4:
                     String str4 = this.a;
-                    StringBuilder sb3 = new StringBuilder(str4.length() + R.styleable.AppCompatTheme_switchStyle);
+                    StringBuilder sb3 = new StringBuilder(str4.length() + Rb.styleable.AppCompatTheme_switchStyle);
                     sb3.append("Failed to open camera device ");
                     sb3.append(str4);
                     sb3.append(" The camera device in use due to a higher priority process. Retrying ...");

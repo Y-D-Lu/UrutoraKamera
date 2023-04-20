@@ -10,7 +10,7 @@ import androidx.preference.TwoStatePreference;
 
 import com.google.android.apps.camera.legacy.app.app.CameraApp;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.agm;
 import defpackage.axt;

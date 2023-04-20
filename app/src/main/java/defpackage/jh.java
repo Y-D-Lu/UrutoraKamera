@@ -8,7 +8,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.Window;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 

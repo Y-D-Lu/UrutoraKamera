@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.widget.Checkable;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.gl;
 import defpackage.mw;

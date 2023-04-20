@@ -3,7 +3,7 @@ package com.google.android.material.progressindicator;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.gl;
 import defpackage.oae;

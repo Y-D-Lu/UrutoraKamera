@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.GregorianCalendar;
 
@@ -21,7 +21,7 @@ public final class ati implements ast {
         atlVar.g().b(atxVar);
         if (atlVar.g().l()) {
             if (obj != null && obj.toString().length() > 0) {
-                throw new ass("Composite nodes can't have values", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                throw new ass("Composite nodes can't have values", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
             }
             atlVar.p();
             return;
@@ -176,27 +176,27 @@ public final class ati implements ast {
             atl e = gk.e(this.a, d, false, null);
             if (e != null) {
                 if (!e.g().d()) {
-                    throw new ass("The named property is not an array", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    throw new ass("The named property is not an array", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                 }
             } else if (!h.d()) {
-                throw new ass("Explicit arrayOptions required to create new array", R.styleable.AppCompatTheme_textAppearanceListItem);
+                throw new ass("Explicit arrayOptions required to create new array", Rb.styleable.AppCompatTheme_textAppearanceListItem);
             } else {
                 e = gk.e(this.a, d, true, h);
                 if (e == null) {
-                    throw new ass("Failure creating array node", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    throw new ass("Failure creating array node", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                 }
             }
             atl atlVar = new atl("[]", null);
             atx h2 = gk.h(atxVar2, str2);
             int a = e.a() + 1;
             if (a <= 0) {
-                throw new ass("Array index out of bounds", R.styleable.AppCompatTheme_textAppearanceListItemSecondary);
+                throw new ass("Array index out of bounds", Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary);
             }
             e.l(a, atlVar);
             m(atlVar, str2, h2);
             return;
         }
-        throw new ass("Only array form flags allowed for arrayOptions", R.styleable.AppCompatTheme_textAppearanceListItem);
+        throw new ass("Only array form flags allowed for arrayOptions", Rb.styleable.AppCompatTheme_textAppearanceListItem);
     }
 
     @Override // defpackage.ast
@@ -275,7 +275,7 @@ public final class ati implements ast {
         return;
      */
     /* JADX WARN: Code restructure failed: missing block: B:123:0x0226, code lost:
-        throw new defpackage.ass("Localized text array is not alt-text", com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        throw new defpackage.ass("Localized text array is not alt-text", com.google.android.apps.camera.bottombar.Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
      */
     /* JADX WARN: Code restructure failed: missing block: B:146:?, code lost:
         return;
@@ -360,10 +360,10 @@ public final class ati implements ast {
         r17 = r11;
      */
     /* JADX WARN: Code restructure failed: missing block: B:58:0x0134, code lost:
-        throw new defpackage.ass("Alt-text array item has no language qualifier", com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        throw new defpackage.ass("Alt-text array item has no language qualifier", com.google.android.apps.camera.bottombar.Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
      */
     /* JADX WARN: Code restructure failed: missing block: B:60:0x013e, code lost:
-        throw new defpackage.ass("Alt-text array item is not simple", com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+        throw new defpackage.ass("Alt-text array item is not simple", com.google.android.apps.camera.bottombar.Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
      */
     /* JADX WARN: Code restructure failed: missing block: B:61:0x013f, code lost:
         if (r15 != 1) goto L132;
@@ -500,7 +500,7 @@ public final class ati implements ast {
         atl e = gk.e(this.a, hn.d(str, str2), false, null);
         if (e != null) {
             if (i != 0 && e.g().l()) {
-                throw new ass("Property must be simple when a value type is requested", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                throw new ass("Property must be simple when a value type is requested", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
             }
             return n(i, e);
         }

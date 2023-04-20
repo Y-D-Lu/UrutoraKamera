@@ -3,7 +3,7 @@ package defpackage;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: iee  reason: default package */

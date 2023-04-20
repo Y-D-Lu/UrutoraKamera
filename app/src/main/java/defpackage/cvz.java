@@ -5,7 +5,9 @@ import android.content.Context;
 import android.support.v8.renderscript.ScriptIntrinsicBLAS;
 import android.widget.TextView;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: cvz  reason: default package */
 /* loaded from: classes.dex */
@@ -25,7 +27,7 @@ public final class cvz implements cwm {
         this.e = fjsVar;
         this.d = jtxVar;
         this.f = lisVar.a("FallbackHelper");
-        this.g = true != ddfVar.k(ddl.ay) ? 0 : R.style.Theme_Camera_MaterialAlertDialog;
+        this.g = true != ddfVar.k(ddl.ay) ? 0 : Rb.style.Theme_Camera_MaterialAlertDialog;
     }
 
     private final Runnable g(final lwd lwdVar, final int i, final int i2, final int i3) {
@@ -50,20 +52,20 @@ public final class cvz implements cwm {
     @Override // defpackage.cwm
     public final ie a(int i, int i2, lwd lwdVar) {
         nyj nyjVar = new nyj(this.a, this.g);
-        nyjVar.t(this.a.getResources().getString(org.codeaurora.snapcam.R.string.camera_issue_title));
-        nyjVar.u(akf.d(org.codeaurora.snapcam.R.string.camera_issue_reboot_message, this.a, g(lwdVar, i, i2, 3)));
-        nyjVar.q(org.codeaurora.snapcam.R.string.camera_fallback_close_app, new cvx(this, lwdVar, i, i2, 1));
-        nyjVar.n(org.codeaurora.snapcam.R.string.continue_anyway, new cvx(this, lwdVar, i, i2, 0));
+        nyjVar.t(this.a.getResources().getString(R.string.camera_issue_title));
+        nyjVar.u(akf.d(R.string.camera_issue_reboot_message, this.a, g(lwdVar, i, i2, 3)));
+        nyjVar.q(R.string.camera_fallback_close_app, new cvx(this, lwdVar, i, i2, 1));
+        nyjVar.n(R.string.continue_anyway, new cvx(this, lwdVar, i, i2, 0));
         return nyjVar.b();
     }
 
     @Override // defpackage.cwm
     public final ie b(int i, int i2, lwd lwdVar) {
         nyj nyjVar = new nyj(this.a, this.g);
-        nyjVar.t(this.a.getResources().getString(org.codeaurora.snapcam.R.string.camera_issue_title));
-        nyjVar.u(akf.d(org.codeaurora.snapcam.R.string.camera_issue_restart_message, this.a, g(lwdVar, i, i2, 5)));
-        nyjVar.q(org.codeaurora.snapcam.R.string.camera_fallback_close_app, new cvx(this, lwdVar, i, i2, 2));
-        nyjVar.n(org.codeaurora.snapcam.R.string.continue_anyway, new cvx(this, lwdVar, i, i2, 3));
+        nyjVar.t(this.a.getResources().getString(R.string.camera_issue_title));
+        nyjVar.u(akf.d(R.string.camera_issue_restart_message, this.a, g(lwdVar, i, i2, 5)));
+        nyjVar.q(R.string.camera_fallback_close_app, new cvx(this, lwdVar, i, i2, 2));
+        nyjVar.n(R.string.continue_anyway, new cvx(this, lwdVar, i, i2, 3));
         return nyjVar.b();
     }
 
@@ -71,11 +73,11 @@ public final class cvz implements cwm {
     public final ie c(int i, int i2, lwd lwdVar) {
         nyj nyjVar = new nyj(this.a, this.g);
         TextView c = akf.c(this.a);
-        c.setText(org.codeaurora.snapcam.R.string.camera_issue_contact_message);
-        nyjVar.t(this.a.getResources().getString(org.codeaurora.snapcam.R.string.camera_issue_title));
+        c.setText(R.string.camera_issue_contact_message);
+        nyjVar.t(this.a.getResources().getString(R.string.camera_issue_title));
         nyjVar.u(c);
-        nyjVar.q(org.codeaurora.snapcam.R.string.contact_us, new cvx(this, lwdVar, i, i2, 4));
-        nyjVar.n(org.codeaurora.snapcam.R.string.continue_anyway, new cvx(this, lwdVar, i, i2, 5));
+        nyjVar.q(R.string.contact_us, new cvx(this, lwdVar, i, i2, 4));
+        nyjVar.n(R.string.continue_anyway, new cvx(this, lwdVar, i, i2, 5));
         return nyjVar.b();
     }
 

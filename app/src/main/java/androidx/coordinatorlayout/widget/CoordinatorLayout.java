@@ -17,9 +17,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
@@ -101,9 +102,9 @@ public class CoordinatorLayout extends ViewGroup implements fr, fs {
         this.l = new int[2];
         this.m = new int[2];
         this.w = new px();
-        TypedArray obtainStyledAttributes = i2 == 0 ? context.obtainStyledAttributes(attributeSet, aab.a, 0, com.google.android.apps.camera.bottombar.R.style.Widget_Support_CoordinatorLayout) : context.obtainStyledAttributes(attributeSet, aab.a, i2, 0);
+        TypedArray obtainStyledAttributes = i2 == 0 ? context.obtainStyledAttributes(attributeSet, aab.a, 0, Rb.style.Widget_Support_CoordinatorLayout) : context.obtainStyledAttributes(attributeSet, aab.a, i2, 0);
         if (i2 == 0) {
-            gl.E(this, context, aab.a, attributeSet, obtainStyledAttributes, 0, com.google.android.apps.camera.bottombar.R.style.Widget_Support_CoordinatorLayout);
+            gl.E(this, context, aab.a, attributeSet, obtainStyledAttributes, 0, Rb.style.Widget_Support_CoordinatorLayout);
         } else {
             gl.E(this, context, aab.a, attributeSet, obtainStyledAttributes, i2, 0);
         }
@@ -375,7 +376,7 @@ public class CoordinatorLayout extends ViewGroup implements fr, fs {
             case 16:
                 height = (rect.height() / 2) + rect.top;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 height = rect.bottom;
                 break;
             default:
@@ -396,7 +397,7 @@ public class CoordinatorLayout extends ViewGroup implements fr, fs {
             case 16:
                 height -= i4 / 2;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 break;
             default:
                 height -= i4;
@@ -713,10 +714,10 @@ public class CoordinatorLayout extends ViewGroup implements fr, fs {
             if (aahVar4.g != 0 && !s2.isEmpty()) {
                 int absoluteGravity = Gravity.getAbsoluteGravity(aahVar4.g, f);
                 switch (absoluteGravity & 112) {
-                    case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                    case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                         s.top = Math.max(s.top, s2.bottom);
                         break;
-                    case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                         s.bottom = Math.max(s.bottom, getHeight() - s2.top);
                         break;
                 }
@@ -894,7 +895,7 @@ public class CoordinatorLayout extends ViewGroup implements fr, fs {
                 case 16:
                     i3 = measuredHeight2 / 2;
                     break;
-                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                     i3 = measuredHeight2;
                     break;
                 default:

@@ -9,7 +9,7 @@ import android.os.ParcelFileDescriptor;
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.IOException;
 import java.util.concurrent.Executor;

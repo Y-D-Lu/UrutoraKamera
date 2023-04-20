@@ -5,7 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 
 import com.google.android.apps.camera.zoomui.ZoomUi;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: kan  reason: default package */
 /* loaded from: classes2.dex */

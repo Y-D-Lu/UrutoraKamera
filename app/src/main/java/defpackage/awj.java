@@ -2,7 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: awj  reason: default package */
@@ -27,6 +27,6 @@ public final class awj implements Runnable {
         if (handler != null && awmVar != null) {
             awoVar = new awo(handler, awmVar);
         }
-        c.obtainMessage(R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, awoVar).sendToTarget();
+        c.obtainMessage(Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu, awoVar).sendToTarget();
     }
 }

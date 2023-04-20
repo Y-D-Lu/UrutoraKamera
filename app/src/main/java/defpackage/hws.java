@@ -1,6 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: hws  reason: default package */
 /* loaded from: classes.dex */
@@ -19,12 +21,12 @@ public final /* synthetic */ class hws implements Runnable {
             case 0:
                 hwa hwaVar = (hwa) this.a.b.mo37get();
                 if (hwaVar.c == null) {
-                    nyj nyjVar = new nyj(hwaVar.a, true != hwaVar.b.k(ddl.ay) ? 0 : R.style.Theme_Camera_MaterialAlertDialog_BigTitle_Centered);
-                    nyjVar.s(org.codeaurora.snapcam.R.string.installing_updates_dialog_title);
-                    nyjVar.l(org.codeaurora.snapcam.R.string.installing_updates_dialog_message);
+                    nyj nyjVar = new nyj(hwaVar.a, true != hwaVar.b.k(ddl.ay) ? 0 : Rb.style.Theme_Camera_MaterialAlertDialog_BigTitle_Centered);
+                    nyjVar.s(R.string.installing_updates_dialog_title);
+                    nyjVar.l(R.string.installing_updates_dialog_message);
                     hz hzVar = nyjVar.a;
                     hzVar.r = null;
-                    hzVar.q = org.codeaurora.snapcam.R.layout.installing_update_dialog;
+                    hzVar.q = R.layout.installing_update_dialog;
                     nyjVar.k(false);
                     hwaVar.c = nyjVar.b();
                 }

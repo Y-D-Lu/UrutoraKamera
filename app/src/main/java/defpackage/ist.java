@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.view.ViewGroup;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.lang.ref.WeakReference;
 import java.util.concurrent.atomic.AtomicBoolean;

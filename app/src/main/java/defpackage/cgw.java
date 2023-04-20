@@ -2,7 +2,7 @@ package defpackage;
 
 import android.graphics.Rect;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.time.temporal.ChronoUnit;
 import java.util.List;

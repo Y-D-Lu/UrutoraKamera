@@ -13,7 +13,7 @@ import android.widget.FrameLayout;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.dmf;
 

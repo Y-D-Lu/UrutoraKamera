@@ -6,7 +6,7 @@ import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.dd;
 import defpackage.ih;

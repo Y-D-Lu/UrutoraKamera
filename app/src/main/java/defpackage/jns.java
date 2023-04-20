@@ -16,7 +16,7 @@ import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jns  reason: default package */
 /* loaded from: classes2.dex */

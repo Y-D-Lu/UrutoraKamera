@@ -2,10 +2,10 @@ package defpackage;
 
 import android.support.v8.renderscript.ScriptIntrinsicBLAS;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-@qlw(b = "androidx.camera.camera2.pipe.compat.VirtualCameraManager$requestLoop$2", c = "VirtualCameraManager.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_selectableItemBackground, R.styleable.AppCompatTheme_textColorAlertDialogListItem, ScriptIntrinsicBLAS.UNIT, 175, 183, 189})
+@qlw(b = "androidx.camera.camera2.pipe.compat.VirtualCameraManager$requestLoop$2", c = "VirtualCameraManager.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_selectableItemBackground, Rb.styleable.AppCompatTheme_textColorAlertDialogListItem, ScriptIntrinsicBLAS.UNIT, 175, 183, 189})
 /* renamed from: vz  reason: default package */
 /* loaded from: classes2.dex */
 public final class vz extends qmb implements qmy {

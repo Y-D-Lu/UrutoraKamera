@@ -3,7 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.view.View;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 

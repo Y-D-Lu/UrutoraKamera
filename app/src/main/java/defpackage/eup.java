@@ -2,7 +2,7 @@ package defpackage;
 
 import android.graphics.Bitmap;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: eup  reason: default package */

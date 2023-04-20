@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker", c = "F250AutoWorker.kt", d = "doWork", e = {R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker", c = "F250AutoWorker.kt", d = "doWork", e = {Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle})
 /* renamed from: nrp  reason: default package */
 /* loaded from: classes2.dex */
 public final class nrp extends qlu {

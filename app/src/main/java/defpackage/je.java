@@ -2,7 +2,7 @@ package defpackage;
 
 import android.view.Window;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: je  reason: default package */
@@ -24,7 +24,7 @@ public final class je implements lj {
         this.a.a.f();
         Window.Callback callback = this.a.c;
         if (callback != null) {
-            callback.onPanelClosed(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
+            callback.onPanelClosed(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
         }
         this.b = false;
     }
@@ -33,7 +33,7 @@ public final class je implements lj {
     public final boolean b(kw kwVar) {
         Window.Callback callback = this.a.c;
         if (callback != null) {
-            callback.onMenuOpened(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
+            callback.onMenuOpened(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
             return true;
         }
         return false;

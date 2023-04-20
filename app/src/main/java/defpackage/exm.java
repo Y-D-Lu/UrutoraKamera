@@ -5,7 +5,7 @@ import android.os.Looper;
 
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: exm  reason: default package */

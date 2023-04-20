@@ -9,7 +9,7 @@ import com.google.android.apps.camera.ui.views.FrontLensIndicatorOverlay;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.uiutils.ReplaceableView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 @Deprecated
 /* renamed from: jpm  reason: default package */

@@ -16,6 +16,7 @@ import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
 import com.mdmitriev.auxlenses.AuxButtonsLayout;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
@@ -23,10 +24,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
-
-import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Collectors;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: gtg  reason: default package */
 /* loaded from: classes.dex */
@@ -49,7 +49,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
     public final imf O;
     public final dqa P;
     public final gtk Q;
-    public final gtk R;
+    public final gtk varR;
     public final gtk S;
     public final gtk T;
     public final gtk U;
@@ -190,7 +190,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
         this.O = imfVar;
         this.P = dqaVar;
         this.Q = gspVar.b(false);
-        this.R = gspVar.b(ddfVar.k(ddl.aP));
+        this.varR = gspVar.b(ddfVar.k(ddl.aP));
         this.S = gspVar.b;
         this.T = gspVar.c;
         this.U = gspVar.d;
@@ -576,7 +576,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                         final elw elwVar = gtgVar.aY;
                         lar.a();
                         elwVar.i();
-                        AlertDialog.Builder onDismissListener = new AlertDialog.Builder(optionsMenuContainer.k, org.codeaurora.snapcam.R.style.DialogTutorialStyle).setTitle(optionsMenuContainer.getResources().getString(org.codeaurora.snapcam.R.string.micro_tutorial_title)).setMessage(optionsMenuContainer.getResources().getString(org.codeaurora.snapcam.R.string.micro_tutorial_text)).setCancelable(false).setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: gub
+                        AlertDialog.Builder onDismissListener = new AlertDialog.Builder(optionsMenuContainer.k, R.style.DialogTutorialStyle).setTitle(optionsMenuContainer.getResources().getString(R.string.micro_tutorial_title)).setMessage(optionsMenuContainer.getResources().getString(R.string.micro_tutorial_text)).setCancelable(false).setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: gub
                             @Override // android.content.DialogInterface.OnDismissListener
                             public final void onDismiss(DialogInterface dialogInterface) {
                                 OptionsMenuContainer optionsMenuContainer2 = optionsMenuContainer;
@@ -586,7 +586,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                                 }
                             }
                         });
-                        onDismissListener.setNegativeButton(optionsMenuContainer.getResources().getString(org.codeaurora.snapcam.R.string.infopane_learn_more), new DialogInterface.OnClickListener() { // from class: gua
+                        onDismissListener.setNegativeButton(optionsMenuContainer.getResources().getString(R.string.infopane_learn_more), new DialogInterface.OnClickListener() { // from class: gua
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i) {
                                 switch (-1) {
@@ -606,7 +606,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                                 }
                             }
                         });
-                        onDismissListener.setPositiveButton(optionsMenuContainer.getResources().getString(org.codeaurora.snapcam.R.string.infopane_got_it), new DialogInterface.OnClickListener() { // from class: gua
+                        onDismissListener.setPositiveButton(optionsMenuContainer.getResources().getString(R.string.infopane_got_it), new DialogInterface.OnClickListener() { // from class: gua
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i) {
                                 switch (-1) {
@@ -634,7 +634,7 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                 if (gtkVar2.a != gtm.MICROPHONE || !obj.equals(hth.EXT_BLUETOOTH)) {
                     return;
                 }
-                gtgVar.aT.c(gtm.MICROPHONE, gtgVar.aV.getResources().getString(org.codeaurora.snapcam.R.string.mic_input_ext_bluetooth_connecting));
+                gtgVar.aT.c(gtm.MICROPHONE, gtgVar.aV.getResources().getString(R.string.mic_input_ext_bluetooth_connecting));
             }
         });
         if (gtwVar != null) {
@@ -712,11 +712,11 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                             lar.a();
                             if (fvnVar.d == null) {
                                 FrameLayout frameLayout = new FrameLayout(fvnVar.b);
-                                View.inflate(fvnVar.b, true != fvnVar.c.k(ddl.ay) ? org.codeaurora.snapcam.R.layout.motionphoto_disabled_sheet_legacy : org.codeaurora.snapcam.R.layout.motionphoto_disabled_sheet, frameLayout);
-                                ((Button) frameLayout.findViewById(org.codeaurora.snapcam.R.id.what_is_button)).setOnClickListener(new fvm(fvnVar, 1));
+                                View.inflate(fvnVar.b, true != fvnVar.c.k(ddl.ay) ? R.layout.motionphoto_disabled_sheet_legacy : R.layout.motionphoto_disabled_sheet, frameLayout);
+                                ((Button) frameLayout.findViewById(R.id.what_is_button)).setOnClickListener(new fvm(fvnVar, 1));
                                 fvnVar.d = frameLayout;
                             }
-                            fvnVar.a.f(7, org.codeaurora.snapcam.R.string.motion_photos_not_available_title, fvnVar.d);
+                            fvnVar.a.f(7, R.string.motion_photos_not_available_title, fvnVar.d);
                             return;
                     }
                 }
@@ -745,11 +745,11 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                             lar.a();
                             if (fvnVar.d == null) {
                                 FrameLayout frameLayout = new FrameLayout(fvnVar.b);
-                                View.inflate(fvnVar.b, true != fvnVar.c.k(ddl.ay) ? org.codeaurora.snapcam.R.layout.motionphoto_disabled_sheet_legacy : org.codeaurora.snapcam.R.layout.motionphoto_disabled_sheet, frameLayout);
-                                ((Button) frameLayout.findViewById(org.codeaurora.snapcam.R.id.what_is_button)).setOnClickListener(new fvm(fvnVar, 1));
+                                View.inflate(fvnVar.b, true != fvnVar.c.k(ddl.ay) ? R.layout.motionphoto_disabled_sheet_legacy : R.layout.motionphoto_disabled_sheet, frameLayout);
+                                ((Button) frameLayout.findViewById(R.id.what_is_button)).setOnClickListener(new fvm(fvnVar, 1));
                                 fvnVar.d = frameLayout;
                             }
-                            fvnVar.a.f(7, org.codeaurora.snapcam.R.string.motion_photos_not_available_title, fvnVar.d);
+                            fvnVar.a.f(7, R.string.motion_photos_not_available_title, fvnVar.d);
                             return;
                     }
                 }
@@ -780,11 +780,11 @@ public final class gtg implements cwh, jrt, gtt, gtn, gtw {
                         lar.a();
                         if (fvnVar.d == null) {
                             FrameLayout frameLayout = new FrameLayout(fvnVar.b);
-                            View.inflate(fvnVar.b, true != fvnVar.c.k(ddl.ay) ? org.codeaurora.snapcam.R.layout.motionphoto_disabled_sheet_legacy : org.codeaurora.snapcam.R.layout.motionphoto_disabled_sheet, frameLayout);
-                            ((Button) frameLayout.findViewById(org.codeaurora.snapcam.R.id.what_is_button)).setOnClickListener(new fvm(fvnVar, 1));
+                            View.inflate(fvnVar.b, true != fvnVar.c.k(ddl.ay) ? R.layout.motionphoto_disabled_sheet_legacy : R.layout.motionphoto_disabled_sheet, frameLayout);
+                            ((Button) frameLayout.findViewById(R.id.what_is_button)).setOnClickListener(new fvm(fvnVar, 1));
                             fvnVar.d = frameLayout;
                         }
-                        fvnVar.a.f(7, org.codeaurora.snapcam.R.string.motion_photos_not_available_title, fvnVar.d);
+                        fvnVar.a.f(7, R.string.motion_photos_not_available_title, fvnVar.d);
                         return;
                 }
             }

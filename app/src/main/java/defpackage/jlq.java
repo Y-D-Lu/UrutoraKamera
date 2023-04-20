@@ -4,7 +4,9 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 import java.util.function.Function;
 
@@ -221,25 +223,25 @@ public final class jlq {
             case 29:
                 function = jlo.e;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 function = jlo.i;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 function = jln.p;
                 break;
             case 32:
                 function = jln.c;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 function = jln.r;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 function = jlo.h;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 function = jln.j;
                 break;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 function = jlo.l;
                 break;
             default:

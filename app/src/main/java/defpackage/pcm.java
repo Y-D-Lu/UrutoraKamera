@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: pcm  reason: default package */
@@ -210,12 +210,12 @@ public final class pcm implements ppi {
                     case 27:
                     case 28:
                     case 29:
-                    case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
-                    case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                    case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                    case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     case 32:
-                    case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
-                    case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-                    case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                    case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                    case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                         return true;
                     case 3:
                     case 4:

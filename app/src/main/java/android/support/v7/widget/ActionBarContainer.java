@@ -9,7 +9,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 import defpackage.gl;
 import defpackage.jq;
@@ -39,7 +41,7 @@ public class ActionBarContainer extends FrameLayout {
         this.a = obtainStyledAttributes.getDrawable(0);
         this.b = obtainStyledAttributes.getDrawable(2);
         this.i = obtainStyledAttributes.getDimensionPixelSize(13, -1);
-        if (getId() == com.google.android.apps.camera.bottombar.R.id.split_action_bar) {
+        if (getId() == Rb.id.split_action_bar) {
             this.d = true;
             this.c = obtainStyledAttributes.getDrawable(1);
         }

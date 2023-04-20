@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: nbf  reason: default package */
 /* loaded from: classes2.dex */
@@ -58,7 +58,7 @@ public final class nbf implements mwi {
         String valueOf = String.valueOf(this.b);
         boolean z = this.c;
         int length = a.length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_windowActionModeOverlay + String.valueOf(valueOf).length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_windowActionModeOverlay + String.valueOf(valueOf).length());
         sb.append("DirStatsConfigurations{enablement=");
         sb.append(a);
         sb.append(", maxFolderDepth=");

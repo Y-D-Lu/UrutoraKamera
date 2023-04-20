@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 import com.mdmitriev.auxlenses.AuxButtonsLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Map;
 

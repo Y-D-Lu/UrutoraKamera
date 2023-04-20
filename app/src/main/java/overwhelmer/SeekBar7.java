@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Objects;
 

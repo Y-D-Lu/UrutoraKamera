@@ -2,7 +2,7 @@ package defpackage;
 
 import android.util.Log;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.googlex.gcam.BufferUtils;
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.RawWriteView;
@@ -50,7 +50,7 @@ public final class pko {
                 i2 = 4032;
             } else if (i4 != 758) {
                 String str3 = a;
-                StringBuilder sb3 = new StringBuilder((int) R.styleable.AppCompatTheme_tooltipForegroundColor);
+                StringBuilder sb3 = new StringBuilder((int) Rb.styleable.AppCompatTheme_tooltipForegroundColor);
                 sb3.append("The inferred PD data height for DEPTH_POINT_CLOUD formatted Images should be one of 756 or 758, but is ");
                 sb3.append(i4);
                 Log.e(str3, sb3.toString());

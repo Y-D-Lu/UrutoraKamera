@@ -13,7 +13,7 @@ import android.util.Range;
 import android.util.Size;
 import android.view.Surface;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Arrays;
 
@@ -414,10 +414,10 @@ public final class aup extends axl {
                             axp.c(aur.a, "Ignoring release at inappropriate time");
                             break;
                         }
-                    case R.styleable.AppCompatTheme_switchStyle /* 101 */:
+                    case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
                         f((SurfaceTexture) message.obj);
                         break;
-                    case R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
                         if (this.q.c.a() == 8) {
                             this.k = (awm) message.obj;
                             a(16);
@@ -433,7 +433,7 @@ public final class aup extends axl {
                             axp.c(aur.a, "Refusing to start preview at inappropriate time");
                             break;
                         }
-                    case R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
                         if (this.q.c.a() >= 16) {
                             this.i.stopRepeating();
                             a(8);

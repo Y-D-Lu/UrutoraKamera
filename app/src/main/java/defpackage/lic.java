@@ -2,7 +2,7 @@ package defpackage;
 
 import android.view.Display;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.lens.sdk.LensApi;
 
 /* renamed from: lic  reason: default package */
@@ -25,7 +25,7 @@ public enum lic {
                 return CLOCKWISE_0;
             case 0:
                 return CLOCKWISE_0;
-            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                 return CLOCKWISE_90;
             case 180:
                 return CLOCKWISE_180;

@@ -7,7 +7,7 @@ import android.view.KeyEvent;
 
 import androidx.preference.DialogPreference;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import defpackage.oje;
 
@@ -94,14 +94,14 @@ public class MaterialKeyListenerPreference extends DialogPreference {
                     case 22:
                         str2 = "Right Arrow";
                         break;
-                    case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
-                    case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                    case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                    case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                         str2 = "Shift";
                         break;
-                    case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                    case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                         str2 = "Space";
                         break;
-                    case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                    case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                         str2 = "Enter";
                         break;
                     default:

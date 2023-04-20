@@ -9,7 +9,7 @@ import android.view.View;
 
 import com.Helper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: com.exposure.switch  reason: invalid class name */
 /* loaded from: classes3.dex */

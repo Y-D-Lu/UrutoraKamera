@@ -17,7 +17,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -324,17 +326,17 @@ public class Toolbar extends ViewGroup {
         int i3 = rsVar.a & 112;
         switch (i3) {
             case 16:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 break;
             default:
                 i3 = this.E & 112;
                 break;
         }
         switch (i3) {
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 return getPaddingTop() - i2;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 return (((getHeight() - getPaddingBottom()) - measuredHeight) - rsVar.bottomMargin) - i2;
             default:
                 int paddingTop = getPaddingTop();

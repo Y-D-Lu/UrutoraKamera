@@ -3,7 +3,7 @@ package defpackage;
 import android.content.Context;
 import android.view.View;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.concurrent.Executor;
 
@@ -15,7 +15,7 @@ public final class aau {
     }
 
     public static void b(View view, aey aeyVar) {
-        view.setTag(com.google.android.apps.camera.bottombar.R.id.view_tree_view_model_store_owner, aeyVar);
+        view.setTag(Rb.id.view_tree_view_model_store_owner, aeyVar);
     }
 
     public static /* synthetic */ String c(int i) {

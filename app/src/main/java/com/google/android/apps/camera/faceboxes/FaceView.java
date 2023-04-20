@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.HashMap;
 

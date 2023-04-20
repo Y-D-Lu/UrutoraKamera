@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.google.android.apps.camera.focusindicator.FocusIndicatorRingView;
 import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: dup  reason: default package */
 /* loaded from: classes.dex */

@@ -14,7 +14,7 @@ import android.widget.VideoView;
 
 import com.google.android.material.progressindicator.CircularProgressIndicator;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.iwd;
 import defpackage.iwe;

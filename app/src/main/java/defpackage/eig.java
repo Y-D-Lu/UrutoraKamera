@@ -17,6 +17,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: eig  reason: default package */
 /* loaded from: classes2.dex */
 public final class eig implements ehu, ehi {
@@ -35,7 +37,7 @@ public final class eig implements ehu, ehi {
     private final qkg O;
     private final elw P;
     private final Set Q;
-    private final Activity R;
+    private final Activity varR;
     private final ifn S;
     private final ScheduledExecutorService T;
     private final ekf U;
@@ -89,7 +91,7 @@ public final class eig implements ehu, ehi {
         this.W = ejmVar;
         this.L = gzfVar;
         this.j = ljfVar;
-        this.R = activity;
+        this.varR = activity;
         this.S = ifnVar;
         this.k = jlbVar;
         this.T = scheduledExecutorService;
@@ -131,15 +133,15 @@ public final class eig implements ehu, ehi {
         jgvVar.b = 1500;
         jgvVar.h = ddfVar.k(ddl.ay);
         jgvVar.g = true;
-        jgvVar.e = context.getString(org.codeaurora.snapcam.R.string.accessibility_imax_too_fast);
+        jgvVar.e = context.getString(R.string.accessibility_imax_too_fast);
         this.u = jgvVar.a();
-        jgvVar.e = context.getString(org.codeaurora.snapcam.R.string.accessibility_imax_backtracking);
+        jgvVar.e = context.getString(R.string.accessibility_imax_backtracking);
         this.v = jgvVar.a();
-        jgvVar.e = context.getString(org.codeaurora.snapcam.R.string.accessibility_imax_too_much_roll);
+        jgvVar.e = context.getString(R.string.accessibility_imax_too_much_roll);
         this.w = jgvVar.a();
-        jgvVar.e = context.getString(org.codeaurora.snapcam.R.string.imax_too_much_vertical_tilt);
+        jgvVar.e = context.getString(R.string.imax_too_much_vertical_tilt);
         this.x = jgvVar.a();
-        jgvVar.e = context.getString(org.codeaurora.snapcam.R.string.imax_too_much_horizontal_tilt);
+        jgvVar.e = context.getString(R.string.imax_too_much_horizontal_tilt);
         this.y = jgvVar.a();
         this.Q = new HashSet();
     }
@@ -148,7 +150,7 @@ public final class eig implements ehu, ehi {
         this.n.a(false);
         if (!this.q.get()) {
             g();
-            this.S.b(org.codeaurora.snapcam.R.raw.video_stop);
+            this.S.b(R.raw.video_stop);
             if (i != 2) {
                 if (!z) {
                     this.X.c(1);
@@ -238,22 +240,22 @@ public final class eig implements ehu, ehi {
                     ejjVar.a();
                 }
             });
-            int requestedOrientation = this.R.getRequestedOrientation();
+            int requestedOrientation = this.varR.getRequestedOrientation();
             this.Y = requestedOrientation;
-            int rotation = this.R.getWindowManager().getDefaultDisplay().getRotation() * 90;
+            int rotation = this.varR.getWindowManager().getDefaultDisplay().getRotation() * 90;
             if (rotation != 0 && rotation != 180) {
                 i = rotation == 90 ? 0 : rotation == 270 ? 8 : requestedOrientation;
             }
-            this.R.setRequestedOrientation(i);
-            this.S.b(org.codeaurora.snapcam.R.raw.video_start);
+            this.varR.setRequestedOrientation(i);
+            this.S.b(R.raw.video_start);
             this.I = ((eld) this.O).mo37get();
-            this.U.c(this.R.getWindowManager().getDefaultDisplay().getRotation() * 90);
+            this.U.c(this.varR.getWindowManager().getDefaultDisplay().getRotation() * 90);
             j(new eib(this, 2));
         }
     }
 
     public final void g() {
-        this.R.setRequestedOrientation(this.Y);
+        this.varR.setRequestedOrientation(this.Y);
     }
 
     public final void h(boolean z, int i) {

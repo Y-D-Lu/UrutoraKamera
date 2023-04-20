@@ -18,7 +18,7 @@ import android.widget.FrameLayout;
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.dty;
 import defpackage.dub;

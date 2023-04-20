@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -79,8 +79,8 @@ public final class ovp implements ovc {
                     case '\r':
                         charAt = 'r';
                         break;
-                    case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-                    case R.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
+                    case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                    case Rb.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
                         break;
                     default:
                         sb2.append((char) 65533);

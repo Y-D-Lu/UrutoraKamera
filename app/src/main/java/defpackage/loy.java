@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -59,7 +59,7 @@ public final class loy {
             lis lisVar = this.e;
             String valueOf = String.valueOf(lqdVar);
             int i3 = lqdVar.e;
-            StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + R.styleable.AppCompatTheme_textAppearanceListItemSecondary);
+            StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary);
             sb.append("Desired capacity of ");
             sb.append(i);
             sb.append(" is larger than the max capacity of ");

@@ -3,7 +3,7 @@ package defpackage;
 import android.view.View;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: iri  reason: default package */
 /* loaded from: classes.dex */

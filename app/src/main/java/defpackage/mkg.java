@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: mkg  reason: default package */
 /* loaded from: classes2.dex */
@@ -122,7 +122,7 @@ public final class mkg {
         }
         int length = str.length();
         int length2 = str2.length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_windowNoTitle + length2 + str3.length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_windowNoTitle + length2 + str3.length());
         sb.append("CameraMp4MuxerOptions{lastFrameDurationBehavior=");
         sb.append(str);
         sb.append(", editsEnabled=");

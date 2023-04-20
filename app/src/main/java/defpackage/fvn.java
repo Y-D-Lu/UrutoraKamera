@@ -9,7 +9,7 @@ import android.widget.FrameLayout;
 
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: fvn  reason: default package */
 /* loaded from: classes.dex */

@@ -3,7 +3,7 @@ package defpackage;
 import android.os.Handler;
 import android.os.SystemClock;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.common.api.Status;
 
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -99,7 +99,7 @@ public final class kku implements kvc {
                 i4 = khiVar == null ? -1 : khiVar.c;
                 i6 = i10;
             } else {
-                i6 = R.styleable.AppCompatTheme_switchStyle;
+                i6 = Rb.styleable.AppCompatTheme_switchStyle;
                 i4 = -1;
             }
         }

@@ -11,7 +11,9 @@ import android.view.ViewParent;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.ListAdapter;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: odi  reason: default package */
 /* loaded from: classes2.dex */
@@ -24,7 +26,7 @@ public final class odi extends mo {
         super(odn.a(context, attributeSet, R.attr.autoCompleteTextViewStyle, 0), attributeSet, R.attr.autoCompleteTextViewStyle);
         this.c = new Rect();
         Context context2 = getContext();
-        TypedArray a = nzw.a(context2, attributeSet, odj.a, R.attr.autoCompleteTextViewStyle, com.google.android.apps.camera.bottombar.R.style.Widget_AppCompat_AutoCompleteTextView, new int[0]);
+        TypedArray a = nzw.a(context2, attributeSet, odj.a, R.attr.autoCompleteTextViewStyle, Rb.style.Widget_AppCompat_AutoCompleteTextView, new int[0]);
         if (a.hasValue(0) && a.getInt(0, 0) == 0) {
             setKeyListener(null);
         }

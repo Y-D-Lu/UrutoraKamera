@@ -2,7 +2,7 @@ package defpackage;
 
 import android.os.Handler;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: auy  reason: default package */
 /* loaded from: classes.dex */
@@ -23,10 +23,10 @@ final class auy implements Runnable {
     public final void run() {
         switch (this.d) {
             case 0:
-                this.b.a.d.obtainMessage(R.styleable.AppCompatTheme_textAppearanceListItemSecondary, avl.a(this.a, this.c)).sendToTarget();
+                this.b.a.d.obtainMessage(Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary, avl.a(this.a, this.c)).sendToTarget();
                 return;
             default:
-                this.b.a.d.obtainMessage(R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, avl.a(this.a, this.c)).sendToTarget();
+                this.b.a.d.obtainMessage(Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, avl.a(this.a, this.c)).sendToTarget();
                 return;
         }
     }

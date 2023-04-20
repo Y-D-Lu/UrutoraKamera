@@ -2,7 +2,7 @@ package defpackage;
 
 import android.view.MenuItem;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: jf  reason: default package */
@@ -19,10 +19,10 @@ public final class jf implements ku {
         jh jhVar = this.a;
         if (jhVar.c != null) {
             if (jhVar.a.u()) {
-                this.a.c.onPanelClosed(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
+                this.a.c.onPanelClosed(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
             } else if (!this.a.c.onPreparePanel(0, null, kwVar)) {
             } else {
-                this.a.c.onMenuOpened(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
+                this.a.c.onMenuOpened(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
             }
         }
     }

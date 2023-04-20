@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.List;
 

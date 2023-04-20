@@ -6,6 +6,8 @@ import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 import com.google.android.apps.camera.ui.views.ToggleUi;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: ezg  reason: default package */
 /* loaded from: classes.dex */
 public final class ezg extends buf implements ezk {
@@ -52,7 +54,7 @@ public final class ezg extends buf implements ezk {
     public final fle w;
     public final hlv x;
     public final BottomBarListener y = new eyw(this);
-    private final gft R = new eza(this);
+    private final gft varR = new eza(this);
     public final epi z = new ezb(this);
 
     public ezg(ljf ljfVar, cvo cvoVar, ghg ghgVar, fxh fxhVar, btt bttVar, ghu ghuVar, lar larVar, iwt iwtVar, ifn ifnVar, fxf fxfVar, ijn ijnVar, fwl fwlVar, jlb jlbVar, ojc ojcVar, ojc ojcVar2, ojc ojcVar3, BottomBarController bottomBarController, kas kasVar, epj epjVar, bne bneVar, eyp eypVar, eym eymVar, dba dbaVar, fks fksVar, eta etaVar, huj hujVar, lda ldaVar, lda ldaVar2, ddf ddfVar, fle fleVar, hlv hlvVar, jbq jbqVar, elw elwVar, ojc ojcVar4) {
@@ -234,7 +236,7 @@ public final class ezg extends buf implements ezk {
         ToggleUi toggleUi = jbqVar.b;
         if (toggleUi != null) {
             toggleUi.c.setOnClickListener(onClickListener);
-            jbqVar.b.e(org.codeaurora.snapcam.R.string.motion_mode_help_button_accessibility);
+            jbqVar.b.e(R.string.motion_mode_help_button_accessibility);
         }
         this.T.b();
         this.B.c(this.v.a(new lij() { // from class: eyt
@@ -347,7 +349,7 @@ public final class ezg extends buf implements ezk {
             if (esn.a(((Integer) this.v.fA()).intValue()).equals(esn.LANDSCAPE)) {
                 this.w.f(127);
             }
-            this.j.c(fwcVar, this.R, this.A, this.C).d(new eyu(this, 0), this.e);
+            this.j.c(fwcVar, this.varR, this.A, this.C).d(new eyu(this, 0), this.e);
             this.A = false;
             this.C = (ijp) this.J.a();
             this.F.f();

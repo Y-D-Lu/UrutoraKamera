@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.ui.widget.ReviewImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: fle  reason: default package */
 /* loaded from: classes2.dex */

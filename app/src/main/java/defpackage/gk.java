@@ -3,7 +3,7 @@ package defpackage;
 import android.view.ContentInfo;
 import android.view.View;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.NamedNodeMap;
@@ -39,7 +39,7 @@ public final class gk {
             return -1;
         }
         try {
-            throw new ass("Language item must be used on array", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+            throw new ass("Language item must be used on array", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
         } catch (ass e) {
             e.printStackTrace();
         }
@@ -50,14 +50,14 @@ public final class gk {
         if (!atlVar.g().n() && !atlVar.g().o()) {
             if (!atlVar.f) {
                 try {
-                    throw new ass("Named children only allowed for schemas and structs", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    throw new ass("Named children only allowed for schemas and structs", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
             }
             if (atlVar.g().d()) {
                 try {
-                    throw new ass("Named children not allowed for arrays", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    throw new ass("Named children not allowed for arrays", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
@@ -109,7 +109,7 @@ public final class gk {
             if (a == null) {
                 if (str2 == null || str2.length() == 0) {
                     try {
-                        throw new ass("Unregistered schema namespace URI", R.styleable.AppCompatTheme_switchStyle);
+                        throw new ass("Unregistered schema namespace URI", Rb.styleable.AppCompatTheme_switchStyle);
                     } catch (ass e) {
                         e.printStackTrace();
                     }
@@ -144,7 +144,7 @@ public final class gk {
             return atxVar;
         }
         try {
-            throw new ass("Structs and arrays can't have values", R.styleable.AppCompatTheme_textAppearanceListItem);
+            throw new ass("Structs and arrays can't have values", Rb.styleable.AppCompatTheme_textAppearanceListItem);
         } catch (ass e) {
             e.printStackTrace();
         }

@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -120,7 +120,7 @@ public final class ohb extends InputStream implements ogs {
                 double d2 = ohqVar.e;
                 if (a2 < d || a2 > d2) {
                     oha ohaVar = ohwVar.k;
-                    StringBuilder sb = new StringBuilder((int) R.styleable.AppCompatTheme_tooltipFrameBackground);
+                    StringBuilder sb = new StringBuilder((int) Rb.styleable.AppCompatTheme_tooltipFrameBackground);
                     sb.append("StoredVideoFrameProcessor: current input FPS (");
                     sb.append((int) a2);
                     sb.append(") is outside the allowed range (");

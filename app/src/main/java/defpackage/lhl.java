@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "com.google.android.libraries.camera.camerapipe.CameraPipeCameraHardwareManager$allCameraIds$1", c = "CameraPipeCameraHardwareManager.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_textColorAlertDialogListItem, R.styleable.AppCompatTheme_windowActionModeOverlay})
+@qlw(b = "com.google.android.libraries.camera.camerapipe.CameraPipeCameraHardwareManager$allCameraIds$1", c = "CameraPipeCameraHardwareManager.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_textColorAlertDialogListItem, Rb.styleable.AppCompatTheme_windowActionModeOverlay})
 /* renamed from: lhl  reason: default package */
 /* loaded from: classes2.dex */
 final class lhl extends qma implements qmy {

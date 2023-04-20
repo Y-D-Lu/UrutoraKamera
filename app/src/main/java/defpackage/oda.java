@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: oda  reason: default package */
 /* loaded from: classes2.dex */

@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import android.view.WindowManager;
 import android.widget.SeekBar;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: irr  reason: default package */
 /* loaded from: classes.dex */

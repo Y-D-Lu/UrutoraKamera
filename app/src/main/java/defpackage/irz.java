@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicBoolean;

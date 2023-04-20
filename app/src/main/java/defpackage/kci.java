@@ -2,7 +2,7 @@ package defpackage;
 
 import android.support.v8.renderscript.ScriptIntrinsicBLAS;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: kci  reason: default package */
 /* loaded from: classes2.dex */
@@ -29,59 +29,59 @@ final class kci implements ppi {
             case 25:
             case 27:
             case 32:
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
-            case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
-            case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
-            case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
-            case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
-            case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
-            case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
-            case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
-            case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
-            case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
-            case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
-            case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
-            case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
-            case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
-            case R.styleable.AppCompatTheme_controlBackground /* 60 */:
-            case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
-            case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+            case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+            case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
+            case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+            case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+            case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+            case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
+            case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+            case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+            case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
+            case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+            case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
             case 64:
-            case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
-            case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
-            case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
-            case R.styleable.AppCompatTheme_editTextColor /* 69 */:
-            case R.styleable.AppCompatTheme_editTextStyle /* 70 */:
-            case R.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
-            case R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
-            case R.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
-            case R.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
-            case R.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
-            case R.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
-            case R.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
-            case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
-            case R.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
-            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
-            case R.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
-            case R.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
-            case R.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
-            case R.styleable.AppCompatTheme_searchViewStyle /* 95 */:
-            case R.styleable.AppCompatTheme_seekBarStyle /* 96 */:
-            case R.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
-            case R.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
-            case R.styleable.AppCompatTheme_spinnerStyle /* 100 */:
-            case R.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
-            case R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
-            case R.styleable.AppCompatTheme_tooltipForegroundColor /* 114 */:
-            case R.styleable.AppCompatTheme_windowActionBar /* 117 */:
+            case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
+            case Rb.styleable.AppCompatTheme_editTextColor /* 69 */:
+            case Rb.styleable.AppCompatTheme_editTextStyle /* 70 */:
+            case Rb.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
+            case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+            case Rb.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
+            case Rb.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
+            case Rb.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
+            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
+            case Rb.styleable.AppCompatTheme_searchViewStyle /* 95 */:
+            case Rb.styleable.AppCompatTheme_seekBarStyle /* 96 */:
+            case Rb.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
+            case Rb.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
+            case Rb.styleable.AppCompatTheme_spinnerStyle /* 100 */:
+            case Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+            case Rb.styleable.AppCompatTheme_tooltipForegroundColor /* 114 */:
+            case Rb.styleable.AppCompatTheme_windowActionBar /* 117 */:
             case 121:
             case 122:
-            case R.styleable.AppCompatTheme_windowNoTitle /* 126 */:
+            case Rb.styleable.AppCompatTheme_windowNoTitle /* 126 */:
             case 128:
             case 129:
             case 130:
@@ -322,49 +322,49 @@ final class kci implements ppi {
             case 26:
             case 28:
             case 29:
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
-            case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
-            case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
-            case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-            case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
-            case R.styleable.AppCompatTheme_colorAccent /* 50 */:
-            case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
-            case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
-            case R.styleable.AppCompatTheme_colorError /* 56 */:
-            case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
-            case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
-            case R.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
-            case R.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
-            case R.styleable.AppCompatTheme_panelBackground /* 86 */:
-            case R.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
-            case R.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
-            case R.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
-            case R.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
-            case R.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
-            case R.styleable.AppCompatTheme_switchStyle /* 101 */:
-            case R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
-            case R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
-            case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
-            case R.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
-            case R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
-            case R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
-            case R.styleable.AppCompatTheme_textColorAlertDialogListItem /* 110 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+            case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+            case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
+            case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+            case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+            case Rb.styleable.AppCompatTheme_colorError /* 56 */:
+            case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+            case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
+            case Rb.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
+            case Rb.styleable.AppCompatTheme_panelBackground /* 86 */:
+            case Rb.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
+            case Rb.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
+            case Rb.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
+            case Rb.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
+            case Rb.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
+            case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
+            case Rb.styleable.AppCompatTheme_textColorAlertDialogListItem /* 110 */:
             case 111:
             case 112:
             case 113:
-            case R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
-            case R.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
-            case R.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
-            case R.styleable.AppCompatTheme_windowActionModeOverlay /* 119 */:
-            case R.styleable.AppCompatTheme_windowFixedHeightMajor /* 120 */:
-            case R.styleable.AppCompatTheme_windowFixedWidthMinor /* 123 */:
-            case R.styleable.AppCompatTheme_windowMinWidthMajor /* 124 */:
-            case R.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
+            case Rb.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+            case Rb.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
+            case Rb.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
+            case Rb.styleable.AppCompatTheme_windowActionModeOverlay /* 119 */:
+            case Rb.styleable.AppCompatTheme_windowFixedHeightMajor /* 120 */:
+            case Rb.styleable.AppCompatTheme_windowFixedWidthMinor /* 123 */:
+            case Rb.styleable.AppCompatTheme_windowMinWidthMajor /* 124 */:
+            case Rb.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
             case 127:
             case ScriptIntrinsicBLAS.UNIT /* 132 */:
             case 134:

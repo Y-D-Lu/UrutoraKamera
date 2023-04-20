@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -107,7 +107,7 @@ public final class qun extends qlu implements qts, qlv {
                         i = i3;
                     }
                     StringBuilder sb = new StringBuilder(length2);
-                    qmd.E(arrayList3, sb, "\n", null, R.styleable.AppCompatTheme_windowMinWidthMajor);
+                    qmd.E(arrayList3, sb, "\n", null, Rb.styleable.AppCompatTheme_windowMinWidthMajor);
                     String sb2 = sb.toString();
                     sb2.getClass();
                     throw new IllegalStateException(sb2.toString());

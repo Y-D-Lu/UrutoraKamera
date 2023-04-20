@@ -1,6 +1,6 @@
 package defpackage;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -12,7 +12,7 @@ import com.google.android.apps.camera.ui.modeswitcher.ModeSwitcher;
 import com.google.android.apps.camera.ui.modeswitcher.MoreModesGrid;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.EnumMap;
 import java.util.Map;

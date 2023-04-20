@@ -3,7 +3,7 @@ package defpackage;
 import android.graphics.Point;
 import android.graphics.Rect;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.jni.facebeautification.FaceInfo;
 
 import java.util.Arrays;
@@ -109,7 +109,7 @@ public final class enj extends FaceInfo {
         int length5 = String.valueOf(valueOf5).length();
         int length6 = String.valueOf(valueOf6).length();
         int length7 = String.valueOf(valueOf7).length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_tooltipForegroundColor + length2 + length3 + length4 + length5 + length6 + length7 + String.valueOf(arrays).length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_tooltipForegroundColor + length2 + length3 + length4 + length5 + length6 + length7 + String.valueOf(arrays).length());
         sb.append("FaceInfo{bounds=");
         sb.append(valueOf);
         sb.append(", leftEye=");

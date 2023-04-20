@@ -10,7 +10,7 @@ import android.graphics.drawable.LayerDrawable;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jhm  reason: default package */
 /* loaded from: classes.dex */

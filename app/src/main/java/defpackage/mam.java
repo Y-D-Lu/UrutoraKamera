@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: mam  reason: default package */
 /* loaded from: classes2.dex */
@@ -49,7 +49,7 @@ public final class mam {
         String valueOf2 = String.valueOf(this.e);
         int length = String.valueOf(str).length();
         int length2 = String.valueOf(valueOf).length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_tooltipForegroundColor + length2 + String.valueOf(valueOf2).length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_tooltipForegroundColor + length2 + String.valueOf(valueOf2).length());
         sb.append("MediaFileInfo{timestampNs=");
         sb.append(j);
         sb.append(", utcTimestampMs=");

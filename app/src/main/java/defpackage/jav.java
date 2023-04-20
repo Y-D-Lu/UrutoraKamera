@@ -4,7 +4,7 @@ import android.text.format.DateUtils;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.time.Duration;
 

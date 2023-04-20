@@ -9,7 +9,7 @@ import android.widget.FrameLayout;
 
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuButton;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.cuv;
 import defpackage.jrz;

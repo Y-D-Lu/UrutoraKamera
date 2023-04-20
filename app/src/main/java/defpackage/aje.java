@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -39,9 +39,9 @@ public final class aje {
         for (int i3 = 0; i3 < substring.length(); i3++) {
             char charAt = substring.charAt(i3);
             switch (charAt) {
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
-                case R.styleable.AppCompatTheme_seekBarStyle /* 96 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_seekBarStyle /* 96 */:
                     if (arrayDeque.isEmpty()) {
                         arrayDeque.push(Character.valueOf(charAt));
                         break;
@@ -51,7 +51,7 @@ public final class aje {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                     if (arrayDeque.isEmpty()) {
                         arrayList.add(substring.substring(i2 + 1, i3).trim());
                         i2 = i3;
@@ -59,14 +59,14 @@ public final class aje {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
+                case Rb.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
                     if (arrayDeque.isEmpty()) {
                         arrayDeque.push(Character.valueOf(charAt));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
+                case Rb.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
                     if (!arrayDeque.isEmpty() && ((Character) arrayDeque.peek()).charValue() == '[') {
                         arrayDeque.pop();
                         break;

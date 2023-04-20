@@ -18,7 +18,7 @@ import com.google.android.apps.camera.stats.Instrumentation;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 import com.save.exception.CustomizedExceptionHandler;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

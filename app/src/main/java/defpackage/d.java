@@ -22,9 +22,10 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayList;
@@ -77,8 +78,8 @@ public final class d {
         int p = z2 ? z ? buVar.p() : buVar.q() : z ? buVar.n() : buVar.o();
         buVar.P(0, 0, 0, 0);
         ViewGroup viewGroup = buVar.L;
-        if (viewGroup != null && viewGroup.getTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag) != null) {
-            buVar.L.setTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag, null);
+        if (viewGroup != null && viewGroup.getTag(Rb.id.visible_removing_fragment_view_tag) != null) {
+            buVar.L.setTag(Rb.id.visible_removing_fragment_view_tag, null);
         }
         ViewGroup viewGroup2 = buVar.L;
         if (viewGroup2 == null || viewGroup2.getLayoutTransition() == null) {
@@ -229,76 +230,76 @@ public final class d {
             case 27:
             case 28:
             case 29:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
             case 32:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonStyle /* 46 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorAccent /* 50 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorError /* 56 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorPrimary /* 57 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_controlBackground /* 60 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+            case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+            case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+            case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+            case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+            case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
+            case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+            case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+            case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+            case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+            case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+            case Rb.styleable.AppCompatTheme_colorError /* 56 */:
+            case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
+            case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+            case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+            case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
+            case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+            case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+            case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
             case 64:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dividerVertical /* 65 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_editTextBackground /* 68 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_editTextColor /* 69 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_editTextStyle /* 70 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_panelBackground /* 86 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_searchViewStyle /* 95 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_seekBarStyle /* 96 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
+            case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+            case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
+            case Rb.styleable.AppCompatTheme_editTextColor /* 69 */:
+            case Rb.styleable.AppCompatTheme_editTextStyle /* 70 */:
+            case Rb.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
+            case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+            case Rb.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
+            case Rb.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
+            case Rb.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
+            case Rb.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
+            case Rb.styleable.AppCompatTheme_panelBackground /* 86 */:
+            case Rb.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
+            case Rb.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
+            case Rb.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
+            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+            case Rb.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
+            case Rb.styleable.AppCompatTheme_searchViewStyle /* 95 */:
+            case Rb.styleable.AppCompatTheme_seekBarStyle /* 96 */:
+            case Rb.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
+            case Rb.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
+            case Rb.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
             case 198:
             case 221:
             case 248:
@@ -307,47 +308,47 @@ public final class d {
                 poy i6 = psj.i();
                 i6.F(1);
                 return (psj) i6.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_spinnerStyle /* 100 */:
+            case Rb.styleable.AppCompatTheme_spinnerStyle /* 100 */:
                 poy i7 = psj.i();
                 i7.F(3);
                 return (psj) i7.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_switchStyle /* 101 */:
+            case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
                 poy i8 = psj.i();
                 i8.F(3);
                 return (psj) i8.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
                 poy i9 = psj.i();
                 i9.F(3);
                 return (psj) i9.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
                 poy i10 = psj.i();
                 i10.F(3);
                 return (psj) i10.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
                 poy i11 = psj.i();
                 i11.F(3);
                 return (psj) i11.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
                 poy i12 = psj.i();
                 i12.F(3);
                 return (psj) i12.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
+            case Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
                 poy i13 = psj.i();
                 i13.F(3);
                 return (psj) i13.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
                 poy i14 = psj.i();
                 i14.F(2);
                 return (psj) i14.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
                 poy i15 = psj.i();
                 i15.F(3);
                 return (psj) i15.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
                 poy i16 = psj.i();
                 i16.F(3);
                 return (psj) i16.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textColorAlertDialogListItem /* 110 */:
+            case Rb.styleable.AppCompatTheme_textColorAlertDialogListItem /* 110 */:
                 poy i17 = psj.i();
                 i17.F(2);
                 return (psj) i17.j();
@@ -363,31 +364,31 @@ public final class d {
                 poy i20 = psj.i();
                 i20.F(3);
                 return (psj) i20.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_tooltipForegroundColor /* 114 */:
+            case Rb.styleable.AppCompatTheme_tooltipForegroundColor /* 114 */:
                 poy i21 = psj.i();
                 i21.F(2);
                 return (psj) i21.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+            case Rb.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
                 poy i22 = psj.i();
                 i22.F(3);
                 return (psj) i22.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
+            case Rb.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
                 poy i23 = psj.i();
                 i23.F(3);
                 return (psj) i23.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowActionBar /* 117 */:
+            case Rb.styleable.AppCompatTheme_windowActionBar /* 117 */:
                 poy i24 = psj.i();
                 i24.F(3);
                 return (psj) i24.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
+            case Rb.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
                 poy i25 = psj.i();
                 i25.F(3);
                 return (psj) i25.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowActionModeOverlay /* 119 */:
+            case Rb.styleable.AppCompatTheme_windowActionModeOverlay /* 119 */:
                 poy m = psj.c.m();
                 m.F(3);
                 return (psj) m.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedHeightMajor /* 120 */:
+            case Rb.styleable.AppCompatTheme_windowFixedHeightMajor /* 120 */:
                 poy m2 = psj.c.m();
                 m2.F(3);
                 return (psj) m2.j();
@@ -399,19 +400,19 @@ public final class d {
                 poy m4 = psj.c.m();
                 m4.F(3);
                 return (psj) m4.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedWidthMinor /* 123 */:
+            case Rb.styleable.AppCompatTheme_windowFixedWidthMinor /* 123 */:
                 poy m5 = psj.c.m();
                 m5.F(3);
                 return (psj) m5.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowMinWidthMajor /* 124 */:
+            case Rb.styleable.AppCompatTheme_windowMinWidthMajor /* 124 */:
                 poy m6 = psj.c.m();
                 m6.F(3);
                 return (psj) m6.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
+            case Rb.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
                 poy m7 = psj.c.m();
                 m7.F(3);
                 return (psj) m7.j();
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowNoTitle /* 126 */:
+            case Rb.styleable.AppCompatTheme_windowNoTitle /* 126 */:
                 poy m8 = psj.c.m();
                 m8.F(3);
                 return (psj) m8.j();

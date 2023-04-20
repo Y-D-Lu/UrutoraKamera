@@ -71,8 +71,8 @@ public final /* synthetic */ class fap implements lij {
                     return;
                 }
                 fbbVar2.v(false);
-                synchronized (fbbVar2.R) {
-                    plk.O(fbbVar2.R).c(new far(fbbVar2, 2), fbbVar2.e);
+                synchronized (fbbVar2.varR) {
+                    plk.O(fbbVar2.varR).c(new far(fbbVar2, 2), fbbVar2.e);
                 }
                 return;
             default:

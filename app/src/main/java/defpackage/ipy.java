@@ -7,12 +7,11 @@ import android.widget.TextView;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import java.util.Collection;
 import java.util.stream.Collectors;
 
 /* renamed from: ipy  reason: default package */
@@ -40,7 +39,7 @@ public final /* synthetic */ class ipy implements Runnable {
                 return;
             case 2:
                 iqj iqjVar3 = this.a;
-                if (iqjVar3.R.indexOfChild(iqjVar3.N) == -1) {
+                if (iqjVar3.varR.indexOfChild(iqjVar3.N) == -1) {
                     return;
                 }
                 jgu jguVar = iqjVar3.F;

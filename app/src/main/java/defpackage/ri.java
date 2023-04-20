@@ -8,7 +8,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: ri  reason: default package */
 /* loaded from: classes2.dex */
@@ -63,7 +63,7 @@ public final class ri {
     public static void d(View view, Context context) {
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(jq.j);
         try {
-            if (!obtainStyledAttributes.hasValue(R.styleable.AppCompatTheme_windowActionBar)) {
+            if (!obtainStyledAttributes.hasValue(Rb.styleable.AppCompatTheme_windowActionBar)) {
                 Log.e("ThemeUtils", "View " + view.getClass() + " is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).");
             }
         } finally {

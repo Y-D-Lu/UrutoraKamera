@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import androidx.constraintlayout.widget.Barrier;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.lens.sdk.LensApi;
 import com.hdrindicator.DisplayHelper;
 
@@ -52,7 +52,7 @@ public final class zu {
         sparseIntArray.append(59, 91);
         sparseIntArray.append(58, 92);
         sparseIntArray.append(100, 6);
-        sparseIntArray.append(R.styleable.AppCompatTheme_switchStyle, 7);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_switchStyle, 7);
         sparseIntArray.append(69, 17);
         sparseIntArray.append(70, 18);
         sparseIntArray.append(71, 19);
@@ -61,12 +61,12 @@ public final class zu {
         sparseIntArray.append(87, 33);
         sparseIntArray.append(68, 10);
         sparseIntArray.append(67, 9);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceListItemSmall, 13);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, 16);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearancePopupMenuHeader, 14);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceListItem, 11);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, 15);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceListItemSecondary, 12);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceListItemSmall, 13);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, 16);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader, 14);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceListItem, 11);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, 15);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary, 12);
         sparseIntArray.append(94, 40);
         sparseIntArray.append(79, 39);
         sparseIntArray.append(78, 41);
@@ -112,7 +112,7 @@ public final class zu {
         sparseIntArray.append(65, 62);
         sparseIntArray.append(64, 63);
         sparseIntArray.append(28, 64);
-        sparseIntArray.append(R.styleable.AppCompatTheme_windowFixedHeightMajor, 65);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_windowFixedHeightMajor, 65);
         sparseIntArray.append(35, 66);
         sparseIntArray.append(121, 67);
         sparseIntArray.append(112, 79);
@@ -120,7 +120,7 @@ public final class zu {
         sparseIntArray.append(111, 68);
         sparseIntArray.append(99, 69);
         sparseIntArray.append(76, 70);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textColorAlertDialogListItem, 97);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textColorAlertDialogListItem, 97);
         sparseIntArray.append(32, 71);
         sparseIntArray.append(30, 72);
         sparseIntArray.append(31, 73);
@@ -131,11 +131,11 @@ public final class zu {
         sparseIntArray.append(122, 78);
         sparseIntArray.append(55, 80);
         sparseIntArray.append(54, 81);
-        sparseIntArray.append(R.styleable.AppCompatTheme_tooltipFrameBackground, 82);
-        sparseIntArray.append(R.styleable.AppCompatTheme_windowActionModeOverlay, 83);
-        sparseIntArray.append(R.styleable.AppCompatTheme_windowActionBarOverlay, 84);
-        sparseIntArray.append(R.styleable.AppCompatTheme_windowActionBar, 85);
-        sparseIntArray.append(R.styleable.AppCompatTheme_viewInflaterClass, 86);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_tooltipFrameBackground, 82);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_windowActionModeOverlay, 83);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_windowActionBarOverlay, 84);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_windowActionBar, 85);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_viewInflaterClass, 86);
         sparseIntArray2.append(84, 6);
         sparseIntArray2.append(84, 7);
         sparseIntArray2.append(0, 27);
@@ -189,9 +189,9 @@ public final class zu {
         sparseIntArray2.append(58, 62);
         sparseIntArray2.append(57, 63);
         sparseIntArray2.append(28, 64);
-        sparseIntArray2.append(R.styleable.AppCompatTheme_textAppearanceListItemSecondary, 65);
+        sparseIntArray2.append(Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary, 65);
         sparseIntArray2.append(34, 66);
-        sparseIntArray2.append(R.styleable.AppCompatTheme_textAppearanceListItemSmall, 67);
+        sparseIntArray2.append(Rb.styleable.AppCompatTheme_textAppearanceListItemSmall, 67);
         sparseIntArray2.append(95, 79);
         sparseIntArray2.append(1, 38);
         sparseIntArray2.append(96, 98);
@@ -205,13 +205,13 @@ public final class zu {
         sparseIntArray2.append(29, 75);
         sparseIntArray2.append(97, 76);
         sparseIntArray2.append(73, 77);
-        sparseIntArray2.append(R.styleable.AppCompatTheme_textAppearancePopupMenuHeader, 78);
+        sparseIntArray2.append(Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader, 78);
         sparseIntArray2.append(54, 80);
         sparseIntArray2.append(53, 81);
         sparseIntArray2.append(99, 82);
-        sparseIntArray2.append(R.styleable.AppCompatTheme_textAppearanceListItem, 83);
-        sparseIntArray2.append(R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 84);
-        sparseIntArray2.append(R.styleable.AppCompatTheme_switchStyle, 85);
+        sparseIntArray2.append(Rb.styleable.AppCompatTheme_textAppearanceListItem, 83);
+        sparseIntArray2.append(Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 84);
+        sparseIntArray2.append(Rb.styleable.AppCompatTheme_switchStyle, 85);
         sparseIntArray2.append(100, 86);
         sparseIntArray2.append(93, 97);
     }
@@ -612,11 +612,11 @@ public final class zu {
                         zq zqVar27 = zpVar.d;
                         zqVar27.k = a(obtainStyledAttributes, index, zqVar27.k);
                         break;
-                    case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                    case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                         zq zqVar28 = zpVar.d;
                         zqVar28.l = a(obtainStyledAttributes, index, zqVar28.l);
                         break;
-                    case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                    case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                         zq zqVar29 = zpVar.d;
                         zqVar29.L = obtainStyledAttributes.getDimensionPixelSize(index, zqVar29.L);
                         break;
@@ -624,127 +624,127 @@ public final class zu {
                         zq zqVar30 = zpVar.d;
                         zqVar30.t = a(obtainStyledAttributes, index, zqVar30.t);
                         break;
-                    case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                    case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                         zq zqVar31 = zpVar.d;
                         zqVar31.u = a(obtainStyledAttributes, index, zqVar31.u);
                         break;
-                    case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                    case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                         zq zqVar32 = zpVar.d;
                         zqVar32.I = obtainStyledAttributes.getDimensionPixelSize(index, zqVar32.I);
                         break;
-                    case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                         zq zqVar33 = zpVar.d;
                         zqVar33.n = a(obtainStyledAttributes, index, zqVar33.n);
                         break;
-                    case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                         zq zqVar34 = zpVar.d;
                         zqVar34.m = a(obtainStyledAttributes, index, zqVar34.m);
                         break;
-                    case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                         zq zqVar35 = zpVar.d;
                         zqVar35.y = obtainStyledAttributes.getFloat(index, zqVar35.y);
                         break;
-                    case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                         zpVar.a = obtainStyledAttributes.getResourceId(index, zpVar.a);
                         break;
-                    case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                    case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                         zq zqVar36 = zpVar.d;
                         zqVar36.V = obtainStyledAttributes.getFloat(index, zqVar36.V);
                         break;
-                    case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                    case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                         zq zqVar37 = zpVar.d;
                         zqVar37.U = obtainStyledAttributes.getFloat(index, zqVar37.U);
                         break;
-                    case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                         zq zqVar38 = zpVar.d;
                         zqVar38.W = obtainStyledAttributes.getInt(index, zqVar38.W);
                         break;
-                    case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                         zq zqVar39 = zpVar.d;
                         zqVar39.X = obtainStyledAttributes.getInt(index, zqVar39.X);
                         break;
-                    case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                         zs zsVar2 = zpVar.b;
                         zsVar2.d = obtainStyledAttributes.getFloat(index, zsVar2.d);
                         break;
-                    case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                         zt ztVar = zpVar.e;
                         ztVar.n = true;
                         ztVar.o = obtainStyledAttributes.getDimension(index, ztVar.o);
                         break;
-                    case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                         zt ztVar2 = zpVar.e;
                         ztVar2.d = obtainStyledAttributes.getFloat(index, ztVar2.d);
                         break;
-                    case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                    case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                         zt ztVar3 = zpVar.e;
                         ztVar3.e = obtainStyledAttributes.getFloat(index, ztVar3.e);
                         break;
-                    case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                    case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                         zt ztVar4 = zpVar.e;
                         ztVar4.f = obtainStyledAttributes.getFloat(index, ztVar4.f);
                         break;
-                    case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                    case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                         zt ztVar5 = zpVar.e;
                         ztVar5.g = obtainStyledAttributes.getFloat(index, ztVar5.g);
                         break;
-                    case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                    case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                         zt ztVar6 = zpVar.e;
                         ztVar6.h = obtainStyledAttributes.getDimension(index, ztVar6.h);
                         break;
-                    case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                    case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                         zt ztVar7 = zpVar.e;
                         ztVar7.i = obtainStyledAttributes.getDimension(index, ztVar7.i);
                         break;
-                    case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                    case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                         zt ztVar8 = zpVar.e;
                         ztVar8.k = obtainStyledAttributes.getDimension(index, ztVar8.k);
                         break;
-                    case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                    case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                         zt ztVar9 = zpVar.e;
                         ztVar9.l = obtainStyledAttributes.getDimension(index, ztVar9.l);
                         break;
-                    case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                    case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                         zt ztVar10 = zpVar.e;
                         ztVar10.m = obtainStyledAttributes.getDimension(index, ztVar10.m);
                         break;
-                    case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                    case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                         zq zqVar40 = zpVar.d;
                         zqVar40.Y = obtainStyledAttributes.getInt(index, zqVar40.Y);
                         break;
-                    case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                    case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                         zq zqVar41 = zpVar.d;
                         zqVar41.Z = obtainStyledAttributes.getInt(index, zqVar41.Z);
                         break;
-                    case R.styleable.AppCompatTheme_colorError /* 56 */:
+                    case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                         zq zqVar42 = zpVar.d;
                         zqVar42.aa = obtainStyledAttributes.getDimensionPixelSize(index, zqVar42.aa);
                         break;
-                    case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+                    case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                         zq zqVar43 = zpVar.d;
                         zqVar43.ab = obtainStyledAttributes.getDimensionPixelSize(index, zqVar43.ab);
                         break;
-                    case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+                    case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                         zq zqVar44 = zpVar.d;
                         zqVar44.ac = obtainStyledAttributes.getDimensionPixelSize(index, zqVar44.ac);
                         break;
-                    case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                    case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                         zq zqVar45 = zpVar.d;
                         zqVar45.ad = obtainStyledAttributes.getDimensionPixelSize(index, zqVar45.ad);
                         break;
-                    case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                    case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                         zt ztVar11 = zpVar.e;
                         ztVar11.c = obtainStyledAttributes.getFloat(index, ztVar11.c);
                         break;
-                    case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                    case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                         zq zqVar46 = zpVar.d;
                         zqVar46.A = a(obtainStyledAttributes, index, zqVar46.A);
                         break;
-                    case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                    case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                         zq zqVar47 = zpVar.d;
                         zqVar47.B = obtainStyledAttributes.getDimensionPixelSize(index, zqVar47.B);
                         break;
-                    case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+                    case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                         zq zqVar48 = zpVar.d;
                         zqVar48.C = obtainStyledAttributes.getFloat(index, zqVar48.C);
                         break;
@@ -752,7 +752,7 @@ public final class zu {
                         zr zrVar = zpVar.c;
                         zrVar.c = a(obtainStyledAttributes, index, zrVar.c);
                         break;
-                    case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                    case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                         if (obtainStyledAttributes.peekValue(index).type == 3) {
                             zpVar.c.e = obtainStyledAttributes.getString(index);
                             break;
@@ -760,81 +760,81 @@ public final class zu {
                             zpVar.c.e = yg.a[obtainStyledAttributes.getInteger(index, 0)];
                             break;
                         }
-                    case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                    case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                         zpVar.c.g = obtainStyledAttributes.getInt(index, 0);
                         break;
-                    case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                    case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                         zr zrVar2 = zpVar.c;
                         zrVar2.j = obtainStyledAttributes.getFloat(index, zrVar2.j);
                         break;
-                    case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+                    case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                         zs zsVar3 = zpVar.b;
                         zsVar3.e = obtainStyledAttributes.getFloat(index, zsVar3.e);
                         break;
-                    case R.styleable.AppCompatTheme_editTextColor /* 69 */:
+                    case Rb.styleable.AppCompatTheme_editTextColor /* 69 */:
                         zpVar.d.ae = obtainStyledAttributes.getFloat(index, 1.0f);
                         break;
-                    case R.styleable.AppCompatTheme_editTextStyle /* 70 */:
+                    case Rb.styleable.AppCompatTheme_editTextStyle /* 70 */:
                         zpVar.d.af = obtainStyledAttributes.getFloat(index, 1.0f);
                         break;
-                    case R.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
+                    case Rb.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
                         Log.e("ConstraintSet", "CURRENTLY UNSUPPORTED");
                         break;
-                    case R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+                    case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
                         zq zqVar49 = zpVar.d;
                         zqVar49.ag = obtainStyledAttributes.getInt(index, zqVar49.ag);
                         break;
-                    case R.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
+                    case Rb.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
                         zq zqVar50 = zpVar.d;
                         zqVar50.ah = obtainStyledAttributes.getDimensionPixelSize(index, zqVar50.ah);
                         break;
-                    case R.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
+                    case Rb.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
                         zpVar.d.ak = obtainStyledAttributes.getString(index);
                         break;
-                    case R.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
+                    case Rb.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
                         zq zqVar51 = zpVar.d;
                         zqVar51.ao = obtainStyledAttributes.getBoolean(index, zqVar51.ao);
                         break;
-                    case R.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
+                    case Rb.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
                         zr zrVar3 = zpVar.c;
                         zrVar3.f = obtainStyledAttributes.getInt(index, zrVar3.f);
                         break;
-                    case R.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
+                    case Rb.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
                         zpVar.d.al = obtainStyledAttributes.getString(index);
                         break;
-                    case R.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
+                    case Rb.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
                         zs zsVar4 = zpVar.b;
                         zsVar4.c = obtainStyledAttributes.getInt(index, zsVar4.c);
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
                         zr zrVar4 = zpVar.c;
                         zrVar4.h = obtainStyledAttributes.getFloat(index, zrVar4.h);
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                         zq zqVar52 = zpVar.d;
                         zqVar52.am = obtainStyledAttributes.getBoolean(index, zqVar52.am);
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
                         zq zqVar53 = zpVar.d;
                         zqVar53.an = obtainStyledAttributes.getBoolean(index, zqVar53.an);
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
                         zr zrVar5 = zpVar.c;
                         zrVar5.d = obtainStyledAttributes.getInteger(index, zrVar5.d);
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
                         zt ztVar12 = zpVar.e;
                         ztVar12.j = a(obtainStyledAttributes, index, ztVar12.j);
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
                         zr zrVar6 = zpVar.c;
                         zrVar6.l = obtainStyledAttributes.getInteger(index, zrVar6.l);
                         break;
-                    case R.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
+                    case Rb.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
                         zr zrVar7 = zpVar.c;
                         zrVar7.k = obtainStyledAttributes.getFloat(index, zrVar7.k);
                         break;
-                    case R.styleable.AppCompatTheme_panelBackground /* 86 */:
+                    case Rb.styleable.AppCompatTheme_panelBackground /* 86 */:
                         TypedValue peekValue = obtainStyledAttributes.peekValue(index);
                         if (peekValue.type == 1) {
                             zpVar.c.o = obtainStyledAttributes.getResourceId(index, -1);
@@ -860,38 +860,38 @@ public final class zu {
                             zrVar9.n = obtainStyledAttributes.getInteger(index, zrVar9.o);
                             break;
                         }
-                    case R.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
+                    case Rb.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
                         Log.w("ConstraintSet", "unused attribute 0x" + Integer.toHexString(index) + "   " + sparseIntArray.get(index));
                         break;
-                    case R.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
-                    case R.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
-                    case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                    case Rb.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
+                    case Rb.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
+                    case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                     default:
                         Log.w("ConstraintSet", "Unknown attribute 0x" + Integer.toHexString(index) + "   " + sparseIntArray.get(index));
                         break;
-                    case R.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
+                    case Rb.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
                         zq zqVar54 = zpVar.d;
                         zqVar54.r = a(obtainStyledAttributes, index, zqVar54.r);
                         break;
-                    case R.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
+                    case Rb.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
                         zq zqVar55 = zpVar.d;
                         zqVar55.s = a(obtainStyledAttributes, index, zqVar55.s);
                         break;
-                    case R.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
+                    case Rb.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
                         zq zqVar56 = zpVar.d;
                         zqVar56.M = obtainStyledAttributes.getDimensionPixelSize(index, zqVar56.M);
                         break;
-                    case R.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
+                    case Rb.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
                         zq zqVar57 = zpVar.d;
                         zqVar57.T = obtainStyledAttributes.getDimensionPixelSize(index, zqVar57.T);
                         break;
-                    case R.styleable.AppCompatTheme_searchViewStyle /* 95 */:
+                    case Rb.styleable.AppCompatTheme_searchViewStyle /* 95 */:
                         e(zpVar.d, obtainStyledAttributes, index, 0);
                         break;
-                    case R.styleable.AppCompatTheme_seekBarStyle /* 96 */:
+                    case Rb.styleable.AppCompatTheme_seekBarStyle /* 96 */:
                         e(zpVar.d, obtainStyledAttributes, index, 1);
                         break;
-                    case R.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
+                    case Rb.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
                         zq zqVar58 = zpVar.d;
                         zqVar58.ap = obtainStyledAttributes.getInt(index, zqVar58.ap);
                         break;
@@ -923,17 +923,17 @@ public final class zu {
                 case 25:
                 case 26:
                 case 29:
-                case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 case 32:
-                case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
-                case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
-                case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
-                case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
-                case R.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
-                case R.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
-                case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
-                case R.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
-                case R.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
+                case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                case Rb.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
+                case Rb.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
+                case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                case Rb.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
+                case Rb.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
                 default:
                     Log.w("ConstraintSet", "Unknown attribute 0x" + Integer.toHexString(index) + "   " + c.get(index));
                     break;
@@ -997,97 +997,97 @@ public final class zu {
                 case 28:
                     zoVar.b(28, typedArray.getDimensionPixelSize(index, zpVar.d.H));
                     break;
-                case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     zoVar.b(31, typedArray.getDimensionPixelSize(index, zpVar.d.L));
                     break;
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                     zoVar.b(34, typedArray.getDimensionPixelSize(index, zpVar.d.I));
                     break;
-                case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                     zoVar.a(37, typedArray.getFloat(index, zpVar.d.y));
                     break;
-                case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                     int resourceId = typedArray.getResourceId(index, zpVar.a);
                     zpVar.a = resourceId;
                     zoVar.b(38, resourceId);
                     break;
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                     zoVar.a(39, typedArray.getFloat(index, zpVar.d.V));
                     break;
-                case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                     zoVar.a(40, typedArray.getFloat(index, zpVar.d.U));
                     break;
-                case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                     zoVar.b(41, typedArray.getInt(index, zpVar.d.W));
                     break;
-                case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                     zoVar.b(42, typedArray.getInt(index, zpVar.d.X));
                     break;
-                case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                     zoVar.a(43, typedArray.getFloat(index, zpVar.b.d));
                     break;
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                     zoVar.d(44, true);
                     zoVar.a(44, typedArray.getDimension(index, zpVar.e.o));
                     break;
-                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                     zoVar.a(45, typedArray.getFloat(index, zpVar.e.d));
                     break;
-                case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                     zoVar.a(46, typedArray.getFloat(index, zpVar.e.e));
                     break;
-                case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                     zoVar.a(47, typedArray.getFloat(index, zpVar.e.f));
                     break;
-                case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                     zoVar.a(48, typedArray.getFloat(index, zpVar.e.g));
                     break;
-                case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                     zoVar.a(49, typedArray.getDimension(index, zpVar.e.h));
                     break;
-                case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                     zoVar.a(50, typedArray.getDimension(index, zpVar.e.i));
                     break;
-                case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                     zoVar.a(51, typedArray.getDimension(index, zpVar.e.k));
                     break;
-                case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                     zoVar.a(52, typedArray.getDimension(index, zpVar.e.l));
                     break;
-                case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                     zoVar.a(53, typedArray.getDimension(index, zpVar.e.m));
                     break;
-                case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                     zoVar.b(54, typedArray.getInt(index, zpVar.d.Y));
                     break;
-                case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                     zoVar.b(55, typedArray.getInt(index, zpVar.d.Z));
                     break;
-                case R.styleable.AppCompatTheme_colorError /* 56 */:
+                case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                     zoVar.b(56, typedArray.getDimensionPixelSize(index, zpVar.d.aa));
                     break;
-                case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+                case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                     zoVar.b(57, typedArray.getDimensionPixelSize(index, zpVar.d.ab));
                     break;
-                case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+                case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                     zoVar.b(58, typedArray.getDimensionPixelSize(index, zpVar.d.ac));
                     break;
-                case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                     zoVar.b(59, typedArray.getDimensionPixelSize(index, zpVar.d.ad));
                     break;
-                case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                     zoVar.a(60, typedArray.getFloat(index, zpVar.e.c));
                     break;
-                case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                     zoVar.b(62, typedArray.getDimensionPixelSize(index, zpVar.d.B));
                     break;
-                case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+                case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                     zoVar.a(63, typedArray.getFloat(index, zpVar.d.C));
                     break;
                 case 64:
                     zoVar.b(64, a(typedArray, index, zpVar.c.c));
                     break;
-                case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                     if (typedArray.peekValue(index).type == 3) {
                         zoVar.c(65, typedArray.getString(index));
                         break;
@@ -1095,67 +1095,67 @@ public final class zu {
                         zoVar.c(65, yg.a[typedArray.getInteger(index, 0)]);
                         break;
                     }
-                case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                     zoVar.b(66, typedArray.getInt(index, 0));
                     break;
-                case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                     zoVar.a(67, typedArray.getFloat(index, zpVar.c.j));
                     break;
-                case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+                case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                     zoVar.a(68, typedArray.getFloat(index, zpVar.b.e));
                     break;
-                case R.styleable.AppCompatTheme_editTextColor /* 69 */:
+                case Rb.styleable.AppCompatTheme_editTextColor /* 69 */:
                     zoVar.a(69, typedArray.getFloat(index, 1.0f));
                     break;
-                case R.styleable.AppCompatTheme_editTextStyle /* 70 */:
+                case Rb.styleable.AppCompatTheme_editTextStyle /* 70 */:
                     zoVar.a(70, typedArray.getFloat(index, 1.0f));
                     break;
-                case R.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
+                case Rb.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
                     Log.e("ConstraintSet", "CURRENTLY UNSUPPORTED");
                     break;
-                case R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+                case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
                     zoVar.b(72, typedArray.getInt(index, zpVar.d.ag));
                     break;
-                case R.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
+                case Rb.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
                     zoVar.b(73, typedArray.getDimensionPixelSize(index, zpVar.d.ah));
                     break;
-                case R.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
+                case Rb.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
                     zoVar.c(74, typedArray.getString(index));
                     break;
-                case R.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
+                case Rb.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
                     zoVar.d(75, typedArray.getBoolean(index, zpVar.d.ao));
                     break;
-                case R.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
+                case Rb.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
                     zoVar.b(76, typedArray.getInt(index, zpVar.c.f));
                     break;
-                case R.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
+                case Rb.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
                     zoVar.c(77, typedArray.getString(index));
                     break;
-                case R.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
+                case Rb.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
                     zoVar.b(78, typedArray.getInt(index, zpVar.b.c));
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
                     zoVar.a(79, typedArray.getFloat(index, zpVar.c.h));
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                     zoVar.d(80, typedArray.getBoolean(index, zpVar.d.am));
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
                     zoVar.d(81, typedArray.getBoolean(index, zpVar.d.an));
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
                     zoVar.b(82, typedArray.getInteger(index, zpVar.c.d));
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
                     zoVar.b(83, a(typedArray, index, zpVar.e.j));
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
                     zoVar.b(84, typedArray.getInteger(index, zpVar.c.l));
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
                     zoVar.a(85, typedArray.getFloat(index, zpVar.c.k));
                     break;
-                case R.styleable.AppCompatTheme_panelBackground /* 86 */:
+                case Rb.styleable.AppCompatTheme_panelBackground /* 86 */:
                     TypedValue peekValue = typedArray.peekValue(index);
                     if (peekValue.type == 1) {
                         zpVar.c.o = typedArray.getResourceId(index, -1);
@@ -1188,25 +1188,25 @@ public final class zu {
                         zoVar.b(88, zpVar.c.n);
                         break;
                     }
-                case R.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
+                case Rb.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
                     Log.w("ConstraintSet", "unused attribute 0x" + Integer.toHexString(index) + "   " + c.get(index));
                     break;
-                case R.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
+                case Rb.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
                     zoVar.b(93, typedArray.getDimensionPixelSize(index, zpVar.d.M));
                     break;
-                case R.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
+                case Rb.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
                     zoVar.b(94, typedArray.getDimensionPixelSize(index, zpVar.d.T));
                     break;
-                case R.styleable.AppCompatTheme_searchViewStyle /* 95 */:
+                case Rb.styleable.AppCompatTheme_searchViewStyle /* 95 */:
                     e(zoVar, typedArray, index, 0);
                     break;
-                case R.styleable.AppCompatTheme_seekBarStyle /* 96 */:
+                case Rb.styleable.AppCompatTheme_seekBarStyle /* 96 */:
                     e(zoVar, typedArray, index, 1);
                     break;
-                case R.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
+                case Rb.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
                     zoVar.b(97, typedArray.getInt(index, zpVar.d.ap));
                     break;
-                case R.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
+                case Rb.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
                     if (typedArray.peekValue(index).type == 3) {
                         typedArray.getString(index);
                         break;

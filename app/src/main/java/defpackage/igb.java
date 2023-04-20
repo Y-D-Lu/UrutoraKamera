@@ -2,10 +2,12 @@ package defpackage;
 
 import android.view.View;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: igb  reason: default package */
 /* loaded from: classes.dex */
@@ -35,10 +37,10 @@ public final class igb implements gto {
     public final int a(gtv gtvVar) {
         gtv gtvVar2 = gtv.UNKNOWN;
         switch (gtvVar.ordinal()) {
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
-                return org.codeaurora.snapcam.R.string.speech_enhance_on_desc;
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-                return org.codeaurora.snapcam.R.string.speech_enhance_off_desc;
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                return R.string.speech_enhance_on_desc;
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                return R.string.speech_enhance_off_desc;
             default:
                 return 0;
         }
@@ -48,10 +50,10 @@ public final class igb implements gto {
     public final int b(gtv gtvVar) {
         gtv gtvVar2 = gtv.UNKNOWN;
         switch (gtvVar.ordinal()) {
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
-                return org.codeaurora.snapcam.R.drawable.gm_filled_record_voice_over_white_24;
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-                return org.codeaurora.snapcam.R.drawable.gm_filled_voice_over_off_white_24;
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                return R.drawable.gm_filled_record_voice_over_white_24;
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                return R.drawable.gm_filled_voice_over_off_white_24;
             default:
                 return 0;
         }
@@ -61,10 +63,10 @@ public final class igb implements gto {
     public final int c(gtv gtvVar) {
         gtv gtvVar2 = gtv.UNKNOWN;
         switch (gtvVar.ordinal()) {
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
-                return org.codeaurora.snapcam.R.string.speech_enhance_on;
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-                return org.codeaurora.snapcam.R.string.speech_enhance_off;
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                return R.string.speech_enhance_on;
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                return R.string.speech_enhance_off;
             default:
                 return 0;
         }
@@ -87,14 +89,14 @@ public final class igb implements gto {
                 }
                 lar.a();
                 ius iusVar = ihgVar.a;
-                View inflate = View.inflate(ihgVar.b, org.codeaurora.snapcam.R.layout.speech_btmsheet_disabled_content, null);
-                inflate.findViewById(org.codeaurora.snapcam.R.id.learn_more_about_speech_enhance).setOnClickListener(new View.OnClickListener() { // from class: ihe
+                View inflate = View.inflate(ihgVar.b, R.layout.speech_btmsheet_disabled_content, null);
+                inflate.findViewById(R.id.learn_more_about_speech_enhance).setOnClickListener(new View.OnClickListener() { // from class: ihe
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
                         ihgVar.a();
                     }
                 });
-                iusVar.g(10, org.codeaurora.snapcam.R.string.speech_btmsheet_not_available_title, inflate, null, ihgVar.b);
+                iusVar.g(10, R.string.speech_btmsheet_not_available_title, inflate, null, ihgVar.b);
             }
         };
     }

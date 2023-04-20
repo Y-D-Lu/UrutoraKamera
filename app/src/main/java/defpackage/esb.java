@@ -6,7 +6,7 @@ import android.hardware.camera2.params.MeteringRectangle;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.ScheduledExecutorService;
 

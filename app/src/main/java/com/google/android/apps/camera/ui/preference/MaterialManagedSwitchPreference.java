@@ -15,7 +15,7 @@ import android.widget.TextView;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.agm;
 import defpackage.ahm;

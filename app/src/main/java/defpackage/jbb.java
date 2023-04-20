@@ -15,7 +15,7 @@ import com.google.android.apps.camera.ui.elapsedtimeui.ElapsedTimerView;
 import com.google.android.apps.camera.ui.elapsedtimeui.LongPressElapsedTimeView;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.time.Duration;
 

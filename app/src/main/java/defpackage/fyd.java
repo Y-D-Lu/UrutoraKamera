@@ -2,7 +2,9 @@ package defpackage;
 
 import android.os.SystemClock;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: fyd  reason: default package */
@@ -26,10 +28,10 @@ public final class fyd implements fet {
                 } catch (InterruptedException e) {
                     ((oug) ((oug) ((oug) fyr.b.b()).h(e)).G((char) 1980)).o("photoSpherePreviewWriter interrupted.");
                 }
-                this.a.B.sendEmptyMessage(R.styleable.AppCompatTheme_textAppearanceListItemSecondary);
+                this.a.B.sendEmptyMessage(Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary);
                 return;
             case 1:
-                this.a.B.sendEmptyMessage(R.styleable.AppCompatTheme_textAppearanceListItemSmall);
+                this.a.B.sendEmptyMessage(Rb.styleable.AppCompatTheme_textAppearanceListItemSmall);
                 return;
             case 2:
                 fyr fyrVar = this.a;
@@ -40,8 +42,8 @@ public final class fyd implements fet {
                 this.a.t.h();
                 fyr fyrVar2 = this.a;
                 fyrVar2.p++;
-                fyrVar2.B.sendEmptyMessage(R.styleable.AppCompatTheme_switchStyle);
-                this.a.e.b(org.codeaurora.snapcam.R.raw.panorama_single_photo_shutter_sound);
+                fyrVar2.B.sendEmptyMessage(Rb.styleable.AppCompatTheme_switchStyle);
+                this.a.e.b(R.raw.panorama_single_photo_shutter_sound);
                 fyr fyrVar3 = this.a;
                 if (fyrVar3.o) {
                     return;

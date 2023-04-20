@@ -8,7 +8,7 @@ import android.view.ViewTreeObserver;
 import android.widget.ListAdapter;
 import android.widget.SpinnerAdapter;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: nn  reason: default package */

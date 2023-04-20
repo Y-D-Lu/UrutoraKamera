@@ -18,7 +18,9 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -129,7 +131,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
         this.p = a.getBoolean(20, true);
         f(a.getText(18));
         nznVar.i(2132083368);
-        nznVar.h(com.google.android.apps.camera.bottombar.R.style.TextAppearance_AppCompat_Widget_ActionBar_Title);
+        nznVar.h(Rb.style.TextAppearance_AppCompat_Widget_ActionBar_Title);
         if (a.hasValue(10)) {
             nznVar.i(a.getResourceId(10, 0));
         }

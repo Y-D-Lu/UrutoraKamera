@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: pde  reason: default package */
 /* loaded from: classes2.dex */
@@ -150,97 +150,97 @@ public enum pde implements ppg {
                 return WHITE_BALANCE_FLUORESCENT;
             case 29:
                 return BEAUTIFICATION_ON_LIGHT;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 return BEAUTIFICATION_ON_STRONG;
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 return BEAUTIFICATION_OFF;
             case 32:
                 return AF_ON;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 return AF_ON_LOCKED;
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 return AF_OFF_NEAR;
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 return AF_OFF_FAR;
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 return IMAX_AUDIO_ON;
-            case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                 return IMAX_AUDIO_OFF;
-            case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                 return SELECTED;
-            case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                 return UNSELECTED;
-            case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+            case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                 return HORIZONTAL_PHOTO_SPHERE;
-            case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+            case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                 return VERTICAL_PHOTO_SPHERE;
-            case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                 return WIDE_ANGLE_PHOTO_SPHERE;
-            case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                 return FISH_EYE_PHOTO_SPHERE;
-            case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+            case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                 return PHOTO_SPHERE;
-            case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+            case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                 return AF_OFF_INFINITY;
-            case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+            case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                 return SIXTEEN_BY_NINE;
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                 return FOUR_BY_THREE;
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 return FPS_24;
-            case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+            case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                 return RES_1080P;
-            case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+            case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                 return RES_2160P;
-            case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+            case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                 return PR_ON;
-            case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+            case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                 return PR_OFF;
-            case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+            case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                 return ASTRO_OFF;
-            case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+            case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                 return ASTRO_AUTO;
-            case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+            case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                 return PHOTO_FLASH_NS;
-            case R.styleable.AppCompatTheme_colorError /* 56 */:
+            case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                 return MIC_INPUT_PHONE;
-            case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+            case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                 return MIC_INPUT_EXT_WIRED;
-            case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+            case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                 return MIC_INPUT_EXT_BLUETOOTH;
-            case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+            case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                 return SWISS_OFF;
-            case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+            case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                 return SWISS_ON;
-            case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+            case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                 return LASAGNA_TR_SMALL;
-            case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+            case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                 return LASAGNA_TR_MEDIUM;
-            case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+            case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                 return LASAGNA_TR_LARGE;
             case 64:
                 return FLOUNDER_OFF;
-            case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+            case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                 return FLOUNDER_ON;
-            case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                 return ASPECT_RATIO_SIXTEEN_BY_NINE;
-            case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+            case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                 return ASPECT_RATIO_FOUR_BY_THREE;
-            case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+            case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                 return ASPECT_RATIO_THREE_BY_FOUR;
-            case R.styleable.AppCompatTheme_editTextColor /* 69 */:
+            case Rb.styleable.AppCompatTheme_editTextColor /* 69 */:
                 return ASPECT_RATIO_NINE_BY_SIXTEEN;
-            case R.styleable.AppCompatTheme_editTextStyle /* 70 */:
+            case Rb.styleable.AppCompatTheme_editTextStyle /* 70 */:
                 return COCKTAIL_PARTY_OFF;
-            case R.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
+            case Rb.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
                 return COCKTAIL_PARTY_ON;
-            case R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+            case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
                 return VIDEO_ASPECT_RATIO_SIXTEEN_BY_NINE;
-            case R.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
+            case Rb.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
                 return VIDEO_ASPECT_RATIO_FOUR_BY_THREE;
-            case R.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
                 return VIDEO_ASPECT_RATIO_THREE_BY_FOUR;
-            case R.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
                 return VIDEO_ASPECT_RATIO_NINE_BY_SIXTEEN;
             default:
                 return null;

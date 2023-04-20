@@ -2,7 +2,7 @@ package defpackage;
 
 import android.content.Context;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: bqa  reason: default package */
 /* loaded from: classes.dex */
@@ -16,6 +16,6 @@ public final class bqa {
         this.a = context;
         this.b = larVar;
         this.c = brcVar;
-        this.d = true != ddfVar.k(ddl.ay) ? 0 : R.style.Theme_Camera_MaterialAlertDialog;
+        this.d = true != ddfVar.k(ddl.ay) ? 0 : Rb.style.Theme_Camera_MaterialAlertDialog;
     }
 }

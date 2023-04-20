@@ -1,6 +1,6 @@
 package com.eszdman.rampatcher;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

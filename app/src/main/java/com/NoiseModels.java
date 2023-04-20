@@ -5,7 +5,7 @@ import android.hardware.camera2.CaptureResult;
 import android.util.Pair;
 
 import com.Fix.Pref;
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import defpackage.lvp;
 import defpackage.lzv;
@@ -688,11 +688,11 @@ public class NoiseModels {
                 pairArr = IMX689_ARNOVA_OFF;
                 pairArr2 = IMX689_ARNOVA_SC;
                 break;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 pairArr = LGV50_s5k3m5_3_OFF;
                 pairArr2 = LGV50_s5k3m5_3_SC;
                 break;
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 pairArr = LGV50_IMX363_0_OFF;
                 pairArr2 = LGV50_IMX363_0_SC;
                 break;
@@ -700,127 +700,127 @@ public class NoiseModels {
                 pairArr = LGV50_IMX351_2_OFF;
                 pairArr2 = LGV50_IMX351_2_SC;
                 break;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 pairArr = MI10U_2x_S5K2L7_OFF;
                 pairArr2 = MI10U_2x_S5K2L7_SC;
                 break;
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 pairArr = MI10U_5x_IMX586_OFF;
                 pairArr2 = MI10U_5x_IMX586_SC;
                 break;
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 pairArr = MI10U_Front_S5K3T2_OFF;
                 pairArr2 = MI10U_Front_S5K3T2_SC;
                 break;
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 pairArr = MI10U_Main_OV48C_OFF;
                 pairArr2 = MI10U_Main_OV48C_SC;
                 break;
-            case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                 pairArr = MI10U_UW_IMX350_OFF;
                 pairArr2 = MI10U_UW_IMX350_SC;
                 break;
-            case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                 pairArr = OV13855_ARCHESOLUS_OFF;
                 pairArr2 = OV13855_ARCHESOLUS_SC;
                 break;
-            case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                 pairArr = OV8856_ARNOVA_OFF;
                 pairArr2 = OV8856_ARNOVA_SC;
                 break;
-            case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+            case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                 pairArr = Mi10U_new_IMX586_4_OFF;
                 pairArr2 = Mi10U_new_IMX586_4_SC;
                 break;
-            case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+            case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                 pairArr = S5K2L4SX_OFF;
                 pairArr2 = S5K2L4SX_SC;
                 break;
-            case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                 pairArr = S5K3M5_OFF;
                 pairArr2 = S5K3M5_SC;
                 break;
-            case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                 pairArr = S5K3M5_SAP_OFF;
                 pairArr2 = S5K3M5_SAP_SC;
                 break;
-            case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+            case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                 pairArr = S5K3P9SN_OFF;
                 pairArr2 = S5K3P9SN_SC;
                 break;
-            case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+            case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                 pairArr = S5KGH1_OFF;
                 pairArr2 = S5KGH1_SC;
                 break;
-            case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+            case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                 pairArr = S5KGM2_CSTARK_OFF;
                 pairArr2 = S5KGM2_CSTARK_SC;
                 break;
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                 pairArr = SAVITAR_Macro_OFF;
                 pairArr2 = SAVITAR_Macro_SC;
                 break;
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 pairArr = Samsung_S5KGW1_2_OFF;
                 pairArr2 = Samsung_S5KGW1_2_SC;
                 break;
-            case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+            case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                 pairArr = UWA_SAVITAR_OFF;
                 pairArr2 = UWA_SAVITAR_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+            case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                 pairArr = RN9S_S5KGM2_0_OFF;
                 pairArr2 = RN9S_S5KGM2_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+            case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                 pairArr = RN9S_S5K5E9_22_OFF;
                 pairArr2 = RN9S_S5K5E9_22_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+            case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                 pairArr = RN9S_OV8856_21_OFF;
                 pairArr2 = RN9S_OV8856_21_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+            case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                 pairArr = RN9S_OV16A1Q_1_NOISE_fix_OFF;
                 pairArr2 = RN9S_OV16A1Q_1_NOISE_fix_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+            case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                 pairArr = RN9S_GC02M1_20_OFF;
                 pairArr2 = RN9S_GC02M1_20_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+            case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                 pairArr = Pocox3nfc_imx682_i_sony_661_OFF;
                 pairArr2 = Pocox3nfc_imx682_i_sony_661_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorError /* 56 */:
+            case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                 pairArr = PocoX3Pro_IMX582_new_0_OFF;
                 pairArr2 = PocoX3Pro_IMX582_new_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+            case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                 pairArr = PocoX3Pro_S5K3T2_new_1_OFF;
                 pairArr2 = PocoX3Pro_S5K3T2_new_1_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+            case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                 pairArr = PocoX3Pro_OV8856_3_OFF;
                 pairArr2 = PocoX3Pro_OV8856_3_SC;
                 break;
-            case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+            case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                 pairArr = PocoX3Pro_OV02B1B_4_OFF;
                 pairArr2 = PocoX3Pro_OV02B1B_4_SC;
                 break;
-            case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+            case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                 pairArr = LGV50_SL846_1_OFF;
                 pairArr2 = LGV50_SL846_1_SC;
                 break;
-            case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+            case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                 pairArr = LGV50_SL556_4_OFF;
                 pairArr2 = LGV50_SL556_4_SC;
                 break;
-            case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+            case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                 pairArr = Oneplus8Pro_IMX689_0_Enzo_OFF;
                 pairArr2 = Oneplus8Pro_IMX689_0_Enzo_SC;
                 break;
-            case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+            case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                 pairArr = Oneplus8Pro_IMX689_0_OFF;
                 pairArr2 = Oneplus8Pro_IMX689_0_SC;
                 break;
@@ -828,187 +828,187 @@ public class NoiseModels {
                 pairArr = Oneplus8pro_IMX471_1_OFF;
                 pairArr2 = Oneplus8pro_IMX471_1_SC;
                 break;
-            case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+            case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                 pairArr = Oneplus8pro_IMX586_2_OFF;
                 pairArr2 = Oneplus8pro_IMX586_2_SC;
                 break;
-            case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                 pairArr = Oneplus8pro_S5K3M5_3_OFF;
                 pairArr2 = Oneplus8pro_S5K3M5_3_SC;
                 break;
-            case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+            case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                 pairArr = RN7_s5kgm1_0_OFF;
                 pairArr2 = RN7_s5kgm1_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+            case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                 pairArr = Mi9_IMX586_0_OFF;
                 pairArr2 = Mi9_IMX586_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_editTextColor /* 69 */:
+            case Rb.styleable.AppCompatTheme_editTextColor /* 69 */:
                 pairArr = Mi9_S5K3M5_20_OFF;
                 pairArr2 = Mi9_S5K3M5_20_SC;
                 break;
-            case R.styleable.AppCompatTheme_editTextStyle /* 70 */:
+            case Rb.styleable.AppCompatTheme_editTextStyle /* 70 */:
                 pairArr = Mi9_IMX481_21_OFF;
                 pairArr2 = Mi9_IMX481_21_SC;
                 break;
-            case R.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
+            case Rb.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
                 pairArr = RN9PRO_GC8034_21_OFF;
                 pairArr2 = RN9PRO_GC8034_21_SC;
                 break;
-            case R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+            case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
                 pairArr = RN9PRO_GW1_0_OFF;
                 pairArr2 = RN9PRO_GW1_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
+            case Rb.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
                 pairArr = RN9PRO_SK5E9_22_OFF;
                 pairArr2 = RN9PRO_SK5E9_22_SC;
                 break;
-            case R.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
                 pairArr = RN10PRO_HM2_0_OFF;
                 pairArr2 = RN10PRO_HM2_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
                 pairArr = RN10PRO_IMX355_4_OFF;
                 pairArr2 = RN10PRO_IMX355_4_SC;
                 break;
-            case R.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
+            case Rb.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
                 pairArr = RN10PRO_IMX471_1_OFF;
                 pairArr2 = RN10PRO_IMX471_1_SC;
                 break;
-            case R.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
+            case Rb.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
                 pairArr = RN10PRO_OV5675_3_OFF;
                 pairArr2 = RN10PRO_OV5675_3_SC;
                 break;
-            case R.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
+            case Rb.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
                 pairArr = Mi11Pro_fix_S5KGN2_0_OFF;
                 pairArr2 = Mi11Pro_fix_S5KGN2_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
                 pairArr = Mi11Pro_OV13B10_2_OFF;
                 pairArr2 = Mi11Pro_OV13B10_2_SC;
                 break;
-            case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 pairArr = Mi11Pro_fix_OV08A10_3_OFF;
                 pairArr2 = Mi11Pro_fix_OV08A10_3_SC;
                 break;
-            case R.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
                 pairArr = MI11X_IMX582_0_OFF;
                 pairArr2 = MI11X_IMX582_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
                 pairArr = MI11X_S5K3T2_1_OFF;
                 pairArr2 = MI11X_S5K3T2_1_SC;
                 break;
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
                 pairArr = MI11X_IMX355_2_OFF;
                 pairArr2 = MI11X_IMX355_2_SC;
                 break;
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
                 pairArr = OnePlus9Pro_imx789_0_OFF;
                 pairArr2 = OnePlus9Pro_imx789_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
                 pairArr = OnePlus9Pro_imx471_1_OFF;
                 pairArr2 = OnePlus9Pro_imx471_1_SC;
                 break;
-            case R.styleable.AppCompatTheme_panelBackground /* 86 */:
+            case Rb.styleable.AppCompatTheme_panelBackground /* 86 */:
                 pairArr = OnePlus9Pro_imx766_2_OFF;
                 pairArr2 = OnePlus9Pro_imx766_2_SC;
                 break;
-            case R.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
+            case Rb.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
                 pairArr = OnePlus9Pro_ov08a10_3_OFF;
                 pairArr2 = OnePlus9Pro_ov08a10_3_SC;
                 break;
-            case R.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
+            case Rb.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
                 pairArr = RN9S_fix_S5KGM2_0_OFF;
                 pairArr2 = RN9S_fix_S5KGM2_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
+            case Rb.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
                 pairArr = GalaxyM51_IMX682_0_OFF;
                 pairArr2 = GalaxyM51_IMX682_0_SC;
                 break;
-            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                 pairArr = GalaxyM51_IMX616_1_OFF;
                 pairArr2 = GalaxyM51_IMX616_1_SC;
                 break;
-            case R.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
+            case Rb.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
                 pairArr = GalaxyM51_S5K3L6_2_OFF;
                 pairArr2 = GalaxyM51_S5K3L6_2_SC;
                 break;
-            case R.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
                 pairArr = GalaxyM51_IMX616_3_OFF;
                 pairArr2 = GalaxyM51_IMX616_3_SC;
                 break;
-            case R.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
                 pairArr = GalaxyM51_GC5035_54_OFF;
                 pairArr2 = GalaxyM51_GC5035_54_SC;
                 break;
-            case R.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
                 pairArr = MI11U_GN2_ID1_OFF;
                 pairArr2 = MI11U_GN2_ID1_SC;
                 break;
-            case R.styleable.AppCompatTheme_searchViewStyle /* 95 */:
+            case Rb.styleable.AppCompatTheme_searchViewStyle /* 95 */:
                 pairArr = Mi11U_GN2_ID1_Arnova_OFF;
                 pairArr2 = Mi11U_GN2_ID1_Arnova_SC;
                 break;
-            case R.styleable.AppCompatTheme_seekBarStyle /* 96 */:
+            case Rb.styleable.AppCompatTheme_seekBarStyle /* 96 */:
                 pairArr = PocoX3_imx682_0_DNF_OFF;
                 pairArr2 = PocoX3_imx682_0_DNF_SC;
                 break;
-            case R.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
+            case Rb.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
                 pairArr = PocoX3_s5k3t2_1_DNF_OFF;
                 pairArr2 = PocoX3_s5k3t2_1_DNF_SC;
                 break;
-            case R.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
+            case Rb.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
                 pairArr = PocoX3_hi1337_21_DNF_OFF;
                 pairArr2 = PocoX3_hi1337_21_DNF_SC;
                 break;
-            case R.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
+            case Rb.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
                 pairArr = PocoX3_hi259_22_DNF_OFF;
                 pairArr2 = PocoX3_hi259_22_DNF_SC;
                 break;
-            case R.styleable.AppCompatTheme_spinnerStyle /* 100 */:
+            case Rb.styleable.AppCompatTheme_spinnerStyle /* 100 */:
                 pairArr = IMX686_0_Necrys_OFF;
                 pairArr2 = IMX686_0_Necrys_SC;
                 break;
-            case R.styleable.AppCompatTheme_switchStyle /* 101 */:
+            case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
                 pairArr = OV8856_21_Necrys_OFF;
                 pairArr2 = OV8856_21_Necrys_SC;
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
                 pairArr = S20FE_S5K3L6_OFF;
                 pairArr2 = S20FE_S5K3L6_SC;
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
                 pairArr = S20FE_IMX616_cropped_OFF;
                 pairArr2 = S20FE_IMX616_cropped_SC;
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
                 pairArr = S20FE_IMX616_OFF;
                 pairArr2 = S20FE_IMX616_SC;
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
                 pairArr = S20FE_IMX555_OFF;
                 pairArr2 = S20FE_IMX555_SC;
                 break;
-            case R.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
+            case Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
                 pairArr = S20FE_HI847_OFF;
                 pairArr2 = S20FE_HI847_SC;
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
                 pairArr = RedmiNote8Pro_Wide_ov8856_OFF;
                 pairArr2 = RedmiNote8Pro_Wide_ov8856_SC;
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
                 pairArr = RedmiNote8Pro_Main16_S5KGW1_OFF;
                 pairArr2 = RedmiNote8Pro_Main16_S5KGW1_SC;
                 break;
-            case R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
                 pairArr = Mi11Lite_S5KGW3_OFF;
                 pairArr2 = Mi11Lite_S5KGW3_SC;
                 break;
-            case R.styleable.AppCompatTheme_textColorAlertDialogListItem /* 110 */:
+            case Rb.styleable.AppCompatTheme_textColorAlertDialogListItem /* 110 */:
                 pairArr = Mi11Ultra_IMX586_TELE_OFF;
                 pairArr2 = Mi11Ultra_IMX586_TELE_SC;
                 break;
@@ -1024,31 +1024,31 @@ public class NoiseModels {
                 pairArr = RealmeX2PROTest_GW1_OFF;
                 pairArr2 = RealmeX2PROTest_GW1_SC;
                 break;
-            case R.styleable.AppCompatTheme_tooltipForegroundColor /* 114 */:
+            case Rb.styleable.AppCompatTheme_tooltipForegroundColor /* 114 */:
                 pairArr = RealmeX2PRO_GW1_OFF;
                 pairArr2 = RealmeX2PRO_GW1_SC;
                 break;
-            case R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+            case Rb.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
                 pairArr = EdgeX30_JN1_OFF;
                 pairArr2 = EdgeX30_JN1_SC;
                 break;
-            case R.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
+            case Rb.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
                 pairArr = EdgeX30_OV50A_OFF;
                 pairArr2 = EdgeX30_OV50A_SC;
                 break;
-            case R.styleable.AppCompatTheme_windowActionBar /* 117 */:
+            case Rb.styleable.AppCompatTheme_windowActionBar /* 117 */:
                 pairArr = EdgeX30_OV60A_OFF;
                 pairArr2 = EdgeX30_OV60A_SC;
                 break;
-            case R.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
+            case Rb.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
                 pairArr = IMX586_MI9_OFF;
                 pairArr2 = IMX586_MI9_SC;
                 break;
-            case R.styleable.AppCompatTheme_windowActionModeOverlay /* 119 */:
+            case Rb.styleable.AppCompatTheme_windowActionModeOverlay /* 119 */:
                 pairArr = s5kjn1_RN11_OFF;
                 pairArr2 = s5kjn1_RN11_SC;
                 break;
-            case R.styleable.AppCompatTheme_windowFixedHeightMajor /* 120 */:
+            case Rb.styleable.AppCompatTheme_windowFixedHeightMajor /* 120 */:
                 pairArr = IMX582_MI9T_OFF;
                 pairArr2 = IMX582_MI9T_SC;
                 break;
@@ -1060,19 +1060,19 @@ public class NoiseModels {
                 pairArr = OV08A10_MN10b_OFF;
                 pairArr2 = OV08A10_MN10b_SC;
                 break;
-            case R.styleable.AppCompatTheme_windowFixedWidthMinor /* 123 */:
+            case Rb.styleable.AppCompatTheme_windowFixedWidthMinor /* 123 */:
                 pairArr = S5K2L7_MN10b_OFF;
                 pairArr2 = S5K2L7_MN10b_SC;
                 break;
-            case R.styleable.AppCompatTheme_windowMinWidthMajor /* 124 */:
+            case Rb.styleable.AppCompatTheme_windowMinWidthMajor /* 124 */:
                 pairArr = S5KHMX_MN10b_OFF;
                 pairArr2 = S5KHMX_MN10b_SC;
                 break;
-            case R.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
+            case Rb.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
                 pairArr = S5KHMX_MN10H_OFF;
                 pairArr2 = S5KHMX_MN10H_SC;
                 break;
-            case R.styleable.AppCompatTheme_windowNoTitle /* 126 */:
+            case Rb.styleable.AppCompatTheme_windowNoTitle /* 126 */:
                 pairArr = Manual_Noise_Modeler_OFF;
                 pairArr2 = Manual_Noise_Modeler;
                 break;

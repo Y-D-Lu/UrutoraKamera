@@ -7,7 +7,7 @@ import com.google.android.libraries.camera.jni.yuv.YuvUtilNative;
 import com.hdrindicator.DisplayHelper;
 import com.hdrindicator.HDRProgress;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

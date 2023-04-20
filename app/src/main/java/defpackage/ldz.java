@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -14,7 +14,7 @@ public enum ldz {
     FPS_60(60, 60, 60),
     FPS_60C_24E(60, 24, 60),
     FPS_60C_30E(60, 30, 60),
-    FPS_120_HFR_4X(R.styleable.AppCompatTheme_windowFixedHeightMajor, 30, R.styleable.AppCompatTheme_windowFixedHeightMajor),
+    FPS_120_HFR_4X(Rb.styleable.AppCompatTheme_windowFixedHeightMajor, 30, Rb.styleable.AppCompatTheme_windowFixedHeightMajor),
     FPS_240_HFR_8X(240, 30, 240);
     
     public final int i;

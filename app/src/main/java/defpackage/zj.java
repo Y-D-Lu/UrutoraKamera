@@ -2,7 +2,7 @@ package defpackage;
 
 import android.util.SparseIntArray;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: zj  reason: default package */
 /* loaded from: classes2.dex */
@@ -29,8 +29,8 @@ final class zj {
         sparseIntArray.append(65, 2);
         sparseIntArray.append(67, 3);
         sparseIntArray.append(66, 4);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 49);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceListItem, 50);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 49);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceListItem, 50);
         sparseIntArray.append(71, 5);
         sparseIntArray.append(72, 6);
         sparseIntArray.append(73, 7);
@@ -39,13 +39,13 @@ final class zj {
         sparseIntArray.append(89, 18);
         sparseIntArray.append(70, 19);
         sparseIntArray.append(69, 20);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, 21);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textColorAlertDialogListItem, 22);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, 23);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceListItemSmall, 24);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu, 25);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearancePopupMenuHeader, 26);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceListItemSecondary, 55);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, 21);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textColorAlertDialogListItem, 22);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, 23);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceListItemSmall, 24);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu, 25);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader, 26);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary, 55);
         sparseIntArray.append(111, 54);
         sparseIntArray.append(79, 29);
         sparseIntArray.append(94, 30);
@@ -60,7 +60,7 @@ final class zj {
         sparseIntArray.append(75, 32);
         sparseIntArray.append(100, 33);
         sparseIntArray.append(99, 34);
-        sparseIntArray.append(R.styleable.AppCompatTheme_switchStyle, 35);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_switchStyle, 35);
         sparseIntArray.append(77, 36);
         sparseIntArray.append(76, 37);
         sparseIntArray.append(78, 38);

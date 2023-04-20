@@ -2,7 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.autotimer.ui.AutoTimerIndicatorView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jph  reason: default package */
 /* loaded from: classes2.dex */

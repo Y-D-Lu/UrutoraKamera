@@ -2,7 +2,7 @@ package defpackage;
 
 import android.view.ViewStub;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jql  reason: default package */
 /* loaded from: classes2.dex */

@@ -6,7 +6,7 @@ import android.widget.ImageView;
 
 import com.google.android.apps.camera.ui.zoomlock.ZoomLockView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jrh  reason: default package */
 /* loaded from: classes2.dex */
@@ -73,7 +73,7 @@ public final class jrh {
         if (r6.h != false) goto L21;
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x00be, code lost:
-        r6.c.setImageDrawable(r6.d.getDrawable(org.codeaurora.snapcam.R.drawable.ic_lock_24dp_white, null));
+        r6.c.setImageDrawable(r6.d.getDrawable(R.drawable.ic_lock_24dp_white, null));
         r6.h = true;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x00cf, code lost:

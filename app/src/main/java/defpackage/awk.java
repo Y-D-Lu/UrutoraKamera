@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: awk  reason: default package */
 /* loaded from: classes.dex */
@@ -19,10 +19,10 @@ public final class awk implements Runnable {
     public final void run() {
         switch (this.c) {
             case 0:
-                this.b.c().obtainMessage(R.styleable.AppCompatTheme_textAppearanceListItem, this.a).sendToTarget();
+                this.b.c().obtainMessage(Rb.styleable.AppCompatTheme_textAppearanceListItem, this.a).sendToTarget();
                 return;
             default:
-                this.b.c().obtainMessage(R.styleable.AppCompatTheme_switchStyle, null).sendToTarget();
+                this.b.c().obtainMessage(Rb.styleable.AppCompatTheme_switchStyle, null).sendToTarget();
                 this.b.c().post(this.a.a);
                 return;
         }

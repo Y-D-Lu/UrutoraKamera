@@ -9,7 +9,7 @@ import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.view.Gravity;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.nio.ByteBuffer;
 
@@ -117,7 +117,7 @@ public final class bis extends Drawable implements Animatable, bix {
             return;
         }
         if (this.h) {
-            Gravity.apply(R.styleable.AppCompatTheme_windowActionModeOverlay, getIntrinsicWidth(), getIntrinsicHeight(), getBounds(), e());
+            Gravity.apply(Rb.styleable.AppCompatTheme_windowActionModeOverlay, getIntrinsicWidth(), getIntrinsicHeight(), getBounds(), e());
             this.h = false;
         }
         biz bizVar = this.a.a;

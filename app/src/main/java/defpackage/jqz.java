@@ -11,7 +11,7 @@ import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.google.android.apps.camera.zoomui.ZoomUi;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

@@ -3,7 +3,7 @@ package defpackage;
 import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jqc  reason: default package */
 /* loaded from: classes2.dex */

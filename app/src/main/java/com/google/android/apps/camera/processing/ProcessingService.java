@@ -12,7 +12,7 @@ import android.os.PowerManager;
 
 import com.Helper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.TimeUnit;
 

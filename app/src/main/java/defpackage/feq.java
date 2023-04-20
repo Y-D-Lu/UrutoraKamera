@@ -4,7 +4,7 @@ import android.widget.ImageView;
 
 import com.google.android.apps.camera.legacy.lightcycle.ui.PhotoSphereMessageOverlay;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: feq  reason: default package */
 /* loaded from: classes.dex */

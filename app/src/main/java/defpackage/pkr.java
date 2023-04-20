@@ -28,7 +28,7 @@ import com.SpatialGainMapValue;
 import com.custom.Astro;
 import com.custom.OneShot;
 import com.custom.slider;
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.googlex.gcam.AeShotParams;
 import com.google.googlex.gcam.AwbInfo;
 import com.google.googlex.gcam.BufferUtils;
@@ -159,7 +159,7 @@ public final class pkr {
                                 case 1:
                                     point = face.getRightEyePosition();
                                     break;
-                                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                                case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                                     point = face.getMouthPosition();
                                     break;
                             }

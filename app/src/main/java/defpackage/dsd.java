@@ -7,7 +7,7 @@ import android.os.Looper;
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionLayout;
 import com.google.googlex.gcam.Gcam;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;

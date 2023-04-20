@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.util.ArrayMap;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 import java.util.Map;
@@ -596,7 +596,7 @@ public final class czl implements iat, hzh, cyv {
                         switch (i) {
                             case 0:
                                 break;
-                            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                                 i2 = 4;
                                 break;
                             case 180:

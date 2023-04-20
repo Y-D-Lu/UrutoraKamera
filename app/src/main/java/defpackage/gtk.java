@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: gtk  reason: default package */
 /* loaded from: classes.dex */
@@ -54,7 +54,7 @@ public final class gtk {
         int i2 = this.c;
         String valueOf2 = String.valueOf(this.d);
         int length = String.valueOf(valueOf).length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_textAppearanceListItemSecondary + String.valueOf(valueOf2).length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary + String.valueOf(valueOf2).length());
         sb.append("ImmutableCategorySpec{category=");
         sb.append(valueOf);
         sb.append(", contentLabel=");

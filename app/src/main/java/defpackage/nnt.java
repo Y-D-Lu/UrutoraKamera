@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -90,10 +90,10 @@ public final class nnt implements qcn {
             case 29:
                 ovaVar = (ovg) ovkVar.b();
                 break;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 ovaVar = (ovg) ovkVar.c();
                 break;
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 ovaVar = (ovg) ovkVar.c();
                 break;
             case 32:
@@ -189,19 +189,19 @@ public final class nnt implements qcn {
             case 29:
                 str = "ERROR_UPLOAD_SERVER_FAILURE";
                 break;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 str = "ERROR_UPLOAD_DATA_FAILURE";
                 break;
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 str = "ERROR_UPLOAD_UNSPECIFIED";
                 break;
             case 32:
                 str = "ERROR_UPLOAD_IGNORABLE";
                 break;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 str = "ERROR_AUTO_IGNORABLE";
                 break;
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 str = "ERROR_UPLOAD_TOO_FREQUENT_ERRORS_PAUSING";
                 break;
             default:

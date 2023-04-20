@@ -13,6 +13,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: jux  reason: default package */
 /* loaded from: classes2.dex */
 public final class jux extends bu {
@@ -29,7 +31,7 @@ public final class jux extends bu {
 
     @Override // defpackage.bu
     public final View A(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        View inflate = layoutInflater.inflate(org.codeaurora.snapcam.R.layout.videoplayer_fragment, viewGroup, false);
+        View inflate = layoutInflater.inflate(R.layout.videoplayer_fragment, viewGroup, false);
         this.c = new jvk();
         jvb jvbVar = new jvb(new qkg() { // from class: juw
             @Override // defpackage.qkg
@@ -42,7 +44,7 @@ public final class jux extends bu {
         boolean z = this.l.getBoolean("auto_loop_enabled", false);
         final jwd jwdVar = new jwd(this.c, jvbVar, jvgVar, inflate, this.l.getBoolean("no_seek_bar", false));
         this.a = jwdVar;
-        jwdVar.f = (VideoView) jwdVar.d.findViewById(org.codeaurora.snapcam.R.id.video_view);
+        jwdVar.f = (VideoView) jwdVar.d.findViewById(R.id.video_view);
         jwdVar.f.setOnTouchListener(new View.OnTouchListener() { // from class: jwa
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
@@ -72,7 +74,7 @@ public final class jux extends bu {
             }
         });
         jwdVar.f.setWillNotDraw(false);
-        jwdVar.h = (ImageButton) jwdVar.d.findViewById(org.codeaurora.snapcam.R.id.videoplayer_pause_button);
+        jwdVar.h = (ImageButton) jwdVar.d.findViewById(R.id.videoplayer_pause_button);
         jwdVar.h.setOnClickListener(new View.OnClickListener() { // from class: jvz
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
@@ -91,7 +93,7 @@ public final class jux extends bu {
                 }
             }
         });
-        jwdVar.g = (ImageButton) jwdVar.d.findViewById(org.codeaurora.snapcam.R.id.videoplayer_play_button);
+        jwdVar.g = (ImageButton) jwdVar.d.findViewById(R.id.videoplayer_play_button);
         jwdVar.g.setOnClickListener(new View.OnClickListener() { // from class: jvz
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
@@ -110,12 +112,12 @@ public final class jux extends bu {
                 }
             }
         });
-        jwdVar.l = jwdVar.d.findViewById(org.codeaurora.snapcam.R.id.video_progress_group);
-        jwdVar.k = (SeekBar) jwdVar.d.findViewById(org.codeaurora.snapcam.R.id.video_player_progress);
+        jwdVar.l = jwdVar.d.findViewById(R.id.video_progress_group);
+        jwdVar.k = (SeekBar) jwdVar.d.findViewById(R.id.video_player_progress);
         jwdVar.k.setOnSeekBarChangeListener(new jwc(jwdVar));
-        jwdVar.i = (TextView) jwdVar.d.findViewById(org.codeaurora.snapcam.R.id.video_total_time);
-        jwdVar.j = (TextView) jwdVar.d.findViewById(org.codeaurora.snapcam.R.id.video_current_time);
-        jwdVar.o = jwdVar.d.findViewById(org.codeaurora.snapcam.R.id.video_view_holder);
+        jwdVar.i = (TextView) jwdVar.d.findViewById(R.id.video_total_time);
+        jwdVar.j = (TextView) jwdVar.d.findViewById(R.id.video_current_time);
+        jwdVar.o = jwdVar.d.findViewById(R.id.video_view_holder);
         if (this.b.g()) {
             this.a.f.setOnInfoListener((MediaPlayer.OnInfoListener) this.b.c());
         }

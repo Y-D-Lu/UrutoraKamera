@@ -10,7 +10,7 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.googlex.gcam.GcamModuleJNI;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.lasagna.LasagnaCallbacks;
@@ -406,13 +406,13 @@ public /* synthetic */ class plk {
                 case 13:
                     sb.append("\\r");
                     break;
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                     sb.append("\\\"");
                     break;
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                     sb.append("\\'");
                     break;
-                case R.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
+                case Rb.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
                     sb.append("\\\\");
                     break;
                 default:
@@ -889,199 +889,199 @@ public /* synthetic */ class plk {
                 return 29;
             case 29:
                 return 30;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 return 31;
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 return 32;
             case 32:
                 return 33;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 return 34;
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 return 35;
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 return 36;
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 return 37;
-            case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                 return 38;
-            case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                 return 39;
-            case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                 return 40;
-            case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+            case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                 return 41;
-            case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+            case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                 return 42;
-            case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                 return 43;
-            case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                 return 44;
-            case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+            case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                 return 45;
-            case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+            case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                 return 46;
-            case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+            case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                 return 47;
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                 return 48;
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 return 49;
-            case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+            case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                 return 50;
-            case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+            case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                 return 51;
-            case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+            case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                 return 52;
-            case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+            case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                 return 53;
-            case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+            case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                 return 54;
-            case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+            case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                 return 55;
-            case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+            case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                 return 56;
-            case R.styleable.AppCompatTheme_colorError /* 56 */:
+            case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                 return 57;
-            case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+            case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                 return 58;
-            case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+            case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                 return 59;
-            case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+            case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                 return 60;
-            case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+            case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                 return 61;
-            case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+            case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                 return 62;
-            case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+            case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                 return 63;
-            case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+            case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                 return 64;
             case 64:
                 return 65;
-            case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+            case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                 return 66;
-            case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                 return 67;
-            case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+            case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                 return 68;
-            case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+            case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                 return 69;
-            case R.styleable.AppCompatTheme_editTextColor /* 69 */:
+            case Rb.styleable.AppCompatTheme_editTextColor /* 69 */:
                 return 70;
-            case R.styleable.AppCompatTheme_editTextStyle /* 70 */:
+            case Rb.styleable.AppCompatTheme_editTextStyle /* 70 */:
                 return 71;
-            case R.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
+            case Rb.styleable.AppCompatTheme_homeAsUpIndicator /* 71 */:
                 return 72;
-            case R.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
+            case Rb.styleable.AppCompatTheme_imageButtonStyle /* 72 */:
                 return 73;
-            case R.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
+            case Rb.styleable.AppCompatTheme_listChoiceBackgroundIndicator /* 73 */:
                 return 74;
-            case R.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated /* 74 */:
                 return 75;
-            case R.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
+            case Rb.styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated /* 75 */:
                 return 76;
-            case R.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
+            case Rb.styleable.AppCompatTheme_listDividerAlertDialog /* 76 */:
                 return 77;
-            case R.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
+            case Rb.styleable.AppCompatTheme_listMenuViewStyle /* 77 */:
                 return 78;
-            case R.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
+            case Rb.styleable.AppCompatTheme_listPopupWindowStyle /* 78 */:
                 return 79;
-            case R.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeight /* 79 */:
                 return 80;
-            case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 return 81;
-            case R.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall /* 81 */:
                 return 82;
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingEnd /* 82 */:
                 return 83;
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingLeft /* 83 */:
                 return 84;
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingRight /* 84 */:
                 return 85;
-            case R.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemPaddingStart /* 85 */:
                 return 86;
-            case R.styleable.AppCompatTheme_panelBackground /* 86 */:
+            case Rb.styleable.AppCompatTheme_panelBackground /* 86 */:
                 return 87;
-            case R.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
+            case Rb.styleable.AppCompatTheme_panelMenuListTheme /* 87 */:
                 return 88;
-            case R.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
+            case Rb.styleable.AppCompatTheme_panelMenuListWidth /* 88 */:
                 return 89;
-            case R.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
+            case Rb.styleable.AppCompatTheme_popupMenuStyle /* 89 */:
                 return 90;
-            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                 return 91;
-            case R.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
+            case Rb.styleable.AppCompatTheme_radioButtonStyle /* 91 */:
                 return 92;
-            case R.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyle /* 92 */:
                 return 93;
-            case R.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyleIndicator /* 93 */:
                 return 94;
-            case R.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
+            case Rb.styleable.AppCompatTheme_ratingBarStyleSmall /* 94 */:
                 return 95;
-            case R.styleable.AppCompatTheme_searchViewStyle /* 95 */:
+            case Rb.styleable.AppCompatTheme_searchViewStyle /* 95 */:
                 return 96;
-            case R.styleable.AppCompatTheme_seekBarStyle /* 96 */:
+            case Rb.styleable.AppCompatTheme_seekBarStyle /* 96 */:
                 return 97;
-            case R.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
+            case Rb.styleable.AppCompatTheme_selectableItemBackground /* 97 */:
                 return 98;
-            case R.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
+            case Rb.styleable.AppCompatTheme_selectableItemBackgroundBorderless /* 98 */:
                 return 99;
-            case R.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
+            case Rb.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
                 return 100;
-            case R.styleable.AppCompatTheme_spinnerStyle /* 100 */:
-                return R.styleable.AppCompatTheme_switchStyle;
-            case R.styleable.AppCompatTheme_switchStyle /* 101 */:
-                return R.styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-            case R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
-                return R.styleable.AppCompatTheme_textAppearanceListItem;
-            case R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
-                return R.styleable.AppCompatTheme_textAppearanceListItemSecondary;
-            case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
-                return R.styleable.AppCompatTheme_textAppearanceListItemSmall;
-            case R.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
-                return R.styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-            case R.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
-                return R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-            case R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
-                return R.styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-            case R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
-                return R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-            case R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
-                return R.styleable.AppCompatTheme_textColorAlertDialogListItem;
-            case R.styleable.AppCompatTheme_textColorAlertDialogListItem /* 110 */:
+            case Rb.styleable.AppCompatTheme_spinnerStyle /* 100 */:
+                return Rb.styleable.AppCompatTheme_switchStyle;
+            case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
+                return Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+            case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+                return Rb.styleable.AppCompatTheme_textAppearanceListItem;
+            case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+                return Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary;
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+                return Rb.styleable.AppCompatTheme_textAppearanceListItemSmall;
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
+                return Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+            case Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
+                return Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
+                return Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+                return Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+            case Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu /* 109 */:
+                return Rb.styleable.AppCompatTheme_textColorAlertDialogListItem;
+            case Rb.styleable.AppCompatTheme_textColorAlertDialogListItem /* 110 */:
                 return 111;
             case 111:
                 return 112;
             case 112:
                 return 113;
             case 113:
-                return R.styleable.AppCompatTheme_tooltipForegroundColor;
-            case R.styleable.AppCompatTheme_tooltipForegroundColor /* 114 */:
-                return R.styleable.AppCompatTheme_tooltipFrameBackground;
-            case R.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
-                return R.styleable.AppCompatTheme_viewInflaterClass;
-            case R.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
-                return R.styleable.AppCompatTheme_windowActionBar;
-            case R.styleable.AppCompatTheme_windowActionBar /* 117 */:
-                return R.styleable.AppCompatTheme_windowActionBarOverlay;
-            case R.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
-                return R.styleable.AppCompatTheme_windowActionModeOverlay;
-            case R.styleable.AppCompatTheme_windowActionModeOverlay /* 119 */:
-                return R.styleable.AppCompatTheme_windowFixedHeightMajor;
-            case R.styleable.AppCompatTheme_windowFixedHeightMajor /* 120 */:
+                return Rb.styleable.AppCompatTheme_tooltipForegroundColor;
+            case Rb.styleable.AppCompatTheme_tooltipForegroundColor /* 114 */:
+                return Rb.styleable.AppCompatTheme_tooltipFrameBackground;
+            case Rb.styleable.AppCompatTheme_tooltipFrameBackground /* 115 */:
+                return Rb.styleable.AppCompatTheme_viewInflaterClass;
+            case Rb.styleable.AppCompatTheme_viewInflaterClass /* 116 */:
+                return Rb.styleable.AppCompatTheme_windowActionBar;
+            case Rb.styleable.AppCompatTheme_windowActionBar /* 117 */:
+                return Rb.styleable.AppCompatTheme_windowActionBarOverlay;
+            case Rb.styleable.AppCompatTheme_windowActionBarOverlay /* 118 */:
+                return Rb.styleable.AppCompatTheme_windowActionModeOverlay;
+            case Rb.styleable.AppCompatTheme_windowActionModeOverlay /* 119 */:
+                return Rb.styleable.AppCompatTheme_windowFixedHeightMajor;
+            case Rb.styleable.AppCompatTheme_windowFixedHeightMajor /* 120 */:
                 return 121;
             case 121:
                 return 122;
             case 122:
-                return R.styleable.AppCompatTheme_windowFixedWidthMinor;
-            case R.styleable.AppCompatTheme_windowFixedWidthMinor /* 123 */:
-                return R.styleable.AppCompatTheme_windowMinWidthMajor;
-            case R.styleable.AppCompatTheme_windowMinWidthMajor /* 124 */:
-                return R.styleable.AppCompatTheme_windowMinWidthMinor;
-            case R.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
-                return R.styleable.AppCompatTheme_windowNoTitle;
-            case R.styleable.AppCompatTheme_windowNoTitle /* 126 */:
+                return Rb.styleable.AppCompatTheme_windowFixedWidthMinor;
+            case Rb.styleable.AppCompatTheme_windowFixedWidthMinor /* 123 */:
+                return Rb.styleable.AppCompatTheme_windowMinWidthMajor;
+            case Rb.styleable.AppCompatTheme_windowMinWidthMajor /* 124 */:
+                return Rb.styleable.AppCompatTheme_windowMinWidthMinor;
+            case Rb.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
+                return Rb.styleable.AppCompatTheme_windowNoTitle;
+            case Rb.styleable.AppCompatTheme_windowNoTitle /* 126 */:
                 return 127;
             case 127:
                 return 128;

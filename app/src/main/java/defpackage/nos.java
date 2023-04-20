@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.UploadQueryer$snapshotOldestUploadAndMarkInProgress$2", c = "Queryer.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_buttonStyle})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.UploadQueryer$snapshotOldestUploadAndMarkInProgress$2", c = "Queryer.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_buttonStyle})
 /* renamed from: nos  reason: default package */
 /* loaded from: classes2.dex */
 public final class nos extends qmb implements qmu {

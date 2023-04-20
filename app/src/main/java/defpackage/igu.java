@@ -5,7 +5,7 @@ import android.view.View;
 
 import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.Executor;
 

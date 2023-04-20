@@ -25,6 +25,8 @@ import java.util.Vector;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: fdm  reason: default package */
 /* loaded from: classes.dex */
 public final class fdm implements GLSurfaceView.Renderer {
@@ -62,12 +64,12 @@ public final class fdm implements GLSurfaceView.Renderer {
     private final float[] O = new float[16];
     private final float[] P = new float[16];
     private final float[] Q = new float[16];
-    private final float[] R = new float[16];
+    private final float[] varR = new float[16];
     private float[] S = new float[16];
     private float T = 60.0f;
     private float U = 100.0f;
     private float V = 100.0f;
-    private int W = com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedHeightMajor;
+    private int W = com.google.android.apps.camera.bottombar.Rb.styleable.AppCompatTheme_windowFixedHeightMajor;
     private int X = 80;
     public boolean l = false;
     public boolean m = false;
@@ -86,7 +88,7 @@ public final class fdm implements GLSurfaceView.Renderer {
     private boolean aj = false;
     public boolean v = false;
     public boolean w = false;
-    public int x = org.codeaurora.snapcam.R.string.hit_target_to_start;
+    public int x = R.string.hit_target_to_start;
     private final fcw aw = new fcw();
     private boolean am = false;
     private long an = 0;
@@ -235,7 +237,7 @@ public final class fdm implements GLSurfaceView.Renderer {
         int i2 = this.G;
         this.G = i;
         this.w = false;
-        this.x = org.codeaurora.snapcam.R.string.hit_target_to_start;
+        this.x = R.string.hit_target_to_start;
         int i3 = i - 1;
         if (i != 0) {
             switch (i3) {
@@ -243,21 +245,21 @@ public final class fdm implements GLSurfaceView.Renderer {
                     this.d.e(0);
                     break;
                 case 1:
-                    this.x = org.codeaurora.snapcam.R.string.tap_to_start;
+                    this.x = R.string.tap_to_start;
                     this.e.a();
                     this.d.e(1);
                     this.aj = true;
                     this.aw.b();
                     break;
                 case 2:
-                    this.x = org.codeaurora.snapcam.R.string.tap_to_start;
+                    this.x = R.string.tap_to_start;
                     this.e.a();
                     this.d.e(2);
                     this.aj = true;
                     this.aw.b();
                     break;
                 case 3:
-                    this.x = org.codeaurora.snapcam.R.string.tap_to_start;
+                    this.x = R.string.tap_to_start;
                     this.e.a();
                     this.d.e(3);
                     this.aj = true;
@@ -393,14 +395,14 @@ public final class fdm implements GLSurfaceView.Renderer {
                 fdt fdtVar3 = this.h;
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inScaled = false;
-                Bitmap decodeResource = BitmapFactory.decodeResource(fdvVar.c.getResources(), org.codeaurora.snapcam.R.drawable.pano_target_default, options);
+                Bitmap decodeResource = BitmapFactory.decodeResource(fdvVar.c.getResources(), R.drawable.pano_target_default, options);
                 if (decodeResource != null) {
                     decodeResource.recycle();
                 }
                 fdvVar.e = new fct();
-                fdvVar.e.g(fdvVar.c, org.codeaurora.snapcam.R.drawable.pano_target_default, -1.0f);
+                fdvVar.e.g(fdvVar.c, R.drawable.pano_target_default, -1.0f);
                 fdvVar.f = new fct();
-                fdvVar.f.g(fdvVar.c, org.codeaurora.snapcam.R.drawable.pano_target_activated, -1.0f);
+                fdvVar.f.g(fdvVar.c, R.drawable.pano_target_activated, -1.0f);
                 try {
                     fdvVar.g = new fei();
                     fdvVar.h = new feh();
@@ -420,7 +422,7 @@ public final class fdm implements GLSurfaceView.Renderer {
                 BitmapFactory.Options options2 = new BitmapFactory.Options();
                 options2.inScaled = false;
                 options2.inJustDecodeBounds = true;
-                BitmapFactory.decodeResource(context.getResources(), org.codeaurora.snapcam.R.drawable.focus_quadrant_1, options2);
+                BitmapFactory.decodeResource(context.getResources(), R.drawable.focus_quadrant_1, options2);
                 int a2 = (int) (new axn(options2.outWidth, options2.outHeight).a() * 0.85f);
                 int i4 = this.ac / 2;
                 float f5 = this.ab / 2;
@@ -428,8 +430,8 @@ public final class fdm implements GLSurfaceView.Renderer {
                 PointF pointF2 = new PointF(f5, i4 - a2);
                 this.f = new fco();
                 this.g = new fco();
-                this.f.g(this.as, org.codeaurora.snapcam.R.drawable.pano_alignhint_up, -1.0f);
-                this.g.g(this.as, org.codeaurora.snapcam.R.drawable.pano_alignhint_down, -1.0f);
+                this.f.g(this.as, R.drawable.pano_alignhint_up, -1.0f);
+                this.g.g(this.as, R.drawable.pano_alignhint_down, -1.0f);
                 this.f.b(pointF);
                 this.g.b(pointF2);
                 try {
@@ -698,8 +700,8 @@ public final class fdm implements GLSurfaceView.Renderer {
                         if (elapsedRealtimeNanos3 / 1.0E9d > 0.25d) {
                             this.am = false;
                             PhotoSphereMessageOverlay photoSphereMessageOverlay = this.e;
-                            photoSphereMessageOverlay.c(org.codeaurora.snapcam.R.string.too_fast);
-                            photoSphereMessageOverlay.a.postDelayed(new fep((TextView) photoSphereMessageOverlay.findViewById(org.codeaurora.snapcam.R.id.short_info_message)), 750L);
+                            photoSphereMessageOverlay.c(R.string.too_fast);
+                            photoSphereMessageOverlay.a.postDelayed(new fep((TextView) photoSphereMessageOverlay.findViewById(R.id.short_info_message)), 750L);
                             c3 = 0;
                         }
                     }
@@ -798,7 +800,7 @@ public final class fdm implements GLSurfaceView.Renderer {
             if (this.w) {
                 this.e.d(true, 0);
             }
-            Matrix.setIdentityM(this.R, 0);
+            Matrix.setIdentityM(this.varR, 0);
         } catch (Exception e) {
             e.printStackTrace();
         }

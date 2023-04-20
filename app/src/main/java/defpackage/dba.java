@@ -2,7 +2,7 @@ package defpackage;
 
 import android.util.Pair;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.coach.CameraCoachHudView;
 
 import java.util.concurrent.ScheduledExecutorService;
@@ -179,7 +179,7 @@ public final class dba implements lyy, iat, ian {
                         case 0:
                             pair = new Pair(Float.valueOf((float) Math.asin(jtzVar4.a(1, 2))), Float.valueOf(-((float) Math.asin(jtzVar4.a(0, 2)))));
                             break;
-                        case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                        case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                             pair = new Pair(Float.valueOf((float) Math.asin(jtzVar4.a(2, 0))), Float.valueOf((float) Math.asin(jtzVar4.a(1, 0))));
                             break;
                         case 180:

@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.internal.common.TogglingData;
@@ -89,7 +89,7 @@ final class kpt extends kpy {
         new ksg(Looper.getMainLooper()).post(new Runnable() { // from class: kps
             @Override // java.lang.Runnable
             public final void run() {
-                activity.startActivityForResult(intent, R.styleable.AppCompatTheme_windowFixedWidthMinor);
+                activity.startActivityForResult(intent, Rb.styleable.AppCompatTheme_windowFixedWidthMinor);
             }
         });
         kpuVar.j(Status.a);

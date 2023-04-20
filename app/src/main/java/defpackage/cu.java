@@ -17,6 +17,8 @@ import android.view.animation.Animation;
 
 import androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;
 
+import com.google.android.apps.camera.bottombar.Rb;
+
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
@@ -805,10 +807,10 @@ public final class cu {
         if (aa == null || buVar.n() + buVar.o() + buVar.p() + buVar.q() <= 0) {
             return;
         }
-        if (aa.getTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag) == null) {
-            aa.setTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag, buVar);
+        if (aa.getTag(Rb.id.visible_removing_fragment_view_tag) == null) {
+            aa.setTag(Rb.id.visible_removing_fragment_view_tag, buVar);
         }
-        ((bu) aa.getTag(com.google.android.apps.camera.bottombar.R.id.visible_removing_fragment_view_tag)).T(buVar.V());
+        ((bu) aa.getTag(Rb.id.visible_removing_fragment_view_tag)).T(buVar.V());
     }
 
     private final void ak() {

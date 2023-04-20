@@ -19,7 +19,6 @@ import android.os.HandlerThread;
 import android.view.Surface;
 
 import java.io.FileDescriptor;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Timer;
@@ -28,6 +27,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ipf  reason: default package */
 /* loaded from: classes.dex */
@@ -49,7 +50,7 @@ public final class ipf {
     public double O;
     public double P;
     public long Q;
-    public long R;
+    public long varR;
     public final emb S;
     private final isa T;
     private final cpj U;
@@ -480,7 +481,7 @@ public final class ipf {
             this.j.fB(inr.STATE_PRE_RECORDING);
             this.C.d();
             this.q.c(new iot(this, 1));
-            this.h.b(org.codeaurora.snapcam.R.raw.video_start);
+            this.h.b(R.raw.video_start);
             this.w.e();
             this.Y.a();
             final ioq ioqVar = this.B;
@@ -784,6 +785,6 @@ public final class ipf {
         this.Y.b();
         h(true);
         this.q.c(new iot(this, 0));
-        this.h.b(org.codeaurora.snapcam.R.raw.video_stop);
+        this.h.b(R.raw.video_stop);
     }
 }

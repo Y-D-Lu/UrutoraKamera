@@ -17,6 +17,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: iqj  reason: default package */
 /* loaded from: classes.dex */
 public final class iqj {
@@ -37,7 +39,7 @@ public final class iqj {
     public View O;
     public ViewGroup P;
     public ViewGroup Q;
-    public ViewGroup R;
+    public ViewGroup varR;
     public int S;
     public final jjp T;
     private final lzi U;
@@ -166,10 +168,10 @@ public final class iqj {
                 }
                 if (!iqjVar.k.k(dcu.J)) {
                     irj irjVar = iqjVar.i.f;
-                    irjVar.setBackground(irjVar.b.getDrawable(org.codeaurora.snapcam.R.drawable.bg_frame_based_timer, null));
+                    irjVar.setBackground(irjVar.b.getDrawable(R.drawable.bg_frame_based_timer, null));
                     irr irrVar = iqjVar.v.o;
                     if (irrVar != null) {
-                        irrVar.setBackground(irrVar.a.getResources().getDrawable(org.codeaurora.snapcam.R.drawable.bg_speed_up_seekbar, null));
+                        irrVar.setBackground(irrVar.a.getResources().getDrawable(R.drawable.bg_speed_up_seekbar, null));
                     }
                 }
                 ObjectAnimator objectAnimator = iqjVar.G;
@@ -178,8 +180,8 @@ public final class iqj {
                 }
                 if (z2) {
                     iqjVar.o.e();
-                    if (iqjVar.R.indexOfChild(iqjVar.N) != -1) {
-                        iqjVar.R.removeView(iqjVar.N);
+                    if (iqjVar.varR.indexOfChild(iqjVar.N) != -1) {
+                        iqjVar.varR.removeView(iqjVar.N);
                     }
                     if (iqjVar.P.indexOfChild(iqjVar.D) != -1) {
                         iqjVar.P.removeView(iqjVar.D);
@@ -219,7 +221,7 @@ public final class iqj {
             jgvVar.i = 2;
             jgvVar.a = true;
             jgvVar.f = this.g;
-            jgvVar.e = this.g.getResources().getString(org.codeaurora.snapcam.R.string.notification_static_recording_af_locked);
+            jgvVar.e = this.g.getResources().getString(R.string.notification_static_recording_af_locked);
             jgvVar.h = this.k.k(ddl.ay);
             this.V = jgvVar.a();
         }

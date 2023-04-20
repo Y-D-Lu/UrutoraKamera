@@ -9,7 +9,7 @@ import androidx.preference.PreferenceScreen;
 
 import com.google.android.apps.camera.ui.preference.MaterialManagedSwitchPreference;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

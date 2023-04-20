@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.lang.reflect.Field;
@@ -1596,22 +1596,22 @@ public final class pqo implements prb {
                 case 29:
                     i2 += prc.z(s, (List) unsafe.getObject(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                     i2 += prc.s(s, (List) unsafe.getObject(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     i2 += prc.t(s, (List) unsafe.getObject(obj, D));
                     break;
                 case 32:
                     i2 += prc.u(s, (List) unsafe.getObject(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                     i2 += prc.x(s, (List) unsafe.getObject(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                     i2 += prc.y(s, (List) unsafe.getObject(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                     int e = prc.e((List) unsafe.getObject(obj, D));
                     if (e > 0) {
                         i2 += pom.ab(s) + pom.ad(e) + e;
@@ -1619,7 +1619,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                     int d = prc.d((List) unsafe.getObject(obj, D));
                     if (d > 0) {
                         i2 += pom.ab(s) + pom.ad(d) + d;
@@ -1627,7 +1627,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                     int h = prc.h((List) unsafe.getObject(obj, D));
                     if (h > 0) {
                         i2 += pom.ab(s) + pom.ad(h) + h;
@@ -1635,7 +1635,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                     int o = prc.o((List) unsafe.getObject(obj, D));
                     if (o > 0) {
                         i2 += pom.ab(s) + pom.ad(o) + o;
@@ -1643,7 +1643,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                     int g = prc.g((List) unsafe.getObject(obj, D));
                     if (g > 0) {
                         i2 += pom.ab(s) + pom.ad(g) + g;
@@ -1651,7 +1651,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                     int e2 = prc.e((List) unsafe.getObject(obj, D));
                     if (e2 > 0) {
                         i2 += pom.ab(s) + pom.ad(e2) + e2;
@@ -1659,7 +1659,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                     int d2 = prc.d((List) unsafe.getObject(obj, D));
                     if (d2 > 0) {
                         i2 += pom.ab(s) + pom.ad(d2) + d2;
@@ -1667,7 +1667,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                     int a2 = prc.a((List) unsafe.getObject(obj, D));
                     if (a2 > 0) {
                         i2 += pom.ab(s) + pom.ad(a2) + a2;
@@ -1675,7 +1675,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                     int n = prc.n((List) unsafe.getObject(obj, D));
                     if (n > 0) {
                         i2 += pom.ab(s) + pom.ad(n) + n;
@@ -1683,7 +1683,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                     int c = prc.c((List) unsafe.getObject(obj, D));
                     if (c > 0) {
                         i2 += pom.ab(s) + pom.ad(c) + c;
@@ -1691,7 +1691,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                     int d3 = prc.d((List) unsafe.getObject(obj, D));
                     if (d3 > 0) {
                         i2 += pom.ab(s) + pom.ad(d3) + d3;
@@ -1699,7 +1699,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                     int e3 = prc.e((List) unsafe.getObject(obj, D));
                     if (e3 > 0) {
                         i2 += pom.ab(s) + pom.ad(e3) + e3;
@@ -1707,7 +1707,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                     int k = prc.k((List) unsafe.getObject(obj, D));
                     if (k > 0) {
                         i2 += pom.ab(s) + pom.ad(k) + k;
@@ -1715,7 +1715,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                     int l = prc.l((List) unsafe.getObject(obj, D));
                     if (l > 0) {
                         i2 += pom.ab(s) + pom.ad(l) + l;
@@ -1723,69 +1723,69 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                     i2 += prc.f(s, (List) unsafe.getObject(obj, D), G(i5));
                     break;
-                case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                     i2 += plk.aO(s, unsafe.getObject(obj, D), H(i5));
                     break;
-                case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.aw(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.az(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.O(s, E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.ae(s, E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.M(s, t(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorError /* 56 */:
+                case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.ay(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+                case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.ax(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+                case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.av(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                     if (U(obj, s, i5)) {
                         Object object2 = unsafe.getObject(obj, D);
                         if (object2 instanceof poc) {
@@ -1798,28 +1798,28 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                     if (U(obj, s, i5)) {
                         i2 += prc.i(s, unsafe.getObject(obj, D), G(i5));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.H(s, (poc) unsafe.getObject(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.ac(s, t(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+                case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.J(s, t(obj, D));
                         break;
@@ -1833,28 +1833,28 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.aB(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.V(s, t(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.X(s, E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+                case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                     if (U(obj, s, i5)) {
                         i2 += pom.K(s, (pqm) unsafe.getObject(obj, D), G(i5));
                         break;
@@ -2059,22 +2059,22 @@ public final class pqo implements prb {
                 case 29:
                     i += prc.z(s, J(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                     i += prc.s(s, J(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     i += prc.t(s, J(obj, D));
                     break;
                 case 32:
                     i += prc.u(s, J(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                     i += prc.x(s, J(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                     i += prc.y(s, J(obj, D));
                     break;
-                case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                     int e = prc.e((List) unsafe.getObject(obj, D));
                     if (e > 0) {
                         i += pom.ab(s) + pom.ad(e) + e;
@@ -2082,7 +2082,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                     int d = prc.d((List) unsafe.getObject(obj, D));
                     if (d > 0) {
                         i += pom.ab(s) + pom.ad(d) + d;
@@ -2090,7 +2090,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                     int h2 = prc.h((List) unsafe.getObject(obj, D));
                     if (h2 > 0) {
                         i += pom.ab(s) + pom.ad(h2) + h2;
@@ -2098,7 +2098,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                     int o = prc.o((List) unsafe.getObject(obj, D));
                     if (o > 0) {
                         i += pom.ab(s) + pom.ad(o) + o;
@@ -2106,7 +2106,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                     int g = prc.g((List) unsafe.getObject(obj, D));
                     if (g > 0) {
                         i += pom.ab(s) + pom.ad(g) + g;
@@ -2114,7 +2114,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                     int e2 = prc.e((List) unsafe.getObject(obj, D));
                     if (e2 > 0) {
                         i += pom.ab(s) + pom.ad(e2) + e2;
@@ -2122,7 +2122,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                     int d2 = prc.d((List) unsafe.getObject(obj, D));
                     if (d2 > 0) {
                         i += pom.ab(s) + pom.ad(d2) + d2;
@@ -2130,7 +2130,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                     int a2 = prc.a((List) unsafe.getObject(obj, D));
                     if (a2 > 0) {
                         i += pom.ab(s) + pom.ad(a2) + a2;
@@ -2138,7 +2138,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                     int n = prc.n((List) unsafe.getObject(obj, D));
                     if (n > 0) {
                         i += pom.ab(s) + pom.ad(n) + n;
@@ -2146,7 +2146,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                     int c = prc.c((List) unsafe.getObject(obj, D));
                     if (c > 0) {
                         i += pom.ab(s) + pom.ad(c) + c;
@@ -2154,7 +2154,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                     int d3 = prc.d((List) unsafe.getObject(obj, D));
                     if (d3 > 0) {
                         i += pom.ab(s) + pom.ad(d3) + d3;
@@ -2162,7 +2162,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                     int e3 = prc.e((List) unsafe.getObject(obj, D));
                     if (e3 > 0) {
                         i += pom.ab(s) + pom.ad(e3) + e3;
@@ -2170,7 +2170,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                     int k = prc.k((List) unsafe.getObject(obj, D));
                     if (k > 0) {
                         i += pom.ab(s) + pom.ad(k) + k;
@@ -2178,7 +2178,7 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                     int l = prc.l((List) unsafe.getObject(obj, D));
                     if (l > 0) {
                         i += pom.ab(s) + pom.ad(l) + l;
@@ -2186,69 +2186,69 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                     i += prc.f(s, J(obj, D), G(i2));
                     break;
-                case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                     i += plk.aO(s, prv.h(obj, D), H(i2));
                     break;
-                case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                     if (U(obj, s, i2)) {
                         i += pom.aw(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                     if (U(obj, s, i2)) {
                         i += pom.az(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                     if (U(obj, s, i2)) {
                         i += pom.O(s, E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                     if (U(obj, s, i2)) {
                         i += pom.ae(s, E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                     if (U(obj, s, i2)) {
                         i += pom.M(s, t(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorError /* 56 */:
+                case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                     if (U(obj, s, i2)) {
                         i += pom.ay(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+                case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                     if (U(obj, s, i2)) {
                         i += pom.ax(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+                case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                     if (U(obj, s, i2)) {
                         i += pom.av(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                     if (U(obj, s, i2)) {
                         Object h3 = prv.h(obj, D);
                         if (h3 instanceof poc) {
@@ -2261,28 +2261,28 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                     if (U(obj, s, i2)) {
                         i += prc.i(s, prv.h(obj, D), G(i2));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                     if (U(obj, s, i2)) {
                         i += pom.H(s, (poc) prv.h(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                     if (U(obj, s, i2)) {
                         i += pom.ac(s, t(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+                case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                     if (U(obj, s, i2)) {
                         i += pom.J(s, t(obj, D));
                         break;
@@ -2296,28 +2296,28 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                     if (U(obj, s, i2)) {
                         i += pom.aB(s);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                     if (U(obj, s, i2)) {
                         i += pom.V(s, t(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                     if (U(obj, s, i2)) {
                         i += pom.X(s, E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+                case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                     if (U(obj, s, i2)) {
                         i += pom.K(s, (pqm) prv.h(obj, D), G(i2));
                         break;
@@ -2400,22 +2400,22 @@ public final class pqo implements prb {
         Unsafe unsafe = b;
         long j2 = this.c[i8 + 2] & 1048575;
         switch (i7) {
-            case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+            case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                 if (i5 == 1) {
                     unsafe.putObject(obj, j, Double.valueOf(plk.m(bArr, i)));
                     unsafe.putInt(obj, j2, i4);
                     return i + 8;
                 }
                 break;
-            case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+            case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                 if (i5 == 5) {
                     unsafe.putObject(obj, j, Float.valueOf(plk.n(bArr, i)));
                     unsafe.putInt(obj, j2, i4);
                     return i + 4;
                 }
                 break;
-            case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
-            case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+            case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+            case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                 if (i5 == 0) {
                     int A = plk.A(bArr, i, pnrVar);
                     unsafe.putObject(obj, j, Long.valueOf(pnrVar.b));
@@ -2423,8 +2423,8 @@ public final class pqo implements prb {
                     return A;
                 }
                 break;
-            case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
-            case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+            case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+            case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                 if (i5 == 0) {
                     int x = plk.x(bArr, i, pnrVar);
                     unsafe.putObject(obj, j, Integer.valueOf(pnrVar.a));
@@ -2432,15 +2432,15 @@ public final class pqo implements prb {
                     return x;
                 }
                 break;
-            case R.styleable.AppCompatTheme_colorError /* 56 */:
-            case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+            case Rb.styleable.AppCompatTheme_colorError /* 56 */:
+            case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                 if (i5 == 1) {
                     unsafe.putObject(obj, j, Long.valueOf(plk.C(bArr, i)));
                     unsafe.putInt(obj, j2, i4);
                     return i + 8;
                 }
                 break;
-            case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+            case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
             case 64:
                 if (i5 == 5) {
                     unsafe.putObject(obj, j, Integer.valueOf(plk.p(bArr, i)));
@@ -2448,7 +2448,7 @@ public final class pqo implements prb {
                     return i + 4;
                 }
                 break;
-            case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+            case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                 if (i5 == 0) {
                     int A2 = plk.A(bArr, i, pnrVar);
                     unsafe.putObject(obj, j, Boolean.valueOf(pnrVar.b != 0));
@@ -2456,7 +2456,7 @@ public final class pqo implements prb {
                     return A2;
                 }
                 break;
-            case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+            case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                 if (i5 == 2) {
                     int x2 = plk.x(bArr, i, pnrVar);
                     int i9 = pnrVar.a;
@@ -2472,7 +2472,7 @@ public final class pqo implements prb {
                     return x2;
                 }
                 break;
-            case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+            case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                 if (i5 == 2) {
                     int r = plk.r(G(i8), bArr, i, i2, pnrVar);
                     Object object = unsafe.getInt(obj, j2) == i4 ? unsafe.getObject(obj, j) : null;
@@ -2485,7 +2485,7 @@ public final class pqo implements prb {
                     return r;
                 }
                 break;
-            case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+            case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                 if (i5 == 2) {
                     int o = plk.o(bArr, i, pnrVar);
                     unsafe.putObject(obj, j, pnrVar.c);
@@ -2493,7 +2493,7 @@ public final class pqo implements prb {
                     return o;
                 }
                 break;
-            case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+            case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                 if (i5 == 0) {
                     int x3 = plk.x(bArr, i, pnrVar);
                     int i10 = pnrVar.a;
@@ -2507,7 +2507,7 @@ public final class pqo implements prb {
                     return x3;
                 }
                 break;
-            case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                 if (i5 == 0) {
                     int x4 = plk.x(bArr, i, pnrVar);
                     unsafe.putObject(obj, j, Integer.valueOf(poh.F(pnrVar.a)));
@@ -2515,7 +2515,7 @@ public final class pqo implements prb {
                     return x4;
                 }
                 break;
-            case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+            case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                 if (i5 == 0) {
                     int A3 = plk.A(bArr, i, pnrVar);
                     unsafe.putObject(obj, j, Long.valueOf(poh.G(pnrVar.b)));
@@ -2523,7 +2523,7 @@ public final class pqo implements prb {
                     return A3;
                 }
                 break;
-            case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+            case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                 if (i5 == 3) {
                     int q = plk.q(G(i8), bArr, i, i2, (i3 & (-8)) | 4, pnrVar);
                     Object object2 = unsafe.getInt(obj, j2) == i4 ? unsafe.getObject(obj, j) : null;
@@ -2552,7 +2552,7 @@ public final class pqo implements prb {
         }
         switch (i7) {
             case 18:
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 if (i5 == 2) {
                     poo pooVar = (poo) ppmVar;
                     int x = plk.x(bArr, i8, pnrVar);
@@ -2581,7 +2581,7 @@ public final class pqo implements prb {
                 }
                 break;
             case 19:
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 if (i5 == 2) {
                     pow powVar = (pow) ppmVar;
                     int x3 = plk.x(bArr, i8, pnrVar);
@@ -2611,8 +2611,8 @@ public final class pqo implements prb {
                 break;
             case 20:
             case 21:
-            case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
-            case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                 if (i5 == 2) {
                     pqb pqbVar = (pqb) ppmVar;
                     int x5 = plk.x(bArr, i8, pnrVar);
@@ -2642,8 +2642,8 @@ public final class pqo implements prb {
                 break;
             case 22:
             case 29:
-            case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
-            case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                 if (i5 == 2) {
                     return plk.t(bArr, i8, ppmVar, pnrVar);
                 }
@@ -2653,8 +2653,8 @@ public final class pqo implements prb {
                 break;
             case 23:
             case 32:
-            case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
-            case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+            case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+            case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                 if (i5 == 2) {
                     pqb pqbVar3 = (pqb) ppmVar;
                     int x7 = plk.x(bArr, i8, pnrVar);
@@ -2683,9 +2683,9 @@ public final class pqo implements prb {
                 }
                 break;
             case 24:
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
-            case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
-            case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+            case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                 if (i5 == 2) {
                     ppe ppeVar = (ppe) ppmVar;
                     int x9 = plk.x(bArr, i8, pnrVar);
@@ -2714,7 +2714,7 @@ public final class pqo implements prb {
                 }
                 break;
             case 25:
-            case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+            case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                 if (i5 == 2) {
                     pnu pnuVar = (pnu) ppmVar;
                     int x11 = plk.x(bArr, i8, pnrVar);
@@ -2861,8 +2861,8 @@ public final class pqo implements prb {
                     return x15;
                 }
                 break;
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
-            case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                 if (i5 == 2) {
                     z = plk.t(bArr, i8, ppmVar, pnrVar);
                 } else if (i5 == 0) {
@@ -2879,8 +2879,8 @@ public final class pqo implements prb {
                 }
                 ppdVar.aF = (prn) X;
                 return z;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
-            case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                 if (i5 == 2) {
                     ppe ppeVar3 = (ppe) ppmVar;
                     int x17 = plk.x(bArr, i8, pnrVar);
@@ -2908,8 +2908,8 @@ public final class pqo implements prb {
                     return x18;
                 }
                 break;
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-            case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                 if (i5 == 2) {
                     pqb pqbVar5 = (pqb) ppmVar;
                     int x20 = plk.x(bArr, i8, pnrVar);
@@ -3065,116 +3065,116 @@ public final class pqo implements prb {
                 case 27:
                 case 28:
                 case 29:
-                case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
-                case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 case 32:
-                case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-                case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
-                case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
-                case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
-                case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
-                case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
-                case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
-                case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
-                case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
-                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
-                case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
-                case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
-                case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-                case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                     i = (i * 53) + prv.h(obj, D).hashCode();
                     break;
-                case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                     i = (i * 53) + prv.h(obj, D).hashCode();
                     break;
-                case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + ppn.c(Double.doubleToLongBits(o(obj, D)));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + Float.floatToIntBits(p(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + ppn.c(E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + ppn.c(E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + t(obj, D);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorError /* 56 */:
+                case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + ppn.c(E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+                case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + t(obj, D);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+                case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + ppn.a(V(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + ((String) prv.h(obj, D)).hashCode();
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + prv.h(obj, D).hashCode();
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + prv.h(obj, D).hashCode();
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + t(obj, D);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+                case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + t(obj, D);
                         break;
@@ -3188,28 +3188,28 @@ public final class pqo implements prb {
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + ppn.c(E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + t(obj, D);
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + ppn.c(E(obj, D));
                         break;
                     } else {
                         break;
                     }
-                case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+                case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                     if (U(obj, s, i2)) {
                         i = (i * 53) + prv.h(obj, D).hashCode();
                         break;
@@ -3467,40 +3467,40 @@ public final class pqo implements prb {
                     case 27:
                     case 28:
                     case 29:
-                    case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
-                    case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                    case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                    case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     case 32:
-                    case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
-                    case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-                    case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
-                    case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
-                    case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
-                    case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
-                    case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
-                    case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
-                    case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
-                    case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
-                    case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
-                    case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
-                    case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
-                    case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
-                    case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
-                    case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-                    case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                    case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                    case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                    case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                    case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                    case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                    case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                    case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                    case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                    case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                    case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                         this.n.d(obj, obj2, D);
                         break;
-                    case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                    case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                         prc.U(obj, obj2, D);
                         break;
-                    case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
-                    case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
-                    case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
-                    case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
-                    case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
-                    case R.styleable.AppCompatTheme_colorError /* 56 */:
-                    case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
-                    case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
-                    case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                    case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                    case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                    case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                    case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                    case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                    case Rb.styleable.AppCompatTheme_colorError /* 56 */:
+                    case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
+                    case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+                    case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                         if (U(obj2, s, i)) {
                             prv.u(obj, D, prv.h(obj2, D));
                             O(obj, s, i);
@@ -3508,16 +3508,16 @@ public final class pqo implements prb {
                         } else {
                             break;
                         }
-                    case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                    case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                         L(obj, obj2, i);
                         break;
-                    case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
-                    case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
-                    case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+                    case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                    case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                    case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                     case 64:
-                    case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
-                    case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
-                    case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                    case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                    case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                    case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
                         if (U(obj2, s, i)) {
                             prv.u(obj, D, prv.h(obj2, D));
                             O(obj, s, i);
@@ -3525,7 +3525,7 @@ public final class pqo implements prb {
                         } else {
                             break;
                         }
-                    case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+                    case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                         L(obj, obj2, i);
                         break;
                 }
@@ -3674,49 +3674,49 @@ public final class pqo implements prb {
                 case 27:
                 case 28:
                 case 29:
-                case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
-                case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 case 32:
-                case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
-                case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
-                case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
-                case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
-                case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
-                case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
-                case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
-                case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
-                case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
-                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
-                case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
-                case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
-                case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
-                case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                     q = prc.q(prv.h(obj, D), prv.h(obj2, D));
                     break;
-                case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                     q = prc.q(prv.h(obj, D), prv.h(obj2, D));
                     break;
-                case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
-                case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
-                case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
-                case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
-                case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
-                case R.styleable.AppCompatTheme_colorError /* 56 */:
-                case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
-                case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
-                case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
-                case R.styleable.AppCompatTheme_controlBackground /* 60 */:
-                case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
-                case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
-                case R.styleable.AppCompatTheme_dialogTheme /* 63 */:
+                case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                case Rb.styleable.AppCompatTheme_colorError /* 56 */:
+                case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
+                case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+                case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
+                case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                case Rb.styleable.AppCompatTheme_dialogTheme /* 63 */:
                 case 64:
-                case R.styleable.AppCompatTheme_dividerVertical /* 65 */:
-                case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
-                case R.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
-                case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+                case Rb.styleable.AppCompatTheme_dividerVertical /* 65 */:
+                case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+                case Rb.styleable.AppCompatTheme_dropdownListPreferredItemHeight /* 67 */:
+                case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                     long z = z(i) & 1048575;
                     if (prv.d(obj, z) == prv.d(obj2, z) && prc.q(prv.h(obj, D), prv.h(obj2, D))) {
                         continue;
@@ -3772,7 +3772,7 @@ public final class pqo implements prb {
                     }
                     break;
                 case 27:
-                case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                     List list = (List) prv.h(obj, D(C));
                     if (!list.isEmpty()) {
                         prb G = G(i6);
@@ -3785,7 +3785,7 @@ public final class pqo implements prb {
                     } else {
                         continue;
                     }
-                case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                     pqh pqhVar = (pqh) prv.h(obj, D(C));
                     if (!pqhVar.isEmpty() && plk.aN(H(i6)).c.s == prz.MESSAGE) {
                         prb prbVar = null;
@@ -3800,8 +3800,8 @@ public final class pqo implements prb {
                         continue;
                     }
                     break;
-                case R.styleable.AppCompatTheme_controlBackground /* 60 */:
-                case R.styleable.AppCompatTheme_editTextBackground /* 68 */:
+                case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
+                case Rb.styleable.AppCompatTheme_editTextBackground /* 68 */:
                     if (U(obj, s, i6) && !T(obj, C, G(i6))) {
                         return false;
                     }

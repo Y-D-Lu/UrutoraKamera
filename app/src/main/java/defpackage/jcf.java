@@ -6,7 +6,7 @@ import android.graphics.RectF;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 @Deprecated
 /* renamed from: jcf  reason: default package */

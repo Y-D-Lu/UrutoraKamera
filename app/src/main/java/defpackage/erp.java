@@ -7,7 +7,7 @@ import com.google.googlex.gcam.InterleavedImageU8;
 import com.google.googlex.gcam.ShotMetadata;
 import com.google.googlex.gcam.lasagna.LasagnaCallbacks;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Locale;
 import java.util.concurrent.ExecutionException;

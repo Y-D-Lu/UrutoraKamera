@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -41,7 +41,7 @@ public final class im implements Runnable {
                 }
                 iy iyVar4 = this.a;
                 if ((iyVar4.F & 4096) != 0) {
-                    iyVar4.y(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle);
+                    iyVar4.y(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle);
                 }
                 iy iyVar5 = this.a;
                 iyVar5.E = false;

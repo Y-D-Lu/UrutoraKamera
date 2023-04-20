@@ -13,6 +13,8 @@ import com.hdrindicator.DisplayHelper;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: exi  reason: default package */
 /* loaded from: classes.dex */
 public final class exi extends buf implements jad, gft {
@@ -32,7 +34,7 @@ public final class exi extends buf implements jad, gft {
     public final iwm O;
     public final fwg P;
     public lap Q;
-    public final ojc R;
+    public final ojc varR;
     public final iwt S;
     public final fjs T;
     public final gtg V;
@@ -188,7 +190,7 @@ public final class exi extends buf implements jad, gft {
         this.aN = jbeVar;
         this.aK = dahVar;
         this.aL = dbaVar;
-        this.R = ojcVar5;
+        this.varR = ojcVar5;
         this.Z = ((Integer) hufVar.c(htu.d)).intValue();
         this.aI = new lij() { // from class: ewn
             @Override // defpackage.lij
@@ -206,7 +208,7 @@ public final class exi extends buf implements jad, gft {
         lapVar.c(fwgVar.a(new ewm(this, 3), larVar));
         fwgVar.b.execute(new fwf(fwgVar, ((exm) fwkVar).b, 0));
         jgv jgvVar = new jgv();
-        jgvVar.e = resources.getString(org.codeaurora.snapcam.R.string.gcam_HDR_plus_enhanced_processing);
+        jgvVar.e = resources.getString(R.string.gcam_HDR_plus_enhanced_processing);
         jgvVar.f = context;
         jgvVar.a = true;
         jgvVar.i = 9;
@@ -235,7 +237,7 @@ public final class exi extends buf implements jad, gft {
                 exiVar.M.c(new ewy(broVar, 1));
             }
         });
-        CaptureAnimationOverlay captureAnimationOverlay = (CaptureAnimationOverlay) jnsVar.k.c(org.codeaurora.snapcam.R.id.capture_animation_overlay);
+        CaptureAnimationOverlay captureAnimationOverlay = (CaptureAnimationOverlay) jnsVar.k.c(R.id.capture_animation_overlay);
     }
 
     private final void M(boolean z) {
@@ -322,10 +324,10 @@ public final class exi extends buf implements jad, gft {
     @Override // defpackage.jad
     public final void C(int i) {
         if (i == 1) {
-            this.z.c(org.codeaurora.snapcam.R.raw.timer_final);
+            this.z.c(R.raw.timer_final);
         } else if (i != 2 && i != 3) {
         } else {
-            this.z.c(org.codeaurora.snapcam.R.raw.timer_increment);
+            this.z.c(R.raw.timer_increment);
         }
     }
 
@@ -377,7 +379,7 @@ public final class exi extends buf implements jad, gft {
             }
         }
         if (f == 1.0f) {
-            this.z.b(org.codeaurora.snapcam.R.raw.camera_shutter);
+            this.z.b(R.raw.camera_shutter);
         }
     }
 
@@ -450,7 +452,7 @@ public final class exi extends buf implements jad, gft {
         this.aa.j(true);
         if (((Boolean) this.aa.a().fA()).booleanValue() && !z) {
             this.f.g("soundPlayer#play");
-            this.z.b(org.codeaurora.snapcam.R.raw.longexposure_start);
+            this.z.b(R.raw.longexposure_start);
             this.f.g("previewManager#showPreview");
             this.ad.e();
             this.f.g("updateUi");
@@ -514,7 +516,7 @@ public final class exi extends buf implements jad, gft {
 
     @Override // defpackage.buf
     public final String c() {
-        return this.an.getString(org.codeaurora.snapcam.R.string.photo_accessibility_peek);
+        return this.an.getString(R.string.photo_accessibility_peek);
     }
 
     @Override // defpackage.lie, java.lang.AutoCloseable
@@ -548,8 +550,8 @@ public final class exi extends buf implements jad, gft {
                 exi.this.v();
             }
         }));
-        if (this.R.g()) {
-            ((ima) this.R.c()).b();
+        if (this.varR.g()) {
+            ((ima) this.varR.c()).b();
         }
         this.f.f();
     }
@@ -807,6 +809,6 @@ public final class exi extends buf implements jad, gft {
             return;
         }
         this.aA.a();
-        this.z.c(org.codeaurora.snapcam.R.raw.timer_start);
+        this.z.c(R.raw.timer_start);
     }
 }

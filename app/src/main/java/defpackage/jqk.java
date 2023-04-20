@@ -2,7 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.progressoverlay.ProgressOverlay;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jqk  reason: default package */
 /* loaded from: classes2.dex */

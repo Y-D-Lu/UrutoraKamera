@@ -8,8 +8,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
+import cn.arsenals.ultracamera.R;
 import defpackage.fyb;
 import defpackage.iuz;
 import defpackage.jap;
@@ -34,10 +35,10 @@ public class EduImageView extends FrameLayout {
 
     public static void c(Context context) {
         Resources resources = context.getResources();
-        nyj nyjVar = new nyj(context, R.style.Theme_Camera_MaterialAlertDialog);
-        nyjVar.t(resources.getString(org.codeaurora.snapcam.R.string.internet_required));
-        nyjVar.m(resources.getString(org.codeaurora.snapcam.R.string.connect_internet_for_examples));
-        nyjVar.r(resources.getString(org.codeaurora.snapcam.R.string.dialog_ok_cased), fyb.a);
+        nyj nyjVar = new nyj(context, Rb.style.Theme_Camera_MaterialAlertDialog);
+        nyjVar.t(resources.getString(R.string.internet_required));
+        nyjVar.m(resources.getString(R.string.connect_internet_for_examples));
+        nyjVar.r(resources.getString(R.string.dialog_ok_cased), fyb.a);
         nyjVar.c();
     }
 
@@ -56,8 +57,8 @@ public class EduImageView extends FrameLayout {
     @Override // android.view.View
     protected final void onFinishInflate() {
         super.onFinishInflate();
-        ((LayoutInflater) getContext().getSystemService("layout_inflater")).inflate(org.codeaurora.snapcam.R.layout.eduimageview, this);
-        this.a = (ImageView) findViewById(org.codeaurora.snapcam.R.id.imageview);
-        this.b = (TextView) findViewById(org.codeaurora.snapcam.R.id.textview_offline);
+        ((LayoutInflater) getContext().getSystemService("layout_inflater")).inflate(R.layout.eduimageview, this);
+        this.a = (ImageView) findViewById(R.id.imageview);
+        this.b = (TextView) findViewById(R.id.textview_offline);
     }
 }

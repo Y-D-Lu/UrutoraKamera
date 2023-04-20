@@ -9,7 +9,7 @@ import com.google.android.gms.feedback.ErrorReport;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.libraries.social.licenses.LicenseMenuActivity;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 

@@ -13,7 +13,7 @@ import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import android.support.wearable.complications.rendering.ComplicationDrawable;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.api.Status;
@@ -201,103 +201,103 @@ public final class sk implements Parcelable.Creator {
                 case 29:
                     str17 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                     str18 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     bundle = mip.cV(parcel, cQ);
                     break;
                 case 32:
                     z = mip.de(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                     i7 = mip.cR(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                     i8 = mip.cR(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                     z2 = mip.de(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                     str19 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                     str20 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                     i9 = mip.cR(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                     str21 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                     str22 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                     str23 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                     str24 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                     str25 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                     str26 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
                     str27 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_buttonStyle /* 46 */:
+                case Rb.styleable.AppCompatTheme_buttonStyle /* 46 */:
                     bitmapTeleporter = (BitmapTeleporter) mip.cX(parcel, cQ, BitmapTeleporter.CREATOR);
                     break;
-                case R.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
+                case Rb.styleable.AppCompatTheme_buttonStyleSmall /* 47 */:
                     str28 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                     kpdVarArr = (kpd[]) mip.dh(parcel, cQ, kpd.CREATOR);
                     break;
-                case R.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
+                case Rb.styleable.AppCompatTheme_checkedTextViewStyle /* 49 */:
                     strArr4 = mip.di(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_colorAccent /* 50 */:
+                case Rb.styleable.AppCompatTheme_colorAccent /* 50 */:
                     z3 = mip.de(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
+                case Rb.styleable.AppCompatTheme_colorBackgroundFloating /* 51 */:
                     str29 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
+                case Rb.styleable.AppCompatTheme_colorButtonNormal /* 52 */:
                     kpfVar = (kpf) mip.cX(parcel, cQ, kpf.CREATOR);
                     break;
-                case R.styleable.AppCompatTheme_colorControlActivated /* 53 */:
+                case Rb.styleable.AppCompatTheme_colorControlActivated /* 53 */:
                     kpeVar = (kpe) mip.cX(parcel, cQ, kpe.CREATOR);
                     break;
-                case R.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
+                case Rb.styleable.AppCompatTheme_colorControlHighlight /* 54 */:
                     str30 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_colorControlNormal /* 55 */:
+                case Rb.styleable.AppCompatTheme_colorControlNormal /* 55 */:
                     z4 = mip.de(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_colorError /* 56 */:
+                case Rb.styleable.AppCompatTheme_colorError /* 56 */:
                     bundle2 = mip.cV(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_colorPrimary /* 57 */:
+                case Rb.styleable.AppCompatTheme_colorPrimary /* 57 */:
                     arrayList = mip.da(parcel, cQ, RectF.CREATOR);
                     break;
-                case R.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
+                case Rb.styleable.AppCompatTheme_colorPrimaryDark /* 58 */:
                     z5 = mip.de(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+                case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
                     bitmap = (Bitmap) mip.cX(parcel, cQ, Bitmap.CREATOR);
                     break;
-                case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                     str31 = mip.cY(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                     arrayList2 = mip.cZ(parcel, cQ);
                     break;
-                case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                     i10 = mip.cR(parcel, cQ);
                     break;
                 default:

@@ -6,8 +6,6 @@ import android.util.TypedValue;
 
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 
-import org.codeaurora.snapcam.R;
-
 import defpackage.jkc;
 import defpackage.jkz;
 import defpackage.jlj;
@@ -22,7 +20,7 @@ public class SnapshotButton extends ShutterButton {
     @Override // com.google.android.apps.camera.ui.shutterbutton.ShutterButton
     protected float getDefaultScale() {
         TypedValue typedValue = new TypedValue();
-        getResources().getValue(com.google.android.apps.camera.bottombar.R.dimen.snapshot_button_scale, typedValue, true);
+        getResources().getValue(Rb.dimen.snapshot_button_scale, typedValue, true);
         return typedValue.getFloat();
     }
 

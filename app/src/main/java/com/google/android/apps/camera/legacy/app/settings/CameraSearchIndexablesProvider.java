@@ -6,7 +6,7 @@ import android.preference.Preference;
 import android.provider.SearchIndexablesContract;
 import android.provider.SearchIndexablesProvider;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Collection;
 import java.util.List;

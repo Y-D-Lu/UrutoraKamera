@@ -1,6 +1,6 @@
 package androidx.window.layout;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import defpackage.qks;
 import defpackage.qlh;
@@ -10,7 +10,7 @@ import defpackage.qmj;
 import defpackage.qmy;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-@qlw(b = "androidx.window.layout.WindowInfoRepositoryImpl$configurationChanged$1", c = "WindowInfoRepositoryImpl.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_listPreferredItemHeightLarge, R.styleable.AppCompatTheme_listPreferredItemHeightSmall})
+@qlw(b = "androidx.window.layout.WindowInfoRepositoryImpl$configurationChanged$1", c = "WindowInfoRepositoryImpl.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge, Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall})
 /* loaded from: classes.dex */
 public final class WindowInfoRepositoryImpl$configurationChanged$1 extends qmb implements qmy {
     final /* synthetic */ qmj $producer;

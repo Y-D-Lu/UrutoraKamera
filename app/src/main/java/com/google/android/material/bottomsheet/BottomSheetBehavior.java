@@ -25,6 +25,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cn.arsenals.ultracamera.R;
 import defpackage.aae;
 import defpackage.aah;
 import defpackage.aca;
@@ -63,7 +64,7 @@ public class BottomSheetBehavior extends aae {
     private ValueAnimator O;
     private boolean P;
     private int Q;
-    private boolean R;
+    private boolean varR;
     private int S;
     private VelocityTracker T;
     private int U;
@@ -126,7 +127,7 @@ public class BottomSheetBehavior extends aae {
         this.y = new ArrayList();
         this.W = -1;
         this.X = new nxp(this);
-        this.F = context.getResources().getDimensionPixelSize(org.codeaurora.snapcam.R.dimen.mtrl_min_touch_target_size);
+        this.F = context.getResources().getDimensionPixelSize(R.dimen.mtrl_min_touch_target_size);
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, nyb.a);
         this.G = obtainStyledAttributes.hasValue(17);
         int i = 3;
@@ -212,7 +213,7 @@ public class BottomSheetBehavior extends aae {
 
     private final void P(Context context, AttributeSet attributeSet, boolean z, ColorStateList colorStateList) {
         if (this.G) {
-            this.L = obz.a(context, attributeSet, org.codeaurora.snapcam.R.attr.bottomSheetStyle, 2132083960).a();
+            this.L = obz.a(context, attributeSet, R.attr.bottomSheetStyle, 2132083960).a();
             obu obuVar = new obu(this.L);
             this.c = obuVar;
             obuVar.f(context);
@@ -684,7 +685,7 @@ public class BottomSheetBehavior extends aae {
             return;
         }
         WeakReference weakReference = this.x;
-        if (weakReference == null || view2 != weakReference.get() || !this.R) {
+        if (weakReference == null || view2 != weakReference.get() || !this.varR) {
             return;
         }
         if (this.Q <= 0) {
@@ -751,7 +752,7 @@ public class BottomSheetBehavior extends aae {
             }
         }
         I(view, i3, i2, false);
-        this.R = false;
+        this.varR = false;
     }
 
     @Override // defpackage.aae
@@ -903,7 +904,7 @@ public class BottomSheetBehavior extends aae {
         }
         B(view.getTop());
         this.Q = i;
-        this.R = true;
+        this.varR = true;
     }
 
     @Override // defpackage.aae
@@ -944,7 +945,7 @@ public class BottomSheetBehavior extends aae {
     @Override // defpackage.aae
     public final boolean q(CoordinatorLayout coordinatorLayout, View view, View view2, int i, int i2) {
         this.Q = 0;
-        this.R = false;
+        this.varR = false;
         return (i & 2) != 0;
     }
 

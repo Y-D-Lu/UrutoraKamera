@@ -2,7 +2,7 @@ package defpackage;
 
 import android.content.res.Resources;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: hvo  reason: default package */
 /* loaded from: classes.dex */

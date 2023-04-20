@@ -15,7 +15,7 @@ import android.os.Trace;
 import android.text.TextUtils;
 import android.util.Size;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;

@@ -3,7 +3,7 @@ package defpackage;
 import android.graphics.Rect;
 import android.hardware.HardwareBuffer;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.camera.jni.graphics.HardwareBuffers;
 import com.google.android.libraries.camera.jni.graphics.HardwarePixels;
 
@@ -39,7 +39,7 @@ public final class lxi implements mad {
             case 1:
             case 2:
                 return 1;
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 return 35;
             default:
                 return 34;

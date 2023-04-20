@@ -11,7 +11,7 @@ import android.text.TextPaint;
 import android.util.DisplayMetrics;
 import android.view.View;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.util.Objects;
@@ -206,10 +206,10 @@ public final class td extends View {
                 case 16:
                     i = (height - lineTop) / 2;
                     break;
-                case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                     i = 0;
                     break;
-                case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+                case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                     i = height - lineTop;
                     break;
                 default:

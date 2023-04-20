@@ -3,7 +3,7 @@ package defpackage;
 import android.media.MediaCodec;
 import android.util.Log;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.nio.ByteBuffer;
 
@@ -30,7 +30,7 @@ public final class mrv implements AutoCloseable {
         synchronized (this.f) {
             if (!this.f.l.remove(this) || this.f.e.isDone()) {
                 long j = this.c.presentationTimeUs;
-                StringBuilder sb = new StringBuilder((int) R.styleable.AppCompatTheme_windowMinWidthMajor);
+                StringBuilder sb = new StringBuilder((int) Rb.styleable.AppCompatTheme_windowMinWidthMajor);
                 sb.append("Trying to close output buffer at timestamp ");
                 sb.append(j);
                 sb.append(" but it has been closed or the codec has been stopped already");

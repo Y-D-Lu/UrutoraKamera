@@ -11,7 +11,7 @@ import com.google.android.apps.camera.smarts.SmartsChipView;
 import com.google.android.apps.camera.smarts.SmartsUiGleamingView;
 import com.google.android.apps.camera.uiutils.ReplaceableView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.EnumMap;
 import java.util.HashMap;

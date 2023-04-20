@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.QueryerKt", c = "Queryer.kt", d = "logOnError", e = {R.styleable.AppCompatTheme_seekBarStyle})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.QueryerKt", c = "Queryer.kt", d = "logOnError", e = {Rb.styleable.AppCompatTheme_seekBarStyle})
 /* renamed from: noh  reason: default package */
 /* loaded from: classes2.dex */
 public final class noh extends qlu {

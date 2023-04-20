@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: igz  reason: default package */
 /* loaded from: classes.dex */
@@ -66,7 +66,7 @@ public final class igz {
                 str = "null";
                 break;
         }
-        StringBuilder sb = new StringBuilder(str.length() + R.styleable.AppCompatTheme_windowMinWidthMinor);
+        StringBuilder sb = new StringBuilder(str.length() + Rb.styleable.AppCompatTheme_windowMinWidthMinor);
         sb.append("CocktailPartyConfig{sampleRate=");
         sb.append(i);
         sb.append(", numberOfChannels=");

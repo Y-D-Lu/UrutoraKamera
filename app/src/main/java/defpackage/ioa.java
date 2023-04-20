@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ioa  reason: default package */
 /* loaded from: classes.dex */
@@ -85,7 +85,7 @@ public final class ioa extends buf {
         iqjVar.P = (ViewGroup) ((ConstraintLayout) iqjVar.f.k.c(R.id.activity_root_view)).getRootView();
         iqjVar.E = (ViewGroup) iqjVar.f.k.c(R.id.capture_overlay_layout);
         iqjVar.Q = (ViewGroup) iqjVar.f.k.c(R.id.uncovered_preview_layout);
-        iqjVar.R = (ViewGroup) iqjVar.f.k.c(R.id.capture_overlay_layout);
+        iqjVar.varR = (ViewGroup) iqjVar.f.k.c(R.id.capture_overlay_layout);
         iqjVar.o.f(new iqh(iqjVar));
         Resources resources = iqjVar.g.getResources();
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
@@ -146,7 +146,7 @@ public final class ioa extends buf {
         iqjVar.F = jgvVar.a();
         iqjVar.D.addView(iqjVar.K, layoutParams3);
         iqjVar.Q.addView(iqjVar.O);
-        iqjVar.R.addView(iqjVar.N);
+        iqjVar.varR.addView(iqjVar.N);
         iqjVar.P.addView(iqjVar.D);
         iqjVar.S = ((FrameLayout.LayoutParams) iqjVar.K.getLayoutParams()).topMargin;
         iqjVar.h.d(true);

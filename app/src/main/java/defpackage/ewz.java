@@ -56,7 +56,7 @@ public final class ewz implements epi {
             }
         } else if (!exiVar.ah.h) {
             boolean z2 = false;
-            if (exiVar.R.g() && ((Boolean) ((ima) this.a.R.c()).a().fA()).booleanValue()) {
+            if (exiVar.varR.g() && ((Boolean) ((ima) this.a.varR.c()).a().fA()).booleanValue()) {
                 z2 = true;
             }
             if (!this.a.N.f() && !this.a.v.e() && !z2) {

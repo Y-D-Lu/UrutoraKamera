@@ -4,7 +4,7 @@ import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.os.Handler;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButtonProgressOverlay;
 import com.hdrindicator.DisplayHelper;
@@ -369,7 +369,7 @@ public final class jjv implements jlb {
         jrl jrlVar = jrl.UNINITIALIZED;
         switch (jkcVar.ordinal()) {
             case 0:
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 if (htiVar == hti.AUTO) {
                     this.a.setMode(jkc.AUTOTIMER_IDLE, htiVar, this.j, this.n);
                     return;

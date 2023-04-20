@@ -9,7 +9,7 @@ import com.Helper;
 import com.google.android.apps.camera.ui.shutterbutton.ShutterButton;
 import com.google.lens.sdk.LensApi;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.Executor;
 import java.util.function.Consumer;

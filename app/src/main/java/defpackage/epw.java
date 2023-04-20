@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.viewpager2.widget.ViewPager2;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.Iterator;

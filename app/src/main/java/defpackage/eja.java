@@ -9,7 +9,7 @@ import android.opengl.Matrix;
 import com.google.android.libraries.vision.opengl.Texture;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.EnumMap;
 import java.util.Map;

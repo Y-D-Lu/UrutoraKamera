@@ -3,7 +3,7 @@ package defpackage;
 import android.view.View;
 import android.view.qc;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: gh  reason: default package */
 /* loaded from: classes.dex */
@@ -52,7 +52,7 @@ public final class gh {
         if (i <= 0) {
             if (i != -1) {
                 try {
-                    throw new ass("Array index must be larger than zero", R.styleable.AppCompatTheme_textAppearanceListItemSecondary);
+                    throw new ass("Array index must be larger than zero", Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
@@ -71,7 +71,7 @@ public final class gh {
         if (str.length() != 0) {
             if (str2.length() == 0) {
                 try {
-                    throw new ass("Empty f name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    throw new ass("Empty f name", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
@@ -79,7 +79,7 @@ public final class gh {
             atr d = hn.d(str, str2);
             if (d.a() != 2) {
                 try {
-                    throw new ass("The field name must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    throw new ass("The field name must be simple", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
@@ -91,7 +91,7 @@ public final class gh {
             return sb.toString();
         }
         try {
-            throw new ass("Empty field namespace URI", R.styleable.AppCompatTheme_switchStyle);
+            throw new ass("Empty field namespace URI", Rb.styleable.AppCompatTheme_switchStyle);
         } catch (ass e) {
             e.printStackTrace();
         }

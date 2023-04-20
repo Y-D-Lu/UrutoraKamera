@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Iterator;
 import java.util.List;
@@ -21,10 +21,10 @@ final class lwx {
 
     public lwx(lxh lxhVar) {
         this.a = lxhVar;
-        int width = (((lxhVar.a.getWidth() * lxhVar.a.getHeight()) * lxhVar.a.getLayers()) / R.styleable.AppCompatTheme_textAppearanceListItemSecondary) * R.styleable.AppCompatTheme_textAppearanceListItemSecondary;
+        int width = (((lxhVar.a.getWidth() * lxhVar.a.getHeight()) * lxhVar.a.getLayers()) / Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary) * Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary;
         this.b = width;
         this.c = new byte[width];
-        this.d = new lii(lxd.b, width / R.styleable.AppCompatTheme_textAppearanceListItemSecondary);
+        this.d = new lii(lxd.b, width / Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary);
     }
 
     private final synchronized void c() {
@@ -35,7 +35,7 @@ final class lwx {
         this.h = 0L;
         this.i = 0L;
         this.j = 0;
-        for (int i = 0; i < this.b; i += R.styleable.AppCompatTheme_textAppearanceListItemSecondary) {
+        for (int i = 0; i < this.b; i += Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary) {
             long aL = mip.aL(this.c, i);
             if (aL > this.f) {
                 this.f = aL;
@@ -67,7 +67,7 @@ final class lwx {
                 c();
                 return;
             }
-            int i = (this.g + R.styleable.AppCompatTheme_textAppearanceListItemSecondary) % this.b;
+            int i = (this.g + Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary) % this.b;
             long j2 = j + 1;
             while (true) {
                 e(i);
@@ -78,7 +78,7 @@ final class lwx {
                 this.g = i;
                 this.f = j2;
                 this.e = mip.aM(this.c, i);
-                i = (i + R.styleable.AppCompatTheme_textAppearanceListItemSecondary) % this.b;
+                i = (i + Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary) % this.b;
                 j2++;
             }
             if (aL != 0 && aL > this.i) {
@@ -92,7 +92,7 @@ final class lwx {
     }
 
     private final synchronized void e(int i) {
-        this.a.b(this.c, i, i, R.styleable.AppCompatTheme_textAppearanceListItemSecondary);
+        this.a.b(this.c, i, i, Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary);
     }
 
     public final synchronized void a(long j, long j2, List list) {
@@ -117,7 +117,7 @@ final class lwx {
                         lxcVar.h = mip.aJ(bArr, i + 32);
                         list.add(lxcVar);
                     }
-                    i += R.styleable.AppCompatTheme_textAppearanceListItemSecondary;
+                    i += Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary;
                     if (i >= this.b) {
                         i = 0;
                     }

@@ -6,7 +6,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.view.SurfaceHolder;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -119,7 +119,7 @@ public final class avh extends axl implements Camera.ErrorCallback {
                         this.c.lock();
                         this.a.e.c(2);
                         break;
-                    case R.styleable.AppCompatTheme_switchStyle /* 101 */:
+                    case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
                         try {
                             this.c.setPreviewTexture((SurfaceTexture) message.obj);
                             break;
@@ -127,7 +127,7 @@ public final class avh extends axl implements Camera.ErrorCallback {
                             axp.b(avo.a, "Could not set preview texture", e2);
                             break;
                         }
-                    case R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
                         awo awoVar = (awo) message.obj;
                         this.c.startPreview();
                         if (awoVar != null) {
@@ -135,26 +135,26 @@ public final class avh extends axl implements Camera.ErrorCallback {
                             break;
                         }
                         break;
-                    case R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
                         this.c.stopPreview();
                         break;
-                    case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
                         this.c.setPreviewCallbackWithBuffer((Camera.PreviewCallback) message.obj);
                         break;
-                    case R.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
                         this.c.addCallbackBuffer((byte[]) message.obj);
                         break;
-                    case R.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
+                    case Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
                         try {
                             this.c.setPreviewDisplay((SurfaceHolder) message.obj);
                             break;
                         } catch (IOException e3) {
                             throw new RuntimeException(e3);
                         }
-                    case R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
                         this.c.setPreviewCallback((Camera.PreviewCallback) message.obj);
                         break;
-                    case R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+                    case Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
                         this.c.setOneShotPreviewCallback((Camera.PreviewCallback) message.obj);
                         break;
                     case 201:

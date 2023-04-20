@@ -16,7 +16,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionLayout;
 import com.google.android.apps.camera.filmstrip.transition.FilmstripTransitionThumbnailView;
@@ -28,11 +28,13 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.concurrent.CancellationException;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: dtz  reason: default package */
 /* loaded from: classes.dex */
 public final class dtz implements dtp {
     public static final ouj a = ouj.h("com/google/android/apps/camera/filmstrip/photos/PhotosReviewLauncherImpl");
-    private static final int h = R.dimen.rounded_thumbnail_diameter_normal;
+    private static final int h = Rb.dimen.rounded_thumbnail_diameter_normal;
     public final pyn b;
     public final FilmstripTransitionLayout c;
     public final RoundedThumbnailView d;
@@ -68,8 +70,8 @@ public final class dtz implements dtp {
         this.s = bqhVar;
         this.r = activity;
         this.o = jueVar;
-        this.c = (FilmstripTransitionLayout) jnrVar.c.c(org.codeaurora.snapcam.R.id.filmstrip_transition_layout);
-        this.d = (RoundedThumbnailView) jnrVar.c.c(R.id.thumbnail_button);
+        this.c = (FilmstripTransitionLayout) jnrVar.c.c(R.id.filmstrip_transition_layout);
+        this.d = (RoundedThumbnailView) jnrVar.c.c(Rb.id.thumbnail_button);
         this.p = ivjVar;
         this.q = pynVar2;
         this.v = ikmVar;
@@ -98,9 +100,9 @@ public final class dtz implements dtp {
             }
         }
         if (this.o.b("3.9")) {
-            this.w.c(intent, org.codeaurora.snapcam.R.anim.photos_transition_noanim, org.codeaurora.snapcam.R.anim.photos_transition_noanim);
+            this.w.c(intent, R.anim.photos_transition_noanim, R.anim.photos_transition_noanim);
         } else {
-            this.w.c(intent, org.codeaurora.snapcam.R.anim.on_photos_enter, org.codeaurora.snapcam.R.anim.on_camera_exit);
+            this.w.c(intent, R.anim.on_photos_enter, R.anim.on_camera_exit);
         }
         return plk.V(Boolean.TRUE);
     }
@@ -126,9 +128,9 @@ public final class dtz implements dtp {
             defpackage.d.v(a.c(), "Cannot find Photos package info. Canceling.", (char) 929);
             final ikm ikmVar = this.v;
             nyj nyjVar = new nyj(ikmVar.a, ikmVar.b);
-            nyjVar.s(org.codeaurora.snapcam.R.string.photos_required_title);
-            nyjVar.l(org.codeaurora.snapcam.R.string.photos_required_message);
-            nyjVar.q(org.codeaurora.snapcam.R.string.play_store_button, new DialogInterface.OnClickListener() { // from class: dtq
+            nyjVar.s(R.string.photos_required_title);
+            nyjVar.l(R.string.photos_required_message);
+            nyjVar.q(R.string.play_store_button, new DialogInterface.OnClickListener() { // from class: dtq
                 public final /* synthetic */ ikm a = ikmVar;
                 private final /* synthetic */ int b = 0;
 
@@ -218,9 +220,9 @@ public final class dtz implements dtp {
         defpackage.d.v(a.c(), "Photos is disabled. Canceling.", (char) 928);
         final ikm ikmVar2 = this.v;
         nyj nyjVar2 = new nyj(ikmVar2.a, ikmVar2.b);
-        nyjVar2.s(org.codeaurora.snapcam.R.string.photos_disabled_title);
-        nyjVar2.l(org.codeaurora.snapcam.R.string.photos_disabled_message);
-        nyjVar2.q(org.codeaurora.snapcam.R.string.settings_button, new DialogInterface.OnClickListener() { // from class: dtq
+        nyjVar2.s(R.string.photos_disabled_title);
+        nyjVar2.l(R.string.photos_disabled_message);
+        nyjVar2.q(R.string.settings_button, new DialogInterface.OnClickListener() { // from class: dtq
             public final /* synthetic */ ikm a = ikmVar2;
             private final /* synthetic */ int b = 0;
 

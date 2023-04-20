@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.F250RoomDatabase;
 
 import java.util.ArrayList;
@@ -76,7 +76,7 @@ public final class nog implements nmp {
             arrayList.add(qmd.D(arrayList2, " AND ", "( ResourceFts MATCH ", ")", null, 56));
         }
         if (!arrayList.isEmpty()) {
-            qmd.E(arrayList, sb, " AND ", " WHERE ", R.styleable.AppCompatTheme_windowFixedHeightMajor);
+            qmd.E(arrayList, sb, " AND ", " WHERE ", Rb.styleable.AppCompatTheme_windowFixedHeightMajor);
         }
         ajp ajpVar = new ajp(sb.toString());
         nqf nqfVar = (nqf) t;

@@ -3,7 +3,7 @@ package defpackage;
 import com.google.android.apps.camera.evcomp.EvCompView;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jpq  reason: default package */
 /* loaded from: classes2.dex */

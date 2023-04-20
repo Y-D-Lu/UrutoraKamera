@@ -20,7 +20,7 @@ import android.view.animation.PathInterpolator;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 

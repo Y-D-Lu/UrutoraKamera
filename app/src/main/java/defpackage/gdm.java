@@ -2,7 +2,7 @@ package defpackage;
 
 import android.os.SystemClock;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.util.ArrayList;
@@ -104,7 +104,7 @@ public final class gdm implements gez {
                                 hkn d = this.a.d(j);
                                 if (d == null) {
                                     lis lisVar3 = this.b;
-                                    StringBuilder sb3 = new StringBuilder((int) R.styleable.AppCompatTheme_textAppearanceSearchResultTitle);
+                                    StringBuilder sb3 = new StringBuilder((int) Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle);
                                     sb3.append("Score not found for frame ");
                                     sb3.append(j);
                                     sb3.append(" ... is the ringbuffer too small or we didn't even compute it?");

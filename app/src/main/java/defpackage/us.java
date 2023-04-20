@@ -7,7 +7,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.view.LayoutInflater;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: us  reason: default package */
 /* loaded from: classes2.dex */
@@ -94,7 +94,7 @@ public final class us extends ContextWrapper {
             return theme;
         }
         if (this.a == 0) {
-            this.a = R.style.Theme_AppCompat_Light;
+            this.a = Rb.style.Theme_AppCompat_Light;
         }
         c();
         return this.b;

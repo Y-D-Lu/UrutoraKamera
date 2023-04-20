@@ -6,7 +6,7 @@ import android.graphics.PointF;
 import android.opengl.GLES20;
 import android.view.WindowManager;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.opengl.Texture;
 
 import java.nio.Buffer;
@@ -80,7 +80,7 @@ public final class nle {
         switch (this.a) {
             case 0:
                 return pointF;
-            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                 return new PointF(pointF.y, 1.0f - pointF.x);
             case 180:
                 return new PointF(1.0f - pointF.x, 1.0f - pointF.y);
@@ -95,7 +95,7 @@ public final class nle {
         switch (this.a) {
             case 0:
                 return pointF;
-            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                 return new PointF(1.0f - pointF.y, pointF.x);
             case 180:
                 return new PointF(1.0f - pointF.x, 1.0f - pointF.y);

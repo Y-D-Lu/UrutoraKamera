@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.google.android.apps.camera.camcorder.ui.modeslider.recordspeed.RecordSpeedSlider;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: ctr  reason: default package */

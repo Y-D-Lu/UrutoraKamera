@@ -6,7 +6,7 @@ import android.view.View;
 import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: gts  reason: default package */
 /* loaded from: classes.dex */
@@ -130,7 +130,7 @@ public final class gts implements gtu {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:4:0x0009, code lost:
-        if (r3.d.contains(org.codeaurora.snapcam.R.drawable.gm_filled_record_voice_over_white_24) == false) goto L5;
+        if (r3.d.contains(R.drawable.gm_filled_record_voice_over_white_24) == false) goto L5;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.

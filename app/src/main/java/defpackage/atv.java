@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: atv  reason: default package */
 /* loaded from: classes.dex */
@@ -30,7 +30,7 @@ public abstract class atv {
         sb.append("The option bit(s) 0x");
         sb.append(hexString);
         sb.append(" are invalid!");
-        throw new ass(sb.toString(), R.styleable.AppCompatTheme_textAppearanceListItem);
+        throw new ass(sb.toString(), Rb.styleable.AppCompatTheme_textAppearanceListItem);
     }
 
     protected abstract int a();

@@ -128,7 +128,7 @@ public abstract class agr extends bp implements DialogInterface.OnClickListener 
         int i = this.ag;
         View view = null;
         if (i != 0) {
-            LayoutInflater layoutInflater = this.R;
+            LayoutInflater layoutInflater = this.varR;
             if (layoutInflater == null) {
                 layoutInflater = af();
             }

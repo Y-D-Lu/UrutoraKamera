@@ -13,7 +13,7 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.Window;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Iterator;
 

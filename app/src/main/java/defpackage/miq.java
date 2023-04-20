@@ -3,7 +3,7 @@ package defpackage;
 import android.app.Activity;
 import android.content.res.TypedArray;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: miq  reason: default package */
 /* loaded from: classes2.dex */

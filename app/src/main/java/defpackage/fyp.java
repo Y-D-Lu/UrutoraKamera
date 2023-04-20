@@ -3,7 +3,7 @@ package defpackage;
 import android.os.Handler;
 import android.os.Message;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.legacy.lightcycle.storage.LocalSessionStorage;
 import com.google.android.apps.lightcycle.panorama.LightCycleNative;
 
@@ -25,13 +25,13 @@ final class fyp extends Handler {
             return;
         }
         switch (message.what) {
-            case R.styleable.AppCompatTheme_switchStyle /* 101 */:
+            case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
                 fyrVar.u();
                 return;
-            case R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
-            case R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
                 return;
-            case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
                 LocalSessionStorage localSessionStorage = fyrVar.m;
                 hsm hsmVar = localSessionStorage.b.d;
                 if (!hsmVar.b()) {
@@ -52,7 +52,7 @@ final class fyp extends Handler {
                 }
                 fyrVar.C();
                 return;
-            case R.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
                 fyrVar.C();
                 return;
             default:

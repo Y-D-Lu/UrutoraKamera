@@ -7,7 +7,7 @@ import com.google.android.apps.camera.ui.popupmenu.PopupMenuView;
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuViewContainer;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jpy  reason: default package */
 /* loaded from: classes2.dex */

@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.google.android.apps.camera.camcorder.ui.modeslider.recordspeed.RecordSpeedSlider;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ctq  reason: default package */
 /* loaded from: classes.dex */

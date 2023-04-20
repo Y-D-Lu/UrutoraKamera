@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: atb  reason: default package */
 /* loaded from: classes.dex */
@@ -37,8 +37,8 @@ public final class atb {
             switch (str.charAt(i2)) {
                 case ' ':
                     break;
-                case R.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
-                case R.styleable.AppCompatTheme_searchViewStyle /* 95 */:
+                case Rb.styleable.AppCompatTheme_buttonBarStyle /* 45 */:
+                case Rb.styleable.AppCompatTheme_searchViewStyle /* 95 */:
                     stringBuffer.append('-');
                     i++;
                     break;
@@ -168,16 +168,16 @@ public final class atb {
                     stringBuffer.append(';');
                 } else {
                     switch (charAt2) {
-                        case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                        case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                             stringBuffer.append(true != z ? "\"" : "&quot;");
                             continue;
-                        case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                        case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                             stringBuffer.append("&amp;");
                             continue;
-                        case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+                        case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                             stringBuffer.append("&lt;");
                             continue;
-                        case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+                        case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                             stringBuffer.append("&gt;");
                             continue;
                         default:

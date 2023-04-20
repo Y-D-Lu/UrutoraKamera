@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.google.android.apps.camera.bottombar.RoundedThumbnailView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.time.Duration;
 

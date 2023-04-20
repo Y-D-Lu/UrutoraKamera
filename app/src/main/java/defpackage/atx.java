@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: atx  reason: default package */
 /* loaded from: classes.dex */
@@ -35,11 +35,11 @@ public final class atx extends atv {
     public final void e(int i) throws ass {
         if ((i & 256) <= 0 || (i & 512) <= 0) {
             if ((i & 2) > 0 && (i & 768) > 0) {
-                throw new ass("Structs and arrays can't have \"value\" options", R.styleable.AppCompatTheme_textAppearanceListItem);
+                throw new ass("Structs and arrays can't have \"value\" options", Rb.styleable.AppCompatTheme_textAppearanceListItem);
             }
             return;
         }
-        throw new ass("IsStruct and IsArray options are mutually exclusive", R.styleable.AppCompatTheme_textAppearanceListItem);
+        throw new ass("IsStruct and IsArray options are mutually exclusive", Rb.styleable.AppCompatTheme_textAppearanceListItem);
     }
 
     public final boolean i() {

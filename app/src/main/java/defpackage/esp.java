@@ -5,7 +5,7 @@ import android.app.Application;
 import android.media.MediaFormat;
 import android.view.View;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.Map;

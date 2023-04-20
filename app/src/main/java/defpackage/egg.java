@@ -2,7 +2,7 @@ package defpackage;
 
 import android.content.Context;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;

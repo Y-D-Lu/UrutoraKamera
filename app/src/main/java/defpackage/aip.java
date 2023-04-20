@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "androidx.room.RoomDatabaseKt$withTransaction$2", c = "RoomDatabase.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_colorPrimaryDark})
+@qlw(b = "androidx.room.RoomDatabaseKt$withTransaction$2", c = "RoomDatabase.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_colorPrimaryDark})
 /* renamed from: aip  reason: default package */
 /* loaded from: classes.dex */
 public final class aip extends qmb implements qmy {

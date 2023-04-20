@@ -11,9 +11,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: dnw  reason: default package */
 /* loaded from: classes.dex */
@@ -129,7 +130,7 @@ public final class dnw implements doq {
                     eduImageViewArr[5] = (EduImageView) frameLayout4.findViewById(R.id.retouching_edu_sample6);
                     eduImageViewArr[6] = (EduImageView) frameLayout4.findViewById(R.id.retouching_edu_sample7);
                     switch (gtvVar2.ordinal()) {
-                        case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                        case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                             string = context.getResources().getString(R.string.retouching_edu_image_light_desc);
                             str = "_light.jpg";
                             break;
@@ -138,7 +139,7 @@ public final class dnw implements doq {
                             string = context.getResources().getString(R.string.retouching_edu_image_strong_desc);
                             str = "_strong.jpg";
                             break;
-                        case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                        case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                             string = context.getResources().getString(R.string.retouching_edu_image_off_desc);
                             str = "_off.jpg";
                             break;
@@ -459,13 +460,13 @@ public final class dnw implements doq {
                         gtv gtvVar3 = dnwVar2.f;
                         gtv gtvVar4 = gtv.UNKNOWN;
                         switch (gtvVar3.ordinal()) {
-                            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                                 i14 = htf.ON_LIGHT.f;
                                 break;
                             case 32:
                                 i14 = htf.ON_STRONG.f;
                                 break;
-                            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                                 i14 = htf.OFF.f;
                                 break;
                             default:

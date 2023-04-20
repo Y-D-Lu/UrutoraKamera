@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: mfw  reason: default package */
 /* loaded from: classes2.dex */
@@ -145,8 +145,8 @@ public final class mfw implements ppi {
                     case 20:
                     case 21:
                     case 22:
-                    case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
-                    case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                    case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                    case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     case 32:
                         return true;
                     default:

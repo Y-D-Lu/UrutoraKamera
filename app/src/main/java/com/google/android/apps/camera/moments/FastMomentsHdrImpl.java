@@ -3,7 +3,7 @@ package com.google.android.apps.camera.moments;
 import android.hardware.HardwareBuffer;
 import android.os.SystemClock;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.googlex.gcam.AeShotParams;
 import com.google.googlex.gcam.Gcam;
 import com.google.googlex.gcam.GcamModuleJNI;
@@ -125,7 +125,7 @@ public class FastMomentsHdrImpl implements geq {
                         j2 = c2.a;
                     }
                     String hexString2 = Long.toHexString(j2);
-                    StringBuilder sb = new StringBuilder(String.valueOf(hexString).length() + R.styleable.AppCompatTheme_tooltipFrameBackground + String.valueOf(hexString2).length());
+                    StringBuilder sb = new StringBuilder(String.valueOf(hexString).length() + Rb.styleable.AppCompatTheme_tooltipFrameBackground + String.valueOf(hexString2).length());
                     sb.append("Processing moments HDR with ");
                     sb.append(a3);
                     sb.append(" metering areas, shot params ptr=0x");

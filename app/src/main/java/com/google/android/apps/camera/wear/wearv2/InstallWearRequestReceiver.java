@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.os.Parcelable;
 import android.widget.Toast;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.afp;
 import defpackage.dl;

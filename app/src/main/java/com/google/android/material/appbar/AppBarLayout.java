@@ -26,7 +26,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

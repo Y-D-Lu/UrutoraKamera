@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker$doWork$2", c = "F250AutoWorker.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_checkedTextViewStyle, R.styleable.AppCompatTheme_colorAccent, R.styleable.AppCompatTheme_colorBackgroundFloating})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250AutoWorker$doWork$2", c = "F250AutoWorker.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_checkedTextViewStyle, Rb.styleable.AppCompatTheme_colorAccent, Rb.styleable.AppCompatTheme_colorBackgroundFloating})
 /* renamed from: nrq  reason: default package */
 /* loaded from: classes2.dex */
 public final class nrq extends qmb implements qmy {

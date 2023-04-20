@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.preference.Preference;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ago  reason: default package */
 /* loaded from: classes.dex */

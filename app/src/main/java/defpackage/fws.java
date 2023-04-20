@@ -7,9 +7,10 @@ import android.hardware.camera2.params.Face;
 import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: fws  reason: default package */
 /* loaded from: classes.dex */
@@ -130,7 +131,7 @@ public final class fws {
                             c = dnj.c(centerX, width, 3);
                             c2 = dnj.c(centerY, height, 3);
                             break;
-                        case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                        case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                             c = dnj.c(height - centerY, height, 3);
                             c2 = dnj.c(centerX, width, 3);
                             break;

@@ -4,7 +4,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public final class lxg implements lxb {
         this.g = sensorManager.getDefaultSensor(4);
         int i = 0;
         for (int i2 = 6000; i < i2; i2 = 6000) {
-            this.a.add(new lxc(R.styleable.AppCompatTheme_textAppearanceListItemSecondary, 1, 4, 0L, -1L, DisplayHelper.DENSITY, DisplayHelper.DENSITY, DisplayHelper.DENSITY));
+            this.a.add(new lxc(Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary, 1, 4, 0L, -1L, DisplayHelper.DENSITY, DisplayHelper.DENSITY, DisplayHelper.DENSITY));
             i++;
         }
         this.c = 0;

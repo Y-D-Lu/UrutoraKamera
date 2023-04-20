@@ -9,13 +9,15 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.debug.ui.MaterialSearchViewPreference;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: djn  reason: default package */
 /* loaded from: classes.dex */
@@ -26,7 +28,7 @@ public final class djn {
     public final List d = new ArrayList();
 
     public djn(Context context) {
-        us usVar = new us(context, (int) R.style.Theme_CameraSettings);
+        us usVar = new us(context, (int) Rb.style.Theme_CameraSettings);
         this.a = usVar;
         this.b = ahj.c(usVar);
     }
@@ -93,7 +95,7 @@ public final class djn {
         this.c.ag(preference2);
         String string = this.b.getString("dev_setting_filter_key", "");
         MaterialSearchViewPreference materialSearchViewPreference = new MaterialSearchViewPreference(this.c.j);
-        materialSearchViewPreference.A = org.codeaurora.snapcam.R.layout.search_view_preference;
+        materialSearchViewPreference.A = R.layout.search_view_preference;
         materialSearchViewPreference.c = string;
         SearchView searchView = materialSearchViewPreference.a;
         if (searchView != null) {
@@ -104,7 +106,7 @@ public final class djn {
         this.d.clear();
         EditTextPreference editTextPreference = new EditTextPreference(this.c.j, null);
         editTextPreference.R("camera.onscreen_logcat_filter");
-        editTextPreference.A = org.codeaurora.snapcam.R.layout.preference_with_margin;
+        editTextPreference.A = R.layout.preference_with_margin;
         this.d.add(new djm(editTextPreference));
         String str = "Gca";
         if (this.b.contains("camera.onscreen_logcat_filter")) {
@@ -125,7 +127,7 @@ public final class djn {
             }
         };
         PreferenceCategory preferenceCategory = new PreferenceCategory(this.a);
-        preferenceCategory.A = org.codeaurora.snapcam.R.layout.material_preference_category_layout;
+        preferenceCategory.A = R.layout.material_preference_category_layout;
         preferenceScreen.ag(preferenceCategory);
         Collections.sort(this.d, cdg.d);
         String[] split = this.b.getString("dev_setting_filter_key", "").split("(,|\\s)+", -1);

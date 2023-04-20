@@ -14,7 +14,7 @@ import android.os.ParcelFileDescriptor;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.BufferedOutputStream;
 import java.io.FileNotFoundException;

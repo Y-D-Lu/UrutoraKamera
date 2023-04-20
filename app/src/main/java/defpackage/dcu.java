@@ -1,5 +1,7 @@
 package defpackage;
 
+import com.google.android.apps.camera.bottombar.Rb;
+
 import java.util.Map;
 
 /* renamed from: dcu  reason: default package */
@@ -71,7 +73,7 @@ public final class dcu {
         a = ddhVar.a();
         ddh ddhVar2 = new ddh();
         ddhVar2.a = "camcorder.capture_rate";
-        ddhVar2.c = ope.L(0, 30, 60, Integer.valueOf((int) com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowFixedHeightMajor), 240);
+        ddhVar2.c = ope.L(0, 30, 60, Integer.valueOf((int) Rb.styleable.AppCompatTheme_windowFixedHeightMajor), 240);
         b = ddhVar2.a();
         ddh ddhVar3 = new ddh();
         ddhVar3.a = "detect_face_on_front_camera";

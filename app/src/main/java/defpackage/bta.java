@@ -4,7 +4,7 @@ import android.content.res.Resources;
 import android.hardware.camera2.CaptureResult;
 import android.os.SystemClock;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;

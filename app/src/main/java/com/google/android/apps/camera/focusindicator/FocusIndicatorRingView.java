@@ -9,7 +9,9 @@ import android.graphics.drawable.shapes.OvalShape;
 import android.util.AttributeSet;
 import android.view.View;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
+
+import cn.arsenals.ultracamera.R;
 
 import defpackage.duj;
 import defpackage.duk;
@@ -90,7 +92,7 @@ public class FocusIndicatorRingView extends View {
             int height = view.getHeight();
             switch (a(a) - a(jrzVar)) {
                 case -270:
-                case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                     licVar = lic.CLOCKWISE_270;
                     break;
                 case -180:

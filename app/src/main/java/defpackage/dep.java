@@ -2,6 +2,8 @@ package defpackage;
 
 import android.content.SharedPreferences;
 
+import com.google.android.apps.camera.bottombar.Rb;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -303,7 +305,7 @@ public final class dep implements ddf, ddk, ddj {
         s(defpackage.dds.U, true);
         s(defpackage.dds.V, true);
         s(defpackage.ddu.i, true);
-        o(defpackage.ddu.a, java.lang.Integer.valueOf(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_windowMinWidthMinor));
+        o(defpackage.ddu.a, java.lang.Integer.valueOf(Rb.styleable.AppCompatTheme_windowMinWidthMinor));
         s(defpackage.ddu.j, false);
         o(defpackage.ddu.c, 7);
         o(defpackage.ddu.d, 20);

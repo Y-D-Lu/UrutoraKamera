@@ -14,10 +14,11 @@ import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.MenuItem;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 import com.google.android.apps.camera.legacy.app.app.CameraApp;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.bui;
 import defpackage.ddf;
@@ -114,7 +115,7 @@ public class CameraSettingsActivity extends etd {
             setContentView(R.layout.settings_activity_layout);
             getWindow().getAttributes().layoutInDisplayCutoutMode = 1;
         } else {
-            setTheme(com.google.android.apps.camera.bottombar.R.style.Theme_CameraSettings_Legacy);
+            setTheme(Rb.style.Theme_CameraSettings_Legacy);
             setContentView(R.layout.settings_activity_layout_legacy);
         }
         String stringExtra = getIntent().getStringExtra("pref_screen_title");

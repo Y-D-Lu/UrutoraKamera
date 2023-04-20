@@ -3,7 +3,7 @@ package defpackage;
 import android.media.MediaCodec;
 import android.util.Log;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.nio.ByteBuffer;
 
@@ -35,7 +35,7 @@ public final class mru implements AutoCloseable {
                 }
             } else {
                 long j = this.a;
-                StringBuilder sb = new StringBuilder((int) R.styleable.AppCompatTheme_windowNoTitle);
+                StringBuilder sb = new StringBuilder((int) Rb.styleable.AppCompatTheme_windowNoTitle);
                 sb.append("Trying to submit input buffer for timestamp ");
                 sb.append(j);
                 sb.append(" but it has been closed already (... or the codec was stopped)");

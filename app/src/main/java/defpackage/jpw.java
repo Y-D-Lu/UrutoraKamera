@@ -7,7 +7,7 @@ import com.google.android.apps.camera.ui.mars.MarsSwitch;
 import com.google.android.apps.camera.ui.popupmenu.PopupMenuView;
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: jpw  reason: default package */

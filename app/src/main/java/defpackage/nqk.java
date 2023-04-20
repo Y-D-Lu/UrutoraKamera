@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.ResourceWithAnnotachmentsDao", c = "ResourceWithAnnotachments.kt", d = "snapshotOldestUploadAndMarkInProgress$suspendImpl", e = {R.styleable.AppCompatTheme_windowMinWidthMinor, 127})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.ResourceWithAnnotachmentsDao", c = "ResourceWithAnnotachments.kt", d = "snapshotOldestUploadAndMarkInProgress$suspendImpl", e = {Rb.styleable.AppCompatTheme_windowMinWidthMinor, 127})
 /* renamed from: nqk  reason: default package */
 /* loaded from: classes2.dex */
 public final class nqk extends qlu {

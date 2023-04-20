@@ -5,7 +5,7 @@ import android.view.ViewPropertyAnimator;
 import com.google.android.apps.camera.autotimer.ui.AutoTimerIndicatorView;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.TimeUnit;
 

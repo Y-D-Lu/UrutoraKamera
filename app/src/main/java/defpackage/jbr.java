@@ -5,7 +5,7 @@ import android.graphics.Rect;
 import android.util.Size;
 import android.view.WindowInsets;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jbr  reason: default package */
 /* loaded from: classes.dex */

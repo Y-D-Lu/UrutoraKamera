@@ -4,7 +4,7 @@ import android.app.ActivityManager;
 import android.app.ApplicationExitInfo;
 import android.content.Context;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 
@@ -140,10 +140,10 @@ final class myo implements myn {
                 qwqVar7.a |= 2;
             }
             switch (applicationExitInfo.getImportance()) {
-                case R.styleable.AppCompatTheme_spinnerStyle /* 100 */:
+                case Rb.styleable.AppCompatTheme_spinnerStyle /* 100 */:
                     i4 = 2;
                     break;
-                case R.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
+                case Rb.styleable.AppCompatTheme_windowMinWidthMinor /* 125 */:
                     i4 = 3;
                     break;
                 case 200:

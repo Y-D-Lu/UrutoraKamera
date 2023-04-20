@@ -5,7 +5,7 @@ import android.view.ViewStub;
 
 import com.google.android.apps.camera.ui.widget.ReviewImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: cgq  reason: default package */
 /* loaded from: classes.dex */

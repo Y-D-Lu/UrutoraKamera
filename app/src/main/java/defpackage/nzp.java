@@ -9,7 +9,7 @@ import android.support.v7.widget.LinearLayoutCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: nzp  reason: default package */
 /* loaded from: classes.dex */
@@ -33,7 +33,7 @@ public class nzp extends LinearLayoutCompat {
         super(context, attributeSet, i);
         this.d = new Rect();
         this.e = new Rect();
-        this.i = R.styleable.AppCompatTheme_windowActionModeOverlay;
+        this.i = Rb.styleable.AppCompatTheme_windowActionModeOverlay;
         this.a = true;
         this.b = false;
         TypedArray a = nzw.a(context, attributeSet, nzr.a, i, 0, new int[0]);

@@ -11,8 +11,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.ui.eduimageview.EduImageView;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: isq  reason: default package */
 /* loaded from: classes.dex */
@@ -83,8 +85,8 @@ public final class isq implements isl, fik, fii, fij, fgm {
                     }
                     isqVar.e.o(isqVar.j);
                     lar.a();
-                    nyj nyjVar = new nyj(isqVar.a, true != isqVar.d.k(ddl.ay) ? 0 : R.style.Theme_Camera_MaterialAlertDialog);
-                    nyjVar.q(org.codeaurora.snapcam.R.string.first_run_done, new DialogInterface.OnClickListener() { // from class: ism
+                    nyj nyjVar = new nyj(isqVar.a, true != isqVar.d.k(ddl.ay) ? 0 : Rb.style.Theme_Camera_MaterialAlertDialog);
+                    nyjVar.q(R.string.first_run_done, new DialogInterface.OnClickListener() { // from class: ism
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i) {
                             isq isqVar2 = isq.this;
@@ -94,9 +96,9 @@ public final class isq implements isl, fik, fii, fij, fgm {
                             isqVar2.b();
                         }
                     });
-                    nyjVar.s(org.codeaurora.snapcam.R.string.first_run_title);
+                    nyjVar.s(R.string.first_run_title);
                     if (!isqVar.d.k(ddl.ay)) {
-                        nyjVar.b = isqVar.a.getResources().getDrawable(org.codeaurora.snapcam.R.drawable.toast_background, null);
+                        nyjVar.b = isqVar.a.getResources().getDrawable(R.drawable.toast_background, null);
                     }
                     isz iszVar = new isz(isqVar.a);
                     final btt bttVar = isqVar.b;
@@ -107,11 +109,11 @@ public final class isq implements isl, fik, fii, fij, fgm {
                     boolean k = isqVar.d.k(ddl.ay);
                     if (!iszVar.a) {
                         lar.a();
-                        View.inflate(iszVar.getContext(), org.codeaurora.snapcam.R.layout.first_run_education_view_layout, iszVar);
+                        View.inflate(iszVar.getContext(), R.layout.first_run_education_view_layout, iszVar);
                         if (!bqsVar.c() || !booleanValue) {
-                            ((LinearLayout) iszVar.findViewById(org.codeaurora.snapcam.R.id.first_run_contents)).removeView(iszVar.findViewById(org.codeaurora.snapcam.R.id.location_entry));
+                            ((LinearLayout) iszVar.findViewById(R.id.first_run_contents)).removeView(iszVar.findViewById(R.id.location_entry));
                         } else {
-                            TextView textView = (TextView) iszVar.findViewById(org.codeaurora.snapcam.R.id.settings_btn);
+                            TextView textView = (TextView) iszVar.findViewById(R.id.settings_btn);
                             textView.setOnClickListener(new View.OnClickListener() { // from class: isy
                                 @Override // android.view.View.OnClickListener
                                 public final void onClick(View view) {
@@ -119,14 +121,14 @@ public final class isq implements isl, fik, fii, fij, fgm {
                                 }
                             });
                             if (!k) {
-                                textView.setTextColor(iszVar.getResources().getColor(org.codeaurora.snapcam.R.color.google_blue300, null));
+                                textView.setTextColor(iszVar.getResources().getColor(R.color.google_blue300, null));
                             }
                         }
-                        TextView textView2 = (TextView) iszVar.findViewById(org.codeaurora.snapcam.R.id.options_btn);
+                        TextView textView2 = (TextView) iszVar.findViewById(R.id.options_btn);
                         textView2.setOnClickListener(new gss(gtgVar, 2));
-                        iszVar.findViewById(org.codeaurora.snapcam.R.id.motion_help).setOnClickListener(new fvm(fvnVar, 2));
+                        iszVar.findViewById(R.id.motion_help).setOnClickListener(new fvm(fvnVar, 2));
                         if (!k) {
-                            textView2.setTextColor(iszVar.getResources().getColor(org.codeaurora.snapcam.R.color.google_blue300, null));
+                            textView2.setTextColor(iszVar.getResources().getColor(R.color.google_blue300, null));
                         }
                         iszVar.a = true;
                     }
@@ -142,7 +144,7 @@ public final class isq implements isl, fik, fii, fij, fgm {
             return;
         }
         b();
-        ViewGroup viewGroup = (ViewGroup) this.a.findViewById(org.codeaurora.snapcam.R.id.activity_root_view);
+        ViewGroup viewGroup = (ViewGroup) this.a.findViewById(R.id.activity_root_view);
         this.a.getResources();
         ita itaVar = this.m;
         if (!((Boolean) itaVar.b.fA()).booleanValue() || ((Boolean) itaVar.d.fA()).booleanValue() || ((Boolean) itaVar.c.fA()).booleanValue()) {
@@ -212,16 +214,16 @@ public final class isq implements isl, fik, fii, fij, fgm {
             lar.a();
             if (isvVar.e == null) {
                 FrameLayout frameLayout = new FrameLayout(isvVar.b);
-                View.inflate(isvVar.b, true != isvVar.d.k(ddl.ay) ? org.codeaurora.snapcam.R.layout.double_tap_bottom_sheet_legacy : org.codeaurora.snapcam.R.layout.double_tap_bottom_sheet, frameLayout);
-                ((Button) frameLayout.findViewById(org.codeaurora.snapcam.R.id.got_it_button)).setOnClickListener(new View.OnClickListener() { // from class: isu
+                View.inflate(isvVar.b, true != isvVar.d.k(ddl.ay) ? R.layout.double_tap_bottom_sheet_legacy : R.layout.double_tap_bottom_sheet, frameLayout);
+                ((Button) frameLayout.findViewById(R.id.got_it_button)).setOnClickListener(new View.OnClickListener() { // from class: isu
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
                         isvVar.a();
                     }
                 });
-                EduImageView eduImageView = (EduImageView) frameLayout.findViewById(org.codeaurora.snapcam.R.id.bottom_sheet_video);
+                EduImageView eduImageView = (EduImageView) frameLayout.findViewById(R.id.bottom_sheet_video);
                 ViewGroup.LayoutParams layoutParams = eduImageView.getLayoutParams();
-                ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) ((FrameLayout) frameLayout.findViewById(org.codeaurora.snapcam.R.id.bottom_sheet_video_container)).getLayoutParams();
+                ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) ((FrameLayout) frameLayout.findViewById(R.id.bottom_sheet_video_container)).getLayoutParams();
                 float f = (isvVar.c.widthPixels - marginLayoutParams.leftMargin) - marginLayoutParams.rightMargin;
                 float f2 = (isvVar.c.heightPixels - marginLayoutParams.topMargin) - marginLayoutParams.bottomMargin;
                 if (layoutParams.width > f) {
@@ -235,10 +237,10 @@ public final class isq implements isl, fik, fii, fij, fgm {
                     marginLayoutParams.height = (int) f2;
                     eduImageView.setLayoutParams(layoutParams);
                 }
-                eduImageView.b(isvVar.b.getString(org.codeaurora.snapcam.R.string.double_tap_edu_url), isvVar.b.getString(org.codeaurora.snapcam.R.string.double_tap_launch_content_description));
+                eduImageView.b(isvVar.b.getString(R.string.double_tap_edu_url), isvVar.b.getString(R.string.double_tap_launch_content_description));
                 isvVar.e = frameLayout;
             }
-            isvVar.a.f(8, org.codeaurora.snapcam.R.string.double_tap_launch_title, isvVar.e);
+            isvVar.a.f(8, R.string.double_tap_launch_title, isvVar.e);
         }
         this.q.e(htu.x, Integer.valueOf(intValue + 1));
     }

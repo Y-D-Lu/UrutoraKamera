@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -144,7 +144,7 @@ public final class lug implements lie {
         r11 = r8.c;
         r13 = r8.b;
         r8 = java.lang.String.valueOf(r5);
-        r7 = new java.lang.StringBuilder((java.lang.String.valueOf(r10).length() + com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceLargePopupMenu) + java.lang.String.valueOf(r8).length());
+        r7 = new java.lang.StringBuilder((java.lang.String.valueOf(r10).length() + com.google.android.apps.camera.bottombar.Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu) + java.lang.String.valueOf(r8).length());
         r7.append("Distributing null to ");
         r7.append(r10);
         r7.append(" for frame ");
@@ -214,7 +214,7 @@ public final class lug implements lie {
                 }
                 lis lisVar = lugVar.f;
                 String valueOf = String.valueOf(lnxVar2);
-                StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + R.styleable.AppCompatTheme_textColorAlertDialogListItem);
+                StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + Rb.styleable.AppCompatTheme_textColorAlertDialogListItem);
                 sb.append("Received onBufferLost from ");
                 sb.append(valueOf);
                 sb.append(" for frame ");

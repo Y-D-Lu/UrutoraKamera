@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.view.WindowInsets;
 import android.widget.FrameLayout;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,7 +77,7 @@ public final class cc extends FrameLayout {
     @Override // android.view.ViewGroup
     public final void addView(View view, int i, ViewGroup.LayoutParams layoutParams) {
         view.getClass();
-        Object tag = view.getTag(com.google.android.apps.camera.bottombar.R.id.fragment_container_view_tag);
+        Object tag = view.getTag(Rb.id.fragment_container_view_tag);
         if ((tag instanceof bu ? (bu) tag : null) != null) {
             super.addView(view, i, layoutParams);
             return;

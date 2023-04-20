@@ -7,8 +7,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
+import cn.arsenals.ultracamera.R;
 import defpackage.gl;
 import defpackage.pa;
 
@@ -53,7 +54,7 @@ public class AlertDialogLayout extends LinearLayoutCompat {
             case 16:
                 paddingTop = getPaddingTop() + (((i4 - i2) - measuredHeight) / 2);
                 break;
-            case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+            case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                 paddingTop = ((getPaddingTop() + i4) - i2) - measuredHeight;
                 break;
             default:
@@ -108,11 +109,11 @@ public class AlertDialogLayout extends LinearLayoutCompat {
             View childAt = getChildAt(i7);
             if (childAt.getVisibility() != 8) {
                 int id = childAt.getId();
-                if (id == org.codeaurora.snapcam.R.id.topPanel) {
+                if (id == R.id.topPanel) {
                     view = childAt;
-                } else if (id == org.codeaurora.snapcam.R.id.buttonPanel) {
+                } else if (id == R.id.buttonPanel) {
                     view2 = childAt;
-                } else if ((id != org.codeaurora.snapcam.R.id.contentPanel && id != org.codeaurora.snapcam.R.id.customPanel) || view3 != null) {
+                } else if ((id != R.id.contentPanel && id != R.id.customPanel) || view3 != null) {
                     super.onMeasure(i, i2);
                     return;
                 } else {

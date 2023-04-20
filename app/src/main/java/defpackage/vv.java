@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "androidx.camera.camera2.pipe.compat.VirtualCameraManager$1", c = "VirtualCameraManager.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_imageButtonStyle})
+@qlw(b = "androidx.camera.camera2.pipe.compat.VirtualCameraManager$1", c = "VirtualCameraManager.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_imageButtonStyle})
 /* renamed from: vv  reason: default package */
 /* loaded from: classes2.dex */
 final class vv extends qmb implements qmy {

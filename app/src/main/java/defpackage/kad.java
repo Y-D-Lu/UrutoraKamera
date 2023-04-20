@@ -9,7 +9,7 @@ import com.Helper;
 import com.google.android.apps.camera.zoomui.ZoomUi;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Map;
 import java.util.Set;

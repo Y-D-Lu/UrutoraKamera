@@ -2,7 +2,7 @@ package defpackage;
 
 import android.content.res.Resources;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Map;
 import java.util.Set;

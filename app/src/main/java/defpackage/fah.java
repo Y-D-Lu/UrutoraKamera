@@ -14,7 +14,7 @@ import android.os.Trace;
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.bottombar.BottomBarListener;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;

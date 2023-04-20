@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 import java.util.regex.Pattern;
@@ -47,7 +47,7 @@ public final class nls {
         sb5.append(")");
         String sb6 = sb5.toString();
         q = sb6;
-        StringBuilder sb7 = new StringBuilder(String.valueOf(sb6).length() + R.styleable.AppCompatTheme_textAppearanceListItemSmall);
+        StringBuilder sb7 = new StringBuilder(String.valueOf(sb6).length() + Rb.styleable.AppCompatTheme_textAppearanceListItemSmall);
         sb7.append("((");
         sb7.append(sb6);
         sb7.append(")(/([+~%/.\\-_\\p{L}\\p{N}]*)?\\??([\\-_+=&;,%@.\\p{L}\\p{N}]*)#?([.!/\\\\\\p{L}\\p{N}\\-_]*[!/\\\\\\p{L}\\p{N}\\-_]))?)");

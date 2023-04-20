@@ -2,7 +2,7 @@ package defpackage;
 
 import android.view.Window;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: ix  reason: default package */
@@ -46,14 +46,14 @@ public final class ix implements lj {
                 if (kwVar == kwVar.a()) {
                     iy iyVar = this.a;
                     if (iyVar.u && (t = iyVar.t()) != null && !this.a.C) {
-                        t.onMenuOpened(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
+                        t.onMenuOpened(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
                     }
                 }
                 return true;
             default:
                 Window.Callback t2 = this.a.t();
                 if (t2 != null) {
-                    t2.onMenuOpened(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
+                    t2.onMenuOpened(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, kwVar);
                 }
                 return true;
         }

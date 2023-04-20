@@ -16,7 +16,7 @@ import android.view.WindowInsets;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +32,7 @@ public final class gl {
     static {
         new AtomicInteger(1);
         b = null;
-        a = new int[]{com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_0, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_1, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_2, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_3, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_4, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_5, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_6, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_7, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_8, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_9, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_10, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_11, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_12, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_13, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_14, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_15, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_16, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_17, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_18, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_19, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_20, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_21, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_22, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_23, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_24, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_25, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_26, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_27, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_28, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_29, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_30, com.google.android.apps.camera.bottombar.R.id.accessibility_custom_action_31};
+        a = new int[]{Rb.id.accessibility_custom_action_0, Rb.id.accessibility_custom_action_1, Rb.id.accessibility_custom_action_2, Rb.id.accessibility_custom_action_3, Rb.id.accessibility_custom_action_4, Rb.id.accessibility_custom_action_5, Rb.id.accessibility_custom_action_6, Rb.id.accessibility_custom_action_7, Rb.id.accessibility_custom_action_8, Rb.id.accessibility_custom_action_9, Rb.id.accessibility_custom_action_10, Rb.id.accessibility_custom_action_11, Rb.id.accessibility_custom_action_12, Rb.id.accessibility_custom_action_13, Rb.id.accessibility_custom_action_14, Rb.id.accessibility_custom_action_15, Rb.id.accessibility_custom_action_16, Rb.id.accessibility_custom_action_17, Rb.id.accessibility_custom_action_18, Rb.id.accessibility_custom_action_19, Rb.id.accessibility_custom_action_20, Rb.id.accessibility_custom_action_21, Rb.id.accessibility_custom_action_22, Rb.id.accessibility_custom_action_23, Rb.id.accessibility_custom_action_24, Rb.id.accessibility_custom_action_25, Rb.id.accessibility_custom_action_26, Rb.id.accessibility_custom_action_27, Rb.id.accessibility_custom_action_28, Rb.id.accessibility_custom_action_29, Rb.id.accessibility_custom_action_30, Rb.id.accessibility_custom_action_31};
         new fv();
     }
 
@@ -343,10 +343,10 @@ public final class gl {
     }
 
     public static List v(View view) {
-        ArrayList arrayList = (ArrayList) view.getTag(com.google.android.apps.camera.bottombar.R.id.tag_accessibility_actions);
+        ArrayList arrayList = (ArrayList) view.getTag(Rb.id.tag_accessibility_actions);
         if (arrayList == null) {
             ArrayList arrayList2 = new ArrayList();
-            view.setTag(com.google.android.apps.camera.bottombar.R.id.tag_accessibility_actions, arrayList2);
+            view.setTag(Rb.id.tag_accessibility_actions, arrayList2);
             return arrayList2;
         }
         return arrayList;

@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 import com.google.android.apps.camera.ui.views.ToggleUi;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.List;
 

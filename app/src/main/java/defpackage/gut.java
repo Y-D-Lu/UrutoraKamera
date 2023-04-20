@@ -23,7 +23,7 @@ public final class gut extends GestureDetector.SimpleOnGestureListener {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0076, code lost:
-        if (r3.getHeight() < ((r3.findViewById(org.codeaurora.snapcam.R.id.options_menu_internal_list).getHeight() + r3.getPaddingTop()) + r3.getPaddingBottom())) goto L20;
+        if (r3.getHeight() < ((r3.findViewById(R.id.options_menu_internal_list).getHeight() + r3.getPaddingTop()) + r3.getPaddingBottom())) goto L20;
      */
     @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
     /*

@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker", c = "F250Worker.kt", d = "pauseOrFailInProgressUploads", e = {R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, 130, 149})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker", c = "F250Worker.kt", d = "pauseOrFailInProgressUploads", e = {Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, 130, 149})
 /* renamed from: nsf  reason: default package */
 /* loaded from: classes2.dex */
 public final class nsf extends qlu {

@@ -3,7 +3,7 @@ package defpackage;
 import android.media.MediaCodec;
 import android.media.MediaFormat;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -165,7 +165,7 @@ public final class mkt {
                             case 0:
                                 bArr = new byte[]{0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0};
                                 break;
-                            case R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                                 bArr = new byte[]{0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0};
                                 break;
                             case 180:

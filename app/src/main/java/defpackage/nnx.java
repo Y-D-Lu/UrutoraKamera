@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.AutoUploadExpireQueryer$snapshotItemsToAutoUpload$2", c = "Queryer.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_listMenuViewStyle})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.AutoUploadExpireQueryer$snapshotItemsToAutoUpload$2", c = "Queryer.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_listMenuViewStyle})
 /* renamed from: nnx  reason: default package */
 /* loaded from: classes2.dex */
 public final class nnx extends qmb implements qmu {

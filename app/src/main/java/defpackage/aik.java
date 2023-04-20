@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "androidx.room.RoomDatabaseKt$acquireTransactionThread$2$2$1", c = "RoomDatabase.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_windowMinWidthMajor})
+@qlw(b = "androidx.room.RoomDatabaseKt$acquireTransactionThread$2$2$1", c = "RoomDatabase.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_windowMinWidthMajor})
 /* renamed from: aik  reason: default package */
 /* loaded from: classes.dex */
 final class aik extends qmb implements qmy {

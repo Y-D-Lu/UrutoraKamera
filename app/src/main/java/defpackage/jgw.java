@@ -10,7 +10,7 @@ import android.view.animation.LinearInterpolator;
 import com.google.android.apps.camera.ui.notificationchip.NotificationChipView;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Date;
 

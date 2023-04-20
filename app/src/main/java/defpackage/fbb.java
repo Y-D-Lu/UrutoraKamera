@@ -9,6 +9,8 @@ import com.google.android.apps.camera.bottombar.BottomBarListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: fbb  reason: default package */
 /* loaded from: classes.dex */
 public final class fbb extends buf implements jad {
@@ -29,7 +31,7 @@ public final class fbb extends buf implements jad {
     public int O;
     public ijp P;
     public int Q;
-    public final List R;
+    public final List varR;
     public fwc V;
     private final ljf W;
     private final ghg X;
@@ -143,7 +145,7 @@ public final class fbb extends buf implements jad {
             }
         };
         this.g = new fax(this, eamVar);
-        this.R = new ArrayList();
+        this.varR = new ArrayList();
     }
 
     public final void A() {
@@ -165,23 +167,23 @@ public final class fbb extends buf implements jad {
             }
             this.D.j(true);
             if (((Boolean) this.D.a().fA()).booleanValue()) {
-                this.h.b(org.codeaurora.snapcam.R.raw.longexposure_start);
+                this.h.b(R.raw.longexposure_start);
                 this.r.v(false);
                 this.w.X();
                 this.C.e();
             }
             this.am.a();
             final pht c = this.Y.c(fwcVar, this.al, this.J, this.P);
-            synchronized (this.R) {
-                this.R.add(c);
+            synchronized (this.varR) {
+                this.varR.add(c);
             }
             c.d(new Runnable() { // from class: fan
                 @Override // java.lang.Runnable
                 public final void run() {
                     fbb fbbVar = fbb.this;
                     pht phtVar = c;
-                    synchronized (fbbVar.R) {
-                        fbbVar.R.remove(phtVar);
+                    synchronized (fbbVar.varR) {
+                        fbbVar.varR.remove(phtVar);
                     }
                     fwc fwcVar2 = fbbVar.V;
                     if (fwcVar2 != null) {
@@ -213,10 +215,10 @@ public final class fbb extends buf implements jad {
     @Override // defpackage.jad
     public final void C(int i) {
         if (i == 1) {
-            this.h.c(org.codeaurora.snapcam.R.raw.timer_final);
+            this.h.c(R.raw.timer_final);
         } else if (i != 2 && i != 3) {
         } else {
-            this.h.c(org.codeaurora.snapcam.R.raw.timer_increment);
+            this.h.c(R.raw.timer_increment);
         }
     }
 
@@ -421,6 +423,6 @@ public final class fbb extends buf implements jad {
             return;
         }
         this.ab.a();
-        this.h.c(org.codeaurora.snapcam.R.raw.timer_start);
+        this.h.c(R.raw.timer_start);
     }
 }

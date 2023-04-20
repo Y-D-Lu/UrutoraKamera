@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 
@@ -24,6 +24,6 @@ final class ntf implements qco {
         nqh nqhVar = nsyVar.b;
         List x = qmd.x(nujVar.d);
         x.set(i, nsyVar.c);
-        return nuj.b(nujVar, nqhVar, null, x, R.styleable.AppCompatTheme_windowActionBar);
+        return nuj.b(nujVar, nqhVar, null, x, Rb.styleable.AppCompatTheme_windowActionBar);
     }
 }

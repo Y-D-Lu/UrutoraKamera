@@ -6,7 +6,7 @@ import androidx.preference.Preference;
 
 import com.google.android.apps.camera.ui.preference.MaterialManagedSwitchPreference;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: idj  reason: default package */
 /* loaded from: classes.dex */

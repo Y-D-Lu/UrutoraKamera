@@ -2,7 +2,7 @@ package defpackage;
 
 import android.graphics.SurfaceTexture;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: awi  reason: default package */
@@ -18,6 +18,6 @@ public final class awi implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        this.b.c().obtainMessage(R.styleable.AppCompatTheme_switchStyle, this.a).sendToTarget();
+        this.b.c().obtainMessage(Rb.styleable.AppCompatTheme_switchStyle, this.a).sendToTarget();
     }
 }

@@ -3,7 +3,7 @@ package defpackage;
 import android.os.DeadObjectException;
 import android.os.Parcel;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.Status;
 
@@ -34,6 +34,6 @@ public final class kfz extends kgc {
         Parcel a = kgiVar.a();
         bmp.e(a, kfyVar);
         bmp.c(a, googleSignInOptions);
-        kgiVar.z(R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, a);
+        kgiVar.z(Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu, a);
     }
 }

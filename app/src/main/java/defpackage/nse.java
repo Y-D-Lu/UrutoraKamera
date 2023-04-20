@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker", c = "F250Worker.kt", d = "failPermanentlyInvalidUploads", e = {R.styleable.AppCompatTheme_radioButtonStyle})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker", c = "F250Worker.kt", d = "failPermanentlyInvalidUploads", e = {Rb.styleable.AppCompatTheme_radioButtonStyle})
 /* renamed from: nse  reason: default package */
 /* loaded from: classes2.dex */
 public final class nse extends qlu {

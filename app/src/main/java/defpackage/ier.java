@@ -2,7 +2,7 @@ package defpackage;
 
 import android.animation.Animator;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.function.Consumer;
 

@@ -2,9 +2,9 @@ package defpackage;
 
 import androidx.work.CoroutineWorker;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "androidx.work.CoroutineWorker$startWork$1", c = "CoroutineWorker.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_editTextBackground})
+@qlw(b = "androidx.work.CoroutineWorker$startWork$1", c = "CoroutineWorker.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_editTextBackground})
 /* renamed from: amp  reason: default package */
 /* loaded from: classes.dex */
 public final class amp extends qmb implements qmy {

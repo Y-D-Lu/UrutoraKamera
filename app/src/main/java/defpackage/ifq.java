@@ -3,7 +3,7 @@ package defpackage;
 import android.os.Handler;
 import android.os.Looper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ifq  reason: default package */
 /* loaded from: classes.dex */

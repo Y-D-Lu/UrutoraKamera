@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: lu  reason: default package */
 /* loaded from: classes.dex */

@@ -3,7 +3,7 @@ package defpackage;
 import android.content.DialogInterface;
 import android.net.Uri;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: cvp  reason: default package */
 /* loaded from: classes.dex */
@@ -28,7 +28,7 @@ public final /* synthetic */ class cvp implements DialogInterface.OnClickListene
                 String a = cwn.a(i2);
                 String s = oxh.s(4);
                 int length = String.valueOf(a).length();
-                StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_textAppearanceListItem + s.length());
+                StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_textAppearanceListItem + s.length());
                 sb.append("Hardware help dialog for unavailability of any cameras due to reason: ");
                 sb.append(a);
                 sb.append(" at stage ");

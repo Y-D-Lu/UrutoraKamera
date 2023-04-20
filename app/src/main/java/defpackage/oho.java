@@ -3,7 +3,7 @@ package defpackage;
 import android.os.Looper;
 import android.view.Choreographer;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -46,7 +46,7 @@ public final class oho implements Choreographer.FrameCallback, oht {
                         double d2 = ohqVar.g;
                         if (a < d || a > d2) {
                             oha ohaVar = ohwVar.k;
-                            StringBuilder sb = new StringBuilder((int) R.styleable.AppCompatTheme_viewInflaterClass);
+                            StringBuilder sb = new StringBuilder((int) Rb.styleable.AppCompatTheme_viewInflaterClass);
                             sb.append("StoredVideoFrameProcessor: current output FPS (");
                             sb.append((int) a);
                             sb.append(") is outside the allowed range (");

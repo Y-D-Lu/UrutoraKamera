@@ -11,7 +11,7 @@ import android.widget.ToggleButton;
 import com.Helper;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* loaded from: classes2.dex */
 public class ButtonTF extends ToggleButton {

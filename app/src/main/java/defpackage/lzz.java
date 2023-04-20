@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 import java.util.concurrent.Executor;
@@ -51,7 +51,7 @@ public final class lzz {
         int length = String.valueOf(valueOf).length();
         int length2 = String.valueOf(valueOf2).length();
         int length3 = String.valueOf(valueOf3).length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_windowFixedHeightMajor + length2 + length3 + String.valueOf(valueOf4).length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_windowFixedHeightMajor + length2 + length3 + String.valueOf(valueOf4).length());
         sb.append("SessionConfigurationProxy{sessionType=");
         sb.append(i);
         sb.append(", outputConfigurations=");

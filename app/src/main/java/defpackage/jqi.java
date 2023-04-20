@@ -13,7 +13,7 @@ import com.google.android.apps.camera.optionsbar.common.LinearMinibarImpl;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuContainer;
 import com.google.android.apps.camera.optionsbar.view.OptionsMenuView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.List;
 import java.util.Set;
@@ -316,7 +316,7 @@ public final class jqi implements jqn {
         gtgVar.bj.c(gtgVar.b.a(new gsr(gtgVar, 5), gtgVar.c));
         gtgVar.bj.c(gtgVar.I.a(new gsr(gtgVar, 17), gtgVar.c));
         gtgVar.bj.c(gtgVar.l.a(new gsr(gtgVar, 2), pgr.a));
-        gtgVar.m(gtgVar.l, gtgVar.aA, gtgVar.R);
+        gtgVar.m(gtgVar.l, gtgVar.aA, gtgVar.varR);
         gtgVar.m(gtgVar.l, gtgVar.aA, gtgVar.Q);
         gtgVar.m(gtgVar.m, gtgVar.aB, gtgVar.S);
         gtgVar.m(gtgVar.n, gtgVar.aC, gtgVar.T);

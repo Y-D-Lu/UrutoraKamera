@@ -38,6 +38,8 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: fyr  reason: default package */
 /* loaded from: classes.dex */
 public final class fyr extends buf implements dyh {
@@ -55,7 +57,7 @@ public final class fyr extends buf implements dyh {
     public int N;
     public long O;
     public int P;
-    public final ikm R;
+    public final ikm varR;
     public final dwu S;
     public fel T;
     public final khx U;
@@ -152,7 +154,7 @@ public final class fyr extends buf implements dyh {
         this.au = epjVar;
         izxVar.getClass();
         this.A = izxVar;
-        this.R = ikmVar;
+        this.varR = ikmVar;
         this.aj = lcoVar2;
         this.ai = lcoVar;
         bottomBarController.getClass();
@@ -166,7 +168,7 @@ public final class fyr extends buf implements dyh {
         this.D = ldaVar;
         this.E = set;
         this.z = hpuVar;
-        this.F = true != ddfVar.k(ddl.ay) ? 0 : com.google.android.apps.camera.bottombar.R.style.Theme_Camera_MaterialAlertDialog;
+        this.F = true != ddfVar.k(ddl.ay) ? 0 : com.google.android.apps.camera.bottombar.Rb.style.Theme_Camera_MaterialAlertDialog;
         this.am = new ceo(ljfVar, set);
         this.W = new feg(budVar);
         fynVar.d(bttVar.k());
@@ -184,13 +186,13 @@ public final class fyr extends buf implements dyh {
             budVar.l();
             MainActivityLayout mainActivityLayout = ((bvk) bttVar.g()).f;
             this.n = mainActivityLayout;
-            LayoutInflater.from(f).inflate(org.codeaurora.snapcam.R.layout.pano_module, (ViewGroup) mainActivityLayout.findViewById(org.codeaurora.snapcam.R.id.module_layout), true);
+            LayoutInflater.from(f).inflate(R.layout.pano_module, (ViewGroup) mainActivityLayout.findViewById(R.id.module_layout), true);
             bttVar.r(jipVar, false);
             this.y = fcy.d(w.n());
-            PhotoSphereMessageOverlay photoSphereMessageOverlay = (PhotoSphereMessageOverlay) this.n.findViewById(org.codeaurora.snapcam.R.id.photosphere_calibration_overlay);
+            PhotoSphereMessageOverlay photoSphereMessageOverlay = (PhotoSphereMessageOverlay) this.n.findViewById(R.id.photosphere_calibration_overlay);
             this.ah = photoSphereMessageOverlay;
             photoSphereMessageOverlay.b(this.y);
-            this.ad = this.n.findViewById(org.codeaurora.snapcam.R.id.flash_overlay);
+            this.ad = this.n.findViewById(R.id.flash_overlay);
             this.ae = new fen();
             this.y = fcy.d(w.n());
             this.af = new fxw(this);
@@ -201,7 +203,7 @@ public final class fyr extends buf implements dyh {
                 @Override // defpackage.lij
                 public final void fB(Object obj) {
                     Boolean bool = (Boolean) obj;
-                    fyr.this.B.sendEmptyMessage(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItemSmall);
+                    fyr.this.B.sendEmptyMessage(com.google.android.apps.camera.bottombar.Rb.styleable.AppCompatTheme_textAppearanceListItemSmall);
                 }
             }, pgr.a));
         } catch (Exception e) {
@@ -285,7 +287,7 @@ public final class fyr extends buf implements dyh {
         if (!this.a || this.l) {
             return;
         }
-        if (str.equals(this.ab.getString(org.codeaurora.snapcam.R.string.pano_orientation_horizontal))) {
+        if (str.equals(this.ab.getString(R.string.pano_orientation_horizontal))) {
             if (this.Q != 2) {
                 this.Q = 2;
                 fdj fdjVar = this.r;
@@ -297,7 +299,7 @@ public final class fyr extends buf implements dyh {
                     fdmVar.f(this.Q);
                 }
             }
-        } else if (str.equals(this.ab.getString(org.codeaurora.snapcam.R.string.pano_orientation_vertical))) {
+        } else if (str.equals(this.ab.getString(R.string.pano_orientation_vertical))) {
             if (this.Q != 3) {
                 this.Q = 3;
                 fdj fdjVar2 = this.r;
@@ -309,7 +311,7 @@ public final class fyr extends buf implements dyh {
                     fdmVar2.f(this.Q);
                 }
             }
-        } else if (str.equals(this.ab.getString(org.codeaurora.snapcam.R.string.pano_orientation_wide))) {
+        } else if (str.equals(this.ab.getString(R.string.pano_orientation_wide))) {
             if (this.Q != 4) {
                 this.Q = 4;
                 fdj fdjVar3 = this.r;
@@ -321,7 +323,7 @@ public final class fyr extends buf implements dyh {
                     fdmVar3.f(this.Q);
                 }
             }
-        } else if (str.equals(this.ab.getString(org.codeaurora.snapcam.R.string.pano_orientation_fisheye))) {
+        } else if (str.equals(this.ab.getString(R.string.pano_orientation_fisheye))) {
             if (this.Q != 5) {
                 this.Q = 5;
                 fdj fdjVar4 = this.r;
@@ -333,7 +335,7 @@ public final class fyr extends buf implements dyh {
                     fdmVar4.f(this.Q);
                 }
             }
-        } else if (str.equals(this.ab.getString(org.codeaurora.snapcam.R.string.pano_orientation_photosphere)) && this.Q != 1) {
+        } else if (str.equals(this.ab.getString(R.string.pano_orientation_photosphere)) && this.Q != 1) {
             this.Q = 1;
             fdj fdjVar5 = this.r;
             if (fdjVar5 != null) {
@@ -562,22 +564,22 @@ public final class fyr extends buf implements dyh {
         if (i2 != 0) {
             switch (i3) {
                 case 0:
-                    i = org.codeaurora.snapcam.R.string.photosphere_accessibility_peek;
+                    i = R.string.photosphere_accessibility_peek;
                     break;
                 case 1:
-                    i = org.codeaurora.snapcam.R.string.horizontal_panorama_accessibility_peek;
+                    i = R.string.horizontal_panorama_accessibility_peek;
                     break;
                 case 2:
-                    i = org.codeaurora.snapcam.R.string.vertical_panorama_accessibility_peek;
+                    i = R.string.vertical_panorama_accessibility_peek;
                     break;
                 case 3:
-                    i = org.codeaurora.snapcam.R.string.wide_angle_accessibility_peek;
+                    i = R.string.wide_angle_accessibility_peek;
                     break;
                 case 4:
-                    i = org.codeaurora.snapcam.R.string.fisheye_accessibility_peek;
+                    i = R.string.fisheye_accessibility_peek;
                     break;
                 default:
-                    i = org.codeaurora.snapcam.R.string.media_accessibility_peek;
+                    i = R.string.media_accessibility_peek;
                     break;
             }
             return this.s.f().getResources().getString(i);
@@ -664,7 +666,7 @@ public final class fyr extends buf implements dyh {
             public final void a(Object obj) {
                 fyr fyrVar = fyr.this;
                 if (!((ilv) obj).b()) {
-                    fyrVar.R.b(fyrVar.L).show();
+                    fyrVar.varR.b(fyrVar.L).show();
                 }
             }
         }, this.aa);
@@ -697,9 +699,9 @@ public final class fyr extends buf implements dyh {
             gg();
             p();
             nyj nyjVar = new nyj(this.s.s(), this.F);
-            nyjVar.l(org.codeaurora.snapcam.R.string.photosphere_no_back_camera);
+            nyjVar.l(R.string.photosphere_no_back_camera);
             nyjVar.k(false);
-            nyjVar.q(org.codeaurora.snapcam.R.string.ok, new fyh(this, 0));
+            nyjVar.q(R.string.ok, new fyh(this, 0));
             nyjVar.b().show();
             return;
         }
@@ -767,7 +769,7 @@ public final class fyr extends buf implements dyh {
         D(false);
         I();
         if (this.h.isInterrupted() || !this.h.isAlive()) {
-            this.B.sendEmptyMessage(com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_textAppearanceListItemSmall);
+            this.B.sendEmptyMessage(com.google.android.apps.camera.bottombar.Rb.styleable.AppCompatTheme_textAppearanceListItemSmall);
         } else {
             this.h.a(new fyd(this, 1));
         }
@@ -793,7 +795,7 @@ public final class fyr extends buf implements dyh {
             defpackage.d.v(b.c(), "Not finishing capture since photo taking is in progress.", (char) 1989);
             return;
         }
-        this.e.b(org.codeaurora.snapcam.R.raw.staged_shot_complete);
+        this.e.b(R.raw.staged_shot_complete);
         u();
         D(false);
         fcz.n();

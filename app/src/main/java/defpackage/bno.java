@@ -10,7 +10,7 @@ import android.hardware.camera2.CameraManager;
 import com.google.android.apps.camera.debugui.DebugCanvasView;
 import com.google.android.apps.camera.focusindicator.FocusIndicatorView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.List;
 import java.util.Set;

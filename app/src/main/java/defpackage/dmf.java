@@ -5,7 +5,7 @@ import android.widget.ImageView;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: dmf  reason: default package */
 /* loaded from: classes.dex */

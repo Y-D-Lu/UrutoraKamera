@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.google.android.apps.camera.bottombar.DLock$GestureListener;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.File;
 import java.io.FileInputStream;

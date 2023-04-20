@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import android.os.health.HealthStats;
 import android.os.health.TimerStat;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker", c = "F250Worker.kt", d = "doWork", e = {R.styleable.AppCompatTheme_colorPrimary})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker", c = "F250Worker.kt", d = "doWork", e = {Rb.styleable.AppCompatTheme_colorPrimary})
 /* renamed from: nsc  reason: default package */
 /* loaded from: classes2.dex */
 public final class nsc extends qlu {

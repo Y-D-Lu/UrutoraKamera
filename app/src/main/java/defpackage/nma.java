@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: nma  reason: default package */
 /* loaded from: classes2.dex */
@@ -65,7 +65,7 @@ public final class nma {
         int length5 = String.valueOf(valueOf5).length();
         int length6 = String.valueOf(valueOf6).length();
         int length7 = String.valueOf(valueOf7).length();
-        StringBuilder sb = new StringBuilder(length + R.styleable.AppCompatTheme_tooltipForegroundColor + length2 + length3 + length4 + length5 + length6 + length7 + String.valueOf(valueOf8).length());
+        StringBuilder sb = new StringBuilder(length + Rb.styleable.AppCompatTheme_tooltipForegroundColor + length2 + length3 + length4 + length5 + length6 + length7 + String.valueOf(valueOf8).length());
         sb.append("Contact{name=");
         sb.append(valueOf);
         sb.append(", emailAddresses=");

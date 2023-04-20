@@ -13,7 +13,7 @@ import android.view.ViewStub;
 import android.widget.CheckedTextView;
 import android.widget.FrameLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.fg;
 import defpackage.fz;

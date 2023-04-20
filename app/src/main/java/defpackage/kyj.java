@@ -2,7 +2,7 @@ package defpackage;
 
 import android.os.Parcel;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.data.DataHolder;
 
@@ -92,9 +92,9 @@ public class kyj extends bmo implements kyk {
             case 21:
             case 24:
             case 25:
-            case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
             case 32:
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
             default:
                 return false;
             case 22:
@@ -115,25 +115,25 @@ public class kyj extends bmo implements kyk {
             case 29:
                 kxy kxyVar = (kxy) bmp.a(parcel, kxy.CREATOR);
                 throw new UnsupportedOperationException();
-            case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 kxx kxxVar = (kxx) bmp.a(parcel, kxx.CREATOR);
                 throw new UnsupportedOperationException();
-            case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 kzh kzhVar = (kzh) bmp.a(parcel, kzh.CREATOR);
                 throw new UnsupportedOperationException();
-            case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 kye kyeVar = (kye) bmp.a(parcel, kye.CREATOR);
                 throw new UnsupportedOperationException();
-            case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 kzd kzdVar = (kzd) bmp.a(parcel, kzd.CREATOR);
                 throw new UnsupportedOperationException();
-            case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+            case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                 kxz kxzVar = (kxz) bmp.a(parcel, kxz.CREATOR);
                 throw new UnsupportedOperationException();
-            case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+            case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                 kxm kxmVar = (kxm) bmp.a(parcel, kxm.CREATOR);
                 throw new UnsupportedOperationException();
-            case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+            case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                 kyh kyhVar = (kyh) bmp.a(parcel, kyh.CREATOR);
                 throw new UnsupportedOperationException();
         }

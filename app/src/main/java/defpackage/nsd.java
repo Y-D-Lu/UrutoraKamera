@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker;
 
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker$doWork$2", c = "F250Worker.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_dialogPreferredPadding, R.styleable.AppCompatTheme_dialogTheme, 64, R.styleable.AppCompatTheme_listPreferredItemHeightSmall})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.uploader.work.F250Worker$doWork$2", c = "F250Worker.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_dialogPreferredPadding, Rb.styleable.AppCompatTheme_dialogTheme, 64, Rb.styleable.AppCompatTheme_listPreferredItemHeightSmall})
 /* renamed from: nsd  reason: default package */
 /* loaded from: classes2.dex */
 public final class nsd extends qmb implements qmy {

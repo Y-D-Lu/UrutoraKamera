@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: fbz  reason: default package */
 /* loaded from: classes.dex */

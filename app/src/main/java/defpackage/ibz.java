@@ -9,7 +9,7 @@ import android.view.ViewStub;
 
 import com.google.android.apps.camera.bottombar.BottomBar;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ibb  reason: default package */
 /* loaded from: classes.dex */

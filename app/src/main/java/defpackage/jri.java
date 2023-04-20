@@ -3,7 +3,7 @@ package defpackage;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Map;
 

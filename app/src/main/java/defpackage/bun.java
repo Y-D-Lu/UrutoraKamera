@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Iterator;
 
@@ -34,7 +34,7 @@ public final class bun extends bup {
                         try {
                             burVar.a(th2);
                         } catch (Throwable th3) {
-                            ((oug) ((oug) ((oug) bun.a.b()).h(th3)).G(R.styleable.AppCompatTheme_windowMinWidthMinor)).y("%s failed to handle %s", burVar, th2);
+                            ((oug) ((oug) ((oug) bun.a.b()).h(th3)).G(Rb.styleable.AppCompatTheme_windowMinWidthMinor)).y("%s failed to handle %s", burVar, th2);
                         }
                     }
                 }

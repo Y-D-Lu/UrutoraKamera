@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.feedback.ErrorReport;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.ND4CSettings;
@@ -89,7 +89,7 @@ public final class kpk implements Parcelable.Creator {
                 case 26:
                 case 27:
                 case 29:
-                case R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+                case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 default:
                     mip.dd(parcel, readInt);
                     break;
@@ -135,46 +135,46 @@ public final class kpk implements Parcelable.Creator {
                 case 28:
                     str2 = mip.cY(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+                case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                     togglingData = (TogglingData) mip.cX(parcel, readInt, TogglingData.CREATOR);
                     break;
                 case 32:
                     i5 = mip.cR(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+                case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                     pendingIntent = (PendingIntent) mip.cX(parcel, readInt, PendingIntent.CREATOR);
                     break;
-                case R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+                case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                     str3 = mip.cY(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+                case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                     bitmap = (Bitmap) mip.cX(parcel, readInt, Bitmap.CREATOR);
                     break;
-                case R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+                case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                     i6 = mip.cR(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
+                case Rb.styleable.AppCompatTheme_alertDialogStyle /* 37 */:
                     z4 = mip.de(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
+                case Rb.styleable.AppCompatTheme_alertDialogTheme /* 38 */:
                     z5 = mip.de(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
+                case Rb.styleable.AppCompatTheme_autoCompleteTextViewStyle /* 39 */:
                     i7 = mip.cR(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
+                case Rb.styleable.AppCompatTheme_borderlessButtonStyle /* 40 */:
                     str5 = mip.cY(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
+                case Rb.styleable.AppCompatTheme_buttonBarButtonStyle /* 41 */:
                     z6 = mip.de(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNegativeButtonStyle /* 42 */:
                     str6 = mip.cY(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
+                case Rb.styleable.AppCompatTheme_buttonBarNeutralButtonStyle /* 43 */:
                     z7 = mip.de(parcel, readInt);
                     break;
-                case R.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
+                case Rb.styleable.AppCompatTheme_buttonBarPositiveButtonStyle /* 44 */:
                     nD4CSettings = (ND4CSettings) mip.cX(parcel, readInt, ND4CSettings.CREATOR);
                     break;
             }

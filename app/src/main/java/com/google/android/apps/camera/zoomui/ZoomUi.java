@@ -24,7 +24,7 @@ import android.widget.TextView;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import defpackage.aar;
 import defpackage.adt;

@@ -21,7 +21,7 @@ import android.view.animation.Interpolator;
 import android.widget.EdgeEffect;
 import android.widget.Scroller;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.util.ArrayList;
@@ -374,7 +374,7 @@ public class ViewPager extends ViewGroup {
                             z = false;
                             break;
                         }
-                    case R.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
+                    case Rb.styleable.AppCompatTheme_dialogCornerRadius /* 61 */:
                         if (!keyEvent.hasNoModifiers()) {
                             if (!keyEvent.hasModifiers(1)) {
                                 z = false;
@@ -767,10 +767,10 @@ public class ViewPager extends ViewGroup {
                             i6 = paddingTop;
                             paddingTop = Math.max((i8 - childAt.getMeasuredHeight()) / 2, paddingTop);
                             break;
-                        case R.styleable.AppCompatTheme_checkboxStyle /* 48 */:
+                        case Rb.styleable.AppCompatTheme_checkboxStyle /* 48 */:
                             i6 = childAt.getMeasuredHeight() + paddingTop;
                             break;
-                        case R.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
+                        case Rb.styleable.AppCompatTheme_listPreferredItemHeightLarge /* 80 */:
                             int measuredHeight = (i8 - paddingBottom) - childAt.getMeasuredHeight();
                             paddingBottom += childAt.getMeasuredHeight();
                             i6 = paddingTop;

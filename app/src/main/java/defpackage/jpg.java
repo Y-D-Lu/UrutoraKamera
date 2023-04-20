@@ -5,7 +5,7 @@ import android.view.ViewStub;
 
 import com.google.android.apps.camera.ui.views.MainActivityLayout;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jpg  reason: default package */
 /* loaded from: classes2.dex */

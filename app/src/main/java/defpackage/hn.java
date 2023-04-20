@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.EdgeEffect;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.io.IOException;
@@ -60,7 +60,7 @@ public class hn {
         int i2 = atqVar.d;
         if (i == i2) {
             try {
-                throw new ass("Empty initial XMPPath step", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                throw new ass("Empty initial XMPPath step", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
             } catch (ass e) {
                 e.printStackTrace();
             }
@@ -96,7 +96,7 @@ public class hn {
                 atqVar.d = i4;
                 if (i4 >= str2.length()) {
                     try {
-                        throw new ass("Empty XMPPath segment", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        throw new ass("Empty XMPPath segment", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                     } catch (ass ex) {
                         ex.printStackTrace();
                     }
@@ -107,7 +107,7 @@ public class hn {
                 atqVar.d = i5;
                 if (i5 >= str2.length() || str2.charAt(atqVar.d) != '[') {
                     try {
-                        throw new ass("Missing '[' after '*'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        throw new ass("Missing '[' after '*'", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                     } catch (ass ex) {
                         ex.printStackTrace();
                     }
@@ -125,7 +125,7 @@ public class hn {
                 int i8 = atqVar.d;
                 if (i7 == i8) {
                     try {
-                        throw new ass("Empty XMPPath segment", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        throw new ass("Empty XMPPath segment", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                     } catch (ass ex) {
                         ex.printStackTrace();
                     }
@@ -145,7 +145,7 @@ public class hn {
                     }
                     if (atqVar.e >= atqVar.a.length()) {
                         try {
-                            throw new ass("Missing ']' or '=' for array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                            throw new ass("Missing ']' or '=' for array index", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                         } catch (ass ex) {
                             ex.printStackTrace();
                         }
@@ -159,7 +159,7 @@ public class hn {
                         char charAt = atqVar.a.charAt(i11);
                         if (charAt != '\'' && charAt != '\"') {
                             try {
-                                throw new ass("Invalid quote in array selector", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                                throw new ass("Invalid quote in array selector", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                             } catch (ass ex) {
                                 ex.printStackTrace();
                             }
@@ -176,7 +176,7 @@ public class hn {
                         }
                         if (atqVar.e >= atqVar.a.length()) {
                             try {
-                                throw new ass("No terminating quote for array selector", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                                throw new ass("No terminating quote for array selector", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                             } catch (ass ex) {
                                 ex.printStackTrace();
                             }
@@ -185,7 +185,7 @@ public class hn {
                         atsVar = new ats(null, 6);
                     } else if (!"[last()".equals(atqVar.a.substring(atqVar.d, atqVar.e))) {
                         try {
-                            throw new ass("Invalid non-numeric array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                            throw new ass("Invalid non-numeric array index", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                         } catch (ass ex) {
                             ex.printStackTrace();
                         }
@@ -195,7 +195,7 @@ public class hn {
                 }
                 if (atqVar.e >= atqVar.a.length() || atqVar.a.charAt(atqVar.e) != ']') {
                     try {
-                        throw new ass("Missing ']' for array index", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        throw new ass("Missing ']' for array index", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                     } catch (ass ex) {
                         ex.printStackTrace();
                     }
@@ -211,7 +211,7 @@ public class hn {
                     atsVar.a = valueOf.length() != 0 ? "?".concat(valueOf) : new String("?");
                     if (!"?xml:lang".equals(atsVar.a)) {
                         try {
-                            throw new ass("Only xml:lang allowed with '@'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                            throw new ass("Only xml:lang allowed with '@'", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                         } catch (ass ex) {
                             ex.printStackTrace();
                         }
@@ -230,7 +230,7 @@ public class hn {
                     atsVar.a = valueOf2.length() != 0 ? "[?".concat(valueOf2) : new String("[?");
                     if (!atsVar.a.startsWith("[?xml:lang=")) {
                         try {
-                            throw new ass("Only xml:lang allowed with '@'", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                            throw new ass("Only xml:lang allowed with '@'", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                         } catch (ass ex) {
                             ex.printStackTrace();
                         }
@@ -266,14 +266,14 @@ public class hn {
             }
             if (atpVar.e.i()) {
                 if (atpVar.e.k() || atpVar.e.j()) {
-                    throw new ass("Inconsistent options for exact size serialize", R.styleable.AppCompatTheme_textAppearanceListItem);
+                    throw new ass("Inconsistent options for exact size serialize", Rb.styleable.AppCompatTheme_textAppearanceListItem);
                 }
                 if ((atpVar.e.b & (atpVar.f - 1)) != 0) {
-                    throw new ass("Exact size must be a multiple of the Unicode element", R.styleable.AppCompatTheme_textAppearanceListItem);
+                    throw new ass("Exact size must be a multiple of the Unicode element", Rb.styleable.AppCompatTheme_textAppearanceListItem);
                 }
             } else if (atpVar.e.l()) {
                 if (atpVar.e.k() || atpVar.e.j()) {
-                    throw new ass("Inconsistent options for read-only packet", R.styleable.AppCompatTheme_textAppearanceListItem);
+                    throw new ass("Inconsistent options for read-only packet", Rb.styleable.AppCompatTheme_textAppearanceListItem);
                 }
                 atpVar.g = 0;
             } else if (!atpVar.e.k()) {
@@ -284,7 +284,7 @@ public class hn {
                     atpVar.g += atpVar.f * 10000;
                 }
             } else if (atpVar.e.j()) {
-                throw new ass("Inconsistent options for non-packet serialize", R.styleable.AppCompatTheme_textAppearanceListItem);
+                throw new ass("Inconsistent options for non-packet serialize", Rb.styleable.AppCompatTheme_textAppearanceListItem);
             } else {
                 atpVar.g = 0;
             }
@@ -381,7 +381,7 @@ public class hn {
                 int i2 = atpVar.c.a + (length * atpVar.f);
                 int i3 = atpVar.g;
                 if (i2 > i3) {
-                    throw new ass("Can't fit into specified packet size", R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle);
+                    throw new ass("Can't fit into specified packet size", Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle);
                 }
                 atpVar.g = i3 - i2;
             }
@@ -423,14 +423,14 @@ public class hn {
         if (str.length() != 0) {
             if (str2.charAt(0) == '?' || str2.charAt(0) == '@') {
                 try {
-                    throw new ass("Top level name must not be a qualifier", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    throw new ass("Top level name must not be a qualifier", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
             }
             if (str2.indexOf(47) >= 0 || str2.indexOf(91) >= 0) {
                 try {
-                    throw new ass("Top level name must be simple", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                    throw new ass("Top level name must be simple", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
@@ -438,7 +438,7 @@ public class hn {
             String a = asv.a.a(str);
             if (a == null) {
                 try {
-                    throw new ass("Unregistered schema namespace URI", R.styleable.AppCompatTheme_switchStyle);
+                    throw new ass("Unregistered schema namespace URI", Rb.styleable.AppCompatTheme_switchStyle);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
@@ -455,14 +455,14 @@ public class hn {
             String a2 = asv.a.a(str);
             if (a2 == null) {
                 try {
-                    throw new ass("Unknown schema namespace prefix", R.styleable.AppCompatTheme_switchStyle);
+                    throw new ass("Unknown schema namespace prefix", Rb.styleable.AppCompatTheme_switchStyle);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
             }
             if (!substring.equals(a2)) {
                 try {
-                    throw new ass("Schema namespace URI and prefix mismatch", R.styleable.AppCompatTheme_switchStyle);
+                    throw new ass("Schema namespace URI and prefix mismatch", Rb.styleable.AppCompatTheme_switchStyle);
                 } catch (ass e) {
                     e.printStackTrace();
                 }
@@ -470,7 +470,7 @@ public class hn {
             return str2;
         }
         try {
-            throw new ass("Schema namespace URI is required", R.styleable.AppCompatTheme_switchStyle);
+            throw new ass("Schema namespace URI is required", Rb.styleable.AppCompatTheme_switchStyle);
         } catch (ass e) {
             e.printStackTrace();
         }
@@ -484,7 +484,7 @@ public class hn {
             if (atb.f(substring)) {
                 if (asv.a.b(substring) == null) {
                     try {
-                        throw new ass("Unknown namespace prefix for qualified name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+                        throw new ass("Unknown namespace prefix for qualified name", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
                     } catch (ass e) {
                         e.printStackTrace();
                     }
@@ -493,7 +493,7 @@ public class hn {
             }
         }
         try {
-            throw new ass("Ill-formed qualified name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+            throw new ass("Ill-formed qualified name", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
         } catch (ass e) {
             e.printStackTrace();
         }
@@ -504,7 +504,7 @@ public class hn {
             return;
         }
         try {
-            throw new ass("Bad XML name", R.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
+            throw new ass("Bad XML name", Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu);
         } catch (ass e) {
             e.printStackTrace();
         }

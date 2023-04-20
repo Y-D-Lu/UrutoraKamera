@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-@qlw(b = "kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$1", c = "Merge.kt", d = "invokeSuspend", e = {R.styleable.AppCompatTheme_editTextColor})
+@qlw(b = "kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$1", c = "Merge.kt", d = "invokeSuspend", e = {Rb.styleable.AppCompatTheme_editTextColor})
 /* renamed from: qug  reason: default package */
 /* loaded from: classes2.dex */
 public final class qug extends qmb implements qmy {

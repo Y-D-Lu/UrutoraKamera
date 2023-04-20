@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import defpackage.jhw;
 import defpackage.oje;
@@ -57,12 +57,12 @@ public class KeyListenerPreference extends DialogPreference {
                 return "Left Arrow";
             case 22:
                 return "Right Arrow";
-            case R.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
-            case R.styleable.AppCompatTheme_controlBackground /* 60 */:
+            case Rb.styleable.AppCompatTheme_colorSwitchThumbNormal /* 59 */:
+            case Rb.styleable.AppCompatTheme_controlBackground /* 60 */:
                 return "Shift";
-            case R.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
+            case Rb.styleable.AppCompatTheme_dialogPreferredPadding /* 62 */:
                 return "Space";
-            case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                 return "Enter";
             default:
                 return "";

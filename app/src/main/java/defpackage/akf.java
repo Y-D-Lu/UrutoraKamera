@@ -9,7 +9,7 @@ import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: akf  reason: default package */
 /* loaded from: classes.dex */

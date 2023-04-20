@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId 'org.codeaurora.snapcam'
+        applicationId 'cn.arsenals.ultracamera'
         minSdkVersion 29
         targetSdkVersion 29
         versionCode 64764891

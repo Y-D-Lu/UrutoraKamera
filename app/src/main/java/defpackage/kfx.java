@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.DeadObjectException;
 import android.os.Parcel;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.Status;
 
@@ -40,6 +40,6 @@ public final class kfx extends kgc {
         Parcel a = kgiVar.a();
         bmp.e(a, kfwVar);
         bmp.c(a, googleSignInOptions);
-        kgiVar.z(R.styleable.AppCompatTheme_switchStyle, a);
+        kgiVar.z(Rb.styleable.AppCompatTheme_switchStyle, a);
     }
 }

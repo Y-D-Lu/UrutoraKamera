@@ -9,7 +9,7 @@ import android.view.MotionEvent;
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;

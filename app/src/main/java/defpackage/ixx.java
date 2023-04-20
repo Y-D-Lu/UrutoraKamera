@@ -11,7 +11,7 @@ import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.gridlines.GridLinesUi;
 import com.google.android.apps.camera.ui.wirers.PreviewOverlay;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: ixx  reason: default package */
 /* loaded from: classes.dex */

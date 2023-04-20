@@ -5,7 +5,7 @@ import android.os.Build;
 import android.os.SystemClock;
 import android.os.UserManager;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.File;
 import java.io.IOException;

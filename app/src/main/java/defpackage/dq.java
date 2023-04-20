@@ -2,7 +2,7 @@ package defpackage;
 
 import android.view.ViewGroup;
 
-import org.codeaurora.snapcam.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -32,12 +32,12 @@ public final class dq {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static dq g(ViewGroup viewGroup) {
-        Object tag = viewGroup.getTag(com.google.android.apps.camera.bottombar.R.id.special_effects_controller_view_tag);
+        Object tag = viewGroup.getTag(Rb.id.special_effects_controller_view_tag);
         if (tag instanceof dq) {
             return (dq) tag;
         }
         dq dqVar = new dq(viewGroup);
-        viewGroup.setTag(com.google.android.apps.camera.bottombar.R.id.special_effects_controller_view_tag, dqVar);
+        viewGroup.setTag(Rb.id.special_effects_controller_view_tag, dqVar);
         return dqVar;
     }
 

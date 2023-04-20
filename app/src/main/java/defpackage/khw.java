@@ -12,7 +12,7 @@ import android.util.Log;
 import com.google.android.gms.common.GooglePlayServicesIncorrectManifestValueException;
 import com.google.android.gms.common.GooglePlayServicesMissingManifestValueException;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

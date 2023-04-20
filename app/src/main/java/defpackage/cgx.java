@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.elapsedtimeui.ElapsedTimerView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

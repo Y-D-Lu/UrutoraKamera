@@ -1,8 +1,8 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
-@qlw(b = "androidx.room.RoomDatabaseKt", c = "RoomDatabase.kt", d = "withTransaction", e = {R.styleable.AppCompatTheme_colorAccent, R.styleable.AppCompatTheme_colorBackgroundFloating})
+@qlw(b = "androidx.room.RoomDatabaseKt", c = "RoomDatabase.kt", d = "withTransaction", e = {Rb.styleable.AppCompatTheme_colorAccent, Rb.styleable.AppCompatTheme_colorBackgroundFloating})
 /* renamed from: aio  reason: default package */
 /* loaded from: classes.dex */
 public final class aio extends qlu {

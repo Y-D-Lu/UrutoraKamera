@@ -3,7 +3,6 @@ package defpackage;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.LocaleList;
@@ -15,7 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.util.ArrayList;
@@ -145,7 +144,7 @@ public class ih extends by implements dt {
                 }
             }
             Configuration r = iyVar.r(context, p, configuration);
-            us usVar = new us(context, (int) R.style.Theme_AppCompat_Empty);
+            us usVar = new us(context, (int) Rb.style.Theme_AppCompat_Empty);
             usVar.a(r);
             try {
                 if (context.getTheme() != null) {

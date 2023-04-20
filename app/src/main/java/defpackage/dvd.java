@@ -11,7 +11,7 @@ import android.os.Handler;
 import com.google.android.apps.camera.hdrplus.deblurfusion.DeblurFusionMergedCropCalculator;
 import com.google.googlex.gcam.Gcam;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Map;
 import java.util.concurrent.Executor;

@@ -27,6 +27,8 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import cn.arsenals.ultracamera.R;
+
 /* loaded from: classes.dex */
 public class DLock$GestureListener extends GestureDetector.SimpleOnGestureListener {
     final /* synthetic */ BottomBar this$0;
@@ -51,9 +53,9 @@ public class DLock$GestureListener extends GestureDetector.SimpleOnGestureListen
                 if (0 < fileNames.length) {
                     ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(bottomBar.appContext, getDialogTheme());
                     ArrayAdapter arrayAdapter = new ArrayAdapter(contextThemeWrapper, 17367049, fileNames);
-                    arrayAdapter.setDropDownViewResource(org.codeaurora.snapcam.R.layout.support_simple_spinner_dropdown_item);
+                    arrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
                     final Spinner spinner = new Spinner(contextThemeWrapper);
-                    spinner.setPopupBackgroundResource(org.codeaurora.snapcam.R.color.google_white);
+                    spinner.setPopupBackgroundResource(R.color.google_white);
                     spinner.setAdapter((SpinnerAdapter) arrayAdapter);
                     AlertDialog.Builder builder = new AlertDialog.Builder(contextThemeWrapper);
                     BottomBar bottomBar2 = this.this$0;
@@ -65,7 +67,7 @@ public class DLock$GestureListener extends GestureDetector.SimpleOnGestureListen
                         @Override // android.content.DialogInterface.OnClickListener
                         public void onClick(DialogInterface dialogInterface, int i) {
                             if (Helper.sHdr_process != 0) {
-                                //BottomBar.Toast(org.codeaurora.snapcam.R.string.hsl_hdrprocess);
+                                //BottomBar.Toast(R.string.hsl_hdrprocess);
                             } else {
                                 DLock$GestureListener.this.b(file, fileNames, spinner, dialogInterface, i);
                             }

@@ -6,7 +6,7 @@ import android.content.res.Resources;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Locale;
 

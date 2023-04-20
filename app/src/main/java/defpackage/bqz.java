@@ -7,12 +7,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: bqz  reason: default package */
 /* loaded from: classes.dex */
@@ -116,8 +118,8 @@ public final class bqz implements bqs, fik, fgt, fih, fgu {
                     bqzVar.c.get();
                     return;
                 }
-                nyj nyjVar = new nyj(bqzVar.a, true != bqzVar.f.k(ddl.ay) ? 0 : R.style.Theme_Camera_MaterialAlertDialog);
-                nyjVar.t(bqzVar.a.getString(org.codeaurora.snapcam.R.string.camera_permissions_error_title));
+                nyj nyjVar = new nyj(bqzVar.a, true != bqzVar.f.k(ddl.ay) ? 0 : Rb.style.Theme_Camera_MaterialAlertDialog);
+                nyjVar.t(bqzVar.a.getString(R.string.camera_permissions_error_title));
                 nyjVar.m(bqzVar.a.getString(i2));
                 nyjVar.k(false);
                 nyjVar.p(new DialogInterface.OnKeyListener() { // from class: bqw
@@ -132,9 +134,9 @@ public final class bqz implements bqs, fik, fgt, fih, fgu {
                     }
                 });
                 nyjVar.a.l = onDismissListener;
-                nyjVar.o(bqzVar.a.getString(org.codeaurora.snapcam.R.string.dialog_dismiss), onClickListener);
+                nyjVar.o(bqzVar.a.getString(R.string.dialog_dismiss), onClickListener);
                 if (onClickListener2 != null) {
-                    nyjVar.r(bqzVar.a.getString(org.codeaurora.snapcam.R.string.camera_menu_settings_label), onClickListener2);
+                    nyjVar.r(bqzVar.a.getString(R.string.camera_menu_settings_label), onClickListener2);
                 }
                 bqzVar.h = nyjVar.c();
             }
@@ -206,7 +208,7 @@ public final class bqz implements bqs, fik, fgt, fih, fgu {
         }
         this.n = true;
         if (this.m) {
-            i(org.codeaurora.snapcam.R.string.error_permissions_keyguard_updated, true);
+            i(R.string.error_permissions_keyguard_updated, true);
         } else if (this.c.get() != 0) {
             this.c.get();
         } else {
@@ -270,7 +272,7 @@ public final class bqz implements bqs, fik, fgt, fih, fgu {
         if (this.j.b()) {
             this.g.o(true);
         } else {
-            i(org.codeaurora.snapcam.R.string.error_permissions_updated, false);
+            i(R.string.error_permissions_updated, false);
         }
     }
 

@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.util.List;
@@ -346,9 +346,9 @@ public class LinearLayoutManager extends qc implements qn {
                 return (this.i != 1 && X()) ? -1 : 1;
             case 17:
                 return this.i == 0 ? -1 : Integer.MIN_VALUE;
-            case R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 return this.i == 1 ? -1 : Integer.MIN_VALUE;
-            case R.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
+            case Rb.styleable.AppCompatTheme_dropDownListViewStyle /* 66 */:
                 return this.i == 0 ? 1 : Integer.MIN_VALUE;
             case 130:
                 return this.i == 1 ? 1 : Integer.MIN_VALUE;

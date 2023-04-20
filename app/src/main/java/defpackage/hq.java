@@ -3,7 +3,7 @@ package defpackage;
 import android.view.View;
 import android.widget.PopupWindow;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.Locale;
 
@@ -34,21 +34,21 @@ public class hq {
                 return "UNLOCK";
             case 5:
                 return "LOCK";
-            case R.styleable.AppCompatTheme_switchStyle /* 101 */:
+            case Rb.styleable.AppCompatTheme_switchStyle /* 101 */:
                 return "SET_PREVIEW_TEXTURE_ASYNC";
-            case R.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu /* 102 */:
                 return "START_PREVIEW_ASYNC";
-            case R.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItem /* 103 */:
                 return "STOP_PREVIEW";
-            case R.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSecondary /* 104 */:
                 return "SET_PREVIEW_CALLBACK_WITH_BUFFER";
-            case R.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceListItemSmall /* 105 */:
                 return "ADD_CALLBACK_BUFFER";
-            case R.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
+            case Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader /* 106 */:
                 return "SET_PREVIEW_DISPLAY_ASYNC";
-            case R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle /* 107 */:
                 return "SET_PREVIEW_CALLBACK";
-            case R.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
+            case Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle /* 108 */:
                 return "SET_ONE_SHOT_PREVIEW_CALLBACK";
             case 201:
                 return "SET_PARAMETERS";

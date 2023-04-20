@@ -8,7 +8,7 @@ import android.preference.SwitchPreference;
 
 import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.HashSet;

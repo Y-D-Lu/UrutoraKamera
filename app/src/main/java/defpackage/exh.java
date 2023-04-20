@@ -80,9 +80,9 @@ public final class exh implements phh {
                     if (exiVar.x.g()) {
                         lapVar2.c(((bys) exiVar.x.c()).a(jrl.PHOTO, gfuVar2.h().h));
                     }
-                    if (exiVar.R.g()) {
+                    if (exiVar.varR.g()) {
                         exiVar.F.getClass();
-                        lapVar2.c(((ima) exiVar.R.c()).d());
+                        lapVar2.c(((ima) exiVar.varR.c()).d());
                     }
                     jhd jhdVar = exiVar.n;
                     exiVar.ai.k();
@@ -143,12 +143,12 @@ public final class exh implements phh {
                     gfu gfuVar5 = exiVar.F;
                     gfuVar5.getClass();
                     lapVar4.c(fwsVar.a(gfuVar5.h().c, exiVar.d));
-                    if (exiVar.R.g()) {
+                    if (exiVar.varR.g()) {
                         lap lapVar5 = exiVar.Q;
                         gfu gfuVar6 = exiVar.F;
                         gfuVar6.getClass();
                         final lco lcoVar = gfuVar6.h().d;
-                        lco a = ((ima) exiVar.R.c()).a();
+                        lco a = ((ima) exiVar.varR.c()).a();
                         final lar larVar2 = exiVar.d;
                         final AtomicReference atomicReference = new AtomicReference();
                         final lie a2 = a.a(new lij() { // from class: fwr

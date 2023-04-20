@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.SeekBar;
 
 import com.Helper;
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.legacy.app.activity.main.CameraActivity;
 import com.hdrindicator.DisplayHelper;
 
@@ -206,7 +206,7 @@ public class RotSeek extends View {
             case 3:
                 return 155;
             case 4:
-                return R.styleable.AppCompatTheme_windowMinWidthMajor;
+                return Rb.styleable.AppCompatTheme_windowMinWidthMajor;
             case 5:
                 return 93;
             case 6:

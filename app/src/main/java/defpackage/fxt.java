@@ -1,7 +1,7 @@
 package defpackage;
 
 import com.google.android.apps.camera.bottombar.BottomBarListener;
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* renamed from: fxt  reason: default package */
 /* loaded from: classes.dex */
@@ -31,7 +31,7 @@ final class fxt extends BottomBarListener {
             if (i > 0) {
                 fyrVar2.p = i - 1;
                 fyrVar2.q.d();
-                this.a.B.sendEmptyMessage(R.styleable.AppCompatTheme_switchStyle);
+                this.a.B.sendEmptyMessage(Rb.styleable.AppCompatTheme_switchStyle);
             }
             fyr fyrVar3 = this.a;
             if (fyrVar3.p != 0) {

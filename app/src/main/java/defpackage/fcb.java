@@ -27,7 +27,7 @@ import com.google.android.apps.camera.ui.preference.ManagedSwitchPreference;
 import com.google.android.apps.camera.ui.preference.StorageStatusPreference;
 import com.mycompany.myapp40.MainActivity$100000001;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.File;
 import java.util.ArrayList;

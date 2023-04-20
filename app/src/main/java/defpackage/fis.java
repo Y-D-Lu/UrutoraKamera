@@ -7,7 +7,7 @@ import android.os.DeadObjectException;
 import android.os.SystemClock;
 import android.util.Log;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.location.LocationRequest;
 import com.hdrindicator.DisplayHelper;
 
@@ -265,7 +265,7 @@ public final class fis implements fiw, ksz {
                             location.getAccuracy();
                             return;
                         }
-                        LocationRequest locationRequest = new LocationRequest(R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 3600000L, 600000L, false, Long.MAX_VALUE, Integer.MAX_VALUE, DisplayHelper.DENSITY, 0L, true);
+                        LocationRequest locationRequest = new LocationRequest(Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 3600000L, 600000L, false, Long.MAX_VALUE, Integer.MAX_VALUE, DisplayHelper.DENSITY, 0L, true);
                         long j2 = fis.b;
                         mip.dn(true, "illegal interval: %d", Long.valueOf(j2));
                         locationRequest.b = j2;

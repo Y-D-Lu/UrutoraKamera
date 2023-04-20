@@ -2,7 +2,7 @@ package defpackage;
 
 import android.util.Pair;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,9 +34,9 @@ public final class nlr {
         String valueOf = String.valueOf(b2);
         String valueOf2 = String.valueOf(b(strArr2));
         b = valueOf2.length() != 0 ? valueOf.concat(valueOf2) : new String(valueOf);
-        ArrayList arrayList = new ArrayList((int) R.styleable.AppCompatTheme_windowActionBarOverlay);
+        ArrayList arrayList = new ArrayList((int) Rb.styleable.AppCompatTheme_windowActionBarOverlay);
         int i2 = 0;
-        for (int i3 = R.styleable.AppCompatTheme_windowActionBarOverlay; i2 < i3; i3 = R.styleable.AppCompatTheme_windowActionBarOverlay) {
+        for (int i3 = Rb.styleable.AppCompatTheme_windowActionBarOverlay; i2 < i3; i3 = Rb.styleable.AppCompatTheme_windowActionBarOverlay) {
             String str = strArr[i2];
             if (str.length() > 2) {
                 arrayList.add(str.replace("", " ").trim().replace(" ", "\\s*"));

@@ -18,6 +18,8 @@ import androidx.preference.MultiSelectListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: agy  reason: default package */
 /* loaded from: classes.dex */
 public class agy extends bu implements ahi, ahg, ahh, afw {
@@ -26,14 +28,14 @@ public class agy extends bu implements ahi, ahg, ahh, afw {
     public boolean c;
     public boolean d;
     private final agu ab = new agu(this);
-    private int ac = org.codeaurora.snapcam.R.layout.preference_list_fragment;
+    private int ac = R.layout.preference_list_fragment;
     public final Handler aa = new ags(this);
     private final Runnable ad = new agt(this);
 
     @Override // defpackage.bu
     public final View A(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         RecyclerView recyclerView;
-        TypedArray obtainStyledAttributes = r().obtainStyledAttributes(null, ahn.h, org.codeaurora.snapcam.R.attr.preferenceFragmentCompatStyle, 0);
+        TypedArray obtainStyledAttributes = r().obtainStyledAttributes(null, ahn.h, R.attr.preferenceFragmentCompatStyle, 0);
         this.ac = obtainStyledAttributes.getResourceId(0, this.ac);
         Drawable drawable = obtainStyledAttributes.getDrawable(1);
         int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(2, -1);
@@ -44,8 +46,8 @@ public class agy extends bu implements ahi, ahg, ahh, afw {
         View findViewById = inflate.findViewById(16908351);
         if (findViewById instanceof ViewGroup) {
             ViewGroup viewGroup2 = (ViewGroup) findViewById;
-            if (!r().getPackageManager().hasSystemFeature("android.hardware.type.automotive") || (recyclerView = (RecyclerView) viewGroup2.findViewById(org.codeaurora.snapcam.R.id.recycler_view)) == null) {
-                recyclerView = (RecyclerView) cloneInContext.inflate(org.codeaurora.snapcam.R.layout.preference_recyclerview, viewGroup2, false);
+            if (!r().getPackageManager().hasSystemFeature("android.hardware.type.automotive") || (recyclerView = (RecyclerView) viewGroup2.findViewById(R.id.recycler_view)) == null) {
+                recyclerView = (RecyclerView) cloneInContext.inflate(R.layout.preference_recyclerview, viewGroup2, false);
                 recyclerView.V(new LinearLayoutManager());
                 recyclerView.T(new ahl(recyclerView));
             }
@@ -187,10 +189,10 @@ public class agy extends bu implements ahi, ahg, ahh, afw {
     public void gA(Bundle bundle) {
         super.gA(bundle);
         TypedValue typedValue = new TypedValue();
-        r().getTheme().resolveAttribute(org.codeaurora.snapcam.R.attr.preferenceTheme, typedValue, true);
+        r().getTheme().resolveAttribute(R.attr.preferenceTheme, typedValue, true);
         int i = typedValue.resourceId;
         if (i == 0) {
-            i = org.codeaurora.snapcam.R.style.PreferenceThemeOverlay;
+            i = R.style.PreferenceThemeOverlay;
         }
         r().getTheme().applyStyle(i, false);
         ahj ahjVar = new ahj(r());

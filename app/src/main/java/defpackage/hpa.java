@@ -8,7 +8,7 @@ import android.view.View;
 import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.ui.views.GradientBar;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: hpa  reason: default package */
 /* loaded from: classes.dex */

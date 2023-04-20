@@ -16,7 +16,7 @@ import com.google.android.apps.camera.rewind.RewindExportShotView;
 import com.google.android.apps.camera.rewind.RewindThumbnailScrollView;
 import com.google.android.apps.camera.ui.views.CaptureAnimationOverlay;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;

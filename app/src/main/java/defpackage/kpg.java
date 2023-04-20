@@ -7,7 +7,7 @@ import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.ND4CSettings;
@@ -364,7 +364,7 @@ public final class kpg implements Parcelable.Creator {
                 long j6 = 0;
                 long j7 = 3600000;
                 long j8 = 600000;
-                int i12 = R.styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+                int i12 = Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu;
                 boolean z8 = false;
                 int i13 = Integer.MAX_VALUE;
                 float f2 = DisplayHelper.DENSITY;

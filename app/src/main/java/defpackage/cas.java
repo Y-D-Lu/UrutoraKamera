@@ -10,6 +10,7 @@ import android.hardware.camera2.params.MeteringRectangle;
 import android.os.SystemClock;
 import android.util.Pair;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.android.apps.camera.stats.timing.CameraActivityTiming;
 import com.google.android.libraries.oliveoil.gl.EGLImage;
 
@@ -716,7 +717,7 @@ public final class cas implements dbg, fik, fii, fij, ias, hsb, cbl, itv, cav, l
                                                                             case 0:
                                                                                 fArr15 = cdp.a;
                                                                                 break;
-                                                                            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
+                                                                            case Rb.styleable.AppCompatTheme_popupWindowStyle /* 90 */:
                                                                                 fArr15 = cdp.b;
                                                                                 break;
                                                                             case 180:

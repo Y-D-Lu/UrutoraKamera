@@ -1,9 +1,9 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.ResourceWithAnnotachmentsDao", c = "ResourceWithAnnotachments.kt", d = "failPermanentlyInvalidUploads$suspendImpl", e = {R.styleable.AppCompatTheme_colorError, R.styleable.AppCompatTheme_colorPrimary, R.styleable.AppCompatTheme_colorPrimaryDark})
+@qlw(b = "com.google.android.libraries.vision.visionkit.f250.internal.airlock.room.ResourceWithAnnotachmentsDao", c = "ResourceWithAnnotachments.kt", d = "failPermanentlyInvalidUploads$suspendImpl", e = {Rb.styleable.AppCompatTheme_colorError, Rb.styleable.AppCompatTheme_colorPrimary, Rb.styleable.AppCompatTheme_colorPrimaryDark})
 /* renamed from: nqj  reason: default package */
 /* loaded from: classes2.dex */
 public final class nqj extends qlu {

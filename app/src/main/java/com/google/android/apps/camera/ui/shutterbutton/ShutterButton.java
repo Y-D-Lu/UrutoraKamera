@@ -21,9 +21,10 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.view.accessibility.AccessibilityNodeInfo;
 
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -153,8 +154,8 @@ public class ShutterButton extends mw {
         this.isZoomLockEnabled = false;
         this.hasPressAndReleaseHaptic = false;
         this.visualFeedbackForEnableState = true;
-        this.longShotStartAccessibilityAction = new AccessibilityNodeInfo.AccessibilityAction(com.google.android.apps.camera.bottombar.R.id.action_long_shot_start, getResources().getString(R.string.accessibility_longshot_capture));
-        this.longShotEndAccessibilityAction = new AccessibilityNodeInfo.AccessibilityAction(com.google.android.apps.camera.bottombar.R.id.action_long_shot_end, getResources().getString(R.string.accessibility_capture_video_stop));
+        this.longShotStartAccessibilityAction = new AccessibilityNodeInfo.AccessibilityAction(Rb.id.action_long_shot_start, getResources().getString(R.string.accessibility_longshot_capture));
+        this.longShotEndAccessibilityAction = new AccessibilityNodeInfo.AccessibilityAction(Rb.id.action_long_shot_end, getResources().getString(R.string.accessibility_capture_video_stop));
         long longPressTimeout = ViewConfiguration.getLongPressTimeout();
         if (longPressTimeout <= 0) {
             ((oug) ((oug) logger.c()).G(3419)).q("System has invalid long press threshold value=%d ms", longPressTimeout);
@@ -287,17 +288,17 @@ public class ShutterButton extends mw {
             case 28:
                 return R.string.accessibility_take_lasagna_button;
             case 29:
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 return R.string.accessibility_cheetah_video_start;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
+            case Rb.styleable.AppCompatTheme_actionModeWebSearchDrawable /* 31 */:
                 return R.string.accessibility_cheetah_video_stop;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
+            case Rb.styleable.AppCompatTheme_actionOverflowMenuStyle /* 33 */:
                 return R.string.accessibility_capture_video_stop;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
+            case Rb.styleable.AppCompatTheme_activityChooserViewStyle /* 34 */:
                 return R.string.accessibility_autotimer_start;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
+            case Rb.styleable.AppCompatTheme_alertDialogButtonGroupStyle /* 35 */:
                 return R.string.accessibility_autotimer_stop;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
+            case Rb.styleable.AppCompatTheme_alertDialogCenterButtons /* 36 */:
                 return R.string.accessibility_take_photosphere_button;
             default:
                 return R.string.accessibility_take_photo_button;
@@ -882,10 +883,10 @@ public class ShutterButton extends mw {
 
     @Override // android.view.View
     public boolean performAccessibilityAction(int i, Bundle bundle) {
-        if (i == com.google.android.apps.camera.bottombar.R.id.action_long_shot_start) {
+        if (i == Rb.id.action_long_shot_start) {
             startAccessibleLongShot();
             return true;
-        } else if (i != com.google.android.apps.camera.bottombar.R.id.action_long_shot_end) {
+        } else if (i != Rb.id.action_long_shot_end) {
             return super.performAccessibilityAction(i, bundle);
         } else {
             endAccessibleLongShot();
@@ -1036,7 +1037,7 @@ public class ShutterButton extends mw {
             case 27:
                 setMode(jkc.LASAGNA_IDLE, jkzVar, this.isP20NewUIEnabled);
                 return;
-            case com.google.android.apps.camera.bottombar.R.styleable.AppCompatTheme_actionModeTheme /* 30 */:
+            case Rb.styleable.AppCompatTheme_actionModeTheme /* 30 */:
                 setMode(jkc.TIMELAPSE_RECORDING, jkzVar, this.isP20NewUIEnabled);
                 return;
             default:

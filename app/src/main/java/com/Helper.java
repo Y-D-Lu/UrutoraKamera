@@ -29,14 +29,13 @@ import com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity
 import com.hdrindicator.DisplayHelper;
 import com.hdrindicator.HDRProgress;
 
-import org.codeaurora.snapcam.R;
-
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
+import cn.arsenals.ultracamera.R;
 import defpackage.jrl;
 import defpackage.lvp;
 import defpackage.pkr;

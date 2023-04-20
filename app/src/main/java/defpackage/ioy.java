@@ -48,10 +48,10 @@ public final class ioy implements SensorEventListener {
                     d += dArr[i];
                 }
             }
-            this.b.Q = TimeUnit.NANOSECONDS.toMillis(sensorEvent.timestamp - this.b.R);
+            this.b.Q = TimeUnit.NANOSECONDS.toMillis(sensorEvent.timestamp - this.b.varR);
             ipf ipfVar5 = this.b;
             if (ipfVar5.Q > 50) {
-                ipfVar5.R = sensorEvent.timestamp;
+                ipfVar5.varR = sensorEvent.timestamp;
             }
             ipf ipfVar6 = this.b;
             if (ipfVar6.Q <= 50 || d / 3.0d <= 0.014999999664723873d) {

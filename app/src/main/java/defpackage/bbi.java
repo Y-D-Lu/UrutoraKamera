@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -52,7 +52,7 @@ public final class bbi {
                 return bgj.b;
             }
             String valueOf = String.valueOf(cls);
-            StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + R.styleable.AppCompatTheme_tooltipFrameBackground);
+            StringBuilder sb = new StringBuilder(String.valueOf(valueOf).length() + Rb.styleable.AppCompatTheme_tooltipFrameBackground);
             sb.append("Missing transformation for ");
             sb.append(valueOf);
             sb.append(". If you wish to ignore unknown resource types, use the optional transformation methods.");

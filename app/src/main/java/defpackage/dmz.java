@@ -2,7 +2,7 @@ package defpackage;
 
 import com.google.android.apps.camera.evcomp.EvCompView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* renamed from: dmz  reason: default package */

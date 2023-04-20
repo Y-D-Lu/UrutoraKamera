@@ -3,7 +3,7 @@ package defpackage;
 import android.support.constraint.ConstraintLayout;
 import android.view.View;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: jnr  reason: default package */
 /* loaded from: classes2.dex */

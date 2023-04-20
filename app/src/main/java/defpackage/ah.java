@@ -6,7 +6,7 @@ import android.support.constraint.Guideline;
 import android.util.SparseIntArray;
 import android.view.View;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -32,8 +32,8 @@ public final class ah {
         sparseIntArray.append(66, 4);
         sparseIntArray.append(65, 3);
         sparseIntArray.append(61, 1);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 6);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceListItem, 7);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceLargePopupMenu, 6);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceListItem, 7);
         sparseIntArray.append(73, 17);
         sparseIntArray.append(74, 18);
         sparseIntArray.append(75, 19);
@@ -42,12 +42,12 @@ public final class ah {
         sparseIntArray.append(90, 33);
         sparseIntArray.append(72, 10);
         sparseIntArray.append(71, 9);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, 13);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textColorAlertDialogListItem, 16);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceSearchResultTitle, 14);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceListItemSmall, 11);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearanceSmallPopupMenu, 15);
-        sparseIntArray.append(R.styleable.AppCompatTheme_textAppearancePopupMenuHeader, 12);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceSearchResultSubtitle, 13);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textColorAlertDialogListItem, 16);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceSearchResultTitle, 14);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceListItemSmall, 11);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearanceSmallPopupMenu, 15);
+        sparseIntArray.append(Rb.styleable.AppCompatTheme_textAppearancePopupMenuHeader, 12);
         sparseIntArray.append(97, 40);
         sparseIntArray.append(82, 39);
         sparseIntArray.append(81, 41);

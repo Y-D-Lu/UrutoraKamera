@@ -9,7 +9,7 @@ import com.google.android.apps.camera.ui.views.CaptureAnimationOverlay;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
 import com.google.android.apps.camera.ui.widget.ReviewImageView;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.Executor;
 

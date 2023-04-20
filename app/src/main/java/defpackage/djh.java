@@ -13,13 +13,15 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.SearchView;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.hdrindicator.DisplayHelper;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+
+import cn.arsenals.ultracamera.R;
 
 /* renamed from: djh  reason: default package */
 /* loaded from: classes.dex */
@@ -80,7 +82,7 @@ public final class djh {
     }
 
     public djh(Context context, ddf ddfVar) {
-        us usVar = new us(context, (int) R.style.Theme_CameraSettings);
+        us usVar = new us(context, (int) Rb.style.Theme_CameraSettings);
         this.a = usVar;
         this.b = PreferenceManager.getDefaultSharedPreferences(usVar);
         this.sh = ddfVar;
@@ -169,7 +171,7 @@ public final class djh {
         this.d.clear();
         EditTextPreference editTextPreference = new EditTextPreference(this.c.getContext());
         editTextPreference.setTitle("camera.onscreen_logcat_filter");
-        editTextPreference.setLayoutResource(org.codeaurora.snapcam.R.layout.preference_with_margin);
+        editTextPreference.setLayoutResource(R.layout.preference_with_margin);
         this.d.add(new djg("camera.onscreen_logcat_filter", editTextPreference));
         c();
         String str = "Gca";
@@ -194,7 +196,7 @@ public final class djh {
         ddf ddfVar = this.sh;
         ddi ddiVar = ddl.a;
         ddfVar.b();
-        preferenceCategory.setLayoutResource(true != this.f ? org.codeaurora.snapcam.R.layout.preference_category_layout_legacy : org.codeaurora.snapcam.R.layout.preference_category_layout);
+        preferenceCategory.setLayoutResource(true != this.f ? R.layout.preference_category_layout_legacy : R.layout.preference_category_layout);
         preferenceScreen.addPreference(preferenceCategory);
         Collections.sort(this.d, cdg.c);
         String[] split = this.b.getString("dev_setting_filter_key", "").split("(,|\\s)+", -1);
@@ -347,7 +349,7 @@ public final class djh {
         } else if (z2) {
             anonymousClass5.setChecked(true);
         }
-        anonymousClass5.setLayoutResource(org.codeaurora.snapcam.R.layout.preference_with_margin);
+        anonymousClass5.setLayoutResource(R.layout.preference_with_margin);
         anonymousClass5.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() { // from class: djh.1
             @Override // android.preference.Preference.OnPreferenceChangeListener
             public final boolean onPreferenceChange(Preference preference, Object obj) {
@@ -361,7 +363,7 @@ public final class djh {
     public final void g(final String str, String str2, boolean z, Float f) {
         EditTextPreference editTextPreference = new EditTextPreference(this.c.getContext());
         editTextPreference.setTitle(str);
-        editTextPreference.setLayoutResource(org.codeaurora.snapcam.R.layout.preference_with_margin);
+        editTextPreference.setLayoutResource(R.layout.preference_with_margin);
         if (this.b.contains(str)) {
             f = Float.valueOf(this.b.getFloat(str, DisplayHelper.DENSITY));
         }
@@ -382,7 +384,7 @@ public final class djh {
     public final void h(final String str, String str2, boolean z, Integer num) {
         EditTextPreference editTextPreference = new EditTextPreference(this.c.getContext());
         editTextPreference.setTitle(str);
-        editTextPreference.setLayoutResource(org.codeaurora.snapcam.R.layout.preference_with_margin);
+        editTextPreference.setLayoutResource(R.layout.preference_with_margin);
         if (this.b.contains(str)) {
             num = Integer.valueOf(this.b.getInt(str, 0));
         }
@@ -403,7 +405,7 @@ public final class djh {
     public final void i(final String str, String str2, boolean z, String str3) {
         EditTextPreference editTextPreference = new EditTextPreference(this.c.getContext());
         editTextPreference.setTitle(str);
-        editTextPreference.setLayoutResource(org.codeaurora.snapcam.R.layout.preference_with_margin);
+        editTextPreference.setLayoutResource(R.layout.preference_with_margin);
         if (this.b.contains(str)) {
             str3 = this.b.getString(str, null);
         }

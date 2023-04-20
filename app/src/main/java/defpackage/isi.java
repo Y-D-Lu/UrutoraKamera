@@ -8,7 +8,7 @@ import com.google.android.apps.camera.toast.EducationToastView;
 import com.google.android.apps.camera.toast.ToastView;
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.Date;
 

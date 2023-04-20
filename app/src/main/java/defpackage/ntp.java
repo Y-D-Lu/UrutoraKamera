@@ -1,6 +1,6 @@
 package defpackage;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ final class ntp implements qco {
             default:
                 List list = (List) obj;
                 list.getClass();
-                return nuj.b(this.a, null, list, null, R.styleable.AppCompatTheme_windowFixedWidthMinor);
+                return nuj.b(this.a, null, list, null, Rb.styleable.AppCompatTheme_windowFixedWidthMinor);
         }
     }
 }

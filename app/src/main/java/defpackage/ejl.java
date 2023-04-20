@@ -13,7 +13,7 @@ import com.google.android.apps.camera.bottombar.BottomBarController;
 import com.google.android.apps.camera.imax.cyclops.processing.NativePoseEstimatorImpl;
 import com.google.android.apps.camera.ui.views.ViewfinderCover;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.File;
 import java.util.HashSet;

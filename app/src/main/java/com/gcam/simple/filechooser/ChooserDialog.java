@@ -13,7 +13,7 @@ import com.gcam.simple.filechooser.internals.DirAdapter;
 import com.gcam.simple.filechooser.internals.ExtFileFilter;
 import com.gcam.simple.filechooser.internals.RegexFileFilter;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.io.File;
 import java.io.FileFilter;

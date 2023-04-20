@@ -13,7 +13,7 @@ import android.net.Uri;
 
 import com.hdrindicator.DisplayHelper;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;

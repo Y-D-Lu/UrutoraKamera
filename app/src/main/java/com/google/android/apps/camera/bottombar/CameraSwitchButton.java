@@ -10,7 +10,7 @@ import android.view.View;
 import com.Helper;
 import com.custom.Cswitch;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 /* loaded from: classes.dex */
 public class CameraSwitchButton extends ScalableButton {

@@ -9,6 +9,8 @@ import com.google.android.apps.camera.progressoverlay.ProgressOverlay;
 
 import java.io.File;
 
+import cn.arsenals.ultracamera.R;
+
 /* renamed from: eyg  reason: default package */
 /* loaded from: classes.dex */
 public final class eyg extends buf implements jad {
@@ -79,7 +81,7 @@ public final class eyg extends buf implements jad {
     public boolean G = false;
     public final BottomBarListener Q = new ext(this);
     private final gft ao = new exw(this);
-    public final epi R = new exx(this);
+    public final epi varR = new exx(this);
     private final eak ap = new eya(this);
 
     public eyg(ljf ljfVar, cvo cvoVar, ghg ghgVar, btt bttVar, ghu ghuVar, lar larVar, fwt fwtVar, ifn ifnVar, epj epjVar, iwt iwtVar, kas kasVar, ojc ojcVar, lda ldaVar, final jns jnsVar, qkg qkgVar, fwl fwlVar, jac jacVar, iyb iybVar, fly flyVar, huf hufVar, lda ldaVar2, lda ldaVar3, bne bneVar, hjn hjnVar, fxf fxfVar, ddf ddfVar, eam eamVar, emb embVar, huj hujVar, BottomBarController bottomBarController, jlb jlbVar, AccessibilityManager accessibilityManager, dnj dnjVar, gvb gvbVar, ijn ijnVar, fks fksVar, fle fleVar, fku fkuVar, efu efuVar, imt imtVar, qkg qkgVar2, jbe jbeVar, ojc ojcVar2, hbq hbqVar, hll hllVar, ojc ojcVar3, fkh fkhVar, dba dbaVar, gtg gtgVar, dah dahVar, elw elwVar, byte[] bArr, byte[] bArr2) {
@@ -187,10 +189,10 @@ public final class eyg extends buf implements jad {
     @Override // defpackage.jad
     public final void C(int i) {
         if (i == 1) {
-            this.X.c(org.codeaurora.snapcam.R.raw.timer_final);
+            this.X.c(R.raw.timer_final);
         } else if (i != 2 && i != 3) {
         } else {
-            this.X.c(org.codeaurora.snapcam.R.raw.timer_increment);
+            this.X.c(R.raw.timer_increment);
         }
     }
 
@@ -203,10 +205,10 @@ public final class eyg extends buf implements jad {
     public final void E(boolean z) {
         this.O.f();
         if (!z) {
-            this.X.b(org.codeaurora.snapcam.R.raw.camera_shutter);
+            this.X.b(R.raw.camera_shutter);
             return;
         }
-        this.X.b(org.codeaurora.snapcam.R.raw.astro_longexposure_stop);
+        this.X.b(R.raw.astro_longexposure_stop);
         this.e.g().n();
     }
 
@@ -221,7 +223,7 @@ public final class eyg extends buf implements jad {
             defpackage.d.v(b.c(), "Not taking picture since the Camera is not ready to take a picture.", (char) 1581);
         } else {
             x(false);
-            this.X.b(org.codeaurora.snapcam.R.raw.longexposure_start);
+            this.X.b(R.raw.longexposure_start);
             this.z.k(true);
             this.o.b();
             this.A.d();
@@ -390,7 +392,7 @@ public final class eyg extends buf implements jad {
                 switch (-1) {
                     case 0:
                         eyg eygVar = this.a;
-                        eygVar.i.b(eygVar.R);
+                        eygVar.i.b(eygVar.varR);
                         return;
                     case 1:
                         eyg eygVar2 = this.a;
@@ -410,7 +412,7 @@ public final class eyg extends buf implements jad {
             }
         }, this.f));
         this.I.c(this.z.d(this.ap));
-        this.i.a(this.R);
+        this.i.a(this.varR);
         this.I.c(new lie() { // from class: exo
             public final /* synthetic */ eyg a = eyg.this;
 
@@ -419,7 +421,7 @@ public final class eyg extends buf implements jad {
                 switch (-1) {
                     case 0:
                         eyg eygVar = this.a;
-                        eygVar.i.b(eygVar.R);
+                        eygVar.i.b(eygVar.varR);
                         return;
                     case 1:
                         eyg eygVar2 = this.a;
@@ -431,7 +433,7 @@ public final class eyg extends buf implements jad {
                 }
             }
         });
-        this.ai = (ProgressOverlay) ((jnr) this.Y.mo37get()).c.c(org.codeaurora.snapcam.R.id.progress_overlay);
+        this.ai = (ProgressOverlay) ((jnr) this.Y.mo37get()).c.c(R.id.progress_overlay);
         I(true);
         if (bqe.v(this.ar)) {
             D(bqe.b(this.ar.a()));
@@ -448,7 +450,7 @@ public final class eyg extends buf implements jad {
                 switch (-1) {
                     case 0:
                         eyg eygVar = this.a;
-                        eygVar.i.b(eygVar.R);
+                        eygVar.i.b(eygVar.varR);
                         return;
                     case 1:
                         eyg eygVar2 = this.a;
@@ -582,6 +584,6 @@ public final class eyg extends buf implements jad {
             return;
         }
         this.Z.a();
-        this.X.c(org.codeaurora.snapcam.R.raw.timer_start);
+        this.X.c(R.raw.timer_start);
     }
 }

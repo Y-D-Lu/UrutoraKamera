@@ -234,11 +234,11 @@ public final class R {
         public static final int GradientColor_android_startY = 0x00000009;
         public static final int GradientColor_android_tileMode = 0x00000006;
         public static final int GradientColor_android_type = 0x00000002;
-//        public static final int[] Capability = {org.codeaurora.snapcam.R.attr.dummy_410, org.codeaurora.snapcam.R.attr.dummy_448};
+//        public static final int[] Capability = {R.attr.dummy_410, R.attr.dummy_448};
     public static final int[] Capability = {0x7f040410, 0x7f040448};
-        public static final int[] ColorStateListItem = {16843173, 16843551, 16844359, org.codeaurora.snapcam.R.attr.alpha, org.codeaurora.snapcam.R.attr.lStar};
-        public static final int[] FontFamily = {org.codeaurora.snapcam.R.attr.fontProviderAuthority, org.codeaurora.snapcam.R.attr.fontProviderCerts, org.codeaurora.snapcam.R.attr.fontProviderFetchStrategy, org.codeaurora.snapcam.R.attr.fontProviderFetchTimeout, org.codeaurora.snapcam.R.attr.fontProviderPackage, org.codeaurora.snapcam.R.attr.fontProviderQuery, org.codeaurora.snapcam.R.attr.fontProviderSystemFontFamily};
-        public static final int[] FontFamilyFont = {16844082, 16844083, 16844095, 16844143, 16844144, org.codeaurora.snapcam.R.attr.font, org.codeaurora.snapcam.R.attr.fontStyle, org.codeaurora.snapcam.R.attr.fontVariationSettings, org.codeaurora.snapcam.R.attr.fontWeight, org.codeaurora.snapcam.R.attr.ttcIndex};
+        public static final int[] ColorStateListItem = {16843173, 16843551, 16844359, R.attr.alpha, R.attr.lStar};
+        public static final int[] FontFamily = {R.attr.fontProviderAuthority, R.attr.fontProviderCerts, R.attr.fontProviderFetchStrategy, R.attr.fontProviderFetchTimeout, R.attr.fontProviderPackage, R.attr.fontProviderQuery, R.attr.fontProviderSystemFontFamily};
+        public static final int[] FontFamilyFont = {16844082, 16844083, 16844095, 16844143, 16844144, R.attr.font, R.attr.fontStyle, R.attr.fontVariationSettings, R.attr.fontWeight, R.attr.ttcIndex};
         public static final int[] GradientColor = {16843165, 16843166, 16843169, 16843170, 16843171, 16843172, 16843265, 16843275, 16844048, 16844049, 16844050, 16844051};
         public static final int[] GradientColorItem = {16843173, 16844052};
     }

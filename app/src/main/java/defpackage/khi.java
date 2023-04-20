@@ -4,7 +4,7 @@ import android.app.PendingIntent;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.android.apps.camera.bottombar.R;
+import com.google.android.apps.camera.bottombar.Rb;
 import com.google.lens.sdk.LensApi;
 
 import java.util.ArrayList;
@@ -92,7 +92,7 @@ public final class khi extends kno {
                 return "API_DISABLED";
             case 24:
                 return "API_DISABLED_FOR_CONNECTION";
-            case R.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
+            case Rb.styleable.AppCompatTheme_spinnerDropDownItemStyle /* 99 */:
                 return "UNFINISHED";
             case 1500:
                 return "DRIVE_EXTERNAL_STORAGE_REQUIRED";

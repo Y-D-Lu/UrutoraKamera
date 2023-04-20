@@ -3,7 +3,7 @@ package defpackage;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 
-import org.codeaurora.snapcam.R;
+import cn.arsenals.ultracamera.R;
 
 import java.util.ArrayList;
 import java.util.List;
