@@ -543,7 +543,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, "/data/data/org.codeaurora.snapcam/"
+    const-string v8, "/data/data/cn.arsenals.ultracamerasmali/"
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
