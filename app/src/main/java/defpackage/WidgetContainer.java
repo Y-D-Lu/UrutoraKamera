@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /* renamed from: aw  reason: default package */
 /* loaded from: classes.dex */
-public class aw extends ar {
+public class WidgetContainer extends ar {
     public final ArrayList al = new ArrayList();
 
     public void D() {
@@ -16,8 +16,8 @@ public class aw extends ar {
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
             ar arVar = (ar) this.al.get(i);
-            if (arVar instanceof aw) {
-                ((aw) arVar).D();
+            if (arVar instanceof WidgetContainer) {
+                ((WidgetContainer) arVar).D();
             }
         }
     }
@@ -62,7 +62,7 @@ public class aw extends ar {
         for (int i = 0; i < size; i++) {
             ar arVar = (ar) this.al.get(i);
             arVar.o(b(), c());
-            if (!(arVar instanceof as)) {
+            if (!(arVar instanceof ConstraintWidgetContainer)) {
                 arVar.r();
             }
         }

@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import cn.arsenals.ultracamera.R;
 
 import defpackage.af;
-import defpackage.ah;
+import defpackage.ConstraintSet;
 import defpackage.end;
 import defpackage.jbr;
 import defpackage.jbt;
@@ -49,7 +49,7 @@ public class GcaLayout extends ConstraintLayout {
         ((jca) ((end) context).b(jca.class)).a(this);
     }
 
-    private final void e(View view, jrz jrzVar, Size size, ah ahVar) {
+    private final void e(View view, jrz jrzVar, Size size, ConstraintSet constraintSetVar) {
         int i;
         if (size == null) {
             return;
@@ -63,7 +63,7 @@ public class GcaLayout extends ConstraintLayout {
             Double.isNaN(height);
             i = (int) (height / 2.0d);
         }
-        g(ahVar, jrzVar, view.getId(), getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_width), getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), (jrzVar == jrz.PORTRAIT || jrzVar == jrz.REVERSE_PORTRAIT) ? size.getHeight() - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height) : size.getWidth() - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), i, size);
+        g(constraintSetVar, jrzVar, view.getId(), getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_width), getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), (jrzVar == jrz.PORTRAIT || jrzVar == jrz.REVERSE_PORTRAIT) ? size.getHeight() - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height) : size.getWidth() - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), i, size);
     }
 
     private static final Rect f(Size size, Size size2) {
@@ -94,7 +94,7 @@ public class GcaLayout extends ConstraintLayout {
         return new Rect(i2, i, width + i2, height + i);
     }
 
-    private static final void g(ah ahVar, jrz jrzVar, int i, int i2, int i3, int i4, int i5, Size size) {
+    private static final void g(ConstraintSet constraintSetVar, jrz jrzVar, int i, int i2, int i3, int i4, int i5, Size size) {
         if (size == null) {
             return;
         }
@@ -102,44 +102,44 @@ public class GcaLayout extends ConstraintLayout {
         switch (jrzVar.ordinal()) {
             case 0:
             case 3:
-                ahVar.f(i, i3);
-                ahVar.g(i, i2);
-                ahVar.e(i, 3, 0, 3, i4);
-                ahVar.e(i, 6, 0, 6, i5);
+                constraintSetVar.f(i, i3);
+                constraintSetVar.g(i, i2);
+                constraintSetVar.e(i, 3, 0, 3, i4);
+                constraintSetVar.e(i, 6, 0, 6, i5);
                 return;
             case 1:
-                ahVar.f(i, i2);
-                ahVar.g(i, i3);
-                ahVar.e(i, 3, 0, 3, (size.getHeight() - i5) - i2);
-                ahVar.e(i, 6, 0, 6, i4);
+                constraintSetVar.f(i, i2);
+                constraintSetVar.g(i, i3);
+                constraintSetVar.e(i, 3, 0, 3, (size.getHeight() - i5) - i2);
+                constraintSetVar.e(i, 6, 0, 6, i4);
                 return;
             case 2:
-                ahVar.f(i, i2);
-                ahVar.g(i, i3);
-                ahVar.e(i, 3, 0, 3, i5);
-                ahVar.e(i, 6, 0, 6, (size.getWidth() - i3) - i4);
+                constraintSetVar.f(i, i2);
+                constraintSetVar.g(i, i3);
+                constraintSetVar.e(i, 3, 0, 3, i5);
+                constraintSetVar.e(i, 6, 0, 6, (size.getWidth() - i3) - i4);
                 return;
             default:
                 return;
         }
     }
 
-    private static final void h(View view, Rect rect, ah ahVar) {
+    private static final void h(View view, Rect rect, ConstraintSet constraintSetVar) {
         if (rect.width() < 0 || rect.height() < 0) {
             return;
         }
-        ahVar.f(view.getId(), rect.height());
-        ahVar.g(view.getId(), rect.width());
-        ahVar.e(view.getId(), 3, 0, 3, rect.top);
-        ahVar.e(view.getId(), 6, 0, 6, rect.left);
+        constraintSetVar.f(view.getId(), rect.height());
+        constraintSetVar.g(view.getId(), rect.width());
+        constraintSetVar.e(view.getId(), 3, 0, 3, rect.top);
+        constraintSetVar.e(view.getId(), 6, 0, 6, rect.left);
     }
 
-    private static final void i(View view, Size size, Size size2, ah ahVar) {
+    private static final void i(View view, Size size, Size size2, ConstraintSet constraintSetVar) {
         if (size == null || size2 == null) {
             return;
         }
         Rect f = f(size, size2);
-        g(ahVar, jrz.PORTRAIT, view.getId(), f.width(), f.height(), f.top, f.left, size);
+        g(constraintSetVar, jrz.PORTRAIT, view.getId(), f.width(), f.height(), f.top, f.left, size);
     }
 
     @Override // android.support.constraint.ConstraintLayout, android.view.ViewGroup
@@ -208,8 +208,8 @@ public class GcaLayout extends ConstraintLayout {
         obr.ao(a);
         jbw jbwVar3 = (jbw) a;
         jbt jbtVar = jbwVar3.b;
-        ah ahVar = new ah();
-        ahVar.d(gcaLayout2);
+        ConstraintSet constraintSetVar = new ConstraintSet();
+        constraintSetVar.d(gcaLayout2);
         jce jceVar = jbwVar3.a.j;
         int childCount = getChildCount();
         jbv jbvVar = jbwVar3.a;
@@ -223,15 +223,15 @@ public class GcaLayout extends ConstraintLayout {
                 switch (i11 - 1) {
                     case 0:
                         i3 = i10;
-                        h(childAt, jbtVar.k, ahVar);
+                        h(childAt, jbtVar.k, constraintSetVar);
                         continue;
                     case 1:
                         i3 = i10;
                         if (jceVar.equals(jce.PHONE_LAYOUT) || jceVar.equals(jce.SIMPLIFIED_LAYOUT)) {
-                            h(childAt, jbtVar.e, ahVar);
+                            h(childAt, jbtVar.e, constraintSetVar);
                             break;
                         } else if (jceVar.equals(jce.TABLET_LAYOUT)) {
-                            i(childAt, jbvVar.b, jbvVar.d, ahVar);
+                            i(childAt, jbvVar.b, jbvVar.d, constraintSetVar);
                             break;
                         } else {
                             continue;
@@ -239,20 +239,20 @@ public class GcaLayout extends ConstraintLayout {
                     case 2:
                         i3 = i10;
                         if (jceVar.equals(jce.PHONE_LAYOUT) || jceVar.equals(jce.SIMPLIFIED_LAYOUT)) {
-                            h(childAt, jbtVar.f, ahVar);
+                            h(childAt, jbtVar.f, constraintSetVar);
                             break;
                         } else if (jceVar.equals(jce.TABLET_LAYOUT)) {
                             Rect f = f(jbvVar.b, jbvVar.d);
                             if (jbvVar.h != jrz.PORTRAIT && jbvVar.h != jrz.REVERSE_PORTRAIT) {
                                 if (jbvVar.h != jrz.LANDSCAPE) {
-                                    g(ahVar, jrz.PORTRAIT, childAt.getId(), (f.width() - getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar)) - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), f.height(), f.top, f.left + getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), jbvVar.b);
+                                    g(constraintSetVar, jrz.PORTRAIT, childAt.getId(), (f.width() - getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar)) - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), f.height(), f.top, f.left + getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), jbvVar.b);
                                     break;
                                 } else {
-                                    g(ahVar, jrz.PORTRAIT, childAt.getId(), (f.width() - getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar)) - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), f.height(), f.top, f.left + getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar), jbvVar.b);
+                                    g(constraintSetVar, jrz.PORTRAIT, childAt.getId(), (f.width() - getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar)) - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), f.height(), f.top, f.left + getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar), jbvVar.b);
                                     break;
                                 }
                             } else {
-                                g(ahVar, jrz.PORTRAIT, childAt.getId(), f.width(), (f.height() - getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar)) - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), f.top + getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar), f.left, jbvVar.b);
+                                g(constraintSetVar, jrz.PORTRAIT, childAt.getId(), f.width(), (f.height() - getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar)) - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height), f.top + getResources().getDimensionPixelSize(R.dimen.tab_options_top_bar), f.left, jbvVar.b);
                                 break;
                             }
                         } else {
@@ -261,7 +261,7 @@ public class GcaLayout extends ConstraintLayout {
                     case 3:
                         i3 = i10;
                         if (jceVar.equals(jce.PHONE_LAYOUT) || jceVar.equals(jce.SIMPLIFIED_LAYOUT)) {
-                            h(childAt, jbtVar.i, ahVar);
+                            h(childAt, jbtVar.i, constraintSetVar);
                             break;
                         } else if (jceVar.equals(jce.TABLET_LAYOUT)) {
                             jrz jrzVar2 = jbvVar.h;
@@ -276,7 +276,7 @@ public class GcaLayout extends ConstraintLayout {
                                     Double.isNaN(width);
                                     i4 = (int) (width / 2.0d);
                                 }
-                                g(ahVar, jrzVar2, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_width), getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_height), i4, (jrzVar2 == jrz.PORTRAIT || jrzVar2 == jrz.REVERSE_PORTRAIT) ? (size.getWidth() - getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_width)) - getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_right_margin) : (size.getHeight() - getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_width)) - getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_right_margin), size);
+                                g(constraintSetVar, jrzVar2, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_width), getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_height), i4, (jrzVar2 == jrz.PORTRAIT || jrzVar2 == jrz.REVERSE_PORTRAIT) ? (size.getWidth() - getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_width)) - getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_right_margin) : (size.getHeight() - getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_width)) - getResources().getDimensionPixelSize(R.dimen.tab_bottom_bar_right_margin), size);
                                 break;
                             } else {
                                 break;
@@ -291,20 +291,20 @@ public class GcaLayout extends ConstraintLayout {
                             jbwVar3 = jbwVar4;
                             jcd jcdVar = jbwVar3.c;
                             if (jcdVar == null) {
-                                h(childAt, jbtVar.f, ahVar);
+                                h(childAt, jbtVar.f, constraintSetVar);
                                 break;
                             } else {
-                                ahVar.f(childAt.getId(), jcdVar.a.getHeight());
-                                ahVar.g(childAt.getId(), jcdVar.a.getWidth());
-                                ahVar.e(childAt.getId(), 3, 0, 3, jcdVar.c.top);
-                                ahVar.e(childAt.getId(), 6, 0, 6, jcdVar.c.left);
-                                ahVar.e(childAt.getId(), 7, 0, 7, jcdVar.c.right);
-                                ahVar.e(childAt.getId(), 4, 0, 4, jcdVar.c.bottom);
+                                constraintSetVar.f(childAt.getId(), jcdVar.a.getHeight());
+                                constraintSetVar.g(childAt.getId(), jcdVar.a.getWidth());
+                                constraintSetVar.e(childAt.getId(), 3, 0, 3, jcdVar.c.top);
+                                constraintSetVar.e(childAt.getId(), 6, 0, 6, jcdVar.c.left);
+                                constraintSetVar.e(childAt.getId(), 7, 0, 7, jcdVar.c.right);
+                                constraintSetVar.e(childAt.getId(), 4, 0, 4, jcdVar.c.bottom);
                                 childAt.setPadding(jcdVar.b.left, jcdVar.b.top, jcdVar.b.right, jcdVar.b.bottom);
                                 break;
                             }
                         } else {
-                            i(childAt, jbvVar.b, jbvVar.d, ahVar);
+                            i(childAt, jbvVar.b, jbvVar.d, constraintSetVar);
                             jbwVar3 = jbwVar4;
                             continue;
                         }
@@ -316,12 +316,12 @@ public class GcaLayout extends ConstraintLayout {
                                 jbwVar3 = jbwVar5;
                                 break;
                             } else {
-                                gcaLayout3.e(childAt, jbvVar.h, jbvVar.b, ahVar);
+                                gcaLayout3.e(childAt, jbvVar.h, jbvVar.b, constraintSetVar);
                                 jbwVar3 = jbwVar5;
                                 continue;
                             }
                         } else {
-                            h(childAt, jbtVar.l, ahVar);
+                            h(childAt, jbtVar.l, constraintSetVar);
                             jbwVar3 = jbwVar5;
                             break;
                         }
@@ -346,7 +346,7 @@ public class GcaLayout extends ConstraintLayout {
                                         i5 = (int) (width2 / 2.0d);
                                     }
                                     gcaLayout3 = gcaLayout4;
-                                    g(ahVar, jrzVar3, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_zoom_ui_width), getResources().getDimensionPixelSize(R.dimen.tab_zoom_ui_height), i5, getResources().getDimensionPixelSize(R.dimen.tab_zoom_ui_left_margin), size2);
+                                    g(constraintSetVar, jrzVar3, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_zoom_ui_width), getResources().getDimensionPixelSize(R.dimen.tab_zoom_ui_height), i5, getResources().getDimensionPixelSize(R.dimen.tab_zoom_ui_left_margin), size2);
                                     jbwVar3 = jbwVar6;
                                     continue;
                                 }
@@ -357,7 +357,7 @@ public class GcaLayout extends ConstraintLayout {
                         } else {
                             gcaLayout3 = gcaLayout4;
                         }
-                        h(childAt, jbtVar.h, ahVar);
+                        h(childAt, jbtVar.h, constraintSetVar);
                         jbwVar3 = jbwVar6;
                         break;
                     case 7:
@@ -370,13 +370,13 @@ public class GcaLayout extends ConstraintLayout {
                                 jbwVar3 = jbwVar7;
                                 break;
                             } else {
-                                i(childAt, jbvVar.b, jbvVar.d, ahVar);
+                                i(childAt, jbvVar.b, jbvVar.d, constraintSetVar);
                                 gcaLayout3 = gcaLayout5;
                                 jbwVar3 = jbwVar7;
                                 continue;
                             }
                         } else {
-                            h(childAt, jbtVar.g, ahVar);
+                            h(childAt, jbtVar.g, constraintSetVar);
                             gcaLayout3 = gcaLayout5;
                             jbwVar3 = jbwVar7;
                             break;
@@ -392,7 +392,7 @@ public class GcaLayout extends ConstraintLayout {
                                 jbwVar3 = jbwVar8;
                                 break;
                             } else {
-                                e(childAt, jbvVar.h, jbvVar.b, ahVar);
+                                e(childAt, jbvVar.h, jbvVar.b, constraintSetVar);
                                 gcaLayout3 = this;
                                 jbwVar3 = jbwVar8;
                                 continue;
@@ -400,7 +400,7 @@ public class GcaLayout extends ConstraintLayout {
                         } else {
                             gcaLayout = this;
                         }
-                        h(childAt, jbtVar.j, ahVar);
+                        h(childAt, jbtVar.j, constraintSetVar);
                         gcaLayout3 = gcaLayout;
                         jbwVar3 = jbwVar8;
                         break;
@@ -413,13 +413,13 @@ public class GcaLayout extends ConstraintLayout {
                                 jbwVar3 = jbwVar9;
                                 break;
                             } else {
-                                i(childAt, jbvVar.b, jbvVar.d, ahVar);
+                                i(childAt, jbvVar.b, jbvVar.d, constraintSetVar);
                                 gcaLayout3 = this;
                                 jbwVar3 = jbwVar9;
                                 continue;
                             }
                         } else {
-                            h(childAt, jbtVar.c, ahVar);
+                            h(childAt, jbtVar.c, constraintSetVar);
                             gcaLayout3 = this;
                             jbwVar3 = jbwVar9;
                             break;
@@ -449,14 +449,14 @@ public class GcaLayout extends ConstraintLayout {
                                         } else {
                                             i8 = size3.getWidth() - getResources().getDimensionPixelSize(R.dimen.tab_mode_switcher_height);
                                             i3 = i10;
-                                            g(ahVar, jrzVar4, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_options_container_width), i8, getResources().getDimensionPixelSize(R.dimen.tab_options_container_top_margin), i6, size3);
+                                            g(constraintSetVar, jrzVar4, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_options_container_width), i8, getResources().getDimensionPixelSize(R.dimen.tab_options_container_top_margin), i6, size3);
                                             gcaLayout3 = this;
                                             jbwVar3 = jbwVar2;
                                             continue;
                                         }
                                         i8 = size3.getHeight() - getResources().getDimensionPixelSize(i7);
                                         i3 = i10;
-                                        g(ahVar, jrzVar4, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_options_container_width), i8, getResources().getDimensionPixelSize(R.dimen.tab_options_container_top_margin), i6, size3);
+                                        g(constraintSetVar, jrzVar4, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_options_container_width), i8, getResources().getDimensionPixelSize(R.dimen.tab_options_container_top_margin), i6, size3);
                                         gcaLayout3 = this;
                                         jbwVar3 = jbwVar2;
                                         continue;
@@ -468,7 +468,7 @@ public class GcaLayout extends ConstraintLayout {
                                     }
                                     i8 = size3.getHeight() - getResources().getDimensionPixelSize(i7);
                                     i3 = i10;
-                                    g(ahVar, jrzVar4, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_options_container_width), i8, getResources().getDimensionPixelSize(R.dimen.tab_options_container_top_margin), i6, size3);
+                                    g(constraintSetVar, jrzVar4, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_options_container_width), i8, getResources().getDimensionPixelSize(R.dimen.tab_options_container_top_margin), i6, size3);
                                     gcaLayout3 = this;
                                     jbwVar3 = jbwVar2;
                                     continue;
@@ -481,18 +481,18 @@ public class GcaLayout extends ConstraintLayout {
                             jbwVar = jbwVar3;
                             i3 = i10;
                         }
-                        h(childAt, jbtVar.d, ahVar);
+                        h(childAt, jbtVar.d, constraintSetVar);
                         gcaLayout3 = this;
                         jbwVar3 = jbwVar;
                         break;
                     case 11:
-                        h(childAt, jbtVar.m, ahVar);
+                        h(childAt, jbtVar.m, constraintSetVar);
                         i3 = i10;
                         continue;
                     default:
                         i3 = i10;
                         if (jceVar.equals(jce.PHONE_LAYOUT) || jceVar.equals(jce.SIMPLIFIED_LAYOUT)) {
-                            h(childAt, jbtVar.n, ahVar);
+                            h(childAt, jbtVar.n, constraintSetVar);
                             break;
                         } else if (jceVar.equals(jce.TABLET_LAYOUT)) {
                             Size size4 = jbvVar.b;
@@ -511,7 +511,7 @@ public class GcaLayout extends ConstraintLayout {
                                 if (dimensionPixelSize == 0) {
                                     break;
                                 } else {
-                                    g(ahVar, jrz.PORTRAIT, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_mode_slider_width), getResources().getDimensionPixelSize(R.dimen.tab_mode_slider_height), height5, i9, jbvVar.b);
+                                    g(constraintSetVar, jrz.PORTRAIT, childAt.getId(), getResources().getDimensionPixelSize(R.dimen.tab_mode_slider_width), getResources().getDimensionPixelSize(R.dimen.tab_mode_slider_height), height5, i9, jbvVar.b);
                                     break;
                                 }
                             } else {
@@ -528,7 +528,7 @@ public class GcaLayout extends ConstraintLayout {
             i10 = i3 + 1;
             gcaLayout3 = gcaLayout3;
         }
-        ahVar.b(gcaLayout3);
+        constraintSetVar.b(gcaLayout3);
         super.onMeasure(i, i2);
         Trace.endSection();
 

@@ -12,18 +12,18 @@ import com.hdrindicator.DisplayHelper;
 import java.util.ArrayList;
 
 import defpackage.af;
-import defpackage.ah;
+import defpackage.ConstraintSet;
 import defpackage.ai;
 import defpackage.ar;
-import defpackage.as;
+import defpackage.ConstraintWidgetContainer;
 import defpackage.at;
-import defpackage.aw;
+import defpackage.WidgetContainer;
 
 /* loaded from: classes.dex */
 public class ConstraintLayout extends ViewGroup {
     SparseArray a;
-    as b;
-    public ah c;
+    ConstraintWidgetContainer b;
+    public ConstraintSet c;
     private final ArrayList d;
     private int e;
     private int f;
@@ -36,7 +36,7 @@ public class ConstraintLayout extends ViewGroup {
         super(context);
         this.a = new SparseArray();
         this.d = new ArrayList(100);
-        this.b = new as();
+        this.b = new ConstraintWidgetContainer();
         this.e = 0;
         this.f = 0;
         this.g = Integer.MAX_VALUE;
@@ -51,7 +51,7 @@ public class ConstraintLayout extends ViewGroup {
         super(context, attributeSet);
         this.a = new SparseArray();
         this.d = new ArrayList(100);
-        this.b = new as();
+        this.b = new ConstraintWidgetContainer();
         this.e = 0;
         this.f = 0;
         this.g = Integer.MAX_VALUE;
@@ -66,7 +66,7 @@ public class ConstraintLayout extends ViewGroup {
         super(context, attributeSet, i);
         this.a = new SparseArray();
         this.d = new ArrayList(100);
-        this.b = new as();
+        this.b = new ConstraintWidgetContainer();
         this.e = 0;
         this.f = 0;
         this.g = Integer.MAX_VALUE;
@@ -119,9 +119,9 @@ public class ConstraintLayout extends ViewGroup {
                     this.j = obtainStyledAttributes.getInt(112, this.j);
                 } else if (index == 34) {
                     int resourceId = obtainStyledAttributes.getResourceId(34, 0);
-                    ah ahVar = new ah();
-                    this.c = ahVar;
-                    ahVar.h(getContext(), resourceId);
+                    ConstraintSet constraintSetVar = new ConstraintSet();
+                    this.c = constraintSetVar;
+                    constraintSetVar.load(getContext(), resourceId);
                 }
             }
             obtainStyledAttributes.recycle();
@@ -199,9 +199,9 @@ public class ConstraintLayout extends ViewGroup {
         float parseFloat;
         int paddingLeft = getPaddingLeft();
         int paddingTop = getPaddingTop();
-        as asVar = this.b;
-        asVar.w = paddingLeft;
-        asVar.x = paddingTop;
+        ConstraintWidgetContainer constraintWidgetContainerVar = this.b;
+        constraintWidgetContainerVar.w = paddingLeft;
+        constraintWidgetContainerVar.x = paddingTop;
         int mode = View.MeasureSpec.getMode(var1);
         int size = View.MeasureSpec.getSize(var1);
         int mode2 = View.MeasureSpec.getMode(var2);
@@ -259,9 +259,9 @@ public class ConstraintLayout extends ViewGroup {
                 if (i10 < childCount) {
                     if (getChildAt(i10).isLayoutRequested()) {
                         this.d.clear();
-                        ah ahVar = this.c;
-                        if (ahVar != null) {
-                            ahVar.c(this);
+                        ConstraintSet constraintSetVar = this.c;
+                        if (constraintSetVar != null) {
+                            constraintSetVar.c(this);
                         }
                         int childCount2 = getChildCount();
                         this.b.al.clear();
@@ -276,13 +276,13 @@ public class ConstraintLayout extends ViewGroup {
                                 e.i();
                                 e.K = childAt.getVisibility();
                                 e.J = childAt;
-                                as asVar2 = this.b;
-                                asVar2.al.add(e);
+                                ConstraintWidgetContainer constraintWidgetContainerVar2 = this.b;
+                                constraintWidgetContainerVar2.al.add(e);
                                 ar arVar3 = e.r;
                                 if (arVar3 != null) {
-                                    ((aw) arVar3).F(e);
+                                    ((WidgetContainer) arVar3).F(e);
                                 }
-                                e.r = asVar2;
+                                e.r = constraintWidgetContainerVar2;
                                 if (!afVar2.O || !afVar2.N) {
                                     this.d.add(e);
                                 }
@@ -517,9 +517,9 @@ public class ConstraintLayout extends ViewGroup {
                 int paddingBottom = paddingTop + getPaddingBottom();
                 int paddingRight = paddingLeft + getPaddingRight();
                 if (size3 > 0) {
-                    as asVar3 = this.b;
-                    int i35 = asVar3.ad;
-                    int i36 = asVar3.ae;
+                    ConstraintWidgetContainer constraintWidgetContainerVar3 = this.b;
+                    int i35 = constraintWidgetContainerVar3.ad;
+                    int i36 = constraintWidgetContainerVar3.ae;
                     int i37 = 0;
                     int i38 = 0;
                     boolean z3 = false;
@@ -582,11 +582,11 @@ public class ConstraintLayout extends ViewGroup {
                 int resolveSizeAndState2 = resolveSizeAndState(d10 + paddingBottom, var2, i5 << 16);
                 int min = Math.min(this.g, resolveSizeAndState) & 16777215;
                 int min2 = Math.min(this.h, resolveSizeAndState2) & 16777215;
-                as asVar4 = this.b;
-                if (asVar4.aj) {
+                ConstraintWidgetContainer constraintWidgetContainerVar4 = this.b;
+                if (constraintWidgetContainerVar4.aj) {
                     min |= 16777216;
                 }
-                if (asVar4.ak) {
+                if (constraintWidgetContainerVar4.ak) {
                     min2 |= 16777216;
                 }
                 setMeasuredDimension(min, min2);

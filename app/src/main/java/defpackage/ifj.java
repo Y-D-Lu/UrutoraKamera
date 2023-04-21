@@ -78,11 +78,11 @@ public final class ifj {
             rect.top = point.y + this.f.getTop() + ((height - height2) / 2);
             rect.right = rect.left + this.a.getWidth();
             rect.bottom = rect.top + this.a.getHeight();
-            ah ahVar = new ah();
-            ahVar.d(this.d);
-            ahVar.e(view.getId(), 6, 0, 6, rect.left);
-            ahVar.e(view.getId(), 3, 0, 3, rect.top);
-            ahVar.b(this.d);
+            ConstraintSet constraintSetVar = new ConstraintSet();
+            constraintSetVar.d(this.d);
+            constraintSetVar.e(view.getId(), 6, 0, 6, rect.left);
+            constraintSetVar.e(view.getId(), 3, 0, 3, rect.top);
+            constraintSetVar.b(this.d);
         }
     }
 

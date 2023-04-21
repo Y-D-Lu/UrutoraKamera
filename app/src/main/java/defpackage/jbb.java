@@ -57,11 +57,11 @@ public final class jbb implements jas {
         this.a.setLayoutParams(layoutParams);
     }
 
-    private final void l(ah ahVar, View view) {
+    private final void l(ConstraintSet constraintSetVar, View view) {
         this.c.findViewById(R.id.bottom_bar).getLocationInWindow(this.i);
-        ahVar.e(view.getId(), 3, 0, 3, (this.i[1] - this.h.getDimensionPixelSize(R.dimen.timer_height)) - this.h.getDimensionPixelOffset(R.dimen.long_press_bottom_padding));
-        ahVar.e(view.getId(), 6, 0, 6, 0);
-        ahVar.e(view.getId(), 7, 0, 7, 0);
+        constraintSetVar.e(view.getId(), 3, 0, 3, (this.i[1] - this.h.getDimensionPixelSize(R.dimen.timer_height)) - this.h.getDimensionPixelOffset(R.dimen.long_press_bottom_padding));
+        constraintSetVar.e(view.getId(), 6, 0, 6, 0);
+        constraintSetVar.e(view.getId(), 7, 0, 7, 0);
     }
 
     @Override // defpackage.jas
@@ -99,7 +99,7 @@ public final class jbb implements jas {
 
     @Override // defpackage.jas
     public final void f() {
-        ah ahVar;
+        ConstraintSet constraintSetVar;
         Display display = this.c.getDisplay();
         if (display != null) {
             if (jrz.b(this.k ? jrz.a(display, this.a.getContext()) : jrz.a(display, this.f.getContext()))) {
@@ -108,34 +108,34 @@ public final class jbb implements jas {
                 ViewGroup viewGroup = (ViewGroup) this.c.findViewById(R.id.activity_root_view);
                 viewGroup.addView(linearLayout);
                 linearLayout.bringToFront();
-                ah ahVar2 = new ah();
+                ConstraintSet constraintSetVar2 = new ConstraintSet();
                 ConstraintLayout constraintLayout = (ConstraintLayout) viewGroup;
-                ahVar2.d(constraintLayout);
+                constraintSetVar2.d(constraintLayout);
                 switch (hls.h(((Integer) this.e.c(htu.d)).intValue()) - 1) {
                     case 0:
                         if (!((Boolean) this.e.c(htu.k)).booleanValue()) {
                             View findViewById = this.c.findViewById(R.id.shutter_button);
                             findViewById.getLocationInWindow(this.i);
-                            ahVar = ahVar2;
-                            ahVar2.e(linearLayout.getId(), 3, 0, 3, (((this.i[1] + (findViewById.getHeight() / 2)) - this.h.getDimensionPixelSize(R.dimen.photo_button_radius)) - this.h.getDimensionPixelSize(R.dimen.timer_height)) - this.h.getDimensionPixelOffset(R.dimen.long_press_bottom_padding));
-                            ahVar.e(linearLayout.getId(), 6, 0, 6, 0);
-                            ahVar.e(linearLayout.getId(), 7, 0, 7, 0);
+                            constraintSetVar = constraintSetVar2;
+                            constraintSetVar2.e(linearLayout.getId(), 3, 0, 3, (((this.i[1] + (findViewById.getHeight() / 2)) - this.h.getDimensionPixelSize(R.dimen.photo_button_radius)) - this.h.getDimensionPixelSize(R.dimen.timer_height)) - this.h.getDimensionPixelOffset(R.dimen.long_press_bottom_padding));
+                            constraintSetVar.e(linearLayout.getId(), 6, 0, 6, 0);
+                            constraintSetVar.e(linearLayout.getId(), 7, 0, 7, 0);
                             break;
                         } else {
-                            l(ahVar2, linearLayout);
-                            ahVar = ahVar2;
+                            l(constraintSetVar2, linearLayout);
+                            constraintSetVar = constraintSetVar2;
                             break;
                         }
                     case 1:
-                        l(ahVar2, linearLayout);
-                        ahVar = ahVar2;
+                        l(constraintSetVar2, linearLayout);
+                        constraintSetVar = constraintSetVar2;
                         break;
                     default:
-                        ahVar = ahVar2;
+                        constraintSetVar = constraintSetVar2;
                         defpackage.d.v(b.b(), "Invalid aspect ratio detected!", (char) 3236);
                         break;
                 }
-                ahVar.b(constraintLayout);
+                constraintSetVar.b(constraintLayout);
                 h(0L);
                 j();
                 linearLayout.animate().setDuration(200L).setStartDelay(517L).alpha(1.0f).withStartAction(new Runnable() { // from class: jaz

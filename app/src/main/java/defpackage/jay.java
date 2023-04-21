@@ -158,15 +158,15 @@ public final class jay implements jas {
                     ViewGroup viewGroup2 = (ViewGroup) this.h.findViewById(R.id.activity_root_view);
                     viewGroup2.addView(this.b);
                     this.b.bringToFront();
-                    ah ahVar = new ah();
+                    ConstraintSet constraintSetVar = new ConstraintSet();
                     ConstraintLayout constraintLayout = (ConstraintLayout) viewGroup2;
-                    ahVar.d(constraintLayout);
+                    constraintSetVar.d(constraintLayout);
                     int[] iArr = new int[2];
                     this.o.getLocationInWindow(iArr);
-                    ahVar.e(this.b.getId(), 3, 0, 3, (iArr[1] + (this.o.getHeight() / 2)) - (this.l.getDimensionPixelSize(R.dimen.timer_height) / 2));
-                    ahVar.e(this.b.getId(), 6, 0, 6, 0);
-                    ahVar.e(this.b.getId(), 7, 0, 7, 0);
-                    ahVar.b(constraintLayout);
+                    constraintSetVar.e(this.b.getId(), 3, 0, 3, (iArr[1] + (this.o.getHeight() / 2)) - (this.l.getDimensionPixelSize(R.dimen.timer_height) / 2));
+                    constraintSetVar.e(this.b.getId(), 6, 0, 6, 0);
+                    constraintSetVar.e(this.b.getId(), 7, 0, 7, 0);
+                    constraintSetVar.b(constraintLayout);
                     break;
                 case 1:
                     l(viewGroup, 80);

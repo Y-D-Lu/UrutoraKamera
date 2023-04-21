@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 /* renamed from: as  reason: default package */
 /* loaded from: classes.dex */
-public final class as extends aw {
+public final class ConstraintWidgetContainer extends WidgetContainer {
     int ag;
     int ah;
     private av am;
@@ -550,7 +550,7 @@ public final class as extends aw {
         boolean z2;
         boolean z3;
         ar arVar = null;
-        as asVar;
+        ConstraintWidgetContainer constraintWidgetContainerVar;
         int i4;
         int i5 = 0;
         int i6 = 0;
@@ -730,8 +730,8 @@ public final class as extends aw {
             size = this.al.size();
             for (i3 = 0; i3 < size; i3++) {
                 ar arVar4 = (ar) this.al.get(i3);
-                if (arVar4 instanceof aw) {
-                    ((aw) arVar4).D();
+                if (arVar4 instanceof WidgetContainer) {
+                    ((WidgetContainer) arVar4).D();
                 }
             }
             boolean z9 = z;
@@ -1188,11 +1188,11 @@ public final class as extends aw {
                 this.ae = i55;
             }
             j(this.af.g);
-            asVar = this;
+            constraintWidgetContainerVar = this;
             for (arVar = this.r; arVar != null; arVar = arVar.r) {
-                asVar = (defpackage.as) arVar;
+                constraintWidgetContainerVar = (ConstraintWidgetContainer) arVar;
             }
-            if (this == asVar) {
+            if (this == constraintWidgetContainerVar) {
                 return;
             }
             r();
@@ -1219,10 +1219,10 @@ public final class as extends aw {
         if (z3) {
         }
         j(this.af.g);
-        asVar = this;
+        constraintWidgetContainerVar = this;
         while (arVar != null) {
         }
-        if (this == asVar) {
+        if (this == constraintWidgetContainerVar) {
         }
 
         /*
