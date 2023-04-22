@@ -542,687 +542,1177 @@ public final class ConstraintWidgetContainer extends WidgetContainer {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public final void D() {
-        int i = 0;
-        int i2;
-        boolean z;
-        int size;
-        int i3 = 0;
-        boolean z2;
-        boolean z3;
-        ar arVar = null;
-        ConstraintWidgetContainer constraintWidgetContainerVar;
-        int i4;
-        int i5 = 0;
-        int i6 = 0;
-        boolean z4;
-        int i7 = 0;
-        int i8;
-        boolean z5;
-        int max;
-        int max2;
-        int i9 = 0;
-        int i10 = 0;
-        boolean z6;
-        boolean z7 = false;
-        boolean z8 = false;
-        int i11 = 0;
-        int i12 = 0;
-        char c = 0;
-        int i13;
-        boolean[] zArr;
-        int i14;
-        int i15 = this.w;
-        int i16 = this.x;
-        int max3 = Math.max(0, h());
-        int max4 = Math.max(0, d());
+        int var14 = this.w;
+        int var3 = this.x;
+        int var15 = Math.max(0, this.h());
+        int var18 = Math.max(0, this.d());
         this.aj = false;
         this.ak = false;
+        int var4;
+        int var5;
+        av var29;
+        au var30;
         if (this.r != null) {
             if (this.am == null) {
                 this.am = new av(this);
             }
-            av avVar = this.am;
-            avVar.a = this.w;
-            avVar.b = this.x;
-            avVar.c = h();
-            avVar.d = d();
-            int size2 = avVar.e.size();
-            for (int i17 = 0; i17 < size2; i17++) {
-                au auVar = (au) avVar.e.get(i17);
-                auVar.a = u(auVar.a.g);
-                aq aqVar = auVar.a;
-                if (aqVar != null) {
-                    auVar.b = aqVar.b;
-                    auVar.c = aqVar.a();
-                    aq aqVar2 = auVar.a;
-                    auVar.e = aqVar2.h;
-                    auVar.d = aqVar2.e;
+
+            var29 = this.am;
+            var29.a = super.w;
+            var29.b = super.x;
+            var29.c = this.h();
+            var29.d = this.d();
+            var5 = var29.e.size();
+
+            for (var4 = 0; var4 < var5; ++var4) {
+                var30 = (au) var29.e.get(var4);
+                var30.a = this.u(var30.a.g);
+                aq var31 = var30.a;
+                if (var31 != null) {
+                    var30.b = var31.b;
+                    var30.c = var31.a();
+                    var31 = var30.a;
+                    var30.e = var31.h;
+                    var30.d = var31.e;
                 } else {
-                    auVar.b = null;
-                    auVar.c = 0;
-                    auVar.e = 2;
-                    auVar.d = 0;
+                    var30.b = null;
+                    var30.c = 0;
+                    var30.e = 2;
+                    var30.d = 0;
                 }
             }
-            this.w = 0;
-            this.x = 0;
-            int size3 = this.q.size();
-            for (int i18 = 0; i18 < size3; i18++) {
-                ((aq) this.q.get(i18)).b();
+
+            super.w = 0;
+            super.x = 0;
+            var5 = super.q.size();
+
+            for (var4 = 0; var4 < var5; ++var4) {
+                ((aq) super.q.get(var4)).b();
             }
-            j(this.af.g);
+
+            this.j(this.af.g);
         } else {
             this.w = 0;
             this.x = 0;
         }
-        int i19 = this.ae;
-        int i20 = this.ad;
-        if (this.ai == 2) {
-            if (i19 != 2) {
-                if (i20 == 2) {
-                    i20 = 2;
-                } else {
-                    i = i16;
-                }
-            }
-            ArrayList arrayList = this.al;
-            boolean[] zArr2 = this.as;
-            int size4 = arrayList.size();
-            zArr2[0] = true;
-            int i21 = 0;
-            int i22 = 0;
-            int i23 = 0;
-            int i24 = 0;
-            int i25 = 0;
-            int i26 = 0;
-            int i27 = 0;
-            //while (true) {
-                if (i24 < size4) {
-                    ar arVar2 = (ar) arrayList.get(i24);
-                    if (arVar2.t()) {
-                        i13 = i20;
-                        i14 = i16;
-                        zArr = zArr2;
-                    } else {
-                        if (!arVar2.T) {
-                            B(arVar2, zArr2);
+
+        int var6;
+        int var7;
+        int var8;
+        int var9;
+        int var10;
+        int var11;
+        int var12;
+        int var13;
+        int var16;
+        int var17;
+        int var19;
+        int var20;
+        int var21;
+        int var22;
+        boolean var24;
+        boolean var25;
+        boolean[] var73;
+        ar var74;
+        ar var79;
+        label736:
+        {
+            var19 = this.ae;
+            var5 = this.ad;
+            if (this.ai == 2) {
+                label737:
+                {
+                    var4 = var5;
+                    if (var19 != 2) {
+                        if (var5 != 2) {
+                            break label737;
                         }
-                        if (!arVar2.U) {
-                            C(arVar2, zArr2);
-                        }
-                        if (!zArr2[0]) {
-                            i12 = i20;
-                            i = i16;
-                            c = 0;
-                            //break;
-                        }
-                        i13 = i20;
-                        int h = (arVar2.M + arVar2.N) - arVar2.h();
-                        int d = (arVar2.L + arVar2.O) - arVar2.d();
-                        int h2 = arVar2.ad == 4 ? arVar2.h() + arVar2.i.c + arVar2.k.c : h;
-                        int d2 = arVar2.ae == 4 ? arVar2.d() + arVar2.j.c + arVar2.l.c : d;
-                        int i28 = arVar2.K;
-                        zArr = zArr2;
-                        if (i28 == 8) {
-                            d2 = 0;
-                        }
-                        int i29 = i28 == 8 ? 0 : h2;
-                        i21 = Math.max(i21, arVar2.M);
-                        i23 = Math.max(i23, arVar2.N);
-                        i14 = i16;
-                        i26 = Math.max(i26, arVar2.O);
-                        i25 = Math.max(i25, arVar2.L);
-                        i22 = Math.max(i22, i29);
-                        i27 = Math.max(i27, d2);
+
+                        var4 = 2;
                     }
-                    i24++;
-                    i20 = i13;
-                    i16 = i14;
-                    zArr2 = zArr;
-                } else {
-                    i12 = i20;
-                    i = i16;
-                    this.ag = Math.max(this.D, Math.max(Math.max(i21, i23), i22));
-                    this.ah = Math.max(this.E, Math.max(Math.max(i25, i26), i27));
-                    for (int i30 = 0; i30 < size4; i30++) {
-                        ar arVar3 = (ar) arrayList.get(i30);
-                        arVar3.T = false;
-                        arVar3.U = false;
-                        arVar3.P = false;
-                        arVar3.Q = false;
-                        arVar3.R = false;
-                        arVar3.S = false;
-                    }
-                    c = 0;
-                }
-            //}
-            z = this.as[c];
-            if (max3 > 0 && max4 > 0) {
-                if (this.ag > max3) {
-                    z = false;
-                } else if (this.ah > max4) {
-                    z = false;
-                }
-            }
-            if (z) {
-                if (this.ad == 2) {
-                    this.ad = 1;
-                    if (max3 <= 0 || max3 >= this.ag) {
-                        q(Math.max(this.D, this.ag));
-                    } else {
-                        this.aj = true;
-                        q(max3);
-                    }
-                }
-                if (this.ae == 2) {
-                    this.ae = 1;
-                    if (max4 <= 0 || max4 >= this.ah) {
-                        k(Math.max(this.E, this.ah));
-                    } else {
-                        this.ak = true;
-                        k(max4);
-                    }
-                }
-            }
-            i2 = i12;
-            this.an = 0;
-            this.ao = 0;
-            size = this.al.size();
-            for (i3 = 0; i3 < size; i3++) {
-                ar arVar4 = (ar) this.al.get(i3);
-                if (arVar4 instanceof WidgetContainer) {
-                    ((WidgetContainer) arVar4).D();
-                }
-            }
-            boolean z9 = z;
-            int i31 = 0;
-            z2 = true;
-            while (z2) {
-                int i32 = i31 + 1;
-                try {
-                    this.af.l();
-                    boolean E = E(this.af);
-                    if (E) {
-                        try {
-                            an anVar = this.af;
-                            am amVar = anVar.b;
-                            amVar.a(anVar);
-                            anVar.o(amVar);
-                            for (int i33 = 0; i33 < anVar.e; i33++) {
-                                anVar.d[i33] = false;
-                            }
-                            boolean z10 = false;
-                            int i34 = 0;
-                            while (!z10) {
-                                int size5 = amVar.a.size();
-                                z6 = E;
-                                ap apVar = null;
-                                int i35 = 0;
-                                int i36 = 0;
-                                while (i35 < size5) {
-                                    int i37 = size5;
-                                    try {
-                                        ap apVar2 = (ap) amVar.a.get(i35);
-                                        z4 = z9;
-                                        int i38 = 5;
-                                        while (i38 >= 0) {
-                                            i4 = i15;
-                                            try {
-                                                float f = apVar2.e[i38];
-                                                if (apVar == null && f < DisplayHelper.DENSITY && i38 >= i36) {
-                                                    apVar = apVar2;
-                                                    i36 = i38;
-                                                }
-                                                if (f > DisplayHelper.DENSITY && i38 > i36) {
-                                                    i36 = i38;
-                                                    apVar = null;
-                                                }
-                                                i38--;
-                                                i15 = i4;
-                                            } catch (Exception e) {
-                                                e = e;
-                                                i5 = max3;
-                                                i6 = max4;
-                                                i7 = i19;
-                                                z2 = z6;
-                                                e.printStackTrace();
-                                                if (z2) {
-                                                }
-                                                if (i32 < 8) {
-                                                }
-                                                i8 = i7;
-                                                z5 = false;
-                                                max = Math.max(this.D, h());
-                                                if (max > h()) {
-                                                }
-                                                max2 = Math.max(this.E, d());
-                                                if (max2 > d()) {
-                                                }
-                                                if (z4) {
-                                                }
-                                                max3 = i10;
-                                                i19 = i8;
-                                                max4 = i9;
-                                                z9 = z4;
-                                                i15 = i4;
-                                                z2 = z5;
-                                                i31 = i32;
-                                            }
-                                        }
-                                        i35++;
-                                        size5 = i37;
-                                        z9 = z4;
-                                    } catch (Exception e2) {
-                                        e2.printStackTrace();
-                                        i4 = i15;
-                                        z4 = z9;
-                                    }
-                                }
-                                i4 = i15;
-                                z4 = z9;
-                                if (apVar != null) {
-                                    boolean[] zArr3 = anVar.d;
-                                    int i39 = apVar.a;
-                                    if (zArr3[i39]) {
-                                        z8 = false;
-                                        apVar = null;
-                                    } else {
-                                        zArr3[i39] = true;
-                                        i34++;
-                                        if (i34 >= anVar.e) {
-                                            z8 = true;
-                                        }
-                                    }
-                                    if (apVar == null) {
-                                        float f2 = Float.MAX_VALUE;
-                                        int i40 = 0;
-                                        int i41 = -1;
-                                        while (i40 < anVar.f) {
-                                            ak akVar = anVar.c[i40];
-                                            boolean z11 = z8;
-                                            int i42 = i34;
-                                            try {
-                                                if (akVar.a.h == 1) {
-                                                    i5 = max3;
-                                                    i6 = max4;
-                                                } else {
-                                                    aj ajVar = akVar.d;
-                                                    int i43 = ajVar.f;
-                                                    i6 = max4;
-                                                    i5 = max3;
-                                                    if (i43 != -1) {
-                                                        int i44 = i43;
-                                                        int i45 = 0;
-                                                        for (int i46 = -1; i44 != i46; i46 = -1) {
-                                                            try {
-                                                                if (i45 >= ajVar.a) {
-                                                                    break;
-                                                                }
-                                                                i7 = i19;
-                                                                if (ajVar.c[i44] == apVar.a) {
-                                                                    float a = akVar.d.a(apVar);
-                                                                    if (a < DisplayHelper.DENSITY) {
-                                                                        float f3 = (-akVar.b) / a;
-                                                                        if (f3 < f2) {
-                                                                            f2 = f3;
-                                                                            i41 = i40;
-                                                                            i40++;
-                                                                            z8 = z11;
-                                                                            i34 = i42;
-                                                                            max4 = i6;
-                                                                            max3 = i5;
-                                                                            i19 = i7;
-                                                                        }
-                                                                    }
-                                                                    i40++;
-                                                                    z8 = z11;
-                                                                    i34 = i42;
-                                                                    max4 = i6;
-                                                                    max3 = i5;
-                                                                    i19 = i7;
-                                                                } else {
-                                                                    i44 = ajVar.d[i44];
-                                                                    i45++;
-                                                                    i19 = i7;
-                                                                }
-                                                            } catch (Exception e3) {
-                                                                e3.printStackTrace();
-                                                                i7 = i19;
-                                                                z2 = z6;
-                                                                if (z2) {
-                                                                }
-                                                                if (i32 < 8) {
-                                                                }
-                                                                i8 = i7;
-                                                                z5 = false;
-                                                                max = Math.max(this.D, h());
-                                                                if (max > h()) {
-                                                                }
-                                                                max2 = Math.max(this.E, d());
-                                                                if (max2 > d()) {
-                                                                }
-                                                                if (z4) {
-                                                                }
-                                                                max3 = i10;
-                                                                i19 = i8;
-                                                                max4 = i9;
-                                                                z9 = z4;
-                                                                i15 = i4;
-                                                                z2 = z5;
-                                                                i31 = i32;
-                                                            }
-                                                        }
-                                                        i7 = i19;
-                                                        i40++;
-                                                        z8 = z11;
-                                                        i34 = i42;
-                                                        max4 = i6;
-                                                        max3 = i5;
-                                                        i19 = i7;
-                                                    }
-                                                }
-                                                i40++;
-                                                z8 = z11;
-                                                i34 = i42;
-                                                max4 = i6;
-                                                max3 = i5;
-                                                i19 = i7;
-                                            } catch (Exception e4) {
-                                                e4.printStackTrace();
-                                                z2 = z6;
-                                                if (z2) {
-                                                }
-                                                if (i32 < 8) {
-                                                }
-                                                i8 = i7;
-                                                z5 = false;
-                                                max = Math.max(this.D, h());
-                                                if (max > h()) {
-                                                }
-                                                max2 = Math.max(this.E, d());
-                                                if (max2 > d()) {
-                                                }
-                                                if (z4) {
-                                                }
-                                                max3 = i10;
-                                                i19 = i8;
-                                                max4 = i9;
-                                                z9 = z4;
-                                                i15 = i4;
-                                                z2 = z5;
-                                                i31 = i32;
-                                            }
-                                            i7 = i19;
-                                        }
-                                        boolean z12 = z8;
-                                        i5 = max3;
-                                        i6 = max4;
-                                        i7 = i19;
-                                        i11 = i34;
-                                        if (i41 >= 0) {
-                                            ak akVar2 = anVar.c[i41];
-                                            akVar2.a.b = -1;
-                                            akVar2.a(apVar);
-                                            akVar2.a.b = i41;
-                                            for (int i47 = 0; i47 < anVar.f; i47++) {
-                                                anVar.c[i47].k(akVar2);
-                                            }
-                                            amVar.a(anVar);
-                                            try {
-                                                anVar.o(amVar);
-                                            } catch (Exception e5) {
-                                                e5.printStackTrace();
-                                            }
-                                            z10 = z12;
-                                            E = z6;
-                                            z9 = z4;
-                                            i15 = i4;
-                                            i34 = i11;
-                                            max4 = i6;
-                                            max3 = i5;
-                                            i19 = i7;
-                                        }
-                                    } else {
-                                        i5 = max3;
-                                        i6 = max4;
-                                        i7 = i19;
-                                        i11 = i34;
-                                    }
-                                    z10 = true;
-                                    E = z6;
-                                    z9 = z4;
-                                    i15 = i4;
-                                    i34 = i11;
-                                    max4 = i6;
-                                    max3 = i5;
-                                    i19 = i7;
-                                }
-                                z8 = false;
-                                if (apVar == null) {
-                                }
-                                z10 = true;
-                                E = z6;
-                                z9 = z4;
-                                i15 = i4;
-                                i34 = i11;
-                                max4 = i6;
-                                max3 = i5;
-                                i19 = i7;
-                            }
-                            i4 = i15;
-                            i5 = max3;
-                            i6 = max4;
-                            z4 = z9;
-                            z7 = E;
-                            i7 = i19;
-                            for (int i48 = 0; i48 < anVar.f; i48++) {
-                                ak akVar3 = anVar.c[i48];
-                                akVar3.a.d = akVar3.b;
-                            }
-                        } catch (Exception e6) {
-                            e6.printStackTrace();
-                            i4 = i15;
-                            i5 = max3;
-                            i6 = max4;
-                            z4 = z9;
-                            z6 = E;
-                        }
-                    } else {
-                        i4 = i15;
-                        i5 = max3;
-                        i6 = max4;
-                        z4 = z9;
-                        z7 = E;
-                        i7 = i19;
-                    }
-                    z2 = z7;
-                } catch (Exception e7) {
-                    e7.printStackTrace();
-                    i4 = i15;
-                    i5 = max3;
-                    i6 = max4;
-                    z4 = z9;
-                    i7 = i19;
-                }
-                if (z2) {
-                    z();
-                    int i49 = 0;
+
+                    ArrayList var75 = this.al;
+                    var73 = this.as;
+                    var16 = var75.size();
+                    var73[0] = true;
+                    var13 = 0;
+                    var11 = 0;
+                    var12 = 0;
+                    var8 = 0;
+                    var9 = 0;
+                    var10 = 0;
+                    var7 = 0;
+
+                    label675:
                     while (true) {
-                        if (i49 >= size) {
-                            break;
+                        if (var8 >= var16) {
+                            var5 = Math.max(var13, var12);
+                            this.ag = Math.max(this.D, Math.max(var5, var11));
+                            var5 = Math.max(var9, var10);
+                            this.ah = Math.max(this.E, Math.max(var5, var7));
+                            var5 = 0;
+
+                            while (true) {
+                                if (var5 >= var16) {
+                                    break label675;
+                                }
+
+                                var74 = (ar) var75.get(var5);
+                                var74.T = false;
+                                var74.U = false;
+                                var74.P = false;
+                                var74.Q = false;
+                                var74.R = false;
+                                var74.S = false;
+                                ++var5;
+                            }
                         }
-                        ar arVar5 = (ar) this.al.get(i49);
-                        if (arVar5.ad == 3 && arVar5.h() < arVar5.F) {
-                            this.as[2] = true;
-                            break;
-                        } else if (arVar5.ae == 3 && arVar5.d() < arVar5.G) {
-                            this.as[2] = true;
-                            break;
-                        } else {
-                            i49++;
+
+                        var79 = (ar) var75.get(var8);
+                        if (!var79.t()) {
+                            if (!var79.T) {
+                                this.B(var79, var73);
+                            }
+
+                            if (!var79.U) {
+                                this.C(var79, var73);
+                            }
+
+                            if (!var73[0]) {
+                                break;
+                            }
+
+                            var21 = var79.M;
+                            var5 = var79.N;
+                            var22 = var79.h();
+                            var6 = var79.L;
+                            var17 = var79.O;
+                            var20 = var79.d();
+                            if (var79.ad == 4) {
+                                var5 = var79.h() + var79.i.c + var79.k.c;
+                            } else {
+                                var5 = var21 + var5 - var22;
+                            }
+
+                            if (var79.ae == 4) {
+                                var6 = var79.d() + var79.j.c + var79.l.c;
+                            } else {
+                                var6 = var6 + var17 - var20;
+                            }
+
+                            var17 = var79.K;
+                            if (var17 == 8) {
+                                var6 = 0;
+                            }
+
+                            if (var17 == 8) {
+                                var5 = 0;
+                            }
+
+                            var13 = Math.max(var13, var79.M);
+                            var12 = Math.max(var12, var79.N);
+                            var10 = Math.max(var10, var79.O);
+                            var9 = Math.max(var9, var79.L);
+                            var11 = Math.max(var11, var5);
+                            var7 = Math.max(var7, var6);
+                        }
+
+                        ++var8;
+                    }
+
+                    var25 = this.as[0];
+                    var24 = var25;
+                    if (var15 > 0) {
+                        var24 = var25;
+                        if (var18 > 0) {
+                            if (this.ag <= var15) {
+                                var24 = var25;
+                                if (this.ah > var18) {
+                                    var24 = false;
+                                }
+                            } else {
+                                var24 = false;
+                            }
                         }
                     }
-                } else {
-                    boolean[] zArr4 = this.as;
-                    zArr4[2] = false;
-                    z();
-                    int size6 = this.al.size();
-                    for (int i50 = 0; i50 < size6; i50++) {
-                        ar arVar6 = (ar) this.al.get(i50);
-                        arVar6.z();
-                        if (arVar6.ad == 3 && arVar6.h() < arVar6.F) {
-                            zArr4[2] = true;
-                        }
-                        if (arVar6.ae == 3 && arVar6.d() < arVar6.G) {
-                            zArr4[2] = true;
-                        }
-                    }
-                }
-                if (i32 < 8 || !this.as[2]) {
-                    i8 = i7;
-                    z5 = false;
-                } else {
-                    int i51 = 0;
-                    int i52 = 0;
-                    for (int i53 = 0; i53 < size; i53++) {
-                        ar arVar7 = (ar) this.al.get(i53);
-                        i51 = Math.max(i51, arVar7.w + arVar7.h());
-                        i52 = Math.max(i52, arVar7.x + arVar7.d());
-                    }
-                    int max5 = Math.max(this.D, i51);
-                    int max6 = Math.max(this.E, i52);
-                    if (i2 != 2 || h() >= max5) {
-                        z5 = false;
-                    } else {
-                        q(max5);
-                        this.ad = 2;
-                        z5 = true;
-                        z4 = true;
-                    }
-                    i8 = i7;
-                    if (i8 == 2 && d() < max6) {
-                        k(max6);
-                        this.ae = 2;
-                        z5 = true;
-                        z4 = true;
-                    }
-                }
-                max = Math.max(this.D, h());
-                if (max > h()) {
-                    q(max);
-                    this.ad = 1;
-                    z5 = true;
-                    z4 = true;
-                }
-                max2 = Math.max(this.E, d());
-                if (max2 > d()) {
-                    k(max2);
-                    this.ae = 1;
-                    z5 = true;
-                    z4 = true;
-                }
-                if (z4) {
-                    if (this.ad != 2 || i5 <= 0) {
-                        i10 = i5;
-                    } else {
-                        i10 = i5;
-                        if (h() > i10) {
-                            this.aj = true;
+
+                    if (var24) {
+                        if (this.ad == 2) {
                             this.ad = 1;
-                            q(i10);
-                            z5 = true;
-                            z4 = true;
+                            if (var15 > 0 && var15 < this.ag) {
+                                this.aj = true;
+                                this.q(var15);
+                            } else {
+                                this.q(Math.max(this.D, this.ag));
+                            }
                         }
-                    }
-                    if (this.ae != 2 || i6 <= 0) {
-                        i9 = i6;
-                    } else {
-                        i9 = i6;
-                        if (d() > i9) {
-                            this.ak = true;
+
+                        if (this.ae == 2) {
                             this.ae = 1;
-                            k(i9);
-                            z5 = true;
-                            z4 = true;
+                            if (var18 > 0 && var18 < this.ah) {
+                                this.ak = true;
+                                this.k(var18);
+                            } else {
+                                this.k(Math.max(this.E, this.ah));
+                            }
                         }
                     }
-                } else {
-                    i9 = i6;
-                    i10 = i5;
+
+                    var16 = var4;
+                    var17 = var3;
+                    break label736;
                 }
-                max3 = i10;
-                i19 = i8;
-                max4 = i9;
-                z9 = z4;
-                i15 = i4;
-                z2 = z5;
-                i31 = i32;
             }
-            int i54 = i15;
-            z3 = z9;
-            int i55 = i19;
-            if (this.r == null) {
-                int max7 = Math.max(this.D, h());
-                int max8 = Math.max(this.E, d());
-                if (this.am == null) {
-                    this.am = new av(this);
-                }
-                av avVar2 = this.am;
-                this.w = avVar2.a;
-                this.x = avVar2.b;
-                q(avVar2.c);
-                k(avVar2.d);
-                int size7 = avVar2.e.size();
-                for (int i56 = 0; i56 < size7; i56++) {
-                    au auVar2 = (au) avVar2.e.get(i56);
-                    u(auVar2.a.g).d(auVar2.b, auVar2.c, -1, auVar2.e, auVar2.d, false);
-                }
-                q(max7);
-                k(max8);
-            } else {
-                this.w = i54;
-                this.x = i;
-            }
-            if (z3) {
-                this.ad = i2;
-                this.ae = i55;
-            }
-            j(this.af.g);
-            constraintWidgetContainerVar = this;
-            for (arVar = this.r; arVar != null; arVar = arVar.r) {
-                constraintWidgetContainerVar = (ConstraintWidgetContainer) arVar;
-            }
-            if (this == constraintWidgetContainerVar) {
-                return;
-            }
-            r();
-            return;
+
+            var24 = false;
+            var17 = var3;
+            var16 = var5;
         }
-        i = i16;
-        i2 = i20;
-        z = false;
+
         this.an = 0;
         this.ao = 0;
-        size = this.al.size();
-        while (i3 < size) {
+        var22 = this.al.size();
+
+        for (var3 = 0; var3 < var22; ++var3) {
+            var74 = (ar) this.al.get(var3);
+            if (var74 instanceof WidgetContainer) {
+                ((WidgetContainer) var74).D();
+            }
         }
-        boolean z92 = z;
-        int i312 = 0;
-        z2 = true;
-        while (z2) {
+
+        var25 = var24;
+        var8 = 0;
+        var24 = true;
+        var5 = var19;
+        var4 = var18;
+        var3 = var15;
+
+        for (var6 = var14; var24; var3 = var7) {
+            var21 = var8 + 1;
+
+            boolean var26;
+            label633:
+            {
+                label632:
+                {
+                    Exception var76;
+                    label711:
+                    {
+                        boolean var28;
+                        try {
+                            this.af.l();
+                            var28 = this.E(this.af);
+                        } catch (Exception var68) {
+                            var76 = var68;
+                            var7 = var6;
+                            var6 = var3;
+                            var3 = var7;
+                            var26 = var24;
+                            break label711;
+                        }
+
+                        if (!var28) {
+                            var7 = var6;
+                            var24 = var25;
+                            var26 = var28;
+                            var6 = var3;
+                            var9 = var4;
+                            break label632;
+                        }
+
+                        var11 = var6;
+                        var10 = var3;
+                        var9 = var4;
+                        boolean var27 = var25;
+                        var26 = var28;
+                        var8 = var5;
+
+                        label747:
+                        {
+                            Exception var10000;
+                            label622:
+                            {
+                                label621:
+                                {
+                                    label713:
+                                    {
+                                        boolean var10001;
+                                        an var32;
+                                        try {
+                                            var32 = this.af;
+                                        } catch (Exception var67) {
+                                            var10000 = var67;
+                                            var10001 = false;
+                                            break label713;
+                                        }
+
+                                        var11 = var6;
+                                        var10 = var3;
+                                        var9 = var4;
+                                        var27 = var25;
+                                        var26 = var28;
+                                        var8 = var5;
+
+                                        am var33;
+                                        try {
+                                            var33 = var32.b;
+                                        } catch (Exception var66) {
+                                            var10000 = var66;
+                                            var10001 = false;
+                                            break label713;
+                                        }
+
+                                        var11 = var6;
+                                        var10 = var3;
+                                        var9 = var4;
+                                        var27 = var25;
+                                        var26 = var28;
+                                        var8 = var5;
+
+                                        try {
+                                            var33.a(var32);
+                                        } catch (Exception var65) {
+                                            var10000 = var65;
+                                            var10001 = false;
+                                            break label713;
+                                        }
+
+                                        var11 = var6;
+                                        var10 = var3;
+                                        var9 = var4;
+                                        var27 = var25;
+                                        var26 = var28;
+                                        var8 = var5;
+
+                                        try {
+                                            var32.o(var33);
+                                        } catch (Exception var64) {
+                                            var10000 = var64;
+                                            var10001 = false;
+                                            break label713;
+                                        }
+
+                                        var7 = 0;
+
+                                        while (true) {
+                                            var11 = var6;
+                                            var10 = var3;
+                                            var9 = var4;
+                                            var27 = var25;
+                                            var26 = var28;
+                                            var8 = var5;
+
+                                            try {
+                                                if (var7 >= var32.e) {
+                                                    break;
+                                                }
+                                            } catch (Exception var63) {
+                                                var10000 = var63;
+                                                var10001 = false;
+                                                break label713;
+                                            }
+
+                                            var11 = var6;
+                                            var10 = var3;
+                                            var9 = var4;
+                                            var27 = var25;
+                                            var26 = var28;
+                                            var8 = var5;
+
+                                            try {
+                                                var32.d[var7] = false;
+                                            } catch (Exception var62) {
+                                                var10000 = var62;
+                                                var10001 = false;
+                                                break label713;
+                                            }
+
+                                            ++var7;
+                                        }
+
+                                        boolean var69 = false;
+                                        var7 = 0;
+                                        var24 = var28;
+
+                                        label592:
+                                        while (true) {
+                                            ak var78;
+                                            if (var69) {
+                                                var9 = var4;
+                                                var26 = var24;
+                                                var4 = var5;
+                                                var10 = 0;
+
+                                                while (true) {
+                                                    var27 = var25;
+                                                    var14 = var6;
+                                                    var8 = var9;
+                                                    var7 = var3;
+                                                    var5 = var4;
+
+                                                    label448:
+                                                    {
+                                                        try {
+                                                            if (var10 < var32.f) {
+                                                                break label448;
+                                                            }
+                                                        } catch (Exception var36) {
+                                                            var10000 = var36;
+                                                            var10001 = false;
+                                                            break label622;
+                                                        }
+
+                                                        var24 = var25;
+                                                        var7 = var6;
+                                                        var6 = var3;
+                                                        var5 = var4;
+                                                        break label632;
+                                                    }
+
+                                                    var27 = var25;
+                                                    var14 = var6;
+                                                    var8 = var9;
+                                                    var7 = var3;
+                                                    var5 = var4;
+
+                                                    try {
+                                                        var78 = var32.c[var10];
+                                                    } catch (Exception var35) {
+                                                        var10000 = var35;
+                                                        var10001 = false;
+                                                        break label622;
+                                                    }
+
+                                                    var27 = var25;
+                                                    var14 = var6;
+                                                    var8 = var9;
+                                                    var7 = var3;
+                                                    var5 = var4;
+
+                                                    try {
+                                                        var78.a.d = var78.b;
+                                                    } catch (Exception var34) {
+                                                        var10000 = var34;
+                                                        var10001 = false;
+                                                        break label622;
+                                                    }
+
+                                                    ++var10;
+                                                }
+                                            }
+
+                                            var11 = var6;
+                                            var10 = var3;
+                                            var9 = var4;
+                                            var27 = var25;
+                                            var26 = var24;
+                                            var8 = var5;
+
+                                            try {
+                                                var15 = var33.a.size();
+                                            } catch (Exception var61) {
+                                                var10000 = var61;
+                                                var10001 = false;
+                                                break;
+                                            }
+
+                                            var28 = var24;
+                                            ap var77 = null;
+                                            var12 = 0;
+                                            var10 = 0;
+                                            var8 = var6;
+
+                                            label585:
+                                            {
+                                                label584:
+                                                while (true) {
+                                                    float var1;
+                                                    if (var12 >= var15) {
+                                                        label580:
+                                                        {
+                                                            label579:
+                                                            {
+                                                                var6 = var8;
+                                                                var25 = var25;
+                                                                var10 = var7;
+                                                                if (var77 != null) {
+                                                                    var14 = var3;
+                                                                    var13 = var4;
+                                                                    var9 = var5;
+                                                                    var8 = var8;
+
+                                                                    try {
+                                                                        var73 = var32.d;
+                                                                    } catch (Exception var59) {
+                                                                        var10000 = var59;
+                                                                        var10001 = false;
+                                                                        break;
+                                                                    }
+
+                                                                    var14 = var3;
+                                                                    var13 = var4;
+                                                                    var9 = var5;
+                                                                    var8 = var6;
+
+                                                                    try {
+                                                                        var10 = var77.a;
+                                                                    } catch (Exception var58) {
+                                                                        var10000 = var58;
+                                                                        var10001 = false;
+                                                                        break;
+                                                                    }
+
+                                                                    if (var73[var10]) {
+                                                                        var69 = false;
+                                                                        var77 = null;
+                                                                        break label580;
+                                                                    }
+
+                                                                    var73[var10] = true;
+                                                                    ++var7;
+                                                                    var14 = var3;
+                                                                    var13 = var4;
+                                                                    var9 = var5;
+                                                                    var8 = var6;
+                                                                    var10 = var7;
+
+                                                                    try {
+                                                                        if (var7 >= var32.e) {
+                                                                            break label579;
+                                                                        }
+                                                                    } catch (Exception var60) {
+                                                                        var10000 = var60;
+                                                                        var10001 = false;
+                                                                        break;
+                                                                    }
+                                                                }
+
+                                                                var69 = false;
+                                                                var7 = var10;
+                                                                break label580;
+                                                            }
+
+                                                            var69 = true;
+                                                        }
+
+                                                        boolean var70;
+                                                        label556:
+                                                        {
+                                                            if (var77 != null) {
+                                                                var1 = Float.MAX_VALUE;
+                                                                var12 = 0;
+                                                                var18 = -1;
+                                                                var11 = var7;
+
+                                                                while (true) {
+                                                                    var14 = var3;
+                                                                    var13 = var4;
+                                                                    var9 = var5;
+                                                                    var8 = var6;
+
+                                                                    try {
+                                                                        if (var12 >= var32.f) {
+                                                                            break;
+                                                                        }
+                                                                    } catch (Exception var53) {
+                                                                        var10000 = var53;
+                                                                        var10001 = false;
+                                                                        break label584;
+                                                                    }
+
+                                                                    var14 = var3;
+                                                                    var13 = var4;
+                                                                    var9 = var5;
+                                                                    var8 = var6;
+
+                                                                    try {
+                                                                        var78 = var32.c[var12];
+                                                                    } catch (Exception var52) {
+                                                                        var10000 = var52;
+                                                                        var10001 = false;
+                                                                        break label584;
+                                                                    }
+
+                                                                    var14 = var3;
+                                                                    var13 = var4;
+                                                                    var9 = var5;
+                                                                    var8 = var6;
+
+                                                                    label549:
+                                                                    {
+                                                                        label722:
+                                                                        {
+                                                                            try {
+                                                                                if (var78.a.h == 1) {
+                                                                                    break label722;
+                                                                                }
+                                                                            } catch (
+                                                                                    Exception var56) {
+                                                                                var10000 = var56;
+                                                                                var10001 = false;
+                                                                                break label584;
+                                                                            }
+
+                                                                            var14 = var3;
+                                                                            var13 = var4;
+                                                                            var9 = var5;
+                                                                            var8 = var6;
+
+                                                                            aj var80;
+                                                                            try {
+                                                                                var80 = var78.d;
+                                                                            } catch (
+                                                                                    Exception var51) {
+                                                                                var10000 = var51;
+                                                                                var10001 = false;
+                                                                                break label584;
+                                                                            }
+
+                                                                            var14 = var3;
+                                                                            var13 = var4;
+                                                                            var9 = var5;
+                                                                            var8 = var6;
+
+                                                                            try {
+                                                                                var20 = var80.f;
+                                                                            } catch (
+                                                                                    Exception var50) {
+                                                                                var10000 = var50;
+                                                                                var10001 = false;
+                                                                                break label584;
+                                                                            }
+
+                                                                            var15 = var4;
+                                                                            var13 = var3;
+                                                                            if (var20 != -1) {
+                                                                                var19 = 0;
+
+                                                                                while (true) {
+                                                                                    int var23;
+                                                                                    label539:
+                                                                                    {
+                                                                                        if (var20 != -1) {
+                                                                                            try {
+                                                                                                if (var19 < var80.a) {
+                                                                                                    var23 = var80.c[var20];
+                                                                                                    break label539;
+                                                                                                }
+                                                                                            } catch (
+                                                                                                    Exception var55) {
+                                                                                                var76 = var55;
+                                                                                                var3 = var15;
+                                                                                                var4 = var13;
+                                                                                                break label621;
+                                                                                            }
+                                                                                        }
+
+                                                                                        var9 = var5;
+                                                                                        break label549;
+                                                                                    }
+
+                                                                                    var9 = var5;
+                                                                                    var27 = var25;
+                                                                                    var14 = var6;
+                                                                                    var8 = var15;
+                                                                                    var7 = var13;
+                                                                                    var5 = var5;
+
+                                                                                    label724:
+                                                                                    {
+                                                                                        try {
+                                                                                            if (var23 == var77.a) {
+                                                                                                break label724;
+                                                                                            }
+                                                                                        } catch (
+                                                                                                Exception var54) {
+                                                                                            var10000 = var54;
+                                                                                            var10001 = false;
+                                                                                            break label622;
+                                                                                        }
+
+                                                                                        var27 = var25;
+                                                                                        var14 = var6;
+                                                                                        var8 = var15;
+                                                                                        var7 = var13;
+                                                                                        var5 = var9;
+
+                                                                                        try {
+                                                                                            var20 = var80.d[var20];
+                                                                                        } catch (
+                                                                                                Exception var47) {
+                                                                                            var10000 = var47;
+                                                                                            var10001 = false;
+                                                                                            break label622;
+                                                                                        }
+
+                                                                                        ++var19;
+                                                                                        var5 = var9;
+                                                                                        continue;
+                                                                                    }
+
+                                                                                    var27 = var25;
+                                                                                    var14 = var6;
+                                                                                    var8 = var15;
+                                                                                    var7 = var13;
+                                                                                    var5 = var9;
+
+                                                                                    float var2;
+                                                                                    try {
+                                                                                        var2 = var78.d.a(var77);
+                                                                                    } catch (
+                                                                                            Exception var46) {
+                                                                                        var10000 = var46;
+                                                                                        var10001 = false;
+                                                                                        break label622;
+                                                                                    }
+
+                                                                                    if (var2 < 0.0F) {
+                                                                                        var27 = var25;
+                                                                                        var14 = var6;
+                                                                                        var8 = var15;
+                                                                                        var7 = var13;
+                                                                                        var5 = var9;
+
+                                                                                        try {
+                                                                                            var2 = -var78.b / var2;
+                                                                                        } catch (
+                                                                                                Exception var45) {
+                                                                                            var10000 = var45;
+                                                                                            var10001 = false;
+                                                                                            break label622;
+                                                                                        }
+
+                                                                                        if (var2 < var1) {
+                                                                                            var1 = var2;
+                                                                                            var18 = var12;
+                                                                                        }
+                                                                                    }
+                                                                                    break label549;
+                                                                                }
+                                                                            }
+                                                                        }
+
+                                                                        var9 = var5;
+                                                                    }
+
+                                                                    ++var12;
+                                                                    var5 = var9;
+                                                                }
+
+                                                                var9 = var4;
+                                                                var4 = var5;
+                                                                var7 = var7;
+                                                                var8 = var9;
+                                                                var12 = var3;
+                                                                var5 = var5;
+                                                                if (var18 >= 0) {
+                                                                    var27 = var25;
+                                                                    var14 = var6;
+                                                                    var8 = var9;
+                                                                    var7 = var3;
+                                                                    var5 = var4;
+
+                                                                    try {
+                                                                        var78 = var32.c[var18];
+                                                                    } catch (Exception var44) {
+                                                                        var10000 = var44;
+                                                                        var10001 = false;
+                                                                        break label622;
+                                                                    }
+
+                                                                    var27 = var25;
+                                                                    var14 = var6;
+                                                                    var8 = var9;
+                                                                    var7 = var3;
+                                                                    var5 = var4;
+
+                                                                    try {
+                                                                        var78.a.b = -1;
+                                                                    } catch (Exception var43) {
+                                                                        var10000 = var43;
+                                                                        var10001 = false;
+                                                                        break label622;
+                                                                    }
+
+                                                                    var27 = var25;
+                                                                    var14 = var6;
+                                                                    var8 = var9;
+                                                                    var7 = var3;
+                                                                    var5 = var4;
+
+                                                                    try {
+                                                                        var78.a(var77);
+                                                                    } catch (Exception var42) {
+                                                                        var10000 = var42;
+                                                                        var10001 = false;
+                                                                        break label622;
+                                                                    }
+
+                                                                    var27 = var25;
+                                                                    var14 = var6;
+                                                                    var8 = var9;
+                                                                    var7 = var3;
+                                                                    var5 = var4;
+
+                                                                    try {
+                                                                        var78.a.b = var18;
+                                                                    } catch (Exception var41) {
+                                                                        var10000 = var41;
+                                                                        var10001 = false;
+                                                                        break label622;
+                                                                    }
+
+                                                                    var12 = 0;
+
+                                                                    while (true) {
+                                                                        var27 = var25;
+                                                                        var14 = var6;
+                                                                        var8 = var9;
+                                                                        var7 = var3;
+                                                                        var5 = var4;
+
+                                                                        try {
+                                                                            if (var12 >= var32.f) {
+                                                                                break;
+                                                                            }
+                                                                        } catch (Exception var48) {
+                                                                            var10000 = var48;
+                                                                            var10001 = false;
+                                                                            break label622;
+                                                                        }
+
+                                                                        var27 = var25;
+                                                                        var14 = var6;
+                                                                        var8 = var9;
+                                                                        var7 = var3;
+                                                                        var5 = var4;
+
+                                                                        try {
+                                                                            var32.c[var12].k(var78);
+                                                                        } catch (Exception var40) {
+                                                                            var10000 = var40;
+                                                                            var10001 = false;
+                                                                            break label622;
+                                                                        }
+
+                                                                        ++var12;
+                                                                    }
+
+                                                                    var27 = var25;
+                                                                    var14 = var6;
+                                                                    var8 = var9;
+                                                                    var7 = var3;
+                                                                    var5 = var4;
+
+                                                                    try {
+                                                                        var33.a(var32);
+                                                                    } catch (Exception var39) {
+                                                                        var10000 = var39;
+                                                                        var10001 = false;
+                                                                        break label622;
+                                                                    }
+
+                                                                    try {
+                                                                        var32.o(var33);
+                                                                    } catch (Exception var38) {
+                                                                        var76 = var38;
+                                                                        var27 = var25;
+                                                                        var14 = var6;
+                                                                        var8 = var9;
+                                                                        var7 = var3;
+                                                                        var5 = var4;
+
+                                                                        try {
+                                                                            var76.printStackTrace();
+                                                                        } catch (Exception var37) {
+                                                                            var10000 = var37;
+                                                                            var10001 = false;
+                                                                            break label622;
+                                                                        }
+                                                                    }
+
+                                                                    var70 = var69;
+                                                                    var7 = var11;
+                                                                    var8 = var9;
+                                                                    break label556;
+                                                                }
+                                                            } else {
+                                                                var12 = var3;
+                                                                var8 = var4;
+                                                            }
+
+                                                            boolean var72 = true;
+                                                            var4 = var5;
+                                                            var3 = var12;
+                                                            var70 = var72;
+                                                        }
+
+                                                        var24 = var24;
+                                                        var10 = var4;
+                                                        var69 = var70;
+                                                        var4 = var8;
+                                                        var5 = var10;
+                                                        continue label592;
+                                                    }
+
+                                                    ap var81;
+                                                    try {
+                                                        var81 = (ap) var33.a.get(var12);
+                                                    } catch (Exception var57) {
+                                                        var76 = var57;
+                                                        var6 = var8;
+                                                        break label585;
+                                                    }
+
+                                                    for (var6 = 5; var6 >= 0; var8 = var11) {
+                                                        var11 = var8;
+                                                        var14 = var3;
+                                                        var13 = var4;
+                                                        var9 = var5;
+                                                        var8 = var8;
+
+                                                        try {
+                                                            var1 = var81.e[var6];
+                                                        } catch (Exception var49) {
+                                                            var10000 = var49;
+                                                            var10001 = false;
+                                                            break label584;
+                                                        }
+
+                                                        ap var84 = var77;
+                                                        var8 = var10;
+                                                        if (var77 == null) {
+                                                            var84 = var77;
+                                                            var8 = var10;
+                                                            if (var1 < 0.0F) {
+                                                                var84 = var77;
+                                                                var8 = var10;
+                                                                if (var6 >= var10) {
+                                                                    var84 = var81;
+                                                                    var8 = var6;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        var77 = var84;
+                                                        var10 = var8;
+                                                        if (var1 > 0.0F) {
+                                                            var77 = var84;
+                                                            var10 = var8;
+                                                            if (var6 > var8) {
+                                                                var10 = var6;
+                                                                var77 = null;
+                                                            }
+                                                        }
+
+                                                        --var6;
+                                                    }
+
+                                                    ++var12;
+                                                }
+
+                                                var76 = var10000;
+                                                var3 = var14;
+                                                var4 = var13;
+                                                var5 = var9;
+                                                var6 = var8;
+                                            }
+
+                                            var25 = var25;
+                                            var7 = var3;
+                                            var3 = var4;
+                                            var4 = var7;
+                                            break label621;
+                                        }
+                                    }
+
+                                    var76 = var10000;
+                                    var6 = var11;
+                                    var4 = var10;
+                                    var3 = var9;
+                                    var25 = var27;
+                                    var28 = var26;
+                                    var5 = var8;
+                                }
+
+                                var7 = var4;
+                                var4 = var3;
+                                var3 = var6;
+                                break label747;
+                            }
+
+                            var76 = var10000;
+                            var28 = var24;
+                            var25 = var27;
+                            var3 = var14;
+                            var4 = var8;
+                        }
+
+                        var26 = var28;
+                        var6 = var7;
+                    }
+
+                    var76.printStackTrace();
+                    var24 = var25;
+                    break label633;
+                }
+
+                var3 = var7;
+                var4 = var9;
+            }
+
+            if (var26) {
+                boolean[] var82 = this.as;
+                var82[2] = false;
+                this.z();
+                var8 = this.al.size();
+
+                for (var7 = 0; var7 < var8; ++var7) {
+                    var74 = (ar) this.al.get(var7);
+                    var74.z();
+                    if (var74.ad == 3 && var74.h() < var74.F) {
+                        var82[2] = true;
+                    }
+
+                    if (var74.ae == 3 && var74.d() < var74.G) {
+                        var82[2] = true;
+                    }
+                }
+            } else {
+                this.z();
+
+                for (var7 = 0; var7 < var22; ++var7) {
+                    var74 = (ar) this.al.get(var7);
+                    if (var74.ad == 3 && var74.h() < var74.F) {
+                        this.as[2] = true;
+                        break;
+                    }
+
+                    if (var74.ae == 3 && var74.d() < var74.G) {
+                        this.as[2] = true;
+                        break;
+                    }
+                }
+            }
+
+            if (var21 < 8 && this.as[2]) {
+                var9 = 0;
+                var8 = 0;
+
+                for (var7 = 0; var9 < var22; ++var9) {
+                    var74 = (ar) this.al.get(var9);
+                    var8 = Math.max(var8, var74.w + var74.h());
+                    var7 = Math.max(var7, var74.x + var74.d());
+                }
+
+                var8 = Math.max(this.D, var8);
+                var7 = Math.max(this.E, var7);
+                if (var16 == 2 && this.h() < var8) {
+                    this.q(var8);
+                    this.ad = 2;
+                    var24 = true;
+                    var25 = true;
+                } else {
+                    var26 = false;
+                    var25 = var24;
+                    var24 = var26;
+                }
+
+                if (var5 == 2 && this.d() < var7) {
+                    this.k(var7);
+                    this.ae = 2;
+                    var24 = true;
+                    var25 = true;
+                }
+            } else {
+                var26 = false;
+                var25 = var24;
+                var24 = var26;
+            }
+
+            var7 = Math.max(this.D, this.h());
+            if (var7 > this.h()) {
+                this.q(var7);
+                this.ad = 1;
+                var24 = true;
+                var25 = true;
+            }
+
+            var7 = Math.max(this.E, this.d());
+            if (var7 > this.d()) {
+                this.k(var7);
+                this.ae = 1;
+                var24 = true;
+                var25 = true;
+            }
+
+            if (!var25) {
+                if (this.ad == 2 && var6 > 0) {
+                    var7 = this.h();
+                    if (var7 > var6) {
+                        this.aj = true;
+                        this.ad = 1;
+                        this.q(var6);
+                        var24 = true;
+                        var25 = true;
+                    }
+                }
+
+                if (this.ae == 2 && var4 > 0) {
+                    var7 = this.d();
+                    if (var7 > var4) {
+                        this.ak = true;
+                        this.ae = 1;
+                        this.k(var4);
+                        var24 = true;
+                        var25 = true;
+                    }
+                }
+            }
+
+            var7 = var6;
+            var8 = var21;
+            var6 = var3;
         }
-        int i542 = i15;
-        z3 = z92;
-        int i552 = i19;
-        if (this.r == null) {
+
+        var3 = 0;
+        if (this.r != null) {
+            var6 = Math.max(this.D, this.h());
+            var4 = Math.max(this.E, this.d());
+            var29 = this.am;
+            super.w = var29.a;
+            super.x = var29.b;
+            this.q(var29.c);
+            this.k(var29.d);
+
+            for (var7 = var29.e.size(); var3 < var7; ++var3) {
+                var30 = (au) var29.e.get(var3);
+                this.u(var30.a.g).d(var30.b, var30.c, -1, var30.e, var30.d, false);
+            }
+
+            this.q(var6);
+            this.k(var4);
+        } else {
+            this.w = var6;
+            this.x = var17;
         }
-        if (z3) {
+
+        if (var25) {
+            this.ad = var16;
+            this.ae = var5;
         }
-        j(this.af.g);
-        constraintWidgetContainerVar = this;
-        while (arVar != null) {
+
+        this.j(this.af.g);
+        var74 = super.r;
+
+        Object var83;
+        for (var83 = this; var74 != null; var74 = var79) {
+            var79 = var74.r;
+            var83 = var74;
         }
-        if (this == constraintWidgetContainerVar) {
+
+        if (this == var83) {
+            this.r();
         }
 
         /*
@@ -1239,12 +1729,551 @@ public final class ConstraintWidgetContainer extends WidgetContainer {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final boolean E(defpackage.an r21) {
+    public final boolean E(defpackage.an var1) {
+        this.y(var1);
+        int var10 = this.al.size();
+        int var3 = this.ai;
+        int var5;
+        int var6;
+        int var7;
+        ar var13;
+        aq var14;
+        boolean var19;
+        if (var3 != 2 && var3 != 4) {
+            var3 = 0;
+            var19 = true;
+        } else {
+            int var11 = this.al.size();
+
+            for(var3 = 0; var3 < var11; ++var3) {
+                var13 = (ar)this.al.get(var3);
+                var13.a = -1;
+                var13.b = -1;
+                if (var13.ad == 3 || var13.ae == 3) {
+                    var13.a = 1;
+                    var13.b = 1;
+                }
+            }
+
+            boolean var18 = false;
+            var6 = 0;
+
+            int var4;
+            for(var5 = 0; !var18; var5 = var4) {
+                var7 = 0;
+                var3 = 0;
+
+                int var9;
+                for(var4 = 0; var7 < var11; var4 = var9) {
+                    var13 = (ar)this.al.get(var7);
+                    float var2;
+                    int var8;
+                    int var12;
+                    aq var15;
+                    aq var16;
+                    at var21;
+                    ap var22;
+                    if (var13.a == -1) {
+                        var9 = this.ad;
+                        if (var9 == 2) {
+                            var13.a = 1;
+                        } else {
+                            var8 = var13.ad;
+                            if (var8 == 3) {
+                                var13.a = 1;
+                            } else if (var9 != 2 && var8 == 4) {
+                                var14 = var13.i;
+                                var14.f = var1.e(var14);
+                                var14 = var13.k;
+                                var14.f = var1.e(var14);
+                                var8 = var13.i.c;
+                                var9 = this.h() - var13.k.c;
+                                var1.h(var13.i.f, var8);
+                                var1.h(var13.k.f, var9);
+                                var13.l(var8, var9);
+                                var13.a = 2;
+                            } else {
+                                label424: {
+                                    var14 = var13.i;
+                                    var15 = var14.b;
+                                    if (var15 != null) {
+                                        var16 = var13.k.b;
+                                        if (var16 != null) {
+                                            if (var15.a == this && var16.a == this) {
+                                                var9 = var14.a();
+                                                var8 = var13.k.a();
+                                                if (this.ad == 3) {
+                                                    var8 = this.h() - var8;
+                                                } else {
+                                                    var12 = var13.h();
+                                                    var9 += (int)((float)(this.h() - var9 - var8 - var12) * var13.H + 0.5F);
+                                                    var8 = var9 + var13.h();
+                                                }
+
+                                                var14 = var13.i;
+                                                var14.f = var1.e(var14);
+                                                var14 = var13.k;
+                                                var14.f = var1.e(var14);
+                                                var1.h(var13.i.f, var9);
+                                                var1.h(var13.k.f, var8);
+                                                var13.a = 2;
+                                                var13.l(var9, var8);
+                                                break label424;
+                                            }
+
+                                            var13.a = 1;
+                                            break label424;
+                                        }
+                                    }
+
+                                    if (var15 != null && var15.a == this) {
+                                        var8 = var14.a();
+                                        var9 = var13.h() + var8;
+                                        var14 = var13.i;
+                                        var14.f = var1.e(var14);
+                                        var14 = var13.k;
+                                        var14.f = var1.e(var14);
+                                        var1.h(var13.i.f, var8);
+                                        var1.h(var13.k.f, var9);
+                                        var13.a = 2;
+                                        var13.l(var8, var9);
+                                    } else {
+                                        var16 = var13.k.b;
+                                        if (var16 != null && var16.a == this) {
+                                            var14.f = var1.e(var14);
+                                            var14 = var13.k;
+                                            var14.f = var1.e(var14);
+                                            var8 = this.h() - var13.k.a();
+                                            var9 = var8 - var13.h();
+                                            var1.h(var13.i.f, var9);
+                                            var1.h(var13.k.f, var8);
+                                            var13.a = 2;
+                                            var13.l(var9, var8);
+                                        } else if (var15 != null && var15.a.a == 2) {
+                                            var22 = var15.f;
+                                            var14.f = var1.e(var14);
+                                            var14 = var13.k;
+                                            var14.f = var1.e(var14);
+                                            var8 = (int)(var22.d + (float)var13.i.a() + 0.5F);
+                                            var9 = var13.h() + var8;
+                                            var1.h(var13.i.f, var8);
+                                            var1.h(var13.k.f, var9);
+                                            var13.a = 2;
+                                            var13.l(var8, var9);
+                                        } else if (var16 != null && var16.a.a == 2) {
+                                            var22 = var16.f;
+                                            var14.f = var1.e(var14);
+                                            var14 = var13.k;
+                                            var14.f = var1.e(var14);
+                                            var9 = (int)(var22.d - (float)var13.k.a() + 0.5F);
+                                            var8 = var9 - var13.h();
+                                            var1.h(var13.i.f, var8);
+                                            var1.h(var13.k.f, var9);
+                                            var13.a = 2;
+                                            var13.l(var8, var9);
+                                        } else if (var15 == null && var16 == null) {
+                                            if (var13 instanceof at) {
+                                                var21 = (at)var13;
+                                                if (var21.ai == 1) {
+                                                    var14.f = var1.e(var14);
+                                                    var14 = var13.k;
+                                                    var14.f = var1.e(var14);
+                                                    var8 = var21.ag;
+                                                    if (var8 != -1) {
+                                                        var2 = (float)var8;
+                                                    } else if (var21.ah != -1) {
+                                                        var2 = (float)(this.h() - var21.ah);
+                                                    } else {
+                                                        var2 = (float)this.h() * var21.af;
+                                                    }
+
+                                                    var8 = (int)(var2 + 0.5F);
+                                                    var1.h(var13.i.f, var8);
+                                                    var1.h(var13.k.f, var8);
+                                                    var13.a = 2;
+                                                    var13.b = 2;
+                                                    var13.l(var8, var8);
+                                                    var13.p(0, this.d());
+                                                }
+                                            } else {
+                                                var14.f = var1.e(var14);
+                                                var14 = var13.k;
+                                                var14.f = var1.e(var14);
+                                                var8 = var13.w;
+                                                var9 = var13.h();
+                                                var1.h(var13.i.f, var8);
+                                                var1.h(var13.k.f, var8 + var9);
+                                                var13.a = 2;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    if (var13.b == -1) {
+                        var8 = this.ae;
+                        if (var8 == 2) {
+                            var13.b = 1;
+                        } else {
+                            var9 = var13.ae;
+                            if (var9 == 3) {
+                                var13.b = 1;
+                            } else if (var8 != 2 && var9 == 4) {
+                                var14 = var13.j;
+                                var14.f = var1.e(var14);
+                                var14 = var13.l;
+                                var14.f = var1.e(var14);
+                                var8 = var13.j.c;
+                                var9 = this.d() - var13.l.c;
+                                var1.h(var13.j.f, var8);
+                                var1.h(var13.l.f, var9);
+                                if (var13.C > 0 || var13.K == 8) {
+                                    var14 = var13.m;
+                                    var14.f = var1.e(var14);
+                                    var1.h(var13.m.f, var13.C + var8);
+                                }
+
+                                var13.p(var8, var9);
+                                var13.b = 2;
+                            } else {
+                                label428: {
+                                    var14 = var13.j;
+                                    var15 = var14.b;
+                                    if (var15 != null) {
+                                        var16 = var13.l.b;
+                                        if (var16 != null) {
+                                            if (var15.a == this && var16.a == this) {
+                                                var8 = var14.a();
+                                                var9 = var13.l.a();
+                                                if (this.ae == 3) {
+                                                    var9 = var13.d() + var8;
+                                                } else {
+                                                    var12 = var13.d();
+                                                    var8 = (int)((float)var8 + (float)(this.d() - var8 - var9 - var12) * var13.I + 0.5F);
+                                                    var9 = var13.d() + var8;
+                                                }
+
+                                                var14 = var13.j;
+                                                var14.f = var1.e(var14);
+                                                var14 = var13.l;
+                                                var14.f = var1.e(var14);
+                                                var1.h(var13.j.f, var8);
+                                                var1.h(var13.l.f, var9);
+                                                if (var13.C > 0 || var13.K == 8) {
+                                                    var14 = var13.m;
+                                                    var14.f = var1.e(var14);
+                                                    var1.h(var13.m.f, var13.C + var8);
+                                                }
+
+                                                var13.b = 2;
+                                                var13.p(var8, var9);
+                                                break label428;
+                                            }
+
+                                            var13.b = 1;
+                                            break label428;
+                                        }
+                                    }
+
+                                    if (var15 != null && var15.a == this) {
+                                        var9 = var14.a();
+                                        var8 = var13.d() + var9;
+                                        var14 = var13.j;
+                                        var14.f = var1.e(var14);
+                                        var14 = var13.l;
+                                        var14.f = var1.e(var14);
+                                        var1.h(var13.j.f, var9);
+                                        var1.h(var13.l.f, var8);
+                                        if (var13.C > 0 || var13.K == 8) {
+                                            var14 = var13.m;
+                                            var14.f = var1.e(var14);
+                                            var1.h(var13.m.f, var13.C + var9);
+                                        }
+
+                                        var13.b = 2;
+                                        var13.p(var9, var8);
+                                    } else {
+                                        var16 = var13.l.b;
+                                        if (var16 != null && var16.a == this) {
+                                            var14.f = var1.e(var14);
+                                            var14 = var13.l;
+                                            var14.f = var1.e(var14);
+                                            var9 = this.d() - var13.l.a();
+                                            var8 = var9 - var13.d();
+                                            var1.h(var13.j.f, var8);
+                                            var1.h(var13.l.f, var9);
+                                            if (var13.C > 0 || var13.K == 8) {
+                                                var14 = var13.m;
+                                                var14.f = var1.e(var14);
+                                                var1.h(var13.m.f, var13.C + var8);
+                                            }
+
+                                            var13.b = 2;
+                                            var13.p(var8, var9);
+                                        } else if (var15 != null && var15.a.b == 2) {
+                                            var22 = var15.f;
+                                            var14.f = var1.e(var14);
+                                            var14 = var13.l;
+                                            var14.f = var1.e(var14);
+                                            var9 = (int)(var22.d + (float)var13.j.a() + 0.5F);
+                                            var8 = var13.d() + var9;
+                                            var1.h(var13.j.f, var9);
+                                            var1.h(var13.l.f, var8);
+                                            if (var13.C > 0 || var13.K == 8) {
+                                                var14 = var13.m;
+                                                var14.f = var1.e(var14);
+                                                var1.h(var13.m.f, var13.C + var9);
+                                            }
+
+                                            var13.b = 2;
+                                            var13.p(var9, var8);
+                                        } else if (var16 != null && var16.a.b == 2) {
+                                            var22 = var16.f;
+                                            var14.f = var1.e(var14);
+                                            var14 = var13.l;
+                                            var14.f = var1.e(var14);
+                                            var8 = (int)(var22.d - (float)var13.l.a() + 0.5F);
+                                            var9 = var8 - var13.d();
+                                            var1.h(var13.j.f, var9);
+                                            var1.h(var13.l.f, var8);
+                                            if (var13.C > 0 || var13.K == 8) {
+                                                var14 = var13.m;
+                                                var14.f = var1.e(var14);
+                                                var1.h(var13.m.f, var13.C + var9);
+                                            }
+
+                                            var13.b = 2;
+                                            var13.p(var9, var8);
+                                        } else {
+                                            aq var17 = var13.m.b;
+                                            if (var17 != null && var17.a.b == 2) {
+                                                var22 = var17.f;
+                                                var14.f = var1.e(var14);
+                                                var14 = var13.l;
+                                                var14.f = var1.e(var14);
+                                                var9 = (int)(var22.d - (float)var13.C + 0.5F);
+                                                var8 = var13.d() + var9;
+                                                var1.h(var13.j.f, var9);
+                                                var1.h(var13.l.f, var8);
+                                                var14 = var13.m;
+                                                var14.f = var1.e(var14);
+                                                var1.h(var13.m.f, var13.C + var9);
+                                                var13.b = 2;
+                                                var13.p(var9, var8);
+                                            } else if (var17 == null && var15 == null && var16 == null) {
+                                                if (var13 instanceof at) {
+                                                    var21 = (at)var13;
+                                                    if (var21.ai == 0) {
+                                                        var14.f = var1.e(var14);
+                                                        var14 = var13.l;
+                                                        var14.f = var1.e(var14);
+                                                        var8 = var21.ag;
+                                                        if (var8 != -1) {
+                                                            var2 = (float)var8;
+                                                        } else if (var21.ah != -1) {
+                                                            var2 = (float)(this.d() - var21.ah);
+                                                        } else {
+                                                            var2 = (float)this.d() * var21.af;
+                                                        }
+
+                                                        var8 = (int)(var2 + 0.5F);
+                                                        var1.h(var13.j.f, var8);
+                                                        var1.h(var13.l.f, var8);
+                                                        var13.b = 2;
+                                                        var13.a = 2;
+                                                        var13.p(var8, var8);
+                                                        var13.l(0, this.h());
+                                                    }
+                                                } else {
+                                                    var14.f = var1.e(var14);
+                                                    var14 = var13.l;
+                                                    var14.f = var1.e(var14);
+                                                    var9 = var13.x;
+                                                    var8 = var13.d();
+                                                    var1.h(var13.j.f, var9);
+                                                    var1.h(var13.l.f, var8 + var9);
+                                                    if (var13.C > 0 || var13.K == 8) {
+                                                        var14 = var13.m;
+                                                        var14.f = var1.e(var14);
+                                                        var1.h(var13.m.f, var9 + var13.C);
+                                                    }
+
+                                                    var13.b = 2;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    var8 = var3;
+                    if (var13.b == -1) {
+                        var8 = var3 + 1;
+                    }
+
+                    var9 = var4;
+                    if (var13.a == -1) {
+                        var9 = var4 + 1;
+                    }
+
+                    ++var7;
+                    var3 = var8;
+                }
+
+                boolean var20;
+                label375: {
+                    label405: {
+                        if (var3 == 0) {
+                            if (var4 == 0) {
+                                break label405;
+                            }
+
+                            var7 = 0;
+                        } else {
+                            var7 = var3;
+                        }
+
+                        if (var6 != var7 || var5 != var4) {
+                            var20 = false;
+                            break label375;
+                        }
+                    }
+
+                    var20 = true;
+                }
+
+                var6 = var3;
+                var18 = var20;
+            }
+
+            var6 = 0;
+            var4 = 0;
+
+            for(var3 = 0; var3 < var11; var4 = var7) {
+                label240: {
+                    var13 = (ar)this.al.get(var3);
+                    var7 = var13.a;
+                    if (var7 != 1) {
+                        var5 = var6;
+                        if (var7 != -1) {
+                            break label240;
+                        }
+                    }
+
+                    var5 = var6 + 1;
+                }
+
+                label245: {
+                    var6 = var13.b;
+                    if (var6 != 1) {
+                        var7 = var4;
+                        if (var6 != -1) {
+                            break label245;
+                        }
+                    }
+
+                    var7 = var4 + 1;
+                }
+
+                ++var3;
+                var6 = var5;
+            }
+
+            if (var6 == 0) {
+                if (var4 == 0) {
+                    return false;
+                }
+
+                var3 = 0;
+                var19 = false;
+            } else {
+                var3 = 0;
+                var19 = false;
+            }
+        }
+
+        for(; var3 < var10; ++var3) {
+            var13 = (ar)this.al.get(var3);
+            if (var13 instanceof ConstraintWidgetContainer) {
+                var5 = var13.ad;
+                var7 = var13.ae;
+                if (var5 == 2) {
+                    var13.w(1);
+                    var5 = 2;
+                }
+
+                var6 = var7;
+                if (var7 == 2) {
+                    var13.x(1);
+                    var6 = 2;
+                }
+
+                var13.y(var1);
+                if (var5 == 2) {
+                    var13.w(2);
+                }
+
+                if (var6 == 2) {
+                    var13.x(2);
+                }
+            } else {
+                if (var19) {
+                    if (this.ad != 2 && var13.ad == 4) {
+                        var14 = var13.i;
+                        var14.f = var1.e(var14);
+                        var14 = var13.k;
+                        var14.f = var1.e(var14);
+                        var5 = var13.i.c;
+                        var6 = this.h() - var13.k.c;
+                        var1.h(var13.i.f, var5);
+                        var1.h(var13.k.f, var6);
+                        var13.l(var5, var6);
+                        var13.a = 2;
+                    }
+
+                    if (this.ae != 2 && var13.ae == 4) {
+                        var14 = var13.j;
+                        var14.f = var1.e(var14);
+                        var14 = var13.l;
+                        var14.f = var1.e(var14);
+                        var5 = var13.j.c;
+                        var6 = this.d() - var13.l.c;
+                        var1.h(var13.j.f, var5);
+                        var1.h(var13.l.f, var6);
+                        if (var13.C > 0 || var13.K == 8) {
+                            var14 = var13.m;
+                            var14.f = var1.e(var14);
+                            var1.h(var13.m.f, var13.C + var5);
+                        }
+
+                        var13.p(var5, var6);
+                        var13.b = 2;
+                    }
+                }
+
+                var13.y(var1);
+            }
+        }
+
+        if (this.an > 0) {
+            this.H(var1);
+        }
+
+        if (this.ao > 0) {
+            this.I(var1);
+        }
+
+        return true;
+
         /*
             Method dump skipped, instructions count: 1807
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.as.E(an):boolean");
+        //throw new UnsupportedOperationException("Method not decompiled: defpackage.as.E(an):boolean");
     }
 
     @Override // defpackage.aw, defpackage.ar

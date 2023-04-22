@@ -542,12 +542,503 @@ public class ar {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public void y(defpackage.an r41) {
+    public void y(defpackage.an var1) {
+        ap var24 = var1.e(this.i);
+        ap var25 = var1.e(this.k);
+        ap var26 = var1.e(this.j);
+        ap var21 = var1.e(this.l);
+        ap var23 = var1.e(this.m);
+        ar var20 = this.r;
+        boolean var14;
+        boolean var15;
+        boolean var17;
+        boolean var18;
+        aq var22;
+        aq var32;
+        ak var33;
+        ap var34;
+        ap var37;
+        if (var20 != null) {
+            aq var27;
+            label356: {
+                var27 = this.i;
+                var22 = var27.b;
+                if (var22 == null || var22.b != var27) {
+                    var22 = this.k;
+                    var27 = var22.b;
+                    if (var27 == null || var27.b != var22) {
+                        var14 = false;
+                        break label356;
+                    }
+                }
+
+                ((ConstraintWidgetContainer)var20).A(this, 0);
+                var14 = true;
+            }
+
+            label357: {
+                var22 = this.j;
+                var32 = var22.b;
+                if (var32 == null || var32.b != var22) {
+                    var22 = this.l;
+                    var32 = var22.b;
+                    if (var32 == null || var32.b != var22) {
+                        var15 = false;
+                        break label357;
+                    }
+                }
+
+                ((ConstraintWidgetContainer)this.r).A(this, 1);
+                var15 = true;
+            }
+
+            ar var35 = this.r;
+            ak var38;
+            ar var39;
+            if (var35.ad == 2 && !var14) {
+                label345: {
+                    label307: {
+                        var32 = this.i;
+                        var27 = var32.b;
+                        if (var27 != null) {
+                            var39 = var27.a;
+                            if (var39 == var35) {
+                                if (var39 == var35) {
+                                    var32.i = 2;
+                                }
+                                break label307;
+                            }
+                        }
+
+                        var37 = var1.e(var35.i);
+                        var33 = var1.a();
+                        var33.i(var24, var37, var1.f(), 0);
+                        var1.g(var33);
+                    }
+
+                    var32 = this.k;
+                    var22 = var32.b;
+                    if (var22 != null) {
+                        var39 = var22.a;
+                        var35 = this.r;
+                        if (var39 == var35) {
+                            if (var39 == var35) {
+                                var32.i = 2;
+                            }
+                            break label345;
+                        }
+                    }
+
+                    var34 = var1.e(this.r.k);
+                    var38 = var1.a();
+                    var38.i(var34, var25, var1.f(), 0);
+                    var1.g(var38);
+                }
+            }
+
+            var20 = this.r;
+            if (var20.ae == 2 && !var15) {
+                label347: {
+                    label293: {
+                        var22 = this.j;
+                        var27 = var22.b;
+                        if (var27 != null) {
+                            var39 = var27.a;
+                            if (var39 == var20) {
+                                if (var39 == var20) {
+                                    var22.i = 2;
+                                }
+                                break label293;
+                            }
+                        }
+
+                        var34 = var1.e(var20.j);
+                        var38 = var1.a();
+                        var38.i(var26, var34, var1.f(), 0);
+                        var1.g(var38);
+                    }
+
+                    var32 = this.l;
+                    var22 = var32.b;
+                    if (var22 != null) {
+                        var39 = var22.a;
+                        var35 = this.r;
+                        if (var39 == var35) {
+                            if (var39 == var35) {
+                                var32.i = 2;
+                            }
+                            break label347;
+                        }
+                    }
+
+                    var34 = var1.e(this.r.l);
+                    var38 = var1.a();
+                    var38.i(var34, var21, var1.f(), 0);
+                    var1.g(var38);
+                }
+            }
+
+            var18 = var14;
+            var17 = var15;
+        } else {
+            var18 = false;
+            var17 = false;
+        }
+
+        int var11 = this.s;
+        int var10 = this.D;
+        int var5;
+        if (var11 < var10) {
+            var5 = var10;
+        } else {
+            var5 = var11;
+        }
+
+        int var12 = this.t;
+        int var6 = this.E;
+        int var4 = var6;
+        if (var12 >= var6) {
+            var4 = var12;
+        }
+
+        int var9 = this.ad;
+        if (var9 != 3) {
+            var15 = true;
+        } else {
+            var15 = false;
+        }
+
+        int var13 = this.ae;
+        boolean var16;
+        if (var13 != 3) {
+            var16 = true;
+        } else {
+            var16 = false;
+        }
+
+        var14 = var15;
+        if (!var15) {
+            var32 = this.i;
+            var14 = var15;
+            if (var32 != null) {
+                var22 = this.k;
+                var14 = var15;
+                if (var22 != null) {
+                    if (var32.b != null) {
+                        var14 = var15;
+                        if (var22.b == null) {
+                            var14 = true;
+                        }
+                    } else {
+                        var14 = true;
+                    }
+                }
+            }
+        }
+
+        var15 = var16;
+        if (!var16) {
+            var22 = this.j;
+            var15 = var16;
+            if (var22 != null) {
+                var32 = this.l;
+                var15 = var16;
+                if (var32 != null) {
+                    label339: {
+                        var22 = var22.b;
+                        if (var22 != null) {
+                            var15 = var16;
+                            if (var32.b != null) {
+                                break label339;
+                            }
+                        }
+
+                        if (this.C != 0) {
+                            var32 = this.m;
+                            var15 = var16;
+                            if (var32 == null) {
+                                break label339;
+                            }
+
+                            if (var22 != null) {
+                                var15 = var16;
+                                if (var32.b == null) {
+                                    var15 = true;
+                                }
+                                break label339;
+                            }
+                        }
+
+                        var15 = true;
+                    }
+                }
+            }
+        }
+
+        float var2;
+        float var3;
+        int var8;
+        boolean var29;
+        label263: {
+            label262: {
+                var8 = this.v;
+                var2 = this.u;
+                int var7;
+                if (var2 > 0.0F) {
+                    var6 = this.K;
+                    var7 = var9;
+                    if (var6 != 8) {
+                        var6 = var9;
+                        if (var9 == 3) {
+                            if (var13 == 3) {
+                                byte var31;
+                                if (var14 && !var15) {
+                                    var6 = 3;
+                                    var31 = 0;
+                                    var29 = true;
+                                    var8 = var5;
+                                    var5 = var31;
+                                    var16 = var15;
+                                } else {
+                                    if (!var14 && var15) {
+                                        if (var8 == -1) {
+                                            var2 = 1.0F / var2;
+                                            var6 = 3;
+                                            var31 = 1;
+                                            var29 = true;
+                                            var8 = var5;
+                                            var5 = var31;
+                                            var16 = var15;
+                                            break label263;
+                                        }
+
+                                        var7 = 1;
+                                    } else {
+                                        var7 = var8;
+                                    }
+
+                                    var6 = 3;
+                                    boolean var30 = true;
+                                    var8 = var5;
+                                    var5 = var7;
+                                    var16 = var15;
+                                    var29 = var30;
+                                }
+                                break label263;
+                            }
+
+                            var6 = 3;
+                        }
+
+                        if (var6 == 3) {
+                            var8 = (int)((float)var12 * var2);
+                            var14 = true;
+                            var5 = 0;
+                            var29 = false;
+                            var16 = var15;
+                            break label263;
+                        }
+
+                        var7 = var6;
+                        if (var13 == 3) {
+                            var3 = var2;
+                            if (var8 == -1) {
+                                var3 = 1.0F / var2;
+                            }
+
+                            var4 = (int)((float)var11 * var3);
+                            var8 = 1;
+                            var15 = true;
+                            var2 = var3;
+                            break label262;
+                        }
+                    }
+                } else {
+                    var7 = var9;
+                }
+
+                var6 = var7;
+            }
+
+            var9 = var5;
+            var29 = false;
+            var16 = var15;
+            var5 = var8;
+            var8 = var9;
+        }
+
+        label237: {
+            if (var29) {
+                if (var5 == 0) {
+                    var15 = true;
+                    break label237;
+                }
+
+                if (var5 == -1) {
+                    var15 = true;
+                    break label237;
+                }
+            }
+
+            var15 = false;
+        }
+
+        boolean var19;
+        if (var6 == 2 && this instanceof ConstraintWidgetContainer) {
+            var19 = true;
+        } else {
+            var19 = false;
+        }
+
+        ap var28;
+        ap var40;
+        if (this.a != 2) {
+            label224: {
+                if (var15) {
+                    var32 = this.i;
+                    if (var32.b != null && this.k.b != null) {
+                        var34 = var1.e(var32);
+                        var28 = var1.e(this.k);
+                        var37 = var1.e(this.i.b);
+                        var40 = var1.e(this.k.b);
+                        var1.i(var34, var37, this.i.a(), 3);
+                        var1.j(var28, var40, -this.k.a(), 3);
+                        if (!var18) {
+                            var1.m(var34, var37, this.i.a(), this.H, var40, var28, this.k.a());
+                        }
+                        break label224;
+                    }
+                }
+
+                var22 = this.i;
+                var32 = this.k;
+                var6 = this.w;
+                this.A(var1, var19, var14, var22, var32, var6, var6 + var8, var8, var10, this.H, var15, var18, this.c, this.e, this.f);
+            }
+        }
+
+        if (this.b != 2) {
+            if (this.ae == 2 && this instanceof ConstraintWidgetContainer) {
+                var15 = true;
+            } else {
+                var15 = false;
+            }
+
+            label212: {
+                if (var29) {
+                    if (var5 == 1) {
+                        var14 = true;
+                        break label212;
+                    }
+
+                    if (var5 == -1) {
+                        var14 = true;
+                        break label212;
+                    }
+                }
+
+                var14 = false;
+            }
+
+            var6 = this.C;
+            aq var36;
+            if (var6 > 0) {
+                label342: {
+                    var22 = this.l;
+                    var1.n(var23, var26, var6, 5);
+                    var36 = this.m;
+                    if (var36.b != null) {
+                        var6 = this.C;
+                        var22 = var36;
+                    } else {
+                        var6 = var4;
+                    }
+
+                    if (var14) {
+                        var36 = this.j;
+                        if (var36.b != null && this.l.b != null) {
+                            var40 = var1.e(var36);
+                            var37 = var1.e(this.l);
+                            var34 = var1.e(this.j.b);
+                            var23 = var1.e(this.l.b);
+                            var1.i(var40, var34, this.j.a(), 3);
+                            var1.j(var37, var23, -this.l.a(), 3);
+                            if (!var17) {
+                                var1.m(var40, var34, this.j.a(), this.I, var23, var37, this.l.a());
+                            }
+                            break label342;
+                        }
+                    }
+
+                    var36 = this.j;
+                    var8 = this.x;
+                    this.A(var1, var15, var16, var36, var22, var8, var8 + var6, var6, this.E, this.I, var14, var17, this.d, this.g, this.h);
+                    var1.n(var21, var26, var4, 5);
+                }
+            } else {
+                label198: {
+                    if (var14) {
+                        var22 = this.j;
+                        if (var22.b != null && this.l.b != null) {
+                            var40 = var1.e(var22);
+                            var37 = var1.e(this.l);
+                            var23 = var1.e(this.j.b);
+                            var28 = var1.e(this.l.b);
+                            var1.i(var40, var23, this.j.a(), 3);
+                            var1.j(var37, var28, -this.l.a(), 3);
+                            if (!var17) {
+                                var1.m(var40, var23, this.j.a(), this.I, var28, var37, this.l.a());
+                            }
+                            break label198;
+                        }
+                    }
+
+                    var36 = this.j;
+                    var22 = this.l;
+                    var11 = this.x;
+                    var10 = this.E;
+                    var3 = this.I;
+                    var6 = this.d;
+                    var9 = this.g;
+                    var8 = this.h;
+                    this.A(var1, var15, var16, var36, var22, var11, var11 + var4, var4, var10, var3, var14, var17, var6, var9, var8);
+                }
+            }
+
+            if (var29) {
+                var33 = var1.a();
+                if (var5 == 0) {
+                    var33.e(var25, var24, var21, var26, var2);
+                    var1.g(var33);
+                } else if (var5 == 1) {
+                    var33.e(var21, var26, var25, var24, var2);
+                    var1.g(var33);
+                } else {
+                    var4 = this.e;
+                    if (var4 > 0) {
+                        var1.i(var25, var24, var4, 3);
+                    }
+
+                    var4 = this.g;
+                    if (var4 > 0) {
+                        var1.i(var21, var26, var4, 3);
+                    }
+
+                    var33.e(var25, var24, var21, var26, var2);
+                    var21 = var1.d();
+                    var37 = var1.d();
+                    var21.c = 4;
+                    var37.c = 4;
+                    var33.c(var21, var37);
+                    var1.g(var33);
+                }
+            }
+        }
         /*
             Method dump skipped, instructions count: 1279
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.ar.y(an):void");
+        // throw new UnsupportedOperationException("Method not decompiled: defpackage.ar.y(an):void");
     }
 
     public void z() {
