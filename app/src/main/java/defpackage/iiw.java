@@ -131,7 +131,41 @@ public final class iiw implements fjs {
         ougVar.A("%s%s %d", str, str2, Long.valueOf(j));
     }
 
-    private final void aC(final ojz ojzVar) {
+    private final void aC(final ojz ojz) {
+        final int x = this.x;
+        final long m = this.m;
+        final int andIncrement = this.n.getAndIncrement();
+        this.g.register();
+        this.t.execute((Runnable)new iit(this, ojz, m, andIncrement, x));
+    }
+
+    class iit implements Runnable {
+        public final iiw a;
+        public final ojz b;
+        public final long c;
+        public final int d;
+        public final int e;
+
+        public iit(iiw var1, ojz var2, long var3, int var5, int var6) {
+            this.a = var1;
+            this.b = var2;
+            this.c = var3;
+            this.d = var5;
+            this.e = var6;
+        }
+
+        @Override
+        public void run() {
+            iiw var13 = this.a;
+            ojz var11 = this.b;
+            long var7 = this.c;
+            int var3 = this.d;
+            int var4 = this.e;
+            final poy poy = (poy) b.a();
+            throw new UnsupportedOperationException("Method not decompiled: defpackage.iit.run():void");
+        }
+    }
+    private final void aCbak(final ojz ojzVar) {
         final int i = this.x;
         final long j = this.m;
         final int andIncrement = this.n.getAndIncrement();

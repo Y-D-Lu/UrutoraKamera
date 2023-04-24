@@ -1,7 +1,9 @@
 package defpackage;
 
 import android.content.Context;
+import android.os.Process;
 import android.os.UserManager;
+import android.util.Log;
 
 /* renamed from: mez  reason: default package */
 /* loaded from: classes2.dex */
@@ -36,6 +38,61 @@ public final class mez {
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     private static boolean d(android.content.Context context) {
+        if (mez.c) {
+            return true;
+        }
+        try {
+            if (mez.c) {
+                return true;
+            }
+            int n = 1;
+            boolean b2 = false;
+            Label_0130: {
+                int n3;
+                while (true) {
+                    final int n2 = n3 = 0;
+                    if (n > 2) {
+                        break;
+                    }
+                    if (mez.b == null) {
+                        mez.b = (UserManager)context.getSystemService((Class)UserManager.class);
+                    }
+                    final UserManager b = mez.b;
+                    if (b == null) {
+                        b2 = true;
+                        break Label_0130;
+                    }
+                    try {
+                        if (!b.isUserUnlocked()) {
+                            final boolean userRunning = b.isUserRunning(Process.myUserHandle());
+                            n3 = n2;
+                            if (userRunning) {
+                                break;
+                            }
+                        }
+                        n3 = 1;
+                    }
+                    catch (final NullPointerException ex) {
+                        Log.w("DirectBootUtils", "Failed to check if user is unlocked.", (Throwable)ex);
+                        mez.b = null;
+                        ++n;
+                        continue;
+                    }
+                    break;
+                }
+                b2 = (n3 != 0);
+                if (n3 != 0) {
+                    mez.b = null;
+                    b2 = (n3 != 0);
+                }
+            }
+            if (b2) {
+                mez.c = true;
+            }
+            return b2;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return false;
 //        if (c == false) goto L6;
 //        return true;
