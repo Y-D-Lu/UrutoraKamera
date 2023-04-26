@@ -22,6 +22,7 @@
 
 -keep class !cn.arsenals.ultracamera.UltraCamera,!defpackage.** { *; }
 -keepclasseswithmembernames class ** { *; }
+-allowaccessmodification
 -applymapping mappings.txt
 
 #-dontobfuscate
