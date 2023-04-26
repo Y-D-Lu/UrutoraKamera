@@ -1,0 +1,66 @@
+.class Ldefpackage/hps$3;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/hps;->Q(J)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Ldefpackage/hps;
+
+.field final synthetic val$j:J
+
+
+# direct methods
+.method constructor <init>(Ldefpackage/hps;J)V
+    .locals 0
+    .param p1, "this$0"    # Ldefpackage/hps;
+
+    .line 370
+    iput-object p1, p0, Ldefpackage/hps$3;->this$0:Ldefpackage/hps;
+
+    iput-wide p2, p0, Ldefpackage/hps$3;->val$j:J
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj"    # Ljava/lang/Object;
+
+    .line 373
+    move-object v0, p1
+
+    check-cast v0, Ldefpackage/hsb;
+
+    iget-wide v1, p0, Ldefpackage/hps$3;->val$j:J
+
+    invoke-interface {v0, v1, v2}, Ldefpackage/hsb;->m(J)V
+
+    .line 374
+    return-void
+.end method
+
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
+
+    .line 378
+    return-object p1
+.end method

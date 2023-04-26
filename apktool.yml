@@ -1,0 +1,54 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: app-debug.apk
+compressionType: false
+doNotCompress:
+- classes.dex
+- resources.arsc
+- assets/siamese_end2end.tflite
+- assets/siamese_fe.tflite
+- assets/avenh_camera/avenh_model_default_0.tflite
+- lib/arm64-v8a/libnative_crash_handler_jni.so
+- lib/arm64-v8a/libbrotli.so
+- lib/arm64-v8a/liboliveoil.so
+- lib/arm64-v8a/libfilterframework_jni.so
+- lib/arm64-v8a/libimage.so
+- lib/arm64-v8a/libnative.so
+- lib/arm64-v8a/libpairipcoreX.so
+- lib/arm64-v8a/libnative_utils_android.so
+- lib/arm64-v8a/libl2l_video_processor_utils_jni.so
+- lib/arm64-v8a/libSeeDarkJni.so
+- lib/arm64-v8a/libhalide_hexagon_host.so
+- lib/arm64-v8a/libgcamuxer.so
+- lib/arm64-v8a/libaesthetic_scorer_nima_jni.so
+- lib/arm64-v8a/libeglimage.so
+- lib/arm64-v8a/libfacemetadata.so
+- lib/arm64-v8a/libcyclops.so
+- lib/arm64-v8a/libaesthetic_scorer_nima_v2_jni.so
+- lib/arm64-v8a/liblightcycle.so
+- lib/arm64-v8a/libspeechenhancer_jni_avenhrealtimenative.so
+- lib/arm64-v8a/libagc.so
+- lib/arm64-v8a/libgcastartup.so
+- lib/arm64-v8a/libsmartcapture_native.so
+- webp
+- png
+- ogg
+- res/raw/build_data.pb
+- res/raw/com_google_android_libraries_consentverifier_registration_info.binarypb
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '29'
+  targetSdkVersion: '29'
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.1
+versionInfo:
+  versionCode: '64764891'
+  versionName: 8.4.300.414775575.18

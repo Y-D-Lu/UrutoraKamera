@@ -1,0 +1,81 @@
+.class public Lcom/google/android/material/theme/MaterialComponentsViewInflater;
+.super Landroid/support/v7/app/AppCompatViewInflater;
+.source ""
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 20
+    invoke-direct {p0}, Landroid/support/v7/app/AppCompatViewInflater;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/mo;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
+
+    .line 23
+    new-instance v0, Ldefpackage/odi;
+
+    invoke-direct {v0, p1, p2}, Ldefpackage/odi;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-object v0
+.end method
+
+.method public final b(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/support/v7/widget/AppCompatButton;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
+
+    .line 28
+    new-instance v0, Lcom/google/android/material/button/MaterialButton;
+
+    invoke-direct {v0, p1, p2}, Lcom/google/android/material/button/MaterialButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-object v0
+.end method
+
+.method public final c(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/mq;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
+
+    .line 33
+    new-instance v0, Ldefpackage/nyg;
+
+    invoke-direct {v0, p1, p2}, Ldefpackage/nyg;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-object v0
+.end method
+
+.method public final d(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/nb;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
+
+    .line 38
+    new-instance v0, Ldefpackage/obf;
+
+    invoke-direct {v0, p1, p2}, Ldefpackage/obf;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-object v0
+.end method
+
+.method public final e(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/nu;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
+
+    .line 43
+    new-instance v0, Ldefpackage/odl;
+
+    invoke-direct {v0, p1, p2}, Ldefpackage/odl;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-object v0
+.end method

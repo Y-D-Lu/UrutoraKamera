@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<splits>
+    <module key="">
+        <language>
+            <entry data="af" icon="" />
+            <entry data="am" icon="" />
+            <entry data="ar" icon="" />
+            <entry data="as" icon="" />
+            <entry data="az" icon="" />
+            <entry data="be" icon="" />
+            <entry data="bg" icon="" />
+            <entry data="bn" icon="" />
+            <entry data="bs" icon="" />
+            <entry data="ca" icon="" />
+            <entry data="cs" icon="" />
+            <entry data="da" icon="" />
+            <entry data="de" icon="" />
+            <entry data="el" icon="" />
+            <entry data="en" icon="" />
+            <entry data="es" icon="" />
+            <entry data="et" icon="" />
+            <entry data="eu" icon="" />
+            <entry data="fa" icon="" />
+            <entry data="fi" icon="" />
+            <entry data="fr" icon="" />
+            <entry data="gl" icon="" />
+            <entry data="gu" icon="" />
+            <entry data="hi" icon="" />
+            <entry data="hr" icon="" />
+            <entry data="hu" icon="" />
+            <entry data="hy" icon="" />
+            <entry data="in" icon="" />
+            <entry data="is" icon="" />
+            <entry data="it" icon="" />
+            <entry data="iw" icon="" />
+            <entry data="ja" icon="" />
+            <entry data="ka" icon="" />
+            <entry data="kk" icon="" />
+            <entry data="km" icon="" />
+            <entry data="kn" icon="" />
+            <entry data="ko" icon="" />
+            <entry data="ky" icon="" />
+            <entry data="lo" icon="" />
+            <entry data="lt" icon="" />
+            <entry data="lv" icon="" />
+            <entry data="mk" icon="" />
+            <entry data="ml" icon="" />
+            <entry data="mn" icon="" />
+            <entry data="mr" icon="" />
+            <entry data="ms" icon="" />
+            <entry data="my" icon="" />
+            <entry data="nb" icon="" />
+            <entry data="ne" icon="" />
+            <entry data="nl" icon="" />
+            <entry data="or" icon="" />
+            <entry data="pa" icon="" />
+            <entry data="pl" icon="" />
+            <entry data="pt" icon="" />
+            <entry data="ro" icon="" />
+            <entry data="ru" icon="" />
+            <entry data="si" icon="" />
+            <entry data="sk" icon="" />
+            <entry data="sl" icon="" />
+            <entry data="sq" icon="" />
+            <entry data="sr" icon="" />
+            <entry data="sv" icon="" />
+            <entry data="sw" icon="" />
+            <entry data="ta" icon="" />
+            <entry data="te" icon="" />
+            <entry data="th" icon="" />
+            <entry data="tl" icon="" />
+            <entry data="tr" icon="" />
+            <entry data="uk" icon="" />
+            <entry data="ur" icon="" />
+            <entry data="uz" icon="" />
+            <entry data="vi" icon="" />
+            <entry data="zh" icon="" />
+            <entry data="zu" icon="" />
+        </language>
+    </module>
+</splits>

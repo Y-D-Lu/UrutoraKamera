@@ -1,0 +1,92 @@
+.class Ldefpackage/ipr$1$1;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/ipr$1;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$1:Ldefpackage/ipr$1;
+
+.field final synthetic val$iprVar:Ldefpackage/ipr;
+
+
+# direct methods
+.method constructor <init>(Ldefpackage/ipr$1;Ldefpackage/ipr;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/ipr$1;
+
+    .line 52
+    iput-object p1, p0, Ldefpackage/ipr$1$1;->this$1:Ldefpackage/ipr$1;
+
+    iput-object p2, p0, Ldefpackage/ipr$1$1;->val$iprVar:Ldefpackage/ipr;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
+    .param p1, "dialogInterface"    # Landroid/content/DialogInterface;
+    .param p2, "i"    # I
+
+    .line 55
+    const/4 v0, -0x1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 61
+    iget-object v0, p0, Ldefpackage/ipr$1$1;->val$iprVar:Ldefpackage/ipr;
+
+    iget-object v0, v0, Ldefpackage/ipr;->c:Ldefpackage/btt;
+
+    invoke-interface {v0}, Ldefpackage/bts;->g()Ldefpackage/btv;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ldefpackage/btv;->d()V
+
+    .line 62
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
+
+    .line 63
+    return-void
+
+    .line 57
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/ipr$1$1;->val$iprVar:Ldefpackage/ipr;
+
+    iget-object v0, v0, Ldefpackage/ipr;->c:Ldefpackage/btt;
+
+    invoke-interface {v0}, Ldefpackage/bts;->g()Ldefpackage/btv;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ldefpackage/btv;->d()V
+
+    .line 58
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
+
+    .line 59
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

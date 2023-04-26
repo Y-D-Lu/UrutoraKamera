@@ -1,0 +1,55 @@
+.class Ldefpackage/cwf$1;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/cwf;-><init>(Ldefpackage/lar;Ldefpackage/fhv;Landroid/app/Activity;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Ldefpackage/cwf;
+
+.field final synthetic val$fhvVar:Ldefpackage/fhv;
+
+
+# direct methods
+.method constructor <init>(Ldefpackage/cwf;Ldefpackage/fhv;)V
+    .locals 0
+    .param p1, "this$0"    # Ldefpackage/cwf;
+
+    .line 12
+    iput-object p1, p0, Ldefpackage/cwf$1;->this$0:Ldefpackage/cwf;
+
+    iput-object p2, p0, Ldefpackage/cwf$1;->val$fhvVar:Ldefpackage/fhv;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 15
+    iget-object v0, p0, Ldefpackage/cwf$1;->val$fhvVar:Ldefpackage/fhv;
+
+    iget-object v1, p0, Ldefpackage/cwf$1;->this$0:Ldefpackage/cwf;
+
+    invoke-virtual {v0, v1}, Ldefpackage/fhv;->e(Lfik;)V
+
+    .line 16
+    return-void
+.end method

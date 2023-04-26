@@ -1,0 +1,800 @@
+.class Ldefpackage/jkz$123;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljks;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/jkz;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final a:Ldefpackage/jkz;
+
+.field final synthetic this$0:Ldefpackage/jkz;
+
+
+# direct methods
+.method constructor <init>(Ldefpackage/jkz;)V
+    .locals 0
+    .param p1, "this$0"    # Ldefpackage/jkz;
+
+    .line 34978
+    iput-object p1, p0, Ldefpackage/jkz$123;->this$0:Ldefpackage/jkz;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 34979
+    iput-object p1, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 9
+    .param p1, "obj"    # Ljava/lang/Object;
+    .param p2, "obj2"    # Ljava/lang/Object;
+
+    .line 34984
+    const/16 v0, 0x320
+
+    const/16 v1, 0xc8
+
+    const/16 v2, 0x258
+
+    const/16 v3, 0x1f4
+
+    const/16 v4, 0x15e
+
+    const/16 v5, 0x32
+
+    const/16 v6, 0x190
+
+    const/16 v7, 0xfa
+
+    const/4 v8, -0x1
+
+    packed-switch v8, :pswitch_data_0
+
+    .line 35093
+    iget-object v0, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    .line 35094
+    .local v0, "jkzVar8":Ldefpackage/jkz;
+    move-object v1, p1
+
+    check-cast v1, Ldefpackage/jlq;
+
+    .line 35095
+    .local v1, "jlqVar12":Ldefpackage/jlq;
+    iget-object v2, v0, Ldefpackage/jkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v2
+
+    .line 35096
+    .local v2, "c16":Ldefpackage/jky;
+    invoke-virtual {v2, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35097
+    invoke-virtual {v2}, Ldefpackage/jky;->e()V
+
+    .line 35098
+    invoke-virtual {v2}, Ldefpackage/jky;->i()V
+
+    .line 35099
+    iget-object v4, v0, Ldefpackage/jkz;->h:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v4
+
+    .line 35100
+    .local v4, "c17":Ldefpackage/jky;
+    invoke-virtual {v4, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35101
+    invoke-virtual {v4}, Ldefpackage/jky;->e()V
+
+    .line 35102
+    iget-object v5, v0, Ldefpackage/jkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    .line 35103
+    .local v5, "c18":Ldefpackage/jky;
+    invoke-virtual {v5, v3}, Ldefpackage/jky;->d(I)V
+
+    .line 35104
+    move-object v3, p2
+
+    check-cast v3, Ldefpackage/jlq;
+
+    iget-object v3, v3, Ldefpackage/jlq;->n:Ldefpackage/ojc;
+
+    invoke-virtual {v5, v3}, Ldefpackage/jky;->h(Ldefpackage/ojc;)V
+
+    .line 35105
+    return-void
+
+    .line 35079
+    .end local v0    # "jkzVar8":Ldefpackage/jkz;
+    .end local v1    # "jlqVar12":Ldefpackage/jlq;
+    .end local v2    # "c16":Ldefpackage/jky;
+    .end local v4    # "c17":Ldefpackage/jky;
+    .end local v5    # "c18":Ldefpackage/jky;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    .line 35080
+    .local v0, "jkzVar7":Ldefpackage/jkz;
+    move-object v1, p1
+
+    check-cast v1, Ldefpackage/jlq;
+
+    .line 35081
+    .local v1, "jlqVar11":Ldefpackage/jlq;
+    iget-object v2, v0, Ldefpackage/jkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->blockClickForAnimation(Z)V
+
+    .line 35082
+    iget-object v2, v0, Ldefpackage/jkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v2
+
+    .line 35083
+    .local v2, "c13":Ldefpackage/jky;
+    invoke-virtual {v2, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35084
+    invoke-virtual {v2}, Ldefpackage/jky;->e()V
+
+    .line 35085
+    iget-object v3, v0, Ldefpackage/jkz;->h:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v3
+
+    .line 35086
+    .local v3, "c14":Ldefpackage/jky;
+    invoke-virtual {v3, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35087
+    invoke-virtual {v3}, Ldefpackage/jky;->e()V
+
+    .line 35088
+    iget-object v4, v0, Ldefpackage/jkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v4
+
+    .line 35089
+    .local v4, "c15":Ldefpackage/jky;
+    invoke-virtual {v4, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35090
+    move-object v5, p2
+
+    check-cast v5, Ldefpackage/jlq;
+
+    iget-object v5, v5, Ldefpackage/jlq;->n:Ldefpackage/ojc;
+
+    invoke-virtual {v4, v5}, Ldefpackage/jky;->c(Ldefpackage/ojc;)V
+
+    .line 35091
+    return-void
+
+    .line 35068
+    .end local v0    # "jkzVar7":Ldefpackage/jkz;
+    .end local v1    # "jlqVar11":Ldefpackage/jlq;
+    .end local v2    # "c13":Ldefpackage/jky;
+    .end local v3    # "c14":Ldefpackage/jky;
+    .end local v4    # "c15":Ldefpackage/jky;
+    :pswitch_1
+    iget-object v0, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    .line 35069
+    .local v0, "jkzVar6":Ldefpackage/jkz;
+    move-object v2, p1
+
+    check-cast v2, Ldefpackage/jlq;
+
+    .line 35070
+    .local v2, "jlqVar10":Ldefpackage/jlq;
+    iget-object v4, v0, Ldefpackage/jkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v3}, Ldefpackage/jky;->d(I)V
+
+    .line 35071
+    iget-object v3, v0, Ldefpackage/jkz;->j:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v3
+
+    .line 35072
+    .local v3, "c11":Ldefpackage/jky;
+    invoke-virtual {v3, v1}, Ldefpackage/jky;->d(I)V
+
+    .line 35073
+    invoke-virtual {v3}, Ldefpackage/jky;->i()V
+
+    .line 35074
+    iget-object v1, v0, Ldefpackage/jkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v1}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v1
+
+    .line 35075
+    .local v1, "c12":Ldefpackage/jky;
+    invoke-virtual {v1, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35076
+    move-object v4, p2
+
+    check-cast v4, Ldefpackage/jlq;
+
+    iget-object v4, v4, Ldefpackage/jlq;->n:Ldefpackage/ojc;
+
+    invoke-virtual {v1, v4}, Ldefpackage/jky;->c(Ldefpackage/ojc;)V
+
+    .line 35077
+    return-void
+
+    .line 35050
+    .end local v0    # "jkzVar6":Ldefpackage/jkz;
+    .end local v1    # "c12":Ldefpackage/jky;
+    .end local v2    # "jlqVar10":Ldefpackage/jlq;
+    .end local v3    # "c11":Ldefpackage/jky;
+    :pswitch_2
+    iget-object v1, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    .line 35051
+    .local v1, "jkzVar5":Ldefpackage/jkz;
+    move-object v3, p1
+
+    check-cast v3, Ldefpackage/jlq;
+
+    .line 35052
+    .local v3, "jlqVar8":Ldefpackage/jlq;
+    move-object v5, p2
+
+    check-cast v5, Ldefpackage/jlq;
+
+    .line 35053
+    .local v5, "jlqVar9":Ldefpackage/jlq;
+    iget-object v8, v1, Ldefpackage/jkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    invoke-virtual {v8}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    .line 35054
+    iget-object v0, v1, Ldefpackage/jkz;->n:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v0}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v6}, Ldefpackage/jky;->d(I)V
+
+    .line 35055
+    iget-object v0, v1, Ldefpackage/jkz;->m:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v0}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Ldefpackage/jky;->d(I)V
+
+    .line 35056
+    return-void
+
+    .line 35058
+    :cond_0
+    iget-object v8, v1, Ldefpackage/jkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v8}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v6}, Ldefpackage/jky;->d(I)V
+
+    .line 35059
+    iget-object v8, v1, Ldefpackage/jkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v8}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v8
+
+    .line 35060
+    .local v8, "c10":Ldefpackage/jky;
+    invoke-virtual {v8}, Ldefpackage/jky;->e()V
+
+    .line 35061
+    invoke-virtual {v8, v4}, Ldefpackage/jky;->d(I)V
+
+    .line 35062
+    iget-object v4, v1, Ldefpackage/jkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v4}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35063
+    iget-object v4, v1, Ldefpackage/jkz;->n:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v4}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v6}, Ldefpackage/jky;->d(I)V
+
+    .line 35064
+    iget-object v4, v1, Ldefpackage/jkz;->m:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v4}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2}, Ldefpackage/jky;->d(I)V
+
+    .line 35065
+    iget-object v2, v1, Ldefpackage/jkz;->o:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v2}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ldefpackage/jky;->d(I)V
+
+    .line 35066
+    return-void
+
+    .line 35038
+    .end local v1    # "jkzVar5":Ldefpackage/jkz;
+    .end local v3    # "jlqVar8":Ldefpackage/jlq;
+    .end local v5    # "jlqVar9":Ldefpackage/jlq;
+    .end local v8    # "c10":Ldefpackage/jky;
+    :pswitch_3
+    iget-object v0, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    .line 35039
+    .local v0, "jkzVar4":Ldefpackage/jkz;
+    move-object v1, p1
+
+    check-cast v1, Ldefpackage/jlq;
+
+    .line 35040
+    .local v1, "jlqVar6":Ldefpackage/jlq;
+    move-object v2, p2
+
+    check-cast v2, Ldefpackage/jlq;
+
+    .line 35041
+    .local v2, "jlqVar7":Ldefpackage/jlq;
+    iget-object v4, v0, Ldefpackage/jkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v4
+
+    .line 35042
+    .local v4, "c8":Ldefpackage/jky;
+    const/16 v5, 0x64
+
+    invoke-virtual {v4, v5}, Ldefpackage/jky;->d(I)V
+
+    .line 35043
+    invoke-virtual {v4}, Ldefpackage/jky;->g()V
+
+    .line 35044
+    invoke-virtual {v4}, Ldefpackage/jky;->i()V
+
+    .line 35045
+    iget-object v5, v0, Ldefpackage/jkz;->e:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    .line 35046
+    .local v5, "c9":Ldefpackage/jky;
+    invoke-virtual {v5, v3}, Ldefpackage/jky;->d(I)V
+
+    .line 35047
+    invoke-virtual {v5}, Ldefpackage/jky;->f()V
+
+    .line 35048
+    return-void
+
+    .line 35018
+    .end local v0    # "jkzVar4":Ldefpackage/jkz;
+    .end local v1    # "jlqVar6":Ldefpackage/jlq;
+    .end local v2    # "jlqVar7":Ldefpackage/jlq;
+    .end local v4    # "c8":Ldefpackage/jky;
+    .end local v5    # "c9":Ldefpackage/jky;
+    :pswitch_4
+    iget-object v1, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    .line 35019
+    .local v1, "jkzVar3":Ldefpackage/jkz;
+    move-object v3, p1
+
+    check-cast v3, Ldefpackage/jlq;
+
+    .line 35020
+    .local v3, "jlqVar4":Ldefpackage/jlq;
+    move-object v4, p2
+
+    check-cast v4, Ldefpackage/jlq;
+
+    .line 35021
+    .local v4, "jlqVar5":Ldefpackage/jlq;
+    iget-object v7, v1, Ldefpackage/jkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    invoke-virtual {v7}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_1
+
+    .line 35022
+    iget-object v0, v1, Ldefpackage/jkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v0}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v0
+
+    .line 35023
+    .local v0, "c6":Ldefpackage/jky;
+    invoke-virtual {v0, v5}, Ldefpackage/jky;->d(I)V
+
+    .line 35024
+    invoke-virtual {v0}, Ldefpackage/jky;->e()V
+
+    .line 35025
+    iget-object v2, v1, Ldefpackage/jkz;->i:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v2}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v2
+
+    .line 35026
+    .local v2, "c7":Ldefpackage/jky;
+    invoke-virtual {v2, v5}, Ldefpackage/jky;->d(I)V
+
+    .line 35027
+    invoke-virtual {v2}, Ldefpackage/jky;->b()V
+
+    .line 35028
+    return-void
+
+    .line 35030
+    .end local v0    # "c6":Ldefpackage/jky;
+    .end local v2    # "c7":Ldefpackage/jky;
+    :cond_1
+    iget-object v5, v1, Ldefpackage/jkz;->k:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    const/16 v7, 0x12c
+
+    invoke-virtual {v5, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35031
+    iget-object v5, v1, Ldefpackage/jkz;->i:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35032
+    iget-object v5, v1, Ldefpackage/jkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v7}, Ldefpackage/jky;->d(I)V
+
+    .line 35033
+    iget-object v5, v1, Ldefpackage/jkz;->n:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v6}, Ldefpackage/jky;->d(I)V
+
+    .line 35034
+    iget-object v5, v1, Ldefpackage/jkz;->m:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v2}, Ldefpackage/jky;->d(I)V
+
+    .line 35035
+    iget-object v2, v1, Ldefpackage/jkz;->o:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v1, v2}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ldefpackage/jky;->d(I)V
+
+    .line 35036
+    return-void
+
+    .line 34997
+    .end local v1    # "jkzVar3":Ldefpackage/jkz;
+    .end local v3    # "jlqVar4":Ldefpackage/jlq;
+    .end local v4    # "jlqVar5":Ldefpackage/jlq;
+    :pswitch_5
+    iget-object v0, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    .line 34998
+    .local v0, "jkzVar2":Ldefpackage/jkz;
+    move-object v2, p1
+
+    check-cast v2, Ldefpackage/jlq;
+
+    .line 34999
+    .local v2, "jlqVar2":Ldefpackage/jlq;
+    move-object v3, p2
+
+    check-cast v3, Ldefpackage/jlq;
+
+    .line 35000
+    .local v3, "jlqVar3":Ldefpackage/jlq;
+    iget-object v5, v0, Ldefpackage/jkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    invoke-virtual {v5}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    .line 35001
+    iget-object v5, v0, Ldefpackage/jkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v6}, Ldefpackage/jky;->d(I)V
+
+    .line 35002
+    iget-object v5, v0, Ldefpackage/jkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v1}, Ldefpackage/jky;->d(I)V
+
+    .line 35003
+    iget-object v1, v0, Ldefpackage/jkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v1}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v1
+
+    .line 35004
+    .local v1, "c3":Ldefpackage/jky;
+    invoke-virtual {v1, v4}, Ldefpackage/jky;->d(I)V
+
+    .line 35005
+    iget-object v4, v3, Ldefpackage/jlq;->n:Ldefpackage/ojc;
+
+    invoke-virtual {v1, v4}, Ldefpackage/jky;->c(Ldefpackage/ojc;)V
+
+    .line 35006
+    return-void
+
+    .line 35008
+    .end local v1    # "c3":Ldefpackage/jky;
+    :cond_2
+    iget-object v1, v0, Ldefpackage/jkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v1}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v6}, Ldefpackage/jky;->d(I)V
+
+    .line 35009
+    iget-object v1, v0, Ldefpackage/jkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v1}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v1
+
+    .line 35010
+    .local v1, "c4":Ldefpackage/jky;
+    invoke-virtual {v1}, Ldefpackage/jky;->e()V
+
+    .line 35011
+    invoke-virtual {v1, v4}, Ldefpackage/jky;->d(I)V
+
+    .line 35012
+    invoke-virtual {v1}, Ldefpackage/jky;->a()V
+
+    .line 35013
+    iget-object v5, v0, Ldefpackage/jkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v5
+
+    .line 35014
+    .local v5, "c5":Ldefpackage/jky;
+    invoke-virtual {v5, v4}, Ldefpackage/jky;->d(I)V
+
+    .line 35015
+    invoke-virtual {v5}, Ldefpackage/jky;->a()V
+
+    .line 35016
+    return-void
+
+    .line 34986
+    .end local v0    # "jkzVar2":Ldefpackage/jkz;
+    .end local v1    # "c4":Ldefpackage/jky;
+    .end local v2    # "jlqVar2":Ldefpackage/jlq;
+    .end local v3    # "jlqVar3":Ldefpackage/jlq;
+    .end local v5    # "c5":Ldefpackage/jky;
+    :pswitch_6
+    iget-object v0, p0, Ldefpackage/jkz$123;->a:Ldefpackage/jkz;
+
+    .line 34987
+    .local v0, "jkzVar":Ldefpackage/jkz;
+    move-object v1, p1
+
+    check-cast v1, Ldefpackage/jlq;
+
+    .line 34988
+    .local v1, "jlqVar":Ldefpackage/jlq;
+    iget-object v2, v0, Ldefpackage/jkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v2
+
+    .line 34989
+    .local v2, "c":Ldefpackage/jky;
+    invoke-virtual {v2, v5}, Ldefpackage/jky;->d(I)V
+
+    .line 34990
+    invoke-virtual {v2}, Ldefpackage/jky;->e()V
+
+    .line 34991
+    iget-object v3, v0, Ldefpackage/jkz;->i:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v3
+
+    .line 34992
+    .local v3, "c2":Ldefpackage/jky;
+    invoke-virtual {v3, v5}, Ldefpackage/jky;->d(I)V
+
+    .line 34993
+    invoke-virtual {v3}, Ldefpackage/jky;->b()V
+
+    .line 34994
+    iget-object v4, v0, Ldefpackage/jkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ldefpackage/jkz;->c(Landroid/animation/Animator;)Ldefpackage/jky;
+
+    move-result-object v4
+
+    move-object v5, p2
+
+    check-cast v5, Ldefpackage/jlq;
+
+    iget-object v5, v5, Ldefpackage/jlq;->n:Ldefpackage/ojc;
+
+    invoke-virtual {v4, v5}, Ldefpackage/jky;->h(Ldefpackage/ojc;)V
+
+    .line 34995
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final andThen(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;
+    .locals 1
+    .param p1, "biConsumer"    # Ljava/util/function/BiConsumer;
+
+    .line 35111
+    const/4 v0, -0x1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 35127
+    return-object p1
+
+    .line 35125
+    :pswitch_0
+    return-object p1
+
+    .line 35123
+    :pswitch_1
+    return-object p1
+
+    .line 35121
+    :pswitch_2
+    return-object p1
+
+    .line 35119
+    :pswitch_3
+    return-object p1
+
+    .line 35117
+    :pswitch_4
+    return-object p1
+
+    .line 35115
+    :pswitch_5
+    return-object p1
+
+    .line 35113
+    :pswitch_6
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

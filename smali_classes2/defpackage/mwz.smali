@@ -1,0 +1,114 @@
+.class public final Ldefpackage/mwz;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final a:Ldefpackage/qxd;
+
+.field public final b:Ljava/lang/Long;
+
+.field public final c:Ljava/lang/Long;
+
+.field public final d:Ljava/lang/Long;
+
+.field public final e:Ljava/lang/Long;
+
+.field public final f:Ldefpackage/qwt;
+
+.field public final g:Ljava/lang/String;
+
+.field public final h:Ldefpackage/qxe;
+
+
+# direct methods
+.method public constructor <init>(Ldefpackage/qxd;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ldefpackage/qwt;Ljava/lang/String;Ldefpackage/qxe;)V
+    .locals 0
+    .param p1, "qxdVar"    # Ldefpackage/qxd;
+    .param p2, "l"    # Ljava/lang/Long;
+    .param p3, "l2"    # Ljava/lang/Long;
+    .param p4, "l3"    # Ljava/lang/Long;
+    .param p5, "l4"    # Ljava/lang/Long;
+    .param p6, "qwtVar"    # Ldefpackage/qwt;
+    .param p7, "str"    # Ljava/lang/String;
+    .param p8, "qxeVar"    # Ldefpackage/qxe;
+
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 17
+    iput-object p1, p0, Ldefpackage/mwz;->a:Ldefpackage/qxd;
+
+    .line 18
+    iput-object p2, p0, Ldefpackage/mwz;->b:Ljava/lang/Long;
+
+    .line 19
+    iput-object p3, p0, Ldefpackage/mwz;->c:Ljava/lang/Long;
+
+    .line 20
+    iput-object p4, p0, Ldefpackage/mwz;->d:Ljava/lang/Long;
+
+    .line 21
+    iput-object p5, p0, Ldefpackage/mwz;->e:Ljava/lang/Long;
+
+    .line 22
+    iput-object p6, p0, Ldefpackage/mwz;->f:Ldefpackage/qwt;
+
+    .line 23
+    iput-object p7, p0, Ldefpackage/mwz;->g:Ljava/lang/String;
+
+    .line 24
+    iput-object p8, p0, Ldefpackage/mwz;->h:Ldefpackage/qxe;
+
+    .line 25
+    return-void
+.end method
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 28
+    const/4 v0, 0x5
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    iget-object v1, p0, Ldefpackage/mwz;->b:Ljava/lang/Long;
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Ldefpackage/mwz;->c:Ljava/lang/Long;
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Ldefpackage/mwz;->d:Ljava/lang/Long;
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Ldefpackage/mwz;->e:Ljava/lang/Long;
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    iget-object v1, p0, Ldefpackage/mwz;->g:Ljava/lang/String;
+
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
+
+    const-string v1, "StatsRecord:\n  elapsed: %d\n  current: %d\n  Primes version: %d\n  version name #: %d\n  customName: %s\n"
+
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

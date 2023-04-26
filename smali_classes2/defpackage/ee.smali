@@ -1,0 +1,48 @@
+.class final Ldefpackage/ee;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final a:Landroid/graphics/Typeface;
+
+.field final b:Ldefpackage/eg;
+
+
+# direct methods
+.method public constructor <init>(Ldefpackage/eg;Landroid/graphics/Typeface;)V
+    .locals 0
+    .param p1, "egVar"    # Ldefpackage/eg;
+    .param p2, "typeface"    # Landroid/graphics/Typeface;
+
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 12
+    iput-object p1, p0, Ldefpackage/ee;->b:Ldefpackage/eg;
+
+    .line 13
+    iput-object p2, p0, Ldefpackage/ee;->a:Landroid/graphics/Typeface;
+
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 18
+    iget-object v0, p0, Ldefpackage/ee;->b:Ldefpackage/eg;
+
+    iget-object v1, p0, Ldefpackage/ee;->a:Landroid/graphics/Typeface;
+
+    invoke-virtual {v0, v1}, Ldefpackage/eg;->a(Landroid/graphics/Typeface;)V
+
+    .line 19
+    return-void
+.end method
