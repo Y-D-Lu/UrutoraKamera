@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gxp;
+.field public final a:Ldefpackage/gxp;
 
 
 # direct methods

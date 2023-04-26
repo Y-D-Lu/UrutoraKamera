@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/mars/MarsSwitch;
+.field public final a:Lcom/google/android/apps/camera/ui/mars/MarsSwitch;
 
-.field final b:Ldefpackage/jhp;
+.field public final b:Ldefpackage/jhp;
 
-.field final c:Ldefpackage/jdk;
+.field public final c:Ldefpackage/jdk;
 
 
 # direct methods

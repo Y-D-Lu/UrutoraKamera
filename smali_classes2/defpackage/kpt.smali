@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/content/Intent;
+.field public final a:Landroid/content/Intent;
 
-.field final b:Ljava/lang/ref/WeakReference;
+.field public final b:Ljava/lang/ref/WeakReference;
 
-.field final c:Ldefpackage/kpu;
+.field public final c:Ldefpackage/kpu;
 
 
 # direct methods

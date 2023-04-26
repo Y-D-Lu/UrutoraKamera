@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Ljava/util/Set;
+.field public static final a:Ljava/util/Set;
 
 
 # instance fields
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 13

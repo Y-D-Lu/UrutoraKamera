@@ -631,7 +631,7 @@
 
 
 # virtual methods
-.method protected a(Ldefpackage/lzv;)Z
+.method public a(Ldefpackage/lzv;)Z
     .locals 1
     .param p1, "lzvVar"    # Ldefpackage/lzv;
 

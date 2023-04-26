@@ -126,7 +126,7 @@
 
 
 # virtual methods
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 4
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -189,7 +189,7 @@
     return-void
 .end method
 
-.method protected onMeasure(II)V
+.method public onMeasure(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -207,7 +207,7 @@
     return-void
 .end method
 
-.method protected onSizeChanged(IIII)V
+.method public onSizeChanged(IIII)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

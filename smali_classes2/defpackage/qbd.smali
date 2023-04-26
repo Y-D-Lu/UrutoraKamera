@@ -155,7 +155,7 @@
     throw v0
 .end method
 
-.method protected abstract f(Ldefpackage/qbe;)V
+.method public abstract f(Ldefpackage/qbe;)V
 .end method
 
 .method public final g(Ldefpackage/qcn;Ldefpackage/qcl;)Ldefpackage/qbd;

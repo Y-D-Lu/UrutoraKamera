@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/dos;
+.field public final a:Ldefpackage/dos;
 
-.field final b:Ldefpackage/doi;
+.field public final b:Ldefpackage/doi;
 
 
 # direct methods

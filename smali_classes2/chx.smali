@@ -1,4 +1,4 @@
-.class interface abstract Lchx;
+.class public interface abstract Lchx;
 .super Ljava/lang/Object;
 .source ""
 

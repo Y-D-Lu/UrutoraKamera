@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected final a:Landroid/view/qc;
+.field public final a:Landroid/view/qc;
 
 .field public b:I
 
-.field final c:Landroid/graphics/Rect;
+.field public final c:Landroid/graphics/Rect;
 
 
 # direct methods

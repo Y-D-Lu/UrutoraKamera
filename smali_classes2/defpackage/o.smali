@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/p;
+.field public final a:Ldefpackage/p;
 
-.field protected final b:Ldefpackage/p;
+.field public final b:Ldefpackage/p;
 
 
 # direct methods

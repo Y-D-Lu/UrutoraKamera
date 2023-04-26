@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:[F
+.field public final b:[F
 
 .field private final c:I
 

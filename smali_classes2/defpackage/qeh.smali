@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbf;
+.field public final a:Ldefpackage/qbf;
 
-.field final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method protected final o(Ldefpackage/qbv;)V
+.method public final o(Ldefpackage/qbv;)V
     .locals 2
     .param p1, "qbvVar"    # Ldefpackage/qbv;
 

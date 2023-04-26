@@ -352,7 +352,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized e([FIJ)V
+.method public final declared-synchronized e([FIJ)V
     .locals 23
     .param p1, "fArr"    # [F
     .param p2, "i"    # I

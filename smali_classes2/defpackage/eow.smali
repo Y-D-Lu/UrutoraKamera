@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/eox;
+.field public final a:Ldefpackage/eox;
 
-.field final b:Ldefpackage/eoy;
+.field public final b:Ldefpackage/eoy;
 
 
 # direct methods

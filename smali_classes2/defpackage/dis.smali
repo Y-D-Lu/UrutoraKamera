@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase_Impl;
+.field public final b:Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase_Impl;
 
 
 # direct methods

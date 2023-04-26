@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected a:Ljava/lang/String;
+.field public a:Ljava/lang/String;
 
-.field protected c:Ljava/lang/String;
+.field public c:Ljava/lang/String;
 
-.field protected d:Z
+.field public d:Z
 
-.field protected e:I
+.field public e:I
 
 .field public f:Z
 
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method protected final a()V
+.method public final a()V
     .locals 16
 
     .line 28

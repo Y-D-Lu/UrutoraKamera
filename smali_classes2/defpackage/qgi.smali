@@ -8,21 +8,21 @@
 
 
 # static fields
-.field static final a:[Ldefpackage/qgh;
+.field public static final a:[Ldefpackage/qgh;
 
-.field static final b:[Ldefpackage/qgh;
+.field public static final b:[Ldefpackage/qgh;
 
 
 # instance fields
-.field final c:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final c:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final d:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final d:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final e:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final e:Ljava/util/concurrent/atomic/AtomicReference;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

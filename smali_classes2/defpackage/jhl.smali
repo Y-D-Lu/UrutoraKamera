@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jhm;
+.field public final a:Ldefpackage/jhm;
 
 
 # direct methods

@@ -4,19 +4,19 @@
 
 
 # static fields
-.field static final a:Ldefpackage/asg;
+.field public static final a:Ldefpackage/asg;
 
 
 # instance fields
-.field final b:Ljava/lang/Runnable;
+.field public final b:Ljava/lang/Runnable;
 
-.field final c:Ljava/util/concurrent/Executor;
+.field public final c:Ljava/util/concurrent/Executor;
 
-.field d:Ldefpackage/asg;
+.field public d:Ldefpackage/asg;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 8

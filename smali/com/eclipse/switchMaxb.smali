@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static final INSTANCE:Landroid/app/Application;
+.field public static final INSTANCE:Landroid/app/Application;
 
-.field static app_context:Landroid/content/Context;
+.field public static app_context:Landroid/content/Context;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 5
 
     .line 17

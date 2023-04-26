@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/hmx;
+.field public final synthetic this$0:Ldefpackage/hmx;
 
-.field final synthetic val$jtwVar:Ldefpackage/jtw;
+.field public final synthetic val$jtwVar:Ldefpackage/jtw;
 
-.field final synthetic val$onTouchListener:Landroid/view/View$OnTouchListener;
+.field public final synthetic val$onTouchListener:Landroid/view/View$OnTouchListener;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/hmx;Landroid/view/View$OnTouchListener;Ldefpackage/jtw;)V
+.method public constructor <init>(Ldefpackage/hmx;Landroid/view/View$OnTouchListener;Ldefpackage/jtw;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/hmx;
 

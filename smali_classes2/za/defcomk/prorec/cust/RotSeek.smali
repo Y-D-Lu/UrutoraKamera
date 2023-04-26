@@ -113,7 +113,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lza/defcomk/prorec/cust/RotSeek;)I
+.method public static synthetic access$000(Lza/defcomk/prorec/cust/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -123,7 +123,7 @@
     return v0
 .end method
 
-.method static synthetic access$002(Lza/defcomk/prorec/cust/RotSeek;I)I
+.method public static synthetic access$002(Lza/defcomk/prorec/cust/RotSeek;I)I
     .locals 0
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
     .param p1, "x1"    # I
@@ -134,7 +134,7 @@
     return p1
 .end method
 
-.method static synthetic access$100(Lza/defcomk/prorec/cust/RotSeek;)Landroid/widget/SeekBar$OnSeekBarChangeListener;
+.method public static synthetic access$100(Lza/defcomk/prorec/cust/RotSeek;)Landroid/widget/SeekBar$OnSeekBarChangeListener;
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -144,7 +144,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lza/defcomk/prorec/cust/RotSeek;)Z
+.method public static synthetic access$200(Lza/defcomk/prorec/cust/RotSeek;)Z
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -154,7 +154,7 @@
     return v0
 .end method
 
-.method static synthetic access$202(Lza/defcomk/prorec/cust/RotSeek;Z)Z
+.method public static synthetic access$202(Lza/defcomk/prorec/cust/RotSeek;Z)Z
     .locals 0
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
     .param p1, "x1"    # Z
@@ -165,7 +165,7 @@
     return p1
 .end method
 
-.method static synthetic access$300(Lza/defcomk/prorec/cust/RotSeek;)I
+.method public static synthetic access$300(Lza/defcomk/prorec/cust/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -175,7 +175,7 @@
     return v0
 .end method
 
-.method static synthetic access$320(Lza/defcomk/prorec/cust/RotSeek;I)I
+.method public static synthetic access$320(Lza/defcomk/prorec/cust/RotSeek;I)I
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
     .param p1, "x1"    # I
@@ -190,7 +190,7 @@
     return v0
 .end method
 
-.method static synthetic access$400(Lza/defcomk/prorec/cust/RotSeek;)I
+.method public static synthetic access$400(Lza/defcomk/prorec/cust/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -200,7 +200,7 @@
     return v0
 .end method
 
-.method static synthetic access$402(Lza/defcomk/prorec/cust/RotSeek;I)I
+.method public static synthetic access$402(Lza/defcomk/prorec/cust/RotSeek;I)I
     .locals 0
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
     .param p1, "x1"    # I
@@ -211,7 +211,7 @@
     return p1
 .end method
 
-.method static synthetic access$408(Lza/defcomk/prorec/cust/RotSeek;)I
+.method public static synthetic access$408(Lza/defcomk/prorec/cust/RotSeek;)I
     .locals 2
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -225,7 +225,7 @@
     return v0
 .end method
 
-.method static synthetic access$410(Lza/defcomk/prorec/cust/RotSeek;)I
+.method public static synthetic access$410(Lza/defcomk/prorec/cust/RotSeek;)I
     .locals 2
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -239,7 +239,7 @@
     return v0
 .end method
 
-.method static synthetic access$500(Lza/defcomk/prorec/cust/RotSeek;)I
+.method public static synthetic access$500(Lza/defcomk/prorec/cust/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -249,7 +249,7 @@
     return v0
 .end method
 
-.method static synthetic access$600(Lza/defcomk/prorec/cust/RotSeek;)I
+.method public static synthetic access$600(Lza/defcomk/prorec/cust/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -259,7 +259,7 @@
     return v0
 .end method
 
-.method static synthetic access$700(Lza/defcomk/prorec/cust/RotSeek;)[Ljava/lang/String;
+.method public static synthetic access$700(Lza/defcomk/prorec/cust/RotSeek;)[Ljava/lang/String;
     .locals 1
     .param p0, "x0"    # Lza/defcomk/prorec/cust/RotSeek;
 
@@ -590,7 +590,7 @@
     return-void
 .end method
 
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 12
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -823,7 +823,7 @@
     return-void
 .end method
 
-.method protected onSizeChanged(IIII)V
+.method public onSizeChanged(IIII)V
     .locals 4
     .param p1, "i"    # I
     .param p2, "i2"    # I

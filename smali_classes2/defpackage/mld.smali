@@ -8,9 +8,9 @@
 
 .field public final b:Ldefpackage/mlh;
 
-.field final c:I
+.field public final c:I
 
-.field final d:Ldefpackage/mlj;
+.field public final d:Ldefpackage/mlj;
 
 
 # direct methods

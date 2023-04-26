@@ -25,7 +25,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 2
 
     .line 115
@@ -260,7 +260,7 @@
 
 
 # virtual methods
-.method get(I)Lgo/Seq$Ref;
+.method public get(I)Lgo/Seq$Ref;
     .locals 3
     .param p1, "i"    # I
 
@@ -293,7 +293,7 @@
     return-object v1
 .end method
 
-.method put(ILgo/Seq$Ref;)V
+.method public put(ILgo/Seq$Ref;)V
     .locals 7
     .param p1, "i"    # I
     .param p2, "ref"    # Lgo/Seq$Ref;
@@ -488,7 +488,7 @@
     throw v1
 .end method
 
-.method remove(I)V
+.method public remove(I)V
     .locals 3
     .param p1, "i"    # I
 

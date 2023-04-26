@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:D
+.field public a:D
 
-.field b:D
+.field public b:D
 
-.field c:Z
+.field public c:Z
 
 
 # direct methods

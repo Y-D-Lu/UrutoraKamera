@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cfy;
+.field public final a:Ldefpackage/cfy;
 
 .field private final b:I
 

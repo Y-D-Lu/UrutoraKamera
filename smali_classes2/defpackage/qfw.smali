@@ -11,15 +11,15 @@
 
 
 # instance fields
-.field final a:J
+.field public final a:J
 
-.field final b:Ldefpackage/qfx;
+.field public final b:Ldefpackage/qfx;
 
-.field volatile c:Z
+.field public volatile c:Z
 
-.field volatile d:Ldefpackage/qdl;
+.field public volatile d:Ldefpackage/qdl;
 
-.field e:I
+.field public e:I
 
 
 # direct methods

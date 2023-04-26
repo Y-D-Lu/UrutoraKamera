@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -22,17 +22,17 @@
 
 .field public final c:Ldefpackage/jdy;
 
-.field final synthetic this$0:Ldefpackage/elc;
+.field public final synthetic this$0:Ldefpackage/elc;
 
-.field final synthetic val$jdyVar:Ldefpackage/jdy;
+.field public final synthetic val$jdyVar:Ldefpackage/jdy;
 
-.field final synthetic val$mo37get3:Ldefpackage/bqg;
+.field public final synthetic val$mo37get3:Ldefpackage/bqg;
 
-.field final synthetic val$qkgVar5:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar5:Ldefpackage/qkg;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/elc;Ldefpackage/qkg;Ldefpackage/jdy;Ldefpackage/bqg;)V
+.method public constructor <init>(Ldefpackage/elc;Ldefpackage/qkg;Ldefpackage/jdy;Ldefpackage/bqg;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/elc;
 

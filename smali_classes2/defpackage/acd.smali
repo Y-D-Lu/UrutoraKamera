@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ach;
+.field public final a:Ldefpackage/ach;
 
 
 # direct methods

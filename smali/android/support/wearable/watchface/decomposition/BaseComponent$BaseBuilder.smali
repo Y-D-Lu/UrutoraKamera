@@ -9,13 +9,13 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x400
+    accessFlags = 0x401
     name = "BaseBuilder"
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Landroid/support/wearable/watchface/decomposition/BaseComponent;
+.field public final synthetic this$0:Landroid/support/wearable/watchface/decomposition/BaseComponent;
 
 
 # direct methods

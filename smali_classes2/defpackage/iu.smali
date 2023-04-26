@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ldefpackage/jk;
 
-.field final b:Ldefpackage/iy;
+.field public final b:Ldefpackage/iy;
 
 
 # direct methods

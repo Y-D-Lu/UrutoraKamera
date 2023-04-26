@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:[Z
+.field public final a:[Z
 
 .field public final b:Ljava/util/Set;
 

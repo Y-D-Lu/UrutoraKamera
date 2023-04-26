@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final b:J
+.field public final b:J
 
-.field final c:Ldefpackage/mad;
+.field public final c:Ldefpackage/mad;
 
-.field final d:Ldefpackage/gaj;
+.field public final d:Ldefpackage/gaj;
 
 
 # direct methods

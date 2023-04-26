@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field mN:Landroid/support/v8/renderscript/Script$FieldID;
+.field public mN:Landroid/support/v8/renderscript/Script$FieldID;
 
-.field mScript:Landroid/support/v8/renderscript/Script;
+.field public mScript:Landroid/support/v8/renderscript/Script;
 
-.field mSlot:I
+.field public mSlot:I
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/Script;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/Script;
 
 
 # direct methods

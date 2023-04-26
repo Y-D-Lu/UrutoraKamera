@@ -118,7 +118,7 @@
     return-object v0
 .end method
 
-.method final readResolve()Ljava/lang/Object;
+.method public final readResolve()Ljava/lang/Object;
     .locals 7
 
     .line 33

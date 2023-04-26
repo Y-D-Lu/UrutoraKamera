@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:I
+.field public final b:I
 
-.field final c:Ljava/lang/ref/WeakReference;
+.field public final c:Ljava/lang/ref/WeakReference;
 
-.field final d:Ldefpackage/nt;
+.field public final d:Ldefpackage/nt;
 
 
 # direct methods

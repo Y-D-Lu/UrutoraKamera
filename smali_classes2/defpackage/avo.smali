@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 10
@@ -147,7 +147,7 @@
     return-object v0
 .end method
 
-.method protected final d()Ldefpackage/axi;
+.method public final d()Ldefpackage/axi;
     .locals 1
 
     .line 51

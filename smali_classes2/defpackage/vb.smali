@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field a:Ldefpackage/uz;
+.field public a:Ldefpackage/uz;
 
-.field b:Ldefpackage/uz;
+.field public b:Ldefpackage/uz;
 
 
 # direct methods

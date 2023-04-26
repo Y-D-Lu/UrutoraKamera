@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/view/WindowInsets;
+.field public final a:Landroid/view/WindowInsets;
 
-.field b:Ldefpackage/el;
+.field public b:Ldefpackage/el;
 
 .field private c:Ldefpackage/el;
 

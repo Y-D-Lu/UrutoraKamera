@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ldefpackage/ofi;
+.field public final b:Ldefpackage/ofi;
 
-.field final c:Ldefpackage/oed;
+.field public final c:Ldefpackage/oed;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method protected final a()V
+.method public final a()V
     .locals 11
 
     .line 28

@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Object;
+.field public final a:Ljava/lang/Object;
 
-.field b:Ljava/util/Collection;
+.field public b:Ljava/util/Collection;
 
-.field final c:Ldefpackage/okz;
+.field public final c:Ldefpackage/okz;
 
-.field final d:Ljava/util/Collection;
+.field public final d:Ljava/util/Collection;
 
-.field final e:Ldefpackage/old;
+.field public final e:Ldefpackage/old;
 
 
 # direct methods

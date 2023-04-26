@@ -19,11 +19,11 @@
 
 .field public final d:Ljava/util/ArrayList;
 
-.field e:Ljava/lang/CharSequence;
+.field public e:Ljava/lang/CharSequence;
 
-.field f:Landroid/graphics/drawable/Drawable;
+.field public f:Landroid/graphics/drawable/Drawable;
 
-.field g:Landroid/view/View;
+.field public g:Landroid/view/View;
 
 .field public h:Ldefpackage/kz;
 
@@ -61,7 +61,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 29
@@ -889,7 +889,7 @@
     return-object v0
 .end method
 
-.method final b(ILandroid/view/KeyEvent;)Ldefpackage/kz;
+.method public final b(ILandroid/view/KeyEvent;)Ldefpackage/kz;
     .locals 12
     .param p1, "i"    # I
     .param p2, "keyEvent"    # Landroid/view/KeyEvent;
@@ -1226,7 +1226,7 @@
     return-void
 .end method
 
-.method protected d()Ljava/lang/String;
+.method public d()Ljava/lang/String;
     .locals 1
 
     .line 295
@@ -1618,7 +1618,7 @@
     return v0
 .end method
 
-.method final j(Ljava/util/List;ILandroid/view/KeyEvent;)V
+.method public final j(Ljava/util/List;ILandroid/view/KeyEvent;)V
     .locals 11
     .param p1, "list"    # Ljava/util/List;
     .param p2, "i"    # I

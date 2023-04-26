@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Ldefpackage/jti;
+.field public static final a:Ldefpackage/jti;
 
 .field public static final k:I
 
@@ -34,7 +34,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 14

@@ -7,19 +7,19 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ldefpackage/ols;
+.field public final b:Ldefpackage/ols;
 
-.field final c:I
+.field public final c:I
 
-.field final d:Z
+.field public final d:Z
 
-.field final e:I
+.field public final e:I
 
-.field final f:Ldefpackage/cts;
+.field public final f:Ldefpackage/cts;
 
-.field final g:I
+.field public final g:I
 
 
 # direct methods

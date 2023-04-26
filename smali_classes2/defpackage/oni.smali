@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected b()Ljava/util/Collection;
+.method public b()Ljava/util/Collection;
     .locals 1
 
     .line 11
@@ -137,7 +137,7 @@
     return v0
 .end method
 
-.method protected abstract i()Ldefpackage/oqw;
+.method public abstract i()Ldefpackage/oqw;
 .end method
 
 .method public j()Ljava/util/Set;

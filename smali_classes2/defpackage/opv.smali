@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/Iterator;
+.field public final a:Ljava/util/Iterator;
 
-.field final b:Ldefpackage/ojf;
+.field public final b:Ldefpackage/ojf;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 2
 
     .line 18

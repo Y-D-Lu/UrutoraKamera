@@ -110,7 +110,7 @@
 .method public abstract ai(Z)V
 .end method
 
-.method protected aj()Z
+.method public aj()Z
     .locals 1
 
     .line 51
@@ -220,7 +220,7 @@
     return-void
 .end method
 
-.method protected fq(Ldefpackage/id;)V
+.method public fq(Ldefpackage/id;)V
     .locals 0
     .param p1, "idVar"    # Ldefpackage/id;
 

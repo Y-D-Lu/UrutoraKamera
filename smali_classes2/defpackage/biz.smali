@@ -8,7 +8,7 @@
 
 .field public final b:Ljava/util/List;
 
-.field final c:Ldefpackage/ayn;
+.field public final c:Ldefpackage/ayn;
 
 .field public d:Z
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/HashMap;
+.field public final a:Ljava/util/HashMap;
 
-.field final b:Ldefpackage/emr;
+.field public final b:Ldefpackage/emr;
 
 
 # direct methods

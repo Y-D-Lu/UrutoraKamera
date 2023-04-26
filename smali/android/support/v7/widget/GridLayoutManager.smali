@@ -4,21 +4,21 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field b:I
+.field public b:I
 
-.field c:[I
+.field public c:[I
 
-.field d:[Landroid/view/View;
+.field public d:[Landroid/view/View;
 
-.field final e:Landroid/util/SparseIntArray;
+.field public final e:Landroid/util/SparseIntArray;
 
-.field final f:Landroid/util/SparseIntArray;
+.field public final f:Landroid/util/SparseIntArray;
 
-.field g:Ldefpackage/oy;
+.field public g:Ldefpackage/oy;
 
-.field final h:Landroid/graphics/Rect;
+.field public final h:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -847,7 +847,7 @@
     return v0
 .end method
 
-.method final c(II)I
+.method public final c(II)I
     .locals 4
     .param p1, "i"    # I
     .param p2, "i2"    # I

@@ -57,7 +57,7 @@
     return-void
 .end method
 
-.method static final A(Ljava/util/List;)Lcom/google/android/material/appbar/AppBarLayout;
+.method public static final A(Ljava/util/List;)Lcom/google/android/material/appbar/AppBarLayout;
     .locals 4
     .param p0, "list"    # Ljava/util/List;
 

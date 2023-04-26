@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ctq;
+.field public final a:Ldefpackage/ctq;
 
 
 # direct methods

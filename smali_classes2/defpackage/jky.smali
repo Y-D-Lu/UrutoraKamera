@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jkz;
+.field public final a:Ldefpackage/jkz;
 
 .field private final b:Landroid/animation/Animator;
 

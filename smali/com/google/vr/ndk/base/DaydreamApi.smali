@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 33
@@ -40,7 +40,7 @@
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
 
@@ -450,7 +450,7 @@
 
 
 # virtual methods
-.method protected final a(Ljava/lang/Runnable;)V
+.method public final a(Ljava/lang/Runnable;)V
     .locals 1
     .param p1, "runnable"    # Ljava/lang/Runnable;
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/content/Context;
+.field public final a:Landroid/content/Context;
 
-.field final b:Ldefpackage/pih;
+.field public final b:Ldefpackage/pih;
 
 
 # direct methods

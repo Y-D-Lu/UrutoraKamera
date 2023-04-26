@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
 .field private final b:Ljava/util/Queue;
 
@@ -67,7 +67,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 27
@@ -189,7 +189,7 @@
     return v1
 .end method
 
-.method protected final b()Ljava/util/Collection;
+.method public final b()Ljava/util/Collection;
     .locals 1
 
     .line 58
@@ -198,7 +198,7 @@
     return-object v0
 .end method
 
-.method protected final d()Ljava/util/Queue;
+.method public final d()Ljava/util/Queue;
     .locals 1
 
     .line 63

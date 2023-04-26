@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/afl;
+.field public final a:Ldefpackage/afl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected final done()V
+.method public final done()V
     .locals 4
 
     .line 24

@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$ltmVar:Ldefpackage/ltm;
+.field public final synthetic val$ltmVar:Ldefpackage/ltm;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ltm;)V
+.method public constructor <init>(Ldefpackage/ltm;)V
     .locals 0
 
     .line 795

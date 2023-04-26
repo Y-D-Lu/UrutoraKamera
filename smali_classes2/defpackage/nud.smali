@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pvd;
+.field public final a:Ldefpackage/pvd;
 
 
 # direct methods

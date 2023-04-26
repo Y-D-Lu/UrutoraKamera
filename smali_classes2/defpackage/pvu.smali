@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/vr/audio/DeviceInfo;
+.field public final a:Lcom/google/vr/audio/DeviceInfo;
 
 
 # direct methods

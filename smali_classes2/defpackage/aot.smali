@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/aox;
+.field public final a:Ldefpackage/aox;
 
 
 # direct methods

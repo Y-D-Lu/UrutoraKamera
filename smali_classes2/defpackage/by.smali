@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cd;
+.field public final a:Ldefpackage/cd;
 
-.field b:Z
+.field public b:Z
 
-.field c:Z
+.field public c:Z
 
-.field d:Z
+.field public d:Z
 
-.field final e:Ldefpackage/aeb;
+.field public final e:Ldefpackage/aeb;
 
 
 # direct methods
@@ -357,7 +357,7 @@
     return-void
 .end method
 
-.method final fS(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
+.method public final fS(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 1
     .param p1, "view"    # Landroid/view/View;
     .param p2, "str"    # Ljava/lang/String;

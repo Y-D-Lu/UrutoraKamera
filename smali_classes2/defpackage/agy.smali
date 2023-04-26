@@ -20,7 +20,7 @@
 
 .field private final ad:Ljava/lang/Runnable;
 
-.field b:Landroid/support/v7/widget/RecyclerView;
+.field public b:Landroid/support/v7/widget/RecyclerView;
 
 .field public c:Z
 

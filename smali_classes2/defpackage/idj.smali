@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/idk;
+.field public final a:Ldefpackage/idk;
 
 
 # direct methods

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mpi;
+.field public final a:Ldefpackage/mpi;
 
-.field final b:I
+.field public final b:I
 
-.field final c:Ljava/nio/ByteBuffer;
+.field public final c:Ljava/nio/ByteBuffer;
 
 
 # direct methods

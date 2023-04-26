@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/Set;
+.field public final a:Ljava/util/Set;
 
-.field final b:Ldefpackage/okm;
+.field public final b:Ldefpackage/okm;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 20
@@ -44,7 +44,7 @@
     return-object v0
 .end method
 
-.method protected final b()Ljava/util/Collection;
+.method public final b()Ljava/util/Collection;
     .locals 1
 
     .line 25
@@ -53,7 +53,7 @@
     return-object v0
 .end method
 
-.method protected final c()Ljava/util/Set;
+.method public final c()Ljava/util/Set;
     .locals 1
 
     .line 30

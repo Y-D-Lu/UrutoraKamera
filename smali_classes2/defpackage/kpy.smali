@@ -33,7 +33,7 @@
     throw v0
 .end method
 
-.method protected final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 2
     .param p1, "i"    # I
     .param p2, "parcel"    # Landroid/os/Parcel;

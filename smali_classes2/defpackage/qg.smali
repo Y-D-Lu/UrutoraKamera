@@ -6,11 +6,11 @@
 # instance fields
 .field public final a:Ljava/util/ArrayList;
 
-.field final b:I
+.field public final b:I
 
-.field c:J
+.field public c:J
 
-.field d:J
+.field public d:J
 
 
 # direct methods

@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kp;
+.field public final a:Ldefpackage/kp;
 
-.field final b:Landroid/view/MenuItem;
+.field public final b:Landroid/view/MenuItem;
 
-.field final c:Ldefpackage/kw;
+.field public final c:Ldefpackage/kw;
 
-.field final d:Ldefpackage/ko;
+.field public final d:Ldefpackage/ko;
 
 
 # direct methods

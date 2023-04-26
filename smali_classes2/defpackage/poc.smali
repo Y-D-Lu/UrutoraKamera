@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 16
@@ -1052,7 +1052,7 @@
 .method public abstract l()Ldefpackage/poh;
 .end method
 
-.method protected abstract m(Ljava/nio/charset/Charset;)Ljava/lang/String;
+.method public abstract m(Ljava/nio/charset/Charset;)Ljava/lang/String;
 .end method
 
 .method public abstract n()Ljava/nio/ByteBuffer;

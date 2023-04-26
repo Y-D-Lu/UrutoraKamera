@@ -12,27 +12,27 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/fnj;
+.field public final synthetic this$0:Ldefpackage/fnj;
 
-.field final synthetic val$atomicBoolean:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final synthetic val$atomicBoolean:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final synthetic val$fpiVar:Ldefpackage/fpi;
+.field public final synthetic val$fpiVar:Ldefpackage/fpi;
 
-.field final synthetic val$gvbVar:Ldefpackage/gvb;
+.field public final synthetic val$gvbVar:Ldefpackage/gvb;
 
-.field final synthetic val$jrhVar:Ldefpackage/jrh;
+.field public final synthetic val$jrhVar:Ldefpackage/jrh;
 
-.field final synthetic val$k:Z
+.field public final synthetic val$k:Z
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/fnj;Ldefpackage/gvb;Ldefpackage/jrh;ZLjava/util/concurrent/atomic/AtomicBoolean;Ldefpackage/fpi;)V
+.method public constructor <init>(Ldefpackage/fnj;Ldefpackage/gvb;Ldefpackage/jrh;ZLjava/util/concurrent/atomic/AtomicBoolean;Ldefpackage/fpi;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/fnj;
 

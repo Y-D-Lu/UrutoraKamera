@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 31
@@ -293,7 +293,7 @@
     goto :goto_2
 .end method
 
-.method static createBuffer()[B
+.method public static createBuffer()[B
     .locals 1
 
     .line 94
@@ -841,7 +841,7 @@
     return-wide v1
 .end method
 
-.method static skipUpTo(Ljava/io/InputStream;J)J
+.method public static skipUpTo(Ljava/io/InputStream;J)J
     .locals 10
     .param p0, "inputStream"    # Ljava/io/InputStream;
     .param p1, "j"    # J

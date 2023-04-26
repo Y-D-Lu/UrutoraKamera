@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ggt;
+.field public final a:Ldefpackage/ggt;
 
 
 # direct methods

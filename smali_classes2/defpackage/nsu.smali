@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nsv;
+.field public final a:Ldefpackage/nsv;
 
-.field final b:Ldefpackage/nrl;
+.field public final b:Ldefpackage/nrl;
 
-.field final c:Ldefpackage/aml;
+.field public final c:Ldefpackage/aml;
 
 
 # direct methods

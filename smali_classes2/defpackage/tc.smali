@@ -324,7 +324,7 @@
 
 
 # virtual methods
-.method protected final a()V
+.method public final a()V
     .locals 5
 
     .line 103
@@ -390,7 +390,7 @@
     return-void
 .end method
 
-.method protected final b(Landroid/view/View;ZFFF)Z
+.method public final b(Landroid/view/View;ZFFF)Z
     .locals 15
     .param p1, "view"    # Landroid/view/View;
     .param p2, "z"    # Z

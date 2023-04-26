@@ -8,17 +8,17 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
-.field final d:Ljava/lang/String;
+.field public final d:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

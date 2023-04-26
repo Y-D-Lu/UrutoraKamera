@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:Ldefpackage/aih;
+.field public a:Ldefpackage/aih;
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 5

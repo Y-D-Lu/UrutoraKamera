@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method protected final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
     .line 16
@@ -36,7 +36,7 @@
     throw v0
 .end method
 
-.method protected final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -46,7 +46,7 @@
     throw v0
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 1
     .param p1, "z"    # Z
     .param p2, "i"    # I

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/ipx;
+.field public final b:Ldefpackage/ipx;
 
 
 # direct methods

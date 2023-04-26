@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field public a:Ljava/lang/Object;
 
-.field b:Ljava/lang/Object;
+.field public b:Ljava/lang/Object;
 
-.field c:Ljava/lang/Object;
+.field public c:Ljava/lang/Object;
 
-.field final d:Ldefpackage/nql;
+.field public final d:Ldefpackage/nql;
 
-.field e:I
+.field public e:I
 
 
 # direct methods

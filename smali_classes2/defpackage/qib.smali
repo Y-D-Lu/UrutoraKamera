@@ -51,7 +51,7 @@
 
 
 # virtual methods
-.method final a()Ldefpackage/qia;
+.method public final a()Ldefpackage/qia;
     .locals 1
 
     .line 18
@@ -90,7 +90,7 @@
     return-void
 .end method
 
-.method final d(Ldefpackage/qia;)Ldefpackage/qia;
+.method public final d(Ldefpackage/qia;)Ldefpackage/qia;
     .locals 1
     .param p1, "qiaVar"    # Ldefpackage/qia;
 
@@ -106,7 +106,7 @@
     return-object v0
 .end method
 
-.method final e(Ldefpackage/qia;)V
+.method public final e(Ldefpackage/qia;)V
     .locals 1
     .param p1, "qiaVar"    # Ldefpackage/qia;
 

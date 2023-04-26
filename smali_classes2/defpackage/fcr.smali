@@ -311,7 +311,7 @@
     return v3
 .end method
 
-.method protected static b(ILjava/lang/String;)I
+.method public static b(ILjava/lang/String;)I
     .locals 7
     .param p0, "i"    # I
     .param p1, "str"    # Ljava/lang/String;

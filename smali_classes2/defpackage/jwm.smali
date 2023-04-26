@@ -26,9 +26,9 @@
 
 .field public h:Ldefpackage/lmr;
 
-.field i:Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger;
+.field public i:Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger;
 
-.field volatile j:Ldefpackage/oom;
+.field public volatile j:Ldefpackage/oom;
 
 .field public k:Z
 
@@ -52,7 +52,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 21

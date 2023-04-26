@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ncu;
+.field public static final a:Ldefpackage/ncu;
 
 
 # instance fields
@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 8

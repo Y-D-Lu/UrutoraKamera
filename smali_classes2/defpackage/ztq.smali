@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field a:Landroid/app/Activity;
+.field public a:Landroid/app/Activity;
 
 
 # direct methods

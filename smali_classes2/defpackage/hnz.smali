@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Z
+.field public final a:Z
 
-.field final b:Landroid/content/Intent;
+.field public final b:Landroid/content/Intent;
 
-.field final c:Ldefpackage/hoa;
+.field public final c:Ldefpackage/hoa;
 
 
 # direct methods

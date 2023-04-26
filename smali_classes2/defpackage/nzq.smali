@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Lcom/google/android/material/internal/NavigationMenuItemView;
+.field public final b:Lcom/google/android/material/internal/NavigationMenuItemView;
 
 
 # direct methods

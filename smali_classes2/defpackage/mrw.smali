@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mrx;
+.field public final a:Ldefpackage/mrx;
 
 
 # direct methods

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gzk;
+.field public final a:Ldefpackage/gzk;
 
-.field final b:Ldefpackage/gog;
+.field public final b:Ldefpackage/gog;
 
 
 # direct methods

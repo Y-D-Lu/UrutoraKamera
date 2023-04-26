@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 12
@@ -96,7 +96,7 @@
 
 
 # virtual methods
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 1
 
     .line 31

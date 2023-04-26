@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field g:Ldefpackage/me;
+.field public g:Ldefpackage/me;
 
 .field public h:I
 
-.field i:Ldefpackage/mf;
+.field public i:Ldefpackage/mf;
 
 .field public j:Ldefpackage/mb;
 
-.field k:Ldefpackage/mc;
+.field public k:Ldefpackage/mc;
 
-.field final l:Ldefpackage/mg;
+.field public final l:Ldefpackage/mg;
 
 .field private m:Z
 

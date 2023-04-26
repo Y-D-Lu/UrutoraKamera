@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nzf;
+.field public final a:Ldefpackage/nzf;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final a()F
+.method public final a()F
     .locals 3
 
     .line 16

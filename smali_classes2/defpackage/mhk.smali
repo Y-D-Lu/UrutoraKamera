@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method protected final findClass(Ljava/lang/String;)Ljava/lang/Class;
+.method public final findClass(Ljava/lang/String;)Ljava/lang/Class;
     .locals 1
     .param p1, "str"    # Ljava/lang/String;
 

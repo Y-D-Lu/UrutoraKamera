@@ -15,11 +15,11 @@
 
 
 # static fields
-.field static map:Ljava/util/Map;
+.field public static map:Ljava/util/Map;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 25
@@ -128,7 +128,7 @@
 
 
 # virtual methods
-.method getMap()Ljava/util/Map;
+.method public getMap()Ljava/util/Map;
     .locals 1
 
     .line 37

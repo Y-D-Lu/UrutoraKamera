@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/media/MediaCodec$BufferInfo;
+.field public final a:Landroid/media/MediaCodec$BufferInfo;
 
-.field final b:Landroid/media/MediaFormat;
+.field public final b:Landroid/media/MediaFormat;
 
-.field final c:Ljava/nio/ByteBuffer;
+.field public final c:Ljava/nio/ByteBuffer;
 
 
 # direct methods

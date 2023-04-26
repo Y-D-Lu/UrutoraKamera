@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/fbn;
+.field public final synthetic this$0:Ldefpackage/fbn;
 
-.field final synthetic val$ilaVar:Ldefpackage/ila;
+.field public final synthetic val$ilaVar:Ldefpackage/ila;
 
-.field final synthetic val$materialManagedSwitchPreference10:Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;
+.field public final synthetic val$materialManagedSwitchPreference10:Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;
 
-.field final synthetic val$materialManagedSwitchPreference9:Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;
+.field public final synthetic val$materialManagedSwitchPreference9:Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/fbn;Ldefpackage/ila;Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;)V
+.method public constructor <init>(Ldefpackage/fbn;Ldefpackage/ila;Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/fbn;
 

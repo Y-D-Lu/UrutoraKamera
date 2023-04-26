@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/iwt;
+.field public final a:Ldefpackage/iwt;
 
 
 # direct methods

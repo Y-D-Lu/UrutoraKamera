@@ -31,9 +31,9 @@
 
 .field public I:Ldefpackage/dyi;
 
-.field protected J:Ldefpackage/ie;
+.field public J:Ldefpackage/ie;
 
-.field protected K:Ldefpackage/ie;
+.field public K:Ldefpackage/ie;
 
 .field public final L:Landroid/content/DialogInterface$OnClickListener;
 
@@ -163,7 +163,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 47

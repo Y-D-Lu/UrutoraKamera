@@ -41,7 +41,7 @@
 
 
 # virtual methods
-.method protected final e(Ldefpackage/khi;I)V
+.method public final e(Ldefpackage/khi;I)V
     .locals 1
     .param p1, "khiVar"    # Ldefpackage/khi;
     .param p2, "i"    # I
@@ -55,7 +55,7 @@
     return-void
 .end method
 
-.method protected final f()V
+.method public final f()V
     .locals 1
 
     .line 23

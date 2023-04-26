@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ojf;
+.field public final a:Ldefpackage/ojf;
 
-.field final b:Ldefpackage/oiu;
+.field public final b:Ldefpackage/oiu;
 
 
 # direct methods

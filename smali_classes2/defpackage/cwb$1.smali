@@ -12,29 +12,29 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/cwb;
+.field public final synthetic this$0:Ldefpackage/cwb;
 
-.field final synthetic val$c:Ldefpackage/ie;
+.field public final synthetic val$c:Ldefpackage/ie;
 
-.field final synthetic val$cwcVar:Ldefpackage/cwc;
+.field public final synthetic val$cwcVar:Ldefpackage/cwc;
 
-.field final synthetic val$f:I
+.field public final synthetic val$f:I
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$i2:I
+.field public final synthetic val$i2:I
 
-.field final synthetic val$lwdVar:Ldefpackage/lwd;
+.field public final synthetic val$lwdVar:Ldefpackage/lwd;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/cwb;Ldefpackage/cwc;Ldefpackage/ie;Ldefpackage/lwd;III)V
+.method public constructor <init>(Ldefpackage/cwb;Ldefpackage/cwc;Ldefpackage/ie;Ldefpackage/lwd;III)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/cwb;
 

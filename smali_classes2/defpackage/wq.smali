@@ -392,7 +392,7 @@
     return v1
 .end method
 
-.method protected final onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 0
     .param p1, "rect"    # Landroid/graphics/Rect;
 
@@ -406,7 +406,7 @@
     return-void
 .end method
 
-.method protected final onStateChange([I)Z
+.method public final onStateChange([I)Z
     .locals 7
     .param p1, "iArr"    # [I
 

@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field a:Landroid/util/SparseArray;
+.field public a:Landroid/util/SparseArray;
 
 .field public b:Ljava/util/ArrayList;
 
-.field protected c:Ldefpackage/yl;
+.field public c:Ldefpackage/yl;
 
-.field protected d:Z
+.field public d:Z
 
 .field public e:I
 
-.field f:Ldefpackage/zl;
+.field public f:Ldefpackage/zl;
 
 .field private g:I
 
@@ -416,7 +416,7 @@
     return-void
 .end method
 
-.method protected static final d()Ldefpackage/zk;
+.method public static final d()Ldefpackage/zk;
     .locals 1
 
     .line 141
@@ -7079,7 +7079,7 @@
     return-object v0
 .end method
 
-.method protected final c()Z
+.method public final c()Z
     .locals 2
 
     .line 999
@@ -7116,7 +7116,7 @@
     return v1
 .end method
 
-.method protected final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -7126,7 +7126,7 @@
     return v0
 .end method
 
-.method protected final dispatchDraw(Landroid/graphics/Canvas;)V
+.method public final dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 26
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -7660,7 +7660,7 @@
     return-void
 .end method
 
-.method protected final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
     .line 1068
@@ -7687,7 +7687,7 @@
     return-object v0
 .end method
 
-.method protected final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -7699,7 +7699,7 @@
     return-object v0
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 12
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -7888,7 +7888,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 2
     .param p1, "r28"    # I
     .param p2, "r29"    # I

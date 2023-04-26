@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method protected final onCreateView(Landroid/view/ViewGroup;)Landroid/view/View;
+.method public final onCreateView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
     .param p1, "viewGroup"    # Landroid/view/ViewGroup;
 

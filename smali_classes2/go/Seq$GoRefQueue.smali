@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "GoRefQueue"
 .end annotation
 
@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 2
 
     .line 46
@@ -63,7 +63,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lgo/Seq$GoRefQueue;)Ljava/util/Collection;
+.method public static synthetic access$000(Lgo/Seq$GoRefQueue;)Ljava/util/Collection;
     .locals 1
     .param p0, "x0"    # Lgo/Seq$GoRefQueue;
 
@@ -75,7 +75,7 @@
 
 
 # virtual methods
-.method track(ILgo/Seq$GoObject;)V
+.method public track(ILgo/Seq$GoObject;)V
     .locals 2
     .param p1, "i"    # I
     .param p2, "goObject"    # Lgo/Seq$GoObject;

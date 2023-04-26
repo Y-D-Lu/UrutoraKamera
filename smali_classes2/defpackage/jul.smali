@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field volatile a:I
+.field public volatile a:I
 
-.field final b:I
+.field public final b:I
 
 
 # direct methods

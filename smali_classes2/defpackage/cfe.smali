@@ -56,11 +56,11 @@
 
 .field public final m:Ldefpackage/ddf;
 
-.field final n:Ldefpackage/jli;
+.field public final n:Ldefpackage/jli;
 
 .field public final o:Ldefpackage/epj;
 
-.field final p:Ldefpackage/epi;
+.field public final p:Ldefpackage/epi;
 
 .field public q:Ldefpackage/cfy;
 
@@ -84,7 +84,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 17

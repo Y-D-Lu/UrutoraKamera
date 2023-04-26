@@ -366,7 +366,7 @@
     return-void
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 6
 
     .line 125
@@ -490,7 +490,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 3
     .param p1, "i"    # I
     .param p2, "i2"    # I

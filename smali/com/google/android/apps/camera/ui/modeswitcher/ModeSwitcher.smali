@@ -33,7 +33,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 48
@@ -1093,7 +1093,7 @@
     return v0
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 4
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -1152,7 +1152,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

@@ -21,9 +21,9 @@
 
 .field public final e:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field f:Ldefpackage/fpy;
+.field public f:Ldefpackage/fpy;
 
-.field g:Z
+.field public g:Z
 
 .field private final i:Ldefpackage/ddf;
 
@@ -39,7 +39,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 14

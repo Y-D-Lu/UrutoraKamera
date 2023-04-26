@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:[I
+.field public final b:[I
 
-.field final c:F
+.field public final c:F
 
-.field final d:Ldefpackage/ifx;
+.field public final d:Ldefpackage/ifx;
 
 
 # direct methods

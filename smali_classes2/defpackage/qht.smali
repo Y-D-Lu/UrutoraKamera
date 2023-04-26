@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbv;
+.field public final a:Ldefpackage/qbv;
 
 
 # direct methods

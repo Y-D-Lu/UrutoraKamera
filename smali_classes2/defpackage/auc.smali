@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Z
+.field public final a:Z
 
-.field final b:Ldefpackage/awl;
+.field public final b:Ldefpackage/awl;
 
-.field final c:Ldefpackage/aud;
+.field public final c:Ldefpackage/aud;
 
 
 # direct methods

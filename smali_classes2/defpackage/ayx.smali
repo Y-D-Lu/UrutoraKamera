@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:Ljava/nio/charset/Charset;
+.field public static final a:Ljava/nio/charset/Charset;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 11
@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 10

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected volatile a:Ldefpackage/pqm;
+.field public volatile a:Ldefpackage/pqm;
 
 .field public volatile b:Ldefpackage/poc;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 0
 
     .line 10

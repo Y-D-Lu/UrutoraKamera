@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/nkg;
+.field public final synthetic this$0:Ldefpackage/nkg;
 
-.field final synthetic val$a:Ldefpackage/pht;
+.field public final synthetic val$a:Ldefpackage/pht;
 
-.field final synthetic val$executor:Ljava/util/concurrent/Executor;
+.field public final synthetic val$executor:Ljava/util/concurrent/Executor;
 
-.field final synthetic val$pgkVar:Ldefpackage/pgk;
+.field public final synthetic val$pgkVar:Ldefpackage/pgk;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/nkg;Ldefpackage/pht;Ldefpackage/pgk;Ljava/util/concurrent/Executor;)V
+.method public constructor <init>(Ldefpackage/nkg;Ldefpackage/pht;Ldefpackage/pgk;Ljava/util/concurrent/Executor;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/nkg;
 

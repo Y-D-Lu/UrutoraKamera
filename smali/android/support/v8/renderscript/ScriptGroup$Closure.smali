@@ -37,7 +37,7 @@
 
 .field private mReturnValue:Landroid/support/v8/renderscript/Allocation;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
 
 
 # direct methods

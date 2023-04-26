@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Executor;
+.field public final a:Ljava/util/concurrent/Executor;
 
-.field final b:Ljava/util/Set;
+.field public final b:Ljava/util/Set;
 
 
 # direct methods

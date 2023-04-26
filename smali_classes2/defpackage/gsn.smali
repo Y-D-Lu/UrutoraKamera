@@ -30,7 +30,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 15
@@ -885,7 +885,7 @@
     throw v0
 .end method
 
-.method protected c(Ljava/lang/Object;)Ljava/lang/Object;
+.method public c(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1, "obj"    # Ljava/lang/Object;
 

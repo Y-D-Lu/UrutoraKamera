@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pht;
+.field public final a:Ldefpackage/pht;
 
 
 # direct methods

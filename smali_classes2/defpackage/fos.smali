@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ikc;
+.field public final a:Ldefpackage/ikc;
 
-.field final b:Ldefpackage/ojc;
+.field public final b:Ldefpackage/ojc;
 
-.field final c:Ldefpackage/iij;
+.field public final c:Ldefpackage/iij;
 
-.field final d:[B
+.field public final d:[B
 
-.field final e:Ldefpackage/hsc;
+.field public final e:Ldefpackage/hsc;
 
 
 # direct methods

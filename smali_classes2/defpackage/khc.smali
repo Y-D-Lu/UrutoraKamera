@@ -94,7 +94,7 @@
     return-object v0
 .end method
 
-.method protected final d()Ljava/lang/String;
+.method public final d()Ljava/lang/String;
     .locals 1
 
     .line 38

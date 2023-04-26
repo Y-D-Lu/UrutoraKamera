@@ -28,7 +28,7 @@
 # instance fields
 .field private mClosures:Ljava/util/List;
 
-.field mInputs:[Landroid/support/v8/renderscript/ScriptGroup$IO;
+.field public mInputs:[Landroid/support/v8/renderscript/ScriptGroup$IO;
 
 .field private mInputs2:Ljava/util/List;
 
@@ -36,7 +36,7 @@
 
 .field private mNodes:Ljava/util/ArrayList;
 
-.field mOutputs:[Landroid/support/v8/renderscript/ScriptGroup$IO;
+.field public mOutputs:[Landroid/support/v8/renderscript/ScriptGroup$IO;
 
 .field private mOutputs2:[Landroid/support/v8/renderscript/ScriptGroup$Future;
 
@@ -165,7 +165,7 @@
     return-void
 .end method
 
-.method static synthetic access$002(Landroid/support/v8/renderscript/ScriptGroup;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+.method public static synthetic access$002(Landroid/support/v8/renderscript/ScriptGroup;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
     .param p0, "x0"    # Landroid/support/v8/renderscript/ScriptGroup;
     .param p1, "x1"    # Ljava/util/ArrayList;
@@ -176,7 +176,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$102(Landroid/support/v8/renderscript/ScriptGroup;Z)Z
+.method public static synthetic access$102(Landroid/support/v8/renderscript/ScriptGroup;Z)Z
     .locals 0
     .param p0, "x0"    # Landroid/support/v8/renderscript/ScriptGroup;
     .param p1, "x1"    # Z

@@ -17,9 +17,9 @@
 
 .field public final c:Ljava/util/List;
 
-.field d:Z
+.field public d:Z
 
-.field e:Z
+.field public e:Z
 
 .field public final f:Ldefpackage/jrh;
 
@@ -39,7 +39,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 14
@@ -1433,7 +1433,7 @@
     throw v1
 .end method
 
-.method final e(F)V
+.method public final e(F)V
     .locals 1
     .param p1, "f"    # F
 

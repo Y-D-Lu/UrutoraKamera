@@ -21,7 +21,7 @@
 
 
 # virtual methods
-.method protected final a(Ljava/lang/Object;)I
+.method public final a(Ljava/lang/Object;)I
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -62,7 +62,7 @@
     return-object v0
 .end method
 
-.method protected final c(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final c(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 5
     .param p1, "obj"    # Ljava/lang/Object;
     .param p2, "obj2"    # Ljava/lang/Object;

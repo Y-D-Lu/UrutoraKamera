@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Iterable;
+.field public final a:Ljava/lang/Iterable;
 
-.field final b:Ldefpackage/oiu;
+.field public final b:Ldefpackage/oiu;
 
 
 # direct methods

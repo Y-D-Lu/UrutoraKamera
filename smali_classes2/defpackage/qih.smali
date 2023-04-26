@@ -4,23 +4,23 @@
 
 
 # static fields
-.field static final a:Ldefpackage/qig;
+.field public static final a:Ldefpackage/qig;
 
-.field static final b:Ldefpackage/qiw;
+.field public static final b:Ldefpackage/qiw;
 
-.field static final c:I
+.field public static final c:I
 
-.field static final f:Ldefpackage/qiu;
+.field public static final f:Ldefpackage/qiu;
 
 
 # instance fields
-.field final d:Ljava/util/concurrent/ThreadFactory;
+.field public final d:Ljava/util/concurrent/ThreadFactory;
 
-.field final e:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final e:Ljava/util/concurrent/atomic/AtomicReference;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 18

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nuj;
+.field public final a:Ldefpackage/nuj;
 
-.field final b:Ljava/util/List;
+.field public final b:Ljava/util/List;
 
-.field final c:I
+.field public final c:I
 
 
 # direct methods

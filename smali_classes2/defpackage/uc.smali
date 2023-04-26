@@ -8,7 +8,7 @@
 
 .field public final b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-.field c:Ldefpackage/cu;
+.field public c:Ldefpackage/cu;
 
 
 # direct methods

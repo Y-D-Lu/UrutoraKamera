@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/odml/image/ImageContainer;ILandroid/graphics/Rect;JII)V
+.method public constructor <init>(Lcom/google/android/odml/image/ImageContainer;ILandroid/graphics/Rect;JII)V
     .locals 3
     .param p1, "imageContainer"    # Lcom/google/android/odml/image/ImageContainer;
     .param p2, "i"    # I
@@ -137,7 +137,7 @@
     throw v0
 .end method
 
-.method getContainer()Lcom/google/android/odml/image/ImageContainer;
+.method public getContainer()Lcom/google/android/odml/image/ImageContainer;
     .locals 1
 
     .line 38
@@ -160,7 +160,7 @@
     return-object v0
 .end method
 
-.method getContainer(I)Lcom/google/android/odml/image/ImageContainer;
+.method public getContainer(I)Lcom/google/android/odml/image/ImageContainer;
     .locals 3
     .param p1, "i"    # I
 
@@ -223,7 +223,7 @@
     return-object v0
 .end method
 
-.method getContainer(Lcom/google/android/odml/image/ImageProperties;)Lcom/google/android/odml/image/ImageContainer;
+.method public getContainer(Lcom/google/android/odml/image/ImageProperties;)Lcom/google/android/odml/image/ImageContainer;
     .locals 1
     .param p1, "imageProperties"    # Lcom/google/android/odml/image/ImageProperties;
 

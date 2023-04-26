@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Throwable;
+.field public final a:Ljava/lang/Throwable;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final f(Ldefpackage/qbe;)V
+.method public final f(Ldefpackage/qbe;)V
     .locals 1
     .param p1, "qbeVar"    # Ldefpackage/qbe;
 

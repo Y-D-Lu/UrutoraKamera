@@ -21,7 +21,7 @@
 
 .field public g:Z
 
-.field final h:Ldefpackage/fqc;
+.field public final h:Ldefpackage/fqc;
 
 .field public i:Ldefpackage/fqe;
 

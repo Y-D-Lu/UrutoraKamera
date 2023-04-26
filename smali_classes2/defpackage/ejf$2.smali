@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -20,11 +20,11 @@
 # instance fields
 .field public final a:Ldefpackage/ejf;
 
-.field final synthetic this$0:Ldefpackage/ejf;
+.field public final synthetic this$0:Ldefpackage/ejf;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ejf;)V
+.method public constructor <init>(Ldefpackage/ejf;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/ejf;
 

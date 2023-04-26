@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hsp;
+.field public final a:Ldefpackage/hsp;
 
-.field final b:Ldefpackage/fuv;
+.field public final b:Ldefpackage/fuv;
 
-.field final c:Ldefpackage/hsc;
+.field public final c:Ldefpackage/hsc;
 
-.field final d:Ldefpackage/frf;
+.field public final d:Ldefpackage/frf;
 
 .field public final e:J
 

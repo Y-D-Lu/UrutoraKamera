@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field final g:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
 
-.field final h:Ljava/lang/Object;
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods

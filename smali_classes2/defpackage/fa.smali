@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field a:Lez;
+.field public a:Lez;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 11

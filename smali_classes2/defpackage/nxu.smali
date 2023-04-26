@@ -11,7 +11,7 @@
 
 .field public b:I
 
-.field final c:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+.field public final c:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
 .field private final d:Landroid/view/View;
 

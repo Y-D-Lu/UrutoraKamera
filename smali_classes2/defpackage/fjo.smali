@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/emr;
+.field public final a:Ldefpackage/emr;
 
-.field final b:Ldefpackage/fjs;
+.field public final b:Ldefpackage/fjs;
 
 
 # direct methods

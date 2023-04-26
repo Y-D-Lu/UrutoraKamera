@@ -27,7 +27,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 18
@@ -36,7 +36,7 @@
     return-object v0
 .end method
 
-.method protected final b()Ljava/util/concurrent/Future;
+.method public final b()Ljava/util/concurrent/Future;
     .locals 1
 
     .line 23

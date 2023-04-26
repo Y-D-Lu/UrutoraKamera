@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/abn;
+.field public final a:Ldefpackage/abn;
 
 
 # direct methods

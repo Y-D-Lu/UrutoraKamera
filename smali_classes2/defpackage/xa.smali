@@ -22,15 +22,15 @@
 
 
 # instance fields
-.field a:[Ljava/lang/Object;
+.field public a:[Ljava/lang/Object;
 
-.field b:I
+.field public b:I
 
 .field private i:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 16

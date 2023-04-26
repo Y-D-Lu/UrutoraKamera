@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/support/v7/widget/ActionMenuView;
+.field public final a:Landroid/support/v7/widget/ActionMenuView;
 
 
 # direct methods

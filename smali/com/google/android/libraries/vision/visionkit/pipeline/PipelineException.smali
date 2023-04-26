@@ -51,7 +51,7 @@
     throw v0
 .end method
 
-.method constructor <init>([B)V
+.method public constructor <init>([B)V
     .locals 3
     .param p1, "bArr"    # [B
 

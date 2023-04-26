@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/custom/ButtonPRO;
+.field public final synthetic this$0:Lcom/custom/ButtonPRO;
 
 
 # direct methods
-.method constructor <init>(Lcom/custom/ButtonPRO;)V
+.method public constructor <init>(Lcom/custom/ButtonPRO;)V
     .locals 0
     .param p1, "this$0"    # Lcom/custom/ButtonPRO;
 

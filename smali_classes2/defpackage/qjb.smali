@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/ScheduledExecutorService;
+.field public final a:Ljava/util/concurrent/ScheduledExecutorService;
 
-.field final b:Ldefpackage/qby;
+.field public final b:Ldefpackage/qby;
 
-.field volatile c:Z
+.field public volatile c:Z
 
 
 # direct methods

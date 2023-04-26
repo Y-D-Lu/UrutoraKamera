@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "AnonymousClass1"
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Landroid/support/wearable/watchface/decomposition/NumberComponent$Builder;
+.field public final synthetic this$1:Landroid/support/wearable/watchface/decomposition/NumberComponent$Builder;
 
 
 # direct methods
-.method constructor <init>(Landroid/support/wearable/watchface/decomposition/NumberComponent$Builder;)V
+.method public constructor <init>(Landroid/support/wearable/watchface/decomposition/NumberComponent$Builder;)V
     .locals 0
     .param p1, "this$1"    # Landroid/support/wearable/watchface/decomposition/NumberComponent$Builder;
 

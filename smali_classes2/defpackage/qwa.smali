@@ -10,7 +10,7 @@
 
 .field public c:Z
 
-.field final d:Ldefpackage/qwb;
+.field public final d:Ldefpackage/qwb;
 
 .field public e:I
 

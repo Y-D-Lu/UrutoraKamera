@@ -94,7 +94,7 @@
     return v1
 .end method
 
-.method protected X(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
+.method public X(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
     .locals 0
     .param p1, "coordinatorLayout"    # Landroidx/coordinatorlayout/widget/CoordinatorLayout;
     .param p2, "view"    # Landroid/view/View;

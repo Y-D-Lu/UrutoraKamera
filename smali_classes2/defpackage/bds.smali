@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/app/ActivityManager;
+.field public final a:Landroid/app/ActivityManager;
 
-.field b:F
+.field public b:F
 
-.field final c:Ldefpackage/egi;
+.field public final c:Ldefpackage/egi;
 
 
 # direct methods

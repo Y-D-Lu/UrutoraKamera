@@ -17,7 +17,7 @@
 # instance fields
 .field public showAsChecked:Z
 
-.field final synthetic this$0:Ldefpackage/djh;
+.field public final synthetic this$0:Ldefpackage/djh;
 
 
 # direct methods

@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field mAllocation:Landroid/support/v8/renderscript/Allocation;
+.field public mAllocation:Landroid/support/v8/renderscript/Allocation;
 
-.field mAllocationType:Landroid/support/v8/renderscript/Type;
+.field public mAllocationType:Landroid/support/v8/renderscript/Type;
 
-.field mFrom:Landroid/support/v8/renderscript/Script$KernelID;
+.field public mFrom:Landroid/support/v8/renderscript/Script$KernelID;
 
-.field mToF:Landroid/support/v8/renderscript/Script$FieldID;
+.field public mToF:Landroid/support/v8/renderscript/Script$FieldID;
 
-.field mToK:Landroid/support/v8/renderscript/Script$KernelID;
+.field public mToK:Landroid/support/v8/renderscript/Script$KernelID;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
 
 
 # direct methods

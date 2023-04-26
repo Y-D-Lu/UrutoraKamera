@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Callable;
+.field public final a:Ljava/util/concurrent/Callable;
 
-.field final b:Ldefpackage/qpn;
+.field public final b:Ldefpackage/qpn;
 
 
 # direct methods

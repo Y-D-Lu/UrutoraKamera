@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nzz;
+.field public final a:Ldefpackage/nzz;
 
-.field final b:Ldefpackage/nxo;
+.field public final b:Ldefpackage/nxo;
 
 
 # direct methods

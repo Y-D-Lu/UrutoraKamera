@@ -220,7 +220,7 @@
     throw v4
 .end method
 
-.method protected createInvokeID(I)Landroid/support/v8/renderscript/Script$InvokeID;
+.method public createInvokeID(I)Landroid/support/v8/renderscript/Script$InvokeID;
     .locals 12
     .param p1, "i"    # I
 
@@ -760,7 +760,7 @@
     return-void
 .end method
 
-.method protected forEach(I[Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/FieldPacker;)V
+.method public forEach(I[Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/FieldPacker;)V
     .locals 6
     .param p1, "i"    # I
     .param p2, "allocationArr"    # [Landroid/support/v8/renderscript/Allocation;
@@ -786,7 +786,7 @@
     return-void
 .end method
 
-.method protected forEach(I[Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/FieldPacker;Landroid/support/v8/renderscript/Script$LaunchOptions;)V
+.method public forEach(I[Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/FieldPacker;Landroid/support/v8/renderscript/Script$LaunchOptions;)V
     .locals 14
     .param p1, "i"    # I
     .param p2, "allocationArr"    # [Landroid/support/v8/renderscript/Allocation;
@@ -1107,7 +1107,7 @@
     return-wide v0
 .end method
 
-.method protected invoke(I)V
+.method public invoke(I)V
     .locals 4
     .param p1, "i"    # I
 
@@ -1128,7 +1128,7 @@
     return-void
 .end method
 
-.method protected invoke(ILandroid/support/v8/renderscript/FieldPacker;)V
+.method public invoke(ILandroid/support/v8/renderscript/FieldPacker;)V
     .locals 7
     .param p1, "i"    # I
     .param p2, "fieldPacker"    # Landroid/support/v8/renderscript/FieldPacker;
@@ -1188,7 +1188,7 @@
     return v0
 .end method
 
-.method protected reduce(I[Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Script$LaunchOptions;)V
+.method public reduce(I[Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Script$LaunchOptions;)V
     .locals 15
     .param p1, "i"    # I
     .param p2, "allocationArr"    # [Landroid/support/v8/renderscript/Allocation;

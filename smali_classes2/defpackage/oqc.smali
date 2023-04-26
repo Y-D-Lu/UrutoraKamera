@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field final b:Ljava/util/ListIterator;
+.field public final b:Ljava/util/ListIterator;
 
-.field final c:Ldefpackage/oqd;
+.field public final c:Ldefpackage/oqd;
 
 
 # direct methods

@@ -8,11 +8,11 @@
 
 .field public static b:Ldefpackage/kut;
 
-.field static c:Ljava/lang/Boolean;
+.field public static c:Ljava/lang/Boolean;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8

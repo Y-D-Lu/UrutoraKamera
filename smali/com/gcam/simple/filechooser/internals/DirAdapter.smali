@@ -8,15 +8,15 @@
 
 .field private static b:Landroid/util/TypedValue;
 
-.field static f0a:Ljava/text/SimpleDateFormat;
+.field public static f0a:Ljava/text/SimpleDateFormat;
 
 
 # instance fields
-.field f1b:Ljava/util/List;
+.field public f1b:Ljava/util/List;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 22

@@ -36,19 +36,19 @@
 
 .field public static final b:[I
 
-.field static final c:[B
+.field public static final c:[B
 
-.field static final d:[Ljava/lang/String;
+.field public static final d:[Ljava/lang/String;
 
-.field static final e:[I
+.field public static final e:[I
 
-.field static final f:[B
+.field public static final f:[B
 
-.field static final g:[[Ldefpackage/adc;
+.field public static final g:[[Ldefpackage/adc;
 
-.field static final h:Ljava/nio/charset/Charset;
+.field public static final h:Ljava/nio/charset/Charset;
 
-.field static final i:[B
+.field public static final i:[B
 
 .field private static final k:[B
 
@@ -108,7 +108,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 32
 
     .line 79

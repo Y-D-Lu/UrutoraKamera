@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/avu;
+.field public final a:Ldefpackage/avu;
 
-.field final b:Ldefpackage/aup;
+.field public final b:Ldefpackage/aup;
 
 .field private c:Z
 

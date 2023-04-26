@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/os/Bundle;
+.field public final a:Landroid/os/Bundle;
 
 
 # direct methods

@@ -8,23 +8,23 @@
 
 .field public final b:Ldefpackage/lyg;
 
-.field final c:Ldefpackage/lyb;
+.field public final c:Ldefpackage/lyb;
 
 .field public final d:Ldefpackage/lyb;
 
 .field public final e:Ldefpackage/lyb;
 
-.field final f:Ldefpackage/lyb;
+.field public final f:Ldefpackage/lyb;
 
 .field public final g:Ldefpackage/lyb;
 
-.field final h:Ldefpackage/lyb;
+.field public final h:Ldefpackage/lyb;
 
 .field public final i:Ldefpackage/lyb;
 
 .field public final j:Ldefpackage/lyb;
 
-.field final k:Ldefpackage/lrx;
+.field public final k:Ldefpackage/lrx;
 
 
 # direct methods

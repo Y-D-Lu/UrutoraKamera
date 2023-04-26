@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method protected abstract a(Landroid/content/Context;)Ldefpackage/kqw;
+.method public abstract a(Landroid/content/Context;)Ldefpackage/kqw;
 .end method
 
 .method public final c(Ljava/lang/String;[B[BLdefpackage/kre;)V

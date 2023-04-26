@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:J
 
-.field final b:Ldefpackage/lxq;
+.field public final b:Ldefpackage/lxq;
 
 .field private volatile c:Z
 

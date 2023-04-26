@@ -47,7 +47,7 @@
     return-void
 .end method
 
-.method static createAnimatedRevealRequest(FLjava/lang/String;)Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
+.method public static createAnimatedRevealRequest(FLjava/lang/String;)Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
     .locals 1
     .param p0, "f"    # F
     .param p1, "str"    # Ljava/lang/String;
@@ -60,7 +60,7 @@
     return-object v0
 .end method
 
-.method static createNonAnimatedRevealRequest(FLjava/lang/String;)Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
+.method public static createNonAnimatedRevealRequest(FLjava/lang/String;)Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
     .locals 2
     .param p0, "f"    # F
     .param p1, "str"    # Ljava/lang/String;

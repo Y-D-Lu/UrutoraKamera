@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/chv;
+.field public final a:Ldefpackage/chv;
 
 .field private final b:I
 

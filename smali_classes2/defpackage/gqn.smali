@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method protected final c(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final c(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
 

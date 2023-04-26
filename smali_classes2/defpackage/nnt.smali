@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nnu;
+.field public final a:Ldefpackage/nnu;
 
 
 # direct methods

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pih;
+.field public final a:Ldefpackage/pih;
 
-.field final b:Ldefpackage/gpd;
+.field public final b:Ldefpackage/gpd;
 
 .field private final c:Ljava/util/concurrent/atomic/AtomicBoolean;
 

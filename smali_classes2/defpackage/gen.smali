@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static final a:[F
+.field public static final a:[F
 
-.field static final b:[F
+.field public static final b:[F
 
 .field public static final c:Ldefpackage/gbf;
 
@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 20
 
     .line 14

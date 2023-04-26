@@ -4,29 +4,29 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:Ldefpackage/akn;
+.field public b:Ldefpackage/akn;
 
-.field c:Landroid/content/res/ColorStateList;
+.field public c:Landroid/content/res/ColorStateList;
 
-.field d:Landroid/graphics/PorterDuff$Mode;
+.field public d:Landroid/graphics/PorterDuff$Mode;
 
-.field e:Z
+.field public e:Z
 
-.field f:Landroid/graphics/Bitmap;
+.field public f:Landroid/graphics/Bitmap;
 
-.field g:Landroid/content/res/ColorStateList;
+.field public g:Landroid/content/res/ColorStateList;
 
-.field h:Landroid/graphics/PorterDuff$Mode;
+.field public h:Landroid/graphics/PorterDuff$Mode;
 
-.field i:I
+.field public i:I
 
-.field j:Z
+.field public j:Z
 
-.field k:Z
+.field public k:Z
 
-.field l:Landroid/graphics/Paint;
+.field public l:Landroid/graphics/Paint;
 
 
 # direct methods

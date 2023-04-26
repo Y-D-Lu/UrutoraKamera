@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method protected final A()Z
+.method public final A()Z
     .locals 1
 
     .line 18
@@ -103,7 +103,7 @@
     return-object v0
 .end method
 
-.method protected final d()Ljava/lang/String;
+.method public final d()Ljava/lang/String;
     .locals 1
 
     .line 44
@@ -121,7 +121,7 @@
     return-object v0
 .end method
 
-.method protected final t()Landroid/os/Bundle;
+.method public final t()Landroid/os/Bundle;
     .locals 1
 
     .line 54

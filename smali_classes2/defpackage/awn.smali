@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/awo;
+.field public final a:Ldefpackage/awo;
 
 
 # direct methods

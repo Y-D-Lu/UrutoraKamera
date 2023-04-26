@@ -27,7 +27,7 @@
     return-object v0
 .end method
 
-.method protected final b(Landroid/net/Uri;Landroid/content/ContentResolver;)Ljava/lang/Object;
+.method public final b(Landroid/net/Uri;Landroid/content/ContentResolver;)Ljava/lang/Object;
     .locals 5
     .param p1, "uri"    # Landroid/net/Uri;
     .param p2, "contentResolver"    # Landroid/content/ContentResolver;
@@ -139,7 +139,7 @@
     return-object v3
 .end method
 
-.method protected final c(Ljava/lang/Object;)V
+.method public final c(Ljava/lang/Object;)V
     .locals 1
     .param p1, "obj"    # Ljava/lang/Object;
 

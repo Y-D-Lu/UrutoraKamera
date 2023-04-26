@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;
 
-.field final synthetic val$button:Landroid/widget/Button;
+.field public final synthetic val$button:Landroid/widget/Button;
 
-.field final synthetic val$button2:Landroid/widget/Button;
+.field public final synthetic val$button2:Landroid/widget/Button;
 
-.field final synthetic val$textView:Landroid/widget/TextView;
+.field public final synthetic val$textView:Landroid/widget/TextView;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;Landroid/widget/TextView;Landroid/widget/Button;Landroid/widget/Button;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;Landroid/widget/TextView;Landroid/widget/Button;Landroid/widget/Button;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;
 

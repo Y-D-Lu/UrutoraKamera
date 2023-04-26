@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/ebi;
+.field public final synthetic this$0:Ldefpackage/ebi;
 
-.field final synthetic val$gyroSampleVector:Lcom/google/googlex/gcam/GyroSampleVector;
+.field public final synthetic val$gyroSampleVector:Lcom/google/googlex/gcam/GyroSampleVector;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ebi;Lcom/google/googlex/gcam/GyroSampleVector;)V
+.method public constructor <init>(Ldefpackage/ebi;Lcom/google/googlex/gcam/GyroSampleVector;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/ebi;
 

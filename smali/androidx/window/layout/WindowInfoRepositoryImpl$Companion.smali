@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
+.field public final synthetic this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
 
 
 # direct methods

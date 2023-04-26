@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ljava/util/concurrent/ScheduledFuture;
+.field public a:Ljava/util/concurrent/ScheduledFuture;
 
 .field private final b:Ldefpackage/qkg;
 

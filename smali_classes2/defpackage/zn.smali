@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field a:F
+.field public a:F
 
-.field b:F
+.field public b:F
 
-.field c:F
+.field public c:F
 
-.field d:F
+.field public d:F
 
-.field e:I
+.field public e:I
 
-.field f:Ldefpackage/zu;
+.field public f:Ldefpackage/zu;
 
 
 # direct methods

@@ -626,7 +626,7 @@
     return-void
 .end method
 
-.method protected E(ZLjava/lang/Object;)V
+.method public E(ZLjava/lang/Object;)V
     .locals 0
     .param p1, "z"    # Z
     .param p2, "obj"    # Ljava/lang/Object;
@@ -1390,7 +1390,7 @@
     return-void
 .end method
 
-.method protected c()V
+.method public c()V
     .locals 0
 
     .line 374
@@ -1540,7 +1540,7 @@
     return-object v0
 .end method
 
-.method protected f(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
+.method public f(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 1
     .param p1, "typedArray"    # Landroid/content/res/TypedArray;
     .param p2, "i"    # I
@@ -1605,7 +1605,7 @@
     return-void
 .end method
 
-.method protected h(Ljava/lang/Object;)V
+.method public h(Ljava/lang/Object;)V
     .locals 0
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -1778,7 +1778,7 @@
     return-object v0
 .end method
 
-.method protected final t(Ljava/lang/String;)Landroidx/preference/Preference;
+.method public final t(Ljava/lang/String;)Landroidx/preference/Preference;
     .locals 2
     .param p1, "str"    # Ljava/lang/String;
 

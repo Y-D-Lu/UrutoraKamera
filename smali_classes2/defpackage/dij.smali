@@ -7,11 +7,11 @@
 
 
 # static fields
-.field static final a:Ljava/time/Duration;
+.field public static final a:Ljava/time/Duration;
 
-.field static final b:Ljava/time/Duration;
+.field public static final b:Ljava/time/Duration;
 
-.field static final c:Ljava/time/Duration;
+.field public static final c:Ljava/time/Duration;
 
 
 # instance fields
@@ -35,7 +35,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 23

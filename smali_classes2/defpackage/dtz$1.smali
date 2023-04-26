@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -22,13 +22,13 @@
 
 .field private final b:I
 
-.field final synthetic this$0:Ldefpackage/dtz;
+.field public final synthetic this$0:Ldefpackage/dtz;
 
-.field final synthetic val$ikmVar:Ldefpackage/ikm;
+.field public final synthetic val$ikmVar:Ldefpackage/ikm;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/dtz;Ldefpackage/ikm;)V
+.method public constructor <init>(Ldefpackage/dtz;Ldefpackage/ikm;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/dtz;
 

@@ -66,7 +66,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 42
@@ -2323,7 +2323,7 @@
     return-void
 .end method
 
-.method protected final g(Landroid/graphics/Rect;)I
+.method public final g(Landroid/graphics/Rect;)I
     .locals 10
     .param p1, "rect"    # Landroid/graphics/Rect;
 
@@ -2505,7 +2505,7 @@
     return v1
 .end method
 
-.method protected final getBottomFadingEdgeStrength()F
+.method public final getBottomFadingEdgeStrength()F
     .locals 5
 
     .line 561
@@ -2599,7 +2599,7 @@
     return v0
 .end method
 
-.method protected final getTopFadingEdgeStrength()F
+.method public final getTopFadingEdgeStrength()F
     .locals 3
 
     .line 580
@@ -3406,7 +3406,7 @@
     .end sparse-switch
 .end method
 
-.method protected final measureChild(Landroid/view/View;II)V
+.method public final measureChild(Landroid/view/View;II)V
     .locals 2
     .param p1, "view"    # Landroid/view/View;
     .param p2, "i"    # I
@@ -3445,7 +3445,7 @@
     return-void
 .end method
 
-.method protected final measureChildWithMargins(Landroid/view/View;IIII)V
+.method public final measureChildWithMargins(Landroid/view/View;IIII)V
     .locals 4
     .param p1, "view"    # Landroid/view/View;
     .param p2, "i"    # I
@@ -4220,7 +4220,7 @@
     .end packed-switch
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 7
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -4391,7 +4391,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 6
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -4619,7 +4619,7 @@
     return-void
 .end method
 
-.method protected final onOverScrolled(IIZZ)V
+.method public final onOverScrolled(IIZZ)V
     .locals 0
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -4633,7 +4633,7 @@
     return-void
 .end method
 
-.method protected final onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
+.method public final onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 2
     .param p1, "i"    # I
     .param p2, "rect"    # Landroid/graphics/Rect;
@@ -4704,7 +4704,7 @@
     return v1
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Parcelable;)V
+.method public final onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
@@ -4743,7 +4743,7 @@
     return-void
 .end method
 
-.method protected final onSaveInstanceState()Landroid/os/Parcelable;
+.method public final onSaveInstanceState()Landroid/os/Parcelable;
     .locals 2
 
     .line 986
@@ -4767,7 +4767,7 @@
     return-object v0
 .end method
 
-.method protected final onSizeChanged(IIII)V
+.method public final onSizeChanged(IIII)V
     .locals 2
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -4916,7 +4916,7 @@
     return-void
 .end method
 
-.method final r(IIII)Z
+.method public final r(IIII)Z
     .locals 14
     .param p1, "i"    # I
     .param p2, "i2"    # I

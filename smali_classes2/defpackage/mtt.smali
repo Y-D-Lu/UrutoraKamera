@@ -46,7 +46,7 @@
     return-object v0
 .end method
 
-.method protected abstract b(Ljava/lang/Object;)V
+.method public abstract b(Ljava/lang/Object;)V
 .end method
 
 .method public final c()Ljava/lang/Object;

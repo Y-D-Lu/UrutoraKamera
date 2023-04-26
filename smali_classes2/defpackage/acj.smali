@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hle;
+.field public final a:Ldefpackage/hle;
 
 
 # direct methods

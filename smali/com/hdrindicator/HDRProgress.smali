@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static handler:Landroid/os/Handler;
+.field public static handler:Landroid/os/Handler;
 
 .field private static instance:Lcom/hdrindicator/HDRProgress;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 11
@@ -72,7 +72,7 @@
     return-void
 .end method
 
-.method static synthetic access$000()Lcom/hdrindicator/HDRProgress;
+.method public static synthetic access$000()Lcom/hdrindicator/HDRProgress;
     .locals 1
 
     .line 10

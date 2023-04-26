@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field final h:I
+.field public final h:I
 
 .field public final i:Ljava/util/ArrayList;
 
@@ -48,7 +48,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 55

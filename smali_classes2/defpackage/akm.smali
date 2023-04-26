@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected m:[Ldefpackage/em;
+.field public m:[Ldefpackage/em;
 
-.field n:Ljava/lang/String;
+.field public n:Ljava/lang/String;
 
-.field o:I
+.field public o:I
 
-.field p:I
+.field public p:I
 
 
 # direct methods

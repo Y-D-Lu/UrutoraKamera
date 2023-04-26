@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:J
+.field public final a:J
 
 .field private b:J
 

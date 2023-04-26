@@ -10,13 +10,13 @@
 # instance fields
 .field public final b:Ldefpackage/xf;
 
-.field final c:Ljava/util/ArrayList;
+.field public final c:Ljava/util/ArrayList;
 
 .field public final d:Ldefpackage/acd;
 
 .field public final e:Ljava/lang/Runnable;
 
-.field f:J
+.field public f:J
 
 .field public g:Z
 
@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10

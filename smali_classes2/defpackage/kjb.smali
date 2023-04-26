@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/kji;
+.field public final a:Ldefpackage/kji;
 
 
 # direct methods

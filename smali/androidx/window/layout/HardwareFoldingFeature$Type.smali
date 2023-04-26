@@ -31,7 +31,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 39
@@ -78,7 +78,7 @@
     return-void
 .end method
 
-.method static synthetic access$000()Landroidx/window/layout/HardwareFoldingFeature$Type;
+.method public static synthetic access$000()Landroidx/window/layout/HardwareFoldingFeature$Type;
     .locals 1
 
     .line 38
@@ -87,7 +87,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$100()Landroidx/window/layout/HardwareFoldingFeature$Type;
+.method public static synthetic access$100()Landroidx/window/layout/HardwareFoldingFeature$Type;
     .locals 1
 
     .line 38

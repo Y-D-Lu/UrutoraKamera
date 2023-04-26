@@ -1544,7 +1544,7 @@
     return v0
 .end method
 
-.method protected c()V
+.method public c()V
     .locals 0
 
     .line 339
@@ -2999,7 +2999,7 @@
     return-object v1
 .end method
 
-.method protected m()V
+.method public m()V
     .locals 0
 
     .line 617

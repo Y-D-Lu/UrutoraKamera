@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/azp;
+.field public final a:Ldefpackage/azp;
 
-.field final b:Z
+.field public final b:Z
 
-.field c:Ldefpackage/bcl;
+.field public c:Ldefpackage/bcl;
 
 
 # direct methods

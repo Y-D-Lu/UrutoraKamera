@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kef;
+.field public final a:Ldefpackage/kef;
 
 
 # direct methods

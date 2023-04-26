@@ -8,21 +8,21 @@
 
 .field public volatile b:Z
 
-.field volatile c:Z
+.field public volatile c:Z
 
-.field volatile d:Z
+.field public volatile d:Z
 
-.field volatile e:Z
+.field public volatile e:Z
 
 .field public volatile f:Z
 
-.field volatile g:Z
+.field public volatile g:Z
 
-.field volatile h:Z
+.field public volatile h:Z
 
-.field volatile i:Z
+.field public volatile i:Z
 
-.field volatile j:Z
+.field public volatile j:Z
 
 .field public volatile k:Z
 

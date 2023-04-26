@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/muc;
+.field public final a:Ldefpackage/muc;
 
 .field private b:I
 

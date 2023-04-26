@@ -12,17 +12,17 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qym;
+.field public final a:Ldefpackage/qym;
 
-.field final b:Ldefpackage/qjo;
+.field public final b:Ldefpackage/qjo;
 
-.field final c:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final c:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field final d:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final d:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final e:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field volatile f:Z
+.field public volatile f:Z
 
 
 # direct methods

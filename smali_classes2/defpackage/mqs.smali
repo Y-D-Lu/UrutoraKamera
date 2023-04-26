@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final e:Ldefpackage/mqq;
+.field public final e:Ldefpackage/mqq;
 
-.field final f:Ldefpackage/mtu;
+.field public final f:Ldefpackage/mtu;
 
 
 # direct methods

@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Landroid/widget/TextView;
+.field public final a:Landroid/widget/TextView;
 
-.field final b:Landroid/widget/Button;
+.field public final b:Landroid/widget/Button;
 
-.field final c:Landroid/widget/Button;
+.field public final c:Landroid/widget/Button;
 
-.field final d:Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;
+.field public final d:Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;
 
 
 # direct methods

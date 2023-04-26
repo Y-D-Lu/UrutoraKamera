@@ -15,13 +15,13 @@
 
 
 # static fields
-.field static final $$INSTANCE:Landroidx/window/layout/WindowInfoRepository$Companion;
+.field public static final $$INSTANCE:Landroidx/window/layout/WindowInfoRepository$Companion;
 
 .field private static decorator:Landroidx/window/layout/WindowInfoRepositoryDecorator;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 34

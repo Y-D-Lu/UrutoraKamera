@@ -12,21 +12,21 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbq;
+.field public final a:Ldefpackage/qbq;
 
-.field final b:Ldefpackage/qby;
+.field public final b:Ldefpackage/qby;
 
-.field final c:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final c:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field final d:Ldefpackage/qjo;
+.field public final d:Ldefpackage/qjo;
 
-.field final e:Ldefpackage/qco;
+.field public final e:Ldefpackage/qco;
 
-.field final f:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final f:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field g:Ldefpackage/qbz;
+.field public g:Ldefpackage/qbz;
 
-.field volatile h:Z
+.field public volatile h:Z
 
 
 # direct methods
@@ -198,7 +198,7 @@
     return-void
 .end method
 
-.method final f()V
+.method public final f()V
     .locals 1
 
     .line 54

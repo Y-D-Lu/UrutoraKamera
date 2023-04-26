@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/ius;
+.field public final synthetic this$0:Ldefpackage/ius;
 
-.field final synthetic val$nestedScrollView:Landroid/support/v4/widget/NestedScrollView;
+.field public final synthetic val$nestedScrollView:Landroid/support/v4/widget/NestedScrollView;
 
-.field final synthetic val$nyaVar:Ldefpackage/nya;
+.field public final synthetic val$nyaVar:Ldefpackage/nya;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ius;Landroid/support/v4/widget/NestedScrollView;Ldefpackage/nya;)V
+.method public constructor <init>(Ldefpackage/ius;Landroid/support/v4/widget/NestedScrollView;Ldefpackage/nya;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/ius;
 

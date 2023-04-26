@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$mpiVar:Ldefpackage/mpi;
+.field public final synthetic val$mpiVar:Ldefpackage/mpi;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/mpi;)V
+.method public constructor <init>(Ldefpackage/mpi;)V
     .locals 0
 
     .line 12

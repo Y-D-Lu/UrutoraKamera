@@ -15,25 +15,25 @@
 
 
 # instance fields
-.field mArraySizes:[I
+.field public mArraySizes:[I
 
-.field mElementNames:[Ljava/lang/String;
+.field public mElementNames:[Ljava/lang/String;
 
-.field mElements:[Landroid/support/v8/renderscript/Element;
+.field public mElements:[Landroid/support/v8/renderscript/Element;
 
-.field mKind:Landroid/support/v8/renderscript/Element$DataKind;
+.field public mKind:Landroid/support/v8/renderscript/Element$DataKind;
 
-.field mNormalized:Z
+.field public mNormalized:Z
 
-.field mOffsetInBytes:[I
+.field public mOffsetInBytes:[I
 
-.field mSize:I
+.field public mSize:I
 
-.field mType:Landroid/support/v8/renderscript/Element$DataType;
+.field public mType:Landroid/support/v8/renderscript/Element$DataType;
 
-.field mVectorSize:I
+.field public mVectorSize:I
 
-.field mVisibleElementMap:[I
+.field public mVisibleElementMap:[I
 
 
 # direct methods
@@ -1934,7 +1934,7 @@
     .end packed-switch
 .end method
 
-.method static createUser(Landroid/support/v8/renderscript/RenderScript;Landroid/support/v8/renderscript/Element$DataType;)Landroid/support/v8/renderscript/Element;
+.method public static createUser(Landroid/support/v8/renderscript/RenderScript;Landroid/support/v8/renderscript/Element$DataType;)Landroid/support/v8/renderscript/Element;
     .locals 10
     .param p0, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;
     .param p1, "dataType"    # Landroid/support/v8/renderscript/Element$DataType;

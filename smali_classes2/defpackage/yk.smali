@@ -6,9 +6,9 @@
 # instance fields
 .field public A:F
 
-.field B:I
+.field public B:I
 
-.field C:F
+.field public C:F
 
 .field public final D:[I
 
@@ -32,19 +32,19 @@
 
 .field public final N:Ldefpackage/yj;
 
-.field final O:Ldefpackage/yj;
+.field public final O:Ldefpackage/yj;
 
-.field final P:Ldefpackage/yj;
+.field public final P:Ldefpackage/yj;
 
 .field public final Q:Ldefpackage/yj;
 
 .field public final R:[Ldefpackage/yj;
 
-.field protected final S:Ljava/util/ArrayList;
+.field public final S:Ljava/util/ArrayList;
 
 .field public T:Ldefpackage/yk;
 
-.field U:I
+.field public U:I
 
 .field public V:I
 

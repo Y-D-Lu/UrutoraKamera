@@ -32,7 +32,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 16
@@ -88,7 +88,7 @@
     return v0
 .end method
 
-.method protected final b()Ljava/util/Collection;
+.method public final b()Ljava/util/Collection;
     .locals 1
 
     .line 33
@@ -97,7 +97,7 @@
     return-object v0
 .end method
 
-.method protected final c()Ljava/util/List;
+.method public final c()Ljava/util/List;
     .locals 1
 
     .line 38

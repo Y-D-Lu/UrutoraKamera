@@ -18,19 +18,19 @@
 
 .field public e:Ljava/util/ArrayList;
 
-.field f:Ljava/util/ArrayList;
+.field public f:Ljava/util/ArrayList;
 
-.field g:Ljava/util/ArrayList;
+.field public g:Ljava/util/ArrayList;
 
-.field h:Ljava/util/ArrayList;
+.field public h:Ljava/util/ArrayList;
 
-.field i:Ljava/util/ArrayList;
+.field public i:Ljava/util/ArrayList;
 
-.field j:Ljava/util/ArrayList;
+.field public j:Ljava/util/ArrayList;
 
-.field k:Ljava/util/ArrayList;
+.field public k:Ljava/util/ArrayList;
 
-.field l:Ljava/util/ArrayList;
+.field public l:Ljava/util/ArrayList;
 
 .field private final m:Ljava/util/ArrayList;
 

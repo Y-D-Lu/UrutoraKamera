@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$context:Landroid/content/Context;
+.field public final synthetic val$context:Landroid/content/Context;
 
-.field final synthetic val$executor:Ljava/util/concurrent/Executor;
+.field public final synthetic val$executor:Ljava/util/concurrent/Executor;
 
-.field final synthetic val$kqkVar:Ldefpackage/kqk;
+.field public final synthetic val$kqkVar:Ldefpackage/kqk;
 
-.field final synthetic val$kvmVar:Ldefpackage/kvm;
+.field public final synthetic val$kvmVar:Ldefpackage/kvm;
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Ldefpackage/kvm;Ljava/util/concurrent/Executor;Ldefpackage/kqk;)V
+.method public constructor <init>(Landroid/content/Context;Ldefpackage/kvm;Ljava/util/concurrent/Executor;Ldefpackage/kqk;)V
     .locals 0
 
     .line 23

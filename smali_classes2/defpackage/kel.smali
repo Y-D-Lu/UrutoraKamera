@@ -1015,7 +1015,7 @@
     return v0
 .end method
 
-.method protected final a()V
+.method public final a()V
     .locals 1
 
     .line 289

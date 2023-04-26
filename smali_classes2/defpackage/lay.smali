@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lba;
+.field public final a:Ldefpackage/lba;
 
 .field private final b:Ljava/util/concurrent/Future;
 

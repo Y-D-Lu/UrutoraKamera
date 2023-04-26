@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Executor;
+.field public final a:Ljava/util/concurrent/Executor;
 
-.field final b:Ldefpackage/qib;
+.field public final b:Ldefpackage/qib;
 
-.field volatile c:Z
+.field public volatile c:Z
 
-.field final d:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final d:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field final e:Ldefpackage/qby;
+.field public final e:Ldefpackage/qby;
 
 
 # direct methods

@@ -4,33 +4,33 @@
 
 
 # instance fields
-.field a:[I
+.field public a:[I
 
-.field b:[I
+.field public b:[I
 
-.field c:I
+.field public c:I
 
-.field d:[I
+.field public d:[I
 
-.field e:[F
+.field public e:[F
 
-.field f:I
+.field public f:I
 
-.field g:[I
+.field public g:[I
 
-.field h:[Ljava/lang/String;
+.field public h:[Ljava/lang/String;
 
-.field i:I
+.field public i:I
 
-.field j:[I
+.field public j:[I
 
-.field k:[Z
+.field public k:[Z
 
-.field l:I
+.field public l:I
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 3
 
     .line 7

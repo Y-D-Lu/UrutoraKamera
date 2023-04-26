@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/jvb;
+.field public final b:Ldefpackage/jvb;
 
 
 # direct methods

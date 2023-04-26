@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gsc;
+.field public final a:Ldefpackage/gsc;
 
 .field private final b:Ljava/util/concurrent/atomic/AtomicBoolean;
 

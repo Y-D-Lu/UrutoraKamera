@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/gms/analytics/AnalyticsJobService;
+.field public final synthetic this$0:Lcom/google/android/gms/analytics/AnalyticsJobService;
 
-.field final synthetic val$c:Ldefpackage/kfl;
+.field public final synthetic val$c:Ldefpackage/kfl;
 
-.field final synthetic val$d:Ldefpackage/kfa;
+.field public final synthetic val$d:Ldefpackage/kfa;
 
-.field final synthetic val$jobParameters:Landroid/app/job/JobParameters;
+.field public final synthetic val$jobParameters:Landroid/app/job/JobParameters;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/analytics/AnalyticsJobService;Ldefpackage/kfl;Ldefpackage/kfa;Landroid/app/job/JobParameters;)V
+.method public constructor <init>(Lcom/google/android/gms/analytics/AnalyticsJobService;Ldefpackage/kfl;Ldefpackage/kfa;Landroid/app/job/JobParameters;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/gms/analytics/AnalyticsJobService;
 

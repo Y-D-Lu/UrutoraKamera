@@ -6,13 +6,13 @@
 # static fields
 .field public static final a:Ljava/util/logging/Logger;
 
-.field static final b:Ljava/util/regex/Pattern;
+.field public static final b:Ljava/util/regex/Pattern;
 
-.field static final c:Ljava/util/regex/Pattern;
+.field public static final c:Ljava/util/regex/Pattern;
 
-.field static final d:Ljava/util/regex/Pattern;
+.field public static final d:Ljava/util/regex/Pattern;
 
-.field static final e:Ljava/lang/String;
+.field public static final e:Ljava/lang/String;
 
 .field private static final f:Ljava/util/Map;
 
@@ -58,7 +58,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 17
 
     .line 21
@@ -1287,7 +1287,7 @@
     return-void
 .end method
 
-.method static final C(Ldefpackage/nhf;I)Ldefpackage/nhh;
+.method public static final C(Ldefpackage/nhf;I)Ldefpackage/nhh;
     .locals 1
     .param p0, "nhfVar"    # Ldefpackage/nhf;
     .param p1, "i2"    # I
@@ -1378,7 +1378,7 @@
     .end packed-switch
 .end method
 
-.method static D(Ljava/lang/StringBuilder;)V
+.method public static D(Ljava/lang/StringBuilder;)V
     .locals 6
     .param p0, "sb"    # Ljava/lang/StringBuilder;
 
@@ -2316,7 +2316,7 @@
     return-object v1
 .end method
 
-.method static declared-synchronized p(Ldefpackage/nhd;)V
+.method public static declared-synchronized p(Ldefpackage/nhd;)V
     .locals 2
     .param p0, "nhdVar"    # Ldefpackage/nhd;
 
@@ -2406,7 +2406,7 @@
     return v0
 .end method
 
-.method static w(Ljava/lang/CharSequence;)Z
+.method public static w(Ljava/lang/CharSequence;)Z
     .locals 2
     .param p0, "charSequence"    # Ljava/lang/CharSequence;
 
@@ -2872,7 +2872,7 @@
     throw v1
 .end method
 
-.method final b(Ljava/lang/CharSequence;Ldefpackage/nhf;Ljava/lang/StringBuilder;ZLdefpackage/nhi;)I
+.method public final b(Ljava/lang/CharSequence;Ldefpackage/nhf;Ljava/lang/StringBuilder;ZLdefpackage/nhi;)I
     .locals 16
     .param p1, "charSequence"    # Ljava/lang/CharSequence;
     .param p2, "nhfVar"    # Ldefpackage/nhf;
@@ -4044,7 +4044,7 @@
     return v0
 .end method
 
-.method final t(Ljava/lang/String;Ldefpackage/nhh;)Z
+.method public final t(Ljava/lang/String;Ldefpackage/nhh;)Z
     .locals 3
     .param p1, "str"    # Ljava/lang/String;
     .param p2, "nhhVar"    # Ldefpackage/nhh;

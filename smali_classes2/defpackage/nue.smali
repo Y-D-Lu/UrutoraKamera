@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/poc;
+.field public final a:Ldefpackage/poc;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ldefpackage/ohh;
+.field public final c:Ldefpackage/ohh;
 
 
 # direct methods

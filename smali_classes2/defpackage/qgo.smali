@@ -12,15 +12,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qgq;
+.field public final a:Ldefpackage/qgq;
 
-.field b:Ldefpackage/qbz;
+.field public b:Ldefpackage/qbz;
 
-.field c:J
+.field public c:J
 
-.field d:Z
+.field public d:Z
 
-.field e:Z
+.field public e:Z
 
 
 # direct methods

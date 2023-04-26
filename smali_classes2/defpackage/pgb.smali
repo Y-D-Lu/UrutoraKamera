@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field a:Ldefpackage/pht;
+.field public a:Ldefpackage/pht;
 
-.field b:Ljava/lang/Object;
+.field public b:Ljava/lang/Object;
 
 
 # direct methods
@@ -91,7 +91,7 @@
 
 
 # virtual methods
-.method protected final c()V
+.method public final c()V
     .locals 1
 
     .line 36

@@ -8,21 +8,21 @@
 
 
 # static fields
-.field static final a:Ljava/util/TreeMap;
+.field public static final a:Ljava/util/TreeMap;
 
 
 # instance fields
-.field final b:[J
+.field public final b:[J
 
-.field final c:[D
+.field public final c:[D
 
-.field final d:[Ljava/lang/String;
+.field public final d:[Ljava/lang/String;
 
-.field final e:[[B
+.field public final e:[[B
 
-.field final f:I
+.field public final f:I
 
-.field g:I
+.field public g:I
 
 .field private volatile h:Ljava/lang/String;
 
@@ -30,7 +30,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10
@@ -356,7 +356,7 @@
     .end packed-switch
 .end method
 
-.method final i(Ljava/lang/String;I)V
+.method public final i(Ljava/lang/String;I)V
     .locals 0
     .param p1, "str"    # Ljava/lang/String;
     .param p2, "i"    # I

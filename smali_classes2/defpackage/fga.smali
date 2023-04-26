@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/libraries/lens/lenslite/api/LinkChipResult;
+.field public final a:Lcom/google/android/libraries/lens/lenslite/api/LinkChipResult;
 
-.field final b:Ldefpackage/ojc;
+.field public final b:Ldefpackage/ojc;
 
-.field final c:Ldefpackage/mhe;
+.field public final c:Ldefpackage/mhe;
 
-.field final d:Ldefpackage/fgb;
+.field public final d:Ldefpackage/fgb;
 
 
 # direct methods

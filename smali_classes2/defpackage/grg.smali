@@ -12,7 +12,7 @@
 
 .field public b:Z
 
-.field final c:Ldefpackage/gri;
+.field public final c:Ldefpackage/gri;
 
 .field private final d:Ldefpackage/ojz;
 

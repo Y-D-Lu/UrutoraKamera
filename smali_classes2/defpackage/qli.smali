@@ -7,7 +7,7 @@
 
 
 # static fields
-.field static final a:Ldefpackage/qli;
+.field public static final a:Ldefpackage/qli;
 
 .field public static final b:Ldefpackage/qli;
 
@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 6

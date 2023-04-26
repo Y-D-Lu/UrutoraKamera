@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qpn;
+.field public final a:Ldefpackage/qpn;
 
 
 # direct methods

@@ -100,7 +100,7 @@
     throw v1
 .end method
 
-.method protected final done()V
+.method public final done()V
     .locals 5
 
     .line 40

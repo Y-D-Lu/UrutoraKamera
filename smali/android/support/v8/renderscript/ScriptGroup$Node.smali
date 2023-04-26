@@ -15,23 +15,23 @@
 
 
 # instance fields
-.field dagNumber:I
+.field public dagNumber:I
 
-.field mInputs:Ljava/util/ArrayList;
+.field public mInputs:Ljava/util/ArrayList;
 
-.field mKernels:Ljava/util/ArrayList;
+.field public mKernels:Ljava/util/ArrayList;
 
-.field mNext:Landroid/support/v8/renderscript/ScriptGroup$Node;
+.field public mNext:Landroid/support/v8/renderscript/ScriptGroup$Node;
 
-.field mOrder:I
+.field public mOrder:I
 
-.field mOutputs:Ljava/util/ArrayList;
+.field public mOutputs:Ljava/util/ArrayList;
 
-.field mScript:Landroid/support/v8/renderscript/Script;
+.field public mScript:Landroid/support/v8/renderscript/Script;
 
-.field mSeen:Z
+.field public mSeen:Z
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
 
 
 # direct methods

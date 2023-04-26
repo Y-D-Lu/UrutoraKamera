@@ -15,7 +15,7 @@
 
 .field public d:Ldefpackage/lic;
 
-.field final e:Ldefpackage/gkp;
+.field public final e:Ldefpackage/gkp;
 
 .field private final f:Lglg;
 

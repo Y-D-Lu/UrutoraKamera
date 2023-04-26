@@ -11,9 +11,9 @@
 
 .field public final b:Ljava/nio/ByteBuffer;
 
-.field final c:I
+.field public final c:I
 
-.field final d:Ldefpackage/mrx;
+.field public final d:Ldefpackage/mrx;
 
 
 # direct methods

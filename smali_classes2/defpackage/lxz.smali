@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ldefpackage/lym;
+.field public a:Ldefpackage/lym;
 
 .field private final b:Ldefpackage/qkg;
 

@@ -6,11 +6,11 @@
 # instance fields
 .field public final a:Landroid/view/ViewGroup;
 
-.field final b:Ljava/util/ArrayList;
+.field public final b:Ljava/util/ArrayList;
 
-.field final c:Ljava/util/ArrayList;
+.field public final c:Ljava/util/ArrayList;
 
-.field d:Z
+.field public d:Z
 
 
 # direct methods

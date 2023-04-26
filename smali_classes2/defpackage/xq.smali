@@ -7,9 +7,9 @@
 
 
 # static fields
-.field static final a:Z
+.field public static final a:Z
 
-.field static final b:Ldefpackage/xh;
+.field public static final b:Ldefpackage/xh;
 
 .field private static final c:Ljava/util/logging/Logger;
 
@@ -17,15 +17,15 @@
 
 
 # instance fields
-.field volatile listeners:Ldefpackage/xl;
+.field public volatile listeners:Ldefpackage/xl;
 
-.field volatile value:Ljava/lang/Object;
+.field public volatile value:Ljava/lang/Object;
 
-.field volatile waiters:Ldefpackage/xp;
+.field public volatile waiters:Ldefpackage/xp;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 24
@@ -166,7 +166,7 @@
     return-void
 .end method
 
-.method static a(Ldefpackage/pht;)Ljava/lang/Object;
+.method public static a(Ldefpackage/pht;)Ljava/lang/Object;
     .locals 6
     .param p0, "phtVar"    # Ldefpackage/pht;
 
@@ -348,7 +348,7 @@
     return-object v1
 .end method
 
-.method static b(Ljava/util/concurrent/Future;)Ljava/lang/Object;
+.method public static b(Ljava/util/concurrent/Future;)Ljava/lang/Object;
     .locals 3
     .param p0, "future"    # Ljava/util/concurrent/Future;
 
@@ -958,7 +958,7 @@
 
 
 # virtual methods
-.method protected c()Ljava/lang/String;
+.method public c()Ljava/lang/String;
     .locals 4
 
     .line 228

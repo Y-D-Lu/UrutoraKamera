@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method protected final n()Z
+.method public final n()Z
     .locals 1
 
     .line 9

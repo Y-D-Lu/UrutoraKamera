@@ -25,7 +25,7 @@
 
 .field public final b:Landroid/os/Handler;
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
 .field public final d:Landroid/util/SparseArray;
 
@@ -41,7 +41,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 37

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nty;
+.field public final a:Ldefpackage/nty;
 
-.field final b:Ljava/lang/Integer;
+.field public final b:Ljava/lang/Integer;
 
 
 # direct methods

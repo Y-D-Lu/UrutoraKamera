@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ekr;
+.field public final a:Ldefpackage/ekr;
 
 
 # direct methods

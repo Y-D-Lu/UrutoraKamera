@@ -10,7 +10,7 @@
 
 .field public c:Z
 
-.field final d:Ldefpackage/agy;
+.field public final d:Ldefpackage/agy;
 
 
 # direct methods

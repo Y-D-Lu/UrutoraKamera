@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/List;
+.field public final a:Ljava/util/List;
 
-.field final b:Ldefpackage/cfy;
+.field public final b:Ldefpackage/cfy;
 
 
 # direct methods

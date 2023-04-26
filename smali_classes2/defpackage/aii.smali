@@ -19,7 +19,7 @@
     .end annotation
 .end field
 
-.field protected final g:Ljava/util/Map;
+.field public final g:Ljava/util/Map;
 
 .field public final h:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
@@ -115,7 +115,7 @@
 
 
 # virtual methods
-.method protected abstract a()Ldefpackage/aif;
+.method public abstract a()Ldefpackage/aif;
 .end method
 
 .method public abstract b(Ldefpackage/ahy;)Ldefpackage/aju;

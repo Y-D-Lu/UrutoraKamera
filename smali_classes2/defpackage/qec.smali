@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbe;
+.field public final a:Ldefpackage/qbe;
 
-.field final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final c:Ldefpackage/qby;
+.field public final c:Ldefpackage/qby;
 
 
 # direct methods

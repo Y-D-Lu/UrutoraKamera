@@ -503,7 +503,7 @@
     throw p1
 .end method
 
-.method protected final declared-synchronized finalize()V
+.method public final declared-synchronized finalize()V
     .locals 4
 
     monitor-enter p0

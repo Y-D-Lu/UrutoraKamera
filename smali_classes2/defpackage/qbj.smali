@@ -82,5 +82,5 @@
     throw v1
 .end method
 
-.method protected abstract b(Ldefpackage/qbk;)V
+.method public abstract b(Ldefpackage/qbk;)V
 .end method

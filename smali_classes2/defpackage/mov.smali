@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ldefpackage/moq;
+.field public a:Ldefpackage/moq;
 
 
 # direct methods

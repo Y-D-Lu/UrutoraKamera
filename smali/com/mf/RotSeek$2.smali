@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/mf/RotSeek;
+.field public final synthetic this$0:Lcom/mf/RotSeek;
 
 
 # direct methods
-.method constructor <init>(Lcom/mf/RotSeek;)V
+.method public constructor <init>(Lcom/mf/RotSeek;)V
     .locals 0
     .param p1, "this$0"    # Lcom/mf/RotSeek;
 

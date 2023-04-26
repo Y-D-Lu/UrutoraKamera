@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final g:Ldefpackage/kmb;
+.field public final g:Ldefpackage/kmb;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
 
 # virtual methods
-.method protected final a(Ldefpackage/khi;)V
+.method public final a(Ldefpackage/khi;)V
     .locals 1
     .param p1, "khiVar"    # Ldefpackage/khi;
 
@@ -45,7 +45,7 @@
     return-void
 .end method
 
-.method protected final c()Z
+.method public final c()Z
     .locals 2
 
     .line 22

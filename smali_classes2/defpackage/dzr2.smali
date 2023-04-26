@@ -11,7 +11,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;)V
+.method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
     .param p1, "activity"    # Landroid/app/Activity;
 

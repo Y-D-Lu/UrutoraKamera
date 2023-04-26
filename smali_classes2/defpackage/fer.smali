@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;
+.field public final a:Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;
 
 .field private final b:I
 

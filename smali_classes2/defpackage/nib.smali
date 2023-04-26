@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ljava/lang/String;
+.field public a:Ljava/lang/String;
 
 
 # direct methods

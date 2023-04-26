@@ -48,7 +48,7 @@
 
 
 # virtual methods
-.method protected abstract b(Lkhz;)V
+.method public abstract b(Lkhz;)V
 .end method
 
 .method public c(Ljava/lang/Object;)V

@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 16
@@ -227,7 +227,7 @@
 
 
 # virtual methods
-.method protected final d()Ldefpackage/ial;
+.method public final d()Ldefpackage/ial;
     .locals 4
 
     .line 66
@@ -319,7 +319,7 @@
     return-object v3
 .end method
 
-.method protected final e(Ldefpackage/lzv;)Z
+.method public final e(Ldefpackage/lzv;)Z
     .locals 19
     .param p1, "lzvVar"    # Ldefpackage/lzv;
 

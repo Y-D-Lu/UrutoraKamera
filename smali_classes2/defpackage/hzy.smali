@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/iav;
+.field public final a:Ldefpackage/iav;
 
-.field final b:Ldefpackage/iat;
+.field public final b:Ldefpackage/iat;
 
-.field final c:Ldefpackage/hzz;
+.field public final c:Ldefpackage/hzz;
 
 
 # direct methods

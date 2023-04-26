@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
 .field public final c:Ljava/lang/String;
 

@@ -25,7 +25,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 29
@@ -507,7 +507,7 @@
     return-void
 .end method
 
-.method protected final onCreateDrawableState(I)[I
+.method public final onCreateDrawableState(I)[I
     .locals 3
     .param p1, "i"    # I
 

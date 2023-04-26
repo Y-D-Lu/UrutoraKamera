@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/vq;
+.field public final a:Ldefpackage/vq;
 
 
 # direct methods

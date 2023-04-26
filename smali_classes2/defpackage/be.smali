@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/animation/Animator;
+.field public final a:Landroid/animation/Animator;
 
-.field final b:Ldefpackage/dp;
+.field public final b:Ldefpackage/dp;
 
 
 # direct methods

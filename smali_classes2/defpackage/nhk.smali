@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nhl;
+.field public final a:Ldefpackage/nhl;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
 
 # virtual methods
-.method protected final removeEldestEntry(Ljava/util/Map$Entry;)Z
+.method public final removeEldestEntry(Ljava/util/Map$Entry;)Z
     .locals 2
     .param p1, "entry"    # Ljava/util/Map$Entry;
 

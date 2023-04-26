@@ -8,13 +8,13 @@
 
 .field public static b:I
 
-.field static final c:Ljava/util/concurrent/atomic/AtomicReference;
+.field public static final c:Ljava/util/concurrent/atomic/AtomicReference;
 
 .field public static final d:Ljava/util/Map;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 17

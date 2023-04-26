@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field a:Ldefpackage/yf;
+.field public a:Ldefpackage/yf;
 
 .field public b:F
 
-.field final c:Ljava/util/ArrayList;
+.field public final c:Ljava/util/ArrayList;
 
-.field d:Z
+.field public d:Z
 
 .field public e:Ldefpackage/xx;
 

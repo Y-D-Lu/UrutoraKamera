@@ -30,7 +30,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 51
@@ -685,7 +685,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 5
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 

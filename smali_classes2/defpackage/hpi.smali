@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hpj;
+.field public final a:Ldefpackage/hpj;
 
 
 # direct methods

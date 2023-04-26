@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected final a:Ljava/lang/Object;
+.field public final a:Ljava/lang/Object;
 
-.field protected final b:Ldefpackage/ner;
+.field public final b:Ldefpackage/ner;
 
 .field private c:Ljava/util/concurrent/atomic/AtomicBoolean;
 

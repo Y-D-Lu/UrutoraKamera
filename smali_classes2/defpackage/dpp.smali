@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/hardware/HardwareBuffer;
+.field public final a:Landroid/hardware/HardwareBuffer;
 
-.field final b:J
+.field public final b:J
 
-.field final c:Ldefpackage/dpt;
+.field public final c:Ldefpackage/dpt;
 
 
 # direct methods

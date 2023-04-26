@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lfj;
+.field public final a:Ldefpackage/lfj;
 
-.field final b:Ldefpackage/pih;
+.field public final b:Ldefpackage/pih;
 
-.field final c:Ldefpackage/cgl;
+.field public final c:Ldefpackage/cgl;
 
 
 # direct methods

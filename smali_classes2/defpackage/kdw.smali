@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kdx;
+.field public final a:Ldefpackage/kdx;
 
 
 # direct methods

@@ -440,7 +440,7 @@
     return-void
 .end method
 
-.method final f(Landroid/content/res/ColorStateList;)V
+.method public final f(Landroid/content/res/ColorStateList;)V
     .locals 2
     .param p1, "colorStateList"    # Landroid/content/res/ColorStateList;
 

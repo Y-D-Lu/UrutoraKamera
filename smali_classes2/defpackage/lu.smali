@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/lt;
+.field public final a:Ldefpackage/lt;
 
 .field public final b:Landroid/content/Context;
 
@@ -14,7 +14,7 @@
 
 .field public e:I
 
-.field protected f:Ldefpackage/go;
+.field public f:Ldefpackage/go;
 
 .field private g:Z
 
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
 
@@ -324,7 +324,7 @@
     throw v0
 .end method
 
-.method protected final onConfigurationChanged(Landroid/content/res/Configuration;)V
+.method public final onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
     .param p1, "configuration"    # Landroid/content/res/Configuration;
 

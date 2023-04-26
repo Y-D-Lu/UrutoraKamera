@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field transient a:[Ljava/lang/Object;
+.field public transient a:[Ljava/lang/Object;
 
 .field public transient b:I
 
@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 24
@@ -1252,7 +1252,7 @@
     goto :goto_0
 .end method
 
-.method final d()Ljava/util/Set;
+.method public final d()Ljava/util/Set;
     .locals 2
 
     .line 279
@@ -1278,7 +1278,7 @@
     return-object v1
 .end method
 
-.method final e()V
+.method public final e()V
     .locals 1
 
     .line 287
@@ -1292,7 +1292,7 @@
     return-void
 .end method
 
-.method final f(I)V
+.method public final f(I)V
     .locals 2
     .param p1, "i"    # I
 
@@ -1316,7 +1316,7 @@
     return-void
 .end method
 
-.method final g()Z
+.method public final g()Z
     .locals 1
 
     .line 296

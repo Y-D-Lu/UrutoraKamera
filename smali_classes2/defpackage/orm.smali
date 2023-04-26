@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Comparable;
+.field public final a:Ljava/lang/Comparable;
 
-.field final b:Ldefpackage/orp;
+.field public final b:Ldefpackage/orp;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method protected final a(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
 

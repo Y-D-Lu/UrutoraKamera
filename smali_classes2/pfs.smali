@@ -1,4 +1,4 @@
-.class interface abstract Lpfs;
+.class public interface abstract Lpfs;
 .super Ljava/lang/Object;
 .source ""
 

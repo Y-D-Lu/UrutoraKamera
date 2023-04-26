@@ -27,15 +27,15 @@
 
 .field public j:I
 
-.field k:I
+.field public k:I
 
 .field public l:Landroid/view/View;
 
 .field public m:Landroid/widget/AdapterView$OnItemClickListener;
 
-.field final n:Ldefpackage/pj;
+.field public final n:Ldefpackage/pj;
 
-.field final o:Landroid/os/Handler;
+.field public final o:Landroid/os/Handler;
 
 .field public p:Z
 

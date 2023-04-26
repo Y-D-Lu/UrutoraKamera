@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fdj;
+.field public final a:Ldefpackage/fdj;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+.method public final doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 13
     .param p1, "objArr"    # [Ljava/lang/Object;
 

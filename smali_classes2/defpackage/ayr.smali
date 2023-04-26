@@ -8,7 +8,7 @@
 
 .field public final b:[Z
 
-.field final c:Ldefpackage/ayu;
+.field public final c:Ldefpackage/ayu;
 
 .field private d:Z
 

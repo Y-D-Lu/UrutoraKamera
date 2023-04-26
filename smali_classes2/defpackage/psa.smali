@@ -4,17 +4,17 @@
 
 
 # static fields
-.field static final a:I
+.field public static final a:I
 
-.field static final b:I
+.field public static final b:I
 
-.field static final c:I
+.field public static final c:I
 
-.field static final d:I
+.field public static final d:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 6

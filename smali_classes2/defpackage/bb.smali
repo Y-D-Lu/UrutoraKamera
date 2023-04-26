@@ -11,13 +11,13 @@
 
 
 # instance fields
-.field final a:Ljava/util/List;
+.field public final a:Ljava/util/List;
 
-.field final b:Ljava/util/List;
+.field public final b:Ljava/util/List;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 12

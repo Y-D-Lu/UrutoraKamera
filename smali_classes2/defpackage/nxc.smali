@@ -8,7 +8,7 @@
 
 .field private b:Z
 
-.field c:Landroid/widget/OverScroller;
+.field public c:Landroid/widget/OverScroller;
 
 .field private d:I
 

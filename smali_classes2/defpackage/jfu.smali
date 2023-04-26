@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jrl;
+.field public final a:Ldefpackage/jrl;
 
-.field final b:Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
+.field public final b:Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
 
 
 # direct methods

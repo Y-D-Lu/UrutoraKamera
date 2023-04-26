@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lug;
+.field public final a:Ldefpackage/lug;
 
 .field private final b:I
 

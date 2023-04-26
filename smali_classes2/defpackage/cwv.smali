@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Lcom/google/android/apps/camera/camerafatalerror/CameraFatalErrorTrackerDatabase_Impl;
+.field public final b:Lcom/google/android/apps/camera/camerafatalerror/CameraFatalErrorTrackerDatabase_Impl;
 
 
 # direct methods

@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;
 
-.field final synthetic val$file:Ljava/io/File;
+.field public final synthetic val$file:Ljava/io/File;
 
-.field final synthetic val$fileNames:[Ljava/lang/String;
+.field public final synthetic val$fileNames:[Ljava/lang/String;
 
-.field final synthetic val$spinner:Landroid/widget/Spinner;
+.field public final synthetic val$spinner:Landroid/widget/Spinner;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;Ljava/io/File;[Ljava/lang/String;Landroid/widget/Spinner;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;Ljava/io/File;[Ljava/lang/String;Landroid/widget/Spinner;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/bottombar/DLock$GestureListener;
 

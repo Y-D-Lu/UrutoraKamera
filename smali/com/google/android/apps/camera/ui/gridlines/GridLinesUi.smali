@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 25
@@ -308,7 +308,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 6
     .param p1, "z"    # Z
     .param p2, "i"    # I

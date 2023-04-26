@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/autotimer/ui/AutoTimerIndicatorView;
+.field public final a:Lcom/google/android/apps/camera/autotimer/ui/AutoTimerIndicatorView;
 
 
 # direct methods

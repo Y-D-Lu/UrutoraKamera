@@ -127,7 +127,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 59
@@ -175,7 +175,7 @@
     return-void
 .end method
 
-.method static synthetic access$002(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;F)F
+.method public static synthetic access$002(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;F)F
     .locals 0
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
     .param p1, "x1"    # F
@@ -186,7 +186,7 @@
     return p1
 .end method
 
-.method static synthetic access$100(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Ldefpackage/ojc;
+.method public static synthetic access$100(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Ldefpackage/ojc;
     .locals 1
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
 
@@ -196,7 +196,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Ldefpackage/ojc;
+.method public static synthetic access$200(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Ldefpackage/ojc;
     .locals 1
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
 
@@ -206,7 +206,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$302(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
+.method public static synthetic access$302(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
     .locals 0
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
     .param p1, "x1"    # Landroid/animation/ValueAnimator;
@@ -217,7 +217,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$400(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
+.method public static synthetic access$400(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
     .locals 1
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
 
@@ -227,7 +227,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$502(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;Landroid/animation/AnimatorSet;)Landroid/animation/AnimatorSet;
+.method public static synthetic access$502(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;Landroid/animation/AnimatorSet;)Landroid/animation/AnimatorSet;
     .locals 0
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
     .param p1, "x1"    # Landroid/animation/AnimatorSet;
@@ -238,7 +238,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$602(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
+.method public static synthetic access$602(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
     .locals 0
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
     .param p1, "x1"    # Landroid/animation/ValueAnimator;
@@ -1685,7 +1685,7 @@
     return-void
 .end method
 
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 13
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -1981,7 +1981,7 @@
     return-void
 .end method
 
-.method protected onMeasure(II)V
+.method public onMeasure(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

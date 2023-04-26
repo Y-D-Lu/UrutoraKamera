@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 .field private final b:Ldefpackage/qby;
 

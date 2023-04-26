@@ -150,7 +150,7 @@
 .method public abstract a(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/oaf;
 .end method
 
-.method protected final d(Z)V
+.method public final d(Z)V
     .locals 3
     .param p1, "z"    # Z
 
@@ -203,7 +203,7 @@
     return-void
 .end method
 
-.method final f()Z
+.method public final f()Z
     .locals 5
 
     .line 76
@@ -498,7 +498,7 @@
     return-void
 .end method
 
-.method protected final onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 2
 
     .line 129
@@ -578,7 +578,7 @@
     return-void
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 2
 
     .line 146
@@ -650,7 +650,7 @@
     return-void
 .end method
 
-.method protected final declared-synchronized onDraw(Landroid/graphics/Canvas;)V
+.method public final declared-synchronized onDraw(Landroid/graphics/Canvas;)V
     .locals 5
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -774,7 +774,7 @@
     throw p1
 .end method
 
-.method protected final declared-synchronized onMeasure(II)V
+.method public final declared-synchronized onMeasure(II)V
     .locals 6
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -928,7 +928,7 @@
     throw p1
 .end method
 
-.method protected final onVisibilityChanged(Landroid/view/View;I)V
+.method public final onVisibilityChanged(Landroid/view/View;I)V
     .locals 1
     .param p1, "view"    # Landroid/view/View;
     .param p2, "i"    # I
@@ -953,7 +953,7 @@
     return-void
 .end method
 
-.method protected final onWindowVisibilityChanged(I)V
+.method public final onWindowVisibilityChanged(I)V
     .locals 1
     .param p1, "i"    # I
 

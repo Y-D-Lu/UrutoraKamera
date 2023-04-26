@@ -11,21 +11,21 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qym;
+.field public final a:Ldefpackage/qym;
 
-.field final b:Ldefpackage/qdk;
+.field public final b:Ldefpackage/qdk;
 
-.field c:Ldefpackage/qyn;
+.field public c:Ldefpackage/qyn;
 
-.field volatile d:Z
+.field public volatile d:Z
 
-.field volatile e:Z
+.field public volatile e:Z
 
-.field f:Ljava/lang/Throwable;
+.field public f:Ljava/lang/Throwable;
 
-.field final g:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final g:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field h:Z
+.field public h:Z
 
 
 # direct methods
@@ -135,7 +135,7 @@
     return-void
 .end method
 
-.method final f()V
+.method public final f()V
     .locals 12
 
     .line 48
@@ -430,7 +430,7 @@
     return-object v0
 .end method
 
-.method final h(ZZLdefpackage/qym;)Z
+.method public final h(ZZLdefpackage/qym;)Z
     .locals 3
     .param p1, "z"    # Z
     .param p2, "z2"    # Z

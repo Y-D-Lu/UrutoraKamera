@@ -160,7 +160,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/softmoore/android/graphlib/Graph$Builder;Lcom/softmoore/android/graphlib/Graph$1;)V
+.method public synthetic constructor <init>(Lcom/softmoore/android/graphlib/Graph$Builder;Lcom/softmoore/android/graphlib/Graph$1;)V
     .locals 0
     .param p1, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
     .param p2, "x1"    # Lcom/softmoore/android/graphlib/Graph$1;

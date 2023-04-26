@@ -8,7 +8,7 @@
 
 .field public b:F
 
-.field c:I
+.field public c:I
 
 
 # direct methods

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pqz;
+.field public final a:Ldefpackage/pqz;
 
-.field b:Ldefpackage/pnz;
+.field public b:Ldefpackage/pnz;
 
-.field final c:Ldefpackage/pra;
+.field public final c:Ldefpackage/pra;
 
 
 # direct methods

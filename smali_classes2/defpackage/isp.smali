@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/isq;
+.field public final a:Ldefpackage/isq;
 
 
 # direct methods

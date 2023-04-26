@@ -4,33 +4,33 @@
 
 
 # instance fields
-.field final a:Ldefpackage/edd;
+.field public final a:Ldefpackage/edd;
 
-.field final b:Ldefpackage/hdv;
+.field public final b:Ldefpackage/hdv;
 
-.field final c:I
+.field public final c:I
 
-.field final d:Ldefpackage/mak;
+.field public final d:Ldefpackage/mak;
 
-.field final e:Ldefpackage/pih;
+.field public final e:Ldefpackage/pih;
 
-.field final f:Ljava/util/List;
+.field public final f:Ljava/util/List;
 
-.field final g:Ldefpackage/pih;
+.field public final g:Ldefpackage/pih;
 
-.field final h:Ldefpackage/pih;
+.field public final h:Ldefpackage/pih;
 
-.field final i:Landroid/os/ConditionVariable;
+.field public final i:Landroid/os/ConditionVariable;
 
-.field final j:Ljava/util/List;
+.field public final j:Ljava/util/List;
 
-.field k:I
+.field public k:I
 
-.field l:I
+.field public l:I
 
-.field m:J
+.field public m:J
 
-.field n:Ldefpackage/eot;
+.field public n:Ldefpackage/eot;
 
 
 # direct methods

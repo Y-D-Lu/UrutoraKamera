@@ -20,7 +20,7 @@
 
 .field public final h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final i:Ldefpackage/gdz;
+.field public final i:Ldefpackage/gdz;
 
 .field private j:Landroid/view/Surface;
 

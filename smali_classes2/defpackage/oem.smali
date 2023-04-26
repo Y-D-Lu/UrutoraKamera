@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Ljava/util/Set;
+.field public final a:Ljava/util/Set;
 
 .field private final b:Landroid/content/IntentFilter;
 

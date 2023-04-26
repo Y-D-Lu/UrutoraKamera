@@ -11,7 +11,7 @@
 
 .field public final b:Ldefpackage/pih;
 
-.field final c:Ldefpackage/fra;
+.field public final c:Ldefpackage/fra;
 
 .field private final d:Ldefpackage/mln;
 

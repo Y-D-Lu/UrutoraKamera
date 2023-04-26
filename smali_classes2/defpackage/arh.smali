@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/aof;
+.field public final a:Ldefpackage/aof;
 
-.field final b:Ljava/util/UUID;
+.field public final b:Ljava/util/UUID;
 
 
 # direct methods

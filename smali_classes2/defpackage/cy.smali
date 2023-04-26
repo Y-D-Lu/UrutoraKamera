@@ -11,35 +11,35 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Z
+.field public final c:Z
 
-.field final d:I
+.field public final d:I
 
-.field final e:I
+.field public final e:I
 
-.field final f:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field final g:Z
+.field public final g:Z
 
-.field final h:Z
+.field public final h:Z
 
-.field final i:Z
+.field public final i:Z
 
-.field final j:Landroid/os/Bundle;
+.field public final j:Landroid/os/Bundle;
 
-.field final k:Z
+.field public final k:Z
 
-.field final l:I
+.field public final l:I
 
-.field m:Landroid/os/Bundle;
+.field public m:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 11

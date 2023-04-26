@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/wy;
+.field public final a:Ldefpackage/wy;
 
 
 # direct methods

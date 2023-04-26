@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$pkyVar:Ldefpackage/pky;
+.field public final synthetic val$pkyVar:Ldefpackage/pky;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/pky;)V
+.method public constructor <init>(Ldefpackage/pky;)V
     .locals 0
 
     .line 17

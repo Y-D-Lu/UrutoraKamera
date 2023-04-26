@@ -4,19 +4,19 @@
 
 
 # static fields
-.field static final a:Ldefpackage/pfo;
+.field public static final a:Ldefpackage/pfo;
 
 
 # instance fields
-.field final b:Ljava/lang/Runnable;
+.field public final b:Ljava/lang/Runnable;
 
-.field final c:Ljava/util/concurrent/Executor;
+.field public final c:Ljava/util/concurrent/Executor;
 
-.field next:Ldefpackage/pfo;
+.field public next:Ldefpackage/pfo;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8

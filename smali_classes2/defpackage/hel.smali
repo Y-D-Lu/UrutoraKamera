@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method protected final k(Ldefpackage/edd;Ldefpackage/mad;)V
+.method public final k(Ldefpackage/edd;Ldefpackage/mad;)V
     .locals 2
     .param p1, "eddVar"    # Ldefpackage/edd;
     .param p2, "madVar"    # Ldefpackage/mad;

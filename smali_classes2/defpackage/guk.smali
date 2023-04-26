@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pih;
+.field public final a:Ldefpackage/pih;
 
-.field final b:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+.field public final b:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
 
 
 # direct methods

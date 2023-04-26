@@ -11,11 +11,11 @@
 
 .field public b:I
 
-.field c:Ljava/lang/CharSequence;
+.field public c:Ljava/lang/CharSequence;
 
 .field public d:Landroid/view/Window$Callback;
 
-.field e:Z
+.field public e:Z
 
 .field private f:Landroid/view/View;
 

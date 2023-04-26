@@ -74,9 +74,9 @@
 
 .field public mHeight:I
 
-.field mIsGuideline:Z
+.field public mIsGuideline:Z
 
-.field mViewId:I
+.field public mViewId:I
 
 .field public mWidth:I
 

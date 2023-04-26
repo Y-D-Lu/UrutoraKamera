@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final c:Landroid/content/Context;
+.field public final c:Landroid/content/Context;
 
 
 # direct methods

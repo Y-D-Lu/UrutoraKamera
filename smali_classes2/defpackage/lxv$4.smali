@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -20,15 +20,15 @@
 # instance fields
 .field public final b:Ldefpackage/pwc;
 
-.field final synthetic this$0:Ldefpackage/lxv;
+.field public final synthetic this$0:Ldefpackage/lxv;
 
-.field final synthetic val$ldiVar:Ldefpackage/ldi;
+.field public final synthetic val$ldiVar:Ldefpackage/ldi;
 
-.field final synthetic val$pwcVar:Ldefpackage/pwc;
+.field public final synthetic val$pwcVar:Ldefpackage/pwc;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/lxv;Ldefpackage/pwc;Ldefpackage/ldi;)V
+.method public constructor <init>(Ldefpackage/lxv;Ldefpackage/pwc;Ldefpackage/ldi;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/lxv;
 

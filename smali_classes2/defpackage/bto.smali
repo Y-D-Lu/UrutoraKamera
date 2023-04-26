@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/btp;
+.field public final a:Ldefpackage/btp;
 
 
 # direct methods

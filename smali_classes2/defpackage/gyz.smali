@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ljava/util/Map;
+.field public final b:Ljava/util/Map;
 
-.field final c:Ldefpackage/lnc;
+.field public final c:Ldefpackage/lnc;
 
-.field final d:I
+.field public final d:I
 
-.field final e:Ldefpackage/gza;
+.field public final e:Ldefpackage/gza;
 
 
 # direct methods

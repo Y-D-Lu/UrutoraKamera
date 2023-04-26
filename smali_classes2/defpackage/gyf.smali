@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hsa;
+.field public final a:Ldefpackage/hsa;
 
 
 # direct methods

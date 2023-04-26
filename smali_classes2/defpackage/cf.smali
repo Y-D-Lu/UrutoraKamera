@@ -10,7 +10,7 @@
 
 .field public final d:Landroid/os/Handler;
 
-.field final e:Ldefpackage/cu;
+.field public final e:Ldefpackage/cu;
 
 
 # direct methods

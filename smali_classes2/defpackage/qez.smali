@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final d:Ldefpackage/qde;
+.field public final d:Ldefpackage/qde;
 
 
 # direct methods

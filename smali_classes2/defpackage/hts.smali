@@ -12,11 +12,11 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field final b:Ldefpackage/htr;
+.field public final b:Ldefpackage/htr;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10

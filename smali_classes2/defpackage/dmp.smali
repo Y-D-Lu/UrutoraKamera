@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/evcomp/EvCompView;
+.field public final a:Lcom/google/android/apps/camera/evcomp/EvCompView;
 
 
 # direct methods

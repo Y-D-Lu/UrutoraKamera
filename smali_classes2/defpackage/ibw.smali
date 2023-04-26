@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ibz;
+.field public final a:Ldefpackage/ibz;
 
 
 # direct methods

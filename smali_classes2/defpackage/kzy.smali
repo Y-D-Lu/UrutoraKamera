@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field protected final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field protected final c:Ljava/lang/Object;
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 9

@@ -8,17 +8,17 @@
 
 
 # instance fields
-.field a:Landroid/os/ParcelFileDescriptor;
+.field public a:Landroid/os/ParcelFileDescriptor;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
 .field public d:Ljava/io/File;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 18
@@ -55,7 +55,7 @@
     return-void
 .end method
 
-.method static final a(Ljava/io/Closeable;)V
+.method public static final a(Ljava/io/Closeable;)V
     .locals 3
     .param p0, "closeable"    # Ljava/io/Closeable;
 

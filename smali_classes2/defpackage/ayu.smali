@@ -15,7 +15,7 @@
 
 .field public d:I
 
-.field final e:Ljava/util/concurrent/ThreadPoolExecutor;
+.field public final e:Ljava/util/concurrent/ThreadPoolExecutor;
 
 .field private final f:Ljava/io/File;
 

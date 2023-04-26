@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/lvp;
+.field public final a:Ldefpackage/lvp;
 
 
 # direct methods

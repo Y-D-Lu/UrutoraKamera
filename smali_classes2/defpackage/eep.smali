@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:J
+.field public final a:J
 
-.field final b:Ldefpackage/eer;
+.field public final b:Ldefpackage/eer;
 
 
 # direct methods

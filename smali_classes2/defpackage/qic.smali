@@ -13,19 +13,19 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final b:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field c:J
+.field public c:J
 
-.field final d:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final d:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field final e:I
+.field public final e:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

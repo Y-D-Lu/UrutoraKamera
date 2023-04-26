@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final g:Landroid/graphics/Matrix;
+.field public final g:Landroid/graphics/Matrix;
 
 
 # direct methods

@@ -8,31 +8,31 @@
 
 
 # instance fields
-.field protected final d:Ljava/util/Map;
+.field public final d:Ljava/util/Map;
 
-.field protected final e:Ljava/util/List;
+.field public final e:Ljava/util/List;
 
-.field protected final f:Ljava/util/List;
+.field public final f:Ljava/util/List;
 
-.field protected g:Z
+.field public g:Z
 
-.field protected h:I
+.field public h:I
 
-.field protected i:I
+.field public i:I
 
-.field protected j:I
+.field public j:I
 
-.field protected k:Ldefpackage/axn;
+.field public k:Ldefpackage/axn;
 
 .field public l:I
 
-.field protected m:Ldefpackage/axn;
+.field public m:Ldefpackage/axn;
 
-.field protected n:B
+.field public n:B
 
-.field protected o:I
+.field public o:I
 
-.field protected p:F
+.field public p:F
 
 .field public q:I
 
@@ -42,21 +42,21 @@
 
 .field public t:Ldefpackage/aww;
 
-.field protected u:Ldefpackage/awx;
+.field public u:Ldefpackage/awx;
 
-.field protected v:Z
+.field public v:Z
 
-.field protected w:Z
+.field public w:Z
 
-.field protected x:Z
+.field public x:Z
 
-.field protected y:Z
+.field public y:Z
 
 .field public z:Ldefpackage/axn;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 11

@@ -217,7 +217,7 @@
 
 .field public static final bv:I
 
-.field protected static bw:Ljava/util/HashSet;
+.field public static bw:Ljava/util/HashSet;
 
 .field public static final bx:Ljava/lang/Long;
 
@@ -289,7 +289,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 12
 
     .line 163
@@ -1688,7 +1688,7 @@
     return v0
 .end method
 
-.method protected static d(I)I
+.method public static d(I)I
     .locals 1
     .param p0, "i2"    # I
 
@@ -1698,7 +1698,7 @@
     return v0
 .end method
 
-.method protected static f([I)I
+.method public static f([I)I
     .locals 7
     .param p0, "iArr"    # [I
 
@@ -1794,7 +1794,7 @@
     return v0
 .end method
 
-.method protected static o(I)S
+.method public static o(I)S
     .locals 1
     .param p0, "i2"    # I
 

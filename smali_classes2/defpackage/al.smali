@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:[Ldefpackage/ap;
+.field public a:[Ldefpackage/ap;
 
-.field final b:Ldefpackage/ao;
+.field public final b:Ldefpackage/ao;
 
-.field final c:Ldefpackage/ao;
+.field public final c:Ldefpackage/ao;
 
 
 # direct methods

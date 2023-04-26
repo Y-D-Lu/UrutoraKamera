@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field transient a:[Ljava/lang/Object;
+.field public transient a:[Ljava/lang/Object;
 
-.field transient b:[Ljava/lang/Object;
+.field public transient b:[Ljava/lang/Object;
 
-.field transient c:I
+.field public transient c:I
 
-.field transient d:I
+.field public transient d:I
 
 .field public transient e:I
 
@@ -969,7 +969,7 @@
 
 
 # virtual methods
-.method final a(Ljava/lang/Object;I[I[I[Ljava/lang/Object;)I
+.method public final a(Ljava/lang/Object;I[I[I[Ljava/lang/Object;)I
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
     .param p2, "i"    # I
@@ -1252,7 +1252,7 @@
     return-object v0
 .end method
 
-.method final f(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;
+.method public final f(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;
     .locals 19
     .param p1, "obj"    # Ljava/lang/Object;
     .param p2, "obj2"    # Ljava/lang/Object;
@@ -1907,7 +1907,7 @@
     return-object v0
 .end method
 
-.method final l()V
+.method public final l()V
     .locals 3
 
     .line 423

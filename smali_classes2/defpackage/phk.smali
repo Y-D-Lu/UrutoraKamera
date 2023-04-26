@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field a:Ldefpackage/pht;
+.field public a:Ldefpackage/pht;
 
-.field b:Ljava/util/concurrent/Future;
+.field public b:Ljava/util/concurrent/Future;
 
 
 # direct methods

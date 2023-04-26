@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field protected final c:Ldefpackage/hil;
+.field public final c:Ldefpackage/hil;
 
-.field protected final d:Ljava/util/concurrent/Executor;
+.field public final d:Ljava/util/concurrent/Executor;
 
-.field protected final e:J
+.field public final e:J
 
-.field protected final f:Ldefpackage/hin;
+.field public final f:Ldefpackage/hin;
 
-.field protected final g:Ldefpackage/hsa;
+.field public final g:Ldefpackage/hsa;
 
-.field protected final h:I
+.field public final h:I
 
 
 # direct methods

@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Lpph;
+.field public final a:Lpph;
 
 .field public final b:I
 
 .field public final c:Ldefpackage/pry;
 
-.field final d:Z
+.field public final d:Z
 
 
 # direct methods

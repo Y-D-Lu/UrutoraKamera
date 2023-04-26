@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/igw;
+.field public final a:Ldefpackage/igw;
 
 
 # direct methods

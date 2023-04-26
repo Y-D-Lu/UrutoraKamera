@@ -102,7 +102,7 @@
     return-void
 .end method
 
-.method protected constructor <init>(Ldefpackage/mcx;Ldefpackage/mip;J[Ljava/lang/Enum;[B[B[B[B[B)V
+.method public constructor <init>(Ldefpackage/mcx;Ldefpackage/mip;J[Ljava/lang/Enum;[B[B[B[B[B)V
     .locals 3
     .param p1, "mcxVar"    # Ldefpackage/mcx;
     .param p2, "mipVar"    # Ldefpackage/mip;

@@ -12,39 +12,39 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/erx;
+.field public final synthetic this$0:Ldefpackage/erx;
 
-.field final synthetic val$executor2:Ljava/util/concurrent/Executor;
+.field public final synthetic val$executor2:Ljava/util/concurrent/Executor;
 
-.field final synthetic val$fpoVar:Ldefpackage/fpo;
+.field public final synthetic val$fpoVar:Ldefpackage/fpo;
 
-.field final synthetic val$ljfVar3:Ldefpackage/ljf;
+.field public final synthetic val$ljfVar3:Ldefpackage/ljf;
 
-.field final synthetic val$qkgVar:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar10:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar10:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar3:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar3:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar5:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar5:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar6:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar6:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar7:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar7:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar8:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar8:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar9:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar9:Ldefpackage/qkg;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/erx;Ldefpackage/ljf;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/fpo;Ldefpackage/qkg;Ljava/util/concurrent/Executor;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;)V
+.method public constructor <init>(Ldefpackage/erx;Ldefpackage/ljf;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/fpo;Ldefpackage/qkg;Ljava/util/concurrent/Executor;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/erx;
 

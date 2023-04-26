@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:Ldefpackage/ojc;
+.field public b:Ldefpackage/ojc;
 
-.field final c:Ljava/util/Map;
+.field public final c:Ljava/util/Map;
 
-.field final d:J
+.field public final d:J
 
 
 # direct methods

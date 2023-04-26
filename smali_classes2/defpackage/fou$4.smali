@@ -12,35 +12,35 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/fou;
+.field public final synthetic this$0:Ldefpackage/fou;
 
-.field final synthetic val$b:Ldefpackage/lie;
+.field public final synthetic val$b:Ldefpackage/lie;
 
-.field final synthetic val$convert:J
+.field public final synthetic val$convert:J
 
-.field final synthetic val$f:Ldefpackage/pih;
+.field public final synthetic val$f:Ldefpackage/pih;
 
-.field final synthetic val$h:Ldefpackage/hsp;
+.field public final synthetic val$h:Ldefpackage/hsp;
 
-.field final synthetic val$hsaVar:Ldefpackage/hsa;
+.field public final synthetic val$hsaVar:Ldefpackage/hsa;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$phtVar:Ldefpackage/pht;
+.field public final synthetic val$phtVar:Ldefpackage/pht;
 
-.field final synthetic val$z:Z
+.field public final synthetic val$z:Z
 
-.field final synthetic val$z2:Z
+.field public final synthetic val$z2:Z
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/fou;Ldefpackage/hsp;Ldefpackage/pih;JLdefpackage/hsa;ZZILdefpackage/pht;Ldefpackage/lie;)V
+.method public constructor <init>(Ldefpackage/fou;Ldefpackage/hsp;Ldefpackage/pih;JLdefpackage/hsa;ZZILdefpackage/pht;Ldefpackage/lie;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/fou;
 

@@ -8,23 +8,23 @@
 
 .field public final B:I
 
-.field final C:I
+.field public final C:I
 
-.field final D:I
+.field public final D:I
 
-.field final E:I
+.field public final E:I
 
-.field final F:I
+.field public final F:I
 
 .field public final G:Z
 
-.field final H:Landroid/os/Handler;
+.field public final H:Landroid/os/Handler;
 
 .field public final I:Landroid/view/View$OnClickListener;
 
 .field public final a:Landroid/content/Context;
 
-.field final b:Ldefpackage/ja;
+.field public final b:Ldefpackage/ja;
 
 .field public final c:Landroid/view/Window;
 
@@ -40,23 +40,23 @@
 
 .field public i:Z
 
-.field j:Landroid/widget/Button;
+.field public j:Landroid/widget/Button;
 
 .field public k:Ljava/lang/CharSequence;
 
-.field l:Landroid/os/Message;
+.field public l:Landroid/os/Message;
 
-.field m:Landroid/widget/Button;
+.field public m:Landroid/widget/Button;
 
 .field public n:Ljava/lang/CharSequence;
 
-.field o:Landroid/os/Message;
+.field public o:Landroid/os/Message;
 
-.field p:Landroid/widget/Button;
+.field public p:Landroid/widget/Button;
 
 .field public q:Ljava/lang/CharSequence;
 
-.field r:Landroid/support/v4/widget/NestedScrollView;
+.field public r:Landroid/support/v4/widget/NestedScrollView;
 
 .field public s:I
 
@@ -70,9 +70,9 @@
 
 .field public x:Landroid/view/View;
 
-.field y:Landroid/widget/ListAdapter;
+.field public y:Landroid/widget/ListAdapter;
 
-.field z:I
+.field public z:I
 
 
 # direct methods

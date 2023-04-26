@@ -6,9 +6,9 @@
 # instance fields
 .field private k:I
 
-.field protected final t:Ldefpackage/fhv;
+.field public final t:Ldefpackage/fhv;
 
-.field protected final u:Ldefpackage/enl;
+.field public final u:Ldefpackage/enl;
 
 
 # direct methods
@@ -913,7 +913,7 @@
     return-void
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Bundle;)V
+.method public final onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 3
     .param p1, "bundle"    # Landroid/os/Bundle;
 
@@ -1090,7 +1090,7 @@
     return-void
 .end method
 
-.method protected final onUserLeaveHint()V
+.method public final onUserLeaveHint()V
     .locals 2
 
     .line 427

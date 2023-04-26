@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static volatile a:Ldefpackage/qcn;
+.field public static volatile a:Ldefpackage/qcn;
 
-.field static volatile b:Ldefpackage/qco;
+.field public static volatile b:Ldefpackage/qco;
 
 .field public static volatile c:Ldefpackage/qco;
 

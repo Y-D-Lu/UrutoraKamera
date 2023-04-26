@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Landroid/support/v7/view/menu/ActionMenuItemView;
+.field public final a:Landroid/support/v7/view/menu/ActionMenuItemView;
 
 
 # direct methods

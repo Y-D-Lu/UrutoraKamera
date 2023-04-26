@@ -4,17 +4,17 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ask;
+.field public static final a:Ldefpackage/ask;
 
 
 # instance fields
-.field volatile b:Ljava/lang/Thread;
+.field public volatile b:Ljava/lang/Thread;
 
-.field volatile c:Ldefpackage/ask;
+.field public volatile c:Ldefpackage/ask;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 7

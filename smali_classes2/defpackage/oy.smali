@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/util/SparseIntArray;
+.field public final a:Landroid/util/SparseIntArray;
 
-.field final b:Landroid/util/SparseIntArray;
+.field public final b:Landroid/util/SparseIntArray;
 
 
 # direct methods

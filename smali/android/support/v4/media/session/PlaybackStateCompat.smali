@@ -19,31 +19,31 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:J
+.field public final b:J
 
-.field final c:J
+.field public final c:J
 
-.field final d:F
+.field public final d:F
 
-.field final e:J
+.field public final e:J
 
-.field final f:I
+.field public final f:I
 
-.field final g:Ljava/lang/CharSequence;
+.field public final g:Ljava/lang/CharSequence;
 
-.field final h:J
+.field public final h:J
 
-.field i:Ljava/util/List;
+.field public i:Ljava/util/List;
 
-.field final j:J
+.field public final j:J
 
-.field final k:Landroid/os/Bundle;
+.field public final k:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 15

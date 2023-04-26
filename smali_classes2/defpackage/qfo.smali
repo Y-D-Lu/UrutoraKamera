@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/qbp;
+.field public final a:Ldefpackage/qbp;
 
 
 # direct methods

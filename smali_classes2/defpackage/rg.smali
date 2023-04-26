@@ -451,7 +451,7 @@
     return-object v0
 .end method
 
-.method final h()V
+.method public final h()V
     .locals 4
 
     .line 105
@@ -497,7 +497,7 @@
     return-void
 .end method
 
-.method final i()V
+.method public final i()V
     .locals 3
 
     .line 113
@@ -612,7 +612,7 @@
     return-void
 .end method
 
-.method final m(II)I
+.method public final m(II)I
     .locals 10
     .param p1, "i"    # I
     .param p2, "i2"    # I

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/lullaby/modules/audio/DeviceInfo;
+.field public final a:Lcom/google/lullaby/modules/audio/DeviceInfo;
 
 
 # direct methods

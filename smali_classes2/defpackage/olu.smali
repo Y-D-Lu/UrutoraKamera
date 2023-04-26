@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oiu;
+.field public final a:Ldefpackage/oiu;
 
-.field final b:Ldefpackage/orh;
+.field public final b:Ldefpackage/orh;
 
 
 # direct methods

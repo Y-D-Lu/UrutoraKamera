@@ -590,7 +590,7 @@
     return-void
 .end method
 
-.method static createFieldPack([Ljava/lang/Object;)Landroid/support/v8/renderscript/FieldPacker;
+.method public static createFieldPack([Ljava/lang/Object;)Landroid/support/v8/renderscript/FieldPacker;
     .locals 6
     .param p0, "objArr"    # [Ljava/lang/Object;
 

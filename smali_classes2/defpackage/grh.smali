@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:Ldefpackage/lzv;
 
-.field final b:Ldefpackage/gri;
+.field public final b:Ldefpackage/gri;
 
 .field private c:Z
 

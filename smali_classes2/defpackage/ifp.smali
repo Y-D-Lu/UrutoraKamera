@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ifq;
+.field public final a:Ldefpackage/ifq;
 
 
 # direct methods

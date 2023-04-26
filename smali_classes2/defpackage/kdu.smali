@@ -45,7 +45,7 @@
     return v0
 .end method
 
-.method protected abstract a()V
+.method public abstract a()V
 .end method
 
 .method public final z()V

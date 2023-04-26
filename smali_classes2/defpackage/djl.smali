@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/djn;
+.field public final a:Ldefpackage/djn;
 
 
 # direct methods

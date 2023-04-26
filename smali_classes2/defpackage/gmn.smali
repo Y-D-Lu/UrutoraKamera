@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gmo;
+.field public final a:Ldefpackage/gmo;
 
-.field final b:Ldefpackage/gmp;
+.field public final b:Ldefpackage/gmp;
 
 
 # direct methods

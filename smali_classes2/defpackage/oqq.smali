@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ljava/util/Map;
+.field public final b:Ljava/util/Map;
 
 
 # direct methods

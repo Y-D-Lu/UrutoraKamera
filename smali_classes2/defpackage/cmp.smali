@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cmq;
+.field public final a:Ldefpackage/cmq;
 
 
 # direct methods

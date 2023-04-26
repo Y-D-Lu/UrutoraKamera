@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field volatile a:J
+.field public volatile a:J
 
-.field final b:Ldefpackage/fpo;
+.field public final b:Ldefpackage/fpo;
 
-.field final c:Ldefpackage/ojc;
+.field public final c:Ldefpackage/ojc;
 
 
 # direct methods

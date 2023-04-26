@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nqh;
+.field public final a:Ldefpackage/nqh;
 
 .field private final b:I
 

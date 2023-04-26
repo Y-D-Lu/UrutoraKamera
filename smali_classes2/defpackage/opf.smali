@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/opg;
+.field public final a:Ldefpackage/opg;
 
 
 # direct methods

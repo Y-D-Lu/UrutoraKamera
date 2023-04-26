@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mqm;
+.field public final a:Ldefpackage/mqm;
 
 
 # direct methods

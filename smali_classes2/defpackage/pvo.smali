@@ -71,7 +71,7 @@
     return-object v0
 .end method
 
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 5
 
     .line 6

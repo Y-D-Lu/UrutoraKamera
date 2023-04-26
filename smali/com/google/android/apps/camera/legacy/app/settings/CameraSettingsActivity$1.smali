@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$fjsVar:Ldefpackage/fjs;
+.field public final synthetic val$fjsVar:Ldefpackage/fjs;
 
-.field final synthetic val$value:Ljava/lang/Object;
+.field public final synthetic val$value:Ljava/lang/Object;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/fjs;Ljava/lang/Object;)V
+.method public constructor <init>(Ldefpackage/fjs;Ljava/lang/Object;)V
     .locals 0
 
     .line 71

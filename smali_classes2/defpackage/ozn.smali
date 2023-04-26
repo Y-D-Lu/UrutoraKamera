@@ -57,7 +57,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 31
@@ -113,7 +113,7 @@
 
 
 # virtual methods
-.method protected final a(ILjava/lang/Object;)Ljava/lang/Object;
+.method public final a(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 6
     .param p1, "i"    # I
     .param p2, "obj"    # Ljava/lang/Object;

@@ -69,7 +69,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 47
@@ -1163,7 +1163,7 @@
     return-void
 .end method
 
-.method getActiveStyle()Ldefpackage/sr;
+.method public getActiveStyle()Ldefpackage/sr;
     .locals 1
 
     .line 273
@@ -1176,7 +1176,7 @@
     return-object v0
 .end method
 
-.method getAmbientStyle()Ldefpackage/sr;
+.method public getAmbientStyle()Ldefpackage/sr;
     .locals 1
 
     .line 277
@@ -1189,7 +1189,7 @@
     return-object v0
 .end method
 
-.method getComplicationRenderer()Ldefpackage/sq;
+.method public getComplicationRenderer()Ldefpackage/sq;
     .locals 1
 
     .line 281
@@ -1216,7 +1216,7 @@
     return v0
 .end method
 
-.method getNoDataText()Ljava/lang/CharSequence;
+.method public getNoDataText()Ljava/lang/CharSequence;
     .locals 1
 
     .line 293
@@ -1459,7 +1459,7 @@
     return v0
 .end method
 
-.method protected onBoundsChange(Landroid/graphics/Rect;)V
+.method public onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
     .param p1, "rect"    # Landroid/graphics/Rect;
 

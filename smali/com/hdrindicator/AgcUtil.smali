@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static sharedPreferences:Landroid/content/SharedPreferences;
+.field public static sharedPreferences:Landroid/content/SharedPreferences;
 
 
 # direct methods

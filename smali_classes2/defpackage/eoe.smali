@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/eof;
+.field public final a:Ldefpackage/eof;
 
 
 # direct methods

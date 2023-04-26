@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Z
+.field public final a:Z
 
 .field private final b:Ljava/util/concurrent/ThreadFactory;
 

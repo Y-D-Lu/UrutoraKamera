@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/gms/analytics/AnalyticsReceiver;
+.field public final synthetic this$0:Lcom/google/android/gms/analytics/AnalyticsReceiver;
 
-.field final synthetic val$kutVar2:Ldefpackage/kut;
+.field public final synthetic val$kutVar2:Ldefpackage/kut;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/gms/analytics/AnalyticsReceiver;Ldefpackage/kut;)V
+.method public constructor <init>(Lcom/google/android/gms/analytics/AnalyticsReceiver;Ldefpackage/kut;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/gms/analytics/AnalyticsReceiver;
 

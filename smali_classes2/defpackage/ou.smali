@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:I
+.field public b:I
 
-.field c:[I
+.field public c:[I
 
-.field d:I
+.field public d:I
 
 
 # direct methods

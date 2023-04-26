@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/eom;
+.field public final a:Ldefpackage/eom;
 
-.field final b:Ldefpackage/lji;
+.field public final b:Ldefpackage/lji;
 
-.field final c:Ldefpackage/eon;
+.field public final c:Ldefpackage/eon;
 
 
 # direct methods

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static volatile a:Z
+.field public static volatile a:Z
 
 .field public static final b:I
 
@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 17

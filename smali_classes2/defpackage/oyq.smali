@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field final b:Ljava/lang/Appendable;
+.field public final b:Ljava/lang/Appendable;
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
 
 # direct methods

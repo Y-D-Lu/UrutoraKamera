@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/fzk;
+.field public final synthetic this$0:Ldefpackage/fzk;
 
-.field final synthetic val$fznVar:Ldefpackage/fzn;
+.field public final synthetic val$fznVar:Ldefpackage/fzn;
 
-.field final synthetic val$jrlVar:Ldefpackage/jrl;
+.field public final synthetic val$jrlVar:Ldefpackage/jrl;
 
-.field final synthetic val$viewfinderCover:Lcom/google/android/apps/camera/ui/views/ViewfinderCover;
+.field public final synthetic val$viewfinderCover:Lcom/google/android/apps/camera/ui/views/ViewfinderCover;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/fzk;Ldefpackage/fzn;Lcom/google/android/apps/camera/ui/views/ViewfinderCover;Ldefpackage/jrl;)V
+.method public constructor <init>(Ldefpackage/fzk;Ldefpackage/fzn;Lcom/google/android/apps/camera/ui/views/ViewfinderCover;Ldefpackage/jrl;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/fzk;
 

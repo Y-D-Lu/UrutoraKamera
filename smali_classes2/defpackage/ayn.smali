@@ -12,11 +12,11 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/axv;
+.field public final a:Ldefpackage/axv;
 
-.field protected final b:Landroid/content/Context;
+.field public final b:Landroid/content/Context;
 
-.field final c:Ldefpackage/bjp;
+.field public final c:Ldefpackage/bjp;
 
 .field public final d:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -34,7 +34,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 28
@@ -926,7 +926,7 @@
     throw v0
 .end method
 
-.method protected final declared-synchronized l(Ldefpackage/bkx;)V
+.method public final declared-synchronized l(Ldefpackage/bkx;)V
     .locals 1
     .param p1, "bkxVar"    # Ldefpackage/bkx;
 
@@ -1035,7 +1035,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized n(Ldefpackage/blh;)Z
+.method public final declared-synchronized n(Ldefpackage/blh;)Z
     .locals 3
     .param p1, "blhVar"    # Ldefpackage/blh;
 

@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/ThreadFactory;
+.field public final a:Ljava/util/concurrent/ThreadFactory;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 8

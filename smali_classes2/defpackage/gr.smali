@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Landroid/view/WindowInsets$Builder;
+.field public a:Landroid/view/WindowInsets$Builder;
 
 
 # direct methods

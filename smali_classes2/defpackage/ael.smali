@@ -6,11 +6,11 @@
 # instance fields
 .field public final c:Ldefpackage/aeo;
 
-.field d:Z
+.field public d:Z
 
-.field e:I
+.field public e:I
 
-.field final f:Ldefpackage/aem;
+.field public final f:Ldefpackage/aem;
 
 
 # direct methods

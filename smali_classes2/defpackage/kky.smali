@@ -8,7 +8,7 @@
 
 .field public final b:I
 
-.field final c:Ldefpackage/kkz;
+.field public final c:Ldefpackage/kkz;
 
 
 # direct methods

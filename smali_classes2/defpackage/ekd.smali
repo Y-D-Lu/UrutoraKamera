@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/eke;
+.field public final a:Ldefpackage/eke;
 
 .field private final b:I
 

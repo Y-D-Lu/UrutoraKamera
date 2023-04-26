@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field final a:Landroid/content/Context;
+.field public final a:Landroid/content/Context;
 
-.field final b:Lapx;
+.field public final b:Lapx;
 
-.field final c:Ldefpackage/amj;
+.field public final c:Ldefpackage/amj;
 
-.field final d:Landroidx/work/impl/WorkDatabase;
+.field public final d:Landroidx/work/impl/WorkDatabase;
 
-.field final e:Ljava/lang/String;
+.field public final e:Ljava/lang/String;
 
-.field f:Ljava/util/List;
+.field public f:Ljava/util/List;
 
-.field final g:Ldefpackage/aso;
+.field public final g:Ldefpackage/aso;
 
 
 # direct methods

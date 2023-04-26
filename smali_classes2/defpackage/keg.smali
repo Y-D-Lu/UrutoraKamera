@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method protected final a()V
+.method public final a()V
     .locals 2
 
     .line 132

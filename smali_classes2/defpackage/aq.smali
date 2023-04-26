@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ar;
+.field public final a:Ldefpackage/ar;
 
-.field b:Ldefpackage/aq;
+.field public b:Ldefpackage/aq;
 
 .field public c:I
 
-.field d:I
+.field public d:I
 
 .field public e:I
 
 .field public f:Ldefpackage/ap;
 
-.field final g:I
+.field public final g:I
 
 .field public h:I
 

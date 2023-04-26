@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final b:Landroid/content/Context;
+.field public final b:Landroid/content/Context;
 
 .field public final c:Ldefpackage/asb;
 
@@ -19,11 +19,11 @@
 
 .field public final e:Ldefpackage/aof;
 
-.field final f:Ldefpackage/aoo;
+.field public final f:Ldefpackage/aoo;
 
-.field final g:Ljava/util/List;
+.field public final g:Ljava/util/List;
 
-.field h:Landroid/content/Intent;
+.field public h:Landroid/content/Intent;
 
 .field public i:Ldefpackage/aov;
 
@@ -33,7 +33,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 17

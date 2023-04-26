@@ -375,5 +375,5 @@
     return-void
 .end method
 
-.method protected abstract h(Ldefpackage/qym;)V
+.method public abstract h(Ldefpackage/qym;)V
 .end method

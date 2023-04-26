@@ -200,7 +200,7 @@
     return v0
 .end method
 
-.method protected final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -505,7 +505,7 @@
     return-void
 .end method
 
-.method protected final l(I)Z
+.method public final l(I)Z
     .locals 4
     .param p1, "i"    # I
 

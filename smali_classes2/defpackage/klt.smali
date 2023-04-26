@@ -8,7 +8,7 @@
 
 .field public final b:Landroid/os/Bundle;
 
-.field final c:Ldefpackage/kmb;
+.field public final c:Ldefpackage/kmb;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method protected abstract a(Ldefpackage/khi;)V
+.method public abstract a(Ldefpackage/khi;)V
 .end method
 
 .method public final b()V
@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method protected abstract c()Z
+.method public abstract c()Z
 .end method
 
 .method public final d()V

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/jvx;
+.field public final b:Ldefpackage/jvx;
 
 
 # direct methods

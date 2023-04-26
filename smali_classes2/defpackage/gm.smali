@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gp;
+.field public final a:Ldefpackage/gp;
 
 
 # direct methods

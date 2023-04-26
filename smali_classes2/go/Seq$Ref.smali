@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method constructor <init>(ILjava/lang/Object;)V
+.method public constructor <init>(ILjava/lang/Object;)V
     .locals 3
     .param p1, "i"    # I
     .param p2, "obj"    # Ljava/lang/Object;
@@ -71,7 +71,7 @@
     throw v0
 .end method
 
-.method static access$110(Lgo/Seq$Ref;)I
+.method public static access$110(Lgo/Seq$Ref;)I
     .locals 2
     .param p0, "ref"    # Lgo/Seq$Ref;
 
@@ -88,7 +88,7 @@
     return v0
 .end method
 
-.method static synthetic access$200(Lgo/Seq$Ref;)I
+.method public static synthetic access$200(Lgo/Seq$Ref;)I
     .locals 1
     .param p0, "x0"    # Lgo/Seq$Ref;
 
@@ -100,7 +100,7 @@
 
 
 # virtual methods
-.method inc()V
+.method public inc()V
     .locals 4
 
     .line 98

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:[B
+.field public final a:[B
 
-.field final b:I
+.field public final b:I
 
-.field final c:I
+.field public final c:I
 
-.field final d:I
+.field public final d:I
 
 
 # direct methods

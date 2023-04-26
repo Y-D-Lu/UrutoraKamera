@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hmy;
+.field public final a:Ldefpackage/hmy;
 
 
 # direct methods

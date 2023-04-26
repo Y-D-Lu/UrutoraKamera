@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field a:Ljava/lang/Runnable;
+.field public a:Ljava/lang/Runnable;
 
-.field final b:Ldefpackage/pig;
+.field public final b:Ldefpackage/pig;
 
 
 # direct methods

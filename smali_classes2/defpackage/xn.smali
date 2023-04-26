@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field a:Ldefpackage/xq;
+.field public a:Ldefpackage/xq;
 
-.field b:Ldefpackage/pht;
+.field public b:Ldefpackage/pht;
 
 
 # direct methods

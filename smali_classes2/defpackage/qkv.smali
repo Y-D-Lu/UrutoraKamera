@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Iterable;
+.field public final a:Ljava/lang/Iterable;
 
 
 # direct methods

@@ -64,7 +64,7 @@
     return-object v1
 .end method
 
-.method protected b()Ljava/lang/String;
+.method public b()Ljava/lang/String;
     .locals 1
 
     .line 22

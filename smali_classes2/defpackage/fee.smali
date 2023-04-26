@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/os/Handler;
+.field public a:Landroid/os/Handler;
 
-.field final b:Ldefpackage/feg;
+.field public final b:Ldefpackage/feg;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
 
 # virtual methods
-.method protected final onLooperPrepared()V
+.method public final onLooperPrepared()V
     .locals 10
 
     .line 22

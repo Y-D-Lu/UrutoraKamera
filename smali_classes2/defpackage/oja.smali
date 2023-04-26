@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field a:Ljava/lang/String;
+.field public a:Ljava/lang/String;
 
-.field b:Ljava/lang/Object;
+.field public b:Ljava/lang/Object;
 
-.field c:Ldefpackage/oja;
+.field public c:Ldefpackage/oja;
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 5

@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field transient a:[Ljava/lang/Object;
+.field public transient a:[Ljava/lang/Object;
 
-.field transient b:[I
+.field public transient b:[I
 
-.field transient c:I
+.field public transient c:I
 
-.field transient d:I
+.field public transient d:I
 
 .field public transient e:[I
 
-.field transient f:[J
+.field public transient f:[J
 
 .field private transient g:F
 
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 17
@@ -1272,7 +1272,7 @@
     return-void
 .end method
 
-.method final j()V
+.method public final j()V
     .locals 5
 
     .line 244

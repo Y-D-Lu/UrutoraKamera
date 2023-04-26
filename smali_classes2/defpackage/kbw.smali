@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/kbx;
+.field public final b:Ldefpackage/kbx;
 
 
 # direct methods

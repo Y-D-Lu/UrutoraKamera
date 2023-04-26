@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fyr;
+.field public final a:Ldefpackage/fyr;
 
 .field private final b:I
 

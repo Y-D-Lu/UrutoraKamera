@@ -408,7 +408,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized c()Z
+.method public final declared-synchronized c()Z
     .locals 3
 
     monitor-enter p0

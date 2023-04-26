@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method protected final b()[B
+.method public final b()[B
     .locals 1
 
     .line 12

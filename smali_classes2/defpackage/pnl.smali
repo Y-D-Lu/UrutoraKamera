@@ -325,7 +325,7 @@
 
 
 # virtual methods
-.method protected abstract b(Ldefpackage/pnm;)Ldefpackage/pnl;
+.method public abstract b(Ldefpackage/pnm;)Ldefpackage/pnl;
 .end method
 
 .method public final c(Ldefpackage/pqm;)Ldefpackage/pql;

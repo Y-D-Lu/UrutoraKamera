@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/goe;
+.field public final a:Ldefpackage/goe;
 
 
 # direct methods

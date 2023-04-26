@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/apq;
+.field public final a:Ldefpackage/apq;
 
 
 # direct methods

@@ -10,11 +10,11 @@
 
 
 # instance fields
-.field f:Ldefpackage/pon;
+.field public f:Ldefpackage/pon;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10

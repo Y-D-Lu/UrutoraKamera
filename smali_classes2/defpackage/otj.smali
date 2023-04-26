@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method protected abstract a(I)Ljava/lang/Object;
+.method public abstract a(I)Ljava/lang/Object;
 .end method
 
 .method public final add(Ljava/lang/Object;)V

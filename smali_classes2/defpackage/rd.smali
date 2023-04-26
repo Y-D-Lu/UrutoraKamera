@@ -13,15 +13,15 @@
 # instance fields
 .field public a:I
 
-.field b:I
+.field public b:I
 
-.field c:[I
+.field public c:[I
 
-.field d:Z
+.field public d:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 11
@@ -36,7 +36,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 17

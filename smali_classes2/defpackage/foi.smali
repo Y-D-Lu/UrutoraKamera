@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gfg;
+.field public final a:Ldefpackage/gfg;
 
-.field final b:Ldefpackage/fuv;
+.field public final b:Ldefpackage/fuv;
 
-.field final c:Ldefpackage/fns;
+.field public final c:Ldefpackage/fns;
 
-.field final d:Ldefpackage/fot;
+.field public final d:Ldefpackage/fot;
 
-.field final e:Z
+.field public final e:Z
 
-.field final f:Ldefpackage/mlk;
+.field public final f:Ldefpackage/mlk;
 
-.field final g:Ljava/io/FileOutputStream;
+.field public final g:Ljava/io/FileOutputStream;
 
-.field final h:Ldefpackage/fou;
+.field public final h:Ldefpackage/fou;
 
 
 # direct methods

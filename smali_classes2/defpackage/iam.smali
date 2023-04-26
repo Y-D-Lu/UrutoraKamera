@@ -23,7 +23,7 @@
 
 .field private h:Ldefpackage/iay;
 
-.field protected final i:Ljava/util/concurrent/ScheduledExecutorService;
+.field public final i:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
@@ -149,13 +149,13 @@
     return-void
 .end method
 
-.method protected abstract d()Ldefpackage/ial;
+.method public abstract d()Ldefpackage/ial;
 .end method
 
-.method protected abstract e(Ldefpackage/lzv;)Z
+.method public abstract e(Ldefpackage/lzv;)Z
 .end method
 
-.method protected f(Ldefpackage/lzv;)Z
+.method public f(Ldefpackage/lzv;)Z
     .locals 1
     .param p1, "lzvVar"    # Ldefpackage/lzv;
 

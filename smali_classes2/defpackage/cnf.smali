@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cng;
+.field public final a:Ldefpackage/cng;
 
 
 # direct methods

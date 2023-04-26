@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;
+.field public final synthetic this$0:Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;
 
-.field final synthetic val$a2:Ldefpackage/pht;
+.field public final synthetic val$a2:Ldefpackage/pht;
 
-.field final synthetic val$goAsync:Landroid/content/BroadcastReceiver$PendingResult;
+.field public final synthetic val$goAsync:Landroid/content/BroadcastReceiver$PendingResult;
 
-.field final synthetic val$stringExtra:Ljava/lang/String;
+.field public final synthetic val$stringExtra:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;Ldefpackage/pht;Ljava/lang/String;Landroid/content/BroadcastReceiver$PendingResult;)V
+.method public constructor <init>(Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;Ldefpackage/pht;Ljava/lang/String;Landroid/content/BroadcastReceiver$PendingResult;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;
 

@@ -119,7 +119,7 @@
     return-object v0
 .end method
 
-.method protected final i()Ldefpackage/oqw;
+.method public final i()Ldefpackage/oqw;
     .locals 1
 
     .line 45

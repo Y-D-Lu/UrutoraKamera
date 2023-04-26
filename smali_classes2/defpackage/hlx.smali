@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;
+.field public final a:Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;
 
 
 # direct methods

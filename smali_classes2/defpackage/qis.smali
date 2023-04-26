@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static final a:Ldefpackage/qiw;
+.field public static final a:Ldefpackage/qiw;
 
-.field static final b:Ldefpackage/qiw;
+.field public static final b:Ldefpackage/qiw;
 
-.field static final c:Ldefpackage/qir;
+.field public static final c:Ldefpackage/qir;
 
-.field static final d:Ldefpackage/qip;
+.field public static final d:Ldefpackage/qip;
 
 .field private static final g:J
 
@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field final e:Ljava/util/concurrent/ThreadFactory;
+.field public final e:Ljava/util/concurrent/ThreadFactory;
 
-.field final f:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final f:Ljava/util/concurrent/atomic/AtomicReference;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 7
 
     .line 16

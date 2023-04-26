@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 20
@@ -157,7 +157,7 @@
     return-void
 .end method
 
-.method protected final finalize()V
+.method public final finalize()V
     .locals 2
 
     .line 55

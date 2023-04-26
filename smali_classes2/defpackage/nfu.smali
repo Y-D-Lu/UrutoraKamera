@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Ldefpackage/phw;
+.field public final b:Ldefpackage/phw;
 
-.field final c:J
+.field public final c:J
 
-.field final d:Ljava/util/concurrent/TimeUnit;
+.field public final d:Ljava/util/concurrent/TimeUnit;
 
 
 # direct methods

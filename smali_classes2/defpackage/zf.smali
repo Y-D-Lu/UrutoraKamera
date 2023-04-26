@@ -4,23 +4,23 @@
 
 
 # static fields
-.field static a:I
+.field public static a:I
 
 
 # instance fields
-.field final b:Ljava/util/ArrayList;
+.field public final b:Ljava/util/ArrayList;
 
 .field public c:I
 
 .field public d:I
 
-.field e:Ljava/util/ArrayList;
+.field public e:Ljava/util/ArrayList;
 
 .field private f:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bky;
+.field public final a:Ldefpackage/bky;
 
-.field final b:Ljava/util/concurrent/Executor;
+.field public final b:Ljava/util/concurrent/Executor;
 
 
 # direct methods

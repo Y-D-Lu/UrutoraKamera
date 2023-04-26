@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mtu;
+.field public final a:Ldefpackage/mtu;
 
-.field final b:Ljava/lang/Iterable;
+.field public final b:Ljava/lang/Iterable;
 
 .field private final c:Z
 

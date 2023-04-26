@@ -9,19 +9,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "AnonymousClass1"
 .end annotation
 
 
 # static fields
-.field static $SwitchMap$android$support$v8$renderscript$Element$DataKind:[I
+.field public static $SwitchMap$android$support$v8$renderscript$Element$DataKind:[I
 
-.field static $SwitchMap$android$support$v8$renderscript$Element$DataType:[I
+.field public static $SwitchMap$android$support$v8$renderscript$Element$DataType:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 23
@@ -382,7 +382,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 18

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Landroidx/wear/widget/drawer/PageIndicatorView;
+.field public final a:Landroidx/wear/widget/drawer/PageIndicatorView;
 
 
 # direct methods

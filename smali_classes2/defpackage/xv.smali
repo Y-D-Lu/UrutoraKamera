@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/ref/WeakReference;
+.field public final a:Ljava/lang/ref/WeakReference;
 
 .field public final b:Ldefpackage/xq;
 

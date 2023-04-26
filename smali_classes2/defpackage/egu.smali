@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/egv;
+.field public final a:Ldefpackage/egv;
 
 
 # direct methods

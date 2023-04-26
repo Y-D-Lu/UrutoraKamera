@@ -338,7 +338,7 @@
     return-void
 .end method
 
-.method protected final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 3
 
     .line 102
@@ -814,7 +814,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 12
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -1020,7 +1020,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 17
     .param p1, "i"    # I
     .param p2, "i2"    # I

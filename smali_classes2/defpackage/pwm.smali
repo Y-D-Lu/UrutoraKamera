@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field a:Ljava/lang/String;
+.field public a:Ljava/lang/String;
 
-.field b:Ljava/lang/String;
+.field public b:Ljava/lang/String;
 
-.field c:Ljava/lang/String;
+.field public c:Ljava/lang/String;
 
-.field d:Ljava/lang/String;
+.field public d:Ljava/lang/String;
 
-.field e:Ljava/lang/Float;
+.field public e:Ljava/lang/Float;
 
-.field f:Ljava/lang/Float;
+.field public f:Ljava/lang/Float;
 
-.field g:Ljava/lang/Float;
+.field public g:Ljava/lang/Float;
 
 
 # direct methods

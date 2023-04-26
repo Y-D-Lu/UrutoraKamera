@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected a()Ljava/lang/Object;
+.method public a()Ljava/lang/Object;
     .locals 1
 
     .line 10
@@ -27,7 +27,7 @@
     throw v0
 .end method
 
-.method protected abstract b()Ljava/util/Map$Entry;
+.method public abstract b()Ljava/util/Map$Entry;
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z

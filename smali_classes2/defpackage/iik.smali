@@ -15,19 +15,19 @@
 
 .field public a:J
 
-.field protected final b:Ldefpackage/fjs;
+.field public final b:Ldefpackage/fjs;
 
 .field public c:Z
 
-.field protected d:Z
+.field public d:Z
 
 .field public e:Z
 
-.field protected f:Z
+.field public f:Z
 
 .field public g:Lcom/google/android/libraries/camera/exif/ExifInterface;
 
-.field protected h:Ljava/util/List;
+.field public h:Ljava/util/List;
 
 .field public i:Ldefpackage/fjw;
 
@@ -55,7 +55,7 @@
 
 .field public final u:Ldefpackage/pih;
 
-.field v:Z
+.field public v:Z
 
 .field public w:Ldefpackage/fkb;
 
@@ -65,7 +65,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 18

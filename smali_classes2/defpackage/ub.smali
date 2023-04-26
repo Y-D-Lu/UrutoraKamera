@@ -17,7 +17,7 @@
 
 .field public final f:Ldefpackage/ug;
 
-.field final g:Ldefpackage/ajn;
+.field public final g:Ldefpackage/ajn;
 
 .field public final h:Ldefpackage/ue;
 

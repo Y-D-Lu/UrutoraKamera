@@ -12,25 +12,25 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbq;
+.field public final a:Ldefpackage/qbq;
 
-.field final b:Ldefpackage/qbs;
+.field public final b:Ldefpackage/qbs;
 
-.field final c:I
+.field public final c:I
 
-.field d:Ldefpackage/qdl;
+.field public d:Ldefpackage/qdl;
 
-.field e:Ldefpackage/qbz;
+.field public e:Ldefpackage/qbz;
 
-.field f:Ljava/lang/Throwable;
+.field public f:Ljava/lang/Throwable;
 
-.field volatile g:Z
+.field public volatile g:Z
 
-.field volatile h:Z
+.field public volatile h:Z
 
-.field i:I
+.field public i:I
 
-.field j:Z
+.field public j:Z
 
 
 # direct methods
@@ -134,7 +134,7 @@
     return-void
 .end method
 
-.method final f()V
+.method public final f()V
     .locals 1
 
     .line 52
@@ -154,7 +154,7 @@
     return-void
 .end method
 
-.method final g(ZZLdefpackage/qbq;)Z
+.method public final g(ZZLdefpackage/qbq;)Z
     .locals 3
     .param p1, "z"    # Z
     .param p2, "z2"    # Z

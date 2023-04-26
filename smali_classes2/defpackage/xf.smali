@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static d:[Ljava/lang/Object;
+.field public static d:[Ljava/lang/Object;
 
-.field static e:I
+.field public static e:I
 
-.field static f:[Ljava/lang/Object;
+.field public static f:[Ljava/lang/Object;
 
-.field static g:I
+.field public static g:I
 
 
 # instance fields
@@ -443,7 +443,7 @@
 
 
 # virtual methods
-.method final b(Ljava/lang/Object;I)I
+.method public final b(Ljava/lang/Object;I)I
     .locals 6
     .param p1, "obj"    # Ljava/lang/Object;
     .param p2, "i"    # I

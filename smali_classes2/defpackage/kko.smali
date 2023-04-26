@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+.field public final a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ldefpackage/kkp;
+.field public final c:Ldefpackage/kkp;
 
 
 # direct methods

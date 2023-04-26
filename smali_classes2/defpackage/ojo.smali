@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/CharSequence;
+.field public final a:Ljava/lang/CharSequence;
 
-.field final b:Ldefpackage/ojq;
+.field public final b:Ldefpackage/ojq;
 
 
 # direct methods

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/location/Location;
+.field public final a:Landroid/location/Location;
 
-.field b:Z
+.field public b:Z
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
 
 # direct methods

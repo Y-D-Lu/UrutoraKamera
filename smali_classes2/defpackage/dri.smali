@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/hardware/Sensor;
+.field public final a:Landroid/hardware/Sensor;
 
-.field final b:Landroid/hardware/SensorEventListener;
+.field public final b:Landroid/hardware/SensorEventListener;
 
 
 # direct methods

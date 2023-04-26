@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
 .field public final b:Landroid/net/Uri;
 
@@ -14,13 +14,13 @@
 
 .field public final e:Z
 
-.field final f:Z
+.field public final f:Z
 
-.field final g:Z
+.field public final g:Z
 
 .field public final h:Z
 
-.field final i:Ldefpackage/oiu;
+.field public final i:Ldefpackage/oiu;
 
 
 # direct methods

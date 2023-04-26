@@ -9,7 +9,7 @@
 # instance fields
 .field public a:Z
 
-.field final b:Ldefpackage/gob;
+.field public final b:Ldefpackage/gob;
 
 
 # direct methods

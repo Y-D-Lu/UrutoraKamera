@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final b:Ldefpackage/qcn;
+.field public final b:Ldefpackage/qcn;
 
-.field final c:Ldefpackage/qcn;
+.field public final c:Ldefpackage/qcn;
 
 
 # direct methods

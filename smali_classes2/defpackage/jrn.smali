@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/function/Consumer;
+.field public final a:Ljava/util/function/Consumer;
 
 
 # direct methods

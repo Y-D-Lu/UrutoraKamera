@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Exception;
+.field public final a:Ljava/lang/Exception;
 
 .field private final b:I
 

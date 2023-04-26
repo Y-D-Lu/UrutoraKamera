@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fnc;
+.field public final a:Ldefpackage/fnc;
 
 
 # direct methods

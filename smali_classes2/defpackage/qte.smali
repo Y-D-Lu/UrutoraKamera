@@ -22,7 +22,7 @@
 
 
 # virtual methods
-.method protected final f(Ljava/lang/Throwable;Z)V
+.method public final f(Ljava/lang/Throwable;Z)V
     .locals 1
     .param p1, "th"    # Ljava/lang/Throwable;
     .param p2, "z"    # Z

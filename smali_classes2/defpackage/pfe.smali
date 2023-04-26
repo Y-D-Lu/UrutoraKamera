@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:Ljava/time/Duration;
+.field public static final a:Ljava/time/Duration;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 7
 
     .line 12

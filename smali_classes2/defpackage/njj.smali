@@ -28,7 +28,7 @@
     throw v0
 .end method
 
-.method protected abstract b()Ldefpackage/nji;
+.method public abstract b()Ldefpackage/nji;
 .end method
 
 .method public c(Landroid/net/Uri;)Ljava/io/File;

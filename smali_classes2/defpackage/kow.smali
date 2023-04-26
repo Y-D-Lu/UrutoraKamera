@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kpb;
+.field public final a:Ldefpackage/kpb;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected final b(Lkhz;)V
+.method public final b(Lkhz;)V
     .locals 28
     .param p1, "khzVar"    # Lkhz;
 

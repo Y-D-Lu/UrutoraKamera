@@ -6,27 +6,27 @@
 # instance fields
 .field public a:[I
 
-.field b:Ldefpackage/dy;
+.field public b:Ldefpackage/dy;
 
-.field c:F
+.field public c:F
 
-.field d:Ldefpackage/dy;
+.field public d:Ldefpackage/dy;
 
-.field e:F
+.field public e:F
 
-.field f:F
+.field public f:F
 
-.field g:F
+.field public g:F
 
-.field h:F
+.field public h:F
 
-.field i:F
+.field public i:F
 
-.field j:Landroid/graphics/Paint$Cap;
+.field public j:Landroid/graphics/Paint$Cap;
 
-.field k:Landroid/graphics/Paint$Join;
+.field public k:Landroid/graphics/Paint$Join;
 
-.field l:F
+.field public l:F
 
 
 # direct methods
@@ -196,7 +196,7 @@
 
 
 # virtual methods
-.method getFillAlpha()F
+.method public getFillAlpha()F
     .locals 1
 
     .line 63
@@ -205,7 +205,7 @@
     return v0
 .end method
 
-.method getFillColor()I
+.method public getFillColor()I
     .locals 1
 
     .line 67
@@ -216,7 +216,7 @@
     return v0
 .end method
 
-.method getStrokeAlpha()F
+.method public getStrokeAlpha()F
     .locals 1
 
     .line 71
@@ -225,7 +225,7 @@
     return v0
 .end method
 
-.method getStrokeColor()I
+.method public getStrokeColor()I
     .locals 1
 
     .line 75
@@ -236,7 +236,7 @@
     return v0
 .end method
 
-.method getStrokeWidth()F
+.method public getStrokeWidth()F
     .locals 1
 
     .line 79
@@ -245,7 +245,7 @@
     return v0
 .end method
 
-.method getTrimPathEnd()F
+.method public getTrimPathEnd()F
     .locals 1
 
     .line 83
@@ -254,7 +254,7 @@
     return v0
 .end method
 
-.method getTrimPathOffset()F
+.method public getTrimPathOffset()F
     .locals 1
 
     .line 87
@@ -263,7 +263,7 @@
     return v0
 .end method
 
-.method getTrimPathStart()F
+.method public getTrimPathStart()F
     .locals 1
 
     .line 91
@@ -329,7 +329,7 @@
     return v0
 .end method
 
-.method setFillAlpha(F)V
+.method public setFillAlpha(F)V
     .locals 0
     .param p1, "f"    # F
 
@@ -340,7 +340,7 @@
     return-void
 .end method
 
-.method setFillColor(I)V
+.method public setFillColor(I)V
     .locals 1
     .param p1, "i"    # I
 
@@ -353,7 +353,7 @@
     return-void
 .end method
 
-.method setStrokeAlpha(F)V
+.method public setStrokeAlpha(F)V
     .locals 0
     .param p1, "f"    # F
 
@@ -364,7 +364,7 @@
     return-void
 .end method
 
-.method setStrokeColor(I)V
+.method public setStrokeColor(I)V
     .locals 1
     .param p1, "i"    # I
 
@@ -377,7 +377,7 @@
     return-void
 .end method
 
-.method setStrokeWidth(F)V
+.method public setStrokeWidth(F)V
     .locals 0
     .param p1, "f"    # F
 
@@ -388,7 +388,7 @@
     return-void
 .end method
 
-.method setTrimPathEnd(F)V
+.method public setTrimPathEnd(F)V
     .locals 0
     .param p1, "f"    # F
 
@@ -399,7 +399,7 @@
     return-void
 .end method
 
-.method setTrimPathOffset(F)V
+.method public setTrimPathOffset(F)V
     .locals 0
     .param p1, "f"    # F
 
@@ -410,7 +410,7 @@
     return-void
 .end method
 
-.method setTrimPathStart(F)V
+.method public setTrimPathStart(F)V
     .locals 0
     .param p1, "f"    # F
 

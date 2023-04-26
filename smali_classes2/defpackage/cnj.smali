@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cnk;
+.field public final a:Ldefpackage/cnk;
 
 
 # direct methods

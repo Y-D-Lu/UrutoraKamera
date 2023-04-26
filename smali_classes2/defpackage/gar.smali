@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:Ldefpackage/lmr;
 
-.field final b:Ldefpackage/gas;
+.field public final b:Ldefpackage/gas;
 
 .field private final c:Ldefpackage/gfs;
 

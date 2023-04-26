@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jvg;
+.field public final a:Ldefpackage/jvg;
 
 
 # direct methods

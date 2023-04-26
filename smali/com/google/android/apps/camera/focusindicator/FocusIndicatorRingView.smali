@@ -92,7 +92,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/Context;Ldefpackage/duj;Ldefpackage/dul;)V
+.method public constructor <init>(Landroid/content/Context;Ldefpackage/duj;Ldefpackage/dul;)V
     .locals 2
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "dujVar"    # Ldefpackage/duj;
@@ -128,7 +128,7 @@
     return-void
 .end method
 
-.method static a(Ldefpackage/jrz;)I
+.method public static a(Ldefpackage/jrz;)I
     .locals 3
     .param p0, "jrzVar"    # Ldefpackage/jrz;
 
@@ -230,7 +230,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 1
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -251,7 +251,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 12
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -483,7 +483,7 @@
     .end packed-switch
 .end method
 
-.method protected final onSizeChanged(IIII)V
+.method public final onSizeChanged(IIII)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

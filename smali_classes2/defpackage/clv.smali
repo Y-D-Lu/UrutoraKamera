@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/clx;
+.field public final a:Ldefpackage/clx;
 
 
 # direct methods

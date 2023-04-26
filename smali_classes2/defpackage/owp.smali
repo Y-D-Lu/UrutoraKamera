@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 9
@@ -185,7 +185,7 @@
 
 
 # virtual methods
-.method protected c()J
+.method public c()J
     .locals 3
 
     .line 52
@@ -202,13 +202,13 @@
     return-wide v0
 .end method
 
-.method protected abstract e(Ljava/lang/String;)Ldefpackage/ovr;
+.method public abstract e(Ljava/lang/String;)Ldefpackage/ovr;
 .end method
 
-.method protected abstract h()Ldefpackage/owo;
+.method public abstract h()Ldefpackage/owo;
 .end method
 
-.method protected j()Ldefpackage/oxh;
+.method public j()Ldefpackage/oxh;
     .locals 1
 
     .line 60
@@ -217,5 +217,5 @@
     return-object v0
 .end method
 
-.method protected abstract m()Ljava/lang/String;
+.method public abstract m()Ljava/lang/String;
 .end method

@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field protected mAllocation:Landroid/support/v8/renderscript/Allocation;
+.field public mAllocation:Landroid/support/v8/renderscript/Allocation;
 
-.field protected mElement:Landroid/support/v8/renderscript/Element;
+.field public mElement:Landroid/support/v8/renderscript/Element;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/Script;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/Script;
 
 
 # direct methods
-.method protected constructor <init>(Landroid/support/v8/renderscript/Script;)V
+.method public constructor <init>(Landroid/support/v8/renderscript/Script;)V
     .locals 0
     .param p1, "this$0"    # Landroid/support/v8/renderscript/Script;
 
@@ -69,7 +69,7 @@
     return-object v0
 .end method
 
-.method protected init(Landroid/support/v8/renderscript/RenderScript;I)V
+.method public init(Landroid/support/v8/renderscript/RenderScript;I)V
     .locals 2
     .param p1, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;
     .param p2, "i"    # I
@@ -89,7 +89,7 @@
     return-void
 .end method
 
-.method protected init(Landroid/support/v8/renderscript/RenderScript;II)V
+.method public init(Landroid/support/v8/renderscript/RenderScript;II)V
     .locals 2
     .param p1, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;
     .param p2, "i"    # I

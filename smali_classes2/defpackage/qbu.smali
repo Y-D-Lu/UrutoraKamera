@@ -309,5 +309,5 @@
     throw v1
 .end method
 
-.method protected abstract o(Ldefpackage/qbv;)V
+.method public abstract o(Ldefpackage/qbv;)V
 .end method

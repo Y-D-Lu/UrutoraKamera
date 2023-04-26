@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/widget/TextView;
+.field public final a:Landroid/widget/TextView;
 
-.field final b:Landroid/graphics/Typeface;
+.field public final b:Landroid/graphics/Typeface;
 
-.field final c:I
+.field public final c:I
 
 
 # direct methods

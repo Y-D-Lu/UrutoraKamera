@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qot;
+.field public final a:Ldefpackage/qot;
 
 .field private final b:Ljava/util/Iterator;
 

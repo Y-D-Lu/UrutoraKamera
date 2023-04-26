@@ -1072,7 +1072,7 @@
     return v0
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 0
 
     .line 391
@@ -1088,7 +1088,7 @@
     return-void
 .end method
 
-.method final e()V
+.method public final e()V
     .locals 5
 
     .line 397
@@ -1197,7 +1197,7 @@
     return-void
 .end method
 
-.method final f()V
+.method public final f()V
     .locals 8
 
     .line 420
@@ -1403,7 +1403,7 @@
     return-void
 .end method
 
-.method protected final onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 3
 
     .line 477
@@ -1432,7 +1432,7 @@
     return-void
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 2
 
     .line 487
@@ -1457,7 +1457,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 5
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -1523,7 +1523,7 @@
     return-void
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Parcelable;)V
+.method public final onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 6
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
@@ -1628,7 +1628,7 @@
     return-void
 .end method
 
-.method protected final onSaveInstanceState()Landroid/os/Parcelable;
+.method public final onSaveInstanceState()Landroid/os/Parcelable;
     .locals 7
 
     .line 527

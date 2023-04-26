@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ory;
+.field public static final a:Ldefpackage/ory;
 
 
 # instance fields
-.field final transient d:Ldefpackage/oom;
+.field public final transient d:Ldefpackage/oom;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 13

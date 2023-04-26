@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cbv;
+.field public final a:Ldefpackage/cbv;
 
-.field final b:Ldefpackage/krd;
+.field public final b:Ldefpackage/krd;
 
 
 # direct methods

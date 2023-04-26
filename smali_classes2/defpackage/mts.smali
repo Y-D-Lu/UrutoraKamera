@@ -145,7 +145,7 @@
     return-void
 .end method
 
-.method protected final d()Ljava/lang/Object;
+.method public final d()Ljava/lang/Object;
     .locals 2
 
     .line 45

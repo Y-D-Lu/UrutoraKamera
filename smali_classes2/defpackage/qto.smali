@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field public a:Ljava/lang/Object;
 
-.field b:I
+.field public b:I
 
-.field final c:Ldefpackage/qtp;
+.field public final c:Ldefpackage/qtp;
 
 
 # direct methods

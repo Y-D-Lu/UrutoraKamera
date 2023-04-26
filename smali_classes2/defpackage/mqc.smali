@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Ljava/lang/Throwable;
+.field public final b:Ljava/lang/Throwable;
 
-.field final c:Ldefpackage/mqd;
+.field public final c:Ldefpackage/mqd;
 
 
 # direct methods

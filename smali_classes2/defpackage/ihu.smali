@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
 .field private final b:Ldefpackage/ihw;
 

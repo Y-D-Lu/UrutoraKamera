@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10
@@ -920,10 +920,10 @@
     return-void
 .end method
 
-.method protected abstract a()Ldefpackage/oxy;
+.method public abstract a()Ldefpackage/oxy;
 .end method
 
-.method protected b(Lout;)Z
+.method public b(Lout;)Z
     .locals 1
     .param p1, "outVar"    # Lout;
 
@@ -933,10 +933,10 @@
     throw v0
 .end method
 
-.method protected abstract c()Ldefpackage/oue;
+.method public abstract c()Ldefpackage/oue;
 .end method
 
-.method protected abstract d()Ldefpackage/ova;
+.method public abstract d()Ldefpackage/ova;
 .end method
 
 .method public final e()J

@@ -80,7 +80,7 @@
     return-void
 .end method
 
-.method protected final c(Ljava/lang/Object;[Ljava/lang/Object;)V
+.method public final c(Ljava/lang/Object;[Ljava/lang/Object;)V
     .locals 10
     .param p1, "obj"    # Ljava/lang/Object;
     .param p2, "objArr"    # [Ljava/lang/Object;

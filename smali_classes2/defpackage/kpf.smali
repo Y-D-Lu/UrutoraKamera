@@ -10,11 +10,11 @@
 # instance fields
 .field public a:I
 
-.field b:I
+.field public b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

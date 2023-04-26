@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final d:Ldefpackage/gy;
+.field public static final d:Ldefpackage/gy;
 
 
 # instance fields
-.field final e:Ldefpackage/gy;
+.field public final e:Ldefpackage/gy;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

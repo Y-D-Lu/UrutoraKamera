@@ -12,7 +12,7 @@
 
 .field private static final g:Ljava/util/Locale;
 
-.field static final serialVersionUID:J = 0x6308eb804ceb42dcL
+.field public static final serialVersionUID:J = 0x6308eb804ceb42dcL
 
 
 # instance fields
@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 27

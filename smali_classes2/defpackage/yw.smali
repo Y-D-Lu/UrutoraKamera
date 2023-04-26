@@ -14,7 +14,7 @@
 
 .field public final e:Ljava/util/ArrayList;
 
-.field final f:Ljava/util/ArrayList;
+.field public final f:Ljava/util/ArrayList;
 
 .field public g:Ldefpackage/zl;
 

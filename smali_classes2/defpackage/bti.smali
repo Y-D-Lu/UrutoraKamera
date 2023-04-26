@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/btj;
+.field public final a:Ldefpackage/btj;
 
 
 # direct methods

@@ -50,17 +50,17 @@
 
 .field private final O:Ldefpackage/jye;
 
-.field b:J
+.field public b:J
 
-.field c:Z
+.field public c:Z
 
-.field d:I
+.field public d:I
 
-.field e:I
+.field public e:I
 
-.field f:Ljava/lang/Runnable;
+.field public f:Ljava/lang/Runnable;
 
-.field g:Ljava/lang/Runnable;
+.field public g:Ljava/lang/Runnable;
 
 .field public h:Z
 
@@ -82,7 +82,7 @@
 
 .field public final q:Ldefpackage/jng;
 
-.field final r:Ldefpackage/idd;
+.field public final r:Ldefpackage/idd;
 
 .field public s:Ljava/lang/String;
 
@@ -100,7 +100,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 56

@@ -8,9 +8,9 @@
 
 .field public static final b:Z
 
-.field static final c:J
+.field public static final c:J
 
-.field static final d:Z
+.field public static final d:Z
 
 .field private static final e:Lsun/misc/Unsafe;
 
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 24
 
     .line 33
@@ -1231,7 +1231,7 @@
     return-void
 .end method
 
-.method static v(Ljava/lang/Class;)Z
+.method public static v(Ljava/lang/Class;)Z
     .locals 10
     .param p0, "cls"    # Ljava/lang/Class;
 

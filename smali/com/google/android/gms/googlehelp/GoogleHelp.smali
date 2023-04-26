@@ -11,92 +11,92 @@
 
 
 # instance fields
-.field A:Z
+.field public A:Z
 
-.field B:Z
+.field public B:Z
 
-.field C:I
+.field public C:I
 
-.field D:Ljava/lang/String;
+.field public D:Ljava/lang/String;
 
-.field E:Z
+.field public E:Z
 
-.field F:Ljava/lang/String;
+.field public F:Ljava/lang/String;
 
-.field G:Z
+.field public G:Z
 
-.field H:Lcom/google/android/gms/googlehelp/ND4CSettings;
+.field public H:Lcom/google/android/gms/googlehelp/ND4CSettings;
 
-.field final a:I
+.field public final a:I
 
-.field b:Ljava/lang/String;
+.field public b:Ljava/lang/String;
 
-.field c:Landroid/accounts/Account;
+.field public c:Landroid/accounts/Account;
 
-.field d:Landroid/os/Bundle;
+.field public d:Landroid/os/Bundle;
 
-.field e:Ljava/lang/String;
+.field public e:Ljava/lang/String;
 
-.field f:Ljava/lang/String;
+.field public f:Ljava/lang/String;
 
-.field g:Landroid/graphics/Bitmap;
+.field public g:Landroid/graphics/Bitmap;
 
-.field h:Z
+.field public h:Z
 
-.field i:Z
+.field public i:Z
 
-.field j:Ljava/util/List;
+.field public j:Ljava/util/List;
 
-.field k:Landroid/os/Bundle;
+.field public k:Landroid/os/Bundle;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field l:Landroid/graphics/Bitmap;
+.field public l:Landroid/graphics/Bitmap;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field m:[B
+.field public m:[B
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field n:I
+.field public n:I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field o:I
+.field public o:I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field p:Ljava/lang/String;
+.field public p:Ljava/lang/String;
 
 .field public q:Landroid/net/Uri;
 
-.field r:Ljava/util/List;
+.field public r:Ljava/util/List;
 
-.field s:Ldefpackage/kpf;
+.field public s:Ldefpackage/kpf;
 
-.field t:Ljava/util/List;
+.field public t:Ljava/util/List;
 
-.field u:Z
+.field public u:Z
 
-.field v:Lcom/google/android/gms/feedback/ErrorReport;
+.field public v:Lcom/google/android/gms/feedback/ErrorReport;
 
 .field public w:Lcom/google/android/gms/googlehelp/internal/common/TogglingData;
 
-.field x:I
+.field public x:I
 
-.field y:Landroid/app/PendingIntent;
+.field public y:Landroid/app/PendingIntent;
 
 .field public z:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 27

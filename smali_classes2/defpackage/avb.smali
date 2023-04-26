@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/hardware/Camera$AutoFocusCallback;
+.field public final a:Landroid/hardware/Camera$AutoFocusCallback;
 
-.field final b:Ldefpackage/avf;
+.field public final b:Ldefpackage/avf;
 
 
 # direct methods

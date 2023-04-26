@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Landroid/content/Context;
+.field public final b:Landroid/content/Context;
 
-.field final c:Ldefpackage/abf;
+.field public final c:Ldefpackage/abf;
 
-.field final d:I
+.field public final d:I
 
 
 # direct methods

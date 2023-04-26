@@ -8,25 +8,25 @@
 
 
 # static fields
-.field static final a:[Ldefpackage/qgl;
+.field public static final a:[Ldefpackage/qgl;
 
-.field static final b:[Ldefpackage/qgl;
+.field public static final b:[Ldefpackage/qgl;
 
 .field private static final serialVersionUID:J = -0x2d1f6696927d02d4L
 
 
 # instance fields
-.field final c:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final c:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final d:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final d:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final e:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final e:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field f:Ljava/lang/Throwable;
+.field public f:Ljava/lang/Throwable;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

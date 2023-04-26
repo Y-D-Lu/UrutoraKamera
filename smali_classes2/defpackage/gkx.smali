@@ -10,7 +10,7 @@
 
 .field public final c:Ldefpackage/hih;
 
-.field final d:Ldefpackage/gky;
+.field public final d:Ldefpackage/gky;
 
 .field public final e:Ldefpackage/glz;
 

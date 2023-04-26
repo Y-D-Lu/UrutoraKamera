@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/mvi;
+.field public final synthetic this$0:Ldefpackage/mvi;
 
-.field final synthetic val$intValue:I
+.field public final synthetic val$intValue:I
 
-.field final synthetic val$kuuVar:Ldefpackage/kuu;
+.field public final synthetic val$kuuVar:Ldefpackage/kuu;
 
-.field final synthetic val$str:Ljava/lang/String;
+.field public final synthetic val$str:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/mvi;Ljava/lang/String;ILdefpackage/kuu;)V
+.method public constructor <init>(Ldefpackage/mvi;Ljava/lang/String;ILdefpackage/kuu;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/mvi;
 

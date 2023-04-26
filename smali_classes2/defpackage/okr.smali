@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/okt;
+.field public final a:Ldefpackage/okt;
 
 
 # direct methods

@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method protected constructor <init>(JLandroid/support/v8/renderscript/RenderScript;Landroid/support/v8/renderscript/Element;)V
+.method public constructor <init>(JLandroid/support/v8/renderscript/RenderScript;Landroid/support/v8/renderscript/Element;)V
     .locals 0
     .param p1, "j"    # J
     .param p3, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;

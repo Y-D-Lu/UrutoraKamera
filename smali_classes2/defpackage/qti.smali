@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method protected final i()Z
+.method public final i()Z
     .locals 1
 
     .line 8
@@ -33,7 +33,7 @@
     return v0
 .end method
 
-.method protected final x()Z
+.method public final x()Z
     .locals 1
 
     .line 19

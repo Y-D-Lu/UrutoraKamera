@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/io/File;
+.field public final a:Ljava/io/File;
 
 
 # direct methods

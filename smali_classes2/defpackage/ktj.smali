@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/location/Location;
+.field public final a:Landroid/location/Location;
 
 
 # direct methods

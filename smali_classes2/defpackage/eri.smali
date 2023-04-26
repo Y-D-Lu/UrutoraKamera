@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Ljava/lang/Runnable;
+.field public final b:Ljava/lang/Runnable;
 
-.field final c:Ldefpackage/erj;
+.field public final c:Ldefpackage/erj;
 
 
 # direct methods

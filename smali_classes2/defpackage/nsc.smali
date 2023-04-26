@@ -17,7 +17,7 @@
 # instance fields
 .field public a:Ljava/lang/Object;
 
-.field final b:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250Worker;
+.field public final b:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250Worker;
 
 .field public c:I
 

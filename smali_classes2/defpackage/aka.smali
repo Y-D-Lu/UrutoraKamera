@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:[Ldefpackage/ajy;
+.field public final a:[Ldefpackage/ajy;
 
-.field final b:Ldefpackage/ajq;
+.field public final b:Ldefpackage/ajq;
 
 .field private c:Z
 
@@ -87,7 +87,7 @@
 
 
 # virtual methods
-.method final a(Landroid/database/sqlite/SQLiteDatabase;)Ldefpackage/ajy;
+.method public final a(Landroid/database/sqlite/SQLiteDatabase;)Ldefpackage/ajy;
     .locals 1
     .param p1, "sQLiteDatabase"    # Landroid/database/sqlite/SQLiteDatabase;
 

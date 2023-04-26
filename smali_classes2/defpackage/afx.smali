@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/preference/DropDownPreference;
+.field public final a:Landroidx/preference/DropDownPreference;
 
 
 # direct methods

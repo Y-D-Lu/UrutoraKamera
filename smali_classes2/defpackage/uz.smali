@@ -11,7 +11,7 @@
 
 .field public final b:Ljava/lang/Object;
 
-.field c:Ldefpackage/uz;
+.field public c:Ldefpackage/uz;
 
 .field public d:Ldefpackage/uz;
 

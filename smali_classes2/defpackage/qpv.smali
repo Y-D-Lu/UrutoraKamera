@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final a:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # direct methods

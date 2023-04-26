@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final aa:Ljava/util/Set;
+.field public final aa:Ljava/util/Set;
 
-.field ab:Z
+.field public ab:Z
 
-.field ac:[Ljava/lang/CharSequence;
+.field public ac:[Ljava/lang/CharSequence;
 
-.field ad:[Ljava/lang/CharSequence;
+.field public ad:[Ljava/lang/CharSequence;
 
 
 # direct methods
@@ -130,7 +130,7 @@
     return-void
 .end method
 
-.method protected final fq(Ldefpackage/id;)V
+.method public final fq(Ldefpackage/id;)V
     .locals 6
     .param p1, "idVar"    # Ldefpackage/id;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/content/Context;
+.field public final a:Landroid/content/Context;
 
-.field final b:Ldefpackage/jw;
+.field public final b:Ldefpackage/jw;
 
 
 # direct methods

@@ -153,7 +153,7 @@
 
 
 # virtual methods
-.method protected c()V
+.method public c()V
     .locals 4
 
     .line 52

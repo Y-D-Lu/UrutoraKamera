@@ -1756,7 +1756,7 @@
     return v0
 .end method
 
-.method protected onAttachedToWindow()V
+.method public onAttachedToWindow()V
     .locals 1
 
     .line 361
@@ -1783,7 +1783,7 @@
     return-void
 .end method
 
-.method protected final onCreateDrawableState(I)[I
+.method public final onCreateDrawableState(I)[I
     .locals 2
     .param p1, "i"    # I
 
@@ -1941,7 +1941,7 @@
     return-object v0
 .end method
 
-.method protected final onSizeChanged(IIII)V
+.method public final onSizeChanged(IIII)V
     .locals 0
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -1958,7 +1958,7 @@
     return-void
 .end method
 
-.method protected final onTextChanged(Ljava/lang/CharSequence;III)V
+.method public final onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
     .param p1, "charSequence"    # Ljava/lang/CharSequence;
     .param p2, "i"    # I

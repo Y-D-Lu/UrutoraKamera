@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:Ljava/lang/Object;
+.field public b:Ljava/lang/Object;
 
-.field final c:Ldefpackage/qud;
+.field public final c:Ldefpackage/qud;
 
 
 # direct methods

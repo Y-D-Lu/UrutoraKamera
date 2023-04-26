@@ -10,9 +10,9 @@
 # instance fields
 .field public final c:Ljava/util/concurrent/FutureTask;
 
-.field final d:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final e:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 .field public volatile f:I
 

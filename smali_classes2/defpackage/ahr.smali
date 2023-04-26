@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/preference/SwitchPreference;
+.field public final a:Landroidx/preference/SwitchPreference;
 
 
 # direct methods

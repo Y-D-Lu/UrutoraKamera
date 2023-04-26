@@ -4,21 +4,21 @@
 
 
 # static fields
-.field static final a:Lsun/misc/Unsafe;
+.field public static final a:Lsun/misc/Unsafe;
 
-.field static final b:J
+.field public static final b:J
 
-.field static final c:J
+.field public static final c:J
 
-.field static final d:J
+.field public static final d:J
 
-.field static final e:J
+.field public static final e:J
 
-.field static final f:J
+.field public static final f:J
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 5
 
     .line 21
@@ -183,7 +183,7 @@
     throw v2
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 10

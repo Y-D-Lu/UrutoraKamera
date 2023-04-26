@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Future;
+.field public final a:Ljava/util/concurrent/Future;
 
 
 # direct methods

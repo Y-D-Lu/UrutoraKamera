@@ -483,7 +483,7 @@
     throw v1
 .end method
 
-.method protected final i()Z
+.method public final i()Z
     .locals 1
 
     .line 124
@@ -616,7 +616,7 @@
     throw v1
 .end method
 
-.method protected final p(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final p(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 11
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -1016,7 +1016,7 @@
     .end packed-switch
 .end method
 
-.method protected final t()Ljava/lang/String;
+.method public final t()Ljava/lang/String;
     .locals 2
 
     .line 257
@@ -1053,7 +1053,7 @@
     return-object v0
 .end method
 
-.method protected final x()Z
+.method public final x()Z
     .locals 1
 
     .line 262

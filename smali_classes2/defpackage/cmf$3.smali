@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/cmf;
+.field public final synthetic this$0:Ldefpackage/cmf;
 
-.field final synthetic val$boaVar:Ldefpackage/boa;
+.field public final synthetic val$boaVar:Ldefpackage/boa;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/cmf;Ldefpackage/boa;)V
+.method public constructor <init>(Ldefpackage/cmf;Ldefpackage/boa;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/cmf;
 

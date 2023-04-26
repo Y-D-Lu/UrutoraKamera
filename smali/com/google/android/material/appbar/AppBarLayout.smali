@@ -744,7 +744,7 @@
     throw v0
 .end method
 
-.method protected static final m()Ldefpackage/nwv;
+.method public static final m()Ldefpackage/nwv;
     .locals 1
 
     .line 839
@@ -755,7 +755,7 @@
     return-object v0
 .end method
 
-.method protected static final n(Landroid/view/ViewGroup$LayoutParams;)Ldefpackage/nwv;
+.method public static final n(Landroid/view/ViewGroup$LayoutParams;)Ldefpackage/nwv;
     .locals 2
     .param p0, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -953,7 +953,7 @@
     return-object v0
 .end method
 
-.method final b()I
+.method public final b()I
     .locals 10
 
     .line 882
@@ -1122,7 +1122,7 @@
     return v2
 .end method
 
-.method final c()I
+.method public final c()I
     .locals 9
 
     .line 909
@@ -1256,7 +1256,7 @@
     goto :goto_0
 .end method
 
-.method protected final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -1383,7 +1383,7 @@
     return-void
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 3
 
     .line 968
@@ -1429,7 +1429,7 @@
     return-void
 .end method
 
-.method final e()I
+.method public final e()I
     .locals 2
 
     .line 978
@@ -1615,7 +1615,7 @@
     goto :goto_0
 .end method
 
-.method protected bridge synthetic generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public bridge synthetic generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
     .line 67
@@ -1626,7 +1626,7 @@
     return-object v0
 .end method
 
-.method protected final generateDefaultLayoutParams()Landroid/widget/LinearLayout$LayoutParams;
+.method public final generateDefaultLayoutParams()Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
 
     .line 1032
@@ -1637,7 +1637,7 @@
     return-object v0
 .end method
 
-.method protected bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
 
     .line 67
@@ -1648,7 +1648,7 @@
     return-object p1
 .end method
 
-.method protected final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
+.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -1660,7 +1660,7 @@
     return-object v0
 .end method
 
-.method final h(I)V
+.method public final h(I)V
     .locals 18
     .param p1, "i"    # I
 
@@ -2040,7 +2040,7 @@
     return-void
 .end method
 
-.method final k(Z)Z
+.method public final k(Z)Z
     .locals 8
     .param p1, "z"    # Z
 
@@ -2189,7 +2189,7 @@
     return v1
 .end method
 
-.method final l(Landroid/view/View;)Z
+.method public final l(Landroid/view/View;)Z
     .locals 6
     .param p1, "view"    # Landroid/view/View;
 
@@ -2314,7 +2314,7 @@
     return v2
 .end method
 
-.method protected final mo51generateDefaultLayoutParams()Landroid/widget/LinearLayout$LayoutParams;
+.method public final mo51generateDefaultLayoutParams()Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
 
     .line 1038
@@ -2341,7 +2341,7 @@
     return-object v0
 .end method
 
-.method protected final mo53generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
+.method public final mo53generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -2353,7 +2353,7 @@
     return-object v0
 .end method
 
-.method protected final onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 0
 
     .line 1165
@@ -2366,7 +2366,7 @@
     return-void
 .end method
 
-.method protected final onCreateDrawableState(I)[I
+.method public final onCreateDrawableState(I)[I
     .locals 9
     .param p1, "i"    # I
 
@@ -2509,7 +2509,7 @@
     return-object v8
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 2
 
     .line 1203
@@ -2535,7 +2535,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 9
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -2766,7 +2766,7 @@
     goto :goto_1
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 5
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -2944,7 +2944,7 @@
     return-void
 .end method
 
-.method protected final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
     .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
 

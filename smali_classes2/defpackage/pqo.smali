@@ -41,7 +41,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 18
@@ -5971,7 +5971,7 @@
     return-void
 .end method
 
-.method static d(Ljava/lang/Object;)Ldefpackage/prn;
+.method public static d(Ljava/lang/Object;)Ldefpackage/prn;
     .locals 3
     .param p0, "obj"    # Ljava/lang/Object;
 
@@ -6046,7 +6046,7 @@
     throw v1
 .end method
 
-.method static n(Ldefpackage/pqw;Ldefpackage/pqa;Ldefpackage/plk;Ldefpackage/plk;Ldefpackage/plk;)Ldefpackage/pqo;
+.method public static n(Ldefpackage/pqw;Ldefpackage/pqa;Ldefpackage/plk;Ldefpackage/plk;Ldefpackage/plk;)Ldefpackage/pqo;
     .locals 43
     .param p0, "var0"    # Ldefpackage/pqw;
     .param p1, "var1"    # Ldefpackage/pqa;
@@ -8710,7 +8710,7 @@
     return-object v0
 .end method
 
-.method static nbak1(Ldefpackage/pqw;Ldefpackage/pqa;Ldefpackage/plk;Ldefpackage/plk;Ldefpackage/plk;)Ldefpackage/pqo;
+.method public static nbak1(Ldefpackage/pqw;Ldefpackage/pqa;Ldefpackage/plk;Ldefpackage/plk;Ldefpackage/plk;)Ldefpackage/pqo;
     .locals 61
     .param p0, "pqw"    # Ldefpackage/pqw;
     .param p1, "pqa"    # Ldefpackage/pqa;

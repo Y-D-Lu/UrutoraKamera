@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/iqj;
+.field public final a:Ldefpackage/iqj;
 
 
 # direct methods

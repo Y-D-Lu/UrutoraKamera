@@ -11,7 +11,7 @@
 
 .field public final b:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-.field final c:Ldefpackage/qby;
+.field public final c:Ldefpackage/qby;
 
 .field public final d:Ljava/util/concurrent/ThreadFactory;
 

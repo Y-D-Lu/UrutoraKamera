@@ -9,7 +9,7 @@
 
 
 # static fields
-.field static final a:[I
+.field public static final a:[I
 
 
 # instance fields
@@ -69,7 +69,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 42
@@ -437,7 +437,7 @@
     return-void
 .end method
 
-.method protected final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -613,7 +613,7 @@
     return-void
 .end method
 
-.method protected final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
     .line 194
@@ -640,7 +640,7 @@
     return-object v0
 .end method
 
-.method protected final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -770,7 +770,7 @@
     .end sparse-switch
 .end method
 
-.method final j()V
+.method public final j()V
     .locals 4
 
     .line 246
@@ -1010,7 +1010,7 @@
     throw v0
 .end method
 
-.method protected final onConfigurationChanged(Landroid/content/res/Configuration;)V
+.method public final onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
     .param p1, "configuration"    # Landroid/content/res/Configuration;
 
@@ -1031,7 +1031,7 @@
     return-void
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 0
 
     .line 367
@@ -1044,7 +1044,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 13
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -1153,7 +1153,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 17
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -2001,7 +2001,7 @@
     return-void
 .end method
 
-.method protected final onWindowVisibilityChanged(I)V
+.method public final onWindowVisibilityChanged(I)V
     .locals 2
     .param p1, "i"    # I
 

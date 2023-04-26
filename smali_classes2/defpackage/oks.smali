@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/Iterator;
+.field public final a:Ljava/util/Iterator;
 
-.field b:Ljava/util/Collection;
+.field public b:Ljava/util/Collection;
 
-.field final c:Ldefpackage/okt;
+.field public final c:Ldefpackage/okt;
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/axk;
+.field public final a:Ldefpackage/axk;
 
 
 # direct methods

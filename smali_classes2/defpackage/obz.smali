@@ -10,31 +10,31 @@
 # instance fields
 .field public final b:Ldefpackage/obp;
 
-.field final c:Ldefpackage/obp;
+.field public final c:Ldefpackage/obp;
 
-.field final d:Ldefpackage/obp;
+.field public final d:Ldefpackage/obp;
 
-.field final e:Ldefpackage/obp;
+.field public final e:Ldefpackage/obp;
 
-.field final f:Ldefpackage/obr;
+.field public final f:Ldefpackage/obr;
 
-.field final g:Ldefpackage/obr;
+.field public final g:Ldefpackage/obr;
 
-.field final h:Ldefpackage/obr;
+.field public final h:Ldefpackage/obr;
 
-.field final i:Ldefpackage/obr;
+.field public final i:Ldefpackage/obr;
 
-.field final j:Ldefpackage/obr;
+.field public final j:Ldefpackage/obr;
 
-.field final k:Ldefpackage/obr;
+.field public final k:Ldefpackage/obr;
 
-.field final l:Ldefpackage/obr;
+.field public final l:Ldefpackage/obr;
 
-.field final m:Ldefpackage/obr;
+.field public final m:Ldefpackage/obr;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 15

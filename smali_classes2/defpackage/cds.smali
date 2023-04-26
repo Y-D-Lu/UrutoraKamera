@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ldefpackage/cdu;
+.field public final c:Ldefpackage/cdu;
 
 
 # direct methods

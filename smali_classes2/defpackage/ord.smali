@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oqw;
+.field public final a:Ldefpackage/oqw;
 
-.field transient b:Ljava/util/Set;
+.field public transient b:Ljava/util/Set;
 
-.field transient c:Ljava/util/Set;
+.field public transient c:Ljava/util/Set;
 
 
 # direct methods
@@ -144,7 +144,7 @@
     throw v0
 .end method
 
-.method protected i()Ldefpackage/oqw;
+.method public i()Ldefpackage/oqw;
     .locals 1
 
     .line 57

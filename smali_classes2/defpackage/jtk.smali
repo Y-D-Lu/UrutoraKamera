@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jtl;
+.field public final a:Ldefpackage/jtl;
 
 
 # direct methods

@@ -458,7 +458,7 @@
     return-void
 .end method
 
-.method final b()V
+.method public final b()V
     .locals 17
 
     .line 122

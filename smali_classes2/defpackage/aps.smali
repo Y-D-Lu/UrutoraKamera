@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/content/Context;
+.field public final a:Landroid/content/Context;
 
 .field public final b:Ljava/lang/Object;
 
@@ -12,11 +12,11 @@
 
 .field public d:Ljava/lang/Object;
 
-.field protected final e:Ldefpackage/aso;
+.field public final e:Ldefpackage/aso;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 19

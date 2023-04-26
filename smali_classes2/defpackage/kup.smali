@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ldefpackage/kni;
+.field public final b:Ldefpackage/kni;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

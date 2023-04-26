@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nty;
+.field public final a:Ldefpackage/nty;
 
-.field final b:Ldefpackage/nuj;
+.field public final b:Ldefpackage/nuj;
 
 
 # direct methods

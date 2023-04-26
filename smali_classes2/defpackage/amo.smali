@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/work/CoroutineWorker;
+.field public final a:Landroidx/work/CoroutineWorker;
 
 
 # direct methods

@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;
+.field public final synthetic this$0:Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;
 
-.field final synthetic val$fbVar:Ldefpackage/fb;
+.field public final synthetic val$fbVar:Ldefpackage/fb;
 
 
 # direct methods
-.method constructor <init>(Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;Ldefpackage/fb;)V
+.method public constructor <init>(Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;Ldefpackage/fb;)V
     .locals 0
     .param p1, "this$0"    # Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;
 

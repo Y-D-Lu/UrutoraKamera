@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ort;
+.field public final a:Ldefpackage/ort;
 
 
 # direct methods

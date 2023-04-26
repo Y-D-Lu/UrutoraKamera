@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Landroidx/work/impl/foreground/SystemForegroundService;
+.field public final b:Landroidx/work/impl/foreground/SystemForegroundService;
 
 
 # direct methods

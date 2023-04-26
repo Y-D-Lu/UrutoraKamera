@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
+.field public final this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
 
 
 # direct methods

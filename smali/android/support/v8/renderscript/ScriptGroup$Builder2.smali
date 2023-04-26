@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field mClosures:Ljava/util/List;
+.field public mClosures:Ljava/util/List;
 
-.field mInputs:Ljava/util/List;
+.field public mInputs:Ljava/util/List;
 
-.field mRS:Landroid/support/v8/renderscript/RenderScript;
+.field public mRS:Landroid/support/v8/renderscript/RenderScript;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
 
 
 # direct methods

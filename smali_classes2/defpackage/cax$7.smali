@@ -12,29 +12,29 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/cax;
+.field public final synthetic this$0:Ldefpackage/cax;
 
-.field final synthetic val$a6:Ldefpackage/ims;
+.field public final synthetic val$a6:Ldefpackage/ims;
 
-.field final synthetic val$buiVar:Ldefpackage/bui;
+.field public final synthetic val$buiVar:Ldefpackage/bui;
 
-.field final synthetic val$imtVar:Ldefpackage/imt;
+.field public final synthetic val$imtVar:Ldefpackage/imt;
 
-.field final synthetic val$larVar:Ldefpackage/lar;
+.field public final synthetic val$larVar:Ldefpackage/lar;
 
-.field final synthetic val$lceVar:Ldefpackage/lce;
+.field public final synthetic val$lceVar:Ldefpackage/lce;
 
-.field final synthetic val$qkgVar4:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar4:Ldefpackage/qkg;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/cax;Ldefpackage/qkg;Ldefpackage/bui;Ldefpackage/imt;Ldefpackage/lar;Ldefpackage/ims;Ldefpackage/lce;)V
+.method public constructor <init>(Ldefpackage/cax;Ldefpackage/qkg;Ldefpackage/bui;Ldefpackage/imt;Ldefpackage/lar;Ldefpackage/ims;Ldefpackage/lce;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/cax;
 

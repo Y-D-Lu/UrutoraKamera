@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/aif;
+.field public final a:Ldefpackage/aif;
 
 
 # direct methods

@@ -20,15 +20,15 @@
 
 .field public h:Z
 
-.field protected i:Landroid/view/animation/LinearInterpolator;
+.field public i:Landroid/view/animation/LinearInterpolator;
 
-.field protected j:Landroid/view/animation/DecelerateInterpolator;
+.field public j:Landroid/view/animation/DecelerateInterpolator;
 
-.field protected k:Landroid/graphics/PointF;
+.field public k:Landroid/graphics/PointF;
 
-.field protected l:I
+.field public l:I
 
-.field protected m:I
+.field public m:I
 
 .field private n:Landroid/util/DisplayMetrics;
 
@@ -233,7 +233,7 @@
 
 
 # virtual methods
-.method protected a(Landroid/util/DisplayMetrics;)F
+.method public a(Landroid/util/DisplayMetrics;)F
     .locals 2
     .param p1, "displayMetrics"    # Landroid/util/DisplayMetrics;
 
@@ -297,7 +297,7 @@
     return v1
 .end method
 
-.method protected c(Landroid/view/View;Ldefpackage/qm;)V
+.method public c(Landroid/view/View;Ldefpackage/qm;)V
     .locals 15
     .param p1, "view"    # Landroid/view/View;
     .param p2, "qmVar"    # Ldefpackage/qm;

@@ -8,13 +8,13 @@
 
 .field public final b:[C
 
-.field final c:I
+.field public final c:I
 
-.field final d:I
+.field public final d:I
 
-.field final e:I
+.field public final e:I
 
-.field final f:I
+.field public final f:I
 
 .field public final g:[Z
 

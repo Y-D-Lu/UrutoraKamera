@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/Iterator;
+.field public final a:Ljava/util/Iterator;
 
-.field final b:Ldefpackage/prq;
+.field public final b:Ldefpackage/prq;
 
 
 # direct methods

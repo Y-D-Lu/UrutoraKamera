@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ks;
+.field public final a:Ldefpackage/ks;
 
 .field private b:I
 
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method final b()V
+.method public final b()V
     .locals 6
 
     .line 34

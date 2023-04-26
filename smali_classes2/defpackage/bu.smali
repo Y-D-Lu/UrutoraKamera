@@ -11,29 +11,29 @@
 
 
 # static fields
-.field static final e:Ljava/lang/Object;
+.field public static final e:Ljava/lang/Object;
 
 
 # instance fields
-.field A:Ldefpackage/cu;
+.field public A:Ldefpackage/cu;
 
 .field public B:Ldefpackage/bu;
 
-.field C:I
+.field public C:I
 
-.field D:I
+.field public D:I
 
-.field E:Ljava/lang/String;
+.field public E:Ljava/lang/String;
 
-.field F:Z
+.field public F:Z
 
-.field G:Z
+.field public G:Z
 
-.field H:Z
+.field public H:Z
 
-.field I:Z
+.field public I:Z
 
-.field J:Z
+.field public J:Z
 
 .field public K:Z
 
@@ -41,69 +41,69 @@
 
 .field public M:Landroid/view/View;
 
-.field N:Z
+.field public N:Z
 
-.field O:Z
+.field public O:Z
 
 .field public P:Ldefpackage/br;
 
-.field Q:Z
+.field public Q:Z
 
-.field S:Z
+.field public S:Z
 
 .field public T:Ljava/lang/String;
 
-.field U:Ldefpackage/aea;
+.field public U:Ldefpackage/aea;
 
-.field V:Ldefpackage/dg;
+.field public V:Ldefpackage/dg;
 
-.field final W:Ldefpackage/aen;
+.field public final W:Ldefpackage/aen;
 
-.field X:Ldefpackage/ajn;
+.field public X:Ldefpackage/ajn;
 
 .field public final Y:Ljava/util/ArrayList;
 
-.field Z:Ldefpackage/aeb;
+.field public Z:Ldefpackage/aeb;
 
-.field f:I
+.field public f:I
 
-.field g:Landroid/os/Bundle;
+.field public g:Landroid/os/Bundle;
 
-.field h:Landroid/util/SparseArray;
+.field public h:Landroid/util/SparseArray;
 
-.field i:Landroid/os/Bundle;
+.field public i:Landroid/os/Bundle;
 
-.field j:Ljava/lang/Boolean;
+.field public j:Ljava/lang/Boolean;
 
-.field k:Ljava/lang/String;
+.field public k:Ljava/lang/String;
 
 .field public l:Landroid/os/Bundle;
 
-.field m:Ldefpackage/bu;
+.field public m:Ldefpackage/bu;
 
-.field n:Ljava/lang/String;
+.field public n:Ljava/lang/String;
 
-.field o:I
+.field public o:I
 
 .field public p:Ljava/lang/Boolean;
 
-.field q:Z
+.field public q:Z
 
 .field public r:Z
 
-.field s:Z
+.field public s:Z
 
-.field t:Z
+.field public t:Z
 
-.field u:Z
+.field public u:Z
 
-.field v:Z
+.field public v:Z
 
 .field public varR:Landroid/view/LayoutInflater;
 
-.field w:Z
+.field public w:Z
 
-.field x:I
+.field public x:I
 
 .field public y:Ldefpackage/cu;
 

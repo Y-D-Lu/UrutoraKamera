@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroidx/preference/PreferenceGroup;
+.field public final a:Landroidx/preference/PreferenceGroup;
 
-.field final b:Ldefpackage/ahe;
+.field public final b:Ldefpackage/ahe;
 
 
 # direct methods

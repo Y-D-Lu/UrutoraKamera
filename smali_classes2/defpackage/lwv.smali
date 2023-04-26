@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lxh;
+.field public final a:Ldefpackage/lxh;
 
-.field final b:Landroid/hardware/SensorDirectChannel;
+.field public final b:Landroid/hardware/SensorDirectChannel;
 
-.field final c:Landroid/hardware/Sensor;
+.field public final c:Landroid/hardware/Sensor;
 
-.field final d:Ldefpackage/lwx;
+.field public final d:Ldefpackage/lwx;
 
 
 # direct methods

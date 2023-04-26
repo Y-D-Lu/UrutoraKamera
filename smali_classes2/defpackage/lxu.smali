@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lxv;
+.field public final a:Ldefpackage/lxv;
 
 .field private final b:Ldefpackage/lxn;
 

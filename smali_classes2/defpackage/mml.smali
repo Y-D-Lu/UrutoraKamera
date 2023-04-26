@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/moa;
+.field public final a:Ldefpackage/moa;
 
 
 # direct methods

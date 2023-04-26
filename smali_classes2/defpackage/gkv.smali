@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gkw;
+.field public final a:Ldefpackage/gkw;
 
 .field private final b:Ldefpackage/hin;
 

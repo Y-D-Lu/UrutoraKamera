@@ -1,3 +1,3 @@
-.class interface abstract Layb;
+.class public interface abstract Layb;
 .super Ljava/lang/Object;
 .source ""

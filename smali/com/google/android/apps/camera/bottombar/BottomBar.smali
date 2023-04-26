@@ -20,7 +20,7 @@
 # instance fields
 .field private actualOrientation:Ldefpackage/jrz;
 
-.field appContext:Landroid/content/Context;
+.field public appContext:Landroid/content/Context;
 
 .field private final backgroundColor:I
 
@@ -42,15 +42,15 @@
 
 .field public final f$1:Ljava/io/File;
 
-.field gestureDetector:Landroid/view/GestureDetector;
+.field public gestureDetector:Landroid/view/GestureDetector;
 
 .field private hideNavBar:Z
 
-.field isDoubleClick:Z
+.field public isDoubleClick:Z
 
 .field private isShown:Z
 
-.field lastTouchUpTime:J
+.field public lastTouchUpTime:J
 
 .field private leftSideCancelButton:Landroid/widget/ImageButton;
 
@@ -1139,7 +1139,7 @@
     return-object v0
 .end method
 
-.method getPhotoVideoSwitchTranslation()F
+.method public getPhotoVideoSwitchTranslation()F
     .locals 3
 
     .line 306
@@ -1363,7 +1363,7 @@
     return-void
 .end method
 
-.method protected onFinishInflate()V
+.method public onFinishInflate()V
     .locals 3
 
     .line 377
@@ -1439,7 +1439,7 @@
     return-void
 .end method
 
-.method protected onLayout(ZIIII)V
+.method public onLayout(ZIIII)V
     .locals 2
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -1478,7 +1478,7 @@
     return-void
 .end method
 
-.method protected onMeasure(II)V
+.method public onMeasure(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -1519,7 +1519,7 @@
     return-void
 .end method
 
-.method protected onSizeChanged(IIII)V
+.method public onSizeChanged(IIII)V
     .locals 0
     .param p1, "i"    # I
     .param p2, "i2"    # I

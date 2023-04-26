@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/support/wearable/view/CircledImageView;
+.field public final a:Landroid/support/wearable/view/CircledImageView;
 
 
 # direct methods

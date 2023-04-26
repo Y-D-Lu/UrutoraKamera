@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 17
@@ -192,7 +192,7 @@
 .method public abstract d()Ldefpackage/pht;
 .end method
 
-.method protected abstract e()Ljava/util/concurrent/ExecutorService;
+.method public abstract e()Ljava/util/concurrent/ExecutorService;
 .end method
 
 .method public final onStartJob(Landroid/app/job/JobParameters;)Z

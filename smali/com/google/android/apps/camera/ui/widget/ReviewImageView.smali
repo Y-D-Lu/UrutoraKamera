@@ -138,7 +138,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 13
     .param p1, "z"    # Z
     .param p2, "i"    # I

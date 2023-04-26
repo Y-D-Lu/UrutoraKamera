@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kmr;
+.field public final a:Ldefpackage/kmr;
 
 
 # direct methods

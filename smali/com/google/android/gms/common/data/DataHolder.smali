@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
 .field public final b:[Ljava/lang/String;
 
@@ -27,13 +27,13 @@
 
 .field public h:I
 
-.field i:Z
+.field public i:Z
 
 .field private j:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 20
@@ -400,7 +400,7 @@
     throw v0
 .end method
 
-.method protected final finalize()V
+.method public final finalize()V
     .locals 4
 
     .line 112

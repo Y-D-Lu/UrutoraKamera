@@ -10,7 +10,7 @@
 
 .field public e:Z
 
-.field f:Z
+.field public f:Z
 
 
 # direct methods

@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final c:J
+.field public final c:J
 
-.field d:Ldefpackage/ojc;
+.field public d:Ldefpackage/ojc;
 
-.field e:Ldefpackage/ojc;
+.field public e:Ldefpackage/ojc;
 
-.field final f:F
+.field public final f:F
 
-.field final g:F
+.field public final g:F
 
 
 # direct methods

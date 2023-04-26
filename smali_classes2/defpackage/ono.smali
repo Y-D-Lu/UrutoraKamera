@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Object;
+.field public final a:Ljava/lang/Object;
 
-.field b:I
+.field public b:I
 
-.field final c:Ldefpackage/onu;
+.field public final c:Ldefpackage/onu;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method final a()V
+.method public final a()V
     .locals 4
 
     .line 17

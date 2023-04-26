@@ -11,13 +11,13 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final b:Ldefpackage/hql;
+.field public final b:Ldefpackage/hql;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8

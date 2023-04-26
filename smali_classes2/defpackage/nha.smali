@@ -43,7 +43,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 20
@@ -375,7 +375,7 @@
     throw v0
 .end method
 
-.method static a(C)Z
+.method public static a(C)Z
     .locals 3
     .param p0, "c2"    # C
 

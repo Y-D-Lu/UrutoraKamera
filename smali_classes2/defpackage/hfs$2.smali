@@ -12,41 +12,41 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/hfs;
+.field public final synthetic this$0:Ldefpackage/hfs;
 
-.field final synthetic val$egaVar:Ldefpackage/ega;
+.field public final synthetic val$egaVar:Ldefpackage/ega;
 
-.field final synthetic val$f:Ldefpackage/pih;
+.field public final synthetic val$f:Ldefpackage/pih;
 
-.field final synthetic val$f2:Ldefpackage/pih;
+.field public final synthetic val$f2:Ldefpackage/pih;
 
-.field final synthetic val$interleavedImageU16:Lcom/google/googlex/gcam/InterleavedImageU16;
+.field public final synthetic val$interleavedImageU16:Lcom/google/googlex/gcam/InterleavedImageU16;
 
-.field final synthetic val$interleavedImageU8:Lcom/google/googlex/gcam/InterleavedImageU8;
+.field public final synthetic val$interleavedImageU8:Lcom/google/googlex/gcam/InterleavedImageU8;
 
-.field final synthetic val$j:J
+.field public final synthetic val$j:J
 
-.field final synthetic val$portraitRequest:Lcom/google/googlex/gcam/PortraitRequest;
+.field public final synthetic val$portraitRequest:Lcom/google/googlex/gcam/PortraitRequest;
 
-.field final synthetic val$rawReadView:Lcom/google/googlex/gcam/RawReadView;
+.field public final synthetic val$rawReadView:Lcom/google/googlex/gcam/RawReadView;
 
-.field final synthetic val$rawReadView2:Lcom/google/googlex/gcam/RawReadView;
+.field public final synthetic val$rawReadView2:Lcom/google/googlex/gcam/RawReadView;
 
-.field final synthetic val$shotMetadata:Lcom/google/googlex/gcam/ShotMetadata;
+.field public final synthetic val$shotMetadata:Lcom/google/googlex/gcam/ShotMetadata;
 
-.field final synthetic val$shotMetadata2:Lcom/google/googlex/gcam/ShotMetadata;
+.field public final synthetic val$shotMetadata2:Lcom/google/googlex/gcam/ShotMetadata;
 
-.field final synthetic val$z:Z
+.field public final synthetic val$z:Z
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/hfs;Ldefpackage/ega;Ldefpackage/pih;ZLdefpackage/pih;Lcom/google/googlex/gcam/PortraitRequest;Lcom/google/googlex/gcam/RawReadView;Lcom/google/googlex/gcam/ShotMetadata;Lcom/google/googlex/gcam/RawReadView;Lcom/google/googlex/gcam/ShotMetadata;Lcom/google/googlex/gcam/InterleavedImageU16;Lcom/google/googlex/gcam/InterleavedImageU8;J)V
+.method public constructor <init>(Ldefpackage/hfs;Ldefpackage/ega;Ldefpackage/pih;ZLdefpackage/pih;Lcom/google/googlex/gcam/PortraitRequest;Lcom/google/googlex/gcam/RawReadView;Lcom/google/googlex/gcam/ShotMetadata;Lcom/google/googlex/gcam/RawReadView;Lcom/google/googlex/gcam/ShotMetadata;Lcom/google/googlex/gcam/InterleavedImageU16;Lcom/google/googlex/gcam/InterleavedImageU8;J)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/hfs;
 

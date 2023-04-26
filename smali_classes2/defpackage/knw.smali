@@ -97,7 +97,7 @@
 
 
 # virtual methods
-.method protected final a(Ljava/lang/String;)Ljava/lang/String;
+.method public final a(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
     .param p1, "str"    # Ljava/lang/String;
 

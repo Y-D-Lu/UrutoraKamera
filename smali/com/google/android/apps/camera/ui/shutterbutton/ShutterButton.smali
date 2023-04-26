@@ -16,7 +16,7 @@
 
 .field private static final CAROUSEL_IDLE_MODES:Ldefpackage/ope;
 
-.field static final DISABLED_FILTER_COLOR_VALUE:I = 0xa5
+.field public static final DISABLED_FILTER_COLOR_VALUE:I = 0xa5
 
 .field private static final INNER_DOTS_BASE:I = 0x12
 
@@ -58,7 +58,7 @@
 
 .field private circleAnimationIndex:I
 
-.field clickEnabled:Z
+.field public clickEnabled:Z
 
 .field private final clickEnabledObservable:Ldefpackage/lcw;
 
@@ -146,7 +146,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 9
 
     .line 130
@@ -2591,7 +2591,7 @@
     return-object v0
 .end method
 
-.method getContentDescriptionString()Ljava/lang/String;
+.method public getContentDescriptionString()Ljava/lang/String;
     .locals 1
 
     .line 616
@@ -2637,7 +2637,7 @@
     throw v1
 .end method
 
-.method protected getDefaultScale()F
+.method public getDefaultScale()F
     .locals 1
 
     .line 628
@@ -2657,7 +2657,7 @@
     return-object v0
 .end method
 
-.method getHapticsEnabled()Z
+.method public getHapticsEnabled()Z
     .locals 1
 
     .line 637
@@ -2679,7 +2679,7 @@
     return-object v0
 .end method
 
-.method getModeTransitionAnimatorSet()Landroid/animation/AnimatorSet;
+.method public getModeTransitionAnimatorSet()Landroid/animation/AnimatorSet;
     .locals 1
 
     .line 645
@@ -2688,7 +2688,7 @@
     return-object v0
 .end method
 
-.method protected getOuterCircleStrokeWidth()F
+.method public getOuterCircleStrokeWidth()F
     .locals 1
 
     .line 649
@@ -4019,7 +4019,7 @@
     return-void
 .end method
 
-.method protected onMeasure(II)V
+.method public onMeasure(II)V
     .locals 0
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -4034,7 +4034,7 @@
     return-void
 .end method
 
-.method protected onSizeChanged(IIII)V
+.method public onSizeChanged(IIII)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

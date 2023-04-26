@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$view:Landroid/view/View;
+.field public final synthetic val$view:Landroid/view/View;
 
-.field final synthetic val$z:Z
+.field public final synthetic val$z:Z
 
 
 # direct methods
-.method constructor <init>(Landroid/view/View;ZI)V
+.method public constructor <init>(Landroid/view/View;ZI)V
     .locals 0
 
     .line 24

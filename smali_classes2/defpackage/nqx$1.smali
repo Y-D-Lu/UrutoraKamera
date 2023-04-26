@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/nqx;
+.field public final synthetic this$0:Ldefpackage/nqx;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/nqx;)V
+.method public constructor <init>(Ldefpackage/nqx;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/nqx;
 

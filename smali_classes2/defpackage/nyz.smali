@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field final a:F
+.field public final a:F
 
-.field final b:F
+.field public final b:F
 
-.field final c:F
+.field public final c:F
 
-.field final d:F
+.field public final d:F
 
-.field final e:F
+.field public final e:F
 
-.field final f:F
+.field public final f:F
 
-.field final g:F
+.field public final g:F
 
-.field final h:Landroid/graphics/Matrix;
+.field public final h:Landroid/graphics/Matrix;
 
-.field final i:Ldefpackage/nzf;
+.field public final i:Ldefpackage/nzf;
 
 
 # direct methods

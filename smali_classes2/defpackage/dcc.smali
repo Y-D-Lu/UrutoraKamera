@@ -164,7 +164,7 @@
     return-void
 .end method
 
-.method protected abstract c()Ldefpackage/dcb;
+.method public abstract c()Ldefpackage/dcb;
 .end method
 
 .method public final d()V
@@ -248,7 +248,7 @@
     return-void
 .end method
 
-.method protected abstract e(Ljava/util/Map;)Z
+.method public abstract e(Ljava/util/Map;)Z
 .end method
 
 .method public final fL(JLjava/util/Map;)V

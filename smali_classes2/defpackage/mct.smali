@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mce;
+.field public final a:Ldefpackage/mce;
 
-.field final b:Z
+.field public final b:Z
 
-.field final c:Ldefpackage/mcn;
+.field public final c:Ldefpackage/mcn;
 
-.field d:Ldefpackage/mcj;
+.field public d:Ldefpackage/mcj;
 
 
 # direct methods

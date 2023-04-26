@@ -4240,7 +4240,7 @@
     return v0
 .end method
 
-.method static m(Ldefpackage/qxd;)Z
+.method public static m(Ldefpackage/qxd;)Z
     .locals 5
     .param p0, "qxdVar"    # Ldefpackage/qxd;
 

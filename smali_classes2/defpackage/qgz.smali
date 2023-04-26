@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qha;
+.field public final a:Ldefpackage/qha;
 
 
 # direct methods

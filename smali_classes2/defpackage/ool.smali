@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final transient a:I
+.field public final transient a:I
 
-.field final transient b:I
+.field public final transient b:I
 
-.field final c:Ldefpackage/oom;
+.field public final c:Ldefpackage/oom;
 
 
 # direct methods

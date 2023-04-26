@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final c:Ldefpackage/qco;
+.field public final c:Ldefpackage/qco;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected final h(Ldefpackage/qym;)V
+.method public final h(Ldefpackage/qym;)V
     .locals 6
     .param p1, "qymVar"    # Ldefpackage/qym;
 

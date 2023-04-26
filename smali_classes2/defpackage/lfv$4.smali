@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/lfv;
+.field public final synthetic this$0:Ldefpackage/lfv;
 
-.field final synthetic val$bufferInfo:Landroid/media/MediaCodec$BufferInfo;
+.field public final synthetic val$bufferInfo:Landroid/media/MediaCodec$BufferInfo;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/lfv;ILandroid/media/MediaCodec$BufferInfo;)V
+.method public constructor <init>(Ldefpackage/lfv;ILandroid/media/MediaCodec$BufferInfo;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/lfv;
 

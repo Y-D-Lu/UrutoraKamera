@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:I
+.field public b:I
 
-.field c:I
+.field public c:I
 
-.field d:I
+.field public d:I
 
-.field e:I
+.field public e:I
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 5
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method static final e(II)I
+.method public static final e(II)I
     .locals 1
     .param p0, "i"    # I
     .param p1, "i2"    # I

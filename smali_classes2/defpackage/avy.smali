@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ldefpackage/awb;
+.field public final b:Ldefpackage/awb;
 
 
 # direct methods

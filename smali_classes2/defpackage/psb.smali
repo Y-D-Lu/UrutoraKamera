@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method protected final a()Ldefpackage/pos;
+.method public final a()Ldefpackage/pos;
     .locals 1
 
     .line 8

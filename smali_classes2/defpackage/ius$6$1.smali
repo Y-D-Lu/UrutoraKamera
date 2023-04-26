@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Ldefpackage/ius$6;
+.field public final synthetic this$1:Ldefpackage/ius$6;
 
-.field final synthetic val$onDismissListener2:Landroid/content/DialogInterface$OnDismissListener;
+.field public final synthetic val$onDismissListener2:Landroid/content/DialogInterface$OnDismissListener;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ius$6;Landroid/content/DialogInterface$OnDismissListener;)V
+.method public constructor <init>(Ldefpackage/ius$6;Landroid/content/DialogInterface$OnDismissListener;)V
     .locals 0
     .param p1, "this$1"    # Ldefpackage/ius$6;
 

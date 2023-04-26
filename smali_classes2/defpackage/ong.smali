@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected a()Ljava/lang/Object;
+.method public a()Ljava/lang/Object;
     .locals 1
 
     .line 12
@@ -27,7 +27,7 @@
     throw v0
 .end method
 
-.method protected abstract c()Ljava/util/Map;
+.method public abstract c()Ljava/util/Map;
 .end method
 
 .method public clear()V

@@ -15,15 +15,15 @@
 
 .field private c:Landroid/animation/ValueAnimator;
 
-.field final d:Landroid/content/Context;
+.field public final d:Landroid/content/Context;
 
-.field final e:Ldefpackage/oaf;
+.field public final e:Ldefpackage/oaf;
 
 .field public f:Ljava/util/List;
 
 .field public g:Z
 
-.field final h:Landroid/graphics/Paint;
+.field public final h:Landroid/graphics/Paint;
 
 .field public i:I
 
@@ -31,7 +31,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 21

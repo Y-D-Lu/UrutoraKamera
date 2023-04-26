@@ -1338,7 +1338,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldefpackage/att;)V
+.method public final declared-synchronized d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldefpackage/att;)V
     .locals 7
     .param p1, "str"    # Ljava/lang/String;
     .param p2, "str2"    # Ljava/lang/String;

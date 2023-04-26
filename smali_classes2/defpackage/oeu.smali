@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oev;
+.field public final a:Ldefpackage/oev;
 
 
 # direct methods

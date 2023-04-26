@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final r:Ljava/util/LinkedList;
+.field public final r:Ljava/util/LinkedList;
 
 
 # direct methods

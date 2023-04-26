@@ -12,11 +12,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ojz;
+.field public final a:Ldefpackage/ojz;
 
-.field volatile transient b:Z
+.field public volatile transient b:Z
 
-.field transient c:Ljava/lang/Object;
+.field public transient c:Ljava/lang/Object;
 
 
 # direct methods

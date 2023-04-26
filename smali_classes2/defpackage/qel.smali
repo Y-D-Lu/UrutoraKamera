@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qem;
+.field public final a:Ldefpackage/qem;
 
-.field b:J
+.field public b:J
 
 
 # direct methods

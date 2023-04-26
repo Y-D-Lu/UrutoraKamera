@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Landroid/os/Handler;
+.field public final a:Landroid/os/Handler;
 
-.field final b:Ldefpackage/awc;
+.field public final b:Ldefpackage/awc;
 
-.field final c:Landroid/hardware/Camera$PictureCallback;
+.field public final c:Landroid/hardware/Camera$PictureCallback;
 
-.field final d:Ldefpackage/avf;
+.field public final d:Ldefpackage/avf;
 
-.field final e:Ldefpackage/fde;
+.field public final e:Ldefpackage/fde;
 
 
 # direct methods

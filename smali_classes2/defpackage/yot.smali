@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field a:Ldefpackage/xxx;
+.field public a:Ldefpackage/xxx;
 
-.field ent_name:Landroid/widget/EditText;
+.field public ent_name:Landroid/widget/EditText;
 
 
 # direct methods

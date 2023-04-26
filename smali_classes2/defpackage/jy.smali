@@ -11,9 +11,9 @@
 
 .field public final b:Landroid/content/Context;
 
-.field final c:Ljava/util/ArrayList;
+.field public final c:Ljava/util/ArrayList;
 
-.field final d:Ldefpackage/xf;
+.field public final d:Ldefpackage/xf;
 
 
 # direct methods

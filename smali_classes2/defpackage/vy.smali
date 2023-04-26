@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hr;
+.field public final a:Ldefpackage/hr;
 
 
 # direct methods

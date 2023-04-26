@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field transient e:I
+.field public transient e:I
 
 
 # direct methods

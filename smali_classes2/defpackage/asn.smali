@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/aso;
+.field public final a:Ldefpackage/aso;
 
 
 # direct methods

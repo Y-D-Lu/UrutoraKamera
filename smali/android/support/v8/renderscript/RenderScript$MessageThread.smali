@@ -15,25 +15,25 @@
 
 
 # static fields
-.field static final RS_ERROR_FATAL_UNKNOWN:I = 0x1000
+.field public static final RS_ERROR_FATAL_UNKNOWN:I = 0x1000
 
-.field static final RS_MESSAGE_TO_CLIENT_ERROR:I = 0x3
+.field public static final RS_MESSAGE_TO_CLIENT_ERROR:I = 0x3
 
-.field static final RS_MESSAGE_TO_CLIENT_EXCEPTION:I = 0x1
+.field public static final RS_MESSAGE_TO_CLIENT_EXCEPTION:I = 0x1
 
-.field static final RS_MESSAGE_TO_CLIENT_NONE:I = 0x0
+.field public static final RS_MESSAGE_TO_CLIENT_NONE:I = 0x0
 
-.field static final RS_MESSAGE_TO_CLIENT_RESIZE:I = 0x2
+.field public static final RS_MESSAGE_TO_CLIENT_RESIZE:I = 0x2
 
-.field static final RS_MESSAGE_TO_CLIENT_USER:I = 0x4
+.field public static final RS_MESSAGE_TO_CLIENT_USER:I = 0x4
 
 
 # instance fields
-.field mAuxData:[I
+.field public mAuxData:[I
 
-.field mRS:Landroid/support/v8/renderscript/RenderScript;
+.field public mRS:Landroid/support/v8/renderscript/RenderScript;
 
-.field mRun:Z
+.field public mRun:Z
 
 
 # direct methods

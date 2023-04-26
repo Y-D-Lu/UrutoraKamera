@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final c:Ldefpackage/atg;
+.field public final c:Ldefpackage/atg;
 
 .field private final d:Ljava/lang/String;
 

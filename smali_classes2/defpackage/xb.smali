@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static final a:[I
+.field public static final a:[I
 
-.field static final b:[Ljava/lang/Object;
+.field public static final b:[Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 6

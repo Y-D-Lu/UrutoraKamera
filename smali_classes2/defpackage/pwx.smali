@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Landroid/app/PendingIntent;
+.field public final b:Landroid/app/PendingIntent;
 
-.field final c:Lcom/google/vr/ndk/base/DaydreamApi;
+.field public final c:Lcom/google/vr/ndk/base/DaydreamApi;
 
 
 # direct methods

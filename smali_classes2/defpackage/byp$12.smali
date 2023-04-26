@@ -12,35 +12,35 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/byp;
+.field public final synthetic this$0:Ldefpackage/byp;
 
-.field final synthetic val$a:Ldefpackage/lie;
+.field public final synthetic val$a:Ldefpackage/lie;
 
-.field final synthetic val$a2:Ldefpackage/lie;
+.field public final synthetic val$a2:Ldefpackage/lie;
 
-.field final synthetic val$a3:Ldefpackage/lie;
+.field public final synthetic val$a3:Ldefpackage/lie;
 
-.field final synthetic val$a4:Ldefpackage/lie;
+.field public final synthetic val$a4:Ldefpackage/lie;
 
-.field final synthetic val$a5:Ldefpackage/lie;
+.field public final synthetic val$a5:Ldefpackage/lie;
 
-.field final synthetic val$a6:Ldefpackage/lie;
+.field public final synthetic val$a6:Ldefpackage/lie;
 
-.field final synthetic val$a7:Ldefpackage/lie;
+.field public final synthetic val$a7:Ldefpackage/lie;
 
-.field final synthetic val$a8:Ldefpackage/lie;
+.field public final synthetic val$a8:Ldefpackage/lie;
 
-.field final synthetic val$a9:Ldefpackage/lie;
+.field public final synthetic val$a9:Ldefpackage/lie;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/byp;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;)V
+.method public constructor <init>(Ldefpackage/byp;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;Ldefpackage/lie;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/byp;
 

@@ -8,9 +8,9 @@
 
 .field public b:Ljava/util/ArrayList;
 
-.field c:I
+.field public c:I
 
-.field d:Ldefpackage/zu;
+.field public d:Ldefpackage/zu;
 
 
 # direct methods

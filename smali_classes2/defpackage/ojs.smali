@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:[I
+.field public static final a:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 11
@@ -195,7 +195,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 7

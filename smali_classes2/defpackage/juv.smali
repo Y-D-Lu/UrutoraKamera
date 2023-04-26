@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;
+.field public final a:Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;
 
 
 # direct methods

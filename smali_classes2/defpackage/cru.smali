@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/crw;
+.field public final b:Ldefpackage/crw;
 
 
 # direct methods

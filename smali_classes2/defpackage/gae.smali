@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hkn;
+.field public final a:Ldefpackage/hkn;
 
-.field b:F
+.field public b:F
 
-.field c:F
+.field public c:F
 
 
 # direct methods

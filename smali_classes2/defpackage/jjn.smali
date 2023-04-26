@@ -145,7 +145,7 @@
     return-void
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 3
 
     .line 54

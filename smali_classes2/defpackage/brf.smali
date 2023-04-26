@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/brg;
+.field public final a:Ldefpackage/brg;
 
 
 # direct methods

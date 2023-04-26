@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Callable;
+.field public final a:Ljava/util/concurrent/Callable;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final o(Ldefpackage/qbv;)V
+.method public final o(Ldefpackage/qbv;)V
     .locals 3
     .param p1, "qbvVar"    # Ldefpackage/qbv;
 

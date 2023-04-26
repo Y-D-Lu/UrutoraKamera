@@ -258,7 +258,7 @@
     return-void
 .end method
 
-.method protected final onStop()V
+.method public final onStop()V
     .locals 1
 
     .line 89

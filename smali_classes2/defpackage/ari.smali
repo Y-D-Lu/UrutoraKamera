@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/aof;
+.field public final a:Ldefpackage/aof;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Z
+.field public final c:Z
 
 
 # direct methods

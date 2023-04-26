@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8
@@ -122,7 +122,7 @@
 
 
 # virtual methods
-.method protected abstract a(Ldefpackage/hub;I)V
+.method public abstract a(Ldefpackage/hub;I)V
 .end method
 
 .method public b(Ldefpackage/hub;)I

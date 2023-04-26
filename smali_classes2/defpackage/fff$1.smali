@@ -12,27 +12,27 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$bqgVar:Ldefpackage/bqg;
+.field public final synthetic val$bqgVar:Ldefpackage/bqg;
 
-.field final synthetic val$fezVar:Ldefpackage/fez;
+.field public final synthetic val$fezVar:Ldefpackage/fez;
 
-.field final synthetic val$fgbVar:Ldefpackage/fgb;
+.field public final synthetic val$fgbVar:Ldefpackage/fgb;
 
-.field final synthetic val$hycVar:Ldefpackage/hyc;
+.field public final synthetic val$hycVar:Ldefpackage/hyc;
 
-.field final synthetic val$imtVar:Ldefpackage/imt;
+.field public final synthetic val$imtVar:Ldefpackage/imt;
 
-.field final synthetic val$ldaVar:Llda;
+.field public final synthetic val$ldaVar:Llda;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/bqg;Ldefpackage/imt;Ldefpackage/fez;Ldefpackage/hyc;Ldefpackage/fgb;Llda;)V
+.method public constructor <init>(Ldefpackage/bqg;Ldefpackage/imt;Ldefpackage/fez;Ldefpackage/hyc;Ldefpackage/fgb;Llda;)V
     .locals 0
 
     .line 20

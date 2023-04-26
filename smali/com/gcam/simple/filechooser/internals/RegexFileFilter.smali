@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field b:Z
+.field public b:Z
 
-.field c:Ljava/util/regex/Pattern;
+.field public c:Ljava/util/regex/Pattern;
 
 
 # direct methods

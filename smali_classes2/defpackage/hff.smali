@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method protected final c()Ldefpackage/iaf;
+.method public final c()Ldefpackage/iaf;
     .locals 4
 
     .line 23

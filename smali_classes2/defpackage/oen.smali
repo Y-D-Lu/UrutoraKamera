@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method protected abstract a()V
+.method public abstract a()V
 .end method
 
 .method public final b(Ljava/lang/Exception;)V

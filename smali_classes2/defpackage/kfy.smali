@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kfz;
+.field public final a:Ldefpackage/kfz;
 
 
 # direct methods

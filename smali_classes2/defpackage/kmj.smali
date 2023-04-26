@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/content/Intent;
+.field public final a:Landroid/content/Intent;
 
-.field final b:Landroid/app/Activity;
+.field public final b:Landroid/app/Activity;
 
-.field final c:I
+.field public final c:I
 
 
 # direct methods

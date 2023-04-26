@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ecp;
+.field public final a:Ldefpackage/ecp;
 
-.field final b:Ldefpackage/dzu;
+.field public final b:Ldefpackage/dzu;
 
-.field final c:Ldefpackage/dzr;
+.field public final c:Ldefpackage/dzr;
 
 
 # direct methods

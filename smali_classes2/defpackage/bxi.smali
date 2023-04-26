@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bxj;
+.field public final a:Ldefpackage/bxj;
 
 .field private final b:Ljava/util/concurrent/atomic/AtomicBoolean;
 

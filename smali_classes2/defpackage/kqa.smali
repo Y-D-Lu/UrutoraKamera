@@ -8,15 +8,15 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Landroid/content/Intent;
+.field public final c:Landroid/content/Intent;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 10

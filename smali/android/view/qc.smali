@@ -16,7 +16,7 @@
 
 .field private final M:Landroid/view/rz;
 
-.field p:Landroid/view/ny;
+.field public p:Landroid/view/ny;
 
 .field public q:Landroid/support/v7/widget/RecyclerView;
 

@@ -20,7 +20,7 @@
 
 .field public final j:Ldefpackage/kim;
 
-.field protected final k:Ldefpackage/kkg;
+.field public final k:Ldefpackage/kkg;
 
 
 # direct methods

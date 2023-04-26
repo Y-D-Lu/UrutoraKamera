@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/graphics/SurfaceTexture;
+.field public final a:Landroid/graphics/SurfaceTexture;
 
-.field final b:Ldefpackage/awl;
+.field public final b:Ldefpackage/awl;
 
 
 # direct methods

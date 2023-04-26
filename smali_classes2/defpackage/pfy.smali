@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected final newTaskFor(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/RunnableFuture;
+.method public final newTaskFor(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/RunnableFuture;
     .locals 1
     .param p1, "runnable"    # Ljava/lang/Runnable;
     .param p2, "obj"    # Ljava/lang/Object;
@@ -31,7 +31,7 @@
     return-object v0
 .end method
 
-.method protected final newTaskFor(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/RunnableFuture;
+.method public final newTaskFor(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/RunnableFuture;
     .locals 1
     .param p1, "callable"    # Ljava/util/concurrent/Callable;
 

@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected final d()V
+.method public final d()V
     .locals 0
 
     .line 12

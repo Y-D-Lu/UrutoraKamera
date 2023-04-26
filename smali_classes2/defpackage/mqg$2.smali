@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$eGLImage:Lcom/google/android/libraries/oliveoil/gl/EGLImage;
+.field public final synthetic val$eGLImage:Lcom/google/android/libraries/oliveoil/gl/EGLImage;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/libraries/oliveoil/gl/EGLImage;)V
+.method public constructor <init>(Lcom/google/android/libraries/oliveoil/gl/EGLImage;)V
     .locals 0
 
     .line 25

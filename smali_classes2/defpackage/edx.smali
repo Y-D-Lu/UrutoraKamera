@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field final a:J
+.field public final a:J
 
-.field final b:Ldefpackage/eev;
+.field public final b:Ldefpackage/eev;
 
-.field final c:Ldefpackage/eev;
+.field public final c:Ldefpackage/eev;
 
-.field final d:Ldefpackage/lig;
+.field public final d:Ldefpackage/lig;
 
-.field final e:Ldefpackage/eey;
+.field public final e:Ldefpackage/eey;
 
-.field final f:Ldefpackage/pih;
+.field public final f:Ldefpackage/pih;
 
-.field final g:Lcom/google/android/apps/camera/hdrplus/deblurfusion/DeblurFusionControllerImpl;
+.field public final g:Lcom/google/android/apps/camera/hdrplus/deblurfusion/DeblurFusionControllerImpl;
 
-.field final h:Ldefpackage/ghx;
+.field public final h:Ldefpackage/ghx;
 
 
 # direct methods

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/support/v7/app/AlertController$RecycleListView;
+.field public final a:Landroid/support/v7/app/AlertController$RecycleListView;
 
-.field final b:Ldefpackage/hz;
+.field public final b:Ldefpackage/hz;
 
 
 # direct methods

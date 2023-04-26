@@ -601,7 +601,7 @@
     .end packed-switch
 .end method
 
-.method protected abstract i()Z
+.method public abstract i()Z
 .end method
 
 .method public abstract j()Z

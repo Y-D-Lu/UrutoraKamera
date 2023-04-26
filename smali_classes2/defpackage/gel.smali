@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Object;
+.field public final a:Ljava/lang/Object;
 
-.field final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final c:Ldefpackage/gex;
+.field public final c:Ldefpackage/gex;
 
-.field final d:Ldefpackage/gem;
+.field public final d:Ldefpackage/gem;
 
 
 # direct methods

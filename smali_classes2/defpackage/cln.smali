@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/clp;
+.field public final a:Ldefpackage/clp;
 
 
 # direct methods

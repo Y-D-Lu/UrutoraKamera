@@ -13,9 +13,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbe;
+.field public final a:Ldefpackage/qbe;
 
-.field final b:Ldefpackage/qco;
+.field public final b:Ldefpackage/qco;
 
 
 # direct methods

@@ -11,13 +11,13 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field b:Ljava/lang/String;
+.field public b:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 14

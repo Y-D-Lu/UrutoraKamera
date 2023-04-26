@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ayu;
+.field public final a:Ldefpackage/ayu;
 
 
 # direct methods

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/obu;
+.field public final a:Ldefpackage/obu;
 
-.field final b:Lcom/google/android/material/appbar/AppBarLayout;
+.field public final b:Lcom/google/android/material/appbar/AppBarLayout;
 
 
 # direct methods

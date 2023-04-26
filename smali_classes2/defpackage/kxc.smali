@@ -31,7 +31,7 @@
     return-object v0
 .end method
 
-.method protected final b(Lkhz;)V
+.method public final b(Lkhz;)V
     .locals 4
     .param p1, "khzVar"    # Lkhz;
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hen;
+.field public final a:Ldefpackage/hen;
 
-.field final b:Ldefpackage/qkg;
+.field public final b:Ldefpackage/qkg;
 
-.field final c:Ldefpackage/hcg;
+.field public final c:Ldefpackage/hcg;
 
 
 # direct methods

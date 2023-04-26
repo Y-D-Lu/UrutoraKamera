@@ -8,15 +8,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kgk;
+.field public final a:Ldefpackage/kgk;
 
-.field b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+.field public b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
-.field c:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+.field public c:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 24

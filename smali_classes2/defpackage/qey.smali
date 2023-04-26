@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field b:I
+.field public b:I
 
-.field volatile c:Z
+.field public volatile c:Z
 
 
 # direct methods

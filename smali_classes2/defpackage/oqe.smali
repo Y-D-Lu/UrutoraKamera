@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oqf;
+.field public final a:Ldefpackage/oqf;
 
 
 # direct methods

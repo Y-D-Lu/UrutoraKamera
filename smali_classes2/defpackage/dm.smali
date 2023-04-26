@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/dn;
+.field public final a:Ldefpackage/dn;
 
-.field final b:Ldefpackage/dq;
+.field public final b:Ldefpackage/dq;
 
 .field private final c:I
 

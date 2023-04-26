@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:Ldefpackage/orj;
 
-.field final b:Ldefpackage/oth;
+.field public final b:Ldefpackage/oth;
 
 
 # direct methods

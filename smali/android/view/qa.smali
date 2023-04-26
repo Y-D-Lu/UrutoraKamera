@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/view/qc;
+.field public final a:Landroid/view/qc;
 
 .field private final b:I
 

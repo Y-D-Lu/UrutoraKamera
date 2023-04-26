@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fot;
+.field public final a:Ldefpackage/fot;
 
-.field final b:Ldefpackage/fos;
+.field public final b:Ldefpackage/fos;
 
-.field final c:Ldefpackage/fou;
+.field public final c:Ldefpackage/fou;
 
 
 # direct methods

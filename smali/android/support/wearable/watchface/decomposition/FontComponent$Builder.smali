@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroid/support/wearable/watchface/decomposition/FontComponent;
+.field public final synthetic this$0:Landroid/support/wearable/watchface/decomposition/FontComponent;
 
 
 # direct methods

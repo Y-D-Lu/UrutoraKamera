@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fko;
+.field public final a:Ldefpackage/fko;
 
 
 # direct methods

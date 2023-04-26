@@ -37,7 +37,7 @@
 
 .field private L:Ldefpackage/ohh;
 
-.field final a:Ldefpackage/ocw;
+.field public final a:Ldefpackage/ocw;
 
 .field public b:I
 
@@ -67,7 +67,7 @@
 
 .field public o:I
 
-.field p:I
+.field public p:I
 
 .field public q:I
 
@@ -77,11 +77,11 @@
 
 .field public t:Z
 
-.field u:I
+.field public u:I
 
 .field public v:Z
 
-.field w:Landroidx/viewpager/widget/ViewPager;
+.field public w:Landroidx/viewpager/widget/ViewPager;
 
 .field public x:Ldefpackage/obr;
 
@@ -89,7 +89,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 61
@@ -2728,7 +2728,7 @@
     return-object v0
 .end method
 
-.method protected final onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 3
 
     .line 610
@@ -2772,7 +2772,7 @@
     return-void
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 2
 
     .line 623
@@ -2798,7 +2798,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 8
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -2912,7 +2912,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 12
     .param p1, "i"    # I
     .param p2, "i2"    # I

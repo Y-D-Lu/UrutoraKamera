@@ -13,7 +13,7 @@
 
 .field public final c:Ljava/lang/Object;
 
-.field final d:Ldefpackage/atl;
+.field public final d:Ldefpackage/atl;
 
 
 # direct methods

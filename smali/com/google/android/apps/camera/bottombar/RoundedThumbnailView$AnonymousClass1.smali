@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
 
 
 # direct methods

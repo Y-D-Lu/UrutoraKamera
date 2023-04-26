@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mlu;
+.field public final a:Ldefpackage/mlu;
 
-.field final b:Ldefpackage/moa;
+.field public final b:Ldefpackage/moa;
 
-.field final c:Ldefpackage/mlu;
+.field public final c:Ldefpackage/mlu;
 
-.field final d:Ldefpackage/moa;
+.field public final d:Ldefpackage/moa;
 
 
 # direct methods

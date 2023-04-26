@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:Ldefpackage/orq;
+.field public static final a:Ldefpackage/orq;
 
 
 # instance fields
-.field final transient b:[Ljava/lang/Object;
+.field public final transient b:[Ljava/lang/Object;
 
 .field public final transient c:Ldefpackage/orq;
 
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 6

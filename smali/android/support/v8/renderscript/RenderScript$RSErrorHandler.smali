@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field protected mErrorMessage:Ljava/lang/String;
+.field public mErrorMessage:Ljava/lang/String;
 
-.field protected mErrorNum:I
+.field public mErrorNum:I
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/RenderScript;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/RenderScript;
 
 
 # direct methods

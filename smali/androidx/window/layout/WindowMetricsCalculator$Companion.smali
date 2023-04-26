@@ -15,11 +15,11 @@
 
 
 # static fields
-.field static final $$INSTANCE:Landroidx/window/layout/WindowMetricsCalculator$Companion;
+.field public static final $$INSTANCE:Landroidx/window/layout/WindowMetricsCalculator$Companion;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 19

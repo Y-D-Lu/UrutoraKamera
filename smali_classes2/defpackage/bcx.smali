@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Object;
+.field public final a:Ljava/lang/Object;
 
 .field public b:Ljava/util/List;
 
-.field c:Ldefpackage/bcx;
+.field public c:Ldefpackage/bcx;
 
-.field d:Ldefpackage/bcx;
+.field public d:Ldefpackage/bcx;
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 14

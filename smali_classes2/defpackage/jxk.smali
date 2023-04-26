@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/view/ScaleGestureDetector$OnScaleGestureListener;
+.field public final a:Landroid/view/ScaleGestureDetector$OnScaleGestureListener;
 
-.field final b:Ldefpackage/jxg;
+.field public final b:Ldefpackage/jxg;
 
-.field final c:Ldefpackage/jxn;
+.field public final c:Ldefpackage/jxn;
 
 
 # direct methods

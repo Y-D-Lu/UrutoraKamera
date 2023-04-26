@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/content/Context;
+.field public final a:Landroid/content/Context;
 
-.field final b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+.field public final b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
 
 # direct methods
@@ -45,7 +45,7 @@
     return-object v0
 .end method
 
-.method protected final b(Lkhz;)V
+.method public final b(Lkhz;)V
     .locals 5
     .param p1, "khzVar"    # Lkhz;
 

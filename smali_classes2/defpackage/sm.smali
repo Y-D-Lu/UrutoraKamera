@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/support/wearable/complications/rendering/ComplicationDrawable;
+.field public final a:Landroid/support/wearable/complications/rendering/ComplicationDrawable;
 
 
 # direct methods

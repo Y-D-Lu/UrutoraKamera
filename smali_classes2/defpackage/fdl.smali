@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fdm;
+.field public final a:Ldefpackage/fdm;
 
 
 # direct methods

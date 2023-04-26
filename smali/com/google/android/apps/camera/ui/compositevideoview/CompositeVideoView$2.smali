@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;
 

@@ -362,7 +362,7 @@
     goto :goto_1
 .end method
 
-.method protected final j()V
+.method public final j()V
     .locals 8
 
     .line 78

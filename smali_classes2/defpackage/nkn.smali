@@ -9,7 +9,7 @@
 # instance fields
 .field public a:Ljava/util/List;
 
-.field final b:Ldefpackage/nkq;
+.field public final b:Ldefpackage/nkq;
 
 
 # direct methods

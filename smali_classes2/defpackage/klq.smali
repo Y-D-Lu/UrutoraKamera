@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/klp;
+.field public final a:Ldefpackage/klp;
 
-.field protected b:I
+.field public b:I
 
 
 # direct methods

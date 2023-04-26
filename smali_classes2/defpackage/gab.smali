@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gac;
+.field public final a:Ldefpackage/gac;
 
 
 # direct methods

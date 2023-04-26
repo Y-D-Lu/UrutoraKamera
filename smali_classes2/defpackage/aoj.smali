@@ -7,27 +7,27 @@
 
 
 # static fields
-.field static final a:Ljava/lang/String;
+.field public static final a:Ljava/lang/String;
 
 .field public static final j:I
 
 
 # instance fields
-.field final b:Landroid/content/Context;
+.field public final b:Landroid/content/Context;
 
-.field c:Ldefpackage/aqt;
+.field public c:Ldefpackage/aqt;
 
-.field d:Landroidx/work/ListenableWorker;
+.field public d:Landroidx/work/ListenableWorker;
 
-.field e:Ldefpackage/pht;
+.field public e:Ldefpackage/pht;
 
 .field public volatile f:Z
 
-.field final g:Ldefpackage/aso;
+.field public final g:Ldefpackage/aso;
 
-.field final h:Ldefpackage/asl;
+.field public final h:Ldefpackage/asl;
 
-.field i:Ldefpackage/ge;
+.field public i:Ldefpackage/ge;
 
 .field private final k:Ljava/lang/String;
 
@@ -51,7 +51,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 21
@@ -1321,7 +1321,7 @@
     return-void
 .end method
 
-.method final b()V
+.method public final b()V
     .locals 7
 
     .line 241

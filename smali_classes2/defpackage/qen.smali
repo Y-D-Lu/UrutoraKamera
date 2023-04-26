@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qym;
+.field public final a:Ldefpackage/qym;
 
-.field final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
-.field c:Z
+.field public c:Z
 
 
 # direct methods

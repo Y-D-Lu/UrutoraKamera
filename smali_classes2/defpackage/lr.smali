@@ -10,13 +10,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pn;
+.field public final a:Ldefpackage/pn;
 
-.field final b:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.field public final b:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
-.field c:Landroid/view/View;
+.field public c:Landroid/view/View;
 
-.field d:Landroid/view/ViewTreeObserver;
+.field public d:Landroid/view/ViewTreeObserver;
 
 .field private final e:Landroid/content/Context;
 

@@ -68,7 +68,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 44
@@ -1321,7 +1321,7 @@
     return v0
 .end method
 
-.method protected final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -1444,7 +1444,7 @@
     return-void
 .end method
 
-.method protected final d(Landroid/view/View;ZIII)Z
+.method public final d(Landroid/view/View;ZIII)Z
     .locals 15
     .param p1, "view"    # Landroid/view/View;
     .param p2, "z"    # Z
@@ -2057,7 +2057,7 @@
     return-void
 .end method
 
-.method final e(Landroid/content/Context;)V
+.method public final e(Landroid/content/Context;)V
     .locals 4
     .param p1, "context"    # Landroid/content/Context;
 
@@ -2165,7 +2165,7 @@
     return-void
 .end method
 
-.method final f()V
+.method public final f()V
     .locals 2
 
     .line 477
@@ -2201,7 +2201,7 @@
     throw v1
 .end method
 
-.method final g()Ldefpackage/akx;
+.method public final g()Ldefpackage/akx;
     .locals 3
 
     .line 485
@@ -2250,7 +2250,7 @@
     return-object v0
 .end method
 
-.method protected final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
     .line 496
@@ -2277,7 +2277,7 @@
     return-object v0
 .end method
 
-.method protected final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -2289,7 +2289,7 @@
     return-object v0
 .end method
 
-.method protected final getChildDrawingOrder(II)I
+.method public final getChildDrawingOrder(II)I
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -2300,7 +2300,7 @@
     throw v0
 .end method
 
-.method protected final h(IF)V
+.method public final h(IF)V
     .locals 11
     .param p1, "i"    # I
     .param p2, "f2"    # F
@@ -2549,7 +2549,7 @@
     .end packed-switch
 .end method
 
-.method protected final onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 1
 
     .line 569
@@ -2564,7 +2564,7 @@
     return-void
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 2
 
     .line 575
@@ -3447,7 +3447,7 @@
     .end sparse-switch
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 21
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -3952,7 +3952,7 @@
     .end sparse-switch
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 21
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -4412,7 +4412,7 @@
     goto/16 :goto_0
 .end method
 
-.method protected final onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
+.method public final onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 5
     .param p1, "i"    # I
     .param p2, "rect"    # Landroid/graphics/Rect;
@@ -4552,7 +4552,7 @@
     return-object v0
 .end method
 
-.method protected final onSizeChanged(IIII)V
+.method public final onSizeChanged(IIII)V
     .locals 5
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -4746,7 +4746,7 @@
     return v0
 .end method
 
-.method protected final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
     .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
 

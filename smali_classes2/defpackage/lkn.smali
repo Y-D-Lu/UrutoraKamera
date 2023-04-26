@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lks;
+.field public final a:Ldefpackage/lks;
 
 
 # direct methods

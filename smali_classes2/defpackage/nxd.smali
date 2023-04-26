@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Landroid/graphics/Rect;
 
-.field final b:Landroid/graphics/Rect;
+.field public final b:Landroid/graphics/Rect;
 
 .field public c:I
 
@@ -115,7 +115,7 @@
     return v1
 .end method
 
-.method protected final X(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
+.method public final X(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
     .locals 12
     .param p1, "coordinatorLayout"    # Landroidx/coordinatorlayout/widget/CoordinatorLayout;
     .param p2, "view"    # Landroid/view/View;

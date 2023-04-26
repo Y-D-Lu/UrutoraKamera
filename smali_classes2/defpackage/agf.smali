@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field aa:I
+.field public aa:I
 
 .field private ab:[Ljava/lang/CharSequence;
 
@@ -127,7 +127,7 @@
     return-void
 .end method
 
-.method protected final fq(Ldefpackage/id;)V
+.method public final fq(Ldefpackage/id;)V
     .locals 5
     .param p1, "idVar"    # Ldefpackage/id;
 

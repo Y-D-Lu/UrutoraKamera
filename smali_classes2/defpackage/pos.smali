@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Ldefpackage/pos;
+.field public static final a:Ldefpackage/pos;
 
 .field private static volatile c:Z
 
@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 13

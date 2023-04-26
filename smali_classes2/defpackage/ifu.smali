@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ifx;
+.field public final a:Ldefpackage/ifx;
 
 
 # direct methods

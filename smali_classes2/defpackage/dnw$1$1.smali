@@ -12,47 +12,47 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Ldefpackage/dnw$1;
+.field public final synthetic this$1:Ldefpackage/dnw$1;
 
-.field final synthetic val$dnwVar:Ldefpackage/dnw;
+.field public final synthetic val$dnwVar:Ldefpackage/dnw;
 
-.field final synthetic val$e:I
+.field public final synthetic val$e:I
 
-.field final synthetic val$findViewById:Landroid/view/View;
+.field public final synthetic val$findViewById:Landroid/view/View;
 
-.field final synthetic val$findViewById2:Landroid/view/View;
+.field public final synthetic val$findViewById2:Landroid/view/View;
 
-.field final synthetic val$findViewById3:Landroid/view/View;
+.field public final synthetic val$findViewById3:Landroid/view/View;
 
-.field final synthetic val$frameLayoutArr:[Landroid/widget/FrameLayout;
+.field public final synthetic val$frameLayoutArr:[Landroid/widget/FrameLayout;
 
-.field final synthetic val$i7:I
+.field public final synthetic val$i7:I
 
-.field final synthetic val$i8:I
+.field public final synthetic val$i8:I
 
-.field final synthetic val$i9:I
+.field public final synthetic val$i9:I
 
-.field final synthetic val$imageView7:Landroid/widget/ImageView;
+.field public final synthetic val$imageView7:Landroid/widget/ImageView;
 
-.field final synthetic val$imageView8:Landroid/widget/ImageView;
+.field public final synthetic val$imageView8:Landroid/widget/ImageView;
 
-.field final synthetic val$imageView9:Landroid/widget/ImageView;
+.field public final synthetic val$imageView9:Landroid/widget/ImageView;
 
-.field final synthetic val$textView7:Landroid/widget/TextView;
+.field public final synthetic val$textView7:Landroid/widget/TextView;
 
-.field final synthetic val$textView8:Landroid/widget/TextView;
+.field public final synthetic val$textView8:Landroid/widget/TextView;
 
-.field final synthetic val$textView9:Landroid/widget/TextView;
+.field public final synthetic val$textView9:Landroid/widget/TextView;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/dnw$1;Ldefpackage/dnw;Landroid/view/View;Landroid/view/View;Landroid/view/View;IILandroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/TextView;IILandroid/widget/ImageView;Landroid/widget/ImageView;Landroid/widget/ImageView;[Landroid/widget/FrameLayout;)V
+.method public constructor <init>(Ldefpackage/dnw$1;Ldefpackage/dnw;Landroid/view/View;Landroid/view/View;Landroid/view/View;IILandroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/TextView;IILandroid/widget/ImageView;Landroid/widget/ImageView;Landroid/widget/ImageView;[Landroid/widget/FrameLayout;)V
     .locals 3
     .param p1, "this$1"    # Ldefpackage/dnw$1;
 

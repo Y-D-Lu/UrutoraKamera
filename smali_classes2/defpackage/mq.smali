@@ -74,7 +74,7 @@
 
 
 # virtual methods
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 2
 
     .line 35

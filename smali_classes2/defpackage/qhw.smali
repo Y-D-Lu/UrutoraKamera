@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/qbw;
+.field public final b:Ldefpackage/qbw;
 
 
 # direct methods

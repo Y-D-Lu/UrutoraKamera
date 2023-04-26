@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/hzb;
+.field public final synthetic this$0:Ldefpackage/hzb;
 
-.field final synthetic val$onLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
+.field public final synthetic val$onLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
-.field final synthetic val$smartsChipView:Lcom/google/android/apps/camera/smarts/SmartsChipView;
+.field public final synthetic val$smartsChipView:Lcom/google/android/apps/camera/smarts/SmartsChipView;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/hzb;Lcom/google/android/apps/camera/smarts/SmartsChipView;Landroid/view/View$OnLayoutChangeListener;)V
+.method public constructor <init>(Ldefpackage/hzb;Lcom/google/android/apps/camera/smarts/SmartsChipView;Landroid/view/View$OnLayoutChangeListener;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/hzb;
 

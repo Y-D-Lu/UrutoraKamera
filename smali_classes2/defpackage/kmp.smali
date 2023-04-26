@@ -70,7 +70,7 @@
     return-object v0
 .end method
 
-.method protected final F()V
+.method public final F()V
     .locals 0
 
     .line 94

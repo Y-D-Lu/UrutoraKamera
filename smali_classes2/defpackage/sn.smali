@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/sq;
+.field public final a:Ldefpackage/sq;
 
 .field private final b:I
 

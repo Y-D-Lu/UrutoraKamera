@@ -105,7 +105,7 @@
 
 
 # virtual methods
-.method protected final onActivityResult(IILandroid/content/Intent;)V
+.method public final onActivityResult(IILandroid/content/Intent;)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -127,7 +127,7 @@
     return-void
 .end method
 
-.method protected final onCreate(Landroid/os/Bundle;)V
+.method public final onCreate(Landroid/os/Bundle;)V
     .locals 6
     .param p1, "bundle"    # Landroid/os/Bundle;
 

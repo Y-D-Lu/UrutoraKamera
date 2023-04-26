@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:Ldefpackage/oip;
+.field public static final a:Ldefpackage/oip;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 7

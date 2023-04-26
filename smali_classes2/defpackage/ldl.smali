@@ -55,7 +55,7 @@
     return-object v0
 .end method
 
-.method protected abstract c(Ljava/lang/Object;)Ljava/lang/Object;
+.method public abstract c(Ljava/lang/Object;)Ljava/lang/Object;
 .end method
 
 .method public final fA()Ljava/lang/Object;

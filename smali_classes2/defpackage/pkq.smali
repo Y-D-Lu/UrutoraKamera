@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:[Landroid/hardware/camera2/params/Face;
+.field public final a:[Landroid/hardware/camera2/params/Face;
 
-.field b:[I
+.field public b:[I
 
-.field c:[B
+.field public c:[B
 
-.field d:[F
+.field public d:[F
 
 
 # direct methods

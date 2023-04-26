@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field transient d:Ljava/util/NavigableSet;
+.field public transient d:Ljava/util/NavigableSet;
 
-.field transient e:Ljava/util/NavigableMap;
+.field public transient e:Ljava/util/NavigableMap;
 
-.field transient f:Ljava/util/NavigableSet;
+.field public transient f:Ljava/util/NavigableSet;
 
 
 # direct methods

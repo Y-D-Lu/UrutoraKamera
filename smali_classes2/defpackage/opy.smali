@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Ldefpackage/otj;
+.field public static final a:Ldefpackage/otj;
 
 
 # instance fields
@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 6
@@ -47,7 +47,7 @@
 
 
 # virtual methods
-.method protected final a(I)Ljava/lang/Object;
+.method public final a(I)Ljava/lang/Object;
     .locals 1
     .param p1, "i"    # I
 

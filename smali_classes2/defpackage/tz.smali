@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Landroid/content/IntentSender$SendIntentException;
+.field public final b:Landroid/content/IntentSender$SendIntentException;
 
-.field final c:Ldefpackage/um;
+.field public final c:Ldefpackage/um;
 
 
 # direct methods

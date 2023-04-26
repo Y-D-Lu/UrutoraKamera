@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/util/SparseArray;
+.field public a:Landroid/util/SparseArray;
 
-.field b:Ldefpackage/ConstraintWidgetContainer;
+.field public b:Ldefpackage/ConstraintWidgetContainer;
 
 .field public c:Ldefpackage/ConstraintSet;
 
@@ -517,7 +517,7 @@
 
 
 # virtual methods
-.method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -562,7 +562,7 @@
     return-object p1
 .end method
 
-.method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -590,7 +590,7 @@
     return-object v0
 .end method
 
-.method protected final gr()V
+.method public final gr()V
     .locals 1
 
     .line 155

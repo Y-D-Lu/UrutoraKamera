@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected final decorateTask(Ljava/lang/Runnable;Ljava/util/concurrent/RunnableScheduledFuture;)Ljava/util/concurrent/RunnableScheduledFuture;
+.method public final decorateTask(Ljava/lang/Runnable;Ljava/util/concurrent/RunnableScheduledFuture;)Ljava/util/concurrent/RunnableScheduledFuture;
     .locals 1
     .param p1, "runnable"    # Ljava/lang/Runnable;
     .param p2, "runnableScheduledFuture"    # Ljava/util/concurrent/RunnableScheduledFuture;
@@ -31,7 +31,7 @@
     return-object v0
 .end method
 
-.method protected final decorateTask(Ljava/util/concurrent/Callable;Ljava/util/concurrent/RunnableScheduledFuture;)Ljava/util/concurrent/RunnableScheduledFuture;
+.method public final decorateTask(Ljava/util/concurrent/Callable;Ljava/util/concurrent/RunnableScheduledFuture;)Ljava/util/concurrent/RunnableScheduledFuture;
     .locals 1
     .param p1, "callable"    # Ljava/util/concurrent/Callable;
     .param p2, "runnableScheduledFuture"    # Ljava/util/concurrent/RunnableScheduledFuture;

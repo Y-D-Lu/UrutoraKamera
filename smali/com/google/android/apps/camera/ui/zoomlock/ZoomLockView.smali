@@ -205,7 +205,7 @@
     return-void
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 17
 
     .line 86
@@ -632,7 +632,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 1
     .param p1, "z"    # Z
     .param p2, "i"    # I

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field a:Ldefpackage/pim;
+.field public a:Ldefpackage/pim;
 
 
 # direct methods

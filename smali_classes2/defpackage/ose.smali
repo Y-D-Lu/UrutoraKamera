@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final transient a:Ljava/lang/Object;
+.field public final transient a:Ljava/lang/Object;
 
 
 # direct methods

@@ -109,7 +109,7 @@
     return v0
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 2
     .param p1, "r7"    # I
     .param p2, "r8"    # I

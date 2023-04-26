@@ -139,7 +139,7 @@
     return-object v0
 .end method
 
-.method protected final d()Ljava/lang/String;
+.method public final d()Ljava/lang/String;
     .locals 1
 
     .line 59
@@ -487,7 +487,7 @@
     throw v0
 .end method
 
-.method protected final t()Landroid/os/Bundle;
+.method public final t()Landroid/os/Bundle;
     .locals 3
 
     .line 104

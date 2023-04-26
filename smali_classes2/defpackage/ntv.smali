@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nty;
+.field public final a:Ldefpackage/nty;
 
 .field private final b:I
 

@@ -13,13 +13,13 @@
 
 .field public final b:Ljava/util/List;
 
-.field final c:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.field public final c:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
-.field d:Landroid/view/View;
+.field public d:Landroid/view/View;
 
-.field e:Landroid/view/ViewTreeObserver;
+.field public e:Landroid/view/ViewTreeObserver;
 
-.field f:Z
+.field public f:Z
 
 .field private final h:Landroid/content/Context;
 
@@ -1077,7 +1077,7 @@
     return-void
 .end method
 
-.method protected final t()Z
+.method public final t()Z
     .locals 1
 
     .line 299

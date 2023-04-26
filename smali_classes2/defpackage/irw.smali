@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/irz;
+.field public final a:Ldefpackage/irz;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 2
     .param p1, "z"    # Z
     .param p2, "i"    # I

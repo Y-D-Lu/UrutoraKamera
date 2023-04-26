@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:I
 
-.field final b:I
+.field public final b:I
 
 
 # direct methods

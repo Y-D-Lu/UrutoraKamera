@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/fqv;
+.field public final synthetic this$0:Ldefpackage/fqv;
 
-.field final synthetic val$b:Ldefpackage/pht;
+.field public final synthetic val$b:Ldefpackage/pht;
 
-.field final synthetic val$f:Ldefpackage/pih;
+.field public final synthetic val$f:Ldefpackage/pih;
 
-.field final synthetic val$fileOutputStream:Ljava/io/FileOutputStream;
+.field public final synthetic val$fileOutputStream:Ljava/io/FileOutputStream;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/fqv;Ljava/io/FileOutputStream;Ldefpackage/pih;Ldefpackage/pht;)V
+.method public constructor <init>(Ldefpackage/fqv;Ljava/io/FileOutputStream;Ldefpackage/pih;Ldefpackage/pht;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/fqv;
 

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final a:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final b:Lcom/google/geo/lightfield/processing/ProgressCallback;
+.field public final b:Lcom/google/geo/lightfield/processing/ProgressCallback;
 
-.field final c:Ldefpackage/ekl;
+.field public final c:Ldefpackage/ekl;
 
 
 # direct methods

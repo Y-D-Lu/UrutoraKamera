@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/xf;
+.field public final a:Ldefpackage/xf;
 
-.field final b:Ldefpackage/xf;
+.field public final b:Ldefpackage/xf;
 
-.field final c:Ldefpackage/xf;
+.field public final c:Ldefpackage/xf;
 
 .field public final d:Landroid/os/Parcel;
 
@@ -899,7 +899,7 @@
     return v0
 .end method
 
-.method protected final m()Ldefpackage/aks;
+.method public final m()Ldefpackage/aks;
     .locals 12
 
     .line 172

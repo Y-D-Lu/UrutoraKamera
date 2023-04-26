@@ -4,37 +4,37 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field b:I
+.field public b:I
 
-.field c:I
+.field public c:I
 
-.field d:I
+.field public d:I
 
-.field e:Landroid/view/ViewGroup;
+.field public e:Landroid/view/ViewGroup;
 
-.field f:Landroid/view/View;
+.field public f:Landroid/view/View;
 
-.field g:Landroid/view/View;
+.field public g:Landroid/view/View;
 
 .field public h:Ldefpackage/kw;
 
-.field i:Ldefpackage/ks;
+.field public i:Ldefpackage/ks;
 
-.field j:Landroid/content/Context;
+.field public j:Landroid/content/Context;
 
-.field k:Z
+.field public k:Z
 
-.field l:Z
+.field public l:Z
 
-.field m:Z
+.field public m:Z
 
-.field n:Z
+.field public n:Z
 
-.field o:Z
+.field public o:Z
 
-.field p:Landroid/os/Bundle;
+.field public p:Landroid/os/Bundle;
 
 
 # direct methods

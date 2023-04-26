@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/animation/AnimatorSet;
+.field public a:Landroid/animation/AnimatorSet;
 
-.field b:Landroid/animation/AnimatorSet;
+.field public b:Landroid/animation/AnimatorSet;
 
 
 # direct methods

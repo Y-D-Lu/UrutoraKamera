@@ -4,17 +4,17 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ndu;
+.field public static final a:Ldefpackage/ndu;
 
-.field static final b:Ldefpackage/ndu;
+.field public static final b:Ldefpackage/ndu;
 
-.field static final c:Ldefpackage/ndu;
+.field public static final c:Ldefpackage/ndu;
 
 .field private static final d:Ldefpackage/ojq;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 11
@@ -1768,7 +1768,7 @@
     return-object v4
 .end method
 
-.method static b(Ldefpackage/ndu;Ldefpackage/pql;)V
+.method public static b(Ldefpackage/ndu;Ldefpackage/pql;)V
     .locals 3
     .param p0, "nduVar"    # Ldefpackage/ndu;
     .param p1, "pqlVar"    # Ldefpackage/pql;

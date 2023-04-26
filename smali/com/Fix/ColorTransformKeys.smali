@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static keys_camera_back:[Ljava/lang/String;
+.field public static keys_camera_back:[Ljava/lang/String;
 
-.field static keys_camera_front:[Ljava/lang/String;
+.field public static keys_camera_front:[Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 5

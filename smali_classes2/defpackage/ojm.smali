@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final f:Ldefpackage/ojn;
+.field public final f:Ldefpackage/ojn;
 
 
 # direct methods

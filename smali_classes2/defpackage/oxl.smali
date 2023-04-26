@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oxm;
+.field public final a:Ldefpackage/oxm;
 
 .field private b:I
 

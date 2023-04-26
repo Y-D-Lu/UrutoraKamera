@@ -265,7 +265,7 @@
     return v0
 .end method
 
-.method protected final onBindView(Landroid/view/View;)V
+.method public final onBindView(Landroid/view/View;)V
     .locals 6
     .param p1, "view"    # Landroid/view/View;
 
@@ -617,7 +617,7 @@
     return-void
 .end method
 
-.method protected final onClick()V
+.method public final onClick()V
     .locals 2
 
     .line 182

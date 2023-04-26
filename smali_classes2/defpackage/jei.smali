@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/jek;
+.field public final b:Ldefpackage/jek;
 
 
 # direct methods

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ayo;
+.field public static final a:Ldefpackage/ayo;
 
 
 # instance fields
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 12

@@ -188,7 +188,7 @@
     return-void
 .end method
 
-.method protected final finalize()V
+.method public final finalize()V
     .locals 5
 
     .line 46

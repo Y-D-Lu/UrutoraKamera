@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mcm;
+.field public final a:Ldefpackage/mcm;
 
 .field private final b:I
 

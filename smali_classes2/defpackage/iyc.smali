@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/iye;
+.field public final b:Ldefpackage/iye;
 
 
 # direct methods

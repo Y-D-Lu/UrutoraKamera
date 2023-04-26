@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qtr;
+.field public final a:Ldefpackage/qtr;
 
-.field final b:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250Worker;
+.field public final b:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250Worker;
 
-.field final c:Ldefpackage/nrl;
+.field public final c:Ldefpackage/nrl;
 
 .field private final d:I
 

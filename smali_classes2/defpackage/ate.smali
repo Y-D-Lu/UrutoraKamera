@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/atg;
+.field public final a:Ldefpackage/atg;
 
 .field public b:Ldefpackage/atd;
 

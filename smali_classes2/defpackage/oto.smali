@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/otp;
+.field public final a:Ldefpackage/otp;
 
 
 # direct methods

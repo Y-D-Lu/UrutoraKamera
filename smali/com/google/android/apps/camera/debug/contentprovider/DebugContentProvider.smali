@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 36
@@ -207,7 +207,7 @@
 
 
 # virtual methods
-.method protected final declared-synchronized a()Ldefpackage/ddf;
+.method public final declared-synchronized a()Ldefpackage/ddf;
     .locals 3
 
     monitor-enter p0

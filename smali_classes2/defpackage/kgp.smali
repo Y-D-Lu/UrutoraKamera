@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ldefpackage/kgt;
 
-.field b:Z
+.field public b:Z
 
 .field public c:Ljava/util/ArrayList;
 

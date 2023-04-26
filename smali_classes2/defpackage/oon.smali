@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:[Ljava/lang/Object;
+.field public a:[Ljava/lang/Object;
 
-.field b:I
+.field public b:I
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/preference/CheckBoxPreference;
+.field public final a:Landroidx/preference/CheckBoxPreference;
 
 
 # direct methods

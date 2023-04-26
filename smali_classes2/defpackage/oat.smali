@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oaf;
+.field public final a:Ldefpackage/oaf;
 
-.field protected b:Ldefpackage/oas;
+.field public b:Ldefpackage/oas;
 
 
 # direct methods

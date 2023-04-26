@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field transient a:Ljava/util/Set;
+.field public transient a:Ljava/util/Set;
 
-.field transient b:Ljava/util/Collection;
+.field public transient b:Ljava/util/Collection;
 
-.field transient c:Ljava/util/Set;
+.field public transient c:Ljava/util/Set;
 
 
 # direct methods

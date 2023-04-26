@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field b:J
+.field public b:J
 
-.field final c:[Ldefpackage/qiu;
+.field public final c:[Ldefpackage/qiu;
 
 
 # direct methods

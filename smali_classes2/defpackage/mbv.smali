@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mbw;
+.field public final a:Ldefpackage/mbw;
 
 .field private final b:Ljava/util/List;
 

@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field protected final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
 .field public final c:Ljava/lang/String;
 

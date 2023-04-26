@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 15
@@ -1004,7 +1004,7 @@
     return-object p0
 .end method
 
-.method writeReplace()Ljava/lang/Object;
+.method public writeReplace()Ljava/lang/Object;
     .locals 2
 
     .line 236

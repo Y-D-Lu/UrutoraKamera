@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bec;
+.field public final a:Ldefpackage/bec;
 
-.field final b:Ldefpackage/bec;
+.field public final b:Ldefpackage/bec;
 
-.field final c:Ldefpackage/bec;
+.field public final c:Ldefpackage/bec;
 
 .field public final d:Ldefpackage/fc;
 
-.field final e:Ldefpackage/bby;
+.field public final e:Ldefpackage/bby;
 
-.field final f:Ldefpackage/bby;
+.field public final f:Ldefpackage/bby;
 
 
 # direct methods

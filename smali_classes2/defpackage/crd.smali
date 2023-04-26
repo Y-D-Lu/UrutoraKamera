@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/crg;
+.field public final a:Ldefpackage/crg;
 
 
 # direct methods

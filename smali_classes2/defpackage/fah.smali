@@ -79,7 +79,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 27
@@ -526,7 +526,7 @@
     return-object v0
 .end method
 
-.method protected final gf()V
+.method public final gf()V
     .locals 0
 
     .line 145
@@ -536,7 +536,7 @@
     return-void
 .end method
 
-.method protected final k()V
+.method public final k()V
     .locals 4
 
     .line 150
@@ -597,7 +597,7 @@
     return-void
 .end method
 
-.method protected final m()V
+.method public final m()V
     .locals 7
 
     .line 177
@@ -688,7 +688,7 @@
     return-void
 .end method
 
-.method protected final o()V
+.method public final o()V
     .locals 2
 
     .line 222

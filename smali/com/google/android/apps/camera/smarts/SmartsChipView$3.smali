@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/smarts/SmartsChipView;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/smarts/SmartsChipView;
 
-.field final synthetic val$iapVar:Ldefpackage/iap;
+.field public final synthetic val$iapVar:Ldefpackage/iap;
 
-.field final synthetic val$runnable2:Ljava/lang/Runnable;
+.field public final synthetic val$runnable2:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/apps/camera/smarts/SmartsChipView;Ldefpackage/iap;Ljava/lang/Runnable;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/smarts/SmartsChipView;Ldefpackage/iap;Ljava/lang/Runnable;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/smarts/SmartsChipView;
 

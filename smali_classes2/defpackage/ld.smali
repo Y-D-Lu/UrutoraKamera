@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lf;
+.field public final a:Ldefpackage/lf;
 
 .field private final b:Landroid/view/MenuItem$OnActionExpandListener;
 

@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:I
+.field public b:I
 
-.field c:Z
+.field public c:Z
 
-.field final d:Ldefpackage/wy;
+.field public final d:Ldefpackage/wy;
 
 
 # direct methods

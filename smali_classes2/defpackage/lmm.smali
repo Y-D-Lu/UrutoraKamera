@@ -52,7 +52,7 @@
 
 
 # virtual methods
-.method protected abstract a(I)I
+.method public abstract a(I)I
 .end method
 
 .method public final b(I)S

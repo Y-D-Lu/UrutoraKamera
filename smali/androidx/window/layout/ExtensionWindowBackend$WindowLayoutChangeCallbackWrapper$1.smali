@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;
+.field public final synthetic this$1:Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;
 
-.field final synthetic val$windowLayoutInfo:Landroidx/window/layout/WindowLayoutInfo;
+.field public final synthetic val$windowLayoutInfo:Landroidx/window/layout/WindowLayoutInfo;
 
 
 # direct methods
-.method constructor <init>(Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;Landroidx/window/layout/WindowLayoutInfo;)V
+.method public constructor <init>(Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;Landroidx/window/layout/WindowLayoutInfo;)V
     .locals 0
     .param p1, "this$1"    # Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;
 

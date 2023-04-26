@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
 .field private final b:Landroid/graphics/RectF;
 
@@ -50,7 +50,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 50
@@ -654,7 +654,7 @@
     return-void
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 0
 
     .line 157
@@ -667,7 +667,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 13
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -996,7 +996,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 16
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -1175,7 +1175,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 15
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -1341,7 +1341,7 @@
     .end packed-switch
 .end method
 
-.method protected final onSetAlpha(I)Z
+.method public final onSetAlpha(I)Z
     .locals 1
     .param p1, "i"    # I
 
@@ -1396,7 +1396,7 @@
     return-void
 .end method
 
-.method protected final onVisibilityChanged(Landroid/view/View;I)V
+.method public final onVisibilityChanged(Landroid/view/View;I)V
     .locals 0
     .param p1, "view"    # Landroid/view/View;
     .param p2, "i"    # I
@@ -1411,7 +1411,7 @@
     return-void
 .end method
 
-.method protected final onWindowVisibilityChanged(I)V
+.method public final onWindowVisibilityChanged(I)V
     .locals 0
     .param p1, "i"    # I
 

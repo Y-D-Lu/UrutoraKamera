@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 13
@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method protected final onHandleIntent(Landroid/content/Intent;)V
+.method public final onHandleIntent(Landroid/content/Intent;)V
     .locals 4
     .param p1, "intent"    # Landroid/content/Intent;
 

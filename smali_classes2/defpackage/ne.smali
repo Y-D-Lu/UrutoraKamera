@@ -43,7 +43,7 @@
 
 
 # virtual methods
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 3
 
     .line 28
@@ -118,7 +118,7 @@
     return-void
 .end method
 
-.method protected final declared-synchronized onDraw(Landroid/graphics/Canvas;)V
+.method public final declared-synchronized onDraw(Landroid/graphics/Canvas;)V
     .locals 10
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 

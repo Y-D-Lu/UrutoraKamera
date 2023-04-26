@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field a:Ldefpackage/aof;
+.field public a:Ldefpackage/aof;
 
-.field b:Ljava/lang/String;
+.field public b:Ljava/lang/String;
 
 .field public final c:Ldefpackage/asl;
 

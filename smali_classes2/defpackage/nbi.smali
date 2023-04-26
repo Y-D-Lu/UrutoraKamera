@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final d:Ldefpackage/ojq;
+.field public final d:Ldefpackage/ojq;
 
 
 # direct methods

@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hin;
+.field public final a:Ldefpackage/hin;
 
-.field final b:Lcom/google/android/libraries/camera/exif/ExifInterface;
+.field public final b:Lcom/google/android/libraries/camera/exif/ExifInterface;
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
-.field final d:Ldefpackage/gog;
+.field public final d:Ldefpackage/gog;
 
-.field final e:Ldefpackage/ecg;
+.field public final e:Ldefpackage/ecg;
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bnb;
+.field public final a:Ldefpackage/bnb;
 
 
 # direct methods

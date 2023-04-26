@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/fly;
+.field public final b:Ldefpackage/fly;
 
 
 # direct methods

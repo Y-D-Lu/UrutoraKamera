@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final this$0:Lcom/google/android/apps/camera/bottombar/BottomBar;
+.field public final this$0:Lcom/google/android/apps/camera/bottombar/BottomBar;
 
 
 # direct methods

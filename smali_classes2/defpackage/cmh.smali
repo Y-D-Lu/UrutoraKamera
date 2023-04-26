@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8
@@ -76,7 +76,7 @@
     return-void
 .end method
 
-.method final declared-synchronized g(J)V
+.method public final declared-synchronized g(J)V
     .locals 4
     .param p1, "j"    # J
 

@@ -20,39 +20,39 @@
 
 .field public static final CREATE_FLAG_NONE:I = 0x0
 
-.field static final DEBUG:Z = false
+.field public static final DEBUG:Z = false
 
-.field static final LOG_ENABLED:Z = false
+.field public static final LOG_ENABLED:Z = false
 
-.field static final LOG_TAG:Ljava/lang/String; = "RenderScript_jni"
+.field public static final LOG_TAG:Ljava/lang/String; = "RenderScript_jni"
 
-.field static final SUPPORT_LIB_API:I = 0x17
+.field public static final SUPPORT_LIB_API:I = 0x17
 
-.field static final SUPPORT_LIB_VERSION:I = 0x8fd
+.field public static final SUPPORT_LIB_VERSION:I = 0x8fd
 
-.field static lock:Ljava/lang/Object;
+.field public static lock:Ljava/lang/Object;
 
 .field private static mBlackList:Ljava/lang/String;
 
-.field static mCachePath:Ljava/lang/String;
+.field public static mCachePath:Ljava/lang/String;
 
 .field private static mProcessContextList:Ljava/util/ArrayList;
 
-.field static registerNativeAllocation:Ljava/lang/reflect/Method;
+.field public static registerNativeAllocation:Ljava/lang/reflect/Method;
 
-.field static registerNativeFree:Ljava/lang/reflect/Method;
+.field public static registerNativeFree:Ljava/lang/reflect/Method;
 
-.field static sInitialized:Z
+.field public static sInitialized:Z
 
 .field private static sNative:I
 
-.field static sPointerSize:I
+.field public static sPointerSize:I
 
-.field static sRuntime:Ljava/lang/Object;
+.field public static sRuntime:Ljava/lang/Object;
 
 .field private static sSdkVersion:I
 
-.field static sUseGCHooks:Z
+.field public static sUseGCHooks:Z
 
 .field private static useIOlib:Z
 
@@ -62,167 +62,167 @@
 # instance fields
 .field private mApplicationContext:Landroid/content/Context;
 
-.field mContext:J
+.field public mContext:J
 
 .field private mContextFlags:I
 
 .field private mContextSdkVersion:I
 
-.field mContextType:Landroid/support/v8/renderscript/RenderScript$ContextType;
+.field public mContextType:Landroid/support/v8/renderscript/RenderScript$ContextType;
 
 .field private mDestroyed:Z
 
 .field private mDispatchAPILevel:I
 
-.field mElement_ALLOCATION:Landroid/support/v8/renderscript/Element;
+.field public mElement_ALLOCATION:Landroid/support/v8/renderscript/Element;
 
-.field mElement_A_8:Landroid/support/v8/renderscript/Element;
+.field public mElement_A_8:Landroid/support/v8/renderscript/Element;
 
-.field mElement_BOOLEAN:Landroid/support/v8/renderscript/Element;
+.field public mElement_BOOLEAN:Landroid/support/v8/renderscript/Element;
 
-.field mElement_CHAR_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_CHAR_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_CHAR_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_CHAR_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_CHAR_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_CHAR_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_DOUBLE_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_DOUBLE_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_DOUBLE_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_DOUBLE_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_DOUBLE_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_DOUBLE_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_ELEMENT:Landroid/support/v8/renderscript/Element;
+.field public mElement_ELEMENT:Landroid/support/v8/renderscript/Element;
 
-.field mElement_F32:Landroid/support/v8/renderscript/Element;
+.field public mElement_F32:Landroid/support/v8/renderscript/Element;
 
-.field mElement_F64:Landroid/support/v8/renderscript/Element;
+.field public mElement_F64:Landroid/support/v8/renderscript/Element;
 
-.field mElement_FLOAT_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_FLOAT_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_FLOAT_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_FLOAT_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_FLOAT_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_FLOAT_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_I16:Landroid/support/v8/renderscript/Element;
+.field public mElement_I16:Landroid/support/v8/renderscript/Element;
 
-.field mElement_I32:Landroid/support/v8/renderscript/Element;
+.field public mElement_I32:Landroid/support/v8/renderscript/Element;
 
-.field mElement_I64:Landroid/support/v8/renderscript/Element;
+.field public mElement_I64:Landroid/support/v8/renderscript/Element;
 
-.field mElement_I8:Landroid/support/v8/renderscript/Element;
+.field public mElement_I8:Landroid/support/v8/renderscript/Element;
 
-.field mElement_INT_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_INT_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_INT_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_INT_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_INT_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_INT_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_LONG_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_LONG_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_LONG_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_LONG_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_LONG_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_LONG_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_MATRIX_2X2:Landroid/support/v8/renderscript/Element;
+.field public mElement_MATRIX_2X2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_MATRIX_3X3:Landroid/support/v8/renderscript/Element;
+.field public mElement_MATRIX_3X3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_MATRIX_4X4:Landroid/support/v8/renderscript/Element;
+.field public mElement_MATRIX_4X4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_RGBA_4444:Landroid/support/v8/renderscript/Element;
+.field public mElement_RGBA_4444:Landroid/support/v8/renderscript/Element;
 
-.field mElement_RGBA_5551:Landroid/support/v8/renderscript/Element;
+.field public mElement_RGBA_5551:Landroid/support/v8/renderscript/Element;
 
-.field mElement_RGBA_8888:Landroid/support/v8/renderscript/Element;
+.field public mElement_RGBA_8888:Landroid/support/v8/renderscript/Element;
 
-.field mElement_RGB_565:Landroid/support/v8/renderscript/Element;
+.field public mElement_RGB_565:Landroid/support/v8/renderscript/Element;
 
-.field mElement_RGB_888:Landroid/support/v8/renderscript/Element;
+.field public mElement_RGB_888:Landroid/support/v8/renderscript/Element;
 
-.field mElement_SAMPLER:Landroid/support/v8/renderscript/Element;
+.field public mElement_SAMPLER:Landroid/support/v8/renderscript/Element;
 
-.field mElement_SCRIPT:Landroid/support/v8/renderscript/Element;
+.field public mElement_SCRIPT:Landroid/support/v8/renderscript/Element;
 
-.field mElement_SHORT_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_SHORT_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_SHORT_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_SHORT_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_SHORT_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_SHORT_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_TYPE:Landroid/support/v8/renderscript/Element;
+.field public mElement_TYPE:Landroid/support/v8/renderscript/Element;
 
-.field mElement_U16:Landroid/support/v8/renderscript/Element;
+.field public mElement_U16:Landroid/support/v8/renderscript/Element;
 
-.field mElement_U32:Landroid/support/v8/renderscript/Element;
+.field public mElement_U32:Landroid/support/v8/renderscript/Element;
 
-.field mElement_U64:Landroid/support/v8/renderscript/Element;
+.field public mElement_U64:Landroid/support/v8/renderscript/Element;
 
-.field mElement_U8:Landroid/support/v8/renderscript/Element;
+.field public mElement_U8:Landroid/support/v8/renderscript/Element;
 
-.field mElement_UCHAR_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_UCHAR_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_UCHAR_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_UCHAR_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_UCHAR_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_UCHAR_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_UINT_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_UINT_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_UINT_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_UINT_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_UINT_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_UINT_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_ULONG_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_ULONG_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_ULONG_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_ULONG_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_ULONG_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_ULONG_4:Landroid/support/v8/renderscript/Element;
 
-.field mElement_USHORT_2:Landroid/support/v8/renderscript/Element;
+.field public mElement_USHORT_2:Landroid/support/v8/renderscript/Element;
 
-.field mElement_USHORT_3:Landroid/support/v8/renderscript/Element;
+.field public mElement_USHORT_3:Landroid/support/v8/renderscript/Element;
 
-.field mElement_USHORT_4:Landroid/support/v8/renderscript/Element;
+.field public mElement_USHORT_4:Landroid/support/v8/renderscript/Element;
 
 .field private mEnableMultiInput:Z
 
-.field mErrorCallback:Landroid/support/v8/renderscript/RenderScript$RSErrorHandler;
+.field public mErrorCallback:Landroid/support/v8/renderscript/RenderScript$RSErrorHandler;
 
-.field mIncCon:J
+.field public mIncCon:J
 
-.field mIncLoaded:Z
+.field public mIncLoaded:Z
 
 .field private mIsProcessContext:Z
 
-.field mMessageCallback:Landroid/support/v8/renderscript/RenderScript$RSMessageHandler;
+.field public mMessageCallback:Landroid/support/v8/renderscript/RenderScript$RSMessageHandler;
 
-.field mMessageThread:Landroid/support/v8/renderscript/RenderScript$MessageThread;
+.field public mMessageThread:Landroid/support/v8/renderscript/RenderScript$MessageThread;
 
 .field private mNativeLibDir:Ljava/lang/String;
 
-.field mRWLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+.field public mRWLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
-.field mSampler_CLAMP_LINEAR:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_CLAMP_LINEAR:Landroid/support/v8/renderscript/Sampler;
 
-.field mSampler_CLAMP_LINEAR_MIP_LINEAR:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_CLAMP_LINEAR_MIP_LINEAR:Landroid/support/v8/renderscript/Sampler;
 
-.field mSampler_CLAMP_NEAREST:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_CLAMP_NEAREST:Landroid/support/v8/renderscript/Sampler;
 
-.field mSampler_MIRRORED_REPEAT_LINEAR:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_MIRRORED_REPEAT_LINEAR:Landroid/support/v8/renderscript/Sampler;
 
-.field mSampler_MIRRORED_REPEAT_LINEAR_MIP_LINEAR:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_MIRRORED_REPEAT_LINEAR_MIP_LINEAR:Landroid/support/v8/renderscript/Sampler;
 
-.field mSampler_MIRRORED_REPEAT_NEAREST:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_MIRRORED_REPEAT_NEAREST:Landroid/support/v8/renderscript/Sampler;
 
-.field mSampler_WRAP_LINEAR:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_WRAP_LINEAR:Landroid/support/v8/renderscript/Sampler;
 
-.field mSampler_WRAP_LINEAR_MIP_LINEAR:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_WRAP_LINEAR_MIP_LINEAR:Landroid/support/v8/renderscript/Sampler;
 
-.field mSampler_WRAP_NEAREST:Landroid/support/v8/renderscript/Sampler;
+.field public mSampler_WRAP_NEAREST:Landroid/support/v8/renderscript/Sampler;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 104
@@ -1332,7 +1332,7 @@
     throw v1
 .end method
 
-.method static native rsnSystemGetPointerSize()I
+.method public static native rsnSystemGetPointerSize()I
 .end method
 
 .method public static setBlackList(Ljava/lang/String;)V
@@ -1430,7 +1430,7 @@
     return-void
 .end method
 
-.method protected finalize()V
+.method public finalize()V
     .locals 1
 
     .line 571
@@ -1669,7 +1669,7 @@
     throw p1
 .end method
 
-.method declared-synchronized nAllocationCreateBitmapRef(JLandroid/graphics/Bitmap;)J
+.method public declared-synchronized nAllocationCreateBitmapRef(JLandroid/graphics/Bitmap;)J
     .locals 6
     .param p1, "j"    # J
     .param p3, "bitmap"    # Landroid/graphics/Bitmap;
@@ -1711,7 +1711,7 @@
     throw p1
 .end method
 
-.method declared-synchronized nAllocationCreateFromAssetStream(III)J
+.method public declared-synchronized nAllocationCreateFromAssetStream(III)J
     .locals 6
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -2563,7 +2563,7 @@
     throw p1
 .end method
 
-.method declared-synchronized nAllocationGetType(J)J
+.method public declared-synchronized nAllocationGetType(J)J
     .locals 2
     .param p1, "j"    # J
 
@@ -2874,7 +2874,7 @@
     throw v0
 .end method
 
-.method declared-synchronized nAllocationResize1D(JI)V
+.method public declared-synchronized nAllocationResize1D(JI)V
     .locals 6
     .param p1, "j"    # J
     .param p3, "i"    # I
@@ -2915,7 +2915,7 @@
     throw p1
 .end method
 
-.method declared-synchronized nAllocationResize2D(JII)V
+.method public declared-synchronized nAllocationResize2D(JII)V
     .locals 7
     .param p1, "j"    # J
     .param p3, "i"    # I
@@ -3470,10 +3470,10 @@
 .method public native nDeviceCreate()J
 .end method
 
-.method native nDeviceDestroy(J)V
+.method public native nDeviceDestroy(J)V
 .end method
 
-.method native nDeviceSetConfig(JII)V
+.method public native nDeviceSetConfig(JII)V
 .end method
 
 .method public declared-synchronized nElementCreate(JIZI)J
@@ -3572,7 +3572,7 @@
     throw p1
 .end method
 
-.method declared-synchronized nElementGetNativeData(J[I)V
+.method public declared-synchronized nElementGetNativeData(J[I)V
     .locals 6
     .param p1, "j"    # J
     .param p3, "iArr"    # [I
@@ -3613,7 +3613,7 @@
     throw p1
 .end method
 
-.method declared-synchronized nElementGetSubElements(J[J[Ljava/lang/String;[I)V
+.method public declared-synchronized nElementGetSubElements(J[J[Ljava/lang/String;[I)V
     .locals 8
     .param p1, "j"    # J
     .param p3, "jArr"    # [J
@@ -3833,7 +3833,7 @@
 .method public native nIncDeviceCreate()J
 .end method
 
-.method native nIncDeviceDestroy(J)V
+.method public native nIncDeviceDestroy(J)V
 .end method
 
 .method public declared-synchronized nIncElementCreate(JIZI)J
@@ -6556,7 +6556,7 @@
     throw v0
 .end method
 
-.method declared-synchronized nTypeGetNativeData(J[J)V
+.method public declared-synchronized nTypeGetNativeData(J[J)V
     .locals 6
     .param p1, "j"    # J
     .param p3, "jArr"    # [J

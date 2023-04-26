@@ -4,31 +4,31 @@
 
 
 # static fields
-.field static final a:Ljava/util/regex/Pattern;
+.field public static final a:Ljava/util/regex/Pattern;
 
-.field static final b:Ljava/util/regex/Pattern;
+.field public static final b:Ljava/util/regex/Pattern;
 
-.field static final c:Ljava/util/regex/Pattern;
+.field public static final c:Ljava/util/regex/Pattern;
 
-.field static final d:Ljava/util/regex/Pattern;
+.field public static final d:Ljava/util/regex/Pattern;
 
-.field static final e:Ljava/util/regex/Pattern;
+.field public static final e:Ljava/util/regex/Pattern;
 
 
 # instance fields
-.field f:Ljava/lang/Long;
+.field public f:Ljava/lang/Long;
 
-.field g:Ljava/lang/Long;
+.field public g:Ljava/lang/Long;
 
-.field h:Ljava/lang/Long;
+.field public h:Ljava/lang/Long;
 
-.field i:Ljava/lang/Long;
+.field public i:Ljava/lang/Long;
 
-.field j:Ljava/lang/Long;
+.field public j:Ljava/lang/Long;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8
@@ -79,7 +79,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 7

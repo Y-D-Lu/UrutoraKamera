@@ -6,7 +6,7 @@
 # static fields
 .field public static final a:Ljava/util/regex/Pattern;
 
-.field static final b:Landroid/accounts/Account;
+.field public static final b:Landroid/accounts/Account;
 
 .field public static final c:Ljava/util/Set;
 
@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 15

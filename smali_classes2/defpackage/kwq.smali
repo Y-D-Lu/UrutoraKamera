@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kww;
+.field public final a:Ldefpackage/kww;
 
 .field private b:Z
 

@@ -180,7 +180,7 @@
     return-object v0
 .end method
 
-.method readResolve()Ljava/lang/Object;
+.method public readResolve()Ljava/lang/Object;
     .locals 1
 
     .line 58

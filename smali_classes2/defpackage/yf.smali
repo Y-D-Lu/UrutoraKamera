@@ -15,7 +15,7 @@
 
 .field public c:I
 
-.field d:I
+.field public d:I
 
 .field public e:I
 
@@ -23,23 +23,23 @@
 
 .field public g:Z
 
-.field final h:[F
+.field public final h:[F
 
-.field final i:[F
+.field public final i:[F
 
-.field j:[Ldefpackage/xy;
+.field public j:[Ldefpackage/xy;
 
-.field k:I
+.field public k:I
 
 .field public l:I
 
-.field m:Z
+.field public m:Z
 
-.field n:I
+.field public n:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10

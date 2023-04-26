@@ -10,9 +10,9 @@
 
 .field public final c:I
 
-.field final d:I
+.field public final d:I
 
-.field final e:[F
+.field public final e:[F
 
 
 # direct methods

@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/stats/Instrumentation;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/stats/Instrumentation;
 
-.field final synthetic val$timingSession:Lcom/google/android/apps/camera/stats/timing/TimingSession;
+.field public final synthetic val$timingSession:Lcom/google/android/apps/camera/stats/timing/TimingSession;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/apps/camera/stats/Instrumentation;Lcom/google/android/apps/camera/stats/timing/TimingSession;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/stats/Instrumentation;Lcom/google/android/apps/camera/stats/timing/TimingSession;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/stats/Instrumentation;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/Comparator;
+.field public final a:Ljava/util/Comparator;
 
 .field private transient b:Ldefpackage/osg;
 

@@ -50,7 +50,7 @@
     throw v0
 .end method
 
-.method protected final declared-synchronized b()Ldefpackage/hub;
+.method public final declared-synchronized b()Ldefpackage/hub;
     .locals 1
 
     monitor-enter p0
@@ -153,7 +153,7 @@
     return-object v1
 .end method
 
-.method protected final e()Ljava/util/concurrent/ExecutorService;
+.method public final e()Ljava/util/concurrent/ExecutorService;
     .locals 1
 
     .line 107

@@ -14,17 +14,17 @@
 # instance fields
 .field public final b:Ldefpackage/aof;
 
-.field final c:Ljava/lang/Object;
+.field public final c:Ljava/lang/Object;
 
-.field d:Ljava/lang/String;
+.field public d:Ljava/lang/String;
 
-.field final e:Ljava/util/Map;
+.field public final e:Ljava/util/Map;
 
-.field final f:Ljava/util/Map;
+.field public final f:Ljava/util/Map;
 
-.field final g:Ljava/util/Set;
+.field public final g:Ljava/util/Set;
 
-.field final h:Ldefpackage/apd;
+.field public final h:Ldefpackage/apd;
 
 .field public i:Ldefpackage/apz;
 
@@ -34,7 +34,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 21

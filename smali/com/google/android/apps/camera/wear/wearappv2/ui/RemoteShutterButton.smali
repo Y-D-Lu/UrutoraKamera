@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected final getDefaultScale()F
+.method public final getDefaultScale()F
     .locals 2
 
     .line 17

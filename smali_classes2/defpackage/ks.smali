@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field a:Landroid/content/Context;
+.field public a:Landroid/content/Context;
 
 .field public b:Landroid/view/LayoutInflater;
 
-.field c:Ldefpackage/kw;
+.field public c:Ldefpackage/kw;
 
 .field public d:Landroid/support/v7/view/menu/ExpandedMenuView;
 

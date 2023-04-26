@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field a:Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;
+.field public a:Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;
 
 
 # direct methods
@@ -81,7 +81,7 @@
     return v1
 .end method
 
-.method protected final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 2
     .param p1, "r6"    # I
     .param p2, "r7"    # Landroid/os/Parcel;

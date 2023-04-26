@@ -12,9 +12,9 @@
 
 .field public final f:Landroid/content/Context;
 
-.field protected final g:Ljava/util/concurrent/Executor;
+.field public final g:Ljava/util/concurrent/Executor;
 
-.field protected final h:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 .field public final i:Ldefpackage/fhv;
 

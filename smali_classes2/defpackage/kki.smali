@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/app/Dialog;
+.field public a:Landroid/app/Dialog;
 
-.field b:Ldefpackage/kjl;
+.field public b:Ldefpackage/kjl;
 
 
 # direct methods

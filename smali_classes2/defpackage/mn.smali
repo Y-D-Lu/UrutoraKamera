@@ -10,7 +10,7 @@
 
 .field public c:I
 
-.field final d:Ldefpackage/pz;
+.field public final d:Ldefpackage/pz;
 
 .field private final e:Ldefpackage/fc;
 
@@ -426,7 +426,7 @@
     return v0
 .end method
 
-.method final b(II)I
+.method public final b(II)I
     .locals 6
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -743,7 +743,7 @@
     .end packed-switch
 .end method
 
-.method final f(Ldefpackage/mm;I)V
+.method public final f(Ldefpackage/mm;I)V
     .locals 3
     .param p1, "mmVar"    # Ldefpackage/mm;
     .param p2, "i"    # I
@@ -1239,7 +1239,7 @@
     return-void
 .end method
 
-.method final i(Ljava/util/List;)V
+.method public final i(Ljava/util/List;)V
     .locals 3
     .param p1, "list"    # Ljava/util/List;
 

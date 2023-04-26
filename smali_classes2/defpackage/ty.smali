@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ldefpackage/um;
+.field public final b:Ldefpackage/um;
 
-.field final c:Ldefpackage/kkm;
+.field public final c:Ldefpackage/kkm;
 
 
 # direct methods

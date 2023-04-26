@@ -86,7 +86,7 @@
 
 
 # virtual methods
-.method protected final E(ZLjava/lang/Object;)V
+.method public final E(ZLjava/lang/Object;)V
     .locals 1
     .param p1, "z"    # Z
     .param p2, "obj"    # Ljava/lang/Object;
@@ -230,7 +230,7 @@
     return-void
 .end method
 
-.method protected final f(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
+.method public final f(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 2
     .param p1, "typedArray"    # Landroid/content/res/TypedArray;
     .param p2, "i"    # I

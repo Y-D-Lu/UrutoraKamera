@@ -7,9 +7,9 @@
 
 
 # static fields
-.field static final a:Ljava/lang/Integer;
+.field public static final a:Ljava/lang/Integer;
 
-.field static final b:[Landroid/hardware/camera2/params/MeteringRectangle;
+.field public static final b:[Landroid/hardware/camera2/params/MeteringRectangle;
 
 
 # instance fields
@@ -31,7 +31,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8

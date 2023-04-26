@@ -7,23 +7,23 @@
 
 
 # static fields
-.field static final a:[Ldefpackage/qkd;
+.field public static final a:[Ldefpackage/qkd;
 
-.field static final b:[Ldefpackage/qkd;
+.field public static final b:[Ldefpackage/qkd;
 
 
 # instance fields
-.field final c:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final c:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final d:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field e:Ljava/lang/Object;
+.field public e:Ljava/lang/Object;
 
-.field f:Ljava/lang/Throwable;
+.field public f:Ljava/lang/Throwable;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9
@@ -218,7 +218,7 @@
     return-void
 .end method
 
-.method protected final o(Ldefpackage/qbv;)V
+.method public final o(Ldefpackage/qbv;)V
     .locals 5
     .param p1, "qbvVar"    # Ldefpackage/qbv;
 

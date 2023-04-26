@@ -165,7 +165,7 @@
     throw v0
 .end method
 
-.method protected final gy()V
+.method public final gy()V
     .locals 4
 
     .line 49

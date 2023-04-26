@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/hvz;
+.field public final synthetic this$0:Ldefpackage/hvz;
 
-.field final synthetic val$instrumentation:Lcom/google/android/apps/camera/stats/Instrumentation;
+.field public final synthetic val$instrumentation:Lcom/google/android/apps/camera/stats/Instrumentation;
 
-.field final synthetic val$ljfVar:Ldefpackage/ljf;
+.field public final synthetic val$ljfVar:Ldefpackage/ljf;
 
-.field final synthetic val$mcuVar:Ldefpackage/mcu;
+.field public final synthetic val$mcuVar:Ldefpackage/mcu;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/hvz;Lcom/google/android/apps/camera/stats/Instrumentation;Ldefpackage/mcu;Ldefpackage/ljf;)V
+.method public constructor <init>(Ldefpackage/hvz;Lcom/google/android/apps/camera/stats/Instrumentation;Ldefpackage/mcu;Ldefpackage/ljf;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/hvz;
 

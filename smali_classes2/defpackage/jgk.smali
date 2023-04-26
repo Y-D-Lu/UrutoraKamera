@@ -19,9 +19,9 @@
 
 .field public final c:Ljava/util/EnumMap;
 
-.field d:Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
+.field public d:Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
 
-.field e:Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;
+.field public e:Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;
 
 .field public final f:Ldefpackage/jlb;
 
@@ -61,7 +61,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 24

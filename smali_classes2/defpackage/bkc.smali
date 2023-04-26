@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/Set;
+.field public final a:Ljava/util/Set;
 
 .field private c:Z
 

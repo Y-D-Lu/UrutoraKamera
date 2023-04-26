@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Ldefpackage/jpw$1;
+.field public final synthetic this$1:Ldefpackage/jpw$1;
 
-.field final synthetic val$popupMenuView:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;
+.field public final synthetic val$popupMenuView:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/jpw$1;Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;)V
+.method public constructor <init>(Ldefpackage/jpw$1;Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;)V
     .locals 0
     .param p1, "this$1"    # Ldefpackage/jpw$1;
 

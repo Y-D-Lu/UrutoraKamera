@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 8
@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method protected abstract b()[B
+.method public abstract b()[B
 .end method
 
 .method public final w()[B

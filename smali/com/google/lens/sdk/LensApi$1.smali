@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/lens/sdk/LensApi;
+.field public final synthetic this$0:Lcom/google/lens/sdk/LensApi;
 
-.field final synthetic val$a2:Ldefpackage/pms;
+.field public final synthetic val$a2:Ldefpackage/pms;
 
-.field final synthetic val$activity:Landroid/app/Activity;
+.field public final synthetic val$activity:Landroid/app/Activity;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;Ldefpackage/pms;)V
+.method public constructor <init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;Ldefpackage/pms;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/lens/sdk/LensApi;
 

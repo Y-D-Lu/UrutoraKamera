@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/graphics/drawable/Drawable;
+.field public final a:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods

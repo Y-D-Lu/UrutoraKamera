@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final this$0:Landroidx/window/core/Version;
+.field public final this$0:Landroidx/window/core/Version;
 
 
 # direct methods

@@ -40,7 +40,7 @@
     throw v0
 .end method
 
-.method protected final dispatchRestoreInstanceState(Landroid/util/SparseArray;)V
+.method public final dispatchRestoreInstanceState(Landroid/util/SparseArray;)V
     .locals 1
     .param p1, "sparseArray"    # Landroid/util/SparseArray;
 
@@ -63,7 +63,7 @@
     throw v0
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 1
 
     .line 42
@@ -84,7 +84,7 @@
     throw v0
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 1
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -98,7 +98,7 @@
     throw v0
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -109,7 +109,7 @@
     throw v0
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Parcelable;)V
+.method public final onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 1
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 

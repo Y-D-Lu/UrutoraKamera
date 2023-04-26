@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/fah;
+.field public final synthetic this$0:Ldefpackage/fah;
 
-.field final synthetic val$bArr2:[B
+.field public final synthetic val$bArr2:[B
 
-.field final synthetic val$ezrVar:Ldefpackage/ezr;
+.field public final synthetic val$ezrVar:Ldefpackage/ezr;
 
-.field final synthetic val$uri:Landroid/net/Uri;
+.field public final synthetic val$uri:Landroid/net/Uri;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/fah;Ldefpackage/ezr;Landroid/net/Uri;[B)V
+.method public constructor <init>(Ldefpackage/fah;Ldefpackage/ezr;Landroid/net/Uri;[B)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/fah;
 

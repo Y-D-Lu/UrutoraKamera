@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fjr;
+.field public final a:Ldefpackage/fjr;
 
 .field private final b:Ljava/util/concurrent/Future;
 

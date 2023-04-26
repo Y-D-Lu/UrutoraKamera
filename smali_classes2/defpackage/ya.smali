@@ -14,17 +14,17 @@
 # instance fields
 .field public c:Z
 
-.field d:I
+.field public d:I
 
-.field e:[Ldefpackage/xy;
+.field public e:[Ldefpackage/xy;
 
 .field public f:Z
 
 .field public g:Z
 
-.field h:I
+.field public h:I
 
-.field i:I
+.field public i:I
 
 .field public final j:Ldefpackage/xz;
 
@@ -46,7 +46,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 14
@@ -1707,7 +1707,7 @@
     return-void
 .end method
 
-.method final i(Ldefpackage/xy;II)V
+.method public final i(Ldefpackage/xy;II)V
     .locals 3
     .param p1, "xyVar"    # Ldefpackage/xy;
     .param p2, "i"    # I
@@ -1992,7 +1992,7 @@
     goto :goto_0
 .end method
 
-.method final l(Ldefpackage/xy;)V
+.method public final l(Ldefpackage/xy;)V
     .locals 21
     .param p1, "xyVar"    # Ldefpackage/xy;
 

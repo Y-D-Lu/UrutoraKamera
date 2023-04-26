@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:[B
+.field public final a:[B
 
-.field final b:I
+.field public final b:I
 
-.field c:I
+.field public c:I
 
-.field d:I
+.field public d:I
 
 .field private final g:Ljava/io/OutputStream;
 
@@ -271,7 +271,7 @@
     throw v0
 .end method
 
-.method final c(B)V
+.method public final c(B)V
     .locals 3
     .param p1, "b"    # B
 
@@ -302,7 +302,7 @@
     return-void
 .end method
 
-.method final d(I)V
+.method public final d(I)V
     .locals 6
     .param p1, "i"    # I
 
@@ -385,7 +385,7 @@
     return-void
 .end method
 
-.method final e(J)V
+.method public final e(J)V
     .locals 12
     .param p1, "j"    # J
 
@@ -564,7 +564,7 @@
     return-void
 .end method
 
-.method final f(II)V
+.method public final f(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -580,7 +580,7 @@
     return-void
 .end method
 
-.method final g(I)V
+.method public final g(I)V
     .locals 7
     .param p1, "i"    # I
 
@@ -748,7 +748,7 @@
     return-void
 .end method
 
-.method final h(J)V
+.method public final h(J)V
     .locals 12
     .param p1, "j"    # J
 

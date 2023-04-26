@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/prj;
+.field public final a:Ldefpackage/prj;
 
 
 # direct methods

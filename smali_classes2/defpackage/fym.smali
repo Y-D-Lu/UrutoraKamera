@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fyd;
+.field public final a:Ldefpackage/fyd;
 
 
 # direct methods

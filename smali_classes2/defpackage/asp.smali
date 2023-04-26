@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/work/impl/workers/ConstraintTrackingWorker;
+.field public final a:Landroidx/work/impl/workers/ConstraintTrackingWorker;
 
 
 # direct methods

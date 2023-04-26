@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bvk;
+.field public final a:Ldefpackage/bvk;
 
 
 # direct methods

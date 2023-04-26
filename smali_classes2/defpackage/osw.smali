@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field a:Ldefpackage/osx;
+.field public a:Ldefpackage/osx;
 
-.field b:Ldefpackage/oqv;
+.field public b:Ldefpackage/oqv;
 
-.field final c:Ldefpackage/osz;
+.field public final c:Ldefpackage/osz;
 
 .field private final d:I
 

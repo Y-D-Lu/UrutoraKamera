@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ekb;
+.field public final a:Ldefpackage/ekb;
 
 
 # direct methods

@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/libraries/phenotype/client/stable/AccountRemovedBroadcastReceiver;
+.field public final synthetic this$0:Lcom/google/android/libraries/phenotype/client/stable/AccountRemovedBroadcastReceiver;
 
-.field final synthetic val$context:Landroid/content/Context;
+.field public final synthetic val$context:Landroid/content/Context;
 
-.field final synthetic val$string:Ljava/lang/String;
+.field public final synthetic val$string:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/libraries/phenotype/client/stable/AccountRemovedBroadcastReceiver;Landroid/content/Context;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/google/android/libraries/phenotype/client/stable/AccountRemovedBroadcastReceiver;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/libraries/phenotype/client/stable/AccountRemovedBroadcastReceiver;
 

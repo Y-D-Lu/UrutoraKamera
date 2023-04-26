@@ -13,7 +13,7 @@
 
 .field public c:J
 
-.field final d:Ldefpackage/gob;
+.field public final d:Ldefpackage/gob;
 
 .field private e:Z
 

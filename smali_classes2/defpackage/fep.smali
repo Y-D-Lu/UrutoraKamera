@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/widget/TextView;
+.field public final a:Landroid/widget/TextView;
 
 
 # direct methods

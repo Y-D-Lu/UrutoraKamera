@@ -13,11 +13,11 @@
 # instance fields
 .field public final a:Ldefpackage/qbn;
 
-.field final b:Ldefpackage/qjo;
+.field public final b:Ldefpackage/qjo;
 
-.field final c:Ldefpackage/qid;
+.field public final c:Ldefpackage/qid;
 
-.field volatile d:Z
+.field public volatile d:Z
 
 
 # direct methods
@@ -224,7 +224,7 @@
     return-void
 .end method
 
-.method final e()V
+.method public final e()V
     .locals 8
 
     .line 59

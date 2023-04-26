@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gog;
+.field public final a:Ldefpackage/gog;
 
 
 # direct methods

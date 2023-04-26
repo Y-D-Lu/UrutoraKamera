@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lnn;
+.field public final a:Ldefpackage/lnn;
 
-.field final b:Ldefpackage/lmr;
+.field public final b:Ldefpackage/lmr;
 
 
 # direct methods

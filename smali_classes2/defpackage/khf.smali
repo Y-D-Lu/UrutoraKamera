@@ -13,9 +13,9 @@
 
 .field public static final c:Ljava/util/concurrent/ConcurrentHashMap;
 
-.field static d:Ljava/lang/Boolean;
+.field public static d:Ljava/lang/Boolean;
 
-.field static e:Ljava/lang/Long;
+.field public static e:Ljava/lang/Long;
 
 
 # instance fields
@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 9
 
     .line 12

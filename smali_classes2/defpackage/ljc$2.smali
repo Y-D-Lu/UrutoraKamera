@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/ljc;
+.field public final synthetic this$0:Ldefpackage/ljc;
 
-.field final synthetic val$callable:Ljava/util/concurrent/Callable;
+.field public final synthetic val$callable:Ljava/util/concurrent/Callable;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ljc;Ljava/util/concurrent/Callable;)V
+.method public constructor <init>(Ldefpackage/ljc;Ljava/util/concurrent/Callable;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/ljc;
 

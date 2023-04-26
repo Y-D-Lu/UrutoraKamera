@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/graphics/Typeface;
+.field public final a:Landroid/graphics/Typeface;
 
-.field final b:Ldefpackage/eg;
+.field public final b:Ldefpackage/eg;
 
 
 # direct methods

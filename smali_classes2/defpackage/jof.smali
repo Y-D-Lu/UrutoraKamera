@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/animation/ValueAnimator;
+.field public final a:Landroid/animation/ValueAnimator;
 
-.field final b:Lcom/google/android/apps/camera/ui/views/CaptureAnimationOverlay;
+.field public final b:Lcom/google/android/apps/camera/ui/views/CaptureAnimationOverlay;
 
 
 # direct methods

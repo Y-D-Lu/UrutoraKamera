@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kep;
+.field public final a:Ldefpackage/kep;
 
 
 # direct methods

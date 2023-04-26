@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:[B
+.field public final a:[B
 
-.field final b:Ldefpackage/auq;
+.field public final b:Ldefpackage/auq;
 
 
 # direct methods

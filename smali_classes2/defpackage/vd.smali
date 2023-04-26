@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method protected a(Ljava/lang/Object;)Ldefpackage/uz;
+.method public a(Ljava/lang/Object;)Ldefpackage/uz;
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
 

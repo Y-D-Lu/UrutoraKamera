@@ -807,7 +807,7 @@
     .end packed-switch
 .end method
 
-.method final b(Ldefpackage/ijf;)I
+.method public final b(Ldefpackage/ijf;)I
     .locals 6
     .param p1, "ijfVar"    # Ldefpackage/ijf;
 

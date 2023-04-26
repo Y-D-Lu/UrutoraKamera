@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Ljava/lang/Iterable;
+.field public a:Ljava/lang/Iterable;
 
-.field b:Ldefpackage/oth;
+.field public b:Ldefpackage/oth;
 
 
 # direct methods

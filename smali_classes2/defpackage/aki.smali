@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:Landroid/graphics/drawable/Drawable;
+.field public a:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 11
@@ -231,7 +231,7 @@
     return-void
 .end method
 
-.method protected onBoundsChange(Landroid/graphics/Rect;)V
+.method public onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
     .param p1, "rect"    # Landroid/graphics/Rect;
 
@@ -256,7 +256,7 @@
     return-void
 .end method
 
-.method protected final onLevelChange(I)Z
+.method public final onLevelChange(I)Z
     .locals 2
     .param p1, "i"    # I
 

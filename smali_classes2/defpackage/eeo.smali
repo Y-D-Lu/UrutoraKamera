@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/eer;
+.field public final a:Ldefpackage/eer;
 
 
 # direct methods

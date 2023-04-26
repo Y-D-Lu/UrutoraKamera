@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:Ljava/util/UUID;
+.field public a:Ljava/util/UUID;
 
 .field public b:Ldefpackage/aqt;
 
-.field final c:Ljava/util/Set;
+.field public final c:Ljava/util/Set;
 
 
 # direct methods

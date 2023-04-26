@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fuv;
+.field public final a:Ldefpackage/fuv;
 
-.field final b:Ldefpackage/fuy;
+.field public final b:Ldefpackage/fuy;
 
 
 # direct methods

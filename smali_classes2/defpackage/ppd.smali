@@ -1277,7 +1277,7 @@
     return-object v0
 .end method
 
-.method protected abstract a(ILjava/lang/Object;)Ljava/lang/Object;
+.method public abstract a(ILjava/lang/Object;)Ljava/lang/Object;
 .end method
 
 .method public final c()I

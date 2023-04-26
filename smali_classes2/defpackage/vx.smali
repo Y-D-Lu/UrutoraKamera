@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/vs;
+.field public final a:Ldefpackage/vs;
 
 
 # direct methods

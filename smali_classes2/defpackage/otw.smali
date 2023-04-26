@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:[I
+.field public final b:[I
 
 
 # direct methods

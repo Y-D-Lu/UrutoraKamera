@@ -12,25 +12,25 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/jng;
+.field public final synthetic this$0:Ldefpackage/jng;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$licVar:Ldefpackage/lic;
+.field public final synthetic val$licVar:Ldefpackage/lic;
 
-.field final synthetic val$size:Landroid/util/Size;
+.field public final synthetic val$size:Landroid/util/Size;
 
-.field final synthetic val$z:Z
+.field public final synthetic val$z:Z
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/jng;Landroid/util/Size;Ldefpackage/lic;ZI)V
+.method public constructor <init>(Ldefpackage/jng;Landroid/util/Size;Ldefpackage/lic;ZI)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/jng;
 

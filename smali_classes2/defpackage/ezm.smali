@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ezn;
+.field public final a:Ldefpackage/ezn;
 
 
 # direct methods

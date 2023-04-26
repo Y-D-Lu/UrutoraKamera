@@ -75,7 +75,7 @@
 
 
 # virtual methods
-.method protected final a(Ldefpackage/lzp;Ldefpackage/lsp;Ljava/util/List;Landroid/os/Handler;)V
+.method public final a(Ldefpackage/lzp;Ldefpackage/lsp;Ljava/util/List;Landroid/os/Handler;)V
     .locals 22
     .param p1, "lzpVar"    # Ldefpackage/lzp;
     .param p2, "lspVar"    # Ldefpackage/lsp;

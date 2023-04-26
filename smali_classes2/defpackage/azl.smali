@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/io/InputStream;
+.field public final a:Ljava/io/InputStream;
 
-.field final b:Ldefpackage/bct;
+.field public final b:Ldefpackage/bct;
 
 
 # direct methods

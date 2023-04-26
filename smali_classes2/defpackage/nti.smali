@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ldefpackage/nty;
+.field public final b:Ldefpackage/nty;
 
-.field final c:Ldefpackage/nrl;
+.field public final c:Ldefpackage/nrl;
 
-.field final d:Ldefpackage/nqh;
+.field public final d:Ldefpackage/nqh;
 
-.field final e:Ldefpackage/npe;
+.field public final e:Ldefpackage/npe;
 
 
 # direct methods

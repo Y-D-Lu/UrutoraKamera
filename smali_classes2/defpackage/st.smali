@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Landroid/graphics/Paint;
+.field public final a:Landroid/graphics/Paint;
 
 .field public b:I
 
@@ -285,7 +285,7 @@
     return v0
 .end method
 
-.method protected final onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 2
     .param p1, "rect"    # Landroid/graphics/Rect;
 

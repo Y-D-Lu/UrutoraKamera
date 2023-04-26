@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jna;
+.field public final a:Ldefpackage/jna;
 
 
 # direct methods

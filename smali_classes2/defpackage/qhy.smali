@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qhx;
+.field public final a:Ldefpackage/qhx;
 
-.field final b:I
+.field public final b:I
 
 
 # direct methods

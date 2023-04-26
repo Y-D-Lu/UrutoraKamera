@@ -23,7 +23,7 @@
 
 .field private bgColor:I
 
-.field defaultTicks:[Ljava/lang/Double;
+.field public defaultTicks:[Ljava/lang/Double;
 
 .field private functColor:I
 
@@ -242,7 +242,7 @@
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
+.method public static synthetic access$100(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -252,7 +252,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1000(Lcom/softmoore/android/graphlib/Graph$Builder;)D
+.method public static synthetic access$1000(Lcom/softmoore/android/graphlib/Graph$Builder;)D
     .locals 2
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -262,7 +262,7 @@
     return-wide v0
 .end method
 
-.method static synthetic access$1100(Lcom/softmoore/android/graphlib/Graph$Builder;)D
+.method public static synthetic access$1100(Lcom/softmoore/android/graphlib/Graph$Builder;)D
     .locals 2
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -272,7 +272,7 @@
     return-wide v0
 .end method
 
-.method static synthetic access$1200(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
+.method public static synthetic access$1200(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -282,7 +282,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1300(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
+.method public static synthetic access$1300(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -292,7 +292,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1400(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
+.method public static synthetic access$1400(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -302,7 +302,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1500(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
+.method public static synthetic access$1500(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -312,7 +312,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
+.method public static synthetic access$200(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -322,7 +322,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
+.method public static synthetic access$300(Lcom/softmoore/android/graphlib/Graph$Builder;)Ljava/util/List;
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -332,7 +332,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/softmoore/android/graphlib/Graph$Builder;)I
+.method public static synthetic access$400(Lcom/softmoore/android/graphlib/Graph$Builder;)I
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -342,7 +342,7 @@
     return v0
 .end method
 
-.method static synthetic access$500(Lcom/softmoore/android/graphlib/Graph$Builder;)I
+.method public static synthetic access$500(Lcom/softmoore/android/graphlib/Graph$Builder;)I
     .locals 1
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -352,7 +352,7 @@
     return v0
 .end method
 
-.method static synthetic access$600(Lcom/softmoore/android/graphlib/Graph$Builder;)D
+.method public static synthetic access$600(Lcom/softmoore/android/graphlib/Graph$Builder;)D
     .locals 2
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -362,7 +362,7 @@
     return-wide v0
 .end method
 
-.method static synthetic access$700(Lcom/softmoore/android/graphlib/Graph$Builder;)D
+.method public static synthetic access$700(Lcom/softmoore/android/graphlib/Graph$Builder;)D
     .locals 2
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -372,7 +372,7 @@
     return-wide v0
 .end method
 
-.method static synthetic access$800(Lcom/softmoore/android/graphlib/Graph$Builder;)D
+.method public static synthetic access$800(Lcom/softmoore/android/graphlib/Graph$Builder;)D
     .locals 2
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 
@@ -382,7 +382,7 @@
     return-wide v0
 .end method
 
-.method static synthetic access$900(Lcom/softmoore/android/graphlib/Graph$Builder;)D
+.method public static synthetic access$900(Lcom/softmoore/android/graphlib/Graph$Builder;)D
     .locals 2
     .param p0, "x0"    # Lcom/softmoore/android/graphlib/Graph$Builder;
 

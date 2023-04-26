@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 14
@@ -34,7 +34,7 @@
     return-void
 .end method
 
-.method static a()I
+.method public static a()I
     .locals 1
 
     .line 17

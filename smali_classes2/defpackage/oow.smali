@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oti;
+.field public final a:Ldefpackage/oti;
 
-.field final b:Ldefpackage/ooz;
+.field public final b:Ldefpackage/ooz;
 
 
 # direct methods

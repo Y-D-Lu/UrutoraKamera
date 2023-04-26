@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.field public final a:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
-.field final b:Ldefpackage/nn;
+.field public final b:Ldefpackage/nn;
 
 
 # direct methods

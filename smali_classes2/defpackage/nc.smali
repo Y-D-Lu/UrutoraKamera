@@ -43,7 +43,7 @@
 
 
 # virtual methods
-.method protected final declared-synchronized onMeasure(II)V
+.method public final declared-synchronized onMeasure(II)V
     .locals 3
     .param p1, "i"    # I
     .param p2, "i2"    # I

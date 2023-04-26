@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ldefpackage/edd;
+.field public final b:Ldefpackage/edd;
 
-.field final c:Ldefpackage/esn;
+.field public final c:Ldefpackage/esn;
 
-.field final d:Ldefpackage/pih;
+.field public final d:Ldefpackage/pih;
 
-.field final e:Ljava/lang/Runnable;
+.field public final e:Ljava/lang/Runnable;
 
-.field final f:Lesh;
+.field public final f:Lesh;
 
-.field final g:Ldefpackage/pll;
+.field public final g:Ldefpackage/pll;
 
-.field final h:Ldefpackage/eqx;
+.field public final h:Ldefpackage/eqx;
 
 
 # direct methods

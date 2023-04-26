@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected final f:Ldefpackage/ddf;
+.field public final f:Ldefpackage/ddf;
 
 .field public final g:Ldefpackage/ius;
 
-.field protected final h:Landroid/content/Context;
+.field public final h:Landroid/content/Context;
 
 .field public i:Ldefpackage/iuv;
 

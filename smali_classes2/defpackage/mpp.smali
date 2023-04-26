@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/opengl/EGLDisplay;
+.field public final a:Landroid/opengl/EGLDisplay;
 
 
 # direct methods

@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ddf;
+.field public final a:Ldefpackage/ddf;
 
-.field final b:Ldefpackage/gfy;
+.field public final b:Ldefpackage/gfy;
 
-.field final c:Ldefpackage/bpr;
+.field public final c:Ldefpackage/bpr;
 
-.field final d:Ldefpackage/imy;
+.field public final d:Ldefpackage/imy;
 
 .field private e:Z
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static a:Z
+.field public static a:Z
 
 .field private static final l:Ldefpackage/gy;
 
@@ -16,7 +16,7 @@
 
 .field public d:Z
 
-.field e:Landroid/support/v7/widget/LinearLayoutManager;
+.field public e:Landroid/support/v7/widget/LinearLayoutManager;
 
 .field public f:Landroid/support/v7/widget/RecyclerView;
 
@@ -48,7 +48,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 51
@@ -924,7 +924,7 @@
     return-void
 .end method
 
-.method protected final dispatchRestoreInstanceState(Landroid/util/SparseArray;)V
+.method public final dispatchRestoreInstanceState(Landroid/util/SparseArray;)V
     .locals 4
     .param p1, "sparseArray"    # Landroid/util/SparseArray;
 
@@ -1489,7 +1489,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 7
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -1594,7 +1594,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 10
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -1693,7 +1693,7 @@
     return-void
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Parcelable;)V
+.method public final onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
@@ -1736,7 +1736,7 @@
     return-void
 .end method
 
-.method protected final onSaveInstanceState()Landroid/os/Parcelable;
+.method public final onSaveInstanceState()Landroid/os/Parcelable;
     .locals 5
 
     .line 392

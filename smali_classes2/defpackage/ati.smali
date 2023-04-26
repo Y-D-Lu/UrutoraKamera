@@ -44,7 +44,7 @@
     return-void
 .end method
 
-.method static final m(Ldefpackage/atl;Ljava/lang/Object;Ldefpackage/atx;)V
+.method public static final m(Ldefpackage/atl;Ljava/lang/Object;Ldefpackage/atx;)V
     .locals 4
     .param p0, "atlVar"    # Ldefpackage/atl;
     .param p1, "obj"    # Ljava/lang/Object;

@@ -11,31 +11,31 @@
 
 
 # instance fields
-.field a:Ljava/util/ArrayList;
+.field public a:Ljava/util/ArrayList;
 
-.field b:Ljava/util/ArrayList;
+.field public b:Ljava/util/ArrayList;
 
-.field c:Ljava/util/ArrayList;
+.field public c:Ljava/util/ArrayList;
 
-.field d:[Ldefpackage/az;
+.field public d:[Ldefpackage/az;
 
-.field e:I
+.field public e:I
 
-.field f:Ljava/lang/String;
+.field public f:Ljava/lang/String;
 
-.field g:Ljava/util/ArrayList;
+.field public g:Ljava/util/ArrayList;
 
-.field h:Ljava/util/ArrayList;
+.field public h:Ljava/util/ArrayList;
 
-.field i:Ljava/util/ArrayList;
+.field public i:Ljava/util/ArrayList;
 
-.field j:Ljava/util/ArrayList;
+.field public j:Ljava/util/ArrayList;
 
-.field k:Ljava/util/ArrayList;
+.field public k:Ljava/util/ArrayList;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 13

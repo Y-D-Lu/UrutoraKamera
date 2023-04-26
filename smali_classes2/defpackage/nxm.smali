@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/view/View;
+.field public final a:Landroid/view/View;
 
-.field final b:I
+.field public final b:I
 
-.field final c:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+.field public final c:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
 
 # direct methods

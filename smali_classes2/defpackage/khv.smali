@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final a:Ldefpackage/kht;
+.field public static final a:Ldefpackage/kht;
 
-.field static final b:Ldefpackage/kht;
+.field public static final b:Ldefpackage/kht;
 
 .field private static c:Landroid/content/Context;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 15

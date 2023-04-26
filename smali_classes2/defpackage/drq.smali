@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lmr;
+.field public final a:Ldefpackage/lmr;
 
-.field final b:Ldefpackage/lnx;
+.field public final b:Ldefpackage/lnx;
 
-.field final c:Ldefpackage/drr;
+.field public final c:Ldefpackage/drr;
 
 
 # direct methods

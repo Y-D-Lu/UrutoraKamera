@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bws;
+.field public final a:Ldefpackage/bws;
 
-.field final b:Ldefpackage/fwb;
+.field public final b:Ldefpackage/fwb;
 
-.field final c:Ldefpackage/lap;
+.field public final c:Ldefpackage/lap;
 
-.field final d:Ldefpackage/ghj;
+.field public final d:Ldefpackage/ghj;
 
 
 # direct methods

@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 23
@@ -449,7 +449,7 @@
     return-void
 .end method
 
-.method protected final onBindView(Landroid/view/View;)V
+.method public final onBindView(Landroid/view/View;)V
     .locals 1
     .param p1, "view"    # Landroid/view/View;
 

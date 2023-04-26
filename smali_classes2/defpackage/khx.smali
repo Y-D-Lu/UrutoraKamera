@@ -142,7 +142,7 @@
     throw v1
 .end method
 
-.method static final varargs b(Landroid/content/pm/PackageInfo;[Ldefpackage/kmz;)Ldefpackage/kmz;
+.method public static final varargs b(Landroid/content/pm/PackageInfo;[Ldefpackage/kmz;)Ldefpackage/kmz;
     .locals 4
     .param p0, "packageInfo"    # Landroid/content/pm/PackageInfo;
     .param p1, "kmzVarArr"    # [Ldefpackage/kmz;

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jpw;
+.field public final a:Ldefpackage/jpw;
 
 
 # direct methods

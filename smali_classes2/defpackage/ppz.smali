@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 7
@@ -13,7 +13,7 @@
     return-void
 .end method
 
-.method static a(Ljava/lang/Object;J)Ldefpackage/ppm;
+.method public static a(Ljava/lang/Object;J)Ldefpackage/ppm;
     .locals 1
     .param p0, "obj"    # Ljava/lang/Object;
     .param p1, "j"    # J

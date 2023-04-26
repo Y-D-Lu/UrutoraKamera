@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/awl;
+.field public final a:Ldefpackage/awl;
 
-.field final b:Ldefpackage/fdc;
+.field public final b:Ldefpackage/fdc;
 
 
 # direct methods

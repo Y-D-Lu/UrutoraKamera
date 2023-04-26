@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/preference/SeekBarPreference;
+.field public final a:Landroidx/preference/SeekBarPreference;
 
 
 # direct methods

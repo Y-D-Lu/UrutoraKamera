@@ -138,5 +138,5 @@
     throw v1
 .end method
 
-.method protected abstract c(Ldefpackage/bcv;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
+.method public abstract c(Ldefpackage/bcv;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 .end method

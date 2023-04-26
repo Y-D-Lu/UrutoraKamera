@@ -112,7 +112,7 @@
     return v0
 .end method
 
-.method protected final c()I
+.method public final c()I
     .locals 1
 
     .line 42
@@ -150,7 +150,7 @@
     return-void
 .end method
 
-.method writeReplace()Ljava/lang/Object;
+.method public writeReplace()Ljava/lang/Object;
     .locals 1
 
     .line 56

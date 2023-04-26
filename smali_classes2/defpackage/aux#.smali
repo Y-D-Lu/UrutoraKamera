@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:[Landroid/hardware/Camera$Parameters;
+.field public final a:[Landroid/hardware/Camera$Parameters;
 
-.field final b:Ldefpackage/awq;
+.field public final b:Ldefpackage/awq;
 
-.field final c:Ldefpackage/avf;
+.field public final c:Ldefpackage/avf;
 
 
 # direct methods

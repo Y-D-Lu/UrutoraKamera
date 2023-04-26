@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/eup;
+.field public final synthetic this$0:Ldefpackage/eup;
 
-.field final synthetic val$bitmap:Landroid/graphics/Bitmap;
+.field public final synthetic val$bitmap:Landroid/graphics/Bitmap;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/eup;Landroid/graphics/Bitmap;I)V
+.method public constructor <init>(Ldefpackage/eup;Landroid/graphics/Bitmap;I)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/eup;
 

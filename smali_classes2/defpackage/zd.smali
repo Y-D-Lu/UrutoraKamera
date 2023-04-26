@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field b:Ldefpackage/zg;
+.field public b:Ldefpackage/zg;
 
-.field final c:Ljava/util/ArrayList;
+.field public final c:Ljava/util/ArrayList;
 
 
 # direct methods

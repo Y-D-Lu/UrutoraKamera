@@ -6,7 +6,7 @@
 # instance fields
 .field private final a:Ljava/util/concurrent/Executor;
 
-.field final b:Ldefpackage/pgq;
+.field public final b:Ldefpackage/pgq;
 
 
 # direct methods

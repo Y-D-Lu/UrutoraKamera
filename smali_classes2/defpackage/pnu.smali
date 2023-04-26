@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 15
@@ -823,7 +823,7 @@
     return-object v3
 .end method
 
-.method protected final removeRange(II)V
+.method public final removeRange(II)V
     .locals 3
     .param p1, "i"    # I
     .param p2, "i2"    # I

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/focusindicator/FocusIndicatorView;
+.field public final a:Lcom/google/android/apps/camera/focusindicator/FocusIndicatorView;
 
 
 # direct methods

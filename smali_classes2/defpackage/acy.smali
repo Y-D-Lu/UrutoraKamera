@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:D
+.field public a:D
 
-.field b:D
+.field public b:D
 
 .field public c:D
 

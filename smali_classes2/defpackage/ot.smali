@@ -12,7 +12,7 @@
 
 .field private final b:I
 
-.field final c:Landroid/view/View;
+.field public final c:Landroid/view/View;
 
 .field public d:Z
 
@@ -108,7 +108,7 @@
     throw v0
 .end method
 
-.method protected c()Z
+.method public c()Z
     .locals 3
 
     .line 42

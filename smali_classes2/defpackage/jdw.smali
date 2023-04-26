@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;
+.field public final a:Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;
 
 
 # direct methods

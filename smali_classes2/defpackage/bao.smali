@@ -35,10 +35,10 @@
 
 
 # virtual methods
-.method protected abstract b(Landroid/net/Uri;Landroid/content/ContentResolver;)Ljava/lang/Object;
+.method public abstract b(Landroid/net/Uri;Landroid/content/ContentResolver;)Ljava/lang/Object;
 .end method
 
-.method protected abstract c(Ljava/lang/Object;)V
+.method public abstract c(Ljava/lang/Object;)V
 .end method
 
 .method public final d()V

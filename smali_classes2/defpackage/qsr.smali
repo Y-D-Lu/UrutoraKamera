@@ -330,7 +330,7 @@
     .end packed-switch
 .end method
 
-.method protected p(Ljava/lang/Object;)Ljava/lang/Object;
+.method public p(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -693,7 +693,7 @@
     throw v1
 .end method
 
-.method protected t()Ljava/lang/String;
+.method public t()Ljava/lang/String;
     .locals 1
 
     .line 158
@@ -1173,7 +1173,7 @@
     goto :goto_0
 .end method
 
-.method protected abstract x()Z
+.method public abstract x()Z
 .end method
 
 .method public abstract y()Z

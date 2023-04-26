@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Landroid/support/v7/widget/Toolbar;
+.field public final a:Landroid/support/v7/widget/Toolbar;
 
 
 # direct methods

@@ -6,7 +6,7 @@
 # instance fields
 .field public final g:Landroid/os/IBinder;
 
-.field final h:Ldefpackage/kmb;
+.field public final h:Ldefpackage/kmb;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
 
 # virtual methods
-.method protected final a(Ldefpackage/khi;)V
+.method public final a(Ldefpackage/khi;)V
     .locals 1
     .param p1, "khiVar"    # Ldefpackage/khi;
 
@@ -56,7 +56,7 @@
     return-void
 .end method
 
-.method protected final c()Z
+.method public final c()Z
     .locals 9
 
     .line 34

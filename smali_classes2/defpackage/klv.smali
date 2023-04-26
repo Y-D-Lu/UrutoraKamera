@@ -8,7 +8,7 @@
 
 .field public e:Z
 
-.field final f:Ldefpackage/kmb;
+.field public final f:Ldefpackage/kmb;
 
 
 # direct methods

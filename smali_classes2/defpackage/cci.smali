@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 7
 
     .line 25
@@ -1780,7 +1780,7 @@
     goto/16 :goto_0
 .end method
 
-.method static a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public static a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
     .param p0, "str"    # Ljava/lang/String;
     .param p1, "str2"    # Ljava/lang/String;

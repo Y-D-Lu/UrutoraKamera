@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lkj;
+.field public final a:Ldefpackage/lkj;
 
 
 # direct methods

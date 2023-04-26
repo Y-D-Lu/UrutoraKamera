@@ -7,21 +7,21 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ppi;
+.field public static final a:Ldefpackage/ppi;
 
-.field static final b:Ldefpackage/ppi;
+.field public static final b:Ldefpackage/ppi;
 
-.field static final c:Ldefpackage/ppi;
+.field public static final c:Ldefpackage/ppi;
 
-.field static final d:Ldefpackage/ppi;
+.field public static final d:Ldefpackage/ppi;
 
-.field static final e:Ldefpackage/ppi;
+.field public static final e:Ldefpackage/ppi;
 
-.field static final f:Ldefpackage/ppi;
+.field public static final f:Ldefpackage/ppi;
 
-.field static final g:Ldefpackage/ppi;
+.field public static final g:Ldefpackage/ppi;
 
-.field static final h:Ldefpackage/ppi;
+.field public static final h:Ldefpackage/ppi;
 
 
 # instance fields
@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 7

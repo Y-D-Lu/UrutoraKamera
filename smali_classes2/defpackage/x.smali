@@ -9,17 +9,17 @@
 # static fields
 .field public static final a:Ldefpackage/x;
 
-.field static final b:Ljava/util/regex/Pattern;
+.field public static final b:Ljava/util/regex/Pattern;
 
-.field static final c:Ljava/util/regex/Pattern;
+.field public static final c:Ljava/util/regex/Pattern;
 
-.field static final d:Ljava/util/regex/Pattern;
+.field public static final d:Ljava/util/regex/Pattern;
 
-.field static final e:Ljava/util/regex/Pattern;
+.field public static final e:Ljava/util/regex/Pattern;
 
-.field static final f:Ljava/util/regex/Pattern;
+.field public static final f:Ljava/util/regex/Pattern;
 
-.field static final g:Ljava/util/regex/Pattern;
+.field public static final g:Ljava/util/regex/Pattern;
 
 .field private static final i:Ldefpackage/p;
 
@@ -33,7 +33,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 28

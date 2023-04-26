@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/crs;
+.field public final a:Ldefpackage/crs;
 
 
 # direct methods

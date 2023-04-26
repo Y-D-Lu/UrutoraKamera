@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/hua;
+.field public final synthetic this$0:Ldefpackage/hua;
 
-.field final synthetic val$ddfVar:Ldefpackage/ddf;
+.field public final synthetic val$ddfVar:Ldefpackage/ddf;
 
-.field final synthetic val$sharedPreferences:Landroid/content/SharedPreferences;
+.field public final synthetic val$sharedPreferences:Landroid/content/SharedPreferences;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/hua;Landroid/content/SharedPreferences;Ldefpackage/ddf;)V
+.method public constructor <init>(Ldefpackage/hua;Landroid/content/SharedPreferences;Ldefpackage/ddf;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/hua;
 

@@ -117,7 +117,7 @@
 
 
 # virtual methods
-.method protected final d()Ldefpackage/ial;
+.method public final d()Ldefpackage/ial;
     .locals 5
 
     .line 46
@@ -218,7 +218,7 @@
     return-object v4
 .end method
 
-.method protected final e(Ldefpackage/lzv;)Z
+.method public final e(Ldefpackage/lzv;)Z
     .locals 2
     .param p1, "lzvVar"    # Ldefpackage/lzv;
 

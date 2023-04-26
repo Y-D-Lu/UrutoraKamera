@@ -26,11 +26,11 @@
 
 .field public static final nullRef:Lgo/Seq$Ref;
 
-.field static final tracker:Lgo/Seq$RefTracker;
+.field public static final tracker:Lgo/Seq$RefTracker;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 18
@@ -92,7 +92,7 @@
     return-void
 .end method
 
-.method static synthetic access$100()Ljava/util/logging/Logger;
+.method public static synthetic access$100()Ljava/util/logging/Logger;
     .locals 1
 
     .line 15
@@ -101,7 +101,7 @@
     return-object v0
 .end method
 
-.method static decRef(I)V
+.method public static decRef(I)V
     .locals 1
     .param p0, "i"    # I
 
@@ -114,7 +114,7 @@
     return-void
 .end method
 
-.method static native destroyRef(I)V
+.method public static native destroyRef(I)V
 .end method
 
 .method public static getRef(I)Lgo/Seq$Ref;
@@ -187,7 +187,7 @@
     return-void
 .end method
 
-.method static native setContext(Ljava/lang/Object;)V
+.method public static native setContext(Ljava/lang/Object;)V
 .end method
 
 .method public static touch()V

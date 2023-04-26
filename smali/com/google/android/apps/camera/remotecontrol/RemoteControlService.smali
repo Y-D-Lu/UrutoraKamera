@@ -34,7 +34,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 30
@@ -89,7 +89,7 @@
 
 
 # virtual methods
-.method protected final declared-synchronized a()Ldefpackage/ddf;
+.method public final declared-synchronized a()Ldefpackage/ddf;
     .locals 3
 
     monitor-enter p0
@@ -145,7 +145,7 @@
     throw v0
 .end method
 
-.method protected final declared-synchronized b()Ldefpackage/dei;
+.method public final declared-synchronized b()Ldefpackage/dei;
     .locals 3
 
     monitor-enter p0

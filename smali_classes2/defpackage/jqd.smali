@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jqi;
+.field public final a:Ldefpackage/jqi;
 
 
 # direct methods

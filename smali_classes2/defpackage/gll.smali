@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/glm;
+.field public final a:Ldefpackage/glm;
 
 
 # direct methods

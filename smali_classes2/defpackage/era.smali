@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/erb;
+.field public final a:Ldefpackage/erb;
 
 
 # direct methods

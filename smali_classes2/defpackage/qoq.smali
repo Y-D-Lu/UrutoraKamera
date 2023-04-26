@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qmy;
+.field public final a:Ldefpackage/qmy;
 
 
 # direct methods

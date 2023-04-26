@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mmv;
+.field public final a:Ldefpackage/mmv;
 
 
 # direct methods

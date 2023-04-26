@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:Ldefpackage/pqg;
+.field public static final a:Ldefpackage/pqg;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 6
@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 5

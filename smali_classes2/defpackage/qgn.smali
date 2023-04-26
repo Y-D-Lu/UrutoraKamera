@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbp;
+.field public final a:Ldefpackage/qbp;
 
-.field final b:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final b:Ljava/util/concurrent/atomic/AtomicReference;
 
 
 # direct methods
@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method protected final g(Ldefpackage/qbq;)V
+.method public final g(Ldefpackage/qbq;)V
     .locals 6
     .param p1, "qbqVar"    # Ldefpackage/qbq;
 

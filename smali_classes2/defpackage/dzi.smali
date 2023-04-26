@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ldefpackage/gog;
+.field public final b:Ldefpackage/gog;
 
-.field final c:Ldefpackage/dzr;
+.field public final c:Ldefpackage/dzr;
 
 
 # direct methods

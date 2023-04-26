@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hin;
+.field public final a:Ldefpackage/hin;
 
-.field final b:Ldefpackage/gkw;
+.field public final b:Ldefpackage/gkw;
 
 
 # direct methods

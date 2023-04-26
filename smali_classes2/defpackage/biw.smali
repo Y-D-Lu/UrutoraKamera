@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
 .field public b:Landroid/graphics/Bitmap;
 

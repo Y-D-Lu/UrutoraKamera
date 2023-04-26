@@ -7,17 +7,17 @@
 
 
 # static fields
-.field protected static final a:Ljava/util/concurrent/FutureTask;
+.field public static final a:Ljava/util/concurrent/FutureTask;
 
-.field protected static final b:Ljava/util/concurrent/FutureTask;
+.field public static final b:Ljava/util/concurrent/FutureTask;
 
 .field private static final serialVersionUID:J = 0x1924f211b909b42fL
 
 
 # instance fields
-.field protected final c:Ljava/lang/Runnable;
+.field public final c:Ljava/lang/Runnable;
 
-.field protected d:Ljava/lang/Thread;
+.field public d:Ljava/lang/Thread;
 
 
 # direct methods

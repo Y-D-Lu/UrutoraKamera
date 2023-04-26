@@ -375,7 +375,7 @@
     return-object v0
 .end method
 
-.method static validateConjTranspose(I)V
+.method public static validateConjTranspose(I)V
     .locals 2
     .param p0, "i"    # I
 
@@ -406,7 +406,7 @@
     return-void
 .end method
 
-.method static validateDiag(I)V
+.method public static validateDiag(I)V
     .locals 2
     .param p0, "i"    # I
 
@@ -437,7 +437,7 @@
     return-void
 .end method
 
-.method static validateGEMV(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;I)V
+.method public static validateGEMV(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;I)V
     .locals 6
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -655,7 +655,7 @@
     throw v2
 .end method
 
-.method static validateGER(Landroid/support/v8/renderscript/Element;Landroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)V
+.method public static validateGER(Landroid/support/v8/renderscript/Element;Landroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)V
     .locals 6
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "allocation"    # Landroid/support/v8/renderscript/Allocation;
@@ -858,7 +858,7 @@
     throw v0
 .end method
 
-.method static validateGERU(Landroid/support/v8/renderscript/Element;Landroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)V
+.method public static validateGERU(Landroid/support/v8/renderscript/Element;Landroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)V
     .locals 6
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "allocation"    # Landroid/support/v8/renderscript/Allocation;
@@ -1046,7 +1046,7 @@
     throw v0
 .end method
 
-.method static validateHEMM(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
+.method public static validateHEMM(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
     .locals 3
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -1237,7 +1237,7 @@
     throw v0
 .end method
 
-.method static validateHER2K(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
+.method public static validateHER2K(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
     .locals 3
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -1433,7 +1433,7 @@
     throw v0
 .end method
 
-.method static validateHERK(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
+.method public static validateHERK(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
     .locals 3
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -1567,7 +1567,7 @@
     throw v0
 .end method
 
-.method static validateL3(Landroid/support/v8/renderscript/Element;IIILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
+.method public static validateL3(Landroid/support/v8/renderscript/Element;IIILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
     .locals 14
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -2074,7 +2074,7 @@
     throw v3
 .end method
 
-.method static validateSPMV(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;I)I
+.method public static validateSPMV(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;I)I
     .locals 8
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -2323,7 +2323,7 @@
     throw v0
 .end method
 
-.method static validateSPR(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)I
+.method public static validateSPR(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)I
     .locals 6
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -2518,7 +2518,7 @@
     throw v0
 .end method
 
-.method static validateSPR2(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)I
+.method public static validateSPR2(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)I
     .locals 8
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -2761,7 +2761,7 @@
     throw v0
 .end method
 
-.method static validateSYMV(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;II)I
+.method public static validateSYMV(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;II)I
     .locals 6
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -2963,7 +2963,7 @@
     throw v1
 .end method
 
-.method static validateSYR(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)I
+.method public static validateSYR(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)I
     .locals 4
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -3112,7 +3112,7 @@
     throw v0
 .end method
 
-.method static validateSYR2(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)I
+.method public static validateSYR2(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;ILandroid/support/v8/renderscript/Allocation;)I
     .locals 6
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -3309,7 +3309,7 @@
     throw v0
 .end method
 
-.method static validateSYR2K(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
+.method public static validateSYR2K(Landroid/support/v8/renderscript/Element;ILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
     .locals 3
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -3482,7 +3482,7 @@
     throw v0
 .end method
 
-.method static validateSide(I)V
+.method public static validateSide(I)V
     .locals 2
     .param p0, "i"    # I
 
@@ -3513,7 +3513,7 @@
     return-void
 .end method
 
-.method static validateTPMV(Landroid/support/v8/renderscript/Element;IIILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;I)I
+.method public static validateTPMV(Landroid/support/v8/renderscript/Element;IIILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;I)I
     .locals 6
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -3716,7 +3716,7 @@
     throw v0
 .end method
 
-.method static validateTRMM(Landroid/support/v8/renderscript/Element;IILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
+.method public static validateTRMM(Landroid/support/v8/renderscript/Element;IILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
     .locals 6
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -3863,7 +3863,7 @@
     throw v0
 .end method
 
-.method static validateTRMV(Landroid/support/v8/renderscript/Element;IIILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;I)V
+.method public static validateTRMV(Landroid/support/v8/renderscript/Element;IIILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;I)V
     .locals 4
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -4019,7 +4019,7 @@
     throw v1
 .end method
 
-.method static validateTRSM(Landroid/support/v8/renderscript/Element;IILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
+.method public static validateTRSM(Landroid/support/v8/renderscript/Element;IILandroid/support/v8/renderscript/Allocation;Landroid/support/v8/renderscript/Allocation;)V
     .locals 5
     .param p0, "element"    # Landroid/support/v8/renderscript/Element;
     .param p1, "i"    # I
@@ -4163,7 +4163,7 @@
     throw v0
 .end method
 
-.method static validateTranspose(I)V
+.method public static validateTranspose(I)V
     .locals 2
     .param p0, "i"    # I
 
@@ -4198,7 +4198,7 @@
     return-void
 .end method
 
-.method static validateUplo(I)V
+.method public static validateUplo(I)V
     .locals 2
     .param p0, "i"    # I
 

@@ -55,7 +55,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 53
@@ -935,7 +935,7 @@
     return v2
 .end method
 
-.method protected final d(I)I
+.method public final d(I)I
     .locals 5
     .param p1, "i"    # I
 
@@ -1244,7 +1244,7 @@
     return-void
 .end method
 
-.method protected final e()Landroid/graphics/RectF;
+.method public final e()Landroid/graphics/RectF;
     .locals 2
 
     .line 259
@@ -1770,7 +1770,7 @@
     return-object p0
 .end method
 
-.method protected final onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
     .param p1, "rect"    # Landroid/graphics/Rect;
 
@@ -1786,7 +1786,7 @@
     return-void
 .end method
 
-.method protected final onStateChange([I)Z
+.method public final onStateChange([I)Z
     .locals 3
     .param p1, "iArr"    # [I
 

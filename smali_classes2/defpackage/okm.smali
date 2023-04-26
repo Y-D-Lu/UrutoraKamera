@@ -59,7 +59,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 28
@@ -78,7 +78,7 @@
     throw v0
 .end method
 
-.method protected final c()Ljava/util/Map;
+.method public final c()Ljava/util/Map;
     .locals 1
 
     .line 37

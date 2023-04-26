@@ -65,9 +65,9 @@
 
 
 # instance fields
-.field mID:I
+.field public mID:I
 
-.field mSize:I
+.field public mSize:I
 
 
 # direct methods
@@ -220,7 +220,7 @@
     return-object v0
 .end method
 
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 176

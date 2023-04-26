@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qmy;
+.field public final a:Ldefpackage/qmy;
 
-.field final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
 .field private c:I
 
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method protected final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
 

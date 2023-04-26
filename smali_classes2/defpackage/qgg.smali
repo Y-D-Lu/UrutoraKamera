@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final b:Ldefpackage/qbt;
+.field public final b:Ldefpackage/qbt;
 
-.field final c:I
+.field public final c:I
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method protected final g(Ldefpackage/qbq;)V
+.method public final g(Ldefpackage/qbq;)V
     .locals 4
     .param p1, "qbqVar"    # Ldefpackage/qbq;
 

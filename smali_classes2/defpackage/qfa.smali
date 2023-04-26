@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final d:Ldefpackage/qym;
+.field public final d:Ldefpackage/qym;
 
 
 # direct methods

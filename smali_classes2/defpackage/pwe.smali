@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pwf;
+.field public final a:Ldefpackage/pwf;
 
 
 # direct methods

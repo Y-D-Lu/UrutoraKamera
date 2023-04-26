@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qin;
+.field public final a:Ldefpackage/qin;
 
 .field private final b:Ldefpackage/qcu;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
+.field public final a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
 
 
 # direct methods

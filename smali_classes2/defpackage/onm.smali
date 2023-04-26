@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected c()Ljava/util/Set;
+.method public c()Ljava/util/Set;
     .locals 1
 
     .line 12
@@ -42,7 +42,7 @@
     return-object v0
 .end method
 
-.method protected abstract e()Ljava/util/SortedSet;
+.method public abstract e()Ljava/util/SortedSet;
 .end method
 
 .method public final first()Ljava/lang/Object;

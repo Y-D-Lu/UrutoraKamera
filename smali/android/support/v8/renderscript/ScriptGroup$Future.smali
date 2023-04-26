@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field mClosure:Landroid/support/v8/renderscript/ScriptGroup$Closure;
+.field public mClosure:Landroid/support/v8/renderscript/ScriptGroup$Closure;
 
-.field mFieldID:Landroid/support/v8/renderscript/Script$FieldID;
+.field public mFieldID:Landroid/support/v8/renderscript/Script$FieldID;
 
-.field mValue:Ljava/lang/Object;
+.field public mValue:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
 
 
 # direct methods

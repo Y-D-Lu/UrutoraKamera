@@ -9,9 +9,9 @@
 # instance fields
 .field public final a:Ldefpackage/lce;
 
-.field final b:Ljava/util/Collection;
+.field public final b:Ljava/util/Collection;
 
-.field final c:Ldefpackage/hha;
+.field public final c:Ldefpackage/hha;
 
 
 # direct methods

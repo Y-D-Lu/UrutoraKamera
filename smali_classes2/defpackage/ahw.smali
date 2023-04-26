@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/os/CancellationSignal;
+.field public final a:Landroid/os/CancellationSignal;
 
-.field final b:Ldefpackage/qrg;
+.field public final b:Ldefpackage/qrg;
 
 
 # direct methods

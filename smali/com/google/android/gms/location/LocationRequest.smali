@@ -21,17 +21,17 @@
 
 .field public e:J
 
-.field f:I
+.field public f:I
 
-.field g:F
+.field public g:F
 
-.field h:J
+.field public h:J
 
-.field i:Z
+.field public i:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 19

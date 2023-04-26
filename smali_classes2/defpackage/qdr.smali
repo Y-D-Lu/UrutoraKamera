@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qcn;
+.field public final a:Ldefpackage/qcn;
 
-.field final b:Ldefpackage/qcn;
+.field public final b:Ldefpackage/qcn;
 
 
 # direct methods

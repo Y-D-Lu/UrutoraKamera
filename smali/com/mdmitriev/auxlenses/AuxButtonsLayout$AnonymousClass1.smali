@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "AnonymousClass1"
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/mdmitriev/auxlenses/AuxButtonsLayout;
+.field public final synthetic this$0:Lcom/mdmitriev/auxlenses/AuxButtonsLayout;
 
 
 # direct methods
-.method constructor <init>(Lcom/mdmitriev/auxlenses/AuxButtonsLayout;)V
+.method public constructor <init>(Lcom/mdmitriev/auxlenses/AuxButtonsLayout;)V
     .locals 0
     .param p1, "this$0"    # Lcom/mdmitriev/auxlenses/AuxButtonsLayout;
 

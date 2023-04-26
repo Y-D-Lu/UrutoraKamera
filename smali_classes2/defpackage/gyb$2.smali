@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/gyb;
+.field public final synthetic this$0:Ldefpackage/gyb;
 
-.field final synthetic val$gxsVar:Ldefpackage/gxs;
+.field public final synthetic val$gxsVar:Ldefpackage/gxs;
 
-.field final synthetic val$gxtVar:Ldefpackage/gxt;
+.field public final synthetic val$gxtVar:Ldefpackage/gxt;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/gyb;Ldefpackage/gxt;Ldefpackage/gxs;)V
+.method public constructor <init>(Ldefpackage/gyb;Ldefpackage/gxt;Ldefpackage/gxs;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/gyb;
 

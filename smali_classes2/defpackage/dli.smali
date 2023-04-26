@@ -30,7 +30,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 13
@@ -104,7 +104,7 @@
 
 
 # virtual methods
-.method protected final a(ZLjava/lang/String;Ljava/lang/Exception;)V
+.method public final a(ZLjava/lang/String;Ljava/lang/Exception;)V
     .locals 3
     .param p1, "z"    # Z
     .param p2, "str"    # Ljava/lang/String;

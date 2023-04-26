@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mh;
+.field public final a:Ldefpackage/mh;
 
 
 # direct methods
@@ -110,7 +110,7 @@
     return v1
 .end method
 
-.method protected final setFrame(IIII)Z
+.method public final setFrame(IIII)Z
     .locals 12
     .param p1, "i"    # I
     .param p2, "i2"    # I

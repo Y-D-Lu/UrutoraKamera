@@ -12,29 +12,29 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/gcp;
+.field public final synthetic this$0:Ldefpackage/gcp;
 
-.field final synthetic val$ddfVar2:Ldefpackage/ddf;
+.field public final synthetic val$ddfVar2:Ldefpackage/ddf;
 
-.field final synthetic val$eamVar:Ldefpackage/eam;
+.field public final synthetic val$eamVar:Ldefpackage/eam;
 
-.field final synthetic val$gfyVar:Ldefpackage/gfy;
+.field public final synthetic val$gfyVar:Ldefpackage/gfy;
 
-.field final synthetic val$hbqVar:Ldefpackage/hbq;
+.field public final synthetic val$hbqVar:Ldefpackage/hbq;
 
-.field final synthetic val$lapVar:Ldefpackage/lap;
+.field public final synthetic val$lapVar:Ldefpackage/lap;
 
-.field final synthetic val$lncVar:Ldefpackage/lnc;
+.field public final synthetic val$lncVar:Ldefpackage/lnc;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/gcp;Ldefpackage/lap;Ldefpackage/hbq;Ldefpackage/eam;Ldefpackage/ddf;Ldefpackage/lnc;Ldefpackage/gfy;)V
+.method public constructor <init>(Ldefpackage/gcp;Ldefpackage/lap;Ldefpackage/hbq;Ldefpackage/eam;Ldefpackage/ddf;Ldefpackage/lnc;Ldefpackage/gfy;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/gcp;
 

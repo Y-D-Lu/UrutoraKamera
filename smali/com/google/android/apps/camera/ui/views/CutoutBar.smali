@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 22
@@ -118,7 +118,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 5
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -157,7 +157,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 0
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -179,7 +179,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

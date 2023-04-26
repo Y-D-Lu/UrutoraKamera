@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final e:Ldefpackage/mad;
+.field public final e:Ldefpackage/mad;
 
 
 # direct methods

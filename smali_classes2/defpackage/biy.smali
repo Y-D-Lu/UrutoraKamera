@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/biz;
+.field public final a:Ldefpackage/biz;
 
 
 # direct methods

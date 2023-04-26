@@ -30,13 +30,13 @@
 
 .field public j:Ldefpackage/hew;
 
-.field k:Ldefpackage/epz;
+.field public k:Ldefpackage/epz;
 
 .field private l:Ldefpackage/pih;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 11

@@ -14,7 +14,7 @@
 
 .field public c:Ldefpackage/jsj;
 
-.field final d:Ldefpackage/bpu;
+.field public final d:Ldefpackage/bpu;
 
 .field public e:Ldefpackage/pih;
 

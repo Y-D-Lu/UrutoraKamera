@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hoz;
+.field public final a:Ldefpackage/hoz;
 
 
 # direct methods

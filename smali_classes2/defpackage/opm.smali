@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field final transient b:Ljava/util/Comparator;
+.field public final transient b:Ljava/util/Comparator;
 
-.field transient c:Ldefpackage/opm;
+.field public transient c:Ldefpackage/opm;
 
 
 # direct methods
@@ -608,7 +608,7 @@
     return-object p1
 .end method
 
-.method writeReplace()Ljava/lang/Object;
+.method public writeReplace()Ljava/lang/Object;
     .locals 3
 
     .line 167

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lar;
+.field public final a:Ldefpackage/lar;
 
-.field final b:Ljava/lang/Runnable;
+.field public final b:Ljava/lang/Runnable;
 
 
 # direct methods

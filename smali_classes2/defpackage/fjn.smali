@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/emr;
+.field public final a:Ldefpackage/emr;
 
-.field final b:Ljava/util/concurrent/TimeUnit;
+.field public final b:Ljava/util/concurrent/TimeUnit;
 
-.field final n:Ljava/lang/String;
+.field public final n:Ljava/lang/String;
 
 
 # direct methods

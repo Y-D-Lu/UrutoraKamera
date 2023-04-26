@@ -8,17 +8,17 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kxi;
+.field public final a:Ldefpackage/kxi;
 
-.field final b:I
+.field public final b:I
 
-.field final c:I
+.field public final c:I
 
-.field final d:I
+.field public final d:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 10

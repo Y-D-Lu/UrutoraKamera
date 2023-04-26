@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/khm;
+.field public final a:Ldefpackage/khm;
 
 .field private final b:Landroid/content/Context;
 

@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/lang/CharSequence;
+.field public final a:Ljava/lang/CharSequence;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ldefpackage/nhc;
+.field public final c:Ldefpackage/nhc;
 
-.field final d:Ldefpackage/nhd;
+.field public final d:Ldefpackage/nhd;
 
 
 # direct methods

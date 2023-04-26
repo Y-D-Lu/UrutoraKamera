@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final b:Ljava/util/concurrent/ArrayBlockingQueue;
+.field public final b:Ljava/util/concurrent/ArrayBlockingQueue;
 
 .field public final c:Ldefpackage/kij;
 
@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 14

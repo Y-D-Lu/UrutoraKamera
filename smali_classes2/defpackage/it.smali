@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Landroid/content/BroadcastReceiver;
 
-.field final c:Ldefpackage/iy;
+.field public final c:Ldefpackage/iy;
 
 
 # direct methods

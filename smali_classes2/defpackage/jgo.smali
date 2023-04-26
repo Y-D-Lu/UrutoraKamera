@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;
+.field public final a:Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;
 
 
 # direct methods

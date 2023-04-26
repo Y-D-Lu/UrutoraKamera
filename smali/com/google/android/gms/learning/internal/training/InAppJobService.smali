@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final TAG:Ljava/lang/String; = "brella.InAppJobSvc"
+.field public static final TAG:Ljava/lang/String; = "brella.InAppJobSvc"
 
 
 # instance fields
-.field dynamiteImpl:Ldefpackage/krs;
+.field public dynamiteImpl:Ldefpackage/krs;
 
 
 # direct methods

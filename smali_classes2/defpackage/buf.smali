@@ -109,7 +109,7 @@
     return-void
 .end method
 
-.method protected abstract gf()V
+.method public abstract gf()V
 .end method
 
 .method public final gg()V
@@ -173,7 +173,7 @@
     return-void
 .end method
 
-.method protected abstract k()V
+.method public abstract k()V
 .end method
 
 .method public final l()V
@@ -223,7 +223,7 @@
     return-void
 .end method
 
-.method protected abstract m()V
+.method public abstract m()V
 .end method
 
 .method public final n()V
@@ -287,7 +287,7 @@
     return-void
 .end method
 
-.method protected abstract o()V
+.method public abstract o()V
 .end method
 
 .method public final p()V

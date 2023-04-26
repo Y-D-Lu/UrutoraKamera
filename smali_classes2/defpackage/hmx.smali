@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/view/View$OnTouchListener;
+.field public final a:Landroid/view/View$OnTouchListener;
 
-.field final b:Ldefpackage/hmy;
+.field public final b:Ldefpackage/hmy;
 
 
 # direct methods

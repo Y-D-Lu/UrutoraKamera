@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/graphics/Matrix;
+.field public final a:Landroid/graphics/Matrix;
 
-.field final b:Ljava/util/ArrayList;
+.field public final b:Ljava/util/ArrayList;
 
-.field c:F
+.field public c:F
 
 .field public d:F
 
@@ -22,9 +22,9 @@
 
 .field public i:F
 
-.field final j:Landroid/graphics/Matrix;
+.field public final j:Landroid/graphics/Matrix;
 
-.field k:I
+.field public k:I
 
 .field public l:[I
 

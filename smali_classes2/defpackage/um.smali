@@ -20,7 +20,7 @@
 
 .field public final h:Landroid/os/Bundle;
 
-.field i:Ldefpackage/ub;
+.field public i:Ldefpackage/ub;
 
 
 # direct methods

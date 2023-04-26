@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/debug/ui/MaterialSearchViewPreference;
+.field public final a:Lcom/google/android/apps/camera/debug/ui/MaterialSearchViewPreference;
 
 
 # direct methods

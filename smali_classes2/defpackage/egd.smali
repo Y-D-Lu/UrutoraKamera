@@ -17,7 +17,7 @@
 
 .field public e:I
 
-.field final f:Ldefpackage/ege;
+.field public final f:Ldefpackage/ege;
 
 .field public final g:Ldefpackage/poy;
 
@@ -45,7 +45,7 @@
 
 .field private s:Ldefpackage/lap;
 
-.field t:Z
+.field public t:Z
 
 .field private final u:Ldefpackage/ega;
 

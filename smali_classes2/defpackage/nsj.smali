@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field final b:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250Worker;
+.field public final b:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250Worker;
 
-.field final c:Ldefpackage/nrl;
+.field public final c:Ldefpackage/nrl;
 
 .field private d:Ljava/lang/Object;
 

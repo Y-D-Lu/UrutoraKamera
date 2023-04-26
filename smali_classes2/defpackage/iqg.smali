@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kas;
+.field public final a:Ldefpackage/kas;
 
-.field final b:Ldefpackage/iqj;
+.field public final b:Ldefpackage/iqj;
 
 
 # direct methods

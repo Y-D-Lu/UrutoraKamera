@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/content/Intent;
+.field public final a:Landroid/content/Intent;
 
-.field final b:Ldefpackage/kkn;
+.field public final b:Ldefpackage/kkn;
 
 
 # direct methods

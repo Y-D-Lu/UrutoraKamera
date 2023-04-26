@@ -12,9 +12,9 @@
 
 .field public final d:Ljava/util/List;
 
-.field e:I
+.field public e:I
 
-.field f:Ldefpackage/qh;
+.field public f:Ldefpackage/qh;
 
 .field public final g:Landroid/support/v7/widget/RecyclerView;
 

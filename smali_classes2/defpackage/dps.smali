@@ -14,7 +14,7 @@
 
 .field public final e:Landroid/hardware/HardwareBuffer;
 
-.field final f:Ldefpackage/dpt;
+.field public final f:Ldefpackage/dpt;
 
 
 # direct methods

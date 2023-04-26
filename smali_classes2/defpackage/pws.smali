@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/app/PendingIntent;
+.field public final a:Landroid/app/PendingIntent;
 
-.field final b:Landroid/content/ComponentName;
+.field public final b:Landroid/content/ComponentName;
 
-.field final c:Lcom/google/vr/ndk/base/DaydreamApi;
+.field public final c:Lcom/google/vr/ndk/base/DaydreamApi;
 
 
 # direct methods

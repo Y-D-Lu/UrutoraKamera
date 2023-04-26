@@ -14,7 +14,7 @@
 
 .field public b:Ldefpackage/ie;
 
-.field c:Ldefpackage/ks;
+.field public c:Ldefpackage/ks;
 
 
 # direct methods

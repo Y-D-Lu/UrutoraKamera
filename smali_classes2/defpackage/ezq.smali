@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/net/Uri;
+.field public final a:Landroid/net/Uri;
 
-.field final b:Ldefpackage/ezr;
+.field public final b:Ldefpackage/ezr;
 
 
 # direct methods

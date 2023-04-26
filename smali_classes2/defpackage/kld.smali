@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kuq;
+.field public final a:Ldefpackage/kuq;
 
-.field final b:Ldefpackage/kle;
+.field public final b:Ldefpackage/kle;
 
 
 # direct methods

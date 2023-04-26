@@ -17,7 +17,7 @@
 # instance fields
 .field private strategy:I
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/Script;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/Script;
 
 .field private xend:I
 
@@ -65,7 +65,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
+.method public static synthetic access$000(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
     .locals 1
     .param p0, "x0"    # Landroid/support/v8/renderscript/Script$LaunchOptions;
 
@@ -75,7 +75,7 @@
     return v0
 .end method
 
-.method static synthetic access$100(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
+.method public static synthetic access$100(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
     .locals 1
     .param p0, "x0"    # Landroid/support/v8/renderscript/Script$LaunchOptions;
 
@@ -85,7 +85,7 @@
     return v0
 .end method
 
-.method static synthetic access$200(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
+.method public static synthetic access$200(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
     .locals 1
     .param p0, "x0"    # Landroid/support/v8/renderscript/Script$LaunchOptions;
 
@@ -95,7 +95,7 @@
     return v0
 .end method
 
-.method static synthetic access$300(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
+.method public static synthetic access$300(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
     .locals 1
     .param p0, "x0"    # Landroid/support/v8/renderscript/Script$LaunchOptions;
 
@@ -105,7 +105,7 @@
     return v0
 .end method
 
-.method static synthetic access$400(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
+.method public static synthetic access$400(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
     .locals 1
     .param p0, "x0"    # Landroid/support/v8/renderscript/Script$LaunchOptions;
 
@@ -115,7 +115,7 @@
     return v0
 .end method
 
-.method static synthetic access$500(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
+.method public static synthetic access$500(Landroid/support/v8/renderscript/Script$LaunchOptions;)I
     .locals 1
     .param p0, "x0"    # Landroid/support/v8/renderscript/Script$LaunchOptions;
 

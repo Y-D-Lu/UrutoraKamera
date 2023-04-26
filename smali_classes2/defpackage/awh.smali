@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/os/Handler;
+.field public final a:Landroid/os/Handler;
 
-.field final b:Ldefpackage/avw;
+.field public final b:Ldefpackage/avw;
 
-.field final c:Ldefpackage/awl;
+.field public final c:Ldefpackage/awl;
 
 
 # direct methods

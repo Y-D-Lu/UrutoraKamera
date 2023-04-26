@@ -166,7 +166,7 @@
     return-object v0
 .end method
 
-.method protected final removeRange(II)V
+.method public final removeRange(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

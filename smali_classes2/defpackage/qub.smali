@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field final b:Ldefpackage/qts;
+.field public final b:Ldefpackage/qts;
 
-.field final c:Ldefpackage/qud;
+.field public final c:Ldefpackage/qud;
 
 .field private d:Ljava/lang/Object;
 

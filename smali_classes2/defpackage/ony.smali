@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ldefpackage/orp;
+.field public a:Ldefpackage/orp;
 
 
 # direct methods
@@ -163,7 +163,7 @@
     return v0
 .end method
 
-.method writeReplace()Ljava/lang/Object;
+.method public writeReplace()Ljava/lang/Object;
     .locals 2
 
     .line 60

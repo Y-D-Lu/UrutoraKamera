@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field protected final b:Ldefpackage/pfc;
+.field public final b:Ldefpackage/pfc;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 6

@@ -63,7 +63,7 @@
 
 
 # virtual methods
-.method protected final a(Landroid/util/AttributeSet;)V
+.method public final a(Landroid/util/AttributeSet;)V
     .locals 7
     .param p1, "attributeSet"    # Landroid/util/AttributeSet;
 

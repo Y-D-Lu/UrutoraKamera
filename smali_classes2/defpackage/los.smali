@@ -10,7 +10,7 @@
 
 .field public final c:Ljava/util/List;
 
-.field final d:Ldefpackage/lot;
+.field public final d:Ldefpackage/lot;
 
 
 # direct methods

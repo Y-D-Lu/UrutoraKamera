@@ -10,31 +10,31 @@
 
 
 # instance fields
-.field final b:Lcom/google/android/gms/location/LocationRequest;
+.field public final b:Lcom/google/android/gms/location/LocationRequest;
 
-.field final c:Ljava/util/List;
+.field public final c:Ljava/util/List;
 
-.field final d:Ljava/lang/String;
+.field public final d:Ljava/lang/String;
 
-.field final e:Z
+.field public final e:Z
 
-.field final f:Z
+.field public final f:Z
 
-.field final g:Z
+.field public final g:Z
 
-.field final h:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field final i:Z
+.field public final i:Z
 
-.field final j:Z
+.field public final j:Z
 
 .field public k:Ljava/lang/String;
 
-.field final l:J
+.field public final l:J
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 25

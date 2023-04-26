@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final b:Landroid/graphics/PorterDuff$Mode;
+.field public static final b:Landroid/graphics/PorterDuff$Mode;
 
 
 # instance fields
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 30
@@ -160,7 +160,7 @@
 
 
 # virtual methods
-.method final b(Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
+.method public final b(Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
     .locals 3
     .param p1, "colorStateList"    # Landroid/content/res/ColorStateList;
     .param p2, "mode"    # Landroid/graphics/PorterDuff$Mode;
@@ -3423,7 +3423,7 @@
     return-object p0
 .end method
 
-.method protected final onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
     .param p1, "rect"    # Landroid/graphics/Rect;
 
@@ -3442,7 +3442,7 @@
     return-void
 .end method
 
-.method protected final onStateChange([I)Z
+.method public final onStateChange([I)Z
     .locals 6
     .param p1, "iArr"    # [I
 

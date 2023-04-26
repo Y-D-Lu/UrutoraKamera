@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/by;
+.field public final a:Ldefpackage/by;
 
 
 # direct methods

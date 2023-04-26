@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/aga;
+.field public final a:Ldefpackage/aga;
 
 
 # direct methods

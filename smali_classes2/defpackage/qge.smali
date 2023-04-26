@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/qco;
+.field public final b:Ldefpackage/qco;
 
 
 # direct methods

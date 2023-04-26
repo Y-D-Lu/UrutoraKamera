@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/acb;
+.field public final a:Ldefpackage/acb;
 
 
 # direct methods

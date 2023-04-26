@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 14
@@ -396,7 +396,7 @@
     return-void
 .end method
 
-.method protected final declared-synchronized onDraw(Landroid/graphics/Canvas;)V
+.method public final declared-synchronized onDraw(Landroid/graphics/Canvas;)V
     .locals 17
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 

@@ -7,31 +7,31 @@
 
 
 # static fields
-.field static final a:I
+.field public static final a:I
 
 .field private static final j:Ljava/lang/Object;
 
 
 # instance fields
-.field final b:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final b:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field final c:I
+.field public final c:I
 
-.field d:J
+.field public d:J
 
-.field final e:I
+.field public final e:I
 
-.field f:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+.field public f:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
-.field final g:I
+.field public final g:I
 
-.field h:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+.field public h:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
-.field final i:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final i:Ljava/util/concurrent/atomic/AtomicLong;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

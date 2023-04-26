@@ -647,7 +647,7 @@
     return-object v0
 .end method
 
-.method writeReplace()Ljava/lang/Object;
+.method public writeReplace()Ljava/lang/Object;
     .locals 3
 
     .line 154

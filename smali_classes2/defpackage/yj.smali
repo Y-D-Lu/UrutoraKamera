@@ -16,7 +16,7 @@
 
 .field public f:I
 
-.field g:I
+.field public g:I
 
 .field public h:Ldefpackage/yf;
 

@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 13
@@ -158,7 +158,7 @@
 
 
 # virtual methods
-.method protected final onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 10
 
     .line 30

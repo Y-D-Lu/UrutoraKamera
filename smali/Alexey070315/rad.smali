@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method protected attachBaseContext(Landroid/content/Context;)V
+.method public attachBaseContext(Landroid/content/Context;)V
     .locals 0
     .param p1, "context"    # Landroid/content/Context;
 

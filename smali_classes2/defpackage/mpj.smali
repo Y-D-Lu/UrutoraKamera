@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mpl;
+.field public final a:Ldefpackage/mpl;
 
 
 # direct methods

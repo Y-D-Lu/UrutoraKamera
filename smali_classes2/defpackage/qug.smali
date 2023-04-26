@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field final b:Ldefpackage/qtr;
+.field public final b:Ldefpackage/qtr;
 
-.field final c:Ldefpackage/qur;
+.field public final c:Ldefpackage/qur;
 
-.field final d:Ldefpackage/qwm;
+.field public final d:Ldefpackage/qwm;
 
 
 # direct methods

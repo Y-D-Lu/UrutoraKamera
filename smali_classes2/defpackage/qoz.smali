@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/CharSequence;
+.field public final a:Ljava/lang/CharSequence;
 
 
 # direct methods

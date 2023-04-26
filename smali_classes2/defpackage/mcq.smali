@@ -462,7 +462,7 @@
     return v0
 .end method
 
-.method final l()V
+.method public final l()V
     .locals 4
 
     .line 141

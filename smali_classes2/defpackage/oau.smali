@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected j:Ldefpackage/oav;
+.field public j:Ldefpackage/oav;
 
-.field protected final k:[F
+.field public final k:[F
 
-.field protected final l:[I
+.field public final l:[I
 
 
 # direct methods

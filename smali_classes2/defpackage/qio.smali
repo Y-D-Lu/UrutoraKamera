@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final a:Ldefpackage/qbt;
+.field public static final a:Ldefpackage/qbt;
 
 
 # instance fields
-.field final b:Ljava/util/concurrent/Executor;
+.field public final b:Ljava/util/concurrent/Executor;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 16

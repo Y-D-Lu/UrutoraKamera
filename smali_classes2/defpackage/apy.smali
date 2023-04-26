@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroidx/work/impl/WorkDatabase;
+.field public final a:Landroidx/work/impl/WorkDatabase;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ldefpackage/aqa;
+.field public final c:Ldefpackage/aqa;
 
 
 # direct methods

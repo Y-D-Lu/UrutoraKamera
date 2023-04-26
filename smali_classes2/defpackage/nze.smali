@@ -9,7 +9,7 @@
 # instance fields
 .field private a:Z
 
-.field final b:Ldefpackage/nzf;
+.field public final b:Ldefpackage/nzf;
 
 .field private c:F
 
@@ -33,7 +33,7 @@
 
 
 # virtual methods
-.method protected abstract a()F
+.method public abstract a()F
 .end method
 
 .method public final onAnimationEnd(Landroid/animation/Animator;)V

@@ -9,25 +9,25 @@
 # static fields
 .field public static final a:Ldefpackage/ouj;
 
-.field protected static final b:Ljava/time/format/DateTimeFormatter;
+.field public static final b:Ljava/time/format/DateTimeFormatter;
 
 
 # instance fields
 .field public final c:Landroid/content/Context;
 
-.field protected final d:Ldefpackage/dfl;
+.field public final d:Ldefpackage/dfl;
 
 .field public e:Ldefpackage/btz;
 
-.field protected f:Ldefpackage/fmh;
+.field public f:Ldefpackage/fmh;
 
-.field protected g:Ldefpackage/lig;
+.field public g:Ldefpackage/lig;
 
 .field private final h:Ldefpackage/hss;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 20
@@ -350,5 +350,5 @@
     return-void
 .end method
 
-.method protected abstract m(Ldefpackage/dfj;)V
+.method public abstract m(Ldefpackage/dfj;)V
 .end method

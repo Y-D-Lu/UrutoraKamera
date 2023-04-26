@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/eqx;
+.field public final a:Ldefpackage/eqx;
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/dna;
+.field public final a:Ldefpackage/dna;
 
 
 # direct methods

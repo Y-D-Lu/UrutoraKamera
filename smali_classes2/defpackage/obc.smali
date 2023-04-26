@@ -26,11 +26,11 @@
 
 .field public i:Z
 
-.field m:Ldefpackage/ga;
+.field public m:Ldefpackage/ga;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 16

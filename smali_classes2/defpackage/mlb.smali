@@ -8,11 +8,11 @@
 
 .field public final b:J
 
-.field final c:J
+.field public final c:J
 
 .field public d:J
 
-.field e:J
+.field public e:J
 
 
 # direct methods

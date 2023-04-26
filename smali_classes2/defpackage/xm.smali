@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+.field public final a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-.field final b:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+.field public final b:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-.field final c:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+.field public final c:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-.field final d:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+.field public final d:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-.field final e:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+.field public final e:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
 
 # direct methods

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/Map;
+.field public final a:Ljava/util/Map;
 
-.field final b:Ljava/util/Map;
+.field public final b:Ljava/util/Map;
 
 .field private volatile c:Ldefpackage/ayn;
 

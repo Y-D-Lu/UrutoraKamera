@@ -1,3 +1,3 @@
-.class interface abstract Lbde;
+.class public interface abstract Lbde;
 .super Ljava/lang/Object;
 .source ""

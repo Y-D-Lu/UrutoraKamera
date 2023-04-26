@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected a()Ljava/lang/Object;
+.method public a()Ljava/lang/Object;
     .locals 1
 
     .line 11
@@ -59,7 +59,7 @@
     return v0
 .end method
 
-.method protected abstract b()Ljava/util/Collection;
+.method public abstract b()Ljava/util/Collection;
 .end method
 
 .method public clear()V

@@ -6,7 +6,7 @@
 # instance fields
 .field public final b:Ldefpackage/lui;
 
-.field protected final c:Ldefpackage/pht;
+.field public final c:Ldefpackage/pht;
 
 
 # direct methods

@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mnf;
+.field public final a:Ldefpackage/mnf;
 
-.field final b:Ljava/util/concurrent/Executor;
+.field public final b:Ljava/util/concurrent/Executor;
 
-.field final c:Ldefpackage/moa;
+.field public final c:Ldefpackage/moa;
 
-.field final d:Ldefpackage/moa;
+.field public final d:Ldefpackage/moa;
 
-.field final e:Ldefpackage/mwp;
+.field public final e:Ldefpackage/mwp;
 
 
 # direct methods

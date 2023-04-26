@@ -8,7 +8,7 @@
 
 .field private B:Ldefpackage/ojc;
 
-.field a:Z
+.field public a:Z
 
 .field public b:Ljava/lang/Float;
 
@@ -751,7 +751,7 @@
     .end packed-switch
 .end method
 
-.method protected final b()Ldefpackage/nlf;
+.method public final b()Ldefpackage/nlf;
     .locals 3
 
     .line 162
@@ -799,7 +799,7 @@
     throw v1
 .end method
 
-.method protected final d()Ljava/lang/Float;
+.method public final d()Ljava/lang/Float;
     .locals 3
 
     .line 178

@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field a:Logo;
+.field public a:Logo;
 
-.field b:Z
+.field public b:Z
 
-.field c:Ldefpackage/ogi;
+.field public c:Ldefpackage/ogi;
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 5

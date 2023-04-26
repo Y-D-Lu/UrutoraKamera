@@ -2732,7 +2732,7 @@
     return-wide v1
 .end method
 
-.method final s()J
+.method public final s()J
     .locals 6
 
     .line 696

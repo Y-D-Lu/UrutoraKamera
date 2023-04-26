@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lup;
+.field public final a:Ldefpackage/lup;
 
 .field private b:Z
 

@@ -51,7 +51,7 @@
     return v0
 .end method
 
-.method protected b()Ljava/util/Collection;
+.method public b()Ljava/util/Collection;
     .locals 1
 
     .line 20
@@ -60,7 +60,7 @@
     throw v0
 .end method
 
-.method protected abstract c()Ljava/util/List;
+.method public abstract c()Ljava/util/List;
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z

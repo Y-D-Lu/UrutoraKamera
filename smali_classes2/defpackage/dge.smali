@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lis;
+.field public final a:Ldefpackage/lis;
 
 
 # direct methods

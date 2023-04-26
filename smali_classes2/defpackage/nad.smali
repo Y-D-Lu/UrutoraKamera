@@ -4,25 +4,25 @@
 
 
 # instance fields
-.field a:J
+.field public a:J
 
-.field b:J
+.field public b:J
 
-.field c:I
+.field public c:I
 
-.field d:I
+.field public d:I
 
-.field e:Ljava/lang/String;
+.field public e:Ljava/lang/String;
 
-.field f:Ljava/lang/String;
+.field public f:Ljava/lang/String;
 
-.field g:I
+.field public g:I
 
-.field h:Ljava/lang/String;
+.field public h:Ljava/lang/String;
 
-.field i:Ldefpackage/qxs;
+.field public i:Ldefpackage/qxs;
 
-.field j:I
+.field public j:I
 
 
 # direct methods

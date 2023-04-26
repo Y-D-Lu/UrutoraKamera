@@ -19,7 +19,7 @@
 
 .field public f:J
 
-.field final g:Ldefpackage/fun;
+.field public final g:Ldefpackage/fun;
 
 .field private final h:Ldefpackage/fuw;
 

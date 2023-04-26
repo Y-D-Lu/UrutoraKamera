@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lqt;
+.field public final a:Ldefpackage/lqt;
 
 
 # direct methods

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/zoomui/ZoomKnob;
+.field public final a:Lcom/google/android/apps/camera/zoomui/ZoomKnob;
 
 
 # direct methods

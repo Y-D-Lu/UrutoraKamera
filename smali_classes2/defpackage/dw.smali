@@ -4,17 +4,17 @@
 
 
 # static fields
-.field static final a:[[F
+.field public static final a:[[F
 
-.field static final b:[[F
+.field public static final b:[[F
 
-.field static final c:[F
+.field public static final c:[F
 
-.field static final d:[[F
+.field public static final d:[[F
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 6
@@ -176,7 +176,7 @@
     .end array-data
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 5

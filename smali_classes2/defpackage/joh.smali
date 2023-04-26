@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Z
+.field public final a:Z
 
-.field final b:Lcom/google/android/apps/camera/ui/views/CaptureAnimationOverlay;
+.field public final b:Lcom/google/android/apps/camera/ui/views/CaptureAnimationOverlay;
 
 
 # direct methods

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/content/Intent;
+.field public final a:Landroid/content/Intent;
 
-.field final b:Ljava/lang/ref/WeakReference;
+.field public final b:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
@@ -49,7 +49,7 @@
     return-object v0
 .end method
 
-.method protected final b(Lkhz;)V
+.method public final b(Lkhz;)V
     .locals 7
     .param p1, "khzVar"    # Lkhz;
 

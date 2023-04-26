@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+.field public final a:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
 
 # direct methods

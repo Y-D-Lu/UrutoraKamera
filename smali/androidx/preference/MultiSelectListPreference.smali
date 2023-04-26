@@ -65,7 +65,7 @@
     return-object v1
 .end method
 
-.method protected final f(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
+.method public final f(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 6
     .param p1, "typedArray"    # Landroid/content/res/TypedArray;
     .param p2, "i"    # I
@@ -157,7 +157,7 @@
     return-void
 .end method
 
-.method protected final h(Ljava/lang/Object;)V
+.method public final h(Ljava/lang/Object;)V
     .locals 1
     .param p1, "obj"    # Ljava/lang/Object;
 

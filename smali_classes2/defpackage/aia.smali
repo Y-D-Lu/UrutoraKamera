@@ -55,7 +55,7 @@
     throw v1
 .end method
 
-.method protected abstract b(Ldefpackage/ake;Ljava/lang/Object;)V
+.method public abstract b(Ldefpackage/ake;Ljava/lang/Object;)V
 .end method
 
 .method public final c(Ljava/lang/Object;)V

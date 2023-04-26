@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final h(Ldefpackage/qym;)V
+.method public final h(Ldefpackage/qym;)V
     .locals 2
     .param p1, "qymVar"    # Ldefpackage/qym;
 

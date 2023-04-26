@@ -21,7 +21,7 @@
 
 .field public g:Z
 
-.field final h:Ldefpackage/ees;
+.field public final h:Ldefpackage/ees;
 
 .field public final i:Ldefpackage/poy;
 
@@ -41,7 +41,7 @@
 
 .field private q:Ljava/util/List;
 
-.field r:Z
+.field public r:Z
 
 
 # direct methods

@@ -31,10 +31,10 @@
 
 
 # virtual methods
-.method protected abstract a(I)Ljava/lang/Object;
+.method public abstract a(I)Ljava/lang/Object;
 .end method
 
-.method protected abstract b(I)V
+.method public abstract b(I)V
 .end method
 
 .method public final forEachRemaining(Ljava/util/function/Consumer;)V

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field final b:Ldefpackage/lug;
+.field public final b:Ldefpackage/lug;
 
 .field private final c:J
 

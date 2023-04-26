@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/locks/Lock;
+.field public final a:Ljava/util/concurrent/locks/Lock;
 
-.field b:I
+.field public b:I
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 8

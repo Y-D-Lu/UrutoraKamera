@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/ifj;
+.field public final synthetic this$0:Ldefpackage/ifj;
 
-.field final synthetic val$constraintLayout:Landroid/support/constraint/ConstraintLayout;
+.field public final synthetic val$constraintLayout:Landroid/support/constraint/ConstraintLayout;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ifj;Landroid/support/constraint/ConstraintLayout;)V
+.method public constructor <init>(Ldefpackage/ifj;Landroid/support/constraint/ConstraintLayout;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/ifj;
 

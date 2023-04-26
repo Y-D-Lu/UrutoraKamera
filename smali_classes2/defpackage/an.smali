@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
 .field public final b:Ldefpackage/am;
 
@@ -36,7 +36,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10

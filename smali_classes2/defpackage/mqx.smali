@@ -39,7 +39,7 @@
     return-object v0
 .end method
 
-.method protected abstract c()V
+.method public abstract c()V
 .end method
 
 .method public final close()V

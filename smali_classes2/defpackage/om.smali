@@ -6,7 +6,7 @@
 # instance fields
 .field public a:Z
 
-.field b:Ldefpackage/ol;
+.field public b:Ldefpackage/ol;
 
 .field private final c:Landroid/graphics/Rect;
 
@@ -397,7 +397,7 @@
     return v6
 .end method
 
-.method protected final dispatchDraw(Landroid/graphics/Canvas;)V
+.method public final dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 2
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -581,7 +581,7 @@
     return v0
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 1
 
     .line 180

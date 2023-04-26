@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/khb;
+.field public final a:Ldefpackage/khb;
 
 .field private final b:Ldefpackage/kgp;
 
@@ -43,7 +43,7 @@
     return-object p1
 .end method
 
-.method protected b(Lkhz;)V
+.method public b(Lkhz;)V
     .locals 2
     .param p1, "khzVar"    # Lkhz;
 

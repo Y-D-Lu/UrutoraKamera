@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Ljava/util/concurrent/Executor;
+.field public final b:Ljava/util/concurrent/Executor;
 
-.field c:Ldefpackage/pgt;
+.field public c:Ldefpackage/pgt;
 
 
 # direct methods

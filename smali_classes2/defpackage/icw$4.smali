@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/icw;
+.field public final synthetic this$0:Ldefpackage/icw;
 
-.field final synthetic val$atomicInteger:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final synthetic val$atomicInteger:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field final synthetic val$atomicInteger2:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final synthetic val$atomicInteger2:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/icw;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;)V
+.method public constructor <init>(Ldefpackage/icw;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/icw;
 

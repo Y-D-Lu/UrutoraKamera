@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fb;
+.field public final a:Ldefpackage/fb;
 
-.field final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods

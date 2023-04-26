@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Class;
+.field public final a:Ljava/lang/Class;
 
-.field final b:Ldefpackage/azv;
+.field public final b:Ldefpackage/azv;
 
 .field private final c:Ljava/lang/Class;
 

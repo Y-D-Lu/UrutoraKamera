@@ -15,7 +15,7 @@
 
 .field public l:Ldefpackage/jgu;
 
-.field protected m:Z
+.field public m:Z
 
 
 # direct methods

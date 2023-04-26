@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/jeg;
+.field public final b:Ldefpackage/jeg;
 
 
 # direct methods

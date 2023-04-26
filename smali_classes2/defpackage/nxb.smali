@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nxc;
+.field public final a:Ldefpackage/nxc;
 
 .field private final b:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 

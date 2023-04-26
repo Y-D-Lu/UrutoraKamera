@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 10
@@ -49,7 +49,7 @@
     return-void
 .end method
 
-.method protected final c(Ldefpackage/bcv;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
+.method public final c(Ldefpackage/bcv;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 1
     .param p1, "bcvVar"    # Ldefpackage/bcv;
     .param p2, "bitmap"    # Landroid/graphics/Bitmap;

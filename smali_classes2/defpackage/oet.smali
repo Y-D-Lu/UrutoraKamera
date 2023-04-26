@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/os/IBinder;
+.field public final a:Landroid/os/IBinder;
 
-.field final b:Ldefpackage/oev;
+.field public final b:Ldefpackage/oev;
 
 
 # direct methods

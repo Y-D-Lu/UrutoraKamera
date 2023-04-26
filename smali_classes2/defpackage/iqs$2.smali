@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -26,21 +26,21 @@
 
 .field public final e:Ldefpackage/kfm;
 
-.field final synthetic this$0:Ldefpackage/iqs;
+.field public final synthetic this$0:Ldefpackage/iqs;
 
-.field final synthetic val$enlVar:Ldefpackage/enl;
+.field public final synthetic val$enlVar:Ldefpackage/enl;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$i2:I
+.field public final synthetic val$i2:I
 
-.field final synthetic val$iraVar:Ldefpackage/ira;
+.field public final synthetic val$iraVar:Ldefpackage/ira;
 
-.field final synthetic val$z2:Ldefpackage/kfm;
+.field public final synthetic val$z2:Ldefpackage/kfm;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/iqs;IILdefpackage/enl;Ldefpackage/kfm;Ldefpackage/ira;)V
+.method public constructor <init>(Ldefpackage/iqs;IILdefpackage/enl;Ldefpackage/kfm;Ldefpackage/ira;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/iqs;
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Z
+.field public final a:Z
 
-.field final b:Ldefpackage/ctl;
+.field public final b:Ldefpackage/ctl;
 
 
 # direct methods

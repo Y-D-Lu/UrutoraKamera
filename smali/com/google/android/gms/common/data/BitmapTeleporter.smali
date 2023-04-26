@@ -11,15 +11,15 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field b:Landroid/os/ParcelFileDescriptor;
+.field public b:Landroid/os/ParcelFileDescriptor;
 
-.field final c:I
+.field public final c:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 15

@@ -12,7 +12,7 @@
 
 .field public b:Ljava/lang/Object;
 
-.field final c:Ldefpackage/prj;
+.field public final c:Ldefpackage/prj;
 
 
 # direct methods

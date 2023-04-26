@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:Ldefpackage/bu;
+.field public b:Ldefpackage/bu;
 
-.field c:Z
+.field public c:Z
 
-.field d:I
+.field public d:I
 
-.field e:I
+.field public e:I
 
-.field f:I
+.field public f:I
 
-.field g:I
+.field public g:I
 
-.field h:Ldefpackage/aea;
+.field public h:Ldefpackage/aea;
 
-.field i:Ldefpackage/aea;
+.field public i:Ldefpackage/aea;
 
 
 # direct methods

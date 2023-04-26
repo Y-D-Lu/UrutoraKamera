@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/noc;
+.field public final a:Ldefpackage/noc;
 
-.field final b:Ldefpackage/nrl;
+.field public final b:Ldefpackage/nrl;
 
-.field final c:Ljava/util/Collection;
+.field public final c:Ljava/util/Collection;
 
-.field final d:Ljava/util/List;
+.field public final d:Ljava/util/List;
 
-.field final e:I
+.field public final e:I
 
 
 # direct methods

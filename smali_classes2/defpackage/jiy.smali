@@ -11,7 +11,7 @@
 # instance fields
 .field public final a:Landroid/content/Context;
 
-.field final b:Landroid/os/Handler;
+.field public final b:Landroid/os/Handler;
 
 .field public c:Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/grz;
+.field public final a:Ldefpackage/grz;
 
 .field private final b:Ljava/util/concurrent/atomic/AtomicBoolean;
 

@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field final d:Ljava/util/ArrayList;
+.field public final d:Ljava/util/ArrayList;
 
-.field e:I
+.field public e:I
 
-.field f:I
+.field public f:I
 
-.field g:I
+.field public g:I
 
-.field h:I
+.field public h:I
 
-.field i:I
+.field public i:I
 
 .field public j:Z
 
@@ -22,19 +22,19 @@
 
 .field public l:Ljava/lang/String;
 
-.field m:I
+.field public m:I
 
-.field n:Ljava/lang/CharSequence;
+.field public n:Ljava/lang/CharSequence;
 
-.field o:I
+.field public o:I
 
-.field p:Ljava/lang/CharSequence;
+.field public p:Ljava/lang/CharSequence;
 
-.field q:Ljava/util/ArrayList;
+.field public q:Ljava/util/ArrayList;
 
-.field r:Ljava/util/ArrayList;
+.field public r:Ljava/util/ArrayList;
 
-.field s:Z
+.field public s:Z
 
 
 # direct methods

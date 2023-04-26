@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field protected final b:Ldefpackage/xz;
+.field public final b:Ldefpackage/xz;
 
 .field public c:[I
 

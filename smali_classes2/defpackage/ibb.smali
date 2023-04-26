@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/ih;
+.field public final a:Ldefpackage/ih;
 
-.field protected final b:Ldefpackage/img;
+.field public final b:Ldefpackage/img;
 
-.field protected final c:Ldefpackage/ojz;
+.field public final c:Ldefpackage/ojz;
 
-.field protected final d:Ldefpackage/ddf;
+.field public final d:Ldefpackage/ddf;
 
-.field protected final e:I
+.field public final e:I
 
-.field protected final f:Landroid/view/WindowManager;
+.field public final f:Landroid/view/WindowManager;
 
 .field public final g:Landroid/graphics/Rect;
 
@@ -332,7 +332,7 @@
 
 
 # virtual methods
-.method protected final a(Ldefpackage/lhs;Ldefpackage/ojz;)Ldefpackage/ojc;
+.method public final a(Ldefpackage/lhs;Ldefpackage/ojz;)Ldefpackage/ojc;
     .locals 21
     .param p1, "lhsVar"    # Ldefpackage/lhs;
     .param p2, "ojzVar"    # Ldefpackage/ojz;

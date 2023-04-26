@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jwm;
+.field public final a:Ldefpackage/jwm;
 
 .field private final b:Ldefpackage/lmr;
 

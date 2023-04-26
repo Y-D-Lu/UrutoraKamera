@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field addreses:Lcom/eszdman/rampatcher/PatcherAddress;
+.field public addreses:Lcom/eszdman/rampatcher/PatcherAddress;
 
 
 # direct methods

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:J
+.field public final a:J
 
-.field final b:Ldefpackage/gex;
+.field public final b:Ldefpackage/gex;
 
-.field final c:Ldefpackage/gal;
+.field public final c:Ldefpackage/gal;
 
 
 # direct methods

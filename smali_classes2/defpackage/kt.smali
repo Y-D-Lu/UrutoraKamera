@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method final b()V
+.method public final b()V
     .locals 6
 
     .line 42

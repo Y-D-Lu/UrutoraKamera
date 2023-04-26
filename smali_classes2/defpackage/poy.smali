@@ -2132,7 +2132,7 @@
     return-void
 .end method
 
-.method protected final b(Ldefpackage/pnm;)Ldefpackage/pnl;
+.method public final b(Ldefpackage/pnm;)Ldefpackage/pnl;
     .locals 1
     .param p1, "pnmVar"    # Ldefpackage/pnm;
 

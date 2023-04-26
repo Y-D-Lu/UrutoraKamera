@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/filmstrip/transition/FilmstripTransitionLayout;
+.field public final a:Lcom/google/android/apps/camera/filmstrip/transition/FilmstripTransitionLayout;
 
 
 # direct methods

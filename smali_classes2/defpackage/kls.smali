@@ -405,7 +405,7 @@
     return-object v2
 .end method
 
-.method final e(I)I
+.method public final e(I)I
     .locals 3
     .param p1, "i"    # I
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cqi;
+.field public final a:Ldefpackage/cqi;
 
 
 # direct methods

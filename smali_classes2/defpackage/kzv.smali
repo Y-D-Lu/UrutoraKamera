@@ -14,17 +14,17 @@
 
 .field public static final e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field static f:Ljava/util/HashMap;
+.field public static f:Ljava/util/HashMap;
 
-.field static final g:Ljava/util/HashMap;
+.field public static final g:Ljava/util/HashMap;
 
-.field static final h:Ljava/util/HashMap;
+.field public static final h:Ljava/util/HashMap;
 
 .field public static final i:Ljava/util/HashMap;
 
-.field static final j:Ljava/util/HashMap;
+.field public static final j:Ljava/util/HashMap;
 
-.field static final k:[Ljava/lang/String;
+.field public static final k:[Ljava/lang/String;
 
 .field private static l:Ljava/lang/Object;
 
@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 19

@@ -773,7 +773,7 @@
     return v0
 .end method
 
-.method final i(Z)V
+.method public final i(Z)V
     .locals 4
     .param p1, "z"    # Z
 

@@ -380,10 +380,10 @@
 
 
 # virtual methods
-.method protected abstract a()Ljava/util/Map;
+.method public abstract a()Ljava/util/Map;
 .end method
 
-.method protected final b(Ljava/lang/String;)Landroid/content/SharedPreferences;
+.method public final b(Ljava/lang/String;)Landroid/content/SharedPreferences;
     .locals 1
     .param p1, "str"    # Ljava/lang/String;
 

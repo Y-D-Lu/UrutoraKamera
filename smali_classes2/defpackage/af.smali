@@ -104,7 +104,7 @@
 
 .field public y:Ljava/lang/String;
 
-.field z:I
+.field public z:I
 
 
 # direct methods

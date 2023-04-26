@@ -224,7 +224,7 @@
     throw v1
 .end method
 
-.method protected final dispatchDraw(Landroid/graphics/Canvas;)V
+.method public final dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -240,7 +240,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

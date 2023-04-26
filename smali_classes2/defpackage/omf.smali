@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field transient b:[I
+.field public transient b:[I
 
-.field transient c:[Ljava/lang/Object;
+.field public transient c:[Ljava/lang/Object;
 
-.field transient d:[Ljava/lang/Object;
+.field public transient d:[Ljava/lang/Object;
 
 .field public transient e:I
 
@@ -31,7 +31,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 19
@@ -1227,7 +1227,7 @@
     return-void
 .end method
 
-.method final m(I)V
+.method public final m(I)V
     .locals 3
     .param p1, "i"    # I
 

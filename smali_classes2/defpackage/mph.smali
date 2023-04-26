@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mpi;
+.field public final a:Ldefpackage/mpi;
 
-.field final b:Lcom/google/android/libraries/oliveoil/gl/EGLImage;
+.field public final b:Lcom/google/android/libraries/oliveoil/gl/EGLImage;
 
 
 # direct methods

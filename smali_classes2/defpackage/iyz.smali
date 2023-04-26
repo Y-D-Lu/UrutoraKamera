@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/izb;
+.field public final b:Ldefpackage/izb;
 
 
 # direct methods

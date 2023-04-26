@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Lcom/google/android/libraries/vision/visionkit/f250/internal/airlock/room/F250RoomDatabase_Impl;
+.field public final b:Lcom/google/android/libraries/vision/visionkit/f250/internal/airlock/room/F250RoomDatabase_Impl;
 
 
 # direct methods

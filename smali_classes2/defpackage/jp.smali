@@ -13,23 +13,23 @@
 
 
 # instance fields
-.field a:Landroid/content/Context;
+.field public a:Landroid/content/Context;
 
-.field b:Landroid/support/v7/widget/ActionBarOverlayLayout;
+.field public b:Landroid/support/v7/widget/ActionBarOverlayLayout;
 
 .field public c:Landroid/support/v7/widget/ActionBarContainer;
 
-.field d:Ldefpackage/oa;
+.field public d:Ldefpackage/oa;
 
-.field e:Landroid/support/v7/widget/ActionBarContextView;
+.field public e:Landroid/support/v7/widget/ActionBarContextView;
 
-.field f:Landroid/view/View;
+.field public f:Landroid/view/View;
 
-.field g:Ldefpackage/jo;
+.field public g:Ldefpackage/jo;
 
-.field h:Ldefpackage/jw;
+.field public h:Ldefpackage/jw;
 
-.field i:Ldefpackage/jv;
+.field public i:Ldefpackage/jv;
 
 .field public j:I
 
@@ -39,13 +39,13 @@
 
 .field public m:Ldefpackage/ke;
 
-.field n:Z
+.field public n:Z
 
-.field final o:Ldefpackage/gp;
+.field public final o:Ldefpackage/gp;
 
-.field final p:Ldefpackage/gp;
+.field public final p:Ldefpackage/gp;
 
-.field final q:Ldefpackage/jn;
+.field public final q:Ldefpackage/jn;
 
 .field private t:Landroid/content/Context;
 
@@ -63,7 +63,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 27

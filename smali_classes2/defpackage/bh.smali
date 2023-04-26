@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Landroid/view/View;
+.field public final a:Landroid/view/View;
 
-.field final b:Landroid/view/ViewGroup;
+.field public final b:Landroid/view/ViewGroup;
 
-.field final c:Ldefpackage/bi;
+.field public final c:Ldefpackage/bi;
 
-.field final d:Ldefpackage/dp;
+.field public final d:Ldefpackage/dp;
 
 
 # direct methods

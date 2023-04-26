@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/qbq;
+.field public final a:Ldefpackage/qbq;
 
-.field protected b:Ldefpackage/qbz;
+.field public b:Ldefpackage/qbz;
 
-.field protected c:Lqdg;
+.field public c:Lqdg;
 
-.field protected d:Z
+.field public d:Z
 
 
 # direct methods

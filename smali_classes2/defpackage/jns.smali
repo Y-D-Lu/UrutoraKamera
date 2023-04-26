@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/view/ViewStub;
+.field public final a:Landroid/view/ViewStub;
 
-.field final b:Landroid/view/ViewStub;
+.field public final b:Landroid/view/ViewStub;
 
 .field public final c:Lcom/google/android/apps/camera/ui/views/MainActivityLayout;
 

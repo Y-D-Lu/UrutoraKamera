@@ -101,7 +101,7 @@
     return-object v0
 .end method
 
-.method protected c(Ljava/lang/Object;)Ljava/lang/Object;
+.method public c(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1, "obj"    # Ljava/lang/Object;
 

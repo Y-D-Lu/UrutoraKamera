@@ -15,7 +15,7 @@
 
 .field public d:Z
 
-.field final e:Ldefpackage/kkg;
+.field public final e:Ldefpackage/kkg;
 
 .field public f:Ldefpackage/kmy;
 

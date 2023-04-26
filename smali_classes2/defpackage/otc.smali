@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/otf;
+.field public final a:Ldefpackage/otf;
 
 
 # direct methods

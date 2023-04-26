@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fyr;
+.field public final a:Ldefpackage/fyr;
 
 
 # direct methods

@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
 .field public final c:Ldefpackage/vd;
 
@@ -18,7 +18,7 @@
 
 .field public volatile f:Ljava/lang/Object;
 
-.field volatile g:Ljava/lang/Object;
+.field public volatile g:Ljava/lang/Object;
 
 .field public h:I
 
@@ -30,7 +30,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 8

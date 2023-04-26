@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/aqt;
+.field public final a:Ldefpackage/aqt;
 
 .field public final b:Ldefpackage/asl;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10

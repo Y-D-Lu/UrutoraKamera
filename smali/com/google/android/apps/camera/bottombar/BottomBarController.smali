@@ -117,7 +117,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/google/android/apps/camera/bottombar/BottomBarController;)Ljava/lang/Object;
+.method public static synthetic access$000(Lcom/google/android/apps/camera/bottombar/BottomBarController;)Ljava/lang/Object;
     .locals 1
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/BottomBarController;
 
@@ -127,7 +127,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/google/android/apps/camera/bottombar/BottomBarController;)Ljava/util/List;
+.method public static synthetic access$100(Lcom/google/android/apps/camera/bottombar/BottomBarController;)Ljava/util/List;
     .locals 1
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/BottomBarController;
 

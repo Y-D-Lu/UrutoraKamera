@@ -9,11 +9,11 @@
 # instance fields
 .field public a:Ljava/lang/CharSequence;
 
-.field b:Landroid/widget/ListAdapter;
+.field public b:Landroid/widget/ListAdapter;
 
 .field public final c:Landroid/graphics/Rect;
 
-.field final d:Ldefpackage/nq;
+.field public final d:Ldefpackage/nq;
 
 .field private r:I
 

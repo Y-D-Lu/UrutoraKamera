@@ -25,7 +25,7 @@
 
 .field public e:Ljava/lang/Object;
 
-.field final f:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250Worker;
+.field public final f:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250Worker;
 
 .field public g:I
 

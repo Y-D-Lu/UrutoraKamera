@@ -4,19 +4,19 @@
 
 
 # static fields
-.field static final a:[Ldefpackage/qkb;
+.field public static final a:[Ldefpackage/qkb;
 
-.field static final b:[Ldefpackage/qkb;
+.field public static final b:[Ldefpackage/qkb;
 
 
 # instance fields
-.field final c:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final c:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field d:Ljava/lang/Throwable;
+.field public d:Ljava/lang/Throwable;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 8
@@ -189,7 +189,7 @@
     return-void
 .end method
 
-.method protected final g(Ldefpackage/qbq;)V
+.method public final g(Ldefpackage/qbq;)V
     .locals 5
     .param p1, "qbqVar"    # Ldefpackage/qbq;
 

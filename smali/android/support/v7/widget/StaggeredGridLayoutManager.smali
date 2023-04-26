@@ -21,21 +21,21 @@
 
 .field private final K:Ljava/lang/Runnable;
 
-.field a:[Ldefpackage/rg;
+.field public a:[Ldefpackage/rg;
 
 .field public b:Ldefpackage/pq;
 
-.field c:Ldefpackage/pq;
+.field public c:Ldefpackage/pq;
 
 .field public d:Z
 
-.field e:Z
+.field public e:Z
 
-.field f:I
+.field public f:I
 
-.field g:I
+.field public g:I
 
-.field h:Ldefpackage/re;
+.field public h:Ldefpackage/re;
 
 .field private i:I
 
@@ -3664,7 +3664,7 @@
     return v0
 .end method
 
-.method final E(ILdefpackage/qp;)V
+.method public final E(ILdefpackage/qp;)V
     .locals 4
     .param p1, "i"    # I
     .param p2, "qpVar"    # Ldefpackage/qp;
@@ -3767,7 +3767,7 @@
     return-void
 .end method
 
-.method final G(I)V
+.method public final G(I)V
     .locals 1
     .param p1, "i"    # I
 
@@ -4195,7 +4195,7 @@
     return-object v1
 .end method
 
-.method final K()Z
+.method public final K()Z
     .locals 2
 
     .line 789
@@ -4857,7 +4857,7 @@
     return-void
 .end method
 
-.method final c()I
+.method public final c()I
     .locals 2
 
     .line 950
@@ -4981,7 +4981,7 @@
     return-object v0
 .end method
 
-.method final i()I
+.method public final i()I
     .locals 2
 
     .line 982
@@ -5030,7 +5030,7 @@
     throw v0
 .end method
 
-.method final k(ILdefpackage/qi;Ldefpackage/qp;)I
+.method public final k(ILdefpackage/qi;Ldefpackage/qp;)I
     .locals 4
     .param p1, "i"    # I
     .param p2, "qiVar"    # Ldefpackage/qi;
@@ -5115,7 +5115,7 @@
     return v1
 .end method
 
-.method final l(Z)Landroid/view/View;
+.method public final l(Z)Landroid/view/View;
     .locals 7
     .param p1, "z"    # Z
 
@@ -5374,7 +5374,7 @@
     return-void
 .end method
 
-.method final q(Z)Landroid/view/View;
+.method public final q(Z)Landroid/view/View;
     .locals 8
     .param p1, "z"    # Z
 
@@ -5501,7 +5501,7 @@
     return v0
 .end method
 
-.method final t()Landroid/view/View;
+.method public final t()Landroid/view/View;
     .locals 2
 
     .line 1134

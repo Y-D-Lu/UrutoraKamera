@@ -6,7 +6,7 @@
 # instance fields
 .field public f:I
 
-.field final g:Ldefpackage/yd;
+.field public final g:Ldefpackage/yd;
 
 .field private h:[Ldefpackage/yf;
 

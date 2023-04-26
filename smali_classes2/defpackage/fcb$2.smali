@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/fcb;
+.field public final synthetic this$0:Ldefpackage/fcb;
 
-.field final synthetic val$idsVar:Ldefpackage/ids;
+.field public final synthetic val$idsVar:Ldefpackage/ids;
 
-.field final synthetic val$managedSwitchPreference3:Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;
+.field public final synthetic val$managedSwitchPreference3:Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/fcb;Ldefpackage/ids;Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;)V
+.method public constructor <init>(Ldefpackage/fcb;Ldefpackage/ids;Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/fcb;
 

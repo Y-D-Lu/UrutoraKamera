@@ -4,17 +4,17 @@
 
 
 # static fields
-.field static final a:Ldefpackage/pfw;
+.field public static final a:Ldefpackage/pfw;
 
 
 # instance fields
-.field volatile next:Ldefpackage/pfw;
+.field public volatile next:Ldefpackage/pfw;
 
-.field volatile thread:Ljava/lang/Thread;
+.field public volatile thread:Ljava/lang/Thread;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 7

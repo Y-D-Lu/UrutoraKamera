@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/jbb;
+.field public final synthetic this$0:Ldefpackage/jbb;
 
-.field final synthetic val$linearLayout:Landroid/widget/LinearLayout;
+.field public final synthetic val$linearLayout:Landroid/widget/LinearLayout;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/jbb;Landroid/widget/LinearLayout;)V
+.method public constructor <init>(Ldefpackage/jbb;Landroid/widget/LinearLayout;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/jbb;
 

@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field a:Landroid/os/Handler;
+.field public a:Landroid/os/Handler;
 
-.field b:Ldefpackage/awc;
+.field public b:Ldefpackage/awc;
 
-.field c:Ldefpackage/aui;
+.field public c:Ldefpackage/aui;
 
-.field d:Ldefpackage/fde;
+.field public d:Ldefpackage/fde;
 
 
 # direct methods

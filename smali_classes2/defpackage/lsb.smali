@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lsp;
+.field public final a:Ldefpackage/lsp;
 
-.field final b:Ldefpackage/lzp;
+.field public final b:Ldefpackage/lzp;
 
-.field final c:Landroid/os/Handler;
+.field public final c:Landroid/os/Handler;
 
-.field final d:Ldefpackage/lap;
+.field public final d:Ldefpackage/lap;
 
-.field final e:Ldefpackage/lsc;
+.field public final e:Ldefpackage/lsc;
 
 
 # direct methods

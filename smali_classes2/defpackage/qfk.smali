@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbv;
+.field public final a:Ldefpackage/qbv;
 
-.field final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
-.field c:Ldefpackage/qbz;
+.field public c:Ldefpackage/qbz;
 
 
 # direct methods

@@ -20,11 +20,11 @@
 .method public static native lockBitmap(Landroid/graphics/Bitmap;)J
 .end method
 
-.method static native lockSurface(Landroid/view/Surface;)J
+.method public static native lockSurface(Landroid/view/Surface;)J
 .end method
 
 .method public static native unlockBitmap(Landroid/graphics/Bitmap;)V
 .end method
 
-.method static native unlockSurface(J)V
+.method public static native unlockSurface(J)V
 .end method

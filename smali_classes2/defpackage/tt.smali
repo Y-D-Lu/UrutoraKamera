@@ -63,7 +63,7 @@
     return v0
 .end method
 
-.method protected final onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 7
     .param p1, "rect"    # Landroid/graphics/Rect;
 

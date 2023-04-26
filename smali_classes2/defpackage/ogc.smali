@@ -7,7 +7,7 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ofw;
+.field public static final a:Ldefpackage/ofw;
 
 
 # instance fields
@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 8

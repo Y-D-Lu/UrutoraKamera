@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+.field public final synthetic this$0:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
 
 # direct methods

@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbe;
+.field public final a:Ldefpackage/qbe;
 
-.field b:Ldefpackage/qbz;
+.field public b:Ldefpackage/qbz;
 
-.field final c:Ldefpackage/qef;
+.field public final c:Ldefpackage/qef;
 
 
 # direct methods

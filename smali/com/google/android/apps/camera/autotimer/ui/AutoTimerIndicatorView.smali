@@ -6,15 +6,15 @@
 # static fields
 .field public static final a:Ljava/time/Duration;
 
-.field static final b:Ljava/time/Duration;
+.field public static final b:Ljava/time/Duration;
 
 
 # instance fields
 .field public final c:Landroid/view/View$OnLayoutChangeListener;
 
-.field final d:Landroid/graphics/Paint;
+.field public final d:Landroid/graphics/Paint;
 
-.field final e:Landroid/animation/ValueAnimator;
+.field public final e:Landroid/animation/ValueAnimator;
 
 .field public f:Landroid/view/ViewPropertyAnimator;
 
@@ -54,7 +54,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 24
@@ -626,7 +626,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 27
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 

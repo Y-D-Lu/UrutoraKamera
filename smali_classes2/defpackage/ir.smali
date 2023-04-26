@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Landroid/os/PowerManager;
 
-.field final b:Ldefpackage/iy;
+.field public final b:Ldefpackage/iy;
 
 
 # direct methods

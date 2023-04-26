@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cgs;
+.field public final a:Ldefpackage/cgs;
 
 
 # direct methods

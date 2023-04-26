@@ -46,7 +46,7 @@
 
 .field public c:F
 
-.field d:Landroid/animation/ObjectAnimator;
+.field public d:Landroid/animation/ObjectAnimator;
 
 .field private g:Landroid/graphics/drawable/Drawable;
 
@@ -90,7 +90,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 44
@@ -1660,7 +1660,7 @@
     return-void
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 5
 
     .line 367
@@ -1894,7 +1894,7 @@
     return-void
 .end method
 
-.method protected final onCreateDrawableState(I)[I
+.method public final onCreateDrawableState(I)[I
     .locals 2
     .param p1, "i"    # I
 
@@ -1923,7 +1923,7 @@
     return-object v0
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 17
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -2214,7 +2214,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 10
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -3506,7 +3506,7 @@
     return-void
 .end method
 
-.method protected final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
     .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
 

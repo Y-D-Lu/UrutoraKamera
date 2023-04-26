@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hjx;
+.field public final a:Ldefpackage/hjx;
 
 
 # direct methods

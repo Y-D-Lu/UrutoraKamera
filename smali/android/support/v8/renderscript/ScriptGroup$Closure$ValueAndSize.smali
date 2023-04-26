@@ -17,7 +17,7 @@
 # instance fields
 .field public size:I
 
-.field final synthetic this$1:Landroid/support/v8/renderscript/ScriptGroup$Closure;
+.field public final synthetic this$1:Landroid/support/v8/renderscript/ScriptGroup$Closure;
 
 .field public value:J
 

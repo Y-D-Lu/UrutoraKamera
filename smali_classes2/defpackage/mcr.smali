@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/io/RandomAccessFile;
+.field public final a:Ljava/io/RandomAccessFile;
 
 
 # direct methods

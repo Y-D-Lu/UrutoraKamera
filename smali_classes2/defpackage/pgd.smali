@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ood;
+.field public final a:Ldefpackage/ood;
 
-.field final b:Ldefpackage/pge;
+.field public final b:Ldefpackage/pge;
 
 
 # direct methods

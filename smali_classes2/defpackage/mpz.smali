@@ -8,7 +8,7 @@
 
 .field public final b:Ljava/lang/String;
 
-.field final c:Ldefpackage/mqb;
+.field public final c:Ldefpackage/mqb;
 
 
 # direct methods

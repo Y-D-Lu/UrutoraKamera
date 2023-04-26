@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ozn;
+.field public static final a:Ldefpackage/ozn;
 
-.field static b:Ldefpackage/ozn;
+.field public static b:Ldefpackage/ozn;
 
 .field public static final c:Ldefpackage/ozn;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 42
 
     .line 14

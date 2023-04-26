@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method protected final onReceiveResult(ILandroid/os/Bundle;)V
+.method public final onReceiveResult(ILandroid/os/Bundle;)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "bundle"    # Landroid/os/Bundle;

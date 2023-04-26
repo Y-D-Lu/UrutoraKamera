@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/drt;
+.field public final a:Ldefpackage/drt;
 
 
 # direct methods

@@ -14,7 +14,7 @@
 
 .field public aD:Ljava/lang/ref/WeakReference;
 
-.field final aE:Ljava/util/HashSet;
+.field public final aE:Ljava/util/HashSet;
 
 .field public final aF:Ldefpackage/ys;
 

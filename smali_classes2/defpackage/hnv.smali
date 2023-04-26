@@ -15,7 +15,7 @@
 
 .field public b:Z
 
-.field c:Z
+.field public c:Z
 
 .field private final d:Landroid/content/Context;
 

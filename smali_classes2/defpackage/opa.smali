@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method readResolve()Ljava/lang/Object;
+.method public readResolve()Ljava/lang/Object;
     .locals 5
 
     .line 18

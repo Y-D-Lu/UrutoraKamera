@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/asl;
+.field public final a:Ldefpackage/asl;
 
 .field private b:Ldefpackage/qbz;
 

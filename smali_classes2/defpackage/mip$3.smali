@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$collection:Ljava/util/Collection;
+.field public final synthetic val$collection:Ljava/util/Collection;
 
 
 # direct methods
-.method constructor <init>(Ljava/util/Collection;)V
+.method public constructor <init>(Ljava/util/Collection;)V
     .locals 0
 
     .line 806

@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field public a:Ljava/lang/Object;
 
-.field b:I
+.field public b:I
 
-.field final c:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;
+.field public final c:Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;
 
 
 # direct methods

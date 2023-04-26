@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Landroid/content/IntentFilter;
+.field public final a:Landroid/content/IntentFilter;
 
-.field final b:Landroid/content/BroadcastReceiver;
+.field public final b:Landroid/content/BroadcastReceiver;
 
-.field c:Z
+.field public c:Z
 
-.field d:Z
+.field public d:Z
 
 
 # direct methods

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Iterable;
+.field public final a:Ljava/lang/Iterable;
 
-.field final b:Ldefpackage/npd;
+.field public final b:Ldefpackage/npd;
 
 
 # direct methods

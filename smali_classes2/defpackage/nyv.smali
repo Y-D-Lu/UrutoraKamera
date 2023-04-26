@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+.field public final a:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
 
 # direct methods

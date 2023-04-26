@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 .field private final c:Landroid/content/Context;
 
@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 15

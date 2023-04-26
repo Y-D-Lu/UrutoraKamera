@@ -481,7 +481,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized c()Ldefpackage/max;
+.method public final declared-synchronized c()Ldefpackage/max;
     .locals 15
 
     monitor-enter p0

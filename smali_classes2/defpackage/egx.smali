@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
 # direct methods

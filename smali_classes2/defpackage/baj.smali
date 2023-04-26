@@ -27,7 +27,7 @@
     return-object v0
 .end method
 
-.method protected final b(Landroid/content/res/AssetManager;Ljava/lang/String;)Ljava/lang/Object;
+.method public final b(Landroid/content/res/AssetManager;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
     .param p1, "assetManager"    # Landroid/content/res/AssetManager;
     .param p2, "str"    # Ljava/lang/String;
@@ -61,7 +61,7 @@
     return-object v0
 .end method
 
-.method protected final e(Ljava/lang/Object;)V
+.method public final e(Ljava/lang/Object;)V
     .locals 1
     .param p1, "obj"    # Ljava/lang/Object;
 

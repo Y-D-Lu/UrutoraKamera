@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field protected mData:[I
+.field public mData:[I
 
-.field protected mID:I
+.field public mID:I
 
-.field protected mLength:I
+.field public mLength:I
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/RenderScript;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/RenderScript;
 
 
 # direct methods

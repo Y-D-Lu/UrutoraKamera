@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
 
-.field final synthetic val$a3:Ljava/io/ByteArrayOutputStream;
+.field public final synthetic val$a3:Ljava/io/ByteArrayOutputStream;
 
-.field final synthetic val$dxvVar:Ldefpackage/dxv;
+.field public final synthetic val$dxvVar:Ldefpackage/dxv;
 
-.field final synthetic val$sb5:Ljava/lang/String;
+.field public final synthetic val$sb5:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;Ldefpackage/dxv;Ljava/lang/String;Ljava/io/ByteArrayOutputStream;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;Ldefpackage/dxv;Ljava/lang/String;Ljava/io/ByteArrayOutputStream;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
 

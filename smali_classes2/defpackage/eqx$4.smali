@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/eqx;
+.field public final synthetic this$0:Ldefpackage/eqx;
 
-.field final synthetic val$frameMetadata:Lcom/google/googlex/gcam/FrameMetadata;
+.field public final synthetic val$frameMetadata:Lcom/google/googlex/gcam/FrameMetadata;
 
-.field final synthetic val$madVar:Ldefpackage/mad;
+.field public final synthetic val$madVar:Ldefpackage/mad;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/eqx;Ldefpackage/mad;Lcom/google/googlex/gcam/FrameMetadata;)V
+.method public constructor <init>(Ldefpackage/eqx;Ldefpackage/mad;Lcom/google/googlex/gcam/FrameMetadata;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/eqx;
 

@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field exportAddres:J
+.field public exportAddres:J
 
-.field exportName:Ljava/lang/String;
+.field public exportName:Ljava/lang/String;
 
-.field libName:Ljava/lang/String;
+.field public libName:Ljava/lang/String;
 
-.field libStartAddres:J
+.field public libStartAddres:J
 
 
 # direct methods

@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/hzo;
+.field public final synthetic this$0:Ldefpackage/hzo;
 
-.field final synthetic val$hzzVar:Ldefpackage/hzz;
+.field public final synthetic val$hzzVar:Ldefpackage/hzz;
 
-.field final synthetic val$point:Landroid/graphics/Point;
+.field public final synthetic val$point:Landroid/graphics/Point;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/hzo;Ldefpackage/hzz;Landroid/graphics/Point;)V
+.method public constructor <init>(Ldefpackage/hzo;Ldefpackage/hzz;Landroid/graphics/Point;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/hzo;
 

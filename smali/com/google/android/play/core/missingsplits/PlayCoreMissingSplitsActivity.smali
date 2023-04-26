@@ -178,7 +178,7 @@
     .end packed-switch
 .end method
 
-.method protected final onCreate(Landroid/os/Bundle;)V
+.method public final onCreate(Landroid/os/Bundle;)V
     .locals 5
     .param p1, "bundle"    # Landroid/os/Bundle;
 

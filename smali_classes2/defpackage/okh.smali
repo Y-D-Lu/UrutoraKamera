@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/okm;
+.field public final a:Ldefpackage/okm;
 
 .field private final b:Ljava/util/Map$Entry;
 
@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 18
@@ -39,7 +39,7 @@
     return-object v0
 .end method
 
-.method protected final b()Ljava/util/Map$Entry;
+.method public final b()Ljava/util/Map$Entry;
     .locals 1
 
     .line 23

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/content/ContentValues;
+.field public final a:Landroid/content/ContentValues;
 
 
 # direct methods

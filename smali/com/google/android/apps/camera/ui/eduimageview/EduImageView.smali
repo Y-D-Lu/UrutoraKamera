@@ -163,7 +163,7 @@
     return-void
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 2
 
     .line 59

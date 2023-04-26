@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field final activity:Landroid/app/Activity;
+.field public final activity:Landroid/app/Activity;
 
 .field public mCompanion:Landroidx/window/layout/WindowInfoRepositoryImpl$Companion;
 
 .field private final windowBackend:Landroidx/window/layout/WindowBackend;
 
-.field final windowMetricsCalculator:Landroidx/window/layout/WindowMetricsCalculator;
+.field public final windowMetricsCalculator:Landroidx/window/layout/WindowMetricsCalculator;
 
 
 # direct methods

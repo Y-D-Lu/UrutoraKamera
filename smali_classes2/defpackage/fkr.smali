@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:J
+.field public b:J
 
-.field final c:Ldefpackage/fks;
+.field public final c:Ldefpackage/fks;
 
 
 # direct methods

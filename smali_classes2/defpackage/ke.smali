@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ljava/util/ArrayList;
 
-.field b:Ldefpackage/gp;
+.field public b:Ldefpackage/gp;
 
 .field public c:Z
 

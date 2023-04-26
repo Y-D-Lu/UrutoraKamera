@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/msb;
+.field public final synthetic this$0:Ldefpackage/msb;
 
-.field final synthetic val$surface:Landroid/view/Surface;
+.field public final synthetic val$surface:Landroid/view/Surface;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/msb;Landroid/view/Surface;)V
+.method public constructor <init>(Ldefpackage/msb;Landroid/view/Surface;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/msb;
 

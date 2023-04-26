@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/vr/ndk/base/DaydreamApi;
+.field public final a:Lcom/google/vr/ndk/base/DaydreamApi;
 
 .field private final b:I
 

@@ -11,7 +11,7 @@
 
 .field public b:Ldefpackage/jv;
 
-.field final c:Ldefpackage/jp;
+.field public final c:Ldefpackage/jp;
 
 .field private final f:Landroid/content/Context;
 

@@ -34,7 +34,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 38
@@ -835,7 +835,7 @@
     return v0
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 2
 
     .line 190
@@ -900,7 +900,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 10
     .param p1, "i"    # I
     .param p2, "i2"    # I

@@ -4,19 +4,19 @@
 
 
 # static fields
-.field static final a:Ldefpackage/xl;
+.field public static final a:Ldefpackage/xl;
 
 
 # instance fields
-.field final b:Ljava/lang/Runnable;
+.field public final b:Ljava/lang/Runnable;
 
-.field final c:Ljava/util/concurrent/Executor;
+.field public final c:Ljava/util/concurrent/Executor;
 
-.field next:Ldefpackage/xl;
+.field public next:Ldefpackage/xl;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 8

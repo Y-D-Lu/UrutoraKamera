@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cvo;
+.field public final a:Ldefpackage/cvo;
 
-.field final b:Ldefpackage/exi;
+.field public final b:Ldefpackage/exi;
 
-.field final c:Ldefpackage/jrh;
+.field public final c:Ldefpackage/jrh;
 
 
 # direct methods

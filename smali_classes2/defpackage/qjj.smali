@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field protected final b:Ldefpackage/qym;
+.field public final b:Ldefpackage/qym;
 
-.field protected c:Ljava/lang/Object;
+.field public c:Ljava/lang/Object;
 
 
 # direct methods

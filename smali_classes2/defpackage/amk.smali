@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/amn;
+.field public final a:Ldefpackage/amn;
 
 .field public b:I
 

@@ -344,7 +344,7 @@
 .method public abstract r(I)V
 .end method
 
-.method protected t()Z
+.method public t()Z
     .locals 1
 
     .line 107

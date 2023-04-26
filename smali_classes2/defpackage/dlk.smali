@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldlt;
+.field public final a:Ldlt;
 
-.field final b:Ldefpackage/dll;
+.field public final b:Ldefpackage/dll;
 
 
 # direct methods

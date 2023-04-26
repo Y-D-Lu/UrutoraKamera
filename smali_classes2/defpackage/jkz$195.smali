@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/jkz;
+.field public final synthetic this$0:Ldefpackage/jkz;
 
-.field final synthetic val$biFunction:Ljava/util/function/BiFunction;
+.field public final synthetic val$biFunction:Ljava/util/function/BiFunction;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$i2:I
+.field public final synthetic val$i2:I
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/jkz;Ljava/util/function/BiFunction;II)V
+.method public constructor <init>(Ldefpackage/jkz;Ljava/util/function/BiFunction;II)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/jkz;
 

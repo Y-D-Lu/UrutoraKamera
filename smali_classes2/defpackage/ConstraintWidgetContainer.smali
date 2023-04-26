@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected final af:Ldefpackage/an;
+.field public final af:Ldefpackage/an;
 
-.field ag:I
+.field public ag:I
 
-.field ah:I
+.field public ah:I
 
 .field public ai:I
 

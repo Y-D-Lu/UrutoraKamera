@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:I
+.field public final b:I
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method protected final onBindView(Landroid/view/View;)V
+.method public final onBindView(Landroid/view/View;)V
     .locals 2
     .param p1, "view"    # Landroid/view/View;
 

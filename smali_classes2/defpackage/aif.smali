@@ -8,33 +8,33 @@
 
 
 # instance fields
-.field final a:Ljava/util/HashMap;
+.field public final a:Ljava/util/HashMap;
 
-.field final b:[Ljava/lang/String;
+.field public final b:[Ljava/lang/String;
 
 .field public c:Ljava/util/Map;
 
-.field final d:Ldefpackage/aii;
+.field public final d:Ldefpackage/aii;
 
-.field e:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 .field public volatile f:Z
 
 .field public g:Ldefpackage/aic;
 
-.field final h:Ldefpackage/vd;
+.field public final h:Ldefpackage/vd;
 
-.field i:Ljava/lang/Runnable;
+.field public i:Ljava/lang/Runnable;
 
-.field volatile j:Ldefpackage/ake;
+.field public volatile j:Ldefpackage/ake;
 
-.field k:Ldefpackage/adf;
+.field public k:Ldefpackage/adf;
 
 .field public l:Ldefpackage/fw;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 18

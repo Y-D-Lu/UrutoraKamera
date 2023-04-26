@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$encodedBlobCallback:Lcom/google/googlex/gcam/hdrplus/EncodedBlobCallback;
+.field public final synthetic val$encodedBlobCallback:Lcom/google/googlex/gcam/hdrplus/EncodedBlobCallback;
 
-.field final synthetic val$z:Z
+.field public final synthetic val$z:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/google/googlex/gcam/hdrplus/EncodedBlobCallback;Z)V
+.method public constructor <init>(Lcom/google/googlex/gcam/hdrplus/EncodedBlobCallback;Z)V
     .locals 0
 
     .line 28

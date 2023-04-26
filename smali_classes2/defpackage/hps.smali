@@ -73,7 +73,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 25
@@ -525,7 +525,7 @@
     return-void
 .end method
 
-.method final declared-synchronized F(Landroid/graphics/Bitmap;I)V
+.method public final declared-synchronized F(Landroid/graphics/Bitmap;I)V
     .locals 9
     .param p1, "bitmap"    # Landroid/graphics/Bitmap;
     .param p2, "i"    # I
@@ -709,7 +709,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized H()V
+.method public final declared-synchronized H()V
     .locals 5
 
     monitor-enter p0
@@ -920,7 +920,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized K(Ldefpackage/lif;)V
+.method public final declared-synchronized K(Ldefpackage/lif;)V
     .locals 6
     .param p1, "lifVar"    # Ldefpackage/lif;
 

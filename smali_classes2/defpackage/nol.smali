@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/List;
+.field public final a:Ljava/util/List;
 
-.field final b:Ldefpackage/nom;
+.field public final b:Ldefpackage/nom;
 
-.field final c:Ldefpackage/nrl;
+.field public final c:Ldefpackage/nrl;
 
 .field private final d:I
 

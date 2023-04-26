@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/frc;
+.field public final a:Ldefpackage/frc;
 
 
 # direct methods

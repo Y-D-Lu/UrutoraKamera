@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:I
+.field public b:I
 
-.field c:I
+.field public c:I
 
-.field final d:Ldefpackage/omh;
+.field public final d:Ldefpackage/omh;
 
 
 # direct methods

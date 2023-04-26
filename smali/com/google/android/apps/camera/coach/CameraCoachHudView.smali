@@ -65,7 +65,7 @@
     return v0
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 23
     .param p1, "var1"    # Landroid/graphics/Canvas;
 
@@ -1237,7 +1237,7 @@
     return-void
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 2
 
     .line 199

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gkb;
+.field public final a:Ldefpackage/gkb;
 
 .field private final b:Ldefpackage/gmt;
 

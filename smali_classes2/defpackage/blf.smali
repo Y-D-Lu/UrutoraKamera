@@ -169,7 +169,7 @@
     return-void
 .end method
 
-.method protected abstract l(Ljava/lang/Object;)V
+.method public abstract l(Ljava/lang/Object;)V
 .end method
 
 .method public final m(Landroid/graphics/drawable/Drawable;)V

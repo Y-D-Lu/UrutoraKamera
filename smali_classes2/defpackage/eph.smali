@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/epj;
+.field public final a:Ldefpackage/epj;
 
 
 # direct methods

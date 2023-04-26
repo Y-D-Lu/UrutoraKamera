@@ -12,27 +12,27 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Ldefpackage/dnw$1;
+.field public final synthetic this$1:Ldefpackage/dnw$1;
 
-.field final synthetic val$findViewById4:Landroid/view/View;
+.field public final synthetic val$findViewById4:Landroid/view/View;
 
-.field final synthetic val$frameLayout:Landroid/widget/FrameLayout;
+.field public final synthetic val$frameLayout:Landroid/widget/FrameLayout;
 
-.field final synthetic val$frameLayout5:Landroid/widget/FrameLayout;
+.field public final synthetic val$frameLayout5:Landroid/widget/FrameLayout;
 
-.field final synthetic val$viewGroup:Landroid/view/ViewGroup;
+.field public final synthetic val$viewGroup:Landroid/view/ViewGroup;
 
-.field final synthetic val$viewGroup2:Landroid/view/ViewGroup;
+.field public final synthetic val$viewGroup2:Landroid/view/ViewGroup;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/dnw$1;Landroid/widget/FrameLayout;Landroid/view/ViewGroup;Landroid/widget/FrameLayout;Landroid/view/ViewGroup;Landroid/view/View;)V
+.method public constructor <init>(Ldefpackage/dnw$1;Landroid/widget/FrameLayout;Landroid/view/ViewGroup;Landroid/widget/FrameLayout;Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 0
     .param p1, "this$1"    # Ldefpackage/dnw$1;
 

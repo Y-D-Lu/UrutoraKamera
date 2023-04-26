@@ -10,7 +10,7 @@
 
 .field public static final a:Ldefpackage/ouj;
 
-.field static final b:I
+.field public static final b:I
 
 
 # instance fields
@@ -82,7 +82,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 41
@@ -735,7 +735,7 @@
     return-void
 .end method
 
-.method final k(Ljava/lang/Runnable;)V
+.method public final k(Ljava/lang/Runnable;)V
     .locals 1
     .param p1, "runnable"    # Ljava/lang/Runnable;
 
@@ -1439,7 +1439,7 @@
     throw v0
 .end method
 
-.method final o()Z
+.method public final o()Z
     .locals 2
 
     .line 319

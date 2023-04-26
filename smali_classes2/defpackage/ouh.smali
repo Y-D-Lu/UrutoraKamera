@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ouj;
+.field public final a:Ldefpackage/ouj;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method protected final c()Ldefpackage/oue;
+.method public final c()Ldefpackage/oue;
     .locals 1
 
     .line 19
@@ -37,7 +37,7 @@
     return-object v0
 .end method
 
-.method protected final d()Ldefpackage/ova;
+.method public final d()Ldefpackage/ova;
     .locals 0
 
     .line 24

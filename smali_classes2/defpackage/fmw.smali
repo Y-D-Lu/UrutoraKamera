@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Executor;
+.field public final a:Ljava/util/concurrent/Executor;
 
-.field final b:Ldefpackage/fb;
+.field public final b:Ldefpackage/fb;
 
-.field final c:Ldefpackage/lmr;
+.field public final c:Ldefpackage/lmr;
 
 
 # direct methods

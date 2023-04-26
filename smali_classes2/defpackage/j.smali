@@ -4,21 +4,21 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ljava/lang/Number;
+.field public final c:Ljava/lang/Number;
 
-.field final d:D
+.field public final d:D
 
-.field e:I
+.field public e:I
 
-.field f:Ljava/text/Format;
+.field public f:Ljava/text/Format;
 
-.field g:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
-.field h:Z
+.field public h:Z
 
 
 # direct methods

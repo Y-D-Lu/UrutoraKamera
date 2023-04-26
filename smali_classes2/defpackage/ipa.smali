@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lar;
+.field public final a:Ldefpackage/lar;
 
-.field final b:Ldefpackage/ipx;
+.field public final b:Ldefpackage/ipx;
 
-.field final c:Ldefpackage/gvb;
+.field public final c:Ldefpackage/gvb;
 
-.field final d:Ldefpackage/elw;
+.field public final d:Ldefpackage/elw;
 
-.field final e:Landroid/content/Context;
+.field public final e:Landroid/content/Context;
 
-.field final f:Ldefpackage/ddf;
+.field public final f:Ldefpackage/ddf;
 
-.field final g:Ldefpackage/ipf;
+.field public final g:Ldefpackage/ipf;
 
 
 # direct methods

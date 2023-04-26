@@ -71,7 +71,7 @@
     return-void
 .end method
 
-.method protected final m()V
+.method public final m()V
     .locals 1
 
     .line 30

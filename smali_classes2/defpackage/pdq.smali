@@ -7,47 +7,47 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ppi;
+.field public static final a:Ldefpackage/ppi;
 
-.field static final b:Ldefpackage/ppi;
+.field public static final b:Ldefpackage/ppi;
 
-.field static final c:Ldefpackage/ppi;
+.field public static final c:Ldefpackage/ppi;
 
-.field static final d:Ldefpackage/ppi;
+.field public static final d:Ldefpackage/ppi;
 
-.field static final e:Ldefpackage/ppi;
+.field public static final e:Ldefpackage/ppi;
 
-.field static final f:Ldefpackage/ppi;
+.field public static final f:Ldefpackage/ppi;
 
-.field static final g:Ldefpackage/ppi;
+.field public static final g:Ldefpackage/ppi;
 
-.field static final h:Ldefpackage/ppi;
+.field public static final h:Ldefpackage/ppi;
 
-.field static final i:Ldefpackage/ppi;
+.field public static final i:Ldefpackage/ppi;
 
-.field static final j:Ldefpackage/ppi;
+.field public static final j:Ldefpackage/ppi;
 
-.field static final k:Ldefpackage/ppi;
+.field public static final k:Ldefpackage/ppi;
 
-.field static final l:Ldefpackage/ppi;
+.field public static final l:Ldefpackage/ppi;
 
-.field static final m:Ldefpackage/ppi;
+.field public static final m:Ldefpackage/ppi;
 
-.field static final n:Ldefpackage/ppi;
+.field public static final n:Ldefpackage/ppi;
 
-.field static final o:Ldefpackage/ppi;
+.field public static final o:Ldefpackage/ppi;
 
-.field static final p:Ldefpackage/ppi;
+.field public static final p:Ldefpackage/ppi;
 
-.field static final q:Ldefpackage/ppi;
+.field public static final q:Ldefpackage/ppi;
 
-.field static final r:Ldefpackage/ppi;
+.field public static final r:Ldefpackage/ppi;
 
-.field static final s:Ldefpackage/ppi;
+.field public static final s:Ldefpackage/ppi;
 
-.field static final t:Ldefpackage/ppi;
+.field public static final t:Ldefpackage/ppi;
 
-.field static final u:Ldefpackage/ppi;
+.field public static final u:Ldefpackage/ppi;
 
 
 # instance fields
@@ -55,7 +55,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 7

@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/CountDownLatch;
+.field public final a:Ljava/util/concurrent/CountDownLatch;
 
-.field final b:Ljava/util/concurrent/CountDownLatch;
+.field public final b:Ljava/util/concurrent/CountDownLatch;
 
 .field private d:Z
 
@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 21

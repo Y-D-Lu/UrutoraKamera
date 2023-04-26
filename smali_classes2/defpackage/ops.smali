@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field final b:Ljava/util/Iterator;
+.field public final b:Ljava/util/Iterator;
 
 
 # direct methods

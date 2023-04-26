@@ -878,7 +878,7 @@
     .end packed-switch
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 2
 
     .line 177
@@ -945,7 +945,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 8
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -1118,7 +1118,7 @@
     .end sparse-switch
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 2
     .param p1, "r9"    # I
     .param p2, "r10"    # I

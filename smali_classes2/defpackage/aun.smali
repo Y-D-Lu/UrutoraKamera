@@ -10,7 +10,7 @@
 
 .field public c:J
 
-.field final d:Ldefpackage/aup;
+.field public final d:Ldefpackage/aup;
 
 
 # direct methods

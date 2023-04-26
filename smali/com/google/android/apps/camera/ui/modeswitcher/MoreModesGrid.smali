@@ -27,7 +27,7 @@
 
 .field public h:Landroid/animation/Animator;
 
-.field i:I
+.field public i:I
 
 .field public j:I
 
@@ -43,7 +43,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 5
 
     .line 53
@@ -853,7 +853,7 @@
     goto :goto_0
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 3
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -923,7 +923,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 3
     .param p1, "i"    # I
     .param p2, "i2"    # I

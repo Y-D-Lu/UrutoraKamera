@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/view/rz;
+.field public final a:Landroid/view/rz;
 
-.field final b:Landroid/view/ry;
+.field public final b:Landroid/view/ry;
 
 
 # direct methods

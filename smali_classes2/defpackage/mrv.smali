@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field final a:Landroid/media/MediaCodec;
+.field public final a:Landroid/media/MediaCodec;
 
 .field public final b:Ljava/nio/ByteBuffer;
 
 .field public final c:Landroid/media/MediaCodec$BufferInfo;
 
-.field final d:Landroid/media/MediaCodec$LinearBlock;
+.field public final d:Landroid/media/MediaCodec$LinearBlock;
 
-.field final e:I
+.field public final e:I
 
-.field final f:Ldefpackage/mrx;
+.field public final f:Ldefpackage/mrx;
 
 
 # direct methods

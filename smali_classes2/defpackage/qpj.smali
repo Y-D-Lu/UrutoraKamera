@@ -64,7 +64,7 @@
     return-void
 .end method
 
-.method protected final k()Z
+.method public final k()Z
     .locals 1
 
     .line 30

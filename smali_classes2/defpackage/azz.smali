@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method protected abstract b(Landroid/content/res/AssetManager;Ljava/lang/String;)Ljava/lang/Object;
+.method public abstract b(Landroid/content/res/AssetManager;Ljava/lang/String;)Ljava/lang/Object;
 .end method
 
 .method public final d()V
@@ -72,7 +72,7 @@
     return-void
 .end method
 
-.method protected abstract e(Ljava/lang/Object;)V
+.method public abstract e(Ljava/lang/Object;)V
 .end method
 
 .method public final f(Ldefpackage/ayc;Ldefpackage/bab;)V

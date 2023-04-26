@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/view/ViewGroup;
+.field public final a:Landroid/view/ViewGroup;
 
 
 # direct methods

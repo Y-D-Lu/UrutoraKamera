@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bly;
+.field public final a:Ldefpackage/bly;
 
 .field private volatile b:Ljava/lang/Object;
 

@@ -12,37 +12,37 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/bsr;
+.field public final synthetic this$0:Ldefpackage/bsr;
 
-.field final synthetic val$bodVar:Ldefpackage/bod;
+.field public final synthetic val$bodVar:Ldefpackage/bod;
 
-.field final synthetic val$booleanValue:Z
+.field public final synthetic val$booleanValue:Z
 
-.field final synthetic val$ddfVar:Ldefpackage/ddf;
+.field public final synthetic val$ddfVar:Ldefpackage/ddf;
 
-.field final synthetic val$fkhVar:Ldefpackage/fkh;
+.field public final synthetic val$fkhVar:Ldefpackage/fkh;
 
-.field final synthetic val$fkjVar:Ldefpackage/fkj;
+.field public final synthetic val$fkjVar:Ldefpackage/fkj;
 
-.field final synthetic val$fkyVar:Ldefpackage/fky;
+.field public final synthetic val$fkyVar:Ldefpackage/fky;
 
-.field final synthetic val$flbVar:Ldefpackage/flb;
+.field public final synthetic val$flbVar:Ldefpackage/flb;
 
-.field final synthetic val$hycVar:Ldefpackage/hyc;
+.field public final synthetic val$hycVar:Ldefpackage/hyc;
 
-.field final synthetic val$ldaVar:Llda;
+.field public final synthetic val$ldaVar:Llda;
 
-.field final synthetic val$mo37get:Ldefpackage/bqg;
+.field public final synthetic val$mo37get:Ldefpackage/bqg;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/bsr;Ldefpackage/ddf;Ldefpackage/hyc;Ldefpackage/fkh;ZLdefpackage/fkj;Ldefpackage/flb;Ldefpackage/fky;Ldefpackage/bqg;Llda;Ldefpackage/bod;)V
+.method public constructor <init>(Ldefpackage/bsr;Ldefpackage/ddf;Ldefpackage/hyc;Ldefpackage/fkh;ZLdefpackage/fkj;Ldefpackage/flb;Ldefpackage/fky;Ldefpackage/bqg;Llda;Ldefpackage/bod;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/bsr;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lho;
+.field public final a:Ldefpackage/lho;
 
 
 # direct methods

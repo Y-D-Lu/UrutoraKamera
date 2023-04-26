@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/app/job/JobParameters;
+.field public final a:Landroid/app/job/JobParameters;
 
-.field final b:Ldefpackage/kqp;
+.field public final b:Ldefpackage/kqp;
 
 
 # direct methods

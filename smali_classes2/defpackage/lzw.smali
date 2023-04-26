@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/lzx;
+.field public final a:Ldefpackage/lzx;
 
 
 # direct methods

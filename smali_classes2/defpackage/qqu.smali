@@ -286,7 +286,7 @@
     return-void
 .end method
 
-.method protected j()V
+.method public j()V
     .locals 1
 
     .line 75

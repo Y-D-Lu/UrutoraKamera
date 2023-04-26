@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lis;
+.field public final a:Ldefpackage/lis;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
 
 # direct methods

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/lig;
+.field public final a:Ldefpackage/lig;
 
-.field protected final b:I
+.field public final b:I
 
 .field private final i:Ldefpackage/ljf;
 
@@ -39,7 +39,7 @@
     return-void
 .end method
 
-.method protected static a(IIIIIIII)I
+.method public static a(IIIIIIII)I
     .locals 2
     .param p0, "i"    # I
     .param p1, "i2"    # I
@@ -76,7 +76,7 @@
     return v0
 .end method
 
-.method protected static final d(II)I
+.method public static final d(II)I
     .locals 1
     .param p0, "i"    # I
     .param p1, "i2"    # I
@@ -111,7 +111,7 @@
     return-void
 .end method
 
-.method protected static final g(Ldefpackage/mad;Landroid/graphics/Rect;IZ)[I
+.method public static final g(Ldefpackage/mad;Landroid/graphics/Rect;IZ)[I
     .locals 71
     .param p0, "madVar"    # Ldefpackage/mad;
     .param p1, "rect"    # Landroid/graphics/Rect;

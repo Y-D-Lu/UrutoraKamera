@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "Plane"
 .end annotation
 
@@ -20,7 +20,7 @@
 # instance fields
 .field private final a:Ldefpackage/mac;
 
-.field final synthetic this$0:Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;
 
 
 # direct methods

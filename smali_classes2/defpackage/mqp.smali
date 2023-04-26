@@ -39,7 +39,7 @@
     return-void
 .end method
 
-.method protected final c()V
+.method public final c()V
     .locals 4
 
     .line 21

@@ -8,17 +8,17 @@
 
 
 # instance fields
-.field a:Landroid/os/Bundle;
+.field public a:Landroid/os/Bundle;
 
-.field b:[Ldefpackage/khk;
+.field public b:[Ldefpackage/khk;
 
-.field c:I
+.field public c:I
 
 .field public d:Ldefpackage/kmi;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 10

@@ -13,17 +13,17 @@
 
 
 # instance fields
-.field final a:Ljava/io/DataInputStream;
+.field public final a:Ljava/io/DataInputStream;
 
 .field public b:Ljava/nio/ByteOrder;
 
-.field c:I
+.field public c:I
 
 .field private f:[B
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 14

@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/nlh;
+.field public final synthetic this$0:Ldefpackage/nlh;
 
-.field final synthetic val$hashMap:Ljava/util/HashMap;
+.field public final synthetic val$hashMap:Ljava/util/HashMap;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/nlh;Ljava/util/HashMap;)V
+.method public constructor <init>(Ldefpackage/nlh;Ljava/util/HashMap;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/nlh;
 

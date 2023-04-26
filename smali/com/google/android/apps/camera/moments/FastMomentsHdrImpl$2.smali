@@ -12,31 +12,31 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
 
-.field final synthetic val$a:Lcom/google/googlex/gcam/NormalizedRect;
+.field public final synthetic val$a:Lcom/google/googlex/gcam/NormalizedRect;
 
-.field final synthetic val$f:Landroid/hardware/HardwareBuffer;
+.field public final synthetic val$f:Landroid/hardware/HardwareBuffer;
 
-.field final synthetic val$geoVar:Ldefpackage/geo;
+.field public final synthetic val$geoVar:Ldefpackage/geo;
 
-.field final synthetic val$gepVar:Ldefpackage/gep;
+.field public final synthetic val$gepVar:Ldefpackage/gep;
 
-.field final synthetic val$gerVar:Ldefpackage/ger;
+.field public final synthetic val$gerVar:Ldefpackage/ger;
 
-.field final synthetic val$madVar:Ldefpackage/mad;
+.field public final synthetic val$madVar:Ldefpackage/mad;
 
-.field final synthetic val$shotMetadata:Lcom/google/googlex/gcam/ShotMetadata;
+.field public final synthetic val$shotMetadata:Lcom/google/googlex/gcam/ShotMetadata;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;Ldefpackage/mad;Ldefpackage/ger;Lcom/google/googlex/gcam/NormalizedRect;Lcom/google/googlex/gcam/ShotMetadata;Ldefpackage/gep;Landroid/hardware/HardwareBuffer;Ldefpackage/geo;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;Ldefpackage/mad;Ldefpackage/ger;Lcom/google/googlex/gcam/NormalizedRect;Lcom/google/googlex/gcam/ShotMetadata;Ldefpackage/gep;Landroid/hardware/HardwareBuffer;Ldefpackage/geo;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
 

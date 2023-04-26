@@ -10,11 +10,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/ConcurrentHashMap;
+.field public final a:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 12
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 11
@@ -54,7 +54,7 @@
     return-void
 .end method
 
-.method static a(Ljava/lang/String;)Ljava/lang/String;
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
     .param p0, "str"    # Ljava/lang/String;
 

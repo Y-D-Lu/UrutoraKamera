@@ -25,13 +25,13 @@
 # instance fields
 .field public h:F
 
-.field i:F
+.field public i:F
 
-.field j:Z
+.field public j:Z
 
-.field final k:Ljava/lang/Object;
+.field public final k:Ljava/lang/Object;
 
-.field final l:Ldefpackage/acw;
+.field public final l:Ldefpackage/acw;
 
 .field public m:Z
 
@@ -51,7 +51,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 13
@@ -490,7 +490,7 @@
     return-object v0
 .end method
 
-.method final d(F)V
+.method public final d(F)V
     .locals 8
     .param p1, "f2"    # F
 

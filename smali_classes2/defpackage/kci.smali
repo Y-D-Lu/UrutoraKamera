@@ -7,11 +7,11 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ppi;
+.field public static final a:Ldefpackage/ppi;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10

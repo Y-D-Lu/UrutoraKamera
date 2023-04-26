@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Landroid/view/inputmethod/InputContentInfo;
+.field public final a:Landroid/view/inputmethod/InputContentInfo;
 
 
 # direct methods

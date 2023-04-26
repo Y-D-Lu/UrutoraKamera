@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/hub;
+.field public final a:Ldefpackage/hub;
 
-.field protected final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
 
 # direct methods

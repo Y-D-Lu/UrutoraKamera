@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected b()Ljava/util/Collection;
+.method public b()Ljava/util/Collection;
     .locals 1
 
     .line 11
@@ -27,7 +27,7 @@
     throw v0
 .end method
 
-.method protected abstract d()Ljava/util/Queue;
+.method public abstract d()Ljava/util/Queue;
 .end method
 
 .method public final element()Ljava/lang/Object;

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pxl;
+.field public final a:Ldefpackage/pxl;
 
 
 # direct methods

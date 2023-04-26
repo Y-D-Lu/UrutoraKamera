@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 2
     .param p1, "i"    # I
     .param p2, "parcel"    # Landroid/os/Parcel;

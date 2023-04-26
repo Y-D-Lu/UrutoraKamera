@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
 .field public final b:Ldefpackage/zs;
 
@@ -16,7 +16,7 @@
 
 .field public f:Ljava/util/HashMap;
 
-.field g:Ldefpackage/zo;
+.field public g:Ldefpackage/zo;
 
 
 # direct methods

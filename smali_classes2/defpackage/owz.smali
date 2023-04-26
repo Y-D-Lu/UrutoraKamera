@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 11
@@ -83,7 +83,7 @@
     return-object v0
 .end method
 
-.method static q()Ljava/lang/String;
+.method public static q()Ljava/lang/String;
     .locals 2
 
     .line 32
@@ -156,7 +156,7 @@
 
 
 # virtual methods
-.method protected e(Ljava/lang/String;)Ldefpackage/ovr;
+.method public e(Ljava/lang/String;)Ldefpackage/ovr;
     .locals 4
     .param p1, "str"    # Ljava/lang/String;
 
@@ -220,7 +220,7 @@
     return-object v1
 .end method
 
-.method protected h()Ldefpackage/owo;
+.method public h()Ldefpackage/owo;
     .locals 1
 
     .line 64
@@ -229,7 +229,7 @@
     return-object v0
 .end method
 
-.method protected j()Ldefpackage/oxh;
+.method public j()Ldefpackage/oxh;
     .locals 1
 
     .line 69
@@ -238,7 +238,7 @@
     return-object v0
 .end method
 
-.method protected m()Ljava/lang/String;
+.method public m()Ljava/lang/String;
     .locals 1
 
     .line 74

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/imj;
+.field public final a:Ldefpackage/imj;
 
 
 # direct methods

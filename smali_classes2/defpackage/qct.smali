@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field a:Ljava/util/List;
+.field public a:Ljava/util/List;
 
-.field volatile b:Z
+.field public volatile b:Z
 
 
 # direct methods

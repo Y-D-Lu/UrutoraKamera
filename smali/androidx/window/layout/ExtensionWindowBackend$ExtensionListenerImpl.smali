@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final this$0:Landroidx/window/layout/ExtensionWindowBackend;
+.field public final this$0:Landroidx/window/layout/ExtensionWindowBackend;
 
-.field final synthetic this$0$:Landroidx/window/layout/ExtensionWindowBackend;
+.field public final synthetic this$0$:Landroidx/window/layout/ExtensionWindowBackend;
 
 
 # direct methods

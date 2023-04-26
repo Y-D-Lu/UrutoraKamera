@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:J
+.field public a:J
 
-.field b:Ldefpackage/nx;
+.field public b:Ldefpackage/nx;
 
 
 # direct methods

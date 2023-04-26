@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/material/behavior/SwipeDismissBehavior;
+.field public final a:Lcom/google/android/material/behavior/SwipeDismissBehavior;
 
 .field private b:I
 

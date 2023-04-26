@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hsp;
+.field public final a:Ldefpackage/hsp;
 
-.field b:Ldefpackage/gbp;
+.field public b:Ldefpackage/gbp;
 
 .field public final c:Ldefpackage/gfe;
 
-.field d:Ldefpackage/orj;
+.field public d:Ldefpackage/orj;
 
-.field e:Z
+.field public e:Z
 
 .field public final f:Z
 

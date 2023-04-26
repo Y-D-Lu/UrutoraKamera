@@ -8,47 +8,47 @@
 
 
 # static fields
-.field static final a:[Ldefpackage/qfw;
+.field public static final a:[Ldefpackage/qfw;
 
-.field static final b:[Ldefpackage/qfw;
+.field public static final b:[Ldefpackage/qfw;
 
 .field private static final serialVersionUID:J = -0x1d634c9cafb5cc5aL
 
 
 # instance fields
-.field final c:Ldefpackage/qbq;
+.field public final c:Ldefpackage/qbq;
 
-.field final d:Z
+.field public final d:Z
 
-.field final e:I
+.field public final e:I
 
-.field final f:I
+.field public final f:I
 
-.field volatile g:Ldefpackage/qdk;
+.field public volatile g:Ldefpackage/qdk;
 
-.field volatile h:Z
+.field public volatile h:Z
 
-.field final i:Ldefpackage/qjo;
+.field public final i:Ldefpackage/qjo;
 
-.field volatile j:Z
+.field public volatile j:Z
 
-.field final k:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final k:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field l:Ldefpackage/qbz;
+.field public l:Ldefpackage/qbz;
 
-.field m:J
+.field public m:J
 
-.field n:J
+.field public n:J
 
-.field o:I
+.field public o:I
 
-.field final p:Ljava/util/Queue;
+.field public final p:Ljava/util/Queue;
 
-.field q:I
+.field public q:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 12
@@ -414,7 +414,7 @@
     throw v0
 .end method
 
-.method final h(Ldefpackage/qfw;)V
+.method public final h(Ldefpackage/qfw;)V
     .locals 7
     .param p1, "qfwVar"    # Ldefpackage/qfw;
 
@@ -534,7 +534,7 @@
     goto :goto_0
 .end method
 
-.method final i(Ldefpackage/qbp;)V
+.method public final i(Ldefpackage/qbp;)V
     .locals 2
     .param p1, "r7"    # Ldefpackage/qbp;
 
@@ -548,7 +548,7 @@
     throw v0
 .end method
 
-.method final j()Z
+.method public final j()Z
     .locals 3
 
     .line 274

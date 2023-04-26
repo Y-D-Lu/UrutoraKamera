@@ -8,7 +8,7 @@
 
 .field private mID:J
 
-.field mRS:Landroid/support/v8/renderscript/RenderScript;
+.field public mRS:Landroid/support/v8/renderscript/RenderScript;
 
 
 # direct methods

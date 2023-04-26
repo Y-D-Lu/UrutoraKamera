@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 13
@@ -323,7 +323,7 @@
     return-void
 .end method
 
-.method protected final onLevelChange(I)Z
+.method public final onLevelChange(I)Z
     .locals 4
     .param p1, "i"    # I
 

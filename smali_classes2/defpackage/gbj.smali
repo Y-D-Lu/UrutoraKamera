@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final a:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field final b:Ldefpackage/gbg;
+.field public final b:Ldefpackage/gbg;
 
 
 # direct methods

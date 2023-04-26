@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected b:Ldefpackage/dj;
+.field public b:Ldefpackage/dj;
 
 
 # direct methods

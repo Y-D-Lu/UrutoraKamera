@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/igq;
+.field public final a:Ldefpackage/igq;
 
 
 # direct methods

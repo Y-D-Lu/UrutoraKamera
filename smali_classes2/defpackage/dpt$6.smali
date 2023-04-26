@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/dpt;
+.field public final synthetic this$0:Ldefpackage/dpt;
 
-.field final synthetic val$dpsVar:Ldefpackage/dps;
+.field public final synthetic val$dpsVar:Ldefpackage/dps;
 
-.field final synthetic val$textureFrame:Lcom/google/mediapipe/framework/TextureFrame;
+.field public final synthetic val$textureFrame:Lcom/google/mediapipe/framework/TextureFrame;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/dpt;Ldefpackage/dps;Lcom/google/mediapipe/framework/TextureFrame;)V
+.method public constructor <init>(Ldefpackage/dpt;Ldefpackage/dps;Lcom/google/mediapipe/framework/TextureFrame;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/dpt;
 

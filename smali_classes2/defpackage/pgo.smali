@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pgq;
+.field public final a:Ldefpackage/pgq;
 
 .field private final c:Ljava/util/concurrent/Callable;
 

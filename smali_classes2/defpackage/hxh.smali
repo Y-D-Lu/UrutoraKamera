@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hxi;
+.field public final a:Ldefpackage/hxi;
 
-.field final b:Ldefpackage/hxj;
+.field public final b:Ldefpackage/hxj;
 
 
 # direct methods

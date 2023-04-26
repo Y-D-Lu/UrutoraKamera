@@ -4,19 +4,19 @@
 
 
 # static fields
-.field static final a:Landroid/animation/TimeInterpolator;
+.field public static final a:Landroid/animation/TimeInterpolator;
 
-.field static final b:[I
+.field public static final b:[I
 
-.field static final c:[I
+.field public static final c:[I
 
-.field static final d:[I
+.field public static final d:[I
 
-.field static final e:[I
+.field public static final e:[I
 
-.field static final f:[I
+.field public static final f:[I
 
-.field static final g:[I
+.field public static final g:[I
 
 
 # instance fields
@@ -66,11 +66,11 @@
 
 .field public y:Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
-.field final z:Ldefpackage/nyv;
+.field public final z:Ldefpackage/nyv;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 30

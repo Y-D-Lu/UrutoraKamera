@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ewb;
+.field public final a:Ldefpackage/ewb;
 
 
 # direct methods

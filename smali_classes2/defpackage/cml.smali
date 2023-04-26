@@ -36,7 +36,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10
@@ -385,7 +385,7 @@
     throw v0
 .end method
 
-.method final declared-synchronized j(JJ)V
+.method public final declared-synchronized j(JJ)V
     .locals 20
     .param p1, "j"    # J
     .param p3, "j2"    # J

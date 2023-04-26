@@ -11,7 +11,7 @@
 
 .field public d:Ldefpackage/yk;
 
-.field e:Ldefpackage/zd;
+.field public e:Ldefpackage/zd;
 
 .field public final f:Ldefpackage/yy;
 
@@ -23,9 +23,9 @@
 
 .field public final j:Ldefpackage/yx;
 
-.field protected k:I
+.field public k:I
 
-.field protected l:I
+.field public l:I
 
 
 # direct methods

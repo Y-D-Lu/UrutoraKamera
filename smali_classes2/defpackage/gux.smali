@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Executor;
+.field public final a:Ljava/util/concurrent/Executor;
 
-.field final b:Ldefpackage/lij;
+.field public final b:Ldefpackage/lij;
 
-.field final c:Ldefpackage/guz;
+.field public final c:Ldefpackage/guz;
 
 
 # direct methods

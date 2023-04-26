@@ -4,11 +4,11 @@
 
 
 # static fields
-.field protected static API2_Analog_ISO:I = 0x0
+.field public static API2_Analog_ISO:I = 0x0
 
-.field protected static API2_EXP:J = 0x0L
+.field public static API2_EXP:J = 0x0L
 
-.field protected static API2_ISO:I = 0x0
+.field public static API2_ISO:I = 0x0
 
 .field private static final CROP_1_23:F = 5.6f
 
@@ -44,7 +44,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 14

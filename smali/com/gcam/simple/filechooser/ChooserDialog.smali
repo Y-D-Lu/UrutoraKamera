@@ -16,9 +16,9 @@
 
 
 # static fields
-.field static a:Ljava/io/FileFilter;
+.field public static a:Ljava/io/FileFilter;
 
-.field static b:Ljava/io/FileFilter;
+.field public static b:Ljava/io/FileFilter;
 
 
 # instance fields
@@ -42,7 +42,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 26

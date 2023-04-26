@@ -7,19 +7,19 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Z
+.field public final b:Z
 
-.field final c:Lcom/google/googlex/gcam/ShotMetadata;
+.field public final c:Lcom/google/googlex/gcam/ShotMetadata;
 
-.field final d:I
+.field public final d:I
 
-.field final e:Ldefpackage/hsa;
+.field public final e:Ldefpackage/hsa;
 
-.field final f:Ldefpackage/edu;
+.field public final f:Ldefpackage/edu;
 
-.field final g:Ldefpackage/msq;
+.field public final g:Ldefpackage/msq;
 
 
 # direct methods

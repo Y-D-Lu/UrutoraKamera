@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method protected abstract d()Ljava/lang/String;
+.method public abstract d()Ljava/lang/String;
 .end method
 
 .method public final e()Ldefpackage/ake;

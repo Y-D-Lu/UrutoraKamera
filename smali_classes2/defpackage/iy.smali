@@ -22,13 +22,13 @@
 
 .field public B:Z
 
-.field C:Z
+.field public C:Z
 
 .field public D:I
 
-.field E:Z
+.field public E:Z
 
-.field F:I
+.field public F:I
 
 .field public G:Landroid/graphics/Rect;
 
@@ -70,7 +70,7 @@
 
 .field public final e:Ljava/lang/Object;
 
-.field final f:Landroid/content/Context;
+.field public final f:Landroid/content/Context;
 
 .field public g:Landroid/view/Window;
 
@@ -82,41 +82,41 @@
 
 .field public k:Ldefpackage/nz;
 
-.field l:Ldefpackage/jw;
+.field public l:Ldefpackage/jw;
 
-.field m:Landroid/support/v7/widget/ActionBarContextView;
+.field public m:Landroid/support/v7/widget/ActionBarContextView;
 
 .field public n:Landroid/widget/PopupWindow;
 
 .field public o:Ljava/lang/Runnable;
 
-.field p:Ldefpackage/go;
+.field public p:Ldefpackage/go;
 
 .field public q:Z
 
 .field public r:Z
 
-.field s:Landroid/view/ViewGroup;
+.field public s:Landroid/view/ViewGroup;
 
 .field public t:Landroid/view/View;
 
-.field u:Z
+.field public u:Z
 
-.field v:Z
+.field public v:Z
 
 .field private varR:Z
 
-.field w:Z
+.field public w:Z
 
-.field x:Z
+.field public x:Z
 
-.field y:Z
+.field public y:Z
 
 .field public z:Ldefpackage/iw;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 57

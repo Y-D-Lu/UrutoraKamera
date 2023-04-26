@@ -8,27 +8,27 @@
 
 
 # instance fields
-.field b:Landroid/graphics/Paint;
+.field public b:Landroid/graphics/Paint;
 
-.field c:Landroid/graphics/Paint;
+.field public c:Landroid/graphics/Paint;
 
-.field final d:Ldefpackage/akl;
+.field public final d:Ldefpackage/akl;
 
-.field e:F
+.field public e:F
 
-.field f:F
+.field public f:F
 
-.field g:F
+.field public g:F
 
-.field h:F
+.field public h:F
 
-.field i:I
+.field public i:I
 
-.field j:Ljava/lang/String;
+.field public j:Ljava/lang/String;
 
-.field k:Ljava/lang/Boolean;
+.field public k:Ljava/lang/Boolean;
 
-.field final l:Ldefpackage/wy;
+.field public final l:Ldefpackage/wy;
 
 .field private final m:Landroid/graphics/Path;
 
@@ -42,7 +42,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 16

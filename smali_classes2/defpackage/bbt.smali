@@ -8,7 +8,7 @@
 
 .field public b:I
 
-.field final c:Ldefpackage/bbw;
+.field public final c:Ldefpackage/bbw;
 
 
 # direct methods

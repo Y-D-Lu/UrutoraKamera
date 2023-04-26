@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lgcf;
+.field public final a:Lgcf;
 
 .field private final b:I
 

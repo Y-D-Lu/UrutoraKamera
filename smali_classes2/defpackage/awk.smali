@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/awq;
+.field public final a:Ldefpackage/awq;
 
-.field final b:Ldefpackage/awl;
+.field public final b:Ldefpackage/awl;
 
 .field private final c:I
 

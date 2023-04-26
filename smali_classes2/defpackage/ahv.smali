@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Callable;
+.field public final a:Ljava/util/concurrent/Callable;
 
 
 # direct methods

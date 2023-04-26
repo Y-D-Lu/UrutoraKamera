@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/support/v7/widget/RecyclerView;
+.field public final a:Landroid/support/v7/widget/RecyclerView;
 
 .field private final b:I
 

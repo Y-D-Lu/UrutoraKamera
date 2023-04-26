@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gog;
+.field public final a:Ldefpackage/gog;
 
-.field final b:Ldefpackage/hef;
+.field public final b:Ldefpackage/hef;
 
 
 # direct methods

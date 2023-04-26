@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;
+.field public final a:Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;
 
-.field final b:Ldefpackage/fyg;
+.field public final b:Ldefpackage/fyg;
 
 
 # direct methods

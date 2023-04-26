@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final c:I
+.field public final c:I
 
-.field final d:Ljava/lang/Object;
+.field public final d:Ljava/lang/Object;
 
 
 # direct methods

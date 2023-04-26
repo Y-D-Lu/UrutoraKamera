@@ -215,7 +215,7 @@
     return-object v0
 .end method
 
-.method final B(Ljava/lang/Class;Ldefpackage/azx;Z)Ldefpackage/bko;
+.method public final B(Ljava/lang/Class;Ldefpackage/azx;Z)Ldefpackage/bko;
     .locals 4
     .param p1, "cls"    # Ljava/lang/Class;
     .param p2, "azxVar"    # Ldefpackage/azx;
@@ -2041,7 +2041,7 @@
     return-object v0
 .end method
 
-.method final z(Ldefpackage/azx;Z)Ldefpackage/bko;
+.method public final z(Ldefpackage/azx;Z)Ldefpackage/bko;
     .locals 3
     .param p1, "azxVar"    # Ldefpackage/azx;
     .param p2, "z"    # Z

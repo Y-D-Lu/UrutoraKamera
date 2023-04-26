@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field a:Ldefpackage/aqa;
+.field public a:Ldefpackage/aqa;
 
 .field public b:Landroid/app/NotificationManager;
 
@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 31

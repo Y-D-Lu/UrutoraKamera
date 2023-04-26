@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lap;
+.field public final a:Ldefpackage/lap;
 
 
 # direct methods

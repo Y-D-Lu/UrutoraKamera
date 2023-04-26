@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Class;
+.field public final a:Ljava/lang/Class;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
 
 # direct methods

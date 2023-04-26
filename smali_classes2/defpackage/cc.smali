@@ -477,7 +477,7 @@
     return-object p1
 .end method
 
-.method protected final dispatchDraw(Landroid/graphics/Canvas;)V
+.method public final dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 4
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -531,7 +531,7 @@
     return-void
 .end method
 
-.method protected final drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
+.method public final drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 1
     .param p1, "canvas"    # Landroid/graphics/Canvas;
     .param p2, "view"    # Landroid/view/View;

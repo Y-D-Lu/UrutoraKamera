@@ -41,7 +41,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 15
@@ -142,7 +142,7 @@
     return-void
 .end method
 
-.method static synthetic access$000()Landroidx/window/core/Version;
+.method public static synthetic access$000()Landroidx/window/core/Version;
     .locals 1
 
     .line 13
@@ -151,7 +151,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$100()Landroidx/window/core/Version;
+.method public static synthetic access$100()Landroidx/window/core/Version;
     .locals 1
 
     .line 13
@@ -160,7 +160,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200()Landroidx/window/core/Version;
+.method public static synthetic access$200()Landroidx/window/core/Version;
     .locals 1
 
     .line 13
@@ -169,7 +169,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$300()Landroidx/window/core/Version;
+.method public static synthetic access$300()Landroidx/window/core/Version;
     .locals 1
 
     .line 13

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jfs;
+.field public final a:Ldefpackage/jfs;
 
 .field private final b:I
 

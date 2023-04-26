@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mqg;
+.field public final a:Ldefpackage/mqg;
 
 
 # direct methods

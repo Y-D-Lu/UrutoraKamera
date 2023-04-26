@@ -12,31 +12,31 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/iqs;
+.field public final synthetic this$0:Ldefpackage/iqs;
 
-.field final synthetic val$iqvVar:Ldefpackage/iqv;
+.field public final synthetic val$iqvVar:Ldefpackage/iqv;
 
-.field final synthetic val$iraVar:Ldefpackage/ira;
+.field public final synthetic val$iraVar:Ldefpackage/ira;
 
-.field final synthetic val$j:J
+.field public final synthetic val$j:J
 
-.field final synthetic val$lmrVar:Ldefpackage/lmr;
+.field public final synthetic val$lmrVar:Ldefpackage/lmr;
 
-.field final synthetic val$madVar:Ldefpackage/mad;
+.field public final synthetic val$madVar:Ldefpackage/mad;
 
-.field final synthetic val$ojcVar:Ldefpackage/ojc;
+.field public final synthetic val$ojcVar:Ldefpackage/ojc;
 
-.field final synthetic val$z:Z
+.field public final synthetic val$z:Z
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/iqs;Ldefpackage/ira;Ldefpackage/mad;Ldefpackage/iqv;Ldefpackage/lmr;ZJLdefpackage/ojc;)V
+.method public constructor <init>(Ldefpackage/iqs;Ldefpackage/ira;Ldefpackage/mad;Ldefpackage/iqv;Ldefpackage/lmr;ZJLdefpackage/ojc;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/iqs;
 

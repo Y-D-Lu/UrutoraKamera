@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lap;
+.field public final a:Ldefpackage/lap;
 
-.field final b:Ldefpackage/lsp;
+.field public final b:Ldefpackage/lsp;
 
-.field final c:Ljava/util/List;
+.field public final c:Ljava/util/List;
 
-.field final d:Ldefpackage/lzp;
+.field public final d:Ldefpackage/lzp;
 
-.field final e:Ljava/util/List;
+.field public final e:Ljava/util/List;
 
-.field final f:Ljava/util/List;
+.field public final f:Ljava/util/List;
 
-.field final g:Landroid/os/Handler;
+.field public final g:Landroid/os/Handler;
 
-.field final h:Ljava/util/concurrent/Executor;
+.field public final h:Ljava/util/concurrent/Executor;
 
-.field final i:Ldefpackage/ltl;
+.field public final i:Ldefpackage/ltl;
 
 
 # direct methods

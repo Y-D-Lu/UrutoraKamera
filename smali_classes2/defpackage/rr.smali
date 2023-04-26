@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field a:Ldefpackage/kw;
+.field public a:Ldefpackage/kw;
 
 .field public b:Ldefpackage/kz;
 
-.field final c:Landroid/support/v7/widget/Toolbar;
+.field public final c:Landroid/support/v7/widget/Toolbar;
 
 
 # direct methods

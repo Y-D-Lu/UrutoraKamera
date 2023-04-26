@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+.field public final synthetic this$0:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-.field final synthetic val$b:Ldefpackage/jlq;
+.field public final synthetic val$b:Ldefpackage/jlq;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;Ldefpackage/jlq;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;Ldefpackage/jlq;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 

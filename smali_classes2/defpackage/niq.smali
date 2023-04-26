@@ -227,7 +227,7 @@
     return-object v0
 .end method
 
-.method protected final b()Ldefpackage/nji;
+.method public final b()Ldefpackage/nji;
     .locals 1
 
     .line 56

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected final a:Lcom/google/android/gms/common/data/DataHolder;
+.field public final a:Lcom/google/android/gms/common/data/DataHolder;
 
-.field protected b:I
+.field public b:I
 
 .field public c:I
 

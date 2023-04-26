@@ -102,7 +102,7 @@
     return-void
 .end method
 
-.method protected final attachBaseContext(Landroid/content/Context;)V
+.method public final attachBaseContext(Landroid/content/Context;)V
     .locals 11
     .param p1, "context"    # Landroid/content/Context;
 
@@ -1364,7 +1364,7 @@
     return-void
 .end method
 
-.method protected final onTitleChanged(Ljava/lang/CharSequence;I)V
+.method public final onTitleChanged(Ljava/lang/CharSequence;I)V
     .locals 1
     .param p1, "charSequence"    # Ljava/lang/CharSequence;
     .param p2, "i"    # I

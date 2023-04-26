@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 18
@@ -437,7 +437,7 @@
     throw v0
 .end method
 
-.method final declared-synchronized c(Landroid/net/Uri;)Ldefpackage/bty;
+.method public final declared-synchronized c(Landroid/net/Uri;)Ldefpackage/bty;
     .locals 1
     .param p1, "uri"    # Landroid/net/Uri;
 

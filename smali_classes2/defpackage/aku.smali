@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/viewpager/widget/ViewPager;
+.field public final a:Landroidx/viewpager/widget/ViewPager;
 
 
 # direct methods

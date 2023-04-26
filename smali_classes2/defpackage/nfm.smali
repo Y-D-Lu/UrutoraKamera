@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field final b:Ldefpackage/nei;
+.field public final b:Ldefpackage/nei;
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
-.field final d:Ljava/lang/String;
+.field public final d:Ljava/lang/String;
 
-.field final e:Ldefpackage/ngg;
+.field public final e:Ldefpackage/ngg;
 
 .field public final f:Z
 
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 12

@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/support/v8/renderscript/RenderScript;Landroid/content/res/Resources;I)V
+.method public constructor <init>(Landroid/support/v8/renderscript/RenderScript;Landroid/content/res/Resources;I)V
     .locals 4
     .param p1, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;
     .param p2, "resources"    # Landroid/content/res/Resources;
@@ -59,7 +59,7 @@
     throw v0
 .end method
 
-.method protected constructor <init>(Landroid/support/v8/renderscript/RenderScript;Ljava/lang/String;[B[B)V
+.method public constructor <init>(Landroid/support/v8/renderscript/RenderScript;Ljava/lang/String;[B[B)V
     .locals 4
     .param p1, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;
     .param p2, "str"    # Ljava/lang/String;

@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method constructor <init>(I[B)V
+.method public constructor <init>(I[B)V
     .locals 2
     .param p1, "r5"    # I
     .param p2, "r6"    # [B

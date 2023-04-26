@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final c:I
+.field public final c:I
 
-.field final d:I
+.field public final d:I
 
 .field public e:Lpl;
 

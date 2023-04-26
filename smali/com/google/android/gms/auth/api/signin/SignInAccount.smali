@@ -11,21 +11,21 @@
 
 
 # instance fields
-.field a:Ljava/lang/String;
+.field public a:Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
 .field public b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
-.field c:Ljava/lang/String;
+.field public c:Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 14

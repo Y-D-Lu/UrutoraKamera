@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method protected abstract a(Landroid/content/Context;Ldefpackage/ccu;Ldefpackage/ccs;)Ldefpackage/cbv;
+.method public abstract a(Landroid/content/Context;Ldefpackage/ccu;Ldefpackage/ccs;)Ldefpackage/cbv;
 .end method
 
 .method public final c(Ljava/lang/String;[B[BLdefpackage/kre;)V

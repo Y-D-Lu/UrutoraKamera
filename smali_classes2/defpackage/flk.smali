@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/flq;
+.field public final a:Ldefpackage/flq;
 
 
 # direct methods

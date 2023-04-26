@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/util/ArrayList;
+.field public final a:Ljava/util/ArrayList;
 
-.field final b:[F
+.field public final b:[F
 
-.field final c:[F
+.field public final c:[F
 
-.field final d:[F
+.field public final d:[F
 
 
 # direct methods

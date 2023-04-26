@@ -71,7 +71,7 @@
 
 
 # virtual methods
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 5
 
     .line 42
@@ -178,7 +178,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 22
     .param p1, "i"    # I
     .param p2, "i2"    # I

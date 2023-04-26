@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field volatile a:Z
+.field public volatile a:Z
 
 .field private final b:Ldefpackage/qct;
 

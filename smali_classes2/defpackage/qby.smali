@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field a:Ldefpackage/qjr;
+.field public a:Ldefpackage/qjr;
 
 .field public volatile b:Z
 

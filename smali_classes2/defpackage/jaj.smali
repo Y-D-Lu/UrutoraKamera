@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/os/Vibrator;
+.field public final a:Landroid/os/Vibrator;
 
-.field final b:Lcom/google/android/apps/camera/bottombar/BottomBarController;
+.field public final b:Lcom/google/android/apps/camera/bottombar/BottomBarController;
 
-.field final c:Ldefpackage/jak;
+.field public final c:Ldefpackage/jak;
 
 
 # direct methods

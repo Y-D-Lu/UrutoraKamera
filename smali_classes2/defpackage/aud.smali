@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/aue;
+.field public final a:Ldefpackage/aue;
 
 
 # direct methods

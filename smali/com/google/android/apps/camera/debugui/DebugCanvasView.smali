@@ -427,7 +427,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 8
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 

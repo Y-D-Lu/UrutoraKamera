@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final transient a:Ljava/util/Map;
+.field public final transient a:Ljava/util/Map;
 
-.field final b:Ldefpackage/old;
+.field public final b:Ldefpackage/old;
 
 
 # direct methods

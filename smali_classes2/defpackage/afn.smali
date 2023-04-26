@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/content/Intent;
+.field public final a:Landroid/content/Intent;
 
-.field final b:Ljava/util/ArrayList;
+.field public final b:Ljava/util/ArrayList;
 
 
 # direct methods

@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field mRS:Landroid/support/v8/renderscript/RenderScript;
+.field public mRS:Landroid/support/v8/renderscript/RenderScript;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/Script;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/Script;
 
 
 # direct methods
-.method constructor <init>(Landroid/support/v8/renderscript/Script;Landroid/support/v8/renderscript/RenderScript;)V
+.method public constructor <init>(Landroid/support/v8/renderscript/Script;Landroid/support/v8/renderscript/RenderScript;)V
     .locals 0
     .param p1, "this$0"    # Landroid/support/v8/renderscript/Script;
     .param p2, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;

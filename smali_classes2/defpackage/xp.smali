@@ -4,17 +4,17 @@
 
 
 # static fields
-.field static final a:Ldefpackage/xp;
+.field public static final a:Ldefpackage/xp;
 
 
 # instance fields
-.field volatile next:Ldefpackage/xp;
+.field public volatile next:Ldefpackage/xp;
 
-.field volatile thread:Ljava/lang/Thread;
+.field public volatile thread:Ljava/lang/Thread;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 7

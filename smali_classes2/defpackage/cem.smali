@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/Set;
+.field public final a:Ljava/util/Set;
 
-.field final b:Ljava/util/Set;
+.field public final b:Ljava/util/Set;
 
 
 # direct methods

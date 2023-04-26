@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kkb;
+.field public final a:Ldefpackage/kkb;
 
 
 # direct methods

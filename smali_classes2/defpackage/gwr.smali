@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gws;
+.field public final a:Ldefpackage/gws;
 
 .field private final b:I
 

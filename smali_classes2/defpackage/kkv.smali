@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kne;
+.field public final a:Ldefpackage/kne;
 
-.field final b:I
+.field public final b:I
 
-.field final c:J
+.field public final c:J
 
-.field final d:I
+.field public final d:I
 
 
 # direct methods

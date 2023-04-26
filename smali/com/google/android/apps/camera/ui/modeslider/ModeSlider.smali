@@ -9,7 +9,7 @@
 # instance fields
 .field public a:Ldefpackage/jem;
 
-.field b:Ljava/util/List;
+.field public b:Ljava/util/List;
 
 .field public c:I
 

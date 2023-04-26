@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/eot;
+.field public final synthetic this$0:Ldefpackage/eot;
 
-.field final synthetic val$eGLImage:Lcom/google/android/libraries/oliveoil/gl/EGLImage;
+.field public final synthetic val$eGLImage:Lcom/google/android/libraries/oliveoil/gl/EGLImage;
 
-.field final synthetic val$hardwareBuffer:Landroid/hardware/HardwareBuffer;
+.field public final synthetic val$hardwareBuffer:Landroid/hardware/HardwareBuffer;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/eot;Lcom/google/android/libraries/oliveoil/gl/EGLImage;Landroid/hardware/HardwareBuffer;)V
+.method public constructor <init>(Ldefpackage/eot;Lcom/google/android/libraries/oliveoil/gl/EGLImage;Landroid/hardware/HardwareBuffer;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/eot;
 

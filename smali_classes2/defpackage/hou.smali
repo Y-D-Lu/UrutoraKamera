@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Landroid/animation/Animator;
 
-.field final b:Ldefpackage/hoz;
+.field public final b:Ldefpackage/hoz;
 
 
 # direct methods

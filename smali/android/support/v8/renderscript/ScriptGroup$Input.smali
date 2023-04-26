@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field mArgIndex:Ljava/util/List;
+.field public mArgIndex:Ljava/util/List;
 
-.field mFieldID:Ljava/util/List;
+.field public mFieldID:Ljava/util/List;
 
-.field mValue:Ljava/lang/Object;
+.field public mValue:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
 
 
 # direct methods

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/qu;
+.field public final b:Ldefpackage/qu;
 
 .field public final c:Ljava/util/Map;
 

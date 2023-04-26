@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Landroidx/work/impl/WorkDatabase_Impl;
+.field public final b:Landroidx/work/impl/WorkDatabase_Impl;
 
 
 # direct methods

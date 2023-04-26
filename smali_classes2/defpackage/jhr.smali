@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field final a:Landroid/view/ViewGroup;
+.field public final a:Landroid/view/ViewGroup;
 
-.field final b:Landroid/view/ViewGroup;
+.field public final b:Landroid/view/ViewGroup;
 
-.field final c:Landroid/widget/TextView;
+.field public final c:Landroid/widget/TextView;
 
-.field final d:Landroid/widget/TextView;
+.field public final d:Landroid/widget/TextView;
 
-.field final e:Landroid/widget/ImageView;
+.field public final e:Landroid/widget/ImageView;
 
-.field final f:Landroid/widget/ImageView;
+.field public final f:Landroid/widget/ImageView;
 
 
 # direct methods

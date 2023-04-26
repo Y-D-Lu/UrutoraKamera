@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = "RefTracker"
 .end annotation
 
@@ -27,7 +27,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 228
@@ -58,7 +58,7 @@
 
 
 # virtual methods
-.method declared-synchronized dec(I)V
+.method public declared-synchronized dec(I)V
     .locals 4
     .param p1, "i"    # I
 
@@ -183,7 +183,7 @@
     throw p1
 .end method
 
-.method declared-synchronized get(I)Lgo/Seq$Ref;
+.method public declared-synchronized get(I)Lgo/Seq$Ref;
     .locals 4
     .param p1, "i"    # I
 
@@ -288,7 +288,7 @@
     throw p1
 .end method
 
-.method declared-synchronized inc(Ljava/lang/Object;)I
+.method public declared-synchronized inc(Ljava/lang/Object;)I
     .locals 5
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -448,7 +448,7 @@
     throw p1
 .end method
 
-.method declared-synchronized incRefnum(I)V
+.method public declared-synchronized incRefnum(I)V
     .locals 4
     .param p1, "i"    # I
 

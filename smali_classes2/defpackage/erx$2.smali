@@ -12,27 +12,27 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/erx;
+.field public final synthetic this$0:Ldefpackage/erx;
 
-.field final synthetic val$ddfVar:Ldefpackage/ddf;
+.field public final synthetic val$ddfVar:Ldefpackage/ddf;
 
-.field final synthetic val$executor2:Ljava/util/concurrent/Executor;
+.field public final synthetic val$executor2:Ljava/util/concurrent/Executor;
 
-.field final synthetic val$fpoVar:Ldefpackage/fpo;
+.field public final synthetic val$fpoVar:Ldefpackage/fpo;
 
-.field final synthetic val$qkgVar11:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar11:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar12:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar12:Ldefpackage/qkg;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/erx;Ldefpackage/ddf;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/fpo;Ljava/util/concurrent/Executor;)V
+.method public constructor <init>(Ldefpackage/erx;Ldefpackage/ddf;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/fpo;Ljava/util/concurrent/Executor;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/erx;
 

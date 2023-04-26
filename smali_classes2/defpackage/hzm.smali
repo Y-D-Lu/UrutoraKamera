@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/graphics/PointF;
+.field public final a:Landroid/graphics/PointF;
 
-.field final b:Ldefpackage/hzo;
+.field public final b:Ldefpackage/hzo;
 
 
 # direct methods

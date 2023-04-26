@@ -9,7 +9,7 @@
 # instance fields
 .field public final b:Ldefpackage/ofi;
 
-.field final c:Ldefpackage/oed;
+.field public final c:Ldefpackage/oed;
 
 
 # direct methods
@@ -69,7 +69,7 @@
     return-void
 .end method
 
-.method protected final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 2
     .param p1, "i"    # I
     .param p2, "parcel"    # Landroid/os/Parcel;

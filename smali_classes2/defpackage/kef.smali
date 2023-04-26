@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 19
@@ -127,7 +127,7 @@
 
 
 # virtual methods
-.method final C(Ljava/lang/String;)Ljava/util/Map;
+.method public final C(Ljava/lang/String;)Ljava/util/Map;
     .locals 4
     .param p1, "str"    # Ljava/lang/String;
 
@@ -510,7 +510,7 @@
     throw v0
 .end method
 
-.method protected final a()V
+.method public final a()V
     .locals 0
 
     .line 164

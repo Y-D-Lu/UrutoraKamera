@@ -519,7 +519,7 @@
     return-object v2
 .end method
 
-.method static M(ZLjava/lang/String;JJ)V
+.method public static M(ZLjava/lang/String;JJ)V
     .locals 3
     .param p0, "z"    # Z
     .param p1, "str"    # Ljava/lang/String;

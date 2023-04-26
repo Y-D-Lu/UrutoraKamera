@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static a:Z
+.field public static a:Z
 
-.field static final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public static final b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 .field public static final c:I
 
@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 23

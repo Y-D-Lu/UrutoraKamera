@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;
+.field public final a:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;
 
 .field private b:Z
 

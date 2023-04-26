@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cas;
+.field public final a:Ldefpackage/cas;
 
 .field private final b:I
 

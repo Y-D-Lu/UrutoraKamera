@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jxj;
+.field public final a:Ldefpackage/jxj;
 
 
 # direct methods

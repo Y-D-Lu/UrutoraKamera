@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lap;
+.field public final a:Ldefpackage/lap;
 
-.field final b:Ldefpackage/lsp;
+.field public final b:Ldefpackage/lsp;
 
-.field final c:Ljava/util/List;
+.field public final c:Ljava/util/List;
 
-.field final d:Ljava/util/List;
+.field public final d:Ljava/util/List;
 
-.field final e:Ldefpackage/ltl;
+.field public final e:Ldefpackage/ltl;
 
 
 # direct methods

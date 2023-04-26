@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method final a()Ljava/util/Map$Entry;
+.method public final a()Ljava/util/Map$Entry;
     .locals 1
 
     .line 15

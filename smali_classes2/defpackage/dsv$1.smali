@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/dsv;
+.field public final synthetic this$0:Ldefpackage/dsv;
 
-.field final synthetic val$drtVar:Ldefpackage/drt;
+.field public final synthetic val$drtVar:Ldefpackage/drt;
 
-.field final synthetic val$dsuVar:Ldefpackage/dsu;
+.field public final synthetic val$dsuVar:Ldefpackage/dsu;
 
-.field final synthetic val$sensor:Landroid/hardware/Sensor;
+.field public final synthetic val$sensor:Landroid/hardware/Sensor;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/dsv;Ldefpackage/drt;Landroid/hardware/Sensor;Ldefpackage/dsu;)V
+.method public constructor <init>(Ldefpackage/dsv;Ldefpackage/drt;Landroid/hardware/Sensor;Ldefpackage/dsu;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/dsv;
 

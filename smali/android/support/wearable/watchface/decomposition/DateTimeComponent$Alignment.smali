@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroid/support/wearable/watchface/decomposition/DateTimeComponent;
+.field public final synthetic this$0:Landroid/support/wearable/watchface/decomposition/DateTimeComponent;
 
 
 # direct methods

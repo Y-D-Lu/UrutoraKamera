@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jdq;
+.field public final a:Ldefpackage/jdq;
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bok;
+.field public final a:Ldefpackage/bok;
 
 
 # direct methods

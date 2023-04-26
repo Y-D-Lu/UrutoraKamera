@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jmn;
+.field public final a:Ldefpackage/jmn;
 
 .field public b:Ljava/util/List;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hau;
+.field public final a:Ldefpackage/hau;
 
 .field private final b:Ldefpackage/lmr;
 

@@ -10,7 +10,7 @@
 # instance fields
 .field public final a:Ldefpackage/lij;
 
-.field final b:Ldefpackage/hto;
+.field public final b:Ldefpackage/hto;
 
 .field private final c:Ljava/util/concurrent/Executor;
 

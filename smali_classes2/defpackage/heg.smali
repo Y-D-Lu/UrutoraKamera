@@ -96,7 +96,7 @@
 
 
 # virtual methods
-.method protected final j(Ldefpackage/hcf;Ldefpackage/hdv;)Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;
+.method public final j(Ldefpackage/hcf;Ldefpackage/hdv;)Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;
     .locals 32
     .param p1, "hcfVar"    # Ldefpackage/hcf;
     .param p2, "hdvVar"    # Ldefpackage/hdv;

@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 5
@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method protected final initialValue()Ljava/lang/Object;
+.method public final initialValue()Ljava/lang/Object;
     .locals 1
 
     .line 8

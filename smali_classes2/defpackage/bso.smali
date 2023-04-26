@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bsq;
+.field public final a:Ldefpackage/bsq;
 
 
 # direct methods

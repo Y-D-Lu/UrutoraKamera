@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/content/Intent;
+.field public final a:Landroid/content/Intent;
 
-.field final b:Landroid/content/Context;
+.field public final b:Landroid/content/Context;
 
-.field final c:Landroid/content/BroadcastReceiver$PendingResult;
+.field public final c:Landroid/content/BroadcastReceiver$PendingResult;
 
 
 # direct methods

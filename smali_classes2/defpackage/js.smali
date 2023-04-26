@@ -239,7 +239,7 @@
     return-void
 .end method
 
-.method protected final onBoundsChange(Landroid/graphics/Rect;)V
+.method public final onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
     .param p1, "rect"    # Landroid/graphics/Rect;
 
@@ -252,7 +252,7 @@
     return-void
 .end method
 
-.method protected final onLevelChange(I)Z
+.method public final onLevelChange(I)Z
     .locals 1
     .param p1, "i"    # I
 

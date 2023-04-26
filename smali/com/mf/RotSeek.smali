@@ -219,7 +219,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/mf/RotSeek;)I
+.method public static synthetic access$000(Lcom/mf/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -229,7 +229,7 @@
     return v0
 .end method
 
-.method static synthetic access$002(Lcom/mf/RotSeek;I)I
+.method public static synthetic access$002(Lcom/mf/RotSeek;I)I
     .locals 0
     .param p0, "x0"    # Lcom/mf/RotSeek;
     .param p1, "x1"    # I
@@ -240,7 +240,7 @@
     return p1
 .end method
 
-.method static synthetic access$100(Lcom/mf/RotSeek;)Landroid/widget/SeekBar$OnSeekBarChangeListener;
+.method public static synthetic access$100(Lcom/mf/RotSeek;)Landroid/widget/SeekBar$OnSeekBarChangeListener;
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -250,7 +250,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/mf/RotSeek;)Z
+.method public static synthetic access$200(Lcom/mf/RotSeek;)Z
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -260,7 +260,7 @@
     return v0
 .end method
 
-.method static synthetic access$202(Lcom/mf/RotSeek;Z)Z
+.method public static synthetic access$202(Lcom/mf/RotSeek;Z)Z
     .locals 0
     .param p0, "x0"    # Lcom/mf/RotSeek;
     .param p1, "x1"    # Z
@@ -271,7 +271,7 @@
     return p1
 .end method
 
-.method static synthetic access$300(Lcom/mf/RotSeek;)I
+.method public static synthetic access$300(Lcom/mf/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -281,7 +281,7 @@
     return v0
 .end method
 
-.method static synthetic access$320(Lcom/mf/RotSeek;I)I
+.method public static synthetic access$320(Lcom/mf/RotSeek;I)I
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
     .param p1, "x1"    # I
@@ -296,7 +296,7 @@
     return v0
 .end method
 
-.method static synthetic access$400(Lcom/mf/RotSeek;)I
+.method public static synthetic access$400(Lcom/mf/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -306,7 +306,7 @@
     return v0
 .end method
 
-.method static synthetic access$402(Lcom/mf/RotSeek;I)I
+.method public static synthetic access$402(Lcom/mf/RotSeek;I)I
     .locals 0
     .param p0, "x0"    # Lcom/mf/RotSeek;
     .param p1, "x1"    # I
@@ -317,7 +317,7 @@
     return p1
 .end method
 
-.method static synthetic access$408(Lcom/mf/RotSeek;)I
+.method public static synthetic access$408(Lcom/mf/RotSeek;)I
     .locals 2
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -331,7 +331,7 @@
     return v0
 .end method
 
-.method static synthetic access$410(Lcom/mf/RotSeek;)I
+.method public static synthetic access$410(Lcom/mf/RotSeek;)I
     .locals 2
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -345,7 +345,7 @@
     return v0
 .end method
 
-.method static synthetic access$500(Lcom/mf/RotSeek;)I
+.method public static synthetic access$500(Lcom/mf/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -355,7 +355,7 @@
     return v0
 .end method
 
-.method static synthetic access$600(Lcom/mf/RotSeek;)I
+.method public static synthetic access$600(Lcom/mf/RotSeek;)I
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -365,7 +365,7 @@
     return v0
 .end method
 
-.method static synthetic access$700(Lcom/mf/RotSeek;)[Ljava/lang/String;
+.method public static synthetic access$700(Lcom/mf/RotSeek;)[Ljava/lang/String;
     .locals 1
     .param p0, "x0"    # Lcom/mf/RotSeek;
 
@@ -760,7 +760,7 @@
     return-void
 .end method
 
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 13
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -991,7 +991,7 @@
     return-void
 .end method
 
-.method protected onSizeChanged(IIII)V
+.method public onSizeChanged(IIII)V
     .locals 4
     .param p1, "i"    # I
     .param p2, "i2"    # I

@@ -15,9 +15,9 @@
 
 .field public c:Z
 
-.field final d:Ldefpackage/pih;
+.field public final d:Ldefpackage/pih;
 
-.field final e:Ldefpackage/pih;
+.field public final e:Ldefpackage/pih;
 
 .field public final f:Ldefpackage/fui;
 

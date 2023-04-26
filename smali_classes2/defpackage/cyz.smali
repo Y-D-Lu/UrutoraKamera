@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cza;
+.field public final a:Ldefpackage/cza;
 
 
 # direct methods

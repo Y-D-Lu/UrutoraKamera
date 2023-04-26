@@ -444,7 +444,7 @@
     return v1
 .end method
 
-.method protected final x(Ldefpackage/nyu;)V
+.method public final x(Ldefpackage/nyu;)V
     .locals 2
     .param p1, "nyuVar"    # Ldefpackage/nyu;
 
@@ -480,7 +480,7 @@
     throw v0
 .end method
 
-.method protected final y(Ldefpackage/nyu;)V
+.method public final y(Ldefpackage/nyu;)V
     .locals 2
     .param p1, "nyuVar"    # Ldefpackage/nyu;
 

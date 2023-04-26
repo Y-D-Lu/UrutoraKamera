@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/grr;
+.field public final a:Ldefpackage/grr;
 
 
 # direct methods

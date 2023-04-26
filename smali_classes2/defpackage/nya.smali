@@ -10,7 +10,7 @@
 
 .field public c:Z
 
-.field d:Z
+.field public d:Z
 
 .field public e:Z
 
@@ -493,7 +493,7 @@
     return-void
 .end method
 
-.method protected final onStart()V
+.method public final onStart()V
     .locals 3
 
     .line 136

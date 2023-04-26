@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/hni;
+.field public final b:Ldefpackage/hni;
 
 
 # direct methods

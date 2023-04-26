@@ -25,21 +25,21 @@
 
 .field public final a:I
 
-.field final b:Landroid/graphics/drawable/StateListDrawable;
+.field public final b:Landroid/graphics/drawable/StateListDrawable;
 
-.field final c:Landroid/graphics/drawable/Drawable;
+.field public final c:Landroid/graphics/drawable/Drawable;
 
-.field d:I
+.field public d:I
 
-.field e:I
+.field public e:I
 
-.field f:F
+.field public f:F
 
-.field g:I
+.field public g:I
 
-.field h:I
+.field public h:I
 
-.field i:F
+.field public i:F
 
 .field public j:I
 
@@ -53,9 +53,9 @@
 
 .field public o:I
 
-.field final p:Landroid/animation/ValueAnimator;
+.field public final p:Landroid/animation/ValueAnimator;
 
-.field q:I
+.field public q:I
 
 .field private final t:I
 
@@ -73,7 +73,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 16
@@ -1010,7 +1010,7 @@
     .end sparse-switch
 .end method
 
-.method final g(FF)Z
+.method public final g(FF)Z
     .locals 4
     .param p1, "f"    # F
     .param p2, "f2"    # F
@@ -1069,7 +1069,7 @@
     return v1
 .end method
 
-.method final h(FF)Z
+.method public final h(FF)Z
     .locals 4
     .param p1, "f"    # F
     .param p2, "f2"    # F

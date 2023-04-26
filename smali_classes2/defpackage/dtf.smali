@@ -9,9 +9,9 @@
 # instance fields
 .field public a:J
 
-.field final b:J
+.field public final b:J
 
-.field final c:Ldefpackage/dtg;
+.field public final c:Ldefpackage/dtg;
 
 
 # direct methods

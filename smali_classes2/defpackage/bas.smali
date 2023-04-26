@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 18
@@ -107,7 +107,7 @@
     return-object v0
 .end method
 
-.method protected final b(Landroid/net/Uri;Landroid/content/ContentResolver;)Ljava/lang/Object;
+.method public final b(Landroid/net/Uri;Landroid/content/ContentResolver;)Ljava/lang/Object;
     .locals 5
     .param p1, "uri"    # Landroid/net/Uri;
     .param p2, "contentResolver"    # Landroid/content/ContentResolver;
@@ -307,7 +307,7 @@
     .end packed-switch
 .end method
 
-.method protected final c(Ljava/lang/Object;)V
+.method public final c(Ljava/lang/Object;)V
     .locals 1
     .param p1, "obj"    # Ljava/lang/Object;
 

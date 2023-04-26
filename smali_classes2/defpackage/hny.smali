@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/app/KeyguardManager$KeyguardDismissCallback;
+.field public final a:Landroid/app/KeyguardManager$KeyguardDismissCallback;
 
-.field final b:Ldefpackage/hoa;
+.field public final b:Ldefpackage/hoa;
 
-.field final c:I
+.field public final c:I
 
 
 # direct methods

@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hsr;
+.field public final a:Ldefpackage/hsr;
 
-.field final b:Ldefpackage/hsc;
+.field public final b:Ldefpackage/hsc;
 
-.field final c:Ldefpackage/hsq;
+.field public final c:Ldefpackage/hsq;
 
-.field final d:Z
+.field public final d:Z
 
-.field final e:Ldefpackage/hss;
+.field public final e:Ldefpackage/hss;
 
-.field final f:Ldefpackage/cof;
+.field public final f:Ldefpackage/cof;
 
 
 # direct methods

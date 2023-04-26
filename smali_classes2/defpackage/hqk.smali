@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/io/File;
+.field public final a:Ljava/io/File;
 
-.field final b:Ldefpackage/hsa;
+.field public final b:Ldefpackage/hsa;
 
-.field final c:Ldefpackage/hql;
+.field public final c:Ldefpackage/hql;
 
 
 # direct methods

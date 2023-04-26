@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field a:J
+.field public a:J
 
-.field b:I
+.field public b:I
 
-.field final c:Landroid/media/MediaFormat;
+.field public final c:Landroid/media/MediaFormat;
 
 .field public final d:Ljava/util/List;
 

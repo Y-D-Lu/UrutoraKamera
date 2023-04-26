@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/security/MessageDigest;
+.field public final a:Ljava/security/MessageDigest;
 
 .field private final b:Ldefpackage/fuo;
 

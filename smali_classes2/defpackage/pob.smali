@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field protected final a:[B
+.field public final a:[B
 
 
 # direct methods
@@ -61,7 +61,7 @@
     return v0
 .end method
 
-.method protected c()I
+.method public c()I
     .locals 1
 
     .line 31
@@ -524,7 +524,7 @@
     return-object v0
 .end method
 
-.method protected final m(Ljava/nio/charset/Charset;)Ljava/lang/String;
+.method public final m(Ljava/nio/charset/Charset;)Ljava/lang/String;
     .locals 4
     .param p1, "charset"    # Ljava/nio/charset/Charset;
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/app/job/JobParameters;
+.field public final a:Landroid/app/job/JobParameters;
 
-.field final b:Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;
+.field public final b:Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;
 
 
 # direct methods

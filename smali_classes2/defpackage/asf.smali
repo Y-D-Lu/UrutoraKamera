@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final a:Ldefpackage/asf;
+.field public static final a:Ldefpackage/asf;
 
 
 # instance fields
-.field final b:Ljava/lang/Throwable;
+.field public final b:Ljava/lang/Throwable;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 6

@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method protected final a()F
+.method public final a()F
     .locals 1
 
     .line 14

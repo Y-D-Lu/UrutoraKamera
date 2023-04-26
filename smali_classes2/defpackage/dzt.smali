@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field final a:Ldefpackage/htf;
+.field public final a:Ldefpackage/htf;
 
-.field final b:Z
+.field public final b:Z
 
-.field final c:Z
+.field public final c:Z
 
-.field final d:Z
+.field public final d:Z
 
-.field final e:Z
+.field public final e:Z
 
 .field public final f:Z
 
 .field public final g:Ldefpackage/gqt;
 
-.field final h:Z
+.field public final h:Z
 
-.field final i:Z
+.field public final i:Z
 
 
 # direct methods

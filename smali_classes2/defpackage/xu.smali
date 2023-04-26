@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final c:Ldefpackage/xv;
+.field public final c:Ldefpackage/xv;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final c()Ljava/lang/String;
+.method public final c()Ljava/lang/String;
     .locals 3
 
     .line 15

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ldefpackage/mrf;
+.field public final b:Ldefpackage/mrf;
 
-.field final c:J
+.field public final c:J
 
 
 # direct methods

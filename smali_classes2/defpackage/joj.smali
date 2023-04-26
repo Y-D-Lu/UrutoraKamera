@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jom;
+.field public final a:Ldefpackage/jom;
 
 
 # direct methods

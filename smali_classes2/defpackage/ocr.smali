@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/material/tabs/TabLayout;
+.field public final a:Lcom/google/android/material/tabs/TabLayout;
 
 
 # direct methods

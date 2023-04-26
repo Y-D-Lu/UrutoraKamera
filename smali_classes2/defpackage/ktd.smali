@@ -8,17 +8,17 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Ldefpackage/ktc;
+.field public final b:Ldefpackage/ktc;
 
-.field final c:Lkss;
+.field public final c:Lkss;
 
-.field final d:Ldefpackage/kth;
+.field public final d:Ldefpackage/kth;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 11

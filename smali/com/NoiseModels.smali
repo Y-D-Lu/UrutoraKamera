@@ -4,517 +4,517 @@
 
 
 # static fields
-.field static final EdgeX30_JN1_OFF:[Landroid/util/Pair;
+.field public static final EdgeX30_JN1_OFF:[Landroid/util/Pair;
 
-.field static final EdgeX30_JN1_SC:[Landroid/util/Pair;
+.field public static final EdgeX30_JN1_SC:[Landroid/util/Pair;
 
-.field static final EdgeX30_OV50A_OFF:[Landroid/util/Pair;
+.field public static final EdgeX30_OV50A_OFF:[Landroid/util/Pair;
 
-.field static final EdgeX30_OV50A_SC:[Landroid/util/Pair;
+.field public static final EdgeX30_OV50A_SC:[Landroid/util/Pair;
 
-.field static final EdgeX30_OV60A_OFF:[Landroid/util/Pair;
+.field public static final EdgeX30_OV60A_OFF:[Landroid/util/Pair;
 
-.field static final EdgeX30_OV60A_SC:[Landroid/util/Pair;
+.field public static final EdgeX30_OV60A_SC:[Landroid/util/Pair;
 
-.field static final GC02M1_ARNOVA_OFF:[Landroid/util/Pair;
+.field public static final GC02M1_ARNOVA_OFF:[Landroid/util/Pair;
 
-.field static final GC02M1_ARNOVA_SC:[Landroid/util/Pair;
+.field public static final GC02M1_ARNOVA_SC:[Landroid/util/Pair;
 
-.field static final GalaxyM51_GC5035_54_OFF:[Landroid/util/Pair;
+.field public static final GalaxyM51_GC5035_54_OFF:[Landroid/util/Pair;
 
-.field static final GalaxyM51_GC5035_54_SC:[Landroid/util/Pair;
+.field public static final GalaxyM51_GC5035_54_SC:[Landroid/util/Pair;
 
-.field static final GalaxyM51_IMX616_1_OFF:[Landroid/util/Pair;
+.field public static final GalaxyM51_IMX616_1_OFF:[Landroid/util/Pair;
 
-.field static final GalaxyM51_IMX616_1_SC:[Landroid/util/Pair;
+.field public static final GalaxyM51_IMX616_1_SC:[Landroid/util/Pair;
 
-.field static final GalaxyM51_IMX616_3_OFF:[Landroid/util/Pair;
+.field public static final GalaxyM51_IMX616_3_OFF:[Landroid/util/Pair;
 
-.field static final GalaxyM51_IMX616_3_SC:[Landroid/util/Pair;
+.field public static final GalaxyM51_IMX616_3_SC:[Landroid/util/Pair;
 
-.field static final GalaxyM51_IMX682_0_OFF:[Landroid/util/Pair;
+.field public static final GalaxyM51_IMX682_0_OFF:[Landroid/util/Pair;
 
-.field static final GalaxyM51_IMX682_0_SC:[Landroid/util/Pair;
+.field public static final GalaxyM51_IMX682_0_SC:[Landroid/util/Pair;
 
-.field static final GalaxyM51_S5K3L6_2_OFF:[Landroid/util/Pair;
+.field public static final GalaxyM51_S5K3L6_2_OFF:[Landroid/util/Pair;
 
-.field static final GalaxyM51_S5K3L6_2_SC:[Landroid/util/Pair;
+.field public static final GalaxyM51_S5K3L6_2_SC:[Landroid/util/Pair;
 
-.field static final IMX350_MN10b_OFF:[Landroid/util/Pair;
+.field public static final IMX350_MN10b_OFF:[Landroid/util/Pair;
 
-.field static final IMX350_MN10b_SC:[Landroid/util/Pair;
+.field public static final IMX350_MN10b_SC:[Landroid/util/Pair;
 
-.field static final IMX355_PX4A_CSTARK_OFF:[Landroid/util/Pair;
+.field public static final IMX355_PX4A_CSTARK_OFF:[Landroid/util/Pair;
 
-.field static final IMX355_PX4A_CSTARK_SC:[Landroid/util/Pair;
+.field public static final IMX355_PX4A_CSTARK_SC:[Landroid/util/Pair;
 
-.field static final IMX363_CSTARK_OFF:[Landroid/util/Pair;
+.field public static final IMX363_CSTARK_OFF:[Landroid/util/Pair;
 
-.field static final IMX363_CSTARK_SC:[Landroid/util/Pair;
+.field public static final IMX363_CSTARK_SC:[Landroid/util/Pair;
 
-.field static final IMX363_PX4A_CSTARK_OFF:[Landroid/util/Pair;
+.field public static final IMX363_PX4A_CSTARK_OFF:[Landroid/util/Pair;
 
-.field static final IMX363_PX4A_CSTARK_SC:[Landroid/util/Pair;
+.field public static final IMX363_PX4A_CSTARK_SC:[Landroid/util/Pair;
 
-.field static final IMX363_PX4XL_CSTARK_OFF:[Landroid/util/Pair;
+.field public static final IMX363_PX4XL_CSTARK_OFF:[Landroid/util/Pair;
 
-.field static final IMX363_PX4XL_CSTARK_SC:[Landroid/util/Pair;
+.field public static final IMX363_PX4XL_CSTARK_SC:[Landroid/util/Pair;
 
-.field static final IMX374_SONY_OFF:[Landroid/util/Pair;
+.field public static final IMX374_SONY_OFF:[Landroid/util/Pair;
 
-.field static final IMX374_SONY_SC:[Landroid/util/Pair;
+.field public static final IMX374_SONY_SC:[Landroid/util/Pair;
 
-.field static final IMX376_ARNOVA_OFF:[Landroid/util/Pair;
+.field public static final IMX376_ARNOVA_OFF:[Landroid/util/Pair;
 
-.field static final IMX376_ARNOVA_SC:[Landroid/util/Pair;
+.field public static final IMX376_ARNOVA_SC:[Landroid/util/Pair;
 
-.field static final IMX471_ARNOVA_OFF:[Landroid/util/Pair;
+.field public static final IMX471_ARNOVA_OFF:[Landroid/util/Pair;
 
-.field static final IMX471_ARNOVA_SC:[Landroid/util/Pair;
+.field public static final IMX471_ARNOVA_SC:[Landroid/util/Pair;
 
-.field static final IMX481_SAP_OFF:[Landroid/util/Pair;
+.field public static final IMX481_SAP_OFF:[Landroid/util/Pair;
 
-.field static final IMX481_SAP_SC:[Landroid/util/Pair;
+.field public static final IMX481_SAP_SC:[Landroid/util/Pair;
 
-.field static final IMX519_ARNOVA_OFF:[Landroid/util/Pair;
+.field public static final IMX519_ARNOVA_OFF:[Landroid/util/Pair;
 
-.field static final IMX519_ARNOVA_SC:[Landroid/util/Pair;
+.field public static final IMX519_ARNOVA_SC:[Landroid/util/Pair;
 
-.field static final IMX520_PX4XL_CSTARK_OFF:[Landroid/util/Pair;
+.field public static final IMX520_PX4XL_CSTARK_OFF:[Landroid/util/Pair;
 
-.field static final IMX520_PX4XL_CSTARK_SC:[Landroid/util/Pair;
+.field public static final IMX520_PX4XL_CSTARK_SC:[Landroid/util/Pair;
 
-.field static final IMX555_CSTARK_OFF:[Landroid/util/Pair;
+.field public static final IMX555_CSTARK_OFF:[Landroid/util/Pair;
 
-.field static final IMX555_CSTARK_SC:[Landroid/util/Pair;
+.field public static final IMX555_CSTARK_SC:[Landroid/util/Pair;
 
-.field static final IMX563_OFF:[Landroid/util/Pair;
+.field public static final IMX563_OFF:[Landroid/util/Pair;
 
-.field static final IMX563_SC:[Landroid/util/Pair;
+.field public static final IMX563_SC:[Landroid/util/Pair;
 
-.field static final IMX582_MI9T_OFF:[Landroid/util/Pair;
+.field public static final IMX582_MI9T_OFF:[Landroid/util/Pair;
 
-.field static final IMX582_MI9T_SC:[Landroid/util/Pair;
+.field public static final IMX582_MI9T_SC:[Landroid/util/Pair;
 
-.field static final IMX586_AVG_SAP_OFF:[Landroid/util/Pair;
+.field public static final IMX586_AVG_SAP_OFF:[Landroid/util/Pair;
 
-.field static final IMX586_AVG_SAP_SC:[Landroid/util/Pair;
+.field public static final IMX586_AVG_SAP_SC:[Landroid/util/Pair;
 
-.field static final IMX586_MI9_OFF:[Landroid/util/Pair;
+.field public static final IMX586_MI9_OFF:[Landroid/util/Pair;
 
-.field static final IMX586_MI9_SC:[Landroid/util/Pair;
+.field public static final IMX586_MI9_SC:[Landroid/util/Pair;
 
-.field static final IMX586_OFILM_MEVLUT_OFF:[Landroid/util/Pair;
+.field public static final IMX586_OFILM_MEVLUT_OFF:[Landroid/util/Pair;
 
-.field static final IMX586_OFILM_MEVLUT_SC:[Landroid/util/Pair;
+.field public static final IMX586_OFILM_MEVLUT_SC:[Landroid/util/Pair;
 
-.field static final IMX586_SAP2_OFF:[Landroid/util/Pair;
+.field public static final IMX586_SAP2_OFF:[Landroid/util/Pair;
 
-.field static final IMX586_SAP2_SC:[Landroid/util/Pair;
+.field public static final IMX586_SAP2_SC:[Landroid/util/Pair;
 
-.field static final IMX586_SAP_OFF:[Landroid/util/Pair;
+.field public static final IMX586_SAP_OFF:[Landroid/util/Pair;
 
-.field static final IMX586_SAP_SC:[Landroid/util/Pair;
+.field public static final IMX586_SAP_SC:[Landroid/util/Pair;
 
-.field static final IMX586_SEMCO_RAKIN_OFF:[Landroid/util/Pair;
+.field public static final IMX586_SEMCO_RAKIN_OFF:[Landroid/util/Pair;
 
-.field static final IMX586_SEMCO_RAKIN_SC:[Landroid/util/Pair;
+.field public static final IMX586_SEMCO_RAKIN_SC:[Landroid/util/Pair;
 
-.field static final IMX586_VIOLET_ARCHESOLUS_OFF:[Landroid/util/Pair;
+.field public static final IMX586_VIOLET_ARCHESOLUS_OFF:[Landroid/util/Pair;
 
-.field static final IMX586_VIOLET_ARCHESOLUS_SC:[Landroid/util/Pair;
+.field public static final IMX586_VIOLET_ARCHESOLUS_SC:[Landroid/util/Pair;
 
-.field static final IMX682_ARNOVA_OFF:[Landroid/util/Pair;
+.field public static final IMX682_ARNOVA_OFF:[Landroid/util/Pair;
 
-.field static final IMX682_ARNOVA_SC:[Landroid/util/Pair;
+.field public static final IMX682_ARNOVA_SC:[Landroid/util/Pair;
 
-.field static final IMX686_0_Necrys_OFF:[Landroid/util/Pair;
+.field public static final IMX686_0_Necrys_OFF:[Landroid/util/Pair;
 
-.field static final IMX686_0_Necrys_SC:[Landroid/util/Pair;
+.field public static final IMX686_0_Necrys_SC:[Landroid/util/Pair;
 
-.field static final IMX686_ARNOVA_OFF:[Landroid/util/Pair;
+.field public static final IMX686_ARNOVA_OFF:[Landroid/util/Pair;
 
-.field static final IMX686_ARNOVA_SC:[Landroid/util/Pair;
+.field public static final IMX686_ARNOVA_SC:[Landroid/util/Pair;
 
-.field static final IMX689_ARNOVA_OFF:[Landroid/util/Pair;
+.field public static final IMX689_ARNOVA_OFF:[Landroid/util/Pair;
 
-.field static final IMX689_ARNOVA_SC:[Landroid/util/Pair;
+.field public static final IMX689_ARNOVA_SC:[Landroid/util/Pair;
 
-.field static final LGV50_IMX351_2_OFF:[Landroid/util/Pair;
+.field public static final LGV50_IMX351_2_OFF:[Landroid/util/Pair;
 
-.field static final LGV50_IMX351_2_SC:[Landroid/util/Pair;
+.field public static final LGV50_IMX351_2_SC:[Landroid/util/Pair;
 
-.field static final LGV50_IMX363_0_OFF:[Landroid/util/Pair;
+.field public static final LGV50_IMX363_0_OFF:[Landroid/util/Pair;
 
-.field static final LGV50_IMX363_0_SC:[Landroid/util/Pair;
+.field public static final LGV50_IMX363_0_SC:[Landroid/util/Pair;
 
-.field static final LGV50_SL556_4_OFF:[Landroid/util/Pair;
+.field public static final LGV50_SL556_4_OFF:[Landroid/util/Pair;
 
-.field static final LGV50_SL556_4_SC:[Landroid/util/Pair;
+.field public static final LGV50_SL556_4_SC:[Landroid/util/Pair;
 
-.field static final LGV50_SL846_1_OFF:[Landroid/util/Pair;
+.field public static final LGV50_SL846_1_OFF:[Landroid/util/Pair;
 
-.field static final LGV50_SL846_1_SC:[Landroid/util/Pair;
+.field public static final LGV50_SL846_1_SC:[Landroid/util/Pair;
 
-.field static final LGV50_s5k3m5_3_OFF:[Landroid/util/Pair;
+.field public static final LGV50_s5k3m5_3_OFF:[Landroid/util/Pair;
 
-.field static final LGV50_s5k3m5_3_SC:[Landroid/util/Pair;
+.field public static final LGV50_s5k3m5_3_SC:[Landroid/util/Pair;
 
-.field static final MI10U_2x_S5K2L7_OFF:[Landroid/util/Pair;
+.field public static final MI10U_2x_S5K2L7_OFF:[Landroid/util/Pair;
 
-.field static final MI10U_2x_S5K2L7_SC:[Landroid/util/Pair;
+.field public static final MI10U_2x_S5K2L7_SC:[Landroid/util/Pair;
 
-.field static final MI10U_5x_IMX586_OFF:[Landroid/util/Pair;
+.field public static final MI10U_5x_IMX586_OFF:[Landroid/util/Pair;
 
-.field static final MI10U_5x_IMX586_SC:[Landroid/util/Pair;
+.field public static final MI10U_5x_IMX586_SC:[Landroid/util/Pair;
 
-.field static final MI10U_Front_S5K3T2_OFF:[Landroid/util/Pair;
+.field public static final MI10U_Front_S5K3T2_OFF:[Landroid/util/Pair;
 
-.field static final MI10U_Front_S5K3T2_SC:[Landroid/util/Pair;
+.field public static final MI10U_Front_S5K3T2_SC:[Landroid/util/Pair;
 
-.field static final MI10U_Main_OV48C_OFF:[Landroid/util/Pair;
+.field public static final MI10U_Main_OV48C_OFF:[Landroid/util/Pair;
 
-.field static final MI10U_Main_OV48C_SC:[Landroid/util/Pair;
+.field public static final MI10U_Main_OV48C_SC:[Landroid/util/Pair;
 
-.field static final MI10U_UW_IMX350_OFF:[Landroid/util/Pair;
+.field public static final MI10U_UW_IMX350_OFF:[Landroid/util/Pair;
 
-.field static final MI10U_UW_IMX350_SC:[Landroid/util/Pair;
+.field public static final MI10U_UW_IMX350_SC:[Landroid/util/Pair;
 
-.field static final MI11U_GN2_ID1_OFF:[Landroid/util/Pair;
+.field public static final MI11U_GN2_ID1_OFF:[Landroid/util/Pair;
 
-.field static final MI11U_GN2_ID1_SC:[Landroid/util/Pair;
+.field public static final MI11U_GN2_ID1_SC:[Landroid/util/Pair;
 
-.field static final MI11X_IMX355_2_OFF:[Landroid/util/Pair;
+.field public static final MI11X_IMX355_2_OFF:[Landroid/util/Pair;
 
-.field static final MI11X_IMX355_2_SC:[Landroid/util/Pair;
+.field public static final MI11X_IMX355_2_SC:[Landroid/util/Pair;
 
-.field static final MI11X_IMX582_0_OFF:[Landroid/util/Pair;
+.field public static final MI11X_IMX582_0_OFF:[Landroid/util/Pair;
 
-.field static final MI11X_IMX582_0_SC:[Landroid/util/Pair;
+.field public static final MI11X_IMX582_0_SC:[Landroid/util/Pair;
 
-.field static final MI11X_S5K3T2_1_OFF:[Landroid/util/Pair;
+.field public static final MI11X_S5K3T2_1_OFF:[Landroid/util/Pair;
 
-.field static final MI11X_S5K3T2_1_SC:[Landroid/util/Pair;
+.field public static final MI11X_S5K3T2_1_SC:[Landroid/util/Pair;
 
-.field static final Manual_Noise_Modeler:[Landroid/util/Pair;
+.field public static final Manual_Noise_Modeler:[Landroid/util/Pair;
 
-.field static final Manual_Noise_Modeler_OFF:[Landroid/util/Pair;
+.field public static final Manual_Noise_Modeler_OFF:[Landroid/util/Pair;
 
-.field static final Mi10U_new_IMX586_4_OFF:[Landroid/util/Pair;
+.field public static final Mi10U_new_IMX586_4_OFF:[Landroid/util/Pair;
 
-.field static final Mi10U_new_IMX586_4_SC:[Landroid/util/Pair;
+.field public static final Mi10U_new_IMX586_4_SC:[Landroid/util/Pair;
 
-.field static final Mi11Lite_S5KGW3_OFF:[Landroid/util/Pair;
+.field public static final Mi11Lite_S5KGW3_OFF:[Landroid/util/Pair;
 
-.field static final Mi11Lite_S5KGW3_SC:[Landroid/util/Pair;
+.field public static final Mi11Lite_S5KGW3_SC:[Landroid/util/Pair;
 
-.field static final Mi11Pro_OV13B10_2_OFF:[Landroid/util/Pair;
+.field public static final Mi11Pro_OV13B10_2_OFF:[Landroid/util/Pair;
 
-.field static final Mi11Pro_OV13B10_2_SC:[Landroid/util/Pair;
+.field public static final Mi11Pro_OV13B10_2_SC:[Landroid/util/Pair;
 
-.field static final Mi11Pro_fix_OV08A10_3_OFF:[Landroid/util/Pair;
+.field public static final Mi11Pro_fix_OV08A10_3_OFF:[Landroid/util/Pair;
 
-.field static final Mi11Pro_fix_OV08A10_3_SC:[Landroid/util/Pair;
+.field public static final Mi11Pro_fix_OV08A10_3_SC:[Landroid/util/Pair;
 
-.field static final Mi11Pro_fix_S5KGN2_0_OFF:[Landroid/util/Pair;
+.field public static final Mi11Pro_fix_S5KGN2_0_OFF:[Landroid/util/Pair;
 
-.field static final Mi11Pro_fix_S5KGN2_0_SC:[Landroid/util/Pair;
+.field public static final Mi11Pro_fix_S5KGN2_0_SC:[Landroid/util/Pair;
 
-.field static final Mi11U_GN2_ID1_Arnova_OFF:[Landroid/util/Pair;
+.field public static final Mi11U_GN2_ID1_Arnova_OFF:[Landroid/util/Pair;
 
-.field static final Mi11U_GN2_ID1_Arnova_SC:[Landroid/util/Pair;
+.field public static final Mi11U_GN2_ID1_Arnova_SC:[Landroid/util/Pair;
 
-.field static final Mi11Ultra_IMX586_TELE_OFF:[Landroid/util/Pair;
+.field public static final Mi11Ultra_IMX586_TELE_OFF:[Landroid/util/Pair;
 
-.field static final Mi11Ultra_IMX586_TELE_SC:[Landroid/util/Pair;
+.field public static final Mi11Ultra_IMX586_TELE_SC:[Landroid/util/Pair;
 
-.field static final Mi11Ultra_IMX586_UW_OFF:[Landroid/util/Pair;
+.field public static final Mi11Ultra_IMX586_UW_OFF:[Landroid/util/Pair;
 
-.field static final Mi11Ultra_IMX586_UW_SC:[Landroid/util/Pair;
+.field public static final Mi11Ultra_IMX586_UW_SC:[Landroid/util/Pair;
 
-.field static final Mi11Ultra_S5KGN2_OFF:[Landroid/util/Pair;
+.field public static final Mi11Ultra_S5KGN2_OFF:[Landroid/util/Pair;
 
-.field static final Mi11Ultra_S5KGN2_SC:[Landroid/util/Pair;
+.field public static final Mi11Ultra_S5KGN2_SC:[Landroid/util/Pair;
 
-.field static final Mi9_IMX481_21_OFF:[Landroid/util/Pair;
+.field public static final Mi9_IMX481_21_OFF:[Landroid/util/Pair;
 
-.field static final Mi9_IMX481_21_SC:[Landroid/util/Pair;
+.field public static final Mi9_IMX481_21_SC:[Landroid/util/Pair;
 
-.field static final Mi9_IMX586_0_OFF:[Landroid/util/Pair;
+.field public static final Mi9_IMX586_0_OFF:[Landroid/util/Pair;
 
-.field static final Mi9_IMX586_0_SC:[Landroid/util/Pair;
+.field public static final Mi9_IMX586_0_SC:[Landroid/util/Pair;
 
-.field static final Mi9_S5K3M5_20_OFF:[Landroid/util/Pair;
+.field public static final Mi9_S5K3M5_20_OFF:[Landroid/util/Pair;
 
-.field static final Mi9_S5K3M5_20_SC:[Landroid/util/Pair;
+.field public static final Mi9_S5K3M5_20_SC:[Landroid/util/Pair;
 
 .field public static NM_OFF:[Landroid/util/Pair;
 
 .field public static NM_SC:[Landroid/util/Pair;
 
-.field static final OV08A10_MN10b_OFF:[Landroid/util/Pair;
+.field public static final OV08A10_MN10b_OFF:[Landroid/util/Pair;
 
-.field static final OV08A10_MN10b_SC:[Landroid/util/Pair;
+.field public static final OV08A10_MN10b_SC:[Landroid/util/Pair;
 
-.field static final OV13855_ARCHESOLUS_OFF:[Landroid/util/Pair;
+.field public static final OV13855_ARCHESOLUS_OFF:[Landroid/util/Pair;
 
-.field static final OV13855_ARCHESOLUS_SC:[Landroid/util/Pair;
+.field public static final OV13855_ARCHESOLUS_SC:[Landroid/util/Pair;
 
-.field static final OV13B10_OFF:[Landroid/util/Pair;
+.field public static final OV13B10_OFF:[Landroid/util/Pair;
 
-.field static final OV13B10_SC:[Landroid/util/Pair;
+.field public static final OV13B10_SC:[Landroid/util/Pair;
 
-.field static final OV8856_21_Necrys_OFF:[Landroid/util/Pair;
+.field public static final OV8856_21_Necrys_OFF:[Landroid/util/Pair;
 
-.field static final OV8856_21_Necrys_SC:[Landroid/util/Pair;
+.field public static final OV8856_21_Necrys_SC:[Landroid/util/Pair;
 
-.field static final OV8856_ARNOVA_OFF:[Landroid/util/Pair;
+.field public static final OV8856_ARNOVA_OFF:[Landroid/util/Pair;
 
-.field static final OV8856_ARNOVA_SC:[Landroid/util/Pair;
+.field public static final OV8856_ARNOVA_SC:[Landroid/util/Pair;
 
-.field static final OnePlus9Pro_imx471_1_OFF:[Landroid/util/Pair;
+.field public static final OnePlus9Pro_imx471_1_OFF:[Landroid/util/Pair;
 
-.field static final OnePlus9Pro_imx471_1_SC:[Landroid/util/Pair;
+.field public static final OnePlus9Pro_imx471_1_SC:[Landroid/util/Pair;
 
-.field static final OnePlus9Pro_imx766_2_OFF:[Landroid/util/Pair;
+.field public static final OnePlus9Pro_imx766_2_OFF:[Landroid/util/Pair;
 
-.field static final OnePlus9Pro_imx766_2_SC:[Landroid/util/Pair;
+.field public static final OnePlus9Pro_imx766_2_SC:[Landroid/util/Pair;
 
-.field static final OnePlus9Pro_imx789_0_OFF:[Landroid/util/Pair;
+.field public static final OnePlus9Pro_imx789_0_OFF:[Landroid/util/Pair;
 
-.field static final OnePlus9Pro_imx789_0_SC:[Landroid/util/Pair;
+.field public static final OnePlus9Pro_imx789_0_SC:[Landroid/util/Pair;
 
-.field static final OnePlus9Pro_ov08a10_3_OFF:[Landroid/util/Pair;
+.field public static final OnePlus9Pro_ov08a10_3_OFF:[Landroid/util/Pair;
 
-.field static final OnePlus9Pro_ov08a10_3_SC:[Landroid/util/Pair;
+.field public static final OnePlus9Pro_ov08a10_3_SC:[Landroid/util/Pair;
 
-.field static final Oneplus8Pro_IMX689_0_Enzo_OFF:[Landroid/util/Pair;
+.field public static final Oneplus8Pro_IMX689_0_Enzo_OFF:[Landroid/util/Pair;
 
-.field static final Oneplus8Pro_IMX689_0_Enzo_SC:[Landroid/util/Pair;
+.field public static final Oneplus8Pro_IMX689_0_Enzo_SC:[Landroid/util/Pair;
 
-.field static final Oneplus8Pro_IMX689_0_OFF:[Landroid/util/Pair;
+.field public static final Oneplus8Pro_IMX689_0_OFF:[Landroid/util/Pair;
 
-.field static final Oneplus8Pro_IMX689_0_SC:[Landroid/util/Pair;
+.field public static final Oneplus8Pro_IMX689_0_SC:[Landroid/util/Pair;
 
-.field static final Oneplus8pro_IMX471_1_OFF:[Landroid/util/Pair;
+.field public static final Oneplus8pro_IMX471_1_OFF:[Landroid/util/Pair;
 
-.field static final Oneplus8pro_IMX471_1_SC:[Landroid/util/Pair;
+.field public static final Oneplus8pro_IMX471_1_SC:[Landroid/util/Pair;
 
-.field static final Oneplus8pro_IMX586_2_OFF:[Landroid/util/Pair;
+.field public static final Oneplus8pro_IMX586_2_OFF:[Landroid/util/Pair;
 
-.field static final Oneplus8pro_IMX586_2_SC:[Landroid/util/Pair;
+.field public static final Oneplus8pro_IMX586_2_SC:[Landroid/util/Pair;
 
-.field static final Oneplus8pro_S5K3M5_3_OFF:[Landroid/util/Pair;
+.field public static final Oneplus8pro_S5K3M5_3_OFF:[Landroid/util/Pair;
 
-.field static final Oneplus8pro_S5K3M5_3_SC:[Landroid/util/Pair;
+.field public static final Oneplus8pro_S5K3M5_3_SC:[Landroid/util/Pair;
 
-.field static final PocoX3Pro_IMX582_new_0_OFF:[Landroid/util/Pair;
+.field public static final PocoX3Pro_IMX582_new_0_OFF:[Landroid/util/Pair;
 
-.field static final PocoX3Pro_IMX582_new_0_SC:[Landroid/util/Pair;
+.field public static final PocoX3Pro_IMX582_new_0_SC:[Landroid/util/Pair;
 
-.field static final PocoX3Pro_OV02B1B_4_OFF:[Landroid/util/Pair;
+.field public static final PocoX3Pro_OV02B1B_4_OFF:[Landroid/util/Pair;
 
-.field static final PocoX3Pro_OV02B1B_4_SC:[Landroid/util/Pair;
+.field public static final PocoX3Pro_OV02B1B_4_SC:[Landroid/util/Pair;
 
-.field static final PocoX3Pro_OV8856_3_OFF:[Landroid/util/Pair;
+.field public static final PocoX3Pro_OV8856_3_OFF:[Landroid/util/Pair;
 
-.field static final PocoX3Pro_OV8856_3_SC:[Landroid/util/Pair;
+.field public static final PocoX3Pro_OV8856_3_SC:[Landroid/util/Pair;
 
-.field static final PocoX3Pro_S5K3T2_new_1_OFF:[Landroid/util/Pair;
+.field public static final PocoX3Pro_S5K3T2_new_1_OFF:[Landroid/util/Pair;
 
-.field static final PocoX3Pro_S5K3T2_new_1_SC:[Landroid/util/Pair;
+.field public static final PocoX3Pro_S5K3T2_new_1_SC:[Landroid/util/Pair;
 
-.field static final PocoX3_hi1337_21_DNF_OFF:[Landroid/util/Pair;
+.field public static final PocoX3_hi1337_21_DNF_OFF:[Landroid/util/Pair;
 
-.field static final PocoX3_hi1337_21_DNF_SC:[Landroid/util/Pair;
+.field public static final PocoX3_hi1337_21_DNF_SC:[Landroid/util/Pair;
 
-.field static final PocoX3_hi259_22_DNF_OFF:[Landroid/util/Pair;
+.field public static final PocoX3_hi259_22_DNF_OFF:[Landroid/util/Pair;
 
-.field static final PocoX3_hi259_22_DNF_SC:[Landroid/util/Pair;
+.field public static final PocoX3_hi259_22_DNF_SC:[Landroid/util/Pair;
 
-.field static final PocoX3_imx682_0_DNF_OFF:[Landroid/util/Pair;
+.field public static final PocoX3_imx682_0_DNF_OFF:[Landroid/util/Pair;
 
-.field static final PocoX3_imx682_0_DNF_SC:[Landroid/util/Pair;
+.field public static final PocoX3_imx682_0_DNF_SC:[Landroid/util/Pair;
 
-.field static final PocoX3_s5k3t2_1_DNF_OFF:[Landroid/util/Pair;
+.field public static final PocoX3_s5k3t2_1_DNF_OFF:[Landroid/util/Pair;
 
-.field static final PocoX3_s5k3t2_1_DNF_SC:[Landroid/util/Pair;
+.field public static final PocoX3_s5k3t2_1_DNF_SC:[Landroid/util/Pair;
 
-.field static final Pocox3nfc_imx682_i_sony_661_OFF:[Landroid/util/Pair;
+.field public static final Pocox3nfc_imx682_i_sony_661_OFF:[Landroid/util/Pair;
 
-.field static final Pocox3nfc_imx682_i_sony_661_SC:[Landroid/util/Pair;
+.field public static final Pocox3nfc_imx682_i_sony_661_SC:[Landroid/util/Pair;
 
-.field static final RN10PRO_HM2_0_OFF:[Landroid/util/Pair;
+.field public static final RN10PRO_HM2_0_OFF:[Landroid/util/Pair;
 
-.field static final RN10PRO_HM2_0_SC:[Landroid/util/Pair;
+.field public static final RN10PRO_HM2_0_SC:[Landroid/util/Pair;
 
-.field static final RN10PRO_IMX355_4_OFF:[Landroid/util/Pair;
+.field public static final RN10PRO_IMX355_4_OFF:[Landroid/util/Pair;
 
-.field static final RN10PRO_IMX355_4_SC:[Landroid/util/Pair;
+.field public static final RN10PRO_IMX355_4_SC:[Landroid/util/Pair;
 
-.field static final RN10PRO_IMX471_1_OFF:[Landroid/util/Pair;
+.field public static final RN10PRO_IMX471_1_OFF:[Landroid/util/Pair;
 
-.field static final RN10PRO_IMX471_1_SC:[Landroid/util/Pair;
+.field public static final RN10PRO_IMX471_1_SC:[Landroid/util/Pair;
 
-.field static final RN10PRO_OV5675_3_OFF:[Landroid/util/Pair;
+.field public static final RN10PRO_OV5675_3_OFF:[Landroid/util/Pair;
 
-.field static final RN10PRO_OV5675_3_SC:[Landroid/util/Pair;
+.field public static final RN10PRO_OV5675_3_SC:[Landroid/util/Pair;
 
-.field static final RN7_s5kgm1_0_OFF:[Landroid/util/Pair;
+.field public static final RN7_s5kgm1_0_OFF:[Landroid/util/Pair;
 
-.field static final RN7_s5kgm1_0_SC:[Landroid/util/Pair;
+.field public static final RN7_s5kgm1_0_SC:[Landroid/util/Pair;
 
-.field static final RN9PRO_GC8034_21_OFF:[Landroid/util/Pair;
+.field public static final RN9PRO_GC8034_21_OFF:[Landroid/util/Pair;
 
-.field static final RN9PRO_GC8034_21_SC:[Landroid/util/Pair;
+.field public static final RN9PRO_GC8034_21_SC:[Landroid/util/Pair;
 
-.field static final RN9PRO_GW1_0_OFF:[Landroid/util/Pair;
+.field public static final RN9PRO_GW1_0_OFF:[Landroid/util/Pair;
 
-.field static final RN9PRO_GW1_0_SC:[Landroid/util/Pair;
+.field public static final RN9PRO_GW1_0_SC:[Landroid/util/Pair;
 
-.field static final RN9PRO_SK5E9_22_OFF:[Landroid/util/Pair;
+.field public static final RN9PRO_SK5E9_22_OFF:[Landroid/util/Pair;
 
-.field static final RN9PRO_SK5E9_22_SC:[Landroid/util/Pair;
+.field public static final RN9PRO_SK5E9_22_SC:[Landroid/util/Pair;
 
-.field static final RN9S_GC02M1_20_OFF:[Landroid/util/Pair;
+.field public static final RN9S_GC02M1_20_OFF:[Landroid/util/Pair;
 
-.field static final RN9S_GC02M1_20_SC:[Landroid/util/Pair;
+.field public static final RN9S_GC02M1_20_SC:[Landroid/util/Pair;
 
-.field static final RN9S_OV16A1Q_1_NOISE_fix_OFF:[Landroid/util/Pair;
+.field public static final RN9S_OV16A1Q_1_NOISE_fix_OFF:[Landroid/util/Pair;
 
-.field static final RN9S_OV16A1Q_1_NOISE_fix_SC:[Landroid/util/Pair;
+.field public static final RN9S_OV16A1Q_1_NOISE_fix_SC:[Landroid/util/Pair;
 
-.field static final RN9S_OV8856_21_OFF:[Landroid/util/Pair;
+.field public static final RN9S_OV8856_21_OFF:[Landroid/util/Pair;
 
-.field static final RN9S_OV8856_21_SC:[Landroid/util/Pair;
+.field public static final RN9S_OV8856_21_SC:[Landroid/util/Pair;
 
-.field static final RN9S_S5K5E9_22_OFF:[Landroid/util/Pair;
+.field public static final RN9S_S5K5E9_22_OFF:[Landroid/util/Pair;
 
-.field static final RN9S_S5K5E9_22_SC:[Landroid/util/Pair;
+.field public static final RN9S_S5K5E9_22_SC:[Landroid/util/Pair;
 
-.field static final RN9S_S5KGM2_0_OFF:[Landroid/util/Pair;
+.field public static final RN9S_S5KGM2_0_OFF:[Landroid/util/Pair;
 
-.field static final RN9S_S5KGM2_0_SC:[Landroid/util/Pair;
+.field public static final RN9S_S5KGM2_0_SC:[Landroid/util/Pair;
 
-.field static final RN9S_fix_S5KGM2_0_OFF:[Landroid/util/Pair;
+.field public static final RN9S_fix_S5KGM2_0_OFF:[Landroid/util/Pair;
 
-.field static final RN9S_fix_S5KGM2_0_SC:[Landroid/util/Pair;
+.field public static final RN9S_fix_S5KGM2_0_SC:[Landroid/util/Pair;
 
-.field static final RealmeX2PROTest_GW1_OFF:[Landroid/util/Pair;
+.field public static final RealmeX2PROTest_GW1_OFF:[Landroid/util/Pair;
 
-.field static final RealmeX2PROTest_GW1_SC:[Landroid/util/Pair;
+.field public static final RealmeX2PROTest_GW1_SC:[Landroid/util/Pair;
 
-.field static final RealmeX2PRO_GW1_OFF:[Landroid/util/Pair;
+.field public static final RealmeX2PRO_GW1_OFF:[Landroid/util/Pair;
 
-.field static final RealmeX2PRO_GW1_SC:[Landroid/util/Pair;
+.field public static final RealmeX2PRO_GW1_SC:[Landroid/util/Pair;
 
-.field static final RedmiNote8Pro_Main16_S5KGW1_OFF:[Landroid/util/Pair;
+.field public static final RedmiNote8Pro_Main16_S5KGW1_OFF:[Landroid/util/Pair;
 
-.field static final RedmiNote8Pro_Main16_S5KGW1_SC:[Landroid/util/Pair;
+.field public static final RedmiNote8Pro_Main16_S5KGW1_SC:[Landroid/util/Pair;
 
-.field static final RedmiNote8Pro_Wide_ov8856_OFF:[Landroid/util/Pair;
+.field public static final RedmiNote8Pro_Wide_ov8856_OFF:[Landroid/util/Pair;
 
-.field static final RedmiNote8Pro_Wide_ov8856_SC:[Landroid/util/Pair;
+.field public static final RedmiNote8Pro_Wide_ov8856_SC:[Landroid/util/Pair;
 
-.field static final S20FE_HI847_OFF:[Landroid/util/Pair;
+.field public static final S20FE_HI847_OFF:[Landroid/util/Pair;
 
-.field static final S20FE_HI847_SC:[Landroid/util/Pair;
+.field public static final S20FE_HI847_SC:[Landroid/util/Pair;
 
-.field static final S20FE_IMX555_OFF:[Landroid/util/Pair;
+.field public static final S20FE_IMX555_OFF:[Landroid/util/Pair;
 
-.field static final S20FE_IMX555_SC:[Landroid/util/Pair;
+.field public static final S20FE_IMX555_SC:[Landroid/util/Pair;
 
-.field static final S20FE_IMX616_OFF:[Landroid/util/Pair;
+.field public static final S20FE_IMX616_OFF:[Landroid/util/Pair;
 
-.field static final S20FE_IMX616_SC:[Landroid/util/Pair;
+.field public static final S20FE_IMX616_SC:[Landroid/util/Pair;
 
-.field static final S20FE_IMX616_cropped_OFF:[Landroid/util/Pair;
+.field public static final S20FE_IMX616_cropped_OFF:[Landroid/util/Pair;
 
-.field static final S20FE_IMX616_cropped_SC:[Landroid/util/Pair;
+.field public static final S20FE_IMX616_cropped_SC:[Landroid/util/Pair;
 
-.field static final S20FE_S5K3L6_OFF:[Landroid/util/Pair;
+.field public static final S20FE_S5K3L6_OFF:[Landroid/util/Pair;
 
-.field static final S20FE_S5K3L6_SC:[Landroid/util/Pair;
+.field public static final S20FE_S5K3L6_SC:[Landroid/util/Pair;
 
-.field static final S5K2L4SX_OFF:[Landroid/util/Pair;
+.field public static final S5K2L4SX_OFF:[Landroid/util/Pair;
 
-.field static final S5K2L4SX_SC:[Landroid/util/Pair;
+.field public static final S5K2L4SX_SC:[Landroid/util/Pair;
 
-.field static final S5K2L7_MN10b_OFF:[Landroid/util/Pair;
+.field public static final S5K2L7_MN10b_OFF:[Landroid/util/Pair;
 
-.field static final S5K2L7_MN10b_SC:[Landroid/util/Pair;
+.field public static final S5K2L7_MN10b_SC:[Landroid/util/Pair;
 
-.field static final S5K3M5_OFF:[Landroid/util/Pair;
+.field public static final S5K3M5_OFF:[Landroid/util/Pair;
 
-.field static final S5K3M5_SAP_OFF:[Landroid/util/Pair;
+.field public static final S5K3M5_SAP_OFF:[Landroid/util/Pair;
 
-.field static final S5K3M5_SAP_SC:[Landroid/util/Pair;
+.field public static final S5K3M5_SAP_SC:[Landroid/util/Pair;
 
-.field static final S5K3M5_SC:[Landroid/util/Pair;
+.field public static final S5K3M5_SC:[Landroid/util/Pair;
 
-.field static final S5K3P9SN_OFF:[Landroid/util/Pair;
+.field public static final S5K3P9SN_OFF:[Landroid/util/Pair;
 
-.field static final S5K3P9SN_SC:[Landroid/util/Pair;
+.field public static final S5K3P9SN_SC:[Landroid/util/Pair;
 
-.field static final S5K3T2_OFF:[Landroid/util/Pair;
+.field public static final S5K3T2_OFF:[Landroid/util/Pair;
 
-.field static final S5K3T2_SAVITAR_OFF:[Landroid/util/Pair;
+.field public static final S5K3T2_SAVITAR_OFF:[Landroid/util/Pair;
 
-.field static final S5K3T2_SAVITAR_SC:[Landroid/util/Pair;
+.field public static final S5K3T2_SAVITAR_SC:[Landroid/util/Pair;
 
-.field static final S5K3T2_SC:[Landroid/util/Pair;
+.field public static final S5K3T2_SC:[Landroid/util/Pair;
 
-.field static final S5K5E9_OFF:[Landroid/util/Pair;
+.field public static final S5K5E9_OFF:[Landroid/util/Pair;
 
-.field static final S5K5E9_SC:[Landroid/util/Pair;
+.field public static final S5K5E9_SC:[Landroid/util/Pair;
 
-.field static final S5KGH1_OFF:[Landroid/util/Pair;
+.field public static final S5KGH1_OFF:[Landroid/util/Pair;
 
-.field static final S5KGH1_SC:[Landroid/util/Pair;
+.field public static final S5KGH1_SC:[Landroid/util/Pair;
 
-.field static final S5KGM2_CSTARK_OFF:[Landroid/util/Pair;
+.field public static final S5KGM2_CSTARK_OFF:[Landroid/util/Pair;
 
-.field static final S5KGM2_CSTARK_SC:[Landroid/util/Pair;
+.field public static final S5KGM2_CSTARK_SC:[Landroid/util/Pair;
 
-.field static final S5KHMX1_SAVITAR_OFF:[Landroid/util/Pair;
+.field public static final S5KHMX1_SAVITAR_OFF:[Landroid/util/Pair;
 
-.field static final S5KHMX1_SAVITAR_SC:[Landroid/util/Pair;
+.field public static final S5KHMX1_SAVITAR_SC:[Landroid/util/Pair;
 
-.field static final S5KHMX_MN10H_OFF:[Landroid/util/Pair;
+.field public static final S5KHMX_MN10H_OFF:[Landroid/util/Pair;
 
-.field static final S5KHMX_MN10H_SC:[Landroid/util/Pair;
+.field public static final S5KHMX_MN10H_SC:[Landroid/util/Pair;
 
-.field static final S5KHMX_MN10b_OFF:[Landroid/util/Pair;
+.field public static final S5KHMX_MN10b_OFF:[Landroid/util/Pair;
 
-.field static final S5KHMX_MN10b_SC:[Landroid/util/Pair;
+.field public static final S5KHMX_MN10b_SC:[Landroid/util/Pair;
 
-.field static final S5KHMX_OFF:[Landroid/util/Pair;
+.field public static final S5KHMX_OFF:[Landroid/util/Pair;
 
-.field static final S5KHMX_SAVITAR_OFF:[Landroid/util/Pair;
+.field public static final S5KHMX_SAVITAR_OFF:[Landroid/util/Pair;
 
-.field static final S5KHMX_SAVITAR_SC:[Landroid/util/Pair;
+.field public static final S5KHMX_SAVITAR_SC:[Landroid/util/Pair;
 
-.field static final S5KHMX_SC:[Landroid/util/Pair;
+.field public static final S5KHMX_SC:[Landroid/util/Pair;
 
-.field static final SAVITAR_Macro_OFF:[Landroid/util/Pair;
+.field public static final SAVITAR_Macro_OFF:[Landroid/util/Pair;
 
-.field static final SAVITAR_Macro_SC:[Landroid/util/Pair;
+.field public static final SAVITAR_Macro_SC:[Landroid/util/Pair;
 
-.field static final Samsung_S5KGW1_2_OFF:[Landroid/util/Pair;
+.field public static final Samsung_S5KGW1_2_OFF:[Landroid/util/Pair;
 
-.field static final Samsung_S5KGW1_2_SC:[Landroid/util/Pair;
+.field public static final Samsung_S5KGW1_2_SC:[Landroid/util/Pair;
 
-.field static final UWA_SAVITAR_OFF:[Landroid/util/Pair;
+.field public static final UWA_SAVITAR_OFF:[Landroid/util/Pair;
 
-.field static final UWA_SAVITAR_SC:[Landroid/util/Pair;
+.field public static final UWA_SAVITAR_SC:[Landroid/util/Pair;
 
-.field static final s5kjn1_RN11_OFF:[Landroid/util/Pair;
+.field public static final s5kjn1_RN11_OFF:[Landroid/util/Pair;
 
-.field static final s5kjn1_RN11_SC:[Landroid/util/Pair;
+.field public static final s5kjn1_RN11_SC:[Landroid/util/Pair;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 18
 
     .line 255
@@ -21275,7 +21275,7 @@
     .end packed-switch
 .end method
 
-.method static a(II[Landroid/util/Pair;)D
+.method public static a(II[Landroid/util/Pair;)D
     .locals 6
     .param p0, "i"    # I
     .param p1, "i2"    # I
@@ -21324,7 +21324,7 @@
     return-wide v0
 .end method
 
-.method static b(III[Landroid/util/Pair;)D
+.method public static b(III[Landroid/util/Pair;)D
     .locals 14
     .param p0, "i"    # I
     .param p1, "i2"    # I

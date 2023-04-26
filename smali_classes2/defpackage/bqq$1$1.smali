@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -24,19 +24,19 @@
 
 .field public d:Ldefpackage/jtx;
 
-.field final synthetic this$1:Ldefpackage/bqq$1;
+.field public final synthetic this$1:Ldefpackage/bqq$1;
 
-.field final synthetic val$cameraActivityTiming2:Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;
+.field public final synthetic val$cameraActivityTiming2:Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;
 
-.field final synthetic val$ddfVar3:Ldefpackage/ddf;
+.field public final synthetic val$ddfVar3:Ldefpackage/ddf;
 
-.field final synthetic val$jtxVar2:Ldefpackage/jtx;
+.field public final synthetic val$jtxVar2:Ldefpackage/jtx;
 
-.field final synthetic val$ojcVar2:Ldefpackage/ojc;
+.field public final synthetic val$ojcVar2:Ldefpackage/ojc;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/bqq$1;Ldefpackage/ddf;Ldefpackage/ojc;Ldefpackage/jtx;Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;)V
+.method public constructor <init>(Ldefpackage/bqq$1;Ldefpackage/ddf;Ldefpackage/ojc;Ldefpackage/jtx;Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;)V
     .locals 0
     .param p1, "this$1"    # Ldefpackage/bqq$1;
 

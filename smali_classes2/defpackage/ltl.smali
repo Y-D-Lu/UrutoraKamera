@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/lnp;
+.field public final a:Ldefpackage/lnp;
 
-.field protected final b:Ldefpackage/lis;
+.field public final b:Ldefpackage/lis;
 
-.field protected final c:Ldefpackage/ljf;
+.field public final c:Ldefpackage/ljf;
 
-.field protected final d:I
+.field public final d:I
 
 .field private final e:Ldefpackage/luk;
 
@@ -97,7 +97,7 @@
 
 
 # virtual methods
-.method protected abstract a(Ldefpackage/lzp;Ldefpackage/lsp;Ljava/util/List;Landroid/os/Handler;)V
+.method public abstract a(Ldefpackage/lzp;Ldefpackage/lsp;Ljava/util/List;Landroid/os/Handler;)V
 .end method
 
 .method public final b(Ldefpackage/lzp;Ldefpackage/lsp;Ljava/util/List;Ljava/util/List;Ldefpackage/lap;Landroid/os/Handler;Ljava/util/concurrent/Executor;)V

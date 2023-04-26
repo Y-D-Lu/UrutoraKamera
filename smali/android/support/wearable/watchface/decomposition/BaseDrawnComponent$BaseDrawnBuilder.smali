@@ -9,17 +9,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x400
+    accessFlags = 0x401
     name = "BaseDrawnBuilder"
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Landroid/support/wearable/watchface/decomposition/BaseDrawnComponent;
+.field public final synthetic this$0:Landroid/support/wearable/watchface/decomposition/BaseDrawnComponent;
 
 
 # direct methods
-.method constructor <init>(Landroid/support/wearable/watchface/decomposition/BaseDrawnComponent;)V
+.method public constructor <init>(Landroid/support/wearable/watchface/decomposition/BaseDrawnComponent;)V
     .locals 0
     .param p1, "this$0"    # Landroid/support/wearable/watchface/decomposition/BaseDrawnComponent;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final mMat:[F
+.field public final mMat:[F
 
 
 # direct methods

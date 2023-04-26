@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/nio/ByteBuffer;
+.field public final a:Ljava/nio/ByteBuffer;
 
-.field final b:Ldefpackage/bct;
+.field public final b:Ldefpackage/bct;
 
 
 # direct methods

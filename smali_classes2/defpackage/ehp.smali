@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ehr;
+.field public final a:Ldefpackage/ehr;
 
 
 # direct methods

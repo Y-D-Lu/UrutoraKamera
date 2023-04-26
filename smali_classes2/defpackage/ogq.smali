@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 11
@@ -50,7 +50,7 @@
     return-void
 .end method
 
-.method static a()Ldefpackage/ogi;
+.method public static a()Ldefpackage/ogi;
     .locals 1
 
     .line 20

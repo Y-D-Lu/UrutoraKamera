@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method protected final onBindView(Landroid/view/View;)V
+.method public final onBindView(Landroid/view/View;)V
     .locals 2
     .param p1, "view"    # Landroid/view/View;
 

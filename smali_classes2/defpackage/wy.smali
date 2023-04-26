@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field a:Ldefpackage/ws;
+.field public a:Ldefpackage/ws;
 
-.field b:Ldefpackage/wu;
+.field public b:Ldefpackage/wu;
 
-.field c:Ldefpackage/ww;
+.field public c:Ldefpackage/ww;
 
 
 # direct methods

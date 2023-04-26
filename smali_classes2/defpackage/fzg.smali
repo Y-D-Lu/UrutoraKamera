@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fzh;
+.field public final a:Ldefpackage/fzh;
 
 
 # direct methods

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/view/View;
+.field public final a:Landroid/view/View;
 
-.field final b:Ljava/lang/Runnable;
+.field public final b:Ljava/lang/Runnable;
 
 
 # direct methods

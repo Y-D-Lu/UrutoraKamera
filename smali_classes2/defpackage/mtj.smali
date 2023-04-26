@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/libraries/oliveoil/natives/BitmapNativeBuffer;
+.field public final a:Lcom/google/android/libraries/oliveoil/natives/BitmapNativeBuffer;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method protected final b(Ljava/lang/Object;)V
+.method public final b(Ljava/lang/Object;)V
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
 

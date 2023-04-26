@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lbd;
+.field public final a:Ldefpackage/lbd;
 
-.field final b:Z
+.field public final b:Z
 
 .field private final c:Ljava/util/concurrent/atomic/AtomicInteger;
 

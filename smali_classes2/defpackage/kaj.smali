@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Landroid/view/View;
+.field public final a:Landroid/view/View;
 
 
 # direct methods

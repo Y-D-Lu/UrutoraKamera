@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hqu;
+.field public final a:Ldefpackage/hqu;
 
 
 # direct methods

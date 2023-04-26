@@ -8,7 +8,7 @@
 
 .field public b:I
 
-.field c:Ljava/lang/Object;
+.field public c:Ljava/lang/Object;
 
 .field public d:I
 

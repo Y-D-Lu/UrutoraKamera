@@ -13,23 +13,23 @@
 
 .field public c:Z
 
-.field final d:Ldefpackage/zg;
+.field public final d:Ldefpackage/zg;
 
-.field e:I
+.field public e:I
 
 .field public f:I
 
-.field g:I
+.field public g:I
 
-.field h:Ldefpackage/yy;
+.field public h:Ldefpackage/yy;
 
 .field public i:Z
 
-.field final j:Ljava/util/List;
+.field public final j:Ljava/util/List;
 
-.field final k:Ljava/util/List;
+.field public final k:Ljava/util/List;
 
-.field l:I
+.field public l:I
 
 
 # direct methods

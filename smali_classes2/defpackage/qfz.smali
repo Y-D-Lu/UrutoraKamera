@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qga;
+.field public final a:Ldefpackage/qga;
 
 
 # direct methods

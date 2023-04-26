@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method protected final b()Ljava/lang/String;
+.method public final b()Ljava/lang/String;
     .locals 2
 
     .line 17

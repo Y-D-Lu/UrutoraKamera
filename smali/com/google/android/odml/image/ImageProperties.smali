@@ -21,7 +21,7 @@
     return-void
 .end method
 
-.method static builder()Lcom/google/android/odml/image/ImageProperties$Builder;
+.method public static builder()Lcom/google/android/odml/image/ImageProperties$Builder;
     .locals 1
 
     .line 18

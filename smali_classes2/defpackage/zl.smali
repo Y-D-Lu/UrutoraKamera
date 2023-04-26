@@ -18,7 +18,7 @@
 
 .field public g:I
 
-.field final h:Landroidx/constraintlayout/widget/ConstraintLayout;
+.field public final h:Landroidx/constraintlayout/widget/ConstraintLayout;
 
 
 # direct methods

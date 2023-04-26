@@ -38,7 +38,7 @@
 
 .field public o:Landroid/animation/ValueAnimator;
 
-.field p:Landroid/animation/ValueAnimator;
+.field public p:Landroid/animation/ValueAnimator;
 
 .field public q:Ljava/util/List;
 
@@ -56,7 +56,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 51

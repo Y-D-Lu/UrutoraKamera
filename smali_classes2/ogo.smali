@@ -1,3 +1,3 @@
-.class interface abstract Logo;
+.class public interface abstract Logo;
 .super Ljava/lang/Object;
 .source ""

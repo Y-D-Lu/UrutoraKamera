@@ -29,7 +29,7 @@
 
 
 # virtual methods
-.method protected final c()V
+.method public final c()V
     .locals 2
 
     .line 19

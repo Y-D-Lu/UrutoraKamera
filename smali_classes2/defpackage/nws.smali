@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/material/appbar/AppBarLayout;
+.field public final a:Lcom/google/android/material/appbar/AppBarLayout;
 
-.field final b:Z
+.field public final b:Z
 
 
 # direct methods

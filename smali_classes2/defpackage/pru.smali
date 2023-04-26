@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lsun/misc/Unsafe;
+.field public final a:Lsun/misc/Unsafe;
 
 
 # direct methods

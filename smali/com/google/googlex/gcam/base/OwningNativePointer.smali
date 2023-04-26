@@ -11,7 +11,7 @@
 
 
 # direct methods
-.method protected constructor <init>(J)V
+.method public constructor <init>(J)V
     .locals 0
     .param p1, "j"    # J
 
@@ -72,7 +72,7 @@
     throw v0
 .end method
 
-.method protected final declared-synchronized finalize()V
+.method public final declared-synchronized finalize()V
     .locals 6
 
     monitor-enter p0

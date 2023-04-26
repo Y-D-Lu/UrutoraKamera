@@ -12,15 +12,15 @@
 
 
 # instance fields
-.field final c:Ldefpackage/ksh;
+.field public final c:Ldefpackage/ksh;
 
-.field final d:Ljava/util/List;
+.field public final d:Ljava/util/List;
 
-.field final e:Ljava/lang/String;
+.field public final e:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 9
 
     .line 17

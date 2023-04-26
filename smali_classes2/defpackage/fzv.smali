@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fzx;
+.field public final a:Ldefpackage/fzx;
 
 .field private b:Z
 

@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ljava/util/List;
 
-.field b:Ldefpackage/lie;
+.field public b:Ldefpackage/lie;
 
 .field private c:Z
 

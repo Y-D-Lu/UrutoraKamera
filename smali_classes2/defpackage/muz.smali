@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/List;
+.field public final a:Ljava/util/List;
 
 .field public volatile b:Z
 

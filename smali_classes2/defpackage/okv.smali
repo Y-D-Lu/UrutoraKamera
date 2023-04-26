@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field a:Ljava/util/Map$Entry;
+.field public a:Ljava/util/Map$Entry;
 
-.field final b:Ljava/util/Iterator;
+.field public final b:Ljava/util/Iterator;
 
-.field final c:Ldefpackage/okw;
+.field public final c:Ldefpackage/okw;
 
 
 # direct methods

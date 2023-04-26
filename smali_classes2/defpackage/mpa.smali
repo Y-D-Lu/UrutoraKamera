@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method protected constructor <init>(Ldefpackage/mpi;Ldefpackage/mnb;)V
+.method public constructor <init>(Ldefpackage/mpi;Ldefpackage/mnb;)V
     .locals 0
     .param p1, "mpiVar"    # Ldefpackage/mpi;
     .param p2, "mnbVar"    # Ldefpackage/mnb;

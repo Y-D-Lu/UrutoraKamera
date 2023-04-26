@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ljava/util/ArrayList;
+.field public a:Ljava/util/ArrayList;
 
 .field private b:I
 

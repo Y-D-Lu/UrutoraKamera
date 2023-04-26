@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ooh;
+.field public final a:Ldefpackage/ooh;
 
 .field public final b:Ldefpackage/gog;
 
@@ -12,15 +12,15 @@
 
 .field public final d:Ldefpackage/pih;
 
-.field final e:Ldefpackage/pih;
+.field public final e:Ldefpackage/pih;
 
 .field public final f:Ldefpackage/lzv;
 
 .field public final g:Lcom/google/googlex/gcam/BurstSpec;
 
-.field h:Ljava/util/List;
+.field public h:Ljava/util/List;
 
-.field i:Z
+.field public i:Z
 
 .field public j:I
 

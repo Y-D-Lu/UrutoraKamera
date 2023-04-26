@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/List;
+.field public final a:Ljava/util/List;
 
 
 # direct methods

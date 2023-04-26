@@ -4,17 +4,17 @@
 
 
 # static fields
-.field static final a:Ldefpackage/qiw;
+.field public static final a:Ldefpackage/qiw;
 
-.field static final b:Ljava/util/concurrent/ScheduledExecutorService;
+.field public static final b:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # instance fields
-.field final c:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final c:Ljava/util/concurrent/atomic/AtomicReference;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 5
 
     .line 17

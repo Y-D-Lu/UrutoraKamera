@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 9
@@ -513,5 +513,5 @@
     throw v2
 .end method
 
-.method protected abstract d(Ljava/util/List;Lgox;Ldefpackage/gog;)Z
+.method public abstract d(Ljava/util/List;Lgox;Ldefpackage/gog;)Z
 .end method

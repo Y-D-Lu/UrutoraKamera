@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/io/DataOutput;
+.field public final a:Ljava/io/DataOutput;
 
 
 # direct methods

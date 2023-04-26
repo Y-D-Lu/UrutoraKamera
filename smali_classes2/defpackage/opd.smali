@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:[Ljava/lang/Object;
+.field public final a:[Ljava/lang/Object;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method readResolve()Ljava/lang/Object;
+.method public readResolve()Ljava/lang/Object;
     .locals 1
 
     .line 16

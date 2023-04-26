@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field a:Ljava/nio/ByteBuffer;
+.field public a:Ljava/nio/ByteBuffer;
 
-.field b:Z
+.field public b:Z
 
 .field private final d:Ljava/nio/channels/ReadableByteChannel;
 
@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 12

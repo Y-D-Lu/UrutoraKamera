@@ -8,19 +8,19 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field b:J
+.field public b:J
 
-.field c:F
+.field public c:F
 
-.field d:J
+.field public d:J
 
-.field e:I
+.field public e:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 14

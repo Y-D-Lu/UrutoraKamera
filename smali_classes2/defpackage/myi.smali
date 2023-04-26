@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field volatile b:Ldefpackage/mul;
+.field public volatile b:Ldefpackage/mul;
 
 .field public final c:Ldefpackage/pyn;
 
@@ -48,7 +48,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 15

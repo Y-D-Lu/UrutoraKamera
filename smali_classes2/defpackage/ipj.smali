@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 13
@@ -57,7 +57,7 @@
 
 
 # virtual methods
-.method protected final c()Ldefpackage/dcb;
+.method public final c()Ldefpackage/dcb;
     .locals 5
 
     .line 25
@@ -130,7 +130,7 @@
     return-object v2
 .end method
 
-.method protected final e(Ljava/util/Map;)Z
+.method public final e(Ljava/util/Map;)Z
     .locals 6
     .param p1, "map"    # Ljava/util/Map;
 

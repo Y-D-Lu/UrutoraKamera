@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mvq;
+.field public final a:Ldefpackage/mvq;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final initialValue()Ljava/lang/Object;
+.method public final initialValue()Ljava/lang/Object;
     .locals 4
 
     .line 14

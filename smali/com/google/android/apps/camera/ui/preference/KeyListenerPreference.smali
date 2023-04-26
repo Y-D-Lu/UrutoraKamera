@@ -285,7 +285,7 @@
     return-object v1
 .end method
 
-.method protected final onClick()V
+.method public final onClick()V
     .locals 12
 
     .line 97
@@ -505,7 +505,7 @@
     return-void
 .end method
 
-.method protected final onDialogClosed(Z)V
+.method public final onDialogClosed(Z)V
     .locals 2
     .param p1, "z"    # Z
 
@@ -541,7 +541,7 @@
     return-void
 .end method
 
-.method protected final onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
+.method public final onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 2
     .param p1, "typedArray"    # Landroid/content/res/TypedArray;
     .param p2, "i"    # I
@@ -566,7 +566,7 @@
     return-object v1
 .end method
 
-.method protected final onSetInitialValue(ZLjava/lang/Object;)V
+.method public final onSetInitialValue(ZLjava/lang/Object;)V
     .locals 1
     .param p1, "z"    # Z
     .param p2, "obj"    # Ljava/lang/Object;

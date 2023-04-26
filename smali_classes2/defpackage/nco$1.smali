@@ -12,27 +12,27 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/nco;
+.field public final synthetic this$0:Ldefpackage/nco;
 
-.field final synthetic val$context:Landroid/content/Context;
+.field public final synthetic val$context:Landroid/content/Context;
 
-.field final synthetic val$executor:Ljava/util/concurrent/Executor;
+.field public final synthetic val$executor:Ljava/util/concurrent/Executor;
 
-.field final synthetic val$nctVar:Ldefpackage/nct;
+.field public final synthetic val$nctVar:Ldefpackage/nct;
 
-.field final synthetic val$pynVar:Ldefpackage/pyn;
+.field public final synthetic val$pynVar:Ldefpackage/pyn;
 
-.field final synthetic val$qkgVar2:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar2:Ldefpackage/qkg;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/nco;Landroid/content/Context;Ldefpackage/nct;Ldefpackage/pyn;Ldefpackage/qkg;Ljava/util/concurrent/Executor;)V
+.method public constructor <init>(Ldefpackage/nco;Landroid/content/Context;Ldefpackage/nct;Ldefpackage/pyn;Ldefpackage/qkg;Ljava/util/concurrent/Executor;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/nco;
 

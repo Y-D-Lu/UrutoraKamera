@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;
+.field public final a:Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;
 
-.field final b:Ldefpackage/ctr;
+.field public final b:Ldefpackage/ctr;
 
 
 # direct methods

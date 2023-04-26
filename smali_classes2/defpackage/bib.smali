@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/nio/ByteBuffer;
+.field public final a:Ljava/nio/ByteBuffer;
 
 
 # direct methods

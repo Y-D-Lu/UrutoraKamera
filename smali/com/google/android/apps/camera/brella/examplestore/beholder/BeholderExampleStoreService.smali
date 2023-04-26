@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method protected final a(Landroid/content/Context;Ldefpackage/ccu;Ldefpackage/ccs;)Ldefpackage/cbv;
+.method public final a(Landroid/content/Context;Ldefpackage/ccu;Ldefpackage/ccs;)Ldefpackage/cbv;
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "ccuVar"    # Ldefpackage/ccu;
@@ -37,7 +37,7 @@
     return-object v0
 .end method
 
-.method protected final declared-synchronized b(Landroid/content/Context;)Ldefpackage/cdf;
+.method public final declared-synchronized b(Landroid/content/Context;)Ldefpackage/cdf;
     .locals 2
     .param p1, "context"    # Landroid/content/Context;
 

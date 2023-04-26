@@ -11,37 +11,37 @@
 
 
 # instance fields
-.field final a:[I
+.field public final a:[I
 
-.field final b:Ljava/util/ArrayList;
+.field public final b:Ljava/util/ArrayList;
 
-.field final c:[I
+.field public final c:[I
 
-.field final d:[I
+.field public final d:[I
 
-.field final e:I
+.field public final e:I
 
-.field final f:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field final g:I
+.field public final g:I
 
-.field final h:I
+.field public final h:I
 
-.field final i:Ljava/lang/CharSequence;
+.field public final i:Ljava/lang/CharSequence;
 
-.field final j:I
+.field public final j:I
 
-.field final k:Ljava/lang/CharSequence;
+.field public final k:Ljava/lang/CharSequence;
 
-.field final l:Ljava/util/ArrayList;
+.field public final l:Ljava/util/ArrayList;
 
-.field final m:Ljava/util/ArrayList;
+.field public final m:Ljava/util/ArrayList;
 
-.field final n:Z
+.field public final n:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 13

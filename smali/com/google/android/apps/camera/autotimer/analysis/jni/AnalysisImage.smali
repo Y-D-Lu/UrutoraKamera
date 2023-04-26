@@ -51,7 +51,7 @@
 
 
 # virtual methods
-.method getHeight()I
+.method public getHeight()I
     .locals 1
 
     .line 44
@@ -64,7 +64,7 @@
     return v0
 .end method
 
-.method getPlanes()[Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;
+.method public getPlanes()[Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;
     .locals 5
 
     .line 48
@@ -118,7 +118,7 @@
     return-object v1
 .end method
 
-.method getWidth()I
+.method public getWidth()I
     .locals 1
 
     .line 57

@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Ldefpackage/dnw$1;
+.field public final synthetic this$1:Ldefpackage/dnw$1;
 
-.field final synthetic val$frameLayout:Landroid/widget/FrameLayout;
+.field public final synthetic val$frameLayout:Landroid/widget/FrameLayout;
 
-.field final synthetic val$frameLayout2:Landroid/widget/FrameLayout;
+.field public final synthetic val$frameLayout2:Landroid/widget/FrameLayout;
 
-.field final synthetic val$iusVar2:Ldefpackage/ius;
+.field public final synthetic val$iusVar2:Ldefpackage/ius;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/dnw$1;Ldefpackage/ius;Landroid/widget/FrameLayout;Landroid/widget/FrameLayout;)V
+.method public constructor <init>(Ldefpackage/dnw$1;Ldefpackage/ius;Landroid/widget/FrameLayout;Landroid/widget/FrameLayout;)V
     .locals 0
     .param p1, "this$1"    # Ldefpackage/dnw$1;
 

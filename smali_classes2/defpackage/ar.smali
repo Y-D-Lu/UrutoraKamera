@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field protected A:I
+.field public A:I
 
-.field protected B:I
+.field public B:I
 
 .field public C:I
 
-.field protected D:I
+.field public D:I
 
-.field protected E:I
+.field public E:I
 
 .field public F:I
 
@@ -26,33 +26,33 @@
 
 .field public K:I
 
-.field L:I
+.field public L:I
 
-.field M:I
+.field public M:I
 
-.field N:I
+.field public N:I
 
-.field O:I
+.field public O:I
 
-.field P:Z
+.field public P:Z
 
-.field Q:Z
+.field public Q:Z
 
-.field R:Z
+.field public R:Z
 
-.field S:Z
+.field public S:Z
 
-.field T:Z
+.field public T:Z
 
-.field U:Z
+.field public U:Z
 
 .field public V:I
 
 .field public W:I
 
-.field X:Z
+.field public X:Z
 
-.field Y:Z
+.field public Y:Z
 
 .field public Z:F
 
@@ -60,9 +60,9 @@
 
 .field public aa:F
 
-.field ab:Ldefpackage/ar;
+.field public ab:Ldefpackage/ar;
 
-.field ac:Ldefpackage/ar;
+.field public ac:Ldefpackage/ar;
 
 .field public ad:I
 
@@ -86,29 +86,29 @@
 
 .field public h:I
 
-.field final i:Ldefpackage/aq;
+.field public final i:Ldefpackage/aq;
 
-.field final j:Ldefpackage/aq;
+.field public final j:Ldefpackage/aq;
 
-.field final k:Ldefpackage/aq;
+.field public final k:Ldefpackage/aq;
 
-.field final l:Ldefpackage/aq;
+.field public final l:Ldefpackage/aq;
 
-.field final m:Ldefpackage/aq;
+.field public final m:Ldefpackage/aq;
 
-.field final n:Ldefpackage/aq;
+.field public final n:Ldefpackage/aq;
 
-.field final o:Ldefpackage/aq;
+.field public final o:Ldefpackage/aq;
 
-.field final p:Ldefpackage/aq;
+.field public final p:Ldefpackage/aq;
 
-.field protected final q:Ljava/util/ArrayList;
+.field public final q:Ljava/util/ArrayList;
 
 .field public r:Ldefpackage/ar;
 
-.field s:I
+.field public s:I
 
-.field t:I
+.field public t:I
 
 .field public u:F
 

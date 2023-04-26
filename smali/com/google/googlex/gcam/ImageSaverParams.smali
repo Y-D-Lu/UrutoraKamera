@@ -6,7 +6,7 @@
 # instance fields
 .field public transient a:J
 
-.field protected transient b:Z
+.field public transient b:Z
 
 
 # direct methods
@@ -112,7 +112,7 @@
     throw v0
 .end method
 
-.method protected final finalize()V
+.method public final finalize()V
     .locals 0
 
     .line 33

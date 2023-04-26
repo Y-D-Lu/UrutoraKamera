@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/pvl;
+.field public final synthetic this$0:Ldefpackage/pvl;
 
-.field final synthetic val$pviVar:Ldefpackage/pvi;
+.field public final synthetic val$pviVar:Ldefpackage/pvi;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/pvl;Ldefpackage/pvi;)V
+.method public constructor <init>(Ldefpackage/pvl;Ldefpackage/pvi;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/pvl;
 

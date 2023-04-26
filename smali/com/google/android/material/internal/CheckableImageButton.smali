@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 17
@@ -136,7 +136,7 @@
     return-object v0
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Parcelable;)V
+.method public final onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
@@ -172,7 +172,7 @@
     return-void
 .end method
 
-.method protected final onSaveInstanceState()Landroid/os/Parcelable;
+.method public final onSaveInstanceState()Landroid/os/Parcelable;
     .locals 2
 
     .line 60

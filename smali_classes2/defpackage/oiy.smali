@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:[Ljava/lang/Object;
+.field public final a:[Ljava/lang/Object;
 
-.field final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
-.field final c:Ljava/lang/Object;
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods

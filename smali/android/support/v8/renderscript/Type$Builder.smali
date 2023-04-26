@@ -15,21 +15,21 @@
 
 
 # instance fields
-.field mDimFaces:Z
+.field public mDimFaces:Z
 
-.field mDimMipmaps:Z
+.field public mDimMipmaps:Z
 
-.field mDimX:I
+.field public mDimX:I
 
-.field mDimY:I
+.field public mDimY:I
 
-.field mDimZ:I
+.field public mDimZ:I
 
-.field mElement:Landroid/support/v8/renderscript/Element;
+.field public mElement:Landroid/support/v8/renderscript/Element;
 
-.field mRS:Landroid/support/v8/renderscript/RenderScript;
+.field public mRS:Landroid/support/v8/renderscript/RenderScript;
 
-.field mYuv:I
+.field public mYuv:I
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/myi;
+.field public final a:Ldefpackage/myi;
 
 .field private final b:Ljava/lang/Thread$UncaughtExceptionHandler;
 

@@ -35,7 +35,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 27
@@ -89,7 +89,7 @@
     return-void
 .end method
 
-.method static synthetic access$000()Landroidx/window/layout/ExtensionWindowBackend;
+.method public static synthetic access$000()Landroidx/window/layout/ExtensionWindowBackend;
     .locals 1
 
     .line 21
@@ -98,7 +98,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$002(Landroidx/window/layout/ExtensionWindowBackend;)Landroidx/window/layout/ExtensionWindowBackend;
+.method public static synthetic access$002(Landroidx/window/layout/ExtensionWindowBackend;)Landroidx/window/layout/ExtensionWindowBackend;
     .locals 0
     .param p0, "x0"    # Landroidx/window/layout/ExtensionWindowBackend;
 
@@ -108,7 +108,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$100()Ljava/util/concurrent/locks/ReentrantLock;
+.method public static synthetic access$100()Ljava/util/concurrent/locks/ReentrantLock;
     .locals 1
 
     .line 21

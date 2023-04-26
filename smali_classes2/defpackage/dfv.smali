@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 22
@@ -580,7 +580,7 @@
     return-object v1
 .end method
 
-.method protected final m(Ldefpackage/dfj;)V
+.method public final m(Ldefpackage/dfj;)V
     .locals 11
     .param p1, "dfjVar"    # Ldefpackage/dfj;
 

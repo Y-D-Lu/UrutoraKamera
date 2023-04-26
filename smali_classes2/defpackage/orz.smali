@@ -7,13 +7,13 @@
 
 
 # static fields
-.field static final a:Ldefpackage/orz;
+.field public static final a:Ldefpackage/orz;
 
 .field private static final serialVersionUID:J
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 9

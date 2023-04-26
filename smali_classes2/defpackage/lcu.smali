@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lce;
+.field public final a:Ldefpackage/lce;
 
 
 # direct methods

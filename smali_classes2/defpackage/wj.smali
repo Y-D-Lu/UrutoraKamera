@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qpc;
+.field public final a:Ldefpackage/qpc;
 
 .field private final b:I
 

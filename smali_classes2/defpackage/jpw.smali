@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jpx;
+.field public final a:Ldefpackage/jpx;
 
 
 # direct methods

@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field final $consumer:Ldefpackage/fb;
+.field public final $consumer:Ldefpackage/fb;
 
-.field final $flow:Ldefpackage/qtr;
+.field public final $flow:Ldefpackage/qtr;
 
-.field label:I
+.field public label:I
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gib;
+.field public final a:Ldefpackage/gib;
 
 .field private final b:Ldefpackage/ghz;
 

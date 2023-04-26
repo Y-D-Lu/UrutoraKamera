@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static final a:Ldefpackage/df;
+.field public static final a:Ldefpackage/df;
 
 .field public static final b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 12
@@ -64,7 +64,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 5

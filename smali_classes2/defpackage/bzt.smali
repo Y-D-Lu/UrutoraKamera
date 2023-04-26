@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field a:Ldefpackage/ojt;
+.field public a:Ldefpackage/ojt;
 
-.field b:F
+.field public b:F
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 5

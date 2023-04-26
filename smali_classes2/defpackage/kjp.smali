@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
+.field public final a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final finalize()V
+.method public final finalize()V
     .locals 3
 
     .line 15

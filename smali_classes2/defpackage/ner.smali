@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nep;
+.field public final a:Ldefpackage/nep;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
 .field private final i:Ljava/lang/Object;
 
@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 22

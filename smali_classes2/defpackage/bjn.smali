@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bjl;
+.field public final a:Ldefpackage/bjl;
 
 .field private final b:Landroid/content/Context;
 

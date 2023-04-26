@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/ctr;
+.field public final synthetic this$0:Ldefpackage/ctr;
 
-.field final synthetic val$i14Final:I
+.field public final synthetic val$i14Final:I
 
-.field final synthetic val$recordSpeedSlider:Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;
+.field public final synthetic val$recordSpeedSlider:Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ctr;Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;I)V
+.method public constructor <init>(Ldefpackage/ctr;Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;I)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/ctr;
 

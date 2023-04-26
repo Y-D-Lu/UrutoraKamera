@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fjs;
+.field public final a:Ldefpackage/fjs;
 
-.field final b:Ldefpackage/fwk;
+.field public final b:Ldefpackage/fwk;
 
-.field final c:Ldefpackage/jlb;
+.field public final c:Ldefpackage/jlb;
 
-.field final d:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final e:Ldefpackage/exi;
+.field public final e:Ldefpackage/exi;
 
-.field final f:Ldefpackage/jrh;
+.field public final f:Ldefpackage/jrh;
 
 
 # direct methods

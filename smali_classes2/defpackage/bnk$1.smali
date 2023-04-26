@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/bnk;
+.field public final synthetic this$0:Ldefpackage/bnk;
 
-.field final synthetic val$a:Landroid/graphics/RectF;
+.field public final synthetic val$a:Landroid/graphics/RectF;
 
-.field final synthetic val$pointF:Landroid/graphics/PointF;
+.field public final synthetic val$pointF:Landroid/graphics/PointF;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/bnk;Landroid/graphics/PointF;Landroid/graphics/RectF;)V
+.method public constructor <init>(Ldefpackage/bnk;Landroid/graphics/PointF;Landroid/graphics/RectF;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/bnk;
 

@@ -18,37 +18,37 @@
 
 .field public e:J
 
-.field f:I
+.field public f:I
 
-.field g:I
+.field public g:I
 
 .field public h:Ldefpackage/qs;
 
 .field public i:Ldefpackage/qs;
 
-.field j:I
+.field public j:I
 
-.field k:Ljava/util/List;
+.field public k:Ljava/util/List;
 
-.field l:Ljava/util/List;
+.field public l:Ljava/util/List;
 
-.field m:Ldefpackage/qi;
+.field public m:Ldefpackage/qi;
 
-.field n:Z
+.field public n:Z
 
 .field public o:I
 
 .field public p:I
 
-.field q:Landroid/support/v7/widget/RecyclerView;
+.field public q:Landroid/support/v7/widget/RecyclerView;
 
-.field r:Ldefpackage/pu;
+.field public r:Ldefpackage/pu;
 
 .field private t:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 16

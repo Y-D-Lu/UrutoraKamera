@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nog;
+.field public final a:Ldefpackage/nog;
 
-.field final b:Ldefpackage/nrl;
+.field public final b:Ldefpackage/nrl;
 
 .field private final c:I
 

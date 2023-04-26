@@ -9,9 +9,9 @@
 
 
 # instance fields
-.field protected final c:Landroid/app/DownloadManager;
+.field public final c:Landroid/app/DownloadManager;
 
-.field protected final d:Landroid/content/Context;
+.field public final d:Landroid/content/Context;
 
 
 # direct methods

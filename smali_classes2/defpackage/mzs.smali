@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/phw;
+.field public final a:Ldefpackage/phw;
 
-.field final b:Ldefpackage/mzu;
+.field public final b:Ldefpackage/mzu;
 
 
 # direct methods

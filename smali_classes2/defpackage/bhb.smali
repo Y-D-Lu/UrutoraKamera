@@ -16,11 +16,11 @@
 
 .field public static final f:Ldefpackage/azs;
 
-.field static final g:Z
+.field public static final g:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 6

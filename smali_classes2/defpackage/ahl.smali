@@ -9,11 +9,11 @@
 
 
 # instance fields
-.field final d:Landroid/support/v7/widget/RecyclerView;
+.field public final d:Landroid/support/v7/widget/RecyclerView;
 
-.field final e:Ldefpackage/fg;
+.field public final e:Ldefpackage/fg;
 
-.field final f:Ldefpackage/fg;
+.field public final f:Ldefpackage/fg;
 
 
 # direct methods

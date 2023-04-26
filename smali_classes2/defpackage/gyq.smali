@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gyr;
+.field public final a:Ldefpackage/gyr;
 
 
 # direct methods

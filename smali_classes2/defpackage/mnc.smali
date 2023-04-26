@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method protected constructor <init>(Ljava/lang/Throwable;)V
+.method public constructor <init>(Ljava/lang/Throwable;)V
     .locals 1
     .param p1, "th"    # Ljava/lang/Throwable;
 

@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 12
@@ -1005,7 +1005,7 @@
     return-object v5
 .end method
 
-.method protected final m(Ljava/nio/charset/Charset;)Ljava/lang/String;
+.method public final m(Ljava/nio/charset/Charset;)Ljava/lang/String;
     .locals 2
     .param p1, "charset"    # Ljava/nio/charset/Charset;
 
@@ -1095,7 +1095,7 @@
     return-object v0
 .end method
 
-.method writeReplace()Ljava/lang/Object;
+.method public writeReplace()Ljava/lang/Object;
     .locals 1
 
     .line 254

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Lcpl;
+.field public final a:Lcpl;
 
-.field final b:Ldefpackage/fzx;
+.field public final b:Ldefpackage/fzx;
 
 .field private final c:Llda;
 

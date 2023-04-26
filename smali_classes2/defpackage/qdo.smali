@@ -11,7 +11,7 @@
 
 .field public b:[Ljava/lang/Object;
 
-.field c:I
+.field public c:I
 
 .field public d:Z
 

@@ -13,29 +13,29 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qel;
+.field public final a:Ldefpackage/qel;
 
-.field final b:Ldefpackage/qco;
+.field public final b:Ldefpackage/qco;
 
-.field final c:I
+.field public final c:I
 
-.field final d:I
+.field public final d:I
 
-.field e:Ldefpackage/qyn;
+.field public e:Ldefpackage/qyn;
 
-.field f:I
+.field public f:I
 
-.field g:Ldefpackage/qdl;
+.field public g:Ldefpackage/qdl;
 
-.field volatile h:Z
+.field public volatile h:Z
 
-.field volatile i:Z
+.field public volatile i:Z
 
-.field final j:Ldefpackage/qjo;
+.field public final j:Ldefpackage/qjo;
 
-.field volatile k:Z
+.field public volatile k:Z
 
-.field l:I
+.field public l:I
 
 
 # direct methods

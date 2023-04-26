@@ -186,7 +186,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/hdrindicator/CircleProgressView;)F
+.method public static synthetic access$000(Lcom/hdrindicator/CircleProgressView;)F
     .locals 1
     .param p0, "x0"    # Lcom/hdrindicator/CircleProgressView;
 
@@ -196,7 +196,7 @@
     return v0
 .end method
 
-.method static synthetic access$002(Lcom/hdrindicator/CircleProgressView;F)F
+.method public static synthetic access$002(Lcom/hdrindicator/CircleProgressView;F)F
     .locals 0
     .param p0, "x0"    # Lcom/hdrindicator/CircleProgressView;
     .param p1, "x1"    # F
@@ -207,7 +207,7 @@
     return p1
 .end method
 
-.method static synthetic access$100(Lcom/hdrindicator/CircleProgressView;)Lcom/hdrindicator/CircleProgressView$OnProgressChangedListener;
+.method public static synthetic access$100(Lcom/hdrindicator/CircleProgressView;)Lcom/hdrindicator/CircleProgressView$OnProgressChangedListener;
     .locals 1
     .param p0, "x0"    # Lcom/hdrindicator/CircleProgressView;
 
@@ -217,7 +217,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/hdrindicator/CircleProgressView;)F
+.method public static synthetic access$200(Lcom/hdrindicator/CircleProgressView;)F
     .locals 1
     .param p0, "x0"    # Lcom/hdrindicator/CircleProgressView;
 
@@ -398,7 +398,7 @@
 
 
 # virtual methods
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 18
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -574,7 +574,7 @@
     return-void
 .end method
 
-.method protected onMeasure(II)V
+.method public onMeasure(II)V
     .locals 2
     .param p1, "i"    # I
     .param p2, "i2"    # I

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ezg;
+.field public final a:Ldefpackage/ezg;
 
 
 # direct methods

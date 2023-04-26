@@ -12,31 +12,31 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Ldefpackage/foo$1;
+.field public final synthetic this$1:Ldefpackage/foo$1;
 
-.field final synthetic val$f:Ldefpackage/pih;
+.field public final synthetic val$f:Ldefpackage/pih;
 
-.field final synthetic val$fotVar:Ldefpackage/fot;
+.field public final synthetic val$fotVar:Ldefpackage/fot;
 
-.field final synthetic val$fouVar:Ldefpackage/fou;
+.field public final synthetic val$fouVar:Ldefpackage/fou;
 
-.field final synthetic val$hscVar2:Ldefpackage/hsc;
+.field public final synthetic val$hscVar2:Ldefpackage/hsc;
 
-.field final synthetic val$iijVar2:Ldefpackage/iij;
+.field public final synthetic val$iijVar2:Ldefpackage/iij;
 
-.field final synthetic val$ikcVar2:Ldefpackage/ikc;
+.field public final synthetic val$ikcVar2:Ldefpackage/ikc;
 
-.field final synthetic val$ojcVar2:Ldefpackage/ojc;
+.field public final synthetic val$ojcVar2:Ldefpackage/ojc;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/foo$1;Ldefpackage/fou;Ldefpackage/ikc;Ldefpackage/ojc;Ldefpackage/iij;Ldefpackage/hsc;Ldefpackage/fot;Ldefpackage/pih;)V
+.method public constructor <init>(Ldefpackage/foo$1;Ldefpackage/fou;Ldefpackage/ikc;Ldefpackage/ojc;Ldefpackage/iij;Ldefpackage/hsc;Ldefpackage/fot;Ldefpackage/pih;)V
     .locals 0
     .param p1, "this$1"    # Ldefpackage/foo$1;
 

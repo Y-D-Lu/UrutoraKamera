@@ -86,7 +86,7 @@
     return v0
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 5
 
     .line 39
@@ -168,7 +168,7 @@
     return-void
 .end method
 
-.method protected final onFocusChanged(ZILandroid/graphics/Rect;)V
+.method public final onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 1
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -313,7 +313,7 @@
     return-void
 .end method
 
-.method protected final replaceText(Ljava/lang/CharSequence;)V
+.method public final replaceText(Ljava/lang/CharSequence;)V
     .locals 0
     .param p1, "charSequence"    # Ljava/lang/CharSequence;
 

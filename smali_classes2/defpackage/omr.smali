@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field final b:Ljava/lang/Comparable;
+.field public final b:Ljava/lang/Comparable;
 
 
 # direct methods

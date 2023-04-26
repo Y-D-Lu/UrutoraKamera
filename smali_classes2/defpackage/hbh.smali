@@ -11,7 +11,7 @@
 
 .field public b:Z
 
-.field final c:Ldefpackage/hbi;
+.field public final c:Ldefpackage/hbi;
 
 .field private final d:Ljava/util/concurrent/atomic/AtomicInteger;
 

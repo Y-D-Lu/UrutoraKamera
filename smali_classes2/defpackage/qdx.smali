@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/Callable;
+.field public final a:Ljava/util/concurrent/Callable;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method protected final f(Ldefpackage/qbe;)V
+.method public final f(Ldefpackage/qbe;)V
     .locals 2
     .param p1, "qbeVar"    # Ldefpackage/qbe;
 

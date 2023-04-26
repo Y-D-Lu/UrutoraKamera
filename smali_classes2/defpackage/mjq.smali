@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mjr;
+.field public final a:Ldefpackage/mjr;
 
 .field private final b:Ljava/util/concurrent/Executor;
 

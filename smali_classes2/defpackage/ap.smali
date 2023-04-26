@@ -14,9 +14,9 @@
 
 .field public final e:[F
 
-.field f:[Ldefpackage/ak;
+.field public f:[Ldefpackage/ak;
 
-.field g:I
+.field public g:I
 
 .field public h:I
 

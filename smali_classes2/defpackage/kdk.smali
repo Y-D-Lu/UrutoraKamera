@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kdl;
+.field public final a:Ldefpackage/kdl;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method protected final setException(Ljava/lang/Throwable;)V
+.method public final setException(Ljava/lang/Throwable;)V
     .locals 5
     .param p1, "th"    # Ljava/lang/Throwable;
 

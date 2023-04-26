@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/content/Context;
+.field public final a:Landroid/content/Context;
 
 .field public b:Landroid/content/Context;
 

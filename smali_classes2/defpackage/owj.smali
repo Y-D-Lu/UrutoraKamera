@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/owk;
+.field public final a:Ldefpackage/owk;
 
 .field private final b:Ldefpackage/ovd;
 

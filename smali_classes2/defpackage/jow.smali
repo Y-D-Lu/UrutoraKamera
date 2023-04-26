@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/views/ToggleUi;
+.field public final a:Lcom/google/android/apps/camera/ui/views/ToggleUi;
 
 
 # direct methods

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final c:Ldefpackage/gy;
+.field public static final c:Ldefpackage/gy;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 9

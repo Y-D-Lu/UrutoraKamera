@@ -12,13 +12,13 @@
 
 
 # instance fields
-.field protected final a:Ljava/util/concurrent/ExecutorService;
+.field public final a:Ljava/util/concurrent/ExecutorService;
 
-.field protected final b:Ljava/util/concurrent/ExecutorService;
+.field public final b:Ljava/util/concurrent/ExecutorService;
 
-.field protected final c:Ljava/util/concurrent/ExecutorService;
+.field public final c:Ljava/util/concurrent/ExecutorService;
 
-.field protected final d:Ljava/util/concurrent/ExecutorService;
+.field public final d:Ljava/util/concurrent/ExecutorService;
 
 .field public final e:Ljava/util/Map;
 
@@ -44,7 +44,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 14

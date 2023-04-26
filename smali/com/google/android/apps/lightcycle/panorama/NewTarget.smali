@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method constructor <init>(I[F)V
+.method public constructor <init>(I[F)V
     .locals 0
     .param p1, "i"    # I
     .param p2, "fArr"    # [F

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hnv;
+.field public final a:Ldefpackage/hnv;
 
 
 # direct methods

@@ -8,15 +8,15 @@
 
 .field public final b:[J
 
-.field c:[Ljava/io/File;
+.field public c:[Ljava/io/File;
 
-.field d:[Ljava/io/File;
+.field public d:[Ljava/io/File;
 
 .field public e:Z
 
 .field public f:Ldefpackage/ayr;
 
-.field final g:Ldefpackage/ayu;
+.field public final g:Ldefpackage/ayu;
 
 
 # direct methods

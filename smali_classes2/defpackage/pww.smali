@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroid/app/PendingIntent;
+.field public final a:Landroid/app/PendingIntent;
 
 
 # direct methods

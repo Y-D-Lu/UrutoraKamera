@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jtk;
+.field public final a:Ldefpackage/jtk;
 
-.field final b:Ldefpackage/edt;
+.field public final b:Ldefpackage/edt;
 
-.field final c:J
+.field public final c:J
 
-.field final d:Ldefpackage/egd;
+.field public final d:Ldefpackage/egd;
 
-.field final e:Ldefpackage/msq;
+.field public final e:Ldefpackage/msq;
 
 
 # direct methods

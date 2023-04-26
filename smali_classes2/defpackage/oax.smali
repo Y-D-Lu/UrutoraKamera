@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oaz;
+.field public final a:Ldefpackage/oaz;
 
 
 # direct methods

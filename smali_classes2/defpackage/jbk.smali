@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:Z
+.field public b:Z
 
-.field final c:Landroid/graphics/Paint;
+.field public final c:Landroid/graphics/Paint;
 
 
 # direct methods

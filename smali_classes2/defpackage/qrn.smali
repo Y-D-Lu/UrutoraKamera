@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qro;
+.field public final a:Ldefpackage/qro;
 
-.field final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gpd;
+.field public final a:Ldefpackage/gpd;
 
 .field private final b:Lgox;
 

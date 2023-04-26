@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/eyp;
+.field public final a:Ldefpackage/eyp;
 
-.field final b:Ldefpackage/ezg;
+.field public final b:Ldefpackage/ezg;
 
 
 # direct methods

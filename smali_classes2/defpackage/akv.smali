@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/viewpager/widget/ViewPager;
+.field public final a:Landroidx/viewpager/widget/ViewPager;
 
 .field private final b:Landroid/graphics/Rect;
 

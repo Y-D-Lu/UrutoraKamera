@@ -11,11 +11,11 @@
 
 .field public final b:Ldefpackage/fpl;
 
-.field final c:Ldefpackage/hsp;
+.field public final c:Ldefpackage/hsp;
 
-.field final d:Ldefpackage/pih;
+.field public final d:Ldefpackage/pih;
 
-.field final e:Ldefpackage/fou;
+.field public final e:Ldefpackage/fou;
 
 
 # direct methods

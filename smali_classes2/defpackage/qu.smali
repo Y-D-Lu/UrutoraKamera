@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Landroid/support/v7/widget/RecyclerView;
+.field public final b:Landroid/support/v7/widget/RecyclerView;
 
 .field public final c:Ldefpackage/qt;
 

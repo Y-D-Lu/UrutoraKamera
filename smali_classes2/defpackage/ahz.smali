@@ -123,5 +123,5 @@
     throw v1
 .end method
 
-.method protected abstract c(Ldefpackage/ake;Ljava/lang/Object;)V
+.method public abstract c(Ldefpackage/ake;Ljava/lang/Object;)V
 .end method

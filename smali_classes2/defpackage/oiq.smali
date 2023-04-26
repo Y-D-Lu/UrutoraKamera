@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static final a:I
+.field public static final a:I
 
 .field public static final b:Ldefpackage/oiq;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 6

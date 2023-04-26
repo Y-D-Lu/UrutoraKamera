@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qkg;
+.field public final a:Ldefpackage/qkg;
 
-.field final b:Ldefpackage/lar;
+.field public final b:Ldefpackage/lar;
 
-.field final c:Ldefpackage/fhv;
+.field public final c:Ldefpackage/fhv;
 
 
 # direct methods

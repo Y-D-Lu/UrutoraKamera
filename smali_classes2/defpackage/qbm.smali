@@ -131,7 +131,7 @@
     throw v0
 .end method
 
-.method protected abstract g(Ldefpackage/qbq;)V
+.method public abstract g(Ldefpackage/qbq;)V
 .end method
 
 .method public final gW(Ldefpackage/qbt;)Ldefpackage/qbm;

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ljava/lang/Runnable;
+.field public final b:Ljava/lang/Runnable;
 
-.field final c:Ldefpackage/hsp;
+.field public final c:Ldefpackage/hsp;
 
 
 # direct methods

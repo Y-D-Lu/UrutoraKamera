@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "iit"
 .end annotation
 
@@ -28,7 +28,7 @@
 
 .field public final e:I
 
-.field final synthetic this$0:Ldefpackage/iiw;
+.field public final synthetic this$0:Ldefpackage/iiw;
 
 
 # direct methods

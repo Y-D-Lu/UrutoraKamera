@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/ScheduledExecutorService;
+.field public final a:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods

@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field final b:Ldefpackage/lww;
+.field public final b:Ldefpackage/lww;
 
 .field private final c:Ljava/util/List;
 

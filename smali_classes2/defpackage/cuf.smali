@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/view/View;
+.field public final a:Landroid/view/View;
 
-.field final b:Ldefpackage/cug;
+.field public final b:Ldefpackage/cug;
 
 
 # direct methods

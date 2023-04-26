@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field protected final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field protected b:J
+.field public b:J
 
-.field protected final c:Ldefpackage/kij;
+.field public final c:Ldefpackage/kij;
 
 
 # direct methods
@@ -296,7 +296,7 @@
 
 
 # virtual methods
-.method protected a()V
+.method public a()V
     .locals 2
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
@@ -323,7 +323,7 @@
     return-void
 .end method
 
-.method protected final c(Ljava/lang/String;)Ldefpackage/kto;
+.method public final c(Ljava/lang/String;)Ldefpackage/kto;
     .locals 4
     .param p1, "str"    # Ljava/lang/String;
 
@@ -402,7 +402,7 @@
     return-object v2
 .end method
 
-.method protected d()V
+.method public d()V
     .locals 0
 
     .line 86

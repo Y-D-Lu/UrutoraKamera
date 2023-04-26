@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/io/InputStream;
+.field public final a:Ljava/io/InputStream;
 
 
 # direct methods

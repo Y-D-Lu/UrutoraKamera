@@ -15,21 +15,21 @@
 
 
 # instance fields
-.field mAniso:F
+.field public mAniso:F
 
-.field mMag:Landroid/support/v8/renderscript/Sampler$Value;
+.field public mMag:Landroid/support/v8/renderscript/Sampler$Value;
 
-.field mMin:Landroid/support/v8/renderscript/Sampler$Value;
+.field public mMin:Landroid/support/v8/renderscript/Sampler$Value;
 
-.field mRS:Landroid/support/v8/renderscript/RenderScript;
+.field public mRS:Landroid/support/v8/renderscript/RenderScript;
 
-.field mWrapR:Landroid/support/v8/renderscript/Sampler$Value;
+.field public mWrapR:Landroid/support/v8/renderscript/Sampler$Value;
 
-.field mWrapS:Landroid/support/v8/renderscript/Sampler$Value;
+.field public mWrapS:Landroid/support/v8/renderscript/Sampler$Value;
 
-.field mWrapT:Landroid/support/v8/renderscript/Sampler$Value;
+.field public mWrapT:Landroid/support/v8/renderscript/Sampler$Value;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/Sampler;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/Sampler;
 
 
 # direct methods

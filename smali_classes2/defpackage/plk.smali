@@ -1916,7 +1916,7 @@
     return-void
 .end method
 
-.method static aL(Ljava/lang/StringBuilder;ILjava/lang/String;Ljava/lang/Object;)V
+.method public static aL(Ljava/lang/StringBuilder;ILjava/lang/String;Ljava/lang/Object;)V
     .locals 8
     .param p0, "sb"    # Ljava/lang/StringBuilder;
     .param p1, "i"    # I

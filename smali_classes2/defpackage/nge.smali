@@ -8,11 +8,11 @@
 
 .field public static volatile b:Z
 
-.field static final c:Ldefpackage/nes;
+.field public static final c:Ldefpackage/nes;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 14

@@ -411,7 +411,7 @@
     return-object v0
 .end method
 
-.method protected final setBaseAttributes(Landroid/content/res/TypedArray;II)V
+.method public final setBaseAttributes(Landroid/content/res/TypedArray;II)V
     .locals 2
     .param p1, "typedArray"    # Landroid/content/res/TypedArray;
     .param p2, "i"    # I

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/ThreadFactory;
+.field public final a:Ljava/util/concurrent/ThreadFactory;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final c:Ljava/util/concurrent/atomic/AtomicLong;
 
 
 # direct methods

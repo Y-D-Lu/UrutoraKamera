@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field protected final a:Landroid/view/View;
+.field public final a:Landroid/view/View;
 
 .field public final b:Ldefpackage/blj;
 

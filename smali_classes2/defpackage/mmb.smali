@@ -153,5 +153,5 @@
     return-void
 .end method
 
-.method protected abstract gy()V
+.method public abstract gy()V
 .end method

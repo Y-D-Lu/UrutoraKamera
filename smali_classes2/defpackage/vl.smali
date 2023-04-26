@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field final b:Ldefpackage/vm;
+.field public final b:Ldefpackage/vm;
 
 
 # direct methods

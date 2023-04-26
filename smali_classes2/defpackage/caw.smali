@@ -6,7 +6,7 @@
 # instance fields
 .field public a:Ldefpackage/lwd;
 
-.field b:Lcav;
+.field public b:Lcav;
 
 .field public c:Ldefpackage/ghx;
 

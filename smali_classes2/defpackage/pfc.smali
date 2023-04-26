@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9
@@ -272,7 +272,7 @@
     return v0
 .end method
 
-.method readResolve()Ljava/lang/Object;
+.method public readResolve()Ljava/lang/Object;
     .locals 1
 
     .line 72
@@ -374,7 +374,7 @@
     return-object v1
 .end method
 
-.method writeReplace()Ljava/lang/Object;
+.method public writeReplace()Ljava/lang/Object;
     .locals 2
 
     .line 91

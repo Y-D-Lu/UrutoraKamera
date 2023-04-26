@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cgl;
+.field public final a:Ldefpackage/cgl;
 
 .field private final b:I
 

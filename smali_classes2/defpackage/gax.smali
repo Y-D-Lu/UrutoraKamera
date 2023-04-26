@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lwk;
+.field public final a:Ldefpackage/lwk;
 
-.field final b:Ldefpackage/gfi;
+.field public final b:Ldefpackage/gfi;
 
-.field final c:J
+.field public final c:J
 
-.field final d:Ldefpackage/lzv;
+.field public final d:Ldefpackage/lzv;
 
-.field final e:Ldefpackage/mad;
+.field public final e:Ldefpackage/mad;
 
-.field final f:Ldefpackage/mad;
+.field public final f:Ldefpackage/mad;
 
-.field final g:Ldefpackage/gex;
+.field public final g:Ldefpackage/gex;
 
-.field final h:Ldefpackage/lis;
+.field public final h:Ldefpackage/lis;
 
-.field final i:Ldefpackage/gay;
+.field public final i:Ldefpackage/gay;
 
 
 # direct methods

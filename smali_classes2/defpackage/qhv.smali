@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field a:Ldefpackage/qbz;
+.field public a:Ldefpackage/qbz;
 
 
 # direct methods

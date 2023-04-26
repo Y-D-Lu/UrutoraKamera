@@ -12,29 +12,29 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/igq;
+.field public final synthetic this$0:Ldefpackage/igq;
 
-.field final synthetic val$c:Ljava/nio/ByteBuffer;
+.field public final synthetic val$c:Ljava/nio/ByteBuffer;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$i2:I
+.field public final synthetic val$i2:I
 
-.field final synthetic val$i3:I
+.field public final synthetic val$i3:I
 
-.field final synthetic val$nanos:J
+.field public final synthetic val$nanos:J
 
-.field final synthetic val$ojcVar:Ldefpackage/ojc;
+.field public final synthetic val$ojcVar:Ldefpackage/ojc;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/igq;IIILjava/nio/ByteBuffer;JLdefpackage/ojc;)V
+.method public constructor <init>(Ldefpackage/igq;IIILjava/nio/ByteBuffer;JLdefpackage/ojc;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/igq;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/okm;
+.field public final a:Ldefpackage/okm;
 
 
 # direct methods
@@ -50,7 +50,7 @@
     return-object v0
 .end method
 
-.method protected c()Ljava/util/Set;
+.method public c()Ljava/util/Set;
     .locals 1
 
     .line 25

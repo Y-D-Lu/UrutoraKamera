@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/util/Set;
+.field public final a:Ljava/util/Set;
 
-.field final b:Ldefpackage/nnr;
+.field public final b:Ldefpackage/nnr;
 
-.field final c:Ldefpackage/nmr;
+.field public final c:Ldefpackage/nmr;
 
-.field final d:Ldefpackage/nqu;
+.field public final d:Ldefpackage/nqu;
 
 
 # direct methods

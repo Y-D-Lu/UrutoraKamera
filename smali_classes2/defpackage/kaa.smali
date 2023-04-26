@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kab;
+.field public final a:Ldefpackage/kab;
 
 
 # direct methods

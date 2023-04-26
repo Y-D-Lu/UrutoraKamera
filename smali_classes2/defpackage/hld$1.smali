@@ -12,37 +12,37 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$context:Landroid/content/Context;
+.field public final synthetic val$context:Landroid/content/Context;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$i2:I
+.field public final synthetic val$i2:I
 
-.field final synthetic val$k:Z
+.field public final synthetic val$k:Z
 
-.field final synthetic val$k3:Z
+.field public final synthetic val$k3:Z
 
-.field final synthetic val$k4:Z
+.field public final synthetic val$k4:Z
 
-.field final synthetic val$ljfVar:Ldefpackage/ljf;
+.field public final synthetic val$ljfVar:Ldefpackage/ljf;
 
-.field final synthetic val$z2:Z
+.field public final synthetic val$z2:Z
 
-.field final synthetic val$z4:Z
+.field public final synthetic val$z4:Z
 
-.field final synthetic val$z5:Z
+.field public final synthetic val$z5:Z
 
-.field final synthetic val$z6:Z
+.field public final synthetic val$z6:Z
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Ldefpackage/ljf;ZZZZIZZZI)V
+.method public constructor <init>(Landroid/content/Context;Ldefpackage/ljf;ZZZZIZZZI)V
     .locals 0
 
     .line 74

@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bcb;
+.field public final a:Ldefpackage/bcb;
 
 .field public b:Ldefpackage/azp;
 
@@ -20,15 +20,15 @@
 
 .field public f:Z
 
-.field g:Ldefpackage/bcg;
+.field public g:Ldefpackage/bcg;
 
 .field public h:Z
 
-.field i:Ldefpackage/bce;
+.field public i:Ldefpackage/bce;
 
 .field public volatile j:Z
 
-.field k:I
+.field public k:I
 
 .field public final l:Ldefpackage/bby;
 

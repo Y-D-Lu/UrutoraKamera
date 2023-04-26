@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/jgi;
+.field public final synthetic this$0:Ldefpackage/jgi;
 
-.field final synthetic val$bU:Landroid/os/Handler;
+.field public final synthetic val$bU:Landroid/os/Handler;
 
-.field final synthetic val$runnable:Ljava/lang/Runnable;
+.field public final synthetic val$runnable:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/jgi;Landroid/os/Handler;Ljava/lang/Runnable;)V
+.method public constructor <init>(Ldefpackage/jgi;Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/jgi;
 

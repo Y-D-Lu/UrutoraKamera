@@ -20,7 +20,7 @@
 
 .field public f:Landroid/content/ComponentName;
 
-.field final g:Ldefpackage/kmr;
+.field public final g:Ldefpackage/kmr;
 
 
 # direct methods

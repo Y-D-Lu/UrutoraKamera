@@ -6,9 +6,9 @@
 # instance fields
 .field public final a:Ljava/util/List;
 
-.field protected b:I
+.field public b:I
 
-.field protected c:Z
+.field public c:Z
 
 .field private d:Ldefpackage/jhq;
 

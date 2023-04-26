@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qs;
+.field public final a:Ldefpackage/qs;
 
-.field final b:Landroid/view/ViewPropertyAnimator;
+.field public final b:Landroid/view/ViewPropertyAnimator;
 
-.field final c:Landroid/view/View;
+.field public final c:Landroid/view/View;
 
-.field final d:Ldefpackage/py;
+.field public final d:Ldefpackage/py;
 
 
 # direct methods

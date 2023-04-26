@@ -4,23 +4,23 @@
 
 
 # static fields
-.field static final a:[Ljava/lang/Class;
+.field public static final a:[Ljava/lang/Class;
 
-.field static final b:[Ljava/lang/Class;
+.field public static final b:[Ljava/lang/Class;
 
 
 # instance fields
-.field final c:[Ljava/lang/Object;
+.field public final c:[Ljava/lang/Object;
 
-.field final d:[Ljava/lang/Object;
+.field public final d:[Ljava/lang/Object;
 
-.field final e:Landroid/content/Context;
+.field public final e:Landroid/content/Context;
 
 .field public f:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 21

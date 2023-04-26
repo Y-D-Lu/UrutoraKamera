@@ -60,7 +60,7 @@
     return-void
 .end method
 
-.method protected final onClick()V
+.method public final onClick()V
     .locals 2
 
     .line 33

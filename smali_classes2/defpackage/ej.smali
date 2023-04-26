@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ej;
+.field public static final a:Ldefpackage/ej;
 
 
 # instance fields
@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 59
 
     .line 20

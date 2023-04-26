@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field a:Ljava/lang/Thread;
+.field public a:Ljava/lang/Thread;
 
-.field b:Ljava/lang/Runnable;
+.field public b:Ljava/lang/Runnable;
 
-.field c:Ljava/util/concurrent/Executor;
+.field public c:Ljava/util/concurrent/Executor;
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 7

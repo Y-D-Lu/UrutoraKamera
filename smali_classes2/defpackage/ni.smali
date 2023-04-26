@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field a:Ldefpackage/ie;
+.field public a:Ldefpackage/ie;
 
-.field final b:Ldefpackage/nq;
+.field public final b:Ldefpackage/nq;
 
 .field private c:Landroid/widget/ListAdapter;
 

@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+.field public final a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
-.field final b:Lcom/google/android/material/appbar/AppBarLayout;
+.field public final b:Lcom/google/android/material/appbar/AppBarLayout;
 
-.field final c:Landroid/view/View;
+.field public final c:Landroid/view/View;
 
-.field final d:I
+.field public final d:I
 
-.field final e:Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;
+.field public final e:Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;
 
 
 # direct methods

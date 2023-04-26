@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Lcom/google/vr/ndk/base/DaydreamApi;
+.field public final a:Lcom/google/vr/ndk/base/DaydreamApi;
 
-.field final b:Ldefpackage/pxl;
+.field public final b:Ldefpackage/pxl;
 
 
 # direct methods

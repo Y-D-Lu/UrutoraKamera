@@ -8,7 +8,7 @@
 
 .field public final b:Ljava/io/ByteArrayOutputStream;
 
-.field final c:Ldefpackage/kfd;
+.field public final c:Ldefpackage/kfd;
 
 
 # direct methods

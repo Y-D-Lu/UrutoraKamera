@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/kvm;
+.field public final a:Ldefpackage/kvm;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected abstract c(Ldefpackage/kkc;)V
+.method public abstract c(Ldefpackage/kkc;)V
 .end method
 
 .method public final d(Lcom/google/android/gms/common/api/Status;)V

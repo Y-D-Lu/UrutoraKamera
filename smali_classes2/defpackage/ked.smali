@@ -209,7 +209,7 @@
     return v1
 .end method
 
-.method protected final a()V
+.method public final a()V
     .locals 0
 
     .line 66

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:F
+.field public static final a:F
 
 .field public static b:Z
 
@@ -52,7 +52,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 15

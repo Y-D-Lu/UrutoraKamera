@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/osx;
+.field public final a:Ldefpackage/osx;
 
-.field final b:Ldefpackage/osz;
+.field public final b:Ldefpackage/osz;
 
 
 # direct methods

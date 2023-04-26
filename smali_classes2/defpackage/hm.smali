@@ -11,15 +11,15 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hk;
+.field public final a:Ldefpackage/hk;
 
-.field final b:Landroid/view/View;
+.field public final b:Landroid/view/View;
 
-.field c:Z
+.field public c:Z
 
-.field d:Z
+.field public d:Z
 
-.field e:Z
+.field public e:Z
 
 .field public final f:Landroid/widget/ListView;
 
@@ -45,7 +45,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 17

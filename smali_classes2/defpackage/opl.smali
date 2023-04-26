@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/Comparator;
+.field public final a:Ljava/util/Comparator;
 
-.field final b:[Ljava/lang/Object;
+.field public final b:[Ljava/lang/Object;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method readResolve()Ljava/lang/Object;
+.method public readResolve()Ljava/lang/Object;
     .locals 4
 
     .line 19

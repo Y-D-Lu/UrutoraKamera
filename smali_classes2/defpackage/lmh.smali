@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 12
@@ -776,7 +776,7 @@
 
 
 # virtual methods
-.method protected final a(I)I
+.method public final a(I)I
     .locals 2
     .param p1, "r24"    # I
 

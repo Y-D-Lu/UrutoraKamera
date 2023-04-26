@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/ArrayList;
+.field public final a:Ljava/util/ArrayList;
 
-.field final b:Ldefpackage/py;
+.field public final b:Ldefpackage/py;
 
 .field private final c:I
 

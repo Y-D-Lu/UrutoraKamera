@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jdu;
+.field public final a:Ldefpackage/jdu;
 
 
 # direct methods

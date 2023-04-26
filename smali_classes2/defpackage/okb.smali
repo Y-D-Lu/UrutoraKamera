@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field volatile a:Ldefpackage/ojz;
+.field public volatile a:Ldefpackage/ojz;
 
-.field volatile b:Z
+.field public volatile b:Z
 
-.field c:Ljava/lang/Object;
+.field public c:Ljava/lang/Object;
 
 
 # direct methods

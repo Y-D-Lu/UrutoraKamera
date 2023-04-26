@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -20,15 +20,15 @@
 # instance fields
 .field public final a:Ldefpackage/pyn;
 
-.field final synthetic this$0:Ldefpackage/nbr;
+.field public final synthetic this$0:Ldefpackage/nbr;
 
-.field final synthetic val$noxVar:Ldefpackage/nox;
+.field public final synthetic val$noxVar:Ldefpackage/nox;
 
-.field final synthetic val$pynVar:Ldefpackage/pyn;
+.field public final synthetic val$pynVar:Ldefpackage/pyn;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/nbr;Ldefpackage/pyn;Ldefpackage/nox;)V
+.method public constructor <init>(Ldefpackage/nbr;Ldefpackage/pyn;Ldefpackage/nox;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/nbr;
 

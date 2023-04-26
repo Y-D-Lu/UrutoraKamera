@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mfk;
+.field public final a:Ldefpackage/mfk;
 
 .field private b:I
 
@@ -482,7 +482,7 @@
     throw v0
 .end method
 
-.method protected final doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+.method public final doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .param p1, "objArr"    # [Ljava/lang/Object;
 
@@ -516,7 +516,7 @@
     return-object v1
 .end method
 
-.method protected final onPostExecute(Ljava/lang/Object;)V
+.method public final onPostExecute(Ljava/lang/Object;)V
     .locals 3
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -537,7 +537,7 @@
     return-void
 .end method
 
-.method protected final onPreExecute()V
+.method public final onPreExecute()V
     .locals 4
 
     .line 139

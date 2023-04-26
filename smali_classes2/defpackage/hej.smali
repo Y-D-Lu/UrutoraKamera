@@ -470,7 +470,7 @@
     return-void
 .end method
 
-.method protected final declared-synchronized j(Ldefpackage/edd;)V
+.method public final declared-synchronized j(Ldefpackage/edd;)V
     .locals 2
     .param p1, "eddVar"    # Ldefpackage/edd;
 
@@ -518,7 +518,7 @@
     throw p1
 .end method
 
-.method protected abstract k(Ldefpackage/edd;Ldefpackage/mad;)V
+.method public abstract k(Ldefpackage/edd;Ldefpackage/mad;)V
 .end method
 
 .method public final declared-synchronized s(Ldefpackage/edd;)V

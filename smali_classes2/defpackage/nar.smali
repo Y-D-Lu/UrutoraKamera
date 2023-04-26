@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nat;
+.field public final a:Ldefpackage/nat;
 
 .field private final b:Ljava/util/concurrent/atomic/AtomicReference;
 

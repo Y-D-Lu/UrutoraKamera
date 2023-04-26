@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/gridlines/GridLinesUi;
+.field public final a:Lcom/google/android/apps/camera/ui/gridlines/GridLinesUi;
 
 
 # direct methods

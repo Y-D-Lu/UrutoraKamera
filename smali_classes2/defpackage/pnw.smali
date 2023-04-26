@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/poc;
+.field public final a:Ldefpackage/poc;
 
 .field private b:I
 

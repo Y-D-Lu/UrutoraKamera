@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:Ljava/lang/AutoCloseable;
 
-.field final b:Ldefpackage/dyd;
+.field public final b:Ldefpackage/dyd;
 
 
 # direct methods

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pip;
+.field public final a:Ldefpackage/pip;
 
 .field private final b:Ldefpackage/pgj;
 

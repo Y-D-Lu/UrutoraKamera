@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Z
+.field public final a:Z
 
-.field final b:I
+.field public final b:I
 
-.field final c:Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;
+.field public final c:Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;
 
 
 # direct methods

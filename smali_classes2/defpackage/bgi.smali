@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final a:Ljava/lang/Object;
+.field public final a:Ljava/lang/Object;
 
 
 # direct methods

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/graphics/drawable/AnimatedVectorDrawable;
+.field public final a:Landroid/graphics/drawable/AnimatedVectorDrawable;
 
-.field final b:Ldefpackage/epw;
+.field public final b:Ldefpackage/epw;
 
 
 # direct methods

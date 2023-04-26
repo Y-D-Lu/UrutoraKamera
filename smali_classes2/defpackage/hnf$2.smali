@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/hnf;
+.field public final synthetic this$0:Ldefpackage/hnf;
 
-.field final synthetic val$i3Final:I
+.field public final synthetic val$i3Final:I
 
-.field final synthetic val$rewindThumbnailScrollView:Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;
+.field public final synthetic val$rewindThumbnailScrollView:Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/hnf;Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;I)V
+.method public constructor <init>(Ldefpackage/hnf;Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;I)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/hnf;
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/content/res/Resources;
+.field public final a:Landroid/content/res/Resources;
 
-.field final b:Ldefpackage/duj;
+.field public final b:Ldefpackage/duj;
 
-.field final c:Lcom/google/android/apps/camera/focusindicator/FocusIndicatorView;
+.field public final c:Lcom/google/android/apps/camera/focusindicator/FocusIndicatorView;
 
 
 # direct methods

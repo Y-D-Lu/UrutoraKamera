@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Lcom/google/android/apps/camera/smarts/SmartsChipView;
+.field public final b:Lcom/google/android/apps/camera/smarts/SmartsChipView;
 
 
 # direct methods

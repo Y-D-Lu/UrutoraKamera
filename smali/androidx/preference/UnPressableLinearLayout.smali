@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method protected final dispatchSetPressed(Z)V
+.method public final dispatchSetPressed(Z)V
     .locals 0
     .param p1, "z"    # Z
 

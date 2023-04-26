@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final d:Ldefpackage/olb;
+.field public final d:Ldefpackage/olb;
 
 
 # direct methods

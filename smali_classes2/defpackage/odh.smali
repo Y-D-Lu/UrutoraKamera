@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/odi;
+.field public final a:Ldefpackage/odi;
 
 
 # direct methods

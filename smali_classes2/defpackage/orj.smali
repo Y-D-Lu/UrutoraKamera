@@ -14,13 +14,13 @@
 
 
 # instance fields
-.field final b:Ldefpackage/omr;
+.field public final b:Ldefpackage/omr;
 
-.field final c:Ldefpackage/omr;
+.field public final c:Ldefpackage/omr;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 8
@@ -723,7 +723,7 @@
     return v0
 .end method
 
-.method readResolve()Ljava/lang/Object;
+.method public readResolve()Ljava/lang/Object;
     .locals 2
 
     .line 148

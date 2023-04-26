@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/Comparator;
+.field public final a:Ljava/util/Comparator;
 
 
 # direct methods

@@ -10,7 +10,7 @@
 
 .field public c:F
 
-.field final d:Lcom/google/android/material/tabs/TabLayout;
+.field public final d:Lcom/google/android/material/tabs/TabLayout;
 
 
 # direct methods
@@ -501,7 +501,7 @@
     .end packed-switch
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 4
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -549,7 +549,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 9
     .param p1, "i"    # I
     .param p2, "i2"    # I

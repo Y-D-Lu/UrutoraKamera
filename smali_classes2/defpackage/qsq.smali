@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qsr;
+.field public final a:Ldefpackage/qsr;
 
 
 # direct methods

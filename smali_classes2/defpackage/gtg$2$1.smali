@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Ldefpackage/gtg$2;
+.field public final synthetic this$1:Ldefpackage/gtg$2;
 
-.field final synthetic val$elwVar:Ldefpackage/elw;
+.field public final synthetic val$elwVar:Ldefpackage/elw;
 
-.field final synthetic val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+.field public final synthetic val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/gtg$2;Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;Ldefpackage/elw;)V
+.method public constructor <init>(Ldefpackage/gtg$2;Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;Ldefpackage/elw;)V
     .locals 0
     .param p1, "this$1"    # Ldefpackage/gtg$2;
 

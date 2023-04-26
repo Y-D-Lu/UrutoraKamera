@@ -25,17 +25,17 @@
 
 .field public i:I
 
-.field j:Ldefpackage/pq;
+.field public j:Ldefpackage/pq;
 
-.field k:Z
+.field public k:Z
 
-.field l:I
+.field public l:I
 
-.field m:I
+.field public m:I
 
-.field n:Ldefpackage/pe;
+.field public n:Ldefpackage/pe;
 
-.field final o:Ldefpackage/pb;
+.field public final o:Ldefpackage/pb;
 
 
 # direct methods
@@ -1637,7 +1637,7 @@
     .end sparse-switch
 .end method
 
-.method final F(Ldefpackage/qi;Ldefpackage/pd;Ldefpackage/qp;Z)I
+.method public final F(Ldefpackage/qi;Ldefpackage/pd;Ldefpackage/qp;Z)I
     .locals 11
     .param p1, "qiVar"    # Ldefpackage/qi;
     .param p2, "pdVar"    # Ldefpackage/pd;
@@ -1857,7 +1857,7 @@
     return v1
 .end method
 
-.method final H(ILdefpackage/qi;Ldefpackage/qp;)I
+.method public final H(ILdefpackage/qi;Ldefpackage/qp;)I
     .locals 6
     .param p1, "i"    # I
     .param p2, "qiVar"    # Ldefpackage/qi;
@@ -2168,7 +2168,7 @@
     return-object v1
 .end method
 
-.method final K(II)Landroid/view/View;
+.method public final K(II)Landroid/view/View;
     .locals 5
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -2721,7 +2721,7 @@
     return v1
 .end method
 
-.method final Y()Z
+.method public final Y()Z
     .locals 1
 
     .line 616
@@ -2999,7 +2999,7 @@
     return-void
 .end method
 
-.method final ac(Z)Landroid/view/View;
+.method public final ac(Z)Landroid/view/View;
     .locals 2
     .param p1, "z"    # Z
 
@@ -3033,7 +3033,7 @@
     return-object v0
 .end method
 
-.method final ad(Z)Landroid/view/View;
+.method public final ad(Z)Landroid/view/View;
     .locals 2
     .param p1, "z"    # Z
 
@@ -3067,7 +3067,7 @@
     return-object v0
 .end method
 
-.method final ae(IIZ)Landroid/view/View;
+.method public final ae(IIZ)Landroid/view/View;
     .locals 3
     .param p1, "i"    # I
     .param p2, "i2"    # I

@@ -10,11 +10,11 @@
 
 
 # instance fields
-.field final transient b:[Ljava/lang/Object;
+.field public final transient b:[Ljava/lang/Object;
 
 .field public final transient c:I
 
-.field final transient d:[Ljava/lang/Object;
+.field public final transient d:[Ljava/lang/Object;
 
 .field private final transient f:I
 
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 15

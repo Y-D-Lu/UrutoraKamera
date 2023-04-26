@@ -12,17 +12,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$key:Landroid/hardware/camera2/CaptureRequest$Key;
+.field public final synthetic val$key:Landroid/hardware/camera2/CaptureRequest$Key;
 
 
 # direct methods
-.method constructor <init>(Landroid/hardware/camera2/CaptureRequest$Key;)V
+.method public constructor <init>(Landroid/hardware/camera2/CaptureRequest$Key;)V
     .locals 0
 
     .line 107

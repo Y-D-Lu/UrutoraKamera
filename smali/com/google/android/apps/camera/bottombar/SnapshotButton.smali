@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected getDefaultScale()F
+.method public getDefaultScale()F
     .locals 4
 
     .line 22
@@ -46,7 +46,7 @@
     return v1
 .end method
 
-.method protected getOuterCircleStrokeWidth()F
+.method public getOuterCircleStrokeWidth()F
     .locals 1
 
     .line 29

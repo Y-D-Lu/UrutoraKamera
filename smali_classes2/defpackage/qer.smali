@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qym;
+.field public final a:Ldefpackage/qym;
 
-.field b:Ldefpackage/qbz;
+.field public b:Ldefpackage/qbz;
 
 
 # direct methods

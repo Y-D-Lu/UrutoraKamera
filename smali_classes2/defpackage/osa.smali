@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/orh;
+.field public final a:Ldefpackage/orh;
 
 
 # direct methods

@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/libraries/performance/primes/metrics/crash/NativeCrashHandlerImpl;
+.field public final synthetic this$0:Lcom/google/android/libraries/performance/primes/metrics/crash/NativeCrashHandlerImpl;
 
-.field final synthetic val$myeVar:Ldefpackage/mye;
+.field public final synthetic val$myeVar:Ldefpackage/mye;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/libraries/performance/primes/metrics/crash/NativeCrashHandlerImpl;Ldefpackage/mye;)V
+.method public constructor <init>(Lcom/google/android/libraries/performance/primes/metrics/crash/NativeCrashHandlerImpl;Ldefpackage/mye;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/libraries/performance/primes/metrics/crash/NativeCrashHandlerImpl;
 

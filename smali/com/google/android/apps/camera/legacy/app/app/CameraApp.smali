@@ -16,23 +16,23 @@
 
 
 # instance fields
-.field a:Landroid/app/NotificationManager;
+.field public a:Landroid/app/NotificationManager;
 
-.field b:Ldefpackage/buv;
+.field public b:Ldefpackage/buv;
 
-.field c:Ldefpackage/qkg;
+.field public c:Ldefpackage/qkg;
 
-.field d:Ldefpackage/qkg;
+.field public d:Ldefpackage/qkg;
 
-.field e:Ldefpackage/mun;
+.field public e:Ldefpackage/mun;
 
-.field f:Ldefpackage/ani;
+.field public f:Ldefpackage/ani;
 
 .field public volatile g:Ldefpackage/egh;
 
-.field h:Ldefpackage/bus;
+.field public h:Ldefpackage/bus;
 
-.field i:Ldefpackage/jtx;
+.field public i:Ldefpackage/jtx;
 
 .field private volatile m:Ldefpackage/euv;
 
@@ -40,7 +40,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 11
 
     .line 106

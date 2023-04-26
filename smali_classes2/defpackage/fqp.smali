@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:I
 
-.field final b:Ldefpackage/fqq;
+.field public final b:Ldefpackage/fqq;
 
 .field private final c:Ldefpackage/mln;
 

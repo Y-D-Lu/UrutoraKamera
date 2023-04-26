@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:[I
+.field public final a:[I
 
 .field public final b:[Ljava/lang/String;
 
-.field final c:Ldefpackage/aid;
+.field public final c:Ldefpackage/aid;
 
 .field public final d:Ljava/util/Set;
 

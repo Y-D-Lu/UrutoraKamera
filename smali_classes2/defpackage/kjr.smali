@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
+.field public final a:Lcom/google/android/gms/common/api/internal/BasePendingResult;
 
-.field final b:Ldefpackage/kjt;
+.field public final b:Ldefpackage/kjt;
 
 
 # direct methods

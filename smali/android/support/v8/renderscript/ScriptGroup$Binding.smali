@@ -19,7 +19,7 @@
 
 .field private final mValue:Ljava/lang/Object;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
 
 
 # direct methods

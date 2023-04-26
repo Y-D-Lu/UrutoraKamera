@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nsy;
+.field public final a:Ldefpackage/nsy;
 
 
 # direct methods

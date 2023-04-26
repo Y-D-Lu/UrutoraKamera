@@ -273,7 +273,7 @@
     return-object v0
 .end method
 
-.method protected n()Z
+.method public n()Z
     .locals 1
 
     .line 150

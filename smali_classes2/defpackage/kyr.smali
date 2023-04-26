@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final k:[B
+.field public final k:[B
 
 
 # direct methods
@@ -51,7 +51,7 @@
     return-object v0
 .end method
 
-.method protected final b(Lkhz;)V
+.method public final b(Lkhz;)V
     .locals 7
     .param p1, "khzVar"    # Lkhz;
 

@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ue;
+.field public final a:Ldefpackage/ue;
 
 .field private final b:Ldefpackage/aeb;
 

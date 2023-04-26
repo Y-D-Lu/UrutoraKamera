@@ -9,11 +9,11 @@
 # instance fields
 .field public a:Z
 
-.field b:Ldefpackage/kkt;
+.field public b:Ldefpackage/kkt;
 
 
 # direct methods
-.method protected constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 11

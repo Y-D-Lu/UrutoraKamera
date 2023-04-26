@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ldefpackage/nmp;
 
-.field final b:Ldefpackage/nmp;
+.field public final b:Ldefpackage/nmp;
 
 
 # direct methods

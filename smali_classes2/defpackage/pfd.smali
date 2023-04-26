@@ -12,11 +12,11 @@
 
 
 # instance fields
-.field final a:[I
+.field public final a:[I
 
-.field final b:I
+.field public final b:I
 
-.field final c:I
+.field public final c:I
 
 
 # direct methods

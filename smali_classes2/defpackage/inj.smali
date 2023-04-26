@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ink;
+.field public final a:Ldefpackage/ink;
 
 
 # direct methods

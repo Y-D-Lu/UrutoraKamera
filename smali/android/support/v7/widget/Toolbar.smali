@@ -1368,7 +1368,7 @@
     return-object v0
 .end method
 
-.method protected static final v(Landroid/view/ViewGroup$LayoutParams;)Ldefpackage/rs;
+.method public static final v(Landroid/view/ViewGroup$LayoutParams;)Ldefpackage/rs;
     .locals 2
     .param p0, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -1937,7 +1937,7 @@
     return v1
 .end method
 
-.method protected final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -2112,7 +2112,7 @@
     return-object v1
 .end method
 
-.method protected final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
     .line 442
@@ -2139,7 +2139,7 @@
     return-object v0
 .end method
 
-.method protected final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -2529,7 +2529,7 @@
     return-void
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 1
 
     .line 551
@@ -2619,7 +2619,7 @@
     return v5
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 2
     .param p1, "r19"    # Z
     .param p2, "r20"    # I
@@ -2637,7 +2637,7 @@
     throw v0
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 25
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -3604,7 +3604,7 @@
     return-void
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Parcelable;)V
+.method public final onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 6
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
@@ -3828,7 +3828,7 @@
     return-void
 .end method
 
-.method protected final onSaveInstanceState()Landroid/os/Parcelable;
+.method public final onSaveInstanceState()Landroid/os/Parcelable;
     .locals 4
 
     .line 769

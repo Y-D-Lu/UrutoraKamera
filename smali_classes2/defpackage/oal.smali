@@ -26,7 +26,7 @@
 
 .field public h:F
 
-.field i:Ldefpackage/ga;
+.field public i:Ldefpackage/ga;
 
 .field private o:Landroid/animation/ObjectAnimator;
 
@@ -34,7 +34,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 11

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qcm;
+.field public final a:Ldefpackage/qcm;
 
 
 # direct methods

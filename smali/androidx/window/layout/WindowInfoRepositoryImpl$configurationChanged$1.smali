@@ -19,17 +19,17 @@
 
 
 # instance fields
-.field final $producer:Ldefpackage/qmj;
+.field public final $producer:Ldefpackage/qmj;
 
 .field private L$0:Ljava/lang/Object;
 
-.field L$1:Ljava/lang/Object;
+.field public L$1:Ljava/lang/Object;
 
-.field L$2:Ljava/lang/Object;
+.field public L$2:Ljava/lang/Object;
 
-.field label:I
+.field public label:I
 
-.field final this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
+.field public final this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
 
 
 # direct methods

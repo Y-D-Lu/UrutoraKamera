@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 18
@@ -223,7 +223,7 @@
 
 
 # virtual methods
-.method final a()Z
+.method public final a()Z
     .locals 1
 
     .line 96

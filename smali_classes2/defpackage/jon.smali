@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;
+.field public final a:Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;
 
 
 # direct methods

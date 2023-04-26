@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/Collection;
+.field public final a:Ljava/util/Collection;
 
-.field final b:Ldefpackage/oiu;
+.field public final b:Ldefpackage/oiu;
 
 
 # direct methods

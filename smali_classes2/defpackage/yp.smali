@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:[Z
+.field public static final a:[Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 6

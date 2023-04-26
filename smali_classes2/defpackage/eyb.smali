@@ -4,21 +4,21 @@
 
 
 # instance fields
-.field final a:Ldefpackage/eam;
+.field public final a:Ldefpackage/eam;
 
-.field final b:Ldefpackage/fwt;
+.field public final b:Ldefpackage/fwt;
 
-.field final c:Ldefpackage/fly;
+.field public final c:Ldefpackage/fly;
 
-.field final d:Ldefpackage/fle;
+.field public final d:Ldefpackage/fle;
 
-.field final e:Ldefpackage/ddf;
+.field public final e:Ldefpackage/ddf;
 
-.field final f:Ldefpackage/fks;
+.field public final f:Ldefpackage/fks;
 
-.field final g:Ldefpackage/eyg;
+.field public final g:Ldefpackage/eyg;
 
-.field final h:Ldefpackage/hjn;
+.field public final h:Ldefpackage/hjn;
 
 
 # direct methods

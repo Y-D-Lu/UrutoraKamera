@@ -272,7 +272,7 @@
     return-object v0
 .end method
 
-.method protected final d()Ljava/lang/String;
+.method public final d()Ljava/lang/String;
     .locals 1
 
     .line 87
@@ -493,7 +493,7 @@
     return v0
 .end method
 
-.method protected final w()Ljava/lang/String;
+.method public final w()Ljava/lang/String;
     .locals 1
 
     .line 132

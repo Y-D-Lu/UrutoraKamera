@@ -6,7 +6,7 @@
 # instance fields
 .field public volatile a:Ldefpackage/jrl;
 
-.field b:Ldefpackage/lzv;
+.field public b:Ldefpackage/lzv;
 
 .field private final c:Ldefpackage/lco;
 

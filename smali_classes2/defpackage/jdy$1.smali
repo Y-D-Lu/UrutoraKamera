@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -20,13 +20,13 @@
 # instance fields
 .field public final a:Ldefpackage/fmp;
 
-.field final synthetic this$0:Ldefpackage/jdy;
+.field public final synthetic this$0:Ldefpackage/jdy;
 
-.field final synthetic val$fmpVar:Ldefpackage/fmp;
+.field public final synthetic val$fmpVar:Ldefpackage/fmp;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/jdy;Ldefpackage/fmp;)V
+.method public constructor <init>(Ldefpackage/jdy;Ldefpackage/fmp;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/jdy;
 

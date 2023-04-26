@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/dbo;
+.field public final a:Ldefpackage/dbo;
 
 .field private final b:I
 

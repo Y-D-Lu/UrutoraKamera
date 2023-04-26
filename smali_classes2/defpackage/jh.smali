@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oa;
+.field public final a:Ldefpackage/oa;
 
-.field b:Z
+.field public b:Z
 
 .field public final c:Landroid/view/Window$Callback;
 

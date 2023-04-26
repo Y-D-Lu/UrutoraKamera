@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/ehh;
+.field public final synthetic this$0:Ldefpackage/ehh;
 
-.field final synthetic val$lnzVar:Ldefpackage/lnz;
+.field public final synthetic val$lnzVar:Ldefpackage/lnz;
 
-.field final synthetic val$surfaceTexture:Landroid/graphics/SurfaceTexture;
+.field public final synthetic val$surfaceTexture:Landroid/graphics/SurfaceTexture;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/ehh;Landroid/graphics/SurfaceTexture;Ldefpackage/lnz;)V
+.method public constructor <init>(Ldefpackage/ehh;Landroid/graphics/SurfaceTexture;Ldefpackage/lnz;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/ehh;
 

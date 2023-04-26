@@ -333,7 +333,7 @@
 
 
 # virtual methods
-.method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -631,7 +631,7 @@
     .end sparse-switch
 .end method
 
-.method final o(Landroid/graphics/Canvas;I)V
+.method public final o(Landroid/graphics/Canvas;I)V
     .locals 4
     .param p1, "canvas"    # Landroid/graphics/Canvas;
     .param p2, "i"    # I
@@ -676,7 +676,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 8
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -1076,7 +1076,7 @@
     throw v0
 .end method
 
-.method final p(Landroid/graphics/Canvas;I)V
+.method public final p(Landroid/graphics/Canvas;I)V
     .locals 5
     .param p1, "canvas"    # Landroid/graphics/Canvas;
     .param p2, "i"    # I

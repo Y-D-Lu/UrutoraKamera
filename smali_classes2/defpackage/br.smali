@@ -4,31 +4,31 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field b:I
+.field public b:I
 
-.field c:I
+.field public c:I
 
-.field d:I
+.field public d:I
 
-.field e:I
+.field public e:I
 
 .field public f:I
 
-.field g:Ljava/util/ArrayList;
+.field public g:Ljava/util/ArrayList;
 
-.field h:Ljava/util/ArrayList;
+.field public h:Ljava/util/ArrayList;
 
-.field final i:Ljava/lang/Object;
+.field public final i:Ljava/lang/Object;
 
-.field final j:Ljava/lang/Object;
+.field public final j:Ljava/lang/Object;
 
-.field final k:Ljava/lang/Object;
+.field public final k:Ljava/lang/Object;
 
-.field l:F
+.field public l:F
 
-.field m:Landroid/view/View;
+.field public m:Landroid/view/View;
 
 
 # direct methods

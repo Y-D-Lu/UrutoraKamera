@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Z
+.field public final a:Z
 
-.field final b:Z
+.field public final b:Z
 
-.field final c:Z
+.field public final c:Z
 
-.field final d:Ldefpackage/jgk;
+.field public final d:Ldefpackage/jgk;
 
 
 # direct methods

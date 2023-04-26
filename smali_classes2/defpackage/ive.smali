@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;
+.field public final a:Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;
 
-.field final b:Ldefpackage/ivf;
+.field public final b:Ldefpackage/ivf;
 
 
 # direct methods

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Z
+.field public a:Z
 
-.field b:Ldefpackage/d;
+.field public b:Ldefpackage/d;
 
 
 # direct methods

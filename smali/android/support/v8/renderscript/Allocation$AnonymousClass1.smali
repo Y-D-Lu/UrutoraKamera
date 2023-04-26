@@ -15,11 +15,11 @@
 
 
 # static fields
-.field static final $SwitchMap$android$graphics$Bitmap$Config:[I
+.field public static final $SwitchMap$android$graphics$Bitmap$Config:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 58

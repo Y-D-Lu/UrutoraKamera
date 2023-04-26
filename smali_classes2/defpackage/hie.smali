@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/hif;
+.field public final a:Ldefpackage/hif;
 
 
 # direct methods

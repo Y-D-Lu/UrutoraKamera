@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nzf;
+.field public final a:Ldefpackage/nzf;
 
 
 # direct methods

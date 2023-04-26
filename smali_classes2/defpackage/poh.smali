@@ -10,15 +10,15 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field final b:I
+.field public final b:I
 
-.field c:Ldefpackage/poi;
+.field public c:Ldefpackage/poi;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 9

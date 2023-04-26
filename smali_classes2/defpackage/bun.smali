@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10
@@ -51,7 +51,7 @@
 
 
 # virtual methods
-.method protected final a(Ljava/lang/Throwable;)V
+.method public final a(Ljava/lang/Throwable;)V
     .locals 2
     .param p1, "th"    # Ljava/lang/Throwable;
 

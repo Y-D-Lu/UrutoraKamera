@@ -15,7 +15,7 @@
 
 .field public static final a:Landroid/view/animation/Interpolator;
 
-.field static final b:Ldefpackage/qq;
+.field public static final b:Ldefpackage/qq;
 
 
 # instance fields
@@ -117,7 +117,7 @@
 
 .field public final c:Ldefpackage/qi;
 
-.field d:Ldefpackage/ql;
+.field public d:Ldefpackage/ql;
 
 .field public e:Ldefpackage/mn;
 
@@ -125,7 +125,7 @@
 
 .field public final g:Ldefpackage/sc;
 
-.field h:Z
+.field public h:Z
 
 .field public final i:Ljava/lang/Runnable;
 
@@ -155,7 +155,7 @@
 
 .field public v:Z
 
-.field final varR:Ljava/util/List;
+.field public final varR:Ljava/util/List;
 
 .field public w:Z
 
@@ -163,7 +163,7 @@
 
 .field public y:Z
 
-.field z:Z
+.field public z:Z
 
 
 # direct methods
@@ -3454,7 +3454,7 @@
     return-void
 .end method
 
-.method final D(Ldefpackage/qp;)V
+.method public final D(Ldefpackage/qp;)V
     .locals 3
     .param p1, "qpVar"    # Ldefpackage/qp;
 
@@ -3513,7 +3513,7 @@
     return-void
 .end method
 
-.method final F()V
+.method public final F()V
     .locals 1
 
     .line 831
@@ -3889,7 +3889,7 @@
     return-void
 .end method
 
-.method final L()V
+.method public final L()V
     .locals 1
 
     .line 912
@@ -5353,7 +5353,7 @@
     return v0
 .end method
 
-.method final ai(IILandroid/view/MotionEvent;I)Z
+.method public final ai(IILandroid/view/MotionEvent;I)Z
     .locals 2
     .param p1, "r18"    # I
     .param p2, "r19"    # I
@@ -6017,7 +6017,7 @@
     return v1
 .end method
 
-.method final d(Ldefpackage/qs;)J
+.method public final d(Ldefpackage/qs;)J
     .locals 2
     .param p1, "qsVar"    # Ldefpackage/qs;
 
@@ -6148,7 +6148,7 @@
     return v0
 .end method
 
-.method protected final dispatchRestoreInstanceState(Landroid/util/SparseArray;)V
+.method public final dispatchRestoreInstanceState(Landroid/util/SparseArray;)V
     .locals 0
     .param p1, "sparseArray"    # Landroid/util/SparseArray;
 
@@ -6159,7 +6159,7 @@
     return-void
 .end method
 
-.method protected final dispatchSaveInstanceState(Landroid/util/SparseArray;)V
+.method public final dispatchSaveInstanceState(Landroid/util/SparseArray;)V
     .locals 0
     .param p1, "sparseArray"    # Landroid/util/SparseArray;
 
@@ -7328,7 +7328,7 @@
     throw v4
 .end method
 
-.method protected final onAttachedToWindow()V
+.method public final onAttachedToWindow()V
     .locals 9
 
     .line 1755
@@ -7469,7 +7469,7 @@
     return-void
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 4
 
     .line 1788
@@ -8085,7 +8085,7 @@
     throw v0
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 1
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -8113,7 +8113,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 9
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -8429,7 +8429,7 @@
     return-void
 .end method
 
-.method protected final onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
+.method public final onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 1
     .param p1, "i"    # I
     .param p2, "rect"    # Landroid/graphics/Rect;
@@ -8455,7 +8455,7 @@
     return v0
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Parcelable;)V
+.method public final onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
@@ -8492,7 +8492,7 @@
     return-void
 .end method
 
-.method protected final onSaveInstanceState()Landroid/os/Parcelable;
+.method public final onSaveInstanceState()Landroid/os/Parcelable;
     .locals 4
 
     .line 2000
@@ -8545,7 +8545,7 @@
     return-object v0
 .end method
 
-.method protected final onSizeChanged(IIII)V
+.method public final onSizeChanged(IIII)V
     .locals 0
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -8675,7 +8675,7 @@
     return-void
 .end method
 
-.method final r()V
+.method public final r()V
     .locals 8
 
     .line 2054
@@ -9836,7 +9836,7 @@
     return-void
 .end method
 
-.method final w()V
+.method public final w()V
     .locals 2
 
     .line 2324

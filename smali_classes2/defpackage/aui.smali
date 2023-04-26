@@ -8,7 +8,7 @@
 
 .field public b:Z
 
-.field final c:Ldefpackage/aur;
+.field public final c:Ldefpackage/aur;
 
 .field private final d:Ldefpackage/aur;
 

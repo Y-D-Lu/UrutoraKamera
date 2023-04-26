@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 9
@@ -71,7 +71,7 @@
 
 
 # virtual methods
-.method protected final d(Ljava/util/List;Lgox;Ldefpackage/gog;)Z
+.method public final d(Ljava/util/List;Lgox;Ldefpackage/gog;)Z
     .locals 12
     .param p1, "list"    # Ljava/util/List;
     .param p2, "goxVar"    # Lgox;

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qjs;
+.field public final a:Ldefpackage/qjs;
 
-.field b:Ldefpackage/qgo;
+.field public b:Ldefpackage/qgo;
 
 
 # direct methods
@@ -184,7 +184,7 @@
     throw v0
 .end method
 
-.method protected final g(Ldefpackage/qbq;)V
+.method public final g(Ldefpackage/qbq;)V
     .locals 9
     .param p1, "qbqVar"    # Ldefpackage/qbq;
 

@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/gem;
+.field public final synthetic this$0:Ldefpackage/gem;
 
-.field final synthetic val$atomicBoolean:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final synthetic val$atomicBoolean:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field final synthetic val$gexVar:Ldefpackage/gex;
+.field public final synthetic val$gexVar:Ldefpackage/gex;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/gem;Ljava/util/concurrent/atomic/AtomicBoolean;Ldefpackage/gex;)V
+.method public constructor <init>(Ldefpackage/gem;Ljava/util/concurrent/atomic/AtomicBoolean;Ldefpackage/gex;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/gem;
 

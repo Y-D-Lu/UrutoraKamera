@@ -150,7 +150,7 @@
 
 
 # virtual methods
-.method final b()V
+.method public final b()V
     .locals 2
 
     .line 44
@@ -173,7 +173,7 @@
     return-void
 .end method
 
-.method protected final onConfigurationChanged(Landroid/content/res/Configuration;)V
+.method public final onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
     .param p1, "configuration"    # Landroid/content/res/Configuration;
 

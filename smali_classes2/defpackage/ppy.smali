@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10
@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 9
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method static a(Ljava/lang/Object;J)Ljava/util/List;
+.method public static a(Ljava/lang/Object;J)Ljava/util/List;
     .locals 1
     .param p0, "obj"    # Ljava/lang/Object;
     .param p1, "j"    # J

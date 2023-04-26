@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Class;
+.field public final a:Ljava/lang/Class;
 
 .field public final b:Ljava/lang/Class;
 

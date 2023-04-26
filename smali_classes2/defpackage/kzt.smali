@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static final a:[B
+.field public static final a:[B
 
-.field static final b:[B
+.field public static final b:[B
 
 .field private static c:Ldefpackage/kzt;
 
@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 14
@@ -106,7 +106,7 @@
     throw v1
 .end method
 
-.method static final c(Landroid/content/pm/PackageInfo;Z)Z
+.method public static final c(Landroid/content/pm/PackageInfo;Z)Z
     .locals 4
     .param p0, "packageInfo"    # Landroid/content/pm/PackageInfo;
     .param p1, "z"    # Z

@@ -124,7 +124,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 29
@@ -1320,7 +1320,7 @@
     return v0
 .end method
 
-.method final I()F
+.method public final I()F
     .locals 4
 
     .line 294

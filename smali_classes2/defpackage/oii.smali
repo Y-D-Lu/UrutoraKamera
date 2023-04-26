@@ -9,13 +9,13 @@
 # instance fields
 .field public a:I
 
-.field final b:Ljava/lang/CharSequence;
+.field public final b:Ljava/lang/CharSequence;
 
-.field final c:Z
+.field public final c:Z
 
-.field d:I
+.field public d:I
 
-.field e:I
+.field public e:I
 
 .field private f:Ljava/lang/Object;
 

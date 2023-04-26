@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final a:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final b:Ldefpackage/qbe;
+.field public final b:Ldefpackage/qbe;
 
 
 # direct methods

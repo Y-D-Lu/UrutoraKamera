@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected a:Z
+.field public a:Z
 
-.field b:Z
+.field public b:Z
 
 .field private c:Landroid/graphics/drawable/Drawable;
 
@@ -284,7 +284,7 @@
     return-void
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 3
 
     .line 83
@@ -385,7 +385,7 @@
     return-void
 .end method
 
-.method protected final onSizeChanged(IIII)V
+.method public final onSizeChanged(IIII)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -552,7 +552,7 @@
     return-void
 .end method
 
-.method protected final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
     .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
 

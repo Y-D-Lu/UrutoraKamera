@@ -12,25 +12,25 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/boe;
+.field public final synthetic this$0:Ldefpackage/boe;
 
-.field final synthetic val$bxyVar:Ldefpackage/bxy;
+.field public final synthetic val$bxyVar:Ldefpackage/bxy;
 
-.field final synthetic val$mo37get3:Ldefpackage/pht;
+.field public final synthetic val$mo37get3:Ldefpackage/pht;
 
-.field final synthetic val$scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
+.field public final synthetic val$scheduledExecutorService:Ljava/util/concurrent/ScheduledExecutorService;
 
-.field final synthetic val$scheduledExecutorService2:Ljava/util/concurrent/ScheduledExecutorService;
+.field public final synthetic val$scheduledExecutorService2:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/boe;Ldefpackage/pht;Ldefpackage/bxy;Ljava/util/concurrent/ScheduledExecutorService;Ljava/util/concurrent/ScheduledExecutorService;)V
+.method public constructor <init>(Ldefpackage/boe;Ldefpackage/pht;Ldefpackage/bxy;Ljava/util/concurrent/ScheduledExecutorService;Ljava/util/concurrent/ScheduledExecutorService;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/boe;
 

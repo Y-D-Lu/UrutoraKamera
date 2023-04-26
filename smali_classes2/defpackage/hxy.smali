@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/smarts/SmartsChipView;
+.field public final a:Lcom/google/android/apps/camera/smarts/SmartsChipView;
 
 
 # direct methods

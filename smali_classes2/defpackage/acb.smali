@@ -52,7 +52,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 19
@@ -1705,7 +1705,7 @@
     throw v0
 .end method
 
-.method final k(Landroid/view/View;I)Z
+.method public final k(Landroid/view/View;I)Z
     .locals 2
     .param p1, "view"    # Landroid/view/View;
     .param p2, "i"    # I

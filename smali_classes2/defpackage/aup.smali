@@ -36,7 +36,7 @@
 
 .field public final p:Ldefpackage/auo;
 
-.field final q:Ldefpackage/aur;
+.field public final q:Ldefpackage/aur;
 
 .field private s:I
 

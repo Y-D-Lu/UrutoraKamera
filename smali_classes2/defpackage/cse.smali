@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/csg;
+.field public final b:Ldefpackage/csg;
 
 
 # direct methods

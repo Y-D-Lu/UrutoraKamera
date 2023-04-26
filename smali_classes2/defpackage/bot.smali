@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bou;
+.field public final a:Ldefpackage/bou;
 
 
 # direct methods

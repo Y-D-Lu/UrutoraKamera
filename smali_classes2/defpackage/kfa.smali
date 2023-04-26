@@ -19,7 +19,7 @@
     return-void
 .end method
 
-.method protected static final C(Ljava/lang/Object;)Ljava/lang/String;
+.method public static final C(Ljava/lang/Object;)Ljava/lang/String;
     .locals 8
     .param p0, "obj"    # Ljava/lang/Object;
 
@@ -219,7 +219,7 @@
 
 
 # virtual methods
-.method protected final a()V
+.method public final a()V
     .locals 2
 
     .line 36

@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 21
@@ -72,7 +72,7 @@
 
 
 # virtual methods
-.method protected final onCreate(Landroid/os/Bundle;)V
+.method public final onCreate(Landroid/os/Bundle;)V
     .locals 10
     .param p1, "bundle"    # Landroid/os/Bundle;
 
@@ -399,7 +399,7 @@
     return-void
 .end method
 
-.method protected final onResume()V
+.method public final onResume()V
     .locals 1
 
     .line 79

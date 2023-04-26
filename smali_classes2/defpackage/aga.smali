@@ -162,7 +162,7 @@
     return-void
 .end method
 
-.method protected final aj()Z
+.method public final aj()Z
     .locals 1
 
     .line 52

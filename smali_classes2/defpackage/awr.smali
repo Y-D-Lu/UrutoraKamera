@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 8
@@ -43,7 +43,7 @@
 .method public abstract c()Ldefpackage/axg;
 .end method
 
-.method protected abstract d()Ldefpackage/axi;
+.method public abstract d()Ldefpackage/axi;
 .end method
 
 .method public abstract e()Ldefpackage/axk;

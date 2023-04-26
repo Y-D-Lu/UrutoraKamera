@@ -8,11 +8,11 @@
 
 .field public d:I
 
-.field protected final e:Landroid/content/Context;
+.field public final e:Landroid/content/Context;
 
 .field public f:Ljava/lang/String;
 
-.field protected g:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
 .field public final h:Ljava/util/HashMap;
 
@@ -371,7 +371,7 @@
 
 
 # virtual methods
-.method protected a(Landroid/util/AttributeSet;)V
+.method public a(Landroid/util/AttributeSet;)V
     .locals 1
     .param p1, "attributeSet"    # Landroid/util/AttributeSet;
 
@@ -709,7 +709,7 @@
     return-void
 .end method
 
-.method protected onAttachedToWindow()V
+.method public onAttachedToWindow()V
     .locals 2
 
     .line 284
@@ -749,7 +749,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
     .param p1, "i"    # I
     .param p2, "i2"    # I

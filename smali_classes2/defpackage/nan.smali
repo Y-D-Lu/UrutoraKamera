@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field volatile a:Ljava/lang/String;
+.field public volatile a:Ljava/lang/String;
 
 .field public volatile b:Ljava/lang/Long;
 
-.field volatile c:Ljava/lang/Long;
+.field public volatile c:Ljava/lang/Long;
 
-.field volatile d:Ljava/lang/Long;
+.field public volatile d:Ljava/lang/Long;
 
 
 # direct methods

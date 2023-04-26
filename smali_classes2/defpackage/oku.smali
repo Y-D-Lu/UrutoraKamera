@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final a:Ljava/util/Iterator;
+.field public final a:Ljava/util/Iterator;
 
-.field b:Ljava/lang/Object;
+.field public b:Ljava/lang/Object;
 
-.field c:Ljava/util/Collection;
+.field public c:Ljava/util/Collection;
 
-.field d:Ljava/util/Iterator;
+.field public d:Ljava/util/Iterator;
 
-.field final e:Ldefpackage/old;
+.field public final e:Ldefpackage/old;
 
 
 # direct methods

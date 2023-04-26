@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field dynamiteImpl:Ldefpackage/krv;
+.field public dynamiteImpl:Ldefpackage/krv;
 
 
 # direct methods

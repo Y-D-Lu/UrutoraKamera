@@ -101,7 +101,7 @@
     return v0
 .end method
 
-.method writeReplace()Ljava/lang/Object;
+.method public writeReplace()Ljava/lang/Object;
     .locals 2
 
     .line 46

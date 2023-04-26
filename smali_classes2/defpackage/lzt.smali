@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final c:Ldefpackage/lzp;
+.field public final c:Ldefpackage/lzp;
 
 
 # direct methods

@@ -12,9 +12,9 @@
 
 .field public b:Ldefpackage/np;
 
-.field c:I
+.field public c:I
 
-.field final d:Landroid/graphics/Rect;
+.field public final d:Landroid/graphics/Rect;
 
 .field private final f:Ldefpackage/mp;
 
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 17
@@ -266,7 +266,7 @@
     return-void
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 1
 
     .line 197
@@ -417,7 +417,7 @@
     return-object v1
 .end method
 
-.method protected final onDetachedFromWindow()V
+.method public final onDetachedFromWindow()V
     .locals 2
 
     .line 240
@@ -453,7 +453,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 3
     .param p1, "i"    # I
     .param p2, "i2"    # I

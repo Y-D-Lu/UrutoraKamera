@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Throwable;
+.field public final a:Ljava/lang/Throwable;
 
 
 # direct methods

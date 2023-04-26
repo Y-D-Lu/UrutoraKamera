@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Landroid/os/IBinder;
+.field public final b:Landroid/os/IBinder;
 
 .field public final c:Ldefpackage/khi;
 
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 11

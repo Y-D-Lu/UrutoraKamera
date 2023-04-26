@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final e:Ljava/util/Collection;
+.field public final e:Ljava/util/Collection;
 
 
 # direct methods

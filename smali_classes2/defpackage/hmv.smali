@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;
+.field public final a:Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;
 
-.field final b:I
+.field public final b:I
 
-.field final c:I
+.field public final c:I
 
 .field private d:F
 

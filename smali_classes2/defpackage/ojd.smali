@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method protected constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
     .param p1, "obj"    # Ljava/lang/Object;
     .param p2, "obj2"    # Ljava/lang/Object;

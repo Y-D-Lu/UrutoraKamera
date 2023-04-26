@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nuj;
+.field public final a:Ldefpackage/nuj;
 
 
 # direct methods

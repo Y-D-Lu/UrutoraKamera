@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroid/support/wearable/watchface/decomposition/ImageComponent;
+.field public final synthetic this$0:Landroid/support/wearable/watchface/decomposition/ImageComponent;
 
 
 # direct methods

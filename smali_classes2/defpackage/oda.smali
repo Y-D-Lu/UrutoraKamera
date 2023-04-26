@@ -12,7 +12,7 @@
 
 .field public final d:Landroid/graphics/drawable/Drawable;
 
-.field final e:Lcom/google/android/material/tabs/TabLayout;
+.field public final e:Lcom/google/android/material/tabs/TabLayout;
 
 .field private f:Ldefpackage/ocx;
 
@@ -794,7 +794,7 @@
     return-void
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 3
 
     .line 218

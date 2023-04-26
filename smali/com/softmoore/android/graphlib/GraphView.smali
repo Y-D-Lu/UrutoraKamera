@@ -1729,7 +1729,7 @@
 
 
 # virtual methods
-.method protected drawViewFrame(Landroid/graphics/Canvas;)V
+.method public drawViewFrame(Landroid/graphics/Canvas;)V
     .locals 8
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -1787,7 +1787,7 @@
     return-void
 .end method
 
-.method protected init()V
+.method public init()V
     .locals 9
 
     .line 263
@@ -2024,7 +2024,7 @@
     return-void
 .end method
 
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 

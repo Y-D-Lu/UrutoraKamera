@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kip;
+.field public final a:Ldefpackage/kip;
 
-.field final b:Ldefpackage/kvm;
+.field public final b:Ldefpackage/kvm;
 
-.field final c:Ldefpackage/knh;
+.field public final c:Ldefpackage/knh;
 
 
 # direct methods

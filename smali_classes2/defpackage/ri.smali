@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final a:[I
+.field public static final a:[I
 
-.field static final b:[I
+.field public static final b:[I
 
-.field static final c:[I
+.field public static final c:[I
 
-.field static final d:[I
+.field public static final d:[I
 
-.field static final e:[I
+.field public static final e:[I
 
 .field private static final f:Ljava/lang/ThreadLocal;
 
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 16

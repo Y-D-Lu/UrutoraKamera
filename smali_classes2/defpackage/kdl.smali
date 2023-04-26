@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kdo;
+.field public final a:Ldefpackage/kdo;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method protected final newTaskFor(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/RunnableFuture;
+.method public final newTaskFor(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/RunnableFuture;
     .locals 1
     .param p1, "runnable"    # Ljava/lang/Runnable;
     .param p2, "obj"    # Ljava/lang/Object;

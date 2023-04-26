@@ -44,7 +44,7 @@
     return v0
 .end method
 
-.method protected final c()V
+.method public final c()V
     .locals 2
 
     .line 28

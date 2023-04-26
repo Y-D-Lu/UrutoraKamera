@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Lcom/google/android/material/internal/CheckableImageButton;
+.field public final b:Lcom/google/android/material/internal/CheckableImageButton;
 
 
 # direct methods

@@ -6,9 +6,9 @@
 # instance fields
 .field public final a:Landroid/content/Context;
 
-.field final b:Lcom/google/android/apps/camera/ui/eduimageview/EduImageView;
+.field public final b:Lcom/google/android/apps/camera/ui/eduimageview/EduImageView;
 
-.field c:I
+.field public c:I
 
 .field private final d:Ljava/lang/String;
 

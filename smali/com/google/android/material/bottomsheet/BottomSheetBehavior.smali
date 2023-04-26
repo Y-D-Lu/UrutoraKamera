@@ -68,17 +68,17 @@
 
 .field public i:I
 
-.field j:I
+.field public j:I
 
 .field public k:I
 
 .field public l:I
 
-.field m:F
+.field public m:F
 
 .field public n:I
 
-.field o:F
+.field public o:F
 
 .field public p:Z
 
@@ -90,7 +90,7 @@
 
 .field public t:Ldefpackage/acb;
 
-.field u:I
+.field public u:I
 
 .field public v:I
 
@@ -3786,7 +3786,7 @@
     return v0
 .end method
 
-.method final y(Landroid/view/View;)Landroid/view/View;
+.method public final y(Landroid/view/View;)Landroid/view/View;
     .locals 5
     .param p1, "view"    # Landroid/view/View;
 

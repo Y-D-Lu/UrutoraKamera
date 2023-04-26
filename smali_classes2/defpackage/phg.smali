@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected b()Ljava/util/concurrent/Future;
+.method public b()Ljava/util/concurrent/Future;
     .locals 1
 
     .line 11
@@ -27,7 +27,7 @@
     throw v0
 .end method
 
-.method protected abstract c()Ldefpackage/pht;
+.method public abstract c()Ldefpackage/pht;
 .end method
 
 .method public final d(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V

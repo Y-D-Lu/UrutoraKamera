@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Landroid/support/wearable/watchface/decomposition/ColorStringComponent;
+.field public final synthetic this$0:Landroid/support/wearable/watchface/decomposition/ColorStringComponent;
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ikh;
+.field public final a:Ldefpackage/ikh;
 
 
 # direct methods

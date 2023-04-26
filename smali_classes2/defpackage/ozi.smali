@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/ozh;
+.field public final b:Ldefpackage/ozh;
 
 .field public final c:Ljava/util/Deque;
 
@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 19

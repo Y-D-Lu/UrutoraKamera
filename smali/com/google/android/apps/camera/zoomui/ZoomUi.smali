@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 47
@@ -283,7 +283,7 @@
     return-object v0
 .end method
 
-.method final h()Landroid/widget/Space;
+.method public final h()Landroid/widget/Space;
     .locals 1
 
     .line 112
@@ -298,7 +298,7 @@
     return-object v0
 .end method
 
-.method final i()Landroid/widget/Space;
+.method public final i()Landroid/widget/Space;
     .locals 1
 
     .line 116
@@ -408,7 +408,7 @@
     return-void
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 22
 
     .line 147
@@ -916,7 +916,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 0
     .param p1, "z"    # Z
     .param p2, "i"    # I

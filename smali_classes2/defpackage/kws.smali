@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/gms/common/data/DataHolder;
+.field public final a:Lcom/google/android/gms/common/data/DataHolder;
 
 
 # direct methods

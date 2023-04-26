@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 16
@@ -501,5 +501,5 @@
 
 
 # virtual methods
-.method protected abstract a()Ldefpackage/pos;
+.method public abstract a()Ldefpackage/pos;
 .end method

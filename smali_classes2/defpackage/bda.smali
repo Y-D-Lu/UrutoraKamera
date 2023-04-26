@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
 .field public b:Ljava/lang/Class;
 

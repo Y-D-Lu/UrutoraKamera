@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bwj;
+.field public final a:Ldefpackage/bwj;
 
 
 # direct methods

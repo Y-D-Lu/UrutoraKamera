@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jet;
+.field public final a:Ldefpackage/jet;
 
 
 # direct methods

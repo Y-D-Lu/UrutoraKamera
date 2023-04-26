@@ -20,7 +20,7 @@
 # instance fields
 .field public final INSTANCE:Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1$AnonymousClass1;
 
-.field final synthetic this$0:Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;
+.field public final synthetic this$0:Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;
 
 
 # direct methods

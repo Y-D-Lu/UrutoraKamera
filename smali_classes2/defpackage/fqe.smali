@@ -14,7 +14,7 @@
 
 .field public e:Z
 
-.field final f:Ldefpackage/fqf;
+.field public final f:Ldefpackage/fqf;
 
 .field private final g:Ldefpackage/mln;
 

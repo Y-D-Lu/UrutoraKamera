@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Landroid/view/ActionProvider;
+.field public final b:Landroid/view/ActionProvider;
 
 
 # direct methods

@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/EnumMap;
+.field public final a:Ljava/util/EnumMap;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method readResolve()Ljava/lang/Object;
+.method public readResolve()Ljava/lang/Object;
     .locals 2
 
     .line 17

@@ -7,29 +7,29 @@
 
 
 # instance fields
-.field a:Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;
+.field public a:Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;
 
-.field b:Ldefpackage/duj;
+.field public b:Ldefpackage/duj;
 
-.field c:Ldefpackage/dul;
+.field public c:Ldefpackage/dul;
 
-.field d:Landroid/widget/TextView;
+.field public d:Landroid/widget/TextView;
 
-.field e:Ldefpackage/jsk;
+.field public e:Ldefpackage/jsk;
 
-.field f:Ldefpackage/jsk;
+.field public f:Ldefpackage/jsk;
 
-.field g:Ldefpackage/jsk;
+.field public g:Ldefpackage/jsk;
 
-.field h:Ldefpackage/jsk;
+.field public h:Ldefpackage/jsk;
 
-.field i:Ldefpackage/jsk;
+.field public i:Ldefpackage/jsk;
 
-.field j:Ldefpackage/jsk;
+.field public j:Ldefpackage/jsk;
 
-.field k:Ldefpackage/jsk;
+.field public k:Ldefpackage/jsk;
 
-.field l:Ldefpackage/jsk;
+.field public l:Ldefpackage/jsk;
 
 .field public m:Landroid/animation/Animator;
 
@@ -363,7 +363,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/Context;Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;Ldefpackage/duj;Ldefpackage/dul;Landroid/widget/TextView;Ldefpackage/jsk;Ldefpackage/jsk;Ldefpackage/jsk;Ldefpackage/jsk;Ldefpackage/jsk;Ldefpackage/jsk;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;Ldefpackage/duj;Ldefpackage/dul;Landroid/widget/TextView;Ldefpackage/jsk;Ldefpackage/jsk;Ldefpackage/jsk;Ldefpackage/jsk;Ldefpackage/jsk;Ldefpackage/jsk;)V
     .locals 2
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "focusIndicatorRingView"    # Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;
@@ -1664,7 +1664,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 4
     .param p1, "z"    # Z
     .param p2, "i"    # I

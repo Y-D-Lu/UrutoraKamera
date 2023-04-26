@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected a:I
+.field public a:I
 
 
 # direct methods
@@ -327,7 +327,7 @@
 
 
 # virtual methods
-.method protected final onActivityResult(IILandroid/content/Intent;)V
+.method public final onActivityResult(IILandroid/content/Intent;)V
     .locals 6
     .param p1, "i"    # I
     .param p2, "i2"    # I
@@ -464,7 +464,7 @@
     return-void
 .end method
 
-.method protected final onCreate(Landroid/os/Bundle;)V
+.method public final onCreate(Landroid/os/Bundle;)V
     .locals 2
     .param p1, "bundle"    # Landroid/os/Bundle;
 
@@ -499,7 +499,7 @@
     return-void
 .end method
 
-.method protected final onSaveInstanceState(Landroid/os/Bundle;)V
+.method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
     .param p1, "bundle"    # Landroid/os/Bundle;
 

@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field final m:Ldefpackage/qym;
+.field public final m:Ldefpackage/qym;
 
-.field final n:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final n:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # direct methods

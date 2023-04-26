@@ -23,61 +23,61 @@
 
 .field public static final USAGE_SHARED:I = 0x80
 
-.field static mBitmapOptions:Landroid/graphics/BitmapFactory$Options;
+.field public static mBitmapOptions:Landroid/graphics/BitmapFactory$Options;
 
 
 # instance fields
-.field mAdaptedAllocation:Landroid/support/v8/renderscript/Allocation;
+.field public mAdaptedAllocation:Landroid/support/v8/renderscript/Allocation;
 
-.field mAutoPadding:Z
+.field public mAutoPadding:Z
 
-.field mBitmap:Landroid/graphics/Bitmap;
+.field public mBitmap:Landroid/graphics/Bitmap;
 
-.field mByteBuffer:Ljava/nio/ByteBuffer;
+.field public mByteBuffer:Ljava/nio/ByteBuffer;
 
-.field mByteBufferStride:J
+.field public mByteBufferStride:J
 
-.field mConstrainedFace:Z
+.field public mConstrainedFace:Z
 
-.field mConstrainedLOD:Z
+.field public mConstrainedLOD:Z
 
-.field mConstrainedY:Z
+.field public mConstrainedY:Z
 
-.field mConstrainedZ:Z
+.field public mConstrainedZ:Z
 
-.field mCurrentCount:I
+.field public mCurrentCount:I
 
-.field mCurrentDimX:I
+.field public mCurrentDimX:I
 
-.field mCurrentDimY:I
+.field public mCurrentDimY:I
 
-.field mCurrentDimZ:I
+.field public mCurrentDimZ:I
 
-.field mIncAllocDestroyed:Z
+.field public mIncAllocDestroyed:Z
 
-.field mIncCompatAllocation:J
+.field public mIncCompatAllocation:J
 
-.field mReadAllowed:Z
+.field public mReadAllowed:Z
 
-.field mSelectedFace:Landroid/support/v8/renderscript/Type$CubemapFace;
+.field public mSelectedFace:Landroid/support/v8/renderscript/Type$CubemapFace;
 
-.field mSelectedLOD:I
+.field public mSelectedLOD:I
 
-.field mSelectedY:I
+.field public mSelectedY:I
 
-.field mSelectedZ:I
+.field public mSelectedZ:I
 
-.field mSize:I
+.field public mSize:I
 
-.field mType:Landroid/support/v8/renderscript/Type;
+.field public mType:Landroid/support/v8/renderscript/Type;
 
-.field mUsage:I
+.field public mUsage:I
 
-.field mWriteAllowed:Z
+.field public mWriteAllowed:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 93
@@ -1900,7 +1900,7 @@
     throw v0
 .end method
 
-.method static elementFromBitmap(Landroid/support/v8/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/support/v8/renderscript/Element;
+.method public static elementFromBitmap(Landroid/support/v8/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/support/v8/renderscript/Element;
     .locals 4
     .param p0, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;
     .param p1, "bitmap"    # Landroid/graphics/Bitmap;
@@ -2023,7 +2023,7 @@
     return-void
 .end method
 
-.method static typeFromBitmap(Landroid/support/v8/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/support/v8/renderscript/Allocation$MipmapControl;)Landroid/support/v8/renderscript/Type;
+.method public static typeFromBitmap(Landroid/support/v8/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/support/v8/renderscript/Allocation$MipmapControl;)Landroid/support/v8/renderscript/Type;
     .locals 2
     .param p0, "renderScript"    # Landroid/support/v8/renderscript/RenderScript;
     .param p1, "bitmap"    # Landroid/graphics/Bitmap;

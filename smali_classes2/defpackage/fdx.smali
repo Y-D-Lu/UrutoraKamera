@@ -6,7 +6,7 @@
 # instance fields
 .field public a:J
 
-.field final b:J
+.field public final b:J
 
 .field public final c:Ljava/io/File;
 

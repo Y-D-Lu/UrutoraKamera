@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/duy;
+.field public final a:Ldefpackage/duy;
 
 .field private final b:I
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gae;
+.field public final a:Ldefpackage/gae;
 
 
 # direct methods

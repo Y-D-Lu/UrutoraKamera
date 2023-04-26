@@ -9,23 +9,23 @@
 
 
 # static fields
-.field static final a:Ljava/lang/Object;
+.field public static final a:Ljava/lang/Object;
 
-.field static final b:Ljava/lang/Object;
+.field public static final b:Ljava/lang/Object;
 
-.field static final c:Ljava/lang/Object;
+.field public static final c:Ljava/lang/Object;
 
-.field static final d:Ljava/lang/Object;
+.field public static final d:Ljava/lang/Object;
 
 .field private static final serialVersionUID:J = -0x54ef67182406fc25L
 
 
 # instance fields
-.field final e:Ljava/lang/Runnable;
+.field public final e:Ljava/lang/Runnable;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 10

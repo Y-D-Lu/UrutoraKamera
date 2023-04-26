@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method protected final a(Landroid/content/Context;)Ldefpackage/kqw;
+.method public final a(Landroid/content/Context;)Ldefpackage/kqw;
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
 

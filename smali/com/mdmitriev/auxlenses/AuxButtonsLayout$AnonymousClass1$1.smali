@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -22,13 +22,13 @@
 
 .field private final arg$2:Landroid/view/View;
 
-.field final synthetic this$1:Lcom/mdmitriev/auxlenses/AuxButtonsLayout$AnonymousClass1;
+.field public final synthetic this$1:Lcom/mdmitriev/auxlenses/AuxButtonsLayout$AnonymousClass1;
 
-.field final synthetic val$view:Landroid/view/View;
+.field public final synthetic val$view:Landroid/view/View;
 
 
 # direct methods
-.method constructor <init>(Lcom/mdmitriev/auxlenses/AuxButtonsLayout$AnonymousClass1;Landroid/view/View;)V
+.method public constructor <init>(Lcom/mdmitriev/auxlenses/AuxButtonsLayout$AnonymousClass1;Landroid/view/View;)V
     .locals 1
     .param p1, "this$1"    # Lcom/mdmitriev/auxlenses/AuxButtonsLayout$AnonymousClass1;
 

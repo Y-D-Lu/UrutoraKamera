@@ -12,31 +12,31 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/hcv;
+.field public final synthetic this$0:Ldefpackage/hcv;
 
-.field final synthetic val$gazVar:Ldefpackage/gaz;
+.field public final synthetic val$gazVar:Ldefpackage/gaz;
 
-.field final synthetic val$hcgVar2:Ldefpackage/hcg;
+.field public final synthetic val$hcgVar2:Ldefpackage/hcg;
 
-.field final synthetic val$hxjVar:Ldefpackage/hxj;
+.field public final synthetic val$hxjVar:Ldefpackage/hxj;
 
-.field final synthetic val$lapVar:Ldefpackage/lap;
+.field public final synthetic val$lapVar:Ldefpackage/lap;
 
-.field final synthetic val$lncVar2:Ldefpackage/lnc;
+.field public final synthetic val$lncVar2:Ldefpackage/lnc;
 
-.field final synthetic val$ojcVar2:Ldefpackage/ojc;
+.field public final synthetic val$ojcVar2:Ldefpackage/ojc;
 
-.field final synthetic val$qkgVar4:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar4:Ldefpackage/qkg;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/hcv;Ldefpackage/lnc;Ldefpackage/ojc;Ldefpackage/hxj;Ldefpackage/lap;Ldefpackage/qkg;Ldefpackage/hcg;Ldefpackage/gaz;)V
+.method public constructor <init>(Ldefpackage/hcv;Ldefpackage/lnc;Ldefpackage/ojc;Ldefpackage/hxj;Ldefpackage/lap;Ldefpackage/qkg;Ldefpackage/hcg;Ldefpackage/gaz;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/hcv;
 

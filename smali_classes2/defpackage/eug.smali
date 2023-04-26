@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final a:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final b:Ldefpackage/eur;
+.field public final b:Ldefpackage/eur;
 
-.field final c:I
+.field public final c:I
 
 
 # direct methods

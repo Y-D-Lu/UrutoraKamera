@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Ldefpackage/qbs;
+.field public final b:Ldefpackage/qbs;
 
-.field c:Ljava/lang/Thread;
+.field public c:Ljava/lang/Thread;
 
 
 # direct methods

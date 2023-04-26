@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/irr;
+.field public final a:Ldefpackage/irr;
 
 
 # direct methods

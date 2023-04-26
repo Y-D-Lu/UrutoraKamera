@@ -1339,7 +1339,7 @@
     return v1
 .end method
 
-.method protected G(Ljava/lang/Throwable;)Z
+.method public G(Ljava/lang/Throwable;)Z
     .locals 1
     .param p1, "th"    # Ljava/lang/Throwable;
 
@@ -1497,7 +1497,7 @@
     return-object v0
 .end method
 
-.method protected h(Ljava/lang/Object;)V
+.method public h(Ljava/lang/Object;)V
     .locals 0
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -1693,7 +1693,7 @@
     return-void
 .end method
 
-.method protected k()Z
+.method public k()Z
     .locals 1
 
     .line 393

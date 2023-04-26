@@ -38,11 +38,11 @@
 
 .field public o:Z
 
-.field p:J
+.field public p:J
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 17

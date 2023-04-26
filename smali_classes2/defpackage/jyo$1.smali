@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/jyo;
+.field public final synthetic this$0:Ldefpackage/jyo;
 
-.field final synthetic val$i3:I
+.field public final synthetic val$i3:I
 
-.field final synthetic val$i4:I
+.field public final synthetic val$i4:I
 
-.field final synthetic val$surfaceView:Landroid/view/SurfaceView;
+.field public final synthetic val$surfaceView:Landroid/view/SurfaceView;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/jyo;IILandroid/view/SurfaceView;)V
+.method public constructor <init>(Ldefpackage/jyo;IILandroid/view/SurfaceView;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/jyo;
 

@@ -12,49 +12,49 @@
 
 .field public final c:Ljava/util/ArrayList;
 
-.field protected final d:Ljava/util/TreeSet;
+.field public final d:Ljava/util/TreeSet;
 
-.field protected final e:Ljava/util/ArrayList;
+.field public final e:Ljava/util/ArrayList;
 
 .field public final f:Ljava/util/ArrayList;
 
-.field protected final g:Ljava/util/TreeSet;
+.field public final g:Ljava/util/TreeSet;
 
 .field public final h:Ljava/util/EnumSet;
 
-.field protected final i:Ljava/util/EnumSet;
+.field public final i:Ljava/util/EnumSet;
 
-.field protected final j:Ljava/util/EnumSet;
+.field public final j:Ljava/util/EnumSet;
 
-.field protected final k:Ljava/util/EnumSet;
+.field public final k:Ljava/util/EnumSet;
 
-.field protected final l:Ljava/util/EnumSet;
+.field public final l:Ljava/util/EnumSet;
 
-.field protected m:Ldefpackage/axn;
+.field public m:Ldefpackage/axn;
 
-.field protected n:I
+.field public n:I
 
-.field protected o:I
+.field public o:I
 
-.field protected p:F
+.field public p:F
 
-.field protected q:I
+.field public q:I
 
-.field protected r:I
+.field public r:I
 
-.field protected s:I
+.field public s:I
 
-.field protected t:F
+.field public t:F
 
 .field public u:F
 
-.field protected v:F
+.field public v:F
 
 .field public final w:Ldefpackage/hq;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 10

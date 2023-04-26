@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/dbv;
+.field public final a:Ldefpackage/dbv;
 
 .field private final b:I
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jsi;
+.field public final a:Ldefpackage/jsi;
 
 
 # direct methods

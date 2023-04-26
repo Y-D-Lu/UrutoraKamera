@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mtw;
+.field public final a:Ldefpackage/mtw;
 
 
 # direct methods

@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static a:I
+.field public static a:I
 
 .field public static final b:Ldefpackage/kng;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 12

@@ -371,7 +371,7 @@
 
 
 # virtual methods
-.method final a()I
+.method public final a()I
     .locals 2
 
     .line 90
@@ -2197,7 +2197,7 @@
     .end array-data
 .end method
 
-.method protected final onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 2
 
     .line 331
@@ -2265,7 +2265,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 2
     .param p1, "z"    # Z
     .param p2, "i"    # I

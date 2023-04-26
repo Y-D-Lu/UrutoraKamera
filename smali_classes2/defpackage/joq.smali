@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lcom/google/android/apps/camera/ui/views/GradientBar;
+.field public final a:Lcom/google/android/apps/camera/ui/views/GradientBar;
 
 
 # direct methods

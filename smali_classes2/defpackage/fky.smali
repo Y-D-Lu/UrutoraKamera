@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field a:Ldefpackage/iax;
+.field public a:Ldefpackage/iax;
 
 .field public final b:Ldefpackage/fvv;
 

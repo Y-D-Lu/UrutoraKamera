@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/awq;
+.field public final a:Ldefpackage/awq;
 
 
 # direct methods

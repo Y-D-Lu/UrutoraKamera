@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ldefpackage/cu;
+.field public final a:Ldefpackage/cu;
 
-.field b:Z
+.field public b:Z
 
-.field c:I
+.field public c:I
 
 
 # direct methods
@@ -1111,7 +1111,7 @@
     return-void
 .end method
 
-.method final i(Z)V
+.method public final i(Z)V
     .locals 3
     .param p1, "z"    # Z
 

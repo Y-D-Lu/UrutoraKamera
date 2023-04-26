@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/kpt;
+.field public final synthetic this$0:Ldefpackage/kpt;
 
-.field final synthetic val$activity:Landroid/app/Activity;
+.field public final synthetic val$activity:Landroid/app/Activity;
 
-.field final synthetic val$intent:Landroid/content/Intent;
+.field public final synthetic val$intent:Landroid/content/Intent;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/kpt;Landroid/app/Activity;Landroid/content/Intent;)V
+.method public constructor <init>(Ldefpackage/kpt;Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/kpt;
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/moa;
+.field public final a:Ldefpackage/moa;
 
-.field final b:Ljava/util/concurrent/Callable;
+.field public final b:Ljava/util/concurrent/Callable;
 
 
 # direct methods

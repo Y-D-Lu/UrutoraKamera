@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/jzq;
+.field public final b:Ldefpackage/jzq;
 
 
 # direct methods

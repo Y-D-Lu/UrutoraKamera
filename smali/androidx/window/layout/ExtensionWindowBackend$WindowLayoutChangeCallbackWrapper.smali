@@ -23,7 +23,7 @@
 
 .field private lastInfo:Landroidx/window/layout/WindowLayoutInfo;
 
-.field final synthetic this$0:Landroidx/window/layout/ExtensionWindowBackend;
+.field public final synthetic this$0:Landroidx/window/layout/ExtensionWindowBackend;
 
 
 # direct methods

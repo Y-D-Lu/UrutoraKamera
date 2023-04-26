@@ -183,7 +183,7 @@
     return-void
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 5
 
     .line 66
@@ -723,7 +723,7 @@
     return-object v0
 .end method
 
-.method protected final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 2
     .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
 

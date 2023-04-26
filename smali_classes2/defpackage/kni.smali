@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
 .field public final b:Landroid/accounts/Account;
 
@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 12

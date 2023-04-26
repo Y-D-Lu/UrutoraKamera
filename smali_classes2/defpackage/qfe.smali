@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final c:Ldefpackage/qcm;
+.field public final c:Ldefpackage/qcm;
 
-.field final d:Ljava/util/concurrent/Callable;
+.field public final d:Ljava/util/concurrent/Callable;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method protected final h(Ldefpackage/qym;)V
+.method public final h(Ldefpackage/qym;)V
     .locals 5
     .param p1, "qymVar"    # Ldefpackage/qym;
 

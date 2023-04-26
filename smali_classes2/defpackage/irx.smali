@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/isa;
+.field public final a:Ldefpackage/isa;
 
-.field final b:Ldefpackage/irz;
+.field public final b:Ldefpackage/irz;
 
 
 # direct methods

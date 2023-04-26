@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Lcom/google/lens/sdk/LensApi$LensLaunchStatusCallback;
+.field public final b:Lcom/google/lens/sdk/LensApi$LensLaunchStatusCallback;
 
 
 # direct methods

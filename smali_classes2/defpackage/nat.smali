@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:Landroid/app/Application;
 
-.field final b:Ldefpackage/nav;
+.field public final b:Ldefpackage/nav;
 
 
 # direct methods

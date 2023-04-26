@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 33
@@ -557,7 +557,7 @@
     return-void
 .end method
 
-.method static af(Landroid/view/View;)V
+.method public static af(Landroid/view/View;)V
     .locals 6
     .param p0, "view"    # Landroid/view/View;
 

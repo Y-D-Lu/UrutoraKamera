@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 19
@@ -885,7 +885,7 @@
     return v0
 .end method
 
-.method manualArray()Ljava/util/Set;
+.method public manualArray()Ljava/util/Set;
     .locals 6
 
     .line 156
@@ -963,7 +963,7 @@
     return-object v2
 .end method
 
-.method save()V
+.method public save()V
     .locals 11
 
     .line 173

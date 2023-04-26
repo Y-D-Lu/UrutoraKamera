@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Ldefpackage/pih;
+.field public final b:Ldefpackage/pih;
 
 
 # direct methods

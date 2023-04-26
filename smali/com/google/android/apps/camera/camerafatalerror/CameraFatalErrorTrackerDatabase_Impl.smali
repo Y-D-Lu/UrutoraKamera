@@ -23,7 +23,7 @@
 
 
 # virtual methods
-.method protected final a()Ldefpackage/aif;
+.method public final a()Ldefpackage/aif;
     .locals 6
 
     .line 34

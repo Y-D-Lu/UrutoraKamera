@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Landroid/graphics/drawable/AnimatedVectorDrawable;
+.field public final a:Landroid/graphics/drawable/AnimatedVectorDrawable;
 
-.field final b:Landroid/graphics/drawable/AnimatedVectorDrawable;
+.field public final b:Landroid/graphics/drawable/AnimatedVectorDrawable;
 
-.field final c:Ldefpackage/epw;
+.field public final c:Ldefpackage/epw;
 
 
 # direct methods

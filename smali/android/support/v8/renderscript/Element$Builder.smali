@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field mArraySizes:[I
+.field public mArraySizes:[I
 
-.field mCount:I
+.field public mCount:I
 
-.field mElementNames:[Ljava/lang/String;
+.field public mElementNames:[Ljava/lang/String;
 
-.field mElements:[Landroid/support/v8/renderscript/Element;
+.field public mElements:[Landroid/support/v8/renderscript/Element;
 
-.field mRS:Landroid/support/v8/renderscript/RenderScript;
+.field public mRS:Landroid/support/v8/renderscript/RenderScript;
 
-.field mSkipPadding:I
+.field public mSkipPadding:I
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/Element;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/Element;
 
 
 # direct methods

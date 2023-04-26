@@ -23,13 +23,13 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field public a:Ljava/lang/Object;
 
-.field b:Ljava/lang/Object;
+.field public b:Ljava/lang/Object;
 
-.field c:I
+.field public c:I
 
-.field final d:Ldefpackage/wa;
+.field public final d:Ldefpackage/wa;
 
 .field private e:Ljava/lang/Object;
 

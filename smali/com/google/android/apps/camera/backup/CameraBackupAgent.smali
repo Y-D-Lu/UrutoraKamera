@@ -49,7 +49,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/util/Map;
+.method public final a()Ljava/util/Map;
     .locals 2
 
     .line 30

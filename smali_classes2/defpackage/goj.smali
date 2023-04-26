@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:F
+.field public final a:F
 
-.field final b:Ldefpackage/gok;
+.field public final b:Ldefpackage/gok;
 
 
 # direct methods

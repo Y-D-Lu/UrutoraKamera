@@ -2927,7 +2927,7 @@
     return-void
 .end method
 
-.method final d(Z)V
+.method public final d(Z)V
     .locals 1
     .param p1, "z"    # Z
 

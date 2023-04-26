@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected final entryRemoved(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final entryRemoved(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 3
     .param p1, "z"    # Z
     .param p2, "obj"    # Ljava/lang/Object;
@@ -67,7 +67,7 @@
     return-void
 .end method
 
-.method protected final sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
     .param p2, "obj2"    # Ljava/lang/Object;

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kha;
+.field public final a:Ldefpackage/kha;
 
 
 # direct methods

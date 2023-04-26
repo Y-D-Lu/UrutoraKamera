@@ -741,7 +741,7 @@
     return-void
 .end method
 
-.method protected final onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 5
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
@@ -817,7 +817,7 @@
     return-void
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 30
     .param p1, "z"    # Z
     .param p2, "i"    # I
@@ -2179,7 +2179,7 @@
     .end packed-switch
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 24
     .param p1, "i"    # I
     .param p2, "i2"    # I

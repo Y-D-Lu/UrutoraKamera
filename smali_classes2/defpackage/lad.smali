@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lae;
+.field public final a:Ldefpackage/lae;
 
 .field private final b:Ljava/util/concurrent/atomic/AtomicBoolean;
 

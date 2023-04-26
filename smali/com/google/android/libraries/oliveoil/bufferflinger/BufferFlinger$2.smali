@@ -12,29 +12,29 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger;
+.field public final synthetic this$0:Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger;
 
-.field final synthetic val$hardwareBuffer:Landroid/hardware/HardwareBuffer;
+.field public final synthetic val$hardwareBuffer:Landroid/hardware/HardwareBuffer;
 
-.field final synthetic val$i:I
+.field public final synthetic val$i:I
 
-.field final synthetic val$onBufferReleasedListener:Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnBufferReleasedListener;
+.field public final synthetic val$onBufferReleasedListener:Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnBufferReleasedListener;
 
-.field final synthetic val$onPresentationTimestampAvailableListener:Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnPresentationTimestampAvailableListener;
+.field public final synthetic val$onPresentationTimestampAvailableListener:Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnPresentationTimestampAvailableListener;
 
-.field final synthetic val$rect:Landroid/graphics/Rect;
+.field public final synthetic val$rect:Landroid/graphics/Rect;
 
-.field final synthetic val$rect2:Landroid/graphics/Rect;
+.field public final synthetic val$rect2:Landroid/graphics/Rect;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger;Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnBufferReleasedListener;Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnPresentationTimestampAvailableListener;Landroid/hardware/HardwareBuffer;Landroid/graphics/Rect;Landroid/graphics/Rect;I)V
+.method public constructor <init>(Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger;Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnBufferReleasedListener;Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnPresentationTimestampAvailableListener;Landroid/hardware/HardwareBuffer;Landroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger;
 

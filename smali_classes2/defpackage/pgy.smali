@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field a:Ldefpackage/pha;
+.field public a:Ldefpackage/pha;
 
-.field b:Ljava/util/concurrent/Executor;
+.field public b:Ljava/util/concurrent/Executor;
 
-.field c:Ljava/lang/Runnable;
+.field public c:Ljava/lang/Runnable;
 
-.field d:Ljava/lang/Thread;
+.field public d:Ljava/lang/Thread;
 
 
 # direct methods

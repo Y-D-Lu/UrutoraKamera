@@ -19,7 +19,7 @@
 
 .field public f:Z
 
-.field final g:Ldefpackage/erk;
+.field public final g:Ldefpackage/erk;
 
 
 # direct methods

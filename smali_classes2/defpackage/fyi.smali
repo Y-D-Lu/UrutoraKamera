@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/fyk;
+.field public final a:Ldefpackage/fyk;
 
 
 # direct methods

@@ -8,11 +8,11 @@
 
 .field public b:F
 
-.field c:Z
+.field public c:Z
 
 .field public final d:Ldefpackage/aj;
 
-.field e:Z
+.field public e:Z
 
 
 # direct methods

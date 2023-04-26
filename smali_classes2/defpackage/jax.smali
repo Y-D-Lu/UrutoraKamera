@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jay;
+.field public final a:Ldefpackage/jay;
 
 
 # direct methods

@@ -145,7 +145,7 @@
     return-void
 .end method
 
-.method protected abstract c()Ldefpackage/iaf;
+.method public abstract c()Ldefpackage/iaf;
 .end method
 
 .method public final fP(Ldefpackage/jrl;F)V

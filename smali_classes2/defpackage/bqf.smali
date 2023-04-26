@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final a:Ldefpackage/oor;
+.field public static final a:Ldefpackage/oor;
 
-.field static final b:Ldefpackage/oor;
+.field public static final b:Ldefpackage/oor;
 
-.field static final c:Ldefpackage/oor;
+.field public static final c:Ldefpackage/oor;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 21
 
     .line 11
@@ -193,7 +193,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 5

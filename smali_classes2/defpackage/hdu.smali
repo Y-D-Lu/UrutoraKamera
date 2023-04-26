@@ -14,13 +14,13 @@
 
 
 # instance fields
-.field protected final a:Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;
+.field public final a:Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;
 
-.field protected final b:Ldefpackage/hvj;
+.field public final b:Ldefpackage/hvj;
 
-.field protected final c:Ldefpackage/dzv;
+.field public final c:Ldefpackage/dzv;
 
-.field protected final d:Ldefpackage/ljf;
+.field public final d:Ldefpackage/ljf;
 
 .field private final f:Ldefpackage/dkq;
 
@@ -38,7 +38,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 28
@@ -951,7 +951,7 @@
     return-void
 .end method
 
-.method protected j(Ldefpackage/hcf;Ldefpackage/hdv;)Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;
+.method public j(Ldefpackage/hcf;Ldefpackage/hdv;)Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;
     .locals 12
     .param p1, "hcfVar"    # Ldefpackage/hcf;
     .param p2, "hdvVar"    # Ldefpackage/hdv;

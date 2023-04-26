@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/byf;
+.field public final a:Ldefpackage/byf;
 
 
 # direct methods

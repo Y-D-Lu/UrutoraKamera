@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final a:Ldefpackage/msn;
+.field public final a:Ldefpackage/msn;
 
 
 # direct methods

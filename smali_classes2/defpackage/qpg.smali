@@ -74,7 +74,7 @@
     return-void
 .end method
 
-.method protected f(Ljava/lang/Throwable;Z)V
+.method public f(Ljava/lang/Throwable;Z)V
     .locals 0
     .param p1, "th"    # Ljava/lang/Throwable;
     .param p2, "z"    # Z
@@ -83,7 +83,7 @@
     return-void
 .end method
 
-.method protected g(Ljava/lang/Object;)V
+.method public g(Ljava/lang/Object;)V
     .locals 0
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -100,7 +100,7 @@
     return-object v0
 .end method
 
-.method protected final h(Ljava/lang/Object;)V
+.method public final h(Ljava/lang/Object;)V
     .locals 3
     .param p1, "obj"    # Ljava/lang/Object;
 

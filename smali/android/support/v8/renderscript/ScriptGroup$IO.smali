@@ -9,17 +9,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "IO"
 .end annotation
 
 
 # instance fields
-.field mAllocation:Landroid/support/v8/renderscript/Allocation;
+.field public mAllocation:Landroid/support/v8/renderscript/Allocation;
 
-.field mKID:Landroid/support/v8/renderscript/Script$KernelID;
+.field public mKID:Landroid/support/v8/renderscript/Script$KernelID;
 
-.field final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
+.field public final synthetic this$0:Landroid/support/v8/renderscript/ScriptGroup;
 
 
 # direct methods

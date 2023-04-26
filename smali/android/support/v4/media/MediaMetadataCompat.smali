@@ -9,15 +9,15 @@
 # static fields
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
 
-.field static final a:Ldefpackage/wy;
+.field public static final a:Ldefpackage/wy;
 
 
 # instance fields
-.field final b:Landroid/os/Bundle;
+.field public final b:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 18

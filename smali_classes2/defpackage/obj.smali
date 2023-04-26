@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/obl;
+.field public final a:Ldefpackage/obl;
 
-.field final b:Ldefpackage/obk;
+.field public final b:Ldefpackage/obk;
 
 
 # direct methods

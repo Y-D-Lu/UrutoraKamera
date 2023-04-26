@@ -10,7 +10,7 @@
 
 .field public final c:I
 
-.field final d:Ldefpackage/kli;
+.field public final d:Ldefpackage/kli;
 
 
 # direct methods

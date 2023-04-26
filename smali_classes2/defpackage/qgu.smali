@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qbq;
+.field public final a:Ldefpackage/qbq;
 
-.field final b:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final b:Ljava/util/concurrent/atomic/AtomicReference;
 
 
 # direct methods

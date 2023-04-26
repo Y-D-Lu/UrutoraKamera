@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/nuc;
+.field public final a:Ldefpackage/nuc;
 
-.field final b:Ldefpackage/pvn;
+.field public final b:Ldefpackage/pvn;
 
 
 # direct methods

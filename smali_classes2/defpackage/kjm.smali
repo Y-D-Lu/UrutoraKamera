@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field protected volatile a:Z
+.field public volatile a:Z
 
-.field protected final b:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final b:Ljava/util/concurrent/atomic/AtomicReference;
 
 .field public final c:Landroid/os/Handler;
 
-.field protected final d:Ldefpackage/khm;
+.field public final d:Ldefpackage/khm;
 
 
 # direct methods
@@ -324,10 +324,10 @@
     return-void
 .end method
 
-.method protected abstract e(Ldefpackage/khi;I)V
+.method public abstract e(Ldefpackage/khi;I)V
 .end method
 
-.method protected abstract f()V
+.method public abstract f()V
 .end method
 
 .method public final g(Landroid/os/Bundle;)V

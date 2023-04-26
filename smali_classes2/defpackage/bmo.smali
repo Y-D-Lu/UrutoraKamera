@@ -89,7 +89,7 @@
     return v0
 .end method
 
-.method protected x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 1
     .param p1, "i"    # I
     .param p2, "parcel"    # Landroid/os/Parcel;

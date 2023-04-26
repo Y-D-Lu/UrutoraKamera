@@ -34,7 +34,7 @@
 
 .field public idButtonWide:I
 
-.field resources:Landroid/content/res/Resources;
+.field public resources:Landroid/content/res/Resources;
 
 
 # direct methods

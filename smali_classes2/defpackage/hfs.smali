@@ -11,27 +11,27 @@
 
 .field public b:Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;
 
-.field final c:J
+.field public final c:J
 
-.field final d:Z
+.field public final d:Z
 
-.field final e:Lcom/google/googlex/gcam/PortraitRequest;
+.field public final e:Lcom/google/googlex/gcam/PortraitRequest;
 
-.field final f:Lcom/google/googlex/gcam/RawReadView;
+.field public final f:Lcom/google/googlex/gcam/RawReadView;
 
-.field final g:Lcom/google/googlex/gcam/ShotMetadata;
+.field public final g:Lcom/google/googlex/gcam/ShotMetadata;
 
-.field final h:Lcom/google/googlex/gcam/RawReadView;
+.field public final h:Lcom/google/googlex/gcam/RawReadView;
 
-.field final i:Lcom/google/googlex/gcam/ShotMetadata;
+.field public final i:Lcom/google/googlex/gcam/ShotMetadata;
 
-.field final j:Lcom/google/googlex/gcam/InterleavedImageU16;
+.field public final j:Lcom/google/googlex/gcam/InterleavedImageU16;
 
-.field final k:Lcom/google/googlex/gcam/InterleavedImageU8;
+.field public final k:Lcom/google/googlex/gcam/InterleavedImageU8;
 
-.field final l:Ldefpackage/hfw;
+.field public final l:Ldefpackage/hfw;
 
-.field final m:Ldefpackage/ega;
+.field public final m:Ldefpackage/ega;
 
 
 # direct methods

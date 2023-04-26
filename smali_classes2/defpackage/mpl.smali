@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 13
@@ -461,7 +461,7 @@
     throw v1
 .end method
 
-.method protected final gy()V
+.method public final gy()V
     .locals 2
 
     .line 95

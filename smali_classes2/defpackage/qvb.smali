@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/reflect/Constructor;
+.field public final a:Ljava/lang/reflect/Constructor;
 
 .field private final b:I
 

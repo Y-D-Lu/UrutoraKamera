@@ -7,9 +7,9 @@
 
 
 # static fields
-.field static final a:Ldefpackage/ppi;
+.field public static final a:Ldefpackage/ppi;
 
-.field static final b:Ldefpackage/ppi;
+.field public static final b:Ldefpackage/ppi;
 
 .field public static final c:Ldefpackage/ppi;
 
@@ -55,7 +55,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 9

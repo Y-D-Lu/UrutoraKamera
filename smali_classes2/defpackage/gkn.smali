@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/gko;
+.field public final a:Ldefpackage/gko;
 
 .field private final b:I
 

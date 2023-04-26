@@ -7,9 +7,9 @@
 
 
 # static fields
-.field static final a:Z
+.field public static final a:Z
 
-.field static final b:Ldefpackage/asc;
+.field public static final b:Ldefpackage/asc;
 
 .field public static final c:Ljava/lang/Object;
 
@@ -17,15 +17,15 @@
 
 
 # instance fields
-.field volatile d:Ljava/lang/Object;
+.field public volatile d:Ljava/lang/Object;
 
-.field volatile e:Ldefpackage/asg;
+.field public volatile e:Ldefpackage/asg;
 
-.field volatile f:Ldefpackage/ask;
+.field public volatile f:Ldefpackage/ask;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 23
@@ -155,7 +155,7 @@
     return-void
 .end method
 
-.method protected constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 38

@@ -141,10 +141,10 @@
 
 
 # virtual methods
-.method protected abstract a()I
+.method public abstract a()I
 .end method
 
-.method protected e(I)V
+.method public e(I)V
     .locals 0
     .param p1, "i"    # I
     .annotation system Ldalvik/annotation/Throws;

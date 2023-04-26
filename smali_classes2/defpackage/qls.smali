@@ -568,10 +568,10 @@
     return-object v2
 .end method
 
-.method protected abstract invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.method public abstract invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 .end method
 
-.method protected releaseIntercepted()V
+.method public releaseIntercepted()V
     .locals 0
 
     .line 117

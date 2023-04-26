@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/kff;
+.field public final a:Ldefpackage/kff;
 
 .field private final b:Ljava/lang/String;
 

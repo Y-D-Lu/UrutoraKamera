@@ -30,7 +30,7 @@
 
 
 # direct methods
-.method protected constructor <init>(Ldefpackage/kdy;)V
+.method public constructor <init>(Ldefpackage/kdy;)V
     .locals 20
     .param p1, "kdyVar"    # Ldefpackage/kdy;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bzy;
+.field public final a:Ldefpackage/bzy;
 
 
 # direct methods

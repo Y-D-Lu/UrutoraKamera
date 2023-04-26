@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final k:Ldefpackage/hef;
+.field public final k:Ldefpackage/hef;
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oir;
+.field public final a:Ldefpackage/oir;
 
 
 # direct methods

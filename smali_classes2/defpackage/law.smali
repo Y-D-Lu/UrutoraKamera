@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lax;
+.field public final a:Ldefpackage/lax;
 
 .field private final b:Ljava/lang/Runnable;
 

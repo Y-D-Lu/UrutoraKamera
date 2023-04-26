@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+.field public final b:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
 
 # direct methods

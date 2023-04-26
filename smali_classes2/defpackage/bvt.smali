@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/bvu;
+.field public final a:Ldefpackage/bvu;
 
 
 # direct methods

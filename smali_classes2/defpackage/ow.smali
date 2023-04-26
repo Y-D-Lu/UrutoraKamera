@@ -9,13 +9,13 @@
 # static fields
 .field public static final a:Ljava/lang/ThreadLocal;
 
-.field static final b:Ljava/util/Comparator;
+.field public static final b:Ljava/util/Comparator;
 
 
 # instance fields
 .field public final c:Ljava/util/ArrayList;
 
-.field d:J
+.field public d:J
 
 .field public e:J
 
@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     .line 14

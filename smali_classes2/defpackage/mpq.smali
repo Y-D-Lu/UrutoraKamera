@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mpr;
+.field public final a:Ldefpackage/mpr;
 
 
 # direct methods

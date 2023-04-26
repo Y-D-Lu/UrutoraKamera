@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field d:[Ljava/lang/Object;
+.field public d:[Ljava/lang/Object;
 
 .field private e:I
 

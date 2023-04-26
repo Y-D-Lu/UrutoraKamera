@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/jsh;
+.field public final a:Ldefpackage/jsh;
 
 
 # direct methods

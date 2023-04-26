@@ -41,7 +41,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Ldefpackage/lxv;)Ldefpackage/lce;
+.method public static synthetic access$000(Ldefpackage/lxv;)Ldefpackage/lce;
     .locals 1
     .param p0, "x0"    # Ldefpackage/lxv;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/glz;
+.field public final a:Ldefpackage/glz;
 
 
 # direct methods

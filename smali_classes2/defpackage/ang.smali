@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/work/Worker;
+.field public final a:Landroidx/work/Worker;
 
 
 # direct methods

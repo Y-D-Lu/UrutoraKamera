@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final c:Ldefpackage/hsp;
+.field public final c:Ldefpackage/hsp;
 
-.field final d:Ldefpackage/gfi;
+.field public final d:Ldefpackage/gfi;
 
 .field public final e:J
 

@@ -8,13 +8,13 @@
 
 
 # static fields
-.field static final a:Ljava/lang/String;
+.field public static final a:Ljava/lang/String;
 
-.field static final b:[Ljava/lang/Class;
+.field public static final b:[Ljava/lang/Class;
 
-.field static final c:Ljava/lang/ThreadLocal;
+.field public static final c:Ljava/lang/ThreadLocal;
 
-.field static final d:Ljava/util/Comparator;
+.field public static final d:Ljava/util/Comparator;
 
 .field private static final i:Ldefpackage/fc;
 
@@ -58,7 +58,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 81
@@ -662,7 +662,7 @@
     throw v1
 .end method
 
-.method static final n(Landroid/view/View;)Ldefpackage/aah;
+.method public static final n(Landroid/view/View;)Ldefpackage/aah;
     .locals 6
     .param p0, "view"    # Landroid/view/View;
 
@@ -2188,7 +2188,7 @@
     return-void
 .end method
 
-.method protected final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+.method public final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -2297,7 +2297,7 @@
     return-void
 .end method
 
-.method protected final drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
+.method public final drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 2
     .param p1, "canvas"    # Landroid/graphics/Canvas;
     .param p2, "view"    # Landroid/view/View;
@@ -2321,7 +2321,7 @@
     return v1
 .end method
 
-.method protected final drawableStateChanged()V
+.method public final drawableStateChanged()V
     .locals 3
 
     .line 488
@@ -2738,7 +2738,7 @@
     return-void
 .end method
 
-.method protected final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
     .line 549
@@ -2765,7 +2765,7 @@
     return-object v0
 .end method
 
-.method protected final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
@@ -2821,7 +2821,7 @@
     return v0
 .end method
 
-.method protected final getSuggestedMinimumHeight()I
+.method public final getSuggestedMinimumHeight()I
     .locals 3
 
     .line 569
@@ -2846,7 +2846,7 @@
     return v0
 .end method
 
-.method protected final getSuggestedMinimumWidth()I
+.method public final getSuggestedMinimumWidth()I
     .locals 3
 
     .line 574
@@ -3038,7 +3038,7 @@
     return-void
 .end method
 
-.method final j(Landroid/view/View;ZLandroid/graphics/Rect;)V
+.method public final j(Landroid/view/View;ZLandroid/graphics/Rect;)V
     .locals 4
     .param p1, "view"    # Landroid/view/View;
     .param p2, "z"    # Z
@@ -5423,7 +5423,7 @@
     return v1
 .end method
 
-.method protected final onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 6
     .param p1, "z"    # Z
     .param p2, "i2"    # I
@@ -5508,7 +5508,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 2
     .param p1, "r31"    # I
     .param p2, "r32"    # I
@@ -5735,7 +5735,7 @@
     return-void
 .end method
 
-.method protected final onRestoreInstanceState(Landroid/os/Parcelable;)V
+.method public final onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 9
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
@@ -5836,7 +5836,7 @@
     return-void
 .end method
 
-.method protected final onSaveInstanceState()Landroid/os/Parcelable;
+.method public final onSaveInstanceState()Landroid/os/Parcelable;
     .locals 9
 
     .line 1087
@@ -6335,7 +6335,7 @@
     return-void
 .end method
 
-.method protected final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
     .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
 

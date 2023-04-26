@@ -9,7 +9,7 @@
 # instance fields
 .field public volatile a:Z
 
-.field final b:Ldefpackage/ked;
+.field public final b:Ldefpackage/ked;
 
 .field public volatile c:Ldefpackage/key;
 

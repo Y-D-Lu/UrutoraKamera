@@ -12,21 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$1:Ldefpackage/jqz$1;
+.field public final synthetic this$1:Ldefpackage/jqz$1;
 
-.field final synthetic val$kbiVar2:Ldefpackage/kbi;
+.field public final synthetic val$kbiVar2:Ldefpackage/kbi;
 
-.field final synthetic val$obtain:Landroid/view/MotionEvent;
+.field public final synthetic val$obtain:Landroid/view/MotionEvent;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/jqz$1;Ldefpackage/kbi;Landroid/view/MotionEvent;)V
+.method public constructor <init>(Ldefpackage/jqz$1;Ldefpackage/kbi;Landroid/view/MotionEvent;)V
     .locals 0
     .param p1, "this$1"    # Ldefpackage/jqz$1;
 

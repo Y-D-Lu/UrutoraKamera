@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lgo;
+.field public final a:Ldefpackage/lgo;
 
 
 # direct methods

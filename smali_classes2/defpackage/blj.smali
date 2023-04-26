@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static a:Ljava/lang/Integer;
+.field public static a:Ljava/lang/Integer;
 
 
 # instance fields

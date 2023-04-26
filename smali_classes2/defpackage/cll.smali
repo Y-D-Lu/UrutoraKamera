@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final a:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field final b:Ldefpackage/pih;
+.field public final b:Ldefpackage/pih;
 
-.field final c:Ldefpackage/lmv;
+.field public final c:Ldefpackage/lmv;
 
-.field final d:Ldefpackage/clp;
+.field public final d:Ldefpackage/clp;
 
 
 # direct methods

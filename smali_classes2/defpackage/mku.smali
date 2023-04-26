@@ -8,21 +8,21 @@
 
 
 # instance fields
-.field final a:Landroid/media/MediaFormat;
+.field public final a:Landroid/media/MediaFormat;
 
 .field public final b:I
 
-.field final c:Ljava/util/List;
+.field public final c:Ljava/util/List;
 
-.field final d:Ljava/util/List;
+.field public final d:Ljava/util/List;
 
-.field final e:Ljava/util/List;
+.field public final e:Ljava/util/List;
 
-.field final f:Ljava/util/Deque;
+.field public final f:Ljava/util/Deque;
 
-.field g:Z
+.field public g:Z
 
-.field final h:Ldefpackage/mkv;
+.field public final h:Ldefpackage/mkv;
 
 
 # direct methods

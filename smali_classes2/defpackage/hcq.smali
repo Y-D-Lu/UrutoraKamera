@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/util/Map;
+.field public final a:Ljava/util/Map;
 
-.field final b:Ldefpackage/hcr;
+.field public final b:Ldefpackage/hcr;
 
 .field private c:Ljava/lang/String;
 

@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field final refnum:I
+.field public final refnum:I
 
 
 # direct methods
-.method constructor <init>(ILgo/Seq$GoObject;Lgo/Seq$GoRefQueue;)V
+.method public constructor <init>(ILgo/Seq$GoObject;Lgo/Seq$GoRefQueue;)V
     .locals 3
     .param p1, "i"    # I
     .param p2, "goObject"    # Lgo/Seq$GoObject;

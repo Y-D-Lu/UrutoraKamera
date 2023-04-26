@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qtr;
+.field public final a:Ldefpackage/qtr;
 
 
 # direct methods

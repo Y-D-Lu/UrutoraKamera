@@ -43,7 +43,7 @@
 
 .field public final p:Ldefpackage/hoh;
 
-.field q:Ldefpackage/esk;
+.field public q:Ldefpackage/esk;
 
 .field public r:I
 
@@ -63,7 +63,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 17

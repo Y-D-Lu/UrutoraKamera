@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:Landroid/app/Notification;
+.field public final b:Landroid/app/Notification;
 
-.field final c:Landroidx/work/impl/foreground/SystemForegroundService;
+.field public final c:Landroidx/work/impl/foreground/SystemForegroundService;
 
 
 # direct methods

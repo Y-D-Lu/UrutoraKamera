@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field A:Ldefpackage/fh;
+.field public A:Ldefpackage/fh;
 
 .field public B:Ljava/lang/CharSequence;
 
@@ -14,7 +14,7 @@
 
 .field public E:Landroid/graphics/PorterDuff$Mode;
 
-.field final F:Ldefpackage/kc;
+.field public final F:Ldefpackage/kc;
 
 .field public final a:Landroid/view/Menu;
 

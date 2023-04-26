@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qrj;
+.field public final a:Ldefpackage/qrj;
 
 
 # direct methods

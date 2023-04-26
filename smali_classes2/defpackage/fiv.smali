@@ -11,7 +11,7 @@
 
 .field public b:Landroid/location/LocationManager;
 
-.field final c:[Ldefpackage/fiu;
+.field public final c:[Ldefpackage/fiu;
 
 .field private d:Z
 

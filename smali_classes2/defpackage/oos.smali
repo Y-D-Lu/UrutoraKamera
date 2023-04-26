@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/oor;
+.field public final a:Ldefpackage/oor;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method readResolve()Ljava/lang/Object;
+.method public readResolve()Ljava/lang/Object;
     .locals 1
 
     .line 16

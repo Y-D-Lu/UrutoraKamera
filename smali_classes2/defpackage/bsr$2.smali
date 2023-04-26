@@ -12,33 +12,33 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/bsr;
+.field public final synthetic this$0:Ldefpackage/bsr;
 
-.field final synthetic val$executor:Ljava/util/concurrent/Executor;
+.field public final synthetic val$executor:Ljava/util/concurrent/Executor;
 
-.field final synthetic val$lapVar2:Ldefpackage/lap;
+.field public final synthetic val$lapVar2:Ldefpackage/lap;
 
-.field final synthetic val$ljfVar:Ldefpackage/ljf;
+.field public final synthetic val$ljfVar:Ldefpackage/ljf;
 
-.field final synthetic val$ojcVar:Ldefpackage/ojc;
+.field public final synthetic val$ojcVar:Ldefpackage/ojc;
 
-.field final synthetic val$qkgVar:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar2:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar2:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar3:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar3:Ldefpackage/qkg;
 
-.field final synthetic val$qkgVar4:Ldefpackage/qkg;
+.field public final synthetic val$qkgVar4:Ldefpackage/qkg;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/bsr;Ldefpackage/ljf;Ldefpackage/lap;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;Ljava/util/concurrent/Executor;Ldefpackage/ojc;)V
+.method public constructor <init>(Ldefpackage/bsr;Ldefpackage/ljf;Ldefpackage/lap;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;Ldefpackage/qkg;Ljava/util/concurrent/Executor;Ldefpackage/ojc;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/bsr;
 

@@ -1231,7 +1231,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized h(Ldefpackage/lmq;)V
+.method public final declared-synchronized h(Ldefpackage/lmq;)V
     .locals 22
     .param p1, "lmqVar"    # Ldefpackage/lmq;
 

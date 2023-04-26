@@ -22,7 +22,7 @@
 
 .field public final a:Ldefpackage/db;
 
-.field b:Ljava/util/ArrayList;
+.field public b:Ljava/util/ArrayList;
 
 .field public final c:Ldefpackage/ch;
 
@@ -36,7 +36,7 @@
 
 .field public final h:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-.field i:I
+.field public i:I
 
 .field public j:Ldefpackage/cf;
 
@@ -44,11 +44,11 @@
 
 .field public l:Ldefpackage/bu;
 
-.field m:Ldefpackage/bu;
+.field public m:Ldefpackage/bu;
 
 .field public n:Ldefpackage/uk;
 
-.field o:Ljava/util/ArrayDeque;
+.field public o:Ljava/util/ArrayDeque;
 
 .field public p:Z
 
@@ -333,7 +333,7 @@
     return v4
 .end method
 
-.method static final V(Ldefpackage/bu;)Z
+.method public static final V(Ldefpackage/bu;)Z
     .locals 1
     .param p0, "buVar"    # Ldefpackage/bu;
 
@@ -367,7 +367,7 @@
     return v0
 .end method
 
-.method static final X(Ldefpackage/bu;)V
+.method public static final X(Ldefpackage/bu;)V
     .locals 2
     .param p0, "buVar"    # Ldefpackage/bu;
 
@@ -4125,7 +4125,7 @@
     throw v0
 .end method
 
-.method final D(Ldefpackage/bu;)V
+.method public final D(Ldefpackage/bu;)V
     .locals 2
     .param p1, "buVar"    # Ldefpackage/bu;
 
@@ -4177,7 +4177,7 @@
     return-void
 .end method
 
-.method final E(IZ)V
+.method public final E(IZ)V
     .locals 7
     .param p1, "i"    # I
     .param p2, "z"    # Z
@@ -4450,7 +4450,7 @@
     return-void
 .end method
 
-.method final G(Ldefpackage/bu;)V
+.method public final G(Ldefpackage/bu;)V
     .locals 3
     .param p1, "buVar"    # Ldefpackage/bu;
 
@@ -5799,7 +5799,7 @@
     return-void
 .end method
 
-.method final I(Ldefpackage/bu;Z)V
+.method public final I(Ldefpackage/bu;Z)V
     .locals 3
     .param p1, "buVar"    # Ldefpackage/bu;
     .param p2, "z"    # Z
@@ -5838,7 +5838,7 @@
     return-void
 .end method
 
-.method final J(Ldefpackage/bu;Ldefpackage/aea;)V
+.method public final J(Ldefpackage/bu;Ldefpackage/aea;)V
     .locals 3
     .param p1, "buVar"    # Ldefpackage/bu;
     .param p2, "aeaVar"    # Ldefpackage/aea;
@@ -5900,7 +5900,7 @@
     throw v0
 .end method
 
-.method final K(Ldefpackage/bu;)V
+.method public final K(Ldefpackage/bu;)V
     .locals 3
     .param p1, "buVar"    # Ldefpackage/bu;
 
@@ -6435,7 +6435,7 @@
     return v0
 .end method
 
-.method final R(Ldefpackage/bu;)Z
+.method public final R(Ldefpackage/bu;)Z
     .locals 3
     .param p1, "buVar"    # Ldefpackage/bu;
 
@@ -8479,7 +8479,7 @@
     throw v0
 .end method
 
-.method final k(Ldefpackage/bu;)V
+.method public final k(Ldefpackage/bu;)V
     .locals 3
     .param p1, "buVar"    # Ldefpackage/bu;
 
@@ -8572,7 +8572,7 @@
     return-void
 .end method
 
-.method final l(Ldefpackage/bu;)V
+.method public final l(Ldefpackage/bu;)V
     .locals 3
     .param p1, "buVar"    # Ldefpackage/bu;
 

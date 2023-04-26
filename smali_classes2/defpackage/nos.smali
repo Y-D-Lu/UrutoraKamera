@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field final b:Ldefpackage/nou;
+.field public final b:Ldefpackage/nou;
 
 
 # direct methods

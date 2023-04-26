@@ -12,27 +12,27 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Ldefpackage/foo;
+.field public final synthetic this$0:Ldefpackage/foo;
 
-.field final synthetic val$hscVar:Ldefpackage/hsc;
+.field public final synthetic val$hscVar:Ldefpackage/hsc;
 
-.field final synthetic val$iijVar:Ldefpackage/iij;
+.field public final synthetic val$iijVar:Ldefpackage/iij;
 
-.field final synthetic val$ikcVar:Ldefpackage/ikc;
+.field public final synthetic val$ikcVar:Ldefpackage/ikc;
 
-.field final synthetic val$j:J
+.field public final synthetic val$j:J
 
-.field final synthetic val$ojcVar:Ldefpackage/ojc;
+.field public final synthetic val$ojcVar:Ldefpackage/ojc;
 
 
 # direct methods
-.method constructor <init>(Ldefpackage/foo;Ldefpackage/ikc;Ldefpackage/hsc;Ldefpackage/ojc;JLdefpackage/iij;)V
+.method public constructor <init>(Ldefpackage/foo;Ldefpackage/ikc;Ldefpackage/hsc;Ldefpackage/ojc;JLdefpackage/iij;)V
     .locals 0
     .param p1, "this$0"    # Ldefpackage/foo;
 

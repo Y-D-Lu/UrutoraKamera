@@ -7,19 +7,19 @@
 
 
 # instance fields
-.field final a:Ldefpackage/qyd;
+.field public final a:Ldefpackage/qyd;
 
-.field final b:Ljava/io/File;
+.field public final b:Ljava/io/File;
 
-.field final c:Ldefpackage/nbb;
+.field public final c:Ldefpackage/nbb;
 
-.field final d:I
+.field public final d:I
 
-.field final e:Z
+.field public final e:Z
 
-.field final f:Ljava/lang/String;
+.field public final f:Ljava/lang/String;
 
-.field g:J
+.field public g:J
 
 
 # direct methods

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/mek;
+.field public final a:Ldefpackage/mek;
 
 
 # direct methods

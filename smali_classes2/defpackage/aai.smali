@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+.field public final a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
 
 # direct methods

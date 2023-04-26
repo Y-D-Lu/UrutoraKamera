@@ -11,17 +11,17 @@
 
 
 # instance fields
-.field c:Ldefpackage/qyn;
+.field public c:Ldefpackage/qyn;
 
-.field d:J
+.field public d:J
 
-.field final e:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final e:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final f:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final f:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field final g:Ljava/util/concurrent/atomic/AtomicLong;
+.field public final g:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field volatile h:Z
+.field public volatile h:Z
 
 .field public i:Z
 

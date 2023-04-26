@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/onu;
+.field public final b:Ldefpackage/onu;
 
 
 # direct methods

@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method protected final a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 27
@@ -55,7 +55,7 @@
     return-object v0
 .end method
 
-.method protected final b()Ljava/util/Collection;
+.method public final b()Ljava/util/Collection;
     .locals 1
 
     .line 32
@@ -64,7 +64,7 @@
     return-object v0
 .end method
 
-.method protected final c()Ljava/util/Set;
+.method public final c()Ljava/util/Set;
     .locals 1
 
     .line 37
@@ -141,7 +141,7 @@
     return-object v0
 .end method
 
-.method protected final e()Ljava/util/SortedSet;
+.method public final e()Ljava/util/SortedSet;
     .locals 1
 
     .line 64

@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method protected final a()Ldefpackage/oxy;
+.method public final a()Ldefpackage/oxy;
     .locals 1
 
     .line 15
@@ -29,7 +29,7 @@
     return-object v0
 .end method
 
-.method protected final b(Lout;)Z
+.method public final b(Lout;)Z
     .locals 21
     .param p1, "outVar"    # Lout;
 

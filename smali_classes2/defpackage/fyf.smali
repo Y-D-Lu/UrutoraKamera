@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
-.field final b:Ldefpackage/fdy;
+.field public final b:Ldefpackage/fdy;
 
-.field final c:Ldefpackage/fyg;
+.field public final c:Ldefpackage/fyg;
 
 
 # direct methods

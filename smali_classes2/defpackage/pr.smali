@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/ps;
+.field public final a:Ldefpackage/ps;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected final a(Landroid/util/DisplayMetrics;)F
+.method public final a(Landroid/util/DisplayMetrics;)F
     .locals 2
     .param p1, "displayMetrics"    # Landroid/util/DisplayMetrics;
 
@@ -59,7 +59,7 @@
     return v0
 .end method
 
-.method protected final c(Landroid/view/View;Ldefpackage/qm;)V
+.method public final c(Landroid/view/View;Ldefpackage/qm;)V
     .locals 6
     .param p1, "view"    # Landroid/view/View;
     .param p2, "qmVar"    # Ldefpackage/qm;

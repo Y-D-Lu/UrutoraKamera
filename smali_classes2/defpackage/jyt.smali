@@ -18,7 +18,7 @@
 
 .field public g:J
 
-.field final h:Ldefpackage/poy;
+.field public final h:Ldefpackage/poy;
 
 
 # direct methods

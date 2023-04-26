@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final a:Landroid/view/ViewGroup;
+.field public final a:Landroid/view/ViewGroup;
 
-.field final b:Landroid/view/View;
+.field public final b:Landroid/view/View;
 
-.field final c:Z
+.field public final c:Z
 
-.field final d:Ldefpackage/dp;
+.field public final d:Ldefpackage/dp;
 
-.field final e:Ldefpackage/bi;
+.field public final e:Ldefpackage/bi;
 
 
 # direct methods

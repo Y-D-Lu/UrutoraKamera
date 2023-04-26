@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ldefpackage/ojc;
 
-.field final b:Ljava/util/List;
+.field public final b:Ljava/util/List;
 
 
 # direct methods

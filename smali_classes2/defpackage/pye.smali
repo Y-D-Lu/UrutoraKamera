@@ -63,7 +63,7 @@
 
 
 # virtual methods
-.method protected final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+.method public final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 9
     .param p1, "i"    # I
     .param p2, "parcel"    # Landroid/os/Parcel;

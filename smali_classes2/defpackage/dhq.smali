@@ -10,7 +10,7 @@
 
 .field public c:Ljava/time/Instant;
 
-.field final d:Ldefpackage/dhs;
+.field public final d:Ldefpackage/dhs;
 
 .field private final e:Ldefpackage/hsq;
 

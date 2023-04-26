@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/content/ComponentName;
+.field public final a:Landroid/content/ComponentName;
 
-.field final b:Ldefpackage/kec;
+.field public final b:Ldefpackage/kec;
 
 
 # direct methods

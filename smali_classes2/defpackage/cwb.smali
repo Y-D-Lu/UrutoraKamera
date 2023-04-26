@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field final a:Ldefpackage/lwd;
+.field public final a:Ldefpackage/lwd;
 
-.field final b:I
+.field public final b:I
 
-.field final c:I
+.field public final c:I
 
-.field final d:Ldefpackage/cwc;
+.field public final d:Ldefpackage/cwc;
 
-.field final e:I
+.field public final e:I
 
-.field final f:I
+.field public final f:I
 
 
 # direct methods

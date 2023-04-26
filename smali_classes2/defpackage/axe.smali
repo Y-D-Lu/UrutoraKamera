@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/RuntimeException;
+.field public final a:Ljava/lang/RuntimeException;
 
-.field final b:Ldefpackage/axg;
+.field public final b:Ldefpackage/axg;
 
 
 # direct methods

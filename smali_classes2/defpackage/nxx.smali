@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final b:Ldefpackage/nya;
+.field public final b:Ldefpackage/nya;
 
 
 # direct methods

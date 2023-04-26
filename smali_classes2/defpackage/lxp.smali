@@ -8,7 +8,7 @@
 
 .field public final b:J
 
-.field final c:Ldefpackage/lxq;
+.field public final c:Ldefpackage/lxq;
 
 
 # direct methods

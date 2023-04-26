@@ -7,19 +7,19 @@
 
 
 # instance fields
-.field final a:I
+.field public final a:I
 
-.field final b:I
+.field public final b:I
 
-.field final c:Z
+.field public final c:Z
 
-.field final d:Ldefpackage/azd;
+.field public final d:Ldefpackage/azd;
 
-.field final e:Ldefpackage/bhb;
+.field public final e:Ldefpackage/bhb;
 
-.field final f:Ldefpackage/azu;
+.field public final f:Ldefpackage/azu;
 
-.field final g:Ldefpackage/bgh;
+.field public final g:Ldefpackage/bgh;
 
 
 # direct methods

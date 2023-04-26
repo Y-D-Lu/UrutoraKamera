@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Ldefpackage/pht;
+.field public final a:Ldefpackage/pht;
 
-.field final b:Landroidx/work/impl/workers/ConstraintTrackingWorker;
+.field public final b:Landroidx/work/impl/workers/ConstraintTrackingWorker;
 
 
 # direct methods

@@ -11,7 +11,7 @@
 
 .field public b:Ldefpackage/ojc;
 
-.field final c:Ldefpackage/mkb;
+.field public final c:Ldefpackage/mkb;
 
 
 # direct methods

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ldefpackage/wy;
+.field public final a:Ldefpackage/wy;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method protected final a(I)Ljava/lang/Object;
+.method public final a(I)Ljava/lang/Object;
     .locals 1
     .param p1, "i"    # I
 
@@ -40,7 +40,7 @@
     return-object v0
 .end method
 
-.method protected final b(I)V
+.method public final b(I)V
     .locals 1
     .param p1, "i"    # I
 

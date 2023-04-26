@@ -204,7 +204,7 @@
     return-void
 .end method
 
-.method protected final onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 2
     .param p1, "i"    # I
     .param p2, "i2"    # I
