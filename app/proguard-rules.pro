@@ -21,7 +21,7 @@
 #-renamesourcefileattribute SourceFile
 
 -keep class !cn.arsenals.ultracamera.UltraCamera,!defpackage.** { *; }
--keepclasseswithmembernames class ** { *; }
+-keepclassmembers class ** { *; }
 -allowaccessmodification
 -applymapping mappings.txt
 
