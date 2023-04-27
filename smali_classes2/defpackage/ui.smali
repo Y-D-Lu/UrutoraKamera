@@ -1,225 +1,95 @@
-.class public final Ldefpackage/ui;
+.class public Ldefpackage/Ui;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/os/Parcelable;
+.implements Ljava/util/function/Consumer;
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Life;->h()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic this$0:Life;
 
-.field public final b:Landroid/content/Intent;
+.field public final synthetic val$arrayList:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    .line 12
-    new-instance v0, Ldefpackage/akr;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Ldefpackage/akr;-><init>(I)V
-
-    sput-object v0, Ldefpackage/ui;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method public constructor <init>(ILandroid/content/Intent;)V
+.method public constructor <init>(Life;Ljava/util/ArrayList;)V
     .locals 0
-    .param p1, "i"    # I
-    .param p2, "intent"    # Landroid/content/Intent;
+    .param p1, "this$0"    # Life;
 
-    .line 16
+    .line 431
+    iput-object p1, p0, Ldefpackage/Ui;->this$0:Life;
+
+    iput-object p2, p0, Ldefpackage/Ui;->val$arrayList:Ljava/util/ArrayList;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
-    iput p1, p0, Ldefpackage/ui;->a:I
-
-    .line 18
-    iput-object p2, p0, Ldefpackage/ui;->b:Landroid/content/Intent;
-
-    .line 19
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 1
-    .param p1, "parcel"    # Landroid/os/Parcel;
-
-    .line 21
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 22
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    iput v0, p0, Ldefpackage/ui;->a:I
-
-    .line 23
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    sget-object v0, Landroid/content/Intent;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    invoke-interface {v0, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/content/Intent;
-
-    :goto_0
-    iput-object v0, p0, Ldefpackage/ui;->b:Landroid/content/Intent;
-
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final describeContents()I
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 28
-    const/4 v0, 0x0
+    .line 434
+    move-object v0, p1
 
-    return v0
-.end method
+    check-cast v0, Liek;
 
-.method public final toString()Ljava/lang/String;
-    .locals 4
+    .line 435
+    .local v0, "iekVar":Liek;
+    iget-object v1, p0, Ldefpackage/Ui;->val$arrayList:Ljava/util/ArrayList;
 
-    .line 33
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v2, v0, Liek;->c:Landroid/content/pm/ResolveInfo;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v2, v2, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    .line 34
-    .local v0, "sb":Ljava/lang/StringBuilder;
-    const-string v1, "ActivityResult{resultCode="
+    iget-object v2, v2, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    .line 35
-    iget v1, p0, Ldefpackage/ui;->a:I
+    move-result v1
 
-    .line 36
-    .local v1, "i":I
-    packed-switch v1, :pswitch_data_0
+    xor-int/lit8 v1, v1, 0x1
 
-    .line 44
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    .line 436
+    .local v1, "z":Z
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    move-result-object v2
+    .line 437
+    if-eqz v1, :cond_0
 
-    .local v2, "str":Ljava/lang/String;
-    goto :goto_0
-
-    .line 41
-    .end local v2    # "str":Ljava/lang/String;
-    :pswitch_0
-    const-string v2, "RESULT_CANCELED"
-
-    .line 42
-    .restart local v2    # "str":Ljava/lang/String;
-    goto :goto_0
-
-    .line 38
-    .end local v2    # "str":Ljava/lang/String;
-    :pswitch_1
-    const-string v2, "RESULT_OK"
-
-    .line 39
-    .restart local v2    # "str":Ljava/lang/String;
-    nop
-
-    .line 47
-    :goto_0
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 48
-    const-string v3, ", data="
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 49
-    iget-object v3, p0, Ldefpackage/ui;->b:Landroid/content/Intent;
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 50
-    const/16 v3, 0x7d
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 51
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    return-object v3
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch -0x1
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 1
-    .param p1, "parcel"    # Landroid/os/Parcel;
-    .param p2, "i"    # I
-
-    .line 56
-    iget v0, p0, Ldefpackage/ui;->a:I
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 57
-    iget-object v0, p0, Ldefpackage/ui;->b:Landroid/content/Intent;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
+    const/4 v2, 0x0
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x1
+    sget-object v2, Liek;->a:Landroid/graphics/ColorMatrixColorFilter;
 
     :goto_0
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    .line 58
-    iget-object v0, p0, Ldefpackage/ui;->b:Landroid/content/Intent;
-
-    .line 59
-    .local v0, "intent":Landroid/content/Intent;
-    if-eqz v0, :cond_1
-
-    .line 60
-    invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->writeToParcel(Landroid/os/Parcel;I)V
-
-    .line 62
-    :cond_1
+    .line 438
     return-void
+.end method
+
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
+
+    .line 442
+    return-object p1
 .end method

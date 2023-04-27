@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;
-.super Ldefpackage/aae;
+.super Laae;
 .source ""
 
 
@@ -16,7 +16,7 @@
     .locals 1
 
     .line 30
-    invoke-direct {p0}, Ldefpackage/aae;-><init>()V
+    invoke-direct {p0}, Laae;-><init>()V
 
     .line 31
     const/4 v0, 0x0
@@ -38,10 +38,10 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 36
-    invoke-direct {p0, p1, p2}, Ldefpackage/aae;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Laae;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 37
-    sget-object v0, Ldefpackage/nzj;->a:[I
+    sget-object v0, Lnzj;->a:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -73,10 +73,10 @@
     return-void
 .end method
 
-.method private final A(Landroid/view/View;Ldefpackage/nyu;)Z
+.method private final A(Landroid/view/View;Lnyu;)Z
     .locals 2
     .param p1, "view"    # Landroid/view/View;
-    .param p2, "nyuVar"    # Ldefpackage/nyu;
+    .param p2, "nyuVar"    # Lnyu;
 
     .line 44
     iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->b:Z
@@ -92,9 +92,9 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/aah;
+    check-cast v0, Laah;
 
-    iget v0, v0, Ldefpackage/aah;->f:I
+    iget v0, v0, Laah;->f:I
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -113,14 +113,14 @@
     return v0
 .end method
 
-.method private final B(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Ldefpackage/nyu;)Z
+.method private final B(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Lnyu;)Z
     .locals 4
     .param p1, "coordinatorLayout"    # Landroidx/coordinatorlayout/widget/CoordinatorLayout;
     .param p2, "appBarLayout"    # Lcom/google/android/material/appbar/AppBarLayout;
-    .param p3, "nyuVar"    # Ldefpackage/nyu;
+    .param p3, "nyuVar"    # Lnyu;
 
     .line 48
-    invoke-direct {p0, p2, p3}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->A(Landroid/view/View;Ldefpackage/nyu;)Z
+    invoke-direct {p0, p2, p3}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->A(Landroid/view/View;Lnyu;)Z
 
     move-result v0
 
@@ -150,7 +150,7 @@
 
     .line 55
     .local v0, "rect":Landroid/graphics/Rect;
-    invoke-static {p1, p2, v0}, Ldefpackage/nzo;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
+    invoke-static {p1, p2, v0}, Lnzo;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 56
     iget v1, v0, Landroid/graphics/Rect;->bottom:I
@@ -164,26 +164,26 @@
     if-gt v1, v2, :cond_2
 
     .line 57
-    invoke-virtual {p0, p3}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->y(Ldefpackage/nyu;)V
+    invoke-virtual {p0, p3}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->y(Lnyu;)V
 
     .line 58
     return v3
 
     .line 60
     :cond_2
-    invoke-virtual {p0, p3}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->x(Ldefpackage/nyu;)V
+    invoke-virtual {p0, p3}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->x(Lnyu;)V
 
     .line 61
     return v3
 .end method
 
-.method private final C(Landroid/view/View;Ldefpackage/nyu;)Z
+.method private final C(Landroid/view/View;Lnyu;)Z
     .locals 3
     .param p1, "view"    # Landroid/view/View;
-    .param p2, "nyuVar"    # Ldefpackage/nyu;
+    .param p2, "nyuVar"    # Lnyu;
 
     .line 65
-    invoke-direct {p0, p1, p2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->A(Landroid/view/View;Ldefpackage/nyu;)Z
+    invoke-direct {p0, p1, p2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->A(Landroid/view/View;Lnyu;)Z
 
     move-result v0
 
@@ -210,7 +210,7 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/aah;
+    check-cast v2, Laah;
 
     iget v2, v2, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
@@ -221,14 +221,14 @@
     if-ge v0, v1, :cond_1
 
     .line 69
-    invoke-virtual {p0, p2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->y(Ldefpackage/nyu;)V
+    invoke-virtual {p0, p2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->y(Lnyu;)V
 
     .line 70
     return v2
 
     .line 72
     :cond_1
-    invoke-virtual {p0, p2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->x(Ldefpackage/nyu;)V
+    invoke-virtual {p0, p2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->x(Lnyu;)V
 
     .line 73
     return v2
@@ -245,16 +245,16 @@
 
     .line 78
     .local v0, "layoutParams":Landroid/view/ViewGroup$LayoutParams;
-    instance-of v1, v0, Ldefpackage/aah;
+    instance-of v1, v0, Laah;
 
     if-eqz v1, :cond_0
 
     .line 79
     move-object v1, v0
 
-    check-cast v1, Ldefpackage/aah;
+    check-cast v1, Laah;
 
-    iget-object v1, v1, Ldefpackage/aah;->a:Ldefpackage/aae;
+    iget-object v1, v1, Laah;->a:Laae;
 
     instance-of v1, v1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
@@ -269,19 +269,19 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/aah;)V
+.method public final a(Laah;)V
     .locals 1
-    .param p1, "aahVar"    # Ldefpackage/aah;
+    .param p1, "aahVar"    # Laah;
 
     .line 86
-    iget v0, p1, Ldefpackage/aah;->h:I
+    iget v0, p1, Laah;->h:I
 
     if-nez v0, :cond_0
 
     .line 87
     const/16 v0, 0x50
 
-    iput v0, p1, Ldefpackage/aah;->h:I
+    iput v0, p1, Laah;->h:I
 
     .line 89
     :cond_0
@@ -297,10 +297,10 @@
     .line 93
     move-object v0, p2
 
-    check-cast v0, Ldefpackage/nyu;
+    check-cast v0, Lnyu;
 
     .line 94
-    .local v0, "nyuVar":Ldefpackage/nyu;
+    .local v0, "nyuVar":Lnyu;
     invoke-virtual {p1, v0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h(Landroid/view/View;)Ljava/util/List;
 
     move-result-object v1
@@ -339,7 +339,7 @@
 
     if-eqz v5, :cond_1
 
-    invoke-direct {p0, v4, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->C(Landroid/view/View;Ldefpackage/nyu;)Z
+    invoke-direct {p0, v4, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->C(Landroid/view/View;Lnyu;)Z
 
     move-result v5
 
@@ -354,7 +354,7 @@
 
     check-cast v5, Lcom/google/android/material/appbar/AppBarLayout;
 
-    invoke-direct {p0, p1, v5, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->B(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Ldefpackage/nyu;)Z
+    invoke-direct {p0, p1, v5, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->B(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Lnyu;)Z
 
     move-result v5
 
@@ -391,10 +391,10 @@
     .line 112
     move-object v0, p2
 
-    check-cast v0, Ldefpackage/nyu;
+    check-cast v0, Lnyu;
 
     .line 113
-    .local v0, "nyuVar":Ldefpackage/nyu;
+    .local v0, "nyuVar":Lnyu;
     instance-of v1, p3, Lcom/google/android/material/appbar/AppBarLayout;
 
     if-eqz v1, :cond_0
@@ -404,7 +404,7 @@
 
     check-cast v1, Lcom/google/android/material/appbar/AppBarLayout;
 
-    invoke-direct {p0, p1, v1, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->B(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Ldefpackage/nyu;)Z
+    invoke-direct {p0, p1, v1, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->B(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Lnyu;)Z
 
     goto :goto_0
 
@@ -420,7 +420,7 @@
 
     .line 117
     :cond_1
-    invoke-direct {p0, p3, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->C(Landroid/view/View;Ldefpackage/nyu;)Z
+    invoke-direct {p0, p3, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->C(Landroid/view/View;Lnyu;)Z
 
     .line 119
     :goto_0
@@ -435,18 +435,18 @@
     .line 123
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/nyu;
+    check-cast v0, Lnyu;
 
     .line 124
-    .local v0, "nyuVar":Ldefpackage/nyu;
+    .local v0, "nyuVar":Lnyu;
     const/4 v1, 0x0
 
     return v1
 .end method
 
-.method public final x(Ldefpackage/nyu;)V
+.method public final x(Lnyu;)V
     .locals 2
-    .param p1, "nyuVar"    # Ldefpackage/nyu;
+    .param p1, "nyuVar"    # Lnyu;
 
     .line 128
     iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->c:Z
@@ -458,7 +458,7 @@
 
     .line 130
     .local v0, "i":I
-    iget-object v1, p1, Ldefpackage/nyu;->c:Lnzi;
+    iget-object v1, p1, Lnyu;->c:Lnzi;
 
     .line 131
     .end local v0    # "i":I
@@ -470,7 +470,7 @@
 
     .line 133
     .local v0, "i2":I
-    iget-object v1, p1, Ldefpackage/nyu;->d:Lnzi;
+    iget-object v1, p1, Lnyu;->d:Lnzi;
 
     .line 135
     .end local v0    # "i2":I
@@ -480,9 +480,9 @@
     throw v0
 .end method
 
-.method public final y(Ldefpackage/nyu;)V
+.method public final y(Lnyu;)V
     .locals 2
-    .param p1, "nyuVar"    # Ldefpackage/nyu;
+    .param p1, "nyuVar"    # Lnyu;
 
     .line 139
     iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->c:Z
@@ -494,7 +494,7 @@
 
     .line 141
     .local v0, "i":I
-    iget-object v1, p1, Ldefpackage/nyu;->b:Lnzi;
+    iget-object v1, p1, Lnyu;->b:Lnzi;
 
     .line 142
     .end local v0    # "i":I
@@ -506,7 +506,7 @@
 
     .line 144
     .local v0, "i2":I
-    iget-object v1, p1, Ldefpackage/nyu;->e:Lnzi;
+    iget-object v1, p1, Lnyu;->e:Lnzi;
 
     .line 146
     .end local v0    # "i2":I

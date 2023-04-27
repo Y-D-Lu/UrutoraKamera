@@ -1,223 +1,80 @@
-.class public final Ldefpackage/rd;
+.class public Ldefpackage/Rd;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/os/Parcelable;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgdx;->close()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public a:I
-
-.field public b:I
-
-.field public c:[I
-
-.field public d:Z
+.field public final synthetic this$0:Lgdx;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    .line 11
-    new-instance v0, Ldefpackage/ba;
-
-    const/16 v1, 0x13
-
-    invoke-direct {v0, v1}, Ldefpackage/ba;-><init>(I)V
-
-    sput-object v0, Ldefpackage/rd;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lgdx;)V
     .locals 0
+    .param p1, "this$0"    # Lgdx;
 
-    .line 17
+    .line 49
+    iput-object p1, p0, Ldefpackage/Rd;->this$0:Lgdx;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 2
-    .param p1, "parcel"    # Landroid/os/Parcel;
-
-    .line 20
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 21
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    iput v0, p0, Ldefpackage/rd;->a:I
-
-    .line 22
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    iput v0, p0, Ldefpackage/rd;->b:I
-
-    .line 23
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v1, 0x0
-
-    :cond_0
-    iput-boolean v1, p0, Ldefpackage/rd;->d:Z
-
-    .line 24
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    .line 25
-    .local v0, "readInt":I
-    if-lez v0, :cond_1
-
-    .line 26
-    new-array v1, v0, [I
-
-    .line 27
-    .local v1, "iArr":[I
-    iput-object v1, p0, Ldefpackage/rd;->c:[I
-
-    .line 28
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->readIntArray([I)V
-
-    .line 30
-    .end local v1    # "iArr":[I
-    :cond_1
     return-void
 .end method
 
 
 # virtual methods
-.method public final describeContents()I
-    .locals 1
-
-    .line 34
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 38
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "FullSpanItem{mPosition="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Ldefpackage/rd;->a:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", mGapDir="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Ldefpackage/rd;->b:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", mHasUnwantedGapAfter="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Ldefpackage/rd;->d:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, ", mGapPerSpan="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Ldefpackage/rd;->c:[I
-
-    invoke-static {v1}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x7d
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 2
-    .param p1, "parcel"    # Landroid/os/Parcel;
-    .param p2, "i"    # I
-
-    .line 43
-    iget v0, p0, Ldefpackage/rd;->a:I
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 44
-    iget v0, p0, Ldefpackage/rd;->b:I
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 45
-    iget-boolean v0, p0, Ldefpackage/rd;->d:Z
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 46
-    iget-object v0, p0, Ldefpackage/rd;->c:[I
-
-    .line 47
-    .local v0, "iArr":[I
-    if-nez v0, :cond_0
-
-    .line 48
-    const/4 v1, 0x0
-
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 49
-    return-void
-
-    .line 51
-    :cond_0
-    array-length v1, v0
-
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+.method public final run()V
+    .locals 4
 
     .line 52
-    iget-object v1, p0, Ldefpackage/rd;->c:[I
-
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeIntArray([I)V
+    iget-object v0, p0, Ldefpackage/Rd;->this$0:Lgdx;
 
     .line 53
+    .local v0, "gdxVar":Lgdx;
+    iget-object v1, v0, Lgdx;->a:Lgdy;
+
+    monitor-enter v1
+
+    .line 54
+    :try_start_0
+    iget-object v2, v0, Lgdx;->a:Lgdy;
+
+    .line 55
+    .local v2, "gdyVar":Lgdy;
+    const/4 v3, 0x1
+
+    iput-boolean v3, v2, Lgdy;->g:Z
+
+    .line 56
+    invoke-virtual {v2}, Lgdy;->c()V
+
+    .line 57
+    .end local v2    # "gdyVar":Lgdy;
+    monitor-exit v1
+
+    .line 58
     return-void
+
+    .line 57
+    :catchall_0
+    move-exception v2
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v2
 .end method

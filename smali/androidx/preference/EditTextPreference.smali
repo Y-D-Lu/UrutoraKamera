@@ -47,15 +47,15 @@
 
     .line 54
     :cond_0
-    new-instance v1, Ldefpackage/afy;
+    new-instance v1, Lafy;
 
-    invoke-direct {v1, v0}, Ldefpackage/afy;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, Lafy;-><init>(Landroid/os/Parcelable;)V
 
     .line 55
-    .local v1, "afyVar":Ldefpackage/afy;
+    .local v1, "afyVar":Lafy;
     iget-object v2, p0, Landroidx/preference/EditTextPreference;->g:Ljava/lang/String;
 
-    iput-object v2, v1, Ldefpackage/afy;->a:Ljava/lang/String;
+    iput-object v2, v1, Lafy;->a:Ljava/lang/String;
 
     .line 56
     return-object v1
@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    const-class v1, Ldefpackage/afy;
+    const-class v1, Lafy;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -101,10 +101,10 @@
     :cond_0
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/afy;
+    check-cast v0, Lafy;
 
     .line 72
-    .local v0, "afyVar":Ldefpackage/afy;
+    .local v0, "afyVar":Lafy;
     invoke-virtual {v0}, Landroid/view/AbsSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v1
@@ -112,7 +112,7 @@
     invoke-super {p0, v1}, Landroidx/preference/Preference;->g(Landroid/os/Parcelable;)V
 
     .line 73
-    iget-object v1, v0, Ldefpackage/afy;->a:Ljava/lang/String;
+    iget-object v1, v0, Lafy;->a:Ljava/lang/String;
 
     invoke-virtual {p0, v1}, Landroidx/preference/EditTextPreference;->i(Ljava/lang/String;)V
 

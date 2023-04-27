@@ -1,548 +1,360 @@
-.class public final Ldefpackage/y;
-.super Ldefpackage/dgg;
+.class public Ldefpackage/Y;
+.super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static final a:Ldefpackage/y;
 
-.field private static final d:Ljava/util/ResourceBundle;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lbqm;->a()Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public b:Ljava/util/Map;
+.field public final synthetic this$0:Lbqm;
 
-.field public c:Ljava/util/Map;
-
-.field private final e:Ljava/util/Map;
+.field public final synthetic val$b:Lpht;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lbqm;Lpht;)V
+    .locals 0
+    .param p1, "this$0"    # Lbqm;
 
-    .line 17
-    new-instance v0, Ldefpackage/f;
+    .line 37
+    iput-object p1, p0, Ldefpackage/Y;->this$0:Lbqm;
 
-    invoke-direct {v0}, Ldefpackage/f;-><init>()V
+    iput-object p2, p0, Ldefpackage/Y;->val$b:Lpht;
 
-    sput-object v0, Ldefpackage/y;->d:Ljava/util/ResourceBundle;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
-    new-instance v0, Ldefpackage/y;
-
-    invoke-direct {v0}, Ldefpackage/y;-><init>()V
-
-    sput-object v0, Ldefpackage/y;->a:Ldefpackage/y;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
-    .locals 1
-
-    .line 20
-    invoke-direct {p0}, Ldefpackage/dgg;-><init>()V
-
-    .line 16
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/y;->e:Ljava/util/Map;
-
-    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Ldefpackage/x;
-    .locals 13
-    .param p1, "str"    # Ljava/lang/String;
+.method public final run()V
+    .locals 7
 
-    .line 27
-    iget-object v0, p0, Ldefpackage/y;->e:Ljava/util/Map;
+    .line 44
+    iget-object v0, p0, Ldefpackage/Y;->this$0:Lbqm;
 
-    monitor-enter v0
-
-    .line 28
+    .line 46
+    .local v0, "bqmVar":Lbqm;
     :try_start_0
-    iget-object v1, p0, Ldefpackage/y;->e:Ljava/util/Map;
+    iget-object v1, p0, Ldefpackage/Y;->val$b:Lpht;
 
-    invoke-interface {v1, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
-    move-result v1
+    move-result-object v1
 
-    .line 29
-    .local v1, "containsKey":Z
-    const/4 v2, 0x0
+    check-cast v1, Ldkk;
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 30
-    .local v2, "objArr":[[Ljava/lang/Object;
-    if-eqz v1, :cond_0
+    .line 47
+    .local v1, "z2":Ldkk;
+    if-eqz v1, :cond_5
 
-    iget-object v3, p0, Ldefpackage/y;->e:Ljava/util/Map;
+    .line 48
+    const/4 v1, 0x0
 
-    invoke-interface {v3, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 50
+    :try_start_1
+    iget-object v2, v0, Lbqm;->a:Llvx;
+
+    invoke-interface {v2}, Llvx;->a()Ljava/util/List;
+
+    .line 51
+    iget-object v2, v0, Lbqm;->a:Llvx;
+
+    invoke-interface {v2}, Llvx;->b()Ljava/util/List;
+
+    move-result-object v2
+
+    .line 52
+    .local v2, "b2":Ljava/util/List;
+    invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    if-eqz v3, :cond_0
+
+    .line 53
+    new-instance v3, Ldkk;
+
+    invoke-direct {v3, v4}, Ldkk;-><init>(Z)V
+
+    move-object v1, v3
+
+    goto :goto_0
+
+    .line 55
+    :cond_0
+    invoke-interface {v2}, Ljava/util/List;->stream()Ljava/util/stream/Stream;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/x;
+    sget-object v5, Lcgw;->b:Lcgw;
 
-    goto :goto_0
+    invoke-interface {v3, v5}, Ljava/util/stream/Stream;->map(Ljava/util/function/Function;)Ljava/util/stream/Stream;
 
-    :cond_0
-    const/4 v3, 0x0
+    move-result-object v3
 
-    .line 31
-    .local v3, "xVar":Ldefpackage/x;
-    :goto_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    sget-object v5, Lbql;->b:Lbql;
 
-    .line 32
-    if-nez v1, :cond_6
+    invoke-interface {v3, v5}, Ljava/util/stream/Stream;->filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
 
-    .line 34
-    :try_start_1
-    sget-object v0, Ldefpackage/y;->d:Ljava/util/ResourceBundle;
+    move-result-object v3
 
-    const-string v4, "rules"
+    invoke-static {}, Ljava/util/stream/Collectors;->toList()Ljava/util/stream/Collector;
 
-    invoke-virtual {v0, v4}, Ljava/util/ResourceBundle;->getObject(Ljava/lang/String;)Ljava/lang/Object;
+    move-result-object v5
 
-    move-result-object v0
+    invoke-interface {v3, v5}, Ljava/util/stream/Stream;->collect(Ljava/util/stream/Collector;)Ljava/lang/Object;
 
-    check-cast v0, [[Ljava/lang/Object;
+    move-result-object v3
 
-    .line 35
-    .local v0, "objArr2":[[Ljava/lang/Object;
-    array-length v4, v0
+    check-cast v3, Ljava/util/List;
 
-    .line 36
-    .local v4, "length":I
-    const/4 v5, 0x0
+    .line 56
+    .local v3, "list":Ljava/util/List;
+    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
 
-    .line 38
-    .local v5, "i":I
-    :goto_1
-    const/4 v6, 0x0
+    move-result v5
 
-    const/4 v7, 0x1
-
-    if-lt v5, v4, :cond_1
-
-    .line 39
-    goto :goto_2
-
-    .line 41
-    :cond_1
-    aget-object v8, v0, v5
-
-    .line 42
-    .local v8, "objArr3":[Ljava/lang/Object;
-    aget-object v9, v8, v6
-
-    invoke-virtual {p1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_4
-
-    .line 43
-    aget-object v9, v8, v7
-
-    check-cast v9, [[Ljava/lang/Object;
-
-    move-object v2, v9
-
-    .line 44
-    nop
-
-    .line 48
-    .end local v8    # "objArr3":[Ljava/lang/Object;
-    :goto_2
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 49
-    .local v8, "sb":Ljava/lang/StringBuilder;
-    array-length v9, v2
-
-    move v10, v6
-
-    :goto_3
-    if-ge v10, v9, :cond_3
-
-    aget-object v11, v2, v10
-
-    .line 50
-    .local v11, "objArr4":[Ljava/lang/Object;
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v12
-
-    if-lez v12, :cond_2
-
-    .line 51
-    const-string v12, "; "
-
-    invoke-virtual {v8, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 53
-    :cond_2
-    aget-object v12, v11, v6
-
-    check-cast v12, Ljava/lang/String;
-
-    invoke-virtual {v8, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 54
-    const-string v12, ": "
-
-    invoke-virtual {v8, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 55
-    aget-object v12, v11, v7
-
-    check-cast v12, Ljava/lang/String;
-
-    invoke-virtual {v8, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 49
-    nop
-
-    .end local v11    # "objArr4":[Ljava/lang/Object;
-    add-int/lit8 v10, v10, 0x1
-
-    goto :goto_3
+    if-eqz v5, :cond_1
 
     .line 57
-    :cond_3
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-instance v5, Ldkk;
 
-    move-result-object v6
+    invoke-direct {v5, v4}, Ldkk;-><init>(Z)V
 
-    invoke-static {v6}, Ldefpackage/x;->b(Ljava/lang/String;)Ldefpackage/x;
-
-    move-result-object v6
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    move-object v3, v6
-
-    .line 59
-    .end local v0    # "objArr2":[[Ljava/lang/Object;
-    .end local v4    # "length":I
-    .end local v5    # "i":I
-    .end local v8    # "sb":Ljava/lang/StringBuilder;
-    move-object v0, v2
-
-    goto :goto_4
-
-    .line 46
-    .restart local v0    # "objArr2":[[Ljava/lang/Object;
-    .restart local v4    # "length":I
-    .restart local v5    # "i":I
-    .local v8, "objArr3":[Ljava/lang/Object;
-    :cond_4
-    nop
-
-    .end local v8    # "objArr3":[Ljava/lang/Object;
-    add-int/lit8 v5, v5, 0x1
-
-    .line 47
-    goto :goto_1
-
-    .line 58
-    .end local v0    # "objArr2":[[Ljava/lang/Object;
-    .end local v4    # "length":I
-    .end local v5    # "i":I
-    :catch_0
-    move-exception v0
-
-    move-object v0, v2
-
-    .line 60
-    .end local v2    # "objArr":[[Ljava/lang/Object;
-    .local v0, "objArr":[[Ljava/lang/Object;
-    :goto_4
-    iget-object v4, p0, Ldefpackage/y;->e:Ljava/util/Map;
-
-    monitor-enter v4
-
-    .line 61
-    :try_start_2
-    iget-object v2, p0, Ldefpackage/y;->e:Ljava/util/Map;
-
-    invoke-interface {v2, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_5
-
-    .line 62
-    iget-object v2, p0, Ldefpackage/y;->e:Ljava/util/Map;
-
-    invoke-interface {v2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ldefpackage/x;
-
-    move-object v3, v2
-
-    .end local v3    # "xVar":Ldefpackage/x;
-    .local v2, "xVar":Ldefpackage/x;
-    goto :goto_5
-
-    .line 64
-    .end local v2    # "xVar":Ldefpackage/x;
-    .restart local v3    # "xVar":Ldefpackage/x;
-    :cond_5
-    iget-object v2, p0, Ldefpackage/y;->e:Ljava/util/Map;
-
-    invoke-interface {v2, p1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 66
-    :goto_5
-    monitor-exit v4
-
-    move-object v2, v0
-
-    goto :goto_6
-
-    :catchall_0
-    move-exception v2
-
-    monitor-exit v4
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    throw v2
-
-    .line 68
-    .end local v0    # "objArr":[[Ljava/lang/Object;
-    .local v2, "objArr":[[Ljava/lang/Object;
-    :cond_6
-    :goto_6
-    return-object v3
-
-    .line 31
-    .end local v1    # "containsKey":Z
-    .end local v2    # "objArr":[[Ljava/lang/Object;
-    .end local v3    # "xVar":Ldefpackage/x;
-    :catchall_1
-    move-exception v1
-
-    :try_start_3
-    monitor-exit v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    throw v1
-.end method
-
-.method public final b()V
-    .locals 13
-
-    .line 75
-    monitor-enter p0
-
-    .line 76
-    :try_start_0
-    iget-object v0, p0, Ldefpackage/y;->b:Ljava/util/Map;
-
-    .line 77
-    .local v0, "map":Ljava/util/Map;
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 78
-    if-nez v0, :cond_3
-
-    .line 80
-    :try_start_1
-    sget-object v1, Ldefpackage/y;->d:Ljava/util/ResourceBundle;
-
-    .line 81
-    .local v1, "resourceBundle":Ljava/util/ResourceBundle;
-    const-string v2, "locales"
-
-    invoke-virtual {v1, v2}, Ljava/util/ResourceBundle;->getObject(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, [[Ljava/lang/Object;
-
-    .line 82
-    .local v2, "objArr":[[Ljava/lang/Object;
-    new-instance v3, Ljava/util/TreeMap;
-
-    invoke-direct {v3}, Ljava/util/TreeMap;-><init>()V
-
-    .line 83
-    .local v3, "emptyMap":Ljava/util/Map;
-    array-length v4, v2
-
-    const/4 v5, 0x0
-
-    move v6, v5
-
-    :goto_0
-    const/4 v7, 0x1
-
-    if-ge v6, v4, :cond_0
-
-    aget-object v8, v2, v6
-
-    .line 84
-    .local v8, "objArr2":[Ljava/lang/Object;
-    aget-object v9, v8, v5
-
-    check-cast v9, Ljava/lang/String;
-
-    aget-object v7, v8, v7
-
-    check-cast v7, Ljava/lang/String;
-
-    invoke-interface {v3, v9, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 83
-    nop
-
-    .end local v8    # "objArr2":[Ljava/lang/Object;
-    add-int/lit8 v6, v6, 0x1
+    move-object v1, v5
 
     goto :goto_0
 
-    .line 86
-    :cond_0
-    const-string v4, "locales_ordinals"
+    .line 59
+    :cond_1
+    new-instance v4, Ldkk;
 
-    invoke-virtual {v1, v4}, Ljava/util/ResourceBundle;->getObject(Ljava/lang/String;)Ljava/lang/Object;
+    const/4 v5, 0x0
+
+    invoke-direct {v4, v5}, Ldkk;-><init>(Z)V
+
+    .line 60
+    .local v4, "dkkVar":Ldkk;
+    invoke-interface {v3, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Llju;
+
+    iput-object v5, v4, Ldkk;->b:Llju;
+    :try_end_1
+    .catch Llvv; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Llvy; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Llvz; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/util/concurrent/ExecutionException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 61
+    move-object v1, v4
+
+    .line 81
+    .end local v2    # "b2":Ljava/util/List;
+    .end local v3    # "list":Ljava/util/List;
+    .end local v4    # "dkkVar":Ldkk;
+    :goto_0
+    goto :goto_3
+
+    .line 64
+    :catch_0
+    move-exception v2
+
+    .line 65
+    .local v2, "e":Ljava/lang/RuntimeException;
+    :try_start_2
+    sget-object v3, Llju;->CAMERA_ERROR_CODE_UNKNOWN:Llju;
+
+    .line 66
+    .local v3, "ljuVar":Llju;
+    instance-of v4, v2, Llvz;
+
+    if-eqz v4, :cond_2
+
+    .line 67
+    sget-object v4, Llju;->CAMERAS_NOT_ENUMERATED:Llju;
+
+    move-object v3, v4
+
+    .line 69
+    :cond_2
+    instance-of v4, v2, Llvv;
+
+    if-eqz v4, :cond_3
+
+    .line 70
+    move-object v4, v2
+
+    check-cast v4, Llvv;
+
+    iget-object v4, v4, Llvv;->a:Ljava/util/List;
+
+    .line 71
+    .local v4, "list2":Ljava/util/List;
+    if-eqz v4, :cond_4
+
+    invoke-interface {v4}, Ljava/util/List;->stream()Ljava/util/stream/Stream;
+
+    move-result-object v5
+
+    sget-object v6, Lbql;->a:Lbql;
+
+    invoke-interface {v5, v6}, Ljava/util/stream/Stream;->anyMatch(Ljava/util/function/Predicate;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_4
+
+    .line 72
+    sget-object v5, Llju;->CAMERAS_NOT_ENUMERATED:Llju;
+
+    move-object v3, v5
+
+    goto :goto_1
+
+    .line 74
+    .end local v4    # "list2":Ljava/util/List;
+    :cond_3
+    instance-of v4, v2, Llvy;
+
+    if-eqz v4, :cond_4
+
+    .line 75
+    move-object v4, v2
+
+    check-cast v4, Llvy;
+
+    iget v4, v4, Llvy;->a:I
+
+    invoke-static {v4}, Llju;->a(I)Llju;
 
     move-result-object v4
 
-    check-cast v4, [[Ljava/lang/Object;
+    move-object v3, v4
 
-    .line 87
-    .local v4, "objArr3":[[Ljava/lang/Object;
-    new-instance v6, Ljava/util/TreeMap;
-
-    invoke-direct {v6}, Ljava/util/TreeMap;-><init>()V
-
-    .line 88
-    .local v6, "emptyMap2":Ljava/util/Map;
-    array-length v8, v4
-
-    move v9, v5
-
-    :goto_1
-    if-ge v9, v8, :cond_1
-
-    aget-object v10, v4, v9
-
-    .line 89
-    .local v10, "objArr4":[Ljava/lang/Object;
-    aget-object v11, v10, v5
-
-    check-cast v11, Ljava/lang/String;
-
-    aget-object v12, v10, v7
-
-    check-cast v12, Ljava/lang/String;
-
-    invoke-interface {v6, v11, v12}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_1
-    .catch Ljava/util/MissingResourceException; {:try_start_1 .. :try_end_1} :catch_0
-
-    .line 88
-    nop
-
-    .end local v10    # "objArr4":[Ljava/lang/Object;
-    add-int/lit8 v9, v9, 0x1
-
-    goto :goto_1
-
-    .line 94
-    .end local v1    # "resourceBundle":Ljava/util/ResourceBundle;
-    .end local v2    # "objArr":[[Ljava/lang/Object;
-    .end local v4    # "objArr3":[[Ljava/lang/Object;
-    :cond_1
     goto :goto_2
 
-    .line 91
-    .end local v3    # "emptyMap":Ljava/util/Map;
-    .end local v6    # "emptyMap2":Ljava/util/Map;
-    :catch_0
-    move-exception v1
-
-    .line 92
-    .local v1, "e":Ljava/util/MissingResourceException;
-    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
-
-    move-result-object v3
-
-    .line 93
-    .restart local v3    # "emptyMap":Ljava/util/Map;
-    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
-
-    move-result-object v6
-
-    .line 95
-    .end local v1    # "e":Ljava/util/MissingResourceException;
-    .restart local v6    # "emptyMap2":Ljava/util/Map;
-    :goto_2
-    monitor-enter p0
-
-    .line 96
-    :try_start_2
-    iget-object v1, p0, Ldefpackage/y;->b:Ljava/util/Map;
-
-    if-nez v1, :cond_2
-
-    .line 97
-    iput-object v3, p0, Ldefpackage/y;->b:Ljava/util/Map;
-
-    .line 98
-    iput-object v6, p0, Ldefpackage/y;->c:Ljava/util/Map;
-
-    .line 100
-    :cond_2
-    monitor-exit p0
-
-    goto :goto_3
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit p0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    throw v1
-
-    .line 102
-    .end local v3    # "emptyMap":Ljava/util/Map;
-    .end local v6    # "emptyMap2":Ljava/util/Map;
-    :cond_3
-    :goto_3
-    return-void
+    .line 74
+    :cond_4
+    :goto_1
+    nop
 
     .line 77
-    .end local v0    # "map":Ljava/util/Map;
-    :catchall_1
-    move-exception v0
+    :goto_2
+    new-instance v4, Ldkk;
 
+    iget-boolean v5, v1, Ldkk;->a:Z
+
+    invoke-direct {v4, v5}, Ldkk;-><init>(Z)V
+
+    .line 78
+    .local v4, "dkkVar2":Ldkk;
+    iput-object v3, v4, Ldkk;->b:Llju;
+
+    .line 79
+    iput-object v2, v4, Ldkk;->c:Ljava/lang/Exception;
+
+    .line 80
+    move-object v1, v4
+
+    .line 83
+    .end local v2    # "e":Ljava/lang/RuntimeException;
+    .end local v3    # "ljuVar":Llju;
+    .end local v4    # "dkkVar2":Ldkk;
+    :cond_5
+    :goto_3
+    iget-object v2, v0, Lbqm;->b:Ljava/lang/Object;
+
+    monitor-enter v2
+    :try_end_2
+    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/util/concurrent/ExecutionException; {:try_start_2 .. :try_end_2} :catch_1
+
+    .line 84
     :try_start_3
-    monitor-exit p0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    iget-object v3, v0, Lbqm;->c:Lpih;
 
-    throw v0
+    .line 85
+    .local v3, "pihVar2":Lpih;
+    const/4 v4, 0x0
+
+    iput-object v4, v0, Lbqm;->c:Lpih;
+
+    .line 86
+    monitor-exit v2
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 87
+    :try_start_4
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 88
+    invoke-virtual {v3, v1}, Lpih;->o(Ljava/lang/Object;)Z
+    :try_end_4
+    .catch Ljava/lang/InterruptedException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/util/concurrent/ExecutionException; {:try_start_4 .. :try_end_4} :catch_1
+
+    .line 91
+    nop
+
+    .line 92
+    .end local v1    # "z2":Ldkk;
+    return-void
+
+    .line 86
+    .end local v3    # "pihVar2":Lpih;
+    .restart local v1    # "z2":Ldkk;
+    :catchall_0
+    move-exception v3
+
+    :try_start_5
+    monitor-exit v2
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    .end local v0    # "bqmVar":Lbqm;
+    .end local p0    # "this":Ldefpackage/Y;
+    :try_start_6
+    throw v3
+    :try_end_6
+    .catch Ljava/lang/InterruptedException; {:try_start_6 .. :try_end_6} :catch_1
+    .catch Ljava/util/concurrent/ExecutionException; {:try_start_6 .. :try_end_6} :catch_1
+
+    .line 89
+    .end local v1    # "z2":Ldkk;
+    .restart local v0    # "bqmVar":Lbqm;
+    .restart local p0    # "this":Ldefpackage/Y;
+    :catch_1
+    move-exception v1
+
+    .line 90
+    .local v1, "e2":Ljava/lang/Exception;
+    new-instance v2, Lokf;
+
+    invoke-direct {v2, v1}, Lokf;-><init>(Ljava/lang/Throwable;)V
+
+    throw v2
 .end method

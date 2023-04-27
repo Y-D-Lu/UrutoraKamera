@@ -25,9 +25,9 @@
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/qnm;)V
+.method public constructor <init>(Lqnm;)V
     .locals 0
-    .param p1, "qnmVar"    # Ldefpackage/qnm;
+    .param p1, "qnmVar"    # Lqnm;
 
     .line 37
     invoke-direct {p0}, Landroidx/window/core/Version$Companion;-><init>()V
@@ -47,7 +47,7 @@
 
     if-eqz v0, :cond_9
 
-    invoke-static/range {p0 .. p0}, Ldefpackage/qno;->j(Ljava/lang/CharSequence;)Z
+    invoke-static/range {p0 .. p0}, Lqno;->j(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
@@ -238,7 +238,7 @@
 
     move v8, v1
 
-    invoke-direct/range {v5 .. v10}, Landroidx/window/core/Version;-><init>(IIILjava/lang/String;Ldefpackage/qnm;)V
+    invoke-direct/range {v5 .. v10}, Landroidx/window/core/Version;-><init>(IIILjava/lang/String;Lqnm;)V
 
     return-object v17
 

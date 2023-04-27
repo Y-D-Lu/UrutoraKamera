@@ -1,9 +1,9 @@
 .class final Landroidx/window/core/Version$bigInteger$2;
-.super Ldefpackage/qnp;
+.super Lqnp;
 .source ""
 
 # interfaces
-.implements Ldefpackage/qmj;
+.implements Lqmj;
 
 
 # instance fields
@@ -18,7 +18,7 @@
     .line 14
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Ldefpackage/qnp;-><init>(I)V
+    invoke-direct {p0, v0}, Lqnp;-><init>(I)V
 
     .line 15
     iput-object p1, p0, Landroidx/window/core/Version$bigInteger$2;->this$0:Landroidx/window/core/Version;

@@ -20,10 +20,10 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .line 14
-    invoke-static {p1}, Ldefpackage/save;->m(Landroid/content/Context;)V
+    invoke-static {p1}, Lsave;->m(Landroid/content/Context;)V
 
     .line 15
-    invoke-static {p1}, Ldefpackage/save2;->m(Landroid/content/Context;)V
+    invoke-static {p1}, Lsave2;->m(Landroid/content/Context;)V
 
     .line 16
     invoke-super {p0, p1}, Landroid/app/Application;->attachBaseContext(Landroid/content/Context;)V

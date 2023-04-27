@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public c:Ldefpackage/qs;
+.field public c:Lqs;
 
 .field public final d:Landroid/graphics/Rect;
 
@@ -162,9 +162,9 @@
     .locals 1
 
     .line 53
-    iget-object v0, p0, Landroid/view/qd;->c:Ldefpackage/qs;
+    iget-object v0, p0, Landroid/view/qd;->c:Lqs;
 
-    invoke-virtual {v0}, Ldefpackage/qs;->b()I
+    invoke-virtual {v0}, Lqs;->b()I
 
     move-result v0
 
@@ -175,9 +175,9 @@
     .locals 1
 
     .line 57
-    iget-object v0, p0, Landroid/view/qd;->c:Ldefpackage/qs;
+    iget-object v0, p0, Landroid/view/qd;->c:Lqs;
 
-    invoke-virtual {v0}, Ldefpackage/qs;->x()Z
+    invoke-virtual {v0}, Lqs;->x()Z
 
     move-result v0
 
@@ -188,9 +188,9 @@
     .locals 1
 
     .line 61
-    iget-object v0, p0, Landroid/view/qd;->c:Ldefpackage/qs;
+    iget-object v0, p0, Landroid/view/qd;->c:Lqs;
 
-    invoke-virtual {v0}, Ldefpackage/qs;->u()Z
+    invoke-virtual {v0}, Lqs;->u()Z
 
     move-result v0
 

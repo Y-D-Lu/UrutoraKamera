@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Ldefpackage/ouj;
+.field private static final a:Louj;
 
 
 # instance fields
@@ -18,11 +18,11 @@
     .line 21
     const-string v0, "com/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a:Louj;
 
     return-void
 .end method
@@ -118,9 +118,9 @@
     if-nez v2, :cond_0
 
     .line 40
-    sget-object v1, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->c()Lova;
 
     move-result-object v1
 
@@ -128,7 +128,7 @@
 
     const-string v5, "Received intent to launch DeepLinkActivity with null intentUri"
 
-    invoke-static {v1, v5, v4}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v1, v5, v4}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 41
     invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
@@ -182,7 +182,7 @@
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 49
-    const-class v7, Ldefpackage/jrl;
+    const-class v7, Ljrl;
 
     sget-object v8, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
@@ -190,25 +190,25 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Ldefpackage/oit;->a(Ljava/lang/Class;Ljava/lang/String;)Ldefpackage/ojc;
+    invoke-static {v7, v8}, Loit;->a(Ljava/lang/Class;Ljava/lang/String;)Lojc;
 
     move-result-object v7
 
     .line 50
-    .local v7, "a2":Ldefpackage/ojc;
-    invoke-virtual {v7}, Ldefpackage/ojc;->g()Z
+    .local v7, "a2":Lojc;
+    invoke-virtual {v7}, Lojc;->g()Z
 
     move-result v8
 
     if-eqz v8, :cond_3
 
-    invoke-virtual {v7}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v7}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v8
 
-    check-cast v8, Ldefpackage/jrl;
+    check-cast v8, Ljrl;
 
-    invoke-static {v8}, Ldefpackage/jri;->e(Ldefpackage/jrl;)Z
+    invoke-static {v8}, Ljri;->e(Ljrl;)Z
 
     move-result v8
 
@@ -229,11 +229,11 @@
     if-eqz v8, :cond_2
 
     .line 57
-    invoke-virtual {v7}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v7}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v8
 
-    check-cast v8, Ldefpackage/jrl;
+    check-cast v8, Ljrl;
 
     invoke-virtual {v8}, Ljava/lang/Enum;->toString()Ljava/lang/String;
 
@@ -245,12 +245,12 @@
 
     .line 59
     .end local v6    # "queryParameter":Ljava/lang/String;
-    .end local v7    # "a2":Ldefpackage/ojc;
+    .end local v7    # "a2":Lojc;
     goto :goto_2
 
     .line 55
     .restart local v6    # "queryParameter":Ljava/lang/String;
-    .restart local v7    # "a2":Ldefpackage/ojc;
+    .restart local v7    # "a2":Lojc;
     :cond_2
     new-instance v1, Ljava/lang/UnsupportedOperationException;
 
@@ -263,9 +263,9 @@
     .line 51
     :cond_3
     :goto_1
-    sget-object v1, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->c()Lova;
 
     move-result-object v1
 
@@ -273,7 +273,7 @@
 
     const/16 v3, 0x5d9
 
-    invoke-interface {v1, v3}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v1, v3}, Lova;->G(I)Lova;
 
     move-result-object v1
 
@@ -281,7 +281,7 @@
 
     const-string v3, "Unsupported mode \'%s\', perhaps you need to upgrade"
 
-    invoke-interface {v1, v3, v6}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v1, v3, v6}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 52
     invoke-direct {p0}, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a()V
@@ -291,7 +291,7 @@
 
     .line 59
     .end local v6    # "queryParameter":Ljava/lang/String;
-    .end local v7    # "a2":Ldefpackage/ojc;
+    .end local v7    # "a2":Lojc;
     :cond_4
     const-string v6, "timer"
 
@@ -333,9 +333,9 @@
     if-nez v6, :cond_6
 
     .line 64
-    sget-object v1, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->c()Lova;
 
     move-result-object v1
 
@@ -343,7 +343,7 @@
 
     const/16 v3, 0x5d7
 
-    invoke-interface {v1, v3}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v1, v3}, Lova;->G(I)Lova;
 
     move-result-object v1
 
@@ -355,7 +355,7 @@
 
     const-string v4, "Unknown query parameter %s, with value %s"
 
-    invoke-interface {v1, v4, v5, v3}, Ldefpackage/ova;->y(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-interface {v1, v4, v5, v3}, Lova;->y(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 65
     invoke-direct {p0}, Lcom/google/android/apps/camera/legacy/app/activity/CameraDeepLinkActivity;->a()V

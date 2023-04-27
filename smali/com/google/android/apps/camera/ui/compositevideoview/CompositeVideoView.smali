@@ -3,13 +3,13 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/iwh;
+.implements Liwh;
 
 
 # instance fields
 .field public a:Landroid/widget/VideoView;
 
-.field public b:Ldefpackage/iwg;
+.field public b:Liwg;
 
 .field private c:Landroid/widget/ImageView;
 
@@ -81,12 +81,12 @@
     return-void
 .end method
 
-.method public final c(Ldefpackage/iwg;)V
+.method public final c(Liwg;)V
     .locals 0
-    .param p1, "iwgVar"    # Ldefpackage/iwg;
+    .param p1, "iwgVar"    # Liwg;
 
     .line 56
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->b:Ldefpackage/iwg;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->b:Liwg;
 
     .line 57
     return-void
@@ -101,7 +101,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Ldefpackage/oae;->setIndeterminate(Z)V
+    invoke-virtual {v0, v1}, Loae;->setIndeterminate(Z)V
 
     .line 62
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->d:Lcom/google/android/material/progressindicator/CircularProgressIndicator;
@@ -118,7 +118,7 @@
 
     float-to-int v1, v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/oae;->setProgress(I)V
+    invoke-virtual {v0, v1}, Loae;->setProgress(I)V
 
     .line 64
     return-void
@@ -178,11 +178,11 @@
     .line 77
     iget-object v1, p0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->c:Landroid/widget/ImageView;
 
-    new-instance v2, Ldefpackage/iwd;
+    new-instance v2, Liwd;
 
     const/4 v3, 0x0
 
-    invoke-direct {v2, p0, v3}, Ldefpackage/iwd;-><init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;I)V
+    invoke-direct {v2, p0, v3}, Liwd;-><init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;I)V
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -232,11 +232,11 @@
     .line 87
     iget-object v1, p0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->c:Landroid/widget/ImageView;
 
-    new-instance v2, Ldefpackage/iwd;
+    new-instance v2, Liwd;
 
     const/4 v3, 0x2
 
-    invoke-direct {v2, p0, v3}, Ldefpackage/iwd;-><init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;I)V
+    invoke-direct {v2, p0, v3}, Liwd;-><init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;I)V
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -436,7 +436,7 @@
     .line 133
     iget-object v1, p0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->a:Landroid/widget/VideoView;
 
-    new-instance v2, Ldefpackage/iwe;
+    new-instance v2, Liwe;
 
     new-instance v3, Landroid/view/GestureDetector;
 
@@ -444,24 +444,24 @@
 
     move-result-object v4
 
-    new-instance v5, Ldefpackage/iwf;
+    new-instance v5, Liwf;
 
-    invoke-direct {v5, p0}, Ldefpackage/iwf;-><init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;)V
+    invoke-direct {v5, p0}, Liwf;-><init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;)V
 
     invoke-direct {v3, v4, v5}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
 
     const/4 v4, 0x0
 
-    invoke-direct {v2, v3, v4}, Ldefpackage/iwe;-><init>(Landroid/view/GestureDetector;I)V
+    invoke-direct {v2, v3, v4}, Liwe;-><init>(Landroid/view/GestureDetector;I)V
 
     invoke-virtual {v1, v2}, Landroid/widget/VideoView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 134
     iget-object v1, p0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->a:Landroid/widget/VideoView;
 
-    new-instance v2, Ldefpackage/iwd;
+    new-instance v2, Liwd;
 
-    invoke-direct {v2, p0, v0}, Ldefpackage/iwd;-><init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;I)V
+    invoke-direct {v2, p0, v0}, Liwd;-><init>(Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;I)V
 
     invoke-virtual {v1, v2}, Landroid/widget/VideoView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

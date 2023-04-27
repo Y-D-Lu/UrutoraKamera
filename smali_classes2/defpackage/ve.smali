@@ -1,111 +1,117 @@
-.class public final Ldefpackage/ve;
+.class public Ldefpackage/Ve;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgtz;->a()Landroid/animation/Animator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:Lgtz;
+
+.field public final synthetic this$0:Lgtz;
 
 
 # direct methods
-.method private constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(Lgtz;)V
     .locals 0
-    .param p1, "str"    # Ljava/lang/String;
+    .param p1, "this$0"    # Lgtz;
 
-    .line 8
+    .line 97
+    iput-object p1, p0, Ldefpackage/Ve;->this$0:Lgtz;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
-    iput-object p1, p0, Ldefpackage/ve;->a:Ljava/lang/String;
+    .line 98
+    iput-object p1, p0, Ldefpackage/Ve;->a:Lgtz;
 
-    .line 10
     return-void
-.end method
-
-.method public static final a(Ljava/lang/String;)Ldefpackage/ve;
-    .locals 1
-    .param p0, "str"    # Ljava/lang/String;
-
-    .line 13
-    new-instance v0, Ldefpackage/ve;
-
-    invoke-direct {v0, p0}, Ldefpackage/ve;-><init>(Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
-.method public static b(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
-    .param p0, "str"    # Ljava/lang/String;
-
-    .line 17
-    const-string v0, "Camera "
-
-    invoke-static {v0, p0}, Ldefpackage/qno;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
     .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 21
-    instance-of v0, p1, Ldefpackage/ve;
+    .line 102
+    const/4 v0, -0x1
 
-    if-eqz v0, :cond_0
+    packed-switch v0, :pswitch_data_0
 
-    iget-object v0, p0, Ldefpackage/ve;->a:Ljava/lang/String;
+    .line 108
+    move-object v0, p1
 
-    move-object v1, p1
+    check-cast v0, Landroid/animation/Animator;
 
-    check-cast v1, Ldefpackage/ve;
+    .line 109
+    .local v0, "animator2":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Ve;->a:Lgtz;
 
-    iget-object v1, v1, Ldefpackage/ve;->a:Ljava/lang/String;
+    iget-object v1, v1, Lgtz;->a:Landroid/view/View;
 
-    invoke-static {v0, v1}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const/16 v2, 0x8
 
-    move-result v0
+    invoke-virtual {v1, v2}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
-    if-eqz v0, :cond_0
+    .line 110
+    return-void
 
-    const/4 v0, 0x1
+    .line 104
+    .end local v0    # "animator2":Landroid/animation/Animator;
+    :pswitch_0
+    move-object v0, p1
 
-    goto :goto_0
+    check-cast v0, Landroid/animation/Animator;
 
-    :cond_0
-    const/4 v0, 0x0
+    .line 105
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Ve;->a:Lgtz;
 
-    :goto_0
-    return v0
+    iget-object v1, v1, Lgtz;->a:Landroid/view/View;
+
+    sget v2, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setTranslationY(F)V
+
+    .line 106
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final hashCode()I
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
     .locals 1
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 25
-    iget-object v0, p0, Ldefpackage/ve;->a:Ljava/lang/String;
+    .line 116
+    const/4 v0, -0x1
 
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    packed-switch v0, :pswitch_data_0
 
-    move-result v0
+    .line 120
+    return-object p1
 
-    return v0
-.end method
+    .line 118
+    :pswitch_0
+    return-object p1
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 29
-    iget-object v0, p0, Ldefpackage/ve;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Ldefpackage/ve;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

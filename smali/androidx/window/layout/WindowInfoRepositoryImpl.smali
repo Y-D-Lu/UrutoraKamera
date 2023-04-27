@@ -43,7 +43,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl$Companion;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Ldefpackage/qnm;)V
+    invoke-direct {v0, p0, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl$Companion;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Lqnm;)V
 
     iput-object v0, p0, Landroidx/window/layout/WindowInfoRepositoryImpl;->mCompanion:Landroidx/window/layout/WindowInfoRepositoryImpl$Companion;
 
@@ -69,18 +69,18 @@
     return-void
 .end method
 
-.method private final configurationChanged(Ldefpackage/qmj;)Ldefpackage/qtr;
+.method private final configurationChanged(Lqmj;)Lqtr;
     .locals 2
-    .param p1, "qmjVar"    # Ldefpackage/qmj;
+    .param p1, "qmjVar"    # Lqmj;
 
     .line 39
     new-instance v0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, p1, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Ldefpackage/qmj;Ldefpackage/qlh;)V
+    invoke-direct {v0, p0, p1, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Lqmj;Lqlh;)V
 
-    invoke-static {v0}, Ldefpackage/qnm;->x(Ldefpackage/qmy;)Ldefpackage/qtr;
+    invoke-static {v0}, Lqnm;->x(Lqmy;)Lqtr;
 
     move-result-object v0
 
@@ -89,28 +89,28 @@
 
 
 # virtual methods
-.method public getCurrentWindowMetrics()Ldefpackage/qtr;
+.method public getCurrentWindowMetrics()Lqtr;
     .locals 3
 
     .line 44
-    new-instance v0, Ldefpackage/qtq;
+    new-instance v0, Lqtq;
 
     new-instance v1, Landroidx/window/layout/WindowInfoRepositoryImpl$currentWindowMetrics$1;
 
     invoke-direct {v1, p0}, Landroidx/window/layout/WindowInfoRepositoryImpl$currentWindowMetrics$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;)V
 
-    invoke-direct {p0, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl;->configurationChanged(Ldefpackage/qmj;)Ldefpackage/qtr;
+    invoke-direct {p0, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl;->configurationChanged(Lqmj;)Lqtr;
 
     move-result-object v1
 
-    sget-object v2, Ldefpackage/qtw;->b:Ldefpackage/qmy;
+    sget-object v2, Lqtw;->b:Lqmy;
 
-    invoke-direct {v0, v1, v2}, Ldefpackage/qtq;-><init>(Ldefpackage/qtr;Ldefpackage/qmy;)V
+    invoke-direct {v0, v1, v2}, Lqtq;-><init>(Lqtr;Lqmy;)V
 
     return-object v0
 .end method
 
-.method public getWindowLayoutInfo()Ldefpackage/qtr;
+.method public getWindowLayoutInfo()Lqtr;
     .locals 2
 
     .line 49
@@ -118,9 +118,9 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Ldefpackage/qlh;)V
+    invoke-direct {v0, p0, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Lqlh;)V
 
-    invoke-static {v0}, Ldefpackage/qnm;->x(Ldefpackage/qmy;)Ldefpackage/qtr;
+    invoke-static {v0}, Lqnm;->x(Lqmy;)Lqtr;
 
     move-result-object v0
 

@@ -1,5 +1,5 @@
 .class public Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;
-.super Ldefpackage/ih;
+.super Lih;
 .source ""
 
 
@@ -12,33 +12,33 @@
     .locals 1
 
     .line 17
-    invoke-direct {p0}, Ldefpackage/ih;-><init>()V
+    invoke-direct {p0}, Lih;-><init>()V
 
     .line 18
-    new-instance v0, Ldefpackage/juv;
+    new-instance v0, Ljuv;
 
-    invoke-direct {v0, p0}, Ldefpackage/juv;-><init>(Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;)V
+    invoke-direct {v0, p0}, Ljuv;-><init>(Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;)V
 
     iput-object v0, p0, Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;->k:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
 
-.method private final k()Ldefpackage/jux;
+.method private final k()Ljux;
     .locals 2
 
     .line 21
-    invoke-virtual {p0}, Ldefpackage/by;->fm()Ldefpackage/cu;
+    invoke-virtual {p0}, Lby;->fm()Lcu;
 
     move-result-object v0
 
     const v1, 0x7f0a0254
 
-    invoke-virtual {v0, v1}, Ldefpackage/cu;->c(I)Ldefpackage/bu;
+    invoke-virtual {v0, v1}, Lcu;->c(I)Lbu;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jux;
+    check-cast v0, Ljux;
 
     return-object v0
 .end method
@@ -66,28 +66,28 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 28
-    invoke-static {v0, p1}, Ldefpackage/jux;->k(Landroid/os/Bundle;Landroid/net/Uri;)Ldefpackage/jux;
+    invoke-static {v0, p1}, Ljux;->k(Landroid/os/Bundle;Landroid/net/Uri;)Ljux;
 
     move-result-object v1
 
     .line 29
-    .local v1, "k":Ldefpackage/jux;
-    invoke-virtual {p0}, Ldefpackage/by;->fm()Ldefpackage/cu;
+    .local v1, "k":Ljux;
+    invoke-virtual {p0}, Lby;->fm()Lcu;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Ldefpackage/cu;->h()Ldefpackage/dd;
+    invoke-virtual {v2}, Lcu;->h()Ldd;
 
     move-result-object v2
 
     .line 30
-    .local v2, "h":Ldefpackage/dd;
+    .local v2, "h":Ldd;
     const v3, 0x7f0a0254
 
-    invoke-virtual {v2, v3, v1}, Ldefpackage/dd;->l(ILdefpackage/bu;)V
+    invoke-virtual {v2, v3, v1}, Ldd;->l(ILbu;)V
 
     .line 31
-    invoke-virtual {v2}, Ldefpackage/dd;->g()V
+    invoke-virtual {v2}, Ldd;->g()V
 
     .line 32
     return-void
@@ -100,15 +100,15 @@
     .param p1, "bundle"    # Landroid/os/Bundle;
 
     .line 37
-    invoke-super {p0, p1}, Ldefpackage/by;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lby;->onCreate(Landroid/os/Bundle;)V
 
     .line 38
     const v0, 0x7f0d00dc
 
-    invoke-virtual {p0, v0}, Ldefpackage/ih;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lih;->setContentView(I)V
 
     .line 39
-    invoke-direct {p0}, Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;->k()Ldefpackage/jux;
+    invoke-direct {p0}, Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;->k()Ljux;
 
     move-result-object v0
 
@@ -156,7 +156,7 @@
     invoke-virtual {p0, v0}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 51
-    invoke-super {p0}, Ldefpackage/ih;->onDestroy()V
+    invoke-super {p0}, Lih;->onDestroy()V
 
     .line 52
     return-void
@@ -167,35 +167,35 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .line 57
-    invoke-super {p0, p1}, Ldefpackage/by;->onNewIntent(Landroid/content/Intent;)V
+    invoke-super {p0, p1}, Lby;->onNewIntent(Landroid/content/Intent;)V
 
     .line 58
-    invoke-direct {p0}, Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;->k()Ldefpackage/jux;
+    invoke-direct {p0}, Lcom/google/android/apps/camera/videoplayer/VideoPlayerActivity;->k()Ljux;
 
     move-result-object v0
 
     .line 59
-    .local v0, "k":Ldefpackage/jux;
+    .local v0, "k":Ljux;
     if-eqz v0, :cond_0
 
     .line 60
-    invoke-virtual {p0}, Ldefpackage/by;->fm()Ldefpackage/cu;
+    invoke-virtual {p0}, Lby;->fm()Lcu;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ldefpackage/cu;->h()Ldefpackage/dd;
+    invoke-virtual {v1}, Lcu;->h()Ldd;
 
     move-result-object v1
 
     .line 61
-    .local v1, "h":Ldefpackage/dd;
-    invoke-virtual {v1, v0}, Ldefpackage/dd;->j(Ldefpackage/bu;)V
+    .local v1, "h":Ldd;
+    invoke-virtual {v1, v0}, Ldd;->j(Lbu;)V
 
     .line 62
-    invoke-virtual {v1}, Ldefpackage/dd;->g()V
+    invoke-virtual {v1}, Ldd;->g()V
 
     .line 64
-    .end local v1    # "h":Ldefpackage/dd;
+    .end local v1    # "h":Ldd;
     :cond_0
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 

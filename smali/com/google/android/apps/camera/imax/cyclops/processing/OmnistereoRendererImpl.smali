@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/ejq;
+.implements Lejq;
 
 
 # instance fields

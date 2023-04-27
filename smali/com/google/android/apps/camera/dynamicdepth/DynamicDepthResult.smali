@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/lie;
+.implements Llie;
 
 
 # instance fields
@@ -21,7 +21,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 15
-    invoke-static {}, Ldefpackage/dkr;->a()V
+    invoke-static {}, Ldkr;->a()V
 
     .line 16
     const/4 v2, 0x0
@@ -48,13 +48,13 @@
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/lig;IZZLdefpackage/lzv;)V
+.method public constructor <init>(Llig;IZZLlzv;)V
     .locals 9
-    .param p1, "ligVar"    # Ldefpackage/lig;
+    .param p1, "ligVar"    # Llig;
     .param p2, "i"    # I
     .param p3, "z"    # Z
     .param p4, "z2"    # Z
-    .param p5, "lzvVar"    # Ldefpackage/lzv;
+    .param p5, "lzvVar"    # Llzv;
 
     .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -65,7 +65,7 @@
     .line 23
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->LENS_DISTORTION:Landroid/hardware/camera2/CaptureResult$Key;
 
-    invoke-interface {p5, v0}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {p5, v0}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
     .local v0, "fArr2":[F
     sget-object v1, Landroid/hardware/camera2/CaptureResult;->LENS_INTRINSIC_CALIBRATION:Landroid/hardware/camera2/CaptureResult$Key;
 
-    invoke-interface {p5, v1}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {p5, v1}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -97,9 +97,9 @@
     .line 29
     .restart local v0    # "fArr2":[F
     :goto_0
-    iget v2, p1, Ldefpackage/lig;->a:I
+    iget v2, p1, Llig;->a:I
 
-    iget v3, p1, Ldefpackage/lig;->b:I
+    iget v3, p1, Llig;->b:I
 
     move v4, p2
 

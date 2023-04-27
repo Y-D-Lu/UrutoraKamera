@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Ldefpackage/pos;
+.field public final a:Lpos;
 
 .field public final b:J
 
@@ -35,9 +35,9 @@
 
     .line 22
     .local v0, "e":Ljava/lang/UnsatisfiedLinkError;
-    sget-object v1, Ldefpackage/ojr;->JAVA_VM_NAME:Ldefpackage/ojr;
+    sget-object v1, Lojr;->JAVA_VM_NAME:Lojr;
 
-    invoke-virtual {v1}, Ldefpackage/ojr;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lojr;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -83,30 +83,30 @@
     iput-boolean v0, p0, Lcom/google/android/libraries/vision/smartcapture/BurstCurator;->c:Z
 
     .line 32
-    invoke-static {}, Ldefpackage/pos;->c()Ldefpackage/pos;
+    invoke-static {}, Lpos;->c()Lpos;
 
     move-result-object v0
 
     .line 33
-    .local v0, "c":Ldefpackage/pos;
-    iput-object v0, p0, Lcom/google/android/libraries/vision/smartcapture/BurstCurator;->a:Ldefpackage/pos;
+    .local v0, "c":Lpos;
+    iput-object v0, p0, Lcom/google/android/libraries/vision/smartcapture/BurstCurator;->a:Lpos;
 
     .line 34
-    sget-object v1, Ldefpackage/puj;->j:Ldefpackage/poq;
+    sget-object v1, Lpuj;->j:Lpoq;
 
     .line 35
-    .local v1, "poqVar":Ldefpackage/poq;
-    iget-object v2, v0, Ldefpackage/pos;->b:Ljava/util/Map;
+    .local v1, "poqVar":Lpoq;
+    iget-object v2, v0, Lpos;->b:Ljava/util/Map;
 
-    new-instance v3, Ldefpackage/por;
+    new-instance v3, Lpor;
 
-    iget-object v4, v1, Ldefpackage/poq;->a:Ldefpackage/pqm;
+    iget-object v4, v1, Lpoq;->a:Lpqm;
 
-    invoke-virtual {v1}, Ldefpackage/poq;->a()I
+    invoke-virtual {v1}, Lpoq;->a()I
 
     move-result v5
 
-    invoke-direct {v3, v4, v5}, Ldefpackage/por;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v3, v4, v5}, Lpor;-><init>(Ljava/lang/Object;I)V
 
     invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -114,8 +114,8 @@
     return-void
 
     .line 38
-    .end local v0    # "c":Ldefpackage/pos;
-    .end local v1    # "poqVar":Ldefpackage/poq;
+    .end local v0    # "c":Lpos;
+    .end local v1    # "poqVar":Lpoq;
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

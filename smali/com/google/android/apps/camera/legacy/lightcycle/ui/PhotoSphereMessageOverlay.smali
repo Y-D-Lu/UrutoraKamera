@@ -26,7 +26,7 @@
     invoke-direct {p0, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     .line 26
-    invoke-static {}, Ldefpackage/mip;->bU()Landroid/os/Handler;
+    invoke-static {}, Lmip;->bU()Landroid/os/Handler;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
     invoke-direct {p0, v0, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 34
-    invoke-static {}, Ldefpackage/mip;->bU()Landroid/os/Handler;
+    invoke-static {}, Lmip;->bU()Landroid/os/Handler;
 
     move-result-object v0
 
@@ -119,11 +119,11 @@
     .line 41
     iget-object v0, p0, Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;->a:Landroid/os/Handler;
 
-    new-instance v1, Ldefpackage/fer;
+    new-instance v1, Lfer;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p0, v2}, Ldefpackage/fer;-><init>(Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;I)V
+    invoke-direct {v1, p0, v2}, Lfer;-><init>(Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;I)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -199,9 +199,9 @@
     .line 53
     iget-object v0, p0, Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;->a:Landroid/os/Handler;
 
-    new-instance v1, Ldefpackage/feo;
+    new-instance v1, Lfeo;
 
-    invoke-direct {v1, p0, p1}, Ldefpackage/feo;-><init>(Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;I)V
+    invoke-direct {v1, p0, p1}, Lfeo;-><init>(Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;I)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -217,9 +217,9 @@
     .line 57
     iget-object v0, p0, Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;->a:Landroid/os/Handler;
 
-    new-instance v1, Ldefpackage/fes;
+    new-instance v1, Lfes;
 
-    invoke-direct {v1, p0, p1, p2}, Ldefpackage/fes;-><init>(Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;ZI)V
+    invoke-direct {v1, p0, p1, p2}, Lfes;-><init>(Lcom/google/android/apps/camera/legacy/lightcycle/ui/PhotoSphereMessageOverlay;ZI)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

@@ -1,104 +1,67 @@
-.class public final Ldefpackage/jf;
+.class public Ldefpackage/Jf;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/ku;
+.implements Llmu;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgzy;->d()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/jh;
+.field public final synthetic this$0:Lgzy;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/jh;)V
+.method public constructor <init>(Lgzy;)V
     .locals 0
-    .param p1, "jhVar"    # Ldefpackage/jh;
+    .param p1, "this$0"    # Lgzy;
 
-    .line 13
+    .line 109
+    iput-object p1, p0, Ldefpackage/Jf;->this$0:Lgzy;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    iput-object p1, p0, Ldefpackage/jf;->a:Ldefpackage/jh;
-
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ldefpackage/kw;)V
-    .locals 5
-    .param p1, "kwVar"    # Ldefpackage/kw;
+.method public final a(Llrr;)V
+    .locals 2
+    .param p1, "lrrVar"    # Llrr;
 
-    .line 19
-    iget-object v0, p0, Ldefpackage/jf;->a:Ldefpackage/jh;
+    .line 112
+    iget-object v0, p0, Ldefpackage/Jf;->this$0:Lgzy;
 
-    .line 20
-    .local v0, "jhVar":Ldefpackage/jh;
-    iget-object v1, v0, Ldefpackage/jh;->c:Landroid/view/Window$Callback;
+    .line 113
+    .local v0, "gzyVar":Lgzy;
+    invoke-virtual {p1}, Llrr;->b()Llmw;
 
-    if-eqz v1, :cond_2
+    move-result-object v1
 
-    .line 21
-    iget-object v1, v0, Ldefpackage/jh;->a:Ldefpackage/oa;
+    if-nez v1, :cond_0
 
-    invoke-interface {v1}, Ldefpackage/oa;->u()Z
-
-    move-result v1
-
-    const/16 v2, 0x6c
-
-    if-eqz v1, :cond_0
-
-    .line 22
-    iget-object v1, p0, Ldefpackage/jf;->a:Ldefpackage/jh;
-
-    iget-object v1, v1, Ldefpackage/jh;->c:Landroid/view/Window$Callback;
-
-    invoke-interface {v1, v2, p1}, Landroid/view/Window$Callback;->onPanelClosed(ILandroid/view/Menu;)V
-
-    goto :goto_0
-
-    .line 23
-    :cond_0
-    iget-object v1, p0, Ldefpackage/jf;->a:Ldefpackage/jh;
-
-    iget-object v1, v1, Ldefpackage/jh;->c:Landroid/view/Window$Callback;
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    invoke-interface {v1, v3, v4, p1}, Landroid/view/Window$Callback;->onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
-
-    .line 25
-    :cond_1
-    iget-object v1, p0, Ldefpackage/jf;->a:Ldefpackage/jh;
-
-    iget-object v1, v1, Ldefpackage/jh;->c:Landroid/view/Window$Callback;
-
-    invoke-interface {v1, v2, p1}, Landroid/view/Window$Callback;->onMenuOpened(ILandroid/view/Menu;)Z
-
-    .line 28
-    :cond_2
-    :goto_0
+    .line 114
     return-void
-.end method
 
-.method public final E(Ldefpackage/kw;Landroid/view/MenuItem;)Z
-    .locals 1
-    .param p1, "kwVar"    # Ldefpackage/kw;
-    .param p2, "menuItem"    # Landroid/view/MenuItem;
+    .line 116
+    :cond_0
+    new-instance v1, Ldefpackage/If;
 
-    .line 32
-    const/4 v0, 0x0
+    invoke-direct {v1, p0}, Ldefpackage/If;-><init>(Ldefpackage/Jf;)V
 
-    return v0
+    invoke-static {p1, v1}, Lmip;->bj(Llrr;Llnn;)V
+
+    .line 243
+    return-void
 .end method

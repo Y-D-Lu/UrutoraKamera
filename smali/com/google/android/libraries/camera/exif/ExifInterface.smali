@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/llz;
+.implements Lllz;
 
 
 # static fields
@@ -275,7 +275,7 @@
 # instance fields
 .field public bA:Ljava/lang/String;
 
-.field public bB:Ldefpackage/lly;
+.field public bB:Llly;
 
 .field public final bC:Ljava/text/DateFormat;
 
@@ -1614,13 +1614,13 @@
     iput-object v0, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bA:Ljava/lang/String;
 
     .line 173
-    new-instance v0, Ldefpackage/lly;
+    new-instance v0, Llly;
 
     sget-object v1, Lcom/google/android/libraries/camera/exif/ExifInterface;->by:Ljava/nio/ByteOrder;
 
-    invoke-direct {v0, v1}, Ldefpackage/lly;-><init>(Ljava/nio/ByteOrder;)V
+    invoke-direct {v0, v1}, Llly;-><init>(Ljava/nio/ByteOrder;)V
 
-    iput-object v0, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Ldefpackage/lly;
+    iput-object v0, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Llly;
 
     .line 174
     new-instance v0, Ljava/text/SimpleDateFormat;
@@ -1703,7 +1703,7 @@
     .param p0, "iArr"    # [I
 
     .line 337
-    sget-object v0, Ldefpackage/lmj;->a:[I
+    sget-object v0, Llmj;->a:[I
 
     .line 338
     .local v0, "iArr2":[I
@@ -1818,7 +1818,7 @@
 
     .line 369
     .local v0, "i4":I
-    sget-object v1, Ldefpackage/lmj;->a:[I
+    sget-object v1, Llmj;->a:[I
 
     .line 370
     .local v1, "iArr":[I
@@ -1878,7 +1878,7 @@
     return v0
 .end method
 
-.method public static w(D)[Ldefpackage/lid;
+.method public static w(D)[Llid;
     .locals 21
     .param p0, "d2"    # D
 
@@ -1948,9 +1948,9 @@
     .line 395
     const/4 v6, 0x3
 
-    new-array v6, v6, [Ldefpackage/lid;
+    new-array v6, v6, [Llid;
 
-    new-instance v7, Ldefpackage/lid;
+    new-instance v7, Llid;
 
     move-wide/from16 v17, v9
 
@@ -1964,23 +1964,23 @@
     .local v19, "longValue":J
     const-wide/16 v13, 0x1
 
-    invoke-direct {v7, v9, v10, v13, v14}, Ldefpackage/lid;-><init>(JJ)V
+    invoke-direct {v7, v9, v10, v13, v14}, Llid;-><init>(JJ)V
 
     const/4 v9, 0x0
 
     aput-object v7, v6, v9
 
-    new-instance v7, Ldefpackage/lid;
+    new-instance v7, Llid;
 
     int-to-long v9, v11
 
-    invoke-direct {v7, v9, v10, v13, v14}, Ldefpackage/lid;-><init>(JJ)V
+    invoke-direct {v7, v9, v10, v13, v14}, Llid;-><init>(JJ)V
 
     const/4 v9, 0x1
 
     aput-object v7, v6, v9
 
-    new-instance v7, Ldefpackage/lid;
+    new-instance v7, Llid;
 
     sub-double v9, v0, v2
 
@@ -1998,7 +1998,7 @@
 
     move-result-wide v13
 
-    invoke-direct {v7, v9, v10, v13, v14}, Ldefpackage/lid;-><init>(JJ)V
+    invoke-direct {v7, v9, v10, v13, v14}, Llid;-><init>(JJ)V
 
     const/4 v9, 0x2
 
@@ -2018,7 +2018,7 @@
 
     const/4 v1, 0x2
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->ax(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Lobr;->ax(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2027,7 +2027,7 @@
 
 
 # virtual methods
-.method public final a(I)Ldefpackage/lid;
+.method public final a(I)Llid;
     .locals 3
     .param p1, "i2"    # I
 
@@ -2036,12 +2036,12 @@
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->v(II)[Ldefpackage/lid;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->v(II)[Llid;
 
     move-result-object v0
 
     .line 405
-    .local v0, "v2":[Ldefpackage/lid;
+    .local v0, "v2":[Llid;
     if-eqz v0, :cond_1
 
     array-length v1, v0
@@ -2052,13 +2052,13 @@
 
     .line 408
     :cond_0
-    new-instance v1, Ldefpackage/lid;
+    new-instance v1, Llid;
 
     const/4 v2, 0x0
 
     aget-object v2, v0, v2
 
-    invoke-direct {v1, v2}, Ldefpackage/lid;-><init>(Ldefpackage/lid;)V
+    invoke-direct {v1, v2}, Llid;-><init>(Llid;)V
 
     return-object v1
 
@@ -2079,12 +2079,12 @@
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->l(II)Ldefpackage/lmg;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->l(II)Llmg;
 
     move-result-object v0
 
     .line 414
-    .local v0, "l2":Ldefpackage/lmg;
+    .local v0, "l2":Llmg;
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
@@ -2094,7 +2094,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v0}, Ldefpackage/lmg;->n()[I
+    invoke-virtual {v0}, Llmg;->n()[I
 
     move-result-object v2
 
@@ -2165,12 +2165,12 @@
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->l(II)Ldefpackage/lmg;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->l(II)Llmg;
 
     move-result-object v0
 
     .line 431
-    .local v0, "l2":Ldefpackage/lmg;
+    .local v0, "l2":Llmg;
     if-nez v0, :cond_0
 
     .line 432
@@ -2180,7 +2180,7 @@
 
     .line 434
     :cond_0
-    invoke-virtual {v0}, Ldefpackage/lmg;->d()Ljava/lang/String;
+    invoke-virtual {v0}, Llmg;->d()Ljava/lang/String;
 
     move-result-object v1
 
@@ -3228,7 +3228,7 @@
     .end array-data
 .end method
 
-.method public final i(ILjava/lang/Object;)Ldefpackage/lmg;
+.method public final i(ILjava/lang/Object;)Llmg;
     .locals 16
     .param p1, "i2"    # I
     .param p2, "obj"    # Ljava/lang/Object;
@@ -3303,7 +3303,7 @@
 
     .line 617
     :cond_2
-    new-instance v15, Ldefpackage/lmg;
+    new-instance v15, Llmg;
 
     invoke-static/range {p1 .. p1}, Lcom/google/android/libraries/camera/exif/ExifInterface;->n(I)S
 
@@ -3317,10 +3317,10 @@
 
     move v5, v7
 
-    invoke-direct/range {v1 .. v6}, Ldefpackage/lmg;-><init>(SSIIZ)V
+    invoke-direct/range {v1 .. v6}, Llmg;-><init>(SSIIZ)V
 
     .line 618
-    .local v1, "lmgVar":Ldefpackage/lmg;
+    .local v1, "lmgVar":Llmg;
     instance-of v2, v0, Ljava/lang/Short;
 
     if-eqz v2, :cond_3
@@ -3336,7 +3336,7 @@
 
     int-to-char v2, v2
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->h(I)Z
+    invoke-virtual {v1, v2}, Llmg;->h(I)Z
 
     move-result v2
 
@@ -3355,7 +3355,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->i(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Llmg;->i(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -3374,7 +3374,7 @@
 
     check-cast v2, [I
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->k([I)Z
+    invoke-virtual {v1, v2}, Llmg;->k([I)Z
 
     move-result v2
 
@@ -3393,7 +3393,7 @@
 
     check-cast v2, [J
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->l([J)Z
+    invoke-virtual {v1, v2}, Llmg;->l([J)Z
 
     move-result v2
 
@@ -3403,20 +3403,20 @@
     .line 626
     .end local v2    # "j2":Z
     :cond_6
-    instance-of v2, v0, Ldefpackage/lid;
+    instance-of v2, v0, Llid;
 
     if-eqz v2, :cond_7
 
     .line 627
-    new-array v2, v14, [Ldefpackage/lid;
+    new-array v2, v14, [Llid;
 
     move-object v3, v0
 
-    check-cast v3, Ldefpackage/lid;
+    check-cast v3, Llid;
 
     aput-object v3, v2, v13
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->m([Ldefpackage/lid;)Z
+    invoke-virtual {v1, v2}, Llmg;->m([Llid;)Z
 
     move-result v2
 
@@ -3426,16 +3426,16 @@
     .line 628
     .end local v2    # "j2":Z
     :cond_7
-    instance-of v2, v0, [Ldefpackage/lid;
+    instance-of v2, v0, [Llid;
 
     if-eqz v2, :cond_8
 
     .line 629
     move-object v2, v0
 
-    check-cast v2, [Ldefpackage/lid;
+    check-cast v2, [Llid;
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->m([Ldefpackage/lid;)Z
+    invoke-virtual {v1, v2}, Llmg;->m([Llid;)Z
 
     move-result v2
 
@@ -3454,7 +3454,7 @@
 
     check-cast v2, [B
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->j([B)Z
+    invoke-virtual {v1, v2}, Llmg;->j([B)Z
 
     move-result v2
 
@@ -3477,7 +3477,7 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->h(I)Z
+    invoke-virtual {v1, v2}, Llmg;->h(I)Z
 
     move-result v2
 
@@ -3504,7 +3504,7 @@
 
     aput-wide v3, v2, v13
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->l([J)Z
+    invoke-virtual {v1, v2}, Llmg;->l([J)Z
 
     move-result v2
 
@@ -3531,7 +3531,7 @@
 
     aput-byte v3, v2, v13
 
-    invoke-virtual {v1, v2}, Ldefpackage/lmg;->j([B)Z
+    invoke-virtual {v1, v2}, Llmg;->j([B)Z
 
     move-result v2
 
@@ -3596,7 +3596,7 @@
     .line 645
     .end local v4    # "i4":I
     :cond_e
-    invoke-virtual {v1, v3}, Ldefpackage/lmg;->k([I)Z
+    invoke-virtual {v1, v3}, Llmg;->k([I)Z
 
     move-result v2
 
@@ -3660,7 +3660,7 @@
     .line 653
     .end local v4    # "i5":I
     :cond_11
-    invoke-virtual {v1, v3}, Ldefpackage/lmg;->k([I)Z
+    invoke-virtual {v1, v3}, Llmg;->k([I)Z
 
     move-result v2
 
@@ -3724,7 +3724,7 @@
     .line 661
     .end local v4    # "i6":I
     :cond_14
-    invoke-virtual {v1, v3}, Ldefpackage/lmg;->l([J)Z
+    invoke-virtual {v1, v3}, Llmg;->l([J)Z
 
     move-result v2
 
@@ -3792,7 +3792,7 @@
     .line 671
     .end local v4    # "i7":I
     :cond_18
-    invoke-virtual {v1, v3}, Ldefpackage/lmg;->j([B)Z
+    invoke-virtual {v1, v3}, Llmg;->j([B)Z
 
     move-result v4
 
@@ -3812,7 +3812,7 @@
     return-object v1
 
     .line 609
-    .end local v1    # "lmgVar":Ldefpackage/lmg;
+    .end local v1    # "lmgVar":Llmg;
     .end local v2    # "j2":Z
     .end local v6    # "z2":Z
     .end local v11    # "o2":S
@@ -3822,7 +3822,7 @@
     return-object v10
 .end method
 
-.method public final j(I)Ldefpackage/lmg;
+.method public final j(I)Llmg;
     .locals 10
     .param p1, "i2"    # I
 
@@ -3858,7 +3858,7 @@
 
     .line 686
     .local v8, "d2":I
-    new-instance v9, Ldefpackage/lmg;
+    new-instance v9, Llmg;
 
     invoke-static {p1}, Lcom/google/android/libraries/camera/exif/ExifInterface;->n(I)S
 
@@ -3886,12 +3886,12 @@
 
     move v5, v8
 
-    invoke-direct/range {v2 .. v7}, Ldefpackage/lmg;-><init>(SSIIZ)V
+    invoke-direct/range {v2 .. v7}, Llmg;-><init>(SSIIZ)V
 
     return-object v9
 .end method
 
-.method public final k(I)Ldefpackage/lmg;
+.method public final k(I)Llmg;
     .locals 1
     .param p1, "i2"    # I
 
@@ -3900,20 +3900,20 @@
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->l(II)Ldefpackage/lmg;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->l(II)Llmg;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final l(II)Ldefpackage/lmg;
+.method public final l(II)Llmg;
     .locals 3
     .param p1, "i2"    # I
     .param p2, "i3"    # I
 
     .line 694
-    invoke-static {p2}, Ldefpackage/lmg;->f(I)Z
+    invoke-static {p2}, Llmg;->f(I)Z
 
     move-result v0
 
@@ -3932,18 +3932,18 @@
 
     .line 698
     .local v0, "n2":S
-    iget-object v2, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Ldefpackage/lly;
+    iget-object v2, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Llly;
 
-    iget-object v2, v2, Ldefpackage/lly;->a:[Ldefpackage/lmj;
+    iget-object v2, v2, Llly;->a:[Llmj;
 
     aget-object v2, v2, p2
 
     .line 699
-    .local v2, "lmjVar":Ldefpackage/lmj;
+    .local v2, "lmjVar":Llmj;
     if-eqz v2, :cond_1
 
     .line 700
-    invoke-virtual {v2, v0}, Ldefpackage/lmj;->b(S)Ldefpackage/lmg;
+    invoke-virtual {v2, v0}, Llmj;->b(S)Llmg;
 
     move-result-object v1
 
@@ -3959,9 +3959,9 @@
     .param p1, "outputStream"    # Ljava/io/OutputStream;
 
     .line 706
-    new-instance v0, Ldefpackage/lmn;
+    new-instance v0, Llmn;
 
-    new-instance v1, Ldefpackage/lmh;
+    new-instance v1, Llmh;
 
     new-instance v2, Ljava/io/BufferedOutputStream;
 
@@ -3969,11 +3969,11 @@
 
     invoke-direct {v2, p1, v3}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
-    iget-object v3, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Ldefpackage/lly;
+    iget-object v3, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Llly;
 
-    invoke-direct {v1, v2, p0, v3}, Ldefpackage/lmh;-><init>(Ljava/io/OutputStream;Lcom/google/android/libraries/camera/exif/ExifInterface;Ldefpackage/lly;)V
+    invoke-direct {v1, v2, p0, v3}, Llmh;-><init>(Ljava/io/OutputStream;Lcom/google/android/libraries/camera/exif/ExifInterface;Llly;)V
 
-    invoke-direct {v0, v1}, Ldefpackage/lmn;-><init>(Ldefpackage/lmm;)V
+    invoke-direct {v0, v1}, Llmn;-><init>(Llmm;)V
 
     return-object v0
 .end method
@@ -3983,7 +3983,7 @@
     .param p1, "i2"    # I
 
     .line 710
-    iget-object v0, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Ldefpackage/lly;
+    iget-object v0, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Llly;
 
     invoke-static {p1}, Lcom/google/android/libraries/camera/exif/ExifInterface;->n(I)S
 
@@ -3993,7 +3993,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Ldefpackage/lly;->h(SI)Z
+    invoke-virtual {v0, v1, v2}, Llly;->h(SI)Z
 
     .line 711
     return-void
@@ -4010,27 +4010,27 @@
 
     .line 715
     :try_start_0
-    new-instance v0, Ldefpackage/lmf;
+    new-instance v0, Llmf;
 
-    invoke-direct {v0, p1, p0}, Ldefpackage/lmf;-><init>(Ljava/io/InputStream;Lcom/google/android/libraries/camera/exif/ExifInterface;)V
+    invoke-direct {v0, p1, p0}, Llmf;-><init>(Ljava/io/InputStream;Lcom/google/android/libraries/camera/exif/ExifInterface;)V
 
     .line 716
-    .local v0, "lmfVar":Ldefpackage/lmf;
-    new-instance v1, Ldefpackage/lly;
+    .local v0, "lmfVar":Llmf;
+    new-instance v1, Llly;
 
-    iget-object v2, v0, Ldefpackage/lmf;->a:Ldefpackage/llx;
+    iget-object v2, v0, Llmf;->a:Lllx;
 
-    iget-object v2, v2, Ldefpackage/llx;->b:Ljava/nio/ByteBuffer;
+    iget-object v2, v2, Lllx;->b:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v2}, Ljava/nio/ByteBuffer;->order()Ljava/nio/ByteOrder;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Ldefpackage/lly;-><init>(Ljava/nio/ByteOrder;)V
+    invoke-direct {v1, v2}, Llly;-><init>(Ljava/nio/ByteOrder;)V
 
     .line 717
-    .local v1, "llyVar":Ldefpackage/lly;
-    invoke-virtual {v0}, Ldefpackage/lmf;->a()I
+    .local v1, "llyVar":Llly;
+    invoke-virtual {v0}, Llmf;->a()I
 
     move-result v2
     :try_end_0
@@ -4055,20 +4055,20 @@
 
     .line 774
     :try_start_1
-    iget-object v6, v0, Ldefpackage/lmf;->e:Ldefpackage/lmg;
+    iget-object v6, v0, Llmf;->e:Llmg;
 
     goto/16 :goto_1
 
     .line 761
     :pswitch_0
-    iget-object v6, v0, Ldefpackage/lmf;->f:Ldefpackage/lmg;
+    iget-object v6, v0, Llmf;->f:Llmg;
 
     .line 762
-    .local v6, "lmgVar3":Ldefpackage/lmg;
+    .local v6, "lmgVar3":Llmg;
     if-eqz v6, :cond_0
 
     .line 763
-    invoke-virtual {v6, v5}, Ldefpackage/lmg;->b(I)J
+    invoke-virtual {v6, v5}, Llmg;->b(I)J
 
     move-result-wide v7
 
@@ -4080,14 +4080,14 @@
 
     .line 766
     .local v5, "bArr":[B
-    invoke-virtual {v0, v5}, Ldefpackage/lmf;->b([B)I
+    invoke-virtual {v0, v5}, Llmf;->b([B)I
 
     move-result v7
 
     if-ne v3, v7, :cond_1
 
     .line 767
-    iput-object v5, v1, Ldefpackage/lly;->b:[B
+    iput-object v5, v1, Llly;->b:[B
 
     .line 768
     goto/16 :goto_3
@@ -4103,12 +4103,12 @@
 
     .line 745
     .end local v5    # "bArr":[B
-    .end local v6    # "lmgVar3":Ldefpackage/lmg;
+    .end local v6    # "lmgVar3":Llmg;
     :pswitch_1
-    iget-object v4, v0, Ldefpackage/lmf;->c:Ldefpackage/lmg;
+    iget-object v4, v0, Llmf;->c:Llmg;
 
     .line 746
-    .local v4, "lmgVar2":Ldefpackage/lmg;
+    .local v4, "lmgVar2":Llmg;
     if-nez v4, :cond_2
 
     .line 747
@@ -4116,41 +4116,41 @@
 
     .line 749
     :cond_2
-    iget-short v5, v4, Ldefpackage/lmg;->b:S
+    iget-short v5, v4, Llmg;->b:S
 
     const/4 v6, 0x7
 
     if-ne v5, v6, :cond_3
 
     .line 750
-    invoke-virtual {v0, v4}, Ldefpackage/lmf;->e(Ldefpackage/lmg;)V
+    invoke-virtual {v0, v4}, Llmf;->e(Llmg;)V
 
     .line 752
     :cond_3
-    iget v5, v4, Ldefpackage/lmg;->e:I
+    iget v5, v4, Llmg;->e:I
 
-    invoke-virtual {v1, v5}, Ldefpackage/lly;->b(I)Ldefpackage/lmj;
+    invoke-virtual {v1, v5}, Llly;->b(I)Llmj;
 
     move-result-object v5
 
     .line 753
-    .local v5, "b3":Ldefpackage/lmj;
+    .local v5, "b3":Llmj;
     if-eqz v5, :cond_a
 
     .line 754
-    invoke-virtual {v5, v4}, Ldefpackage/lmj;->e(Ldefpackage/lmg;)V
+    invoke-virtual {v5, v4}, Llmj;->e(Llmg;)V
 
     .line 755
     goto/16 :goto_3
 
     .line 724
-    .end local v4    # "lmgVar2":Ldefpackage/lmg;
-    .end local v5    # "b3":Ldefpackage/lmj;
+    .end local v4    # "lmgVar2":Llmg;
+    .end local v5    # "b3":Llmj;
     :pswitch_2
-    iget-object v4, v0, Ldefpackage/lmf;->c:Ldefpackage/lmg;
+    iget-object v4, v0, Llmf;->c:Llmg;
 
     .line 725
-    .local v4, "lmgVar":Ldefpackage/lmg;
+    .local v4, "lmgVar":Llmg;
     if-nez v4, :cond_4
 
     .line 726
@@ -4158,35 +4158,35 @@
 
     .line 727
     :cond_4
-    invoke-virtual {v4}, Ldefpackage/lmg;->e()Z
+    invoke-virtual {v4}, Llmg;->e()Z
 
     move-result v5
 
     if-nez v5, :cond_5
 
     .line 728
-    iget v5, v4, Ldefpackage/lmg;->g:I
+    iget v5, v4, Llmg;->g:I
 
     .line 729
     .local v5, "i3":I
-    iget-object v6, v0, Ldefpackage/lmf;->a:Ldefpackage/llx;
+    iget-object v6, v0, Llmf;->a:Lllx;
 
-    iget v6, v6, Ldefpackage/llx;->a:I
+    iget v6, v6, Lllx;->a:I
 
     if-lt v5, v6, :cond_a
 
     .line 730
-    iget-object v6, v0, Ldefpackage/lmf;->g:Ljava/util/TreeMap;
+    iget-object v6, v0, Llmf;->g:Ljava/util/TreeMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
 
-    new-instance v8, Ldefpackage/lmc;
+    new-instance v8, Llmc;
 
     const/4 v9, 0x1
 
-    invoke-direct {v8, v4, v9}, Ldefpackage/lmc;-><init>(Ldefpackage/lmg;Z)V
+    invoke-direct {v8, v4, v9}, Llmc;-><init>(Llmg;Z)V
 
     invoke-virtual {v6, v7, v8}, Ljava/util/TreeMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4196,44 +4196,44 @@
     .line 736
     .end local v5    # "i3":I
     :cond_5
-    iget v5, v4, Ldefpackage/lmg;->e:I
+    iget v5, v4, Llmg;->e:I
 
-    invoke-virtual {v1, v5}, Ldefpackage/lly;->b(I)Ldefpackage/lmj;
+    invoke-virtual {v1, v5}, Llly;->b(I)Llmj;
 
     move-result-object v5
 
     .line 737
-    .local v5, "b2":Ldefpackage/lmj;
+    .local v5, "b2":Llmj;
     if-eqz v5, :cond_a
 
     .line 738
-    invoke-virtual {v5, v4}, Ldefpackage/lmj;->e(Ldefpackage/lmg;)V
+    invoke-virtual {v5, v4}, Llmj;->e(Llmg;)V
 
     .line 739
     goto :goto_3
 
     .line 721
-    .end local v4    # "lmgVar":Ldefpackage/lmg;
-    .end local v5    # "b2":Ldefpackage/lmj;
+    .end local v4    # "lmgVar":Llmg;
+    .end local v5    # "b2":Llmj;
     :pswitch_3
-    new-instance v4, Ldefpackage/lmj;
+    new-instance v4, Llmj;
 
-    iget v5, v0, Ldefpackage/lmf;->b:I
+    iget v5, v0, Llmf;->b:I
 
-    invoke-direct {v4, v5}, Ldefpackage/lmj;-><init>(I)V
+    invoke-direct {v4, v5}, Llmj;-><init>(I)V
 
-    invoke-virtual {v1, v4}, Ldefpackage/lly;->d(Ldefpackage/lmj;)V
+    invoke-virtual {v1, v4}, Llly;->d(Llmj;)V
 
     .line 722
     goto :goto_3
 
     .line 775
-    .local v6, "lmgVar4":Ldefpackage/lmg;
+    .local v6, "lmgVar4":Llmg;
     :goto_1
     if-eqz v6, :cond_6
 
     .line 776
-    invoke-virtual {v6, v5}, Ldefpackage/lmg;->b(I)J
+    invoke-virtual {v6, v5}, Llmg;->b(I)J
 
     move-result-wide v7
 
@@ -4245,20 +4245,20 @@
 
     .line 779
     .local v5, "bArr2":[B
-    invoke-virtual {v0, v5}, Ldefpackage/lmf;->b([B)I
+    invoke-virtual {v0, v5}, Llmf;->b([B)I
 
     move-result v7
 
     if-ne v3, v7, :cond_9
 
     .line 780
-    iget-object v4, v0, Ldefpackage/lmf;->d:Ldefpackage/lme;
+    iget-object v4, v0, Llmf;->d:Llme;
 
-    iget v4, v4, Ldefpackage/lme;->a:I
+    iget v4, v4, Llme;->a:I
 
     .line 781
     .local v4, "i4":I
-    iget-object v7, v1, Ldefpackage/lly;->c:Ljava/util/ArrayList;
+    iget-object v7, v1, Llly;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
@@ -4267,7 +4267,7 @@
     if-ge v4, v7, :cond_7
 
     .line 782
-    iget-object v7, v1, Ldefpackage/lly;->c:Ljava/util/ArrayList;
+    iget-object v7, v1, Llly;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v4, v5}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -4276,7 +4276,7 @@
 
     .line 785
     :cond_7
-    iget-object v7, v1, Ldefpackage/lly;->c:Ljava/util/ArrayList;
+    iget-object v7, v1, Llly;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
@@ -4291,7 +4291,7 @@
 
     .line 787
     .local v8, "bArr3":[B
-    iget-object v9, v1, Ldefpackage/lly;->c:Ljava/util/ArrayList;
+    iget-object v9, v1, Llly;->c:Ljava/util/ArrayList;
 
     const/4 v10, 0x0
 
@@ -4308,7 +4308,7 @@
     .line 789
     .end local v7    # "size":I
     :cond_8
-    iget-object v7, v1, Ldefpackage/lly;->c:Ljava/util/ArrayList;
+    iget-object v7, v1, Llly;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4325,10 +4325,10 @@
     .line 717
     .end local v3    # "i2":I
     .end local v5    # "bArr2":[B
-    .end local v6    # "lmgVar4":Ldefpackage/lmg;
+    .end local v6    # "lmgVar4":Llmg;
     :cond_a
     :goto_3
-    invoke-virtual {v0}, Ldefpackage/lmf;->a()I
+    invoke-virtual {v0}, Llmf;->a()I
 
     move-result v3
 
@@ -4339,13 +4339,13 @@
     .line 798
     .end local v2    # "a2":I
     :cond_b
-    iput-object v1, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Ldefpackage/lly;
+    iput-object v1, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Llly;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     .line 801
-    .end local v0    # "lmfVar":Ldefpackage/lmf;
-    .end local v1    # "llyVar":Ldefpackage/lly;
+    .end local v0    # "lmfVar":Llmf;
+    .end local v1    # "llyVar":Llly;
     goto :goto_4
 
     .line 799
@@ -4433,7 +4433,7 @@
     throw v0
 .end method
 
-.method public final u(I)[Ldefpackage/lid;
+.method public final u(I)[Llid;
     .locals 1
     .param p1, "i2"    # I
 
@@ -4442,25 +4442,25 @@
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->v(II)[Ldefpackage/lid;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->v(II)[Llid;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final v(II)[Ldefpackage/lid;
+.method public final v(II)[Llid;
     .locals 4
     .param p1, "i2"    # I
     .param p2, "i3"    # I
 
     .line 823
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/libraries/camera/exif/ExifInterface;->l(II)Ldefpackage/lmg;
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/libraries/camera/exif/ExifInterface;->l(II)Llmg;
 
     move-result-object v0
 
     .line 824
-    .local v0, "l2":Ldefpackage/lmg;
+    .local v0, "l2":Llmg;
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
@@ -4470,11 +4470,11 @@
 
     .line 827
     :cond_0
-    iget-object v2, v0, Ldefpackage/lmg;->f:Ljava/lang/Object;
+    iget-object v2, v0, Llmg;->f:Ljava/lang/Object;
 
     .line 828
     .local v2, "obj":Ljava/lang/Object;
-    instance-of v3, v2, [Ldefpackage/lid;
+    instance-of v3, v2, [Llid;
 
     if-nez v3, :cond_1
 
@@ -4485,7 +4485,7 @@
     :cond_1
     move-object v1, v2
 
-    check-cast v1, [Ldefpackage/lid;
+    check-cast v1, [Llid;
 
     return-object v1
 .end method
@@ -4548,12 +4548,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v2, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->i(ILjava/lang/Object;)Ldefpackage/lmg;
+    invoke-virtual {v1, v2, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->i(ILjava/lang/Object;)Llmg;
 
     move-result-object v0
 
     .line 843
-    .local v0, "i3":Ldefpackage/lmg;
+    .local v0, "i3":Llmg;
     monitor-exit v5
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -4566,7 +4566,7 @@
 
     .line 847
     :cond_2
-    invoke-virtual {v1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->y(Ldefpackage/lmg;)V
+    invoke-virtual {v1, v0}, Lcom/google/android/libraries/camera/exif/ExifInterface;->y(Llmg;)V
 
     .line 848
     const/16 v5, 0x39
@@ -4679,16 +4679,16 @@
 
     move-result-object v14
 
-    invoke-virtual {v1, v6, v14}, Lcom/google/android/libraries/camera/exif/ExifInterface;->i(ILjava/lang/Object;)Ldefpackage/lmg;
+    invoke-virtual {v1, v6, v14}, Lcom/google/android/libraries/camera/exif/ExifInterface;->i(ILjava/lang/Object;)Llmg;
 
     move-result-object v14
 
     .line 869
-    .local v14, "i7":Ldefpackage/lmg;
+    .local v14, "i7":Llmg;
     if-eqz v14, :cond_6
 
     .line 870
-    invoke-virtual {v1, v14}, Lcom/google/android/libraries/camera/exif/ExifInterface;->y(Ldefpackage/lmg;)V
+    invoke-virtual {v1, v14}, Lcom/google/android/libraries/camera/exif/ExifInterface;->y(Llmg;)V
 
     .line 872
     :cond_6
@@ -4726,16 +4726,16 @@
     .line 884
     .restart local v5    # "i5":I
     :goto_3
-    invoke-static/range {p2 .. p3}, Ldefpackage/mip;->bl(J)Ljava/lang/String;
+    invoke-static/range {p2 .. p3}, Lmip;->bl(J)Ljava/lang/String;
 
     move-result-object v15
 
-    invoke-virtual {v1, v5, v15}, Lcom/google/android/libraries/camera/exif/ExifInterface;->i(ILjava/lang/Object;)Ldefpackage/lmg;
+    invoke-virtual {v1, v5, v15}, Lcom/google/android/libraries/camera/exif/ExifInterface;->i(ILjava/lang/Object;)Llmg;
 
     move-result-object v15
 
     .line 885
-    .local v15, "i8":Ldefpackage/lmg;
+    .local v15, "i8":Llmg;
     if-nez v15, :cond_9
 
     .line 886
@@ -4743,29 +4743,29 @@
 
     .line 888
     :cond_9
-    invoke-virtual {v1, v15}, Lcom/google/android/libraries/camera/exif/ExifInterface;->y(Ldefpackage/lmg;)V
+    invoke-virtual {v1, v15}, Lcom/google/android/libraries/camera/exif/ExifInterface;->y(Llmg;)V
 
     .line 890
-    .end local v0    # "i3":Ldefpackage/lmg;
+    .end local v0    # "i3":Llmg;
     .end local v5    # "i5":I
     .end local v6    # "i4":I
     .end local v9    # "offset":I
     .end local v10    # "abs":I
     .end local v11    # "sb2":Ljava/lang/StringBuilder;
     .end local v12    # "j3":J
-    .end local v14    # "i7":Ldefpackage/lmg;
-    .end local v15    # "i8":Ldefpackage/lmg;
+    .end local v14    # "i7":Llmg;
+    .end local v15    # "i8":Llmg;
     :goto_4
     return-void
 
     .line 877
-    .restart local v0    # "i3":Ldefpackage/lmg;
+    .restart local v0    # "i3":Llmg;
     .restart local v6    # "i4":I
     .restart local v9    # "offset":I
     .restart local v10    # "abs":I
     .restart local v11    # "sb2":Ljava/lang/StringBuilder;
     .restart local v12    # "j3":J
-    .restart local v14    # "i7":Ldefpackage/lmg;
+    .restart local v14    # "i7":Llmg;
     :cond_a
     new-instance v15, Ljava/lang/StringBuilder;
 
@@ -4787,8 +4787,8 @@
 
     move-object/from16 v16, v0
 
-    .end local v0    # "i3":Ldefpackage/lmg;
-    .local v16, "i3":Ldefpackage/lmg;
+    .end local v0    # "i3":Llmg;
+    .local v16, "i3":Llmg;
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -4804,14 +4804,14 @@
     .end local v10    # "abs":I
     .end local v11    # "sb2":Ljava/lang/StringBuilder;
     .end local v12    # "j3":J
-    .end local v14    # "i7":Ldefpackage/lmg;
-    .end local v16    # "i3":Ldefpackage/lmg;
-    .restart local v0    # "i3":Ldefpackage/lmg;
+    .end local v14    # "i7":Llmg;
+    .end local v16    # "i3":Llmg;
+    .restart local v0    # "i3":Llmg;
     :cond_b
     move-object/from16 v16, v0
 
-    .end local v0    # "i3":Ldefpackage/lmg;
-    .restart local v16    # "i3":Ldefpackage/lmg;
+    .end local v0    # "i3":Llmg;
+    .restart local v16    # "i3":Llmg;
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, v5}, Ljava/lang/StringBuilder;-><init>(I)V
@@ -4838,7 +4838,7 @@
 
     .line 843
     .end local v0    # "sb":Ljava/lang/StringBuilder;
-    .end local v16    # "i3":Ldefpackage/lmg;
+    .end local v16    # "i3":Llmg;
     :catchall_0
     move-exception v0
 
@@ -4858,14 +4858,14 @@
     goto :goto_5
 .end method
 
-.method public final y(Ldefpackage/lmg;)V
+.method public final y(Llmg;)V
     .locals 1
-    .param p1, "lmgVar"    # Ldefpackage/lmg;
+    .param p1, "lmgVar"    # Llmg;
 
     .line 893
-    iget-object v0, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Ldefpackage/lly;
+    iget-object v0, p0, Lcom/google/android/libraries/camera/exif/ExifInterface;->bB:Llly;
 
-    invoke-virtual {v0, p1}, Ldefpackage/lly;->j(Ldefpackage/lmg;)V
+    invoke-virtual {v0, p1}, Llly;->j(Llmg;)V
 
     .line 894
     return-void

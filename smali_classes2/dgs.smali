@@ -3,4 +3,4 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/ojz;
+.implements Lojz;

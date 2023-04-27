@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lfik;
-.implements Ldefpackage/fie;
+.implements Lfie;
 
 
 # instance fields
@@ -24,7 +24,7 @@
 
 .field private H:Z
 
-.field private I:Ldefpackage/jrz;
+.field private I:Ljrz;
 
 .field private J:Landroid/view/View;
 
@@ -36,37 +36,37 @@
 
 .field public h:Lcom/google/android/apps/camera/evcomp/EvCompView;
 
-.field public i:Ldefpackage/ojc;
+.field public i:Lojc;
 
-.field public j:Ldefpackage/ojc;
+.field public j:Lojc;
 
-.field public k:Ldefpackage/ojc;
+.field public k:Lojc;
 
-.field public l:Ldefpackage/ojc;
+.field public l:Lojc;
 
-.field public m:Ldefpackage/ojc;
+.field public m:Lojc;
 
-.field public n:Ldefpackage/ojc;
+.field public n:Lojc;
 
-.field public o:Ldefpackage/ojc;
+.field public o:Lojc;
 
-.field public p:Ldefpackage/ojc;
+.field public p:Lojc;
 
-.field public q:Ldefpackage/ojc;
+.field public q:Lojc;
 
 .field public r:Ljava/util/concurrent/atomic/AtomicReference;
 
 .field public s:Llda;
 
-.field public t:Ldefpackage/img;
+.field public t:Limg;
 
-.field public u:Ldefpackage/ddf;
+.field public u:Lddf;
 
-.field public v:Ldefpackage/pyn;
+.field public v:Lpyn;
 
-.field public w:Ldefpackage/lzi;
+.field public w:Llzi;
 
-.field public x:Ldefpackage/fhv;
+.field public x:Lfhv;
 
 .field private final y:Ljava/util/Set;
 
@@ -97,33 +97,33 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->y:Ljava/util/Set;
 
     .line 113
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->i:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->i:Lojc;
 
     .line 114
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->j:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->j:Lojc;
 
     .line 115
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->k:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->k:Lojc;
 
     .line 116
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->l:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->l:Lojc;
 
     .line 117
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->m:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->m:Lojc;
 
     .line 118
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->n:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->n:Lojc;
 
     .line 119
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->o:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->o:Lojc;
 
     .line 120
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->p:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->p:Lojc;
 
     .line 121
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->q:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->q:Lojc;
 
     .line 122
     const/4 v0, 0x0
@@ -133,36 +133,36 @@
     .line 123
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/end;
+    check-cast v0, Lend;
 
-    const-class v1, Ldefpackage/jot;
+    const-class v1, Ljot;
 
-    invoke-interface {v0, v1}, Ldefpackage/end;->b(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lend;->b(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jot;
+    check-cast v0, Ljot;
 
-    invoke-interface {v0, p0}, Ldefpackage/jot;->b(Lcom/google/android/apps/camera/ui/views/MainActivityLayout;)V
+    invoke-interface {v0, p0}, Ljot;->b(Lcom/google/android/apps/camera/ui/views/MainActivityLayout;)V
 
     .line 124
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->x:Ldefpackage/fhv;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->x:Lfhv;
 
-    invoke-virtual {v0, p0}, Ldefpackage/fhv;->e(Lfik;)V
+    invoke-virtual {v0, p0}, Lfhv;->e(Lfik;)V
 
     .line 125
     return-void
 .end method
 
-.method private final v(Landroid/content/Context;Ldefpackage/jce;II)Ldefpackage/jrz;
+.method private final v(Landroid/content/Context;Ljce;II)Ljrz;
     .locals 3
     .param p1, "context"    # Landroid/content/Context;
-    .param p2, "jceVar"    # Ldefpackage/jce;
+    .param p2, "jceVar"    # Ljce;
     .param p3, "i"    # I
     .param p4, "i2"    # I
 
     .line 128
-    sget-object v0, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v0, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {p2, v0}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -171,7 +171,7 @@
     if-eqz v0, :cond_0
 
     .line 129
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
     return-object v0
 
@@ -240,31 +240,31 @@
 
     move-result-object v1
 
-    invoke-static {v1, p1}, Ldefpackage/jrz;->a(Landroid/view/Display;Landroid/content/Context;)Ldefpackage/jrz;
+    invoke-static {v1, p1}, Ljrz;->a(Landroid/view/Display;Landroid/content/Context;)Ljrz;
 
     move-result-object v1
 
     .line 136
-    .local v1, "a":Ldefpackage/jrz;
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->I:Ldefpackage/jrz;
+    .local v1, "a":Ljrz;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->I:Ljrz;
 
     if-nez v2, :cond_4
 
     .line 137
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->I:Ldefpackage/jrz;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->I:Ljrz;
 
     .line 139
     :cond_4
     if-nez v0, :cond_5
 
     .line 140
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->I:Ldefpackage/jrz;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->I:Ljrz;
 
     return-object v2
 
     .line 142
     :cond_5
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->I:Ldefpackage/jrz;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->I:Ljrz;
 
     .line 143
     return-object v1
@@ -275,13 +275,13 @@
     .param p1, "size"    # Landroid/util/Size;
 
     .line 147
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v0
 
     .line 148
-    .local v0, "d":Ldefpackage/jbv;
-    iget-object v1, v0, Ldefpackage/jbv;->b:Landroid/util/Size;
+    .local v0, "d":Ljbv;
+    iget-object v1, v0, Ljbv;->b:Landroid/util/Size;
 
     .line 149
     .local v1, "size2":Landroid/util/Size;
@@ -291,7 +291,7 @@
 
     move-result-object v2
 
-    iget-object v3, v0, Ldefpackage/jbv;->j:Ldefpackage/jce;
+    iget-object v3, v0, Ljbv;->j:Ljce;
 
     invoke-virtual {v1}, Landroid/util/Size;->getWidth()I
 
@@ -301,55 +301,55 @@
 
     move-result v5
 
-    invoke-direct {p0, v2, v3, v4, v5}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->v(Landroid/content/Context;Ldefpackage/jce;II)Ldefpackage/jrz;
+    invoke-direct {p0, v2, v3, v4, v5}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->v(Landroid/content/Context;Ljce;II)Ljrz;
 
     move-result-object v2
 
     goto :goto_0
 
     :cond_0
-    iget-object v2, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v2, v0, Ljbv;->h:Ljrz;
 
     .line 150
-    .local v2, "v":Ldefpackage/jrz;
+    .local v2, "v":Ljrz;
     :goto_0
-    invoke-virtual {v0}, Ldefpackage/jbv;->b()Ldefpackage/jbu;
+    invoke-virtual {v0}, Ljbv;->b()Ljbu;
 
     move-result-object v3
 
     .line 151
-    .local v3, "b":Ldefpackage/jbu;
-    invoke-virtual {v3, v2}, Ldefpackage/jbu;->f(Ldefpackage/jrz;)V
+    .local v3, "b":Ljbu;
+    invoke-virtual {v3, v2}, Ljbu;->f(Ljrz;)V
 
     .line 152
-    iput-object p1, v3, Ldefpackage/jbu;->b:Landroid/util/Size;
+    iput-object p1, v3, Ljbu;->b:Landroid/util/Size;
 
     .line 153
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v4
 
-    iget-object v4, v4, Ldefpackage/jbv;->j:Ldefpackage/jce;
+    iget-object v4, v4, Ljbv;->j:Ljce;
 
     .line 154
-    .local v4, "jceVar":Ldefpackage/jce;
+    .local v4, "jceVar":Ljce;
     const/4 v5, 0x0
 
     .line 155
     .local v5, "i":I
-    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->v:Ldefpackage/pyn;
+    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->v:Lpyn;
 
-    invoke-interface {v6}, Ldefpackage/pyn;->get()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ldefpackage/cwj;
-
-    invoke-interface {v6}, Ldefpackage/cwj;->d()Ldefpackage/lwd;
+    invoke-interface {v6}, Lpyn;->get()Ljava/lang/Object;
 
     move-result-object v6
 
-    sget-object v7, Ldefpackage/lwd;->BACK:Ldefpackage/lwd;
+    check-cast v6, Lcwj;
+
+    invoke-interface {v6}, Lcwj;->d()Llwd;
+
+    move-result-object v6
+
+    sget-object v7, Llwd;->BACK:Llwd;
 
     invoke-virtual {v6, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -364,13 +364,13 @@
 
     .line 157
     :cond_1
-    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->w:Ldefpackage/lzi;
+    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->w:Llzi;
 
-    iget-boolean v6, v6, Ldefpackage/lzi;->l:Z
+    iget-boolean v6, v6, Llzi;->l:Z
 
     if-eqz v6, :cond_2
 
-    sget-object v6, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v6, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v4, v6}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -390,7 +390,7 @@
 
     if-eqz v6, :cond_2
 
-    sget-object v6, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v6, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v4, v6}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -409,17 +409,17 @@
 
     move-result-object v6
 
-    iput-object v6, v3, Ldefpackage/jbu;->c:Ljava/lang/Integer;
+    iput-object v6, v3, Ljbu;->c:Ljava/lang/Integer;
 
     .line 161
-    invoke-virtual {v3}, Ldefpackage/jbu;->d()V
+    invoke-virtual {v3}, Ljbu;->d()V
 
     .line 162
-    invoke-virtual {v3}, Ldefpackage/jbu;->a()Ldefpackage/jbv;
+    invoke-virtual {v3}, Ljbu;->a()Ljbv;
 
     move-result-object v6
 
-    invoke-direct {p0, v6}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->y(Ldefpackage/jbv;)Z
+    invoke-direct {p0, v6}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->y(Ljbv;)Z
 
     move-result v6
 
@@ -433,26 +433,26 @@
 
     .line 166
     :cond_4
-    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->j:Ldefpackage/ojc;
+    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->j:Lojc;
 
-    invoke-virtual {v6}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v6}, Lojc;->g()Z
 
     move-result v6
 
     if-eqz v6, :cond_6
 
     .line 167
-    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->j:Ldefpackage/ojc;
+    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->j:Lojc;
 
-    invoke-virtual {v6}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v6}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v6
 
-    check-cast v6, Ldefpackage/eua;
+    check-cast v6, Leua;
 
-    iget-object v6, v6, Ldefpackage/eua;->a:Ldefpackage/eur;
+    iget-object v6, v6, Leua;->a:Leur;
 
-    iget-object v6, v6, Ldefpackage/eur;->P:Lcom/google/android/apps/camera/ui/views/ViewfinderCover;
+    iget-object v6, v6, Leur;->P:Lcom/google/android/apps/camera/ui/views/ViewfinderCover;
 
     .line 168
     .local v6, "viewfinderCover":Lcom/google/android/apps/camera/ui/views/ViewfinderCover;
@@ -497,9 +497,9 @@
     return-void
 .end method
 
-.method private final y(Ldefpackage/jbv;)Z
+.method private final y(Ljbv;)Z
     .locals 11
-    .param p1, "jbvVar"    # Ldefpackage/jbv;
+    .param p1, "jbvVar"    # Ljbv;
 
     .line 189
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->r:Ljava/util/concurrent/atomic/AtomicReference;
@@ -518,11 +518,11 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jbw;
+    check-cast v0, Ljbw;
 
-    iget-object v0, v0, Ldefpackage/jbw;->a:Ldefpackage/jbv;
+    iget-object v0, v0, Ljbw;->a:Ljbv;
 
-    invoke-virtual {v0, p1}, Ldefpackage/jbv;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ljbv;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -547,8 +547,8 @@
     const/4 v0, 0x0
 
     .line 192
-    .local v0, "jcdVar":Ldefpackage/jcd;
-    invoke-virtual {p1}, Ldefpackage/jbv;->a()Z
+    .local v0, "jcdVar":Ljcd;
+    invoke-virtual {p1}, Ljbv;->a()Z
 
     move-result v2
 
@@ -563,7 +563,7 @@
 
     if-nez v3, :cond_2
 
-    sget-object v3, Ldefpackage/jbt;->a:Ldefpackage/jbt;
+    sget-object v3, Ljbt;->a:Ljbt;
 
     goto :goto_1
 
@@ -574,14 +574,14 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/jbw;
+    check-cast v3, Ljbw;
 
-    iget-object v3, v3, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v3, v3, Ljbw;->b:Ljbt;
 
     :goto_1
     const/4 v4, 0x0
 
-    invoke-static {p1, v3, v4}, Ldefpackage/jbw;->a(Ldefpackage/jbv;Ldefpackage/jbt;Ldefpackage/jcd;)Ldefpackage/jbw;
+    invoke-static {p1, v3, v4}, Ljbw;->a(Ljbv;Ljbt;Ljcd;)Ljbw;
 
     move-result-object v3
 
@@ -600,26 +600,26 @@
     invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 198
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->u:Ldefpackage/ddf;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->u:Lddf;
 
-    sget-object v2, Ldefpackage/dcu;->J:Ldefpackage/ddg;
+    sget-object v2, Ldcu;->J:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
     .line 199
     .local v1, "k":Z
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->u:Ldefpackage/ddf;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->u:Lddf;
 
-    sget-object v3, Ldefpackage/ddv;->e:Ldefpackage/ddg;
+    sget-object v3, Lddv;->e:Lddg;
 
-    invoke-interface {v2, v3}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v2, v3}, Lddf;->k(Lddg;)Z
 
     .line 200
-    iget-object v2, p1, Ldefpackage/jbv;->j:Ldefpackage/jce;
+    iget-object v2, p1, Ljbv;->j:Ljce;
 
-    sget-object v9, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v9, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v2, v9}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -629,7 +629,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->t:Ldefpackage/img;
+    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->t:Limg;
 
     new-instance v7, Lcom/google/android/apps/camera/ui/views/MainActivityLayout$2;
 
@@ -639,13 +639,13 @@
 
     move v8, v1
 
-    invoke-static/range {v3 .. v8}, Ldefpackage/jbr;->c(Ldefpackage/jbv;ZLandroid/content/Context;Ldefpackage/img;Ldefpackage/ojz;Z)Ldefpackage/jbt;
+    invoke-static/range {v3 .. v8}, Ljbr;->c(Ljbv;ZLandroid/content/Context;Limg;Lojz;Z)Ljbt;
 
     move-result-object v2
 
     .line 206
-    .local v2, "c":Ldefpackage/jbt;
-    iget-boolean v3, v2, Ldefpackage/jbt;->o:Z
+    .local v2, "c":Ljbt;
+    iget-boolean v3, v2, Ljbt;->o:Z
 
     if-eqz v3, :cond_4
 
@@ -659,7 +659,7 @@
     if-eqz v3, :cond_6
 
     .line 210
-    iget-object v3, p1, Ldefpackage/jbv;->j:Ldefpackage/jce;
+    iget-object v3, p1, Ljbv;->j:Ljce;
 
     invoke-virtual {v3, v9}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -669,13 +669,13 @@
 
     new-instance v3, Landroid/util/Size;
 
-    iget-object v4, v2, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v4, v2, Ljbt;->e:Landroid/graphics/Rect;
 
     invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
 
     move-result v4
 
-    iget-object v5, v2, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v5, v2, Ljbt;->e:Landroid/graphics/Rect;
 
     invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
 
@@ -698,13 +698,13 @@
     :cond_5
     new-instance v3, Landroid/util/Size;
 
-    iget-object v4, v2, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v4, v2, Ljbt;->e:Landroid/graphics/Rect;
 
     invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
 
     move-result v4
 
-    iget-object v5, v2, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v5, v2, Ljbt;->e:Landroid/graphics/Rect;
 
     invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
 
@@ -718,31 +718,31 @@
 
     new-instance v5, Landroid/graphics/Rect;
 
-    iget-object v6, v2, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v6, v2, Ljbt;->e:Landroid/graphics/Rect;
 
     iget v7, v6, Landroid/graphics/Rect;->left:I
 
     iget v6, v6, Landroid/graphics/Rect;->top:I
 
-    iget-object v8, v2, Ldefpackage/jbt;->b:Landroid/util/Size;
+    iget-object v8, v2, Ljbt;->b:Landroid/util/Size;
 
     invoke-virtual {v8}, Landroid/util/Size;->getWidth()I
 
     move-result v8
 
-    iget-object v9, v2, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v9, v2, Ljbt;->e:Landroid/graphics/Rect;
 
     iget v9, v9, Landroid/graphics/Rect;->right:I
 
     sub-int/2addr v8, v9
 
-    iget-object v9, v2, Ldefpackage/jbt;->b:Landroid/util/Size;
+    iget-object v9, v2, Ljbt;->b:Landroid/util/Size;
 
     invoke-virtual {v9}, Landroid/util/Size;->getHeight()I
 
     move-result v9
 
-    iget-object v10, v2, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v10, v2, Ljbt;->e:Landroid/graphics/Rect;
 
     iget v10, v10, Landroid/graphics/Rect;->bottom:I
 
@@ -753,7 +753,7 @@
     const/16 v6, 0x33
 
     :goto_2
-    invoke-static {v3, v4, v5, v6}, Ldefpackage/jcd;->a(Landroid/util/Size;Landroid/graphics/Rect;Landroid/graphics/Rect;I)Ldefpackage/jcd;
+    invoke-static {v3, v4, v5, v6}, Ljcd;->a(Landroid/util/Size;Landroid/graphics/Rect;Landroid/graphics/Rect;I)Ljcd;
 
     move-result-object v3
 
@@ -775,11 +775,11 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/jbw;
+    check-cast v3, Ljbw;
 
-    iget-object v3, v3, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v3, v3, Ljbw;->b:Ljbt;
 
-    invoke-virtual {v2, v3}, Ldefpackage/jbt;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ljbt;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -792,9 +792,9 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/jbw;
+    check-cast v3, Ljbw;
 
-    iget-object v2, v3, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v2, v3, Ljbw;->b:Ljbt;
 
     .line 215
     :cond_7
@@ -812,9 +812,9 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/jbw;
+    check-cast v3, Ljbw;
 
-    iget-object v3, v3, Ldefpackage/jbw;->c:Ldefpackage/jcd;
+    iget-object v3, v3, Ljbw;->c:Ljcd;
 
     invoke-static {v0, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -829,15 +829,15 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/jbw;
+    check-cast v3, Ljbw;
 
-    iget-object v0, v3, Ldefpackage/jbw;->c:Ldefpackage/jcd;
+    iget-object v0, v3, Ljbw;->c:Ljcd;
 
     .line 218
     :cond_8
     iget-object v3, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->r:Ljava/util/concurrent/atomic/AtomicReference;
 
-    invoke-static {p1, v2, v0}, Ldefpackage/jbw;->a(Ldefpackage/jbv;Ldefpackage/jbt;Ldefpackage/jcd;)Ldefpackage/jbw;
+    invoke-static {p1, v2, v0}, Ljbw;->a(Ljbv;Ljbt;Ljcd;)Ljbw;
 
     move-result-object v4
 
@@ -854,7 +854,7 @@
 
 
 # virtual methods
-.method public final d()Ldefpackage/jbv;
+.method public final d()Ljbv;
     .locals 1
 
     .line 226
@@ -866,7 +866,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Ldefpackage/jbv;->a:Ldefpackage/jbv;
+    sget-object v0, Ljbv;->a:Ljbv;
 
     goto :goto_0
 
@@ -877,9 +877,9 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jbw;
+    check-cast v0, Ljbw;
 
-    iget-object v0, v0, Ldefpackage/jbw;->a:Ldefpackage/jbv;
+    iget-object v0, v0, Ljbw;->a:Ljbv;
 
     :goto_0
     return-object v0
@@ -932,13 +932,13 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/nle;->h(Landroid/content/Context;)V
+    invoke-static {v0}, Lnle;->h(Landroid/content/Context;)V
 
     .line 243
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 244
-    invoke-static {}, Ldefpackage/nle;->i()V
+    invoke-static {}, Lnle;->i()V
 
     .line 245
     invoke-static {}, Landroid/os/Trace;->endSection()V
@@ -947,9 +947,9 @@
     return-void
 .end method
 
-.method public final e(Ldefpackage/jrt;)V
+.method public final e(Ljrt;)V
     .locals 1
-    .param p1, "jrtVar"    # Ldefpackage/jrt;
+    .param p1, "jrtVar"    # Ljrt;
 
     .line 249
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->y:Ljava/util/Set;
@@ -1020,19 +1020,19 @@
     .line 270
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->r:Ljava/util/concurrent/atomic/AtomicReference;
 
-    sget-object v1, Ldefpackage/jbv;->a:Ldefpackage/jbv;
+    sget-object v1, Ljbv;->a:Ljbv;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jbw;
+    check-cast v2, Ljbw;
 
-    iget-object v2, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v2, v2, Ljbw;->b:Ljbt;
 
     const/4 v3, 0x0
 
-    invoke-static {v1, v2, v3}, Ldefpackage/jbw;->a(Ldefpackage/jbv;Ldefpackage/jbt;Ldefpackage/jcd;)Ldefpackage/jbw;
+    invoke-static {v1, v2, v3}, Ljbw;->a(Ljbv;Ljbt;Ljcd;)Ljbw;
 
     move-result-object v1
 
@@ -1069,11 +1069,11 @@
     .locals 5
 
     .line 281
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v0
 
-    iget-object v0, v0, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v0, v0, Ljbv;->b:Landroid/util/Size;
 
     .line 282
     .local v0, "size":Landroid/util/Size;
@@ -1127,21 +1127,21 @@
     .locals 3
 
     .line 290
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v0
 
     .line 291
-    .local v0, "d":Ldefpackage/jbv;
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->l:Ldefpackage/ojc;
+    .local v0, "d":Ljbv;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->l:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    iget-object v1, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v1, v0, Ljbv;->h:Ljrz;
 
     if-nez v1, :cond_0
 
@@ -1149,17 +1149,17 @@
 
     .line 294
     :cond_0
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->l:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->l:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/bys;
+    check-cast v1, Lbys;
 
-    iget-object v2, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v2, v0, Ljbv;->h:Ljrz;
 
-    invoke-interface {v1, v2}, Ldefpackage/bys;->i(Ldefpackage/jrz;)V
+    invoke-interface {v1, v2}, Lbys;->i(Ljrz;)V
 
     .line 295
     return-void
@@ -1170,9 +1170,9 @@
     return-void
 .end method
 
-.method public final k(Ldefpackage/jrz;)V
+.method public final k(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 298
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->h:Lcom/google/android/apps/camera/evcomp/EvCompView;
@@ -1187,10 +1187,10 @@
 
     .line 302
     :cond_0
-    iput-object p1, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ldefpackage/jrz;
+    iput-object p1, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ljrz;
 
     .line 303
-    invoke-virtual {v0, p1}, Lcom/google/android/apps/camera/evcomp/EvCompView;->f(Ldefpackage/jrz;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/apps/camera/evcomp/EvCompView;->f(Ljrz;)V
 
     .line 304
     return-void
@@ -1205,21 +1205,21 @@
     .locals 3
 
     .line 307
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v0
 
     .line 308
-    .local v0, "d":Ldefpackage/jbv;
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->m:Ldefpackage/ojc;
+    .local v0, "d":Ljbv;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->m:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    iget-object v1, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v1, v0, Ljbv;->h:Ljrz;
 
     if-nez v1, :cond_0
 
@@ -1227,19 +1227,19 @@
 
     .line 311
     :cond_0
-    iget-object v1, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v1, v0, Ljbv;->h:Ljrz;
 
     .line 312
-    .local v1, "jrzVar":Ldefpackage/jrz;
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->m:Ldefpackage/ojc;
+    .local v1, "jrzVar":Ljrz;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->m:Lojc;
 
-    invoke-virtual {v2}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v2}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jbq;
+    check-cast v2, Ljbq;
 
-    iget-object v2, v2, Ldefpackage/jbq;->b:Lcom/google/android/apps/camera/ui/views/ToggleUi;
+    iget-object v2, v2, Ljbq;->b:Lcom/google/android/apps/camera/ui/views/ToggleUi;
 
     .line 313
     .local v2, "toggleUi":Lcom/google/android/apps/camera/ui/views/ToggleUi;
@@ -1250,27 +1250,27 @@
 
     .line 316
     :cond_1
-    invoke-virtual {v2, v1}, Lcom/google/android/apps/camera/ui/views/ToggleUi;->a(Ldefpackage/jrz;)V
+    invoke-virtual {v2, v1}, Lcom/google/android/apps/camera/ui/views/ToggleUi;->a(Ljrz;)V
 
     .line 317
     return-void
 
     .line 309
-    .end local v1    # "jrzVar":Ldefpackage/jrz;
+    .end local v1    # "jrzVar":Ljrz;
     .end local v2    # "toggleUi":Lcom/google/android/apps/camera/ui/views/ToggleUi;
     :cond_2
     :goto_0
     return-void
 .end method
 
-.method public final m(Ldefpackage/jrz;)V
+.method public final m(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 320
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->p:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->p:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
@@ -1282,15 +1282,15 @@
 
     .line 323
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->p:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->p:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jzr;
+    check-cast v0, Ljzr;
 
-    invoke-interface {v0, p1}, Ldefpackage/jzr;->g(Ldefpackage/jrz;)V
+    invoke-interface {v0, p1}, Ljzr;->g(Ljrz;)V
 
     .line 324
     return-void
@@ -1301,9 +1301,9 @@
     return-void
 .end method
 
-.method public final n(Ldefpackage/jrz;)V
+.method public final n(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 327
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->g:Lcom/google/android/apps/camera/ui/mars/MarsSwitch;
@@ -1318,7 +1318,7 @@
 
     .line 331
     :cond_0
-    invoke-virtual {v0, p1}, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->a(Ldefpackage/jrz;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->a(Ljrz;)V
 
     .line 332
     return-void
@@ -1329,14 +1329,14 @@
     return-void
 .end method
 
-.method public final o(Ldefpackage/jrz;)V
+.method public final o(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 335
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->n:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->n:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
@@ -1348,15 +1348,15 @@
 
     .line 338
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->n:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->n:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/ctm;
+    check-cast v0, Lctm;
 
-    invoke-interface {v0, p1}, Ldefpackage/ctm;->g(Ldefpackage/jrz;)V
+    invoke-interface {v0, p1}, Lctm;->g(Ljrz;)V
 
     .line 339
     return-void
@@ -1495,25 +1495,25 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/mip;
+    check-cast v2, Lmip;
 
     .line 359
-    .local v2, "mipVar":Ldefpackage/mip;
-    invoke-virtual {v2, p1}, Ldefpackage/mip;->gj(Landroid/view/MotionEvent;)Z
+    .local v2, "mipVar":Lmip;
+    invoke-virtual {v2, p1}, Lmip;->gj(Landroid/view/MotionEvent;)Z
 
     move-result v5
 
     if-eqz v5, :cond_3
 
-    new-instance v5, Ldefpackage/jtw;
+    new-instance v5, Ljtw;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getRootView()Landroid/view/View;
 
     move-result-object v6
 
-    invoke-direct {v5, p1, v6}, Ldefpackage/jtw;-><init>(Landroid/view/MotionEvent;Landroid/view/View;)V
+    invoke-direct {v5, p1, v6}, Ljtw;-><init>(Landroid/view/MotionEvent;Landroid/view/View;)V
 
-    invoke-virtual {v2, v5}, Ldefpackage/mip;->p(Ldefpackage/jtw;)Z
+    invoke-virtual {v2, v5}, Lmip;->p(Ljtw;)Z
 
     move-result v5
 
@@ -1555,11 +1555,11 @@
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/jbw;
+    check-cast v7, Ljbw;
 
-    iget-object v7, v7, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v7, v7, Ljbw;->b:Ljbt;
 
-    iget-object v7, v7, Ldefpackage/jbt;->i:Landroid/graphics/Rect;
+    iget-object v7, v7, Ljbt;->i:Landroid/graphics/Rect;
 
     .line 366
     .local v7, "rect":Landroid/graphics/Rect;
@@ -1616,7 +1616,7 @@
     or-int/2addr v0, v3
 
     .line 370
-    .end local v2    # "mipVar":Ldefpackage/mip;
+    .end local v2    # "mipVar":Lmip;
     .end local v5    # "x":F
     .end local v6    # "y":F
     .end local v7    # "z":Z
@@ -1652,7 +1652,7 @@
     invoke-super/range {p0 .. p5}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->onLayout(ZIIII)V
 
     .line 378
-    invoke-static {}, Ldefpackage/nle;->i()V
+    invoke-static {}, Lnle;->i()V
 
     .line 379
     return-void
@@ -1684,7 +1684,7 @@
 
     .line 388
     .local v2, "context":Landroid/content/Context;
-    invoke-static {v2}, Ldefpackage/nle;->h(Landroid/content/Context;)V
+    invoke-static {v2}, Lnle;->h(Landroid/content/Context;)V
 
     .line 389
     new-instance v3, Landroid/util/Size;
@@ -1709,12 +1709,12 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Ldefpackage/mip;->eC(Landroid/content/Context;Landroid/view/Display;)Ldefpackage/jce;
+    invoke-static {v4, v5}, Lmip;->eC(Landroid/content/Context;Landroid/view/Display;)Ljce;
 
     move-result-object v4
 
     .line 391
-    .local v4, "eC":Ldefpackage/jce;
+    .local v4, "eC":Ljce;
     invoke-virtual {v3}, Landroid/util/Size;->getWidth()I
 
     move-result v5
@@ -1723,60 +1723,60 @@
 
     move-result v6
 
-    invoke-direct {v0, v2, v4, v5, v6}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->v(Landroid/content/Context;Ldefpackage/jce;II)Ldefpackage/jrz;
+    invoke-direct {v0, v2, v4, v5, v6}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->v(Landroid/content/Context;Ljce;II)Ljrz;
 
     move-result-object v5
 
     .line 392
-    .local v5, "v":Ldefpackage/jrz;
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    .local v5, "v":Ljrz;
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v6
 
     .line 393
-    .local v6, "d":Ldefpackage/jbv;
-    iget-object v7, v6, Ldefpackage/jbv;->c:Landroid/util/Size;
+    .local v6, "d":Ljbv;
+    iget-object v7, v6, Ljbv;->c:Landroid/util/Size;
 
     .line 394
     .local v7, "size2":Landroid/util/Size;
-    iget-object v8, v6, Ldefpackage/jbv;->e:Ljava/lang/Integer;
+    iget-object v8, v6, Ljbv;->e:Ljava/lang/Integer;
 
     .line 395
     .local v8, "num":Ljava/lang/Integer;
-    invoke-virtual {v6}, Ldefpackage/jbv;->b()Ldefpackage/jbu;
+    invoke-virtual {v6}, Ljbv;->b()Ljbu;
 
     move-result-object v9
 
     .line 396
-    .local v9, "b":Ldefpackage/jbu;
-    invoke-virtual {v9, v5}, Ldefpackage/jbu;->f(Ldefpackage/jrz;)V
+    .local v9, "b":Ljbu;
+    invoke-virtual {v9, v5}, Ljbu;->f(Ljrz;)V
 
     .line 397
-    iput-object v3, v9, Ldefpackage/jbu;->a:Landroid/util/Size;
+    iput-object v3, v9, Ljbu;->a:Landroid/util/Size;
 
     .line 398
     iget-object v10, v0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->s:Llda;
 
-    invoke-interface {v10}, Ldefpackage/lco;->fA()Ljava/lang/Object;
+    invoke-interface {v10}, Llco;->fA()Ljava/lang/Object;
 
     move-result-object v10
 
-    check-cast v10, Ldefpackage/jrl;
+    check-cast v10, Ljrl;
 
-    invoke-virtual {v9, v10}, Ldefpackage/jbu;->e(Ldefpackage/jrl;)V
+    invoke-virtual {v9, v10}, Ljbu;->e(Ljrl;)V
 
     .line 399
     const/4 v10, 0x0
 
     .line 400
     .local v10, "z":Z
-    iget-object v11, v0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->w:Ldefpackage/lzi;
+    iget-object v11, v0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->w:Llzi;
 
-    iget-boolean v11, v11, Ldefpackage/lzi;->c:Z
+    iget-boolean v11, v11, Llzi;->c:Z
 
     if-nez v11, :cond_0
 
-    invoke-static/range {p0 .. p0}, Ldefpackage/jsa;->d(Landroid/view/View;)Z
+    invoke-static/range {p0 .. p0}, Ljsa;->d(Landroid/view/View;)Z
 
     move-result v11
 
@@ -1787,7 +1787,7 @@
 
     .line 403
     :cond_0
-    invoke-virtual {v9, v10}, Ldefpackage/jbu;->c(Z)V
+    invoke-virtual {v9, v10}, Ljbu;->c(Z)V
 
     .line 404
     if-eqz v7, :cond_1
@@ -1797,10 +1797,10 @@
 
     .line 407
     :cond_1
-    iput-object v3, v9, Ldefpackage/jbu;->b:Landroid/util/Size;
+    iput-object v3, v9, Ljbu;->b:Landroid/util/Size;
 
     .line 408
-    invoke-virtual {v9, v4}, Ldefpackage/jbu;->b(Ldefpackage/jce;)V
+    invoke-virtual {v9, v4}, Ljbu;->b(Ljce;)V
 
     .line 409
     if-eqz v8, :cond_2
@@ -1819,23 +1819,23 @@
 
     move-result-object v11
 
-    iput-object v11, v9, Ldefpackage/jbu;->c:Ljava/lang/Integer;
+    iput-object v11, v9, Ljbu;->c:Ljava/lang/Integer;
 
     .line 410
-    invoke-virtual {v9}, Ldefpackage/jbu;->a()Ldefpackage/jbv;
+    invoke-virtual {v9}, Ljbu;->a()Ljbv;
 
     move-result-object v11
 
     .line 411
-    .local v11, "a":Ldefpackage/jbv;
-    invoke-virtual {v11}, Ldefpackage/jbv;->a()Z
+    .local v11, "a":Ljbv;
+    invoke-virtual {v11}, Ljbv;->a()Z
 
     move-result v12
 
-    invoke-static {v12}, Ldefpackage/obr;->ap(Z)V
+    invoke-static {v12}, Lobr;->ap(Z)V
 
     .line 412
-    invoke-direct {v0, v11}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->y(Ldefpackage/jbv;)Z
+    invoke-direct {v0, v11}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->y(Ljbv;)Z
 
     move-result v12
 
@@ -1844,25 +1844,25 @@
     .line 413
     iget-object v12, v0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->E:Lcom/google/android/apps/camera/bottombar/BottomBar;
 
-    iget-object v13, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v13, v11, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v12, v13, v4}, Lcom/google/android/apps/camera/bottombar/BottomBar;->setUiOrientation(Ldefpackage/jrz;Ldefpackage/jce;)V
+    invoke-virtual {v12, v13, v4}, Lcom/google/android/apps/camera/bottombar/BottomBar;->setUiOrientation(Ljrz;Ljce;)V
 
     .line 414
     iget-object v12, v0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->z:Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
 
     .line 415
     .local v12, "modeSwitcher":Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
-    iget-object v13, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v13, v11, Ljbv;->h:Ljrz;
 
     .line 416
-    .local v13, "jrzVar":Ldefpackage/jrz;
-    iget-object v14, v12, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ldefpackage/jrz;
+    .local v13, "jrzVar":Ljrz;
+    iget-object v14, v12, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ljrz;
 
     if-eq v14, v13, :cond_3
 
     .line 417
-    iput-object v13, v12, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ldefpackage/jrz;
+    iput-object v13, v12, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ljrz;
 
     .line 418
     invoke-virtual {v12}, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->d()V
@@ -1873,39 +1873,39 @@
 
     .line 421
     .local v14, "moreModesGrid":Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;
-    iget-object v15, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v15, v11, Ljbv;->h:Ljrz;
 
     .line 422
-    .local v15, "jrzVar2":Ldefpackage/jrz;
+    .local v15, "jrzVar2":Ljrz;
     move-object/from16 v16, v2
 
     .end local v2    # "context":Landroid/content/Context;
     .local v16, "context":Landroid/content/Context;
-    iget-object v2, v14, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iget-object v2, v14, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
-    invoke-virtual {v2}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v2}, Lojc;->g()Z
 
     move-result v2
 
     if-nez v2, :cond_5
 
     .line 423
-    sget-object v2, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->PORTRAIT:Ljrz;
 
     if-ne v15, v2, :cond_4
 
-    sget-object v2, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->LANDSCAPE:Ljrz;
 
     :cond_4
-    invoke-static {v2}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v2}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v2
 
-    iput-object v2, v14, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iput-object v2, v14, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
     .line 425
     :cond_5
-    iput-object v15, v14, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ldefpackage/jrz;
+    iput-object v15, v14, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ljrz;
 
     .line 426
     iget-object v2, v0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->A:Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;
@@ -1916,27 +1916,27 @@
 
     .end local v3    # "size":Landroid/util/Size;
     .local v17, "size":Landroid/util/Size;
-    iget-object v3, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v3, v11, Ljbv;->h:Ljrz;
 
     .line 428
-    .local v3, "jrzVar3":Ldefpackage/jrz;
+    .local v3, "jrzVar3":Ljrz;
     move-object/from16 v18, v6
 
-    .end local v6    # "d":Ldefpackage/jbv;
-    .local v18, "d":Ldefpackage/jbv;
-    iget-object v6, v2, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ldefpackage/jrz;
+    .end local v6    # "d":Ljbv;
+    .local v18, "d":Ljbv;
+    iget-object v6, v2, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ljrz;
 
     if-eq v6, v3, :cond_6
 
     .line 429
-    iput-object v3, v2, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ldefpackage/jrz;
+    iput-object v3, v2, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ljrz;
 
     .line 430
     invoke-virtual {v2}, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d()V
 
     .line 432
     :cond_6
-    invoke-static {v5}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v5}, Ljrz;->b(Ljrz;)Z
 
     move-result v6
 
@@ -1949,11 +1949,11 @@
 
     move-result-object v6
 
-    check-cast v6, Ldefpackage/jbw;
+    check-cast v6, Ljbw;
 
-    iget-object v6, v6, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v6, v6, Ljbw;->b:Ljbt;
 
-    iget-object v6, v6, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v6, v6, Ljbt;->e:Landroid/graphics/Rect;
 
     iget v6, v6, Landroid/graphics/Rect;->top:I
 
@@ -1969,11 +1969,11 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jbw;
+    check-cast v2, Ljbw;
 
-    iget-object v2, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v2, v2, Ljbw;->b:Ljbt;
 
-    iget-object v2, v2, Ldefpackage/jbt;->d:Landroid/graphics/Rect;
+    iget-object v2, v2, Ljbt;->d:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->top:I
 
@@ -1991,7 +1991,7 @@
 
     .end local v2    # "breadcrumbsView":Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;
     .restart local v19    # "breadcrumbsView":Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;
-    sget-object v2, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->LANDSCAPE:Ljrz;
 
     if-ne v5, v2, :cond_8
 
@@ -2002,11 +2002,11 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jbw;
+    check-cast v2, Ljbw;
 
-    iget-object v2, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v2, v2, Ljbw;->b:Ljbt;
 
-    iget-object v2, v2, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v2, v2, Ljbt;->e:Landroid/graphics/Rect;
 
     iget v6, v2, Landroid/graphics/Rect;->left:I
 
@@ -2018,11 +2018,11 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jbw;
+    check-cast v2, Ljbw;
 
-    iget-object v2, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v2, v2, Ljbw;->b:Ljbt;
 
-    iget-object v2, v2, Ldefpackage/jbt;->d:Landroid/graphics/Rect;
+    iget-object v2, v2, Ljbt;->d:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->left:I
 
@@ -2041,11 +2041,11 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jbw;
+    check-cast v2, Ljbw;
 
-    iget-object v2, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v2, v2, Ljbw;->b:Ljbt;
 
-    iget-object v2, v2, Ldefpackage/jbt;->b:Landroid/util/Size;
+    iget-object v2, v2, Ljbt;->b:Landroid/util/Size;
 
     invoke-virtual {v2}, Landroid/util/Size;->getWidth()I
 
@@ -2057,11 +2057,11 @@
 
     move-result-object v6
 
-    check-cast v6, Ldefpackage/jbw;
+    check-cast v6, Ljbw;
 
-    iget-object v6, v6, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v6, v6, Ljbw;->b:Ljbt;
 
-    iget-object v6, v6, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v6, v6, Ljbt;->e:Landroid/graphics/Rect;
 
     iget v6, v6, Landroid/graphics/Rect;->right:I
 
@@ -2075,11 +2075,11 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jbw;
+    check-cast v2, Ljbw;
 
-    iget-object v2, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v2, v2, Ljbw;->b:Ljbt;
 
-    iget-object v2, v2, Ldefpackage/jbt;->b:Landroid/util/Size;
+    iget-object v2, v2, Ljbt;->b:Landroid/util/Size;
 
     invoke-virtual {v2}, Landroid/util/Size;->getWidth()I
 
@@ -2087,19 +2087,19 @@
 
     move-object/from16 v20, v3
 
-    .end local v3    # "jrzVar3":Ldefpackage/jrz;
-    .local v20, "jrzVar3":Ldefpackage/jrz;
+    .end local v3    # "jrzVar3":Ljrz;
+    .local v20, "jrzVar3":Ljrz;
     iget-object v3, v0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->r:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/jbw;
+    check-cast v3, Ljbw;
 
-    iget-object v3, v3, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v3, v3, Ljbw;->b:Ljbt;
 
-    iget-object v3, v3, Ldefpackage/jbt;->d:Landroid/graphics/Rect;
+    iget-object v3, v3, Ljbt;->d:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->right:I
 
@@ -2112,9 +2112,9 @@
 
     move-object/from16 v21, v5
 
-    .end local v5    # "v":Ldefpackage/jrz;
-    .local v21, "v":Ldefpackage/jrz;
-    iget-object v5, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    .end local v5    # "v":Ljrz;
+    .local v21, "v":Ljrz;
+    iget-object v5, v11, Ljbv;->h:Ljrz;
 
     move-object/from16 v22, v7
 
@@ -2122,53 +2122,53 @@
     .local v22, "size2":Landroid/util/Size;
     sub-int v7, v6, v2
 
-    invoke-virtual {v3, v5, v7}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->q(Ldefpackage/jrz;I)V
+    invoke-virtual {v3, v5, v7}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->q(Ljrz;I)V
 
     .line 443
-    iget-object v3, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v3, v11, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->o(Ldefpackage/jrz;)V
+    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->o(Ljrz;)V
 
     .line 444
-    iget-object v3, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v3, v11, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->s(Ldefpackage/jrz;)V
+    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->s(Ljrz;)V
 
     .line 445
-    iget-object v3, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v3, v11, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->p(Ldefpackage/jrz;)V
+    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->p(Ljrz;)V
 
     .line 446
-    iget-object v3, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v3, v11, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->n(Ldefpackage/jrz;)V
+    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->n(Ljrz;)V
 
     .line 447
-    iget-object v3, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v3, v11, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->k(Ldefpackage/jrz;)V
+    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->k(Ljrz;)V
 
     .line 448
-    iget-object v3, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v3, v11, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->m(Ldefpackage/jrz;)V
+    invoke-virtual {v0, v3}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->m(Ljrz;)V
 
     .line 449
     iget-object v3, v0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->G:Lcom/google/android/apps/camera/ui/views/GradientBar;
 
     .line 450
     .local v3, "gradientBar":Lcom/google/android/apps/camera/ui/views/GradientBar;
-    iget-object v5, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v5, v11, Ljbv;->h:Ljrz;
 
     .line 451
-    .local v5, "jrzVar4":Ldefpackage/jrz;
-    iget-object v7, v3, Lcom/google/android/apps/camera/ui/views/GradientBar;->a:Ldefpackage/jrz;
+    .local v5, "jrzVar4":Ljrz;
+    iget-object v7, v3, Lcom/google/android/apps/camera/ui/views/GradientBar;->a:Ljrz;
 
     if-eq v7, v5, :cond_9
 
     .line 452
-    iput-object v5, v3, Lcom/google/android/apps/camera/ui/views/GradientBar;->a:Ldefpackage/jrz;
+    iput-object v5, v3, Lcom/google/android/apps/camera/ui/views/GradientBar;->a:Ljrz;
 
     .line 453
     invoke-virtual {v3}, Lcom/google/android/apps/camera/ui/views/GradientBar;->a()V
@@ -2183,20 +2183,20 @@
 
     .end local v2    # "width2":I
     .local v23, "width2":I
-    iget-object v2, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v2, v11, Ljbv;->h:Ljrz;
 
     .line 457
-    .local v2, "jrzVar5":Ldefpackage/jrz;
+    .local v2, "jrzVar5":Ljrz;
     move-object/from16 v24, v3
 
     .end local v3    # "gradientBar":Lcom/google/android/apps/camera/ui/views/GradientBar;
     .local v24, "gradientBar":Lcom/google/android/apps/camera/ui/views/GradientBar;
-    iget-object v3, v7, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ldefpackage/jrz;
+    iget-object v3, v7, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ljrz;
 
     if-eq v3, v2, :cond_a
 
     .line 458
-    iput-object v2, v7, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ldefpackage/jrz;
+    iput-object v2, v7, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ljrz;
 
     .line 459
     invoke-virtual {v7}, Lcom/google/android/apps/camera/ui/views/CutoutBar;->a()V
@@ -2209,29 +2209,29 @@
     .local v3, "frontLensIndicatorOverlay":Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;
     move-object/from16 v25, v2
 
-    .end local v2    # "jrzVar5":Ldefpackage/jrz;
-    .local v25, "jrzVar5":Ldefpackage/jrz;
-    iget-object v2, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    .end local v2    # "jrzVar5":Ljrz;
+    .local v25, "jrzVar5":Ljrz;
+    iget-object v2, v11, Ljbv;->h:Ljrz;
 
     .line 463
-    .local v2, "jrzVar6":Ldefpackage/jrz;
+    .local v2, "jrzVar6":Ljrz;
     move-object/from16 v26, v5
 
-    .end local v5    # "jrzVar4":Ldefpackage/jrz;
-    .local v26, "jrzVar4":Ldefpackage/jrz;
-    iget-object v5, v3, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ldefpackage/jrz;
+    .end local v5    # "jrzVar4":Ljrz;
+    .local v26, "jrzVar4":Ljrz;
+    iget-object v5, v3, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ljrz;
 
     if-eq v5, v2, :cond_b
 
     .line 464
-    iput-object v2, v3, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ldefpackage/jrz;
+    iput-object v2, v3, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ljrz;
 
     .line 465
     invoke-virtual {v3}, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->a()V
 
     .line 467
     :cond_b
-    invoke-virtual {v0, v4}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->t(Ldefpackage/jce;)V
+    invoke-virtual {v0, v4}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->t(Ljce;)V
 
     .line 468
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->q()V
@@ -2265,20 +2265,20 @@
 
     move-object/from16 v0, v27
 
-    check-cast v0, Ldefpackage/jrt;
+    check-cast v0, Ljrt;
 
     .line 473
-    .local v0, "jrtVar":Ldefpackage/jrt;
+    .local v0, "jrtVar":Ljrt;
     move-object/from16 v27, v2
 
-    .end local v2    # "jrzVar6":Ldefpackage/jrz;
-    .local v27, "jrzVar6":Ldefpackage/jrz;
-    iget-object v2, v11, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    .end local v2    # "jrzVar6":Ljrz;
+    .local v27, "jrzVar6":Ljrz;
+    iget-object v2, v11, Ljbv;->h:Ljrz;
 
-    invoke-interface {v0, v2}, Ldefpackage/jrt;->k(Ldefpackage/jrz;)V
+    invoke-interface {v0, v2}, Ljrt;->k(Ljrz;)V
 
     .line 474
-    .end local v0    # "jrtVar":Ldefpackage/jrt;
+    .end local v0    # "jrtVar":Ljrt;
     move-object/from16 v0, p0
 
     move-object/from16 v2, v27
@@ -2286,36 +2286,36 @@
     goto :goto_2
 
     .line 472
-    .end local v27    # "jrzVar6":Ldefpackage/jrz;
-    .restart local v2    # "jrzVar6":Ldefpackage/jrz;
+    .end local v27    # "jrzVar6":Ljrz;
+    .restart local v2    # "jrzVar6":Ljrz;
     :cond_c
     move-object/from16 v27, v2
 
-    .end local v2    # "jrzVar6":Ldefpackage/jrz;
-    .restart local v27    # "jrzVar6":Ldefpackage/jrz;
+    .end local v2    # "jrzVar6":Ljrz;
+    .restart local v27    # "jrzVar6":Ljrz;
     goto :goto_3
 
     .line 412
     .end local v12    # "modeSwitcher":Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
-    .end local v13    # "jrzVar":Ldefpackage/jrz;
+    .end local v13    # "jrzVar":Ljrz;
     .end local v14    # "moreModesGrid":Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;
-    .end local v15    # "jrzVar2":Ldefpackage/jrz;
+    .end local v15    # "jrzVar2":Ljrz;
     .end local v16    # "context":Landroid/content/Context;
     .end local v17    # "size":Landroid/util/Size;
-    .end local v18    # "d":Ldefpackage/jbv;
+    .end local v18    # "d":Ljbv;
     .end local v19    # "breadcrumbsView":Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;
-    .end local v20    # "jrzVar3":Ldefpackage/jrz;
-    .end local v21    # "v":Ldefpackage/jrz;
+    .end local v20    # "jrzVar3":Ljrz;
+    .end local v21    # "v":Ljrz;
     .end local v22    # "size2":Landroid/util/Size;
     .end local v23    # "width2":I
     .end local v24    # "gradientBar":Lcom/google/android/apps/camera/ui/views/GradientBar;
-    .end local v25    # "jrzVar5":Ldefpackage/jrz;
-    .end local v26    # "jrzVar4":Ldefpackage/jrz;
-    .end local v27    # "jrzVar6":Ldefpackage/jrz;
+    .end local v25    # "jrzVar5":Ljrz;
+    .end local v26    # "jrzVar4":Ljrz;
+    .end local v27    # "jrzVar6":Ljrz;
     .local v2, "context":Landroid/content/Context;
     .local v3, "size":Landroid/util/Size;
-    .local v5, "v":Ldefpackage/jrz;
-    .local v6, "d":Ldefpackage/jbv;
+    .local v5, "v":Ljrz;
+    .local v6, "d":Ljbv;
     .local v7, "size2":Landroid/util/Size;
     :cond_d
     move-object/from16 v16, v2
@@ -2331,13 +2331,13 @@
     .line 476
     .end local v2    # "context":Landroid/content/Context;
     .end local v3    # "size":Landroid/util/Size;
-    .end local v5    # "v":Ldefpackage/jrz;
-    .end local v6    # "d":Ldefpackage/jbv;
+    .end local v5    # "v":Ljrz;
+    .end local v6    # "d":Ljbv;
     .end local v7    # "size2":Landroid/util/Size;
     .restart local v16    # "context":Landroid/content/Context;
     .restart local v17    # "size":Landroid/util/Size;
-    .restart local v18    # "d":Ldefpackage/jbv;
-    .restart local v21    # "v":Ldefpackage/jrz;
+    .restart local v18    # "d":Ljbv;
+    .restart local v21    # "v":Ljrz;
     .restart local v22    # "size2":Landroid/util/Size;
     :goto_3
     invoke-static {}, Landroid/os/Trace;->endSection()V
@@ -2359,14 +2359,14 @@
     return-void
 .end method
 
-.method public final p(Ldefpackage/jrz;)V
+.method public final p(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 483
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->q:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->q:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
@@ -2378,15 +2378,15 @@
 
     .line 486
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->q:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->q:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/eso;
+    check-cast v0, Leso;
 
-    invoke-interface {v0, p1}, Ldefpackage/eso;->b(Ldefpackage/jrz;)V
+    invoke-interface {v0, p1}, Leso;->b(Ljrz;)V
 
     .line 487
     return-void
@@ -2401,21 +2401,21 @@
     .locals 3
 
     .line 490
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v0
 
     .line 491
-    .local v0, "d":Ldefpackage/jbv;
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->i:Ldefpackage/ojc;
+    .local v0, "d":Ljbv;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->i:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    iget-object v1, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v1, v0, Ljbv;->h:Ljrz;
 
     if-nez v1, :cond_0
 
@@ -2423,17 +2423,17 @@
 
     .line 494
     :cond_0
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->i:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->i:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/hnj;
+    check-cast v1, Lhnj;
 
-    iget-object v2, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v2, v0, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v1, v2}, Ldefpackage/hnj;->y(Ldefpackage/jrz;)V
+    invoke-virtual {v1, v2}, Lhnj;->y(Ljrz;)V
 
     .line 495
     return-void
@@ -2448,21 +2448,21 @@
     .locals 3
 
     .line 498
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v0
 
     .line 499
-    .local v0, "d":Ldefpackage/jbv;
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->k:Ldefpackage/ojc;
+    .local v0, "d":Ljbv;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->k:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    iget-object v1, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v1, v0, Ljbv;->h:Ljrz;
 
     if-nez v1, :cond_0
 
@@ -2470,17 +2470,17 @@
 
     .line 502
     :cond_0
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->k:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->k:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/idc;
+    check-cast v1, Lidc;
 
-    iget-object v2, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v2, v0, Ljbv;->h:Ljrz;
 
-    invoke-interface {v1, v2}, Ldefpackage/idc;->g(Ldefpackage/jrz;)V
+    invoke-interface {v1, v2}, Lidc;->g(Ljrz;)V
 
     .line 503
     return-void
@@ -2491,14 +2491,14 @@
     return-void
 .end method
 
-.method public final s(Ldefpackage/jrz;)V
+.method public final s(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 506
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->o:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->o:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
@@ -2510,15 +2510,15 @@
 
     .line 509
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->o:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->o:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/cuj;
+    check-cast v0, Lcuj;
 
-    invoke-interface {v0, p1}, Ldefpackage/cuj;->j(Ldefpackage/jrz;)V
+    invoke-interface {v0, p1}, Lcuj;->j(Ljrz;)V
 
     .line 510
     return-void
@@ -2529,22 +2529,22 @@
     return-void
 .end method
 
-.method public final t(Ldefpackage/jce;)V
+.method public final t(Ljce;)V
     .locals 5
-    .param p1, "jceVar"    # Ldefpackage/jce;
+    .param p1, "jceVar"    # Ljce;
 
     .line 513
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ldefpackage/jbv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->d()Ljbv;
 
     move-result-object v0
 
     .line 514
-    .local v0, "d":Ldefpackage/jbv;
+    .local v0, "d":Ljbv;
     iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->f:Lcom/google/android/apps/camera/zoomui/ZoomUi;
 
     if-eqz v1, :cond_5
 
-    iget-object v1, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v1, v0, Ljbv;->h:Ljrz;
 
     if-nez v1, :cond_0
 
@@ -2552,7 +2552,7 @@
 
     .line 517
     :cond_0
-    sget-object v1, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v1, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {p1, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2560,7 +2560,7 @@
 
     if-nez v1, :cond_4
 
-    sget-object v1, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v1, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {p1, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2576,37 +2576,37 @@
 
     .line 522
     .local v1, "zoomUi":Lcom/google/android/apps/camera/zoomui/ZoomUi;
-    iget-object v2, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v2, v0, Ljbv;->h:Ljrz;
 
     .line 523
-    .local v2, "jrzVar":Ldefpackage/jrz;
-    sget-object v3, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    .local v2, "jrzVar":Ljrz;
+    sget-object v3, Ljrz;->PORTRAIT:Ljrz;
 
     if-eq v2, v3, :cond_2
 
-    sget-object v4, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v4, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne v2, v4, :cond_3
 
     :cond_2
-    sget-object v3, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v3, Ljrz;->LANDSCAPE:Ljrz;
 
     :cond_3
-    invoke-virtual {v1, v3}, Lcom/google/android/apps/camera/zoomui/ZoomUi;->q(Ldefpackage/jrz;)V
+    invoke-virtual {v1, v3}, Lcom/google/android/apps/camera/zoomui/ZoomUi;->q(Ljrz;)V
 
     .line 524
     return-void
 
     .line 518
     .end local v1    # "zoomUi":Lcom/google/android/apps/camera/zoomui/ZoomUi;
-    .end local v2    # "jrzVar":Ldefpackage/jrz;
+    .end local v2    # "jrzVar":Ljrz;
     :cond_4
     :goto_0
     iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->f:Lcom/google/android/apps/camera/zoomui/ZoomUi;
 
-    iget-object v2, v0, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v2, v0, Ljbv;->h:Ljrz;
 
-    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/zoomui/ZoomUi;->q(Ldefpackage/jrz;)V
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/zoomui/ZoomUi;->q(Ljrz;)V
 
     .line 519
     return-void
@@ -2617,12 +2617,12 @@
     return-void
 .end method
 
-.method public final u(Ldefpackage/mip;)V
+.method public final u(Lmip;)V
     .locals 1
-    .param p1, "mipVar"    # Ldefpackage/mip;
+    .param p1, "mipVar"    # Lmip;
 
     .line 527
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 528
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->e:Ljava/util/Set;

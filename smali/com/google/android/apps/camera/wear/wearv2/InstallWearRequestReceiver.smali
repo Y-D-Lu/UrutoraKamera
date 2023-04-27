@@ -156,7 +156,7 @@
     invoke-virtual {v3, v4, v5}, Landroid/app/NotificationManager;->cancel(Ljava/lang/String;I)V
 
     .line 35
-    invoke-static {p1}, Ldefpackage/afp;->a(Landroid/content/Context;)Ldefpackage/afp;
+    invoke-static {p1}, Lafp;->a(Landroid/content/Context;)Lafp;
 
     move-result-object v3
 
@@ -184,7 +184,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v3, v1}, Ldefpackage/afp;->d(Landroid/content/Intent;)V
+    invoke-virtual {v3, v1}, Lafp;->d(Landroid/content/Intent;)V
 
     .line 36
     return-void

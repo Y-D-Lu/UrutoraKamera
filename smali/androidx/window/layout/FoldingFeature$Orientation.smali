@@ -41,7 +41,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Landroidx/window/layout/FoldingFeature$Orientation$Companion;-><init>(Ldefpackage/qnm;)V
+    invoke-direct {v0, v1}, Landroidx/window/layout/FoldingFeature$Orientation$Companion;-><init>(Lqnm;)V
 
     sput-object v0, Landroidx/window/layout/FoldingFeature$Orientation;->mCompanion:Landroidx/window/layout/FoldingFeature$Orientation$Companion;
 

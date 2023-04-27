@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract a(IILjava/lang/String;Ldefpackage/ojc;)V
+.method public abstract a(IILjava/lang/String;Lojc;)V
 .end method
 
 .method public abstract b(IJILjava/lang/String;Lcom/google/googlex/gcam/ShotMetadata;)V

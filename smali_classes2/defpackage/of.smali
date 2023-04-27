@@ -1,116 +1,88 @@
-.class final Ldefpackage/of;
-.super Landroid/animation/AnimatorListenerAdapter;
+.class public Ldefpackage/Of;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhbq;->k(Lbqg;Llco;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/oh;
-
-.field public final b:Landroid/view/ViewPropertyAnimator;
-
-.field public final c:Landroid/view/View;
-
-.field public final d:Ldefpackage/py;
+.field public final synthetic this$0:Lhbq;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/py;Ldefpackage/oh;Landroid/view/ViewPropertyAnimator;Landroid/view/View;)V
+.method public constructor <init>(Lhbq;)V
     .locals 0
-    .param p1, "pyVar"    # Ldefpackage/py;
-    .param p2, "ohVar"    # Ldefpackage/oh;
-    .param p3, "viewPropertyAnimator"    # Landroid/view/ViewPropertyAnimator;
-    .param p4, "view"    # Landroid/view/View;
+    .param p1, "this$0"    # Lhbq;
 
-    .line 18
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    .line 290
+    iput-object p1, p0, Ldefpackage/Of;->this$0:Lhbq;
 
-    .line 19
-    iput-object p1, p0, Ldefpackage/of;->d:Ldefpackage/py;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
-    iput-object p2, p0, Ldefpackage/of;->a:Ldefpackage/oh;
-
-    .line 21
-    iput-object p3, p0, Ldefpackage/of;->b:Landroid/view/ViewPropertyAnimator;
-
-    .line 22
-    iput-object p4, p0, Ldefpackage/of;->c:Landroid/view/View;
-
-    .line 23
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
-    .param p1, "animator"    # Landroid/animation/Animator;
+.method public final fB(Ljava/lang/Object;)V
+    .locals 5
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 27
-    iget-object v0, p0, Ldefpackage/of;->b:Landroid/view/ViewPropertyAnimator;
+    .line 293
+    iget-object v0, p0, Ldefpackage/Of;->this$0:Lhbq;
 
-    const/4 v1, 0x0
+    .line 294
+    .local v0, "hbqVar":Lhbq;
+    move-object v1, p1
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
+    check-cast v1, Ljava/util/List;
 
-    .line 28
-    iget-object v0, p0, Ldefpackage/of;->c:Landroid/view/View;
+    .line 295
+    .local v1, "list":Ljava/util/List;
+    iget-object v2, v0, Lhbq;->d:Llce;
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/4 v3, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 29
-    iget-object v0, p0, Ldefpackage/of;->c:Landroid/view/View;
+    move-result-object v3
 
-    sget v1, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
+    check-cast v3, Ljava/lang/Float;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
+    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
 
-    .line 30
-    iget-object v0, p0, Ldefpackage/of;->c:Landroid/view/View;
+    move-result v3
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
+    const/4 v4, 0x1
 
-    .line 31
-    iget-object v0, p0, Ldefpackage/of;->d:Ldefpackage/py;
+    invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    iget-object v1, p0, Ldefpackage/of;->a:Ldefpackage/oh;
+    move-result-object v4
 
-    iget-object v1, v1, Ldefpackage/oh;->a:Ldefpackage/qs;
+    check-cast v4, Ljava/lang/Float;
 
-    invoke-virtual {v0, v1}, Ldefpackage/py;->a(Ldefpackage/qs;)V
+    invoke-virtual {v4}, Ljava/lang/Float;->floatValue()F
 
-    .line 32
-    iget-object v0, p0, Ldefpackage/of;->d:Ldefpackage/py;
+    move-result v4
 
-    iget-object v0, v0, Ldefpackage/py;->l:Ljava/util/ArrayList;
+    invoke-virtual {v0, v3, v4}, Lhbq;->a(FF)Lhbp;
 
-    iget-object v1, p0, Ldefpackage/of;->a:Ldefpackage/oh;
+    move-result-object v3
 
-    iget-object v1, v1, Ldefpackage/oh;->a:Ldefpackage/qs;
+    invoke-virtual {v2, v3}, Llce;->fB(Ljava/lang/Object;)V
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    .line 33
-    iget-object v0, p0, Ldefpackage/of;->d:Ldefpackage/py;
-
-    invoke-virtual {v0}, Ldefpackage/py;->g()V
-
-    .line 34
-    return-void
-.end method
-
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 1
-    .param p1, "animator"    # Landroid/animation/Animator;
-
-    .line 38
-    iget-object v0, p0, Ldefpackage/of;->a:Ldefpackage/oh;
-
-    iget-object v0, v0, Ldefpackage/oh;->a:Ldefpackage/qs;
-
-    .line 39
-    .local v0, "qsVar":Ldefpackage/qs;
+    .line 296
     return-void
 .end method

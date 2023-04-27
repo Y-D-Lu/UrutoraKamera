@@ -28,11 +28,11 @@
     .locals 2
 
     .line 17
-    new-instance v0, Ldefpackage/si;
+    new-instance v0, Lsi;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Ldefpackage/si;-><init>(I)V
+    invoke-direct {v0, v1}, Lsi;-><init>(I)V
 
     sput-object v0, Landroid/support/wearable/complications/ComplicationText;->CREATOR:Landroid/os/Parcelable$Creator;
 

@@ -60,7 +60,7 @@
 
 
 # virtual methods
-.method public abstract a()Ldefpackage/pht;
+.method public abstract a()Lpht;
 .end method
 
 .method public c()V
@@ -81,13 +81,13 @@
     return v0
 .end method
 
-.method public final fs()Ldefpackage/amq;
+.method public final fs()Lamq;
     .locals 1
 
     .line 41
     iget-object v0, p0, Landroidx/work/ListenableWorker;->d:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->b:Ldefpackage/amq;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->b:Lamq;
 
     return-object v0
 .end method
@@ -138,13 +138,13 @@
     return v0
 .end method
 
-.method public final j()Ldefpackage/aso;
+.method public final j()Laso;
     .locals 1
 
     .line 62
     iget-object v0, p0, Landroidx/work/ListenableWorker;->d:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->f:Ldefpackage/aso;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->f:Laso;
 
     return-object v0
 .end method

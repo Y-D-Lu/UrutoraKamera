@@ -1,34 +1,74 @@
-.class public final Ldefpackage/lc;
-.super Landroid/widget/FrameLayout;
+.class public Ldefpackage/Lc;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Loiu;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfsy;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/view/CollapsibleActionView;
+.field public final synthetic this$0:Lfsy;
+
+.field public final synthetic val$lapVar:Llap;
+
+.field public final synthetic val$lncVar:Llnc;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
+.method public constructor <init>(Lfsy;Llap;Llnc;)V
+    .locals 0
+    .param p1, "this$0"    # Lfsy;
 
-    .line 13
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    .line 232
+    iput-object p1, p0, Ldefpackage/Lc;->this$0:Lfsy;
 
-    move-result-object v0
+    iput-object p2, p0, Ldefpackage/Lc;->val$lapVar:Llap;
 
-    invoke-direct {p0, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
+    iput-object p3, p0, Ldefpackage/Lc;->val$lncVar:Llnc;
 
-    .line 14
-    move-object v0, p1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    check-cast v0, Landroid/view/CollapsibleActionView;
-
-    iput-object v0, p0, Ldefpackage/lc;->a:Landroid/view/CollapsibleActionView;
-
-    .line 15
-    invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
-
-    .line 16
     return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
+    .param p1, "obj2"    # Ljava/lang/Object;
+
+    .line 235
+    iget-object v0, p0, Ldefpackage/Lc;->val$lapVar:Llap;
+
+    .line 236
+    .local v0, "lapVar2":Llap;
+    iget-object v1, p0, Ldefpackage/Lc;->val$lncVar:Llnc;
+
+    move-object v2, p1
+
+    check-cast v2, Llqd;
+
+    const/16 v3, 0x2d
+
+    invoke-interface {v1, v2, v3}, Llnc;->r(Llqd;I)Llmv;
+
+    move-result-object v1
+
+    .line 237
+    .local v1, "r":Llmv;
+    invoke-virtual {v0, v1}, Llap;->c(Llie;)V
+
+    .line 238
+    return-object v1
 .end method

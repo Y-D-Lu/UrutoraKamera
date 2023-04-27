@@ -22,20 +22,20 @@
 
 .field public final synthetic val$a3:Ljava/io/ByteArrayOutputStream;
 
-.field public final synthetic val$dxvVar:Ldefpackage/dxv;
+.field public final synthetic val$dxvVar:Ldxv;
 
 .field public final synthetic val$sb5:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;Ldefpackage/dxv;Ljava/lang/String;Ljava/io/ByteArrayOutputStream;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;Ldxv;Ljava/lang/String;Ljava/io/ByteArrayOutputStream;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
 
     .line 255
     iput-object p1, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;->this$0:Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;->val$dxvVar:Ldefpackage/dxv;
+    iput-object p2, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;->val$dxvVar:Ldxv;
 
     iput-object p3, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;->val$sb5:Ljava/lang/String;
 
@@ -63,10 +63,10 @@
 
     .line 260
     .local v2, "bufferedOutputStream":Ljava/io/BufferedOutputStream;
-    iget-object v3, v1, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;->val$dxvVar:Ldefpackage/dxv;
+    iget-object v3, v1, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;->val$dxvVar:Ldxv;
 
     .line 261
-    .local v3, "dxvVar2":Ldefpackage/dxv;
+    .local v3, "dxvVar2":Ldxv;
     iget-object v4, v1, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;->val$sb5:Ljava/lang/String;
 
     .line 262
@@ -81,10 +81,10 @@
 
     .line 264
     .local v6, "fileDescriptor":Ljava/io/FileDescriptor;
-    iget-object v7, v3, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v7, v3, Ldxv;->c:Lljf;
 
     .line 265
-    .local v7, "ljfVar5":Ldefpackage/ljf;
+    .local v7, "ljfVar5":Lljf;
     invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v8
@@ -139,7 +139,7 @@
 
     move-result-object v0
 
-    invoke-interface {v7, v0}, Ldefpackage/ljf;->e(Ljava/lang/String;)V
+    invoke-interface {v7, v0}, Lljf;->e(Ljava/lang/String;)V
 
     .line 274
     :try_start_0
@@ -172,15 +172,15 @@
     .line 276
     .local v0, "e":Ljava/lang/Exception;
     :try_start_1
-    sget-object v10, Ldefpackage/dxv;->a:Ldefpackage/ouj;
+    sget-object v10, Ldxv;->a:Louj;
 
-    invoke-virtual {v10}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v10}, Loue;->b()Lova;
 
     move-result-object v10
 
     check-cast v10, Loug;
 
-    invoke-interface {v10, v0}, Ldefpackage/ova;->h(Ljava/lang/Throwable;)Ldefpackage/ova;
+    invoke-interface {v10, v0}, Lova;->h(Ljava/lang/Throwable;)Lova;
 
     move-result-object v10
 
@@ -188,7 +188,7 @@
 
     const/16 v11, 0x3dc
 
-    invoke-interface {v10, v11}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v10, v11}, Lova;->G(I)Lova;
 
     move-result-object v10
 
@@ -196,7 +196,7 @@
 
     const-string v11, "Error when writeTo the ParcelFileDescriptor"
 
-    invoke-interface {v10, v11}, Ldefpackage/ova;->o(Ljava/lang/String;)V
+    invoke-interface {v10, v11}, Lova;->o(Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -213,11 +213,11 @@
     invoke-virtual {v2}, Ljava/io/BufferedOutputStream;->close()V
 
     .line 282
-    iget-object v0, v3, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v0, v3, Ldxv;->c:Lljf;
 
     .line 283
-    .local v0, "ljfVar4":Ldefpackage/ljf;
-    invoke-interface {v0}, Ldefpackage/ljf;->f()V
+    .local v0, "ljfVar4":Lljf;
+    invoke-interface {v0}, Lljf;->f()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -228,7 +228,7 @@
     goto :goto_3
 
     .line 284
-    .end local v0    # "ljfVar4":Ldefpackage/ljf;
+    .end local v0    # "ljfVar4":Lljf;
     :catchall_1
     move-exception v0
 
@@ -253,11 +253,11 @@
     nop
 
     .end local v2    # "bufferedOutputStream":Ljava/io/BufferedOutputStream;
-    .end local v3    # "dxvVar2":Ldefpackage/dxv;
+    .end local v3    # "dxvVar2":Ldxv;
     .end local v4    # "str3":Ljava/lang/String;
     .end local v5    # "byteArrayOutputStream":Ljava/io/ByteArrayOutputStream;
     .end local v6    # "fileDescriptor":Ljava/io/FileDescriptor;
-    .end local v7    # "ljfVar5":Ldefpackage/ljf;
+    .end local v7    # "ljfVar5":Lljf;
     .end local v8    # "valueOf4":Ljava/lang/String;
     .end local v9    # "sb9":Ljava/lang/StringBuilder;
     .end local p0    # "this":Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;
@@ -274,11 +274,11 @@
     .line 291
     .end local v10    # "th":Ljava/lang/Throwable;
     .restart local v2    # "bufferedOutputStream":Ljava/io/BufferedOutputStream;
-    .restart local v3    # "dxvVar2":Ldefpackage/dxv;
+    .restart local v3    # "dxvVar2":Ldxv;
     .restart local v4    # "str3":Ljava/lang/String;
     .restart local v5    # "byteArrayOutputStream":Ljava/io/ByteArrayOutputStream;
     .restart local v6    # "fileDescriptor":Ljava/io/FileDescriptor;
-    .restart local v7    # "ljfVar5":Ldefpackage/ljf;
+    .restart local v7    # "ljfVar5":Lljf;
     .restart local v8    # "valueOf4":Ljava/lang/String;
     .restart local v9    # "sb9":Ljava/lang/StringBuilder;
     .restart local p0    # "this":Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;
@@ -292,19 +292,19 @@
 
     .line 292
     .local v10, "th3":Ljava/lang/Throwable;
-    iget-object v0, v3, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v0, v3, Ldxv;->c:Lljf;
 
-    invoke-interface {v0}, Ldefpackage/ljf;->f()V
+    invoke-interface {v0}, Lljf;->f()V
 
     .line 294
     nop
 
     .end local v2    # "bufferedOutputStream":Ljava/io/BufferedOutputStream;
-    .end local v3    # "dxvVar2":Ldefpackage/dxv;
+    .end local v3    # "dxvVar2":Ldxv;
     .end local v4    # "str3":Ljava/lang/String;
     .end local v5    # "byteArrayOutputStream":Ljava/io/ByteArrayOutputStream;
     .end local v6    # "fileDescriptor":Ljava/io/FileDescriptor;
-    .end local v7    # "ljfVar5":Ldefpackage/ljf;
+    .end local v7    # "ljfVar5":Lljf;
     .end local v8    # "valueOf4":Ljava/lang/String;
     .end local v9    # "sb9":Ljava/lang/StringBuilder;
     .end local p0    # "this":Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;
@@ -320,11 +320,11 @@
 
     .line 295
     .restart local v2    # "bufferedOutputStream":Ljava/io/BufferedOutputStream;
-    .restart local v3    # "dxvVar2":Ldefpackage/dxv;
+    .restart local v3    # "dxvVar2":Ldxv;
     .restart local v4    # "str3":Ljava/lang/String;
     .restart local v5    # "byteArrayOutputStream":Ljava/io/ByteArrayOutputStream;
     .restart local v6    # "fileDescriptor":Ljava/io/FileDescriptor;
-    .restart local v7    # "ljfVar5":Ldefpackage/ljf;
+    .restart local v7    # "ljfVar5":Lljf;
     .restart local v8    # "valueOf4":Ljava/lang/String;
     .restart local v9    # "sb9":Ljava/lang/StringBuilder;
     .restart local p0    # "this":Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;

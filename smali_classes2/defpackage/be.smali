@@ -1,75 +1,88 @@
-.class public final Ldefpackage/be;
+.class public Ldefpackage/Be;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/aaw;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgrn;->mo37get()Lojz;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/animation/Animator;
+.field public final synthetic this$0:Lgrn;
 
-.field public final b:Ldefpackage/dp;
+.field public final synthetic val$consumer:Ljava/util/function/Consumer;
+
+.field public final synthetic val$intValue2:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/animation/Animator;Ldefpackage/dp;)V
+.method public constructor <init>(Lgrn;Ljava/util/function/Consumer;I)V
     .locals 0
-    .param p1, "animator"    # Landroid/animation/Animator;
-    .param p2, "dpVar"    # Ldefpackage/dp;
+    .param p1, "this$0"    # Lgrn;
 
-    .line 12
+    .line 59
+    iput-object p1, p0, Ldefpackage/Be;->this$0:Lgrn;
+
+    iput-object p2, p0, Ldefpackage/Be;->val$consumer:Ljava/util/function/Consumer;
+
+    iput p3, p0, Ldefpackage/Be;->val$intValue2:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    iput-object p1, p0, Ldefpackage/be;->a:Landroid/animation/Animator;
-
-    .line 14
-    iput-object p2, p0, Ldefpackage/be;->b:Ldefpackage/dp;
-
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
+.method public final run()V
     .locals 2
 
-    .line 19
-    iget-object v0, p0, Ldefpackage/be;->a:Landroid/animation/Animator;
+    .line 62
+    const/4 v0, -0x1
 
-    invoke-virtual {v0}, Landroid/animation/Animator;->end()V
+    packed-switch v0, :pswitch_data_0
 
-    .line 20
-    const/4 v0, 0x2
+    .line 67
+    iget-object v0, p0, Ldefpackage/Be;->val$consumer:Ljava/util/function/Consumer;
 
-    invoke-static {v0}, Ldefpackage/cu;->Q(I)Z
+    iget v1, p0, Ldefpackage/Be;->val$intValue2:I
 
-    move-result v0
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-eqz v0, :cond_0
+    move-result-object v1
 
-    .line 21
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-interface {v0, v1}, Ljava/util/function/Consumer;->accept(Ljava/lang/Object;)V
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Animator from operation "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Ldefpackage/be;->b:Ldefpackage/dp;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, " has been canceled."
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 23
-    :cond_0
+    .line 68
     return-void
+
+    .line 64
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Be;->val$consumer:Ljava/util/function/Consumer;
+
+    iget v1, p0, Ldefpackage/Be;->val$intValue2:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/function/Consumer;->accept(Ljava/lang/Object;)V
+
+    .line 65
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -15,7 +15,7 @@
 
 .field private final c:Landroid/graphics/Paint;
 
-.field private final d:Ldefpackage/tf;
+.field private final d:Ltf;
 
 .field private e:Landroid/content/res/ColorStateList;
 
@@ -41,7 +41,7 @@
 
 .field private p:Z
 
-.field private final q:Ldefpackage/tk;
+.field private final q:Ltk;
 
 .field private r:F
 
@@ -129,12 +129,12 @@
     iput v1, v0, Landroid/support/wearable/view/CircledImageView;->s:F
 
     .line 68
-    new-instance v3, Ldefpackage/te;
+    new-instance v3, Lte;
 
-    invoke-direct {v3, v0}, Ldefpackage/te;-><init>(Landroid/support/wearable/view/CircledImageView;)V
+    invoke-direct {v3, v0}, Lte;-><init>(Landroid/support/wearable/view/CircledImageView;)V
 
     .line 69
-    .local v3, "teVar":Ldefpackage/te;
+    .local v3, "teVar":Lte;
     iput-object v3, v0, Landroid/support/wearable/view/CircledImageView;->v:Landroid/graphics/drawable/Drawable$Callback;
 
     .line 70
@@ -146,7 +146,7 @@
 
     move-result-object v5
 
-    sget-object v6, Ldefpackage/sf;->c:[I
+    sget-object v6, Lsf;->c:[I
 
     move-object/from16 v7, p2
 
@@ -437,7 +437,7 @@
     invoke-virtual {v14, v13}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 115
-    new-instance v13, Ldefpackage/tf;
+    new-instance v13, Ltf;
 
     invoke-virtual/range {p0 .. p0}, Landroid/support/wearable/view/CircledImageView;->a()F
 
@@ -445,18 +445,18 @@
 
     iget v2, v0, Landroid/support/wearable/view/CircledImageView;->n:F
 
-    invoke-direct {v13, v1, v15, v2}, Ldefpackage/tf;-><init>(FFF)V
+    invoke-direct {v13, v1, v15, v2}, Ltf;-><init>(FFF)V
 
-    iput-object v13, v0, Landroid/support/wearable/view/CircledImageView;->d:Ldefpackage/tf;
+    iput-object v13, v0, Landroid/support/wearable/view/CircledImageView;->d:Ltf;
 
     .line 116
-    new-instance v2, Ldefpackage/tk;
+    new-instance v2, Ltk;
 
-    invoke-direct {v2}, Ldefpackage/tk;-><init>()V
+    invoke-direct {v2}, Ltk;-><init>()V
 
     .line 117
-    .local v2, "tkVar":Ldefpackage/tk;
-    iput-object v2, v0, Landroid/support/wearable/view/CircledImageView;->q:Ldefpackage/tk;
+    .local v2, "tkVar":Ltk;
+    iput-object v2, v0, Landroid/support/wearable/view/CircledImageView;->q:Ltk;
 
     .line 118
     invoke-virtual {v2, v3}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
@@ -612,14 +612,14 @@
     .locals 2
 
     .line 148
-    iget-object v0, p0, Landroid/support/wearable/view/CircledImageView;->q:Ldefpackage/tk;
+    iget-object v0, p0, Landroid/support/wearable/view/CircledImageView;->q:Ltk;
 
     .line 149
-    .local v0, "tkVar":Ldefpackage/tk;
+    .local v0, "tkVar":Ltk;
     if-eqz v0, :cond_0
 
     .line 150
-    iget-object v1, v0, Ldefpackage/tk;->a:Landroid/animation/ObjectAnimator;
+    iget-object v1, v0, Ltk;->a:Landroid/animation/ObjectAnimator;
 
     invoke-virtual {v1}, Landroid/animation/ObjectAnimator;->cancel()V
 
@@ -1133,15 +1133,15 @@
 
     .line 223
     .local v2, "f":F
-    iget-object v3, v0, Landroid/support/wearable/view/CircledImageView;->d:Ldefpackage/tf;
+    iget-object v3, v0, Landroid/support/wearable/view/CircledImageView;->d:Ltf;
 
     .line 224
-    .local v3, "tfVar":Ldefpackage/tf;
-    iget v4, v3, Ldefpackage/tf;->a:F
+    .local v3, "tfVar":Ltf;
+    iget v4, v3, Ltf;->a:F
 
     .line 225
     .local v4, "f2":F
-    iget v5, v3, Ldefpackage/tf;->b:F
+    iget v5, v3, Ltf;->b:F
 
     .line 226
     .local v5, "f3":F
@@ -1308,7 +1308,7 @@
 
     .line 262
     :cond_0
-    iget-object v0, p0, Landroid/support/wearable/view/CircledImageView;->d:Ldefpackage/tf;
+    iget-object v0, p0, Landroid/support/wearable/view/CircledImageView;->d:Ltf;
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
@@ -1330,7 +1330,7 @@
 
     sub-int v4, p2, v4
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Ldefpackage/tf;->a(IIII)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Ltf;->a(IIII)V
 
     .line 263
     return-void
@@ -1399,7 +1399,7 @@
 
     .line 280
     :cond_0
-    iget-object v0, p0, Landroid/support/wearable/view/CircledImageView;->d:Ldefpackage/tf;
+    iget-object v0, p0, Landroid/support/wearable/view/CircledImageView;->d:Ltf;
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -1413,7 +1413,7 @@
 
     sub-int/2addr v2, p4
 
-    invoke-virtual {v0, p1, p2, v1, v2}, Ldefpackage/tf;->a(IIII)V
+    invoke-virtual {v0, p1, p2, v1, v2}, Ltf;->a(IIII)V
 
     .line 282
     :cond_1
@@ -1439,10 +1439,10 @@
     iput-boolean p1, p0, Landroid/support/wearable/view/CircledImageView;->p:Z
 
     .line 290
-    iget-object v0, p0, Landroid/support/wearable/view/CircledImageView;->d:Ldefpackage/tf;
+    iget-object v0, p0, Landroid/support/wearable/view/CircledImageView;->d:Ltf;
 
     .line 291
-    .local v0, "tfVar":Ldefpackage/tf;
+    .local v0, "tfVar":Ltf;
     if-eqz p1, :cond_0
 
     invoke-virtual {p0}, Landroid/support/wearable/view/CircledImageView;->b()F
@@ -1457,16 +1457,16 @@
     move-result v1
 
     :goto_0
-    iput v1, v0, Ldefpackage/tf;->c:F
+    iput v1, v0, Ltf;->c:F
 
     .line 292
-    invoke-virtual {v0}, Ldefpackage/tf;->b()V
+    invoke-virtual {v0}, Ltf;->b()V
 
     .line 293
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 295
-    .end local v0    # "tfVar":Ldefpackage/tf;
+    .end local v0    # "tfVar":Ltf;
     :cond_1
     return-void
 .end method

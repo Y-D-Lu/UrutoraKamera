@@ -57,15 +57,15 @@
     .local v8, "canvas2":Landroid/graphics/Canvas;
     move-object/from16 v9, p1
 
-    check-cast v9, Ldefpackage/ivc;
+    check-cast v9, Livc;
 
     .line 51
-    .local v9, "ivcVar":Ldefpackage/ivc;
+    .local v9, "ivcVar":Livc;
     iget-object v10, v1, Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;->a:Landroid/graphics/RectF;
 
     .line 52
     .local v10, "rectF":Landroid/graphics/RectF;
-    iget-object v2, v9, Ldefpackage/ivc;->c:Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;
+    iget-object v2, v9, Livc;->c:Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;
 
     invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
 
@@ -96,7 +96,7 @@
 
     .line 56
     .local v11, "min":F
-    iget v2, v9, Ldefpackage/ivc;->d:I
+    iget v2, v9, Livc;->d:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -109,7 +109,7 @@
 
     .line 91
     .local v13, "f18":F
-    iget v14, v9, Ldefpackage/ivc;->b:F
+    iget v14, v9, Livc;->b:F
 
     .line 92
     .local v14, "f19":F
@@ -117,7 +117,7 @@
 
     .line 93
     .local v15, "f20":F
-    iget v7, v9, Ldefpackage/ivc;->b:F
+    iget v7, v9, Livc;->b:F
 
     .line 94
     .local v7, "f21":F
@@ -143,7 +143,7 @@
 
     const/4 v6, 0x0
 
-    iget-object v2, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v2, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object/from16 v16, v2
 
@@ -164,13 +164,13 @@
 
     iget v6, v10, Landroid/graphics/RectF;->bottom:F
 
-    iget v4, v9, Ldefpackage/ivc;->b:F
+    iget v4, v9, Livc;->b:F
 
     sub-float/2addr v2, v4
 
     add-float v5, v2, v12
 
-    iget-object v7, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v7, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object v2, v8
 
@@ -185,13 +185,13 @@
 
     sub-float v4, v2, v11
 
-    iget v3, v9, Ldefpackage/ivc;->b:F
+    iget v3, v9, Livc;->b:F
 
     sub-float/2addr v2, v3
 
     add-float v6, v2, v12
 
-    iget-object v7, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v7, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object v2, v8
 
@@ -216,7 +216,7 @@
 
     .line 82
     .local v14, "f14":F
-    iget v15, v9, Ldefpackage/ivc;->b:F
+    iget v15, v9, Livc;->b:F
 
     .line 83
     .local v15, "f15":F
@@ -224,7 +224,7 @@
 
     .line 84
     .local v7, "f16":F
-    iget v6, v9, Ldefpackage/ivc;->b:F
+    iget v6, v9, Livc;->b:F
 
     .line 85
     .local v6, "f17":F
@@ -248,7 +248,7 @@
 
     const/16 v16, 0x0
 
-    iget-object v2, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v2, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object/from16 v17, v2
 
@@ -271,7 +271,7 @@
     .line 86
     iget v2, v10, Landroid/graphics/RectF;->left:F
 
-    iget v3, v9, Ldefpackage/ivc;->b:F
+    iget v3, v9, Livc;->b:F
 
     add-float/2addr v3, v2
 
@@ -281,7 +281,7 @@
 
     add-float v5, v2, v11
 
-    iget-object v7, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v7, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object v2, v8
 
@@ -296,13 +296,13 @@
 
     sub-float v4, v2, v11
 
-    iget v3, v9, Ldefpackage/ivc;->b:F
+    iget v3, v9, Livc;->b:F
 
     sub-float/2addr v2, v3
 
     add-float v6, v2, v12
 
-    iget-object v7, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v7, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object v2, v8
 
@@ -324,7 +324,7 @@
 
     .line 70
     .local v13, "f7":F
-    iget v14, v9, Ldefpackage/ivc;->b:F
+    iget v14, v9, Livc;->b:F
 
     .line 71
     .local v14, "f8":F
@@ -340,7 +340,7 @@
 
     .line 74
     .local v6, "f11":F
-    iget v5, v9, Ldefpackage/ivc;->b:F
+    iget v5, v9, Livc;->b:F
 
     .line 75
     .local v5, "f12":F
@@ -362,7 +362,7 @@
 
     const/16 v17, 0x0
 
-    iget-object v2, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v2, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object/from16 v18, v2
 
@@ -395,13 +395,13 @@
 
     iget v6, v10, Landroid/graphics/RectF;->top:F
 
-    iget v4, v9, Ldefpackage/ivc;->b:F
+    iget v4, v9, Livc;->b:F
 
     sub-float/2addr v2, v4
 
     add-float v5, v2, v12
 
-    iget-object v7, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v7, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object v2, v8
 
@@ -414,7 +414,7 @@
 
     iget v2, v10, Landroid/graphics/RectF;->top:F
 
-    iget v3, v9, Ldefpackage/ivc;->b:F
+    iget v3, v9, Livc;->b:F
 
     add-float/2addr v3, v2
 
@@ -422,7 +422,7 @@
 
     add-float v6, v2, v11
 
-    iget-object v7, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v7, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object v2, v8
 
@@ -453,7 +453,7 @@
 
     .line 61
     .local v15, "f3":F
-    iget v7, v9, Ldefpackage/ivc;->b:F
+    iget v7, v9, Livc;->b:F
 
     .line 62
     .local v7, "f4":F
@@ -461,7 +461,7 @@
 
     .line 63
     .local v6, "f5":F
-    iget v5, v9, Ldefpackage/ivc;->b:F
+    iget v5, v9, Livc;->b:F
 
     .line 64
     .local v5, "f6":F
@@ -483,7 +483,7 @@
 
     const/16 v17, 0x0
 
-    iget-object v2, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v2, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object/from16 v18, v2
 
@@ -512,7 +512,7 @@
     .line 65
     iget v2, v10, Landroid/graphics/RectF;->left:F
 
-    iget v3, v9, Ldefpackage/ivc;->b:F
+    iget v3, v9, Livc;->b:F
 
     add-float/2addr v3, v2
 
@@ -522,7 +522,7 @@
 
     add-float v5, v2, v11
 
-    iget-object v7, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v7, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object v2, v8
 
@@ -535,7 +535,7 @@
 
     iget v2, v10, Landroid/graphics/RectF;->top:F
 
-    iget v3, v9, Ldefpackage/ivc;->b:F
+    iget v3, v9, Livc;->b:F
 
     add-float/2addr v3, v2
 
@@ -543,7 +543,7 @@
 
     add-float v6, v2, v11
 
-    iget-object v7, v9, Ldefpackage/ivc;->a:Landroid/graphics/Paint;
+    iget-object v7, v9, Livc;->a:Landroid/graphics/Paint;
 
     move-object v2, v8
 

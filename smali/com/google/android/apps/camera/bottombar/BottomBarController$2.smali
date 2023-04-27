@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/bottombar/BottomBarController;-><init>(Lcom/google/android/apps/camera/bottombar/BottomBar;Ldefpackage/img;Ldefpackage/ojc;)V
+    value = Lcom/google/android/apps/camera/bottombar/BottomBarController;-><init>(Lcom/google/android/apps/camera/bottombar/BottomBar;Limg;Lojc;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,11 +22,11 @@
 
 .field public final synthetic val$bottomBar:Lcom/google/android/apps/camera/bottombar/BottomBar;
 
-.field public final synthetic val$imgVar:Ldefpackage/img;
+.field public final synthetic val$imgVar:Limg;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/bottombar/BottomBarController;Lcom/google/android/apps/camera/bottombar/BottomBar;Ldefpackage/img;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/bottombar/BottomBarController;Lcom/google/android/apps/camera/bottombar/BottomBar;Limg;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/bottombar/BottomBarController;
 
@@ -35,7 +35,7 @@
 
     iput-object p2, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;->val$bottomBar:Lcom/google/android/apps/camera/bottombar/BottomBar;
 
-    iput-object p3, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;->val$imgVar:Ldefpackage/img;
+    iput-object p3, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;->val$imgVar:Limg;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,9 +50,9 @@
     .line 225
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;->val$bottomBar:Lcom/google/android/apps/camera/bottombar/BottomBar;
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;->val$imgVar:Ldefpackage/img;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;->val$imgVar:Limg;
 
-    invoke-virtual {v0, v1}, Lcom/google/android/apps/camera/bottombar/BottomBar;->setSysUiFlagApplier(Ldefpackage/img;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/apps/camera/bottombar/BottomBar;->setSysUiFlagApplier(Limg;)V
 
     .line 226
     return-void

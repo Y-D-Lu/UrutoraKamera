@@ -57,11 +57,11 @@
 
     .line 33
     :pswitch_1
-    invoke-static {}, Ldefpackage/kkm;->a()Ldefpackage/kkm;
+    invoke-static {}, Lkkm;->a()Lkkm;
 
     move-result-object v0
 
-    iget-object v0, v0, Ldefpackage/kkm;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lkkm;->a:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -101,11 +101,11 @@
     if-eqz v0, :cond_0
 
     .line 26
-    invoke-static {}, Ldefpackage/kkm;->a()Ldefpackage/kkm;
+    invoke-static {}, Lkkm;->a()Lkkm;
 
     move-result-object v0
 
-    iget-object v0, v0, Ldefpackage/kkm;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lkkm;->a:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -151,7 +151,7 @@
     .param p1, "view"    # Landroid/view/View;
 
     .line 42
-    instance-of v0, p1, Ldefpackage/ock;
+    instance-of v0, p1, Lock;
 
     return v0
 .end method

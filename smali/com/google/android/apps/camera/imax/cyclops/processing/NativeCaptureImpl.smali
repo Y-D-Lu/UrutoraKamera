@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/ejo;
+.implements Lejo;
 
 
 # instance fields

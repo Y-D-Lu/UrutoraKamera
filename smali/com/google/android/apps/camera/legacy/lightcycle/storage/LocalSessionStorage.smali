@@ -9,7 +9,7 @@
 # instance fields
 .field public a:Ljava/lang/String;
 
-.field public b:Ldefpackage/hqz;
+.field public b:Lhqz;
 
 .field public c:Ljava/lang/String;
 

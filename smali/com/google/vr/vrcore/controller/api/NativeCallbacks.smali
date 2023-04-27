@@ -72,9 +72,9 @@
 .method private native handleTrackingStatusEvent(JIJI)V
 .end method
 
-.method private final j(Ldefpackage/pxs;)V
+.method private final j(Lpxs;)V
     .locals 2
-    .param p1, "r14"    # Ldefpackage/pxs;
+    .param p1, "r14"    # Lpxs;
 
     .line 152
     new-instance v0, Ljava/lang/UnsupportedOperationException;
@@ -88,9 +88,9 @@
 
 
 # virtual methods
-.method public final declared-synchronized a(Ldefpackage/pxs;)V
+.method public final declared-synchronized a(Lpxs;)V
     .locals 1
-    .param p1, "pxsVar"    # Ldefpackage/pxs;
+    .param p1, "pxsVar"    # Lpxs;
 
     monitor-enter p0
 
@@ -101,7 +101,7 @@
     if-nez v0, :cond_0
 
     .line 158
-    invoke-direct {p0, p1}, Lcom/google/vr/vrcore/controller/api/NativeCallbacks;->j(Ldefpackage/pxs;)V
+    invoke-direct {p0, p1}, Lcom/google/vr/vrcore/controller/api/NativeCallbacks;->j(Lpxs;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -113,7 +113,7 @@
     return-void
 
     .line 156
-    .end local p1    # "pxsVar":Ldefpackage/pxs;
+    .end local p1    # "pxsVar":Lpxs;
     :catchall_0
     move-exception p1
 
@@ -122,9 +122,9 @@
     throw p1
 .end method
 
-.method public final declared-synchronized b(Ldefpackage/pxr;)V
+.method public final declared-synchronized b(Lpxr;)V
     .locals 2
-    .param p1, "r13"    # Ldefpackage/pxr;
+    .param p1, "r13"    # Lpxr;
 
     monitor-enter p0
 
@@ -142,7 +142,7 @@
 
     .line 249
     .end local p0    # "this":Lcom/google/vr/vrcore/controller/api/NativeCallbacks;
-    .end local p1    # "r13":Ldefpackage/pxr;
+    .end local p1    # "r13":Lpxr;
     :catchall_0
     move-exception p1
 
@@ -151,9 +151,9 @@
     throw p1
 .end method
 
-.method public final declared-synchronized c(Ldefpackage/pxv;)V
+.method public final declared-synchronized c(Lpxv;)V
     .locals 11
-    .param p1, "pxvVar"    # Ldefpackage/pxv;
+    .param p1, "pxvVar"    # Lpxv;
 
     monitor-enter p0
 
@@ -166,17 +166,17 @@
     .line 255
     iget-wide v2, p0, Lcom/google/vr/vrcore/controller/api/NativeCallbacks;->a:J
 
-    iget v4, p1, Ldefpackage/pxq;->e:I
+    iget v4, p1, Lpxq;->e:I
 
-    iget-wide v5, p1, Ldefpackage/pxq;->d:J
+    iget-wide v5, p1, Lpxq;->d:J
 
-    iget v7, p1, Ldefpackage/pxv;->a:F
+    iget v7, p1, Lpxv;->a:F
 
-    iget v8, p1, Ldefpackage/pxv;->b:F
+    iget v8, p1, Lpxv;->b:F
 
-    iget v9, p1, Ldefpackage/pxv;->c:F
+    iget v9, p1, Lpxv;->c:F
 
-    iget v10, p1, Ldefpackage/pxv;->f:F
+    iget v10, p1, Lpxv;->f:F
 
     move-object v1, p0
 
@@ -192,7 +192,7 @@
     return-void
 
     .line 253
-    .end local p1    # "pxvVar":Ldefpackage/pxv;
+    .end local p1    # "pxvVar":Lpxv;
     :catchall_0
     move-exception p1
 

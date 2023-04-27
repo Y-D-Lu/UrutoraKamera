@@ -1,64 +1,73 @@
-.class final Ldefpackage/gm;
-.super Landroid/animation/AnimatorListenerAdapter;
+.class public Ldefpackage/Gm;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljwu;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljhe;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/gp;
+.field public final synthetic this$0:Ljhe;
+
+.field public final synthetic val$a:Lpyn;
+
+.field public final synthetic val$ljfVar:Lljf;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/gp;)V
+.method public constructor <init>(Ljhe;Lpyn;Lljf;)V
     .locals 0
-    .param p1, "gpVar"    # Ldefpackage/gp;
+    .param p1, "this$0"    # Ljhe;
 
-    .line 11
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    .line 168
+    iput-object p1, p0, Ldefpackage/Gm;->this$0:Ljhe;
 
-    .line 12
-    iput-object p1, p0, Ldefpackage/gm;->a:Ldefpackage/gp;
+    iput-object p2, p0, Ldefpackage/Gm;->val$a:Lpyn;
 
-    .line 13
+    iput-object p3, p0, Ldefpackage/Gm;->val$ljfVar:Lljf;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 1
-    .param p1, "animator"    # Landroid/animation/Animator;
+.method public final a(Ljww;)Ljws;
+    .locals 5
+    .param p1, "jwwVar"    # Ljww;
 
-    .line 17
-    iget-object v0, p0, Ldefpackage/gm;->a:Ldefpackage/gp;
+    .line 171
+    iget-object v0, p0, Ldefpackage/Gm;->val$a:Lpyn;
 
-    invoke-interface {v0}, Ldefpackage/gp;->a()V
+    .line 172
+    .local v0, "pynVar":Lpyn;
+    new-instance v1, Ljno;
 
-    .line 18
-    return-void
-.end method
+    invoke-interface {p1}, Ljww;->b()Lmpi;
 
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 1
-    .param p1, "animator"    # Landroid/animation/Animator;
+    move-result-object v2
 
-    .line 22
-    iget-object v0, p0, Ldefpackage/gm;->a:Ldefpackage/gp;
+    invoke-interface {v0}, Lpyn;->get()Ljava/lang/Object;
 
-    invoke-interface {v0}, Ldefpackage/gp;->b()V
+    move-result-object v3
 
-    .line 23
-    return-void
-.end method
+    check-cast v3, Ljnn;
 
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 1
-    .param p1, "animator"    # Landroid/animation/Animator;
+    iget-object v4, p0, Ldefpackage/Gm;->val$ljfVar:Lljf;
 
-    .line 27
-    iget-object v0, p0, Ldefpackage/gm;->a:Ldefpackage/gp;
+    invoke-direct {v1, v2, v3, v4}, Ljno;-><init>(Lmpi;Ljnn;Lljf;)V
 
-    invoke-interface {v0}, Ldefpackage/gp;->c()V
-
-    .line 28
-    return-void
+    return-object v1
 .end method

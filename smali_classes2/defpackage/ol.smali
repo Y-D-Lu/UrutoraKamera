@@ -1,47 +1,59 @@
-.class public final Ldefpackage/ol;
+.class public Ldefpackage/Ol;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljap;->c()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/om;
+.field public final synthetic this$0:Ljap;
+
+.field public final synthetic val$connectivityManager:Landroid/net/ConnectivityManager;
+
+.field public final synthetic val$jalVar:Ljal;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/om;)V
+.method public constructor <init>(Ljap;Landroid/net/ConnectivityManager;Ljal;)V
     .locals 0
-    .param p1, "omVar"    # Ldefpackage/om;
+    .param p1, "this$0"    # Ljap;
 
-    .line 9
+    .line 96
+    iput-object p1, p0, Ldefpackage/Ol;->this$0:Ljap;
+
+    iput-object p2, p0, Ldefpackage/Ol;->val$connectivityManager:Landroid/net/ConnectivityManager;
+
+    iput-object p3, p0, Ldefpackage/Ol;->val$jalVar:Ljal;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
-    iput-object p1, p0, Ldefpackage/ol;->a:Ldefpackage/om;
-
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final close()V
     .locals 2
 
-    .line 15
-    iget-object v0, p0, Ldefpackage/ol;->a:Ldefpackage/om;
+    .line 99
+    iget-object v0, p0, Ldefpackage/Ol;->val$connectivityManager:Landroid/net/ConnectivityManager;
 
-    .line 16
-    .local v0, "omVar":Ldefpackage/om;
-    const/4 v1, 0x0
+    iget-object v1, p0, Ldefpackage/Ol;->val$jalVar:Ljal;
 
-    iput-object v1, v0, Ldefpackage/om;->b:Ldefpackage/ol;
+    invoke-virtual {v0, v1}, Landroid/net/ConnectivityManager;->unregisterNetworkCallback(Landroid/net/ConnectivityManager$NetworkCallback;)V
 
-    .line 17
-    invoke-virtual {v0}, Ldefpackage/om;->drawableStateChanged()V
-
-    .line 18
+    .line 100
     return-void
 .end method

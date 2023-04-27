@@ -1,160 +1,165 @@
-.class public final Ldefpackage/iv;
-.super Landroid/support/v7/widget/ContentFrameLayout;
+.class public Ldefpackage/Iv;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Lmff;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmfe;-><init>(Ldhd;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/iy;
+.field public final synthetic this$0:Lmfe;
+
+.field public final synthetic val$dhdVar:Ldhd;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/iy;Landroid/content/Context;)V
+.method public constructor <init>(Lmfe;Ldhd;)V
     .locals 0
-    .param p1, "iyVar"    # Ldefpackage/iy;
-    .param p2, "context"    # Landroid/content/Context;
+    .param p1, "this$0"    # Lmfe;
 
-    .line 16
-    invoke-direct {p0, p2}, Landroid/support/v7/widget/ContentFrameLayout;-><init>(Landroid/content/Context;)V
+    .line 161
+    iput-object p1, p0, Ldefpackage/Iv;->this$0:Lmfe;
 
-    .line 17
-    iput-object p1, p0, Ldefpackage/iv;->a:Ldefpackage/iy;
+    iput-object p2, p0, Ldefpackage/Iv;->val$dhdVar:Ldhd;
 
-    .line 18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-    .locals 1
-    .param p1, "keyEvent"    # Landroid/view/KeyEvent;
+.method public final a(D)V
+    .locals 13
+    .param p1, "d"    # D
 
-    .line 22
-    iget-object v0, p0, Ldefpackage/iv;->a:Ldefpackage/iy;
+    .line 164
+    const/4 v0, -0x1
 
-    invoke-virtual {v0, p1}, Ldefpackage/iy;->D(Landroid/view/KeyEvent;)Z
+    packed-switch v0, :pswitch_data_0
 
-    move-result v0
+    .line 184
+    iget-object v0, p0, Ldefpackage/Iv;->val$dhdVar:Ldhd;
 
-    if-nez v0, :cond_1
+    const/4 v1, 0x6
 
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    const-wide/high16 v4, 0x3fd0000000000000L    # 0.25
 
-    move-result v0
+    move-wide v2, p1
 
-    if-eqz v0, :cond_0
+    invoke-virtual/range {v0 .. v5}, Ldhd;->a(IDD)V
 
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
-    :goto_1
-    return v0
-.end method
-
-.method public final onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 5
-    .param p1, "motionEvent"    # Landroid/view/MotionEvent;
-
-    .line 27
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 28
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    .line 29
-    .local v0, "x":I
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
-
-    move-result v1
-
-    float-to-int v1, v1
-
-    .line 30
-    .local v1, "y":I
-    const/4 v2, -0x5
-
-    if-lt v0, v2, :cond_0
-
-    if-lt v1, v2, :cond_0
-
-    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getWidth()I
-
-    move-result v2
-
-    add-int/lit8 v2, v2, 0x5
-
-    if-gt v0, v2, :cond_0
-
-    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getHeight()I
-
-    move-result v2
-
-    add-int/lit8 v2, v2, 0x5
-
-    if-le v1, v2, :cond_1
-
-    .line 31
-    :cond_0
-    iget-object v2, p0, Ldefpackage/iv;->a:Ldefpackage/iy;
-
-    .line 32
-    .local v2, "iyVar":Ldefpackage/iy;
-    const/4 v3, 0x0
-
-    invoke-virtual {v2, v3}, Ldefpackage/iy;->J(I)Ldefpackage/iw;
-
-    move-result-object v3
-
-    const/4 v4, 0x1
-
-    invoke-virtual {v2, v3, v4}, Ldefpackage/iy;->x(Ldefpackage/iw;Z)V
-
-    .line 33
-    return v4
-
-    .line 36
-    .end local v0    # "x":I
-    .end local v1    # "y":I
-    .end local v2    # "iyVar":Ldefpackage/iy;
-    :cond_1
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final setBackgroundResource(I)V
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 41
-    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0, p1}, Ldefpackage/jr;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
-
-    .line 42
+    .line 185
     return-void
+
+    .line 181
+    :pswitch_0
+    iget-object v1, p0, Ldefpackage/Iv;->val$dhdVar:Ldhd;
+
+    const/4 v2, 0x5
+
+    const-wide v5, 0x405f400000000000L    # 125.0
+
+    move-wide v3, p1
+
+    invoke-virtual/range {v1 .. v6}, Ldhd;->a(IDD)V
+
+    .line 182
+    return-void
+
+    .line 178
+    :pswitch_1
+    iget-object v7, p0, Ldefpackage/Iv;->val$dhdVar:Ldhd;
+
+    const/4 v8, 0x4
+
+    const-wide/high16 v11, 0x3fd0000000000000L    # 0.25
+
+    move-wide v9, p1
+
+    invoke-virtual/range {v7 .. v12}, Ldhd;->a(IDD)V
+
+    .line 179
+    return-void
+
+    .line 175
+    :pswitch_2
+    iget-object v0, p0, Ldefpackage/Iv;->val$dhdVar:Ldhd;
+
+    const/4 v1, 0x3
+
+    const-wide v4, 0x4051800000000000L    # 70.0
+
+    move-wide v2, p1
+
+    invoke-virtual/range {v0 .. v5}, Ldhd;->a(IDD)V
+
+    .line 176
+    return-void
+
+    .line 172
+    :pswitch_3
+    iget-object v6, p0, Ldefpackage/Iv;->val$dhdVar:Ldhd;
+
+    const/4 v7, 0x2
+
+    const-wide v10, 0x3ff199999999999aL    # 1.1
+
+    move-wide v8, p1
+
+    invoke-virtual/range {v6 .. v11}, Ldhd;->a(IDD)V
+
+    .line 173
+    return-void
+
+    .line 169
+    :pswitch_4
+    iget-object v0, p0, Ldefpackage/Iv;->val$dhdVar:Ldhd;
+
+    const/4 v1, 0x0
+
+    const-wide v4, 0x4051800000000000L    # 70.0
+
+    move-wide v2, p1
+
+    invoke-virtual/range {v0 .. v5}, Ldhd;->a(IDD)V
+
+    .line 170
+    return-void
+
+    .line 166
+    :pswitch_5
+    iget-object v6, p0, Ldefpackage/Iv;->val$dhdVar:Ldhd;
+
+    const/4 v7, 0x1
+
+    const-wide/high16 v10, 0x3fd0000000000000L    # 0.25
+
+    move-wide v8, p1
+
+    invoke-virtual/range {v6 .. v11}, Ldhd;->a(IDD)V
+
+    .line 167
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

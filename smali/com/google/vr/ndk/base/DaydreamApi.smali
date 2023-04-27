@@ -19,9 +19,9 @@
 
 .field public final d:Landroid/content/ServiceConnection;
 
-.field public e:Ldefpackage/pxm;
+.field public e:Lpxm;
 
-.field public f:Ldefpackage/pxk;
+.field public f:Lpxk;
 
 .field private h:Z
 
@@ -62,9 +62,9 @@
     iput-object v0, p0, Lcom/google/vr/ndk/base/DaydreamApi;->i:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 41
-    new-instance v0, Ldefpackage/pwr;
+    new-instance v0, Lpwr;
 
-    invoke-direct {v0, p0}, Ldefpackage/pwr;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;)V
+    invoke-direct {v0, p0}, Lpwr;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;)V
 
     iput-object v0, p0, Lcom/google/vr/ndk/base/DaydreamApi;->d:Landroid/content/ServiceConnection;
 
@@ -420,9 +420,9 @@
     .param p2, "componentName"    # Landroid/content/ComponentName;
 
     .line 110
-    new-instance v0, Ldefpackage/pws;
+    new-instance v0, Lpws;
 
-    invoke-direct {v0, p0, p1, p2}, Ldefpackage/pws;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;Landroid/app/PendingIntent;Landroid/content/ComponentName;)V
+    invoke-direct {v0, p0, p1, p2}, Lpws;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;Landroid/app/PendingIntent;Landroid/content/ComponentName;)V
 
     invoke-virtual {p0, v0}, Lcom/google/vr/ndk/base/DaydreamApi;->a(Ljava/lang/Runnable;)V
 
@@ -455,7 +455,7 @@
     .param p1, "runnable"    # Ljava/lang/Runnable;
 
     .line 120
-    iget-object v0, p0, Lcom/google/vr/ndk/base/DaydreamApi;->e:Ldefpackage/pxm;
+    iget-object v0, p0, Lcom/google/vr/ndk/base/DaydreamApi;->e:Lpxm;
 
     if-eqz v0, :cond_0
 
@@ -493,9 +493,9 @@
     iput-boolean v0, p0, Lcom/google/vr/ndk/base/DaydreamApi;->h:Z
 
     .line 133
-    new-instance v1, Ldefpackage/pwu;
+    new-instance v1, Lpwu;
 
-    invoke-direct {v1, p0, v0}, Ldefpackage/pwu;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;I)V
+    invoke-direct {v1, p0, v0}, Lpwu;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;I)V
 
     invoke-virtual {p0, v1}, Lcom/google/vr/ndk/base/DaydreamApi;->a(Ljava/lang/Runnable;)V
 
@@ -532,13 +532,13 @@
 
     .line 142
     .local v0, "createPendingResult":Landroid/app/PendingIntent;
-    new-instance v1, Ldefpackage/pwx;
+    new-instance v1, Lpwx;
 
-    new-instance v2, Ldefpackage/pww;
+    new-instance v2, Lpww;
 
-    invoke-direct {v2, v0}, Ldefpackage/pww;-><init>(Landroid/app/PendingIntent;)V
+    invoke-direct {v2, v0}, Lpww;-><init>(Landroid/app/PendingIntent;)V
 
-    invoke-direct {v1, p0, v2, v0}, Ldefpackage/pwx;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;Ljava/lang/Runnable;Landroid/app/PendingIntent;)V
+    invoke-direct {v1, p0, v2, v0}, Lpwx;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;Ljava/lang/Runnable;Landroid/app/PendingIntent;)V
 
     invoke-virtual {p0, v1}, Lcom/google/vr/ndk/base/DaydreamApi;->a(Ljava/lang/Runnable;)V
 
@@ -671,13 +671,13 @@
     invoke-direct {p0}, Lcom/google/vr/ndk/base/DaydreamApi;->c()V
 
     .line 173
-    new-instance v0, Ldefpackage/pwt;
+    new-instance v0, Lpwt;
 
-    new-instance v1, Ldefpackage/pxl;
+    new-instance v1, Lpxl;
 
-    invoke-direct {v1, p1, p2, p3}, Ldefpackage/pxl;-><init>(Landroid/app/Activity;Landroid/app/PendingIntent;I)V
+    invoke-direct {v1, p1, p2, p3}, Lpxl;-><init>(Landroid/app/Activity;Landroid/app/PendingIntent;I)V
 
-    invoke-direct {v0, p0, v1}, Ldefpackage/pwt;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;Ldefpackage/pxl;)V
+    invoke-direct {v0, p0, v1}, Lpwt;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;Lpxl;)V
 
     invoke-virtual {p0, v0}, Lcom/google/vr/ndk/base/DaydreamApi;->a(Ljava/lang/Runnable;)V
 
@@ -692,11 +692,11 @@
     invoke-direct {p0}, Lcom/google/vr/ndk/base/DaydreamApi;->c()V
 
     .line 178
-    new-instance v0, Ldefpackage/pwu;
+    new-instance v0, Lpwu;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Ldefpackage/pwu;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;I)V
+    invoke-direct {v0, p0, v1}, Lpwu;-><init>(Lcom/google/vr/ndk/base/DaydreamApi;I)V
 
     invoke-virtual {p0, v0}, Lcom/google/vr/ndk/base/DaydreamApi;->a(Ljava/lang/Runnable;)V
 

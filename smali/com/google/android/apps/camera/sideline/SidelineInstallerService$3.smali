@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/pgj;
+.implements Lpgj;
 
 
 # annotations
@@ -20,20 +20,20 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
-.field public final synthetic val$hwhVar2:Ldefpackage/hwh;
+.field public final synthetic val$hwhVar2:Lhwh;
 
 .field public final synthetic val$uptimeMillis:J
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Ldefpackage/hwh;J)V
+.method public constructor <init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Lhwh;J)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
     .line 243
     iput-object p1, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;->this$0:Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;->val$hwhVar2:Ldefpackage/hwh;
+    iput-object p2, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;->val$hwhVar2:Lhwh;
 
     iput-wide p3, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;->val$uptimeMillis:J
 
@@ -44,31 +44,31 @@
 
 
 # virtual methods
-.method public final a()Ldefpackage/pht;
+.method public final a()Lpht;
     .locals 6
 
     .line 246
-    iget-object v0, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;->val$hwhVar2:Ldefpackage/hwh;
+    iget-object v0, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;->val$hwhVar2:Lhwh;
 
     .line 247
-    .local v0, "hwhVar3":Ldefpackage/hwh;
+    .local v0, "hwhVar3":Lhwh;
     iget-wide v1, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;->val$uptimeMillis:J
 
     .line 248
     .local v1, "j3":J
-    iget-object v3, v0, Ldefpackage/hwh;->l:Ldefpackage/dkl;
+    iget-object v3, v0, Lhwh;->l:Ldkl;
 
-    iget-object v3, v3, Ldefpackage/dkl;->b:Ldefpackage/pih;
+    iget-object v3, v3, Ldkl;->b:Lpih;
 
     .line 249
-    .local v3, "c2":Ldefpackage/pht;
-    new-instance v4, Ldefpackage/hwg;
+    .local v3, "c2":Lpht;
+    new-instance v4, Lhwg;
 
-    invoke-direct {v4, v0, v1, v2}, Ldefpackage/hwg;-><init>(Ldefpackage/hwh;J)V
+    invoke-direct {v4, v0, v1, v2}, Lhwg;-><init>(Lhwh;J)V
 
-    iget-object v5, v0, Ldefpackage/hwh;->h:Ldefpackage/lar;
+    iget-object v5, v0, Lhwh;->h:Llar;
 
-    invoke-static {v3, v4, v5}, Ldefpackage/plk;->af(Ldefpackage/pht;Ldefpackage/phh;Ljava/util/concurrent/Executor;)V
+    invoke-static {v3, v4, v5}, Lplk;->af(Lpht;Lphh;Ljava/util/concurrent/Executor;)V
 
     .line 250
     return-object v3

@@ -27,11 +27,11 @@
     .locals 2
 
     .line 10
-    new-instance v0, Ldefpackage/ba;
+    new-instance v0, Lba;
 
     const/16 v1, 0xc
 
-    invoke-direct {v0, v1}, Ldefpackage/ba;-><init>(I)V
+    invoke-direct {v0, v1}, Lba;-><init>(I)V
 
     sput-object v0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->CREATOR:Landroid/os/Parcelable$Creator;
 

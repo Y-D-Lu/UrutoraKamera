@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/mmc;
+.implements Lmmc;
 
 
 # annotations
@@ -64,7 +64,7 @@
 
     const-string v1, "bufferflinger"
 
-    invoke-static {v0, v1}, Ldefpackage/lil;->b(Ljava/lang/Class;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Llil;->b(Ljava/lang/Class;Ljava/lang/String;)V
 
     .line 58
     invoke-static {}, Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger;->nativeInit()V

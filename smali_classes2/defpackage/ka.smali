@@ -1,187 +1,179 @@
-.class final Ldefpackage/ka;
+.class public Ldefpackage/Ka;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/view/MenuItem$OnMenuItemClickListener;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field private static final a:[Ljava/lang/Class;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfah;->u()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private final b:Ljava/lang/Object;
+.field public final synthetic this$0:Lfah;
 
-.field private c:Ljava/lang/reflect/Method;
+.field public final synthetic val$bArr2:[B
+
+.field public final synthetic val$ezrVar:Lezr;
+
+.field public final synthetic val$uri:Landroid/net/Uri;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lfah;Lezr;Landroid/net/Uri;[B)V
+    .locals 0
+    .param p1, "this$0"    # Lfah;
 
-    .line 11
-    const/4 v0, 0x1
+    .line 253
+    iput-object p1, p0, Ldefpackage/Ka;->this$0:Lfah;
 
-    new-array v0, v0, [Ljava/lang/Class;
+    iput-object p2, p0, Ldefpackage/Ka;->val$ezrVar:Lezr;
 
-    const/4 v1, 0x0
+    iput-object p3, p0, Ldefpackage/Ka;->val$uri:Landroid/net/Uri;
 
-    const-class v2, Landroid/view/MenuItem;
+    iput-object p4, p0, Ldefpackage/Ka;->val$bArr2:[B
 
-    aput-object v2, v0, v1
-
-    sput-object v0, Ldefpackage/ka;->a:[Ljava/lang/Class;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;)V
-    .locals 5
-    .param p1, "obj"    # Ljava/lang/Object;
-    .param p2, "str"    # Ljava/lang/String;
-
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
-    iput-object p1, p0, Ldefpackage/ka;->b:Ljava/lang/Object;
-
-    .line 17
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v0
-
-    .line 19
-    .local v0, "cls":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
-    :try_start_0
-    sget-object v1, Ldefpackage/ka;->a:[Ljava/lang/Class;
-
-    invoke-virtual {v0, p2, v1}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    iput-object v1, p0, Ldefpackage/ka;->c:Ljava/lang/reflect/Method;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 24
-    nop
-
-    .line 25
     return-void
-
-    .line 20
-    :catch_0
-    move-exception v1
-
-    .line 21
-    .local v1, "e":Ljava/lang/Exception;
-    new-instance v2, Landroid/view/InflateException;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "Couldn\'t resolve menu item onClick handler "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v4, " in class "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-direct {v2, v3}, Landroid/view/InflateException;-><init>(Ljava/lang/String;)V
-
-    .line 22
-    .local v2, "inflateException":Landroid/view/InflateException;
-    invoke-virtual {v2, v1}, Landroid/view/InflateException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
-
-    .line 23
-    throw v2
 .end method
 
 
 # virtual methods
-.method public final onMenuItemClick(Landroid/view/MenuItem;)Z
-    .locals 5
-    .param p1, "menuItem"    # Landroid/view/MenuItem;
+.method public final run()V
+    .locals 9
 
-    .line 30
+    .line 256
+    iget-object v0, p0, Ldefpackage/Ka;->val$ezrVar:Lezr;
+
+    .line 257
+    .local v0, "ezrVar2":Lezr;
+    iget-object v1, p0, Ldefpackage/Ka;->val$uri:Landroid/net/Uri;
+
+    .line 258
+    .local v1, "uri2":Landroid/net/Uri;
+    iget-object v2, p0, Ldefpackage/Ka;->val$bArr2:[B
+
+    .line 259
+    .local v2, "bArr3":[B
+    iget-object v3, v0, Lezr;->b:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/app/Activity;
+
+    .line 260
+    .local v3, "activity":Landroid/app/Activity;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 263
     :try_start_0
-    iget-object v0, p0, Ldefpackage/ka;->c:Ljava/lang/reflect/Method;
+    new-instance v4, Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
 
-    invoke-virtual {v0}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+    const-string v5, "w"
 
-    move-result-object v0
+    invoke-static {v3, v1, v5}, Lnhy;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
 
-    sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    move-result-object v5
 
-    const/4 v2, 0x0
+    invoke-virtual {v5}, Landroid/content/res/AssetFileDescriptor;->getParcelFileDescriptor()Landroid/os/ParcelFileDescriptor;
 
-    const/4 v3, 0x1
+    move-result-object v5
 
-    if-ne v0, v1, :cond_0
+    invoke-direct {v4, v5}, Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;-><init>(Landroid/os/ParcelFileDescriptor;)V
 
-    .line 31
-    iget-object v0, p0, Ldefpackage/ka;->c:Ljava/lang/reflect/Method;
+    .line 264
+    .local v4, "autoCloseOutputStream":Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
+    invoke-static {v2}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
-    iget-object v1, p0, Ldefpackage/ka;->b:Ljava/lang/Object;
+    .line 265
+    invoke-virtual {v4, v2}, Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;->write([B)V
 
-    new-array v3, v3, [Ljava/lang/Object;
-
-    aput-object p1, v3, v2
-
-    invoke-virtual {v0, v1, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    return v0
-
-    .line 33
-    :cond_0
-    iget-object v0, p0, Ldefpackage/ka;->c:Ljava/lang/reflect/Method;
-
-    iget-object v1, p0, Ldefpackage/ka;->b:Ljava/lang/Object;
-
-    new-array v4, v3, [Ljava/lang/Object;
-
-    aput-object p1, v4, v2
-
-    invoke-virtual {v0, v1, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .line 266
+    invoke-virtual {v4}, Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;->close()V
     :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 34
-    return v3
+    .line 269
+    .end local v4    # "autoCloseOutputStream":Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
+    nop
 
-    .line 35
+    .line 272
+    nop
+
+    .line 273
+    return-void
+
+    .line 270
     :catch_0
-    move-exception v0
+    move-exception v4
 
-    .line 36
-    .local v0, "e":Ljava/lang/Exception;
-    new-instance v1, Ljava/lang/RuntimeException;
+    goto :goto_0
 
-    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+    .line 267
+    :catch_1
+    move-exception v4
 
-    throw v1
+    .line 268
+    .local v4, "e":Ljava/io/IOException;
+    :try_start_1
+    new-instance v5, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v5, v4}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
+
+    .end local v0    # "ezrVar2":Lezr;
+    .end local v1    # "uri2":Landroid/net/Uri;
+    .end local v2    # "bArr3":[B
+    .end local v3    # "activity":Landroid/app/Activity;
+    .end local p0    # "this":Ldefpackage/Ka;
+    throw v5
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 271
+    .restart local v0    # "ezrVar2":Lezr;
+    .restart local v1    # "uri2":Landroid/net/Uri;
+    .restart local v2    # "bArr3":[B
+    .restart local v3    # "activity":Landroid/app/Activity;
+    .local v4, "e2":Ljava/lang/Exception;
+    .restart local p0    # "this":Ldefpackage/Ka;
+    :goto_0
+    new-instance v5, Ljava/lang/IllegalArgumentException;
+
+    const/4 v6, 0x2
+
+    new-array v6, v6, [Ljava/lang/Object;
+
+    const/4 v7, 0x0
+
+    aput-object v1, v6, v7
+
+    const/4 v7, 0x1
+
+    invoke-virtual {v3}, Landroid/app/Activity;->getReferrer()Landroid/net/Uri;
+
+    move-result-object v8
+
+    aput-object v8, v6, v7
+
+    const-string v7, "Could not open output uri %s for writing. Called from %s "
+
+    invoke-static {v7, v6}, Lobr;->aw(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-direct {v5, v6, v4}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v5
 .end method

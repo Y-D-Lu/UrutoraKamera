@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->b(Ldefpackage/mad;Ldefpackage/ger;Ldefpackage/gep;Ldefpackage/geo;)V
+    value = Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->b(Lmad;Lger;Lgep;Lgeo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,38 +24,38 @@
 
 .field public final synthetic val$f:Landroid/hardware/HardwareBuffer;
 
-.field public final synthetic val$geoVar:Ldefpackage/geo;
+.field public final synthetic val$geoVar:Lgeo;
 
-.field public final synthetic val$gepVar:Ldefpackage/gep;
+.field public final synthetic val$gepVar:Lgep;
 
-.field public final synthetic val$gerVar:Ldefpackage/ger;
+.field public final synthetic val$gerVar:Lger;
 
-.field public final synthetic val$madVar:Ldefpackage/mad;
+.field public final synthetic val$madVar:Lmad;
 
 .field public final synthetic val$shotMetadata:Lcom/google/googlex/gcam/ShotMetadata;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;Ldefpackage/mad;Ldefpackage/ger;Lcom/google/googlex/gcam/NormalizedRect;Lcom/google/googlex/gcam/ShotMetadata;Ldefpackage/gep;Landroid/hardware/HardwareBuffer;Ldefpackage/geo;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;Lmad;Lger;Lcom/google/googlex/gcam/NormalizedRect;Lcom/google/googlex/gcam/ShotMetadata;Lgep;Landroid/hardware/HardwareBuffer;Lgeo;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
 
     .line 80
     iput-object p1, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->this$0:Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$madVar:Ldefpackage/mad;
+    iput-object p2, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$madVar:Lmad;
 
-    iput-object p3, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$gerVar:Ldefpackage/ger;
+    iput-object p3, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$gerVar:Lger;
 
     iput-object p4, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$a:Lcom/google/googlex/gcam/NormalizedRect;
 
     iput-object p5, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$shotMetadata:Lcom/google/googlex/gcam/ShotMetadata;
 
-    iput-object p6, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$gepVar:Ldefpackage/gep;
+    iput-object p6, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$gepVar:Lgep;
 
     iput-object p7, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$f:Landroid/hardware/HardwareBuffer;
 
-    iput-object p8, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$geoVar:Ldefpackage/geo;
+    iput-object p8, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$geoVar:Lgeo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,7 +101,7 @@
     const/4 v13, 0x0
 
     .line 92
-    .local v13, "geoVar2":Ldefpackage/geo;
+    .local v13, "geoVar2":Lgeo;
     const/4 v14, 0x0
 
     .line 99
@@ -114,18 +114,18 @@
 
     .end local v2    # "hardwareBuffer":Landroid/hardware/HardwareBuffer;
     .local v16, "hardwareBuffer":Landroid/hardware/HardwareBuffer;
-    iget-object v2, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$madVar:Ldefpackage/mad;
+    iget-object v2, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$madVar:Lmad;
 
     .line 101
-    .local v2, "madVar2":Ldefpackage/mad;
+    .local v2, "madVar2":Lmad;
     move-wide/from16 v17, v3
 
     .end local v3    # "elapsedRealtimeNanos":J
     .local v17, "elapsedRealtimeNanos":J
-    iget-object v3, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$gerVar:Ldefpackage/ger;
+    iget-object v3, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$gerVar:Lger;
 
     .line 102
-    .local v3, "gerVar3":Ldefpackage/ger;
+    .local v3, "gerVar3":Lger;
     iget-object v4, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$a:Lcom/google/googlex/gcam/NormalizedRect;
 
     .line 103
@@ -142,10 +142,10 @@
 
     .end local v6    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .local v20, "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
-    iget-object v6, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$gepVar:Ldefpackage/gep;
+    iget-object v6, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$gepVar:Lgep;
 
     .line 105
-    .local v6, "gepVar3":Ldefpackage/gep;
+    .local v6, "gepVar3":Lgep;
     move-wide/from16 v21, v7
 
     .end local v7    # "j":J
@@ -154,10 +154,10 @@
 
     .line 106
     .local v7, "hardwareBuffer2":Landroid/hardware/HardwareBuffer;
-    iget-object v8, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$geoVar:Ldefpackage/geo;
+    iget-object v8, v1, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;->val$geoVar:Lgeo;
 
     .line 108
-    .local v8, "geoVar4":Ldefpackage/geo;
+    .local v8, "geoVar4":Lgeo;
     :try_start_0
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
@@ -166,16 +166,16 @@
     move-wide/from16 v17, v23
 
     .line 109
-    iget-object v0, v15, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->d:Ldefpackage/pko;
+    iget-object v0, v15, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->d:Lpko;
 
-    invoke-virtual {v0, v2}, Ldefpackage/pko;->b(Ldefpackage/mad;)Lcom/google/googlex/gcam/RawWriteView;
+    invoke-virtual {v0, v2}, Lpko;->b(Lmad;)Lcom/google/googlex/gcam/RawWriteView;
 
     move-result-object v0
 
     move-object/from16 v19, v0
 
     .line 110
-    iget-object v0, v3, Ldefpackage/ger;->c:Lcom/google/googlex/gcam/AeShotParams;
+    iget-object v0, v3, Lger;->c:Lcom/google/googlex/gcam/AeShotParams;
 
     .line 111
     .local v0, "aeShotParams3":Lcom/google/googlex/gcam/AeShotParams;
@@ -200,8 +200,8 @@
 
     const/4 v2, 0x1
 
-    .end local v2    # "madVar2":Ldefpackage/mad;
-    .local v44, "madVar2":Ldefpackage/mad;
+    .end local v2    # "madVar2":Lmad;
+    .local v44, "madVar2":Lmad;
     :try_start_2
     invoke-direct {v1, v9, v10, v2}, Lcom/google/googlex/gcam/AeShotParams;-><init>(JZ)V
     :try_end_2
@@ -241,10 +241,10 @@
     move-wide/from16 v11, v22
 
     .line 116
-    iget-object v2, v15, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Ldefpackage/lis;
+    iget-object v2, v15, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Llis;
 
     .line 117
-    .local v2, "lisVar":Ldefpackage/lis;
+    .local v2, "lisVar":Llis;
     invoke-virtual {v1}, Lcom/google/googlex/gcam/AeShotParams;->c()Lcom/google/googlex/gcam/WeightedNormalizedRectVector;
 
     move-result-object v22
@@ -372,7 +372,7 @@
 
     .end local v9    # "j":J
     .end local v24    # "a3":J
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .local v5, "geoVar4":Lgeo;
     .local v8, "a3":J
     .local v31, "j":J
     :try_start_7
@@ -410,10 +410,10 @@
 
     move-result-object v1
 
-    invoke-interface {v2, v1}, Ldefpackage/lis;->b(Ljava/lang/String;)V
+    invoke-interface {v2, v1}, Llis;->b(Ljava/lang/String;)V
 
     .line 136
-    iget v1, v6, Ldefpackage/gep;->d:I
+    iget v1, v6, Lgep;->d:I
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
@@ -421,7 +421,7 @@
 
     .line 140
     .end local v0    # "sb":Ljava/lang/StringBuilder;
-    .end local v2    # "lisVar":Ldefpackage/lis;
+    .end local v2    # "lisVar":Llis;
     .end local v4    # "hexString2":Ljava/lang/String;
     .end local v8    # "a3":J
     .end local v10    # "hexString":Ljava/lang/String;
@@ -463,11 +463,11 @@
     .restart local v25    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     goto/16 :goto_1
 
-    .end local v5    # "geoVar4":Ldefpackage/geo;
+    .end local v5    # "geoVar4":Lgeo;
     .end local v25    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .end local v31    # "j":J
     .restart local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
-    .local v8, "geoVar4":Ldefpackage/geo;
+    .local v8, "geoVar4":Lgeo;
     .restart local v9    # "j":J
     :catchall_2
     move-exception v0
@@ -481,9 +481,9 @@
     move-wide/from16 v9, v20
 
     .end local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
-    .end local v8    # "geoVar4":Ldefpackage/geo;
+    .end local v8    # "geoVar4":Lgeo;
     .end local v9    # "j":J
-    .restart local v5    # "geoVar4":Ldefpackage/geo;
+    .restart local v5    # "geoVar4":Lgeo;
     .restart local v25    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .restart local v31    # "j":J
     goto/16 :goto_1
@@ -495,7 +495,7 @@
     .restart local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .local v4, "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .local v5, "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
-    .restart local v8    # "geoVar4":Ldefpackage/geo;
+    .restart local v8    # "geoVar4":Lgeo;
     .restart local v9    # "j":J
     :catchall_3
     move-exception v0
@@ -514,9 +514,9 @@
 
     .end local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .end local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
-    .end local v8    # "geoVar4":Ldefpackage/geo;
+    .end local v8    # "geoVar4":Lgeo;
     .end local v9    # "j":J
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .local v5, "geoVar4":Lgeo;
     .restart local v25    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .restart local v31    # "j":J
     .restart local v45    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
@@ -531,7 +531,7 @@
     .restart local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .restart local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .local v5, "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
-    .restart local v8    # "geoVar4":Ldefpackage/geo;
+    .restart local v8    # "geoVar4":Lgeo;
     .restart local v9    # "j":J
     .local v23, "a2":J
     :catchall_4
@@ -551,9 +551,9 @@
 
     .end local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .end local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
-    .end local v8    # "geoVar4":Ldefpackage/geo;
+    .end local v8    # "geoVar4":Lgeo;
     .end local v9    # "j":J
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .local v5, "geoVar4":Lgeo;
     .restart local v25    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .restart local v31    # "j":J
     .restart local v45    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
@@ -567,7 +567,7 @@
     .restart local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .restart local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .local v5, "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
-    .restart local v8    # "geoVar4":Ldefpackage/geo;
+    .restart local v8    # "geoVar4":Lgeo;
     .restart local v21    # "j":J
     :catchall_5
     move-exception v0
@@ -586,8 +586,8 @@
 
     .end local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .end local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
-    .end local v8    # "geoVar4":Ldefpackage/geo;
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .end local v8    # "geoVar4":Lgeo;
+    .local v5, "geoVar4":Lgeo;
     .restart local v25    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .restart local v45    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .restart local v46    # "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
@@ -598,7 +598,7 @@
     .end local v46    # "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
     .restart local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .local v5, "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
-    .restart local v8    # "geoVar4":Ldefpackage/geo;
+    .restart local v8    # "geoVar4":Lgeo;
     .local v20, "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     :catchall_6
     move-exception v0
@@ -616,19 +616,19 @@
     move-wide/from16 v9, v23
 
     .end local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
-    .end local v8    # "geoVar4":Ldefpackage/geo;
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .end local v8    # "geoVar4":Lgeo;
+    .local v5, "geoVar4":Lgeo;
     .restart local v45    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .restart local v46    # "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
     goto :goto_1
 
-    .end local v44    # "madVar2":Ldefpackage/mad;
+    .end local v44    # "madVar2":Lmad;
     .end local v45    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .end local v46    # "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
-    .local v2, "madVar2":Ldefpackage/mad;
+    .local v2, "madVar2":Lmad;
     .restart local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .local v5, "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
-    .restart local v8    # "geoVar4":Ldefpackage/geo;
+    .restart local v8    # "geoVar4":Lgeo;
     :catchall_7
     move-exception v0
 
@@ -646,23 +646,23 @@
 
     move-wide/from16 v9, v23
 
-    .end local v2    # "madVar2":Ldefpackage/mad;
+    .end local v2    # "madVar2":Lmad;
     .end local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
-    .end local v8    # "geoVar4":Ldefpackage/geo;
-    .local v5, "geoVar4":Ldefpackage/geo;
-    .restart local v44    # "madVar2":Ldefpackage/mad;
+    .end local v8    # "geoVar4":Lgeo;
+    .local v5, "geoVar4":Lgeo;
+    .restart local v44    # "madVar2":Lmad;
     .restart local v45    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .restart local v46    # "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
     goto :goto_1
 
     .end local v23    # "a2":J
-    .end local v44    # "madVar2":Ldefpackage/mad;
+    .end local v44    # "madVar2":Lmad;
     .end local v45    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .end local v46    # "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
-    .restart local v2    # "madVar2":Ldefpackage/mad;
+    .restart local v2    # "madVar2":Lmad;
     .restart local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .local v5, "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
-    .restart local v8    # "geoVar4":Ldefpackage/geo;
+    .restart local v8    # "geoVar4":Lgeo;
     .local v9, "a2":J
     :catchall_8
     move-exception v0
@@ -682,16 +682,16 @@
     move-wide/from16 v31, v21
 
     .line 138
-    .end local v2    # "madVar2":Ldefpackage/mad;
+    .end local v2    # "madVar2":Lmad;
     .end local v4    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
-    .end local v8    # "geoVar4":Ldefpackage/geo;
+    .end local v8    # "geoVar4":Lgeo;
     .end local v20    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .end local v21    # "j":J
     .local v0, "th":Ljava/lang/Throwable;
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .local v5, "geoVar4":Lgeo;
     .restart local v25    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .restart local v31    # "j":J
-    .restart local v44    # "madVar2":Ldefpackage/mad;
+    .restart local v44    # "madVar2":Lmad;
     .restart local v45    # "normalizedRect":Lcom/google/googlex/gcam/NormalizedRect;
     .restart local v46    # "shotMetadata2":Lcom/google/googlex/gcam/ShotMetadata;
     :goto_1
@@ -750,7 +750,7 @@
 
     .line 145
     .local v18, "a4":J
-    iget v0, v3, Ldefpackage/ger;->b:I
+    iget v0, v3, Lger;->b:I
 
     move/from16 v20, v0
 
@@ -762,12 +762,12 @@
 
     .line 147
     .local v22, "c3":J
-    iget-object v0, v6, Ldefpackage/gep;->a:Ldefpackage/lig;
+    iget-object v0, v6, Lgep;->a:Llig;
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_e
 
     .line 148
-    .local v0, "ligVar":Ldefpackage/lig;
+    .local v0, "ligVar":Llig;
     move-object v11, v1
 
     .line 149
@@ -775,7 +775,7 @@
     move-object v12, v13
 
     .line 150
-    .local v12, "geoVar5":Ldefpackage/geo;
+    .local v12, "geoVar5":Lgeo;
     move-object v2, v7
 
     .line 151
@@ -784,22 +784,22 @@
     .end local v2    # "hardwareBuffer":Landroid/hardware/HardwareBuffer;
     .local v33, "hardwareBuffer":Landroid/hardware/HardwareBuffer;
     :try_start_a
-    iget v2, v0, Ldefpackage/lig;->a:I
+    iget v2, v0, Llig;->a:I
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_d
 
     move-object/from16 v53, v5
 
-    .end local v5    # "geoVar4":Ldefpackage/geo;
-    .local v53, "geoVar4":Ldefpackage/geo;
+    .end local v5    # "geoVar4":Lgeo;
+    .local v53, "geoVar4":Lgeo;
     :try_start_b
-    iget v5, v0, Ldefpackage/lig;->b:I
+    iget v5, v0, Llig;->b:I
 
     move-object/from16 v34, v0
 
-    .end local v0    # "ligVar":Ldefpackage/lig;
-    .local v34, "ligVar":Ldefpackage/lig;
-    iget v0, v6, Ldefpackage/gep;->b:I
+    .end local v0    # "ligVar":Llig;
+    .local v34, "ligVar":Llig;
+    iget v0, v6, Lgep;->b:I
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_c
 
@@ -843,10 +843,10 @@
     .end local v54    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
     .local v5, "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
     :try_start_d
-    iget-object v0, v5, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Ldefpackage/lis;
+    iget-object v0, v5, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Llis;
 
     .line 154
-    .local v0, "lisVar2":Ldefpackage/lis;
+    .local v0, "lisVar2":Llis;
     sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
     :try_end_d
     .catchall {:try_start_d .. :try_end_d} :catchall_a
@@ -889,7 +889,7 @@
 
     move-result-object v8
 
-    invoke-interface {v0, v8}, Ldefpackage/lis;->b(Ljava/lang/String;)V
+    invoke-interface {v0, v8}, Llis;->b(Ljava/lang/String;)V
 
     .line 160
     const-wide/16 v28, 0x0
@@ -913,7 +913,7 @@
 
     invoke-direct {v10, v15}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {v12, v10}, Ldefpackage/geo;->a(Ljava/lang/RuntimeException;)V
+    invoke-interface {v12, v10}, Lgeo;->a(Ljava/lang/RuntimeException;)V
 
     goto :goto_3
 
@@ -923,24 +923,24 @@
 
     invoke-direct {v10, v8, v9}, Lcom/google/googlex/gcam/YuvImage;-><init>(J)V
 
-    iget-object v15, v3, Ldefpackage/ger;->a:Lcom/google/googlex/gcam/ShotMetadata;
+    iget-object v15, v3, Lger;->a:Lcom/google/googlex/gcam/ShotMetadata;
 
-    invoke-interface {v12, v10, v15}, Ldefpackage/geo;->c(Lcom/google/googlex/gcam/YuvImage;Lcom/google/googlex/gcam/ShotMetadata;)V
+    invoke-interface {v12, v10, v15}, Lgeo;->c(Lcom/google/googlex/gcam/YuvImage;Lcom/google/googlex/gcam/ShotMetadata;)V
     :try_end_e
     .catchall {:try_start_e .. :try_end_e} :catchall_9
 
     .line 165
-    .end local v0    # "lisVar2":Ldefpackage/lis;
+    .end local v0    # "lisVar2":Llis;
     .end local v2    # "sb2":Ljava/lang/StringBuilder;
     .end local v8    # "processRaw10ToYuvImageNative":J
-    .end local v12    # "geoVar5":Ldefpackage/geo;
+    .end local v12    # "geoVar5":Lgeo;
     .end local v16    # "j3":J
     .end local v18    # "a4":J
     .end local v20    # "i2":I
     .end local v22    # "c3":J
     .end local v24    # "elapsedRealtimeNanos2":J
     .end local v30    # "convert":J
-    .end local v34    # "ligVar":Ldefpackage/lig;
+    .end local v34    # "ligVar":Llig;
     :goto_3
     move-object/from16 v17, v1
 
@@ -1052,9 +1052,9 @@
     .restart local v54    # "j":J
     goto/16 :goto_7
 
-    .end local v53    # "geoVar4":Ldefpackage/geo;
+    .end local v53    # "geoVar4":Lgeo;
     .end local v54    # "j":J
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .local v5, "geoVar4":Lgeo;
     .restart local v9    # "j":J
     .restart local v15    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
     :catchall_d
@@ -1079,15 +1079,15 @@
     .end local v9    # "j":J
     .end local v15    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
     .local v5, "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .restart local v53    # "geoVar4":Ldefpackage/geo;
+    .restart local v53    # "geoVar4":Lgeo;
     .restart local v54    # "j":J
     goto/16 :goto_7
 
     .end local v33    # "hardwareBuffer":Landroid/hardware/HardwareBuffer;
-    .end local v53    # "geoVar4":Ldefpackage/geo;
+    .end local v53    # "geoVar4":Lgeo;
     .end local v54    # "j":J
     .local v2, "hardwareBuffer":Landroid/hardware/HardwareBuffer;
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .local v5, "geoVar4":Lgeo;
     .restart local v9    # "j":J
     .restart local v15    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
     :catchall_e
@@ -1110,15 +1110,15 @@
     .end local v9    # "j":J
     .end local v15    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
     .local v5, "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .restart local v53    # "geoVar4":Ldefpackage/geo;
+    .restart local v53    # "geoVar4":Lgeo;
     .restart local v54    # "j":J
     goto/16 :goto_7
 
     .line 166
     .end local v51    # "c":J
-    .end local v53    # "geoVar4":Ldefpackage/geo;
+    .end local v53    # "geoVar4":Lgeo;
     .end local v54    # "j":J
-    .local v5, "geoVar4":Ldefpackage/geo;
+    .local v5, "geoVar4":Lgeo;
     .restart local v9    # "j":J
     .local v11, "c":J
     .restart local v15    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
@@ -1136,7 +1136,7 @@
     .end local v15    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
     .local v5, "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
     .restart local v51    # "c":J
-    .restart local v53    # "geoVar4":Ldefpackage/geo;
+    .restart local v53    # "geoVar4":Lgeo;
     .restart local v54    # "j":J
     move-object v11, v1
 
@@ -1150,7 +1150,7 @@
     move-object v0, v13
 
     .line 169
-    .local v0, "geoVar6":Ldefpackage/geo;
+    .local v0, "geoVar6":Lgeo;
     const/4 v2, 0x1
 
     if-ne v14, v2, :cond_3
@@ -1171,13 +1171,13 @@
 
     .line 172
     .local v18, "a5":J
-    iget v2, v3, Ldefpackage/ger;->b:I
+    iget v2, v3, Lger;->b:I
 
     move/from16 v20, v2
 
     .line 173
     .local v20, "i3":I
-    iget-wide v9, v6, Ldefpackage/gep;->c:J
+    iget-wide v9, v6, Lgep;->c:J
 
     move-wide/from16 v21, v9
 
@@ -1189,10 +1189,10 @@
 
     .line 175
     .local v24, "c4":J
-    iget-object v2, v6, Ldefpackage/gep;->a:Ldefpackage/lig;
+    iget-object v2, v6, Lgep;->a:Llig;
 
     .line 176
-    .local v2, "ligVar2":Ldefpackage/lig;
+    .local v2, "ligVar2":Llig;
     nop
 
     .line 177
@@ -1200,12 +1200,12 @@
     move-object v9, v0
 
     .line 178
-    .local v9, "geoVar3":Ldefpackage/geo;
-    iget v10, v2, Ldefpackage/lig;->a:I
+    .local v9, "geoVar3":Lgeo;
+    iget v10, v2, Llig;->a:I
 
-    iget v12, v2, Ldefpackage/lig;->b:I
+    iget v12, v2, Llig;->b:I
 
-    iget v15, v6, Ldefpackage/gep;->b:I
+    iget v15, v6, Lgep;->b:I
 
     move/from16 v34, v15
 
@@ -1232,7 +1232,7 @@
     move-object v12, v3
 
     .line 180
-    .local v12, "gerVar2":Ldefpackage/ger;
+    .local v12, "gerVar2":Lger;
     move-object v2, v6
 
     .line 181
@@ -1241,7 +1241,7 @@
     .end local v20    # "i3":I
     .end local v21    # "j5":J
     .end local v24    # "c4":J
-    .local v2, "gepVar2":Ldefpackage/gep;
+    .local v2, "gepVar2":Lgep;
     move-object/from16 v56, v10
 
     move-object v10, v0
@@ -1255,13 +1255,13 @@
     goto :goto_4
 
     .line 215
-    .end local v0    # "geoVar6":Ldefpackage/geo;
-    .end local v2    # "gepVar2":Ldefpackage/gep;
+    .end local v0    # "geoVar6":Lgeo;
+    .end local v2    # "gepVar2":Lgep;
     .end local v8    # "str":Ljava/lang/String;
-    .end local v9    # "geoVar3":Ldefpackage/geo;
+    .end local v9    # "geoVar3":Lgeo;
     .end local v10    # "processRaw10ToYuvHardwareBufferNative":Landroid/hardware/HardwareBuffer;
     .end local v11    # "aeShotParams2":Lcom/google/googlex/gcam/AeShotParams;
-    .end local v12    # "gerVar2":Ldefpackage/ger;
+    .end local v12    # "gerVar2":Lger;
     :catchall_f
     move-exception v0
 
@@ -1280,7 +1280,7 @@
     goto/16 :goto_7
 
     .line 182
-    .restart local v0    # "geoVar6":Ldefpackage/geo;
+    .restart local v0    # "geoVar6":Lgeo;
     .restart local v11    # "aeShotParams2":Lcom/google/googlex/gcam/AeShotParams;
     :cond_3
     nop
@@ -1290,15 +1290,15 @@
     move-object v9, v0
 
     .line 184
-    .restart local v9    # "geoVar3":Ldefpackage/geo;
+    .restart local v9    # "geoVar3":Lgeo;
     move-object v10, v0
 
     move-object v2, v1
 
-    .end local v0    # "geoVar6":Ldefpackage/geo;
+    .end local v0    # "geoVar6":Lgeo;
     .end local v1    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .local v2, "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
-    .local v10, "geoVar6":Ldefpackage/geo;
+    .local v10, "geoVar6":Lgeo;
     :try_start_10
     iget-wide v0, v5, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->b:J
 
@@ -1314,13 +1314,13 @@
 
     .line 186
     .local v27, "a6":J
-    iget v0, v3, Ldefpackage/ger;->b:I
+    iget v0, v3, Lger;->b:I
 
     move/from16 v29, v0
 
     .line 187
     .local v29, "i4":I
-    iget-wide v0, v6, Ldefpackage/gep;->c:J
+    iget-wide v0, v6, Lgep;->c:J
 
     move-wide/from16 v30, v0
 
@@ -1332,31 +1332,31 @@
 
     .line 189
     .local v33, "c5":J
-    iget-object v0, v6, Ldefpackage/gep;->a:Ldefpackage/lig;
+    iget-object v0, v6, Lgep;->a:Llig;
 
     .line 190
-    .local v0, "ligVar3":Ldefpackage/lig;
+    .local v0, "ligVar3":Llig;
     move-object v12, v3
 
     .line 191
-    .restart local v12    # "gerVar2":Ldefpackage/ger;
+    .restart local v12    # "gerVar2":Lger;
     move-object v1, v6
 
     .line 192
-    .local v1, "gepVar2":Ldefpackage/gep;
-    iget v15, v0, Ldefpackage/lig;->a:I
+    .local v1, "gepVar2":Lgep;
+    iget v15, v0, Llig;->a:I
 
     move-object/from16 v16, v1
 
-    .end local v1    # "gepVar2":Ldefpackage/gep;
-    .local v16, "gepVar2":Ldefpackage/gep;
-    iget v1, v0, Ldefpackage/lig;->b:I
+    .end local v1    # "gepVar2":Lgep;
+    .local v16, "gepVar2":Lgep;
+    iget v1, v0, Llig;->b:I
 
     move-object/from16 v17, v0
 
-    .end local v0    # "ligVar3":Ldefpackage/lig;
-    .local v17, "ligVar3":Ldefpackage/lig;
-    iget v0, v6, Ldefpackage/gep;->b:I
+    .end local v0    # "ligVar3":Llig;
+    .local v17, "ligVar3":Llig;
+    iget v0, v6, Lgep;->b:I
 
     move-object/from16 v24, v5
 
@@ -1383,14 +1383,14 @@
     move-object/from16 v0, v16
 
     .line 194
-    .end local v16    # "gepVar2":Ldefpackage/gep;
-    .end local v17    # "ligVar3":Ldefpackage/lig;
+    .end local v16    # "gepVar2":Lgep;
+    .end local v17    # "ligVar3":Llig;
     .end local v25    # "j6":J
     .end local v27    # "a6":J
     .end local v29    # "i4":I
     .end local v30    # "j7":J
     .end local v33    # "c5":J
-    .local v0, "gepVar2":Ldefpackage/gep;
+    .local v0, "gepVar2":Lgep;
     .local v1, "processRaw10ToYuvHardwareBufferNative":Landroid/hardware/HardwareBuffer;
     :goto_4
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
@@ -1406,16 +1406,16 @@
     .end local v2    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     .local v17, "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
     :try_start_11
-    iget-object v2, v5, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Ldefpackage/lis;
+    iget-object v2, v5, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Llis;
     :try_end_11
     .catchall {:try_start_11 .. :try_end_11} :catchall_13
 
     .line 196
-    .local v2, "lisVar3":Ldefpackage/lis;
+    .local v2, "lisVar3":Llis;
     move-object/from16 v18, v3
 
-    .end local v3    # "gerVar3":Ldefpackage/ger;
-    .local v18, "gerVar3":Ldefpackage/ger;
+    .end local v3    # "gerVar3":Lger;
+    .local v18, "gerVar3":Lger;
     :try_start_12
     sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
     :try_end_12
@@ -1433,8 +1433,8 @@
 
     move-object/from16 v21, v6
 
-    .end local v6    # "gepVar3":Ldefpackage/gep;
-    .local v21, "gepVar3":Ldefpackage/gep;
+    .end local v6    # "gepVar3":Lgep;
+    .local v21, "gepVar3":Lgep;
     :try_start_13
     sget-object v6, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -1467,7 +1467,7 @@
 
     move-result-object v6
 
-    invoke-interface {v2, v6}, Ldefpackage/lis;->b(Ljava/lang/String;)V
+    invoke-interface {v2, v6}, Llis;->b(Ljava/lang/String;)V
 
     .line 202
     if-nez v1, :cond_4
@@ -1477,29 +1477,29 @@
 
     move-object/from16 v22, v2
 
-    .end local v2    # "lisVar3":Ldefpackage/lis;
-    .local v22, "lisVar3":Ldefpackage/lis;
+    .end local v2    # "lisVar3":Llis;
+    .local v22, "lisVar3":Llis;
     const-string v2, "Error processing raw10 to HardwareBuffer"
 
     invoke-direct {v6, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {v9, v6}, Ldefpackage/geo;->a(Ljava/lang/RuntimeException;)V
+    invoke-interface {v9, v6}, Lgeo;->a(Ljava/lang/RuntimeException;)V
 
     goto :goto_5
 
     .line 205
-    .end local v22    # "lisVar3":Ldefpackage/lis;
-    .restart local v2    # "lisVar3":Ldefpackage/lis;
+    .end local v22    # "lisVar3":Llis;
+    .restart local v2    # "lisVar3":Llis;
     :cond_4
     move-object/from16 v22, v2
 
-    .end local v2    # "lisVar3":Ldefpackage/lis;
-    .restart local v22    # "lisVar3":Ldefpackage/lis;
+    .end local v2    # "lisVar3":Llis;
+    .restart local v22    # "lisVar3":Llis;
     move-object v2, v9
 
     .line 206
-    .local v2, "geoVar7":Ldefpackage/geo;
-    iget v6, v0, Ldefpackage/gep;->d:I
+    .local v2, "geoVar7":Lgeo;
+    iget v6, v0, Lgep;->d:I
 
     move-wide/from16 v24, v3
 
@@ -1510,31 +1510,31 @@
     if-ne v6, v3, :cond_5
 
     .line 207
-    iget-object v3, v12, Ldefpackage/ger;->a:Lcom/google/googlex/gcam/ShotMetadata;
+    iget-object v3, v12, Lger;->a:Lcom/google/googlex/gcam/ShotMetadata;
 
-    invoke-interface {v2, v1, v3}, Ldefpackage/geo;->b(Landroid/hardware/HardwareBuffer;Lcom/google/googlex/gcam/ShotMetadata;)V
+    invoke-interface {v2, v1, v3}, Lgeo;->b(Landroid/hardware/HardwareBuffer;Lcom/google/googlex/gcam/ShotMetadata;)V
 
     goto :goto_5
 
     .line 209
     :cond_5
-    iget-object v3, v12, Ldefpackage/ger;->a:Lcom/google/googlex/gcam/ShotMetadata;
+    iget-object v3, v12, Lger;->a:Lcom/google/googlex/gcam/ShotMetadata;
 
-    invoke-interface {v2, v1, v3}, Ldefpackage/geo;->d(Landroid/hardware/HardwareBuffer;Lcom/google/googlex/gcam/ShotMetadata;)V
+    invoke-interface {v2, v1, v3}, Lgeo;->d(Landroid/hardware/HardwareBuffer;Lcom/google/googlex/gcam/ShotMetadata;)V
     :try_end_13
     .catchall {:try_start_13 .. :try_end_13} :catchall_11
 
     .line 213
-    .end local v0    # "gepVar2":Ldefpackage/gep;
+    .end local v0    # "gepVar2":Lgep;
     .end local v1    # "processRaw10ToYuvHardwareBufferNative":Landroid/hardware/HardwareBuffer;
-    .end local v2    # "geoVar7":Ldefpackage/geo;
+    .end local v2    # "geoVar7":Lgeo;
     .end local v5    # "sb3":Ljava/lang/StringBuilder;
     .end local v8    # "str":Ljava/lang/String;
-    .end local v9    # "geoVar3":Ldefpackage/geo;
-    .end local v10    # "geoVar6":Ldefpackage/geo;
-    .end local v12    # "gerVar2":Ldefpackage/ger;
+    .end local v9    # "geoVar3":Lgeo;
+    .end local v10    # "geoVar6":Lgeo;
+    .end local v12    # "gerVar2":Lger;
     .end local v15    # "elapsedRealtimeNanos3":J
-    .end local v22    # "lisVar3":Ldefpackage/lis;
+    .end local v22    # "lisVar3":Llis;
     .end local v24    # "convert2":J
     :goto_5
     move-object/from16 v2, v23
@@ -1571,10 +1571,10 @@
 
     .end local v19    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .end local v20    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .end local v21    # "gepVar3":Ldefpackage/gep;
+    .end local v21    # "gepVar3":Lgep;
     .restart local v4    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .local v5, "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .restart local v6    # "gepVar3":Ldefpackage/gep;
+    .restart local v6    # "gepVar3":Lgep;
     :catchall_12
     move-exception v0
 
@@ -1588,20 +1588,20 @@
 
     .end local v4    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .end local v5    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .end local v6    # "gepVar3":Ldefpackage/gep;
+    .end local v6    # "gepVar3":Lgep;
     .restart local v19    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .restart local v20    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .restart local v21    # "gepVar3":Ldefpackage/gep;
+    .restart local v21    # "gepVar3":Lgep;
     goto :goto_7
 
-    .end local v18    # "gerVar3":Ldefpackage/ger;
+    .end local v18    # "gerVar3":Lger;
     .end local v19    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .end local v20    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .end local v21    # "gepVar3":Ldefpackage/gep;
-    .local v3, "gerVar3":Ldefpackage/ger;
+    .end local v21    # "gepVar3":Lgep;
+    .local v3, "gerVar3":Lger;
     .restart local v4    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .restart local v5    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .restart local v6    # "gepVar3":Ldefpackage/gep;
+    .restart local v6    # "gepVar3":Lgep;
     :catchall_13
     move-exception v0
 
@@ -1615,26 +1615,26 @@
 
     move-object/from16 v2, v23
 
-    .end local v3    # "gerVar3":Ldefpackage/ger;
+    .end local v3    # "gerVar3":Lger;
     .end local v4    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .end local v5    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .end local v6    # "gepVar3":Ldefpackage/gep;
-    .restart local v18    # "gerVar3":Ldefpackage/ger;
+    .end local v6    # "gepVar3":Lgep;
+    .restart local v18    # "gerVar3":Lger;
     .restart local v19    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .restart local v20    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .restart local v21    # "gepVar3":Ldefpackage/gep;
+    .restart local v21    # "gepVar3":Lgep;
     goto :goto_7
 
     .end local v17    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
-    .end local v18    # "gerVar3":Ldefpackage/ger;
+    .end local v18    # "gerVar3":Lger;
     .end local v19    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .end local v20    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .end local v21    # "gepVar3":Ldefpackage/gep;
+    .end local v21    # "gepVar3":Lgep;
     .local v2, "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
-    .restart local v3    # "gerVar3":Ldefpackage/ger;
+    .restart local v3    # "gerVar3":Lger;
     .restart local v4    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .restart local v5    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .restart local v6    # "gepVar3":Ldefpackage/gep;
+    .restart local v6    # "gepVar3":Lgep;
     :catchall_14
     move-exception v0
 
@@ -1651,18 +1651,18 @@
     move-object/from16 v2, v23
 
     .line 216
-    .end local v3    # "gerVar3":Ldefpackage/ger;
+    .end local v3    # "gerVar3":Lger;
     .end local v4    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .end local v5    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .end local v6    # "gepVar3":Ldefpackage/gep;
+    .end local v6    # "gepVar3":Lgep;
     .end local v23    # "hardwareBuffer":Landroid/hardware/HardwareBuffer;
     .local v0, "th2":Ljava/lang/Throwable;
     .local v2, "hardwareBuffer":Landroid/hardware/HardwareBuffer;
     .restart local v17    # "aeShotParams":Lcom/google/googlex/gcam/AeShotParams;
-    .restart local v18    # "gerVar3":Ldefpackage/ger;
+    .restart local v18    # "gerVar3":Lger;
     .restart local v19    # "b":Lcom/google/googlex/gcam/RawWriteView;
     .restart local v20    # "fastMomentsHdrImpl":Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;
-    .restart local v21    # "gepVar3":Ldefpackage/gep;
+    .restart local v21    # "gepVar3":Lgep;
     :goto_7
     invoke-virtual {v2}, Landroid/hardware/HardwareBuffer;->close()V
 

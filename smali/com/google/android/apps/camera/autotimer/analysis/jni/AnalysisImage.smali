@@ -12,19 +12,19 @@
 
 
 # instance fields
-.field private final a:Ldefpackage/mad;
+.field private final a:Lmad;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/mad;)V
+.method public constructor <init>(Lmad;)V
     .locals 2
-    .param p1, "madVar"    # Ldefpackage/mad;
+    .param p1, "madVar"    # Lmad;
 
     .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 39
-    invoke-interface {p1}, Ldefpackage/mad;->a()I
+    invoke-interface {p1}, Lmad;->a()I
 
     move-result v0
 
@@ -40,10 +40,10 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v0}, Ldefpackage/obr;->aQ(Z)V
+    invoke-static {v0}, Lobr;->aQ(Z)V
 
     .line 40
-    iput-object p1, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;->a:Ldefpackage/mad;
+    iput-object p1, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;->a:Lmad;
 
     .line 41
     return-void
@@ -55,9 +55,9 @@
     .locals 1
 
     .line 44
-    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;->a:Ldefpackage/mad;
+    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;->a:Lmad;
 
-    invoke-interface {v0}, Ldefpackage/mad;->b()I
+    invoke-interface {v0}, Lmad;->b()I
 
     move-result v0
 
@@ -68,9 +68,9 @@
     .locals 5
 
     .line 48
-    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;->a:Ldefpackage/mad;
+    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;->a:Lmad;
 
-    invoke-interface {v0}, Ldefpackage/mad;->g()Ljava/util/List;
+    invoke-interface {v0}, Lmad;->g()Ljava/util/List;
 
     move-result-object v0
 
@@ -101,9 +101,9 @@
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/mac;
+    check-cast v4, Lmac;
 
-    invoke-direct {v3, p0, v4}, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;-><init>(Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;Ldefpackage/mac;)V
+    invoke-direct {v3, p0, v4}, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;-><init>(Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;Lmac;)V
 
     aput-object v3, v1, v2
 
@@ -122,9 +122,9 @@
     .locals 1
 
     .line 57
-    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;->a:Ldefpackage/mad;
+    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;->a:Lmad;
 
-    invoke-interface {v0}, Ldefpackage/mad;->c()I
+    invoke-interface {v0}, Lmad;->c()I
 
     move-result v0
 

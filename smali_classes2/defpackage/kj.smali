@@ -1,137 +1,89 @@
-.class public Ldefpackage/kj;
+.class public Ldefpackage/Kj;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/lk;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Limf;-><init>(Lddf;Lhug;Llda;Lims;Limt;Lbui;Llar;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final a:Limf;
 
-.field public b:Landroid/content/Context;
-
-.field public c:Ldefpackage/kw;
-
-.field public final d:Landroid/view/LayoutInflater;
-
-.field public e:Ldefpackage/lj;
-
-.field public f:Ldefpackage/lm;
+.field public final synthetic this$0:Limf;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-    .param p1, "context"    # Landroid/content/Context;
+.method public constructor <init>(Limf;)V
+    .locals 0
+    .param p1, "this$0"    # Limf;
 
-    .line 18
+    .line 45
+    iput-object p1, p0, Ldefpackage/Kj;->this$0:Limf;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
-    iput-object p1, p0, Ldefpackage/kj;->a:Landroid/content/Context;
+    .line 46
+    iput-object p1, p0, Ldefpackage/Kj;->a:Limf;
 
-    .line 20
-    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object v0
-
-    iput-object v0, p0, Ldefpackage/kj;->d:Landroid/view/LayoutInflater;
-
-    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ldefpackage/kz;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 1
-    .param p1, "kzVar"    # Ldefpackage/kz;
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "viewGroup"    # Landroid/view/ViewGroup;
+.method public final run()V
+    .locals 2
 
-    .line 24
-    const/4 v0, 0x0
+    .line 50
+    const/4 v0, -0x1
 
-    throw v0
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public b(Landroid/content/Context;Ldefpackage/kw;)V
-    .locals 1
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "kwVar"    # Ldefpackage/kw;
+    .line 55
+    iget-object v0, p0, Ldefpackage/Kj;->a:Limf;
 
-    .line 29
-    const/4 v0, 0x0
+    iget-object v0, v0, Limf;->a:Llce;
 
-    throw v0
-.end method
+    const/4 v1, 0x1
 
-.method public c(Ldefpackage/kw;Z)V
-    .locals 1
-    .param p1, "kwVar"    # Ldefpackage/kw;
-    .param p2, "z"    # Z
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 34
-    const/4 v0, 0x0
+    move-result-object v1
 
-    throw v0
-.end method
+    invoke-virtual {v0, v1}, Llce;->fB(Ljava/lang/Object;)V
 
-.method public final d(Ldefpackage/lj;)V
-    .locals 1
-    .param p1, "ljVar"    # Ldefpackage/lj;
+    .line 56
+    return-void
 
-    .line 39
-    const/4 v0, 0x0
+    .line 52
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Kj;->a:Limf;
 
-    throw v0
-.end method
+    iget-object v0, v0, Limf;->a:Llce;
 
-.method public e()Z
-    .locals 1
+    const/4 v1, 0x0
 
-    .line 44
-    const/4 v0, 0x0
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    throw v0
-.end method
+    move-result-object v1
 
-.method public f(Ldefpackage/ls;)Z
-    .locals 1
-    .param p1, "lsVar"    # Ldefpackage/ls;
+    invoke-virtual {v0, v1}, Llce;->fB(Ljava/lang/Object;)V
 
-    .line 49
-    const/4 v0, 0x0
+    .line 53
+    return-void
 
-    throw v0
-.end method
-
-.method public final g(Ldefpackage/kz;)Z
-    .locals 1
-    .param p1, "kzVar"    # Ldefpackage/kz;
-
-    .line 54
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final h(Ldefpackage/kz;)Z
-    .locals 1
-    .param p1, "kzVar"    # Ldefpackage/kz;
-
-    .line 59
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public i()V
-    .locals 1
-
-    .line 64
-    const/4 v0, 0x0
-
-    throw v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

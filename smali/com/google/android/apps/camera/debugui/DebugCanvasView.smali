@@ -1,5 +1,5 @@
 .class public Lcom/google/android/apps/camera/debugui/DebugCanvasView;
-.super Ldefpackage/dka;
+.super Ldka;
 .source ""
 
 
@@ -28,7 +28,7 @@
 
 .field private volatile m:Landroid/hardware/camera2/params/MeteringRectangle;
 
-.field private volatile n:Ldefpackage/ohz;
+.field private volatile n:Lohz;
 
 .field private volatile o:F
 
@@ -36,7 +36,7 @@
 
 .field private volatile q:F
 
-.field private volatile r:Ldefpackage/ohz;
+.field private volatile r:Lohz;
 
 .field private volatile s:Ljava/util/List;
 
@@ -50,7 +50,7 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 46
-    invoke-direct {p0, p1, p2}, Ldefpackage/dka;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Ldka;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 47
     new-instance v0, Landroid/graphics/Paint;
@@ -125,14 +125,14 @@
     iput-object v7, p0, Lcom/google/android/apps/camera/debugui/DebugCanvasView;->j:Landroid/graphics/Paint;
 
     .line 63
-    invoke-static {}, Ldefpackage/oom;->l()Ldefpackage/oom;
+    invoke-static {}, Loom;->l()Loom;
 
     move-result-object v8
 
     iput-object v8, p0, Lcom/google/android/apps/camera/debugui/DebugCanvasView;->k:Ljava/util/List;
 
     .line 64
-    invoke-static {}, Ldefpackage/oom;->l()Ldefpackage/oom;
+    invoke-static {}, Loom;->l()Loom;
 
     move-result-object v8
 
@@ -294,7 +294,7 @@
     iput-object v8, p0, Lcom/google/android/apps/camera/debugui/DebugCanvasView;->m:Landroid/hardware/camera2/params/MeteringRectangle;
 
     .line 100
-    iput-object v8, p0, Lcom/google/android/apps/camera/debugui/DebugCanvasView;->n:Ldefpackage/ohz;
+    iput-object v8, p0, Lcom/google/android/apps/camera/debugui/DebugCanvasView;->n:Lohz;
 
     .line 101
     return-void
@@ -315,7 +315,7 @@
 
     .line 105
     .local v0, "rectF":Landroid/graphics/RectF;
-    invoke-virtual {p0}, Ldefpackage/dka;->c()Landroid/graphics/Matrix;
+    invoke-virtual {p0}, Ldka;->c()Landroid/graphics/Matrix;
 
     move-result-object v1
 
@@ -367,7 +367,7 @@
 
     .line 115
     .local v2, "fArr":[F
-    invoke-virtual/range {p0 .. p0}, Ldefpackage/dka;->c()Landroid/graphics/Matrix;
+    invoke-virtual/range {p0 .. p0}, Ldka;->c()Landroid/graphics/Matrix;
 
     move-result-object v3
 
@@ -432,7 +432,7 @@
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
     .line 126
-    invoke-virtual {p0}, Ldefpackage/dka;->d()Z
+    invoke-virtual {p0}, Ldka;->d()Z
 
     move-result v0
 

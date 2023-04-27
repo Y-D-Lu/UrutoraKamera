@@ -1,57 +1,91 @@
-.class public final Ldefpackage/rc;
-.super Landroid/view/qd;
+.class public Ldefpackage/Rc;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfui;->a(JLhsp;)Lfuh;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public a:Ldefpackage/rg;
+.field public final synthetic this$0:Lfui;
 
-.field public b:Z
+.field public final synthetic val$hspVar:Lhsp;
+
+.field public final synthetic val$j:J
 
 
 # direct methods
-.method public constructor <init>(II)V
+.method public constructor <init>(Lfui;JLhsp;)V
     .locals 0
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
+    .param p1, "this$0"    # Lfui;
 
-    .line 15
-    invoke-direct {p0, p1, p2}, Landroid/view/qd;-><init>(II)V
+    .line 29
+    iput-object p1, p0, Ldefpackage/Rc;->this$0:Lfui;
 
-    .line 16
+    iput-wide p2, p0, Ldefpackage/Rc;->val$j:J
+
+    iput-object p4, p0, Ldefpackage/Rc;->val$hspVar:Lhsp;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 0
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
-    .line 19
-    invoke-direct {p0, p1, p2}, Landroid/view/qd;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+# virtual methods
+.method public final close()V
+    .locals 7
 
-    .line 20
-    return-void
-.end method
+    .line 32
+    iget-object v0, p0, Ldefpackage/Rc;->this$0:Lfui;
 
-.method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 0
-    .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
+    .line 33
+    .local v0, "fuiVar":Lfui;
+    iget-wide v1, p0, Ldefpackage/Rc;->val$j:J
 
-    .line 23
-    invoke-direct {p0, p1}, Landroid/view/qd;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    .line 34
+    .local v1, "j2":J
+    iget-object v3, p0, Ldefpackage/Rc;->val$hspVar:Lhsp;
 
-    .line 24
-    return-void
-.end method
+    .line 35
+    .local v3, "hspVar2":Lhsp;
+    iget-object v4, v0, Lfui;->b:Ljava/util/Map;
 
-.method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
-    .locals 0
-    .param p1, "marginLayoutParams"    # Landroid/view/ViewGroup$MarginLayoutParams;
+    .line 36
+    .local v4, "map2":Ljava/util/Map;
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    .line 27
-    invoke-direct {p0, p1}, Landroid/view/qd;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+    move-result-object v5
 
-    .line 28
+    .line 37
+    .local v5, "valueOf2":Ljava/lang/Long;
+    invoke-interface {v4, v5}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    invoke-static {v6}, Lobr;->aQ(Z)V
+
+    .line 38
+    iget-object v6, v0, Lfui;->d:Lnvb;
+
+    invoke-virtual {v6, v3}, Lnvb;->g(Lhsp;)Ledf;
+
+    .line 39
+    iget-object v6, v0, Lfui;->b:Ljava/util/Map;
+
+    invoke-interface {v6, v5}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 40
     return-void
 .end method

@@ -3,11 +3,11 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/qlk;
+.implements Lqlk;
 
 
 # static fields
-.field public static final a:Ldefpackage/qli;
+.field public static final a:Lqli;
 
 
 # direct methods
@@ -15,14 +15,14 @@
     .locals 1
 
     .line 9
-    sget-object v0, Ldefpackage/qli;->b:Ldefpackage/qli;
+    sget-object v0, Lqli;->b:Lqli;
 
-    sput-object v0, Lkotlinx/coroutines/CoroutineExceptionHandler;->a:Ldefpackage/qli;
+    sput-object v0, Lkotlinx/coroutines/CoroutineExceptionHandler;->a:Lqli;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract handleException(Ldefpackage/qln;Ljava/lang/Throwable;)V
+.method public abstract handleException(Lqln;Ljava/lang/Throwable;)V
 .end method

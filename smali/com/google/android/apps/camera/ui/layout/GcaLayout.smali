@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public d:Ldefpackage/ojz;
+.field public d:Lojz;
 
 
 # direct methods
@@ -60,28 +60,28 @@
     .line 49
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/end;
+    check-cast v0, Lend;
 
-    const-class v1, Ldefpackage/jca;
+    const-class v1, Ljca;
 
-    invoke-interface {v0, v1}, Ldefpackage/end;->b(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lend;->b(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jca;
+    check-cast v0, Ljca;
 
-    invoke-interface {v0, p0}, Ldefpackage/jca;->a(Lcom/google/android/apps/camera/ui/layout/GcaLayout;)V
+    invoke-interface {v0, p0}, Ljca;->a(Lcom/google/android/apps/camera/ui/layout/GcaLayout;)V
 
     .line 50
     return-void
 .end method
 
-.method private final e(Landroid/view/View;Ldefpackage/jrz;Landroid/util/Size;Ldefpackage/ConstraintSet;)V
+.method private final e(Landroid/view/View;Ljrz;Landroid/util/Size;LConstraintSet;)V
     .locals 9
     .param p1, "view"    # Landroid/view/View;
-    .param p2, "jrzVar"    # Ldefpackage/jrz;
+    .param p2, "jrzVar"    # Ljrz;
     .param p3, "size"    # Landroid/util/Size;
-    .param p4, "constraintSetVar"    # Ldefpackage/ConstraintSet;
+    .param p4, "constraintSetVar"    # LConstraintSet;
 
     .line 54
     if-nez p3, :cond_0
@@ -91,7 +91,7 @@
 
     .line 57
     :cond_0
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
     const-wide/high16 v1, 0x4000000000000000L    # 2.0
 
@@ -99,7 +99,7 @@
 
     if-eq p2, v0, :cond_2
 
-    sget-object v4, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v4, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne p2, v4, :cond_1
 
@@ -200,7 +200,7 @@
 
     if-eq p2, v0, :cond_4
 
-    sget-object v0, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne p2, v0, :cond_3
 
@@ -244,7 +244,7 @@
 
     move-object v7, p3
 
-    invoke-static/range {v0 .. v7}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v0 .. v7}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 67
     return-void
@@ -436,10 +436,10 @@
     return-object v1
 .end method
 
-.method private static final g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+.method private static final g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
     .locals 11
-    .param p0, "constraintSetVar"    # Ldefpackage/ConstraintSet;
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p0, "constraintSetVar"    # LConstraintSet;
+    .param p1, "jrzVar"    # Ljrz;
     .param p2, "i"    # I
     .param p3, "i2"    # I
     .param p4, "i3"    # I
@@ -463,10 +463,10 @@
 
     .line 101
     :cond_0
-    sget-object v10, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v10, Ljrz;->PORTRAIT:Ljrz;
 
     .line 102
-    .local v10, "jrzVar2":Ldefpackage/jrz;
+    .local v10, "jrzVar2":Ljrz;
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v0
@@ -478,10 +478,10 @@
 
     .line 117
     :pswitch_0
-    invoke-virtual {p0, p2, p3}, Ldefpackage/ConstraintSet;->f(II)V
+    invoke-virtual {p0, p2, p3}, LConstraintSet;->f(II)V
 
     .line 118
-    invoke-virtual {p0, p2, p4}, Ldefpackage/ConstraintSet;->g(II)V
+    invoke-virtual {p0, p2, p4}, LConstraintSet;->g(II)V
 
     .line 119
     const/4 v2, 0x3
@@ -496,7 +496,7 @@
 
     move/from16 v5, p6
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LConstraintSet;->e(IIIII)V
 
     .line 120
     const/4 v2, 0x6
@@ -513,17 +513,17 @@
 
     move-object v0, p0
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LConstraintSet;->e(IIIII)V
 
     .line 121
     return-void
 
     .line 111
     :pswitch_1
-    invoke-virtual {p0, p2, p3}, Ldefpackage/ConstraintSet;->f(II)V
+    invoke-virtual {p0, p2, p3}, LConstraintSet;->f(II)V
 
     .line 112
-    invoke-virtual {p0, p2, p4}, Ldefpackage/ConstraintSet;->g(II)V
+    invoke-virtual {p0, p2, p4}, LConstraintSet;->g(II)V
 
     .line 113
     const/4 v2, 0x3
@@ -544,7 +544,7 @@
 
     move v1, p2
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LConstraintSet;->e(IIIII)V
 
     .line 114
     const/4 v2, 0x6
@@ -553,17 +553,17 @@
 
     move/from16 v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LConstraintSet;->e(IIIII)V
 
     .line 115
     return-void
 
     .line 105
     :pswitch_2
-    invoke-virtual {p0, p2, p4}, Ldefpackage/ConstraintSet;->f(II)V
+    invoke-virtual {p0, p2, p4}, LConstraintSet;->f(II)V
 
     .line 106
-    invoke-virtual {p0, p2, p3}, Ldefpackage/ConstraintSet;->g(II)V
+    invoke-virtual {p0, p2, p3}, LConstraintSet;->g(II)V
 
     .line 107
     const/4 v2, 0x3
@@ -578,7 +578,7 @@
 
     move/from16 v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LConstraintSet;->e(IIIII)V
 
     .line 108
     const/4 v2, 0x6
@@ -587,7 +587,7 @@
 
     move/from16 v5, p6
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LConstraintSet;->e(IIIII)V
 
     .line 109
     return-void
@@ -603,11 +603,11 @@
     .end packed-switch
 .end method
 
-.method private static final h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+.method private static final h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
     .locals 6
     .param p0, "view"    # Landroid/view/View;
     .param p1, "rect"    # Landroid/graphics/Rect;
-    .param p2, "constraintSetVar"    # Ldefpackage/ConstraintSet;
+    .param p2, "constraintSetVar"    # LConstraintSet;
 
     .line 128
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
@@ -634,7 +634,7 @@
 
     move-result v1
 
-    invoke-virtual {p2, v0, v1}, Ldefpackage/ConstraintSet;->f(II)V
+    invoke-virtual {p2, v0, v1}, LConstraintSet;->f(II)V
 
     .line 132
     invoke-virtual {p0}, Landroid/view/View;->getId()I
@@ -645,7 +645,7 @@
 
     move-result v1
 
-    invoke-virtual {p2, v0, v1}, Ldefpackage/ConstraintSet;->g(II)V
+    invoke-virtual {p2, v0, v1}, LConstraintSet;->g(II)V
 
     .line 133
     invoke-virtual {p0}, Landroid/view/View;->getId()I
@@ -662,7 +662,7 @@
 
     move-object v0, p2
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LConstraintSet;->e(IIIII)V
 
     .line 134
     invoke-virtual {p0}, Landroid/view/View;->getId()I
@@ -675,7 +675,7 @@
 
     iget v5, p1, Landroid/graphics/Rect;->left:I
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LConstraintSet;->e(IIIII)V
 
     .line 135
     return-void
@@ -686,12 +686,12 @@
     return-void
 .end method
 
-.method private static final i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;Ldefpackage/ConstraintSet;)V
+.method private static final i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;LConstraintSet;)V
     .locals 9
     .param p0, "view"    # Landroid/view/View;
     .param p1, "size"    # Landroid/util/Size;
     .param p2, "size2"    # Landroid/util/Size;
-    .param p3, "constraintSetVar"    # Ldefpackage/ConstraintSet;
+    .param p3, "constraintSetVar"    # LConstraintSet;
 
     .line 138
     if-eqz p1, :cond_1
@@ -708,7 +708,7 @@
 
     .line 142
     .local v0, "f":Landroid/graphics/Rect;
-    sget-object v2, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->PORTRAIT:Ljrz;
 
     invoke-virtual {p0}, Landroid/view/View;->getId()I
 
@@ -730,7 +730,7 @@
 
     move-object v8, p1
 
-    invoke-static/range {v1 .. v8}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v1 .. v8}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 143
     return-void
@@ -749,27 +749,39 @@
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
     .line 147
-    instance-of v0, p1, Ldefpackage/jcb;
+    instance-of v0, p1, Ljcb;
 
     return v0
 .end method
 
-.method public bridge synthetic generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+.method public final generateDefaultLayoutParams()Laf;
     .locals 1
 
-    .line 30
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->generateDefaultLayoutParams()Ldefpackage/af;
+    .line 152
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->generateDefaultLayoutParams()Laf;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final generateDefaultLayoutParams()Ldefpackage/af;
+.method public bridge synthetic generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
-    .line 152
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->generateDefaultLayoutParams()Ldefpackage/af;
+    .line 30
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->generateDefaultLayoutParams()Laf;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final generateLayoutParams(Landroid/util/AttributeSet;)Laf;
+    .locals 1
+    .param p1, "attributeSet"    # Landroid/util/AttributeSet;
+
+    .line 157
+    invoke-super {p0, p1}, Landroid/support/constraint/ConstraintLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Laf;
 
     move-result-object v0
 
@@ -780,7 +792,7 @@
     .locals 0
 
     .line 30
-    invoke-virtual {p0, p1}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Ldefpackage/af;
+    invoke-virtual {p0, p1}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Laf;
 
     move-result-object p1
 
@@ -792,48 +804,36 @@
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
     .line 162
-    new-instance v0, Ldefpackage/jcb;
+    new-instance v0, Ljcb;
 
-    invoke-direct {v0, p1}, Ldefpackage/jcb;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
-
-    return-object v0
-.end method
-
-.method public final generateLayoutParams(Landroid/util/AttributeSet;)Ldefpackage/af;
-    .locals 1
-    .param p1, "attributeSet"    # Landroid/util/AttributeSet;
-
-    .line 157
-    invoke-super {p0, p1}, Landroid/support/constraint/ConstraintLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Ldefpackage/af;
-
-    move-result-object v0
+    invoke-direct {v0, p1}, Ljcb;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-object v0
 .end method
 
-.method public final gp()Ldefpackage/af;
+.method public final gp()Laf;
     .locals 1
 
     .line 167
-    new-instance v0, Ldefpackage/jcb;
+    new-instance v0, Ljcb;
 
-    invoke-direct {v0}, Ldefpackage/jcb;-><init>()V
+    invoke-direct {v0}, Ljcb;-><init>()V
 
     return-object v0
 .end method
 
-.method public final gq(Landroid/util/AttributeSet;)Ldefpackage/af;
+.method public final gq(Landroid/util/AttributeSet;)Laf;
     .locals 2
     .param p1, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 172
-    new-instance v0, Ldefpackage/jcb;
+    new-instance v0, Ljcb;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p1}, Ldefpackage/jcb;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, v1, p1}, Ljcb;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
@@ -853,7 +853,7 @@
 
     .line 179
     .local v0, "tag":Ljava/lang/Object;
-    invoke-static {v0}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 180
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -902,7 +902,7 @@
 
     .line 205
     .local v2, "tag":Ljava/lang/Object;
-    invoke-static {v2}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 206
     invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -922,52 +922,52 @@
     invoke-static {v3}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 207
-    iget-object v3, v1, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->d:Ldefpackage/ojz;
+    iget-object v3, v1, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->d:Lojz;
 
-    invoke-interface {v3}, Ldefpackage/ojz;->a()Ljava/lang/Object;
+    invoke-interface {v3}, Lojz;->a()Ljava/lang/Object;
 
     move-result-object v3
 
     .line 208
     .local v3, "a":Ljava/lang/Object;
-    invoke-static {v3}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 209
     move-object v4, v3
 
-    check-cast v4, Ldefpackage/jbw;
+    check-cast v4, Ljbw;
 
     .line 210
-    .local v4, "jbwVar3":Ldefpackage/jbw;
-    iget-object v5, v4, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    .local v4, "jbwVar3":Ljbw;
+    iget-object v5, v4, Ljbw;->b:Ljbt;
 
     .line 211
-    .local v5, "jbtVar":Ldefpackage/jbt;
-    new-instance v6, Ldefpackage/ConstraintSet;
+    .local v5, "jbtVar":Ljbt;
+    new-instance v6, LConstraintSet;
 
-    invoke-direct {v6}, Ldefpackage/ConstraintSet;-><init>()V
+    invoke-direct {v6}, LConstraintSet;-><init>()V
 
     .line 212
-    .local v6, "constraintSetVar":Ldefpackage/ConstraintSet;
-    invoke-virtual {v6, v1}, Ldefpackage/ConstraintSet;->d(Landroid/support/constraint/ConstraintLayout;)V
+    .local v6, "constraintSetVar":LConstraintSet;
+    invoke-virtual {v6, v1}, LConstraintSet;->d(Landroid/support/constraint/ConstraintLayout;)V
 
     .line 213
-    iget-object v7, v4, Ldefpackage/jbw;->a:Ldefpackage/jbv;
+    iget-object v7, v4, Ljbw;->a:Ljbv;
 
-    iget-object v15, v7, Ldefpackage/jbv;->j:Ldefpackage/jce;
+    iget-object v15, v7, Ljbv;->j:Ljce;
 
     .line 214
-    .local v15, "jceVar":Ldefpackage/jce;
+    .local v15, "jceVar":Ljce;
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v14
 
     .line 215
     .local v14, "childCount":I
-    iget-object v13, v4, Ldefpackage/jbw;->a:Ldefpackage/jbv;
+    iget-object v13, v4, Ljbw;->a:Ljbv;
 
     .line 216
-    .local v13, "jbvVar":Ldefpackage/jbv;
+    .local v13, "jbvVar":Ljbv;
     const/4 v7, 0x0
 
     .line 217
@@ -996,19 +996,19 @@
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/jcb;
+    check-cast v7, Ljcb;
 
-    iget v9, v7, Ldefpackage/jcb;->Z:I
+    iget v9, v7, Ljcb;->Z:I
 
     .line 221
     .local v9, "i11":I
     if-eqz v9, :cond_32
 
     .line 222
-    sget-object v16, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v16, Ljrz;->PORTRAIT:Ljrz;
 
     .line 223
-    .local v16, "jrzVar":Ldefpackage/jrz;
+    .local v16, "jrzVar":Ljrz;
     add-int/lit8 v7, v9, -0x1
 
     const-wide/high16 v17, 0x4000000000000000L    # 2.0
@@ -1041,11 +1041,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .local v19, "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v21, "tag":Ljava/lang/Object;
     .local v24, "a":Ljava/lang/Object;
@@ -1057,7 +1057,7 @@
 
     .line 494
     .local v1, "i3":I
-    sget-object v7, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1065,7 +1065,7 @@
 
     if-nez v7, :cond_31
 
-    sget-object v7, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1091,12 +1091,12 @@
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :pswitch_0
-    iget-object v7, v5, Ldefpackage/jbt;->m:Landroid/graphics/Rect;
+    iget-object v7, v5, Ljbt;->m:Landroid/graphics/Rect;
 
-    invoke-static {v10, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v10, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 490
     move v7, v12
@@ -1124,7 +1124,7 @@
     .line 428
     .end local v7    # "i3":I
     :pswitch_1
-    sget-object v7, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1136,7 +1136,7 @@
     move-object v7, v4
 
     .line 430
-    .local v7, "jbwVar":Ldefpackage/jbw;
+    .local v7, "jbwVar":Ljbw;
     move v8, v12
 
     move/from16 v27, v0
@@ -1163,10 +1163,10 @@
     goto/16 :goto_4
 
     .line 431
-    .end local v7    # "jbwVar":Ldefpackage/jbw;
+    .end local v7    # "jbwVar":Ljbw;
     .end local v8    # "i3":I
     :cond_0
-    sget-object v7, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1175,7 +1175,7 @@
     if-nez v7, :cond_7
 
     .line 432
-    sget-object v7, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1184,22 +1184,22 @@
     if-eqz v7, :cond_6
 
     .line 433
-    iget-object v7, v13, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v7, v13, Ljbv;->h:Ljrz;
 
     .line 434
-    .local v7, "jrzVar4":Ldefpackage/jrz;
+    .local v7, "jrzVar4":Ljrz;
     move-object/from16 v19, v1
 
     .end local v1    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    iget-object v1, v13, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v1, v13, Ljbv;->b:Landroid/util/Size;
 
     .line 435
     .local v1, "size3":Landroid/util/Size;
     if-eqz v1, :cond_5
 
     .line 436
-    sget-object v8, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v8, Ljrz;->PORTRAIT:Ljrz;
 
     move-object/from16 v21, v2
 
@@ -1212,13 +1212,13 @@
 
     move-object v2, v8
 
-    .local v8, "jbwVar2":Ldefpackage/jbw;
+    .local v8, "jbwVar2":Ljbw;
     goto :goto_1
 
     .line 438
-    .end local v8    # "jbwVar2":Ldefpackage/jbw;
+    .end local v8    # "jbwVar2":Ljbw;
     :cond_1
-    sget-object v2, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne v7, v2, :cond_2
 
@@ -1228,7 +1228,7 @@
     move-object v2, v8
 
     .line 464
-    .local v2, "jbwVar2":Ldefpackage/jbw;
+    .local v2, "jbwVar2":Ljbw;
     :goto_1
     invoke-virtual {v1}, Landroid/util/Size;->getWidth()I
 
@@ -1246,8 +1246,8 @@
 
     const v7, 0x7f070324
 
-    .end local v7    # "jrzVar4":Ldefpackage/jrz;
-    .local v25, "jrzVar4":Ldefpackage/jrz;
+    .end local v7    # "jrzVar4":Ljrz;
+    .local v25, "jrzVar4":Ljrz;
     invoke-virtual {v3, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v3
@@ -1265,10 +1265,10 @@
 
     move v3, v14
 
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v3, "childCount":I
-    .local v26, "jbvVar":Ldefpackage/jbv;
+    .local v26, "jbvVar":Ljbv;
     div-double v13, v7, v17
 
     double-to-int v14, v13
@@ -1338,14 +1338,14 @@
 
     move-wide/from16 v22, v28
 
-    .end local v25    # "jrzVar4":Ldefpackage/jrz;
+    .end local v25    # "jrzVar4":Ljrz;
     .end local v28    # "width3":D
-    .local v8, "jrzVar4":Ldefpackage/jrz;
+    .local v8, "jrzVar4":Ljrz;
     .local v22, "width3":D
     move-object v7, v6
 
-    .end local v8    # "jrzVar4":Ldefpackage/jrz;
-    .restart local v25    # "jrzVar4":Ldefpackage/jrz;
+    .end local v8    # "jrzVar4":Ljrz;
+    .restart local v25    # "jrzVar4":Ljrz;
     move/from16 v28, v9
 
     .end local v9    # "i11":I
@@ -1377,7 +1377,7 @@
     move-object/from16 v26, v13
 
     .end local v13    # "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .local v18, "i8":I
     .local v26, "childAt":Landroid/view/View;
     move v13, v14
@@ -1391,7 +1391,7 @@
     .restart local v30    # "childCount":I
     move-object v14, v1
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 472
     move-object/from16 v11, p0
@@ -1419,13 +1419,13 @@
     goto/16 :goto_0
 
     .line 441
-    .end local v2    # "jbwVar2":Ldefpackage/jbw;
+    .end local v2    # "jbwVar2":Ljbw;
     .end local v17    # "i3":I
     .end local v18    # "i8":I
     .end local v20    # "i6":I
     .end local v22    # "width3":D
     .end local v24    # "a":Ljava/lang/Object;
-    .end local v25    # "jrzVar4":Ldefpackage/jrz;
+    .end local v25    # "jrzVar4":Ljrz;
     .end local v26    # "childAt":Landroid/view/View;
     .end local v27    # "i7":I
     .end local v28    # "i11":I
@@ -1433,11 +1433,11 @@
     .end local v30    # "childCount":I
     .local v0, "i7":I
     .local v3, "a":Ljava/lang/Object;
-    .local v7, "jrzVar4":Ldefpackage/jrz;
+    .local v7, "jrzVar4":Ljrz;
     .restart local v9    # "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v12    # "i10":I
-    .local v13, "jbvVar":Ldefpackage/jbv;
+    .local v13, "jbvVar":Ljbv;
     .local v14, "childCount":I
     :cond_2
     move/from16 v27, v0
@@ -1458,17 +1458,17 @@
 
     move/from16 v30, v14
 
-    .end local v7    # "jrzVar4":Ldefpackage/jrz;
+    .end local v7    # "jrzVar4":Ljrz;
     .end local v9    # "i11":I
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v24    # "a":Ljava/lang/Object;
-    .restart local v25    # "jrzVar4":Ldefpackage/jrz;
+    .restart local v25    # "jrzVar4":Ljrz;
     .restart local v26    # "childAt":Landroid/view/View;
     .restart local v27    # "i7":I
     .restart local v28    # "i11":I
@@ -1477,7 +1477,7 @@
     move-object/from16 v31, v4
 
     .line 442
-    .local v31, "jbwVar2":Ldefpackage/jbw;
+    .local v31, "jbwVar2":Ljbw;
     invoke-virtual {v1}, Landroid/util/Size;->getHeight()I
 
     move-result v7
@@ -1509,8 +1509,8 @@
     .local v12, "i6":I
     move-object/from16 v11, v25
 
-    .end local v25    # "jrzVar4":Ldefpackage/jrz;
-    .local v11, "jrzVar4":Ldefpackage/jrz;
+    .end local v25    # "jrzVar4":Ljrz;
+    .local v11, "jrzVar4":Ljrz;
     if-eq v11, v8, :cond_3
 
     .line 446
@@ -1583,8 +1583,8 @@
 
     move-object/from16 v25, v11
 
-    .end local v11    # "jrzVar4":Ldefpackage/jrz;
-    .restart local v25    # "jrzVar4":Ldefpackage/jrz;
+    .end local v11    # "jrzVar4":Ljrz;
+    .restart local v25    # "jrzVar4":Ljrz;
     move/from16 v11, v17
 
     move/from16 v32, v12
@@ -1601,7 +1601,7 @@
 
     move-object v14, v1
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 460
     move-object/from16 v11, p0
@@ -1632,11 +1632,11 @@
     .end local v2    # "i7":I
     .end local v17    # "i8":I
     .end local v18    # "i3":I
-    .end local v25    # "jrzVar4":Ldefpackage/jrz;
+    .end local v25    # "jrzVar4":Ljrz;
     .end local v32    # "i6":I
     .end local v33    # "height3":D
     .restart local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .local v11, "jrzVar4":Ldefpackage/jrz;
+    .local v11, "jrzVar4":Ljrz;
     .restart local v12    # "i6":I
     .restart local v13    # "height3":D
     .restart local v27    # "i7":I
@@ -1647,10 +1647,10 @@
 
     move-wide/from16 v33, v13
 
-    .end local v11    # "jrzVar4":Ldefpackage/jrz;
+    .end local v11    # "jrzVar4":Ljrz;
     .end local v12    # "i6":I
     .end local v13    # "height3":D
-    .restart local v25    # "jrzVar4":Ldefpackage/jrz;
+    .restart local v25    # "jrzVar4":Ljrz;
     .restart local v32    # "i6":I
     .restart local v33    # "height3":D
     invoke-virtual {v1}, Landroid/util/Size;->getWidth()I
@@ -1709,7 +1709,7 @@
 
     move-object v14, v1
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 453
     move-object/from16 v11, p0
@@ -1740,23 +1740,23 @@
     .end local v17    # "i3":I
     .end local v21    # "tag":Ljava/lang/Object;
     .end local v24    # "a":Ljava/lang/Object;
-    .end local v25    # "jrzVar4":Ldefpackage/jrz;
+    .end local v25    # "jrzVar4":Ljrz;
     .end local v26    # "childAt":Landroid/view/View;
     .end local v27    # "i7":I
     .end local v28    # "i11":I
     .end local v29    # "i10":I
     .end local v30    # "childCount":I
-    .end local v31    # "jbwVar2":Ldefpackage/jbw;
+    .end local v31    # "jbwVar2":Ljbw;
     .end local v32    # "i6":I
     .end local v33    # "height3":D
     .local v0, "i7":I
     .local v2, "tag":Ljava/lang/Object;
     .local v3, "a":Ljava/lang/Object;
-    .restart local v7    # "jrzVar4":Ldefpackage/jrz;
+    .restart local v7    # "jrzVar4":Ljrz;
     .restart local v9    # "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .local v12, "i10":I
-    .local v13, "jbvVar":Ldefpackage/jbv;
+    .local v13, "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :cond_5
     move/from16 v27, v0
@@ -1780,18 +1780,18 @@
     move/from16 v30, v14
 
     .end local v2    # "tag":Ljava/lang/Object;
-    .end local v7    # "jrzVar4":Ldefpackage/jrz;
+    .end local v7    # "jrzVar4":Ljrz;
     .end local v9    # "i11":I
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
-    .restart local v25    # "jrzVar4":Ldefpackage/jrz;
+    .restart local v25    # "jrzVar4":Ljrz;
     .restart local v26    # "childAt":Landroid/view/View;
     .restart local v27    # "i7":I
     .restart local v28    # "i11":I
@@ -1803,7 +1803,7 @@
     .end local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v21    # "tag":Ljava/lang/Object;
     .end local v24    # "a":Ljava/lang/Object;
-    .end local v25    # "jrzVar4":Ldefpackage/jrz;
+    .end local v25    # "jrzVar4":Ljrz;
     .end local v26    # "childAt":Landroid/view/View;
     .end local v27    # "i7":I
     .end local v28    # "i11":I
@@ -1817,7 +1817,7 @@
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :cond_6
     move/from16 v27, v0
@@ -1847,10 +1847,10 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -1889,7 +1889,7 @@
     .restart local v9    # "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :cond_7
     move/from16 v27, v0
@@ -1918,10 +1918,10 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -1933,19 +1933,19 @@
     move-object v7, v4
 
     .line 482
-    .local v7, "jbwVar":Ldefpackage/jbw;
+    .local v7, "jbwVar":Ljbw;
     move/from16 v8, v29
 
     .line 484
     .local v8, "i3":I
     :goto_4
-    iget-object v1, v5, Ldefpackage/jbt;->d:Landroid/graphics/Rect;
+    iget-object v1, v5, Ljbt;->d:Landroid/graphics/Rect;
 
     move-object/from16 v2, v26
 
     .end local v26    # "childAt":Landroid/view/View;
     .local v2, "childAt":Landroid/view/View;
-    invoke-static {v2, v1, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v1, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 485
     move-object/from16 v11, p0
@@ -1961,7 +1961,7 @@
     goto/16 :goto_1c
 
     .line 408
-    .end local v7    # "jbwVar":Ldefpackage/jbw;
+    .end local v7    # "jbwVar":Ljbw;
     .end local v8    # "i3":I
     .end local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v21    # "tag":Ljava/lang/Object;
@@ -1977,7 +1977,7 @@
     .restart local v9    # "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :pswitch_2
     move/from16 v27, v0
@@ -2005,11 +2005,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -2020,12 +2020,12 @@
     move-object v1, v4
 
     .line 409
-    .local v1, "jbwVar9":Ldefpackage/jbw;
+    .local v1, "jbwVar9":Ljbw;
     move/from16 v7, v29
 
     .line 410
     .local v7, "i3":I
-    sget-object v8, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2033,7 +2033,7 @@
 
     if-nez v8, :cond_9
 
-    sget-object v8, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2042,7 +2042,7 @@
     if-nez v8, :cond_9
 
     .line 411
-    sget-object v8, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2067,11 +2067,11 @@
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :cond_8
-    iget-object v8, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v8, v3, Ljbv;->b:Landroid/util/Size;
 
-    iget-object v9, v3, Ldefpackage/jbv;->d:Landroid/util/Size;
+    iget-object v9, v3, Ljbv;->d:Landroid/util/Size;
 
-    invoke-static {v2, v8, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v8, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;LConstraintSet;)V
 
     .line 417
     move-object/from16 v11, p0
@@ -2102,9 +2102,9 @@
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :cond_9
-    iget-object v8, v5, Ldefpackage/jbt;->c:Landroid/graphics/Rect;
+    iget-object v8, v5, Ljbt;->c:Landroid/graphics/Rect;
 
-    invoke-static {v2, v8, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v8, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 423
     move-object/from16 v11, p0
@@ -2135,7 +2135,7 @@
     .restart local v9    # "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :pswitch_3
     move/from16 v27, v0
@@ -2163,11 +2163,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -2178,12 +2178,12 @@
     move-object v1, v4
 
     .line 386
-    .local v1, "jbwVar8":Ldefpackage/jbw;
+    .local v1, "jbwVar8":Ljbw;
     move/from16 v7, v29
 
     .line 387
     .restart local v7    # "i3":I
-    sget-object v8, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2202,7 +2202,7 @@
     .line 389
     .end local v8    # "gcaLayout":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :cond_a
-    sget-object v8, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2211,7 +2211,7 @@
     if-nez v8, :cond_c
 
     .line 390
-    sget-object v8, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2236,13 +2236,13 @@
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :cond_b
-    iget-object v8, v3, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v8, v3, Ljbv;->h:Ljrz;
 
-    iget-object v9, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v9, v3, Ljbv;->b:Landroid/util/Size;
 
     move-object/from16 v14, p0
 
-    invoke-direct {v14, v2, v8, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->e(Landroid/view/View;Ldefpackage/jrz;Landroid/util/Size;Ldefpackage/ConstraintSet;)V
+    invoke-direct {v14, v2, v8, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->e(Landroid/view/View;Ljrz;Landroid/util/Size;LConstraintSet;)V
 
     .line 396
     move-object/from16 v11, p0
@@ -2280,9 +2280,9 @@
     .line 403
     .restart local v8    # "gcaLayout":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :goto_5
-    iget-object v9, v5, Ldefpackage/jbt;->j:Landroid/graphics/Rect;
+    iget-object v9, v5, Ljbt;->j:Landroid/graphics/Rect;
 
-    invoke-static {v2, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 404
     move-object v11, v8
@@ -2314,7 +2314,7 @@
     .restart local v9    # "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :pswitch_4
     move/from16 v27, v0
@@ -2344,11 +2344,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -2359,7 +2359,7 @@
     move-object v1, v4
 
     .line 365
-    .local v1, "jbwVar7":Ldefpackage/jbw;
+    .local v1, "jbwVar7":Ljbw;
     move/from16 v7, v29
 
     .line 366
@@ -2368,7 +2368,7 @@
 
     .line 367
     .local v8, "gcaLayout5":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    sget-object v9, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v9, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v9}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2376,7 +2376,7 @@
 
     if-nez v9, :cond_e
 
-    sget-object v9, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v9, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v9}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2385,7 +2385,7 @@
     if-nez v9, :cond_e
 
     .line 368
-    sget-object v9, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v9, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v9}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2410,11 +2410,11 @@
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :cond_d
-    iget-object v9, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v9, v3, Ljbv;->b:Landroid/util/Size;
 
-    iget-object v10, v3, Ldefpackage/jbv;->d:Landroid/util/Size;
+    iget-object v10, v3, Ljbv;->d:Landroid/util/Size;
 
-    invoke-static {v2, v9, v10, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v9, v10, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;LConstraintSet;)V
 
     .line 374
     move-object v11, v8
@@ -2445,9 +2445,9 @@
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :cond_e
-    iget-object v9, v5, Ldefpackage/jbt;->g:Landroid/graphics/Rect;
+    iget-object v9, v5, Ljbt;->g:Landroid/graphics/Rect;
 
-    invoke-static {v2, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 380
     move-object v11, v8
@@ -2479,7 +2479,7 @@
     .restart local v9    # "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :pswitch_5
     move/from16 v27, v0
@@ -2509,11 +2509,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -2524,7 +2524,7 @@
     move-object v1, v4
 
     .line 330
-    .local v1, "jbwVar6":Ldefpackage/jbw;
+    .local v1, "jbwVar6":Ljbw;
     move/from16 v20, v29
 
     .line 331
@@ -2533,7 +2533,7 @@
 
     .line 332
     .local v22, "gcaLayout4":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    sget-object v7, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2552,7 +2552,7 @@
 
     .line 334
     :cond_f
-    sget-object v7, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2561,7 +2561,7 @@
     if-nez v7, :cond_14
 
     .line 335
-    sget-object v7, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2570,24 +2570,24 @@
     if-eqz v7, :cond_13
 
     .line 336
-    iget-object v13, v3, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v13, v3, Ljbv;->h:Ljrz;
 
     .line 337
-    .local v13, "jrzVar3":Ldefpackage/jrz;
-    iget-object v12, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    .local v13, "jrzVar3":Ljrz;
+    iget-object v12, v3, Ljbv;->b:Landroid/util/Size;
 
     .line 338
     .local v12, "size2":Landroid/util/Size;
     if-eqz v12, :cond_12
 
     .line 339
-    sget-object v7, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v7, Ljrz;->PORTRAIT:Ljrz;
 
     const v8, 0x7f070326
 
     if-eq v13, v7, :cond_11
 
-    sget-object v7, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v7, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne v13, v7, :cond_10
 
@@ -2620,8 +2620,8 @@
     .line 346
     move-object/from16 v23, v15
 
-    .end local v15    # "jceVar":Ldefpackage/jce;
-    .local v23, "jceVar":Ldefpackage/jce;
+    .end local v15    # "jceVar":Ljce;
+    .local v23, "jceVar":Ljce;
     div-double v14, v9, v17
 
     double-to-int v7, v14
@@ -2634,14 +2634,14 @@
     .line 339
     .end local v7    # "i5":I
     .end local v9    # "width2":D
-    .end local v23    # "jceVar":Ldefpackage/jce;
-    .restart local v15    # "jceVar":Ldefpackage/jce;
+    .end local v23    # "jceVar":Ljce;
+    .restart local v15    # "jceVar":Ljce;
     :cond_11
     move-object/from16 v23, v15
 
     .line 340
-    .end local v15    # "jceVar":Ldefpackage/jce;
-    .restart local v23    # "jceVar":Ldefpackage/jce;
+    .end local v15    # "jceVar":Ljce;
+    .restart local v23    # "jceVar":Ljce;
     :goto_6
     invoke-virtual {v12}, Landroid/util/Size;->getHeight()I
 
@@ -2724,13 +2724,13 @@
 
     move-object/from16 v18, v13
 
-    .end local v13    # "jrzVar3":Ldefpackage/jrz;
-    .local v18, "jrzVar3":Ldefpackage/jrz;
+    .end local v13    # "jrzVar3":Ljrz;
+    .local v18, "jrzVar3":Ljrz;
     move v13, v14
 
     move-object/from16 v14, v17
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 350
     move-object v4, v1
@@ -2758,11 +2758,11 @@
 
     .line 338
     .end local v17    # "size2":Landroid/util/Size;
-    .end local v18    # "jrzVar3":Ldefpackage/jrz;
-    .end local v23    # "jceVar":Ldefpackage/jce;
+    .end local v18    # "jrzVar3":Ljrz;
+    .end local v23    # "jceVar":Ljce;
     .restart local v12    # "size2":Landroid/util/Size;
-    .restart local v13    # "jrzVar3":Ldefpackage/jrz;
-    .local v15, "jceVar":Ldefpackage/jce;
+    .restart local v13    # "jrzVar3":Ljrz;
+    .local v15, "jceVar":Ljce;
     :cond_12
     move-object/from16 v17, v12
 
@@ -2771,24 +2771,24 @@
     move-object/from16 v23, v15
 
     .end local v12    # "size2":Landroid/util/Size;
-    .end local v13    # "jrzVar3":Ldefpackage/jrz;
-    .end local v15    # "jceVar":Ldefpackage/jce;
+    .end local v13    # "jrzVar3":Ljrz;
+    .end local v15    # "jceVar":Ljce;
     .restart local v17    # "size2":Landroid/util/Size;
-    .restart local v18    # "jrzVar3":Ldefpackage/jrz;
-    .restart local v23    # "jceVar":Ldefpackage/jce;
+    .restart local v18    # "jrzVar3":Ljrz;
+    .restart local v23    # "jceVar":Ljce;
     goto :goto_8
 
     .line 335
     .end local v17    # "size2":Landroid/util/Size;
-    .end local v18    # "jrzVar3":Ldefpackage/jrz;
-    .end local v23    # "jceVar":Ldefpackage/jce;
-    .restart local v15    # "jceVar":Ldefpackage/jce;
+    .end local v18    # "jrzVar3":Ljrz;
+    .end local v23    # "jceVar":Ljce;
+    .restart local v15    # "jceVar":Ljce;
     :cond_13
     move-object/from16 v23, v15
 
     .line 354
-    .end local v15    # "jceVar":Ldefpackage/jce;
-    .restart local v23    # "jceVar":Ldefpackage/jce;
+    .end local v15    # "jceVar":Ljce;
+    .restart local v23    # "jceVar":Ljce;
     :goto_8
     move-object/from16 v11, v22
 
@@ -2806,14 +2806,14 @@
 
     .line 358
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .end local v23    # "jceVar":Ldefpackage/jce;
+    .end local v23    # "jceVar":Ljce;
     .restart local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .restart local v15    # "jceVar":Ldefpackage/jce;
+    .restart local v15    # "jceVar":Ljce;
     :cond_14
     move-object/from16 v23, v15
 
-    .end local v15    # "jceVar":Ldefpackage/jce;
-    .restart local v23    # "jceVar":Ldefpackage/jce;
+    .end local v15    # "jceVar":Ljce;
+    .restart local v23    # "jceVar":Ljce;
     move-object/from16 v0, v22
 
     move-object v11, v0
@@ -2822,9 +2822,9 @@
     .end local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :goto_9
-    iget-object v0, v5, Ldefpackage/jbt;->h:Landroid/graphics/Rect;
+    iget-object v0, v5, Ljbt;->h:Landroid/graphics/Rect;
 
-    invoke-static {v2, v0, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v0, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 361
     move-object v4, v1
@@ -2841,7 +2841,7 @@
     .end local v20    # "i3":I
     .end local v21    # "tag":Ljava/lang/Object;
     .end local v22    # "gcaLayout4":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .end local v23    # "jceVar":Ldefpackage/jce;
+    .end local v23    # "jceVar":Ljce;
     .end local v24    # "a":Ljava/lang/Object;
     .end local v27    # "i7":I
     .end local v28    # "i11":I
@@ -2854,9 +2854,9 @@
     .local v9, "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .local v12, "i10":I
-    .local v13, "jbvVar":Ldefpackage/jbv;
+    .local v13, "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
-    .restart local v15    # "jceVar":Ldefpackage/jce;
+    .restart local v15    # "jceVar":Ljce;
     :pswitch_6
     move/from16 v27, v0
 
@@ -2885,15 +2885,15 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
-    .end local v15    # "jceVar":Ldefpackage/jce;
+    .end local v15    # "jceVar":Ljce;
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
-    .restart local v23    # "jceVar":Ldefpackage/jce;
+    .restart local v23    # "jceVar":Ljce;
     .restart local v24    # "a":Ljava/lang/Object;
     .restart local v27    # "i7":I
     .restart local v28    # "i11":I
@@ -2902,22 +2902,22 @@
     move-object v1, v4
 
     .line 313
-    .local v1, "jbwVar5":Ldefpackage/jbw;
+    .local v1, "jbwVar5":Ljbw;
     move/from16 v7, v29
 
     .line 314
     .local v7, "i3":I
-    sget-object v8, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->PHONE_LAYOUT:Ljce;
 
-    .end local v23    # "jceVar":Ldefpackage/jce;
-    .restart local v15    # "jceVar":Ldefpackage/jce;
+    .end local v23    # "jceVar":Ljce;
+    .restart local v15    # "jceVar":Ljce;
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
     move-result v8
 
     if-nez v8, :cond_16
 
-    sget-object v8, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2926,7 +2926,7 @@
     if-nez v8, :cond_16
 
     .line 315
-    sget-object v8, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v8, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -2946,11 +2946,11 @@
 
     .line 319
     :cond_15
-    iget-object v8, v3, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v8, v3, Ljbv;->h:Ljrz;
 
-    iget-object v9, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v9, v3, Ljbv;->b:Landroid/util/Size;
 
-    invoke-direct {v0, v2, v8, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->e(Landroid/view/View;Ldefpackage/jrz;Landroid/util/Size;Ldefpackage/ConstraintSet;)V
+    invoke-direct {v0, v2, v8, v9, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->e(Landroid/view/View;Ljrz;Landroid/util/Size;LConstraintSet;)V
 
     .line 320
     move-object v4, v1
@@ -2976,9 +2976,9 @@
 
     .line 324
     :cond_16
-    iget-object v8, v5, Ldefpackage/jbt;->l:Landroid/graphics/Rect;
+    iget-object v8, v5, Ljbt;->l:Landroid/graphics/Rect;
 
-    invoke-static {v2, v8, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v8, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 325
     move-object v4, v1
@@ -3007,7 +3007,7 @@
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :pswitch_7
     move/from16 v27, v0
@@ -3035,11 +3035,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -3050,12 +3050,12 @@
     move-object v1, v4
 
     .line 289
-    .local v1, "jbwVar4":Ldefpackage/jbw;
+    .local v1, "jbwVar4":Ljbw;
     move/from16 v13, v29
 
     .line 290
     .local v13, "i3":I
-    sget-object v7, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -3063,7 +3063,7 @@
 
     if-nez v7, :cond_18
 
-    sget-object v7, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -3075,11 +3075,11 @@
 
     .line 307
     :cond_17
-    iget-object v7, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v7, v3, Ljbv;->b:Landroid/util/Size;
 
-    iget-object v8, v3, Ldefpackage/jbv;->d:Landroid/util/Size;
+    iget-object v8, v3, Ljbv;->d:Landroid/util/Size;
 
-    invoke-static {v2, v7, v8, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v7, v8, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;LConstraintSet;)V
 
     .line 308
     move-object v4, v1
@@ -3109,16 +3109,16 @@
     move-object v4, v1
 
     .line 292
-    iget-object v14, v4, Ldefpackage/jbw;->c:Ldefpackage/jcd;
+    iget-object v14, v4, Ljbw;->c:Ljcd;
 
     .line 293
-    .local v14, "jcdVar":Ldefpackage/jcd;
+    .local v14, "jcdVar":Ljcd;
     if-nez v14, :cond_19
 
     .line 294
-    iget-object v7, v5, Ldefpackage/jbt;->f:Landroid/graphics/Rect;
+    iget-object v7, v5, Ljbt;->f:Landroid/graphics/Rect;
 
-    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 295
     goto :goto_b
@@ -3129,26 +3129,26 @@
 
     move-result v7
 
-    iget-object v8, v14, Ldefpackage/jcd;->a:Landroid/util/Size;
+    iget-object v8, v14, Ljcd;->a:Landroid/util/Size;
 
     invoke-virtual {v8}, Landroid/util/Size;->getHeight()I
 
     move-result v8
 
-    invoke-virtual {v6, v7, v8}, Ldefpackage/ConstraintSet;->f(II)V
+    invoke-virtual {v6, v7, v8}, LConstraintSet;->f(II)V
 
     .line 298
     invoke-virtual {v2}, Landroid/view/View;->getId()I
 
     move-result v7
 
-    iget-object v8, v14, Ldefpackage/jcd;->a:Landroid/util/Size;
+    iget-object v8, v14, Ljcd;->a:Landroid/util/Size;
 
     invoke-virtual {v8}, Landroid/util/Size;->getWidth()I
 
     move-result v8
 
-    invoke-virtual {v6, v7, v8}, Ldefpackage/ConstraintSet;->g(II)V
+    invoke-virtual {v6, v7, v8}, LConstraintSet;->g(II)V
 
     .line 299
     invoke-virtual {v2}, Landroid/view/View;->getId()I
@@ -3161,13 +3161,13 @@
 
     const/4 v11, 0x3
 
-    iget-object v7, v14, Ldefpackage/jcd;->c:Landroid/graphics/Rect;
+    iget-object v7, v14, Ljcd;->c:Landroid/graphics/Rect;
 
     iget v12, v7, Landroid/graphics/Rect;->top:I
 
     move-object v7, v6
 
-    invoke-virtual/range {v7 .. v12}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v7 .. v12}, LConstraintSet;->e(IIIII)V
 
     .line 300
     invoke-virtual {v2}, Landroid/view/View;->getId()I
@@ -3178,13 +3178,13 @@
 
     const/4 v11, 0x6
 
-    iget-object v7, v14, Ldefpackage/jcd;->c:Landroid/graphics/Rect;
+    iget-object v7, v14, Ljcd;->c:Landroid/graphics/Rect;
 
     iget v12, v7, Landroid/graphics/Rect;->left:I
 
     move-object v7, v6
 
-    invoke-virtual/range {v7 .. v12}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v7 .. v12}, LConstraintSet;->e(IIIII)V
 
     .line 301
     invoke-virtual {v2}, Landroid/view/View;->getId()I
@@ -3195,13 +3195,13 @@
 
     const/4 v11, 0x7
 
-    iget-object v7, v14, Ldefpackage/jcd;->c:Landroid/graphics/Rect;
+    iget-object v7, v14, Ljcd;->c:Landroid/graphics/Rect;
 
     iget v12, v7, Landroid/graphics/Rect;->right:I
 
     move-object v7, v6
 
-    invoke-virtual/range {v7 .. v12}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v7 .. v12}, LConstraintSet;->e(IIIII)V
 
     .line 302
     invoke-virtual {v2}, Landroid/view/View;->getId()I
@@ -3212,16 +3212,16 @@
 
     const/4 v11, 0x4
 
-    iget-object v7, v14, Ldefpackage/jcd;->c:Landroid/graphics/Rect;
+    iget-object v7, v14, Ljcd;->c:Landroid/graphics/Rect;
 
     iget v12, v7, Landroid/graphics/Rect;->bottom:I
 
     move-object v7, v6
 
-    invoke-virtual/range {v7 .. v12}, Ldefpackage/ConstraintSet;->e(IIIII)V
+    invoke-virtual/range {v7 .. v12}, LConstraintSet;->e(IIIII)V
 
     .line 303
-    iget-object v7, v14, Ldefpackage/jcd;->b:Landroid/graphics/Rect;
+    iget-object v7, v14, Ljcd;->b:Landroid/graphics/Rect;
 
     iget v8, v7, Landroid/graphics/Rect;->left:I
 
@@ -3237,9 +3237,9 @@
     nop
 
     .line 524
-    .end local v1    # "jbwVar4":Ldefpackage/jbw;
-    .end local v14    # "jcdVar":Ldefpackage/jcd;
-    .end local v16    # "jrzVar":Ldefpackage/jrz;
+    .end local v1    # "jbwVar4":Ljbw;
+    .end local v14    # "jcdVar":Ljcd;
+    .end local v16    # "jrzVar":Ljrz;
     :goto_b
     move-object v11, v0
 
@@ -3263,9 +3263,9 @@
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v12    # "i10":I
-    .local v13, "jbvVar":Ldefpackage/jbv;
+    .local v13, "jbvVar":Ljbv;
     .local v14, "childCount":I
-    .restart local v16    # "jrzVar":Ldefpackage/jrz;
+    .restart local v16    # "jrzVar":Ljrz;
     :pswitch_8
     move/from16 v27, v0
 
@@ -3292,11 +3292,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -3308,7 +3308,7 @@
 
     .line 263
     .local v1, "i3":I
-    sget-object v7, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -3316,7 +3316,7 @@
 
     if-nez v7, :cond_20
 
-    sget-object v7, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -3328,7 +3328,7 @@
 
     .line 266
     :cond_1a
-    sget-object v7, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -3337,24 +3337,24 @@
     if-eqz v7, :cond_30
 
     .line 267
-    iget-object v14, v3, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v14, v3, Ljbv;->h:Ljrz;
 
     .line 268
-    .local v14, "jrzVar2":Ldefpackage/jrz;
-    iget-object v13, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    .local v14, "jrzVar2":Ljrz;
+    iget-object v13, v3, Ljbv;->b:Landroid/util/Size;
 
     .line 269
     .local v13, "size":Landroid/util/Size;
     if-eqz v13, :cond_1f
 
     .line 270
-    sget-object v7, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v7, Ljrz;->PORTRAIT:Ljrz;
 
     const v8, 0x7f07031c
 
     if-eq v14, v7, :cond_1c
 
-    sget-object v9, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v9, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne v14, v9, :cond_1b
 
@@ -3455,7 +3455,7 @@
 
     if-eq v14, v7, :cond_1e
 
-    sget-object v7, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v7, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne v14, v7, :cond_1d
 
@@ -3543,40 +3543,40 @@
 
     move-object/from16 v18, v14
 
-    .end local v14    # "jrzVar2":Ldefpackage/jrz;
-    .local v18, "jrzVar2":Ldefpackage/jrz;
+    .end local v14    # "jrzVar2":Ljrz;
+    .local v18, "jrzVar2":Ljrz;
     move-object/from16 v14, v20
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 280
     goto/16 :goto_14
 
     .line 269
     .end local v17    # "i4":I
-    .end local v18    # "jrzVar2":Ldefpackage/jrz;
+    .end local v18    # "jrzVar2":Ljrz;
     .end local v20    # "size":Landroid/util/Size;
     .restart local v13    # "size":Landroid/util/Size;
-    .restart local v14    # "jrzVar2":Ldefpackage/jrz;
+    .restart local v14    # "jrzVar2":Ljrz;
     :cond_1f
     move-object/from16 v20, v13
 
     move-object/from16 v18, v14
 
     .end local v13    # "size":Landroid/util/Size;
-    .end local v14    # "jrzVar2":Ldefpackage/jrz;
-    .restart local v18    # "jrzVar2":Ldefpackage/jrz;
+    .end local v14    # "jrzVar2":Ljrz;
+    .restart local v18    # "jrzVar2":Ljrz;
     .restart local v20    # "size":Landroid/util/Size;
     goto/16 :goto_14
 
     .line 264
-    .end local v18    # "jrzVar2":Ldefpackage/jrz;
+    .end local v18    # "jrzVar2":Ljrz;
     .end local v20    # "size":Landroid/util/Size;
     :cond_20
     :goto_10
-    iget-object v7, v5, Ldefpackage/jbt;->i:Landroid/graphics/Rect;
+    iget-object v7, v5, Ljbt;->i:Landroid/graphics/Rect;
 
-    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 265
     goto/16 :goto_14
@@ -3597,7 +3597,7 @@
     .restart local v10    # "childAt":Landroid/view/View;
     .local v11, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v12    # "i10":I
-    .local v13, "jbvVar":Ldefpackage/jbv;
+    .local v13, "jbvVar":Ljbv;
     .local v14, "childCount":I
     :pswitch_9
     move/from16 v27, v0
@@ -3625,11 +3625,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -3641,7 +3641,7 @@
 
     .line 241
     .local v1, "i3":I
-    sget-object v7, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -3649,7 +3649,7 @@
 
     if-nez v7, :cond_25
 
-    sget-object v7, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -3663,7 +3663,7 @@
 
     .line 244
     :cond_21
-    sget-object v7, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -3672,9 +3672,9 @@
     if-eqz v7, :cond_24
 
     .line 245
-    iget-object v7, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v7, v3, Ljbv;->b:Landroid/util/Size;
 
-    iget-object v8, v3, Ldefpackage/jbv;->d:Landroid/util/Size;
+    iget-object v8, v3, Ljbv;->d:Landroid/util/Size;
 
     invoke-static {v7, v8}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->f(Landroid/util/Size;Landroid/util/Size;)Landroid/graphics/Rect;
 
@@ -3682,20 +3682,20 @@
 
     .line 246
     .local v14, "f":Landroid/graphics/Rect;
-    iget-object v7, v3, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v7, v3, Ljbv;->h:Ljrz;
 
-    sget-object v8, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v8, Ljrz;->PORTRAIT:Ljrz;
 
     const v9, 0x7f070325
 
     if-eq v7, v8, :cond_23
 
-    sget-object v10, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v10, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-eq v7, v10, :cond_23
 
     .line 247
-    sget-object v10, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v10, Ljrz;->LANDSCAPE:Ljrz;
 
     if-eq v7, v10, :cond_22
 
@@ -3752,7 +3752,7 @@
 
     add-int/2addr v1, v7
 
-    iget-object v11, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v11, v3, Ljbv;->b:Landroid/util/Size;
 
     move-object v7, v6
 
@@ -3776,7 +3776,7 @@
     .local v1, "f":Landroid/graphics/Rect;
     move-object/from16 v14, v20
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 249
     goto/16 :goto_12
@@ -3841,7 +3841,7 @@
 
     add-int v14, v7, v9
 
-    iget-object v9, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v9, v3, Ljbv;->b:Landroid/util/Size;
 
     move-object v7, v6
 
@@ -3859,7 +3859,7 @@
 
     move-object/from16 v14, v18
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 252
     goto :goto_12
@@ -3925,7 +3925,7 @@
 
     iget v14, v1, Landroid/graphics/Rect;->left:I
 
-    iget-object v9, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v9, v3, Ljbv;->b:Landroid/util/Size;
 
     move-object v7, v6
 
@@ -3943,7 +3943,7 @@
 
     move-object/from16 v14, v18
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 256
     goto :goto_12
@@ -3968,15 +3968,15 @@
     .end local v1    # "i3":I
     .restart local v17    # "i3":I
     :goto_11
-    iget-object v1, v5, Ldefpackage/jbt;->f:Landroid/graphics/Rect;
+    iget-object v1, v5, Ljbt;->f:Landroid/graphics/Rect;
 
-    invoke-static {v2, v1, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v1, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 243
     nop
 
     .line 524
-    .end local v16    # "jrzVar":Ldefpackage/jrz;
+    .end local v16    # "jrzVar":Ljrz;
     :goto_12
     move-object v11, v0
 
@@ -4001,9 +4001,9 @@
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .local v14, "childCount":I
-    .restart local v16    # "jrzVar":Ldefpackage/jrz;
+    .restart local v16    # "jrzVar":Ljrz;
     :pswitch_a
     move/from16 v27, v0
 
@@ -4030,11 +4030,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -4046,7 +4046,7 @@
 
     .line 230
     .local v1, "i3":I
-    sget-object v7, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -4054,7 +4054,7 @@
 
     if-nez v7, :cond_27
 
-    sget-object v7, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -4066,7 +4066,7 @@
 
     .line 233
     :cond_26
-    sget-object v7, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -4075,11 +4075,11 @@
     if-eqz v7, :cond_30
 
     .line 234
-    iget-object v7, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v7, v3, Ljbv;->b:Landroid/util/Size;
 
-    iget-object v8, v3, Ldefpackage/jbv;->d:Landroid/util/Size;
+    iget-object v8, v3, Ljbv;->d:Landroid/util/Size;
 
-    invoke-static {v2, v7, v8, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v7, v8, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->i(Landroid/view/View;Landroid/util/Size;Landroid/util/Size;LConstraintSet;)V
 
     .line 235
     goto :goto_14
@@ -4087,15 +4087,15 @@
     .line 231
     :cond_27
     :goto_13
-    iget-object v7, v5, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v7, v5, Ljbt;->e:Landroid/graphics/Rect;
 
-    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 232
     nop
 
     .line 524
-    .end local v16    # "jrzVar":Ldefpackage/jrz;
+    .end local v16    # "jrzVar":Ljrz;
     :goto_14
     move-object v11, v0
 
@@ -4117,9 +4117,9 @@
     .restart local v10    # "childAt":Landroid/view/View;
     .restart local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v12    # "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
-    .restart local v16    # "jrzVar":Ldefpackage/jrz;
+    .restart local v16    # "jrzVar":Ljrz;
     :pswitch_b
     move/from16 v27, v0
 
@@ -4146,11 +4146,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -4162,16 +4162,16 @@
 
     .line 226
     .local v1, "i3":I
-    iget-object v7, v5, Ldefpackage/jbt;->k:Landroid/graphics/Rect;
+    iget-object v7, v5, Ljbt;->k:Landroid/graphics/Rect;
 
-    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 227
     goto/16 :goto_1a
 
     .line 497
     :cond_28
-    sget-object v7, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v7, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v15, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -4180,16 +4180,16 @@
     if-eqz v7, :cond_30
 
     .line 498
-    iget-object v14, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v14, v3, Ljbv;->b:Landroid/util/Size;
 
     .line 499
     .local v14, "size4":Landroid/util/Size;
     if-eqz v14, :cond_2f
 
     .line 500
-    iget-object v7, v3, Ldefpackage/jbv;->i:Ldefpackage/jrl;
+    iget-object v7, v3, Ljbv;->i:Ljrl;
 
-    invoke-static {v7}, Ldefpackage/jbr;->b(Ldefpackage/jrl;)Z
+    invoke-static {v7}, Ljbr;->b(Ljrl;)Z
 
     move-result v7
 
@@ -4215,15 +4215,15 @@
 
     .line 501
     .local v22, "dimensionPixelSize":I
-    iget-object v7, v3, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v7, v3, Ljbv;->h:Ljrz;
 
-    sget-object v9, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v9, Ljrz;->PORTRAIT:Ljrz;
 
     const v10, 0x7f070320
 
     if-eq v7, v9, :cond_2b
 
-    sget-object v11, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v11, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne v7, v11, :cond_2a
 
@@ -4306,13 +4306,13 @@
     .end local v8    # "i9":I
     .local v17, "i9":I
     :goto_17
-    iget-object v8, v3, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v8, v3, Ljbv;->h:Ljrz;
 
     move-object v9, v13
 
     if-eq v8, v9, :cond_2d
 
-    sget-object v11, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v11, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne v8, v11, :cond_2c
 
@@ -4411,7 +4411,7 @@
 
     move-result v13
 
-    iget-object v8, v3, Ldefpackage/jbv;->b:Landroid/util/Size;
+    iget-object v8, v3, Ljbv;->b:Landroid/util/Size;
 
     move-object v7, v6
 
@@ -4431,7 +4431,7 @@
     .local v20, "size4":Landroid/util/Size;
     move-object/from16 v14, v18
 
-    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(Ldefpackage/ConstraintSet;Ldefpackage/jrz;IIIIILandroid/util/Size;)V
+    invoke-static/range {v7 .. v14}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->g(LConstraintSet;Ljrz;IIIIILandroid/util/Size;)V
 
     .line 515
     goto/16 :goto_14
@@ -4452,7 +4452,7 @@
     .line 218
     .end local v1    # "i3":I
     .end local v2    # "childAt":Landroid/view/View;
-    .end local v16    # "jrzVar":Ldefpackage/jrz;
+    .end local v16    # "jrzVar":Ljrz;
     .end local v20    # "size4":Landroid/util/Size;
     .end local v28    # "i11":I
     :cond_30
@@ -4478,20 +4478,20 @@
     .line 495
     .restart local v1    # "i3":I
     .restart local v2    # "childAt":Landroid/view/View;
-    .restart local v16    # "jrzVar":Ldefpackage/jrz;
+    .restart local v16    # "jrzVar":Ljrz;
     .restart local v28    # "i11":I
     :cond_31
     :goto_1b
-    iget-object v7, v5, Ldefpackage/jbt;->n:Landroid/graphics/Rect;
+    iget-object v7, v5, Ljbt;->n:Landroid/graphics/Rect;
 
-    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;Ldefpackage/ConstraintSet;)V
+    invoke-static {v2, v7, v6}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->h(Landroid/view/View;Landroid/graphics/Rect;LConstraintSet;)V
 
     .line 496
     goto/16 :goto_14
 
     .line 524
     .end local v0    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
-    .end local v16    # "jrzVar":Ldefpackage/jrz;
+    .end local v16    # "jrzVar":Ljrz;
     .local v11, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     :goto_1c
     goto :goto_1d
@@ -4511,7 +4511,7 @@
     .restart local v9    # "i11":I
     .restart local v10    # "childAt":Landroid/view/View;
     .local v12, "i10":I
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .local v14, "childCount":I
     :cond_32
     move/from16 v27, v0
@@ -4539,11 +4539,11 @@
     .end local v10    # "childAt":Landroid/view/View;
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .end local v12    # "i10":I
-    .end local v13    # "jbvVar":Ldefpackage/jbv;
+    .end local v13    # "jbvVar":Ljbv;
     .end local v14    # "childCount":I
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "childAt":Landroid/view/View;
-    .local v3, "jbvVar":Ldefpackage/jbv;
+    .local v3, "jbvVar":Ljbv;
     .restart local v19    # "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v21    # "tag":Ljava/lang/Object;
     .restart local v24    # "a":Ljava/lang/Object;
@@ -4595,7 +4595,7 @@
     .local v1, "gcaLayout2":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v2, "tag":Ljava/lang/Object;
     .local v3, "a":Ljava/lang/Object;
-    .restart local v13    # "jbvVar":Ldefpackage/jbv;
+    .restart local v13    # "jbvVar":Ljbv;
     .restart local v14    # "childCount":I
     :cond_33
     move/from16 v27, v0
@@ -4605,7 +4605,7 @@
     .end local v11    # "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .local v0, "gcaLayout3":Lcom/google/android/apps/camera/ui/layout/GcaLayout;
     .restart local v27    # "i7":I
-    invoke-virtual {v6, v0}, Ldefpackage/ConstraintSet;->b(Landroid/support/constraint/ConstraintLayout;)V
+    invoke-virtual {v6, v0}, LConstraintSet;->b(Landroid/support/constraint/ConstraintLayout;)V
 
     .line 532
     invoke-super/range {p0 .. p2}, Landroid/support/constraint/ConstraintLayout;->onMeasure(II)V

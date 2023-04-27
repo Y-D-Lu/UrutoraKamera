@@ -1,78 +1,65 @@
-.class public final Ldefpackage/ju;
+.class public Ldefpackage/Ju;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/text/method/TransformationMethod;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lloi;->l(JLjava/util/Set;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private final a:Ljava/util/Locale;
+.field public final synthetic this$0:Lloi;
+
+.field public final synthetic val$j:J
+
+.field public final synthetic val$set:Ljava/util/Set;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-    .param p1, "context"    # Landroid/content/Context;
+.method public constructor <init>(Lloi;JLjava/util/Set;)V
+    .locals 0
+    .param p1, "this$0"    # Lloi;
 
-    .line 15
+    .line 80
+    iput-object p1, p0, Ldefpackage/Ju;->this$0:Lloi;
+
+    iput-wide p2, p0, Ldefpackage/Ju;->val$j:J
+
+    iput-object p4, p0, Ldefpackage/Ju;->val$set:Ljava/util/Set;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v0
-
-    iget-object v0, v0, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
-
-    iput-object v0, p0, Ldefpackage/ju;->a:Ljava/util/Locale;
-
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
-    .locals 2
-    .param p1, "charSequence"    # Ljava/lang/CharSequence;
-    .param p2, "view"    # Landroid/view/View;
+.method public final run()V
+    .locals 5
 
-    .line 21
-    if-eqz p1, :cond_0
+    .line 83
+    iget-object v0, p0, Ldefpackage/Ju;->this$0:Lloi;
 
-    .line 22
-    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+    .line 84
+    .local v0, "loiVar":Lloi;
+    iget-object v1, v0, Lloi;->a:Lmip;
 
-    move-result-object v0
+    iget-wide v2, p0, Ldefpackage/Ju;->val$j:J
 
-    iget-object v1, p0, Ldefpackage/ju;->a:Ljava/util/Locale;
+    iget-object v4, p0, Ldefpackage/Ju;->val$set:Ljava/util/Set;
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3, v4}, Lmip;->l(JLjava/util/Set;)V
 
-    move-result-object v0
-
-    return-object v0
-
-    .line 24
-    :cond_0
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final onFocusChanged(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V
-    .locals 0
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "charSequence"    # Ljava/lang/CharSequence;
-    .param p3, "z"    # Z
-    .param p4, "i"    # I
-    .param p5, "rect"    # Landroid/graphics/Rect;
-
-    .line 29
+    .line 85
     return-void
 .end method

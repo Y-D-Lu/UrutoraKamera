@@ -24,7 +24,7 @@
     iput v0, p0, Landroid/support/v7/widget/ButtonBarLayout;->b:I
 
     .line 22
-    sget-object v3, Ldefpackage/jq;->k:[I
+    sget-object v3, Ljq;->k:[I
 
     invoke-virtual {p1, p2, v3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -44,7 +44,7 @@
 
     move-object v5, v0
 
-    invoke-static/range {v1 .. v7}, Ldefpackage/gl;->E(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v1 .. v7}, Lgl;->E(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 24
     const/4 v1, 0x0

@@ -1,120 +1,54 @@
-.class public abstract Ldefpackage/it;
+.class public Ldefpackage/It;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lojz;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkpn;-><init>(Landroid/app/Activity;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field private a:Landroid/content/BroadcastReceiver;
+.field public final synthetic this$0:Lkpn;
 
-.field public final c:Ldefpackage/iy;
+.field public final synthetic val$activity:Landroid/app/Activity;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/iy;)V
+.method public constructor <init>(Lkpn;Landroid/app/Activity;)V
     .locals 0
-    .param p1, "iyVar"    # Ldefpackage/iy;
+    .param p1, "this$0"    # Lkpn;
 
-    .line 13
+    .line 19
+    iput-object p1, p0, Ldefpackage/It;->this$0:Lkpn;
+
+    iput-object p2, p0, Ldefpackage/It;->val$activity:Landroid/app/Activity;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    iput-object p1, p0, Ldefpackage/it;->c:Ldefpackage/iy;
-
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()Landroid/content/IntentFilter;
-.end method
-
-.method public abstract b()V
-.end method
-
-.method public final c()V
+.method public final a()Ljava/lang/Object;
     .locals 2
 
-    .line 23
-    iget-object v0, p0, Ldefpackage/it;->a:Landroid/content/BroadcastReceiver;
+    .line 22
+    new-instance v0, Lkpw;
 
-    .line 24
-    .local v0, "broadcastReceiver":Landroid/content/BroadcastReceiver;
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Ldefpackage/It;->val$activity:Landroid/app/Activity;
 
-    .line 26
-    :try_start_0
-    iget-object v1, p0, Ldefpackage/it;->c:Ldefpackage/iy;
+    invoke-direct {v0, v1}, Lkpw;-><init>(Landroid/app/Activity;)V
 
-    iget-object v1, v1, Ldefpackage/iy;->f:Landroid/content/Context;
-
-    invoke-virtual {v1, v0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 28
-    goto :goto_0
-
-    .line 27
-    :catch_0
-    move-exception v1
-
-    .line 29
-    :goto_0
-    const/4 v1, 0x0
-
-    iput-object v1, p0, Ldefpackage/it;->a:Landroid/content/BroadcastReceiver;
-
-    .line 31
-    :cond_0
-    return-void
-.end method
-
-.method public final d()V
-    .locals 3
-
-    .line 35
-    invoke-virtual {p0}, Ldefpackage/it;->c()V
-
-    .line 36
-    invoke-virtual {p0}, Ldefpackage/it;->a()Landroid/content/IntentFilter;
-
-    move-result-object v0
-
-    .line 37
-    .local v0, "a":Landroid/content/IntentFilter;
-    invoke-virtual {v0}, Landroid/content/IntentFilter;->countActions()I
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 38
-    return-void
-
-    .line 40
-    :cond_0
-    iget-object v1, p0, Ldefpackage/it;->a:Landroid/content/BroadcastReceiver;
-
-    if-nez v1, :cond_1
-
-    .line 41
-    new-instance v1, Ldefpackage/is;
-
-    invoke-direct {v1, p0}, Ldefpackage/is;-><init>(Ldefpackage/it;)V
-
-    iput-object v1, p0, Ldefpackage/it;->a:Landroid/content/BroadcastReceiver;
-
-    .line 43
-    :cond_1
-    iget-object v1, p0, Ldefpackage/it;->c:Ldefpackage/iy;
-
-    iget-object v1, v1, Ldefpackage/iy;->f:Landroid/content/Context;
-
-    iget-object v2, p0, Ldefpackage/it;->a:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
-
-    .line 44
-    return-void
+    return-object v0
 .end method

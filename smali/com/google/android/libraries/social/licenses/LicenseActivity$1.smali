@@ -62,7 +62,7 @@
     .local v2, "scrollView2":Landroid/widget/ScrollView;
     const v3, 0x7f0a010c
 
-    invoke-virtual {v0, v3}, Ldefpackage/ih;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v3}, Lih;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 

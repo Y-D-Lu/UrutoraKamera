@@ -1,98 +1,62 @@
-.class public final Ldefpackage/ph;
+.class public Ldefpackage/Ph;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/widget/AbsListView$OnScrollListener;
+.implements Lhyx;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhyg;->fB(Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/pk;
+.field public final synthetic this$0:Lhyg;
+
+.field public final synthetic val$bool:Ljava/lang/Boolean;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/pk;)V
+.method public constructor <init>(Lhyg;Ljava/lang/Boolean;)V
     .locals 0
-    .param p1, "pkVar"    # Ldefpackage/pk;
+    .param p1, "this$0"    # Lhyg;
 
-    .line 11
+    .line 38
+    iput-object p1, p0, Ldefpackage/Ph;->this$0:Lhyg;
+
+    iput-object p2, p0, Ldefpackage/Ph;->val$bool:Ljava/lang/Boolean;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
-    iput-object p1, p0, Ldefpackage/ph;->a:Ldefpackage/pk;
-
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final onScroll(Landroid/widget/AbsListView;III)V
-    .locals 0
-    .param p1, "absListView"    # Landroid/widget/AbsListView;
-    .param p2, "i"    # I
-    .param p3, "i2"    # I
-    .param p4, "i3"    # I
+.method public final a(Ljava/lang/Object;)V
+    .locals 2
+    .param p1, "obj2"    # Ljava/lang/Object;
 
-    .line 17
-    return-void
-.end method
+    .line 41
+    move-object v0, p1
 
-.method public final onScrollStateChanged(Landroid/widget/AbsListView;I)V
-    .locals 3
-    .param p1, "absListView"    # Landroid/widget/AbsListView;
-    .param p2, "i"    # I
+    check-cast v0, Lhzu;
 
-    .line 21
-    const/4 v0, 0x1
+    iget-object v1, p0, Ldefpackage/Ph;->val$bool:Ljava/lang/Boolean;
 
-    if-ne p2, v0, :cond_1
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    iget-object v0, p0, Ldefpackage/ph;->a:Ldefpackage/pk;
+    move-result v1
 
-    invoke-virtual {v0}, Ldefpackage/pk;->w()Z
+    invoke-virtual {v0, v1}, Lhzu;->h(Z)V
 
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Ldefpackage/ph;->a:Ldefpackage/pk;
-
-    iget-object v0, v0, Ldefpackage/pk;->q:Landroid/widget/PopupWindow;
-
-    invoke-virtual {v0}, Landroid/widget/PopupWindow;->getContentView()Landroid/view/View;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    .line 24
-    :cond_0
-    iget-object v0, p0, Ldefpackage/ph;->a:Ldefpackage/pk;
-
-    .line 25
-    .local v0, "pkVar":Ldefpackage/pk;
-    iget-object v1, v0, Ldefpackage/pk;->o:Landroid/os/Handler;
-
-    iget-object v2, v0, Ldefpackage/pk;->n:Ldefpackage/pj;
-
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
-
-    .line 26
-    iget-object v1, p0, Ldefpackage/ph;->a:Ldefpackage/pk;
-
-    iget-object v1, v1, Ldefpackage/pk;->n:Ldefpackage/pj;
-
-    invoke-virtual {v1}, Ldefpackage/pj;->run()V
-
-    .line 27
-    return-void
-
-    .line 22
-    .end local v0    # "pkVar":Ldefpackage/pk;
-    :cond_1
-    :goto_0
+    .line 42
     return-void
 .end method

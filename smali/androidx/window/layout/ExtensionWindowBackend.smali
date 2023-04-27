@@ -43,7 +43,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Landroidx/window/layout/ExtensionWindowBackend$Companion;-><init>(Ldefpackage/qnm;)V
+    invoke-direct {v0, v1}, Landroidx/window/layout/ExtensionWindowBackend$Companion;-><init>(Lqnm;)V
 
     sput-object v0, Landroidx/window/layout/ExtensionWindowBackend;->mCompanion:Landroidx/window/layout/ExtensionWindowBackend$Companion;
 
@@ -161,7 +161,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, p1}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, p1}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -254,7 +254,7 @@
 
     move-result-object v4
 
-    invoke-static {v4, p1}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, p1}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -295,11 +295,11 @@
     return-object v0
 .end method
 
-.method public registerLayoutChangeCallback(Landroid/app/Activity;Ljava/util/concurrent/Executor;Ldefpackage/fb;)V
+.method public registerLayoutChangeCallback(Landroid/app/Activity;Ljava/util/concurrent/Executor;Lfb;)V
     .locals 9
     .param p1, "activity"    # Landroid/app/Activity;
     .param p2, "executor"    # Ljava/util/concurrent/Executor;
-    .param p3, "fbVar"    # Ldefpackage/fb;
+    .param p3, "fbVar"    # Lfb;
 
     .line 201
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -330,11 +330,11 @@
     .line 209
     new-instance v2, Landroidx/window/layout/WindowLayoutInfo;
 
-    sget-object v3, Ldefpackage/qkx;->a:Ldefpackage/qkx;
+    sget-object v3, Lqkx;->a:Lqkx;
 
     invoke-direct {v2, v3}, Landroidx/window/layout/WindowLayoutInfo;-><init>(Ljava/util/List;)V
 
-    invoke-interface {p3, v2}, Ldefpackage/fb;->accept(Ljava/lang/Object;)V
+    invoke-interface {p3, v2}, Lfb;->accept(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -355,7 +355,7 @@
     .local v2, "isActivityRegistered":Z
     new-instance v3, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;
 
-    invoke-direct {v3, p0, p1, p2, p3}, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;-><init>(Landroidx/window/layout/ExtensionWindowBackend;Landroid/app/Activity;Ljava/util/concurrent/Executor;Ldefpackage/fb;)V
+    invoke-direct {v3, p0, p1, p2, p3}, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;-><init>(Landroidx/window/layout/ExtensionWindowBackend;Landroid/app/Activity;Ljava/util/concurrent/Executor;Lfb;)V
 
     .line 214
     .local v3, "windowLayoutChangeCallbackWrapper":Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;
@@ -420,7 +420,7 @@
 
     move-result-object v7
 
-    invoke-static {p1, v7}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v7}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -494,9 +494,9 @@
     return-void
 .end method
 
-.method public unregisterLayoutChangeCallback(Ldefpackage/fb;)V
+.method public unregisterLayoutChangeCallback(Lfb;)V
     .locals 6
-    .param p1, "fbVar"    # Ldefpackage/fb;
+    .param p1, "fbVar"    # Lfb;
 
     .line 249
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -553,7 +553,7 @@
 
     .line 258
     .local v3, "windowLayoutChangeCallbackWrapper":Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;
-    invoke-virtual {v3}, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->getCallback()Ldefpackage/fb;
+    invoke-virtual {v3}, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->getCallback()Lfb;
 
     move-result-object v4
 

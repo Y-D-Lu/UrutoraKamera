@@ -1,60 +1,102 @@
-.class public final Ldefpackage/te;
+.class public Ldefpackage/Te;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/graphics/drawable/Drawable$Callback;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgth;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/support/wearable/view/CircledImageView;
+.field public final synthetic this$0:Lgth;
+
+.field public final synthetic val$hlvVar:Lhlv;
+
+.field public final synthetic val$lapVar3:Llap;
+
+.field public final synthetic val$lncVar4:Llnc;
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/wearable/view/CircledImageView;)V
+.method public constructor <init>(Lgth;Lhlv;Llnc;Llap;)V
     .locals 0
-    .param p1, "circledImageView"    # Landroid/support/wearable/view/CircledImageView;
+    .param p1, "this$0"    # Lgth;
 
-    .line 11
+    .line 257
+    iput-object p1, p0, Ldefpackage/Te;->this$0:Lgth;
+
+    iput-object p2, p0, Ldefpackage/Te;->val$hlvVar:Lhlv;
+
+    iput-object p3, p0, Ldefpackage/Te;->val$lncVar4:Llnc;
+
+    iput-object p4, p0, Ldefpackage/Te;->val$lapVar3:Llap;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
-    iput-object p1, p0, Ldefpackage/te;->a:Landroid/support/wearable/view/CircledImageView;
-
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
-    .locals 1
-    .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
+.method public final run()V
+    .locals 5
 
-    .line 17
-    iget-object v0, p0, Ldefpackage/te;->a:Landroid/support/wearable/view/CircledImageView;
+    .line 260
+    iget-object v0, p0, Ldefpackage/Te;->val$hlvVar:Lhlv;
 
-    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
+    .line 261
+    .local v0, "hlvVar2":Lhlv;
+    iget-object v1, p0, Ldefpackage/Te;->val$lncVar4:Llnc;
 
-    .line 18
+    .line 262
+    .local v1, "lncVar5":Llnc;
+    iget-object v2, p0, Ldefpackage/Te;->val$lapVar3:Llap;
+
+    .line 263
+    .local v2, "lapVar4":Llap;
+    iget-boolean v3, v0, Lhlv;->a:Z
+
+    if-eqz v3, :cond_1
+
+    sget-object v3, Lkdd;->g:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    if-nez v3, :cond_0
+
+    goto :goto_0
+
+    .line 266
+    :cond_0
+    new-instance v3, Lboa;
+
+    invoke-direct {v3, v0, v1}, Lboa;-><init>(Lhlv;Llnc;)V
+
+    .line 267
+    .local v3, "boaVar":Lboa;
+    invoke-virtual {v0, v3}, Lhlv;->a(Lhlu;)V
+
+    .line 268
+    new-instance v4, Ldefpackage/Se;
+
+    invoke-direct {v4, p0, v0, v3}, Ldefpackage/Se;-><init>(Ldefpackage/Te;Lhlv;Lboa;)V
+
+    invoke-virtual {v2, v4}, Llap;->c(Llie;)V
+
+    .line 274
     return-void
-.end method
 
-.method public final scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
-    .locals 0
-    .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
-    .param p2, "runnable"    # Ljava/lang/Runnable;
-    .param p3, "j"    # J
-
-    .line 22
-    return-void
-.end method
-
-.method public final unscheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V
-    .locals 0
-    .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
-    .param p2, "runnable"    # Ljava/lang/Runnable;
-
-    .line 26
+    .line 264
+    .end local v3    # "boaVar":Lboa;
+    :cond_1
+    :goto_0
     return-void
 .end method

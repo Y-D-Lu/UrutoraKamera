@@ -51,15 +51,15 @@
 
     .line 57
     :cond_0
-    new-instance v1, Ldefpackage/agg;
+    new-instance v1, Lagg;
 
-    invoke-direct {v1, v0}, Ldefpackage/agg;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, Lagg;-><init>(Landroid/os/Parcelable;)V
 
     .line 58
-    .local v1, "aggVar":Ldefpackage/agg;
+    .local v1, "aggVar":Lagg;
     iget-object v2, p0, Landroidx/preference/MultiSelectListPreference;->i:Ljava/util/Set;
 
-    iput-object v2, v1, Ldefpackage/agg;->a:Ljava/util/Set;
+    iput-object v2, v1, Lagg;->a:Ljava/util/Set;
 
     .line 59
     return-object v1
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    const-class v1, Ldefpackage/agg;
+    const-class v1, Lagg;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -138,10 +138,10 @@
     :cond_0
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/agg;
+    check-cast v0, Lagg;
 
     .line 80
-    .local v0, "aggVar":Ldefpackage/agg;
+    .local v0, "aggVar":Lagg;
     invoke-virtual {v0}, Landroid/view/AbsSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v1
@@ -149,7 +149,7 @@
     invoke-super {p0, v1}, Landroidx/preference/Preference;->g(Landroid/os/Parcelable;)V
 
     .line 81
-    iget-object v1, v0, Ldefpackage/agg;->a:Ljava/util/Set;
+    iget-object v1, v0, Lagg;->a:Ljava/util/Set;
 
     invoke-virtual {p0, v1}, Landroidx/preference/MultiSelectListPreference;->k(Ljava/util/Set;)V
 
@@ -210,9 +210,9 @@
     if-nez v0, :cond_0
 
     .line 93
-    iget-object v0, p0, Landroidx/preference/Preference;->k:Ldefpackage/ahj;
+    iget-object v0, p0, Landroidx/preference/Preference;->k:Lahj;
 
-    invoke-virtual {v0}, Ldefpackage/ahj;->b()Landroid/content/SharedPreferences$Editor;
+    invoke-virtual {v0}, Lahj;->b()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 

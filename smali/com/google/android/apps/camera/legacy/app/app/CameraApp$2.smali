@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/bux;
+.implements Lbux;
 
 
 # annotations
@@ -36,13 +36,13 @@
 
 
 # virtual methods
-.method public final b()Ldefpackage/buw;
+.method public final b()Lbuw;
     .locals 1
 
     .line 333
     iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/app/CameraApp$2;->this$0:Lcom/google/android/apps/camera/legacy/app/app/CameraApp;
 
-    invoke-virtual {v0}, Lcom/google/android/apps/camera/legacy/app/app/CameraApp;->b()Ldefpackage/buw;
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/legacy/app/app/CameraApp;->b()Lbuw;
 
     move-result-object v0
 

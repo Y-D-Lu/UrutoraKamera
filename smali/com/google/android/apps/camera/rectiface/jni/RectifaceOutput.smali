@@ -12,7 +12,7 @@
     .locals 0
 
     .line 10
-    invoke-static {}, Ldefpackage/hls;->a()V
+    invoke-static {}, Lhls;->a()V
 
     .line 11
     return-void

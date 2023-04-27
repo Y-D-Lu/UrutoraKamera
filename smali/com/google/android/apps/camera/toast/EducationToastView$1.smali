@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/toast/EducationToastView;->b(Ldefpackage/isi;)V
+    value = Lcom/google/android/apps/camera/toast/EducationToastView;->b(Lisi;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -75,7 +75,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Ldefpackage/jrz;->a(Landroid/view/Display;Landroid/content/Context;)Ldefpackage/jrz;
+    invoke-static {v2, v3}, Ljrz;->a(Landroid/view/Display;Landroid/content/Context;)Ljrz;
 
     move-result-object v2
 

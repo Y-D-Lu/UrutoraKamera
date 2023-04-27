@@ -1,62 +1,58 @@
-.class public final Ldefpackage/rh;
-.super Landroid/util/Property;
+.class public Ldefpackage/Rh;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Lhyx;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Sh;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$1:Ldefpackage/Sh;
+
+.field public final synthetic val$lvpVar2:Llvp;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;)V
-    .locals 1
-    .param p1, "cls"    # Ljava/lang/Class;
+.method public constructor <init>(Ldefpackage/Sh;Llvp;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Sh;
 
-    .line 10
-    const-string v0, "thumbPos"
+    .line 84
+    iput-object p1, p0, Ldefpackage/Rh;->this$1:Ldefpackage/Sh;
 
-    invoke-direct {p0, p1, v0}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
+    iput-object p2, p0, Ldefpackage/Rh;->val$lvpVar2:Llvp;
 
-    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-    .param p1, "obj"    # Ljava/lang/Object;
-
-    .line 15
-    move-object v0, p1
-
-    check-cast v0, Landroid/support/v7/widget/SwitchCompat;
-
-    iget v0, v0, Landroid/support/v7/widget/SwitchCompat;->c:F
-
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final set(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final a(Ljava/lang/Object;)V
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
-    .param p2, "obj2"    # Ljava/lang/Object;
 
-    .line 20
+    .line 87
     move-object v0, p1
 
-    check-cast v0, Landroid/support/v7/widget/SwitchCompat;
+    check-cast v0, Lhzu;
 
-    move-object v1, p2
+    iget-object v1, p0, Ldefpackage/Rh;->val$lvpVar2:Llvp;
 
-    check-cast v1, Ljava/lang/Float;
+    invoke-virtual {v0, v1}, Lhzu;->a(Llvp;)V
 
-    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/support/v7/widget/SwitchCompat;->d(F)V
-
-    .line 21
+    .line 88
     return-void
 .end method

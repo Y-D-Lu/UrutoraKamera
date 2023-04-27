@@ -1,71 +1,79 @@
-.class public final Ldefpackage/hx;
+.class public Ldefpackage/Hx;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
+.implements Lpgk;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lnjt;->a(Ljava/lang/Object;)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/ic;
+.field public final synthetic this$0:Lnjt;
 
-.field public final b:Ldefpackage/hz;
+.field public final synthetic val$b:Lpgk;
+
+.field public final synthetic val$nkpVar:Lnkp;
+
+.field public final synthetic val$pgrVar:Lpgr;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/hz;Ldefpackage/ic;)V
+.method public constructor <init>(Lnjt;Lnkp;Lpgk;Lpgr;)V
     .locals 0
-    .param p1, "hzVar"    # Ldefpackage/hz;
-    .param p2, "icVar"    # Ldefpackage/ic;
+    .param p1, "this$0"    # Lnjt;
 
-    .line 13
+    .line 30
+    iput-object p1, p0, Ldefpackage/Hx;->this$0:Lnjt;
+
+    iput-object p2, p0, Ldefpackage/Hx;->val$nkpVar:Lnkp;
+
+    iput-object p3, p0, Ldefpackage/Hx;->val$b:Lpgk;
+
+    iput-object p4, p0, Ldefpackage/Hx;->val$pgrVar:Lpgr;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    iput-object p1, p0, Ldefpackage/hx;->b:Ldefpackage/hz;
-
-    .line 15
-    iput-object p2, p0, Ldefpackage/hx;->a:Ldefpackage/ic;
-
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 2
-    .param p1, "adapterView"    # Landroid/widget/AdapterView;
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "i"    # I
-    .param p4, "j"    # J
+.method public final a(Ljava/lang/Object;)Lpht;
+    .locals 5
+    .param p1, "obj2"    # Ljava/lang/Object;
 
-    .line 20
-    iget-object v0, p0, Ldefpackage/hx;->b:Ldefpackage/hz;
+    .line 33
+    iget-object v0, p0, Ldefpackage/Hx;->val$nkpVar:Lnkp;
 
-    iget-object v0, v0, Ldefpackage/hz;->p:Landroid/content/DialogInterface$OnClickListener;
+    .line 34
+    .local v0, "nkpVar2":Lnkp;
+    move-object v1, p1
 
-    iget-object v1, p0, Ldefpackage/hx;->a:Ldefpackage/ic;
+    check-cast v1, Ljava/lang/Void;
 
-    iget-object v1, v1, Ldefpackage/ic;->b:Ldefpackage/ja;
+    .line 35
+    .local v1, "r4":Ljava/lang/Void;
+    iget-object v2, v0, Lnkp;->a:Lnkq;
 
-    invoke-interface {v0, v1, p3}, Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V
+    iget-object v2, v2, Lnkq;->b:Lnkr;
 
-    .line 21
-    iget-object v0, p0, Ldefpackage/hx;->b:Ldefpackage/hz;
+    iget-object v3, p0, Ldefpackage/Hx;->val$b:Lpgk;
 
-    iget-boolean v0, v0, Ldefpackage/hz;->u:Z
+    iget-object v4, p0, Ldefpackage/Hx;->val$pgrVar:Lpgr;
 
-    if-nez v0, :cond_0
+    invoke-interface {v2, v3, v4}, Lnkr;->d(Lpgk;Ljava/util/concurrent/Executor;)Lpht;
 
-    .line 22
-    iget-object v0, p0, Ldefpackage/hx;->a:Ldefpackage/ic;
+    move-result-object v2
 
-    iget-object v0, v0, Ldefpackage/ic;->b:Ldefpackage/ja;
-
-    invoke-virtual {v0}, Ldefpackage/ja;->dismiss()V
-
-    .line 24
-    :cond_0
-    return-void
+    return-object v2
 .end method

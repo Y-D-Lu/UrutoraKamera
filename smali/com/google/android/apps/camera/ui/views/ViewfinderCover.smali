@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jfi;
-.implements Ldefpackage/cwh;
+.implements Ljfi;
+.implements Lcwh;
 
 
 # static fields
-.field private static final k:Ldefpackage/ouj;
+.field private static final k:Louj;
 
 
 # instance fields
@@ -20,13 +20,13 @@
 
 .field public h:Ljava/util/concurrent/Callable;
 
-.field public final i:Ldefpackage/jfj;
+.field public final i:Ljfj;
 
 .field public j:Z
 
 .field private l:Landroid/widget/TextView;
 
-.field private final m:Ldefpackage/ddf;
+.field private final m:Lddf;
 
 
 # direct methods
@@ -36,11 +36,11 @@
     .line 51
     const-string v0, "com/google/android/apps/camera/ui/views/ViewfinderCover"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->k:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->k:Louj;
 
     return-void
 .end method
@@ -64,22 +64,22 @@
     iput-boolean v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->j:Z
 
     .line 65
-    new-instance v0, Ldefpackage/jfj;
+    new-instance v0, Ljfj;
 
-    invoke-direct {v0, p0}, Ldefpackage/jfj;-><init>(Landroid/view/ViewGroup;)V
+    invoke-direct {v0, p0}, Ljfj;-><init>(Landroid/view/ViewGroup;)V
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
     .line 66
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/bpx;
+    check-cast v0, Lbpx;
 
-    invoke-interface {v0}, Ldefpackage/bpx;->a()Ldefpackage/ddf;
+    invoke-interface {v0}, Lbpx;->a()Lddf;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->m:Ldefpackage/ddf;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->m:Lddf;
 
     .line 67
     return-void
@@ -90,9 +90,9 @@
     .param p1, "rect"    # Landroid/graphics/Rect;
 
     .line 70
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->d:Ldefpackage/ojz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->d:Lojz;
 
-    invoke-interface {v0}, Ldefpackage/ojz;->a()Ljava/lang/Object;
+    invoke-interface {v0}, Lojz;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -100,11 +100,11 @@
     .local v0, "a":Ljava/lang/Object;
     if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->m:Ldefpackage/ddf;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->m:Lddf;
 
-    sget-object v2, Ldefpackage/ddl;->aU:Ldefpackage/ddg;
+    sget-object v2, Lddl;->aU:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -113,13 +113,13 @@
     .line 72
     move-object v1, v0
 
-    check-cast v1, Ldefpackage/jbw;
+    check-cast v1, Ljbw;
 
-    iget-object v1, v1, Ldefpackage/jbw;->a:Ldefpackage/jbv;
+    iget-object v1, v1, Ljbw;->a:Ljbv;
 
-    iget-object v1, v1, Ldefpackage/jbv;->h:Ldefpackage/jrz;
+    iget-object v1, v1, Ljbv;->h:Ljrz;
 
-    sget-object v2, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->PORTRAIT:Ljrz;
 
     if-ne v1, v2, :cond_0
 
@@ -143,13 +143,13 @@
     move-result v2
 
     :goto_0
-    invoke-static {v1, v2}, Ldefpackage/lhs;->i(II)Ldefpackage/lhs;
+    invoke-static {v1, v2}, Llhs;->i(II)Llhs;
 
     move-result-object v1
 
-    sget-object v2, Ldefpackage/lhs;->b:Ldefpackage/lhs;
+    sget-object v2, Llhs;->b:Llhs;
 
-    invoke-virtual {v1, v2}, Ldefpackage/lhs;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Llhs;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -177,16 +177,16 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/lwd;)Ldefpackage/pht;
+.method public final a(Llwd;)Lpht;
     .locals 7
-    .param p1, "lwdVar"    # Ldefpackage/lwd;
+    .param p1, "lwdVar"    # Llwd;
 
     .line 81
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    sget-object v1, Ldefpackage/lwd;->BACK:Ldefpackage/lwd;
+    sget-object v1, Llwd;->BACK:Llwd;
 
     if-ne p1, v1, :cond_0
 
@@ -209,41 +209,41 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->f:Landroid/graphics/drawable/AnimatedVectorDrawable;
 
     .line 82
-    invoke-static {}, Ldefpackage/pih;->f()Ldefpackage/pih;
+    invoke-static {}, Lpih;->f()Lpih;
 
     move-result-object v0
 
     .line 83
-    .local v0, "f":Ldefpackage/pih;
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    .local v0, "f":Lpih;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
-    sget-object v2, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->UNINITIALIZED:Ljrl;
 
-    sget-object v3, Ldefpackage/isd;->k:Ldefpackage/isd;
+    sget-object v3, Lisd;->k:Lisd;
 
-    new-instance v4, Ldefpackage/jpa;
+    new-instance v4, Ljpa;
 
-    invoke-direct {v4, p0}, Ldefpackage/jpa;-><init>(Lcom/google/android/apps/camera/ui/views/ViewfinderCover;)V
+    invoke-direct {v4, p0}, Ljpa;-><init>(Lcom/google/android/apps/camera/ui/views/ViewfinderCover;)V
 
     new-instance v5, Lcom/google/android/apps/camera/ui/views/ViewfinderCover$1;
 
-    invoke-direct {v5, p0, v0}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover$1;-><init>(Lcom/google/android/apps/camera/ui/views/ViewfinderCover;Ldefpackage/pih;)V
+    invoke-direct {v5, p0, v0}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover$1;-><init>(Lcom/google/android/apps/camera/ui/views/ViewfinderCover;Lpih;)V
 
     const/4 v6, 0x0
 
-    invoke-virtual/range {v1 .. v6}, Ldefpackage/jfj;->n(Ldefpackage/jrl;Ljava/lang/Runnable;Ldefpackage/jfi;Ldefpackage/jfe;Z)V
+    invoke-virtual/range {v1 .. v6}, Ljfj;->n(Ljrl;Ljava/lang/Runnable;Ljfi;Ljfe;Z)V
 
     .line 89
     return-object v0
 .end method
 
-.method public final b()Ldefpackage/ojc;
+.method public final b()Lojc;
     .locals 4
 
     .line 94
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->d:Ldefpackage/ojz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->d:Lojz;
 
-    invoke-interface {v0}, Ldefpackage/ojz;->a()Ljava/lang/Object;
+    invoke-interface {v0}, Lojz;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -252,7 +252,7 @@
     if-nez v0, :cond_0
 
     .line 96
-    sget-object v1, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v1, Loih;->a:Loih;
 
     return-object v1
 
@@ -260,42 +260,42 @@
     :cond_0
     move-object v1, v0
 
-    check-cast v1, Ldefpackage/jbw;
+    check-cast v1, Ljbw;
 
-    iget-object v1, v1, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v1, v1, Ljbw;->b:Ljbt;
 
-    iget-object v1, v1, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v1, v1, Ljbt;->e:Landroid/graphics/Rect;
 
     .line 99
     .local v1, "rect":Landroid/graphics/Rect;
-    invoke-static {}, Ldefpackage/jfg;->a()Ldefpackage/jff;
+    invoke-static {}, Ljfg;->a()Ljff;
 
     move-result-object v2
 
     .line 100
-    .local v2, "a2":Ldefpackage/jff;
-    invoke-virtual {v2, v1}, Ldefpackage/jff;->c(Landroid/graphics/Rect;)V
+    .local v2, "a2":Ljff;
+    invoke-virtual {v2, v1}, Ljff;->c(Landroid/graphics/Rect;)V
 
     .line 101
     invoke-direct {p0, v1}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->p(Landroid/graphics/Rect;)I
 
     move-result v3
 
-    invoke-virtual {v2, v3}, Ldefpackage/jff;->b(I)V
+    invoke-virtual {v2, v3}, Ljff;->b(I)V
 
     .line 102
-    invoke-virtual {v2}, Ldefpackage/jff;->a()Ldefpackage/jfg;
+    invoke-virtual {v2}, Ljff;->a()Ljfg;
 
     move-result-object v3
 
-    invoke-static {v3}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v3}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v3
 
     return-object v3
 .end method
 
-.method public final c()Ldefpackage/ojc;
+.method public final c()Lojc;
     .locals 3
 
     .line 108
@@ -306,7 +306,7 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/ojc;
+    check-cast v0, Lojc;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -318,15 +318,15 @@
 
     .line 110
     .local v0, "e":Ljava/lang/Exception;
-    sget-object v1, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->k:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->k:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->b()Lova;
 
     move-result-object v1
 
     check-cast v1, Loug;
 
-    invoke-interface {v1, v0}, Ldefpackage/ova;->h(Ljava/lang/Throwable;)Ldefpackage/ova;
+    invoke-interface {v1, v0}, Lova;->h(Ljava/lang/Throwable;)Lova;
 
     move-result-object v1
 
@@ -334,7 +334,7 @@
 
     const/16 v2, 0xd90
 
-    invoke-interface {v1, v2}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v1, v2}, Lova;->G(I)Lova;
 
     move-result-object v1
 
@@ -342,10 +342,10 @@
 
     const-string v2, "Failed to create snapshot"
 
-    invoke-interface {v1, v2}, Ldefpackage/ova;->o(Ljava/lang/String;)V
+    invoke-interface {v1, v2}, Lova;->o(Ljava/lang/String;)V
 
     .line 111
-    sget-object v1, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v1, Loih;->a:Loih;
 
     return-object v1
 .end method
@@ -355,21 +355,21 @@
     .param p1, "z"    # Z
 
     .line 117
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
     .line 118
-    .local v0, "jfjVar":Ldefpackage/jfj;
-    iget-object v1, v0, Ldefpackage/jfj;->w:Landroid/view/View;
+    .local v0, "jfjVar":Ljfj;
+    iget-object v1, v0, Ljfj;->w:Landroid/view/View;
 
     sget v2, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setAlpha(F)V
 
     .line 119
-    invoke-virtual {v0}, Ldefpackage/jfj;->m()V
+    invoke-virtual {v0}, Ljfj;->m()V
 
     .line 120
-    iget-object v1, v0, Ldefpackage/jfj;->w:Landroid/view/View;
+    iget-object v1, v0, Ljfj;->w:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -393,19 +393,19 @@
     if-eqz p1, :cond_0
 
     .line 122
-    iget-object v1, v0, Ldefpackage/jfj;->x:Landroid/view/View;
+    iget-object v1, v0, Ljfj;->x:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setAlpha(F)V
 
     .line 123
-    iget-object v1, v0, Ldefpackage/jfj;->x:Landroid/view/View;
+    iget-object v1, v0, Ljfj;->x:Landroid/view/View;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 124
-    iget-object v1, v0, Ldefpackage/jfj;->x:Landroid/view/View;
+    iget-object v1, v0, Ljfj;->x:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -430,9 +430,9 @@
     .locals 1
 
     .line 130
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
-    invoke-virtual {v0}, Ldefpackage/jfj;->f()V
+    invoke-virtual {v0}, Ljfj;->f()V
 
     .line 131
     return-void
@@ -442,17 +442,17 @@
     .locals 1
 
     .line 135
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
-    invoke-virtual {v0}, Ldefpackage/jfj;->g()V
+    invoke-virtual {v0}, Ljfj;->g()V
 
     .line 136
     return-void
 .end method
 
-.method public final g(Ldefpackage/jrl;)V
+.method public final g(Ljrl;)V
     .locals 4
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
 
     .line 140
     const/4 v0, 0x0
@@ -465,14 +465,14 @@
 
     if-eqz p1, :cond_1
 
-    sget-object v3, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v3, Ljrl;->UNINITIALIZED:Ljrl;
 
     if-ne p1, v3, :cond_0
 
     goto :goto_0
 
     :cond_0
-    invoke-static {p1}, Ldefpackage/jri;->b(Ldefpackage/jrl;)Ldefpackage/jri;
+    invoke-static {p1}, Ljri;->b(Ljrl;)Ljri;
 
     move-result-object v2
 
@@ -480,7 +480,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ldefpackage/jri;->a(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v2, v3}, Ljri;->a(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
@@ -495,12 +495,12 @@
     .local v1, "textView":Landroid/widget/TextView;
     if-eqz p1, :cond_2
 
-    sget-object v2, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->UNINITIALIZED:Ljrl;
 
     if-eq p1, v2, :cond_2
 
     .line 144
-    invoke-static {p1}, Ldefpackage/jri;->b(Ldefpackage/jrl;)Ldefpackage/jri;
+    invoke-static {p1}, Ljri;->b(Ljrl;)Ljri;
 
     move-result-object v2
 
@@ -508,7 +508,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ldefpackage/jri;->d(Landroid/content/res/Resources;)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljri;->d(Landroid/content/res/Resources;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -542,15 +542,15 @@
     .locals 5
 
     .line 160
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
     .line 161
-    .local v0, "jfjVar":Ldefpackage/jfj;
-    sget-object v1, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    .local v0, "jfjVar":Ljfj;
+    sget-object v1, Ljrl;->UNINITIALIZED:Ljrl;
 
     .line 162
-    .local v1, "jrlVar":Ldefpackage/jrl;
-    iget v2, v0, Ldefpackage/jfj;->F:I
+    .local v1, "jrlVar":Ljrl;
+    iget v2, v0, Ljfj;->F:I
 
     .line 163
     .local v2, "i":I
@@ -568,7 +568,7 @@
 
     .line 168
     :sswitch_0
-    invoke-virtual {v0}, Ldefpackage/jfj;->d()V
+    invoke-virtual {v0}, Ljfj;->d()V
 
     .line 169
     return-void
@@ -590,9 +590,9 @@
     .locals 1
 
     .line 178
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
-    invoke-virtual {v0}, Ldefpackage/jfj;->e()V
+    invoke-virtual {v0}, Ljfj;->e()V
 
     .line 179
     return-void
@@ -602,31 +602,31 @@
     .locals 1
 
     .line 182
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
-    invoke-virtual {v0}, Ldefpackage/jfj;->l()V
+    invoke-virtual {v0}, Ljfj;->l()V
 
     .line 183
     return-void
 .end method
 
-.method public final m(Ldefpackage/jrl;Ldefpackage/jpb;Ljava/lang/Runnable;)V
+.method public final m(Ljrl;Ljpb;Ljava/lang/Runnable;)V
     .locals 7
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
-    .param p2, "jpbVar"    # Ldefpackage/jpb;
+    .param p1, "jrlVar"    # Ljrl;
+    .param p2, "jpbVar"    # Ljpb;
     .param p3, "runnable"    # Ljava/lang/Runnable;
 
     .line 186
-    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v6, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
     .line 187
-    .local v6, "jfjVar":Ldefpackage/jfj;
+    .local v6, "jfjVar":Ljfj;
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 188
     new-instance v4, Lcom/google/android/apps/camera/ui/views/ViewfinderCover$2;
 
-    invoke-direct {v4, p0, p2}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover$2;-><init>(Lcom/google/android/apps/camera/ui/views/ViewfinderCover;Ldefpackage/jpb;)V
+    invoke-direct {v4, p0, p2}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover$2;-><init>(Lcom/google/android/apps/camera/ui/views/ViewfinderCover;Ljpb;)V
 
     const/4 v5, 0x0
 
@@ -638,36 +638,36 @@
 
     move-object v3, p0
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/jfj;->n(Ldefpackage/jrl;Ljava/lang/Runnable;Ldefpackage/jfi;Ldefpackage/jfe;Z)V
+    invoke-virtual/range {v0 .. v5}, Ljfj;->n(Ljrl;Ljava/lang/Runnable;Ljfi;Ljfe;Z)V
 
     .line 194
     return-void
 .end method
 
-.method public final n(Ldefpackage/jrl;Ljava/lang/Runnable;)V
+.method public final n(Ljrl;Ljava/lang/Runnable;)V
     .locals 1
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
     .param p2, "runnable"    # Ljava/lang/Runnable;
 
     .line 197
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, p2, v0}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->o(Ldefpackage/jrl;Ljava/lang/Runnable;Z)V
+    invoke-virtual {p0, p1, p2, v0}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->o(Ljrl;Ljava/lang/Runnable;Z)V
 
     .line 198
     return-void
 .end method
 
-.method public final o(Ldefpackage/jrl;Ljava/lang/Runnable;Z)V
+.method public final o(Ljrl;Ljava/lang/Runnable;Z)V
     .locals 6
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
     .param p2, "runnable"    # Ljava/lang/Runnable;
     .param p3, "z"    # Z
 
     .line 201
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
-    sget-object v2, Ldefpackage/isd;->l:Ldefpackage/isd;
+    sget-object v2, Lisd;->l:Lisd;
 
     new-instance v4, Lcom/google/android/apps/camera/ui/views/ViewfinderCover$3;
 
@@ -679,7 +679,7 @@
 
     move v5, p3
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/jfj;->n(Ldefpackage/jrl;Ljava/lang/Runnable;Ldefpackage/jfi;Ldefpackage/jfe;Z)V
+    invoke-virtual/range {v0 .. v5}, Ljfj;->n(Ljrl;Ljava/lang/Runnable;Ljfi;Ljfe;Z)V
 
     .line 207
     return-void
@@ -690,13 +690,13 @@
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
     .line 211
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
     .line 212
-    .local v0, "jfjVar":Ldefpackage/jfj;
-    iget-object v1, v0, Ldefpackage/jfj;->k:Ldefpackage/ojc;
+    .local v0, "jfjVar":Ljfj;
+    iget-object v1, v0, Ljfj;->k:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
@@ -712,7 +712,7 @@
 
     .line 216
     :cond_0
-    iget v1, v0, Ldefpackage/jfj;->z:I
+    iget v1, v0, Ljfj;->z:I
 
     if-lez v1, :cond_1
 
@@ -724,40 +724,40 @@
     invoke-virtual {p1, v2, v2, v1}, Landroid/graphics/Canvas;->saveLayer(Landroid/graphics/RectF;Landroid/graphics/Paint;I)I
 
     .line 218
-    iget-object v1, v0, Ldefpackage/jfj;->m:Ldefpackage/jfg;
+    iget-object v1, v0, Ljfj;->m:Ljfg;
 
-    iget-object v1, v1, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    iget-object v1, v1, Ljfg;->a:Landroid/graphics/Rect;
 
-    iget v2, v0, Ldefpackage/jfj;->z:I
+    iget v2, v0, Ljfj;->z:I
 
-    iget-object v3, v0, Ldefpackage/jfj;->i:Landroid/graphics/Paint;
+    iget-object v3, v0, Ljfj;->i:Landroid/graphics/Paint;
 
-    invoke-static {p1, v1, v2, v3}, Ldefpackage/jfj;->c(Landroid/graphics/Canvas;Landroid/graphics/Rect;ILandroid/graphics/Paint;)V
+    invoke-static {p1, v1, v2, v3}, Ljfj;->c(Landroid/graphics/Canvas;Landroid/graphics/Rect;ILandroid/graphics/Paint;)V
 
     .line 220
     :cond_1
-    iget-object v1, v0, Ldefpackage/jfj;->k:Ldefpackage/ojc;
+    iget-object v1, v0, Ljfj;->k:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/jnm;
+    check-cast v1, Ljnm;
 
-    iget-object v1, v1, Ldefpackage/jnm;->a:Landroid/graphics/Bitmap;
+    iget-object v1, v1, Ljnm;->a:Landroid/graphics/Bitmap;
 
-    iget-object v2, v0, Ldefpackage/jfj;->l:Landroid/graphics/Rect;
+    iget-object v2, v0, Ljfj;->l:Landroid/graphics/Rect;
 
-    iget-object v3, v0, Ldefpackage/jfj;->m:Ldefpackage/jfg;
+    iget-object v3, v0, Ljfj;->m:Ljfg;
 
-    iget-object v3, v3, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    iget-object v3, v3, Ljfg;->a:Landroid/graphics/Rect;
 
-    iget-object v4, v0, Ldefpackage/jfj;->g:Landroid/graphics/Paint;
+    iget-object v4, v0, Ljfj;->g:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
     .line 221
-    iget v1, v0, Ldefpackage/jfj;->z:I
+    iget v1, v0, Ljfj;->z:I
 
     if-lez v1, :cond_2
 
@@ -766,33 +766,33 @@
 
     .line 224
     :cond_2
-    iget v1, v0, Ldefpackage/jfj;->n:I
+    iget v1, v0, Ljfj;->n:I
 
     .line 225
     .local v1, "i":I
     if-lez v1, :cond_3
 
     .line 226
-    iget-object v2, v0, Ldefpackage/jfj;->h:Landroid/graphics/Paint;
+    iget-object v2, v0, Ljfj;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v2, v1}, Landroid/graphics/Paint;->setAlpha(I)V
 
     .line 227
-    iget-object v2, v0, Ldefpackage/jfj;->m:Ldefpackage/jfg;
+    iget-object v2, v0, Ljfj;->m:Ljfg;
 
-    iget-object v2, v2, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    iget-object v2, v2, Ljfg;->a:Landroid/graphics/Rect;
 
-    iget v3, v0, Ldefpackage/jfj;->z:I
+    iget v3, v0, Ljfj;->z:I
 
-    iget-object v4, v0, Ldefpackage/jfj;->h:Landroid/graphics/Paint;
+    iget-object v4, v0, Ljfj;->h:Landroid/graphics/Paint;
 
-    invoke-static {p1, v2, v3, v4}, Ldefpackage/jfj;->c(Landroid/graphics/Canvas;Landroid/graphics/Rect;ILandroid/graphics/Paint;)V
+    invoke-static {p1, v2, v3, v4}, Ljfj;->c(Landroid/graphics/Canvas;Landroid/graphics/Rect;ILandroid/graphics/Paint;)V
 
     .line 229
     :cond_3
-    iget-object v2, v0, Ldefpackage/jfj;->o:Ldefpackage/ojc;
+    iget-object v2, v0, Ljfj;->o:Lojc;
 
-    invoke-virtual {v2}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v2}, Lojc;->g()Z
 
     move-result v2
 
@@ -803,11 +803,11 @@
 
     .line 232
     :cond_4
-    iget-object v2, v0, Ldefpackage/jfj;->j:Landroid/os/Handler;
+    iget-object v2, v0, Ljfj;->j:Landroid/os/Handler;
 
-    iget-object v3, v0, Ldefpackage/jfj;->o:Ldefpackage/ojc;
+    iget-object v3, v0, Ljfj;->o:Lojc;
 
-    invoke-virtual {v3}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v3}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -816,9 +816,9 @@
     invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 233
-    sget-object v2, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v2, Loih;->a:Loih;
 
-    iput-object v2, v0, Ldefpackage/jfj;->o:Ldefpackage/ojc;
+    iput-object v2, v0, Ljfj;->o:Lojc;
 
     .line 234
     return-void
@@ -853,24 +853,24 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->l:Landroid/widget/TextView;
 
     .line 241
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
     .line 242
-    .local v1, "jfjVar":Ldefpackage/jfj;
+    .local v1, "jfjVar":Ljfj;
     iget-object v2, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->e:Landroid/widget/ImageView;
 
-    iput-object v2, v1, Ldefpackage/jfj;->w:Landroid/view/View;
+    iput-object v2, v1, Ljfj;->w:Landroid/view/View;
 
     .line 243
-    iput-object v0, v1, Ldefpackage/jfj;->x:Landroid/view/View;
+    iput-object v0, v1, Ljfj;->x:Landroid/view/View;
 
     .line 244
-    invoke-virtual {v1}, Ldefpackage/jfj;->f()V
+    invoke-virtual {v1}, Ljfj;->f()V
 
     .line 245
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
-    invoke-virtual {v0}, Ldefpackage/jfj;->g()V
+    invoke-virtual {v0}, Ljfj;->g()V
 
     .line 246
     return-void
@@ -890,9 +890,9 @@
     invoke-super/range {p0 .. p5}, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->onLayout(ZIIII)V
 
     .line 256
-    iget-object v1, v0, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->d:Ldefpackage/ojz;
+    iget-object v1, v0, Lcom/google/android/apps/camera/ui/layout/GcaLayout;->d:Lojz;
 
-    invoke-interface {v1}, Ldefpackage/ojz;->a()Ljava/lang/Object;
+    invoke-interface {v1}, Lojz;->a()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -912,13 +912,13 @@
     :cond_0
     move-object v2, v1
 
-    check-cast v2, Ldefpackage/jbw;
+    check-cast v2, Ljbw;
 
     .line 261
-    .local v2, "jbwVar":Ldefpackage/jbw;
-    iget-object v3, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    .local v2, "jbwVar":Ljbw;
+    iget-object v3, v2, Ljbw;->b:Ljbt;
 
-    iget-boolean v3, v3, Ldefpackage/jbt;->o:Z
+    iget-boolean v3, v3, Ljbt;->o:Z
 
     if-eqz v3, :cond_1
 
@@ -932,41 +932,41 @@
     iput-boolean v3, v0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->j:Z
 
     .line 265
-    invoke-static {}, Ldefpackage/jfg;->a()Ldefpackage/jff;
+    invoke-static {}, Ljfg;->a()Ljff;
 
     move-result-object v4
 
     .line 266
-    .local v4, "a2":Ldefpackage/jff;
-    iget-object v5, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    .local v4, "a2":Ljff;
+    iget-object v5, v2, Ljbw;->b:Ljbt;
 
-    iget-object v5, v5, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v5, v5, Ljbt;->e:Landroid/graphics/Rect;
 
-    invoke-virtual {v4, v5}, Ldefpackage/jff;->c(Landroid/graphics/Rect;)V
+    invoke-virtual {v4, v5}, Ljff;->c(Landroid/graphics/Rect;)V
 
     .line 267
-    iget-object v5, v2, Ldefpackage/jbw;->b:Ldefpackage/jbt;
+    iget-object v5, v2, Ljbw;->b:Ljbt;
 
-    iget-object v5, v5, Ldefpackage/jbt;->e:Landroid/graphics/Rect;
+    iget-object v5, v5, Ljbt;->e:Landroid/graphics/Rect;
 
     invoke-direct {v0, v5}, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->p(Landroid/graphics/Rect;)I
 
     move-result v5
 
-    invoke-virtual {v4, v5}, Ldefpackage/jff;->b(I)V
+    invoke-virtual {v4, v5}, Ljff;->b(I)V
 
     .line 268
-    invoke-virtual {v4}, Ldefpackage/jff;->a()Ldefpackage/jfg;
+    invoke-virtual {v4}, Ljff;->a()Ljfg;
 
     move-result-object v5
 
     .line 269
-    .local v5, "a3":Ldefpackage/jfg;
-    iget-object v6, v0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ldefpackage/jfj;
+    .local v5, "a3":Ljfg;
+    iget-object v6, v0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->i:Ljfj;
 
     .line 270
-    .local v6, "jfjVar":Ldefpackage/jfj;
-    iget v7, v6, Ldefpackage/jfj;->F:I
+    .local v6, "jfjVar":Ljfj;
+    iget v7, v6, Ljfj;->F:I
 
     const/4 v8, 0x3
 
@@ -986,19 +986,19 @@
     if-nez v7, :cond_3
 
     .line 274
-    iput v9, v6, Ldefpackage/jfj;->F:I
+    iput v9, v6, Ljfj;->F:I
 
     .line 275
     return-void
 
     .line 277
     :cond_3
-    iput v9, v6, Ldefpackage/jfj;->F:I
+    iput v9, v6, Ljfj;->F:I
 
     .line 278
-    iget-object v7, v6, Ldefpackage/jfj;->k:Ldefpackage/ojc;
+    iget-object v7, v6, Ljfj;->k:Lojc;
 
-    invoke-virtual {v7}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v7}, Lojc;->g()Z
 
     move-result v7
 
@@ -1009,24 +1009,24 @@
 
     .line 281
     :cond_4
-    iget-object v7, v6, Ldefpackage/jfj;->D:Ldefpackage/lwd;
+    iget-object v7, v6, Ljfj;->D:Llwd;
 
-    iget-object v10, v6, Ldefpackage/jfj;->C:Ldefpackage/cwj;
+    iget-object v10, v6, Ljfj;->C:Lcwj;
 
-    invoke-interface {v10}, Ldefpackage/cwj;->d()Ldefpackage/lwd;
+    invoke-interface {v10}, Lcwj;->d()Llwd;
 
     move-result-object v10
 
     if-eq v7, v10, :cond_5
 
-    iget v7, v6, Ldefpackage/jfj;->p:F
+    iget v7, v6, Ljfj;->p:F
 
     goto :goto_0
 
     :cond_5
-    iget-object v7, v6, Ldefpackage/jfj;->q:Ldefpackage/lco;
+    iget-object v7, v6, Ljfj;->q:Llco;
 
-    invoke-interface {v7}, Ldefpackage/lco;->fA()Ljava/lang/Object;
+    invoke-interface {v7}, Llco;->fA()Ljava/lang/Object;
 
     move-result-object v7
 
@@ -1039,7 +1039,7 @@
     .line 282
     .local v7, "floatValue":F
     :goto_0
-    iget v10, v6, Ldefpackage/jfj;->p:F
+    iget v10, v6, Ljfj;->p:F
 
     cmpl-float v10, v10, v7
 
@@ -1050,16 +1050,16 @@
 
     .line 285
     :cond_6
-    iget-object v10, v6, Ldefpackage/jfj;->q:Ldefpackage/lco;
+    iget-object v10, v6, Ljfj;->q:Llco;
 
-    invoke-interface {v10}, Ldefpackage/lco;->fA()Ljava/lang/Object;
+    invoke-interface {v10}, Llco;->fA()Ljava/lang/Object;
 
     .line 286
-    iget-object v10, v5, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    iget-object v10, v5, Ljfg;->a:Landroid/graphics/Rect;
 
-    iget-object v11, v6, Ldefpackage/jfj;->m:Ldefpackage/jfg;
+    iget-object v11, v6, Ljfj;->m:Ljfg;
 
-    iget-object v11, v11, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    iget-object v11, v11, Ljfg;->a:Landroid/graphics/Rect;
 
     invoke-virtual {v10, v11}, Landroid/graphics/Rect;->equals(Ljava/lang/Object;)Z
 
@@ -1070,13 +1070,13 @@
     if-eqz v10, :cond_c
 
     .line 287
-    iget-object v8, v6, Ldefpackage/jfj;->m:Ldefpackage/jfg;
+    iget-object v8, v6, Ljfj;->m:Ljfg;
 
-    iget-object v8, v8, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    iget-object v8, v8, Ljfg;->a:Landroid/graphics/Rect;
 
     .line 288
     .local v8, "rect":Landroid/graphics/Rect;
-    iget-boolean v9, v6, Ldefpackage/jfj;->y:Z
+    iget-boolean v9, v6, Ljfj;->y:Z
 
     if-nez v9, :cond_7
 
@@ -1085,7 +1085,7 @@
 
     .line 291
     :cond_7
-    iget v9, v6, Ldefpackage/jfj;->p:F
+    iget v9, v6, Ljfj;->p:F
 
     .line 292
     .local v9, "f3":F
@@ -1098,11 +1098,11 @@
 
     .line 295
     :cond_8
-    iget-object v10, v6, Ldefpackage/jfj;->l:Landroid/graphics/Rect;
+    iget-object v10, v6, Ljfj;->l:Landroid/graphics/Rect;
 
     .line 296
     .local v10, "rect2":Landroid/graphics/Rect;
-    invoke-virtual {v6}, Ldefpackage/jfj;->p()Z
+    invoke-virtual {v6}, Ljfj;->p()Z
 
     move-result v15
 
@@ -1179,8 +1179,8 @@
 
     move-object/from16 v22, v2
 
-    .end local v2    # "jbwVar":Ldefpackage/jbw;
-    .local v22, "jbwVar":Ldefpackage/jbw;
+    .end local v2    # "jbwVar":Ljbw;
+    .local v22, "jbwVar":Ljbw;
     add-int v2, v16, v18
 
     invoke-direct {v3, v14, v0, v1, v2}, Landroid/graphics/Rect;-><init>(IIII)V
@@ -1205,7 +1205,7 @@
 
     .line 310
     :cond_a
-    iget-object v1, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iget-object v1, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v1}, Landroid/animation/AnimatorSet;->cancel()V
 
@@ -1214,22 +1214,22 @@
 
     invoke-direct {v1}, Landroid/animation/AnimatorSet;-><init>()V
 
-    iput-object v1, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iput-object v1, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     .line 312
     const/4 v2, 0x1
 
     new-array v2, v2, [Landroid/animation/Animator;
 
-    iget-object v3, v6, Ldefpackage/jfj;->l:Landroid/graphics/Rect;
+    iget-object v3, v6, Ljfj;->l:Landroid/graphics/Rect;
 
-    iget-object v14, v6, Ldefpackage/jfj;->e:Landroid/view/animation/BaseInterpolator;
+    iget-object v14, v6, Ljfj;->e:Landroid/view/animation/BaseInterpolator;
 
     move-object/from16 v23, v4
 
-    .end local v4    # "a2":Ldefpackage/jff;
-    .local v23, "a2":Ldefpackage/jff;
-    new-instance v4, Ldefpackage/jfa;
+    .end local v4    # "a2":Ljff;
+    .local v23, "a2":Ljff;
+    new-instance v4, Ljfa;
 
     move/from16 v20, v7
 
@@ -1237,9 +1237,9 @@
 
     .end local v7    # "floatValue":F
     .local v20, "floatValue":F
-    invoke-direct {v4, v6, v7}, Ldefpackage/jfa;-><init>(Ldefpackage/jfj;I)V
+    invoke-direct {v4, v6, v7}, Ljfa;-><init>(Ljfj;I)V
 
-    invoke-static {v3, v0, v14, v4}, Ldefpackage/jfj;->b(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/animation/TimeInterpolator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/animation/ValueAnimator;
+    invoke-static {v3, v0, v14, v4}, Ljfj;->b(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/animation/TimeInterpolator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/animation/ValueAnimator;
 
     move-result-object v3
 
@@ -1248,14 +1248,14 @@
     invoke-virtual {v1, v2}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
     .line 313
-    iget-object v1, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iget-object v1, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     const-wide/16 v2, 0x12c
 
     invoke-virtual {v1, v2, v3}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
 
     .line 314
-    iget-object v1, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iget-object v1, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v1}, Landroid/animation/AnimatorSet;->start()V
 
@@ -1264,8 +1264,8 @@
 
     .line 307
     .end local v20    # "floatValue":F
-    .end local v23    # "a2":Ldefpackage/jff;
-    .restart local v4    # "a2":Ldefpackage/jff;
+    .end local v23    # "a2":Ljff;
+    .restart local v4    # "a2":Ljff;
     .restart local v7    # "floatValue":F
     :cond_b
     move-object/from16 v23, v4
@@ -1273,10 +1273,10 @@
     move/from16 v20, v7
 
     .line 308
-    .end local v4    # "a2":Ldefpackage/jff;
+    .end local v4    # "a2":Ljff;
     .end local v7    # "floatValue":F
     .restart local v20    # "floatValue":F
-    .restart local v23    # "a2":Ldefpackage/jff;
+    .restart local v23    # "a2":Ljff;
     :goto_1
     return-void
 
@@ -1294,11 +1294,11 @@
     .end local v18    # "i7":I
     .end local v20    # "floatValue":F
     .end local v21    # "a":Ljava/lang/Object;
-    .end local v22    # "jbwVar":Ldefpackage/jbw;
-    .end local v23    # "a2":Ldefpackage/jff;
+    .end local v22    # "jbwVar":Ljbw;
+    .end local v23    # "a2":Ljff;
     .restart local v1    # "a":Ljava/lang/Object;
-    .restart local v2    # "jbwVar":Ldefpackage/jbw;
-    .restart local v4    # "a2":Ldefpackage/jff;
+    .restart local v2    # "jbwVar":Ljbw;
+    .restart local v4    # "a2":Ljff;
     .restart local v7    # "floatValue":F
     :cond_c
     move-object/from16 v21, v1
@@ -1308,26 +1308,26 @@
     move-object/from16 v23, v4
 
     .end local v1    # "a":Ljava/lang/Object;
-    .end local v2    # "jbwVar":Ldefpackage/jbw;
-    .end local v4    # "a2":Ldefpackage/jff;
+    .end local v2    # "jbwVar":Ljbw;
+    .end local v4    # "a2":Ljff;
     .restart local v21    # "a":Ljava/lang/Object;
-    .restart local v22    # "jbwVar":Ldefpackage/jbw;
-    .restart local v23    # "a2":Ldefpackage/jff;
-    iget-object v0, v6, Ldefpackage/jfj;->k:Ldefpackage/ojc;
+    .restart local v22    # "jbwVar":Ljbw;
+    .restart local v23    # "a2":Ljff;
+    iget-object v0, v6, Ljfj;->k:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jnm;
+    check-cast v0, Ljnm;
 
-    invoke-virtual {v0}, Ldefpackage/jnm;->a()Landroid/graphics/Rect;
+    invoke-virtual {v0}, Ljnm;->a()Landroid/graphics/Rect;
 
     move-result-object v0
 
     .line 318
     .local v0, "a4":Landroid/graphics/Rect;
-    iget-object v1, v6, Ldefpackage/jfj;->l:Landroid/graphics/Rect;
+    iget-object v1, v6, Ljfj;->l:Landroid/graphics/Rect;
 
     .line 319
     .local v1, "rect4":Landroid/graphics/Rect;
@@ -1357,7 +1357,7 @@
     .local v2, "round":I
     int-to-float v3, v2
 
-    invoke-static {v1}, Ldefpackage/jfj;->a(Landroid/graphics/Rect;)F
+    invoke-static {v1}, Ljfj;->a(Landroid/graphics/Rect;)F
 
     move-result v4
 
@@ -1382,7 +1382,7 @@
     .local v2, "width":I
     int-to-float v3, v2
 
-    invoke-static {v1}, Ldefpackage/jfj;->a(Landroid/graphics/Rect;)F
+    invoke-static {v1}, Ljfj;->a(Landroid/graphics/Rect;)F
 
     move-result v4
 
@@ -1446,17 +1446,17 @@
     .end local v11    # "i8":I
     .end local v12    # "i9":I
     :cond_e
-    iget-object v2, v6, Ldefpackage/jfj;->k:Ldefpackage/ojc;
+    iget-object v2, v6, Ljfj;->k:Lojc;
 
-    invoke-virtual {v2}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v2}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jnm;
+    check-cast v2, Ljnm;
 
     .line 335
-    .local v2, "jnmVar":Ldefpackage/jnm;
-    iget-object v3, v5, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    .local v2, "jnmVar":Ljnm;
+    iget-object v3, v5, Ljfg;->a:Landroid/graphics/Rect;
 
     .line 336
     .local v3, "rect5":Landroid/graphics/Rect;
@@ -1466,7 +1466,7 @@
 
     .line 337
     .local v4, "width2":I
-    iget v8, v2, Ldefpackage/jnm;->b:I
+    iget v8, v2, Ljnm;->b:I
 
     .line 338
     .local v8, "i10":I
@@ -1482,7 +1482,7 @@
 
     .line 340
     .local v10, "height":I
-    iget v11, v2, Ldefpackage/jnm;->b:I
+    iget v11, v2, Ljnm;->b:I
 
     .line 341
     .local v11, "i12":I
@@ -1496,7 +1496,7 @@
 
     move-result v13
 
-    iget v14, v2, Ldefpackage/jnm;->b:I
+    iget v14, v2, Ljnm;->b:I
 
     div-int/2addr v13, v14
 
@@ -1506,7 +1506,7 @@
 
     move-result v14
 
-    iget v15, v2, Ldefpackage/jnm;->b:I
+    iget v15, v2, Ljnm;->b:I
 
     div-int/2addr v14, v15
 
@@ -1522,8 +1522,8 @@
 
     move-object/from16 v25, v2
 
-    .end local v2    # "jnmVar":Ldefpackage/jnm;
-    .local v25, "jnmVar":Ldefpackage/jnm;
+    .end local v2    # "jnmVar":Ljnm;
+    .local v25, "jnmVar":Ljnm;
     sub-int v2, v14, v12
 
     move-object/from16 v26, v3
@@ -1544,7 +1544,7 @@
 
     .line 345
     .local v0, "rect6":Landroid/graphics/Rect;
-    invoke-virtual {v6}, Ldefpackage/jfj;->p()Z
+    invoke-virtual {v6}, Ljfj;->p()Z
 
     move-result v2
 
@@ -1566,13 +1566,13 @@
 
     .line 346
     .local v2, "f5":F
-    invoke-static {v1}, Ldefpackage/jfj;->a(Landroid/graphics/Rect;)F
+    invoke-static {v1}, Ljfj;->a(Landroid/graphics/Rect;)F
 
     move-result v3
 
     .line 347
     .local v3, "a5":F
-    invoke-static {v0}, Ldefpackage/jfj;->a(Landroid/graphics/Rect;)F
+    invoke-static {v0}, Ljfj;->a(Landroid/graphics/Rect;)F
 
     move-result v4
 
@@ -1585,9 +1585,9 @@
     if-nez v15, :cond_10
 
     .line 349
-    sget-object v15, Ldefpackage/jfj;->a:Ldefpackage/ouj;
+    sget-object v15, Ljfj;->a:Louj;
 
-    invoke-virtual {v15}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v15}, Loue;->c()Lova;
 
     move-result-object v15
 
@@ -1599,7 +1599,7 @@
     .local v16, "floatValue":F
     const/16 v7, 0xcd5
 
-    invoke-interface {v15, v7}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v15, v7}, Lova;->G(I)Lova;
 
     move-result-object v7
 
@@ -1607,7 +1607,7 @@
 
     const-string v15, "Invalid aspect ratio in fitToRect: %s"
 
-    invoke-interface {v7, v15, v0}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v7, v15, v0}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     move-object/from16 v32, v0
 
@@ -1754,7 +1754,7 @@
     .end local v33    # "rect4":Landroid/graphics/Rect;
     .restart local v1    # "rect4":Landroid/graphics/Rect;
     :goto_5
-    iget-object v0, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iget-object v0, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->cancel()V
 
@@ -1763,20 +1763,20 @@
 
     invoke-direct {v0}, Landroid/animation/AnimatorSet;-><init>()V
 
-    iput-object v0, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iput-object v0, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     .line 368
-    iget-object v0, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iget-object v0, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     .line 369
     .local v0, "animatorSet":Landroid/animation/AnimatorSet;
-    iget-object v2, v6, Ldefpackage/jfj;->m:Ldefpackage/jfg;
+    iget-object v2, v6, Ljfj;->m:Ljfg;
 
-    iget v2, v2, Ldefpackage/jfg;->b:I
+    iget v2, v2, Ljfg;->b:I
 
     .line 370
     .local v2, "i14":I
-    iget v3, v5, Ldefpackage/jfg;->b:I
+    iget v3, v5, Ljfg;->b:I
 
     .line 371
     .local v3, "i15":I
@@ -1786,14 +1786,14 @@
 
     .line 372
     .local v4, "decelerateInterpolator":Landroid/view/animation/DecelerateInterpolator;
-    new-instance v7, Ldefpackage/jfa;
+    new-instance v7, Ljfa;
 
     const/4 v15, 0x4
 
-    invoke-direct {v7, v6, v15}, Ldefpackage/jfa;-><init>(Ldefpackage/jfj;I)V
+    invoke-direct {v7, v6, v15}, Ljfa;-><init>(Ljfj;I)V
 
     .line 373
-    .local v7, "jfaVar":Ldefpackage/jfa;
+    .local v7, "jfaVar":Ljfa;
     const/4 v15, 0x2
 
     move/from16 v18, v8
@@ -1830,37 +1830,37 @@
     .local v29, "i14":I
     new-array v2, v15, [Landroid/animation/Animator;
 
-    iget-object v15, v6, Ldefpackage/jfj;->m:Ldefpackage/jfg;
+    iget-object v15, v6, Ljfj;->m:Ljfg;
 
-    iget-object v15, v15, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    iget-object v15, v15, Ljfg;->a:Landroid/graphics/Rect;
 
     move/from16 v30, v3
 
     .end local v3    # "i15":I
     .local v30, "i15":I
-    iget-object v3, v5, Ldefpackage/jfg;->a:Landroid/graphics/Rect;
+    iget-object v3, v5, Ljfg;->a:Landroid/graphics/Rect;
 
     move-object/from16 v31, v4
 
     .end local v4    # "decelerateInterpolator":Landroid/view/animation/DecelerateInterpolator;
     .local v31, "decelerateInterpolator":Landroid/view/animation/DecelerateInterpolator;
-    iget-object v4, v6, Ldefpackage/jfj;->e:Landroid/view/animation/BaseInterpolator;
+    iget-object v4, v6, Ljfj;->e:Landroid/view/animation/BaseInterpolator;
 
     move-object/from16 v33, v5
 
-    .end local v5    # "a3":Ldefpackage/jfg;
-    .local v33, "a3":Ldefpackage/jfg;
-    new-instance v5, Ldefpackage/jfa;
+    .end local v5    # "a3":Ljfg;
+    .local v33, "a3":Ljfg;
+    new-instance v5, Ljfa;
 
     move-object/from16 v37, v7
 
     const/4 v7, 0x2
 
-    .end local v7    # "jfaVar":Ldefpackage/jfa;
-    .local v37, "jfaVar":Ldefpackage/jfa;
-    invoke-direct {v5, v6, v7}, Ldefpackage/jfa;-><init>(Ldefpackage/jfj;I)V
+    .end local v7    # "jfaVar":Ljfa;
+    .local v37, "jfaVar":Ljfa;
+    invoke-direct {v5, v6, v7}, Ljfa;-><init>(Ljfj;I)V
 
-    invoke-static {v15, v3, v4, v5}, Ldefpackage/jfj;->b(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/animation/TimeInterpolator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/animation/ValueAnimator;
+    invoke-static {v15, v3, v4, v5}, Ljfj;->b(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/animation/TimeInterpolator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/animation/ValueAnimator;
 
     move-result-object v3
 
@@ -1868,17 +1868,17 @@
 
     aput-object v3, v2, v4
 
-    iget-object v3, v6, Ldefpackage/jfj;->l:Landroid/graphics/Rect;
+    iget-object v3, v6, Ljfj;->l:Landroid/graphics/Rect;
 
-    iget-object v4, v6, Ldefpackage/jfj;->e:Landroid/view/animation/BaseInterpolator;
+    iget-object v4, v6, Ljfj;->e:Landroid/view/animation/BaseInterpolator;
 
-    new-instance v5, Ldefpackage/jfa;
+    new-instance v5, Ljfa;
 
     const/4 v15, 0x3
 
-    invoke-direct {v5, v6, v15}, Ldefpackage/jfa;-><init>(Ldefpackage/jfj;I)V
+    invoke-direct {v5, v6, v15}, Ljfa;-><init>(Ljfj;I)V
 
-    invoke-static {v3, v1, v4, v5}, Ldefpackage/jfj;->b(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/animation/TimeInterpolator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/animation/ValueAnimator;
+    invoke-static {v3, v1, v4, v5}, Ljfj;->b(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/animation/TimeInterpolator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/animation/ValueAnimator;
 
     move-result-object v3
 
@@ -1891,14 +1891,14 @@
     invoke-virtual {v0, v2}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
     .line 377
-    iget-object v2, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iget-object v2, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     const-wide/16 v3, 0x12c
 
     invoke-virtual {v2, v3, v4}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
 
     .line 378
-    iget-object v2, v6, Ldefpackage/jfj;->f:Landroid/animation/AnimatorSet;
+    iget-object v2, v6, Ljfj;->f:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v2}, Landroid/animation/AnimatorSet;->start()V
 
@@ -1907,7 +1907,7 @@
 
     .line 257
     .end local v0    # "animatorSet":Landroid/animation/AnimatorSet;
-    .end local v6    # "jfjVar":Ldefpackage/jfj;
+    .end local v6    # "jfjVar":Ljfj;
     .end local v8    # "ofInt":Landroid/animation/ValueAnimator;
     .end local v9    # "i11":I
     .end local v10    # "height":I
@@ -1918,21 +1918,21 @@
     .end local v16    # "floatValue":F
     .end local v18    # "i10":I
     .end local v21    # "a":Ljava/lang/Object;
-    .end local v22    # "jbwVar":Ldefpackage/jbw;
-    .end local v23    # "a2":Ldefpackage/jff;
+    .end local v22    # "jbwVar":Ljbw;
+    .end local v23    # "a2":Ljff;
     .end local v24    # "a4":Landroid/graphics/Rect;
-    .end local v25    # "jnmVar":Ldefpackage/jnm;
+    .end local v25    # "jnmVar":Ljnm;
     .end local v26    # "rect5":Landroid/graphics/Rect;
     .end local v27    # "width2":I
     .end local v29    # "i14":I
     .end local v30    # "i15":I
     .end local v31    # "decelerateInterpolator":Landroid/view/animation/DecelerateInterpolator;
     .end local v32    # "rect6":Landroid/graphics/Rect;
-    .end local v33    # "a3":Ldefpackage/jfg;
+    .end local v33    # "a3":Ljfg;
     .end local v34    # "f5":F
     .end local v35    # "a5":F
     .end local v36    # "a6":F
-    .end local v37    # "jfaVar":Ldefpackage/jfa;
+    .end local v37    # "jfaVar":Ljfa;
     .local v1, "a":Ljava/lang/Object;
     :cond_12
     move-object/from16 v21, v1

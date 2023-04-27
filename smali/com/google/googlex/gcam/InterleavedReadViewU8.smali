@@ -133,7 +133,7 @@
     return-void
 .end method
 
-.method public final g()Ldefpackage/pjk;
+.method public final g()Lpjk;
     .locals 4
 
     .line 48
@@ -158,9 +158,9 @@
 
     .line 52
     :cond_0
-    new-instance v2, Ldefpackage/pjk;
+    new-instance v2, Lpjk;
 
-    invoke-direct {v2, v0, v1}, Ldefpackage/pjk;-><init>(J)V
+    invoke-direct {v2, v0, v1}, Lpjk;-><init>(J)V
 
     return-object v2
 .end method

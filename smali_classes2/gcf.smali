@@ -3,5 +3,5 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/gev;
-.implements Ldefpackage/gao;
+.implements Lgev;
+.implements Lgao;

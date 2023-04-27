@@ -55,7 +55,7 @@
     :goto_0
     const-string v2, "ptr must not be 0."
 
-    invoke-static {v1, v2}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v1, v2}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 22
     if-gtz p2, :cond_1
@@ -67,7 +67,7 @@
     :cond_1
     const-string v1, "capacity must be positive, got: %s"
 
-    invoke-static {v0, v1, p2}, Ldefpackage/obr;->aI(ZLjava/lang/String;I)V
+    invoke-static {v0, v1, p2}, Lobr;->aI(ZLjava/lang/String;I)V
 
     .line 26
     invoke-static {p0, p1, p2}, Lcom/google/googlex/gcam/BufferUtils;->byteBufferViewOfNativePointerImpl(JI)Ljava/nio/ByteBuffer;

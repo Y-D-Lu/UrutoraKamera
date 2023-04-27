@@ -1,73 +1,125 @@
-.class public final Ldefpackage/xu;
-.super Ldefpackage/xq;
+.class public Ldefpackage/Xu;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Llpx;->o(Z)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final c:Ldefpackage/xv;
+.field public final synthetic this$0:Llpx;
+
+.field public final synthetic val$z:Z
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/xv;)V
+.method public constructor <init>(Llpx;Z)V
     .locals 0
-    .param p1, "xvVar"    # Ldefpackage/xv;
+    .param p1, "this$0"    # Llpx;
 
-    .line 9
-    invoke-direct {p0}, Ldefpackage/xq;-><init>()V
+    .line 388
+    iput-object p1, p0, Ldefpackage/Xu;->this$0:Llpx;
 
-    .line 10
-    iput-object p1, p0, Ldefpackage/xu;->c:Ldefpackage/xv;
+    iput-boolean p2, p0, Ldefpackage/Xu;->val$z:Z
 
-    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()Ljava/lang/String;
-    .locals 3
+.method public final run()V
+    .locals 7
 
-    .line 15
-    iget-object v0, p0, Ldefpackage/xu;->c:Ldefpackage/xv;
+    .line 391
+    iget-object v0, p0, Ldefpackage/Xu;->this$0:Llpx;
 
-    iget-object v0, v0, Ldefpackage/xv;->a:Ljava/lang/ref/WeakReference;
+    .line 392
+    .local v0, "lpxVar":Llpx;
+    iget-boolean v1, p0, Ldefpackage/Xu;->val$z:Z
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 394
+    .local v1, "z2":Z
+    :try_start_0
+    iget-object v2, v0, Llpx;->c:Llpq;
 
-    move-result-object v0
+    .line 395
+    .local v2, "lpqVar":Llpq;
+    invoke-static {}, Llnv;->a()Llnu;
 
-    check-cast v0, Ldefpackage/xr;
+    move-result-object v3
 
-    .line 16
-    .local v0, "xrVar":Ldefpackage/xr;
-    if-nez v0, :cond_0
+    .line 396
+    .local v3, "a":Llnu;
+    const/4 v4, 0x4
 
-    .line 17
-    const-string v1, "Completer object has been garbage collected, future will fail soon"
+    const/4 v5, 0x1
 
-    return-object v1
+    if-eq v5, v1, :cond_0
 
-    .line 19
+    move v6, v5
+
+    goto :goto_0
+
     :cond_0
-    new-instance v1, Ljava/lang/StringBuilder;
+    move v6, v4
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    :goto_0
+    invoke-virtual {v3, v6}, Llnu;->c(I)V
 
-    const-string v2, "tag=["
+    .line 397
+    invoke-virtual {v3, v5}, Llnu;->b(I)V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 398
+    invoke-virtual {v3, v4}, Llnu;->e(I)V
 
-    iget-object v2, v0, Ldefpackage/xr;->a:Ljava/lang/Object;
+    .line 399
+    invoke-virtual {v3}, Llnu;->a()Llnv;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
-    const-string v2, "]"
+    invoke-virtual {v2, v4}, Llpq;->b(Llnv;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 405
+    .end local v2    # "lpqVar":Llpq;
+    .end local v3    # "a":Llnu;
+    goto :goto_1
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 400
+    :catch_0
+    move-exception v2
 
-    move-result-object v1
+    .line 401
+    .local v2, "e":Ljava/lang/Exception;
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
-    return-object v1
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Thread;->interrupt()V
+
+    .line 402
+    iget-object v3, v0, Llpx;->b:Llis;
+
+    const-string v4, "Interrupted when calling trigger3A."
+
+    invoke-interface {v3, v4, v2}, Llis;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 406
+    .end local v2    # "e":Ljava/lang/Exception;
+    :goto_1
+    return-void
 .end method

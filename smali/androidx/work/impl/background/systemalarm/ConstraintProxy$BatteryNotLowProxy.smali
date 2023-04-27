@@ -1,5 +1,5 @@
 .class public Landroidx/work/impl/background/systemalarm/ConstraintProxy$BatteryNotLowProxy;
-.super Ldefpackage/aop;
+.super Laop;
 .source ""
 
 
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 6
-    invoke-direct {p0}, Ldefpackage/aop;-><init>()V
+    invoke-direct {p0}, Laop;-><init>()V
 
     return-void
 .end method

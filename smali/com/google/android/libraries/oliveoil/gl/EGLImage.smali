@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/mmc;
+.implements Lmmc;
 
 
 # instance fields
@@ -154,7 +154,7 @@
     return v0
 .end method
 
-.method public final b()Ldefpackage/mme;
+.method public final b()Lmme;
     .locals 2
 
     .line 41
@@ -170,7 +170,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Ldefpackage/mmf;->d(II)Ldefpackage/mme;
+    invoke-static {v0, v1}, Lmmf;->d(II)Lmme;
 
     move-result-object v0
 

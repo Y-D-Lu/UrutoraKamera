@@ -1,90 +1,92 @@
-.class public final Ldefpackage/bb;
+.class public Ldefpackage/Bb;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/os/Parcelable;
+.implements Ljava/util/function/Consumer;
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfio;->onActivityResult(IILandroid/content/Intent;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final synthetic this$0:Lfio;
 
-.field public final b:Ljava/util/List;
+.field public final synthetic val$i:I
+
+.field public final synthetic val$i2:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lfio;II)V
+    .locals 0
+    .param p1, "this$0"    # Lfio;
 
-    .line 12
-    new-instance v0, Ldefpackage/ba;
+    .line 92
+    iput-object p1, p0, Ldefpackage/Bb;->this$0:Lfio;
 
-    const/4 v1, 0x0
+    iput p2, p0, Ldefpackage/Bb;->val$i:I
 
-    invoke-direct {v0, v1}, Ldefpackage/ba;-><init>(I)V
+    iput p3, p0, Ldefpackage/Bb;->val$i2:I
 
-    sput-object v0, Ldefpackage/bb;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 1
-    .param p1, "parcel"    # Landroid/os/Parcel;
-
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
-    invoke-virtual {p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    iput-object v0, p0, Ldefpackage/bb;->a:Ljava/util/List;
-
-    .line 18
-    sget-object v0, Ldefpackage/az;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->createTypedArrayList(Landroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    iput-object v0, p0, Ldefpackage/bb;->b:Ljava/util/List;
-
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final describeContents()I
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 5
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 23
-    const/4 v0, 0x0
+    .line 95
+    iget v0, p0, Ldefpackage/Bb;->val$i:I
 
-    return v0
+    .line 96
+    .local v0, "i3":I
+    iget v1, p0, Ldefpackage/Bb;->val$i2:I
+
+    .line 97
+    .local v1, "i4":I
+    move-object v2, p1
+
+    check-cast v2, Lfik;
+
+    .line 98
+    .local v2, "fikVar":Lfik;
+    const/4 v3, 0x0
+
+    .line 99
+    .local v3, "i5":I
+    instance-of v4, v2, Lfhw;
+
+    if-eqz v4, :cond_0
+
+    .line 100
+    move-object v4, v2
+
+    check-cast v4, Lfhw;
+
+    invoke-interface {v4, v0, v1}, Lfhw;->b(II)V
+
+    .line 102
+    :cond_0
+    return-void
 .end method
 
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 1
-    .param p1, "parcel"    # Landroid/os/Parcel;
-    .param p2, "i"    # I
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 28
-    iget-object v0, p0, Ldefpackage/bb;->a:Ljava/util/List;
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
-
-    .line 29
-    iget-object v0, p0, Ldefpackage/bb;->b:Ljava/util/List;
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
-
-    .line 30
-    return-void
+    .line 106
+    return-object p1
 .end method

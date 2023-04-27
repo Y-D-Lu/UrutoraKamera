@@ -1,355 +1,273 @@
-.class public final Ldefpackage/tk;
-.super Landroid/graphics/drawable/Drawable;
+.class public Ldefpackage/Tk;
+.super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Liho;
 
-# static fields
-.field private static final b:Landroid/util/Property;
 
-.field private static final c:Landroid/animation/TimeInterpolator;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Litu;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/animation/ObjectAnimator;
+.field public final synthetic this$0:Litu;
 
-.field private final d:Landroid/graphics/RectF;
+.field public final synthetic val$hycVar:Lhyc;
 
-.field private final e:Landroid/graphics/Paint;
+.field public final synthetic val$qkgVar3:Lqkg;
+
+.field public final synthetic val$qkgVar4:Lqkg;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Litu;Lqkg;Lhyc;Lqkg;)V
+    .locals 0
+    .param p1, "this$0"    # Litu;
 
-    .line 18
-    new-instance v0, Ldefpackage/tj;
+    .line 249
+    iput-object p1, p0, Ldefpackage/Tk;->this$0:Litu;
 
-    const-class v1, Ljava/lang/Integer;
+    iput-object p2, p0, Ldefpackage/Tk;->val$qkgVar3:Lqkg;
 
-    invoke-direct {v0, v1}, Ldefpackage/tj;-><init>(Ljava/lang/Class;)V
+    iput-object p3, p0, Ldefpackage/Tk;->val$hycVar:Lhyc;
 
-    sput-object v0, Ldefpackage/tk;->b:Landroid/util/Property;
+    iput-object p4, p0, Ldefpackage/Tk;->val$qkgVar4:Lqkg;
 
-    .line 19
-    sget-object v0, Ldefpackage/ti;->a:Ldefpackage/ti;
-
-    sput-object v0, Ldefpackage/tk;->c:Landroid/animation/TimeInterpolator;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 5
-
-    .line 24
-    invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
-
-    .line 21
-    new-instance v0, Landroid/graphics/RectF;
-
-    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/tk;->d:Landroid/graphics/RectF;
-
-    .line 25
-    new-instance v0, Landroid/graphics/Paint;
-
-    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
-
-    .line 26
-    .local v0, "paint":Landroid/graphics/Paint;
-    iput-object v0, p0, Ldefpackage/tk;->e:Landroid/graphics/Paint;
-
-    .line 27
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
-
-    .line 28
-    sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
-
-    invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
-
-    .line 29
-    sget-object v2, Ldefpackage/tk;->b:Landroid/util/Property;
-
-    const/4 v3, 0x2
-
-    new-array v3, v3, [I
-
-    fill-array-data v3, :array_0
-
-    invoke-static {p0, v2, v3}, Landroid/animation/ObjectAnimator;->ofInt(Ljava/lang/Object;Landroid/util/Property;[I)Landroid/animation/ObjectAnimator;
-
-    move-result-object v2
-
-    .line 30
-    .local v2, "ofInt":Landroid/animation/ObjectAnimator;
-    iput-object v2, p0, Ldefpackage/tk;->a:Landroid/animation/ObjectAnimator;
-
-    .line 31
-    const/4 v3, -0x1
-
-    invoke-virtual {v2, v3}, Landroid/animation/ObjectAnimator;->setRepeatCount(I)V
-
-    .line 32
-    invoke-virtual {v2, v1}, Landroid/animation/ObjectAnimator;->setRepeatMode(I)V
-
-    .line 33
-    const-wide/16 v3, 0x1770
-
-    invoke-virtual {v2, v3, v4}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
-
-    .line 34
-    new-instance v1, Landroid/view/animation/LinearInterpolator;
-
-    invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
-
-    invoke-virtual {v2, v1}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
-
-    .line 35
-    return-void
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x0
-        0x2710
-    .end array-data
-.end method
-
-.method private static a(FFF)F
-    .locals 2
-    .param p0, "f"    # F
-    .param p1, "f2"    # F
-    .param p2, "f3"    # F
-
-    .line 38
-    cmpl-float v0, p0, p1
-
-    if-eqz v0, :cond_0
-
-    sub-float v0, p2, p0
-
-    sub-float v1, p1, p0
-
-    div-float/2addr v0, v1
-
-    goto :goto_0
-
-    :cond_0
-    sget v0, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
-
-    :goto_0
-    return v0
 .end method
 
 
 # virtual methods
-.method public final draw(Landroid/graphics/Canvas;)V
-    .locals 14
-    .param p1, "canvas"    # Landroid/graphics/Canvas;
+.method public final run()V
+    .locals 21
 
-    .line 43
-    invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
+    .line 252
+    move-object/from16 v0, p0
 
-    .line 44
-    iget-object v0, p0, Ldefpackage/tk;->d:Landroid/graphics/RectF;
+    iget-object v1, v0, Ldefpackage/Tk;->val$qkgVar3:Lqkg;
 
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+    .line 253
+    .local v1, "qkgVar5":Lqkg;
+    iget-object v2, v0, Ldefpackage/Tk;->val$hycVar:Lhyc;
 
-    move-result-object v1
+    .line 254
+    .local v2, "hycVar2":Lhyc;
+    iget-object v3, v0, Ldefpackage/Tk;->val$qkgVar4:Lqkg;
 
-    invoke-virtual {v0, v1}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
+    .line 255
+    .local v3, "qkgVar6":Lqkg;
+    invoke-static {}, Liav;->a()Liau;
 
-    .line 45
-    iget-object v0, p0, Ldefpackage/tk;->d:Landroid/graphics/RectF;
+    move-result-object v4
 
-    sget v1, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
+    .line 256
+    .local v4, "a3":Liau;
+    const-string v5, "InAppUpdate"
 
-    invoke-virtual {v0, v1, v1}, Landroid/graphics/RectF;->inset(FF)V
+    iput-object v5, v4, Liau;->a:Ljava/lang/String;
 
-    .line 46
-    iget-object v0, p0, Ldefpackage/tk;->e:Landroid/graphics/Paint;
+    .line 257
+    sget-object v5, Ljrl;->PHOTO:Ljrl;
 
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+    sget-object v6, Ljrl;->PORTRAIT:Ljrl;
 
-    .line 47
-    iget-object v0, p0, Ldefpackage/tk;->e:Landroid/graphics/Paint;
+    sget-object v7, Ljrl;->LONG_EXPOSURE:Ljrl;
 
-    const/4 v2, 0x0
+    invoke-static {v5, v6, v7}, Lope;->J(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lope;
 
-    invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setColor(I)V
+    move-result-object v5
 
-    .line 48
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getLevel()I
+    invoke-virtual {v4, v5}, Liau;->c(Lope;)V
 
-    move-result v0
+    .line 258
+    sget-object v5, Llwd;->BACK:Llwd;
 
-    .line 49
-    .local v0, "level":I
-    div-int/lit16 v2, v0, 0x7d0
+    sget-object v6, Llwd;->FRONT:Llwd;
 
-    mul-int/lit16 v2, v2, 0x7d0
+    invoke-static {v5, v6}, Lope;->I(Ljava/lang/Object;Ljava/lang/Object;)Lope;
 
-    sub-int v2, v0, v2
+    move-result-object v5
 
-    int-to-float v2, v2
+    invoke-virtual {v4, v5}, Liau;->b(Lope;)V
 
-    const/high16 v3, 0x44fa0000    # 2000.0f
+    .line 259
+    const/4 v5, 0x0
 
-    div-float/2addr v2, v3
+    invoke-virtual {v4, v5}, Liau;->e(Z)V
 
-    .line 50
-    .local v2, "f":F
-    const/high16 v3, 0x42580000    # 54.0f
+    .line 260
+    invoke-virtual {v4, v5}, Liau;->f(Z)V
 
-    mul-float/2addr v3, v2
+    .line 261
+    const/4 v6, 0x1
 
-    .line 51
-    .local v3, "f2":F
-    const/high16 v4, 0x3f000000    # 0.5f
+    iput v6, v4, Liau;->d:I
 
-    cmpg-float v5, v2, v4
+    .line 262
+    invoke-interface {v1}, Lqkg;->mo37get()Ljava/lang/Object;
 
-    const/high16 v6, 0x43990000    # 306.0f
+    move-result-object v6
 
-    const/high16 v7, 0x3f800000    # 1.0f
+    check-cast v6, Ljsu;
 
-    if-gez v5, :cond_0
+    invoke-virtual {v4}, Liau;->a()Liav;
 
-    sget-object v5, Ldefpackage/tk;->c:Landroid/animation/TimeInterpolator;
+    move-result-object v7
 
-    invoke-static {v1, v4, v2}, Ldefpackage/tk;->a(FFF)F
+    invoke-virtual {v2, v6, v7}, Lhyc;->a(Liat;Liav;)V
 
-    move-result v8
+    .line 263
+    move-object v6, v3
 
-    invoke-interface {v5, v8}, Landroid/animation/TimeInterpolator;->getInterpolation(F)F
+    check-cast v6, Ljsy;
 
-    move-result v5
+    invoke-virtual {v6}, Ljsy;->mo37get()Ljsx;
 
-    goto :goto_0
+    move-result-object v6
 
+    .line 264
+    .local v6, "mo37get2":Ljsx;
+    iget-object v7, v6, Ljsx;->c:Lhuf;
+
+    sget-object v8, Lhtu;->O:Lhum;
+
+    invoke-interface {v7, v8}, Lhuf;->c(Lhts;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/Long;
+
+    invoke-virtual {v7}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v17
+
+    .line 265
+    .local v17, "longValue":J
+    iget-object v7, v6, Ljsx;->e:Landroid/content/pm/PackageInfo;
+
+    invoke-virtual {v7}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
+
+    move-result-wide v19
+
+    .line 266
+    .local v19, "longVersionCode":J
+    const-wide/16 v9, 0x0
+
+    cmp-long v7, v17, v9
+
+    if-eqz v7, :cond_0
+
+    .line 267
+    iget-object v7, v6, Ljsx;->d:Lhug;
+
+    invoke-interface {v7, v8}, Lhug;->d(Lhts;)V
+
+    .line 268
+    iget-object v7, v6, Ljsx;->d:Lhug;
+
+    sget-object v8, Lhtu;->R:Lhul;
+
+    invoke-interface {v7, v8}, Lhug;->d(Lhts;)V
+
+    .line 269
+    iget-object v7, v6, Ljsx;->d:Lhug;
+
+    sget-object v8, Lhtu;->S:Lhum;
+
+    invoke-interface {v7, v8}, Lhug;->d(Lhts;)V
+
+    .line 270
+    iget-object v9, v6, Ljsx;->g:Lfjs;
+
+    const/4 v10, 0x5
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    move-wide/from16 v11, v19
+
+    move-wide/from16 v13, v17
+
+    invoke-interface/range {v9 .. v16}, Lfjs;->ai(IJJII)V
+
+    .line 272
     :cond_0
-    sget-object v5, Ldefpackage/tk;->c:Landroid/animation/TimeInterpolator;
+    iget-object v7, v6, Ljsx;->c:Lhuf;
 
-    invoke-static {v4, v7, v2}, Ldefpackage/tk;->a(FFF)F
+    sget-object v8, Lhtu;->P:Lhum;
 
-    move-result v8
+    invoke-interface {v7, v8}, Lhuf;->c(Lhts;)Ljava/lang/Object;
 
-    invoke-interface {v5, v8}, Landroid/animation/TimeInterpolator;->getInterpolation(F)F
+    move-result-object v7
 
-    move-result v5
+    check-cast v7, Ljava/lang/Long;
 
-    sub-float v5, v7, v5
+    invoke-virtual {v7}, Ljava/lang/Long;->longValue()J
 
-    :goto_0
-    mul-float/2addr v5, v6
+    move-result-wide v9
 
-    invoke-static {v7, v5}, Ljava/lang/Math;->max(FF)F
+    cmp-long v7, v19, v9
 
-    move-result v5
+    if-eqz v7, :cond_1
 
-    .line 52
-    .local v5, "max":F
-    int-to-float v7, v0
+    .line 273
+    iget-object v7, v6, Ljsx;->d:Lhug;
 
-    const v8, 0x38d1b717    # 1.0E-4f
+    sget-object v9, Lhtu;->Q:Lhul;
 
-    mul-float/2addr v7, v8
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 53
-    .local v7, "f3":F
-    add-float v8, v7, v7
+    move-result-object v5
 
-    const/high16 v9, 0x43b40000    # 360.0f
+    invoke-interface {v7, v9, v5}, Lhug;->e(Lhts;Ljava/lang/Object;)V
 
-    mul-float/2addr v8, v9
+    .line 274
+    iget-object v5, v6, Ljsx;->d:Lhug;
 
-    const/high16 v9, 0x42b40000    # 90.0f
+    invoke-static/range {v19 .. v20}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    sub-float/2addr v8, v9
+    move-result-object v7
 
-    add-float/2addr v8, v3
+    invoke-interface {v5, v8, v7}, Lhug;->e(Lhts;Ljava/lang/Object;)V
 
-    iget-object v9, p0, Ldefpackage/tk;->d:Landroid/graphics/RectF;
-
-    invoke-virtual {v9}, Landroid/graphics/RectF;->centerX()F
-
-    move-result v9
-
-    iget-object v10, p0, Ldefpackage/tk;->d:Landroid/graphics/RectF;
-
-    invoke-virtual {v10}, Landroid/graphics/RectF;->centerY()F
-
-    move-result v10
-
-    invoke-virtual {p1, v8, v9, v10}, Landroid/graphics/Canvas;->rotate(FFF)V
-
-    .line 54
-    iget-object v9, p0, Ldefpackage/tk;->d:Landroid/graphics/RectF;
-
-    cmpg-float v4, v2, v4
-
-    if-gez v4, :cond_1
-
-    goto :goto_1
-
+    .line 276
     :cond_1
-    sub-float v1, v6, v5
+    iget-object v5, v6, Ljsx;->a:Lqkg;
 
-    :goto_1
-    move v10, v1
+    invoke-interface {v5}, Lqkg;->mo37get()Ljava/lang/Object;
 
-    const/4 v12, 0x0
+    move-result-object v5
 
-    iget-object v13, p0, Ldefpackage/tk;->e:Landroid/graphics/Paint;
+    check-cast v5, Ljsw;
 
-    move-object v8, p1
+    iget-object v7, v6, Ljsx;->b:Lqkg;
 
-    move v11, v5
+    invoke-interface {v7}, Lqkg;->mo37get()Ljava/lang/Object;
 
-    invoke-virtual/range {v8 .. v13}, Landroid/graphics/Canvas;->drawArc(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V
+    move-result-object v7
 
-    .line 55
-    invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
+    check-cast v7, Ljsv;
 
-    .line 56
-    return-void
-.end method
+    invoke-interface {v5, v7}, Ljsw;->e(Ljsv;)V
 
-.method public final getOpacity()I
-    .locals 1
+    .line 277
+    iget-object v5, v6, Ljsx;->f:Llar;
 
-    .line 60
-    const/4 v0, -0x1
+    iget-object v7, v6, Ljsx;->h:Lfhv;
 
-    return v0
-.end method
+    invoke-static {v5, v7, v6}, Lenl;->f(Llar;Lfhv;Lfik;)V
 
-.method public final onLevelChange(I)Z
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 65
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public final setAlpha(I)V
-    .locals 0
-    .param p1, "i"    # I
-
-    .line 70
-    return-void
-.end method
-
-.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
-    .locals 0
-    .param p1, "colorFilter"    # Landroid/graphics/ColorFilter;
-
-    .line 74
+    .line 278
     return-void
 .end method

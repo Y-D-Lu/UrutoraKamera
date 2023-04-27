@@ -22,11 +22,11 @@
 
 
 # instance fields
-.field public final b:Ldefpackage/mfn;
+.field public final b:Lmfn;
 
 .field public final c:Landroid/app/KeyguardManager;
 
-.field private final e:Ldefpackage/mfk;
+.field private final e:Lmfk;
 
 
 # direct methods
@@ -64,20 +64,20 @@
     iput-object v0, p0, Lcom/google/lens/sdk/LensApi;->c:Landroid/app/KeyguardManager;
 
     .line 90
-    new-instance v0, Ldefpackage/mfk;
+    new-instance v0, Lmfk;
 
-    invoke-direct {v0, p1}, Ldefpackage/mfk;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lmfk;-><init>(Landroid/content/Context;)V
 
     .line 91
-    .local v0, "mfkVar":Ldefpackage/mfk;
-    iput-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Ldefpackage/mfk;
+    .local v0, "mfkVar":Lmfk;
+    iput-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Lmfk;
 
     .line 92
-    new-instance v1, Ldefpackage/mfn;
+    new-instance v1, Lmfn;
 
-    invoke-direct {v1, p1, v0}, Ldefpackage/mfn;-><init>(Landroid/content/Context;Ldefpackage/mfk;)V
+    invoke-direct {v1, p1, v0}, Lmfn;-><init>(Landroid/content/Context;Lmfk;)V
 
-    iput-object v1, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iput-object v1, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 93
     return-void
@@ -178,11 +178,11 @@
     .param p1, "str"    # Ljava/lang/String;
 
     .line 118
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Ldefpackage/mfk;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Lmfk;
 
-    iget-object v0, v0, Ldefpackage/mfk;->g:Ldefpackage/mfx;
+    iget-object v0, v0, Lmfk;->g:Lmfx;
 
-    iget-object v0, v0, Ldefpackage/mfx;->c:Ljava/lang/String;
+    iget-object v0, v0, Lmfx;->c:Ljava/lang/String;
 
     .line 119
     .local v0, "str2":Ljava/lang/String;
@@ -290,79 +290,79 @@
 
 
 # virtual methods
-.method public final a()Ldefpackage/kcq;
+.method public final a()Lkcq;
     .locals 5
 
     .line 139
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 140
-    .local v0, "mfnVar":Ldefpackage/mfn;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    .local v0, "mfnVar":Lmfn;
+    invoke-static {}, Lmip;->F()V
 
     .line 141
-    iget-object v1, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v1, v0, Lmfn;->a:Lmfp;
 
-    invoke-interface {v1}, Ldefpackage/mfp;->f()Z
+    invoke-interface {v1}, Lmfp;->f()Z
 
     move-result v1
 
     const-string v2, "getLensCapabilities() called when Lens is not ready."
 
-    invoke-static {v1, v2}, Ldefpackage/mip;->G(ZLjava/lang/String;)V
+    invoke-static {v1, v2}, Lmip;->G(ZLjava/lang/String;)V
 
     .line 142
-    iget-object v1, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v1, v0, Lmfn;->a:Lmfp;
 
-    invoke-interface {v1}, Ldefpackage/mfp;->f()Z
+    invoke-interface {v1}, Lmfp;->f()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 143
-    sget-object v1, Ldefpackage/kcq;->c:Ldefpackage/kcq;
+    sget-object v1, Lkcq;->c:Lkcq;
 
     return-object v1
 
     .line 145
     :cond_0
-    iget-object v1, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v1, v0, Lmfn;->a:Lmfp;
 
     .line 146
-    .local v1, "mfpVar":Ldefpackage/mfp;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    .local v1, "mfpVar":Lmfp;
+    invoke-static {}, Lmip;->F()V
 
     .line 147
     move-object v2, v1
 
-    check-cast v2, Ldefpackage/mfv;
+    check-cast v2, Lmfv;
 
     .line 148
-    .local v2, "mfvVar":Ldefpackage/mfv;
-    invoke-virtual {v2}, Ldefpackage/mfv;->l()Z
+    .local v2, "mfvVar":Lmfv;
+    invoke-virtual {v2}, Lmfv;->l()Z
 
     move-result v3
 
     const-string v4, "Attempted to use LensCapabilities before ready."
 
-    invoke-static {v3, v4}, Ldefpackage/mip;->G(ZLjava/lang/String;)V
+    invoke-static {v3, v4}, Lmip;->G(ZLjava/lang/String;)V
 
     .line 149
-    iget-object v3, v2, Ldefpackage/mfv;->g:Ldefpackage/kcq;
+    iget-object v3, v2, Lmfv;->g:Lkcq;
 
     return-object v3
 .end method
 
-.method public final b(Landroid/graphics/Bitmap;Ldefpackage/pms;)V
+.method public final b(Landroid/graphics/Bitmap;Lpms;)V
     .locals 2
     .param p1, "bitmap"    # Landroid/graphics/Bitmap;
-    .param p2, "pmsVar"    # Ldefpackage/pms;
+    .param p2, "pmsVar"    # Lpms;
 
     .line 153
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
-    invoke-virtual {v0}, Ldefpackage/mfn;->e()I
+    invoke-virtual {v0}, Lmfn;->e()I
 
     move-result v0
 
@@ -375,20 +375,20 @@
 
     .line 156
     :cond_0
-    invoke-virtual {p2}, Ldefpackage/pms;->c()Ldefpackage/pmr;
+    invoke-virtual {p2}, Lpms;->c()Lpmr;
 
     move-result-object v0
 
     .line 157
-    .local v0, "c":Ldefpackage/pmr;
-    iput-object p1, v0, Ldefpackage/pmr;->b:Landroid/graphics/Bitmap;
+    .local v0, "c":Lpmr;
+    iput-object p1, v0, Lpmr;->b:Landroid/graphics/Bitmap;
 
     .line 158
-    invoke-virtual {v0}, Ldefpackage/pmr;->a()Ldefpackage/pms;
+    invoke-virtual {v0}, Lpmr;->a()Lpms;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/google/lens/sdk/LensApi;->e(Ldefpackage/pms;)V
+    invoke-virtual {p0, v1}, Lcom/google/lens/sdk/LensApi;->e(Lpms;)V
 
     .line 159
     return-void
@@ -403,9 +403,9 @@
     .line 162
     iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->c:Landroid/app/KeyguardManager;
 
-    new-instance v1, Ldefpackage/pmp;
+    new-instance v1, Lpmp;
 
-    invoke-direct {v1, p3, p2}, Ldefpackage/pmp;-><init>(Ljava/lang/Runnable;Lcom/google/lens/sdk/LensApi$LensLaunchStatusCallback;)V
+    invoke-direct {v1, p3, p2}, Lpmp;-><init>(Ljava/lang/Runnable;Lcom/google/lens/sdk/LensApi$LensLaunchStatusCallback;)V
 
     invoke-virtual {v0, p1, v1}, Landroid/app/KeyguardManager;->requestDismissKeyguard(Landroid/app/Activity;Landroid/app/KeyguardManager$KeyguardDismissCallback;)V
 
@@ -418,15 +418,15 @@
     .param p1, "lensAvailabilityCallback"    # Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;
 
     .line 166
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Ldefpackage/mfk;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Lmfk;
 
-    new-instance v1, Ldefpackage/pmq;
+    new-instance v1, Lpmq;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p1, v2}, Ldefpackage/pmq;-><init>(Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;I)V
+    invoke-direct {v1, p1, v2}, Lpmq;-><init>(Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;I)V
 
-    invoke-virtual {v0, v1}, Ldefpackage/mfk;->a(Ldefpackage/mfh;)V
+    invoke-virtual {v0, v1}, Lmfk;->a(Lmfh;)V
 
     .line 167
     return-void
@@ -459,15 +459,15 @@
 
     .line 174
     :cond_0
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Ldefpackage/mfk;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Lmfk;
 
-    new-instance v1, Ldefpackage/pmq;
+    new-instance v1, Lpmq;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p1, v2}, Ldefpackage/pmq;-><init>(Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;I)V
+    invoke-direct {v1, p1, v2}, Lpmq;-><init>(Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;I)V
 
-    invoke-virtual {v0, v1}, Ldefpackage/mfk;->a(Ldefpackage/mfh;)V
+    invoke-virtual {v0, v1}, Lmfk;->a(Lmfh;)V
 
     .line 176
     :goto_0
@@ -502,28 +502,28 @@
 
     .line 184
     :cond_0
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 185
-    .local v0, "mfnVar":Ldefpackage/mfn;
-    new-instance v1, Ldefpackage/pmk;
+    .local v0, "mfnVar":Lmfn;
+    new-instance v1, Lpmk;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p1, v2}, Ldefpackage/pmk;-><init>(Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;I)V
+    invoke-direct {v1, p1, v2}, Lpmk;-><init>(Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;I)V
 
     .line 186
-    .local v1, "pmkVar":Ldefpackage/pmk;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    .local v1, "pmkVar":Lpmk;
+    invoke-static {}, Lmip;->F()V
 
     .line 187
-    new-instance v2, Ldefpackage/mfl;
+    new-instance v2, Lmfl;
 
     const/4 v3, 0x2
 
-    invoke-direct {v2, v0, v1, v3}, Ldefpackage/mfl;-><init>(Ldefpackage/mfn;Ldefpackage/mfm;I)V
+    invoke-direct {v2, v0, v1, v3}, Lmfl;-><init>(Lmfn;Lmfm;I)V
 
-    invoke-virtual {v0, v2}, Ldefpackage/mfn;->d(Ldefpackage/mfm;)V
+    invoke-virtual {v0, v2}, Lmfn;->d(Lmfm;)V
 
     .line 188
     return-void
@@ -557,28 +557,28 @@
 
     .line 196
     :cond_0
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 197
-    .local v0, "mfnVar":Ldefpackage/mfn;
-    new-instance v1, Ldefpackage/pmk;
+    .local v0, "mfnVar":Lmfn;
+    new-instance v1, Lpmk;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p1, v2}, Ldefpackage/pmk;-><init>(Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;I)V
+    invoke-direct {v1, p1, v2}, Lpmk;-><init>(Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;I)V
 
     .line 198
-    .local v1, "pmkVar":Ldefpackage/pmk;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    .local v1, "pmkVar":Lpmk;
+    invoke-static {}, Lmip;->F()V
 
     .line 199
-    new-instance v2, Ldefpackage/mfl;
+    new-instance v2, Lmfl;
 
     const/4 v3, 0x1
 
-    invoke-direct {v2, v0, v1, v3}, Ldefpackage/mfl;-><init>(Ldefpackage/mfn;Ldefpackage/mfm;I)V
+    invoke-direct {v2, v0, v1, v3}, Lmfl;-><init>(Lmfn;Lmfm;I)V
 
-    invoke-virtual {v0, v2}, Ldefpackage/mfn;->d(Ldefpackage/mfm;)V
+    invoke-virtual {v0, v2}, Lmfn;->d(Lmfm;)V
 
     .line 200
     return-void
@@ -589,16 +589,16 @@
     .param p1, "activity"    # Landroid/app/Activity;
 
     .line 203
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 204
-    .local v0, "mfnVar":Ldefpackage/mfn;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    .local v0, "mfnVar":Lmfn;
+    invoke-static {}, Lmip;->F()V
 
     .line 205
-    iget-object v1, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v1, v0, Lmfn;->a:Lmfp;
 
-    invoke-interface {v1}, Ldefpackage/mfp;->f()Z
+    invoke-interface {v1}, Lmfp;->f()Z
 
     move-result v1
 
@@ -607,100 +607,100 @@
     if-eqz v1, :cond_1
 
     .line 206
-    sget-object v1, Ldefpackage/kcj;->c:Ldefpackage/kcj;
+    sget-object v1, Lkcj;->c:Lkcj;
 
-    invoke-virtual {v1}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v1}, Lppd;->m()Lpoy;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ppa;
+    check-cast v1, Lppa;
 
     .line 207
-    .local v1, "ppaVar":Ldefpackage/ppa;
-    iget-boolean v3, v1, Ldefpackage/poy;->c:Z
+    .local v1, "ppaVar":Lppa;
+    iget-boolean v3, v1, Lpoy;->c:Z
 
     if-eqz v3, :cond_0
 
     .line 208
-    invoke-virtual {v1}, Ldefpackage/ppa;->m()V
+    invoke-virtual {v1}, Lppa;->m()V
 
     .line 209
-    iput-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v1, Lpoy;->c:Z
 
     .line 211
     :cond_0
-    iget-object v3, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v3, v1, Lpoy;->b:Lppd;
 
-    check-cast v3, Ldefpackage/kcj;
+    check-cast v3, Lkcj;
 
     .line 212
-    .local v3, "kcjVar":Ldefpackage/kcj;
+    .local v3, "kcjVar":Lkcj;
     const/16 v4, 0x15b
 
-    iput v4, v3, Ldefpackage/kcj;->b:I
+    iput v4, v3, Lkcj;->b:I
 
     .line 213
-    iget v4, v3, Ldefpackage/kcj;->a:I
+    iget v4, v3, Lkcj;->a:I
 
     or-int/lit8 v4, v4, 0x1
 
-    iput v4, v3, Ldefpackage/kcj;->a:I
+    iput v4, v3, Lkcj;->a:I
 
     .line 214
-    invoke-virtual {v1}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    invoke-virtual {v1}, Lpoy;->j()Lppd;
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/kcj;
+    check-cast v4, Lkcj;
 
     .line 216
-    .local v4, "kcjVar2":Ldefpackage/kcj;
+    .local v4, "kcjVar2":Lkcj;
     :try_start_0
-    iget-object v5, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v5, v0, Lmfn;->a:Lmfp;
 
     .line 217
-    .local v5, "mfpVar":Ldefpackage/mfp;
-    invoke-virtual {v4}, Ldefpackage/pnm;->g()[B
+    .local v5, "mfpVar":Lmfp;
+    invoke-virtual {v4}, Lpnm;->g()[B
 
     move-result-object v6
 
     .line 218
     .local v6, "g":[B
-    invoke-static {}, Ldefpackage/mip;->F()V
+    invoke-static {}, Lmip;->F()V
 
     .line 219
     move-object v7, v5
 
-    check-cast v7, Ldefpackage/mfv;
+    check-cast v7, Lmfv;
 
-    invoke-virtual {v7}, Ldefpackage/mfv;->f()Z
+    invoke-virtual {v7}, Lmfv;->f()Z
 
     move-result v7
 
     const-string v8, "Attempted to use lensServiceSession before ready."
 
-    invoke-static {v7, v8}, Ldefpackage/mip;->G(ZLjava/lang/String;)V
+    invoke-static {v7, v8}, Lmip;->G(ZLjava/lang/String;)V
 
     .line 220
     move-object v7, v5
 
-    check-cast v7, Ldefpackage/mfv;
+    check-cast v7, Lmfv;
 
-    iget-object v7, v7, Ldefpackage/mfv;->j:Ldefpackage/kcd;
+    iget-object v7, v7, Lmfv;->j:Lkcd;
 
     .line 221
-    .local v7, "kcdVar":Ldefpackage/kcd;
-    invoke-static {v7}, Ldefpackage/mip;->H(Ljava/lang/Object;)V
+    .local v7, "kcdVar":Lkcd;
+    invoke-static {v7}, Lmip;->H(Ljava/lang/Object;)V
 
     .line 222
-    invoke-virtual {v7, v6}, Ldefpackage/kcd;->e([B)V
+    invoke-virtual {v7, v6}, Lkcd;->e([B)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 225
-    .end local v5    # "mfpVar":Ldefpackage/mfp;
+    .end local v5    # "mfpVar":Lmfp;
     .end local v6    # "g":[B
-    .end local v7    # "kcdVar":Ldefpackage/kcd;
+    .end local v7    # "kcdVar":Lkcd;
     goto :goto_0
 
     .line 223
@@ -716,9 +716,9 @@
     invoke-static {v6, v7, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 227
-    .end local v1    # "ppaVar":Ldefpackage/ppa;
-    .end local v3    # "kcjVar":Ldefpackage/kcj;
-    .end local v4    # "kcjVar2":Ldefpackage/kcj;
+    .end local v1    # "ppaVar":Lppa;
+    .end local v3    # "kcjVar":Lkcj;
+    .end local v4    # "kcjVar2":Lkcj;
     .end local v5    # "e":Ljava/lang/Exception;
     :cond_1
     :goto_0
@@ -744,34 +744,34 @@
     return-void
 .end method
 
-.method public final e(Ldefpackage/pms;)V
+.method public final e(Lpms;)V
     .locals 7
-    .param p1, "pmsVar"    # Ldefpackage/pms;
+    .param p1, "pmsVar"    # Lpms;
 
     .line 234
-    iget-object v0, p1, Ldefpackage/pms;->a:Landroid/net/Uri;
+    iget-object v0, p1, Lpms;->a:Landroid/net/Uri;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p1, Ldefpackage/pms;->b:Landroid/graphics/Bitmap;
+    iget-object v0, p1, Lpms;->b:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_1
 
     .line 235
     :cond_0
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 236
-    .local v0, "mfnVar":Ldefpackage/mfn;
-    invoke-virtual {v0}, Ldefpackage/mfn;->a()Ldefpackage/kcr;
+    .local v0, "mfnVar":Lmfn;
+    invoke-virtual {v0}, Lmfn;->a()Lkcr;
 
     move-result-object v1
 
-    invoke-virtual {p1, v1}, Ldefpackage/pms;->a(Ldefpackage/kcr;)Landroid/os/Bundle;
+    invoke-virtual {p1, v1}, Lpms;->a(Lkcr;)Landroid/os/Bundle;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/mfn;->c(Landroid/os/Bundle;)Z
+    invoke-virtual {v0, v1}, Lmfn;->c(Landroid/os/Bundle;)Z
 
     move-result v1
 
@@ -781,98 +781,98 @@
     return-void
 
     .line 240
-    .end local v0    # "mfnVar":Ldefpackage/mfn;
+    .end local v0    # "mfnVar":Lmfn;
     :cond_1
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 241
-    .local v0, "mfnVar2":Ldefpackage/mfn;
-    invoke-virtual {v0}, Ldefpackage/mfn;->a()Ldefpackage/kcr;
+    .local v0, "mfnVar2":Lmfn;
+    invoke-virtual {v0}, Lmfn;->a()Lkcr;
 
     .line 242
-    invoke-virtual {p1}, Ldefpackage/pms;->d()Landroid/os/Bundle;
+    invoke-virtual {p1}, Lpms;->d()Landroid/os/Bundle;
 
     move-result-object v1
 
     .line 243
     .local v1, "d2":Landroid/os/Bundle;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    invoke-static {}, Lmip;->F()V
 
     .line 244
-    iget-object v2, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v2, v0, Lmfn;->a:Lmfp;
 
-    invoke-interface {v2}, Ldefpackage/mfp;->f()Z
+    invoke-interface {v2}, Lmfp;->f()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
     .line 245
-    sget-object v2, Ldefpackage/kcj;->c:Ldefpackage/kcj;
+    sget-object v2, Lkcj;->c:Lkcj;
 
-    invoke-virtual {v2}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v2}, Lppd;->m()Lpoy;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/ppa;
+    check-cast v2, Lppa;
 
     .line 246
-    .local v2, "ppaVar":Ldefpackage/ppa;
-    iget-boolean v3, v2, Ldefpackage/poy;->c:Z
+    .local v2, "ppaVar":Lppa;
+    iget-boolean v3, v2, Lpoy;->c:Z
 
     if-eqz v3, :cond_2
 
     .line 247
-    invoke-virtual {v2}, Ldefpackage/ppa;->m()V
+    invoke-virtual {v2}, Lppa;->m()V
 
     .line 248
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, Ldefpackage/poy;->c:Z
+    iput-boolean v3, v2, Lpoy;->c:Z
 
     .line 250
     :cond_2
-    iget-object v3, v2, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v3, v2, Lpoy;->b:Lppd;
 
-    check-cast v3, Ldefpackage/kcj;
+    check-cast v3, Lkcj;
 
     .line 251
-    .local v3, "kcjVar":Ldefpackage/kcj;
+    .local v3, "kcjVar":Lkcj;
     const/16 v4, 0x163
 
-    iput v4, v3, Ldefpackage/kcj;->b:I
+    iput v4, v3, Lkcj;->b:I
 
     .line 252
-    iget v4, v3, Ldefpackage/kcj;->a:I
+    iget v4, v3, Lkcj;->a:I
 
     or-int/lit8 v4, v4, 0x1
 
-    iput v4, v3, Ldefpackage/kcj;->a:I
+    iput v4, v3, Lkcj;->a:I
 
     .line 254
     :try_start_0
-    iget-object v4, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v4, v0, Lmfn;->a:Lmfp;
 
-    invoke-virtual {v2}, Ldefpackage/poy;->j()Ldefpackage/ppd;
-
-    move-result-object v5
-
-    check-cast v5, Ldefpackage/kcj;
-
-    invoke-virtual {v5}, Ldefpackage/pnm;->g()[B
+    invoke-virtual {v2}, Lpoy;->j()Lppd;
 
     move-result-object v5
 
-    new-instance v6, Ldefpackage/kch;
+    check-cast v5, Lkcj;
 
-    invoke-direct {v6, v1}, Ldefpackage/kch;-><init>(Landroid/os/Parcelable;)V
+    invoke-virtual {v5}, Lpnm;->g()[B
 
-    invoke-interface {v4, v5, v6}, Ldefpackage/mfp;->c([BLdefpackage/kch;)V
+    move-result-object v5
+
+    new-instance v6, Lkch;
+
+    invoke-direct {v6, v1}, Lkch;-><init>(Landroid/os/Parcelable;)V
+
+    invoke-interface {v4, v5, v6}, Lmfp;->c([BLkch;)V
 
     .line 255
-    iget-object v4, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v4, v0, Lmfn;->a:Lmfp;
 
-    invoke-interface {v4}, Ldefpackage/mfp;->d()V
+    invoke-interface {v4}, Lmfp;->d()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -892,8 +892,8 @@
     invoke-static {v5, v6, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 261
-    .end local v2    # "ppaVar":Ldefpackage/ppa;
-    .end local v3    # "kcjVar":Ldefpackage/kcj;
+    .end local v2    # "ppaVar":Lppa;
+    .end local v3    # "kcjVar":Lkcj;
     .end local v4    # "e":Ljava/lang/Exception;
     :cond_3
     const-string v2, "LensApi"
@@ -910,11 +910,11 @@
     .locals 1
 
     .line 265
-    invoke-virtual {p0}, Lcom/google/lens/sdk/LensApi;->a()Ldefpackage/kcq;
+    invoke-virtual {p0}, Lcom/google/lens/sdk/LensApi;->a()Lkcq;
 
     move-result-object v0
 
-    iget v0, v0, Ldefpackage/kcq;->a:I
+    iget v0, v0, Lkcq;->a:I
 
     and-int/lit8 v0, v0, 0x2
 
@@ -931,10 +931,10 @@
     return v0
 .end method
 
-.method public final g(Landroid/graphics/Bitmap;Ldefpackage/pms;)Z
+.method public final g(Landroid/graphics/Bitmap;Lpms;)Z
     .locals 3
     .param p1, "bitmap"    # Landroid/graphics/Bitmap;
-    .param p2, "pmsVar"    # Ldefpackage/pms;
+    .param p2, "pmsVar"    # Lpms;
 
     .line 269
     const-string v0, "LensApi"
@@ -968,9 +968,9 @@
 
     .line 275
     :cond_1
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
-    invoke-virtual {v0}, Ldefpackage/mfn;->e()I
+    invoke-virtual {v0}, Lmfn;->e()I
 
     move-result v0
 
@@ -983,20 +983,20 @@
 
     .line 278
     :cond_2
-    invoke-virtual {p2}, Ldefpackage/pms;->c()Ldefpackage/pmr;
+    invoke-virtual {p2}, Lpms;->c()Lpmr;
 
     move-result-object v0
 
     .line 279
-    .local v0, "c":Ldefpackage/pmr;
-    iput-object p1, v0, Ldefpackage/pmr;->b:Landroid/graphics/Bitmap;
+    .local v0, "c":Lpmr;
+    iput-object p1, v0, Lpmr;->b:Landroid/graphics/Bitmap;
 
     .line 280
-    invoke-virtual {v0}, Ldefpackage/pmr;->a()Ldefpackage/pms;
+    invoke-virtual {v0}, Lpmr;->a()Lpms;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/google/lens/sdk/LensApi;->e(Ldefpackage/pms;)V
+    invoke-virtual {p0, v1}, Lcom/google/lens/sdk/LensApi;->e(Lpms;)V
 
     .line 281
     const/4 v1, 0x1
@@ -1004,15 +1004,15 @@
     return v1
 .end method
 
-.method public final h(Ldefpackage/pms;Lcom/google/lens/sdk/PendingIntentConsumer;)Z
+.method public final h(Lpms;Lcom/google/lens/sdk/PendingIntentConsumer;)Z
     .locals 10
-    .param p1, "pmsVar"    # Ldefpackage/pms;
+    .param p1, "pmsVar"    # Lpms;
     .param p2, "pendingIntentConsumer"    # Lcom/google/lens/sdk/PendingIntentConsumer;
 
     .line 286
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
-    invoke-virtual {v0}, Ldefpackage/mfn;->f()I
+    invoke-virtual {v0}, Lmfn;->f()I
 
     move-result v0
 
@@ -1027,109 +1027,109 @@
 
     .line 289
     :cond_0
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 290
-    .local v0, "mfnVar":Ldefpackage/mfn;
-    invoke-virtual {v0}, Ldefpackage/mfn;->a()Ldefpackage/kcr;
+    .local v0, "mfnVar":Lmfn;
+    invoke-virtual {v0}, Lmfn;->a()Lkcr;
 
     move-result-object v2
 
-    invoke-virtual {p1, v2}, Ldefpackage/pms;->a(Ldefpackage/kcr;)Landroid/os/Bundle;
+    invoke-virtual {p1, v2}, Lpms;->a(Lkcr;)Landroid/os/Bundle;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Ldefpackage/mfn;->c(Landroid/os/Bundle;)Z
+    invoke-virtual {v0, v2}, Lmfn;->c(Landroid/os/Bundle;)Z
 
     .line 291
-    iget-object v2, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v2, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 292
-    .local v2, "mfnVar2":Ldefpackage/mfn;
-    invoke-virtual {v2}, Ldefpackage/mfn;->a()Ldefpackage/kcr;
+    .local v2, "mfnVar2":Lmfn;
+    invoke-virtual {v2}, Lmfn;->a()Lkcr;
 
     .line 293
-    invoke-virtual {p1}, Ldefpackage/pms;->d()Landroid/os/Bundle;
+    invoke-virtual {p1}, Lpms;->d()Landroid/os/Bundle;
 
     move-result-object v3
 
     .line 294
     .local v3, "d2":Landroid/os/Bundle;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    invoke-static {}, Lmip;->F()V
 
     .line 295
-    iput-object p2, v2, Ldefpackage/mfn;->b:Lcom/google/lens/sdk/PendingIntentConsumer;
+    iput-object p2, v2, Lmfn;->b:Lcom/google/lens/sdk/PendingIntentConsumer;
 
     .line 296
-    iget-object v4, v2, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v4, v2, Lmfn;->a:Lmfp;
 
-    invoke-interface {v4}, Ldefpackage/mfp;->f()Z
+    invoke-interface {v4}, Lmfp;->f()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
     .line 297
-    sget-object v4, Ldefpackage/kcj;->c:Ldefpackage/kcj;
+    sget-object v4, Lkcj;->c:Lkcj;
 
-    invoke-virtual {v4}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v4}, Lppd;->m()Lpoy;
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/ppa;
+    check-cast v4, Lppa;
 
     .line 298
-    .local v4, "ppaVar":Ldefpackage/ppa;
-    iget-boolean v5, v4, Ldefpackage/poy;->c:Z
+    .local v4, "ppaVar":Lppa;
+    iget-boolean v5, v4, Lpoy;->c:Z
 
     if-eqz v5, :cond_1
 
     .line 299
-    invoke-virtual {v4}, Ldefpackage/ppa;->m()V
+    invoke-virtual {v4}, Lppa;->m()V
 
     .line 300
-    iput-boolean v1, v4, Ldefpackage/poy;->c:Z
+    iput-boolean v1, v4, Lpoy;->c:Z
 
     .line 302
     :cond_1
-    iget-object v5, v4, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v5, v4, Lpoy;->b:Lppd;
 
-    check-cast v5, Ldefpackage/kcj;
+    check-cast v5, Lkcj;
 
     .line 303
-    .local v5, "kcjVar":Ldefpackage/kcj;
+    .local v5, "kcjVar":Lkcj;
     const/16 v6, 0x19c
 
-    iput v6, v5, Ldefpackage/kcj;->b:I
+    iput v6, v5, Lkcj;->b:I
 
     .line 304
-    iget v6, v5, Ldefpackage/kcj;->a:I
+    iget v6, v5, Lkcj;->a:I
 
     const/4 v7, 0x1
 
     or-int/2addr v6, v7
 
-    iput v6, v5, Ldefpackage/kcj;->a:I
+    iput v6, v5, Lkcj;->a:I
 
     .line 306
     :try_start_0
-    iget-object v6, v2, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v6, v2, Lmfn;->a:Lmfp;
 
-    invoke-virtual {v4}, Ldefpackage/poy;->j()Ldefpackage/ppd;
-
-    move-result-object v8
-
-    check-cast v8, Ldefpackage/kcj;
-
-    invoke-virtual {v8}, Ldefpackage/pnm;->g()[B
+    invoke-virtual {v4}, Lpoy;->j()Lppd;
 
     move-result-object v8
 
-    new-instance v9, Ldefpackage/kch;
+    check-cast v8, Lkcj;
 
-    invoke-direct {v9, v3}, Ldefpackage/kch;-><init>(Landroid/os/Parcelable;)V
+    invoke-virtual {v8}, Lpnm;->g()[B
 
-    invoke-interface {v6, v8, v9}, Ldefpackage/mfp;->c([BLdefpackage/kch;)V
+    move-result-object v8
+
+    new-instance v9, Lkch;
+
+    invoke-direct {v9, v3}, Lkch;-><init>(Landroid/os/Parcelable;)V
+
+    invoke-interface {v6, v8, v9}, Lmfp;->c([BLkch;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1149,8 +1149,8 @@
     invoke-static {v7, v8, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 312
-    .end local v4    # "ppaVar":Ldefpackage/ppa;
-    .end local v5    # "kcjVar":Ldefpackage/kcj;
+    .end local v4    # "ppaVar":Lppa;
+    .end local v5    # "kcjVar":Lkcj;
     .end local v6    # "e":Ljava/lang/Exception;
     :cond_2
     const-string v4, "LensApi"
@@ -1170,11 +1170,11 @@
     .end annotation
 
     .line 318
-    new-instance v0, Ldefpackage/pmm;
+    new-instance v0, Lpmm;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, p0, p1, v1}, Ldefpackage/pmm;-><init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;I)V
+    invoke-direct {v0, p0, p1, v1}, Lpmm;-><init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;I)V
 
     const/4 v1, 0x0
 
@@ -1225,13 +1225,13 @@
     .line 328
     .end local v0    # "sb":Ljava/lang/StringBuilder;
     :pswitch_0
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Ldefpackage/mfk;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->e:Lmfk;
 
-    iget-object v0, v0, Ldefpackage/mfk;->g:Ldefpackage/mfx;
+    iget-object v0, v0, Lmfk;->g:Lmfx;
 
-    iget v0, v0, Ldefpackage/mfx;->e:I
+    iget v0, v0, Lmfx;->e:I
 
-    invoke-static {v0}, Ldefpackage/mip;->E(I)I
+    invoke-static {v0}, Lmip;->E(I)I
 
     move-result v0
 
@@ -1276,11 +1276,11 @@
     :pswitch_1
     const/4 v0, 0x0
 
-    new-instance v1, Ldefpackage/pmm;
+    new-instance v1, Lpmm;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, p1, v2}, Ldefpackage/pmm;-><init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;I)V
+    invoke-direct {v1, p0, p1, v2}, Lpmm;-><init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;I)V
 
     invoke-direct {p0, p1, v0, v1}, Lcom/google/lens/sdk/LensApi;->i(Landroid/app/Activity;Lcom/google/lens/sdk/LensApi$LensLaunchStatusCallback;Ljava/lang/Runnable;)V
 
@@ -1300,19 +1300,19 @@
     .param p2, "lensLaunchStatusCallback"    # Lcom/google/lens/sdk/LensApi$LensLaunchStatusCallback;
 
     .line 346
-    invoke-static {}, Ldefpackage/pms;->b()Ldefpackage/pmr;
+    invoke-static {}, Lpms;->b()Lpmr;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/pmr;->a()Ldefpackage/pms;
+    invoke-virtual {v0}, Lpmr;->a()Lpms;
 
     move-result-object v0
 
     .line 347
-    .local v0, "a2":Ldefpackage/pms;
+    .local v0, "a2":Lpms;
     new-instance v1, Lcom/google/lens/sdk/LensApi$1;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/google/lens/sdk/LensApi$1;-><init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;Ldefpackage/pms;)V
+    invoke-direct {v1, p0, p1, v0}, Lcom/google/lens/sdk/LensApi$1;-><init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;Lpms;)V
 
     invoke-direct {p0, p1, p2, v1}, Lcom/google/lens/sdk/LensApi;->i(Landroid/app/Activity;Lcom/google/lens/sdk/LensApi$LensLaunchStatusCallback;Ljava/lang/Runnable;)V
 
@@ -1353,24 +1353,24 @@
 
     .line 386
     .local v0, "elapsedRealtimeNanos":J
-    invoke-static {}, Ldefpackage/pms;->b()Ldefpackage/pmr;
+    invoke-static {}, Lpms;->b()Lpmr;
 
     move-result-object v2
 
     .line 387
-    .local v2, "b":Ldefpackage/pmr;
+    .local v2, "b":Lpmr;
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v3
 
-    iput-object v3, v2, Ldefpackage/pmr;->c:Ljava/lang/Long;
+    iput-object v3, v2, Lpmr;->c:Ljava/lang/Long;
 
     .line 388
-    invoke-virtual {v2}, Ldefpackage/pmr;->a()Ldefpackage/pms;
+    invoke-virtual {v2}, Lpmr;->a()Lpms;
 
     move-result-object v3
 
-    invoke-virtual {p0, p1, v3}, Lcom/google/lens/sdk/LensApi;->g(Landroid/graphics/Bitmap;Ldefpackage/pms;)Z
+    invoke-virtual {p0, p1, v3}, Lcom/google/lens/sdk/LensApi;->g(Landroid/graphics/Bitmap;Lpms;)Z
 
     move-result v3
 
@@ -1402,76 +1402,76 @@
 
     .line 396
     :cond_0
-    sget-object v0, Ldefpackage/pmh;->c:Ldefpackage/pmh;
+    sget-object v0, Lpmh;->c:Lpmh;
 
-    invoke-virtual {v0}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v0}, Lppd;->m()Lpoy;
 
     move-result-object v0
 
     .line 397
-    .local v0, "m":Ldefpackage/poy;
-    sget-object v2, Ldefpackage/pmg;->a:Ldefpackage/pmg;
+    .local v0, "m":Lpoy;
+    sget-object v2, Lpmg;->a:Lpmg;
 
     .line 398
-    .local v2, "pmgVar":Ldefpackage/pmg;
-    iget-boolean v3, v0, Ldefpackage/poy;->c:Z
+    .local v2, "pmgVar":Lpmg;
+    iget-boolean v3, v0, Lpoy;->c:Z
 
     if-eqz v3, :cond_1
 
     .line 399
-    invoke-virtual {v0}, Ldefpackage/poy;->m()V
+    invoke-virtual {v0}, Lpoy;->m()V
 
     .line 400
-    iput-boolean v1, v0, Ldefpackage/poy;->c:Z
+    iput-boolean v1, v0, Lpoy;->c:Z
 
     .line 402
     :cond_1
-    iget-object v1, v0, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v1, v0, Lpoy;->b:Lppd;
 
-    check-cast v1, Ldefpackage/pmh;
+    check-cast v1, Lpmh;
 
     .line 403
-    .local v1, "pmhVar":Ldefpackage/pmh;
+    .local v1, "pmhVar":Lpmh;
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 404
-    iput-object v2, v1, Ldefpackage/pmh;->b:Ljava/lang/Object;
+    iput-object v2, v1, Lpmh;->b:Ljava/lang/Object;
 
     .line 405
     const/4 v3, 0x2
 
-    iput v3, v1, Ldefpackage/pmh;->a:I
+    iput v3, v1, Lpmh;->a:I
 
     .line 406
-    invoke-static {}, Ldefpackage/pms;->b()Ldefpackage/pmr;
+    invoke-static {}, Lpms;->b()Lpmr;
 
     move-result-object v3
 
     .line 407
-    .local v3, "b":Ldefpackage/pmr;
+    .local v3, "b":Lpmr;
     const/4 v4, 0x5
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    iput-object v4, v3, Ldefpackage/pmr;->f:Ljava/lang/Integer;
+    iput-object v4, v3, Lpmr;->f:Ljava/lang/Integer;
 
     .line 408
-    invoke-virtual {v0}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    invoke-virtual {v0}, Lpoy;->j()Lppd;
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/pmh;
+    check-cast v4, Lpmh;
 
-    iput-object v4, v3, Ldefpackage/pmr;->d:Ldefpackage/pmh;
+    iput-object v4, v3, Lpmr;->d:Lpmh;
 
     .line 409
-    invoke-virtual {v3}, Ldefpackage/pmr;->a()Ldefpackage/pms;
+    invoke-virtual {v3}, Lpmr;->a()Lpms;
 
     move-result-object v4
 
-    invoke-virtual {p0, p1, v4}, Lcom/google/lens/sdk/LensApi;->g(Landroid/graphics/Bitmap;Ldefpackage/pms;)Z
+    invoke-virtual {p0, p1, v4}, Lcom/google/lens/sdk/LensApi;->g(Landroid/graphics/Bitmap;Lpms;)Z
 
     move-result v4
 
@@ -1482,27 +1482,27 @@
     .locals 12
 
     .line 415
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 416
-    .local v0, "mfnVar":Ldefpackage/mfn;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    .local v0, "mfnVar":Lmfn;
+    invoke-static {}, Lmip;->F()V
 
     .line 417
-    iget-object v1, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v1, v0, Lmfn;->a:Lmfp;
 
     .line 418
     .local v1, "r1":Ljava/lang/Object;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    invoke-static {}, Lmip;->F()V
 
     .line 419
     move-object v2, v1
 
-    check-cast v2, Ldefpackage/mfv;
+    check-cast v2, Lmfv;
 
     .line 420
-    .local v2, "mfvVar":Ldefpackage/mfv;
-    invoke-virtual {v2}, Ldefpackage/mfv;->l()Z
+    .local v2, "mfvVar":Lmfv;
+    invoke-virtual {v2}, Lmfv;->l()Z
 
     move-result v3
 
@@ -1515,78 +1515,78 @@
     if-eqz v3, :cond_1
 
     .line 421
-    sget-object v3, Ldefpackage/kcj;->c:Ldefpackage/kcj;
+    sget-object v3, Lkcj;->c:Lkcj;
 
-    invoke-virtual {v3}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v3}, Lppd;->m()Lpoy;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/ppa;
+    check-cast v3, Lppa;
 
     .line 422
-    .local v3, "ppaVar":Ldefpackage/ppa;
-    iget-boolean v7, v3, Ldefpackage/poy;->c:Z
+    .local v3, "ppaVar":Lppa;
+    iget-boolean v7, v3, Lpoy;->c:Z
 
     const/4 v8, 0x0
 
     if-eqz v7, :cond_0
 
     .line 423
-    invoke-virtual {v3}, Ldefpackage/ppa;->m()V
+    invoke-virtual {v3}, Lppa;->m()V
 
     .line 424
-    iput-boolean v8, v3, Ldefpackage/poy;->c:Z
+    iput-boolean v8, v3, Lpoy;->c:Z
 
     .line 426
     :cond_0
-    iget-object v7, v3, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v7, v3, Lpoy;->b:Lppd;
 
-    check-cast v7, Ldefpackage/kcj;
+    check-cast v7, Lkcj;
 
     .line 427
-    .local v7, "kcjVar":Ldefpackage/kcj;
+    .local v7, "kcjVar":Lkcj;
     const/16 v9, 0x159
 
-    iput v9, v7, Ldefpackage/kcj;->b:I
+    iput v9, v7, Lkcj;->b:I
 
     .line 428
-    iget v9, v7, Ldefpackage/kcj;->a:I
+    iget v9, v7, Lkcj;->a:I
 
     or-int/2addr v9, v5
 
-    iput v9, v7, Ldefpackage/kcj;->a:I
+    iput v9, v7, Lkcj;->a:I
 
     .line 429
-    invoke-virtual {v3}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    invoke-virtual {v3}, Lpoy;->j()Lppd;
 
     move-result-object v9
 
-    check-cast v9, Ldefpackage/kcj;
+    check-cast v9, Lkcj;
 
     .line 431
-    .local v9, "kcjVar2":Ldefpackage/kcj;
+    .local v9, "kcjVar2":Lkcj;
     :try_start_0
     move-object v10, v1
 
-    check-cast v10, Ldefpackage/mfv;
+    check-cast v10, Lmfv;
 
-    iget-object v10, v10, Ldefpackage/mfv;->j:Ldefpackage/kcd;
+    iget-object v10, v10, Lmfv;->j:Lkcd;
 
     .line 432
-    .local v10, "kcdVar":Ldefpackage/kcd;
-    invoke-static {v10}, Ldefpackage/mip;->H(Ljava/lang/Object;)V
+    .local v10, "kcdVar":Lkcd;
+    invoke-static {v10}, Lmip;->H(Ljava/lang/Object;)V
 
     .line 433
-    invoke-virtual {v9}, Ldefpackage/pnm;->g()[B
+    invoke-virtual {v9}, Lpnm;->g()[B
 
     move-result-object v11
 
-    invoke-virtual {v10, v11}, Ldefpackage/kcd;->e([B)V
+    invoke-virtual {v10, v11}, Lkcd;->e([B)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 436
-    .end local v10    # "kcdVar":Ldefpackage/kcd;
+    .end local v10    # "kcdVar":Lkcd;
     goto :goto_0
 
     .line 434
@@ -1602,23 +1602,23 @@
     .line 437
     .end local v10    # "e":Ljava/lang/Exception;
     :goto_0
-    iput-object v6, v2, Ldefpackage/mfv;->j:Ldefpackage/kcd;
+    iput-object v6, v2, Lmfv;->j:Lkcd;
 
     .line 438
-    iput v8, v2, Ldefpackage/mfv;->e:I
+    iput v8, v2, Lmfv;->e:I
 
     .line 439
-    iput-object v6, v2, Ldefpackage/mfv;->f:Ldefpackage/kcr;
+    iput-object v6, v2, Lmfv;->f:Lkcr;
 
     .line 440
-    iput-object v6, v2, Ldefpackage/mfv;->g:Ldefpackage/kcq;
+    iput-object v6, v2, Lmfv;->g:Lkcq;
 
     .line 442
-    .end local v3    # "ppaVar":Ldefpackage/ppa;
-    .end local v7    # "kcjVar":Ldefpackage/kcj;
-    .end local v9    # "kcjVar2":Ldefpackage/kcj;
+    .end local v3    # "ppaVar":Lppa;
+    .end local v7    # "kcjVar":Lkcj;
+    .end local v9    # "kcjVar2":Lkcj;
     :cond_1
-    invoke-virtual {v2}, Ldefpackage/mfv;->k()Z
+    invoke-virtual {v2}, Lmfv;->k()Z
 
     move-result v3
 
@@ -1628,9 +1628,9 @@
     :try_start_1
     move-object v3, v1
 
-    check-cast v3, Ldefpackage/mfv;
+    check-cast v3, Lmfv;
 
-    iget-object v3, v3, Ldefpackage/mfv;->b:Landroid/content/Context;
+    iget-object v3, v3, Lmfv;->b:Landroid/content/Context;
 
     move-object v7, v1
 
@@ -1656,17 +1656,17 @@
     .line 448
     .end local v3    # "e2":Ljava/lang/IllegalArgumentException;
     :goto_1
-    iput-object v6, v2, Ldefpackage/mfv;->i:Ldefpackage/kcc;
+    iput-object v6, v2, Lmfv;->i:Lkcc;
 
     .line 450
     :cond_2
-    iput v5, v2, Ldefpackage/mfv;->h:I
+    iput v5, v2, Lmfv;->h:I
 
     .line 451
-    invoke-virtual {v2, v5}, Ldefpackage/mfv;->i(I)V
+    invoke-virtual {v2, v5}, Lmfv;->i(I)V
 
     .line 452
-    iput-object v6, v0, Ldefpackage/mfn;->b:Lcom/google/lens/sdk/PendingIntentConsumer;
+    iput-object v6, v0, Lmfn;->b:Lcom/google/lens/sdk/PendingIntentConsumer;
 
     .line 453
     return-void
@@ -1676,18 +1676,18 @@
     .locals 2
 
     .line 456
-    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v0, p0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 457
-    .local v0, "mfnVar":Ldefpackage/mfn;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    .local v0, "mfnVar":Lmfn;
+    invoke-static {}, Lmip;->F()V
 
     .line 458
-    iget-object v1, v0, Ldefpackage/mfn;->a:Ldefpackage/mfp;
+    iget-object v1, v0, Lmfn;->a:Lmfp;
 
-    check-cast v1, Ldefpackage/mfv;
+    check-cast v1, Lmfv;
 
-    invoke-virtual {v1}, Ldefpackage/mfv;->m()V
+    invoke-virtual {v1}, Lmfv;->m()V
 
     .line 459
     return-void
@@ -1698,15 +1698,15 @@
     .param p1, "pendingIntentConsumer"    # Lcom/google/lens/sdk/PendingIntentConsumer;
 
     .line 462
-    invoke-static {}, Ldefpackage/pms;->b()Ldefpackage/pmr;
+    invoke-static {}, Lpms;->b()Lpmr;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/pmr;->a()Ldefpackage/pms;
+    invoke-virtual {v0}, Lpmr;->a()Lpms;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0, p1}, Lcom/google/lens/sdk/LensApi;->h(Ldefpackage/pms;Lcom/google/lens/sdk/PendingIntentConsumer;)Z
+    invoke-virtual {p0, v0, p1}, Lcom/google/lens/sdk/LensApi;->h(Lpms;Lcom/google/lens/sdk/PendingIntentConsumer;)Z
 
     move-result v0
 
@@ -1719,20 +1719,20 @@
     .param p2, "pendingIntentConsumer"    # Lcom/google/lens/sdk/PendingIntentConsumer;
 
     .line 466
-    invoke-static {}, Ldefpackage/pms;->b()Ldefpackage/pmr;
+    invoke-static {}, Lpms;->b()Lpmr;
 
     move-result-object v0
 
     .line 467
-    .local v0, "b":Ldefpackage/pmr;
-    iput-object p1, v0, Ldefpackage/pmr;->b:Landroid/graphics/Bitmap;
+    .local v0, "b":Lpmr;
+    iput-object p1, v0, Lpmr;->b:Landroid/graphics/Bitmap;
 
     .line 468
-    invoke-virtual {v0}, Ldefpackage/pmr;->a()Ldefpackage/pms;
+    invoke-virtual {v0}, Lpmr;->a()Lpms;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1, p2}, Lcom/google/lens/sdk/LensApi;->h(Ldefpackage/pms;Lcom/google/lens/sdk/PendingIntentConsumer;)Z
+    invoke-virtual {p0, v1, p2}, Lcom/google/lens/sdk/LensApi;->h(Lpms;Lcom/google/lens/sdk/PendingIntentConsumer;)Z
 
     move-result v1
 
@@ -1757,20 +1757,20 @@
 
     .line 475
     :cond_0
-    invoke-static {}, Ldefpackage/pms;->b()Ldefpackage/pmr;
+    invoke-static {}, Lpms;->b()Lpmr;
 
     move-result-object v0
 
     .line 476
-    .local v0, "b":Ldefpackage/pmr;
-    iput-object p2, v0, Ldefpackage/pmr;->a:Landroid/net/Uri;
+    .local v0, "b":Lpmr;
+    iput-object p2, v0, Lpmr;->a:Landroid/net/Uri;
 
     .line 477
-    invoke-virtual {v0}, Ldefpackage/pmr;->a()Ldefpackage/pms;
+    invoke-virtual {v0}, Lpmr;->a()Lpms;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1, p3}, Lcom/google/lens/sdk/LensApi;->h(Ldefpackage/pms;Lcom/google/lens/sdk/PendingIntentConsumer;)Z
+    invoke-virtual {p0, v1, p3}, Lcom/google/lens/sdk/LensApi;->h(Lpms;Lcom/google/lens/sdk/PendingIntentConsumer;)Z
 
     move-result v1
 

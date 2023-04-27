@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/oiu;
+.implements Loiu;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;->d()Ldefpackage/pht;
+    value = Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;->d()Lpht;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,18 +20,18 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;
 
-.field public final synthetic val$b:Ldefpackage/hub;
+.field public final synthetic val$b:Lhub;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;Ldefpackage/hub;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;Lhub;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;
 
     .line 81
     iput-object p1, p0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService$3;->this$0:Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService$3;->val$b:Ldefpackage/hub;
+    iput-object p2, p0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService$3;->val$b:Lhub;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,10 +45,10 @@
     .param p1, "obj"    # Ljava/lang/Object;
 
     .line 84
-    iget-object v0, p0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService$3;->val$b:Ldefpackage/hub;
+    iget-object v0, p0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService$3;->val$b:Lhub;
 
     .line 85
-    .local v0, "hubVar":Ldefpackage/hub;
+    .local v0, "hubVar":Lhub;
     move-object v1, p1
 
     check-cast v1, Ljava/util/Map;
@@ -153,7 +153,7 @@
     :cond_1
     const-string v6, "pref_camera_beholder_example_percent_key"
 
-    invoke-virtual {v0, v6, v4, v5}, Ldefpackage/hub;->j(Ljava/lang/String;J)V
+    invoke-virtual {v0, v6, v4, v5}, Lhub;->j(Ljava/lang/String;J)V
 
     .line 100
     const/4 v6, 0x1

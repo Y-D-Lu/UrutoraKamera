@@ -23,7 +23,7 @@
     .locals 4
 
     .line 41
-    invoke-static {}, Ldefpackage/jrl;->values()[Ldefpackage/jrl;
+    invoke-static {}, Ljrl;->values()[Ljrl;
 
     move-result-object v0
 
@@ -37,7 +37,7 @@
 
     .line 44
     :try_start_0
-    sget-object v1, Ldefpackage/jrl;->PHOTO:Ldefpackage/jrl;
+    sget-object v1, Ljrl;->PHOTO:Ljrl;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -61,7 +61,7 @@
     :try_start_1
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->PORTRAIT:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->PORTRAIT:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -85,7 +85,7 @@
     :try_start_2
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->MOTION_BLUR:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->MOTION_BLUR:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -109,7 +109,7 @@
     :try_start_3
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->LONG_EXPOSURE:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->LONG_EXPOSURE:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -133,7 +133,7 @@
     :try_start_4
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->TIME_LAPSE:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->TIME_LAPSE:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -157,7 +157,7 @@
     :try_start_5
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->VIDEO:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->VIDEO:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -181,7 +181,7 @@
     :try_start_6
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->SLOW_MOTION:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->SLOW_MOTION:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -205,7 +205,7 @@
     :try_start_7
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->PHOTO_SPHERE:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->PHOTO_SPHERE:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -229,7 +229,7 @@
     :try_start_8
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->IMAX:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->IMAX:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -253,7 +253,7 @@
     :try_start_9
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->REWIND:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->REWIND:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -277,7 +277,7 @@
     :try_start_a
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->IMAGE_INTENT:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->IMAGE_INTENT:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -301,7 +301,7 @@
     :try_start_b
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->VIDEO_INTENT:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->VIDEO_INTENT:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -325,7 +325,7 @@
     :try_start_c
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->MORE_MODES:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->MORE_MODES:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -349,7 +349,7 @@
     :try_start_d
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->LENS:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->LENS:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -373,7 +373,7 @@
     :try_start_e
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->UNINITIALIZED:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -397,7 +397,7 @@
     :try_start_f
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->SETTINGS:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->SETTINGS:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -421,7 +421,7 @@
     :try_start_10
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->ORNAMENT:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->ORNAMENT:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -445,7 +445,7 @@
     :try_start_11
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->MEASURE:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->MEASURE:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -469,7 +469,7 @@
     :try_start_12
     sget-object v1, Lcom/google/android/apps/camera/bottombar/BottomBarController$AnonymousClass2;->$SwitchMap$com$google$android$apps$camera$uistate$api$ApplicationMode:[I
 
-    sget-object v2, Ldefpackage/jrl;->TIARA:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->TIARA:Ljrl;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 

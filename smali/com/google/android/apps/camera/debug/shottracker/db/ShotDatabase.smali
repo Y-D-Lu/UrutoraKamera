@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;
-.super Ldefpackage/aii;
+.super Laii;
 .source ""
 
 
@@ -8,15 +8,15 @@
     .locals 0
 
     .line 8
-    invoke-direct {p0}, Ldefpackage/aii;-><init>()V
+    invoke-direct {p0}, Laii;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract r()Ldefpackage/dil;
+.method public abstract r()Ldil;
 .end method
 
-.method public abstract s()Ldefpackage/diu;
+.method public abstract s()Ldiu;
 .end method

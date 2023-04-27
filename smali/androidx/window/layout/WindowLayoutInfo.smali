@@ -51,7 +51,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -66,7 +66,7 @@
 
     iget-object v1, v1, Landroidx/window/layout/WindowLayoutInfo;->displayFeatures:Ljava/util/List;
 
-    invoke-static {v0, v1}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -117,7 +117,7 @@
 
     const/16 v5, 0x38
 
-    invoke-static/range {v0 .. v5}, Ldefpackage/qmd;->D(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ldefpackage/qmu;I)Ljava/lang/String;
+    invoke-static/range {v0 .. v5}, Lqmd;->D(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lqmu;I)Ljava/lang/String;
 
     move-result-object v0
 

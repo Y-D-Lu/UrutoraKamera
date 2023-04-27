@@ -15,7 +15,7 @@
 
 
 # static fields
-.field private static final b:Ldefpackage/ouj;
+.field private static final b:Louj;
 
 
 # instance fields
@@ -29,11 +29,11 @@
     .line 40
     const-string v0, "com/google/android/apps/camera/ui/views/ToggleUi$ToggleButton"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi$ToggleButton;->b:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi$ToggleButton;->b:Louj;
 
     return-void
 .end method
@@ -107,9 +107,9 @@
 
     .line 65
     :cond_0
-    sget-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi$ToggleButton;->b:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi$ToggleButton;->b:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -117,7 +117,7 @@
 
     const/16 v1, 0xd8b
 
-    invoke-interface {v0, v1}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v0, v1}, Lova;->G(I)Lova;
 
     move-result-object v0
 
@@ -129,7 +129,7 @@
 
     const-string v2, "setScaleX ignored %s"
 
-    invoke-interface {v0, v2, v1}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v0, v2, v1}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 66
     return-void
@@ -152,9 +152,9 @@
 
     .line 74
     :cond_0
-    sget-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi$ToggleButton;->b:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi$ToggleButton;->b:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -162,7 +162,7 @@
 
     const/16 v1, 0xd8c
 
-    invoke-interface {v0, v1}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v0, v1}, Lova;->G(I)Lova;
 
     move-result-object v0
 
@@ -174,7 +174,7 @@
 
     const-string v2, "setScaleY ignored %s"
 
-    invoke-interface {v0, v2, v1}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v0, v2, v1}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 75
     return-void

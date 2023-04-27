@@ -1,97 +1,70 @@
-.class public final Ldefpackage/tq;
-.super Landroid/service/wallpaper/WallpaperService$Engine;
+.class public Ldefpackage/Tq;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Uq;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$1:Ldefpackage/Uq;
 
 
 # direct methods
-.method public constructor <init>(Landroid/service/wallpaper/WallpaperService;)V
+.method public constructor <init>(Ldefpackage/Uq;)V
     .locals 0
-    .param p1, "wps"    # Landroid/service/wallpaper/WallpaperService;
+    .param p1, "this$1"    # Ldefpackage/Uq;
 
-    .line 12
-    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 20392
+    iput-object p1, p0, Ldefpackage/Tq;->this$1:Ldefpackage/Uq;
 
-    invoke-direct {p0, p1}, Landroid/service/wallpaper/WallpaperService$Engine;-><init>(Landroid/service/wallpaper/WallpaperService;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final isInAmbientMode()Z
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 16
-    const/4 v0, 0x0
+    .line 20395
+    move-object v0, p1
 
-    throw v0
+    check-cast v0, Landroid/animation/Animator;
+
+    .line 20396
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Tq;->this$1:Ldefpackage/Uq;
+
+    iget-object v1, v1, Ldefpackage/Uq;->this$0:Ljkz;
+
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
+
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
+
+    .line 20397
+    return-void
 .end method
 
-.method public final onCommand(Ljava/lang/String;IIILandroid/os/Bundle;Z)Landroid/os/Bundle;
-    .locals 1
-    .param p1, "str"    # Ljava/lang/String;
-    .param p2, "i"    # I
-    .param p3, "i2"    # I
-    .param p4, "i3"    # I
-    .param p5, "bundle"    # Landroid/os/Bundle;
-    .param p6, "z"    # Z
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 21
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final onCreate(Landroid/view/SurfaceHolder;)V
-    .locals 1
-    .param p1, "surfaceHolder"    # Landroid/view/SurfaceHolder;
-
-    .line 26
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final onDestroy()V
-    .locals 1
-
-    .line 31
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final onTouchEvent(Landroid/view/MotionEvent;)V
-    .locals 1
-    .param p1, "motionEvent"    # Landroid/view/MotionEvent;
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 37
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final onVisibilityChanged(Z)V
-    .locals 1
-    .param p1, "z"    # Z
-
-    .line 42
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final setTouchEventsEnabled(Z)V
-    .locals 1
-    .param p1, "z"    # Z
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 48
-    const/4 v0, 0x0
-
-    throw v0
+    .line 20401
+    return-object p1
 .end method

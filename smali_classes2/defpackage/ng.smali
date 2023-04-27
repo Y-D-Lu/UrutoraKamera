@@ -1,70 +1,73 @@
-.class final Ldefpackage/ng;
-.super Ldefpackage/ot;
+.class public Ldefpackage/Ng;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhnf;->f()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/nn;
+.field public final synthetic this$0:Lhnf;
 
-.field public final b:Ldefpackage/nq;
+.field public final synthetic val$rewindThumbnailScrollView:Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/nq;Landroid/view/View;Ldefpackage/nn;)V
+.method public constructor <init>(Lhnf;Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;)V
     .locals 0
-    .param p1, "nqVar"    # Ldefpackage/nq;
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "nnVar"    # Ldefpackage/nn;
+    .param p1, "this$0"    # Lhnf;
 
-    .line 13
-    invoke-direct {p0, p2}, Ldefpackage/ot;-><init>(Landroid/view/View;)V
+    .line 241
+    iput-object p1, p0, Ldefpackage/Ng;->this$0:Lhnf;
 
-    .line 14
-    iput-object p1, p0, Ldefpackage/ng;->b:Ldefpackage/nq;
+    iput-object p2, p0, Ldefpackage/Ng;->val$rewindThumbnailScrollView:Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;
 
-    .line 15
-    iput-object p3, p0, Ldefpackage/ng;->a:Ldefpackage/nn;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ldefpackage/lo;
-    .locals 1
+.method public final run()V
+    .locals 3
 
-    .line 20
-    iget-object v0, p0, Ldefpackage/ng;->a:Ldefpackage/nn;
+    .line 244
+    iget-object v0, p0, Ldefpackage/Ng;->val$rewindThumbnailScrollView:Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;
 
-    return-object v0
-.end method
+    .line 245
+    .local v0, "rewindThumbnailScrollView2":Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;
+    iget-object v1, v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->f:Landroid/animation/ObjectAnimator;
 
-.method public final b()Z
-    .locals 2
+    .line 246
+    .local v1, "objectAnimator":Landroid/animation/ObjectAnimator;
+    if-eqz v1, :cond_0
 
-    .line 25
-    iget-object v0, p0, Ldefpackage/ng;->b:Ldefpackage/nq;
+    .line 247
+    invoke-virtual {v1}, Landroid/animation/ObjectAnimator;->end()V
 
-    iget-object v0, v0, Ldefpackage/nq;->b:Ldefpackage/np;
+    .line 248
+    const/4 v2, 0x0
 
-    invoke-interface {v0}, Ldefpackage/np;->u()Z
+    iput-object v2, v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->f:Landroid/animation/ObjectAnimator;
 
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-nez v0, :cond_0
-
-    .line 26
-    iget-object v0, p0, Ldefpackage/ng;->b:Ldefpackage/nq;
-
-    invoke-virtual {v0}, Ldefpackage/nq;->b()V
-
-    .line 27
-    return v1
-
-    .line 29
+    .line 250
     :cond_0
-    return v1
+    iget v2, v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->e:I
+
+    invoke-virtual {v0, v2}, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->f(I)V
+
+    .line 251
+    return-void
 .end method

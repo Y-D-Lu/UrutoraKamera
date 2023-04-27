@@ -1,55 +1,94 @@
-.class public final Ldefpackage/fj;
+.class public Ldefpackage/Fj;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lilq;->e(Lilv;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:Landroid/view/ContentInfo;
+.field public final a:Lilq;
+
+.field public final synthetic this$0:Lilq;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ContentInfo;)V
+.method public constructor <init>(Lilq;)V
     .locals 0
-    .param p1, "contentInfo"    # Landroid/view/ContentInfo;
+    .param p1, "this$0"    # Lilq;
 
-    .line 10
+    .line 88
+    iput-object p1, p0, Ldefpackage/Fj;->this$0:Lilq;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
-    invoke-static {p1}, Ldefpackage/ew;->c(Ljava/lang/Object;)V
+    .line 89
+    iput-object p1, p0, Ldefpackage/Fj;->a:Lilq;
 
-    .line 12
-    iput-object p1, p0, Ldefpackage/fj;->a:Landroid/view/ContentInfo;
-
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public final run()V
+    .locals 4
 
-    .line 16
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 93
+    const/4 v0, -0x1
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    packed-switch v0, :pswitch_data_0
 
-    const-string v1, "ContentInfoCompat{"
+    .line 100
+    iget-object v0, p0, Ldefpackage/Fj;->a:Lilq;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v1, 0x1
 
-    iget-object v1, p0, Ldefpackage/fj;->a:Landroid/view/ContentInfo;
+    iput-boolean v1, v0, Lilq;->f:Z
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 101
+    return-void
 
-    const-string v1, "}"
+    .line 95
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Fj;->a:Lilq;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 96
+    .local v0, "ilqVar":Lilq;
+    iget-object v1, v0, Lilq;->d:Lfjs;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x3
 
-    move-result-object v0
+    invoke-interface {v1, v2}, Lfjs;->ag(I)V
 
-    return-object v0
+    .line 97
+    iget-object v1, v0, Lilq;->c:Lhnx;
+
+    iget-object v2, v0, Lilq;->b:Landroid/content/Context;
+
+    iget-object v3, v0, Lilq;->e:Lddf;
+
+    invoke-static {v2, v3}, Lilk;->a(Landroid/content/Context;Lddf;)Landroid/content/Intent;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Lhnx;->g(Landroid/content/Intent;)V
+
+    .line 98
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

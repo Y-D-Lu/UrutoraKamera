@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
-.super Ldefpackage/aae;
+.super Laae;
 .source ""
 
 
@@ -16,7 +16,7 @@
     .locals 1
 
     .line 22
-    invoke-direct {p0}, Ldefpackage/aae;-><init>()V
+    invoke-direct {p0}, Laae;-><init>()V
 
     .line 23
     const/4 v0, 0x0
@@ -38,7 +38,7 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 28
-    invoke-direct {p0, p1, p2}, Ldefpackage/aae;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Laae;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 29
     const/4 v0, 0x0
@@ -80,9 +80,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/nxi;
+    new-instance v1, Lnxi;
 
-    invoke-direct {v1, p0}, Ldefpackage/nxi;-><init>(Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;)V
+    invoke-direct {v1, p0}, Lnxi;-><init>(Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;)V
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
@@ -170,7 +170,7 @@
 
     const-wide/16 v5, 0xaf
 
-    sget-object v7, Ldefpackage/nwj;->c:Landroid/animation/TimeInterpolator;
+    sget-object v7, Lnwj;->c:Landroid/animation/TimeInterpolator;
 
     move-object v2, p0
 
@@ -216,7 +216,7 @@
 
     const-wide/16 v5, 0xe1
 
-    sget-object v7, Ldefpackage/nwj;->d:Landroid/animation/TimeInterpolator;
+    sget-object v7, Lnwj;->d:Landroid/animation/TimeInterpolator;
 
     move-object v2, p0
 

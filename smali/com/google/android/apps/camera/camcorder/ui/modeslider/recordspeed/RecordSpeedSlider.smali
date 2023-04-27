@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jen;
+.implements Ljen;
 
 
 # instance fields
@@ -11,11 +11,11 @@
 
 .field public final b:I
 
-.field public c:Ldefpackage/ols;
+.field public c:Lols;
 
-.field public d:Ldefpackage/jem;
+.field public d:Ljem;
 
-.field public e:Ldefpackage/ddf;
+.field public e:Lddf;
 
 .field public f:I
 
@@ -43,11 +43,11 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 38
-    invoke-static {}, Ldefpackage/ols;->r()Ldefpackage/ols;
+    invoke-static {}, Lols;->r()Lols;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->c:Ldefpackage/ols;
+    iput-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->c:Lols;
 
     .line 39
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
@@ -260,18 +260,18 @@
     if-eqz v4, :cond_1
 
     .line 91
-    iget-object v6, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Ldefpackage/ddf;
+    iget-object v6, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Lddf;
 
-    sget-object v7, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v7, Lddl;->ay:Lddg;
 
-    invoke-interface {v6, v7}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v6, v7}, Lddf;->k(Lddg;)Z
 
     move-result v6
 
     if-eqz v6, :cond_0
 
     .line 92
-    invoke-static {v1, v5}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v5}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v6
 
@@ -280,7 +280,7 @@
     .line 93
     const v6, 0x7f04010a
 
-    invoke-static {v1, v6}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v6}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v6
 
@@ -335,18 +335,18 @@
 
     .line 103
     .local v6, "drawable":Landroid/graphics/drawable/Drawable;
-    iget-object v7, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Ldefpackage/ddf;
+    iget-object v7, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Lddf;
 
-    sget-object v8, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v8, Lddl;->ay:Lddg;
 
-    invoke-interface {v7, v8}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v7, v8}, Lddf;->k(Lddg;)Z
 
     move-result v7
 
     if-eqz v7, :cond_2
 
     .line 104
-    invoke-static {v1, v5}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v5}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v5
 
@@ -398,11 +398,11 @@
 
     .line 113
     :cond_3
-    iget-object v3, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Ldefpackage/ddf;
+    iget-object v3, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Lddf;
 
-    sget-object v6, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v6, Lddl;->ay:Lddg;
 
-    invoke-interface {v3, v6}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v3, v6}, Lddf;->k(Lddg;)Z
 
     move-result v3
 
@@ -415,7 +415,7 @@
 
     aget-object v2, v3, v2
 
-    invoke-static {v1, v5}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v5}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v3
 
@@ -435,11 +435,11 @@
 
     .line 117
     :cond_5
-    iget-object v4, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Ldefpackage/ddf;
+    iget-object v4, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Lddf;
 
-    sget-object v5, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v5, Lddl;->ay:Lddg;
 
-    invoke-interface {v4, v5}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v4, v5}, Lddf;->k(Lddg;)Z
 
     move-result v4
 
@@ -448,7 +448,7 @@
     if-eqz v4, :cond_6
 
     .line 118
-    invoke-static {v1, v6}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v6}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v4
 
@@ -484,9 +484,9 @@
 
     .line 127
     :cond_7
-    iget-object v3, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Ldefpackage/ddf;
+    iget-object v3, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->e:Lddf;
 
-    invoke-interface {v3, v5}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v3, v5}, Lddf;->k(Lddg;)Z
 
     move-result v3
 
@@ -499,7 +499,7 @@
 
     aget-object v2, v3, v2
 
-    invoke-static {v1, v6}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v6}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v3
 
@@ -527,10 +527,10 @@
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
 
     .line 133
-    iget-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->d:Ldefpackage/jem;
+    iget-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->d:Ljem;
 
     .line 134
-    .local v0, "jemVar":Ldefpackage/jem;
+    .local v0, "jemVar":Ljem;
     if-nez v0, :cond_a
 
     .line 135
@@ -541,13 +541,13 @@
     if-nez p2, :cond_b
 
     .line 138
-    invoke-interface {v0, v2}, Ldefpackage/jem;->c(Z)V
+    invoke-interface {v0, v2}, Ljem;->c(Z)V
 
     .line 140
     :cond_b
-    iget-object v1, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->d:Ldefpackage/jem;
+    iget-object v1, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->d:Ljem;
 
-    invoke-interface {v1, p0, p1, p2}, Ldefpackage/jem;->a(Landroid/view/View;IZ)V
+    invoke-interface {v1, p0, p1, p2}, Ljem;->a(Landroid/view/View;IZ)V
 
     .line 141
     if-eqz p2, :cond_c
@@ -557,12 +557,12 @@
 
     .line 144
     :cond_c
-    iget-object v1, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->d:Ldefpackage/jem;
+    iget-object v1, p0, Lcom/google/android/apps/camera/camcorder/ui/modeslider/recordspeed/RecordSpeedSlider;->d:Ljem;
 
-    invoke-interface {v1, p0, v2}, Ldefpackage/jem;->b(Landroid/view/View;Z)V
+    invoke-interface {v1, p0, v2}, Ljem;->b(Landroid/view/View;Z)V
 
     .line 146
-    .end local v0    # "jemVar":Ldefpackage/jem;
+    .end local v0    # "jemVar":Ljem;
     :cond_d
     return-void
 
@@ -673,13 +673,13 @@
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/ctv;
+    new-instance v1, Lctv;
 
-    invoke-direct {v1, p1}, Ldefpackage/ctv;-><init>(Landroid/widget/TextView;)V
+    invoke-direct {v1, p1}, Lctv;-><init>(Landroid/widget/TextView;)V
 
     const v2, 0x7f090005
 
-    invoke-static {v0, v2, v1}, Ldefpackage/ei;->e(Landroid/content/Context;ILdefpackage/eg;)V
+    invoke-static {v0, v2, v1}, Lei;->e(Landroid/content/Context;ILeg;)V
 
     .line 164
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setTextColor(I)V

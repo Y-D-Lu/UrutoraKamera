@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/smarts/SmartsChipView;->c(Ldefpackage/iap;)V
+    value = Lcom/google/android/apps/camera/smarts/SmartsChipView;->c(Liap;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,20 +20,20 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/smarts/SmartsChipView;
 
-.field public final synthetic val$iapVar:Ldefpackage/iap;
+.field public final synthetic val$iapVar:Liap;
 
 .field public final synthetic val$runnable:Ljava/lang/Runnable;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/smarts/SmartsChipView;Ldefpackage/iap;Ljava/lang/Runnable;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/smarts/SmartsChipView;Liap;Ljava/lang/Runnable;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/smarts/SmartsChipView;
 
     .line 106
     iput-object p1, p0, Lcom/google/android/apps/camera/smarts/SmartsChipView$1;->this$0:Lcom/google/android/apps/camera/smarts/SmartsChipView;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/smarts/SmartsChipView$1;->val$iapVar:Ldefpackage/iap;
+    iput-object p2, p0, Lcom/google/android/apps/camera/smarts/SmartsChipView$1;->val$iapVar:Liap;
 
     iput-object p3, p0, Lcom/google/android/apps/camera/smarts/SmartsChipView$1;->val$runnable:Ljava/lang/Runnable;
 
@@ -49,29 +49,29 @@
     .param p1, "view"    # Landroid/view/View;
 
     .line 109
-    iget-object v0, p0, Lcom/google/android/apps/camera/smarts/SmartsChipView$1;->val$iapVar:Ldefpackage/iap;
+    iget-object v0, p0, Lcom/google/android/apps/camera/smarts/SmartsChipView$1;->val$iapVar:Liap;
 
     .line 110
-    .local v0, "iapVar2":Ldefpackage/iap;
+    .local v0, "iapVar2":Liap;
     iget-object v1, p0, Lcom/google/android/apps/camera/smarts/SmartsChipView$1;->val$runnable:Ljava/lang/Runnable;
 
     .line 111
     .local v1, "runnable3":Ljava/lang/Runnable;
     move-object v2, v0
 
-    check-cast v2, Ldefpackage/hzb;
+    check-cast v2, Lhzb;
 
     .line 112
-    .local v2, "hzbVar":Ldefpackage/hzb;
-    iget-object v3, v2, Ldefpackage/hzb;->d:Ldefpackage/fjs;
+    .local v2, "hzbVar":Lhzb;
+    iget-object v3, v2, Lhzb;->d:Lfjs;
 
-    iget-object v4, v2, Ldefpackage/hzb;->a:Ldefpackage/iav;
+    iget-object v4, v2, Lhzb;->a:Liav;
 
-    iget-object v4, v4, Ldefpackage/iav;->a:Ljava/lang/String;
+    iget-object v4, v4, Liav;->a:Ljava/lang/String;
 
     const/4 v5, 0x3
 
-    invoke-interface {v3, v5, v4}, Ldefpackage/fjs;->ab(ILjava/lang/String;)V
+    invoke-interface {v3, v5, v4}, Lfjs;->ab(ILjava/lang/String;)V
 
     .line 113
     invoke-interface {v1}, Ljava/lang/Runnable;->run()V

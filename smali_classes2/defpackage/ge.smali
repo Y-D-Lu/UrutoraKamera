@@ -1,121 +1,111 @@
-.class public Ldefpackage/ge;
+.class public Ldefpackage/Ge;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Ie;->gh(Lgtv;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$1:Ldefpackage/Ie;
+
+.field public final synthetic val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ldefpackage/Ie;Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
     .locals 0
+    .param p1, "this$1"    # Ldefpackage/Ie;
 
-    .line 9
+    .line 589
+    iput-object p1, p0, Ldefpackage/Ge;->this$1:Ldefpackage/Ie;
+
+    iput-object p2, p0, Ldefpackage/Ge;->val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Landroid/view/View;II)V
-    .locals 1
-    .param p0, "view"    # Landroid/view/View;
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
-
-    .line 12
-    const/4 v0, 0x3
-
-    invoke-virtual {p0, p1, v0}, Landroid/view/View;->setScrollIndicators(II)V
-
-    .line 13
-    return-void
-.end method
-
-.method public static c(I)Ljava/lang/String;
-    .locals 1
-    .param p0, "i"    # I
-
-    .line 16
-    packed-switch p0, :pswitch_data_0
-
-    .line 26
-    const-string v0, "METERED"
-
-    return-object v0
-
-    .line 24
-    :pswitch_0
-    const-string v0, "NOT_ROAMING"
-
-    return-object v0
-
-    .line 22
-    :pswitch_1
-    const-string v0, "UNMETERED"
-
-    return-object v0
-
-    .line 20
-    :pswitch_2
-    const-string v0, "CONNECTED"
-
-    return-object v0
-
-    .line 18
-    :pswitch_3
-    const-string v0, "NOT_REQUIRED"
-
-    return-object v0
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public static d()Ldefpackage/ge;
-    .locals 1
-
-    .line 31
-    new-instance v0, Ldefpackage/amu;
-
-    invoke-direct {v0}, Ldefpackage/amu;-><init>()V
-
-    return-object v0
-.end method
-
-.method public static e()Ldefpackage/ge;
-    .locals 1
-
-    .line 35
-    new-instance v0, Ldefpackage/amv;
-
-    invoke-direct {v0}, Ldefpackage/amv;-><init>()V
-
-    return-object v0
-.end method
-
-.method public static f()Ldefpackage/ge;
-    .locals 2
-
-    .line 39
-    new-instance v0, Ldefpackage/amw;
-
-    sget-object v1, Ldefpackage/amq;->a:Ldefpackage/amq;
-
-    invoke-direct {v0, v1}, Ldefpackage/amw;-><init>(Ldefpackage/amq;)V
-
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public b(Landroid/support/v7/widget/RecyclerView;)Landroid/widget/EdgeEffect;
-    .locals 1
-    .param p1, "recyclerView"    # Landroid/support/v7/widget/RecyclerView;
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 5
+    .param p1, "dialogInterface"    # Landroid/content/DialogInterface;
+    .param p2, "i"    # I
 
-    .line 43
-    const/4 v0, 0x0
+    .line 592
+    const/4 v0, -0x1
 
-    throw v0
+    packed-switch v0, :pswitch_data_0
+
+    .line 603
+    iget-object v0, p0, Ldefpackage/Ge;->val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+
+    .line 604
+    .local v0, "optionsMenuContainer3":Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+    iget-object v1, v0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-string v3, "https://support.google.com/googlecamera?p=motion_toast"
+
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    const-string v4, "android.intent.action.VIEW"
+
+    invoke-direct {v2, v4, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    .line 605
+    return-void
+
+    .line 594
+    .end local v0    # "optionsMenuContainer3":Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Ge;->val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+
+    .line 595
+    .local v0, "optionsMenuContainer2":Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->w()V
+
+    .line 596
+    iget-object v1, v0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->t:Lhuj;
+
+    .line 597
+    .local v1, "hujVar":Lhuj;
+    if-nez v1, :cond_0
+
+    .line 598
+    return-void
+
+    .line 600
+    :cond_0
+    const-string v2, "micro_tutorial_dismiss"
+
+    invoke-virtual {v1, v2}, Lhuj;->b(Ljava/lang/String;)I
+
+    .line 601
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

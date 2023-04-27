@@ -1,236 +1,70 @@
-.class public final Ldefpackage/vo;
+.class public Ldefpackage/Vo;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Wo;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Landroid/hardware/camera2/CameraCharacteristics;
-
-.field private final c:Landroid/util/ArrayMap;
-
-.field private final d:Ldefpackage/qkj;
-
-.field private final e:Ldefpackage/qkj;
-
-.field private final f:Ldefpackage/qkj;
+.field public final synthetic this$1:Ldefpackage/Wo;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Landroid/hardware/camera2/CameraCharacteristics;)V
-    .locals 2
-    .param p1, "str"    # Ljava/lang/String;
-    .param p2, "cameraCharacteristics"    # Landroid/hardware/camera2/CameraCharacteristics;
+.method public constructor <init>(Ldefpackage/Wo;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Wo;
 
-    .line 18
+    .line 50081
+    iput-object p1, p0, Ldefpackage/Vo;->this$1:Ldefpackage/Wo;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    new-instance v0, Landroid/util/ArrayMap;
-
-    invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/vo;->c:Landroid/util/ArrayMap;
-
-    .line 19
-    iput-object p1, p0, Ldefpackage/vo;->a:Ljava/lang/String;
-
-    .line 20
-    iput-object p2, p0, Ldefpackage/vo;->b:Landroid/hardware/camera2/CameraCharacteristics;
-
-    .line 21
-    new-instance v0, Ldefpackage/vn;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, p0, v1}, Ldefpackage/vn;-><init>(Ldefpackage/vo;I)V
-
-    invoke-static {v0}, Ldefpackage/qmd;->O(Ldefpackage/qmj;)Ldefpackage/qkj;
-
-    .line 22
-    new-instance v0, Ldefpackage/vn;
-
-    const/4 v1, 0x3
-
-    invoke-direct {v0, p0, v1}, Ldefpackage/vn;-><init>(Ldefpackage/vo;I)V
-
-    invoke-static {v0}, Ldefpackage/qmd;->O(Ldefpackage/qmj;)Ldefpackage/qkj;
-
-    move-result-object v0
-
-    iput-object v0, p0, Ldefpackage/vo;->d:Ldefpackage/qkj;
-
-    .line 23
-    new-instance v0, Ldefpackage/vn;
-
-    const/4 v1, 0x4
-
-    invoke-direct {v0, p0, v1}, Ldefpackage/vn;-><init>(Ldefpackage/vo;I)V
-
-    invoke-static {v0}, Ldefpackage/qmd;->O(Ldefpackage/qmj;)Ldefpackage/qkj;
-
-    .line 24
-    new-instance v0, Ldefpackage/vn;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Ldefpackage/vn;-><init>(Ldefpackage/vo;I)V
-
-    invoke-static {v0}, Ldefpackage/qmd;->O(Ldefpackage/qmj;)Ldefpackage/qkj;
-
-    move-result-object v0
-
-    iput-object v0, p0, Ldefpackage/vo;->e:Ldefpackage/qkj;
-
-    .line 25
-    new-instance v0, Ldefpackage/vn;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, p0, v1}, Ldefpackage/vn;-><init>(Ldefpackage/vo;I)V
-
-    invoke-static {v0}, Ldefpackage/qmd;->O(Ldefpackage/qmj;)Ldefpackage/qkj;
-
-    .line 26
-    new-instance v0, Ldefpackage/vn;
-
-    const/4 v1, 0x5
-
-    invoke-direct {v0, p0, v1}, Ldefpackage/vn;-><init>(Ldefpackage/vo;I)V
-
-    invoke-static {v0}, Ldefpackage/qmd;->O(Ldefpackage/qmj;)Ldefpackage/qkj;
-
-    move-result-object v0
-
-    iput-object v0, p0, Ldefpackage/vo;->f:Ldefpackage/qkj;
-
-    .line 27
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+.method public final accept(Ljava/lang/Object;)V
     .locals 3
-    .param p1, "key"    # Landroid/hardware/camera2/CameraCharacteristics$Key;
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 31
-    iget-object v0, p0, Ldefpackage/vo;->c:Landroid/util/ArrayMap;
+    .line 50084
+    move-object v0, p1
 
-    monitor-enter v0
+    check-cast v0, Landroid/animation/Animator;
 
-    .line 32
-    :try_start_0
-    iget-object v1, p0, Ldefpackage/vo;->c:Landroid/util/ArrayMap;
+    .line 50085
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Vo;->this$1:Ldefpackage/Wo;
 
-    invoke-virtual {v1, p1}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, v1, Ldefpackage/Wo;->this$0:Ljkz;
 
-    move-result-object v1
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-    .line 33
-    .local v1, "obj":Ljava/lang/Object;
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    .line 34
-    if-nez v1, :cond_0
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
 
-    iget-object v0, p0, Ldefpackage/vo;->b:Landroid/hardware/camera2/CameraCharacteristics;
-
-    invoke-virtual {v0, p1}, Landroid/hardware/camera2/CameraCharacteristics;->get(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v1, v0
-
-    if-eqz v0, :cond_0
-
-    .line 35
-    iget-object v0, p0, Ldefpackage/vo;->c:Landroid/util/ArrayMap;
-
-    monitor-enter v0
-
-    .line 36
-    :try_start_1
-    iget-object v2, p0, Ldefpackage/vo;->c:Landroid/util/ArrayMap;
-
-    invoke-virtual {v2, p1, v1}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 37
-    monitor-exit v0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v2
-
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v2
-
-    .line 39
-    :cond_0
-    :goto_0
-    return-object v1
-
-    .line 33
-    .end local v1    # "obj":Ljava/lang/Object;
-    :catchall_1
-    move-exception v1
-
-    :try_start_2
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    throw v1
+    .line 50086
+    return-void
 .end method
 
-.method public final b()Ljava/util/Set;
-    .locals 1
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 43
-    iget-object v0, p0, Ldefpackage/vo;->e:Ldefpackage/qkj;
-
-    invoke-interface {v0}, Ldefpackage/qkj;->a()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Set;
-
-    return-object v0
-.end method
-
-.method public final c()Ljava/util/Set;
-    .locals 1
-
-    .line 47
-    iget-object v0, p0, Ldefpackage/vo;->d:Ldefpackage/qkj;
-
-    invoke-interface {v0}, Ldefpackage/qkj;->a()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Set;
-
-    return-object v0
-.end method
-
-.method public final d()Ljava/util/Set;
-    .locals 1
-
-    .line 51
-    iget-object v0, p0, Ldefpackage/vo;->f:Ldefpackage/qkj;
-
-    invoke-interface {v0}, Ldefpackage/qkj;->a()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Set;
-
-    return-object v0
+    .line 50090
+    return-object p1
 .end method

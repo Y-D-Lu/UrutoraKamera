@@ -1,242 +1,78 @@
-.class public Ldefpackage/qu;
-.super Ldefpackage/fg;
+.class public Ldefpackage/Qu;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lloy;->a(Ljava/lang/Runnable;)Llie;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final b:Landroid/support/v7/widget/RecyclerView;
+.field public final synthetic this$0:Lloy;
 
-.field public final c:Ldefpackage/qt;
+.field public final synthetic val$runnable:Ljava/lang/Runnable;
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/v7/widget/RecyclerView;)V
-    .locals 2
-    .param p1, "recyclerView"    # Landroid/support/v7/widget/RecyclerView;
+.method public constructor <init>(Lloy;Ljava/lang/Runnable;)V
+    .locals 0
+    .param p1, "this$0"    # Lloy;
 
-    .line 15
-    invoke-direct {p0}, Ldefpackage/fg;-><init>()V
+    .line 30
+    iput-object p1, p0, Ldefpackage/Qu;->this$0:Lloy;
 
-    .line 16
-    iput-object p1, p0, Ldefpackage/qu;->b:Landroid/support/v7/widget/RecyclerView;
+    iput-object p2, p0, Ldefpackage/Qu;->val$runnable:Ljava/lang/Runnable;
 
-    .line 17
-    invoke-virtual {p0}, Ldefpackage/qu;->k()Ldefpackage/fg;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
-
-    .line 18
-    .local v0, "k":Ldefpackage/fg;
-    if-eqz v0, :cond_1
-
-    instance-of v1, v0, Ldefpackage/qt;
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    move-object v1, v0
-
-    check-cast v1, Ldefpackage/qt;
-
-    iput-object v1, p0, Ldefpackage/qu;->c:Ldefpackage/qt;
-
-    goto :goto_1
-
-    .line 19
-    :cond_1
-    :goto_0
-    new-instance v1, Ldefpackage/qt;
-
-    invoke-direct {v1, p0}, Ldefpackage/qt;-><init>(Ldefpackage/qu;)V
-
-    iput-object v1, p0, Ldefpackage/qu;->c:Ldefpackage/qt;
-
-    .line 23
-    :goto_1
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-    .locals 2
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "accessibilityEvent"    # Landroid/view/accessibility/AccessibilityEvent;
-
-    .line 28
-    invoke-super {p0, p1, p2}, Ldefpackage/fg;->b(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-
-    .line 29
-    instance-of v0, p1, Landroid/support/v7/widget/RecyclerView;
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {p0}, Ldefpackage/qu;->l()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    move-object v0, p1
-
-    check-cast v0, Landroid/support/v7/widget/RecyclerView;
-
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->m:Landroid/view/qc;
-
-    move-object v1, v0
-
-    .local v1, "qcVar":Landroid/view/qc;
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    .line 32
-    :cond_0
-    invoke-virtual {v1, p2}, Landroid/view/qc;->P(Landroid/view/accessibility/AccessibilityEvent;)V
+.method public final close()V
+    .locals 3
 
     .line 33
-    return-void
+    iget-object v0, p0, Ldefpackage/Qu;->this$0:Lloy;
 
-    .line 30
-    .end local v1    # "qcVar":Landroid/view/qc;
-    :cond_1
-    :goto_0
-    return-void
-.end method
+    .line 34
+    .local v0, "loyVar":Lloy;
+    iget-object v1, p0, Ldefpackage/Qu;->val$runnable:Ljava/lang/Runnable;
 
-.method public final c(Landroid/view/View;Ldefpackage/hb;)V
-    .locals 4
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "hbVar"    # Ldefpackage/hb;
+    .line 35
+    .local v1, "runnable2":Ljava/lang/Runnable;
+    monitor-enter v0
+
+    .line 36
+    :try_start_0
+    iget-object v2, v0, Lloy;->c:Ljava/util/List;
+
+    invoke-interface {v2, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+
+    .line 37
+    monitor-exit v0
 
     .line 38
-    invoke-super {p0, p1, p2}, Ldefpackage/fg;->c(Landroid/view/View;Ldefpackage/hb;)V
-
-    .line 39
-    invoke-virtual {p0}, Ldefpackage/qu;->l()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Ldefpackage/qu;->b:Landroid/support/v7/widget/RecyclerView;
-
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->m:Landroid/view/qc;
-
-    move-object v1, v0
-
-    .local v1, "qcVar":Landroid/view/qc;
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    .line 42
-    :cond_0
-    iget-object v0, v1, Landroid/view/qc;->q:Landroid/support/v7/widget/RecyclerView;
-
-    .line 43
-    .local v0, "recyclerView":Landroid/support/v7/widget/RecyclerView;
-    iget-object v2, v0, Landroid/support/v7/widget/RecyclerView;->c:Ldefpackage/qi;
-
-    iget-object v3, v0, Landroid/support/v7/widget/RecyclerView;->L:Ldefpackage/qp;
-
-    invoke-virtual {v1, v2, v3, p2}, Landroid/view/qc;->aF(Ldefpackage/qi;Ldefpackage/qp;Ldefpackage/hb;)V
-
-    .line 44
     return-void
 
-    .line 40
-    .end local v0    # "recyclerView":Landroid/support/v7/widget/RecyclerView;
-    .end local v1    # "qcVar":Landroid/view/qc;
-    :cond_1
-    :goto_0
-    return-void
-.end method
+    .line 37
+    :catchall_0
+    move-exception v2
 
-.method public final i(Landroid/view/View;ILandroid/os/Bundle;)Z
-    .locals 4
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "i"    # I
-    .param p3, "bundle"    # Landroid/os/Bundle;
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 49
-    invoke-super {p0, p1, p2, p3}, Ldefpackage/fg;->i(Landroid/view/View;ILandroid/os/Bundle;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 50
-    const/4 v0, 0x1
-
-    return v0
-
-    .line 52
-    :cond_0
-    invoke-virtual {p0}, Ldefpackage/qu;->l()Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    iget-object v0, p0, Ldefpackage/qu;->b:Landroid/support/v7/widget/RecyclerView;
-
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->m:Landroid/view/qc;
-
-    move-object v1, v0
-
-    .local v1, "qcVar":Landroid/view/qc;
-    if-nez v0, :cond_1
-
-    goto :goto_0
-
-    .line 55
-    :cond_1
-    iget-object v0, v1, Landroid/view/qc;->q:Landroid/support/v7/widget/RecyclerView;
-
-    .line 56
-    .local v0, "recyclerView":Landroid/support/v7/widget/RecyclerView;
-    iget-object v2, v0, Landroid/support/v7/widget/RecyclerView;->c:Ldefpackage/qi;
-
-    iget-object v3, v0, Landroid/support/v7/widget/RecyclerView;->L:Ldefpackage/qp;
-
-    invoke-virtual {v1, v2, v3, p2, p3}, Landroid/view/qc;->aW(Ldefpackage/qi;Ldefpackage/qp;ILandroid/os/Bundle;)Z
-
-    move-result v2
-
-    return v2
-
-    .line 53
-    .end local v0    # "recyclerView":Landroid/support/v7/widget/RecyclerView;
-    .end local v1    # "qcVar":Landroid/view/qc;
-    :cond_2
-    :goto_0
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public k()Ldefpackage/fg;
-    .locals 1
-
-    .line 60
-    iget-object v0, p0, Ldefpackage/qu;->c:Ldefpackage/qt;
-
-    return-object v0
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .line 65
-    iget-object v0, p0, Ldefpackage/qu;->b:Landroid/support/v7/widget/RecyclerView;
-
-    invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView;->af()Z
-
-    move-result v0
-
-    return v0
+    throw v2
 .end method

@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jrp;
+.implements Ljrp;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/bottombar/BottomBar;->getBackgroundColorProperty()Ldefpackage/jrp;
+    value = Lcom/google/android/apps/camera/bottombar/BottomBar;->getBackgroundColorProperty()Ljrp;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

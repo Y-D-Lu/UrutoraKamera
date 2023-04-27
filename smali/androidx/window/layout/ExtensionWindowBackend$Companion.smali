@@ -25,9 +25,9 @@
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/qnm;)V
+.method public constructor <init>(Lqnm;)V
     .locals 0
-    .param p1, "qnmVar"    # Ldefpackage/qnm;
+    .param p1, "qnmVar"    # Lqnm;
 
     .line 36
     invoke-direct {p0}, Landroidx/window/layout/ExtensionWindowBackend$Companion;-><init>()V

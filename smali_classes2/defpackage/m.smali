@@ -1,20 +1,34 @@
-.class final Ldefpackage/m;
+.class public Ldefpackage/M;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/p;
+.implements Ljsi;
 
 
-# static fields
-.field private static final serialVersionUID:J = 0x7f2b2ad155970a18L
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lbou;->a(Landroid/graphics/PointF;)Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lbou;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lbou;)V
     .locals 0
+    .param p1, "this$0"    # Lbou;
 
-    .line 5
+    .line 68
+    iput-object p1, p0, Ldefpackage/M;->this$0:Lbou;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,21 +36,16 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/q;)Z
-    .locals 1
-    .param p1, "qVar"    # Ldefpackage/q;
+.method public final a()V
+    .locals 2
 
-    .line 10
-    const/4 v0, 0x1
+    .line 71
+    iget-object v0, p0, Ldefpackage/M;->this$0:Lbou;
 
-    return v0
-.end method
+    const/4 v1, 0x0
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
+    iput-object v1, v0, Lbou;->c:Ljsj;
 
-    .line 14
-    const-string v0, ""
-
-    return-object v0
+    .line 72
+    return-void
 .end method

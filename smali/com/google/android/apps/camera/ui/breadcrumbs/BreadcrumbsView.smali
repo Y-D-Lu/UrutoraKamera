@@ -1,10 +1,10 @@
 .class public Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;
-.super Ldefpackage/jjn;
+.super Ljjn;
 .source ""
 
 
 # instance fields
-.field public d:Ldefpackage/jrz;
+.field public d:Ljrz;
 
 
 # direct methods
@@ -14,12 +14,12 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 16
-    invoke-direct {p0, p1, p2}, Ldefpackage/jjn;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Ljjn;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 17
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ljrz;
 
     .line 18
     return-void
@@ -36,9 +36,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 22
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ljrz;
 
-    invoke-static {p0, v0}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, v0}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 23
     invoke-static {}, Landroid/os/Trace;->endSection()V
@@ -88,9 +88,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 41
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/breadcrumbs/BreadcrumbsView;->d:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

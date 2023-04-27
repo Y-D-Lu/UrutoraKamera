@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/kvc;
+.implements Lkvc;
 
 
 # annotations
@@ -36,9 +36,9 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/kvk;)V
+.method public final a(Lkvk;)V
     .locals 1
-    .param p1, "kvkVar"    # Ldefpackage/kvk;
+    .param p1, "kvkVar"    # Lkvk;
 
     .line 90
     iget-object v0, p0, Lcom/google/android/apps/camera/app/silentfeedback/SilentFeedbackService$1;->this$0:Lcom/google/android/apps/camera/app/silentfeedback/SilentFeedbackService;

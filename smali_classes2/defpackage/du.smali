@@ -1,52 +1,78 @@
-.class public final Ldefpackage/du;
+.class public Ldefpackage/Du;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/lang/Iterable;
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lllr;->a(Lllt;)Llie;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/util/ArrayList;
+.field public final synthetic this$0:Lllr;
 
-.field public final b:Landroid/content/Context;
+.field public final synthetic val$lltVar:Lllt;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-    .param p1, "context"    # Landroid/content/Context;
+.method public constructor <init>(Lllr;Lllt;)V
+    .locals 0
+    .param p1, "this$0"    # Lllr;
 
     .line 14
+    iput-object p1, p0, Ldefpackage/Du;->this$0:Lllr;
+
+    iput-object p2, p0, Ldefpackage/Du;->val$lltVar:Lllt;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/du;->a:Ljava/util/ArrayList;
-
-    .line 15
-    iput-object p1, p0, Ldefpackage/du;->b:Landroid/content/Context;
-
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final iterator()Ljava/util/Iterator;
-    .locals 1
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+.method public final close()V
+    .locals 3
+
+    .line 17
+    iget-object v0, p0, Ldefpackage/Du;->this$0:Lllr;
+
+    .line 18
+    .local v0, "llrVar":Lllr;
+    iget-object v1, p0, Ldefpackage/Du;->val$lltVar:Lllt;
+
+    .line 19
+    .local v1, "lltVar2":Lllt;
+    monitor-enter v0
+
+    .line 20
+    :try_start_0
+    iget-object v2, v0, Lllr;->a:Ljava/util/List;
+
+    invoke-interface {v2, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 21
-    iget-object v0, p0, Ldefpackage/du;->a:Ljava/util/ArrayList;
+    monitor-exit v0
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    .line 22
+    return-void
 
-    move-result-object v0
+    .line 21
+    :catchall_0
+    move-exception v2
 
-    return-object v0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v2
 .end method

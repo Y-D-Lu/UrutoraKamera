@@ -1,142 +1,81 @@
-.class public final Ldefpackage/kl;
+.class public Ldefpackage/Kl;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljac;-><init>(Lbtt;Lbqg;Lcvo;Ldmh;Lddf;Landroid/view/View;Lgxm;Lhuf;Llar;Llda;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/kq;
+.field public final synthetic this$0:Ljac;
+
+.field public final synthetic val$view:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/kq;)V
+.method public constructor <init>(Ljac;Landroid/view/View;)V
     .locals 0
-    .param p1, "kqVar"    # Ldefpackage/kq;
+    .param p1, "this$0"    # Ljac;
 
-    .line 14
+    .line 39
+    iput-object p1, p0, Ldefpackage/Kl;->this$0:Ljac;
+
+    iput-object p2, p0, Ldefpackage/Kl;->val$view:Landroid/view/View;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
-    iput-object p1, p0, Ldefpackage/kl;->a:Ldefpackage/kq;
-
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final onGlobalLayout()V
+.method public final run()V
     .locals 4
 
-    .line 20
-    iget-object v0, p0, Ldefpackage/kl;->a:Ldefpackage/kq;
+    .line 42
+    iget-object v0, p0, Ldefpackage/Kl;->this$0:Ljac;
 
-    invoke-virtual {v0}, Ldefpackage/kq;->u()Z
+    .line 43
+    .local v0, "jacVar":Ljac;
+    new-instance v1, Ljah;
 
-    move-result v0
+    iget-object v2, p0, Ldefpackage/Kl;->val$view:Landroid/view/View;
 
-    if-eqz v0, :cond_4
-
-    iget-object v0, p0, Ldefpackage/kl;->a:Ldefpackage/kq;
-
-    iget-object v0, v0, Ldefpackage/kq;->b:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-lez v0, :cond_4
-
-    iget-object v0, p0, Ldefpackage/kl;->a:Ldefpackage/kq;
-
-    iget-object v0, v0, Ldefpackage/kq;->b:Ljava/util/List;
-
-    const/4 v1, 0x0
-
-    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ldefpackage/kp;
-
-    iget-object v0, v0, Ldefpackage/kp;->a:Ldefpackage/pn;
-
-    iget-boolean v0, v0, Ldefpackage/pk;->p:Z
-
-    if-eqz v0, :cond_0
-
-    goto :goto_2
-
-    .line 23
-    :cond_0
-    iget-object v0, p0, Ldefpackage/kl;->a:Ldefpackage/kq;
-
-    iget-object v0, v0, Ldefpackage/kq;->d:Landroid/view/View;
-
-    .line 24
-    .local v0, "view":Landroid/view/View;
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Landroid/view/View;->isShown()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    goto :goto_1
-
-    .line 28
-    :cond_1
-    iget-object v1, p0, Ldefpackage/kl;->a:Ldefpackage/kq;
-
-    iget-object v1, v1, Ldefpackage/kq;->b:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {v2}, Ljus;->a(Landroid/view/View;)Ljus;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/kp;
+    const v3, 0x7f0a0150
 
-    .line 29
-    .local v2, "kpVar":Ldefpackage/kp;
-    iget-object v3, v2, Ldefpackage/kp;->a:Ldefpackage/pn;
+    invoke-virtual {v2, v3}, Ljus;->c(I)Ljava/lang/Object;
 
-    invoke-virtual {v3}, Ldefpackage/pk;->s()V
+    move-result-object v2
 
-    .line 30
-    .end local v2    # "kpVar":Ldefpackage/kp;
-    goto :goto_0
+    check-cast v2, Landroid/widget/FrameLayout;
 
-    .line 31
-    :cond_2
-    return-void
+    invoke-direct {v1, v2}, Ljah;-><init>(Landroid/widget/FrameLayout;)V
 
-    .line 25
-    :cond_3
-    :goto_1
-    iget-object v1, p0, Ldefpackage/kl;->a:Ldefpackage/kq;
+    .line 44
+    .local v1, "jahVar":Ljah;
+    invoke-static {v1}, Lmip;->ep(Landroid/view/View;)V
 
-    invoke-virtual {v1}, Ldefpackage/kq;->k()V
+    .line 45
+    iput-object v1, v0, Ljac;->f:Ljah;
 
-    .line 26
-    return-void
+    .line 46
+    iput-object v0, v1, Ljah;->b:Ljag;
 
-    .line 21
-    .end local v0    # "view":Landroid/view/View;
-    :cond_4
-    :goto_2
+    .line 47
     return-void
 .end method

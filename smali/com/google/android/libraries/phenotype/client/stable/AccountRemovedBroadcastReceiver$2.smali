@@ -56,7 +56,7 @@
 
     .line 37
     .local v1, "str":Ljava/lang/String;
-    invoke-static {v0}, Ldefpackage/nfw;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {v0}, Lnfw;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v2
 

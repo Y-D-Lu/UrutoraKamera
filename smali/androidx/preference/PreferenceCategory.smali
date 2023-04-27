@@ -27,7 +27,7 @@
 
     const v1, 0x101008c
 
-    invoke-static {p1, v0, v1}, Ldefpackage/et;->u(Landroid/content/Context;II)I
+    invoke-static {p1, v0, v1}, Let;->u(Landroid/content/Context;II)I
 
     move-result v0
 
@@ -50,15 +50,15 @@
     return v0
 .end method
 
-.method public final a(Ldefpackage/ahm;)V
+.method public final a(Lahm;)V
     .locals 2
-    .param p1, "ahmVar"    # Ldefpackage/ahm;
+    .param p1, "ahmVar"    # Lahm;
 
     .line 28
-    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Ldefpackage/ahm;)V
+    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Lahm;)V
 
     .line 29
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const/4 v1, 0x1
 

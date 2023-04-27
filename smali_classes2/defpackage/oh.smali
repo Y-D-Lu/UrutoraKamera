@@ -1,122 +1,62 @@
-.class public final Ldefpackage/oh;
+.class public Ldefpackage/Oh;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lhyx;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhyg;->fB(Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:Ldefpackage/qs;
+.field public final synthetic this$0:Lhyg;
 
-.field public b:Ldefpackage/qs;
-
-.field public final c:I
-
-.field public final d:I
-
-.field public final e:I
-
-.field public final f:I
+.field public final synthetic val$htiVar:Lhti;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/qs;Ldefpackage/qs;IIII)V
+.method public constructor <init>(Lhyg;Lhti;)V
     .locals 0
-    .param p1, "qsVar"    # Ldefpackage/qs;
-    .param p2, "qsVar2"    # Ldefpackage/qs;
-    .param p3, "i"    # I
-    .param p4, "i2"    # I
-    .param p5, "i3"    # I
-    .param p6, "i4"    # I
+    .param p1, "this$0"    # Lhyg;
 
-    .line 14
+    .line 29
+    iput-object p1, p0, Ldefpackage/Oh;->this$0:Lhyg;
+
+    iput-object p2, p0, Ldefpackage/Oh;->val$htiVar:Lhti;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
-    iput-object p1, p0, Ldefpackage/oh;->a:Ldefpackage/qs;
-
-    .line 16
-    iput-object p2, p0, Ldefpackage/oh;->b:Ldefpackage/qs;
-
-    .line 17
-    iput p3, p0, Ldefpackage/oh;->c:I
-
-    .line 18
-    iput p4, p0, Ldefpackage/oh;->d:I
-
-    .line 19
-    iput p5, p0, Ldefpackage/oh;->e:I
-
-    .line 20
-    iput p6, p0, Ldefpackage/oh;->f:I
-
-    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
+.method public final a(Ljava/lang/Object;)V
     .locals 2
+    .param p1, "obj2"    # Ljava/lang/Object;
 
-    .line 24
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 32
+    move-object v0, p1
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    check-cast v0, Lhzu;
 
-    const-string v1, "ChangeInfo{oldHolder="
+    iget-object v1, p0, Ldefpackage/Oh;->val$htiVar:Lhti;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Lhza;->k(Lhti;)Z
 
-    iget-object v1, p0, Ldefpackage/oh;->a:Ldefpackage/qs;
+    move-result v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Lhzu;->g(Z)V
 
-    const-string v1, ", newHolder="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Ldefpackage/oh;->b:Ldefpackage/qs;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", fromX="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Ldefpackage/oh;->c:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", fromY="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Ldefpackage/oh;->d:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", toX="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Ldefpackage/oh;->e:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", toY="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Ldefpackage/oh;->f:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x7d
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    .line 33
+    return-void
 .end method

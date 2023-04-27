@@ -1,203 +1,109 @@
-.class public final Ldefpackage/jy;
+.class public Ldefpackage/jy;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/jv;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lpkn;-><init>(Lmad;Landroid/hardware/HardwareBuffer;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/view/ActionMode$Callback;
+.field public final synthetic this$0:Lpkn;
 
-.field public final b:Landroid/content/Context;
+.field public final synthetic val$hardwareBuffer:Landroid/hardware/HardwareBuffer;
 
-.field public final c:Ljava/util/ArrayList;
-
-.field public final d:Ldefpackage/xf;
+.field public final synthetic val$madVar:Lmad;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/view/ActionMode$Callback;)V
-    .locals 1
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "callback"    # Landroid/view/ActionMode$Callback;
+.method public constructor <init>(Lpkn;Landroid/hardware/HardwareBuffer;Lmad;)V
+    .locals 0
+    .param p1, "this$0"    # Lpkn;
 
-    .line 18
+    .line 30
+    iput-object p1, p0, Ldefpackage/jy;->this$0:Lpkn;
+
+    iput-object p2, p0, Ldefpackage/jy;->val$hardwareBuffer:Landroid/hardware/HardwareBuffer;
+
+    iput-object p3, p0, Ldefpackage/jy;->val$madVar:Lmad;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/jy;->c:Ljava/util/ArrayList;
-
-    .line 16
-    new-instance v0, Ldefpackage/xf;
-
-    invoke-direct {v0}, Ldefpackage/xf;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/jy;->d:Ldefpackage/xf;
-
-    .line 19
-    iput-object p1, p0, Ldefpackage/jy;->b:Landroid/content/Context;
-
-    .line 20
-    iput-object p2, p0, Ldefpackage/jy;->a:Landroid/view/ActionMode$Callback;
-
-    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ldefpackage/jw;)V
-    .locals 1
-    .param p1, "jwVar"    # Ldefpackage/jw;
+.method public final run()V
+    .locals 6
 
-    .line 25
-    const/4 v0, 0x0
+    .line 33
+    iget-object v0, p0, Ldefpackage/jy;->this$0:Lpkn;
 
-    throw v0
-.end method
-
-.method public final b(Ldefpackage/jw;Landroid/view/MenuItem;)Z
-    .locals 1
-    .param p1, "jwVar"    # Ldefpackage/jw;
-    .param p2, "menuItem"    # Landroid/view/MenuItem;
-
-    .line 30
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public final c(Ldefpackage/jw;Landroid/view/Menu;)Z
-    .locals 1
-    .param p1, "jwVar"    # Ldefpackage/jw;
-    .param p2, "menu"    # Landroid/view/Menu;
+    .line 34
+    .local v0, "pknVar":Lpkn;
+    iget-object v1, p0, Ldefpackage/jy;->val$hardwareBuffer:Landroid/hardware/HardwareBuffer;
 
     .line 35
-    const/4 v0, 0x0
+    .local v1, "hardwareBuffer2":Landroid/hardware/HardwareBuffer;
+    iget-object v2, p0, Ldefpackage/jy;->val$madVar:Lmad;
 
-    throw v0
-.end method
+    .line 36
+    .local v2, "madVar2":Lmad;
+    iget-object v3, v0, Lpkn;->a:Ljava/lang/Object;
 
-.method public final d(Ldefpackage/jw;Landroid/view/Menu;)V
-    .locals 1
-    .param p1, "jwVar"    # Ldefpackage/jw;
-    .param p2, "menu"    # Landroid/view/Menu;
+    monitor-enter v3
 
-    .line 40
-    const/4 v0, 0x0
+    .line 37
+    :try_start_0
+    iget-boolean v4, v0, Lpkn;->d:Z
 
-    throw v0
-.end method
+    const/4 v5, 0x1
 
-.method public final e(Ldefpackage/jw;)Landroid/view/ActionMode;
-    .locals 4
-    .param p1, "jwVar"    # Ldefpackage/jw;
+    if-nez v4, :cond_0
 
-    .line 44
-    iget-object v0, p0, Ldefpackage/jy;->c:Ljava/util/ArrayList;
+    .line 38
+    invoke-virtual {v1}, Landroid/hardware/HardwareBuffer;->close()V
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    .line 39
+    iput-boolean v5, v0, Lpkn;->d:Z
 
-    move-result v0
+    .line 41
+    :cond_0
+    iget-boolean v4, v0, Lpkn;->b:Z
+
+    if-eqz v4, :cond_1
+
+    .line 42
+    invoke-interface {v2}, Llie;->close()V
+
+    .line 43
+    iput-boolean v5, v0, Lpkn;->c:Z
 
     .line 45
-    .local v0, "size":I
-    const/4 v1, 0x0
-
-    .local v1, "i":I
-    :goto_0
-    if-ge v1, v0, :cond_1
+    :cond_1
+    monitor-exit v3
 
     .line 46
-    iget-object v2, p0, Ldefpackage/jy;->c:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ldefpackage/jz;
-
-    .line 47
-    .local v2, "jzVar":Ldefpackage/jz;
-    if-eqz v2, :cond_0
-
-    iget-object v3, v2, Ldefpackage/jz;->b:Ldefpackage/jw;
-
-    if-ne v3, p1, :cond_0
-
-    .line 48
-    return-object v2
+    return-void
 
     .line 45
-    .end local v2    # "jzVar":Ldefpackage/jz;
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
+    :catchall_0
+    move-exception v4
 
-    goto :goto_0
+    monitor-exit v3
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 51
-    .end local v1    # "i":I
-    :cond_1
-    new-instance v1, Ldefpackage/jz;
-
-    iget-object v2, p0, Ldefpackage/jy;->b:Landroid/content/Context;
-
-    invoke-direct {v1, v2, p1}, Ldefpackage/jz;-><init>(Landroid/content/Context;Ldefpackage/jw;)V
-
-    .line 52
-    .local v1, "jzVar2":Ldefpackage/jz;
-    iget-object v2, p0, Ldefpackage/jy;->c:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 53
-    return-object v1
-.end method
-
-.method public final f(Landroid/view/Menu;)Landroid/view/Menu;
-    .locals 4
-    .param p1, "menu"    # Landroid/view/Menu;
-
-    .line 58
-    iget-object v0, p0, Ldefpackage/jy;->d:Ldefpackage/xf;
-
-    invoke-virtual {v0, p1}, Ldefpackage/xf;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/Menu;
-
-    .line 59
-    .local v0, "menu2":Landroid/view/Menu;
-    if-nez v0, :cond_0
-
-    .line 60
-    new-instance v1, Ldefpackage/ln;
-
-    iget-object v2, p0, Ldefpackage/jy;->b:Landroid/content/Context;
-
-    move-object v3, p1
-
-    check-cast v3, Ler;
-
-    invoke-direct {v1, v2, v3}, Ldefpackage/ln;-><init>(Landroid/content/Context;Ler;)V
-
-    .line 61
-    .local v1, "lnVar":Ldefpackage/ln;
-    iget-object v2, p0, Ldefpackage/jy;->d:Ldefpackage/xf;
-
-    invoke-virtual {v2, p1, v1}, Ldefpackage/xf;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 62
-    return-object v1
-
-    .line 64
-    .end local v1    # "lnVar":Ldefpackage/ln;
-    :cond_0
-    return-object v0
+    throw v4
 .end method

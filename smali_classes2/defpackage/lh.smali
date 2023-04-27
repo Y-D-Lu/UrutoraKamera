@@ -1,40 +1,66 @@
-.class final Ldefpackage/lh;
+.class public Ldefpackage/Lh;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/widget/PopupWindow$OnDismissListener;
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Mh;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/li;
+.field public final synthetic this$2:Ldefpackage/Mh;
+
+.field public final synthetic val$hzuVar:Lhzu;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/li;)V
+.method public constructor <init>(Ldefpackage/Mh;Lhzu;)V
     .locals 0
-    .param p1, "liVar"    # Ldefpackage/li;
+    .param p1, "this$2"    # Ldefpackage/Mh;
 
-    .line 10
+    .line 42
+    iput-object p1, p0, Ldefpackage/Lh;->this$2:Ldefpackage/Mh;
+
+    iput-object p2, p0, Ldefpackage/Lh;->val$hzuVar:Lhzu;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
-    iput-object p1, p0, Ldefpackage/lh;->a:Ldefpackage/li;
-
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final onDismiss()V
-    .locals 1
+.method public final fB(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj2"    # Ljava/lang/Object;
 
-    .line 16
-    iget-object v0, p0, Ldefpackage/lh;->a:Ldefpackage/li;
+    .line 45
+    iget-object v0, p0, Ldefpackage/Lh;->val$hzuVar:Lhzu;
 
-    invoke-virtual {v0}, Ldefpackage/li;->c()V
+    sget-object v1, Lhzt;->EXTERNAL_TOGGLE:Lhzt;
 
-    .line 17
+    move-object v2, p1
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    xor-int/lit8 v2, v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Lhzu;->b(Lhzt;Z)V
+
+    .line 46
     return-void
 .end method

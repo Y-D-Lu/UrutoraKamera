@@ -63,9 +63,9 @@
     if-eqz v0, :cond_0
 
     .line 30
-    new-instance v1, Ldefpackage/jhx;
+    new-instance v1, Ljhx;
 
-    invoke-direct {v1}, Ldefpackage/jhx;-><init>()V
+    invoke-direct {v1}, Ljhx;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
 

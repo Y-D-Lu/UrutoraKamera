@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final k:Ldefpackage/ouj;
+.field private static final k:Louj;
 
 
 # instance fields
@@ -26,7 +26,7 @@
 
 .field public i:Landroid/widget/SeekBar;
 
-.field public j:Ldefpackage/lzi;
+.field public j:Llzi;
 
 .field private final l:I
 
@@ -38,11 +38,11 @@
     .line 30
     const-string v0, "com/google/android/apps/camera/zoomui/ZoomKnob"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->k:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->k:Louj;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     .line 46
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
-    sget-object v1, Ldefpackage/kag;->MAIN_ONLY:Ldefpackage/kag;
+    sget-object v1, Lkag;->MAIN_ONLY:Lkag;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
 
@@ -124,30 +124,30 @@
     iput v2, p0, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->c:I
 
     .line 53
-    instance-of v2, p1, Ldefpackage/bpx;
+    instance-of v2, p1, Lbpx;
 
     if-eqz v2, :cond_0
 
     .line 54
     move-object v2, p1
 
-    check-cast v2, Ldefpackage/bpx;
+    check-cast v2, Lbpx;
 
-    invoke-interface {v2}, Ldefpackage/bpx;->a()Ldefpackage/ddf;
+    invoke-interface {v2}, Lbpx;->a()Lddf;
 
     move-result-object v2
 
     .line 55
-    .local v2, "a":Ldefpackage/ddf;
-    sget-object v3, Ldefpackage/ddl;->a:Ldefpackage/ddi;
+    .local v2, "a":Lddf;
+    sget-object v3, Lddl;->a:Lddi;
 
     .line 56
-    .local v3, "ddiVar":Ldefpackage/ddi;
-    invoke-interface {v2}, Ldefpackage/ddf;->f()V
+    .local v3, "ddiVar":Lddi;
+    invoke-interface {v2}, Lddf;->f()V
 
     .line 58
-    .end local v2    # "a":Ldefpackage/ddf;
-    .end local v3    # "ddiVar":Ldefpackage/ddi;
+    .end local v2    # "a":Lddf;
+    .end local v3    # "ddiVar":Lddi;
     :cond_0
     return-void
 .end method
@@ -332,17 +332,17 @@
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 91
-    sget-object v6, Ldefpackage/kag;->OFF:Ldefpackage/kag;
+    sget-object v6, Lkag;->OFF:Lkag;
 
     .line 92
-    .local v6, "kagVar":Ldefpackage/kag;
+    .local v6, "kagVar":Lkag;
     iget-object v8, v0, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->e:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v8}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v8
 
-    check-cast v8, Ldefpackage/kag;
+    check-cast v8, Lkag;
 
     invoke-virtual {v8}, Ljava/lang/Enum;->ordinal()I
 
@@ -482,11 +482,11 @@
     .restart local p2    # "f":F
     :cond_2
     :goto_1
-    sget-object v9, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->k:Ldefpackage/ouj;
+    sget-object v9, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->k:Louj;
 
     .line 116
-    .local v9, "oujVar":Ldefpackage/ouj;
-    invoke-virtual {v9}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    .local v9, "oujVar":Louj;
+    invoke-virtual {v9}, Loue;->c()Lova;
 
     move-result-object v10
 
@@ -494,7 +494,7 @@
 
     const/16 v11, 0xde0
 
-    invoke-interface {v10, v11}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v10, v11}, Lova;->G(I)Lova;
 
     move-result-object v10
 
@@ -506,10 +506,10 @@
 
     const-string v12, "Invalid zoom value: %g"
 
-    invoke-interface {v10, v12, v11}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v10, v12, v11}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 117
-    invoke-virtual {v9}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v9}, Loue;->c()Lova;
 
     move-result-object v10
 
@@ -517,7 +517,7 @@
 
     const/16 v11, 0xde1
 
-    invoke-interface {v10, v11}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v10, v11}, Lova;->G(I)Lova;
 
     move-result-object v10
 
@@ -537,10 +537,10 @@
 
     const-string v14, "Zoom ratio: %g, Min zoom: %g, BaseZoom: %g"
 
-    invoke-interface {v10, v14, v11, v12, v13}, Ldefpackage/ova;->A(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-interface {v10, v14, v11, v12, v13}, Lova;->A(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 118
-    .end local v9    # "oujVar":Ldefpackage/ouj;
+    .end local v9    # "oujVar":Louj;
     move/from16 v9, p2
 
     .line 121
@@ -606,13 +606,13 @@
 
     .line 124
     .local v7, "concat":Ljava/lang/CharSequence;
-    iget-object v13, v0, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->j:Ldefpackage/lzi;
+    iget-object v13, v0, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->j:Llzi;
 
     .line 125
-    .local v13, "lziVar":Ldefpackage/lzi;
+    .local v13, "lziVar":Llzi;
     if-eqz v13, :cond_3
 
-    iget-boolean v14, v13, Ldefpackage/lzi;->k:Z
+    iget-boolean v14, v13, Llzi;->k:Z
 
     if-eqz v14, :cond_3
 

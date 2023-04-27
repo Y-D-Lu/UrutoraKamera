@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/qts;
+.implements Lqts;
 
 
 # annotations
@@ -20,18 +20,18 @@
 # instance fields
 .field public final synthetic this$0:Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;
 
-.field public final synthetic val$fbVar:Ldefpackage/fb;
+.field public final synthetic val$fbVar:Lfb;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;Ldefpackage/fb;)V
+.method public constructor <init>(Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;Lfb;)V
     .locals 0
     .param p1, "this$0"    # Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;
 
     .line 41
     iput-object p1, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1$1;->this$0:Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;
 
-    iput-object p2, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1$1;->val$fbVar:Ldefpackage/fb;
+    iput-object p2, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1$1;->val$fbVar:Lfb;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,18 +40,18 @@
 
 
 # virtual methods
-.method public emit(Ljava/lang/Object;Ldefpackage/qlh;)Ljava/lang/Object;
+.method public emit(Ljava/lang/Object;Lqlh;)Ljava/lang/Object;
     .locals 1
     .param p1, "obj2"    # Ljava/lang/Object;
-    .param p2, "qlhVar"    # Ldefpackage/qlh;
+    .param p2, "qlhVar"    # Lqlh;
 
     .line 44
-    iget-object v0, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1$1;->val$fbVar:Ldefpackage/fb;
+    iget-object v0, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1$1;->val$fbVar:Lfb;
 
-    invoke-interface {v0, p1}, Ldefpackage/fb;->accept(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lfb;->accept(Ljava/lang/Object;)V
 
     .line 45
-    sget-object v0, Ldefpackage/qks;->a:Ldefpackage/qks;
+    sget-object v0, Lqks;->a:Lqks;
 
     return-object v0
 .end method

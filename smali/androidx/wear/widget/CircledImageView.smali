@@ -10,9 +10,9 @@
 
 .field private final c:Landroid/graphics/Paint;
 
-.field private final d:Ldefpackage/amb;
+.field private final d:Lamb;
 
-.field private final e:Ldefpackage/amd;
+.field private final e:Lamd;
 
 .field private final f:Landroid/graphics/drawable/Drawable$Callback;
 
@@ -106,14 +106,14 @@
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     .line 64
-    new-instance v0, Ldefpackage/alz;
+    new-instance v0, Lalz;
 
-    invoke-direct {v0, v7}, Ldefpackage/alz;-><init>(Landroidx/wear/widget/CircledImageView;)V
+    invoke-direct {v0, v7}, Lalz;-><init>(Landroidx/wear/widget/CircledImageView;)V
 
     move-object v8, v0
 
     .line 65
-    .local v8, "alzVar":Ldefpackage/alz;
+    .local v8, "alzVar":Lalz;
     iput-object v8, v7, Landroidx/wear/widget/CircledImageView;->f:Landroid/graphics/drawable/Drawable$Callback;
 
     .line 66
@@ -143,7 +143,7 @@
 
     move-result-object v0
 
-    sget-object v2, Ldefpackage/alx;->a:[I
+    sget-object v2, Lalx;->a:[I
 
     move-object/from16 v12, p2
 
@@ -165,7 +165,7 @@
 
     move-object v4, v13
 
-    invoke-static/range {v0 .. v6}, Ldefpackage/gl;->E(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v0 .. v6}, Lgl;->E(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 73
     invoke-virtual {v13, v9}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -459,7 +459,7 @@
     invoke-virtual {v15, v5}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 116
-    new-instance v5, Ldefpackage/amb;
+    new-instance v5, Lamb;
 
     invoke-virtual/range {p0 .. p0}, Landroidx/wear/widget/CircledImageView;->a()F
 
@@ -471,18 +471,18 @@
     .local v16, "drawable":Landroid/graphics/drawable/Drawable;
     iget v0, v7, Landroidx/wear/widget/CircledImageView;->p:F
 
-    invoke-direct {v5, v10, v9, v0}, Ldefpackage/amb;-><init>(FFF)V
+    invoke-direct {v5, v10, v9, v0}, Lamb;-><init>(FFF)V
 
-    iput-object v5, v7, Landroidx/wear/widget/CircledImageView;->d:Ldefpackage/amb;
+    iput-object v5, v7, Landroidx/wear/widget/CircledImageView;->d:Lamb;
 
     .line 117
-    new-instance v0, Ldefpackage/amd;
+    new-instance v0, Lamd;
 
-    invoke-direct {v0}, Ldefpackage/amd;-><init>()V
+    invoke-direct {v0}, Lamd;-><init>()V
 
     .line 118
-    .local v0, "amdVar":Ldefpackage/amd;
-    iput-object v0, v7, Landroidx/wear/widget/CircledImageView;->e:Ldefpackage/amd;
+    .local v0, "amdVar":Lamd;
+    iput-object v0, v7, Landroidx/wear/widget/CircledImageView;->e:Lamd;
 
     .line 119
     invoke-virtual {v0, v8}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
@@ -638,14 +638,14 @@
     .locals 2
 
     .line 149
-    iget-object v0, p0, Landroidx/wear/widget/CircledImageView;->e:Ldefpackage/amd;
+    iget-object v0, p0, Landroidx/wear/widget/CircledImageView;->e:Lamd;
 
     .line 150
-    .local v0, "amdVar":Ldefpackage/amd;
+    .local v0, "amdVar":Lamd;
     if-eqz v0, :cond_0
 
     .line 151
-    iget-object v1, v0, Ldefpackage/amd;->a:Landroid/animation/ObjectAnimator;
+    iget-object v1, v0, Lamd;->a:Landroid/animation/ObjectAnimator;
 
     invoke-virtual {v1}, Landroid/animation/ObjectAnimator;->cancel()V
 
@@ -1193,15 +1193,15 @@
 
     .line 225
     .local v2, "f":F
-    iget-object v3, v0, Landroidx/wear/widget/CircledImageView;->d:Ldefpackage/amb;
+    iget-object v3, v0, Landroidx/wear/widget/CircledImageView;->d:Lamb;
 
     .line 226
-    .local v3, "ambVar":Ldefpackage/amb;
-    iget v4, v3, Ldefpackage/amb;->a:F
+    .local v3, "ambVar":Lamb;
+    iget v4, v3, Lamb;->a:F
 
     .line 227
     .local v4, "f2":F
-    iget v5, v3, Ldefpackage/amb;->b:F
+    iget v5, v3, Lamb;->b:F
 
     .line 228
     .local v5, "f3":F
@@ -1368,7 +1368,7 @@
 
     .line 264
     :cond_0
-    iget-object v0, p0, Landroidx/wear/widget/CircledImageView;->d:Ldefpackage/amb;
+    iget-object v0, p0, Landroidx/wear/widget/CircledImageView;->d:Lamb;
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
@@ -1390,7 +1390,7 @@
 
     sub-int v4, p2, v4
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Ldefpackage/amb;->a(IIII)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lamb;->a(IIII)V
 
     .line 265
     return-void
@@ -1459,7 +1459,7 @@
 
     .line 282
     :cond_0
-    iget-object v0, p0, Landroidx/wear/widget/CircledImageView;->d:Ldefpackage/amb;
+    iget-object v0, p0, Landroidx/wear/widget/CircledImageView;->d:Lamb;
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -1473,7 +1473,7 @@
 
     sub-int/2addr v2, p4
 
-    invoke-virtual {v0, p1, p2, v1, v2}, Ldefpackage/amb;->a(IIII)V
+    invoke-virtual {v0, p1, p2, v1, v2}, Lamb;->a(IIII)V
 
     .line 284
     :cond_1
@@ -1499,10 +1499,10 @@
     iput-boolean p1, p0, Landroidx/wear/widget/CircledImageView;->r:Z
 
     .line 292
-    iget-object v0, p0, Landroidx/wear/widget/CircledImageView;->d:Ldefpackage/amb;
+    iget-object v0, p0, Landroidx/wear/widget/CircledImageView;->d:Lamb;
 
     .line 293
-    .local v0, "ambVar":Ldefpackage/amb;
+    .local v0, "ambVar":Lamb;
     if-eqz p1, :cond_0
 
     invoke-virtual {p0}, Landroidx/wear/widget/CircledImageView;->b()F
@@ -1517,16 +1517,16 @@
     move-result v1
 
     :goto_0
-    iput v1, v0, Ldefpackage/amb;->c:F
+    iput v1, v0, Lamb;->c:F
 
     .line 294
-    invoke-virtual {v0}, Ldefpackage/amb;->b()V
+    invoke-virtual {v0}, Lamb;->b()V
 
     .line 295
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 297
-    .end local v0    # "ambVar":Ldefpackage/amb;
+    .end local v0    # "ambVar":Lamb;
     :cond_1
     return-void
 .end method

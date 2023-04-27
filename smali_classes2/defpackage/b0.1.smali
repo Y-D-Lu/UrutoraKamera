@@ -1,0 +1,343 @@
+.class public Ldefpackage/b0;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/c0;->a()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public b:Lddf;
+
+.field public c:Lojc;
+
+.field public d:Ljtx;
+
+.field public final synthetic this$1:Ldefpackage/c0;
+
+.field public final synthetic val$cameraActivityTiming2:Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;
+
+.field public final synthetic val$ddfVar3:Lddf;
+
+.field public final synthetic val$jtxVar2:Ljtx;
+
+.field public final synthetic val$ojcVar2:Lojc;
+
+
+# direct methods
+.method public constructor <init>(Ldefpackage/c0;Lddf;Lojc;Ljtx;Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/c0;
+
+    .line 312
+    iput-object p1, p0, Ldefpackage/b0;->this$1:Ldefpackage/c0;
+
+    iput-object p2, p0, Ldefpackage/b0;->val$ddfVar3:Lddf;
+
+    iput-object p3, p0, Ldefpackage/b0;->val$ojcVar2:Lojc;
+
+    iput-object p4, p0, Ldefpackage/b0;->val$jtxVar2:Ljtx;
+
+    iput-object p5, p0, Ldefpackage/b0;->val$cameraActivityTiming2:Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 313
+    iput-object p2, p0, Ldefpackage/b0;->b:Lddf;
+
+    .line 314
+    iput-object p3, p0, Ldefpackage/b0;->c:Lojc;
+
+    .line 315
+    iput-object p4, p0, Ldefpackage/b0;->d:Ljtx;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 14
+
+    .line 320
+    iget-object v0, p0, Ldefpackage/b0;->val$cameraActivityTiming2:Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;
+
+    .line 321
+    .local v0, "cameraActivityTiming3":Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;
+    iget-object v1, p0, Ldefpackage/b0;->b:Lddf;
+
+    .line 322
+    .local v1, "ddfVar4":Lddf;
+    iget-object v2, p0, Ldefpackage/b0;->d:Ljtx;
+
+    .line 323
+    .local v2, "jtxVar3":Ljtx;
+    iget-object v3, p0, Ldefpackage/b0;->c:Lojc;
+
+    .line 324
+    .local v3, "ojcVar4":Lojc;
+    const-wide/16 v4, 0x0
+
+    .line 325
+    .local v4, "j":J
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getShutterButtonFirstEnabledNs()J
+
+    move-result-wide v6
+
+    const-wide/16 v8, 0x0
+
+    cmp-long v6, v6, v8
+
+    if-eqz v6, :cond_2
+
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getFirstPreviewFrameRenderedNs()J
+
+    move-result-wide v6
+
+    cmp-long v6, v6, v8
+
+    if-nez v6, :cond_0
+
+    goto :goto_0
+
+    .line 328
+    :cond_0
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getShutterButtonFirstEnabledNs()J
+
+    move-result-wide v6
+
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getActivityOnCreateStartNs()J
+
+    move-result-wide v10
+
+    sub-long/2addr v6, v10
+
+    .line 329
+    .local v6, "shutterButtonFirstEnabledNs":J
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getFirstPreviewFrameRenderedNs()J
+
+    move-result-wide v10
+
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getActivityOnCreateStartNs()J
+
+    move-result-wide v12
+
+    sub-long/2addr v10, v12
+
+    .line 330
+    .local v10, "firstPreviewFrameRenderedNs":J
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getPermissionStartupTaskTimeStartNs()J
+
+    move-result-wide v12
+
+    cmp-long v12, v12, v8
+
+    if-eqz v12, :cond_1
+
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getPermissionStartupTaskTimeEndNs()J
+
+    move-result-wide v12
+
+    cmp-long v8, v12, v8
+
+    if-eqz v8, :cond_1
+
+    .line 331
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getPermissionStartupTaskTimeEndNs()J
+
+    move-result-wide v8
+
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->getPermissionStartupTaskTimeStartNs()J
+
+    move-result-wide v12
+
+    sub-long/2addr v8, v12
+
+    move-wide v4, v8
+
+    .line 333
+    :cond_1
+    sget-object v8, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-static {v6, v7, v10, v11}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide v12
+
+    sub-long/2addr v12, v4
+
+    invoke-virtual {v8, v12, v13}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
+
+    move-result-wide v8
+
+    invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v8
+
+    invoke-static {v8}, Lojc;->i(Ljava/lang/Object;)Lojc;
+
+    move-result-object v8
+
+    .local v8, "ojcVar3":Lojc;
+    goto :goto_1
+
+    .line 326
+    .end local v6    # "shutterButtonFirstEnabledNs":J
+    .end local v8    # "ojcVar3":Lojc;
+    .end local v10    # "firstPreviewFrameRenderedNs":J
+    :cond_2
+    :goto_0
+    sget-object v8, Loih;->a:Loih;
+
+    .line 335
+    .restart local v8    # "ojcVar3":Lojc;
+    :goto_1
+    sget-object v6, Lddl;->r:Lddi;
+
+    invoke-interface {v1, v6}, Lddf;->a(Lddi;)Lojc;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/Integer;
+
+    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
+
+    move-result v6
+
+    .line 336
+    .local v6, "intValue":I
+    sget-object v7, Lddl;->p:Lddi;
+
+    invoke-interface {v1, v7}, Lddf;->a(Lddi;)Lojc;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/Integer;
+
+    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
+
+    move-result v7
+
+    .line 337
+    .local v7, "intValue2":I
+    iget-boolean v9, v0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->c:Z
+
+    if-nez v9, :cond_7
+
+    invoke-virtual {v8}, Lojc;->g()Z
+
+    move-result v9
+
+    if-nez v9, :cond_3
+
+    goto :goto_3
+
+    .line 340
+    :cond_3
+    invoke-virtual {v8}, Lojc;->c()Ljava/lang/Object;
+
+    .line 341
+    invoke-virtual {v8}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Ljava/lang/Long;
+
+    invoke-virtual {v9}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v9
+
+    int-to-long v11, v7
+
+    cmp-long v9, v9, v11
+
+    if-ltz v9, :cond_4
+
+    .line 342
+    invoke-virtual {v2}, Ljtx;->k()V
+
+    .line 344
+    :cond_4
+    sget-object v9, Lddl;->aL:Lddg;
+
+    invoke-interface {v1, v9}, Lddf;->k(Lddg;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_6
+
+    sget-object v9, Landroid/os/Build;->TYPE:Ljava/lang/String;
+
+    const-string v10, "user"
+
+    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_6
+
+    invoke-virtual {v3}, Lojc;->g()Z
+
+    move-result v9
+
+    if-eqz v9, :cond_6
+
+    invoke-virtual {v8}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Ljava/lang/Long;
+
+    invoke-virtual {v9}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v9
+
+    int-to-long v11, v6
+
+    cmp-long v9, v9, v11
+
+    if-gez v9, :cond_5
+
+    goto :goto_2
+
+    .line 347
+    :cond_5
+    invoke-virtual {v3}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Ldko;
+
+    invoke-interface {v9}, Ldko;->b()V
+
+    .line 348
+    return-void
+
+    .line 345
+    :cond_6
+    :goto_2
+    return-void
+
+    .line 338
+    :cond_7
+    :goto_3
+    return-void
+.end method

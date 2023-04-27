@@ -14,7 +14,7 @@
     return-void
 .end method
 
-.method public static a(I)Ldefpackage/kfm;
+.method public static a(I)Lkfm;
     .locals 4
     .param p0, "i"    # I
 
@@ -40,9 +40,9 @@
 
     .line 15
     :cond_0
-    new-instance v2, Ldefpackage/kfm;
+    new-instance v2, Lkfm;
 
-    invoke-direct {v2, v0, v1}, Ldefpackage/kfm;-><init>(J)V
+    invoke-direct {v2, v0, v1}, Lkfm;-><init>(J)V
 
     return-object v2
 .end method

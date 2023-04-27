@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/ohf;
+.implements Lohf;
 
 
 # static fields
@@ -13,7 +13,7 @@
 # instance fields
 .field private final audioChannels:I
 
-.field private final callback:Ldefpackage/ohe;
+.field private final callback:Lohe;
 
 .field private jniContext:J
 
@@ -27,13 +27,13 @@
 
 
 # direct methods
-.method private constructor <init>(ZLjava/nio/file/Path;IFLdefpackage/ohe;Z)V
+.method private constructor <init>(ZLjava/nio/file/Path;IFLohe;Z)V
     .locals 2
     .param p1, "z"    # Z
     .param p2, "path"    # Ljava/nio/file/Path;
     .param p3, "i"    # I
     .param p4, "f"    # F
-    .param p5, "oheVar"    # Ldefpackage/ohe;
+    .param p5, "oheVar"    # Lohe;
     .param p6, "z2"    # Z
 
     .line 29
@@ -46,7 +46,7 @@
     iput-object p2, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->modelDirectory:Ljava/nio/file/Path;
 
     .line 32
-    iput-object p5, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Ldefpackage/ohe;
+    iput-object p5, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Lohe;
 
     .line 33
     iput-boolean p6, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->skipInitGoogle:Z
@@ -66,18 +66,18 @@
     return-void
 .end method
 
-.method public constructor <init>(ZLjava/nio/file/Path;IFLdefpackage/ohe;ZLdefpackage/ohh;)V
+.method public constructor <init>(ZLjava/nio/file/Path;IFLohe;ZLohh;)V
     .locals 0
     .param p1, "z"    # Z
     .param p2, "path"    # Ljava/nio/file/Path;
     .param p3, "i"    # I
     .param p4, "f"    # F
-    .param p5, "oheVar"    # Ldefpackage/ohe;
+    .param p5, "oheVar"    # Lohe;
     .param p6, "z2"    # Z
-    .param p7, "ohhVar"    # Ldefpackage/ohh;
+    .param p7, "ohhVar"    # Lohh;
 
     .line 40
-    invoke-direct/range {p0 .. p6}, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;-><init>(ZLjava/nio/file/Path;IFLdefpackage/ohe;Z)V
+    invoke-direct/range {p0 .. p6}, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;-><init>(ZLjava/nio/file/Path;IFLohe;Z)V
 
     .line 41
     return-void
@@ -319,7 +319,7 @@
     throw v2
 .end method
 
-.method public getSpeechEnhancerModelInfo()Ldefpackage/ohn;
+.method public getSpeechEnhancerModelInfo()Lohn;
     .locals 4
 
     .line 130
@@ -332,19 +332,19 @@
     if-eqz v0, :cond_0
 
     .line 131
-    invoke-static {}, Ldefpackage/ohn;->a()Ldefpackage/ohm;
+    invoke-static {}, Lohn;->a()Lohm;
 
     move-result-object v0
 
     .line 132
-    .local v0, "a":Ldefpackage/ohm;
+    .local v0, "a":Lohm;
     iget-wide v1, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
 
     invoke-direct {p0, v1, v2}, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->avenhThumbnailWidthPixels(J)I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/ohm;->g(I)V
+    invoke-virtual {v0, v1}, Lohm;->g(I)V
 
     .line 133
     iget-wide v1, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
@@ -353,10 +353,10 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/ohm;->f(I)V
+    invoke-virtual {v0, v1}, Lohm;->f(I)V
 
     .line 134
-    sget-object v1, Ldefpackage/ohl;->c:Ljava/util/Map;
+    sget-object v1, Lohl;->c:Ljava/util/Map;
 
     iget-wide v2, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
 
@@ -372,9 +372,9 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ohl;
+    check-cast v1, Lohl;
 
-    invoke-virtual {v0, v1}, Ldefpackage/ohm;->e(Ldefpackage/ohl;)V
+    invoke-virtual {v0, v1}, Lohm;->e(Lohl;)V
 
     .line 135
     iget-wide v1, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
@@ -383,7 +383,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/ohm;->h(I)V
+    invoke-virtual {v0, v1}, Lohm;->h(I)V
 
     .line 136
     iget-wide v1, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
@@ -392,7 +392,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/ohm;->d(F)V
+    invoke-virtual {v0, v1}, Lohm;->d(F)V
 
     .line 137
     iget-wide v1, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
@@ -401,7 +401,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/ohm;->b(I)V
+    invoke-virtual {v0, v1}, Lohm;->b(I)V
 
     .line 138
     iget-wide v1, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
@@ -410,17 +410,17 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/ohm;->c(I)V
+    invoke-virtual {v0, v1}, Lohm;->c(I)V
 
     .line 139
-    invoke-virtual {v0}, Ldefpackage/ohm;->a()Ldefpackage/ohn;
+    invoke-virtual {v0}, Lohm;->a()Lohn;
 
     move-result-object v1
 
     return-object v1
 
     .line 141
-    .end local v0    # "a":Ldefpackage/ohm;
+    .end local v0    # "a":Lohm;
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -506,9 +506,9 @@
     .param p1, "f"    # F
 
     .line 158
-    iget-object v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Ldefpackage/ohe;
+    iget-object v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Lohe;
 
-    invoke-interface {v0}, Ldefpackage/ohe;->c()V
+    invoke-interface {v0}, Lohe;->c()V
 
     .line 159
     return-void
@@ -519,20 +519,20 @@
     .param p1, "bArr"    # [B
 
     .line 162
-    iget-object v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Ldefpackage/ohe;
+    iget-object v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Lohe;
 
     .line 163
-    .local v0, "oheVar":Ldefpackage/ohe;
+    .local v0, "oheVar":Lohe;
     invoke-static {p1}, Ljava/util/Optional;->ofNullable(Ljava/lang/Object;)Ljava/util/Optional;
 
     move-result-object v1
 
-    sget-object v2, Ldefpackage/jlo;->o:Ldefpackage/jlo;
+    sget-object v2, Ljlo;->o:Ljlo;
 
     invoke-virtual {v1, v2}, Ljava/util/Optional;->map(Ljava/util/function/Function;)Ljava/util/Optional;
 
     .line 164
-    invoke-interface {v0}, Ldefpackage/ohe;->d()V
+    invoke-interface {v0}, Lohe;->d()V
 
     .line 165
     return-void
@@ -543,9 +543,9 @@
     .param p1, "i"    # I
 
     .line 168
-    iget-object v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Ldefpackage/ohe;
+    iget-object v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Lohe;
 
-    invoke-interface {v0, p1}, Ldefpackage/ohe;->b(I)V
+    invoke-interface {v0, p1}, Lohe;->b(I)V
 
     .line 169
     return-void
@@ -556,9 +556,9 @@
     .param p1, "bArr"    # [B
 
     .line 172
-    iget-object v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Ldefpackage/ohe;
+    iget-object v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->callback:Lohe;
 
-    invoke-interface {v0, p1}, Ldefpackage/ohe;->a([B)V
+    invoke-interface {v0, p1}, Lohe;->a([B)V
 
     .line 173
     return-void
@@ -598,9 +598,9 @@
     throw v0
 .end method
 
-.method public provideVideoFrame(Ldefpackage/ohy;)V
+.method public provideVideoFrame(Lohy;)V
     .locals 8
-    .param p1, "ohyVar"    # Ldefpackage/ohy;
+    .param p1, "ohyVar"    # Lohy;
 
     .line 186
     iget-wide v0, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
@@ -612,12 +612,12 @@
     if-eqz v0, :cond_2
 
     .line 187
-    iget v0, p1, Ldefpackage/ohy;->e:I
+    iget v0, p1, Lohy;->e:I
 
     if-nez v0, :cond_1
 
     .line 190
-    iget-object v0, p1, Ldefpackage/ohy;->f:Ljava/util/Optional;
+    iget-object v0, p1, Lohy;->f:Ljava/util/Optional;
 
     invoke-virtual {v0}, Ljava/util/Optional;->isPresent()Z
 
@@ -628,25 +628,25 @@
     .line 191
     iget-wide v1, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
 
-    iget-object v3, p1, Ldefpackage/ohy;->a:Ljava/nio/ByteBuffer;
+    iget-object v3, p1, Lohy;->a:Ljava/nio/ByteBuffer;
 
-    iget v4, p1, Ldefpackage/ohy;->b:I
+    iget v4, p1, Lohy;->b:I
 
-    iget v5, p1, Ldefpackage/ohy;->c:I
+    iget v5, p1, Lohy;->c:I
 
-    iget-object v0, p1, Ldefpackage/ohy;->d:Ldefpackage/ohl;
+    iget-object v0, p1, Lohy;->d:Lohl;
 
-    iget v6, v0, Ldefpackage/ohl;->d:I
+    iget v6, v0, Lohl;->d:I
 
-    iget-object v0, p1, Ldefpackage/ohy;->f:Ljava/util/Optional;
+    iget-object v0, p1, Lohy;->f:Ljava/util/Optional;
 
     invoke-virtual {v0}, Ljava/util/Optional;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/ptd;
+    check-cast v0, Lptd;
 
-    invoke-virtual {v0}, Ldefpackage/pnm;->g()[B
+    invoke-virtual {v0}, Lpnm;->g()[B
 
     move-result-object v0
 
@@ -665,15 +665,15 @@
     :cond_0
     iget-wide v1, p0, Lcom/google/babelfish/device/avenh/l2l/speechenhancer2/jni/SpeechEnhancerJniWrapperRealtime;->jniContext:J
 
-    iget-object v3, p1, Ldefpackage/ohy;->a:Ljava/nio/ByteBuffer;
+    iget-object v3, p1, Lohy;->a:Ljava/nio/ByteBuffer;
 
-    iget v4, p1, Ldefpackage/ohy;->b:I
+    iget v4, p1, Lohy;->b:I
 
-    iget v5, p1, Ldefpackage/ohy;->c:I
+    iget v5, p1, Lohy;->c:I
 
-    iget-object v0, p1, Ldefpackage/ohy;->d:Ldefpackage/ohl;
+    iget-object v0, p1, Lohy;->d:Lohl;
 
-    iget v6, v0, Ldefpackage/ohl;->d:I
+    iget v6, v0, Lohl;->d:I
 
     move-object v0, p0
 

@@ -1,86 +1,70 @@
-.class public final Ldefpackage/no;
-.super Landroid/view/View$BaseSavedState;
+.class public Ldefpackage/No;
+.super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/dp;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public a:Z
+.field public final synthetic this$1:Ldefpackage/dp;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    .line 10
-    new-instance v0, Ldefpackage/ba;
-
-    const/16 v1, 0x11
-
-    invoke-direct {v0, v1}, Ldefpackage/ba;-><init>(I)V
-
-    sput-object v0, Ldefpackage/no;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 1
-    .param p1, "parcel"    # Landroid/os/Parcel;
-
-    .line 14
-    invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
-
-    .line 15
-    invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    iput-boolean v0, p0, Ldefpackage/no;->a:Z
-
-    .line 16
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Parcelable;)V
+.method public constructor <init>(Ldefpackage/dp;)V
     .locals 0
-    .param p1, "parcelable"    # Landroid/os/Parcelable;
+    .param p1, "this$1"    # Ldefpackage/dp;
 
-    .line 19
-    invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
+    .line 4942
+    iput-object p1, p0, Ldefpackage/No;->this$1:Ldefpackage/dp;
 
-    .line 20
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 1
-    .param p1, "parcel"    # Landroid/os/Parcel;
-    .param p2, "i"    # I
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 24
-    invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    .line 4945
+    move-object v0, p1
 
-    .line 25
-    iget-boolean v0, p0, Ldefpackage/no;->a:Z
+    check-cast v0, Landroid/animation/Animator;
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeByte(B)V
+    .line 4946
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/No;->this$1:Ldefpackage/dp;
 
-    .line 26
+    iget-object v1, v1, Ldefpackage/dp;->this$0:Ljkz;
+
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
+
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
+
+    .line 4947
     return-void
+.end method
+
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
+
+    .line 4951
+    return-object p1
 .end method

@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/lie;
+.implements Llie;
 
 
 # instance fields

@@ -13,25 +13,25 @@
     return-void
 .end method
 
-.method public static read(Ldefpackage/aks;)Landroidx/media/AudioAttributesImplApi26;
+.method public static read(Laks;)Landroidx/media/AudioAttributesImplApi26;
     .locals 1
-    .param p0, "aksVar"    # Ldefpackage/aks;
+    .param p0, "aksVar"    # Laks;
 
     .line 10
-    invoke-static {p0}, Landroidx/media/AudioAttributesImplApi26Parcelizer;->read(Ldefpackage/aks;)Landroidx/media/AudioAttributesImplApi26;
+    invoke-static {p0}, Landroidx/media/AudioAttributesImplApi26Parcelizer;->read(Laks;)Landroidx/media/AudioAttributesImplApi26;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesImplApi26;Ldefpackage/aks;)V
+.method public static write(Landroidx/media/AudioAttributesImplApi26;Laks;)V
     .locals 0
     .param p0, "audioAttributesImplApi26"    # Landroidx/media/AudioAttributesImplApi26;
-    .param p1, "aksVar"    # Ldefpackage/aks;
+    .param p1, "aksVar"    # Laks;
 
     .line 14
-    invoke-static {p0, p1}, Landroidx/media/AudioAttributesImplApi26Parcelizer;->write(Landroidx/media/AudioAttributesImplApi26;Ldefpackage/aks;)V
+    invoke-static {p0, p1}, Landroidx/media/AudioAttributesImplApi26Parcelizer;->write(Landroidx/media/AudioAttributesImplApi26;Laks;)V
 
     .line 15
     return-void

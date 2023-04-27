@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/auth/api/signin/SignInAccount;
-.super Ldefpackage/kno;
+.super Lkno;
 .source ""
 
 # interfaces
@@ -29,11 +29,11 @@
     .locals 2
 
     .line 14
-    new-instance v0, Ldefpackage/si;
+    new-instance v0, Lsi;
 
     const/16 v1, 0x11
 
-    invoke-direct {v0, v1}, Ldefpackage/si;-><init>(I)V
+    invoke-direct {v0, v1}, Lsi;-><init>(I)V
 
     sput-object v0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -47,7 +47,7 @@
     .param p3, "str2"    # Ljava/lang/String;
 
     .line 21
-    invoke-direct {p0}, Ldefpackage/kno;-><init>()V
+    invoke-direct {p0}, Lkno;-><init>()V
 
     .line 22
     iput-object p2, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
@@ -55,7 +55,7 @@
     .line 23
     const-string v0, "8.3 and 8.4 SDKs require non-null email"
 
-    invoke-static {p1, v0}, Ldefpackage/mip;->dt(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Lmip;->dt(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 24
     iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->a:Ljava/lang/String;
@@ -63,7 +63,7 @@
     .line 25
     const-string v0, "8.3 and 8.4 SDKs require non-null userId"
 
-    invoke-static {p3, v0}, Ldefpackage/mip;->dt(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {p3, v0}, Lmip;->dt(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 26
     iput-object p3, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->c:Ljava/lang/String;
@@ -80,7 +80,7 @@
     .param p2, "i"    # I
 
     .line 31
-    invoke-static {p1}, Ldefpackage/mip;->ct(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lmip;->ct(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -90,24 +90,24 @@
 
     const/4 v2, 0x4
 
-    invoke-static {p1, v2, v1}, Ldefpackage/mip;->cI(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, v2, v1}, Lmip;->cI(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 33
     iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     const/4 v2, 0x7
 
-    invoke-static {p1, v2, v1, p2}, Ldefpackage/mip;->cH(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+    invoke-static {p1, v2, v1, p2}, Lmip;->cH(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 
     .line 34
     iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->c:Ljava/lang/String;
 
     const/16 v2, 0x8
 
-    invoke-static {p1, v2, v1}, Ldefpackage/mip;->cI(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, v2, v1}, Lmip;->cI(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 35
-    invoke-static {p1, v0}, Ldefpackage/mip;->cv(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lmip;->cv(Landroid/os/Parcel;I)V
 
     .line 36
     return-void

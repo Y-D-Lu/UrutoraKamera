@@ -1,0 +1,20 @@
+.class public final Ljgz;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public a:Landroid/animation/AnimatorSet;
+
+.field public b:Landroid/animation/AnimatorSet;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

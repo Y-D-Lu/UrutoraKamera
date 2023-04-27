@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jib;
+.implements Ljib;
 
 
 # instance fields

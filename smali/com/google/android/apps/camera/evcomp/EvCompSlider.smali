@@ -200,7 +200,7 @@
 
     .line 57
     .local v1, "childAt":Landroid/view/View;
-    instance-of v2, v1, Ldefpackage/dmf;
+    instance-of v2, v1, Ldmf;
 
     if-eqz v2, :cond_0
 

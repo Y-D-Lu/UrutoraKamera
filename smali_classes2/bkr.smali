@@ -4,4 +4,4 @@
 
 # interfaces
 .implements Ljava/util/concurrent/Future;
-.implements Ldefpackage/blh;
+.implements Lblh;

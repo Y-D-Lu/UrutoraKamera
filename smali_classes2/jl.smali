@@ -1,0 +1,121 @@
+.class public final Ljl;
+.super Lgq;
+.source ""
+
+
+# instance fields
+.field public final a:Ljp;
+
+
+# direct methods
+.method public constructor <init>(Ljp;)V
+    .locals 0
+    .param p1, "jpVar"    # Ljp;
+
+    .line 14
+    invoke-direct {p0}, Lgq;-><init>()V
+
+    .line 15
+    iput-object p1, p0, Ljl;->a:Ljp;
+
+    .line 16
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b()V
+    .locals 5
+
+    .line 21
+    iget-object v0, p0, Ljl;->a:Ljp;
+
+    .line 22
+    .local v0, "jpVar":Ljp;
+    iget-boolean v1, v0, Ljp;->k:Z
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, v0, Ljp;->f:Landroid/view/View;
+
+    move-object v2, v1
+
+    .local v2, "view":Landroid/view/View;
+    if-eqz v1, :cond_0
+
+    .line 23
+    sget v1, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
+
+    invoke-virtual {v2, v1}, Landroid/view/View;->setTranslationY(F)V
+
+    .line 24
+    iget-object v3, p0, Ljl;->a:Ljp;
+
+    iget-object v3, v3, Ljp;->c:Landroid/support/v7/widget/ActionBarContainer;
+
+    invoke-virtual {v3, v1}, Landroid/widget/FrameLayout;->setTranslationY(F)V
+
+    .line 26
+    .end local v2    # "view":Landroid/view/View;
+    :cond_0
+    iget-object v1, p0, Ljl;->a:Ljp;
+
+    iget-object v1, v1, Ljp;->c:Landroid/support/v7/widget/ActionBarContainer;
+
+    const/16 v2, 0x8
+
+    invoke-virtual {v1, v2}, Landroid/support/v7/widget/ActionBarContainer;->setVisibility(I)V
+
+    .line 27
+    iget-object v1, p0, Ljl;->a:Ljp;
+
+    iget-object v1, v1, Ljp;->c:Landroid/support/v7/widget/ActionBarContainer;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/support/v7/widget/ActionBarContainer;->a(Z)V
+
+    .line 28
+    iget-object v1, p0, Ljl;->a:Ljp;
+
+    .line 29
+    .local v1, "jpVar2":Ljp;
+    const/4 v2, 0x0
+
+    iput-object v2, v1, Ljp;->m:Lke;
+
+    .line 30
+    iget-object v3, v1, Ljp;->i:Ljv;
+
+    .line 31
+    .local v3, "jvVar":Ljv;
+    if-eqz v3, :cond_1
+
+    .line 32
+    iget-object v4, v1, Ljp;->h:Ljw;
+
+    invoke-interface {v3, v4}, Ljv;->a(Ljw;)V
+
+    .line 33
+    iput-object v2, v1, Ljp;->h:Ljw;
+
+    .line 34
+    iput-object v2, v1, Ljp;->i:Ljv;
+
+    .line 36
+    :cond_1
+    iget-object v2, p0, Ljl;->a:Ljp;
+
+    iget-object v2, v2, Ljp;->b:Landroid/support/v7/widget/ActionBarOverlayLayout;
+
+    .line 37
+    .local v2, "actionBarOverlayLayout":Landroid/support/v7/widget/ActionBarOverlayLayout;
+    if-eqz v2, :cond_2
+
+    .line 38
+    invoke-static {v2}, Lgl;->D(Landroid/view/View;)V
+
+    .line 40
+    :cond_2
+    return-void
+.end method

@@ -27,11 +27,11 @@
     .locals 2
 
     .line 18
-    new-instance v0, Ldefpackage/si;
+    new-instance v0, Lsi;
 
     const/4 v1, 0x2
 
-    invoke-direct {v0, v1}, Ldefpackage/si;-><init>(I)V
+    invoke-direct {v0, v1}, Lsi;-><init>(I)V
 
     sput-object v0, Landroid/support/wearable/complications/TimeDifferenceText;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -204,7 +204,7 @@
 
     .line 57
     .local v2, "i":I
-    sget-object v3, Ldefpackage/sj;->a:[I
+    sget-object v3, Lsj;->a:[I
 
     invoke-virtual {p2}, Ljava/util/concurrent/TimeUnit;->ordinal()I
 

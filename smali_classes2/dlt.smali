@@ -3,6 +3,6 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/llt;
-.implements Ldefpackage/dly;
-.implements Ldefpackage/dlx;
+.implements Lllt;
+.implements Ldly;
+.implements Ldlx;

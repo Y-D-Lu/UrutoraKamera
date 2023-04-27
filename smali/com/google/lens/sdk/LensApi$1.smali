@@ -20,13 +20,13 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/lens/sdk/LensApi;
 
-.field public final synthetic val$a2:Ldefpackage/pms;
+.field public final synthetic val$a2:Lpms;
 
 .field public final synthetic val$activity:Landroid/app/Activity;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;Ldefpackage/pms;)V
+.method public constructor <init>(Lcom/google/lens/sdk/LensApi;Landroid/app/Activity;Lpms;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/lens/sdk/LensApi;
 
@@ -35,7 +35,7 @@
 
     iput-object p2, p0, Lcom/google/lens/sdk/LensApi$1;->val$activity:Landroid/app/Activity;
 
-    iput-object p3, p0, Lcom/google/lens/sdk/LensApi$1;->val$a2:Ldefpackage/pms;
+    iput-object p3, p0, Lcom/google/lens/sdk/LensApi$1;->val$a2:Lpms;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,20 +56,20 @@
 
     .line 352
     .local v7, "activity2":Landroid/app/Activity;
-    iget-object v8, p0, Lcom/google/lens/sdk/LensApi$1;->val$a2:Ldefpackage/pms;
+    iget-object v8, p0, Lcom/google/lens/sdk/LensApi$1;->val$a2:Lpms;
 
     .line 353
-    .local v8, "pmsVar":Ldefpackage/pms;
+    .local v8, "pmsVar":Lpms;
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
     move-result-wide v9
 
     .line 354
     .local v9, "elapsedRealtimeNanos":J
-    iget-object v11, v0, Lcom/google/lens/sdk/LensApi;->b:Ldefpackage/mfn;
+    iget-object v11, v0, Lcom/google/lens/sdk/LensApi;->b:Lmfn;
 
     .line 355
-    .local v11, "mfnVar":Ldefpackage/mfn;
+    .local v11, "mfnVar":Lmfn;
     new-instance v12, Lcom/google/lens/sdk/LensApi$1$1;
 
     move-object v1, v12
@@ -82,20 +82,20 @@
 
     move-object v6, v7
 
-    invoke-direct/range {v1 .. v6}, Lcom/google/lens/sdk/LensApi$1$1;-><init>(Lcom/google/lens/sdk/LensApi$1;Ldefpackage/pms;JLandroid/app/Activity;)V
+    invoke-direct/range {v1 .. v6}, Lcom/google/lens/sdk/LensApi$1$1;-><init>(Lcom/google/lens/sdk/LensApi$1;Lpms;JLandroid/app/Activity;)V
 
     .line 374
-    .local v1, "mfmVar":Ldefpackage/mfm;
-    invoke-static {}, Ldefpackage/mip;->F()V
+    .local v1, "mfmVar":Lmfm;
+    invoke-static {}, Lmip;->F()V
 
     .line 375
-    new-instance v2, Ldefpackage/mfl;
+    new-instance v2, Lmfl;
 
     const/4 v3, 0x0
 
-    invoke-direct {v2, v11, v1, v3}, Ldefpackage/mfl;-><init>(Ldefpackage/mfn;Ldefpackage/mfm;I)V
+    invoke-direct {v2, v11, v1, v3}, Lmfl;-><init>(Lmfn;Lmfm;I)V
 
-    invoke-virtual {v11, v2}, Ldefpackage/mfn;->d(Ldefpackage/mfm;)V
+    invoke-virtual {v11, v2}, Lmfn;->d(Lmfm;)V
 
     .line 376
     return-void

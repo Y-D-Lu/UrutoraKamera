@@ -1,94 +1,105 @@
-.class final Ldefpackage/oc;
-.super Landroid/animation/AnimatorListenerAdapter;
+.class public Ldefpackage/Oc;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lftr;->f()Llie;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/qs;
-
-.field public final b:Landroid/view/ViewPropertyAnimator;
-
-.field public final c:Landroid/view/View;
-
-.field public final d:Ldefpackage/py;
+.field public final synthetic this$0:Lftr;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/py;Ldefpackage/qs;Landroid/view/ViewPropertyAnimator;Landroid/view/View;)V
+.method public constructor <init>(Lftr;)V
     .locals 0
-    .param p1, "pyVar"    # Ldefpackage/py;
-    .param p2, "qsVar"    # Ldefpackage/qs;
-    .param p3, "viewPropertyAnimator"    # Landroid/view/ViewPropertyAnimator;
-    .param p4, "view"    # Landroid/view/View;
+    .param p1, "this$0"    # Lftr;
 
-    .line 16
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    .line 48
+    iput-object p1, p0, Ldefpackage/Oc;->this$0:Lftr;
 
-    .line 17
-    iput-object p1, p0, Ldefpackage/oc;->d:Ldefpackage/py;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
-    iput-object p2, p0, Ldefpackage/oc;->a:Ldefpackage/qs;
-
-    .line 19
-    iput-object p3, p0, Ldefpackage/oc;->b:Landroid/view/ViewPropertyAnimator;
-
-    .line 20
-    iput-object p4, p0, Ldefpackage/oc;->c:Landroid/view/View;
-
-    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
+.method public final close()V
     .locals 2
-    .param p1, "animator"    # Landroid/animation/Animator;
 
-    .line 25
-    iget-object v0, p0, Ldefpackage/oc;->b:Landroid/view/ViewPropertyAnimator;
+    .line 51
+    iget-object v0, p0, Ldefpackage/Oc;->this$0:Lftr;
 
-    const/4 v1, 0x0
+    .line 52
+    .local v0, "ftrVar":Lftr;
+    monitor-enter v0
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
+    .line 53
+    :try_start_0
+    iget-object v1, v0, Lftr;->a:Landroid/hardware/SensorManager;
 
-    .line 26
-    iget-object v0, p0, Ldefpackage/oc;->c:Landroid/view/View;
+    invoke-virtual {v1, v0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    .line 54
+    iget-object v1, v0, Lftr;->g:Llzb;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    invoke-virtual {v1, v0}, Llzb;->c(Llyy;)V
 
-    .line 27
-    iget-object v0, p0, Ldefpackage/oc;->d:Ldefpackage/py;
+    .line 55
+    iget-object v1, v0, Lftr;->d:Lojc;
 
-    iget-object v1, p0, Ldefpackage/oc;->a:Ldefpackage/qs;
+    invoke-virtual {v1}, Lojc;->g()Z
 
-    invoke-virtual {v0, v1}, Ldefpackage/py;->a(Ldefpackage/qs;)V
+    move-result v1
 
-    .line 28
-    iget-object v0, p0, Ldefpackage/oc;->d:Ldefpackage/py;
+    if-eqz v1, :cond_0
 
-    iget-object v0, v0, Ldefpackage/py;->k:Ljava/util/ArrayList;
+    .line 56
+    iget-object v1, v0, Lftr;->d:Lojc;
 
-    iget-object v1, p0, Ldefpackage/oc;->a:Ldefpackage/qs;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    move-result-object v1
 
-    .line 29
-    iget-object v0, p0, Ldefpackage/oc;->d:Ldefpackage/py;
+    check-cast v1, Landroid/os/Handler;
 
-    invoke-virtual {v0}, Ldefpackage/py;->g()V
+    invoke-virtual {v1}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
-    .line 30
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/os/Looper;->quitSafely()V
+
+    .line 57
+    sget-object v1, Loih;->a:Loih;
+
+    iput-object v1, v0, Lftr;->d:Lojc;
+
+    .line 59
+    :cond_0
+    monitor-exit v0
+
+    .line 60
     return-void
-.end method
 
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 0
-    .param p1, "animator"    # Landroid/animation/Animator;
+    .line 59
+    :catchall_0
+    move-exception v1
 
-    .line 34
-    return-void
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
 .end method

@@ -18,9 +18,9 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/ahm;)V
+.method public final a(Lahm;)V
     .locals 1
-    .param p1, "ahmVar"    # Ldefpackage/ahm;
+    .param p1, "ahmVar"    # Lahm;
 
     .line 18
     const/4 v0, 0x0

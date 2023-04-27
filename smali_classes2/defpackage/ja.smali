@@ -1,366 +1,165 @@
-.class public Ldefpackage/ja;
-.super Landroid/app/Dialog;
+.class public Ldefpackage/Ja;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfah;->m()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private a:Ldefpackage/ii;
-
-.field private final b:Ldefpackage/fm;
+.field public final synthetic this$0:Lfah;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;I)V
-    .locals 3
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "i"    # I
+.method public constructor <init>(Lfah;)V
+    .locals 0
+    .param p1, "this$0"    # Lfah;
 
-    .line 20
-    invoke-static {p1, p2}, Ldefpackage/ja;->a(Landroid/content/Context;I)I
+    .line 186
+    iput-object p1, p0, Ldefpackage/Ja;->this$0:Lfah;
 
-    move-result v0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
-
-    .line 21
-    new-instance v0, Ldefpackage/iz;
-
-    invoke-direct {v0, p0}, Ldefpackage/iz;-><init>(Ldefpackage/ja;)V
-
-    iput-object v0, p0, Ldefpackage/ja;->b:Ldefpackage/fm;
-
-    .line 22
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    .line 23
-    .local v0, "b":Ldefpackage/ii;
-    move-object v1, v0
-
-    check-cast v1, Ldefpackage/iy;
-
-    invoke-static {p1, p2}, Ldefpackage/ja;->a(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v1, Ldefpackage/iy;->D:I
-
-    .line 24
-    invoke-virtual {v0}, Ldefpackage/ii;->m()V
-
-    .line 25
     return-void
-.end method
-
-.method private static a(Landroid/content/Context;I)I
-    .locals 4
-    .param p0, "context"    # Landroid/content/Context;
-    .param p1, "i"    # I
-
-    .line 28
-    if-nez p1, :cond_0
-
-    .line 29
-    new-instance v0, Landroid/util/TypedValue;
-
-    invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
-
-    .line 30
-    .local v0, "typedValue":Landroid/util/TypedValue;
-    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v1
-
-    const v2, 0x7f040158
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v1, v2, v0, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
-
-    .line 31
-    iget v1, v0, Landroid/util/TypedValue;->resourceId:I
-
-    return v1
-
-    .line 33
-    .end local v0    # "typedValue":Landroid/util/TypedValue;
-    :cond_0
-    return p1
 .end method
 
 
 # virtual methods
-.method public final addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
+.method public final fB(Ljava/lang/Object;)V
+    .locals 8
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 38
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
+    .line 189
+    iget-object v0, p0, Ldefpackage/Ja;->this$0:Lfah;
 
-    move-result-object v0
+    .line 190
+    .local v0, "fahVar":Lfah;
+    move-object v1, p1
 
-    invoke-virtual {v0, p1, p2}, Ldefpackage/ii;->c(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    check-cast v1, Lcwi;
 
-    .line 39
-    return-void
-.end method
+    .line 191
+    .local v1, "cwiVar":Lcwi;
+    iget-object v2, v0, Lfah;->v:Lfwc;
 
-.method public final b()Ldefpackage/ii;
-    .locals 3
+    .line 192
+    .local v2, "fwcVar":Lfwc;
+    if-eqz v2, :cond_0
 
-    .line 42
-    iget-object v0, p0, Ldefpackage/ja;->a:Ldefpackage/ii;
+    .line 193
+    invoke-virtual {v2}, Lfwc;->close()V
 
-    if-nez v0, :cond_0
-
-    .line 43
-    new-instance v0, Ldefpackage/iy;
-
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2, p0}, Ldefpackage/iy;-><init>(Landroid/content/Context;Landroid/view/Window;Ljava/lang/Object;)V
-
-    iput-object v0, p0, Ldefpackage/ja;->a:Ldefpackage/ii;
-
-    .line 45
+    .line 195
     :cond_0
-    iget-object v0, p0, Ldefpackage/ja;->a:Ldefpackage/ii;
+    const/4 v3, 0x0
 
-    return-object v0
-.end method
+    iput-object v3, v0, Lfah;->v:Lfwc;
 
-.method public final c(Landroid/view/KeyEvent;)Z
-    .locals 1
-    .param p1, "keyEvent"    # Landroid/view/KeyEvent;
+    .line 196
+    iget-object v4, v0, Lfah;->n:Lfwb;
 
-    .line 50
-    invoke-super {p0, p1}, Landroid/app/Dialog;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    .line 197
+    .local v4, "fwbVar":Lfwb;
+    if-eqz v4, :cond_1
 
-    move-result v0
+    .line 198
+    const/4 v5, 0x1
 
-    return v0
-.end method
+    invoke-virtual {v4, v5}, Lfwb;->cancel(Z)Z
 
-.method public final d()V
-    .locals 2
+    .line 199
+    iput-object v3, v0, Lfah;->n:Lfwb;
 
-    .line 54
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
+    .line 201
+    :cond_1
+    iget-object v3, v0, Lfah;->p:Ljhd;
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljhd;->a()V
 
-    const/4 v1, 0x1
+    .line 202
+    iget-object v3, v0, Lfah;->k:Lghg;
 
-    invoke-virtual {v0, v1}, Ldefpackage/ii;->n(I)V
+    iget-object v5, v0, Lfah;->l:Lcvo;
 
-    .line 55
-    return-void
-.end method
+    iget-object v6, v0, Lfah;->m:Lghu;
 
-.method public final dismiss()V
-    .locals 1
+    sget-object v7, Ljrl;->IMAGE_INTENT:Ljrl;
 
-    .line 59
-    invoke-super {p0}, Landroid/app/Dialog;->dismiss()V
+    invoke-interface {v3, v5, v6, v7}, Lghg;->a(Lcvo;Lghu;Ljrl;)Lfwb;
 
-    .line 60
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
+    move-result-object v3
 
-    move-result-object v0
+    iput-object v3, v0, Lfah;->n:Lfwb;
 
-    invoke-virtual {v0}, Ldefpackage/ii;->f()V
+    .line 203
+    iget-object v3, v0, Lfah;->d:Lkas;
 
-    .line 61
-    return-void
-.end method
+    .line 204
+    .local v3, "kasVar":Lkas;
+    move-object v5, v3
 
-.method public final dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-    .locals 1
-    .param p1, "keyEvent"    # Landroid/view/KeyEvent;
+    check-cast v5, Lkbi;
 
-    .line 65
-    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    iget-boolean v5, v5, Lkbi;->L:Z
 
-    move-result-object v0
+    if-eqz v5, :cond_2
 
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+    .line 205
+    invoke-interface {v3}, Lkas;->h()V
 
-    .line 66
-    iget-object v0, p0, Ldefpackage/ja;->b:Ldefpackage/fm;
+    .line 207
+    :cond_2
+    iget-object v5, v0, Lfah;->u:Lddf;
 
-    invoke-static {v0, p1}, Ldefpackage/eu;->d(Ldefpackage/fm;Landroid/view/KeyEvent;)Z
+    sget-object v6, Lddl;->X:Lddg;
 
-    move-result v0
+    invoke-interface {v5, v6}, Lddf;->k(Lddg;)Z
 
-    return v0
-.end method
+    move-result v5
 
-.method public final findViewById(I)Landroid/view/View;
-    .locals 1
-    .param p1, "i"    # I
+    if-eqz v5, :cond_3
 
-    .line 71
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
+    .line 208
+    iget-object v5, v0, Lfah;->d:Lkas;
 
-    move-result-object v0
+    invoke-interface {v5}, Lkas;->o()V
 
-    invoke-virtual {v0, p1}, Ldefpackage/ii;->b(I)Landroid/view/View;
+    .line 209
+    iget-object v5, v0, Lfah;->d:Lkas;
 
-    move-result-object v0
+    const/4 v6, 0x0
 
-    return-object v0
-.end method
+    invoke-interface {v5, v6}, Lkas;->p(Z)V
 
-.method public final invalidateOptionsMenu()V
-    .locals 1
+    .line 211
+    :cond_3
+    iget-object v5, v0, Lfah;->n:Lfwb;
 
-    .line 76
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
+    .line 212
+    .local v5, "fwbVar2":Lfwb;
+    if-eqz v5, :cond_4
 
-    move-result-object v0
+    .line 213
+    new-instance v6, Lfaf;
 
-    invoke-virtual {v0}, Ldefpackage/ii;->e()V
+    invoke-direct {v6, v0}, Lfaf;-><init>(Lfah;)V
 
-    .line 77
-    return-void
-.end method
+    iget-object v7, v0, Lfah;->g:Llar;
 
-.method public onCreate(Landroid/os/Bundle;)V
-    .locals 1
-    .param p1, "bundle"    # Landroid/os/Bundle;
+    invoke-static {v5, v6, v7}, Lplk;->af(Lpht;Lphh;Ljava/util/concurrent/Executor;)V
 
-    .line 82
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ldefpackage/ii;->d()V
-
-    .line 83
-    invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
-
-    .line 84
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ldefpackage/ii;->m()V
-
-    .line 85
-    return-void
-.end method
-
-.method public final onStop()V
-    .locals 1
-
-    .line 89
-    invoke-super {p0}, Landroid/app/Dialog;->onStop()V
-
-    .line 90
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ldefpackage/ii;->g()V
-
-    .line 91
-    return-void
-.end method
-
-.method public setContentView(I)V
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 95
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ldefpackage/ii;->i(I)V
-
-    .line 96
-    return-void
-.end method
-
-.method public setContentView(Landroid/view/View;)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-
-    .line 100
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ldefpackage/ii;->j(Landroid/view/View;)V
-
-    .line 101
-    return-void
-.end method
-
-.method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
-
-    .line 105
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2}, Ldefpackage/ii;->k(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 106
-    return-void
-.end method
-
-.method public final setTitle(I)V
-    .locals 2
-    .param p1, "i"    # I
-
-    .line 110
-    invoke-super {p0, p1}, Landroid/app/Dialog;->setTitle(I)V
-
-    .line 111
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ldefpackage/ii;->l(Ljava/lang/CharSequence;)V
-
-    .line 112
-    return-void
-.end method
-
-.method public setTitle(Ljava/lang/CharSequence;)V
-    .locals 1
-    .param p1, "charSequence"    # Ljava/lang/CharSequence;
-
-    .line 116
-    invoke-super {p0, p1}, Landroid/app/Dialog;->setTitle(Ljava/lang/CharSequence;)V
-
-    .line 117
-    invoke-virtual {p0}, Ldefpackage/ja;->b()Ldefpackage/ii;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ldefpackage/ii;->l(Ljava/lang/CharSequence;)V
-
-    .line 118
+    .line 215
+    :cond_4
     return-void
 .end method

@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field public final a:Ldefpackage/duj;
+.field public final a:Lduj;
 
-.field public final b:Ldefpackage/dul;
+.field public final b:Ldul;
 
 .field public c:Landroid/graphics/PointF;
 
 .field public final d:F
 
-.field private e:Ldefpackage/jrz;
+.field private e:Ljrz;
 
 .field private f:Z
 
@@ -27,11 +27,11 @@
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 34
-    new-instance v0, Ldefpackage/duk;
+    new-instance v0, Lduk;
 
-    invoke-direct {v0}, Ldefpackage/duk;-><init>()V
+    invoke-direct {v0}, Lduk;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a:Ldefpackage/duj;
+    iput-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a:Lduj;
 
     .line 35
     new-instance v0, Landroid/graphics/drawable/ShapeDrawable;
@@ -65,11 +65,11 @@
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 40
-    new-instance v2, Ldefpackage/dum;
+    new-instance v2, Ldum;
 
-    invoke-direct {v2, v0}, Ldefpackage/dum;-><init>(Landroid/graphics/drawable/ShapeDrawable;)V
+    invoke-direct {v2, v0}, Ldum;-><init>(Landroid/graphics/drawable/ShapeDrawable;)V
 
-    iput-object v2, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->b:Ldefpackage/dul;
+    iput-object v2, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->b:Ldul;
 
     .line 41
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -92,20 +92,20 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Ldefpackage/duj;Ldefpackage/dul;)V
+.method public constructor <init>(Landroid/content/Context;Lduj;Ldul;)V
     .locals 2
     .param p1, "context"    # Landroid/content/Context;
-    .param p2, "dujVar"    # Ldefpackage/duj;
-    .param p3, "dulVar"    # Ldefpackage/dul;
+    .param p2, "dujVar"    # Lduj;
+    .param p3, "dulVar"    # Ldul;
 
     .line 45
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     .line 46
-    iput-object p2, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a:Ldefpackage/duj;
+    iput-object p2, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a:Lduj;
 
     .line 47
-    iput-object p3, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->b:Ldefpackage/dul;
+    iput-object p3, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->b:Ldul;
 
     .line 48
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -128,19 +128,19 @@
     return-void
 .end method
 
-.method public static a(Ldefpackage/jrz;)I
+.method public static a(Ljrz;)I
     .locals 3
-    .param p0, "jrzVar"    # Ldefpackage/jrz;
+    .param p0, "jrzVar"    # Ljrz;
 
     .line 52
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
     .line 53
-    .local v0, "jrzVar2":Ldefpackage/jrz;
-    sget-object v1, Ldefpackage/lic;->CLOCKWISE_0:Ldefpackage/lic;
+    .local v0, "jrzVar2":Ljrz;
+    sget-object v1, Llic;->CLOCKWISE_0:Llic;
 
     .line 54
-    .local v1, "licVar":Ldefpackage/lic;
+    .local v1, "licVar":Llic;
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v2
@@ -238,14 +238,14 @@
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 77
-    iget-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a:Ldefpackage/duj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a:Lduj;
 
-    invoke-interface {v0, p1}, Ldefpackage/duj;->a(Landroid/graphics/Canvas;)V
+    invoke-interface {v0, p1}, Lduj;->a(Landroid/graphics/Canvas;)V
 
     .line 78
-    iget-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->b:Ldefpackage/dul;
+    iget-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->b:Ldul;
 
-    invoke-interface {v0, p1}, Ldefpackage/dul;->a(Landroid/graphics/Canvas;)V
+    invoke-interface {v0, p1}, Ldul;->a(Landroid/graphics/Canvas;)V
 
     .line 79
     return-void
@@ -273,10 +273,10 @@
 
     .line 86
     .local v1, "view":Landroid/view/View;
-    iget-object v2, v0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->e:Ldefpackage/jrz;
+    iget-object v2, v0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->e:Ljrz;
 
     .line 87
-    .local v2, "jrzVar":Ldefpackage/jrz;
+    .local v2, "jrzVar":Ljrz;
     invoke-virtual {p0}, Landroid/view/View;->getDisplay()Landroid/view/Display;
 
     move-result-object v3
@@ -285,13 +285,13 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Ldefpackage/jrz;->a(Landroid/view/Display;Landroid/content/Context;)Ldefpackage/jrz;
+    invoke-static {v3, v4}, Ljrz;->a(Landroid/view/Display;Landroid/content/Context;)Ljrz;
 
     move-result-object v3
 
     .line 88
-    .local v3, "a":Ldefpackage/jrz;
-    iput-object v3, v0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->e:Ldefpackage/jrz;
+    .local v3, "a":Ljrz;
+    iput-object v3, v0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->e:Ljrz;
 
     .line 89
     iget-boolean v4, v0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->f:Z
@@ -315,11 +315,11 @@
 
     .line 93
     .local v6, "height":I
-    invoke-static {v3}, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a(Ldefpackage/jrz;)I
+    invoke-static {v3}, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a(Ljrz;)I
 
     move-result v7
 
-    invoke-static {v2}, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a(Ldefpackage/jrz;)I
+    invoke-static {v2}, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a(Ljrz;)I
 
     move-result v8
 
@@ -336,37 +336,37 @@
 
     .line 107
     :sswitch_0
-    sget-object v7, Ldefpackage/lic;->CLOCKWISE_0:Ldefpackage/lic;
+    sget-object v7, Llic;->CLOCKWISE_0:Llic;
 
     .line 108
-    .local v7, "licVar":Ldefpackage/lic;
+    .local v7, "licVar":Llic;
     goto :goto_0
 
     .line 104
-    .end local v7    # "licVar":Ldefpackage/lic;
+    .end local v7    # "licVar":Llic;
     :sswitch_1
-    sget-object v7, Ldefpackage/lic;->CLOCKWISE_90:Ldefpackage/lic;
+    sget-object v7, Llic;->CLOCKWISE_90:Llic;
 
     .line 105
-    .restart local v7    # "licVar":Ldefpackage/lic;
+    .restart local v7    # "licVar":Llic;
     goto :goto_0
 
     .line 100
-    .end local v7    # "licVar":Ldefpackage/lic;
+    .end local v7    # "licVar":Llic;
     :sswitch_2
-    sget-object v7, Ldefpackage/lic;->CLOCKWISE_180:Ldefpackage/lic;
+    sget-object v7, Llic;->CLOCKWISE_180:Llic;
 
     .line 101
-    .restart local v7    # "licVar":Ldefpackage/lic;
+    .restart local v7    # "licVar":Llic;
     goto :goto_0
 
     .line 96
-    .end local v7    # "licVar":Ldefpackage/lic;
+    .end local v7    # "licVar":Llic;
     :sswitch_3
-    sget-object v7, Ldefpackage/lic;->CLOCKWISE_270:Ldefpackage/lic;
+    sget-object v7, Llic;->CLOCKWISE_270:Llic;
 
     .line 97
-    .restart local v7    # "licVar":Ldefpackage/lic;
+    .restart local v7    # "licVar":Llic;
     nop
 
     .line 112
@@ -452,7 +452,7 @@
     .end local v4    # "pointF":Landroid/graphics/PointF;
     .end local v5    # "width":I
     .end local v6    # "height":I
-    .end local v7    # "licVar":Ldefpackage/lic;
+    .end local v7    # "licVar":Llic;
     .end local v8    # "pointF2":Landroid/graphics/PointF;
     :cond_0
     const/4 v4, 0x1
@@ -494,14 +494,14 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
     .line 137
-    iget-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a:Ldefpackage/duj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->a:Lduj;
 
-    invoke-interface {v0, p1, p2}, Ldefpackage/duj;->b(II)V
+    invoke-interface {v0, p1, p2}, Lduj;->b(II)V
 
     .line 138
-    iget-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->b:Ldefpackage/dul;
+    iget-object v0, p0, Lcom/google/android/apps/camera/focusindicator/FocusIndicatorRingView;->b:Ldul;
 
-    invoke-interface {v0, p1, p2}, Ldefpackage/dul;->b(II)V
+    invoke-interface {v0, p1, p2}, Ldul;->b(II)V
 
     .line 139
     return-void

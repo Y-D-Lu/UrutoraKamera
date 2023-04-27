@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/libraries/vision/visionkit/f250/internal/airlock/room/F250RoomDatabase;
-.super Ldefpackage/aii;
+.super Laii;
 .source ""
 
 
@@ -8,21 +8,21 @@
     .locals 0
 
     .line 10
-    invoke-direct {p0}, Ldefpackage/aii;-><init>()V
+    invoke-direct {p0}, Laii;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract r()Ldefpackage/noy;
+.method public abstract r()Lnoy;
 .end method
 
-.method public abstract s()Ldefpackage/npf;
+.method public abstract s()Lnpf;
 .end method
 
-.method public abstract t()Ldefpackage/npz;
+.method public abstract t()Lnpz;
 .end method
 
-.method public abstract u()Ldefpackage/nql;
+.method public abstract u()Lnql;
 .end method

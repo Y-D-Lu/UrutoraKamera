@@ -3,11 +3,11 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/lie;
+.implements Llie;
 
 
 # virtual methods
-.method public abstract a(Ldefpackage/mad;Ldefpackage/pud;)Ldefpackage/pvb;
+.method public abstract a(Lmad;Lpud;)Lpvb;
 .end method
 
 .method public abstract b(Z)V

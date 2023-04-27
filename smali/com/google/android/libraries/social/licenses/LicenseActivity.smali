@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/libraries/social/licenses/LicenseActivity;
-.super Ldefpackage/ih;
+.super Lih;
 .source ""
 
 
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 20
-    invoke-direct {p0}, Ldefpackage/ih;-><init>()V
+    invoke-direct {p0}, Lih;-><init>()V
 
     return-void
 .end method
@@ -20,12 +20,12 @@
     .param p1, "bundle"    # Landroid/os/Bundle;
 
     .line 24
-    invoke-super {p0, p1}, Ldefpackage/by;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lby;->onCreate(Landroid/os/Bundle;)V
 
     .line 25
     const v0, 0x7f0d005a
 
-    invoke-virtual {p0, v0}, Ldefpackage/ih;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lih;->setContentView(I)V
 
     .line 26
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
@@ -38,53 +38,53 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/nic;
+    check-cast v0, Lnic;
 
     .line 27
-    .local v0, "nicVar":Ldefpackage/nic;
-    invoke-virtual {p0}, Ldefpackage/ih;->f()Ldefpackage/hu;
+    .local v0, "nicVar":Lnic;
+    invoke-virtual {p0}, Lih;->f()Lhu;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
     .line 28
-    invoke-virtual {p0}, Ldefpackage/ih;->f()Ldefpackage/hu;
+    invoke-virtual {p0}, Lih;->f()Lhu;
 
     move-result-object v1
 
-    iget-object v2, v0, Ldefpackage/nic;->a:Ljava/lang/String;
+    iget-object v2, v0, Lnic;->a:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ldefpackage/hu;->i(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Lhu;->i(Ljava/lang/CharSequence;)V
 
     .line 29
-    invoke-virtual {p0}, Ldefpackage/ih;->f()Ldefpackage/hu;
+    invoke-virtual {p0}, Lih;->f()Lhu;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ldefpackage/hu;->r()V
+    invoke-virtual {v1}, Lhu;->r()V
 
     .line 30
-    invoke-virtual {p0}, Ldefpackage/ih;->f()Ldefpackage/hu;
+    invoke-virtual {p0}, Lih;->f()Lhu;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Ldefpackage/hu;->g(Z)V
+    invoke-virtual {v1, v2}, Lhu;->g(Z)V
 
     .line 31
-    invoke-virtual {p0}, Ldefpackage/ih;->f()Ldefpackage/hu;
+    invoke-virtual {p0}, Lih;->f()Lhu;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ldefpackage/hu;->t()V
+    invoke-virtual {v1}, Lhu;->t()V
 
     .line 33
     :cond_0
     const v1, 0x7f0a010c
 
-    invoke-virtual {p0, v1}, Ldefpackage/ih;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lih;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -92,15 +92,15 @@
 
     .line 34
     .local v1, "textView":Landroid/widget/TextView;
-    iget-wide v2, v0, Ldefpackage/nic;->b:J
+    iget-wide v2, v0, Lnic;->b:J
 
     .line 35
     .local v2, "j":J
-    iget v4, v0, Ldefpackage/nic;->c:I
+    iget v4, v0, Lnic;->c:I
 
     .line 36
     .local v4, "i":I
-    iget-object v5, v0, Ldefpackage/nic;->d:Ljava/lang/String;
+    iget-object v5, v0, Lnic;->d:Ljava/lang/String;
 
     .line 37
     .local v5, "str2":Ljava/lang/String;
@@ -120,7 +120,7 @@
 
     invoke-direct {v6, v7}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V
 
-    invoke-static {v6, v2, v3, v4}, Ldefpackage/myq;->n(Ljava/io/InputStream;JI)Ljava/lang/String;
+    invoke-static {v6, v2, v3, v4}, Lmyq;->n(Ljava/io/InputStream;JI)Ljava/lang/String;
 
     move-result-object v6
 
@@ -183,7 +183,7 @@
     :cond_2
     const-string v6, "third_party_licenses"
 
-    invoke-static {p0, v6, v2, v3, v4}, Ldefpackage/myq;->o(Landroid/content/Context;Ljava/lang/String;JI)Ljava/lang/String;
+    invoke-static {p0, v6, v2, v3, v4}, Lmyq;->o(Landroid/content/Context;Ljava/lang/String;JI)Ljava/lang/String;
 
     move-result-object v6
 
@@ -228,7 +228,7 @@
 
     .line 66
     :cond_0
-    invoke-super {p0, p1}, Ldefpackage/ub;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lub;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -245,7 +245,7 @@
     .line 72
     const v0, 0x7f0a010b
 
-    invoke-virtual {p0, v0}, Ldefpackage/ih;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lih;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -280,12 +280,12 @@
     .param p1, "bundle"    # Landroid/os/Bundle;
 
     .line 92
-    invoke-super {p0, p1}, Ldefpackage/ub;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lub;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 93
     const v0, 0x7f0a010b
 
-    invoke-virtual {p0, v0}, Ldefpackage/ih;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lih;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -295,7 +295,7 @@
     .local v0, "scrollView":Landroid/widget/ScrollView;
     const v1, 0x7f0a010c
 
-    invoke-virtual {p0, v1}, Ldefpackage/ih;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lih;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 

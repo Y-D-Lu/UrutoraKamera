@@ -1,0 +1,33 @@
+.class public final Lkwb;
+.super Lbmo;
+.source ""
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "str"    # Ljava/lang/String;
+
+    .line 10
+    invoke-direct {p0, p1}, Lbmo;-><init>(Ljava/lang/String;)V
+
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final x(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 1
+    .param p1, "i"    # I
+    .param p2, "parcel"    # Landroid/os/Parcel;
+    .param p3, "parcel2"    # Landroid/os/Parcel;
+
+    .line 15
+    const/4 v0, 0x0
+
+    throw v0
+.end method

@@ -1,0 +1,52 @@
+.class public Ldefpackage/uh;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lhtr;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhts;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic val$obj:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 21
+    iput-object p1, p0, Ldefpackage/uh;->val$obj:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lddf;)Ljava/lang/Object;
+    .locals 2
+    .param p1, "ddfVar"    # Lddf;
+
+    .line 24
+    iget-object v0, p0, Ldefpackage/uh;->val$obj:Ljava/lang/Object;
+
+    .line 25
+    .local v0, "obj2":Ljava/lang/Object;
+    const/4 v1, 0x0
+
+    .line 26
+    .local v1, "i":I
+    return-object v0
+.end method

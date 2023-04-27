@@ -1,5 +1,5 @@
 .class public final Landroidx/work/OverwritingInputMerger;
-.super Ldefpackage/amt;
+.super Lamt;
 .source ""
 
 
@@ -8,14 +8,14 @@
     .locals 0
 
     .line 12
-    invoke-direct {p0}, Ldefpackage/amt;-><init>()V
+    invoke-direct {p0}, Lamt;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/util/List;)Ldefpackage/amq;
+.method public final a(Ljava/util/List;)Lamq;
     .locals 4
     .param p1, "list"    # Ljava/util/List;
 
@@ -50,9 +50,9 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/amq;
+    check-cast v3, Lamq;
 
-    invoke-virtual {v3}, Ldefpackage/amq;->b()Ljava/util/Map;
+    invoke-virtual {v3}, Lamq;->b()Ljava/util/Map;
 
     move-result-object v3
 
@@ -62,10 +62,10 @@
 
     .line 21
     :cond_0
-    invoke-static {v1, v0}, Ldefpackage/gd;->o(Ljava/util/Map;Ljava/util/Map;)V
+    invoke-static {v1, v0}, Lgd;->o(Ljava/util/Map;Ljava/util/Map;)V
 
     .line 22
-    invoke-static {v0}, Ldefpackage/gd;->n(Ljava/util/Map;)Ldefpackage/amq;
+    invoke-static {v0}, Lgd;->n(Ljava/util/Map;)Lamq;
 
     move-result-object v3
 

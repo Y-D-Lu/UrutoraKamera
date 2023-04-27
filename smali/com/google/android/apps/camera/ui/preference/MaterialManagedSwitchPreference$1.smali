@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->a(Ldefpackage/ahm;)V
+    value = Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->a(Lahm;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

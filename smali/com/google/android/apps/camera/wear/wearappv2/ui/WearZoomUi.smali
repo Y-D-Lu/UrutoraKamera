@@ -69,7 +69,7 @@
     .line 34
     const v2, 0x7f0602bf
 
-    invoke-static {p1, v2}, Ldefpackage/aas;->a(Landroid/content/Context;I)I
+    invoke-static {p1, v2}, Laas;->a(Landroid/content/Context;I)I
 
     move-result v2
 
@@ -116,7 +116,7 @@
     .line 42
     const v4, 0x106000b
 
-    invoke-static {p1, v4}, Ldefpackage/aas;->a(Landroid/content/Context;I)I
+    invoke-static {p1, v4}, Laas;->a(Landroid/content/Context;I)I
 
     move-result v4
 
@@ -137,7 +137,7 @@
     .line 46
     const v5, 0x7f06038f
 
-    invoke-static {p1, v5}, Ldefpackage/aas;->a(Landroid/content/Context;I)I
+    invoke-static {p1, v5}, Laas;->a(Landroid/content/Context;I)I
 
     move-result v5
 

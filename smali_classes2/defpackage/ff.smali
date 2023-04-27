@@ -1,257 +1,117 @@
-.class public final Ldefpackage/ff;
-.super Landroid/view/View$AccessibilityDelegate;
+.class public Ldefpackage/Ff;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llht;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgzy;-><init>(Llis;Lojc;Llnc;Lojc;Lpht;Llvp;Llvq;Llap;Lojc;Lbta;Lddf;Lebe;Leam;Llvp;Ljrl;Lljf;Lgzf;Lgzp;[B)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/fg;
+.field public final synthetic this$0:Lgzy;
+
+.field public final synthetic val$flhVar:Lflh;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/fg;)V
+.method public constructor <init>(Lgzy;Lflh;)V
     .locals 0
-    .param p1, "fgVar"    # Ldefpackage/fg;
+    .param p1, "this$0"    # Lgzy;
 
-    .line 18
-    invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
+    .line 67
+    iput-object p1, p0, Ldefpackage/Ff;->this$0:Lgzy;
 
-    .line 19
-    iput-object p1, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
+    iput-object p2, p0, Ldefpackage/Ff;->val$flhVar:Lflh;
 
-    .line 20
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final dispatchPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "accessibilityEvent"    # Landroid/view/accessibility/AccessibilityEvent;
+.method public final a(Ljava/lang/Object;)V
+    .locals 7
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 24
-    iget-object v0, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
+    .line 70
+    iget-object v0, p0, Ldefpackage/Ff;->this$0:Lgzy;
 
-    invoke-virtual {v0, p1, p2}, Ldefpackage/fg;->g(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+    .line 71
+    .local v0, "gzyVar":Lgzy;
+    iget-object v1, p0, Ldefpackage/Ff;->val$flhVar:Lflh;
 
-    move-result v0
+    .line 72
+    .local v1, "flhVar2":Lflh;
+    move-object v2, p1
 
-    return v0
-.end method
+    check-cast v2, Landroid/view/Surface;
 
-.method public final getAccessibilityNodeProvider(Landroid/view/View;)Landroid/view/accessibility/AccessibilityNodeProvider;
-    .locals 2
-    .param p1, "view"    # Landroid/view/View;
+    .line 73
+    .local v2, "surface":Landroid/view/Surface;
+    if-eqz v2, :cond_1
 
-    .line 29
-    iget-object v0, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
+    .line 74
+    iget-object v3, v1, Lflh;->a:Lpke;
 
-    invoke-virtual {v0, p1}, Ldefpackage/fg;->j(Landroid/view/View;)Ldefpackage/kkm;
+    .line 75
+    .local v3, "pkeVar":Lpke;
+    iget-object v4, v3, Lpke;->d:Ljava/lang/Object;
 
-    move-result-object v0
+    monitor-enter v4
 
-    .line 30
-    .local v0, "j":Ldefpackage/kkm;
-    if-eqz v0, :cond_0
+    .line 76
+    :try_start_0
+    iget-boolean v5, v3, Lpke;->f:Z
 
-    .line 31
-    iget-object v1, v0, Ldefpackage/kkm;->a:Ljava/lang/Object;
+    if-nez v5, :cond_0
 
-    check-cast v1, Landroid/view/accessibility/AccessibilityNodeProvider;
+    .line 77
+    iget-object v5, v3, Lpke;->e:Ljava/util/concurrent/ExecutorService;
 
-    return-object v1
+    new-instance v6, Ldefpackage/Ef;
 
-    .line 33
+    invoke-direct {v6, p0, v3, v2}, Ldefpackage/Ef;-><init>(Ldefpackage/Ff;Lpke;Landroid/view/Surface;)V
+
+    invoke-interface {v5, v6}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+
+    .line 85
     :cond_0
-    const/4 v1, 0x0
+    monitor-exit v4
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return-object v1
-.end method
+    .line 86
+    const/4 v4, 0x1
 
-.method public final onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "accessibilityEvent"    # Landroid/view/accessibility/AccessibilityEvent;
-
-    .line 38
-    iget-object v0, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
-
-    invoke-virtual {v0, p1, p2}, Ldefpackage/fg;->b(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-
-    .line 39
-    return-void
-.end method
-
-.method public final onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
-    .locals 4
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "accessibilityNodeInfo"    # Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    .line 43
-    invoke-static {p2}, Ldefpackage/hb;->a(Landroid/view/accessibility/AccessibilityNodeInfo;)Ldefpackage/hb;
-
-    move-result-object v0
-
-    .line 44
-    .local v0, "a":Ldefpackage/hb;
-    iget-object v1, v0, Ldefpackage/hb;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-static {p1}, Ldefpackage/gl;->Y(Landroid/view/View;)Z
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Landroid/view/accessibility/AccessibilityNodeInfo;->setScreenReaderFocusable(Z)V
-
-    .line 45
-    iget-object v1, v0, Ldefpackage/hb;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-static {p1}, Ldefpackage/gh;->b(Landroid/view/View;)Z
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Landroid/view/accessibility/AccessibilityNodeInfo;->setHeading(Z)V
-
-    .line 46
-    iget-object v1, v0, Ldefpackage/hb;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-static {p1}, Ldefpackage/gl;->u(Landroid/view/View;)Ljava/lang/CharSequence;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Landroid/view/accessibility/AccessibilityNodeInfo;->setPaneTitle(Ljava/lang/CharSequence;)V
-
-    .line 47
-    iget-object v1, v0, Ldefpackage/hb;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    invoke-static {p1}, Ldefpackage/gj;->a(Landroid/view/View;)Ljava/lang/CharSequence;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Landroid/view/accessibility/AccessibilityNodeInfo;->setStateDescription(Ljava/lang/CharSequence;)V
-
-    .line 48
-    iget-object v1, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
-
-    invoke-virtual {v1, p1, v0}, Ldefpackage/fg;->c(Landroid/view/View;Ldefpackage/hb;)V
-
-    .line 49
-    invoke-virtual {p2}, Landroid/view/accessibility/AccessibilityNodeInfo;->getText()Ljava/lang/CharSequence;
-
-    .line 50
-    invoke-static {p1}, Ldefpackage/fg;->a(Landroid/view/View;)Ljava/util/List;
-
-    move-result-object v1
-
-    .line 51
-    .local v1, "a2":Ljava/util/List;
-    const/4 v2, 0x0
-
-    .local v2, "i":I
-    :goto_0
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v3
-
-    if-ge v2, v3, :cond_0
-
-    .line 52
-    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ldefpackage/ha;
-
-    invoke-virtual {v0, v3}, Ldefpackage/hb;->c(Ldefpackage/ha;)V
-
-    .line 51
-    add-int/lit8 v2, v2, 0x1
+    iput-boolean v4, v0, Lgzy;->n:Z
 
     goto :goto_0
 
-    .line 54
-    .end local v2    # "i":I
-    :cond_0
-    return-void
-.end method
+    .line 85
+    :catchall_0
+    move-exception v5
 
-.method public final onPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "accessibilityEvent"    # Landroid/view/accessibility/AccessibilityEvent;
+    :try_start_1
+    monitor-exit v4
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 58
-    iget-object v0, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
+    throw v5
 
-    invoke-virtual {v0, p1, p2}, Ldefpackage/fg;->d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-
-    .line 59
-    return-void
-.end method
-
-.method public final onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
-    .locals 1
-    .param p1, "viewGroup"    # Landroid/view/ViewGroup;
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "accessibilityEvent"    # Landroid/view/accessibility/AccessibilityEvent;
-
-    .line 63
-    iget-object v0, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
-
-    invoke-virtual {v0, p1, p2, p3}, Ldefpackage/fg;->h(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "i"    # I
-    .param p3, "bundle"    # Landroid/os/Bundle;
-
-    .line 68
-    iget-object v0, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
-
-    invoke-virtual {v0, p1, p2, p3}, Ldefpackage/fg;->i(Landroid/view/View;ILandroid/os/Bundle;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final sendAccessibilityEvent(Landroid/view/View;I)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "i"    # I
-
-    .line 73
-    iget-object v0, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
-
-    invoke-virtual {v0, p1, p2}, Ldefpackage/fg;->e(Landroid/view/View;I)V
-
-    .line 74
-    return-void
-.end method
-
-.method public final sendAccessibilityEventUnchecked(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "accessibilityEvent"    # Landroid/view/accessibility/AccessibilityEvent;
-
-    .line 78
-    iget-object v0, p0, Ldefpackage/ff;->a:Ldefpackage/fg;
-
-    invoke-virtual {v0, p1, p2}, Ldefpackage/fg;->f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
-
-    .line 79
+    .line 88
+    .end local v3    # "pkeVar":Lpke;
+    :cond_1
+    :goto_0
     return-void
 .end method

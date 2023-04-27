@@ -1,135 +1,66 @@
-.class public final Ldefpackage/ae;
+.class public Ldefpackage/Ae;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
 
-# static fields
-.field public static final a:[I
 
-.field public static final b:[I
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgrn;->mo37get()Lojz;
+.end annotation
 
-.field public static final c:[I
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
-.field public static final d:[I
 
-.field public static final e:[I
+# instance fields
+.field public final synthetic this$0:Lgrn;
+
+.field public final synthetic val$lceVar:Llce;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 8
-    const/4 v0, 0x5
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_0
-
-    sput-object v0, Ldefpackage/ae;->a:[I
-
-    .line 9
-    const/4 v0, 0x7
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_1
-
-    sput-object v0, Ldefpackage/ae;->b:[I
-
-    .line 10
-    const/16 v0, 0xa
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_2
-
-    sput-object v0, Ldefpackage/ae;->c:[I
-
-    .line 11
-    const/16 v0, 0xc
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_3
-
-    sput-object v0, Ldefpackage/ae;->d:[I
-
-    .line 12
-    const/4 v0, 0x2
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_4
-
-    sput-object v0, Ldefpackage/ae;->e:[I
-
-    return-void
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x10101a5
-        0x101031f
-        0x1010647
-        0x7f04002f
-        0x7f040229
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x7f0401c9
-        0x7f0401ca
-        0x7f0401cb
-        0x7f0401cc
-        0x7f0401cd
-        0x7f0401ce
-        0x7f0401cf
-    .end array-data
-
-    :array_2
-    .array-data 4
-        0x1010532
-        0x1010533
-        0x101053f
-        0x101056f
-        0x1010570
-        0x7f0401c7
-        0x7f0401d0
-        0x7f0401d1
-        0x7f0401d2
-        0x7f04040c
-    .end array-data
-
-    :array_3
-    .array-data 4
-        0x101019d
-        0x101019e
-        0x10101a1
-        0x10101a2
-        0x10101a3
-        0x10101a4
-        0x1010201
-        0x101020b
-        0x1010510
-        0x1010511
-        0x1010512
-        0x1010513
-    .end array-data
-
-    :array_4
-    .array-data 4
-        0x10101a5
-        0x1010514
-    .end array-data
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lgrn;Llce;)V
     .locals 0
+    .param p1, "this$0"    # Lgrn;
 
-    .line 7
+    .line 44
+    iput-object p1, p0, Ldefpackage/Ae;->this$0:Lgrn;
+
+    iput-object p2, p0, Ldefpackage/Ae;->val$lceVar:Llce;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
+    .param p1, "obj"    # Ljava/lang/Object;
+
+    .line 47
+    iget-object v0, p0, Ldefpackage/Ae;->val$lceVar:Llce;
+
+    move-object v1, p1
+
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v0, v1}, Llce;->fB(Ljava/lang/Object;)V
+
+    .line 48
+    return-void
+.end method
+
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer2"    # Ljava/util/function/Consumer;
+
+    .line 52
+    return-object p1
 .end method

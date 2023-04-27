@@ -28,22 +28,22 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .line 30
-    sget-object v0, Ldefpackage/pxc;->b:Ldefpackage/pxc;
+    sget-object v0, Lpxc;->b:Lpxc;
 
-    sget-object v1, Ldefpackage/pxc;->a:Ldefpackage/pxc;
+    sget-object v1, Lpxc;->a:Lpxc;
 
-    invoke-static {p0, v0, v1}, Lcom/google/vr/cardboard/VrCoreLibraryLoader;->loadNativeGvrLibrary(Landroid/content/Context;Ldefpackage/pxc;Ldefpackage/pxc;)J
+    invoke-static {p0, v0, v1}, Lcom/google/vr/cardboard/VrCoreLibraryLoader;->loadNativeGvrLibrary(Landroid/content/Context;Lpxc;Lpxc;)J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public static loadNativeGvrLibrary(Landroid/content/Context;Ldefpackage/pxc;Ldefpackage/pxc;)J
+.method public static loadNativeGvrLibrary(Landroid/content/Context;Lpxc;Lpxc;)J
     .locals 25
     .param p0, "context"    # Landroid/content/Context;
-    .param p1, "pxcVar"    # Ldefpackage/pxc;
-    .param p2, "pxcVar2"    # Ldefpackage/pxc;
+    .param p1, "pxcVar"    # Lpxc;
+    .param p2, "pxcVar2"    # Lpxc;
 
     .line 40
     move-object/from16 v1, p1
@@ -107,20 +107,20 @@
 
     .line 55
     .local v10, "substring":Ljava/lang/String;
-    invoke-static {v10}, Ldefpackage/pxc;->a(Ljava/lang/String;)Ldefpackage/pxc;
+    invoke-static {v10}, Lpxc;->a(Ljava/lang/String;)Lpxc;
 
     move-result-object v11
 
     .line 56
-    .local v11, "a":Ldefpackage/pxc;
+    .local v11, "a":Lpxc;
     if-eqz v11, :cond_a
 
     .line 59
-    iget v12, v11, Ldefpackage/pxc;->c:I
+    iget v12, v11, Lpxc;->c:I
 
     .line 60
     .local v12, "i5":I
-    iget v13, v1, Ldefpackage/pxc;->c:I
+    iget v13, v1, Lpxc;->c:I
 
     .line 61
     .local v13, "i6":I
@@ -128,12 +128,12 @@
 
     if-lt v12, v13, :cond_1
 
-    iget v14, v11, Ldefpackage/pxc;->d:I
+    iget v14, v11, Lpxc;->d:I
 
     move v15, v14
 
     .local v15, "i":I
-    iget v4, v1, Ldefpackage/pxc;->d:I
+    iget v4, v1, Lpxc;->d:I
 
     move v5, v4
 
@@ -142,12 +142,12 @@
 
     if-lt v15, v5, :cond_1
 
-    iget v4, v11, Ldefpackage/pxc;->e:I
+    iget v4, v11, Lpxc;->e:I
 
     move v14, v4
 
     .local v14, "i3":I
-    iget v8, v1, Ldefpackage/pxc;->e:I
+    iget v8, v1, Lpxc;->e:I
 
     move/from16 v17, v8
 
@@ -185,7 +185,7 @@
 
     aput-object v10, v5, v7
 
-    invoke-virtual/range {p1 .. p1}, Ldefpackage/pxc;->toString()Ljava/lang/String;
+    invoke-virtual/range {p1 .. p1}, Lpxc;->toString()Ljava/lang/String;
 
     move-result-object v7
 
@@ -198,46 +198,46 @@
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 63
-    new-instance v4, Ldefpackage/pxj;
+    new-instance v4, Lpxj;
 
     const/4 v5, 0x4
 
-    invoke-direct {v4, v5}, Ldefpackage/pxj;-><init>(I)V
+    invoke-direct {v4, v5}, Lpxj;-><init>(I)V
 
     .end local p0    # "context":Landroid/content/Context;
-    .end local p1    # "pxcVar":Ldefpackage/pxc;
-    .end local p2    # "pxcVar2":Ldefpackage/pxc;
+    .end local p1    # "pxcVar":Lpxc;
+    .end local p2    # "pxcVar2":Lpxc;
     throw v4
 
     .line 65
     .restart local p0    # "context":Landroid/content/Context;
-    .restart local p1    # "pxcVar":Ldefpackage/pxc;
-    .restart local p2    # "pxcVar2":Ldefpackage/pxc;
+    .restart local p1    # "pxcVar":Lpxc;
+    .restart local p2    # "pxcVar2":Lpxc;
     :cond_2
     :goto_0
-    invoke-static/range {p0 .. p0}, Ldefpackage/qmd;->ak(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static/range {p0 .. p0}, Lqmd;->ak(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v4
 
     .line 66
     .local v4, "ak":Landroid/content/Context;
-    invoke-static/range {p0 .. p0}, Ldefpackage/qmd;->ak(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static/range {p0 .. p0}, Lqmd;->ak(Landroid/content/Context;)Landroid/content/Context;
 
     .line 67
-    sget v5, Ldefpackage/qmd;->t:I
+    sget v5, Lqmd;->t:I
 
     .line 68
     .local v5, "i7":I
     const/4 v8, 0x0
 
     .line 69
-    .local v8, "pyjVar":Ldefpackage/pyj;
-    sget-object v9, Ldefpackage/qmd;->u:Ldefpackage/pyi;
+    .local v8, "pyjVar":Lpyj;
+    sget-object v9, Lqmd;->u:Lpyi;
 
     if-nez v9, :cond_5
 
     .line 70
-    invoke-static/range {p0 .. p0}, Ldefpackage/qmd;->ak(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static/range {p0 .. p0}, Lqmd;->ak(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v9
 
@@ -245,7 +245,7 @@
 
     move-result-object v9
 
-    invoke-static {v9}, Ldefpackage/qmd;->al(Ljava/lang/ClassLoader;)Landroid/os/IBinder;
+    invoke-static {v9}, Lqmd;->al(Ljava/lang/ClassLoader;)Landroid/os/IBinder;
 
     move-result-object v9
 
@@ -256,11 +256,11 @@
     .line 72
     const/4 v14, 0x0
 
-    .local v14, "pyiVar":Ldefpackage/pyi;
+    .local v14, "pyiVar":Lpyi;
     goto :goto_2
 
     .line 74
-    .end local v14    # "pyiVar":Ldefpackage/pyi;
+    .end local v14    # "pyiVar":Lpyi;
     :cond_3
     const-string v14, "com.google.vr.vrcore.library.api.IVrCreator"
 
@@ -270,50 +270,50 @@
 
     .line 75
     .local v14, "queryLocalInterface":Landroid/os/IInterface;
-    instance-of v15, v14, Ldefpackage/pyi;
+    instance-of v15, v14, Lpyi;
 
     if-eqz v15, :cond_4
 
     move-object v15, v14
 
-    check-cast v15, Ldefpackage/pyi;
+    check-cast v15, Lpyi;
 
     goto :goto_1
 
     :cond_4
-    new-instance v15, Ldefpackage/pyi;
+    new-instance v15, Lpyi;
 
-    invoke-direct {v15, v9}, Ldefpackage/pyi;-><init>(Landroid/os/IBinder;)V
+    invoke-direct {v15, v9}, Lpyi;-><init>(Landroid/os/IBinder;)V
 
     :goto_1
     move-object v14, v15
 
     .line 77
-    .local v14, "pyiVar":Ldefpackage/pyi;
+    .local v14, "pyiVar":Lpyi;
     :goto_2
-    sput-object v14, Ldefpackage/qmd;->u:Ldefpackage/pyi;
+    sput-object v14, Lqmd;->u:Lpyi;
 
     .line 79
     .end local v9    # "al":Landroid/os/IBinder;
-    .end local v14    # "pyiVar":Ldefpackage/pyi;
+    .end local v14    # "pyiVar":Lpyi;
     :cond_5
-    sget-object v9, Ldefpackage/qmd;->u:Ldefpackage/pyi;
+    sget-object v9, Lqmd;->u:Lpyi;
 
     .line 80
-    .local v9, "pyiVar2":Ldefpackage/pyi;
-    invoke-static {v4}, Lcom/google/vr/vrcore/library/api/ObjectWrapper;->b(Ljava/lang/Object;)Ldefpackage/bmo;
+    .local v9, "pyiVar2":Lpyi;
+    invoke-static {v4}, Lcom/google/vr/vrcore/library/api/ObjectWrapper;->b(Ljava/lang/Object;)Lbmo;
 
     move-result-object v14
 
     .line 81
-    .local v14, "b":Ldefpackage/bmo;
-    invoke-static/range {p0 .. p0}, Lcom/google/vr/vrcore/library/api/ObjectWrapper;->b(Ljava/lang/Object;)Ldefpackage/bmo;
+    .local v14, "b":Lbmo;
+    invoke-static/range {p0 .. p0}, Lcom/google/vr/vrcore/library/api/ObjectWrapper;->b(Ljava/lang/Object;)Lbmo;
 
     move-result-object v15
 
     .line 82
-    .local v15, "b2":Ldefpackage/bmo;
-    invoke-virtual {v9}, Ldefpackage/bmn;->a()Landroid/os/Parcel;
+    .local v15, "b2":Lbmo;
+    invoke-virtual {v9}, Lbmn;->a()Landroid/os/Parcel;
 
     move-result-object v17
 
@@ -325,10 +325,10 @@
 
     .end local v18    # "a2":Landroid/os/Parcel;
     .local v7, "a2":Landroid/os/Parcel;
-    invoke-static {v7, v14}, Ldefpackage/bmp;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v7, v14}, Lbmp;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     .line 84
-    invoke-static {v7, v15}, Ldefpackage/bmp;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v7, v15}, Lbmp;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     .line 85
     move-object/from16 v18, v0
@@ -337,7 +337,7 @@
 
     .end local v0    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .local v18, "applicationInfo":Landroid/content/pm/ApplicationInfo;
-    invoke-virtual {v9, v0, v7}, Ldefpackage/bmn;->y(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {v9, v0, v7}, Lbmn;->y(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -374,20 +374,20 @@
 
     .end local v6    # "string":Ljava/lang/String;
     .local v19, "string":Ljava/lang/String;
-    instance-of v6, v4, Ldefpackage/pyj;
+    instance-of v6, v4, Lpyj;
 
     if-eqz v6, :cond_6
 
     move-object v6, v4
 
-    check-cast v6, Ldefpackage/pyj;
+    check-cast v6, Lpyj;
 
     goto :goto_3
 
     :cond_6
-    new-instance v6, Ldefpackage/pyj;
+    new-instance v6, Lpyj;
 
-    invoke-direct {v6, v1}, Ldefpackage/pyj;-><init>(Landroid/os/IBinder;)V
+    invoke-direct {v6, v1}, Lpyj;-><init>(Landroid/os/IBinder;)V
 
     :goto_3
     move-object v8, v6
@@ -432,19 +432,19 @@
     if-lt v5, v4, :cond_9
 
     .line 96
-    invoke-virtual/range {p1 .. p1}, Ldefpackage/pxc;->toString()Ljava/lang/String;
+    invoke-virtual/range {p1 .. p1}, Lpxc;->toString()Ljava/lang/String;
 
     move-result-object v4
 
     .line 97
     .local v4, "pxcVar3":Ljava/lang/String;
-    invoke-virtual/range {p2 .. p2}, Ldefpackage/pxc;->toString()Ljava/lang/String;
+    invoke-virtual/range {p2 .. p2}, Lpxc;->toString()Ljava/lang/String;
 
     move-result-object v6
 
     .line 98
     .local v6, "pxcVar4":Ljava/lang/String;
-    invoke-virtual {v8}, Ldefpackage/bmn;->a()Landroid/os/Parcel;
+    invoke-virtual {v8}, Lbmn;->a()Landroid/os/Parcel;
 
     move-result-object v17
 
@@ -471,7 +471,7 @@
     .local v20, "readStrongBinder":Landroid/os/IBinder;
     const/4 v1, 0x5
 
-    invoke-virtual {v8, v1, v0}, Ldefpackage/bmn;->y(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {v8, v1, v0}, Lbmn;->y(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object v1
 
@@ -505,19 +505,19 @@
     .end local v1    # "readStrongBinder":Landroid/os/IBinder;
     .restart local v20    # "readStrongBinder":Landroid/os/IBinder;
     .restart local v21    # "y":Landroid/os/Parcel;
-    iget v0, v2, Ldefpackage/pxc;->c:I
+    iget v0, v2, Lpxc;->c:I
 
     .line 107
     .local v0, "i8":I
-    iget v1, v2, Ldefpackage/pxc;->d:I
+    iget v1, v2, Lpxc;->d:I
 
     .line 108
     .local v1, "i9":I
-    iget v4, v2, Ldefpackage/pxc;->e:I
+    iget v4, v2, Lpxc;->e:I
 
     .line 109
     .local v4, "i10":I
-    invoke-virtual {v8}, Ldefpackage/bmn;->a()Landroid/os/Parcel;
+    invoke-virtual {v8}, Lbmn;->a()Landroid/os/Parcel;
 
     move-result-object v6
 
@@ -538,7 +538,7 @@
 
     .end local v0    # "i8":I
     .local v22, "i8":I
-    invoke-virtual {v8, v0, v6}, Ldefpackage/bmn;->y(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {v8, v0, v6}, Lbmn;->y(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -560,12 +560,12 @@
     .end local v4    # "i10":I
     .end local v5    # "i7":I
     .end local v7    # "a2":Landroid/os/Parcel;
-    .end local v8    # "pyjVar":Ldefpackage/pyj;
-    .end local v9    # "pyiVar2":Ldefpackage/pyi;
+    .end local v8    # "pyjVar":Lpyj;
+    .end local v9    # "pyiVar2":Lpyi;
     .end local v12    # "i5":I
     .end local v13    # "i6":I
-    .end local v14    # "b":Ldefpackage/bmo;
-    .end local v15    # "b2":Ldefpackage/bmo;
+    .end local v14    # "b":Lbmo;
+    .end local v15    # "b2":Lbmo;
     .end local v16    # "ak":Landroid/content/Context;
     .end local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .end local v19    # "string":Ljava/lang/String;
@@ -584,27 +584,27 @@
     .end local v6    # "string":Ljava/lang/String;
     .restart local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v19    # "string":Ljava/lang/String;
-    new-instance v0, Ldefpackage/pxj;
+    new-instance v0, Lpxj;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, v1}, Ldefpackage/pxj;-><init>(I)V
+    invoke-direct {v0, v1}, Lpxj;-><init>(I)V
 
     .end local p0    # "context":Landroid/content/Context;
-    .end local p1    # "pxcVar":Ldefpackage/pxc;
-    .end local p2    # "pxcVar2":Ldefpackage/pxc;
+    .end local p1    # "pxcVar":Lpxc;
+    .end local p2    # "pxcVar2":Lpxc;
     throw v0
 
     .line 52
     .end local v10    # "substring":Ljava/lang/String;
-    .end local v11    # "a":Ldefpackage/pxc;
+    .end local v11    # "a":Lpxc;
     .end local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .end local v19    # "string":Ljava/lang/String;
     .restart local v0    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v6    # "string":Ljava/lang/String;
     .restart local p0    # "context":Landroid/content/Context;
-    .restart local p1    # "pxcVar":Ldefpackage/pxc;
-    .restart local p2    # "pxcVar2":Ldefpackage/pxc;
+    .restart local p1    # "pxcVar":Lpxc;
+    .restart local p2    # "pxcVar2":Lpxc;
     :cond_b
     move-object/from16 v18, v0
 
@@ -614,15 +614,15 @@
     .end local v6    # "string":Ljava/lang/String;
     .restart local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v19    # "string":Ljava/lang/String;
-    new-instance v0, Ldefpackage/pxj;
+    new-instance v0, Lpxj;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, v1}, Ldefpackage/pxj;-><init>(I)V
+    invoke-direct {v0, v1}, Lpxj;-><init>(I)V
 
     .end local p0    # "context":Landroid/content/Context;
-    .end local p1    # "pxcVar":Ldefpackage/pxc;
-    .end local p2    # "pxcVar2":Ldefpackage/pxc;
+    .end local p1    # "pxcVar":Lpxc;
+    .end local p2    # "pxcVar2":Lpxc;
     throw v0
 
     .line 48
@@ -630,66 +630,66 @@
     .end local v19    # "string":Ljava/lang/String;
     .restart local v0    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local p0    # "context":Landroid/content/Context;
-    .restart local p1    # "pxcVar":Ldefpackage/pxc;
-    .restart local p2    # "pxcVar2":Ldefpackage/pxc;
+    .restart local p1    # "pxcVar":Lpxc;
+    .restart local p2    # "pxcVar2":Lpxc;
     :cond_c
     move-object/from16 v18, v0
 
     .end local v0    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
-    new-instance v0, Ldefpackage/pxj;
+    new-instance v0, Lpxj;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, v1}, Ldefpackage/pxj;-><init>(I)V
+    invoke-direct {v0, v1}, Lpxj;-><init>(I)V
 
     .end local p0    # "context":Landroid/content/Context;
-    .end local p1    # "pxcVar":Ldefpackage/pxc;
-    .end local p2    # "pxcVar2":Ldefpackage/pxc;
+    .end local p1    # "pxcVar":Lpxc;
+    .end local p2    # "pxcVar2":Lpxc;
     throw v0
 
     .line 45
     .end local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v0    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local p0    # "context":Landroid/content/Context;
-    .restart local p1    # "pxcVar":Ldefpackage/pxc;
-    .restart local p2    # "pxcVar2":Ldefpackage/pxc;
+    .restart local p1    # "pxcVar":Lpxc;
+    .restart local p2    # "pxcVar2":Lpxc;
     :cond_d
     move-object/from16 v18, v0
 
     .end local v0    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
-    new-instance v0, Ldefpackage/pxj;
+    new-instance v0, Lpxj;
 
     const/4 v1, 0x2
 
-    invoke-direct {v0, v1}, Ldefpackage/pxj;-><init>(I)V
+    invoke-direct {v0, v1}, Lpxj;-><init>(I)V
 
     .end local p0    # "context":Landroid/content/Context;
-    .end local p1    # "pxcVar":Ldefpackage/pxc;
-    .end local p2    # "pxcVar2":Ldefpackage/pxc;
+    .end local p1    # "pxcVar":Lpxc;
+    .end local p2    # "pxcVar2":Lpxc;
     throw v0
 
     .line 42
     .end local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v0    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local p0    # "context":Landroid/content/Context;
-    .restart local p1    # "pxcVar":Ldefpackage/pxc;
-    .restart local p2    # "pxcVar2":Ldefpackage/pxc;
+    .restart local p1    # "pxcVar":Lpxc;
+    .restart local p2    # "pxcVar2":Lpxc;
     :cond_e
     move-object/from16 v18, v0
 
     .end local v0    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
-    new-instance v0, Ldefpackage/pxj;
+    new-instance v0, Lpxj;
 
     const/16 v1, 0x8
 
-    invoke-direct {v0, v1}, Ldefpackage/pxj;-><init>(I)V
+    invoke-direct {v0, v1}, Lpxj;-><init>(I)V
 
     .end local p0    # "context":Landroid/content/Context;
-    .end local p1    # "pxcVar":Ldefpackage/pxc;
-    .end local p2    # "pxcVar2":Ldefpackage/pxc;
+    .end local p1    # "pxcVar":Lpxc;
+    .end local p2    # "pxcVar2":Lpxc;
     throw v0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -697,8 +697,8 @@
     .line 118
     .end local v18    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .restart local p0    # "context":Landroid/content/Context;
-    .restart local p1    # "pxcVar":Ldefpackage/pxc;
-    .restart local p2    # "pxcVar2":Ldefpackage/pxc;
+    .restart local p1    # "pxcVar":Lpxc;
+    .restart local p2    # "pxcVar2":Lpxc;
     :catch_0
     move-exception v0
 

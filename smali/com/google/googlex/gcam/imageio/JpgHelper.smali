@@ -14,7 +14,7 @@
     return-void
 .end method
 
-.method public static a(Lcom/google/googlex/gcam/InterleavedReadViewU8;Lcom/google/googlex/gcam/JpgEncodeOptions;I)Ldefpackage/ojc;
+.method public static a(Lcom/google/googlex/gcam/InterleavedReadViewU8;Lcom/google/googlex/gcam/JpgEncodeOptions;I)Lojc;
     .locals 4
     .param p0, "interleavedReadViewU8"    # Lcom/google/googlex/gcam/InterleavedReadViewU8;
     .param p1, "jpgEncodeOptions"    # Lcom/google/googlex/gcam/JpgEncodeOptions;
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/ojc;->h(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v0}, Lojc;->h(Ljava/lang/Object;)Lojc;
 
     move-result-object v0
 

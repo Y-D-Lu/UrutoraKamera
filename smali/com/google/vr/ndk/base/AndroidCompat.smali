@@ -20,7 +20,7 @@
     .param p1, "z"    # Z
 
     .line 13
-    invoke-static {p0, p1}, Ldefpackage/pvw;->a(Landroid/app/Activity;Z)V
+    invoke-static {p0, p1}, Lpvw;->a(Landroid/app/Activity;Z)V
 
     .line 14
     return-void
@@ -32,7 +32,7 @@
     .param p1, "z"    # Z
 
     .line 17
-    invoke-static {p0, p1}, Ldefpackage/pvw;->b(Landroid/app/Activity;Z)Z
+    invoke-static {p0, p1}, Lpvw;->b(Landroid/app/Activity;Z)Z
 
     move-result v0
 

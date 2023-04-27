@@ -1,77 +1,83 @@
-.class public final Ldefpackage/xi;
+.class public Ldefpackage/Xi;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
-# static fields
-.field public static final a:Ldefpackage/xi;
 
-.field public static final b:Ldefpackage/xi;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Life;->j(Liby;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final c:Z
+.field public final synthetic this$0:Life;
 
-.field public final d:Ljava/lang/Throwable;
+.field public final synthetic val$ibyVar:Liby;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Life;Liby;)V
+    .locals 0
+    .param p1, "this$0"    # Life;
 
-    .line 13
-    sget-boolean v0, Ldefpackage/xq;->a:Z
+    .line 530
+    iput-object p1, p0, Ldefpackage/Xi;->this$0:Life;
 
-    const/4 v1, 0x0
+    iput-object p2, p0, Ldefpackage/Xi;->val$ibyVar:Liby;
 
-    if-eqz v0, :cond_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    sput-object v1, Ldefpackage/xi;->b:Ldefpackage/xi;
-
-    .line 15
-    sput-object v1, Ldefpackage/xi;->a:Ldefpackage/xi;
-
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    new-instance v0, Ldefpackage/xi;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v2, v1}, Ldefpackage/xi;-><init>(ZLjava/lang/Throwable;)V
-
-    sput-object v0, Ldefpackage/xi;->b:Ldefpackage/xi;
-
-    .line 18
-    new-instance v0, Ldefpackage/xi;
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, v2, v1}, Ldefpackage/xi;-><init>(ZLjava/lang/Throwable;)V
-
-    sput-object v0, Ldefpackage/xi;->a:Ldefpackage/xi;
-
-    .line 20
-    :goto_0
     return-void
 .end method
 
-.method public constructor <init>(ZLjava/lang/Throwable;)V
-    .locals 0
-    .param p1, "z"    # Z
-    .param p2, "th"    # Ljava/lang/Throwable;
 
-    .line 22
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+    .param p1, "view"    # Landroid/view/View;
 
-    .line 23
-    iput-boolean p1, p0, Ldefpackage/xi;->c:Z
+    .line 533
+    const/4 v0, -0x1
 
-    .line 24
-    iput-object p2, p0, Ldefpackage/xi;->d:Ljava/lang/Throwable;
+    packed-switch v0, :pswitch_data_0
 
-    .line 25
+    .line 538
+    iget-object v0, p0, Ldefpackage/Xi;->val$ibyVar:Liby;
+
+    invoke-virtual {v0}, Liby;->c()V
+
+    .line 539
     return-void
+
+    .line 535
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Xi;->val$ibyVar:Liby;
+
+    iget-object v0, v0, Liby;->a:Libz;
+
+    iget-object v0, v0, Libz;->c:Lqkg;
+
+    invoke-interface {v0}, Lqkg;->mo37get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Licw;
+
+    invoke-virtual {v0}, Licw;->k()V
+
+    .line 536
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

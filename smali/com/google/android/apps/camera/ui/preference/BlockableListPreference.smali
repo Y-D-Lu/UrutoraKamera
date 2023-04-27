@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jhu;
+.implements Ljhu;
 
 
 # instance fields

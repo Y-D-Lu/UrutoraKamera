@@ -41,7 +41,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Landroidx/window/layout/FoldingFeature$OcclusionType$Companion;-><init>(Ldefpackage/qnm;)V
+    invoke-direct {v0, v1}, Landroidx/window/layout/FoldingFeature$OcclusionType$Companion;-><init>(Lqnm;)V
 
     sput-object v0, Landroidx/window/layout/FoldingFeature$OcclusionType;->mCompanion:Landroidx/window/layout/FoldingFeature$OcclusionType$Companion;
 

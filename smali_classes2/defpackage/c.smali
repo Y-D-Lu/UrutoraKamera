@@ -1,52 +1,58 @@
-.class final Ldefpackage/c;
+.class public Ldefpackage/C;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/security/PrivilegedAction;
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/D;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/lang/Class;
+.field public final synthetic this$1:Ldefpackage/D;
 
-.field public final b:Ljava/lang/String;
+.field public final synthetic val$broVar:Lbro;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;)V
-    .locals 1
-    .param p1, "cls"    # Ljava/lang/Class;
+.method public constructor <init>(Ldefpackage/D;Lbro;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/D;
 
-    .line 11
+    .line 210
+    iput-object p1, p0, Ldefpackage/C;->this$1:Ldefpackage/D;
+
+    iput-object p2, p0, Ldefpackage/C;->val$broVar:Lbro;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
-    const-string v0, "/android/icumessageformat/ICUConfig.properties"
-
-    iput-object v0, p0, Ldefpackage/c;->b:Ljava/lang/String;
-
-    .line 12
-    iput-object p1, p0, Ldefpackage/c;->a:Ljava/lang/Class;
-
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()Ljava/lang/Object;
+.method public final fB(Ljava/lang/Object;)V
     .locals 2
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 17
-    iget-object v0, p0, Ldefpackage/c;->a:Ljava/lang/Class;
+    .line 213
+    iget-object v0, p0, Ldefpackage/C;->val$broVar:Lbro;
 
-    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    move-object v1, p1
 
-    const-string v1, "/android/icumessageformat/ICUConfig.properties"
+    check-cast v1, Lcwi;
 
-    invoke-virtual {v0, v1}, Ljava/lang/Class;->getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
+    invoke-interface {v0, v1}, Lbro;->e(Lcwi;)V
 
-    move-result-object v0
-
-    return-object v0
+    .line 214
+    return-void
 .end method

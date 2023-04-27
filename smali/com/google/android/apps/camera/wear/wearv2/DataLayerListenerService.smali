@@ -1,10 +1,10 @@
 .class public Lcom/google/android/apps/camera/wear/wearv2/DataLayerListenerService;
-.super Ldefpackage/kww;
+.super Lkww;
 .source ""
 
 
 # static fields
-.field private static final f:Ldefpackage/ouj;
+.field private static final f:Louj;
 
 
 # direct methods
@@ -14,11 +14,11 @@
     .line 15
     const-string v0, "com/google/android/apps/camera/wear/wearv2/DataLayerListenerService"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/wear/wearv2/DataLayerListenerService;->f:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/wear/wearv2/DataLayerListenerService;->f:Louj;
 
     return-void
 .end method
@@ -27,19 +27,19 @@
     .locals 0
 
     .line 14
-    invoke-direct {p0}, Ldefpackage/kww;-><init>()V
+    invoke-direct {p0}, Lkww;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ldefpackage/kyw;)V
+.method public final a(Lkyw;)V
     .locals 5
-    .param p1, "kywVar"    # Ldefpackage/kyw;
+    .param p1, "kywVar"    # Lkyw;
 
     .line 19
-    iget-object v0, p1, Ldefpackage/kyw;->b:Ljava/lang/String;
+    iget-object v0, p1, Lkyw;->b:Ljava/lang/String;
 
     const-string v1, "/start-activity"
 
@@ -50,9 +50,9 @@
     if-nez v0, :cond_0
 
     .line 20
-    sget-object v0, Lcom/google/android/apps/camera/wear/wearv2/DataLayerListenerService;->f:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/wear/wearv2/DataLayerListenerService;->f:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -60,23 +60,23 @@
 
     const/16 v1, 0xdd4
 
-    invoke-interface {v0, v1}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v0, v1}, Lova;->G(I)Lova;
 
     move-result-object v0
 
     check-cast v0, Loug;
 
-    iget-object v1, p1, Ldefpackage/kyw;->b:Ljava/lang/String;
+    iget-object v1, p1, Lkyw;->b:Ljava/lang/String;
 
     const-string v2, "Unsupported message path :%s"
 
-    invoke-interface {v0, v2, v1}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v0, v2, v1}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     goto :goto_2
 
     .line 21
     :cond_0
-    sget-boolean v0, Ldefpackage/jyq;->a:Z
+    sget-boolean v0, Ljyq;->a:Z
 
     if-eqz v0, :cond_1
 

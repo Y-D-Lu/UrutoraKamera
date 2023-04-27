@@ -1,5 +1,5 @@
 .class public Landroid/support/v7/widget/SearchView$SearchAutoComplete;
-.super Ldefpackage/mo;
+.super Lmo;
 .source ""
 
 
@@ -42,7 +42,7 @@
     .param p3, "i"    # I
 
     .line 28
-    invoke-direct {p0, p1, p2, p3}, Ldefpackage/mo;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, Lmo;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 29
     invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->getThreshold()I

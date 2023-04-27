@@ -45,9 +45,9 @@
     iput-object v0, p0, Lcom/eszdmanClass;->mCameraIDs:Ljava/util/Set;
 
     .line 27
-    sget-object v0, Ldefpackage/dep;->d:Ldefpackage/den;
+    sget-object v0, Ldep;->d:Lden;
 
-    iget-object v0, v0, Ldefpackage/den;->b:Landroid/content/SharedPreferences;
+    iget-object v0, v0, Lden;->b:Landroid/content/SharedPreferences;
 
     .line 28
     .local v0, "sharedPreferences":Landroid/content/SharedPreferences;

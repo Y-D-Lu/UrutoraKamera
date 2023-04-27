@@ -13,25 +13,25 @@
     return-void
 .end method
 
-.method public static read(Ldefpackage/aks;)Landroidx/media/AudioAttributesCompat;
+.method public static read(Laks;)Landroidx/media/AudioAttributesCompat;
     .locals 1
-    .param p0, "aksVar"    # Ldefpackage/aks;
+    .param p0, "aksVar"    # Laks;
 
     .line 10
-    invoke-static {p0}, Landroidx/media/AudioAttributesCompatParcelizer;->read(Ldefpackage/aks;)Landroidx/media/AudioAttributesCompat;
+    invoke-static {p0}, Landroidx/media/AudioAttributesCompatParcelizer;->read(Laks;)Landroidx/media/AudioAttributesCompat;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesCompat;Ldefpackage/aks;)V
+.method public static write(Landroidx/media/AudioAttributesCompat;Laks;)V
     .locals 0
     .param p0, "audioAttributesCompat"    # Landroidx/media/AudioAttributesCompat;
-    .param p1, "aksVar"    # Ldefpackage/aks;
+    .param p1, "aksVar"    # Laks;
 
     .line 14
-    invoke-static {p0, p1}, Landroidx/media/AudioAttributesCompatParcelizer;->write(Landroidx/media/AudioAttributesCompat;Ldefpackage/aks;)V
+    invoke-static {p0, p1}, Landroidx/media/AudioAttributesCompatParcelizer;->write(Landroidx/media/AudioAttributesCompat;Laks;)V
 
     .line 15
     return-void

@@ -1,0 +1,50 @@
+.class public final Lize;
+.super Lizp;
+.source ""
+
+
+# instance fields
+.field public final a:Lizg;
+
+
+# direct methods
+.method public constructor <init>(Lizg;)V
+    .locals 0
+    .param p1, "izgVar"    # Lizg;
+
+    .line 10
+    invoke-direct {p0, p1}, Lizp;-><init>(Lizr;)V
+
+    .line 11
+    iput-object p1, p0, Lize;->a:Lizg;
+
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 3
+
+    .line 16
+    iget-object v0, p0, Lize;->a:Lizg;
+
+    iget-object v0, v0, Lizg;->a:Lihu;
+
+    invoke-virtual {v0}, Lihu;->e()V
+
+    .line 17
+    iget-object v0, p0, Lize;->a:Lizg;
+
+    .line 18
+    .local v0, "izgVar":Lizg;
+    iget-object v1, v0, Lizg;->a:Lihu;
+
+    iget-object v2, v0, Lizg;->c:Lihw;
+
+    invoke-virtual {v1, v2}, Lihu;->g(Lihw;)V
+
+    .line 19
+    return-void
+.end method

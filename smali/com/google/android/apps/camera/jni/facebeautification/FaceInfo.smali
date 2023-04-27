@@ -13,21 +13,21 @@
     return-void
 .end method
 
-.method public static builder(Landroid/graphics/Rect;)Ldefpackage/enk;
+.method public static builder(Landroid/graphics/Rect;)Lenk;
     .locals 3
     .param p0, "rect"    # Landroid/graphics/Rect;
 
     .line 11
-    new-instance v0, Ldefpackage/enk;
+    new-instance v0, Lenk;
 
-    invoke-direct {v0}, Ldefpackage/enk;-><init>()V
+    invoke-direct {v0}, Lenk;-><init>()V
 
     .line 12
-    .local v0, "enkVar":Ldefpackage/enk;
+    .local v0, "enkVar":Lenk;
     if-eqz p0, :cond_0
 
     .line 13
-    iput-object p0, v0, Ldefpackage/enk;->a:Landroid/graphics/Rect;
+    iput-object p0, v0, Lenk;->a:Landroid/graphics/Rect;
 
     .line 14
     return-object v0

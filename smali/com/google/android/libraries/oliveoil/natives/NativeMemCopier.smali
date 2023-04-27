@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/mtn;
+.implements Lmtn;
 
 
 # instance fields

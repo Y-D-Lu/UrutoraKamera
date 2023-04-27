@@ -1,214 +1,194 @@
-.class public final Ldefpackage/me;
-.super Landroid/support/v7/widget/AppCompatImageView;
+.class public Ldefpackage/Me;
+.super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/mi;
+.implements Lgtp;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgtg;->m(Llda;Lolt;Lgtk;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/mh;
+.field public final a:Lgtg;
+
+.field public final synthetic this$0:Lgtg;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/mh;Landroid/content/Context;)V
-    .locals 2
-    .param p1, "mhVar"    # Ldefpackage/mh;
-    .param p2, "context"    # Landroid/content/Context;
+.method public constructor <init>(Lgtg;)V
+    .locals 0
+    .param p1, "this$0"    # Lgtg;
 
-    .line 17
-    const/4 v0, 0x0
+    .line 761
+    iput-object p1, p0, Ldefpackage/Me;->this$0:Lgtg;
 
-    const v1, 0x7f040020
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, p2, v0, v1}, Landroid/support/v7/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .line 762
+    iput-object p1, p0, Ldefpackage/Me;->a:Lgtg;
 
-    .line 18
-    iput-object p1, p0, Ldefpackage/me;->a:Ldefpackage/mh;
-
-    .line 19
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setClickable(Z)V
-
-    .line 20
-    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setFocusable(Z)V
-
-    .line 21
-    const/4 v1, 0x0
-
-    invoke-virtual {p0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 22
-    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setEnabled(Z)V
-
-    .line 23
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getContentDescription()Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setTooltipText(Ljava/lang/CharSequence;)V
-
-    .line 24
-    new-instance v0, Ldefpackage/md;
-
-    invoke-direct {v0, p0, p0}, Ldefpackage/md;-><init>(Ldefpackage/me;Landroid/view/View;)V
-
-    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
-
-    .line 25
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()Z
-    .locals 1
+.method public final a(Lgtv;Z)V
+    .locals 6
+    .param p1, "gtvVar"    # Lgtv;
+    .param p2, "z"    # Z
 
-    .line 29
-    const/4 v0, 0x0
+    .line 766
+    const/4 v0, -0x1
 
-    return v0
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public final d()Z
-    .locals 1
+    .line 774
+    iget-object v0, p0, Ldefpackage/Me;->a:Lgtg;
 
-    .line 34
-    const/4 v0, 0x0
+    iget-object v0, v0, Lgtg;->bd:Lojc;
 
-    return v0
-.end method
+    check-cast v0, Lojj;
 
-.method public final performClick()Z
-    .locals 2
+    iget-object v0, v0, Lojj;->a:Ljava/lang/Object;
 
-    .line 39
-    invoke-super {p0}, Landroid/widget/ImageView;->performClick()Z
+    .line 775
+    .local v0, "obj":Ljava/lang/Object;
+    if-eqz p2, :cond_0
 
-    move-result v0
+    .line 776
+    move-object v1, v0
 
-    const/4 v1, 0x1
+    check-cast v1, Lfvn;
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v1}, Lfvn;->a()V
 
-    .line 40
-    return v1
+    .line 777
+    return-void
 
-    .line 42
+    .line 771
+    .end local v0    # "obj":Ljava/lang/Object;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Me;->a:Lgtg;
+
+    iget-object v0, v0, Lgtg;->bc:Ldoq;
+
+    invoke-interface {v0, p1}, Ldoq;->a(Lgtv;)V
+
+    .line 772
+    return-void
+
+    .line 768
+    :pswitch_1
+    iget-object v0, p0, Ldefpackage/Me;->a:Lgtg;
+
+    iget-object v0, v0, Lgtg;->bb:Lojc;
+
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lfli;
+
+    invoke-interface {v0}, Lfli;->a()V
+
+    .line 769
+    return-void
+
+    .line 779
+    .restart local v0    # "obj":Ljava/lang/Object;
     :cond_0
-    const/4 v0, 0x0
+    move-object v1, v0
 
-    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->playSoundEffect(I)V
+    check-cast v1, Lfvn;
 
-    .line 43
-    iget-object v0, p0, Ldefpackage/me;->a:Ldefpackage/mh;
+    .line 780
+    .local v1, "fvnVar":Lfvn;
+    invoke-static {}, Llar;->a()V
 
-    invoke-virtual {v0}, Ldefpackage/mh;->m()Z
+    .line 781
+    iget-object v2, v1, Lfvn;->d:Landroid/view/View;
 
-    .line 44
-    return v1
-.end method
+    if-nez v2, :cond_2
 
-.method public final setFrame(IIII)Z
-    .locals 12
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
-    .param p3, "i3"    # I
-    .param p4, "i4"    # I
+    .line 782
+    new-instance v2, Landroid/widget/FrameLayout;
 
-    .line 49
-    invoke-super/range {p0 .. p4}, Landroid/widget/ImageView;->setFrame(IIII)Z
+    iget-object v3, v1, Lfvn;->b:Landroid/content/Context;
 
-    move-result v0
+    invoke-direct {v2, v3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    .line 50
-    .local v0, "frame":Z
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+    .line 783
+    .local v2, "frameLayout":Landroid/widget/FrameLayout;
+    iget-object v3, v1, Lfvn;->b:Landroid/content/Context;
 
-    move-result-object v1
+    iget-object v4, v1, Lfvn;->c:Lddf;
 
-    .line 51
-    .local v1, "drawable":Landroid/graphics/drawable/Drawable;
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getBackground()Landroid/graphics/drawable/Drawable;
+    sget-object v5, Lddl;->ay:Lddg;
 
-    move-result-object v2
-
-    .line 52
-    .local v2, "background":Landroid/graphics/drawable/Drawable;
-    if-eqz v1, :cond_0
-
-    if-eqz v2, :cond_0
-
-    .line 53
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
-
-    move-result v3
-
-    .line 54
-    .local v3, "width":I
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getHeight()I
+    invoke-interface {v4, v5}, Lddf;->k(Lddg;)Z
 
     move-result v4
 
-    .line 55
-    .local v4, "height":I
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
+    const/4 v5, 0x1
 
-    move-result v5
+    if-eq v5, v4, :cond_1
 
-    div-int/lit8 v5, v5, 0x2
+    const v4, 0x7f0d0073
 
-    .line 56
-    .local v5, "max":I
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingLeft()I
+    goto :goto_0
 
-    move-result v6
+    :cond_1
+    const v4, 0x7f0d0072
 
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingRight()I
+    :goto_0
+    invoke-static {v3, v4, v2}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    move-result v7
+    .line 784
+    const v3, 0x7f0a0273
 
-    sub-int/2addr v6, v7
+    invoke-virtual {v2, v3}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
-    add-int/2addr v6, v3
+    move-result-object v3
 
-    div-int/lit8 v6, v6, 0x2
+    check-cast v3, Landroid/widget/Button;
 
-    .line 57
-    .local v6, "paddingLeft":I
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingTop()I
+    new-instance v4, Lfvm;
 
-    move-result v7
+    invoke-direct {v4, v1, v5}, Lfvm;-><init>(Lfvn;I)V
 
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingBottom()I
+    invoke-virtual {v3, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    move-result v8
+    .line 785
+    iput-object v2, v1, Lfvn;->d:Landroid/view/View;
 
-    sub-int/2addr v7, v8
+    .line 787
+    .end local v2    # "frameLayout":Landroid/widget/FrameLayout;
+    :cond_2
+    iget-object v2, v1, Lfvn;->a:Lius;
 
-    add-int/2addr v7, v4
+    const/4 v3, 0x7
 
-    div-int/lit8 v7, v7, 0x2
+    const v4, 0x7f11036e
 
-    .line 58
-    .local v7, "paddingTop":I
-    sub-int v8, v6, v5
+    iget-object v5, v1, Lfvn;->d:Landroid/view/View;
 
-    sub-int v9, v7, v5
+    invoke-virtual {v2, v3, v4, v5}, Lius;->f(IILandroid/view/View;)V
 
-    add-int v10, v6, v5
+    .line 788
+    return-void
 
-    add-int v11, v7, v5
-
-    invoke-virtual {v2, v8, v9, v10, v11}, Landroid/graphics/drawable/Drawable;->setHotspotBounds(IIII)V
-
-    .line 60
-    .end local v3    # "width":I
-    .end local v4    # "height":I
-    .end local v5    # "max":I
-    .end local v6    # "paddingLeft":I
-    .end local v7    # "paddingTop":I
-    :cond_0
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,5 +1,5 @@
 .class public Lcom/google/android/apps/camera/bottombar/ScalableButton;
-.super Ldefpackage/mw;
+.super Lmw;
 .source ""
 
 
@@ -16,7 +16,7 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 16
-    invoke-direct {p0, p1, p2}, Ldefpackage/mw;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lmw;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 17
     invoke-direct {p0}, Lcom/google/android/apps/camera/bottombar/ScalableButton;->initialize()V

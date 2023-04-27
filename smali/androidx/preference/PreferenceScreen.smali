@@ -18,7 +18,7 @@
 
     const v1, 0x101008b
 
-    invoke-static {p1, v0, v1}, Ldefpackage/et;->u(Landroid/content/Context;II)I
+    invoke-static {p1, v0, v1}, Let;->u(Landroid/content/Context;II)I
 
     move-result v0
 
@@ -62,26 +62,26 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Landroidx/preference/Preference;->k:Ldefpackage/ahj;
+    iget-object v0, p0, Landroidx/preference/Preference;->k:Lahj;
 
-    iget-object v0, v0, Ldefpackage/ahj;->e:Ldefpackage/ahh;
+    iget-object v0, v0, Lahj;->e:Lahh;
 
     move-object v1, v0
 
-    .local v1, "ahhVar":Ldefpackage/ahh;
+    .local v1, "ahhVar":Lahh;
     if-nez v0, :cond_0
 
     goto :goto_0
 
     .line 31
     :cond_0
-    invoke-interface {v1}, Ldefpackage/ahh;->aj()V
+    invoke-interface {v1}, Lahh;->aj()V
 
     .line 32
     return-void
 
     .line 29
-    .end local v1    # "ahhVar":Ldefpackage/ahh;
+    .end local v1    # "ahhVar":Lahh;
     :cond_1
     :goto_0
     return-void

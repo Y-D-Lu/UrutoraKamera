@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field private statusCode:Ldefpackage/nvi;
+.field private statusCode:Lnvi;
 
 .field private statusMessage:Ljava/lang/String;
 
-.field private visionkitStatus:Ldefpackage/nvo;
+.field private visionkitStatus:Lnvo;
 
 
 # direct methods
@@ -34,9 +34,9 @@
     throw v0
 .end method
 
-.method private constructor <init>(Ldefpackage/nvo;)V
+.method private constructor <init>(Lnvo;)V
     .locals 2
-    .param p1, "r6"    # Ldefpackage/nvo;
+    .param p1, "r6"    # Lnvo;
 
     .line 64
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
@@ -62,21 +62,21 @@
     :try_start_0
     new-instance v0, Lcom/google/android/libraries/vision/visionkit/pipeline/PipelineException;
 
-    sget-object v1, Ldefpackage/nvo;->d:Ldefpackage/nvo;
+    sget-object v1, Lnvo;->d:Lnvo;
 
-    invoke-static {}, Ldefpackage/pos;->a()Ldefpackage/pos;
+    invoke-static {}, Lpos;->a()Lpos;
 
     move-result-object v2
 
-    invoke-static {v1, p1, v2}, Ldefpackage/ppd;->s(Ldefpackage/ppd;[BLdefpackage/pos;)Ldefpackage/ppd;
+    invoke-static {v1, p1, v2}, Lppd;->s(Lppd;[BLpos;)Lppd;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/nvo;
+    check-cast v1, Lnvo;
 
-    invoke-direct {v0, v1}, Lcom/google/android/libraries/vision/visionkit/pipeline/PipelineException;-><init>(Ldefpackage/nvo;)V
+    invoke-direct {v0, v1}, Lcom/google/android/libraries/vision/visionkit/pipeline/PipelineException;-><init>(Lnvo;)V
     :try_end_0
-    .catch Ldefpackage/ppp; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lppp; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 103
     goto :goto_0
@@ -86,11 +86,11 @@
     move-exception v0
 
     .line 102
-    .local v0, "e":Ldefpackage/ppp;
+    .local v0, "e":Lppp;
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     .line 104
-    .end local v0    # "e":Ldefpackage/ppp;
+    .end local v0    # "e":Lppp;
     :goto_0
     return-void
 .end method
@@ -101,18 +101,18 @@
     .locals 2
 
     .line 107
-    iget-object v0, p0, Lcom/google/android/libraries/vision/visionkit/pipeline/PipelineException;->visionkitStatus:Ldefpackage/nvo;
+    iget-object v0, p0, Lcom/google/android/libraries/vision/visionkit/pipeline/PipelineException;->visionkitStatus:Lnvo;
 
     .line 108
-    .local v0, "nvoVar":Ldefpackage/nvo;
+    .local v0, "nvoVar":Lnvo;
     if-eqz v0, :cond_0
 
-    iget-object v1, v0, Ldefpackage/nvo;->c:Ldefpackage/ppm;
+    iget-object v1, v0, Lnvo;->c:Lppm;
 
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Ldefpackage/oom;->l()Ldefpackage/oom;
+    invoke-static {}, Loom;->l()Loom;
 
     move-result-object v1
 
@@ -120,7 +120,7 @@
     return-object v1
 .end method
 
-.method public getRootCauseMessage()Ldefpackage/ojc;
+.method public getRootCauseMessage()Lojc;
     .locals 2
 
     .line 112
@@ -134,40 +134,40 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {v1}, Ldefpackage/ojq;->d(Ljava/lang/String;)Ldefpackage/ojq;
+    invoke-static {v1}, Lojq;->d(Ljava/lang/String;)Lojq;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/google/android/libraries/vision/visionkit/pipeline/PipelineException;->statusMessage:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ldefpackage/ojq;->g(Ljava/lang/CharSequence;)Ljava/util/List;
+    invoke-virtual {v0, v1}, Lojq;->g(Ljava/lang/CharSequence;)Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/ohh;->t(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {v0}, Lohh;->t(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-static {v0}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v0}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v0
 
     goto :goto_0
 
     :cond_0
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
     :goto_0
     return-object v0
 .end method
 
-.method public getStatusCode()Ldefpackage/nvi;
+.method public getStatusCode()Lnvi;
     .locals 1
 
     .line 116
-    iget-object v0, p0, Lcom/google/android/libraries/vision/visionkit/pipeline/PipelineException;->statusCode:Ldefpackage/nvi;
+    iget-object v0, p0, Lcom/google/android/libraries/vision/visionkit/pipeline/PipelineException;->statusCode:Lnvi;
 
     return-object v0
 .end method

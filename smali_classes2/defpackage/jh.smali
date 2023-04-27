@@ -1,587 +1,784 @@
-.class public final Ldefpackage/jh;
-.super Ldefpackage/hu;
+.class public Ldefpackage/Jh;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhwm;->a()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/oa;
+.field public final synthetic this$0:Lhwm;
 
-.field public b:Z
+.field public final synthetic val$hwhVar:Lhwh;
 
-.field public final c:Landroid/view/Window$Callback;
-
-.field private d:Z
-
-.field private e:Z
-
-.field private final f:Ljava/util/ArrayList;
-
-.field private final g:Ljava/lang/Runnable;
-
-.field private final h:Ldefpackage/jd;
+.field public final synthetic val$str:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/v7/widget/Toolbar;Ljava/lang/CharSequence;Landroid/view/Window$Callback;)V
-    .locals 3
-    .param p1, "toolbar"    # Landroid/support/v7/widget/Toolbar;
-    .param p2, "charSequence"    # Ljava/lang/CharSequence;
-    .param p3, "callback"    # Landroid/view/Window$Callback;
+.method public constructor <init>(Lhwm;Lhwh;Ljava/lang/String;)V
+    .locals 0
+    .param p1, "this$0"    # Lhwm;
 
-    .line 27
-    invoke-direct {p0}, Ldefpackage/hu;-><init>()V
+    .line 59
+    iput-object p1, p0, Ldefpackage/Jh;->this$0:Lhwm;
 
-    .line 23
-    new-instance v0, Ljava/util/ArrayList;
+    iput-object p2, p0, Ldefpackage/Jh;->val$hwhVar:Lhwh;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    iput-object p3, p0, Ldefpackage/Jh;->val$str:Ljava/lang/String;
 
-    iput-object v0, p0, Ldefpackage/jh;->f:Ljava/util/ArrayList;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 24
-    new-instance v0, Ldefpackage/jc;
-
-    invoke-direct {v0, p0}, Ldefpackage/jc;-><init>(Ldefpackage/jh;)V
-
-    iput-object v0, p0, Ldefpackage/jh;->g:Ljava/lang/Runnable;
-
-    .line 28
-    new-instance v0, Ldefpackage/jd;
-
-    invoke-direct {v0, p0}, Ldefpackage/jd;-><init>(Ldefpackage/jh;)V
-
-    .line 29
-    .local v0, "jdVar":Ldefpackage/jd;
-    iput-object v0, p0, Ldefpackage/jh;->h:Ldefpackage/jd;
-
-    .line 30
-    new-instance v1, Ldefpackage/rx;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, p1, v2}, Ldefpackage/rx;-><init>(Landroid/support/v7/widget/Toolbar;Z)V
-
-    .line 31
-    .local v1, "rxVar":Ldefpackage/rx;
-    iput-object v1, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    .line 32
-    new-instance v2, Ldefpackage/jg;
-
-    invoke-direct {v2, p0, p3}, Ldefpackage/jg;-><init>(Ldefpackage/jh;Landroid/view/Window$Callback;)V
-
-    .line 33
-    .local v2, "jgVar":Ldefpackage/jg;
-    iput-object v2, p0, Ldefpackage/jh;->c:Landroid/view/Window$Callback;
-
-    .line 34
-    iput-object v2, v1, Ldefpackage/rx;->d:Landroid/view/Window$Callback;
-
-    .line 35
-    iput-object v0, p1, Landroid/support/v7/widget/Toolbar;->z:Ldefpackage/jd;
-
-    .line 36
-    invoke-virtual {v1, p2}, Ldefpackage/rx;->p(Ljava/lang/CharSequence;)V
-
-    .line 37
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final call()Ljava/lang/Object;
+    .locals 17
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    .line 41
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
+    .line 63
+    move-object/from16 v1, p0
 
-    check-cast v0, Ldefpackage/rx;
+    const-string v2, ".."
 
-    iget v0, v0, Ldefpackage/rx;->b:I
+    const/4 v3, 0x0
 
-    return v0
-.end method
+    .line 65
+    .local v3, "open":Ljava/io/InputStream;
+    const/4 v4, 0x0
 
-.method public final b()Landroid/content/Context;
-    .locals 1
+    .line 67
+    .local v4, "obj":Ljava/lang/Object;
+    iget-object v5, v1, Ldefpackage/Jh;->val$hwhVar:Lhwh;
 
-    .line 46
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
+    .line 68
+    .local v5, "hwhVar2":Lhwh;
+    iget-object v6, v1, Ldefpackage/Jh;->val$str:Ljava/lang/String;
 
-    invoke-interface {v0}, Ldefpackage/oa;->b()Landroid/content/Context;
+    .line 69
+    .local v6, "str2":Ljava/lang/String;
+    iget-object v0, v5, Lhwh;->r:Lljf;
+
+    const-string v7, "SidelineInstaller#shouldStartUpdate"
+
+    invoke-interface {v0, v7}, Lljf;->e(Ljava/lang/String;)V
+
+    .line 70
+    iget-object v0, v5, Lhwh;->b:Landroid/content/Context;
+
+    invoke-static {v0}, Lhwv;->b(Landroid/content/Context;)J
+
+    move-result-wide v7
+
+    .line 71
+    .local v7, "b":J
+    const/4 v9, 0x0
+
+    .line 72
+    .local v9, "z":Z
+    const-wide/16 v10, -0x1
+
+    cmp-long v0, v7, v10
+
+    if-eqz v0, :cond_d
+
+    .line 73
+    iget-object v0, v5, Lhwh;->m:Lhwn;
+
+    iput-wide v7, v0, Lhwn;->b:J
+
+    .line 74
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    .line 77
+    :try_start_0
+    iget-object v0, v5, Lhwh;->b:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    invoke-virtual {v0, v6}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
 
-.method public final d(Z)V
-    .locals 3
-    .param p1, "z"    # Z
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 51
-    iget-boolean v0, p0, Ldefpackage/jh;->e:Z
+    .line 81
+    .end local v3    # "open":Ljava/io/InputStream;
+    .local v0, "open":Ljava/io/InputStream;
+    move-object v3, v0
 
-    if-ne p1, v0, :cond_0
+    goto :goto_0
 
-    .line 52
-    return-void
+    .line 160
+    .end local v0    # "open":Ljava/io/InputStream;
+    .restart local v3    # "open":Ljava/io/InputStream;
+    :catchall_0
+    move-exception v0
 
-    .line 54
+    goto/16 :goto_b
+
+    .line 78
+    :catch_0
+    move-exception v0
+
+    .line 79
+    .local v0, "e":Ljava/io/IOException;
+    :try_start_1
+    sget-object v12, Lhwh;->a:Louj;
+
+    invoke-virtual {v12}, Loue;->c()Lova;
+
+    move-result-object v12
+
+    check-cast v12, Loug;
+
+    const/16 v13, 0xa89
+
+    invoke-interface {v12, v13}, Lova;->G(I)Lova;
+
+    move-result-object v12
+
+    check-cast v12, Loug;
+
+    const-string v13, "Apex asset file not found: %s"
+
+    invoke-interface {v12, v13, v6}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 80
+    nop
+
+    .line 83
+    .end local v0    # "e":Ljava/io/IOException;
+    :goto_0
+    :try_start_2
+    new-instance v0, Ljava/util/zip/ZipInputStream;
+
+    invoke-static {v3}, Lhwh;->d(Ljava/io/InputStream;)Ljava/io/InputStream;
+
+    move-result-object v12
+
+    invoke-direct {v0, v12}, Ljava/util/zip/ZipInputStream;-><init>(Ljava/io/InputStream;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    move-object v12, v0
+
+    .line 86
+    .local v12, "zipInputStream":Ljava/util/zip/ZipInputStream;
+    :goto_1
+    :try_start_3
+    invoke-virtual {v12}, Ljava/util/zip/ZipInputStream;->getNextEntry()Ljava/util/zip/ZipEntry;
+
+    move-result-object v0
+
+    .line 87
+    .local v0, "nextEntry":Ljava/util/zip/ZipEntry;
+    if-nez v0, :cond_0
+
+    .line 88
+    sget-object v13, Lhwr;->a:Louj;
+
+    invoke-virtual {v13}, Loue;->c()Lova;
+
+    move-result-object v13
+
+    check-cast v13, Loug;
+
+    const/16 v14, 0xa9b
+
+    invoke-interface {v13, v14}, Lova;->G(I)Lova;
+
+    move-result-object v13
+
+    check-cast v13, Loug;
+
+    const-string v14, "Apex manifest file not found."
+
+    invoke-interface {v13, v14}, Lova;->o(Ljava/lang/String;)V
+
+    .line 89
+    const-wide/16 v13, -0x1
+
+    .line 90
+    .local v13, "j":J
+    goto :goto_5
+
+    .line 92
+    .end local v13    # "j":J
     :cond_0
-    iput-boolean p1, p0, Ldefpackage/jh;->e:Z
+    invoke-virtual {v0}, Ljava/util/zip/ZipEntry;->getName()Ljava/lang/String;
 
-    .line 55
-    iget-object v0, p0, Ldefpackage/jh;->f:Ljava/util/ArrayList;
+    move-result-object v13
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    .line 93
+    .local v13, "name":Ljava/lang/String;
+    invoke-virtual {v13, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_4
+
+    .line 94
+    new-instance v14, Ljava/io/File;
+
+    invoke-direct {v14, v13}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .local v14, "file":Ljava/io/File;
+    :goto_2
+    if-eqz v14, :cond_3
+
+    .line 95
+    invoke-virtual {v14}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v15
+
+    if-eqz v15, :cond_2
+
+    .line 96
+    invoke-static {v13}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v15
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    .line 97
+    .local v15, "valueOf":Ljava/lang/String;
+    :try_start_4
+    new-instance v10, Ljava/util/zip/ZipException;
+
+    invoke-virtual {v15}, Ljava/lang/String;->length()I
+
+    move-result v11
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+
+    move-object/from16 v16, v0
+
+    .end local v0    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .local v16, "nextEntry":Ljava/util/zip/ZipEntry;
+    const-string v0, "Illegal name: "
+
+    if-eqz v11, :cond_1
+
+    :try_start_5
+    invoke-virtual {v0, v15}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_3
+
+    :cond_1
+    new-instance v11, Ljava/lang/String;
+
+    invoke-direct {v11, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    move-object v0, v11
+
+    :goto_3
+    invoke-direct {v10, v0}, Ljava/util/zip/ZipException;-><init>(Ljava/lang/String;)V
+
+    .end local v3    # "open":Ljava/io/InputStream;
+    .end local v4    # "obj":Ljava/lang/Object;
+    .end local v5    # "hwhVar2":Lhwh;
+    .end local v6    # "str2":Ljava/lang/String;
+    .end local v7    # "b":J
+    .end local v9    # "z":Z
+    .end local v12    # "zipInputStream":Ljava/util/zip/ZipInputStream;
+    .end local p0    # "this":Ldefpackage/Jh;
+    throw v10
+
+    .line 94
+    .end local v15    # "valueOf":Ljava/lang/String;
+    .end local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .restart local v0    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .restart local v3    # "open":Ljava/io/InputStream;
+    .restart local v4    # "obj":Ljava/lang/Object;
+    .restart local v5    # "hwhVar2":Lhwh;
+    .restart local v6    # "str2":Ljava/lang/String;
+    .restart local v7    # "b":J
+    .restart local v9    # "z":Z
+    .restart local v12    # "zipInputStream":Ljava/util/zip/ZipInputStream;
+    .restart local p0    # "this":Ldefpackage/Jh;
+    :cond_2
+    move-object/from16 v16, v0
+
+    .end local v0    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .restart local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    invoke-virtual {v14}, Ljava/io/File;->getParentFile()Ljava/io/File;
+
+    move-result-object v0
+
+    move-object v14, v0
+
+    move-object/from16 v0, v16
+
+    const-wide/16 v10, -0x1
+
+    goto :goto_2
+
+    .end local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .restart local v0    # "nextEntry":Ljava/util/zip/ZipEntry;
+    :cond_3
+    move-object/from16 v16, v0
+
+    .end local v0    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .restart local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    goto :goto_4
+
+    .line 93
+    .end local v14    # "file":Ljava/io/File;
+    .end local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .restart local v0    # "nextEntry":Ljava/util/zip/ZipEntry;
+    :cond_4
+    move-object/from16 v16, v0
+
+    .line 101
+    .end local v0    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .restart local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    :goto_4
+    const-string v0, "apex_manifest.pb"
+
+    invoke-virtual {v0, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    .line 56
-    .local v0, "size":I
-    const/4 v1, 0x0
+    if-eqz v0, :cond_b
 
-    .local v1, "i":I
-    :goto_0
-    if-ge v1, v0, :cond_1
+    .line 102
+    sget-object v0, Lhvs;->b:Lhvs;
 
-    .line 57
-    iget-object v2, p0, Ldefpackage/jh;->f:Ljava/util/ArrayList;
+    invoke-static {}, Lpos;->b()Lpos;
 
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    move-result-object v10
+
+    invoke-static {v0, v12, v10}, Lppd;->q(Lppd;Ljava/io/InputStream;Lpos;)Lppd;
+
+    move-result-object v0
+
+    check-cast v0, Lhvs;
+
+    iget-wide v10, v0, Lhvs;->a:J
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+
+    .line 103
+    .local v10, "j":J
+    move-wide v13, v10
+
+    .line 110
+    .end local v10    # "j":J
+    .end local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    .local v13, "j":J
+    :goto_5
+    :try_start_6
+    iput-wide v13, v5, Lhwh;->t:J
+
+    .line 111
+    const-wide/16 v10, -0x1
+
+    cmp-long v0, v13, v10
+
+    if-eqz v0, :cond_9
+
+    .line 112
+    iget-object v0, v5, Lhwh;->m:Lhwn;
+
+    iput-wide v13, v0, Lhwn;->c:J
+
+    .line 113
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    .line 114
+    iget-wide v10, v5, Lhwh;->t:J
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_1
+
+    cmp-long v0, v10, v7
+
+    if-lez v0, :cond_8
+
+    .line 116
+    :try_start_7
+    sget-object v0, Landroid/os/Build$VERSION;->INCREMENTAL:Ljava/lang/String;
+
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v0
+    :try_end_7
+    .catch Ljava/lang/NumberFormatException; {:try_start_7 .. :try_end_7} :catch_1
+    .catchall {:try_start_7 .. :try_end_7} :catchall_1
+
+    .line 120
+    .local v0, "i3":I
+    goto :goto_6
+
+    .line 117
+    .end local v0    # "i3":I
+    :catch_1
+    move-exception v0
+
+    .line 118
+    .local v0, "e3":Ljava/lang/NumberFormatException;
+    :try_start_8
+    sget-object v2, Lhwr;->a:Louj;
+
+    invoke-virtual {v2}, Loue;->b()Lova;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/ht;
+    check-cast v2, Loug;
 
-    invoke-interface {v2}, Ldefpackage/ht;->a()V
+    invoke-interface {v2, v0}, Lova;->h(Ljava/lang/Throwable;)Lova;
 
-    .line 56
-    add-int/lit8 v1, v1, 0x1
+    move-result-object v2
 
-    goto :goto_0
+    check-cast v2, Loug;
 
-    .line 59
-    .end local v1    # "i":I
-    :cond_1
-    return-void
-.end method
+    const/16 v10, 0xa9a
 
-.method public final e()V
-    .locals 2
+    invoke-interface {v2, v10}, Lova;->G(I)Lova;
 
-    .line 63
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
+    move-result-object v2
 
-    check-cast v0, Ldefpackage/rx;
+    check-cast v2, Loug;
 
-    iget-object v0, v0, Ldefpackage/rx;->a:Landroid/support/v7/widget/Toolbar;
+    const-string v10, "VERSION.INCREMENTAL is not an integer (%s). Return -1."
 
-    iget-object v1, p0, Ldefpackage/jh;->g:Ljava/lang/Runnable;
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 64
-    return-void
-.end method
-
-.method public final f(Z)V
-    .locals 0
-    .param p1, "z"    # Z
-
-    .line 68
-    return-void
-.end method
-
-.method public final g(Z)V
-    .locals 1
-    .param p1, "z"    # Z
-
-    .line 72
-    const/4 v0, 0x4
-
-    invoke-virtual {p0, v0, v0}, Ldefpackage/jh;->w(II)V
-
-    .line 73
-    return-void
-.end method
-
-.method public final h(Z)V
-    .locals 0
-    .param p1, "z"    # Z
-
-    .line 77
-    return-void
-.end method
-
-.method public final i(Ljava/lang/CharSequence;)V
-    .locals 1
-    .param p1, "charSequence"    # Ljava/lang/CharSequence;
-
-    .line 81
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    invoke-interface {v0, p1}, Ldefpackage/oa;->m(Ljava/lang/CharSequence;)V
-
-    .line 82
-    return-void
-.end method
-
-.method public final j(Ljava/lang/CharSequence;)V
-    .locals 1
-    .param p1, "charSequence"    # Ljava/lang/CharSequence;
-
-    .line 86
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    invoke-interface {v0, p1}, Ldefpackage/oa;->p(Ljava/lang/CharSequence;)V
-
-    .line 87
-    return-void
-.end method
-
-.method public final k()Z
-    .locals 1
-
-    .line 91
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    invoke-interface {v0}, Ldefpackage/oa;->s()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .line 96
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    invoke-interface {v0}, Ldefpackage/oa;->r()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 97
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    invoke-interface {v0}, Ldefpackage/oa;->e()V
-
-    .line 98
-    const/4 v0, 0x1
-
-    return v0
-
-    .line 100
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final m()Z
-    .locals 2
-
-    .line 105
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    check-cast v0, Ldefpackage/rx;
-
-    iget-object v0, v0, Ldefpackage/rx;->a:Landroid/support/v7/widget/Toolbar;
-
-    iget-object v1, p0, Ldefpackage/jh;->g:Ljava/lang/Runnable;
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 106
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    check-cast v0, Ldefpackage/rx;
-
-    iget-object v0, v0, Ldefpackage/rx;->a:Landroid/support/v7/widget/Toolbar;
-
-    iget-object v1, p0, Ldefpackage/jh;->g:Ljava/lang/Runnable;
-
-    invoke-static {v0, v1}, Ldefpackage/gl;->A(Landroid/view/View;Ljava/lang/Runnable;)V
-
-    .line 107
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public final n(ILandroid/view/KeyEvent;)Z
-    .locals 5
-    .param p1, "i"    # I
-    .param p2, "keyEvent"    # Landroid/view/KeyEvent;
-
-    .line 112
-    invoke-virtual {p0}, Ldefpackage/jh;->v()Landroid/view/Menu;
-
-    move-result-object v0
-
-    .line 113
-    .local v0, "v":Landroid/view/Menu;
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_2
-
-    .line 114
-    const/4 v2, 0x1
-
-    .line 115
-    .local v2, "z":Z
-    if-eqz p2, :cond_0
-
-    invoke-virtual {p2}, Landroid/view/KeyEvent;->getDeviceId()I
-
-    move-result v3
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v3, -0x1
-
-    :goto_0
-    invoke-static {v3}, Landroid/view/KeyCharacterMap;->load(I)Landroid/view/KeyCharacterMap;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/view/KeyCharacterMap;->getKeyboardType()I
-
-    move-result v3
-
-    const/4 v4, 0x1
-
-    if-ne v3, v4, :cond_1
-
-    .line 116
-    const/4 v2, 0x0
-
-    .line 118
-    :cond_1
-    invoke-interface {v0, v2}, Landroid/view/Menu;->setQwertyMode(Z)V
+    invoke-interface {v2, v10, v4}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 119
-    invoke-interface {v0, p1, p2, v1}, Landroid/view/Menu;->performShortcut(ILandroid/view/KeyEvent;I)Z
+    const/4 v2, -0x1
 
-    move-result v1
-
-    return v1
+    move v0, v2
 
     .line 121
-    .end local v2    # "z":Z
-    :cond_2
-    return v1
-.end method
+    .local v0, "i3":I
+    :goto_6
+    const/4 v2, -0x1
 
-.method public final o(Landroid/view/KeyEvent;)Z
-    .locals 2
-    .param p1, "keyEvent"    # Landroid/view/KeyEvent;
+    if-eq v0, v2, :cond_7
+
+    sget-object v2, Landroid/os/Build;->ID:Ljava/lang/String;
+
+    const-string v10, "SD1"
+
+    invoke-virtual {v2, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_7
+
+    .line 122
+    iget-object v2, v5, Lhwh;->b:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v10, 0x7f0b0003
+
+    invoke-virtual {v2, v10}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v2
+
+    .line 123
+    .local v2, "integer":I
+    if-ge v0, v2, :cond_5
+
+    .line 124
+    sget-object v10, Lhwh;->a:Louj;
+
+    invoke-virtual {v10}, Loue;->c()Lova;
+
+    move-result-object v10
+
+    check-cast v10, Loug;
+
+    const/16 v11, 0xa8b
+
+    invoke-interface {v10, v11}, Lova;->G(I)Lova;
+
+    move-result-object v10
+
+    check-cast v10, Loug;
+
+    const-string v11, "Current OS version (%d) is smaller than minimum OS version required (%d). Skipping."
+
+    invoke-interface {v10, v11, v0, v2}, Lova;->s(Ljava/lang/String;II)V
+
+    .line 125
+    iget-object v10, v5, Lhwh;->m:Lhwn;
+
+    const/4 v11, -0x3
+
+    const/4 v15, 0x6
+
+    invoke-virtual {v10, v11, v15}, Lhwn;->b(II)V
 
     .line 126
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
+    if-eqz v3, :cond_7
 
     .line 127
-    invoke-virtual {p0}, Ldefpackage/jh;->p()Z
+    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
-    .line 129
-    :cond_0
-    return v1
-.end method
+    goto :goto_7
 
-.method public final p()Z
-    .locals 1
+    .line 130
+    :cond_5
+    if-eqz v3, :cond_6
+
+    .line 131
+    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+
+    .line 133
+    :cond_6
+    iget-object v10, v5, Lhwh;->r:Lljf;
+
+    invoke-interface {v10}, Lljf;->f()V
 
     .line 134
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
+    const/4 v9, 0x1
 
-    invoke-interface {v0}, Ldefpackage/oa;->v()Z
+    .line 137
+    .end local v2    # "integer":I
+    :cond_7
+    :goto_7
+    sget-object v2, Lhwh;->a:Louj;
 
-    move-result v0
+    invoke-virtual {v2}, Loue;->c()Lova;
 
-    return v0
-.end method
+    move-result-object v2
 
-.method public final q()V
-    .locals 0
+    check-cast v2, Loug;
+
+    const/16 v10, 0xa88
+
+    invoke-interface {v2, v10}, Lova;->G(I)Lova;
+
+    move-result-object v2
+
+    check-cast v2, Loug;
+
+    const-string v10, "Sideline is not compatible with OS build: %s. Skipping"
+
+    sget-object v11, Landroid/os/Build;->ID:Ljava/lang/String;
+
+    invoke-interface {v2, v10, v11}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 138
+    iget-object v2, v5, Lhwh;->m:Lhwn;
+
+    const/4 v10, -0x2
+
+    const/4 v11, 0x5
+
+    invoke-virtual {v2, v10, v11}, Lhwn;->b(II)V
 
     .line 139
-    return-void
-.end method
+    if-eqz v3, :cond_a
 
-.method public final r()V
-    .locals 1
+    .line 140
+    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+
+    goto :goto_8
+
+    .line 142
+    .end local v0    # "i3":I
+    :cond_8
+    if-eqz v3, :cond_a
 
     .line 143
-    const/4 v0, 0x2
+    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
-    invoke-virtual {p0, v0, v0}, Ldefpackage/jh;->w(II)V
+    goto :goto_8
 
-    .line 144
-    return-void
-.end method
+    .line 145
+    :cond_9
+    if-eqz v3, :cond_a
 
-.method public final s()V
-    .locals 1
+    .line 146
+    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
     .line 148
-    const/16 v0, 0x8
-
-    invoke-virtual {p0, v0, v0}, Ldefpackage/jh;->w(II)V
+    :cond_a
+    :goto_8
+    iget-object v0, v5, Lhwh;->r:Lljf;
 
     .line 149
-    return-void
-.end method
-
-.method public final t()V
-    .locals 2
-
-    .line 153
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    const/4 v1, 0x0
-
-    invoke-interface {v0, v1}, Ldefpackage/oa;->j(Landroid/graphics/drawable/Drawable;)V
-
-    .line 154
-    return-void
-.end method
-
-.method public final u()V
-    .locals 3
+    .local v0, "ljfVar":Lljf;
+    invoke-interface {v0}, Lljf;->f()V
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_1
 
     .line 158
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    .line 159
-    .local v0, "oaVar":Ldefpackage/oa;
-    invoke-interface {v0}, Ldefpackage/oa;->b()Landroid/content/Context;
-
-    move-result-object v1
-
-    const v2, 0x7f11041c
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Ldefpackage/oa;->m(Ljava/lang/CharSequence;)V
+    .end local v12    # "zipInputStream":Ljava/util/zip/ZipInputStream;
+    nop
 
     .line 160
-    return-void
-.end method
+    iget-object v2, v5, Lhwh;->r:Lljf;
 
-.method public final v()Landroid/view/Menu;
-    .locals 6
+    invoke-interface {v2}, Lljf;->f()V
+
+    .line 161
+    goto :goto_c
+
+    .line 101
+    .end local v0    # "ljfVar":Lljf;
+    .restart local v12    # "zipInputStream":Ljava/util/zip/ZipInputStream;
+    .local v13, "name":Ljava/lang/String;
+    .restart local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    :cond_b
+    const-wide/16 v10, -0x1
+
+    .line 108
+    .end local v13    # "name":Ljava/lang/String;
+    .end local v16    # "nextEntry":Ljava/util/zip/ZipEntry;
+    goto/16 :goto_1
+
+    .line 105
+    :catch_2
+    move-exception v0
+
+    const-wide/16 v10, -0x1
+
+    goto :goto_9
+
+    :catch_3
+    move-exception v0
+
+    .line 106
+    .local v0, "e2":Ljava/io/IOException;
+    :goto_9
+    :try_start_9
+    sget-object v13, Lhwr;->a:Louj;
+
+    invoke-virtual {v13}, Loue;->b()Lova;
+
+    move-result-object v13
+
+    check-cast v13, Loug;
+
+    invoke-interface {v13, v0}, Lova;->h(Ljava/lang/Throwable;)Lova;
+
+    move-result-object v13
+
+    check-cast v13, Loug;
+
+    const/16 v14, 0xa9c
+
+    invoke-interface {v13, v14}, Lova;->G(I)Lova;
+
+    move-result-object v13
+
+    check-cast v13, Loug;
+
+    const-string v14, "Failed to parse version code from apex file."
+
+    invoke-interface {v13, v14}, Lova;->o(Ljava/lang/String;)V
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_1
+
+    .line 107
+    const-wide/16 v13, -0x1
+
+    .line 108
+    .end local v0    # "e2":Ljava/io/IOException;
+    .local v13, "j":J
+    goto/16 :goto_1
+
+    .line 150
+    .end local v12    # "zipInputStream":Ljava/util/zip/ZipInputStream;
+    .end local v13    # "j":J
+    :catchall_1
+    move-exception v0
+
+    move-object v2, v0
+
+    .line 151
+    .local v2, "th":Ljava/lang/Throwable;
+    if-eqz v3, :cond_c
+
+    .line 153
+    :try_start_a
+    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_2
+
+    .line 155
+    goto :goto_a
+
+    .line 154
+    :catchall_2
+    move-exception v0
+
+    .line 157
+    :cond_c
+    :goto_a
+    nop
+
+    .end local v3    # "open":Ljava/io/InputStream;
+    .end local v4    # "obj":Ljava/lang/Object;
+    .end local v5    # "hwhVar2":Lhwh;
+    .end local v6    # "str2":Ljava/lang/String;
+    .end local v7    # "b":J
+    .end local v9    # "z":Z
+    .end local p0    # "this":Ldefpackage/Jh;
+    :try_start_b
+    throw v2
+    :try_end_b
+    .catchall {:try_start_b .. :try_end_b} :catchall_0
+
+    .line 160
+    .end local v2    # "th":Ljava/lang/Throwable;
+    .restart local v3    # "open":Ljava/io/InputStream;
+    .restart local v4    # "obj":Ljava/lang/Object;
+    .restart local v5    # "hwhVar2":Lhwh;
+    .restart local v6    # "str2":Ljava/lang/String;
+    .restart local v7    # "b":J
+    .restart local v9    # "z":Z
+    .restart local p0    # "this":Ldefpackage/Jh;
+    :goto_b
+    iget-object v2, v5, Lhwh;->r:Lljf;
+
+    invoke-interface {v2}, Lljf;->f()V
+
+    .line 161
+    throw v0
 
     .line 163
-    iget-boolean v0, p0, Ldefpackage/jh;->d:Z
-
-    if-nez v0, :cond_1
-
-    .line 164
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    .line 165
-    .local v0, "oaVar":Ldefpackage/oa;
-    new-instance v1, Ldefpackage/je;
-
-    invoke-direct {v1, p0}, Ldefpackage/je;-><init>(Ldefpackage/jh;)V
-
-    .line 166
-    .local v1, "jeVar":Ldefpackage/je;
-    new-instance v2, Ldefpackage/jf;
-
-    invoke-direct {v2, p0}, Ldefpackage/jf;-><init>(Ldefpackage/jh;)V
-
-    .line 167
-    .local v2, "jfVar":Ldefpackage/jf;
-    move-object v3, v0
-
-    check-cast v3, Ldefpackage/rx;
-
-    iget-object v3, v3, Ldefpackage/rx;->a:Landroid/support/v7/widget/Toolbar;
-
-    .line 168
-    .local v3, "toolbar":Landroid/support/v7/widget/Toolbar;
-    iput-object v1, v3, Landroid/support/v7/widget/Toolbar;->x:Ldefpackage/lj;
-
-    .line 169
-    iput-object v2, v3, Landroid/support/v7/widget/Toolbar;->y:Ldefpackage/ku;
-
-    .line 170
-    iget-object v4, v3, Landroid/support/v7/widget/Toolbar;->a:Landroid/support/v7/widget/ActionMenuView;
-
-    .line 171
-    .local v4, "actionMenuView":Landroid/support/v7/widget/ActionMenuView;
-    if-eqz v4, :cond_0
-
-    .line 172
-    invoke-virtual {v4, v1, v2}, Landroid/support/v7/widget/ActionMenuView;->i(Ldefpackage/lj;Ldefpackage/ku;)V
-
-    .line 174
-    :cond_0
-    const/4 v5, 0x1
-
-    iput-boolean v5, p0, Ldefpackage/jh;->d:Z
-
-    .line 176
-    .end local v0    # "oaVar":Ldefpackage/oa;
-    .end local v1    # "jeVar":Ldefpackage/je;
-    .end local v2    # "jfVar":Ldefpackage/jf;
-    .end local v3    # "toolbar":Landroid/support/v7/widget/Toolbar;
-    .end local v4    # "actionMenuView":Landroid/support/v7/widget/ActionMenuView;
-    :cond_1
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    check-cast v0, Ldefpackage/rx;
-
-    iget-object v0, v0, Ldefpackage/rx;->a:Landroid/support/v7/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroid/support/v7/widget/Toolbar;->g()Landroid/view/Menu;
+    :cond_d
+    :goto_c
+    invoke-static {v9}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public final w(II)V
-    .locals 4
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
-
-    .line 180
-    iget-object v0, p0, Ldefpackage/jh;->a:Ldefpackage/oa;
-
-    .line 181
-    .local v0, "oaVar":Ldefpackage/oa;
-    and-int v1, p1, p2
-
-    not-int v2, p2
-
-    move-object v3, v0
-
-    check-cast v3, Ldefpackage/rx;
-
-    iget v3, v3, Ldefpackage/rx;->b:I
-
-    and-int/2addr v2, v3
-
-    or-int/2addr v1, v2
-
-    invoke-interface {v0, v1}, Ldefpackage/oa;->i(I)V
-
-    .line 182
-    return-void
 .end method

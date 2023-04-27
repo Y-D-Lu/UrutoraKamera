@@ -20,18 +20,18 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/processing/ProcessingService;
 
-.field public final synthetic val$fjqVar:Ldefpackage/fjq;
+.field public final synthetic val$fjqVar:Lfjq;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/processing/ProcessingService;Ldefpackage/fjq;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/processing/ProcessingService;Lfjq;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/processing/ProcessingService;
 
     .line 191
     iput-object p1, p0, Lcom/google/android/apps/camera/processing/ProcessingService$2;->this$0:Lcom/google/android/apps/camera/processing/ProcessingService;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/processing/ProcessingService$2;->val$fjqVar:Ldefpackage/fjq;
+    iput-object p2, p0, Lcom/google/android/apps/camera/processing/ProcessingService$2;->val$fjqVar:Lfjq;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,17 +48,17 @@
 
     .line 196
     .local v0, "processingService":Lcom/google/android/apps/camera/processing/ProcessingService;
-    iget-object v1, p0, Lcom/google/android/apps/camera/processing/ProcessingService$2;->val$fjqVar:Ldefpackage/fjq;
+    iget-object v1, p0, Lcom/google/android/apps/camera/processing/ProcessingService$2;->val$fjqVar:Lfjq;
 
     .line 199
-    .local v1, "fjqVar2":Ldefpackage/fjq;
+    .local v1, "fjqVar2":Lfjq;
     :goto_0
     :try_start_0
-    iget-object v2, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->k:Ldefpackage/hhl;
+    iget-object v2, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->k:Lhhl;
 
     .line 200
-    .local v2, "hhlVar":Ldefpackage/hhl;
-    iget-object v3, v2, Ldefpackage/hhl;->b:Ljava/lang/Object;
+    .local v2, "hhlVar":Lhhl;
+    iget-object v3, v2, Lhhl;->b:Ljava/lang/Object;
 
     monitor-enter v3
     :try_end_0
@@ -66,7 +66,7 @@
 
     .line 201
     :try_start_1
-    iget-object v4, v2, Ldefpackage/hhl;->c:Ljava/util/LinkedList;
+    iget-object v4, v2, Lhhl;->c:Ljava/util/LinkedList;
 
     invoke-virtual {v4}, Ljava/util/LinkedList;->isEmpty()Z
 
@@ -74,7 +74,7 @@
 
     if-nez v4, :cond_1
 
-    iget-boolean v4, v2, Ldefpackage/hhl;->e:Z
+    iget-boolean v4, v2, Lhhl;->e:Z
 
     if-eqz v4, :cond_0
 
@@ -82,21 +82,21 @@
 
     .line 211
     :cond_0
-    iget-object v4, v2, Ldefpackage/hhl;->c:Ljava/util/LinkedList;
+    iget-object v4, v2, Lhhl;->c:Ljava/util/LinkedList;
 
     invoke-virtual {v4}, Ljava/util/LinkedList;->remove()Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/hhn;
+    check-cast v4, Lhhn;
 
     .line 212
-    .local v4, "hhnVar":Ldefpackage/hhn;
-    iget-object v5, v2, Ldefpackage/hhl;->a:Ldefpackage/lis;
+    .local v4, "hhnVar":Lhhn;
+    iget-object v5, v2, Lhhl;->a:Llis;
 
     .line 213
-    .local v5, "lisVar2":Ldefpackage/lis;
-    iget-object v6, v2, Ldefpackage/hhl;->c:Ljava/util/LinkedList;
+    .local v5, "lisVar2":Llis;
+    iget-object v6, v2, Lhhl;->c:Ljava/util/LinkedList;
 
     invoke-virtual {v6}, Ljava/util/LinkedList;->size()I
 
@@ -146,23 +146,23 @@
 
     move-result-object v9
 
-    invoke-interface {v5, v9}, Ldefpackage/lis;->b(Ljava/lang/String;)V
+    invoke-interface {v5, v9}, Llis;->b(Ljava/lang/String;)V
 
     goto :goto_2
 
     .line 202
-    .end local v4    # "hhnVar":Ldefpackage/hhn;
-    .end local v5    # "lisVar2":Ldefpackage/lis;
+    .end local v4    # "hhnVar":Lhhn;
+    .end local v5    # "lisVar2":Llis;
     .end local v6    # "size":I
     .end local v7    # "valueOf":Ljava/lang/String;
     .end local v8    # "sb2":Ljava/lang/StringBuilder;
     :cond_1
     :goto_1
-    iget-object v4, v2, Ldefpackage/hhl;->a:Ldefpackage/lis;
+    iget-object v4, v2, Lhhl;->a:Llis;
 
     .line 203
-    .local v4, "lisVar":Ldefpackage/lis;
-    iget-boolean v5, v2, Ldefpackage/hhl;->e:Z
+    .local v4, "lisVar":Llis;
+    iget-boolean v5, v2, Lhhl;->e:Z
 
     .line 204
     .local v5, "z":Z
@@ -186,12 +186,12 @@
 
     move-result-object v7
 
-    invoke-interface {v4, v7}, Ldefpackage/lis;->b(Ljava/lang/String;)V
+    invoke-interface {v4, v7}, Llis;->b(Ljava/lang/String;)V
 
     .line 208
     const/4 v7, 0x2
 
-    iput v7, v2, Ldefpackage/hhl;->g:I
+    iput v7, v2, Lhhl;->g:I
 
     .line 209
     const/4 v4, 0x0
@@ -199,7 +199,7 @@
     .line 210
     .end local v5    # "z":Z
     .end local v6    # "sb":Ljava/lang/StringBuilder;
-    .local v4, "hhnVar":Ldefpackage/hhn;
+    .local v4, "hhnVar":Lhhn;
     nop
 
     .line 222
@@ -217,7 +217,7 @@
     nop
 
     .line 249
-    .end local v2    # "hhlVar":Ldefpackage/hhl;
+    .end local v2    # "hhlVar":Lhhl;
     iget-object v5, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->b:Ljava/lang/Object;
 
     monitor-enter v5
@@ -226,7 +226,7 @@
     const/4 v2, 0x0
 
     :try_start_2
-    iput-object v2, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->d:Ldefpackage/hhn;
+    iput-object v2, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->d:Lhhn;
 
     .line 251
     monitor-exit v5
@@ -278,7 +278,7 @@
     throw v2
 
     .line 226
-    .restart local v2    # "hhlVar":Ldefpackage/hhl;
+    .restart local v2    # "hhlVar":Lhhl;
     :cond_2
     :try_start_5
     iget-object v5, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->b:Ljava/lang/Object;
@@ -289,7 +289,7 @@
 
     .line 227
     :try_start_6
-    iput-object v4, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->d:Ldefpackage/hhn;
+    iput-object v4, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->d:Lhhn;
 
     .line 228
     iget-boolean v6, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->e:Z
@@ -297,9 +297,9 @@
     if-eqz v6, :cond_3
 
     .line 229
-    iget-object v6, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->d:Ldefpackage/hhn;
+    iget-object v6, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->d:Lhhn;
 
-    invoke-interface {v6}, Ldefpackage/hhn;->g()V
+    invoke-interface {v6}, Lhhn;->g()V
 
     .line 231
     :cond_3
@@ -309,11 +309,11 @@
 
     .line 232
     :try_start_7
-    invoke-interface {v4}, Ldefpackage/hhn;->b()Ljava/lang/String;
+    invoke-interface {v4}, Lhhn;->b()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v1, v5}, Ldefpackage/fjq;->d(Ljava/lang/String;)V
+    invoke-virtual {v1, v5}, Lfjq;->d(Ljava/lang/String;)V
 
     .line 233
     iget-object v5, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->a:Landroid/app/Notification$Builder;
@@ -332,45 +332,45 @@
     invoke-virtual {v0}, Lcom/google/android/apps/camera/processing/ProcessingService;->c()V
 
     .line 235
-    invoke-interface {v4}, Ldefpackage/hhn;->a()Ldefpackage/hhm;
+    invoke-interface {v4}, Lhhn;->a()Lhhm;
 
     move-result-object v3
 
     .line 236
-    .local v3, "a":Ldefpackage/hhm;
+    .local v3, "a":Lhhm;
     if-eqz v3, :cond_4
 
     .line 237
-    invoke-interface {v3, v0}, Ldefpackage/hhm;->c(Ldefpackage/hho;)V
+    invoke-interface {v3, v0}, Lhhm;->c(Lhho;)V
 
     .line 239
     :cond_4
     invoke-static {}, Ljava/lang/System;->gc()V
 
     .line 240
-    iget-object v5, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->c:Ldefpackage/hhp;
+    iget-object v5, v0, Lcom/google/android/apps/camera/processing/ProcessingService;->c:Lhhp;
 
-    invoke-interface {v4}, Ldefpackage/hhn;->b()Ljava/lang/String;
+    invoke-interface {v4}, Lhhn;->b()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Ldefpackage/hhp;->a(Ljava/lang/String;)V
+    invoke-virtual {v5, v6}, Lhhp;->a(Ljava/lang/String;)V
 
     .line 241
-    invoke-interface {v4, v0}, Ldefpackage/hhn;->d(Landroid/content/Context;)V
+    invoke-interface {v4, v0}, Lhhn;->d(Landroid/content/Context;)V
 
     .line 242
-    invoke-virtual {v1}, Ldefpackage/fjq;->b()V
+    invoke-virtual {v1}, Lfjq;->b()V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_4
 
     .line 247
-    .end local v2    # "hhlVar":Ldefpackage/hhl;
-    .end local v3    # "a":Ldefpackage/hhm;
+    .end local v2    # "hhlVar":Lhhl;
+    .end local v3    # "a":Lhhm;
     goto/16 :goto_0
 
     .line 231
-    .restart local v2    # "hhlVar":Ldefpackage/hhl;
+    .restart local v2    # "hhlVar":Lhhl;
     :catchall_2
     move-exception v3
 
@@ -380,7 +380,7 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
     .end local v0    # "processingService":Lcom/google/android/apps/camera/processing/ProcessingService;
-    .end local v1    # "fjqVar2":Ldefpackage/fjq;
+    .end local v1    # "fjqVar2":Lfjq;
     .end local p0    # "this":Lcom/google/android/apps/camera/processing/ProcessingService$2;
     :try_start_9
     throw v3
@@ -388,9 +388,9 @@
     .catchall {:try_start_9 .. :try_end_9} :catchall_4
 
     .line 222
-    .end local v4    # "hhnVar":Ldefpackage/hhn;
+    .end local v4    # "hhnVar":Lhhn;
     .restart local v0    # "processingService":Lcom/google/android/apps/camera/processing/ProcessingService;
-    .restart local v1    # "fjqVar2":Ldefpackage/fjq;
+    .restart local v1    # "fjqVar2":Lfjq;
     .restart local p0    # "this":Lcom/google/android/apps/camera/processing/ProcessingService$2;
     :catchall_3
     move-exception v4
@@ -401,7 +401,7 @@
     .catchall {:try_start_a .. :try_end_a} :catchall_3
 
     .end local v0    # "processingService":Lcom/google/android/apps/camera/processing/ProcessingService;
-    .end local v1    # "fjqVar2":Ldefpackage/fjq;
+    .end local v1    # "fjqVar2":Lfjq;
     .end local p0    # "this":Lcom/google/android/apps/camera/processing/ProcessingService$2;
     :try_start_b
     throw v4
@@ -409,9 +409,9 @@
     .catchall {:try_start_b .. :try_end_b} :catchall_4
 
     .line 244
-    .end local v2    # "hhlVar":Ldefpackage/hhl;
+    .end local v2    # "hhlVar":Lhhl;
     .restart local v0    # "processingService":Lcom/google/android/apps/camera/processing/ProcessingService;
-    .restart local v1    # "fjqVar2":Ldefpackage/fjq;
+    .restart local v1    # "fjqVar2":Lfjq;
     .restart local p0    # "this":Lcom/google/android/apps/camera/processing/ProcessingService$2;
     :catchall_4
     move-exception v2

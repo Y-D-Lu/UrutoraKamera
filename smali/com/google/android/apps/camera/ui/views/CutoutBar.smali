@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
-.field public final b:Ldefpackage/dcw;
+.field public final b:Ldcw;
 
 .field public c:F
 
@@ -16,7 +16,7 @@
 
 .field public e:F
 
-.field public f:Ldefpackage/jrz;
+.field public f:Ljrz;
 
 
 # direct methods
@@ -26,11 +26,11 @@
     .line 22
     const-string v0, "com/google/android/apps/camera/ui/views/CutoutBar"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->a:Louj;
 
     return-void
 .end method
@@ -55,28 +55,28 @@
     iput v0, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->e:F
 
     .line 34
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ljrz;
 
     .line 35
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/bpx;
+    check-cast v0, Lbpx;
 
-    invoke-interface {v0}, Ldefpackage/bpx;->a()Ldefpackage/ddf;
+    invoke-interface {v0}, Lbpx;->a()Lddf;
 
     move-result-object v0
 
     .line 36
-    .local v0, "a2":Ldefpackage/ddf;
-    sget-object v1, Ldefpackage/dcy;->a:Ldefpackage/ddi;
+    .local v0, "a2":Lddf;
+    sget-object v1, Ldcy;->a:Lddi;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->a(Ldefpackage/ddi;)Ldefpackage/ojc;
+    invoke-interface {v0, v1}, Lddf;->a(Lddi;)Lojc;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -86,11 +86,11 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Ldefpackage/dcy;->a(Ldefpackage/ddf;I)Ldefpackage/dcw;
+    invoke-static {v0, v1}, Ldcy;->a(Lddf;I)Ldcw;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->b:Ldefpackage/dcw;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->b:Ldcw;
 
     .line 37
     return-void
@@ -107,9 +107,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 41
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ljrz;
 
-    invoke-static {p0, v0}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, v0}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 42
     invoke-static {}, Landroid/os/Trace;->endSection()V
@@ -190,9 +190,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 67
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/CutoutBar;->f:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

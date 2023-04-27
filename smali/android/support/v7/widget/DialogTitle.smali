@@ -1,5 +1,5 @@
 .class public Landroid/support/v7/widget/DialogTitle;
-.super Ldefpackage/nu;
+.super Lnu;
 .source ""
 
 
@@ -9,7 +9,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .line 14
-    invoke-direct {p0, p1}, Ldefpackage/nu;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lnu;-><init>(Landroid/content/Context;)V
 
     .line 15
     return-void
@@ -21,7 +21,7 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 18
-    invoke-direct {p0, p1, p2}, Ldefpackage/nu;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lnu;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 19
     return-void
@@ -34,7 +34,7 @@
     .param p3, "i"    # I
 
     .line 22
-    invoke-direct {p0, p1, p2, p3}, Ldefpackage/nu;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, Lnu;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 23
     return-void
@@ -48,7 +48,7 @@
     .param p2, "i2"    # I
 
     .line 29
-    invoke-super {p0, p1, p2}, Ldefpackage/nu;->onMeasure(II)V
+    invoke-super {p0, p1, p2}, Lnu;->onMeasure(II)V
 
     .line 30
     invoke-virtual {p0}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
@@ -96,7 +96,7 @@
 
     const/4 v4, 0x0
 
-    sget-object v5, Ldefpackage/jq;->v:[I
+    sget-object v5, Ljq;->v:[I
 
     const v6, 0x1010041
 
@@ -126,7 +126,7 @@
     invoke-virtual {v3}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 42
-    invoke-super {p0, p1, p2}, Ldefpackage/nu;->onMeasure(II)V
+    invoke-super {p0, p1, p2}, Lnu;->onMeasure(II)V
 
     .line 43
     return-void

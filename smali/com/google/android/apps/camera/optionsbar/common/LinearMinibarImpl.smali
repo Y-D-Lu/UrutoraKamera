@@ -321,15 +321,15 @@
     return-void
 .end method
 
-.method public final l(Ldefpackage/htf;)V
+.method public final l(Lhtf;)V
     .locals 4
-    .param p1, "htfVar"    # Ldefpackage/htf;
+    .param p1, "htfVar"    # Lhtf;
 
     .line 94
-    sget-object v0, Ldefpackage/htf;->OFF:Ldefpackage/htf;
+    sget-object v0, Lhtf;->OFF:Lhtf;
 
     .line 95
-    .local v0, "htfVar2":Ldefpackage/htf;
+    .local v0, "htfVar2":Lhtf;
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
@@ -465,7 +465,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onFinishInflate()V
 
     .line 122
-    invoke-static {p0}, Ldefpackage/mip;->dT(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dT(Landroid/view/View;)I
 
     move-result v0
 

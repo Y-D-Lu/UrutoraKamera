@@ -1,122 +1,131 @@
-.class public abstract Ldefpackage/qe;
+.class public Ldefpackage/Qe;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lojz;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgth;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:Landroid/support/v7/widget/RecyclerView;
+.field public final synthetic this$0:Lgth;
 
-.field public final b:Ldefpackage/gg;
+.field public final synthetic val$h:Lojc;
+
+.field public final synthetic val$hcsVar:Lhcs;
+
+.field public final synthetic val$ojcVar:Lojc;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lgth;Lojc;Lhcs;Lojc;)V
+    .locals 0
+    .param p1, "this$0"    # Lgth;
 
-    .line 9
+    .line 230
+    iput-object p1, p0, Ldefpackage/Qe;->this$0:Lgth;
+
+    iput-object p2, p0, Ldefpackage/Qe;->val$ojcVar:Lojc;
+
+    iput-object p3, p0, Ldefpackage/Qe;->val$hcsVar:Lhcs;
+
+    iput-object p4, p0, Ldefpackage/Qe;->val$h:Lojc;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 11
-    new-instance v0, Ldefpackage/qz;
-
-    invoke-direct {v0, p0}, Ldefpackage/qz;-><init>(Ldefpackage/qe;)V
-
-    iput-object v0, p0, Ldefpackage/qe;->b:Ldefpackage/gg;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract c(Landroid/view/qc;)Landroid/view/View;
-.end method
+.method public final a()Ljava/lang/Object;
+    .locals 6
 
-.method public abstract d(Landroid/view/qc;Landroid/view/View;)[I
-.end method
+    .line 233
+    iget-object v0, p0, Ldefpackage/Qe;->val$ojcVar:Lojc;
 
-.method public final f()V
-    .locals 8
+    .line 234
+    .local v0, "ojcVar2":Lojc;
+    iget-object v1, p0, Ldefpackage/Qe;->val$hcsVar:Lhcs;
 
-    .line 20
-    iget-object v0, p0, Ldefpackage/qe;->a:Landroid/support/v7/widget/RecyclerView;
+    .line 235
+    .local v1, "hcsVar2":Lhcs;
+    iget-object v2, p0, Ldefpackage/Qe;->val$h:Lojc;
 
-    .line 21
-    .local v0, "recyclerView":Landroid/support/v7/widget/RecyclerView;
-    if-eqz v0, :cond_3
+    .line 236
+    .local v2, "ojcVar3":Lojc;
+    const/4 v3, 0x1
 
-    iget-object v1, v0, Landroid/support/v7/widget/RecyclerView;->m:Landroid/view/qc;
+    .line 237
+    .local v3, "z":Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
-    move-object v2, v1
+    move-result v4
 
-    .local v2, "qcVar":Landroid/view/qc;
-    if-eqz v1, :cond_3
+    if-eqz v4, :cond_0
 
-    invoke-virtual {p0, v2}, Ldefpackage/qe;->c(Landroid/view/qc;)Landroid/view/View;
+    invoke-interface {v1}, Lojz;->a()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v4
 
-    move-object v3, v1
+    check-cast v4, Llqd;
 
-    .local v3, "c":Landroid/view/View;
-    if-nez v1, :cond_0
+    iget-object v4, v4, Llqd;->c:Lope;
 
-    goto :goto_1
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
-    .line 24
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lood;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
     :cond_0
-    invoke-virtual {p0, v2, v3}, Ldefpackage/qe;->d(Landroid/view/qc;Landroid/view/View;)[I
+    invoke-virtual {v2}, Lojc;->g()Z
 
-    move-result-object v1
+    move-result v4
 
-    .line 25
-    .local v1, "d":[I
-    const/4 v4, 0x0
+    if-eqz v4, :cond_1
 
-    .line 26
-    .local v4, "i":I
-    const/4 v5, 0x0
+    invoke-interface {v1}, Lojz;->a()Ljava/lang/Object;
 
-    aget v5, v1, v5
+    move-result-object v4
 
-    .line 27
-    .local v5, "i2":I
-    const/4 v6, 0x1
+    check-cast v4, Llqd;
 
-    if-eqz v5, :cond_1
+    iget-object v4, v4, Llqd;->c:Lope;
 
-    .line 28
-    move v4, v5
+    invoke-virtual {v2}, Lojc;->c()Ljava/lang/Object;
 
-    goto :goto_0
+    move-result-object v5
 
-    .line 29
+    invoke-virtual {v4, v5}, Lood;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    .line 238
     :cond_1
-    aget v7, v1, v6
+    const/4 v3, 0x0
 
-    if-nez v7, :cond_2
-
-    .line 30
-    return-void
-
-    .line 32
+    .line 240
     :cond_2
-    :goto_0
-    iget-object v7, p0, Ldefpackage/qe;->a:Landroid/support/v7/widget/RecyclerView;
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    aget v6, v1, v6
+    move-result-object v4
 
-    invoke-virtual {v7, v4, v6}, Landroid/support/v7/widget/RecyclerView;->X(II)V
-
-    .line 33
-    return-void
-
-    .line 22
-    .end local v1    # "d":[I
-    .end local v2    # "qcVar":Landroid/view/qc;
-    .end local v3    # "c":Landroid/view/View;
-    .end local v4    # "i":I
-    .end local v5    # "i2":I
-    :cond_3
-    :goto_1
-    return-void
+    return-object v4
 .end method

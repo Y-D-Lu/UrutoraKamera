@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/pyn;
+.implements Lpyn;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/legacy/app/app/CameraApp;->d()Ldefpackage/euv;
+    value = Lcom/google/android/apps/camera/legacy/app/app/CameraApp;->d()Leuv;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -42,7 +42,7 @@
     .line 177
     iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/app/CameraApp$1;->this$0:Lcom/google/android/apps/camera/legacy/app/app/CameraApp;
 
-    iget-object v0, v0, Lcom/google/android/apps/camera/legacy/app/app/CameraApp;->g:Ldefpackage/egh;
+    iget-object v0, v0, Lcom/google/android/apps/camera/legacy/app/app/CameraApp;->g:Legh;
 
     return-object v0
 .end method

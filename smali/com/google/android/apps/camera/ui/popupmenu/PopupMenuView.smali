@@ -10,7 +10,7 @@
 
 .field private final c:Landroid/content/Context;
 
-.field private d:Ldefpackage/jrz;
+.field private d:Ljrz;
 
 .field private e:Landroid/widget/LinearLayout;
 
@@ -22,7 +22,7 @@
 
 .field private i:I
 
-.field private j:Ldefpackage/jhs;
+.field private j:Ljhs;
 
 
 # direct methods
@@ -35,9 +35,9 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 42
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->d:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->d:Ljrz;
 
     .line 43
     iput-object p1, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->c:Landroid/content/Context;
@@ -123,17 +123,17 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/jrz;)V
+.method public final a(Ljrz;)V
     .locals 7
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 54
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->d:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->d:Ljrz;
 
     .line 55
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->a:Landroid/widget/LinearLayout;
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 56
     iget v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->h:I
@@ -177,7 +177,7 @@
     .line 64
     .end local v0    # "height":I
     :cond_1
-    sget-object v0, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->LANDSCAPE:Ljrz;
 
     invoke-virtual {p1, v0}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -185,7 +185,7 @@
 
     if-nez v0, :cond_2
 
-    sget-object v0, Ldefpackage/jrz;->REVERSE_LANDSCAPE:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->REVERSE_LANDSCAPE:Ljrz;
 
     invoke-virtual {p1, v0}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -397,10 +397,10 @@
     return-void
 .end method
 
-.method public final c(ILdefpackage/jhs;IZ)V
+.method public final c(ILjhs;IZ)V
     .locals 16
     .param p1, "i"    # I
-    .param p2, "jhsVar"    # Ldefpackage/jhs;
+    .param p2, "jhsVar"    # Ljhs;
     .param p3, "i2"    # I
     .param p4, "z"    # Z
 
@@ -750,7 +750,7 @@
     .end local v10    # "layoutParams2":Landroid/widget/LinearLayout$LayoutParams;
     .end local v11    # "layoutParams3":Landroid/widget/LinearLayout$LayoutParams;
     :cond_0
-    iput-object v2, v0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->j:Ldefpackage/jhs;
+    iput-object v2, v0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->j:Ljhs;
 
     .line 126
     const/16 v7, 0x30
@@ -807,7 +807,7 @@
     .line 136
     new-instance v6, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView$1;
 
-    invoke-direct {v6, v0, v2}, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView$1;-><init>(Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;Ldefpackage/jhs;)V
+    invoke-direct {v6, v0, v2}, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView$1;-><init>(Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;Ljhs;)V
 
     invoke-virtual {v3, v6}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -831,10 +831,10 @@
 
     .line 155
     .local v1, "context":Landroid/content/Context;
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->j:Ldefpackage/jhs;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->j:Ljhs;
 
     .line 156
-    .local v2, "jhsVar":Ldefpackage/jhs;
+    .local v2, "jhsVar":Ljhs;
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 157
@@ -850,11 +850,11 @@
 
     aput-object v4, v3, v0
 
-    invoke-virtual {v2}, Ldefpackage/jhs;->b()Ldefpackage/jhp;
+    invoke-virtual {v2}, Ljhs;->b()Ljhp;
 
     move-result-object v0
 
-    iget-object v0, v0, Ldefpackage/jhp;->b:Ljava/lang/String;
+    iget-object v0, v0, Ljhp;->b:Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -887,9 +887,9 @@
     if-eqz p1, :cond_0
 
     .line 164
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->d:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->d:Ljrz;
 
-    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->a(Ldefpackage/jrz;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->a(Ljrz;)V
 
     .line 166
     :cond_0
@@ -902,9 +902,9 @@
     .param p2, "i2"    # I
 
     .line 170
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->d:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->d:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

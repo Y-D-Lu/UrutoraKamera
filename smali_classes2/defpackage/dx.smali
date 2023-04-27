@@ -1,199 +1,89 @@
-.class public final Ldefpackage/dx;
+.class public Ldefpackage/Dx;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Loiu;
 
-# static fields
-.field private static final a:Ljava/lang/ThreadLocal;
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lngt;->e(Lnei;Ljava/lang/String;Ljava/lang/String;Lngu;ZZ)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic val$nguVar:Lngu;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 17
-    new-instance v0, Ljava/lang/ThreadLocal;
-
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
-
-    sput-object v0, Ldefpackage/dx;->a:Ljava/lang/ThreadLocal;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lngu;)V
     .locals 0
 
-    .line 16
+    .line 281
+    iput-object p1, p0, Ldefpackage/Dx;->val$nguVar:Lngu;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
-    .locals 4
-    .param p0, "resources"    # Landroid/content/res/Resources;
-    .param p1, "xmlPullParser"    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2, "theme"    # Landroid/content/res/Resources$Theme;
 
-    .line 20
-    const/4 v0, 0x0
+# virtual methods
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 21
-    .local v0, "next":I
-    invoke-static {p1}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
+    .line 284
+    const/4 v0, -0x1
 
-    move-result-object v1
+    packed-switch v0, :pswitch_data_0
 
-    .line 24
-    .local v1, "asAttributeSet":Landroid/util/AttributeSet;
-    :goto_0
-    :try_start_0
-    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+    .line 291
+    iget-object v0, p0, Ldefpackage/Dx;->val$nguVar:Lngu;
 
-    move-result v2
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 292
+    .local v0, "nguVar4":Lngu;
+    move-object v1, p1
 
-    move v0, v2
+    check-cast v1, Lngu;
 
-    .line 29
-    :goto_1
-    goto :goto_2
-
-    .line 27
-    :catch_0
-    move-exception v2
-
-    .line 28
-    .local v2, "e":Lorg/xmlpull/v1/XmlPullParserException;
-    invoke-virtual {v2}, Lorg/xmlpull/v1/XmlPullParserException;->printStackTrace()V
-
-    goto :goto_2
-
-    .line 25
-    .end local v2    # "e":Lorg/xmlpull/v1/XmlPullParserException;
-    :catch_1
-    move-exception v2
-
-    .line 26
-    .local v2, "e":Ljava/io/IOException;
-    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
-
-    .end local v2    # "e":Ljava/io/IOException;
-    goto :goto_1
-
-    .line 30
-    :goto_2
-    const/4 v2, 0x2
-
-    if-ne v0, v2, :cond_0
-
-    .line 31
-    invoke-static {p0, p1, v1, p2}, Ldefpackage/dx;->b(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
-
-    move-result-object v2
-
-    return-object v2
-
-    .line 33
-    :cond_0
-    const/4 v2, 0x1
-
-    if-eq v0, v2, :cond_1
-
-    goto :goto_0
-
-    .line 35
-    :cond_1
-    :try_start_1
-    new-instance v2, Lorg/xmlpull/v1/XmlPullParserException;
-
-    const-string v3, "No start tag found"
-
-    invoke-direct {v2, v3}, Lorg/xmlpull/v1/XmlPullParserException;-><init>(Ljava/lang/String;)V
-
-    .end local v0    # "next":I
-    .end local v1    # "asAttributeSet":Landroid/util/AttributeSet;
-    .end local p0    # "resources":Landroid/content/res/Resources;
-    .end local p1    # "xmlPullParser":Lorg/xmlpull/v1/XmlPullParser;
-    .end local p2    # "theme":Landroid/content/res/Resources$Theme;
-    throw v2
-    :try_end_1
-    .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_1 .. :try_end_1} :catch_2
-
-    .line 36
-    .restart local v0    # "next":I
-    .restart local v1    # "asAttributeSet":Landroid/util/AttributeSet;
-    .restart local p0    # "resources":Landroid/content/res/Resources;
-    .restart local p1    # "xmlPullParser":Lorg/xmlpull/v1/XmlPullParser;
-    .restart local p2    # "theme":Landroid/content/res/Resources$Theme;
-    :catch_2
-    move-exception v2
-
-    .line 37
-    .local v2, "e":Lorg/xmlpull/v1/XmlPullParserException;
-    invoke-virtual {v2}, Lorg/xmlpull/v1/XmlPullParserException;->printStackTrace()V
-
-    .line 39
-    .end local v2    # "e":Lorg/xmlpull/v1/XmlPullParserException;
+    .line 293
+    .local v1, "nguVar5":Lngu;
     const/4 v2, 0x0
 
-    return-object v2
-.end method
-
-.method public static b(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
-    .locals 2
-    .param p0, "r34"    # Landroid/content/res/Resources;
-    .param p1, "r35"    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2, "r36"    # Landroid/util/AttributeSet;
-    .param p3, "r37"    # Landroid/content/res/Resources$Theme;
-
-    .line 71
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    const-string v1, "Method not decompiled: defpackage.dx.b(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.util.AttributeSet, android.content.res.Resources$Theme):android.content.res.ColorStateList"
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public static c(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
-    .locals 3
-    .param p0, "resources"    # Landroid/content/res/Resources;
-    .param p1, "i"    # I
-    .param p2, "theme"    # Landroid/content/res/Resources$Theme;
-
-    .line 76
-    :try_start_0
-    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
-
-    move-result-object v0
-
-    invoke-static {p0, v0, p2}, Ldefpackage/dx;->a(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
-
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
+    .line 294
+    .local v2, "i2":I
     return-object v0
 
-    .line 77
-    :catch_0
-    move-exception v0
+    .line 286
+    .end local v0    # "nguVar4":Lngu;
+    .end local v1    # "nguVar5":Lngu;
+    .end local v2    # "i2":I
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Dx;->val$nguVar:Lngu;
 
-    .line 78
-    .local v0, "e":Ljava/lang/Exception;
-    const-string v1, "CSLCompat"
+    .line 287
+    .local v0, "nguVar2":Lngu;
+    move-object v1, p1
 
-    const-string v2, "Failed to inflate ColorStateList."
+    check-cast v1, Lngu;
 
-    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    .line 288
+    .local v1, "nguVar3":Lngu;
+    const/4 v2, 0x0
 
-    .line 79
-    const/4 v1, 0x0
+    .line 289
+    .local v2, "i":I
+    return-object v0
 
-    return-object v1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

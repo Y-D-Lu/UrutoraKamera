@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/googlehelp/ND4CSettings;
-.super Ldefpackage/kno;
+.super Lkno;
 .source ""
 
 # interfaces
@@ -21,11 +21,11 @@
     .locals 2
 
     .line 14
-    new-instance v0, Ldefpackage/kpg;
+    new-instance v0, Lkpg;
 
     const/4 v1, 0x3
 
-    invoke-direct {v0, v1}, Ldefpackage/kpg;-><init>(I)V
+    invoke-direct {v0, v1}, Lkpg;-><init>(I)V
 
     sput-object v0, Lcom/google/android/gms/googlehelp/ND4CSettings;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -52,7 +52,7 @@
     .param p2, "str"    # Ljava/lang/String;
 
     .line 22
-    invoke-direct {p0}, Ldefpackage/kno;-><init>()V
+    invoke-direct {p0}, Lkno;-><init>()V
 
     .line 23
     iput-boolean p1, p0, Lcom/google/android/gms/googlehelp/ND4CSettings;->a:Z
@@ -72,7 +72,7 @@
     .param p2, "i"    # I
 
     .line 29
-    invoke-static {p1}, Ldefpackage/mip;->ct(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lmip;->ct(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -82,17 +82,17 @@
 
     const/4 v2, 0x2
 
-    invoke-static {p1, v2, v1}, Ldefpackage/mip;->cw(Landroid/os/Parcel;IZ)V
+    invoke-static {p1, v2, v1}, Lmip;->cw(Landroid/os/Parcel;IZ)V
 
     .line 31
     iget-object v1, p0, Lcom/google/android/gms/googlehelp/ND4CSettings;->b:Ljava/lang/String;
 
     const/4 v2, 0x3
 
-    invoke-static {p1, v2, v1}, Ldefpackage/mip;->cI(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, v2, v1}, Lmip;->cI(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 32
-    invoke-static {p1, v0}, Ldefpackage/mip;->cv(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lmip;->cv(Landroid/os/Parcel;I)V
 
     .line 33
     return-void

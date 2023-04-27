@@ -1,104 +1,109 @@
-.class public final Ldefpackage/qh;
+.class public Ldefpackage/Qh;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lhyx;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhyv;->a(Landroid/graphics/PointF;)Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:Landroid/util/SparseArray;
+.field public final synthetic this$0:Lhyv;
 
-.field public b:I
+.field public final synthetic val$fArr:[F
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lhyv;[F)V
+    .locals 0
+    .param p1, "this$0"    # Lhyv;
 
-    .line 7
+    .line 25
+    iput-object p1, p0, Ldefpackage/Qh;->this$0:Lhyv;
+
+    iput-object p2, p0, Ldefpackage/Qh;->val$fArr:[F
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 8
-    new-instance v0, Landroid/util/SparseArray;
-
-    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/qh;->a:Landroid/util/SparseArray;
-
-    .line 9
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/qh;->b:I
 
     return-void
 .end method
 
-.method public static final b(JJ)J
-    .locals 6
-    .param p0, "j"    # J
-    .param p2, "j2"    # J
-
-    .line 13
-    const-wide/16 v0, 0x0
-
-    cmp-long v0, p0, v0
-
-    if-nez v0, :cond_0
-
-    move-wide v2, p2
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/16 v0, 0x4
-
-    div-long v2, p0, v0
-
-    const-wide/16 v4, 0x3
-
-    mul-long/2addr v2, v4
-
-    div-long v0, p2, v0
-
-    add-long/2addr v2, v0
-
-    :goto_0
-    return-wide v2
-.end method
-
 
 # virtual methods
-.method public final a(I)Ldefpackage/qg;
-    .locals 3
-    .param p1, "i"    # I
+.method public final a(Ljava/lang/Object;)V
+    .locals 5
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 17
-    iget-object v0, p0, Ldefpackage/qh;->a:Landroid/util/SparseArray;
+    .line 28
+    iget-object v0, p0, Ldefpackage/Qh;->val$fArr:[F
 
-    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+    .line 29
+    .local v0, "fArr2":[F
+    new-instance v1, Landroid/graphics/Point;
 
-    move-result-object v0
+    const/4 v2, 0x0
 
-    check-cast v0, Ldefpackage/qg;
+    aget v2, v0, v2
 
-    .line 18
-    .local v0, "qgVar":Ldefpackage/qg;
-    if-nez v0, :cond_0
+    float-to-int v2, v2
 
-    .line 19
-    new-instance v1, Ldefpackage/qg;
+    const/4 v3, 0x1
 
-    invoke-direct {v1}, Ldefpackage/qg;-><init>()V
+    aget v3, v0, v3
 
-    .line 20
-    .local v1, "qgVar2":Ldefpackage/qg;
-    iget-object v2, p0, Ldefpackage/qh;->a:Landroid/util/SparseArray;
+    float-to-int v3, v3
 
-    invoke-virtual {v2, p1, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, v3}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 21
-    return-object v1
+    .line 30
+    .local v1, "point":Landroid/graphics/Point;
+    move-object v2, p1
 
-    .line 23
-    .end local v1    # "qgVar2":Ldefpackage/qg;
+    check-cast v2, Lhzu;
+
+    .line 31
+    .local v2, "hzuVar":Lhzu;
+    iget-boolean v3, v2, Lhzu;->d:Z
+
+    invoke-static {v3}, Lobr;->aQ(Z)V
+
+    .line 32
+    iget-boolean v3, v2, Lhzu;->e:Z
+
+    if-eqz v3, :cond_1
+
+    .line 33
+    iget-object v3, v2, Lhzu;->a:Liat;
+
+    .line 34
+    .local v3, "iatVar":Liat;
+    instance-of v4, v3, Liaq;
+
+    if-nez v4, :cond_0
+
+    .line 35
+    return-void
+
+    .line 37
     :cond_0
-    return-object v0
+    move-object v4, v3
+
+    check-cast v4, Liaq;
+
+    invoke-interface {v4, v1}, Liaq;->f(Landroid/graphics/Point;)V
+
+    .line 39
+    .end local v3    # "iatVar":Liat;
+    :cond_1
+    return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Ldefpackage/eoa;
+.field public a:Leoa;
 
 
 # direct methods
@@ -29,22 +29,22 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/enc;
+    check-cast v0, Lenc;
 
-    const-class v1, Ldefpackage/eob;
+    const-class v1, Leob;
 
-    invoke-interface {v0, v1}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/eob;
+    check-cast v0, Leob;
 
-    invoke-interface {v0, p0}, Ldefpackage/eob;->h(Lcom/google/android/apps/camera/keepalive/KeepAliveBroadcastReceiver;)V
+    invoke-interface {v0, p0}, Leob;->h(Lcom/google/android/apps/camera/keepalive/KeepAliveBroadcastReceiver;)V
 
     .line 19
-    iget-object v0, p0, Lcom/google/android/apps/camera/keepalive/KeepAliveBroadcastReceiver;->a:Ldefpackage/eoa;
+    iget-object v0, p0, Lcom/google/android/apps/camera/keepalive/KeepAliveBroadcastReceiver;->a:Leoa;
 
-    invoke-virtual {v0}, Ldefpackage/eoa;->a()Z
+    invoke-virtual {v0}, Leoa;->a()Z
 
     move-result v0
 
@@ -86,7 +86,7 @@
 
     .line 28
     :goto_0
-    invoke-static {p1}, Ldefpackage/eoc;->b(Landroid/content/Context;)V
+    invoke-static {p1}, Leoc;->b(Landroid/content/Context;)V
 
     .line 29
     return-void

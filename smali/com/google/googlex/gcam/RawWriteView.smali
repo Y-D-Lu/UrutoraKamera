@@ -22,16 +22,16 @@
     return-void
 .end method
 
-.method public constructor <init>(IIIILdefpackage/pjk;)V
+.method public constructor <init>(IIIILpjk;)V
     .locals 6
     .param p1, "i"    # I
     .param p2, "i2"    # I
     .param p3, "i3"    # I
     .param p4, "i4"    # I
-    .param p5, "pjkVar"    # Ldefpackage/pjk;
+    .param p5, "pjkVar"    # Lpjk;
 
     .line 14
-    invoke-static {p5}, Ldefpackage/pjk;->a(Ldefpackage/pjk;)J
+    invoke-static {p5}, Lpjk;->a(Lpjk;)J
 
     move-result-wide v4
 

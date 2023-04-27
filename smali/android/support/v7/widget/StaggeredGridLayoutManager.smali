@@ -3,17 +3,17 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/qn;
+.implements Lqn;
 
 
 # instance fields
 .field private E:Z
 
-.field private F:Ldefpackage/rf;
+.field private F:Lrf;
 
 .field private final G:Landroid/graphics/Rect;
 
-.field private final H:Ldefpackage/rb;
+.field private final H:Lrb;
 
 .field private I:Z
 
@@ -21,11 +21,11 @@
 
 .field private final K:Ljava/lang/Runnable;
 
-.field public a:[Ldefpackage/rg;
+.field public a:[Lrg;
 
-.field public b:Ldefpackage/pq;
+.field public b:Lpq;
 
-.field public c:Ldefpackage/pq;
+.field public c:Lpq;
 
 .field public d:Z
 
@@ -35,7 +35,7 @@
 
 .field public g:I
 
-.field public h:Ldefpackage/re;
+.field public h:Lre;
 
 .field private i:I
 
@@ -43,7 +43,7 @@
 
 .field private k:I
 
-.field private final l:Ldefpackage/oz;
+.field private final l:Loz;
 
 .field private m:Ljava/util/BitSet;
 
@@ -82,11 +82,11 @@
     iput v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
 
     .line 55
-    new-instance v1, Ldefpackage/re;
+    new-instance v1, Lre;
 
-    invoke-direct {v1}, Ldefpackage/re;-><init>()V
+    invoke-direct {v1}, Lre;-><init>()V
 
-    iput-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iput-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
     .line 56
     const/4 v1, 0x2
@@ -101,11 +101,11 @@
     iput-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->G:Landroid/graphics/Rect;
 
     .line 58
-    new-instance v1, Ldefpackage/rb;
+    new-instance v1, Lrb;
 
-    invoke-direct {v1, p0}, Ldefpackage/rb;-><init>(Landroid/support/v7/widget/StaggeredGridLayoutManager;)V
+    invoke-direct {v1, p0}, Lrb;-><init>(Landroid/support/v7/widget/StaggeredGridLayoutManager;)V
 
-    iput-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->H:Ldefpackage/rb;
+    iput-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->H:Lrb;
 
     .line 59
     const/4 v1, 0x1
@@ -113,9 +113,9 @@
     iput-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->I:Z
 
     .line 60
-    new-instance v2, Ldefpackage/ra;
+    new-instance v2, Lra;
 
-    invoke-direct {v2, p0}, Ldefpackage/ra;-><init>(Landroid/support/v7/widget/StaggeredGridLayoutManager;)V
+    invoke-direct {v2, p0}, Lra;-><init>(Landroid/support/v7/widget/StaggeredGridLayoutManager;)V
 
     iput-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->K:Ljava/lang/Runnable;
 
@@ -123,13 +123,13 @@
     iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->i:I
 
     .line 64
-    invoke-static {p1, p2, p3, p4}, Landroid/view/qc;->as(Landroid/content/Context;Landroid/util/AttributeSet;II)Ldefpackage/qb;
+    invoke-static {p1, p2, p3, p4}, Landroid/view/qc;->as(Landroid/content/Context;Landroid/util/AttributeSet;II)Lqb;
 
     move-result-object v0
 
     .line 65
-    .local v0, "as":Ldefpackage/qb;
-    iget v2, v0, Ldefpackage/qb;->a:I
+    .local v0, "as":Lqb;
+    iget v2, v0, Lqb;->a:I
 
     .line 66
     .local v2, "i3":I
@@ -165,24 +165,24 @@
     iput v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->j:I
 
     .line 70
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
     .line 71
-    .local v4, "pqVar":Ldefpackage/pq;
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Ldefpackage/pq;
+    .local v4, "pqVar":Lpq;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Lpq;
 
-    iput-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iput-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
     .line 72
-    iput-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Ldefpackage/pq;
+    iput-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Lpq;
 
     .line 73
     invoke-virtual {p0}, Landroid/view/qc;->aN()V
 
     .line 75
-    .end local v4    # "pqVar":Ldefpackage/pq;
+    .end local v4    # "pqVar":Lpq;
     :cond_2
-    iget v4, v0, Ldefpackage/qb;->b:I
+    iget v4, v0, Lqb;->b:I
 
     .line 76
     .local v4, "i4":I
@@ -194,9 +194,9 @@
     if-eq v4, v3, :cond_4
 
     .line 78
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
-    invoke-virtual {v3}, Ldefpackage/re;->a()V
+    invoke-virtual {v3}, Lre;->a()V
 
     .line 79
     invoke-virtual {p0}, Landroid/view/qc;->aN()V
@@ -214,9 +214,9 @@
     .line 82
     iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->i:I
 
-    new-array v3, v3, [Ldefpackage/rg;
+    new-array v3, v3, [Lrg;
 
-    iput-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iput-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     .line 83
     const/4 v3, 0x0
@@ -228,11 +228,11 @@
     if-ge v3, v5, :cond_3
 
     .line 84
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
-    new-instance v6, Ldefpackage/rg;
+    new-instance v6, Lrg;
 
-    invoke-direct {v6, p0, v3}, Ldefpackage/rg;-><init>(Landroid/support/v7/widget/StaggeredGridLayoutManager;I)V
+    invoke-direct {v6, p0, v3}, Lrg;-><init>(Landroid/support/v7/widget/StaggeredGridLayoutManager;I)V
 
     aput-object v6, v5, v3
 
@@ -248,36 +248,36 @@
 
     .line 88
     :cond_4
-    iget-boolean v3, v0, Ldefpackage/qb;->c:Z
+    iget-boolean v3, v0, Lqb;->c:Z
 
     invoke-virtual {p0, v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F(Z)V
 
     .line 89
-    new-instance v3, Ldefpackage/oz;
+    new-instance v3, Loz;
 
-    invoke-direct {v3}, Ldefpackage/oz;-><init>()V
+    invoke-direct {v3}, Loz;-><init>()V
 
-    iput-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iput-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     .line 90
     iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->j:I
 
-    invoke-static {p0, v3}, Ldefpackage/pq;->q(Landroid/view/qc;I)Ldefpackage/pq;
+    invoke-static {p0, v3}, Lpq;->q(Landroid/view/qc;I)Lpq;
 
     move-result-object v3
 
-    iput-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iput-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
     .line 91
     iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->j:I
 
     sub-int/2addr v1, v3
 
-    invoke-static {p0, v1}, Ldefpackage/pq;->q(Landroid/view/qc;I)Ldefpackage/pq;
+    invoke-static {p0, v1}, Lpq;->q(Landroid/view/qc;I)Lpq;
 
     move-result-object v1
 
-    iput-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Ldefpackage/pq;
+    iput-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Lpq;
 
     .line 92
     return-void
@@ -337,9 +337,9 @@
     return v1
 .end method
 
-.method private final O(Ldefpackage/qp;)I
+.method private final O(Lqp;)I
     .locals 7
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 105
     invoke-virtual {p0}, Landroid/view/qc;->ai()I
@@ -355,7 +355,7 @@
 
     .line 108
     :cond_0
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
     iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->I:Z
 
@@ -379,16 +379,16 @@
 
     move-object v5, p0
 
-    invoke-static/range {v1 .. v6}, Ldefpackage/gh;->d(Ldefpackage/qp;Ldefpackage/pq;Landroid/view/View;Landroid/view/View;Landroid/view/qc;Z)I
+    invoke-static/range {v1 .. v6}, Lgh;->d(Lqp;Lpq;Landroid/view/View;Landroid/view/View;Landroid/view/qc;Z)I
 
     move-result v0
 
     return v0
 .end method
 
-.method private final S(Ldefpackage/qp;)I
+.method private final S(Lqp;)I
     .locals 8
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 112
     invoke-virtual {p0}, Landroid/view/qc;->ai()I
@@ -404,7 +404,7 @@
 
     .line 115
     :cond_0
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
     iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->I:Z
 
@@ -430,16 +430,16 @@
 
     move-object v5, p0
 
-    invoke-static/range {v1 .. v7}, Ldefpackage/gh;->e(Ldefpackage/qp;Ldefpackage/pq;Landroid/view/View;Landroid/view/View;Landroid/view/qc;ZZ)I
+    invoke-static/range {v1 .. v7}, Lgh;->e(Lqp;Lpq;Landroid/view/View;Landroid/view/View;Landroid/view/qc;ZZ)I
 
     move-result v0
 
     return v0
 .end method
 
-.method private final T(Ldefpackage/qp;)I
+.method private final T(Lqp;)I
     .locals 7
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 119
     invoke-virtual {p0}, Landroid/view/qc;->ai()I
@@ -455,7 +455,7 @@
 
     .line 122
     :cond_0
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
     iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->I:Z
 
@@ -479,18 +479,18 @@
 
     move-object v5, p0
 
-    invoke-static/range {v1 .. v6}, Ldefpackage/gh;->f(Ldefpackage/qp;Ldefpackage/pq;Landroid/view/View;Landroid/view/View;Landroid/view/qc;Z)I
+    invoke-static/range {v1 .. v6}, Lgh;->f(Lqp;Lpq;Landroid/view/View;Landroid/view/View;Landroid/view/qc;Z)I
 
     move-result v0
 
     return v0
 .end method
 
-.method private final X(Ldefpackage/qi;Ldefpackage/oz;Ldefpackage/qp;)I
+.method private final X(Lqi;Loz;Lqp;)I
     .locals 26
-    .param p1, "qiVar"    # Ldefpackage/qi;
-    .param p2, "ozVar"    # Ldefpackage/oz;
-    .param p3, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qiVar"    # Lqi;
+    .param p2, "ozVar"    # Loz;
+    .param p3, "qpVar"    # Lqp;
 
     .line 134
     move-object/from16 v0, p0
@@ -510,13 +510,13 @@
     invoke-virtual {v3, v5, v4, v6}, Ljava/util/BitSet;->set(IIZ)V
 
     .line 135
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget-boolean v3, v3, Ldefpackage/oz;->i:Z
+    iget-boolean v3, v3, Loz;->i:Z
 
     if-eqz v3, :cond_1
 
-    iget v3, v2, Ldefpackage/oz;->e:I
+    iget v3, v2, Loz;->e:I
 
     if-ne v3, v6, :cond_0
 
@@ -530,29 +530,29 @@
     goto :goto_0
 
     :cond_1
-    iget v3, v2, Ldefpackage/oz;->e:I
+    iget v3, v2, Loz;->e:I
 
     if-ne v3, v6, :cond_2
 
-    iget v3, v2, Ldefpackage/oz;->g:I
+    iget v3, v2, Loz;->g:I
 
-    iget v7, v2, Ldefpackage/oz;->b:I
+    iget v7, v2, Loz;->b:I
 
     add-int/2addr v3, v7
 
     goto :goto_0
 
     :cond_2
-    iget v3, v2, Ldefpackage/oz;->f:I
+    iget v3, v2, Loz;->f:I
 
-    iget v7, v2, Ldefpackage/oz;->b:I
+    iget v7, v2, Loz;->b:I
 
     sub-int/2addr v3, v7
 
     .line 136
     .local v3, "i4":I
     :goto_0
-    iget v7, v2, Ldefpackage/oz;->e:I
+    iget v7, v2, Loz;->e:I
 
     .line 137
     .local v7, "i5":I
@@ -565,11 +565,11 @@
     if-ge v8, v9, :cond_4
 
     .line 138
-    iget-object v9, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v9, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v9, v9, v8
 
-    iget-object v9, v9, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v9, v9, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v9}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -578,11 +578,11 @@
     if-nez v9, :cond_3
 
     .line 139
-    iget-object v9, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v9, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v9, v9, v8
 
-    invoke-direct {v0, v9, v7, v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bz(Ldefpackage/rg;II)V
+    invoke-direct {v0, v9, v7, v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bz(Lrg;II)V
 
     .line 137
     :cond_3
@@ -597,18 +597,18 @@
 
     if-eqz v8, :cond_5
 
-    iget-object v8, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v8, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v8}, Ldefpackage/pq;->f()I
+    invoke-virtual {v8}, Lpq;->f()I
 
     move-result v8
 
     goto :goto_2
 
     :cond_5
-    iget-object v8, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v8, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v8}, Ldefpackage/pq;->j()I
+    invoke-virtual {v8}, Lpq;->j()I
 
     move-result v8
 
@@ -620,7 +620,7 @@
     .line 144
     .local v9, "z":Z
     :goto_3
-    invoke-virtual/range {p2 .. p3}, Ldefpackage/oz;->a(Ldefpackage/qp;)Z
+    invoke-virtual/range {p2 .. p3}, Loz;->a(Lqp;)Z
 
     move-result v10
 
@@ -628,9 +628,9 @@
 
     if-eqz v10, :cond_21
 
-    iget-object v10, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v10, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget-boolean v10, v10, Ldefpackage/oz;->i:Z
+    iget-boolean v10, v10, Loz;->i:Z
 
     if-nez v10, :cond_7
 
@@ -654,40 +654,40 @@
     .line 145
     :cond_7
     :goto_4
-    iget v10, v2, Ldefpackage/oz;->c:I
+    iget v10, v2, Loz;->c:I
 
-    invoke-virtual {v1, v10}, Ldefpackage/qi;->c(I)Landroid/view/View;
+    invoke-virtual {v1, v10}, Lqi;->c(I)Landroid/view/View;
 
     move-result-object v10
 
     .line 146
     .local v10, "c":Landroid/view/View;
-    iget v12, v2, Ldefpackage/oz;->c:I
+    iget v12, v2, Loz;->c:I
 
-    iget v13, v2, Ldefpackage/oz;->d:I
+    iget v13, v2, Loz;->d:I
 
     add-int/2addr v12, v13
 
-    iput v12, v2, Ldefpackage/oz;->c:I
+    iput v12, v2, Loz;->c:I
 
     .line 147
     invoke-virtual {v10}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v12
 
-    check-cast v12, Ldefpackage/rc;
+    check-cast v12, Lrc;
 
     .line 148
-    .local v12, "rcVar":Ldefpackage/rc;
+    .local v12, "rcVar":Lrc;
     invoke-virtual {v12}, Landroid/view/qd;->a()I
 
     move-result v13
 
     .line 149
     .local v13, "a":I
-    iget-object v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
-    iget-object v14, v14, Ldefpackage/re;->a:[I
+    iget-object v14, v14, Lre;->a:[I
 
     .line 150
     .local v14, "iArr":[I
@@ -714,11 +714,11 @@
     if-ne v15, v11, :cond_12
 
     .line 152
-    iget-boolean v11, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v11, v12, Lrc;->b:Z
 
     .line 153
     .local v11, "z2":Z
-    iget v4, v2, Ldefpackage/oz;->e:I
+    iget v4, v2, Loz;->e:I
 
     invoke-direct {v0, v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bA(I)Z
 
@@ -772,19 +772,19 @@
     const/16 v18, 0x0
 
     .line 163
-    .local v18, "rgVar2":Ldefpackage/rg;
+    .local v18, "rgVar2":Lrg;
     move/from16 v19, v4
 
     .end local v4    # "i2":I
     .local v19, "i2":I
-    iget v4, v2, Ldefpackage/oz;->e:I
+    iget v4, v2, Loz;->e:I
 
     if-ne v4, v6, :cond_e
 
     .line 164
-    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v4}, Ldefpackage/pq;->j()I
+    invoke-virtual {v4}, Lpq;->j()I
 
     move-result v4
 
@@ -813,17 +813,17 @@
 
     .end local v11    # "z2":Z
     .local v21, "z2":Z
-    iget-object v11, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v11, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v11, v11, v6
 
     .line 168
-    .local v11, "rgVar3":Ldefpackage/rg;
+    .local v11, "rgVar3":Lrg;
     move-object/from16 v22, v14
 
     .end local v14    # "iArr":[I
     .local v22, "iArr":[I
-    invoke-virtual {v11, v4}, Ldefpackage/rg;->d(I)I
+    invoke-virtual {v11, v4}, Lrg;->d(I)I
 
     move-result v14
 
@@ -854,7 +854,7 @@
     move/from16 v7, v19
 
     .line 175
-    .end local v11    # "rgVar3":Ldefpackage/rg;
+    .end local v11    # "rgVar3":Lrg;
     .end local v14    # "d":I
     .end local v19    # "i9":I
     move/from16 v11, v21
@@ -881,11 +881,11 @@
 
     .line 177
     .end local v7    # "i8":I
-    .local v4, "rgVar":Ldefpackage/rg;
+    .local v4, "rgVar":Lrg;
     goto :goto_c
 
     .line 178
-    .end local v4    # "rgVar":Ldefpackage/rg;
+    .end local v4    # "rgVar":Lrg;
     .end local v6    # "i2":I
     .end local v20    # "i5":I
     .end local v21    # "z2":Z
@@ -907,9 +907,9 @@
     .restart local v20    # "i5":I
     .restart local v21    # "z2":Z
     .restart local v22    # "iArr":[I
-    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v4}, Ldefpackage/pq;->f()I
+    invoke-virtual {v4}, Lpq;->f()I
 
     move-result v4
 
@@ -929,13 +929,13 @@
     if-eq v6, v5, :cond_11
 
     .line 181
-    iget-object v11, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v11, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v11, v11, v6
 
     .line 182
-    .local v11, "rgVar4":Ldefpackage/rg;
-    invoke-virtual {v11, v4}, Ldefpackage/rg;->f(I)I
+    .local v11, "rgVar4":Lrg;
+    invoke-virtual {v11, v4}, Lrg;->f(I)I
 
     move-result v14
 
@@ -966,7 +966,7 @@
     move/from16 v7, v19
 
     .line 189
-    .end local v11    # "rgVar4":Ldefpackage/rg;
+    .end local v11    # "rgVar4":Lrg;
     .end local v14    # "f4":I
     .end local v19    # "i11":I
     goto :goto_a
@@ -979,29 +979,29 @@
 
     .line 192
     .end local v7    # "i10":I
-    .local v4, "rgVar":Ldefpackage/rg;
+    .local v4, "rgVar":Lrg;
     :goto_c
-    iget-object v7, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v7, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
     .line 193
-    .local v7, "reVar":Ldefpackage/re;
-    invoke-virtual {v7, v13}, Ldefpackage/re;->b(I)V
+    .local v7, "reVar":Lre;
+    invoke-virtual {v7, v13}, Lre;->b(I)V
 
     .line 194
-    iget-object v11, v7, Ldefpackage/re;->a:[I
+    iget-object v11, v7, Lre;->a:[I
 
-    iget v14, v4, Ldefpackage/rg;->e:I
+    iget v14, v4, Lrg;->e:I
 
     aput v14, v11, v13
 
     .line 195
-    .end local v7    # "reVar":Ldefpackage/re;
-    .end local v18    # "rgVar2":Ldefpackage/rg;
+    .end local v7    # "reVar":Lre;
+    .end local v18    # "rgVar2":Lrg;
     .end local v21    # "z2":Z
     goto :goto_d
 
     .line 196
-    .end local v4    # "rgVar":Ldefpackage/rg;
+    .end local v4    # "rgVar":Lrg;
     .end local v5    # "i":I
     .end local v6    # "i2":I
     .end local v17    # "i3":I
@@ -1018,17 +1018,17 @@
     .end local v14    # "iArr":[I
     .restart local v20    # "i5":I
     .restart local v22    # "iArr":[I
-    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v4, v4, v15
 
     .line 198
-    .restart local v4    # "rgVar":Ldefpackage/rg;
+    .restart local v4    # "rgVar":Lrg;
     :goto_d
-    iput-object v4, v12, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iput-object v4, v12, Lrc;->a:Lrg;
 
     .line 199
-    iget v5, v2, Ldefpackage/oz;->e:I
+    iget v5, v2, Loz;->e:I
 
     const/4 v6, 0x1
 
@@ -1049,7 +1049,7 @@
 
     .line 204
     :goto_e
-    iget-boolean v7, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v7, v12, Lrc;->b:Z
 
     .line 205
     .local v7, "z3":Z
@@ -1154,24 +1154,24 @@
 
     .line 210
     :goto_f
-    iget v5, v2, Ldefpackage/oz;->e:I
+    iget v5, v2, Loz;->e:I
 
     if-ne v5, v13, :cond_15
 
     .line 211
-    iget-boolean v5, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v5, v12, Lrc;->b:Z
 
     .line 212
     .local v5, "z4":Z
-    invoke-virtual {v4, v8}, Ldefpackage/rg;->d(I)I
+    invoke-virtual {v4, v8}, Lrg;->d(I)I
 
     move-result v6
 
     .line 213
     .local v6, "b":I
-    iget-object v7, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v7, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v7, v10}, Ldefpackage/pq;->b(Landroid/view/View;)I
+    invoke-virtual {v7, v10}, Lpq;->b(Landroid/view/View;)I
 
     move-result v7
 
@@ -1192,19 +1192,19 @@
     .end local v6    # "b":I
     .end local v7    # "f":I
     :cond_15
-    iget-boolean v5, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v5, v12, Lrc;->b:Z
 
     .line 219
     .local v5, "z6":Z
-    invoke-virtual {v4, v8}, Ldefpackage/rg;->f(I)I
+    invoke-virtual {v4, v8}, Lrg;->f(I)I
 
     move-result v7
 
     .line 220
     .restart local v7    # "f":I
-    iget-object v6, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v6, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v6, v10}, Ldefpackage/pq;->b(Landroid/view/View;)I
+    invoke-virtual {v6, v10}, Lpq;->b(Landroid/view/View;)I
 
     move-result v6
 
@@ -1220,41 +1220,41 @@
     .line 225
     .end local v5    # "z6":Z
     :goto_10
-    iget-boolean v5, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v5, v12, Lrc;->b:Z
 
     .line 226
     .local v5, "z8":Z
-    iget v11, v2, Ldefpackage/oz;->e:I
+    iget v11, v2, Loz;->e:I
 
     const/4 v13, 0x1
 
     if-ne v11, v13, :cond_19
 
     .line 227
-    iget-object v11, v12, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iget-object v11, v12, Lrc;->a:Lrg;
 
     .line 228
-    .local v11, "rgVar5":Ldefpackage/rg;
-    invoke-static {v10}, Ldefpackage/rg;->n(Landroid/view/View;)Ldefpackage/rc;
+    .local v11, "rgVar5":Lrg;
+    invoke-static {v10}, Lrg;->n(Landroid/view/View;)Lrc;
 
     move-result-object v13
 
     .line 229
-    .local v13, "n":Ldefpackage/rc;
-    iput-object v11, v13, Ldefpackage/rc;->a:Ldefpackage/rg;
+    .local v13, "n":Lrc;
+    iput-object v11, v13, Lrc;->a:Lrg;
 
     .line 230
-    iget-object v14, v11, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v14, v11, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v14, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 231
     const/high16 v14, -0x80000000
 
-    iput v14, v11, Ldefpackage/rg;->c:I
+    iput v14, v11, Lrg;->c:I
 
     .line 232
-    iget-object v14, v11, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v14, v11, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v14}, Ljava/util/ArrayList;->size()I
 
@@ -1271,7 +1271,7 @@
     .line 233
     const/high16 v5, -0x80000000
 
-    iput v5, v11, Ldefpackage/rg;->b:I
+    iput v5, v11, Lrg;->b:I
 
     .line 235
     :cond_16
@@ -1289,23 +1289,23 @@
 
     .line 236
     :cond_17
-    iget v5, v11, Ldefpackage/rg;->d:I
+    iget v5, v11, Lrg;->d:I
 
-    iget-object v14, v11, Ldefpackage/rg;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager;
+    iget-object v14, v11, Lrg;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager;
 
-    iget-object v14, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v14, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v14, v10}, Ldefpackage/pq;->b(Landroid/view/View;)I
+    invoke-virtual {v14, v10}, Lpq;->b(Landroid/view/View;)I
 
     move-result v14
 
     add-int/2addr v5, v14
 
-    iput v5, v11, Ldefpackage/rg;->d:I
+    iput v5, v11, Lrg;->d:I
 
     .line 238
-    .end local v11    # "rgVar5":Ldefpackage/rg;
-    .end local v13    # "n":Ldefpackage/rc;
+    .end local v11    # "rgVar5":Lrg;
+    .end local v13    # "n":Lrc;
     :cond_18
     goto :goto_12
 
@@ -1317,20 +1317,20 @@
 
     .end local v5    # "z8":Z
     .restart local v19    # "z8":Z
-    iget-object v5, v12, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iget-object v5, v12, Lrc;->a:Lrg;
 
     .line 240
-    .local v5, "rgVar6":Ldefpackage/rg;
-    invoke-static {v10}, Ldefpackage/rg;->n(Landroid/view/View;)Ldefpackage/rc;
+    .local v5, "rgVar6":Lrg;
+    invoke-static {v10}, Lrg;->n(Landroid/view/View;)Lrc;
 
     move-result-object v11
 
     .line 241
-    .local v11, "n2":Ldefpackage/rc;
-    iput-object v5, v11, Ldefpackage/rc;->a:Ldefpackage/rg;
+    .local v11, "n2":Lrc;
+    iput-object v5, v11, Lrc;->a:Lrg;
 
     .line 242
-    iget-object v13, v5, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v13, v5, Lrg;->a:Ljava/util/ArrayList;
 
     const/4 v14, 0x0
 
@@ -1339,10 +1339,10 @@
     .line 243
     const/high16 v13, -0x80000000
 
-    iput v13, v5, Ldefpackage/rg;->b:I
+    iput v13, v5, Lrg;->b:I
 
     .line 244
-    iget-object v14, v5, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v14, v5, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v14}, Ljava/util/ArrayList;->size()I
 
@@ -1355,7 +1355,7 @@
     .line 245
     const/high16 v13, -0x80000000
 
-    iput v13, v5, Ldefpackage/rg;->c:I
+    iput v13, v5, Lrg;->c:I
 
     goto :goto_11
 
@@ -1379,23 +1379,23 @@
 
     .line 248
     :cond_1b
-    iget v14, v5, Ldefpackage/rg;->d:I
+    iget v14, v5, Lrg;->d:I
 
-    iget-object v13, v5, Ldefpackage/rg;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager;
+    iget-object v13, v5, Lrg;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager;
 
-    iget-object v13, v13, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v13, v13, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v13, v10}, Ldefpackage/pq;->b(Landroid/view/View;)I
+    invoke-virtual {v13, v10}, Lpq;->b(Landroid/view/View;)I
 
     move-result v13
 
     add-int/2addr v14, v13
 
-    iput v14, v5, Ldefpackage/rg;->d:I
+    iput v14, v5, Lrg;->d:I
 
     .line 251
-    .end local v5    # "rgVar6":Ldefpackage/rg;
-    .end local v11    # "n2":Ldefpackage/rc;
+    .end local v5    # "rgVar6":Lrg;
+    .end local v11    # "n2":Lrc;
     :cond_1c
     :goto_12
     invoke-virtual/range {p0 .. p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->K()Z
@@ -1414,13 +1414,13 @@
 
     .line 256
     :cond_1d
-    iget-boolean v5, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v5, v12, Lrc;->b:Z
 
     .line 257
     .local v5, "z10":Z
-    iget-object v13, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Ldefpackage/pq;
+    iget-object v13, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Lpq;
 
-    invoke-virtual {v13}, Ldefpackage/pq;->f()I
+    invoke-virtual {v13}, Lpq;->f()I
 
     move-result v13
 
@@ -1428,7 +1428,7 @@
 
     sub-int/2addr v14, v11
 
-    iget v11, v4, Ldefpackage/rg;->e:I
+    iget v11, v4, Lrg;->e:I
 
     sub-int/2addr v14, v11
 
@@ -1440,9 +1440,9 @@
 
     .line 258
     .local v13, "b2":I
-    iget-object v11, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Ldefpackage/pq;
+    iget-object v11, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Lpq;
 
-    invoke-virtual {v11, v10}, Ldefpackage/pq;->b(Landroid/view/View;)I
+    invoke-virtual {v11, v10}, Lpq;->b(Landroid/view/View;)I
 
     move-result v11
 
@@ -1457,17 +1457,17 @@
     .end local v13    # "b2":I
     :cond_1e
     :goto_13
-    iget-boolean v5, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v5, v12, Lrc;->b:Z
 
     .line 253
     .local v5, "z9":Z
-    iget-object v11, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Ldefpackage/pq;
+    iget-object v11, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Lpq;
 
-    invoke-virtual {v11}, Ldefpackage/pq;->j()I
+    invoke-virtual {v11}, Lpq;->j()I
 
     move-result v11
 
-    iget v13, v4, Ldefpackage/rg;->e:I
+    iget v13, v4, Lrg;->e:I
 
     iget v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:I
 
@@ -1477,9 +1477,9 @@
 
     .line 254
     .restart local v11    # "j":I
-    iget-object v13, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Ldefpackage/pq;
+    iget-object v13, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Lpq;
 
-    invoke-virtual {v13, v10}, Ldefpackage/pq;->b(Landroid/view/View;)I
+    invoke-virtual {v13, v10}, Lpq;->b(Landroid/view/View;)I
 
     move-result v13
 
@@ -1509,25 +1509,25 @@
 
     .line 265
     :goto_15
-    iget-boolean v5, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v5, v12, Lrc;->b:Z
 
     .line 266
     .local v5, "z11":Z
-    iget-object v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget v14, v14, Ldefpackage/oz;->e:I
+    iget v14, v14, Loz;->e:I
 
-    invoke-direct {v0, v4, v14, v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bz(Ldefpackage/rg;II)V
+    invoke-direct {v0, v4, v14, v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bz(Lrg;II)V
 
     .line 267
-    iget-object v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    invoke-direct {v0, v1, v14}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bt(Ldefpackage/qi;Ldefpackage/oz;)V
+    invoke-direct {v0, v1, v14}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bt(Lqi;Loz;)V
 
     .line 268
-    iget-object v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v14, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget-boolean v14, v14, Ldefpackage/oz;->h:Z
+    iget-boolean v14, v14, Loz;->h:Z
 
     if-eqz v14, :cond_20
 
@@ -1538,7 +1538,7 @@
     if-eqz v14, :cond_20
 
     .line 269
-    iget-boolean v14, v12, Ldefpackage/rc;->b:Z
+    iget-boolean v14, v12, Lrc;->b:Z
 
     .line 270
     .local v14, "z12":Z
@@ -1552,14 +1552,14 @@
 
     .end local v5    # "z11":Z
     .local v23, "z11":Z
-    iget v5, v4, Ldefpackage/rg;->e:I
+    iget v5, v4, Lrg;->e:I
 
     move-object/from16 v24, v4
 
     const/4 v4, 0x0
 
-    .end local v4    # "rgVar":Ldefpackage/rg;
-    .local v24, "rgVar":Ldefpackage/rg;
+    .end local v4    # "rgVar":Lrg;
+    .local v24, "rgVar":Lrg;
     invoke-virtual {v3, v5, v4}, Ljava/util/BitSet;->set(IZ)V
 
     goto :goto_16
@@ -1568,9 +1568,9 @@
     .end local v14    # "z12":Z
     .end local v21    # "i4":I
     .end local v23    # "z11":Z
-    .end local v24    # "rgVar":Ldefpackage/rg;
+    .end local v24    # "rgVar":Lrg;
     .restart local v3    # "i4":I
-    .restart local v4    # "rgVar":Ldefpackage/rg;
+    .restart local v4    # "rgVar":Lrg;
     .restart local v5    # "z11":Z
     :cond_20
     move/from16 v21, v3
@@ -1581,17 +1581,17 @@
 
     .line 272
     .end local v3    # "i4":I
-    .end local v4    # "rgVar":Ldefpackage/rg;
+    .end local v4    # "rgVar":Lrg;
     .end local v5    # "z11":Z
     .restart local v21    # "i4":I
     .restart local v23    # "z11":Z
-    .restart local v24    # "rgVar":Ldefpackage/rg;
+    .restart local v24    # "rgVar":Lrg;
     :goto_16
     const/4 v9, 0x1
 
     .line 273
     .end local v10    # "c":Landroid/view/View;
-    .end local v12    # "rcVar":Ldefpackage/rc;
+    .end local v12    # "rcVar":Lrc;
     .end local v15    # "i7":I
     .end local v17    # "z3":Z
     .end local v18    # "a":I
@@ -1614,7 +1614,7 @@
     .end local v13    # "b2":I
     .end local v20    # "i5":I
     .end local v21    # "i4":I
-    .end local v24    # "rgVar":Ldefpackage/rg;
+    .end local v24    # "rgVar":Lrg;
     .restart local v3    # "i4":I
     .local v7, "i5":I
     :cond_21
@@ -1631,27 +1631,27 @@
     if-nez v9, :cond_22
 
     .line 275
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    invoke-direct {v0, v1, v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bt(Ldefpackage/qi;Ldefpackage/oz;)V
+    invoke-direct {v0, v1, v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bt(Lqi;Loz;)V
 
     .line 277
     :cond_22
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget v3, v3, Ldefpackage/oz;->e:I
+    iget v3, v3, Loz;->e:I
 
     if-ne v3, v11, :cond_23
 
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v3}, Ldefpackage/pq;->j()I
+    invoke-virtual {v3}, Lpq;->j()I
 
     move-result v3
 
-    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v4}, Ldefpackage/pq;->j()I
+    invoke-virtual {v4}, Lpq;->j()I
 
     move-result v4
 
@@ -1662,9 +1662,9 @@
     goto :goto_18
 
     :cond_23
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v3}, Ldefpackage/pq;->f()I
+    invoke-virtual {v3}, Lpq;->f()I
 
     move-result v3
 
@@ -1672,9 +1672,9 @@
 
     move-result v3
 
-    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v4}, Ldefpackage/pq;->f()I
+    invoke-virtual {v4}, Lpq;->f()I
 
     move-result v4
 
@@ -1686,7 +1686,7 @@
     if-lez v3, :cond_24
 
     .line 279
-    iget v4, v2, Ldefpackage/oz;->b:I
+    iget v4, v2, Loz;->b:I
 
     invoke-static {v4, v3}, Ljava/lang/Math;->min(II)I
 
@@ -1706,13 +1706,13 @@
     .param p1, "i"    # I
 
     .line 285
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
-    invoke-virtual {v0, p1}, Ldefpackage/rg;->d(I)I
+    invoke-virtual {v0, p1}, Lrg;->d(I)I
 
     move-result v0
 
@@ -1727,11 +1727,11 @@
     if-ge v1, v2, :cond_1
 
     .line 287
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v2, v2, v1
 
-    invoke-virtual {v2, p1}, Ldefpackage/rg;->d(I)I
+    invoke-virtual {v2, p1}, Lrg;->d(I)I
 
     move-result v2
 
@@ -1760,13 +1760,13 @@
     .param p1, "i"    # I
 
     .line 296
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
-    invoke-virtual {v0, p1}, Ldefpackage/rg;->f(I)I
+    invoke-virtual {v0, p1}, Lrg;->f(I)I
 
     move-result v0
 
@@ -1781,11 +1781,11 @@
     if-ge v1, v2, :cond_1
 
     .line 298
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v2, v2, v1
 
-    invoke-virtual {v2, p1}, Ldefpackage/rg;->f(I)I
+    invoke-virtual {v2, p1}, Lrg;->f(I)I
 
     move-result v2
 
@@ -1809,10 +1809,10 @@
     return v0
 .end method
 
-.method private final ad(Ldefpackage/qi;Ldefpackage/qp;Z)V
+.method private final ad(Lqi;Lqp;Z)V
     .locals 4
-    .param p1, "qiVar"    # Ldefpackage/qi;
-    .param p2, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qiVar"    # Lqi;
+    .param p2, "qpVar"    # Lqp;
     .param p3, "z"    # Z
 
     .line 308
@@ -1826,9 +1826,9 @@
     .local v1, "Y":I
     if-eq v1, v0, :cond_2
 
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v0}, Ldefpackage/pq;->f()I
+    invoke-virtual {v0}, Lpq;->f()I
 
     move-result v0
 
@@ -1842,7 +1842,7 @@
     .line 310
     neg-int v0, v2
 
-    invoke-virtual {p0, v0, p1, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(ILdefpackage/qi;Ldefpackage/qp;)I
+    invoke-virtual {p0, v0, p1, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(ILqi;Lqp;)I
 
     move-result v0
 
@@ -1860,9 +1860,9 @@
 
     .line 314
     :cond_0
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v3, v0}, Ldefpackage/pq;->n(I)V
+    invoke-virtual {v3, v0}, Lpq;->n(I)V
 
     goto :goto_1
 
@@ -1879,10 +1879,10 @@
     return-void
 .end method
 
-.method private final ae(Ldefpackage/qi;Ldefpackage/qp;Z)V
+.method private final ae(Lqi;Lqp;Z)V
     .locals 5
-    .param p1, "qiVar"    # Ldefpackage/qi;
-    .param p2, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qiVar"    # Lqi;
+    .param p2, "qpVar"    # Lqp;
     .param p3, "z"    # Z
 
     .line 320
@@ -1896,9 +1896,9 @@
     .local v1, "ac":I
     if-eq v1, v0, :cond_2
 
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v0}, Ldefpackage/pq;->j()I
+    invoke-virtual {v0}, Lpq;->j()I
 
     move-result v0
 
@@ -1910,7 +1910,7 @@
     if-lez v0, :cond_2
 
     .line 322
-    invoke-virtual {p0, v2, p1, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(ILdefpackage/qi;Ldefpackage/qp;)I
+    invoke-virtual {p0, v2, p1, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(ILqi;Lqp;)I
 
     move-result v0
 
@@ -1926,11 +1926,11 @@
 
     .line 326
     :cond_0
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
     neg-int v4, v0
 
-    invoke-virtual {v3, v4}, Ldefpackage/pq;->n(I)V
+    invoke-virtual {v3, v4}, Lpq;->n(I)V
 
     goto :goto_1
 
@@ -2040,10 +2040,10 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/rc;
+    check-cast v0, Lrc;
 
     .line 340
-    .local v0, "rcVar":Ldefpackage/rc;
+    .local v0, "rcVar":Lrc;
     iget v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->G:Landroid/graphics/Rect;
@@ -2197,11 +2197,11 @@
 
     .line 363
     .local v3, "i6":I
-    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
     .line 364
-    .local v4, "reVar":Ldefpackage/re;
-    iget-object v5, v4, Ldefpackage/re;->a:[I
+    .local v4, "reVar":Lre;
+    iget-object v5, v4, Lre;->a:[I
 
     .line 365
     .local v5, "iArr":[I
@@ -2214,7 +2214,7 @@
     if-ge v1, v7, :cond_9
 
     .line 366
-    iget-object v7, v4, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v7, v4, Lre;->b:Ljava/util/List;
 
     .line 367
     .local v7, "list":Ljava/util/List;
@@ -2244,25 +2244,25 @@
     const/4 v9, 0x0
 
     .line 374
-    .local v9, "rdVar":Ldefpackage/rd;
+    .local v9, "rdVar":Lrd;
     move-object v10, v9
 
     goto :goto_2
 
     .line 376
-    .end local v9    # "rdVar":Ldefpackage/rd;
+    .end local v9    # "rdVar":Lrd;
     :cond_2
-    iget-object v9, v4, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v9, v4, Lre;->b:Ljava/util/List;
 
     invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    check-cast v9, Ldefpackage/rd;
+    check-cast v9, Lrd;
 
     .line 377
-    .restart local v9    # "rdVar":Ldefpackage/rd;
-    iget v10, v9, Ldefpackage/rd;->a:I
+    .restart local v9    # "rdVar":Lrd;
+    iget v10, v9, Lrd;->a:I
 
     if-ne v10, v1, :cond_8
 
@@ -2270,19 +2270,19 @@
     move-object v10, v9
 
     .line 382
-    .end local v9    # "rdVar":Ldefpackage/rd;
-    .local v10, "rdVar":Ldefpackage/rd;
+    .end local v9    # "rdVar":Lrd;
+    .local v10, "rdVar":Lrd;
     :goto_2
     if-eqz v10, :cond_3
 
     .line 383
-    iget-object v9, v4, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v9, v4, Lre;->b:Ljava/util/List;
 
     invoke-interface {v9, v10}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 385
     :cond_3
-    iget-object v9, v4, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v9, v4, Lre;->b:Ljava/util/List;
 
     invoke-interface {v9}, Ljava/util/List;->size()I
 
@@ -2305,15 +2305,15 @@
 
     .line 391
     :cond_4
-    iget-object v12, v4, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v12, v4, Lre;->b:Ljava/util/List;
 
     invoke-interface {v12, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v12
 
-    check-cast v12, Ldefpackage/rd;
+    check-cast v12, Lrd;
 
-    iget v12, v12, Ldefpackage/rd;->a:I
+    iget v12, v12, Lrd;->a:I
 
     if-lt v12, v1, :cond_7
 
@@ -2325,20 +2325,20 @@
     if-eq v9, v6, :cond_5
 
     .line 398
-    iget-object v12, v4, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v12, v4, Lre;->b:Ljava/util/List;
 
     invoke-interface {v12, v9}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 399
-    iget-object v12, v4, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v12, v4, Lre;->b:Ljava/util/List;
 
     invoke-interface {v12, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v12
 
-    check-cast v12, Ldefpackage/rd;
+    check-cast v12, Lrd;
 
-    iget v12, v12, Ldefpackage/rd;->a:I
+    iget v12, v12, Lrd;->a:I
 
     move v8, v12
 
@@ -2354,14 +2354,14 @@
 
     .line 404
     .end local v9    # "i7":I
-    .end local v10    # "rdVar":Ldefpackage/rd;
+    .end local v10    # "rdVar":Lrd;
     .end local v11    # "size2":I
     .local v8, "i4":I
     :goto_5
     if-ne v8, v6, :cond_6
 
     .line 405
-    iget-object v9, v4, Ldefpackage/re;->a:[I
+    iget-object v9, v4, Lre;->a:[I
 
     .line 406
     .local v9, "iArr2":[I
@@ -2370,7 +2370,7 @@
     invoke-static {v9, v1, v10, v6}, Ljava/util/Arrays;->fill([IIII)V
 
     .line 407
-    iget-object v10, v4, Ldefpackage/re;->a:[I
+    iget-object v10, v4, Lre;->a:[I
 
     array-length v10, v10
 
@@ -2380,7 +2380,7 @@
 
     .line 409
     :cond_6
-    iget-object v9, v4, Ldefpackage/re;->a:[I
+    iget-object v9, v4, Lre;->a:[I
 
     add-int/lit8 v10, v8, 0x1
 
@@ -2397,7 +2397,7 @@
     .line 394
     .local v8, "size":I
     .local v9, "i7":I
-    .restart local v10    # "rdVar":Ldefpackage/rd;
+    .restart local v10    # "rdVar":Lrd;
     .restart local v11    # "size2":I
     :cond_7
     add-int/lit8 v9, v9, 0x1
@@ -2405,9 +2405,9 @@
     goto :goto_3
 
     .line 380
-    .end local v10    # "rdVar":Ldefpackage/rd;
+    .end local v10    # "rdVar":Lrd;
     .end local v11    # "size2":I
-    .local v9, "rdVar":Ldefpackage/rd;
+    .local v9, "rdVar":Lrd;
     :cond_8
     add-int/lit8 v8, v8, -0x1
 
@@ -2416,7 +2416,7 @@
     .line 412
     .end local v7    # "list":Ljava/util/List;
     .end local v8    # "size":I
-    .end local v9    # "rdVar":Ldefpackage/rd;
+    .end local v9    # "rdVar":Lrd;
     :cond_9
     :goto_6
     packed-switch p3, :pswitch_data_0
@@ -2425,11 +2425,11 @@
 
     .line 435
     :pswitch_0
-    iget-object v7, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v7, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
     .line 436
-    .local v7, "reVar3":Ldefpackage/re;
-    iget-object v8, v7, Ldefpackage/re;->a:[I
+    .local v7, "reVar3":Lre;
+    iget-object v8, v7, Lre;->a:[I
 
     .line 437
     .local v8, "iArr5":[I
@@ -2440,10 +2440,10 @@
     if-ge v1, v9, :cond_f
 
     .line 438
-    invoke-virtual {v7, v3}, Ldefpackage/re;->b(I)V
+    invoke-virtual {v7, v3}, Lre;->b(I)V
 
     .line 439
-    iget-object v9, v7, Ldefpackage/re;->a:[I
+    iget-object v9, v7, Lre;->a:[I
 
     .line 440
     .local v9, "iArr6":[I
@@ -2456,7 +2456,7 @@
     invoke-static {v9, v3, v9, v1, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 441
-    iget-object v10, v7, Ldefpackage/re;->a:[I
+    iget-object v10, v7, Lre;->a:[I
 
     .line 442
     .local v10, "iArr7":[I
@@ -2469,7 +2469,7 @@
     invoke-static {v10, v12, v11, v6}, Ljava/util/Arrays;->fill([IIII)V
 
     .line 444
-    iget-object v6, v7, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v6, v7, Lre;->b:Ljava/util/List;
 
     .line 445
     .local v6, "list3":Ljava/util/List;
@@ -2487,17 +2487,17 @@
     if-ltz v12, :cond_c
 
     .line 447
-    iget-object v13, v7, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v13, v7, Lre;->b:Ljava/util/List;
 
     invoke-interface {v13, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v13
 
-    check-cast v13, Ldefpackage/rd;
+    check-cast v13, Lrd;
 
     .line 448
-    .local v13, "rdVar3":Ldefpackage/rd;
-    iget v14, v13, Ldefpackage/rd;->a:I
+    .local v13, "rdVar3":Lrd;
+    iget v14, v13, Lrd;->a:I
 
     .line 449
     .local v14, "i9":I
@@ -2507,7 +2507,7 @@
     if-ge v14, v3, :cond_a
 
     .line 451
-    iget-object v15, v7, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v15, v7, Lre;->b:Ljava/util/List;
 
     invoke-interface {v15, v12}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -2517,10 +2517,10 @@
     :cond_a
     sub-int v15, v14, p2
 
-    iput v15, v13, Ldefpackage/rd;->a:I
+    iput v15, v13, Lrd;->a:I
 
     .line 446
-    .end local v13    # "rdVar3":Ldefpackage/rd;
+    .end local v13    # "rdVar3":Lrd;
     .end local v14    # "i9":I
     :cond_b
     :goto_8
@@ -2535,17 +2535,17 @@
 
     .line 414
     .end local v6    # "list3":Ljava/util/List;
-    .end local v7    # "reVar3":Ldefpackage/re;
+    .end local v7    # "reVar3":Lre;
     .end local v8    # "iArr5":[I
     .end local v9    # "iArr6":[I
     .end local v10    # "iArr7":[I
     .end local v11    # "length2":I
     :pswitch_1
-    iget-object v7, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v7, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
     .line 415
-    .local v7, "reVar2":Ldefpackage/re;
-    iget-object v8, v7, Ldefpackage/re;->a:[I
+    .local v7, "reVar2":Lre;
+    iget-object v8, v7, Lre;->a:[I
 
     .line 416
     .local v8, "iArr3":[I
@@ -2556,10 +2556,10 @@
     if-ge v1, v9, :cond_f
 
     .line 417
-    invoke-virtual {v7, v3}, Ldefpackage/re;->b(I)V
+    invoke-virtual {v7, v3}, Lre;->b(I)V
 
     .line 418
-    iget-object v9, v7, Ldefpackage/re;->a:[I
+    iget-object v9, v7, Lre;->a:[I
 
     .line 419
     .local v9, "iArr4":[I
@@ -2572,12 +2572,12 @@
     invoke-static {v9, v1, v9, v3, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 420
-    iget-object v10, v7, Ldefpackage/re;->a:[I
+    iget-object v10, v7, Lre;->a:[I
 
     invoke-static {v10, v1, v3, v6}, Ljava/util/Arrays;->fill([IIII)V
 
     .line 421
-    iget-object v6, v7, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v6, v7, Lre;->b:Ljava/util/List;
 
     .line 422
     .local v6, "list2":Ljava/util/List;
@@ -2595,17 +2595,17 @@
     if-ltz v10, :cond_e
 
     .line 424
-    iget-object v11, v7, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v11, v7, Lre;->b:Ljava/util/List;
 
     invoke-interface {v11, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v11
 
-    check-cast v11, Ldefpackage/rd;
+    check-cast v11, Lrd;
 
     .line 425
-    .local v11, "rdVar2":Ldefpackage/rd;
-    iget v12, v11, Ldefpackage/rd;->a:I
+    .local v11, "rdVar2":Lrd;
+    iget v12, v11, Lrd;->a:I
 
     .line 426
     .local v12, "i8":I
@@ -2614,10 +2614,10 @@
     .line 427
     add-int v13, v12, p2
 
-    iput v13, v11, Ldefpackage/rd;->a:I
+    iput v13, v11, Lrd;->a:I
 
     .line 423
-    .end local v11    # "rdVar2":Ldefpackage/rd;
+    .end local v11    # "rdVar2":Lrd;
     .end local v12    # "i8":I
     :cond_d
     add-int/lit8 v10, v10, -0x1
@@ -2631,7 +2631,7 @@
 
     .line 462
     .end local v6    # "list2":Ljava/util/List;
-    .end local v7    # "reVar2":Ldefpackage/re;
+    .end local v7    # "reVar2":Lre;
     .end local v8    # "iArr3":[I
     .end local v9    # "iArr4":[I
     :cond_f
@@ -2680,10 +2680,10 @@
     .end packed-switch
 .end method
 
-.method private final bs(Ldefpackage/qi;Ldefpackage/qp;Z)V
+.method private final bs(Lqi;Lqp;Z)V
     .locals 2
-    .param p1, "r12"    # Ldefpackage/qi;
-    .param p2, "r13"    # Ldefpackage/qp;
+    .param p1, "r12"    # Lqi;
+    .param p2, "r13"    # Lqp;
     .param p3, "r14"    # Z
 
     .line 483
@@ -2696,17 +2696,17 @@
     throw v0
 .end method
 
-.method private final bt(Ldefpackage/qi;Ldefpackage/oz;)V
+.method private final bt(Lqi;Loz;)V
     .locals 6
-    .param p1, "qiVar"    # Ldefpackage/qi;
-    .param p2, "ozVar"    # Ldefpackage/oz;
+    .param p1, "qiVar"    # Lqi;
+    .param p2, "ozVar"    # Loz;
 
     .line 487
-    iget-boolean v0, p2, Ldefpackage/oz;->a:Z
+    iget-boolean v0, p2, Loz;->a:Z
 
     if-eqz v0, :cond_a
 
-    iget-boolean v0, p2, Ldefpackage/oz;->i:Z
+    iget-boolean v0, p2, Loz;->i:Z
 
     if-eqz v0, :cond_0
 
@@ -2714,30 +2714,30 @@
 
     .line 490
     :cond_0
-    iget v0, p2, Ldefpackage/oz;->b:I
+    iget v0, p2, Loz;->b:I
 
     const/4 v1, -0x1
 
     if-nez v0, :cond_2
 
     .line 491
-    iget v0, p2, Ldefpackage/oz;->e:I
+    iget v0, p2, Loz;->e:I
 
     if-ne v0, v1, :cond_1
 
     .line 492
-    iget v0, p2, Ldefpackage/oz;->g:I
+    iget v0, p2, Loz;->g:I
 
-    invoke-direct {p0, p1, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bu(Ldefpackage/qi;I)V
+    invoke-direct {p0, p1, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bu(Lqi;I)V
 
     .line 493
     return-void
 
     .line 495
     :cond_1
-    iget v0, p2, Ldefpackage/oz;->f:I
+    iget v0, p2, Loz;->f:I
 
-    invoke-direct {p0, p1, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bv(Ldefpackage/qi;I)V
+    invoke-direct {p0, p1, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bv(Lqi;I)V
 
     .line 496
     return-void
@@ -2748,22 +2748,22 @@
 
     .line 500
     .local v0, "i":I
-    iget v2, p2, Ldefpackage/oz;->e:I
+    iget v2, p2, Loz;->e:I
 
     const/4 v3, 0x0
 
     if-ne v2, v1, :cond_6
 
     .line 501
-    iget v1, p2, Ldefpackage/oz;->f:I
+    iget v1, p2, Loz;->f:I
 
     .line 502
     .local v1, "i2":I
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v2, v2, v3
 
-    invoke-virtual {v2, v1}, Ldefpackage/rg;->f(I)I
+    invoke-virtual {v2, v1}, Lrg;->f(I)I
 
     move-result v2
 
@@ -2775,11 +2775,11 @@
     if-ge v0, v3, :cond_4
 
     .line 504
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v3, v3, v0
 
-    invoke-virtual {v3, v1}, Ldefpackage/rg;->f(I)I
+    invoke-virtual {v3, v1}, Lrg;->f(I)I
 
     move-result v3
 
@@ -2806,14 +2806,14 @@
 
     .line 511
     .local v3, "i3":I
-    iget v4, p2, Ldefpackage/oz;->g:I
+    iget v4, p2, Loz;->g:I
 
     if-gez v3, :cond_5
 
     goto :goto_1
 
     :cond_5
-    iget v5, p2, Ldefpackage/oz;->b:I
+    iget v5, p2, Loz;->b:I
 
     invoke-static {v3, v5}, Ljava/lang/Math;->min(II)I
 
@@ -2822,7 +2822,7 @@
     sub-int/2addr v4, v5
 
     :goto_1
-    invoke-direct {p0, p1, v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bu(Ldefpackage/qi;I)V
+    invoke-direct {p0, p1, v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bu(Lqi;I)V
 
     .line 512
     return-void
@@ -2832,15 +2832,15 @@
     .end local v2    # "f":I
     .end local v3    # "i3":I
     :cond_6
-    iget v1, p2, Ldefpackage/oz;->g:I
+    iget v1, p2, Loz;->g:I
 
     .line 515
     .local v1, "i4":I
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v2, v2, v3
 
-    invoke-virtual {v2, v1}, Ldefpackage/rg;->d(I)I
+    invoke-virtual {v2, v1}, Lrg;->d(I)I
 
     move-result v2
 
@@ -2852,11 +2852,11 @@
     if-ge v0, v3, :cond_8
 
     .line 517
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v3, v3, v0
 
-    invoke-virtual {v3, v1}, Ldefpackage/rg;->d(I)I
+    invoke-virtual {v3, v1}, Lrg;->d(I)I
 
     move-result v3
 
@@ -2879,7 +2879,7 @@
 
     .line 523
     :cond_8
-    iget v3, p2, Ldefpackage/oz;->g:I
+    iget v3, p2, Loz;->g:I
 
     sub-int v3, v2, v3
 
@@ -2887,23 +2887,23 @@
     .local v3, "i5":I
     if-gez v3, :cond_9
 
-    iget v4, p2, Ldefpackage/oz;->f:I
+    iget v4, p2, Loz;->f:I
 
     goto :goto_3
 
     :cond_9
-    iget v4, p2, Ldefpackage/oz;->b:I
+    iget v4, p2, Loz;->b:I
 
     invoke-static {v3, v4}, Ljava/lang/Math;->min(II)I
 
     move-result v4
 
-    iget v5, p2, Ldefpackage/oz;->f:I
+    iget v5, p2, Loz;->f:I
 
     add-int/2addr v4, v5
 
     :goto_3
-    invoke-direct {p0, p1, v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bv(Ldefpackage/qi;I)V
+    invoke-direct {p0, p1, v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bv(Lqi;I)V
 
     .line 525
     return-void
@@ -2918,9 +2918,9 @@
     return-void
 .end method
 
-.method private final bu(Ldefpackage/qi;I)V
+.method private final bu(Lqi;I)V
     .locals 11
-    .param p1, "qiVar"    # Ldefpackage/qi;
+    .param p1, "qiVar"    # Lqi;
     .param p2, "i"    # I
 
     .line 528
@@ -2943,17 +2943,17 @@
 
     .line 530
     .local v2, "au":Landroid/view/View;
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v3, v2}, Ldefpackage/pq;->d(Landroid/view/View;)I
+    invoke-virtual {v3, v2}, Lpq;->d(Landroid/view/View;)I
 
     move-result v3
 
     if-lt v3, p2, :cond_5
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v3, v2}, Ldefpackage/pq;->m(Landroid/view/View;)I
+    invoke-virtual {v3, v2}, Lpq;->m(Landroid/view/View;)I
 
     move-result v3
 
@@ -2967,17 +2967,17 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/rc;
+    check-cast v3, Lrc;
 
     .line 534
-    .local v3, "rcVar":Ldefpackage/rc;
-    iget-boolean v4, v3, Ldefpackage/rc;->b:Z
+    .local v3, "rcVar":Lrc;
+    iget-boolean v4, v3, Lrc;->b:Z
 
     .line 535
     .local v4, "z":Z
-    iget-object v5, v3, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iget-object v5, v3, Lrc;->a:Lrg;
 
-    iget-object v5, v5, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v5, v5, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -2990,11 +2990,11 @@
 
     .line 538
     :cond_1
-    iget-object v5, v3, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iget-object v5, v3, Lrc;->a:Lrg;
 
     .line 539
-    .local v5, "rgVar":Ldefpackage/rg;
-    iget-object v6, v5, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    .local v5, "rgVar":Lrg;
+    iget-object v6, v5, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -3002,7 +3002,7 @@
 
     .line 540
     .local v6, "size":I
-    iget-object v7, v5, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v7, v5, Lrg;->a:Ljava/util/ArrayList;
 
     add-int/lit8 v8, v6, -0x1
 
@@ -3014,15 +3014,15 @@
 
     .line 541
     .local v7, "view":Landroid/view/View;
-    invoke-static {v7}, Ldefpackage/rg;->n(Landroid/view/View;)Ldefpackage/rc;
+    invoke-static {v7}, Lrg;->n(Landroid/view/View;)Lrc;
 
     move-result-object v8
 
     .line 542
-    .local v8, "n":Ldefpackage/rc;
+    .local v8, "n":Lrc;
     const/4 v9, 0x0
 
-    iput-object v9, v8, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iput-object v9, v8, Lrc;->a:Lrg;
 
     .line 543
     invoke-virtual {v8}, Landroid/view/qd;->c()Z
@@ -3039,19 +3039,19 @@
 
     .line 544
     :cond_2
-    iget v9, v5, Ldefpackage/rg;->d:I
+    iget v9, v5, Lrg;->d:I
 
-    iget-object v10, v5, Ldefpackage/rg;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager;
+    iget-object v10, v5, Lrg;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager;
 
-    iget-object v10, v10, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v10, v10, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v10, v7}, Ldefpackage/pq;->b(Landroid/view/View;)I
+    invoke-virtual {v10, v7}, Lpq;->b(Landroid/view/View;)I
 
     move-result v10
 
     sub-int/2addr v9, v10
 
-    iput v9, v5, Ldefpackage/rg;->d:I
+    iput v9, v5, Lrg;->d:I
 
     .line 546
     :cond_3
@@ -3060,23 +3060,23 @@
     if-ne v6, v1, :cond_4
 
     .line 547
-    iput v9, v5, Ldefpackage/rg;->b:I
+    iput v9, v5, Lrg;->b:I
 
     .line 549
     :cond_4
-    iput v9, v5, Ldefpackage/rg;->c:I
+    iput v9, v5, Lrg;->c:I
 
     .line 550
-    invoke-virtual {p0, v2, p1}, Landroid/view/qc;->aK(Landroid/view/View;Ldefpackage/qi;)V
+    invoke-virtual {p0, v2, p1}, Landroid/view/qc;->aK(Landroid/view/View;Lqi;)V
 
     .line 528
     .end local v2    # "au":Landroid/view/View;
-    .end local v3    # "rcVar":Ldefpackage/rc;
+    .end local v3    # "rcVar":Lrc;
     .end local v4    # "z":Z
-    .end local v5    # "rgVar":Ldefpackage/rg;
+    .end local v5    # "rgVar":Lrg;
     .end local v6    # "size":I
     .end local v7    # "view":Landroid/view/View;
-    .end local v8    # "n":Ldefpackage/rc;
+    .end local v8    # "n":Lrc;
     add-int/lit8 v0, v0, -0x1
 
     goto :goto_0
@@ -3094,9 +3094,9 @@
     return-void
 .end method
 
-.method private final bv(Ldefpackage/qi;I)V
+.method private final bv(Lqi;I)V
     .locals 9
-    .param p1, "qiVar"    # Ldefpackage/qi;
+    .param p1, "qiVar"    # Lqi;
     .param p2, "i"    # I
 
     .line 555
@@ -3116,17 +3116,17 @@
 
     .line 557
     .local v1, "au":Landroid/view/View;
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v2, v1}, Ldefpackage/pq;->a(Landroid/view/View;)I
+    invoke-virtual {v2, v1}, Lpq;->a(Landroid/view/View;)I
 
     move-result v2
 
     if-gt v2, p2, :cond_5
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v2, v1}, Ldefpackage/pq;->l(Landroid/view/View;)I
+    invoke-virtual {v2, v1}, Lpq;->l(Landroid/view/View;)I
 
     move-result v2
 
@@ -3140,17 +3140,17 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/rc;
+    check-cast v2, Lrc;
 
     .line 561
-    .local v2, "rcVar":Ldefpackage/rc;
-    iget-boolean v3, v2, Ldefpackage/rc;->b:Z
+    .local v2, "rcVar":Lrc;
+    iget-boolean v3, v2, Lrc;->b:Z
 
     .line 562
     .local v3, "z":Z
-    iget-object v4, v2, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iget-object v4, v2, Lrc;->a:Lrg;
 
-    iget-object v4, v4, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v4, v4, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -3165,11 +3165,11 @@
 
     .line 565
     :cond_1
-    iget-object v4, v2, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iget-object v4, v2, Lrc;->a:Lrg;
 
     .line 566
-    .local v4, "rgVar":Ldefpackage/rg;
-    iget-object v5, v4, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    .local v4, "rgVar":Lrg;
+    iget-object v5, v4, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -3179,18 +3179,18 @@
 
     .line 567
     .local v0, "view":Landroid/view/View;
-    invoke-static {v0}, Ldefpackage/rg;->n(Landroid/view/View;)Ldefpackage/rc;
+    invoke-static {v0}, Lrg;->n(Landroid/view/View;)Lrc;
 
     move-result-object v5
 
     .line 568
-    .local v5, "n":Ldefpackage/rc;
+    .local v5, "n":Lrc;
     const/4 v6, 0x0
 
-    iput-object v6, v5, Ldefpackage/rc;->a:Ldefpackage/rg;
+    iput-object v6, v5, Lrc;->a:Lrg;
 
     .line 569
-    iget-object v6, v4, Ldefpackage/rg;->a:Ljava/util/ArrayList;
+    iget-object v6, v4, Lrg;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -3201,7 +3201,7 @@
     if-nez v6, :cond_2
 
     .line 570
-    iput v7, v4, Ldefpackage/rg;->c:I
+    iput v7, v4, Lrg;->c:I
 
     .line 572
     :cond_2
@@ -3219,34 +3219,34 @@
 
     .line 573
     :cond_3
-    iget v6, v4, Ldefpackage/rg;->d:I
+    iget v6, v4, Lrg;->d:I
 
-    iget-object v8, v4, Ldefpackage/rg;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager;
+    iget-object v8, v4, Lrg;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager;
 
-    iget-object v8, v8, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v8, v8, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v8, v0}, Ldefpackage/pq;->b(Landroid/view/View;)I
+    invoke-virtual {v8, v0}, Lpq;->b(Landroid/view/View;)I
 
     move-result v8
 
     sub-int/2addr v6, v8
 
-    iput v6, v4, Ldefpackage/rg;->d:I
+    iput v6, v4, Lrg;->d:I
 
     .line 575
     :cond_4
-    iput v7, v4, Ldefpackage/rg;->b:I
+    iput v7, v4, Lrg;->b:I
 
     .line 576
-    invoke-virtual {p0, v1, p1}, Landroid/view/qc;->aK(Landroid/view/View;Ldefpackage/qi;)V
+    invoke-virtual {p0, v1, p1}, Landroid/view/qc;->aK(Landroid/view/View;Lqi;)V
 
     .line 577
     .end local v0    # "view":Landroid/view/View;
     .end local v1    # "au":Landroid/view/View;
-    .end local v2    # "rcVar":Ldefpackage/rc;
+    .end local v2    # "rcVar":Lrc;
     .end local v3    # "z":Z
-    .end local v4    # "rgVar":Ldefpackage/rg;
-    .end local v5    # "n":Ldefpackage/rc;
+    .end local v4    # "rgVar":Lrg;
+    .end local v5    # "n":Lrc;
     goto :goto_0
 
     .line 558
@@ -3307,11 +3307,11 @@
     .param p1, "i"    # I
 
     .line 585
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     .line 586
-    .local v0, "ozVar":Ldefpackage/oz;
-    iput p1, v0, Ldefpackage/oz;->e:I
+    .local v0, "ozVar":Loz;
+    iput p1, v0, Loz;->e:I
 
     .line 587
     const/4 v1, 0x1
@@ -3339,32 +3339,32 @@
 
     .line 591
     :cond_1
-    iput v1, v0, Ldefpackage/oz;->d:I
+    iput v1, v0, Loz;->d:I
 
     .line 592
     return-void
 .end method
 
-.method private final by(ILdefpackage/qp;)V
+.method private final by(ILqp;)V
     .locals 9
     .param p1, "i"    # I
-    .param p2, "qpVar"    # Ldefpackage/qp;
+    .param p2, "qpVar"    # Lqp;
 
     .line 598
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     .line 599
-    .local v0, "ozVar":Ldefpackage/oz;
+    .local v0, "ozVar":Loz;
     const/4 v1, 0x0
 
     .line 600
     .local v1, "z":Z
     const/4 v2, 0x0
 
-    iput v2, v0, Ldefpackage/oz;->b:I
+    iput v2, v0, Loz;->b:I
 
     .line 601
-    iput p1, v0, Ldefpackage/oz;->c:I
+    iput p1, v0, Loz;->c:I
 
     .line 602
     invoke-virtual {p0}, Landroid/view/qc;->aV()Z
@@ -3375,7 +3375,7 @@
 
     if-eqz v3, :cond_3
 
-    iget v3, p2, Ldefpackage/qp;->a:I
+    iget v3, p2, Lqp;->a:I
 
     move v5, v3
 
@@ -3403,9 +3403,9 @@
     if-ne v3, v6, :cond_2
 
     .line 607
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v3}, Ldefpackage/pq;->k()I
+    invoke-virtual {v3}, Lpq;->k()I
 
     move-result v3
 
@@ -3420,9 +3420,9 @@
     .end local v3    # "i2":I
     .end local v6    # "i3":I
     :cond_2
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v3}, Ldefpackage/pq;->k()I
+    invoke-virtual {v3}, Lpq;->k()I
 
     move-result v6
 
@@ -3462,78 +3462,78 @@
 
     .line 619
     :cond_4
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v8}, Ldefpackage/pq;->j()I
+    invoke-virtual {v8}, Lpq;->j()I
 
     move-result v8
 
     sub-int/2addr v8, v6
 
-    iput v8, v7, Ldefpackage/oz;->f:I
+    iput v8, v7, Loz;->f:I
 
     .line 620
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v8}, Ldefpackage/pq;->f()I
+    invoke-virtual {v8}, Lpq;->f()I
 
     move-result v8
 
     add-int/2addr v8, v3
 
-    iput v8, v7, Ldefpackage/oz;->g:I
+    iput v8, v7, Loz;->g:I
 
     goto :goto_4
 
     .line 616
     :cond_5
     :goto_3
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v8}, Ldefpackage/pq;->e()I
+    invoke-virtual {v8}, Lpq;->e()I
 
     move-result v8
 
     add-int/2addr v8, v3
 
-    iput v8, v7, Ldefpackage/oz;->g:I
+    iput v8, v7, Loz;->g:I
 
     .line 617
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     neg-int v8, v6
 
-    iput v8, v7, Ldefpackage/oz;->f:I
+    iput v8, v7, Loz;->f:I
 
     .line 622
     :goto_4
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     .line 623
-    .local v7, "ozVar2":Ldefpackage/oz;
-    iput-boolean v2, v7, Ldefpackage/oz;->h:Z
+    .local v7, "ozVar2":Loz;
+    iput-boolean v2, v7, Loz;->h:Z
 
     .line 624
-    iput-boolean v4, v7, Ldefpackage/oz;->a:Z
+    iput-boolean v4, v7, Loz;->a:Z
 
     .line 625
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v2}, Ldefpackage/pq;->h()I
+    invoke-virtual {v2}, Lpq;->h()I
 
     move-result v2
 
     if-nez v2, :cond_6
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v2}, Ldefpackage/pq;->e()I
+    invoke-virtual {v2}, Lpq;->e()I
 
     move-result v2
 
@@ -3544,20 +3544,20 @@
 
     .line 628
     :cond_6
-    iput-boolean v1, v7, Ldefpackage/oz;->i:Z
+    iput-boolean v1, v7, Loz;->i:Z
 
     .line 629
     return-void
 .end method
 
-.method private final bz(Ldefpackage/rg;II)V
+.method private final bz(Lrg;II)V
     .locals 4
-    .param p1, "rgVar"    # Ldefpackage/rg;
+    .param p1, "rgVar"    # Lrg;
     .param p2, "i"    # I
     .param p3, "i2"    # I
 
     .line 632
-    iget v0, p1, Ldefpackage/rg;->d:I
+    iget v0, p1, Lrg;->d:I
 
     .line 633
     .local v0, "i3":I
@@ -3568,7 +3568,7 @@
     if-ne p2, v2, :cond_1
 
     .line 634
-    invoke-virtual {p1}, Ldefpackage/rg;->e()I
+    invoke-virtual {p1}, Lrg;->e()I
 
     move-result v2
 
@@ -3583,7 +3583,7 @@
     :cond_0
     iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->m:Ljava/util/BitSet;
 
-    iget v3, p1, Ldefpackage/rg;->e:I
+    iget v3, p1, Lrg;->e:I
 
     invoke-virtual {v2, v3, v1}, Ljava/util/BitSet;->set(IZ)V
 
@@ -3591,7 +3591,7 @@
 
     .line 638
     :cond_1
-    invoke-virtual {p1}, Ldefpackage/rg;->c()I
+    invoke-virtual {p1}, Lrg;->c()I
 
     move-result v2
 
@@ -3605,7 +3605,7 @@
     :cond_2
     iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->m:Ljava/util/BitSet;
 
-    iget v3, p1, Ldefpackage/rg;->e:I
+    iget v3, p1, Lrg;->e:I
 
     invoke-virtual {v2, v3, v1}, Ljava/util/BitSet;->set(IZ)V
 
@@ -3616,58 +3616,58 @@
 
 
 # virtual methods
-.method public final A(Ldefpackage/qp;)I
+.method public final A(Lqp;)I
     .locals 1
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 646
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->T(Ldefpackage/qp;)I
+    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->T(Lqp;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final B(Ldefpackage/qp;)I
+.method public final B(Lqp;)I
     .locals 1
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 651
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->O(Ldefpackage/qp;)I
+    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->O(Lqp;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final C(Ldefpackage/qp;)I
+.method public final C(Lqp;)I
     .locals 1
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 656
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->S(Ldefpackage/qp;)I
+    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->S(Lqp;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final D(Ldefpackage/qp;)I
+.method public final D(Lqp;)I
     .locals 1
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 661
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->T(Ldefpackage/qp;)I
+    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->T(Lqp;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final E(ILdefpackage/qp;)V
+.method public final E(ILqp;)V
     .locals 4
     .param p1, "i"    # I
-    .param p2, "qpVar"    # Ldefpackage/qp;
+    .param p2, "qpVar"    # Lqp;
 
     .line 667
     if-lez p1, :cond_0
@@ -3699,35 +3699,35 @@
     .line 674
     .restart local v1    # "i2":I
     :goto_0
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     const/4 v3, 0x1
 
-    iput-boolean v3, v2, Ldefpackage/oz;->a:Z
+    iput-boolean v3, v2, Loz;->a:Z
 
     .line 675
-    invoke-direct {p0, v0, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->by(ILdefpackage/qp;)V
+    invoke-direct {p0, v0, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->by(ILqp;)V
 
     .line 676
     invoke-direct {p0, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bx(I)V
 
     .line 677
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     .line 678
-    .local v2, "ozVar":Ldefpackage/oz;
-    iget v3, v2, Ldefpackage/oz;->d:I
+    .local v2, "ozVar":Loz;
+    iget v3, v2, Loz;->d:I
 
     add-int/2addr v3, v0
 
-    iput v3, v2, Ldefpackage/oz;->c:I
+    iput v3, v2, Loz;->c:I
 
     .line 679
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
     move-result v3
 
-    iput v3, v2, Ldefpackage/oz;->b:I
+    iput v3, v2, Loz;->b:I
 
     .line 680
     return-void
@@ -3743,18 +3743,18 @@
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->M(Ljava/lang/String;)V
 
     .line 684
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Ldefpackage/rf;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Lrf;
 
     .line 685
-    .local v0, "rfVar":Ldefpackage/rf;
+    .local v0, "rfVar":Lrf;
     if-eqz v0, :cond_0
 
-    iget-boolean v1, v0, Ldefpackage/rf;->h:Z
+    iget-boolean v1, v0, Lrf;->h:Z
 
     if-eq v1, p1, :cond_0
 
     .line 686
-    iput-boolean p1, v0, Ldefpackage/rf;->h:Z
+    iput-boolean p1, v0, Lrf;->h:Z
 
     .line 688
     :cond_0
@@ -3779,9 +3779,9 @@
     iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:I
 
     .line 694
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Ldefpackage/pq;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Lpq;
 
-    invoke-virtual {v0}, Ldefpackage/pq;->h()I
+    invoke-virtual {v0}, Lpq;->h()I
 
     move-result v0
 
@@ -3855,9 +3855,9 @@
 
     .line 712
     :cond_2
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
-    invoke-virtual {v1}, Ldefpackage/re;->a()V
+    invoke-virtual {v1}, Lre;->a()V
 
     .line 713
     const/4 v1, 0x1
@@ -3944,51 +3944,51 @@
     .locals 9
 
     .line 739
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Ldefpackage/rf;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Lrf;
 
     .line 740
-    .local v0, "rfVar":Ldefpackage/rf;
+    .local v0, "rfVar":Lrf;
     if-eqz v0, :cond_0
 
     .line 741
-    new-instance v1, Ldefpackage/rf;
+    new-instance v1, Lrf;
 
-    invoke-direct {v1, v0}, Ldefpackage/rf;-><init>(Ldefpackage/rf;)V
+    invoke-direct {v1, v0}, Lrf;-><init>(Lrf;)V
 
     return-object v1
 
     .line 743
     :cond_0
-    new-instance v1, Ldefpackage/rf;
+    new-instance v1, Lrf;
 
-    invoke-direct {v1}, Ldefpackage/rf;-><init>()V
+    invoke-direct {v1}, Lrf;-><init>()V
 
     .line 744
-    .local v1, "rfVar2":Ldefpackage/rf;
+    .local v1, "rfVar2":Lrf;
     iget-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:Z
 
-    iput-boolean v2, v1, Ldefpackage/rf;->h:Z
+    iput-boolean v2, v1, Lrf;->h:Z
 
     .line 745
     iget-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->o:Z
 
-    iput-boolean v2, v1, Ldefpackage/rf;->i:Z
+    iput-boolean v2, v1, Lrf;->i:Z
 
     .line 746
     iget-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->E:Z
 
-    iput-boolean v2, v1, Ldefpackage/rf;->j:Z
+    iput-boolean v2, v1, Lrf;->j:Z
 
     .line 747
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
     .line 748
-    .local v2, "reVar":Ldefpackage/re;
+    .local v2, "reVar":Lre;
     const/4 v3, 0x0
 
     if-eqz v2, :cond_2
 
-    iget-object v4, v2, Ldefpackage/re;->a:[I
+    iget-object v4, v2, Lre;->a:[I
 
     move-object v5, v4
 
@@ -3999,17 +3999,17 @@
 
     .line 751
     :cond_1
-    iput-object v5, v1, Ldefpackage/rf;->f:[I
+    iput-object v5, v1, Lrf;->f:[I
 
     .line 752
     array-length v4, v5
 
-    iput v4, v1, Ldefpackage/rf;->e:I
+    iput v4, v1, Lrf;->e:I
 
     .line 753
-    iget-object v4, v2, Ldefpackage/re;->b:Ljava/util/List;
+    iget-object v4, v2, Lre;->b:Ljava/util/List;
 
-    iput-object v4, v1, Ldefpackage/rf;->g:Ljava/util/List;
+    iput-object v4, v1, Lrf;->g:Ljava/util/List;
 
     goto :goto_1
 
@@ -4017,7 +4017,7 @@
     .end local v5    # "iArr":[I
     :cond_2
     :goto_0
-    iput v3, v1, Ldefpackage/rf;->e:I
+    iput v3, v1, Lrf;->e:I
 
     .line 755
     :goto_1
@@ -4048,7 +4048,7 @@
     move-result v3
 
     :goto_2
-    iput v3, v1, Ldefpackage/rf;->a:I
+    iput v3, v1, Lrf;->a:I
 
     .line 758
     iget-boolean v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:Z
@@ -4080,19 +4080,19 @@
 
     .line 762
     :cond_5
-    iput v4, v1, Ldefpackage/rf;->b:I
+    iput v4, v1, Lrf;->b:I
 
     .line 763
     iget v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->i:I
 
     .line 764
     .local v5, "i2":I
-    iput v5, v1, Ldefpackage/rf;->c:I
+    iput v5, v1, Lrf;->c:I
 
     .line 765
     new-array v6, v5, [I
 
-    iput-object v6, v1, Ldefpackage/rf;->d:[I
+    iput-object v6, v1, Lrf;->d:[I
 
     .line 766
     const/4 v6, 0x0
@@ -4111,11 +4111,11 @@
     if-eqz v7, :cond_6
 
     .line 768
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v7, v7, v6
 
-    invoke-virtual {v7, v8}, Ldefpackage/rg;->d(I)I
+    invoke-virtual {v7, v8}, Lrg;->d(I)I
 
     move-result v7
 
@@ -4124,9 +4124,9 @@
     if-eq v7, v8, :cond_7
 
     .line 770
-    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v8}, Ldefpackage/pq;->f()I
+    invoke-virtual {v8}, Lpq;->f()I
 
     move-result v8
 
@@ -4137,11 +4137,11 @@
     .line 773
     .end local v7    # "f":I
     :cond_6
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v7, v7, v6
 
-    invoke-virtual {v7, v8}, Ldefpackage/rg;->f(I)I
+    invoke-virtual {v7, v8}, Lrg;->f(I)I
 
     move-result v7
 
@@ -4150,9 +4150,9 @@
     if-eq v7, v8, :cond_7
 
     .line 775
-    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v8}, Ldefpackage/pq;->j()I
+    invoke-virtual {v8}, Lpq;->j()I
 
     move-result v8
 
@@ -4161,7 +4161,7 @@
     .line 778
     :cond_7
     :goto_5
-    iget-object v8, v1, Ldefpackage/rf;->d:[I
+    iget-object v8, v1, Lrf;->d:[I
 
     aput v7, v8, v6
 
@@ -4182,13 +4182,13 @@
     :cond_9
     const/4 v5, -0x1
 
-    iput v5, v1, Ldefpackage/rf;->a:I
+    iput v5, v1, Lrf;->a:I
 
     .line 782
-    iput v5, v1, Ldefpackage/rf;->b:I
+    iput v5, v1, Lrf;->b:I
 
     .line 783
-    iput v3, v1, Ldefpackage/rf;->c:I
+    iput v3, v1, Lrf;->c:I
 
     .line 785
     :goto_6
@@ -4221,7 +4221,7 @@
     .param p1, "str"    # Ljava/lang/String;
 
     .line 794
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Ldefpackage/rf;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Lrf;
 
     if-nez v0, :cond_0
 
@@ -4322,18 +4322,18 @@
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
     .line 822
-    instance-of v0, p1, Ldefpackage/rf;
+    instance-of v0, p1, Lrf;
 
     if-eqz v0, :cond_1
 
     .line 823
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/rf;
+    check-cast v0, Lrf;
 
     .line 824
-    .local v0, "rfVar":Ldefpackage/rf;
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Ldefpackage/rf;
+    .local v0, "rfVar":Lrf;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Lrf;
 
     .line 825
     iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:I
@@ -4343,19 +4343,19 @@
     if-eq v1, v2, :cond_0
 
     .line 826
-    invoke-virtual {v0}, Ldefpackage/rf;->a()V
+    invoke-virtual {v0}, Lrf;->a()V
 
     .line 827
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Ldefpackage/rf;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Lrf;
 
-    invoke-virtual {v1}, Ldefpackage/rf;->b()V
+    invoke-virtual {v1}, Lrf;->b()V
 
     .line 829
     :cond_0
     invoke-virtual {p0}, Landroid/view/qc;->aN()V
 
     .line 831
-    .end local v0    # "rfVar":Ldefpackage/rf;
+    .end local v0    # "rfVar":Lrf;
     :cond_1
     return-void
 .end method
@@ -4365,18 +4365,18 @@
     .param p1, "i"    # I
 
     .line 835
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Ldefpackage/rf;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Lrf;
 
     .line 836
-    .local v0, "rfVar":Ldefpackage/rf;
+    .local v0, "rfVar":Lrf;
     if-eqz v0, :cond_0
 
-    iget v1, v0, Ldefpackage/rf;->a:I
+    iget v1, v0, Lrf;->a:I
 
     if-eq v1, p1, :cond_0
 
     .line 837
-    invoke-virtual {v0}, Ldefpackage/rf;->a()V
+    invoke-virtual {v0}, Lrf;->a()V
 
     .line 839
     :cond_0
@@ -4468,11 +4468,11 @@
     if-ge v0, v1, :cond_0
 
     .line 863
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1, p1}, Ldefpackage/rg;->k(I)V
+    invoke-virtual {v1, p1}, Lrg;->k(I)V
 
     .line 862
     add-int/lit8 v0, v0, 0x1
@@ -4502,11 +4502,11 @@
     if-ge v0, v1, :cond_0
 
     .line 871
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1, p1}, Ldefpackage/rg;->k(I)V
+    invoke-virtual {v1, p1}, Lrg;->k(I)V
 
     .line 870
     add-int/lit8 v0, v0, 0x1
@@ -4534,12 +4534,12 @@
     return-void
 .end method
 
-.method public final aa(IILdefpackage/qp;Ldefpackage/ou;)V
+.method public final aa(IILqp;Lou;)V
     .locals 7
     .param p1, "i"    # I
     .param p2, "i2"    # I
-    .param p3, "qpVar"    # Ldefpackage/qp;
-    .param p4, "ouVar"    # Ldefpackage/ou;
+    .param p3, "qpVar"    # Lqp;
+    .param p4, "ouVar"    # Lou;
 
     .line 887
     iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->j:I
@@ -4565,7 +4565,7 @@
 
     .line 893
     :cond_1
-    invoke-virtual {p0, p1, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->E(ILdefpackage/qp;)V
+    invoke-virtual {p0, p1, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->E(ILqp;)V
 
     .line 894
     iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->J:[I
@@ -4619,26 +4619,26 @@
     if-ge v1, v3, :cond_6
 
     .line 904
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     .line 905
-    .local v3, "ozVar":Ldefpackage/oz;
-    iget v4, v3, Ldefpackage/oz;->d:I
+    .local v3, "ozVar":Loz;
+    iget v4, v3, Loz;->d:I
 
     const/4 v5, -0x1
 
     if-ne v4, v5, :cond_4
 
     .line 906
-    iget v4, v3, Ldefpackage/oz;->f:I
+    iget v4, v3, Loz;->f:I
 
     .line 907
     .local v4, "i5":I
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v5, v5, v1
 
-    invoke-virtual {v5, v4}, Ldefpackage/rg;->f(I)I
+    invoke-virtual {v5, v4}, Lrg;->f(I)I
 
     move-result v5
 
@@ -4651,19 +4651,19 @@
     .line 909
     .end local v4    # "d":I
     :cond_4
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v4, v4, v1
 
-    iget v5, v3, Ldefpackage/oz;->g:I
+    iget v5, v3, Loz;->g:I
 
-    invoke-virtual {v4, v5}, Ldefpackage/rg;->d(I)I
+    invoke-virtual {v4, v5}, Lrg;->d(I)I
 
     move-result v4
 
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget v5, v5, Ldefpackage/oz;->g:I
+    iget v5, v5, Loz;->g:I
 
     sub-int/2addr v4, v5
 
@@ -4684,7 +4684,7 @@
     :cond_5
     nop
 
-    .end local v3    # "ozVar":Ldefpackage/oz;
+    .end local v3    # "ozVar":Loz;
     add-int/lit8 v1, v1, 0x1
 
     .line 916
@@ -4706,40 +4706,40 @@
     :goto_3
     if-ge v3, v2, :cond_7
 
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    invoke-virtual {v4, p3}, Ldefpackage/oz;->a(Ldefpackage/qp;)Z
+    invoke-virtual {v4, p3}, Loz;->a(Lqp;)Z
 
     move-result v4
 
     if-eqz v4, :cond_7
 
     .line 919
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget v4, v4, Ldefpackage/oz;->c:I
+    iget v4, v4, Loz;->c:I
 
     iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->J:[I
 
     aget v5, v5, v3
 
-    invoke-virtual {p4, v4, v5}, Ldefpackage/ou;->a(II)V
+    invoke-virtual {p4, v4, v5}, Lou;->a(II)V
 
     .line 920
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     .line 921
-    .local v4, "ozVar2":Ldefpackage/oz;
-    iget v5, v4, Ldefpackage/oz;->c:I
+    .local v4, "ozVar2":Loz;
+    iget v5, v4, Loz;->c:I
 
-    iget v6, v4, Ldefpackage/oz;->d:I
+    iget v6, v4, Loz;->d:I
 
     add-int/2addr v5, v6
 
-    iput v5, v4, Ldefpackage/oz;->c:I
+    iput v5, v4, Loz;->c:I
 
     .line 918
-    .end local v4    # "ozVar2":Ldefpackage/oz;
+    .end local v4    # "ozVar2":Loz;
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_3
@@ -4777,11 +4777,11 @@
     if-ge v0, v1, :cond_0
 
     .line 929
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1}, Ldefpackage/rg;->j()V
+    invoke-virtual {v1}, Lrg;->j()V
 
     .line 928
     add-int/lit8 v0, v0, 0x1
@@ -4803,20 +4803,20 @@
     .param p2, "i"    # I
 
     .line 936
-    new-instance v0, Ldefpackage/qo;
+    new-instance v0, Lqo;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Ldefpackage/qo;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lqo;-><init>(Landroid/content/Context;)V
 
     .line 937
-    .local v0, "qoVar":Ldefpackage/qo;
-    iput p2, v0, Ldefpackage/qo;->b:I
+    .local v0, "qoVar":Lqo;
+    iput p2, v0, Lqo;->b:I
 
     .line 938
-    invoke-virtual {p0, v0}, Landroid/view/qc;->aT(Ldefpackage/qo;)V
+    invoke-virtual {p0, v0}, Landroid/view/qc;->aT(Lqo;)V
 
     .line 939
     return-void
@@ -4826,9 +4826,9 @@
     .locals 2
 
     .line 943
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
-    invoke-virtual {v0}, Ldefpackage/re;->a()V
+    invoke-virtual {v0}, Lre;->a()V
 
     .line 944
     const/4 v0, 0x0
@@ -4840,11 +4840,11 @@
     if-ge v0, v1, :cond_0
 
     .line 945
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Ldefpackage/rg;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:[Lrg;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1}, Ldefpackage/rg;->j()V
+    invoke-virtual {v1}, Lrg;->j()V
 
     .line 944
     add-int/lit8 v0, v0, 0x1
@@ -4885,28 +4885,28 @@
     return v0
 .end method
 
-.method public final d(ILdefpackage/qi;Ldefpackage/qp;)I
+.method public final d(ILqi;Lqp;)I
     .locals 1
     .param p1, "i"    # I
-    .param p2, "qiVar"    # Ldefpackage/qi;
-    .param p3, "qpVar"    # Ldefpackage/qp;
+    .param p2, "qiVar"    # Lqi;
+    .param p3, "qpVar"    # Lqp;
 
     .line 958
-    invoke-virtual {p0, p1, p2, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(ILdefpackage/qi;Ldefpackage/qp;)I
+    invoke-virtual {p0, p1, p2, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(ILqi;Lqp;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final e(ILdefpackage/qi;Ldefpackage/qp;)I
+.method public final e(ILqi;Lqp;)I
     .locals 1
     .param p1, "i"    # I
-    .param p2, "qiVar"    # Ldefpackage/qi;
-    .param p3, "qpVar"    # Ldefpackage/qp;
+    .param p2, "qiVar"    # Lqi;
+    .param p3, "qpVar"    # Lqp;
 
     .line 963
-    invoke-virtual {p0, p1, p2, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(ILdefpackage/qi;Ldefpackage/qp;)I
+    invoke-virtual {p0, p1, p2, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(ILqi;Lqp;)I
 
     move-result v0
 
@@ -4925,16 +4925,16 @@
 
     if-nez v0, :cond_0
 
-    new-instance v0, Ldefpackage/rc;
+    new-instance v0, Lrc;
 
-    invoke-direct {v0, v1, v2}, Ldefpackage/rc;-><init>(II)V
+    invoke-direct {v0, v1, v2}, Lrc;-><init>(II)V
 
     goto :goto_0
 
     :cond_0
-    new-instance v0, Ldefpackage/rc;
+    new-instance v0, Lrc;
 
-    invoke-direct {v0, v2, v1}, Ldefpackage/rc;-><init>(II)V
+    invoke-direct {v0, v2, v1}, Lrc;-><init>(II)V
 
     :goto_0
     return-object v0
@@ -4949,20 +4949,20 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ldefpackage/rc;
+    new-instance v0, Lrc;
 
     move-object v1, p1
 
     check-cast v1, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    invoke-direct {v0, v1}, Ldefpackage/rc;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+    invoke-direct {v0, v1}, Lrc;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     goto :goto_0
 
     :cond_0
-    new-instance v0, Ldefpackage/rc;
+    new-instance v0, Lrc;
 
-    invoke-direct {v0, p1}, Ldefpackage/rc;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {v0, p1}, Lrc;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     :goto_0
     return-object v0
@@ -4974,9 +4974,9 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 978
-    new-instance v0, Ldefpackage/rc;
+    new-instance v0, Lrc;
 
-    invoke-direct {v0, p1, p2}, Ldefpackage/rc;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Lrc;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
@@ -5013,12 +5013,12 @@
     return v1
 .end method
 
-.method public final j(Landroid/view/View;ILdefpackage/qi;Ldefpackage/qp;)Landroid/view/View;
+.method public final j(Landroid/view/View;ILqi;Lqp;)Landroid/view/View;
     .locals 2
     .param p1, "r9"    # Landroid/view/View;
     .param p2, "r10"    # I
-    .param p3, "r11"    # Ldefpackage/qi;
-    .param p4, "r12"    # Ldefpackage/qp;
+    .param p3, "r11"    # Lqi;
+    .param p4, "r12"    # Lqp;
 
     .line 1020
     new-instance v0, Ljava/lang/UnsupportedOperationException;
@@ -5030,11 +5030,11 @@
     throw v0
 .end method
 
-.method public final k(ILdefpackage/qi;Ldefpackage/qp;)I
+.method public final k(ILqi;Lqp;)I
     .locals 4
     .param p1, "i"    # I
-    .param p2, "qiVar"    # Ldefpackage/qi;
-    .param p3, "qpVar"    # Ldefpackage/qp;
+    .param p2, "qiVar"    # Lqi;
+    .param p3, "qpVar"    # Lqp;
 
     .line 1024
     invoke-virtual {p0}, Landroid/view/qc;->ai()I
@@ -5051,20 +5051,20 @@
 
     .line 1027
     :cond_0
-    invoke-virtual {p0, p1, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->E(ILdefpackage/qp;)V
+    invoke-virtual {p0, p1, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->E(ILqp;)V
 
     .line 1028
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    invoke-direct {p0, p2, v0, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->X(Ldefpackage/qi;Ldefpackage/oz;Ldefpackage/qp;)I
+    invoke-direct {p0, p2, v0, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->X(Lqi;Loz;Lqp;)I
 
     move-result v0
 
     .line 1029
     .local v0, "X":I
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
-    iget v2, v2, Ldefpackage/oz;->b:I
+    iget v2, v2, Loz;->b:I
 
     if-lt v2, v0, :cond_2
 
@@ -5083,11 +5083,11 @@
 
     .line 1032
     :cond_2
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
     neg-int v3, p1
 
-    invoke-virtual {v2, v3}, Ldefpackage/pq;->n(I)V
+    invoke-virtual {v2, v3}, Lpq;->n(I)V
 
     .line 1033
     iget-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:Z
@@ -5095,21 +5095,21 @@
     iput-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->o:Z
 
     .line 1034
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Ldefpackage/oz;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:Loz;
 
     .line 1035
-    .local v2, "ozVar":Ldefpackage/oz;
-    iput v1, v2, Ldefpackage/oz;->b:I
+    .local v2, "ozVar":Loz;
+    iput v1, v2, Loz;->b:I
 
     .line 1036
-    invoke-direct {p0, p2, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bt(Ldefpackage/qi;Ldefpackage/oz;)V
+    invoke-direct {p0, p2, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bt(Lqi;Loz;)V
 
     .line 1037
     return p1
 
     .line 1025
     .end local v0    # "X":I
-    .end local v2    # "ozVar":Ldefpackage/oz;
+    .end local v2    # "ozVar":Loz;
     :cond_3
     :goto_1
     return v1
@@ -5120,17 +5120,17 @@
     .param p1, "z"    # Z
 
     .line 1041
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v0}, Ldefpackage/pq;->j()I
+    invoke-virtual {v0}, Lpq;->j()I
 
     move-result v0
 
     .line 1042
     .local v0, "j":I
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v1}, Ldefpackage/pq;->f()I
+    invoke-virtual {v1}, Lpq;->f()I
 
     move-result v1
 
@@ -5157,17 +5157,17 @@
 
     .line 1046
     .local v4, "au":Landroid/view/View;
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v5, v4}, Ldefpackage/pq;->d(Landroid/view/View;)I
+    invoke-virtual {v5, v4}, Lpq;->d(Landroid/view/View;)I
 
     move-result v5
 
     .line 1047
     .local v5, "d":I
-    iget-object v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v6, v4}, Ldefpackage/pq;->a(Landroid/view/View;)I
+    invoke-virtual {v6, v4}, Lpq;->a(Landroid/view/View;)I
 
     move-result v6
 
@@ -5214,23 +5214,23 @@
     return-object v2
 .end method
 
-.method public final n(Ldefpackage/qi;Ldefpackage/qp;)V
+.method public final n(Lqi;Lqp;)V
     .locals 1
-    .param p1, "qiVar"    # Ldefpackage/qi;
-    .param p2, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qiVar"    # Lqi;
+    .param p2, "qpVar"    # Lqp;
 
     .line 1062
     const/4 v0, 0x1
 
-    invoke-direct {p0, p1, p2, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bs(Ldefpackage/qi;Ldefpackage/qp;Z)V
+    invoke-direct {p0, p1, p2, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->bs(Lqi;Lqp;Z)V
 
     .line 1063
     return-void
 .end method
 
-.method public final o(Ldefpackage/qp;)V
+.method public final o(Lqp;)V
     .locals 1
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 1067
     const/4 v0, -0x1
@@ -5245,12 +5245,12 @@
     .line 1069
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Ldefpackage/rf;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Lrf;
 
     .line 1070
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->H:Ldefpackage/rb;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->H:Lrb;
 
-    invoke-virtual {v0}, Ldefpackage/rb;->a()V
+    invoke-virtual {v0}, Lrb;->a()V
 
     .line 1071
     return-void
@@ -5379,17 +5379,17 @@
     .param p1, "z"    # Z
 
     .line 1090
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v0}, Ldefpackage/pq;->j()I
+    invoke-virtual {v0}, Lpq;->j()I
 
     move-result v0
 
     .line 1091
     .local v0, "j":I
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v1}, Ldefpackage/pq;->f()I
+    invoke-virtual {v1}, Lpq;->f()I
 
     move-result v1
 
@@ -5418,17 +5418,17 @@
 
     .line 1096
     .local v5, "au":Landroid/view/View;
-    iget-object v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v6, v5}, Ldefpackage/pq;->d(Landroid/view/View;)I
+    invoke-virtual {v6, v5}, Lpq;->d(Landroid/view/View;)I
 
     move-result v6
 
     .line 1097
     .local v6, "d":I
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Ldefpackage/pq;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Lpq;
 
-    invoke-virtual {v7, v5}, Ldefpackage/pq;->a(Landroid/view/View;)I
+    invoke-virtual {v7, v5}, Lpq;->a(Landroid/view/View;)I
 
     move-result v7
 
@@ -5477,7 +5477,7 @@
     .param p1, "qdVar"    # Landroid/view/qd;
 
     .line 1111
-    instance-of v0, p1, Ldefpackage/rc;
+    instance-of v0, p1, Lrc;
 
     return v0
 .end method
@@ -5486,7 +5486,7 @@
     .locals 1
 
     .line 1116
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Ldefpackage/rf;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->F:Lrf;
 
     if-nez v0, :cond_0
 
@@ -5532,9 +5532,9 @@
     .locals 1
 
     .line 1144
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Ldefpackage/re;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h:Lre;
 
-    invoke-virtual {v0}, Ldefpackage/re;->a()V
+    invoke-virtual {v0}, Lre;->a()V
 
     .line 1145
     invoke-virtual {p0}, Landroid/view/qc;->aN()V
@@ -5571,24 +5571,24 @@
     return-void
 .end method
 
-.method public final y(Ldefpackage/qp;)I
+.method public final y(Lqp;)I
     .locals 1
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 1160
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->O(Ldefpackage/qp;)I
+    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->O(Lqp;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final z(Ldefpackage/qp;)I
+.method public final z(Lqp;)I
     .locals 1
-    .param p1, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qpVar"    # Lqp;
 
     .line 1165
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->S(Ldefpackage/qp;)I
+    invoke-direct {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->S(Lqp;)I
 
     move-result v0
 

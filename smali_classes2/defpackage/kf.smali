@@ -1,386 +1,107 @@
-.class public Ldefpackage/kf;
+.class public Ldefpackage/Kf;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/view/Window$Callback;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgzy;->c(Lgox;Lgog;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final b:Landroid/view/Window$Callback;
+.field public final synthetic this$0:Lgzy;
+
+.field public final synthetic val$pkeVar:Lpke;
+
+.field public final synthetic val$pkgVar:Lpkg;
+
+.field public final synthetic val$pkiVar:Lpki;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/Window$Callback;)V
-    .locals 2
-    .param p1, "callback"    # Landroid/view/Window$Callback;
+.method public constructor <init>(Lgzy;Lpke;Lpkg;Lpki;)V
+    .locals 0
+    .param p1, "this$0"    # Lgzy;
 
-    .line 21
+    .line 316
+    iput-object p1, p0, Ldefpackage/Kf;->this$0:Lgzy;
+
+    iput-object p2, p0, Ldefpackage/Kf;->val$pkeVar:Lpke;
+
+    iput-object p3, p0, Ldefpackage/Kf;->val$pkgVar:Lpkg;
+
+    iput-object p4, p0, Ldefpackage/Kf;->val$pkiVar:Lpki;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
-    if-eqz p1, :cond_0
-
-    .line 23
-    iput-object p1, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    .line 24
     return-void
-
-    .line 26
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const-string v1, "Window callback may not be null"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 
 # virtual methods
-.method public final dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
-    .locals 1
-    .param p1, "motionEvent"    # Landroid/view/MotionEvent;
+.method public final run()V
+    .locals 14
 
-    .line 31
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
+    .line 319
+    iget-object v0, p0, Ldefpackage/Kf;->val$pkeVar:Lpke;
 
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
+    .line 320
+    .local v0, "pkeVar2":Lpke;
+    iget-object v1, p0, Ldefpackage/Kf;->val$pkgVar:Lpkg;
 
-    move-result v0
+    .line 321
+    .local v1, "pkgVar2":Lpkg;
+    iget-object v2, p0, Ldefpackage/Kf;->val$pkiVar:Lpki;
 
-    return v0
-.end method
+    .line 322
+    .local v2, "pkiVar2":Lpki;
+    new-instance v3, Lcom/google/googlex/gcam/ShotParams;
 
-.method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-    .locals 1
-    .param p1, "keyEvent"    # Landroid/view/KeyEvent;
+    invoke-direct {v3}, Lcom/google/googlex/gcam/ShotParams;-><init>()V
 
-    .line 36
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
+    .line 323
+    .local v3, "shotParams":Lcom/google/googlex/gcam/ShotParams;
+    iget-object v4, v1, Lpkg;->a:Llic;
 
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    iget v4, v4, Llic;->e:I
 
-    move-result v0
+    invoke-static {v4}, Lcom/google/googlex/gcam/GcamModuleJNI;->DegreesToImageRotation(I)I
 
-    return v0
-.end method
+    move-result v4
 
-.method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
-    .locals 1
-    .param p1, "keyEvent"    # Landroid/view/KeyEvent;
+    invoke-virtual {v3, v4}, Lcom/google/googlex/gcam/ShotParams;->d(I)V
 
-    .line 41
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
+    .line 324
+    const/4 v4, 0x1
 
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
+    invoke-virtual {v3, v4}, Lcom/google/googlex/gcam/ShotParams;->e(Z)V
 
-    move-result v0
+    .line 325
+    iget-object v5, v0, Lpke;->a:Lpjw;
 
-    return v0
-.end method
+    iget-wide v6, v0, Lpke;->i:J
 
-.method public final dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
-    .locals 1
-    .param p1, "accessibilityEvent"    # Landroid/view/accessibility/AccessibilityEvent;
+    iget-wide v8, v3, Lcom/google/googlex/gcam/ShotParams;->a:J
 
-    .line 46
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
+    iget-object v11, v2, Lpki;->a:Ljava/lang/Runnable;
 
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
+    iget-object v12, v2, Lpki;->b:Ljava/lang/Runnable;
 
-    move-result v0
+    iget-object v13, v2, Lpki;->c:Ljava/lang/Runnable;
 
-    return v0
-.end method
+    const-string v10, ""
 
-.method public final dispatchTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 1
-    .param p1, "motionEvent"    # Landroid/view/MotionEvent;
+    invoke-interface/range {v5 .. v13}, Lpjw;->startCapture(JJLjava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 
-    .line 51
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
-    .locals 1
-    .param p1, "motionEvent"    # Landroid/view/MotionEvent;
-
-    .line 56
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final onActionModeFinished(Landroid/view/ActionMode;)V
-    .locals 1
-    .param p1, "actionMode"    # Landroid/view/ActionMode;
-
-    .line 61
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onActionModeFinished(Landroid/view/ActionMode;)V
-
-    .line 62
+    .line 326
     return-void
-.end method
-
-.method public final onActionModeStarted(Landroid/view/ActionMode;)V
-    .locals 1
-    .param p1, "actionMode"    # Landroid/view/ActionMode;
-
-    .line 66
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onActionModeStarted(Landroid/view/ActionMode;)V
-
-    .line 67
-    return-void
-.end method
-
-.method public final onAttachedToWindow()V
-    .locals 1
-
-    .line 71
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0}, Landroid/view/Window$Callback;->onAttachedToWindow()V
-
-    .line 72
-    return-void
-.end method
-
-.method public onContentChanged()V
-    .locals 1
-
-    .line 76
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0}, Landroid/view/Window$Callback;->onContentChanged()V
-
-    .line 77
-    return-void
-.end method
-
-.method public onCreatePanelMenu(ILandroid/view/Menu;)Z
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "menu"    # Landroid/view/Menu;
-
-    .line 81
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onCreatePanelMenu(ILandroid/view/Menu;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public onCreatePanelView(I)Landroid/view/View;
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 86
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onCreatePanelView(I)Landroid/view/View;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final onDetachedFromWindow()V
-    .locals 1
-
-    .line 91
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0}, Landroid/view/Window$Callback;->onDetachedFromWindow()V
-
-    .line 92
-    return-void
-.end method
-
-.method public final onMenuItemSelected(ILandroid/view/MenuItem;)Z
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "menuItem"    # Landroid/view/MenuItem;
-
-    .line 96
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onMenuItemSelected(ILandroid/view/MenuItem;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public onMenuOpened(ILandroid/view/Menu;)Z
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "menu"    # Landroid/view/Menu;
-
-    .line 101
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onMenuOpened(ILandroid/view/Menu;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public onPanelClosed(ILandroid/view/Menu;)V
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "menu"    # Landroid/view/Menu;
-
-    .line 106
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onPanelClosed(ILandroid/view/Menu;)V
-
-    .line 107
-    return-void
-.end method
-
-.method public final onPointerCaptureChanged(Z)V
-    .locals 1
-    .param p1, "z"    # Z
-
-    .line 111
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onPointerCaptureChanged(Z)V
-
-    .line 112
-    return-void
-.end method
-
-.method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "menu"    # Landroid/view/Menu;
-
-    .line 116
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1, p2, p3}, Landroid/view/Window$Callback;->onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
-    .locals 1
-    .param p1, "list"    # Ljava/util/List;
-    .param p2, "menu"    # Landroid/view/Menu;
-    .param p3, "i"    # I
-
-    .line 121
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1, p2, p3}, Landroid/view/Window$Callback;->onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
-
-    .line 122
-    return-void
-.end method
-
-.method public final onSearchRequested()Z
-    .locals 1
-
-    .line 126
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0}, Landroid/view/Window$Callback;->onSearchRequested()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final onSearchRequested(Landroid/view/SearchEvent;)Z
-    .locals 1
-    .param p1, "searchEvent"    # Landroid/view/SearchEvent;
-
-    .line 131
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onSearchRequested(Landroid/view/SearchEvent;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
-    .locals 1
-    .param p1, "layoutParams"    # Landroid/view/WindowManager$LayoutParams;
-
-    .line 136
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
-
-    .line 137
-    return-void
-.end method
-
-.method public final onWindowFocusChanged(Z)V
-    .locals 1
-    .param p1, "z"    # Z
-
-    .line 141
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onWindowFocusChanged(Z)V
-
-    .line 142
-    return-void
-.end method
-
-.method public onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
-    .locals 1
-    .param p1, "callback"    # Landroid/view/ActionMode$Callback;
-
-    .line 146
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1}, Landroid/view/Window$Callback;->onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public onWindowStartingActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
-    .locals 1
-    .param p1, "callback"    # Landroid/view/ActionMode$Callback;
-    .param p2, "i"    # I
-
-    .line 151
-    iget-object v0, p0, Ldefpackage/kf;->b:Landroid/view/Window$Callback;
-
-    invoke-interface {v0, p1, p2}, Landroid/view/Window$Callback;->onWindowStartingActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
-
-    move-result-object v0
-
-    return-object v0
 .end method

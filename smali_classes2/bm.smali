@@ -1,0 +1,51 @@
+.class public final Lbm;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnDismissListener;
+
+
+# instance fields
+.field public final a:Lbp;
+
+
+# direct methods
+.method public constructor <init>(Lbp;)V
+    .locals 0
+    .param p1, "bpVar"    # Lbp;
+
+    .line 12
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 13
+    iput-object p1, p0, Lbm;->a:Lbp;
+
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onDismiss(Landroid/content/DialogInterface;)V
+    .locals 2
+    .param p1, "dialogInterface"    # Landroid/content/DialogInterface;
+
+    .line 18
+    iget-object v0, p0, Lbm;->a:Lbp;
+
+    .line 19
+    .local v0, "bpVar":Lbp;
+    iget-object v1, v0, Lbp;->c:Landroid/app/Dialog;
+
+    .line 20
+    .local v1, "dialog":Landroid/app/Dialog;
+    if-eqz v1, :cond_0
+
+    .line 21
+    invoke-virtual {v0, v1}, Lbp;->onDismiss(Landroid/content/DialogInterface;)V
+
+    .line 23
+    :cond_0
+    return-void
+.end method

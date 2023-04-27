@@ -1,5 +1,5 @@
 .class public Lcom/google/android/apps/camera/debug/shottracker/db/DbDebugDumper;
-.super Ldefpackage/dgu;
+.super Ldgu;
 .source ""
 
 
@@ -35,7 +35,7 @@
     .locals 0
 
     .line 31
-    invoke-direct {p0}, Ldefpackage/dgu;-><init>()V
+    invoke-direct {p0}, Ldgu;-><init>()V
 
     return-void
 .end method
@@ -81,11 +81,11 @@
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/diz;
+    check-cast v7, Ldiz;
 
     .line 45
-    .local v7, "dizVar":Ldefpackage/diz;
-    iget-wide v8, v7, Ldefpackage/diz;->b:J
+    .local v7, "dizVar":Ldiz;
+    iget-wide v8, v7, Ldiz;->b:J
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -97,14 +97,14 @@
 
     move-result-object v8
 
-    check-cast v8, Ldefpackage/dit;
+    check-cast v8, Ldit;
 
     .line 46
-    .local v8, "ditVar":Ldefpackage/dit;
+    .local v8, "ditVar":Ldit;
     if-eqz v8, :cond_4
 
     .line 47
-    iget-wide v10, v7, Ldefpackage/diz;->b:J
+    iget-wide v10, v7, Ldiz;->b:J
 
     cmp-long v10, v10, v4
 
@@ -125,19 +125,19 @@
 
     .line 52
     :cond_0
-    iget-wide v10, v8, Ldefpackage/dit;->a:J
+    iget-wide v10, v8, Ldit;->a:J
 
     .line 53
     .local v10, "j3":J
-    iget-object v12, v8, Ldefpackage/dit;->i:Ljava/lang/String;
+    iget-object v12, v8, Ldit;->i:Ljava/lang/String;
 
     .line 54
     .local v12, "str":Ljava/lang/String;
-    iget-wide v13, v8, Ldefpackage/dit;->j:J
+    iget-wide v13, v8, Ldit;->j:J
 
     .line 55
     .local v13, "j4":J
-    iget-object v15, v8, Ldefpackage/dit;->b:Ljava/lang/String;
+    iget-object v15, v8, Ldit;->b:Ljava/lang/String;
 
     .line 56
     .local v15, "str2":Ljava/lang/String;
@@ -145,7 +145,7 @@
 
     .end local v2    # "j":J
     .local v16, "j":J
-    iget-object v2, v8, Ldefpackage/dit;->h:Ljava/lang/String;
+    iget-object v2, v8, Ldit;->h:Ljava/lang/String;
 
     .line 57
     .local v2, "str3":Ljava/lang/String;
@@ -153,7 +153,7 @@
 
     .end local v4    # "j2":J
     .local v18, "j2":J
-    iget-wide v3, v8, Ldefpackage/dit;->c:J
+    iget-wide v3, v8, Ldit;->c:J
 
     .line 58
     .local v3, "j5":J
@@ -161,7 +161,7 @@
 
     .end local v6    # "instant":Ljava/time/Instant;
     .local v20, "instant":Ljava/time/Instant;
-    iget-wide v5, v8, Ldefpackage/dit;->d:J
+    iget-wide v5, v8, Ldit;->d:J
 
     .line 59
     .local v5, "j6":J
@@ -169,7 +169,7 @@
 
     .end local v5    # "j6":J
     .local v21, "j6":J
-    iget-wide v5, v8, Ldefpackage/dit;->e:J
+    iget-wide v5, v8, Ldit;->e:J
 
     .line 60
     .local v5, "j7":J
@@ -177,7 +177,7 @@
 
     .end local v5    # "j7":J
     .local v23, "j7":J
-    iget-wide v5, v8, Ldefpackage/dit;->f:J
+    iget-wide v5, v8, Ldit;->f:J
 
     .line 61
     .local v5, "j8":J
@@ -185,11 +185,11 @@
 
     .end local v5    # "j8":J
     .local v25, "j8":J
-    iget-wide v5, v8, Ldefpackage/dit;->g:J
+    iget-wide v5, v8, Ldit;->g:J
 
     .line 62
     .local v5, "j9":J
-    iget-boolean v9, v8, Ldefpackage/dit;->l:Z
+    iget-boolean v9, v8, Ldit;->l:Z
 
     .line 63
     .local v9, "z":Z
@@ -199,8 +199,8 @@
     .local v27, "it":Ljava/util/Iterator;
     move-object/from16 v28, v8
 
-    .end local v8    # "ditVar":Ldefpackage/dit;
-    .local v28, "ditVar":Ldefpackage/dit;
+    .end local v8    # "ditVar":Ldit;
+    .local v28, "ditVar":Ldit;
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-static {v12}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -209,8 +209,8 @@
 
     move-object/from16 v30, v7
 
-    .end local v7    # "dizVar":Ldefpackage/diz;
-    .local v30, "dizVar":Ldefpackage/diz;
+    .end local v7    # "dizVar":Ldiz;
+    .local v30, "dizVar":Ldiz;
     invoke-virtual/range {v29 .. v29}, Ljava/lang/String;->length()I
 
     move-result v7
@@ -385,12 +385,12 @@
     .end local v16    # "j":J
     .end local v18    # "j2":J
     .end local v27    # "it":Ljava/util/Iterator;
-    .end local v28    # "ditVar":Ldefpackage/dit;
-    .end local v30    # "dizVar":Ldefpackage/diz;
+    .end local v28    # "ditVar":Ldit;
+    .end local v30    # "dizVar":Ldiz;
     .local v2, "j":J
     .local v4, "j2":J
-    .local v7, "dizVar":Ldefpackage/diz;
-    .local v8, "ditVar":Ldefpackage/dit;
+    .local v7, "dizVar":Ldiz;
+    .local v8, "ditVar":Ldit;
     :cond_1
     move-wide/from16 v16, v2
 
@@ -405,13 +405,13 @@
     .end local v2    # "j":J
     .end local v4    # "j2":J
     .end local v6    # "instant":Ljava/time/Instant;
-    .end local v7    # "dizVar":Ldefpackage/diz;
-    .end local v8    # "ditVar":Ldefpackage/dit;
+    .end local v7    # "dizVar":Ldiz;
+    .end local v8    # "ditVar":Ldit;
     .restart local v16    # "j":J
     .restart local v18    # "j2":J
     .restart local v20    # "instant":Ljava/time/Instant;
-    .restart local v28    # "ditVar":Ldefpackage/dit;
-    .restart local v30    # "dizVar":Ldefpackage/diz;
+    .restart local v28    # "ditVar":Ldit;
+    .restart local v30    # "dizVar":Ldiz;
     move-object/from16 v27, v1
 
     .line 91
@@ -425,9 +425,9 @@
     :goto_1
     move-object/from16 v2, v30
 
-    .end local v30    # "dizVar":Ldefpackage/diz;
-    .local v2, "dizVar":Ldefpackage/diz;
-    iget-wide v7, v2, Ldefpackage/diz;->c:J
+    .end local v30    # "dizVar":Ldiz;
+    .local v2, "dizVar":Ldiz;
+    iget-wide v7, v2, Ldiz;->c:J
 
     invoke-static {v7, v8}, Ljava/time/Instant;->ofEpochMilli(J)Ljava/time/Instant;
 
@@ -449,7 +449,7 @@
     .line 95
     .local v5, "between":Ljava/time/Duration;
     :goto_2
-    iget-wide v7, v2, Ldefpackage/diz;->c:J
+    iget-wide v7, v2, Ldiz;->c:J
 
     .line 96
     .local v7, "j10":J
@@ -532,7 +532,7 @@
     .line 105
     .restart local v12    # "format":Ljava/lang/String;
     :goto_3
-    iget-object v13, v2, Ldefpackage/diz;->d:Ljava/lang/String;
+    iget-object v13, v2, Ldiz;->d:Ljava/lang/String;
 
     .line 106
     .local v13, "str4":Ljava/lang/String;
@@ -612,7 +612,7 @@
     .end local v1    # "it2":Ljava/util/Iterator;
     .local v15, "printWriter3":Ljava/io/PrintWriter;
     .local v21, "it2":Ljava/util/Iterator;
-    iget-wide v0, v2, Ldefpackage/diz;->b:J
+    iget-wide v0, v2, Ldiz;->b:J
 
     .line 116
     .end local v18    # "j2":J
@@ -654,13 +654,13 @@
     .end local v15    # "printWriter3":Ljava/io/PrintWriter;
     .end local v18    # "it2":Ljava/util/Iterator;
     .end local v27    # "it":Ljava/util/Iterator;
-    .end local v28    # "ditVar":Ldefpackage/dit;
+    .end local v28    # "ditVar":Ldit;
     .local v0, "printWriter3":Ljava/io/PrintWriter;
     .restart local v1    # "it2":Ljava/util/Iterator;
     .local v2, "j":J
     .local v4, "j2":J
-    .local v7, "dizVar":Ldefpackage/diz;
-    .restart local v8    # "ditVar":Ldefpackage/dit;
+    .local v7, "dizVar":Ldiz;
+    .restart local v8    # "ditVar":Ldit;
     :cond_4
     move-object v15, v0
 
@@ -681,15 +681,15 @@
     .end local v1    # "it2":Ljava/util/Iterator;
     .end local v4    # "j2":J
     .end local v6    # "instant":Ljava/time/Instant;
-    .end local v7    # "dizVar":Ldefpackage/diz;
-    .end local v8    # "ditVar":Ldefpackage/dit;
-    .local v2, "dizVar":Ldefpackage/diz;
+    .end local v7    # "dizVar":Ldiz;
+    .end local v8    # "ditVar":Ldit;
+    .local v2, "dizVar":Ldiz;
     .restart local v15    # "printWriter3":Ljava/io/PrintWriter;
     .restart local v16    # "j":J
     .local v18, "j2":J
     .restart local v20    # "instant":Ljava/time/Instant;
     .restart local v21    # "it2":Ljava/util/Iterator;
-    .restart local v28    # "ditVar":Ldefpackage/dit;
+    .restart local v28    # "ditVar":Ldit;
     const-wide v0, 0x7fffffffffffffffL
 
     move-wide v2, v0
@@ -704,7 +704,7 @@
     .end local v18    # "j2":J
     .end local v20    # "instant":Ljava/time/Instant;
     .end local v21    # "it2":Ljava/util/Iterator;
-    .end local v28    # "ditVar":Ldefpackage/dit;
+    .end local v28    # "ditVar":Ldit;
     .restart local v0    # "printWriter3":Ljava/io/PrintWriter;
     .restart local v1    # "it2":Ljava/util/Iterator;
     .local v2, "j":J
@@ -749,16 +749,16 @@
 
     const-string v6, "shot_db"
 
-    invoke-static {v4, v5, v6}, Ldefpackage/fw;->i(Landroid/content/Context;Ljava/lang/Class;Ljava/lang/String;)Ldefpackage/aig;
+    invoke-static {v4, v5, v6}, Lfw;->i(Landroid/content/Context;Ljava/lang/Class;Ljava/lang/String;)Laig;
 
     move-result-object v5
 
     .line 134
-    .local v5, "i":Ldefpackage/aig;
-    invoke-virtual {v5}, Ldefpackage/aig;->c()V
+    .local v5, "i":Laig;
+    invoke-virtual {v5}, Laig;->c()V
 
     .line 135
-    invoke-virtual {v5}, Ldefpackage/aig;->a()Ldefpackage/aii;
+    invoke-virtual {v5}, Laig;->a()Laii;
 
     move-result-object v6
 
@@ -766,43 +766,43 @@
 
     .line 136
     .local v6, "shotDatabase":Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;
-    invoke-virtual {v6}, Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;->r()Ldefpackage/dil;
+    invoke-virtual {v6}, Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;->r()Ldil;
 
     move-result-object v7
 
     .line 137
-    .local v7, "r":Ldefpackage/dil;
+    .local v7, "r":Ldil;
     const-string v8, "SELECT * FROM shots ORDER BY shot_id"
 
     const/4 v9, 0x0
 
-    invoke-static {v8, v9}, Ldefpackage/ais;->a(Ljava/lang/String;I)Ldefpackage/ais;
+    invoke-static {v8, v9}, Lais;->a(Ljava/lang/String;I)Lais;
 
     move-result-object v8
 
     .line 138
-    .local v8, "a2":Ldefpackage/ais;
+    .local v8, "a2":Lais;
     move-object v10, v7
 
-    check-cast v10, Ldefpackage/dir;
+    check-cast v10, Ldir;
 
     .line 139
-    .local v10, "dirVar":Ldefpackage/dir;
-    iget-object v11, v10, Ldefpackage/dir;->a:Ldefpackage/aii;
+    .local v10, "dirVar":Ldir;
+    iget-object v11, v10, Ldir;->a:Laii;
 
-    invoke-virtual {v11}, Ldefpackage/aii;->g()V
+    invoke-virtual {v11}, Laii;->g()V
 
     .line 140
-    iget-object v11, v10, Ldefpackage/dir;->a:Ldefpackage/aii;
+    iget-object v11, v10, Ldir;->a:Laii;
 
-    invoke-static {v11, v8, v9}, Ldefpackage/fy;->i(Ldefpackage/aii;Ldefpackage/ajw;Z)Landroid/database/Cursor;
+    invoke-static {v11, v8, v9}, Lfy;->i(Laii;Lajw;Z)Landroid/database/Cursor;
 
     move-result-object v11
 
     .line 142
     .local v11, "i2":Landroid/database/Cursor;
     :try_start_0
-    invoke-static {v11, v3}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v3}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v12
 
@@ -810,7 +810,7 @@
     .local v12, "l":I
     const-string v13, "title"
 
-    invoke-static {v11, v13}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v13}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v13
 
@@ -818,7 +818,7 @@
     .local v13, "l2":I
     const-string v14, "start_millis"
 
-    invoke-static {v11, v14}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v14}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v14
 
@@ -826,7 +826,7 @@
     .local v14, "l3":I
     const-string v15, "persisted_millis"
 
-    invoke-static {v11, v15}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v15}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v15
 
@@ -834,7 +834,7 @@
     .local v15, "l4":I
     const-string v9, "canceled_millis"
 
-    invoke-static {v11, v9}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v9}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v9
     :try_end_0
@@ -849,7 +849,7 @@
     :try_start_1
     const-string v4, "deleted_millis"
 
-    invoke-static {v11, v4}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v4}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v4
     :try_end_1
@@ -859,12 +859,12 @@
     .local v4, "l6":I
     move-object/from16 v18, v5
 
-    .end local v5    # "i":Ldefpackage/aig;
-    .local v18, "i":Ldefpackage/aig;
+    .end local v5    # "i":Laig;
+    .local v18, "i":Laig;
     :try_start_2
     const-string v5, "most_recent_event_millis"
 
-    invoke-static {v11, v5}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v5}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v5
     :try_end_2
@@ -874,12 +874,12 @@
     .local v5, "l7":I
     move-object/from16 v19, v7
 
-    .end local v7    # "r":Ldefpackage/dil;
-    .local v19, "r":Ldefpackage/dil;
+    .end local v7    # "r":Ldil;
+    .local v19, "r":Ldil;
     :try_start_3
     const-string v7, "capture_session_type"
 
-    invoke-static {v11, v7}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v7}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v7
     :try_end_3
@@ -889,12 +889,12 @@
     .local v7, "l8":I
     move-object/from16 v20, v8
 
-    .end local v8    # "a2":Ldefpackage/ais;
-    .local v20, "a2":Ldefpackage/ais;
+    .end local v8    # "a2":Lais;
+    .local v20, "a2":Lais;
     :try_start_4
     const-string v8, "capture_session_shot_id"
 
-    invoke-static {v11, v8}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v8}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v8
     :try_end_4
@@ -904,12 +904,12 @@
     .local v8, "l9":I
     move-object/from16 v21, v10
 
-    .end local v10    # "dirVar":Ldefpackage/dir;
-    .local v21, "dirVar":Ldefpackage/dir;
+    .end local v10    # "dirVar":Ldir;
+    .local v21, "dirVar":Ldir;
     :try_start_5
     const-string v10, "pid"
 
-    invoke-static {v11, v10}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v10}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v10
 
@@ -921,7 +921,7 @@
     .local v22, "l10":I
     const-string v10, "stuck"
 
-    invoke-static {v11, v10}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v10}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v10
 
@@ -933,7 +933,7 @@
     .local v23, "l11":I
     const-string v10, "failed"
 
-    invoke-static {v11, v10}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v11, v10}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v10
 
@@ -967,7 +967,7 @@
     move-object/from16 v23, v20
 
     .line 157
-    .local v23, "aisVar":Ldefpackage/ais;
+    .local v23, "aisVar":Lais;
     invoke-interface {v11}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v26
@@ -988,15 +988,15 @@
     invoke-interface {v11}, Landroid/database/Cursor;->close()V
 
     .line 198
-    invoke-virtual/range {v23 .. v23}, Ldefpackage/ais;->j()V
+    invoke-virtual/range {v23 .. v23}, Lais;->j()V
 
     .line 199
-    invoke-virtual {v6}, Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;->s()Ldefpackage/diu;
+    invoke-virtual {v6}, Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;->s()Ldiu;
 
     move-result-object v26
 
     .line 200
-    .local v26, "s":Ldefpackage/diu;
+    .local v26, "s":Ldiu;
     const-string v7, "SELECT * FROM shot_log ORDER BY shot_id DESC, sequence"
 
     move/from16 v29, v5
@@ -1005,38 +1005,38 @@
 
     .end local v5    # "l7":I
     .local v29, "l7":I
-    invoke-static {v7, v5}, Ldefpackage/ais;->a(Ljava/lang/String;I)Ldefpackage/ais;
+    invoke-static {v7, v5}, Lais;->a(Ljava/lang/String;I)Lais;
 
     move-result-object v7
 
     move-object v5, v7
 
     .line 201
-    .local v5, "a3":Ldefpackage/ais;
+    .local v5, "a3":Lais;
     move-object/from16 v7, v26
 
-    check-cast v7, Ldefpackage/diy;
+    check-cast v7, Ldiy;
 
     .line 202
-    .local v7, "diyVar":Ldefpackage/diy;
+    .local v7, "diyVar":Ldiy;
     move/from16 v30, v4
 
     .end local v4    # "l6":I
     .local v30, "l6":I
-    iget-object v4, v7, Ldefpackage/diy;->a:Ldefpackage/aii;
+    iget-object v4, v7, Ldiy;->a:Laii;
 
-    invoke-virtual {v4}, Ldefpackage/aii;->g()V
+    invoke-virtual {v4}, Laii;->g()V
 
     .line 203
-    iget-object v4, v7, Ldefpackage/diy;->a:Ldefpackage/aii;
+    iget-object v4, v7, Ldiy;->a:Laii;
 
     move-object/from16 v31, v7
 
     const/4 v7, 0x0
 
-    .end local v7    # "diyVar":Ldefpackage/diy;
-    .local v31, "diyVar":Ldefpackage/diy;
-    invoke-static {v4, v5, v7}, Ldefpackage/fy;->i(Ldefpackage/aii;Ldefpackage/ajw;Z)Landroid/database/Cursor;
+    .end local v7    # "diyVar":Ldiy;
+    .local v31, "diyVar":Ldiy;
+    invoke-static {v4, v5, v7}, Lfy;->i(Laii;Lajw;Z)Landroid/database/Cursor;
 
     move-result-object v4
     :try_end_6
@@ -1047,13 +1047,13 @@
     :try_start_7
     const-string v7, "sequence"
 
-    invoke-static {v4, v7}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v4, v7}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v7
 
     .line 206
     .local v7, "l13":I
-    invoke-static {v4, v3}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v4, v3}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v3
     :try_end_7
@@ -1068,7 +1068,7 @@
     :try_start_8
     const-string v9, "time_millis"
 
-    invoke-static {v4, v9}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v4, v9}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v9
     :try_end_8
@@ -1083,7 +1083,7 @@
     :try_start_9
     const-string v15, "message"
 
-    invoke-static {v4, v15}, Ldefpackage/fy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
+    invoke-static {v4, v15}, Lfy;->l(Landroid/database/Cursor;Ljava/lang/String;)I
 
     move-result v15
     :try_end_9
@@ -1123,14 +1123,14 @@
     if-eqz v14, :cond_1
 
     .line 211
-    new-instance v14, Ldefpackage/diz;
+    new-instance v14, Ldiz;
 
-    invoke-direct {v14}, Ldefpackage/diz;-><init>()V
+    invoke-direct {v14}, Ldiz;-><init>()V
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_3
 
     .line 212
-    .local v14, "dizVar":Ldefpackage/diz;
+    .local v14, "dizVar":Ldiz;
     move-object/from16 v35, v11
 
     .end local v11    # "i2":Landroid/database/Cursor;
@@ -1140,7 +1140,7 @@
 
     move-result v11
 
-    iput v11, v14, Ldefpackage/diz;->a:I
+    iput v11, v14, Ldiz;->a:I
     :try_end_c
     .catchall {:try_start_c .. :try_end_c} :catchall_0
 
@@ -1154,14 +1154,14 @@
 
     move-result-wide v11
 
-    iput-wide v11, v14, Ldefpackage/diz;->b:J
+    iput-wide v11, v14, Ldiz;->b:J
 
     .line 214
     invoke-interface {v4, v9}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v11
 
-    iput-wide v11, v14, Ldefpackage/diz;->c:J
+    iput-wide v11, v14, Ldiz;->c:J
 
     .line 215
     invoke-interface {v4, v15}, Landroid/database/Cursor;->isNull(I)Z
@@ -1173,7 +1173,7 @@
     .line 216
     const/4 v11, 0x0
 
-    iput-object v11, v14, Ldefpackage/diz;->d:Ljava/lang/String;
+    iput-object v11, v14, Ldiz;->d:Ljava/lang/String;
 
     goto :goto_2
 
@@ -1183,7 +1183,7 @@
 
     move-result-object v11
 
-    iput-object v11, v14, Ldefpackage/diz;->d:Ljava/lang/String;
+    iput-object v11, v14, Ldiz;->d:Ljava/lang/String;
 
     .line 220
     :goto_2
@@ -1194,7 +1194,7 @@
 
     move/from16 v12, v36
 
-    .end local v14    # "dizVar":Ldefpackage/diz;
+    .end local v14    # "dizVar":Ldiz;
     goto :goto_1
 
     .line 272
@@ -1236,7 +1236,7 @@
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
     .line 223
-    invoke-virtual {v5}, Ldefpackage/ais;->j()V
+    invoke-virtual {v5}, Lais;->j()V
 
     .line 224
     new-instance v11, Ljava/util/HashMap;
@@ -1266,12 +1266,12 @@
 
     move-result-object v28
 
-    check-cast v28, Ldefpackage/dit;
+    check-cast v28, Ldit;
 
     move-object/from16 v37, v28
 
     .line 227
-    .local v37, "ditVar2":Ldefpackage/dit;
+    .local v37, "ditVar2":Ldit;
     move/from16 v38, v3
 
     move-object/from16 v3, v37
@@ -1279,10 +1279,10 @@
     move/from16 v37, v7
 
     .end local v7    # "l13":I
-    .local v3, "ditVar2":Ldefpackage/dit;
+    .local v3, "ditVar2":Ldit;
     .local v37, "l13":I
     .local v38, "l14":I
-    iget-boolean v7, v3, Ldefpackage/dit;->l:Z
+    iget-boolean v7, v3, Ldit;->l:Z
 
     if-nez v7, :cond_3
 
@@ -1292,7 +1292,7 @@
 
     .end local v15    # "l16":I
     .local v7, "l16":I
-    iget-wide v14, v3, Ldefpackage/dit;->d:J
+    iget-wide v14, v3, Ldit;->d:J
 
     const-wide/16 v39, 0x0
 
@@ -1300,13 +1300,13 @@
 
     if-nez v14, :cond_2
 
-    iget-wide v14, v3, Ldefpackage/dit;->e:J
+    iget-wide v14, v3, Ldit;->e:J
 
     cmp-long v14, v14, v39
 
     if-nez v14, :cond_2
 
-    iget-wide v14, v3, Ldefpackage/dit;->f:J
+    iget-wide v14, v3, Ldit;->f:J
 
     cmp-long v14, v14, v39
 
@@ -1316,7 +1316,7 @@
 
     .line 230
     :cond_2
-    iget-wide v14, v3, Ldefpackage/dit;->a:J
+    iget-wide v14, v3, Ldit;->a:J
 
     invoke-static {v14, v15}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -1338,7 +1338,7 @@
     .end local v15    # "l16":I
     .restart local v7    # "l16":I
     :goto_4
-    iget-wide v14, v3, Ldefpackage/dit;->a:J
+    iget-wide v14, v3, Ldit;->a:J
 
     invoke-static {v14, v15}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -1347,7 +1347,7 @@
     invoke-virtual {v12, v14, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 232
-    .end local v3    # "ditVar2":Ldefpackage/dit;
+    .end local v3    # "ditVar2":Ldit;
     :goto_5
     move v15, v7
 
@@ -1521,7 +1521,7 @@
     invoke-virtual/range {p1 .. p1}, Ljava/io/PrintWriter;->flush()V
 
     .line 261
-    invoke-virtual {v6}, Ldefpackage/aii;->l()Z
+    invoke-virtual {v6}, Laii;->l()Z
 
     move-result v0
 
@@ -1532,7 +1532,7 @@
 
     .line 264
     :cond_7
-    iget-object v0, v6, Ldefpackage/aii;->h:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+    iget-object v0, v6, Laii;->h:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
 
@@ -1548,24 +1548,24 @@
 
     .line 267
     :try_start_e
-    iget-object v0, v6, Ldefpackage/aii;->d:Ldefpackage/aif;
+    iget-object v0, v6, Laii;->d:Laif;
 
-    iget-object v0, v0, Ldefpackage/aif;->l:Ldefpackage/fw;
+    iget-object v0, v0, Laif;->l:Lfw;
 
     .line 268
-    .local v0, "fwVar":Ldefpackage/fw;
+    .local v0, "fwVar":Lfw;
     move-object/from16 v39, v0
 
-    .end local v0    # "fwVar":Ldefpackage/fw;
-    .local v39, "fwVar":Ldefpackage/fw;
-    iget-object v0, v6, Ldefpackage/aii;->c:Ldefpackage/aju;
+    .end local v0    # "fwVar":Lfw;
+    .local v39, "fwVar":Lfw;
+    iget-object v0, v6, Laii;->c:Laju;
 
-    invoke-interface {v0}, Ldefpackage/aju;->close()V
+    invoke-interface {v0}, Laju;->close()V
     :try_end_e
     .catchall {:try_start_e .. :try_end_e} :catchall_1
 
     .line 270
-    .end local v39    # "fwVar":Ldefpackage/fw;
+    .end local v39    # "fwVar":Lfw;
     :try_start_f
     invoke-virtual {v9}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->unlock()V
 
@@ -1591,18 +1591,18 @@
 
     .line 280
     .end local v4    # "i4":Landroid/database/Cursor;
-    .end local v5    # "a3":Ldefpackage/ais;
+    .end local v5    # "a3":Lais;
     .end local v8    # "arrayList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ldefpackage/dit;>;"
     .end local v10    # "l11":I
     .end local v16    # "l5":I
     .end local v22    # "l10":I
     .end local v24    # "l12":I
     .end local v25    # "l9":I
-    .end local v26    # "s":Ldefpackage/diu;
+    .end local v26    # "s":Ldiu;
     .end local v27    # "l8":I
     .end local v29    # "l7":I
     .end local v30    # "l6":I
-    .end local v31    # "diyVar":Ldefpackage/diy;
+    .end local v31    # "diyVar":Ldiy;
     .end local v32    # "l4":I
     .end local v33    # "l3":I
     .end local v34    # "l2":I
@@ -1615,7 +1615,7 @@
     .restart local v2    # "size4":I
     .restart local v3    # "sb2":Ljava/lang/StringBuilder;
     .restart local v4    # "i4":Landroid/database/Cursor;
-    .restart local v5    # "a3":Ldefpackage/ais;
+    .restart local v5    # "a3":Lais;
     .restart local v7    # "size3":I
     .restart local v8    # "arrayList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ldefpackage/dit;>;"
     .restart local v9    # "writeLock":Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
@@ -1629,12 +1629,12 @@
     .restart local v22    # "l10":I
     .restart local v24    # "l12":I
     .restart local v25    # "l9":I
-    .restart local v26    # "s":Ldefpackage/diu;
+    .restart local v26    # "s":Ldiu;
     .restart local v27    # "l8":I
     .restart local v28    # "l16":I
     .restart local v29    # "l7":I
     .restart local v30    # "l6":I
-    .restart local v31    # "diyVar":Ldefpackage/diy;
+    .restart local v31    # "diyVar":Ldiy;
     .restart local v32    # "l4":I
     .restart local v33    # "l3":I
     .restart local v34    # "l2":I
@@ -1652,25 +1652,25 @@
     nop
 
     .end local v4    # "i4":Landroid/database/Cursor;
-    .end local v5    # "a3":Ldefpackage/ais;
+    .end local v5    # "a3":Lais;
     .end local v6    # "shotDatabase":Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;
     .end local v8    # "arrayList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ldefpackage/dit;>;"
     .end local v10    # "l11":I
     .end local v16    # "l5":I
     .end local v17    # "context":Landroid/content/Context;
-    .end local v18    # "i":Ldefpackage/aig;
-    .end local v19    # "r":Ldefpackage/dil;
-    .end local v20    # "a2":Ldefpackage/ais;
-    .end local v21    # "dirVar":Ldefpackage/dir;
+    .end local v18    # "i":Laig;
+    .end local v19    # "r":Ldil;
+    .end local v20    # "a2":Lais;
+    .end local v21    # "dirVar":Ldir;
     .end local v22    # "l10":I
-    .end local v23    # "aisVar":Ldefpackage/ais;
+    .end local v23    # "aisVar":Lais;
     .end local v24    # "l12":I
     .end local v25    # "l9":I
-    .end local v26    # "s":Ldefpackage/diu;
+    .end local v26    # "s":Ldiu;
     .end local v27    # "l8":I
     .end local v29    # "l7":I
     .end local v30    # "l6":I
-    .end local v31    # "diyVar":Ldefpackage/diy;
+    .end local v31    # "diyVar":Ldiy;
     .end local v32    # "l4":I
     .end local v33    # "l3":I
     .end local v34    # "l2":I
@@ -1698,25 +1698,25 @@
     .end local v40    # "size":I
     .end local v42    # "l15":I
     .restart local v4    # "i4":Landroid/database/Cursor;
-    .restart local v5    # "a3":Ldefpackage/ais;
+    .restart local v5    # "a3":Lais;
     .restart local v6    # "shotDatabase":Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;
     .restart local v8    # "arrayList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ldefpackage/dit;>;"
     .restart local v10    # "l11":I
     .restart local v16    # "l5":I
     .restart local v17    # "context":Landroid/content/Context;
-    .restart local v18    # "i":Ldefpackage/aig;
-    .restart local v19    # "r":Ldefpackage/dil;
-    .restart local v20    # "a2":Ldefpackage/ais;
-    .restart local v21    # "dirVar":Ldefpackage/dir;
+    .restart local v18    # "i":Laig;
+    .restart local v19    # "r":Ldil;
+    .restart local v20    # "a2":Lais;
+    .restart local v21    # "dirVar":Ldir;
     .restart local v22    # "l10":I
-    .restart local v23    # "aisVar":Ldefpackage/ais;
+    .restart local v23    # "aisVar":Lais;
     .restart local v24    # "l12":I
     .restart local v25    # "l9":I
-    .restart local v26    # "s":Ldefpackage/diu;
+    .restart local v26    # "s":Ldiu;
     .restart local v27    # "l8":I
     .restart local v29    # "l7":I
     .restart local v30    # "l6":I
-    .restart local v31    # "diyVar":Ldefpackage/diy;
+    .restart local v31    # "diyVar":Ldiy;
     .restart local v32    # "l4":I
     .restart local v33    # "l3":I
     .restart local v34    # "l2":I
@@ -1879,17 +1879,17 @@
     invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
     .line 274
-    invoke-virtual {v5}, Ldefpackage/ais;->j()V
+    invoke-virtual {v5}, Lais;->j()V
 
     .line 275
     nop
 
     .end local v6    # "shotDatabase":Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;
     .end local v17    # "context":Landroid/content/Context;
-    .end local v18    # "i":Ldefpackage/aig;
-    .end local v19    # "r":Ldefpackage/dil;
-    .end local v20    # "a2":Ldefpackage/ais;
-    .end local v21    # "dirVar":Ldefpackage/dir;
+    .end local v18    # "i":Laig;
+    .end local v19    # "r":Ldil;
+    .end local v20    # "a2":Lais;
+    .end local v21    # "dirVar":Ldir;
     .end local v35    # "i2":Landroid/database/Cursor;
     .end local p0    # "this":Lcom/google/android/apps/camera/debug/shottracker/db/DbDebugDumper;
     .end local p1    # "printWriter":Ljava/io/PrintWriter;
@@ -1900,29 +1900,29 @@
     .line 277
     .end local v0    # "th2":Ljava/lang/Throwable;
     .end local v4    # "i4":Landroid/database/Cursor;
-    .end local v5    # "a3":Ldefpackage/ais;
+    .end local v5    # "a3":Lais;
     .end local v8    # "arrayList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ldefpackage/dit;>;"
     .end local v10    # "l11":I
     .end local v16    # "l5":I
     .end local v22    # "l10":I
-    .end local v23    # "aisVar":Ldefpackage/ais;
+    .end local v23    # "aisVar":Lais;
     .end local v24    # "l12":I
     .end local v25    # "l9":I
-    .end local v26    # "s":Ldefpackage/diu;
+    .end local v26    # "s":Ldiu;
     .end local v27    # "l8":I
     .end local v29    # "l7":I
     .end local v30    # "l6":I
-    .end local v31    # "diyVar":Ldefpackage/diy;
+    .end local v31    # "diyVar":Ldiy;
     .end local v32    # "l4":I
     .end local v33    # "l3":I
     .end local v34    # "l2":I
     .end local v36    # "l":I
     .restart local v6    # "shotDatabase":Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;
     .restart local v17    # "context":Landroid/content/Context;
-    .restart local v18    # "i":Ldefpackage/aig;
-    .restart local v19    # "r":Ldefpackage/dil;
-    .restart local v20    # "a2":Ldefpackage/ais;
-    .restart local v21    # "dirVar":Ldefpackage/dir;
+    .restart local v18    # "i":Laig;
+    .restart local v19    # "r":Ldil;
+    .restart local v20    # "a2":Lais;
+    .restart local v21    # "dirVar":Ldir;
     .restart local v35    # "i2":Landroid/database/Cursor;
     .restart local p0    # "this":Lcom/google/android/apps/camera/debug/shottracker/db/DbDebugDumper;
     .restart local p1    # "printWriter":Ljava/io/PrintWriter;
@@ -1961,7 +1961,7 @@
     .restart local v14    # "l3":I
     .restart local v15    # "l4":I
     .restart local v22    # "l10":I
-    .restart local v23    # "aisVar":Ldefpackage/ais;
+    .restart local v23    # "aisVar":Lais;
     .restart local v24    # "l12":I
     .restart local v25    # "l9":I
     .restart local v27    # "l8":I
@@ -2001,14 +2001,14 @@
     .restart local v35    # "i2":Landroid/database/Cursor;
     .restart local v36    # "l":I
     :try_start_11
-    new-instance v4, Ldefpackage/dit;
+    new-instance v4, Ldit;
 
-    invoke-direct {v4}, Ldefpackage/dit;-><init>()V
+    invoke-direct {v4}, Ldit;-><init>()V
     :try_end_11
     .catchall {:try_start_11 .. :try_end_11} :catchall_19
 
     .line 162
-    .local v4, "ditVar":Ldefpackage/dit;
+    .local v4, "ditVar":Ldit;
     move v5, v10
 
     .line 163
@@ -2026,7 +2026,7 @@
 
     move-result-wide v12
 
-    iput-wide v12, v4, Ldefpackage/dit;->a:J
+    iput-wide v12, v4, Ldit;->a:J
     :try_end_12
     .catchall {:try_start_12 .. :try_end_12} :catchall_18
 
@@ -2048,14 +2048,14 @@
     const/4 v13, 0x0
 
     :try_start_14
-    iput-object v13, v4, Ldefpackage/dit;->b:Ljava/lang/String;
+    iput-object v13, v4, Ldit;->b:Ljava/lang/String;
     :try_end_14
     .catchall {:try_start_14 .. :try_end_14} :catchall_a
 
     goto :goto_7
 
     .line 190
-    .end local v4    # "ditVar":Ldefpackage/dit;
+    .end local v4    # "ditVar":Ldit;
     .end local v5    # "i3":I
     :catchall_a
     move-exception v0
@@ -2075,7 +2075,7 @@
     goto/16 :goto_c
 
     .line 167
-    .restart local v4    # "ditVar":Ldefpackage/dit;
+    .restart local v4    # "ditVar":Ldit;
     .restart local v5    # "i3":I
     :cond_9
     :try_start_15
@@ -2083,7 +2083,7 @@
 
     move-result-object v13
 
-    iput-object v13, v4, Ldefpackage/dit;->b:Ljava/lang/String;
+    iput-object v13, v4, Ldit;->b:Ljava/lang/String;
     :try_end_15
     .catchall {:try_start_15 .. :try_end_15} :catchall_17
 
@@ -2098,7 +2098,7 @@
 
     move-result-wide v14
 
-    iput-wide v14, v4, Ldefpackage/dit;->c:J
+    iput-wide v14, v4, Ldit;->c:J
     :try_end_16
     .catchall {:try_start_16 .. :try_end_16} :catchall_16
 
@@ -2116,7 +2116,7 @@
 
     move-result-wide v7
 
-    iput-wide v7, v4, Ldefpackage/dit;->d:J
+    iput-wide v7, v4, Ldit;->d:J
     :try_end_17
     .catchall {:try_start_17 .. :try_end_17} :catchall_15
 
@@ -2132,7 +2132,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, v4, Ldefpackage/dit;->e:J
+    iput-wide v0, v4, Ldit;->e:J
     :try_end_18
     .catchall {:try_start_18 .. :try_end_18} :catchall_14
 
@@ -2150,7 +2150,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, v4, Ldefpackage/dit;->f:J
+    iput-wide v2, v4, Ldit;->f:J
     :try_end_19
     .catchall {:try_start_19 .. :try_end_19} :catchall_13
 
@@ -2170,7 +2170,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, v4, Ldefpackage/dit;->g:J
+    iput-wide v0, v4, Ldit;->g:J
     :try_end_1a
     .catchall {:try_start_1a .. :try_end_1a} :catchall_12
 
@@ -2192,14 +2192,14 @@
     const/4 v0, 0x0
 
     :try_start_1c
-    iput-object v0, v4, Ldefpackage/dit;->h:Ljava/lang/String;
+    iput-object v0, v4, Ldit;->h:Ljava/lang/String;
     :try_end_1c
     .catchall {:try_start_1c .. :try_end_1c} :catchall_b
 
     goto :goto_8
 
     .line 190
-    .end local v4    # "ditVar":Ldefpackage/dit;
+    .end local v4    # "ditVar":Ldit;
     .end local v5    # "i3":I
     :catchall_b
     move-exception v0
@@ -2217,7 +2217,7 @@
     goto/16 :goto_c
 
     .line 177
-    .restart local v4    # "ditVar":Ldefpackage/dit;
+    .restart local v4    # "ditVar":Ldit;
     .restart local v5    # "i3":I
     :cond_a
     :try_start_1d
@@ -2225,7 +2225,7 @@
 
     move-result-object v0
 
-    iput-object v0, v4, Ldefpackage/dit;->h:Ljava/lang/String;
+    iput-object v0, v4, Ldit;->h:Ljava/lang/String;
     :try_end_1d
     .catchall {:try_start_1d .. :try_end_1d} :catchall_11
 
@@ -2251,14 +2251,14 @@
     const/4 v0, 0x0
 
     :try_start_1f
-    iput-object v0, v4, Ldefpackage/dit;->i:Ljava/lang/String;
+    iput-object v0, v4, Ldit;->i:Ljava/lang/String;
     :try_end_1f
     .catchall {:try_start_1f .. :try_end_1f} :catchall_c
 
     goto :goto_9
 
     .line 190
-    .end local v4    # "ditVar":Ldefpackage/dit;
+    .end local v4    # "ditVar":Ldit;
     .end local v5    # "i3":I
     :catchall_c
     move-exception v0
@@ -2276,7 +2276,7 @@
     goto/16 :goto_c
 
     .line 182
-    .restart local v4    # "ditVar":Ldefpackage/dit;
+    .restart local v4    # "ditVar":Ldit;
     .restart local v5    # "i3":I
     :cond_b
     :try_start_20
@@ -2284,7 +2284,7 @@
 
     move-result-object v0
 
-    iput-object v0, v4, Ldefpackage/dit;->i:Ljava/lang/String;
+    iput-object v0, v4, Ldit;->i:Ljava/lang/String;
     :try_end_20
     .catchall {:try_start_20 .. :try_end_20} :catchall_10
 
@@ -2308,7 +2308,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, v4, Ldefpackage/dit;->j:J
+    iput-wide v2, v4, Ldit;->j:J
 
     .line 185
     invoke-interface {v9, v5}, Landroid/database/Cursor;->getInt(I)I
@@ -2327,7 +2327,7 @@
     const/4 v2, 0x0
 
     :goto_a
-    iput-boolean v2, v4, Ldefpackage/dit;->k:Z
+    iput-boolean v2, v4, Ldit;->k:Z
     :try_end_21
     .catchall {:try_start_21 .. :try_end_21} :catchall_f
 
@@ -2349,7 +2349,7 @@
     const/4 v3, 0x0
 
     :goto_b
-    iput-boolean v3, v4, Ldefpackage/dit;->l:Z
+    iput-boolean v3, v4, Ldit;->l:Z
     :try_end_22
     .catchall {:try_start_22 .. :try_end_22} :catchall_e
 
@@ -2370,7 +2370,7 @@
     move-object/from16 v20, v23
 
     .line 195
-    .end local v4    # "ditVar":Ldefpackage/dit;
+    .end local v4    # "ditVar":Ldit;
     .end local v5    # "i3":I
     move/from16 v22, v1
 
@@ -2800,7 +2800,7 @@
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
     .line 193
-    invoke-virtual/range {v23 .. v23}, Ldefpackage/ais;->j()V
+    invoke-virtual/range {v23 .. v23}, Lais;->j()V
 
     .line 194
     nop
@@ -2808,10 +2808,10 @@
     .end local v6    # "shotDatabase":Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;
     .end local v9    # "i2":Landroid/database/Cursor;
     .end local v17    # "context":Landroid/content/Context;
-    .end local v18    # "i":Ldefpackage/aig;
-    .end local v19    # "r":Ldefpackage/dil;
-    .end local v20    # "a2":Ldefpackage/ais;
-    .end local v21    # "dirVar":Ldefpackage/dir;
+    .end local v18    # "i":Laig;
+    .end local v19    # "r":Ldil;
+    .end local v20    # "a2":Lais;
+    .end local v21    # "dirVar":Ldir;
     .end local p0    # "this":Lcom/google/android/apps/camera/debug/shottracker/db/DbDebugDumper;
     .end local p1    # "printWriter":Ljava/io/PrintWriter;
     throw v0
@@ -2829,7 +2829,7 @@
     .end local v12    # "l2":I
     .end local v13    # "l3":I
     .end local v14    # "l4":I
-    .end local v23    # "aisVar":Ldefpackage/ais;
+    .end local v23    # "aisVar":Lais;
     .end local v25    # "l9":I
     .end local v27    # "l8":I
     .end local v29    # "l7":I
@@ -2837,10 +2837,10 @@
     .restart local v6    # "shotDatabase":Lcom/google/android/apps/camera/debug/shottracker/db/ShotDatabase;
     .restart local v9    # "i2":Landroid/database/Cursor;
     .restart local v17    # "context":Landroid/content/Context;
-    .restart local v18    # "i":Ldefpackage/aig;
-    .restart local v19    # "r":Ldefpackage/dil;
-    .restart local v20    # "a2":Ldefpackage/ais;
-    .restart local v21    # "dirVar":Ldefpackage/dir;
+    .restart local v18    # "i":Laig;
+    .restart local v19    # "r":Ldil;
+    .restart local v20    # "a2":Lais;
+    .restart local v21    # "dirVar":Ldir;
     .restart local p0    # "this":Lcom/google/android/apps/camera/debug/shottracker/db/DbDebugDumper;
     .restart local p1    # "printWriter":Ljava/io/PrintWriter;
     :catchall_1a
@@ -2864,8 +2864,8 @@
     goto :goto_d
 
     .end local v9    # "i2":Landroid/database/Cursor;
-    .end local v21    # "dirVar":Ldefpackage/dir;
-    .local v10, "dirVar":Ldefpackage/dir;
+    .end local v21    # "dirVar":Ldir;
+    .local v10, "dirVar":Ldir;
     .restart local v11    # "i2":Landroid/database/Cursor;
     :catchall_1c
     move-exception v0
@@ -2876,17 +2876,17 @@
 
     move-object/from16 v8, v20
 
-    .end local v10    # "dirVar":Ldefpackage/dir;
+    .end local v10    # "dirVar":Ldir;
     .end local v11    # "i2":Landroid/database/Cursor;
     .restart local v9    # "i2":Landroid/database/Cursor;
-    .restart local v21    # "dirVar":Ldefpackage/dir;
+    .restart local v21    # "dirVar":Ldir;
     goto :goto_d
 
     .end local v9    # "i2":Landroid/database/Cursor;
-    .end local v20    # "a2":Ldefpackage/ais;
-    .end local v21    # "dirVar":Ldefpackage/dir;
-    .local v8, "a2":Ldefpackage/ais;
-    .restart local v10    # "dirVar":Ldefpackage/dir;
+    .end local v20    # "a2":Lais;
+    .end local v21    # "dirVar":Ldir;
+    .local v8, "a2":Lais;
+    .restart local v10    # "dirVar":Ldir;
     .restart local v11    # "i2":Landroid/database/Cursor;
     :catchall_1d
     move-exception v0
@@ -2897,21 +2897,21 @@
 
     move-object v9, v11
 
-    .end local v8    # "a2":Ldefpackage/ais;
-    .end local v10    # "dirVar":Ldefpackage/dir;
+    .end local v8    # "a2":Lais;
+    .end local v10    # "dirVar":Ldir;
     .end local v11    # "i2":Landroid/database/Cursor;
     .restart local v9    # "i2":Landroid/database/Cursor;
-    .restart local v20    # "a2":Ldefpackage/ais;
-    .restart local v21    # "dirVar":Ldefpackage/dir;
+    .restart local v20    # "a2":Lais;
+    .restart local v21    # "dirVar":Ldir;
     goto :goto_d
 
     .end local v9    # "i2":Landroid/database/Cursor;
-    .end local v19    # "r":Ldefpackage/dil;
-    .end local v20    # "a2":Ldefpackage/ais;
-    .end local v21    # "dirVar":Ldefpackage/dir;
-    .local v7, "r":Ldefpackage/dil;
-    .restart local v8    # "a2":Ldefpackage/ais;
-    .restart local v10    # "dirVar":Ldefpackage/dir;
+    .end local v19    # "r":Ldil;
+    .end local v20    # "a2":Lais;
+    .end local v21    # "dirVar":Ldir;
+    .local v7, "r":Ldil;
+    .restart local v8    # "a2":Lais;
+    .restart local v10    # "dirVar":Ldir;
     .restart local v11    # "i2":Landroid/database/Cursor;
     :catchall_1e
     move-exception v0
@@ -2924,25 +2924,25 @@
 
     move-object v9, v11
 
-    .end local v7    # "r":Ldefpackage/dil;
-    .end local v8    # "a2":Ldefpackage/ais;
-    .end local v10    # "dirVar":Ldefpackage/dir;
+    .end local v7    # "r":Ldil;
+    .end local v8    # "a2":Lais;
+    .end local v10    # "dirVar":Ldir;
     .end local v11    # "i2":Landroid/database/Cursor;
     .restart local v9    # "i2":Landroid/database/Cursor;
-    .restart local v19    # "r":Ldefpackage/dil;
-    .restart local v20    # "a2":Ldefpackage/ais;
-    .restart local v21    # "dirVar":Ldefpackage/dir;
+    .restart local v19    # "r":Ldil;
+    .restart local v20    # "a2":Lais;
+    .restart local v21    # "dirVar":Ldir;
     goto :goto_d
 
     .end local v9    # "i2":Landroid/database/Cursor;
-    .end local v18    # "i":Ldefpackage/aig;
-    .end local v19    # "r":Ldefpackage/dil;
-    .end local v20    # "a2":Ldefpackage/ais;
-    .end local v21    # "dirVar":Ldefpackage/dir;
-    .local v5, "i":Ldefpackage/aig;
-    .restart local v7    # "r":Ldefpackage/dil;
-    .restart local v8    # "a2":Ldefpackage/ais;
-    .restart local v10    # "dirVar":Ldefpackage/dir;
+    .end local v18    # "i":Laig;
+    .end local v19    # "r":Ldil;
+    .end local v20    # "a2":Lais;
+    .end local v21    # "dirVar":Ldir;
+    .local v5, "i":Laig;
+    .restart local v7    # "r":Ldil;
+    .restart local v8    # "a2":Lais;
+    .restart local v10    # "dirVar":Ldir;
     .restart local v11    # "i2":Landroid/database/Cursor;
     :catchall_1f
     move-exception v0
@@ -2957,29 +2957,29 @@
 
     move-object v9, v11
 
-    .end local v5    # "i":Ldefpackage/aig;
-    .end local v7    # "r":Ldefpackage/dil;
-    .end local v8    # "a2":Ldefpackage/ais;
-    .end local v10    # "dirVar":Ldefpackage/dir;
+    .end local v5    # "i":Laig;
+    .end local v7    # "r":Ldil;
+    .end local v8    # "a2":Lais;
+    .end local v10    # "dirVar":Ldir;
     .end local v11    # "i2":Landroid/database/Cursor;
     .restart local v9    # "i2":Landroid/database/Cursor;
-    .restart local v18    # "i":Ldefpackage/aig;
-    .restart local v19    # "r":Ldefpackage/dil;
-    .restart local v20    # "a2":Ldefpackage/ais;
-    .restart local v21    # "dirVar":Ldefpackage/dir;
+    .restart local v18    # "i":Laig;
+    .restart local v19    # "r":Ldil;
+    .restart local v20    # "a2":Lais;
+    .restart local v21    # "dirVar":Ldir;
     goto :goto_d
 
     .end local v9    # "i2":Landroid/database/Cursor;
     .end local v17    # "context":Landroid/content/Context;
-    .end local v18    # "i":Ldefpackage/aig;
-    .end local v19    # "r":Ldefpackage/dil;
-    .end local v20    # "a2":Ldefpackage/ais;
-    .end local v21    # "dirVar":Ldefpackage/dir;
+    .end local v18    # "i":Laig;
+    .end local v19    # "r":Ldil;
+    .end local v20    # "a2":Lais;
+    .end local v21    # "dirVar":Ldir;
     .local v4, "context":Landroid/content/Context;
-    .restart local v5    # "i":Ldefpackage/aig;
-    .restart local v7    # "r":Ldefpackage/dil;
-    .restart local v8    # "a2":Ldefpackage/ais;
-    .restart local v10    # "dirVar":Ldefpackage/dir;
+    .restart local v5    # "i":Laig;
+    .restart local v7    # "r":Ldil;
+    .restart local v8    # "a2":Lais;
+    .restart local v10    # "dirVar":Ldir;
     .restart local v11    # "i2":Landroid/database/Cursor;
     :catchall_20
     move-exception v0
@@ -2998,16 +2998,16 @@
 
     .line 278
     .end local v4    # "context":Landroid/content/Context;
-    .end local v5    # "i":Ldefpackage/aig;
-    .end local v7    # "r":Ldefpackage/dil;
-    .end local v10    # "dirVar":Ldefpackage/dir;
+    .end local v5    # "i":Laig;
+    .end local v7    # "r":Ldil;
+    .end local v10    # "dirVar":Ldir;
     .end local v11    # "i2":Landroid/database/Cursor;
     .local v0, "th3":Ljava/lang/Throwable;
     .restart local v9    # "i2":Landroid/database/Cursor;
     .restart local v17    # "context":Landroid/content/Context;
-    .restart local v18    # "i":Ldefpackage/aig;
-    .restart local v19    # "r":Ldefpackage/dil;
-    .restart local v21    # "dirVar":Ldefpackage/dir;
+    .restart local v18    # "i":Laig;
+    .restart local v19    # "r":Ldil;
+    .restart local v21    # "dirVar":Ldir;
     :goto_d
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
@@ -3018,9 +3018,9 @@
 
     .line 281
     .end local v0    # "th3":Ljava/lang/Throwable;
-    .end local v8    # "a2":Ldefpackage/ais;
-    .restart local v20    # "a2":Ldefpackage/ais;
-    .restart local v23    # "aisVar":Ldefpackage/ais;
+    .end local v8    # "a2":Lais;
+    .restart local v20    # "a2":Lais;
+    .restart local v23    # "aisVar":Lais;
     :goto_e
     return-void
 .end method

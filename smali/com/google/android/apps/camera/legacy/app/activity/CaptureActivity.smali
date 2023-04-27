@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final s:Ldefpackage/ouj;
+.field private static final s:Louj;
 
 
 # direct methods
@@ -14,11 +14,11 @@
     .line 15
     const-string v0, "com/google/android/apps/camera/legacy/app/activity/CaptureActivity"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Louj;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/bqe;->f(Landroid/content/Intent;)V
+    invoke-static {v0}, Lbqe;->f(Landroid/content/Intent;)V
 
     .line 23
     invoke-virtual {p0}, Landroid/app/Activity;->getCallingPackage()Ljava/lang/String;
@@ -94,9 +94,9 @@
 
     .line 31
     :cond_0
-    sget-object v4, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Ldefpackage/ouj;
+    sget-object v4, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->c()Lova;
 
     move-result-object v4
 
@@ -104,7 +104,7 @@
 
     const/16 v5, 0x5db
 
-    invoke-interface {v4, v5}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v4, v5}, Lova;->G(I)Lova;
 
     move-result-object v4
 
@@ -112,7 +112,7 @@
 
     const-string v5, "getCallingPackage() returned null."
 
-    invoke-interface {v4, v5}, Ldefpackage/ova;->o(Ljava/lang/String;)V
+    invoke-interface {v4, v5}, Lova;->o(Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -126,9 +126,9 @@
 
     .line 34
     .local v4, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
-    sget-object v5, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Ldefpackage/ouj;
+    sget-object v5, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Louj;
 
-    invoke-virtual {v5}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v5}, Loue;->c()Lova;
 
     move-result-object v5
 
@@ -136,7 +136,7 @@
 
     const/16 v6, 0x5e0
 
-    invoke-interface {v5, v6}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v5, v6}, Lova;->G(I)Lova;
 
     move-result-object v5
 
@@ -144,7 +144,7 @@
 
     const-string v6, "Unable to get PackageInfo for %s"
 
-    invoke-interface {v5, v6, v0}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v5, v6, v0}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 36
     .end local v4    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -194,9 +194,9 @@
     if-eqz v6, :cond_2
 
     .line 43
-    sget-object v6, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Ldefpackage/ouj;
+    sget-object v6, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Louj;
 
-    invoke-virtual {v6}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v6}, Loue;->c()Lova;
 
     move-result-object v6
 
@@ -204,7 +204,7 @@
 
     const/16 v7, 0x5df
 
-    invoke-interface {v6, v7}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v6, v7}, Lova;->G(I)Lova;
 
     move-result-object v6
 
@@ -212,7 +212,7 @@
 
     const-string v7, "Coarse location is granted to %s"
 
-    invoke-interface {v6, v7, v0}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v6, v7, v0}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 44
     const/4 v4, 0x1
@@ -240,9 +240,9 @@
     if-eqz v6, :cond_3
 
     .line 47
-    sget-object v6, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Ldefpackage/ouj;
+    sget-object v6, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Louj;
 
-    invoke-virtual {v6}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v6}, Loue;->c()Lova;
 
     move-result-object v6
 
@@ -250,7 +250,7 @@
 
     const/16 v7, 0x5de
 
-    invoke-interface {v6, v7}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v6, v7}, Lova;->G(I)Lova;
 
     move-result-object v6
 
@@ -258,7 +258,7 @@
 
     const-string v7, "Fine location is granted to %s"
 
-    invoke-interface {v6, v7, v0}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v6, v7, v0}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 48
     const/4 v5, 0x1
@@ -290,9 +290,9 @@
     if-nez v5, :cond_6
 
     .line 55
-    sget-object v3, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Ldefpackage/ouj;
+    sget-object v3, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Louj;
 
-    invoke-virtual {v3}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v3}, Loue;->c()Lova;
 
     move-result-object v3
 
@@ -300,7 +300,7 @@
 
     const/16 v4, 0x5dd
 
-    invoke-interface {v3, v4}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v3, v4}, Lova;->G(I)Lova;
 
     move-result-object v3
 
@@ -308,16 +308,16 @@
 
     const-string v4, "Package %s doesn\'t have location permissions, location info won\'t be included in EXIF"
 
-    invoke-interface {v3, v4, v0}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v3, v4, v0}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 56
     return-void
 
     .line 58
     :cond_6
-    sget-object v4, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Ldefpackage/ouj;
+    sget-object v4, Lcom/google/android/apps/camera/legacy/app/activity/CaptureActivity;->s:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->c()Lova;
 
     move-result-object v4
 
@@ -325,7 +325,7 @@
 
     const-string v7, "Allowing location in intent"
 
-    invoke-static {v4, v7, v6}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v4, v7, v6}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 59
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;

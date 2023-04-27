@@ -1,127 +1,119 @@
-.class public final Ldefpackage/qy;
+.class public Ldefpackage/qy;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lajl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lub;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:I
-
-.field public b:I
-
-.field public c:I
-
-.field public d:I
-
-.field public e:I
-
-.field public f:I
-
-.field public g:Z
-
-.field public h:Z
+.field public final synthetic this$0:Lub;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Lub;)V
+    .locals 0
+    .param p1, "this$0"    # Lub;
 
-    .line 5
+    .line 69
+    iput-object p1, p0, Ldefpackage/qy;->this$0:Lub;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 6
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/qy;->a:I
-
-    .line 7
-    iput v0, p0, Ldefpackage/qy;->b:I
-
-    .line 8
-    const/high16 v1, -0x80000000
-
-    iput v1, p0, Ldefpackage/qy;->c:I
-
-    .line 9
-    iput v1, p0, Ldefpackage/qy;->d:I
-
-    .line 10
-    iput v0, p0, Ldefpackage/qy;->e:I
-
-    .line 11
-    iput v0, p0, Ldefpackage/qy;->f:I
-
-    .line 12
-    iput-boolean v0, p0, Ldefpackage/qy;->g:Z
-
-    .line 13
-    iput-boolean v0, p0, Ldefpackage/qy;->h:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(II)V
-    .locals 2
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
+.method public final a()Landroid/os/Bundle;
+    .locals 5
 
-    .line 16
-    iput p1, p0, Ldefpackage/qy;->c:I
+    .line 72
+    iget-object v0, p0, Ldefpackage/qy;->this$0:Lub;
 
-    .line 17
-    iput p2, p0, Ldefpackage/qy;->d:I
+    .line 73
+    .local v0, "ubVar":Lub;
+    new-instance v1, Landroid/os/Bundle;
 
-    .line 18
-    const/4 v0, 0x1
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    iput-boolean v0, p0, Ldefpackage/qy;->h:Z
+    .line 74
+    .local v1, "bundle":Landroid/os/Bundle;
+    iget-object v2, v0, Lub;->i:Lum;
 
-    .line 19
-    iget-boolean v0, p0, Ldefpackage/qy;->g:Z
+    .line 75
+    .local v2, "umVar":Lum;
+    new-instance v3, Ljava/util/ArrayList;
 
-    const/high16 v1, -0x80000000
+    iget-object v4, v2, Lum;->c:Ljava/util/Map;
 
-    if-eqz v0, :cond_2
+    invoke-interface {v4}, Ljava/util/Map;->values()Ljava/util/Collection;
 
-    .line 20
-    if-eq p2, v1, :cond_0
+    move-result-object v4
 
-    .line 21
-    iput p2, p0, Ldefpackage/qy;->a:I
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 23
-    :cond_0
-    if-ne p1, v1, :cond_1
+    const-string v4, "KEY_COMPONENT_ACTIVITY_REGISTERED_RCS"
 
-    .line 24
-    return-void
+    invoke-virtual {v1, v4, v3}, Landroid/os/Bundle;->putIntegerArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 26
-    :cond_1
-    iput p1, p0, Ldefpackage/qy;->b:I
+    .line 76
+    new-instance v3, Ljava/util/ArrayList;
 
-    .line 27
-    return-void
+    iget-object v4, v2, Lum;->c:Ljava/util/Map;
 
-    .line 29
-    :cond_2
-    if-eq p1, v1, :cond_3
+    invoke-interface {v4}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
-    .line 30
-    iput p1, p0, Ldefpackage/qy;->a:I
+    move-result-object v4
 
-    .line 32
-    :cond_3
-    if-ne p2, v1, :cond_4
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 33
-    return-void
+    const-string v4, "KEY_COMPONENT_ACTIVITY_REGISTERED_KEYS"
 
-    .line 35
-    :cond_4
-    iput p2, p0, Ldefpackage/qy;->b:I
+    invoke-virtual {v1, v4, v3}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 36
-    return-void
+    .line 77
+    new-instance v3, Ljava/util/ArrayList;
+
+    iget-object v4, v2, Lum;->e:Ljava/util/ArrayList;
+
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    const-string v4, "KEY_COMPONENT_ACTIVITY_LAUNCHED_KEYS"
+
+    invoke-virtual {v1, v4, v3}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    .line 78
+    iget-object v3, v2, Lum;->h:Landroid/os/Bundle;
+
+    invoke-virtual {v3}, Landroid/os/Bundle;->clone()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/os/Bundle;
+
+    const-string v4, "KEY_COMPONENT_ACTIVITY_PENDING_RESULT"
+
+    invoke-virtual {v1, v4, v3}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
+
+    .line 79
+    iget-object v3, v2, Lum;->a:Ljava/util/Random;
+
+    const-string v4, "KEY_COMPONENT_ACTIVITY_RANDOM_OBJECT"
+
+    invoke-virtual {v1, v4, v3}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
+
+    .line 80
+    return-object v1
 .end method

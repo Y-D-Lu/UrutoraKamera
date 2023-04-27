@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/pll;
+.implements Lpll;
 
 
 # static fields
@@ -78,7 +78,7 @@
     :goto_0
     const-string v6, "staticMetadataPtr is 0."
 
-    invoke-static {v1, v6}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v1, v6}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 24
     cmp-long v1, p3, v4
@@ -95,7 +95,7 @@
     :goto_1
     const-string v6, "shotParamsPtr is 0."
 
-    invoke-static {v1, v6}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v1, v6}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 25
     cmp-long v1, p5, v4
@@ -112,7 +112,7 @@
     :goto_2
     const-string v6, "shotMetadataPtr is 0."
 
-    invoke-static {v1, v6}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v1, v6}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 26
     cmp-long v1, p7, v4
@@ -124,7 +124,7 @@
     :cond_4
     const-string v1, "rawImagePlanarWriteView16Ptr is 0."
 
-    invoke-static {v2, v1}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v2, v1}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 27
     invoke-interface/range {p9 .. p9}, Ljava/util/List;->size()I
@@ -162,18 +162,18 @@
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/plj;
+    check-cast v7, Lplj;
 
     .line 34
-    .local v7, "pljVar":Ldefpackage/plj;
-    iget-object v8, v7, Ldefpackage/plj;->c:Lcom/google/googlex/gcam/SpatialGainMap;
+    .local v7, "pljVar":Lplj;
+    iget-object v8, v7, Lplj;->c:Lcom/google/googlex/gcam/SpatialGainMap;
 
     iget-wide v8, v8, Lcom/google/googlex/gcam/SpatialGainMap;->a:J
 
     aput-wide v8, v2, v6
 
     .line 35
-    iget-object v8, v7, Ldefpackage/plj;->b:Lcom/google/googlex/gcam/FrameMetadata;
+    iget-object v8, v7, Lplj;->b:Lcom/google/googlex/gcam/FrameMetadata;
 
     invoke-static {v8}, Lcom/google/googlex/gcam/FrameMetadata;->b(Lcom/google/googlex/gcam/FrameMetadata;)J
 
@@ -182,7 +182,7 @@
     aput-wide v8, v15, v6
 
     .line 36
-    iget-object v8, v7, Ldefpackage/plj;->a:Lcom/google/googlex/gcam/RawWriteView;
+    iget-object v8, v7, Lplj;->a:Lcom/google/googlex/gcam/RawWriteView;
 
     invoke-static {v8}, Lcom/google/googlex/gcam/RawWriteView;->c(Lcom/google/googlex/gcam/RawWriteView;)J
 
@@ -191,12 +191,12 @@
     aput-wide v8, v14, v6
 
     .line 37
-    iget-object v8, v7, Ldefpackage/plj;->d:Ljava/lang/Runnable;
+    iget-object v8, v7, Lplj;->d:Ljava/lang/Runnable;
 
     aput-object v8, v12, v6
 
     .line 32
-    .end local v7    # "pljVar":Ldefpackage/plj;
+    .end local v7    # "pljVar":Lplj;
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_3
@@ -250,7 +250,7 @@
     :goto_4
     const-string v4, "alloc() failed!"
 
-    invoke-static {v3, v4}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v3, v4}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 41
     move-object/from16 v3, p0

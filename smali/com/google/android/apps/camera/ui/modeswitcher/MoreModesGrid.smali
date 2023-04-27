@@ -3,23 +3,23 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jgm;
+.implements Ljgm;
 
 
 # static fields
 .field public static final a:Landroid/graphics/ColorFilter;
 
-.field private static final n:Ldefpackage/ouj;
+.field private static final n:Louj;
 
 
 # instance fields
 .field public final b:Ljava/util/ArrayList;
 
-.field public c:Ldefpackage/ojc;
+.field public c:Lojc;
 
-.field public d:Ldefpackage/jrz;
+.field public d:Ljrz;
 
-.field public e:Ldefpackage/fjs;
+.field public e:Lfjs;
 
 .field public f:Z
 
@@ -35,7 +35,7 @@
 
 .field public l:Z
 
-.field public m:Ldefpackage/ojc;
+.field public m:Lojc;
 
 .field private o:I
 
@@ -49,11 +49,11 @@
     .line 53
     const-string v0, "com/google/android/apps/camera/ui/modeswitcher/MoreModesGrid"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->n:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->n:Louj;
 
     .line 54
     new-instance v0, Landroid/graphics/ColorMatrixColorFilter;
@@ -170,9 +170,9 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->b:Ljava/util/ArrayList;
 
     .line 59
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
     .line 60
     const/4 v1, 0x0
@@ -200,7 +200,7 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->l:Z
 
     .line 65
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->m:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->m:Lojc;
 
     .line 66
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c(Landroid/content/Context;)V
@@ -225,9 +225,9 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->b:Ljava/util/ArrayList;
 
     .line 72
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
     .line 73
     const/4 v1, 0x0
@@ -255,7 +255,7 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->l:Z
 
     .line 78
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->m:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->m:Lojc;
 
     .line 79
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c(Landroid/content/Context;)V
@@ -281,9 +281,9 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->b:Ljava/util/ArrayList;
 
     .line 85
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
     .line 86
     const/4 v1, 0x0
@@ -311,7 +311,7 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->l:Z
 
     .line 91
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->m:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->m:Lojc;
 
     .line 92
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c(Landroid/content/Context;)V
@@ -338,9 +338,9 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->b:Ljava/util/ArrayList;
 
     .line 98
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
     .line 99
     const/4 v1, 0x0
@@ -368,7 +368,7 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->l:Z
 
     .line 104
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->m:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->m:Lojc;
 
     .line 105
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c(Landroid/content/Context;)V
@@ -382,7 +382,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .line 109
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 110
     const/4 v0, 0x3
@@ -526,9 +526,9 @@
     invoke-virtual {v0, v2}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 129
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ldefpackage/jrz;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ljrz;
 
-    sget-object v5, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v5, Ljrz;->LANDSCAPE:Ljrz;
 
     if-ne v2, v5, :cond_0
 
@@ -551,7 +551,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v5, Ldefpackage/jrz;->REVERSE_LANDSCAPE:Ldefpackage/jrz;
+    sget-object v5, Ljrz;->REVERSE_LANDSCAPE:Ljrz;
 
     if-ne v2, v5, :cond_1
 
@@ -692,9 +692,9 @@
     return-void
 .end method
 
-.method public final i(Ldefpackage/jrl;Z)V
+.method public final i(Ljrl;Z)V
     .locals 9
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
     .param p2, "z"    # Z
 
     .line 150
@@ -723,24 +723,24 @@
     const/4 v4, 0x0
 
     .line 157
-    .local v4, "jgpVar":Ldefpackage/jgp;
+    .local v4, "jgpVar":Ljgp;
     goto :goto_1
 
     .line 159
-    .end local v4    # "jgpVar":Ldefpackage/jgp;
+    .end local v4    # "jgpVar":Ljgp;
     :cond_0
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/jgp;
+    check-cast v4, Ljgp;
 
     .line 160
-    .restart local v4    # "jgpVar":Ldefpackage/jgp;
+    .restart local v4    # "jgpVar":Ljgp;
     add-int/lit8 v3, v3, 0x1
 
     .line 161
-    iget-object v5, v4, Ldefpackage/jgp;->a:Ldefpackage/jrl;
+    iget-object v5, v4, Ljgp;->a:Ljrl;
 
     if-ne v5, p1, :cond_6
 
@@ -752,9 +752,9 @@
     if-nez v4, :cond_1
 
     .line 166
-    sget-object v5, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->n:Ldefpackage/ouj;
+    sget-object v5, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->n:Louj;
 
-    invoke-virtual {v5}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v5}, Loue;->b()Lova;
 
     move-result-object v5
 
@@ -762,7 +762,7 @@
 
     const/16 v6, 0xd24
 
-    invoke-interface {v5, v6}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v5, v6}, Lova;->G(I)Lova;
 
     move-result-object v5
 
@@ -770,7 +770,7 @@
 
     const-string v6, "No ModeInfo found for %s"
 
-    invoke-interface {v5, v6, p1}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v5, v6, p1}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     goto :goto_2
 
@@ -778,7 +778,7 @@
     :cond_1
     if-eqz p2, :cond_2
 
-    iget-boolean v5, v4, Ldefpackage/jgp;->c:Z
+    iget-boolean v5, v4, Ljgp;->c:Z
 
     if-eqz v5, :cond_2
 
@@ -788,7 +788,7 @@
     :cond_2
     if-nez p2, :cond_3
 
-    iget-boolean v5, v4, Ldefpackage/jgp;->c:Z
+    iget-boolean v5, v4, Ljgp;->c:Z
 
     if-nez v5, :cond_3
 
@@ -797,10 +797,10 @@
 
     .line 172
     :cond_3
-    iput-boolean p2, v4, Ldefpackage/jgp;->c:Z
+    iput-boolean p2, v4, Ljgp;->c:Z
 
     .line 173
-    iget-object v5, v4, Ldefpackage/jgp;->b:Landroid/view/View;
+    iget-object v5, v4, Ljgp;->b:Landroid/view/View;
 
     .line 174
     .local v5, "view":Landroid/view/View;
@@ -875,13 +875,13 @@
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ldefpackage/jrz;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ljrz;
 
     if-eq v1, v2, :cond_0
 
@@ -890,13 +890,13 @@
 
     .line 192
     :cond_0
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ldefpackage/jrz;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ljrz;
 
-    invoke-static {v1}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v1}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
     .line 193
     if-eqz v0, :cond_2
@@ -935,31 +935,31 @@
 
     const-string v1, "modes changed without a later call to finalizeModeSetup"
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 206
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->c:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
     const-string v1, "setUiOrientation must be called prior to layout"
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 207
     iget v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->o:I
 
     .line 208
     .local v0, "i3":I
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ldefpackage/jrz;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/MoreModesGrid;->d:Ljrz;
 
-    sget-object v2, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->LANDSCAPE:Ljrz;
 
     if-eq v1, v2, :cond_0
 
-    sget-object v2, Ldefpackage/jrz;->REVERSE_LANDSCAPE:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->REVERSE_LANDSCAPE:Ljrz;
 
     if-ne v1, v2, :cond_1
 

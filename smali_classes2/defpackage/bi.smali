@@ -1,93 +1,113 @@
-.class public final Ldefpackage/bi;
-.super Ldefpackage/bj;
+.class public Ldefpackage/Bi;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/Comparator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Licw;->q(Lbty;)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private final c:Z
+.field public final synthetic this$0:Licw;
 
-.field private d:Z
-
-.field private e:Ldefpackage/bz;
+.field public final synthetic val$icfVar:Licf;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/dp;Ldefpackage/aax;Z)V
-    .locals 1
-    .param p1, "dpVar"    # Ldefpackage/dp;
-    .param p2, "aaxVar"    # Ldefpackage/aax;
-    .param p3, "z"    # Z
+.method public constructor <init>(Licw;Licf;)V
+    .locals 0
+    .param p1, "this$0"    # Licw;
 
-    .line 14
-    invoke-direct {p0, p1, p2}, Ldefpackage/bj;-><init>(Ldefpackage/dp;Ldefpackage/aax;)V
+    .line 209
+    iput-object p1, p0, Ldefpackage/Bi;->this$0:Licw;
 
-    .line 15
-    const/4 v0, 0x0
+    iput-object p2, p0, Ldefpackage/Bi;->val$icfVar:Licf;
 
-    iput-boolean v0, p0, Ldefpackage/bi;->d:Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
-    iput-boolean p3, p0, Ldefpackage/bi;->c:Z
-
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/content/Context;)Ldefpackage/bz;
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 5
-    .param p1, "context"    # Landroid/content/Context;
+    .param p1, "obj"    # Ljava/lang/Object;
+    .param p2, "obj2"    # Ljava/lang/Object;
 
-    .line 21
-    iget-boolean v0, p0, Ldefpackage/bi;->d:Z
+    .line 212
+    move-object v0, p1
 
-    if-nez v0, :cond_1
+    check-cast v0, Lifm;
 
-    .line 22
-    iget-object v0, p0, Ldefpackage/bj;->a:Ldefpackage/dp;
+    .line 213
+    .local v0, "ifmVar":Lifm;
+    move-object v1, p2
 
-    .line 23
-    .local v0, "dpVar":Ldefpackage/dp;
-    iget-object v1, v0, Ldefpackage/dp;->a:Ldefpackage/bu;
+    check-cast v1, Lifm;
 
-    iget v2, v0, Ldefpackage/dp;->e:I
+    .line 214
+    .local v1, "ifmVar2":Lifm;
+    iget-object v2, p0, Ldefpackage/Bi;->val$icfVar:Licf;
 
-    const/4 v3, 0x2
+    iget-object v2, v2, Licf;->a:Lidt;
 
+    invoke-interface {v2}, Lidt;->b()Ljava/util/Comparator;
+
+    move-result-object v2
+
+    iget-object v3, v0, Lifm;->a:Landroid/content/pm/ResolveInfo;
+
+    iget-object v4, v1, Lifm;->a:Landroid/content/pm/ResolveInfo;
+
+    invoke-interface {v2, v3, v4}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+
+    move-result v2
+
+    .line 215
+    .local v2, "compare":I
+    if-nez v2, :cond_2
+
+    .line 216
+    iget-boolean v3, v0, Lifm;->c:Z
+
+    .line 217
+    .local v3, "z":Z
+    iget-boolean v4, v1, Lifm;->c:Z
+
+    if-ne v3, v4, :cond_0
+
+    .line 218
+    const/4 v4, 0x0
+
+    return v4
+
+    .line 220
+    :cond_0
     const/4 v4, 0x1
 
-    if-ne v2, v3, :cond_0
-
-    move v2, v4
+    if-eq v4, v3, :cond_1
 
     goto :goto_0
 
-    :cond_0
-    const/4 v2, 0x0
+    :cond_1
+    const/4 v4, -0x1
 
     :goto_0
-    iget-boolean v3, p0, Ldefpackage/bi;->c:Z
+    return v4
 
-    invoke-static {p1, v1, v2, v3}, Ldefpackage/d;->e(Landroid/content/Context;Ldefpackage/bu;ZZ)Ldefpackage/bz;
-
-    move-result-object v1
-
-    .line 24
-    .local v1, "e":Ldefpackage/bz;
-    iput-object v1, p0, Ldefpackage/bi;->e:Ldefpackage/bz;
-
-    .line 25
-    iput-boolean v4, p0, Ldefpackage/bi;->d:Z
-
-    .line 26
-    return-object v1
-
-    .line 28
-    .end local v0    # "dpVar":Ldefpackage/dp;
-    .end local v1    # "e":Ldefpackage/bz;
-    :cond_1
-    iget-object v0, p0, Ldefpackage/bi;->e:Ldefpackage/bz;
-
-    return-object v0
+    .line 222
+    .end local v3    # "z":Z
+    :cond_2
+    return v2
 .end method

@@ -57,21 +57,21 @@
 
     .line 38
     .local v0, "resources":Landroid/content/res/Resources;
-    new-instance v1, Ldefpackage/nyj;
+    new-instance v1, Lnyj;
 
     const v2, 0x7f150366
 
-    invoke-direct {v1, p0, v2}, Ldefpackage/nyj;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, p0, v2}, Lnyj;-><init>(Landroid/content/Context;I)V
 
     .line 39
-    .local v1, "nyjVar":Ldefpackage/nyj;
+    .local v1, "nyjVar":Lnyj;
     const v2, 0x7f1102d8
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ldefpackage/nyj;->t(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Lnyj;->t(Ljava/lang/CharSequence;)V
 
     .line 40
     const v2, 0x7f1100b6
@@ -80,7 +80,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ldefpackage/nyj;->m(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Lnyj;->m(Ljava/lang/CharSequence;)V
 
     .line 41
     const v2, 0x7f1100d7
@@ -89,12 +89,12 @@
 
     move-result-object v2
 
-    sget-object v3, Ldefpackage/fyb;->a:Ldefpackage/fyb;
+    sget-object v3, Lfyb;->a:Lfyb;
 
-    invoke-virtual {v1, v2, v3}, Ldefpackage/nyj;->r(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {v1, v2, v3}, Lnyj;->r(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 42
-    invoke-virtual {v1}, Ldefpackage/id;->c()Ldefpackage/ie;
+    invoke-virtual {v1}, Lid;->c()Lie;
 
     .line 43
     return-void
@@ -124,20 +124,20 @@
     .line 50
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, p2, v0}, Lcom/google/android/apps/camera/ui/eduimageview/EduImageView;->d(Ljava/lang/String;Ljava/lang/String;Ldefpackage/iuz;)V
+    invoke-virtual {p0, p1, p2, v0}, Lcom/google/android/apps/camera/ui/eduimageview/EduImageView;->d(Ljava/lang/String;Ljava/lang/String;Liuz;)V
 
     .line 51
     return-void
 .end method
 
-.method public final d(Ljava/lang/String;Ljava/lang/String;Ldefpackage/iuz;)V
+.method public final d(Ljava/lang/String;Ljava/lang/String;Liuz;)V
     .locals 7
     .param p1, "str"    # Ljava/lang/String;
     .param p2, "str2"    # Ljava/lang/String;
-    .param p3, "iuzVar"    # Ldefpackage/iuz;
+    .param p3, "iuzVar"    # Liuz;
 
     .line 54
-    new-instance v6, Ldefpackage/jap;
+    new-instance v6, Ljap;
 
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
@@ -153,11 +153,11 @@
 
     move-object v5, p3
 
-    invoke-direct/range {v0 .. v5}, Ldefpackage/jap;-><init>(Lcom/google/android/apps/camera/ui/eduimageview/EduImageView;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ldefpackage/iuz;)V
+    invoke-direct/range {v0 .. v5}, Ljap;-><init>(Lcom/google/android/apps/camera/ui/eduimageview/EduImageView;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Liuz;)V
 
     const/4 v0, 0x0
 
-    invoke-virtual {v6, v0}, Ldefpackage/jap;->b(Z)V
+    invoke-virtual {v6, v0}, Ljap;->b(Z)V
 
     .line 55
     return-void

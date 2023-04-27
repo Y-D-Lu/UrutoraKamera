@@ -13,22 +13,22 @@
     return-void
 .end method
 
-.method public static a(Ldefpackage/lmr;)Ldefpackage/pht;
+.method public static a(Llmr;)Lpht;
     .locals 2
-    .param p0, "lmrVar"    # Ldefpackage/lmr;
+    .param p0, "lmrVar"    # Llmr;
 
     .line 21
-    invoke-static {}, Ldefpackage/pih;->f()Ldefpackage/pih;
+    invoke-static {}, Lpih;->f()Lpih;
 
     move-result-object v0
 
     .line 22
-    .local v0, "f":Ldefpackage/pih;
-    new-instance v1, Ldefpackage/geb;
+    .local v0, "f":Lpih;
+    new-instance v1, Lgeb;
 
-    invoke-direct {v1, v0}, Ldefpackage/geb;-><init>(Ldefpackage/pih;)V
+    invoke-direct {v1, v0}, Lgeb;-><init>(Lpih;)V
 
-    invoke-interface {p0, v1}, Ldefpackage/lmr;->j(Ldefpackage/mip;)V
+    invoke-interface {p0, v1}, Llmr;->j(Lmip;)V
 
     .line 23
     return-object v0
@@ -37,18 +37,18 @@
 .method public static native allocateHardwareBuffer(IIIIJ)Landroid/hardware/HardwareBuffer;
 .end method
 
-.method public static b(Ldefpackage/gan;Ldefpackage/hkg;Ljava/util/Collection;)Z
+.method public static b(Lgan;Lhkg;Ljava/util/Collection;)Z
     .locals 4
-    .param p0, "ganVar"    # Ldefpackage/gan;
-    .param p1, "hkgVar"    # Ldefpackage/hkg;
+    .param p0, "ganVar"    # Lgan;
+    .param p1, "hkgVar"    # Lhkg;
     .param p2, "collection"    # Ljava/util/Collection;
 
     .line 29
-    invoke-interface {p0}, Ldefpackage/gan;->f()Ldefpackage/ojc;
+    invoke-interface {p0}, Lgan;->f()Lojc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
@@ -56,11 +56,11 @@
 
     if-nez v0, :cond_1
 
-    invoke-interface {p0}, Ldefpackage/gan;->e()Ldefpackage/ojc;
+    invoke-interface {p0}, Lgan;->e()Lojc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
@@ -88,34 +88,34 @@
 
     .line 33
     :cond_2
-    invoke-interface {p0}, Ldefpackage/gan;->f()Ldefpackage/ojc;
+    invoke-interface {p0}, Lgan;->f()Lojc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 34
-    invoke-interface {p0}, Ldefpackage/gan;->f()Ldefpackage/ojc;
+    invoke-interface {p0}, Lgan;->f()Lojc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/hla;
+    check-cast v0, Lhla;
 
-    iget-object v0, v0, Ldefpackage/hla;->a:[Ldefpackage/hkz;
+    iget-object v0, v0, Lhla;->a:[Lhkz;
 
     array-length v0, v0
 
     .line 36
     :cond_3
-    invoke-interface {p0}, Ldefpackage/gan;->a()F
+    invoke-interface {p0}, Lgan;->a()F
 
     move-result v0
 
@@ -125,15 +125,15 @@
 
     if-ltz v0, :cond_4
 
-    invoke-interface {p0}, Ldefpackage/gan;->d()Ldefpackage/hkn;
+    invoke-interface {p0}, Lgan;->d()Lhkn;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0, p2, v2}, Ldefpackage/hkg;->a(Ldefpackage/hkn;Ljava/util/Collection;Z)Ldefpackage/hkm;
+    invoke-virtual {p1, v0, p2, v2}, Lhkg;->a(Lhkn;Ljava/util/Collection;Z)Lhkm;
 
     move-result-object v0
 
-    iget v0, v0, Ldefpackage/hkm;->a:F
+    iget v0, v0, Lhkm;->a:F
 
     const v3, 0x3d8f5c29    # 0.07f
 
@@ -147,11 +147,11 @@
     return v1
 .end method
 
-.method public static c(Ldefpackage/gan;FLdefpackage/hkg;Ljava/util/Collection;)Z
+.method public static c(Lgan;FLhkg;Ljava/util/Collection;)Z
     .locals 4
-    .param p0, "ganVar"    # Ldefpackage/gan;
+    .param p0, "ganVar"    # Lgan;
     .param p1, "f"    # F
-    .param p2, "hkgVar"    # Ldefpackage/hkg;
+    .param p2, "hkgVar"    # Lhkg;
     .param p3, "collection"    # Ljava/util/Collection;
 
     .line 42
@@ -170,34 +170,34 @@
 
     .line 45
     :cond_0
-    invoke-interface {p0}, Ldefpackage/gan;->f()Ldefpackage/ojc;
+    invoke-interface {p0}, Lgan;->f()Lojc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 46
-    invoke-interface {p0}, Ldefpackage/gan;->f()Ldefpackage/ojc;
+    invoke-interface {p0}, Lgan;->f()Lojc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/hla;
+    check-cast v0, Lhla;
 
-    iget-object v0, v0, Ldefpackage/hla;->a:[Ldefpackage/hkz;
+    iget-object v0, v0, Lhla;->a:[Lhkz;
 
     array-length v0, v0
 
     .line 48
     :cond_1
-    invoke-interface {p0}, Ldefpackage/gan;->a()F
+    invoke-interface {p0}, Lgan;->a()F
 
     move-result v0
 
@@ -211,15 +211,15 @@
 
     if-ltz v0, :cond_2
 
-    invoke-interface {p0}, Ldefpackage/gan;->d()Ldefpackage/hkn;
+    invoke-interface {p0}, Lgan;->d()Lhkn;
 
     move-result-object v0
 
-    invoke-virtual {p2, v0, p3, v2}, Ldefpackage/hkg;->a(Ldefpackage/hkn;Ljava/util/Collection;Z)Ldefpackage/hkm;
+    invoke-virtual {p2, v0, p3, v2}, Lhkg;->a(Lhkn;Ljava/util/Collection;Z)Lhkm;
 
     move-result-object v0
 
-    iget v0, v0, Ldefpackage/hkm;->a:F
+    iget v0, v0, Lhkm;->a:F
 
     const v3, 0x3d8f5c29    # 0.07f
 

@@ -44,9 +44,9 @@
 
     .line 42
     .local v0, "noOpPrewarmService":Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;
-    sget-object v1, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->a:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->a:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->b()Lova;
 
     move-result-object v1
 
@@ -54,12 +54,12 @@
 
     const/16 v3, 0x996
 
-    invoke-static {v1, v2, v3}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v1, v2, v3}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 43
-    iget-object v1, v0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->b:Ldefpackage/fjs;
+    iget-object v1, v0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->b:Lfjs;
 
-    invoke-interface {v1}, Ldefpackage/fjs;->F()V
+    invoke-interface {v1}, Lfjs;->F()V
 
     .line 44
     return-void

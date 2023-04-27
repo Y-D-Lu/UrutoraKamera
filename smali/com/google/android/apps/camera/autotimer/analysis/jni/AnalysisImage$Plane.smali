@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/mac;
+.implements Lmac;
 
 
 # annotations
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field private final a:Ldefpackage/mac;
+.field private final a:Lmac;
 
 .field public final synthetic this$0:Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;Ldefpackage/mac;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;Lmac;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;
-    .param p2, "macVar"    # Ldefpackage/mac;
+    .param p2, "macVar"    # Lmac;
 
     .line 18
     iput-object p1, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->this$0:Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage;
@@ -35,7 +35,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 19
-    iput-object p2, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->a:Ldefpackage/mac;
+    iput-object p2, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->a:Lmac;
 
     .line 20
     return-void
@@ -47,9 +47,9 @@
     .locals 1
 
     .line 24
-    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->a:Ldefpackage/mac;
+    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->a:Lmac;
 
-    invoke-interface {v0}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    invoke-interface {v0}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
@@ -60,9 +60,9 @@
     .locals 1
 
     .line 29
-    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->a:Ldefpackage/mac;
+    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->a:Lmac;
 
-    invoke-interface {v0}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v0}, Lmac;->getPixelStride()I
 
     move-result v0
 
@@ -73,9 +73,9 @@
     .locals 1
 
     .line 34
-    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->a:Ldefpackage/mac;
+    iget-object v0, p0, Lcom/google/android/apps/camera/autotimer/analysis/jni/AnalysisImage$Plane;->a:Lmac;
 
-    invoke-interface {v0}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v0}, Lmac;->getRowStride()I
 
     move-result v0
 

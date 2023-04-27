@@ -1,102 +1,67 @@
-.class final Ldefpackage/od;
-.super Landroid/animation/AnimatorListenerAdapter;
+.class public Ldefpackage/Od;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgdj;->o(Lhsp;Lgfi;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/qs;
+.field public final synthetic this$0:Lgdj;
 
-.field public final b:Landroid/view/View;
+.field public final synthetic val$a:J
 
-.field public final c:Landroid/view/ViewPropertyAnimator;
+.field public final synthetic val$gfiVar:Lgfi;
 
-.field public final d:Ldefpackage/py;
+.field public final synthetic val$hspVar:Lhsp;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/py;Ldefpackage/qs;Landroid/view/View;Landroid/view/ViewPropertyAnimator;)V
+.method public constructor <init>(Lgdj;Lhsp;Lgfi;J)V
     .locals 0
-    .param p1, "pyVar"    # Ldefpackage/py;
-    .param p2, "qsVar"    # Ldefpackage/qs;
-    .param p3, "view"    # Landroid/view/View;
-    .param p4, "viewPropertyAnimator"    # Landroid/view/ViewPropertyAnimator;
+    .param p1, "this$0"    # Lgdj;
 
-    .line 16
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    .line 430
+    iput-object p1, p0, Ldefpackage/Od;->this$0:Lgdj;
 
-    .line 17
-    iput-object p1, p0, Ldefpackage/od;->d:Ldefpackage/py;
+    iput-object p2, p0, Ldefpackage/Od;->val$hspVar:Lhsp;
 
-    .line 18
-    iput-object p2, p0, Ldefpackage/od;->a:Ldefpackage/qs;
+    iput-object p3, p0, Ldefpackage/Od;->val$gfiVar:Lgfi;
 
-    .line 19
-    iput-object p3, p0, Ldefpackage/od;->b:Landroid/view/View;
+    iput-wide p4, p0, Ldefpackage/Od;->val$a:J
 
-    .line 20
-    iput-object p4, p0, Ldefpackage/od;->c:Landroid/view/ViewPropertyAnimator;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 2
-    .param p1, "animator"    # Landroid/animation/Animator;
+.method public final run()V
+    .locals 5
 
-    .line 25
-    iget-object v0, p0, Ldefpackage/od;->b:Landroid/view/View;
+    .line 433
+    iget-object v0, p0, Ldefpackage/Od;->this$0:Lgdj;
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    iget-object v1, p0, Ldefpackage/Od;->val$hspVar:Lhsp;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+    iget-object v2, p0, Ldefpackage/Od;->val$gfiVar:Lgfi;
 
-    .line 26
-    return-void
-.end method
+    iget-wide v3, p0, Ldefpackage/Od;->val$a:J
 
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
-    .param p1, "animator"    # Landroid/animation/Animator;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lgdj;->p(Lhsp;Lgfi;J)V
 
-    .line 30
-    iget-object v0, p0, Ldefpackage/od;->c:Landroid/view/ViewPropertyAnimator;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
-
-    .line 31
-    iget-object v0, p0, Ldefpackage/od;->d:Ldefpackage/py;
-
-    iget-object v1, p0, Ldefpackage/od;->a:Ldefpackage/qs;
-
-    invoke-virtual {v0, v1}, Ldefpackage/py;->a(Ldefpackage/qs;)V
-
-    .line 32
-    iget-object v0, p0, Ldefpackage/od;->d:Ldefpackage/py;
-
-    iget-object v0, v0, Ldefpackage/py;->i:Ljava/util/ArrayList;
-
-    iget-object v1, p0, Ldefpackage/od;->a:Ldefpackage/qs;
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    .line 33
-    iget-object v0, p0, Ldefpackage/od;->d:Ldefpackage/py;
-
-    invoke-virtual {v0}, Ldefpackage/py;->g()V
-
-    .line 34
-    return-void
-.end method
-
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 0
-    .param p1, "animator"    # Landroid/animation/Animator;
-
-    .line 38
+    .line 434
     return-void
 .end method

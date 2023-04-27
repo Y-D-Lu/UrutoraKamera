@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->i(Ldefpackage/jdy;Ldefpackage/ddf;)V
+    value = Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->i(Ljdy;Lddf;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -53,19 +53,19 @@
 
     .line 160
     .local v1, "i3":I
-    iget-object v2, v0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ldefpackage/jem;
+    iget-object v2, v0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ljem;
 
     const/4 v3, 0x1
 
-    invoke-interface {v2, v3}, Ldefpackage/jem;->c(Z)V
+    invoke-interface {v2, v3}, Ljem;->c(Z)V
 
     .line 161
     invoke-virtual {v0, v1, v3}, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->l(IZ)V
 
     .line 162
-    iget-object v2, v0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ldefpackage/jem;
+    iget-object v2, v0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ljem;
 
-    invoke-interface {v2, v0, v3}, Ldefpackage/jem;->b(Landroid/view/View;Z)V
+    invoke-interface {v2, v0, v3}, Ljem;->b(Landroid/view/View;Z)V
 
     .line 163
     return-void

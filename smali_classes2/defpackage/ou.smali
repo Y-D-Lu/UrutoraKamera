@@ -1,23 +1,38 @@
-.class public final Ldefpackage/ou;
+.class public Ldefpackage/Ou;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Loiu;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Llot;->b(Ljava/util/Set;)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:I
+.field public final synthetic this$0:Llot;
 
-.field public b:I
-
-.field public c:[I
-
-.field public d:I
+.field public final synthetic val$losVar:Llos;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Llot;Llos;)V
     .locals 0
+    .param p1, "this$0"    # Llot;
 
-    .line 10
+    .line 92
+    iput-object p1, p0, Ldefpackage/Ou;->this$0:Llot;
+
+    iput-object p2, p0, Ldefpackage/Ou;->val$losVar:Llos;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,313 +40,128 @@
 
 
 # virtual methods
-.method public final a(II)V
-    .locals 6
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 17
-    if-ltz p1, :cond_3
+    .line 95
+    iget-object v0, p0, Ldefpackage/Ou;->val$losVar:Llos;
 
-    .line 18
-    if-ltz p2, :cond_2
+    .line 96
+    .local v0, "losVar2":Llos;
+    move-object v1, p1
 
-    .line 21
-    iget v0, p0, Ldefpackage/ou;->d:I
+    check-cast v1, Ljava/util/List;
 
-    .line 22
-    .local v0, "i3":I
-    add-int v1, v0, v0
+    .line 97
+    .local v1, "list":Ljava/util/List;, "Ljava/util/List<Ldefpackage/lun;>;"
+    invoke-static {}, Lope;->D()Lopc;
 
-    .line 23
-    .local v1, "i4":I
-    iget-object v2, p0, Ldefpackage/ou;->c:[I
+    move-result-object v2
 
-    .line 24
-    .local v2, "iArr":[I
-    if-nez v2, :cond_0
+    .line 98
+    .local v2, "D":Lopc;
+    iget-object v3, v0, Llos;->c:Ljava/util/List;
 
-    .line 25
-    const/4 v3, 0x4
+    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    new-array v3, v3, [I
+    move-result-object v3
 
-    .line 26
-    .local v3, "iArr2":[I
-    iput-object v3, p0, Ldefpackage/ou;->c:[I
-
-    .line 27
-    const/4 v4, -0x1
-
-    invoke-static {v3, v4}, Ljava/util/Arrays;->fill([II)V
-
-    .line 28
-    .end local v3    # "iArr2":[I
-    goto :goto_0
-
-    .line 29
-    :cond_0
-    array-length v3, v2
-
-    .line 30
-    .local v3, "length":I
-    if-lt v1, v3, :cond_1
-
-    .line 31
-    add-int v4, v1, v1
-
-    new-array v4, v4, [I
-
-    .line 32
-    .local v4, "iArr3":[I
-    iput-object v4, p0, Ldefpackage/ou;->c:[I
-
-    .line 33
-    const/4 v5, 0x0
-
-    invoke-static {v2, v5, v4, v5, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 36
-    .end local v3    # "length":I
-    .end local v4    # "iArr3":[I
-    :cond_1
     :goto_0
-    iget-object v3, p0, Ldefpackage/ou;->c:[I
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 37
-    .local v3, "iArr4":[I
-    aput p1, v3, v1
+    move-result v4
 
-    .line 38
-    add-int/lit8 v4, v1, 0x1
+    if-eqz v4, :cond_2
 
-    aput p2, v3, v4
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 39
-    iget v4, p0, Ldefpackage/ou;->d:I
+    move-result-object v4
 
-    add-int/lit8 v4, v4, 0x1
+    .line 99
+    .local v4, "lqdVar2":Ljava/lang/Object;
+    iget-object v5, v0, Llos;->d:Llot;
 
-    iput v4, p0, Ldefpackage/ou;->d:I
+    .line 100
+    .local v5, "lotVar":Llot;
+    invoke-static {}, Lope;->D()Lopc;
 
-    .line 40
-    return-void
+    move-result-object v6
 
-    .line 19
-    .end local v0    # "i3":I
-    .end local v1    # "i4":I
-    .end local v2    # "iArr":[I
-    .end local v3    # "iArr4":[I
-    :cond_2
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    .line 101
+    .local v6, "D2":Lopc;
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    const-string v1, "Pixel distance must be non-negative"
+    move-result-object v7
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    :goto_1
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
 
-    throw v0
+    move-result v8
 
-    .line 42
-    :cond_3
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    if-eqz v8, :cond_1
 
-    const-string v1, "Layout positions must be non-negative"
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    move-result-object v8
 
-    throw v0
-.end method
+    check-cast v8, Llun;
 
-.method public final b()V
-    .locals 2
+    .line 102
+    .local v8, "lunVar":Llun;
+    move-object v9, v4
 
-    .line 47
-    iget-object v0, p0, Ldefpackage/ou;->c:[I
+    check-cast v9, Llqd;
 
-    .line 48
-    .local v0, "iArr":[I
-    if-eqz v0, :cond_0
+    iget-object v9, v9, Llqd;->c:Lope;
 
-    .line 49
-    const/4 v1, -0x1
+    invoke-interface {v8}, Llun;->d()Llnx;
 
-    invoke-static {v0, v1}, Ljava/util/Arrays;->fill([II)V
+    move-result-object v10
 
-    .line 51
+    invoke-virtual {v9, v10}, Lood;->contains(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_0
+
+    .line 103
+    invoke-virtual {v6, v8}, Lopc;->d(Ljava/lang/Object;)V
+
+    .line 105
+    .end local v8    # "lunVar":Llun;
     :cond_0
-    const/4 v1, 0x0
-
-    iput v1, p0, Ldefpackage/ou;->d:I
-
-    .line 52
-    return-void
-.end method
-
-.method public final c(Landroid/support/v7/widget/RecyclerView;Z)V
-    .locals 5
-    .param p1, "recyclerView"    # Landroid/support/v7/widget/RecyclerView;
-    .param p2, "z"    # Z
-
-    .line 56
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/ou;->d:I
-
-    .line 57
-    iget-object v0, p0, Ldefpackage/ou;->c:[I
-
-    .line 58
-    .local v0, "iArr":[I
-    if-eqz v0, :cond_0
-
-    .line 59
-    const/4 v1, -0x1
-
-    invoke-static {v0, v1}, Ljava/util/Arrays;->fill([II)V
-
-    .line 61
-    :cond_0
-    iget-object v1, p1, Landroid/support/v7/widget/RecyclerView;->m:Landroid/view/qc;
-
-    .line 62
-    .local v1, "qcVar":Landroid/view/qc;
-    iget-object v2, p1, Landroid/support/v7/widget/RecyclerView;->l:Ldefpackage/pu;
-
-    if-eqz v2, :cond_5
-
-    if-eqz v1, :cond_5
-
-    iget-boolean v2, v1, Landroid/view/qc;->x:Z
-
-    if-nez v2, :cond_1
-
     goto :goto_1
 
-    .line 65
+    .line 106
     :cond_1
-    if-eqz p2, :cond_2
+    iget-object v7, v5, Llot;->b:Lnox;
 
-    .line 66
-    iget-object v2, p1, Landroid/support/v7/widget/RecyclerView;->e:Ldefpackage/mn;
+    move-object v8, v4
 
-    invoke-virtual {v2}, Ldefpackage/mn;->l()Z
+    check-cast v8, Llqd;
 
-    move-result v2
+    invoke-virtual {v6}, Lopc;->f()Lope;
 
-    if-nez v2, :cond_3
+    move-result-object v9
 
-    .line 67
-    iget-object v2, p1, Landroid/support/v7/widget/RecyclerView;->l:Ldefpackage/pu;
+    invoke-static {v7, v8, v9}, Llqh;->n(Lnox;Llqd;Ljava/util/Set;)Llqh;
 
-    invoke-virtual {v2}, Ldefpackage/pu;->a()I
+    move-result-object v7
 
-    move-result v2
+    invoke-virtual {v2, v7}, Lopc;->d(Ljava/lang/Object;)V
 
-    invoke-virtual {v1, v2, p0}, Landroid/view/qc;->ab(ILdefpackage/ou;)V
-
+    .line 107
+    .end local v4    # "lqdVar2":Ljava/lang/Object;
+    .end local v5    # "lotVar":Llot;
+    .end local v6    # "D2":Lopc;
     goto :goto_0
 
-    .line 69
+    .line 108
     :cond_2
-    invoke-virtual {p1}, Landroid/support/v7/widget/RecyclerView;->af()Z
+    invoke-virtual {v2}, Lopc;->f()Lope;
 
-    move-result v2
+    move-result-object v3
 
-    if-nez v2, :cond_3
-
-    .line 70
-    iget v2, p0, Ldefpackage/ou;->a:I
-
-    iget v3, p0, Ldefpackage/ou;->b:I
-
-    iget-object v4, p1, Landroid/support/v7/widget/RecyclerView;->L:Ldefpackage/qp;
-
-    invoke-virtual {v1, v2, v3, v4, p0}, Landroid/view/qc;->aa(IILdefpackage/qp;Ldefpackage/ou;)V
-
-    .line 72
-    :cond_3
-    :goto_0
-    iget v2, p0, Ldefpackage/ou;->d:I
-
-    .line 73
-    .local v2, "i":I
-    iget v3, v1, Landroid/view/qc;->y:I
-
-    if-gt v2, v3, :cond_4
-
-    .line 74
-    return-void
-
-    .line 76
-    :cond_4
-    iput v2, v1, Landroid/view/qc;->y:I
-
-    .line 77
-    iput-boolean p2, v1, Landroid/view/qc;->z:Z
-
-    .line 78
-    iget-object v3, p1, Landroid/support/v7/widget/RecyclerView;->c:Ldefpackage/qi;
-
-    invoke-virtual {v3}, Ldefpackage/qi;->m()V
-
-    .line 79
-    return-void
-
-    .line 63
-    .end local v2    # "i":I
-    :cond_5
-    :goto_1
-    return-void
-.end method
-
-.method public final d(I)Z
-    .locals 4
-    .param p1, "i"    # I
-
-    .line 83
-    iget-object v0, p0, Ldefpackage/ou;->c:[I
-
-    if-eqz v0, :cond_1
-
-    .line 84
-    iget v0, p0, Ldefpackage/ou;->d:I
-
-    .line 85
-    .local v0, "i2":I
-    add-int v1, v0, v0
-
-    .line 86
-    .local v1, "i3":I
-    const/4 v2, 0x0
-
-    .local v2, "i4":I
-    :goto_0
-    if-ge v2, v1, :cond_1
-
-    .line 87
-    iget-object v3, p0, Ldefpackage/ou;->c:[I
-
-    aget v3, v3, v2
-
-    if-ne v3, p1, :cond_0
-
-    .line 88
-    const/4 v3, 0x1
-
-    return v3
-
-    .line 86
-    :cond_0
-    add-int/lit8 v2, v2, 0x2
-
-    goto :goto_0
-
-    .line 92
-    .end local v0    # "i2":I
-    .end local v1    # "i3":I
-    .end local v2    # "i4":I
-    :cond_1
-    const/4 v0, 0x0
-
-    return v0
+    return-object v3
 .end method

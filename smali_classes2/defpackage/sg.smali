@@ -1,223 +1,159 @@
-.class public final Ldefpackage/sg;
+.class public Ldefpackage/Sg;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhop;->e(Lhos;Llap;Lcom/google/android/apps/camera/uiutils/ReplaceableView;Lhpc;Ljsc;Llco;Llco;Llco;Llco;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:I
+.field public final a:Lhop;
 
-.field public final b:Landroid/os/Bundle;
+.field public final synthetic this$0:Lhop;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 3
-    .param p1, "i"    # I
+.method public constructor <init>(Lhop;)V
+    .locals 0
+    .param p1, "this$0"    # Lhop;
 
-    .line 12
+    .line 150
+    iput-object p1, p0, Ldefpackage/Sg;->this$0:Lhop;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    iput p1, p0, Ldefpackage/sg;->a:I
+    .line 151
+    iput-object p1, p0, Ldefpackage/Sg;->a:Lhop;
 
-    .line 14
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    .line 15
-    .local v0, "bundle":Landroid/os/Bundle;
-    iput-object v0, p0, Ldefpackage/sg;->b:Landroid/os/Bundle;
-
-    .line 16
-    const/4 v1, 0x7
-
-    if-eq p1, v1, :cond_0
-
-    const/4 v1, 0x4
-
-    if-ne p1, v1, :cond_1
-
-    .line 17
-    :cond_0
-    const-string v1, "IMAGE_STYLE"
-
-    invoke-static {v1, p1}, Landroid/support/wearable/complications/ComplicationData;->j(Ljava/lang/String;I)V
-
-    .line 18
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 20
-    :cond_1
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/support/wearable/complications/ComplicationData;
-    .locals 6
+.method public final fB(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 24
-    sget-object v0, Landroid/support/wearable/complications/ComplicationData;->a:[[Ljava/lang/String;
+    .line 155
+    const/4 v0, -0x1
 
-    iget v1, p0, Ldefpackage/sg;->a:I
+    packed-switch v0, :pswitch_data_0
 
-    aget-object v0, v0, v1
+    .line 174
+    move-object v0, p1
 
-    array-length v1, v0
+    check-cast v0, Ljava/lang/String;
 
-    const/4 v2, 0x0
+    .line 175
+    .local v0, "str3":Ljava/lang/String;
+    iget-object v1, p0, Ldefpackage/Sg;->a:Lhop;
 
-    :goto_0
-    if-ge v2, v1, :cond_5
+    invoke-virtual {v1}, Lhop;->c()V
 
-    aget-object v3, v0, v2
+    .line 176
+    return-void
 
-    .line 25
-    .local v3, "str":Ljava/lang/String;
-    iget-object v4, p0, Ldefpackage/sg;->b:Landroid/os/Bundle;
+    .line 170
+    .end local v0    # "str3":Ljava/lang/String;
+    :pswitch_0
+    move-object v0, p1
 
-    invoke-virtual {v4, v3}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    check-cast v0, Ljava/lang/String;
 
-    move-result v4
+    .line 171
+    .local v0, "str2":Ljava/lang/String;
+    iget-object v1, p0, Ldefpackage/Sg;->a:Lhop;
 
-    if-eqz v4, :cond_4
+    invoke-virtual {v1}, Lhop;->c()V
 
-    .line 33
-    iget-object v4, p0, Ldefpackage/sg;->b:Landroid/os/Bundle;
+    .line 172
+    return-void
 
-    const-string v5, "ICON_BURN_IN_PROTECTION"
+    .line 166
+    .end local v0    # "str2":Ljava/lang/String;
+    :pswitch_1
+    move-object v0, p1
 
-    invoke-virtual {v4, v5}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    check-cast v0, Ljava/lang/String;
 
-    move-result v4
+    .line 167
+    .local v0, "str":Ljava/lang/String;
+    iget-object v1, p0, Ldefpackage/Sg;->a:Lhop;
 
-    if-eqz v4, :cond_1
+    invoke-virtual {v1}, Lhop;->c()V
 
-    iget-object v4, p0, Ldefpackage/sg;->b:Landroid/os/Bundle;
+    .line 168
+    return-void
 
-    const-string v5, "ICON"
+    .line 161
+    .end local v0    # "str":Ljava/lang/String;
+    :pswitch_2
+    iget-object v0, p0, Ldefpackage/Sg;->a:Lhop;
 
-    invoke-virtual {v4, v5}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    .line 162
+    .local v0, "hopVar":Lhop;
+    move-object v1, p1
 
-    move-result v4
+    check-cast v1, Lcwi;
 
-    if-eqz v4, :cond_0
+    iget-object v1, v1, Lcwi;->a:Lghx;
 
-    goto :goto_1
+    invoke-virtual {v1}, Llwe;->k()Llwd;
 
-    .line 34
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
+    move-result-object v1
 
-    const-string v1, "Field ICON must be provided when field ICON_BURN_IN_PROTECTION is provided."
+    sget-object v2, Llwd;->FRONT:Llwd;
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    if-ne v1, v2, :cond_0
 
-    throw v0
-
-    .line 36
-    :cond_1
-    :goto_1
-    iget-object v4, p0, Ldefpackage/sg;->b:Landroid/os/Bundle;
-
-    const-string v5, "SMALL_IMAGE_BURN_IN_PROTECTION"
-
-    invoke-virtual {v4, v5}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_3
-
-    iget-object v4, p0, Ldefpackage/sg;->b:Landroid/os/Bundle;
-
-    const-string v5, "SMALL_IMAGE"
-
-    invoke-virtual {v4, v5}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    goto :goto_2
-
-    .line 37
-    :cond_2
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Field SMALL_IMAGE must be provided when field SMALL_IMAGE_BURN_IN_PROTECTION is provided."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 24
-    .end local v3    # "str":Ljava/lang/String;
-    :cond_3
-    :goto_2
-    add-int/lit8 v2, v2, 0x1
+    const/4 v1, 0x1
 
     goto :goto_0
 
-    .line 26
-    .restart local v3    # "str":Ljava/lang/String;
-    :cond_4
-    iget v0, p0, Ldefpackage/sg;->a:I
+    :cond_0
+    const/4 v1, 0x0
 
-    .line 27
-    .local v0, "i":I
-    new-instance v1, Ljava/lang/StringBuilder;
+    :goto_0
+    iput-boolean v1, v0, Lhop;->b:Z
 
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 163
+    invoke-virtual {v0}, Lhop;->c()V
 
-    move-result-object v2
+    .line 164
+    return-void
 
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    .line 157
+    .end local v0    # "hopVar":Lhop;
+    :pswitch_3
+    move-object v0, p1
 
-    move-result v2
+    check-cast v0, Ljrl;
 
-    add-int/lit8 v2, v2, 0x27
+    .line 158
+    .local v0, "jrlVar":Ljrl;
+    iget-object v1, p0, Ldefpackage/Sg;->a:Lhop;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-virtual {v1}, Lhop;->c()V
 
-    .line 28
-    .local v1, "sb":Ljava/lang/StringBuilder;
-    const-string v2, "Field "
+    .line 159
+    return-void
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 29
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 30
-    const-string v2, " is required for type "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 31
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 32
-    new-instance v2, Ljava/lang/IllegalStateException;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-direct {v2, v4}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v2
-
-    .line 41
-    .end local v0    # "i":I
-    .end local v1    # "sb":Ljava/lang/StringBuilder;
-    .end local v3    # "str":Ljava/lang/String;
-    :cond_5
-    new-instance v0, Landroid/support/wearable/complications/ComplicationData;
-
-    invoke-direct {v0, p0}, Landroid/support/wearable/complications/ComplicationData;-><init>(Ldefpackage/sg;)V
-
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

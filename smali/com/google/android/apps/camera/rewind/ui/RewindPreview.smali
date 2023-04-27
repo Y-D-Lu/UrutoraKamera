@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Ldefpackage/jrz;
+.field public a:Ljrz;
 
 
 # direct methods
@@ -50,9 +50,9 @@
     .locals 1
 
     .line 27
-    iget-object v0, p0, Lcom/google/android/apps/camera/rewind/ui/RewindPreview;->a:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/rewind/ui/RewindPreview;->a:Ljrz;
 
-    invoke-static {p0, v0}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, v0}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 28
     return-void
@@ -70,7 +70,7 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
     .line 33
-    iget-object v0, p0, Lcom/google/android/apps/camera/rewind/ui/RewindPreview;->a:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/rewind/ui/RewindPreview;->a:Ljrz;
 
     if-eqz v0, :cond_1
 
@@ -97,13 +97,13 @@
     .param p2, "i2"    # I
 
     .line 41
-    iget-object v0, p0, Lcom/google/android/apps/camera/rewind/ui/RewindPreview;->a:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/rewind/ui/RewindPreview;->a:Ljrz;
 
     .line 42
-    .local v0, "jrzVar":Ldefpackage/jrz;
+    .local v0, "jrzVar":Ljrz;
     if-eqz v0, :cond_1
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v1
 

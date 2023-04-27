@@ -1,108 +1,83 @@
-.class public final Ldefpackage/wg;
-.super Ldefpackage/qnp;
+.class public Ldefpackage/Wg;
+.super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/qmj;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field public static final a:Ldefpackage/wg;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhps;->F(Landroid/graphics/Bitmap;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private final b:I
+.field public final synthetic this$0:Lhps;
+
+.field public final synthetic val$bitmap:Landroid/graphics/Bitmap;
+
+.field public final synthetic val$h:Lhsp;
+
+.field public final synthetic val$hrxVar:Lhrx;
+
+.field public final synthetic val$i:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lhps;Lhrx;Lhsp;Landroid/graphics/Bitmap;I)V
+    .locals 0
+    .param p1, "this$0"    # Lhps;
 
-    .line 11
-    new-instance v0, Ldefpackage/wg;
+    .line 146
+    iput-object p1, p0, Ldefpackage/Wg;->this$0:Lhps;
 
-    const/4 v1, 0x2
+    iput-object p2, p0, Ldefpackage/Wg;->val$hrxVar:Lhrx;
 
-    invoke-direct {v0, v1}, Ldefpackage/wg;-><init>(I)V
+    iput-object p3, p0, Ldefpackage/Wg;->val$h:Lhsp;
 
-    sput-object v0, Ldefpackage/wg;->a:Ldefpackage/wg;
+    iput-object p4, p0, Ldefpackage/Wg;->val$bitmap:Landroid/graphics/Bitmap;
 
-    return-void
-.end method
+    iput p5, p0, Ldefpackage/Wg;->val$i:I
 
-.method public constructor <init>(I)V
-    .locals 1
-    .param p1, "i"    # I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Ldefpackage/qnp;-><init>(I)V
-
-    .line 17
-    iput p1, p0, Ldefpackage/wg;->b:I
-
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final mo3invoke()Ljava/lang/Object;
-    .locals 3
+.method public final run()V
+    .locals 5
 
-    .line 23
-    iget v0, p0, Ldefpackage/wg;->b:I
+    .line 149
+    iget-object v0, p0, Ldefpackage/Wg;->val$hrxVar:Lhrx;
 
-    packed-switch v0, :pswitch_data_0
+    .line 150
+    .local v0, "hrxVar2":Lhrx;
+    iget-object v1, p0, Ldefpackage/Wg;->val$h:Lhsp;
 
-    .line 31
-    sget-object v0, Ldefpackage/qks;->a:Ldefpackage/qks;
+    .line 151
+    .local v1, "hspVar":Lhsp;
+    iget-object v2, p0, Ldefpackage/Wg;->val$bitmap:Landroid/graphics/Bitmap;
 
-    return-object v0
+    .line 152
+    .local v2, "bitmap2":Landroid/graphics/Bitmap;
+    iget v3, p0, Ldefpackage/Wg;->val$i:I
 
-    .line 29
-    :pswitch_0
-    new-instance v0, Ldefpackage/abp;
+    .line 153
+    .local v3, "i2":I
+    new-instance v4, Ldefpackage/Vg;
 
-    const/4 v1, 0x1
+    invoke-direct {v4, p0, v1, v2, v3}, Ldefpackage/Vg;-><init>(Ldefpackage/Wg;Lhsp;Landroid/graphics/Bitmap;I)V
 
-    invoke-direct {v0, v1}, Ldefpackage/abp;-><init>(I)V
+    invoke-virtual {v0, v4}, Lhrx;->d(Ljava/util/function/Consumer;)V
 
-    invoke-static {v1, v0}, Ljava/util/concurrent/Executors;->newFixedThreadPool(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
-
-    move-result-object v0
-
-    return-object v0
-
-    .line 25
-    :pswitch_1
-    new-instance v0, Landroid/os/HandlerThread;
-
-    const-string v1, "CXCP-Camera2-H"
-
-    invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
-
-    .line 26
-    .local v0, "handlerThread":Landroid/os/HandlerThread;
-    invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
-
-    .line 27
-    new-instance v1, Landroid/os/Handler;
-
-    invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    return-object v1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 164
+    return-void
 .end method

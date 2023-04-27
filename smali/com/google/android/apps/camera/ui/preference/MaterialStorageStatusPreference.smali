@@ -103,15 +103,15 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/ahm;)V
+.method public final a(Lahm;)V
     .locals 2
-    .param p1, "ahmVar"    # Ldefpackage/ahm;
+    .param p1, "ahmVar"    # Lahm;
 
     .line 54
-    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Ldefpackage/ahm;)V
+    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Lahm;)V
 
     .line 55
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const v1, 0x7f0a021b
 
@@ -124,7 +124,7 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialStorageStatusPreference;->f:Landroid/widget/TextView;
 
     .line 56
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const v1, 0x7f0a021a
 
@@ -137,7 +137,7 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialStorageStatusPreference;->g:Landroid/widget/TextView;
 
     .line 57
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const v1, 0x7f0a0219
 

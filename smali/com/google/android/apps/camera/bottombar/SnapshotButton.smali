@@ -52,7 +52,7 @@
     .line 29
     const/high16 v0, 0x40000000    # 2.0f
 
-    invoke-static {v0}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v0}, Ljsa;->b(F)I
 
     move-result v0
 
@@ -72,14 +72,14 @@
     return-void
 .end method
 
-.method public setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+.method public setMode(Ljkc;Ljkz;Z)V
     .locals 2
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
-    .param p2, "jkzVar"    # Ldefpackage/jkz;
+    .param p1, "jkcVar"    # Ljkc;
+    .param p2, "jkzVar"    # Ljkz;
     .param p3, "z"    # Z
 
     .line 39
-    sget-object v0, Ldefpackage/jkc;->PHOTO_PRESSED:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->PHOTO_PRESSED:Ljkc;
 
     invoke-virtual {p1, v0}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -88,15 +88,15 @@
     if-eqz v1, :cond_0
 
     .line 40
-    invoke-super {p0, v0, p2, p3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-super {p0, v0, p2, p3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     goto :goto_0
 
     .line 42
     :cond_0
-    sget-object v0, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    invoke-super {p0, v0, p2, p3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-super {p0, v0, p2, p3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 44
     :goto_0
@@ -107,17 +107,17 @@
     .locals 2
 
     .line 47
-    new-instance v0, Ldefpackage/jkz;
+    new-instance v0, Ljkz;
 
-    invoke-direct {v0, p0}, Ldefpackage/jkz;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
+    invoke-direct {v0, p0}, Ljkz;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
 
     .line 48
-    .local v0, "jkzVar":Ldefpackage/jkz;
+    .local v0, "jkzVar":Ljkz;
     new-instance v1, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;
 
-    invoke-direct {v1, p0, v0}, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;-><init>(Lcom/google/android/apps/camera/bottombar/SnapshotButton;Ldefpackage/jkz;)V
+    invoke-direct {v1, p0, v0}, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;-><init>(Lcom/google/android/apps/camera/bottombar/SnapshotButton;Ljkz;)V
 
-    invoke-virtual {p0, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setListener(Ldefpackage/jli;)V
+    invoke-virtual {p0, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setListener(Ljli;)V
 
     .line 54
     const/4 v1, 0x1

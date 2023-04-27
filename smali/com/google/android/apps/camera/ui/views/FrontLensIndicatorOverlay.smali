@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
 .field public b:Landroid/animation/ValueAnimator;
 
-.field public final c:Ldefpackage/dcw;
+.field public final c:Ldcw;
 
 .field public final d:Landroid/graphics/Paint;
 
@@ -34,7 +34,7 @@
 
 .field public n:F
 
-.field public o:Ldefpackage/jrz;
+.field public o:Ljrz;
 
 .field public p:I
 
@@ -48,11 +48,11 @@
     .line 31
     const-string v0, "com/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->a:Louj;
 
     return-void
 .end method
@@ -99,9 +99,9 @@
     iput v0, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->m:F
 
     .line 58
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ljrz;
 
     .line 59
     const/4 v0, 0x1
@@ -111,21 +111,21 @@
     .line 60
     move-object v1, p1
 
-    check-cast v1, Ldefpackage/bpx;
+    check-cast v1, Lbpx;
 
-    invoke-interface {v1}, Ldefpackage/bpx;->a()Ldefpackage/ddf;
+    invoke-interface {v1}, Lbpx;->a()Lddf;
 
     move-result-object v1
 
     .line 61
-    .local v1, "a2":Ldefpackage/ddf;
-    sget-object v2, Ldefpackage/dcy;->a:Ldefpackage/ddi;
+    .local v1, "a2":Lddf;
+    sget-object v2, Ldcy;->a:Lddi;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->a(Ldefpackage/ddi;)Ldefpackage/ojc;
+    invoke-interface {v1, v2}, Lddf;->a(Lddi;)Lojc;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v2}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -135,11 +135,11 @@
 
     move-result v2
 
-    invoke-static {v1, v2}, Ldefpackage/dcy;->a(Ldefpackage/ddf;I)Ldefpackage/dcw;
+    invoke-static {v1, v2}, Ldcy;->a(Lddf;I)Ldcw;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->c:Ldefpackage/dcw;
+    iput-object v2, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->c:Ldcw;
 
     .line 62
     new-instance v2, Landroid/view/animation/LinearInterpolator;
@@ -192,9 +192,9 @@
     invoke-virtual {v2, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 69
-    sget-object v0, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v0, Lddl;->ay:Lddg;
 
-    invoke-interface {v1, v0}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v0}, Lddf;->k(Lddg;)Z
 
     move-result v0
 
@@ -202,7 +202,7 @@
 
     const v0, 0x7f0400ef
 
-    invoke-static {p0, v0}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {p0, v0}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v0
 
@@ -254,9 +254,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 78
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ljrz;
 
-    invoke-static {p0, v0}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, v0}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 79
     invoke-static {}, Landroid/os/Trace;->endSection()V
@@ -379,9 +379,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 107
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/FrontLensIndicatorOverlay;->o:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

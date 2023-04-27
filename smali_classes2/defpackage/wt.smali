@@ -1,54 +1,57 @@
-.class final Ldefpackage/wt;
-.super Ldefpackage/xc;
+.class public Ldefpackage/Wt;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Llcn;->a(Llij;Ljava/util/concurrent/Executor;)Llie;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/wy;
+.field public final synthetic this$0:Llcn;
+
+.field public final synthetic val$lijVar:Llij;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/wy;)V
-    .locals 1
-    .param p1, "wyVar"    # Ldefpackage/wy;
+.method public constructor <init>(Llcn;Llij;)V
+    .locals 0
+    .param p1, "this$0"    # Llcn;
 
-    .line 10
-    iget v0, p1, Ldefpackage/xf;->j:I
+    .line 22
+    iput-object p1, p0, Ldefpackage/Wt;->this$0:Llcn;
 
-    invoke-direct {p0, v0}, Ldefpackage/xc;-><init>(I)V
+    iput-object p2, p0, Ldefpackage/Wt;->val$lijVar:Llij;
 
-    .line 11
-    iput-object p1, p0, Ldefpackage/wt;->a:Ldefpackage/wy;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)Ljava/lang/Object;
-    .locals 1
-    .param p1, "i"    # I
+.method public final run()V
+    .locals 2
 
-    .line 16
-    iget-object v0, p0, Ldefpackage/wt;->a:Ldefpackage/wy;
+    .line 25
+    iget-object v0, p0, Ldefpackage/Wt;->val$lijVar:Llij;
 
-    invoke-virtual {v0, p1}, Ldefpackage/xf;->f(I)Ljava/lang/Object;
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object v1
 
-    return-object v0
-.end method
+    invoke-interface {v0, v1}, Llij;->fB(Ljava/lang/Object;)V
 
-.method public final b(I)V
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 21
-    iget-object v0, p0, Ldefpackage/wt;->a:Ldefpackage/wy;
-
-    invoke-virtual {v0, p1}, Ldefpackage/xf;->g(I)Ljava/lang/Object;
-
-    .line 22
+    .line 26
     return-void
 .end method

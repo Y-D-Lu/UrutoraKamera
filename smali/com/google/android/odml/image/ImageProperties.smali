@@ -25,9 +25,9 @@
     .locals 1
 
     .line 18
-    new-instance v0, Ldefpackage/odo;
+    new-instance v0, Lodo;
 
-    invoke-direct {v0}, Ldefpackage/odo;-><init>()V
+    invoke-direct {v0}, Lodo;-><init>()V
 
     return-object v0
 .end method

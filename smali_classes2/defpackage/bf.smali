@@ -1,53 +1,72 @@
-.class final Ldefpackage/bf;
+.class public Ldefpackage/Bf;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgza;-><init>(Llnc;Ljava/util/Map;Llco;Llap;Ljava/util/concurrent/Executor;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/bg;
+.field public final synthetic this$0:Lgza;
+
+.field public final synthetic val$executor:Ljava/util/concurrent/Executor;
+
+.field public final synthetic val$hashMap:Ljava/util/HashMap;
+
+.field public final synthetic val$lncVar:Llnc;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/bg;)V
+.method public constructor <init>(Lgza;Ljava/util/HashMap;Llnc;Ljava/util/concurrent/Executor;)V
     .locals 0
-    .param p1, "bgVar"    # Ldefpackage/bg;
+    .param p1, "this$0"    # Lgza;
 
-    .line 8
+    .line 63
+    iput-object p1, p0, Ldefpackage/Bf;->this$0:Lgza;
+
+    iput-object p2, p0, Ldefpackage/Bf;->val$hashMap:Ljava/util/HashMap;
+
+    iput-object p3, p0, Ldefpackage/Bf;->val$lncVar:Llnc;
+
+    iput-object p4, p0, Ldefpackage/Bf;->val$executor:Ljava/util/concurrent/Executor;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
-    iput-object p1, p0, Ldefpackage/bf;->a:Ldefpackage/bg;
-
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final fB(Ljava/lang/Object;)V
+    .locals 5
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 14
-    iget-object v0, p0, Ldefpackage/bf;->a:Ldefpackage/bg;
+    .line 66
+    iget-object v0, p0, Ldefpackage/Bf;->this$0:Lgza;
 
-    .line 15
-    .local v0, "bgVar":Ldefpackage/bg;
-    iget-object v1, v0, Ldefpackage/bg;->b:Landroid/view/ViewGroup;
+    iget-object v1, p0, Ldefpackage/Bf;->val$hashMap:Ljava/util/HashMap;
 
-    iget-object v2, v0, Ldefpackage/bg;->c:Landroid/view/View;
+    iget-object v2, p0, Ldefpackage/Bf;->val$lncVar:Llnc;
 
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
+    iget-object v3, p0, Ldefpackage/Bf;->val$executor:Ljava/util/concurrent/Executor;
 
-    .line 16
-    iget-object v1, p0, Ldefpackage/bf;->a:Ldefpackage/bg;
+    move-object v4, p1
 
-    iget-object v1, v1, Ldefpackage/bg;->d:Ldefpackage/bi;
+    check-cast v4, Ljava/lang/String;
 
-    invoke-virtual {v1}, Ldefpackage/bj;->b()V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lgza;->s(Ljava/util/Map;Llnc;Ljava/util/concurrent/Executor;Ljava/lang/String;)V
 
-    .line 17
+    .line 67
     return-void
 .end method

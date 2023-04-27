@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public final e(ILdefpackage/qi;Ldefpackage/qp;)I
+.method public final e(ILqi;Lqp;)I
     .locals 1
     .param p1, "i"    # I
-    .param p2, "qiVar"    # Ldefpackage/qi;
-    .param p3, "qpVar"    # Ldefpackage/qp;
+    .param p2, "qiVar"    # Lqi;
+    .param p3, "qpVar"    # Lqp;
 
     .line 12
     const/4 v0, 0x0
@@ -27,10 +27,10 @@
     throw v0
 .end method
 
-.method public final n(Ldefpackage/qi;Ldefpackage/qp;)V
+.method public final n(Lqi;Lqp;)V
     .locals 1
-    .param p1, "qiVar"    # Ldefpackage/qi;
-    .param p2, "qpVar"    # Ldefpackage/qp;
+    .param p1, "qiVar"    # Lqi;
+    .param p2, "qpVar"    # Lqp;
 
     .line 17
     const/4 v0, 0x0

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Ldefpackage/asl;
+.field public a:Lasl;
 
 
 # direct methods
@@ -22,32 +22,32 @@
 
 
 # virtual methods
-.method public final a()Ldefpackage/pht;
+.method public final a()Lpht;
     .locals 2
 
     .line 20
-    invoke-static {}, Ldefpackage/asl;->h()Ldefpackage/asl;
+    invoke-static {}, Lasl;->h()Lasl;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/work/Worker;->a:Ldefpackage/asl;
+    iput-object v0, p0, Landroidx/work/Worker;->a:Lasl;
 
     .line 21
     invoke-virtual {p0}, Landroidx/work/ListenableWorker;->g()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/ang;
+    new-instance v1, Lang;
 
-    invoke-direct {v1, p0}, Ldefpackage/ang;-><init>(Landroidx/work/Worker;)V
+    invoke-direct {v1, p0}, Lang;-><init>(Landroidx/work/Worker;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     .line 22
-    iget-object v0, p0, Landroidx/work/Worker;->a:Ldefpackage/asl;
+    iget-object v0, p0, Landroidx/work/Worker;->a:Lasl;
 
     return-object v0
 .end method
 
-.method public abstract b()Ldefpackage/ge;
+.method public abstract b()Lge;
 .end method

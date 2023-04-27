@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/hlr;
-.implements Ldefpackage/lie;
+.implements Lhlr;
+.implements Llie;
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
@@ -22,14 +22,14 @@
     .line 10
     const-string v0, "com/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl;->a:Louj;
 
     .line 14
-    invoke-static {}, Ldefpackage/hls;->a()V
+    invoke-static {}, Lhls;->a()V
 
     .line 15
     return-void

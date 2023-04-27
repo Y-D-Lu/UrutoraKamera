@@ -1,73 +1,70 @@
-.class public final Ldefpackage/ir;
-.super Ldefpackage/it;
+.class public Ldefpackage/Ir;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Jr;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/os/PowerManager;
-
-.field public final b:Ldefpackage/iy;
+.field public final synthetic this$1:Ldefpackage/Jr;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/iy;Landroid/content/Context;)V
-    .locals 2
-    .param p1, "iyVar"    # Ldefpackage/iy;
-    .param p2, "context"    # Landroid/content/Context;
+.method public constructor <init>(Ldefpackage/Jr;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Jr;
 
-    .line 16
-    invoke-direct {p0, p1}, Ldefpackage/it;-><init>(Ldefpackage/iy;)V
+    .line 27910
+    iput-object p1, p0, Ldefpackage/Ir;->this$1:Ldefpackage/Jr;
 
-    .line 17
-    iput-object p1, p0, Ldefpackage/ir;->b:Ldefpackage/iy;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
-    invoke-virtual {p2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string v1, "power"
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/os/PowerManager;
-
-    iput-object v0, p0, Ldefpackage/ir;->a:Landroid/os/PowerManager;
-
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/content/IntentFilter;
-    .locals 2
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 23
-    new-instance v0, Landroid/content/IntentFilter;
+    .line 27913
+    move-object v0, p1
 
-    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+    check-cast v0, Landroid/animation/Animator;
 
-    .line 24
-    .local v0, "intentFilter":Landroid/content/IntentFilter;
-    const-string v1, "android.os.action.POWER_SAVE_MODE_CHANGED"
+    .line 27914
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Ir;->this$1:Ldefpackage/Jr;
 
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    iget-object v1, v1, Ldefpackage/Jr;->this$0:Ljkz;
 
-    .line 25
-    return-object v0
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
+
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
+
+    .line 27915
+    return-void
 .end method
 
-.method public final b()V
-    .locals 1
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 30
-    iget-object v0, p0, Ldefpackage/ir;->b:Ldefpackage/iy;
-
-    invoke-virtual {v0}, Ldefpackage/iy;->H()V
-
-    .line 31
-    return-void
+    .line 27919
+    return-object p1
 .end method

@@ -21,9 +21,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 16
-    new-instance v0, Ldefpackage/pmt;
+    new-instance v0, Lpmt;
 
-    invoke-direct {v0, p0}, Ldefpackage/pmt;-><init>(Lcom/google/lullaby/modules/audio/DeviceInfo;)V
+    invoke-direct {v0, p0}, Lpmt;-><init>(Lcom/google/lullaby/modules/audio/DeviceInfo;)V
 
     iput-object v0, p0, Lcom/google/lullaby/modules/audio/DeviceInfo;->c:Landroid/content/BroadcastReceiver;
 

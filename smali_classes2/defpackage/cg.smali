@@ -1,80 +1,98 @@
-.class public final Ldefpackage/cg;
+.class public Ldefpackage/Cg;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/view/View$OnAttachStateChangeListener;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhik;->d(Landroid/content/Context;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/da;
-
-.field public final b:Ldefpackage/ch;
+.field public final synthetic this$0:Lhik;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/ch;Ldefpackage/da;)V
+.method public constructor <init>(Lhik;)V
     .locals 0
-    .param p1, "chVar"    # Ldefpackage/ch;
-    .param p2, "daVar"    # Ldefpackage/da;
+    .param p1, "this$0"    # Lhik;
 
-    .line 13
+    .line 68
+    iput-object p1, p0, Ldefpackage/Cg;->this$0:Lhik;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    iput-object p1, p0, Ldefpackage/cg;->b:Ldefpackage/ch;
-
-    .line 15
-    iput-object p2, p0, Ldefpackage/cg;->a:Ldefpackage/da;
-
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 4
-    .param p1, "view"    # Landroid/view/View;
+.method public final run()V
+    .locals 3
 
-    .line 20
-    iget-object v0, p0, Ldefpackage/cg;->a:Ldefpackage/da;
+    .line 72
+    :try_start_0
+    iget-object v0, p0, Ldefpackage/Cg;->this$0:Lhik;
 
-    .line 21
-    .local v0, "daVar":Ldefpackage/da;
-    iget-object v1, v0, Ldefpackage/da;->c:Ldefpackage/bu;
+    iget-object v0, v0, Lhik;->b:Lhgy;
 
-    .line 22
-    .local v1, "buVar":Ldefpackage/bu;
-    invoke-virtual {v0}, Ldefpackage/da;->d()V
+    invoke-virtual {v0}, Lhgy;->c()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 23
-    iget-object v2, v1, Ldefpackage/bu;->M:Landroid/view/View;
+    .line 76
+    goto :goto_0
 
-    invoke-virtual {v2}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    .line 73
+    :catch_0
+    move-exception v0
 
-    move-result-object v2
+    .line 74
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
-    check-cast v2, Landroid/view/ViewGroup;
+    move-result-object v1
 
-    iget-object v3, p0, Ldefpackage/cg;->b:Ldefpackage/ch;
+    invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
 
-    iget-object v3, v3, Ldefpackage/ch;->a:Ldefpackage/cu;
+    .line 75
+    sget-object v1, Lhik;->a:Louj;
 
-    invoke-static {v2, v3}, Ldefpackage/dq;->b(Landroid/view/ViewGroup;Ldefpackage/cu;)Ldefpackage/dq;
+    invoke-virtual {v1}, Loue;->c()Lova;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Ldefpackage/dq;->c()V
+    check-cast v1, Loug;
 
-    .line 24
-    return-void
-.end method
+    invoke-interface {v1, v0}, Lova;->h(Ljava/lang/Throwable;)Lova;
 
-.method public final onViewDetachedFromWindow(Landroid/view/View;)V
-    .locals 0
-    .param p1, "view"    # Landroid/view/View;
+    move-result-object v1
 
-    .line 28
+    check-cast v1, Loug;
+
+    const/16 v2, 0x9b1
+
+    invoke-interface {v1, v2}, Lova;->G(I)Lova;
+
+    move-result-object v1
+
+    check-cast v1, Loug;
+
+    const-string v2, "ImageShadowTask failed because it was interrupted."
+
+    invoke-interface {v1, v2}, Lova;->o(Ljava/lang/String;)V
+
+    .line 77
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_0
     return-void
 .end method

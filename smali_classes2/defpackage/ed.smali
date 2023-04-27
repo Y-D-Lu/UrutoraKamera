@@ -1,172 +1,103 @@
-.class public final Ldefpackage/ed;
+.class public Ldefpackage/Ed;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lfpn;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Gd;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:[I
+.field public final synthetic this$1:Ldefpackage/Gd;
 
-.field public final b:[F
+.field public final synthetic val$executorService:Ljava/util/concurrent/ExecutorService;
+
+.field public final synthetic val$obj3:Ljava/lang/Object;
+
+.field public final synthetic val$qkgVar7:Lqkg;
 
 
 # direct methods
-.method public constructor <init>(II)V
-    .locals 4
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
+.method public constructor <init>(Ldefpackage/Gd;Ljava/lang/Object;Ljava/util/concurrent/ExecutorService;Lqkg;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Gd;
 
-    .line 13
+    .line 337
+    iput-object p1, p0, Ldefpackage/Ed;->this$1:Ldefpackage/Gd;
+
+    iput-object p2, p0, Ldefpackage/Ed;->val$obj3:Ljava/lang/Object;
+
+    iput-object p3, p0, Ldefpackage/Ed;->val$executorService:Ljava/util/concurrent/ExecutorService;
+
+    iput-object p4, p0, Ldefpackage/Ed;->val$qkgVar7:Lqkg;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    const/4 v0, 0x2
-
-    new-array v1, v0, [I
-
-    const/4 v2, 0x0
-
-    aput p1, v1, v2
-
-    const/4 v3, 0x1
-
-    aput p2, v1, v3
-
-    iput-object v1, p0, Ldefpackage/ed;->a:[I
-
-    .line 15
-    new-array v0, v0, [F
-
-    sget v1, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
-
-    aput v1, v0, v2
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    aput v1, v0, v3
-
-    iput-object v0, p0, Ldefpackage/ed;->b:[F
-
-    .line 16
     return-void
 .end method
 
-.method public constructor <init>(III)V
-    .locals 5
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
-    .param p3, "i3"    # I
 
-    .line 18
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 19
-    const/4 v0, 0x3
-
-    new-array v1, v0, [I
-
-    const/4 v2, 0x0
-
-    aput p1, v1, v2
-
-    const/4 v3, 0x1
-
-    aput p2, v1, v3
-
-    const/4 v4, 0x2
-
-    aput p3, v1, v4
-
-    iput-object v1, p0, Ldefpackage/ed;->a:[I
-
-    .line 20
-    new-array v0, v0, [F
-
-    sget v1, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
-
-    aput v1, v0, v2
-
-    const/high16 v1, 0x3f000000    # 0.5f
-
-    aput v1, v0, v3
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    aput v1, v0, v4
-
-    iput-object v0, p0, Ldefpackage/ed;->b:[F
-
-    .line 21
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/List;Ljava/util/List;)V
+# virtual methods
+.method public final a(J)V
     .locals 4
-    .param p1, "list"    # Ljava/util/List;
-    .param p2, "list2"    # Ljava/util/List;
+    .param p1, "j"    # J
 
-    .line 23
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 340
+    iget-object v0, p0, Ldefpackage/Ed;->val$obj3:Ljava/lang/Object;
 
-    .line 24
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    .line 341
+    .local v0, "obj4":Ljava/lang/Object;
+    iget-object v1, p0, Ldefpackage/Ed;->val$executorService:Ljava/util/concurrent/ExecutorService;
 
-    move-result v0
+    .line 342
+    .local v1, "executorService2":Ljava/util/concurrent/ExecutorService;
+    iget-object v2, p0, Ldefpackage/Ed;->val$qkgVar7:Lqkg;
 
-    .line 25
-    .local v0, "size":I
-    new-array v1, v0, [I
+    .line 343
+    .local v2, "qkgVar9":Lqkg;
+    monitor-enter v0
 
-    iput-object v1, p0, Ldefpackage/ed;->a:[I
-
-    .line 26
-    new-array v1, v0, [F
-
-    iput-object v1, p0, Ldefpackage/ed;->b:[F
-
-    .line 27
-    const/4 v1, 0x0
-
-    .local v1, "i":I
-    :goto_0
-    if-ge v1, v0, :cond_0
-
-    .line 28
-    iget-object v2, p0, Ldefpackage/ed;->a:[I
-
-    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Integer;
-
-    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
+    .line 344
+    :try_start_0
+    invoke-interface {v1}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
     move-result v3
 
-    aput v3, v2, v1
+    if-nez v3, :cond_0
 
-    .line 29
-    iget-object v2, p0, Ldefpackage/ed;->b:[F
-
-    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 345
+    invoke-interface {v2}, Lqkg;->mo37get()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ljava/lang/Float;
+    check-cast v3, Lhkq;
 
-    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
+    invoke-virtual {v3, p1, p2}, Lhkq;->b(J)V
 
-    move-result v3
-
-    aput v3, v2, v1
-
-    .line 27
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 31
-    .end local v1    # "i":I
+    .line 347
     :cond_0
+    monitor-exit v0
+
+    .line 348
     return-void
+
+    .line 347
+    :catchall_0
+    move-exception v3
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v3
 .end method

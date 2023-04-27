@@ -50,7 +50,7 @@
     :goto_0
     const-string v8, "src is null"
 
-    invoke-static {v7, v8}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v7, v8}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 18
     cmp-long v5, v2, v5
@@ -64,7 +64,7 @@
     :cond_1
     const-string v5, "dst is null"
 
-    invoke-static {v4, v5}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v4, v5}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 22
     invoke-static {v0, v1, v2, v3}, Lcom/google/googlex/gcam/image/ImageUtils;->copyContentsImpl(JJ)V

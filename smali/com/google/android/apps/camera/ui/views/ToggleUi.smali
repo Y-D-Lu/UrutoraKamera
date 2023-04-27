@@ -14,11 +14,11 @@
 # static fields
 .field public static final a:Ljava/time/Duration;
 
-.field private static final f:Ldefpackage/ouj;
+.field private static final f:Louj;
 
 
 # instance fields
-.field public b:Ldefpackage/jrz;
+.field public b:Ljrz;
 
 .field public c:Lcom/google/android/apps/camera/ui/views/ToggleUi$ToggleButton;
 
@@ -34,11 +34,11 @@
     .line 35
     const-string v0, "com/google/android/apps/camera/ui/views/ToggleUi"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->f:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->f:Louj;
 
     .line 36
     const-wide/16 v0, 0xc8
@@ -73,9 +73,9 @@
     invoke-virtual {p0, p1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 84
-    new-instance v0, Ldefpackage/adt;
+    new-instance v0, Ladt;
 
-    invoke-direct {v0}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v0}, Ladt;-><init>()V
 
     invoke-virtual {p0, v0}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -85,20 +85,20 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/jrz;)V
+.method public final a(Ljrz;)V
     .locals 3
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 88
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->b:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->b:Ljrz;
 
     .line 89
-    invoke-static {p0, p1}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, p1}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 90
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->c:Lcom/google/android/apps/camera/ui/views/ToggleUi$ToggleButton;
 
-    invoke-static {v0}, Ldefpackage/ope;->H(Ljava/lang/Object;)Ldefpackage/ope;
+    invoke-static {v0}, Lope;->H(Ljava/lang/Object;)Lope;
 
     move-result-object v0
 
@@ -106,11 +106,11 @@
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/iem;
+    new-instance v1, Liem;
 
     const/4 v2, 0x2
 
-    invoke-direct {v1, p1, v2}, Ldefpackage/iem;-><init>(Ldefpackage/jrz;I)V
+    invoke-direct {v1, p1, v2}, Liem;-><init>(Ljrz;I)V
 
     invoke-interface {v0, v1}, Ljava/util/stream/Stream;->forEach(Ljava/util/function/Consumer;)V
 
@@ -180,9 +180,9 @@
 
     .line 109
     :cond_0
-    sget-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->f:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->f:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->b()Lova;
 
     move-result-object v0
 
@@ -190,7 +190,7 @@
 
     const-string v2, "Invalid button image resource."
 
-    invoke-static {v0, v2, v1}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v2, v1}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 111
     :goto_0
@@ -375,9 +375,9 @@
     .line 171
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->e:Landroid/animation/AnimatorSet;
 
-    new-instance v1, Ldefpackage/jow;
+    new-instance v1, Ljow;
 
-    invoke-direct {v1, p0}, Ldefpackage/jow;-><init>(Lcom/google/android/apps/camera/ui/views/ToggleUi;)V
+    invoke-direct {v1, p0}, Ljow;-><init>(Lcom/google/android/apps/camera/ui/views/ToggleUi;)V
 
     invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -400,9 +400,9 @@
     if-eqz p1, :cond_0
 
     .line 178
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->b:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->b:Ljrz;
 
-    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/views/ToggleUi;->a(Ldefpackage/jrz;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/views/ToggleUi;->a(Ljrz;)V
 
     .line 180
     :cond_0
@@ -415,9 +415,9 @@
     .param p2, "i2"    # I
 
     .line 184
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->b:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ToggleUi;->b:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

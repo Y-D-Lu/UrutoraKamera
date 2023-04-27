@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Ldefpackage/jrl;
+.field private a:Ljrl;
 
-.field private b:Ldefpackage/jrz;
+.field private b:Ljrz;
 
 
 # direct methods
@@ -19,14 +19,14 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 24
-    sget-object v0, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->UNINITIALIZED:Ljrl;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->a:Ldefpackage/jrl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->a:Ljrl;
 
     .line 25
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->b:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->b:Ljrz;
 
     .line 26
     return-void
@@ -79,19 +79,19 @@
     return-object v0
 .end method
 
-.method public final d(Ldefpackage/jrz;Ldefpackage/jrl;)V
+.method public final d(Ljrz;Ljrl;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
-    .param p2, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrzVar"    # Ljrz;
+    .param p2, "jrlVar"    # Ljrl;
 
     .line 41
-    iput-object p1, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->b:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->b:Ljrz;
 
     .line 42
-    iput-object p2, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->a:Ldefpackage/jrl;
+    iput-object p2, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->a:Ljrl;
 
     .line 43
-    invoke-static {p0, p1}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, p1}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 44
     invoke-virtual {p0}, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->c()Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceKnob;
@@ -105,7 +105,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 47
     :cond_0
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 50
     :cond_1
@@ -519,11 +519,11 @@
     if-eqz p1, :cond_0
 
     .line 97
-    iget-object v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->b:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->b:Ljrz;
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->a:Ldefpackage/jrl;
+    iget-object v1, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->a:Ljrl;
 
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->d(Ldefpackage/jrz;Ldefpackage/jrl;)V
+    invoke-virtual {p0, v0, v1}, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->d(Ljrz;Ljrl;)V
 
     .line 99
     :cond_0
@@ -536,9 +536,9 @@
     .param p2, "i2"    # I
 
     .line 103
-    iget-object v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->b:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceUi;->b:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

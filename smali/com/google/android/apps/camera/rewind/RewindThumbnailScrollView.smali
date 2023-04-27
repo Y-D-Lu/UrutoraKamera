@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final h:Ldefpackage/ouj;
+.field private static final h:Louj;
 
 
 # instance fields
@@ -20,7 +20,7 @@
 
 .field public f:Landroid/animation/ObjectAnimator;
 
-.field public g:Ldefpackage/hmq;
+.field public g:Lhmq;
 
 .field private final i:I
 
@@ -44,11 +44,11 @@
     .line 39
     const-string v0, "com/google/android/apps/camera/rewind/RewindThumbnailScrollView"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->h:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->h:Louj;
 
     return-void
 .end method
@@ -150,17 +150,17 @@
     if-nez v0, :cond_0
 
     .line 70
-    sget-object v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->h:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->h:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
-    sget-object v1, Ldefpackage/ovl;->a:Ldefpackage/ovd;
+    sget-object v1, Lovl;->a:Lovd;
 
     const-string v2, "McFlyThumbnailScrollView"
 
-    invoke-interface {v0, v1, v2}, Ldefpackage/ova;->g(Ldefpackage/ovd;Ljava/lang/Object;)Ldefpackage/ova;
+    invoke-interface {v0, v1, v2}, Lova;->g(Lovd;Ljava/lang/Object;)Lova;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
 
     const/16 v1, 0xa09
 
-    invoke-interface {v0, v1}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v0, v1}, Lova;->G(I)Lova;
 
     move-result-object v0
 
@@ -178,7 +178,7 @@
 
     const/4 v2, -0x1
 
-    invoke-interface {v0, v1, v2}, Ldefpackage/ova;->p(Ljava/lang/String;I)V
+    invoke-interface {v0, v1, v2}, Lova;->p(Ljava/lang/String;I)V
 
     .line 71
     return v2
@@ -439,9 +439,9 @@
 
     move-result-object v10
 
-    check-cast v10, Ldefpackage/hnk;
+    check-cast v10, Lhnk;
 
-    invoke-interface {v10}, Ldefpackage/hnk;->d()Landroid/graphics/Bitmap;
+    invoke-interface {v10}, Lhnk;->d()Landroid/graphics/Bitmap;
 
     move-result-object v10
 
@@ -554,7 +554,7 @@
 
     invoke-direct {v1, p0}, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView$1;-><init>(Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;)V
 
-    invoke-static {v1}, Ldefpackage/mip;->ev(Ljava/util/function/Consumer;)Landroid/animation/Animator$AnimatorListener;
+    invoke-static {v1}, Lmip;->ev(Ljava/util/function/Consumer;)Landroid/animation/Animator$AnimatorListener;
 
     move-result-object v1
 
@@ -739,10 +739,10 @@
     iput v3, v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->o:I
 
     .line 177
-    iget-object v4, v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->g:Ldefpackage/hmq;
+    iget-object v4, v0, Lcom/google/android/apps/camera/rewind/RewindThumbnailScrollView;->g:Lhmq;
 
     .line 178
-    .local v4, "hmqVar":Ldefpackage/hmq;
+    .local v4, "hmqVar":Lhmq;
     if-nez v4, :cond_4
 
     .line 179
@@ -750,19 +750,19 @@
 
     .line 181
     :cond_4
-    iget-object v8, v4, Ldefpackage/hmq;->a:Ldefpackage/hmy;
+    iget-object v8, v4, Lhmq;->a:Lhmy;
 
     .line 182
-    .local v8, "hmyVar":Ldefpackage/hmy;
-    iget-object v9, v4, Ldefpackage/hmq;->b:Ljava/util/List;
+    .local v8, "hmyVar":Lhmy;
+    iget-object v9, v4, Lhmq;->b:Ljava/util/List;
 
     .line 183
     .local v9, "list":Ljava/util/List;
-    iget-object v10, v4, Ldefpackage/hmq;->c:Landroid/widget/ImageView;
+    iget-object v10, v4, Lhmq;->c:Landroid/widget/ImageView;
 
     .line 184
     .local v10, "imageView":Landroid/widget/ImageView;
-    iget-object v11, v4, Ldefpackage/hmq;->d:Lcom/google/android/apps/camera/rewind/RewindExportShotView;
+    iget-object v11, v4, Lhmq;->d:Lcom/google/android/apps/camera/rewind/RewindExportShotView;
 
     .line 185
     .local v11, "rewindExportShotView":Lcom/google/android/apps/camera/rewind/RewindExportShotView;
@@ -770,19 +770,19 @@
 
     move-result-object v12
 
-    check-cast v12, Ldefpackage/hnk;
+    check-cast v12, Lhnk;
 
     .line 186
-    .local v12, "hnkVar":Ldefpackage/hnk;
-    iget-object v13, v8, Ldefpackage/hmy;->j:Ldefpackage/hme;
+    .local v12, "hnkVar":Lhnk;
+    iget-object v13, v8, Lhmy;->j:Lhme;
 
-    invoke-virtual {v13, v12}, Ldefpackage/hme;->b(Ldefpackage/hnk;)Z
+    invoke-virtual {v13, v12}, Lhme;->b(Lhnk;)Z
 
     move-result v13
 
     .line 187
     .local v13, "b":Z
-    invoke-virtual {v8, v12}, Ldefpackage/hmy;->v(Ldefpackage/hnk;)Ldefpackage/ep;
+    invoke-virtual {v8, v12}, Lhmy;->v(Lhnk;)Lep;
 
     move-result-object v14
 
@@ -833,7 +833,7 @@
 
     .line 195
     :cond_7
-    iget-object v15, v8, Ldefpackage/hmy;->g:Ldefpackage/jty;
+    iget-object v15, v8, Lhmy;->g:Ljty;
 
     move/from16 v16, v1
 
@@ -851,7 +851,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v15, v0}, Ldefpackage/jty;->d(Landroid/os/VibrationEffect;)V
+    invoke-virtual {v15, v0}, Ljty;->d(Landroid/os/VibrationEffect;)V
 
     .line 196
     return-void

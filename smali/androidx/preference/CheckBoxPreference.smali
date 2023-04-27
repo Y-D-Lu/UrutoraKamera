@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final c:Ldefpackage/afv;
+.field private final c:Lafv;
 
 
 # direct methods
@@ -70,7 +70,7 @@
 
     check-cast v1, Landroid/widget/CompoundButton;
 
-    iget-object v2, p0, Landroidx/preference/CheckBoxPreference;->c:Ldefpackage/afv;
+    iget-object v2, p0, Landroidx/preference/CheckBoxPreference;->c:Lafv;
 
     invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -81,24 +81,24 @@
 
 
 # virtual methods
-.method public a(Ldefpackage/ahm;)V
+.method public a(Lahm;)V
     .locals 1
-    .param p1, "ahmVar"    # Ldefpackage/ahm;
+    .param p1, "ahmVar"    # Lahm;
 
     .line 66
-    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Ldefpackage/ahm;)V
+    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Lahm;)V
 
     .line 67
     const v0, 0x1020001
 
-    invoke-virtual {p1, v0}, Ldefpackage/ahm;->B(I)Landroid/view/View;
+    invoke-virtual {p1, v0}, Lahm;->B(I)Landroid/view/View;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Landroidx/preference/CheckBoxPreference;->ae(Landroid/view/View;)V
 
     .line 68
-    invoke-virtual {p0, p1}, Landroidx/preference/TwoStatePreference;->ad(Ldefpackage/ahm;)V
+    invoke-virtual {p0, p1}, Landroidx/preference/TwoStatePreference;->ad(Lahm;)V
 
     .line 69
     return-void

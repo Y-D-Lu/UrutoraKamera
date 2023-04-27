@@ -1,0 +1,86 @@
+.class public Ldefpackage/xa;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lezg;->m()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final a:Lezg;
+
+.field public final synthetic this$0:Lezg;
+
+
+# direct methods
+.method public constructor <init>(Lezg;)V
+    .locals 0
+    .param p1, "this$0"    # Lezg;
+
+    .line 179
+    iput-object p1, p0, Ldefpackage/xa;->this$0:Lezg;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 180
+    iput-object p1, p0, Ldefpackage/xa;->a:Lezg;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final close()V
+    .locals 3
+
+    .line 184
+    const/4 v0, -0x1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 190
+    iget-object v0, p0, Ldefpackage/xa;->a:Lezg;
+
+    .line 191
+    .local v0, "ezgVar2":Lezg;
+    iget-object v1, v0, Lezg;->m:Lcom/google/android/apps/camera/bottombar/BottomBarController;
+
+    iget-object v2, v0, Lezg;->y:Lcom/google/android/apps/camera/bottombar/BottomBarListener;
+
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/bottombar/BottomBarController;->removeListener(Lcom/google/android/apps/camera/bottombar/BottomBarListener;)V
+
+    .line 192
+    return-void
+
+    .line 186
+    .end local v0    # "ezgVar2":Lezg;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/xa;->a:Lezg;
+
+    .line 187
+    .local v0, "ezgVar":Lezg;
+    iget-object v1, v0, Lezg;->o:Lepj;
+
+    iget-object v2, v0, Lezg;->z:Lepi;
+
+    invoke-virtual {v1, v2}, Lepj;->b(Lepi;)V
+
+    .line 188
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

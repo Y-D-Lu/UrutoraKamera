@@ -1,43 +1,74 @@
-.class public final Ldefpackage/cl;
-.super Ldefpackage/ce;
+.class public Ldefpackage/Cl;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Liib;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lixi;-><init>(Lixj;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/cu;
+.field public final synthetic this$0:Lixi;
+
+.field public final synthetic val$jgqVar:Ljgq;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/cu;)V
+.method public constructor <init>(Lixi;Ljgq;)V
     .locals 0
-    .param p1, "cuVar"    # Ldefpackage/cu;
+    .param p1, "this$0"    # Lixi;
 
-    .line 9
-    invoke-direct {p0}, Ldefpackage/ce;-><init>()V
+    .line 152
+    iput-object p1, p0, Ldefpackage/Cl;->this$0:Lixi;
 
-    .line 10
-    iput-object p1, p0, Ldefpackage/cl;->a:Ldefpackage/cu;
+    iput-object p2, p0, Ldefpackage/Cl;->val$jgqVar:Ljgq;
 
-    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/String;)Ldefpackage/bu;
+.method public final a()Llie;
     .locals 1
-    .param p1, "str"    # Ljava/lang/String;
 
-    .line 15
-    iget-object v0, p0, Ldefpackage/cl;->a:Ldefpackage/cu;
+    .line 155
+    const/4 v0, -0x1
 
-    iget-object v0, v0, Ldefpackage/cu;->j:Ldefpackage/cf;
+    packed-switch v0, :pswitch_data_0
 
-    iget-object v0, v0, Ldefpackage/cf;->c:Landroid/content/Context;
+    .line 159
+    iget-object v0, p0, Ldefpackage/Cl;->val$jgqVar:Ljgq;
 
-    invoke-static {v0, p1}, Ldefpackage/bu;->ac(Landroid/content/Context;Ljava/lang/String;)Ldefpackage/bu;
+    invoke-interface {v0}, Ljgq;->e()Llie;
 
     move-result-object v0
 
     return-object v0
+
+    .line 157
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Cl;->val$jgqVar:Ljgq;
+
+    invoke-interface {v0}, Ljgq;->h()Llie;
+
+    move-result-object v0
+
+    return-object v0
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

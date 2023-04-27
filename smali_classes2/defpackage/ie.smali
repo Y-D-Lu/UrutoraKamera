@@ -1,188 +1,331 @@
-.class public final Ldefpackage/ie;
-.super Ldefpackage/ja;
+.class public Ldefpackage/Ie;
+.super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/content/DialogInterface;
+.implements Lgtw;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgtg;->m(Llda;Lolt;Lgtk;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/ic;
+.field public final synthetic this$0:Lgtg;
+
+.field public final synthetic val$gtkVar:Lgtk;
+
+.field public final synthetic val$ldaVar:Llda;
+
+.field public final synthetic val$oltVar:Lolt;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;I)V
-    .locals 3
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "i"    # I
+.method public constructor <init>(Lgtg;Lolt;Llda;Lgtk;)V
+    .locals 0
+    .param p1, "this$0"    # Lgtg;
 
-    .line 18
-    invoke-static {p1, p2}, Ldefpackage/ie;->a(Landroid/content/Context;I)I
+    .line 555
+    iput-object p1, p0, Ldefpackage/Ie;->this$0:Lgtg;
 
-    move-result v0
+    iput-object p2, p0, Ldefpackage/Ie;->val$oltVar:Lolt;
 
-    invoke-direct {p0, p1, v0}, Ldefpackage/ja;-><init>(Landroid/content/Context;I)V
+    iput-object p3, p0, Ldefpackage/Ie;->val$ldaVar:Llda;
 
-    .line 19
-    new-instance v0, Ldefpackage/ic;
+    iput-object p4, p0, Ldefpackage/Ie;->val$gtkVar:Lgtk;
 
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v1
-
-    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, p0, v2}, Ldefpackage/ic;-><init>(Landroid/content/Context;Ldefpackage/ja;Landroid/view/Window;)V
-
-    iput-object v0, p0, Ldefpackage/ie;->a:Ldefpackage/ic;
-
-    .line 20
     return-void
-.end method
-
-.method public static a(Landroid/content/Context;I)I
-    .locals 4
-    .param p0, "context"    # Landroid/content/Context;
-    .param p1, "i"    # I
-
-    .line 24
-    ushr-int/lit8 v0, p1, 0x18
-
-    if-lez v0, :cond_0
-
-    .line 25
-    return p1
-
-    .line 27
-    :cond_0
-    new-instance v0, Landroid/util/TypedValue;
-
-    invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
-
-    .line 28
-    .local v0, "typedValue":Landroid/util/TypedValue;
-    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v1
-
-    const v2, 0x7f04002a
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v1, v2, v0, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
-
-    .line 29
-    iget v1, v0, Landroid/util/TypedValue;->resourceId:I
-
-    return v1
 .end method
 
 
 # virtual methods
-.method public final onCreate(Landroid/os/Bundle;)V
-    .locals 2
-    .param p1, "r15"    # Landroid/os/Bundle;
+.method public final gh(Lgtv;)V
+    .locals 11
+    .param p1, "gtvVar"    # Lgtv;
 
-    .line 64
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    .line 558
+    iget-object v0, p0, Ldefpackage/Ie;->this$0:Lgtg;
 
-    const-string v1, "Method not decompiled: defpackage.ie.onCreate(android.os.Bundle):void"
+    .line 559
+    .local v0, "gtgVar":Lgtg;
+    iget-object v1, p0, Ldefpackage/Ie;->val$oltVar:Lolt;
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    .line 560
+    .local v1, "oltVar2":Lolt;
+    iget-object v2, p0, Ldefpackage/Ie;->val$ldaVar:Llda;
 
-    throw v0
-.end method
+    .line 561
+    .local v2, "ldaVar2":Llda;
+    iget-object v3, p0, Ldefpackage/Ie;->val$gtkVar:Lgtk;
 
-.method public final onKeyDown(ILandroid/view/KeyEvent;)Z
-    .locals 2
-    .param p1, "i"    # I
-    .param p2, "keyEvent"    # Landroid/view/KeyEvent;
+    .line 562
+    .local v3, "gtkVar2":Lgtk;
+    invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 69
-    iget-object v0, p0, Ldefpackage/ie;->a:Ldefpackage/ic;
+    move-result-object v4
 
-    iget-object v0, v0, Ldefpackage/ic;->r:Landroid/support/v4/widget/NestedScrollView;
+    .line 563
+    .local v4, "obj":Ljava/lang/Object;
+    if-eqz v4, :cond_6
 
-    .line 70
-    .local v0, "nestedScrollView":Landroid/support/v4/widget/NestedScrollView;
-    if-eqz v0, :cond_1
+    invoke-interface {v2}, Llco;->fA()Ljava/lang/Object;
 
-    invoke-virtual {v0, p2}, Landroid/support/v4/widget/NestedScrollView;->m(Landroid/view/KeyEvent;)Z
+    move-result-object v5
 
-    move-result v1
+    invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    if-nez v1, :cond_0
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    goto/16 :goto_2
+
+    .line 566
+    :cond_0
+    invoke-interface {v2, v4}, Llij;->fB(Ljava/lang/Object;)V
+
+    .line 567
+    iget-object v5, v0, Lgtg;->aX:Lfjs;
+
+    .line 568
+    .local v5, "fjsVar":Lfjs;
+    if-eqz v5, :cond_1
+
+    .line 569
+    invoke-interface {v5, p1}, Lfjs;->v(Lgtv;)V
+
+    .line 571
+    :cond_1
+    iget-object v6, v3, Lgtk;->a:Lgtm;
+
+    sget-object v7, Lgtm;->MICROVIDEO:Lgtm;
+
+    if-ne v6, v7, :cond_3
+
+    iget-object v6, v0, Lgtg;->j:Lhuj;
+
+    const-string v7, "micro_tutorial_dismiss"
+
+    invoke-virtual {v6, v7}, Lhuj;->a(Ljava/lang/String;)I
+
+    move-result v6
+
+    if-nez v6, :cond_3
+
+    iget-boolean v6, v0, Lgtg;->k:Z
+
+    if-nez v6, :cond_3
+
+    iget-object v6, v0, Lgtg;->e:Lddf;
+
+    sget-object v7, Lddl;->aL:Lddg;
+
+    invoke-interface {v6, v7}, Lddf;->k(Lddg;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_3
+
+    .line 572
+    iget-object v6, v0, Lgtg;->e:Lddf;
+
+    sget-object v7, Lddr;->p:Lddg;
+
+    invoke-interface {v6, v7}, Lddf;->k(Lddg;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    .line 573
+    iget-object v6, v0, Lgtg;->bd:Lojc;
+
+    check-cast v6, Lojj;
+
+    iget-object v6, v6, Lojj;->a:Ljava/lang/Object;
+
+    check-cast v6, Lfvn;
+
+    invoke-virtual {v6}, Lfvn;->a()V
 
     goto :goto_0
 
-    .line 73
-    :cond_0
-    const/4 v1, 0x1
+    .line 575
+    :cond_2
+    iget-object v6, v0, Lgtg;->aV:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
 
-    return v1
+    .line 576
+    .local v6, "optionsMenuContainer":Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+    iget-object v7, v0, Lgtg;->aY:Lelw;
 
-    .line 71
-    :cond_1
+    .line 577
+    .local v7, "elwVar":Lelw;
+    invoke-static {}, Llar;->a()V
+
+    .line 578
+    invoke-interface {v7}, Lelw;->i()V
+
+    .line 579
+    new-instance v8, Landroid/app/AlertDialog$Builder;
+
+    iget-object v9, v6, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
+
+    const v10, 0x7f120113
+
+    invoke-direct {v8, v9, v10}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    invoke-virtual {v6}, Landroid/widget/RelativeLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v9
+
+    const v10, 0x7f11032e
+
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v8
+
+    invoke-virtual {v6}, Landroid/widget/RelativeLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v9
+
+    const v10, 0x7f11032d
+
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v8
+
+    const/4 v9, 0x0
+
+    invoke-virtual {v8, v9}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v8
+
+    new-instance v9, Ldefpackage/Fe;
+
+    invoke-direct {v9, p0, v6, v7}, Ldefpackage/Fe;-><init>(Ldefpackage/Ie;Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;Lelw;)V
+
+    invoke-virtual {v8, v9}, Landroid/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v8
+
+    .line 589
+    .local v8, "onDismissListener":Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v6}, Landroid/widget/RelativeLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v9
+
+    const v10, 0x7f1102d3
+
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    new-instance v10, Ldefpackage/Ge;
+
+    invoke-direct {v10, p0, v6}, Ldefpackage/Ge;-><init>(Ldefpackage/Ie;Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
+
+    invoke-virtual {v8, v9, v10}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    .line 609
+    invoke-virtual {v6}, Landroid/widget/RelativeLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v9
+
+    const v10, 0x7f1102d2
+
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    new-instance v10, Ldefpackage/He;
+
+    invoke-direct {v10, p0, v6}, Ldefpackage/He;-><init>(Ldefpackage/Ie;Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
+
+    invoke-virtual {v8, v9, v10}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    .line 629
+    invoke-virtual {v8}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+
+    move-result-object v9
+
+    iput-object v9, v6, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->m:Landroid/app/AlertDialog;
+
+    .line 630
+    const/4 v10, 0x1
+
+    invoke-virtual {v9, v10}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
+
+    .line 631
+    invoke-virtual {v6}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->s()V
+
+    .line 634
+    .end local v6    # "optionsMenuContainer":Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+    .end local v7    # "elwVar":Lelw;
+    .end local v8    # "onDismissListener":Landroid/app/AlertDialog$Builder;
+    :cond_3
     :goto_0
-    invoke-super {p0, p1, p2}, Landroid/app/Dialog;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    iget-object v6, v3, Lgtk;->a:Lgtm;
 
-    move-result v1
+    sget-object v7, Lgtm;->MICROPHONE:Lgtm;
 
-    return v1
-.end method
+    if-ne v6, v7, :cond_5
 
-.method public final onKeyUp(ILandroid/view/KeyEvent;)Z
-    .locals 2
-    .param p1, "i"    # I
-    .param p2, "keyEvent"    # Landroid/view/KeyEvent;
+    sget-object v6, Lhth;->EXT_BLUETOOTH:Lhth;
 
-    .line 78
-    iget-object v0, p0, Ldefpackage/ie;->a:Ldefpackage/ic;
+    invoke-virtual {v4, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Ldefpackage/ic;->r:Landroid/support/v4/widget/NestedScrollView;
+    move-result v6
 
-    .line 79
-    .local v0, "nestedScrollView":Landroid/support/v4/widget/NestedScrollView;
-    if-eqz v0, :cond_1
+    if-nez v6, :cond_4
 
-    invoke-virtual {v0, p2}, Landroid/support/v4/widget/NestedScrollView;->m(Landroid/view/KeyEvent;)Z
+    goto :goto_1
 
-    move-result v1
+    .line 637
+    :cond_4
+    iget-object v6, v0, Lgtg;->aT:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;
 
-    if-nez v1, :cond_0
+    iget-object v8, v0, Lgtg;->aV:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
 
-    goto :goto_0
+    invoke-virtual {v8}, Landroid/widget/RelativeLayout;->getResources()Landroid/content/res/Resources;
 
-    .line 82
-    :cond_0
-    const/4 v1, 0x1
+    move-result-object v8
 
-    return v1
+    const v9, 0x7f11031f
 
-    .line 80
-    :cond_1
-    :goto_0
-    invoke-super {p0, p1, p2}, Landroid/app/Dialog;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result v1
+    move-result-object v8
 
-    return v1
-.end method
+    invoke-virtual {v6, v7, v8}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->c(Lgtm;Ljava/lang/String;)V
 
-.method public final setTitle(Ljava/lang/CharSequence;)V
-    .locals 1
-    .param p1, "charSequence"    # Ljava/lang/CharSequence;
+    .line 638
+    return-void
 
-    .line 87
-    invoke-super {p0, p1}, Ldefpackage/ja;->setTitle(Ljava/lang/CharSequence;)V
+    .line 635
+    :cond_5
+    :goto_1
+    return-void
 
-    .line 88
-    iget-object v0, p0, Ldefpackage/ie;->a:Ldefpackage/ic;
-
-    invoke-virtual {v0, p1}, Ldefpackage/ic;->a(Ljava/lang/CharSequence;)V
-
-    .line 89
+    .line 564
+    .end local v5    # "fjsVar":Lfjs;
+    :cond_6
+    :goto_2
     return-void
 .end method

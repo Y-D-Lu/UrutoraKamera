@@ -1,38 +1,60 @@
-.class public final Ldefpackage/wf;
-.super Ljava/lang/Thread;
+.class public Ldefpackage/Wf;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Xf;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$1:Ldefpackage/Xf;
+
+.field public final synthetic val$hxjVar2:Lhxj;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Runnable;)V
-    .locals 1
-    .param p1, "runnable"    # Ljava/lang/Runnable;
+.method public constructor <init>(Ldefpackage/Xf;Lhxj;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Xf;
 
-    .line 9
-    invoke-direct {p0, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+    .line 458
+    iput-object p1, p0, Ldefpackage/Wf;->this$1:Ldefpackage/Xf;
 
-    .line 10
-    const-string v0, "CXCP-Camera2-E"
+    iput-object p2, p0, Ldefpackage/Wf;->val$hxjVar2:Lhxj;
 
-    invoke-virtual {p0, v0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 1
+.method public final close()V
+    .locals 2
 
-    .line 15
-    const/4 v0, -0x3
+    .line 461
+    iget-object v0, p0, Ldefpackage/Wf;->val$hxjVar2:Lhxj;
 
-    invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
+    .line 462
+    .local v0, "hxjVar3":Lhxj;
+    sget-object v1, Loih;->a:Loih;
 
-    .line 16
-    invoke-super {p0}, Ljava/lang/Thread;->run()V
+    invoke-virtual {v0, v1}, Lhxj;->g(Lojc;)V
 
-    .line 17
+    .line 463
+    invoke-virtual {v0, v1}, Lhxj;->f(Lojc;)V
+
+    .line 464
     return-void
 .end method

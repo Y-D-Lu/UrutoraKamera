@@ -1,76 +1,56 @@
-.class public final Ldefpackage/uw;
-.super Ldefpackage/vd;
+.class public Ldefpackage/Uw;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Lojz;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmzd;-><init>(Lmxm;Landroid/content/Context;Lmwe;Lpyn;Lmyv;Lqkg;Lqkg;Ljava/util/concurrent/Executor;Lmxt;Lqkg;Z)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/util/HashMap;
+.field public final synthetic this$0:Lmzd;
+
+.field public final synthetic val$qkgVar3:Lqkg;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lmzd;Lqkg;)V
+    .locals 0
+    .param p1, "this$0"    # Lmzd;
 
-    .line 7
-    invoke-direct {p0}, Ldefpackage/vd;-><init>()V
+    .line 38
+    iput-object p1, p0, Ldefpackage/Uw;->this$0:Lmzd;
 
-    .line 8
-    new-instance v0, Ljava/util/HashMap;
+    iput-object p2, p0, Ldefpackage/Uw;->val$qkgVar3:Lqkg;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/uw;->a:Ljava/util/HashMap;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ldefpackage/uz;
-    .locals 1
-    .param p1, "obj"    # Ljava/lang/Object;
-
-    .line 12
-    iget-object v0, p0, Ldefpackage/uw;->a:Ljava/util/HashMap;
-
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ldefpackage/uz;
-
-    return-object v0
-.end method
-
-.method public final b(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 2
-    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 17
-    invoke-super {p0, p1}, Ldefpackage/vd;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 41
+    iget-object v0, p0, Ldefpackage/Uw;->this$0:Lmzd;
+
+    iget-object v1, p0, Ldefpackage/Uw;->val$qkgVar3:Lqkg;
+
+    invoke-virtual {v0, v1}, Lmzd;->b(Lqkg;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 18
-    .local v0, "b":Ljava/lang/Object;
-    iget-object v1, p0, Ldefpackage/uw;->a:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 19
     return-object v0
-.end method
-
-.method public final c(Ljava/lang/Object;)Z
-    .locals 1
-    .param p1, "obj"    # Ljava/lang/Object;
-
-    .line 23
-    iget-object v0, p0, Ldefpackage/uw;->a:Ljava/util/HashMap;
-
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    return v0
 .end method

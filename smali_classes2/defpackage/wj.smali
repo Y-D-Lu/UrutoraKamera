@@ -1,70 +1,67 @@
-.class final Ldefpackage/wj;
+.class public Ldefpackage/Wj;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/util/concurrent/ThreadFactory;
+.implements Llht;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lioa;->m()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/qpc;
+.field public final synthetic this$0:Lioa;
 
-.field private final b:I
+.field public final synthetic val$iprVar:Lipr;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/qpc;I)V
+.method public constructor <init>(Lioa;Lipr;)V
     .locals 0
-    .param p1, "qpcVar"    # Ldefpackage/qpc;
-    .param p2, "i"    # I
+    .param p1, "this$0"    # Lioa;
 
-    .line 11
+    .line 313
+    iput-object p1, p0, Ldefpackage/Wj;->this$0:Lioa;
+
+    iput-object p2, p0, Ldefpackage/Wj;->val$iprVar:Lipr;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
-    iput p2, p0, Ldefpackage/wj;->b:I
-
-    .line 13
-    iput-object p1, p0, Ldefpackage/wj;->a:Ldefpackage/qpc;
-
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 2
-    .param p1, "runnable"    # Ljava/lang/Runnable;
+.method public final a(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 18
-    iget v0, p0, Ldefpackage/wj;->b:I
+    .line 316
+    iget-object v0, p0, Ldefpackage/Wj;->val$iprVar:Lipr;
 
-    packed-switch v0, :pswitch_data_0
+    .line 317
+    .local v0, "iprVar2":Lipr;
+    move-object v1, p1
 
-    .line 22
-    new-instance v0, Ldefpackage/wh;
+    check-cast v1, Lilv;
 
-    iget-object v1, p0, Ldefpackage/wj;->a:Ldefpackage/qpc;
+    .line 318
+    .local v1, "ilvVar":Lilv;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {v0, v1, p1}, Ldefpackage/wh;-><init>(Ldefpackage/qpc;Ljava/lang/Runnable;)V
+    .line 319
+    const/4 v2, 0x1
 
-    return-object v0
+    invoke-virtual {v0, v1, v2}, Lipr;->a(Lilv;Z)V
 
-    .line 20
-    :pswitch_0
-    new-instance v0, Ldefpackage/wi;
-
-    iget-object v1, p0, Ldefpackage/wj;->a:Ldefpackage/qpc;
-
-    invoke-direct {v0, v1, p1}, Ldefpackage/wi;-><init>(Ldefpackage/qpc;Ljava/lang/Runnable;)V
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 320
+    return-void
 .end method

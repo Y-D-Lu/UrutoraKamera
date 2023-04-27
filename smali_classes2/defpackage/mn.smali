@@ -1,1347 +1,1400 @@
-.class public final Ldefpackage/mn;
+.class public Ldefpackage/Mn;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljks;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljkz;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:Ljava/util/ArrayList;
+.field public final a:Ljkz;
 
-.field public final b:Ljava/util/ArrayList;
-
-.field public c:I
-
-.field public final d:Ldefpackage/pz;
-
-.field private final e:Ldefpackage/fc;
+.field public final synthetic this$0:Ljkz;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/pz;[B)V
-    .locals 2
-    .param p1, "pzVar"    # Ldefpackage/pz;
-    .param p2, "bArr"    # [B
+.method public constructor <init>(Ljkz;)V
+    .locals 0
+    .param p1, "this$0"    # Ljkz;
 
-    .line 15
+    .line 37490
+    iput-object p1, p0, Ldefpackage/Mn;->this$0:Ljkz;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
-    new-instance v0, Ldefpackage/fd;
+    .line 37491
+    iput-object p1, p0, Ldefpackage/Mn;->a:Ljkz;
 
-    const/16 v1, 0x1e
-
-    invoke-direct {v0, v1}, Ldefpackage/fd;-><init>(I)V
-
-    iput-object v0, p0, Ldefpackage/mn;->e:Ldefpackage/fc;
-
-    .line 11
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
-
-    .line 12
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    .line 13
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/mn;->c:I
-
-    .line 16
-    iput-object p1, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
-
-    .line 17
     return-void
-.end method
-
-.method private final m(II)I
-    .locals 6
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
-
-    .line 20
-    iget-object v0, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    sub-int/2addr v0, v1
-
-    .local v0, "size":I
-    :goto_0
-    if-ltz v0, :cond_4
-
-    .line 21
-    iget-object v2, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ldefpackage/mm;
-
-    .line 22
-    .local v2, "mmVar":Ldefpackage/mm;
-    iget v3, v2, Ldefpackage/mm;->a:I
-
-    .line 23
-    .local v3, "i3":I
-    iget v4, v2, Ldefpackage/mm;->b:I
-
-    .line 24
-    .local v4, "i4":I
-    const/4 v5, 0x2
-
-    if-gt v4, p1, :cond_1
-
-    .line 25
-    if-ne v3, v1, :cond_0
-
-    .line 26
-    iget v5, v2, Ldefpackage/mm;->d:I
-
-    sub-int/2addr p1, v5
-
-    goto :goto_1
-
-    .line 27
-    :cond_0
-    if-ne v3, v5, :cond_3
-
-    .line 28
-    iget v5, v2, Ldefpackage/mm;->d:I
-
-    add-int/2addr p1, v5
-
-    goto :goto_1
-
-    .line 30
-    :cond_1
-    if-ne p2, v1, :cond_2
-
-    .line 31
-    add-int/lit8 v5, v4, 0x1
-
-    iput v5, v2, Ldefpackage/mm;->b:I
-
-    goto :goto_1
-
-    .line 32
-    :cond_2
-    if-ne p2, v5, :cond_3
-
-    .line 33
-    add-int/lit8 v5, v4, -0x1
-
-    iput v5, v2, Ldefpackage/mm;->b:I
-
-    .line 20
-    .end local v2    # "mmVar":Ldefpackage/mm;
-    .end local v3    # "i3":I
-    .end local v4    # "i4":I
-    :cond_3
-    :goto_1
-    add-int/lit8 v0, v0, -0x1
-
-    goto :goto_0
-
-    .line 36
-    .end local v0    # "size":I
-    :cond_4
-    iget-object v0, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    sub-int/2addr v0, v1
-
-    .local v0, "size2":I
-    :goto_2
-    if-ltz v0, :cond_6
-
-    .line 37
-    iget-object v1, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ldefpackage/mm;
-
-    .line 38
-    .local v1, "mmVar2":Ldefpackage/mm;
-    iget v2, v1, Ldefpackage/mm;->a:I
-
-    .line 39
-    .local v2, "i5":I
-    iget v3, v1, Ldefpackage/mm;->d:I
-
-    if-gtz v3, :cond_5
-
-    .line 40
-    iget-object v3, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v3, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
-
-    .line 41
-    invoke-virtual {p0, v1}, Ldefpackage/mn;->h(Ldefpackage/mm;)V
-
-    .line 36
-    .end local v1    # "mmVar2":Ldefpackage/mm;
-    .end local v2    # "i5":I
-    :cond_5
-    add-int/lit8 v0, v0, -0x1
-
-    goto :goto_2
-
-    .line 44
-    .end local v0    # "size2":I
-    :cond_6
-    return p1
-.end method
-
-.method private final n(Ldefpackage/mm;)V
-    .locals 2
-    .param p1, "r11"    # Ldefpackage/mm;
-
-    .line 171
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    const-string v1, "Method not decompiled: defpackage.mn.n(mm):void"
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method private final o(Ldefpackage/mm;)V
-    .locals 5
-    .param p1, "mmVar"    # Ldefpackage/mm;
-
-    .line 175
-    iget-object v0, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 176
-    iget v0, p1, Ldefpackage/mm;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 187
-    :pswitch_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Unknown update op type for "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 189
-    :pswitch_1
-    iget-object v0, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
-
-    iget v1, p1, Ldefpackage/mm;->b:I
-
-    iget v2, p1, Ldefpackage/mm;->d:I
-
-    iget-object v3, p1, Ldefpackage/mm;->c:Ljava/lang/Object;
-
-    invoke-virtual {v0, v1, v2, v3}, Ldefpackage/pz;->c(IILjava/lang/Object;)V
-
-    .line 190
-    return-void
-
-    .line 181
-    :pswitch_2
-    iget-object v0, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
-
-    .line 182
-    .local v0, "pzVar":Ldefpackage/pz;
-    iget-object v1, v0, Ldefpackage/pz;->a:Landroid/support/v7/widget/RecyclerView;
-
-    iget v2, p1, Ldefpackage/mm;->b:I
-
-    iget v3, p1, Ldefpackage/mm;->d:I
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v1, v2, v3, v4}, Landroid/support/v7/widget/RecyclerView;->J(IIZ)V
-
-    .line 183
-    iget-object v1, v0, Ldefpackage/pz;->a:Landroid/support/v7/widget/RecyclerView;
-
-    const/4 v2, 0x1
-
-    iput-boolean v2, v1, Landroid/support/v7/widget/RecyclerView;->M:Z
-
-    .line 184
-    return-void
-
-    .line 178
-    .end local v0    # "pzVar":Ldefpackage/pz;
-    :pswitch_3
-    iget-object v0, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
-
-    iget v1, p1, Ldefpackage/mm;->b:I
-
-    iget v2, p1, Ldefpackage/mm;->d:I
-
-    invoke-virtual {v0, v1, v2}, Ldefpackage/pz;->d(II)V
-
-    .line 179
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_3
-        :pswitch_2
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method private final p(I)Z
-    .locals 7
-    .param p1, "i"    # I
-
-    .line 195
-    iget-object v0, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    .line 196
-    .local v0, "size":I
-    const/4 v1, 0x0
-
-    .local v1, "i2":I
-    :goto_0
-    if-ge v1, v0, :cond_2
-
-    .line 197
-    iget-object v2, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ldefpackage/mm;
-
-    .line 198
-    .local v2, "mmVar":Ldefpackage/mm;
-    iget v3, v2, Ldefpackage/mm;->a:I
-
-    const/4 v4, 0x1
-
-    if-ne v3, v4, :cond_1
-
-    .line 199
-    iget v3, v2, Ldefpackage/mm;->b:I
-
-    .line 200
-    .local v3, "i3":I
-    iget v5, v2, Ldefpackage/mm;->d:I
-
-    add-int/2addr v5, v3
-
-    .line 201
-    .local v5, "i4":I
-    :goto_1
-    if-ge v3, v5, :cond_1
-
-    .line 202
-    add-int/lit8 v6, v1, 0x1
-
-    invoke-virtual {p0, v3, v6}, Ldefpackage/mn;->b(II)I
-
-    move-result v6
-
-    if-ne v6, p1, :cond_0
-
-    .line 203
-    return v4
-
-    .line 205
-    :cond_0
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    .line 196
-    .end local v2    # "mmVar":Ldefpackage/mm;
-    .end local v3    # "i3":I
-    .end local v5    # "i4":I
-    :cond_1
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 210
-    .end local v1    # "i2":I
-    :cond_2
-    const/4 v1, 0x0
-
-    return v1
 .end method
 
 
 # virtual methods
-.method public final a(I)I
-    .locals 1
-    .param p1, "i"    # I
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 10
+    .param p1, "obj"    # Ljava/lang/Object;
+    .param p2, "obj2"    # Ljava/lang/Object;
 
-    .line 215
-    const/4 v0, 0x0
+    .line 37496
+    const/16 v0, 0x320
 
-    invoke-virtual {p0, p1, v0}, Ldefpackage/mn;->b(II)I
+    const/16 v1, 0x258
 
-    move-result v0
+    const/16 v2, 0x15e
 
-    return v0
-.end method
+    const/16 v3, 0x32
 
-.method public final b(II)I
-    .locals 6
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
+    const/16 v4, 0xc8
 
-    .line 219
-    iget-object v0, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
+    const/16 v5, 0x1f4
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    const/16 v6, 0x190
 
-    move-result v0
+    const/16 v7, 0x12c
 
-    .line 220
-    .local v0, "size":I
-    :goto_0
-    if-ge p2, v0, :cond_4
+    const/16 v8, 0xfa
 
-    .line 221
-    iget-object v1, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
+    const/4 v9, -0x1
 
-    invoke-virtual {v1, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    packed-switch v9, :pswitch_data_0
 
-    move-result-object v1
+    .line 37688
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
 
-    check-cast v1, Ldefpackage/mm;
+    .line 37689
+    .local v0, "jkzVar16":Ljkz;
+    move-object v1, p1
 
-    .line 222
-    .local v1, "mmVar":Ldefpackage/mm;
-    iget v2, v1, Ldefpackage/mm;->a:I
+    check-cast v1, Ljlq;
 
-    .line 223
-    .local v2, "i3":I
-    iget v3, v1, Ldefpackage/mm;->b:I
+    .line 37690
+    .local v1, "jlqVar25":Ljlq;
+    move-object v2, p2
 
-    .line 224
-    .local v3, "i4":I
-    if-gt v3, p1, :cond_3
+    check-cast v2, Ljlq;
 
-    .line 225
-    const/4 v4, 0x2
+    .line 37691
+    .local v2, "jlqVar26":Ljlq;
+    iget-object v3, v0, Ljkz;->j:Landroid/animation/ValueAnimator;
 
-    if-ne v2, v4, :cond_2
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    .line 226
-    iget v4, v1, Ldefpackage/mm;->d:I
+    move-result-object v3
 
-    .line 227
-    .local v4, "i5":I
-    add-int v5, v3, v4
+    .line 37692
+    .local v3, "c22":Ljky;
+    invoke-virtual {v3, v8}, Ljky;->d(I)V
 
-    if-ge p1, v5, :cond_0
+    .line 37693
+    invoke-virtual {v3}, Ljky;->e()V
 
-    .line 228
-    const/4 v5, -0x1
+    .line 37694
+    iget-object v4, v0, Ljkz;->d:Landroid/animation/ValueAnimator;
 
-    return v5
+    invoke-virtual {v0, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    .line 230
-    :cond_0
-    sub-int/2addr p1, v4
+    move-result-object v4
 
-    .line 231
-    .end local v4    # "i5":I
-    :cond_1
-    goto :goto_1
+    .line 37695
+    .local v4, "c23":Ljky;
+    invoke-virtual {v4, v8}, Ljky;->d(I)V
 
-    :cond_2
-    const/4 v4, 0x1
+    .line 37696
+    invoke-virtual {v4}, Ljky;->e()V
 
-    if-ne v2, v4, :cond_1
+    .line 37697
+    iget-object v5, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
 
-    .line 232
-    iget v4, v1, Ldefpackage/mm;->d:I
+    invoke-virtual {v0, v5}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    add-int/2addr p1, v4
+    move-result-object v5
 
-    .line 235
-    :cond_3
-    :goto_1
-    nop
+    .line 37698
+    .local v5, "c24":Ljky;
+    invoke-virtual {v5, v8}, Ljky;->d(I)V
 
-    .end local v1    # "mmVar":Ldefpackage/mm;
-    .end local v2    # "i3":I
-    .end local v3    # "i4":I
-    add-int/lit8 p2, p2, 0x1
+    .line 37699
+    invoke-virtual {v5}, Ljky;->i()V
 
-    .line 236
-    goto :goto_0
+    .line 37700
+    iget-object v6, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
 
-    .line 237
-    :cond_4
-    return p1
-.end method
+    new-instance v7, Ldefpackage/Ln;
 
-.method public final c(IIILjava/lang/Object;)Ldefpackage/mm;
-    .locals 2
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
-    .param p3, "i3"    # I
-    .param p4, "obj"    # Ljava/lang/Object;
+    invoke-direct {v7, p0}, Ldefpackage/Ln;-><init>(Ldefpackage/Mn;)V
 
-    .line 241
-    iget-object v0, p0, Ldefpackage/mn;->e:Ldefpackage/fc;
+    invoke-static {v7}, Lmip;->ev(Ljava/util/function/Consumer;)Landroid/animation/Animator$AnimatorListener;
 
-    invoke-interface {v0}, Ldefpackage/fc;->a()Ljava/lang/Object;
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    .line 37712
+    return-void
+
+    .line 37677
+    .end local v0    # "jkzVar16":Ljkz;
+    .end local v1    # "jlqVar25":Ljlq;
+    .end local v2    # "jlqVar26":Ljlq;
+    .end local v3    # "c22":Ljky;
+    .end local v4    # "c23":Ljky;
+    .end local v5    # "c24":Ljky;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37678
+    .local v0, "jkzVar15":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37679
+    .local v1, "jlqVar24":Ljlq;
+    iget-object v2, v0, Ljkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v5}, Ljky;->d(I)V
+
+    .line 37680
+    iget-object v2, v0, Ljkz;->j:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    .line 37681
+    .local v2, "c20":Ljky;
+    invoke-virtual {v2, v4}, Ljky;->d(I)V
+
+    .line 37682
+    invoke-virtual {v2}, Ljky;->i()V
+
+    .line 37683
+    iget-object v3, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    .line 37684
+    .local v3, "c21":Ljky;
+    invoke-virtual {v3, v8}, Ljky;->d(I)V
+
+    .line 37685
+    move-object v4, p2
+
+    check-cast v4, Ljlq;
+
+    iget-object v4, v4, Ljlq;->n:Lojc;
+
+    invoke-virtual {v3, v4}, Ljky;->c(Lojc;)V
+
+    .line 37686
+    return-void
+
+    .line 37669
+    .end local v0    # "jkzVar15":Ljkz;
+    .end local v1    # "jlqVar24":Ljlq;
+    .end local v2    # "c20":Ljky;
+    .end local v3    # "c21":Ljky;
+    :pswitch_1
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37670
+    .local v0, "jkzVar14":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37671
+    .local v1, "jlqVar23":Ljlq;
+    iget-object v2, v0, Ljkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    .line 37672
+    .local v2, "c19":Ljky;
+    invoke-virtual {v2, v3}, Ljky;->d(I)V
+
+    .line 37673
+    invoke-virtual {v2}, Ljky;->e()V
+
+    .line 37674
+    iget-object v3, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    move-object v4, p2
+
+    check-cast v4, Ljlq;
+
+    iget-object v4, v4, Ljlq;->n:Lojc;
+
+    invoke-virtual {v3, v4}, Ljky;->h(Lojc;)V
+
+    .line 37675
+    return-void
+
+    .line 37659
+    .end local v0    # "jkzVar14":Ljkz;
+    .end local v1    # "jlqVar23":Ljlq;
+    .end local v2    # "c19":Ljky;
+    :pswitch_2
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37660
+    .local v0, "jkzVar13":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37661
+    .local v1, "jlqVar21":Ljlq;
+    move-object v2, p2
+
+    check-cast v2, Ljlq;
+
+    .line 37662
+    .local v2, "jlqVar22":Ljlq;
+    iget-object v3, v2, Ljlq;->x:Ljkc;
+
+    sget-object v4, Ljkc;->AUTOTIMER_IDLE:Ljkc;
+
+    invoke-virtual {v3, v4}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    invoke-static {v3}, Lobr;->aQ(Z)V
+
+    .line 37663
+    iget-object v3, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    .line 37664
+    .local v3, "c18":Ljky;
+    invoke-virtual {v3, v5}, Ljky;->d(I)V
+
+    .line 37665
+    iget-object v4, v2, Ljlq;->n:Lojc;
+
+    invoke-virtual {v3, v4}, Ljky;->h(Lojc;)V
+
+    .line 37666
+    iget-object v4, v0, Ljkz;->h:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v8}, Ljky;->d(I)V
+
+    .line 37667
+    return-void
+
+    .line 37649
+    .end local v0    # "jkzVar13":Ljkz;
+    .end local v1    # "jlqVar21":Ljlq;
+    .end local v2    # "jlqVar22":Ljlq;
+    .end local v3    # "c18":Ljky;
+    :pswitch_3
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37650
+    .local v0, "jkzVar12":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37651
+    .local v1, "jlqVar19":Ljlq;
+    move-object v3, p2
+
+    check-cast v3, Ljlq;
+
+    .line 37652
+    .local v3, "jlqVar20":Ljlq;
+    iget-object v4, v0, Ljkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v6}, Ljky;->d(I)V
+
+    .line 37653
+    iget-object v4, v0, Ljkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    .line 37654
+    .local v4, "c17":Ljky;
+    invoke-virtual {v4}, Ljky;->e()V
+
+    .line 37655
+    invoke-virtual {v4, v2}, Ljky;->d(I)V
+
+    .line 37656
+    iget-object v2, v0, Ljkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v8}, Ljky;->d(I)V
+
+    .line 37657
+    return-void
+
+    .line 37644
+    .end local v0    # "jkzVar12":Ljkz;
+    .end local v1    # "jlqVar19":Ljlq;
+    .end local v3    # "jlqVar20":Ljlq;
+    .end local v4    # "c17":Ljky;
+    :pswitch_4
+    move-object v0, p1
+
+    check-cast v0, Ljlq;
+
+    .line 37645
+    .local v0, "jlqVar17":Ljlq;
+    move-object v1, p2
+
+    check-cast v1, Ljlq;
+
+    .line 37646
+    .local v1, "jlqVar18":Ljlq;
+    iget-object v2, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    iget-object v2, v2, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    sget-object v3, Ljkc;->NIGHT_IDLE:Ljkc;
+
+    invoke-virtual {v2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
+
+    .line 37647
+    return-void
+
+    .line 37631
+    .end local v0    # "jlqVar17":Ljlq;
+    .end local v1    # "jlqVar18":Ljlq;
+    :pswitch_5
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37632
+    .local v0, "jkzVar11":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37633
+    .local v1, "jlqVar16":Ljlq;
+    iget-object v2, v0, Ljkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    .line 37634
+    .local v2, "c14":Ljky;
+    invoke-virtual {v2, v3}, Ljky;->d(I)V
+
+    .line 37635
+    invoke-virtual {v2}, Ljky;->e()V
+
+    .line 37636
+    iget-object v3, v0, Ljkz;->k:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    .line 37637
+    .local v3, "c15":Ljky;
+    invoke-virtual {v3, v4}, Ljky;->d(I)V
+
+    .line 37638
+    invoke-virtual {v3}, Ljky;->e()V
+
+    .line 37639
+    iget-object v5, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v5
+
+    .line 37640
+    .local v5, "c16":Ljky;
+    invoke-virtual {v5, v4}, Ljky;->d(I)V
+
+    .line 37641
+    move-object v4, p2
+
+    check-cast v4, Ljlq;
+
+    iget-object v4, v4, Ljlq;->n:Lojc;
+
+    invoke-virtual {v5, v4}, Ljky;->c(Lojc;)V
+
+    .line 37642
+    return-void
+
+    .line 37620
+    .end local v0    # "jkzVar11":Ljkz;
+    .end local v1    # "jlqVar16":Ljlq;
+    .end local v2    # "c14":Ljky;
+    .end local v3    # "c15":Ljky;
+    .end local v5    # "c16":Ljky;
+    :pswitch_6
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37621
+    .local v0, "jkzVar10":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37622
+    .local v1, "jlqVar15":Ljlq;
+    iget-object v2, v0, Ljkz;->e:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v8}, Ljky;->d(I)V
+
+    .line 37623
+    iget-object v2, v0, Ljkz;->j:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    .line 37624
+    .local v2, "c12":Ljky;
+    invoke-virtual {v2, v5}, Ljky;->d(I)V
+
+    .line 37625
+    invoke-virtual {v2}, Ljky;->i()V
+
+    .line 37626
+    iget-object v3, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    .line 37627
+    .local v3, "c13":Ljky;
+    invoke-virtual {v3, v5}, Ljky;->d(I)V
+
+    .line 37628
+    move-object v4, p2
+
+    check-cast v4, Ljlq;
+
+    iget-object v4, v4, Ljlq;->n:Lojc;
+
+    invoke-virtual {v3, v4}, Ljky;->h(Lojc;)V
+
+    .line 37629
+    return-void
+
+    .line 37614
+    .end local v0    # "jkzVar10":Ljkz;
+    .end local v1    # "jlqVar15":Ljlq;
+    .end local v2    # "c12":Ljky;
+    .end local v3    # "c13":Ljky;
+    :pswitch_7
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37615
+    .local v0, "jkzVar9":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37616
+    .local v1, "jlqVar14":Ljlq;
+    invoke-virtual {v0}, Ljkz;->j()V
+
+    .line 37617
+    move-object v2, p2
+
+    check-cast v2, Ljlq;
+
+    invoke-virtual {v0, v2}, Ljkz;->e(Ljlq;)V
+
+    .line 37618
+    return-void
+
+    .line 37593
+    .end local v0    # "jkzVar9":Ljkz;
+    .end local v1    # "jlqVar14":Ljlq;
+    :pswitch_8
+    iget-object v2, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37594
+    .local v2, "jkzVar8":Ljkz;
+    move-object v3, p1
+
+    check-cast v3, Ljlq;
+
+    .line 37595
+    .local v3, "jlqVar12":Ljlq;
+    move-object v5, p2
+
+    check-cast v5, Ljlq;
+
+    .line 37596
+    .local v5, "jlqVar13":Ljlq;
+    iget-object v9, v2, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    invoke-virtual {v9}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled()Z
+
+    move-result v9
+
+    if-eqz v9, :cond_0
+
+    .line 37597
+    iget-object v0, v2, Ljkz;->h:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/mm;
+    invoke-virtual {v0, v7}, Ljky;->d(I)V
 
-    .line 242
-    .local v0, "mmVar":Ldefpackage/mm;
-    if-nez v0, :cond_0
+    .line 37598
+    iget-object v0, v2, Ljkz;->c:Landroid/animation/ValueAnimator;
 
-    .line 243
-    new-instance v1, Ldefpackage/mm;
+    invoke-virtual {v2, v0}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    invoke-direct {v1, p1, p2, p3, p4}, Ldefpackage/mm;-><init>(IIILjava/lang/Object;)V
+    move-result-object v0
 
-    return-object v1
+    invoke-virtual {v0, v7}, Ljky;->d(I)V
 
-    .line 245
-    :cond_0
-    iput p1, v0, Ldefpackage/mm;->a:I
+    .line 37599
+    iget-object v0, v2, Ljkz;->n:Landroid/animation/ValueAnimator;
 
-    .line 246
-    iput p2, v0, Ldefpackage/mm;->b:I
+    invoke-virtual {v2, v0}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    .line 247
-    iput p3, v0, Ldefpackage/mm;->d:I
+    move-result-object v0
 
-    .line 248
-    iput-object p4, v0, Ldefpackage/mm;->c:Ljava/lang/Object;
+    invoke-virtual {v0, v4}, Ljky;->d(I)V
 
-    .line 249
-    return-object v0
-.end method
+    .line 37600
+    iget-object v0, v2, Ljkz;->m:Landroid/animation/ValueAnimator;
 
-.method public final d()V
-    .locals 4
+    invoke-virtual {v2, v0}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    .line 253
-    iget-object v0, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
+    move-result-object v0
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v0, v7}, Ljky;->d(I)V
 
-    move-result v0
+    .line 37601
+    iget-object v0, v2, Ljkz;->g:Landroid/animation/ValueAnimator;
 
-    .line 254
-    .local v0, "size":I
-    const/4 v1, 0x0
+    invoke-virtual {v2, v0}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    .local v1, "i":I
-    :goto_0
-    if-ge v1, v0, :cond_0
+    move-result-object v0
 
-    .line 255
-    iget-object v2, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    invoke-virtual {v0, v7}, Ljky;->d(I)V
 
-    iget-object v3, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ldefpackage/mm;
-
-    invoke-virtual {v2, v3}, Ldefpackage/pz;->b(Ldefpackage/mm;)V
-
-    .line 254
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 257
-    .end local v1    # "i":I
-    :cond_0
-    iget-object v1, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {p0, v1}, Ldefpackage/mn;->i(Ljava/util/List;)V
-
-    .line 258
-    const/4 v1, 0x0
-
-    iput v1, p0, Ldefpackage/mn;->c:I
-
-    .line 259
+    .line 37602
     return-void
-.end method
 
-.method public final e()V
-    .locals 7
+    .line 37604
+    :cond_0
+    iget-object v4, v2, Ljkz;->h:Landroid/animation/ValueAnimator;
 
-    .line 262
-    invoke-virtual {p0}, Ldefpackage/mn;->d()V
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    .line 263
-    iget-object v0, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
+    move-result-object v4
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v4, v7}, Ljky;->d(I)V
 
-    move-result v0
+    .line 37605
+    iget-object v4, v2, Ljkz;->k:Landroid/animation/ValueAnimator;
 
-    .line 264
-    .local v0, "size":I
-    const/4 v1, 0x0
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    .local v1, "i":I
-    :goto_0
-    if-ge v1, v0, :cond_0
+    move-result-object v4
 
-    .line 265
-    iget-object v2, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
+    invoke-virtual {v4, v7}, Ljky;->d(I)V
 
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 37606
+    iget-object v4, v2, Ljkz;->i:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v7}, Ljky;->d(I)V
+
+    .line 37607
+    iget-object v4, v2, Ljkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v7}, Ljky;->d(I)V
+
+    .line 37608
+    iget-object v4, v2, Ljkz;->n:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v6}, Ljky;->d(I)V
+
+    .line 37609
+    iget-object v4, v2, Ljkz;->m:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v1}, Ljky;->d(I)V
+
+    .line 37610
+    iget-object v1, v2, Ljkz;->o:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v1}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljky;->d(I)V
+
+    .line 37611
+    iget-object v0, v2, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Ljky;->d(I)V
+
+    .line 37612
+    return-void
+
+    .line 37590
+    .end local v2    # "jkzVar8":Ljkz;
+    .end local v3    # "jlqVar12":Ljlq;
+    .end local v5    # "jlqVar13":Ljlq;
+    :pswitch_9
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    sget-object v2, Ljkc;->PHOTO_PRESSED:Ljkc;
+
+    invoke-static {v1, v2}, Ljkz;->d(Ljlq;Ljkc;)Ljlq;
+
+    move-result-object v1
+
+    move-object v2, p2
+
+    check-cast v2, Ljlq;
+
+    invoke-virtual {v0, v1, v2}, Ljkz;->a(Ljlq;Ljlq;)Landroid/animation/AnimatorSet;
+
+    .line 37591
+    return-void
+
+    .line 37579
+    :pswitch_a
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37580
+    .local v0, "jkzVar7":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37581
+    .local v1, "jlqVar11":Ljlq;
+    iget-object v2, v0, Ljkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/mm;
+    invoke-virtual {v2, v5}, Ljky;->d(I)V
 
-    .line 266
-    .local v2, "mmVar":Ldefpackage/mm;
-    iget v3, v2, Ldefpackage/mm;->a:I
+    .line 37582
+    iget-object v2, v0, Ljkz;->j:Landroid/animation/ValueAnimator;
 
-    packed-switch v3, :pswitch_data_0
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    :pswitch_0
-    goto :goto_1
+    move-result-object v2
 
-    .line 276
-    :pswitch_1
-    iget-object v3, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    .line 37583
+    .local v2, "c10":Ljky;
+    invoke-virtual {v2, v4}, Ljky;->d(I)V
 
-    invoke-virtual {v3, v2}, Ldefpackage/pz;->b(Ldefpackage/mm;)V
+    .line 37584
+    invoke-virtual {v2}, Ljky;->i()V
 
-    .line 277
-    iget-object v3, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    .line 37585
+    iget-object v3, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
 
-    iget v4, v2, Ldefpackage/mm;->b:I
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
 
-    iget v5, v2, Ldefpackage/mm;->d:I
+    move-result-object v3
 
-    iget-object v6, v2, Ldefpackage/mm;->c:Ljava/lang/Object;
+    .line 37586
+    .local v3, "c11":Ljky;
+    invoke-virtual {v3, v8}, Ljky;->d(I)V
 
-    invoke-virtual {v3, v4, v5, v6}, Ldefpackage/pz;->c(IILjava/lang/Object;)V
+    .line 37587
+    move-object v4, p2
 
-    goto :goto_1
+    check-cast v4, Ljlq;
 
-    .line 272
-    :pswitch_2
-    iget-object v3, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    iget-object v4, v4, Ljlq;->n:Lojc;
 
-    invoke-virtual {v3, v2}, Ldefpackage/pz;->b(Ldefpackage/mm;)V
+    invoke-virtual {v3, v4}, Ljky;->c(Lojc;)V
 
-    .line 273
-    iget-object v3, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    .line 37588
+    return-void
 
-    iget v4, v2, Ldefpackage/mm;->b:I
+    .line 37572
+    .end local v0    # "jkzVar7":Ljkz;
+    .end local v1    # "jlqVar11":Ljlq;
+    .end local v2    # "c10":Ljky;
+    .end local v3    # "c11":Ljky;
+    :pswitch_b
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
 
-    iget v5, v2, Ldefpackage/mm;->d:I
+    .line 37573
+    .local v0, "jkzVar6":Ljkz;
+    move-object v1, p1
 
-    invoke-virtual {v3, v4, v5}, Ldefpackage/pz;->e(II)V
+    check-cast v1, Ljlq;
 
-    .line 274
-    goto :goto_1
+    .line 37574
+    .local v1, "jlqVar9":Ljlq;
+    move-object v2, p2
 
-    .line 268
-    :pswitch_3
-    iget-object v3, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    check-cast v2, Ljlq;
 
-    invoke-virtual {v3, v2}, Ldefpackage/pz;->b(Ldefpackage/mm;)V
+    .line 37575
+    .local v2, "jlqVar10":Ljlq;
+    invoke-virtual {v0, v2}, Ljkz;->h(Ljlq;)V
 
-    .line 269
-    iget-object v3, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    .line 37576
+    invoke-virtual {v0, v2}, Ljkz;->f(Ljlq;)V
 
-    iget v4, v2, Ldefpackage/mm;->b:I
+    .line 37577
+    return-void
 
-    iget v5, v2, Ldefpackage/mm;->d:I
+    .line 37569
+    .end local v0    # "jkzVar6":Ljkz;
+    .end local v1    # "jlqVar9":Ljlq;
+    .end local v2    # "jlqVar10":Ljlq;
+    :pswitch_c
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
 
-    invoke-virtual {v3, v4, v5}, Ldefpackage/pz;->d(II)V
+    move-object v1, p1
 
-    .line 270
-    nop
+    check-cast v1, Ljlq;
 
-    .line 264
-    .end local v2    # "mmVar":Ldefpackage/mm;
-    :goto_1
-    add-int/lit8 v1, v1, 0x1
+    sget-object v2, Ljkc;->NIGHT_IDLE:Ljkc;
 
-    goto :goto_0
+    invoke-static {v1, v2}, Ljkz;->d(Ljlq;Ljkc;)Ljlq;
 
-    .line 281
-    .end local v1    # "i":I
-    :cond_0
-    iget-object v1, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
+    move-result-object v1
 
-    invoke-virtual {p0, v1}, Ldefpackage/mn;->i(Ljava/util/List;)V
+    move-object v2, p2
 
-    .line 282
-    const/4 v1, 0x0
+    check-cast v2, Ljlq;
 
-    iput v1, p0, Ldefpackage/mn;->c:I
+    invoke-virtual {v0, v1, v2}, Ljkz;->a(Ljlq;Ljlq;)Landroid/animation/AnimatorSet;
 
-    .line 283
+    .line 37570
+    return-void
+
+    .line 37556
+    :pswitch_d
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37557
+    .local v0, "jkzVar5":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37558
+    .local v1, "jlqVar7":Ljlq;
+    move-object v3, p2
+
+    check-cast v3, Ljlq;
+
+    .line 37559
+    .local v3, "jlqVar8":Ljlq;
+    iget-object v4, v0, Ljkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v6}, Ljky;->d(I)V
+
+    .line 37560
+    iget-object v4, v0, Ljkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    .line 37561
+    .local v4, "c8":Ljky;
+    invoke-virtual {v4}, Ljky;->e()V
+
+    .line 37562
+    invoke-virtual {v4, v2}, Ljky;->d(I)V
+
+    .line 37563
+    invoke-virtual {v4}, Ljky;->a()V
+
+    .line 37564
+    iget-object v5, v0, Ljkz;->d:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v5
+
+    .line 37565
+    .local v5, "c9":Ljky;
+    invoke-virtual {v5, v2}, Ljky;->d(I)V
+
+    .line 37566
+    invoke-virtual {v5}, Ljky;->a()V
+
+    .line 37567
+    return-void
+
+    .line 37542
+    .end local v0    # "jkzVar5":Ljkz;
+    .end local v1    # "jlqVar7":Ljlq;
+    .end local v3    # "jlqVar8":Ljlq;
+    .end local v4    # "c8":Ljky;
+    .end local v5    # "c9":Ljky;
+    :pswitch_e
+    iget-object v2, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37543
+    .local v2, "jkzVar4":Ljkz;
+    move-object v3, p1
+
+    check-cast v3, Ljlq;
+
+    .line 37544
+    .local v3, "jlqVar6":Ljlq;
+    iget-object v4, v2, Ljkz;->h:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v6}, Ljky;->d(I)V
+
+    .line 37545
+    iget-object v4, v2, Ljkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v6}, Ljky;->d(I)V
+
+    .line 37546
+    iget-object v4, v2, Ljkz;->k:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v7}, Ljky;->d(I)V
+
+    .line 37547
+    iget-object v4, v2, Ljkz;->i:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v7}, Ljky;->d(I)V
+
+    .line 37548
+    iget-object v4, v2, Ljkz;->n:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v6}, Ljky;->d(I)V
+
+    .line 37549
+    iget-object v4, v2, Ljkz;->m:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v1}, Ljky;->d(I)V
+
+    .line 37550
+    iget-object v1, v2, Ljkz;->o:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v1}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljky;->d(I)V
+
+    .line 37551
+    iget-object v0, v2, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v0
+
+    .line 37552
+    .local v0, "c7":Ljky;
+    invoke-virtual {v0, v6}, Ljky;->d(I)V
+
+    .line 37553
+    move-object v1, p2
+
+    check-cast v1, Ljlq;
+
+    iget-object v1, v1, Ljlq;->n:Lojc;
+
+    invoke-virtual {v0, v1}, Ljky;->h(Lojc;)V
+
+    .line 37554
+    return-void
+
+    .line 37531
+    .end local v0    # "c7":Ljky;
+    .end local v2    # "jkzVar4":Ljkz;
+    .end local v3    # "jlqVar6":Ljlq;
+    :pswitch_f
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37532
+    .local v0, "jkzVar3":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37533
+    .local v1, "jlqVar5":Ljlq;
+    iget-object v2, v0, Ljkz;->f:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    .line 37534
+    .local v2, "c5":Ljky;
+    invoke-virtual {v2, v3}, Ljky;->d(I)V
+
+    .line 37535
+    invoke-virtual {v2}, Ljky;->e()V
+
+    .line 37536
+    iget-object v4, v0, Ljkz;->i:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    .line 37537
+    .local v4, "c6":Ljky;
+    invoke-virtual {v4, v3}, Ljky;->d(I)V
+
+    .line 37538
+    invoke-virtual {v4}, Ljky;->b()V
+
+    .line 37539
+    iget-object v3, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    move-object v5, p2
+
+    check-cast v5, Ljlq;
+
+    iget-object v5, v5, Ljlq;->n:Lojc;
+
+    invoke-virtual {v3, v5}, Ljky;->h(Lojc;)V
+
+    .line 37540
+    return-void
+
+    .line 37517
+    .end local v0    # "jkzVar3":Ljkz;
+    .end local v1    # "jlqVar5":Ljlq;
+    .end local v2    # "c5":Ljky;
+    .end local v4    # "c6":Ljky;
+    :pswitch_10
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37518
+    .local v0, "jkzVar2":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37519
+    .local v1, "jlqVar4":Ljlq;
+    iget-object v2, v0, Ljkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v2}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v2
+
+    .line 37520
+    .local v2, "c2":Ljky;
+    invoke-virtual {v2, v8}, Ljky;->d(I)V
+
+    .line 37521
+    invoke-virtual {v2}, Ljky;->e()V
+
+    .line 37522
+    invoke-virtual {v2}, Ljky;->i()V
+
+    .line 37523
+    iget-object v3, v0, Ljkz;->h:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    .line 37524
+    .local v3, "c3":Ljky;
+    invoke-virtual {v3, v8}, Ljky;->d(I)V
+
+    .line 37525
+    invoke-virtual {v3}, Ljky;->e()V
+
+    .line 37526
+    iget-object v4, v0, Ljkz;->g:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v4}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v4
+
+    .line 37527
+    .local v4, "c4":Ljky;
+    invoke-virtual {v4, v8}, Ljky;->d(I)V
+
+    .line 37528
+    move-object v5, p2
+
+    check-cast v5, Ljlq;
+
+    iget-object v5, v5, Ljlq;->n:Lojc;
+
+    invoke-virtual {v4, v5}, Ljky;->c(Lojc;)V
+
+    .line 37529
+    return-void
+
+    .line 37513
+    .end local v0    # "jkzVar2":Ljkz;
+    .end local v1    # "jlqVar4":Ljlq;
+    .end local v2    # "c2":Ljky;
+    .end local v3    # "c3":Ljky;
+    .end local v4    # "c4":Ljky;
+    :pswitch_11
+    move-object v0, p1
+
+    check-cast v0, Ljlq;
+
+    .line 37514
+    .local v0, "jlqVar3":Ljlq;
+    iget-object v1, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    move-object v2, p2
+
+    check-cast v2, Ljlq;
+
+    invoke-virtual {v1, v2}, Ljkz;->i(Ljlq;)V
+
+    .line 37515
+    return-void
+
+    .line 37510
+    .end local v0    # "jlqVar3":Ljlq;
+    :pswitch_12
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    sget-object v2, Ljkc;->NIGHT_IDLE:Ljkc;
+
+    invoke-static {v1, v2}, Ljkz;->d(Ljlq;Ljkc;)Ljlq;
+
+    move-result-object v1
+
+    move-object v2, p2
+
+    check-cast v2, Ljlq;
+
+    invoke-virtual {v0, v1, v2}, Ljkz;->a(Ljlq;Ljlq;)Landroid/animation/AnimatorSet;
+
+    .line 37511
+    return-void
+
+    .line 37498
+    :pswitch_13
+    iget-object v0, p0, Ldefpackage/Mn;->a:Ljkz;
+
+    .line 37499
+    .local v0, "jkzVar":Ljkz;
+    move-object v1, p1
+
+    check-cast v1, Ljlq;
+
+    .line 37500
+    .local v1, "jlqVar":Ljlq;
+    move-object v2, p2
+
+    check-cast v2, Ljlq;
+
+    .line 37501
+    .local v2, "jlqVar2":Ljlq;
+    iget-object v3, v0, Ljkz;->i:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    const/16 v4, 0x50
+
+    invoke-virtual {v3, v4}, Ljky;->d(I)V
+
+    .line 37502
+    iget-object v3, v0, Ljkz;->k:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v3}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v3
+
+    .line 37503
+    .local v3, "c":Ljky;
+    invoke-virtual {v3, v4}, Ljky;->d(I)V
+
+    .line 37504
+    invoke-virtual {v3}, Ljky;->b()V
+
+    .line 37505
+    iget-object v5, v0, Ljkz;->c:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v4}, Ljky;->d(I)V
+
+    .line 37506
+    iget-object v5, v0, Ljkz;->n:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v4}, Ljky;->d(I)V
+
+    .line 37507
+    iget-object v5, v0, Ljkz;->m:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0, v5}, Ljkz;->c(Landroid/animation/Animator;)Ljky;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v4}, Ljky;->d(I)V
+
+    .line 37508
     return-void
 
     nop
 
     :pswitch_data_0
-    .packed-switch 0x1
+    .packed-switch 0x0
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
         :pswitch_3
         :pswitch_2
-        :pswitch_0
         :pswitch_1
+        :pswitch_0
     .end packed-switch
 .end method
 
-.method public final f(Ldefpackage/mm;I)V
-    .locals 3
-    .param p1, "mmVar"    # Ldefpackage/mm;
-    .param p2, "i"    # I
+.method public final andThen(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;
+    .locals 1
+    .param p1, "biConsumer"    # Ljava/util/function/BiConsumer;
 
-    .line 286
-    iget-object v0, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
-
-    invoke-virtual {v0, p1}, Ldefpackage/pz;->b(Ldefpackage/mm;)V
-
-    .line 287
-    iget v0, p1, Ldefpackage/mm;->a:I
+    .line 37718
+    const/4 v0, -0x1
 
     packed-switch v0, :pswitch_data_0
 
-    .line 293
+    .line 37760
+    return-object p1
+
+    .line 37758
     :pswitch_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    return-object p1
 
-    const-string v1, "only remove and update ops can be dispatched in first pass"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 295
+    .line 37756
     :pswitch_1
-    iget-object v0, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    return-object p1
 
-    iget v1, p1, Ldefpackage/mm;->d:I
-
-    iget-object v2, p1, Ldefpackage/mm;->c:Ljava/lang/Object;
-
-    invoke-virtual {v0, p2, v1, v2}, Ldefpackage/pz;->c(IILjava/lang/Object;)V
-
-    .line 296
-    return-void
-
-    .line 289
+    .line 37754
     :pswitch_2
-    iget-object v0, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
+    return-object p1
 
-    iget v1, p1, Ldefpackage/mm;->d:I
-
-    invoke-virtual {v0, p2, v1}, Ldefpackage/pz;->e(II)V
-
-    .line 290
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_2
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method public final g()V
-    .locals 13
-
-    .line 303
-    iget-object v0, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
-
-    .line 304
-    .local v0, "arrayList":Ljava/util/ArrayList;
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    sub-int/2addr v1, v2
-
-    .local v1, "size":I
-    :goto_0
-    if-ltz v1, :cond_0
-
-    .line 305
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ldefpackage/mm;
-
-    iget v3, v3, Ldefpackage/mm;->a:I
-
-    .line 304
-    add-int/lit8 v1, v1, -0x1
-
-    goto :goto_0
-
-    .line 307
-    .end local v1    # "size":I
-    :cond_0
-    iget-object v1, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    .line 308
-    .local v1, "size2":I
-    const/4 v3, 0x0
-
-    .local v3, "i2":I
-    :goto_1
-    if-ge v3, v1, :cond_10
-
-    .line 309
-    iget-object v4, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {v4, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ldefpackage/mm;
-
-    .line 310
-    .local v4, "mmVar":Ldefpackage/mm;
-    iget v5, v4, Ldefpackage/mm;->a:I
-
-    packed-switch v5, :pswitch_data_0
-
-    :pswitch_0
-    goto/16 :goto_b
-
-    .line 360
-    :pswitch_1
-    iget v5, v4, Ldefpackage/mm;->b:I
-
-    .line 361
-    .local v5, "i7":I
-    iget v6, v4, Ldefpackage/mm;->d:I
-
-    add-int/2addr v6, v5
-
-    .line 362
-    .local v6, "i8":I
-    move v7, v5
-
-    .line 363
-    .local v7, "i9":I
-    const/4 v8, 0x0
-
-    .line 364
-    .local v8, "i10":I
-    const v9, 0xffff
-
-    .line 365
-    .local v9, "c3":C
-    :goto_2
-    const/4 v10, 0x4
-
-    if-ge v5, v6, :cond_5
-
-    .line 366
-    iget-object v11, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
-
-    invoke-virtual {v11, v5}, Ldefpackage/pz;->a(I)Ldefpackage/qs;
-
-    move-result-object v11
-
-    if-nez v11, :cond_3
-
-    invoke-direct {p0, v5}, Ldefpackage/mn;->p(I)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_1
-
-    goto :goto_3
-
-    .line 374
-    :cond_1
-    if-ne v9, v2, :cond_2
-
-    .line 375
-    iget-object v11, v4, Ldefpackage/mm;->c:Ljava/lang/Object;
-
-    invoke-virtual {p0, v10, v7, v8, v11}, Ldefpackage/mn;->c(IIILjava/lang/Object;)Ldefpackage/mm;
-
-    move-result-object v10
-
-    invoke-direct {p0, v10}, Ldefpackage/mn;->o(Ldefpackage/mm;)V
-
-    .line 376
-    move v7, v5
-
-    .line 377
-    const/4 v8, 0x0
-
-    .line 379
-    :cond_2
-    const/4 v9, 0x0
-
-    goto :goto_4
-
-    .line 367
-    :cond_3
-    :goto_3
-    if-nez v9, :cond_4
-
-    .line 368
-    iget-object v11, v4, Ldefpackage/mm;->c:Ljava/lang/Object;
-
-    invoke-virtual {p0, v10, v7, v8, v11}, Ldefpackage/mn;->c(IIILjava/lang/Object;)Ldefpackage/mm;
-
-    move-result-object v10
-
-    invoke-direct {p0, v10}, Ldefpackage/mn;->n(Ldefpackage/mm;)V
-
-    .line 369
-    move v7, v5
-
-    .line 370
-    const/4 v8, 0x0
-
-    .line 372
-    :cond_4
-    const/4 v9, 0x1
-
-    .line 381
-    :goto_4
-    add-int/2addr v8, v2
-
-    .line 382
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_2
-
-    .line 384
-    :cond_5
-    iget v11, v4, Ldefpackage/mm;->d:I
-
-    if-eq v8, v11, :cond_6
-
-    .line 385
-    iget-object v11, v4, Ldefpackage/mm;->c:Ljava/lang/Object;
-
-    .line 386
-    .local v11, "obj":Ljava/lang/Object;
-    invoke-virtual {p0, v4}, Ldefpackage/mn;->h(Ldefpackage/mm;)V
-
-    .line 387
-    invoke-virtual {p0, v10, v7, v8, v11}, Ldefpackage/mn;->c(IIILjava/lang/Object;)Ldefpackage/mm;
-
-    move-result-object v4
-
-    .line 389
-    .end local v11    # "obj":Ljava/lang/Object;
-    :cond_6
-    if-nez v9, :cond_7
-
-    .line 390
-    invoke-direct {p0, v4}, Ldefpackage/mn;->n(Ldefpackage/mm;)V
-
-    .line 391
-    goto/16 :goto_b
-
-    .line 393
-    :cond_7
-    invoke-direct {p0, v4}, Ldefpackage/mn;->o(Ldefpackage/mm;)V
-
-    goto :goto_b
-
-    .line 315
-    .end local v5    # "i7":I
-    .end local v6    # "i8":I
-    .end local v7    # "i9":I
-    .end local v8    # "i10":I
-    .end local v9    # "c3":C
-    :pswitch_2
-    iget v5, v4, Ldefpackage/mm;->b:I
-
-    .line 316
-    .local v5, "i3":I
-    iget v6, v4, Ldefpackage/mm;->d:I
-
-    add-int/2addr v6, v5
-
-    .line 317
-    .local v6, "i4":I
-    move v7, v5
-
-    .line 318
-    .local v7, "i5":I
-    const/4 v8, 0x0
-
-    .line 319
-    .local v8, "i6":I
-    const v9, 0xffff
-
-    .line 320
-    .local v9, "c2":C
-    :goto_5
-    const/4 v10, 0x0
-
-    const/4 v11, 0x2
-
-    if-ge v7, v6, :cond_d
-
-    .line 321
-    iget-object v12, p0, Ldefpackage/mn;->d:Ldefpackage/pz;
-
-    invoke-virtual {v12, v7}, Ldefpackage/pz;->a(I)Ldefpackage/qs;
-
-    move-result-object v12
-
-    if-nez v12, :cond_a
-
-    invoke-direct {p0, v7}, Ldefpackage/mn;->p(I)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_8
-
-    goto :goto_7
-
-    .line 330
-    :cond_8
-    if-ne v9, v2, :cond_9
-
-    .line 331
-    invoke-virtual {p0, v11, v5, v8, v10}, Ldefpackage/mn;->c(IIILjava/lang/Object;)Ldefpackage/mm;
-
-    move-result-object v10
-
-    invoke-direct {p0, v10}, Ldefpackage/mn;->o(Ldefpackage/mm;)V
-
-    .line 332
-    const/4 v10, 0x1
-
-    .local v10, "z":Z
-    goto :goto_6
-
-    .line 334
-    .end local v10    # "z":Z
-    :cond_9
-    const/4 v10, 0x0
-
-    .line 336
-    .restart local v10    # "z":Z
-    :goto_6
-    const/4 v11, 0x0
-
-    .local v11, "c":C
-    goto :goto_9
-
-    .line 322
-    .end local v10    # "z":Z
-    .end local v11    # "c":C
-    :cond_a
-    :goto_7
-    if-nez v9, :cond_b
-
-    .line 323
-    invoke-virtual {p0, v11, v5, v8, v10}, Ldefpackage/mn;->c(IIILjava/lang/Object;)Ldefpackage/mm;
-
-    move-result-object v10
-
-    invoke-direct {p0, v10}, Ldefpackage/mn;->n(Ldefpackage/mm;)V
-
-    .line 324
-    const/4 v10, 0x1
-
-    .restart local v10    # "z":Z
-    goto :goto_8
-
-    .line 326
-    .end local v10    # "z":Z
-    :cond_b
-    const/4 v10, 0x0
-
-    .line 328
-    .restart local v10    # "z":Z
-    :goto_8
-    const/4 v11, 0x1
-
-    .line 338
-    .restart local v11    # "c":C
-    :goto_9
-    if-eqz v10, :cond_c
-
-    .line 339
-    sub-int/2addr v7, v8
-
-    .line 340
-    sub-int/2addr v6, v8
-
-    .line 341
-    const/4 v8, 0x1
-
-    goto :goto_a
-
-    .line 343
-    :cond_c
-    add-int/lit8 v8, v8, 0x1
-
-    .line 345
-    :goto_a
-    add-int/2addr v7, v2
-
-    .line 346
-    move v9, v11
-
-    goto :goto_5
-
-    .line 348
-    .end local v10    # "z":Z
-    .end local v11    # "c":C
-    :cond_d
-    iget v12, v4, Ldefpackage/mm;->d:I
-
-    if-eq v8, v12, :cond_e
-
-    .line 349
-    invoke-virtual {p0, v4}, Ldefpackage/mn;->h(Ldefpackage/mm;)V
-
-    .line 350
-    invoke-virtual {p0, v11, v5, v8, v10}, Ldefpackage/mn;->c(IIILjava/lang/Object;)Ldefpackage/mm;
-
-    move-result-object v4
-
-    .line 352
-    :cond_e
-    if-nez v9, :cond_f
-
-    .line 353
-    invoke-direct {p0, v4}, Ldefpackage/mn;->n(Ldefpackage/mm;)V
-
-    .line 354
-    goto :goto_b
-
-    .line 356
-    :cond_f
-    invoke-direct {p0, v4}, Ldefpackage/mn;->o(Ldefpackage/mm;)V
-
-    .line 357
-    goto :goto_b
-
-    .line 312
-    .end local v5    # "i3":I
-    .end local v6    # "i4":I
-    .end local v7    # "i5":I
-    .end local v8    # "i6":I
-    .end local v9    # "c2":C
+    .line 37752
     :pswitch_3
-    invoke-direct {p0, v4}, Ldefpackage/mn;->o(Ldefpackage/mm;)V
+    return-object p1
 
-    .line 313
+    .line 37750
+    :pswitch_4
+    return-object p1
+
+    .line 37748
+    :pswitch_5
+    return-object p1
+
+    .line 37746
+    :pswitch_6
+    return-object p1
+
+    .line 37744
+    :pswitch_7
+    return-object p1
+
+    .line 37742
+    :pswitch_8
+    return-object p1
+
+    .line 37740
+    :pswitch_9
+    return-object p1
+
+    .line 37738
+    :pswitch_a
+    return-object p1
+
+    .line 37736
+    :pswitch_b
+    return-object p1
+
+    .line 37734
+    :pswitch_c
+    return-object p1
+
+    .line 37732
+    :pswitch_d
+    return-object p1
+
+    .line 37730
+    :pswitch_e
+    return-object p1
+
+    .line 37728
+    :pswitch_f
+    return-object p1
+
+    .line 37726
+    :pswitch_10
+    return-object p1
+
+    .line 37724
+    :pswitch_11
+    return-object p1
+
+    .line 37722
+    :pswitch_12
+    return-object p1
+
+    .line 37720
+    :pswitch_13
+    return-object p1
+
     nop
 
-    .line 308
-    .end local v4    # "mmVar":Ldefpackage/mm;
-    :goto_b
-    add-int/lit8 v3, v3, 0x1
-
-    goto/16 :goto_1
-
-    .line 398
-    .end local v3    # "i2":I
-    :cond_10
-    iget-object v2, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
-
-    .line 399
-    return-void
-
     :pswitch_data_0
-    .packed-switch 0x1
+    .packed-switch 0x0
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
         :pswitch_3
         :pswitch_2
-        :pswitch_0
         :pswitch_1
+        :pswitch_0
     .end packed-switch
-.end method
-
-.method public final h(Ldefpackage/mm;)V
-    .locals 1
-    .param p1, "mmVar"    # Ldefpackage/mm;
-
-    .line 402
-    const/4 v0, 0x0
-
-    iput-object v0, p1, Ldefpackage/mm;->c:Ljava/lang/Object;
-
-    .line 403
-    iget-object v0, p0, Ldefpackage/mn;->e:Ldefpackage/fc;
-
-    invoke-interface {v0, p1}, Ldefpackage/fc;->b(Ljava/lang/Object;)Z
-
-    .line 404
-    return-void
-.end method
-
-.method public final i(Ljava/util/List;)V
-    .locals 3
-    .param p1, "list"    # Ljava/util/List;
-
-    .line 407
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    .line 408
-    .local v0, "size":I
-    const/4 v1, 0x0
-
-    .local v1, "i":I
-    :goto_0
-    if-ge v1, v0, :cond_0
-
-    .line 409
-    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ldefpackage/mm;
-
-    invoke-virtual {p0, v2}, Ldefpackage/mn;->h(Ldefpackage/mm;)V
-
-    .line 408
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 411
-    .end local v1    # "i":I
-    :cond_0
-    invoke-interface {p1}, Ljava/util/List;->clear()V
-
-    .line 412
-    return-void
-.end method
-
-.method public final j()V
-    .locals 1
-
-    .line 415
-    iget-object v0, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {p0, v0}, Ldefpackage/mn;->i(Ljava/util/List;)V
-
-    .line 416
-    iget-object v0, p0, Ldefpackage/mn;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {p0, v0}, Ldefpackage/mn;->i(Ljava/util/List;)V
-
-    .line 417
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/mn;->c:I
-
-    .line 418
-    return-void
-.end method
-
-.method public final k(I)Z
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 421
-    iget v0, p0, Ldefpackage/mn;->c:I
-
-    and-int/2addr v0, p1
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .line 425
-    iget-object v0, p0, Ldefpackage/mn;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    if-lez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
 .end method

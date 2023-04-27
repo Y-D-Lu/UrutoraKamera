@@ -3,16 +3,16 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/hli;
-.implements Ldefpackage/lie;
+.implements Lhli;
+.implements Llie;
 
 
 # static fields
-.field private static final a:Ldefpackage/ouj;
+.field private static final a:Louj;
 
 
 # instance fields
-.field private final b:Ldefpackage/ddf;
+.field private final b:Lddf;
 
 .field private c:J
 
@@ -22,9 +22,9 @@
 
 .field private f:I
 
-.field private final g:Ldefpackage/hgm;
+.field private final g:Lhgm;
 
-.field private final h:Ldefpackage/hgl;
+.field private final h:Lhgl;
 
 .field private final i:Llda;
 
@@ -36,25 +36,25 @@
     .line 48
     const-string v0, "com/google/android/apps/camera/rectiface/jni/RectifaceImpl"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Louj;
 
     .line 59
-    invoke-static {}, Ldefpackage/hls;->a()V
+    invoke-static {}, Lhls;->a()V
 
     .line 60
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/hgm;Ldefpackage/hgl;Llda;Ldefpackage/ddf;)V
+.method public constructor <init>(Lhgm;Lhgl;Llda;Lddf;)V
     .locals 2
-    .param p1, "hgmVar"    # Ldefpackage/hgm;
-    .param p2, "hglVar"    # Ldefpackage/hgl;
+    .param p1, "hgmVar"    # Lhgm;
+    .param p2, "hglVar"    # Lhgl;
     .param p3, "ldaVar"    # Llda;
-    .param p4, "ddfVar"    # Ldefpackage/ddf;
+    .param p4, "ddfVar"    # Lddf;
 
     .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -73,16 +73,16 @@
     iput-boolean v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->e:Z
 
     .line 63
-    iput-object p1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->g:Ldefpackage/hgm;
+    iput-object p1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->g:Lhgm;
 
     .line 64
-    iput-object p2, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Ldefpackage/hgl;
+    iput-object p2, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Lhgl;
 
     .line 65
     iput-object p3, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->i:Llda;
 
     .line 66
-    iput-object p4, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iput-object p4, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
     .line 67
     return-void
@@ -208,11 +208,11 @@
 
     .line 104
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v1, Ldefpackage/ddl;->bf:Ldefpackage/ddg;
+    sget-object v1, Lddl;->bf:Lddg;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v1}, Lddf;->k(Lddg;)Z
 
     move-result v0
 
@@ -229,7 +229,7 @@
 
     .line 106
     .local v0, "i2":I
-    invoke-static {p2}, Ldefpackage/plk;->E(Lcom/google/googlex/gcam/ShotMetadata;)V
+    invoke-static {p2}, Lplk;->E(Lcom/google/googlex/gcam/ShotMetadata;)V
 
     goto :goto_0
 
@@ -300,12 +300,12 @@
     invoke-static/range {v5 .. v10}, Lcom/google/googlex/gcam/GcamModuleJNI;->JpgEncodeOptions_shot_metadata_set(JLcom/google/googlex/gcam/JpgEncodeOptions;JLcom/google/googlex/gcam/ShotMetadata;)V
 
     .line 115
-    invoke-static {p1, v2, v0}, Lcom/google/googlex/gcam/imageio/JpgHelper;->a(Lcom/google/googlex/gcam/InterleavedReadViewU8;Lcom/google/googlex/gcam/JpgEncodeOptions;I)Ldefpackage/ojc;
+    invoke-static {p1, v2, v0}, Lcom/google/googlex/gcam/imageio/JpgHelper;->a(Lcom/google/googlex/gcam/InterleavedReadViewU8;Lcom/google/googlex/gcam/JpgEncodeOptions;I)Lojc;
 
     move-result-object v3
 
     .line 116
-    .local v3, "a2":Ldefpackage/ojc;
+    .local v3, "a2":Lojc;
     add-int/lit8 v5, p3, -0x1
 
     packed-switch v5, :pswitch_data_0
@@ -389,7 +389,7 @@
 
     .line 130
     .local v4, "fileOutputStream":Ljava/io/FileOutputStream;
-    invoke-virtual {v3}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v3}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v7
 
@@ -405,7 +405,7 @@
     .line 133
     .end local v1    # "path":Ljava/nio/file/Path;
     .end local v2    # "jpgEncodeOptions":Lcom/google/googlex/gcam/JpgEncodeOptions;
-    .end local v3    # "a2":Ldefpackage/ojc;
+    .end local v3    # "a2":Lojc;
     .end local v4    # "fileOutputStream":Ljava/io/FileOutputStream;
     .end local v6    # "sb":Ljava/lang/StringBuilder;
     goto :goto_2
@@ -450,9 +450,9 @@
     invoke-virtual {p0, v0}, Lcom/google/googlex/gcam/ShotMetadata;->m(Ljava/lang/String;)V
 
     .line 138
-    sget-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -460,7 +460,7 @@
 
     const/16 v2, 0x9e6
 
-    invoke-interface {v0, v2}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v0, v2}, Lova;->G(I)Lova;
 
     move-result-object v0
 
@@ -468,7 +468,7 @@
 
     const-string v2, "%s"
 
-    invoke-interface {v0, v2, v1}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v0, v2, v1}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 139
     return-void
@@ -479,7 +479,7 @@
 
 
 # virtual methods
-.method public final a()Ldefpackage/hlr;
+.method public final a()Lhlr;
     .locals 6
 
     .line 145
@@ -506,9 +506,9 @@
 
     .line 149
     :cond_0
-    sget-object v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl;->a:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl;->a:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->c()Lova;
 
     move-result-object v1
 
@@ -516,7 +516,7 @@
 
     const-string v5, "Ignored Rectiface warpfield re-initialization."
 
-    invoke-static {v1, v5, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v1, v5, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 150
     iget-wide v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl;->b:J
@@ -535,7 +535,7 @@
     :goto_0
     const-string v2, "Invalid rectiface warpfield."
 
-    invoke-static {v1, v2}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v1, v2}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 151
     return-object v0
@@ -572,7 +572,7 @@
     :goto_0
     const-string v5, "HardwareBuffer format unexpected."
 
-    invoke-static {v0, v5}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v0, v5}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 158
     const-wide/16 v5, 0x2
@@ -608,7 +608,7 @@
     move v6, v3
 
     :goto_1
-    invoke-static {v6}, Ldefpackage/obr;->aF(Z)V
+    invoke-static {v6}, Lobr;->aF(Z)V
 
     .line 162
     new-instance v6, Lcom/google/googlex/gcam/InterleavedImageU8;
@@ -649,7 +649,7 @@
     :goto_2
     const-string v10, "Expect srcBuffer in RGBA8 format."
 
-    invoke-static {v8, v10}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v8, v10}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 165
     iget-wide v12, v9, Lcom/google/googlex/gcam/InterleavedWriteViewU8;->a:J
@@ -670,7 +670,7 @@
     :goto_3
     const-string v10, "Expect dstBuffer in RGB8 format."
 
-    invoke-static {v8, v10}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v8, v10}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 166
     invoke-virtual {v0}, Lcom/google/googlex/gcam/InterleavedReadViewU8;->d()I
@@ -688,7 +688,7 @@
     move v3, v4
 
     :cond_4
-    invoke-static {v3}, Ldefpackage/obr;->aF(Z)V
+    invoke-static {v3}, Lobr;->aF(Z)V
 
     .line 167
     invoke-virtual {v0}, Lcom/google/googlex/gcam/InterleavedReadViewU8;->c()I
@@ -708,7 +708,7 @@
 
     .line 170
     :cond_5
-    invoke-static {v2}, Ldefpackage/obr;->aF(Z)V
+    invoke-static {v2}, Lobr;->aF(Z)V
 
     .line 171
     iget-wide v10, v0, Lcom/google/googlex/gcam/InterleavedReadViewU8;->a:J
@@ -784,9 +784,9 @@
     if-nez v0, :cond_0
 
     .line 188
-    sget-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->b()Lova;
 
     move-result-object v0
 
@@ -794,7 +794,7 @@
 
     const-string v2, "Lens correction failed."
 
-    invoke-static {v0, v2, v1}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v2, v1}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 190
     :cond_0
@@ -865,18 +865,18 @@
 
     if-nez v1, :cond_4
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->g:Ldefpackage/hgm;
+    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->g:Lhgm;
 
     move-object v5, v1
 
-    .local v5, "hgmVar":Ldefpackage/hgm;
+    .local v5, "hgmVar":Lhgm;
     if-nez v1, :cond_0
 
     goto :goto_2
 
     .line 214
     :cond_0
-    invoke-interface {v5}, Ldefpackage/hgm;->a()J
+    invoke-interface {v5}, Lhgm;->a()J
 
     move-result-wide v6
 
@@ -891,9 +891,9 @@
     if-eqz v1, :cond_1
 
     .line 215
-    sget-object v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->c()Lova;
 
     move-result-object v1
 
@@ -901,18 +901,18 @@
 
     const-string v7, "Expected portrait segmenter to be initialized, but it wasn\'t. Initializing again."
 
-    invoke-static {v1, v7, v6}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v1, v7, v6}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 216
-    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->g:Ldefpackage/hgm;
+    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->g:Lhgm;
 
-    invoke-interface {v1}, Ldefpackage/hgm;->b()V
+    invoke-interface {v1}, Lhgm;->b()V
 
     .line 218
     :cond_1
-    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->g:Ldefpackage/hgm;
+    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->g:Lhgm;
 
-    invoke-interface {v1}, Ldefpackage/hgm;->a()J
+    invoke-interface {v1}, Lhgm;->a()J
 
     move-result-wide v12
 
@@ -949,21 +949,21 @@
     iput-wide v6, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->c:J
 
     .line 224
-    iget-object v6, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v6, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v7, Ldefpackage/dds;->S:Ldefpackage/ddg;
+    sget-object v7, Ldds;->S:Lddg;
 
-    invoke-interface {v6, v7}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v6, v7}, Lddf;->k(Lddg;)Z
 
     move-result v6
 
     if-eqz v6, :cond_3
 
-    iget-object v6, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v6, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v7, Ldefpackage/dds;->q:Ldefpackage/ddg;
+    sget-object v7, Ldds;->q:Lddg;
 
-    invoke-interface {v6, v7}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v6, v7}, Lddf;->k(Lddg;)Z
 
     move-result v6
 
@@ -998,15 +998,15 @@
 
     .line 212
     .end local v1    # "str":Ljava/lang/String;
-    .end local v5    # "hgmVar":Ldefpackage/hgm;
+    .end local v5    # "hgmVar":Lhgm;
     .end local v6    # "i":I
     .end local v12    # "a2":J
     .end local v14    # "str2":Ljava/lang/String;
     :cond_4
     :goto_2
-    sget-object v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->c()Lova;
 
     move-result-object v1
 
@@ -1014,7 +1014,7 @@
 
     const-string v6, "Ignored Rectiface (Segmenter) re-initialization."
 
-    invoke-static {v1, v6, v5}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v1, v6, v5}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 228
     :goto_3
@@ -1031,12 +1031,12 @@
     :cond_5
     const-string v1, "Invalid segmenter."
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 232
-    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Ldefpackage/hgl;
+    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Lhgl;
 
-    invoke-interface {v1}, Ldefpackage/hgl;->a()J
+    invoke-interface {v1}, Lhgl;->a()J
 
     move-result-wide v5
 
@@ -1051,9 +1051,9 @@
     if-eqz v1, :cond_6
 
     .line 233
-    sget-object v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->c()Lova;
 
     move-result-object v1
 
@@ -1061,12 +1061,12 @@
 
     const-string v4, "Expected firefly to be initialized, but it wasn\'t. Initializing again."
 
-    invoke-static {v1, v4, v3}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v1, v4, v3}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 234
-    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Ldefpackage/hgl;
+    iget-object v1, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Lhgl;
 
-    invoke-interface {v1}, Ldefpackage/hgl;->d()V
+    invoke-interface {v1}, Lhgl;->d()V
 
     .line 236
     :cond_6
@@ -1112,9 +1112,9 @@
 
     .line 245
     :cond_1
-    sget-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -1122,7 +1122,7 @@
 
     const-string v2, "Lens distortion correction skipped because of format mismatch."
 
-    invoke-static {v0, v2, v1}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v2, v1}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 246
     const/4 v0, 0x0
@@ -1156,25 +1156,25 @@
     .locals 2
 
     .line 251
-    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v1, Ldefpackage/ddy;->i:Ldefpackage/ddg;
+    sget-object v1, Lddy;->i:Lddg;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v1}, Lddf;->k(Lddg;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public final g(Landroid/hardware/HardwareBuffer;Lcom/google/googlex/gcam/ShotMetadata;ZLjava/lang/String;Ldefpackage/hlr;Ldefpackage/iij;Lcom/google/android/apps/camera/rectiface/Rectiface$RectifaceProgressCallback;)V
+.method public final g(Landroid/hardware/HardwareBuffer;Lcom/google/googlex/gcam/ShotMetadata;ZLjava/lang/String;Lhlr;Liij;Lcom/google/android/apps/camera/rectiface/Rectiface$RectifaceProgressCallback;)V
     .locals 27
     .param p1, "hardwareBuffer"    # Landroid/hardware/HardwareBuffer;
     .param p2, "shotMetadata"    # Lcom/google/googlex/gcam/ShotMetadata;
     .param p3, "z"    # Z
     .param p4, "str"    # Ljava/lang/String;
-    .param p5, "hlrVar"    # Ldefpackage/hlr;
-    .param p6, "iijVar"    # Ldefpackage/iij;
+    .param p5, "hlrVar"    # Lhlr;
+    .param p6, "iijVar"    # Liij;
     .param p7, "rectiface$RectifaceProgressCallback"    # Lcom/google/android/apps/camera/rectiface/Rectiface$RectifaceProgressCallback;
 
     .line 258
@@ -1199,11 +1199,11 @@
 
     .line 260
     :cond_0
-    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v2, Ldefpackage/ddy;->b:Ldefpackage/ddg;
+    sget-object v2, Lddy;->b:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -1216,11 +1216,11 @@
 
     if-nez v1, :cond_1
 
-    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v2, Ldefpackage/ddy;->h:Ldefpackage/ddg;
+    sget-object v2, Lddy;->h:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -1269,9 +1269,9 @@
 
     iget-wide v6, v1, Lcom/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl;->b:J
 
-    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Ldefpackage/hgl;
+    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Lhgl;
 
-    invoke-interface {v1}, Ldefpackage/hgl;->a()J
+    invoke-interface {v1}, Lhgl;->a()J
 
     move-result-wide v21
 
@@ -1283,19 +1283,19 @@
 
     move-result v23
 
-    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v9, Ldefpackage/ddy;->e:Ldefpackage/ddg;
+    sget-object v9, Lddy;->e:Lddg;
 
-    invoke-interface {v1, v9}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v9}, Lddf;->k(Lddg;)Z
 
     move-result v24
 
-    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v9, Ldefpackage/ddy;->f:Ldefpackage/ddg;
+    sget-object v9, Lddy;->f:Lddg;
 
-    invoke-interface {v1, v9}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v9}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -1309,11 +1309,11 @@
     move/from16 v25, v10
 
     :goto_1
-    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v9, Ldefpackage/ddy;->g:Ldefpackage/ddg;
+    sget-object v9, Lddy;->g:Lddg;
 
-    invoke-interface {v1, v9}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v9}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -1330,7 +1330,7 @@
     :cond_4
     iget-object v1, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->i:Llda;
 
-    invoke-interface {v1}, Ldefpackage/lco;->fA()Ljava/lang/Object;
+    invoke-interface {v1}, Llco;->fA()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1431,15 +1431,15 @@
     if-eqz p6, :cond_11
 
     .line 271
-    sget-object v5, Ldefpackage/pbg;->i:Ldefpackage/pbg;
+    sget-object v5, Lpbg;->i:Lpbg;
 
-    invoke-virtual {v5}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v5}, Lppd;->m()Lpoy;
 
     move-result-object v5
 
     .line 272
-    .local v5, "m":Ldefpackage/poy;
-    invoke-static {}, Ldefpackage/oxh;->r()[I
+    .local v5, "m":Lpoy;
+    invoke-static {}, Loxh;->r()[I
 
     move-result-object v6
 
@@ -1451,12 +1451,12 @@
 
     .line 273
     .local v6, "i":I
-    iget-boolean v7, v5, Ldefpackage/poy;->c:Z
+    iget-boolean v7, v5, Lpoy;->c:Z
 
     if-eqz v7, :cond_8
 
     .line 274
-    invoke-virtual {v5}, Ldefpackage/poy;->m()V
+    invoke-virtual {v5}, Lpoy;->m()V
 
     .line 275
     const/4 v7, 0x0
@@ -1465,7 +1465,7 @@
     .local v7, "z2":Z
     const/4 v8, 0x0
 
-    iput-boolean v8, v5, Ldefpackage/poy;->c:Z
+    iput-boolean v8, v5, Lpoy;->c:Z
 
     goto :goto_5
 
@@ -1477,12 +1477,12 @@
     .line 280
     .restart local v7    # "z2":Z
     :goto_5
-    iget-object v8, v5, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v8, v5, Lpoy;->b:Lppd;
 
-    check-cast v8, Ldefpackage/pbg;
+    check-cast v8, Lpbg;
 
     .line 281
-    .local v8, "pbgVar":Ldefpackage/pbg;
+    .local v8, "pbgVar":Lpbg;
     add-int/lit8 v9, v6, -0x1
 
     .line 282
@@ -1490,14 +1490,14 @@
     if-eqz v6, :cond_10
 
     .line 285
-    iput v9, v8, Ldefpackage/pbg;->b:I
+    iput v9, v8, Lpbg;->b:I
 
     .line 286
-    iget v10, v8, Ldefpackage/pbg;->a:I
+    iget v10, v8, Lpbg;->a:I
 
     or-int/lit8 v10, v10, 0x1
 
-    iput v10, v8, Ldefpackage/pbg;->a:I
+    iput v10, v8, Lpbg;->a:I
 
     .line 287
     invoke-virtual/range {v22 .. v22}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->c()I
@@ -1506,32 +1506,32 @@
 
     .line 288
     .local v10, "c":I
-    iget-boolean v11, v5, Ldefpackage/poy;->c:Z
+    iget-boolean v11, v5, Lpoy;->c:Z
 
     if-eqz v11, :cond_9
 
     .line 289
-    invoke-virtual {v5}, Ldefpackage/poy;->m()V
+    invoke-virtual {v5}, Lpoy;->m()V
 
     .line 290
-    iput-boolean v7, v5, Ldefpackage/poy;->c:Z
+    iput-boolean v7, v5, Lpoy;->c:Z
 
     .line 292
     :cond_9
-    iget-object v11, v5, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v11, v5, Lpoy;->b:Lppd;
 
-    check-cast v11, Ldefpackage/pbg;
+    check-cast v11, Lpbg;
 
     .line 293
-    .local v11, "pbgVar2":Ldefpackage/pbg;
-    iget v12, v11, Ldefpackage/pbg;->a:I
+    .local v11, "pbgVar2":Lpbg;
+    iget v12, v11, Lpbg;->a:I
 
     or-int/2addr v2, v12
 
-    iput v2, v11, Ldefpackage/pbg;->a:I
+    iput v2, v11, Lpbg;->a:I
 
     .line 294
-    iput v10, v11, Ldefpackage/pbg;->e:I
+    iput v10, v11, Lpbg;->e:I
 
     .line 295
     invoke-virtual/range {v22 .. v22}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->f()I
@@ -1540,32 +1540,32 @@
 
     .line 296
     .local v2, "f":I
-    iget-boolean v12, v5, Ldefpackage/poy;->c:Z
+    iget-boolean v12, v5, Lpoy;->c:Z
 
     if-eqz v12, :cond_a
 
     .line 297
-    invoke-virtual {v5}, Ldefpackage/poy;->m()V
+    invoke-virtual {v5}, Lpoy;->m()V
 
     .line 298
-    iput-boolean v7, v5, Ldefpackage/poy;->c:Z
+    iput-boolean v7, v5, Lpoy;->c:Z
 
     .line 300
     :cond_a
-    iget-object v12, v5, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v12, v5, Lpoy;->b:Lppd;
 
-    check-cast v12, Ldefpackage/pbg;
+    check-cast v12, Lpbg;
 
     .line 301
-    .local v12, "pbgVar3":Ldefpackage/pbg;
-    iget v13, v12, Ldefpackage/pbg;->a:I
+    .local v12, "pbgVar3":Lpbg;
+    iget v13, v12, Lpbg;->a:I
 
     or-int/lit8 v13, v13, 0x10
 
-    iput v13, v12, Ldefpackage/pbg;->a:I
+    iput v13, v12, Lpbg;->a:I
 
     .line 302
-    iput v2, v12, Ldefpackage/pbg;->g:I
+    iput v2, v12, Lpbg;->g:I
 
     .line 303
     invoke-virtual/range {v22 .. v22}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->h()I
@@ -1574,32 +1574,32 @@
 
     .line 304
     .local v13, "h":I
-    iget-boolean v14, v5, Ldefpackage/poy;->c:Z
+    iget-boolean v14, v5, Lpoy;->c:Z
 
     if-eqz v14, :cond_b
 
     .line 305
-    invoke-virtual {v5}, Ldefpackage/poy;->m()V
+    invoke-virtual {v5}, Lpoy;->m()V
 
     .line 306
-    iput-boolean v7, v5, Ldefpackage/poy;->c:Z
+    iput-boolean v7, v5, Lpoy;->c:Z
 
     .line 308
     :cond_b
-    iget-object v14, v5, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v14, v5, Lpoy;->b:Lppd;
 
-    check-cast v14, Ldefpackage/pbg;
+    check-cast v14, Lpbg;
 
     .line 309
-    .local v14, "pbgVar4":Ldefpackage/pbg;
-    iget v15, v14, Ldefpackage/pbg;->a:I
+    .local v14, "pbgVar4":Lpbg;
+    iget v15, v14, Lpbg;->a:I
 
     or-int/lit8 v15, v15, 0x8
 
-    iput v15, v14, Ldefpackage/pbg;->a:I
+    iput v15, v14, Lpbg;->a:I
 
     .line 310
-    iput v13, v14, Ldefpackage/pbg;->f:I
+    iput v13, v14, Lpbg;->f:I
 
     .line 311
     invoke-virtual/range {v22 .. v22}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->g()I
@@ -1608,32 +1608,32 @@
 
     .line 312
     .local v15, "g":I
-    iget-boolean v0, v5, Ldefpackage/poy;->c:Z
+    iget-boolean v0, v5, Lpoy;->c:Z
 
     if-eqz v0, :cond_c
 
     .line 313
-    invoke-virtual {v5}, Ldefpackage/poy;->m()V
+    invoke-virtual {v5}, Lpoy;->m()V
 
     .line 314
-    iput-boolean v7, v5, Ldefpackage/poy;->c:Z
+    iput-boolean v7, v5, Lpoy;->c:Z
 
     .line 316
     :cond_c
-    iget-object v0, v5, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v0, v5, Lpoy;->b:Lppd;
 
-    check-cast v0, Ldefpackage/pbg;
+    check-cast v0, Lpbg;
 
     .line 317
-    .local v0, "pbgVar5":Ldefpackage/pbg;
-    iget v1, v0, Ldefpackage/pbg;->a:I
+    .local v0, "pbgVar5":Lpbg;
+    iget v1, v0, Lpbg;->a:I
 
     or-int/lit8 v1, v1, 0x40
 
-    iput v1, v0, Ldefpackage/pbg;->a:I
+    iput v1, v0, Lpbg;->a:I
 
     .line 318
-    iput v15, v0, Ldefpackage/pbg;->h:I
+    iput v15, v0, Lpbg;->h:I
 
     .line 319
     invoke-virtual/range {v22 .. v22}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->e()I
@@ -1649,8 +1649,8 @@
     :goto_6
     move-object/from16 v16, v0
 
-    .end local v0    # "pbgVar5":Ldefpackage/pbg;
-    .local v16, "pbgVar5":Ldefpackage/pbg;
+    .end local v0    # "pbgVar5":Lpbg;
+    .local v16, "pbgVar5":Lpbg;
     invoke-virtual/range {v22 .. v22}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->e()I
 
     move-result v0
@@ -1670,7 +1670,7 @@
 
     move-result v2
 
-    invoke-virtual {v5, v2}, Ldefpackage/poy;->y(F)V
+    invoke-virtual {v5, v2}, Lpoy;->y(F)V
 
     .line 320
     add-int/lit8 v1, v1, 0x1
@@ -1703,9 +1703,9 @@
 
     .line 325
     .end local v1    # "rectifaceOutput":Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;
-    .end local v16    # "pbgVar5":Ldefpackage/pbg;
+    .end local v16    # "pbgVar5":Lpbg;
     .end local v17    # "f":I
-    .local v0, "pbgVar5":Ldefpackage/pbg;
+    .local v0, "pbgVar5":Lpbg;
     .restart local v2    # "f":I
     .restart local v22    # "rectifaceOutput2":Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;
     :cond_e
@@ -1718,7 +1718,7 @@
     .end local v2    # "f":I
     .end local v22    # "rectifaceOutput2":Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;
     .local v0, "rectifaceOutput2":Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;
-    .restart local v16    # "pbgVar5":Ldefpackage/pbg;
+    .restart local v16    # "pbgVar5":Lpbg;
     .restart local v17    # "f":I
     move-object v1, v0
 
@@ -1747,7 +1747,7 @@
 
     move-result v3
 
-    invoke-virtual {v5, v3}, Ldefpackage/poy;->x(F)V
+    invoke-virtual {v5, v3}, Lpoy;->x(F)V
 
     .line 328
     add-int/lit8 v2, v2, 0x1
@@ -1761,37 +1761,37 @@
     :cond_f
     move-object/from16 v2, p6
 
-    check-cast v2, Ldefpackage/iik;
+    check-cast v2, Liik;
 
-    invoke-virtual {v5}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    invoke-virtual {v5}, Lpoy;->j()Lppd;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/pbg;
+    check-cast v3, Lpbg;
 
-    iput-object v3, v2, Ldefpackage/iik;->q:Ldefpackage/pbg;
+    iput-object v3, v2, Liik;->q:Lpbg;
 
     .line 333
-    .end local v5    # "m":Ldefpackage/poy;
+    .end local v5    # "m":Lpoy;
     .end local v6    # "i":I
-    .end local v8    # "pbgVar":Ldefpackage/pbg;
+    .end local v8    # "pbgVar":Lpbg;
     .end local v9    # "i2":I
     .end local v10    # "c":I
-    .end local v11    # "pbgVar2":Ldefpackage/pbg;
-    .end local v12    # "pbgVar3":Ldefpackage/pbg;
+    .end local v11    # "pbgVar2":Lpbg;
+    .end local v12    # "pbgVar3":Lpbg;
     .end local v13    # "h":I
-    .end local v14    # "pbgVar4":Ldefpackage/pbg;
+    .end local v14    # "pbgVar4":Lpbg;
     .end local v15    # "g":I
-    .end local v16    # "pbgVar5":Ldefpackage/pbg;
+    .end local v16    # "pbgVar5":Lpbg;
     .end local v17    # "f":I
     goto :goto_9
 
     .line 283
     .end local v0    # "rectifaceOutput2":Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;
     .end local v1    # "rectifaceOutput":Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;
-    .restart local v5    # "m":Ldefpackage/poy;
+    .restart local v5    # "m":Lpoy;
     .restart local v6    # "i":I
-    .restart local v8    # "pbgVar":Ldefpackage/pbg;
+    .restart local v8    # "pbgVar":Lpbg;
     .restart local v9    # "i2":I
     .restart local v22    # "rectifaceOutput2":Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;
     :cond_10
@@ -1800,10 +1800,10 @@
     throw v1
 
     .line 334
-    .end local v5    # "m":Ldefpackage/poy;
+    .end local v5    # "m":Lpoy;
     .end local v6    # "i":I
     .end local v7    # "z2":Z
-    .end local v8    # "pbgVar":Ldefpackage/pbg;
+    .end local v8    # "pbgVar":Lpbg;
     .end local v9    # "i2":I
     :cond_11
     move-object/from16 v0, v22
@@ -1831,14 +1831,14 @@
     return-void
 .end method
 
-.method public final h(Lcom/google/googlex/gcam/InterleavedWriteViewU8;Lcom/google/googlex/gcam/ShotMetadata;ZLjava/lang/String;Ldefpackage/hlr;Ldefpackage/iij;Lcom/google/android/apps/camera/rectiface/Rectiface$RectifaceProgressCallback;)V
+.method public final h(Lcom/google/googlex/gcam/InterleavedWriteViewU8;Lcom/google/googlex/gcam/ShotMetadata;ZLjava/lang/String;Lhlr;Liij;Lcom/google/android/apps/camera/rectiface/Rectiface$RectifaceProgressCallback;)V
     .locals 27
     .param p1, "interleavedWriteViewU8"    # Lcom/google/googlex/gcam/InterleavedWriteViewU8;
     .param p2, "shotMetadata"    # Lcom/google/googlex/gcam/ShotMetadata;
     .param p3, "z"    # Z
     .param p4, "str"    # Ljava/lang/String;
-    .param p5, "hlrVar"    # Ldefpackage/hlr;
-    .param p6, "iijVar"    # Ldefpackage/iij;
+    .param p5, "hlrVar"    # Lhlr;
+    .param p6, "iijVar"    # Liij;
     .param p7, "rectiface$RectifaceProgressCallback"    # Lcom/google/android/apps/camera/rectiface/Rectiface$RectifaceProgressCallback;
 
     .line 342
@@ -1863,11 +1863,11 @@
 
     .line 344
     :cond_0
-    iget-object v3, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v3, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v4, Ldefpackage/ddy;->b:Ldefpackage/ddg;
+    sget-object v4, Lddy;->b:Lddg;
 
-    invoke-interface {v3, v4}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v3, v4}, Lddf;->k(Lddg;)Z
 
     move-result v3
 
@@ -1880,11 +1880,11 @@
 
     if-nez v3, :cond_1
 
-    iget-object v3, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v3, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v5, Ldefpackage/ddy;->h:Ldefpackage/ddg;
+    sget-object v5, Lddy;->h:Lddg;
 
-    invoke-interface {v3, v5}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v3, v5}, Lddf;->k(Lddg;)Z
 
     move-result v3
 
@@ -1939,9 +1939,9 @@
 
     iget-wide v13, v13, Lcom/google/android/apps/camera/rectiface/jni/RectifaceWarpfieldImpl;->b:J
 
-    iget-object v15, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Ldefpackage/hgl;
+    iget-object v15, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->h:Lhgl;
 
-    invoke-interface {v15}, Ldefpackage/hgl;->a()J
+    invoke-interface {v15}, Lhgl;->a()J
 
     move-result-wide v15
 
@@ -1953,19 +1953,19 @@
 
     move-result v18
 
-    iget-object v6, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v6, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v4, Ldefpackage/ddy;->e:Ldefpackage/ddg;
+    sget-object v4, Lddy;->e:Lddg;
 
-    invoke-interface {v6, v4}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v6, v4}, Lddf;->k(Lddg;)Z
 
     move-result v19
 
-    iget-object v4, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v4, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v6, Ldefpackage/ddy;->f:Ldefpackage/ddg;
+    sget-object v6, Lddy;->f:Lddg;
 
-    invoke-interface {v4, v6}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v4, v6}, Lddf;->k(Lddg;)Z
 
     move-result v4
 
@@ -1979,11 +1979,11 @@
     const/16 v20, 0x1
 
     :goto_1
-    iget-object v4, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v4, v0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v6, Ldefpackage/ddy;->g:Ldefpackage/ddg;
+    sget-object v6, Lddy;->g:Lddg;
 
-    invoke-interface {v4, v6}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v4, v6}, Lddf;->k(Lddg;)Z
 
     move-result v4
 
@@ -2090,15 +2090,15 @@
     if-eqz p6, :cond_11
 
     .line 358
-    sget-object v9, Ldefpackage/pbg;->i:Ldefpackage/pbg;
+    sget-object v9, Lpbg;->i:Lpbg;
 
-    invoke-virtual {v9}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v9}, Lppd;->m()Lpoy;
 
     move-result-object v9
 
     .line 359
-    .local v9, "m":Ldefpackage/poy;
-    invoke-static {}, Ldefpackage/oxh;->r()[I
+    .local v9, "m":Lpoy;
+    invoke-static {}, Loxh;->r()[I
 
     move-result-object v10
 
@@ -2110,26 +2110,26 @@
 
     .line 360
     .local v10, "i":I
-    iget-boolean v11, v9, Ldefpackage/poy;->c:Z
+    iget-boolean v11, v9, Lpoy;->c:Z
 
     if-eqz v11, :cond_8
 
     .line 361
-    invoke-virtual {v9}, Ldefpackage/poy;->m()V
+    invoke-virtual {v9}, Lpoy;->m()V
 
     .line 362
     const/4 v11, 0x0
 
-    iput-boolean v11, v9, Ldefpackage/poy;->c:Z
+    iput-boolean v11, v9, Lpoy;->c:Z
 
     .line 364
     :cond_8
-    iget-object v11, v9, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v11, v9, Lpoy;->b:Lppd;
 
-    check-cast v11, Ldefpackage/pbg;
+    check-cast v11, Lpbg;
 
     .line 365
-    .local v11, "pbgVar":Ldefpackage/pbg;
+    .local v11, "pbgVar":Lpbg;
     add-int/lit8 v12, v10, -0x1
 
     .line 366
@@ -2137,16 +2137,16 @@
     if-eqz v10, :cond_10
 
     .line 369
-    iput v12, v11, Ldefpackage/pbg;->b:I
+    iput v12, v11, Lpbg;->b:I
 
     .line 370
-    iget v13, v11, Ldefpackage/pbg;->a:I
+    iget v13, v11, Lpbg;->a:I
 
     const/4 v14, 0x1
 
     or-int/2addr v13, v14
 
-    iput v13, v11, Ldefpackage/pbg;->a:I
+    iput v13, v11, Lpbg;->a:I
 
     .line 371
     invoke-virtual {v5}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->c()I
@@ -2155,34 +2155,34 @@
 
     .line 372
     .local v13, "c":I
-    iget-boolean v14, v9, Ldefpackage/poy;->c:Z
+    iget-boolean v14, v9, Lpoy;->c:Z
 
     if-eqz v14, :cond_9
 
     .line 373
-    invoke-virtual {v9}, Ldefpackage/poy;->m()V
+    invoke-virtual {v9}, Lpoy;->m()V
 
     .line 374
     const/4 v14, 0x0
 
-    iput-boolean v14, v9, Ldefpackage/poy;->c:Z
+    iput-boolean v14, v9, Lpoy;->c:Z
 
     .line 376
     :cond_9
-    iget-object v14, v9, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v14, v9, Lpoy;->b:Lppd;
 
-    check-cast v14, Ldefpackage/pbg;
+    check-cast v14, Lpbg;
 
     .line 377
-    .local v14, "pbgVar2":Ldefpackage/pbg;
-    iget v15, v14, Ldefpackage/pbg;->a:I
+    .local v14, "pbgVar2":Lpbg;
+    iget v15, v14, Lpbg;->a:I
 
     or-int/2addr v4, v15
 
-    iput v4, v14, Ldefpackage/pbg;->a:I
+    iput v4, v14, Lpbg;->a:I
 
     .line 378
-    iput v13, v14, Ldefpackage/pbg;->e:I
+    iput v13, v14, Lpbg;->e:I
 
     .line 379
     invoke-virtual {v5}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->f()I
@@ -2191,38 +2191,38 @@
 
     .line 380
     .local v4, "f":I
-    iget-boolean v15, v9, Ldefpackage/poy;->c:Z
+    iget-boolean v15, v9, Lpoy;->c:Z
 
     if-eqz v15, :cond_a
 
     .line 381
-    invoke-virtual {v9}, Ldefpackage/poy;->m()V
+    invoke-virtual {v9}, Lpoy;->m()V
 
     .line 382
     const/4 v15, 0x0
 
-    iput-boolean v15, v9, Ldefpackage/poy;->c:Z
+    iput-boolean v15, v9, Lpoy;->c:Z
 
     .line 384
     :cond_a
-    iget-object v15, v9, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v15, v9, Lpoy;->b:Lppd;
 
-    check-cast v15, Ldefpackage/pbg;
+    check-cast v15, Lpbg;
 
     .line 385
-    .local v15, "pbgVar3":Ldefpackage/pbg;
+    .local v15, "pbgVar3":Lpbg;
     move-object/from16 v16, v0
 
     .end local v0    # "correctFaceDistortionImpl":Ljava/lang/String;
     .local v16, "correctFaceDistortionImpl":Ljava/lang/String;
-    iget v0, v15, Ldefpackage/pbg;->a:I
+    iget v0, v15, Lpbg;->a:I
 
     or-int/lit8 v0, v0, 0x10
 
-    iput v0, v15, Ldefpackage/pbg;->a:I
+    iput v0, v15, Lpbg;->a:I
 
     .line 386
-    iput v4, v15, Ldefpackage/pbg;->g:I
+    iput v4, v15, Lpbg;->g:I
 
     .line 387
     invoke-virtual {v5}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->h()I
@@ -2235,34 +2235,34 @@
 
     .end local v1    # "valueOf2":Ljava/lang/String;
     .local v17, "valueOf2":Ljava/lang/String;
-    iget-boolean v1, v9, Ldefpackage/poy;->c:Z
+    iget-boolean v1, v9, Lpoy;->c:Z
 
     if-eqz v1, :cond_b
 
     .line 389
-    invoke-virtual {v9}, Ldefpackage/poy;->m()V
+    invoke-virtual {v9}, Lpoy;->m()V
 
     .line 390
     const/4 v1, 0x0
 
-    iput-boolean v1, v9, Ldefpackage/poy;->c:Z
+    iput-boolean v1, v9, Lpoy;->c:Z
 
     .line 392
     :cond_b
-    iget-object v1, v9, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v1, v9, Lpoy;->b:Lppd;
 
-    check-cast v1, Ldefpackage/pbg;
+    check-cast v1, Lpbg;
 
     .line 393
-    .local v1, "pbgVar4":Ldefpackage/pbg;
-    iget v2, v1, Ldefpackage/pbg;->a:I
+    .local v1, "pbgVar4":Lpbg;
+    iget v2, v1, Lpbg;->a:I
 
     or-int/lit8 v2, v2, 0x8
 
-    iput v2, v1, Ldefpackage/pbg;->a:I
+    iput v2, v1, Lpbg;->a:I
 
     .line 394
-    iput v0, v1, Ldefpackage/pbg;->f:I
+    iput v0, v1, Lpbg;->f:I
 
     .line 395
     invoke-virtual {v5}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->g()I
@@ -2275,38 +2275,38 @@
 
     .end local v0    # "h":I
     .local v18, "h":I
-    iget-boolean v0, v9, Ldefpackage/poy;->c:Z
+    iget-boolean v0, v9, Lpoy;->c:Z
 
     if-eqz v0, :cond_c
 
     .line 397
-    invoke-virtual {v9}, Ldefpackage/poy;->m()V
+    invoke-virtual {v9}, Lpoy;->m()V
 
     .line 398
     const/4 v0, 0x0
 
-    iput-boolean v0, v9, Ldefpackage/poy;->c:Z
+    iput-boolean v0, v9, Lpoy;->c:Z
 
     .line 400
     :cond_c
-    iget-object v0, v9, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v0, v9, Lpoy;->b:Lppd;
 
-    check-cast v0, Ldefpackage/pbg;
+    check-cast v0, Lpbg;
 
     .line 401
-    .local v0, "pbgVar5":Ldefpackage/pbg;
+    .local v0, "pbgVar5":Lpbg;
     move-object/from16 v19, v1
 
-    .end local v1    # "pbgVar4":Ldefpackage/pbg;
-    .local v19, "pbgVar4":Ldefpackage/pbg;
-    iget v1, v0, Ldefpackage/pbg;->a:I
+    .end local v1    # "pbgVar4":Lpbg;
+    .local v19, "pbgVar4":Lpbg;
+    iget v1, v0, Lpbg;->a:I
 
     or-int/lit8 v1, v1, 0x40
 
-    iput v1, v0, Ldefpackage/pbg;->a:I
+    iput v1, v0, Lpbg;->a:I
 
     .line 402
-    iput v2, v0, Ldefpackage/pbg;->h:I
+    iput v2, v0, Lpbg;->h:I
 
     .line 403
     invoke-virtual {v5}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->e()I
@@ -2322,8 +2322,8 @@
     :goto_6
     move-object/from16 v20, v0
 
-    .end local v0    # "pbgVar5":Ldefpackage/pbg;
-    .local v20, "pbgVar5":Ldefpackage/pbg;
+    .end local v0    # "pbgVar5":Lpbg;
+    .local v20, "pbgVar5":Lpbg;
     invoke-virtual {v5}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->e()I
 
     move-result v0
@@ -2335,7 +2335,7 @@
 
     move-result v0
 
-    invoke-virtual {v9, v0}, Ldefpackage/poy;->y(F)V
+    invoke-virtual {v9, v0}, Lpoy;->y(F)V
 
     .line 404
     add-int/lit8 v1, v1, 0x1
@@ -2346,14 +2346,14 @@
 
     .line 403
     .end local v1    # "i3":I
-    .end local v20    # "pbgVar5":Ldefpackage/pbg;
-    .restart local v0    # "pbgVar5":Ldefpackage/pbg;
+    .end local v20    # "pbgVar5":Lpbg;
+    .restart local v0    # "pbgVar5":Lpbg;
     :cond_d
     move-object/from16 v20, v0
 
     .line 408
-    .end local v0    # "pbgVar5":Ldefpackage/pbg;
-    .restart local v20    # "pbgVar5":Ldefpackage/pbg;
+    .end local v0    # "pbgVar5":Lpbg;
+    .restart local v20    # "pbgVar5":Lpbg;
     :cond_e
     invoke-virtual {v5}, Lcom/google/android/apps/camera/rectiface/jni/RectifaceOutput;->d()I
 
@@ -2389,7 +2389,7 @@
 
     move-result v0
 
-    invoke-virtual {v9, v0}, Ldefpackage/poy;->x(F)V
+    invoke-virtual {v9, v0}, Lpoy;->x(F)V
 
     .line 410
     add-int/lit8 v1, v1, 0x1
@@ -2404,15 +2404,15 @@
     :cond_f
     move-object/from16 v0, p6
 
-    check-cast v0, Ldefpackage/iik;
+    check-cast v0, Liik;
 
-    invoke-virtual {v9}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    invoke-virtual {v9}, Lpoy;->j()Lppd;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/pbg;
+    check-cast v1, Lpbg;
 
-    iput-object v1, v0, Ldefpackage/iik;->q:Ldefpackage/pbg;
+    iput-object v1, v0, Liik;->q:Lpbg;
 
     goto :goto_8
 
@@ -2420,13 +2420,13 @@
     .end local v2    # "g":I
     .end local v4    # "f":I
     .end local v13    # "c":I
-    .end local v14    # "pbgVar2":Ldefpackage/pbg;
-    .end local v15    # "pbgVar3":Ldefpackage/pbg;
+    .end local v14    # "pbgVar2":Lpbg;
+    .end local v15    # "pbgVar3":Lpbg;
     .end local v16    # "correctFaceDistortionImpl":Ljava/lang/String;
     .end local v17    # "valueOf2":Ljava/lang/String;
     .end local v18    # "h":I
-    .end local v19    # "pbgVar4":Ldefpackage/pbg;
-    .end local v20    # "pbgVar5":Ldefpackage/pbg;
+    .end local v19    # "pbgVar4":Lpbg;
+    .end local v20    # "pbgVar5":Lpbg;
     .local v0, "correctFaceDistortionImpl":Ljava/lang/String;
     .local v1, "valueOf2":Ljava/lang/String;
     :cond_10
@@ -2439,9 +2439,9 @@
     throw v0
 
     .line 357
-    .end local v9    # "m":Ldefpackage/poy;
+    .end local v9    # "m":Lpoy;
     .end local v10    # "i":I
-    .end local v11    # "pbgVar":Ldefpackage/pbg;
+    .end local v11    # "pbgVar":Lpbg;
     .end local v12    # "i2":I
     .end local v16    # "correctFaceDistortionImpl":Ljava/lang/String;
     .restart local v0    # "correctFaceDistortionImpl":Ljava/lang/String;
@@ -2480,11 +2480,11 @@
     .locals 2
 
     .line 421
-    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v1, Ldefpackage/ddy;->c:Ldefpackage/ddg;
+    sget-object v1, Lddy;->c:Lddg;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v1}, Lddf;->k(Lddg;)Z
 
     move-result v0
 
@@ -2496,11 +2496,11 @@
     .param p1, "shotMetadata"    # Lcom/google/googlex/gcam/ShotMetadata;
 
     .line 425
-    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v1, Ldefpackage/ddy;->d:Ldefpackage/ddg;
+    sget-object v1, Lddy;->d:Lddg;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v1}, Lddf;->k(Lddg;)Z
 
     move-result v0
 
@@ -2508,15 +2508,15 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->b:Lddf;
 
-    sget-object v2, Ldefpackage/ddy;->a:Ldefpackage/ddi;
+    sget-object v2, Lddy;->a:Lddi;
 
-    invoke-interface {v0, v2}, Ldefpackage/ddf;->a(Ldefpackage/ddi;)Ldefpackage/ojc;
+    invoke-interface {v0, v2}, Lddf;->a(Lddi;)Lojc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2568,7 +2568,7 @@
 
     iget-object v0, p0, Lcom/google/android/apps/camera/rectiface/jni/RectifaceImpl;->i:Llda;
 
-    invoke-interface {v0}, Ldefpackage/lco;->fA()Ljava/lang/Object;
+    invoke-interface {v0}, Llco;->fA()Ljava/lang/Object;
 
     move-result-object v0
 

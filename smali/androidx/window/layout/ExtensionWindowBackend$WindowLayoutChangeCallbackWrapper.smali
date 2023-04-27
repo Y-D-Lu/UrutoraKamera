@@ -17,7 +17,7 @@
 # instance fields
 .field private final activity:Landroid/app/Activity;
 
-.field private final callback:Ldefpackage/fb;
+.field private final callback:Lfb;
 
 .field private final executor:Ljava/util/concurrent/Executor;
 
@@ -27,12 +27,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/window/layout/ExtensionWindowBackend;Landroid/app/Activity;Ljava/util/concurrent/Executor;Ldefpackage/fb;)V
+.method public constructor <init>(Landroidx/window/layout/ExtensionWindowBackend;Landroid/app/Activity;Ljava/util/concurrent/Executor;Lfb;)V
     .locals 0
     .param p1, "this$0"    # Landroidx/window/layout/ExtensionWindowBackend;
     .param p2, "activity"    # Landroid/app/Activity;
     .param p3, "executor"    # Ljava/util/concurrent/Executor;
-    .param p4, "fbVar"    # Ldefpackage/fb;
+    .param p4, "fbVar"    # Lfb;
 
     .line 112
     iput-object p1, p0, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->this$0:Landroidx/window/layout/ExtensionWindowBackend;
@@ -55,7 +55,7 @@
     iput-object p3, p0, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->executor:Ljava/util/concurrent/Executor;
 
     .line 118
-    iput-object p4, p0, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->callback:Ldefpackage/fb;
+    iput-object p4, p0, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->callback:Lfb;
 
     .line 119
     return-void
@@ -95,11 +95,11 @@
     return-object v0
 .end method
 
-.method public final getCallback()Ldefpackage/fb;
+.method public final getCallback()Lfb;
     .locals 1
 
     .line 137
-    iget-object v0, p0, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->callback:Ldefpackage/fb;
+    iget-object v0, p0, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->callback:Lfb;
 
     return-object v0
 .end method

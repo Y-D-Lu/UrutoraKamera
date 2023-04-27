@@ -31,7 +31,7 @@
     .line 33
     .local v0, "allowThreadDiskReads":Landroid/os/StrictMode$ThreadPolicy;
     :try_start_0
-    invoke-static {}, Ldefpackage/pwy;->a()V
+    invoke-static {}, Lpwy;->a()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -83,35 +83,35 @@
     .param p5, "pendingIntent"    # Landroid/app/PendingIntent;
 
     .line 46
-    invoke-static {p3}, Ldefpackage/pxa;->a([I)[Ldefpackage/pxa;
+    invoke-static {p3}, Lpxa;->a([I)[Lpxa;
 
     move-result-object v0
 
     .line 47
-    .local v0, "a":[Ldefpackage/pxa;
-    invoke-static {p4}, Ldefpackage/pxa;->a([I)[Ldefpackage/pxa;
+    .local v0, "a":[Lpxa;
+    invoke-static {p4}, Lpxa;->a([I)[Lpxa;
 
     move-result-object v1
 
     .line 48
-    .local v1, "a2":[Ldefpackage/pxa;
-    new-instance v2, Ldefpackage/pxb;
+    .local v1, "a2":[Lpxa;
+    new-instance v2, Lpxb;
 
     invoke-static {p1, p2}, Lcom/google/vr/ndk/base/GvrApi;->nativeGetUserPrefs(J)J
 
     move-result-wide v3
 
-    invoke-direct {v2, v3, v4}, Ldefpackage/pxb;-><init>(J)V
+    invoke-direct {v2, v3, v4}, Lpxb;-><init>(J)V
 
     .line 49
-    .local v2, "pxbVar":Ldefpackage/pxb;
+    .local v2, "pxbVar":Lpxb;
     new-instance v3, Landroid/content/Intent;
 
     const-string v4, "com.google.intent.action.vr.REQUEST_FEATURE"
 
     invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    sget-object v4, Ldefpackage/pwq;->a:Landroid/content/ComponentName;
+    sget-object v4, Lpwq;->a:Landroid/content/ComponentName;
 
     invoke-virtual {v3, v4}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -143,8 +143,8 @@
     aget-object v8, v0, v7
 
     .line 52
-    .local v8, "pxaVar":Ldefpackage/pxa;
-    iget v9, v8, Ldefpackage/pxa;->c:I
+    .local v8, "pxaVar":Lpxa;
+    iget v9, v8, Lpxa;->c:I
 
     invoke-static {p1, p2, v9}, Lcom/google/vr/ndk/base/GvrApi;->nativeIsFeatureSupported(JI)Z
 
@@ -152,19 +152,19 @@
 
     if-eqz v9, :cond_0
 
-    invoke-virtual {v2, v8}, Ldefpackage/pxb;->a(Ldefpackage/pxa;)Z
+    invoke-virtual {v2, v8}, Lpxb;->a(Lpxa;)Z
 
     move-result v9
 
     if-nez v9, :cond_0
 
     .line 53
-    iget-object v9, v8, Ldefpackage/pxa;->d:Ljava/lang/String;
+    iget-object v9, v8, Lpxa;->d:Ljava/lang/String;
 
     invoke-virtual {v4, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 51
-    .end local v8    # "pxaVar":Ldefpackage/pxa;
+    .end local v8    # "pxaVar":Lpxa;
     :cond_0
     add-int/lit8 v7, v7, 0x1
 
@@ -211,8 +211,8 @@
     aget-object v8, v1, v6
 
     .line 61
-    .local v8, "pxaVar2":Ldefpackage/pxa;
-    iget v9, v8, Ldefpackage/pxa;->c:I
+    .local v8, "pxaVar2":Lpxa;
+    iget v9, v8, Lpxa;->c:I
 
     invoke-static {p1, p2, v9}, Lcom/google/vr/ndk/base/GvrApi;->nativeIsFeatureSupported(JI)Z
 
@@ -220,19 +220,19 @@
 
     if-eqz v9, :cond_3
 
-    invoke-virtual {v2, v8}, Ldefpackage/pxb;->a(Ldefpackage/pxa;)Z
+    invoke-virtual {v2, v8}, Lpxb;->a(Lpxa;)Z
 
     move-result v9
 
     if-nez v9, :cond_3
 
     .line 62
-    iget-object v9, v8, Ldefpackage/pxa;->d:Ljava/lang/String;
+    iget-object v9, v8, Lpxa;->d:Ljava/lang/String;
 
     invoke-virtual {v5, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 60
-    .end local v8    # "pxaVar2":Ldefpackage/pxa;
+    .end local v8    # "pxaVar2":Lpxa;
     :cond_3
     add-int/lit8 v6, v6, 0x1
 

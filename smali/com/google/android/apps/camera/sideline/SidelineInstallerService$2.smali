@@ -20,18 +20,18 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
-.field public final synthetic val$hwhVar:Ldefpackage/hwh;
+.field public final synthetic val$hwhVar:Lhwh;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Ldefpackage/hwh;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Lhwh;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
     .line 212
     iput-object p1, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$2;->this$0:Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$2;->val$hwhVar:Ldefpackage/hwh;
+    iput-object p2, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$2;->val$hwhVar:Lhwh;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,22 +44,22 @@
     .locals 5
 
     .line 215
-    iget-object v0, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$2;->val$hwhVar:Ldefpackage/hwh;
+    iget-object v0, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$2;->val$hwhVar:Lhwh;
 
     .line 216
-    .local v0, "hwhVar2":Ldefpackage/hwh;
-    iget-object v1, v0, Ldefpackage/hwh;->k:Ldefpackage/hwp;
+    .local v0, "hwhVar2":Lhwh;
+    iget-object v1, v0, Lhwh;->k:Lhwp;
 
     const/4 v2, 0x4
 
-    invoke-virtual {v1, v2}, Ldefpackage/hwp;->a(I)V
+    invoke-virtual {v1, v2}, Lhwp;->a(I)V
 
     .line 217
-    iget-object v1, v0, Ldefpackage/hwh;->b:Landroid/content/Context;
+    iget-object v1, v0, Lhwh;->b:Landroid/content/Context;
 
     new-instance v2, Landroid/content/Intent;
 
-    iget-object v3, v0, Ldefpackage/hwh;->b:Landroid/content/Context;
+    iget-object v3, v0, Lhwh;->b:Landroid/content/Context;
 
     const-class v4, Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 

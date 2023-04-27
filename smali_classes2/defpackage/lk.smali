@@ -1,29 +1,69 @@
-.class public interface abstract Ldefpackage/lk;
+.class public Ldefpackage/Lk;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lite;->j(Lmad;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lite;
+
+.field public final synthetic val$madVar:Lmad;
+
+
+# direct methods
+.method public constructor <init>(Lite;Lmad;)V
+    .locals 0
+    .param p1, "this$0"    # Lite;
+
+    .line 36
+    iput-object p1, p0, Ldefpackage/Lk;->this$0:Lite;
+
+    iput-object p2, p0, Ldefpackage/Lk;->val$madVar:Lmad;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
 
 # virtual methods
-.method public abstract b(Landroid/content/Context;Ldefpackage/kw;)V
-.end method
+.method public final run()V
+    .locals 3
 
-.method public abstract c(Ldefpackage/kw;Z)V
-.end method
+    .line 39
+    iget-object v0, p0, Ldefpackage/Lk;->this$0:Lite;
 
-.method public abstract d(Ldefpackage/lj;)V
-.end method
+    .line 40
+    .local v0, "iteVar":Lite;
+    iget-object v1, p0, Ldefpackage/Lk;->val$madVar:Lmad;
 
-.method public abstract e()Z
-.end method
+    .line 41
+    .local v1, "madVar2":Lmad;
+    iget-object v2, v0, Lite;->d:Litw;
 
-.method public abstract f(Ldefpackage/ls;)Z
-.end method
+    invoke-interface {v2, v1}, Litw;->f(Lmad;)V
 
-.method public abstract g(Ldefpackage/kz;)Z
-.end method
+    .line 42
+    invoke-interface {v1}, Llie;->close()V
 
-.method public abstract h(Ldefpackage/kz;)Z
-.end method
+    .line 43
+    const/4 v2, 0x0
 
-.method public abstract i()V
+    iput-boolean v2, v0, Lite;->c:Z
+
+    .line 44
+    return-void
 .end method

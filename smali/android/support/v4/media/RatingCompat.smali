@@ -21,11 +21,11 @@
     .locals 2
 
     .line 12
-    new-instance v0, Ldefpackage/ba;
+    new-instance v0, Lba;
 
     const/16 v1, 0x8
 
-    invoke-direct {v0, v1}, Ldefpackage/ba;-><init>(I)V
+    invoke-direct {v0, v1}, Lba;-><init>(I)V
 
     sput-object v0, Landroid/support/v4/media/RatingCompat;->CREATOR:Landroid/os/Parcelable$Creator;
 

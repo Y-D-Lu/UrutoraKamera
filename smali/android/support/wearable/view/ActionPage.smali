@@ -9,9 +9,9 @@
 
 
 # instance fields
-.field private final a:Ldefpackage/td;
+.field private final a:Ltd;
 
-.field private b:Ldefpackage/th;
+.field private b:Lth;
 
 .field private c:I
 
@@ -95,33 +95,33 @@
     iput-object v2, v0, Landroid/support/wearable/view/ActionPage;->e:Landroid/graphics/Point;
 
     .line 52
-    new-instance v2, Ldefpackage/th;
+    new-instance v2, Lth;
 
-    invoke-direct {v2, v1}, Ldefpackage/th;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, v1}, Lth;-><init>(Landroid/content/Context;)V
 
-    iput-object v2, v0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iput-object v2, v0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     .line 53
-    new-instance v2, Ldefpackage/td;
+    new-instance v2, Ltd;
 
-    invoke-direct {v2, v1}, Ldefpackage/td;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, v1}, Ltd;-><init>(Landroid/content/Context;)V
 
     .line 54
-    .local v2, "tdVar":Ldefpackage/td;
-    iput-object v2, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    .local v2, "tdVar":Ltd;
+    iput-object v2, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     .line 55
     const/16 v3, 0x11
 
-    invoke-virtual {v2, v3}, Ldefpackage/td;->a(I)V
+    invoke-virtual {v2, v3}, Ltd;->a(I)V
 
     .line 56
     const/4 v4, 0x2
 
-    invoke-virtual {v2, v4}, Ldefpackage/td;->b(I)V
+    invoke-virtual {v2, v4}, Ltd;->b(I)V
 
     .line 57
-    sget-object v5, Ldefpackage/sf;->b:[I
+    sget-object v5, Lsf;->b:[I
 
     move-object/from16 v6, p2
 
@@ -177,18 +177,18 @@
     if-ne v15, v3, :cond_0
 
     .line 66
-    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     .line 67
-    .local v4, "thVar":Ldefpackage/th;
+    .local v4, "thVar":Lth;
     invoke-virtual {v5, v3}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object v3
 
-    iput-object v3, v4, Ldefpackage/th;->b:Landroid/content/res/ColorStateList;
+    iput-object v3, v4, Lth;->b:Landroid/content/res/ColorStateList;
 
     .line 68
-    iget-object v3, v4, Ldefpackage/th;->a:Landroid/graphics/drawable/ShapeDrawable;
+    iget-object v3, v4, Lth;->a:Landroid/graphics/drawable/ShapeDrawable;
 
     invoke-virtual {v3}, Landroid/graphics/drawable/ShapeDrawable;->getPaint()Landroid/graphics/Paint;
 
@@ -196,9 +196,9 @@
 
     move-object/from16 v16, v2
 
-    .end local v2    # "tdVar":Ldefpackage/td;
-    .local v16, "tdVar":Ldefpackage/td;
-    iget-object v2, v4, Ldefpackage/th;->b:Landroid/content/res/ColorStateList;
+    .end local v2    # "tdVar":Ltd;
+    .local v16, "tdVar":Ltd;
+    iget-object v2, v4, Lth;->b:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
@@ -207,34 +207,34 @@
     invoke-virtual {v3, v2}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 69
-    .end local v4    # "thVar":Ldefpackage/th;
+    .end local v4    # "thVar":Lth;
     const/16 v6, 0x11
 
     goto/16 :goto_1
 
-    .end local v16    # "tdVar":Ldefpackage/td;
-    .restart local v2    # "tdVar":Ldefpackage/td;
+    .end local v16    # "tdVar":Ltd;
+    .restart local v2    # "tdVar":Ltd;
     :cond_0
     move-object/from16 v16, v2
 
-    .end local v2    # "tdVar":Ldefpackage/td;
-    .restart local v16    # "tdVar":Ldefpackage/td;
+    .end local v2    # "tdVar":Ltd;
+    .restart local v16    # "tdVar":Ltd;
     const/4 v2, 0x4
 
     if-ne v15, v2, :cond_4
 
     .line 70
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     .line 71
-    .local v3, "thVar2":Ldefpackage/th;
+    .local v3, "thVar2":Lth;
     invoke-virtual {v5, v2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
     .line 72
     .local v2, "drawable":Landroid/graphics/drawable/Drawable;
-    iget-object v4, v3, Ldefpackage/th;->c:Landroid/graphics/drawable/Drawable;
+    iget-object v4, v3, Lth;->c:Landroid/graphics/drawable/Drawable;
 
     .line 73
     .local v4, "drawable2":Landroid/graphics/drawable/Drawable;
@@ -247,12 +247,12 @@
 
     .line 76
     :cond_1
-    iget-object v6, v3, Ldefpackage/th;->c:Landroid/graphics/drawable/Drawable;
+    iget-object v6, v3, Lth;->c:Landroid/graphics/drawable/Drawable;
 
     if-eq v6, v2, :cond_2
 
     .line 77
-    iput-object v2, v3, Ldefpackage/th;->c:Landroid/graphics/drawable/Drawable;
+    iput-object v2, v3, Lth;->c:Landroid/graphics/drawable/Drawable;
 
     .line 78
     invoke-virtual {v3}, Landroid/view/View;->requestLayout()V
@@ -262,7 +262,7 @@
 
     .line 81
     :cond_2
-    iget-object v6, v3, Ldefpackage/th;->c:Landroid/graphics/drawable/Drawable;
+    iget-object v6, v3, Lth;->c:Landroid/graphics/drawable/Drawable;
 
     .line 82
     .local v6, "drawable3":Landroid/graphics/drawable/Drawable;
@@ -273,7 +273,7 @@
 
     .line 85
     .end local v2    # "drawable":Landroid/graphics/drawable/Drawable;
-    .end local v3    # "thVar2":Ldefpackage/th;
+    .end local v3    # "thVar2":Lth;
     .end local v4    # "drawable2":Landroid/graphics/drawable/Drawable;
     .end local v6    # "drawable3":Landroid/graphics/drawable/Drawable;
     :cond_3
@@ -289,18 +289,18 @@
     if-ne v15, v2, :cond_6
 
     .line 86
-    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     .line 87
-    .local v4, "thVar3":Ldefpackage/th;
+    .local v4, "thVar3":Lth;
     invoke-virtual {v5, v2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v2
 
-    iput v2, v4, Ldefpackage/th;->e:I
+    iput v2, v4, Lth;->e:I
 
     .line 88
-    iget-object v2, v4, Ldefpackage/th;->c:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v4, Lth;->c:Landroid/graphics/drawable/Drawable;
 
     if-eqz v2, :cond_5
 
@@ -311,7 +311,7 @@
     invoke-virtual {v4}, Landroid/view/View;->requestLayout()V
 
     .line 92
-    .end local v4    # "thVar3":Ldefpackage/th;
+    .end local v4    # "thVar3":Lth;
     :cond_5
     const/16 v6, 0x11
 
@@ -323,7 +323,7 @@
     if-ne v15, v2, :cond_7
 
     .line 93
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     const/4 v4, -0x1
 
@@ -331,7 +331,7 @@
 
     move-result v2
 
-    invoke-virtual {v3, v2}, Ldefpackage/th;->b(I)V
+    invoke-virtual {v3, v2}, Lth;->b(I)V
 
     const/16 v6, 0x11
 
@@ -344,7 +344,7 @@
     if-ne v15, v2, :cond_8
 
     .line 95
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     sget v4, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
 
@@ -352,7 +352,7 @@
 
     move-result v4
 
-    invoke-virtual {v3, v4}, Ldefpackage/th;->a(F)V
+    invoke-virtual {v3, v4}, Lth;->a(F)V
 
     const/16 v6, 0x11
 
@@ -365,10 +365,10 @@
     if-ne v15, v2, :cond_b
 
     .line 97
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     .line 98
-    .local v3, "tdVar2":Ldefpackage/td;
+    .local v3, "tdVar2":Ltd;
     invoke-virtual {v5, v2}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v2
@@ -378,7 +378,7 @@
     if-eqz v2, :cond_a
 
     .line 102
-    iget-object v4, v3, Ldefpackage/td;->c:Ljava/lang/CharSequence;
+    iget-object v4, v3, Ltd;->c:Ljava/lang/CharSequence;
 
     invoke-static {v4, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -389,10 +389,10 @@
     .line 103
     const/4 v4, 0x0
 
-    iput-object v4, v3, Ldefpackage/td;->a:Landroid/text/Layout;
+    iput-object v4, v3, Ltd;->a:Landroid/text/Layout;
 
     .line 104
-    iput-object v2, v3, Ldefpackage/td;->c:Ljava/lang/CharSequence;
+    iput-object v2, v3, Ltd;->c:Ljava/lang/CharSequence;
 
     .line 105
     invoke-virtual {v3}, Landroid/view/View;->requestLayout()V
@@ -402,7 +402,7 @@
 
     .line 108
     .end local v2    # "text":Ljava/lang/CharSequence;
-    .end local v3    # "tdVar2":Ldefpackage/td;
+    .end local v3    # "tdVar2":Ltd;
     :cond_9
     const/16 v6, 0x11
 
@@ -410,7 +410,7 @@
 
     .line 100
     .restart local v2    # "text":Ljava/lang/CharSequence;
-    .restart local v3    # "tdVar2":Ldefpackage/td;
+    .restart local v3    # "tdVar2":Ltd;
     :cond_a
     new-instance v4, Ljava/lang/RuntimeException;
 
@@ -422,17 +422,17 @@
 
     .line 108
     .end local v2    # "text":Ljava/lang/CharSequence;
-    .end local v3    # "tdVar2":Ldefpackage/td;
+    .end local v3    # "tdVar2":Ltd;
     :cond_b
     const/16 v2, 0x10
 
     if-ne v15, v2, :cond_d
 
     .line 109
-    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     .line 110
-    .local v4, "tdVar3":Ldefpackage/td;
+    .local v4, "tdVar3":Ltd;
     const/high16 v6, 0x41200000    # 10.0f
 
     invoke-virtual {v5, v2, v6}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -457,7 +457,7 @@
 
     .line 111
     .local v2, "applyDimension":F
-    iget v3, v4, Ldefpackage/td;->f:F
+    iget v3, v4, Ltd;->f:F
 
     cmpl-float v3, v2, v3
 
@@ -466,10 +466,10 @@
     .line 112
     const/4 v3, 0x0
 
-    iput-object v3, v4, Ldefpackage/td;->a:Landroid/text/Layout;
+    iput-object v3, v4, Ltd;->a:Landroid/text/Layout;
 
     .line 113
-    iput v2, v4, Ldefpackage/td;->f:F
+    iput v2, v4, Ltd;->f:F
 
     .line 114
     invoke-virtual {v4}, Landroid/view/View;->requestLayout()V
@@ -479,7 +479,7 @@
 
     .line 117
     .end local v2    # "applyDimension":F
-    .end local v4    # "tdVar3":Ldefpackage/td;
+    .end local v4    # "tdVar3":Ltd;
     :cond_c
     const/16 v6, 0x11
 
@@ -491,10 +491,10 @@
     if-ne v15, v2, :cond_f
 
     .line 118
-    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     .line 119
-    .local v4, "tdVar4":Ldefpackage/td;
+    .local v4, "tdVar4":Ltd;
     const/high16 v6, 0x42700000    # 60.0f
 
     invoke-virtual {v5, v2, v6}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -519,7 +519,7 @@
 
     .line 120
     .local v2, "applyDimension2":F
-    iget v3, v4, Ldefpackage/td;->g:F
+    iget v3, v4, Ltd;->g:F
 
     cmpl-float v3, v2, v3
 
@@ -528,10 +528,10 @@
     .line 121
     const/4 v3, 0x0
 
-    iput-object v3, v4, Ldefpackage/td;->a:Landroid/text/Layout;
+    iput-object v3, v4, Ltd;->a:Landroid/text/Layout;
 
     .line 122
-    iput v2, v4, Ldefpackage/td;->g:F
+    iput v2, v4, Ltd;->g:F
 
     .line 123
     invoke-virtual {v4}, Landroid/view/View;->requestLayout()V
@@ -541,7 +541,7 @@
 
     .line 126
     .end local v2    # "applyDimension2":F
-    .end local v4    # "tdVar4":Ldefpackage/td;
+    .end local v4    # "tdVar4":Ltd;
     :cond_e
     const/16 v6, 0x11
 
@@ -553,10 +553,10 @@
     if-ne v15, v2, :cond_11
 
     .line 127
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     .line 128
-    .local v3, "tdVar5":Ldefpackage/td;
+    .local v3, "tdVar5":Ltd;
     invoke-virtual {v5, v2}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object v4
@@ -566,20 +566,20 @@
     if-eqz v4, :cond_10
 
     .line 132
-    iput-object v4, v3, Ldefpackage/td;->b:Landroid/content/res/ColorStateList;
+    iput-object v4, v3, Ltd;->b:Landroid/content/res/ColorStateList;
 
     .line 133
-    invoke-virtual {v3}, Ldefpackage/td;->e()V
+    invoke-virtual {v3}, Ltd;->e()V
 
     .line 134
-    .end local v3    # "tdVar5":Ldefpackage/td;
+    .end local v3    # "tdVar5":Ltd;
     .end local v4    # "colorStateList":Landroid/content/res/ColorStateList;
     const/16 v6, 0x11
 
     goto/16 :goto_1
 
     .line 130
-    .restart local v3    # "tdVar5":Ldefpackage/td;
+    .restart local v3    # "tdVar5":Ltd;
     .restart local v4    # "colorStateList":Landroid/content/res/ColorStateList;
     :cond_10
     const/4 v2, 0x0
@@ -587,7 +587,7 @@
     throw v2
 
     .line 134
-    .end local v3    # "tdVar5":Ldefpackage/td;
+    .end local v3    # "tdVar5":Ltd;
     .end local v4    # "colorStateList":Landroid/content/res/ColorStateList;
     :cond_11
     const/4 v2, 0x6
@@ -595,7 +595,7 @@
     if-ne v15, v2, :cond_12
 
     .line 135
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     const/4 v4, 0x2
 
@@ -603,7 +603,7 @@
 
     move-result v2
 
-    invoke-virtual {v3, v2}, Ldefpackage/td;->b(I)V
+    invoke-virtual {v3, v2}, Ltd;->b(I)V
 
     const/16 v6, 0x11
 
@@ -679,7 +679,7 @@
     if-ne v15, v2, :cond_16
 
     .line 143
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     const/16 v6, 0x11
 
@@ -687,7 +687,7 @@
 
     move-result v2
 
-    invoke-virtual {v3, v2}, Ldefpackage/td;->a(I)V
+    invoke-virtual {v3, v2}, Ltd;->a(I)V
 
     goto :goto_1
 
@@ -738,7 +738,7 @@
     if-ne v15, v2, :cond_19
 
     .line 149
-    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v4, v0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     invoke-virtual {v5, v2, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -766,29 +766,29 @@
 
     goto/16 :goto_0
 
-    .end local v16    # "tdVar":Ldefpackage/td;
-    .local v2, "tdVar":Ldefpackage/td;
+    .end local v16    # "tdVar":Ltd;
+    .local v2, "tdVar":Ltd;
     :cond_1a
     move-object/from16 v16, v2
 
     .line 152
-    .end local v2    # "tdVar":Ldefpackage/td;
+    .end local v2    # "tdVar":Ltd;
     .end local v14    # "i5":I
-    .restart local v16    # "tdVar":Ldefpackage/td;
+    .restart local v16    # "tdVar":Ltd;
     invoke-virtual {v5}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 153
-    iget-object v2, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v2, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     .line 154
-    .local v2, "tdVar6":Ldefpackage/td;
-    iget v3, v2, Ldefpackage/td;->e:F
+    .local v2, "tdVar6":Ltd;
+    iget v3, v2, Ltd;->e:F
 
     cmpl-float v3, v3, v11
 
     if-nez v3, :cond_1b
 
-    iget v3, v2, Ldefpackage/td;->d:F
+    iget v3, v2, Ltd;->d:F
 
     cmpl-float v3, v3, v9
 
@@ -796,20 +796,20 @@
 
     .line 155
     :cond_1b
-    iput v11, v2, Ldefpackage/td;->e:F
+    iput v11, v2, Ltd;->e:F
 
     .line 156
-    iput v9, v2, Ldefpackage/td;->d:F
+    iput v9, v2, Ltd;->d:F
 
     .line 157
-    iget-object v3, v2, Ldefpackage/td;->a:Landroid/text/Layout;
+    iget-object v3, v2, Ltd;->a:Landroid/text/Layout;
 
     if-eqz v3, :cond_1c
 
     .line 158
     const/4 v3, 0x0
 
-    iput-object v3, v2, Ldefpackage/td;->a:Landroid/text/Layout;
+    iput-object v3, v2, Ltd;->a:Landroid/text/Layout;
 
     .line 159
     invoke-virtual {v2}, Landroid/view/View;->requestLayout()V
@@ -819,17 +819,17 @@
 
     .line 163
     :cond_1c
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
-    invoke-virtual {v3, v10, v12, v13}, Ldefpackage/td;->d(Ljava/lang/String;II)V
+    invoke-virtual {v3, v10, v12, v13}, Ltd;->d(Ljava/lang/String;II)V
 
     .line 164
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 165
-    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v3, v0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -947,7 +947,7 @@
     .param p5, "i4"    # I
 
     .line 196
-    iget-object v0, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v0, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     iget-object v1, p0, Landroid/support/wearable/view/ActionPage;->e:Landroid/graphics/Point;
 
@@ -1000,9 +1000,9 @@
 
     .line 198
     .local v0, "i5":I
-    iget-object v1, p0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v1, p0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
-    iget-object v2, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v2, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     invoke-virtual {v2}, Landroid/view/View;->getBottom()I
 
@@ -1012,7 +1012,7 @@
 
     add-int/2addr v3, v0
 
-    iget-object v4, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v4, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     invoke-virtual {v4}, Landroid/view/View;->getBottom()I
 
@@ -1049,11 +1049,11 @@
 
     .line 206
     .local v1, "measuredWidth":I
-    iget-object v2, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v2, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     .line 207
-    .local v2, "thVar":Ldefpackage/th;
-    iget v3, v2, Ldefpackage/th;->e:I
+    .local v2, "thVar":Lth;
+    iget v3, v2, Lth;->e:I
 
     const/high16 v4, 0x40000000    # 2.0f
 
@@ -1063,7 +1063,7 @@
 
     if-ne v3, v6, :cond_1
 
-    iget-object v3, v2, Ldefpackage/th;->c:Landroid/graphics/drawable/Drawable;
+    iget-object v3, v2, Lth;->c:Landroid/graphics/drawable/Drawable;
 
     if-nez v3, :cond_0
 
@@ -1076,13 +1076,13 @@
     invoke-virtual {v2, v3, v3}, Landroid/view/View;->measure(II)V
 
     .line 214
-    iget-object v3, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v3, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v3
 
-    iget-object v6, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v6, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     invoke-virtual {v6}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -1133,7 +1133,7 @@
     iput v6, p0, Landroid/support/wearable/view/ActionPage;->d:F
 
     .line 211
-    iget-object v4, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v4, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     invoke-static {v3, v5}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
@@ -1244,7 +1244,7 @@
     iput v3, p0, Landroid/support/wearable/view/ActionPage;->g:I
 
     .line 227
-    iget-object v3, p0, Landroid/support/wearable/view/ActionPage;->a:Ldefpackage/td;
+    iget-object v3, p0, Landroid/support/wearable/view/ActionPage;->a:Ltd;
 
     iget v4, p0, Landroid/support/wearable/view/ActionPage;->f:I
 
@@ -1272,10 +1272,10 @@
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setEnabled(Z)V
 
     .line 233
-    iget-object v0, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v0, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     .line 234
-    .local v0, "thVar":Ldefpackage/th;
+    .local v0, "thVar":Lth;
     if-eqz v0, :cond_0
 
     .line 235
@@ -1291,10 +1291,10 @@
     .param p1, "onClickListener"    # Landroid/view/View$OnClickListener;
 
     .line 241
-    iget-object v0, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v0, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     .line 242
-    .local v0, "thVar":Ldefpackage/th;
+    .local v0, "thVar":Lth;
     if-eqz v0, :cond_0
 
     .line 243
@@ -1310,10 +1310,10 @@
     .param p1, "stateListAnimator"    # Landroid/animation/StateListAnimator;
 
     .line 249
-    iget-object v0, p0, Landroid/support/wearable/view/ActionPage;->b:Ldefpackage/th;
+    iget-object v0, p0, Landroid/support/wearable/view/ActionPage;->b:Lth;
 
     .line 250
-    .local v0, "thVar":Ldefpackage/th;
+    .local v0, "thVar":Lth;
     if-eqz v0, :cond_0
 
     .line 251

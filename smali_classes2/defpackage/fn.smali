@@ -1,31 +1,70 @@
-.class public final Ldefpackage/fn;
+.class public Ldefpackage/Fn;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Vn;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:Ljava/util/concurrent/CopyOnWriteArrayList;
+.field public final synthetic this$1:Ldefpackage/Vn;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ldefpackage/Vn;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Vn;
 
-    .line 11
+    .line 3882
+    iput-object p1, p0, Ldefpackage/Fn;->this$1:Ldefpackage/Vn;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
-    new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
-
-    invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/fn;->a:Ljava/util/concurrent/CopyOnWriteArrayList;
-
-    .line 12
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    .line 13
     return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
+
+    .line 3885
+    move-object v0, p1
+
+    check-cast v0, Landroid/animation/Animator;
+
+    .line 3886
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Fn;->this$1:Ldefpackage/Vn;
+
+    iget-object v1, v1, Ldefpackage/Vn;->this$0:Ljkz;
+
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
+
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
+
+    .line 3887
+    return-void
+.end method
+
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
+
+    .line 3891
+    return-object p1
 .end method

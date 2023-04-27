@@ -21,9 +21,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 16
-    new-instance v0, Ldefpackage/pvu;
+    new-instance v0, Lpvu;
 
-    invoke-direct {v0, p0}, Ldefpackage/pvu;-><init>(Lcom/google/vr/audio/DeviceInfo;)V
+    invoke-direct {v0, p0}, Lpvu;-><init>(Lcom/google/vr/audio/DeviceInfo;)V
 
     iput-object v0, p0, Lcom/google/vr/audio/DeviceInfo;->c:Landroid/content/BroadcastReceiver;
 

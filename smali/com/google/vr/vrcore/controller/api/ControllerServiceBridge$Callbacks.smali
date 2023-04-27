@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public abstract a(Ldefpackage/pxs;)V
+.method public abstract a(Lpxs;)V
 .end method
 
-.method public abstract b(Ldefpackage/pxr;)V
+.method public abstract b(Lpxr;)V
 .end method
 
-.method public abstract c(Ldefpackage/pxv;)V
+.method public abstract c(Lpxv;)V
 .end method
 
 .method public abstract d(II)V

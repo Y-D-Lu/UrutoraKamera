@@ -1,5 +1,5 @@
 .class public Landroid/support/wearable/view/SwipeDismissFrameLayout;
-.super Ldefpackage/tc;
+.super Ltc;
 .source ""
 
 
@@ -21,11 +21,11 @@
 
 .field public i:Z
 
-.field private final j:Ldefpackage/to;
+.field private final j:Lto;
 
-.field private final k:Ldefpackage/to;
+.field private final k:Lto;
 
-.field private final l:Ldefpackage/to;
+.field private final l:Lto;
 
 
 # direct methods
@@ -65,34 +65,34 @@
     .param p3, "i"    # I
 
     .line 35
-    invoke-direct {p0, p1, p2, p3}, Ldefpackage/tc;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, Ltc;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 36
-    new-instance v0, Ldefpackage/to;
+    new-instance v0, Lto;
 
-    invoke-direct {v0, p0}, Ldefpackage/to;-><init>(Landroid/support/wearable/view/SwipeDismissFrameLayout;)V
+    invoke-direct {v0, p0}, Lto;-><init>(Landroid/support/wearable/view/SwipeDismissFrameLayout;)V
 
     .line 37
-    .local v0, "toVar":Ldefpackage/to;
-    iput-object v0, p0, Landroid/support/wearable/view/SwipeDismissFrameLayout;->k:Ldefpackage/to;
+    .local v0, "toVar":Lto;
+    iput-object v0, p0, Landroid/support/wearable/view/SwipeDismissFrameLayout;->k:Lto;
 
     .line 38
-    new-instance v1, Ldefpackage/to;
+    new-instance v1, Lto;
 
-    invoke-direct {v1, p0}, Ldefpackage/to;-><init>(Landroid/support/wearable/view/SwipeDismissFrameLayout;)V
+    invoke-direct {v1, p0}, Lto;-><init>(Landroid/support/wearable/view/SwipeDismissFrameLayout;)V
 
     .line 39
-    .local v1, "toVar2":Ldefpackage/to;
-    iput-object v1, p0, Landroid/support/wearable/view/SwipeDismissFrameLayout;->l:Ldefpackage/to;
+    .local v1, "toVar2":Lto;
+    iput-object v1, p0, Landroid/support/wearable/view/SwipeDismissFrameLayout;->l:Lto;
 
     .line 40
-    new-instance v2, Ldefpackage/to;
+    new-instance v2, Lto;
 
-    invoke-direct {v2, p0}, Ldefpackage/to;-><init>(Landroid/support/wearable/view/SwipeDismissFrameLayout;)V
+    invoke-direct {v2, p0}, Lto;-><init>(Landroid/support/wearable/view/SwipeDismissFrameLayout;)V
 
     .line 41
-    .local v2, "toVar3":Ldefpackage/to;
-    iput-object v2, p0, Landroid/support/wearable/view/SwipeDismissFrameLayout;->j:Ldefpackage/to;
+    .local v2, "toVar3":Lto;
+    iput-object v2, p0, Landroid/support/wearable/view/SwipeDismissFrameLayout;->j:Lto;
 
     .line 42
     new-instance v3, Ljava/util/ArrayList;
@@ -102,13 +102,13 @@
     iput-object v3, p0, Landroid/support/wearable/view/SwipeDismissFrameLayout;->d:Ljava/util/ArrayList;
 
     .line 43
-    iput-object v0, p0, Ldefpackage/tc;->b:Ldefpackage/to;
+    iput-object v0, p0, Ltc;->b:Lto;
 
     .line 44
-    iput-object v1, p0, Ldefpackage/tc;->c:Ldefpackage/to;
+    iput-object v1, p0, Ltc;->c:Lto;
 
     .line 45
-    iput-object v2, p0, Ldefpackage/tc;->a:Ldefpackage/to;
+    iput-object v2, p0, Ltc;->a:Lto;
 
     .line 46
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;

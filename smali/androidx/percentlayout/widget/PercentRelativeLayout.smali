@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field private final a:Ldefpackage/aft;
+.field private final a:Laft;
 
 
 # direct methods
@@ -21,11 +21,11 @@
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
     .line 23
-    new-instance v0, Ldefpackage/aft;
+    new-instance v0, Laft;
 
-    invoke-direct {v0, p0}, Ldefpackage/aft;-><init>(Landroid/view/ViewGroup;)V
+    invoke-direct {v0, p0}, Laft;-><init>(Landroid/view/ViewGroup;)V
 
-    iput-object v0, p0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Ldefpackage/aft;
+    iput-object v0, p0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Laft;
 
     .line 24
     return-void
@@ -40,11 +40,11 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 28
-    new-instance v0, Ldefpackage/aft;
+    new-instance v0, Laft;
 
-    invoke-direct {v0, p0}, Ldefpackage/aft;-><init>(Landroid/view/ViewGroup;)V
+    invoke-direct {v0, p0}, Laft;-><init>(Landroid/view/ViewGroup;)V
 
-    iput-object v0, p0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Ldefpackage/aft;
+    iput-object v0, p0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Laft;
 
     .line 29
     return-void
@@ -60,11 +60,11 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 33
-    new-instance v0, Ldefpackage/aft;
+    new-instance v0, Laft;
 
-    invoke-direct {v0, p0}, Ldefpackage/aft;-><init>(Landroid/view/ViewGroup;)V
+    invoke-direct {v0, p0}, Laft;-><init>(Landroid/view/ViewGroup;)V
 
-    iput-object v0, p0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Ldefpackage/aft;
+    iput-object v0, p0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Laft;
 
     .line 34
     return-void
@@ -76,9 +76,9 @@
     .locals 1
 
     .line 44
-    new-instance v0, Ldefpackage/afu;
+    new-instance v0, Lafu;
 
-    invoke-direct {v0}, Ldefpackage/afu;-><init>()V
+    invoke-direct {v0}, Lafu;-><init>()V
 
     return-object v0
 .end method
@@ -95,11 +95,11 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/RelativeLayout;->onLayout(ZIIII)V
 
     .line 51
-    iget-object v0, p0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Ldefpackage/aft;
+    iget-object v0, p0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Laft;
 
     .line 52
-    .local v0, "aftVar":Ldefpackage/aft;
-    iget-object v1, v0, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    .local v0, "aftVar":Laft;
+    iget-object v1, v0, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -114,7 +114,7 @@
     if-ge v2, v1, :cond_2
 
     .line 54
-    iget-object v3, v0, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    iget-object v3, v0, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v3, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -126,21 +126,21 @@
 
     .line 55
     .local v3, "layoutParams":Landroid/view/ViewGroup$LayoutParams;
-    instance-of v4, v3, Ldefpackage/afu;
+    instance-of v4, v3, Lafu;
 
     if-eqz v4, :cond_1
 
     move-object v4, v3
 
-    check-cast v4, Ldefpackage/afu;
+    check-cast v4, Lafu;
 
-    invoke-virtual {v4}, Ldefpackage/afu;->a()Ldefpackage/afr;
+    invoke-virtual {v4}, Lafu;->a()Lafr;
 
     move-result-object v4
 
     move-object v5, v4
 
-    .local v5, "a":Ldefpackage/afr;
+    .local v5, "a":Lafr;
     if-eqz v4, :cond_1
 
     .line 56
@@ -155,10 +155,10 @@
 
     .line 58
     .local v4, "marginLayoutParams":Landroid/view/ViewGroup$MarginLayoutParams;
-    invoke-virtual {v5, v4}, Ldefpackage/afr;->b(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v4}, Lafr;->b(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 59
-    iget-object v6, v5, Ldefpackage/afr;->j:Ldefpackage/afs;
+    iget-object v6, v5, Lafr;->j:Lafs;
 
     iget v7, v6, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
@@ -187,7 +187,7 @@
     invoke-virtual {v4, v6}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
 
     .line 64
-    iget-object v6, v5, Ldefpackage/afr;->j:Ldefpackage/afs;
+    iget-object v6, v5, Lafr;->j:Lafs;
 
     invoke-virtual {v6}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginEnd()I
 
@@ -201,11 +201,11 @@
 
     .line 66
     :cond_0
-    invoke-virtual {v5, v3}, Ldefpackage/afr;->b(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v3}, Lafr;->b(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 53
     .end local v3    # "layoutParams":Landroid/view/ViewGroup$LayoutParams;
-    .end local v5    # "a":Ldefpackage/afr;
+    .end local v5    # "a":Lafr;
     :cond_1
     :goto_1
     add-int/lit8 v2, v2, 0x1
@@ -226,15 +226,15 @@
     .line 76
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Ldefpackage/aft;
+    iget-object v1, v0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Laft;
 
     .line 77
-    .local v1, "aftVar":Ldefpackage/aft;
+    .local v1, "aftVar":Laft;
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v2
 
-    iget-object v3, v1, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    iget-object v3, v1, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v3}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -242,7 +242,7 @@
 
     sub-int/2addr v2, v3
 
-    iget-object v3, v1, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    iget-object v3, v1, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v3}, Landroid/view/ViewGroup;->getPaddingRight()I
 
@@ -256,7 +256,7 @@
 
     move-result v3
 
-    iget-object v4, v1, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    iget-object v4, v1, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v4}, Landroid/view/ViewGroup;->getPaddingTop()I
 
@@ -264,7 +264,7 @@
 
     sub-int/2addr v3, v4
 
-    iget-object v4, v1, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    iget-object v4, v1, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v4}, Landroid/view/ViewGroup;->getPaddingBottom()I
 
@@ -274,7 +274,7 @@
 
     .line 79
     .local v3, "size2":I
-    iget-object v4, v1, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    iget-object v4, v1, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v4}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -301,11 +301,11 @@
     invoke-super/range {p0 .. p2}, Landroid/widget/RelativeLayout;->onMeasure(II)V
 
     .line 135
-    iget-object v6, v0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Ldefpackage/aft;
+    iget-object v6, v0, Landroidx/percentlayout/widget/PercentRelativeLayout;->a:Laft;
 
     .line 136
-    .local v6, "aftVar2":Ldefpackage/aft;
-    iget-object v7, v6, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    .local v6, "aftVar2":Laft;
+    iget-object v7, v6, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v7}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -324,7 +324,7 @@
     if-ge v9, v7, :cond_2
 
     .line 139
-    iget-object v10, v6, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    iget-object v10, v6, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v10, v9}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -338,21 +338,21 @@
 
     .line 141
     .local v11, "layoutParams2":Landroid/view/ViewGroup$LayoutParams;
-    instance-of v12, v11, Ldefpackage/afu;
+    instance-of v12, v11, Lafu;
 
     if-eqz v12, :cond_1
 
     move-object v12, v11
 
-    check-cast v12, Ldefpackage/afu;
+    check-cast v12, Lafu;
 
-    invoke-virtual {v12}, Ldefpackage/afu;->a()Ldefpackage/afr;
+    invoke-virtual {v12}, Lafu;->a()Lafr;
 
     move-result-object v12
 
     move-object v13, v12
 
-    .local v13, "a":Ldefpackage/afr;
+    .local v13, "a":Lafr;
     if-eqz v12, :cond_1
 
     .line 142
@@ -370,7 +370,7 @@
 
     if-ne v12, v15, :cond_0
 
-    iget v12, v13, Ldefpackage/afr;->a:F
+    iget v12, v13, Lafr;->a:F
 
     sget v17, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
 
@@ -378,7 +378,7 @@
 
     if-ltz v12, :cond_0
 
-    iget-object v12, v13, Ldefpackage/afr;->j:Ldefpackage/afs;
+    iget-object v12, v13, Lafr;->j:Lafs;
 
     iget v12, v12, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
 
@@ -402,7 +402,7 @@
 
     if-ne v12, v15, :cond_1
 
-    iget v12, v13, Ldefpackage/afr;->b:F
+    iget v12, v13, Lafr;->b:F
 
     sget v15, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
 
@@ -410,7 +410,7 @@
 
     if-ltz v12, :cond_1
 
-    iget-object v12, v13, Ldefpackage/afr;->j:Ldefpackage/afs;
+    iget-object v12, v13, Lafr;->j:Lafs;
 
     iget v12, v12, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
 
@@ -425,7 +425,7 @@
     .line 138
     .end local v10    # "childAt2":Landroid/view/View;
     .end local v11    # "layoutParams2":Landroid/view/ViewGroup$LayoutParams;
-    .end local v13    # "a":Ldefpackage/afr;
+    .end local v13    # "a":Lafr;
     :cond_1
     add-int/lit8 v9, v9, 0x1
 
@@ -448,7 +448,7 @@
     .end local v8    # "z2":Z
     .local v6, "z":Z
     :cond_4
-    iget-object v7, v1, Ldefpackage/aft;->a:Landroid/view/ViewGroup;
+    iget-object v7, v1, Laft;->a:Landroid/view/ViewGroup;
 
     invoke-virtual {v7, v5}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -462,21 +462,21 @@
 
     .line 88
     .local v8, "layoutParams":Landroid/view/ViewGroup$LayoutParams;
-    instance-of v9, v8, Ldefpackage/afu;
+    instance-of v9, v8, Lafu;
 
     if-eqz v9, :cond_d
 
     move-object v9, v8
 
-    check-cast v9, Ldefpackage/afu;
+    check-cast v9, Lafu;
 
-    invoke-virtual {v9}, Ldefpackage/afu;->a()Ldefpackage/afr;
+    invoke-virtual {v9}, Lafu;->a()Lafr;
 
     move-result-object v9
 
     move-object v10, v9
 
-    .local v10, "a2":Ldefpackage/afr;
+    .local v10, "a2":Lafr;
     if-eqz v9, :cond_c
 
     .line 89
@@ -491,10 +491,10 @@
 
     .line 91
     .local v9, "marginLayoutParams":Landroid/view/ViewGroup$MarginLayoutParams;
-    invoke-virtual {v10, v9, v2, v3}, Ldefpackage/afr;->a(Landroid/view/ViewGroup$LayoutParams;II)V
+    invoke-virtual {v10, v9, v2, v3}, Lafr;->a(Landroid/view/ViewGroup$LayoutParams;II)V
 
     .line 92
-    iget-object v11, v10, Ldefpackage/afr;->j:Ldefpackage/afs;
+    iget-object v11, v10, Lafr;->j:Lafs;
 
     iget v12, v9, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
@@ -523,7 +523,7 @@
     invoke-virtual {v11, v12}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
 
     .line 97
-    iget-object v11, v10, Ldefpackage/afr;->j:Ldefpackage/afs;
+    iget-object v11, v10, Lafr;->j:Lafs;
 
     invoke-virtual {v9}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginEnd()I
 
@@ -532,7 +532,7 @@
     invoke-virtual {v11, v12}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
 
     .line 98
-    iget v11, v10, Ldefpackage/afr;->c:F
+    iget v11, v10, Lafr;->c:F
 
     .line 99
     .local v11, "f":F
@@ -555,7 +555,7 @@
 
     .line 102
     :cond_5
-    iget v13, v10, Ldefpackage/afr;->d:F
+    iget v13, v10, Lafr;->d:F
 
     .line 103
     .local v13, "f2":F
@@ -576,7 +576,7 @@
 
     .line 106
     :cond_6
-    iget v14, v10, Ldefpackage/afr;->e:F
+    iget v14, v10, Lafr;->e:F
 
     .line 107
     .local v14, "f3":F
@@ -597,7 +597,7 @@
 
     .line 110
     :cond_7
-    iget v15, v10, Ldefpackage/afr;->f:F
+    iget v15, v10, Lafr;->f:F
 
     .line 111
     .local v15, "f4":F
@@ -618,7 +618,7 @@
 
     .line 114
     :cond_8
-    iget v0, v10, Ldefpackage/afr;->g:F
+    iget v0, v10, Lafr;->g:F
 
     .line 115
     .local v0, "f5":F
@@ -629,8 +629,8 @@
     .line 116
     move-object/from16 v16, v1
 
-    .end local v1    # "aftVar":Ldefpackage/aft;
-    .local v16, "aftVar":Ldefpackage/aft;
+    .end local v1    # "aftVar":Laft;
+    .local v16, "aftVar":Laft;
     int-to-float v1, v2
 
     mul-float/2addr v1, v0
@@ -644,18 +644,18 @@
     goto :goto_2
 
     .line 118
-    .end local v16    # "aftVar":Ldefpackage/aft;
-    .restart local v1    # "aftVar":Ldefpackage/aft;
+    .end local v16    # "aftVar":Laft;
+    .restart local v1    # "aftVar":Laft;
     :cond_9
     move-object/from16 v16, v1
 
-    .end local v1    # "aftVar":Ldefpackage/aft;
-    .restart local v16    # "aftVar":Ldefpackage/aft;
+    .end local v1    # "aftVar":Laft;
+    .restart local v16    # "aftVar":Laft;
     const/4 v6, 0x0
 
     .line 120
     :goto_2
-    iget v1, v10, Ldefpackage/afr;->h:F
+    iget v1, v10, Lafr;->h:F
 
     .line 121
     .local v1, "f6":F
@@ -685,7 +685,7 @@
     nop
 
     .line 126
-    invoke-static {v7}, Ldefpackage/gl;->f(Landroid/view/View;)I
+    invoke-static {v7}, Lgl;->f(Landroid/view/View;)I
 
     move-result v12
 
@@ -702,36 +702,36 @@
     goto :goto_4
 
     .line 129
-    .end local v16    # "aftVar":Ldefpackage/aft;
-    .local v1, "aftVar":Ldefpackage/aft;
+    .end local v16    # "aftVar":Laft;
+    .local v1, "aftVar":Laft;
     :cond_b
     move-object/from16 v16, v1
 
-    .end local v1    # "aftVar":Ldefpackage/aft;
-    .restart local v16    # "aftVar":Ldefpackage/aft;
-    invoke-virtual {v10, v8, v2, v3}, Ldefpackage/afr;->a(Landroid/view/ViewGroup$LayoutParams;II)V
+    .end local v1    # "aftVar":Laft;
+    .restart local v16    # "aftVar":Laft;
+    invoke-virtual {v10, v8, v2, v3}, Lafr;->a(Landroid/view/ViewGroup$LayoutParams;II)V
 
     goto :goto_4
 
     .line 88
-    .end local v16    # "aftVar":Ldefpackage/aft;
-    .restart local v1    # "aftVar":Ldefpackage/aft;
+    .end local v16    # "aftVar":Laft;
+    .restart local v1    # "aftVar":Laft;
     :cond_c
     move-object/from16 v16, v1
 
-    .end local v1    # "aftVar":Ldefpackage/aft;
-    .restart local v16    # "aftVar":Ldefpackage/aft;
+    .end local v1    # "aftVar":Laft;
+    .restart local v16    # "aftVar":Laft;
     goto :goto_4
 
-    .end local v10    # "a2":Ldefpackage/afr;
-    .end local v16    # "aftVar":Ldefpackage/aft;
-    .restart local v1    # "aftVar":Ldefpackage/aft;
+    .end local v10    # "a2":Lafr;
+    .end local v16    # "aftVar":Laft;
+    .restart local v1    # "aftVar":Laft;
     :cond_d
     move-object/from16 v16, v1
 
     .line 132
-    .end local v1    # "aftVar":Ldefpackage/aft;
-    .restart local v16    # "aftVar":Ldefpackage/aft;
+    .end local v1    # "aftVar":Laft;
+    .restart local v16    # "aftVar":Laft;
     :goto_4
     nop
 

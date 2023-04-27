@@ -1,79 +1,136 @@
-.class public final Ldefpackage/nk;
+.class public Ldefpackage/Nk;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lite;->d(Lojc;Lojc;)Llie;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/nn;
+.field public final synthetic this$0:Lite;
+
+.field public final synthetic val$d:Llie;
+
+.field public final synthetic val$ojcVar:Lojc;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/nn;)V
+.method public constructor <init>(Lite;Lojc;Llie;)V
     .locals 0
-    .param p1, "nnVar"    # Ldefpackage/nn;
+    .param p1, "this$0"    # Lite;
 
-    .line 12
+    .line 97
+    iput-object p1, p0, Ldefpackage/Nk;->this$0:Lite;
+
+    iput-object p2, p0, Ldefpackage/Nk;->val$ojcVar:Lojc;
+
+    iput-object p3, p0, Ldefpackage/Nk;->val$d:Llie;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    iput-object p1, p0, Ldefpackage/nk;->a:Ldefpackage/nn;
-
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 4
-    .param p1, "adapterView"    # Landroid/widget/AdapterView;
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "i"    # I
-    .param p4, "j"    # J
+.method public final close()V
+    .locals 8
 
-    .line 18
-    iget-object v0, p0, Ldefpackage/nk;->a:Ldefpackage/nn;
+    .line 100
+    iget-object v0, p0, Ldefpackage/Nk;->this$0:Lite;
 
-    iget-object v0, v0, Ldefpackage/nn;->d:Ldefpackage/nq;
+    .line 101
+    .local v0, "iteVar":Lite;
+    iget-object v1, p0, Ldefpackage/Nk;->val$ojcVar:Lojc;
 
-    invoke-virtual {v0, p3}, Landroid/widget/Spinner;->setSelection(I)V
+    .line 102
+    .local v1, "ojcVar3":Lojc;
+    iget-object v2, p0, Ldefpackage/Nk;->val$d:Llie;
 
-    .line 19
-    iget-object v0, p0, Ldefpackage/nk;->a:Ldefpackage/nn;
+    .line 103
+    .local v2, "lieVar":Llie;
+    monitor-enter v0
 
-    iget-object v0, v0, Ldefpackage/nn;->d:Ldefpackage/nq;
+    .line 104
+    :try_start_0
+    iget-object v3, v0, Lite;->e:Lojc;
 
-    invoke-virtual {v0}, Landroid/widget/Spinner;->getOnItemClickListener()Landroid/widget/AdapterView$OnItemClickListener;
+    invoke-virtual {v3}, Lojc;->g()Z
 
-    move-result-object v0
+    move-result v3
 
-    if-eqz v0, :cond_0
+    if-eqz v3, :cond_0
 
-    .line 20
-    iget-object v0, p0, Ldefpackage/nk;->a:Ldefpackage/nn;
+    invoke-virtual {v1}, Lojc;->g()Z
 
-    .line 21
-    .local v0, "nnVar":Ldefpackage/nn;
-    iget-object v1, v0, Ldefpackage/nn;->d:Ldefpackage/nq;
+    move-result v3
 
-    iget-object v2, v0, Ldefpackage/nn;->b:Landroid/widget/ListAdapter;
+    if-eqz v3, :cond_0
 
-    invoke-interface {v2, p3}, Landroid/widget/ListAdapter;->getItemId(I)J
+    iget-object v3, v0, Lite;->e:Lojc;
 
-    move-result-wide v2
+    invoke-virtual {v3}, Lojc;->c()Ljava/lang/Object;
 
-    invoke-virtual {v1, p2, p3, v2, v3}, Landroid/widget/Spinner;->performItemClick(Landroid/view/View;IJ)Z
+    move-result-object v3
 
-    .line 23
-    .end local v0    # "nnVar":Ldefpackage/nn;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-ne v3, v4, :cond_0
+
+    .line 105
+    sget-object v3, Loih;->a:Loih;
+
+    iput-object v3, v0, Lite;->e:Lojc;
+
+    .line 107
     :cond_0
-    iget-object v0, p0, Ldefpackage/nk;->a:Ldefpackage/nn;
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {v0}, Ldefpackage/pk;->k()V
+    .line 108
+    iget-object v3, v0, Lite;->a:Ljava/util/concurrent/Executor;
 
-    .line 24
+    iget-object v4, v0, Lite;->b:Lljf;
+
+    const-string v5, "detachResources.close"
+
+    new-instance v6, Lgng;
+
+    const/4 v7, 0x2
+
+    invoke-direct {v6, v2, v7}, Lgng;-><init>(Llie;I)V
+
+    invoke-interface {v4, v5, v6}, Lljf;->c(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Runnable;
+
+    move-result-object v4
+
+    invoke-interface {v3, v4}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 109
     return-void
+
+    .line 107
+    :catchall_0
+    move-exception v3
+
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v3
 .end method

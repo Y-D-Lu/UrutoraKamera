@@ -1,4 +1,4 @@
-.class public final Ldefpackage/im;
+.class public Ldefpackage/Im;
 .super Ljava/lang/Object;
 .source ""
 
@@ -6,186 +6,175 @@
 .implements Ljava/lang/Runnable;
 
 
-# instance fields
-.field public final a:Ldefpackage/iy;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljiy;->b(I)V
+.end annotation
 
-.field private final b:I
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Ljiy;
+
+.field public final synthetic val$i:I
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/iy;I)V
+.method public constructor <init>(Ljiy;I)V
     .locals 0
-    .param p1, "iyVar"    # Ldefpackage/iy;
-    .param p2, "i"    # I
+    .param p1, "this$0"    # Ljiy;
 
-    .line 13
+    .line 52
+    iput-object p1, p0, Ldefpackage/Im;->this$0:Ljiy;
+
+    iput p2, p0, Ldefpackage/Im;->val$i:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    iput p2, p0, Ldefpackage/im;->b:I
-
-    .line 15
-    iput-object p1, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 5
+    .locals 6
 
-    .line 20
-    iget v0, p0, Ldefpackage/im;->b:I
+    .line 55
+    iget-object v0, p0, Ldefpackage/Im;->this$0:Ljiy;
 
-    const/4 v1, 0x0
+    .line 56
+    .local v0, "jiyVar":Ljiy;
+    iget v1, p0, Ldefpackage/Im;->val$i:I
 
-    packed-switch v0, :pswitch_data_0
-
-    .line 38
-    iget-object v0, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    .line 39
-    .local v0, "iyVar3":Ldefpackage/iy;
-    iget v2, v0, Ldefpackage/iy;->F:I
-
-    and-int/lit8 v2, v2, 0x1
-
-    if-eqz v2, :cond_1
-
-    .line 40
-    invoke-virtual {v0, v1}, Ldefpackage/iy;->y(I)V
-
-    goto :goto_0
-
-    .line 22
-    .end local v0    # "iyVar3":Ldefpackage/iy;
-    :pswitch_0
-    iget-object v0, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    .line 23
-    .local v0, "iyVar":Ldefpackage/iy;
-    iget-object v2, v0, Ldefpackage/iy;->n:Landroid/widget/PopupWindow;
-
-    iget-object v3, v0, Ldefpackage/iy;->m:Landroid/support/v7/widget/ActionBarContextView;
-
-    const/16 v4, 0x37
-
-    invoke-virtual {v2, v3, v4, v1, v1}, Landroid/widget/PopupWindow;->showAtLocation(Landroid/view/View;III)V
-
-    .line 24
-    iget-object v2, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    invoke-virtual {v2}, Ldefpackage/iy;->z()V
-
-    .line 25
-    iget-object v2, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    invoke-virtual {v2}, Ldefpackage/iy;->G()Z
-
-    move-result v2
-
-    const/high16 v3, 0x3f800000    # 1.0f
+    .line 57
+    .local v1, "i2":I
+    iget-object v2, v0, Ljiy;->c:Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;
 
     if-nez v2, :cond_0
 
-    .line 26
-    iget-object v2, p0, Ldefpackage/im;->a:Ldefpackage/iy;
+    .line 58
+    iget-object v2, v0, Ljiy;->d:Landroid/view/ViewStub;
 
-    iget-object v2, v2, Ldefpackage/iy;->m:Landroid/support/v7/widget/ActionBarContextView;
-
-    invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->setAlpha(F)V
-
-    .line 27
-    iget-object v2, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    iget-object v2, v2, Ldefpackage/iy;->m:Landroid/support/v7/widget/ActionBarContextView;
-
-    invoke-virtual {v2, v1}, Ldefpackage/lu;->setVisibility(I)V
-
-    .line 28
-    return-void
-
-    .line 30
-    :cond_0
-    iget-object v1, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    iget-object v1, v1, Ldefpackage/iy;->m:Landroid/support/v7/widget/ActionBarContextView;
-
-    sget v2, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setAlpha(F)V
-
-    .line 31
-    iget-object v1, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    .line 32
-    .local v1, "iyVar2":Ldefpackage/iy;
-    iget-object v2, v1, Ldefpackage/iy;->m:Landroid/support/v7/widget/ActionBarContextView;
-
-    invoke-static {v2}, Ldefpackage/gl;->p(Landroid/view/View;)Ldefpackage/go;
+    invoke-virtual {v2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
 
     move-result-object v2
 
-    .line 33
-    .local v2, "p":Ldefpackage/go;
-    invoke-virtual {v2, v3}, Ldefpackage/go;->b(F)V
+    check-cast v2, Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;
 
-    .line 34
-    iput-object v2, v1, Ldefpackage/iy;->p:Ldefpackage/go;
+    iput-object v2, v0, Ljiy;->c:Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;
 
-    .line 35
-    iget-object v3, p0, Ldefpackage/im;->a:Ldefpackage/iy;
+    .line 59
+    new-instance v3, Ljit;
 
-    iget-object v3, v3, Ldefpackage/iy;->p:Ldefpackage/go;
+    invoke-direct {v3, v2}, Ljit;-><init>(Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;)V
 
-    new-instance v4, Ldefpackage/il;
+    iput-object v3, v0, Ljiy;->f:Ljit;
 
-    invoke-direct {v4, p0}, Ldefpackage/il;-><init>(Ldefpackage/im;)V
+    .line 61
+    :cond_0
+    iget-object v2, v0, Ljiy;->e:Lelw;
 
-    invoke-virtual {v3, v4}, Ldefpackage/go;->d(Ldefpackage/gp;)V
+    iget-object v3, v0, Ljiy;->f:Ljit;
 
-    .line 36
-    return-void
+    invoke-interface {v2, v3}, Lelw;->d(Lelv;)Llie;
 
-    .line 42
-    .end local v1    # "iyVar2":Ldefpackage/iy;
-    .end local v2    # "p":Ldefpackage/go;
-    .local v0, "iyVar3":Ldefpackage/iy;
+    .line 62
+    iget-object v2, v0, Ljiy;->a:Landroid/content/Context;
+
+    iget-object v3, v0, Ljiy;->j:Landroid/content/BroadcastReceiver;
+
+    new-instance v4, Landroid/content/IntentFilter;
+
+    const-string v5, "android.intent.action.BATTERY_CHANGED"
+
+    invoke-direct {v4, v5}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    move-result-object v2
+
+    iput-object v2, v0, Ljiy;->g:Landroid/content/Intent;
+
+    .line 63
+    const/4 v2, 0x1
+
+    iput-boolean v2, v0, Ljiy;->h:Z
+
+    .line 64
+    iget-object v2, v0, Ljiy;->e:Lelw;
+
+    sget-object v3, Lelx;->SMARTS:Lelx;
+
+    invoke-interface {v2, v3}, Lelw;->j(Lelx;)V
+
+    .line 65
+    iget-object v2, v0, Ljiy;->c:Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;
+
+    .line 66
+    .local v2, "remoteControlView":Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;
+    if-ltz v1, :cond_1
+
+    .line 67
+    iget-object v3, v2, Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;->a:Landroid/widget/TextView;
+
+    .line 68
+    .local v3, "textView":Landroid/widget/TextView;
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const/16 v5, 0xc
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 69
+    .local v4, "sb":Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 70
+    const-string v5, "%"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 71
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 72
+    .end local v3    # "textView":Landroid/widget/TextView;
+    .end local v4    # "sb":Ljava/lang/StringBuilder;
+    goto :goto_0
+
+    .line 73
     :cond_1
+    iget-object v3, v2, Lcom/google/android/apps/camera/ui/remotecontrol/RemoteControlView;->a:Landroid/widget/TextView;
+
+    const-string v4, "--"
+
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 75
     :goto_0
-    iget-object v2, p0, Ldefpackage/im;->a:Ldefpackage/iy;
+    iget-object v3, v0, Ljiy;->g:Landroid/content/Intent;
 
-    .line 43
-    .local v2, "iyVar4":Ldefpackage/iy;
-    iget v3, v2, Ldefpackage/iy;->F:I
-
-    and-int/lit16 v3, v3, 0x1000
-
+    .line 76
+    .local v3, "intent":Landroid/content/Intent;
     if-eqz v3, :cond_2
 
-    .line 44
-    const/16 v3, 0x6c
+    .line 77
+    invoke-virtual {v0, v3}, Ljiy;->a(Landroid/content/Intent;)V
 
-    invoke-virtual {v2, v3}, Ldefpackage/iy;->y(I)V
+    .line 78
+    const/4 v4, 0x0
 
-    .line 46
+    iput-object v4, v0, Ljiy;->g:Landroid/content/Intent;
+
+    .line 80
     :cond_2
-    iget-object v3, p0, Ldefpackage/im;->a:Ldefpackage/iy;
-
-    .line 47
-    .local v3, "iyVar5":Ldefpackage/iy;
-    iput-boolean v1, v3, Ldefpackage/iy;->E:Z
-
-    .line 48
-    iput v1, v3, Ldefpackage/iy;->F:I
-
-    .line 49
     return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

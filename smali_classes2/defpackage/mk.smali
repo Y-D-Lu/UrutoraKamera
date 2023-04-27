@@ -1,90 +1,49 @@
-.class public final Ldefpackage/mk;
-.super Ldefpackage/pa;
+.class public Ldefpackage/Mk;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lite;->j(Lmad;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public a:Z
-    .annotation runtime Landroid/view/ViewDebug$ExportedProperty;
-    .end annotation
-.end field
-
-.field public b:I
-    .annotation runtime Landroid/view/ViewDebug$ExportedProperty;
-    .end annotation
-.end field
-
-.field public c:I
-    .annotation runtime Landroid/view/ViewDebug$ExportedProperty;
-    .end annotation
-.end field
-
-.field public d:Z
-    .annotation runtime Landroid/view/ViewDebug$ExportedProperty;
-    .end annotation
-.end field
-
-.field public e:Z
-    .annotation runtime Landroid/view/ViewDebug$ExportedProperty;
-    .end annotation
-.end field
-
-.field public f:Z
+.field public final synthetic this$0:Lite;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lite;)V
+    .locals 0
+    .param p1, "this$0"    # Lite;
+
+    .line 54
+    iput-object p1, p0, Ldefpackage/Mk;->this$0:Lite;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
     .locals 1
 
-    .line 24
-    const/4 v0, -0x2
+    .line 57
+    iget-object v0, p0, Ldefpackage/Mk;->this$0:Lite;
 
-    invoke-direct {p0, v0}, Ldefpackage/pa;-><init>(I)V
+    invoke-virtual {v0}, Lite;->h()V
 
-    .line 25
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Ldefpackage/mk;->a:Z
-
-    .line 26
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 0
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
-
-    .line 29
-    invoke-direct {p0, p1, p2}, Ldefpackage/pa;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    .line 30
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 0
-    .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
-
-    .line 33
-    invoke-direct {p0, p1}, Ldefpackage/pa;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 34
-    return-void
-.end method
-
-.method public constructor <init>(Ldefpackage/mk;)V
-    .locals 1
-    .param p1, "mkVar"    # Ldefpackage/mk;
-
-    .line 37
-    invoke-direct {p0, p1}, Ldefpackage/pa;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 38
-    iget-boolean v0, p1, Ldefpackage/mk;->a:Z
-
-    iput-boolean v0, p0, Ldefpackage/mk;->a:Z
-
-    .line 39
+    .line 58
     return-void
 .end method

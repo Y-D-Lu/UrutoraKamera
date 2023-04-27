@@ -1,76 +1,63 @@
-.class public final Ldefpackage/vw;
-.super Ldefpackage/qlu;
+.class public Ldefpackage/Vw;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation runtime Ldefpackage/qlw;
-    b = "androidx.camera.camera2.pipe.compat.VirtualCameraManager"
-    c = "VirtualCameraManager.kt"
-    d = "readRequestQueue"
-    e = {
-        0xc4,
-        0xca
-    }
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmzq;->c(Landroid/app/Activity;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
 .end annotation
 
 
 # instance fields
-.field public a:Ljava/lang/Object;
+.field public final synthetic this$0:Lmzq;
 
-.field public b:Ljava/lang/Object;
-
-.field public c:Ljava/lang/Object;
-
-.field public d:Ljava/lang/Object;
-
-.field public final e:Ldefpackage/wa;
-
-.field public f:I
+.field public final synthetic val$simpleName:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/wa;Ldefpackage/qlh;)V
+.method public constructor <init>(Lmzq;Ljava/lang/String;)V
     .locals 0
-    .param p1, "waVar"    # Ldefpackage/wa;
-    .param p2, "qlhVar"    # Ldefpackage/qlh;
+    .param p1, "this$0"    # Lmzq;
 
-    .line 17
-    invoke-direct {p0, p2}, Ldefpackage/qlu;-><init>(Ldefpackage/qlh;)V
+    .line 24
+    iput-object p1, p0, Ldefpackage/Vw;->this$0:Lmzq;
 
-    .line 18
-    iput-object p1, p0, Ldefpackage/vw;->e:Ldefpackage/wa;
+    iput-object p2, p0, Ldefpackage/Vw;->val$simpleName:Ljava/lang/String;
 
-    .line 19
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-    .param p1, "obj"    # Ljava/lang/Object;
+.method public final run()V
+    .locals 4
 
-    .line 23
-    iput-object p1, p0, Ldefpackage/vw;->d:Ljava/lang/Object;
+    .line 27
+    iget-object v0, p0, Ldefpackage/Vw;->this$0:Lmzq;
 
-    .line 24
-    iget v0, p0, Ldefpackage/vw;->f:I
+    .line 28
+    .local v0, "mzqVar":Lmzq;
+    iget-object v1, v0, Lmzq;->b:Lmzu;
 
-    const/high16 v1, -0x80000000
+    iget-object v1, v1, Lmzu;->a:Lmzt;
 
-    or-int/2addr v0, v1
+    iget-object v2, p0, Ldefpackage/Vw;->val$simpleName:Ljava/lang/String;
 
-    iput v0, p0, Ldefpackage/vw;->f:I
+    const/4 v3, 0x5
 
-    .line 25
-    iget-object v0, p0, Ldefpackage/vw;->e:Ldefpackage/wa;
+    invoke-interface {v1, v3, v2}, Lmzt;->a(ILjava/lang/String;)V
 
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1, p0}, Ldefpackage/wa;->a(Ljava/util/List;Ldefpackage/qlh;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
+    .line 29
+    return-void
 .end method

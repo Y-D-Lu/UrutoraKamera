@@ -1,5 +1,5 @@
 .class public Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
-.super Ldefpackage/mw;
+.super Lmw;
 .source ""
 
 
@@ -10,15 +10,15 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 16
-    invoke-direct {p0, p1, p2}, Ldefpackage/mw;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lmw;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 17
     const v0, 0x7f080073
 
-    invoke-virtual {p0, v0}, Ldefpackage/mw;->setBackgroundResource(I)V
+    invoke-virtual {p0, v0}, Lmw;->setBackgroundResource(I)V
 
     .line 18
-    invoke-static {p0}, Ldefpackage/mip;->dN(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dN(Landroid/view/View;)I
 
     move-result v0
 
@@ -105,7 +105,7 @@
     .line 33
     const v0, 0x7f080074
 
-    invoke-virtual {p0, v0}, Ldefpackage/mw;->setBackgroundResource(I)V
+    invoke-virtual {p0, v0}, Lmw;->setBackgroundResource(I)V
 
     .line 34
     const/4 v0, -0x1

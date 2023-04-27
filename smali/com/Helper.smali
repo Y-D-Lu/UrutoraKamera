@@ -60,7 +60,7 @@
 
 .field public static sJPGQuality:I
 
-.field public static sMode:Ldefpackage/jrl;
+.field public static sMode:Ljrl;
 
 .field public static sModeExperimental:I
 
@@ -76,7 +76,7 @@
 
 .field public static sModeTIME_LAPSE:I
 
-.field public static sModeTo:Ldefpackage/jrl;
+.field public static sModeTo:Ljrl;
 
 .field public static sModeUninitialized:I
 
@@ -188,14 +188,14 @@
     return-void
 .end method
 
-.method public static GetLens(Ldefpackage/lvp;)V
+.method public static GetLens(Llvp;)V
     .locals 3
-    .param p0, "lvpVar"    # Ldefpackage/lvp;
+    .param p0, "lvpVar"    # Llvp;
 
     .line 117
     sget-object v0, Landroid/hardware/camera2/CameraCharacteristics;->SENSOR_INFO_SENSITIVITY_RANGE:Landroid/hardware/camera2/CameraCharacteristics$Key;
 
-    invoke-interface {p0, v0}, Ldefpackage/lvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Llvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -216,7 +216,7 @@
     :try_start_0
     sget-object v1, Landroid/hardware/camera2/CameraCharacteristics;->SENSOR_MAX_ANALOG_SENSITIVITY:Landroid/hardware/camera2/CameraCharacteristics$Key;
 
-    invoke-interface {p0, v1}, Ldefpackage/lvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-interface {p0, v1}, Llvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -255,7 +255,7 @@
     .line 124
     sget-object v2, Landroid/hardware/camera2/CameraCharacteristics;->LENS_FACING:Landroid/hardware/camera2/CameraCharacteristics$Key;
 
-    invoke-interface {p0, v2}, Ldefpackage/lvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-interface {p0, v2}, Llvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -486,9 +486,9 @@
     return-void
 .end method
 
-.method public static IsMode(Ldefpackage/jrl;)V
+.method public static IsMode(Ljrl;)V
     .locals 2
-    .param p0, "r1"    # Ldefpackage/jrl;
+    .param p0, "r1"    # Ljrl;
 
     .line 245
     new-instance v0, Ljava/lang/UnsupportedOperationException;
@@ -2092,9 +2092,9 @@
     return-object v1
 .end method
 
-.method public static getBlackLevel(Ldefpackage/lvp;)[F
+.method public static getBlackLevel(Llvp;)[F
     .locals 2
-    .param p0, "r5"    # Ldefpackage/lvp;
+    .param p0, "r5"    # Llvp;
 
     .line 795
     new-instance v0, Ljava/lang/UnsupportedOperationException;
@@ -2542,11 +2542,11 @@
     if-eqz v2, :cond_0
 
     .line 900
-    sget-object v2, Ldefpackage/pkr;->k:Ldefpackage/lvp;
+    sget-object v2, Lpkr;->k:Llvp;
 
     sget-object v4, Landroid/hardware/camera2/CameraCharacteristics;->LENS_INFO_MINIMUM_FOCUS_DISTANCE:Landroid/hardware/camera2/CameraCharacteristics$Key;
 
-    invoke-interface {v2, v4}, Ldefpackage/lvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-interface {v2, v4}, Llvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -2633,11 +2633,11 @@
     if-eqz v4, :cond_3
 
     .line 914
-    sget-object v3, Ldefpackage/pkr;->k:Ldefpackage/lvp;
+    sget-object v3, Lpkr;->k:Llvp;
 
     sget-object v4, Landroid/hardware/camera2/CameraCharacteristics;->LENS_INFO_HYPERFOCAL_DISTANCE:Landroid/hardware/camera2/CameraCharacteristics$Key;
 
-    invoke-interface {v3, v4}, Ldefpackage/lvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-interface {v3, v4}, Llvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
 
     move-result-object v3
 

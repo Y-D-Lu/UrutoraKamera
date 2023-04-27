@@ -1,9 +1,9 @@
 .class final Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;
-.super Ldefpackage/qmb;
+.super Lqmb;
 .source ""
 
 # interfaces
-.implements Ldefpackage/qmy;
+.implements Lqmy;
 
 
 # annotations
@@ -13,7 +13,7 @@
     }
 .end annotation
 
-.annotation runtime Ldefpackage/qlw;
+.annotation runtime Lqlw;
     b = "androidx.window.layout.WindowInfoRepositoryImpl$windowLayoutInfo$1"
     c = "WindowInfoRepositoryImpl.kt"
     d = "invokeSuspend"
@@ -37,15 +37,15 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Ldefpackage/qlh;)V
+.method public constructor <init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Lqlh;)V
     .locals 1
     .param p1, "windowInfoRepositoryImpl"    # Landroidx/window/layout/WindowInfoRepositoryImpl;
-    .param p2, "qlhVar"    # Ldefpackage/qlh;
+    .param p2, "qlhVar"    # Lqlh;
 
     .line 42
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0, p2}, Ldefpackage/qmb;-><init>(ILdefpackage/qlh;)V
+    invoke-direct {p0, v0, p2}, Lqmb;-><init>(ILqlh;)V
 
     .line 43
     iput-object p1, p0, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;->this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
@@ -56,17 +56,17 @@
 
 
 # virtual methods
-.method public final create(Ljava/lang/Object;Ldefpackage/qlh;)Ldefpackage/qlh;
+.method public final create(Ljava/lang/Object;Lqlh;)Lqlh;
     .locals 2
     .param p1, "obj"    # Ljava/lang/Object;
-    .param p2, "qlhVar"    # Ldefpackage/qlh;
+    .param p2, "qlhVar"    # Lqlh;
 
     .line 48
     new-instance v0, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;
 
     iget-object v1, p0, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;->this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
 
-    invoke-direct {v0, v1, p2}, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Ldefpackage/qlh;)V
+    invoke-direct {v0, v1, p2}, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Lqlh;)V
 
     .line 49
     .local v0, "windowInfoRepositoryImpl$windowLayoutInfo$1":Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;
@@ -84,15 +84,15 @@
     .line 24
     move-object v0, p2
 
-    check-cast v0, Ldefpackage/qlh;
+    check-cast v0, Lqlh;
 
-    invoke-virtual {p0, p1, v0}, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;->create(Ljava/lang/Object;Ldefpackage/qlh;)Ldefpackage/qlh;
+    invoke-virtual {p0, p1, v0}, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;->create(Ljava/lang/Object;Lqlh;)Lqlh;
 
     move-result-object v0
 
     check-cast v0, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;
 
-    sget-object v1, Ldefpackage/qks;->a:Ldefpackage/qks;
+    sget-object v1, Lqks;->a:Lqks;
 
     invoke-virtual {v0, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl$windowLayoutInfo$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 

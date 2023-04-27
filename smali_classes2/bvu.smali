@@ -1,0 +1,237 @@
+.class public final Lbvu;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final a:Ljava/util/concurrent/Executor;
+
+.field public b:Lljf;
+
+.field public c:Llis;
+
+.field public d:Llbl;
+
+.field private final e:Lpih;
+
+.field private f:Lpht;
+
+
+# direct methods
+.method private constructor <init>(Ljava/util/concurrent/Executor;)V
+    .locals 1
+    .param p1, "executor"    # Ljava/util/concurrent/Executor;
+
+    .line 15
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 9
+    new-instance v0, Lljd;
+
+    invoke-direct {v0}, Lljd;-><init>()V
+
+    iput-object v0, p0, Lbvu;->b:Lljf;
+
+    .line 10
+    new-instance v0, Lliw;
+
+    invoke-direct {v0}, Lliw;-><init>()V
+
+    iput-object v0, p0, Lbvu;->c:Llis;
+
+    .line 16
+    iput-object p1, p0, Lbvu;->a:Ljava/util/concurrent/Executor;
+
+    .line 17
+    invoke-static {}, Lpih;->f()Lpih;
+
+    move-result-object v0
+
+    .line 18
+    .local v0, "f":Lpih;
+    iput-object v0, p0, Lbvu;->e:Lpih;
+
+    .line 19
+    iput-object v0, p0, Lbvu;->f:Lpht;
+
+    .line 20
+    return-void
+.end method
+
+.method public static a(Ljava/util/concurrent/Executor;)Lbvu;
+    .locals 1
+    .param p0, "executor"    # Ljava/util/concurrent/Executor;
+
+    .line 23
+    new-instance v0, Lbvu;
+
+    invoke-direct {v0, p0}, Lbvu;-><init>(Ljava/util/concurrent/Executor;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final b()Lpht;
+    .locals 4
+
+    .line 27
+    const/4 v0, 0x0
+
+    .line 28
+    .local v0, "z":Z
+    iget-object v1, p0, Lbvu;->e:Lpih;
+
+    invoke-virtual {v1}, Lpfx;->isDone()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    iget-object v1, p0, Lbvu;->e:Lpih;
+
+    invoke-virtual {v1}, Lpfx;->isCancelled()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 29
+    const/4 v0, 0x1
+
+    .line 31
+    :cond_0
+    invoke-static {v0}, Lobr;->aQ(Z)V
+
+    .line 32
+    iget-object v1, p0, Lbvu;->d:Llbl;
+
+    if-nez v1, :cond_1
+
+    iget-object v1, p0, Lbvu;->c:Llis;
+
+    if-eqz v1, :cond_2
+
+    .line 33
+    :cond_1
+    iget-object v1, p0, Lbvu;->f:Lpht;
+
+    new-instance v2, Lbvt;
+
+    invoke-direct {v2, p0}, Lbvt;-><init>(Lbvu;)V
+
+    sget-object v3, Lpgr;->a:Lpgr;
+
+    invoke-static {v1, v2, v3}, Lplk;->af(Lpht;Lphh;Ljava/util/concurrent/Executor;)V
+
+    .line 35
+    :cond_2
+    iget-object v1, p0, Lbvu;->e:Lpih;
+
+    const/4 v2, 0x1
+
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lpih;->o(Ljava/lang/Object;)Z
+
+    .line 36
+    iget-object v1, p0, Lbvu;->f:Lpht;
+
+    return-object v1
+.end method
+
+.method public final c(Lqkg;Ljava/lang/String;)V
+    .locals 4
+    .param p1, "qkgVar"    # Lqkg;
+    .param p2, "str"    # Ljava/lang/String;
+
+    .line 40
+    iget-object v0, p0, Lbvu;->c:Llis;
+
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const-string v2, "Futures.transform: "
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v2, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v1, Ljava/lang/String;
+
+    invoke-direct {v1, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_0
+    invoke-interface {v0, v1}, Llis;->b(Ljava/lang/String;)V
+
+    .line 41
+    iget-object v0, p0, Lbvu;->f:Lpht;
+
+    new-instance v1, Ldefpackage/K0;
+
+    invoke-direct {v1, p0, p2, p1}, Ldefpackage/K0;-><init>(Lbvu;Ljava/lang/String;Lqkg;)V
+
+    iget-object v2, p0, Lbvu;->a:Ljava/util/concurrent/Executor;
+
+    invoke-static {v0, v1, v2}, Lpgb;->i(Lpht;Lpgk;Ljava/util/concurrent/Executor;)Lpht;
+
+    move-result-object v0
+
+    .line 59
+    .local v0, "i":Lpht;
+    iput-object v0, p0, Lbvu;->f:Lpht;
+
+    .line 60
+    iget-object v1, p0, Lbvu;->c:Llis;
+
+    .line 61
+    .local v1, "lisVar":Llis;
+    if-eqz v1, :cond_1
+
+    .line 62
+    const-string v2, " complete."
+
+    invoke-virtual {p2, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, " failed!"
+
+    invoke-virtual {p2, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v1, v0, v2, v3}, Ldgg;->c(Llis;Lpht;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 64
+    :cond_1
+    return-void
+.end method
+
+.method public final d(Lqkg;Ljava/lang/String;)V
+    .locals 3
+    .param p1, "qkgVar"    # Lqkg;
+    .param p2, "str"    # Ljava/lang/String;
+
+    .line 67
+    iget-object v0, p0, Lbvu;->f:Lpht;
+
+    new-instance v1, Lbvs;
+
+    invoke-direct {v1, p0, p2, p1}, Lbvs;-><init>(Lbvu;Ljava/lang/String;Lqkg;)V
+
+    iget-object v2, p0, Lbvu;->a:Ljava/util/concurrent/Executor;
+
+    invoke-static {v0, v1, v2}, Lplk;->af(Lpht;Lphh;Ljava/util/concurrent/Executor;)V
+
+    .line 68
+    return-void
+.end method

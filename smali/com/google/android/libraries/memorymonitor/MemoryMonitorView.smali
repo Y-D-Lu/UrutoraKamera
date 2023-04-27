@@ -18,9 +18,9 @@
 
 .field public final e:F
 
-.field public final f:Ldefpackage/mit;
+.field public final f:Lmit;
 
-.field public volatile g:Ldefpackage/mis;
+.field public volatile g:Lmis;
 
 .field private i:Landroid/content/res/Resources;
 
@@ -42,7 +42,7 @@
 
 .field private final r:Landroid/view/GestureDetector;
 
-.field private final s:Ldefpackage/miv;
+.field private final s:Lmiv;
 
 
 # direct methods
@@ -87,27 +87,27 @@
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 51
-    new-instance v0, Ldefpackage/mit;
+    new-instance v0, Lmit;
 
-    invoke-direct {v0}, Ldefpackage/mit;-><init>()V
+    invoke-direct {v0}, Lmit;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->f:Ldefpackage/mit;
+    iput-object v0, p0, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->f:Lmit;
 
     .line 52
-    new-instance v0, Ldefpackage/mis;
+    new-instance v0, Lmis;
 
-    invoke-direct {v0}, Ldefpackage/mis;-><init>()V
+    invoke-direct {v0}, Lmis;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->g:Ldefpackage/mis;
+    iput-object v0, p0, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->g:Lmis;
 
     .line 53
-    new-instance v0, Ldefpackage/miv;
+    new-instance v0, Lmiv;
 
-    invoke-direct {v0, p0}, Ldefpackage/miv;-><init>(Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;)V
+    invoke-direct {v0, p0}, Lmiv;-><init>(Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;)V
 
     .line 54
-    .local v0, "mivVar":Ldefpackage/miv;
-    iput-object v0, p0, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->s:Ldefpackage/miv;
+    .local v0, "mivVar":Lmiv;
+    iput-object v0, p0, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->s:Lmiv;
 
     .line 55
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -644,13 +644,13 @@
     invoke-virtual {v8, v10, v11, v11, v0}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
     .line 124
-    iget-object v12, v7, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->g:Ldefpackage/mis;
+    iget-object v12, v7, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->g:Lmis;
 
     .line 125
-    .local v12, "misVar":Ldefpackage/mis;
-    iget-object v0, v7, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->f:Ldefpackage/mit;
+    .local v12, "misVar":Lmis;
+    iget-object v0, v7, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->f:Lmit;
 
-    iget-wide v13, v0, Ldefpackage/mit;->c:J
+    iget-wide v13, v0, Lmit;->c:J
 
     .line 126
     .local v13, "j":J
@@ -969,19 +969,19 @@
     if-ne v1, v2, :cond_3
 
     .line 165
-    iget-object v1, v0, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->s:Ldefpackage/miv;
+    iget-object v1, v0, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->s:Lmiv;
 
     .line 166
-    .local v1, "mivVar":Ldefpackage/miv;
+    .local v1, "mivVar":Lmiv;
     const/4 v3, 0x0
 
     .line 167
     .local v3, "i":I
-    iget v4, v1, Ldefpackage/miv;->b:F
+    iget v4, v1, Lmiv;->b:F
 
     .line 168
     .local v4, "f":F
-    iget v5, v1, Ldefpackage/miv;->a:F
+    iget v5, v1, Lmiv;->a:F
 
     cmpl-float v5, v4, v5
 
@@ -1004,7 +1004,7 @@
 
     aput-object v7, v5, v6
 
-    iget v6, v1, Ldefpackage/miv;->b:F
+    iget v6, v1, Lmiv;->b:F
 
     sget v7, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->a:F
 
@@ -1018,28 +1018,28 @@
 
     const-string v2, "Inflating heap utilization to %.2f%% (%.2f MB)"
 
-    invoke-virtual {v1, v2, v5}, Ldefpackage/miv;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v1, v2, v5}, Lmiv;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 170
-    iget-object v2, v1, Ldefpackage/miv;->c:Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
+    iget-object v2, v1, Lmiv;->c:Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
 
-    iget-object v2, v2, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->f:Ldefpackage/mit;
+    iget-object v2, v2, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->f:Lmit;
 
     .line 171
-    .local v2, "mitVar":Ldefpackage/mit;
-    iget-wide v5, v2, Ldefpackage/mit;->c:J
+    .local v2, "mitVar":Lmit;
+    iget-wide v5, v2, Lmit;->c:J
 
     long-to-float v5, v5
 
-    iget v6, v1, Ldefpackage/miv;->b:F
+    iget v6, v1, Lmiv;->b:F
 
-    invoke-static {}, Ldefpackage/mit;->a()F
+    invoke-static {}, Lmit;->a()F
 
     move-result v7
 
     sub-float/2addr v6, v7
 
-    iget-wide v7, v2, Ldefpackage/mit;->a:J
+    iget-wide v7, v2, Lmit;->a:J
 
     long-to-float v7, v7
 
@@ -1052,13 +1052,13 @@
     .line 172
     .local v7, "a2":J
     :goto_0
-    iget-wide v5, v2, Ldefpackage/mit;->c:J
+    iget-wide v5, v2, Lmit;->c:J
 
     cmp-long v5, v5, v7
 
     if-lez v5, :cond_0
 
-    iget-object v5, v2, Ldefpackage/mit;->b:Ljava/util/Stack;
+    iget-object v5, v2, Lmit;->b:Ljava/util/Stack;
 
     invoke-virtual {v5}, Ljava/util/Stack;->isEmpty()Z
 
@@ -1067,9 +1067,9 @@
     if-nez v5, :cond_0
 
     .line 173
-    iget-wide v5, v2, Ldefpackage/mit;->c:J
+    iget-wide v5, v2, Lmit;->c:J
 
-    iget-object v9, v2, Ldefpackage/mit;->b:Ljava/util/Stack;
+    iget-object v9, v2, Lmit;->b:Ljava/util/Stack;
 
     invoke-virtual {v9}, Ljava/util/Stack;->pop()Ljava/lang/Object;
 
@@ -1083,14 +1083,14 @@
 
     sub-long/2addr v5, v9
 
-    iput-wide v5, v2, Ldefpackage/mit;->c:J
+    iput-wide v5, v2, Lmit;->c:J
 
     goto :goto_0
 
     .line 176
     :cond_0
     :goto_1
-    iget-wide v5, v2, Ldefpackage/mit;->c:J
+    iget-wide v5, v2, Lmit;->c:J
 
     .line 177
     .local v5, "j":J
@@ -1102,13 +1102,13 @@
     nop
 
     .line 184
-    .end local v2    # "mitVar":Ldefpackage/mit;
+    .end local v2    # "mitVar":Lmit;
     .end local v5    # "j":J
     .end local v7    # "a2":J
     goto/16 :goto_2
 
     .line 180
-    .restart local v2    # "mitVar":Ldefpackage/mit;
+    .restart local v2    # "mitVar":Lmit;
     .restart local v5    # "j":J
     .restart local v7    # "a2":J
     :cond_1
@@ -1124,20 +1124,20 @@
 
     .line 181
     .local v9, "min":I
-    iget-object v10, v2, Ldefpackage/mit;->b:Ljava/util/Stack;
+    iget-object v10, v2, Lmit;->b:Ljava/util/Stack;
 
     new-array v11, v9, [B
 
     invoke-virtual {v10, v11}, Ljava/util/Stack;->push(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 182
-    iget-wide v10, v2, Ldefpackage/mit;->c:J
+    iget-wide v10, v2, Lmit;->c:J
 
     int-to-long v12, v9
 
     add-long/2addr v10, v12
 
-    iput-wide v10, v2, Ldefpackage/mit;->c:J
+    iput-wide v10, v2, Lmit;->c:J
 
     .line 183
     .end local v5    # "j":J
@@ -1145,15 +1145,15 @@
     goto :goto_1
 
     .line 185
-    .end local v2    # "mitVar":Ldefpackage/mit;
+    .end local v2    # "mitVar":Lmit;
     .end local v7    # "a2":J
     :cond_2
-    iget-object v2, v1, Ldefpackage/miv;->c:Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
+    iget-object v2, v1, Lmiv;->c:Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
 
-    iget-object v2, v2, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->g:Ldefpackage/mis;
+    iget-object v2, v2, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->g:Lmis;
 
     .line 186
-    .local v2, "misVar":Ldefpackage/mis;
+    .local v2, "misVar":Lmis;
     invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const-wide/16 v7, 0x0
@@ -1180,7 +1180,7 @@
 
     .line 190
     .local v9, "b2":J
-    iget-object v5, v1, Ldefpackage/miv;->c:Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
+    iget-object v5, v1, Lmiv;->c:Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
 
     move-wide/from16 v16, v7
 
@@ -1196,7 +1196,7 @@
 
     .line 191
     .local v5, "b3":J
-    iget-object v7, v1, Ldefpackage/miv;->c:Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
+    iget-object v7, v1, Lmiv;->c:Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
 
     .line 192
     .local v7, "memoryMonitorView":Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
@@ -1204,10 +1204,10 @@
 
     move v8, v3
 
-    .end local v2    # "misVar":Ldefpackage/mis;
+    .end local v2    # "misVar":Lmis;
     .end local v3    # "i":I
     .local v8, "i":I
-    .local v18, "misVar":Ldefpackage/mis;
+    .local v18, "misVar":Lmis;
     iget-wide v2, v7, Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;->b:J
 
     .line 193
@@ -1291,10 +1291,10 @@
     .local v22, "j4":J
     new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-virtual {v1, v15, v2}, Ldefpackage/miv;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v1, v15, v2}, Lmiv;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 209
-    .end local v1    # "mivVar":Ldefpackage/miv;
+    .end local v1    # "mivVar":Lmiv;
     .end local v4    # "sb":Ljava/lang/StringBuilder;
     .end local v5    # "b3":J
     .end local v7    # "memoryMonitorView":Lcom/google/android/libraries/memorymonitor/MemoryMonitorView;
@@ -1303,7 +1303,7 @@
     .end local v11    # "b":J
     .end local v13    # "j5":J
     .end local v16    # "j2":J
-    .end local v18    # "misVar":Ldefpackage/mis;
+    .end local v18    # "misVar":Lmis;
     .end local v19    # "j3":J
     .end local v21    # "f":F
     .end local v22    # "j4":J

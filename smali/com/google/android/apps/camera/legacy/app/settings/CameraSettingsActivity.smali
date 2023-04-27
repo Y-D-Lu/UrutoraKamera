@@ -1,12 +1,12 @@
 .class public Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;
-.super Ldefpackage/etd;
+.super Letd;
 .source ""
 
 
 # static fields
 .field public static isrestart:Z
 
-.field public static final o:Ldefpackage/ouj;
+.field public static final o:Louj;
 
 .field public static p:Z
 
@@ -14,13 +14,13 @@
 
 
 # instance fields
-.field public r:Ldefpackage/ddf;
+.field public r:Lddf;
 
-.field public s:Ldefpackage/lzi;
+.field public s:Llzi;
 
 .field private final v:Ljava/lang/Object;
 
-.field private w:Ldefpackage/fcb;
+.field private w:Lfcb;
 
 .field private x:Z
 
@@ -32,11 +32,11 @@
     .line 50
     const-string v0, "com/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->o:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->o:Louj;
 
     .line 51
     const/4 v0, 0x0
@@ -50,7 +50,7 @@
     .locals 1
 
     .line 42
-    invoke-direct {p0}, Ldefpackage/etd;-><init>()V
+    invoke-direct {p0}, Letd;-><init>()V
 
     .line 47
     new-instance v0, Ljava/lang/Object;
@@ -62,9 +62,9 @@
     return-void
 .end method
 
-.method public static n(Ldefpackage/fjs;Landroid/preference/Preference;)V
+.method public static n(Lfjs;Landroid/preference/Preference;)V
     .locals 3
-    .param p0, "fjsVar"    # Ldefpackage/fjs;
+    .param p0, "fjsVar"    # Lfjs;
     .param p1, "preference"    # Landroid/preference/Preference;
 
     .line 55
@@ -111,7 +111,7 @@
 
     move-result-object v2
 
-    invoke-static {p0, v2}, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->n(Ldefpackage/fjs;Landroid/preference/Preference;)V
+    invoke-static {p0, v2}, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->n(Lfjs;Landroid/preference/Preference;)V
 
     .line 60
     add-int/lit8 v1, v1, 0x1
@@ -177,7 +177,7 @@
     :goto_1
     new-instance v1, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity$1;
 
-    invoke-direct {v1, p0, v0}, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity$1;-><init>(Ldefpackage/fjs;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, v0}, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity$1;-><init>(Lfjs;Ljava/lang/Object;)V
 
     invoke-virtual {p1, v1}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -206,7 +206,7 @@
 
     .line 84
     .local v0, "applicationContext":Landroid/content/Context;
-    invoke-super {p0}, Ldefpackage/fio;->onBackPressed()V
+    invoke-super {p0}, Lfio;->onBackPressed()V
 
     .line 85
     sget-boolean v1, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->isrestart:Z
@@ -274,104 +274,104 @@
 
     check-cast v2, Lcom/google/android/apps/camera/legacy/app/app/CameraApp;
 
-    invoke-virtual {v2}, Lcom/google/android/apps/camera/legacy/app/app/CameraApp;->d()Ldefpackage/euv;
+    invoke-virtual {v2}, Lcom/google/android/apps/camera/legacy/app/app/CameraApp;->d()Leuv;
 
     move-result-object v2
 
     .line 100
-    .local v2, "d":Ldefpackage/euv;
+    .local v2, "d":Leuv;
     move-object v3, v2
 
-    check-cast v3, Ldefpackage/ewb;
+    check-cast v3, Lewb;
 
-    iget-object v3, v3, Ldefpackage/ewb;->k:Ldefpackage/qkg;
+    iget-object v3, v3, Lewb;->k:Lqkg;
 
-    invoke-interface {v3}, Ldefpackage/qkg;->mo37get()Ljava/lang/Object;
+    invoke-interface {v3}, Lqkg;->mo37get()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/ljf;
+    check-cast v3, Lljf;
 
-    iput-object v3, p0, Ldefpackage/etd;->k:Ldefpackage/ljf;
+    iput-object v3, p0, Letd;->k:Lljf;
 
     .line 101
     move-object v3, v2
 
-    check-cast v3, Ldefpackage/ewb;
+    check-cast v3, Lewb;
 
-    iget-object v3, v3, Ldefpackage/ewb;->B:Ldefpackage/qkg;
+    iget-object v3, v3, Lewb;->B:Lqkg;
 
-    invoke-interface {v3}, Ldefpackage/qkg;->mo37get()Ljava/lang/Object;
+    invoke-interface {v3}, Lqkg;->mo37get()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/bui;
+    check-cast v3, Lbui;
 
-    iput-object v3, p0, Ldefpackage/etd;->n:Ldefpackage/bui;
+    iput-object v3, p0, Letd;->n:Lbui;
 
     .line 102
     move-object v3, v2
 
-    check-cast v3, Ldefpackage/ewb;
+    check-cast v3, Lewb;
 
-    iget-object v3, v3, Ldefpackage/ewb;->b:Ldefpackage/fhp;
+    iget-object v3, v3, Lewb;->b:Lfhp;
 
-    invoke-static {v3}, Ldefpackage/fhq;->b(Ldefpackage/fhp;)Ldefpackage/fhi;
+    invoke-static {v3}, Lfhq;->b(Lfhp;)Lfhi;
 
     move-result-object v3
 
-    iput-object v3, p0, Ldefpackage/etd;->l:Ldefpackage/fhi;
+    iput-object v3, p0, Letd;->l:Lfhi;
 
     .line 103
     move-object v3, v2
 
-    check-cast v3, Ldefpackage/ewb;
+    check-cast v3, Lewb;
 
-    iget-object v3, v3, Ldefpackage/ewb;->i:Ldefpackage/qkg;
+    iget-object v3, v3, Lewb;->i:Lqkg;
 
-    invoke-interface {v3}, Ldefpackage/qkg;->mo37get()Ljava/lang/Object;
+    invoke-interface {v3}, Lqkg;->mo37get()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/ddf;
+    check-cast v3, Lddf;
 
-    iput-object v3, p0, Ldefpackage/etd;->m:Ldefpackage/ddf;
+    iput-object v3, p0, Letd;->m:Lddf;
 
     .line 104
     move-object v3, v2
 
-    check-cast v3, Ldefpackage/ewb;
+    check-cast v3, Lewb;
 
-    iget-object v3, v3, Ldefpackage/ewb;->i:Ldefpackage/qkg;
+    iget-object v3, v3, Lewb;->i:Lqkg;
 
-    invoke-interface {v3}, Ldefpackage/qkg;->mo37get()Ljava/lang/Object;
+    invoke-interface {v3}, Lqkg;->mo37get()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/ddf;
+    check-cast v3, Lddf;
 
-    iput-object v3, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->r:Ldefpackage/ddf;
+    iput-object v3, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->r:Lddf;
 
     .line 105
     move-object v3, v2
 
-    check-cast v3, Ldefpackage/ewb;
+    check-cast v3, Lewb;
 
-    iget-object v3, v3, Ldefpackage/ewb;->e:Ldefpackage/qkg;
+    iget-object v3, v3, Lewb;->e:Lqkg;
 
-    invoke-interface {v3}, Ldefpackage/qkg;->mo37get()Ljava/lang/Object;
+    invoke-interface {v3}, Lqkg;->mo37get()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/lzi;
+    check-cast v3, Llzi;
 
-    iput-object v3, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->s:Ldefpackage/lzi;
+    iput-object v3, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->s:Llzi;
 
     .line 106
     iput-boolean v1, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->x:Z
 
     .line 108
-    .end local v2    # "d":Ldefpackage/euv;
+    .end local v2    # "d":Leuv;
     :cond_0
     monitor-exit v0
 
@@ -389,23 +389,23 @@
     .line 110
     :cond_1
     :goto_0
-    invoke-super {p0, p1}, Ldefpackage/etd;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Letd;->onCreate(Landroid/os/Bundle;)V
 
     .line 111
-    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->r:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->r:Lddf;
 
-    sget-object v2, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v2, Lddl;->ay:Lddg;
 
-    invoke-interface {v0, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v2}, Lddf;->k(Lddg;)Z
 
     move-result v0
 
     sput-boolean v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->p:Z
 
     .line 112
-    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->s:Ldefpackage/lzi;
+    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->s:Llzi;
 
-    invoke-virtual {v0}, Ldefpackage/lzi;->h()Z
+    invoke-virtual {v0}, Llzi;->h()Z
 
     move-result v0
 
@@ -417,12 +417,12 @@
     if-eqz v0, :cond_2
 
     .line 114
-    invoke-static {p0}, Ldefpackage/miq;->a(Landroid/app/Activity;)V
+    invoke-static {p0}, Lmiq;->a(Landroid/app/Activity;)V
 
     .line 115
     const v0, 0x7f0d00c5
 
-    invoke-virtual {p0, v0}, Ldefpackage/ih;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lih;->setContentView(I)V
 
     .line 116
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -441,12 +441,12 @@
     :cond_2
     const v0, 0x7f15036a
 
-    invoke-virtual {p0, v0}, Ldefpackage/ih;->setTheme(I)V
+    invoke-virtual {p0, v0}, Lih;->setTheme(I)V
 
     .line 119
     const v0, 0x7f0d00c6
 
-    invoke-virtual {p0, v0}, Ldefpackage/ih;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lih;->setContentView(I)V
 
     .line 121
     :goto_1
@@ -464,7 +464,7 @@
     .local v0, "stringExtra":Ljava/lang/String;
     const v2, 0x7f0a0243
 
-    invoke-virtual {p0, v2}, Ldefpackage/ih;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lih;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -472,86 +472,86 @@
 
     .line 123
     .local v2, "toolbar":Landroid/support/v7/widget/Toolbar;
-    invoke-virtual {p0}, Ldefpackage/ih;->g()Ldefpackage/ii;
+    invoke-virtual {p0}, Lih;->g()Lii;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/iy;
+    check-cast v3, Liy;
 
     .line 124
-    .local v3, "iyVar":Ldefpackage/iy;
-    iget-object v4, v3, Ldefpackage/iy;->e:Ljava/lang/Object;
+    .local v3, "iyVar":Liy;
+    iget-object v4, v3, Liy;->e:Ljava/lang/Object;
 
     instance-of v4, v4, Landroid/app/Activity;
 
     if-eqz v4, :cond_6
 
     .line 125
-    invoke-virtual {v3}, Ldefpackage/iy;->a()Ldefpackage/hu;
+    invoke-virtual {v3}, Liy;->a()Lhu;
 
     move-result-object v4
 
     .line 126
-    .local v4, "a":Ldefpackage/hu;
-    instance-of v5, v4, Ldefpackage/jp;
+    .local v4, "a":Lhu;
+    instance-of v5, v4, Ljp;
 
     if-nez v5, :cond_5
 
     .line 129
     const/4 v5, 0x0
 
-    iput-object v5, v3, Ldefpackage/iy;->j:Landroid/view/MenuInflater;
+    iput-object v5, v3, Liy;->j:Landroid/view/MenuInflater;
 
     .line 130
     if-eqz v4, :cond_3
 
     .line 131
-    invoke-virtual {v4}, Ldefpackage/hu;->e()V
+    invoke-virtual {v4}, Lhu;->e()V
 
     .line 133
     :cond_3
     if-eqz v2, :cond_4
 
     .line 134
-    new-instance v5, Ldefpackage/jh;
+    new-instance v5, Ljh;
 
-    invoke-virtual {v3}, Ldefpackage/iy;->u()Ljava/lang/CharSequence;
+    invoke-virtual {v3}, Liy;->u()Ljava/lang/CharSequence;
 
     move-result-object v6
 
-    iget-object v7, v3, Ldefpackage/iy;->h:Ldefpackage/iq;
+    iget-object v7, v3, Liy;->h:Liq;
 
-    invoke-direct {v5, v2, v6, v7}, Ldefpackage/jh;-><init>(Landroid/support/v7/widget/Toolbar;Ljava/lang/CharSequence;Landroid/view/Window$Callback;)V
+    invoke-direct {v5, v2, v6, v7}, Ljh;-><init>(Landroid/support/v7/widget/Toolbar;Ljava/lang/CharSequence;Landroid/view/Window$Callback;)V
 
     .line 135
-    .local v5, "jhVar":Ldefpackage/jh;
-    iput-object v5, v3, Ldefpackage/iy;->i:Ldefpackage/hu;
+    .local v5, "jhVar":Ljh;
+    iput-object v5, v3, Liy;->i:Lhu;
 
     .line 136
-    iget-object v6, v3, Ldefpackage/iy;->g:Landroid/view/Window;
+    iget-object v6, v3, Liy;->g:Landroid/view/Window;
 
-    iget-object v7, v5, Ldefpackage/jh;->c:Landroid/view/Window$Callback;
+    iget-object v7, v5, Ljh;->c:Landroid/view/Window$Callback;
 
     invoke-virtual {v6, v7}, Landroid/view/Window;->setCallback(Landroid/view/Window$Callback;)V
 
     .line 137
-    .end local v5    # "jhVar":Ldefpackage/jh;
+    .end local v5    # "jhVar":Ljh;
     goto :goto_2
 
     .line 138
     :cond_4
-    iput-object v5, v3, Ldefpackage/iy;->i:Ldefpackage/hu;
+    iput-object v5, v3, Liy;->i:Lhu;
 
     .line 139
-    iget-object v5, v3, Ldefpackage/iy;->g:Landroid/view/Window;
+    iget-object v5, v3, Liy;->g:Landroid/view/Window;
 
-    iget-object v6, v3, Ldefpackage/iy;->h:Ldefpackage/iq;
+    iget-object v6, v3, Liy;->h:Liq;
 
     invoke-virtual {v5, v6}, Landroid/view/Window;->setCallback(Landroid/view/Window$Callback;)V
 
     .line 141
     :goto_2
-    invoke-virtual {v3}, Ldefpackage/iy;->e()V
+    invoke-virtual {v3}, Liy;->e()V
 
     goto :goto_3
 
@@ -566,22 +566,22 @@
     throw v1
 
     .line 143
-    .end local v4    # "a":Ldefpackage/hu;
+    .end local v4    # "a":Lhu;
     :cond_6
     :goto_3
-    invoke-virtual {p0}, Ldefpackage/ih;->f()Ldefpackage/hu;
+    invoke-virtual {p0}, Lih;->f()Lhu;
 
     move-result-object v4
 
     .line 144
-    .local v4, "f":Ldefpackage/hu;
+    .local v4, "f":Lhu;
     invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 145
-    invoke-virtual {v4, v1}, Ldefpackage/hu;->g(Z)V
+    invoke-virtual {v4, v1}, Lhu;->g(Z)V
 
     .line 146
-    invoke-virtual {v4}, Ldefpackage/hu;->s()V
+    invoke-virtual {v4}, Lhu;->s()V
 
     .line 147
     if-nez v0, :cond_7
@@ -592,7 +592,7 @@
     invoke-virtual {p0, v5}, Landroid/app/Activity;->setTitle(I)V
 
     .line 149
-    invoke-virtual {v4}, Ldefpackage/hu;->u()V
+    invoke-virtual {v4}, Lhu;->u()V
 
     goto :goto_4
 
@@ -601,7 +601,7 @@
     invoke-virtual {p0, v0}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 152
-    invoke-virtual {v4, v0}, Ldefpackage/hu;->i(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v0}, Lhu;->i(Ljava/lang/CharSequence;)V
 
     .line 154
     :goto_4
@@ -682,11 +682,11 @@
 
     .line 164
     .local v7, "booleanExtra":Z
-    new-instance v8, Ldefpackage/fcb;
+    new-instance v8, Lfcb;
 
-    invoke-direct {v8}, Ldefpackage/fcb;-><init>()V
+    invoke-direct {v8}, Lfcb;-><init>()V
 
-    iput-object v8, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->w:Ldefpackage/fcb;
+    iput-object v8, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->w:Lfcb;
 
     .line 165
     new-instance v8, Landroid/os/Bundle;
@@ -712,7 +712,7 @@
     invoke-virtual {v1, v8, v7}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 169
-    iget-object v8, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->w:Ldefpackage/fcb;
+    iget-object v8, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->w:Lfcb;
 
     invoke-virtual {v8, v1}, Landroid/preference/PreferenceFragment;->setArguments(Landroid/os/Bundle;)V
 
@@ -727,7 +727,7 @@
 
     const v9, 0x7f0a01cc
 
-    iget-object v10, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->w:Ldefpackage/fcb;
+    iget-object v10, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->w:Lfcb;
 
     invoke-virtual {v8, v9, v10}, Landroid/app/FragmentTransaction;->replace(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;
 
@@ -774,7 +774,7 @@
 
     .line 179
     :cond_0
-    invoke-virtual {p0}, Ldefpackage/fio;->finish()V
+    invoke-virtual {p0}, Lfio;->finish()V
 
     .line 181
     :cond_1
@@ -790,7 +790,7 @@
     .param p3, "iArr"    # [I
 
     .line 186
-    invoke-super {p0, p1, p2, p3}, Ldefpackage/fio;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
+    invoke-super {p0, p1, p2, p3}, Lfio;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
 
     .line 187
     const/4 v0, 0x1
@@ -823,18 +823,18 @@
 
     .line 193
     :cond_1
-    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->w:Ldefpackage/fcb;
+    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSettingsActivity;->w:Lfcb;
 
     .line 194
-    .local v0, "fcbVar":Ldefpackage/fcb;
+    .local v0, "fcbVar":Lfcb;
     const/4 v1, 0x0
 
     .line 195
     .local v1, "i3":I
-    invoke-virtual {v0}, Ldefpackage/fcb;->a()V
+    invoke-virtual {v0}, Lfcb;->a()V
 
     .line 197
-    .end local v0    # "fcbVar":Ldefpackage/fcb;
+    .end local v0    # "fcbVar":Lfcb;
     .end local v1    # "i3":I
     :cond_2
     return-void

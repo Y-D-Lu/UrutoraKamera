@@ -1,98 +1,71 @@
-.class public final Ldefpackage/wa;
+.class public Ldefpackage/Wa;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lagm;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfbn;->gA(Landroid/os/Bundle;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:Ljava/util/Set;
+.field public final synthetic this$0:Lfbn;
 
-.field private final b:Ldefpackage/wn;
-
-.field private final c:Ldefpackage/qsu;
+.field public final synthetic val$materialManagedSwitchPreference3:Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/qkg;Ldefpackage/vr;Ldefpackage/wl;Ldefpackage/wn;)V
-    .locals 4
-    .param p1, "qkgVar"    # Ldefpackage/qkg;
-    .param p2, "vrVar"    # Ldefpackage/vr;
-    .param p3, "wlVar"    # Ldefpackage/wl;
-    .param p4, "wnVar"    # Ldefpackage/wn;
+.method public constructor <init>(Lfbn;Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;)V
+    .locals 0
+    .param p1, "this$0"    # Lfbn;
 
-    .line 13
+    .line 500
+    iput-object p1, p0, Ldefpackage/Wa;->this$0:Lfbn;
+
+    iput-object p2, p0, Ldefpackage/Wa;->val$materialManagedSwitchPreference3:Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 15
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 16
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 17
-    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 18
-    iput-object p4, p0, Ldefpackage/wa;->b:Ldefpackage/wn;
-
-    .line 19
-    const/16 v0, 0x8
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x6
-
-    invoke-static {v0, v1, v2}, Ldefpackage/qnt;->l(III)Ldefpackage/qsu;
-
-    move-result-object v0
-
-    iput-object v0, p0, Ldefpackage/wa;->c:Ldefpackage/qsu;
-
-    .line 20
-    new-instance v0, Ljava/util/LinkedHashSet;
-
-    invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/wa;->a:Ljava/util/Set;
-
-    .line 21
-    iget-object v0, p4, Ldefpackage/wn;->a:Ldefpackage/qqj;
-
-    new-instance v1, Ldefpackage/qqi;
-
-    const-string v2, "CXCP-VirtualCameraManager"
-
-    invoke-direct {v1, v2}, Ldefpackage/qqi;-><init>(Ljava/lang/String;)V
-
-    new-instance v2, Ldefpackage/vv;
-
-    const/4 v3, 0x0
-
-    invoke-direct {v2, p0, v3}, Ldefpackage/vv;-><init>(Ldefpackage/wa;Ldefpackage/qlh;)V
-
-    const/4 v3, 0x2
-
-    invoke-static {v0, v1, v2, v3}, Ldefpackage/qmd;->l(Ldefpackage/qqj;Ldefpackage/qln;Ldefpackage/qmy;I)Ldefpackage/qrg;
-
-    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/util/List;Ldefpackage/qlh;)Ljava/lang/Object;
-    .locals 2
-    .param p1, "r5"    # Ljava/util/List;
-    .param p2, "r6"    # Ldefpackage/qlh;
+.method public final b(Landroidx/preference/Preference;Ljava/lang/Object;)Z
+    .locals 3
+    .param p1, "preference2"    # Landroidx/preference/Preference;
+    .param p2, "obj"    # Ljava/lang/Object;
 
-    .line 137
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    .line 503
+    iget-object v0, p0, Ldefpackage/Wa;->this$0:Lfbn;
 
-    const-string v1, "Method not decompiled: defpackage.wa.a(java.util.List, qlh):java.lang.Object"
+    iget-object v0, v0, Lfbn;->ab:Lfbq;
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    iget-object v0, v0, Lfbq;->p:Lfjs;
 
-    throw v0
+    iget-object v1, p1, Landroidx/preference/Preference;->t:Ljava/lang/String;
+
+    iget-object v2, p0, Ldefpackage/Wa;->val$materialManagedSwitchPreference3:Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;
+
+    iget-boolean v2, v2, Landroidx/preference/TwoStatePreference;->a:Z
+
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-interface {v0, v1, v2, p2}, Lfjs;->p(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 504
+    const/4 v0, 0x1
+
+    return v0
 .end method

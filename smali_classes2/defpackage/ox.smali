@@ -1,97 +1,69 @@
-.class public final Ldefpackage/ox;
-.super Landroid/view/qd;
+.class public Ldefpackage/Ox;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Lpgk;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Px;->a()Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public a:I
+.field public final synthetic this$1:Ldefpackage/Px;
 
-.field public b:I
+.field public final synthetic val$executor2:Ljava/util/concurrent/Executor;
+
+.field public final synthetic val$pgkVar:Lpgk;
 
 
 # direct methods
-.method public constructor <init>(II)V
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
+.method public constructor <init>(Ldefpackage/Px;Lpgk;Ljava/util/concurrent/Executor;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Px;
 
-    .line 15
-    invoke-direct {p0, p1, p2}, Landroid/view/qd;-><init>(II)V
+    .line 84
+    iput-object p1, p0, Ldefpackage/Ox;->this$1:Ldefpackage/Px;
 
-    .line 16
-    const/4 v0, -0x1
+    iput-object p2, p0, Ldefpackage/Ox;->val$pgkVar:Lpgk;
 
-    iput v0, p0, Ldefpackage/ox;->a:I
+    iput-object p3, p0, Ldefpackage/Ox;->val$executor2:Ljava/util/concurrent/Executor;
 
-    .line 17
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, Ldefpackage/ox;->b:I
-
-    .line 18
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 1
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
-    .line 21
-    invoke-direct {p0, p1, p2}, Landroid/view/qd;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+# virtual methods
+.method public final a(Ljava/lang/Object;)Lpht;
+    .locals 4
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 22
-    const/4 v0, -0x1
+    .line 87
+    iget-object v0, p0, Ldefpackage/Ox;->this$1:Ldefpackage/Px;
 
-    iput v0, p0, Ldefpackage/ox;->a:I
+    iget-object v0, v0, Ldefpackage/Px;->this$0:Lnkq;
 
-    .line 23
-    const/4 v0, 0x0
+    .line 88
+    .local v0, "nkqVar2":Lnkq;
+    iget-object v1, v0, Lnkq;->b:Lnkr;
 
-    iput v0, p0, Ldefpackage/ox;->b:I
+    iget-object v2, p0, Ldefpackage/Ox;->val$pgkVar:Lpgk;
 
-    .line 24
-    return-void
-.end method
+    iget-object v3, p0, Ldefpackage/Ox;->val$executor2:Ljava/util/concurrent/Executor;
 
-.method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 1
-    .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
+    invoke-interface {v1, v2, v3}, Lnkr;->d(Lpgk;Ljava/util/concurrent/Executor;)Lpht;
 
-    .line 27
-    invoke-direct {p0, p1}, Landroid/view/qd;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    move-result-object v1
 
-    .line 28
-    const/4 v0, -0x1
-
-    iput v0, p0, Ldefpackage/ox;->a:I
-
-    .line 29
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/ox;->b:I
-
-    .line 30
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
-    .locals 1
-    .param p1, "marginLayoutParams"    # Landroid/view/ViewGroup$MarginLayoutParams;
-
-    .line 33
-    invoke-direct {p0, p1}, Landroid/view/qd;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
-
-    .line 34
-    const/4 v0, -0x1
-
-    iput v0, p0, Ldefpackage/ox;->a:I
-
-    .line 35
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/ox;->b:I
-
-    .line 36
-    return-void
+    return-object v1
 .end method

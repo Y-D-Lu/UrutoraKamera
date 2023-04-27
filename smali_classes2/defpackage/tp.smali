@@ -1,80 +1,70 @@
-.class public final Ldefpackage/tp;
-.super Ldefpackage/tl;
+.class public Ldefpackage/Tp;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/fq;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/support/wearable/view/drawer/PageIndicatorView;
+.field public final synthetic this$1:Ldefpackage/fq;
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/wearable/view/drawer/PageIndicatorView;)V
+.method public constructor <init>(Ldefpackage/fq;)V
     .locals 0
-    .param p1, "pageIndicatorView"    # Landroid/support/wearable/view/drawer/PageIndicatorView;
+    .param p1, "this$1"    # Ldefpackage/fq;
 
-    .line 12
-    invoke-direct {p0}, Ldefpackage/tl;-><init>()V
+    .line 876
+    iput-object p1, p0, Ldefpackage/Tp;->this$1:Ldefpackage/fq;
 
-    .line 13
-    iput-object p1, p0, Ldefpackage/tp;->a:Landroid/support/wearable/view/drawer/PageIndicatorView;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 4
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 18
-    iget-object v0, p0, Ldefpackage/tp;->a:Landroid/support/wearable/view/drawer/PageIndicatorView;
+    .line 879
+    move-object v0, p1
 
-    .line 19
-    .local v0, "pageIndicatorView":Landroid/support/wearable/view/drawer/PageIndicatorView;
-    const/4 v1, 0x0
+    check-cast v0, Landroid/animation/Animator;
 
-    iput-boolean v1, v0, Landroid/support/wearable/view/drawer/PageIndicatorView;->c:Z
+    .line 880
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Tp;->this$1:Ldefpackage/fq;
 
-    .line 20
-    invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+    iget-object v1, v1, Ldefpackage/fq;->this$0:Ljkz;
 
-    move-result-object v1
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-    sget v2, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    invoke-virtual {v1, v2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
 
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v1
-
-    iget-object v2, p0, Ldefpackage/tp;->a:Landroid/support/wearable/view/drawer/PageIndicatorView;
-
-    iget v2, v2, Landroid/support/wearable/view/drawer/PageIndicatorView;->a:I
-
-    int-to-long v2, v2
-
-    invoke-virtual {v1, v2, v3}, Landroid/view/ViewPropertyAnimator;->setStartDelay(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v1
-
-    iget-object v2, p0, Ldefpackage/tp;->a:Landroid/support/wearable/view/drawer/PageIndicatorView;
-
-    iget v2, v2, Landroid/support/wearable/view/drawer/PageIndicatorView;->b:I
-
-    int-to-long v2, v2
-
-    invoke-virtual {v1, v2, v3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
-
-    .line 21
+    .line 881
     return-void
+.end method
+
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
+
+    .line 885
+    return-object p1
 .end method

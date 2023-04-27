@@ -21411,10 +21411,10 @@
     return-wide v9
 .end method
 
-.method public static j(Ldefpackage/lvp;Ldefpackage/lzv;)Ljava/lang/Object;
+.method public static j(Llvp;Llzv;)Ljava/lang/Object;
     .locals 9
-    .param p0, "lvpVar"    # Ldefpackage/lvp;
-    .param p1, "lzvVar"    # Ldefpackage/lzv;
+    .param p0, "lvpVar"    # Llvp;
+    .param p1, "lzvVar"    # Llzv;
 
     .line 558
     const/4 v0, 0x4
@@ -21425,7 +21425,7 @@
     .local v1, "pairArr":[Landroid/util/Pair;
     sget-object v2, Landroid/hardware/camera2/CameraCharacteristics;->SENSOR_MAX_ANALOG_SENSITIVITY:Landroid/hardware/camera2/CameraCharacteristics$Key;
 
-    invoke-interface {p0, v2}, Ldefpackage/lvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-interface {p0, v2}, Llvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -21439,7 +21439,7 @@
     .local v2, "intValue":I
     sget-object v3, Landroid/hardware/camera2/CaptureResult;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureResult$Key;
 
-    invoke-interface {p1, v3}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {p1, v3}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v3
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/smarts/SmartsChipView;->c(Ldefpackage/iap;)V
+    value = Lcom/google/android/apps/camera/smarts/SmartsChipView;->c(Liap;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

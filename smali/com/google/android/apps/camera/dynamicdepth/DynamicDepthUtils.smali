@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
@@ -12,7 +12,7 @@
 
 .field private c:Z
 
-.field private final d:Ldefpackage/lzi;
+.field private final d:Llzi;
 
 
 # direct methods
@@ -22,18 +22,18 @@
     .line 19
     const-string v0, "com/google/android/apps/camera/dynamicdepth/DynamicDepthUtils"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->a:Louj;
 
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/lzi;)V
+.method public constructor <init>(Llzi;)V
     .locals 1
-    .param p1, "lziVar"    # Ldefpackage/lzi;
+    .param p1, "lziVar"    # Llzi;
 
     .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,7 +49,7 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->b:Ljava/lang/String;
 
     .line 25
-    iput-object p1, p0, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->d:Ldefpackage/lzi;
+    iput-object p1, p0, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->d:Llzi;
 
     .line 26
     return-void
@@ -61,11 +61,11 @@
 .method public static native createDynamicDepthFromUltradepthImpl(JJJJZJ)Z
 .end method
 
-.method public static d([BLcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;Ldefpackage/hlr;)[B
+.method public static d([BLcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;Lhlr;)[B
     .locals 4
     .param p0, "bArr"    # [B
     .param p1, "dynamicDepthResult"    # Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;
-    .param p2, "hlrVar"    # Ldefpackage/hlr;
+    .param p2, "hlrVar"    # Lhlr;
 
     .line 33
     iget-wide v0, p1, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;->a:J
@@ -77,7 +77,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-interface {p2}, Ldefpackage/hlr;->a()J
+    invoke-interface {p2}, Lhlr;->a()J
 
     move-result-wide v2
 
@@ -91,14 +91,14 @@
     if-eqz v0, :cond_1
 
     .line 35
-    sget-object v1, Ldefpackage/ovl;->a:Ldefpackage/ovd;
+    sget-object v1, Lovl;->a:Lovd;
 
     .line 36
-    .local v1, "ovdVar":Ldefpackage/ovd;
+    .local v1, "ovdVar":Lovd;
     return-object v0
 
     .line 38
-    .end local v1    # "ovdVar":Ldefpackage/ovd;
+    .end local v1    # "ovdVar":Lovd;
     :cond_1
     const/4 v1, 0x0
 
@@ -134,9 +134,9 @@
 
     const-string v1, ""
 
-    iget-object v2, p0, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->d:Ldefpackage/lzi;
+    iget-object v2, p0, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->d:Llzi;
 
-    invoke-virtual {v2}, Ldefpackage/lzi;->h()Z
+    invoke-virtual {v2}, Llzi;->h()Z
 
     move-result v2
 
@@ -160,28 +160,28 @@
     iput-boolean v3, p0, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->c:Z
 
     .line 52
-    sget-object v0, Ldefpackage/bvf;->f:Ldefpackage/bvf;
+    sget-object v0, Lbvf;->f:Lbvf;
 
-    .local v0, "bvfVar":Ldefpackage/bvf;
+    .local v0, "bvfVar":Lbvf;
     goto :goto_1
 
     .line 54
-    .end local v0    # "bvfVar":Ldefpackage/bvf;
+    .end local v0    # "bvfVar":Lbvf;
     .end local p0    # "this":Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;
     :cond_1
-    sget-object v0, Ldefpackage/bvf;->g:Ldefpackage/bvf;
+    sget-object v0, Lbvf;->g:Lbvf;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 56
-    .restart local v0    # "bvfVar":Ldefpackage/bvf;
+    .restart local v0    # "bvfVar":Lbvf;
     :goto_1
     monitor-exit p0
 
     return-object v0
 
     .line 48
-    .end local v0    # "bvfVar":Ldefpackage/bvf;
+    .end local v0    # "bvfVar":Lbvf;
     :catchall_0
     move-exception v0
 
@@ -190,10 +190,10 @@
     throw v0
 .end method
 
-.method public final declared-synchronized b(Ldefpackage/mad;Ldefpackage/mad;Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;Lcom/google/googlex/gcam/ShotMetadata;)Z
+.method public final declared-synchronized b(Lmad;Lmad;Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;Lcom/google/googlex/gcam/ShotMetadata;)Z
     .locals 5
-    .param p1, "madVar"    # Ldefpackage/mad;
-    .param p2, "madVar2"    # Ldefpackage/mad;
+    .param p1, "madVar"    # Lmad;
+    .param p2, "madVar2"    # Lmad;
     .param p3, "dynamicDepthResult"    # Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;
     .param p4, "shotMetadata"    # Lcom/google/googlex/gcam/ShotMetadata;
 
@@ -201,36 +201,36 @@
 
     .line 60
     :try_start_0
-    new-instance v0, Ldefpackage/pko;
+    new-instance v0, Lpko;
 
-    invoke-direct {v0}, Ldefpackage/pko;-><init>()V
+    invoke-direct {v0}, Lpko;-><init>()V
 
     .line 61
-    .local v0, "pkoVar":Ldefpackage/pko;
-    invoke-virtual {v0, p1}, Ldefpackage/pko;->a(Ldefpackage/mad;)Ldefpackage/ojc;
+    .local v0, "pkoVar":Lpko;
+    invoke-virtual {v0, p1}, Lpko;->a(Lmad;)Lojc;
 
     move-result-object v1
 
     .line 62
-    .local v1, "a2":Ldefpackage/ojc;
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    .local v1, "a2":Lojc;
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
     .line 63
-    sget-object v2, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->a:Ldefpackage/ouj;
+    sget-object v2, Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;->a:Louj;
 
-    invoke-virtual {v2}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v2}, Loue;->b()Lova;
 
     move-result-object v2
 
-    sget-object v3, Ldefpackage/ovl;->a:Ldefpackage/ovd;
+    sget-object v3, Lovl;->a:Lovd;
 
     const-string v4, "CAM_DynDepthUtils"
 
-    invoke-interface {v2, v3, v4}, Ldefpackage/ova;->g(Ldefpackage/ovd;Ljava/lang/Object;)Ldefpackage/ova;
+    invoke-interface {v2, v3, v4}, Lova;->g(Lovd;Ljava/lang/Object;)Lova;
 
     move-result-object v2
 
@@ -238,7 +238,7 @@
 
     const/16 v4, 0x345
 
-    invoke-static {v2, v3, v4}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v2, v3, v4}, Ld;->v(Lova;Ljava/lang/String;C)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -253,13 +253,13 @@
     .end local p0    # "this":Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthUtils;
     :cond_0
     :try_start_1
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/google/googlex/gcam/RawWriteView;
 
-    invoke-virtual {v0, p2}, Ldefpackage/pko;->c(Ldefpackage/mad;)Lcom/google/googlex/gcam/YuvWriteView;
+    invoke-virtual {v0, p2}, Lpko;->c(Lmad;)Lcom/google/googlex/gcam/YuvWriteView;
 
     move-result-object v3
 
@@ -274,10 +274,10 @@
     return v2
 
     .line 59
-    .end local v0    # "pkoVar":Ldefpackage/pko;
-    .end local v1    # "a2":Ldefpackage/ojc;
-    .end local p1    # "madVar":Ldefpackage/mad;
-    .end local p2    # "madVar2":Ldefpackage/mad;
+    .end local v0    # "pkoVar":Lpko;
+    .end local v1    # "a2":Lojc;
+    .end local p1    # "madVar":Lmad;
+    .end local p2    # "madVar2":Lmad;
     .end local p3    # "dynamicDepthResult":Lcom/google/android/apps/camera/dynamicdepth/DynamicDepthResult;
     .end local p4    # "shotMetadata":Lcom/google/googlex/gcam/ShotMetadata;
     :catchall_0

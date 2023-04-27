@@ -10,7 +10,7 @@
     .line 8
     const-string v0, "WrkMgrInitializer"
 
-    invoke-static {v0}, Ldefpackage/kus;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lkus;->g(Ljava/lang/String;)Ljava/lang/String;
 
     .line 9
     return-void

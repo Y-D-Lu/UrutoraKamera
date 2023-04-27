@@ -43,7 +43,7 @@
     iput v0, p0, Landroid/support/v7/widget/ViewStubCompat;->b:I
 
     .line 30
-    sget-object v1, Ldefpackage/jq;->z:[I
+    sget-object v1, Ljq;->z:[I
 
     invoke-virtual {p1, p2, v1, p3, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 

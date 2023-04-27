@@ -17,7 +17,7 @@
 
 .field public d:Z
 
-.field public e:Ldefpackage/jqq;
+.field public e:Ljqq;
 
 .field private final f:[I
 
@@ -108,21 +108,21 @@
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->e:Ldefpackage/jqq;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->e:Ljqq;
 
     move-object v2, v0
 
-    .local v2, "jqqVar":Ldefpackage/jqq;
+    .local v2, "jqqVar":Ljqq;
     if-nez v0, :cond_1
 
     goto/16 :goto_4
 
     .line 58
     :cond_1
-    iget-object v0, v2, Ldefpackage/jqq;->a:Ldefpackage/jxn;
+    iget-object v0, v2, Ljqq;->a:Ljxn;
 
     .line 59
-    .local v0, "jxnVar":Ldefpackage/jxn;
+    .local v0, "jxnVar":Ljxn;
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v3
@@ -136,26 +136,26 @@
 
     .line 83
     :pswitch_1
-    iget v3, v0, Ldefpackage/jxn;->o:I
+    iget v3, v0, Ljxn;->o:I
 
     sub-int/2addr v3, v1
 
     .line 84
     .local v3, "i":I
-    iput v3, v0, Ldefpackage/jxn;->o:I
+    iput v3, v0, Ljxn;->o:I
 
     goto :goto_1
 
     .line 79
     .end local v3    # "i":I
     :pswitch_2
-    iget v3, v0, Ldefpackage/jxn;->o:I
+    iget v3, v0, Ljxn;->o:I
 
     add-int/2addr v3, v1
 
     .line 80
     .restart local v3    # "i":I
-    iput v3, v0, Ldefpackage/jxn;->o:I
+    iput v3, v0, Ljxn;->o:I
 
     .line 81
     goto :goto_1
@@ -163,90 +163,90 @@
     .line 74
     .end local v3    # "i":I
     :pswitch_3
-    invoke-virtual {v0}, Ldefpackage/jxn;->b()Ldefpackage/jxf;
+    invoke-virtual {v0}, Ljxn;->b()Ljxf;
 
     move-result-object v3
 
-    invoke-interface {v3}, Ldefpackage/jxf;->g()V
+    invoke-interface {v3}, Ljxf;->g()V
 
     .line 75
-    iget-boolean v3, v0, Ldefpackage/jxn;->l:Z
+    iget-boolean v3, v0, Ljxn;->l:Z
 
     if-eqz v3, :cond_2
 
-    iget-object v3, v0, Ldefpackage/jxn;->e:Ldefpackage/jxg;
+    iget-object v3, v0, Ljxn;->e:Ljxg;
 
     goto :goto_0
 
     :cond_2
-    sget-object v3, Ldefpackage/jxf;->m:Ldefpackage/jxf;
+    sget-object v3, Ljxf;->m:Ljxf;
 
     :goto_0
-    invoke-interface {v3}, Ldefpackage/jxf;->g()V
+    invoke-interface {v3}, Ljxf;->g()V
 
     .line 76
-    iput v4, v0, Ldefpackage/jxn;->o:I
+    iput v4, v0, Ljxn;->o:I
 
     .line 77
     goto :goto_1
 
     .line 64
     :pswitch_4
-    invoke-virtual {v0}, Ldefpackage/jxn;->b()Ldefpackage/jxf;
+    invoke-virtual {v0}, Ljxn;->b()Ljxf;
 
     move-result-object v3
 
-    invoke-interface {v3}, Ldefpackage/jxf;->b()V
+    invoke-interface {v3}, Ljxf;->b()V
 
     .line 65
-    iget-object v3, v0, Ldefpackage/jxn;->e:Ldefpackage/jxg;
+    iget-object v3, v0, Ljxn;->e:Ljxg;
 
-    invoke-interface {v3}, Ldefpackage/jxf;->b()V
+    invoke-interface {v3}, Ljxf;->b()V
 
     .line 66
     sget v3, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
 
-    iput v3, v0, Ldefpackage/jxn;->n:F
+    iput v3, v0, Ljxn;->n:F
 
     .line 67
-    iput v3, v0, Ldefpackage/jxn;->m:F
+    iput v3, v0, Ljxn;->m:F
 
     .line 68
-    iput v1, v0, Ldefpackage/jxn;->q:I
+    iput v1, v0, Ljxn;->q:I
 
     .line 69
-    iput-boolean v4, v0, Ldefpackage/jxn;->k:Z
+    iput-boolean v4, v0, Ljxn;->k:Z
 
     .line 70
-    iput-boolean v4, v0, Ldefpackage/jxn;->l:Z
+    iput-boolean v4, v0, Ljxn;->l:Z
 
     .line 71
-    iput v4, v0, Ldefpackage/jxn;->o:I
+    iput v4, v0, Ljxn;->o:I
 
     .line 72
     goto :goto_1
 
     .line 61
     :pswitch_5
-    iget-object v3, v0, Ldefpackage/jxn;->e:Ldefpackage/jxg;
+    iget-object v3, v0, Ljxn;->e:Ljxg;
 
-    invoke-virtual {v0, p1}, Ldefpackage/jxn;->a(Landroid/view/MotionEvent;)Landroid/graphics/PointF;
+    invoke-virtual {v0, p1}, Ljxn;->a(Landroid/view/MotionEvent;)Landroid/graphics/PointF;
 
     move-result-object v4
 
-    invoke-interface {v3, v4}, Ldefpackage/jxg;->a(Landroid/graphics/PointF;)V
+    invoke-interface {v3, v4}, Ljxg;->a(Landroid/graphics/PointF;)V
 
     .line 62
     nop
 
     .line 87
     :goto_1
-    iget-boolean v3, v0, Ldefpackage/jxn;->k:Z
+    iget-boolean v3, v0, Ljxn;->k:Z
 
     if-eqz v3, :cond_3
 
     .line 88
-    iget-object v3, v0, Ldefpackage/jxn;->d:Landroid/view/ScaleGestureDetector;
+    iget-object v3, v0, Ljxn;->d:Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {v3, p1}, Landroid/view/ScaleGestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -254,11 +254,11 @@
 
     .line 89
     :cond_3
-    iget v3, v0, Ldefpackage/jxn;->q:I
+    iget v3, v0, Ljxn;->q:I
 
     if-ne v3, v1, :cond_5
 
-    iget-boolean v3, v0, Ldefpackage/jxn;->l:Z
+    iget-boolean v3, v0, Ljxn;->l:Z
 
     if-eqz v3, :cond_4
 
@@ -266,12 +266,12 @@
 
     .line 92
     :cond_4
-    iget-object v3, v0, Ldefpackage/jxn;->d:Landroid/view/ScaleGestureDetector;
+    iget-object v3, v0, Ljxn;->d:Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {v3, p1}, Landroid/view/ScaleGestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     .line 93
-    iget-object v3, v0, Ldefpackage/jxn;->c:Landroid/view/GestureDetector;
+    iget-object v3, v0, Ljxn;->c:Landroid/view/GestureDetector;
 
     invoke-virtual {v3, p1}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -280,7 +280,7 @@
     .line 90
     :cond_5
     :goto_2
-    iget-object v3, v0, Ldefpackage/jxn;->c:Landroid/view/GestureDetector;
+    iget-object v3, v0, Ljxn;->c:Landroid/view/GestureDetector;
 
     invoke-virtual {v3, p1}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -289,8 +289,8 @@
     return v1
 
     .line 48
-    .end local v0    # "jxnVar":Ldefpackage/jxn;
-    .end local v2    # "jqqVar":Ldefpackage/jqq;
+    .end local v0    # "jxnVar":Ljxn;
+    .end local v2    # "jqqVar":Ljqq;
     :cond_6
     :goto_4
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/wirers/PreviewOverlay;->a:Landroid/view/GestureDetector;

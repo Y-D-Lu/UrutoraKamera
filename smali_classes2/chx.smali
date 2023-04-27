@@ -3,5 +3,5 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/bmq;
-.implements Ldefpackage/lie;
+.implements Lbmq;
+.implements Llie;

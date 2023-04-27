@@ -73,24 +73,24 @@
     .local v3, "packageInfo":Landroid/content/pm/PackageInfo;
     new-array v4, v0, [Landroid/content/pm/Signature;
 
-    sget-object v5, Ldefpackage/pxi;->a:Landroid/content/pm/Signature;
+    sget-object v5, Lpxi;->a:Landroid/content/pm/Signature;
 
     aput-object v5, v4, v2
 
-    invoke-static {v3, v4}, Ldefpackage/pxi;->a(Landroid/content/pm/PackageInfo;[Landroid/content/pm/Signature;)Z
+    invoke-static {v3, v4}, Lpxi;->a(Landroid/content/pm/PackageInfo;[Landroid/content/pm/Signature;)Z
 
     move-result v4
 
     if-nez v4, :cond_5
 
     .line 29
-    sget-object v4, Ldefpackage/qmd;->v:Ljava/lang/Boolean;
+    sget-object v4, Lqmd;->v:Ljava/lang/Boolean;
 
     const/16 v5, 0x9
 
     if-eqz v4, :cond_2
 
-    sget-object v4, Ldefpackage/qmd;->v:Ljava/lang/Boolean;
+    sget-object v4, Lqmd;->v:Ljava/lang/Boolean;
 
     invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -101,7 +101,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-static {p0}, Ldefpackage/qmd;->am(Landroid/content/Context;)Z
+    invoke-static {p0}, Lqmd;->am(Landroid/content/Context;)Z
 
     move-result v4
 
@@ -116,11 +116,11 @@
     :goto_0
     new-array v4, v0, [Landroid/content/pm/Signature;
 
-    sget-object v6, Ldefpackage/pxi;->b:Landroid/content/pm/Signature;
+    sget-object v6, Lpxi;->b:Landroid/content/pm/Signature;
 
     aput-object v6, v4, v2
 
-    invoke-static {v3, v4}, Ldefpackage/pxi;->a(Landroid/content/pm/PackageInfo;[Landroid/content/pm/Signature;)Z
+    invoke-static {v3, v4}, Lpxi;->a(Landroid/content/pm/PackageInfo;[Landroid/content/pm/Signature;)Z
 
     move-result v0
     :try_end_0
@@ -329,17 +329,17 @@
     .line 69
     :cond_0
     :try_start_1
-    new-instance v2, Ldefpackage/pxj;
+    new-instance v2, Lpxj;
 
     const/4 v3, 0x2
 
-    invoke-direct {v2, v3}, Ldefpackage/pxj;-><init>(I)V
+    invoke-direct {v2, v3}, Lpxj;-><init>(I)V
 
     .end local v1    # "applicationInfo":Landroid/content/pm/ApplicationInfo;
     .end local p0    # "context":Landroid/content/Context;
     throw v2
     :try_end_1
-    .catch Ldefpackage/pxj; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Lpxj; {:try_start_1 .. :try_end_1} :catch_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 70
@@ -349,12 +349,12 @@
     move-exception v2
 
     .line 71
-    .local v2, "e":Ldefpackage/pxj;
+    .local v2, "e":Lpxj;
     :try_start_2
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 74
-    .end local v2    # "e":Ldefpackage/pxj;
+    .end local v2    # "e":Lpxj;
     :goto_0
     iget-object v2, v1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
@@ -383,19 +383,19 @@
     .line 80
     .local v1, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     :try_start_3
-    new-instance v2, Ldefpackage/pxj;
+    new-instance v2, Lpxj;
 
     invoke-static {p0}, Lcom/google/vr/vrcore/base/api/VrCoreUtils;->a(Landroid/content/Context;)I
 
     move-result v3
 
-    invoke-direct {v2, v3}, Ldefpackage/pxj;-><init>(I)V
+    invoke-direct {v2, v3}, Lpxj;-><init>(I)V
 
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     .end local p0    # "context":Landroid/content/Context;
     throw v2
     :try_end_3
-    .catch Ldefpackage/pxj; {:try_start_3 .. :try_end_3} :catch_2
+    .catch Lpxj; {:try_start_3 .. :try_end_3} :catch_2
 
     .line 81
     .restart local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -404,11 +404,11 @@
     move-exception v2
 
     .line 82
-    .local v2, "ex":Ldefpackage/pxj;
+    .local v2, "ex":Lpxj;
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 85
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
-    .end local v2    # "ex":Ldefpackage/pxj;
+    .end local v2    # "ex":Lpxj;
     return v0
 .end method

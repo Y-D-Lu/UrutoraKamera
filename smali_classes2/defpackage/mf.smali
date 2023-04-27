@@ -1,70 +1,202 @@
-.class public final Ldefpackage/mf;
-.super Ldefpackage/li;
+.class public Ldefpackage/Mf;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Liho;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhah;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final d:Ldefpackage/mh;
+.field public final synthetic this$0:Lhah;
+
+.field public final synthetic val$I:Lope;
+
+.field public final synthetic val$a:Lpyn;
+
+.field public final synthetic val$a2:Lpyn;
+
+.field public final synthetic val$booleanValue2:Z
+
+.field public final synthetic val$hycVar:Lhyc;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/mh;Landroid/content/Context;Ldefpackage/kw;Landroid/view/View;)V
-    .locals 1
-    .param p1, "mhVar"    # Ldefpackage/mh;
-    .param p2, "context"    # Landroid/content/Context;
-    .param p3, "kwVar"    # Ldefpackage/kw;
-    .param p4, "view"    # Landroid/view/View;
+.method public constructor <init>(Lhah;ZLhyc;Lpyn;Lope;Lpyn;)V
+    .locals 0
+    .param p1, "this$0"    # Lhah;
 
-    .line 14
-    const/4 v0, 0x1
+    .line 184
+    iput-object p1, p0, Ldefpackage/Mf;->this$0:Lhah;
 
-    invoke-direct {p0, p2, p3, p4, v0}, Ldefpackage/li;-><init>(Landroid/content/Context;Ldefpackage/kw;Landroid/view/View;Z)V
+    iput-boolean p2, p0, Ldefpackage/Mf;->val$booleanValue2:Z
 
-    .line 15
-    iput-object p1, p0, Ldefpackage/mf;->d:Ldefpackage/mh;
+    iput-object p3, p0, Ldefpackage/Mf;->val$hycVar:Lhyc;
 
-    .line 16
-    const v0, 0x800005
+    iput-object p4, p0, Ldefpackage/Mf;->val$a2:Lpyn;
 
-    iput v0, p0, Ldefpackage/li;->b:I
+    iput-object p5, p0, Ldefpackage/Mf;->val$I:Lope;
 
-    .line 17
-    iget-object v0, p1, Ldefpackage/mh;->l:Ldefpackage/mg;
+    iput-object p6, p0, Ldefpackage/Mf;->val$a:Lpyn;
 
-    invoke-virtual {p0, v0}, Ldefpackage/li;->e(Ldefpackage/lj;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()V
-    .locals 3
+.method public final run()V
+    .locals 9
 
-    .line 23
-    iget-object v0, p0, Ldefpackage/mf;->d:Ldefpackage/mh;
+    .line 187
+    iget-boolean v0, p0, Ldefpackage/Mf;->val$booleanValue2:Z
 
-    iget-object v0, v0, Ldefpackage/kj;->c:Ldefpackage/kw;
+    .line 188
+    .local v0, "z":Z
+    iget-object v1, p0, Ldefpackage/Mf;->val$hycVar:Lhyc;
 
-    .line 24
-    .local v0, "kwVar":Ldefpackage/kw;
-    if-eqz v0, :cond_0
+    .line 189
+    .local v1, "hycVar2":Lhyc;
+    iget-object v2, p0, Ldefpackage/Mf;->val$a2:Lpyn;
 
-    .line 25
-    invoke-virtual {v0}, Ldefpackage/kw;->close()V
+    .line 190
+    .local v2, "pynVar":Lpyn;
+    iget-object v3, p0, Ldefpackage/Mf;->val$I:Lope;
 
-    .line 27
+    .line 191
+    .local v3, "opeVar":Lope;
+    iget-object v4, p0, Ldefpackage/Mf;->val$a:Lpyn;
+
+    .line 192
+    .local v4, "pynVar2":Lpyn;
+    if-nez v0, :cond_0
+
+    .line 193
+    invoke-static {}, Liav;->a()Liau;
+
+    move-result-object v5
+
+    .line 194
+    .local v5, "a3":Liau;
+    const-string v6, "Portrait"
+
+    iput-object v6, v5, Liau;->a:Ljava/lang/String;
+
+    .line 195
+    invoke-virtual {v5, v3}, Liau;->c(Lope;)V
+
+    .line 196
+    sget-object v6, Llwd;->BACK:Llwd;
+
+    sget-object v7, Llwd;->FRONT:Llwd;
+
+    invoke-static {v6, v7}, Lope;->I(Ljava/lang/Object;Ljava/lang/Object;)Lope;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Liau;->b(Lope;)V
+
+    .line 197
+    invoke-interface {v4}, Lpyn;->get()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Liat;
+
+    invoke-virtual {v5}, Liau;->a()Liav;
+
+    move-result-object v7
+
+    invoke-virtual {v1, v6, v7}, Lhyc;->a(Liat;Liav;)V
+
+    .line 198
+    return-void
+
+    .line 200
+    .end local v5    # "a3":Liau;
     :cond_0
-    iget-object v1, p0, Ldefpackage/mf;->d:Ldefpackage/mh;
+    invoke-static {}, Liav;->a()Liau;
 
-    const/4 v2, 0x0
+    move-result-object v5
 
-    iput-object v2, v1, Ldefpackage/mh;->i:Ldefpackage/mf;
+    .line 201
+    .local v5, "a4":Liau;
+    const-string v6, "PortraitBack"
 
-    .line 28
-    invoke-super {p0}, Ldefpackage/li;->c()V
+    iput-object v6, v5, Liau;->a:Ljava/lang/String;
 
-    .line 29
+    .line 202
+    invoke-virtual {v5, v3}, Liau;->c(Lope;)V
+
+    .line 203
+    sget-object v6, Llwd;->BACK:Llwd;
+
+    invoke-static {v6}, Lope;->H(Ljava/lang/Object;)Lope;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Liau;->b(Lope;)V
+
+    .line 204
+    invoke-interface {v2}, Lpyn;->get()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Liat;
+
+    invoke-virtual {v5}, Liau;->a()Liav;
+
+    move-result-object v7
+
+    invoke-virtual {v1, v6, v7}, Lhyc;->a(Liat;Liav;)V
+
+    .line 205
+    invoke-static {}, Liav;->a()Liau;
+
+    move-result-object v6
+
+    .line 206
+    .local v6, "a5":Liau;
+    const-string v7, "PortraitFront"
+
+    iput-object v7, v6, Liau;->a:Ljava/lang/String;
+
+    .line 207
+    invoke-virtual {v6, v3}, Liau;->c(Lope;)V
+
+    .line 208
+    sget-object v7, Llwd;->FRONT:Llwd;
+
+    invoke-static {v7}, Lope;->H(Ljava/lang/Object;)Lope;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Liau;->b(Lope;)V
+
+    .line 209
+    invoke-interface {v4}, Lpyn;->get()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Liat;
+
+    invoke-virtual {v6}, Liau;->a()Liav;
+
+    move-result-object v8
+
+    invoke-virtual {v1, v7, v8}, Lhyc;->a(Liat;Liav;)V
+
+    .line 210
     return-void
 .end method

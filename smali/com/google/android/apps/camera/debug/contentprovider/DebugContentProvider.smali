@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final b:Ldefpackage/ouj;
+.field private static final b:Louj;
 
 
 # instance fields
-.field public a:Ldefpackage/ddf;
+.field public a:Lddf;
 
-.field private c:Ldefpackage/dgt;
+.field private c:Ldgt;
 
 
 # direct methods
@@ -20,11 +20,11 @@
     .line 36
     const-string v0, "com/google/android/apps/camera/debug/contentprovider/DebugContentProvider"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Louj;
 
     return-void
 .end method
@@ -72,9 +72,9 @@
     if-nez v0, :cond_0
 
     .line 48
-    sget-object v1, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Ldefpackage/ouj;
+    sget-object v1, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Louj;
 
-    invoke-virtual {v1}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v1}, Loue;->b()Lova;
 
     move-result-object v1
 
@@ -82,7 +82,7 @@
 
     const-string v3, "Could not get an instance of the instrumentation."
 
-    invoke-static {v1, v3, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v1, v3, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 49
     new-instance v1, Ljava/util/ArrayList;
@@ -118,14 +118,14 @@
     return-object v1
 .end method
 
-.method private final declared-synchronized c()Ldefpackage/dgt;
+.method private final declared-synchronized c()Ldgt;
     .locals 5
 
     monitor-enter p0
 
     .line 55
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c:Ldefpackage/dgt;
+    iget-object v0, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c:Ldgt;
 
     if-nez v0, :cond_0
 
@@ -139,7 +139,7 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 58
-    new-instance v1, Ldefpackage/dgt;
+    new-instance v1, Ldgt;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -155,40 +155,40 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Ldefpackage/dgt;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ldgt;-><init>(Ljava/lang/String;)V
 
     .line 59
-    .local v1, "dgtVar":Ldefpackage/dgt;
+    .local v1, "dgtVar":Ldgt;
     const-string v2, "startup_timing_latest"
 
-    const-class v3, Ldefpackage/ijf;
+    const-class v3, Lijf;
 
     new-instance v4, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider$1;
 
     invoke-direct {v4, p0}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider$1;-><init>(Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;)V
 
-    invoke-virtual {v1, v2, v3, v4}, Ldefpackage/dgt;->b(Ljava/lang/String;Ljava/lang/Class;Ldgs;)V
+    invoke-virtual {v1, v2, v3, v4}, Ldgt;->b(Ljava/lang/String;Ljava/lang/Class;Ldgs;)V
 
     .line 71
     const-string v2, "shutter_lag_latest"
 
-    const-class v3, Ldefpackage/ijo;
+    const-class v3, Lijo;
 
     new-instance v4, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider$2;
 
     invoke-direct {v4, p0}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider$2;-><init>(Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;)V
 
-    invoke-virtual {v1, v2, v3, v4}, Ldefpackage/dgt;->b(Ljava/lang/String;Ljava/lang/Class;Ldgs;)V
+    invoke-virtual {v1, v2, v3, v4}, Ldgt;->b(Ljava/lang/String;Ljava/lang/Class;Ldgs;)V
 
     .line 83
-    iput-object v1, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c:Ldefpackage/dgt;
+    iput-object v1, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c:Ldgt;
 
     .line 85
     .end local v0    # "context":Landroid/content/Context;
-    .end local v1    # "dgtVar":Ldefpackage/dgt;
+    .end local v1    # "dgtVar":Ldgt;
     .end local p0    # "this":Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c:Ldefpackage/dgt;
+    iget-object v0, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c:Ldgt;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -207,14 +207,14 @@
 
 
 # virtual methods
-.method public final declared-synchronized a()Ldefpackage/ddf;
+.method public final declared-synchronized a()Lddf;
     .locals 3
 
     monitor-enter p0
 
     .line 89
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->a:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->a:Lddf;
 
     if-nez v0, :cond_0
 
@@ -232,23 +232,23 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/enc;
+    check-cast v1, Lenc;
 
-    const-class v2, Ldefpackage/dgm;
+    const-class v2, Ldgm;
 
-    invoke-interface {v1, v2}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v1, v2}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/dgm;
+    check-cast v1, Ldgm;
 
-    invoke-interface {v1, p0}, Ldefpackage/dgm;->f(Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;)V
+    invoke-interface {v1, p0}, Ldgm;->f(Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;)V
 
     .line 94
     .end local v0    # "context":Landroid/content/Context;
     .end local p0    # "this":Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->a:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->a:Lddf;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -272,9 +272,9 @@
     .param p3, "strArr"    # [Ljava/lang/String;
 
     .line 99
-    sget-object v0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->b()Lova;
 
     move-result-object v0
 
@@ -282,7 +282,7 @@
 
     const/16 v2, 0x300
 
-    invoke-static {v0, v1, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v1, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 100
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -310,12 +310,12 @@
     const-string v4, "_id"
 
     :try_start_0
-    invoke-direct/range {p0 .. p0}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c()Ldefpackage/dgt;
+    invoke-direct/range {p0 .. p0}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c()Ldgt;
 
     move-result-object v5
 
     .line 107
-    .local v5, "c":Ldefpackage/dgt;
+    .local v5, "c":Ldgt;
     const/4 v6, 0x5
 
     .line 108
@@ -354,7 +354,7 @@
     invoke-virtual/range {p2 .. p2}, Ljava/io/PrintWriter;->println()V
 
     .line 110
-    iget-object v7, v5, Ldefpackage/dgt;->e:Ljava/util/Map;
+    iget-object v7, v5, Ldgt;->e:Ljava/util/Map;
 
     invoke-interface {v7}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -387,9 +387,9 @@
 
     check-cast v14, Ldgs;
 
-    sget-object v15, Ldefpackage/dgt;->b:Ldefpackage/dgr;
+    sget-object v15, Ldgt;->b:Ldgr;
 
-    invoke-virtual {v5, v14, v9, v15}, Ldefpackage/dgt;->a(Ldgs;ZLdefpackage/dgr;)Landroid/database/Cursor;
+    invoke-virtual {v5, v14, v9, v15}, Ldgt;->a(Ldgs;ZLdgr;)Landroid/database/Cursor;
 
     move-result-object v14
 
@@ -506,7 +506,7 @@
 
     .line 126
     :cond_1
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->a()Ldefpackage/ddf;
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->a()Lddf;
 
     move-result-object v0
 
@@ -522,7 +522,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 132
-    .end local v5    # "c":Ldefpackage/dgt;
+    .end local v5    # "c":Ldgt;
     .end local v6    # "i":I
     goto :goto_2
 
@@ -532,15 +532,15 @@
 
     .line 131
     .local v0, "e":Ljava/lang/Exception;
-    sget-object v2, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Ldefpackage/ouj;
+    sget-object v2, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Louj;
 
-    invoke-virtual {v2}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v2}, Loue;->b()Lova;
 
     move-result-object v2
 
     check-cast v2, Loug;
 
-    invoke-interface {v2, v0}, Ldefpackage/ova;->h(Ljava/lang/Throwable;)Ldefpackage/ova;
+    invoke-interface {v2, v0}, Lova;->h(Ljava/lang/Throwable;)Lova;
 
     move-result-object v2
 
@@ -548,7 +548,7 @@
 
     const/16 v3, 0x305
 
-    invoke-interface {v2, v3}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v2, v3}, Lova;->G(I)Lova;
 
     move-result-object v2
 
@@ -556,7 +556,7 @@
 
     const-string v3, "Dump exception"
 
-    invoke-interface {v2, v3}, Ldefpackage/ova;->o(Ljava/lang/String;)V
+    invoke-interface {v2, v3}, Lova;->o(Ljava/lang/String;)V
 
     .line 133
     .end local v0    # "e":Ljava/lang/Exception;
@@ -580,9 +580,9 @@
     .param p2, "contentValues"    # Landroid/content/ContentValues;
 
     .line 142
-    sget-object v0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->b()Lova;
 
     move-result-object v0
 
@@ -590,7 +590,7 @@
 
     const/16 v2, 0x303
 
-    invoke-static {v0, v1, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v1, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 143
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -649,15 +649,15 @@
     .line 159
     .local v1, "cursor":Landroid/database/Cursor;
     :try_start_0
-    invoke-direct {p0}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c()Ldefpackage/dgt;
+    invoke-direct {p0}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c()Ldgt;
 
     move-result-object v2
 
     .line 160
-    .local v2, "c":Ldefpackage/dgt;
-    iget-object v3, v2, Ldefpackage/dgt;->d:Ljava/util/Map;
+    .local v2, "c":Ldgt;
+    iget-object v3, v2, Ldgt;->d:Ljava/util/Map;
 
-    iget-object v4, v2, Ldefpackage/dgt;->c:Landroid/content/UriMatcher;
+    iget-object v4, v2, Ldgt;->c:Landroid/content/UriMatcher;
 
     invoke-virtual {v4, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -671,16 +671,16 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/ojz;
+    check-cast v3, Lojz;
 
     .line 161
-    .local v3, "ojzVar":Ldefpackage/ojz;
+    .local v3, "ojzVar":Lojz;
     if-nez v3, :cond_1
 
     .line 162
-    sget-object v4, Ldefpackage/dgt;->a:Ldefpackage/ouj;
+    sget-object v4, Ldgt;->a:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->b()Lova;
 
     move-result-object v4
 
@@ -688,7 +688,7 @@
 
     const/16 v5, 0x307
 
-    invoke-interface {v4, v5}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v4, v5}, Lova;->G(I)Lova;
 
     move-result-object v4
 
@@ -696,13 +696,13 @@
 
     const-string v5, "bad uri %s"
 
-    invoke-interface {v4, v5, p1}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v4, v5, p1}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 164
     :cond_1
-    invoke-interface {v3}, Ldefpackage/ojz;->a()Ljava/lang/Object;
+    invoke-interface {v3}, Lojz;->a()Ljava/lang/Object;
 
     move-result-object v4
 
@@ -713,8 +713,8 @@
     move-object v1, v4
 
     .line 168
-    .end local v2    # "c":Ldefpackage/dgt;
-    .end local v3    # "ojzVar":Ldefpackage/ojz;
+    .end local v2    # "c":Ldgt;
+    .end local v3    # "ojzVar":Lojz;
     :goto_0
     goto :goto_1
 
@@ -724,15 +724,15 @@
 
     .line 167
     .local v2, "e":Ljava/lang/Exception;
-    sget-object v3, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Ldefpackage/ouj;
+    sget-object v3, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Louj;
 
-    invoke-virtual {v3}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v3}, Loue;->b()Lova;
 
     move-result-object v3
 
     check-cast v3, Loug;
 
-    invoke-interface {v3, v2}, Ldefpackage/ova;->h(Ljava/lang/Throwable;)Ldefpackage/ova;
+    invoke-interface {v3, v2}, Lova;->h(Ljava/lang/Throwable;)Lova;
 
     move-result-object v3
 
@@ -740,7 +740,7 @@
 
     const/16 v4, 0x302
 
-    invoke-interface {v3, v4}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v3, v4}, Lova;->G(I)Lova;
 
     move-result-object v3
 
@@ -748,7 +748,7 @@
 
     const-string v4, "Query exception"
 
-    invoke-interface {v3, v4}, Ldefpackage/ova;->o(Ljava/lang/String;)V
+    invoke-interface {v3, v4}, Lova;->o(Ljava/lang/String;)V
 
     .line 169
     .end local v2    # "e":Ljava/lang/Exception;
@@ -773,9 +773,9 @@
     .param p4, "strArr"    # [Ljava/lang/String;
 
     .line 174
-    sget-object v0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->b()Lova;
 
     move-result-object v0
 
@@ -783,7 +783,7 @@
 
     const/16 v2, 0x301
 
-    invoke-static {v0, v1, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v1, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 175
     new-instance v0, Ljava/lang/IllegalArgumentException;

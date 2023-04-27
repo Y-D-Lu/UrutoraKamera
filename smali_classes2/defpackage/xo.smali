@@ -1,172 +1,70 @@
-.class final Ldefpackage/xo;
-.super Ldefpackage/xh;
+.class public Ldefpackage/Xo;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Yo;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$1:Ldefpackage/Yo;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ldefpackage/Yo;)V
     .locals 0
+    .param p1, "this$1"    # Ldefpackage/Yo;
 
-    .line 5
-    invoke-direct {p0}, Ldefpackage/xh;-><init>()V
+    .line 50355
+    iput-object p1, p0, Ldefpackage/Xo;->this$1:Ldefpackage/Yo;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ldefpackage/xp;Ldefpackage/xp;)V
-    .locals 0
-    .param p1, "xpVar"    # Ldefpackage/xp;
-    .param p2, "xpVar2"    # Ldefpackage/xp;
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 8
-    iput-object p2, p1, Ldefpackage/xp;->next:Ldefpackage/xp;
+    .line 50358
+    move-object v0, p1
 
-    .line 9
+    check-cast v0, Landroid/animation/Animator;
+
+    .line 50359
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Xo;->this$1:Ldefpackage/Yo;
+
+    iget-object v1, v1, Ldefpackage/Yo;->this$0:Ljkz;
+
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
+
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
+
+    .line 50360
     return-void
 .end method
 
-.method public final b(Ldefpackage/xp;Ljava/lang/Thread;)V
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
     .locals 0
-    .param p1, "xpVar"    # Ldefpackage/xp;
-    .param p2, "thread"    # Ljava/lang/Thread;
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 13
-    iput-object p2, p1, Ldefpackage/xp;->thread:Ljava/lang/Thread;
-
-    .line 14
-    return-void
-.end method
-
-.method public final c(Ldefpackage/xq;Ldefpackage/xl;Ldefpackage/xl;)Z
-    .locals 1
-    .param p1, "xqVar"    # Ldefpackage/xq;
-    .param p2, "xlVar"    # Ldefpackage/xl;
-    .param p3, "xlVar2"    # Ldefpackage/xl;
-
-    .line 18
-    monitor-enter p1
-
-    .line 19
-    :try_start_0
-    iget-object v0, p1, Ldefpackage/xq;->listeners:Ldefpackage/xl;
-
-    if-ne v0, p2, :cond_0
-
-    .line 20
-    iput-object p3, p1, Ldefpackage/xq;->listeners:Ldefpackage/xl;
-
-    .line 21
-    const/4 v0, 0x1
-
-    monitor-exit p1
-
-    return v0
-
-    .line 23
-    :cond_0
-    const/4 v0, 0x0
-
-    monitor-exit p1
-
-    return v0
-
-    .line 24
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method public final d(Ldefpackage/xq;Ljava/lang/Object;Ljava/lang/Object;)Z
-    .locals 1
-    .param p1, "xqVar"    # Ldefpackage/xq;
-    .param p2, "obj"    # Ljava/lang/Object;
-    .param p3, "obj2"    # Ljava/lang/Object;
-
-    .line 29
-    monitor-enter p1
-
-    .line 30
-    :try_start_0
-    iget-object v0, p1, Ldefpackage/xq;->value:Ljava/lang/Object;
-
-    if-ne v0, p2, :cond_0
-
-    .line 31
-    iput-object p3, p1, Ldefpackage/xq;->value:Ljava/lang/Object;
-
-    .line 32
-    const/4 v0, 0x1
-
-    monitor-exit p1
-
-    return v0
-
-    .line 34
-    :cond_0
-    const/4 v0, 0x0
-
-    monitor-exit p1
-
-    return v0
-
-    .line 35
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method public final e(Ldefpackage/xq;Ldefpackage/xp;Ldefpackage/xp;)Z
-    .locals 1
-    .param p1, "xqVar"    # Ldefpackage/xq;
-    .param p2, "xpVar"    # Ldefpackage/xp;
-    .param p3, "xpVar2"    # Ldefpackage/xp;
-
-    .line 40
-    monitor-enter p1
-
-    .line 41
-    :try_start_0
-    iget-object v0, p1, Ldefpackage/xq;->waiters:Ldefpackage/xp;
-
-    if-ne v0, p2, :cond_0
-
-    .line 42
-    iput-object p3, p1, Ldefpackage/xq;->waiters:Ldefpackage/xp;
-
-    .line 43
-    const/4 v0, 0x1
-
-    monitor-exit p1
-
-    return v0
-
-    .line 45
-    :cond_0
-    const/4 v0, 0x0
-
-    monitor-exit p1
-
-    return v0
-
-    .line 46
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
+    .line 50364
+    return-object p1
 .end method

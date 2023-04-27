@@ -8,7 +8,7 @@
 
 .field public static final e:Ljava/time/Duration;
 
-.field public static final f:Ldefpackage/ouj;
+.field public static final f:Louj;
 
 
 # instance fields
@@ -54,11 +54,11 @@
     .line 24
     const-string v0, "com/google/android/apps/camera/toast/ToastView"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/toast/ToastView;->f:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/toast/ToastView;->f:Louj;
 
     return-void
 .end method
@@ -72,22 +72,22 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 37
-    sget-object v0, Ldefpackage/isd;->e:Ldefpackage/isd;
+    sget-object v0, Lisd;->e:Lisd;
 
     iput-object v0, p0, Lcom/google/android/apps/camera/toast/ToastView;->i:Ljava/lang/Runnable;
 
     .line 38
-    sget-object v0, Ldefpackage/isd;->f:Ldefpackage/isd;
+    sget-object v0, Lisd;->f:Lisd;
 
     iput-object v0, p0, Lcom/google/android/apps/camera/toast/ToastView;->j:Ljava/lang/Runnable;
 
     .line 39
-    sget-object v0, Ldefpackage/isd;->g:Ldefpackage/isd;
+    sget-object v0, Lisd;->g:Lisd;
 
     iput-object v0, p0, Lcom/google/android/apps/camera/toast/ToastView;->k:Ljava/lang/Runnable;
 
     .line 40
-    sget-object v0, Ldefpackage/isd;->h:Ldefpackage/isd;
+    sget-object v0, Lisd;->h:Lisd;
 
     iput-object v0, p0, Lcom/google/android/apps/camera/toast/ToastView;->l:Ljava/lang/Runnable;
 
@@ -95,12 +95,12 @@
     return-void
 .end method
 
-.method public static e(Ldefpackage/isi;)Lcom/google/android/apps/camera/toast/ToastView;
+.method public static e(Lisi;)Lcom/google/android/apps/camera/toast/ToastView;
     .locals 3
-    .param p0, "isiVar"    # Ldefpackage/isi;
+    .param p0, "isiVar"    # Lisi;
 
     .line 44
-    iget-object v0, p0, Ldefpackage/isi;->a:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lisi;->a:Landroid/view/ViewGroup;
 
     .line 45
     .local v0, "viewGroup":Landroid/view/ViewGroup;
@@ -123,7 +123,7 @@
 
     .line 47
     .local v1, "toastView":Lcom/google/android/apps/camera/toast/ToastView;
-    invoke-virtual {v1, p0}, Lcom/google/android/apps/camera/toast/ToastView;->b(Ldefpackage/isi;)V
+    invoke-virtual {v1, p0}, Lcom/google/android/apps/camera/toast/ToastView;->b(Lisi;)V
 
     .line 48
     return-object v1
@@ -131,9 +131,9 @@
 
 
 # virtual methods
-.method public b(Ldefpackage/isi;)V
+.method public b(Lisi;)V
     .locals 7
-    .param p1, "isiVar"    # Ldefpackage/isi;
+    .param p1, "isiVar"    # Lisi;
 
     .line 52
     const v0, 0x7f0a0239
@@ -149,7 +149,7 @@
     if-eqz v0, :cond_0
 
     .line 54
-    iget-object v1, p1, Ldefpackage/isi;->b:Ljava/lang/String;
+    iget-object v1, p1, Lisi;->b:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -168,13 +168,13 @@
     if-eqz v1, :cond_1
 
     .line 58
-    iget-object v2, p1, Ldefpackage/isi;->c:Ljava/lang/String;
+    iget-object v2, p1, Lisi;->c:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 60
     :cond_1
-    invoke-virtual {p1}, Ldefpackage/isi;->a()I
+    invoke-virtual {p1}, Lisi;->a()I
 
     move-result v2
 
@@ -199,32 +199,32 @@
     iput-wide v2, p0, Lcom/google/android/apps/camera/toast/ToastView;->h:J
 
     .line 61
-    new-instance v2, Ldefpackage/isk;
+    new-instance v2, Lisk;
 
     const/4 v3, 0x0
 
-    invoke-direct {v2, p0, v3}, Ldefpackage/isk;-><init>(Lcom/google/android/apps/camera/toast/ToastView;I)V
+    invoke-direct {v2, p0, v3}, Lisk;-><init>(Lcom/google/android/apps/camera/toast/ToastView;I)V
 
     iput-object v2, p0, Lcom/google/android/apps/camera/toast/ToastView;->i:Ljava/lang/Runnable;
 
     .line 62
-    invoke-virtual {p0, p1}, Lcom/google/android/apps/camera/toast/ToastView;->f(Ldefpackage/isi;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/apps/camera/toast/ToastView;->f(Lisi;)V
 
     .line 63
     invoke-virtual {p0}, Lcom/google/android/apps/camera/toast/ToastView;->d()Landroid/widget/PopupWindow;
 
     .line 64
-    iget-object v2, p1, Ldefpackage/isi;->d:Ljava/lang/Runnable;
+    iget-object v2, p1, Lisi;->d:Ljava/lang/Runnable;
 
     iput-object v2, p0, Lcom/google/android/apps/camera/toast/ToastView;->j:Ljava/lang/Runnable;
 
     .line 65
-    iget-object v2, p1, Ldefpackage/isi;->f:Ljava/lang/Runnable;
+    iget-object v2, p1, Lisi;->f:Ljava/lang/Runnable;
 
     iput-object v2, p0, Lcom/google/android/apps/camera/toast/ToastView;->k:Ljava/lang/Runnable;
 
     .line 66
-    iget-object v2, p1, Ldefpackage/isi;->e:Ljava/lang/Runnable;
+    iget-object v2, p1, Lisi;->e:Ljava/lang/Runnable;
 
     iput-object v2, p0, Lcom/google/android/apps/camera/toast/ToastView;->l:Ljava/lang/Runnable;
 
@@ -327,12 +327,12 @@
     return-object v1
 .end method
 
-.method public final f(Ldefpackage/isi;)V
+.method public final f(Lisi;)V
     .locals 1
-    .param p1, "isiVar"    # Ldefpackage/isi;
+    .param p1, "isiVar"    # Lisi;
 
     .line 96
-    iget-object v0, p1, Ldefpackage/isi;->a:Landroid/view/ViewGroup;
+    iget-object v0, p1, Lisi;->a:Landroid/view/ViewGroup;
 
     iput-object v0, p0, Lcom/google/android/apps/camera/toast/ToastView;->n:Landroid/view/View;
 
@@ -364,11 +364,11 @@
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/isk;
+    new-instance v1, Lisk;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p0, v2}, Ldefpackage/isk;-><init>(Lcom/google/android/apps/camera/toast/ToastView;I)V
+    invoke-direct {v1, p0, v2}, Lisk;-><init>(Lcom/google/android/apps/camera/toast/ToastView;I)V
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->withEndAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
 

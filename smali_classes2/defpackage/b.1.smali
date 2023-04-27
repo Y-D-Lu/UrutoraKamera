@@ -1,166 +1,137 @@
-.class public final Ldefpackage/b;
+.class public Ldefpackage/b;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field private static final a:Ljava/util/Properties;
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/c;->fz()Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Ldefpackage/c;
+
+.field public final synthetic val$f:Lpih;
+
+.field public final synthetic val$runnable2:Ljava/lang/Runnable;
+
+.field public final synthetic val$str2:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    .line 16
-    const-class v0, Ldefpackage/d;
-
-    new-instance v1, Ljava/util/Properties;
-
-    invoke-direct {v1}, Ljava/util/Properties;-><init>()V
-
-    .line 17
-    .local v1, "properties":Ljava/util/Properties;
-    sput-object v1, Ldefpackage/b;->a:Ljava/util/Properties;
-
-    .line 19
-    :try_start_0
-    invoke-static {}, Ljava/lang/System;->getSecurityManager()Ljava/lang/SecurityManager;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_0
-
-    new-instance v2, Ldefpackage/c;
-
-    invoke-direct {v2, v0}, Ldefpackage/c;-><init>(Ljava/lang/Class;)V
-
-    invoke-static {v2}, Ljava/security/AccessController;->doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/io/InputStream;
-
-    goto :goto_0
-
-    :cond_0
-    const-string v2, "/android/icumessageformat/ICUConfig.properties"
-
-    invoke-virtual {v0, v2}, Ljava/lang/Class;->getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
-
-    move-result-object v0
-
-    .line 20
-    .local v0, "resourceAsStream":Ljava/io/InputStream;
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 21
-    invoke-virtual {v1, v0}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/util/MissingResourceException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_1
-
-    .line 24
-    .end local v0    # "resourceAsStream":Ljava/io/InputStream;
-    :catch_0
-    move-exception v0
-
-    goto :goto_2
-
-    .line 23
-    :catch_1
-    move-exception v0
-
-    .line 25
-    :cond_1
-    :goto_1
-    nop
-
-    .line 26
-    .end local v1    # "properties":Ljava/util/Properties;
-    :goto_2
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Ldefpackage/c;Ljava/lang/String;Ljava/lang/Runnable;Lpih;)V
     .locals 0
+    .param p1, "this$0"    # Ldefpackage/c;
 
-    .line 12
+    .line 77
+    iput-object p1, p0, Ldefpackage/b;->this$0:Ldefpackage/c;
+
+    iput-object p2, p0, Ldefpackage/b;->val$str2:Ljava/lang/String;
+
+    iput-object p3, p0, Ldefpackage/b;->val$runnable2:Ljava/lang/Runnable;
+
+    iput-object p4, p0, Ldefpackage/b;->val$f:Lpih;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a()Ljava/lang/String;
-    .locals 4
 
-    .line 30
-    invoke-static {}, Ljava/lang/System;->getSecurityManager()Ljava/lang/SecurityManager;
+# virtual methods
+.method public final run()V
+    .locals 6
 
-    move-result-object v0
+    .line 80
+    iget-object v0, p0, Ldefpackage/b;->val$str2:Ljava/lang/String;
 
-    const-string v1, "android.icumessageformat.text.MessagePattern.ApostropheMode"
+    .line 81
+    .local v0, "str3":Ljava/lang/String;
+    iget-object v1, p0, Ldefpackage/b;->val$runnable2:Ljava/lang/Runnable;
 
-    if-eqz v0, :cond_0
+    .line 82
+    .local v1, "runnable3":Ljava/lang/Runnable;
+    iget-object v2, p0, Ldefpackage/b;->val$f:Lpih;
 
-    .line 32
+    .line 84
+    .local v2, "pihVar":Lpih;
+    const/4 v3, 0x0
+
     :try_start_0
-    new-instance v0, Ldefpackage/a;
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    invoke-direct {v0}, Ldefpackage/a;-><init>()V
-
-    invoke-static {v0}, Ljava/security/AccessController;->doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
+    move-result v4
     :try_end_0
-    .catch Ljava/security/AccessControlException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .local v0, "str":Ljava/lang/String;
+    const-string v5, "task:"
+
+    if-eqz v4, :cond_0
+
+    :try_start_1
+    invoke-virtual {v5, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
     goto :goto_0
 
-    .line 33
-    .end local v0    # "str":Ljava/lang/String;
-    :catch_0
-    move-exception v0
-
-    .line 34
-    .local v0, "e":Ljava/security/AccessControlException;
-    const/4 v0, 0x0
-
-    .line 35
-    .local v0, "str":Ljava/lang/String;
-    :goto_0
-    goto :goto_1
-
-    .line 37
-    .end local v0    # "str":Ljava/lang/String;
     :cond_0
-    invoke-static {v1}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    new-instance v4, Ljava/lang/String;
 
-    move-result-object v0
+    invoke-direct {v4, v5}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
-    .line 39
-    .restart local v0    # "str":Ljava/lang/String;
-    :goto_1
-    if-nez v0, :cond_1
+    :goto_0
+    invoke-static {v4}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    sget-object v2, Ldefpackage/b;->a:Ljava/util/Properties;
+    .line 85
+    invoke-interface {v1}, Ljava/lang/Runnable;->run()V
 
-    const-string v3, "DOUBLE_OPTIONAL"
+    .line 86
+    invoke-static {}, Landroid/os/Trace;->endSection()V
 
-    invoke-virtual {v2, v1, v3}, Ljava/util/Properties;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 87
+    const/4 v4, 0x1
 
-    move-result-object v1
+    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    goto :goto_2
+    move-result-object v4
 
-    :cond_1
-    move-object v1, v0
+    invoke-virtual {v2, v4}, Lpih;->o(Ljava/lang/Object;)Z
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    :goto_2
-    return-object v1
+    .line 89
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lpih;->o(Ljava/lang/Object;)Z
+
+    .line 90
+    nop
+
+    .line 91
+    return-void
+
+    .line 89
+    :catchall_0
+    move-exception v4
+
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lpih;->o(Ljava/lang/Object;)Z
+
+    .line 90
+    throw v4
 .end method

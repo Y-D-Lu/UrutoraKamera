@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static dep:Ldefpackage/dep;
+.field public static dep:Ldep;
 
 
 # direct methods
@@ -26,9 +26,9 @@
     return-void
 .end method
 
-.method public static getCaptureResult(Ldefpackage/lzv;)Z
+.method public static getCaptureResult(Llzv;)Z
     .locals 4
-    .param p0, "lzvVar"    # Ldefpackage/lzv;
+    .param p0, "lzvVar"    # Llzv;
 
     .line 26
     invoke-static {}, Lagc/Agc;->noNeedFixLens()Z
@@ -44,7 +44,7 @@
     .line 27
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->CONTROL_AF_MODE:Landroid/hardware/camera2/CaptureResult$Key;
 
-    invoke-interface {p0, v0}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
     :cond_1
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->CONTROL_AF_SCENE_CHANGE:Landroid/hardware/camera2/CaptureResult$Key;
 
-    invoke-interface {p0, v0}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -83,9 +83,9 @@
     return v1
 .end method
 
-.method public static getCaptureResultKey(Ldefpackage/lzv;)Ljava/lang/Integer;
+.method public static getCaptureResultKey(Llzv;)Ljava/lang/Integer;
     .locals 1
-    .param p0, "lzvVar"    # Ldefpackage/lzv;
+    .param p0, "lzvVar"    # Llzv;
 
     .line 34
     invoke-static {}, Lagc/Agc;->noNeedFixLens()Z
@@ -102,7 +102,7 @@
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->CONTROL_AF_MODE:Landroid/hardware/camera2/CaptureResult$Key;
 
     :goto_0
-    invoke-interface {p0, v0}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -111,11 +111,11 @@
     return-object v0
 .end method
 
-.method public static getGcamSensorId(Ldefpackage/lvp;Ldefpackage/lvq;Ldefpackage/lzv;)I
+.method public static getGcamSensorId(Llvp;Llvq;Llzv;)I
     .locals 2
-    .param p0, "r15"    # Ldefpackage/lvp;
-    .param p1, "r16"    # Ldefpackage/lvq;
-    .param p2, "r17"    # Ldefpackage/lzv;
+    .param p0, "r15"    # Llvp;
+    .param p1, "r16"    # Llvq;
+    .param p2, "r17"    # Llzv;
 
     .line 125
     new-instance v0, Ljava/lang/UnsupportedOperationException;
@@ -127,14 +127,14 @@
     throw v0
 .end method
 
-.method public static getReadoutTimeNs(Ldefpackage/lvp;)J
+.method public static getReadoutTimeNs(Llvp;)J
     .locals 2
-    .param p0, "lvpVar"    # Ldefpackage/lvp;
+    .param p0, "lvpVar"    # Llvp;
 
     .line 129
     sget-object v0, Landroid/hardware/camera2/CameraCharacteristics;->LENS_FACING:Landroid/hardware/camera2/CameraCharacteristics$Key;
 
-    invoke-interface {p0, v0}, Ldefpackage/lvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Llvp;->n(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -222,46 +222,46 @@
     return-void
 .end method
 
-.method public static setDeveloperSettings(Ldefpackage/dep;)V
+.method public static setDeveloperSettings(Ldep;)V
     .locals 3
-    .param p0, "depVar"    # Ldefpackage/dep;
+    .param p0, "depVar"    # Ldep;
 
     .line 146
-    sput-object p0, Lcom/AGC;->dep:Ldefpackage/dep;
+    sput-object p0, Lcom/AGC;->dep:Ldep;
 
     .line 147
-    sget-object v0, Ldefpackage/ddx;->r:Ldefpackage/ddg;
+    sget-object v0, Lddx;->r:Lddg;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Ldefpackage/dep;->s(Ldefpackage/ddg;Z)V
+    invoke-virtual {p0, v0, v1}, Ldep;->s(Lddg;Z)V
 
     .line 148
-    sget-object v0, Ldefpackage/ddm;->A:Ldefpackage/ddg;
+    sget-object v0, Lddm;->A:Lddg;
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v0, v2}, Ldefpackage/dep;->s(Ldefpackage/ddg;Z)V
+    invoke-virtual {p0, v0, v2}, Ldep;->s(Lddg;Z)V
 
     .line 149
-    sget-object v0, Ldefpackage/ddm;->D:Ldefpackage/ddg;
+    sget-object v0, Lddm;->D:Lddg;
 
-    invoke-virtual {p0, v0, v2}, Ldefpackage/dep;->s(Ldefpackage/ddg;Z)V
+    invoke-virtual {p0, v0, v2}, Ldep;->s(Lddg;Z)V
 
     .line 150
-    sget-object v0, Ldefpackage/ddq;->h:Ldefpackage/ddg;
+    sget-object v0, Lddq;->h:Lddg;
 
-    invoke-virtual {p0, v0, v2}, Ldefpackage/dep;->s(Ldefpackage/ddg;Z)V
+    invoke-virtual {p0, v0, v2}, Ldep;->s(Lddg;Z)V
 
     .line 151
-    sget-object v0, Ldefpackage/ddx;->o:Ldefpackage/ddg;
+    sget-object v0, Lddx;->o:Lddg;
 
-    invoke-virtual {p0, v0, v1}, Ldefpackage/dep;->s(Ldefpackage/ddg;Z)V
+    invoke-virtual {p0, v0, v1}, Ldep;->s(Lddg;Z)V
 
     .line 152
-    sget-object v0, Ldefpackage/ddx;->p:Ldefpackage/ddg;
+    sget-object v0, Lddx;->p:Lddg;
 
-    invoke-virtual {p0, v0, v1}, Ldefpackage/dep;->s(Ldefpackage/ddg;Z)V
+    invoke-virtual {p0, v0, v1}, Ldep;->s(Lddg;Z)V
 
     .line 153
     return-void

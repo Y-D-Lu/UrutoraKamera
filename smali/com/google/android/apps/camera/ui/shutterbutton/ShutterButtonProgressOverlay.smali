@@ -262,11 +262,11 @@
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 83
-    new-instance v2, Ldefpackage/jlk;
+    new-instance v2, Ljlk;
 
     const/4 v3, 0x3
 
-    invoke-direct {v2, p0, v3}, Ldefpackage/jlk;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;I)V
+    invoke-direct {v2, p0, v3}, Ljlk;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;I)V
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -285,9 +285,9 @@
     .line 87
     iget-object v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;->t:Landroid/animation/AnimatorSet;
 
-    new-instance v4, Ldefpackage/jlm;
+    new-instance v4, Ljlm;
 
-    invoke-direct {v4, p0}, Ldefpackage/jlm;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;)V
+    invoke-direct {v4, p0}, Ljlm;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;)V
 
     invoke-virtual {v3, v4}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -423,9 +423,9 @@
     invoke-virtual {v10, v13}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 113
-    new-instance v13, Ldefpackage/jlk;
+    new-instance v13, Ljlk;
 
-    invoke-direct {v13, v0, v3}, Ldefpackage/jlk;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;I)V
+    invoke-direct {v13, v0, v3}, Ljlk;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;I)V
 
     invoke-virtual {v10, v13}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -456,9 +456,9 @@
     invoke-virtual {v13, v11}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 117
-    new-instance v11, Ldefpackage/jlk;
+    new-instance v11, Ljlk;
 
-    invoke-direct {v11, v0, v7}, Ldefpackage/jlk;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;I)V
+    invoke-direct {v11, v0, v7}, Ljlk;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;I)V
 
     invoke-virtual {v13, v11}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -483,9 +483,9 @@
     .line 121
     iget-object v3, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;->i:Landroid/animation/AnimatorSet;
 
-    new-instance v7, Ldefpackage/jll;
+    new-instance v7, Ljll;
 
-    invoke-direct {v7, v0}, Ldefpackage/jll;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;)V
+    invoke-direct {v7, v0}, Ljll;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;)V
 
     invoke-virtual {v3, v7}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -624,9 +624,9 @@
     .line 146
     iget-object v12, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;->j:Landroid/animation/ValueAnimator;
 
-    new-instance v15, Ldefpackage/jlk;
+    new-instance v15, Ljlk;
 
-    invoke-direct {v15, v0, v8}, Ldefpackage/jlk;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;I)V
+    invoke-direct {v15, v0, v8}, Ljlk;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButtonProgressOverlay;I)V
 
     invoke-virtual {v12, v15}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 

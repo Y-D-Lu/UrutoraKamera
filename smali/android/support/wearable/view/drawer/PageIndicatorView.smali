@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/ala;
+.implements Lala;
 
 
 # annotations
@@ -99,7 +99,7 @@
 
     move-result-object v1
 
-    sget-object v2, Ldefpackage/sf;->f:[I
+    sget-object v2, Lsf;->f:[I
 
     const v3, 0x7f12012b
 
@@ -609,9 +609,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/tp;
+    new-instance v1, Ltp;
 
-    invoke-direct {v1, p0}, Ldefpackage/tp;-><init>(Landroid/support/wearable/view/drawer/PageIndicatorView;)V
+    invoke-direct {v1, p0}, Ltp;-><init>(Landroid/support/wearable/view/drawer/PageIndicatorView;)V
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 

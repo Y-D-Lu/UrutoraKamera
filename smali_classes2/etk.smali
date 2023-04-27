@@ -3,5 +3,5 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jca;
-.implements Ldefpackage/jot;
+.implements Ljca;
+.implements Ljot;

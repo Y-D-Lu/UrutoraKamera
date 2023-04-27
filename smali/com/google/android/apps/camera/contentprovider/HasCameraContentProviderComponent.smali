@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract cameraContentProviderComponent(Ldefpackage/dev;)Ldefpackage/der;
+.method public abstract cameraContentProviderComponent(Ldev;)Lder;
 .end method
 
 .method public abstract initAppComponent()V

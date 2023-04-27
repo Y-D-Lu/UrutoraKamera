@@ -3,8 +3,8 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/agm;
-.implements Ldefpackage/jib;
+.implements Lagm;
+.implements Ljib;
 
 
 # instance fields
@@ -30,11 +30,11 @@
 
 .field private P:Ljava/util/function/Function;
 
-.field public c:Ldefpackage/hub;
+.field public c:Lhub;
 
-.field public d:Ldefpackage/huf;
+.field public d:Lhuf;
 
-.field public e:Ldefpackage/agm;
+.field public e:Lagm;
 
 .field public f:Landroid/content/res/ColorStateList;
 
@@ -54,9 +54,9 @@
     invoke-direct {p0, p1}, Landroidx/preference/SwitchPreference;-><init>(Landroid/content/Context;)V
 
     .line 56
-    sget-object v0, Ldefpackage/jig;->a:Ldefpackage/jig;
+    sget-object v0, Ljig;->a:Ljig;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Ldefpackage/agm;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Lagm;
 
     .line 57
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->ag(Landroid/content/Context;)V
@@ -74,9 +74,9 @@
     invoke-direct {p0, p1, p2}, Landroidx/preference/SwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 62
-    sget-object v0, Ldefpackage/jig;->a:Ldefpackage/jig;
+    sget-object v0, Ljig;->a:Ljig;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Ldefpackage/agm;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Lagm;
 
     .line 63
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->ag(Landroid/content/Context;)V
@@ -95,9 +95,9 @@
     invoke-direct {p0, p1, p2, p3}, Landroidx/preference/SwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 68
-    sget-object v0, Ldefpackage/jig;->a:Ldefpackage/jig;
+    sget-object v0, Ljig;->a:Ljig;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Ldefpackage/agm;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Lagm;
 
     .line 69
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->ag(Landroid/content/Context;)V
@@ -137,17 +137,17 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/enc;
+    check-cast v0, Lenc;
 
-    const-class v1, Ldefpackage/jih;
+    const-class v1, Ljih;
 
-    invoke-interface {v0, v1}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jih;
+    check-cast v0, Ljih;
 
-    invoke-interface {v0, p0}, Ldefpackage/jih;->w(Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;)V
+    invoke-interface {v0, p0}, Ljih;->w(Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;)V
 
     .line 78
     const/4 v0, 0x0
@@ -157,18 +157,18 @@
     .line 79
     iget-object v0, p0, Landroidx/preference/Preference;->t:Ljava/lang/String;
 
-    invoke-static {v0}, Ldefpackage/hts;->a(Ljava/lang/String;)Ldefpackage/hts;
+    invoke-static {v0}, Lhts;->a(Ljava/lang/String;)Lhts;
 
     move-result-object v0
 
     .line 80
-    .local v0, "a":Ldefpackage/hts;
+    .local v0, "a":Lhts;
     if-eqz v0, :cond_0
 
     .line 81
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->d:Ldefpackage/huf;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->d:Lhuf;
 
-    invoke-interface {v1, v0}, Ldefpackage/huf;->c(Ldefpackage/hts;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Lhuf;->c(Lhts;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -178,11 +178,11 @@
 
     .line 83
     :cond_0
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->c:Ldefpackage/hub;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->c:Lhub;
 
     iget-object v2, p0, Landroidx/preference/Preference;->t:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ldefpackage/hub;->m(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Lhub;->m(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -194,7 +194,7 @@
 
     .line 85
     :goto_0
-    iput-object p0, p0, Landroidx/preference/Preference;->n:Ldefpackage/agm;
+    iput-object p0, p0, Landroidx/preference/Preference;->n:Lagm;
 
     .line 86
     return-void
@@ -202,12 +202,12 @@
 
 
 # virtual methods
-.method public final M(Ldefpackage/agm;)V
+.method public final M(Lagm;)V
     .locals 0
-    .param p1, "agmVar"    # Ldefpackage/agm;
+    .param p1, "agmVar"    # Lagm;
 
     .line 90
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Ldefpackage/agm;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Lagm;
 
     .line 91
     return-void
@@ -218,23 +218,23 @@
     .param p1, "z"    # Z
 
     .line 95
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->c:Ldefpackage/hub;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->c:Lhub;
 
     iget-object v1, p0, Landroidx/preference/Preference;->t:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ldefpackage/hub;->m(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lhub;->m(Ljava/lang/String;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public final a(Ldefpackage/ahm;)V
+.method public final a(Lahm;)V
     .locals 6
-    .param p1, "ahmVar"    # Ldefpackage/ahm;
+    .param p1, "ahmVar"    # Lahm;
 
     .line 101
-    invoke-super {p0, p1}, Landroidx/preference/SwitchPreference;->a(Ldefpackage/ahm;)V
+    invoke-super {p0, p1}, Landroidx/preference/SwitchPreference;->a(Lahm;)V
 
     .line 102
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->f:Landroid/content/res/ColorStateList;
@@ -244,7 +244,7 @@
     if-eqz v0, :cond_0
 
     .line 103
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
     if-eqz v0, :cond_1
 
     .line 111
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -314,7 +314,7 @@
     if-eqz v0, :cond_2
 
     .line 119
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const/high16 v1, 0x1020000
 
@@ -348,7 +348,7 @@
     if-eqz v0, :cond_3
 
     .line 126
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const v1, 0x1020016
 
@@ -381,7 +381,7 @@
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const v1, 0x7f0a021f
 
@@ -422,7 +422,7 @@
     if-eqz v0, :cond_5
 
     .line 137
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const v1, 0x7f0a0018
 
@@ -468,7 +468,7 @@
 
     .line 152
     :cond_6
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const v1, 0x7f0a00b8
 
@@ -480,7 +480,7 @@
 
     .line 153
     .local v0, "button2":Landroid/widget/Button;
-    iget-object v1, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v1, p1, Lqs;->a:Landroid/view/View;
 
     const v2, 0x7f0a00ba
 
@@ -492,7 +492,7 @@
 
     .line 154
     .local v1, "imageView":Landroid/widget/ImageView;
-    iget-object v2, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v2, p1, Lqs;->a:Landroid/view/View;
 
     const v3, 0x7f0a00b9
 
@@ -504,7 +504,7 @@
 
     .line 155
     .local v2, "linearLayout2":Landroid/widget/LinearLayout;
-    iget-object v3, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v3, p1, Lqs;->a:Landroid/view/View;
 
     const v4, 0x7f0a0079
 
@@ -533,11 +533,11 @@
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     .line 160
-    new-instance v4, Ldefpackage/jif;
+    new-instance v4, Ljif;
 
     const/4 v5, 0x0
 
-    invoke-direct {v4, v3, v1, v5}, Ldefpackage/jif;-><init>(Landroid/widget/FrameLayout;Landroid/widget/ImageView;I)V
+    invoke-direct {v4, v3, v1, v5}, Ljif;-><init>(Landroid/widget/FrameLayout;Landroid/widget/ImageView;I)V
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -554,9 +554,9 @@
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 163
-    new-instance v4, Ldefpackage/jid;
+    new-instance v4, Ljid;
 
-    invoke-direct {v4, v0, v5}, Ldefpackage/jid;-><init>(Landroid/widget/Button;I)V
+    invoke-direct {v4, v0, v5}, Ljid;-><init>(Landroid/widget/Button;I)V
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -618,7 +618,7 @@
     .param p2, "obj"    # Ljava/lang/Object;
 
     .line 180
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->c:Ldefpackage/hub;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->c:Lhub;
 
     iget-object v1, p0, Landroidx/preference/Preference;->t:Ljava/lang/String;
 
@@ -630,12 +630,12 @@
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Ldefpackage/hub;->l(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, v2}, Lhub;->l(Ljava/lang/String;Z)V
 
     .line 181
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Ldefpackage/agm;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Lagm;
 
-    invoke-interface {v0, p1, p2}, Ldefpackage/agm;->b(Landroidx/preference/Preference;Ljava/lang/Object;)Z
+    invoke-interface {v0, p1, p2}, Lagm;->b(Landroidx/preference/Preference;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -673,11 +673,11 @@
     return-void
 .end method
 
-.method public final s()Ldefpackage/agm;
+.method public final s()Lagm;
     .locals 1
 
     .line 195
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Ldefpackage/agm;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/MaterialManagedSwitchPreference;->e:Lagm;
 
     return-object v0
 .end method

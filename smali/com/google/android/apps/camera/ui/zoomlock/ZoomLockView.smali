@@ -16,9 +16,9 @@
 
 .field public f:Z
 
-.field public g:Ldefpackage/jrz;
+.field public g:Ljrz;
 
-.field public h:Ldefpackage/jrg;
+.field public h:Ljrg;
 
 .field private i:Landroid/animation/AnimatorSet;
 
@@ -32,9 +32,9 @@
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
     .line 45
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->g:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->g:Ljrz;
 
     .line 46
     return-void
@@ -49,9 +49,9 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 50
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->g:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->g:Ljrz;
 
     .line 51
     return-void
@@ -91,9 +91,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 56
-    new-instance v1, Ldefpackage/adt;
+    new-instance v1, Ladt;
 
-    invoke-direct {v1}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v1}, Ladt;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -142,9 +142,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 64
-    new-instance v1, Ldefpackage/adt;
+    new-instance v1, Ladt;
 
-    invoke-direct {v1}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v1}, Ladt;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -175,9 +175,9 @@
     if-eqz v0, :cond_0
 
     .line 73
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->g:Ldefpackage/jrz;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->g:Ljrz;
 
-    invoke-static {v0, v1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, v1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 75
     :cond_0
@@ -316,23 +316,23 @@
     invoke-virtual {v4, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 97
-    new-instance v10, Ldefpackage/adt;
+    new-instance v10, Ladt;
 
-    invoke-direct {v10}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v10}, Ladt;-><init>()V
 
     invoke-virtual {v2, v10}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 98
-    new-instance v10, Ldefpackage/adt;
+    new-instance v10, Ladt;
 
-    invoke-direct {v10}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v10}, Ladt;-><init>()V
 
     invoke-virtual {v4, v10}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 99
-    new-instance v10, Ldefpackage/jra;
+    new-instance v10, Ljra;
 
-    invoke-direct {v10, v0}, Ldefpackage/jra;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
+    invoke-direct {v10, v0}, Ljra;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
 
     invoke-virtual {v2, v10}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -386,16 +386,16 @@
     invoke-virtual {v1, v8, v9}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 102
-    new-instance v10, Ldefpackage/jrb;
+    new-instance v10, Ljrb;
 
-    invoke-direct {v10, v0}, Ldefpackage/jrb;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
+    invoke-direct {v10, v0}, Ljrb;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
 
     invoke-virtual {v1, v10}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 103
-    new-instance v10, Ldefpackage/jrc;
+    new-instance v10, Ljrc;
 
-    invoke-direct {v10, v0}, Ldefpackage/jrc;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
+    invoke-direct {v10, v0}, Ljrc;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
 
     invoke-virtual {v1, v10}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -437,9 +437,9 @@
 
     .line 109
     .local v14, "c2":Landroid/animation/ObjectAnimator;
-    new-instance v15, Ldefpackage/jrd;
+    new-instance v15, Ljrd;
 
-    invoke-direct {v15, v0}, Ldefpackage/jrd;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
+    invoke-direct {v15, v0}, Ljrd;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
 
     invoke-virtual {v13, v15}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -535,18 +535,18 @@
     .line 121
     iget-object v5, v0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->d:Landroid/animation/ObjectAnimator;
 
-    new-instance v6, Ldefpackage/adt;
+    new-instance v6, Ladt;
 
-    invoke-direct {v6}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v6}, Ladt;-><init>()V
 
     invoke-virtual {v5, v6}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 122
     iget-object v5, v0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->d:Landroid/animation/ObjectAnimator;
 
-    new-instance v6, Ldefpackage/jre;
+    new-instance v6, Ljre;
 
-    invoke-direct {v6, v0}, Ldefpackage/jre;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
+    invoke-direct {v6, v0}, Ljre;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
 
     invoke-virtual {v5, v6}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -587,16 +587,16 @@
     invoke-virtual {v3, v6, v7}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 127
-    new-instance v6, Ldefpackage/adt;
+    new-instance v6, Ladt;
 
-    invoke-direct {v6}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v6}, Ladt;-><init>()V
 
     invoke-virtual {v5, v6}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 128
-    new-instance v6, Ldefpackage/adt;
+    new-instance v6, Ladt;
 
-    invoke-direct {v6}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v6}, Ladt;-><init>()V
 
     invoke-virtual {v3, v6}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -619,9 +619,9 @@
     .line 132
     iget-object v7, v0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->i:Landroid/animation/AnimatorSet;
 
-    new-instance v9, Ldefpackage/jrf;
+    new-instance v9, Ljrf;
 
-    invoke-direct {v9, v0}, Ldefpackage/jrf;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
+    invoke-direct {v9, v0}, Ljrf;-><init>(Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;)V
 
     invoke-virtual {v7, v9}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 

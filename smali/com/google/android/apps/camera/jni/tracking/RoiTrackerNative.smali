@@ -10,7 +10,7 @@
     .line 13
     const-class v0, Lcom/google/android/apps/camera/jni/tracking/RoiTrackerNative;
 
-    invoke-static {v0}, Ldefpackage/lil;->a(Ljava/lang/Class;)V
+    invoke-static {v0}, Llil;->a(Ljava/lang/Class;)V
 
     .line 14
     return-void

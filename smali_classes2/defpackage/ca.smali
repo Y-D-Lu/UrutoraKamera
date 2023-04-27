@@ -1,187 +1,381 @@
-.class final Ldefpackage/ca;
-.super Landroid/view/animation/AnimationSet;
+.class public Ldefpackage/Ca;
+.super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lpgj;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfab;->b(Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private final a:Landroid/view/ViewGroup;
+.field public final synthetic this$0:Lfab;
 
-.field private final b:Landroid/view/View;
+.field public final synthetic val$a:I
 
-.field private c:Z
+.field public final synthetic val$eznVar:Lezn;
 
-.field private d:Z
-
-.field private e:Z
+.field public final synthetic val$j:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/animation/Animation;Landroid/view/ViewGroup;Landroid/view/View;)V
-    .locals 1
-    .param p1, "animation"    # Landroid/view/animation/Animation;
-    .param p2, "viewGroup"    # Landroid/view/ViewGroup;
-    .param p3, "view"    # Landroid/view/View;
+.method public constructor <init>(Lfab;Lezn;IZ)V
+    .locals 0
+    .param p1, "this$0"    # Lfab;
 
-    .line 19
-    const/4 v0, 0x0
+    .line 33
+    iput-object p1, p0, Ldefpackage/Ca;->this$0:Lfab;
 
-    invoke-direct {p0, v0}, Landroid/view/animation/AnimationSet;-><init>(Z)V
+    iput-object p2, p0, Ldefpackage/Ca;->val$eznVar:Lezn;
 
-    .line 20
-    const/4 v0, 0x1
+    iput p3, p0, Ldefpackage/Ca;->val$a:I
 
-    iput-boolean v0, p0, Ldefpackage/ca;->e:Z
+    iput-boolean p4, p0, Ldefpackage/Ca;->val$j:Z
 
-    .line 21
-    iput-object p2, p0, Ldefpackage/ca;->a:Landroid/view/ViewGroup;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
-    iput-object p3, p0, Ldefpackage/ca;->b:Landroid/view/View;
-
-    .line 23
-    invoke-virtual {p0, p1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
-
-    .line 24
-    invoke-virtual {p2, p0}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
-
-    .line 25
     return-void
 .end method
 
 
 # virtual methods
-.method public final getTransformation(JLandroid/view/animation/Transformation;)Z
-    .locals 2
-    .param p1, "j"    # J
-    .param p3, "transformation"    # Landroid/view/animation/Transformation;
+.method public final a()Lpht;
+    .locals 15
 
-    .line 29
-    const/4 v0, 0x1
+    .line 39
+    iget-object v0, p0, Ldefpackage/Ca;->val$eznVar:Lezn;
 
-    iput-boolean v0, p0, Ldefpackage/ca;->e:Z
+    .line 40
+    .local v0, "eznVar2":Lezn;
+    iget v1, p0, Ldefpackage/Ca;->val$a:I
 
-    .line 30
-    iget-boolean v1, p0, Ldefpackage/ca;->c:Z
-
-    if-eqz v1, :cond_0
-
-    .line 31
-    iget-boolean v1, p0, Ldefpackage/ca;->d:Z
-
-    xor-int/2addr v0, v1
-
-    return v0
-
-    .line 33
-    :cond_0
-    invoke-super {p0, p1, p2, p3}, Landroid/view/animation/AnimationSet;->getTransformation(JLandroid/view/animation/Transformation;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    .line 34
-    iput-boolean v0, p0, Ldefpackage/ca;->c:Z
-
-    .line 35
-    iget-object v1, p0, Ldefpackage/ca;->a:Landroid/view/ViewGroup;
-
-    invoke-static {v1, p0}, Ldefpackage/fu;->b(Landroid/view/View;Ljava/lang/Runnable;)V
-
-    .line 37
-    :cond_1
-    return v0
-.end method
-
-.method public final getTransformation(JLandroid/view/animation/Transformation;F)Z
-    .locals 2
-    .param p1, "j"    # J
-    .param p3, "transformation"    # Landroid/view/animation/Transformation;
-    .param p4, "f"    # F
+    .line 41
+    .local v1, "i":I
+    iget-boolean v2, p0, Ldefpackage/Ca;->val$j:Z
 
     .line 42
-    const/4 v0, 0x1
+    .local v2, "z":Z
+    iget-object v3, v0, Lezn;->b:Lbtv;
 
-    iput-boolean v0, p0, Ldefpackage/ca;->e:Z
+    check-cast v3, Lbvk;
 
     .line 43
-    iget-boolean v1, p0, Ldefpackage/ca;->c:Z
-
-    if-eqz v1, :cond_0
+    .local v3, "bvkVar":Lbvk;
+    iget-object v4, v3, Lbvk;->r:Ljng;
 
     .line 44
-    iget-boolean v1, p0, Ldefpackage/ca;->d:Z
+    .local v4, "jngVar":Ljng;
+    iget-object v5, v3, Lbvk;->w:Landroid/view/WindowManager;
 
-    xor-int/2addr v0, v1
+    invoke-static {v5}, Lfcy;->d(Landroid/view/WindowManager;)I
 
-    return v0
+    move-result v5
+
+    .line 45
+    .local v5, "d":I
+    iget-object v6, v3, Lbvk;->r:Ljng;
 
     .line 46
-    :cond_0
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/animation/AnimationSet;->getTransformation(JLandroid/view/animation/Transformation;F)Z
+    .local v6, "jngVar2":Ljng;
+    iget-object v7, v6, Ljng;->b:Ljava/lang/Object;
 
-    move-result v1
-
-    if-nez v1, :cond_1
+    monitor-enter v7
 
     .line 47
-    iput-boolean v0, p0, Ldefpackage/ca;->c:Z
+    :try_start_0
+    iget-object v8, v6, Ljng;->c:Lljf;
+
+    const-string v9, "getScreenshot"
+
+    invoke-interface {v8, v9}, Lljf;->e(Ljava/lang/String;)V
 
     .line 48
-    iget-object v1, p0, Ldefpackage/ca;->a:Landroid/view/ViewGroup;
+    iget-object v8, v6, Ljng;->d:Ljna;
 
-    invoke-static {v1, p0}, Ldefpackage/fu;->b(Landroid/view/View;Ljava/lang/Runnable;)V
+    .line 49
+    .local v8, "jnaVar":Ljna;
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 50
-    :cond_1
-    return v0
-.end method
+    iget-object v9, v8, Ljna;->b:Landroid/view/SurfaceView;
 
-.method public final run()V
-    .locals 2
+    .line 51
+    .local v9, "surfaceView":Landroid/view/SurfaceView;
+    if-eqz v5, :cond_1
+
+    rem-int/lit16 v10, v1, 0xb4
+
+    if-eqz v10, :cond_1
+
+    .line 52
+    invoke-virtual {v9}, Landroid/view/SurfaceView;->getHeight()I
+
+    move-result v10
+
+    .line 53
+    .local v10, "width":I
+    if-eqz v5, :cond_0
+
+    rem-int/lit16 v11, v1, 0xb4
+
+    if-eqz v11, :cond_0
+
+    .line 54
+    invoke-virtual {v9}, Landroid/view/SurfaceView;->getWidth()I
+
+    move-result v11
 
     .line 55
-    iget-boolean v0, p0, Ldefpackage/ca;->c:Z
+    .local v11, "height":I
+    div-int/lit8 v12, v10, 0x4
 
-    if-nez v0, :cond_1
+    div-int/lit8 v13, v11, 0x4
 
-    iget-boolean v0, p0, Ldefpackage/ca;->e:Z
+    sget-object v14, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    if-nez v0, :cond_0
+    invoke-static {v12, v13, v14}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
-    goto :goto_0
-
-    .line 60
-    :cond_0
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Ldefpackage/ca;->e:Z
-
-    .line 61
-    iget-object v0, p0, Ldefpackage/ca;->a:Landroid/view/ViewGroup;
-
-    invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
-
-    .line 62
-    return-void
+    move-result-object v12
 
     .line 56
-    :cond_1
-    :goto_0
-    iget-object v0, p0, Ldefpackage/ca;->a:Landroid/view/ViewGroup;
+    .local v12, "createBitmap":Landroid/graphics/Bitmap;
+    sget-object v13, Ljnd;->b:Ljnd;
 
-    iget-object v1, p0, Ldefpackage/ca;->b:Landroid/view/View;
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
+    move-result-object v14
+
+    invoke-static {v14}, Lmip;->bV(Landroid/os/Looper;)Landroid/os/Handler;
+
+    move-result-object v14
+
+    invoke-static {v9, v12, v13, v14}, Landroid/view/PixelCopy;->request(Landroid/view/SurfaceView;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V
 
     .line 57
-    const/4 v0, 0x1
+    iget-object v13, v6, Ljng;->c:Lljf;
 
-    iput-boolean v0, p0, Ldefpackage/ca;->d:Z
+    const-string v14, "getScreenshot#flipAndRotate"
+
+    invoke-interface {v13, v14}, Lljf;->g(Ljava/lang/String;)V
 
     .line 58
-    return-void
+    invoke-static {v12, v1, v2}, Ljng;->a(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
+
+    move-result-object v13
+
+    .line 59
+    .local v13, "a2":Landroid/graphics/Bitmap;
+    iget-object v14, v6, Ljng;->c:Lljf;
+
+    invoke-interface {v14}, Lljf;->f()V
+
+    .line 61
+    .end local v11    # "height":I
+    .end local v12    # "createBitmap":Landroid/graphics/Bitmap;
+    .end local v13    # "a2":Landroid/graphics/Bitmap;
+    :cond_0
+    invoke-virtual {v9}, Landroid/view/SurfaceView;->getHeight()I
+
+    move-result v11
+
+    .line 62
+    .restart local v11    # "height":I
+    div-int/lit8 v12, v10, 0x4
+
+    div-int/lit8 v13, v11, 0x4
+
+    sget-object v14, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-static {v12, v13, v14}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    move-result-object v12
+
+    .line 63
+    .local v12, "createBitmap2":Landroid/graphics/Bitmap;
+    sget-object v13, Ljnd;->b:Ljnd;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v14
+
+    invoke-static {v14}, Lmip;->bV(Landroid/os/Looper;)Landroid/os/Handler;
+
+    move-result-object v14
+
+    invoke-static {v9, v12, v13, v14}, Landroid/view/PixelCopy;->request(Landroid/view/SurfaceView;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V
+
+    .line 64
+    iget-object v13, v6, Ljng;->c:Lljf;
+
+    const-string v14, "getScreenshot#flipAndRotate"
+
+    invoke-interface {v13, v14}, Lljf;->g(Ljava/lang/String;)V
+
+    .line 65
+    invoke-static {v12, v1, v2}, Ljng;->a(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
+
+    move-result-object v13
+
+    .line 66
+    .restart local v13    # "a2":Landroid/graphics/Bitmap;
+    iget-object v14, v6, Ljng;->c:Lljf;
+
+    invoke-interface {v14}, Lljf;->f()V
+
+    .line 68
+    .end local v10    # "width":I
+    .end local v11    # "height":I
+    .end local v12    # "createBitmap2":Landroid/graphics/Bitmap;
+    .end local v13    # "a2":Landroid/graphics/Bitmap;
+    :cond_1
+    invoke-virtual {v9}, Landroid/view/SurfaceView;->getWidth()I
+
+    move-result v10
+
+    .line 69
+    .restart local v10    # "width":I
+    if-eqz v5, :cond_2
+
+    .line 70
+    invoke-virtual {v9}, Landroid/view/SurfaceView;->getWidth()I
+
+    move-result v11
+
+    .line 71
+    .restart local v11    # "height":I
+    div-int/lit8 v12, v10, 0x4
+
+    div-int/lit8 v13, v11, 0x4
+
+    sget-object v14, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-static {v12, v13, v14}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    move-result-object v12
+
+    .line 72
+    .local v12, "createBitmap22":Landroid/graphics/Bitmap;
+    sget-object v13, Ljnd;->b:Ljnd;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v14
+
+    invoke-static {v14}, Lmip;->bV(Landroid/os/Looper;)Landroid/os/Handler;
+
+    move-result-object v14
+
+    invoke-static {v9, v12, v13, v14}, Landroid/view/PixelCopy;->request(Landroid/view/SurfaceView;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V
+
+    .line 73
+    iget-object v13, v6, Ljng;->c:Lljf;
+
+    const-string v14, "getScreenshot#flipAndRotate"
+
+    invoke-interface {v13, v14}, Lljf;->g(Ljava/lang/String;)V
+
+    .line 74
+    invoke-static {v12, v1, v2}, Ljng;->a(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
+
+    move-result-object v13
+
+    .line 75
+    .restart local v13    # "a2":Landroid/graphics/Bitmap;
+    iget-object v14, v6, Ljng;->c:Lljf;
+
+    invoke-interface {v14}, Lljf;->f()V
+
+    .line 77
+    .end local v11    # "height":I
+    .end local v12    # "createBitmap22":Landroid/graphics/Bitmap;
+    .end local v13    # "a2":Landroid/graphics/Bitmap;
+    :cond_2
+    invoke-virtual {v9}, Landroid/view/SurfaceView;->getHeight()I
+
+    move-result v11
+
+    .line 78
+    .restart local v11    # "height":I
+    div-int/lit8 v12, v10, 0x4
+
+    div-int/lit8 v13, v11, 0x4
+
+    sget-object v14, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-static {v12, v13, v14}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    move-result-object v12
+
+    .line 79
+    .local v12, "createBitmap222":Landroid/graphics/Bitmap;
+    sget-object v13, Ljnd;->b:Ljnd;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v14
+
+    invoke-static {v14}, Lmip;->bV(Landroid/os/Looper;)Landroid/os/Handler;
+
+    move-result-object v14
+
+    invoke-static {v9, v12, v13, v14}, Landroid/view/PixelCopy;->request(Landroid/view/SurfaceView;Landroid/graphics/Bitmap;Landroid/view/PixelCopy$OnPixelCopyFinishedListener;Landroid/os/Handler;)V
+
+    .line 80
+    iget-object v13, v6, Ljng;->c:Lljf;
+
+    const-string v14, "getScreenshot#flipAndRotate"
+
+    invoke-interface {v13, v14}, Lljf;->g(Ljava/lang/String;)V
+
+    .line 81
+    invoke-static {v12, v1, v2}, Ljng;->a(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
+
+    move-result-object v13
+
+    .line 82
+    .restart local v13    # "a2":Landroid/graphics/Bitmap;
+    iget-object v14, v6, Ljng;->c:Lljf;
+
+    invoke-interface {v14}, Lljf;->f()V
+
+    .line 83
+    .end local v8    # "jnaVar":Ljna;
+    .end local v9    # "surfaceView":Landroid/view/SurfaceView;
+    .end local v12    # "createBitmap222":Landroid/graphics/Bitmap;
+    monitor-exit v7
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 84
+    invoke-virtual {v13}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 85
+    invoke-static {v13}, Lplk;->V(Ljava/lang/Object;)Lpht;
+
+    move-result-object v7
+
+    return-object v7
+
+    .line 83
+    .end local v10    # "width":I
+    .end local v11    # "height":I
+    .end local v13    # "a2":Landroid/graphics/Bitmap;
+    :catchall_0
+    move-exception v8
+
+    :try_start_1
+    monitor-exit v7
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v8
 .end method

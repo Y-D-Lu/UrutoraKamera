@@ -158,7 +158,7 @@
     return-void
 .end method
 
-.method public static extractXMPData(Ljava/io/File;)Ldefpackage/ast;
+.method public static extractXMPData(Ljava/io/File;)Last;
     .locals 1
     .param p0, "file"    # Ljava/io/File;
 
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/nii;->b(Ljava/lang/String;)Ldefpackage/ast;
+    invoke-static {v0}, Lnii;->b(Ljava/lang/String;)Last;
 
     move-result-object v0
 
@@ -184,15 +184,15 @@
     .line 62
     .local v0, "aC":I
     :try_start_0
-    invoke-static {p0}, Lcom/google/android/libraries/microvideo/MicrovideoFiles;->extractXMPData(Ljava/io/File;)Ldefpackage/ast;
+    invoke-static {p0}, Lcom/google/android/libraries/microvideo/MicrovideoFiles;->extractXMPData(Ljava/io/File;)Last;
 
     move-result-object v1
 
-    invoke-static {v1}, Ldefpackage/mip;->aC(Ldefpackage/ast;)I
+    invoke-static {v1}, Lmip;->aC(Last;)I
 
     move-result v1
     :try_end_0
-    .catch Ldefpackage/ass; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lass; {:try_start_0 .. :try_end_0} :catch_0
 
     move v0, v1
 
@@ -204,11 +204,11 @@
     move-exception v1
 
     .line 64
-    .local v1, "e":Ldefpackage/ass;
+    .local v1, "e":Lass;
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 66
-    .end local v1    # "e":Ldefpackage/ass;
+    .end local v1    # "e":Lass;
     :goto_0
     invoke-virtual {p0}, Ljava/io/File;->length()J
 
@@ -405,12 +405,12 @@
     .param p0, "inputStream"    # Ljava/io/InputStream;
 
     .line 104
-    invoke-static {p0}, Ldefpackage/nii;->a(Ljava/io/InputStream;)Ldefpackage/ast;
+    invoke-static {p0}, Lnii;->a(Ljava/io/InputStream;)Last;
 
     move-result-object v0
 
     .line 105
-    .local v0, "a":Ldefpackage/ast;
+    .local v0, "a":Last;
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
@@ -421,11 +421,11 @@
     .line 109
     :cond_0
     :try_start_0
-    invoke-static {v0}, Ldefpackage/mip;->aC(Ldefpackage/ast;)I
+    invoke-static {v0}, Lmip;->aC(Last;)I
 
     move-result v2
     :try_end_0
-    .catch Ldefpackage/ass; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lass; {:try_start_0 .. :try_end_0} :catch_0
 
     int-to-long v2, v2
 
@@ -445,7 +445,7 @@
     move-exception v2
 
     .line 111
-    .local v2, "e":Ldefpackage/ass;
+    .local v2, "e":Lass;
     return v1
 .end method
 

@@ -3,11 +3,11 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/lie;
+.implements Llie;
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
@@ -23,11 +23,11 @@
     .line 9
     const-string v0, "com/google/android/apps/camera/jni/federatedphoto/ModeSuggestionClient"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/jni/federatedphoto/ModeSuggestionClient;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/jni/federatedphoto/ModeSuggestionClient;->a:Louj;
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 
     const-string v1, "modesuggestion-jni"
 
-    invoke-static {v0, v1}, Ldefpackage/lil;->b(Ljava/lang/Class;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Llil;->b(Ljava/lang/Class;Ljava/lang/String;)V
 
     .line 15
     const-string v0, "ICALabelSensorDenseV1"

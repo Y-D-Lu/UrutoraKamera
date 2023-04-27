@@ -21,9 +21,9 @@
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
     .line 21
-    new-instance v0, Ldefpackage/tt;
+    new-instance v0, Ltt;
 
-    invoke-direct {v0}, Ldefpackage/tt;-><init>()V
+    invoke-direct {v0}, Ltt;-><init>()V
 
     .line 22
     new-instance v0, Landroid/graphics/Rect;
@@ -31,12 +31,12 @@
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     .line 23
-    new-instance v0, Ldefpackage/ts;
+    new-instance v0, Lts;
 
-    invoke-direct {v0}, Ldefpackage/ts;-><init>()V
+    invoke-direct {v0}, Lts;-><init>()V
 
     .line 24
-    .local v0, "tsVar":Ldefpackage/ts;
+    .local v0, "tsVar":Lts;
     iput-object v0, p0, Landroid/support/wearable/watchface/decompositionface/DecompositionConfigView;->a:Landroid/view/GestureDetector$SimpleOnGestureListener;
 
     .line 25
@@ -71,9 +71,9 @@
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
     .line 32
-    new-instance v0, Ldefpackage/tt;
+    new-instance v0, Ltt;
 
-    invoke-direct {v0}, Ldefpackage/tt;-><init>()V
+    invoke-direct {v0}, Ltt;-><init>()V
 
     .line 33
     new-instance v0, Landroid/graphics/Rect;
@@ -81,12 +81,12 @@
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     .line 34
-    new-instance v0, Ldefpackage/ts;
+    new-instance v0, Lts;
 
-    invoke-direct {v0}, Ldefpackage/ts;-><init>()V
+    invoke-direct {v0}, Lts;-><init>()V
 
     .line 35
-    .local v0, "tsVar":Ldefpackage/ts;
+    .local v0, "tsVar":Lts;
     iput-object v0, p0, Landroid/support/wearable/watchface/decompositionface/DecompositionConfigView;->a:Landroid/view/GestureDetector$SimpleOnGestureListener;
 
     .line 36

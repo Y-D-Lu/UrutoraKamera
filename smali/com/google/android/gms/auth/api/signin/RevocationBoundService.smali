@@ -91,9 +91,9 @@
     .end local v0    # "valueOf":Ljava/lang/String;
     :cond_2
     :goto_1
-    new-instance v0, Ldefpackage/kgg;
+    new-instance v0, Lkgg;
 
-    invoke-direct {v0, p0}, Ldefpackage/kgg;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lkgg;-><init>(Landroid/content/Context;)V
 
     return-object v0
 .end method

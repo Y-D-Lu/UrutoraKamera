@@ -1,13 +1,38 @@
-.class public abstract Ldefpackage/hu;
+.class public Ldefpackage/Hu;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lloi;->fw(Llux;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lloi;
+
+.field public final synthetic val$luxVar:Llux;
+
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lloi;Llux;)V
     .locals 0
+    .param p1, "this$0"    # Lloi;
 
-    .line 8
+    .line 58
+    iput-object p1, p0, Ldefpackage/Hu;->this$0:Lloi;
+
+    iput-object p2, p0, Ldefpackage/Hu;->val$luxVar:Llux;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,153 +40,20 @@
 
 
 # virtual methods
-.method public abstract a()I
-.end method
+.method public final run()V
+    .locals 3
 
-.method public b()Landroid/content/Context;
-    .locals 1
+    .line 61
+    iget-object v0, p0, Ldefpackage/Hu;->this$0:Lloi;
 
-    .line 12
-    const/4 v0, 0x0
+    .line 62
+    .local v0, "loiVar":Lloi;
+    iget-object v1, v0, Lloi;->a:Lmip;
 
-    throw v0
-.end method
+    iget-object v2, p0, Ldefpackage/Hu;->val$luxVar:Llux;
 
-.method public c(Ldefpackage/jv;)Ldefpackage/jw;
-    .locals 1
-    .param p1, "jvVar"    # Ldefpackage/jv;
-
-    .line 16
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public d(Z)V
-    .locals 1
-    .param p1, "z"    # Z
-
-    .line 20
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public e()V
-    .locals 0
-
-    .line 24
-    return-void
-.end method
-
-.method public f(Z)V
-    .locals 1
-    .param p1, "z"    # Z
-
-    .line 27
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public abstract g(Z)V
-.end method
-
-.method public h(Z)V
-    .locals 1
-    .param p1, "z"    # Z
-
-    .line 33
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public abstract i(Ljava/lang/CharSequence;)V
-.end method
-
-.method public j(Ljava/lang/CharSequence;)V
-    .locals 1
-    .param p1, "charSequence"    # Ljava/lang/CharSequence;
-
-    .line 39
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public k()Z
-    .locals 1
-
-    .line 43
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public l()Z
-    .locals 1
-
-    .line 47
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public m()Z
-    .locals 1
-
-    .line 51
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public n(ILandroid/view/KeyEvent;)Z
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "keyEvent"    # Landroid/view/KeyEvent;
-
-    .line 55
-    const/4 v0, 0x0
-
-    throw v0
-.end method
-
-.method public o(Landroid/view/KeyEvent;)Z
-    .locals 1
-    .param p1, "keyEvent"    # Landroid/view/KeyEvent;
-
-    .line 59
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public p()Z
-    .locals 1
+    invoke-virtual {v1, v2}, Lmip;->fw(Llux;)V
 
     .line 63
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public q()V
-    .locals 0
-
-    .line 67
     return-void
-.end method
-
-.method public abstract r()V
-.end method
-
-.method public abstract s()V
-.end method
-
-.method public abstract t()V
-.end method
-
-.method public abstract u()V
 .end method

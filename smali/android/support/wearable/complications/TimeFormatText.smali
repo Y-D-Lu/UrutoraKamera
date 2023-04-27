@@ -135,9 +135,9 @@
     sput-object v0, Landroid/support/wearable/complications/TimeFormatText;->e:[J
 
     .line 23
-    new-instance v0, Ldefpackage/si;
+    new-instance v0, Lsi;
 
-    invoke-direct {v0, v6}, Ldefpackage/si;-><init>(I)V
+    invoke-direct {v0, v6}, Lsi;-><init>(I)V
 
     sput-object v0, Landroid/support/wearable/complications/TimeFormatText;->CREATOR:Landroid/os/Parcelable$Creator;
 

@@ -827,9 +827,9 @@
     return-object v0
 .end method
 
-.method public static calc_quantization(Ldefpackage/kvg;)V
+.method public static calc_quantization(Lkvg;)V
     .locals 2
-    .param p0, "kvgVar"    # Ldefpackage/kvg;
+    .param p0, "kvgVar"    # Lkvg;
 
     .line 136
     const/high16 v0, 0x40000000    # 2.0f

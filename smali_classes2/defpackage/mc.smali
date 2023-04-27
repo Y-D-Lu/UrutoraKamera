@@ -1,102 +1,66 @@
-.class public final Ldefpackage/mc;
+.class public Ldefpackage/Mc;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljava/util/concurrent/Callable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfsy;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/mh;
+.field public final synthetic this$0:Lfsy;
 
-.field private final b:Ldefpackage/mf;
+.field public final synthetic val$ojcVar2:Lojc;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/mh;Ldefpackage/mf;)V
+.method public constructor <init>(Lfsy;Lojc;)V
     .locals 0
-    .param p1, "mhVar"    # Ldefpackage/mh;
-    .param p2, "mfVar"    # Ldefpackage/mf;
+    .param p1, "this$0"    # Lfsy;
 
-    .line 12
+    .line 331
+    iput-object p1, p0, Ldefpackage/Mc;->this$0:Lfsy;
+
+    iput-object p2, p0, Ldefpackage/Mc;->val$ojcVar2:Lojc;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    iput-object p1, p0, Ldefpackage/mc;->a:Ldefpackage/mh;
-
-    .line 14
-    iput-object p2, p0, Ldefpackage/mc;->b:Ldefpackage/mf;
-
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public final call()Ljava/lang/Object;
+    .locals 1
 
-    .line 20
-    iget-object v0, p0, Ldefpackage/mc;->a:Ldefpackage/mh;
+    .line 334
+    iget-object v0, p0, Ldefpackage/Mc;->val$ojcVar2:Lojc;
 
-    iget-object v0, v0, Ldefpackage/kj;->c:Ldefpackage/kw;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
-    .line 21
-    .local v0, "kwVar":Ldefpackage/kw;
-    if-eqz v0, :cond_0
+    move-result-object v0
 
-    iget-object v1, v0, Ldefpackage/kw;->b:Ldefpackage/ku;
+    check-cast v0, Lqkg;
 
-    move-object v2, v1
+    invoke-interface {v0}, Lqkg;->mo37get()Ljava/lang/Object;
 
-    .local v2, "kuVar":Ldefpackage/ku;
-    if-eqz v1, :cond_0
+    move-result-object v0
 
-    .line 22
-    invoke-interface {v2, v0}, Ldefpackage/ku;->C(Ldefpackage/kw;)V
+    check-cast v0, Llmt;
 
-    .line 24
-    .end local v2    # "kuVar":Ldefpackage/ku;
-    :cond_0
-    iget-object v1, p0, Ldefpackage/mc;->a:Ldefpackage/mh;
+    invoke-static {v0}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
-    iget-object v1, v1, Ldefpackage/kj;->f:Ldefpackage/lm;
+    move-result-object v0
 
-    check-cast v1, Landroid/view/View;
-
-    .line 25
-    .local v1, "view":Landroid/view/View;
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_1
-
-    iget-object v2, p0, Ldefpackage/mc;->b:Ldefpackage/mf;
-
-    invoke-virtual {v2}, Ldefpackage/li;->h()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 26
-    iget-object v2, p0, Ldefpackage/mc;->a:Ldefpackage/mh;
-
-    iget-object v3, p0, Ldefpackage/mc;->b:Ldefpackage/mf;
-
-    iput-object v3, v2, Ldefpackage/mh;->i:Ldefpackage/mf;
-
-    .line 28
-    :cond_1
-    iget-object v2, p0, Ldefpackage/mc;->a:Ldefpackage/mh;
-
-    const/4 v3, 0x0
-
-    iput-object v3, v2, Ldefpackage/mh;->k:Ldefpackage/mc;
-
-    .line 29
-    return-void
+    return-object v0
 .end method

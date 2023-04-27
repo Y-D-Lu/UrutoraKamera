@@ -41,7 +41,7 @@
     .locals 2
 
     .line 30
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 31
     iget-object v0, p0, Lcom/google/android/apps/camera/smarts/SmartsUiGleamingView;->c:Landroid/graphics/drawable/AnimatedVectorDrawable;
@@ -89,12 +89,12 @@
     invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 45
-    new-instance v0, Ldefpackage/iab;
+    new-instance v0, Liab;
 
-    invoke-direct {v0, p0}, Ldefpackage/iab;-><init>(Lcom/google/android/apps/camera/smarts/SmartsUiGleamingView;)V
+    invoke-direct {v0, p0}, Liab;-><init>(Lcom/google/android/apps/camera/smarts/SmartsUiGleamingView;)V
 
     .line 46
-    .local v0, "iabVar":Ldefpackage/iab;
+    .local v0, "iabVar":Liab;
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1

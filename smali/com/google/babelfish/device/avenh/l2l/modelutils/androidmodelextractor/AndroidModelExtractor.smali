@@ -34,7 +34,7 @@
 
     const-string v1, "You must provide a valid context in order to use the bundled model in an Android app."
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 23
     invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;

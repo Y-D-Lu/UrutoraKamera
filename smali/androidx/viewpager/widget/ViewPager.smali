@@ -28,7 +28,7 @@
 
 .field private final g:Ljava/util/ArrayList;
 
-.field private final h:Ldefpackage/akx;
+.field private final h:Lakx;
 
 .field private final i:Landroid/graphics/Rect;
 
@@ -85,11 +85,11 @@
     sput-object v0, Landroidx/viewpager/widget/ViewPager;->a:[I
 
     .line 45
-    new-instance v0, Ldefpackage/aby;
+    new-instance v0, Laby;
 
     const/4 v1, 0x2
 
-    invoke-direct {v0, v1}, Ldefpackage/aby;-><init>(I)V
+    invoke-direct {v0, v1}, Laby;-><init>(I)V
 
     sput-object v0, Landroidx/viewpager/widget/ViewPager;->f:Landroid/view/animation/Interpolator;
 
@@ -111,11 +111,11 @@
     iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->g:Ljava/util/ArrayList;
 
     .line 78
-    new-instance v0, Ldefpackage/akx;
+    new-instance v0, Lakx;
 
-    invoke-direct {v0}, Ldefpackage/akx;-><init>()V
+    invoke-direct {v0}, Lakx;-><init>()V
 
-    iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->h:Ldefpackage/akx;
+    iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->h:Lakx;
 
     .line 79
     new-instance v0, Landroid/graphics/Rect;
@@ -148,9 +148,9 @@
     iput-boolean v0, p0, Landroidx/viewpager/widget/ViewPager;->z:Z
 
     .line 85
-    new-instance v0, Ldefpackage/aku;
+    new-instance v0, Laku;
 
-    invoke-direct {v0, p0}, Ldefpackage/aku;-><init>(Landroidx/viewpager/widget/ViewPager;)V
+    invoke-direct {v0, p0}, Laku;-><init>(Landroidx/viewpager/widget/ViewPager;)V
 
     iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->C:Ljava/lang/Runnable;
 
@@ -182,11 +182,11 @@
     iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->g:Ljava/util/ArrayList;
 
     .line 93
-    new-instance v0, Ldefpackage/akx;
+    new-instance v0, Lakx;
 
-    invoke-direct {v0}, Ldefpackage/akx;-><init>()V
+    invoke-direct {v0}, Lakx;-><init>()V
 
-    iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->h:Ldefpackage/akx;
+    iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->h:Lakx;
 
     .line 94
     new-instance v0, Landroid/graphics/Rect;
@@ -219,9 +219,9 @@
     iput-boolean v0, p0, Landroidx/viewpager/widget/ViewPager;->z:Z
 
     .line 100
-    new-instance v0, Ldefpackage/aku;
+    new-instance v0, Laku;
 
-    invoke-direct {v0, p0}, Ldefpackage/aku;-><init>(Landroidx/viewpager/widget/ViewPager;)V
+    invoke-direct {v0, p0}, Laku;-><init>(Landroidx/viewpager/widget/ViewPager;)V
 
     iput-object v0, p0, Landroidx/viewpager/widget/ViewPager;->C:Ljava/lang/Runnable;
 
@@ -486,7 +486,7 @@
     const/4 v6, 0x0
 
     .line 150
-    .local v6, "akxVar":Ldefpackage/akx;
+    .local v6, "akxVar":Lakx;
     const/4 v7, 0x0
 
     .line 151
@@ -521,13 +521,13 @@
 
     move-result-object v11
 
-    check-cast v11, Ldefpackage/akx;
+    check-cast v11, Lakx;
 
     .line 156
-    .local v11, "akxVar2":Ldefpackage/akx;
+    .local v11, "akxVar2":Lakx;
     if-nez v8, :cond_6
 
-    iget v13, v11, Ldefpackage/akx;->b:I
+    iget v13, v11, Lakx;->b:I
 
     add-int/lit8 v14, v9, 0x1
 
@@ -540,20 +540,20 @@
 
     .line 157
     :cond_5
-    iget-object v2, v0, Landroidx/viewpager/widget/ViewPager;->h:Ldefpackage/akx;
+    iget-object v2, v0, Landroidx/viewpager/widget/ViewPager;->h:Lakx;
 
     .line 158
-    .local v2, "akxVar3":Ldefpackage/akx;
+    .local v2, "akxVar3":Lakx;
     sget v3, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
 
     add-float/2addr v3, v10
 
     add-float/2addr v3, v5
 
-    iput v3, v2, Ldefpackage/akx;->e:F
+    iput v3, v2, Lakx;->e:F
 
     .line 159
-    iput v15, v2, Ldefpackage/akx;->b:I
+    iput v15, v2, Lakx;->b:I
 
     .line 160
     const/4 v3, 0x0
@@ -561,14 +561,14 @@
     throw v3
 
     .line 162
-    .end local v2    # "akxVar3":Ldefpackage/akx;
+    .end local v2    # "akxVar3":Lakx;
     .end local v15    # "i2":I
     :cond_6
     :goto_2
-    iget v10, v11, Ldefpackage/akx;->e:F
+    iget v10, v11, Lakx;->e:F
 
     .line 163
-    iget v13, v11, Ldefpackage/akx;->d:F
+    iget v13, v11, Lakx;->d:F
 
     .line 164
     .local v13, "f4":F
@@ -609,10 +609,10 @@
 
     .line 171
     :cond_8
-    iget v9, v11, Ldefpackage/akx;->b:I
+    iget v9, v11, Lakx;->b:I
 
     .line 172
-    iget v12, v11, Ldefpackage/akx;->d:F
+    iget v12, v11, Lakx;->d:F
 
     .line 173
     .local v12, "f6":F
@@ -625,14 +625,14 @@
     const/4 v8, 0x0
 
     .line 177
-    .end local v11    # "akxVar2":Ldefpackage/akx;
+    .end local v11    # "akxVar2":Lakx;
     .end local v12    # "f6":F
     .end local v13    # "f4":F
     .end local v14    # "f5":F
     goto :goto_1
 
     .line 168
-    .restart local v11    # "akxVar2":Ldefpackage/akx;
+    .restart local v11    # "akxVar2":Lakx;
     .restart local v13    # "f4":F
     .restart local v14    # "f5":F
     :cond_9
@@ -640,7 +640,7 @@
     move-object v6, v11
 
     .line 178
-    .end local v11    # "akxVar2":Ldefpackage/akx;
+    .end local v11    # "akxVar2":Lakx;
     .end local v13    # "f4":F
     .end local v14    # "f5":F
     :cond_a
@@ -653,15 +653,15 @@
 
     .line 179
     .local v11, "i6":F
-    iget v13, v6, Ldefpackage/akx;->b:I
+    iget v13, v6, Lakx;->b:I
 
     .line 180
     .local v13, "i7":I
-    iget v14, v6, Ldefpackage/akx;->e:F
+    iget v14, v6, Lakx;->e:F
 
     .line 181
     .local v14, "f7":F
-    iget v15, v6, Ldefpackage/akx;->d:F
+    iget v15, v6, Lakx;->d:F
 
     .line 182
     .local v15, "f8":F
@@ -728,9 +728,9 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/akx;
+    check-cast v1, Lakx;
 
-    iget-boolean v1, v1, Ldefpackage/akx;->c:Z
+    iget-boolean v1, v1, Lakx;->c:Z
 
     .line 191
     add-int/lit8 v0, v0, 0x1
@@ -792,17 +792,17 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/ala;
+    check-cast v3, Lala;
 
     .line 208
-    .local v3, "alaVar":Ldefpackage/ala;
+    .local v3, "alaVar":Lala;
     if-eqz v3, :cond_2
 
     .line 209
-    invoke-interface {v3, p1}, Ldefpackage/ala;->a(I)V
+    invoke-interface {v3, p1}, Lala;->a(I)V
 
     .line 206
-    .end local v3    # "alaVar":Ldefpackage/ala;
+    .end local v3    # "alaVar":Lala;
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
@@ -993,9 +993,9 @@
     :cond_0
     move-object v0, p3
 
-    check-cast v0, Ldefpackage/aky;
+    check-cast v0, Laky;
 
-    iget-boolean v1, v0, Ldefpackage/aky;->a:Z
+    iget-boolean v1, v0, Laky;->a:Z
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1019,7 +1019,7 @@
     :goto_0
     or-int/2addr v1, v2
 
-    iput-boolean v1, v0, Ldefpackage/aky;->a:Z
+    iput-boolean v1, v0, Laky;->a:Z
 
     .line 252
     invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
@@ -1326,7 +1326,7 @@
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
     .line 315
-    instance-of v0, p1, Ldefpackage/aky;
+    instance-of v0, p1, Laky;
 
     if-eqz v0, :cond_0
 
@@ -1426,7 +1426,7 @@
 
     .line 335
     :cond_2
-    invoke-static {p0}, Ldefpackage/gl;->z(Landroid/view/View;)V
+    invoke-static {p0}, Lgl;->z(Landroid/view/View;)V
 
     .line 336
     return-void
@@ -2051,7 +2051,7 @@
 
     .line 454
     :cond_3
-    invoke-static {p0}, Ldefpackage/gl;->z(Landroid/view/View;)V
+    invoke-static {p0}, Lgl;->z(Landroid/view/View;)V
 
     .line 455
     return-void
@@ -2137,29 +2137,29 @@
     iput v3, p0, Landroidx/viewpager/widget/ViewPager;->p:I
 
     .line 469
-    new-instance v3, Ldefpackage/akz;
+    new-instance v3, Lakz;
 
-    invoke-direct {v3}, Ldefpackage/akz;-><init>()V
+    invoke-direct {v3}, Lakz;-><init>()V
 
-    invoke-static {p0, v3}, Ldefpackage/gl;->F(Landroid/view/View;Ldefpackage/fg;)V
+    invoke-static {p0, v3}, Lgl;->F(Landroid/view/View;Lfg;)V
 
     .line 470
-    invoke-static {p0}, Ldefpackage/gl;->d(Landroid/view/View;)I
+    invoke-static {p0}, Lgl;->d(Landroid/view/View;)I
 
     move-result v3
 
     if-nez v3, :cond_0
 
     .line 471
-    invoke-static {p0, v0}, Ldefpackage/gl;->M(Landroid/view/View;I)V
+    invoke-static {p0, v0}, Lgl;->M(Landroid/view/View;I)V
 
     .line 473
     :cond_0
-    new-instance v0, Ldefpackage/akv;
+    new-instance v0, Lakv;
 
-    invoke-direct {v0, p0}, Ldefpackage/akv;-><init>(Landroidx/viewpager/widget/ViewPager;)V
+    invoke-direct {v0, p0}, Lakv;-><init>(Landroidx/viewpager/widget/ViewPager;)V
 
-    invoke-static {p0, v0}, Ldefpackage/gl;->N(Landroid/view/View;Ldefpackage/ft;)V
+    invoke-static {p0, v0}, Lgl;->N(Landroid/view/View;Lft;)V
 
     .line 474
     return-void
@@ -2190,9 +2190,9 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/akx;
+    check-cast v0, Lakx;
 
-    iget-object v0, v0, Ldefpackage/akx;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lakx;->a:Ljava/lang/Object;
 
     .line 481
     .local v0, "obj":Ljava/lang/Object;
@@ -2201,7 +2201,7 @@
     throw v1
 .end method
 
-.method public final g()Ldefpackage/akx;
+.method public final g()Lakx;
     .locals 3
 
     .line 485
@@ -2224,11 +2224,11 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/akx;
+    check-cast v1, Lakx;
 
     .line 487
-    .local v1, "akxVar":Ldefpackage/akx;
-    iget v2, v1, Ldefpackage/akx;->b:I
+    .local v1, "akxVar":Lakx;
+    iget v2, v1, Lakx;->b:I
 
     if-nez v2, :cond_0
 
@@ -2236,7 +2236,7 @@
     return-object v1
 
     .line 485
-    .end local v1    # "akxVar":Ldefpackage/akx;
+    .end local v1    # "akxVar":Lakx;
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
@@ -2254,9 +2254,9 @@
     .locals 1
 
     .line 496
-    new-instance v0, Ldefpackage/aky;
+    new-instance v0, Laky;
 
-    invoke-direct {v0}, Ldefpackage/aky;-><init>()V
+    invoke-direct {v0}, Laky;-><init>()V
 
     return-object v0
 .end method
@@ -2266,13 +2266,13 @@
     .param p1, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 501
-    new-instance v0, Ldefpackage/aky;
+    new-instance v0, Laky;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p1}, Ldefpackage/aky;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, v1, p1}, Laky;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
@@ -2358,16 +2358,16 @@
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/aky;
+    check-cast v7, Laky;
 
     .line 525
-    .local v7, "akyVar":Ldefpackage/aky;
-    iget-boolean v8, v7, Ldefpackage/aky;->a:Z
+    .local v7, "akyVar":Laky;
+    iget-boolean v8, v7, Laky;->a:Z
 
     if-eqz v8, :cond_1
 
     .line 526
-    iget v8, v7, Ldefpackage/aky;->b:I
+    iget v8, v7, Laky;->b:I
 
     and-int/lit8 v8, v8, 0x7
 
@@ -2468,7 +2468,7 @@
 
     .line 522
     .end local v6    # "childAt":Landroid/view/View;
-    .end local v7    # "akyVar":Ldefpackage/aky;
+    .end local v7    # "akyVar":Laky;
     .end local v8    # "left":I
     .end local v9    # "i2":I
     :cond_1
@@ -2510,17 +2510,17 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/ala;
+    check-cast v3, Lala;
 
     .line 559
-    .local v3, "alaVar":Ldefpackage/ala;
+    .local v3, "alaVar":Lala;
     if-eqz v3, :cond_3
 
     .line 560
-    invoke-interface {v3, p1, p2}, Ldefpackage/ala;->b(IF)V
+    invoke-interface {v3, p1, p2}, Lala;->b(IF)V
 
     .line 557
-    .end local v3    # "alaVar":Ldefpackage/ala;
+    .end local v3    # "alaVar":Lala;
     :cond_3
     add-int/lit8 v2, v2, 0x1
 
@@ -2685,7 +2685,7 @@
     .line 615
     iget-object v2, v6, Landroidx/viewpager/widget/ViewPager;->b:Landroid/widget/EdgeEffect;
 
-    invoke-static {v2}, Ldefpackage/hn;->a(Landroid/widget/EdgeEffect;)F
+    invoke-static {v2}, Lhn;->a(Landroid/widget/EdgeEffect;)F
 
     move-result v2
 
@@ -2697,7 +2697,7 @@
 
     iget-object v2, v6, Landroidx/viewpager/widget/ViewPager;->c:Landroid/widget/EdgeEffect;
 
-    invoke-static {v2}, Ldefpackage/hn;->a(Landroid/widget/EdgeEffect;)F
+    invoke-static {v2}, Lhn;->a(Landroid/widget/EdgeEffect;)F
 
     move-result v2
 
@@ -2723,7 +2723,7 @@
     .line 621
     iget-object v2, v6, Landroidx/viewpager/widget/ViewPager;->b:Landroid/widget/EdgeEffect;
 
-    invoke-static {v2}, Ldefpackage/hn;->a(Landroid/widget/EdgeEffect;)F
+    invoke-static {v2}, Lhn;->a(Landroid/widget/EdgeEffect;)F
 
     move-result v2
 
@@ -2746,13 +2746,13 @@
 
     sub-float/2addr v14, v4
 
-    invoke-static {v2, v3, v14}, Ldefpackage/hn;->b(Landroid/widget/EdgeEffect;FF)F
+    invoke-static {v2, v3, v14}, Lhn;->b(Landroid/widget/EdgeEffect;FF)F
 
     .line 624
     :cond_2
     iget-object v2, v6, Landroidx/viewpager/widget/ViewPager;->c:Landroid/widget/EdgeEffect;
 
-    invoke-static {v2}, Ldefpackage/hn;->a(Landroid/widget/EdgeEffect;)F
+    invoke-static {v2}, Lhn;->a(Landroid/widget/EdgeEffect;)F
 
     move-result v2
 
@@ -2773,7 +2773,7 @@
 
     div-float/2addr v4, v5
 
-    invoke-static {v2, v3, v4}, Ldefpackage/hn;->b(Landroid/widget/EdgeEffect;FF)F
+    invoke-static {v2, v3, v4}, Lhn;->b(Landroid/widget/EdgeEffect;FF)F
 
     .line 628
     .end local v0    # "x":F
@@ -3199,7 +3199,7 @@
     .local v3, "width":F
     iget-object v4, v6, Landroidx/viewpager/widget/ViewPager;->b:Landroid/widget/EdgeEffect;
 
-    invoke-static {v4}, Ldefpackage/hn;->a(Landroid/widget/EdgeEffect;)F
+    invoke-static {v4}, Lhn;->a(Landroid/widget/EdgeEffect;)F
 
     move-result v4
 
@@ -3215,7 +3215,7 @@
 
     sub-float/2addr v12, v2
 
-    invoke-static {v4, v5, v12}, Ldefpackage/hn;->b(Landroid/widget/EdgeEffect;FF)F
+    invoke-static {v4, v5, v12}, Lhn;->b(Landroid/widget/EdgeEffect;FF)F
 
     move-result v4
 
@@ -3226,7 +3226,7 @@
     :cond_10
     iget-object v4, v6, Landroidx/viewpager/widget/ViewPager;->c:Landroid/widget/EdgeEffect;
 
-    invoke-static {v4}, Ldefpackage/hn;->a(Landroid/widget/EdgeEffect;)F
+    invoke-static {v4}, Lhn;->a(Landroid/widget/EdgeEffect;)F
 
     move-result v4
 
@@ -3236,7 +3236,7 @@
 
     iget-object v4, v6, Landroidx/viewpager/widget/ViewPager;->c:Landroid/widget/EdgeEffect;
 
-    invoke-static {v4, v3, v2}, Ldefpackage/hn;->b(Landroid/widget/EdgeEffect;FF)F
+    invoke-static {v4, v3, v2}, Lhn;->b(Landroid/widget/EdgeEffect;FF)F
 
     move-result v4
 
@@ -3274,7 +3274,7 @@
     if-eqz v5, :cond_14
 
     .line 694
-    invoke-static/range {p0 .. p0}, Ldefpackage/gl;->z(Landroid/view/View;)V
+    invoke-static/range {p0 .. p0}, Lgl;->z(Landroid/view/View;)V
 
     .line 695
     goto :goto_7
@@ -3295,10 +3295,10 @@
 
     move-result-object v5
 
-    check-cast v5, Ldefpackage/akx;
+    check-cast v5, Lakx;
 
     .line 687
-    .local v5, "akxVar":Ldefpackage/akx;
+    .local v5, "akxVar":Lakx;
     iget-object v12, v6, Landroidx/viewpager/widget/ViewPager;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
@@ -3317,17 +3317,17 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/akx;
+    check-cast v0, Lakx;
 
     .line 688
-    .local v0, "akxVar2":Ldefpackage/akx;
-    iget v12, v5, Ldefpackage/akx;->b:I
+    .local v0, "akxVar2":Lakx;
+    iget v12, v5, Lakx;->b:I
 
     .line 689
     nop
 
     .line 691
-    iget v12, v0, Ldefpackage/akx;->b:I
+    iget v12, v0, Lakx;->b:I
 
     .line 692
     .local v12, "i3":I
@@ -3340,7 +3340,7 @@
     .end local v2    # "height":F
     .end local v3    # "width":F
     .end local v4    # "b":F
-    .end local v5    # "akxVar":Ldefpackage/akx;
+    .end local v5    # "akxVar":Lakx;
     .end local v12    # "i3":I
     .end local v21    # "f5":F
     .local v0, "f5":F
@@ -3532,16 +3532,16 @@
 
     move-result-object v11
 
-    check-cast v11, Ldefpackage/aky;
+    check-cast v11, Laky;
 
     .line 742
-    .local v11, "akyVar":Ldefpackage/aky;
-    iget-boolean v13, v11, Ldefpackage/aky;->a:Z
+    .local v11, "akyVar":Laky;
+    iget-boolean v13, v11, Laky;->a:Z
 
     if-eqz v13, :cond_0
 
     .line 743
-    iget v13, v11, Ldefpackage/aky;->b:I
+    iget v13, v11, Laky;->b:I
 
     .line 744
     .local v13, "i11":I
@@ -3771,7 +3771,7 @@
     goto :goto_3
 
     .line 740
-    .end local v11    # "akyVar":Ldefpackage/aky;
+    .end local v11    # "akyVar":Laky;
     .end local v19    # "i7":I
     .end local v20    # "i8":I
     .restart local v2    # "i7":I
@@ -3834,9 +3834,9 @@
 
     move-result-object v10
 
-    check-cast v10, Ldefpackage/aky;
+    check-cast v10, Laky;
 
-    iget-boolean v10, v10, Ldefpackage/aky;->a:Z
+    iget-boolean v10, v10, Laky;->a:Z
 
     if-nez v10, :cond_3
 
@@ -3861,12 +3861,12 @@
     if-eqz v2, :cond_6
 
     .line 799
-    invoke-virtual/range {p0 .. p0}, Landroidx/viewpager/widget/ViewPager;->g()Ldefpackage/akx;
+    invoke-virtual/range {p0 .. p0}, Landroidx/viewpager/widget/ViewPager;->g()Lakx;
 
     move-result-object v2
 
     .line 800
-    .local v2, "g":Ldefpackage/akx;
+    .local v2, "g":Lakx;
     const/4 v3, 0x0
 
     if-eqz v2, :cond_5
@@ -3879,7 +3879,7 @@
 
     iget v11, v0, Landroidx/viewpager/widget/ViewPager;->k:F
 
-    iget v12, v2, Ldefpackage/akx;->e:F
+    iget v12, v2, Lakx;->e:F
 
     iget v13, v0, Landroidx/viewpager/widget/ViewPager;->l:F
 
@@ -3916,7 +3916,7 @@
     invoke-direct {v0, v10}, Landroidx/viewpager/widget/ViewPager;->k(I)Z
 
     .line 805
-    .end local v2    # "g":Ldefpackage/akx;
+    .end local v2    # "g":Lakx;
     .end local v10    # "i15":I
     goto :goto_6
 
@@ -4090,20 +4090,20 @@
 
     move-result-object v14
 
-    check-cast v14, Ldefpackage/aky;
+    check-cast v14, Laky;
 
     move-object v15, v14
 
-    .local v15, "akyVar":Ldefpackage/aky;
+    .local v15, "akyVar":Laky;
     if-eqz v14, :cond_0
 
-    iget-boolean v14, v15, Ldefpackage/aky;->a:Z
+    iget-boolean v14, v15, Laky;->a:Z
 
     if-nez v14, :cond_1
 
     .line 877
     :cond_0
-    iget v14, v15, Ldefpackage/aky;->c:F
+    iget v14, v15, Laky;->c:F
 
     .line 878
     .local v14, "f2":F
@@ -4124,7 +4124,7 @@
     .line 874
     .end local v13    # "childAt2":Landroid/view/View;
     .end local v14    # "f2":F
-    .end local v15    # "akyVar":Ldefpackage/aky;
+    .end local v15    # "akyVar":Laky;
     :cond_1
     add-int/lit8 v12, v12, 0x1
 
@@ -4159,19 +4159,19 @@
 
     move-result-object v12
 
-    check-cast v12, Ldefpackage/aky;
+    check-cast v12, Laky;
 
     move-object v13, v12
 
-    .local v13, "akyVar2":Ldefpackage/aky;
+    .local v13, "akyVar2":Laky;
     if-eqz v12, :cond_e
 
-    iget-boolean v12, v13, Ldefpackage/aky;->a:Z
+    iget-boolean v12, v13, Laky;->a:Z
 
     if-eqz v12, :cond_e
 
     .line 832
-    iget v12, v13, Ldefpackage/aky;->b:I
+    iget v12, v13, Laky;->b:I
 
     .line 833
     .local v12, "i8":I
@@ -4383,7 +4383,7 @@
     .restart local v20    # "measuredWidth":I
     goto :goto_7
 
-    .end local v13    # "akyVar2":Ldefpackage/aky;
+    .end local v13    # "akyVar2":Laky;
     .end local v20    # "measuredWidth":I
     .restart local v3    # "measuredWidth":I
     :cond_f
@@ -4492,7 +4492,7 @@
     .param p1, "parcelable"    # Landroid/os/Parcelable;
 
     .line 908
-    instance-of v0, p1, Ldefpackage/alb;
+    instance-of v0, p1, Lalb;
 
     if-nez v0, :cond_0
 
@@ -4506,24 +4506,24 @@
     :cond_0
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/alb;
+    check-cast v0, Lalb;
 
     .line 913
-    .local v0, "albVar":Ldefpackage/alb;
-    iget-object v1, v0, Ldefpackage/abx;->d:Landroid/os/Parcelable;
+    .local v0, "albVar":Lalb;
+    iget-object v1, v0, Labx;->d:Landroid/os/Parcelable;
 
     invoke-super {p0, v1}, Landroid/view/ViewGroup;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 914
-    iget v1, v0, Ldefpackage/alb;->a:I
+    iget v1, v0, Lalb;->a:I
 
     .line 915
     .local v1, "i":I
-    iget-object v2, v0, Ldefpackage/alb;->b:Landroid/os/Parcelable;
+    iget-object v2, v0, Lalb;->b:Landroid/os/Parcelable;
 
     .line 916
     .local v2, "parcelable2":Landroid/os/Parcelable;
-    iget-object v3, v0, Ldefpackage/alb;->e:Ljava/lang/ClassLoader;
+    iget-object v3, v0, Lalb;->e:Ljava/lang/ClassLoader;
 
     .line 917
     .local v3, "classLoader":Ljava/lang/ClassLoader;
@@ -4534,19 +4534,19 @@
     .locals 2
 
     .line 921
-    new-instance v0, Ldefpackage/alb;
+    new-instance v0, Lalb;
 
     invoke-super {p0}, Landroid/view/ViewGroup;->onSaveInstanceState()Landroid/os/Parcelable;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Ldefpackage/alb;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v0, v1}, Lalb;-><init>(Landroid/os/Parcelable;)V
 
     .line 922
-    .local v0, "albVar":Ldefpackage/alb;
+    .local v0, "albVar":Lalb;
     const/4 v1, 0x0
 
-    iput v1, v0, Ldefpackage/alb;->a:I
+    iput v1, v0, Lalb;->a:I
 
     .line 923
     return-object v0
@@ -4655,15 +4655,15 @@
     .end local v1    # "paddingRight":I
     :cond_2
     :goto_0
-    invoke-virtual {p0}, Landroidx/viewpager/widget/ViewPager;->g()Ldefpackage/akx;
+    invoke-virtual {p0}, Landroidx/viewpager/widget/ViewPager;->g()Lakx;
 
     move-result-object v0
 
     .line 932
-    .local v0, "g":Ldefpackage/akx;
+    .local v0, "g":Lakx;
     if-eqz v0, :cond_3
 
-    iget v1, v0, Ldefpackage/akx;->e:F
+    iget v1, v0, Lakx;->e:F
 
     iget v2, p0, Landroidx/viewpager/widget/ViewPager;->l:F
 
@@ -4718,7 +4718,7 @@
     invoke-virtual {p0, v1, v2}, Landroid/view/ViewGroup;->scrollTo(II)V
 
     .line 948
-    .end local v0    # "g":Ldefpackage/akx;
+    .end local v0    # "g":Lakx;
     .end local v1    # "min":I
     :cond_5
     :goto_2

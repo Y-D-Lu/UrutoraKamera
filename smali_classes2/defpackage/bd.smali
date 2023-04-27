@@ -1,113 +1,84 @@
-.class public final Ldefpackage/bd;
-.super Landroid/animation/AnimatorListenerAdapter;
+.class public Ldefpackage/Bd;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Cd;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/view/ViewGroup;
+.field public final synthetic this$1:Ldefpackage/Cd;
 
-.field public final b:Landroid/view/View;
+.field public final synthetic val$hbqVar2:Lhbq;
 
-.field public final c:Z
-
-.field public final d:Ldefpackage/dp;
-
-.field public final e:Ldefpackage/bi;
+.field public final synthetic val$lncVar2:Llnc;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ViewGroup;Landroid/view/View;ZLdefpackage/dp;Ldefpackage/bi;)V
+.method public constructor <init>(Ldefpackage/Cd;Lhbq;Llnc;)V
     .locals 0
-    .param p1, "viewGroup"    # Landroid/view/ViewGroup;
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "z"    # Z
-    .param p4, "dpVar"    # Ldefpackage/dp;
-    .param p5, "biVar"    # Ldefpackage/bi;
+    .param p1, "this$1"    # Ldefpackage/Cd;
 
-    .line 18
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    .line 269
+    iput-object p1, p0, Ldefpackage/Bd;->this$1:Ldefpackage/Cd;
 
-    .line 19
-    iput-object p1, p0, Ldefpackage/bd;->a:Landroid/view/ViewGroup;
+    iput-object p2, p0, Ldefpackage/Bd;->val$hbqVar2:Lhbq;
 
-    .line 20
-    iput-object p2, p0, Ldefpackage/bd;->b:Landroid/view/View;
+    iput-object p3, p0, Ldefpackage/Bd;->val$lncVar2:Llnc;
 
-    .line 21
-    iput-boolean p3, p0, Ldefpackage/bd;->c:Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
-    iput-object p4, p0, Ldefpackage/bd;->d:Ldefpackage/dp;
-
-    .line 23
-    iput-object p5, p0, Ldefpackage/bd;->e:Ldefpackage/bi;
-
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
-    .param p1, "animator"    # Landroid/animation/Animator;
+.method public final fB(Ljava/lang/Object;)V
+    .locals 4
+    .param p1, "obj2"    # Ljava/lang/Object;
 
-    .line 28
-    iget-object v0, p0, Ldefpackage/bd;->a:Landroid/view/ViewGroup;
+    .line 272
+    iget-object v0, p0, Ldefpackage/Bd;->val$hbqVar2:Lhbq;
 
-    iget-object v1, p0, Ldefpackage/bd;->b:Landroid/view/View;
+    .line 273
+    .local v0, "hbqVar3":Lhbq;
+    iget-object v1, p0, Ldefpackage/Bd;->val$lncVar2:Llnc;
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
+    .line 274
+    .local v1, "lncVar3":Llnc;
+    move-object v2, p1
 
-    .line 29
-    iget-boolean v0, p0, Ldefpackage/bd;->c:Z
+    check-cast v2, Ljava/lang/Integer;
 
-    if-eqz v0, :cond_0
+    .line 275
+    .local v2, "num":Ljava/lang/Integer;
+    invoke-virtual {v0}, Lhbq;->j()Z
 
-    .line 30
-    iget-object v0, p0, Ldefpackage/bd;->d:Ldefpackage/dp;
+    move-result v3
 
-    iget v0, v0, Ldefpackage/dp;->e:I
+    if-nez v3, :cond_0
 
-    iget-object v1, p0, Ldefpackage/bd;->b:Landroid/view/View;
+    .line 276
+    sget-object v3, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_EXPOSURE_COMPENSATION:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    invoke-static {v0, v1}, Ldefpackage/d;->o(ILandroid/view/View;)V
+    invoke-static {v3, v2}, Lmip;->be(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)Llnq;
 
-    .line 32
+    move-result-object v3
+
+    invoke-interface {v1, v3}, Llnc;->g(Llnq;)V
+
+    .line 278
     :cond_0
-    iget-object v0, p0, Ldefpackage/bd;->e:Ldefpackage/bi;
-
-    invoke-virtual {v0}, Ldefpackage/bj;->b()V
-
-    .line 33
-    const/4 v0, 0x2
-
-    invoke-static {v0}, Ldefpackage/cu;->Q(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 34
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Animator from operation "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Ldefpackage/bd;->d:Ldefpackage/dp;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, " has ended."
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 36
-    :cond_1
     return-void
 .end method

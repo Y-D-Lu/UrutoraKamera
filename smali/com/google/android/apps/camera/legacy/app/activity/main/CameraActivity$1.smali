@@ -20,18 +20,18 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;
 
-.field public final synthetic val$dkeVar:Ldefpackage/dke;
+.field public final synthetic val$dkeVar:Ldke;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;Ldefpackage/dke;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;Ldke;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;
 
     .line 191
     iput-object p1, p0, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity$1;->this$0:Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity$1;->val$dkeVar:Ldefpackage/dke;
+    iput-object p2, p0, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity$1;->val$dkeVar:Ldke;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,9 +44,9 @@
     .locals 1
 
     .line 194
-    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity$1;->val$dkeVar:Ldefpackage/dke;
+    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/activity/main/CameraActivity$1;->val$dkeVar:Ldke;
 
-    invoke-virtual {v0}, Ldefpackage/dke;->a()V
+    invoke-virtual {v0}, Ldke;->a()V
 
     .line 195
     return-void

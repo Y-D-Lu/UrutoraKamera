@@ -1,102 +1,117 @@
-.class public final Ldefpackage/i;
-.super Ljava/text/Format$Field;
+.class public Ldefpackage/I;
+.super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Liho;
 
-# static fields
-.field public static final a:Ldefpackage/i;
 
-.field private static final serialVersionUID:J = 0x683a3b3b54a02d5dL
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lboe;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lboe;
+
+.field public final synthetic val$hycVar:Lhyc;
+
+.field public final synthetic val$larVar:Llar;
+
+.field public final synthetic val$qkgVar6:Lqkg;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lboe;Lhyc;Lqkg;Llar;)V
+    .locals 0
+    .param p1, "this$0"    # Lboe;
 
-    .line 9
-    new-instance v0, Ldefpackage/i;
+    .line 349
+    iput-object p1, p0, Ldefpackage/I;->this$0:Lboe;
 
-    invoke-direct {v0}, Ldefpackage/i;-><init>()V
+    iput-object p2, p0, Ldefpackage/I;->val$hycVar:Lhyc;
 
-    sput-object v0, Ldefpackage/i;->a:Ldefpackage/i;
+    iput-object p3, p0, Ldefpackage/I;->val$qkgVar6:Lqkg;
 
-    return-void
-.end method
+    iput-object p4, p0, Ldefpackage/I;->val$larVar:Llar;
 
-.method public constructor <init>()V
-    .locals 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    const-string v0, "message argument field"
-
-    invoke-direct {p0, v0}, Ljava/text/Format$Field;-><init>(Ljava/lang/String;)V
-
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public readResolve()Ljava/lang/Object;
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/InvalidObjectException;
-        }
-    .end annotation
+.method public final run()V
+    .locals 6
 
-    .line 18
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 352
+    iget-object v0, p0, Ldefpackage/I;->val$hycVar:Lhyc;
 
-    move-result-object v0
+    .line 353
+    .local v0, "hycVar2":Lhyc;
+    iget-object v1, p0, Ldefpackage/I;->val$qkgVar6:Lqkg;
 
-    const-class v1, Ldefpackage/i;
+    .line 354
+    .local v1, "qkgVar7":Lqkg;
+    iget-object v2, p0, Ldefpackage/I;->val$larVar:Llar;
 
-    if-ne v0, v1, :cond_1
+    .line 355
+    .local v2, "larVar2":Llar;
+    invoke-static {}, Liav;->a()Liau;
 
-    .line 19
-    invoke-virtual {p0}, Ljava/text/Format$Field;->getName()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    .line 356
+    .local v3, "a3":Liau;
+    const-string v4, "CameraVisionKit"
 
-    .line 20
-    .local v0, "name":Ljava/lang/String;
-    sget-object v1, Ldefpackage/i;->a:Ldefpackage/i;
+    iput-object v4, v3, Liau;->a:Ljava/lang/String;
 
-    .line 21
-    .local v1, "iVar":Ldefpackage/i;
-    invoke-virtual {v1}, Ljava/text/Format$Field;->getName()Ljava/lang/String;
+    .line 357
+    sget-object v4, Llwd;->BACK:Llwd;
 
-    move-result-object v2
+    invoke-static {v4}, Lope;->H(Ljava/lang/Object;)Lope;
 
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result-object v4
 
-    move-result v2
+    invoke-virtual {v3, v4}, Liau;->b(Lope;)V
 
-    if-eqz v2, :cond_0
+    .line 358
+    sget-object v4, Ljrl;->PHOTO:Ljrl;
 
-    .line 24
-    return-object v1
+    invoke-static {v4}, Lope;->H(Ljava/lang/Object;)Lope;
 
-    .line 22
-    :cond_0
-    new-instance v2, Ljava/io/InvalidObjectException;
+    move-result-object v4
 
-    const-string v3, "Unknown attribute name."
+    invoke-virtual {v3, v4}, Liau;->c(Lope;)V
 
-    invoke-direct {v2, v3}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+    .line 359
+    invoke-static {v2}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
-    throw v2
+    move-result-object v4
 
-    .line 26
-    .end local v0    # "name":Ljava/lang/String;
-    .end local v1    # "iVar":Ldefpackage/i;
-    :cond_1
-    new-instance v0, Ljava/io/InvalidObjectException;
+    iput-object v4, v3, Liau;->c:Lojc;
 
-    const-string v1, "A subclass of MessageFormat.Field must implement readResolve."
+    .line 360
+    invoke-interface {v1}, Lqkg;->mo37get()Ljava/lang/Object;
 
-    invoke-direct {v0, v1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+    move-result-object v4
 
-    throw v0
+    check-cast v4, Liat;
+
+    invoke-virtual {v3}, Liau;->a()Liav;
+
+    move-result-object v5
+
+    invoke-virtual {v0, v4, v5}, Lhyc;->a(Liat;Liav;)V
+
+    .line 361
+    return-void
 .end method

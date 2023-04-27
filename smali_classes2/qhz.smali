@@ -1,0 +1,104 @@
+.class public final Lqhz;
+.super Lqbu;
+.source ""
+
+
+# instance fields
+.field public final a:[Lqbw;
+
+.field public final b:Lqco;
+
+
+# direct methods
+.method public constructor <init>([Lqbw;Lqco;)V
+    .locals 0
+    .param p1, "qbwVarArr"    # [Lqbw;
+    .param p2, "qcoVar"    # Lqco;
+
+    .line 9
+    invoke-direct {p0}, Lqbu;-><init>()V
+
+    .line 10
+    iput-object p1, p0, Lqhz;->a:[Lqbw;
+
+    .line 11
+    iput-object p2, p0, Lqhz;->b:Lqco;
+
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final o(Lqbv;)V
+    .locals 6
+    .param p1, "qbvVar"    # Lqbv;
+
+    .line 16
+    iget-object v0, p0, Lqhz;->a:[Lqbw;
+
+    .line 17
+    .local v0, "qbwVarArr":[Lqbw;
+    new-instance v1, Lqhx;
+
+    iget-object v2, p0, Lqhz;->b:Lqco;
+
+    invoke-direct {v1, p1, v2}, Lqhx;-><init>(Lqbv;Lqco;)V
+
+    .line 18
+    .local v1, "qhxVar":Lqhx;
+    invoke-interface {p1, v1}, Lqbv;->gR(Lqbz;)V
+
+    .line 19
+    const/4 v2, 0x0
+
+    .local v2, "i":I
+    :goto_0
+    const/4 v3, 0x2
+
+    if-ge v2, v3, :cond_1
+
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v3
+
+    if-lez v3, :cond_1
+
+    .line 20
+    aget-object v3, v0, v2
+
+    .line 21
+    .local v3, "qbwVar":Lqbw;
+    if-nez v3, :cond_0
+
+    .line 22
+    new-instance v4, Ljava/lang/NullPointerException;
+
+    const-string v5, "One of the sources is null"
+
+    invoke-direct {v4, v5}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v4, v2}, Lqhx;->b(Ljava/lang/Throwable;I)V
+
+    .line 23
+    return-void
+
+    .line 25
+    :cond_0
+    iget-object v4, v1, Lqhx;->c:[Lqhy;
+
+    aget-object v4, v4, v2
+
+    invoke-interface {v3, v4}, Lqbw;->n(Lqbv;)V
+
+    .line 19
+    .end local v3    # "qbwVar":Lqbw;
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 27
+    .end local v2    # "i":I
+    :cond_1
+    return-void
+.end method

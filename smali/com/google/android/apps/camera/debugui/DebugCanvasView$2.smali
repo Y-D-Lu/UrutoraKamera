@@ -162,11 +162,11 @@
     .local v1, "canvas2":Landroid/graphics/Canvas;
     move-object v2, p1
 
-    check-cast v2, Ldefpackage/djx;
+    check-cast v2, Ldjx;
 
     .line 191
-    .local v2, "djxVar":Ldefpackage/djx;
-    invoke-virtual {v2}, Ldefpackage/djx;->b()Landroid/hardware/camera2/params/Face;
+    .local v2, "djxVar":Ldjx;
+    invoke-virtual {v2}, Ldjx;->b()Landroid/hardware/camera2/params/Face;
 
     move-result-object v3
 
@@ -209,7 +209,7 @@
 
     new-array v6, v5, [Ljava/lang/Object;
 
-    invoke-virtual {v2}, Ldefpackage/djx;->a()F
+    invoke-virtual {v2}, Ldjx;->a()F
 
     move-result v7
 
@@ -240,11 +240,11 @@
     invoke-virtual {v1, v6, v9, v10, v11}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
     .line 197
-    invoke-virtual {v2}, Ldefpackage/djx;->c()Ldefpackage/ojc;
+    invoke-virtual {v2}, Ldjx;->c()Lojc;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v6}, Lojc;->g()Z
 
     move-result v6
 
@@ -259,15 +259,15 @@
 
     .local v6, "i":I
     :goto_0
-    invoke-virtual {v2}, Ldefpackage/djx;->c()Ldefpackage/ojc;
+    invoke-virtual {v2}, Ldjx;->c()Lojc;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v9}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v9
 
-    check-cast v9, Ldefpackage/oom;
+    check-cast v9, Loom;
 
     invoke-virtual {v9}, Ljava/util/AbstractCollection;->size()I
 
@@ -278,15 +278,15 @@
     .line 201
     new-array v9, v5, [Ljava/lang/Object;
 
-    invoke-virtual {v2}, Ldefpackage/djx;->c()Ldefpackage/ojc;
+    invoke-virtual {v2}, Ldjx;->c()Lojc;
 
     move-result-object v10
 
-    invoke-virtual {v10}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v10}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v10
 
-    check-cast v10, Ldefpackage/oom;
+    check-cast v10, Loom;
 
     invoke-interface {v10, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -302,15 +302,15 @@
 
     iget v11, v4, Landroid/graphics/RectF;->bottom:F
 
-    invoke-virtual {v2}, Ldefpackage/djx;->c()Ldefpackage/ojc;
+    invoke-virtual {v2}, Ldjx;->c()Lojc;
 
     move-result-object v12
 
-    invoke-virtual {v12}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v12}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v12
 
-    check-cast v12, Ldefpackage/oom;
+    check-cast v12, Loom;
 
     invoke-virtual {v12}, Ljava/util/AbstractCollection;->size()I
 

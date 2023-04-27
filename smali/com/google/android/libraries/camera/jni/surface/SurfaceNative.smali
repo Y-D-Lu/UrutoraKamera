@@ -12,7 +12,7 @@
 
     const-string v1, "surface-jni"
 
-    invoke-static {v0, v1}, Ldefpackage/lil;->b(Ljava/lang/Class;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Llil;->b(Ljava/lang/Class;Ljava/lang/String;)V
 
     .line 11
     return-void

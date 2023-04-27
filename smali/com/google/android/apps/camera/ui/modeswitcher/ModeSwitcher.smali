@@ -3,17 +3,17 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jgm;
+.implements Ljgm;
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
 .field public b:Ljfy;
 
-.field public c:Ldefpackage/jfs;
+.field public c:Ljfs;
 
 .field public d:Landroid/view/GestureDetector;
 
@@ -21,15 +21,15 @@
 
 .field public f:Z
 
-.field public g:Ldefpackage/jrz;
+.field public g:Ljrz;
 
-.field public h:Ldefpackage/fjs;
+.field public h:Lfjs;
 
-.field public i:Ldefpackage/jgr;
+.field public i:Ljgr;
 
-.field public j:Ldefpackage/jgl;
+.field public j:Ljgl;
 
-.field public k:Ldefpackage/jrl;
+.field public k:Ljrl;
 
 
 # direct methods
@@ -39,11 +39,11 @@
     .line 48
     const-string v0, "com/google/android/apps/camera/ui/modeswitcher/ModeSwitcher"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->a:Louj;
 
     return-void
 .end method
@@ -69,26 +69,26 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->f:Z
 
     .line 65
-    sget-object v1, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v1, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ldefpackage/jrz;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ljrz;
 
     .line 66
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ldefpackage/jgr;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ljgr;
 
     .line 67
-    new-instance v0, Ldefpackage/jgb;
+    new-instance v0, Ljgb;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, v1}, Ldefpackage/jgb;-><init>(I)V
+    invoke-direct {v0, v1}, Ljgb;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j:Ldefpackage/jgl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j:Ljgl;
 
     .line 68
-    sget-object v0, Ldefpackage/jrl;->PHOTO:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->PHOTO:Ljrl;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ldefpackage/jrl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ljrl;
 
     .line 69
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j(Landroid/content/Context;)V
@@ -119,26 +119,26 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->f:Z
 
     .line 77
-    sget-object v1, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v1, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ldefpackage/jrz;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ljrz;
 
     .line 78
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ldefpackage/jgr;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ljgr;
 
     .line 79
-    new-instance v0, Ldefpackage/jgb;
+    new-instance v0, Ljgb;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, v1}, Ldefpackage/jgb;-><init>(I)V
+    invoke-direct {v0, v1}, Ljgb;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j:Ldefpackage/jgl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j:Ljgl;
 
     .line 80
-    sget-object v0, Ldefpackage/jrl;->PHOTO:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->PHOTO:Ljrl;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ldefpackage/jrl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ljrl;
 
     .line 81
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j(Landroid/content/Context;)V
@@ -170,26 +170,26 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->f:Z
 
     .line 89
-    sget-object v1, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v1, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ldefpackage/jrz;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ljrz;
 
     .line 90
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ldefpackage/jgr;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ljgr;
 
     .line 91
-    new-instance v0, Ldefpackage/jgb;
+    new-instance v0, Ljgb;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, v1}, Ldefpackage/jgb;-><init>(I)V
+    invoke-direct {v0, v1}, Ljgb;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j:Ldefpackage/jgl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j:Ljgl;
 
     .line 92
-    sget-object v0, Ldefpackage/jrl;->PHOTO:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->PHOTO:Ljrl;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ldefpackage/jrl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ljrl;
 
     .line 93
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j(Landroid/content/Context;)V
@@ -222,26 +222,26 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->f:Z
 
     .line 101
-    sget-object v1, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v1, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ldefpackage/jrz;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ljrz;
 
     .line 102
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ldefpackage/jgr;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ljgr;
 
     .line 103
-    new-instance v0, Ldefpackage/jgb;
+    new-instance v0, Ljgb;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, v1}, Ldefpackage/jgb;-><init>(I)V
+    invoke-direct {v0, v1}, Ljgb;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j:Ldefpackage/jgl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j:Ljgl;
 
     .line 104
-    sget-object v0, Ldefpackage/jrl;->PHOTO:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->PHOTO:Ljrl;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ldefpackage/jrl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ljrl;
 
     .line 105
     invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->j(Landroid/content/Context;)V
@@ -283,7 +283,7 @@
 
     const-string v4, "value=%s min=%s max=%s"
 
-    invoke-static {v0, v4, v1, v2, v3}, Ldefpackage/obr;->aO(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v4, v1, v2, v3}, Lobr;->aO(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 110
     invoke-static {p0, p2}, Ljava/lang/Math;->min(FF)F
@@ -302,22 +302,22 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .line 114
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 115
-    new-instance v0, Ldefpackage/jfs;
+    new-instance v0, Ljfs;
 
-    invoke-direct {v0, p1}, Ldefpackage/jfs;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Ljfs;-><init>(Landroid/content/Context;)V
 
     .line 116
-    .local v0, "jfsVar":Ldefpackage/jfs;
-    invoke-static {v0}, Ldefpackage/mip;->ep(Landroid/view/View;)V
+    .local v0, "jfsVar":Ljfs;
+    invoke-static {v0}, Lmip;->ep(Landroid/view/View;)V
 
     .line 117
     invoke-virtual {p0, v0}, Landroid/widget/HorizontalScrollView;->addView(Landroid/view/View;)V
 
     .line 118
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
     .line 119
     const/4 v1, 0x0
@@ -325,27 +325,27 @@
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     .line 120
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
-    new-instance v3, Ldefpackage/jft;
+    new-instance v3, Ljft;
 
-    invoke-direct {v3}, Ldefpackage/jft;-><init>()V
+    invoke-direct {v3}, Ljft;-><init>()V
 
-    invoke-static {v3}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v3}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v3
 
-    iput-object v3, v2, Ldefpackage/jfs;->o:Ldefpackage/ojc;
+    iput-object v3, v2, Ljfs;->o:Lojc;
 
     .line 121
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
     const/16 v3, 0x10
 
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     .line 122
-    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v2, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
 
@@ -358,12 +358,12 @@
     invoke-virtual {p0, v2}, Landroid/widget/HorizontalScrollView;->setOverScrollMode(I)V
 
     .line 125
-    new-instance v2, Ldefpackage/jfx;
+    new-instance v2, Ljfx;
 
-    invoke-direct {v2, p0}, Ldefpackage/jfx;-><init>(Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;)V
+    invoke-direct {v2, p0}, Ljfx;-><init>(Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;)V
 
     .line 126
-    .local v2, "jfxVar":Ldefpackage/jfx;
+    .local v2, "jfxVar":Ljfx;
     new-instance v3, Landroid/view/GestureDetector;
 
     invoke-direct {v3, p1, v2}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
@@ -384,14 +384,14 @@
 
 
 # virtual methods
-.method public final b()Ldefpackage/jrl;
+.method public final b()Ljrl;
     .locals 5
 
     .line 133
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
     .line 134
-    .local v0, "jfsVar":Ldefpackage/jfs;
+    .local v0, "jfsVar":Ljfs;
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->getScrollX()I
 
     move-result v1
@@ -406,10 +406,10 @@
 
     .line 135
     .local v1, "scrollX":I
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 136
-    iget-object v2, v0, Ldefpackage/jfs;->b:Ldefpackage/olt;
+    iget-object v2, v0, Ljfs;->b:Lolt;
 
     invoke-interface {v2}, Ljava/util/Map;->isEmpty()Z
 
@@ -417,30 +417,30 @@
 
     if-eqz v2, :cond_0
 
-    sget-object v2, Ldefpackage/jrl;->PHOTO:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->PHOTO:Ljrl;
 
     goto :goto_0
 
     :cond_0
-    sget-object v2, Ldefpackage/ore;->a:Ldefpackage/ore;
+    sget-object v2, Lore;->a:Lore;
 
-    new-instance v3, Ldefpackage/lqe;
+    new-instance v3, Llqe;
 
     const/4 v4, 0x1
 
-    invoke-direct {v3, v1, v4}, Ldefpackage/lqe;-><init>(II)V
+    invoke-direct {v3, v1, v4}, Llqe;-><init>(II)V
 
-    invoke-virtual {v2, v3}, Ldefpackage/orh;->c(Ldefpackage/oiu;)Ldefpackage/orh;
+    invoke-virtual {v2, v3}, Lorh;->c(Loiu;)Lorh;
 
     move-result-object v2
 
-    iget-object v3, v0, Ldefpackage/jfs;->b:Ldefpackage/olt;
+    iget-object v3, v0, Ljfs;->b:Lolt;
 
     invoke-interface {v3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ldefpackage/orh;->f(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Lorh;->f(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -450,29 +450,29 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jrl;
+    check-cast v2, Ljrl;
 
     :goto_0
     return-object v2
 .end method
 
-.method public final c(Ldefpackage/jrl;)V
+.method public final c(Ljrl;)V
     .locals 18
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
 
     .line 140
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 141
     const/4 v2, 0x0
 
     .line 142
     .local v2, "i":I
-    sget-object v3, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v3, Ljrl;->UNINITIALIZED:Ljrl;
 
     const/4 v5, 0x0
 
@@ -488,17 +488,17 @@
     :goto_0
     const-string v6, "Cannot append UNINITIALIZED mode"
 
-    invoke-static {v3, v6}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v3, v6}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 143
-    iget-object v3, v0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v3, v0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
     .line 144
-    .local v3, "jfsVar":Ldefpackage/jfs;
-    invoke-static {}, Ldefpackage/lar;->a()V
+    .local v3, "jfsVar":Ljfs;
+    invoke-static {}, Llar;->a()V
 
     .line 145
-    invoke-static/range {p1 .. p1}, Ldefpackage/jri;->b(Ldefpackage/jrl;)Ldefpackage/jri;
+    invoke-static/range {p1 .. p1}, Ljri;->b(Ljrl;)Ljri;
 
     move-result-object v6
 
@@ -510,13 +510,13 @@
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Ldefpackage/jri;->d(Landroid/content/res/Resources;)Ljava/lang/String;
+    invoke-virtual {v6, v7}, Ljri;->d(Landroid/content/res/Resources;)Ljava/lang/String;
 
     move-result-object v6
 
     .line 146
     .local v6, "d":Ljava/lang/String;
-    invoke-static/range {p1 .. p1}, Ldefpackage/jri;->b(Ldefpackage/jrl;)Ldefpackage/jri;
+    invoke-static/range {p1 .. p1}, Ljri;->b(Ljrl;)Ljri;
 
     move-result-object v7
 
@@ -528,13 +528,13 @@
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Ldefpackage/jri;->c(Landroid/content/res/Resources;)Ljava/lang/String;
+    invoke-virtual {v7, v8}, Ljri;->c(Landroid/content/res/Resources;)Ljava/lang/String;
 
     move-result-object v7
 
     .line 147
     .local v7, "c":Ljava/lang/String;
-    iget-object v8, v3, Ldefpackage/jfs;->b:Ldefpackage/olt;
+    iget-object v8, v3, Ljfs;->b:Lolt;
 
     invoke-interface {v8, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -591,7 +591,7 @@
 
     move-result-object v11
 
-    invoke-static {v8, v11}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v8, v11}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 154
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
@@ -641,7 +641,7 @@
 
     .line 159
     .local v12, "rippleDrawable":Landroid/graphics/drawable/RippleDrawable;
-    iget-boolean v13, v3, Ldefpackage/jfs;->g:Z
+    iget-boolean v13, v3, Ljfs;->g:Z
 
     if-nez v13, :cond_2
 
@@ -665,12 +665,12 @@
     invoke-virtual {v11, v12}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 165
-    iget-object v13, v3, Ldefpackage/jfs;->b:Ldefpackage/olt;
+    iget-object v13, v3, Ljfs;->b:Lolt;
 
-    invoke-interface {v13, v1, v11}, Ldefpackage/olt;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v13, v1, v11}, Lolt;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 166
-    invoke-static {v3}, Ldefpackage/gl;->f(Landroid/view/View;)I
+    invoke-static {v3}, Lgl;->f(Landroid/view/View;)I
 
     move-result v13
 
@@ -686,20 +686,20 @@
 
     .line 168
     .local v14, "resources":Landroid/content/res/Resources;
-    new-instance v15, Ldefpackage/jhm;
+    new-instance v15, Ljhm;
 
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
-    iget-boolean v4, v3, Ldefpackage/jfs;->g:Z
+    iget-boolean v4, v3, Ljfs;->g:Z
 
-    invoke-direct {v15, v5, v11, v4}, Ldefpackage/jhm;-><init>(Landroid/content/Context;Landroid/view/View;Z)V
+    invoke-direct {v15, v5, v11, v4}, Ljhm;-><init>(Landroid/content/Context;Landroid/view/View;Z)V
 
     move-object v4, v15
 
     .line 169
-    .local v4, "jhmVar":Ldefpackage/jhm;
+    .local v4, "jhmVar":Ljhm;
     const v5, 0x7f07026a
 
     const/4 v15, 0x1
@@ -761,14 +761,14 @@
     .end local v17    # "i":I
     .restart local v2    # "i":I
     :goto_4
-    invoke-virtual {v4, v15, v5, v2}, Ldefpackage/jhm;->c(III)V
+    invoke-virtual {v4, v15, v5, v2}, Ljhm;->c(III)V
 
     .line 175
     move/from16 v16, v2
 
     .end local v2    # "i":I
     .local v16, "i":I
-    iget-object v2, v3, Ldefpackage/jfs;->e:Ljava/util/EnumMap;
+    iget-object v2, v3, Ljfs;->e:Ljava/util/EnumMap;
 
     invoke-virtual {v2, v1, v4}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -776,9 +776,9 @@
     invoke-virtual {v3, v11}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 178
-    new-instance v2, Ldefpackage/jfu;
+    new-instance v2, Ljfu;
 
-    invoke-direct {v2, v0, v1}, Ldefpackage/jfu;-><init>(Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;Ldefpackage/jrl;)V
+    invoke-direct {v2, v0, v1}, Ljfu;-><init>(Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;Ljrl;)V
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -795,9 +795,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 183
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ljrz;
 
-    invoke-static {p0, v0}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, v0}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 184
     invoke-static {}, Landroid/os/Trace;->endSection()V
@@ -812,12 +812,12 @@
     .param p2, "z2"    # Z
 
     .line 188
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 189
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
-    invoke-virtual {v0, p1, p2}, Ldefpackage/jfs;->c(ZZ)V
+    invoke-virtual {v0, p1, p2}, Ljfs;->c(ZZ)V
 
     .line 190
     return-void
@@ -857,19 +857,19 @@
     return-void
 .end method
 
-.method public final g(Ldefpackage/jrl;Z)V
+.method public final g(Ljrl;Z)V
     .locals 2
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
     .param p2, "z"    # Z
 
     .line 202
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 203
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 204
-    sget-object v0, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->UNINITIALIZED:Ljrl;
 
     if-eq p1, v0, :cond_0
 
@@ -883,30 +883,30 @@
     :goto_0
     const-string v1, "Cannot setActiveMode to UNINITIALIZED"
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 205
     iget-boolean v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->e:Z
 
     const-string v1, "must call finalizeModeSetup before setActiveMode"
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 206
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
-    invoke-virtual {v0, p1, p2}, Ldefpackage/jfs;->b(Ldefpackage/jrl;Z)V
+    invoke-virtual {v0, p1, p2}, Ljfs;->b(Ljrl;Z)V
 
     .line 207
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ldefpackage/jrl;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->k:Ljrl;
 
     .line 208
     return-void
 .end method
 
-.method public final h(Ldefpackage/jrl;)V
+.method public final h(Ljrl;)V
     .locals 2
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
 
     .line 211
     const-string v0, "ModeSwitcher#setActiveModeAndNL"
@@ -914,7 +914,7 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 212
-    sget-object v0, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->UNINITIALIZED:Ljrl;
 
     const/4 v1, 0x1
 
@@ -928,20 +928,20 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v0}, Ldefpackage/obr;->aF(Z)V
+    invoke-static {v0}, Lobr;->aF(Z)V
 
     .line 213
-    invoke-virtual {p0, p1, v1}, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g(Ldefpackage/jrl;Z)V
+    invoke-virtual {p0, p1, v1}, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g(Ljrl;Z)V
 
     .line 214
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ldefpackage/jgr;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->i:Ljgr;
 
     .line 215
-    .local v0, "jgrVar":Ldefpackage/jgr;
+    .local v0, "jgrVar":Ljgr;
     if-eqz v0, :cond_1
 
     .line 216
-    invoke-interface {v0, p1}, Ldefpackage/jgr;->f(Ldefpackage/jrl;)V
+    invoke-interface {v0, p1}, Ljgr;->f(Ljrl;)V
 
     .line 218
     :cond_1
@@ -951,16 +951,16 @@
     return-void
 .end method
 
-.method public final i(Ldefpackage/jrl;Z)V
+.method public final i(Ljrl;Z)V
     .locals 2
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
     .param p2, "z"    # Z
 
     .line 223
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
     .line 224
-    .local v0, "jfsVar":Ldefpackage/jfs;
+    .local v0, "jfsVar":Ljfs;
     monitor-enter v0
 
     .line 225
@@ -968,7 +968,7 @@
 
     .line 227
     :try_start_0
-    iget-object v1, v0, Ldefpackage/jfs;->d:Ljava/util/EnumSet;
+    iget-object v1, v0, Ljfs;->d:Ljava/util/EnumSet;
 
     invoke-virtual {v1, p1}, Ljava/util/EnumSet;->contains(Ljava/lang/Object;)Z
     :try_end_0
@@ -985,24 +985,24 @@
     .local v1, "th":Ljava/lang/Throwable;
     nop
 
-    .end local v0    # "jfsVar":Ldefpackage/jfs;
+    .end local v0    # "jfsVar":Ljfs;
     .end local p0    # "this":Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
-    .end local p1    # "jrlVar":Ldefpackage/jrl;
+    .end local p1    # "jrlVar":Ljrl;
     .end local p2    # "z":Z
     :try_start_1
     throw v1
 
     .line 233
     .end local v1    # "th":Ljava/lang/Throwable;
-    .restart local v0    # "jfsVar":Ldefpackage/jfs;
+    .restart local v0    # "jfsVar":Ljfs;
     .restart local p0    # "this":Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;
-    .restart local p1    # "jrlVar":Ldefpackage/jrl;
+    .restart local p1    # "jrlVar":Ljrl;
     .restart local p2    # "z":Z
     :cond_0
     :goto_0
     if-nez p2, :cond_1
 
-    iget-object v1, v0, Ldefpackage/jfs;->d:Ljava/util/EnumSet;
+    iget-object v1, v0, Ljfs;->d:Ljava/util/EnumSet;
 
     invoke-virtual {v1, p1}, Ljava/util/EnumSet;->contains(Ljava/lang/Object;)Z
 
@@ -1024,7 +1024,7 @@
     if-eqz p2, :cond_2
 
     .line 235
-    iget-object v1, v0, Ldefpackage/jfs;->d:Ljava/util/EnumSet;
+    iget-object v1, v0, Ljfs;->d:Ljava/util/EnumSet;
 
     invoke-virtual {v1, p1}, Ljava/util/EnumSet;->add(Ljava/lang/Object;)Z
 
@@ -1032,7 +1032,7 @@
 
     .line 237
     :cond_2
-    iget-object v1, v0, Ldefpackage/jfs;->d:Ljava/util/EnumSet;
+    iget-object v1, v0, Ljfs;->d:Ljava/util/EnumSet;
 
     invoke-virtual {v1, p1}, Ljava/util/EnumSet;->remove(Ljava/lang/Object;)Z
 
@@ -1040,7 +1040,7 @@
     :goto_2
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Ldefpackage/jfs;->f:Z
+    iput-boolean v1, v0, Ljfs;->f:Z
 
     .line 240
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->requestLayout()V
@@ -1131,7 +1131,7 @@
 
     invoke-direct {v0, v3, v3, v1, v2}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    invoke-static {v0}, Ldefpackage/oom;->m(Ljava/lang/Object;)Ldefpackage/oom;
+    invoke-static {v0}, Loom;->m(Ljava/lang/Object;)Loom;
 
     move-result-object v0
 
@@ -1141,7 +1141,7 @@
 
     .line 267
     :cond_1
-    invoke-static {}, Ldefpackage/oom;->l()Ldefpackage/oom;
+    invoke-static {}, Loom;->l()Loom;
 
     move-result-object v0
 
@@ -1163,9 +1163,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 274
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->g:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 
@@ -1193,7 +1193,7 @@
     .param p1, "z"    # Z
 
     .line 284
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 285
     iget-boolean v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->e:Z
@@ -1212,9 +1212,9 @@
     if-eqz v0, :cond_1
 
     .line 289
-    sget-object v0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -1222,7 +1222,7 @@
 
     const-string v2, "ModeSwitcher WAS ALREADY ENABLED!"
 
-    invoke-static {v0, v2, v1}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v2, v1}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     goto :goto_0
 
@@ -1235,9 +1235,9 @@
     if-nez v0, :cond_2
 
     .line 291
-    sget-object v0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -1245,12 +1245,12 @@
 
     const-string v2, "ModeSwitcher WAS ALREADY DISABLED!"
 
-    invoke-static {v0, v2, v1}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v2, v1}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 293
     :cond_2
     :goto_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
     invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
@@ -1269,7 +1269,7 @@
     invoke-super {p0, p1}, Landroid/widget/HorizontalScrollView;->setVisibility(I)V
 
     .line 300
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ldefpackage/jfs;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeswitcher/ModeSwitcher;->c:Ljfs;
 
     invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 

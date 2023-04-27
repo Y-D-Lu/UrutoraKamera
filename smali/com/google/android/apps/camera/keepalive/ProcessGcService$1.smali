@@ -52,9 +52,9 @@
 
     .line 61
     .local v1, "jobParameters2":Landroid/app/job/JobParameters;
-    iget-object v2, v0, Lcom/google/android/apps/camera/keepalive/ProcessGcService;->c:Ldefpackage/enw;
+    iget-object v2, v0, Lcom/google/android/apps/camera/keepalive/ProcessGcService;->c:Lenw;
 
-    invoke-virtual {v2}, Ldefpackage/enw;->c()Z
+    invoke-virtual {v2}, Lenw;->c()Z
 
     move-result v2
 
@@ -86,9 +86,9 @@
 
     .line 78
     :cond_0
-    sget-object v2, Lcom/google/android/apps/camera/keepalive/ProcessGcService;->a:Ldefpackage/ouj;
+    sget-object v2, Lcom/google/android/apps/camera/keepalive/ProcessGcService;->a:Louj;
 
-    invoke-virtual {v2}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v2}, Loue;->c()Lova;
 
     move-result-object v2
 
@@ -96,7 +96,7 @@
 
     const-string v4, "Process is Alive! Rescheduling."
 
-    invoke-static {v2, v4, v3}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v2, v4, v3}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 79
     const/4 v2, 0x3
@@ -109,7 +109,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/app/job/JobService;->jobFinished(Landroid/app/job/JobParameters;Z)V
 
     .line 81
-    invoke-static {v0}, Ldefpackage/eoc;->b(Landroid/content/Context;)V
+    invoke-static {v0}, Leoc;->b(Landroid/content/Context;)V
 
     .line 82
     return-void

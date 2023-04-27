@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final c:Ldefpackage/ahs;
+.field private final c:Lahs;
 
 .field private d:Ljava/lang/CharSequence;
 
@@ -25,14 +25,14 @@
     invoke-direct {p0, p1, p2, v0, v1}, Landroidx/preference/TwoStatePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 26
-    new-instance v2, Ldefpackage/ahs;
+    new-instance v2, Lahs;
 
-    invoke-direct {v2, p0}, Ldefpackage/ahs;-><init>(Landroidx/preference/SwitchPreferenceCompat;)V
+    invoke-direct {v2, p0}, Lahs;-><init>(Landroidx/preference/SwitchPreferenceCompat;)V
 
-    iput-object v2, p0, Landroidx/preference/SwitchPreferenceCompat;->c:Ldefpackage/ahs;
+    iput-object v2, p0, Landroidx/preference/SwitchPreferenceCompat;->c:Lahs;
 
     .line 27
-    sget-object v2, Ldefpackage/ahn;->m:[I
+    sget-object v2, Lahn;->m:[I
 
     invoke-virtual {p1, p2, v2, v0, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -42,7 +42,7 @@
     .local v0, "obtainStyledAttributes":Landroid/content/res/TypedArray;
     const/4 v2, 0x7
 
-    invoke-static {v0, v2, v1}, Ldefpackage/et;->z(Landroid/content/res/TypedArray;II)Ljava/lang/String;
+    invoke-static {v0, v2, v1}, Let;->z(Landroid/content/res/TypedArray;II)Ljava/lang/String;
 
     move-result-object v2
 
@@ -53,7 +53,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {v0, v2, v3}, Ldefpackage/et;->z(Landroid/content/res/TypedArray;II)Ljava/lang/String;
+    invoke-static {v0, v2, v3}, Let;->z(Landroid/content/res/TypedArray;II)Ljava/lang/String;
 
     move-result-object v2
 
@@ -64,7 +64,7 @@
 
     const/4 v3, 0x3
 
-    invoke-static {v0, v2, v3}, Ldefpackage/et;->z(Landroid/content/res/TypedArray;II)Ljava/lang/String;
+    invoke-static {v0, v2, v3}, Let;->z(Landroid/content/res/TypedArray;II)Ljava/lang/String;
 
     move-result-object v2
 
@@ -78,7 +78,7 @@
 
     const/4 v3, 0x4
 
-    invoke-static {v0, v2, v3}, Ldefpackage/et;->z(Landroid/content/res/TypedArray;II)Ljava/lang/String;
+    invoke-static {v0, v2, v3}, Let;->z(Landroid/content/res/TypedArray;II)Ljava/lang/String;
 
     move-result-object v2
 
@@ -92,7 +92,7 @@
 
     const/4 v3, 0x2
 
-    invoke-static {v0, v2, v3, v1}, Ldefpackage/et;->A(Landroid/content/res/TypedArray;IIZ)Z
+    invoke-static {v0, v2, v3, v1}, Let;->A(Landroid/content/res/TypedArray;IIZ)Z
 
     move-result v1
 
@@ -189,7 +189,7 @@
 
     .line 58
     :cond_3
-    iget-object v2, p0, Landroidx/preference/SwitchPreferenceCompat;->c:Ldefpackage/ahs;
+    iget-object v2, p0, Landroidx/preference/SwitchPreferenceCompat;->c:Lahs;
 
     invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -201,24 +201,24 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/ahm;)V
+.method public final a(Lahm;)V
     .locals 1
-    .param p1, "ahmVar"    # Ldefpackage/ahm;
+    .param p1, "ahmVar"    # Lahm;
 
     .line 64
-    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Ldefpackage/ahm;)V
+    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Lahm;)V
 
     .line 65
     const v0, 0x7f0a0220
 
-    invoke-virtual {p1, v0}, Ldefpackage/ahm;->B(I)Landroid/view/View;
+    invoke-virtual {p1, v0}, Lahm;->B(I)Landroid/view/View;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Landroidx/preference/SwitchPreferenceCompat;->ae(Landroid/view/View;)V
 
     .line 66
-    invoke-virtual {p0, p1}, Landroidx/preference/TwoStatePreference;->ad(Ldefpackage/ahm;)V
+    invoke-virtual {p0, p1}, Landroidx/preference/TwoStatePreference;->ad(Lahm;)V
 
     .line 67
     return-void

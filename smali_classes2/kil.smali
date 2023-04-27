@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/kkw;
+.implements Lkkw;
 
 
 # annotations

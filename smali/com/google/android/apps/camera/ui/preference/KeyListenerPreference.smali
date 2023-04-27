@@ -268,7 +268,7 @@
 
     .line 92
     .local v0, "str":Ljava/lang/String;
-    invoke-static {v0}, Ldefpackage/oje;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Loje;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -495,9 +495,9 @@
     invoke-virtual {v8, v10}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 139
-    new-instance v8, Ldefpackage/jhw;
+    new-instance v8, Ljhw;
 
-    invoke-direct {v8, p0, v6, v7, v9}, Ldefpackage/jhw;-><init>(Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;Landroid/widget/TextView;Landroid/widget/Button;Landroid/widget/Button;)V
+    invoke-direct {v8, p0, v6, v7, v9}, Ljhw;-><init>(Lcom/google/android/apps/camera/ui/preference/KeyListenerPreference;Landroid/widget/TextView;Landroid/widget/Button;Landroid/widget/Button;)V
 
     invoke-virtual {v5, v8}, Landroid/app/AlertDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 

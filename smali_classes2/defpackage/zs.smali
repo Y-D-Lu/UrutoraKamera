@@ -1,47 +1,53 @@
-.class public final Ldefpackage/zs;
+.class public Ldefpackage/Zs;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lcom/google/android/libraries/oliveoil/bufferflinger/BufferFlinger$OnBufferReleasedListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljwm;->e(Llmr;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:Z
+.field public final synthetic this$0:Ljwm;
 
-.field public b:I
-
-.field public c:I
-
-.field public d:F
-
-.field public e:F
+.field public final synthetic val$lapVar:Llap;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljwm;Llap;)V
+    .locals 0
+    .param p1, "this$0"    # Ljwm;
 
-    .line 5
+    .line 204
+    iput-object p1, p0, Ldefpackage/Zs;->this$0:Ljwm;
+
+    iput-object p2, p0, Ldefpackage/Zs;->val$lapVar:Llap;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    const/4 v0, 0x0
+    return-void
+.end method
 
-    iput-boolean v0, p0, Ldefpackage/zs;->a:Z
 
-    .line 7
-    iput v0, p0, Ldefpackage/zs;->b:I
+# virtual methods
+.method public final onBufferReleased()V
+    .locals 1
 
-    .line 8
-    iput v0, p0, Ldefpackage/zs;->c:I
+    .line 207
+    iget-object v0, p0, Ldefpackage/Zs;->val$lapVar:Llap;
 
-    .line 9
-    const/high16 v0, 0x3f800000    # 1.0f
+    invoke-virtual {v0}, Llap;->close()V
 
-    iput v0, p0, Ldefpackage/zs;->d:F
-
-    .line 10
-    const/high16 v0, 0x7fc00000    # Float.NaN
-
-    iput v0, p0, Ldefpackage/zs;->e:F
-
+    .line 208
     return-void
 .end method

@@ -1,312 +1,360 @@
-.class public final Ldefpackage/zd;
+.class public Ldefpackage/Zd;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Loiu;
 
-# static fields
-.field public static a:I
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgko;->close()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public b:Ldefpackage/zg;
+.field public final synthetic this$0:Lgko;
 
-.field public final c:Ljava/util/ArrayList;
+.field public final synthetic val$b2:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/zg;)V
-    .locals 1
-    .param p1, "zgVar"    # Ldefpackage/zg;
+.method public constructor <init>(Lgko;Ljava/util/List;)V
+    .locals 0
+    .param p1, "this$0"    # Lgko;
 
-    .line 13
+    .line 148
+    iput-object p1, p0, Ldefpackage/Zd;->this$0:Lgko;
+
+    iput-object p2, p0, Ldefpackage/Zd;->val$b2:Ljava/util/List;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/zd;->c:Ljava/util/ArrayList;
-
-    .line 14
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Ldefpackage/zd;->b:Ldefpackage/zg;
-
-    .line 15
-    sget v0, Ldefpackage/zd;->a:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    sput v0, Ldefpackage/zd;->a:I
-
-    .line 16
-    iput-object p1, p0, Ldefpackage/zd;->b:Ldefpackage/zg;
-
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ldefpackage/yx;J)J
-    .locals 10
-    .param p1, "yxVar"    # Ldefpackage/yx;
-    .param p2, "j"    # J
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 25
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 20
-    iget-object v0, p1, Ldefpackage/yx;->d:Ldefpackage/zg;
+    .line 151
+    move-object/from16 v1, p0
 
-    .line 21
-    .local v0, "zgVar":Ldefpackage/zg;
-    instance-of v1, v0, Ldefpackage/zb;
+    iget-object v2, v1, Ldefpackage/Zd;->this$0:Lgko;
 
-    if-eqz v1, :cond_0
+    .line 152
+    .local v2, "gkoVar":Lgko;
+    iget-object v3, v1, Ldefpackage/Zd;->val$b2:Ljava/util/List;
 
-    .line 22
-    return-wide p2
+    .line 153
+    .local v3, "list":Ljava/util/List;
+    move-object/from16 v4, p1
 
-    .line 24
-    :cond_0
-    iget-object v1, p1, Ldefpackage/yx;->j:Ljava/util/List;
+    check-cast v4, Ljava/lang/Integer;
 
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    .line 154
+    .local v4, "num":Ljava/lang/Integer;
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
-    move-result v1
+    move-result v0
 
-    .line 25
-    .local v1, "size":I
-    move-wide v2, p2
+    invoke-interface {v3}, Ljava/util/List;->size()I
 
-    .line 26
-    .local v2, "j2":J
-    const/4 v4, 0x0
+    move-result v5
 
-    .local v4, "i":I
+    invoke-static {v0, v5}, Lobr;->aX(II)V
+
+    .line 155
+    const/4 v0, 0x0
+
+    .line 156
+    .local v0, "madVar2":Lmad;
+    const/4 v5, 0x0
+
+    move/from16 v24, v5
+
+    move-object v5, v0
+
+    move/from16 v0, v24
+
+    .local v0, "i2":I
+    .local v5, "madVar2":Lmad;
     :goto_0
-    if-ge v4, v1, :cond_2
+    invoke-interface {v3}, Ljava/util/List;->size()I
 
-    .line 27
-    iget-object v5, p1, Ldefpackage/yx;->j:Ljava/util/List;
+    move-result v6
 
-    invoke-interface {v5, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    if-ge v0, v6, :cond_1
 
-    move-result-object v5
+    .line 157
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
-    check-cast v5, Ldefpackage/yv;
+    move-result v6
 
-    .line 28
-    .local v5, "yvVar":Ldefpackage/yv;
-    instance-of v6, v5, Ldefpackage/yx;
+    if-ne v0, v6, :cond_0
 
-    if-eqz v6, :cond_1
+    .line 158
+    invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 29
-    move-object v6, v5
+    move-result-object v6
 
-    check-cast v6, Ldefpackage/yx;
+    move-object v5, v6
 
-    .line 30
-    .local v6, "yxVar2":Ldefpackage/yx;
-    iget-object v7, v6, Ldefpackage/yx;->d:Ldefpackage/zg;
+    check-cast v5, Lmad;
 
-    if-eq v7, v0, :cond_1
+    goto :goto_1
 
-    .line 31
-    iget v7, v6, Ldefpackage/yx;->e:I
+    .line 160
+    :cond_0
+    invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    int-to-long v7, v7
+    move-result-object v6
 
-    add-long/2addr v7, p2
+    check-cast v6, Lgjs;
 
-    invoke-virtual {p0, v6, v7, v8}, Ldefpackage/zd;->a(Ldefpackage/yx;J)J
+    invoke-virtual {v6}, Lmaa;->close()V
 
-    move-result-wide v7
-
-    invoke-static {v2, v3, v7, v8}, Ljava/lang/Math;->min(JJ)J
-
-    move-result-wide v2
-
-    .line 26
-    .end local v5    # "yvVar":Ldefpackage/yv;
-    .end local v6    # "yxVar2":Ldefpackage/yx;
-    :cond_1
-    add-int/lit8 v4, v4, 0x1
+    .line 156
+    :goto_1
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 35
-    .end local v4    # "i":I
-    :cond_2
-    iget-object v4, v0, Ldefpackage/zg;->j:Ldefpackage/yx;
-
-    if-eq p1, v4, :cond_3
-
-    .line 36
-    return-wide v2
-
-    .line 38
-    :cond_3
-    invoke-virtual {v0}, Ldefpackage/zg;->a()J
-
-    move-result-wide v4
-
-    sub-long v4, p2, v4
-
-    .line 39
-    .local v4, "a2":J
-    iget-object v6, v0, Ldefpackage/zg;->i:Ldefpackage/yx;
-
-    invoke-virtual {p0, v6, v4, v5}, Ldefpackage/zd;->a(Ldefpackage/yx;J)J
-
-    move-result-wide v6
-
-    invoke-static {v2, v3, v6, v7}, Ljava/lang/Math;->min(JJ)J
-
-    move-result-wide v6
-
-    iget-object v8, v0, Ldefpackage/zg;->i:Ldefpackage/yx;
-
-    iget v8, v8, Ldefpackage/yx;->e:I
-
-    int-to-long v8, v8
-
-    sub-long v8, v4, v8
-
-    invoke-static {v6, v7, v8, v9}, Ljava/lang/Math;->min(JJ)J
-
-    move-result-wide v6
-
-    return-wide v6
-.end method
-
-.method public final b(Ldefpackage/yx;J)J
-    .locals 10
-    .param p1, "yxVar"    # Ldefpackage/yx;
-    .param p2, "j"    # J
-
-    .line 43
-    iget-object v0, p1, Ldefpackage/yx;->d:Ldefpackage/zg;
-
-    .line 44
-    .local v0, "zgVar":Ldefpackage/zg;
-    instance-of v1, v0, Ldefpackage/zb;
-
-    if-eqz v1, :cond_0
-
-    .line 45
-    return-wide p2
-
-    .line 47
-    :cond_0
-    iget-object v1, p1, Ldefpackage/yx;->j:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    .line 48
-    .local v1, "size":I
-    move-wide v2, p2
-
-    .line 49
-    .local v2, "j2":J
-    const/4 v4, 0x0
-
-    .local v4, "i":I
-    :goto_0
-    if-ge v4, v1, :cond_2
-
-    .line 50
-    iget-object v5, p1, Ldefpackage/yx;->j:Ljava/util/List;
-
-    invoke-interface {v5, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ldefpackage/yv;
-
-    .line 51
-    .local v5, "yvVar":Ldefpackage/yv;
-    instance-of v6, v5, Ldefpackage/yx;
-
-    if-eqz v6, :cond_1
-
-    .line 52
-    move-object v6, v5
-
-    check-cast v6, Ldefpackage/yx;
-
-    .line 53
-    .local v6, "yxVar2":Ldefpackage/yx;
-    iget-object v7, v6, Ldefpackage/yx;->d:Ldefpackage/zg;
-
-    if-eq v7, v0, :cond_1
-
-    .line 54
-    iget v7, v6, Ldefpackage/yx;->e:I
-
-    int-to-long v7, v7
-
-    add-long/2addr v7, p2
-
-    invoke-virtual {p0, v6, v7, v8}, Ldefpackage/zd;->b(Ldefpackage/yx;J)J
-
-    move-result-wide v7
-
-    invoke-static {v2, v3, v7, v8}, Ljava/lang/Math;->max(JJ)J
-
-    move-result-wide v2
-
-    .line 49
-    .end local v5    # "yvVar":Ldefpackage/yv;
-    .end local v6    # "yxVar2":Ldefpackage/yx;
+    .line 163
+    .end local v0    # "i2":I
     :cond_1
-    add-int/lit8 v4, v4, 0x1
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    goto :goto_0
+    .line 164
+    iget-object v0, v2, Lgko;->e:Lgkp;
 
-    .line 58
-    .end local v4    # "i":I
-    :cond_2
-    iget-object v4, v0, Ldefpackage/zg;->i:Ldefpackage/yx;
+    iget-object v6, v0, Lgkp;->j:Lgln;
 
-    if-eq p1, v4, :cond_3
+    .line 165
+    .local v6, "glnVar":Lgln;
+    iget-object v13, v2, Lgko;->a:Lhsa;
 
-    .line 59
-    return-wide v2
+    .line 166
+    .local v13, "hsaVar":Lhsa;
+    iget-object v14, v2, Lgko;->d:Llic;
 
-    .line 61
-    :cond_3
-    invoke-virtual {v0}, Ldefpackage/zg;->a()J
+    .line 167
+    .local v14, "licVar2":Llic;
+    invoke-virtual {v14}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-wide v4
+    .line 168
+    invoke-static {}, Lpih;->f()Lpih;
 
-    add-long/2addr v4, p2
+    move-result-object v15
 
-    .line 62
-    .local v4, "a2":J
-    iget-object v6, v0, Ldefpackage/zg;->j:Ldefpackage/yx;
+    .line 169
+    .local v15, "f":Lpih;
+    invoke-static {}, Lpih;->f()Lpih;
 
-    invoke-virtual {p0, v6, v4, v5}, Ldefpackage/zd;->b(Ldefpackage/yx;J)J
+    move-result-object v12
 
-    move-result-wide v6
+    .line 170
+    .local v12, "f2":Lpih;
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    invoke-static {v2, v3, v6, v7}, Ljava/lang/Math;->max(JJ)J
+    const-string v7, "Thumbnail generation should not require metadata"
 
-    move-result-wide v6
+    invoke-direct {v0, v7}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    iget-object v8, v0, Ldefpackage/zg;->j:Ldefpackage/yx;
+    invoke-static {v0}, Lplk;->U(Ljava/lang/Throwable;)Lpht;
 
-    iget v8, v8, Ldefpackage/yx;->e:I
+    move-result-object v11
 
-    int-to-long v8, v8
+    .line 171
+    .local v11, "U":Lpht;
+    new-instance v0, Lgmv;
 
-    sub-long v8, v4, v8
+    invoke-direct {v0, v5}, Lgmv;-><init>(Lmad;)V
 
-    invoke-static {v6, v7, v8, v9}, Ljava/lang/Math;->max(JJ)J
+    move-object/from16 v16, v0
 
-    move-result-wide v6
+    .line 172
+    .local v16, "gmvVar":Lgmv;
+    new-instance v0, Landroid/graphics/Rect;
 
-    return-wide v6
+    invoke-interface {v5}, Lmad;->c()I
+
+    move-result v7
+
+    invoke-interface {v5}, Lmad;->b()I
+
+    move-result v8
+
+    const/4 v9, 0x0
+
+    invoke-direct {v0, v9, v9, v7, v8}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    move-object v10, v0
+
+    .line 173
+    .local v10, "rect":Landroid/graphics/Rect;
+    invoke-static/range {v16 .. v16}, Lhin;->a(Lmad;)Lhim;
+
+    move-result-object v9
+
+    .line 174
+    .local v9, "a3":Lhim;
+    iput-object v14, v9, Lhim;->c:Llic;
+
+    .line 175
+    iput-object v11, v9, Lhim;->d:Lpht;
+
+    .line 176
+    iput-object v10, v9, Lhim;->f:Landroid/graphics/Rect;
+
+    .line 177
+    invoke-virtual {v9}, Lhim;->a()Lhin;
+
+    move-result-object v17
+
+    .line 178
+    .local v17, "a4":Lhin;
+    invoke-static {}, Lplk;->K()Lphv;
+
+    move-result-object v18
+
+    .line 179
+    .local v18, "K":Lphv;
+    sget-object v0, Lhib;->CLOSE_ON_ALL_TASKS_RELEASE:Lhib;
+
+    sget-object v7, Lhib;->CREATE_EARLY_FILMSTRIP_PREVIEW:Lhib;
+
+    sget-object v8, Lhib;->CONVERT_TO_RGB_PREVIEW:Lhib;
+
+    invoke-static {v0, v7, v8}, Lope;->J(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lope;
+
+    move-result-object v19
+
+    .line 180
+    .local v19, "J":Lope;
+    new-instance v0, Lglm;
+
+    invoke-direct {v0}, Lglm;-><init>()V
+
+    move-object v8, v0
+
+    .line 181
+    .local v8, "glmVar":Lglm;
+    new-instance v0, Lglk;
+
+    invoke-direct {v0, v15, v14, v12}, Lglk;-><init>(Lpih;Llic;Lpih;)V
+
+    iput-object v0, v8, Lglm;->c:Lhih;
+
+    .line 183
+    :try_start_0
+    iget-object v7, v6, Lgln;->a:Lhic;
+
+    iget-object v0, v8, Lglm;->d:Lojc;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+
+    move-object/from16 v20, v8
+
+    .end local v8    # "glmVar":Lglm;
+    .local v20, "glmVar":Lglm;
+    move-object/from16 v8, v17
+
+    move-object/from16 v21, v9
+
+    .end local v9    # "a3":Lhim;
+    .local v21, "a3":Lhim;
+    move-object/from16 v9, v18
+
+    move-object/from16 v22, v10
+
+    .end local v10    # "rect":Landroid/graphics/Rect;
+    .local v22, "rect":Landroid/graphics/Rect;
+    move-object/from16 v10, v19
+
+    move-object/from16 v23, v11
+
+    .end local v11    # "U":Lpht;
+    .local v23, "U":Lpht;
+    move-object v11, v13
+
+    move-object v1, v12
+
+    .end local v12    # "f2":Lpih;
+    .local v1, "f2":Lpih;
+    move-object v12, v0
+
+    :try_start_1
+    invoke-interface/range {v7 .. v12}, Lhic;->e(Lhin;Ljava/util/concurrent/Executor;Ljava/util/Set;Lhsa;Lojc;)V
+
+    .line 184
+    new-instance v0, Lglq;
+
+    invoke-direct {v0, v15, v1}, Lglq;-><init>(Lpht;Lpht;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    return-object v0
+
+    .line 185
+    :catch_0
+    move-exception v0
+
+    goto :goto_2
+
+    .end local v1    # "f2":Lpih;
+    .end local v20    # "glmVar":Lglm;
+    .end local v21    # "a3":Lhim;
+    .end local v22    # "rect":Landroid/graphics/Rect;
+    .end local v23    # "U":Lpht;
+    .restart local v8    # "glmVar":Lglm;
+    .restart local v9    # "a3":Lhim;
+    .restart local v10    # "rect":Landroid/graphics/Rect;
+    .restart local v11    # "U":Lpht;
+    .restart local v12    # "f2":Lpih;
+    :catch_1
+    move-exception v0
+
+    move-object/from16 v20, v8
+
+    move-object/from16 v21, v9
+
+    move-object/from16 v22, v10
+
+    move-object/from16 v23, v11
+
+    move-object v1, v12
+
+    .line 186
+    .end local v8    # "glmVar":Lglm;
+    .end local v9    # "a3":Lhim;
+    .end local v10    # "rect":Landroid/graphics/Rect;
+    .end local v11    # "U":Lpht;
+    .end local v12    # "f2":Lpih;
+    .local v0, "e":Ljava/lang/Exception;
+    .restart local v1    # "f2":Lpih;
+    .restart local v20    # "glmVar":Lglm;
+    .restart local v21    # "a3":Lhim;
+    .restart local v22    # "rect":Landroid/graphics/Rect;
+    .restart local v23    # "U":Lpht;
+    :goto_2
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/Thread;->interrupt()V
+
+    .line 187
+    new-instance v7, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v7, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v7
 .end method

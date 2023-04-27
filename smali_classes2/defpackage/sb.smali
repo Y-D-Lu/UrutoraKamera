@@ -1,97 +1,59 @@
-.class public final Ldefpackage/sb;
+.class public Ldefpackage/Sb;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static final a:Ldefpackage/fc;
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfkr;->onTick(J)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public b:I
+.field public final synthetic this$0:Lfkr;
 
-.field public c:Ldefpackage/px;
-
-.field public d:Ldefpackage/px;
+.field public final synthetic val$jguVar:Ljgu;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    .line 6
-    new-instance v0, Ldefpackage/fd;
-
-    const/16 v1, 0x14
-
-    invoke-direct {v0, v1}, Ldefpackage/fd;-><init>(I)V
-
-    sput-object v0, Ldefpackage/sb;->a:Ldefpackage/fc;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method public constructor <init>(Lfkr;Ljgu;)V
     .locals 0
+    .param p1, "this$0"    # Lfkr;
 
-    .line 11
+    .line 52
+    iput-object p1, p0, Ldefpackage/Sb;->this$0:Lfkr;
+
+    iput-object p2, p0, Ldefpackage/Sb;->val$jguVar:Ljgu;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
     return-void
 .end method
 
-.method public static a()Ldefpackage/sb;
-    .locals 2
 
-    .line 15
-    sget-object v0, Ldefpackage/sb;->a:Ldefpackage/fc;
+# virtual methods
+.method public final run()V
+    .locals 3
 
-    invoke-interface {v0}, Ldefpackage/fc;->a()Ljava/lang/Object;
+    .line 55
+    iget-object v0, p0, Ldefpackage/Sb;->this$0:Lfkr;
 
-    move-result-object v0
+    .line 56
+    .local v0, "fkrVar":Lfkr;
+    iget-object v1, v0, Lfkr;->c:Lfks;
 
-    check-cast v0, Ldefpackage/sb;
+    iget-object v2, p0, Ldefpackage/Sb;->val$jguVar:Ljgu;
 
-    .line 16
-    .local v0, "sbVar":Ldefpackage/sb;
-    if-nez v0, :cond_0
+    invoke-virtual {v1, v2}, Ljgs;->g(Ljgu;)V
 
-    new-instance v1, Ldefpackage/sb;
-
-    invoke-direct {v1}, Ldefpackage/sb;-><init>()V
-
-    goto :goto_0
-
-    :cond_0
-    move-object v1, v0
-
-    :goto_0
-    return-object v1
-.end method
-
-.method public static b(Ldefpackage/sb;)V
-    .locals 1
-    .param p0, "sbVar"    # Ldefpackage/sb;
-
-    .line 20
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/sb;->b:I
-
-    .line 21
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Ldefpackage/sb;->c:Ldefpackage/px;
-
-    .line 22
-    iput-object v0, p0, Ldefpackage/sb;->d:Ldefpackage/px;
-
-    .line 23
-    sget-object v0, Ldefpackage/sb;->a:Ldefpackage/fc;
-
-    invoke-interface {v0, p0}, Ldefpackage/fc;->b(Ljava/lang/Object;)Z
-
-    .line 24
+    .line 57
     return-void
 .end method

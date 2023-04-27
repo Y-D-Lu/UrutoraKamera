@@ -94,7 +94,7 @@
     move-result-object v2
 
     :goto_0
-    invoke-static {v1, v2}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 

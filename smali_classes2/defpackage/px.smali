@@ -1,19 +1,46 @@
-.class public final Ldefpackage/px;
+.class public Ldefpackage/Px;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lpgj;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lnkq;->b(Loiu;Ljava/util/concurrent/Executor;)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:I
+.field public final synthetic this$0:Lnkq;
 
-.field public b:I
+.field public final synthetic val$b:Lpgk;
+
+.field public final synthetic val$c:Lpht;
+
+.field public final synthetic val$executor:Ljava/util/concurrent/Executor;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lnkq;Lpht;Lpgk;Ljava/util/concurrent/Executor;)V
     .locals 0
+    .param p1, "this$0"    # Lnkq;
 
-    .line 7
+    .line 77
+    iput-object p1, p0, Ldefpackage/Px;->this$0:Lnkq;
+
+    iput-object p2, p0, Ldefpackage/Px;->val$c:Lpht;
+
+    iput-object p3, p0, Ldefpackage/Px;->val$b:Lpgk;
+
+    iput-object p4, p0, Ldefpackage/Px;->val$executor:Ljava/util/concurrent/Executor;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,96 +48,39 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/qs;)V
-    .locals 2
-    .param p1, "qsVar"    # Ldefpackage/qs;
+.method public final a()Lpht;
+    .locals 6
 
-    .line 12
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    .line 80
+    iget-object v0, p0, Ldefpackage/Px;->this$0:Lnkq;
 
-    .line 13
-    .local v0, "view":Landroid/view/View;
-    invoke-virtual {v0}, Landroid/view/View;->getLeft()I
+    .line 81
+    .local v0, "nkqVar":Lnkq;
+    iget-object v1, p0, Ldefpackage/Px;->val$c:Lpht;
 
-    move-result v1
+    .line 82
+    .local v1, "phtVar":Lpht;
+    iget-object v2, p0, Ldefpackage/Px;->val$b:Lpgk;
 
-    iput v1, p0, Ldefpackage/px;->a:I
+    .line 83
+    .local v2, "pgkVar":Lpgk;
+    iget-object v3, p0, Ldefpackage/Px;->val$executor:Ljava/util/concurrent/Executor;
 
-    .line 14
-    invoke-virtual {v0}, Landroid/view/View;->getTop()I
+    .line 84
+    .local v3, "executor2":Ljava/util/concurrent/Executor;
+    new-instance v4, Ldefpackage/Ox;
 
-    move-result v1
+    invoke-direct {v4, p0, v2, v3}, Ldefpackage/Ox;-><init>(Ldefpackage/Px;Lpgk;Ljava/util/concurrent/Executor;)V
 
-    iput v1, p0, Ldefpackage/px;->b:I
+    invoke-static {v4}, Logl;->b(Lpgk;)Lpgk;
 
-    .line 15
-    invoke-virtual {v0}, Landroid/view/View;->getRight()I
+    move-result-object v4
 
-    .line 16
-    invoke-virtual {v0}, Landroid/view/View;->getBottom()I
+    sget-object v5, Lpgr;->a:Lpgr;
 
-    .line 17
-    return-void
-.end method
+    invoke-static {v1, v4, v5}, Lpgb;->i(Lpht;Lpgk;Ljava/util/concurrent/Executor;)Lpht;
 
-.method public final b()I
-    .locals 2
+    move-result-object v4
 
-    .line 20
-    iget v0, p0, Ldefpackage/px;->b:I
-
-    iget v1, p0, Ldefpackage/px;->a:I
-
-    or-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final c(II)V
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
-
-    .line 24
-    const/4 v0, 0x1
-
-    if-ne p2, v0, :cond_0
-
-    .line 25
-    iput p1, p0, Ldefpackage/px;->a:I
-
-    goto :goto_0
-
-    .line 27
-    :cond_0
-    iput p1, p0, Ldefpackage/px;->b:I
-
-    .line 29
-    :goto_0
-    return-void
-.end method
-
-.method public final d(I)V
-    .locals 2
-    .param p1, "i"    # I
-
-    .line 32
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
-    if-ne p1, v1, :cond_0
-
-    .line 33
-    iput v0, p0, Ldefpackage/px;->a:I
-
-    goto :goto_0
-
-    .line 35
-    :cond_0
-    iput v0, p0, Ldefpackage/px;->b:I
-
-    .line 37
-    :goto_0
-    return-void
+    return-object v4
 .end method

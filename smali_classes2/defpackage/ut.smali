@@ -1,140 +1,55 @@
-.class public final Ldefpackage/ut;
-.super Ldefpackage/hn;
+.class public Ldefpackage/Ut;
+.super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static final a:Ljava/util/concurrent/Executor;
 
-.field private static volatile c:Ldefpackage/ut;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Llce;->fB(Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final b:Ldefpackage/hn;
+.field public final synthetic this$0:Llce;
 
-.field private final d:Ldefpackage/hn;
+.field public final synthetic val$obj:Ljava/lang/Object;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Llce;Ljava/lang/Object;)V
+    .locals 0
+    .param p1, "this$0"    # Llce;
 
-    .line 10
-    new-instance v0, Ldefpackage/lio;
+    .line 57
+    iput-object p1, p0, Ldefpackage/Ut;->this$0:Llce;
 
-    const/4 v1, 0x1
+    iput-object p2, p0, Ldefpackage/Ut;->val$obj:Ljava/lang/Object;
 
-    invoke-direct {v0, v1}, Ldefpackage/lio;-><init>(I)V
-
-    sput-object v0, Ldefpackage/ut;->a:Ljava/util/concurrent/Executor;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method private constructor <init>()V
-    .locals 1
-
-    .line 15
-    invoke-direct {p0}, Ldefpackage/hn;-><init>()V
-
-    .line 16
-    new-instance v0, Ldefpackage/uv;
-
-    invoke-direct {v0}, Ldefpackage/uv;-><init>()V
-
-    .line 17
-    .local v0, "uvVar":Ldefpackage/uv;
-    iput-object v0, p0, Ldefpackage/ut;->d:Ldefpackage/hn;
-
-    .line 18
-    iput-object v0, p0, Ldefpackage/ut;->b:Ldefpackage/hn;
-
-    .line 19
-    return-void
-.end method
-
-.method public static f()Ldefpackage/ut;
-    .locals 2
-
-    .line 22
-    sget-object v0, Ldefpackage/ut;->c:Ldefpackage/ut;
-
-    if-eqz v0, :cond_0
-
-    .line 23
-    sget-object v0, Ldefpackage/ut;->c:Ldefpackage/ut;
-
-    return-object v0
-
-    .line 25
-    :cond_0
-    const-class v0, Ldefpackage/ut;
-
-    monitor-enter v0
-
-    .line 26
-    :try_start_0
-    sget-object v1, Ldefpackage/ut;->c:Ldefpackage/ut;
-
-    if-nez v1, :cond_1
-
-    .line 27
-    new-instance v1, Ldefpackage/ut;
-
-    invoke-direct {v1}, Ldefpackage/ut;-><init>()V
-
-    sput-object v1, Ldefpackage/ut;->c:Ldefpackage/ut;
-
-    .line 29
-    :cond_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 30
-    sget-object v0, Ldefpackage/ut;->c:Ldefpackage/ut;
-
-    return-object v0
-
-    .line 29
-    :catchall_0
-    move-exception v1
-
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v1
 .end method
 
 
 # virtual methods
-.method public final g()Z
+.method public final run()V
     .locals 2
 
-    .line 34
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+    .line 60
+    iget-object v0, p0, Ldefpackage/Ut;->this$0:Llce;
 
-    move-result-object v0
+    iget-object v1, p0, Ldefpackage/Ut;->val$obj:Ljava/lang/Object;
 
-    invoke-virtual {v0}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
+    invoke-virtual {v0, v1}, Llce;->c(Ljava/lang/Object;)V
 
-    move-result-object v0
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    move-result-object v1
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
+    .line 61
+    return-void
 .end method

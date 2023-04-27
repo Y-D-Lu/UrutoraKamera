@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jli;
+.implements Ljli;
 
 
 # virtual methods

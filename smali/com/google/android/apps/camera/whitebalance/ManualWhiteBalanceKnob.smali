@@ -30,7 +30,7 @@
     iput v0, p0, Lcom/google/android/apps/camera/whitebalance/ManualWhiteBalanceKnob;->a:I
 
     .line 18
-    sget-object v0, Ldefpackage/guf;->d:Ldefpackage/guf;
+    sget-object v0, Lguf;->d:Lguf;
 
     invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 

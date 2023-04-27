@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Ldefpackage/oor;
+.field public final a:Loor;
 
 .field public b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
 .field public c:Landroid/widget/FrameLayout;
 
-.field public d:Ldefpackage/jrz;
+.field public d:Ljrz;
 
 .field private e:Landroid/animation/ValueAnimator;
 
@@ -25,7 +25,7 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 29
-    sget-object v0, Ldefpackage/cuv;->STANDARD:Ldefpackage/cuv;
+    sget-object v0, Lcuv;->STANDARD:Lcuv;
 
     const v1, 0x7f08020c
 
@@ -33,7 +33,7 @@
 
     move-result-object v1
 
-    sget-object v2, Ldefpackage/cuv;->LOCKED:Ldefpackage/cuv;
+    sget-object v2, Lcuv;->LOCKED:Lcuv;
 
     const v3, 0x7f080209
 
@@ -41,7 +41,7 @@
 
     move-result-object v3
 
-    sget-object v4, Ldefpackage/cuv;->CINEMATIC:Ldefpackage/cuv;
+    sget-object v4, Lcuv;->CINEMATIC:Lcuv;
 
     const v5, 0x7f08020b
 
@@ -49,7 +49,7 @@
 
     move-result-object v5
 
-    sget-object v6, Ldefpackage/cuv;->ACTIVE:Ldefpackage/cuv;
+    sget-object v6, Lcuv;->ACTIVE:Lcuv;
 
     const v7, 0x7f080208
 
@@ -57,16 +57,16 @@
 
     move-result-object v7
 
-    invoke-static/range {v0 .. v7}, Ldefpackage/oor;->s(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ldefpackage/oor;
+    invoke-static/range {v0 .. v7}, Loor;->s(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Loor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->a:Ldefpackage/oor;
+    iput-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->a:Loor;
 
     .line 30
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->d:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->d:Ljrz;
 
     .line 31
     return-void
@@ -74,20 +74,20 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/jrz;)V
+.method public final a(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 34
-    iput-object p1, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->d:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->d:Ljrz;
 
     .line 35
-    invoke-static {p0, p1}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, p1}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 36
     iget-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 37
     return-void
@@ -205,11 +205,11 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
     .line 62
-    iget-object v1, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->a:Ldefpackage/oor;
+    iget-object v1, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->a:Loor;
 
-    sget-object v2, Ldefpackage/cuv;->STANDARD:Ldefpackage/cuv;
+    sget-object v2, Lcuv;->STANDARD:Lcuv;
 
-    invoke-virtual {v1, v2}, Ldefpackage/oor;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Loor;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -224,7 +224,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v2}, Ldefpackage/mw;->setImageResource(I)V
+    invoke-virtual {v0, v2}, Lmw;->setImageResource(I)V
 
     .line 65
     const/4 v2, 0x2
@@ -303,9 +303,9 @@
     if-eqz p1, :cond_0
 
     .line 84
-    iget-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->d:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->d:Ljrz;
 
-    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->a(Ldefpackage/jrz;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->a(Ljrz;)V
 
     .line 86
     :cond_0
@@ -318,9 +318,9 @@
     .param p2, "i2"    # I
 
     .line 90
-    iget-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->d:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/camcorder/ui/stabilization/StabilizationUi;->d:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

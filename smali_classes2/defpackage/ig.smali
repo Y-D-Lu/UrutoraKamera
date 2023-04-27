@@ -1,60 +1,135 @@
-.class public final Ldefpackage/ig;
+.class public Ldefpackage/Ig;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/uh;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhll;-><init>(Ljava/util/concurrent/Executor;Llda;Llda;Lims;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/ih;
+.field public final synthetic this$0:Lhll;
+
+.field public final synthetic val$ldaVar:Llda;
+
+.field public final synthetic val$ldaVar2:Llda;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/ih;)V
+.method public constructor <init>(Lhll;Llda;Llda;)V
     .locals 0
-    .param p1, "ihVar"    # Ldefpackage/ih;
+    .param p1, "this$0"    # Lhll;
 
-    .line 9
+    .line 14
+    iput-object p1, p0, Ldefpackage/Ig;->this$0:Lhll;
+
+    iput-object p2, p0, Ldefpackage/Ig;->val$ldaVar:Llda;
+
+    iput-object p3, p0, Ldefpackage/Ig;->val$ldaVar2:Llda;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
-    iput-object p1, p0, Ldefpackage/ig;->a:Ldefpackage/ih;
-
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 3
-
-    .line 15
-    iget-object v0, p0, Ldefpackage/ig;->a:Ldefpackage/ih;
-
-    invoke-virtual {v0}, Ldefpackage/ih;->g()Ldefpackage/ii;
-
-    move-result-object v0
-
-    .line 16
-    .local v0, "g":Ldefpackage/ii;
-    invoke-virtual {v0}, Ldefpackage/ii;->d()V
+.method public final run()V
+    .locals 4
 
     .line 17
-    iget-object v1, p0, Ldefpackage/ig;->a:Ldefpackage/ih;
+    const/4 v0, -0x1
 
-    invoke-virtual {v1}, Ldefpackage/ub;->D()Ldefpackage/ajm;
+    packed-switch v0, :pswitch_data_0
 
-    move-result-object v1
+    .line 27
+    iget-object v0, p0, Ldefpackage/Ig;->val$ldaVar:Llda;
 
-    const-string v2, "androidx:appcompat"
+    .line 28
+    .local v0, "ldaVar5":Llda;
+    iget-object v1, p0, Ldefpackage/Ig;->val$ldaVar2:Llda;
 
-    invoke-virtual {v1, v2}, Ldefpackage/ajm;->a(Ljava/lang/String;)Landroid/os/Bundle;
+    .line 29
+    .local v1, "ldaVar6":Llda;
+    sget-object v2, Lkdb;->h:Landroid/hardware/camera2/CameraCharacteristics$Key;
 
-    .line 18
-    invoke-virtual {v0}, Ldefpackage/ii;->m()V
+    const/4 v3, 0x1
+
+    if-eqz v2, :cond_1
+
+    .line 30
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-interface {v0, v2}, Llij;->fB(Ljava/lang/Object;)V
+
+    goto :goto_0
 
     .line 19
+    .end local v0    # "ldaVar5":Llda;
+    .end local v1    # "ldaVar6":Llda;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Ig;->val$ldaVar:Llda;
+
+    .line 20
+    .local v0, "ldaVar3":Llda;
+    iget-object v1, p0, Ldefpackage/Ig;->val$ldaVar2:Llda;
+
+    .line 21
+    .local v1, "ldaVar4":Llda;
+    sget-object v2, Lkdb;->h:Landroid/hardware/camera2/CameraCharacteristics$Key;
+
+    if-eqz v2, :cond_0
+
+    .line 22
+    const/4 v2, 0x2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-interface {v0, v2}, Llij;->fB(Ljava/lang/Object;)V
+
+    .line 24
+    :cond_0
+    const/4 v2, 0x0
+
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Llij;->fB(Ljava/lang/Object;)V
+
+    .line 25
     return-void
+
+    .line 32
+    .local v0, "ldaVar5":Llda;
+    .local v1, "ldaVar6":Llda;
+    :cond_1
+    :goto_0
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Llij;->fB(Ljava/lang/Object;)V
+
+    .line 33
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -3,13 +3,13 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/aec;
+.implements Laec;
 
 
 # instance fields
 .field private final a:Ljava/lang/Object;
 
-.field private final b:Ldefpackage/bci;
+.field private final b:Lbci;
 
 
 # direct methods
@@ -24,17 +24,17 @@
     iput-object p1, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->a:Ljava/lang/Object;
 
     .line 18
-    sget-object v0, Ldefpackage/adw;->a:Ldefpackage/adw;
+    sget-object v0, Ladw;->a:Ladw;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/adw;->c(Ljava/lang/Class;)Ldefpackage/bci;
+    invoke-virtual {v0, v1}, Ladw;->c(Ljava/lang/Class;)Lbci;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->b:Ldefpackage/bci;
+    iput-object v0, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->b:Lbci;
 
     .line 19
     return-void
@@ -42,21 +42,21 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/aee;Ldefpackage/adz;)V
+.method public final a(Laee;Ladz;)V
     .locals 4
-    .param p1, "aeeVar"    # Ldefpackage/aee;
-    .param p2, "adzVar"    # Ldefpackage/adz;
+    .param p1, "aeeVar"    # Laee;
+    .param p2, "adzVar"    # Ladz;
 
     .line 23
-    iget-object v0, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->b:Ldefpackage/bci;
+    iget-object v0, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->b:Lbci;
 
     .line 24
-    .local v0, "bciVar":Ldefpackage/bci;
+    .local v0, "bciVar":Lbci;
     iget-object v1, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->a:Ljava/lang/Object;
 
     .line 25
     .local v1, "obj":Ljava/lang/Object;
-    iget-object v2, v0, Ldefpackage/bci;->a:Ljava/util/Map;
+    iget-object v2, v0, Lbci;->a:Ljava/util/Map;
 
     invoke-interface {v2, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -64,12 +64,12 @@
 
     check-cast v2, Ljava/util/List;
 
-    invoke-static {v2, p1, p2, v1}, Ldefpackage/bci;->c(Ljava/util/List;Ldefpackage/aee;Ldefpackage/adz;Ljava/lang/Object;)V
+    invoke-static {v2, p1, p2, v1}, Lbci;->c(Ljava/util/List;Laee;Ladz;Ljava/lang/Object;)V
 
     .line 26
-    iget-object v2, v0, Ldefpackage/bci;->a:Ljava/util/Map;
+    iget-object v2, v0, Lbci;->a:Ljava/util/Map;
 
-    sget-object v3, Ldefpackage/adz;->ON_ANY:Ldefpackage/adz;
+    sget-object v3, Ladz;->ON_ANY:Ladz;
 
     invoke-interface {v2, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -77,7 +77,7 @@
 
     check-cast v2, Ljava/util/List;
 
-    invoke-static {v2, p1, p2, v1}, Ldefpackage/bci;->c(Ljava/util/List;Ldefpackage/aee;Ldefpackage/adz;Ljava/lang/Object;)V
+    invoke-static {v2, p1, p2, v1}, Lbci;->c(Ljava/util/List;Laee;Ladz;Ljava/lang/Object;)V
 
     .line 27
     return-void

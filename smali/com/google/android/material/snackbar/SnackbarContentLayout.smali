@@ -36,7 +36,7 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 29
-    sget-object v0, Ldefpackage/ocl;->a:[I
+    sget-object v0, Locl;->a:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -125,22 +125,22 @@
 
     .line 47
     .local v1, "textView":Landroid/widget/TextView;
-    invoke-static {v1}, Ldefpackage/gl;->X(Landroid/view/View;)Z
+    invoke-static {v1}, Lgl;->X(Landroid/view/View;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 48
-    invoke-static {v1}, Ldefpackage/gl;->j(Landroid/view/View;)I
+    invoke-static {v1}, Lgl;->j(Landroid/view/View;)I
 
     move-result v2
 
-    invoke-static {v1}, Ldefpackage/gl;->i(Landroid/view/View;)I
+    invoke-static {v1}, Lgl;->i(Landroid/view/View;)I
 
     move-result v3
 
-    invoke-static {v1, v2, p2, v3, p3}, Ldefpackage/gl;->O(Landroid/view/View;IIII)V
+    invoke-static {v1, v2, p2, v3, p3}, Lgl;->O(Landroid/view/View;IIII)V
 
     goto :goto_1
 

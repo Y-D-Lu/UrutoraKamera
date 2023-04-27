@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/pgk;
+.implements Lpgk;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;->c()Ldefpackage/pht;
+    value = Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;->c()Lpht;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ldefpackage/pht;
+.method public final a(Ljava/lang/Object;)Lpht;
     .locals 5
     .param p1, "obj"    # Ljava/lang/Object;
 
@@ -54,17 +54,17 @@
     .line 72
     iget-object v0, p0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService$1;->a:Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;
 
-    iget-object v0, v0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;->c:Ldefpackage/cef;
+    iget-object v0, v0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;->c:Lcef;
 
     move-object v1, p1
 
-    check-cast v1, Ldefpackage/ope;
+    check-cast v1, Lope;
 
-    invoke-virtual {v1}, Ldefpackage/ope;->v()Ldefpackage/oom;
+    invoke-virtual {v1}, Lope;->v()Loom;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/cef;->b(Ljava/util/List;)Ldefpackage/pht;
+    invoke-virtual {v0, v1}, Lcef;->b(Ljava/util/List;)Lpht;
 
     move-result-object v0
 
@@ -80,7 +80,7 @@
     .local v0, "r4":Ljava/lang/Void;
     iget-object v1, p0, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService$1;->a:Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;
 
-    invoke-virtual {v1}, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;->a()Ldefpackage/cdf;
+    invoke-virtual {v1}, Lcom/google/android/apps/camera/brella/examplestore/beholder/BeholderExampleStoreDataTtlService;->a()Lcdf;
 
     move-result-object v1
 
@@ -92,7 +92,7 @@
 
     move-result-wide v2
 
-    invoke-interface {v1, v2, v3}, Ldefpackage/cdf;->f(J)Ldefpackage/pht;
+    invoke-interface {v1, v2, v3}, Lcdf;->f(J)Lpht;
 
     move-result-object v1
 

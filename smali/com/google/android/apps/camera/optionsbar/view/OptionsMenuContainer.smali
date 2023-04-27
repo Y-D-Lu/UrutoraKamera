@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
@@ -24,9 +24,9 @@
 
 .field private H:I
 
-.field public b:Ldefpackage/jrz;
+.field public b:Ljrz;
 
-.field public final c:Ldefpackage/jsh;
+.field public final c:Ljsh;
 
 .field public final d:Landroid/widget/ImageButton;
 
@@ -60,15 +60,15 @@
 
 .field public s:Z
 
-.field public t:Ldefpackage/huj;
+.field public t:Lhuj;
 
 .field public u:Z
 
-.field public v:Ldefpackage/jgu;
+.field public v:Ljgu;
 
-.field public w:Ldefpackage/jgu;
+.field public w:Ljgu;
 
-.field public x:Ldefpackage/elw;
+.field public x:Lelw;
 
 .field public y:Z
 
@@ -82,11 +82,11 @@
     .line 64
     const-string v0, "com/google/android/apps/camera/optionsbar/view/OptionsMenuContainer"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->a:Louj;
 
     return-void
 .end method
@@ -105,9 +105,9 @@
     iput v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->A:I
 
     .line 102
-    sget-object v1, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v1, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ldefpackage/jrz;
+    iput-object v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ljrz;
 
     .line 103
     const/4 v1, 0x0
@@ -124,18 +124,18 @@
     iput-boolean v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->y:Z
 
     .line 107
-    new-instance v2, Ldefpackage/jsh;
+    new-instance v2, Ljsh;
 
-    invoke-direct {v2, p0}, Ldefpackage/jsh;-><init>(Landroid/view/View;)V
+    invoke-direct {v2, p0}, Ljsh;-><init>(Landroid/view/View;)V
 
-    iput-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->c:Ldefpackage/jsh;
+    iput-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->c:Ljsh;
 
     .line 108
     new-instance v2, Landroid/view/GestureDetector;
 
-    new-instance v3, Ldefpackage/gum;
+    new-instance v3, Lgum;
 
-    invoke-direct {v3, p0}, Ldefpackage/gum;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
+    invoke-direct {v3, p0}, Lgum;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
 
     invoke-direct {v2, p1, v3}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
 
@@ -144,9 +144,9 @@
     .line 109
     new-instance v2, Landroid/view/GestureDetector;
 
-    new-instance v3, Ldefpackage/gun;
+    new-instance v3, Lgun;
 
-    invoke-direct {v3, p0}, Ldefpackage/gun;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
+    invoke-direct {v3, p0}, Lgun;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
 
     invoke-direct {v2, p1, v3}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
 
@@ -190,40 +190,40 @@
     iput-object p1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
 
     .line 115
-    instance-of v1, p1, Ldefpackage/bpx;
+    instance-of v1, p1, Lbpx;
 
     if-eqz v1, :cond_0
 
     .line 116
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/bpx;
+    check-cast v0, Lbpx;
 
-    invoke-interface {v0}, Ldefpackage/bpx;->a()Ldefpackage/ddf;
+    invoke-interface {v0}, Lbpx;->a()Lddf;
 
     move-result-object v0
 
     .line 117
-    .local v0, "a2":Ldefpackage/ddf;
-    sget-object v1, Ldefpackage/ddv;->e:Ldefpackage/ddg;
+    .local v0, "a2":Lddf;
+    sget-object v1, Lddv;->e:Lddg;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v1}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
     iput-boolean v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->g:Z
 
     .line 118
-    sget-object v1, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v1, Lddl;->ay:Lddg;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v1}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
     iput-boolean v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->h:Z
 
     .line 119
-    .end local v0    # "a2":Ldefpackage/ddf;
+    .end local v0    # "a2":Lddf;
     goto :goto_0
 
     .line 120
@@ -262,10 +262,10 @@
     return-object v0
 .end method
 
-.method private final C(Ldefpackage/elw;Ldefpackage/jrz;)V
+.method private final C(Lelw;Ljrz;)V
     .locals 5
-    .param p1, "elwVar"    # Ldefpackage/elw;
-    .param p2, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "elwVar"    # Lelw;
+    .param p2, "jrzVar"    # Ljrz;
 
     .line 131
     if-eqz p1, :cond_0
@@ -275,14 +275,14 @@
     if-nez v0, :cond_0
 
     .line 132
-    sget-object v0, Ldefpackage/htf;->OFF:Ldefpackage/htf;
+    sget-object v0, Lhtf;->OFF:Lhtf;
 
     .line 133
-    .local v0, "htfVar":Ldefpackage/htf;
-    sget-object v1, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    .local v0, "htfVar":Lhtf;
+    sget-object v1, Ljrz;->PORTRAIT:Ljrz;
 
     .line 134
-    .local v1, "jrzVar2":Ldefpackage/jrz;
+    .local v1, "jrzVar2":Ljrz;
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
 
     move-result v2
@@ -290,7 +290,7 @@
     packed-switch v2, :pswitch_data_0
 
     .line 142
-    iget-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ldefpackage/jgu;
+    iget-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ljgu;
 
     iget-object v3, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
 
@@ -304,14 +304,14 @@
 
     move-result-object v3
 
-    invoke-interface {v2, v3}, Ldefpackage/jgu;->s(Ljava/lang/String;)V
+    invoke-interface {v2, v3}, Ljgu;->s(Ljava/lang/String;)V
 
     .line 143
     return-void
 
     .line 139
     :pswitch_0
-    iget-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ldefpackage/jgu;
+    iget-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ljgu;
 
     iget-object v3, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
 
@@ -325,14 +325,14 @@
 
     move-result-object v3
 
-    invoke-interface {v2, v3}, Ldefpackage/jgu;->s(Ljava/lang/String;)V
+    invoke-interface {v2, v3}, Ljgu;->s(Ljava/lang/String;)V
 
     .line 140
     return-void
 
     .line 136
     :pswitch_1
-    iget-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ldefpackage/jgu;
+    iget-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ljgu;
 
     iget-object v3, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
 
@@ -346,14 +346,14 @@
 
     move-result-object v3
 
-    invoke-interface {v2, v3}, Ldefpackage/jgu;->s(Ljava/lang/String;)V
+    invoke-interface {v2, v3}, Ljgu;->s(Ljava/lang/String;)V
 
     .line 137
     return-void
 
     .line 146
-    .end local v0    # "htfVar":Ldefpackage/htf;
-    .end local v1    # "jrzVar2":Ldefpackage/jrz;
+    .end local v0    # "htfVar":Lhtf;
+    .end local v1    # "jrzVar2":Ljrz;
     :cond_0
     return-void
 
@@ -373,21 +373,21 @@
     .line 149
     iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
 
-    check-cast v0, Ldefpackage/bpx;
+    check-cast v0, Lbpx;
 
-    invoke-interface {v0}, Ldefpackage/bpx;->a()Ldefpackage/ddf;
+    invoke-interface {v0}, Lbpx;->a()Lddf;
 
     move-result-object v0
 
     .line 150
-    .local v0, "a2":Ldefpackage/ddf;
-    sget-object v1, Ldefpackage/dcy;->a:Ldefpackage/ddi;
+    .local v0, "a2":Lddf;
+    sget-object v1, Ldcy;->a:Lddi;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->a(Ldefpackage/ddi;)Ldefpackage/ojc;
+    invoke-interface {v0, v1}, Lddf;->a(Lddi;)Lojc;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -397,17 +397,17 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Ldefpackage/dcy;->a(Ldefpackage/ddf;I)Ldefpackage/dcw;
+    invoke-static {v0, v1}, Ldcy;->a(Lddf;I)Ldcw;
 
     move-result-object v1
 
     .line 151
-    .local v1, "a3":Ldefpackage/dcw;
+    .local v1, "a3":Ldcw;
     const/4 v2, 0x0
 
     .line 152
     .local v2, "z":Z
-    iget v3, v1, Ldefpackage/dcw;->d:F
+    iget v3, v1, Ldcw;->d:F
 
     sget v4, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
 
@@ -420,7 +420,7 @@
 
     .line 154
     .local v3, "f":F
-    iget v4, v1, Ldefpackage/dcw;->a:F
+    iget v4, v1, Ldcw;->a:F
 
     const/high16 v5, 0x40000000    # 2.0f
 
@@ -746,7 +746,7 @@
     return-object v0
 .end method
 
-.method public final o()Ldefpackage/pht;
+.method public final o()Lpht;
     .locals 3
 
     .line 236
@@ -762,17 +762,17 @@
 
     .line 239
     :cond_0
-    invoke-static {}, Ldefpackage/pih;->f()Ldefpackage/pih;
+    invoke-static {}, Lpih;->f()Lpih;
 
     move-result-object v0
 
     .line 240
-    .local v0, "f":Ldefpackage/pih;
+    .local v0, "f":Lpih;
     iget-object v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->o:Landroid/animation/Animator;
 
-    new-instance v2, Ldefpackage/guk;
+    new-instance v2, Lguk;
 
-    invoke-direct {v2, p0, v0}, Ldefpackage/guk;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;Ldefpackage/pih;)V
+    invoke-direct {v2, p0, v0}, Lguk;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;Lpih;)V
 
     invoke-virtual {v1, v2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -802,7 +802,7 @@
     return-object v0
 
     .line 237
-    .end local v0    # "f":Ldefpackage/pih;
+    .end local v0    # "f":Lpih;
     :cond_1
     :goto_0
     const/4 v0, 0x1
@@ -811,7 +811,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/plk;->V(Ljava/lang/Object;)Ldefpackage/pht;
+    invoke-static {v0}, Lplk;->V(Ljava/lang/Object;)Lpht;
 
     move-result-object v0
 
@@ -942,9 +942,9 @@
     .line 262
     iget-object v4, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->n:Landroid/animation/Animator;
 
-    new-instance v5, Ldefpackage/guh;
+    new-instance v5, Lguh;
 
-    invoke-direct {v5, p0}, Ldefpackage/guh;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
+    invoke-direct {v5, p0}, Lguh;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
 
     invoke-virtual {v4, v5}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -991,11 +991,11 @@
 
     move-result-object v4
 
-    new-instance v5, Ldefpackage/gug;
+    new-instance v5, Lgug;
 
-    invoke-direct {v5}, Ldefpackage/gug;-><init>()V
+    invoke-direct {v5}, Lgug;-><init>()V
 
-    iput-object v5, v4, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->m:Ldefpackage/gug;
+    iput-object v5, v4, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->m:Lgug;
 
     .line 309
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->f()Landroid/widget/FrameLayout;
@@ -1063,7 +1063,7 @@
 
     move-result-object v2
 
-    invoke-static {p0}, Ldefpackage/mip;->dO(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dO(Landroid/view/View;)I
 
     move-result v3
 
@@ -1099,11 +1099,11 @@
     if-eqz p1, :cond_0
 
     .line 328
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ljrz;
 
     iget v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->A:I
 
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->q(Ldefpackage/jrz;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->q(Ljrz;I)V
 
     .line 330
     :cond_0
@@ -1152,9 +1152,9 @@
 
     .line 342
     :cond_0
-    iget-object v3, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ldefpackage/jrz;
+    iget-object v3, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ljrz;
 
-    invoke-static {v3}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v3}, Ljrz;->b(Ljrz;)Z
 
     move-result v3
 
@@ -1385,9 +1385,9 @@
 
     .line 365
     .local v2, "i10":I
-    iget-object v4, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ldefpackage/jrz;
+    iget-object v4, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ljrz;
 
-    invoke-static {v4}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v4}, Ljrz;->b(Ljrz;)Z
 
     move-result v4
 
@@ -1435,9 +1435,9 @@
     .end local v2    # "i10":I
     .end local v3    # "i9":I
     :goto_2
-    iget-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ldefpackage/jrz;
+    iget-object v2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ljrz;
 
-    invoke-static {v2}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v2}, Ljrz;->b(Ljrz;)Z
 
     move-result v2
 
@@ -1481,9 +1481,9 @@
     return v0
 .end method
 
-.method public final p(Ldefpackage/gtu;)V
+.method public final p(Lgtu;)V
     .locals 1
-    .param p1, "gtuVar"    # Ldefpackage/gtu;
+    .param p1, "gtuVar"    # Lgtu;
 
     .line 388
     iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->l:Ljava/util/ArrayList;
@@ -1504,9 +1504,9 @@
     return-void
 .end method
 
-.method public final q(Ldefpackage/jrz;I)V
+.method public final q(Ljrz;I)V
     .locals 11
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
     .param p2, "i"    # I
 
     .line 395
@@ -1515,7 +1515,7 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 396
-    iput-object p1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ljrz;
 
     .line 397
     iput p2, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->A:I
@@ -1607,7 +1607,7 @@
 
     .line 416
     :cond_2
-    invoke-static {p0, p1}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, p1}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 417
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->n()Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;
@@ -1621,18 +1621,18 @@
     invoke-static {v7}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 419
-    iput-object p1, v6, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->i:Ldefpackage/jrz;
+    iput-object p1, v6, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->i:Ljrz;
 
     .line 420
     iget-object v7, v6, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->l:Landroid/widget/LinearLayout;
 
     if-eqz v7, :cond_3
 
-    iget-object v7, v6, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->j:Ldefpackage/guq;
+    iget-object v7, v6, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->j:Lguq;
 
     move-object v8, v7
 
-    .local v8, "guqVar":Ldefpackage/guq;
+    .local v8, "guqVar":Lguq;
     if-eqz v7, :cond_3
 
     .line 421
@@ -1641,13 +1641,13 @@
     invoke-static {v7}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 422
-    iget-object v7, v8, Ldefpackage/guq;->d:Ljava/util/ArrayList;
+    iget-object v7, v8, Lguq;->d:Ljava/util/ArrayList;
 
-    new-instance v9, Ldefpackage/iem;
+    new-instance v9, Liem;
 
     const/4 v10, 0x1
 
-    invoke-direct {v9, p1, v10}, Ldefpackage/iem;-><init>(Ldefpackage/jrz;I)V
+    invoke-direct {v9, p1, v10}, Liem;-><init>(Ljrz;I)V
 
     invoke-virtual {v7, v9}, Ljava/util/ArrayList;->forEach(Ljava/util/function/Consumer;)V
 
@@ -1655,7 +1655,7 @@
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     .line 425
-    .end local v8    # "guqVar":Ldefpackage/guq;
+    .end local v8    # "guqVar":Lguq;
     :cond_3
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
@@ -1666,15 +1666,15 @@
 
     .line 427
     .local v7, "d":Landroid/view/View;
-    invoke-static {v7, p1}, Ldefpackage/mip;->er(Landroid/view/View;Ldefpackage/jrz;)Landroid/animation/ValueAnimator;
+    invoke-static {v7, p1}, Lmip;->er(Landroid/view/View;Ljrz;)Landroid/animation/ValueAnimator;
 
     move-result-object v8
 
     .line 428
     .local v8, "er":Landroid/animation/ValueAnimator;
-    new-instance v9, Ldefpackage/jru;
+    new-instance v9, Ljru;
 
-    invoke-direct {v9, v7}, Ldefpackage/jru;-><init>(Landroid/view/View;)V
+    invoke-direct {v9, v7}, Ljru;-><init>(Landroid/view/View;)V
 
     invoke-virtual {v8, v9}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -1682,9 +1682,9 @@
     invoke-virtual {v8}, Landroid/animation/ValueAnimator;->start()V
 
     .line 430
-    iget-object v9, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->x:Ldefpackage/elw;
+    iget-object v9, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->x:Lelw;
 
-    invoke-direct {p0, v9, p1}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->C(Ldefpackage/elw;Ldefpackage/jrz;)V
+    invoke-direct {p0, v9, p1}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->C(Lelw;Ljrz;)V
 
     .line 431
     invoke-static {}, Landroid/os/Trace;->endSection()V
@@ -1706,7 +1706,7 @@
     if-eqz v0, :cond_0
 
     .line 436
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->o()Ldefpackage/pht;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->o()Lpht;
 
     .line 438
     :cond_0
@@ -1742,7 +1742,7 @@
 
     .line 446
     :cond_0
-    new-instance v1, Ldefpackage/gtz;
+    new-instance v1, Lgtz;
 
     const/4 v4, 0x0
 
@@ -1770,9 +1770,9 @@
 
     move-object v3, p0
 
-    invoke-direct/range {v2 .. v7}, Ldefpackage/gtz;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;ZZZLandroid/view/View;)V
+    invoke-direct/range {v2 .. v7}, Lgtz;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;ZZZLandroid/view/View;)V
 
-    invoke-virtual {v1}, Ldefpackage/gtz;->a()Landroid/animation/Animator;
+    invoke-virtual {v1}, Lgtz;->a()Landroid/animation/Animator;
 
     move-result-object v1
 
@@ -1814,9 +1814,9 @@
 
     move-result-object v5
 
-    check-cast v5, Ldefpackage/gtu;
+    check-cast v5, Lgtu;
 
-    invoke-interface {v5}, Ldefpackage/gtu;->a()V
+    invoke-interface {v5}, Lgtu;->a()V
 
     .line 452
     add-int/lit8 v4, v4, 0x1
@@ -1890,9 +1890,9 @@
     return-void
 .end method
 
-.method public final v(Ldefpackage/elw;)V
+.method public final v(Lelw;)V
     .locals 1
-    .param p1, "elwVar"    # Ldefpackage/elw;
+    .param p1, "elwVar"    # Lelw;
 
     .line 477
     if-nez p1, :cond_0
@@ -1902,15 +1902,15 @@
 
     .line 480
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ldefpackage/jgu;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ljgu;
 
-    invoke-interface {p1, v0}, Ldefpackage/elw;->g(Ldefpackage/elv;)V
+    invoke-interface {p1, v0}, Lelw;->g(Lelv;)V
 
     .line 481
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->w:Ldefpackage/jgu;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->w:Ljgu;
 
     .line 482
-    .local v0, "jguVar":Ldefpackage/jgu;
+    .local v0, "jguVar":Ljgu;
     if-nez v0, :cond_1
 
     .line 483
@@ -1918,7 +1918,7 @@
 
     .line 485
     :cond_1
-    invoke-interface {p1, v0}, Ldefpackage/elw;->g(Ldefpackage/elv;)V
+    invoke-interface {p1, v0}, Lelw;->g(Lelv;)V
 
     .line 486
     return-void
@@ -1950,7 +1950,7 @@
 
     .line 492
     :cond_0
-    new-instance v0, Ldefpackage/gtz;
+    new-instance v0, Lgtz;
 
     const/4 v3, 0x1
 
@@ -1978,17 +1978,17 @@
 
     move-object v2, p0
 
-    invoke-direct/range {v1 .. v6}, Ldefpackage/gtz;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;ZZZLandroid/view/View;)V
+    invoke-direct/range {v1 .. v6}, Lgtz;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;ZZZLandroid/view/View;)V
 
-    invoke-virtual {v0}, Ldefpackage/gtz;->a()Landroid/animation/Animator;
+    invoke-virtual {v0}, Lgtz;->a()Landroid/animation/Animator;
 
     move-result-object v0
 
     .line 493
     .local v0, "a2":Landroid/animation/Animator;
-    new-instance v1, Ldefpackage/guj;
+    new-instance v1, Lguj;
 
-    invoke-direct {v1, p0}, Ldefpackage/guj;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
+    invoke-direct {v1, p0}, Lguj;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;)V
 
     invoke-virtual {v0, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -2017,9 +2017,9 @@
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/gtu;
+    check-cast v4, Lgtu;
 
-    invoke-interface {v4}, Ldefpackage/gtu;->d()V
+    invoke-interface {v4}, Lgtu;->d()V
 
     .line 497
     add-int/lit8 v3, v3, 0x1
@@ -2105,9 +2105,9 @@
     return-void
 .end method
 
-.method public final y(Ldefpackage/elw;ZZ)V
+.method public final y(Lelw;ZZ)V
     .locals 3
-    .param p1, "elwVar"    # Ldefpackage/elw;
+    .param p1, "elwVar"    # Lelw;
     .param p2, "z"    # Z
     .param p3, "z2"    # Z
 
@@ -2125,16 +2125,16 @@
 
     .line 519
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->x:Ldefpackage/elw;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->x:Lelw;
 
     if-nez v0, :cond_1
 
     .line 520
-    iput-object p1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->x:Ldefpackage/elw;
+    iput-object p1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->x:Lelw;
 
     .line 522
     :cond_1
-    invoke-virtual {p0, p1}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v(Ldefpackage/elw;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v(Lelw;)V
 
     .line 523
     if-nez p2, :cond_2
@@ -2151,16 +2151,16 @@
 
     if-nez p2, :cond_3
 
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->t:Ldefpackage/huj;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->t:Lhuj;
 
     move-object v1, v0
 
-    .local v1, "hujVar":Ldefpackage/huj;
+    .local v1, "hujVar":Lhuj;
     if-eqz v0, :cond_3
 
     const-string v0, "pref_ext_mic_bluetooth_chip_display_count"
 
-    invoke-virtual {v1, v0}, Ldefpackage/huj;->b(Ljava/lang/String;)I
+    invoke-virtual {v1, v0}, Lhuj;->b(Ljava/lang/String;)I
 
     move-result v0
 
@@ -2174,7 +2174,7 @@
     return-void
 
     .line 531
-    .end local v1    # "hujVar":Ldefpackage/huj;
+    .end local v1    # "hujVar":Lhuj;
     :cond_3
     iget-boolean v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->y:Z
 
@@ -2184,7 +2184,7 @@
     if-nez p2, :cond_4
 
     .line 533
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ldefpackage/jgu;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ljgu;
 
     iget-object v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
 
@@ -2198,7 +2198,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ldefpackage/jgu;->s(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ljgu;->s(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -2207,7 +2207,7 @@
     if-eqz p3, :cond_5
 
     .line 535
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ldefpackage/jgu;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ljgu;
 
     iget-object v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
 
@@ -2221,13 +2221,13 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ldefpackage/jgu;->s(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ljgu;->s(Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 537
     :cond_5
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ldefpackage/jgu;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ljgu;
 
     iget-object v1, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->k:Landroid/content/Context;
 
@@ -2241,19 +2241,19 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ldefpackage/jgu;->s(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Ljgu;->s(Ljava/lang/String;)V
 
     .line 540
     :cond_6
     :goto_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->b:Ljrz;
 
-    invoke-direct {p0, p1, v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->C(Ldefpackage/elw;Ldefpackage/jrz;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->C(Lelw;Ljrz;)V
 
     .line 541
-    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ldefpackage/jgu;
+    iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->v:Ljgu;
 
-    invoke-interface {p1, v0}, Ldefpackage/elw;->d(Ldefpackage/elv;)Ldefpackage/lie;
+    invoke-interface {p1, v0}, Lelw;->d(Lelv;)Llie;
 
     .line 542
     monitor-exit p0
@@ -2284,7 +2284,7 @@
 
     xor-int/lit8 v1, v1, 0x1
 
-    invoke-static {v1}, Ldefpackage/obr;->aQ(Z)V
+    invoke-static {v1}, Lobr;->aQ(Z)V
 
     .line 548
     invoke-virtual {p0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->n()Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;

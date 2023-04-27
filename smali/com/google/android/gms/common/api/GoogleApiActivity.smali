@@ -131,10 +131,10 @@
     if-nez v2, :cond_2
 
     .line 46
-    invoke-static {v3}, Ldefpackage/mip;->dk(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3}, Lmip;->dk(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 47
-    sget-object v1, Ldefpackage/khm;->a:Ldefpackage/khm;
+    sget-object v1, Lkhm;->a:Lkhm;
 
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
@@ -142,7 +142,7 @@
 
     const/4 v6, 0x2
 
-    invoke-virtual {v1, p0, v5, v6, p0}, Ldefpackage/khm;->d(Landroid/app/Activity;IILandroid/content/DialogInterface$OnCancelListener;)V
+    invoke-virtual {v1, p0, v5, v6, p0}, Lkhm;->d(Landroid/app/Activity;IILandroid/content/DialogInterface$OnCancelListener;)V
 
     .line 48
     iput v4, p0, Lcom/google/android/gms/common/api/GoogleApiActivity;->a:I
@@ -211,17 +211,17 @@
     if-eqz v6, :cond_3
 
     .line 55
-    invoke-static {p0}, Ldefpackage/kkg;->c(Landroid/content/Context;)Ldefpackage/kkg;
+    invoke-static {p0}, Lkkg;->c(Landroid/content/Context;)Lkkg;
 
     move-result-object v1
 
-    new-instance v6, Ldefpackage/khi;
+    new-instance v6, Lkhi;
 
     const/16 v7, 0x16
 
     const/4 v8, 0x0
 
-    invoke-direct {v6, v7, v8}, Ldefpackage/khi;-><init>(ILandroid/app/PendingIntent;)V
+    invoke-direct {v6, v7, v8}, Lkhi;-><init>(ILandroid/app/PendingIntent;)V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -235,7 +235,7 @@
 
     move-result v7
 
-    invoke-virtual {v1, v6, v7}, Ldefpackage/kkg;->e(Ldefpackage/khi;I)V
+    invoke-virtual {v1, v6, v7}, Lkkg;->e(Lkhi;I)V
 
     goto :goto_1
 
@@ -365,25 +365,25 @@
     if-eqz v1, :cond_1
 
     .line 85
-    invoke-static {p0}, Ldefpackage/kkg;->c(Landroid/content/Context;)Ldefpackage/kkg;
+    invoke-static {p0}, Lkkg;->c(Landroid/content/Context;)Lkkg;
 
     move-result-object v0
 
     .line 86
-    .local v0, "c":Ldefpackage/kkg;
+    .local v0, "c":Lkkg;
     packed-switch p2, :pswitch_data_0
 
     goto :goto_0
 
     .line 91
     :pswitch_0
-    new-instance v2, Ldefpackage/khi;
+    new-instance v2, Lkhi;
 
     const/16 v3, 0xd
 
     const/4 v4, 0x0
 
-    invoke-direct {v2, v3, v4}, Ldefpackage/khi;-><init>(ILandroid/app/PendingIntent;)V
+    invoke-direct {v2, v3, v4}, Lkhi;-><init>(ILandroid/app/PendingIntent;)V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -397,19 +397,19 @@
 
     move-result v3
 
-    invoke-virtual {v0, v2, v3}, Ldefpackage/kkg;->e(Ldefpackage/khi;I)V
+    invoke-virtual {v0, v2, v3}, Lkkg;->e(Lkhi;I)V
 
     goto :goto_0
 
     .line 88
     :pswitch_1
-    invoke-virtual {v0}, Ldefpackage/kkg;->f()V
+    invoke-virtual {v0}, Lkkg;->f()V
 
     .line 89
     goto :goto_0
 
     .line 95
-    .end local v0    # "c":Ldefpackage/kkg;
+    .end local v0    # "c":Lkkg;
     .end local v1    # "booleanExtra":Z
     :cond_0
     const/4 v1, 0x2

@@ -1,129 +1,59 @@
-.class final Ldefpackage/kd;
-.super Ldefpackage/gq;
+.class public Ldefpackage/Kd;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgdj;->b()Llie;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/ke;
-
-.field private b:Z
-
-.field private c:I
+.field public final synthetic this$0:Lgdj;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/ke;)V
-    .locals 1
-    .param p1, "keVar"    # Ldefpackage/ke;
+.method public constructor <init>(Lgdj;)V
+    .locals 0
+    .param p1, "this$0"    # Lgdj;
 
-    .line 10
-    invoke-direct {p0}, Ldefpackage/gq;-><init>()V
+    .line 204
+    iput-object p1, p0, Ldefpackage/Kd;->this$0:Lgdj;
 
-    .line 7
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean v0, p0, Ldefpackage/kd;->b:Z
-
-    .line 8
-    iput v0, p0, Ldefpackage/kd;->c:I
-
-    .line 11
-    iput-object p1, p0, Ldefpackage/kd;->a:Ldefpackage/ke;
-
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()V
+.method public final close()V
     .locals 4
 
-    .line 16
-    iget v0, p0, Ldefpackage/kd;->c:I
+    .line 207
+    iget-object v0, p0, Ldefpackage/Kd;->this$0:Lgdj;
 
-    add-int/lit8 v0, v0, 0x1
+    .line 208
+    .local v0, "gdjVar":Lgdj;
+    iget-object v1, v0, Lgdj;->h:Landroid/os/Handler;
 
-    .line 17
-    .local v0, "i":I
-    iput v0, p0, Ldefpackage/kd;->c:I
+    new-instance v2, Lgcs;
 
-    .line 18
-    iget-object v1, p0, Ldefpackage/kd;->a:Ldefpackage/ke;
+    const/4 v3, 0x3
 
-    iget-object v1, v1, Ldefpackage/ke;->a:Ljava/util/ArrayList;
+    invoke-direct {v2, v0, v3}, Lgcs;-><init>(Lgdj;I)V
 
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    move-result v1
-
-    if-ne v0, v1, :cond_1
-
-    .line 19
-    iget-object v1, p0, Ldefpackage/kd;->a:Ldefpackage/ke;
-
-    iget-object v1, v1, Ldefpackage/ke;->b:Ldefpackage/gp;
-
-    .line 20
-    .local v1, "gpVar":Ldefpackage/gp;
-    if-eqz v1, :cond_0
-
-    .line 21
-    invoke-interface {v1}, Ldefpackage/gp;->b()V
-
-    .line 23
-    :cond_0
-    const/4 v2, 0x0
-
-    iput v2, p0, Ldefpackage/kd;->c:I
-
-    .line 24
-    iput-boolean v2, p0, Ldefpackage/kd;->b:Z
-
-    .line 25
-    iget-object v3, p0, Ldefpackage/kd;->a:Ldefpackage/ke;
-
-    iput-boolean v2, v3, Ldefpackage/ke;->c:Z
-
-    .line 27
-    .end local v1    # "gpVar":Ldefpackage/gp;
-    :cond_1
-    return-void
-.end method
-
-.method public final c()V
-    .locals 1
-
-    .line 31
-    iget-boolean v0, p0, Ldefpackage/kd;->b:Z
-
-    if-eqz v0, :cond_0
-
-    .line 32
-    return-void
-
-    .line 34
-    :cond_0
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Ldefpackage/kd;->b:Z
-
-    .line 35
-    iget-object v0, p0, Ldefpackage/kd;->a:Ldefpackage/ke;
-
-    iget-object v0, v0, Ldefpackage/ke;->b:Ldefpackage/gp;
-
-    .line 36
-    .local v0, "gpVar":Ldefpackage/gp;
-    if-nez v0, :cond_1
-
-    .line 37
-    return-void
-
-    .line 39
-    :cond_1
-    invoke-interface {v0}, Ldefpackage/gp;->c()V
-
-    .line 40
+    .line 209
     return-void
 .end method

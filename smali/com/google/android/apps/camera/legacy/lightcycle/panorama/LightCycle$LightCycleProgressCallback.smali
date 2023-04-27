@@ -14,9 +14,9 @@
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/fcy;)V
+.method public constructor <init>(Lfcy;)V
     .locals 0
-    .param p1, "fcyVar"    # Ldefpackage/fcy;
+    .param p1, "fcyVar"    # Lfcy;
 
     .line 16
     invoke-direct {p0}, Lcom/google/android/apps/camera/legacy/lightcycle/panorama/LightCycle$LightCycleProgressCallback;-><init>()V
@@ -31,7 +31,7 @@
     .param p1, "i2"    # I
 
     .line 20
-    sget-object v0, Ldefpackage/fcz;->c:Ljava/util/Map;
+    sget-object v0, Lfcz;->c:Ljava/util/Map;
 
     .line 21
     .local v0, "map":Ljava/util/Map;
@@ -48,27 +48,27 @@
     if-eqz v2, :cond_2
 
     .line 23
-    sget-object v2, Ldefpackage/fcz;->c:Ljava/util/Map;
+    sget-object v2, Lfcz;->c:Ljava/util/Map;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/fdx;
+    check-cast v2, Lfdx;
 
     .line 24
-    .local v2, "fdxVar":Ldefpackage/fdx;
-    iget-object v3, v2, Ldefpackage/fdx;->d:Ldefpackage/fdy;
+    .local v2, "fdxVar":Lfdx;
+    iget-object v3, v2, Lfdx;->d:Lfdy;
 
-    iget-object v3, v3, Ldefpackage/fdy;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v3, v3, Lfdy;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     monitor-enter v3
 
     .line 25
     :try_start_0
-    iget-object v4, v2, Ldefpackage/fdx;->d:Ldefpackage/fdy;
+    iget-object v4, v2, Lfdx;->d:Lfdy;
 
-    iget-object v4, v4, Ldefpackage/fdy;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v4, v4, Lfdy;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v4}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -83,20 +83,20 @@
 
     .line 28
     :cond_0
-    iget-object v4, v2, Ldefpackage/fdx;->d:Ldefpackage/fdy;
+    iget-object v4, v2, Lfdx;->d:Lfdy;
 
-    iget-object v4, v4, Ldefpackage/fdy;->a:Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;
+    iget-object v4, v4, Lfdy;->a:Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;
 
-    iget-object v4, v4, Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;->b:Ldefpackage/hqz;
+    iget-object v4, v4, Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;->b:Lhqz;
 
-    invoke-static {p1}, Ldefpackage/lif;->c(I)Ldefpackage/lif;
+    invoke-static {p1}, Llif;->c(I)Llif;
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Ldefpackage/hqd;->b(Ldefpackage/lif;)V
+    invoke-virtual {v4, v5}, Lhqd;->b(Llif;)V
 
     .line 29
-    iget-object v4, v2, Ldefpackage/fdx;->c:Ljava/io/File;
+    iget-object v4, v2, Lfdx;->c:Ljava/io/File;
 
     invoke-virtual {v4}, Ljava/io/File;->length()J
 
@@ -104,29 +104,29 @@
 
     .line 30
     .local v4, "length":J
-    iget-wide v6, v2, Ldefpackage/fdx;->a:J
+    iget-wide v6, v2, Lfdx;->a:J
 
     cmp-long v6, v4, v6
 
     if-eqz v6, :cond_1
 
     .line 31
-    iget-object v6, v2, Ldefpackage/fdx;->d:Ldefpackage/fdy;
+    iget-object v6, v2, Lfdx;->d:Lfdy;
 
-    iget-object v6, v6, Ldefpackage/fdy;->a:Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;
+    iget-object v6, v6, Lfdy;->a:Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;
 
-    iget-object v6, v6, Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;->b:Ldefpackage/hqz;
+    iget-object v6, v6, Lcom/google/android/apps/camera/legacy/lightcycle/storage/LocalSessionStorage;->b:Lhqz;
 
-    invoke-virtual {v6}, Ldefpackage/hqz;->K()V
+    invoke-virtual {v6}, Lhqz;->K()V
 
     .line 32
-    iput-wide v4, v2, Ldefpackage/fdx;->a:J
+    iput-wide v4, v2, Lfdx;->a:J
 
     .line 34
     :cond_1
-    iget-object v6, v2, Ldefpackage/fdx;->d:Ldefpackage/fdy;
+    iget-object v6, v2, Lfdx;->d:Lfdy;
 
-    invoke-virtual {v6}, Ldefpackage/fdy;->h()V
+    invoke-virtual {v6}, Lfdy;->h()V
 
     .line 35
     .end local v4    # "length":J
@@ -144,7 +144,7 @@
     throw v4
 
     .line 37
-    .end local v2    # "fdxVar":Ldefpackage/fdx;
+    .end local v2    # "fdxVar":Lfdx;
     :cond_2
     :goto_0
     return-void

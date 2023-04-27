@@ -46,11 +46,11 @@
     return-void
 .end method
 
-.method private final addListener(Ljava/util/concurrent/Executor;Ldefpackage/fb;Ldefpackage/qtr;)V
+.method private final addListener(Ljava/util/concurrent/Executor;Lfb;Lqtr;)V
     .locals 6
     .param p1, "executor"    # Ljava/util/concurrent/Executor;
-    .param p2, "fbVar"    # Ldefpackage/fb;
-    .param p3, "qtrVar"    # Ldefpackage/qtr;
+    .param p2, "fbVar"    # Lfb;
+    .param p3, "qtrVar"    # Lqtr;
 
     .line 31
     iget-object v0, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->lock:Ljava/util/concurrent/locks/ReentrantLock;
@@ -72,11 +72,11 @@
     .line 35
     iget-object v1, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->consumerToJobMap:Ljava/util/Map;
 
-    invoke-static {p1}, Ldefpackage/qno;->C(Ljava/util/concurrent/Executor;)Ldefpackage/qqf;
+    invoke-static {p1}, Lqno;->C(Ljava/util/concurrent/Executor;)Lqqf;
 
     move-result-object v2
 
-    invoke-static {v2}, Ldefpackage/qnm;->j(Ldefpackage/qln;)Ldefpackage/qqj;
+    invoke-static {v2}, Lqnm;->j(Lqln;)Lqqj;
 
     move-result-object v2
 
@@ -84,11 +84,11 @@
 
     const/4 v4, 0x0
 
-    invoke-direct {v3, p3, p2, v4}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;-><init>(Ldefpackage/qtr;Ldefpackage/fb;Ldefpackage/qlh;)V
+    invoke-direct {v3, p3, p2, v4}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter$addListener$1$1;-><init>(Lqtr;Lfb;Lqlh;)V
 
     const/4 v5, 0x3
 
-    invoke-static {v2, v4, v3, v5}, Ldefpackage/qmd;->l(Ldefpackage/qqj;Ldefpackage/qln;Ldefpackage/qmy;I)Ldefpackage/qrg;
+    invoke-static {v2, v4, v3, v5}, Lqmd;->l(Lqqj;Lqln;Lqmy;I)Lqrg;
 
     move-result-object v2
 
@@ -116,9 +116,9 @@
     throw v1
 .end method
 
-.method private final removeListener(Ldefpackage/fb;)V
+.method private final removeListener(Lfb;)V
     .locals 3
-    .param p1, "fbVar"    # Ldefpackage/fb;
+    .param p1, "fbVar"    # Lfb;
 
     .line 43
     iget-object v0, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->lock:Ljava/util/concurrent/locks/ReentrantLock;
@@ -135,16 +135,16 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/qrg;
+    check-cast v1, Lqrg;
 
     .line 47
-    .local v1, "qrgVar":Ldefpackage/qrg;
+    .local v1, "qrgVar":Lqrg;
     if-eqz v1, :cond_0
 
     .line 48
     const/4 v2, 0x0
 
-    invoke-interface {v1, v2}, Ldefpackage/qrg;->q(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {v1, v2}, Lqrg;->q(Ljava/util/concurrent/CancellationException;)V
 
     .line 50
     :cond_0
@@ -154,12 +154,12 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/qrg;
+    check-cast v2, Lqrg;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 52
-    .end local v1    # "qrgVar":Ldefpackage/qrg;
+    .end local v1    # "qrgVar":Lqrg;
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     .line 53
@@ -180,10 +180,10 @@
 
 
 # virtual methods
-.method public final addCurrentWindowMetricsListener(Ljava/util/concurrent/Executor;Ldefpackage/fb;)V
+.method public final addCurrentWindowMetricsListener(Ljava/util/concurrent/Executor;Lfb;)V
     .locals 1
     .param p1, "executor"    # Ljava/util/concurrent/Executor;
-    .param p2, "fbVar"    # Ldefpackage/fb;
+    .param p2, "fbVar"    # Lfb;
 
     .line 57
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -194,20 +194,20 @@
     .line 59
     iget-object v0, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->repository:Landroidx/window/layout/WindowInfoRepository;
 
-    invoke-interface {v0}, Landroidx/window/layout/WindowInfoRepository;->getCurrentWindowMetrics()Ldefpackage/qtr;
+    invoke-interface {v0}, Landroidx/window/layout/WindowInfoRepository;->getCurrentWindowMetrics()Lqtr;
 
     move-result-object v0
 
-    invoke-direct {p0, p1, p2, v0}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->addListener(Ljava/util/concurrent/Executor;Ldefpackage/fb;Ldefpackage/qtr;)V
+    invoke-direct {p0, p1, p2, v0}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->addListener(Ljava/util/concurrent/Executor;Lfb;Lqtr;)V
 
     .line 60
     return-void
 .end method
 
-.method public final addWindowLayoutInfoListener(Ljava/util/concurrent/Executor;Ldefpackage/fb;)V
+.method public final addWindowLayoutInfoListener(Ljava/util/concurrent/Executor;Lfb;)V
     .locals 1
     .param p1, "executor"    # Ljava/util/concurrent/Executor;
-    .param p2, "fbVar"    # Ldefpackage/fb;
+    .param p2, "fbVar"    # Lfb;
 
     .line 63
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -218,65 +218,65 @@
     .line 65
     iget-object v0, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->repository:Landroidx/window/layout/WindowInfoRepository;
 
-    invoke-interface {v0}, Landroidx/window/layout/WindowInfoRepository;->getWindowLayoutInfo()Ldefpackage/qtr;
+    invoke-interface {v0}, Landroidx/window/layout/WindowInfoRepository;->getWindowLayoutInfo()Lqtr;
 
     move-result-object v0
 
-    invoke-direct {p0, p1, p2, v0}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->addListener(Ljava/util/concurrent/Executor;Ldefpackage/fb;Ldefpackage/qtr;)V
+    invoke-direct {p0, p1, p2, v0}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->addListener(Ljava/util/concurrent/Executor;Lfb;Lqtr;)V
 
     .line 66
     return-void
 .end method
 
-.method public getCurrentWindowMetrics()Ldefpackage/qtr;
+.method public getCurrentWindowMetrics()Lqtr;
     .locals 1
 
     .line 70
     iget-object v0, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->repository:Landroidx/window/layout/WindowInfoRepository;
 
-    invoke-interface {v0}, Landroidx/window/layout/WindowInfoRepository;->getCurrentWindowMetrics()Ldefpackage/qtr;
+    invoke-interface {v0}, Landroidx/window/layout/WindowInfoRepository;->getCurrentWindowMetrics()Lqtr;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public getWindowLayoutInfo()Ldefpackage/qtr;
+.method public getWindowLayoutInfo()Lqtr;
     .locals 1
 
     .line 75
     iget-object v0, p0, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->repository:Landroidx/window/layout/WindowInfoRepository;
 
-    invoke-interface {v0}, Landroidx/window/layout/WindowInfoRepository;->getWindowLayoutInfo()Ldefpackage/qtr;
+    invoke-interface {v0}, Landroidx/window/layout/WindowInfoRepository;->getWindowLayoutInfo()Lqtr;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final removeCurrentWindowMetricsListener(Ldefpackage/fb;)V
+.method public final removeCurrentWindowMetricsListener(Lfb;)V
     .locals 0
-    .param p1, "fbVar"    # Ldefpackage/fb;
+    .param p1, "fbVar"    # Lfb;
 
     .line 79
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 80
-    invoke-direct {p0, p1}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->removeListener(Ldefpackage/fb;)V
+    invoke-direct {p0, p1}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->removeListener(Lfb;)V
 
     .line 81
     return-void
 .end method
 
-.method public final removeWindowLayoutInfoListener(Ldefpackage/fb;)V
+.method public final removeWindowLayoutInfoListener(Lfb;)V
     .locals 0
-    .param p1, "fbVar"    # Ldefpackage/fb;
+    .param p1, "fbVar"    # Lfb;
 
     .line 84
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 85
-    invoke-direct {p0, p1}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->removeListener(Ldefpackage/fb;)V
+    invoke-direct {p0, p1}, Landroidx/window/java/layout/WindowInfoRepositoryCallbackAdapter;->removeListener(Lfb;)V
 
     .line 86
     return-void

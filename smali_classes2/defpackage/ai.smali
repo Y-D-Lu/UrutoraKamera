@@ -1,289 +1,206 @@
-.class public final Ldefpackage/ai;
+.class public Ldefpackage/Ai;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
 
-# static fields
-.field public static final a:[I
 
-.field public static final b:[I
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Licw;->q(Lbty;)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Licw;
+
+.field public final synthetic val$arrayList:Ljava/util/ArrayList;
+
+.field public final synthetic val$icfVar:Licf;
+
+.field public final synthetic val$strFinal:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 8
-    const/16 v0, 0x72
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_0
-
-    sput-object v0, Ldefpackage/ai;->a:[I
-
-    .line 9
-    const/16 v0, 0x79
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_1
-
-    sput-object v0, Ldefpackage/ai;->b:[I
-
-    return-void
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x10100c4
-        0x10100d5
-        0x10100d6
-        0x10100d7
-        0x10100d8
-        0x10100d9
-        0x10100dc
-        0x10100f4
-        0x10100f5
-        0x10100f6
-        0x10100f7
-        0x10100f8
-        0x10100f9
-        0x10100fa
-        0x101011f
-        0x1010120
-        0x101013f
-        0x1010140
-        0x10103b3
-        0x10103b4
-        0x10103b5
-        0x10103b6
-        0x1010440
-        0x101053b
-        0x101053c
-        0x7f040059
-        0x7f04005a
-        0x7f04005b
-        0x7f040091
-        0x7f0400b4
-        0x7f0400b5
-        0x7f0400b6
-        0x7f0400b7
-        0x7f0400b8
-        0x7f04011b
-        0x7f04011c
-        0x7f04011d
-        0x7f0401b5
-        0x7f0401b6
-        0x7f0401b7
-        0x7f0401b8
-        0x7f0401b9
-        0x7f0401ba
-        0x7f0401bb
-        0x7f0401bc
-        0x7f0401bd
-        0x7f0401be
-        0x7f0401bf
-        0x7f0401c0
-        0x7f0401c1
-        0x7f0401c2
-        0x7f0401c3
-        0x7f0401c4
-        0x7f0401c5
-        0x7f0401c6
-        0x7f04022f
-        0x7f040237
-        0x7f040238
-        0x7f040239
-        0x7f04023a
-        0x7f04023b
-        0x7f04023c
-        0x7f04023d
-        0x7f04023e
-        0x7f04023f
-        0x7f040240
-        0x7f040241
-        0x7f040242
-        0x7f040243
-        0x7f040244
-        0x7f040245
-        0x7f040246
-        0x7f040247
-        0x7f040248
-        0x7f040249
-        0x7f04024a
-        0x7f04024b
-        0x7f04024c
-        0x7f04024d
-        0x7f04024e
-        0x7f04024f
-        0x7f040250
-        0x7f040251
-        0x7f040252
-        0x7f040253
-        0x7f040254
-        0x7f040255
-        0x7f040256
-        0x7f040257
-        0x7f040258
-        0x7f040259
-        0x7f04025a
-        0x7f04025b
-        0x7f04025c
-        0x7f04025d
-        0x7f04025e
-        0x7f04025f
-        0x7f040260
-        0x7f040261
-        0x7f040262
-        0x7f040263
-        0x7f040264
-        0x7f040266
-        0x7f040267
-        0x7f040268
-        0x7f040269
-        0x7f04026a
-        0x7f04026b
-        0x7f04026c
-        0x7f04026d
-        0x7f04026e
-        0x7f040272
-        0x7f04027a
-        0x7f04027f
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x10100c4
-        0x10100d0
-        0x10100dc
-        0x10100f4
-        0x10100f5
-        0x10100f7
-        0x10100f8
-        0x10100f9
-        0x10100fa
-        0x101011f
-        0x1010120
-        0x101013f
-        0x1010140
-        0x10101b5
-        0x10101b6
-        0x101031f
-        0x1010320
-        0x1010321
-        0x1010322
-        0x1010323
-        0x1010324
-        0x1010325
-        0x1010326
-        0x1010327
-        0x1010328
-        0x10103b5
-        0x10103b6
-        0x10103fa
-        0x1010440
-        0x7f040000
-        0x7f040031
-        0x7f040032
-        0x7f040059
-        0x7f04005a
-        0x7f04005b
-        0x7f040091
-        0x7f04011c
-        0x7f04011d
-        0x7f040151
-        0x7f040164
-        0x7f0401b5
-        0x7f0401b6
-        0x7f0401b7
-        0x7f0401b8
-        0x7f0401b9
-        0x7f0401ba
-        0x7f0401bb
-        0x7f0401bc
-        0x7f0401bd
-        0x7f0401be
-        0x7f0401bf
-        0x7f0401c0
-        0x7f0401c1
-        0x7f0401c2
-        0x7f0401c3
-        0x7f0401c4
-        0x7f0401c5
-        0x7f0401c6
-        0x7f040237
-        0x7f040238
-        0x7f040239
-        0x7f04023a
-        0x7f04023b
-        0x7f04023c
-        0x7f04023d
-        0x7f04023e
-        0x7f04023f
-        0x7f040240
-        0x7f040241
-        0x7f040242
-        0x7f040243
-        0x7f040244
-        0x7f040245
-        0x7f040246
-        0x7f040247
-        0x7f040248
-        0x7f04024a
-        0x7f04024b
-        0x7f04024c
-        0x7f04024d
-        0x7f04024e
-        0x7f04024f
-        0x7f040250
-        0x7f040251
-        0x7f040252
-        0x7f040253
-        0x7f040254
-        0x7f040255
-        0x7f040256
-        0x7f040257
-        0x7f040258
-        0x7f040259
-        0x7f04025a
-        0x7f04025b
-        0x7f04025c
-        0x7f04025d
-        0x7f04025e
-        0x7f04025f
-        0x7f040261
-        0x7f040262
-        0x7f040263
-        0x7f040264
-        0x7f040266
-        0x7f040267
-        0x7f040268
-        0x7f040269
-        0x7f04026a
-        0x7f04026b
-        0x7f04026c
-        0x7f04026d
-        0x7f04026e
-        0x7f040272
-        0x7f04027f
-        0x7f0402db
-        0x7f0402dc
-        0x7f040309
-        0x7f04030b
-        0x7f04030e
-        0x7f040328
-        0x7f04040a
-        0x7f04040b
-    .end array-data
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Licw;Licf;Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 0
+    .param p1, "this$0"    # Licw;
 
-    .line 7
+    .line 170
+    iput-object p1, p0, Ldefpackage/Ai;->this$0:Licw;
+
+    iput-object p2, p0, Ldefpackage/Ai;->val$icfVar:Licf;
+
+    iput-object p3, p0, Ldefpackage/Ai;->val$arrayList:Ljava/util/ArrayList;
+
+    iput-object p4, p0, Ldefpackage/Ai;->val$strFinal:Ljava/lang/String;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 6
+    .param p1, "obj"    # Ljava/lang/Object;
+
+    .line 173
+    const/4 v0, -0x1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 186
+    iget-object v0, p0, Ldefpackage/Ai;->val$icfVar:Licf;
+
+    .line 187
+    .local v0, "icfVar3":Licf;
+    iget-object v1, p0, Ldefpackage/Ai;->val$arrayList:Ljava/util/ArrayList;
+
+    .line 188
+    .local v1, "arrayList4":Ljava/util/ArrayList;
+    iget-object v2, p0, Ldefpackage/Ai;->val$strFinal:Ljava/lang/String;
+
+    .line 189
+    .local v2, "str3":Ljava/lang/String;
+    move-object v3, p1
+
+    check-cast v3, Landroid/content/pm/ResolveInfo;
+
+    .line 190
+    .local v3, "resolveInfo2":Landroid/content/pm/ResolveInfo;
+    invoke-static {}, Lifm;->a()Lifl;
+
+    move-result-object v4
+
+    .line 191
+    .local v4, "a2":Lifl;
+    invoke-virtual {v4, v3}, Lifl;->b(Landroid/content/pm/ResolveInfo;)V
+
+    .line 192
+    iget-object v5, v3, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v0, v5}, Licf;->c(Ljava/lang/String;)Z
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Lifl;->c(Z)V
+
+    .line 193
+    const-string v5, "image/*"
+
+    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Lifl;->d(Z)V
+
+    .line 194
+    invoke-virtual {v4}, Lifl;->a()Lifm;
+
+    move-result-object v5
+
+    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 195
+    return-void
+
+    .line 175
+    .end local v0    # "icfVar3":Licf;
+    .end local v1    # "arrayList4":Ljava/util/ArrayList;
+    .end local v2    # "str3":Ljava/lang/String;
+    .end local v3    # "resolveInfo2":Landroid/content/pm/ResolveInfo;
+    .end local v4    # "a2":Lifl;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Ai;->val$icfVar:Licf;
+
+    .line 176
+    .local v0, "icfVar2":Licf;
+    iget-object v1, p0, Ldefpackage/Ai;->val$arrayList:Ljava/util/ArrayList;
+
+    .line 177
+    .local v1, "arrayList3":Ljava/util/ArrayList;
+    iget-object v2, p0, Ldefpackage/Ai;->val$strFinal:Ljava/lang/String;
+
+    .line 178
+    .local v2, "str2":Ljava/lang/String;
+    move-object v3, p1
+
+    check-cast v3, Landroid/content/pm/ResolveInfo;
+
+    .line 179
+    .local v3, "resolveInfo":Landroid/content/pm/ResolveInfo;
+    invoke-static {}, Lifm;->a()Lifl;
+
+    move-result-object v4
+
+    .line 180
+    .local v4, "a":Lifl;
+    invoke-virtual {v4, v3}, Lifl;->b(Landroid/content/pm/ResolveInfo;)V
+
+    .line 181
+    iget-object v5, v3, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v0, v5}, Licf;->c(Ljava/lang/String;)Z
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Lifl;->c(Z)V
+
+    .line 182
+    const-string v5, "video/*"
+
+    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Lifl;->d(Z)V
+
+    .line 183
+    invoke-virtual {v4}, Lifl;->a()Lifm;
+
+    move-result-object v5
+
+    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 184
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 1
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
+
+    .line 201
+    const/4 v0, -0x1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 205
+    return-object p1
+
+    .line 203
+    :pswitch_0
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

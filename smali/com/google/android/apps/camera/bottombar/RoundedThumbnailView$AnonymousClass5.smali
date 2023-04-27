@@ -23,7 +23,7 @@
     .locals 4
 
     .line 144
-    invoke-static {}, Ldefpackage/jrx;->values()[Ldefpackage/jrx;
+    invoke-static {}, Ljrx;->values()[Ljrx;
 
     move-result-object v0
 
@@ -37,7 +37,7 @@
 
     .line 147
     :try_start_0
-    sget-object v1, Ldefpackage/jrx;->BURST:Ldefpackage/jrx;
+    sget-object v1, Ljrx;->BURST:Ljrx;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -61,7 +61,7 @@
     :try_start_1
     sget-object v1, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$AnonymousClass5;->$SwitchMap$com$google$android$apps$camera$uiutils$TypedThumbnailBitmap$ThumbnailType:[I
 
-    sget-object v2, Ldefpackage/jrx;->PHOTO:Ldefpackage/jrx;
+    sget-object v2, Ljrx;->PHOTO:Ljrx;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -85,7 +85,7 @@
     :try_start_2
     sget-object v1, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$AnonymousClass5;->$SwitchMap$com$google$android$apps$camera$uiutils$TypedThumbnailBitmap$ThumbnailType:[I
 
-    sget-object v2, Ldefpackage/jrx;->VIDEO:Ldefpackage/jrx;
+    sget-object v2, Ljrx;->VIDEO:Ljrx;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -109,7 +109,7 @@
     :try_start_3
     sget-object v1, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$AnonymousClass5;->$SwitchMap$com$google$android$apps$camera$uiutils$TypedThumbnailBitmap$ThumbnailType:[I
 
-    sget-object v2, Ldefpackage/jrx;->SECURE:Ldefpackage/jrx;
+    sget-object v2, Ljrx;->SECURE:Ljrx;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -133,7 +133,7 @@
     :try_start_4
     sget-object v1, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$AnonymousClass5;->$SwitchMap$com$google$android$apps$camera$uiutils$TypedThumbnailBitmap$ThumbnailType:[I
 
-    sget-object v2, Ldefpackage/jrx;->MARS_PLACEHOLDER:Ldefpackage/jrx;
+    sget-object v2, Ljrx;->MARS_PLACEHOLDER:Ljrx;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -157,7 +157,7 @@
     :try_start_5
     sget-object v1, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$AnonymousClass5;->$SwitchMap$com$google$android$apps$camera$uiutils$TypedThumbnailBitmap$ThumbnailType:[I
 
-    sget-object v2, Ldefpackage/jrx;->PLACEHOLDER:Ldefpackage/jrx;
+    sget-object v2, Ljrx;->PLACEHOLDER:Ljrx;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 

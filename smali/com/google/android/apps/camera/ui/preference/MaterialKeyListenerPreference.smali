@@ -465,7 +465,7 @@
 
     .line 127
     .local v0, "str":Ljava/lang/String;
-    invoke-static {v0}, Ldefpackage/oje;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Loje;->d(Ljava/lang/String;)Z
 
     move-result v1
 

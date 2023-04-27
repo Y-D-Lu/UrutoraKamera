@@ -80,7 +80,7 @@
 
     const/high16 v3, 0x40000000    # 2.0f
 
-    invoke-static {v3}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v3}, Ljsa;->b(F)I
 
     move-result v3
 

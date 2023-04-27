@@ -4,33 +4,33 @@
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
-.field public b:Ldefpackage/fhi;
+.field public b:Lfhi;
 
 .field public c:Z
 
 .field public d:I
 
-.field public e:Ldefpackage/ddf;
+.field public e:Lddf;
 
-.field public f:Ldefpackage/dei;
+.field public f:Ldei;
 
-.field public g:Ldefpackage/hlv;
+.field public g:Lhlv;
 
-.field public h:Ldefpackage/kcw;
+.field public h:Lkcw;
 
 .field private i:Landroid/content/pm/PackageManager;
 
 .field private j:I
 
-.field private k:Ldefpackage/afp;
+.field private k:Lafp;
 
 .field private final l:Landroid/content/ServiceConnection;
 
-.field private final m:Ldefpackage/hlt;
+.field private final m:Lhlt;
 
 
 # direct methods
@@ -40,11 +40,11 @@
     .line 30
     const-string v0, "com/google/android/apps/camera/remotecontrol/RemoteControlService"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Louj;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     .line 39
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->h:Ldefpackage/kcw;
+    iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->h:Lkcw;
 
     .line 40
     const/4 v0, 0x0
@@ -71,32 +71,32 @@
     iput-boolean v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->c:Z
 
     .line 41
-    new-instance v0, Ldefpackage/hlx;
+    new-instance v0, Lhlx;
 
-    invoke-direct {v0, p0}, Ldefpackage/hlx;-><init>(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
+    invoke-direct {v0, p0}, Lhlx;-><init>(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
 
     iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->l:Landroid/content/ServiceConnection;
 
     .line 42
-    new-instance v0, Ldefpackage/hlt;
+    new-instance v0, Lhlt;
 
-    invoke-direct {v0, p0}, Ldefpackage/hlt;-><init>(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
+    invoke-direct {v0, p0}, Lhlt;-><init>(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->m:Ldefpackage/hlt;
+    iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->m:Lhlt;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a()Ldefpackage/ddf;
+.method public final declared-synchronized a()Lddf;
     .locals 3
 
     monitor-enter p0
 
     .line 45
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->e:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->e:Lddf;
 
     if-nez v0, :cond_0
 
@@ -112,23 +112,23 @@
     .line 48
     move-object v1, v0
 
-    check-cast v1, Ldefpackage/enc;
+    check-cast v1, Lenc;
 
-    const-class v2, Ldefpackage/hly;
+    const-class v2, Lhly;
 
-    invoke-interface {v1, v2}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v1, v2}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/hly;
+    check-cast v1, Lhly;
 
-    invoke-interface {v1, p0}, Ldefpackage/hly;->r(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
+    invoke-interface {v1, p0}, Lhly;->r(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
 
     .line 50
     .end local v0    # "applicationContext":Landroid/content/Context;
     .end local p0    # "this":Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->e:Ldefpackage/ddf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->e:Lddf;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -145,14 +145,14 @@
     throw v0
 .end method
 
-.method public final declared-synchronized b()Ldefpackage/dei;
+.method public final declared-synchronized b()Ldei;
     .locals 3
 
     monitor-enter p0
 
     .line 54
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->f:Ldefpackage/dei;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->f:Ldei;
 
     if-nez v0, :cond_0
 
@@ -168,23 +168,23 @@
     .line 57
     move-object v1, v0
 
-    check-cast v1, Ldefpackage/enc;
+    check-cast v1, Lenc;
 
-    const-class v2, Ldefpackage/hly;
+    const-class v2, Lhly;
 
-    invoke-interface {v1, v2}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v1, v2}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/hly;
+    check-cast v1, Lhly;
 
-    invoke-interface {v1, p0}, Ldefpackage/hly;->r(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
+    invoke-interface {v1, p0}, Lhly;->r(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
 
     .line 59
     .end local v0    # "applicationContext":Landroid/content/Context;
     .end local p0    # "this":Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->f:Ldefpackage/dei;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->f:Ldei;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -201,14 +201,14 @@
     throw v0
 .end method
 
-.method public final declared-synchronized c()Ldefpackage/hlv;
+.method public final declared-synchronized c()Lhlv;
     .locals 3
 
     monitor-enter p0
 
     .line 63
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->g:Ldefpackage/hlv;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->g:Lhlv;
 
     if-nez v0, :cond_0
 
@@ -224,23 +224,23 @@
     .line 66
     move-object v1, v0
 
-    check-cast v1, Ldefpackage/enc;
+    check-cast v1, Lenc;
 
-    const-class v2, Ldefpackage/hly;
+    const-class v2, Lhly;
 
-    invoke-interface {v1, v2}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v1, v2}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/hly;
+    check-cast v1, Lhly;
 
-    invoke-interface {v1, p0}, Ldefpackage/hly;->r(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
+    invoke-interface {v1, p0}, Lhly;->r(Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;)V
 
     .line 68
     .end local v0    # "applicationContext":Landroid/content/Context;
     .end local p0    # "this":Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->g:Ldefpackage/hlv;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->g:Lhlv;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -281,9 +281,9 @@
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 75
-    iget-object v1, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->k:Ldefpackage/afp;
+    iget-object v1, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->k:Lafp;
 
-    invoke-virtual {v1, v0}, Ldefpackage/afp;->d(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lafp;->d(Landroid/content/Intent;)V
 
     .line 76
     return-void
@@ -298,11 +298,11 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->h:Ldefpackage/kcw;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->h:Lkcw;
 
     move-object v1, v0
 
-    .local v1, "kcwVar":Ldefpackage/kcw;
+    .local v1, "kcwVar":Lkcw;
     if-nez v0, :cond_0
 
     goto :goto_2
@@ -315,11 +315,11 @@
     const/4 v0, 0x1
 
     :try_start_0
-    invoke-virtual {v1}, Ldefpackage/bmn;->a()Landroid/os/Parcel;
+    invoke-virtual {v1}, Lbmn;->a()Landroid/os/Parcel;
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Ldefpackage/bmn;->A(ILandroid/os/Parcel;)V
+    invoke-virtual {v1, v0, v2}, Lbmn;->A(ILandroid/os/Parcel;)V
 
     goto :goto_0
 
@@ -327,11 +327,11 @@
     :cond_1
     const/4 v0, 0x2
 
-    invoke-virtual {v1}, Ldefpackage/bmn;->a()Landroid/os/Parcel;
+    invoke-virtual {v1}, Lbmn;->a()Landroid/os/Parcel;
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Ldefpackage/bmn;->A(ILandroid/os/Parcel;)V
+    invoke-virtual {v1, v0, v2}, Lbmn;->A(ILandroid/os/Parcel;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -345,9 +345,9 @@
 
     .line 90
     .local v0, "e":Ljava/lang/Exception;
-    sget-object v2, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Ldefpackage/ouj;
+    sget-object v2, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Louj;
 
-    invoke-virtual {v2}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v2}, Loue;->b()Lova;
 
     move-result-object v2
 
@@ -355,7 +355,7 @@
 
     const-string v4, "Error when calling into Photos service"
 
-    invoke-static {v2, v4, v3}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v2, v4, v3}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 91
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
@@ -366,7 +366,7 @@
     return-void
 
     .line 81
-    .end local v1    # "kcwVar":Ldefpackage/kcw;
+    .end local v1    # "kcwVar":Lkcw;
     :cond_2
     :goto_2
     return-void
@@ -386,13 +386,13 @@
 
     .line 98
     .local v1, "z":Z
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a()Ldefpackage/ddf;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a()Lddf;
 
     move-result-object v2
 
-    sget-object v3, Ldefpackage/ddl;->ba:Ldefpackage/ddg;
+    sget-object v3, Lddl;->ba:Lddg;
 
-    invoke-interface {v2, v3}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v2, v3}, Lddf;->k(Lddg;)Z
 
     move-result v2
 
@@ -401,9 +401,9 @@
     if-nez v2, :cond_0
 
     .line 99
-    sget-object v2, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Ldefpackage/ouj;
+    sget-object v2, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Louj;
 
-    invoke-virtual {v2}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v2}, Loue;->b()Lova;
 
     move-result-object v2
 
@@ -411,7 +411,7 @@
 
     const-string v5, "Feature not enabled."
 
-    invoke-static {v2, v5, v4}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v2, v5, v4}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 100
     return v3
@@ -447,11 +447,11 @@
 
     .line 109
     :cond_2
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->b()Ldefpackage/dei;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->b()Ldei;
 
     move-result-object v5
 
-    sget-object v6, Ldefpackage/dei;->ENG:Ldefpackage/dei;
+    sget-object v6, Ldei;->ENG:Ldei;
 
     if-eq v5, v6, :cond_3
 
@@ -464,16 +464,16 @@
 
     iget-object v7, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->i:Landroid/content/pm/PackageManager;
 
-    invoke-static {v6, v7}, Ldefpackage/hlz;->a(Ljava/lang/String;Landroid/content/pm/PackageManager;)Z
+    invoke-static {v6, v7}, Lhlz;->a(Ljava/lang/String;Landroid/content/pm/PackageManager;)Z
 
     move-result v6
 
     if-nez v6, :cond_3
 
     .line 112
-    sget-object v4, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Ldefpackage/ouj;
+    sget-object v4, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->b()Lova;
 
     move-result-object v4
 
@@ -481,7 +481,7 @@
 
     const-string v7, "Failed to verify calling package."
 
-    invoke-static {v4, v7, v6}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v4, v7, v6}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 113
     return v3
@@ -569,9 +569,9 @@
     .end local v6    # "checkPermission2":I
     :cond_8
     :goto_0
-    sget-object v4, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Ldefpackage/ouj;
+    sget-object v4, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->b()Lova;
 
     move-result-object v4
 
@@ -579,7 +579,7 @@
 
     const-string v6, "Failed to get calling package name."
 
-    invoke-static {v4, v6, v5}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v4, v6, v5}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 107
     return v3
@@ -590,13 +590,13 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .line 131
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a()Ldefpackage/ddf;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->a()Lddf;
 
     move-result-object v0
 
-    sget-object v1, Ldefpackage/ddl;->ba:Ldefpackage/ddg;
+    sget-object v1, Lddl;->ba:Lddg;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v1}, Lddf;->k(Lddg;)Z
 
     move-result v0
 
@@ -614,7 +614,7 @@
     iput v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->j:I
 
     .line 135
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->m:Ldefpackage/hlt;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->m:Lhlt;
 
     return-object v0
 .end method
@@ -634,21 +634,21 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/fip;
+    check-cast v0, Lfip;
 
-    iget-object v0, v0, Ldefpackage/fip;->k:Ldefpackage/fhi;
+    iget-object v0, v0, Lfip;->k:Lfhi;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->b:Ldefpackage/fhi;
+    iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->b:Lfhi;
 
     .line 142
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     .line 143
-    invoke-static {p0}, Ldefpackage/afp;->a(Landroid/content/Context;)Ldefpackage/afp;
+    invoke-static {p0}, Lafp;->a(Landroid/content/Context;)Lafp;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->k:Ldefpackage/afp;
+    iput-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->k:Lafp;
 
     .line 144
     const/4 v0, 0x0
@@ -656,41 +656,41 @@
     iput v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->d:I
 
     .line 145
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->c()Ldefpackage/hlv;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->c()Lhlv;
 
     move-result-object v1
 
     .line 146
-    .local v1, "c":Ldefpackage/hlv;
-    iput-boolean v0, v1, Ldefpackage/hlv;->a:Z
+    .local v1, "c":Lhlv;
+    iput-boolean v0, v1, Lhlv;->a:Z
 
     .line 147
     const/high16 v0, -0x80000000
 
-    iput v0, v1, Ldefpackage/hlv;->c:I
+    iput v0, v1, Lhlv;->c:I
 
     .line 148
     const/4 v0, 0x1
 
-    iput v0, v1, Ldefpackage/hlv;->d:F
+    iput v0, v1, Lhlv;->d:F
 
     .line 149
     const-wide/16 v2, 0x0
 
-    iput-wide v2, v1, Ldefpackage/hlv;->e:J
+    iput-wide v2, v1, Lhlv;->e:J
 
     .line 150
-    iput v0, v1, Ldefpackage/hlv;->f:F
+    iput v0, v1, Lhlv;->f:F
 
     .line 151
-    iput-wide v2, v1, Ldefpackage/hlv;->g:J
+    iput-wide v2, v1, Lhlv;->g:J
 
     .line 152
-    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->g:Ldefpackage/hlv;
+    iget-object v0, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->g:Lhlv;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Ldefpackage/hlv;->c(Z)V
+    invoke-virtual {v0, v2}, Lhlv;->c(Z)V
 
     .line 153
     new-instance v0, Landroid/content/Intent;
@@ -722,17 +722,17 @@
 
     .line 161
     .local v0, "serviceConnection":Landroid/content/ServiceConnection;
-    invoke-static {v0}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 162
     invoke-virtual {p0, v0}, Landroid/app/Service;->unbindService(Landroid/content/ServiceConnection;)V
 
     .line 163
-    iget-object v1, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->g:Ldefpackage/hlv;
+    iget-object v1, p0, Lcom/google/android/apps/camera/remotecontrol/RemoteControlService;->g:Lhlv;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Ldefpackage/hlv;->c(Z)V
+    invoke-virtual {v1, v2}, Lhlv;->c(Z)V
 
     .line 164
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V

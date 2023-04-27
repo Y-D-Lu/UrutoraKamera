@@ -1,18 +1,18 @@
 .class public Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;
-.super Ldefpackage/nu;
+.super Lnu;
 .source ""
 
 
 # instance fields
 .field public final a:Landroid/content/Context;
 
-.field public final b:Ldefpackage/jgz;
+.field public final b:Ljgz;
 
 .field public c:I
 
 .field public d:Z
 
-.field public e:Ldefpackage/jgt;
+.field public e:Ljgt;
 
 .field public f:J
 
@@ -28,14 +28,14 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 26
-    invoke-direct {p0, p1, p2}, Ldefpackage/nu;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lnu;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 27
-    new-instance v0, Ldefpackage/jgz;
+    new-instance v0, Ljgz;
 
-    invoke-direct {v0}, Ldefpackage/jgz;-><init>()V
+    invoke-direct {v0}, Ljgz;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;->b:Ldefpackage/jgz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;->b:Ljgz;
 
     .line 28
     iput-object p1, p0, Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;->a:Landroid/content/Context;
@@ -82,12 +82,12 @@
 
     iget-object v1, p0, Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;->a:Landroid/content/Context;
 
-    invoke-static {v0, v1}, Ldefpackage/jrz;->a(Landroid/view/Display;Landroid/content/Context;)Ldefpackage/jrz;
+    invoke-static {v0, v1}, Ljrz;->a(Landroid/view/Display;Landroid/content/Context;)Ljrz;
 
     move-result-object v0
 
     .line 41
-    .local v0, "a":Ldefpackage/jrz;
+    .local v0, "a":Ljrz;
     invoke-virtual {p0}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
@@ -96,7 +96,7 @@
 
     .line 42
     .local v1, "layoutParams2":Landroid/widget/FrameLayout$LayoutParams;
-    sget-object v2, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->PORTRAIT:Ljrz;
 
     if-ne v0, v2, :cond_1
 
@@ -131,7 +131,7 @@
 
     .end local v3    # "layoutParams":Landroid/widget/FrameLayout$LayoutParams;
     :cond_1
-    sget-object v2, Ldefpackage/jrz;->REVERSE_LANDSCAPE:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->REVERSE_LANDSCAPE:Ljrz;
 
     if-ne v0, v2, :cond_2
 
@@ -196,7 +196,7 @@
     return-void
 
     .line 38
-    .end local v0    # "a":Ldefpackage/jrz;
+    .end local v0    # "a":Ljrz;
     .end local v1    # "layoutParams2":Landroid/widget/FrameLayout$LayoutParams;
     .end local v3    # "layoutParams":Landroid/widget/FrameLayout$LayoutParams;
     :cond_4

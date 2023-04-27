@@ -62,7 +62,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Ldefpackage/mip;->eD(Landroid/content/Context;Landroid/view/Display;)Z
+    invoke-static {v0, v1}, Lmip;->eD(Landroid/content/Context;Landroid/view/Display;)Z
 
     move-result v0
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ldefpackage/jrz;
+.field private a:Ljrz;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 16
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a:Ljrz;
 
     .line 17
     return-void
@@ -27,15 +27,15 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/jrz;)V
+.method public final a(Ljrz;)V
     .locals 0
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 20
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a:Ljrz;
 
     .line 21
-    invoke-static {p0, p1}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, p1}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 22
     return-void
@@ -56,9 +56,9 @@
     if-eqz p1, :cond_0
 
     .line 28
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a:Ljrz;
 
-    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a(Ldefpackage/jrz;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a(Ljrz;)V
 
     .line 30
     :cond_0
@@ -71,9 +71,9 @@
     .param p2, "i2"    # I
 
     .line 34
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuViewContainer;->a:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

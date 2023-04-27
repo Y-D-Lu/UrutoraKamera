@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Ldefpackage/hwm;
+.field public a:Lhwm;
 
 
 # direct methods
@@ -27,17 +27,17 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/enc;
+    check-cast v0, Lenc;
 
-    const-class v1, Ldefpackage/hwk;
+    const-class v1, Lhwk;
 
-    invoke-interface {v0, v1}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/hwk;
+    check-cast v0, Lhwk;
 
-    invoke-interface {v0, p0}, Ldefpackage/hwk;->u(Lcom/google/android/apps/camera/sideline/SidelineJobService;)V
+    invoke-interface {v0, p0}, Lhwk;->u(Lcom/google/android/apps/camera/sideline/SidelineJobService;)V
 
     .line 17
     return-void
@@ -48,9 +48,9 @@
     .param p1, "jobParameters"    # Landroid/app/job/JobParameters;
 
     .line 21
-    iget-object v0, p0, Lcom/google/android/apps/camera/sideline/SidelineJobService;->a:Ldefpackage/hwm;
+    iget-object v0, p0, Lcom/google/android/apps/camera/sideline/SidelineJobService;->a:Lhwm;
 
-    invoke-virtual {v0}, Ldefpackage/hwm;->b()Z
+    invoke-virtual {v0}, Lhwm;->b()Z
 
     move-result v0
 
@@ -59,9 +59,9 @@
     if-eqz v0, :cond_0
 
     .line 22
-    iget-object v0, p0, Lcom/google/android/apps/camera/sideline/SidelineJobService;->a:Ldefpackage/hwm;
+    iget-object v0, p0, Lcom/google/android/apps/camera/sideline/SidelineJobService;->a:Lhwm;
 
-    invoke-virtual {v0}, Ldefpackage/hwm;->a()V
+    invoke-virtual {v0}, Lhwm;->a()V
 
     .line 23
     return v1

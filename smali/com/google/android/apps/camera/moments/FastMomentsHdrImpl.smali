@@ -3,31 +3,31 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/geq;
+.implements Lgeq;
 
 
 # instance fields
-.field public final a:Ldefpackage/lis;
+.field public final a:Llis;
 
 .field public final b:J
 
 .field public final c:Lcom/google/googlex/gcam/Gcam;
 
-.field public final d:Ldefpackage/pko;
+.field public final d:Lpko;
 
 .field private final e:Ljava/util/concurrent/Executor;
 
-.field private final f:Ldefpackage/bxy;
+.field private final f:Lbxy;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/lis;Lcom/google/googlex/gcam/Gcam;Ljava/util/concurrent/Executor;Ldefpackage/pko;Ldefpackage/bxy;)V
+.method public constructor <init>(Llis;Lcom/google/googlex/gcam/Gcam;Ljava/util/concurrent/Executor;Lpko;Lbxy;)V
     .locals 2
-    .param p1, "lisVar"    # Ldefpackage/lis;
+    .param p1, "lisVar"    # Llis;
     .param p2, "gcam"    # Lcom/google/googlex/gcam/Gcam;
     .param p3, "executor"    # Ljava/util/concurrent/Executor;
-    .param p4, "pkoVar"    # Ldefpackage/pko;
-    .param p5, "bxyVar"    # Ldefpackage/bxy;
+    .param p4, "pkoVar"    # Lpko;
+    .param p5, "bxyVar"    # Lbxy;
 
     .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,11 +35,11 @@
     .line 43
     const-string v0, "FastMomentsHdr"
 
-    invoke-interface {p1, v0}, Ldefpackage/lis;->a(Ljava/lang/String;)Ldefpackage/lis;
+    invoke-interface {p1, v0}, Llis;->a(Ljava/lang/String;)Llis;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Ldefpackage/lis;
+    iput-object v0, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Llis;
 
     .line 44
     iput-object p2, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->c:Lcom/google/googlex/gcam/Gcam;
@@ -48,13 +48,13 @@
     iput-object p3, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->e:Ljava/util/concurrent/Executor;
 
     .line 46
-    iput-object p4, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->d:Ldefpackage/pko;
+    iput-object p4, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->d:Lpko;
 
     .line 47
-    iput-object p5, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->f:Ldefpackage/bxy;
+    iput-object p5, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->f:Lbxy;
 
     .line 48
-    invoke-static {}, Ldefpackage/enl;->b()V
+    invoke-static {}, Lenl;->b()V
 
     .line 49
     invoke-static {}, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->createImpl()J
@@ -81,13 +81,13 @@
     .line 58
     iget-object v0, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->e:Ljava/util/concurrent/Executor;
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->f:Ldefpackage/bxy;
+    iget-object v1, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->f:Lbxy;
 
     new-instance v2, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$1;
 
     invoke-direct {v2, p0}, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$1;-><init>(Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;)V
 
-    invoke-virtual {v1, v2}, Ldefpackage/bxy;->a(Ljava/lang/Runnable;)Ljava/lang/Runnable;
+    invoke-virtual {v1, v2}, Lbxy;->a(Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -97,12 +97,12 @@
     return-void
 .end method
 
-.method public final b(Ldefpackage/mad;Ldefpackage/ger;Ldefpackage/gep;Ldefpackage/geo;)V
+.method public final b(Lmad;Lger;Lgep;Lgeo;)V
     .locals 16
-    .param p1, "madVar"    # Ldefpackage/mad;
-    .param p2, "gerVar"    # Ldefpackage/ger;
-    .param p3, "gepVar"    # Ldefpackage/gep;
-    .param p4, "geoVar"    # Ldefpackage/geo;
+    .param p1, "madVar"    # Lmad;
+    .param p2, "gerVar"    # Lger;
+    .param p3, "gepVar"    # Lgep;
+    .param p4, "geoVar"    # Lgeo;
 
     .line 69
     move-object/from16 v9, p2
@@ -113,7 +113,7 @@
 
     .line 70
     .local v0, "z":Z
-    invoke-interface/range {p1 .. p1}, Ldefpackage/mad;->a()I
+    invoke-interface/range {p1 .. p1}, Lmad;->a()I
 
     move-result v1
 
@@ -133,16 +133,16 @@
     move v1, v3
 
     :goto_0
-    invoke-interface/range {p1 .. p1}, Ldefpackage/mad;->a()I
+    invoke-interface/range {p1 .. p1}, Lmad;->a()I
 
     move-result v5
 
     const-string v6, "Wrong format for input ImageProxy. Got %s, expected RAW10 (%s)"
 
-    invoke-static {v1, v6, v5, v4}, Ldefpackage/obr;->aL(ZLjava/lang/String;II)V
+    invoke-static {v1, v6, v5, v4}, Lobr;->aL(ZLjava/lang/String;II)V
 
     .line 71
-    invoke-interface/range {p1 .. p1}, Ldefpackage/mad;->f()Landroid/hardware/HardwareBuffer;
+    invoke-interface/range {p1 .. p1}, Lmad;->f()Landroid/hardware/HardwareBuffer;
 
     move-result-object v11
 
@@ -151,9 +151,9 @@
     invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 73
-    iget-object v1, v10, Ldefpackage/gep;->a:Ldefpackage/lig;
+    iget-object v1, v10, Lgep;->a:Llig;
 
-    iget v1, v1, Ldefpackage/lig;->a:I
+    iget v1, v1, Llig;->a:I
 
     rem-int/lit8 v1, v1, 0x4
 
@@ -167,12 +167,12 @@
     :goto_1
     const-string v1, "Only multiple of 4 widths are supported!"
 
-    invoke-static {v2, v1}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v2, v1}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 74
-    iget-object v1, v10, Ldefpackage/gep;->a:Ldefpackage/lig;
+    iget-object v1, v10, Lgep;->a:Llig;
 
-    iget v1, v1, Ldefpackage/lig;->b:I
+    iget v1, v1, Llig;->b:I
 
     rem-int/lit8 v1, v1, 0x2
 
@@ -195,10 +195,10 @@
     :goto_2
     const-string v0, "Only multiple of 2 heights are supported!"
 
-    invoke-static {v12, v0}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v12, v0}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 78
-    iget-object v0, v9, Ldefpackage/ger;->c:Lcom/google/googlex/gcam/AeShotParams;
+    iget-object v0, v9, Lger;->c:Lcom/google/googlex/gcam/AeShotParams;
 
     invoke-virtual {v0}, Lcom/google/googlex/gcam/AeShotParams;->a()Lcom/google/googlex/gcam/NormalizedRect;
 
@@ -206,7 +206,7 @@
 
     .line 79
     .local v13, "a":Lcom/google/googlex/gcam/NormalizedRect;
-    iget-object v14, v9, Ldefpackage/ger;->a:Lcom/google/googlex/gcam/ShotMetadata;
+    iget-object v14, v9, Lger;->a:Lcom/google/googlex/gcam/ShotMetadata;
 
     .line 80
     .local v14, "shotMetadata":Lcom/google/googlex/gcam/ShotMetadata;
@@ -238,7 +238,7 @@
 
     move-object/from16 v8, p4
 
-    invoke-direct/range {v0 .. v8}, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;-><init>(Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;Ldefpackage/mad;Ldefpackage/ger;Lcom/google/googlex/gcam/NormalizedRect;Lcom/google/googlex/gcam/ShotMetadata;Ldefpackage/gep;Landroid/hardware/HardwareBuffer;Ldefpackage/geo;)V
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl$2;-><init>(Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;Lmad;Lger;Lcom/google/googlex/gcam/NormalizedRect;Lcom/google/googlex/gcam/ShotMetadata;Lgep;Landroid/hardware/HardwareBuffer;Lgeo;)V
 
     invoke-interface {v10, v9}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -246,22 +246,22 @@
     return-void
 .end method
 
-.method public final c(Ldefpackage/lmr;Ldefpackage/hcg;)Z
+.method public final c(Llmr;Lhcg;)Z
     .locals 4
-    .param p1, "lmrVar"    # Ldefpackage/lmr;
-    .param p2, "hcgVar"    # Ldefpackage/hcg;
+    .param p1, "lmrVar"    # Llmr;
+    .param p2, "hcgVar"    # Lhcg;
 
     .line 225
-    invoke-virtual {p2, p1}, Ldefpackage/hcg;->a(Ldefpackage/lmr;)Ldefpackage/hcf;
+    invoke-virtual {p2, p1}, Lhcg;->a(Llmr;)Lhcf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ldefpackage/hcf;->e()Ldefpackage/mad;
+    invoke-virtual {v0}, Lhcf;->e()Lmad;
 
     move-result-object v0
 
     .line 226
-    .local v0, "e":Ldefpackage/mad;
+    .local v0, "e":Lmad;
     const/4 v1, 0x0
 
     .line 228
@@ -270,11 +270,11 @@
 
     .line 229
     :try_start_0
-    iget-object v2, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Ldefpackage/lis;
+    iget-object v2, p0, Lcom/google/android/apps/camera/moments/FastMomentsHdrImpl;->a:Llis;
 
     const-string v3, "No RAW10 image found in frame. Can\'t use FastMomentsHdr"
 
-    invoke-interface {v2, v3}, Ldefpackage/lis;->d(Ljava/lang/String;)V
+    invoke-interface {v2, v3}, Llis;->d(Ljava/lang/String;)V
 
     .line 230
     const/4 v2, 0x0
@@ -283,7 +283,7 @@
 
     .line 232
     :cond_0
-    invoke-interface {v0}, Ldefpackage/mad;->f()Landroid/hardware/HardwareBuffer;
+    invoke-interface {v0}, Lmad;->f()Landroid/hardware/HardwareBuffer;
 
     move-result-object v2
 
@@ -303,7 +303,7 @@
 
     .line 239
     :cond_2
-    invoke-interface {v0}, Ldefpackage/lie;->close()V
+    invoke-interface {v0}, Llie;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -321,7 +321,7 @@
 
     .line 244
     :try_start_1
-    invoke-interface {v0}, Ldefpackage/lie;->close()V
+    invoke-interface {v0}, Llie;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 

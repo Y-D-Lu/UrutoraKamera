@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/fjt;
+.implements Lfjt;
 
 
 # static fields
@@ -84,9 +84,9 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/pac;)V
+.method public final a(Lpac;)V
     .locals 3
-    .param p1, "pacVar"    # Ldefpackage/pac;
+    .param p1, "pacVar"    # Lpac;
 
     .line 26
     sget-object v0, Lcom/google/android/apps/camera/logging/InstrumentationCameraEventLogger;->b:Ljava/util/List;

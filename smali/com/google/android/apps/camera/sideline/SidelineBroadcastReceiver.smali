@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public a:Ldefpackage/hwm;
+.field public a:Lhwm;
 
-.field public b:Ldefpackage/hug;
+.field public b:Lhug;
 
 
 # direct methods
@@ -31,17 +31,17 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/enc;
+    check-cast v0, Lenc;
 
-    const-class v1, Ldefpackage/hvt;
+    const-class v1, Lhvt;
 
-    invoke-interface {v0, v1}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/hvt;
+    check-cast v0, Lhvt;
 
-    invoke-interface {v0, p0}, Ldefpackage/hvt;->s(Lcom/google/android/apps/camera/sideline/SidelineBroadcastReceiver;)V
+    invoke-interface {v0, p0}, Lhvt;->s(Lcom/google/android/apps/camera/sideline/SidelineBroadcastReceiver;)V
 
     .line 23
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -132,20 +132,20 @@
 
     .line 46
     :pswitch_1
-    iget-object v2, p0, Lcom/google/android/apps/camera/sideline/SidelineBroadcastReceiver;->b:Ldefpackage/hug;
+    iget-object v2, p0, Lcom/google/android/apps/camera/sideline/SidelineBroadcastReceiver;->b:Lhug;
 
-    sget-object v3, Ldefpackage/htu;->U:Ldefpackage/hul;
+    sget-object v3, Lhtu;->U:Lhul;
 
-    invoke-interface {v2, v3}, Ldefpackage/hug;->d(Ldefpackage/hts;)V
+    invoke-interface {v2, v3}, Lhug;->d(Lhts;)V
 
     .line 47
     nop
 
     .line 53
     :goto_1
-    iget-object v2, p0, Lcom/google/android/apps/camera/sideline/SidelineBroadcastReceiver;->a:Ldefpackage/hwm;
+    iget-object v2, p0, Lcom/google/android/apps/camera/sideline/SidelineBroadcastReceiver;->a:Lhwm;
 
-    invoke-virtual {v2}, Ldefpackage/hwm;->b()Z
+    invoke-virtual {v2}, Lhwm;->b()Z
 
     move-result v2
 
@@ -156,9 +156,9 @@
 
     .line 56
     :cond_2
-    iget-object v2, p0, Lcom/google/android/apps/camera/sideline/SidelineBroadcastReceiver;->a:Ldefpackage/hwm;
+    iget-object v2, p0, Lcom/google/android/apps/camera/sideline/SidelineBroadcastReceiver;->a:Lhwm;
 
-    invoke-virtual {v2}, Ldefpackage/hwm;->a()V
+    invoke-virtual {v2}, Lhwm;->a()V
 
     .line 58
     .end local v1    # "c":C

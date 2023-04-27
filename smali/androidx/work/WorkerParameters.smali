@@ -6,27 +6,27 @@
 # instance fields
 .field public a:Ljava/util/UUID;
 
-.field public b:Ldefpackage/amq;
+.field public b:Lamq;
 
 .field public c:I
 
 .field public d:Ljava/util/concurrent/Executor;
 
-.field public e:Ldefpackage/ani;
+.field public e:Lani;
 
-.field public f:Ldefpackage/aso;
+.field public f:Laso;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/UUID;Ldefpackage/amq;Ljava/util/Collection;ILjava/util/concurrent/Executor;Ldefpackage/aso;Ldefpackage/ani;)V
+.method public constructor <init>(Ljava/util/UUID;Lamq;Ljava/util/Collection;ILjava/util/concurrent/Executor;Laso;Lani;)V
     .locals 1
     .param p1, "uuid"    # Ljava/util/UUID;
-    .param p2, "amqVar"    # Ldefpackage/amq;
+    .param p2, "amqVar"    # Lamq;
     .param p3, "collection"    # Ljava/util/Collection;
     .param p4, "i"    # I
     .param p5, "executor"    # Ljava/util/concurrent/Executor;
-    .param p6, "asoVar"    # Ldefpackage/aso;
-    .param p7, "aniVar"    # Ldefpackage/ani;
+    .param p6, "asoVar"    # Laso;
+    .param p7, "aniVar"    # Lani;
 
     .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +35,7 @@
     iput-object p1, p0, Landroidx/work/WorkerParameters;->a:Ljava/util/UUID;
 
     .line 23
-    iput-object p2, p0, Landroidx/work/WorkerParameters;->b:Ldefpackage/amq;
+    iput-object p2, p0, Landroidx/work/WorkerParameters;->b:Lamq;
 
     .line 24
     new-instance v0, Ljava/util/HashSet;
@@ -49,10 +49,10 @@
     iput-object p5, p0, Landroidx/work/WorkerParameters;->d:Ljava/util/concurrent/Executor;
 
     .line 27
-    iput-object p6, p0, Landroidx/work/WorkerParameters;->f:Ldefpackage/aso;
+    iput-object p6, p0, Landroidx/work/WorkerParameters;->f:Laso;
 
     .line 28
-    iput-object p7, p0, Landroidx/work/WorkerParameters;->e:Ldefpackage/ani;
+    iput-object p7, p0, Landroidx/work/WorkerParameters;->e:Lani;
 
     .line 29
     return-void

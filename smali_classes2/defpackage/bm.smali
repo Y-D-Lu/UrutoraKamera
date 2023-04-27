@@ -1,51 +1,62 @@
-.class public final Ldefpackage/bm;
+.class public Ldefpackage/Bm;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnDismissListener;
+.implements Landroid/view/View$OnLayoutChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljgw;->j()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/bp;
+.field public final synthetic this$0:Ljgw;
+
+.field public final synthetic val$notificationChipView:Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/bp;)V
+.method public constructor <init>(Ljgw;Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;)V
     .locals 0
-    .param p1, "bpVar"    # Ldefpackage/bp;
+    .param p1, "this$0"    # Ljgw;
 
-    .line 12
+    .line 151
+    iput-object p1, p0, Ldefpackage/Bm;->this$0:Ljgw;
+
+    iput-object p2, p0, Ldefpackage/Bm;->val$notificationChipView:Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    iput-object p1, p0, Ldefpackage/bm;->a:Ldefpackage/bp;
-
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final onDismiss(Landroid/content/DialogInterface;)V
-    .locals 2
-    .param p1, "dialogInterface"    # Landroid/content/DialogInterface;
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 1
+    .param p1, "view"    # Landroid/view/View;
+    .param p2, "i2"    # I
+    .param p3, "i3"    # I
+    .param p4, "i4"    # I
+    .param p5, "i5"    # I
+    .param p6, "i6"    # I
+    .param p7, "i7"    # I
+    .param p8, "i8"    # I
+    .param p9, "i9"    # I
 
-    .line 18
-    iget-object v0, p0, Ldefpackage/bm;->a:Ldefpackage/bp;
+    .line 154
+    iget-object v0, p0, Ldefpackage/Bm;->val$notificationChipView:Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;
 
-    .line 19
-    .local v0, "bpVar":Ldefpackage/bp;
-    iget-object v1, v0, Ldefpackage/bp;->c:Landroid/app/Dialog;
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/ui/notificationchip/NotificationChipView;->b()V
 
-    .line 20
-    .local v1, "dialog":Landroid/app/Dialog;
-    if-eqz v1, :cond_0
-
-    .line 21
-    invoke-virtual {v0, v1}, Ldefpackage/bp;->onDismiss(Landroid/content/DialogInterface;)V
-
-    .line 23
-    :cond_0
+    .line 155
     return-void
 .end method

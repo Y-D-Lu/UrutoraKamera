@@ -3,5 +3,5 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/qdh;
-.implements Ldefpackage/qbz;
+.implements Lqdh;
+.implements Lqbz;

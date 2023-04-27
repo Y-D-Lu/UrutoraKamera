@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;
-.super Ldefpackage/nxc;
+.super Lnxc;
 .source ""
 
 
@@ -17,13 +17,13 @@
 # instance fields
 .field public a:I
 
-.field public b:Ldefpackage/ohh;
+.field public b:Lohh;
 
 .field private d:I
 
 .field private e:Landroid/animation/ValueAnimator;
 
-.field private f:Ldefpackage/nwt;
+.field private f:Lnwt;
 
 .field private g:Ljava/lang/ref/WeakReference;
 
@@ -33,7 +33,7 @@
     .locals 0
 
     .line 95
-    invoke-direct {p0}, Ldefpackage/nxc;-><init>()V
+    invoke-direct {p0}, Lnxc;-><init>()V
 
     .line 96
     return-void
@@ -45,7 +45,7 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 99
-    invoke-direct {p0, p1, p2}, Ldefpackage/nxc;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lnxc;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 100
     return-void
@@ -108,11 +108,11 @@
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/nwv;
+    check-cast v7, Lnwv;
 
     .line 115
-    .local v7, "nwvVar":Ldefpackage/nwv;
-    iget v8, v7, Ldefpackage/nwv;->a:I
+    .local v7, "nwvVar":Lnwv;
+    iget v8, v7, Lnwv;->a:I
 
     invoke-static {v8, v3}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->K(II)Z
 
@@ -147,7 +147,7 @@
     .end local v4    # "childAt":Landroid/view/View;
     .end local v5    # "top":I
     .end local v6    # "bottom":I
-    .end local v7    # "nwvVar":Ldefpackage/nwv;
+    .end local v7    # "nwvVar":Lnwv;
     .end local v8    # "i2":I
     :goto_1
     if-ltz v2, :cond_9
@@ -163,11 +163,11 @@
 
     move-result-object v5
 
-    check-cast v5, Ldefpackage/nwv;
+    check-cast v5, Lnwv;
 
     .line 128
-    .local v5, "nwvVar2":Ldefpackage/nwv;
-    iget v6, v5, Ldefpackage/nwv;->a:I
+    .local v5, "nwvVar2":Lnwv;
+    iget v6, v5, Lnwv;->a:I
 
     .line 129
     .local v6, "i3":I
@@ -224,7 +224,7 @@
     if-eqz v10, :cond_4
 
     .line 138
-    invoke-static {v4}, Ldefpackage/gl;->g(Landroid/view/View;)I
+    invoke-static {v4}, Lgl;->g(Landroid/view/View;)I
 
     move-result v10
 
@@ -243,7 +243,7 @@
     if-eqz v10, :cond_6
 
     .line 140
-    invoke-static {v4}, Ldefpackage/gl;->g(Landroid/view/View;)I
+    invoke-static {v4}, Lgl;->g(Landroid/view/View;)I
 
     move-result v10
 
@@ -303,7 +303,7 @@
 
     const/4 v9, 0x0
 
-    invoke-static {v7, v3, v9}, Ldefpackage/aao;->d(III)I
+    invoke-static {v7, v3, v9}, Laao;->d(III)I
 
     move-result v3
 
@@ -311,7 +311,7 @@
 
     .line 156
     .end local v4    # "childAt2":Landroid/view/View;
-    .end local v5    # "nwvVar2":Ldefpackage/nwv;
+    .end local v5    # "nwvVar2":Lnwv;
     .end local v6    # "i3":I
     .end local v7    # "i4":I
     .end local v8    # "i5":I
@@ -322,7 +322,7 @@
     .local v4, "childAt":Landroid/view/View;
     .local v5, "top":I
     .local v6, "bottom":I
-    .local v7, "nwvVar":Ldefpackage/nwv;
+    .local v7, "nwvVar":Lnwv;
     .local v8, "i2":I
     :cond_a
     nop
@@ -330,7 +330,7 @@
     .end local v4    # "childAt":Landroid/view/View;
     .end local v5    # "top":I
     .end local v6    # "bottom":I
-    .end local v7    # "nwvVar":Ldefpackage/nwv;
+    .end local v7    # "nwvVar":Lnwv;
     .end local v8    # "i2":I
     add-int/lit8 v2, v2, 0x1
 
@@ -344,22 +344,22 @@
     .param p2, "appBarLayout"    # Lcom/google/android/material/appbar/AppBarLayout;
 
     .line 159
-    sget-object v0, Ldefpackage/ha;->b:Ldefpackage/ha;
+    sget-object v0, Lha;->b:Lha;
 
-    invoke-virtual {v0}, Ldefpackage/ha;->a()I
+    invoke-virtual {v0}, Lha;->a()I
 
     move-result v1
 
-    invoke-static {p1, v1}, Ldefpackage/gl;->C(Landroid/view/View;I)V
+    invoke-static {p1, v1}, Lgl;->C(Landroid/view/View;I)V
 
     .line 160
-    sget-object v1, Ldefpackage/ha;->c:Ldefpackage/ha;
+    sget-object v1, Lha;->c:Lha;
 
-    invoke-virtual {v1}, Ldefpackage/ha;->a()I
+    invoke-virtual {v1}, Lha;->a()I
 
     move-result v2
 
-    invoke-static {p1, v2}, Ldefpackage/gl;->C(Landroid/view/View;I)V
+    invoke-static {p1, v2}, Lgl;->C(Landroid/view/View;I)V
 
     .line 161
     invoke-static {p1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->M(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)Landroid/view/View;
@@ -380,9 +380,9 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/aah;
+    check-cast v3, Laah;
 
-    iget-object v3, v3, Ldefpackage/aah;->a:Ldefpackage/aae;
+    iget-object v3, v3, Laah;->a:Laae;
 
     instance-of v3, v3, Lcom/google/android/material/appbar/AppBarLayout$ScrollingViewBehavior;
 
@@ -415,7 +415,7 @@
     .line 166
     const/4 v3, 0x0
 
-    invoke-static {p1, p2, v0, v3}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->N(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Ldefpackage/ha;Z)V
+    invoke-static {p1, p2, v0, v3}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->N(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Lha;Z)V
 
     .line 168
     :cond_1
@@ -439,7 +439,7 @@
     if-nez v0, :cond_3
 
     .line 172
-    invoke-static {p1, p2, v1, v5}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->N(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Ldefpackage/ha;Z)V
+    invoke-static {p1, p2, v1, v5}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->N(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Lha;Z)V
 
     .line 173
     return-void
@@ -461,7 +461,7 @@
 
     .line 179
     :cond_4
-    new-instance v9, Ldefpackage/nwr;
+    new-instance v9, Lnwr;
 
     move-object v3, v9
 
@@ -475,9 +475,9 @@
 
     move v8, v0
 
-    invoke-direct/range {v3 .. v8}, Ldefpackage/nwr;-><init>(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;I)V
+    invoke-direct/range {v3 .. v8}, Lnwr;-><init>(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;I)V
 
-    invoke-static {p1, v1, v9}, Ldefpackage/gl;->ab(Landroid/view/View;Ldefpackage/ha;Ldefpackage/hj;)V
+    invoke-static {p1, v1, v9}, Lgl;->ab(Landroid/view/View;Lha;Lhj;)V
 
     .line 180
     return-void
@@ -635,16 +635,16 @@
     iput-object v5, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->e:Landroid/animation/ValueAnimator;
 
     .line 203
-    sget-object v6, Ldefpackage/nwj;->e:Landroid/animation/TimeInterpolator;
+    sget-object v6, Lnwj;->e:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v5, v6}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 204
     iget-object v6, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->e:Landroid/animation/ValueAnimator;
 
-    new-instance v7, Ldefpackage/nwq;
+    new-instance v7, Lnwq;
 
-    invoke-direct {v7, p0, p1, p2}, Ldefpackage/nwq;-><init>(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)V
+    invoke-direct {v7, p0, p1, p2}, Lnwq;-><init>(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)V
 
     invoke-virtual {v6, v7}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -756,19 +756,19 @@
     return-object v1
 .end method
 
-.method private static final N(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Ldefpackage/ha;Z)V
+.method private static final N(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Lha;Z)V
     .locals 1
     .param p0, "coordinatorLayout"    # Landroidx/coordinatorlayout/widget/CoordinatorLayout;
     .param p1, "appBarLayout"    # Lcom/google/android/material/appbar/AppBarLayout;
-    .param p2, "haVar"    # Ldefpackage/ha;
+    .param p2, "haVar"    # Lha;
     .param p3, "z"    # Z
 
     .line 225
-    new-instance v0, Ldefpackage/nws;
+    new-instance v0, Lnws;
 
-    invoke-direct {v0, p1, p3}, Ldefpackage/nws;-><init>(Lcom/google/android/material/appbar/AppBarLayout;Z)V
+    invoke-direct {v0, p1, p3}, Lnws;-><init>(Lcom/google/android/material/appbar/AppBarLayout;Z)V
 
-    invoke-static {p0, p2, v0}, Ldefpackage/gl;->ab(Landroid/view/View;Ldefpackage/ha;Ldefpackage/hj;)V
+    invoke-static {p0, p2, v0}, Lgl;->ab(Landroid/view/View;Lha;Lhj;)V
 
     .line 226
     return-void
@@ -841,7 +841,7 @@
 
     .line 347
     :cond_0
-    invoke-static/range {p3 .. p5}, Ldefpackage/aao;->d(III)I
+    invoke-static/range {p3 .. p5}, Laao;->d(III)I
 
     move-result v8
 
@@ -891,11 +891,11 @@
 
     move-result-object v13
 
-    check-cast v13, Ldefpackage/nwv;
+    check-cast v13, Lnwv;
 
     .line 359
-    .local v13, "nwvVar":Ldefpackage/nwv;
-    iget-object v14, v13, Ldefpackage/nwv;->c:Landroid/view/animation/Interpolator;
+    .local v13, "nwvVar":Lnwv;
+    iget-object v14, v13, Lnwv;->c:Landroid/view/animation/Interpolator;
 
     .line 360
     .local v14, "interpolator":Landroid/view/animation/Interpolator;
@@ -920,7 +920,7 @@
     if-eqz v14, :cond_7
 
     .line 363
-    iget v15, v13, Ldefpackage/nwv;->a:I
+    iget v15, v13, Lnwv;->a:I
 
     .line 364
     .local v15, "i8":I
@@ -948,7 +948,7 @@
     if-eqz v6, :cond_4
 
     .line 367
-    invoke-static {v12}, Ldefpackage/gl;->g(Landroid/view/View;)I
+    invoke-static {v12}, Lgl;->g(Landroid/view/View;)I
 
     move-result v6
 
@@ -965,7 +965,7 @@
     .restart local v16    # "i5":I
     :cond_4
     :goto_1
-    invoke-static {v12}, Ldefpackage/gl;->R(Landroid/view/View;)Z
+    invoke-static {v12}, Lgl;->R(Landroid/view/View;)Z
 
     move-result v6
 
@@ -1062,7 +1062,7 @@
 
     .line 380
     .end local v12    # "childAt":Landroid/view/View;
-    .end local v13    # "nwvVar":Ldefpackage/nwv;
+    .end local v13    # "nwvVar":Lnwv;
     .end local v14    # "interpolator":Landroid/view/animation/Interpolator;
     :goto_4
     move/from16 v2, p4
@@ -1088,7 +1088,7 @@
 
     .line 383
     .local v2, "i4":I
-    invoke-virtual {v0, v2}, Ldefpackage/nxf;->H(I)Z
+    invoke-virtual {v0, v2}, Lnxf;->H(I)Z
 
     move-result v5
 
@@ -1129,17 +1129,17 @@
 
     move-result-object v11
 
-    check-cast v11, Ldefpackage/nwv;
+    check-cast v11, Lnwv;
 
     .line 390
-    .local v11, "nwvVar2":Ldefpackage/nwv;
-    iget-object v12, v11, Ldefpackage/nwv;->b:Ldefpackage/nwu;
+    .local v11, "nwvVar2":Lnwv;
+    iget-object v12, v11, Lnwv;->b:Lnwu;
 
     .line 391
-    .local v12, "nwuVar":Ldefpackage/nwu;
+    .local v12, "nwuVar":Lnwu;
     if-eqz v12, :cond_b
 
-    iget v13, v11, Ldefpackage/nwv;->a:I
+    iget v13, v11, Lnwv;->a:I
 
     and-int/lit8 v13, v13, 0x1
 
@@ -1152,13 +1152,13 @@
 
     .line 393
     .local v13, "childAt2":Landroid/view/View;
-    invoke-virtual/range {p0 .. p0}, Ldefpackage/nxf;->G()I
+    invoke-virtual/range {p0 .. p0}, Lnxf;->G()I
 
     move-result v14
 
     .line 394
     .local v14, "G":I
-    iget-object v15, v12, Ldefpackage/nwu;->a:Landroid/graphics/Rect;
+    iget-object v15, v12, Lnwu;->a:Landroid/graphics/Rect;
 
     .line 395
     .local v15, "rect":Landroid/graphics/Rect;
@@ -1187,7 +1187,7 @@
     invoke-virtual {v15, v5, v2}, Landroid/graphics/Rect;->offset(II)V
 
     .line 398
-    iget-object v2, v12, Ldefpackage/nwu;->a:Landroid/graphics/Rect;
+    iget-object v2, v12, Lnwu;->a:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->top:I
 
@@ -1208,7 +1208,7 @@
     if-gtz v19, :cond_a
 
     .line 400
-    iget-object v5, v12, Ldefpackage/nwu;->a:Landroid/graphics/Rect;
+    iget-object v5, v12, Lnwu;->a:Landroid/graphics/Rect;
 
     invoke-virtual {v5}, Landroid/graphics/Rect;->height()I
 
@@ -1222,7 +1222,7 @@
 
     move-result v5
 
-    invoke-static {v5}, Ldefpackage/aao;->e(F)F
+    invoke-static {v5}, Laao;->e(F)F
 
     move-result v5
 
@@ -1238,7 +1238,7 @@
 
     .end local v2    # "abs2":F
     .local v20, "abs2":F
-    iget-object v2, v12, Ldefpackage/nwu;->a:Landroid/graphics/Rect;
+    iget-object v2, v12, Lnwu;->a:Landroid/graphics/Rect;
 
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
@@ -1263,12 +1263,12 @@
     invoke-virtual {v13, v7}, Landroid/view/View;->setTranslationY(F)V
 
     .line 403
-    iget-object v2, v12, Ldefpackage/nwu;->b:Landroid/graphics/Rect;
+    iget-object v2, v12, Lnwu;->b:Landroid/graphics/Rect;
 
     invoke-virtual {v13, v2}, Landroid/view/View;->getDrawingRect(Landroid/graphics/Rect;)V
 
     .line 404
-    iget-object v2, v12, Ldefpackage/nwu;->b:Landroid/graphics/Rect;
+    iget-object v2, v12, Lnwu;->b:Landroid/graphics/Rect;
 
     move/from16 v19, v5
 
@@ -1287,9 +1287,9 @@
     invoke-virtual {v2, v7, v5}, Landroid/graphics/Rect;->offset(II)V
 
     .line 405
-    iget-object v2, v12, Ldefpackage/nwu;->b:Landroid/graphics/Rect;
+    iget-object v2, v12, Lnwu;->b:Landroid/graphics/Rect;
 
-    invoke-static {v13, v2}, Ldefpackage/gl;->J(Landroid/view/View;Landroid/graphics/Rect;)V
+    invoke-static {v13, v2}, Lgl;->J(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 406
     .end local v19    # "e":F
@@ -1306,7 +1306,7 @@
     .restart local v20    # "abs2":F
     const/4 v2, 0x0
 
-    invoke-static {v13, v2}, Ldefpackage/gl;->J(Landroid/view/View;Landroid/graphics/Rect;)V
+    invoke-static {v13, v2}, Lgl;->J(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 408
     invoke-virtual {v13, v5}, Landroid/view/View;->setTranslationY(F)V
@@ -1330,8 +1330,8 @@
     .line 388
     .end local v2    # "i4":I
     .end local v5    # "H":Z
-    .end local v11    # "nwvVar2":Ldefpackage/nwv;
-    .end local v12    # "nwuVar":Ldefpackage/nwu;
+    .end local v11    # "nwvVar2":Lnwv;
+    .end local v12    # "nwuVar":Lnwu;
     .restart local v16    # "i4":I
     .restart local v18    # "H":Z
     :goto_7
@@ -1385,7 +1385,7 @@
     .line 415
     :cond_e
     :goto_8
-    invoke-virtual/range {p0 .. p0}, Ldefpackage/nxf;->G()I
+    invoke-virtual/range {p0 .. p0}, Lnxf;->G()I
 
     move-result v2
 
@@ -1496,7 +1496,7 @@
 
     .line 439
     .local v0, "appBarLayout":Lcom/google/android/material/appbar/AppBarLayout;
-    iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->b:Ldefpackage/ohh;
+    iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->b:Lohh;
 
     const/4 v2, 0x0
 
@@ -1622,7 +1622,7 @@
 
     move v8, v2
 
-    invoke-virtual/range {v3 .. v8}, Ldefpackage/nxc;->E(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)I
+    invoke-virtual/range {v3 .. v8}, Lnxc;->E(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)I
 
     move-result v3
 
@@ -1711,17 +1711,17 @@
 
     .line 486
     .local v0, "appBarLayout":Lcom/google/android/material/appbar/AppBarLayout;
-    invoke-super {p0, p1, v0, p3}, Ldefpackage/nxf;->e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
+    invoke-super {p0, p1, v0, p3}, Lnxf;->e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
 
     .line 487
     iget v1, v0, Lcom/google/android/material/appbar/AppBarLayout;->b:I
 
     .line 488
     .local v1, "i2":I
-    iget-object v2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Ldefpackage/nwt;
+    iget-object v2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Lnwt;
 
     .line 489
-    .local v2, "nwtVar":Ldefpackage/nwt;
+    .local v2, "nwtVar":Lnwt;
     const/4 v3, 0x0
 
     if-eqz v2, :cond_3
@@ -1734,7 +1734,7 @@
 
     .line 507
     :cond_0
-    iget-boolean v4, v2, Ldefpackage/nwt;->a:Z
+    iget-boolean v4, v2, Lnwt;->a:Z
 
     if-eqz v4, :cond_1
 
@@ -1745,13 +1745,13 @@
 
     neg-int v4, v4
 
-    invoke-virtual {p0, p1, v0, v4}, Ldefpackage/nxc;->F(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
+    invoke-virtual {p0, p1, v0, v4}, Lnxc;->F(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
 
     goto :goto_3
 
     .line 510
     :cond_1
-    iget v4, v2, Ldefpackage/nwt;->b:I
+    iget v4, v2, Lnwt;->b:I
 
     invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
@@ -1767,13 +1767,13 @@
 
     .line 512
     .local v5, "i5":I
-    iget-object v6, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Ldefpackage/nwt;
+    iget-object v6, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Lnwt;
 
-    iget-boolean v6, v6, Ldefpackage/nwt;->f:Z
+    iget-boolean v6, v6, Lnwt;->f:Z
 
     if-eqz v6, :cond_2
 
-    invoke-static {v4}, Ldefpackage/gl;->g(Landroid/view/View;)I
+    invoke-static {v4}, Lgl;->g(Landroid/view/View;)I
 
     move-result v6
 
@@ -1794,9 +1794,9 @@
 
     int-to-float v6, v6
 
-    iget-object v7, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Ldefpackage/nwt;
+    iget-object v7, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Lnwt;
 
-    iget v7, v7, Ldefpackage/nwt;->e:F
+    iget v7, v7, Lnwt;->e:F
 
     mul-float/2addr v6, v7
 
@@ -1807,7 +1807,7 @@
     add-int/2addr v6, v5
 
     :goto_0
-    invoke-virtual {p0, p1, v0, v6}, Ldefpackage/nxc;->F(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
+    invoke-virtual {p0, p1, v0, v6}, Lnxc;->F(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
 
     goto :goto_3
 
@@ -1845,7 +1845,7 @@
 
     .line 497
     :cond_4
-    invoke-virtual {p0, p1, v0, v5}, Ldefpackage/nxc;->F(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
+    invoke-virtual {p0, p1, v0, v5}, Lnxc;->F(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
 
     goto :goto_2
 
@@ -1866,7 +1866,7 @@
 
     .line 503
     :cond_6
-    invoke-virtual {p0, p1, v0, v3}, Ldefpackage/nxc;->F(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
+    invoke-virtual {p0, p1, v0, v3}, Lnxc;->F(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)V
 
     goto :goto_3
 
@@ -1884,10 +1884,10 @@
     .line 515
     const/4 v4, 0x0
 
-    iput-object v4, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Ldefpackage/nwt;
+    iput-object v4, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Lnwt;
 
     .line 516
-    invoke-virtual {p0}, Ldefpackage/nxf;->G()I
+    invoke-virtual {p0}, Lnxf;->G()I
 
     move-result v4
 
@@ -1897,14 +1897,14 @@
 
     neg-int v5, v5
 
-    invoke-static {v4, v5, v3}, Ldefpackage/aao;->d(III)I
+    invoke-static {v4, v5, v3}, Laao;->d(III)I
 
     move-result v4
 
-    invoke-virtual {p0, v4}, Ldefpackage/nxf;->H(I)Z
+    invoke-virtual {p0, v4}, Lnxf;->H(I)Z
 
     .line 517
-    invoke-virtual {p0}, Ldefpackage/nxf;->G()I
+    invoke-virtual {p0}, Lnxf;->G()I
 
     move-result v4
 
@@ -1913,7 +1913,7 @@
     invoke-static {p1, v0, v4, v3, v5}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->O(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;IIZ)V
 
     .line 518
-    invoke-virtual {p0}, Ldefpackage/nxf;->G()I
+    invoke-virtual {p0}, Lnxf;->G()I
 
     move-result v3
 
@@ -1945,7 +1945,7 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/aah;
+    check-cast v1, Laah;
 
     iget v1, v1, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
 
@@ -2039,7 +2039,7 @@
 
     move v3, p5
 
-    invoke-virtual/range {v0 .. v5}, Ldefpackage/nxc;->E(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)I
+    invoke-virtual/range {v0 .. v5}, Lnxc;->E(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)I
 
     move-result v0
 
@@ -2069,14 +2069,14 @@
 
     .line 552
     .local v0, "appBarLayout":Lcom/google/android/material/appbar/AppBarLayout;
-    instance-of v1, p2, Ldefpackage/nwt;
+    instance-of v1, p2, Lnwt;
 
     if-nez v1, :cond_0
 
     .line 553
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Ldefpackage/nwt;
+    iput-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Lnwt;
 
     .line 554
     return-void
@@ -2085,14 +2085,14 @@
     :cond_0
     move-object v1, p2
 
-    check-cast v1, Ldefpackage/nwt;
+    check-cast v1, Lnwt;
 
     .line 557
-    .local v1, "nwtVar":Ldefpackage/nwt;
-    iput-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Ldefpackage/nwt;
+    .local v1, "nwtVar":Lnwt;
+    iput-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->f:Lnwt;
 
     .line 558
-    iget-object v2, v1, Ldefpackage/abx;->d:Landroid/os/Parcelable;
+    iget-object v2, v1, Labx;->d:Landroid/os/Parcelable;
 
     .line 559
     .local v2, "parcelable2":Landroid/os/Parcelable;
@@ -2114,7 +2114,7 @@
 
     .line 565
     .local v1, "absSavedState":Landroid/view/AbsSavedState;
-    invoke-virtual {p0}, Ldefpackage/nxf;->G()I
+    invoke-virtual {p0}, Lnxf;->G()I
 
     move-result v2
 
@@ -2162,13 +2162,13 @@
     if-ltz v7, :cond_2
 
     .line 572
-    new-instance v8, Ldefpackage/nwt;
+    new-instance v8, Lnwt;
 
-    invoke-direct {v8, v1}, Ldefpackage/nwt;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v8, v1}, Lnwt;-><init>(Landroid/os/Parcelable;)V
 
     .line 573
-    .local v8, "nwtVar":Ldefpackage/nwt;
-    invoke-virtual {p0}, Ldefpackage/nxf;->G()I
+    .local v8, "nwtVar":Lnwt;
+    invoke-virtual {p0}, Lnxf;->G()I
 
     move-result v9
 
@@ -2188,13 +2188,13 @@
     const/4 v9, 0x0
 
     :goto_1
-    iput-boolean v9, v8, Ldefpackage/nwt;->a:Z
+    iput-boolean v9, v8, Lnwt;->a:Z
 
     .line 574
-    iput v5, v8, Ldefpackage/nwt;->b:I
+    iput v5, v8, Lnwt;->b:I
 
     .line 575
-    invoke-static {v6}, Ldefpackage/gl;->g(Landroid/view/View;)I
+    invoke-static {v6}, Lgl;->g(Landroid/view/View;)I
 
     move-result v9
 
@@ -2211,7 +2211,7 @@
 
     .line 578
     :cond_1
-    iput-boolean v4, v8, Ldefpackage/nwt;->f:Z
+    iput-boolean v4, v8, Lnwt;->f:Z
 
     .line 579
     invoke-virtual {v6}, Landroid/view/View;->getHeight()I
@@ -2222,7 +2222,7 @@
 
     int-to-float v9, v9
 
-    iput v9, v8, Ldefpackage/nwt;->e:F
+    iput v9, v8, Lnwt;->e:F
 
     .line 580
     return-object v8
@@ -2230,7 +2230,7 @@
     .line 568
     .end local v6    # "childAt":Landroid/view/View;
     .end local v7    # "bottom":I
-    .end local v8    # "nwtVar":Ldefpackage/nwt;
+    .end local v8    # "nwtVar":Lnwt;
     :cond_2
     add-int/lit8 v5, v5, 0x1
 
@@ -2361,7 +2361,7 @@
     .locals 2
 
     .line 614
-    invoke-virtual {p0}, Ldefpackage/nxf;->G()I
+    invoke-virtual {p0}, Lnxf;->G()I
 
     move-result v0
 

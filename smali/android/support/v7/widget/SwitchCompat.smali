@@ -36,7 +36,7 @@
 
 .field private M:Landroid/text/method/TransformationMethod;
 
-.field private final N:Ldefpackage/nt;
+.field private final N:Lnt;
 
 .field private final O:Landroid/graphics/Rect;
 
@@ -94,11 +94,11 @@
     .locals 3
 
     .line 44
-    new-instance v0, Ldefpackage/rh;
+    new-instance v0, Lrh;
 
     const-class v1, Ljava/lang/Float;
 
-    invoke-direct {v0, v1}, Ldefpackage/rh;-><init>(Ljava/lang/Class;)V
+    invoke-direct {v0, v1}, Lrh;-><init>(Ljava/lang/Class;)V
 
     sput-object v0, Landroid/support/v7/widget/SwitchCompat;->e:Landroid/util/Property;
 
@@ -209,7 +209,7 @@
 
     move-result-object v0
 
-    invoke-static {v7, v0}, Ldefpackage/ri;->d(Landroid/view/View;Landroid/content/Context;)V
+    invoke-static {v7, v0}, Lri;->d(Landroid/view/View;Landroid/content/Context;)V
 
     .line 110
     const/4 v13, 0x1
@@ -242,15 +242,15 @@
     iput v0, v15, Landroid/text/TextPaint;->density:F
 
     .line 114
-    sget-object v2, Ldefpackage/jq;->u:[I
+    sget-object v2, Ljq;->u:[I
 
-    invoke-static {v8, v9, v2, v10}, Ldefpackage/rn;->q(Landroid/content/Context;Landroid/util/AttributeSet;[II)Ldefpackage/rn;
+    invoke-static {v8, v9, v2, v10}, Lrn;->q(Landroid/content/Context;Landroid/util/AttributeSet;[II)Lrn;
 
     move-result-object v6
 
     .line 115
-    .local v6, "q":Ldefpackage/rn;
-    iget-object v4, v6, Ldefpackage/rn;->b:Landroid/content/res/TypedArray;
+    .local v6, "q":Lrn;
+    iget-object v4, v6, Lrn;->b:Landroid/content/res/TypedArray;
 
     const/16 v16, 0x0
 
@@ -264,16 +264,16 @@
 
     move-object v11, v6
 
-    .end local v6    # "q":Ldefpackage/rn;
-    .local v11, "q":Ldefpackage/rn;
+    .end local v6    # "q":Lrn;
+    .local v11, "q":Lrn;
     move/from16 v6, v16
 
-    invoke-static/range {v0 .. v6}, Ldefpackage/gl;->E(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v0 .. v6}, Lgl;->E(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 116
     const/4 v0, 0x2
 
-    invoke-virtual {v11, v0}, Ldefpackage/rn;->h(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v11, v0}, Lrn;->h(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
@@ -291,7 +291,7 @@
     :cond_0
     const/16 v2, 0xb
 
-    invoke-virtual {v11, v2}, Ldefpackage/rn;->h(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v11, v2}, Lrn;->h(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
@@ -307,14 +307,14 @@
 
     .line 126
     :cond_1
-    invoke-virtual {v11, v12}, Ldefpackage/rn;->l(I)Ljava/lang/CharSequence;
+    invoke-virtual {v11, v12}, Lrn;->l(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
     iput-object v3, v7, Landroid/support/v7/widget/SwitchCompat;->a:Ljava/lang/CharSequence;
 
     .line 127
-    invoke-virtual {v11, v14}, Ldefpackage/rn;->l(I)Ljava/lang/CharSequence;
+    invoke-virtual {v11, v14}, Lrn;->l(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -323,7 +323,7 @@
     .line 128
     const/4 v3, 0x3
 
-    invoke-virtual {v11, v3, v14}, Ldefpackage/rn;->o(IZ)Z
+    invoke-virtual {v11, v3, v14}, Lrn;->o(IZ)Z
 
     move-result v4
 
@@ -332,7 +332,7 @@
     .line 129
     const/16 v4, 0x8
 
-    invoke-virtual {v11, v4, v12}, Ldefpackage/rn;->b(II)I
+    invoke-virtual {v11, v4, v12}, Lrn;->b(II)I
 
     move-result v4
 
@@ -341,7 +341,7 @@
     .line 130
     const/4 v4, 0x5
 
-    invoke-virtual {v11, v4, v12}, Ldefpackage/rn;->b(II)I
+    invoke-virtual {v11, v4, v12}, Lrn;->b(II)I
 
     move-result v4
 
@@ -350,7 +350,7 @@
     .line 131
     const/4 v4, 0x6
 
-    invoke-virtual {v11, v4, v12}, Ldefpackage/rn;->b(II)I
+    invoke-virtual {v11, v4, v12}, Lrn;->b(II)I
 
     move-result v4
 
@@ -359,7 +359,7 @@
     .line 132
     const/4 v4, 0x4
 
-    invoke-virtual {v11, v4, v12}, Ldefpackage/rn;->o(IZ)Z
+    invoke-virtual {v11, v4, v12}, Lrn;->o(IZ)Z
 
     move-result v4
 
@@ -368,7 +368,7 @@
     .line 133
     const/16 v4, 0x9
 
-    invoke-virtual {v11, v4}, Ldefpackage/rn;->g(I)Landroid/content/res/ColorStateList;
+    invoke-virtual {v11, v4}, Lrn;->g(I)Landroid/content/res/ColorStateList;
 
     move-result-object v4
 
@@ -388,13 +388,13 @@
 
     const/4 v6, -0x1
 
-    invoke-virtual {v11, v5, v6}, Ldefpackage/rn;->c(II)I
+    invoke-virtual {v11, v5, v6}, Lrn;->c(II)I
 
     move-result v5
 
     const/4 v0, 0x0
 
-    invoke-static {v5, v0}, Ldefpackage/oj;->a(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {v5, v0}, Loj;->a(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v5
 
@@ -494,7 +494,7 @@
     :cond_8
     const/16 v3, 0xc
 
-    invoke-virtual {v11, v3}, Ldefpackage/rn;->g(I)Landroid/content/res/ColorStateList;
+    invoke-virtual {v11, v3}, Lrn;->g(I)Landroid/content/res/ColorStateList;
 
     move-result-object v3
 
@@ -514,13 +514,13 @@
 
     const/4 v12, -0x1
 
-    invoke-virtual {v11, v6, v12}, Ldefpackage/rn;->c(II)I
+    invoke-virtual {v11, v6, v12}, Lrn;->c(II)I
 
     move-result v6
 
     const/4 v12, 0x0
 
-    invoke-static {v6, v12}, Ldefpackage/oj;->a(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {v6, v12}, Loj;->a(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v6
 
@@ -677,7 +677,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v11, v0, v1}, Ldefpackage/rn;->f(II)I
+    invoke-virtual {v11, v0, v1}, Lrn;->f(II)I
 
     move-result v0
 
@@ -686,17 +686,17 @@
     if-eqz v0, :cond_1b
 
     .line 183
-    sget-object v1, Ldefpackage/jq;->v:[I
+    sget-object v1, Ljq;->v:[I
 
-    invoke-static {v8, v0, v1}, Ldefpackage/rn;->j(Landroid/content/Context;I[I)Ldefpackage/rn;
+    invoke-static {v8, v0, v1}, Lrn;->j(Landroid/content/Context;I[I)Lrn;
 
     move-result-object v1
 
     .line 184
-    .local v1, "j":Ldefpackage/rn;
+    .local v1, "j":Lrn;
     const/4 v14, 0x3
 
-    invoke-virtual {v1, v14}, Ldefpackage/rn;->g(I)Landroid/content/res/ColorStateList;
+    invoke-virtual {v1, v14}, Lrn;->g(I)Landroid/content/res/ColorStateList;
 
     move-result-object v14
 
@@ -731,7 +731,7 @@
 
     .end local v2    # "h2":Landroid/graphics/drawable/Drawable;
     .local v20, "h2":Landroid/graphics/drawable/Drawable;
-    invoke-virtual {v1, v0, v0}, Ldefpackage/rn;->b(II)I
+    invoke-virtual {v1, v0, v0}, Lrn;->b(II)I
 
     move-result v2
 
@@ -769,7 +769,7 @@
 
     .end local v2    # "b":I
     .local v19, "b":I
-    invoke-virtual {v1, v2, v0}, Ldefpackage/rn;->c(II)I
+    invoke-virtual {v1, v2, v0}, Lrn;->c(II)I
 
     move-result v23
 
@@ -777,7 +777,7 @@
     .local v23, "c":I
     const/4 v2, 0x2
 
-    invoke-virtual {v1, v2, v0}, Ldefpackage/rn;->c(II)I
+    invoke-virtual {v1, v2, v0}, Lrn;->c(II)I
 
     move-result v0
 
@@ -965,20 +965,20 @@
     :goto_a
     const/16 v3, 0x11
 
-    invoke-virtual {v1, v3, v0}, Ldefpackage/rn;->o(IZ)Z
+    invoke-virtual {v1, v3, v0}, Lrn;->o(IZ)Z
 
     move-result v0
 
     if-eqz v0, :cond_1a
 
     .line 227
-    new-instance v0, Ldefpackage/ju;
+    new-instance v0, Lju;
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/CompoundButton;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    invoke-direct {v0, v3}, Ldefpackage/ju;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v3}, Lju;-><init>(Landroid/content/Context;)V
 
     iput-object v0, v7, Landroid/support/v7/widget/SwitchCompat;->M:Landroid/text/method/TransformationMethod;
 
@@ -992,12 +992,12 @@
 
     .line 231
     :goto_b
-    invoke-virtual {v1}, Ldefpackage/rn;->n()V
+    invoke-virtual {v1}, Lrn;->n()V
 
     goto :goto_c
 
     .line 182
-    .end local v1    # "j":Ldefpackage/rn;
+    .end local v1    # "j":Lrn;
     .end local v14    # "g3":Landroid/content/res/ColorStateList;
     .end local v16    # "f4":F
     .end local v17    # "f2":I
@@ -1030,19 +1030,19 @@
     .restart local v24    # "g2":Landroid/content/res/ColorStateList;
     .restart local v27    # "g":Landroid/content/res/ColorStateList;
     :goto_c
-    new-instance v0, Ldefpackage/nt;
+    new-instance v0, Lnt;
 
-    invoke-direct {v0, v7}, Ldefpackage/nt;-><init>(Landroid/widget/TextView;)V
+    invoke-direct {v0, v7}, Lnt;-><init>(Landroid/widget/TextView;)V
 
     .line 234
-    .local v0, "ntVar":Ldefpackage/nt;
-    iput-object v0, v7, Landroid/support/v7/widget/SwitchCompat;->N:Ldefpackage/nt;
+    .local v0, "ntVar":Lnt;
+    iput-object v0, v7, Landroid/support/v7/widget/SwitchCompat;->N:Lnt;
 
     .line 235
-    invoke-virtual {v0, v9, v10}, Ldefpackage/nt;->b(Landroid/util/AttributeSet;I)V
+    invoke-virtual {v0, v9, v10}, Lnt;->b(Landroid/util/AttributeSet;I)V
 
     .line 236
-    invoke-virtual {v11}, Ldefpackage/rn;->n()V
+    invoke-virtual {v11}, Lrn;->n()V
 
     .line 237
     invoke-static/range {p1 .. p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
@@ -1091,7 +1091,7 @@
     .locals 2
 
     .line 245
-    invoke-static {p0}, Ldefpackage/sd;->b(Landroid/view/View;)Z
+    invoke-static {p0}, Lsd;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -1150,14 +1150,14 @@
     .local v2, "drawable2":Landroid/graphics/drawable/Drawable;
     if-eqz v2, :cond_0
 
-    invoke-static {v2}, Ldefpackage/oj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
+    invoke-static {v2}, Loj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
 
     move-result-object v3
 
     goto :goto_0
 
     :cond_0
-    sget-object v3, Ldefpackage/oj;->a:Landroid/graphics/Rect;
+    sget-object v3, Loj;->a:Landroid/graphics/Rect;
 
     .line 255
     .local v3, "b":Landroid/graphics/Rect;
@@ -1313,7 +1313,7 @@
 
     .line 279
     :cond_0
-    invoke-static {p0, v0}, Ldefpackage/gl;->P(Landroid/view/View;Ljava/lang/CharSequence;)V
+    invoke-static {p0, v0}, Lgl;->P(Landroid/view/View;Ljava/lang/CharSequence;)V
 
     .line 280
     return-void
@@ -1342,7 +1342,7 @@
 
     .line 287
     :cond_0
-    invoke-static {p0, v0}, Ldefpackage/gl;->P(Landroid/view/View;Ljava/lang/CharSequence;)V
+    invoke-static {p0, v0}, Lgl;->P(Landroid/view/View;Ljava/lang/CharSequence;)V
 
     .line 288
     return-void
@@ -1460,14 +1460,14 @@
     .local v6, "drawable":Landroid/graphics/drawable/Drawable;
     if-eqz v6, :cond_0
 
-    invoke-static {v6}, Ldefpackage/oj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
+    invoke-static {v6}, Loj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
 
     move-result-object v7
 
     goto :goto_0
 
     :cond_0
-    sget-object v7, Ldefpackage/oj;->a:Landroid/graphics/Rect;
+    sget-object v7, Loj;->a:Landroid/graphics/Rect;
 
     .line 316
     .local v7, "b":Landroid/graphics/Rect;
@@ -1731,7 +1731,7 @@
     .locals 2
 
     .line 385
-    invoke-static {p0}, Ldefpackage/sd;->b(Landroid/view/View;)Z
+    invoke-static {p0}, Lsd;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -1783,7 +1783,7 @@
     .locals 2
 
     .line 394
-    invoke-static {p0}, Ldefpackage/sd;->b(Landroid/view/View;)Z
+    invoke-static {p0}, Lsd;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -1993,7 +1993,7 @@
 
     .line 449
     :cond_1
-    invoke-static {v8}, Ldefpackage/oj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
+    invoke-static {v8}, Loj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
 
     move-result-object v9
 
@@ -2258,7 +2258,7 @@
     :goto_0
     iget-object v3, p0, Landroid/support/v7/widget/SwitchCompat;->g:Landroid/graphics/drawable/Drawable;
 
-    invoke-static {v3}, Ldefpackage/oj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
+    invoke-static {v3}, Loj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
 
     move-result-object v3
 
@@ -2302,7 +2302,7 @@
     .line 518
     .restart local v4    # "i5":I
     :goto_1
-    invoke-static {p0}, Ldefpackage/sd;->b(Landroid/view/View;)Z
+    invoke-static {p0}, Lsd;->b(Landroid/view/View;)Z
 
     move-result v1
 
@@ -2668,7 +2668,7 @@
     if-eqz v10, :cond_5
 
     .line 592
-    invoke-static {v10}, Ldefpackage/oj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
+    invoke-static {v10}, Loj;->b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Rect;
 
     move-result-object v11
 
@@ -2876,7 +2876,7 @@
     .line 695
     .local v9, "f5":F
     :goto_0
-    invoke-static/range {p0 .. p0}, Ldefpackage/sd;->b(Landroid/view/View;)Z
+    invoke-static/range {p0 .. p0}, Lsd;->b(Landroid/view/View;)Z
 
     move-result v10
 
@@ -3107,7 +3107,7 @@
     .line 663
     .end local v9    # "z":Z
     :cond_a
-    invoke-static/range {p0 .. p0}, Ldefpackage/sd;->b(Landroid/view/View;)Z
+    invoke-static/range {p0 .. p0}, Lsd;->b(Landroid/view/View;)Z
 
     move-result v9
 
@@ -3411,7 +3411,7 @@
 
     if-eqz v1, :cond_3
 
-    invoke-static {p0}, Ldefpackage/gl;->V(Landroid/view/View;)Z
+    invoke-static {p0}, Lgl;->V(Landroid/view/View;)Z
 
     move-result v4
 

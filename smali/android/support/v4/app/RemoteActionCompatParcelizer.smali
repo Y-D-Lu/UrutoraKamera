@@ -13,25 +13,25 @@
     return-void
 .end method
 
-.method public static read(Ldefpackage/aks;)Landroid/support/v4/app/RemoteActionCompat;
+.method public static read(Laks;)Landroid/support/v4/app/RemoteActionCompat;
     .locals 1
-    .param p0, "aksVar"    # Ldefpackage/aks;
+    .param p0, "aksVar"    # Laks;
 
     .line 8
-    invoke-static {p0}, Landroidx/core/app/RemoteActionCompatParcelizer;->read(Ldefpackage/aks;)Landroid/support/v4/app/RemoteActionCompat;
+    invoke-static {p0}, Landroidx/core/app/RemoteActionCompatParcelizer;->read(Laks;)Landroid/support/v4/app/RemoteActionCompat;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static write(Landroid/support/v4/app/RemoteActionCompat;Ldefpackage/aks;)V
+.method public static write(Landroid/support/v4/app/RemoteActionCompat;Laks;)V
     .locals 0
     .param p0, "remoteActionCompat"    # Landroid/support/v4/app/RemoteActionCompat;
-    .param p1, "aksVar"    # Ldefpackage/aks;
+    .param p1, "aksVar"    # Laks;
 
     .line 12
-    invoke-static {p0, p1}, Landroidx/core/app/RemoteActionCompatParcelizer;->write(Landroid/support/v4/app/RemoteActionCompat;Ldefpackage/aks;)V
+    invoke-static {p0, p1}, Landroidx/core/app/RemoteActionCompatParcelizer;->write(Landroid/support/v4/app/RemoteActionCompat;Laks;)V
 
     .line 13
     return-void

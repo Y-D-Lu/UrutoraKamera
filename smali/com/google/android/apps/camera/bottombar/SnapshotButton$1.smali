@@ -1,5 +1,5 @@
 .class Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;
-.super Ldefpackage/jlj;
+.super Ljlj;
 .source ""
 
 
@@ -17,20 +17,20 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/bottombar/SnapshotButton;
 
-.field public final synthetic val$jkzVar:Ldefpackage/jkz;
+.field public final synthetic val$jkzVar:Ljkz;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/bottombar/SnapshotButton;Ldefpackage/jkz;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/bottombar/SnapshotButton;Ljkz;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/bottombar/SnapshotButton;
 
     .line 48
     iput-object p1, p0, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;->this$0:Lcom/google/android/apps/camera/bottombar/SnapshotButton;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;->val$jkzVar:Ldefpackage/jkz;
+    iput-object p2, p0, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;->val$jkzVar:Ljkz;
 
-    invoke-direct {p0}, Ldefpackage/jlj;-><init>()V
+    invoke-direct {p0}, Ljlj;-><init>()V
 
     return-void
 .end method
@@ -44,9 +44,9 @@
     .line 51
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;->this$0:Lcom/google/android/apps/camera/bottombar/SnapshotButton;
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;->val$jkzVar:Ldefpackage/jkz;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/SnapshotButton$1;->val$jkzVar:Ljkz;
 
-    invoke-virtual {v0, p1, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->runPressedStateAnimation(ZLdefpackage/jkz;)V
+    invoke-virtual {v0, p1, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->runPressedStateAnimation(ZLjkz;)V
 
     .line 52
     return-void

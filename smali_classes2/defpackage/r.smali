@@ -1,225 +1,119 @@
-.class public final Ldefpackage/r;
+.class public Ldefpackage/r;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Liho;
+
 
 # annotations
-.annotation runtime Ljava/lang/Deprecated;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lbng;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
 .end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/q;
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-.end field
+.field public final synthetic this$0:Lbng;
 
-.field public final b:Ldefpackage/q;
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-.end field
+.field public final synthetic val$ceaVar:Lcea;
+
+.field public final synthetic val$hycVar2:Lhyc;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/q;Ldefpackage/q;)V
-    .locals 5
-    .param p1, "qVar"    # Ldefpackage/q;
-    .param p2, "qVar2"    # Ldefpackage/q;
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+.method public constructor <init>(Lbng;Lcea;Lhyc;)V
+    .locals 0
+    .param p1, "this$0"    # Lbng;
 
-    .line 13
+    .line 236
+    iput-object p1, p0, Ldefpackage/r;->this$0:Lbng;
+
+    iput-object p2, p0, Ldefpackage/r;->val$ceaVar:Lcea;
+
+    iput-object p3, p0, Ldefpackage/r;->val$hycVar2:Lhyc;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    iget v0, p1, Ldefpackage/q;->b:I
-
-    iget v1, p2, Ldefpackage/q;->b:I
-
-    if-ne v0, v1, :cond_0
-
-    .line 15
-    iput-object p1, p0, Ldefpackage/r;->a:Ldefpackage/q;
-
-    .line 16
-    iput-object p2, p0, Ldefpackage/r;->b:Ldefpackage/q;
-
-    .line 17
     return-void
-
-    .line 19
-    :cond_0
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 20
-    .local v0, "valueOf":Ljava/lang/String;
-    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 21
-    .local v1, "valueOf2":Ljava/lang/String;
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
-
-    move-result v3
-
-    add-int/lit8 v3, v3, 0x37
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/String;->length()I
-
-    move-result v4
-
-    add-int/2addr v3, v4
-
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    .line 22
-    .local v2, "sb":Ljava/lang/StringBuilder;
-    const-string v3, "Ranges must have the same number of visible decimals: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 23
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 24
-    const-string v3, "~"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 25
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    new-instance v3, Ljava/lang/IllegalArgumentException;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-direct {v3, v4}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v3
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 6
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+.method public final run()V
+    .locals 5
 
-    .line 32
-    iget-object v0, p0, Ldefpackage/r;->a:Ldefpackage/q;
+    .line 239
+    iget-object v0, p0, Ldefpackage/r;->val$ceaVar:Lcea;
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 240
+    .local v0, "ceaVar2":Lcea;
+    iget-object v1, p0, Ldefpackage/r;->val$hycVar2:Lhyc;
 
-    move-result-object v0
+    .line 241
+    .local v1, "hycVar3":Lhyc;
+    new-instance v2, Lcom/google/android/apps/camera/jni/federatedphoto/ModeSuggestionClient;
 
-    .line 33
-    .local v0, "valueOf":Ljava/lang/String;
-    iget-object v1, p0, Ldefpackage/r;->b:Ldefpackage/q;
+    invoke-direct {v2}, Lcom/google/android/apps/camera/jni/federatedphoto/ModeSuggestionClient;-><init>()V
 
-    .line 34
-    .local v1, "qVar":Ldefpackage/q;
-    iget-object v2, p0, Ldefpackage/r;->a:Ldefpackage/q;
+    iput-object v2, v0, Lcea;->a:Lcom/google/android/apps/camera/jni/federatedphoto/ModeSuggestionClient;
 
-    if-ne v1, v2, :cond_0
+    .line 242
+    new-instance v2, Lcdj;
 
-    .line 35
-    const-string v2, ""
+    invoke-direct {v2}, Lcdj;-><init>()V
 
-    .local v2, "sb":Ljava/lang/String;
-    goto :goto_0
+    iput-object v2, v0, Lcea;->b:Lcdj;
 
-    .line 37
-    .end local v2    # "sb":Ljava/lang/String;
-    :cond_0
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 243
+    new-instance v2, Lcdi;
+
+    invoke-direct {v2}, Lcdi;-><init>()V
+
+    iput-object v2, v0, Lcea;->c:Lcdi;
+
+    .line 244
+    invoke-static {}, Liav;->a()Liau;
 
     move-result-object v2
 
-    .line 38
-    .local v2, "valueOf2":Ljava/lang/String;
-    new-instance v3, Ljava/lang/StringBuilder;
+    .line 245
+    .local v2, "a":Liau;
+    const-string v3, "BrellaSmartsProcessor"
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    iput-object v3, v2, Liau;->a:Ljava/lang/String;
 
-    move-result-object v4
+    .line 246
+    sget-object v3, Ljrl;->PHOTO:Ljrl;
 
-    invoke-virtual {v4}, Ljava/lang/String;->length()I
+    sget-object v4, Ljrl;->LONG_EXPOSURE:Ljrl;
 
-    move-result v4
+    invoke-static {v3, v4}, Lope;->I(Ljava/lang/Object;Ljava/lang/Object;)Lope;
 
-    add-int/lit8 v4, v4, 0x1
+    move-result-object v3
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-virtual {v2, v3}, Liau;->c(Lope;)V
 
-    .line 39
-    .local v3, "sb2":Ljava/lang/StringBuilder;
-    const-string v4, "~"
+    .line 247
+    sget-object v3, Llwd;->BACK:Llwd;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Lope;->H(Ljava/lang/Object;)Lope;
 
-    .line 40
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    .line 41
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Liau;->b(Lope;)V
 
-    move-result-object v4
+    .line 248
+    invoke-virtual {v2}, Liau;->a()Liav;
 
-    move-object v2, v4
+    move-result-object v3
 
-    .line 43
-    .end local v3    # "sb2":Ljava/lang/StringBuilder;
-    .local v2, "sb":Ljava/lang/String;
-    :goto_0
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0, v3}, Lhyc;->a(Liat;Liav;)V
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/String;->length()I
-
-    move-result v4
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    .line 44
-    .local v3, "sb3":Ljava/lang/StringBuilder;
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 45
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    return-object v4
+    .line 249
+    return-void
 .end method

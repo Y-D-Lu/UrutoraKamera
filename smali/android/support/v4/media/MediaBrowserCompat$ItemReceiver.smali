@@ -1,5 +1,5 @@
 .class Landroid/support/v4/media/MediaBrowserCompat$ItemReceiver;
-.super Ldefpackage/fa;
+.super Lfa;
 .source ""
 
 
@@ -9,7 +9,7 @@
     .param p1, "parcel"    # Landroid/os/Parcel;
 
     .line 10
-    invoke-direct {p0, p1}, Ldefpackage/fa;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {p0, p1}, Lfa;-><init>(Landroid/os/Parcel;)V
 
     .line 11
     return-void

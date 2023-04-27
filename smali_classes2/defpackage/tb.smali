@@ -1,30 +1,86 @@
-.class public final Ldefpackage/tb;
-.super Ldefpackage/sx;
+.class public Ldefpackage/Tb;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfky;->b(Liay;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final a:Lfky;
+
+.field public final synthetic this$0:Lfky;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lfky;)V
     .locals 0
+    .param p1, "this$0"    # Lfky;
 
-    .line 7
-    invoke-direct {p0}, Ldefpackage/sx;-><init>()V
+    .line 46
+    iput-object p1, p0, Ldefpackage/Tb;->this$0:Lfky;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 47
+    iput-object p1, p0, Ldefpackage/Tb;->a:Lfky;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final q(Landroid/graphics/Rect;)V
-    .locals 0
-    .param p1, "rect"    # Landroid/graphics/Rect;
+.method public final run()V
+    .locals 2
 
-    .line 10
-    invoke-virtual {p0, p1}, Ldefpackage/sx;->k(Landroid/graphics/Rect;)V
+    .line 51
+    const/4 v0, -0x1
 
-    .line 11
-    invoke-static {p1, p1}, Ldefpackage/gi;->e(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+    packed-switch v0, :pswitch_data_0
 
-    .line 12
+    .line 58
+    iget-object v0, p0, Ldefpackage/Tb;->a:Lfky;
+
+    iget-object v0, v0, Lfky;->b:Lfvv;
+
+    sget-object v1, Ljrl;->LONG_EXPOSURE:Ljrl;
+
+    invoke-interface {v0, v1}, Lfvv;->b(Ljrl;)Z
+
+    .line 59
     return-void
+
+    .line 53
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Tb;->a:Lfky;
+
+    .line 54
+    .local v0, "fkyVar":Lfky;
+    const/4 v1, 0x1
+
+    iput-boolean v1, v0, Lfky;->f:Z
+
+    .line 55
+    invoke-virtual {v0}, Lfky;->c()V
+
+    .line 56
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -20,20 +20,20 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
-.field public final synthetic val$hwhVar:Ldefpackage/hwh;
+.field public final synthetic val$hwhVar:Lhwh;
 
 .field public final synthetic val$str:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Ldefpackage/hwh;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Lhwh;Ljava/lang/String;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
     .line 109
     iput-object p1, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;->this$0:Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;->val$hwhVar:Ldefpackage/hwh;
+    iput-object p2, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;->val$hwhVar:Lhwh;
 
     iput-object p3, p0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;->val$str:Ljava/lang/String;
 
@@ -54,10 +54,10 @@
 
     .line 113
     .local v2, "service":Landroid/app/PendingIntent;
-    iget-object v3, v1, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;->val$hwhVar:Ldefpackage/hwh;
+    iget-object v3, v1, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;->val$hwhVar:Lhwh;
 
     .line 114
-    .local v3, "hwhVar2":Ldefpackage/hwh;
+    .local v3, "hwhVar2":Lhwh;
     iget-object v4, v1, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;->val$str:Ljava/lang/String;
 
     .line 115
@@ -84,7 +84,7 @@
     .line 122
     .local v8, "sessionParams":Landroid/content/pm/PackageInstaller$SessionParams;
     :try_start_1
-    iget-object v0, v3, Ldefpackage/hwh;->i:Landroid/content/pm/PackageInstaller;
+    iget-object v0, v3, Lhwh;->i:Landroid/content/pm/PackageInstaller;
 
     invoke-virtual {v0, v8}, Landroid/content/pm/PackageInstaller;->createSession(Landroid/content/pm/PackageInstaller$SessionParams;)I
 
@@ -120,7 +120,7 @@
 
     .line 126
     .local v9, "openWrite":Ljava/io/OutputStream;
-    iget-object v0, v3, Ldefpackage/hwh;->b:Landroid/content/Context;
+    iget-object v0, v3, Lhwh;->b:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/hwh;->d(Ljava/io/InputStream;)Ljava/io/InputStream;
+    invoke-static {v0}, Lhwh;->d(Ljava/io/InputStream;)Ljava/io/InputStream;
 
     move-result-object v0
     :try_end_2
@@ -162,7 +162,7 @@
     :try_start_4
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v11, v3, Ldefpackage/hwh;->b:Landroid/content/Context;
+    iget-object v11, v3, Lhwh;->b:Landroid/content/Context;
 
     const-class v12, Lcom/google/android/apps/camera/sideline/SidelineInstallerService;
 
@@ -175,13 +175,13 @@
     invoke-virtual {v0, v11}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 137
-    iget-object v11, v3, Ldefpackage/hwh;->b:Landroid/content/Context;
+    iget-object v11, v3, Lhwh;->b:Landroid/content/Context;
 
     .line 138
     .local v11, "context":Landroid/content/Context;
     const-string v12, "Cannot set any dangerous parts of intent to be mutable."
 
-    invoke-static {v7, v12}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v7, v12}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 139
     invoke-virtual {v0}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
@@ -200,10 +200,10 @@
     :goto_0
     const-string v14, "Must set component on Intent."
 
-    invoke-static {v12, v14}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v12, v14}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 140
-    invoke-static {v7, v7}, Ldefpackage/nhu;->a(II)Z
+    invoke-static {v7, v7}, Lnhu;->a(II)Z
 
     move-result v12
 
@@ -214,7 +214,7 @@
     if-eqz v12, :cond_3
 
     .line 141
-    invoke-static {v13, v14}, Ldefpackage/nhu;->a(II)Z
+    invoke-static {v13, v14}, Lnhu;->a(II)Z
 
     move-result v12
 
@@ -230,19 +230,19 @@
     :goto_1
     const-string v7, "Cannot set mutability flags if PendingIntent.FLAG_IMMUTABLE is set."
 
-    invoke-static {v12, v7}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v12, v7}, Lobr;->aG(ZLjava/lang/Object;)V
 
     goto :goto_2
 
     .line 143
     :cond_3
-    invoke-static {v13, v14}, Ldefpackage/nhu;->a(II)Z
+    invoke-static {v13, v14}, Lnhu;->a(II)Z
 
     move-result v7
 
     const-string v12, "Must set PendingIntent.FLAG_IMMUTABLE for SDK >= 23 if no parts of intent are mutable."
 
-    invoke-static {v7, v12}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v7, v12}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 145
     :goto_2
@@ -252,7 +252,7 @@
 
     .line 146
     .local v7, "intent3":Landroid/content/Intent;
-    invoke-static {v13, v14}, Ldefpackage/nhu;->a(II)Z
+    invoke-static {v13, v14}, Lnhu;->a(II)Z
 
     move-result v12
 
@@ -282,7 +282,7 @@
 
     const/4 v14, 0x1
 
-    invoke-static {v14, v12}, Ldefpackage/nhu;->a(II)Z
+    invoke-static {v14, v12}, Lnhu;->a(II)Z
 
     move-result v12
     :try_end_4
@@ -308,7 +308,7 @@
 
     const/4 v13, 0x1
 
-    invoke-static {v13, v12}, Ldefpackage/nhu;->a(II)Z
+    invoke-static {v13, v12}, Lnhu;->a(II)Z
 
     move-result v12
 
@@ -329,7 +329,7 @@
 
     const/4 v13, 0x1
 
-    invoke-static {v13, v12}, Ldefpackage/nhu;->a(II)Z
+    invoke-static {v13, v12}, Lnhu;->a(II)Z
 
     move-result v12
 
@@ -354,7 +354,7 @@
 
     const/4 v13, 0x1
 
-    invoke-static {v13, v12}, Ldefpackage/nhu;->a(II)Z
+    invoke-static {v13, v12}, Lnhu;->a(II)Z
 
     move-result v12
 
@@ -367,7 +367,7 @@
     if-nez v12, :cond_8
 
     .line 160
-    sget-object v12, Ldefpackage/nhu;->a:Landroid/content/ClipData;
+    sget-object v12, Lnhu;->a:Landroid/content/ClipData;
 
     invoke-virtual {v7, v12}, Landroid/content/Intent;->setClipData(Landroid/content/ClipData;)V
 
@@ -433,15 +433,15 @@
     .line 173
     .local v7, "th":Ljava/lang/Throwable;
     :try_start_7
-    sget-object v11, Ldefpackage/hwh;->a:Ldefpackage/ouj;
+    sget-object v11, Lhwh;->a:Louj;
 
-    invoke-virtual {v11}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v11}, Loue;->b()Lova;
 
     move-result-object v11
 
     check-cast v11, Loug;
 
-    invoke-interface {v11, v7}, Ldefpackage/ova;->h(Ljava/lang/Throwable;)Ldefpackage/ova;
+    invoke-interface {v11, v7}, Lova;->h(Ljava/lang/Throwable;)Lova;
 
     move-result-object v11
 
@@ -449,7 +449,7 @@
 
     const/16 v12, 0xa7c
 
-    invoke-interface {v11, v12}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v11, v12}, Lova;->G(I)Lova;
 
     move-result-object v11
 
@@ -457,7 +457,7 @@
 
     const-string v12, "Exception when trying to install HAL at anchor %d"
 
-    invoke-interface {v11, v12, v5}, Ldefpackage/ova;->p(Ljava/lang/String;I)V
+    invoke-interface {v11, v12, v5}, Lova;->p(Ljava/lang/String;I)V
 
     .line 174
     invoke-virtual {v7}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
@@ -491,24 +491,24 @@
 
     .line 180
     :cond_9
-    iget-object v14, v3, Ldefpackage/hwh;->c:Ldefpackage/dei;
+    iget-object v14, v3, Lhwh;->c:Ldei;
 
     move-object/from16 v16, v0
 
     .end local v0    # "th2":Ljava/lang/Throwable;
     .local v16, "th2":Ljava/lang/Throwable;
-    sget-object v0, Ldefpackage/dei;->DOGFOOD:Ldefpackage/dei;
+    sget-object v0, Ldei;->DOGFOOD:Ldei;
 
-    invoke-virtual {v14, v0}, Ldefpackage/dei;->b(Ldefpackage/dei;)Z
+    invoke-virtual {v14, v0}, Ldei;->b(Ldei;)Z
 
     move-result v0
 
     if-eqz v0, :cond_a
 
     .line 181
-    iget-object v0, v3, Ldefpackage/hwh;->j:Ldefpackage/hwl;
+    iget-object v0, v3, Lhwh;->j:Lhwl;
 
-    invoke-virtual {v0}, Ldefpackage/hwl;->b()V
+    invoke-virtual {v0}, Lhwl;->b()V
 
     .line 183
     :cond_a
@@ -531,7 +531,7 @@
     .line 188
     :cond_c
     :goto_4
-    iget-object v0, v3, Ldefpackage/hwh;->s:Ldefpackage/pih;
+    iget-object v0, v3, Lhwh;->s:Lpih;
 
     const/4 v14, 0x1
 
@@ -539,16 +539,16 @@
 
     move-result-object v14
 
-    invoke-virtual {v0, v14}, Ldefpackage/pih;->o(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v14}, Lpih;->o(Ljava/lang/Object;)Z
 
     .line 189
-    iget-object v0, v3, Ldefpackage/hwh;->m:Ldefpackage/hwn;
+    iget-object v0, v3, Lhwh;->m:Lhwn;
 
     mul-int/lit8 v14, v6, 0x64
 
     add-int/2addr v14, v5
 
-    invoke-virtual {v0, v14, v13}, Ldefpackage/hwn;->b(II)V
+    invoke-virtual {v0, v14, v13}, Lhwn;->b(II)V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
@@ -593,7 +593,7 @@
     nop
 
     .end local v2    # "service":Landroid/app/PendingIntent;
-    .end local v3    # "hwhVar2":Ldefpackage/hwh;
+    .end local v3    # "hwhVar2":Lhwh;
     .end local v4    # "str2":Ljava/lang/String;
     .end local v5    # "i3":I
     .end local v6    # "i4":I
@@ -610,7 +610,7 @@
     .end local v9    # "openWrite":Ljava/io/OutputStream;
     .end local v10    # "d":Ljava/io/InputStream;
     .restart local v2    # "service":Landroid/app/PendingIntent;
-    .restart local v3    # "hwhVar2":Ldefpackage/hwh;
+    .restart local v3    # "hwhVar2":Lhwh;
     .restart local v4    # "str2":Ljava/lang/String;
     .restart local v5    # "i3":I
     .restart local v6    # "i4":I

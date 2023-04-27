@@ -18,11 +18,11 @@
 
 .field public g:Lcom/google/android/apps/camera/evcomp/EvCompSlider;
 
-.field public h:Ldefpackage/dmf;
+.field public h:Ldmf;
 
-.field public i:Ldefpackage/dmf;
+.field public i:Ldmf;
 
-.field public j:Ldefpackage/jrz;
+.field public j:Ljrz;
 
 .field public k:F
 
@@ -67,18 +67,18 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 60
-    new-instance v0, Ldefpackage/lce;
+    new-instance v0, Llce;
 
-    sget-object v1, Ldefpackage/dme;->SINGLE:Ldefpackage/dme;
+    sget-object v1, Ldme;->SINGLE:Ldme;
 
-    invoke-direct {v0, v1}, Ldefpackage/lce;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, v1}, Llce;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->b:Llda;
 
     .line 61
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ljrz;
 
     .line 62
     const-string v0, "accessibility"
@@ -144,7 +144,7 @@
     iput v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->q:I
 
     .line 67
-    sget-object v2, Ldefpackage/dmg;->BRIGHTNESS:Ldefpackage/dmg;
+    sget-object v2, Ldmg;->BRIGHTNESS:Ldmg;
 
     sget v0, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
 
@@ -162,14 +162,14 @@
 
     move v3, v0
 
-    invoke-virtual/range {v1 .. v8}, Lcom/google/android/apps/camera/evcomp/EvCompView;->c(Ldefpackage/dmg;FFIIII)Ldefpackage/dmf;
+    invoke-virtual/range {v1 .. v8}, Lcom/google/android/apps/camera/evcomp/EvCompView;->c(Ldmg;FFIIII)Ldmf;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->h:Ldefpackage/dmf;
+    iput-object v1, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->h:Ldmf;
 
     .line 68
-    sget-object v4, Ldefpackage/dmg;->SHADOW:Ldefpackage/dmg;
+    sget-object v4, Ldmg;->SHADOW:Ldmg;
 
     const/high16 v6, 0x3f800000    # 1.0f
 
@@ -185,11 +185,11 @@
 
     move v5, v0
 
-    invoke-virtual/range {v3 .. v10}, Lcom/google/android/apps/camera/evcomp/EvCompView;->c(Ldefpackage/dmg;FFIIII)Ldefpackage/dmf;
+    invoke-virtual/range {v3 .. v10}, Lcom/google/android/apps/camera/evcomp/EvCompView;->c(Ldmg;FFIIII)Ldmf;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->i:Ldefpackage/dmf;
+    iput-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->i:Ldmf;
 
     .line 69
     return-void
@@ -229,17 +229,17 @@
     return-object v0
 .end method
 
-.method private final m(ILdefpackage/dmf;)F
+.method private final m(ILdmf;)F
     .locals 6
     .param p1, "i"    # I
-    .param p2, "dmfVar"    # Ldefpackage/dmf;
+    .param p2, "dmfVar"    # Ldmf;
 
     .line 76
-    iget v0, p2, Ldefpackage/dmf;->d:F
+    iget v0, p2, Ldmf;->d:F
 
     .line 77
     .local v0, "f":F
-    iget v1, p2, Ldefpackage/dmf;->e:F
+    iget v1, p2, Ldmf;->e:F
 
     .line 78
     .local v1, "f2":F
@@ -263,7 +263,7 @@
 
     add-float/2addr v3, v4
 
-    iget v4, p2, Ldefpackage/dmf;->e:F
+    iget v4, p2, Ldmf;->e:F
 
     invoke-virtual {p0}, Lcom/google/android/apps/camera/evcomp/EvCompView;->a()I
 
@@ -390,21 +390,21 @@
     .locals 7
 
     .line 95
-    sget-object v0, Ldefpackage/dme;->SINGLE:Ldefpackage/dme;
+    sget-object v0, Ldme;->SINGLE:Ldme;
 
     .line 96
-    .local v0, "dmeVar":Ldefpackage/dme;
+    .local v0, "dmeVar":Ldme;
     const/4 v1, 0x0
 
     .line 97
     .local v1, "i":I
     iget-object v2, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->b:Llda;
 
-    check-cast v2, Ldefpackage/lce;
+    check-cast v2, Llce;
 
-    iget-object v2, v2, Ldefpackage/lce;->d:Ljava/lang/Object;
+    iget-object v2, v2, Llce;->d:Ljava/lang/Object;
 
-    check-cast v2, Ldefpackage/dme;
+    check-cast v2, Ldme;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -461,13 +461,13 @@
     .line 110
     iget-object v3, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->b:Llda;
 
-    check-cast v3, Ldefpackage/lce;
+    check-cast v3, Llce;
 
-    iget-object v3, v3, Ldefpackage/lce;->d:Ljava/lang/Object;
+    iget-object v3, v3, Llce;->d:Ljava/lang/Object;
 
-    check-cast v3, Ldefpackage/dme;
+    check-cast v3, Ldme;
 
-    sget-object v4, Ldefpackage/dme;->DUAL_INDEPENDENT:Ldefpackage/dme;
+    sget-object v4, Ldme;->DUAL_INDEPENDENT:Ldme;
 
     invoke-virtual {v3, v4}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -579,9 +579,9 @@
     .end packed-switch
 .end method
 
-.method public final c(Ldefpackage/dmg;FFIIII)Ldefpackage/dmf;
+.method public final c(Ldmg;FFIIII)Ldmf;
     .locals 6
-    .param p1, "dmgVar"    # Ldefpackage/dmg;
+    .param p1, "dmgVar"    # Ldmg;
     .param p2, "f"    # F
     .param p3, "f2"    # F
     .param p4, "i"    # I
@@ -590,16 +590,16 @@
     .param p7, "i4"    # I
 
     .line 121
-    new-instance v0, Ldefpackage/dmf;
+    new-instance v0, Ldmf;
 
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Ldefpackage/dmf;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Ldmf;-><init>(Landroid/content/Context;)V
 
     .line 122
-    .local v0, "dmfVar":Ldefpackage/dmf;
+    .local v0, "dmfVar":Ldmf;
     new-instance v1, Landroid/graphics/drawable/InsetDrawable;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getResources()Landroid/content/res/Resources;
@@ -612,9 +612,9 @@
 
     move-result-object v2
 
-    iget v4, v0, Ldefpackage/dmf;->b:I
+    iget v4, v0, Ldmf;->b:I
 
-    iget v5, v0, Ldefpackage/dmf;->a:I
+    iget v5, v0, Ldmf;->a:I
 
     sub-int/2addr v4, v5
 
@@ -681,10 +681,10 @@
     if-gtz v1, :cond_0
 
     .line 131
-    iput p2, v0, Ldefpackage/dmf;->e:F
+    iput p2, v0, Ldmf;->e:F
 
     .line 132
-    iput p3, v0, Ldefpackage/dmf;->d:F
+    iput p3, v0, Ldmf;->d:F
 
     .line 133
     invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
@@ -706,10 +706,10 @@
 
     .line 136
     :cond_0
-    iput p3, v0, Ldefpackage/dmf;->e:F
+    iput p3, v0, Ldmf;->e:F
 
     .line 137
-    iput p3, v0, Ldefpackage/dmf;->d:F
+    iput p3, v0, Ldmf;->d:F
 
     .line 138
     invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
@@ -749,9 +749,9 @@
     return-object v0
 .end method
 
-.method public final e(Ldefpackage/dmf;F)V
+.method public final e(Ldmf;F)V
     .locals 6
-    .param p1, "dmfVar"    # Ldefpackage/dmf;
+    .param p1, "dmfVar"    # Ldmf;
     .param p2, "f"    # F
 
     .line 146
@@ -799,11 +799,11 @@
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 151
-    iget v1, p1, Ldefpackage/dmf;->e:F
+    iget v1, p1, Ldmf;->e:F
 
     .line 152
     .local v1, "f2":F
-    iget v2, p1, Ldefpackage/dmf;->d:F
+    iget v2, p1, Ldmf;->d:F
 
     .line 153
     .local v2, "f3":F
@@ -878,7 +878,7 @@
     iput v3, v0, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
 
     .line 163
-    invoke-virtual {p1, p2}, Ldefpackage/dmf;->a(F)V
+    invoke-virtual {p1, p2}, Ldmf;->a(F)V
 
     .line 164
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
@@ -926,9 +926,9 @@
     throw v3
 .end method
 
-.method public final f(Ldefpackage/jrz;)V
+.method public final f(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 168
     iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->a:Ljava/util/ArrayList;
@@ -944,27 +944,27 @@
 
     .line 171
     :cond_0
-    invoke-static {p0, p1}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, p1}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 172
     iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->d:Landroid/widget/CheckBox;
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 173
     iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->e:Landroid/widget/ImageButton;
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 174
-    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->h:Ldefpackage/dmf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->h:Ldmf;
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 175
-    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->i:Ldefpackage/dmf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->i:Ldmf;
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 176
     return-void
@@ -988,9 +988,9 @@
     if-ltz v0, :cond_0
 
     .line 180
-    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->h:Ldefpackage/dmf;
+    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->h:Ldmf;
 
-    invoke-virtual {p0, v0, p1}, Lcom/google/android/apps/camera/evcomp/EvCompView;->e(Ldefpackage/dmf;F)V
+    invoke-virtual {p0, v0, p1}, Lcom/google/android/apps/camera/evcomp/EvCompView;->e(Ldmf;F)V
 
     .line 181
     return-void
@@ -1036,13 +1036,13 @@
 
     iget-object v1, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->b:Llda;
 
-    check-cast v1, Ldefpackage/lce;
+    check-cast v1, Llce;
 
-    iget-object v1, v1, Ldefpackage/lce;->d:Ljava/lang/Object;
+    iget-object v1, v1, Llce;->d:Ljava/lang/Object;
 
-    check-cast v1, Ldefpackage/dme;
+    check-cast v1, Ldme;
 
-    sget-object v2, Ldefpackage/dme;->SINGLE:Ldefpackage/dme;
+    sget-object v2, Ldme;->SINGLE:Ldme;
 
     invoke-virtual {v1, v2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1162,17 +1162,17 @@
 
     .line 199
     .local v1, "dimensionPixelSize":I
-    sget-object v2, Ldefpackage/dme;->SINGLE:Ldefpackage/dme;
+    sget-object v2, Ldme;->SINGLE:Ldme;
 
     .line 200
-    .local v2, "dmeVar":Ldefpackage/dme;
+    .local v2, "dmeVar":Ldme;
     iget-object v3, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->b:Llda;
 
-    check-cast v3, Ldefpackage/lce;
+    check-cast v3, Llce;
 
-    iget-object v3, v3, Ldefpackage/lce;->d:Ljava/lang/Object;
+    iget-object v3, v3, Llce;->d:Ljava/lang/Object;
 
-    check-cast v3, Ldefpackage/dme;
+    check-cast v3, Ldme;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -1288,17 +1288,17 @@
 
     .line 217
     .local v1, "dimensionPixelSize":I
-    sget-object v2, Ldefpackage/dme;->SINGLE:Ldefpackage/dme;
+    sget-object v2, Ldme;->SINGLE:Ldme;
 
     .line 218
-    .local v2, "dmeVar":Ldefpackage/dme;
+    .local v2, "dmeVar":Ldme;
     iget-object v3, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->b:Llda;
 
-    check-cast v3, Ldefpackage/lce;
+    check-cast v3, Llce;
 
-    iget-object v3, v3, Ldefpackage/lce;->d:Ljava/lang/Object;
+    iget-object v3, v3, Llce;->d:Ljava/lang/Object;
 
-    check-cast v3, Ldefpackage/dme;
+    check-cast v3, Ldme;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -1449,13 +1449,13 @@
     .local v6, "layoutParams2":Landroid/widget/FrameLayout$LayoutParams;
     iget-object v7, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->b:Llda;
 
-    check-cast v7, Ldefpackage/lce;
+    check-cast v7, Llce;
 
-    iget-object v7, v7, Ldefpackage/lce;->d:Ljava/lang/Object;
+    iget-object v7, v7, Llce;->d:Ljava/lang/Object;
 
-    check-cast v7, Ldefpackage/dme;
+    check-cast v7, Ldme;
 
-    sget-object v8, Ldefpackage/dme;->DUAL_INDEPENDENT:Ldefpackage/dme;
+    sget-object v8, Ldme;->DUAL_INDEPENDENT:Ldme;
 
     invoke-virtual {v7, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1494,7 +1494,7 @@
 
     move-result v10
 
-    invoke-static {v10, v12}, Ldefpackage/ek;->d(II)I
+    invoke-static {v10, v12}, Lek;->d(II)I
 
     move-result v10
 
@@ -1508,7 +1508,7 @@
 
     move-result v11
 
-    invoke-static {v11, v12}, Ldefpackage/ek;->d(II)I
+    invoke-static {v11, v12}, Lek;->d(II)I
 
     move-result v11
 
@@ -1541,7 +1541,7 @@
 
     const/16 v11, 0xdb
 
-    invoke-static {v8, v11}, Ldefpackage/ek;->d(II)I
+    invoke-static {v8, v11}, Lek;->d(II)I
 
     move-result v8
 
@@ -1555,7 +1555,7 @@
 
     move-result v12
 
-    invoke-static {v12, v11}, Ldefpackage/ek;->d(II)I
+    invoke-static {v12, v11}, Lek;->d(II)I
 
     move-result v11
 
@@ -1625,7 +1625,7 @@
 
     const/16 v10, 0xdb
 
-    invoke-static {v9, v10}, Ldefpackage/ek;->d(II)I
+    invoke-static {v9, v10}, Lek;->d(II)I
 
     move-result v9
 
@@ -1639,7 +1639,7 @@
 
     move-result v11
 
-    invoke-static {v11, v10}, Ldefpackage/ek;->d(II)I
+    invoke-static {v11, v10}, Lek;->d(II)I
 
     move-result v10
 
@@ -1710,10 +1710,10 @@
     .local v3, "fArr":[F
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/dmf;
+    check-cast v4, Ldmf;
 
     .line 271
-    .local v4, "dmfVar":Ldefpackage/dmf;
+    .local v4, "dmfVar":Ldmf;
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v5
@@ -1721,9 +1721,9 @@
     if-nez v5, :cond_1
 
     .line 272
-    iget-object v2, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ldefpackage/jrz;
+    iget-object v2, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ljrz;
 
-    invoke-static {v2}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v2}, Ljrz;->b(Ljrz;)Z
 
     move-result v2
 
@@ -1764,9 +1764,9 @@
 
     .line 275
     .local v2, "layoutParams2":Landroid/widget/FrameLayout$LayoutParams;
-    iget-object v5, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ldefpackage/jrz;
+    iget-object v5, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ljrz;
 
-    invoke-static {v5}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v5}, Ljrz;->b(Ljrz;)Z
 
     move-result v5
 
@@ -1786,9 +1786,9 @@
     .line 276
     .local v5, "rawY":F
     :goto_1
-    iget-object v7, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ldefpackage/jrz;
+    iget-object v7, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ljrz;
 
-    sget-object v8, Ldefpackage/jrz;->REVERSE_LANDSCAPE:Ldefpackage/jrz;
+    sget-object v8, Ljrz;->REVERSE_LANDSCAPE:Ljrz;
 
     invoke-virtual {v7, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1822,9 +1822,9 @@
     :goto_2
     float-to-int v7, v7
 
-    iget v8, v4, Ldefpackage/dmf;->e:F
+    iget v8, v4, Ldmf;->e:F
 
-    iget v9, v4, Ldefpackage/dmf;->d:F
+    iget v9, v4, Ldmf;->d:F
 
     invoke-direct {v0, v7, v8, v9}, Lcom/google/android/apps/camera/evcomp/EvCompView;->n(IFF)I
 
@@ -1843,13 +1843,13 @@
     .line 279
     iget-object v9, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->b:Llda;
 
-    check-cast v9, Ldefpackage/lce;
+    check-cast v9, Llce;
 
-    iget-object v9, v9, Ldefpackage/lce;->d:Ljava/lang/Object;
+    iget-object v9, v9, Llce;->d:Ljava/lang/Object;
 
-    check-cast v9, Ldefpackage/dme;
+    check-cast v9, Ldme;
 
-    sget-object v10, Ldefpackage/dme;->DUAL_INDEPENDENT:Ldefpackage/dme;
+    sget-object v10, Ldme;->DUAL_INDEPENDENT:Ldme;
 
     invoke-virtual {v9, v10}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1858,15 +1858,15 @@
     if-eqz v9, :cond_4
 
     .line 280
-    sget-object v9, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v9, Loih;->a:Loih;
 
     move/from16 v18, v8
 
-    .local v9, "ojcVar":Ldefpackage/ojc;
+    .local v9, "ojcVar":Lojc;
     goto/16 :goto_6
 
     .line 281
-    .end local v9    # "ojcVar":Ldefpackage/ojc;
+    .end local v9    # "ojcVar":Lojc;
     :cond_4
     iget-object v9, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->a:Ljava/util/ArrayList;
 
@@ -1877,15 +1877,15 @@
     if-gt v9, v6, :cond_5
 
     .line 282
-    sget-object v9, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v9, Loih;->a:Loih;
 
     move/from16 v18, v8
 
-    .restart local v9    # "ojcVar":Ldefpackage/ojc;
+    .restart local v9    # "ojcVar":Lojc;
     goto/16 :goto_6
 
     .line 284
-    .end local v9    # "ojcVar":Ldefpackage/ojc;
+    .end local v9    # "ojcVar":Lojc;
     :cond_5
     invoke-virtual {v4}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1895,10 +1895,10 @@
 
     .line 285
     .local v9, "layoutParams3":Landroid/widget/FrameLayout$LayoutParams;
-    sget-object v10, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v10, Loih;->a:Loih;
 
     .line 286
-    .local v10, "ojcVar2":Ldefpackage/ojc;
+    .local v10, "ojcVar2":Lojc;
     iget-object v11, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->a:Ljava/util/ArrayList;
 
     .line 287
@@ -1921,10 +1921,10 @@
 
     move-result-object v14
 
-    check-cast v14, Ldefpackage/dmf;
+    check-cast v14, Ldmf;
 
     .line 291
-    .local v14, "dmfVar2":Ldefpackage/dmf;
+    .local v14, "dmfVar2":Ldmf;
     invoke-virtual {v14, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v15
@@ -1967,13 +1967,13 @@
 
     add-int/2addr v6, v8
 
-    iget v11, v14, Ldefpackage/dmf;->e:F
+    iget v11, v14, Ldmf;->e:F
 
     move/from16 v18, v8
 
     .end local v8    # "i":I
     .local v18, "i":I
-    iget v8, v14, Ldefpackage/dmf;->d:F
+    iget v8, v14, Ldmf;->d:F
 
     invoke-direct {v0, v6, v11, v8}, Lcom/google/android/apps/camera/evcomp/EvCompView;->n(IFF)I
 
@@ -1988,7 +1988,7 @@
 
     move-result-object v8
 
-    invoke-static {v8}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v8}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v10
 
@@ -2034,7 +2034,7 @@
     move-object/from16 v9, v16
 
     .line 304
-    .end local v14    # "dmfVar2":Ldefpackage/dmf;
+    .end local v14    # "dmfVar2":Ldmf;
     move-object/from16 v11, v17
 
     move/from16 v8, v18
@@ -2063,11 +2063,11 @@
     move-object v9, v6
 
     .line 307
-    .end local v10    # "ojcVar2":Ldefpackage/ojc;
+    .end local v10    # "ojcVar2":Lojc;
     .end local v12    # "size":I
     .end local v13    # "i2":I
     .end local v17    # "arrayList":Ljava/util/ArrayList;
-    .local v9, "ojcVar":Ldefpackage/ojc;
+    .local v9, "ojcVar":Lojc;
     :goto_6
     iput v5, v0, Lcom/google/android/apps/camera/evcomp/EvCompView;->r:F
 
@@ -2081,13 +2081,13 @@
     invoke-virtual/range {p0 .. p0}, Landroid/widget/FrameLayout;->invalidate()V
 
     .line 311
-    invoke-direct {v0, v7, v4}, Lcom/google/android/apps/camera/evcomp/EvCompView;->m(ILdefpackage/dmf;)F
+    invoke-direct {v0, v7, v4}, Lcom/google/android/apps/camera/evcomp/EvCompView;->m(ILdmf;)F
 
     move-result v6
 
     .line 312
     .local v6, "m":F
-    invoke-virtual {v4, v6}, Ldefpackage/dmf;->a(F)V
+    invoke-virtual {v4, v6}, Ldmf;->a(F)V
 
     .line 313
     const/4 v8, 0x0
@@ -2095,7 +2095,7 @@
     aput v6, v3, v8
 
     .line 314
-    invoke-virtual {v9}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v9}, Lojc;->g()Z
 
     move-result v8
 
@@ -2121,10 +2121,10 @@
 
     move-result-object v10
 
-    check-cast v10, Ldefpackage/dmf;
+    check-cast v10, Ldmf;
 
     .line 316
-    .local v10, "dmfVar3":Ldefpackage/dmf;
+    .local v10, "dmfVar3":Ldmf;
     invoke-virtual {v10, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v11
@@ -2132,7 +2132,7 @@
     if-nez v11, :cond_9
 
     .line 317
-    invoke-virtual {v9}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v9}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v11
 
@@ -2142,13 +2142,13 @@
 
     move-result v11
 
-    invoke-direct {v0, v11, v10}, Lcom/google/android/apps/camera/evcomp/EvCompView;->m(ILdefpackage/dmf;)F
+    invoke-direct {v0, v11, v10}, Lcom/google/android/apps/camera/evcomp/EvCompView;->m(ILdmf;)F
 
     move-result v11
 
     .line 318
     .local v11, "m2":F
-    invoke-virtual {v10, v11}, Ldefpackage/dmf;->a(F)V
+    invoke-virtual {v10, v11}, Ldmf;->a(F)V
 
     .line 319
     const/4 v12, 0x1
@@ -2156,7 +2156,7 @@
     aput v11, v3, v12
 
     .line 321
-    .end local v10    # "dmfVar3":Ldefpackage/dmf;
+    .end local v10    # "dmfVar3":Ldmf;
     .end local v11    # "m2":F
     :cond_9
     goto :goto_7
@@ -2170,7 +2170,7 @@
     :cond_a
     goto :goto_8
 
-    .end local v9    # "ojcVar":Ldefpackage/ojc;
+    .end local v9    # "ojcVar":Lojc;
     :cond_b
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -2248,10 +2248,10 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->g:Lcom/google/android/apps/camera/evcomp/EvCompSlider;
 
     .line 336
-    sget-object v0, Ldefpackage/guf;->b:Ldefpackage/guf;
+    sget-object v0, Lguf;->b:Lguf;
 
     .line 337
-    .local v0, "gufVar":Ldefpackage/guf;
+    .local v0, "gufVar":Lguf;
     iget-object v1, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->f:Lcom/google/android/apps/camera/evcomp/EvCompSlider;
 
     invoke-virtual {v1, v0}, Landroid/widget/FrameLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
@@ -2334,9 +2334,9 @@
 
     .line 364
     :cond_3
-    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ljrz;
 
-    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/evcomp/EvCompView;->f(Ldefpackage/jrz;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/evcomp/EvCompView;->f(Ljrz;)V
 
     .line 396
     return-void
@@ -2348,9 +2348,9 @@
     .param p2, "i2"    # I
 
     .line 400
-    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/evcomp/EvCompView;->j:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 
@@ -2406,14 +2406,14 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/dmf;
+    check-cast v1, Ldmf;
 
     .line 414
-    .local v1, "dmfVar":Ldefpackage/dmf;
+    .local v1, "dmfVar":Ldmf;
     invoke-virtual {v1, p1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 415
-    .end local v1    # "dmfVar":Ldefpackage/dmf;
+    .end local v1    # "dmfVar":Ldmf;
     goto :goto_0
 
     .line 416

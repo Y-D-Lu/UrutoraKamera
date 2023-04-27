@@ -46,13 +46,13 @@
     .line 127
     iget-object v0, p0, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper$1;->this$1:Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;
 
-    invoke-virtual {v0}, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->getCallback()Ldefpackage/fb;
+    invoke-virtual {v0}, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper;->getCallback()Lfb;
 
     move-result-object v0
 
     iget-object v1, p0, Landroidx/window/layout/ExtensionWindowBackend$WindowLayoutChangeCallbackWrapper$1;->val$windowLayoutInfo:Landroidx/window/layout/WindowLayoutInfo;
 
-    invoke-interface {v0, v1}, Ldefpackage/fb;->accept(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lfb;->accept(Ljava/lang/Object;)V
 
     .line 128
     return-void

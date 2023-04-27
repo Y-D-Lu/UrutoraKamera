@@ -74,14 +74,14 @@
 
 
 # virtual methods
-.method public final ad(Ldefpackage/ahm;)V
+.method public final ad(Lahm;)V
     .locals 1
-    .param p1, "ahmVar"    # Ldefpackage/ahm;
+    .param p1, "ahmVar"    # Lahm;
 
     .line 41
     const v0, 0x1020010
 
-    invoke-virtual {p1, v0}, Ldefpackage/ahm;->B(I)Landroid/view/View;
+    invoke-virtual {p1, v0}, Lahm;->B(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -138,15 +138,15 @@
 
     .line 60
     :cond_0
-    new-instance v1, Ldefpackage/aht;
+    new-instance v1, Laht;
 
-    invoke-direct {v1, v0}, Ldefpackage/aht;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, Laht;-><init>(Landroid/os/Parcelable;)V
 
     .line 61
-    .local v1, "ahtVar":Ldefpackage/aht;
+    .local v1, "ahtVar":Laht;
     iget-boolean v2, p0, Landroidx/preference/TwoStatePreference;->a:Z
 
-    iput-boolean v2, v1, Ldefpackage/aht;->a:Z
+    iput-boolean v2, v1, Laht;->a:Z
 
     .line 62
     return-object v1
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    const-class v1, Ldefpackage/aht;
+    const-class v1, Laht;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -198,10 +198,10 @@
     :cond_0
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/aht;
+    check-cast v0, Laht;
 
     .line 78
-    .local v0, "ahtVar":Ldefpackage/aht;
+    .local v0, "ahtVar":Laht;
     invoke-virtual {v0}, Landroid/view/AbsSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v1
@@ -209,7 +209,7 @@
     invoke-super {p0, v1}, Landroidx/preference/Preference;->g(Landroid/os/Parcelable;)V
 
     .line 79
-    iget-boolean v1, v0, Ldefpackage/aht;->a:Z
+    iget-boolean v1, v0, Laht;->a:Z
 
     invoke-virtual {p0, v1}, Landroidx/preference/TwoStatePreference;->k(Z)V
 
@@ -442,9 +442,9 @@
     if-eq p1, v1, :cond_1
 
     .line 133
-    iget-object v1, p0, Landroidx/preference/Preference;->k:Ldefpackage/ahj;
+    iget-object v1, p0, Landroidx/preference/Preference;->k:Lahj;
 
-    invoke-virtual {v1}, Ldefpackage/ahj;->b()Landroid/content/SharedPreferences$Editor;
+    invoke-virtual {v1}, Lahj;->b()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
 

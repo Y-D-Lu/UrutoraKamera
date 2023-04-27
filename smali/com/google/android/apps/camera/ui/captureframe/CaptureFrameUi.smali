@@ -94,29 +94,29 @@
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setBlendMode(Landroid/graphics/BlendMode;)V
 
     .line 40
-    new-instance v3, Ldefpackage/ivc;
+    new-instance v3, Livc;
 
-    invoke-direct {v3, p0, v1, v2, v0}, Ldefpackage/ivc;-><init>(Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;Landroid/graphics/Paint;IF)V
+    invoke-direct {v3, p0, v1, v2, v0}, Livc;-><init>(Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;Landroid/graphics/Paint;IF)V
 
-    new-instance v2, Ldefpackage/ivc;
+    new-instance v2, Livc;
 
     const/4 v4, 0x2
 
-    invoke-direct {v2, p0, v1, v4, v0}, Ldefpackage/ivc;-><init>(Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;Landroid/graphics/Paint;IF)V
+    invoke-direct {v2, p0, v1, v4, v0}, Livc;-><init>(Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;Landroid/graphics/Paint;IF)V
 
-    new-instance v4, Ldefpackage/ivc;
+    new-instance v4, Livc;
 
     const/4 v5, 0x3
 
-    invoke-direct {v4, p0, v1, v5, v0}, Ldefpackage/ivc;-><init>(Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;Landroid/graphics/Paint;IF)V
+    invoke-direct {v4, p0, v1, v5, v0}, Livc;-><init>(Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;Landroid/graphics/Paint;IF)V
 
-    new-instance v5, Ldefpackage/ivc;
+    new-instance v5, Livc;
 
     const/4 v6, 0x4
 
-    invoke-direct {v5, p0, v1, v6, v0}, Ldefpackage/ivc;-><init>(Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;Landroid/graphics/Paint;IF)V
+    invoke-direct {v5, p0, v1, v6, v0}, Livc;-><init>(Lcom/google/android/apps/camera/ui/captureframe/CaptureFrameUi;Landroid/graphics/Paint;IF)V
 
-    invoke-static {v3, v2, v4, v5}, Ldefpackage/oom;->p(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ldefpackage/oom;
+    invoke-static {v3, v2, v4, v5}, Loom;->p(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Loom;
 
     move-result-object v2
 

@@ -8,7 +8,7 @@
 
 .field public b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
-.field private c:Ldefpackage/jrz;
+.field private c:Ljrz;
 
 
 # direct methods
@@ -21,9 +21,9 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 26
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->c:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->c:Ljrz;
 
     .line 27
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
@@ -70,51 +70,51 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/jrz;)V
+.method public final a(Ljrz;)V
     .locals 1
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 33
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->c:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->c:Ljrz;
 
     .line 34
-    invoke-static {p0, p1}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, p1}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 35
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
-    invoke-static {v0, p1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, p1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 36
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->a:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->a(Ldefpackage/jrz;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->a(Ljrz;)V
 
     .line 37
     return-void
 .end method
 
-.method public final b(Ldefpackage/jhp;Z)V
+.method public final b(Ljhp;Z)V
     .locals 4
-    .param p1, "jhpVar"    # Ldefpackage/jhp;
+    .param p1, "jhpVar"    # Ljhp;
     .param p2, "z"    # Z
 
     .line 40
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
-    iget v1, p1, Ldefpackage/jhp;->c:I
+    iget v1, p1, Ljhp;->c:I
 
-    invoke-virtual {v0, v1}, Ldefpackage/mw;->setImageResource(I)V
+    invoke-virtual {v0, v1}, Lmw;->setImageResource(I)V
 
     .line 41
     if-eqz p2, :cond_1
 
     .line 42
-    iget-object v0, p1, Ldefpackage/jhp;->a:Ljava/lang/Object;
+    iget-object v0, p1, Ljhp;->a:Ljava/lang/Object;
 
-    check-cast v0, Ldefpackage/hss;
+    check-cast v0, Lhss;
 
-    sget-object v1, Ldefpackage/hss;->MARS_STORE:Ldefpackage/hss;
+    sget-object v1, Lhss;->MARS_STORE:Lhss;
 
     invoke-virtual {v0, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -125,7 +125,7 @@
     .line 43
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
-    invoke-static {p0}, Ldefpackage/mip;->dU(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dU(Landroid/view/View;)I
 
     move-result v1
 
@@ -134,7 +134,7 @@
     .line 44
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
-    invoke-static {p0}, Ldefpackage/mip;->dP(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dP(Landroid/view/View;)I
 
     move-result v1
 
@@ -147,7 +147,7 @@
     :cond_0
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
-    invoke-static {p0}, Ldefpackage/mip;->dT(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dT(Landroid/view/View;)I
 
     move-result v1
 
@@ -156,7 +156,7 @@
     .line 48
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->b:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuButton;
 
-    invoke-static {p0}, Ldefpackage/mip;->dS(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dS(Landroid/view/View;)I
 
     move-result v1
 
@@ -166,11 +166,11 @@
 
     .line 49
     :cond_1
-    iget-object v0, p1, Ldefpackage/jhp;->a:Ljava/lang/Object;
+    iget-object v0, p1, Ljhp;->a:Ljava/lang/Object;
 
-    check-cast v0, Ldefpackage/hss;
+    check-cast v0, Lhss;
 
-    sget-object v1, Ldefpackage/hss;->MARS_STORE:Ldefpackage/hss;
+    sget-object v1, Lhss;->MARS_STORE:Lhss;
 
     invoke-virtual {v0, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -259,9 +259,9 @@
     if-eqz p1, :cond_0
 
     .line 62
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->c:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->c:Ljrz;
 
-    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->a(Ldefpackage/jrz;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->a(Ljrz;)V
 
     .line 64
     :cond_0
@@ -274,9 +274,9 @@
     .param p2, "i2"    # I
 
     .line 68
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->c:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/mars/MarsSwitch;->c:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 

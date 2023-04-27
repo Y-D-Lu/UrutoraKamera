@@ -1,366 +1,55 @@
-.class public final Ldefpackage/ri;
+.class public Ldefpackage/Ri;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lacr;
 
-# static fields
-.field public static final a:[I
 
-.field public static final b:[I
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Life;->b()Lpht;
+.end annotation
 
-.field public static final c:[I
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
-.field public static final d:[I
 
-.field public static final e:[I
+# instance fields
+.field public final synthetic this$0:Life;
 
-.field private static final f:Ljava/lang/ThreadLocal;
-
-.field private static final g:[I
+.field public final synthetic val$f:Lpih;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 4
-
-    .line 16
-    new-instance v0, Ljava/lang/ThreadLocal;
-
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
-
-    sput-object v0, Ldefpackage/ri;->f:Ljava/lang/ThreadLocal;
-
-    .line 17
-    const/4 v0, 0x1
-
-    new-array v1, v0, [I
-
-    const v2, -0x101009e
-
-    const/4 v3, 0x0
-
-    aput v2, v1, v3
-
-    sput-object v1, Ldefpackage/ri;->a:[I
-
-    .line 18
-    new-array v1, v0, [I
-
-    const v2, 0x101009c
-
-    aput v2, v1, v3
-
-    sput-object v1, Ldefpackage/ri;->b:[I
-
-    .line 19
-    new-array v1, v0, [I
-
-    const v2, 0x10100a7
-
-    aput v2, v1, v3
-
-    sput-object v1, Ldefpackage/ri;->c:[I
-
-    .line 20
-    new-array v1, v0, [I
-
-    const v2, 0x10100a0
-
-    aput v2, v1, v3
-
-    sput-object v1, Ldefpackage/ri;->d:[I
-
-    .line 21
-    new-array v1, v3, [I
-
-    sput-object v1, Ldefpackage/ri;->e:[I
-
-    .line 22
-    new-array v0, v0, [I
-
-    sput-object v0, Ldefpackage/ri;->g:[I
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Life;Lpih;)V
     .locals 0
+    .param p1, "this$0"    # Life;
 
-    .line 15
+    .line 239
+    iput-object p1, p0, Ldefpackage/Ri;->this$0:Life;
+
+    iput-object p2, p0, Ldefpackage/Ri;->val$f:Lpih;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;I)I
-    .locals 6
-    .param p0, "context"    # Landroid/content/Context;
-    .param p1, "i"    # I
 
-    .line 25
-    invoke-static {p0, p1}, Ldefpackage/ri;->c(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+# virtual methods
+.method public final a()V
+    .locals 2
 
-    move-result-object v0
+    .line 242
+    iget-object v0, p0, Ldefpackage/Ri;->val$f:Lpih;
 
-    .line 26
-    .local v0, "c2":Landroid/content/res/ColorStateList;
-    if-eqz v0, :cond_1
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-virtual {v0}, Landroid/content/res/ColorStateList;->isStateful()Z
+    invoke-virtual {v0, v1}, Lpih;->o(Ljava/lang/Object;)Z
 
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    .line 38
-    :cond_0
-    sget-object v1, Ldefpackage/ri;->a:[I
-
-    invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
-
-    move-result v2
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/res/ColorStateList;->getColorForState([II)I
-
-    move-result v1
-
-    return v1
-
-    .line 27
-    :cond_1
-    :goto_0
-    sget-object v1, Ldefpackage/ri;->f:Ljava/lang/ThreadLocal;
-
-    .line 28
-    .local v1, "threadLocal":Ljava/lang/ThreadLocal;
-    invoke-virtual {v1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/util/TypedValue;
-
-    .line 29
-    .local v2, "typedValue":Landroid/util/TypedValue;
-    if-nez v2, :cond_2
-
-    .line 30
-    new-instance v3, Landroid/util/TypedValue;
-
-    invoke-direct {v3}, Landroid/util/TypedValue;-><init>()V
-
-    move-object v2, v3
-
-    .line 31
-    invoke-virtual {v1, v2}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
-
-    .line 33
-    :cond_2
-    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v3
-
-    const v4, 0x1010033
-
-    const/4 v5, 0x1
-
-    invoke-virtual {v3, v4, v2, v5}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
-
-    .line 34
-    invoke-virtual {v2}, Landroid/util/TypedValue;->getFloat()F
-
-    move-result v3
-
-    .line 35
-    .local v3, "f2":F
-    invoke-static {p0, p1}, Ldefpackage/ri;->b(Landroid/content/Context;I)I
-
-    move-result v4
-
-    .line 36
-    .local v4, "b2":I
-    invoke-static {v4}, Landroid/graphics/Color;->alpha(I)I
-
-    move-result v5
-
-    int-to-float v5, v5
-
-    mul-float/2addr v5, v3
-
-    invoke-static {v5}, Ljava/lang/Math;->round(F)I
-
-    move-result v5
-
-    invoke-static {v4, v5}, Ldefpackage/ek;->d(II)I
-
-    move-result v5
-
-    return v5
-.end method
-
-.method public static b(Landroid/content/Context;I)I
-    .locals 4
-    .param p0, "context"    # Landroid/content/Context;
-    .param p1, "i"    # I
-
-    .line 42
-    sget-object v0, Ldefpackage/ri;->g:[I
-
-    .line 43
-    .local v0, "iArr":[I
-    const/4 v1, 0x0
-
-    aput p1, v0, v1
-
-    .line 44
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0}, Ldefpackage/rn;->k(Landroid/content/Context;Landroid/util/AttributeSet;[I)Ldefpackage/rn;
-
-    move-result-object v2
-
-    .line 46
-    .local v2, "k":Ldefpackage/rn;
-    :try_start_0
-    iget-object v3, v2, Ldefpackage/rn;->b:Landroid/content/res/TypedArray;
-
-    invoke-virtual {v3, v1, v1}, Landroid/content/res/TypedArray;->getColor(II)I
-
-    move-result v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 48
-    invoke-virtual {v2}, Ldefpackage/rn;->n()V
-
-    .line 46
-    return v1
-
-    .line 48
-    :catchall_0
-    move-exception v1
-
-    invoke-virtual {v2}, Ldefpackage/rn;->n()V
-
-    .line 49
-    throw v1
-.end method
-
-.method public static c(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
-    .locals 3
-    .param p0, "context"    # Landroid/content/Context;
-    .param p1, "i"    # I
-
-    .line 53
-    sget-object v0, Ldefpackage/ri;->g:[I
-
-    .line 54
-    .local v0, "iArr":[I
-    const/4 v1, 0x0
-
-    aput p1, v0, v1
-
-    .line 55
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0}, Ldefpackage/rn;->k(Landroid/content/Context;Landroid/util/AttributeSet;[I)Ldefpackage/rn;
-
-    move-result-object v2
-
-    .line 57
-    .local v2, "k":Ldefpackage/rn;
-    :try_start_0
-    invoke-virtual {v2, v1}, Ldefpackage/rn;->g(I)Landroid/content/res/ColorStateList;
-
-    move-result-object v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 59
-    invoke-virtual {v2}, Ldefpackage/rn;->n()V
-
-    .line 57
-    return-object v1
-
-    .line 59
-    :catchall_0
-    move-exception v1
-
-    invoke-virtual {v2}, Ldefpackage/rn;->n()V
-
-    .line 60
-    throw v1
-.end method
-
-.method public static d(Landroid/view/View;Landroid/content/Context;)V
-    .locals 4
-    .param p0, "view"    # Landroid/view/View;
-    .param p1, "context"    # Landroid/content/Context;
-
-    .line 64
-    sget-object v0, Ldefpackage/jq;->j:[I
-
-    invoke-virtual {p1, v0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
-
-    move-result-object v0
-
-    .line 66
-    .local v0, "obtainStyledAttributes":Landroid/content/res/TypedArray;
-    const/16 v1, 0x75
-
-    :try_start_0
-    invoke-virtual {v0, v1}, Landroid/content/res/TypedArray;->hasValue(I)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 67
-    const-string v1, "ThemeUtils"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "View "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v3, " is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant)."
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 70
-    :cond_0
-    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
-
-    .line 71
-    nop
-
-    .line 72
+    .line 243
     return-void
-
-    .line 70
-    :catchall_0
-    move-exception v1
-
-    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
-
-    .line 71
-    throw v1
 .end method

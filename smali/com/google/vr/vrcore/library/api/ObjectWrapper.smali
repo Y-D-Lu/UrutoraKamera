@@ -1,5 +1,5 @@
 .class public final Lcom/google/vr/vrcore/library/api/ObjectWrapper;
-.super Ldefpackage/bmo;
+.super Lbmo;
 .source ""
 
 
@@ -15,7 +15,7 @@
     .line 10
     const-string v0, "com.google.vr.vrcore.library.api.IObjectWrapper"
 
-    invoke-direct {p0, v0}, Ldefpackage/bmo;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lbmo;-><init>(Ljava/lang/String;)V
 
     .line 11
     iput-object p1, p0, Lcom/google/vr/vrcore/library/api/ObjectWrapper;->wrappedObject:Ljava/lang/Object;
@@ -24,7 +24,7 @@
     return-void
 .end method
 
-.method public static b(Ljava/lang/Object;)Ldefpackage/bmo;
+.method public static b(Ljava/lang/Object;)Lbmo;
     .locals 1
     .param p0, "obj"    # Ljava/lang/Object;
 

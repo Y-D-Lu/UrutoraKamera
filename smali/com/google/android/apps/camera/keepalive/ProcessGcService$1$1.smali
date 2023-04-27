@@ -46,9 +46,9 @@
 
     .line 68
     .local v0, "processGcService2":Lcom/google/android/apps/camera/keepalive/ProcessGcService;
-    iget-object v1, v0, Lcom/google/android/apps/camera/keepalive/ProcessGcService;->c:Ldefpackage/enw;
+    iget-object v1, v0, Lcom/google/android/apps/camera/keepalive/ProcessGcService;->c:Lenw;
 
-    invoke-virtual {v1}, Ldefpackage/enw;->c()Z
+    invoke-virtual {v1}, Lenw;->c()Z
 
     move-result v1
 
@@ -69,7 +69,7 @@
     invoke-virtual {v0, v1}, Lcom/google/android/apps/camera/keepalive/ProcessGcService;->a(I)V
 
     .line 73
-    invoke-static {v0}, Ldefpackage/eoc;->b(Landroid/content/Context;)V
+    invoke-static {v0}, Leoc;->b(Landroid/content/Context;)V
 
     .line 74
     return-void

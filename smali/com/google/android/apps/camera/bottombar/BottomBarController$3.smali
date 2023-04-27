@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/lie;
+.implements Llie;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/bottombar/BottomBarController;->disableCameraSwitchAwhile()Ldefpackage/lie;
+    value = Lcom/google/android/apps/camera/bottombar/BottomBarController;->disableCameraSwitchAwhile()Llie;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

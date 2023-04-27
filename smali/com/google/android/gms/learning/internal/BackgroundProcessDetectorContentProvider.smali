@@ -52,7 +52,7 @@
     .locals 2
 
     .line 29
-    sget-object v0, Ldefpackage/kqe;->a:Ljava/lang/Object;
+    sget-object v0, Lkqe;->a:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -60,7 +60,7 @@
     const/4 v1, 0x1
 
     :try_start_0
-    sput-boolean v1, Ldefpackage/kqe;->b:Z
+    sput-boolean v1, Lkqe;->b:Z
 
     .line 31
     monitor-exit v0

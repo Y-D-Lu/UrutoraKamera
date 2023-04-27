@@ -69,7 +69,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -84,7 +84,7 @@
 
     iget-object v1, v1, Landroidx/window/layout/WindowMetrics;->_bounds:Landroidx/window/core/Bounds;
 
-    invoke-static {v0, v1}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

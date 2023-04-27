@@ -10,7 +10,7 @@
     .line 9
     const-string v0, "NativeMotionPhotoProc"
 
-    invoke-static {v0}, Ldefpackage/ovk;->h(Ljava/lang/String;)Ldefpackage/ovk;
+    invoke-static {v0}, Lovk;->h(Ljava/lang/String;)Lovk;
 
     .line 10
     const-string v0, "native"
@@ -31,12 +31,12 @@
     return-void
 .end method
 
-.method public static a(Ldefpackage/psp;)[B
+.method public static a(Lpsp;)[B
     .locals 1
-    .param p0, "pspVar"    # Ldefpackage/psp;
+    .param p0, "pspVar"    # Lpsp;
 
     .line 17
-    invoke-virtual {p0}, Ldefpackage/pnm;->g()[B
+    invoke-virtual {p0}, Lpnm;->g()[B
 
     move-result-object v0
 

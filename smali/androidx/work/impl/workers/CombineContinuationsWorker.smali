@@ -18,17 +18,17 @@
 
 
 # virtual methods
-.method public final b()Ldefpackage/ge;
+.method public final b()Lge;
     .locals 2
 
     .line 19
-    new-instance v0, Ldefpackage/amw;
+    new-instance v0, Lamw;
 
-    invoke-virtual {p0}, Landroidx/work/ListenableWorker;->fs()Ldefpackage/amq;
+    invoke-virtual {p0}, Landroidx/work/ListenableWorker;->fs()Lamq;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Ldefpackage/amw;-><init>(Ldefpackage/amq;)V
+    invoke-direct {v0, v1}, Lamw;-><init>(Lamq;)V
 
     return-object v0
 .end method

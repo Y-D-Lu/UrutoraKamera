@@ -1,28 +1,28 @@
 .class public Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;
-.super Ldefpackage/ijs;
+.super Lijs;
 .source ""
 
 
 # static fields
-.field public static final a:Ldefpackage/ijr;
+.field public static final a:Lijr;
 
-.field public static final b:Ldefpackage/ijr;
+.field public static final b:Lijr;
 
 
 # instance fields
 .field public c:Z
 
-.field public final d:Ldefpackage/iiz;
+.field public final d:Liiz;
 
-.field public final e:Ldefpackage/ljf;
+.field public final e:Lljf;
 
-.field public f:Ldefpackage/lji;
+.field public f:Llji;
 
-.field public g:Ldefpackage/lji;
+.field public g:Llji;
 
-.field public h:Ldefpackage/lji;
+.field public h:Llji;
 
-.field public i:Ldefpackage/lji;
+.field public i:Llji;
 
 
 # direct methods
@@ -30,46 +30,46 @@
     .locals 2
 
     .line 25
-    invoke-static {}, Ldefpackage/ijr;->a()Ldefpackage/ijq;
+    invoke-static {}, Lijr;->a()Lijq;
 
     move-result-object v0
 
     .line 26
-    .local v0, "a2":Ldefpackage/ijq;
+    .local v0, "a2":Lijq;
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Ldefpackage/ijq;->b(Z)V
+    invoke-virtual {v0, v1}, Lijq;->b(Z)V
 
     .line 27
-    invoke-virtual {v0}, Ldefpackage/ijq;->a()Ldefpackage/ijr;
+    invoke-virtual {v0}, Lijq;->a()Lijr;
 
     move-result-object v1
 
-    sput-object v1, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->a:Ldefpackage/ijr;
+    sput-object v1, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->a:Lijr;
 
     .line 28
-    sget-object v1, Ldefpackage/ijs;->j:Ldefpackage/ijr;
+    sget-object v1, Lijs;->j:Lijr;
 
-    sput-object v1, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->b:Ldefpackage/ijr;
+    sput-object v1, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->b:Lijr;
 
     .line 29
-    .end local v0    # "a2":Ldefpackage/ijq;
+    .end local v0    # "a2":Lijq;
     return-void
 .end method
 
-.method public constructor <init>(JLdefpackage/mcx;Ldefpackage/iiz;Ldefpackage/ljf;)V
+.method public constructor <init>(JLmcx;Liiz;Lljf;)V
     .locals 1
     .param p1, "j"    # J
-    .param p3, "mcxVar"    # Ldefpackage/mcx;
-    .param p4, "iizVar"    # Ldefpackage/iiz;
-    .param p5, "ljfVar"    # Ldefpackage/ljf;
+    .param p3, "mcxVar"    # Lmcx;
+    .param p4, "iizVar"    # Liiz;
+    .param p5, "ljfVar"    # Lljf;
 
     .line 32
-    invoke-static {}, Ldefpackage/ijf;->values()[Ldefpackage/ijf;
+    invoke-static {}, Lijf;->values()[Lijf;
 
     move-result-object v0
 
-    invoke-direct {p0, p3, p1, p2, v0}, Ldefpackage/ijs;-><init>(Ldefpackage/mcx;J[Ljava/lang/Enum;)V
+    invoke-direct {p0, p3, p1, p2, v0}, Lijs;-><init>(Lmcx;J[Ljava/lang/Enum;)V
 
     .line 33
     const/4 v0, 0x0
@@ -77,42 +77,42 @@
     iput-boolean v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->c:Z
 
     .line 34
-    sget-object v0, Ldefpackage/lji;->b:Ldefpackage/lji;
+    sget-object v0, Llji;->b:Llji;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->i:Ldefpackage/lji;
+    iput-object v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->i:Llji;
 
     .line 35
-    iput-object p4, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->d:Ldefpackage/iiz;
+    iput-object p4, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->d:Liiz;
 
     .line 36
-    iput-object p5, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->e:Ldefpackage/ljf;
+    iput-object p5, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->e:Lljf;
 
     .line 37
     const-string v0, "FirstPreviewFrame"
 
-    invoke-interface {p5, v0}, Ldefpackage/ljf;->a(Ljava/lang/String;)Ldefpackage/lji;
+    invoke-interface {p5, v0}, Lljf;->a(Ljava/lang/String;)Llji;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->f:Ldefpackage/lji;
+    iput-object v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->f:Llji;
 
     .line 38
     const-string v0, "ShutterButtonEnabled"
 
-    invoke-interface {p5, v0}, Ldefpackage/ljf;->a(Ljava/lang/String;)Ldefpackage/lji;
+    invoke-interface {p5, v0}, Lljf;->a(Ljava/lang/String;)Llji;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->h:Ldefpackage/lji;
+    iput-object v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->h:Llji;
 
     .line 39
     const-string v0, "FirstFrameReceived"
 
-    invoke-interface {p5, v0}, Ldefpackage/ljf;->a(Ljava/lang/String;)Ldefpackage/lji;
+    invoke-interface {p5, v0}, Lljf;->a(Ljava/lang/String;)Llji;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->g:Ldefpackage/lji;
+    iput-object v0, p0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->g:Llji;
 
     .line 40
     return-void
@@ -124,7 +124,7 @@
     .locals 1
 
     .line 44
-    invoke-super {p0}, Ldefpackage/ijs;->a()V
+    invoke-super {p0}, Lijs;->a()V
 
     .line 45
     const/4 v0, 0x0
@@ -151,7 +151,7 @@
     .locals 6
 
     .line 54
-    invoke-static {}, Ldefpackage/ijf;->values()[Ldefpackage/ijf;
+    invoke-static {}, Lijf;->values()[Lijf;
 
     move-result-object v0
 
@@ -167,12 +167,12 @@
     aget-object v4, v0, v3
 
     .line 55
-    .local v4, "ijfVar":Ldefpackage/ijf;
-    iget-boolean v5, v4, Ldefpackage/ijf;->s:Z
+    .local v4, "ijfVar":Lijf;
+    iget-boolean v5, v4, Lijf;->s:Z
 
     if-eqz v5, :cond_0
 
-    invoke-virtual {p0, v4}, Ldefpackage/ijs;->l(Ljava/lang/Enum;)Z
+    invoke-virtual {p0, v4}, Lijs;->l(Ljava/lang/Enum;)Z
 
     move-result v5
 
@@ -182,7 +182,7 @@
     return v2
 
     .line 54
-    .end local v4    # "ijfVar":Ldefpackage/ijf;
+    .end local v4    # "ijfVar":Lijf;
     :cond_0
     add-int/lit8 v3, v3, 0x1
 
@@ -199,9 +199,9 @@
     .locals 2
 
     .line 63
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_INITIALIZED:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_INITIALIZED:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -212,9 +212,9 @@
     .locals 2
 
     .line 67
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_ONCREATE_END:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_ONCREATE_END:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -225,9 +225,9 @@
     .locals 2
 
     .line 71
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_ONCREATE_START:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_ONCREATE_START:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -238,9 +238,9 @@
     .locals 2
 
     .line 75
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_ONRESUME_END:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_ONRESUME_END:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -251,9 +251,9 @@
     .locals 2
 
     .line 79
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_ONRESUME_START:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_ONRESUME_START:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -264,9 +264,9 @@
     .locals 2
 
     .line 83
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_ONSTART_START:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_ONSTART_START:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -277,9 +277,9 @@
     .locals 2
 
     .line 87
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_FIRST_PREVIEW_FRAME_RECEIVED:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_FIRST_PREVIEW_FRAME_RECEIVED:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -290,9 +290,9 @@
     .locals 2
 
     .line 91
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_FIRST_PREVIEW_FRAME_RENDERED:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_FIRST_PREVIEW_FRAME_RENDERED:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -303,9 +303,9 @@
     .locals 2
 
     .line 95
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_FIRST_PREVIEW_FRAME_VFE_RENDERED:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_FIRST_PREVIEW_FRAME_VFE_RENDERED:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -316,9 +316,9 @@
     .locals 2
 
     .line 99
-    sget-object v0, Ldefpackage/ijf;->PERMISSIONS_STARTUP_TASK_END:Ldefpackage/ijf;
+    sget-object v0, Lijf;->PERMISSIONS_STARTUP_TASK_END:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -329,9 +329,9 @@
     .locals 2
 
     .line 103
-    sget-object v0, Ldefpackage/ijf;->PERMISSIONS_STARTUP_TASK_START:Ldefpackage/ijf;
+    sget-object v0, Lijf;->PERMISSIONS_STARTUP_TASK_START:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -342,9 +342,9 @@
     .locals 2
 
     .line 107
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_SHUTTER_BUTTON_DRAWN:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_SHUTTER_BUTTON_DRAWN:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -355,9 +355,9 @@
     .locals 2
 
     .line 111
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_SHUTTER_BUTTON_ENABLED:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_SHUTTER_BUTTON_ENABLED:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -368,9 +368,9 @@
     .locals 2
 
     .line 115
-    sget-object v0, Ldefpackage/ijf;->WAIT_FOR_CAMERA_DEVICES_TASK_END:Ldefpackage/ijf;
+    sget-object v0, Lijf;->WAIT_FOR_CAMERA_DEVICES_TASK_END:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -381,9 +381,9 @@
     .locals 2
 
     .line 119
-    sget-object v0, Ldefpackage/ijf;->WAIT_FOR_CAMERA_DEVICES_TASK_START:Ldefpackage/ijf;
+    sget-object v0, Lijf;->WAIT_FOR_CAMERA_DEVICES_TASK_START:Lijf;
 
-    invoke-virtual {p0, v0}, Ldefpackage/ijs;->g(Ljava/lang/Enum;)J
+    invoke-virtual {p0, v0}, Lijs;->g(Ljava/lang/Enum;)J
 
     move-result-wide v0
 
@@ -395,11 +395,11 @@
     .param p1, "j"    # J
 
     .line 123
-    sget-object v0, Ldefpackage/ijf;->ACTIVITY_ONCREATE_START:Ldefpackage/ijf;
+    sget-object v0, Lijf;->ACTIVITY_ONCREATE_START:Lijf;
 
-    sget-object v1, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->a:Ldefpackage/ijr;
+    sget-object v1, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;->a:Lijr;
 
-    invoke-virtual {p0, v0, p1, p2, v1}, Ldefpackage/ijs;->k(Ljava/lang/Enum;JLdefpackage/ijr;)V
+    invoke-virtual {p0, v0, p1, p2, v1}, Lijs;->k(Ljava/lang/Enum;JLijr;)V
 
     .line 124
     return-void

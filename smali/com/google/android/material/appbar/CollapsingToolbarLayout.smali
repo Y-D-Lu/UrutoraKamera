@@ -8,17 +8,17 @@
 
 .field private B:Z
 
-.field private C:Ldefpackage/nxa;
+.field private C:Lnxa;
 
-.field public final a:Ldefpackage/nzn;
+.field public final a:Lnzn;
 
-.field public final b:Ldefpackage/nyl;
+.field public final b:Lnyl;
 
 .field public c:Landroid/graphics/drawable/Drawable;
 
 .field public d:I
 
-.field public e:Ldefpackage/gy;
+.field public e:Lgy;
 
 .field private f:Z
 
@@ -108,7 +108,7 @@
 
     move-object/from16 v9, p1
 
-    invoke-static {v9, v7, v8, v1}, Ldefpackage/odn;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
+    invoke-static {v9, v7, v8, v1}, Lodn;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
     move-result-object v1
 
@@ -150,40 +150,40 @@
 
     .line 96
     .local v14, "context2":Landroid/content/Context;
-    new-instance v1, Ldefpackage/nzn;
+    new-instance v1, Lnzn;
 
-    invoke-direct {v1, v0}, Ldefpackage/nzn;-><init>(Landroid/view/View;)V
+    invoke-direct {v1, v0}, Lnzn;-><init>(Landroid/view/View;)V
 
     move-object v15, v1
 
     .line 97
-    .local v15, "nznVar":Ldefpackage/nzn;
-    iput-object v15, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    .local v15, "nznVar":Lnzn;
+    iput-object v15, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
     .line 98
-    sget-object v1, Ldefpackage/nwj;->e:Landroid/animation/TimeInterpolator;
+    sget-object v1, Lnwj;->e:Landroid/animation/TimeInterpolator;
 
-    iput-object v1, v15, Ldefpackage/nzn;->v:Landroid/animation/TimeInterpolator;
+    iput-object v1, v15, Lnzn;->v:Landroid/animation/TimeInterpolator;
 
     .line 99
-    invoke-virtual {v15}, Ldefpackage/nzn;->f()V
+    invoke-virtual {v15}, Lnzn;->f()V
 
     .line 100
-    iput-boolean v13, v15, Ldefpackage/nzn;->r:Z
+    iput-boolean v13, v15, Lnzn;->r:Z
 
     .line 101
-    new-instance v1, Ldefpackage/nyl;
+    new-instance v1, Lnyl;
 
-    invoke-direct {v1, v14}, Ldefpackage/nyl;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v14}, Lnyl;-><init>(Landroid/content/Context;)V
 
     move-object v6, v1
 
     .line 102
-    .local v6, "nylVar":Ldefpackage/nyl;
-    iput-object v6, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->b:Ldefpackage/nyl;
+    .local v6, "nylVar":Lnyl;
+    iput-object v6, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->b:Lnyl;
 
     .line 103
-    sget-object v3, Ldefpackage/nxe;->c:[I
+    sget-object v3, Lnxe;->c:[I
 
     new-array v5, v13, [I
 
@@ -201,11 +201,11 @@
 
     move-object/from16 v18, v6
 
-    .end local v6    # "nylVar":Ldefpackage/nyl;
-    .local v18, "nylVar":Ldefpackage/nyl;
+    .end local v6    # "nylVar":Lnyl;
+    .local v18, "nylVar":Lnyl;
     move-object/from16 v6, v17
 
-    invoke-static/range {v1 .. v6}, Ldefpackage/nzw;->a(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v1 .. v6}, Lnzw;->a(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object v1
 
@@ -221,15 +221,15 @@
 
     .line 105
     .local v2, "i3":I
-    iget v3, v15, Ldefpackage/nzn;->h:I
+    iget v3, v15, Lnzn;->h:I
 
     if-eq v3, v2, :cond_0
 
     .line 106
-    iput v2, v15, Ldefpackage/nzn;->h:I
+    iput v2, v15, Lnzn;->h:I
 
     .line 107
-    invoke-virtual {v15}, Ldefpackage/nzn;->f()V
+    invoke-virtual {v15}, Lnzn;->f()V
 
     .line 109
     :cond_0
@@ -241,15 +241,15 @@
 
     .line 110
     .local v3, "i4":I
-    iget v4, v15, Ldefpackage/nzn;->i:I
+    iget v4, v15, Lnzn;->i:I
 
     if-eq v4, v3, :cond_1
 
     .line 111
-    iput v3, v15, Ldefpackage/nzn;->i:I
+    iput v3, v15, Lnzn;->i:I
 
     .line 112
-    invoke-virtual {v15}, Ldefpackage/nzn;->f()V
+    invoke-virtual {v15}, Lnzn;->f()V
 
     .line 114
     :cond_1
@@ -361,12 +361,12 @@
     .line 133
     const v5, 0x7f1502a8
 
-    invoke-virtual {v15, v5}, Ldefpackage/nzn;->i(I)V
+    invoke-virtual {v15, v5}, Lnzn;->i(I)V
 
     .line 134
     const v5, 0x7f15028d
 
-    invoke-virtual {v15, v5}, Ldefpackage/nzn;->h(I)V
+    invoke-virtual {v15, v5}, Lnzn;->h(I)V
 
     .line 135
     const/16 v5, 0xa
@@ -382,7 +382,7 @@
 
     move-result v5
 
-    invoke-virtual {v15, v5}, Ldefpackage/nzn;->i(I)V
+    invoke-virtual {v15, v5}, Lnzn;->i(I)V
 
     .line 138
     :cond_6
@@ -397,7 +397,7 @@
 
     move-result v5
 
-    invoke-virtual {v15, v5}, Ldefpackage/nzn;->h(I)V
+    invoke-virtual {v15, v5}, Lnzn;->h(I)V
 
     .line 141
     :cond_7
@@ -409,9 +409,9 @@
 
     if-eqz v6, :cond_9
 
-    iget-object v6, v15, Ldefpackage/nzn;->k:Landroid/content/res/ColorStateList;
+    iget-object v6, v15, Lnzn;->k:Landroid/content/res/ColorStateList;
 
-    invoke-static {v14, v1, v5}, Ldefpackage/obr;->c(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {v14, v1, v5}, Lobr;->c(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object v5
 
@@ -425,10 +425,10 @@
 
     .end local v16    # "c2":Landroid/content/res/ColorStateList;
     .local v5, "c2":Landroid/content/res/ColorStateList;
-    iput-object v5, v15, Ldefpackage/nzn;->k:Landroid/content/res/ColorStateList;
+    iput-object v5, v15, Lnzn;->k:Landroid/content/res/ColorStateList;
 
     .line 143
-    invoke-virtual {v15}, Ldefpackage/nzn;->f()V
+    invoke-virtual {v15}, Lnzn;->f()V
 
     goto :goto_0
 
@@ -450,9 +450,9 @@
 
     if-eqz v6, :cond_b
 
-    iget-object v6, v15, Ldefpackage/nzn;->l:Landroid/content/res/ColorStateList;
+    iget-object v6, v15, Lnzn;->l:Landroid/content/res/ColorStateList;
 
-    invoke-static {v14, v1, v5}, Ldefpackage/obr;->c(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
+    invoke-static {v14, v1, v5}, Lobr;->c(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object v5
 
@@ -466,10 +466,10 @@
 
     .end local v16    # "c":Landroid/content/res/ColorStateList;
     .local v5, "c":Landroid/content/res/ColorStateList;
-    iput-object v5, v15, Ldefpackage/nzn;->l:Landroid/content/res/ColorStateList;
+    iput-object v5, v15, Lnzn;->l:Landroid/content/res/ColorStateList;
 
     .line 147
-    invoke-virtual {v15}, Ldefpackage/nzn;->f()V
+    invoke-virtual {v15}, Lnzn;->f()V
 
     goto :goto_1
 
@@ -507,15 +507,15 @@
     move v6, v5
 
     .local v6, "i2":I
-    iget v11, v15, Ldefpackage/nzn;->x:I
+    iget v11, v15, Lnzn;->x:I
 
     if-eq v5, v11, :cond_c
 
     .line 151
-    iput v6, v15, Ldefpackage/nzn;->x:I
+    iput v6, v15, Lnzn;->x:I
 
     .line 152
-    invoke-virtual {v15}, Ldefpackage/nzn;->f()V
+    invoke-virtual {v15}, Lnzn;->f()V
 
     .line 154
     .end local v6    # "i2":I
@@ -610,7 +610,7 @@
     :cond_f
     iget-object v12, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->c:Landroid/graphics/drawable/Drawable;
 
-    invoke-static/range {p0 .. p0}, Ldefpackage/gl;->f(Landroid/view/View;)I
+    invoke-static/range {p0 .. p0}, Lgl;->f(Landroid/view/View;)I
 
     move-result v13
 
@@ -665,7 +665,7 @@
     .end local v2    # "i3":I
     .restart local v19    # "i3":I
     :goto_4
-    invoke-static/range {p0 .. p0}, Ldefpackage/gl;->z(Landroid/view/View;)V
+    invoke-static/range {p0 .. p0}, Lgl;->z(Landroid/view/View;)V
 
     goto :goto_5
 
@@ -697,7 +697,7 @@
 
     .line 178
     .local v2, "p":Z
-    iput-boolean v2, v15, Ldefpackage/nzn;->b:Z
+    iput-boolean v2, v15, Lnzn;->b:Z
 
     .line 179
     invoke-virtual/range {p0 .. p0}, Landroid/widget/FrameLayout;->getParent()Landroid/view/ViewParent;
@@ -733,9 +733,9 @@
     move/from16 v18, v2
 
     .end local v2    # "p":Z
-    .local v13, "nylVar":Ldefpackage/nyl;
+    .local v13, "nylVar":Lnyl;
     .local v18, "p":Z
-    iget v2, v13, Ldefpackage/nyl;->b:I
+    iget v2, v13, Lnyl;->b:I
 
     move/from16 v20, v3
 
@@ -755,7 +755,7 @@
 
     move-result v3
 
-    invoke-virtual {v13, v2, v3}, Ldefpackage/nyl;->b(IF)I
+    invoke-virtual {v13, v2, v3}, Lnyl;->b(IF)I
 
     move-result v2
 
@@ -766,13 +766,13 @@
     goto :goto_6
 
     .line 183
-    .end local v13    # "nylVar":Ldefpackage/nyl;
+    .end local v13    # "nylVar":Lnyl;
     .end local v20    # "i4":I
     .end local v21    # "dimensionPixelSize":I
     .restart local v2    # "p":Z
     .restart local v3    # "i4":I
     .restart local v4    # "dimensionPixelSize":I
-    .local v18, "nylVar":Ldefpackage/nyl;
+    .local v18, "nylVar":Lnyl;
     :cond_14
     move/from16 v20, v3
 
@@ -786,7 +786,7 @@
     .end local v2    # "p":Z
     .end local v3    # "i4":I
     .end local v4    # "dimensionPixelSize":I
-    .restart local v13    # "nylVar":Ldefpackage/nyl;
+    .restart local v13    # "nylVar":Lnyl;
     .local v18, "p":Z
     .restart local v20    # "i4":I
     .restart local v21    # "dimensionPixelSize":I
@@ -828,17 +828,17 @@
     invoke-virtual {v0, v3}, Landroid/widget/FrameLayout;->setWillNotDraw(Z)V
 
     .line 191
-    new-instance v2, Ldefpackage/nwx;
+    new-instance v2, Lnwx;
 
-    invoke-direct {v2, v0}, Ldefpackage/nwx;-><init>(Lcom/google/android/material/appbar/CollapsingToolbarLayout;)V
+    invoke-direct {v2, v0}, Lnwx;-><init>(Lcom/google/android/material/appbar/CollapsingToolbarLayout;)V
 
-    invoke-static {v0, v2}, Ldefpackage/gl;->N(Landroid/view/View;Ldefpackage/ft;)V
+    invoke-static {v0, v2}, Lgl;->N(Landroid/view/View;Lft;)V
 
     .line 192
     return-void
 .end method
 
-.method public static c(Landroid/view/View;)Ldefpackage/nxg;
+.method public static c(Landroid/view/View;)Lnxg;
     .locals 3
     .param p0, "view"    # Landroid/view/View;
 
@@ -849,37 +849,37 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/nxg;
+    check-cast v1, Lnxg;
 
     .line 197
-    .local v1, "nxgVar":Ldefpackage/nxg;
+    .local v1, "nxgVar":Lnxg;
     if-nez v1, :cond_0
 
     .line 198
-    new-instance v2, Ldefpackage/nxg;
+    new-instance v2, Lnxg;
 
-    invoke-direct {v2, p0}, Ldefpackage/nxg;-><init>(Landroid/view/View;)V
+    invoke-direct {v2, p0}, Lnxg;-><init>(Landroid/view/View;)V
 
     .line 199
-    .local v2, "nxgVar2":Ldefpackage/nxg;
+    .local v2, "nxgVar2":Lnxg;
     invoke-virtual {p0, v0, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 200
     return-object v2
 
     .line 202
-    .end local v2    # "nxgVar2":Ldefpackage/nxg;
+    .end local v2    # "nxgVar2":Lnxg;
     :cond_0
     return-object v1
 .end method
 
-.method public static final h()Ldefpackage/nwz;
+.method public static final h()Lnwz;
     .locals 1
 
     .line 206
-    new-instance v0, Ldefpackage/nwz;
+    new-instance v0, Lnwz;
 
-    invoke-direct {v0}, Ldefpackage/nwz;-><init>()V
+    invoke-direct {v0}, Lnwz;-><init>()V
 
     return-object v0
 .end method
@@ -1266,7 +1266,7 @@
 
     .line 297
     .local v1, "i8":I
-    invoke-static {v2}, Ldefpackage/gl;->U(Landroid/view/View;)Z
+    invoke-static {v2}, Lgl;->U(Landroid/view/View;)Z
 
     move-result v3
 
@@ -1321,7 +1321,7 @@
     .end local p5    # "z":Z
     .restart local v5    # "z":Z
     :goto_1
-    invoke-static/range {p0 .. p0}, Ldefpackage/gl;->f(Landroid/view/View;)I
+    invoke-static/range {p0 .. p0}, Lgl;->f(Landroid/view/View;)I
 
     move-result v6
 
@@ -1348,7 +1348,7 @@
 
     iget-object v10, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->o:Landroid/graphics/Rect;
 
-    invoke-static {v0, v9, v10}, Ldefpackage/nzo;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
+    invoke-static {v0, v9, v10}, Lnzo;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 312
     iget-object v9, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->h:Landroid/view/ViewGroup;
@@ -1441,10 +1441,10 @@
     .line 330
     .restart local v12    # "i7":I
     :goto_2
-    iget-object v13, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v13, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
     .line 331
-    .local v13, "nznVar":Ldefpackage/nzn;
+    .local v13, "nznVar":Lnzn;
     iget-object v14, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->o:Landroid/graphics/Rect;
 
     iget v15, v14, Landroid/graphics/Rect;->left:I
@@ -1524,26 +1524,26 @@
 
     .end local v1    # "i11":I
     .local p5, "i11":I
-    iget-object v1, v13, Ldefpackage/nzn;->g:Landroid/graphics/Rect;
+    iget-object v1, v13, Lnzn;->g:Landroid/graphics/Rect;
 
-    invoke-static {v1, v15, v4, v3, v14}, Ldefpackage/nzn;->j(Landroid/graphics/Rect;IIII)Z
+    invoke-static {v1, v15, v4, v3, v14}, Lnzn;->j(Landroid/graphics/Rect;IIII)Z
 
     move-result v1
 
     if-nez v1, :cond_9
 
     .line 340
-    iget-object v1, v13, Ldefpackage/nzn;->g:Landroid/graphics/Rect;
+    iget-object v1, v13, Lnzn;->g:Landroid/graphics/Rect;
 
     invoke-virtual {v1, v15, v4, v3, v14}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 341
     const/4 v1, 0x1
 
-    iput-boolean v1, v13, Ldefpackage/nzn;->t:Z
+    iput-boolean v1, v13, Lnzn;->t:Z
 
     .line 342
-    invoke-virtual {v13}, Ldefpackage/nzn;->e()V
+    invoke-virtual {v13}, Lnzn;->e()V
 
     goto :goto_5
 
@@ -1557,10 +1557,10 @@
 
     .end local v2    # "i8":I
     .local v19, "i8":I
-    iget-object v2, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v2, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
     .line 345
-    .local v2, "nznVar2":Ldefpackage/nzn;
+    .local v2, "nznVar2":Lnzn;
     if-ne v6, v1, :cond_a
 
     iget v1, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->m:I
@@ -1625,39 +1625,39 @@
 
     .line 349
     .local v7, "i17":I
-    iget-object v6, v2, Ldefpackage/nzn;->f:Landroid/graphics/Rect;
+    iget-object v6, v2, Lnzn;->f:Landroid/graphics/Rect;
 
-    invoke-static {v6, v1, v3, v4, v7}, Ldefpackage/nzn;->j(Landroid/graphics/Rect;IIII)Z
+    invoke-static {v6, v1, v3, v4, v7}, Lnzn;->j(Landroid/graphics/Rect;IIII)Z
 
     move-result v6
 
     if-nez v6, :cond_c
 
     .line 350
-    iget-object v6, v2, Ldefpackage/nzn;->f:Landroid/graphics/Rect;
+    iget-object v6, v2, Lnzn;->f:Landroid/graphics/Rect;
 
     invoke-virtual {v6, v1, v3, v4, v7}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 351
     const/4 v6, 0x1
 
-    iput-boolean v6, v2, Ldefpackage/nzn;->t:Z
+    iput-boolean v6, v2, Lnzn;->t:Z
 
     .line 352
-    invoke-virtual {v2}, Ldefpackage/nzn;->e()V
+    invoke-virtual {v2}, Lnzn;->e()V
 
     .line 354
     :cond_c
-    iget-object v6, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v6, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
-    invoke-virtual {v6, v5}, Ldefpackage/nzn;->g(Z)V
+    invoke-virtual {v6, v5}, Lnzn;->g(Z)V
 
     .line 355
     return-void
 
     .line 294
     .end local v1    # "i14":I
-    .end local v2    # "nznVar2":Ldefpackage/nzn;
+    .end local v2    # "nznVar2":Lnzn;
     .end local v3    # "i15":I
     .end local v4    # "i16":I
     .end local v5    # "z":Z
@@ -1667,7 +1667,7 @@
     .end local v10    # "i5":I
     .end local v11    # "i6":I
     .end local v12    # "i7":I
-    .end local v13    # "nznVar":Ldefpackage/nzn;
+    .end local v13    # "nznVar":Lnzn;
     .end local v14    # "i13":I
     .end local v15    # "i9":I
     .end local v17    # "view":Landroid/view/View;
@@ -1695,9 +1695,9 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
-    iget-object v0, v0, Ldefpackage/nzn;->p:Ljava/lang/CharSequence;
+    iget-object v0, v0, Lnzn;->p:Ljava/lang/CharSequence;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1786,11 +1786,11 @@
 
     move-result v0
 
-    invoke-static {p1}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->c(Landroid/view/View;)Ldefpackage/nxg;
+    invoke-static {p1}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->c(Landroid/view/View;)Lnxg;
 
     move-result-object v1
 
-    iget v1, v1, Ldefpackage/nxg;->a:I
+    iget v1, v1, Lnxg;->a:I
 
     sub-int/2addr v0, v1
 
@@ -1804,7 +1804,7 @@
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/nwz;
+    check-cast v1, Lnwz;
 
     iget v1, v1, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
 
@@ -1836,13 +1836,13 @@
 
     .line 379
     :cond_0
-    iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->e:Ldefpackage/gy;
+    iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->e:Lgy;
 
     .line 380
-    .local v1, "gyVar":Ldefpackage/gy;
+    .local v1, "gyVar":Lgy;
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1}, Ldefpackage/gy;->d()I
+    invoke-virtual {v1}, Lgy;->d()I
 
     move-result v2
 
@@ -1854,7 +1854,7 @@
     .line 381
     .local v2, "d":I
     :goto_0
-    invoke-static {p0}, Ldefpackage/gl;->g(Landroid/view/View;)I
+    invoke-static {p0}, Lgl;->g(Landroid/view/View;)I
 
     move-result v3
 
@@ -1892,7 +1892,7 @@
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
     .line 387
-    instance-of v0, p1, Ldefpackage/nwz;
+    instance-of v0, p1, Lnwz;
 
     return v0
 .end method
@@ -1961,7 +1961,7 @@
 
     .line 406
     :cond_2
-    invoke-static {p0}, Ldefpackage/gl;->z(Landroid/view/View;)V
+    invoke-static {p0}, Lgl;->z(Landroid/view/View;)V
 
     .line 408
     .end local v1    # "drawable3":Landroid/graphics/drawable/Drawable;
@@ -2040,13 +2040,13 @@
     if-eqz v0, :cond_1
 
     .line 421
-    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
     .line 422
-    .local v0, "nznVar":Ldefpackage/nzn;
-    iget v1, v0, Ldefpackage/nzn;->a:F
+    .local v0, "nznVar":Lnzn;
+    iget v1, v0, Lnzn;->a:F
 
-    iget v2, v0, Ldefpackage/nzn;->d:F
+    iget v2, v0, Lnzn;->d:F
 
     cmpg-float v1, v1, v2
 
@@ -2070,20 +2070,20 @@
     invoke-virtual {p1, v2, v3}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z
 
     .line 425
-    iget-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
-    invoke-virtual {v2, p1}, Ldefpackage/nzn;->d(Landroid/graphics/Canvas;)V
+    invoke-virtual {v2, p1}, Lnzn;->d(Landroid/graphics/Canvas;)V
 
     .line 426
     invoke-virtual {p1, v1}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     .line 429
-    .end local v0    # "nznVar":Ldefpackage/nzn;
+    .end local v0    # "nznVar":Lnzn;
     .end local v1    # "save":I
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
-    invoke-virtual {v0, p1}, Ldefpackage/nzn;->d(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, Lnzn;->d(Landroid/graphics/Canvas;)V
 
     .line 431
     :cond_2
@@ -2099,15 +2099,15 @@
 
     .line 434
     :cond_3
-    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->e:Ldefpackage/gy;
+    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->e:Lgy;
 
     .line 435
-    .local v0, "gyVar":Ldefpackage/gy;
+    .local v0, "gyVar":Lgy;
     const/4 v1, 0x0
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {v0}, Ldefpackage/gy;->d()I
+    invoke-virtual {v0}, Lgy;->d()I
 
     move-result v2
 
@@ -2162,7 +2162,7 @@
     return-void
 
     .line 432
-    .end local v0    # "gyVar":Ldefpackage/gy;
+    .end local v0    # "gyVar":Lgy;
     .end local v2    # "d":I
     :cond_6
     :goto_1
@@ -2344,17 +2344,17 @@
 
     .line 472
     :cond_2
-    iget-object v5, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v5, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
     .line 473
-    .local v5, "nznVar":Ldefpackage/nzn;
+    .local v5, "nznVar":Lnzn;
     if-eqz v5, :cond_6
 
     .line 474
-    iput-object v0, v5, Ldefpackage/nzn;->s:[I
+    iput-object v0, v5, Lnzn;->s:[I
 
     .line 475
-    iget-object v6, v5, Ldefpackage/nzn;->l:Landroid/content/res/ColorStateList;
+    iget-object v6, v5, Lnzn;->l:Landroid/content/res/ColorStateList;
 
     .line 476
     .local v6, "colorStateList2":Landroid/content/res/ColorStateList;
@@ -2367,7 +2367,7 @@
     if-nez v7, :cond_4
 
     :cond_3
-    iget-object v7, v5, Ldefpackage/nzn;->k:Landroid/content/res/ColorStateList;
+    iget-object v7, v5, Lnzn;->k:Landroid/content/res/ColorStateList;
 
     move-object v8, v7
 
@@ -2383,7 +2383,7 @@
     .line 477
     .end local v8    # "colorStateList":Landroid/content/res/ColorStateList;
     :cond_4
-    invoke-virtual {v5}, Ldefpackage/nzn;->f()V
+    invoke-virtual {v5}, Lnzn;->f()V
 
     .line 478
     const/4 v2, 0x1
@@ -2427,7 +2427,7 @@
     if-eqz v0, :cond_0
 
     .line 491
-    invoke-static {v1}, Ldefpackage/gl;->z(Landroid/view/View;)V
+    invoke-static {v1}, Lgl;->z(Landroid/view/View;)V
 
     .line 493
     .end local v1    # "viewGroup":Landroid/view/ViewGroup;
@@ -2435,7 +2435,7 @@
     iput p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->s:I
 
     .line 494
-    invoke-static {p0}, Ldefpackage/gl;->z(Landroid/view/View;)V
+    invoke-static {p0}, Lgl;->z(Landroid/view/View;)V
 
     .line 496
     :cond_1
@@ -2447,17 +2447,17 @@
     .param p1, "charSequence"    # Ljava/lang/CharSequence;
 
     .line 499
-    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
     .line 500
-    .local v0, "nznVar":Ldefpackage/nzn;
+    .local v0, "nznVar":Lnzn;
     const/4 v1, 0x0
 
     .line 501
     .local v1, "charSequence2":Ljava/lang/CharSequence;
     if-eqz p1, :cond_0
 
-    iget-object v2, v0, Ldefpackage/nzn;->p:Ljava/lang/CharSequence;
+    iget-object v2, v0, Lnzn;->p:Ljava/lang/CharSequence;
 
     invoke-static {v2, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -2467,15 +2467,15 @@
 
     .line 502
     :cond_0
-    iput-object p1, v0, Ldefpackage/nzn;->p:Ljava/lang/CharSequence;
+    iput-object p1, v0, Lnzn;->p:Ljava/lang/CharSequence;
 
     .line 503
     const/4 v2, 0x0
 
-    iput-object v2, v0, Ldefpackage/nzn;->q:Ljava/lang/CharSequence;
+    iput-object v2, v0, Lnzn;->q:Ljava/lang/CharSequence;
 
     .line 504
-    invoke-virtual {v0}, Ldefpackage/nzn;->f()V
+    invoke-virtual {v0}, Lnzn;->f()V
 
     .line 506
     :cond_1
@@ -2484,9 +2484,9 @@
     if-eqz v2, :cond_2
 
     .line 507
-    iget-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
-    iget-object v1, v2, Ldefpackage/nzn;->p:Ljava/lang/CharSequence;
+    iget-object v1, v2, Lnzn;->p:Ljava/lang/CharSequence;
 
     .line 509
     :cond_2
@@ -2549,7 +2549,7 @@
     .line 521
     .local v5, "z":Z
     :goto_0
-    invoke-static {p0}, Ldefpackage/gl;->V(Landroid/view/View;)Z
+    invoke-static {p0}, Lgl;->V(Landroid/view/View;)Z
 
     move-result v6
 
@@ -2617,12 +2617,12 @@
 
     if-le v7, v10, :cond_5
 
-    sget-object v10, Ldefpackage/nwj;->c:Landroid/animation/TimeInterpolator;
+    sget-object v10, Lnwj;->c:Landroid/animation/TimeInterpolator;
 
     goto :goto_2
 
     :cond_5
-    sget-object v10, Ldefpackage/nwj;->d:Landroid/animation/TimeInterpolator;
+    sget-object v10, Lnwj;->d:Landroid/animation/TimeInterpolator;
 
     :goto_2
     invoke-virtual {v9, v10}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
@@ -2630,9 +2630,9 @@
     .line 536
     iget-object v10, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->u:Landroid/animation/ValueAnimator;
 
-    new-instance v11, Ldefpackage/nwy;
+    new-instance v11, Lnwy;
 
-    invoke-direct {v11, p0}, Ldefpackage/nwy;-><init>(Lcom/google/android/material/appbar/CollapsingToolbarLayout;)V
+    invoke-direct {v11, p0}, Lnwy;-><init>(Lcom/google/android/material/appbar/CollapsingToolbarLayout;)V
 
     invoke-virtual {v10, v11}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -2725,7 +2725,7 @@
     .locals 1
 
     .line 554
-    invoke-static {}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->h()Ldefpackage/nwz;
+    invoke-static {}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->h()Lnwz;
 
     move-result-object v0
 
@@ -2748,9 +2748,9 @@
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
     .line 565
-    new-instance v0, Ldefpackage/nwz;
+    new-instance v0, Lnwz;
 
-    invoke-direct {v0, p1}, Ldefpackage/nwz;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {v0, p1}, Lnwz;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-object v0
 .end method
@@ -2760,13 +2760,13 @@
     .param p1, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 570
-    new-instance v0, Ldefpackage/nwz;
+    new-instance v0, Lnwz;
 
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p1}, Ldefpackage/nwz;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, v1, p1}, Lnwz;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
@@ -2775,7 +2775,7 @@
     .locals 1
 
     .line 560
-    invoke-static {}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->h()Ldefpackage/nwz;
+    invoke-static {}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->h()Lnwz;
 
     move-result-object v0
 
@@ -2809,30 +2809,30 @@
     invoke-direct {p0, v1}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->j(Lcom/google/android/material/appbar/AppBarLayout;)V
 
     .line 580
-    invoke-static {v1}, Ldefpackage/gl;->R(Landroid/view/View;)Z
+    invoke-static {v1}, Lgl;->R(Landroid/view/View;)Z
 
     move-result v2
 
-    invoke-static {p0, v2}, Ldefpackage/gl;->L(Landroid/view/View;Z)V
+    invoke-static {p0, v2}, Lgl;->L(Landroid/view/View;Z)V
 
     .line 581
-    iget-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Ldefpackage/nxa;
+    iget-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lnxa;
 
     if-nez v2, :cond_0
 
     .line 582
-    new-instance v2, Ldefpackage/nxa;
+    new-instance v2, Lnxa;
 
-    invoke-direct {v2, p0}, Ldefpackage/nxa;-><init>(Lcom/google/android/material/appbar/CollapsingToolbarLayout;)V
+    invoke-direct {v2, p0}, Lnxa;-><init>(Lcom/google/android/material/appbar/CollapsingToolbarLayout;)V
 
-    iput-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Ldefpackage/nxa;
+    iput-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lnxa;
 
     .line 584
     :cond_0
-    iget-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Ldefpackage/nxa;
+    iget-object v2, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lnxa;
 
     .line 585
-    .local v2, "nxaVar":Ldefpackage/nxa;
+    .local v2, "nxaVar":Lnxa;
     iget-object v3, v1, Lcom/google/android/material/appbar/AppBarLayout;->d:Ljava/util/List;
 
     if-nez v3, :cond_1
@@ -2863,11 +2863,11 @@
 
     .line 591
     :cond_2
-    invoke-static {p0}, Ldefpackage/gl;->D(Landroid/view/View;)V
+    invoke-static {p0}, Lgl;->D(Landroid/view/View;)V
 
     .line 593
     .end local v1    # "appBarLayout":Lcom/google/android/material/appbar/AppBarLayout;
-    .end local v2    # "nxaVar":Ldefpackage/nxa;
+    .end local v2    # "nxaVar":Lnxa;
     :cond_3
     return-void
 .end method
@@ -2882,10 +2882,10 @@
 
     .line 599
     .local v0, "parent":Landroid/view/ViewParent;
-    iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Ldefpackage/nxa;
+    iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lnxa;
 
     .line 600
-    .local v1, "nxaVar":Ldefpackage/nxa;
+    .local v1, "nxaVar":Lnxa;
     if-eqz v1, :cond_0
 
     instance-of v2, v0, Lcom/google/android/material/appbar/AppBarLayout;
@@ -2927,14 +2927,14 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
     .line 609
-    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->e:Ldefpackage/gy;
+    iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->e:Lgy;
 
     .line 610
-    .local v0, "gyVar":Ldefpackage/gy;
+    .local v0, "gyVar":Lgy;
     if-eqz v0, :cond_1
 
     .line 611
-    invoke-virtual {v0}, Ldefpackage/gy;->d()I
+    invoke-virtual {v0}, Lgy;->d()I
 
     move-result v1
 
@@ -2959,7 +2959,7 @@
 
     .line 615
     .local v4, "childAt":Landroid/view/View;
-    invoke-static {v4}, Ldefpackage/gl;->R(Landroid/view/View;)Z
+    invoke-static {v4}, Lgl;->R(Landroid/view/View;)Z
 
     move-result v5
 
@@ -2972,7 +2972,7 @@
     if-ge v5, v1, :cond_0
 
     .line 616
-    invoke-static {v4, v1}, Ldefpackage/gl;->y(Landroid/view/View;I)V
+    invoke-static {v4, v1}, Lgl;->y(Landroid/view/View;I)V
 
     .line 613
     .end local v4    # "childAt":Landroid/view/View;
@@ -3003,11 +3003,11 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->c(Landroid/view/View;)Ldefpackage/nxg;
+    invoke-static {v3}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->c(Landroid/view/View;)Lnxg;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Ldefpackage/nxg;->b()V
+    invoke-virtual {v3}, Lnxg;->b()V
 
     .line 621
     add-int/lit8 v2, v2, 0x1
@@ -3055,11 +3055,11 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->c(Landroid/view/View;)Ldefpackage/nxg;
+    invoke-static {v4}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->c(Landroid/view/View;)Lnxg;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Ldefpackage/nxg;->a()V
+    invoke-virtual {v4}, Lnxg;->a()V
 
     .line 628
     add-int/lit8 v3, v3, 0x1
@@ -3090,13 +3090,13 @@
 
     .line 638
     .local v0, "mode":I
-    iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->e:Ldefpackage/gy;
+    iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->e:Lgy;
 
     .line 639
-    .local v1, "gyVar":Ldefpackage/gy;
+    .local v1, "gyVar":Lgy;
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Ldefpackage/gy;->d()I
+    invoke-virtual {v1}, Lgy;->d()I
 
     move-result v2
 
@@ -3141,9 +3141,9 @@
 
     if-eqz v4, :cond_3
 
-    iget-object v4, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v4, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
-    iget v4, v4, Ldefpackage/nzn;->x:I
+    iget v4, v4, Lnzn;->x:I
 
     const/4 v5, 0x1
 
@@ -3172,37 +3172,37 @@
     invoke-direct/range {v6 .. v11}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->n(IIIIZ)V
 
     .line 647
-    iget-object v4, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Ldefpackage/nzn;
+    iget-object v4, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->a:Lnzn;
 
     .line 648
-    .local v4, "nznVar":Ldefpackage/nzn;
-    iget v6, v4, Ldefpackage/nzn;->m:I
+    .local v4, "nznVar":Lnzn;
+    iget v6, v4, Lnzn;->m:I
 
     .line 649
     .local v6, "i3":I
     if-le v6, v5, :cond_3
 
     .line 650
-    iget-object v5, v4, Ldefpackage/nzn;->u:Landroid/text/TextPaint;
+    iget-object v5, v4, Lnzn;->u:Landroid/text/TextPaint;
 
     .line 651
     .local v5, "textPaint":Landroid/text/TextPaint;
-    iget v7, v4, Ldefpackage/nzn;->j:F
+    iget v7, v4, Lnzn;->j:F
 
     invoke-virtual {v5, v7}, Landroid/text/TextPaint;->setTextSize(F)V
 
     .line 652
-    iget-object v7, v4, Ldefpackage/nzn;->o:Landroid/graphics/Typeface;
+    iget-object v7, v4, Lnzn;->o:Landroid/graphics/Typeface;
 
     invoke-virtual {v5, v7}, Landroid/text/TextPaint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
     .line 653
-    iget v7, v4, Ldefpackage/nzn;->w:F
+    iget v7, v4, Lnzn;->w:F
 
     invoke-virtual {v5, v7}, Landroid/text/TextPaint;->setLetterSpacing(F)V
 
     .line 654
-    iget-object v7, v4, Ldefpackage/nzn;->u:Landroid/text/TextPaint;
+    iget-object v7, v4, Lnzn;->u:Landroid/text/TextPaint;
 
     invoke-virtual {v7}, Landroid/text/TextPaint;->ascent()F
 
@@ -3210,7 +3210,7 @@
 
     neg-float v7, v7
 
-    iget-object v8, v4, Ldefpackage/nzn;->u:Landroid/text/TextPaint;
+    iget-object v8, v4, Lnzn;->u:Landroid/text/TextPaint;
 
     invoke-virtual {v8}, Landroid/text/TextPaint;->descent()F
 
@@ -3244,7 +3244,7 @@
     invoke-super {p0, p1, v3}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
     .line 658
-    .end local v4    # "nznVar":Ldefpackage/nzn;
+    .end local v4    # "nznVar":Lnzn;
     .end local v5    # "textPaint":Landroid/text/TextPaint;
     .end local v6    # "i3":I
     :cond_3

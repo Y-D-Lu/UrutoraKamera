@@ -1,13 +1,13 @@
 .class public final Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;
-.super Ldefpackage/qmb;
+.super Lqmb;
 .source ""
 
 # interfaces
-.implements Ldefpackage/qmy;
+.implements Lqmy;
 
 
 # annotations
-.annotation runtime Ldefpackage/qlw;
+.annotation runtime Lqlw;
     b = "androidx.window.layout.WindowInfoRepositoryImpl$configurationChanged$1"
     c = "WindowInfoRepositoryImpl.kt"
     d = "invokeSuspend"
@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final $producer:Ldefpackage/qmj;
+.field public final $producer:Lqmj;
 
 .field private L$0:Ljava/lang/Object;
 
@@ -33,22 +33,22 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Ldefpackage/qmj;Ldefpackage/qlh;)V
+.method public constructor <init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Lqmj;Lqlh;)V
     .locals 1
     .param p1, "windowInfoRepositoryImpl"    # Landroidx/window/layout/WindowInfoRepositoryImpl;
-    .param p2, "qmjVar"    # Ldefpackage/qmj;
-    .param p3, "qlhVar"    # Ldefpackage/qlh;
+    .param p2, "qmjVar"    # Lqmj;
+    .param p3, "qlhVar"    # Lqlh;
 
     .line 25
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0, p3}, Ldefpackage/qmb;-><init>(ILdefpackage/qlh;)V
+    invoke-direct {p0, v0, p3}, Lqmb;-><init>(ILqlh;)V
 
     .line 26
     iput-object p1, p0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
 
     .line 27
-    iput-object p2, p0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->$producer:Ldefpackage/qmj;
+    iput-object p2, p0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->$producer:Lqmj;
 
     .line 28
     return-void
@@ -56,19 +56,19 @@
 
 
 # virtual methods
-.method public final create(Ljava/lang/Object;Ldefpackage/qlh;)Ldefpackage/qlh;
+.method public final create(Ljava/lang/Object;Lqlh;)Lqlh;
     .locals 3
     .param p1, "obj"    # Ljava/lang/Object;
-    .param p2, "qlhVar"    # Ldefpackage/qlh;
+    .param p2, "qlhVar"    # Lqlh;
 
     .line 32
     new-instance v0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;
 
     iget-object v1, p0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->this$0:Landroidx/window/layout/WindowInfoRepositoryImpl;
 
-    iget-object v2, p0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->$producer:Ldefpackage/qmj;
+    iget-object v2, p0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->$producer:Lqmj;
 
-    invoke-direct {v0, v1, v2, p2}, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Ldefpackage/qmj;Ldefpackage/qlh;)V
+    invoke-direct {v0, v1, v2, p2}, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Lqmj;Lqlh;)V
 
     .line 33
     .local v0, "windowInfoRepositoryImpl$configurationChanged$1":Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;
@@ -86,15 +86,15 @@
     .line 57
     move-object v0, p2
 
-    check-cast v0, Ldefpackage/qlh;
+    check-cast v0, Lqlh;
 
-    invoke-virtual {p0, p1, v0}, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->create(Ljava/lang/Object;Ldefpackage/qlh;)Ldefpackage/qlh;
+    invoke-virtual {p0, p1, v0}, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->create(Ljava/lang/Object;Lqlh;)Lqlh;
 
     move-result-object v0
 
     check-cast v0, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;
 
-    sget-object v1, Ldefpackage/qks;->a:Ldefpackage/qks;
+    sget-object v1, Lqks;->a:Lqks;
 
     invoke-virtual {v0, v1}, Landroidx/window/layout/WindowInfoRepositoryImpl$configurationChanged$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 

@@ -1,4 +1,4 @@
-.class final Ldefpackage/os;
+.class public Ldefpackage/Os;
 .super Ljava/lang/Object;
 .source ""
 
@@ -6,157 +6,68 @@
 .implements Ljava/lang/Runnable;
 
 
-# instance fields
-.field public final a:Ldefpackage/ot;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljur;->a(ILandroid/view/View;)V
+.end annotation
 
-.field private final b:I
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic val$i:I
+
+.field public final synthetic val$view:Landroid/view/View;
+
+.field public final synthetic val$z:Z
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/ot;I)V
+.method public constructor <init>(Landroid/view/View;ZI)V
     .locals 0
-    .param p1, "otVar"    # Ldefpackage/ot;
-    .param p2, "i"    # I
 
-    .line 16
+    .line 24
+    iput-object p1, p0, Ldefpackage/Os;->val$view:Landroid/view/View;
+
+    iput-boolean p2, p0, Ldefpackage/Os;->val$z:Z
+
+    iput p3, p0, Ldefpackage/Os;->val$i:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
-    iput p2, p0, Ldefpackage/os;->b:I
-
-    .line 18
-    iput-object p1, p0, Ldefpackage/os;->a:Ldefpackage/ot;
-
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 14
-
-    .line 23
-    iget v0, p0, Ldefpackage/os;->b:I
-
-    const/4 v1, 0x1
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 39
-    iget-object v0, p0, Ldefpackage/os;->a:Ldefpackage/ot;
-
-    iget-object v0, v0, Ldefpackage/ot;->c:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    .line 40
-    .local v0, "parent":Landroid/view/ViewParent;
-    if-nez v0, :cond_2
-
-    .line 41
-    return-void
-
-    .line 25
-    .end local v0    # "parent":Landroid/view/ViewParent;
-    :pswitch_0
-    iget-object v0, p0, Ldefpackage/os;->a:Ldefpackage/ot;
-
-    .line 26
-    .local v0, "otVar":Ldefpackage/ot;
-    invoke-virtual {v0}, Ldefpackage/ot;->d()V
+    .locals 4
 
     .line 27
-    iget-object v2, v0, Ldefpackage/ot;->c:Landroid/view/View;
+    iget-object v0, p0, Ldefpackage/Os;->val$view:Landroid/view/View;
 
     .line 28
-    .local v2, "view":Landroid/view/View;
-    invoke-virtual {v2}, Landroid/view/View;->isEnabled()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-virtual {v2}, Landroid/view/View;->isLongClickable()Z
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    invoke-virtual {v0}, Ldefpackage/ot;->b()Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    goto :goto_0
-
-    .line 31
-    :cond_0
-    invoke-virtual {v2}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v3
-
-    invoke-interface {v3, v1}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
-
-    .line 32
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
-    move-result-wide v12
-
-    .line 33
-    .local v12, "uptimeMillis":J
-    const/4 v8, 0x3
-
-    sget v10, Lcom/hdrindicator/DisplayHelper;->DENSITY:F
-
-    const/4 v11, 0x0
-
-    move-wide v4, v12
-
-    move-wide v6, v12
-
-    move v9, v10
-
-    invoke-static/range {v4 .. v11}, Landroid/view/MotionEvent;->obtain(JJIFFI)Landroid/view/MotionEvent;
-
-    move-result-object v3
-
-    .line 34
-    .local v3, "obtain":Landroid/view/MotionEvent;
-    invoke-virtual {v2, v3}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
-
-    .line 35
-    invoke-virtual {v3}, Landroid/view/MotionEvent;->recycle()V
-
-    .line 36
-    iput-boolean v1, v0, Ldefpackage/ot;->d:Z
-
-    .line 37
-    return-void
+    .local v0, "view2":Landroid/view/View;
+    iget-boolean v1, p0, Ldefpackage/Os;->val$z:Z
 
     .line 29
-    .end local v3    # "obtain":Landroid/view/MotionEvent;
-    .end local v12    # "uptimeMillis":J
-    :cond_1
-    :goto_0
+    .local v1, "z2":Z
+    iget v2, p0, Ldefpackage/Os;->val$i:I
+
+    .line 30
+    .local v2, "i2":I
+    sget-object v3, Ljur;->a:Ljava/time/Duration;
+
+    .line 31
+    .local v3, "duration":Ljava/time/Duration;
+    invoke-virtual {v0, v1}, Landroid/view/View;->setClickable(Z)V
+
+    .line 32
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 33
     return-void
-
-    .line 43
-    .end local v2    # "view":Landroid/view/View;
-    .local v0, "parent":Landroid/view/ViewParent;
-    :cond_2
-    invoke-interface {v0, v1}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
-
-    .line 44
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

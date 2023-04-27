@@ -13,16 +13,16 @@
     return-void
 .end method
 
-.method public static Arnova(Ldefpackage/lzv;)[F
+.method public static Arnova(Llzv;)[F
     .locals 25
-    .param p0, "lzvVar"    # Ldefpackage/lzv;
+    .param p0, "lzvVar"    # Llzv;
 
     .line 16
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureResult$Key;
 
     move-object/from16 v1, p0
 
-    invoke-interface {v1, v0}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2197,10 +2197,10 @@
     return v1
 .end method
 
-.method public static getPseudoCT(Lcom/google/googlex/gcam/FloatArray9;Ldefpackage/lzv;)Lcom/google/googlex/gcam/FloatArray9;
+.method public static getPseudoCT(Lcom/google/googlex/gcam/FloatArray9;Llzv;)Lcom/google/googlex/gcam/FloatArray9;
     .locals 4
     .param p0, "floatArray9"    # Lcom/google/googlex/gcam/FloatArray9;
-    .param p1, "lzvVar"    # Ldefpackage/lzv;
+    .param p1, "lzvVar"    # Llzv;
 
     .line 501
     sget v0, Lcom/Helper;->sFront:I
@@ -2220,7 +2220,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 553
-    invoke-static {p1}, Lcom/Fix/ColorTransform;->ordinary(Ldefpackage/lzv;)[F
+    invoke-static {p1}, Lcom/Fix/ColorTransform;->ordinary(Llzv;)[F
 
     move-result-object v0
 
@@ -2411,7 +2411,7 @@
     .line 511
     .end local v0    # "CustomColorTransform":[F
     :pswitch_d
-    invoke-static {p1}, Lcom/Fix/ColorTransform;->mod_1(Ldefpackage/lzv;)[F
+    invoke-static {p1}, Lcom/Fix/ColorTransform;->mod_1(Llzv;)[F
 
     move-result-object v0
 
@@ -2422,7 +2422,7 @@
     .line 508
     .end local v0    # "CustomColorTransform":[F
     :pswitch_e
-    invoke-static {p1}, Lcom/Fix/ColorTransform;->Arnova(Ldefpackage/lzv;)[F
+    invoke-static {p1}, Lcom/Fix/ColorTransform;->Arnova(Llzv;)[F
 
     move-result-object v0
 
@@ -2437,7 +2437,7 @@
 
     .line 503
     :pswitch_10
-    invoke-static {p1}, Lcom/Fix/ColorTransform;->ordinary(Ldefpackage/lzv;)[F
+    invoke-static {p1}, Lcom/Fix/ColorTransform;->ordinary(Llzv;)[F
 
     move-result-object v0
 
@@ -2626,16 +2626,16 @@
     .end array-data
 .end method
 
-.method public static mod_1(Ldefpackage/lzv;)[F
+.method public static mod_1(Llzv;)[F
     .locals 25
-    .param p0, "lzvVar"    # Ldefpackage/lzv;
+    .param p0, "lzvVar"    # Llzv;
 
     .line 560
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureResult$Key;
 
     move-object/from16 v1, p0
 
-    invoke-interface {v1, v0}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -3113,16 +3113,16 @@
     .end array-data
 .end method
 
-.method public static ordinary(Ldefpackage/lzv;)[F
+.method public static ordinary(Llzv;)[F
     .locals 25
-    .param p0, "lzvVar"    # Ldefpackage/lzv;
+    .param p0, "lzvVar"    # Llzv;
 
     .line 666
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureResult$Key;
 
     move-object/from16 v1, p0
 
-    invoke-interface {v1, v0}, Ldefpackage/lzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Llzr;->d(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
     move-result-object v0
 

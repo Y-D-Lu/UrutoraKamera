@@ -10,7 +10,7 @@
     .line 12
     const-class v0, Lcom/google/android/apps/camera/jni/microvideotonemap/MicrovideoToneMapNative;
 
-    invoke-static {v0}, Ldefpackage/lil;->a(Ljava/lang/Class;)V
+    invoke-static {v0}, Llil;->a(Ljava/lang/Class;)V
 
     .line 13
     return-void

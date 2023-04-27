@@ -1,129 +1,91 @@
-.class public final Ldefpackage/bx;
-.super Ldefpackage/cf;
+.class public Ldefpackage/Bx;
+.super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/aey;
-.implements Luf;
-.implements Lun;
-.implements Ldefpackage/ajo;
-.implements Ldefpackage/cx;
+.implements Lngm;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lngn;->c(Ljava/lang/String;Ljava/lang/Object;Lngm;)Lngi;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/by;
+.field public final synthetic this$0:Lngn;
+
+.field public final synthetic val$ngmVar:Lngm;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/by;)V
-    .locals 1
-    .param p1, "byVar"    # Ldefpackage/by;
+.method public constructor <init>(Lngn;Lngm;)V
+    .locals 0
+    .param p1, "this$0"    # Lngn;
 
-    .line 15
-    new-instance v0, Landroid/os/Handler;
+    .line 41
+    iput-object p1, p0, Ldefpackage/Bx;->this$0:Lngn;
 
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+    iput-object p2, p0, Ldefpackage/Bx;->val$ngmVar:Lngm;
 
-    invoke-direct {p0, p1, p1, v0}, Ldefpackage/cf;-><init>(Landroid/app/Activity;Landroid/content/Context;Landroid/os/Handler;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
-    iput-object p1, p0, Ldefpackage/bx;->a:Ldefpackage/by;
-
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final C()Ldefpackage/aeb;
-    .locals 1
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+    .param p1, "obj2"    # Ljava/lang/Object;
 
-    .line 21
-    iget-object v0, p0, Ldefpackage/bx;->a:Ldefpackage/by;
+    .line 44
+    const/4 v0, -0x1
 
-    iget-object v0, v0, Ldefpackage/by;->e:Ldefpackage/aeb;
+    packed-switch v0, :pswitch_data_0
 
-    return-object v0
-.end method
+    .line 48
+    iget-object v0, p0, Ldefpackage/Bx;->val$ngmVar:Lngm;
 
-.method public final D()Ldefpackage/ajm;
-    .locals 1
+    move-object v1, p1
 
-    .line 26
-    iget-object v0, p0, Ldefpackage/bx;->a:Ldefpackage/by;
+    check-cast v1, [B
 
-    invoke-virtual {v0}, Ldefpackage/ub;->D()Ldefpackage/ajm;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final a(I)Landroid/view/View;
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 31
-    iget-object v0, p0, Ldefpackage/bx;->a:Ldefpackage/by;
-
-    invoke-virtual {v0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-interface {v0, v1}, Lngm;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     return-object v0
-.end method
 
-.method public final ag()Ldefpackage/aih;
-    .locals 1
+    .line 46
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Bx;->val$ngmVar:Lngm;
 
-    .line 36
-    iget-object v0, p0, Ldefpackage/bx;->a:Ldefpackage/by;
+    move-object v1, p1
 
-    invoke-virtual {v0}, Ldefpackage/ub;->ag()Ldefpackage/aih;
+    check-cast v1, Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v2, 0x3
 
-    return-object v0
-.end method
-
-.method public final b()Z
-    .locals 2
-
-    .line 41
-    iget-object v0, p0, Ldefpackage/bx;->a:Ldefpackage/by;
-
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    .line 42
-    .local v0, "window":Landroid/view/Window;
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Landroid/view/Window;->peekDecorView()Landroid/view/View;
+    invoke-static {v1, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object v1
 
-    if-nez v1, :cond_0
+    invoke-interface {v0, v1}, Lngm;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
-    goto :goto_0
+    move-result-object v0
 
-    :cond_0
-    const/4 v1, 0x1
+    return-object v0
 
-    goto :goto_1
+    nop
 
-    :cond_1
-    :goto_0
-    const/4 v1, 0x0
-
-    :goto_1
-    return v1
-.end method
-
-.method public final c()V
-    .locals 0
-
-    .line 47
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

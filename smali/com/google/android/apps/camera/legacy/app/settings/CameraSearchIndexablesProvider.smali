@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Ldefpackage/ouj;
+.field private static final a:Louj;
 
 
 # instance fields
-.field private b:Ldefpackage/fce;
+.field private b:Lfce;
 
 
 # direct methods
@@ -18,11 +18,11 @@
     .line 23
     const-string v0, "com/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Louj;
 
     return-void
 .end method
@@ -36,14 +36,14 @@
     return-void
 .end method
 
-.method private final declared-synchronized a()Ldefpackage/fce;
+.method private final declared-synchronized a()Lfce;
     .locals 4
 
     monitor-enter p0
 
     .line 27
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->b:Ldefpackage/fce;
+    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->b:Lfce;
 
     if-nez v0, :cond_0
 
@@ -56,13 +56,13 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/ewc;
+    check-cast v0, Lewc;
 
-    invoke-interface {v0}, Ldefpackage/ewc;->d()Ldefpackage/euv;
+    invoke-interface {v0}, Lewc;->d()Leuv;
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/khx;
+    new-instance v1, Lkhx;
 
     invoke-virtual {p0}, Landroid/provider/SearchIndexablesProvider;->getContext()Landroid/content/Context;
 
@@ -70,32 +70,32 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, v2, v3}, Ldefpackage/khx;-><init>(Landroid/content/Context;[B)V
+    invoke-direct {v1, v2, v3}, Lkhx;-><init>(Landroid/content/Context;[B)V
 
-    invoke-interface {v0, v1}, Ldefpackage/euv;->j(Ldefpackage/khx;)Ldefpackage/fcg;
+    invoke-interface {v0, v1}, Leuv;->j(Lkhx;)Lfcg;
 
     move-result-object v0
 
-    invoke-interface {v0}, Ldefpackage/fcg;->a()Ldefpackage/fce;
+    invoke-interface {v0}, Lfcg;->a()Lfce;
 
     move-result-object v0
 
     .line 29
-    .local v0, "a2":Ldefpackage/fce;
-    iput-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->b:Ldefpackage/fce;
+    .local v0, "a2":Lfce;
+    iput-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->b:Lfce;
 
     .line 30
     invoke-virtual {p0}, Landroid/provider/SearchIndexablesProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/fce;->a(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lfce;->a(Landroid/content/Context;)V
 
     .line 32
-    .end local v0    # "a2":Ldefpackage/fce;
+    .end local v0    # "a2":Lfce;
     .end local p0    # "this":Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->b:Ldefpackage/fce;
+    iget-object v0, p0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->b:Lfce;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -206,9 +206,9 @@
     .locals 3
 
     .line 52
-    sget-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -216,7 +216,7 @@
 
     const/16 v2, 0x659
 
-    invoke-static {v0, v1, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v1, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 53
     const/4 v0, 0x1
@@ -229,9 +229,9 @@
     .param p1, "strArr"    # [Ljava/lang/String;
 
     .line 57
-    sget-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -239,7 +239,7 @@
 
     const/16 v2, 0x654
 
-    invoke-static {v0, v1, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v1, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 58
     new-instance v0, Landroid/database/MatrixCursor;
@@ -250,11 +250,11 @@
 
     .line 59
     .local v0, "matrixCursor":Landroid/database/MatrixCursor;
-    invoke-direct {p0}, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a()Ldefpackage/fce;
+    invoke-direct {p0}, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a()Lfce;
 
     move-result-object v1
 
-    iget-object v1, v1, Ldefpackage/fce;->m:Ljava/util/List;
+    iget-object v1, v1, Lfce;->m:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -305,9 +305,9 @@
     .param p1, "strArr"    # [Ljava/lang/String;
 
     .line 68
-    sget-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -315,7 +315,7 @@
 
     const/16 v2, 0x656
 
-    invoke-static {v0, v1, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v1, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 69
     invoke-virtual {p0}, Landroid/provider/SearchIndexablesProvider;->getContext()Landroid/content/Context;
@@ -357,31 +357,31 @@
     invoke-virtual {v1, v2}, Landroid/database/MatrixCursor;->addRow([Ljava/lang/Object;)V
 
     .line 72
-    invoke-direct {p0}, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a()Ldefpackage/fce;
+    invoke-direct {p0}, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a()Lfce;
 
     move-result-object v2
 
-    iget-object v2, v2, Ldefpackage/fce;->o:Ldefpackage/oqt;
+    iget-object v2, v2, Lfce;->o:Loqt;
 
-    check-cast v2, Ldefpackage/olk;
+    check-cast v2, Lolk;
 
     .line 73
-    .local v2, "olkVar":Ldefpackage/olk;
-    iget-object v3, v2, Ldefpackage/olk;->d:Ljava/util/Collection;
+    .local v2, "olkVar":Lolk;
+    iget-object v3, v2, Lolk;->d:Ljava/util/Collection;
 
     .line 74
     .local v3, "collection":Ljava/util/Collection;, "Ljava/util/Collection<Landroid/preference/Preference;>;"
     if-nez v3, :cond_0
 
     .line 75
-    new-instance v4, Ldefpackage/olj;
+    new-instance v4, Lolj;
 
-    invoke-direct {v4, v2}, Ldefpackage/olj;-><init>(Ldefpackage/olk;)V
+    invoke-direct {v4, v2}, Lolj;-><init>(Lolk;)V
 
     move-object v3, v4
 
     .line 76
-    iput-object v3, v2, Ldefpackage/olk;->d:Ljava/util/Collection;
+    iput-object v3, v2, Lolk;->d:Ljava/util/Collection;
 
     .line 78
     :cond_0
@@ -453,9 +453,9 @@
     .param p1, "strArr"    # [Ljava/lang/String;
 
     .line 88
-    sget-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/legacy/app/settings/CameraSearchIndexablesProvider;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -463,7 +463,7 @@
 
     const/16 v2, 0x658
 
-    invoke-static {v0, v1, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v1, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 89
     new-instance v0, Landroid/database/MatrixCursor;

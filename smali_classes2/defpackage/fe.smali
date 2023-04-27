@@ -1,96 +1,73 @@
-.class public final Ldefpackage/fe;
-.super Ldefpackage/fd;
+.class public Ldefpackage/Fe;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnDismissListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Ie;->gh(Lgtv;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private final a:Ljava/lang/Object;
+.field public final synthetic this$1:Ldefpackage/Ie;
+
+.field public final synthetic val$elwVar:Lelw;
+
+.field public final synthetic val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 1
-    .param p1, "i"    # I
+.method public constructor <init>(Ldefpackage/Ie;Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;Lelw;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Ie;
 
-    .line 9
-    invoke-direct {p0, p1}, Ldefpackage/fd;-><init>(I)V
+    .line 579
+    iput-object p1, p0, Ldefpackage/Fe;->this$1:Ldefpackage/Ie;
 
-    .line 10
-    new-instance v0, Ljava/lang/Object;
+    iput-object p2, p0, Ldefpackage/Fe;->val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p3, p0, Ldefpackage/Fe;->val$elwVar:Lelw;
 
-    iput-object v0, p0, Ldefpackage/fe;->a:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
+.method public final onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
+    .param p1, "dialogInterface"    # Landroid/content/DialogInterface;
 
-    .line 16
-    iget-object v0, p0, Ldefpackage/fe;->a:Ljava/lang/Object;
+    .line 582
+    iget-object v0, p0, Ldefpackage/Fe;->val$optionsMenuContainer:Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
 
-    monitor-enter v0
+    .line 583
+    .local v0, "optionsMenuContainer2":Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;
+    iget-object v1, p0, Ldefpackage/Fe;->val$elwVar:Lelw;
 
-    .line 17
-    :try_start_0
-    invoke-super {p0}, Ldefpackage/fd;->a()Ljava/lang/Object;
+    invoke-interface {v1}, Lelw;->n()V
 
-    move-result-object v1
+    .line 584
+    iget-object v1, v0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->m:Landroid/app/AlertDialog;
 
-    .line 18
-    .local v1, "a":Ljava/lang/Object;
-    monitor-exit v0
+    if-ne p1, v1, :cond_0
 
-    .line 19
-    return-object v1
+    .line 585
+    const/4 v1, 0x0
 
-    .line 18
-    .end local v1    # "a":Ljava/lang/Object;
-    :catchall_0
-    move-exception v1
+    iput-object v1, v0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuContainer;->m:Landroid/app/AlertDialog;
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
-.end method
-
-.method public final b(Ljava/lang/Object;)Z
-    .locals 2
-    .param p1, "obj"    # Ljava/lang/Object;
-
-    .line 25
-    iget-object v0, p0, Ldefpackage/fe;->a:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 26
-    :try_start_0
-    invoke-super {p0, p1}, Ldefpackage/fd;->b(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    .line 27
-    .local v1, "b":Z
-    monitor-exit v0
-
-    .line 28
-    return v1
-
-    .line 27
-    .end local v1    # "b":Z
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
+    .line 587
+    :cond_0
+    return-void
 .end method

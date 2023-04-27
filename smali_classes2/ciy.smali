@@ -1,0 +1,23 @@
+.class public final Lciy;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final a:Lcja;
+
+
+# direct methods
+.method public constructor <init>(Lcja;)V
+    .locals 0
+    .param p1, "cjaVar"    # Lcja;
+
+    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 9
+    iput-object p1, p0, Lciy;->a:Lcja;
+
+    .line 10
+    return-void
+.end method

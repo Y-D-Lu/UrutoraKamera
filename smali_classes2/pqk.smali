@@ -1,0 +1,11 @@
+.class public interface abstract Lpqk;
+.super Ljava/lang/Object;
+.source ""
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/Class;)Lpqj;
+.end method
+
+.method public abstract b(Ljava/lang/Class;)Z
+.end method

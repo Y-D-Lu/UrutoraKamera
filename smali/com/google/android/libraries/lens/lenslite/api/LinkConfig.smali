@@ -29,15 +29,15 @@
     .locals 2
 
     .line 43
-    new-instance v0, Ldefpackage/mgp;
+    new-instance v0, Lmgp;
 
-    invoke-direct {v0}, Ldefpackage/mgp;-><init>()V
+    invoke-direct {v0}, Lmgp;-><init>()V
 
     .line 44
-    .local v0, "mgpVar":Ldefpackage/mgp;
-    sget-object v1, Ldefpackage/mhf;->b:Ldefpackage/mhy;
+    .local v0, "mgpVar":Lmgp;
+    sget-object v1, Lmhf;->b:Lmhy;
 
-    invoke-virtual {v0, v1}, Ldefpackage/mgp;->a(Ldefpackage/mhy;)V
+    invoke-virtual {v0, v1}, Lmgp;->a(Lmhy;)V
 
     .line 45
     const/4 v1, 0x0
@@ -46,10 +46,10 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Ldefpackage/mgp;->j:Ljava/lang/Boolean;
+    iput-object v1, v0, Lmgp;->j:Ljava/lang/Boolean;
 
     .line 46
-    iput-object v1, v0, Ldefpackage/mgp;->k:Ljava/lang/Boolean;
+    iput-object v1, v0, Lmgp;->k:Ljava/lang/Boolean;
 
     .line 47
     return-object v0
@@ -63,21 +63,21 @@
     const/4 v0, 0x0
 
     .line 54
-    .local v0, "miaVar":Ldefpackage/mia;
+    .local v0, "miaVar":Lmia;
     :try_start_0
-    sget-object v1, Ldefpackage/mia;->L:Ldefpackage/mia;
+    sget-object v1, Lmia;->L:Lmia;
 
-    invoke-static {}, Ldefpackage/pos;->b()Ldefpackage/pos;
+    invoke-static {}, Lpos;->b()Lpos;
 
     move-result-object v2
 
-    invoke-static {v1, p0, v2}, Ldefpackage/ppd;->s(Ldefpackage/ppd;[BLdefpackage/pos;)Ldefpackage/ppd;
+    invoke-static {v1, p0, v2}, Lppd;->s(Lppd;[BLpos;)Lppd;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/mia;
+    check-cast v1, Lmia;
     :try_end_0
-    .catch Ldefpackage/ppp; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lppp; {:try_start_0 .. :try_end_0} :catch_0
 
     move-object v0, v1
 
@@ -89,11 +89,11 @@
     move-exception v1
 
     .line 56
-    .local v1, "e":Ldefpackage/ppp;
+    .local v1, "e":Lppp;
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     .line 58
-    .end local v1    # "e":Ldefpackage/ppp;
+    .end local v1    # "e":Lppp;
     :goto_0
     invoke-static {}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->builder()Lcom/google/android/libraries/lens/lenslite/api/LinkConfig$Builder;
 
@@ -101,7 +101,7 @@
 
     .line 59
     .local v1, "builder":Lcom/google/android/libraries/lens/lenslite/api/LinkConfig$Builder;
-    iget v2, v0, Ldefpackage/mia;->a:I
+    iget v2, v0, Lmia;->a:I
 
     const/4 v3, 0x1
 
@@ -112,19 +112,19 @@
     .line 60
     move-object v2, v1
 
-    check-cast v2, Ldefpackage/mgp;
+    check-cast v2, Lmgp;
 
-    iget-boolean v4, v0, Ldefpackage/mia;->c:Z
+    iget-boolean v4, v0, Lmia;->c:Z
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v4
 
-    iput-object v4, v2, Ldefpackage/mgp;->a:Ljava/lang/Boolean;
+    iput-object v4, v2, Lmgp;->a:Ljava/lang/Boolean;
 
     .line 62
     :cond_0
-    iget v2, v0, Ldefpackage/mia;->a:I
+    iget v2, v0, Lmia;->a:I
 
     const/high16 v4, 0x800000
 
@@ -135,19 +135,19 @@
     .line 63
     move-object v2, v1
 
-    check-cast v2, Ldefpackage/mgp;
+    check-cast v2, Lmgp;
 
-    iget-boolean v4, v0, Ldefpackage/mia;->c:Z
+    iget-boolean v4, v0, Lmia;->c:Z
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v4
 
-    iput-object v4, v2, Ldefpackage/mgp;->b:Ljava/lang/Boolean;
+    iput-object v4, v2, Lmgp;->b:Ljava/lang/Boolean;
 
     .line 65
     :cond_1
-    iget v2, v0, Ldefpackage/mia;->a:I
+    iget v2, v0, Lmia;->a:I
 
     and-int/lit8 v2, v2, 0x2
 
@@ -156,19 +156,19 @@
     .line 66
     move-object v2, v1
 
-    check-cast v2, Ldefpackage/mgp;
+    check-cast v2, Lmgp;
 
-    iget-boolean v4, v0, Ldefpackage/mia;->d:Z
+    iget-boolean v4, v0, Lmia;->d:Z
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v4
 
-    iput-object v4, v2, Ldefpackage/mgp;->c:Ljava/lang/Boolean;
+    iput-object v4, v2, Lmgp;->c:Ljava/lang/Boolean;
 
     .line 68
     :cond_2
-    iget v2, v0, Ldefpackage/mia;->a:I
+    iget v2, v0, Lmia;->a:I
 
     and-int/lit8 v2, v2, 0x10
 
@@ -177,39 +177,39 @@
     .line 69
     move-object v2, v1
 
-    check-cast v2, Ldefpackage/mgp;
+    check-cast v2, Lmgp;
 
     .line 70
-    .local v2, "mgpVar":Ldefpackage/mgp;
-    iget-boolean v4, v0, Ldefpackage/mia;->g:Z
+    .local v2, "mgpVar":Lmgp;
+    iget-boolean v4, v0, Lmia;->g:Z
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v4
 
-    iput-object v4, v2, Ldefpackage/mgp;->e:Ljava/lang/Boolean;
+    iput-object v4, v2, Lmgp;->e:Ljava/lang/Boolean;
 
     .line 71
-    iget-object v4, v0, Ldefpackage/mia;->r:Ldefpackage/mic;
+    iget-object v4, v0, Lmia;->r:Lmic;
 
     .line 72
-    .local v4, "micVar":Ldefpackage/mic;
+    .local v4, "micVar":Lmic;
     if-nez v4, :cond_3
 
     .line 73
-    sget-object v4, Ldefpackage/mic;->b:Ldefpackage/mic;
+    sget-object v4, Lmic;->b:Lmic;
 
     .line 75
     :cond_3
-    iget-object v5, v4, Ldefpackage/mic;->a:Ldefpackage/ppm;
+    iget-object v5, v4, Lmic;->a:Lppm;
 
-    iput-object v5, v2, Ldefpackage/mgp;->f:Ljava/util/List;
+    iput-object v5, v2, Lmgp;->f:Ljava/util/List;
 
     .line 77
-    .end local v2    # "mgpVar":Ldefpackage/mgp;
-    .end local v4    # "micVar":Ldefpackage/mic;
+    .end local v2    # "mgpVar":Lmgp;
+    .end local v4    # "micVar":Lmic;
     :cond_4
-    iget v2, v0, Ldefpackage/mia;->a:I
+    iget v2, v0, Lmia;->a:I
 
     and-int/lit8 v2, v2, 0x20
 
@@ -218,63 +218,63 @@
     .line 78
     move-object v2, v1
 
-    check-cast v2, Ldefpackage/mgp;
+    check-cast v2, Lmgp;
 
-    iget v4, v0, Ldefpackage/mia;->h:I
+    iget v4, v0, Lmia;->h:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    iput-object v4, v2, Ldefpackage/mgp;->g:Ljava/lang/Integer;
+    iput-object v4, v2, Lmgp;->g:Ljava/lang/Integer;
 
     .line 80
     :cond_5
-    iget-object v2, v0, Ldefpackage/mia;->i:Ldefpackage/mid;
+    iget-object v2, v0, Lmia;->i:Lmid;
 
     .line 81
-    .local v2, "midVar":Ldefpackage/mid;
+    .local v2, "midVar":Lmid;
     if-nez v2, :cond_6
 
     .line 82
-    sget-object v2, Ldefpackage/mid;->c:Ldefpackage/mid;
+    sget-object v2, Lmid;->c:Lmid;
 
     .line 84
     :cond_6
-    iget v4, v2, Ldefpackage/mid;->a:I
+    iget v4, v2, Lmid;->a:I
 
     and-int/lit8 v4, v4, 0x2
 
     if-eqz v4, :cond_8
 
     .line 85
-    iget-object v4, v0, Ldefpackage/mia;->i:Ldefpackage/mid;
+    iget-object v4, v0, Lmia;->i:Lmid;
 
     .line 86
-    .local v4, "midVar2":Ldefpackage/mid;
+    .local v4, "midVar2":Lmid;
     if-nez v4, :cond_7
 
     .line 87
-    sget-object v4, Ldefpackage/mid;->c:Ldefpackage/mid;
+    sget-object v4, Lmid;->c:Lmid;
 
     .line 89
     :cond_7
     move-object v5, v1
 
-    check-cast v5, Ldefpackage/mgp;
+    check-cast v5, Lmgp;
 
-    iget-boolean v6, v4, Ldefpackage/mid;->b:Z
+    iget-boolean v6, v4, Lmid;->b:Z
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v6
 
-    iput-object v6, v5, Ldefpackage/mgp;->d:Ljava/lang/Boolean;
+    iput-object v6, v5, Lmgp;->d:Ljava/lang/Boolean;
 
     .line 91
-    .end local v4    # "midVar2":Ldefpackage/mid;
+    .end local v4    # "midVar2":Lmid;
     :cond_8
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     and-int/lit8 v4, v4, 0x2
 
@@ -283,20 +283,20 @@
     .line 92
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
     .line 93
-    .local v4, "mgpVar2":Ldefpackage/mgp;
-    iget-boolean v5, v0, Ldefpackage/mia;->d:Z
+    .local v4, "mgpVar2":Lmgp;
+    iget-boolean v5, v0, Lmia;->d:Z
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->c:Ljava/lang/Boolean;
+    iput-object v5, v4, Lmgp;->c:Ljava/lang/Boolean;
 
     .line 94
-    iget-object v5, v0, Ldefpackage/mia;->p:Ldefpackage/ppm;
+    iget-object v5, v0, Lmia;->p:Lppm;
 
     invoke-interface {v5}, Ljava/util/List;->size()I
 
@@ -311,7 +311,7 @@
 
     .line 96
     .local v5, "hashMap":Ljava/util/HashMap;
-    iget-object v6, v0, Ldefpackage/mia;->p:Ldefpackage/ppm;
+    iget-object v6, v0, Lmia;->p:Lppm;
 
     check-cast v6, Ljava/util/Set;
 
@@ -330,13 +330,13 @@
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/mif;
+    check-cast v7, Lmif;
 
     .line 97
-    .local v7, "mifVar":Ldefpackage/mif;
-    iget-object v8, v7, Ldefpackage/mif;->b:Ljava/lang/String;
+    .local v7, "mifVar":Lmif;
+    iget-object v8, v7, Lmif;->b:Ljava/lang/String;
 
-    iget v9, v7, Ldefpackage/mif;->c:F
+    iget v9, v7, Lmif;->c:F
 
     invoke-static {v9}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -345,27 +345,27 @@
     invoke-virtual {v5, v8, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 98
-    .end local v7    # "mifVar":Ldefpackage/mif;
+    .end local v7    # "mifVar":Lmif;
     goto :goto_1
 
     .line 99
     :cond_9
-    iput-object v5, v4, Ldefpackage/mgp;->n:Ljava/util/Map;
+    iput-object v5, v4, Lmgp;->n:Ljava/util/Map;
 
     .line 102
-    .end local v4    # "mgpVar2":Ldefpackage/mgp;
+    .end local v4    # "mgpVar2":Lmgp;
     .end local v5    # "hashMap":Ljava/util/HashMap;
     :cond_a
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     and-int/lit16 v4, v4, 0x80
 
     if-eqz v4, :cond_c
 
     .line 103
-    iget v4, v0, Ldefpackage/mia;->j:I
+    iget v4, v0, Lmia;->j:I
 
-    invoke-static {v4}, Ldefpackage/mip;->y(I)I
+    invoke-static {v4}, Lmip;->y(I)I
 
     move-result v4
 
@@ -380,7 +380,7 @@
     :cond_b
     move-object v5, v1
 
-    check-cast v5, Ldefpackage/mgp;
+    check-cast v5, Lmgp;
 
     add-int/lit8 v6, v4, -0x1
 
@@ -388,12 +388,12 @@
 
     move-result-object v6
 
-    iput-object v6, v5, Ldefpackage/mgp;->h:Ljava/lang/Integer;
+    iput-object v6, v5, Lmgp;->h:Ljava/lang/Integer;
 
     .line 109
     .end local v4    # "y":I
     :cond_c
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     and-int/lit16 v4, v4, 0x100
 
@@ -402,19 +402,19 @@
     .line 110
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
-    iget-boolean v5, v0, Ldefpackage/mia;->k:Z
+    iget-boolean v5, v0, Lmia;->k:Z
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->i:Ljava/lang/Boolean;
+    iput-object v5, v4, Lmgp;->i:Ljava/lang/Boolean;
 
     .line 112
     :cond_d
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     const/high16 v5, 0x100000
 
@@ -425,20 +425,20 @@
     .line 113
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
     .line 114
-    .local v4, "mgpVar3":Ldefpackage/mgp;
-    iget-boolean v5, v0, Ldefpackage/mia;->x:Z
+    .local v4, "mgpVar3":Lmgp;
+    iget-boolean v5, v0, Lmia;->x:Z
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->w:Ljava/lang/Boolean;
+    iput-object v5, v4, Lmgp;->w:Ljava/lang/Boolean;
 
     .line 115
-    iget v5, v0, Ldefpackage/mia;->a:I
+    iget v5, v0, Lmia;->a:I
 
     const/high16 v6, 0x400000
 
@@ -447,24 +447,24 @@
     if-eqz v5, :cond_f
 
     .line 116
-    iget-object v5, v0, Ldefpackage/mia;->z:Ldefpackage/mhz;
+    iget-object v5, v0, Lmia;->z:Lmhz;
 
     .line 117
-    .local v5, "mhzVar":Ldefpackage/mhz;
+    .local v5, "mhzVar":Lmhz;
     if-nez v5, :cond_e
 
     .line 118
-    sget-object v5, Ldefpackage/mhz;->a:Ldefpackage/mhz;
+    sget-object v5, Lmhz;->a:Lmhz;
 
     .line 120
     :cond_e
-    iput-object v5, v4, Ldefpackage/mgp;->x:Ldefpackage/mhz;
+    iput-object v5, v4, Lmgp;->x:Lmhz;
 
     .line 123
-    .end local v4    # "mgpVar3":Ldefpackage/mgp;
-    .end local v5    # "mhzVar":Ldefpackage/mhz;
+    .end local v4    # "mgpVar3":Lmgp;
+    .end local v5    # "mhzVar":Lmhz;
     :cond_f
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     and-int/lit16 v4, v4, 0x200
 
@@ -473,19 +473,19 @@
     .line 124
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
-    iget v5, v0, Ldefpackage/mia;->l:I
+    iget v5, v0, Lmia;->l:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->l:Ljava/lang/Integer;
+    iput-object v5, v4, Lmgp;->l:Ljava/lang/Integer;
 
     .line 126
     :cond_10
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     and-int/lit16 v4, v4, 0x400
 
@@ -494,19 +494,19 @@
     .line 127
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
-    iget-boolean v5, v0, Ldefpackage/mia;->m:Z
+    iget-boolean v5, v0, Lmia;->m:Z
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->m:Ljava/lang/Boolean;
+    iput-object v5, v4, Lmgp;->m:Ljava/lang/Boolean;
 
     .line 129
     :cond_11
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     and-int/lit16 v4, v4, 0x800
 
@@ -515,19 +515,19 @@
     .line 130
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
-    iget-boolean v5, v0, Ldefpackage/mia;->n:Z
+    iget-boolean v5, v0, Lmia;->n:Z
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->o:Ljava/lang/Boolean;
+    iput-object v5, v4, Lmgp;->o:Ljava/lang/Boolean;
 
     .line 132
     :cond_12
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     and-int/lit16 v4, v4, 0x1000
 
@@ -536,19 +536,19 @@
     .line 133
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
-    iget-boolean v5, v0, Ldefpackage/mia;->o:Z
+    iget-boolean v5, v0, Lmia;->o:Z
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->p:Ljava/lang/Boolean;
+    iput-object v5, v4, Lmgp;->p:Ljava/lang/Boolean;
 
     .line 135
     :cond_13
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     and-int/lit8 v4, v4, 0x4
 
@@ -557,17 +557,17 @@
     .line 136
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->q:Ljava/lang/Boolean;
+    iput-object v5, v4, Lmgp;->q:Ljava/lang/Boolean;
 
     .line 138
     :cond_14
-    iget v4, v0, Ldefpackage/mia;->a:I
+    iget v4, v0, Lmia;->a:I
 
     const/high16 v5, 0x10000
 
@@ -578,66 +578,66 @@
     .line 139
     move-object v4, v1
 
-    check-cast v4, Ldefpackage/mgp;
+    check-cast v4, Lmgp;
 
-    iget-boolean v5, v0, Ldefpackage/mia;->t:Z
+    iget-boolean v5, v0, Lmia;->t:Z
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iput-object v5, v4, Ldefpackage/mgp;->r:Ljava/lang/Boolean;
+    iput-object v5, v4, Lmgp;->r:Ljava/lang/Boolean;
 
     .line 141
     :cond_15
-    iget v4, v0, Ldefpackage/mia;->q:I
+    iget v4, v0, Lmia;->q:I
 
-    invoke-static {v4}, Ldefpackage/mhy;->b(I)Ldefpackage/mhy;
+    invoke-static {v4}, Lmhy;->b(I)Lmhy;
 
     move-result-object v4
 
     .line 142
-    .local v4, "b2":Ldefpackage/mhy;
+    .local v4, "b2":Lmhy;
     if-nez v4, :cond_16
 
     .line 143
-    sget-object v4, Ldefpackage/mhy;->UNKNOWN_DYNAMIC_LOADING_MODE:Ldefpackage/mhy;
+    sget-object v4, Lmhy;->UNKNOWN_DYNAMIC_LOADING_MODE:Lmhy;
 
     .line 145
     :cond_16
-    sget-object v5, Ldefpackage/mhy;->UNKNOWN_DYNAMIC_LOADING_MODE:Ldefpackage/mhy;
+    sget-object v5, Lmhy;->UNKNOWN_DYNAMIC_LOADING_MODE:Lmhy;
 
     if-ne v4, v5, :cond_17
 
     .line 146
-    sget-object v5, Ldefpackage/mhf;->b:Ldefpackage/mhy;
+    sget-object v5, Lmhf;->b:Lmhy;
 
-    .local v5, "b":Ldefpackage/mhy;
+    .local v5, "b":Lmhy;
     goto :goto_2
 
     .line 148
-    .end local v5    # "b":Ldefpackage/mhy;
+    .end local v5    # "b":Lmhy;
     :cond_17
-    iget v5, v0, Ldefpackage/mia;->q:I
+    iget v5, v0, Lmia;->q:I
 
-    invoke-static {v5}, Ldefpackage/mhy;->b(I)Ldefpackage/mhy;
+    invoke-static {v5}, Lmhy;->b(I)Lmhy;
 
     move-result-object v5
 
     .line 149
-    .restart local v5    # "b":Ldefpackage/mhy;
+    .restart local v5    # "b":Lmhy;
     if-nez v5, :cond_18
 
     .line 150
-    sget-object v5, Ldefpackage/mhy;->UNKNOWN_DYNAMIC_LOADING_MODE:Ldefpackage/mhy;
+    sget-object v5, Lmhy;->UNKNOWN_DYNAMIC_LOADING_MODE:Lmhy;
 
     .line 153
     :cond_18
     :goto_2
-    invoke-virtual {v1, v5}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig$Builder;->a(Ldefpackage/mhy;)V
+    invoke-virtual {v1, v5}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig$Builder;->a(Lmhy;)V
 
     .line 154
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x20000
 
@@ -646,9 +646,9 @@
     if-eqz v6, :cond_1a
 
     .line 155
-    iget v6, v0, Ldefpackage/mia;->u:I
+    iget v6, v0, Lmia;->u:I
 
-    invoke-static {v6}, Ldefpackage/mip;->z(I)I
+    invoke-static {v6}, Lmip;->z(I)I
 
     move-result v6
 
@@ -663,7 +663,7 @@
     :cond_19
     move-object v7, v1
 
-    check-cast v7, Ldefpackage/mgp;
+    check-cast v7, Lmgp;
 
     add-int/lit8 v8, v6, -0x1
 
@@ -671,12 +671,12 @@
 
     move-result-object v8
 
-    iput-object v8, v7, Ldefpackage/mgp;->s:Ljava/lang/Integer;
+    iput-object v8, v7, Lmgp;->s:Ljava/lang/Integer;
 
     .line 161
     .end local v6    # "z":I
     :cond_1a
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x40000
 
@@ -687,19 +687,19 @@
     .line 162
     move-object v6, v1
 
-    check-cast v6, Ldefpackage/mgp;
+    check-cast v6, Lmgp;
 
-    iget-boolean v7, v0, Ldefpackage/mia;->v:Z
+    iget-boolean v7, v0, Lmia;->v:Z
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v7
 
-    iput-object v7, v6, Ldefpackage/mgp;->t:Ljava/lang/Boolean;
+    iput-object v7, v6, Lmgp;->t:Ljava/lang/Boolean;
 
     .line 164
     :cond_1b
-    iget v6, v0, Ldefpackage/mia;->b:I
+    iget v6, v0, Lmia;->b:I
 
     and-int/lit8 v6, v6, 0x2
 
@@ -708,19 +708,19 @@
     .line 165
     move-object v6, v1
 
-    check-cast v6, Ldefpackage/mgp;
+    check-cast v6, Lmgp;
 
-    iget-wide v7, v0, Ldefpackage/mia;->K:J
+    iget-wide v7, v0, Lmia;->K:J
 
     invoke-static {v7, v8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v7
 
-    iput-object v7, v6, Ldefpackage/mgp;->u:Ljava/lang/Long;
+    iput-object v7, v6, Lmgp;->u:Ljava/lang/Long;
 
     .line 167
     :cond_1c
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x80000
 
@@ -731,19 +731,19 @@
     .line 168
     move-object v6, v1
 
-    check-cast v6, Ldefpackage/mgp;
+    check-cast v6, Lmgp;
 
-    iget-boolean v7, v0, Ldefpackage/mia;->w:Z
+    iget-boolean v7, v0, Lmia;->w:Z
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v7
 
-    iput-object v7, v6, Ldefpackage/mgp;->v:Ljava/lang/Boolean;
+    iput-object v7, v6, Lmgp;->v:Ljava/lang/Boolean;
 
     .line 170
     :cond_1d
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x200000
 
@@ -754,19 +754,19 @@
     .line 171
     move-object v6, v1
 
-    check-cast v6, Ldefpackage/mgp;
+    check-cast v6, Lmgp;
 
-    iget-wide v7, v0, Ldefpackage/mia;->y:J
+    iget-wide v7, v0, Lmia;->y:J
 
     invoke-static {v7, v8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v7
 
-    iput-object v7, v6, Ldefpackage/mgp;->y:Ljava/lang/Long;
+    iput-object v7, v6, Lmgp;->y:Ljava/lang/Long;
 
     .line 173
     :cond_1e
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x1000000
 
@@ -777,19 +777,19 @@
     .line 174
     move-object v6, v1
 
-    check-cast v6, Ldefpackage/mgp;
+    check-cast v6, Lmgp;
 
-    iget-boolean v7, v0, Ldefpackage/mia;->B:Z
+    iget-boolean v7, v0, Lmia;->B:Z
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v7
 
-    iput-object v7, v6, Ldefpackage/mgp;->z:Ljava/lang/Boolean;
+    iput-object v7, v6, Lmgp;->z:Ljava/lang/Boolean;
 
     .line 176
     :cond_1f
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x2000000
 
@@ -798,22 +798,22 @@
     if-eqz v6, :cond_21
 
     .line 177
-    iget-object v6, v0, Ldefpackage/mia;->C:Ldefpackage/mio;
+    iget-object v6, v0, Lmia;->C:Lmio;
 
     .line 178
-    .local v6, "mioVar":Ldefpackage/mio;
+    .local v6, "mioVar":Lmio;
     if-nez v6, :cond_20
 
     .line 179
-    sget-object v6, Ldefpackage/mio;->a:Ldefpackage/mio;
+    sget-object v6, Lmio;->a:Lmio;
 
     .line 181
     :cond_20
     move-object v7, v1
 
-    check-cast v7, Ldefpackage/mgp;
+    check-cast v7, Lmgp;
 
-    invoke-virtual {v6}, Ldefpackage/pnm;->g()[B
+    invoke-virtual {v6}, Lpnm;->g()[B
 
     move-result-object v8
 
@@ -821,12 +821,12 @@
 
     move-result-object v8
 
-    iput-object v8, v7, Ldefpackage/mgp;->A:Ljava/nio/ByteBuffer;
+    iput-object v8, v7, Lmgp;->A:Ljava/nio/ByteBuffer;
 
     .line 183
-    .end local v6    # "mioVar":Ldefpackage/mio;
+    .end local v6    # "mioVar":Lmio;
     :cond_21
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x4000000
 
@@ -837,19 +837,19 @@
     .line 184
     move-object v6, v1
 
-    check-cast v6, Ldefpackage/mgp;
+    check-cast v6, Lmgp;
 
-    iget-boolean v7, v0, Ldefpackage/mia;->D:Z
+    iget-boolean v7, v0, Lmia;->D:Z
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v7
 
-    iput-object v7, v6, Ldefpackage/mgp;->B:Ljava/lang/Boolean;
+    iput-object v7, v6, Lmgp;->B:Ljava/lang/Boolean;
 
     .line 186
     :cond_22
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x8000000
 
@@ -860,11 +860,11 @@
     .line 187
     move-object v6, v1
 
-    check-cast v6, Ldefpackage/mgp;
+    check-cast v6, Lmgp;
 
-    iget-object v7, v0, Ldefpackage/mia;->E:Ldefpackage/poc;
+    iget-object v7, v0, Lmia;->E:Lpoc;
 
-    invoke-virtual {v7}, Ldefpackage/poc;->B()[B
+    invoke-virtual {v7}, Lpoc;->B()[B
 
     move-result-object v7
 
@@ -872,11 +872,11 @@
 
     move-result-object v7
 
-    iput-object v7, v6, Ldefpackage/mgp;->C:Ljava/nio/ByteBuffer;
+    iput-object v7, v6, Lmgp;->C:Ljava/nio/ByteBuffer;
 
     .line 189
     :cond_23
-    iget v6, v0, Ldefpackage/mia;->a:I
+    iget v6, v0, Lmia;->a:I
 
     const/high16 v7, 0x10000000
 
@@ -887,19 +887,19 @@
     .line 190
     move-object v6, v1
 
-    check-cast v6, Ldefpackage/mgp;
+    check-cast v6, Lmgp;
 
-    iget-boolean v7, v0, Ldefpackage/mia;->F:Z
+    iget-boolean v7, v0, Lmia;->F:Z
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v7
 
-    iput-object v7, v6, Ldefpackage/mgp;->D:Ljava/lang/Boolean;
+    iput-object v7, v6, Lmgp;->D:Ljava/lang/Boolean;
 
     .line 192
     :cond_24
-    iget v6, v0, Ldefpackage/mia;->b:I
+    iget v6, v0, Lmia;->b:I
 
     and-int/2addr v3, v6
 
@@ -908,19 +908,19 @@
     .line 193
     move-object v3, v1
 
-    check-cast v3, Ldefpackage/mgp;
+    check-cast v3, Lmgp;
 
-    iget-boolean v6, v0, Ldefpackage/mia;->J:Z
+    iget-boolean v6, v0, Lmia;->J:Z
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v6
 
-    iput-object v6, v3, Ldefpackage/mgp;->E:Ljava/lang/Boolean;
+    iput-object v6, v3, Lmgp;->E:Ljava/lang/Boolean;
 
     .line 195
     :cond_25
-    iget v3, v0, Ldefpackage/mia;->a:I
+    iget v3, v0, Lmia;->a:I
 
     const/high16 v6, 0x20000000
 
@@ -929,25 +929,25 @@
     if-eqz v6, :cond_27
 
     .line 196
-    iget-object v6, v0, Ldefpackage/mia;->G:Ldefpackage/mie;
+    iget-object v6, v0, Lmia;->G:Lmie;
 
     .line 197
-    .local v6, "mieVar":Ldefpackage/mie;
+    .local v6, "mieVar":Lmie;
     if-nez v6, :cond_26
 
     .line 198
-    sget-object v6, Ldefpackage/mie;->a:Ldefpackage/mie;
+    sget-object v6, Lmie;->a:Lmie;
 
     .line 200
     :cond_26
     move-object v7, v1
 
-    check-cast v7, Ldefpackage/mgp;
+    check-cast v7, Lmgp;
 
-    iput-object v6, v7, Ldefpackage/mgp;->G:Ldefpackage/mie;
+    iput-object v6, v7, Lmgp;->G:Lmie;
 
     .line 202
-    .end local v6    # "mieVar":Ldefpackage/mie;
+    .end local v6    # "mieVar":Lmie;
     :cond_27
     const/high16 v6, 0x40000000    # 2.0f
 
@@ -958,19 +958,19 @@
     .line 203
     move-object v3, v1
 
-    check-cast v3, Ldefpackage/mgp;
+    check-cast v3, Lmgp;
 
-    iget-boolean v6, v0, Ldefpackage/mia;->H:Z
+    iget-boolean v6, v0, Lmia;->H:Z
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v6
 
-    iput-object v6, v3, Ldefpackage/mgp;->F:Ljava/lang/Boolean;
+    iput-object v6, v3, Lmgp;->F:Ljava/lang/Boolean;
 
     .line 205
     :cond_28
-    iget v3, v0, Ldefpackage/mia;->a:I
+    iget v3, v0, Lmia;->a:I
 
     const/high16 v6, -0x80000000
 
@@ -981,15 +981,15 @@
     .line 206
     move-object v3, v1
 
-    check-cast v3, Ldefpackage/mgp;
+    check-cast v3, Lmgp;
 
-    iget-boolean v6, v0, Ldefpackage/mia;->I:Z
+    iget-boolean v6, v0, Lmia;->I:Z
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v6
 
-    iput-object v6, v3, Ldefpackage/mgp;->H:Ljava/lang/Boolean;
+    iput-object v6, v3, Lmgp;->H:Ljava/lang/Boolean;
 
     .line 208
     :cond_29
@@ -1025,7 +1025,7 @@
 .method public abstract dutyCycleMode()Ljava/lang/Integer;
 .end method
 
-.method public abstract dynamicLoadingMode()Ldefpackage/mhy;
+.method public abstract dynamicLoadingMode()Lmhy;
 .end method
 
 .method public abstract embedderModeEnabled()Ljava/lang/Boolean;
@@ -1046,7 +1046,7 @@
 .method public abstract lens2020ModeEnabled()Ljava/lang/Boolean;
 .end method
 
-.method public abstract lens2020Params()Ldefpackage/mhz;
+.method public abstract lens2020Params()Lmhz;
 .end method
 
 .method public abstract lightweightSuggestionsModeEnabled()Ljava/lang/Boolean;
@@ -1061,7 +1061,7 @@
 .method public abstract minimumDynamicLoadingHostVersion()Ljava/lang/Long;
 .end method
 
-.method public abstract mobileRaidParams()Ldefpackage/mie;
+.method public abstract mobileRaidParams()Lmie;
 .end method
 
 .method public abstract modelDownloadCheckTimeoutMs()Ljava/lang/Long;
@@ -1124,14 +1124,14 @@
     .locals 38
 
     .line 289
-    sget-object v0, Ldefpackage/mia;->L:Ldefpackage/mia;
+    sget-object v0, Lmia;->L:Lmia;
 
-    invoke-virtual {v0}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v0}, Lppd;->m()Lpoy;
 
     move-result-object v1
 
     .line 290
-    .local v1, "m":Ldefpackage/poy;
+    .local v1, "m":Lpoy;
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->wifiConnectionEnabled()Ljava/lang/Boolean;
 
     move-result-object v2
@@ -1151,36 +1151,36 @@
 
     .line 293
     .local v0, "booleanValue":Z
-    iget-boolean v5, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v5, v1, Lpoy;->c:Z
 
     if-eqz v5, :cond_0
 
     .line 294
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 295
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 297
     :cond_0
-    iget-object v5, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v5, v1, Lpoy;->b:Lppd;
 
-    check-cast v5, Ldefpackage/mia;
+    check-cast v5, Lmia;
 
     .line 298
-    .local v5, "miaVar":Ldefpackage/mia;
-    iget v6, v5, Ldefpackage/mia;->a:I
+    .local v5, "miaVar":Lmia;
+    iget v6, v5, Lmia;->a:I
 
     or-int/2addr v6, v3
 
-    iput v6, v5, Ldefpackage/mia;->a:I
+    iput v6, v5, Lmia;->a:I
 
     .line 299
-    iput-boolean v0, v5, Ldefpackage/mia;->c:Z
+    iput-boolean v0, v5, Lmia;->c:Z
 
     .line 301
     .end local v0    # "booleanValue":Z
-    .end local v5    # "miaVar":Ldefpackage/mia;
+    .end local v5    # "miaVar":Lmia;
     :cond_1
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->wifiScanEnabled()Ljava/lang/Boolean;
 
@@ -1197,38 +1197,38 @@
 
     .line 304
     .local v0, "booleanValue2":Z
-    iget-boolean v6, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v6, v1, Lpoy;->c:Z
 
     if-eqz v6, :cond_2
 
     .line 305
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 306
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 308
     :cond_2
-    iget-object v6, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v6, v1, Lpoy;->b:Lppd;
 
-    check-cast v6, Ldefpackage/mia;
+    check-cast v6, Lmia;
 
     .line 309
-    .local v6, "miaVar2":Ldefpackage/mia;
-    iget v7, v6, Ldefpackage/mia;->a:I
+    .local v6, "miaVar2":Lmia;
+    iget v7, v6, Lmia;->a:I
 
     const/high16 v8, 0x800000
 
     or-int/2addr v7, v8
 
-    iput v7, v6, Ldefpackage/mia;->a:I
+    iput v7, v6, Lmia;->a:I
 
     .line 310
-    iput-boolean v0, v6, Ldefpackage/mia;->A:Z
+    iput-boolean v0, v6, Lmia;->A:Z
 
     .line 312
     .end local v0    # "booleanValue2":Z
-    .end local v6    # "miaVar2":Ldefpackage/mia;
+    .end local v6    # "miaVar2":Lmia;
     :cond_3
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->sceneDetectionEnabled()Ljava/lang/Boolean;
 
@@ -1245,36 +1245,36 @@
 
     .line 315
     .local v0, "booleanValue3":Z
-    iget-boolean v7, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v7, v1, Lpoy;->c:Z
 
     if-eqz v7, :cond_4
 
     .line 316
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 317
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 319
     :cond_4
-    iget-object v7, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v7, v1, Lpoy;->b:Lppd;
 
-    check-cast v7, Ldefpackage/mia;
+    check-cast v7, Lmia;
 
     .line 320
-    .local v7, "miaVar3":Ldefpackage/mia;
-    iget v8, v7, Ldefpackage/mia;->a:I
+    .local v7, "miaVar3":Lmia;
+    iget v8, v7, Lmia;->a:I
 
     or-int/lit8 v8, v8, 0x2
 
-    iput v8, v7, Ldefpackage/mia;->a:I
+    iput v8, v7, Lmia;->a:I
 
     .line 321
-    iput-boolean v0, v7, Ldefpackage/mia;->d:Z
+    iput-boolean v0, v7, Lmia;->d:Z
 
     .line 323
     .end local v0    # "booleanValue3":Z
-    .end local v7    # "miaVar3":Ldefpackage/mia;
+    .end local v7    # "miaVar3":Lmia;
     :cond_5
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->freeTextCopyEnabled()Ljava/lang/Boolean;
 
@@ -1291,36 +1291,36 @@
 
     .line 326
     .local v0, "booleanValue4":Z
-    iget-boolean v8, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v8, v1, Lpoy;->c:Z
 
     if-eqz v8, :cond_6
 
     .line 327
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 328
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 330
     :cond_6
-    iget-object v8, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v8, v1, Lpoy;->b:Lppd;
 
-    check-cast v8, Ldefpackage/mia;
+    check-cast v8, Lmia;
 
     .line 331
-    .local v8, "miaVar4":Ldefpackage/mia;
-    iget v9, v8, Ldefpackage/mia;->a:I
+    .local v8, "miaVar4":Lmia;
+    iget v9, v8, Lmia;->a:I
 
     or-int/lit8 v9, v9, 0x8
 
-    iput v9, v8, Ldefpackage/mia;->a:I
+    iput v9, v8, Lmia;->a:I
 
     .line 332
-    iput-boolean v0, v8, Ldefpackage/mia;->f:Z
+    iput-boolean v0, v8, Lmia;->f:Z
 
     .line 334
     .end local v0    # "booleanValue4":Z
-    .end local v8    # "miaVar4":Ldefpackage/mia;
+    .end local v8    # "miaVar4":Lmia;
     :cond_7
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->foreignLanguageDetectionEnabled()Ljava/lang/Boolean;
 
@@ -1337,32 +1337,32 @@
 
     .line 337
     .local v0, "booleanValue5":Z
-    iget-boolean v9, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v9, v1, Lpoy;->c:Z
 
     if-eqz v9, :cond_8
 
     .line 338
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 339
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 341
     :cond_8
-    iget-object v9, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v9, v1, Lpoy;->b:Lppd;
 
-    check-cast v9, Ldefpackage/mia;
+    check-cast v9, Lmia;
 
     .line 342
-    .local v9, "miaVar5":Ldefpackage/mia;
-    iget v10, v9, Ldefpackage/mia;->a:I
+    .local v9, "miaVar5":Lmia;
+    iget v10, v9, Lmia;->a:I
 
     or-int/lit8 v10, v10, 0x10
 
-    iput v10, v9, Ldefpackage/mia;->a:I
+    iput v10, v9, Lmia;->a:I
 
     .line 343
-    iput-boolean v0, v9, Ldefpackage/mia;->g:Z
+    iput-boolean v0, v9, Lmia;->g:Z
 
     .line 344
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->supportedTranslateLanguages()Ljava/util/List;
@@ -1374,103 +1374,103 @@
     if-eqz v10, :cond_c
 
     .line 346
-    sget-object v11, Ldefpackage/mic;->b:Ldefpackage/mic;
+    sget-object v11, Lmic;->b:Lmic;
 
-    invoke-virtual {v11}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v11}, Lppd;->m()Lpoy;
 
     move-result-object v11
 
     .line 347
-    .local v11, "m2":Ldefpackage/poy;
-    iget-boolean v12, v11, Ldefpackage/poy;->c:Z
+    .local v11, "m2":Lpoy;
+    iget-boolean v12, v11, Lpoy;->c:Z
 
     if-eqz v12, :cond_9
 
     .line 348
-    invoke-virtual {v11}, Ldefpackage/poy;->m()V
+    invoke-virtual {v11}, Lpoy;->m()V
 
     .line 349
-    iput-boolean v4, v11, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v11, Lpoy;->c:Z
 
     .line 351
     :cond_9
-    iget-object v12, v11, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v12, v11, Lpoy;->b:Lppd;
 
-    check-cast v12, Ldefpackage/mic;
+    check-cast v12, Lmic;
 
     .line 352
-    .local v12, "micVar":Ldefpackage/mic;
-    iget-object v13, v12, Ldefpackage/mic;->a:Ldefpackage/ppm;
+    .local v12, "micVar":Lmic;
+    iget-object v13, v12, Lmic;->a:Lppm;
 
     .line 353
-    .local v13, "ppmVar":Ldefpackage/ppm;
-    invoke-interface {v13}, Ldefpackage/ppm;->c()Z
+    .local v13, "ppmVar":Lppm;
+    invoke-interface {v13}, Lppm;->c()Z
 
     move-result v14
 
     if-nez v14, :cond_a
 
     .line 354
-    invoke-static {v13}, Ldefpackage/ppd;->B(Ldefpackage/ppm;)Ldefpackage/ppm;
+    invoke-static {v13}, Lppd;->B(Lppm;)Lppm;
 
     move-result-object v14
 
-    iput-object v14, v12, Ldefpackage/mic;->a:Ldefpackage/ppm;
+    iput-object v14, v12, Lmic;->a:Lppm;
 
     .line 356
     :cond_a
-    iget-object v14, v12, Ldefpackage/mic;->a:Ldefpackage/ppm;
+    iget-object v14, v12, Lmic;->a:Lppm;
 
-    invoke-static {v10, v14}, Ldefpackage/pnl;->e(Ljava/lang/Iterable;Ljava/util/List;)V
+    invoke-static {v10, v14}, Lpnl;->e(Ljava/lang/Iterable;Ljava/util/List;)V
 
     .line 357
-    iget-boolean v14, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v14, v1, Lpoy;->c:Z
 
     if-eqz v14, :cond_b
 
     .line 358
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 359
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 361
     :cond_b
-    iget-object v14, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v14, v1, Lpoy;->b:Lppd;
 
-    check-cast v14, Ldefpackage/mia;
+    check-cast v14, Lmia;
 
     .line 362
-    .local v14, "miaVar6":Ldefpackage/mia;
-    invoke-virtual {v11}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    .local v14, "miaVar6":Lmia;
+    invoke-virtual {v11}, Lpoy;->j()Lppd;
 
     move-result-object v15
 
-    check-cast v15, Ldefpackage/mic;
+    check-cast v15, Lmic;
 
     .line 363
-    .local v15, "micVar2":Ldefpackage/mic;
+    .local v15, "micVar2":Lmic;
     invoke-virtual {v15}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 364
-    iput-object v15, v14, Ldefpackage/mia;->r:Ldefpackage/mic;
+    iput-object v15, v14, Lmia;->r:Lmic;
 
     .line 365
-    iget v3, v14, Ldefpackage/mia;->a:I
+    iget v3, v14, Lmia;->a:I
 
     or-int/lit16 v3, v3, 0x4000
 
-    iput v3, v14, Ldefpackage/mia;->a:I
+    iput v3, v14, Lmia;->a:I
 
     .line 368
     .end local v0    # "booleanValue5":Z
-    .end local v9    # "miaVar5":Ldefpackage/mia;
+    .end local v9    # "miaVar5":Lmia;
     .end local v10    # "supportedTranslateLanguages":Ljava/util/List;
-    .end local v11    # "m2":Ldefpackage/poy;
-    .end local v12    # "micVar":Ldefpackage/mic;
-    .end local v13    # "ppmVar":Ldefpackage/ppm;
-    .end local v14    # "miaVar6":Ldefpackage/mia;
-    .end local v15    # "micVar2":Ldefpackage/mic;
+    .end local v11    # "m2":Lpoy;
+    .end local v12    # "micVar":Lmic;
+    .end local v13    # "ppmVar":Lppm;
+    .end local v14    # "miaVar6":Lmia;
+    .end local v15    # "micVar2":Lmic;
     :cond_c
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->processorMode()Ljava/lang/Integer;
 
@@ -1487,36 +1487,36 @@
 
     .line 371
     .local v0, "intValue":I
-    iget-boolean v9, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v9, v1, Lpoy;->c:Z
 
     if-eqz v9, :cond_d
 
     .line 372
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 373
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 375
     :cond_d
-    iget-object v9, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v9, v1, Lpoy;->b:Lppd;
 
-    check-cast v9, Ldefpackage/mia;
+    check-cast v9, Lmia;
 
     .line 376
-    .local v9, "miaVar7":Ldefpackage/mia;
-    iget v10, v9, Ldefpackage/mia;->a:I
+    .local v9, "miaVar7":Lmia;
+    iget v10, v9, Lmia;->a:I
 
     or-int/lit8 v10, v10, 0x20
 
-    iput v10, v9, Ldefpackage/mia;->a:I
+    iput v10, v9, Lmia;->a:I
 
     .line 377
-    iput v0, v9, Ldefpackage/mia;->h:I
+    iput v0, v9, Lmia;->h:I
 
     .line 379
     .end local v0    # "intValue":I
-    .end local v9    # "miaVar7":Ldefpackage/mia;
+    .end local v9    # "miaVar7":Lmia;
     :cond_e
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->freeTextCopyEnabled()Ljava/lang/Boolean;
 
@@ -1533,87 +1533,87 @@
     if-eqz v0, :cond_11
 
     .line 381
-    sget-object v0, Ldefpackage/mid;->c:Ldefpackage/mid;
+    sget-object v0, Lmid;->c:Lmid;
 
-    invoke-virtual {v0}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v0}, Lppd;->m()Lpoy;
 
     move-result-object v0
 
     .line 382
-    .local v0, "m3":Ldefpackage/poy;
-    iget-boolean v10, v0, Ldefpackage/poy;->c:Z
+    .local v0, "m3":Lpoy;
+    iget-boolean v10, v0, Lpoy;->c:Z
 
     if-eqz v10, :cond_f
 
     .line 383
-    invoke-virtual {v0}, Ldefpackage/poy;->m()V
+    invoke-virtual {v0}, Lpoy;->m()V
 
     .line 384
-    iput-boolean v4, v0, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v0, Lpoy;->c:Z
 
     .line 386
     :cond_f
-    iget-object v10, v0, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v10, v0, Lpoy;->b:Lppd;
 
-    check-cast v10, Ldefpackage/mid;
+    check-cast v10, Lmid;
 
     .line 387
-    .local v10, "midVar":Ldefpackage/mid;
-    iget v11, v10, Ldefpackage/mid;->a:I
+    .local v10, "midVar":Lmid;
+    iget v11, v10, Lmid;->a:I
 
     or-int/lit8 v11, v11, 0x2
 
-    iput v11, v10, Ldefpackage/mid;->a:I
+    iput v11, v10, Lmid;->a:I
 
     .line 388
     const/4 v11, 0x1
 
-    iput-boolean v11, v10, Ldefpackage/mid;->b:Z
+    iput-boolean v11, v10, Lmid;->b:Z
 
     .line 389
-    iget-boolean v11, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v11, v1, Lpoy;->c:Z
 
     if-eqz v11, :cond_10
 
     .line 390
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 391
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 393
     :cond_10
-    iget-object v11, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v11, v1, Lpoy;->b:Lppd;
 
-    check-cast v11, Ldefpackage/mia;
+    check-cast v11, Lmia;
 
     .line 394
-    .local v11, "miaVar8":Ldefpackage/mia;
-    invoke-virtual {v0}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    .local v11, "miaVar8":Lmia;
+    invoke-virtual {v0}, Lpoy;->j()Lppd;
 
     move-result-object v12
 
-    check-cast v12, Ldefpackage/mid;
+    check-cast v12, Lmid;
 
     .line 395
-    .local v12, "midVar2":Ldefpackage/mid;
+    .local v12, "midVar2":Lmid;
     invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 396
-    iput-object v12, v11, Ldefpackage/mia;->i:Ldefpackage/mid;
+    iput-object v12, v11, Lmia;->i:Lmid;
 
     .line 397
-    iget v13, v11, Ldefpackage/mia;->a:I
+    iget v13, v11, Lmia;->a:I
 
     or-int/lit8 v13, v13, 0x40
 
-    iput v13, v11, Ldefpackage/mia;->a:I
+    iput v13, v11, Lmia;->a:I
 
     .line 399
-    .end local v0    # "m3":Ldefpackage/poy;
-    .end local v10    # "midVar":Ldefpackage/mid;
-    .end local v11    # "miaVar8":Ldefpackage/mia;
-    .end local v12    # "midVar2":Ldefpackage/mid;
+    .end local v0    # "m3":Lpoy;
+    .end local v10    # "midVar":Lmid;
+    .end local v11    # "miaVar8":Lmia;
+    .end local v12    # "midVar2":Lmid;
     :cond_11
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->sceneDetectionEnabled()Ljava/lang/Boolean;
 
@@ -1630,32 +1630,32 @@
 
     .line 402
     .local v0, "booleanValue6":Z
-    iget-boolean v11, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v11, v1, Lpoy;->c:Z
 
     if-eqz v11, :cond_12
 
     .line 403
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 404
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 406
     :cond_12
-    iget-object v11, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v11, v1, Lpoy;->b:Lppd;
 
-    check-cast v11, Ldefpackage/mia;
+    check-cast v11, Lmia;
 
     .line 407
-    .local v11, "miaVar9":Ldefpackage/mia;
-    iget v12, v11, Ldefpackage/mia;->a:I
+    .local v11, "miaVar9":Lmia;
+    iget v12, v11, Lmia;->a:I
 
     or-int/lit8 v12, v12, 0x2
 
-    iput v12, v11, Ldefpackage/mia;->a:I
+    iput v12, v11, Lmia;->a:I
 
     .line 408
-    iput-boolean v0, v11, Ldefpackage/mia;->d:Z
+    iput-boolean v0, v11, Lmia;->d:Z
 
     .line 409
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->sceneClassificationMap()Ljava/util/Map;
@@ -1690,14 +1690,14 @@
 
     .line 412
     .local v14, "entry":Ljava/util/Map$Entry;
-    sget-object v15, Ldefpackage/mif;->d:Ldefpackage/mif;
+    sget-object v15, Lmif;->d:Lmif;
 
-    invoke-virtual {v15}, Ldefpackage/ppd;->m()Ldefpackage/poy;
+    invoke-virtual {v15}, Lppd;->m()Lpoy;
 
     move-result-object v15
 
     .line 413
-    .local v15, "m4":Ldefpackage/poy;
+    .local v15, "m4":Lpoy;
     invoke-interface {v14}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v17
@@ -1712,12 +1712,12 @@
 
     .end local v0    # "booleanValue6":Z
     .local v17, "booleanValue6":Z
-    iget-boolean v0, v15, Ldefpackage/poy;->c:Z
+    iget-boolean v0, v15, Lpoy;->c:Z
 
     if-eqz v0, :cond_13
 
     .line 415
-    invoke-virtual {v15}, Ldefpackage/poy;->m()V
+    invoke-virtual {v15}, Lpoy;->m()V
 
     .line 416
     move-object/from16 v19, v2
@@ -1726,7 +1726,7 @@
 
     .end local v2    # "wifiConnectionEnabled":Ljava/lang/Boolean;
     .local v19, "wifiConnectionEnabled":Ljava/lang/Boolean;
-    iput-boolean v2, v15, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v15, Lpoy;->c:Z
 
     goto :goto_1
 
@@ -1740,25 +1740,25 @@
     .end local v2    # "wifiConnectionEnabled":Ljava/lang/Boolean;
     .restart local v19    # "wifiConnectionEnabled":Ljava/lang/Boolean;
     :goto_1
-    iget-object v0, v15, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v0, v15, Lpoy;->b:Lppd;
 
-    check-cast v0, Ldefpackage/mif;
+    check-cast v0, Lmif;
 
     .line 419
-    .local v0, "mifVar":Ldefpackage/mif;
+    .local v0, "mifVar":Lmif;
     invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 420
-    iget v2, v0, Ldefpackage/mif;->a:I
+    iget v2, v0, Lmif;->a:I
 
     const/16 v16, 0x1
 
     or-int/lit8 v2, v2, 0x1
 
-    iput v2, v0, Ldefpackage/mif;->a:I
+    iput v2, v0, Lmif;->a:I
 
     .line 421
-    iput-object v4, v0, Ldefpackage/mif;->b:Ljava/lang/String;
+    iput-object v4, v0, Lmif;->b:Ljava/lang/String;
 
     .line 422
     invoke-interface {v14}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1775,14 +1775,14 @@
     .local v2, "floatValue":F
     move-object/from16 v20, v0
 
-    .end local v0    # "mifVar":Ldefpackage/mif;
-    .local v20, "mifVar":Ldefpackage/mif;
-    iget-boolean v0, v15, Ldefpackage/poy;->c:Z
+    .end local v0    # "mifVar":Lmif;
+    .local v20, "mifVar":Lmif;
+    iget-boolean v0, v15, Lpoy;->c:Z
 
     if-eqz v0, :cond_14
 
     .line 424
-    invoke-virtual {v15}, Ldefpackage/poy;->m()V
+    invoke-virtual {v15}, Lpoy;->m()V
 
     .line 425
     move-object/from16 v21, v3
@@ -1791,7 +1791,7 @@
 
     .end local v3    # "processorMode":Ljava/lang/Integer;
     .local v21, "processorMode":Ljava/lang/Integer;
-    iput-boolean v3, v15, Ldefpackage/poy;->c:Z
+    iput-boolean v3, v15, Lpoy;->c:Z
 
     goto :goto_2
 
@@ -1805,40 +1805,40 @@
     .end local v3    # "processorMode":Ljava/lang/Integer;
     .restart local v21    # "processorMode":Ljava/lang/Integer;
     :goto_2
-    iget-object v0, v15, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v0, v15, Lpoy;->b:Lppd;
 
-    check-cast v0, Ldefpackage/mif;
+    check-cast v0, Lmif;
 
     .line 428
-    .local v0, "mifVar2":Ldefpackage/mif;
-    iget v3, v0, Ldefpackage/mif;->a:I
+    .local v0, "mifVar2":Lmif;
+    iget v3, v0, Lmif;->a:I
 
     or-int/lit8 v3, v3, 0x2
 
-    iput v3, v0, Ldefpackage/mif;->a:I
+    iput v3, v0, Lmif;->a:I
 
     .line 429
-    iput v2, v0, Ldefpackage/mif;->c:F
+    iput v2, v0, Lmif;->c:F
 
     .line 430
-    invoke-virtual {v15}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    invoke-virtual {v15}, Lpoy;->j()Lppd;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/mif;
+    check-cast v3, Lmif;
 
     .line 431
-    .local v3, "mifVar3":Ldefpackage/mif;
+    .local v3, "mifVar3":Lmif;
     move-object/from16 v22, v0
 
-    .end local v0    # "mifVar2":Ldefpackage/mif;
-    .local v22, "mifVar2":Ldefpackage/mif;
-    iget-boolean v0, v1, Ldefpackage/poy;->c:Z
+    .end local v0    # "mifVar2":Lmif;
+    .local v22, "mifVar2":Lmif;
+    iget-boolean v0, v1, Lpoy;->c:Z
 
     if-eqz v0, :cond_15
 
     .line 432
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 433
     move v0, v2
@@ -1847,7 +1847,7 @@
 
     .end local v2    # "floatValue":F
     .local v0, "floatValue":F
-    iput-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v1, Lpoy;->c:Z
 
     goto :goto_3
 
@@ -1861,12 +1861,12 @@
     .end local v2    # "floatValue":F
     .restart local v0    # "floatValue":F
     :goto_3
-    iget-object v2, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v2, v1, Lpoy;->b:Lppd;
 
-    check-cast v2, Ldefpackage/mia;
+    check-cast v2, Lmia;
 
     .line 436
-    .local v2, "miaVar10":Ldefpackage/mia;
+    .local v2, "miaVar10":Lmia;
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 437
@@ -1874,11 +1874,11 @@
 
     .end local v0    # "floatValue":F
     .local v23, "floatValue":F
-    iget-object v0, v2, Ldefpackage/mia;->p:Ldefpackage/ppm;
+    iget-object v0, v2, Lmia;->p:Lppm;
 
     .line 438
-    .local v0, "ppmVar2":Ldefpackage/ppm;
-    invoke-interface {v0}, Ldefpackage/ppm;->c()Z
+    .local v0, "ppmVar2":Lppm;
+    invoke-interface {v0}, Lppm;->c()Z
 
     move-result v24
 
@@ -1889,11 +1889,11 @@
 
     .end local v4    # "str":Ljava/lang/String;
     .local v24, "str":Ljava/lang/String;
-    invoke-static {v0}, Ldefpackage/ppd;->B(Ldefpackage/ppm;)Ldefpackage/ppm;
+    invoke-static {v0}, Lppd;->B(Lppm;)Lppm;
 
     move-result-object v4
 
-    iput-object v4, v2, Ldefpackage/mia;->p:Ldefpackage/ppm;
+    iput-object v4, v2, Lmia;->p:Lppm;
 
     goto :goto_4
 
@@ -1907,18 +1907,18 @@
     .end local v4    # "str":Ljava/lang/String;
     .restart local v24    # "str":Ljava/lang/String;
     :goto_4
-    iget-object v4, v2, Ldefpackage/mia;->p:Ldefpackage/ppm;
+    iget-object v4, v2, Lmia;->p:Lppm;
 
     invoke-interface {v4, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 442
-    .end local v0    # "ppmVar2":Ldefpackage/ppm;
-    .end local v2    # "miaVar10":Ldefpackage/mia;
-    .end local v3    # "mifVar3":Ldefpackage/mif;
+    .end local v0    # "ppmVar2":Lppm;
+    .end local v2    # "miaVar10":Lmia;
+    .end local v3    # "mifVar3":Lmif;
     .end local v14    # "entry":Ljava/util/Map$Entry;
-    .end local v15    # "m4":Ldefpackage/poy;
-    .end local v20    # "mifVar":Ldefpackage/mif;
-    .end local v22    # "mifVar2":Ldefpackage/mif;
+    .end local v15    # "m4":Lpoy;
+    .end local v20    # "mifVar":Lmif;
+    .end local v22    # "mifVar2":Lmif;
     .end local v23    # "floatValue":F
     .end local v24    # "str":Ljava/lang/String;
     move/from16 v0, v17
@@ -1976,7 +1976,7 @@
     goto :goto_5
 
     .line 400
-    .end local v11    # "miaVar9":Ldefpackage/mia;
+    .end local v11    # "miaVar9":Lmia;
     .end local v12    # "sceneClassificationMap":Ljava/util/Map;
     .end local v17    # "booleanValue6":Z
     .end local v19    # "wifiConnectionEnabled":Ljava/lang/Boolean;
@@ -2009,32 +2009,32 @@
 
     move-result v3
 
-    invoke-static {v3}, Ldefpackage/mip;->y(I)I
+    invoke-static {v3}, Lmip;->y(I)I
 
     move-result v3
 
     .line 448
     .local v3, "y":I
-    iget-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v4, v1, Lpoy;->c:Z
 
     if-eqz v4, :cond_1a
 
     .line 449
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 450
     const/4 v4, 0x0
 
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 452
     :cond_1a
-    iget-object v4, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v4, v1, Lpoy;->b:Lppd;
 
-    check-cast v4, Ldefpackage/mia;
+    check-cast v4, Lmia;
 
     .line 453
-    .local v4, "miaVar11":Ldefpackage/mia;
+    .local v4, "miaVar11":Lmia;
     add-int/lit8 v11, v3, -0x1
 
     .line 454
@@ -2042,14 +2042,14 @@
     if-eqz v3, :cond_1b
 
     .line 457
-    iput v11, v4, Ldefpackage/mia;->j:I
+    iput v11, v4, Lmia;->j:I
 
     .line 458
-    iget v12, v4, Ldefpackage/mia;->a:I
+    iget v12, v4, Lmia;->a:I
 
     or-int/lit16 v12, v12, 0x80
 
-    iput v12, v4, Ldefpackage/mia;->a:I
+    iput v12, v4, Lmia;->a:I
 
     goto :goto_6
 
@@ -2059,7 +2059,7 @@
 
     .line 460
     .end local v3    # "y":I
-    .end local v4    # "miaVar11":Ldefpackage/mia;
+    .end local v4    # "miaVar11":Lmia;
     .end local v11    # "i":I
     :cond_1c
     :goto_6
@@ -2078,52 +2078,52 @@
 
     .line 463
     .local v4, "booleanValue7":Z
-    iget-boolean v11, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v11, v1, Lpoy;->c:Z
 
     if-eqz v11, :cond_1d
 
     .line 464
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 465
     const/4 v11, 0x0
 
-    iput-boolean v11, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v11, v1, Lpoy;->c:Z
 
     .line 467
     :cond_1d
-    iget-object v11, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v11, v1, Lpoy;->b:Lppd;
 
-    check-cast v11, Ldefpackage/mia;
+    check-cast v11, Lmia;
 
     .line 468
-    .local v11, "miaVar12":Ldefpackage/mia;
-    iget v12, v11, Ldefpackage/mia;->a:I
+    .local v11, "miaVar12":Lmia;
+    iget v12, v11, Lmia;->a:I
 
     or-int/lit16 v12, v12, 0x100
 
     .line 469
     .local v12, "i2":I
-    iput v12, v11, Ldefpackage/mia;->a:I
+    iput v12, v11, Lmia;->a:I
 
     .line 470
-    iput-boolean v4, v11, Ldefpackage/mia;->k:Z
+    iput-boolean v4, v11, Lmia;->k:Z
 
     .line 471
     const/4 v13, 0x1
 
-    iput v13, v11, Ldefpackage/mia;->s:I
+    iput v13, v11, Lmia;->s:I
 
     .line 472
     const v13, 0x8000
 
     or-int/2addr v13, v12
 
-    iput v13, v11, Ldefpackage/mia;->a:I
+    iput v13, v11, Lmia;->a:I
 
     .line 474
     .end local v4    # "booleanValue7":Z
-    .end local v11    # "miaVar12":Ldefpackage/mia;
+    .end local v11    # "miaVar12":Lmia;
     .end local v12    # "i2":I
     :cond_1e
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->processorImagePoolSize()Ljava/lang/Integer;
@@ -2141,38 +2141,38 @@
 
     .line 477
     .local v11, "intValue2":I
-    iget-boolean v12, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v12, v1, Lpoy;->c:Z
 
     if-eqz v12, :cond_1f
 
     .line 478
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 479
     const/4 v12, 0x0
 
-    iput-boolean v12, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v12, v1, Lpoy;->c:Z
 
     .line 481
     :cond_1f
-    iget-object v12, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v12, v1, Lpoy;->b:Lppd;
 
-    check-cast v12, Ldefpackage/mia;
+    check-cast v12, Lmia;
 
     .line 482
-    .local v12, "miaVar13":Ldefpackage/mia;
-    iget v13, v12, Ldefpackage/mia;->a:I
+    .local v12, "miaVar13":Lmia;
+    iget v13, v12, Lmia;->a:I
 
     or-int/lit16 v13, v13, 0x200
 
-    iput v13, v12, Ldefpackage/mia;->a:I
+    iput v13, v12, Lmia;->a:I
 
     .line 483
-    iput v11, v12, Ldefpackage/mia;->l:I
+    iput v11, v12, Lmia;->l:I
 
     .line 485
     .end local v11    # "intValue2":I
-    .end local v12    # "miaVar13":Ldefpackage/mia;
+    .end local v12    # "miaVar13":Lmia;
     :cond_20
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->nonEnPersonNameDetectionEnabled()Ljava/lang/Boolean;
 
@@ -2189,38 +2189,38 @@
 
     .line 488
     .local v12, "booleanValue8":Z
-    iget-boolean v13, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v13, v1, Lpoy;->c:Z
 
     if-eqz v13, :cond_21
 
     .line 489
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 490
     const/4 v13, 0x0
 
-    iput-boolean v13, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v13, v1, Lpoy;->c:Z
 
     .line 492
     :cond_21
-    iget-object v13, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v13, v1, Lpoy;->b:Lppd;
 
-    check-cast v13, Ldefpackage/mia;
+    check-cast v13, Lmia;
 
     .line 493
-    .local v13, "miaVar14":Ldefpackage/mia;
-    iget v14, v13, Ldefpackage/mia;->a:I
+    .local v13, "miaVar14":Lmia;
+    iget v14, v13, Lmia;->a:I
 
     or-int/lit16 v14, v14, 0x400
 
-    iput v14, v13, Ldefpackage/mia;->a:I
+    iput v14, v13, Lmia;->a:I
 
     .line 494
-    iput-boolean v12, v13, Ldefpackage/mia;->m:Z
+    iput-boolean v12, v13, Lmia;->m:Z
 
     .line 496
     .end local v12    # "booleanValue8":Z
-    .end local v13    # "miaVar14":Ldefpackage/mia;
+    .end local v13    # "miaVar14":Lmia;
     :cond_22
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->legacyPixelParity()Ljava/lang/Boolean;
 
@@ -2237,38 +2237,38 @@
 
     .line 499
     .local v13, "booleanValue9":Z
-    iget-boolean v14, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v14, v1, Lpoy;->c:Z
 
     if-eqz v14, :cond_23
 
     .line 500
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 501
     const/4 v14, 0x0
 
-    iput-boolean v14, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v14, v1, Lpoy;->c:Z
 
     .line 503
     :cond_23
-    iget-object v14, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v14, v1, Lpoy;->b:Lppd;
 
-    check-cast v14, Ldefpackage/mia;
+    check-cast v14, Lmia;
 
     .line 504
-    .local v14, "miaVar15":Ldefpackage/mia;
-    iget v15, v14, Ldefpackage/mia;->a:I
+    .local v14, "miaVar15":Lmia;
+    iget v15, v14, Lmia;->a:I
 
     or-int/lit16 v15, v15, 0x800
 
-    iput v15, v14, Ldefpackage/mia;->a:I
+    iput v15, v14, Lmia;->a:I
 
     .line 505
-    iput-boolean v13, v14, Ldefpackage/mia;->n:Z
+    iput-boolean v13, v14, Lmia;->n:Z
 
     .line 507
     .end local v13    # "booleanValue9":Z
-    .end local v14    # "miaVar15":Ldefpackage/mia;
+    .end local v14    # "miaVar15":Lmia;
     :cond_24
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->pixelChipMode()Ljava/lang/Boolean;
 
@@ -2285,38 +2285,38 @@
 
     .line 510
     .local v14, "booleanValue10":Z
-    iget-boolean v15, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v15, v1, Lpoy;->c:Z
 
     if-eqz v15, :cond_25
 
     .line 511
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 512
     const/4 v15, 0x0
 
-    iput-boolean v15, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v15, v1, Lpoy;->c:Z
 
     .line 514
     :cond_25
-    iget-object v15, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v15, v1, Lpoy;->b:Lppd;
 
-    check-cast v15, Ldefpackage/mia;
+    check-cast v15, Lmia;
 
     .line 515
-    .local v15, "miaVar16":Ldefpackage/mia;
-    iget v0, v15, Ldefpackage/mia;->a:I
+    .local v15, "miaVar16":Lmia;
+    iget v0, v15, Lmia;->a:I
 
     or-int/lit16 v0, v0, 0x1000
 
-    iput v0, v15, Ldefpackage/mia;->a:I
+    iput v0, v15, Lmia;->a:I
 
     .line 516
-    iput-boolean v14, v15, Ldefpackage/mia;->o:Z
+    iput-boolean v14, v15, Lmia;->o:Z
 
     .line 518
     .end local v14    # "booleanValue10":Z
-    .end local v15    # "miaVar16":Ldefpackage/mia;
+    .end local v15    # "miaVar16":Lmia;
     :cond_26
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->documentScanningEnabled()Ljava/lang/Boolean;
 
@@ -2333,49 +2333,49 @@
     if-eqz v0, :cond_28
 
     .line 520
-    sget-object v0, Ldefpackage/mib;->a:Ldefpackage/mib;
+    sget-object v0, Lmib;->a:Lmib;
 
     .line 521
-    .local v0, "mibVar":Ldefpackage/mib;
-    iget-boolean v15, v1, Ldefpackage/poy;->c:Z
+    .local v0, "mibVar":Lmib;
+    iget-boolean v15, v1, Lpoy;->c:Z
 
     if-eqz v15, :cond_27
 
     .line 522
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 523
     const/4 v15, 0x0
 
-    iput-boolean v15, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v15, v1, Lpoy;->c:Z
 
     .line 525
     :cond_27
-    iget-object v15, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v15, v1, Lpoy;->b:Lppd;
 
-    check-cast v15, Ldefpackage/mia;
+    check-cast v15, Lmia;
 
     .line 526
-    .local v15, "miaVar17":Ldefpackage/mia;
+    .local v15, "miaVar17":Lmia;
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 527
-    iput-object v0, v15, Ldefpackage/mia;->e:Ldefpackage/mib;
+    iput-object v0, v15, Lmia;->e:Lmib;
 
     .line 528
     move-object/from16 v20, v0
 
-    .end local v0    # "mibVar":Ldefpackage/mib;
-    .local v20, "mibVar":Ldefpackage/mib;
-    iget v0, v15, Ldefpackage/mia;->a:I
+    .end local v0    # "mibVar":Lmib;
+    .local v20, "mibVar":Lmib;
+    iget v0, v15, Lmia;->a:I
 
     or-int/lit8 v0, v0, 0x4
 
-    iput v0, v15, Ldefpackage/mia;->a:I
+    iput v0, v15, Lmia;->a:I
 
     .line 530
-    .end local v15    # "miaVar17":Ldefpackage/mia;
-    .end local v20    # "mibVar":Ldefpackage/mib;
+    .end local v15    # "miaVar17":Lmia;
+    .end local v20    # "mibVar":Lmib;
     :cond_28
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->gleamEngineEnabled()Ljava/lang/Boolean;
 
@@ -2396,40 +2396,40 @@
 
     .end local v2    # "triggerMode":Ljava/lang/Integer;
     .local v20, "triggerMode":Ljava/lang/Integer;
-    iget-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v2, v1, Lpoy;->c:Z
 
     if-eqz v2, :cond_29
 
     .line 534
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 535
     const/4 v2, 0x0
 
-    iput-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v1, Lpoy;->c:Z
 
     .line 537
     :cond_29
-    iget-object v2, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v2, v1, Lpoy;->b:Lppd;
 
-    check-cast v2, Ldefpackage/mia;
+    check-cast v2, Lmia;
 
     .line 538
-    .local v2, "miaVar18":Ldefpackage/mia;
+    .local v2, "miaVar18":Lmia;
     move-object/from16 v22, v3
 
     .end local v3    # "apparelDetectionEnabled":Ljava/lang/Boolean;
     .local v22, "apparelDetectionEnabled":Ljava/lang/Boolean;
-    iget v3, v2, Ldefpackage/mia;->a:I
+    iget v3, v2, Lmia;->a:I
 
     const/high16 v23, 0x10000
 
     or-int v3, v3, v23
 
-    iput v3, v2, Ldefpackage/mia;->a:I
+    iput v3, v2, Lmia;->a:I
 
     .line 539
-    iput-boolean v0, v2, Ldefpackage/mia;->t:Z
+    iput-boolean v0, v2, Lmia;->t:Z
 
     goto :goto_7
 
@@ -2450,44 +2450,44 @@
     .restart local v20    # "triggerMode":Ljava/lang/Integer;
     .restart local v22    # "apparelDetectionEnabled":Ljava/lang/Boolean;
     :goto_7
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->dynamicLoadingMode()Ldefpackage/mhy;
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->dynamicLoadingMode()Lmhy;
 
     move-result-object v2
 
     .line 542
-    .local v2, "dynamicLoadingMode":Ldefpackage/mhy;
-    iget-boolean v0, v1, Ldefpackage/poy;->c:Z
+    .local v2, "dynamicLoadingMode":Lmhy;
+    iget-boolean v0, v1, Lpoy;->c:Z
 
     if-eqz v0, :cond_2b
 
     .line 543
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 544
     const/4 v3, 0x0
 
-    iput-boolean v3, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v3, v1, Lpoy;->c:Z
 
     .line 546
     :cond_2b
-    iget-object v0, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v0, v1, Lpoy;->b:Lppd;
 
     move-object v3, v0
 
-    check-cast v3, Ldefpackage/mia;
+    check-cast v3, Lmia;
 
     .line 547
-    .local v3, "miaVar19":Ldefpackage/mia;
-    iget v0, v2, Ldefpackage/mhy;->f:I
+    .local v3, "miaVar19":Lmia;
+    iget v0, v2, Lmhy;->f:I
 
-    iput v0, v3, Ldefpackage/mia;->q:I
+    iput v0, v3, Lmia;->q:I
 
     .line 548
-    iget v0, v3, Ldefpackage/mia;->a:I
+    iget v0, v3, Lmia;->a:I
 
     or-int/lit16 v0, v0, 0x2000
 
-    iput v0, v3, Ldefpackage/mia;->a:I
+    iput v0, v3, Lmia;->a:I
 
     .line 549
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->dutyCycleMode()Ljava/lang/Integer;
@@ -2503,7 +2503,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Ldefpackage/mip;->z(I)I
+    invoke-static {v0}, Lmip;->z(I)I
 
     move-result v0
 
@@ -2511,32 +2511,32 @@
     .local v0, "z":I
     move-object/from16 v24, v2
 
-    .end local v2    # "dynamicLoadingMode":Ldefpackage/mhy;
-    .local v24, "dynamicLoadingMode":Ldefpackage/mhy;
-    iget-boolean v2, v1, Ldefpackage/poy;->c:Z
+    .end local v2    # "dynamicLoadingMode":Lmhy;
+    .local v24, "dynamicLoadingMode":Lmhy;
+    iget-boolean v2, v1, Lpoy;->c:Z
 
     if-eqz v2, :cond_2c
 
     .line 553
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 554
     const/4 v2, 0x0
 
-    iput-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v1, Lpoy;->c:Z
 
     .line 556
     :cond_2c
-    iget-object v2, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v2, v1, Lpoy;->b:Lppd;
 
-    check-cast v2, Ldefpackage/mia;
+    check-cast v2, Lmia;
 
     .line 557
-    .local v2, "miaVar20":Ldefpackage/mia;
+    .local v2, "miaVar20":Lmia;
     move-object/from16 v25, v3
 
-    .end local v3    # "miaVar19":Ldefpackage/mia;
-    .local v25, "miaVar19":Ldefpackage/mia;
+    .end local v3    # "miaVar19":Lmia;
+    .local v25, "miaVar19":Lmia;
     add-int/lit8 v3, v0, -0x1
 
     .line 558
@@ -2544,20 +2544,20 @@
     if-eqz v0, :cond_2d
 
     .line 561
-    iput v3, v2, Ldefpackage/mia;->u:I
+    iput v3, v2, Lmia;->u:I
 
     .line 562
     move/from16 v26, v0
 
     .end local v0    # "z":I
     .local v26, "z":I
-    iget v0, v2, Ldefpackage/mia;->a:I
+    iget v0, v2, Lmia;->a:I
 
     const/high16 v17, 0x20000
 
     or-int v0, v0, v17
 
-    iput v0, v2, Ldefpackage/mia;->a:I
+    iput v0, v2, Lmia;->a:I
 
     goto :goto_8
 
@@ -2574,21 +2574,21 @@
     throw v0
 
     .line 550
-    .end local v24    # "dynamicLoadingMode":Ldefpackage/mhy;
-    .end local v25    # "miaVar19":Ldefpackage/mia;
+    .end local v24    # "dynamicLoadingMode":Lmhy;
+    .end local v25    # "miaVar19":Lmia;
     .end local v26    # "z":I
-    .local v2, "dynamicLoadingMode":Ldefpackage/mhy;
-    .local v3, "miaVar19":Ldefpackage/mia;
+    .local v2, "dynamicLoadingMode":Lmhy;
+    .local v3, "miaVar19":Lmia;
     :cond_2e
     move-object/from16 v24, v2
 
     move-object/from16 v25, v3
 
     .line 564
-    .end local v2    # "dynamicLoadingMode":Ldefpackage/mhy;
-    .end local v3    # "miaVar19":Ldefpackage/mia;
-    .restart local v24    # "dynamicLoadingMode":Ldefpackage/mhy;
-    .restart local v25    # "miaVar19":Ldefpackage/mia;
+    .end local v2    # "dynamicLoadingMode":Lmhy;
+    .end local v3    # "miaVar19":Lmia;
+    .restart local v24    # "dynamicLoadingMode":Lmhy;
+    .restart local v25    # "miaVar19":Lmia;
     :goto_8
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->modelDownloadEnabled()Ljava/lang/Boolean;
 
@@ -2605,46 +2605,46 @@
 
     .line 567
     .local v0, "booleanValue12":Z
-    iget-boolean v3, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v3, v1, Lpoy;->c:Z
 
     if-eqz v3, :cond_2f
 
     .line 568
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 569
     const/4 v3, 0x0
 
-    iput-boolean v3, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v3, v1, Lpoy;->c:Z
 
     .line 571
     :cond_2f
-    iget-object v3, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v3, v1, Lpoy;->b:Lppd;
 
-    check-cast v3, Ldefpackage/mia;
+    check-cast v3, Lmia;
 
     .line 572
-    .local v3, "miaVar21":Ldefpackage/mia;
+    .local v3, "miaVar21":Lmia;
     move-object/from16 v17, v2
 
     .end local v2    # "modelDownloadEnabled":Ljava/lang/Boolean;
     .local v17, "modelDownloadEnabled":Ljava/lang/Boolean;
-    iget v2, v3, Ldefpackage/mia;->a:I
+    iget v2, v3, Lmia;->a:I
 
     const/high16 v26, 0x40000
 
     or-int v2, v2, v26
 
-    iput v2, v3, Ldefpackage/mia;->a:I
+    iput v2, v3, Lmia;->a:I
 
     .line 573
-    iput-boolean v0, v3, Ldefpackage/mia;->v:Z
+    iput-boolean v0, v3, Lmia;->v:Z
 
     goto :goto_9
 
     .line 565
     .end local v0    # "booleanValue12":Z
-    .end local v3    # "miaVar21":Ldefpackage/mia;
+    .end local v3    # "miaVar21":Lmia;
     .end local v17    # "modelDownloadEnabled":Ljava/lang/Boolean;
     .restart local v2    # "modelDownloadEnabled":Ljava/lang/Boolean;
     :cond_30
@@ -2673,12 +2673,12 @@
 
     .line 578
     .local v3, "longValue":J
-    iget-boolean v0, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v0, v1, Lpoy;->c:Z
 
     if-eqz v0, :cond_31
 
     .line 579
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 580
     move-object/from16 v27, v2
@@ -2687,7 +2687,7 @@
 
     .end local v2    # "modelDownloadCheckTimeoutMs":Ljava/lang/Long;
     .local v27, "modelDownloadCheckTimeoutMs":Ljava/lang/Long;
-    iput-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v1, Lpoy;->c:Z
 
     goto :goto_a
 
@@ -2701,25 +2701,25 @@
     .end local v2    # "modelDownloadCheckTimeoutMs":Ljava/lang/Long;
     .restart local v27    # "modelDownloadCheckTimeoutMs":Ljava/lang/Long;
     :goto_a
-    iget-object v0, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v0, v1, Lpoy;->b:Lppd;
 
-    check-cast v0, Ldefpackage/mia;
+    check-cast v0, Lmia;
 
     .line 583
-    .local v0, "miaVar22":Ldefpackage/mia;
-    iget v2, v0, Ldefpackage/mia;->b:I
+    .local v0, "miaVar22":Lmia;
+    iget v2, v0, Lmia;->b:I
 
     or-int/lit8 v2, v2, 0x2
 
-    iput v2, v0, Ldefpackage/mia;->b:I
+    iput v2, v0, Lmia;->b:I
 
     .line 584
-    iput-wide v3, v0, Ldefpackage/mia;->K:J
+    iput-wide v3, v0, Lmia;->K:J
 
     goto :goto_b
 
     .line 576
-    .end local v0    # "miaVar22":Ldefpackage/mia;
+    .end local v0    # "miaVar22":Lmia;
     .end local v3    # "longValue":J
     .end local v26    # "processorImagePoolSize":Ljava/lang/Integer;
     .end local v27    # "modelDownloadCheckTimeoutMs":Ljava/lang/Long;
@@ -2751,40 +2751,40 @@
 
     .line 589
     .local v0, "booleanValue13":Z
-    iget-boolean v3, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v3, v1, Lpoy;->c:Z
 
     if-eqz v3, :cond_33
 
     .line 590
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 591
     const/4 v3, 0x0
 
-    iput-boolean v3, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v3, v1, Lpoy;->c:Z
 
     .line 593
     :cond_33
-    iget-object v3, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v3, v1, Lpoy;->b:Lppd;
 
-    check-cast v3, Ldefpackage/mia;
+    check-cast v3, Lmia;
 
     .line 594
-    .local v3, "miaVar23":Ldefpackage/mia;
-    iget v4, v3, Ldefpackage/mia;->a:I
+    .local v3, "miaVar23":Lmia;
+    iget v4, v3, Lmia;->a:I
 
     const/high16 v28, 0x80000
 
     or-int v4, v4, v28
 
-    iput v4, v3, Ldefpackage/mia;->a:I
+    iput v4, v3, Lmia;->a:I
 
     .line 595
-    iput-boolean v0, v3, Ldefpackage/mia;->w:Z
+    iput-boolean v0, v3, Lmia;->w:Z
 
     .line 597
     .end local v0    # "booleanValue13":Z
-    .end local v3    # "miaVar23":Ldefpackage/mia;
+    .end local v3    # "miaVar23":Lmia;
     :cond_34
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->lens2020ModeEnabled()Ljava/lang/Boolean;
 
@@ -2801,48 +2801,48 @@
 
     .line 600
     .local v0, "booleanValue14":Z
-    iget-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v4, v1, Lpoy;->c:Z
 
     if-eqz v4, :cond_35
 
     .line 601
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 602
     const/4 v4, 0x0
 
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 604
     :cond_35
-    iget-object v4, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v4, v1, Lpoy;->b:Lppd;
 
-    check-cast v4, Ldefpackage/mia;
+    check-cast v4, Lmia;
 
     .line 605
-    .local v4, "miaVar24":Ldefpackage/mia;
+    .local v4, "miaVar24":Lmia;
     move-object/from16 v28, v2
 
     .end local v2    # "barcodeEnabled":Ljava/lang/Boolean;
     .local v28, "barcodeEnabled":Ljava/lang/Boolean;
-    iget v2, v4, Ldefpackage/mia;->a:I
+    iget v2, v4, Lmia;->a:I
 
     const/high16 v29, 0x100000
 
     or-int v2, v2, v29
 
-    iput v2, v4, Ldefpackage/mia;->a:I
+    iput v2, v4, Lmia;->a:I
 
     .line 606
-    iput-boolean v0, v4, Ldefpackage/mia;->x:Z
+    iput-boolean v0, v4, Lmia;->x:Z
 
     .line 607
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->lens2020Params()Ldefpackage/mhz;
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->lens2020Params()Lmhz;
 
     move-result-object v2
 
     .line 608
-    .local v2, "lens2020Params":Ldefpackage/mhz;
+    .local v2, "lens2020Params":Lmhz;
     if-eqz v2, :cond_37
 
     .line 609
@@ -2850,12 +2850,12 @@
 
     .end local v0    # "booleanValue14":Z
     .local v29, "booleanValue14":Z
-    iget-boolean v0, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v0, v1, Lpoy;->c:Z
 
     if-eqz v0, :cond_36
 
     .line 610
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 611
     move-object/from16 v30, v3
@@ -2864,7 +2864,7 @@
 
     .end local v3    # "lens2020ModeEnabled":Ljava/lang/Boolean;
     .local v30, "lens2020ModeEnabled":Ljava/lang/Boolean;
-    iput-boolean v3, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v3, v1, Lpoy;->c:Z
 
     goto :goto_c
 
@@ -2878,22 +2878,22 @@
     .end local v3    # "lens2020ModeEnabled":Ljava/lang/Boolean;
     .restart local v30    # "lens2020ModeEnabled":Ljava/lang/Boolean;
     :goto_c
-    iget-object v0, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v0, v1, Lpoy;->b:Lppd;
 
-    check-cast v0, Ldefpackage/mia;
+    check-cast v0, Lmia;
 
     .line 614
-    .local v0, "miaVar25":Ldefpackage/mia;
-    iput-object v2, v0, Ldefpackage/mia;->z:Ldefpackage/mhz;
+    .local v0, "miaVar25":Lmia;
+    iput-object v2, v0, Lmia;->z:Lmhz;
 
     .line 615
-    iget v3, v0, Ldefpackage/mia;->a:I
+    iget v3, v0, Lmia;->a:I
 
     const/high16 v31, 0x400000
 
     or-int v3, v3, v31
 
-    iput v3, v0, Ldefpackage/mia;->a:I
+    iput v3, v0, Lmia;->a:I
 
     goto :goto_d
 
@@ -2914,7 +2914,7 @@
     goto :goto_d
 
     .line 598
-    .end local v4    # "miaVar24":Ldefpackage/mia;
+    .end local v4    # "miaVar24":Lmia;
     .end local v28    # "barcodeEnabled":Ljava/lang/Boolean;
     .end local v29    # "booleanValue14":Z
     .end local v30    # "lens2020ModeEnabled":Ljava/lang/Boolean;
@@ -2946,12 +2946,12 @@
 
     .line 621
     .local v3, "longValue2":J
-    iget-boolean v0, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v0, v1, Lpoy;->c:Z
 
     if-eqz v0, :cond_39
 
     .line 622
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 623
     move-object/from16 v29, v2
@@ -2960,7 +2960,7 @@
 
     .end local v2    # "trivialFeatureEnabledBits":Ljava/lang/Long;
     .local v29, "trivialFeatureEnabledBits":Ljava/lang/Long;
-    iput-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v1, Lpoy;->c:Z
 
     goto :goto_e
 
@@ -2974,27 +2974,27 @@
     .end local v2    # "trivialFeatureEnabledBits":Ljava/lang/Long;
     .restart local v29    # "trivialFeatureEnabledBits":Ljava/lang/Long;
     :goto_e
-    iget-object v0, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v0, v1, Lpoy;->b:Lppd;
 
-    check-cast v0, Ldefpackage/mia;
+    check-cast v0, Lmia;
 
     .line 626
-    .local v0, "miaVar26":Ldefpackage/mia;
-    iget v2, v0, Ldefpackage/mia;->a:I
+    .local v0, "miaVar26":Lmia;
+    iget v2, v0, Lmia;->a:I
 
     const/high16 v31, 0x200000
 
     or-int v2, v2, v31
 
-    iput v2, v0, Ldefpackage/mia;->a:I
+    iput v2, v0, Lmia;->a:I
 
     .line 627
-    iput-wide v3, v0, Ldefpackage/mia;->y:J
+    iput-wide v3, v0, Lmia;->y:J
 
     goto :goto_f
 
     .line 619
-    .end local v0    # "miaVar26":Ldefpackage/mia;
+    .end local v0    # "miaVar26":Lmia;
     .end local v3    # "longValue2":J
     .end local v29    # "trivialFeatureEnabledBits":Ljava/lang/Long;
     .restart local v2    # "trivialFeatureEnabledBits":Ljava/lang/Long;
@@ -3020,40 +3020,40 @@
 
     .line 632
     .local v0, "booleanValue15":Z
-    iget-boolean v3, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v3, v1, Lpoy;->c:Z
 
     if-eqz v3, :cond_3b
 
     .line 633
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 634
     const/4 v3, 0x0
 
-    iput-boolean v3, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v3, v1, Lpoy;->c:Z
 
     .line 636
     :cond_3b
-    iget-object v3, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v3, v1, Lpoy;->b:Lppd;
 
-    check-cast v3, Ldefpackage/mia;
+    check-cast v3, Lmia;
 
     .line 637
-    .local v3, "miaVar27":Ldefpackage/mia;
-    iget v4, v3, Ldefpackage/mia;->a:I
+    .local v3, "miaVar27":Lmia;
+    iget v4, v3, Lmia;->a:I
 
     const/high16 v31, 0x1000000
 
     or-int v4, v4, v31
 
-    iput v4, v3, Ldefpackage/mia;->a:I
+    iput v4, v3, Lmia;->a:I
 
     .line 638
-    iput-boolean v0, v3, Ldefpackage/mia;->B:Z
+    iput-boolean v0, v3, Lmia;->B:Z
 
     .line 640
     .end local v0    # "booleanValue15":Z
-    .end local v3    # "miaVar27":Ldefpackage/mia;
+    .end local v3    # "miaVar27":Lmia;
     :cond_3c
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->linkEvalConfigMetadata()Ljava/nio/ByteBuffer;
 
@@ -3065,63 +3065,63 @@
 
     .line 643
     :try_start_0
-    sget-object v0, Ldefpackage/mio;->a:Ldefpackage/mio;
+    sget-object v0, Lmio;->a:Lmio;
 
-    invoke-static {}, Ldefpackage/pos;->b()Ldefpackage/pos;
+    invoke-static {}, Lpos;->b()Lpos;
 
     move-result-object v4
 
-    invoke-static {v0, v3, v4}, Ldefpackage/ppd;->r(Ldefpackage/ppd;Ljava/nio/ByteBuffer;Ldefpackage/pos;)Ldefpackage/ppd;
+    invoke-static {v0, v3, v4}, Lppd;->r(Lppd;Ljava/nio/ByteBuffer;Lpos;)Lppd;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/mio;
+    check-cast v0, Lmio;
 
     .line 644
-    .local v0, "mioVar":Ldefpackage/mio;
-    iget-boolean v4, v1, Ldefpackage/poy;->c:Z
+    .local v0, "mioVar":Lmio;
+    iget-boolean v4, v1, Lpoy;->c:Z
 
     if-eqz v4, :cond_3d
 
     .line 645
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 646
     const/4 v4, 0x0
 
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 648
     :cond_3d
-    iget-object v4, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v4, v1, Lpoy;->b:Lppd;
 
-    check-cast v4, Ldefpackage/mia;
+    check-cast v4, Lmia;
 
     .line 649
-    .local v4, "miaVar28":Ldefpackage/mia;
+    .local v4, "miaVar28":Lmia;
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 650
-    iput-object v0, v4, Ldefpackage/mia;->C:Ldefpackage/mio;
+    iput-object v0, v4, Lmia;->C:Lmio;
 
     .line 651
     move-object/from16 v31, v0
 
-    .end local v0    # "mioVar":Ldefpackage/mio;
-    .local v31, "mioVar":Ldefpackage/mio;
-    iget v0, v4, Ldefpackage/mia;->a:I
+    .end local v0    # "mioVar":Lmio;
+    .local v31, "mioVar":Lmio;
+    iget v0, v4, Lmia;->a:I
 
     const/high16 v32, 0x2000000
 
     or-int v0, v0, v32
 
-    iput v0, v4, Ldefpackage/mia;->a:I
+    iput v0, v4, Lmia;->a:I
     :try_end_0
-    .catch Ldefpackage/ppp; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lppp; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 657
-    .end local v4    # "miaVar28":Ldefpackage/mia;
-    .end local v31    # "mioVar":Ldefpackage/mio;
+    .end local v4    # "miaVar28":Lmia;
+    .end local v31    # "mioVar":Lmio;
     move-object/from16 v32, v2
 
     goto :goto_10
@@ -3131,13 +3131,13 @@
     move-exception v0
 
     .line 653
-    .local v0, "e":Ldefpackage/ppp;
+    .local v0, "e":Lppp;
     move-object/from16 v31, v0
 
     const/4 v4, 0x0
 
-    .end local v0    # "e":Ldefpackage/ppp;
-    .local v31, "e":Ldefpackage/ppp;
+    .end local v0    # "e":Lppp;
+    .local v31, "e":Lppp;
     new-array v0, v4, [Ljava/lang/Object;
 
     .line 654
@@ -3159,7 +3159,7 @@
     .line 655
     const-string v4, "Unable to parse LinkEvalConfigMetadata."
 
-    invoke-static {v4, v0}, Ldefpackage/mip;->D(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v4, v0}, Lmip;->D(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -3169,7 +3169,7 @@
 
     .line 641
     .end local v0    # "objArr":[Ljava/lang/Object;
-    .end local v31    # "e":Ldefpackage/ppp;
+    .end local v31    # "e":Lppp;
     .end local v32    # "pdpTextExtractionEnabled":Ljava/lang/Boolean;
     .restart local v2    # "pdpTextExtractionEnabled":Ljava/lang/Boolean;
     :cond_3e
@@ -3195,46 +3195,46 @@
 
     .line 662
     .local v2, "booleanValue16":Z
-    iget-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v4, v1, Lpoy;->c:Z
 
     if-eqz v4, :cond_40
 
     .line 663
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 664
     const/4 v4, 0x0
 
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 666
     :cond_40
-    iget-object v4, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v4, v1, Lpoy;->b:Lppd;
 
-    check-cast v4, Ldefpackage/mia;
+    check-cast v4, Lmia;
 
     .line 667
-    .local v4, "miaVar29":Ldefpackage/mia;
+    .local v4, "miaVar29":Lmia;
     move-object/from16 v31, v0
 
     .end local v0    # "linkModelDownloadEnabled":Ljava/lang/Boolean;
     .local v31, "linkModelDownloadEnabled":Ljava/lang/Boolean;
-    iget v0, v4, Ldefpackage/mia;->a:I
+    iget v0, v4, Lmia;->a:I
 
     const/high16 v33, 0x4000000
 
     or-int v0, v0, v33
 
-    iput v0, v4, Ldefpackage/mia;->a:I
+    iput v0, v4, Lmia;->a:I
 
     .line 668
-    iput-boolean v2, v4, Ldefpackage/mia;->D:Z
+    iput-boolean v2, v4, Lmia;->D:Z
 
     goto :goto_11
 
     .line 660
     .end local v2    # "booleanValue16":Z
-    .end local v4    # "miaVar29":Ldefpackage/mia;
+    .end local v4    # "miaVar29":Lmia;
     .end local v31    # "linkModelDownloadEnabled":Ljava/lang/Boolean;
     .restart local v0    # "linkModelDownloadEnabled":Ljava/lang/Boolean;
     :cond_41
@@ -3253,52 +3253,52 @@
     if-eqz v0, :cond_43
 
     .line 672
-    invoke-static {v0}, Ldefpackage/poc;->s(Ljava/nio/ByteBuffer;)Ldefpackage/poc;
+    invoke-static {v0}, Lpoc;->s(Ljava/nio/ByteBuffer;)Lpoc;
 
     move-result-object v2
 
     .line 673
-    .local v2, "s":Ldefpackage/poc;
-    iget-boolean v4, v1, Ldefpackage/poy;->c:Z
+    .local v2, "s":Lpoc;
+    iget-boolean v4, v1, Lpoy;->c:Z
 
     if-eqz v4, :cond_42
 
     .line 674
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 675
     const/4 v4, 0x0
 
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 677
     :cond_42
-    iget-object v4, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v4, v1, Lpoy;->b:Lppd;
 
-    check-cast v4, Ldefpackage/mia;
+    check-cast v4, Lmia;
 
     .line 678
-    .local v4, "miaVar30":Ldefpackage/mia;
+    .local v4, "miaVar30":Lmia;
     move-object/from16 v33, v0
 
     .end local v0    # "serializedPipelineConfig":Ljava/nio/ByteBuffer;
     .local v33, "serializedPipelineConfig":Ljava/nio/ByteBuffer;
-    iget v0, v4, Ldefpackage/mia;->a:I
+    iget v0, v4, Lmia;->a:I
 
     const/high16 v34, 0x8000000
 
     or-int v0, v0, v34
 
-    iput v0, v4, Ldefpackage/mia;->a:I
+    iput v0, v4, Lmia;->a:I
 
     .line 679
-    iput-object v2, v4, Ldefpackage/mia;->E:Ldefpackage/poc;
+    iput-object v2, v4, Lmia;->E:Lpoc;
 
     goto :goto_12
 
     .line 671
-    .end local v2    # "s":Ldefpackage/poc;
-    .end local v4    # "miaVar30":Ldefpackage/mia;
+    .end local v2    # "s":Lpoc;
+    .end local v4    # "miaVar30":Lmia;
     .end local v33    # "serializedPipelineConfig":Ljava/nio/ByteBuffer;
     .restart local v0    # "serializedPipelineConfig":Ljava/nio/ByteBuffer;
     :cond_43
@@ -3323,46 +3323,46 @@
 
     .line 684
     .local v2, "booleanValue17":Z
-    iget-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v4, v1, Lpoy;->c:Z
 
     if-eqz v4, :cond_44
 
     .line 685
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 686
     const/4 v4, 0x0
 
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 688
     :cond_44
-    iget-object v4, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v4, v1, Lpoy;->b:Lppd;
 
-    check-cast v4, Ldefpackage/mia;
+    check-cast v4, Lmia;
 
     .line 689
-    .local v4, "miaVar31":Ldefpackage/mia;
+    .local v4, "miaVar31":Lmia;
     move-object/from16 v34, v0
 
     .end local v0    # "stopPipelineOnPause":Ljava/lang/Boolean;
     .local v34, "stopPipelineOnPause":Ljava/lang/Boolean;
-    iget v0, v4, Ldefpackage/mia;->b:I
+    iget v0, v4, Lmia;->b:I
 
     const/16 v16, 0x1
 
     or-int/lit8 v0, v0, 0x1
 
-    iput v0, v4, Ldefpackage/mia;->b:I
+    iput v0, v4, Lmia;->b:I
 
     .line 690
-    iput-boolean v2, v4, Ldefpackage/mia;->J:Z
+    iput-boolean v2, v4, Lmia;->J:Z
 
     goto :goto_13
 
     .line 682
     .end local v2    # "booleanValue17":Z
-    .end local v4    # "miaVar31":Ldefpackage/mia;
+    .end local v4    # "miaVar31":Lmia;
     .end local v34    # "stopPipelineOnPause":Ljava/lang/Boolean;
     .restart local v0    # "stopPipelineOnPause":Ljava/lang/Boolean;
     :cond_45
@@ -3387,46 +3387,46 @@
 
     .line 695
     .local v2, "booleanValue18":Z
-    iget-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v4, v1, Lpoy;->c:Z
 
     if-eqz v4, :cond_46
 
     .line 696
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 697
     const/4 v4, 0x0
 
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 699
     :cond_46
-    iget-object v4, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v4, v1, Lpoy;->b:Lppd;
 
-    check-cast v4, Ldefpackage/mia;
+    check-cast v4, Lmia;
 
     .line 700
-    .local v4, "miaVar32":Ldefpackage/mia;
+    .local v4, "miaVar32":Lmia;
     move-object/from16 v16, v0
 
     .end local v0    # "lightweightSuggestionsModeEnabled":Ljava/lang/Boolean;
     .local v16, "lightweightSuggestionsModeEnabled":Ljava/lang/Boolean;
-    iget v0, v4, Ldefpackage/mia;->a:I
+    iget v0, v4, Lmia;->a:I
 
     const/high16 v35, 0x10000000
 
     or-int v0, v0, v35
 
-    iput v0, v4, Ldefpackage/mia;->a:I
+    iput v0, v4, Lmia;->a:I
 
     .line 701
-    iput-boolean v2, v4, Ldefpackage/mia;->F:Z
+    iput-boolean v2, v4, Lmia;->F:Z
 
     goto :goto_14
 
     .line 693
     .end local v2    # "booleanValue18":Z
-    .end local v4    # "miaVar32":Ldefpackage/mia;
+    .end local v4    # "miaVar32":Lmia;
     .end local v16    # "lightweightSuggestionsModeEnabled":Ljava/lang/Boolean;
     .restart local v0    # "lightweightSuggestionsModeEnabled":Ljava/lang/Boolean;
     :cond_47
@@ -3436,48 +3436,48 @@
     .end local v0    # "lightweightSuggestionsModeEnabled":Ljava/lang/Boolean;
     .restart local v16    # "lightweightSuggestionsModeEnabled":Ljava/lang/Boolean;
     :goto_14
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->mobileRaidParams()Ldefpackage/mie;
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->mobileRaidParams()Lmie;
 
     move-result-object v0
 
     .line 704
-    .local v0, "mobileRaidParams":Ldefpackage/mie;
+    .local v0, "mobileRaidParams":Lmie;
     if-eqz v0, :cond_49
 
     .line 705
-    iget-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v2, v1, Lpoy;->c:Z
 
     if-eqz v2, :cond_48
 
     .line 706
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 707
     const/4 v2, 0x0
 
-    iput-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v1, Lpoy;->c:Z
 
     .line 709
     :cond_48
-    iget-object v2, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v2, v1, Lpoy;->b:Lppd;
 
-    check-cast v2, Ldefpackage/mia;
+    check-cast v2, Lmia;
 
     .line 710
-    .local v2, "miaVar33":Ldefpackage/mia;
-    iput-object v0, v2, Ldefpackage/mia;->G:Ldefpackage/mie;
+    .local v2, "miaVar33":Lmia;
+    iput-object v0, v2, Lmia;->G:Lmie;
 
     .line 711
-    iget v4, v2, Ldefpackage/mia;->a:I
+    iget v4, v2, Lmia;->a:I
 
     const/high16 v35, 0x20000000
 
     or-int v4, v4, v35
 
-    iput v4, v2, Ldefpackage/mia;->a:I
+    iput v4, v2, Lmia;->a:I
 
     .line 713
-    .end local v2    # "miaVar33":Ldefpackage/mia;
+    .end local v2    # "miaVar33":Lmia;
     :cond_49
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->embedderModeEnabled()Ljava/lang/Boolean;
 
@@ -3496,14 +3496,14 @@
     .local v4, "booleanValue19":Z
     move-object/from16 v35, v0
 
-    .end local v0    # "mobileRaidParams":Ldefpackage/mie;
-    .local v35, "mobileRaidParams":Ldefpackage/mie;
-    iget-boolean v0, v1, Ldefpackage/poy;->c:Z
+    .end local v0    # "mobileRaidParams":Lmie;
+    .local v35, "mobileRaidParams":Lmie;
+    iget-boolean v0, v1, Lpoy;->c:Z
 
     if-eqz v0, :cond_4a
 
     .line 717
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 718
     move-object v0, v2
@@ -3512,7 +3512,7 @@
 
     .end local v2    # "embedderModeEnabled":Ljava/lang/Boolean;
     .local v0, "embedderModeEnabled":Ljava/lang/Boolean;
-    iput-boolean v2, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v2, v1, Lpoy;->c:Z
 
     goto :goto_15
 
@@ -3526,34 +3526,34 @@
     .end local v2    # "embedderModeEnabled":Ljava/lang/Boolean;
     .restart local v0    # "embedderModeEnabled":Ljava/lang/Boolean;
     :goto_15
-    iget-object v2, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v2, v1, Lpoy;->b:Lppd;
 
-    check-cast v2, Ldefpackage/mia;
+    check-cast v2, Lmia;
 
     .line 721
-    .local v2, "miaVar34":Ldefpackage/mia;
+    .local v2, "miaVar34":Lmia;
     move-object/from16 v36, v0
 
     .end local v0    # "embedderModeEnabled":Ljava/lang/Boolean;
     .local v36, "embedderModeEnabled":Ljava/lang/Boolean;
-    iget v0, v2, Ldefpackage/mia;->a:I
+    iget v0, v2, Lmia;->a:I
 
     const/high16 v37, 0x40000000    # 2.0f
 
     or-int v0, v0, v37
 
-    iput v0, v2, Ldefpackage/mia;->a:I
+    iput v0, v2, Lmia;->a:I
 
     .line 722
-    iput-boolean v4, v2, Ldefpackage/mia;->H:Z
+    iput-boolean v4, v2, Lmia;->H:Z
 
     goto :goto_16
 
     .line 714
     .end local v4    # "booleanValue19":Z
-    .end local v35    # "mobileRaidParams":Ldefpackage/mie;
+    .end local v35    # "mobileRaidParams":Lmie;
     .end local v36    # "embedderModeEnabled":Ljava/lang/Boolean;
-    .local v0, "mobileRaidParams":Ldefpackage/mie;
+    .local v0, "mobileRaidParams":Lmie;
     .local v2, "embedderModeEnabled":Ljava/lang/Boolean;
     :cond_4b
     move-object/from16 v35, v0
@@ -3561,9 +3561,9 @@
     move-object/from16 v36, v2
 
     .line 724
-    .end local v0    # "mobileRaidParams":Ldefpackage/mie;
+    .end local v0    # "mobileRaidParams":Lmie;
     .end local v2    # "embedderModeEnabled":Ljava/lang/Boolean;
-    .restart local v35    # "mobileRaidParams":Ldefpackage/mie;
+    .restart local v35    # "mobileRaidParams":Lmie;
     .restart local v36    # "embedderModeEnabled":Ljava/lang/Boolean;
     :goto_16
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/libraries/lens/lenslite/api/LinkConfig;->waitForVkpStartEnabled()Ljava/lang/Boolean;
@@ -3581,46 +3581,46 @@
 
     .line 727
     .local v2, "booleanValue20":Z
-    iget-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iget-boolean v4, v1, Lpoy;->c:Z
 
     if-eqz v4, :cond_4c
 
     .line 728
-    invoke-virtual {v1}, Ldefpackage/poy;->m()V
+    invoke-virtual {v1}, Lpoy;->m()V
 
     .line 729
     const/4 v4, 0x0
 
-    iput-boolean v4, v1, Ldefpackage/poy;->c:Z
+    iput-boolean v4, v1, Lpoy;->c:Z
 
     .line 731
     :cond_4c
-    iget-object v4, v1, Ldefpackage/poy;->b:Ldefpackage/ppd;
+    iget-object v4, v1, Lpoy;->b:Lppd;
 
-    check-cast v4, Ldefpackage/mia;
+    check-cast v4, Lmia;
 
     .line 732
-    .local v4, "miaVar35":Ldefpackage/mia;
+    .local v4, "miaVar35":Lmia;
     move-object/from16 v18, v0
 
     .end local v0    # "waitForVkpStartEnabled":Ljava/lang/Boolean;
     .local v18, "waitForVkpStartEnabled":Ljava/lang/Boolean;
-    iget v0, v4, Ldefpackage/mia;->a:I
+    iget v0, v4, Lmia;->a:I
 
     const/high16 v37, -0x80000000
 
     or-int v0, v0, v37
 
-    iput v0, v4, Ldefpackage/mia;->a:I
+    iput v0, v4, Lmia;->a:I
 
     .line 733
-    iput-boolean v2, v4, Ldefpackage/mia;->I:Z
+    iput-boolean v2, v4, Lmia;->I:Z
 
     goto :goto_17
 
     .line 725
     .end local v2    # "booleanValue20":Z
-    .end local v4    # "miaVar35":Ldefpackage/mia;
+    .end local v4    # "miaVar35":Lmia;
     .end local v18    # "waitForVkpStartEnabled":Ljava/lang/Boolean;
     .restart local v0    # "waitForVkpStartEnabled":Ljava/lang/Boolean;
     :cond_4d
@@ -3630,13 +3630,13 @@
     .end local v0    # "waitForVkpStartEnabled":Ljava/lang/Boolean;
     .restart local v18    # "waitForVkpStartEnabled":Ljava/lang/Boolean;
     :goto_17
-    invoke-virtual {v1}, Ldefpackage/poy;->j()Ldefpackage/ppd;
+    invoke-virtual {v1}, Lpoy;->j()Lppd;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/mia;
+    check-cast v0, Lmia;
 
-    invoke-virtual {v0}, Ldefpackage/pnm;->g()[B
+    invoke-virtual {v0}, Lpnm;->g()[B
 
     move-result-object v0
 

@@ -3,11 +3,11 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jen;
+.implements Ljen;
 
 
 # instance fields
-.field public a:Ldefpackage/jem;
+.field public a:Ljem;
 
 .field public b:Ljava/util/List;
 
@@ -17,7 +17,7 @@
 
 .field private final e:I
 
-.field private f:Ldefpackage/ddf;
+.field private f:Lddf;
 
 .field private final g:Landroid/widget/LinearLayout$LayoutParams;
 
@@ -105,13 +105,13 @@
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/jdx;
+    new-instance v1, Ljdx;
 
-    invoke-direct {v1, p1}, Ldefpackage/jdx;-><init>(Landroid/widget/TextView;)V
+    invoke-direct {v1, p1}, Ljdx;-><init>(Landroid/widget/TextView;)V
 
     const v2, 0x7f090005
 
-    invoke-static {v0, v2, v1}, Ldefpackage/ei;->e(Landroid/content/Context;ILdefpackage/eg;)V
+    invoke-static {v0, v2, v1}, Lei;->e(Landroid/content/Context;ILeg;)V
 
     .line 54
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setTextColor(I)V
@@ -135,9 +135,9 @@
     return v0
 .end method
 
-.method public final b(Ldefpackage/jdz;)I
+.method public final b(Ljdz;)I
     .locals 4
-    .param p1, "jdzVar"    # Ldefpackage/jdz;
+    .param p1, "jdzVar"    # Ljdz;
 
     .line 62
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->b:Ljava/util/List;
@@ -172,7 +172,7 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/jdz;
+    check-cast v2, Ljdz;
 
     invoke-virtual {v2, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -270,7 +270,7 @@
     return-void
 .end method
 
-.method public final f(I)Ldefpackage/jdz;
+.method public final f(I)Ljdz;
     .locals 1
     .param p1, "i"    # I
 
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jdz;
+    check-cast v0, Ljdz;
 
     return-object v0
 .end method
@@ -473,10 +473,10 @@
     return-void
 .end method
 
-.method public final i(Ldefpackage/jdy;Ldefpackage/ddf;)V
+.method public final i(Ljdy;Lddf;)V
     .locals 11
-    .param p1, "jdyVar"    # Ldefpackage/jdy;
-    .param p2, "ddfVar"    # Ldefpackage/ddf;
+    .param p1, "jdyVar"    # Ljdy;
+    .param p2, "ddfVar"    # Lddf;
 
     .line 124
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->b:Ljava/util/List;
@@ -486,15 +486,15 @@
     .line 125
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->b:Ljava/util/List;
 
-    iget-object v1, p1, Ldefpackage/jdy;->h:Ljava/util/List;
+    iget-object v1, p1, Ljdy;->h:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 126
-    iput-object p2, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->f:Ldefpackage/ddf;
+    iput-object p2, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->f:Lddf;
 
     .line 127
-    iget-object v0, p1, Ldefpackage/jdy;->h:Ljava/util/List;
+    iget-object v0, p1, Ljdy;->h:Ljava/util/List;
 
     .line 128
     .local v0, "list":Ljava/util/List;
@@ -540,7 +540,7 @@
 
     move-result v3
 
-    invoke-static {v3}, Ldefpackage/jsa;->a(F)F
+    invoke-static {v3}, Ljsa;->a(F)F
 
     move-result v3
 
@@ -561,9 +561,9 @@
 
     move-result-object v6
 
-    check-cast v6, Ldefpackage/jdz;
+    check-cast v6, Ljdz;
 
-    iget-object v6, v6, Ldefpackage/jdz;->b:Ljava/lang/String;
+    iget-object v6, v6, Ljdz;->b:Ljava/lang/String;
 
     .line 135
     .local v6, "charSequence":Ljava/lang/CharSequence;
@@ -573,9 +573,9 @@
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/jdz;
+    check-cast v7, Ljdz;
 
-    iget-object v7, v7, Ldefpackage/jdz;->c:Ljava/lang/String;
+    iget-object v7, v7, Ljdz;->c:Ljava/lang/String;
 
     .line 136
     .local v7, "charSequence2":Ljava/lang/CharSequence;
@@ -615,9 +615,9 @@
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 143
-    sget-object v9, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v9, Lddl;->ay:Lddg;
 
-    invoke-interface {p2, v9}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {p2, v9}, Lddf;->k(Lddg;)Z
 
     move-result v9
 
@@ -626,7 +626,7 @@
     .line 144
     const v9, 0x7f0400ef
 
-    invoke-static {v8, v9}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v8, v9}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v9
 
@@ -712,9 +712,9 @@
     invoke-virtual {p0, v4, v5, v4, v5}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
     .line 169
-    new-instance v5, Ldefpackage/jdw;
+    new-instance v5, Ljdw;
 
-    invoke-direct {v5, p0}, Ldefpackage/jdw;-><init>(Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;)V
+    invoke-direct {v5, p0}, Ljdw;-><init>(Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;)V
 
     invoke-virtual {p0, v5}, Landroid/widget/LinearLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -813,11 +813,11 @@
     if-eqz v2, :cond_1
 
     .line 193
-    iget-object v3, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->f:Ldefpackage/ddf;
+    iget-object v3, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->f:Lddf;
 
-    sget-object v4, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v4, Lddl;->ay:Lddg;
 
-    invoke-interface {v3, v4}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v3, v4}, Lddf;->k(Lddg;)Z
 
     move-result v3
 
@@ -826,7 +826,7 @@
     .line 194
     const v3, 0x7f0400e9
 
-    invoke-static {v1, v3}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v3}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v3
 
@@ -835,7 +835,7 @@
     .line 195
     const v3, 0x7f04010a
 
-    invoke-static {v1, v3}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v3}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v3
 
@@ -878,11 +878,11 @@
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 204
-    iget-object v3, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->f:Ldefpackage/ddf;
+    iget-object v3, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->f:Lddf;
 
-    sget-object v4, Ldefpackage/ddl;->ay:Ldefpackage/ddg;
+    sget-object v4, Lddl;->ay:Lddg;
 
-    invoke-interface {v3, v4}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v3, v4}, Lddf;->k(Lddg;)Z
 
     move-result v3
 
@@ -891,7 +891,7 @@
     .line 205
     const v3, 0x7f0400ef
 
-    invoke-static {v1, v3}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v3}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v3
 
@@ -919,10 +919,10 @@
     invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->g()V
 
     .line 212
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ldefpackage/jem;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ljem;
 
     .line 213
-    .local v0, "jemVar":Ldefpackage/jem;
+    .local v0, "jemVar":Ljem;
     if-nez v0, :cond_5
 
     .line 214
@@ -933,13 +933,13 @@
     if-nez p2, :cond_6
 
     .line 217
-    invoke-interface {v0, v2}, Ldefpackage/jem;->c(Z)V
+    invoke-interface {v0, v2}, Ljem;->c(Z)V
 
     .line 219
     :cond_6
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ldefpackage/jem;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ljem;
 
-    invoke-interface {v1, p0, p1, p2}, Ldefpackage/jem;->a(Landroid/view/View;IZ)V
+    invoke-interface {v1, p0, p1, p2}, Ljem;->a(Landroid/view/View;IZ)V
 
     .line 220
     if-eqz p2, :cond_7
@@ -949,12 +949,12 @@
 
     .line 223
     :cond_7
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ldefpackage/jem;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/modeslider/ModeSlider;->a:Ljem;
 
-    invoke-interface {v1, p0, v2}, Ldefpackage/jem;->b(Landroid/view/View;Z)V
+    invoke-interface {v1, p0, v2}, Ljem;->b(Landroid/view/View;Z)V
 
     .line 225
-    .end local v0    # "jemVar":Ldefpackage/jem;
+    .end local v0    # "jemVar":Ljem;
     :cond_8
     return-void
 

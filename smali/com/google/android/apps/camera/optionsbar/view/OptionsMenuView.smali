@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
@@ -22,15 +22,15 @@
 
 .field public h:I
 
-.field public i:Ldefpackage/jrz;
+.field public i:Ljrz;
 
-.field public j:Ldefpackage/guq;
+.field public j:Lguq;
 
-.field public k:Ldefpackage/gtw;
+.field public k:Lgtw;
 
 .field public l:Landroid/widget/LinearLayout;
 
-.field public m:Ldefpackage/gug;
+.field public m:Lgug;
 
 
 # direct methods
@@ -40,11 +40,11 @@
     .line 38
     const-string v0, "com/google/android/apps/camera/optionsbar/view/OptionsMenuView"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->a:Louj;
 
     return-void
 .end method
@@ -91,16 +91,16 @@
     iput-boolean v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->g:Z
 
     .line 59
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->i:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->i:Ljrz;
 
     .line 60
     new-instance v0, Landroid/view/GestureDetector;
 
-    new-instance v1, Ldefpackage/gut;
+    new-instance v1, Lgut;
 
-    invoke-direct {v1, p0}, Ldefpackage/gut;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;)V
+    invoke-direct {v1, p0}, Lgut;-><init>(Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;)V
 
     invoke-direct {v0, p1, v1}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
 
@@ -136,22 +136,22 @@
     return v1
 .end method
 
-.method public final b(Ldefpackage/gtm;)V
+.method public final b(Lgtm;)V
     .locals 1
-    .param p1, "gtmVar"    # Ldefpackage/gtm;
+    .param p1, "gtmVar"    # Lgtm;
 
     .line 72
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->c(Ldefpackage/gtm;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->c(Lgtm;Ljava/lang/String;)V
 
     .line 73
     return-void
 .end method
 
-.method public final c(Ldefpackage/gtm;Ljava/lang/String;)V
+.method public final c(Lgtm;Ljava/lang/String;)V
     .locals 9
-    .param p1, "gtmVar"    # Ldefpackage/gtm;
+    .param p1, "gtmVar"    # Lgtm;
     .param p2, "str"    # Ljava/lang/String;
 
     .line 76
@@ -165,14 +165,14 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/guq;
+    check-cast v0, Lguq;
 
     .line 78
-    .local v0, "guqVar":Ldefpackage/guq;
+    .local v0, "guqVar":Lguq;
     if-eqz v0, :cond_5
 
     .line 79
-    iget-object v1, v0, Ldefpackage/guq;->d:Ljava/util/ArrayList;
+    iget-object v1, v0, Lguq;->d:Ljava/util/ArrayList;
 
     .line 80
     .local v1, "arrayList":Ljava/util/ArrayList;
@@ -208,7 +208,7 @@
     invoke-virtual {v5, v4}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
     .line 84
-    iget-boolean v4, v0, Ldefpackage/guq;->l:Z
+    iget-boolean v4, v0, Lguq;->l:Z
 
     if-eqz v4, :cond_0
 
@@ -235,9 +235,9 @@
     .line 90
     .end local v3    # "i":I
     :cond_1
-    iget-object v3, v0, Ldefpackage/guq;->e:Ljava/util/Map;
+    iget-object v3, v0, Lguq;->e:Ljava/util/Map;
 
-    iget-object v5, v0, Ldefpackage/guq;->n:Ldefpackage/gtv;
+    iget-object v5, v0, Lguq;->n:Lgtv;
 
     invoke-interface {v3, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -250,7 +250,7 @@
     if-eqz v3, :cond_2
 
     .line 92
-    invoke-virtual {v0, v3}, Ldefpackage/guq;->f(Landroid/widget/ImageButton;)V
+    invoke-virtual {v0, v3}, Lguq;->f(Landroid/widget/ImageButton;)V
 
     .line 94
     :cond_2
@@ -261,14 +261,14 @@
     if-eqz v5, :cond_3
 
     .line 95
-    iget-object v5, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v5, v0, Lguq;->h:Landroid/widget/TextView;
 
     const v6, 0x7f110387
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
     .line 96
-    iget-object v5, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v5, v0, Lguq;->h:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
@@ -286,25 +286,25 @@
 
     .line 98
     :cond_3
-    iget-object v5, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v5, v0, Lguq;->h:Landroid/widget/TextView;
 
     invoke-virtual {v5, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 99
-    iget-object v5, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v5, v0, Lguq;->h:Landroid/widget/TextView;
 
     invoke-virtual {v5, p2}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 101
     :goto_2
-    iget-boolean v5, v0, Ldefpackage/guq;->l:Z
+    iget-boolean v5, v0, Lguq;->l:Z
 
     if-eqz v5, :cond_4
 
     .line 102
-    iget-object v5, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v5, v0, Lguq;->h:Landroid/widget/TextView;
 
-    invoke-static {v0}, Ldefpackage/mip;->dO(Landroid/view/View;)I
+    invoke-static {v0}, Lmip;->dO(Landroid/view/View;)I
 
     move-result v6
 
@@ -314,7 +314,7 @@
 
     .line 104
     :cond_4
-    iget-object v5, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v5, v0, Lguq;->h:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
@@ -335,7 +335,7 @@
     invoke-virtual {v0, v4}, Landroid/view/ViewGroup;->setEnabled(Z)V
 
     .line 108
-    .end local v0    # "guqVar":Ldefpackage/guq;
+    .end local v0    # "guqVar":Lguq;
     .end local v1    # "arrayList":Ljava/util/ArrayList;
     .end local v2    # "size":I
     .end local v3    # "imageButton2":Landroid/widget/ImageButton;
@@ -356,10 +356,10 @@
     throw v0
 .end method
 
-.method public final d(Ldefpackage/gtm;Ldefpackage/gtv;)V
+.method public final d(Lgtm;Lgtv;)V
     .locals 4
-    .param p1, "gtmVar"    # Ldefpackage/gtm;
-    .param p2, "gtvVar"    # Ldefpackage/gtv;
+    .param p1, "gtmVar"    # Lgtm;
+    .param p2, "gtvVar"    # Lgtv;
 
     .line 112
     monitor-enter p0
@@ -381,11 +381,11 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/guq;
+    check-cast v0, Lguq;
 
     .line 115
-    .local v0, "guqVar":Ldefpackage/guq;
-    iget-object v1, v0, Ldefpackage/guq;->e:Ljava/util/Map;
+    .local v0, "guqVar":Lguq;
+    iget-object v1, v0, Lguq;->e:Ljava/util/Map;
 
     invoke-interface {v1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -398,9 +398,9 @@
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 117
-    iget-object v2, v0, Ldefpackage/guq;->e:Ljava/util/Map;
+    iget-object v2, v0, Lguq;->e:Ljava/util/Map;
 
-    iget-object v3, v0, Ldefpackage/guq;->n:Ldefpackage/gtv;
+    iget-object v3, v0, Lguq;->n:Lgtv;
 
     invoke-interface {v2, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -416,7 +416,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
     .line 119
-    iget-boolean v2, v0, Ldefpackage/guq;->l:Z
+    iget-boolean v2, v0, Lguq;->l:Z
 
     if-eqz v2, :cond_0
 
@@ -434,7 +434,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setImageAlpha(I)V
 
     .line 126
-    .end local v0    # "guqVar":Ldefpackage/guq;
+    .end local v0    # "guqVar":Lguq;
     .end local v1    # "imageButton":Landroid/widget/ImageButton;
     :cond_1
     :goto_0
@@ -454,9 +454,9 @@
     throw v0
 .end method
 
-.method public final e(Ldefpackage/gtm;)V
+.method public final e(Lgtm;)V
     .locals 10
-    .param p1, "gtmVar"    # Ldefpackage/gtm;
+    .param p1, "gtmVar"    # Lgtm;
 
     .line 130
     monitor-enter p0
@@ -478,11 +478,11 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/guq;
+    check-cast v0, Lguq;
 
     .line 133
-    .local v0, "guqVar":Ldefpackage/guq;
-    iget-object v1, v0, Ldefpackage/guq;->d:Ljava/util/ArrayList;
+    .local v0, "guqVar":Lguq;
+    iget-object v1, v0, Lguq;->d:Ljava/util/ArrayList;
 
     .line 134
     .local v1, "arrayList":Ljava/util/ArrayList;
@@ -533,9 +533,9 @@
     .line 140
     .end local v3    # "i":I
     :cond_0
-    iget-object v3, v0, Ldefpackage/guq;->e:Ljava/util/Map;
+    iget-object v3, v0, Lguq;->e:Ljava/util/Map;
 
-    iget-object v5, v0, Ldefpackage/guq;->n:Ldefpackage/gtv;
+    iget-object v5, v0, Lguq;->n:Lgtv;
 
     invoke-interface {v3, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -548,56 +548,56 @@
     if-eqz v3, :cond_2
 
     .line 142
-    invoke-virtual {v0, v3}, Ldefpackage/guq;->e(Landroid/widget/ImageButton;)V
+    invoke-virtual {v0, v3}, Lguq;->e(Landroid/widget/ImageButton;)V
 
     .line 143
-    iget-object v5, v0, Ldefpackage/guq;->f:Ljava/util/Map;
+    iget-object v5, v0, Lguq;->f:Ljava/util/Map;
 
     invoke-interface {v5, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
-    check-cast v5, Ldefpackage/gtl;
+    check-cast v5, Lgtl;
 
     .line 144
-    .local v5, "gtlVar":Ldefpackage/gtl;
+    .local v5, "gtlVar":Lgtl;
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 145
-    iget-object v6, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v6, v0, Lguq;->h:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
-    invoke-virtual {v5, v7}, Ldefpackage/gtl;->b(Landroid/content/res/Resources;)Ljava/lang/String;
+    invoke-virtual {v5, v7}, Lgtl;->b(Landroid/content/res/Resources;)Ljava/lang/String;
 
     move-result-object v7
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 146
-    iget-object v6, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v6, v0, Lguq;->h:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
-    invoke-virtual {v5, v7}, Ldefpackage/gtl;->a(Landroid/content/res/Resources;)Ljava/lang/String;
+    invoke-virtual {v5, v7}, Lgtl;->a(Landroid/content/res/Resources;)Ljava/lang/String;
 
     move-result-object v7
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 147
-    iget-boolean v6, v0, Ldefpackage/guq;->l:Z
+    iget-boolean v6, v0, Lguq;->l:Z
 
     if-eqz v6, :cond_1
 
     .line 148
-    iget-object v6, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v6, v0, Lguq;->h:Landroid/widget/TextView;
 
-    invoke-static {v0}, Ldefpackage/mip;->dQ(Landroid/view/View;)I
+    invoke-static {v0}, Lmip;->dQ(Landroid/view/View;)I
 
     move-result v7
 
@@ -607,7 +607,7 @@
 
     .line 150
     :cond_1
-    iget-object v6, v0, Ldefpackage/guq;->h:Landroid/widget/TextView;
+    iget-object v6, v0, Lguq;->h:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
@@ -624,7 +624,7 @@
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 153
-    .end local v5    # "gtlVar":Ldefpackage/gtl;
+    .end local v5    # "gtlVar":Lgtl;
     :cond_2
     :goto_1
     iget-object v5, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->f:Ljava/util/Map;
@@ -633,12 +633,12 @@
 
     move-result-object v5
 
-    check-cast v5, Ldefpackage/guq;
+    check-cast v5, Lguq;
 
     invoke-virtual {v5, v4}, Landroid/view/ViewGroup;->setEnabled(Z)V
 
     .line 155
-    .end local v0    # "guqVar":Ldefpackage/guq;
+    .end local v0    # "guqVar":Lguq;
     .end local v1    # "arrayList":Ljava/util/ArrayList;
     .end local v2    # "size":I
     .end local v3    # "imageButton2":Landroid/widget/ImageButton;
@@ -659,9 +659,9 @@
     throw v0
 .end method
 
-.method public final f(Ldefpackage/gtm;Z)V
+.method public final f(Lgtm;Z)V
     .locals 5
-    .param p1, "gtmVar"    # Ldefpackage/gtm;
+    .param p1, "gtmVar"    # Lgtm;
     .param p2, "z"    # Z
 
     .line 159
@@ -680,9 +680,9 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/guq;
+    check-cast v0, Lguq;
 
-    iget-object v0, v0, Ldefpackage/guq;->d:Ljava/util/ArrayList;
+    iget-object v0, v0, Lguq;->d:Ljava/util/ArrayList;
 
     .line 161
     .local v0, "arrayList":Ljava/util/ArrayList;
@@ -729,7 +729,7 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/guq;
+    check-cast v2, Lguq;
 
     invoke-virtual {v2, p2}, Landroid/view/ViewGroup;->setEnabled(Z)V
 
@@ -740,10 +740,10 @@
     return-void
 .end method
 
-.method public final g(Ldefpackage/gtk;Ldefpackage/gtp;)V
+.method public final g(Lgtk;Lgtp;)V
     .locals 1
-    .param p1, "gtkVar"    # Ldefpackage/gtk;
-    .param p2, "gtpVar"    # Ldefpackage/gtp;
+    .param p1, "gtkVar"    # Lgtk;
+    .param p2, "gtpVar"    # Lgtp;
 
     .line 170
     iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->d:Ljava/util/Map;
@@ -754,9 +754,9 @@
     return-void
 .end method
 
-.method public final h(Ldefpackage/gtm;)Z
+.method public final h(Lgtm;)Z
     .locals 1
-    .param p1, "gtmVar"    # Ldefpackage/gtm;
+    .param p1, "gtmVar"    # Lgtm;
 
     .line 175
     monitor-enter p0
@@ -769,7 +769,7 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/guq;
+    check-cast v0, Lguq;
 
     if-eqz v0, :cond_0
 
@@ -800,9 +800,9 @@
     throw v0
 .end method
 
-.method public final i(Ldefpackage/gtm;)Z
+.method public final i(Lgtm;)Z
     .locals 1
-    .param p1, "gtmVar"    # Ldefpackage/gtm;
+    .param p1, "gtmVar"    # Lgtm;
 
     .line 182
     iget-object v0, p0, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->f:Ljava/util/Map;
@@ -820,7 +820,7 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/guq;
+    check-cast v0, Lguq;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->isEnabled()Z
 
@@ -1059,15 +1059,15 @@
 
     .line 229
     :try_start_2
-    sget-object v4, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->a:Ldefpackage/ouj;
+    sget-object v4, Lcom/google/android/apps/camera/optionsbar/view/OptionsMenuView;->a:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->b()Lova;
 
     move-result-object v4
 
     check-cast v4, Loug;
 
-    invoke-interface {v4, v1}, Ldefpackage/ova;->h(Ljava/lang/Throwable;)Ldefpackage/ova;
+    invoke-interface {v4, v1}, Lova;->h(Ljava/lang/Throwable;)Lova;
 
     move-result-object v4
 
@@ -1075,7 +1075,7 @@
 
     const/16 v5, 0x869
 
-    invoke-interface {v4, v5}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v4, v5}, Lova;->G(I)Lova;
 
     move-result-object v4
 
@@ -1083,7 +1083,7 @@
 
     const-string v5, "Error forcing height."
 
-    invoke-interface {v4, v5}, Ldefpackage/ova;->o(Ljava/lang/String;)V
+    invoke-interface {v4, v5}, Lova;->o(Ljava/lang/String;)V
 
     .line 230
     invoke-super {p0, p1, p2}, Landroid/widget/ScrollView;->onMeasure(II)V

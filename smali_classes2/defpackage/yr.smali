@@ -1,164 +1,71 @@
-.class public Ldefpackage/yr;
-.super Ldefpackage/yk;
+.class public Ldefpackage/Yr;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljlz;->a()Llie;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public aH:Ljava/util/ArrayList;
+.field public final synthetic this$0:Ljlz;
+
+.field public final synthetic val$jmgVar:Ljmg;
+
+.field public final synthetic val$viewTreeObserver:Landroid/view/ViewTreeObserver;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljlz;Ljmg;Landroid/view/ViewTreeObserver;)V
+    .locals 0
+    .param p1, "this$0"    # Ljlz;
 
-    .line 7
-    invoke-direct {p0}, Ldefpackage/yk;-><init>()V
+    .line 126
+    iput-object p1, p0, Ldefpackage/Yr;->this$0:Ljlz;
 
-    .line 8
-    new-instance v0, Ljava/util/ArrayList;
+    iput-object p2, p0, Ldefpackage/Yr;->val$jmgVar:Ljmg;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    iput-object p3, p0, Ldefpackage/Yr;->val$viewTreeObserver:Landroid/view/ViewTreeObserver;
 
-    iput-object v0, p0, Ldefpackage/yr;->aH:Ljava/util/ArrayList;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public T()V
-    .locals 5
-
-    .line 11
-    iget-object v0, p0, Ldefpackage/yr;->aH:Ljava/util/ArrayList;
-
-    .line 12
-    .local v0, "arrayList":Ljava/util/ArrayList;
-    if-nez v0, :cond_0
-
-    .line 13
-    return-void
-
-    .line 15
-    :cond_0
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    .line 16
-    .local v1, "size":I
-    const/4 v2, 0x0
-
-    .local v2, "i":I
-    :goto_0
-    if-ge v2, v1, :cond_2
-
-    .line 17
-    iget-object v3, p0, Ldefpackage/yr;->aH:Ljava/util/ArrayList;
-
-    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ldefpackage/yk;
-
-    .line 18
-    .local v3, "ykVar":Ldefpackage/yk;
-    instance-of v4, v3, Ldefpackage/yr;
-
-    if-eqz v4, :cond_1
-
-    .line 19
-    move-object v4, v3
-
-    check-cast v4, Ldefpackage/yr;
-
-    invoke-virtual {v4}, Ldefpackage/yr;->T()V
-
-    .line 16
-    .end local v3    # "ykVar":Ldefpackage/yk;
-    :cond_1
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 22
-    .end local v2    # "i":I
-    :cond_2
-    return-void
-.end method
-
-.method public final Y(Ldefpackage/yk;)V
-    .locals 1
-    .param p1, "ykVar"    # Ldefpackage/yk;
-
-    .line 25
-    iget-object v0, p0, Ldefpackage/yr;->aH:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    .line 26
-    invoke-virtual {p1}, Ldefpackage/yk;->s()V
-
-    .line 27
-    return-void
-.end method
-
-.method public s()V
-    .locals 1
-
-    .line 31
-    iget-object v0, p0, Ldefpackage/yr;->aH:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
-
-    .line 32
-    invoke-super {p0}, Ldefpackage/yk;->s()V
-
-    .line 33
-    return-void
-.end method
-
-.method public final u(Ldefpackage/xz;)V
+.method public final close()V
     .locals 3
-    .param p1, "xzVar"    # Ldefpackage/xz;
 
-    .line 37
-    invoke-super {p0, p1}, Ldefpackage/yk;->u(Ldefpackage/xz;)V
+    .line 129
+    iget-object v0, p0, Ldefpackage/Yr;->val$jmgVar:Ljmg;
 
-    .line 38
-    iget-object v0, p0, Ldefpackage/yr;->aH:Ljava/util/ArrayList;
+    .line 130
+    .local v0, "jmgVar2":Ljmg;
+    iget-object v1, p0, Ldefpackage/Yr;->val$viewTreeObserver:Landroid/view/ViewTreeObserver;
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    .line 131
+    .local v1, "viewTreeObserver2":Landroid/view/ViewTreeObserver;
+    invoke-virtual {v1}, Landroid/view/ViewTreeObserver;->isAlive()Z
 
-    move-result v0
+    move-result v2
 
-    .line 39
-    .local v0, "size":I
-    const/4 v1, 0x0
+    if-eqz v2, :cond_0
 
-    .local v1, "i":I
-    :goto_0
-    if-ge v1, v0, :cond_0
+    .line 132
+    invoke-virtual {v1, v0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 40
-    iget-object v2, p0, Ldefpackage/yr;->aH:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ldefpackage/yk;
-
-    invoke-virtual {v2, p1}, Ldefpackage/yk;->u(Ldefpackage/xz;)V
-
-    .line 39
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 42
-    .end local v1    # "i":I
+    .line 134
     :cond_0
     return-void
 .end method

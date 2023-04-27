@@ -1,88 +1,61 @@
-.class final Ldefpackage/rw;
-.super Ldefpackage/gq;
+.class public Ldefpackage/Rw;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Loiu;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmyt;->s(Lmyt;)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic val$a2:Ljava/util/List;
 
-.field public final b:Ldefpackage/rx;
-
-.field private c:Z
+.field public final synthetic val$mytVar:Lmyt;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/rx;I)V
-    .locals 1
-    .param p1, "rxVar"    # Ldefpackage/rx;
-    .param p2, "i"    # I
+.method public constructor <init>(Lmyt;Ljava/util/List;)V
+    .locals 0
 
-    .line 10
-    invoke-direct {p0}, Ldefpackage/gq;-><init>()V
+    .line 103
+    iput-object p1, p0, Ldefpackage/Rw;->val$mytVar:Lmyt;
 
-    .line 8
-    const/4 v0, 0x0
+    iput-object p2, p0, Ldefpackage/Rw;->val$a2:Ljava/util/List;
 
-    iput-boolean v0, p0, Ldefpackage/rw;->c:Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
-    iput-object p1, p0, Ldefpackage/rw;->b:Ldefpackage/rx;
-
-    .line 12
-    iput p2, p0, Ldefpackage/rw;->a:I
-
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 1
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 17
-    const/4 v0, 0x1
+    .line 106
+    iget-object v0, p0, Ldefpackage/Rw;->val$mytVar:Lmyt;
 
-    iput-boolean v0, p0, Ldefpackage/rw;->c:Z
+    iget-object v1, p0, Ldefpackage/Rw;->val$a2:Ljava/util/List;
 
-    .line 18
-    return-void
-.end method
+    move-object v2, p1
 
-.method public final b()V
-    .locals 2
+    check-cast v2, Ljava/lang/Void;
 
-    .line 22
-    iget-boolean v0, p0, Ldefpackage/rw;->c:Z
+    invoke-virtual {v0, v1, v2}, Lmyt;->u(Ljava/util/List;Ljava/lang/Void;)Ljava/lang/Void;
 
-    if-nez v0, :cond_0
+    .line 107
+    const/4 v0, 0x0
 
-    .line 23
-    iget-object v0, p0, Ldefpackage/rw;->b:Ldefpackage/rx;
-
-    iget-object v0, v0, Ldefpackage/rx;->a:Landroid/support/v7/widget/Toolbar;
-
-    iget v1, p0, Ldefpackage/rw;->a:I
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 25
-    :cond_0
-    return-void
-.end method
-
-.method public final c()V
-    .locals 2
-
-    .line 29
-    iget-object v0, p0, Ldefpackage/rw;->b:Ldefpackage/rx;
-
-    iget-object v0, v0, Ldefpackage/rx;->a:Landroid/support/v7/widget/Toolbar;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 30
-    return-void
+    return-object v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Ldefpackage/eah;
+.field public a:Leah;
 
 .field public b:Ljava/util/concurrent/Executor;
 
@@ -21,9 +21,9 @@
     .line 17
     new-instance v0, Landroid/os/Messenger;
 
-    new-instance v1, Ldefpackage/hgq;
+    new-instance v1, Lhgq;
 
-    invoke-direct {v1, p0}, Ldefpackage/hgq;-><init>(Lcom/google/android/apps/camera/prewarm/ProcessingBoostService;)V
+    invoke-direct {v1, p0}, Lhgq;-><init>(Lcom/google/android/apps/camera/prewarm/ProcessingBoostService;)V
 
     invoke-direct {v0, v1}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 

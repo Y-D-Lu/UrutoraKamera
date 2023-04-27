@@ -1,140 +1,59 @@
-.class Ldefpackage/gu;
-.super Ldefpackage/gt;
+.class public Ldefpackage/Gu;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lloi;->fJ(Llmw;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lloi;
+
+.field public final synthetic val$lmwVar:Llmw;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/gy;Landroid/view/WindowInsets;)V
+.method public constructor <init>(Lloi;Llmw;)V
     .locals 0
-    .param p1, "gyVar"    # Ldefpackage/gy;
-    .param p2, "windowInsets"    # Landroid/view/WindowInsets;
+    .param p1, "this$0"    # Lloi;
 
-    .line 12
-    invoke-direct {p0, p1, p2}, Ldefpackage/gt;-><init>(Ldefpackage/gy;Landroid/view/WindowInsets;)V
+    .line 47
+    iput-object p1, p0, Ldefpackage/Gu;->this$0:Lloi;
 
-    .line 13
+    iput-object p2, p0, Ldefpackage/Gu;->val$lmwVar:Llmw;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 5
-    .param p1, "obj"    # Ljava/lang/Object;
+.method public final run()V
+    .locals 3
 
-    .line 17
-    const/4 v0, 0x1
+    .line 50
+    iget-object v0, p0, Ldefpackage/Gu;->this$0:Lloi;
 
-    if-ne p0, p1, :cond_0
+    .line 51
+    .local v0, "loiVar":Lloi;
+    iget-object v1, v0, Lloi;->a:Lmip;
 
-    .line 18
-    return v0
+    iget-object v2, p0, Ldefpackage/Gu;->val$lmwVar:Llmw;
 
-    .line 20
-    :cond_0
-    instance-of v1, p1, Ldefpackage/gu;
+    invoke-virtual {v1, v2}, Lmip;->fJ(Llmw;)V
 
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_1
-
-    .line 21
-    return v2
-
-    .line 23
-    :cond_1
-    move-object v1, p1
-
-    check-cast v1, Ldefpackage/gu;
-
-    .line 24
-    .local v1, "guVar":Ldefpackage/gu;
-    iget-object v3, p0, Ldefpackage/gs;->a:Landroid/view/WindowInsets;
-
-    iget-object v4, v1, Ldefpackage/gs;->a:Landroid/view/WindowInsets;
-
-    invoke-static {v3, v4}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    .line 25
-    iget-object v3, v1, Ldefpackage/gs;->b:Ldefpackage/el;
-
-    .line 26
-    .local v3, "elVar":Ldefpackage/el;
-    const/4 v4, 0x0
-
-    invoke-static {v4, v4}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    .line 27
-    return v0
-
-    .line 30
-    .end local v3    # "elVar":Ldefpackage/el;
-    :cond_2
-    return v2
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 35
-    iget-object v0, p0, Ldefpackage/gs;->a:Landroid/view/WindowInsets;
-
-    invoke-virtual {v0}, Landroid/view/WindowInsets;->hashCode()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final k()Ldefpackage/fl;
-    .locals 2
-
-    .line 40
-    iget-object v0, p0, Ldefpackage/gs;->a:Landroid/view/WindowInsets;
-
-    invoke-virtual {v0}, Landroid/view/WindowInsets;->getDisplayCutout()Landroid/view/DisplayCutout;
-
-    move-result-object v0
-
-    .line 41
-    .local v0, "displayCutout":Landroid/view/DisplayCutout;
-    if-nez v0, :cond_0
-
-    .line 42
-    const/4 v1, 0x0
-
-    return-object v1
-
-    .line 44
-    :cond_0
-    new-instance v1, Ldefpackage/fl;
-
-    invoke-direct {v1, v0}, Ldefpackage/fl;-><init>(Ljava/lang/Object;)V
-
-    return-object v1
-.end method
-
-.method public final l()Ldefpackage/gy;
-    .locals 1
-
-    .line 49
-    iget-object v0, p0, Ldefpackage/gs;->a:Landroid/view/WindowInsets;
-
-    invoke-virtual {v0}, Landroid/view/WindowInsets;->consumeDisplayCutout()Landroid/view/WindowInsets;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ldefpackage/gy;->l(Landroid/view/WindowInsets;)Ldefpackage/gy;
-
-    move-result-object v0
-
-    return-object v0
+    .line 52
+    return-void
 .end method

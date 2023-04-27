@@ -1,74 +1,110 @@
-.class final Ldefpackage/de;
+.class public Ldefpackage/De;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lojz;
 
-# static fields
-.field public static final a:Ldefpackage/df;
 
-.field public static final b:I
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgrn;->mo37get()Lojz;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lgrn;
+
+.field public final synthetic val$eamVar:Leam;
+
+.field public final synthetic val$intValue:I
+
+.field public final synthetic val$lceVar:Llce;
+
+.field public final synthetic val$z:Z
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    .line 12
-    :try_start_0
-    const-string v0, "akg"
-
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    new-array v2, v1, [Ljava/lang/Class;
-
-    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v0
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ldefpackage/df;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 15
-    .local v0, "dfVar":Ldefpackage/df;
-    goto :goto_0
-
-    .line 13
-    .end local v0    # "dfVar":Ldefpackage/df;
-    :catch_0
-    move-exception v0
-
-    .line 14
-    .local v0, "e":Ljava/lang/Exception;
-    const/4 v1, 0x0
-
-    move-object v0, v1
-
-    .line 16
-    .local v0, "dfVar":Ldefpackage/df;
-    :goto_0
-    sput-object v0, Ldefpackage/de;->a:Ldefpackage/df;
-
-    .line 17
-    .end local v0    # "dfVar":Ldefpackage/df;
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lgrn;ZLeam;Llce;I)V
     .locals 0
+    .param p1, "this$0"    # Lgrn;
 
-    .line 5
+    .line 86
+    iput-object p1, p0, Ldefpackage/De;->this$0:Lgrn;
+
+    iput-boolean p2, p0, Ldefpackage/De;->val$z:Z
+
+    iput-object p3, p0, Ldefpackage/De;->val$eamVar:Leam;
+
+    iput-object p4, p0, Ldefpackage/De;->val$lceVar:Llce;
+
+    iput p5, p0, Ldefpackage/De;->val$intValue:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/Object;
+    .locals 5
+
+    .line 89
+    iget-boolean v0, p0, Ldefpackage/De;->val$z:Z
+
+    .line 90
+    .local v0, "z3":Z
+    iget-object v1, p0, Ldefpackage/De;->val$eamVar:Leam;
+
+    .line 91
+    .local v1, "eamVar2":Leam;
+    iget-object v2, p0, Ldefpackage/De;->val$lceVar:Llce;
+
+    .line 92
+    .local v2, "lceVar2":Llce;
+    iget v3, p0, Ldefpackage/De;->val$intValue:I
+
+    .line 93
+    .local v3, "i":I
+    if-nez v0, :cond_0
+
+    invoke-virtual {v1}, Leam;->a()Llco;
+
+    move-result-object v4
+
+    invoke-interface {v4}, Llco;->fA()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Boolean;
+
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    .line 94
+    :cond_0
+    iget-object v4, v2, Llce;->d:Ljava/lang/Object;
+
+    check-cast v4, Ljava/lang/Integer;
+
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+
+    move-result v3
+
+    .line 96
+    :cond_1
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    return-object v4
 .end method

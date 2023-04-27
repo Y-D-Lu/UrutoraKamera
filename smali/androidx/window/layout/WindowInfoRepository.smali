@@ -30,8 +30,8 @@
 
 
 # virtual methods
-.method public abstract getCurrentWindowMetrics()Ldefpackage/qtr;
+.method public abstract getCurrentWindowMetrics()Lqtr;
 .end method
 
-.method public abstract getWindowLayoutInfo()Ldefpackage/qtr;
+.method public abstract getWindowLayoutInfo()Lqtr;
 .end method

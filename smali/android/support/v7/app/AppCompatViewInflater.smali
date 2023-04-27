@@ -10,7 +10,7 @@
 
 .field private static final d:[Ljava/lang/Class;
 
-.field private static final e:Ldefpackage/xf;
+.field private static final e:Lxf;
 
 
 # instance fields
@@ -63,11 +63,11 @@
     sput-object v0, Landroid/support/v7/app/AppCompatViewInflater;->b:[Ljava/lang/String;
 
     .line 23
-    new-instance v0, Ldefpackage/xf;
+    new-instance v0, Lxf;
 
-    invoke-direct {v0}, Ldefpackage/xf;-><init>()V
+    invoke-direct {v0}, Lxf;-><init>()V
 
-    sput-object v0, Landroid/support/v7/app/AppCompatViewInflater;->e:Ldefpackage/xf;
+    sput-object v0, Landroid/support/v7/app/AppCompatViewInflater;->e:Lxf;
 
     return-void
 .end method
@@ -90,15 +90,15 @@
 
 
 # virtual methods
-.method public a(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/mo;
+.method public a(Landroid/content/Context;Landroid/util/AttributeSet;)Lmo;
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 26
-    new-instance v0, Ldefpackage/mo;
+    new-instance v0, Lmo;
 
-    invoke-direct {v0, p1, p2}, Ldefpackage/mo;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Lmo;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
@@ -116,41 +116,41 @@
     return-object v0
 .end method
 
-.method public c(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/mq;
+.method public c(Landroid/content/Context;Landroid/util/AttributeSet;)Lmq;
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 34
-    new-instance v0, Ldefpackage/mq;
+    new-instance v0, Lmq;
 
-    invoke-direct {v0, p1, p2}, Ldefpackage/mq;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Lmq;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
 
-.method public d(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/nb;
+.method public d(Landroid/content/Context;Landroid/util/AttributeSet;)Lnb;
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 38
-    new-instance v0, Ldefpackage/nb;
+    new-instance v0, Lnb;
 
-    invoke-direct {v0, p1, p2}, Ldefpackage/nb;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Lnb;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
 
-.method public e(Landroid/content/Context;Landroid/util/AttributeSet;)Ldefpackage/nu;
+.method public e(Landroid/content/Context;Landroid/util/AttributeSet;)Lnu;
     .locals 1
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 42
-    new-instance v0, Ldefpackage/nu;
+    new-instance v0, Lnu;
 
-    invoke-direct {v0, p1, p2}, Ldefpackage/nu;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Lnu;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
@@ -162,11 +162,11 @@
     .param p3, "str2"    # Ljava/lang/String;
 
     .line 47
-    sget-object v0, Landroid/support/v7/app/AppCompatViewInflater;->e:Ldefpackage/xf;
+    sget-object v0, Landroid/support/v7/app/AppCompatViewInflater;->e:Lxf;
 
     .line 48
-    .local v0, "xfVar":Ldefpackage/xf;
-    invoke-virtual {v0, p2}, Ldefpackage/xf;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .local v0, "xfVar":Lxf;
+    invoke-virtual {v0, p2}, Lxf;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -274,7 +274,7 @@
 
     .line 66
     :goto_2
-    invoke-virtual {v0, p2, v1}, Ldefpackage/xf;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p2, v1}, Lxf;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 68
     .end local v3    # "str3":Ljava/lang/String;

@@ -1,10 +1,10 @@
 .class public Lcom/google/android/apps/camera/debug/metrics/MetricsProvider;
-.super Ldefpackage/dgu;
+.super Ldgu;
 .source ""
 
 
 # instance fields
-.field public a:Ldefpackage/lyx;
+.field public a:Llyx;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 27
-    invoke-direct {p0}, Ldefpackage/dgu;-><init>()V
+    invoke-direct {p0}, Ldgu;-><init>()V
 
     return-void
 .end method
@@ -26,7 +26,7 @@
     .line 37
     move-object/from16 v1, p0
 
-    iget-object v0, v1, Lcom/google/android/apps/camera/debug/metrics/MetricsProvider;->a:Ldefpackage/lyx;
+    iget-object v0, v1, Lcom/google/android/apps/camera/debug/metrics/MetricsProvider;->a:Llyx;
 
     if-nez v0, :cond_0
 
@@ -44,17 +44,17 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/enc;
+    check-cast v2, Lenc;
 
-    const-class v3, Ldefpackage/dhh;
+    const-class v3, Ldhh;
 
-    invoke-interface {v2, v3}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v2, v3}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/dhh;
+    check-cast v2, Ldhh;
 
-    invoke-interface {v2, v1}, Ldefpackage/dhh;->g(Lcom/google/android/apps/camera/debug/metrics/MetricsProvider;)V
+    invoke-interface {v2, v1}, Ldhh;->g(Lcom/google/android/apps/camera/debug/metrics/MetricsProvider;)V
 
     .line 42
     .end local v0    # "context":Landroid/content/Context;
@@ -75,42 +75,42 @@
 
     .line 44
     .local v5, "printWriterPrinter":Landroid/util/PrintWriterPrinter;
-    iget-object v6, v1, Lcom/google/android/apps/camera/debug/metrics/MetricsProvider;->a:Ldefpackage/lyx;
+    iget-object v6, v1, Lcom/google/android/apps/camera/debug/metrics/MetricsProvider;->a:Llyx;
 
     .line 45
-    .local v6, "lyxVar":Ldefpackage/lyx;
-    invoke-static {v6}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    .local v6, "lyxVar":Llyx;
+    invoke-static {v6}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 46
-    iget-object v7, v6, Ldefpackage/lyx;->a:Ldefpackage/lys;
+    iget-object v7, v6, Llyx;->a:Llys;
 
     .line 47
-    .local v7, "lysVar":Ldefpackage/lys;
-    iget-object v8, v7, Ldefpackage/lys;->a:Ljava/lang/Object;
+    .local v7, "lysVar":Llys;
+    iget-object v8, v7, Llys;->a:Ljava/lang/Object;
 
     monitor-enter v8
 
     .line 48
     :try_start_0
-    iget-object v0, v7, Ldefpackage/lys;->b:Ldefpackage/lyr;
+    iget-object v0, v7, Llys;->b:Llyr;
 
-    iget-object v0, v0, Ldefpackage/lyr;->b:Ldefpackage/nvb;
+    iget-object v0, v0, Llyr;->b:Lnvb;
 
     .line 49
-    .local v0, "nvbVar2":Ldefpackage/nvb;
+    .local v0, "nvbVar2":Lnvb;
     const/4 v9, 0x0
 
     .line 50
-    .local v9, "lywVar":Ldefpackage/lyw;
-    new-instance v10, Ldefpackage/nvb;
+    .local v9, "lywVar":Llyw;
+    new-instance v10, Lnvb;
 
     const/4 v11, 0x0
 
-    invoke-direct {v10, v11}, Ldefpackage/nvb;-><init>([B)V
+    invoke-direct {v10, v11}, Lnvb;-><init>([B)V
 
     .line 51
-    .local v10, "nvbVar":Ldefpackage/nvb;
-    iget-object v11, v0, Ldefpackage/nvb;->a:Ljava/util/Map;
+    .local v10, "nvbVar":Lnvb;
+    iget-object v11, v0, Lnvb;->a:Ljava/util/Map;
 
     invoke-interface {v11}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -136,7 +136,7 @@
 
     .line 52
     .local v12, "entry":Ljava/lang/Object;
-    iget-object v13, v10, Ldefpackage/nvb;->a:Ljava/util/Map;
+    iget-object v13, v10, Lnvb;->a:Ljava/util/Map;
 
     .line 53
     .local v13, "map":Ljava/util/Map;
@@ -160,23 +160,23 @@
 
     move-result-object v15
 
-    check-cast v15, Ldefpackage/lyv;
+    check-cast v15, Llyv;
 
     .line 55
-    .local v15, "lyvVar":Ldefpackage/lyv;
+    .local v15, "lyvVar":Llyv;
     move-object/from16 v16, v0
 
-    .end local v0    # "nvbVar2":Ldefpackage/nvb;
-    .local v16, "nvbVar2":Ldefpackage/nvb;
-    new-instance v0, Ldefpackage/lyv;
+    .end local v0    # "nvbVar2":Lnvb;
+    .local v16, "nvbVar2":Lnvb;
+    new-instance v0, Llyv;
 
-    iget-object v1, v15, Ldefpackage/lyv;->a:Llyj;
+    iget-object v1, v15, Llyv;->a:Llyj;
 
-    invoke-direct {v0, v1}, Ldefpackage/lyv;-><init>(Llyj;)V
+    invoke-direct {v0, v1}, Llyv;-><init>(Llyj;)V
 
     .line 56
-    .local v0, "lyvVar2":Ldefpackage/lyv;
-    iget-object v1, v15, Ldefpackage/lyv;->b:Ljava/util/TreeMap;
+    .local v0, "lyvVar2":Llyv;
+    iget-object v1, v15, Llyv;->b:Ljava/util/TreeMap;
 
     invoke-virtual {v1}, Ljava/util/TreeMap;->entrySet()Ljava/util/Set;
 
@@ -201,7 +201,7 @@
     .local v17, "entry2":Ljava/lang/Object;
     move-object/from16 v18, v1
 
-    iget-object v1, v0, Ldefpackage/lyv;->b:Ljava/util/TreeMap;
+    iget-object v1, v0, Llyv;->b:Ljava/util/TreeMap;
 
     move-object/from16 v19, v17
 
@@ -213,7 +213,7 @@
 
     move-object/from16 v4, v19
 
-    check-cast v4, Ldefpackage/lye;
+    check-cast v4, Llye;
 
     move-object/from16 v19, v17
 
@@ -223,16 +223,16 @@
 
     move-result-object v19
 
-    check-cast v19, Ldefpackage/lyw;
+    check-cast v19, Llyw;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     move-object/from16 v20, v6
 
-    .end local v6    # "lyxVar":Ldefpackage/lyx;
-    .local v20, "lyxVar":Ldefpackage/lyx;
+    .end local v6    # "lyxVar":Llyx;
+    .local v20, "lyxVar":Llyx;
     :try_start_2
-    invoke-virtual/range {v19 .. v19}, Ldefpackage/lyw;->a()Ldefpackage/lyw;
+    invoke-virtual/range {v19 .. v19}, Llyw;->a()Llyw;
 
     move-result-object v6
 
@@ -249,13 +249,13 @@
     goto :goto_1
 
     .line 59
-    .end local v20    # "lyxVar":Ldefpackage/lyx;
-    .restart local v6    # "lyxVar":Ldefpackage/lyx;
+    .end local v20    # "lyxVar":Llyx;
+    .restart local v6    # "lyxVar":Llyx;
     :cond_1
     move-object/from16 v20, v6
 
-    .end local v6    # "lyxVar":Ldefpackage/lyx;
-    .restart local v20    # "lyxVar":Ldefpackage/lyx;
+    .end local v6    # "lyxVar":Llyx;
+    .restart local v20    # "lyxVar":Llyx;
     invoke-interface {v13, v14, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -269,17 +269,17 @@
 
     move-object/from16 v6, v20
 
-    .end local v0    # "lyvVar2":Ldefpackage/lyv;
+    .end local v0    # "lyvVar2":Llyv;
     .end local v12    # "entry":Ljava/lang/Object;
     .end local v13    # "map":Ljava/util/Map;
     .end local v14    # "str":Ljava/lang/String;
-    .end local v15    # "lyvVar":Ldefpackage/lyv;
+    .end local v15    # "lyvVar":Llyv;
     goto :goto_0
 
     .line 61
-    .end local v9    # "lywVar":Ldefpackage/lyw;
-    .end local v10    # "nvbVar":Ldefpackage/nvb;
-    .end local v16    # "nvbVar2":Ldefpackage/nvb;
+    .end local v9    # "lywVar":Llyw;
+    .end local v10    # "nvbVar":Lnvb;
+    .end local v16    # "nvbVar2":Lnvb;
     :catchall_0
     move-exception v0
 
@@ -289,8 +289,8 @@
 
     goto/16 :goto_b
 
-    .end local v20    # "lyxVar":Ldefpackage/lyx;
-    .restart local v6    # "lyxVar":Ldefpackage/lyx;
+    .end local v20    # "lyxVar":Llyx;
+    .restart local v6    # "lyxVar":Llyx;
     :catchall_1
     move-exception v0
 
@@ -300,32 +300,32 @@
 
     move-object/from16 v24, v7
 
-    .end local v6    # "lyxVar":Ldefpackage/lyx;
-    .restart local v20    # "lyxVar":Ldefpackage/lyx;
+    .end local v6    # "lyxVar":Llyx;
+    .restart local v20    # "lyxVar":Llyx;
     goto/16 :goto_b
 
     .line 51
-    .end local v20    # "lyxVar":Ldefpackage/lyx;
-    .local v0, "nvbVar2":Ldefpackage/nvb;
-    .restart local v6    # "lyxVar":Ldefpackage/lyx;
-    .restart local v9    # "lywVar":Ldefpackage/lyw;
-    .restart local v10    # "nvbVar":Ldefpackage/nvb;
+    .end local v20    # "lyxVar":Llyx;
+    .local v0, "nvbVar2":Lnvb;
+    .restart local v6    # "lyxVar":Llyx;
+    .restart local v9    # "lywVar":Llyw;
+    .restart local v10    # "nvbVar":Lnvb;
     :cond_2
     move-object/from16 v16, v0
 
     move-object/from16 v20, v6
 
     .line 61
-    .end local v0    # "nvbVar2":Ldefpackage/nvb;
-    .end local v6    # "lyxVar":Ldefpackage/lyx;
-    .restart local v20    # "lyxVar":Ldefpackage/lyx;
+    .end local v0    # "nvbVar2":Lnvb;
+    .end local v6    # "lyxVar":Llyx;
+    .restart local v20    # "lyxVar":Llyx;
     :try_start_3
     monitor-exit v8
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     .line 62
-    iget-object v0, v10, Ldefpackage/nvb;->a:Ljava/util/Map;
+    iget-object v0, v10, Lnvb;->a:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -404,10 +404,10 @@
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/lyv;
+    check-cast v4, Llyv;
 
     .line 74
-    .local v4, "lyvVar3":Ldefpackage/lyv;
+    .local v4, "lyvVar3":Llyv;
     if-nez v4, :cond_4
 
     .line 75
@@ -429,7 +429,7 @@
     .line 76
     .end local v6    # "sb":Ljava/lang/String;
     :cond_4
-    invoke-virtual {v4}, Ldefpackage/lyv;->b()[Ldefpackage/lyd;
+    invoke-virtual {v4}, Llyv;->b()[Llyd;
 
     move-result-object v8
 
@@ -440,19 +440,19 @@
     if-nez v8, :cond_8
 
     .line 77
-    invoke-virtual {v4}, Ldefpackage/lyv;->a()Ljava/lang/String;
+    invoke-virtual {v4}, Llyv;->a()Ljava/lang/String;
 
     move-result-object v6
 
     .line 78
     .local v6, "a":Ljava/lang/String;
-    sget-object v8, Ldefpackage/lye;->a:Ldefpackage/lye;
+    sget-object v8, Llye;->a:Llye;
 
-    iget-object v8, v8, Ldefpackage/lye;->b:[Ljava/lang/Object;
+    iget-object v8, v8, Llye;->b:[Ljava/lang/Object;
 
     .line 79
     .local v8, "objArr":[Ljava/lang/Object;
-    iget-object v11, v4, Ldefpackage/lyv;->b:Ljava/util/TreeMap;
+    iget-object v11, v4, Llyv;->b:Ljava/util/TreeMap;
 
     invoke-virtual {v11}, Ljava/util/TreeMap;->entrySet()Ljava/util/Set;
 
@@ -474,11 +474,11 @@
     move-object v13, v9
 
     .line 83
-    .local v13, "lywVar2":Ldefpackage/lyw;
+    .local v13, "lywVar2":Llyw;
     goto :goto_4
 
     .line 85
-    .end local v13    # "lywVar2":Ldefpackage/lyw;
+    .end local v13    # "lywVar2":Llyw;
     :cond_5
     invoke-interface {v11}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -505,9 +505,9 @@
 
     move-result-object v15
 
-    check-cast v15, Ldefpackage/lye;
+    check-cast v15, Llye;
 
-    iget-object v15, v15, Ldefpackage/lye;->b:[Ljava/lang/Object;
+    iget-object v15, v15, Llye;->b:[Ljava/lang/Object;
 
     aget-object v15, v15, v14
 
@@ -526,17 +526,17 @@
 
     move-result-object v14
 
-    check-cast v14, Ldefpackage/lyw;
+    check-cast v14, Llyw;
 
     .line 91
-    .local v14, "lywVar2":Ldefpackage/lyw;
+    .local v14, "lywVar2":Llyw;
     move-object v13, v14
 
     .line 93
-    .end local v14    # "lywVar2":Ldefpackage/lyw;
-    .local v13, "lywVar2":Ldefpackage/lyw;
+    .end local v14    # "lywVar2":Llyw;
+    .local v13, "lywVar2":Llyw;
     :goto_4
-    invoke-static {v13}, Ldefpackage/mip;->V(Ldefpackage/lyw;)Ljava/lang/String;
+    invoke-static {v13}, Lmip;->V(Llyw;)Ljava/lang/String;
 
     move-result-object v14
 
@@ -601,15 +601,15 @@
 
     .line 100
     .end local v6    # "sb":Ljava/lang/String;
-    .end local v13    # "lywVar2":Ldefpackage/lyw;
+    .end local v13    # "lywVar2":Llyw;
     :cond_8
-    invoke-virtual {v4}, Ldefpackage/lyv;->b()[Ldefpackage/lyd;
+    invoke-virtual {v4}, Llyv;->b()[Llyd;
 
     move-result-object v13
 
     .line 101
-    .local v13, "b":[Ldefpackage/lyd;
-    iget-object v8, v4, Ldefpackage/lyv;->b:Ljava/util/TreeMap;
+    .local v13, "b":[Llyd;
+    iget-object v8, v4, Llyv;->b:Ljava/util/TreeMap;
 
     invoke-virtual {v8}, Ljava/util/TreeMap;->entrySet()Ljava/util/Set;
 
@@ -670,14 +670,14 @@
 
     aget-object v12, v13, v11
 
-    iget-object v12, v12, Ldefpackage/lyd;->a:Ljava/lang/String;
+    iget-object v12, v12, Llyd;->a:Ljava/lang/String;
 
     aput-object v12, v19, v11
 
     .line 108
     aget-object v12, v13, v11
 
-    iget-object v12, v12, Ldefpackage/lyd;->a:Ljava/lang/String;
+    iget-object v12, v12, Llyd;->a:Ljava/lang/String;
 
     invoke-virtual {v12}, Ljava/lang/String;->length()I
 
@@ -755,8 +755,8 @@
     .local v3, "locale2":Ljava/util/Locale;
     move-object/from16 v24, v7
 
-    .end local v7    # "lysVar":Ldefpackage/lys;
-    .local v24, "lysVar":Ldefpackage/lys;
+    .end local v7    # "lysVar":Llys;
+    .local v24, "lysVar":Llys;
     new-array v7, v1, [Ljava/lang/Object;
 
     .line 118
@@ -771,9 +771,9 @@
     .local v26, "i2":I
     move-object/from16 v1, v25
 
-    check-cast v1, Ldefpackage/lye;
+    check-cast v1, Llye;
 
-    iget-object v1, v1, Ldefpackage/lye;->b:[Ljava/lang/Object;
+    iget-object v1, v1, Llye;->b:[Ljava/lang/Object;
 
     aget-object v1, v1, v2
 
@@ -831,24 +831,24 @@
     goto :goto_7
 
     .line 125
-    .end local v24    # "lysVar":Ldefpackage/lys;
-    .local v7, "lysVar":Ldefpackage/lys;
+    .end local v24    # "lysVar":Llys;
+    .local v7, "lysVar":Llys;
     :cond_a
     move/from16 v26, v1
 
     move-object/from16 v24, v7
 
     .end local v1    # "i2":I
-    .end local v7    # "lysVar":Ldefpackage/lys;
-    .restart local v24    # "lysVar":Ldefpackage/lys;
+    .end local v7    # "lysVar":Llys;
+    .restart local v24    # "lysVar":Llys;
     .restart local v26    # "i2":I
     invoke-interface/range {v19 .. v19}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/lyw;
+    check-cast v1, Llyw;
 
-    invoke-static {v1}, Ldefpackage/mip;->V(Ldefpackage/lyw;)Ljava/lang/String;
+    invoke-static {v1}, Lmip;->V(Llyw;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -890,18 +890,18 @@
 
     .line 131
     .end local v22    # "nanoTime":J
-    .end local v24    # "lysVar":Ldefpackage/lys;
+    .end local v24    # "lysVar":Llys;
     .local v2, "nanoTime":J
-    .restart local v7    # "lysVar":Ldefpackage/lys;
+    .restart local v7    # "lysVar":Llys;
     :cond_b
     move-wide/from16 v22, v2
 
     move-object/from16 v24, v7
 
     .end local v2    # "nanoTime":J
-    .end local v7    # "lysVar":Ldefpackage/lys;
+    .end local v7    # "lysVar":Llys;
     .restart local v22    # "nanoTime":J
-    .restart local v24    # "lysVar":Ldefpackage/lys;
+    .restart local v24    # "lysVar":Llys;
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1025,7 +1025,7 @@
 
     .end local v7    # "i":I
     .local v27, "i":I
-    invoke-virtual {v4}, Ldefpackage/lyv;->a()Ljava/lang/String;
+    invoke-virtual {v4}, Llyv;->a()Ljava/lang/String;
 
     move-result-object v7
 
@@ -1035,7 +1035,7 @@
 
     .end local v25    # "sb7":Ljava/lang/StringBuilder;
     .local v4, "sb7":Ljava/lang/StringBuilder;
-    .local v28, "lyvVar3":Ldefpackage/lyv;
+    .local v28, "lyvVar3":Llyv;
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 157
@@ -1050,8 +1050,8 @@
 
     const/16 v16, 0x0
 
-    .end local v9    # "lywVar":Ldefpackage/lyw;
-    .local v25, "lywVar":Ldefpackage/lyw;
+    .end local v9    # "lywVar":Llyw;
+    .local v25, "lywVar":Llyw;
     aget-object v9, v0, v16
 
     invoke-static {v7, v8, v9}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -1120,7 +1120,7 @@
     .end local v4    # "sb7":Ljava/lang/StringBuilder;
     .end local v11    # "i6":I
     .end local v12    # "valueOf":Ljava/lang/String;
-    .end local v13    # "b":[Ldefpackage/lyd;
+    .end local v13    # "b":[Llyd;
     .end local v14    # "entrySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry;>;"
     .end local v15    # "length":I
     .end local v17    # "sb5":Ljava/lang/String;
@@ -1138,9 +1138,9 @@
 
     .line 167
     .end local v1    # "i2":I
-    .end local v25    # "lywVar":Ldefpackage/lyw;
-    .end local v28    # "lyvVar3":Ldefpackage/lyv;
-    .restart local v9    # "lywVar":Ldefpackage/lyw;
+    .end local v25    # "lywVar":Llyw;
+    .end local v28    # "lyvVar3":Llyv;
+    .restart local v9    # "lywVar":Llyw;
     move-object/from16 v0, v18
 
     move-wide/from16 v2, v22
@@ -1154,12 +1154,12 @@
     .restart local v1    # "i2":I
     .restart local v2    # "sb3":Ljava/lang/StringBuilder;
     .restart local v3    # "i8":I
-    .local v4, "lyvVar3":Ldefpackage/lyv;
+    .local v4, "lyvVar3":Llyv;
     .local v6, "iArr":[I
     .local v7, "i":I
     .local v8, "i4":I
     .restart local v11    # "i6":I
-    .restart local v13    # "b":[Ldefpackage/lyd;
+    .restart local v13    # "b":[Llyd;
     .restart local v14    # "entrySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry;>;"
     .restart local v15    # "length":I
     :cond_d
@@ -1178,15 +1178,15 @@
     const/16 v21, 0x2
 
     .end local v1    # "i2":I
-    .end local v4    # "lyvVar3":Ldefpackage/lyv;
+    .end local v4    # "lyvVar3":Llyv;
     .end local v7    # "i":I
     .end local v8    # "i4":I
-    .end local v9    # "lywVar":Ldefpackage/lyw;
+    .end local v9    # "lywVar":Llyw;
     .restart local v19    # "i2":I
-    .restart local v25    # "lywVar":Ldefpackage/lyw;
+    .restart local v25    # "lywVar":Llyw;
     .restart local v26    # "i4":I
     .restart local v27    # "i":I
-    .restart local v28    # "lyvVar3":Ldefpackage/lyv;
+    .restart local v28    # "lyvVar3":Llyv;
     const-string v1, "%-"
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1218,21 +1218,21 @@
     .end local v0    # "strArr":[[Ljava/lang/String;
     .end local v3    # "i8":I
     .end local v6    # "iArr":[I
-    .end local v10    # "nvbVar":Ldefpackage/nvb;
+    .end local v10    # "nvbVar":Lnvb;
     .end local v11    # "i6":I
-    .end local v13    # "b":[Ldefpackage/lyd;
+    .end local v13    # "b":[Llyd;
     .end local v14    # "entrySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry;>;"
     .end local v15    # "length":I
     .end local v18    # "it":Ljava/util/Iterator;
     .end local v19    # "i2":I
     .end local v22    # "nanoTime":J
-    .end local v24    # "lysVar":Ldefpackage/lys;
-    .end local v25    # "lywVar":Ldefpackage/lyw;
+    .end local v24    # "lysVar":Llys;
+    .end local v25    # "lywVar":Llyw;
     .end local v26    # "i4":I
     .end local v27    # "i":I
-    .end local v28    # "lyvVar3":Ldefpackage/lyv;
+    .end local v28    # "lyvVar3":Llyv;
     .local v2, "nanoTime":J
-    .local v7, "lysVar":Ldefpackage/lys;
+    .local v7, "lysVar":Llys;
     :catchall_2
     move-exception v0
 
@@ -1241,17 +1241,17 @@
     move-object/from16 v24, v7
 
     .end local v2    # "nanoTime":J
-    .end local v7    # "lysVar":Ldefpackage/lys;
+    .end local v7    # "lysVar":Llys;
     .restart local v22    # "nanoTime":J
-    .restart local v24    # "lysVar":Ldefpackage/lys;
+    .restart local v24    # "lysVar":Llys;
     goto :goto_b
 
-    .end local v20    # "lyxVar":Ldefpackage/lyx;
+    .end local v20    # "lyxVar":Llyx;
     .end local v22    # "nanoTime":J
-    .end local v24    # "lysVar":Ldefpackage/lys;
+    .end local v24    # "lysVar":Llys;
     .restart local v2    # "nanoTime":J
-    .local v6, "lyxVar":Ldefpackage/lyx;
-    .restart local v7    # "lysVar":Ldefpackage/lys;
+    .local v6, "lyxVar":Llyx;
+    .restart local v7    # "lysVar":Llys;
     :catchall_3
     move-exception v0
 
@@ -1262,11 +1262,11 @@
     move-object/from16 v24, v7
 
     .end local v2    # "nanoTime":J
-    .end local v6    # "lyxVar":Ldefpackage/lyx;
-    .end local v7    # "lysVar":Ldefpackage/lys;
-    .restart local v20    # "lyxVar":Ldefpackage/lyx;
+    .end local v6    # "lyxVar":Llyx;
+    .end local v7    # "lysVar":Llys;
+    .restart local v20    # "lyxVar":Llyx;
     .restart local v22    # "nanoTime":J
-    .restart local v24    # "lysVar":Ldefpackage/lys;
+    .restart local v24    # "lysVar":Llys;
     :goto_b
     :try_start_4
     monitor-exit v8

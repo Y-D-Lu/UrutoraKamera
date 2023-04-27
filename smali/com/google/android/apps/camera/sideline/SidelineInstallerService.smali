@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public a:Ldefpackage/hwh;
+.field public a:Lhwh;
 
-.field public b:Ldefpackage/hwl;
+.field public b:Lhwl;
 
 
 # direct methods
@@ -39,17 +39,17 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/enc;
+    check-cast v0, Lenc;
 
-    const-class v1, Ldefpackage/hwi;
+    const-class v1, Lhwi;
 
-    invoke-interface {v0, v1}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/hwi;
+    check-cast v0, Lhwi;
 
-    invoke-interface {v0, p0}, Ldefpackage/hwi;->t(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;)V
+    invoke-interface {v0, p0}, Lhwi;->t(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;)V
 
     .line 62
     return-void
@@ -154,10 +154,10 @@
 
     .line 223
     :pswitch_0
-    iget-object v5, v0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService;->a:Ldefpackage/hwh;
+    iget-object v5, v0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService;->a:Lhwh;
 
     .line 224
-    .local v5, "hwhVar2":Ldefpackage/hwh;
+    .local v5, "hwhVar2":Lhwh;
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v6
@@ -167,9 +167,9 @@
     if-nez v6, :cond_2
 
     .line 226
-    sget-object v4, Ldefpackage/hwh;->a:Ldefpackage/ouj;
+    sget-object v4, Lhwh;->a:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->c()Lova;
 
     move-result-object v4
 
@@ -177,7 +177,7 @@
 
     const-string v8, "extras is null from PackageInstaller."
 
-    invoke-static {v4, v8, v7}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v4, v8, v7}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 227
     return v3
@@ -212,9 +212,9 @@
     packed-switch v7, :pswitch_data_1
 
     .line 270
-    sget-object v4, Ldefpackage/hwh;->a:Ldefpackage/ouj;
+    sget-object v4, Lhwh;->a:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->b()Lova;
 
     move-result-object v4
 
@@ -222,7 +222,7 @@
 
     const/16 v9, 0xa7e
 
-    invoke-interface {v4, v9}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v4, v9}, Lova;->G(I)Lova;
 
     move-result-object v4
 
@@ -230,18 +230,18 @@
 
     const-string v9, "Unrecognized status received from installer: %d"
 
-    invoke-interface {v4, v9, v7}, Ldefpackage/ova;->p(Ljava/lang/String;I)V
+    invoke-interface {v4, v9, v7}, Lova;->p(Ljava/lang/String;I)V
 
     .line 271
     return v3
 
     .line 264
     :pswitch_1
-    iget-object v9, v5, Ldefpackage/hwh;->q:Ldefpackage/qkg;
+    iget-object v9, v5, Lhwh;->q:Lqkg;
 
-    check-cast v9, Ldefpackage/emv;
+    check-cast v9, Lemv;
 
-    invoke-virtual {v9}, Ldefpackage/emv;->mo37get()Landroid/app/job/JobScheduler;
+    invoke-virtual {v9}, Lemv;->mo37get()Landroid/app/job/JobScheduler;
 
     move-result-object v9
 
@@ -251,7 +251,7 @@
 
     new-instance v12, Landroid/content/ComponentName;
 
-    iget-object v13, v5, Ldefpackage/hwh;->b:Landroid/content/Context;
+    iget-object v13, v5, Lhwh;->b:Landroid/content/Context;
 
     const-class v14, Lcom/google/android/apps/camera/sideline/SidelineJobService;
 
@@ -278,9 +278,9 @@
     if-eq v9, v4, :cond_3
 
     .line 265
-    sget-object v4, Ldefpackage/hwh;->a:Ldefpackage/ouj;
+    sget-object v4, Lhwh;->a:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->c()Lova;
 
     move-result-object v4
 
@@ -288,7 +288,7 @@
 
     const-string v10, "Failed to schedule retry!"
 
-    invoke-static {v4, v10, v9}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v4, v10, v9}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 266
     goto :goto_1
@@ -299,40 +299,40 @@
 
     .line 255
     :pswitch_3
-    invoke-virtual {v5}, Ldefpackage/hwh;->b()V
+    invoke-virtual {v5}, Lhwh;->b()V
 
     .line 256
     goto :goto_1
 
     .line 237
     :pswitch_4
-    invoke-virtual {v5}, Ldefpackage/hwh;->c()V
+    invoke-virtual {v5}, Lhwh;->c()V
 
     .line 238
-    iget-object v4, v5, Ldefpackage/hwh;->m:Ldefpackage/hwn;
+    iget-object v4, v5, Lhwh;->m:Lhwn;
 
     .line 239
-    .local v4, "hwnVar2":Ldefpackage/hwn;
-    iget-object v9, v4, Ldefpackage/hwn;->a:Ldefpackage/mcu;
+    .local v4, "hwnVar2":Lhwn;
+    iget-object v9, v4, Lhwn;->a:Lmcu;
 
     .line 240
-    .local v9, "mcuVar2":Ldefpackage/mcu;
+    .local v9, "mcuVar2":Lmcu;
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v10
 
-    iput-wide v10, v4, Ldefpackage/hwn;->e:J
+    iput-wide v10, v4, Lhwn;->e:J
 
     .line 241
-    iget-object v10, v5, Ldefpackage/hwh;->r:Ldefpackage/ljf;
+    iget-object v10, v5, Lhwh;->r:Lljf;
 
     const-string v11, "SidelineInstaller#waitForHalRestart"
 
-    invoke-interface {v10, v11}, Ldefpackage/ljf;->a(Ljava/lang/String;)Ldefpackage/lji;
+    invoke-interface {v10, v11}, Lljf;->a(Ljava/lang/String;)Llji;
 
     move-result-object v10
 
-    iput-object v10, v5, Ldefpackage/hwh;->u:Ldefpackage/lji;
+    iput-object v10, v5, Lhwh;->u:Llji;
 
     .line 242
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
@@ -343,15 +343,15 @@
     .local v10, "uptimeMillis":J
     new-instance v12, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;
 
-    invoke-direct {v12, v0, v5, v10, v11}, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;-><init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Ldefpackage/hwh;J)V
+    invoke-direct {v12, v0, v5, v10, v11}, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$3;-><init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Lhwh;J)V
 
     const-wide/16 v13, 0x3
 
     sget-object v15, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    iget-object v3, v5, Ldefpackage/hwh;->g:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v3, v5, Lhwh;->g:Ljava/util/concurrent/ScheduledExecutorService;
 
-    invoke-static {v12, v13, v14, v15, v3}, Ldefpackage/plk;->X(Ldefpackage/pgj;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Ldefpackage/pht;
+    invoke-static {v12, v13, v14, v15, v3}, Lplk;->X(Lpgj;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lpht;
 
     .line 253
     const/4 v3, 0x2
@@ -359,13 +359,13 @@
     return v3
 
     .line 234
-    .end local v4    # "hwnVar2":Ldefpackage/hwn;
-    .end local v9    # "mcuVar2":Ldefpackage/mcu;
+    .end local v4    # "hwnVar2":Lhwn;
+    .end local v9    # "mcuVar2":Lmcu;
     .end local v10    # "uptimeMillis":J
     :pswitch_5
-    sget-object v3, Ldefpackage/hwh;->a:Ldefpackage/ouj;
+    sget-object v3, Lhwh;->a:Louj;
 
-    invoke-virtual {v3}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v3}, Loue;->b()Lova;
 
     move-result-object v3
 
@@ -373,7 +373,7 @@
 
     const-string v9, "Package installer is asking user for permission. This should not happen in HAL update!"
 
-    invoke-static {v3, v9, v4}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v3, v9, v4}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 235
     nop
@@ -381,7 +381,7 @@
     .line 273
     :cond_3
     :goto_1
-    invoke-virtual {v5, v7, v8}, Ldefpackage/hwh;->a(ILjava/util/Optional;)V
+    invoke-virtual {v5, v7, v8}, Lhwh;->a(ILjava/util/Optional;)V
 
     .line 274
     const/4 v3, 0x2
@@ -389,22 +389,22 @@
     return v3
 
     .line 91
-    .end local v5    # "hwhVar2":Ldefpackage/hwh;
+    .end local v5    # "hwhVar2":Lhwh;
     .end local v6    # "extras":Landroid/os/Bundle;
     .end local v7    # "i3":I
     .end local v8    # "ofNullable":Ljava/util/Optional;
     :pswitch_6
-    iget-object v3, v0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService;->b:Ldefpackage/hwl;
+    iget-object v3, v0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService;->b:Lhwl;
 
     .line 92
-    .local v3, "hwlVar":Ldefpackage/hwl;
+    .local v3, "hwlVar":Lhwl;
     const v5, 0xa41e
 
     new-instance v6, Landroid/app/Notification$Builder;
 
-    iget-object v7, v3, Ldefpackage/hwl;->a:Landroid/content/Context;
+    iget-object v7, v3, Lhwl;->a:Landroid/content/Context;
 
-    invoke-virtual {v3}, Ldefpackage/hwl;->a()Landroid/app/NotificationChannel;
+    invoke-virtual {v3}, Lhwl;->a()Landroid/app/NotificationChannel;
 
     move-result-object v8
 
@@ -420,7 +420,7 @@
 
     move-result-object v6
 
-    iget-object v7, v3, Ldefpackage/hwl;->a:Landroid/content/Context;
+    iget-object v7, v3, Lhwl;->a:Landroid/content/Context;
 
     const v8, 0x7f1102d7
 
@@ -432,7 +432,7 @@
 
     move-result-object v6
 
-    iget-object v7, v3, Ldefpackage/hwl;->a:Landroid/content/Context;
+    iget-object v7, v3, Lhwl;->a:Landroid/content/Context;
 
     const v8, 0x7f1102d6
 
@@ -471,26 +471,26 @@
     invoke-virtual {v0, v5, v6}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
 
     .line 93
-    iget-object v5, v0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService;->a:Ldefpackage/hwh;
+    iget-object v5, v0, Lcom/google/android/apps/camera/sideline/SidelineInstallerService;->a:Lhwh;
 
     .line 94
-    .local v5, "hwhVar":Ldefpackage/hwh;
-    iget-object v6, v5, Ldefpackage/hwh;->s:Ldefpackage/pih;
+    .local v5, "hwhVar":Lhwh;
+    iget-object v6, v5, Lhwh;->s:Lpih;
 
     .line 95
-    .local v6, "pihVar":Ldefpackage/pih;
+    .local v6, "pihVar":Lpih;
     if-eqz v6, :cond_4
 
-    invoke-virtual {v6}, Ldefpackage/pfx;->isDone()Z
+    invoke-virtual {v6}, Lpfx;->isDone()Z
 
     move-result v7
 
     if-nez v7, :cond_4
 
     .line 96
-    sget-object v4, Ldefpackage/hwh;->a:Ldefpackage/ouj;
+    sget-object v4, Lhwh;->a:Louj;
 
-    invoke-virtual {v4}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v4}, Loue;->b()Lova;
 
     move-result-object v4
 
@@ -498,7 +498,7 @@
 
     const-string v8, "startHalUpdate called when HAL is still updating!"
 
-    invoke-static {v4, v8, v7}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v4, v8, v7}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 97
     const/4 v4, 0x2
@@ -507,20 +507,20 @@
 
     .line 99
     :cond_4
-    invoke-static {}, Ldefpackage/pih;->f()Ldefpackage/pih;
+    invoke-static {}, Lpih;->f()Lpih;
 
     move-result-object v7
 
-    iput-object v7, v5, Ldefpackage/hwh;->s:Ldefpackage/pih;
+    iput-object v7, v5, Lhwh;->s:Lpih;
 
     .line 100
-    iget-object v7, v5, Ldefpackage/hwh;->o:Ldefpackage/hug;
+    iget-object v7, v5, Lhwh;->o:Lhug;
 
-    sget-object v8, Ldefpackage/htu;->U:Ldefpackage/hul;
+    sget-object v8, Lhtu;->U:Lhul;
 
-    iget-object v9, v5, Ldefpackage/hwh;->n:Ldefpackage/huf;
+    iget-object v9, v5, Lhwh;->n:Lhuf;
 
-    invoke-interface {v9, v8}, Ldefpackage/huf;->c(Ldefpackage/hts;)Ljava/lang/Object;
+    invoke-interface {v9, v8}, Lhuf;->c(Lhts;)Ljava/lang/Object;
 
     move-result-object v9
 
@@ -536,67 +536,67 @@
 
     move-result-object v4
 
-    invoke-interface {v7, v8, v4}, Ldefpackage/hug;->e(Ldefpackage/hts;Ljava/lang/Object;)V
+    invoke-interface {v7, v8, v4}, Lhug;->e(Lhts;Ljava/lang/Object;)V
 
     .line 101
-    iget-object v4, v5, Ldefpackage/hwh;->m:Ldefpackage/hwn;
+    iget-object v4, v5, Lhwh;->m:Lhwn;
 
     .line 102
-    .local v4, "hwnVar":Ldefpackage/hwn;
-    iget-wide v7, v4, Ldefpackage/hwn;->b:J
+    .local v4, "hwnVar":Lhwn;
+    iget-wide v7, v4, Lhwn;->b:J
 
     .line 103
     .local v7, "j":J
-    iget-wide v9, v4, Ldefpackage/hwn;->c:J
+    iget-wide v9, v4, Lhwn;->c:J
 
     .line 104
     .local v9, "j2":J
-    iget-object v11, v4, Ldefpackage/hwn;->a:Ldefpackage/mcu;
+    iget-object v11, v4, Lhwn;->a:Lmcu;
 
     .line 105
-    .local v11, "mcuVar":Ldefpackage/mcu;
+    .local v11, "mcuVar":Lmcu;
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v12
 
-    iput-wide v12, v4, Ldefpackage/hwn;->d:J
+    iput-wide v12, v4, Lhwn;->d:J
 
     .line 106
-    iget-object v12, v5, Ldefpackage/hwh;->k:Ldefpackage/hwp;
+    iget-object v12, v5, Lhwh;->k:Lhwp;
 
     const/4 v13, 0x3
 
-    invoke-virtual {v12, v13}, Ldefpackage/hwp;->a(I)V
+    invoke-virtual {v12, v13}, Lhwp;->a(I)V
 
     .line 107
-    iget-object v12, v5, Ldefpackage/hwh;->d:Ljava/lang/String;
+    iget-object v12, v5, Lhwh;->d:Ljava/lang/String;
 
     .line 108
     .local v12, "str":Ljava/lang/String;
     invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 109
-    iget-object v13, v5, Ldefpackage/hwh;->f:Ljava/util/concurrent/Executor;
+    iget-object v13, v5, Lhwh;->f:Ljava/util/concurrent/Executor;
 
     new-instance v14, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;
 
-    invoke-direct {v14, v0, v5, v12}, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;-><init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Ldefpackage/hwh;Ljava/lang/String;)V
+    invoke-direct {v14, v0, v5, v12}, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$1;-><init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Lhwh;Ljava/lang/String;)V
 
     invoke-interface {v13, v14}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     .line 212
-    iget-object v13, v5, Ldefpackage/hwh;->s:Ldefpackage/pih;
+    iget-object v13, v5, Lhwh;->s:Lpih;
 
     new-instance v14, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$2;
 
-    invoke-direct {v14, v0, v5}, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$2;-><init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Ldefpackage/hwh;)V
+    invoke-direct {v14, v0, v5}, Lcom/google/android/apps/camera/sideline/SidelineInstallerService$2;-><init>(Lcom/google/android/apps/camera/sideline/SidelineInstallerService;Lhwh;)V
 
-    iget-object v15, v5, Ldefpackage/hwh;->h:Ldefpackage/lar;
+    iget-object v15, v5, Lhwh;->h:Llar;
 
-    invoke-virtual {v13, v14, v15}, Ldefpackage/pfx;->d(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    invoke-virtual {v13, v14, v15}, Lpfx;->d(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
     .line 220
-    iget-object v13, v5, Ldefpackage/hwh;->s:Ldefpackage/pih;
+    iget-object v13, v5, Lhwh;->s:Lpih;
 
     const-wide/16 v14, 0x46
 
@@ -606,19 +606,19 @@
 
     .end local v1    # "action":Ljava/lang/String;
     .local v16, "action":Ljava/lang/String;
-    iget-object v1, v5, Ldefpackage/hwh;->g:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v1, v5, Lhwh;->g:Ljava/util/concurrent/ScheduledExecutorService;
 
-    invoke-static {v13, v14, v15, v0, v1}, Ldefpackage/plk;->ac(Ldefpackage/pht;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Ldefpackage/pht;
+    invoke-static {v13, v14, v15, v0, v1}, Lplk;->ac(Lpht;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lpht;
 
     move-result-object v0
 
     const-class v1, Ljava/util/concurrent/TimeoutException;
 
-    sget-object v13, Ldefpackage/eto;->s:Ldefpackage/eto;
+    sget-object v13, Leto;->s:Leto;
 
-    sget-object v14, Ldefpackage/pgr;->a:Ldefpackage/pgr;
+    sget-object v14, Lpgr;->a:Lpgr;
 
-    invoke-static {v0, v1, v13, v14}, Ldefpackage/pfj;->h(Ldefpackage/pht;Ljava/lang/Class;Ldefpackage/oiu;Ljava/util/concurrent/Executor;)Ldefpackage/pht;
+    invoke-static {v0, v1, v13, v14}, Lpfj;->h(Lpht;Ljava/lang/Class;Loiu;Ljava/util/concurrent/Executor;)Lpht;
 
     .line 221
     const/4 v0, 0x2

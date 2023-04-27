@@ -57,11 +57,11 @@
     .locals 2
 
     .line 15
-    new-instance v0, Ldefpackage/si;
+    new-instance v0, Lsi;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, v1}, Ldefpackage/si;-><init>(I)V
+    invoke-direct {v0, v1}, Lsi;-><init>(I)V
 
     sput-object v0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -95,7 +95,7 @@
     iput v2, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->d:I
 
     .line 42
-    sget-object v3, Ldefpackage/sr;->a:Landroid/graphics/Typeface;
+    sget-object v3, Lsr;->a:Landroid/graphics/Typeface;
 
     iput-object v3, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->e:Landroid/graphics/Typeface;
 
@@ -184,7 +184,7 @@
     iput v2, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->d:I
 
     .line 65
-    sget-object v3, Ldefpackage/sr;->a:Landroid/graphics/Typeface;
+    sget-object v3, Lsr;->a:Landroid/graphics/Typeface;
 
     iput-object v3, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->e:Landroid/graphics/Typeface;
 
@@ -459,7 +459,7 @@
     iput v2, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->d:I
 
     .line 107
-    sget-object v3, Ldefpackage/sr;->a:Landroid/graphics/Typeface;
+    sget-object v3, Lsr;->a:Landroid/graphics/Typeface;
 
     iput-object v3, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->e:Landroid/graphics/Typeface;
 
@@ -620,9 +620,9 @@
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/sr;)V
+.method public constructor <init>(Lsr;)V
     .locals 5
-    .param p1, "srVar"    # Ldefpackage/sr;
+    .param p1, "srVar"    # Lsr;
 
     .line 145
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -648,7 +648,7 @@
     iput v2, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->d:I
 
     .line 150
-    sget-object v3, Ldefpackage/sr;->a:Landroid/graphics/Typeface;
+    sget-object v3, Lsr;->a:Landroid/graphics/Typeface;
 
     iput-object v3, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->e:Landroid/graphics/Typeface;
 
@@ -706,102 +706,102 @@
     iput v2, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->s:I
 
     .line 166
-    iget v0, p1, Ldefpackage/sr;->b:I
+    iget v0, p1, Lsr;->b:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a:I
 
     .line 167
-    iget-object v0, p1, Ldefpackage/sr;->c:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p1, Lsr;->c:Landroid/graphics/drawable/Drawable;
 
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->b:Landroid/graphics/drawable/Drawable;
 
     .line 168
-    iget v0, p1, Ldefpackage/sr;->d:I
+    iget v0, p1, Lsr;->d:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->c:I
 
     .line 169
-    iget v0, p1, Ldefpackage/sr;->e:I
+    iget v0, p1, Lsr;->e:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->d:I
 
     .line 170
-    iget-object v0, p1, Ldefpackage/sr;->f:Landroid/graphics/Typeface;
+    iget-object v0, p1, Lsr;->f:Landroid/graphics/Typeface;
 
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->e:Landroid/graphics/Typeface;
 
     .line 171
-    iget-object v0, p1, Ldefpackage/sr;->g:Landroid/graphics/Typeface;
+    iget-object v0, p1, Lsr;->g:Landroid/graphics/Typeface;
 
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->f:Landroid/graphics/Typeface;
 
     .line 172
-    iget v0, p1, Ldefpackage/sr;->h:I
+    iget v0, p1, Lsr;->h:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->g:I
 
     .line 173
-    iget v0, p1, Ldefpackage/sr;->i:I
+    iget v0, p1, Lsr;->i:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->h:I
 
     .line 174
-    iget-object v0, p1, Ldefpackage/sr;->j:Landroid/graphics/ColorFilter;
+    iget-object v0, p1, Lsr;->j:Landroid/graphics/ColorFilter;
 
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->i:Landroid/graphics/ColorFilter;
 
     .line 175
-    iget v0, p1, Ldefpackage/sr;->k:I
+    iget v0, p1, Lsr;->k:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->j:I
 
     .line 176
-    iget v0, p1, Ldefpackage/sr;->l:I
+    iget v0, p1, Lsr;->l:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->k:I
 
     .line 177
-    iget v0, p1, Ldefpackage/sr;->m:I
+    iget v0, p1, Lsr;->m:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->t:I
 
     .line 178
-    iget v0, p1, Ldefpackage/sr;->n:I
+    iget v0, p1, Lsr;->n:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->l:I
 
     .line 179
-    iget v0, p1, Ldefpackage/sr;->o:I
+    iget v0, p1, Lsr;->o:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->m:I
 
     .line 180
-    iget v0, p1, Ldefpackage/sr;->p:I
+    iget v0, p1, Lsr;->p:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->n:I
 
     .line 181
-    iget v0, p1, Ldefpackage/sr;->q:I
+    iget v0, p1, Lsr;->q:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->o:I
 
     .line 182
-    iget v0, p1, Ldefpackage/sr;->r:I
+    iget v0, p1, Lsr;->r:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->p:I
 
     .line 183
-    iget v0, p1, Ldefpackage/sr;->s:I
+    iget v0, p1, Lsr;->s:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->q:I
 
     .line 184
-    iget v0, p1, Ldefpackage/sr;->t:I
+    iget v0, p1, Lsr;->t:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->r:I
 
     .line 185
-    iget v0, p1, Ldefpackage/sr;->u:I
+    iget v0, p1, Lsr;->u:I
 
     iput v0, p0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->s:I
 
@@ -811,13 +811,13 @@
 
 
 # virtual methods
-.method public final a()Ldefpackage/sr;
+.method public final a()Lsr;
     .locals 24
 
     .line 189
     move-object/from16 v0, p0
 
-    new-instance v22, Ldefpackage/sr;
+    new-instance v22, Lsr;
 
     move-object/from16 v1, v22
 
@@ -877,7 +877,7 @@
 
     move-object/from16 v1, v23
 
-    invoke-direct/range {v1 .. v21}, Ldefpackage/sr;-><init>(ILandroid/graphics/drawable/Drawable;IILandroid/graphics/Typeface;Landroid/graphics/Typeface;IILandroid/graphics/ColorFilter;IIIIIIIIIII)V
+    invoke-direct/range {v1 .. v21}, Lsr;-><init>(ILandroid/graphics/drawable/Drawable;IILandroid/graphics/Typeface;Landroid/graphics/Typeface;IILandroid/graphics/ColorFilter;IIIIIIIIIII)V
 
     return-object v22
 .end method

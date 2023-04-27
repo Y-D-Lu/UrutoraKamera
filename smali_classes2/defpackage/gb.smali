@@ -1,302 +1,100 @@
-.class public Ldefpackage/gb;
+.class public Ldefpackage/Gb;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfio;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lfio;
+
+.field public final synthetic val$i:I
+
+.field public final synthetic val$iArr:[I
+
+.field public final synthetic val$strArr:[Ljava/lang/String;
+
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lfio;I[Ljava/lang/String;[I)V
     .locals 0
+    .param p1, "this$0"    # Lfio;
 
-    .line 14
+    .line 344
+    iput-object p1, p0, Ldefpackage/Gb;->this$0:Lfio;
+
+    iput p2, p0, Ldefpackage/Gb;->val$i:I
+
+    iput-object p3, p0, Ldefpackage/Gb;->val$strArr:[Ljava/lang/String;
+
+    iput-object p4, p0, Ldefpackage/Gb;->val$iArr:[I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 1
-    .param p0, "view"    # Landroid/view/View;
-    .param p1, "windowInsets"    # Landroid/view/WindowInsets;
-
-    .line 17
-    invoke-virtual {p0, p1}, Landroid/view/View;->dispatchApplyWindowInsets(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static b(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 1
-    .param p0, "view"    # Landroid/view/View;
-    .param p1, "windowInsets"    # Landroid/view/WindowInsets;
-
-    .line 22
-    invoke-virtual {p0, p1}, Landroid/view/View;->onApplyWindowInsets(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static c(Landroid/view/View;)V
-    .locals 0
-    .param p0, "view"    # Landroid/view/View;
-
-    .line 27
-    invoke-virtual {p0}, Landroid/view/View;->requestApplyInsets()V
-
-    .line 28
-    return-void
-.end method
-
-.method public static d(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroid/view/View;)V
-    .locals 2
-    .param p0, "inputConnection"    # Landroid/view/inputmethod/InputConnection;
-    .param p1, "editorInfo"    # Landroid/view/inputmethod/EditorInfo;
-    .param p2, "view"    # Landroid/view/View;
-
-    .line 31
-    if-eqz p0, :cond_3
-
-    iget-object v0, p1, Landroid/view/inputmethod/EditorInfo;->hintText:Ljava/lang/CharSequence;
-
-    if-eqz v0, :cond_0
-
-    goto :goto_1
-
-    .line 34
-    :cond_0
-    invoke-virtual {p2}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    .local v0, "parent":Landroid/view/ViewParent;
-    :goto_0
-    instance-of v1, v0, Landroid/view/View;
-
-    if-eqz v1, :cond_2
-
-    .line 35
-    instance-of v1, v0, Ldefpackage/se;
-
-    if-eqz v1, :cond_1
-
-    .line 36
-    move-object v1, v0
-
-    check-cast v1, Ldefpackage/se;
-
-    invoke-interface {v1}, Ldefpackage/se;->a()Ljava/lang/CharSequence;
-
-    move-result-object v1
-
-    iput-object v1, p1, Landroid/view/inputmethod/EditorInfo;->hintText:Ljava/lang/CharSequence;
-
-    .line 37
-    return-void
-
-    .line 34
-    :cond_1
-    invoke-interface {v0}, Landroid/view/ViewParent;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 40
-    .end local v0    # "parent":Landroid/view/ViewParent;
-    :cond_2
-    return-void
-
-    .line 32
-    :cond_3
-    :goto_1
-    return-void
-.end method
-
 
 # virtual methods
-.method public e()Ljava/lang/CharSequence;
-    .locals 2
+.method public final accept(Ljava/lang/Object;)V
+    .locals 6
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 43
-    new-instance v0, Ljava/lang/IllegalStateException;
+    .line 347
+    iget v0, p0, Ldefpackage/Gb;->val$i:I
 
-    const-string v1, "Not implemented."
+    .line 348
+    .local v0, "i2":I
+    iget-object v1, p0, Ldefpackage/Gb;->val$strArr:[Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    .line 349
+    .local v1, "strArr2":[Ljava/lang/String;
+    iget-object v2, p0, Ldefpackage/Gb;->val$iArr:[I
 
-    throw v0
-.end method
+    .line 350
+    .local v2, "iArr2":[I
+    move-object v3, p1
 
-.method public f()Ljava/lang/String;
-    .locals 2
+    check-cast v3, Lfik;
 
-    .line 47
-    new-instance v0, Ljava/lang/IllegalStateException;
+    .line 351
+    .local v3, "fikVar":Lfik;
+    const/4 v4, 0x0
 
-    const-string v1, "Not implemented."
+    .line 352
+    .local v4, "i3":I
+    instance-of v5, v3, Lfgt;
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    if-eqz v5, :cond_0
 
-    throw v0
-.end method
+    .line 353
+    move-object v5, v3
 
-.method public g(Ldefpackage/pu;)V
-    .locals 0
-    .param p1, "puVar"    # Ldefpackage/pu;
+    check-cast v5, Lfgt;
 
-    .line 51
+    invoke-interface {v5, v0, v1, v2}, Lfgt;->f(I[Ljava/lang/String;[I)V
+
+    .line 355
+    :cond_0
     return-void
 .end method
 
-.method public h(Ldefpackage/pu;)V
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
     .locals 0
-    .param p1, "puVar"    # Ldefpackage/pu;
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 54
-    return-void
-.end method
-
-.method public i(Landroid/view/accessibility/AccessibilityNodeInfo;)V
-    .locals 0
-    .param p1, "accessibilityNodeInfo"    # Landroid/view/accessibility/AccessibilityNodeInfo;
-
-    .line 57
-    return-void
-.end method
-
-.method public j(Ldefpackage/hb;)V
-    .locals 0
-    .param p1, "hbVar"    # Ldefpackage/hb;
-
-    .line 60
-    return-void
-.end method
-
-.method public k(Landroid/view/View;Ldefpackage/hb;)V
-    .locals 0
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "hbVar"    # Ldefpackage/hb;
-
-    .line 63
-    return-void
-.end method
-
-.method public l()V
-    .locals 0
-
-    .line 66
-    return-void
-.end method
-
-.method public m(Landroid/view/accessibility/AccessibilityEvent;)V
-    .locals 0
-    .param p1, "accessibilityEvent"    # Landroid/view/accessibility/AccessibilityEvent;
-
-    .line 69
-    return-void
-.end method
-
-.method public n()V
-    .locals 0
-
-    .line 72
-    return-void
-.end method
-
-.method public o()V
-    .locals 0
-
-    .line 75
-    return-void
-.end method
-
-.method public p()V
-    .locals 0
-
-    .line 78
-    return-void
-.end method
-
-.method public q()V
-    .locals 0
-
-    .line 81
-    return-void
-.end method
-
-.method public r()Z
-    .locals 1
-
-    .line 84
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public s(I)Z
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 88
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public t()Z
-    .locals 1
-
-    .line 92
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public u(I)Z
-    .locals 1
-    .param p1, "i"    # I
-
-    .line 96
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public v(Landroid/support/v7/widget/RecyclerView;)V
-    .locals 0
-    .param p1, "recyclerView"    # Landroid/support/v7/widget/RecyclerView;
-
-    .line 100
-    return-void
-.end method
-
-.method public w(I)V
-    .locals 2
-    .param p1, "i"    # I
-
-    .line 103
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Not implemented."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public x(I)V
-    .locals 2
-    .param p1, "i"    # I
-
-    .line 107
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Not implemented."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    .line 359
+    return-object p1
 .end method

@@ -6,11 +6,11 @@
 # instance fields
 .field public a:F
 
-.field public b:Ldefpackage/ojc;
+.field public b:Lojc;
 
-.field public c:Ldefpackage/ojc;
+.field public c:Lojc;
 
-.field public d:Ldefpackage/ojc;
+.field public d:Lojc;
 
 .field public volatile e:Z
 
@@ -25,15 +25,15 @@
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 32
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->b:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->b:Lojc;
 
     .line 33
-    iput-object v0, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->c:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->c:Lojc;
 
     .line 34
-    iput-object v0, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->d:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->d:Lojc;
 
     .line 35
     const/4 v0, 0x1
@@ -54,11 +54,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/lic;->c(Landroid/view/Display;)Ldefpackage/lic;
+    invoke-static {v0}, Llic;->c(Landroid/view/Display;)Llic;
 
     move-result-object v0
 
-    iget v0, v0, Ldefpackage/lic;->e:I
+    iget v0, v0, Llic;->e:I
 
     int-to-float v0, v0
 
@@ -74,9 +74,9 @@
 
     move-object/from16 v7, p1
 
-    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->b:Ldefpackage/ojc;
+    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->b:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
@@ -89,30 +89,30 @@
     if-eqz v1, :cond_8
 
     .line 57
-    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->b:Ldefpackage/ojc;
+    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->b:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
     move-object v14, v1
 
-    check-cast v14, Ldefpackage/dbq;
+    check-cast v14, Ldbq;
 
     .line 58
-    .local v14, "var14":Ldefpackage/dbq;
-    iget-object v15, v14, Ldefpackage/dbq;->o:Ldefpackage/fqk;
+    .local v14, "var14":Ldbq;
+    iget-object v15, v14, Ldbq;->o:Lfqk;
 
     .line 59
-    .local v15, "var13":Ldefpackage/fqk;
-    iget-boolean v1, v14, Ldefpackage/dbq;->l:Z
+    .local v15, "var13":Lfqk;
+    iget-boolean v1, v14, Ldbq;->l:Z
 
     if-eqz v1, :cond_8
 
     if-eqz v15, :cond_8
 
     .line 60
-    iget-object v1, v14, Ldefpackage/dbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v1, v14, Ldbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v1}, Landroid/view/View;->getWidth()I
 
@@ -124,7 +124,7 @@
 
     .line 61
     .local v6, "var6":F
-    iget-object v1, v14, Ldefpackage/dbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v1, v14, Ldbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
@@ -136,7 +136,7 @@
 
     .line 62
     .local v5, "var7":F
-    iget v1, v15, Ldefpackage/fqk;->c:F
+    iget v1, v15, Lfqk;->c:F
 
     float-to-double v1, v1
 
@@ -154,7 +154,7 @@
 
     .line 64
     .local v16, "var8":F
-    iget-object v1, v14, Ldefpackage/dbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v1, v14, Ldbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v1}, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->a()F
 
@@ -162,7 +162,7 @@
 
     .line 65
     .local v1, "var10":F
-    iget-object v2, v14, Ldefpackage/dbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v2, v14, Ldbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     iget v2, v2, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->a:F
 
@@ -171,7 +171,7 @@
     neg-float v1, v2
 
     .line 66
-    iget v2, v15, Ldefpackage/fqk;->b:F
+    iget v2, v15, Lfqk;->b:F
 
     float-to-double v2, v2
 
@@ -185,7 +185,7 @@
 
     .line 67
     .local v17, "var4":D
-    iget v2, v15, Ldefpackage/fqk;->c:F
+    iget v2, v15, Lfqk;->c:F
 
     float-to-double v2, v2
 
@@ -209,72 +209,72 @@
     if-gez v2, :cond_0
 
     .line 71
-    iget-object v2, v14, Ldefpackage/dbq;->f:Ldefpackage/dbp;
+    iget-object v2, v14, Ldbq;->f:Ldbp;
 
     move-object v3, v2
 
-    .local v2, "var12":Ldefpackage/dbp;
+    .local v2, "var12":Ldbp;
     goto :goto_0
 
     .line 73
-    .end local v2    # "var12":Ldefpackage/dbp;
+    .end local v2    # "var12":Ldbp;
     :cond_0
-    iget-object v2, v14, Ldefpackage/dbq;->e:Ldefpackage/dbp;
+    iget-object v2, v14, Ldbq;->e:Ldbp;
 
     move-object v3, v2
 
-    .restart local v2    # "var12":Ldefpackage/dbp;
+    .restart local v2    # "var12":Ldbp;
     goto :goto_0
 
     .line 75
-    .end local v2    # "var12":Ldefpackage/dbp;
+    .end local v2    # "var12":Ldbp;
     :cond_1
     cmpg-double v2, v19, v11
 
     if-gez v2, :cond_2
 
     .line 76
-    iget-object v2, v14, Ldefpackage/dbq;->h:Ldefpackage/dbp;
+    iget-object v2, v14, Ldbq;->h:Ldbp;
 
     move-object v3, v2
 
-    .restart local v2    # "var12":Ldefpackage/dbp;
+    .restart local v2    # "var12":Ldbp;
     goto :goto_0
 
     .line 78
-    .end local v2    # "var12":Ldefpackage/dbp;
+    .end local v2    # "var12":Ldbp;
     :cond_2
-    iget-object v2, v14, Ldefpackage/dbq;->g:Ldefpackage/dbp;
+    iget-object v2, v14, Ldbq;->g:Ldbp;
 
     move-object v3, v2
 
     .line 81
-    .local v3, "var12":Ldefpackage/dbp;
+    .local v3, "var12":Ldbp;
     :goto_0
     invoke-virtual {v7, v1, v6, v5}, Landroid/graphics/Canvas;->rotate(FFF)V
 
     .line 82
-    iget-boolean v2, v14, Ldefpackage/dbq;->m:Z
+    iget-boolean v2, v14, Ldbq;->m:Z
 
     if-eqz v2, :cond_3
 
     .line 83
-    iget v2, v14, Ldefpackage/dbq;->c:F
+    iget v2, v14, Ldbq;->c:F
 
     sub-float v2, v6, v2
 
-    iget v13, v14, Ldefpackage/dbq;->b:F
+    iget v13, v14, Ldbq;->b:F
 
     sub-float v13, v2, v13
 
     .line 84
     .end local v1    # "var10":F
     .local v13, "var10":F
-    iget v1, v14, Ldefpackage/dbq;->a:F
+    iget v1, v14, Ldbq;->a:F
 
     sub-float v2, v13, v1
 
-    iget-object v1, v3, Ldefpackage/dbp;->a:Landroid/graphics/Paint;
+    iget-object v1, v3, Ldbp;->a:Landroid/graphics/Paint;
 
     move-object/from16 v21, v1
 
@@ -282,8 +282,8 @@
 
     move-object v10, v3
 
-    .end local v3    # "var12":Ldefpackage/dbp;
-    .local v10, "var12":Ldefpackage/dbp;
+    .end local v3    # "var12":Ldbp;
+    .local v10, "var12":Ldbp;
     move v3, v5
 
     move v11, v4
@@ -305,20 +305,20 @@
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     .line 85
-    iget v1, v14, Ldefpackage/dbq;->c:F
+    iget v1, v14, Ldbq;->c:F
 
     add-float v6, v9, v1
 
-    iget v1, v14, Ldefpackage/dbq;->b:F
+    iget v1, v14, Ldbq;->b:F
 
     add-float v13, v6, v1
 
     .line 86
-    iget v1, v14, Ldefpackage/dbq;->a:F
+    iget v1, v14, Ldbq;->a:F
 
     add-float v4, v13, v1
 
-    iget-object v6, v10, Ldefpackage/dbp;->a:Landroid/graphics/Paint;
+    iget-object v6, v10, Ldbp;->a:Landroid/graphics/Paint;
 
     move-object/from16 v1, p1
 
@@ -332,12 +332,12 @@
 
     .line 82
     .end local v9    # "var6":F
-    .end local v10    # "var12":Ldefpackage/dbp;
+    .end local v10    # "var12":Ldbp;
     .end local v11    # "var9":F
     .end local v12    # "var7":F
     .end local v13    # "var10":F
     .restart local v1    # "var10":F
-    .restart local v3    # "var12":Ldefpackage/dbp;
+    .restart local v3    # "var12":Ldbp;
     .restart local v4    # "var9":F
     .restart local v5    # "var7":F
     .restart local v6    # "var6":F
@@ -350,12 +350,12 @@
 
     move v9, v6
 
-    .end local v3    # "var12":Ldefpackage/dbp;
+    .end local v3    # "var12":Ldbp;
     .end local v4    # "var9":F
     .end local v5    # "var7":F
     .end local v6    # "var6":F
     .restart local v9    # "var6":F
-    .restart local v10    # "var12":Ldefpackage/dbp;
+    .restart local v10    # "var12":Ldbp;
     .restart local v11    # "var9":F
     .restart local v12    # "var7":F
     move v13, v1
@@ -369,14 +369,14 @@
     invoke-virtual {v7, v1, v9, v12}, Landroid/graphics/Canvas;->rotate(FFF)V
 
     .line 90
-    iget v11, v14, Ldefpackage/dbq;->c:F
+    iget v11, v14, Ldbq;->c:F
 
     .line 91
     sub-float v2, v9, v11
 
     add-float v4, v9, v11
 
-    iget-object v6, v10, Ldefpackage/dbp;->a:Landroid/graphics/Paint;
+    iget-object v6, v10, Ldbp;->a:Landroid/graphics/Paint;
 
     move-object/from16 v1, p1
 
@@ -403,16 +403,16 @@
 
     move-result-object v1
 
-    iget v2, v14, Ldefpackage/dbq;->d:F
+    iget v2, v14, Ldbq;->d:F
 
     sub-float v5, v12, v2
 
-    iget-object v2, v10, Ldefpackage/dbp;->b:Landroid/graphics/Paint;
+    iget-object v2, v10, Ldbp;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v7, v1, v9, v5, v2}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
     .line 93
-    iget v1, v15, Ldefpackage/fqk;->b:F
+    iget v1, v15, Lfqk;->b:F
 
     float-to-double v1, v1
 
@@ -422,13 +422,13 @@
 
     double-to-float v1, v1
 
-    invoke-static {v1}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v1}, Ljsa;->b(F)I
 
     move-result v6
 
     .line 94
     .local v6, "var11":I
-    iget v5, v14, Ldefpackage/dbq;->c:F
+    iget v5, v14, Ldbq;->c:F
 
     .line 95
     .end local v16    # "var8":F
@@ -442,7 +442,7 @@
 
     add-float v4, v9, v5
 
-    iget-object v3, v14, Ldefpackage/dbq;->i:Landroid/graphics/Paint;
+    iget-object v3, v14, Ldbq;->i:Landroid/graphics/Paint;
 
     move-object/from16 v1, p1
 
@@ -465,29 +465,29 @@
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     .line 97
-    iget-object v1, v14, Ldefpackage/dbq;->o:Ldefpackage/fqk;
+    iget-object v1, v14, Ldbq;->o:Lfqk;
 
     .line 98
-    .local v1, "var15":Ldefpackage/fqk;
+    .local v1, "var15":Lfqk;
     if-eqz v1, :cond_7
 
     .line 99
-    iget-object v2, v14, Ldefpackage/dbq;->p:Ldefpackage/fqk;
+    iget-object v2, v14, Ldbq;->p:Lfqk;
 
     .line 100
-    .local v2, "var19":Ldefpackage/fqk;
+    .local v2, "var19":Lfqk;
     if-eqz v2, :cond_7
 
-    iget-wide v3, v2, Ldefpackage/fqk;->a:J
+    iget-wide v3, v2, Lfqk;->a:J
 
-    iget-wide v5, v1, Ldefpackage/fqk;->a:J
+    iget-wide v5, v1, Lfqk;->a:J
 
     cmp-long v3, v3, v5
 
     if-eqz v3, :cond_7
 
     .line 101
-    iget v3, v1, Ldefpackage/fqk;->c:F
+    iget v3, v1, Lfqk;->c:F
 
     float-to-double v3, v3
 
@@ -495,9 +495,9 @@
 
     move-result-wide v3
 
-    iget-object v5, v14, Ldefpackage/dbq;->p:Ldefpackage/fqk;
+    iget-object v5, v14, Ldbq;->p:Lfqk;
 
-    iget v5, v5, Ldefpackage/fqk;->c:F
+    iget v5, v5, Lfqk;->c:F
 
     float-to-double v5, v5
 
@@ -512,14 +512,14 @@
     move-result-wide v19
 
     .line 102
-    iget-object v2, v14, Ldefpackage/dbq;->o:Ldefpackage/fqk;
+    iget-object v2, v14, Ldbq;->o:Lfqk;
 
     .line 103
-    iget-wide v3, v2, Ldefpackage/fqk;->a:J
+    iget-wide v3, v2, Lfqk;->a:J
 
-    iget-object v5, v14, Ldefpackage/dbq;->p:Ldefpackage/fqk;
+    iget-object v5, v14, Ldbq;->p:Lfqk;
 
-    iget-wide v5, v5, Ldefpackage/fqk;->a:J
+    iget-wide v5, v5, Lfqk;->a:J
 
     sub-long/2addr v3, v5
 
@@ -540,7 +540,7 @@
     if-gtz v5, :cond_6
 
     .line 106
-    iget v5, v2, Ldefpackage/fqk;->c:F
+    iget v5, v2, Lfqk;->c:F
 
     float-to-double v5, v5
 
@@ -558,13 +558,13 @@
 
     if-ltz v5, :cond_4
 
-    iget-object v5, v14, Ldefpackage/dbq;->o:Ldefpackage/fqk;
+    iget-object v5, v14, Ldbq;->o:Lfqk;
 
-    iget v5, v5, Ldefpackage/fqk;->c:F
+    iget v5, v5, Lfqk;->c:F
 
-    iget-object v6, v14, Ldefpackage/dbq;->p:Ldefpackage/fqk;
+    iget-object v6, v14, Ldbq;->p:Lfqk;
 
-    iget v6, v6, Ldefpackage/fqk;->c:F
+    iget v6, v6, Lfqk;->c:F
 
     mul-float/2addr v5, v6
 
@@ -577,18 +577,18 @@
     .line 107
     const/4 v5, 0x0
 
-    iput-boolean v5, v14, Ldefpackage/dbq;->n:Z
+    iput-boolean v5, v14, Ldbq;->n:Z
 
     goto :goto_2
 
     .line 108
     :cond_4
-    iget-boolean v5, v14, Ldefpackage/dbq;->n:Z
+    iget-boolean v5, v14, Ldbq;->n:Z
 
     if-nez v5, :cond_6
 
     .line 109
-    iget-object v5, v14, Ldefpackage/dbq;->k:Ljava/util/function/BooleanSupplier;
+    iget-object v5, v14, Ldbq;->k:Ljava/util/function/BooleanSupplier;
 
     invoke-interface {v5}, Ljava/util/function/BooleanSupplier;->getAsBoolean()Z
 
@@ -597,20 +597,20 @@
     if-eqz v5, :cond_5
 
     .line 110
-    iget-object v5, v14, Ldefpackage/dbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v5, v14, Ldbq;->j:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v5}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
-    invoke-static {v5}, Ldefpackage/jty;->b(Landroid/content/Context;)V
+    invoke-static {v5}, Ljty;->b(Landroid/content/Context;)V
 
     .line 113
     :cond_5
-    iput-boolean v8, v14, Ldefpackage/dbq;->n:Z
+    iput-boolean v8, v14, Ldbq;->n:Z
 
     .line 119
-    .end local v2    # "var19":Ldefpackage/fqk;
+    .end local v2    # "var19":Lfqk;
     :cond_6
     :goto_2
     move-wide/from16 v17, v3
@@ -618,25 +618,25 @@
     .end local v3    # "var4":D
     .restart local v17    # "var4":D
     :cond_7
-    iput-object v15, v14, Ldefpackage/dbq;->p:Ldefpackage/fqk;
+    iput-object v15, v14, Ldbq;->p:Lfqk;
 
     .line 124
-    .end local v1    # "var15":Ldefpackage/fqk;
+    .end local v1    # "var15":Lfqk;
     .end local v9    # "var6":F
-    .end local v10    # "var12":Ldefpackage/dbp;
+    .end local v10    # "var12":Ldbp;
     .end local v11    # "var9":F
     .end local v12    # "var7":F
     .end local v13    # "var10":F
-    .end local v14    # "var14":Ldefpackage/dbq;
-    .end local v15    # "var13":Ldefpackage/fqk;
+    .end local v14    # "var14":Ldbq;
+    .end local v15    # "var13":Lfqk;
     .end local v17    # "var4":D
     .end local v19    # "var2":D
     .end local v21    # "var8":F
     .end local v22    # "var11":I
     :cond_8
-    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->c:Ldefpackage/ojc;
+    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->c:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
@@ -647,22 +647,22 @@
     if-eqz v1, :cond_d
 
     .line 125
-    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->c:Ldefpackage/ojc;
+    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->c:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/dck;
+    check-cast v1, Ldck;
 
     .line 126
-    .local v1, "var16":Ldefpackage/dck;
-    iget-boolean v4, v1, Ldefpackage/dck;->h:Z
+    .local v1, "var16":Ldck;
+    iget-boolean v4, v1, Ldck;->h:Z
 
     if-eqz v4, :cond_d
 
     .line 127
-    iget-object v4, v1, Ldefpackage/dck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v4, v1, Ldck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v4}, Landroid/view/View;->getWidth()I
 
@@ -676,7 +676,7 @@
 
     .line 128
     .restart local v4    # "var9":F
-    iget-object v6, v1, Ldefpackage/dck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v6, v1, Ldck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v6}, Landroid/view/View;->getHeight()I
 
@@ -688,7 +688,7 @@
 
     .line 129
     .local v6, "var8":F
-    iget v5, v1, Ldefpackage/dck;->i:F
+    iget v5, v1, Ldck;->i:F
 
     float-to-double v9, v5
 
@@ -700,7 +700,7 @@
 
     .line 130
     .local v5, "var6":F
-    iget v9, v1, Ldefpackage/dck;->j:F
+    iget v9, v1, Ldck;->j:F
 
     float-to-double v9, v9
 
@@ -712,7 +712,7 @@
 
     .line 131
     .local v9, "var7":F
-    iget-object v10, v1, Ldefpackage/dck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v10, v1, Ldck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     const/4 v11, 0x0
 
@@ -742,26 +742,26 @@
     if-gez v10, :cond_a
 
     .line 133
-    iget-object v10, v1, Ldefpackage/dck;->d:Landroid/graphics/Paint;
+    iget-object v10, v1, Ldck;->d:Landroid/graphics/Paint;
 
-    iget-object v11, v1, Ldefpackage/dck;->f:Landroid/graphics/Paint;
+    iget-object v11, v1, Ldck;->f:Landroid/graphics/Paint;
 
-    invoke-static {v4, v6, v10, v11, v7}, Ldefpackage/dck;->a(FFLandroid/graphics/Paint;Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
+    invoke-static {v4, v6, v10, v11, v7}, Ldck;->a(FFLandroid/graphics/Paint;Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
 
     .line 134
-    iget-object v10, v1, Ldefpackage/dck;->e:Landroid/graphics/Paint;
+    iget-object v10, v1, Ldck;->e:Landroid/graphics/Paint;
 
-    iget-object v11, v1, Ldefpackage/dck;->f:Landroid/graphics/Paint;
+    iget-object v11, v1, Ldck;->f:Landroid/graphics/Paint;
 
-    invoke-static {v4, v6, v10, v11, v7}, Ldefpackage/dck;->a(FFLandroid/graphics/Paint;Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
+    invoke-static {v4, v6, v10, v11, v7}, Ldck;->a(FFLandroid/graphics/Paint;Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
 
     .line 135
-    iget-boolean v10, v1, Ldefpackage/dck;->m:Z
+    iget-boolean v10, v1, Ldck;->m:Z
 
     if-nez v10, :cond_d
 
     .line 136
-    iget-object v10, v1, Ldefpackage/dck;->g:Ljava/util/function/BooleanSupplier;
+    iget-object v10, v1, Ldck;->g:Ljava/util/function/BooleanSupplier;
 
     invoke-interface {v10}, Ljava/util/function/BooleanSupplier;->getAsBoolean()Z
 
@@ -770,30 +770,30 @@
     if-eqz v10, :cond_9
 
     .line 137
-    iget-object v10, v1, Ldefpackage/dck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v10, v1, Ldck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v10}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v10
 
-    invoke-static {v10}, Ldefpackage/jty;->b(Landroid/content/Context;)V
+    invoke-static {v10}, Ljty;->b(Landroid/content/Context;)V
 
     .line 140
     :cond_9
-    iput-boolean v8, v1, Ldefpackage/dck;->m:Z
+    iput-boolean v8, v1, Ldck;->m:Z
 
     goto :goto_4
 
     .line 143
     :cond_a
-    iget-object v8, v1, Ldefpackage/dck;->b:Landroid/graphics/Paint;
+    iget-object v8, v1, Ldck;->b:Landroid/graphics/Paint;
 
-    iget-object v10, v1, Ldefpackage/dck;->c:Landroid/graphics/Paint;
+    iget-object v10, v1, Ldck;->c:Landroid/graphics/Paint;
 
-    invoke-static {v4, v6, v8, v10, v7}, Ldefpackage/dck;->a(FFLandroid/graphics/Paint;Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
+    invoke-static {v4, v6, v8, v10, v7}, Ldck;->a(FFLandroid/graphics/Paint;Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
 
     .line 144
-    iget-object v8, v1, Ldefpackage/dck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v8, v1, Ldck;->a:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v8}, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->a()F
 
@@ -906,19 +906,19 @@
 
     sub-float v12, v6, v12
 
-    iget-object v13, v1, Ldefpackage/dck;->e:Landroid/graphics/Paint;
+    iget-object v13, v1, Ldck;->e:Landroid/graphics/Paint;
 
-    iget-object v14, v1, Ldefpackage/dck;->f:Landroid/graphics/Paint;
+    iget-object v14, v1, Ldck;->f:Landroid/graphics/Paint;
 
-    invoke-static {v11, v12, v13, v14, v7}, Ldefpackage/dck;->a(FFLandroid/graphics/Paint;Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
+    invoke-static {v11, v12, v13, v14, v7}, Ldck;->a(FFLandroid/graphics/Paint;Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
 
     .line 154
     const/4 v11, 0x0
 
-    iput-boolean v11, v1, Ldefpackage/dck;->m:Z
+    iput-boolean v11, v1, Ldck;->m:Z
 
     .line 159
-    .end local v1    # "var16":Ldefpackage/dck;
+    .end local v1    # "var16":Ldck;
     .end local v4    # "var9":F
     .end local v5    # "var6":F
     .end local v6    # "var8":F
@@ -927,33 +927,33 @@
     .end local v10    # "var20":Landroid/util/Pair;
     :cond_d
     :goto_4
-    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->d:Ldefpackage/ojc;
+    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->d:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
     if-eqz v1, :cond_10
 
     .line 160
-    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->d:Ldefpackage/ojc;
+    iget-object v1, v0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->d:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
     move-object v8, v1
 
-    check-cast v8, Ldefpackage/dbc;
+    check-cast v8, Ldbc;
 
     .line 161
-    .local v8, "var17":Ldefpackage/dbc;
-    iget-boolean v1, v8, Ldefpackage/dbc;->h:Z
+    .local v8, "var17":Ldbc;
+    iget-boolean v1, v8, Ldbc;->h:Z
 
     if-eqz v1, :cond_10
 
     .line 162
-    iget-object v1, v8, Ldefpackage/dbc;->d:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v1, v8, Ldbc;->d:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v1}, Landroid/view/View;->getWidth()I
 
@@ -967,7 +967,7 @@
 
     .line 163
     .local v1, "var7":F
-    iget-object v5, v8, Ldefpackage/dbc;->d:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v5, v8, Ldbc;->d:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v5}, Landroid/view/View;->getHeight()I
 
@@ -979,7 +979,7 @@
 
     .line 164
     .restart local v5    # "var6":F
-    iget v4, v8, Ldefpackage/dbc;->i:F
+    iget v4, v8, Ldbc;->i:F
 
     float-to-double v9, v4
 
@@ -991,7 +991,7 @@
 
     .line 165
     .local v9, "var8":F
-    iget v4, v8, Ldefpackage/dbc;->j:F
+    iget v4, v8, Ldbc;->j:F
 
     float-to-double v10, v4
 
@@ -1003,21 +1003,21 @@
 
     .line 166
     .local v10, "var9":F
-    iget-object v4, v8, Ldefpackage/dbc;->d:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v4, v8, Ldbc;->d:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     const/4 v6, 0x0
 
     invoke-virtual {v4, v6}, Landroid/view/View;->setRotation(F)V
 
     .line 167
-    sget v4, Ldefpackage/dbc;->c:F
+    sget v4, Ldbc;->c:F
 
-    iget-object v6, v8, Ldefpackage/dbc;->e:Landroid/graphics/Paint;
+    iget-object v6, v8, Ldbc;->e:Landroid/graphics/Paint;
 
     invoke-virtual {v7, v1, v5, v4, v6}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     .line 168
-    iget-object v4, v8, Ldefpackage/dbc;->d:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
+    iget-object v4, v8, Ldbc;->d:Lcom/google/android/apps/camera/coach/CameraCoachHudView;
 
     invoke-virtual {v4}, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->a()F
 
@@ -1032,7 +1032,7 @@
     .line 170
     new-instance v2, Landroid/util/Pair;
 
-    iget v3, v8, Ldefpackage/dbc;->m:F
+    iget v3, v8, Ldbc;->m:F
 
     mul-float/2addr v3, v10
 
@@ -1040,7 +1040,7 @@
 
     move-result-object v3
 
-    iget v4, v8, Ldefpackage/dbc;->m:F
+    iget v4, v8, Ldbc;->m:F
 
     mul-float/2addr v4, v9
 
@@ -1065,7 +1065,7 @@
 
     neg-float v3, v10
 
-    iget v4, v8, Ldefpackage/dbc;->m:F
+    iget v4, v8, Ldbc;->m:F
 
     mul-float/2addr v3, v4
 
@@ -1075,7 +1075,7 @@
 
     neg-float v4, v9
 
-    iget v6, v8, Ldefpackage/dbc;->m:F
+    iget v6, v8, Ldbc;->m:F
 
     mul-float/2addr v4, v6
 
@@ -1097,7 +1097,7 @@
 
     neg-float v3, v9
 
-    iget v4, v8, Ldefpackage/dbc;->m:F
+    iget v4, v8, Ldbc;->m:F
 
     mul-float/2addr v3, v4
 
@@ -1105,7 +1105,7 @@
 
     move-result-object v3
 
-    iget v4, v8, Ldefpackage/dbc;->m:F
+    iget v4, v8, Ldbc;->m:F
 
     mul-float/2addr v4, v10
 
@@ -1146,20 +1146,20 @@
     .line 179
     .end local v5    # "var6":F
     .local v14, "var6":F
-    iget-object v15, v8, Ldefpackage/dbc;->e:Landroid/graphics/Paint;
+    iget-object v15, v8, Ldbc;->e:Landroid/graphics/Paint;
 
     .line 180
     .local v15, "var21":Landroid/graphics/Paint;
-    iget-object v6, v8, Ldefpackage/dbc;->f:Landroid/graphics/Paint;
+    iget-object v6, v8, Ldbc;->f:Landroid/graphics/Paint;
 
     .line 181
     .local v6, "var18":Landroid/graphics/Paint;
-    sget v5, Ldefpackage/dbc;->b:F
+    sget v5, Ldbc;->b:F
 
     invoke-virtual {v7, v13, v14, v5, v6}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     .line 182
-    sget v16, Ldefpackage/dbc;->a:F
+    sget v16, Ldbc;->a:F
 
     const/high16 v17, 0x40000000    # 2.0f
 
@@ -1224,7 +1224,7 @@
     return-void
 
     .line 195
-    .end local v8    # "var17":Ldefpackage/dbc;
+    .end local v8    # "var17":Ldbc;
     .end local v9    # "var8":F
     .end local v10    # "var9":F
     .end local v11    # "var11":I
@@ -1250,37 +1250,37 @@
 
     .line 206
     .local v0, "booleanSupplier":Ljava/util/function/BooleanSupplier;
-    new-instance v1, Ldefpackage/dbq;
+    new-instance v1, Ldbq;
 
-    invoke-direct {v1, p0, v0}, Ldefpackage/dbq;-><init>(Lcom/google/android/apps/camera/coach/CameraCoachHudView;Ljava/util/function/BooleanSupplier;)V
+    invoke-direct {v1, p0, v0}, Ldbq;-><init>(Lcom/google/android/apps/camera/coach/CameraCoachHudView;Ljava/util/function/BooleanSupplier;)V
 
-    invoke-static {v1}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v1}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->b:Ldefpackage/ojc;
+    iput-object v1, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->b:Lojc;
 
     .line 207
-    new-instance v1, Ldefpackage/dck;
+    new-instance v1, Ldck;
 
-    invoke-direct {v1, p0, v0}, Ldefpackage/dck;-><init>(Lcom/google/android/apps/camera/coach/CameraCoachHudView;Ljava/util/function/BooleanSupplier;)V
+    invoke-direct {v1, p0, v0}, Ldck;-><init>(Lcom/google/android/apps/camera/coach/CameraCoachHudView;Ljava/util/function/BooleanSupplier;)V
 
-    invoke-static {v1}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v1}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->c:Ldefpackage/ojc;
+    iput-object v1, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->c:Lojc;
 
     .line 208
-    new-instance v1, Ldefpackage/dbc;
+    new-instance v1, Ldbc;
 
-    invoke-direct {v1, p0}, Ldefpackage/dbc;-><init>(Lcom/google/android/apps/camera/coach/CameraCoachHudView;)V
+    invoke-direct {v1, p0}, Ldbc;-><init>(Lcom/google/android/apps/camera/coach/CameraCoachHudView;)V
 
-    invoke-static {v1}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v1}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->d:Ldefpackage/ojc;
+    iput-object v1, p0, Lcom/google/android/apps/camera/coach/CameraCoachHudView;->d:Lojc;
 
     .line 209
     return-void

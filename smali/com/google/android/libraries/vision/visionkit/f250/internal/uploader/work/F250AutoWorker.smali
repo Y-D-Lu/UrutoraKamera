@@ -4,31 +4,31 @@
 
 
 # instance fields
-.field public final g:Ldefpackage/mdf;
+.field public final g:Lmdf;
 
-.field public final h:Ldefpackage/nrm;
+.field public final h:Lnrm;
 
-.field private final i:Ldefpackage/nnz;
+.field private final i:Lnnz;
 
-.field private final j:Ldefpackage/nsv;
+.field private final j:Lnsv;
 
-.field private final k:Ldefpackage/nom;
+.field private final k:Lnom;
 
-.field private final l:Ldefpackage/nrk;
+.field private final l:Lnrk;
 
-.field private final m:Ldefpackage/qqf;
+.field private final m:Lqqf;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/mdf;Ldefpackage/nrm;Ldefpackage/nnz;Ldefpackage/nsv;Ldefpackage/nom;Ldefpackage/nrk;Ldefpackage/qqf;Landroid/content/Context;Landroidx/work/WorkerParameters;)V
+.method public constructor <init>(Lmdf;Lnrm;Lnnz;Lnsv;Lnom;Lnrk;Lqqf;Landroid/content/Context;Landroidx/work/WorkerParameters;)V
     .locals 0
-    .param p1, "mdfVar"    # Ldefpackage/mdf;
-    .param p2, "nrmVar"    # Ldefpackage/nrm;
-    .param p3, "nnzVar"    # Ldefpackage/nnz;
-    .param p4, "nsvVar"    # Ldefpackage/nsv;
-    .param p5, "nomVar"    # Ldefpackage/nom;
-    .param p6, "nrkVar"    # Ldefpackage/nrk;
-    .param p7, "qqfVar"    # Ldefpackage/qqf;
+    .param p1, "mdfVar"    # Lmdf;
+    .param p2, "nrmVar"    # Lnrm;
+    .param p3, "nnzVar"    # Lnnz;
+    .param p4, "nsvVar"    # Lnsv;
+    .param p5, "nomVar"    # Lnom;
+    .param p6, "nrkVar"    # Lnrk;
+    .param p7, "qqfVar"    # Lqqf;
     .param p8, "context"    # Landroid/content/Context;
     .param p9, "workerParameters"    # Landroidx/work/WorkerParameters;
 
@@ -63,25 +63,25 @@
     invoke-virtual {p9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 38
-    iput-object p1, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->g:Ldefpackage/mdf;
+    iput-object p1, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->g:Lmdf;
 
     .line 39
-    iput-object p2, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->h:Ldefpackage/nrm;
+    iput-object p2, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->h:Lnrm;
 
     .line 40
-    iput-object p3, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->i:Ldefpackage/nnz;
+    iput-object p3, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->i:Lnnz;
 
     .line 41
-    iput-object p4, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->j:Ldefpackage/nsv;
+    iput-object p4, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->j:Lnsv;
 
     .line 42
-    iput-object p5, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->k:Ldefpackage/nom;
+    iput-object p5, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->k:Lnom;
 
     .line 43
-    iput-object p6, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->l:Ldefpackage/nrk;
+    iput-object p6, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->l:Lnrk;
 
     .line 44
-    iput-object p7, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->m:Ldefpackage/qqf;
+    iput-object p7, p0, Lcom/google/android/libraries/vision/visionkit/f250/internal/uploader/work/F250AutoWorker;->m:Lqqf;
 
     .line 45
     return-void
@@ -89,9 +89,9 @@
 
 
 # virtual methods
-.method public final b(Ldefpackage/qlh;)Ljava/lang/Object;
+.method public final b(Lqlh;)Ljava/lang/Object;
     .locals 2
-    .param p1, "r5"    # Ldefpackage/qlh;
+    .param p1, "r5"    # Lqlh;
 
     .line 104
     new-instance v0, Ljava/lang/UnsupportedOperationException;
@@ -103,10 +103,10 @@
     throw v0
 .end method
 
-.method public final k(Ldefpackage/nrl;Ldefpackage/qlh;)Ljava/lang/Object;
+.method public final k(Lnrl;Lqlh;)Ljava/lang/Object;
     .locals 2
-    .param p1, "r6"    # Ldefpackage/nrl;
-    .param p2, "r7"    # Ldefpackage/qlh;
+    .param p1, "r6"    # Lnrl;
+    .param p2, "r7"    # Lqlh;
 
     .line 206
     new-instance v0, Ljava/lang/UnsupportedOperationException;
@@ -118,10 +118,10 @@
     throw v0
 .end method
 
-.method public final l(Ldefpackage/nrl;Ldefpackage/qlh;)Ljava/lang/Object;
+.method public final l(Lnrl;Lqlh;)Ljava/lang/Object;
     .locals 2
-    .param p1, "r7"    # Ldefpackage/nrl;
-    .param p2, "r8"    # Ldefpackage/qlh;
+    .param p1, "r7"    # Lnrl;
+    .param p2, "r8"    # Lqlh;
 
     .line 319
     new-instance v0, Ljava/lang/UnsupportedOperationException;
@@ -133,10 +133,10 @@
     throw v0
 .end method
 
-.method public final m(Ldefpackage/nrl;Ldefpackage/qlh;)Ljava/lang/Object;
+.method public final m(Lnrl;Lqlh;)Ljava/lang/Object;
     .locals 2
-    .param p1, "r19"    # Ldefpackage/nrl;
-    .param p2, "r20"    # Ldefpackage/qlh;
+    .param p1, "r19"    # Lnrl;
+    .param p2, "r20"    # Lqlh;
 
     .line 341
     new-instance v0, Ljava/lang/UnsupportedOperationException;

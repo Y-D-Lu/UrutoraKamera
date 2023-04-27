@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/apps/camera/camerafatalerror/CameraFatalErrorTrackerDatabase;
-.super Ldefpackage/aii;
+.super Laii;
 .source ""
 
 
@@ -8,18 +8,18 @@
     .locals 0
 
     .line 9
-    invoke-direct {p0}, Ldefpackage/aii;-><init>()V
+    invoke-direct {p0}, Laii;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract r()Ldefpackage/cxf;
+.method public abstract r()Lcxf;
 .end method
 
-.method public abstract s()Ldefpackage/cxm;
+.method public abstract s()Lcxm;
 .end method
 
-.method public abstract t()Ldefpackage/cxt;
+.method public abstract t()Lcxt;
 .end method

@@ -1,199 +1,148 @@
-.class public final Ldefpackage/uk;
+.class public Ldefpackage/Uk;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Vk;->close()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public final synthetic this$1:Ldefpackage/Vk;
 
-.field public b:Ldefpackage/up;
+.field public final synthetic val$lapVar3:Llap;
 
-.field public c:Ldefpackage/um;
+.field public final synthetic val$lisVar:Llis;
+
+.field public final synthetic val$lprVar2:Llpr;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ldefpackage/Vk;Llis;Llpr;Llap;)V
     .locals 0
+    .param p1, "this$1"    # Ldefpackage/Vk;
 
-    .line 12
+    .line 317
+    iput-object p1, p0, Ldefpackage/Uk;->this$1:Ldefpackage/Vk;
+
+    iput-object p2, p0, Ldefpackage/Uk;->val$lisVar:Llis;
+
+    iput-object p3, p0, Ldefpackage/Uk;->val$lprVar2:Llpr;
+
+    iput-object p4, p0, Ldefpackage/Uk;->val$lapVar3:Llap;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    return-void
-.end method
-
-.method public constructor <init>(Ldefpackage/um;Ljava/lang/String;Ldefpackage/up;)V
-    .locals 0
-    .param p1, "umVar"    # Ldefpackage/um;
-    .param p2, "str"    # Ljava/lang/String;
-    .param p3, "upVar"    # Ldefpackage/up;
-
-    .line 15
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 16
-    iput-object p1, p0, Ldefpackage/uk;->c:Ldefpackage/um;
-
-    .line 17
-    iput-object p2, p0, Ldefpackage/uk;->a:Ljava/lang/String;
-
-    .line 18
-    iput-object p3, p0, Ldefpackage/uk;->b:Ldefpackage/up;
-
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 7
+.method public final run()V
+    .locals 9
 
-    .line 23
-    iget-object v0, p0, Ldefpackage/uk;->c:Ldefpackage/um;
+    .line 320
+    iget-object v0, p0, Ldefpackage/Uk;->val$lisVar:Llis;
 
-    .line 24
-    .local v0, "umVar":Ldefpackage/um;
-    iget-object v1, p0, Ldefpackage/uk;->a:Ljava/lang/String;
+    .line 321
+    .local v0, "lisVar2":Llis;
+    iget-object v1, p0, Ldefpackage/Uk;->val$lprVar2:Llpr;
 
-    .line 25
-    .local v1, "str":Ljava/lang/String;
-    iget-object v2, v0, Ldefpackage/um;->e:Ljava/util/ArrayList;
+    .line 322
+    .local v1, "lprVar3":Llpr;
+    iget-object v2, p0, Ldefpackage/Uk;->val$lapVar3:Llap;
 
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    iget-object v2, v0, Ldefpackage/um;->c:Ljava/util/Map;
-
-    invoke-interface {v2, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Integer;
-
-    move-object v3, v2
-
-    .local v3, "num":Ljava/lang/Integer;
-    if-eqz v2, :cond_0
-
-    .line 26
-    iget-object v2, v0, Ldefpackage/um;->b:Ljava/util/Map;
-
-    invoke-interface {v2, v3}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 28
-    .end local v3    # "num":Ljava/lang/Integer;
-    :cond_0
-    iget-object v2, v0, Ldefpackage/um;->f:Ljava/util/Map;
-
-    invoke-interface {v2, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 29
-    iget-object v2, v0, Ldefpackage/um;->g:Ljava/util/Map;
-
-    invoke-interface {v2, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    const-string v3, ": "
-
-    const-string v4, "Dropping pending result for request "
-
-    const-string v5, "ActivityResultRegistry"
-
-    if-eqz v2, :cond_1
-
-    .line 30
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v6, v0, Ldefpackage/um;->g:Ljava/util/Map;
-
-    invoke-interface {v6, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v5, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 31
-    iget-object v2, v0, Ldefpackage/um;->g:Ljava/util/Map;
-
-    invoke-interface {v2, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 33
-    :cond_1
-    iget-object v2, v0, Ldefpackage/um;->h:Landroid/os/Bundle;
-
-    invoke-virtual {v2, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 34
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v3, v0, Ldefpackage/um;->h:Landroid/os/Bundle;
-
-    invoke-virtual {v3, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    .line 323
+    .local v2, "lapVar4":Llap;
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 324
+    .local v3, "valueOf":Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v5
 
-    invoke-static {v5, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
 
-    .line 35
-    iget-object v2, v0, Ldefpackage/um;->h:Landroid/os/Bundle;
+    move-result v5
 
-    invoke-virtual {v2, v1}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
+    add-int/lit8 v5, v5, 0x12
 
-    .line 37
-    :cond_2
-    iget-object v2, v0, Ldefpackage/um;->d:Ljava/util/Map;
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 325
+    .local v4, "sb":Ljava/lang/StringBuilder;
+    const-string v5, "Shutdown "
 
-    move-result-object v2
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    check-cast v2, Ldefpackage/gk;
+    .line 326
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    if-nez v2, :cond_3
+    .line 327
+    const-string v6, " started."
 
-    .line 38
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 328
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-interface {v0, v6}, Llis;->b(Ljava/lang/String;)V
+
+    .line 329
+    invoke-virtual {v2}, Llap;->close()V
+
+    .line 330
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 331
+    .local v6, "valueOf2":Ljava/lang/String;
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/String;->length()I
+
+    move-result v8
+
+    add-int/lit8 v8, v8, 0x9
+
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 332
+    .local v7, "sb2":Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 333
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 334
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-interface {v0, v5}, Llis;->f(Ljava/lang/String;)V
+
+    .line 335
     return-void
-
-    .line 40
-    :cond_3
-    const/4 v2, 0x0
-
-    throw v2
 .end method

@@ -1,98 +1,70 @@
-.class final Ldefpackage/ao;
+.class public Ldefpackage/Ao;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Bo;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:[Ljava/lang/Object;
-
-.field public b:I
+.field public final synthetic this$1:Ldefpackage/Bo;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ldefpackage/Bo;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Bo;
 
-    .line 5
+    .line 45726
+    iput-object p1, p0, Ldefpackage/Ao;->this$1:Ldefpackage/Bo;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 6
-    const/16 v0, 0x100
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    iput-object v0, p0, Ldefpackage/ao;->a:[Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 5
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 10
-    iget v0, p0, Ldefpackage/ao;->b:I
+    .line 45729
+    move-object v0, p1
 
-    .line 11
-    .local v0, "i":I
-    const/4 v1, 0x0
+    check-cast v0, Landroid/animation/Animator;
 
-    if-lez v0, :cond_0
+    .line 45730
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Ao;->this$1:Ldefpackage/Bo;
 
-    .line 12
-    add-int/lit8 v2, v0, -0x1
+    iget-object v1, v1, Ldefpackage/Bo;->this$0:Ljkz;
 
-    .line 13
-    .local v2, "i2":I
-    iget-object v3, p0, Ldefpackage/ao;->a:[Ljava/lang/Object;
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-    .line 14
-    .local v3, "objArr":[Ljava/lang/Object;
-    aget-object v4, v3, v2
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    .line 15
-    .local v4, "obj":Ljava/lang/Object;
-    aput-object v1, v3, v2
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
 
-    .line 16
-    iput v2, p0, Ldefpackage/ao;->b:I
-
-    .line 17
-    return-object v4
-
-    .line 19
-    .end local v2    # "i2":I
-    .end local v3    # "objArr":[Ljava/lang/Object;
-    .end local v4    # "obj":Ljava/lang/Object;
-    :cond_0
-    return-object v1
+    .line 45731
+    return-void
 .end method
 
-.method public final b(Ljava/lang/Object;)V
-    .locals 2
-    .param p1, "obj"    # Ljava/lang/Object;
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 23
-    iget v0, p0, Ldefpackage/ao;->b:I
-
-    .line 24
-    .local v0, "i":I
-    const/16 v1, 0x100
-
-    if-ge v0, v1, :cond_0
-
-    .line 25
-    iget-object v1, p0, Ldefpackage/ao;->a:[Ljava/lang/Object;
-
-    aput-object p1, v1, v0
-
-    .line 26
-    add-int/lit8 v1, v0, 0x1
-
-    iput v1, p0, Ldefpackage/ao;->b:I
-
-    .line 28
-    :cond_0
-    return-void
+    .line 45735
+    return-object p1
 .end method

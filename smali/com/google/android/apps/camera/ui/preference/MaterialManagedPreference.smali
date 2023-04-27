@@ -42,15 +42,15 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/ahm;)V
+.method public final a(Lahm;)V
     .locals 2
-    .param p1, "ahmVar"    # Ldefpackage/ahm;
+    .param p1, "ahmVar"    # Lahm;
 
     .line 28
-    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Ldefpackage/ahm;)V
+    invoke-super {p0, p1}, Landroidx/preference/Preference;->a(Lahm;)V
 
     .line 29
-    iget-object v0, p1, Ldefpackage/qs;->a:Landroid/view/View;
+    iget-object v0, p1, Lqs;->a:Landroid/view/View;
 
     const v1, 0x1020010
 
@@ -65,9 +65,9 @@
     if-eqz v0, :cond_0
 
     .line 31
-    new-instance v1, Ldefpackage/jic;
+    new-instance v1, Ljic;
 
-    invoke-direct {v1}, Ldefpackage/jic;-><init>()V
+    invoke-direct {v1}, Ljic;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
 

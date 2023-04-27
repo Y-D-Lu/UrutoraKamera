@@ -1,20 +1,34 @@
-.class public Ldefpackage/tl;
+.class public Ldefpackage/Tl;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/animation/Animator$AnimatorListener;
+.implements Lcom/google/lens/sdk/LensApi$LensLaunchStatusCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljcr;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private a:Z
+.field public final synthetic this$0:Ljcr;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ljcr;)V
     .locals 0
+    .param p1, "this$0"    # Ljcr;
 
-    .line 7
+    .line 21
+    iput-object p1, p0, Ldefpackage/Tl;->this$0:Ljcr;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,60 +36,17 @@
 
 
 # virtual methods
-.method public a()V
+.method public final onLaunchStatusFetched(I)V
     .locals 0
+    .param p1, "i"    # I
 
-    .line 11
-    return-void
-.end method
+    .line 24
+    if-nez p1, :cond_0
 
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 1
-    .param p1, "animator"    # Landroid/animation/Animator;
-
-    .line 15
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Ldefpackage/tl;->a:Z
-
-    .line 16
-    return-void
-.end method
-
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 1
-    .param p1, "animator"    # Landroid/animation/Animator;
-
-    .line 20
-    iget-boolean v0, p0, Ldefpackage/tl;->a:Z
-
-    if-nez v0, :cond_0
-
-    .line 21
-    invoke-virtual {p0}, Ldefpackage/tl;->a()V
-
-    .line 23
-    :cond_0
-    return-void
-.end method
-
-.method public final onAnimationRepeat(Landroid/animation/Animator;)V
-    .locals 0
-    .param p1, "animator"    # Landroid/animation/Animator;
+    .line 25
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     .line 27
-    return-void
-.end method
-
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 1
-    .param p1, "animator"    # Landroid/animation/Animator;
-
-    .line 31
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Ldefpackage/tl;->a:Z
-
-    .line 32
+    :cond_0
     return-void
 .end method

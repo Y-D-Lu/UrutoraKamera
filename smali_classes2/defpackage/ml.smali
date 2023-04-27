@@ -1,95 +1,50 @@
-.class public final Ldefpackage/ml;
+.class public Ldefpackage/Ml;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/ku;
+.implements Landroid/view/Choreographer$FrameCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljah;->c()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/support/v7/widget/ActionMenuView;
+.field public final synthetic this$0:Ljah;
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/v7/widget/ActionMenuView;)V
+.method public constructor <init>(Ljah;)V
     .locals 0
-    .param p1, "actionMenuView"    # Landroid/support/v7/widget/ActionMenuView;
+    .param p1, "this$0"    # Ljah;
 
-    .line 11
+    .line 94
+    iput-object p1, p0, Ldefpackage/Ml;->this$0:Ljah;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
-    iput-object p1, p0, Ldefpackage/ml;->a:Landroid/support/v7/widget/ActionMenuView;
-
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ldefpackage/kw;)V
+.method public final doFrame(J)V
     .locals 1
-    .param p1, "kwVar"    # Ldefpackage/kw;
+    .param p1, "j"    # J
 
-    .line 17
-    iget-object v0, p0, Ldefpackage/ml;->a:Landroid/support/v7/widget/ActionMenuView;
+    .line 97
+    iget-object v0, p0, Ldefpackage/Ml;->this$0:Ljah;
 
-    iget-object v0, v0, Landroid/support/v7/widget/ActionMenuView;->d:Ldefpackage/ku;
+    invoke-virtual {v0}, Ljah;->c()V
 
-    .line 18
-    .local v0, "kuVar":Ldefpackage/ku;
-    if-eqz v0, :cond_0
-
-    .line 19
-    invoke-interface {v0, p1}, Ldefpackage/ku;->C(Ldefpackage/kw;)V
-
-    .line 21
-    :cond_0
+    .line 98
     return-void
-.end method
-
-.method public final E(Ldefpackage/kw;Landroid/view/MenuItem;)Z
-    .locals 4
-    .param p1, "kwVar"    # Ldefpackage/kw;
-    .param p2, "menuItem"    # Landroid/view/MenuItem;
-
-    .line 26
-    iget-object v0, p0, Ldefpackage/ml;->a:Landroid/support/v7/widget/ActionMenuView;
-
-    iget-object v0, v0, Landroid/support/v7/widget/ActionMenuView;->e:Ldefpackage/ro;
-
-    .line 27
-    .local v0, "roVar":Ldefpackage/ro;
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
-
-    iget-object v2, v0, Ldefpackage/ro;->a:Landroid/support/v7/widget/Toolbar;
-
-    iget-object v2, v2, Landroid/support/v7/widget/Toolbar;->z:Ldefpackage/jd;
-
-    move-object v3, v2
-
-    .local v3, "jdVar":Ldefpackage/jd;
-    if-eqz v2, :cond_1
-
-    iget-object v2, v3, Ldefpackage/jd;->a:Ldefpackage/jh;
-
-    iget-object v2, v2, Ldefpackage/jh;->c:Landroid/view/Window$Callback;
-
-    invoke-interface {v2, v1, p2}, Landroid/view/Window$Callback;->onMenuItemSelected(ILandroid/view/MenuItem;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x1
-
-    .end local v3    # "jdVar":Ldefpackage/jd;
-    :cond_1
-    :goto_0
-    return v1
 .end method

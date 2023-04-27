@@ -20,9 +20,9 @@
     .locals 1
 
     .line 31
-    new-instance v0, Ldefpackage/oza;
+    new-instance v0, Loza;
 
-    invoke-direct {v0}, Ldefpackage/oza;-><init>()V
+    invoke-direct {v0}, Loza;-><init>()V
 
     sput-object v0, Lcom/google/common/io/ByteStreams;->NULL_OUTPUT_STREAM:Ljava/io/OutputStream;
 
@@ -358,9 +358,9 @@
     .param p1, "j"    # J
 
     .line 111
-    new-instance v0, Ldefpackage/ozd;
+    new-instance v0, Lozd;
 
-    invoke-direct {v0, p0, p1, p2}, Ldefpackage/ozd;-><init>(Ljava/io/InputStream;J)V
+    invoke-direct {v0, p0, p1, p2}, Lozd;-><init>(Ljava/io/InputStream;J)V
 
     return-object v0
 .end method
@@ -373,9 +373,9 @@
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 116
-    new-instance v0, Ldefpackage/ozb;
+    new-instance v0, Lozb;
 
-    invoke-direct {v0, p0}, Ldefpackage/ozb;-><init>(Ljava/io/ByteArrayInputStream;)V
+    invoke-direct {v0, p0}, Lozb;-><init>(Ljava/io/ByteArrayInputStream;)V
 
     return-object v0
 .end method
@@ -406,7 +406,7 @@
 
     .line 125
     .local v0, "length":I
-    invoke-static {p1, v0}, Ldefpackage/obr;->aY(II)V
+    invoke-static {p1, v0}, Lobr;->aY(II)V
 
     .line 126
     new-instance v1, Ljava/io/ByteArrayInputStream;
@@ -490,9 +490,9 @@
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 142
-    new-instance v0, Ldefpackage/ozc;
+    new-instance v0, Lozc;
 
-    invoke-direct {v0, p0}, Ldefpackage/ozc;-><init>(Ljava/io/ByteArrayOutputStream;)V
+    invoke-direct {v0, p0}, Lozc;-><init>(Ljava/io/ByteArrayOutputStream;)V
 
     return-object v0
 .end method
@@ -536,7 +536,7 @@
 
     array-length v2, p1
 
-    invoke-static {p2, v1, v2}, Ldefpackage/obr;->aP(III)V
+    invoke-static {p2, v1, v2}, Lobr;->aP(III)V
 
     .line 155
     :goto_0
@@ -600,10 +600,10 @@
     throw v1
 .end method
 
-.method public static readBytes(Ljava/io/InputStream;Ldefpackage/oyz;)Ljava/lang/Object;
+.method public static readBytes(Ljava/io/InputStream;Loyz;)Ljava/lang/Object;
     .locals 3
     .param p0, "inputStream"    # Ljava/io/InputStream;
-    .param p1, "oyzVar"    # Ldefpackage/oyz;
+    .param p1, "oyzVar"    # Loyz;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -632,7 +632,7 @@
 
     if-eq v1, v2, :cond_0
 
-    invoke-interface {p1}, Ldefpackage/oyz;->b()Z
+    invoke-interface {p1}, Loyz;->b()Z
 
     move-result v1
 
@@ -642,7 +642,7 @@
 
     .line 173
     :cond_0
-    invoke-interface {p1}, Ldefpackage/oyz;->a()Ljava/lang/Object;
+    invoke-interface {p1}, Loyz;->a()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -993,7 +993,7 @@
     :goto_0
     const-string v3, "expectedSize (%s) must be non-negative"
 
-    invoke-static {v0, v3, p1, p2}, Ldefpackage/obr;->aJ(ZLjava/lang/String;J)V
+    invoke-static {v0, v3, p1, p2}, Lobr;->aJ(ZLjava/lang/String;J)V
 
     .line 244
     const-wide/32 v3, 0x7ffffff7
@@ -1209,7 +1209,7 @@
     .local v5, "j":J
     add-long v7, v5, v5
 
-    invoke-static {v7, v8}, Ldefpackage/oxh;->F(J)I
+    invoke-static {v7, v8}, Loxh;->F(J)I
 
     move-result v0
 

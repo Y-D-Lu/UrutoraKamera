@@ -47,9 +47,9 @@
 
     iget-object v1, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi$1;->this$0:Lcom/google/android/apps/camera/zoomui/ZoomUi;
 
-    iget-object v1, v1, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ldefpackage/jrz;
+    iget-object v1, v1, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ljrz;
 
-    invoke-static {v0, v1}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {v0, v1}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 78
     return-void

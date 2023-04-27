@@ -1,5 +1,5 @@
 .class public Lcom/google/android/apps/camera/faceboxes/FaceView;
-.super Ldefpackage/doz;
+.super Ldoz;
 .source ""
 
 
@@ -14,7 +14,7 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 19
-    invoke-direct {p0, p1, p2}, Ldefpackage/doz;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Ldoz;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 20
     invoke-virtual {p0}, Landroid/view/SurfaceView;->getResources()Landroid/content/res/Resources;

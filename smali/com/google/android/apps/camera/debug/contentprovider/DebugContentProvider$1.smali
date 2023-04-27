@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c()Ldefpackage/dgt;
+    value = Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->c()Ldgt;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -47,7 +47,7 @@
     .line 67
     const-class v0, Lcom/google/android/apps/camera/stats/timing/CameraActivityTiming;
 
-    sget-object v1, Ldefpackage/bql;->e:Ldefpackage/bql;
+    sget-object v1, Lbql;->e:Lbql;
 
     invoke-static {v0, v1}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b(Ljava/lang/Class;Ljava/util/function/Predicate;)Ljava/util/List;
 
@@ -57,9 +57,9 @@
 
     .line 65
     :pswitch_0
-    const-class v0, Ldefpackage/ijp;
+    const-class v0, Lijp;
 
-    sget-object v1, Ldefpackage/bql;->f:Ldefpackage/bql;
+    sget-object v1, Lbql;->f:Lbql;
 
     invoke-static {v0, v1}, Lcom/google/android/apps/camera/debug/contentprovider/DebugContentProvider;->b(Ljava/lang/Class;Ljava/util/function/Predicate;)Ljava/util/List;
 

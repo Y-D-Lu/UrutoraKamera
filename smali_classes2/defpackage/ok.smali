@@ -1,129 +1,77 @@
-.class final Ldefpackage/ok;
-.super Ldefpackage/js;
+.class public Ldefpackage/Ok;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Litp;-><init>(Limt;Ljava/util/concurrent/Executor;Lims;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lljf;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public b:Z
+.field public final a:Litp;
+
+.field public final synthetic this$0:Litp;
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/drawable/Drawable;)V
-    .locals 1
-    .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
+.method public constructor <init>(Litp;)V
+    .locals 0
+    .param p1, "this$0"    # Litp;
 
-    .line 12
-    invoke-direct {p0, p1}, Ldefpackage/js;-><init>(Landroid/graphics/drawable/Drawable;)V
+    .line 35
+    iput-object p1, p0, Ldefpackage/Ok;->this$0:Litp;
 
-    .line 13
-    const/4 v0, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean v0, p0, Ldefpackage/ok;->b:Z
+    .line 36
+    iput-object p1, p0, Ldefpackage/Ok;->a:Litp;
 
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final draw(Landroid/graphics/Canvas;)V
-    .locals 1
-    .param p1, "canvas"    # Landroid/graphics/Canvas;
-
-    .line 18
-    iget-boolean v0, p0, Ldefpackage/ok;->b:Z
-
-    if-eqz v0, :cond_0
-
-    .line 19
-    invoke-super {p0, p1}, Ldefpackage/js;->draw(Landroid/graphics/Canvas;)V
-
-    .line 21
-    :cond_0
-    return-void
-.end method
-
-.method public final setHotspot(FF)V
-    .locals 1
-    .param p1, "f"    # F
-    .param p2, "f2"    # F
-
-    .line 25
-    iget-boolean v0, p0, Ldefpackage/ok;->b:Z
-
-    if-eqz v0, :cond_0
-
-    .line 26
-    invoke-super {p0, p1, p2}, Ldefpackage/js;->setHotspot(FF)V
-
-    .line 28
-    :cond_0
-    return-void
-.end method
-
-.method public final setHotspotBounds(IIII)V
-    .locals 1
-    .param p1, "i"    # I
-    .param p2, "i2"    # I
-    .param p3, "i3"    # I
-    .param p4, "i4"    # I
-
-    .line 32
-    iget-boolean v0, p0, Ldefpackage/ok;->b:Z
-
-    if-eqz v0, :cond_0
-
-    .line 33
-    invoke-super {p0, p1, p2, p3, p4}, Ldefpackage/js;->setHotspotBounds(IIII)V
-
-    .line 35
-    :cond_0
-    return-void
-.end method
-
-.method public final setState([I)Z
-    .locals 1
-    .param p1, "iArr"    # [I
-
-    .line 39
-    iget-boolean v0, p0, Ldefpackage/ok;->b:Z
-
-    if-eqz v0, :cond_0
+.method public final run()V
+    .locals 2
 
     .line 40
-    invoke-super {p0, p1}, Ldefpackage/js;->setState([I)Z
+    const/4 v0, -0x1
 
-    move-result v0
+    packed-switch v0, :pswitch_data_0
 
-    return v0
+    .line 45
+    iget-object v0, p0, Ldefpackage/Ok;->a:Litp;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Litp;->k(Z)V
+
+    .line 46
+    return-void
 
     .line 42
-    :cond_0
-    const/4 v0, 0x0
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Ok;->a:Litp;
 
-    return v0
-.end method
+    const/4 v1, 0x0
 
-.method public final setVisible(ZZ)Z
-    .locals 1
-    .param p1, "z"    # Z
-    .param p2, "z2"    # Z
+    invoke-virtual {v0, v1}, Litp;->k(Z)V
 
-    .line 47
-    iget-boolean v0, p0, Ldefpackage/ok;->b:Z
+    .line 43
+    return-void
 
-    if-eqz v0, :cond_0
-
-    .line 48
-    invoke-super {p0, p1, p2}, Ldefpackage/js;->setVisible(ZZ)Z
-
-    move-result v0
-
-    return v0
-
-    .line 50
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

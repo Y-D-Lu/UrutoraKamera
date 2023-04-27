@@ -6,11 +6,11 @@
 # static fields
 .field public static final c:I
 
-.field private static final d:Ldefpackage/ouj;
+.field private static final d:Louj;
 
 
 # instance fields
-.field public a:Ldefpackage/cef;
+.field public a:Lcef;
 
 .field public b:Ljava/util/concurrent/ExecutorService;
 
@@ -22,11 +22,11 @@
     .line 27
     const-string v0, "com/google/android/apps/camera/brella/mediastore/MediaListeningService"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->d:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->d:Louj;
 
     return-void
 .end method
@@ -118,9 +118,9 @@
 
     .line 37
     :cond_1
-    sget-object v2, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->d:Ldefpackage/ouj;
+    sget-object v2, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->d:Louj;
 
-    invoke-virtual {v2}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v2}, Loue;->c()Lova;
 
     move-result-object v2
 
@@ -128,7 +128,7 @@
 
     const-string v5, "Cannot get scheduler for media listener service."
 
-    invoke-static {v2, v5, v4}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v2, v5, v4}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 38
     return v3
@@ -154,17 +154,17 @@
     .line 46
     move-object v1, v0
 
-    check-cast v1, Ldefpackage/enc;
+    check-cast v1, Lenc;
 
-    const-class v2, Ldefpackage/ceh;
+    const-class v2, Lceh;
 
-    invoke-interface {v1, v2}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v1, v2}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ceh;
+    check-cast v1, Lceh;
 
-    invoke-interface {v1, p0}, Ldefpackage/ceh;->fY(Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;)V
+    invoke-interface {v1, p0}, Lceh;->fY(Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;)V
 
     .line 47
     return-void
@@ -214,22 +214,22 @@
     invoke-virtual {v4}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     .line 60
-    iget-object v5, p0, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->a:Ldefpackage/cef;
+    iget-object v5, p0, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->a:Lcef;
 
-    invoke-virtual {v5, v4}, Ldefpackage/cef;->a(Landroid/net/Uri;)Ldefpackage/ojc;
+    invoke-virtual {v5, v4}, Lcef;->a(Landroid/net/Uri;)Lojc;
 
     move-result-object v5
 
     .line 61
-    .local v5, "a":Ldefpackage/ojc;
-    invoke-virtual {v5}, Ldefpackage/ojc;->g()Z
+    .local v5, "a":Lojc;
+    invoke-virtual {v5}, Lojc;->g()Z
 
     move-result v6
 
     if-eqz v6, :cond_1
 
     .line 62
-    invoke-virtual {v5}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v5}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v6
 
@@ -239,7 +239,7 @@
 
     .line 57
     .end local v4    # "uri":Landroid/net/Uri;
-    .end local v5    # "a":Ldefpackage/ojc;
+    .end local v5    # "a":Lojc;
     :cond_1
     add-int/lit8 v1, v1, 0x1
 
@@ -247,23 +247,23 @@
 
     .line 65
     :cond_2
-    iget-object v1, p0, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->a:Ldefpackage/cef;
+    iget-object v1, p0, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->a:Lcef;
 
-    invoke-virtual {v1, v2}, Ldefpackage/cef;->b(Ljava/util/List;)Ldefpackage/pht;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldefpackage/pho;->q(Ldefpackage/pht;)Ldefpackage/pho;
+    invoke-virtual {v1, v2}, Lcef;->b(Ljava/util/List;)Lpht;
 
     move-result-object v1
 
-    new-instance v3, Ldefpackage/ceg;
+    invoke-static {v1}, Lpho;->q(Lpht;)Lpho;
 
-    invoke-direct {v3, p0, p1}, Ldefpackage/ceg;-><init>(Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;Landroid/app/job/JobParameters;)V
+    move-result-object v1
+
+    new-instance v3, Lceg;
+
+    invoke-direct {v3, p0, p1}, Lceg;-><init>(Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;Landroid/app/job/JobParameters;)V
 
     iget-object v4, p0, Lcom/google/android/apps/camera/brella/mediastore/MediaListeningService;->b:Ljava/util/concurrent/ExecutorService;
 
-    invoke-static {v1, v3, v4}, Ldefpackage/plk;->af(Ldefpackage/pht;Ldefpackage/phh;Ljava/util/concurrent/Executor;)V
+    invoke-static {v1, v3, v4}, Lplk;->af(Lpht;Lphh;Ljava/util/concurrent/Executor;)V
 
     .line 66
     const/4 v1, 0x1

@@ -1,55 +1,79 @@
-.class public final Ldefpackage/ud;
+.class public Ldefpackage/Ud;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/tu;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgem;->b(Llmr;Lgfs;Lgfi;Lgex;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/ue;
+.field public final synthetic this$0:Lgem;
 
-.field private final b:Ldefpackage/uc;
+.field public final synthetic val$atomicBoolean:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public final synthetic val$gexVar:Lgex;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/ue;Ldefpackage/uc;)V
+.method public constructor <init>(Lgem;Ljava/util/concurrent/atomic/AtomicBoolean;Lgex;)V
     .locals 0
-    .param p1, "ueVar"    # Ldefpackage/ue;
-    .param p2, "ucVar"    # Ldefpackage/uc;
+    .param p1, "this$0"    # Lgem;
 
-    .line 9
+    .line 30
+    iput-object p1, p0, Ldefpackage/Ud;->this$0:Lgem;
+
+    iput-object p2, p0, Ldefpackage/Ud;->val$atomicBoolean:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    iput-object p3, p0, Ldefpackage/Ud;->val$gexVar:Lgex;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
-    iput-object p1, p0, Ldefpackage/ud;->a:Ldefpackage/ue;
-
-    .line 11
-    iput-object p2, p0, Ldefpackage/ud;->b:Ldefpackage/uc;
-
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()V
-    .locals 2
+.method public final run()V
+    .locals 4
 
-    .line 16
-    iget-object v0, p0, Ldefpackage/ud;->a:Ldefpackage/ue;
+    .line 33
+    iget-object v0, p0, Ldefpackage/Ud;->val$atomicBoolean:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    iget-object v0, v0, Ldefpackage/ue;->a:Ljava/util/ArrayDeque;
+    .line 34
+    .local v0, "atomicBoolean2":Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, p0, Ldefpackage/Ud;->val$gexVar:Lgex;
 
-    iget-object v1, p0, Ldefpackage/ud;->b:Ldefpackage/uc;
+    .line 35
+    .local v1, "gexVar2":Lgex;
+    const/4 v2, 0x1
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayDeque;->remove(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->getAndSet(Z)Z
 
-    .line 17
-    iget-object v0, p0, Ldefpackage/ud;->b:Ldefpackage/uc;
+    move-result v2
 
-    invoke-virtual {v0, p0}, Ldefpackage/uc;->b(Ldefpackage/tu;)V
+    if-nez v2, :cond_0
 
-    .line 18
+    .line 36
+    new-instance v2, Ljava/util/concurrent/TimeoutException;
+
+    const-string v3, "HDR+ timed out after 10000 ms"
+
+    invoke-direct {v2, v3}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+
+    invoke-interface {v1, v2}, Lgex;->b(Ljava/lang/Throwable;)V
+
+    .line 38
+    :cond_0
     return-void
 .end method

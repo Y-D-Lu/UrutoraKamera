@@ -1,178 +1,205 @@
-.class public final Ldefpackage/ba;
+.class public Ldefpackage/Ba;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lezg;->m()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field private final a:I
+.field public final synthetic this$0:Lezg;
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method public constructor <init>(Lezg;)V
     .locals 0
-    .param p1, "i"    # I
+    .param p1, "this$0"    # Lezg;
 
-    .line 20
+    .line 242
+    iput-object p1, p0, Ldefpackage/Ba;->this$0:Lezg;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
-    iput p1, p0, Ldefpackage/ba;->a:I
-
-    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 2
-    .param p1, "r12"    # Landroid/os/Parcel;
+.method public final fB(Ljava/lang/Object;)V
+    .locals 6
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 36
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    .line 245
+    iget-object v0, p0, Ldefpackage/Ba;->this$0:Lezg;
 
-    const-string v1, "Method not decompiled: defpackage.ba.createFromParcel(android.os.Parcel):java.lang.Object"
+    .line 246
+    .local v0, "ezgVar":Lezg;
+    move-object v1, p1
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    check-cast v1, Ljava/lang/Integer;
 
-    throw v0
-.end method
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
-.method public final newArray(I)[Ljava/lang/Object;
-    .locals 1
-    .param p1, "i"    # I
+    move-result v1
 
-    .line 41
-    iget v0, p0, Ldefpackage/ba;->a:I
+    .line 247
+    .local v1, "intValue":I
+    iget-object v2, v0, Lezg;->l:Lojc;
 
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v2}, Lojc;->g()Z
 
-    .line 83
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    iget-object v2, v0, Lezg;->x:Lhlv;
+
+    iget-boolean v2, v2, Lhlv;->a:Z
+
+    if-eqz v2, :cond_0
+
+    goto :goto_0
+
+    .line 250
+    :cond_0
+    invoke-static {v1}, Lesn;->a(I)Lesn;
+
+    move-result-object v2
+
+    .line 251
+    .local v2, "a":Lesn;
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    const/4 v4, 0x2
+
+    packed-switch v3, :pswitch_data_0
+
+    .line 267
+    sget-object v3, Lezg;->b:Louj;
+
+    invoke-virtual {v3}, Loue;->c()Lova;
+
+    move-result-object v3
+
+    sget-object v4, Lovl;->a:Lovd;
+
+    const-string v5, "LasagnaMode"
+
+    invoke-interface {v3, v4, v5}, Lova;->g(Lovd;Ljava/lang/Object;)Lova;
+
+    move-result-object v3
+
+    check-cast v3, Loug;
+
+    const/16 v4, 0x636
+
+    invoke-interface {v3, v4}, Lova;->G(I)Lova;
+
+    move-result-object v3
+
+    check-cast v3, Loug;
+
+    const-string v4, "No education for option %s"
+
+    invoke-interface {v3, v4, v2}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 268
+    return-void
+
+    .line 260
     :pswitch_0
-    new-array v0, p1, [Ldefpackage/rf;
+    iget-object v3, v0, Lezg;->u:Lhuj;
 
-    return-object v0
+    const-string v5, "lasagna_edu_action"
 
-    .line 81
+    invoke-virtual {v3, v5}, Lhuj;->a(Ljava/lang/String;)I
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    .line 261
+    return-void
+
+    .line 263
+    :cond_1
+    iget-object v3, v0, Lezg;->l:Lojc;
+
+    invoke-virtual {v3}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lesi;
+
+    invoke-interface {v3, v2, v4}, Lesi;->d(Lesn;I)V
+
+    .line 264
+    iget-object v3, v0, Lezg;->u:Lhuj;
+
+    invoke-virtual {v3, v5}, Lhuj;->b(Ljava/lang/String;)I
+
+    .line 265
+    return-void
+
+    .line 253
     :pswitch_1
-    new-array v0, p1, [Ldefpackage/rd;
+    iget-object v3, v0, Lezg;->u:Lhuj;
 
-    return-object v0
+    const-string v5, "lasagna_edu_landscape"
 
-    .line 79
-    :pswitch_2
-    new-array v0, p1, [Ldefpackage/pe;
+    invoke-virtual {v3, v5}, Lhuj;->a(Ljava/lang/String;)I
 
-    return-object v0
+    move-result v3
 
-    .line 77
-    :pswitch_3
-    new-array v0, p1, [Ldefpackage/no;
+    if-eqz v3, :cond_2
 
-    return-object v0
+    .line 254
+    return-void
 
-    .line 75
-    :pswitch_4
-    new-array v0, p1, [Ldefpackage/hp;
+    .line 256
+    :cond_2
+    iget-object v3, v0, Lezg;->l:Lojc;
 
-    return-object v0
+    invoke-virtual {v3}, Lojc;->c()Ljava/lang/Object;
 
-    .line 73
-    :pswitch_5
-    new-array v0, p1, [Ldefpackage/fa;
+    move-result-object v3
 
-    return-object v0
+    check-cast v3, Lesi;
 
-    .line 71
-    :pswitch_6
-    new-array v0, p1, [Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;
+    invoke-interface {v3, v2, v4}, Lesi;->d(Lesn;I)V
 
-    return-object v0
+    .line 257
+    iget-object v3, v0, Lezg;->u:Lhuj;
 
-    .line 69
-    :pswitch_7
-    new-array v0, p1, [Landroid/support/v4/media/session/PlaybackStateCompat;
+    invoke-virtual {v3, v5}, Lhuj;->b(Ljava/lang/String;)I
 
-    return-object v0
+    .line 258
+    return-void
 
-    .line 67
-    :pswitch_8
-    new-array v0, p1, [Landroid/support/v4/media/session/ParcelableVolumeInfo;
+    .line 248
+    .end local v2    # "a":Lesn;
+    :cond_3
+    :goto_0
+    return-void
 
-    return-object v0
-
-    .line 59
-    :pswitch_9
-    new-array v0, p1, [Landroid/support/v4/media/RatingCompat;
-
-    return-object v0
-
-    .line 57
-    :pswitch_a
-    new-array v0, p1, [Landroid/support/v4/media/MediaMetadataCompat;
-
-    return-object v0
-
-    .line 55
-    :pswitch_b
-    new-array v0, p1, [Landroid/support/v4/media/MediaDescriptionCompat;
-
-    return-object v0
-
-    .line 51
-    :pswitch_c
-    new-array v0, p1, [Ldefpackage/cy;
-
-    return-object v0
-
-    .line 49
-    :pswitch_d
-    new-array v0, p1, [Ldefpackage/cv;
-
-    return-object v0
-
-    .line 47
-    :pswitch_e
-    new-array v0, p1, [Ldefpackage/cr;
-
-    return-object v0
-
-    .line 45
-    :pswitch_f
-    new-array v0, p1, [Ldefpackage/az;
-
-    return-object v0
-
-    .line 43
-    :pswitch_10
-    new-array v0, p1, [Ldefpackage/bb;
-
-    return-object v0
+    nop
 
     :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_0
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
+    .packed-switch 0x1
         :pswitch_1
+        :pswitch_0
     .end packed-switch
 .end method

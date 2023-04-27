@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final a:Ldefpackage/ouj;
+.field public static final a:Louj;
 
 
 # instance fields
-.field public b:Ldefpackage/fjs;
+.field public b:Lfjs;
 
-.field public c:Ldefpackage/lbk;
+.field public c:Llbk;
 
-.field public d:Ldefpackage/eoc;
+.field public d:Leoc;
 
-.field public e:Ldefpackage/qiz;
+.field public e:Lqiz;
 
 
 # direct methods
@@ -24,11 +24,11 @@
     .line 17
     const-string v0, "com/google/android/apps/camera/prewarm/NoOpPrewarmService"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->a:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->a:Louj;
 
     return-void
 .end method
@@ -49,14 +49,14 @@
     .param p1, "z"    # Z
 
     .line 25
-    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->c:Ldefpackage/lbk;
+    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->c:Llbk;
 
-    invoke-virtual {v0}, Ldefpackage/lbk;->a()V
+    invoke-virtual {v0}, Llbk;->a()V
 
     .line 26
-    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->b:Ldefpackage/fjs;
+    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->b:Lfjs;
 
-    invoke-interface {v0}, Ldefpackage/fjs;->N()V
+    invoke-interface {v0}, Lfjs;->N()V
 
     .line 27
     return-void
@@ -70,25 +70,25 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/enc;
+    check-cast v0, Lenc;
 
-    const-class v1, Ldefpackage/hgo;
+    const-class v1, Lhgo;
 
-    invoke-interface {v0, v1}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/hgo;
+    check-cast v0, Lhgo;
 
-    invoke-interface {v0, p0}, Ldefpackage/hgo;->o(Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;)V
+    invoke-interface {v0, p0}, Lhgo;->o(Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;)V
 
     .line 32
     invoke-super {p0}, Landroid/service/media/CameraPrewarmService;->onCreate()V
 
     .line 33
-    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->e:Ldefpackage/qiz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->e:Lqiz;
 
-    invoke-virtual {v0}, Ldefpackage/qiz;->a()V
+    invoke-virtual {v0}, Lqiz;->a()V
 
     .line 34
     return-void
@@ -98,18 +98,18 @@
     .locals 2
 
     .line 38
-    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->c:Ldefpackage/lbk;
+    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->c:Llbk;
 
     new-instance v1, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService$1;
 
     invoke-direct {v1, p0}, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService$1;-><init>(Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;)V
 
-    invoke-virtual {v0, v1}, Ldefpackage/lbk;->b(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Llbk;->b(Ljava/lang/Runnable;)V
 
     .line 46
-    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->b:Ldefpackage/fjs;
+    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->b:Lfjs;
 
-    invoke-interface {v0}, Ldefpackage/fjs;->E()V
+    invoke-interface {v0}, Lfjs;->E()V
 
     .line 47
     return-void
@@ -122,9 +122,9 @@
     .param p3, "i2"    # I
 
     .line 51
-    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->d:Ldefpackage/eoc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->d:Leoc;
 
-    invoke-virtual {v0}, Ldefpackage/eoc;->a()Z
+    invoke-virtual {v0}, Leoc;->a()Z
 
     move-result v0
 
@@ -133,9 +133,9 @@
     if-nez v0, :cond_0
 
     .line 52
-    sget-object v0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->a:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/prewarm/NoOpPrewarmService;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->b()Lova;
 
     move-result-object v0
 
@@ -143,7 +143,7 @@
 
     const-string v3, "KeepAlive is off. Skipping."
 
-    invoke-static {v0, v3, v2}, Ldefpackage/d;->v(Ldefpackage/ova;Ljava/lang/String;C)V
+    invoke-static {v0, v3, v2}, Ld;->v(Lova;Ljava/lang/String;C)V
 
     .line 53
     return v1
@@ -154,13 +154,13 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/bux;
+    check-cast v0, Lbux;
 
-    invoke-interface {v0}, Ldefpackage/bux;->b()Ldefpackage/buw;
+    invoke-interface {v0}, Lbux;->b()Lbuw;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Ldefpackage/buw;->a(I)V
+    invoke-virtual {v0, v1}, Lbuw;->a(I)V
 
     .line 56
     const/4 v0, 0x1

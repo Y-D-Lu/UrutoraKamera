@@ -1,98 +1,119 @@
-.class public Ldefpackage/hs;
-.super Landroid/view/ViewGroup$MarginLayoutParams;
+.class public Ldefpackage/Hs;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llij;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljqz;->a()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public a:I
+.field public final synthetic this$0:Ljqz;
+
+.field public final synthetic val$kbiVar:Lkbi;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljqz;Lkbi;)V
+    .locals 0
+    .param p1, "this$0"    # Ljqz;
 
-    .line 14
-    const/4 v0, -0x2
+    .line 146
+    iput-object p1, p0, Ldefpackage/Hs;->this$0:Ljqz;
 
-    invoke-direct {p0, v0, v0}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(II)V
+    iput-object p2, p0, Ldefpackage/Hs;->val$kbiVar:Lkbi;
 
-    .line 15
-    const v0, 0x800013
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, Ldefpackage/hs;->a:I
-
-    .line 16
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 2
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
-    .line 19
-    invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+# virtual methods
+.method public final fB(Ljava/lang/Object;)V
+    .locals 7
+    .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 20
-    const/4 v0, 0x0
+    .line 149
+    const/4 v0, -0x1
 
-    iput v0, p0, Ldefpackage/hs;->a:I
+    packed-switch v0, :pswitch_data_0
 
-    .line 21
-    sget-object v1, Ldefpackage/jq;->b:[I
+    .line 155
+    iget-object v0, p0, Ldefpackage/Hs;->val$kbiVar:Lkbi;
 
-    invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+    .line 156
+    .local v0, "kbiVar2":Lkbi;
+    move-object v1, p1
 
-    move-result-object v1
+    check-cast v1, Ljava/lang/Float;
 
-    .line 22
-    .local v1, "obtainStyledAttributes":Landroid/content/res/TypedArray;
-    invoke-virtual {v1, v0, v0}, Landroid/content/res/TypedArray;->getInt(II)I
+    .line 157
+    .local v1, "f2":Ljava/lang/Float;
+    iget-object v2, v0, Lkbi;->F:Lcom/google/android/apps/camera/zoomui/ZoomKnob;
 
-    move-result v0
+    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
 
-    iput v0, p0, Ldefpackage/hs;->a:I
+    move-result v3
 
-    .line 23
-    invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
+    invoke-virtual {v0, v3}, Lkbi;->K(F)I
 
-    .line 24
+    move-result v3
+
+    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
+
+    move-result v4
+
+    iget-object v5, v0, Lkbi;->f:Llda;
+
+    check-cast v5, Llce;
+
+    iget-object v5, v5, Llce;->d:Ljava/lang/Object;
+
+    check-cast v5, Ljava/lang/Float;
+
+    invoke-virtual {v5}, Ljava/lang/Float;->floatValue()F
+
+    move-result v5
+
+    invoke-virtual {v0}, Lkbi;->H()F
+
+    move-result v6
+
+    invoke-virtual {v2, v3, v4, v5, v6}, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->c(IFFF)V
+
+    .line 158
     return-void
-.end method
 
-.method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 1
-    .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
+    .line 151
+    .end local v0    # "kbiVar2":Lkbi;
+    .end local v1    # "f2":Ljava/lang/Float;
+    :pswitch_0
+    move-object v0, p1
 
-    .line 27
-    invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    check-cast v0, Ljava/lang/Float;
 
-    .line 28
-    const/4 v0, 0x0
+    .line 152
+    .local v0, "f":Ljava/lang/Float;
+    iget-object v1, p0, Ldefpackage/Hs;->val$kbiVar:Lkbi;
 
-    iput v0, p0, Ldefpackage/hs;->a:I
+    invoke-virtual {v1}, Lkbi;->h()V
 
-    .line 29
+    .line 153
     return-void
-.end method
 
-.method public constructor <init>(Ldefpackage/hs;)V
-    .locals 1
-    .param p1, "hsVar"    # Ldefpackage/hs;
-
-    .line 32
-    invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
-
-    .line 33
-    const/4 v0, 0x0
-
-    iput v0, p0, Ldefpackage/hs;->a:I
-
-    .line 34
-    iget v0, p1, Ldefpackage/hs;->a:I
-
-    iput v0, p0, Ldefpackage/hs;->a:I
-
-    .line 35
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

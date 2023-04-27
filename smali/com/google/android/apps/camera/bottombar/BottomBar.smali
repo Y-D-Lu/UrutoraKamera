@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private actualOrientation:Ldefpackage/jrz;
+.field private actualOrientation:Ljrz;
 
 .field public appContext:Landroid/content/Context;
 
@@ -38,7 +38,7 @@
 
 .field public d_tap:I
 
-.field private decision:Ldefpackage/jce;
+.field private decision:Ljce;
 
 .field public final f$1:Ljava/io/File;
 
@@ -58,7 +58,7 @@
 
 .field private onThumbnailVisibilityChangedListener:Lcom/google/android/apps/camera/bottombar/BottomBar$OnVisibilityChangedListener;
 
-.field private orientation:Ldefpackage/jrz;
+.field private orientation:Ljrz;
 
 .field private pauseResumeButton:Lcom/google/android/apps/camera/bottombar/PauseResumeButton;
 
@@ -80,7 +80,7 @@
 
 .field private snapshotButton:Lcom/google/android/apps/camera/bottombar/SnapshotButton;
 
-.field private sysUiFlagApplier:Ldefpackage/img;
+.field private sysUiFlagApplier:Limg;
 
 .field private thumbnailView:Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
 
@@ -97,17 +97,17 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 87
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
     .line 88
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->actualOrientation:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->actualOrientation:Ljrz;
 
     .line 89
-    sget-object v0, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v0, Ljce;->PHONE_LAYOUT:Ljce;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->decision:Ldefpackage/jce;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->decision:Ljce;
 
     .line 90
     const/4 v0, 0x0
@@ -344,9 +344,9 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 121
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->decision:Ldefpackage/jce;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->decision:Ljce;
 
-    sget-object v1, Ldefpackage/jce;->TABLET_LAYOUT:Ldefpackage/jce;
+    sget-object v1, Ljce;->TABLET_LAYOUT:Ljce;
 
     invoke-virtual {v0, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -357,9 +357,9 @@
     if-eqz v0, :cond_1
 
     .line 122
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->actualOrientation:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->actualOrientation:Ljrz;
 
-    sget-object v2, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->LANDSCAPE:Ljrz;
 
     if-ne v0, v2, :cond_0
 
@@ -368,7 +368,7 @@
     if-nez v3, :cond_0
 
     .line 123
-    invoke-static {p0}, Ldefpackage/jsa;->c(Landroid/widget/LinearLayout;)V
+    invoke-static {p0}, Ljsa;->c(Landroid/widget/LinearLayout;)V
 
     .line 124
     const/4 v0, 0x1
@@ -386,7 +386,7 @@
     if-eqz v0, :cond_2
 
     .line 126
-    invoke-static {p0}, Ldefpackage/jsa;->c(Landroid/widget/LinearLayout;)V
+    invoke-static {p0}, Ljsa;->c(Landroid/widget/LinearLayout;)V
 
     .line 127
     iput-boolean v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->reversed:Z
@@ -400,7 +400,7 @@
     if-eqz v0, :cond_2
 
     .line 130
-    invoke-static {p0}, Ldefpackage/jsa;->c(Landroid/widget/LinearLayout;)V
+    invoke-static {p0}, Ljsa;->c(Landroid/widget/LinearLayout;)V
 
     .line 131
     iput-boolean v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->reversed:Z
@@ -415,21 +415,21 @@
     if-eqz v0, :cond_3
 
     .line 135
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
-    iput-object v1, v0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->g:Ldefpackage/jrz;
+    iput-object v1, v0, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->g:Ljrz;
 
     .line 136
     invoke-virtual {v0}, Lcom/google/android/apps/camera/ui/zoomlock/ZoomLockView;->a()V
 
     .line 138
     :cond_3
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
-    invoke-static {p0, v1}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, v1}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 139
-    invoke-static {p0}, Ldefpackage/mip;->em(Landroid/view/ViewGroup;)Ljava/util/Collection;
+    invoke-static {p0}, Lmip;->em(Landroid/view/ViewGroup;)Ljava/util/Collection;
 
     move-result-object v1
 
@@ -457,7 +457,7 @@
     .param p2, "z2"    # Z
 
     .line 154
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 155
     const/16 v0, 0x8
@@ -476,7 +476,7 @@
 
     .line 160
     :cond_0
-    invoke-static {v0, p0}, Ldefpackage/jur;->a(ILandroid/view/View;)V
+    invoke-static {v0, p0}, Ljur;->a(ILandroid/view/View;)V
 
     .line 161
     return-void
@@ -570,16 +570,16 @@
     .locals 2
 
     .line 182
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->sysUiFlagApplier:Ldefpackage/img;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->sysUiFlagApplier:Limg;
 
     .line 183
-    .local v0, "imgVar":Ldefpackage/img;
+    .local v0, "imgVar":Limg;
     if-eqz v0, :cond_0
 
     .line 184
     const/16 v1, 0x1006
 
-    invoke-interface {v0, v1}, Ldefpackage/img;->d(I)V
+    invoke-interface {v0, v1}, Limg;->d(I)V
 
     .line 185
     const/4 v1, 0x0
@@ -627,15 +627,15 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/jus;->a(Landroid/view/View;)Ldefpackage/jus;
+    invoke-static {v0}, Ljus;->a(Landroid/view/View;)Ljus;
 
     move-result-object v0
 
     .line 195
-    .local v0, "a":Ldefpackage/jus;
+    .local v0, "a":Ljus;
     const v1, 0x7f0a01d6
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -646,7 +646,7 @@
     .line 196
     const v1, 0x7f0a027f
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -657,7 +657,7 @@
     .line 197
     const v1, 0x7f0a017e
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -668,7 +668,7 @@
     .line 198
     const v1, 0x7f0a005f
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -679,7 +679,7 @@
     .line 199
     const v1, 0x7f0a01ee
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -690,7 +690,7 @@
     .line 200
     const v1, 0x7f0a022d
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -701,7 +701,7 @@
     .line 201
     const v1, 0x7f0a0061
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -712,7 +712,7 @@
     .line 202
     const v1, 0x7f0a0107
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -723,7 +723,7 @@
     .line 203
     const v1, 0x7f0a0197
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -734,7 +734,7 @@
     .line 204
     const v1, 0x7f0a01ac
 
-    invoke-virtual {v0, v1}, Ldefpackage/jus;->c(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljus;->c(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -746,21 +746,21 @@
     return-void
 .end method
 
-.method private reverseOrientation(Ldefpackage/jrz;)Ldefpackage/jrz;
+.method private reverseOrientation(Ljrz;)Ljrz;
     .locals 2
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 208
-    sget-object v0, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->PORTRAIT:Ljrz;
 
     if-eq p1, v0, :cond_0
 
-    sget-object v1, Ldefpackage/jrz;->REVERSE_PORTRAIT:Ldefpackage/jrz;
+    sget-object v1, Ljrz;->REVERSE_PORTRAIT:Ljrz;
 
     if-ne p1, v1, :cond_1
 
     :cond_0
-    sget-object v0, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v0, Ljrz;->LANDSCAPE:Ljrz;
 
     :cond_1
     return-object v0
@@ -811,7 +811,7 @@
     .param p3, "z"    # Z
 
     .line 218
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 219
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->currentLeftButton:Landroid/view/View;
@@ -911,7 +911,7 @@
     .param p2, "z2"    # Z
 
     .line 249
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 250
     iget-boolean v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->isShown:Z
@@ -1032,7 +1032,7 @@
     .end array-data
 .end method
 
-.method public getBackgroundColorProperty()Ldefpackage/jrp;
+.method public getBackgroundColorProperty()Ljrp;
     .locals 1
 
     .line 265
@@ -1061,7 +1061,7 @@
     if-nez v0, :cond_0
 
     .line 283
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 284
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->cancelButtonStub:Landroid/view/ViewStub;
@@ -1090,7 +1090,7 @@
     if-nez v0, :cond_0
 
     .line 291
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 292
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->leftSideCancelButtonStub:Landroid/view/ViewStub;
@@ -1119,7 +1119,7 @@
     if-nez v0, :cond_0
 
     .line 299
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 300
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->pauseResumeButtonStub:Landroid/view/ViewStub;
@@ -1181,7 +1181,7 @@
     if-nez v0, :cond_0
 
     .line 311
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 312
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->retakeButtonStub:Landroid/view/ViewStub;
@@ -1210,7 +1210,7 @@
     if-nez v0, :cond_0
 
     .line 319
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 320
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->reviewPlayButtonStub:Landroid/view/ViewStub;
@@ -1248,7 +1248,7 @@
     if-nez v0, :cond_0
 
     .line 331
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 332
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->snapShotButtonStub:Landroid/view/ViewStub;
@@ -1277,11 +1277,11 @@
     return-object v0
 .end method
 
-.method public getUiOrientation()Ldefpackage/jrz;
+.method public getUiOrientation()Ljrz;
     .locals 1
 
     .line 342
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
     return-object v0
 .end method
@@ -1309,9 +1309,9 @@
     if-eq v0, v1, :cond_0
 
     .line 352
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
-    invoke-static {p1, v0}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p1, v0}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 354
     :cond_0
@@ -1336,7 +1336,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Ldefpackage/mip;->em(Landroid/view/ViewGroup;)Ljava/util/Collection;
+    invoke-static {v0}, Lmip;->em(Landroid/view/ViewGroup;)Ljava/util/Collection;
 
     move-result-object v0
 
@@ -1354,9 +1354,9 @@
 
     .line 371
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
-    invoke-static {p1, v0}, Ldefpackage/mip;->et(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p1, v0}, Lmip;->et(Landroid/view/View;Ljrz;)V
 
     .line 373
     :goto_0
@@ -1494,9 +1494,9 @@
     invoke-super {p0, v0}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     .line 408
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 
@@ -1623,12 +1623,12 @@
     return-void
 .end method
 
-.method public setSysUiFlagApplier(Ldefpackage/img;)V
+.method public setSysUiFlagApplier(Limg;)V
     .locals 1
-    .param p1, "imgVar"    # Ldefpackage/img;
+    .param p1, "imgVar"    # Limg;
 
     .line 449
-    iput-object p1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->sysUiFlagApplier:Ldefpackage/img;
+    iput-object p1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->sysUiFlagApplier:Limg;
 
     .line 450
     iget-boolean v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->hideNavBar:Z
@@ -1643,13 +1643,13 @@
     return-void
 .end method
 
-.method public setUiOrientation(Ldefpackage/jrz;Ldefpackage/jce;)V
+.method public setUiOrientation(Ljrz;Ljce;)V
     .locals 2
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
-    .param p2, "jceVar"    # Ldefpackage/jce;
+    .param p1, "jrzVar"    # Ljrz;
+    .param p2, "jceVar"    # Ljce;
 
     .line 456
-    sget-object v0, Ldefpackage/jce;->PHONE_LAYOUT:Ldefpackage/jce;
+    sget-object v0, Ljce;->PHONE_LAYOUT:Ljce;
 
     invoke-virtual {p2, v0}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1657,7 +1657,7 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Ldefpackage/jce;->SIMPLIFIED_LAYOUT:Ldefpackage/jce;
+    sget-object v0, Ljce;->SIMPLIFIED_LAYOUT:Ljce;
 
     invoke-virtual {p2, v0}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -1668,7 +1668,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-direct {p0, p1}, Lcom/google/android/apps/camera/bottombar/BottomBar;->reverseOrientation(Ldefpackage/jrz;)Ldefpackage/jrz;
+    invoke-direct {p0, p1}, Lcom/google/android/apps/camera/bottombar/BottomBar;->reverseOrientation(Ljrz;)Ljrz;
 
     move-result-object v0
 
@@ -1679,13 +1679,13 @@
     move-object v0, p1
 
     .line 457
-    .local v0, "reverseOrientation":Ldefpackage/jrz;
+    .local v0, "reverseOrientation":Ljrz;
     :goto_1
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
     if-ne v1, v0, :cond_2
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->decision:Ldefpackage/jce;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->decision:Ljce;
 
     if-ne v1, p2, :cond_2
 
@@ -1694,13 +1694,13 @@
 
     .line 460
     :cond_2
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ldefpackage/jrz;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->orientation:Ljrz;
 
     .line 461
-    iput-object p1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->actualOrientation:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->actualOrientation:Ljrz;
 
     .line 462
-    iput-object p2, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->decision:Ldefpackage/jce;
+    iput-object p2, p0, Lcom/google/android/apps/camera/bottombar/BottomBar;->decision:Ljce;
 
     .line 463
     invoke-direct {p0}, Lcom/google/android/apps/camera/bottombar/BottomBar;->applyOrientation()V

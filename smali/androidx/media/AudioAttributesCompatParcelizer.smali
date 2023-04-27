@@ -13,9 +13,9 @@
     return-void
 .end method
 
-.method public static read(Ldefpackage/aks;)Landroidx/media/AudioAttributesCompat;
+.method public static read(Laks;)Landroidx/media/AudioAttributesCompat;
     .locals 2
-    .param p0, "aksVar"    # Ldefpackage/aks;
+    .param p0, "aksVar"    # Laks;
 
     .line 8
     new-instance v0, Landroidx/media/AudioAttributesCompat;
@@ -26,7 +26,7 @@
     .local v0, "audioAttributesCompat":Landroidx/media/AudioAttributesCompat;
     iget-object v1, v0, Landroidx/media/AudioAttributesCompat;->a:Landroidx/media/AudioAttributesImpl;
 
-    invoke-virtual {p0, v1}, Ldefpackage/aks;->t(Lakt;)Lakt;
+    invoke-virtual {p0, v1}, Laks;->t(Lakt;)Lakt;
 
     move-result-object v1
 
@@ -38,15 +38,15 @@
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesCompat;Ldefpackage/aks;)V
+.method public static write(Landroidx/media/AudioAttributesCompat;Laks;)V
     .locals 1
     .param p0, "audioAttributesCompat"    # Landroidx/media/AudioAttributesCompat;
-    .param p1, "aksVar"    # Ldefpackage/aks;
+    .param p1, "aksVar"    # Laks;
 
     .line 14
     iget-object v0, p0, Landroidx/media/AudioAttributesCompat;->a:Landroidx/media/AudioAttributesImpl;
 
-    invoke-virtual {p1, v0}, Ldefpackage/aks;->u(Lakt;)V
+    invoke-virtual {p1, v0}, Laks;->u(Lakt;)V
 
     .line 15
     return-void

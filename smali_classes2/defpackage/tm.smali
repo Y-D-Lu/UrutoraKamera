@@ -1,74 +1,70 @@
-.class public final Ldefpackage/tm;
+.class public Ldefpackage/Tm;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Um;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/to;
+.field public final synthetic this$1:Ldefpackage/Um;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/to;[B[B)V
+.method public constructor <init>(Ldefpackage/Um;)V
     .locals 0
-    .param p1, "toVar"    # Ldefpackage/to;
-    .param p2, "bArr"    # [B
-    .param p3, "bArr2"    # [B
+    .param p1, "this$1"    # Ldefpackage/Um;
 
-    .line 8
+    .line 29900
+    iput-object p1, p0, Ldefpackage/Tm;->this$1:Ldefpackage/Um;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
-    iput-object p1, p0, Ldefpackage/tm;->a:Ldefpackage/to;
-
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final accept(Ljava/lang/Object;)V
     .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 14
-    iget-object v0, p0, Ldefpackage/tm;->a:Ldefpackage/to;
+    .line 29903
+    move-object v0, p1
 
-    iget-object v0, v0, Ldefpackage/to;->a:Landroid/support/wearable/view/SwipeDismissFrameLayout;
+    check-cast v0, Landroid/animation/Animator;
 
-    iget-object v0, v0, Landroid/support/wearable/view/SwipeDismissFrameLayout;->d:Ljava/util/ArrayList;
+    .line 29904
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Tm;->this$1:Ldefpackage/Um;
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    iget-object v1, v1, Ldefpackage/Um;->this$0:Ljkz;
 
-    move-result v0
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-    add-int/lit8 v0, v0, -0x1
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    .line 15
-    .local v0, "size":I
-    if-gez v0, :cond_0
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
 
-    .line 16
+    .line 29905
     return-void
+.end method
 
-    .line 18
-    :cond_0
-    iget-object v1, p0, Ldefpackage/tm;->a:Ldefpackage/to;
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    iget-object v1, v1, Ldefpackage/to;->a:Landroid/support/wearable/view/SwipeDismissFrameLayout;
-
-    iget-object v1, v1, Landroid/support/wearable/view/SwipeDismissFrameLayout;->d:Ljava/util/ArrayList;
-
-    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ldefpackage/gj;
-
-    .line 19
-    .local v1, "gjVar":Ldefpackage/gj;
-    const/4 v2, 0x0
-
-    throw v2
+    .line 29909
+    return-object p1
 .end method

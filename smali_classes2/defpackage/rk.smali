@@ -1,87 +1,98 @@
-.class public final Ldefpackage/rk;
-.super Landroid/content/ContextWrapper;
+.class public Ldefpackage/Rk;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Litp;->f(Lmad;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Litp;
+
+.field public final synthetic val$d:Litz;
+
+.field public final synthetic val$lceVar:Llce;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Litp;Llce;Litz;)V
     .locals 0
-    .param p1, "base"    # Landroid/content/Context;
+    .param p1, "this$0"    # Litp;
 
-    .line 12
-    invoke-direct {p0, p1}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
+    .line 168
+    iput-object p1, p0, Ldefpackage/Rk;->this$0:Litp;
 
-    .line 13
-    return-void
-.end method
+    iput-object p2, p0, Ldefpackage/Rk;->val$lceVar:Llce;
 
-.method public static a(Landroid/content/Context;)V
-    .locals 1
-    .param p0, "context"    # Landroid/content/Context;
+    iput-object p3, p0, Ldefpackage/Rk;->val$d:Litz;
 
-    .line 16
-    instance-of v0, p0, Ldefpackage/rk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-nez v0, :cond_1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    instance-of v0, v0, Ldefpackage/rm;
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 20
-    return-void
-
-    .line 17
-    :cond_1
-    :goto_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final getAssets()Landroid/content/res/AssetManager;
-    .locals 1
+.method public final run()V
+    .locals 6
 
-    .line 24
-    const/4 v0, 0x0
+    .line 171
+    iget-object v0, p0, Ldefpackage/Rk;->this$0:Litp;
 
-    throw v0
-.end method
+    .line 172
+    .local v0, "itpVar":Litp;
+    iget-object v1, p0, Ldefpackage/Rk;->val$lceVar:Llce;
 
-.method public final getResources()Landroid/content/res/Resources;
-    .locals 1
+    .line 173
+    .local v1, "lceVar2":Llce;
+    iget-object v2, p0, Ldefpackage/Rk;->val$d:Litz;
 
-    .line 29
-    const/4 v0, 0x0
+    .line 174
+    .local v2, "itzVar":Litz;
+    invoke-virtual {v1, v2}, Llce;->fB(Ljava/lang/Object;)V
 
-    throw v0
-.end method
+    .line 175
+    iget-object v3, v0, Litp;->a:Ljava/util/List;
 
-.method public final getTheme()Landroid/content/res/Resources$Theme;
-    .locals 1
+    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    .line 34
-    const/4 v0, 0x0
+    move-result-object v3
 
-    throw v0
-.end method
+    :goto_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
-.method public final setTheme(I)V
-    .locals 1
-    .param p1, "i"    # I
+    move-result v4
 
-    .line 39
-    const/4 v0, 0x0
+    if-eqz v4, :cond_0
 
-    throw v0
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Litv;
+
+    .line 176
+    .local v4, "itvVar":Litv;
+    iget-object v5, v2, Litz;->b:Landroid/graphics/RectF;
+
+    invoke-interface {v4, v5}, Litv;->t(Landroid/graphics/RectF;)V
+
+    .line 177
+    .end local v4    # "itvVar":Litv;
+    goto :goto_0
+
+    .line 178
+    :cond_0
+    return-void
 .end method

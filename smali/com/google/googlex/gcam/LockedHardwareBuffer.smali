@@ -48,7 +48,7 @@
     :goto_0
     const-string v3, "Failed to lock HardwareBuffer."
 
-    invoke-static {v2, v3}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v2, v3}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 16
     return-void

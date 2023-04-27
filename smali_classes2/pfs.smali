@@ -3,4 +3,4 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/pht;
+.implements Lpht;

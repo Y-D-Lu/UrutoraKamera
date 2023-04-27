@@ -12,7 +12,7 @@
 
     const-string v1, "yuv-jni"
 
-    invoke-static {v0, v1}, Ldefpackage/lil;->b(Ljava/lang/Class;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Llil;->b(Ljava/lang/Class;Ljava/lang/String;)V
 
     .line 17
     return-void
@@ -27,16 +27,16 @@
     return-void
 .end method
 
-.method public static a(Ldefpackage/mad;)Landroid/graphics/Bitmap;
+.method public static a(Lmad;)Landroid/graphics/Bitmap;
     .locals 25
-    .param p0, "madVar"    # Ldefpackage/mad;
+    .param p0, "madVar"    # Lmad;
 
     .line 20
-    sget-object v0, Ldefpackage/lxk;->ROTATION_0:Ldefpackage/lxk;
+    sget-object v0, Llxk;->ROTATION_0:Llxk;
 
     .line 21
-    .local v0, "lxkVar":Ldefpackage/lxk;
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->g()Ljava/util/List;
+    .local v0, "lxkVar":Llxk;
+    invoke-interface/range {p0 .. p0}, Lmad;->g()Ljava/util/List;
 
     move-result-object v1
 
@@ -48,55 +48,55 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/mac;
+    check-cast v2, Lmac;
 
     .line 23
-    .local v2, "macVar":Ldefpackage/mac;
+    .local v2, "macVar":Lmac;
     const/4 v3, 0x1
 
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/mac;
+    check-cast v3, Lmac;
 
     .line 24
-    .local v3, "macVar2":Ldefpackage/mac;
+    .local v3, "macVar2":Lmac;
     const/4 v4, 0x2
 
     invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/mac;
+    check-cast v4, Lmac;
 
     .line 25
-    .local v4, "macVar3":Ldefpackage/mac;
-    invoke-interface {v2}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    .local v4, "macVar3":Lmac;
+    invoke-interface {v2}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v18
 
     .line 26
     .local v18, "buffer":Ljava/nio/ByteBuffer;
-    invoke-interface {v3}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    invoke-interface {v3}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v19
 
     .line 27
     .local v19, "buffer2":Ljava/nio/ByteBuffer;
-    invoke-interface {v4}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    invoke-interface {v4}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v20
 
     .line 28
     .local v20, "buffer3":Ljava/nio/ByteBuffer;
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->c()I
+    invoke-interface/range {p0 .. p0}, Lmad;->c()I
 
     move-result v15
 
     .line 29
     .local v15, "c":I
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->b()I
+    invoke-interface/range {p0 .. p0}, Lmad;->b()I
 
     move-result v14
 
@@ -108,39 +108,39 @@
 
     .line 31
     .local v13, "iArr":[I
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->c()I
+    invoke-interface/range {p0 .. p0}, Lmad;->c()I
 
     move-result v5
 
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->b()I
+    invoke-interface/range {p0 .. p0}, Lmad;->b()I
 
     move-result v6
 
-    invoke-interface {v2}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v2}, Lmac;->getPixelStride()I
 
     move-result v8
 
-    invoke-interface {v2}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v2}, Lmac;->getRowStride()I
 
     move-result v9
 
-    invoke-interface {v3}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v3}, Lmac;->getPixelStride()I
 
     move-result v11
 
-    invoke-interface {v3}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v3}, Lmac;->getRowStride()I
 
     move-result v12
 
-    invoke-interface {v4}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v4}, Lmac;->getPixelStride()I
 
     move-result v16
 
-    invoke-interface {v4}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v4}, Lmac;->getRowStride()I
 
     move-result v17
 
-    iget v10, v0, Ldefpackage/lxk;->i:I
+    iget v10, v0, Llxk;->i:I
 
     move-object/from16 v7, v18
 
@@ -169,7 +169,7 @@
 
     .end local v15    # "c":I
     .local v2, "c":I
-    .local v24, "macVar":Ldefpackage/mac;
+    .local v24, "macVar":Lmac;
     move/from16 v15, v17
 
     move-object/from16 v16, v22
@@ -189,7 +189,7 @@
 
     .line 34
     :cond_0
-    iget-boolean v5, v0, Ldefpackage/lxk;->j:Z
+    iget-boolean v5, v0, Llxk;->j:Z
 
     if-eqz v5, :cond_1
 

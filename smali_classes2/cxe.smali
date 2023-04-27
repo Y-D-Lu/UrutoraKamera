@@ -1,0 +1,105 @@
+.class public final Lcxe;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final a:I
+
+.field public b:I
+
+.field public c:I
+
+.field public d:I
+
+.field public e:J
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
+    .param p1, "i"    # I
+
+    .line 12
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 13
+    iput p1, p0, Lcxe;->a:I
+
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
+    .param p1, "obj"    # Ljava/lang/Object;
+
+    .line 17
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    .line 18
+    return v0
+
+    .line 20
+    :cond_0
+    instance-of v1, p1, Lcxe;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    .line 21
+    return v2
+
+    .line 23
+    :cond_1
+    move-object v1, p1
+
+    check-cast v1, Lcxe;
+
+    .line 24
+    .local v1, "cxeVar":Lcxe;
+    iget v3, p0, Lcxe;->a:I
+
+    iget v4, v1, Lcxe;->a:I
+
+    if-ne v3, v4, :cond_2
+
+    iget v3, p0, Lcxe;->b:I
+
+    iget v4, v1, Lcxe;->b:I
+
+    if-ne v3, v4, :cond_2
+
+    iget v3, p0, Lcxe;->c:I
+
+    iget v4, v1, Lcxe;->c:I
+
+    if-ne v3, v4, :cond_2
+
+    iget v3, p0, Lcxe;->d:I
+
+    iget v4, v1, Lcxe;->d:I
+
+    if-ne v3, v4, :cond_2
+
+    iget-wide v3, p0, Lcxe;->e:J
+
+    iget-wide v5, v1, Lcxe;->e:J
+
+    cmp-long v3, v3, v5
+
+    if-nez v3, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    move v0, v2
+
+    :goto_0
+    return v0
+.end method

@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/bqe;->f(Landroid/content/Intent;)V
+    invoke-static {v0}, Lbqe;->f(Landroid/content/Intent;)V
 
     .line 18
     :cond_0

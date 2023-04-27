@@ -3,23 +3,23 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/aec;
+.implements Laec;
 
 
 # instance fields
-.field private final a:Ldefpackage/ady;
+.field private final a:Lady;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/ady;)V
+.method public constructor <init>(Lady;)V
     .locals 0
-    .param p1, "adyVar"    # Ldefpackage/ady;
+    .param p1, "adyVar"    # Lady;
 
     .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 13
-    iput-object p1, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Ldefpackage/ady;
+    iput-object p1, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Lady;
 
     .line 14
     return-void
@@ -27,20 +27,20 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/aee;Ldefpackage/adz;)V
+.method public final a(Laee;Ladz;)V
     .locals 1
-    .param p1, "aeeVar"    # Ldefpackage/aee;
-    .param p2, "adzVar"    # Ldefpackage/adz;
+    .param p1, "aeeVar"    # Laee;
+    .param p2, "adzVar"    # Ladz;
 
     .line 18
-    iget-object v0, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Ldefpackage/ady;
+    iget-object v0, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Lady;
 
-    invoke-interface {v0}, Ldefpackage/ady;->a()V
+    invoke-interface {v0}, Lady;->a()V
 
     .line 19
-    iget-object v0, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Ldefpackage/ady;
+    iget-object v0, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->a:Lady;
 
-    invoke-interface {v0}, Ldefpackage/ady;->a()V
+    invoke-interface {v0}, Lady;->a()V
 
     .line 20
     return-void

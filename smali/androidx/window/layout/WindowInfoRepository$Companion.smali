@@ -150,7 +150,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v7}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 78
     new-instance v6, Landroidx/window/layout/WindowInfoRepositoryImpl;
@@ -201,11 +201,11 @@
     return-object v3
 .end method
 
-.method private final getOrCreateTag(Landroid/app/Activity;ILdefpackage/qmj;)Ljava/lang/Object;
+.method private final getOrCreateTag(Landroid/app/Activity;ILqmj;)Ljava/lang/Object;
     .locals 3
     .param p1, "activity"    # Landroid/app/Activity;
     .param p2, "i"    # I
-    .param p3, "qmjVar"    # Ldefpackage/qmj;
+    .param p3, "qmjVar"    # Lqmj;
 
     .line 41
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -222,7 +222,7 @@
 
     .line 42
     .local v0, "tag":Ljava/lang/Object;
-    invoke-static {}, Ldefpackage/qno;->b()V
+    invoke-static {}, Lqno;->b()V
 
     .line 43
     if-nez v0, :cond_0
@@ -236,10 +236,10 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lqno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 45
-    invoke-interface {p3}, Ldefpackage/qmj;->mo3invoke()Ljava/lang/Object;
+    invoke-interface {p3}, Lqmj;->mo3invoke()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -284,7 +284,7 @@
 
     .line 54
     .local v0, "tag":Ljava/lang/Object;
-    invoke-static {}, Ldefpackage/qno;->b()V
+    invoke-static {}, Lqno;->b()V
 
     .line 55
     return-object v0

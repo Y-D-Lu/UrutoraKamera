@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/kjq;
+.implements Lkjq;
 
 
 # annotations

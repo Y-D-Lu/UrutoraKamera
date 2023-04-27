@@ -1,307 +1,194 @@
-.class public final Ldefpackage/ke;
+.class public Ldefpackage/Ke;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lgtp;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgtg;->m(Llda;Lolt;Lgtk;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public final a:Ljava/util/ArrayList;
+.field public final a:Lgtg;
 
-.field public b:Ldefpackage/gp;
-
-.field public c:Z
-
-.field private d:J
-
-.field private e:Landroid/view/animation/Interpolator;
-
-.field private final f:Ldefpackage/gq;
+.field public final synthetic this$0:Lgtg;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Lgtg;)V
+    .locals 0
+    .param p1, "this$0"    # Lgtg;
 
-    .line 10
+    .line 693
+    iput-object p1, p0, Ldefpackage/Ke;->this$0:Lgtg;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    const-wide/16 v0, -0x1
-
-    iput-wide v0, p0, Ldefpackage/ke;->d:J
-
-    .line 15
-    new-instance v0, Ldefpackage/kd;
-
-    invoke-direct {v0, p0}, Ldefpackage/kd;-><init>(Ldefpackage/ke;)V
-
-    iput-object v0, p0, Ldefpackage/ke;->f:Ldefpackage/gq;
-
-    .line 16
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/ke;->a:Ljava/util/ArrayList;
+    .line 694
+    iput-object p1, p0, Ldefpackage/Ke;->a:Lgtg;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 4
+.method public final a(Lgtv;Z)V
+    .locals 6
+    .param p1, "gtvVar"    # Lgtv;
+    .param p2, "z"    # Z
 
-    .line 19
-    iget-boolean v0, p0, Ldefpackage/ke;->c:Z
+    .line 698
+    const/4 v0, -0x1
 
-    if-nez v0, :cond_0
+    packed-switch v0, :pswitch_data_0
 
-    .line 20
+    .line 706
+    iget-object v0, p0, Ldefpackage/Ke;->a:Lgtg;
+
+    iget-object v0, v0, Lgtg;->bd:Lojc;
+
+    check-cast v0, Lojj;
+
+    iget-object v0, v0, Lojj;->a:Ljava/lang/Object;
+
+    .line 707
+    .local v0, "obj":Ljava/lang/Object;
+    if-eqz p2, :cond_0
+
+    .line 708
+    move-object v1, v0
+
+    check-cast v1, Lfvn;
+
+    invoke-virtual {v1}, Lfvn;->a()V
+
+    .line 709
     return-void
 
-    .line 22
+    .line 703
+    .end local v0    # "obj":Ljava/lang/Object;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Ke;->a:Lgtg;
+
+    iget-object v0, v0, Lgtg;->bc:Ldoq;
+
+    invoke-interface {v0, p1}, Ldoq;->a(Lgtv;)V
+
+    .line 704
+    return-void
+
+    .line 700
+    :pswitch_1
+    iget-object v0, p0, Ldefpackage/Ke;->a:Lgtg;
+
+    iget-object v0, v0, Lgtg;->bb:Lojc;
+
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lfli;
+
+    invoke-interface {v0}, Lfli;->a()V
+
+    .line 701
+    return-void
+
+    .line 711
+    .restart local v0    # "obj":Ljava/lang/Object;
     :cond_0
-    iget-object v0, p0, Ldefpackage/ke;->a:Ljava/util/ArrayList;
+    move-object v1, v0
 
-    .line 23
-    .local v0, "arrayList":Ljava/util/ArrayList;
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    check-cast v1, Lfvn;
 
-    move-result v1
+    .line 712
+    .local v1, "fvnVar":Lfvn;
+    invoke-static {}, Llar;->a()V
 
-    .line 24
-    .local v1, "size":I
-    const/4 v2, 0x0
+    .line 713
+    iget-object v2, v1, Lfvn;->d:Landroid/view/View;
 
-    .local v2, "i":I
-    :goto_0
-    if-ge v2, v1, :cond_1
+    if-nez v2, :cond_2
 
-    .line 25
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 714
+    new-instance v2, Landroid/widget/FrameLayout;
 
-    move-result-object v3
+    iget-object v3, v1, Lfvn;->b:Landroid/content/Context;
 
-    check-cast v3, Ldefpackage/go;
+    invoke-direct {v2, v3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v3}, Ldefpackage/go;->a()V
+    .line 715
+    .local v2, "frameLayout":Landroid/widget/FrameLayout;
+    iget-object v3, v1, Lfvn;->b:Landroid/content/Context;
 
-    .line 24
-    add-int/lit8 v2, v2, 0x1
+    iget-object v4, v1, Lfvn;->c:Lddf;
+
+    sget-object v5, Lddl;->ay:Lddg;
+
+    invoke-interface {v4, v5}, Lddf;->k(Lddg;)Z
+
+    move-result v4
+
+    const/4 v5, 0x1
+
+    if-eq v5, v4, :cond_1
+
+    const v4, 0x7f0d0073
 
     goto :goto_0
 
-    .line 27
-    .end local v2    # "i":I
     :cond_1
-    const/4 v2, 0x0
+    const v4, 0x7f0d0072
 
-    iput-boolean v2, p0, Ldefpackage/ke;->c:Z
-
-    .line 28
-    return-void
-.end method
-
-.method public final b()V
-    .locals 9
-
-    .line 32
-    iget-boolean v0, p0, Ldefpackage/ke;->c:Z
-
-    if-eqz v0, :cond_0
-
-    .line 33
-    return-void
-
-    .line 35
-    :cond_0
-    iget-object v0, p0, Ldefpackage/ke;->a:Ljava/util/ArrayList;
-
-    .line 36
-    .local v0, "arrayList":Ljava/util/ArrayList;
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    .line 37
-    .local v1, "size":I
-    const/4 v2, 0x0
-
-    .local v2, "i":I
     :goto_0
-    if-ge v2, v1, :cond_5
+    invoke-static {v3, v4, v2}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    .line 38
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 716
+    const v3, 0x7f0a0273
+
+    invoke-virtual {v2, v3}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/go;
+    check-cast v3, Landroid/widget/Button;
 
-    .line 39
-    .local v3, "goVar":Ldefpackage/go;
-    iget-wide v4, p0, Ldefpackage/ke;->d:J
+    new-instance v4, Lfvm;
 
-    .line 40
-    .local v4, "j":J
-    const-wide/16 v6, 0x0
+    invoke-direct {v4, v1, v5}, Lfvm;-><init>(Lfvn;I)V
 
-    cmp-long v6, v4, v6
+    invoke-virtual {v3, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    if-ltz v6, :cond_1
+    .line 717
+    iput-object v2, v1, Lfvn;->d:Landroid/view/View;
 
-    .line 41
-    invoke-virtual {v3, v4, v5}, Ldefpackage/go;->c(J)V
-
-    .line 43
-    :cond_1
-    iget-object v6, p0, Ldefpackage/ke;->e:Landroid/view/animation/Interpolator;
-
-    .line 44
-    .local v6, "interpolator":Landroid/view/animation/Interpolator;
-    if-eqz v6, :cond_2
-
-    iget-object v7, v3, Ldefpackage/go;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v7}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Landroid/view/View;
-
-    move-object v8, v7
-
-    .local v8, "view":Landroid/view/View;
-    if-eqz v7, :cond_2
-
-    .line 45
-    invoke-virtual {v8}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v6}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
-
-    .line 47
-    .end local v8    # "view":Landroid/view/View;
+    .line 719
+    .end local v2    # "frameLayout":Landroid/widget/FrameLayout;
     :cond_2
-    iget-object v7, p0, Ldefpackage/ke;->b:Ldefpackage/gp;
+    iget-object v2, v1, Lfvn;->a:Lius;
 
-    if-eqz v7, :cond_3
+    const/4 v3, 0x7
 
-    .line 48
-    iget-object v7, p0, Ldefpackage/ke;->f:Ldefpackage/gq;
+    const v4, 0x7f11036e
 
-    invoke-virtual {v3, v7}, Ldefpackage/go;->d(Ldefpackage/gp;)V
+    iget-object v5, v1, Lfvn;->d:Landroid/view/View;
 
-    .line 50
-    :cond_3
-    iget-object v7, v3, Ldefpackage/go;->a:Ljava/lang/ref/WeakReference;
+    invoke-virtual {v2, v3, v4, v5}, Lius;->f(IILandroid/view/View;)V
 
-    invoke-virtual {v7}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Landroid/view/View;
-
-    .line 51
-    .local v7, "view2":Landroid/view/View;
-    if-eqz v7, :cond_4
-
-    .line 52
-    invoke-virtual {v7}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Landroid/view/ViewPropertyAnimator;->start()V
-
-    .line 37
-    .end local v3    # "goVar":Ldefpackage/go;
-    .end local v4    # "j":J
-    .end local v6    # "interpolator":Landroid/view/animation/Interpolator;
-    .end local v7    # "view2":Landroid/view/View;
-    :cond_4
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 55
-    .end local v2    # "i":I
-    :cond_5
-    const/4 v2, 0x1
-
-    iput-boolean v2, p0, Ldefpackage/ke;->c:Z
-
-    .line 56
+    .line 720
     return-void
-.end method
 
-.method public final c(Ldefpackage/go;)V
-    .locals 1
-    .param p1, "goVar"    # Ldefpackage/go;
-
-    .line 59
-    iget-boolean v0, p0, Ldefpackage/ke;->c:Z
-
-    if-nez v0, :cond_0
-
-    .line 60
-    iget-object v0, p0, Ldefpackage/ke;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 62
-    :cond_0
-    return-void
-.end method
-
-.method public final d()V
-    .locals 2
-
-    .line 65
-    iget-boolean v0, p0, Ldefpackage/ke;->c:Z
-
-    if-nez v0, :cond_0
-
-    .line 66
-    const-wide/16 v0, 0xfa
-
-    iput-wide v0, p0, Ldefpackage/ke;->d:J
-
-    .line 68
-    :cond_0
-    return-void
-.end method
-
-.method public final e(Landroid/view/animation/Interpolator;)V
-    .locals 1
-    .param p1, "interpolator"    # Landroid/view/animation/Interpolator;
-
-    .line 71
-    iget-boolean v0, p0, Ldefpackage/ke;->c:Z
-
-    if-nez v0, :cond_0
-
-    .line 72
-    iput-object p1, p0, Ldefpackage/ke;->e:Landroid/view/animation/Interpolator;
-
-    .line 74
-    :cond_0
-    return-void
-.end method
-
-.method public final f(Ldefpackage/gp;)V
-    .locals 1
-    .param p1, "gpVar"    # Ldefpackage/gp;
-
-    .line 77
-    iget-boolean v0, p0, Ldefpackage/ke;->c:Z
-
-    if-nez v0, :cond_0
-
-    .line 78
-    iput-object p1, p0, Ldefpackage/ke;->b:Ldefpackage/gp;
-
-    .line 80
-    :cond_0
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

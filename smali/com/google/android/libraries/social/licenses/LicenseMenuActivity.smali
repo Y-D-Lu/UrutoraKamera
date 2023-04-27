@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/libraries/social/licenses/LicenseMenuActivity;
-.super Ldefpackage/ih;
+.super Lih;
 .source ""
 
 
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 14
-    invoke-direct {p0}, Ldefpackage/ih;-><init>()V
+    invoke-direct {p0}, Lih;-><init>()V
 
     return-void
 .end method
@@ -20,68 +20,68 @@
     .param p1, "bundle"    # Landroid/os/Bundle;
 
     .line 18
-    invoke-super {p0, p1}, Ldefpackage/by;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lby;->onCreate(Landroid/os/Bundle;)V
 
     .line 19
     const v0, 0x7f0d005b
 
-    invoke-virtual {p0, v0}, Ldefpackage/ih;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lih;->setContentView(I)V
 
     .line 20
-    invoke-virtual {p0}, Ldefpackage/ih;->f()Ldefpackage/hu;
+    invoke-virtual {p0}, Lih;->f()Lhu;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 21
-    invoke-virtual {p0}, Ldefpackage/ih;->f()Ldefpackage/hu;
+    invoke-virtual {p0}, Lih;->f()Lhu;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Ldefpackage/hu;->g(Z)V
+    invoke-virtual {v0, v1}, Lhu;->g(Z)V
 
     .line 23
     :cond_0
-    invoke-virtual {p0}, Ldefpackage/by;->fm()Ldefpackage/cu;
+    invoke-virtual {p0}, Lby;->fm()Lcu;
 
     move-result-object v0
 
     .line 24
-    .local v0, "fm":Ldefpackage/cu;
+    .local v0, "fm":Lcu;
     const v1, 0x7f0a010e
 
-    invoke-virtual {v0, v1}, Ldefpackage/cu;->c(I)Ldefpackage/bu;
+    invoke-virtual {v0, v1}, Lcu;->c(I)Lbu;
 
     move-result-object v2
 
-    instance-of v2, v2, Ldefpackage/nig;
+    instance-of v2, v2, Lnig;
 
     if-nez v2, :cond_1
 
     .line 25
-    new-instance v2, Ldefpackage/nig;
+    new-instance v2, Lnig;
 
-    invoke-direct {v2}, Ldefpackage/nig;-><init>()V
+    invoke-direct {v2}, Lnig;-><init>()V
 
     .line 26
-    .local v2, "nigVar":Ldefpackage/nig;
-    invoke-virtual {v0}, Ldefpackage/cu;->h()Ldefpackage/dd;
+    .local v2, "nigVar":Lnig;
+    invoke-virtual {v0}, Lcu;->h()Ldd;
 
     move-result-object v3
 
     .line 27
-    .local v3, "h":Ldefpackage/dd;
-    invoke-virtual {v3, v1, v2}, Ldefpackage/dd;->l(ILdefpackage/bu;)V
+    .local v3, "h":Ldd;
+    invoke-virtual {v3, v1, v2}, Ldd;->l(ILbu;)V
 
     .line 28
-    invoke-virtual {v3}, Ldefpackage/dd;->b()V
+    invoke-virtual {v3}, Ldd;->b()V
 
     .line 30
-    .end local v2    # "nigVar":Ldefpackage/nig;
-    .end local v3    # "h":Ldefpackage/dd;
+    .end local v2    # "nigVar":Lnig;
+    .end local v3    # "h":Ldd;
     :cond_1
     return-void
 .end method
@@ -109,7 +109,7 @@
 
     .line 38
     :cond_0
-    invoke-super {p0, p1}, Ldefpackage/ub;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lub;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 

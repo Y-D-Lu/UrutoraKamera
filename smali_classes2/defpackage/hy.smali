@@ -1,87 +1,69 @@
-.class public final Ldefpackage/hy;
+.class public Ldefpackage/hy;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lpke;->close()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/support/v7/app/AlertController$RecycleListView;
-
-.field public final b:Ldefpackage/ic;
-
-.field public final c:Ldefpackage/hz;
+.field public final synthetic this$0:Lpke;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/hz;Landroid/support/v7/app/AlertController$RecycleListView;Ldefpackage/ic;)V
+.method public constructor <init>(Lpke;)V
     .locals 0
-    .param p1, "hzVar"    # Ldefpackage/hz;
-    .param p2, "alertController$RecycleListView"    # Landroid/support/v7/app/AlertController$RecycleListView;
-    .param p3, "icVar"    # Ldefpackage/ic;
+    .param p1, "this$0"    # Lpke;
 
-    .line 15
+    .line 55
+    iput-object p1, p0, Ldefpackage/hy;->this$0:Lpke;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
-    iput-object p1, p0, Ldefpackage/hy;->c:Ldefpackage/hz;
-
-    .line 17
-    iput-object p2, p0, Ldefpackage/hy;->a:Landroid/support/v7/app/AlertController$RecycleListView;
-
-    .line 18
-    iput-object p3, p0, Ldefpackage/hy;->b:Ldefpackage/ic;
-
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 4
-    .param p1, "adapterView"    # Landroid/widget/AdapterView;
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "i"    # I
-    .param p4, "j"    # J
+.method public final run()V
+    .locals 5
 
-    .line 23
-    iget-object v0, p0, Ldefpackage/hy;->c:Ldefpackage/hz;
+    .line 58
+    iget-object v0, p0, Ldefpackage/hy;->this$0:Lpke;
 
-    iget-object v0, v0, Ldefpackage/hz;->s:[Z
+    .line 59
+    .local v0, "pkeVar":Lpke;
+    iget-object v1, v0, Lpke;->a:Lpjw;
 
-    .line 24
-    .local v0, "zArr":[Z
-    if-eqz v0, :cond_0
+    iget-wide v2, v0, Lpke;->i:J
 
-    .line 25
-    iget-object v1, p0, Ldefpackage/hy;->a:Landroid/support/v7/app/AlertController$RecycleListView;
+    const/4 v4, 0x0
 
-    invoke-virtual {v1, p3}, Landroid/widget/ListView;->isItemChecked(I)Z
+    invoke-interface {v1, v2, v3, v4}, Lpjw;->notifySurfaceChanged(JLandroid/view/Surface;)V
 
-    move-result v1
+    .line 60
+    iget-object v1, v0, Lpke;->a:Lpjw;
 
-    aput-boolean v1, v0, p3
+    iget-wide v2, v0, Lpke;->i:J
 
-    .line 27
-    :cond_0
-    iget-object v1, p0, Ldefpackage/hy;->c:Ldefpackage/hz;
+    invoke-interface {v1, v2, v3}, Lpjw;->delete(J)V
 
-    iget-object v1, v1, Ldefpackage/hz;->w:Landroid/content/DialogInterface$OnMultiChoiceClickListener;
+    .line 61
+    const-wide/16 v1, 0x0
 
-    iget-object v2, p0, Ldefpackage/hy;->b:Ldefpackage/ic;
+    iput-wide v1, v0, Lpke;->i:J
 
-    iget-object v2, v2, Ldefpackage/ic;->b:Ldefpackage/ja;
-
-    iget-object v3, p0, Ldefpackage/hy;->a:Landroid/support/v7/app/AlertController$RecycleListView;
-
-    invoke-virtual {v3, p3}, Landroid/widget/ListView;->isItemChecked(I)Z
-
-    move-result v3
-
-    invoke-interface {v1, v2, p3, v3}, Landroid/content/DialogInterface$OnMultiChoiceClickListener;->onClick(Landroid/content/DialogInterface;IZ)V
-
-    .line 28
+    .line 62
     return-void
 .end method

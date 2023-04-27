@@ -51,7 +51,7 @@
 
 .field private static final THUMBNAIL_STRETCH_DURATION_MS:J = 0xc8L
 
-.field private static final logger:Ldefpackage/ouj;
+.field private static final logger:Louj;
 
 
 # instance fields
@@ -63,7 +63,7 @@
 
 .field private burstFlashAnimator:Landroid/animation/ValueAnimator;
 
-.field private callback:Ldefpackage/ojc;
+.field private callback:Lojc;
 
 .field private currentHitStateCircleOpacity:F
 
@@ -87,7 +87,7 @@
 
 .field private final onClickListener:Landroid/view/View$OnClickListener;
 
-.field private optionalOnClickListener:Ldefpackage/ojc;
+.field private optionalOnClickListener:Lojc;
 
 .field private pendingRequest:Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
 
@@ -133,11 +133,11 @@
     .line 59
     const-string v0, "com/google/android/apps/camera/bottombar/RoundedThumbnailView"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->logger:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->logger:Louj;
 
     return-void
 .end method
@@ -186,22 +186,22 @@
     return p1
 .end method
 
-.method public static synthetic access$100(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Ldefpackage/ojc;
+.method public static synthetic access$100(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Lojc;
     .locals 1
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
 
     .line 40
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->callback:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->callback:Lojc;
 
     return-object v0
 .end method
 
-.method public static synthetic access$200(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Ldefpackage/ojc;
+.method public static synthetic access$200(Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;)Lojc;
     .locals 1
     .param p0, "x0"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
 
     .line 40
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->optionalOnClickListener:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->optionalOnClickListener:Lojc;
 
     return-object v0
 .end method
@@ -368,12 +368,12 @@
     .locals 12
 
     .line 306
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->callback:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->callback:Lojc;
 
     .line 307
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->optionalOnClickListener:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->optionalOnClickListener:Lojc;
 
     .line 308
     const/4 v0, 0x1
@@ -642,9 +642,9 @@
     invoke-virtual {v8, v4}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 345
-    sget-object v4, Ldefpackage/jrx;->PLACEHOLDER:Ldefpackage/jrx;
+    sget-object v4, Ljrx;->PLACEHOLDER:Ljrx;
 
-    invoke-virtual {p0, v4}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->getDefaultThumbnail(Ldefpackage/jrx;)Landroid/graphics/Bitmap;
+    invoke-virtual {p0, v4}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->getDefaultThumbnail(Ljrx;)Landroid/graphics/Bitmap;
 
     move-result-object v4
 
@@ -833,7 +833,7 @@
 
     .line 398
     .local v0, "revealRequest":Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
-    invoke-static {v0}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 399
     invoke-virtual {v0}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;->isAnimationDisabled()Z
@@ -904,7 +904,7 @@
     iput v2, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->currentRevealCircleOpacity:F
 
     .line 416
-    invoke-static {v4}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v4}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 417
     invoke-virtual {v4}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;->finishThumbnailAnimation()V
@@ -920,7 +920,7 @@
 
     .line 421
     .local v2, "revealRequest4":Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
-    invoke-static {v2}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 422
     invoke-virtual {v2}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;->finishRippleAnimation()V
@@ -1122,7 +1122,7 @@
 
     .line 486
     .local v3, "revealRequest5":Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
-    invoke-static {v3}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 487
     invoke-virtual {v3}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;->getAccessibilityString()Ljava/lang/String;
@@ -1145,7 +1145,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 492
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 493
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->pendingRequest:Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
@@ -1263,7 +1263,7 @@
     .locals 0
 
     .line 520
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 521
     invoke-direct {p0}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->runBurstFlashAnimation()V
@@ -1272,9 +1272,9 @@
     return-void
 .end method
 
-.method public getDefaultThumbnail(Ldefpackage/jrx;)Landroid/graphics/Bitmap;
+.method public getDefaultThumbnail(Ljrx;)Landroid/graphics/Bitmap;
     .locals 8
-    .param p1, "jrxVar"    # Ldefpackage/jrx;
+    .param p1, "jrxVar"    # Ljrx;
 
     .line 525
     iget v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->thumbnailShrinkDiameterEnd:F
@@ -1300,10 +1300,10 @@
     invoke-virtual {v1, v2}, Landroid/graphics/Bitmap;->eraseColor(I)V
 
     .line 528
-    sget-object v2, Ldefpackage/jrx;->PLACEHOLDER:Ldefpackage/jrx;
+    sget-object v2, Ljrx;->PLACEHOLDER:Ljrx;
 
     .line 529
-    .local v2, "jrxVar2":Ldefpackage/jrx;
+    .local v2, "jrxVar2":Ljrx;
     const/4 v3, 0x0
 
     .line 530
@@ -1397,7 +1397,7 @@
 
     move-result-object v4
 
-    invoke-static {p0}, Ldefpackage/mip;->dP(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dP(Landroid/view/View;)I
 
     move-result v5
 
@@ -1409,7 +1409,7 @@
 
     if-eqz v4, :cond_1
 
-    invoke-static {p0}, Ldefpackage/mip;->dU(Landroid/view/View;)I
+    invoke-static {p0}, Lmip;->dU(Landroid/view/View;)I
 
     move-result v4
 
@@ -1868,7 +1868,7 @@
 
     .line 645
     .local v8, "revealRequest2":Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;
-    invoke-static {v8}, Ldefpackage/obr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v8}, Lobr;->ao(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 646
     invoke-virtual {v8}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$RevealRequest;->getThumbnailPaint()Landroid/graphics/Paint;
@@ -2057,11 +2057,11 @@
     .param p1, "callback"    # Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView$Callback;
 
     .line 679
-    invoke-static {p1}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {p1}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->callback:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->callback:Lojc;
 
     .line 680
     return-void
@@ -2083,11 +2083,11 @@
     .param p1, "onClickListener"    # Landroid/view/View$OnClickListener;
 
     .line 688
-    invoke-static {p1}, Ldefpackage/ojc;->h(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {p1}, Lojc;->h(Ljava/lang/Object;)Lojc;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->optionalOnClickListener:Ldefpackage/ojc;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->optionalOnClickListener:Lojc;
 
     .line 689
     return-void
@@ -2123,7 +2123,7 @@
     .param p1, "str"    # Ljava/lang/String;
 
     .line 700
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 701
     invoke-virtual {p0}, Landroid/widget/ImageButton;->getMeasuredWidth()I
@@ -2146,7 +2146,7 @@
     .locals 0
 
     .line 705
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 706
     invoke-direct {p0}, Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;->stopBurstFlashAnimation()V

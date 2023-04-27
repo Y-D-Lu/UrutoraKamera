@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;
-.super Ldefpackage/ock;
+.super Lock;
 .source ""
 
 
@@ -9,7 +9,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .line 12
-    invoke-direct {p0, p1}, Ldefpackage/ock;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lock;-><init>(Landroid/content/Context;)V
 
     .line 13
     return-void
@@ -21,7 +21,7 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 16
-    invoke-direct {p0, p1, p2}, Ldefpackage/ock;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lock;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 17
     return-void

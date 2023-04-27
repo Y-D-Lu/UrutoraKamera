@@ -1,154 +1,170 @@
-.class public final Ldefpackage/lv;
-.super Landroid/graphics/drawable/Drawable;
+.class public Ldefpackage/Lv;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Lmfh;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmfv;->m()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/support/v7/widget/ActionBarContainer;
+.field public final synthetic this$0:Lmfv;
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/v7/widget/ActionBarContainer;)V
+.method public constructor <init>(Lmfv;)V
     .locals 0
-    .param p1, "actionBarContainer"    # Landroid/support/v7/widget/ActionBarContainer;
+    .param p1, "this$0"    # Lmfv;
 
-    .line 14
-    invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
+    .line 257
+    iput-object p1, p0, Ldefpackage/Lv;->this$0:Lmfv;
 
-    .line 15
-    iput-object p1, p0, Ldefpackage/lv;->a:Landroid/support/v7/widget/ActionBarContainer;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final draw(Landroid/graphics/Canvas;)V
-    .locals 4
-    .param p1, "canvas"    # Landroid/graphics/Canvas;
+.method public final a(Lmfx;)V
+    .locals 8
+    .param p1, "mfxVar"    # Lmfx;
 
-    .line 20
-    iget-object v0, p0, Ldefpackage/lv;->a:Landroid/support/v7/widget/ActionBarContainer;
+    .line 260
+    const-string v0, "LensServiceConnImpl"
 
-    .line 21
-    .local v0, "actionBarContainer":Landroid/support/v7/widget/ActionBarContainer;
-    iget-boolean v1, v0, Landroid/support/v7/widget/ActionBarContainer;->d:Z
+    iget-object v1, p0, Ldefpackage/Lv;->this$0:Lmfv;
 
-    if-eqz v1, :cond_1
+    .line 261
+    .local v1, "mfvVar":Lmfv;
+    iget v2, p1, Lmfx;->d:I
 
-    .line 22
-    iget-object v1, v0, Landroid/support/v7/widget/ActionBarContainer;->c:Landroid/graphics/drawable/Drawable;
+    invoke-static {v2}, Lmip;->E(I)I
 
-    .line 23
-    .local v1, "drawable":Landroid/graphics/drawable/Drawable;
-    if-nez v1, :cond_0
+    move-result v2
 
-    .line 24
-    return-void
+    .line 262
+    .local v2, "E":I
+    if-eqz v2, :cond_2
 
-    .line 26
+    const/4 v3, 0x2
+
+    if-eq v2, v3, :cond_0
+
+    goto :goto_1
+
+    .line 271
     :cond_0
-    invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+    new-instance v3, Landroid/content/Intent;
 
-    .line 27
+    const-string v4, "com.google.android.apps.gsa.publicsearch.IPublicSearchService"
+
+    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 272
+    .local v3, "intent":Landroid/content/Intent;
+    const-string v4, "com.google.android.googlequicksearchbox"
+
+    invoke-virtual {v3, v4}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 274
+    const/4 v4, 0x7
+
+    const/16 v5, 0xb
+
+    :try_start_0
+    iget-object v6, v1, Lmfv;->b:Landroid/content/Context;
+
+    const/16 v7, 0x41
+
+    invoke-virtual {v6, v3, v1, v7}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_1
+
+    .line 275
+    const/4 v6, 0x3
+
+    invoke-virtual {v1, v6}, Lmfv;->i(I)V
+
+    .line 276
     return-void
 
-    .line 29
-    .end local v1    # "drawable":Landroid/graphics/drawable/Drawable;
+    .line 278
     :cond_1
-    iget-object v1, v0, Landroid/support/v7/widget/ActionBarContainer;->a:Landroid/graphics/drawable/Drawable;
+    const-string v6, "Unable to bind Lens service."
 
-    .line 30
-    .local v1, "drawable2":Landroid/graphics/drawable/Drawable;
-    if-eqz v1, :cond_2
+    invoke-static {v0, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 31
-    invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+    .line 279
+    iput v5, v1, Lmfv;->h:I
 
-    .line 33
+    .line 280
+    invoke-virtual {v1, v4}, Lmfv;->i(I)V
+    :try_end_0
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 285
+    goto :goto_0
+
+    .line 281
+    :catch_0
+    move-exception v6
+
+    .line 282
+    .local v6, "e":Ljava/lang/SecurityException;
+    const-string v7, "Unable to bind Lens service due to security exception."
+
+    invoke-static {v0, v7, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .line 283
+    iput v5, v1, Lmfv;->h:I
+
+    .line 284
+    invoke-virtual {v1, v4}, Lmfv;->i(I)V
+
+    .line 286
+    .end local v6    # "e":Ljava/lang/SecurityException;
+    :goto_0
+    return-void
+
+    .line 263
+    .end local v3    # "intent":Landroid/content/Intent;
     :cond_2
-    iget-object v2, p0, Ldefpackage/lv;->a:Landroid/support/v7/widget/ActionBarContainer;
+    :goto_1
+    iget v0, p1, Lmfx;->d:I
 
-    .line 34
-    .local v2, "actionBarContainer2":Landroid/support/v7/widget/ActionBarContainer;
-    iget-object v3, v2, Landroid/support/v7/widget/ActionBarContainer;->b:Landroid/graphics/drawable/Drawable;
+    invoke-static {v0}, Lmip;->E(I)I
 
-    .line 35
-    return-void
-.end method
+    move-result v0
 
-.method public final getOpacity()I
-    .locals 1
+    .line 264
+    .local v0, "E2":I
+    if-nez v0, :cond_3
 
-    .line 42
-    const/4 v0, 0x0
+    .line 265
+    const/4 v0, 0x1
 
-    return v0
-.end method
+    .line 267
+    :cond_3
+    iput v0, v1, Lmfv;->h:I
 
-.method public final getOutline(Landroid/graphics/Outline;)V
-    .locals 2
-    .param p1, "outline"    # Landroid/graphics/Outline;
+    .line 268
+    const/4 v3, 0x6
 
-    .line 47
-    iget-object v0, p0, Ldefpackage/lv;->a:Landroid/support/v7/widget/ActionBarContainer;
+    invoke-virtual {v1, v3}, Lmfv;->i(I)V
 
-    .line 48
-    .local v0, "actionBarContainer":Landroid/support/v7/widget/ActionBarContainer;
-    iget-boolean v1, v0, Landroid/support/v7/widget/ActionBarContainer;->d:Z
-
-    if-eqz v1, :cond_1
-
-    .line 49
-    iget-object v1, v0, Landroid/support/v7/widget/ActionBarContainer;->c:Landroid/graphics/drawable/Drawable;
-
-    .line 50
-    .local v1, "drawable":Landroid/graphics/drawable/Drawable;
-    if-nez v1, :cond_0
-
-    .line 51
-    return-void
-
-    .line 53
-    :cond_0
-    invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->getOutline(Landroid/graphics/Outline;)V
-
-    .line 54
-    return-void
-
-    .line 56
-    .end local v1    # "drawable":Landroid/graphics/drawable/Drawable;
-    :cond_1
-    iget-object v1, v0, Landroid/support/v7/widget/ActionBarContainer;->a:Landroid/graphics/drawable/Drawable;
-
-    .line 57
-    .local v1, "drawable2":Landroid/graphics/drawable/Drawable;
-    if-nez v1, :cond_2
-
-    .line 58
-    return-void
-
-    .line 60
-    :cond_2
-    invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->getOutline(Landroid/graphics/Outline;)V
-
-    .line 61
-    return-void
-.end method
-
-.method public final setAlpha(I)V
-    .locals 0
-    .param p1, "i"    # I
-
-    .line 65
-    return-void
-.end method
-
-.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
-    .locals 0
-    .param p1, "colorFilter"    # Landroid/graphics/ColorFilter;
-
-    .line 69
+    .line 269
     return-void
 .end method

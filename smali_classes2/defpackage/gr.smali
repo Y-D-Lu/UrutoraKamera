@@ -1,76 +1,70 @@
-.class public final Ldefpackage/gr;
+.class public Ldefpackage/Gr;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Hr;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:Landroid/view/WindowInsets$Builder;
+.field public final synthetic this$1:Ldefpackage/Hr;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ldefpackage/Hr;)V
     .locals 0
+    .param p1, "this$1"    # Ldefpackage/Hr;
 
-    .line 10
+    .line 27636
+    iput-object p1, p0, Ldefpackage/Gr;->this$1:Ldefpackage/Hr;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/gy;)V
-    .locals 2
-    .param p1, "gyVar"    # Ldefpackage/gy;
 
-    .line 14
-    invoke-direct {p0}, Ldefpackage/gr;-><init>()V
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 15
-    invoke-virtual {p1}, Ldefpackage/gy;->n()Landroid/view/WindowInsets;
+    .line 27639
+    move-object v0, p1
 
-    move-result-object v0
+    check-cast v0, Landroid/animation/Animator;
 
-    .line 16
-    .local v0, "n":Landroid/view/WindowInsets;
-    new-instance v1, Landroid/view/WindowInsets$Builder;
+    .line 27640
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Gr;->this$1:Ldefpackage/Hr;
 
-    if-eqz v0, :cond_0
+    iget-object v1, v1, Ldefpackage/Hr;->this$0:Ljkz;
 
-    invoke-direct {v1, v0}, Landroid/view/WindowInsets$Builder;-><init>(Landroid/view/WindowInsets;)V
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-    goto :goto_0
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    :cond_0
-    invoke-direct {v1}, Landroid/view/WindowInsets$Builder;-><init>()V
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
 
-    :goto_0
-    iput-object v1, p0, Ldefpackage/gr;->a:Landroid/view/WindowInsets$Builder;
-
-    .line 17
+    .line 27641
     return-void
 .end method
 
-.method public constructor <init>([B)V
-    .locals 2
-    .param p1, "bArr"    # [B
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 21
-    invoke-direct {p0}, Ldefpackage/gr;-><init>()V
-
-    .line 22
-    new-instance v0, Ldefpackage/gy;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Ldefpackage/gy;-><init>(Ldefpackage/gy;)V
-
-    .line 23
-    new-instance v0, Landroid/view/WindowInsets$Builder;
-
-    invoke-direct {v0}, Landroid/view/WindowInsets$Builder;-><init>()V
-
-    iput-object v0, p0, Ldefpackage/gr;->a:Landroid/view/WindowInsets$Builder;
-
-    .line 24
-    return-void
+    .line 27645
+    return-object p1
 .end method

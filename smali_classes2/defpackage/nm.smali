@@ -1,60 +1,70 @@
-.class final Ldefpackage/nm;
+.class public Ldefpackage/Nm;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/widget/PopupWindow$OnDismissListener;
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Om;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-
-.field public final b:Ldefpackage/nn;
+.field public final synthetic this$1:Ldefpackage/Om;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/nn;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+.method public constructor <init>(Ldefpackage/Om;)V
     .locals 0
-    .param p1, "nnVar"    # Ldefpackage/nn;
-    .param p2, "onGlobalLayoutListener"    # Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+    .param p1, "this$1"    # Ldefpackage/Om;
 
-    .line 12
+    .line 29078
+    iput-object p1, p0, Ldefpackage/Nm;->this$1:Ldefpackage/Om;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    iput-object p1, p0, Ldefpackage/nm;->b:Ldefpackage/nn;
-
-    .line 14
-    iput-object p2, p0, Ldefpackage/nm;->a:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final onDismiss()V
-    .locals 2
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 19
-    iget-object v0, p0, Ldefpackage/nm;->b:Ldefpackage/nn;
+    .line 29081
+    move-object v0, p1
 
-    iget-object v0, v0, Ldefpackage/nn;->d:Ldefpackage/nq;
+    check-cast v0, Landroid/animation/Animator;
 
-    invoke-virtual {v0}, Landroid/widget/Spinner;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    .line 29082
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Nm;->this$1:Ldefpackage/Om;
 
-    move-result-object v0
+    iget-object v1, v1, Ldefpackage/Om;->this$0:Ljkz;
 
-    .line 20
-    .local v0, "viewTreeObserver":Landroid/view/ViewTreeObserver;
-    if-eqz v0, :cond_0
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-    .line 21
-    iget-object v1, p0, Ldefpackage/nm;->a:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
 
-    .line 23
-    :cond_0
+    .line 29083
     return-void
+.end method
+
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
+
+    .line 29087
+    return-object p1
 .end method

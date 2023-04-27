@@ -56,11 +56,11 @@
     .locals 2
 
     .line 248
-    new-instance v0, Ldefpackage/kza;
+    new-instance v0, Lkza;
 
     const/16 v1, 0x11
 
-    invoke-direct {v0, v1}, Ldefpackage/kza;-><init>(I)V
+    invoke-direct {v0, v1}, Lkza;-><init>(I)V
 
     sput-object v0, Lcom/google/android/libraries/barhopper/Barcode$DriverLicense;->CREATOR:Landroid/os/Parcelable$Creator;
 

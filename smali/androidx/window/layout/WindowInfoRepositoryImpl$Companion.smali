@@ -32,10 +32,10 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Ldefpackage/qnm;)V
+.method public constructor <init>(Landroidx/window/layout/WindowInfoRepositoryImpl;Lqnm;)V
     .locals 0
     .param p1, "this$0"    # Landroidx/window/layout/WindowInfoRepositoryImpl;
-    .param p2, "qnmVar"    # Ldefpackage/qnm;
+    .param p2, "qnmVar"    # Lqnm;
 
     .line 25
     invoke-direct {p0, p1}, Landroidx/window/layout/WindowInfoRepositoryImpl$Companion;-><init>(Landroidx/window/layout/WindowInfoRepositoryImpl;)V

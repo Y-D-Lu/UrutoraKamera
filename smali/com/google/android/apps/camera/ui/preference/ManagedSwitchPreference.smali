@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceChangeListener;
-.implements Ldefpackage/jhu;
+.implements Ljhu;
 
 
 # static fields
@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field public a:Ldefpackage/hub;
+.field public a:Lhub;
 
-.field public b:Ldefpackage/huf;
+.field public b:Lhuf;
 
 .field public c:Landroid/preference/Preference$OnPreferenceChangeListener;
 
@@ -60,7 +60,7 @@
     invoke-direct {p0, p1}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;)V
 
     .line 55
-    sget-object v0, Ldefpackage/jhy;->a:Ldefpackage/jhy;
+    sget-object v0, Ljhy;->a:Ljhy;
 
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->c:Landroid/preference/Preference$OnPreferenceChangeListener;
 
@@ -80,7 +80,7 @@
     invoke-direct {p0, p1, p2}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 61
-    sget-object v0, Ldefpackage/jhy;->a:Ldefpackage/jhy;
+    sget-object v0, Ljhy;->a:Ljhy;
 
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->c:Landroid/preference/Preference$OnPreferenceChangeListener;
 
@@ -101,7 +101,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 67
-    sget-object v0, Ldefpackage/jhy;->a:Ldefpackage/jhy;
+    sget-object v0, Ljhy;->a:Ljhy;
 
     iput-object v0, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->c:Landroid/preference/Preference$OnPreferenceChangeListener;
 
@@ -143,17 +143,17 @@
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/enc;
+    check-cast v0, Lenc;
 
-    const-class v1, Ldefpackage/jia;
+    const-class v1, Ljia;
 
-    invoke-interface {v0, v1}, Ldefpackage/enc;->c(Ljava/lang/Class;)Lene;
+    invoke-interface {v0, v1}, Lenc;->c(Ljava/lang/Class;)Lene;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/jia;
+    check-cast v0, Ljia;
 
-    invoke-interface {v0, p0}, Ldefpackage/jia;->v(Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;)V
+    invoke-interface {v0, p0}, Ljia;->v(Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;)V
 
     .line 77
     const/4 v0, 0x0
@@ -165,18 +165,18 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldefpackage/hts;->a(Ljava/lang/String;)Ldefpackage/hts;
+    invoke-static {v0}, Lhts;->a(Ljava/lang/String;)Lhts;
 
     move-result-object v0
 
     .line 79
-    .local v0, "a":Ldefpackage/hts;
+    .local v0, "a":Lhts;
     if-eqz v0, :cond_0
 
     .line 80
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->b:Ldefpackage/huf;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->b:Lhuf;
 
-    invoke-interface {v1, v0}, Ldefpackage/huf;->c(Ldefpackage/hts;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Lhuf;->c(Lhts;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -186,13 +186,13 @@
 
     .line 82
     :cond_0
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->a:Ldefpackage/hub;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->a:Lhub;
 
     invoke-virtual {p0}, Landroid/preference/SwitchPreference;->getKey()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ldefpackage/hub;->m(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Lhub;->m(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -252,13 +252,13 @@
     .param p1, "z"    # Z
 
     .line 104
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->a:Ldefpackage/hub;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->a:Lhub;
 
     invoke-virtual {p0}, Landroid/preference/SwitchPreference;->getKey()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ldefpackage/hub;->m(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lhub;->m(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -543,11 +543,11 @@
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     .line 166
-    new-instance v4, Ldefpackage/jif;
+    new-instance v4, Ljif;
 
     const/4 v5, 0x1
 
-    invoke-direct {v4, v3, v1, v5}, Ldefpackage/jif;-><init>(Landroid/widget/FrameLayout;Landroid/widget/ImageView;I)V
+    invoke-direct {v4, v3, v1, v5}, Ljif;-><init>(Landroid/widget/FrameLayout;Landroid/widget/ImageView;I)V
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -564,9 +564,9 @@
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 169
-    new-instance v4, Ldefpackage/jid;
+    new-instance v4, Ljid;
 
-    invoke-direct {v4, v0, v5}, Ldefpackage/jid;-><init>(Landroid/widget/Button;I)V
+    invoke-direct {v4, v0, v5}, Ljid;-><init>(Landroid/widget/Button;I)V
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -654,7 +654,7 @@
     .param p2, "obj"    # Ljava/lang/Object;
 
     .line 190
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->a:Ldefpackage/hub;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->a:Lhub;
 
     invoke-virtual {p0}, Landroid/preference/SwitchPreference;->getKey()Ljava/lang/String;
 
@@ -668,7 +668,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Ldefpackage/hub;->l(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, v2}, Lhub;->l(Ljava/lang/String;Z)V
 
     .line 191
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/preference/ManagedSwitchPreference;->c:Landroid/preference/Preference$OnPreferenceChangeListener;

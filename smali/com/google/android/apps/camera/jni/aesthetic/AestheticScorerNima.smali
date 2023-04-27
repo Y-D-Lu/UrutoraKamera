@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/enh;
+.implements Lenh;
 
 
 # instance fields

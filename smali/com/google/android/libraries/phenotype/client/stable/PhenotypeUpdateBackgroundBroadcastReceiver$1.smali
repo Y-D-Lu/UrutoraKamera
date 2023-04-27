@@ -20,7 +20,7 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;
 
-.field public final synthetic val$a2:Ldefpackage/pht;
+.field public final synthetic val$a2:Lpht;
 
 .field public final synthetic val$goAsync:Landroid/content/BroadcastReceiver$PendingResult;
 
@@ -28,14 +28,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;Ldefpackage/pht;Ljava/lang/String;Landroid/content/BroadcastReceiver$PendingResult;)V
+.method public constructor <init>(Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;Lpht;Ljava/lang/String;Landroid/content/BroadcastReceiver$PendingResult;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;
 
     .line 43
     iput-object p1, p0, Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver$1;->this$0:Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver;
 
-    iput-object p2, p0, Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver$1;->val$a2:Ldefpackage/pht;
+    iput-object p2, p0, Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver$1;->val$a2:Lpht;
 
     iput-object p3, p0, Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver$1;->val$stringExtra:Ljava/lang/String;
 
@@ -52,10 +52,10 @@
     .locals 7
 
     .line 46
-    iget-object v0, p0, Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver$1;->val$a2:Ldefpackage/pht;
+    iget-object v0, p0, Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver$1;->val$a2:Lpht;
 
     .line 47
-    .local v0, "phtVar":Ldefpackage/pht;
+    .local v0, "phtVar":Lpht;
     iget-object v1, p0, Lcom/google/android/libraries/phenotype/client/stable/PhenotypeUpdateBackgroundBroadcastReceiver$1;->val$stringExtra:Ljava/lang/String;
 
     .line 48
@@ -65,7 +65,7 @@
     .line 51
     .local v2, "pendingResult":Landroid/content/BroadcastReceiver$PendingResult;
     :try_start_0
-    invoke-static {v0}, Ldefpackage/plk;->ad(Ljava/util/concurrent/Future;)Ljava/lang/Object;
+    invoke-static {v0}, Lplk;->ad(Ljava/util/concurrent/Future;)Ljava/lang/Object;
 
     .line 52
     invoke-virtual {v1}, Ljava/lang/String;->length()I

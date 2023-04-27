@@ -12,7 +12,7 @@
 
     const-string v1, "jpeg-jni"
 
-    invoke-static {v0, v1}, Ldefpackage/lil;->b(Ljava/lang/Class;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Llil;->b(Ljava/lang/Class;Ljava/lang/String;)V
 
     .line 23
     return-void
@@ -27,12 +27,12 @@
     return-void
 .end method
 
-.method public static a(Ldefpackage/mad;Ljava/nio/ByteBuffer;Landroid/graphics/Rect;Ldefpackage/lic;)I
+.method public static a(Lmad;Ljava/nio/ByteBuffer;Landroid/graphics/Rect;Llic;)I
     .locals 31
-    .param p0, "madVar"    # Ldefpackage/mad;
+    .param p0, "madVar"    # Lmad;
     .param p1, "byteBuffer"    # Ljava/nio/ByteBuffer;
     .param p2, "rect"    # Landroid/graphics/Rect;
-    .param p3, "licVar"    # Ldefpackage/lic;
+    .param p3, "licVar"    # Llic;
 
     .line 26
     move-object/from16 v0, p2
@@ -49,7 +49,7 @@
 
     const-string v4, "Output buffer must be direct"
 
-    invoke-static {v3, v4}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v3, v4}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 28
     iget v3, v0, Landroid/graphics/Rect;->left:I
@@ -72,7 +72,7 @@
     :goto_0
     const-string v4, "Invalid crop rectangle: %s"
 
-    invoke-static {v3, v4, v0}, Ldefpackage/obr;->aT(ZLjava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v3, v4, v0}, Lobr;->aT(ZLjava/lang/String;Ljava/lang/Object;)V
 
     .line 29
     iget v3, v0, Landroid/graphics/Rect;->top:I
@@ -89,10 +89,10 @@
     move v3, v6
 
     :goto_1
-    invoke-static {v3, v4, v0}, Ldefpackage/obr;->aT(ZLjava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v3, v4, v0}, Lobr;->aT(ZLjava/lang/String;Ljava/lang/Object;)V
 
     .line 30
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->a()I
+    invoke-interface/range {p0 .. p0}, Lmad;->a()I
 
     move-result v3
 
@@ -108,16 +108,16 @@
     move v3, v6
 
     :goto_2
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->a()I
+    invoke-interface/range {p0 .. p0}, Lmad;->a()I
 
     move-result v4
 
     const-string v7, "Only ImageFormat.YUV_420_888 is supported, found %s"
 
-    invoke-static {v3, v7, v4}, Ldefpackage/obr;->aS(ZLjava/lang/String;I)V
+    invoke-static {v3, v7, v4}, Lobr;->aS(ZLjava/lang/String;I)V
 
     .line 31
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->g()Ljava/util/List;
+    invoke-interface/range {p0 .. p0}, Lmad;->g()Ljava/util/List;
 
     move-result-object v3
 
@@ -127,29 +127,29 @@
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/mac;
+    check-cast v4, Lmac;
 
     .line 33
-    .local v4, "macVar":Ldefpackage/mac;
+    .local v4, "macVar":Lmac;
     invoke-interface {v3, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    check-cast v7, Ldefpackage/mac;
+    check-cast v7, Lmac;
 
     .line 34
-    .local v7, "macVar2":Ldefpackage/mac;
+    .local v7, "macVar2":Lmac;
     const/4 v8, 0x2
 
     invoke-interface {v3, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    check-cast v9, Ldefpackage/mac;
+    check-cast v9, Lmac;
 
     .line 35
-    .local v9, "macVar3":Ldefpackage/mac;
-    invoke-interface {v4}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    .local v9, "macVar3":Lmac;
+    invoke-interface {v4}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v10
 
@@ -157,10 +157,10 @@
 
     move-result v10
 
-    invoke-static {v10}, Ldefpackage/obr;->aQ(Z)V
+    invoke-static {v10}, Lobr;->aQ(Z)V
 
     .line 36
-    invoke-interface {v7}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    invoke-interface {v7}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v10
 
@@ -168,10 +168,10 @@
 
     move-result v10
 
-    invoke-static {v10}, Ldefpackage/obr;->aQ(Z)V
+    invoke-static {v10}, Lobr;->aQ(Z)V
 
     .line 37
-    invoke-interface {v9}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    invoke-interface {v9}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v10
 
@@ -179,10 +179,10 @@
 
     move-result v10
 
-    invoke-static {v10}, Ldefpackage/obr;->aQ(Z)V
+    invoke-static {v10}, Lobr;->aQ(Z)V
 
     .line 38
-    invoke-interface {v4}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v4}, Lmac;->getPixelStride()I
 
     move-result v10
 
@@ -198,10 +198,10 @@
     :goto_3
     const-string v11, "Pixel stride for luma (Y) plane must be 1."
 
-    invoke-static {v10, v11}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v10, v11}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 39
-    invoke-interface {v7}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v7}, Lmac;->getPixelStride()I
 
     move-result v10
 
@@ -217,10 +217,10 @@
     :goto_4
     const-string v11, "Pixel stride for chroma (U) plane must be 2."
 
-    invoke-static {v10, v11}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v10, v11}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 40
-    invoke-interface {v9}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v9}, Lmac;->getPixelStride()I
 
     move-result v10
 
@@ -236,14 +236,14 @@
     :goto_5
     const-string v11, "Pixel stride for chroma (V) plane must be 2."
 
-    invoke-static {v10, v11}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v10, v11}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 41
-    invoke-interface {v7}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v7}, Lmac;->getRowStride()I
 
     move-result v10
 
-    invoke-interface {v9}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v9}, Lmac;->getRowStride()I
 
     move-result v11
 
@@ -259,7 +259,7 @@
     :goto_6
     const-string v11, "Row strides for chroma planes (UV) must match."
 
-    invoke-static {v10, v11}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v10, v11}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 42
     invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
@@ -270,7 +270,7 @@
 
     .line 43
     .local v10, "byteBuffer2":Ljava/nio/ByteBuffer;
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->c()I
+    invoke-interface/range {p0 .. p0}, Lmad;->c()I
 
     move-result v15
 
@@ -278,7 +278,7 @@
     move v11, v15
 
     .line 44
-    invoke-interface/range {p0 .. p0}, Ldefpackage/mad;->b()I
+    invoke-interface/range {p0 .. p0}, Lmad;->b()I
 
     move-result v14
 
@@ -286,11 +286,11 @@
     move v12, v14
 
     .line 45
-    invoke-interface {v4}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    invoke-interface {v4}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v13
 
-    invoke-interface {v4}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v4}, Lmac;->getPixelStride()I
 
     move-result v16
 
@@ -300,7 +300,7 @@
     .local v5, "b":I
     move/from16 v14, v16
 
-    invoke-interface {v4}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v4}, Lmac;->getRowStride()I
 
     move-result v16
 
@@ -310,27 +310,27 @@
     .local v8, "c":I
     move/from16 v15, v16
 
-    invoke-interface {v7}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    invoke-interface {v7}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v16
 
-    invoke-interface {v7}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v7}, Lmac;->getPixelStride()I
 
     move-result v17
 
-    invoke-interface {v7}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v7}, Lmac;->getRowStride()I
 
     move-result v18
 
-    invoke-interface {v9}, Ldefpackage/mac;->getBuffer()Ljava/nio/ByteBuffer;
+    invoke-interface {v9}, Lmac;->getBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v19
 
-    invoke-interface {v9}, Ldefpackage/mac;->getPixelStride()I
+    invoke-interface {v9}, Lmac;->getPixelStride()I
 
     move-result v20
 
-    invoke-interface {v9}, Ldefpackage/mac;->getRowStride()I
+    invoke-interface {v9}, Lmac;->getRowStride()I
 
     move-result v21
 
@@ -348,9 +348,9 @@
 
     const/4 v4, 0x0
 
-    .end local v4    # "macVar":Ldefpackage/mac;
-    .local v30, "macVar":Ldefpackage/mac;
-    invoke-static {v6, v4, v3}, Ldefpackage/oxh;->B(III)I
+    .end local v4    # "macVar":Lmac;
+    .local v30, "macVar":Lmac;
+    invoke-static {v6, v4, v3}, Loxh;->B(III)I
 
     move-result v24
 
@@ -358,25 +358,25 @@
 
     add-int/lit8 v6, v5, -0x1
 
-    invoke-static {v3, v4, v6}, Ldefpackage/oxh;->B(III)I
+    invoke-static {v3, v4, v6}, Loxh;->B(III)I
 
     move-result v25
 
     iget v3, v0, Landroid/graphics/Rect;->right:I
 
-    invoke-static {v3, v4, v8}, Ldefpackage/oxh;->B(III)I
+    invoke-static {v3, v4, v8}, Loxh;->B(III)I
 
     move-result v26
 
     iget v3, v0, Landroid/graphics/Rect;->bottom:I
 
-    invoke-static {v3, v4, v5}, Ldefpackage/oxh;->B(III)I
+    invoke-static {v3, v4, v5}, Loxh;->B(III)I
 
     move-result v27
 
     move-object/from16 v3, p3
 
-    iget v4, v3, Ldefpackage/lic;->e:I
+    iget v4, v3, Llic;->e:I
 
     move/from16 v28, v4
 

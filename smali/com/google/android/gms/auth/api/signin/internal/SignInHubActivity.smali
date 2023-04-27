@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
-.super Ldefpackage/by;
+.super Lby;
 .source ""
 
 
@@ -35,7 +35,7 @@
     .locals 1
 
     .line 19
-    invoke-direct {p0}, Ldefpackage/by;-><init>()V
+    invoke-direct {p0}, Lby;-><init>()V
 
     .line 23
     const/4 v0, 0x0
@@ -49,17 +49,17 @@
     .locals 3
 
     .line 28
-    invoke-static {p0}, Ldefpackage/afa;->a(Ldefpackage/aee;)Ldefpackage/afa;
+    invoke-static {p0}, Lafa;->a(Laee;)Lafa;
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/kgj;
+    new-instance v1, Lkgj;
 
-    invoke-direct {v1, p0}, Ldefpackage/kgj;-><init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;)V
+    invoke-direct {v1, p0}, Lkgj;-><init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;)V
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2, v1}, Ldefpackage/afa;->c(ILdefpackage/aez;)V
+    invoke-virtual {v0, v2, v1}, Lafa;->c(ILaez;)V
 
     .line 29
     sput-boolean v2, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->m:Z
@@ -250,7 +250,7 @@
     if-eqz v3, :cond_1
 
     .line 76
-    invoke-static {p0}, Ldefpackage/kgf;->c(Landroid/content/Context;)Ldefpackage/kgf;
+    invoke-static {p0}, Lkgf;->c(Landroid/content/Context;)Lkgf;
 
     move-result-object v0
 
@@ -258,7 +258,7 @@
 
     iget-object v3, v3, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
-    invoke-virtual {v0, v3, v4}, Ldefpackage/kgf;->e(Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
+    invoke-virtual {v0, v3, v4}, Lkgf;->e(Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
 
     .line 77
     invoke-virtual {p3, v1}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
@@ -337,7 +337,7 @@
     .param p1, "bundle"    # Landroid/os/Bundle;
 
     .line 103
-    invoke-super {p0, p1}, Ldefpackage/by;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lby;->onCreate(Landroid/os/Bundle;)V
 
     .line 104
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
@@ -564,7 +564,7 @@
     .locals 1
 
     .line 149
-    invoke-super {p0}, Ldefpackage/by;->onDestroy()V
+    invoke-super {p0}, Lby;->onDestroy()V
 
     .line 150
     const/4 v0, 0x0
@@ -580,7 +580,7 @@
     .param p1, "bundle"    # Landroid/os/Bundle;
 
     .line 156
-    invoke-super {p0, p1}, Ldefpackage/ub;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lub;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 157
     iget-boolean v0, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->p:Z

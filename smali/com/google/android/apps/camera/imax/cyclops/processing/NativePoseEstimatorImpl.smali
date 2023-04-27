@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/ejs;
+.implements Lejs;
 
 
 # direct methods

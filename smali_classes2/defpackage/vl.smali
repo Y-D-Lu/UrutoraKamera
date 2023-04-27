@@ -1,196 +1,217 @@
-.class public final Ldefpackage/vl;
-.super Ldefpackage/qmb;
+.class public Ldefpackage/Vl;
+.super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ldefpackage/qmy;
+.implements Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;
 
 
 # annotations
-.annotation runtime Ldefpackage/qlw;
-    b = "androidx.camera.camera2.pipe.compat.Camera2CameraDevices$findAll$1"
-    c = "Camera2CameraDevices.kt"
-    d = "invokeSuspend"
-    e = {
-        0x22
-    }
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljcr;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
 .end annotation
 
 
 # instance fields
-.field public a:I
+.field public final synthetic this$0:Ljcr;
 
-.field public final b:Ldefpackage/vm;
+.field public final synthetic val$jcwVar2:Ljcw;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/vm;Ldefpackage/qlh;)V
-    .locals 1
-    .param p1, "vmVar"    # Ldefpackage/vm;
-    .param p2, "qlhVar"    # Ldefpackage/qlh;
+.method public constructor <init>(Ljcr;Ljcw;)V
+    .locals 0
+    .param p1, "this$0"    # Ljcr;
 
-    .line 16
-    const/4 v0, 0x2
+    .line 70
+    iput-object p1, p0, Ldefpackage/Vl;->this$0:Ljcr;
 
-    invoke-direct {p0, v0, p2}, Ldefpackage/qmb;-><init>(ILdefpackage/qlh;)V
+    iput-object p2, p0, Ldefpackage/Vl;->val$jcwVar2:Ljcw;
 
-    .line 17
-    iput-object p1, p0, Ldefpackage/vl;->b:Ldefpackage/vm;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final create(Ljava/lang/Object;Ldefpackage/qlh;)Ldefpackage/qlh;
-    .locals 2
-    .param p1, "obj"    # Ljava/lang/Object;
-    .param p2, "qlhVar"    # Ldefpackage/qlh;
-
-    .line 22
-    new-instance v0, Ldefpackage/vl;
-
-    iget-object v1, p0, Ldefpackage/vl;->b:Ldefpackage/vm;
-
-    invoke-direct {v0, v1, p2}, Ldefpackage/vl;-><init>(Ldefpackage/vm;Ldefpackage/qlh;)V
-
-    return-object v0
-.end method
-
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-    .param p1, "obj"    # Ljava/lang/Object;
-    .param p2, "obj2"    # Ljava/lang/Object;
-
-    .line 27
-    move-object v0, p1
-
-    check-cast v0, Ldefpackage/qqj;
-
-    move-object v1, p2
-
-    check-cast v1, Ldefpackage/qlh;
-
-    invoke-virtual {p0, v0, v1}, Ldefpackage/vl;->create(Ljava/lang/Object;Ldefpackage/qlh;)Ldefpackage/qlh;
-
-    move-result-object v0
-
-    check-cast v0, Ldefpackage/vl;
-
-    sget-object v1, Ldefpackage/qks;->a:Ldefpackage/qks;
-
-    invoke-virtual {v0, v1}, Ldefpackage/vl;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final onAvailabilityStatusFetched(I)V
     .locals 6
-    .param p1, "obj"    # Ljava/lang/Object;
+    .param p1, "i"    # I
 
-    .line 33
-    sget-object v0, Ldefpackage/qlp;->COROUTINE_SUSPENDED:Ldefpackage/qlp;
+    .line 73
+    const/4 v0, 0x0
 
-    .line 34
-    .local v0, "qlpVar":Ldefpackage/qlp;
-    iget v1, p0, Ldefpackage/vl;->a:I
+    .line 74
+    .local v0, "z":Z
+    const/4 v1, -0x1
 
     packed-switch v1, :pswitch_data_0
 
-    .line 48
-    invoke-static {p1}, Ldefpackage/qmd;->M(Ljava/lang/Object;)V
+    .line 85
+    iget-object v1, p0, Ldefpackage/Vl;->val$jcwVar2:Ljcw;
 
-    goto :goto_1
+    .line 86
+    .local v1, "jcwVar4":Ljcw;
+    if-eqz p1, :cond_1
 
-    .line 36
+    .line 87
+    iget-object v2, v1, Ljcw;->e:Lpih;
+
+    invoke-static {}, Ljch;->a()Ljcg;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljcg;->a()Ljch;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lpih;->o(Ljava/lang/Object;)Z
+
+    .line 88
+    return-void
+
+    .line 76
+    .end local v1    # "jcwVar4":Ljcw;
     :pswitch_0
-    invoke-static {p1}, Ldefpackage/qmd;->M(Ljava/lang/Object;)V
+    iget-object v1, p0, Ldefpackage/Vl;->val$jcwVar2:Ljcw;
 
-    .line 37
-    iget-object v1, p0, Ldefpackage/vl;->b:Ldefpackage/vm;
+    .line 77
+    .local v1, "jcwVar3":Ljcw;
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    iget-object v1, v1, Ldefpackage/vm;->a:Ldefpackage/vq;
+    .line 78
+    iget-object v2, v1, Ljcw;->d:Lpih;
 
-    .line 38
-    .local v1, "vqVar":Ldefpackage/vq;
-    const/4 v2, 0x1
+    .line 79
+    .local v2, "pihVar":Lpih;
+    if-nez p1, :cond_0
 
-    iput v2, p0, Ldefpackage/vl;->a:I
+    .line 80
+    const/4 v0, 0x1
 
-    .line 39
-    iget-object v2, v1, Ldefpackage/vq;->b:Ljava/lang/Object;
-
-    monitor-enter v2
-
-    .line 40
-    :try_start_0
-    iget-object v3, v1, Ldefpackage/vq;->c:Ljava/util/List;
-
-    .line 41
-    .local v3, "list":Ljava/util/List;
-    monitor-exit v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 42
-    if-eqz v3, :cond_0
-
-    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    move-object v2, v3
-
-    goto :goto_0
-
+    .line 82
     :cond_0
-    iget-object v2, v1, Ldefpackage/vq;->a:Ldefpackage/wn;
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    iget-object v2, v2, Ldefpackage/wn;->b:Ldefpackage/qqf;
+    move-result-object v3
 
-    new-instance v4, Ldefpackage/vp;
+    invoke-virtual {v2, v3}, Lpih;->o(Ljava/lang/Object;)Z
 
-    const/4 v5, 0x0
+    .line 83
+    return-void
 
-    invoke-direct {v4, v1, v5}, Ldefpackage/vp;-><init>(Ldefpackage/vq;Ldefpackage/qlh;)V
-
-    invoke-static {v2, v4, p0}, Ldefpackage/qmd;->k(Ldefpackage/qln;Ldefpackage/qmy;Ldefpackage/qlh;)Ljava/lang/Object;
+    .line 90
+    .end local v2    # "pihVar":Lpih;
+    .local v1, "jcwVar4":Ljcw;
+    :cond_1
+    invoke-static {}, Ljch;->a()Ljcg;
 
     move-result-object v2
 
+    .line 91
+    .local v2, "a":Ljcg;
+    invoke-virtual {v1}, Ljcw;->d()Lcom/google/lens/sdk/LensApi;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/google/lens/sdk/LensApi;->a()Lkcq;
+
+    move-result-object v3
+
+    iget v3, v3, Lkcq;->a:I
+
+    const/4 v4, 0x1
+
+    and-int/2addr v3, v4
+
+    if-ne v4, v3, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v4, 0x0
+
     :goto_0
-    move-object p1, v2
+    invoke-virtual {v2, v4}, Ljcg;->b(Z)V
 
-    .line 43
-    if-ne p1, v0, :cond_1
+    .line 92
+    invoke-virtual {v1}, Ljcw;->d()Lcom/google/lens/sdk/LensApi;
 
-    .line 44
-    return-object v0
+    move-result-object v3
 
-    .line 41
-    .end local v3    # "list":Ljava/util/List;
-    :catchall_0
-    move-exception v3
+    invoke-virtual {v3}, Lcom/google/lens/sdk/LensApi;->a()Lkcq;
 
-    :try_start_1
-    monitor-exit v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    move-result-object v3
 
-    throw v3
+    iget v3, v3, Lkcq;->a:I
 
-    .line 51
-    .end local v1    # "vqVar":Ldefpackage/vq;
-    :cond_1
-    :goto_1
-    return-object p1
+    and-int/lit8 v3, v3, 0x4
 
-    nop
+    if-eqz v3, :cond_3
+
+    .line 93
+    const/4 v0, 0x1
+
+    .line 95
+    :cond_3
+    invoke-virtual {v2, v0}, Ljcg;->c(Z)V
+
+    .line 96
+    invoke-virtual {v1}, Ljcw;->d()Lcom/google/lens/sdk/LensApi;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/google/lens/sdk/LensApi;->f()Z
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Ljcg;->d(Z)V
+
+    .line 97
+    invoke-virtual {v1}, Ljcw;->d()Lcom/google/lens/sdk/LensApi;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/google/lens/sdk/LensApi;->a()Lkcq;
+
+    move-result-object v3
+
+    iget-object v3, v3, Lkcq;->b:Lkcp;
+
+    .line 98
+    .local v3, "kcpVar":Lkcp;
+    if-nez v3, :cond_4
+
+    .line 99
+    sget-object v3, Lkcp;->b:Lkcp;
+
+    .line 101
+    :cond_4
+    iget-object v4, v3, Lkcp;->a:Lppm;
+
+    invoke-static {v4}, Loom;->j(Ljava/util/Collection;)Loom;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Ljcg;->e(Loom;)V
+
+    .line 102
+    iget-object v4, v1, Ljcw;->e:Lpih;
+
+    invoke-virtual {v2}, Ljcg;->a()Ljch;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lpih;->o(Ljava/lang/Object;)Z
+
+    .line 103
+    return-void
 
     :pswitch_data_0
     .packed-switch 0x0

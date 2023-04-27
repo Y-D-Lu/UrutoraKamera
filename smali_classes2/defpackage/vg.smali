@@ -1,197 +1,78 @@
-.class public final Ldefpackage/vg;
+.class public Ldefpackage/Vg;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Wg;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field private final a:Ljava/util/concurrent/Executor;
+.field public final synthetic this$1:Ldefpackage/Wg;
 
-.field private final b:Ljava/util/concurrent/Executor;
+.field public final synthetic val$bitmap2:Landroid/graphics/Bitmap;
 
-.field private final c:Ljava/util/concurrent/Executor;
+.field public final synthetic val$hspVar:Lhsp;
 
-.field private final d:Landroid/os/HandlerThread;
+.field public final synthetic val$i2:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ldefpackage/Wg;Lhsp;Landroid/graphics/Bitmap;I)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Wg;
 
-    .line 16
-    const/4 v0, 0x0
+    .line 153
+    iput-object p1, p0, Ldefpackage/Vg;->this$1:Ldefpackage/Wg;
 
-    invoke-direct {p0, v0}, Ldefpackage/vg;-><init>([B)V
+    iput-object p2, p0, Ldefpackage/Vg;->val$hspVar:Lhsp;
 
-    .line 17
-    return-void
-.end method
+    iput-object p3, p0, Ldefpackage/Vg;->val$bitmap2:Landroid/graphics/Bitmap;
 
-.method public constructor <init>([B)V
-    .locals 1
-    .param p1, "bArr"    # [B
+    iput p4, p0, Ldefpackage/Vg;->val$i2:I
 
-    .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Ldefpackage/vg;->a:Ljava/util/concurrent/Executor;
-
-    .line 21
-    iput-object v0, p0, Ldefpackage/vg;->b:Ljava/util/concurrent/Executor;
-
-    .line 22
-    iput-object v0, p0, Ldefpackage/vg;->c:Ljava/util/concurrent/Executor;
-
-    .line 23
-    iput-object v0, p0, Ldefpackage/vg;->d:Landroid/os/HandlerThread;
-
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final accept(Ljava/lang/Object;)V
+    .locals 4
     .param p1, "obj"    # Ljava/lang/Object;
 
-    .line 27
-    if-ne p0, p1, :cond_0
-
-    .line 28
-    const/4 v0, 0x1
-
-    return v0
-
-    .line 30
-    :cond_0
-    instance-of v0, p1, Ldefpackage/vg;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_1
-
-    .line 31
-    return v1
-
-    .line 33
-    :cond_1
+    .line 156
     move-object v0, p1
 
-    check-cast v0, Ldefpackage/vg;
+    check-cast v0, Lhsb;
 
-    .line 34
-    .local v0, "vgVar":Ldefpackage/vg;
-    iget-object v2, v0, Ldefpackage/vg;->a:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Ldefpackage/Vg;->val$hspVar:Lhsp;
 
-    .line 35
-    .local v2, "executor":Ljava/util/concurrent/Executor;
-    const/4 v3, 0x0
+    iget-object v2, p0, Ldefpackage/Vg;->val$bitmap2:Landroid/graphics/Bitmap;
 
-    invoke-static {v3, v3}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget v3, p0, Ldefpackage/Vg;->val$i2:I
 
-    move-result v4
+    invoke-interface {v0, v1, v2, v3}, Lhsb;->k(Lhsp;Landroid/graphics/Bitmap;I)V
 
-    if-nez v4, :cond_2
-
-    .line 36
-    return v1
-
-    .line 38
-    :cond_2
-    iget-object v4, v0, Ldefpackage/vg;->b:Ljava/util/concurrent/Executor;
-
-    .line 39
-    .local v4, "executor2":Ljava/util/concurrent/Executor;
-    invoke-static {v3, v3}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_3
-
-    .line 40
-    return v1
-
-    .line 42
-    :cond_3
-    iget-object v5, v0, Ldefpackage/vg;->c:Ljava/util/concurrent/Executor;
-
-    .line 43
-    .local v5, "executor3":Ljava/util/concurrent/Executor;
-    invoke-static {v3, v3}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-nez v6, :cond_4
-
-    .line 44
-    return v1
-
-    .line 46
-    :cond_4
-    iget-object v1, v0, Ldefpackage/vg;->d:Landroid/os/HandlerThread;
-
-    .line 47
-    .local v1, "handlerThread":Landroid/os/HandlerThread;
-    invoke-static {v3, v3}, Ldefpackage/qno;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v3
-
-    return v3
+    .line 157
+    return-void
 .end method
 
-.method public final hashCode()I
-    .locals 1
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+    .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 51
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 55
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "ThreadConfig(defaultLightweightExecutor="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v2, ", defaultBackgroundExecutor="
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v2, ", defaultCameraExecutor="
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v2, ", defaultCameraHandler="
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    .line 161
+    return-object p1
 .end method

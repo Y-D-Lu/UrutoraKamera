@@ -1,50 +1,65 @@
-.class final Ldefpackage/xl;
+.class public Ldefpackage/Xl;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static final a:Ldefpackage/xl;
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Yl;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final b:Ljava/lang/Runnable;
+.field public final synthetic this$3:Ldefpackage/Yl;
 
-.field public final c:Ljava/util/concurrent/Executor;
+.field public final synthetic val$a2:Lpms;
 
-.field public next:Ldefpackage/xl;
+.field public final synthetic val$bitmap4:Landroid/graphics/Bitmap;
+
+.field public final synthetic val$d:Lcom/google/lens/sdk/LensApi;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Ldefpackage/Yl;Lcom/google/lens/sdk/LensApi;Landroid/graphics/Bitmap;Lpms;)V
+    .locals 0
+    .param p1, "this$3"    # Ldefpackage/Yl;
 
-    .line 8
-    new-instance v0, Ldefpackage/xl;
+    .line 97
+    iput-object p1, p0, Ldefpackage/Xl;->this$3:Ldefpackage/Yl;
 
-    const/4 v1, 0x0
+    iput-object p2, p0, Ldefpackage/Xl;->val$d:Lcom/google/lens/sdk/LensApi;
 
-    invoke-direct {v0, v1, v1}, Ldefpackage/xl;-><init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    iput-object p3, p0, Ldefpackage/Xl;->val$bitmap4:Landroid/graphics/Bitmap;
 
-    sput-object v0, Ldefpackage/xl;->a:Ldefpackage/xl;
+    iput-object p4, p0, Ldefpackage/Xl;->val$a2:Lpms;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-    .locals 0
-    .param p1, "runnable"    # Ljava/lang/Runnable;
-    .param p2, "executor"    # Ljava/util/concurrent/Executor;
 
-    .line 13
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+# virtual methods
+.method public final run()V
+    .locals 3
 
-    .line 14
-    iput-object p1, p0, Ldefpackage/xl;->b:Ljava/lang/Runnable;
+    .line 100
+    iget-object v0, p0, Ldefpackage/Xl;->val$d:Lcom/google/lens/sdk/LensApi;
 
-    .line 15
-    iput-object p2, p0, Ldefpackage/xl;->c:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Ldefpackage/Xl;->val$bitmap4:Landroid/graphics/Bitmap;
 
-    .line 16
+    iget-object v2, p0, Ldefpackage/Xl;->val$a2:Lpms;
+
+    invoke-virtual {v0, v1, v2}, Lcom/google/lens/sdk/LensApi;->b(Landroid/graphics/Bitmap;Lpms;)V
+
+    .line 101
     return-void
 .end method

@@ -10,7 +10,7 @@
     .line 8
     const-class v0, Lcom/google/android/apps/camera/jni/eis/EisNative;
 
-    invoke-static {v0}, Ldefpackage/lil;->a(Ljava/lang/Class;)V
+    invoke-static {v0}, Llil;->a(Ljava/lang/Class;)V
 
     .line 9
     return-void

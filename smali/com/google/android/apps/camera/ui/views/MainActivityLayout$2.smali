@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/ojz;
+.implements Lojz;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->y(Ldefpackage/jbv;)Z
+    value = Lcom/google/android/apps/camera/ui/views/MainActivityLayout;->y(Ljbv;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

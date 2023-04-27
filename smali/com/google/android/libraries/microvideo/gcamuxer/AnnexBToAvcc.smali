@@ -36,7 +36,7 @@
 
     const-string v1, "Conversion only works with direct ByteBuffers"
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->aG(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lobr;->aG(ZLjava/lang/Object;)V
 
     .line 15
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->limit()I

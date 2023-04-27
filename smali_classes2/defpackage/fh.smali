@@ -1,17 +1,46 @@
-.class public abstract Ldefpackage/fh;
+.class public Ldefpackage/Fh;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lijn;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhvz;->mo37get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
 
 # instance fields
-.field public a:Ldefpackage/ky;
+.field public final synthetic this$0:Lhvz;
+
+.field public final synthetic val$instrumentation:Lcom/google/android/apps/camera/stats/Instrumentation;
+
+.field public final synthetic val$ljfVar:Lljf;
+
+.field public final synthetic val$mcuVar:Lmcu;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lhvz;Lcom/google/android/apps/camera/stats/Instrumentation;Lmcu;Lljf;)V
     .locals 0
+    .param p1, "this$0"    # Lhvz;
 
-    .line 10
+    .line 172
+    iput-object p1, p0, Ldefpackage/Fh;->this$0:Lhvz;
+
+    iput-object p2, p0, Ldefpackage/Fh;->val$instrumentation:Lcom/google/android/apps/camera/stats/Instrumentation;
+
+    iput-object p3, p0, Ldefpackage/Fh;->val$mcuVar:Lmcu;
+
+    iput-object p4, p0, Ldefpackage/Fh;->val$ljfVar:Lljf;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,111 +48,85 @@
 
 
 # virtual methods
-.method public abstract a()Landroid/view/View;
-.end method
+.method public final a()Ljava/lang/Object;
+    .locals 4
 
-.method public b(Landroid/view/MenuItem;)Landroid/view/View;
-    .locals 1
-    .param p1, "menuItem"    # Landroid/view/MenuItem;
+    .line 175
+    const/4 v0, -0x1
 
-    .line 16
-    invoke-virtual {p0}, Ldefpackage/fh;->a()Landroid/view/View;
+    packed-switch v0, :pswitch_data_0
 
-    move-result-object v0
+    .line 187
+    iget-object v0, p0, Ldefpackage/Fh;->val$instrumentation:Lcom/google/android/apps/camera/stats/Instrumentation;
 
-    return-object v0
-.end method
+    .line 188
+    .local v0, "instrumentation4":Lcom/google/android/apps/camera/stats/Instrumentation;
+    new-instance v1, Lijp;
 
-.method public c(Landroid/view/SubMenu;)V
-    .locals 1
-    .param p1, "subMenu"    # Landroid/view/SubMenu;
+    iget-object v2, p0, Ldefpackage/Fh;->val$mcuVar:Lmcu;
 
-    .line 20
-    const/4 v0, 0x0
+    iget-object v3, p0, Ldefpackage/Fh;->val$ljfVar:Lljf;
 
-    throw v0
-.end method
+    invoke-direct {v1, v2, v3}, Lijp;-><init>(Lmcx;Lljf;)V
 
-.method public d()Z
-    .locals 1
+    .line 189
+    .local v1, "ijpVar":Lijp;
+    invoke-virtual {v0, v1}, Lcom/google/android/apps/camera/stats/Instrumentation;->f(Lcom/google/android/apps/camera/stats/timing/TimingSession;)V
 
-    .line 24
-    const/4 v0, 0x0
+    .line 190
+    return-object v1
 
-    throw v0
-.end method
+    .line 182
+    .end local v0    # "instrumentation4":Lcom/google/android/apps/camera/stats/Instrumentation;
+    .end local v1    # "ijpVar":Lijp;
+    :pswitch_0
+    iget-object v0, p0, Ldefpackage/Fh;->val$instrumentation:Lcom/google/android/apps/camera/stats/Instrumentation;
 
-.method public e()Z
-    .locals 1
+    .line 183
+    .local v0, "instrumentation3":Lcom/google/android/apps/camera/stats/Instrumentation;
+    new-instance v1, Lijk;
 
-    .line 28
-    const/4 v0, 0x1
+    iget-object v2, p0, Ldefpackage/Fh;->val$mcuVar:Lmcu;
 
-    return v0
-.end method
+    iget-object v3, p0, Ldefpackage/Fh;->val$ljfVar:Lljf;
 
-.method public f()Z
-    .locals 1
+    invoke-direct {v1, v2, v3}, Lijk;-><init>(Lmcu;Lljf;)V
 
-    .line 32
-    const/4 v0, 0x0
+    .line 184
+    .local v1, "ijkVar":Lijk;
+    invoke-virtual {v0, v1}, Lcom/google/android/apps/camera/stats/Instrumentation;->f(Lcom/google/android/apps/camera/stats/timing/TimingSession;)V
 
-    throw v0
-.end method
+    .line 185
+    return-object v1
 
-.method public g()Z
-    .locals 1
+    .line 177
+    .end local v0    # "instrumentation3":Lcom/google/android/apps/camera/stats/Instrumentation;
+    .end local v1    # "ijkVar":Lijk;
+    :pswitch_1
+    iget-object v0, p0, Ldefpackage/Fh;->val$instrumentation:Lcom/google/android/apps/camera/stats/Instrumentation;
 
-    .line 36
-    const/4 v0, 0x0
+    .line 178
+    .local v0, "instrumentation2":Lcom/google/android/apps/camera/stats/Instrumentation;
+    new-instance v1, Lcom/google/android/apps/camera/stats/timing/OneCameraTiming;
 
-    return v0
-.end method
+    iget-object v2, p0, Ldefpackage/Fh;->val$mcuVar:Lmcu;
 
-.method public h(Ldefpackage/ky;)V
-    .locals 2
-    .param p1, "kyVar"    # Ldefpackage/ky;
+    iget-object v3, p0, Ldefpackage/Fh;->val$ljfVar:Lljf;
 
-    .line 40
-    iget-object v0, p0, Ldefpackage/fh;->a:Ldefpackage/ky;
+    invoke-direct {v1, v2, v3}, Lcom/google/android/apps/camera/stats/timing/OneCameraTiming;-><init>(Lmcu;Lljf;)V
 
-    if-eqz v0, :cond_0
+    .line 179
+    .local v1, "oneCameraTiming":Lcom/google/android/apps/camera/stats/timing/OneCameraTiming;
+    invoke-virtual {v0, v1}, Lcom/google/android/apps/camera/stats/Instrumentation;->f(Lcom/google/android/apps/camera/stats/timing/TimingSession;)V
 
-    .line 41
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 180
+    return-object v1
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    nop
 
-    const-string v1, "setVisibilityListener: Setting a new ActionProvider.VisibilityListener when one is already set. Are you reusing this "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, " instance while it is still in use somewhere else?"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "ActionProvider(support)"
-
-    invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 43
-    :cond_0
-    iput-object p1, p0, Ldefpackage/fh;->a:Ldefpackage/ky;
-
-    .line 44
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

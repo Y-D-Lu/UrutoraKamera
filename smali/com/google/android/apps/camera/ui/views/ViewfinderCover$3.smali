@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/jfe;
+.implements Ljfe;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->o(Ldefpackage/jrl;Ljava/lang/Runnable;Z)V
+    value = Lcom/google/android/apps/camera/ui/views/ViewfinderCover;->o(Ljrl;Ljava/lang/Runnable;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -40,9 +40,9 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/jrl;)V
+.method public final a(Ljrl;)V
     .locals 1
-    .param p1, "jrlVar2"    # Ldefpackage/jrl;
+    .param p1, "jrlVar2"    # Ljrl;
 
     .line 204
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/views/ViewfinderCover$3;->val$runnable:Ljava/lang/Runnable;

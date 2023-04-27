@@ -16,7 +16,7 @@
 
 .field private final cameraSwitchButton:Lcom/google/android/apps/camera/bottombar/CameraSwitchButton;
 
-.field private final gcaConfig:Ldefpackage/ojc;
+.field private final gcaConfig:Lojc;
 
 .field private isSelfieFlashOn:Z
 
@@ -28,7 +28,7 @@
 
 .field private final lock:Ljava/lang/Object;
 
-.field private mode:Ldefpackage/jrl;
+.field private mode:Ljrl;
 
 .field private final thumbnailButton:Lcom/google/android/apps/camera/bottombar/RoundedThumbnailView;
 
@@ -41,21 +41,21 @@
     .end annotation
 
     .line 124
-    sget-object v0, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v0, Loih;->a:Loih;
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, v1, v0}, Lcom/google/android/apps/camera/bottombar/BottomBarController;-><init>(Lcom/google/android/apps/camera/bottombar/BottomBar;Ldefpackage/img;Ldefpackage/ojc;)V
+    invoke-direct {p0, p1, v1, v0}, Lcom/google/android/apps/camera/bottombar/BottomBarController;-><init>(Lcom/google/android/apps/camera/bottombar/BottomBar;Limg;Lojc;)V
 
     .line 125
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/android/apps/camera/bottombar/BottomBar;Ldefpackage/img;Ldefpackage/ojc;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/bottombar/BottomBar;Limg;Lojc;)V
     .locals 1
     .param p1, "bottomBar"    # Lcom/google/android/apps/camera/bottombar/BottomBar;
-    .param p2, "imgVar"    # Ldefpackage/img;
-    .param p3, "ojcVar"    # Ldefpackage/ojc;
+    .param p2, "imgVar"    # Limg;
+    .param p3, "ojcVar"    # Lojc;
 
     .line 127
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -71,12 +71,12 @@
     iput-object p1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->bottomBar:Lcom/google/android/apps/camera/bottombar/BottomBar;
 
     .line 221
-    iput-object p3, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iput-object p3, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
     .line 222
     new-instance v0, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;-><init>(Lcom/google/android/apps/camera/bottombar/BottomBarController;Lcom/google/android/apps/camera/bottombar/BottomBar;Ldefpackage/img;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/google/android/apps/camera/bottombar/BottomBarController$2;-><init>(Lcom/google/android/apps/camera/bottombar/BottomBarController;Lcom/google/android/apps/camera/bottombar/BottomBar;Limg;)V
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->post(Ljava/lang/Runnable;)Z
 
@@ -109,9 +109,9 @@
     iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->listeners:Ljava/util/List;
 
     .line 232
-    sget-object v0, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->UNINITIALIZED:Ljrl;
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->mode:Ldefpackage/jrl;
+    iput-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->mode:Ljrl;
 
     .line 233
     return-void
@@ -190,7 +190,7 @@
     return-void
 .end method
 
-.method public disableCameraSwitchAwhile()Ldefpackage/lie;
+.method public disableCameraSwitchAwhile()Llie;
     .locals 1
 
     .line 249
@@ -206,13 +206,13 @@
     return-object v0
 .end method
 
-.method public getBackgroundColorProperty()Ldefpackage/jrp;
+.method public getBackgroundColorProperty()Ljrp;
     .locals 1
 
     .line 259
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->bottomBar:Lcom/google/android/apps/camera/bottombar/BottomBar;
 
-    invoke-virtual {v0}, Lcom/google/android/apps/camera/bottombar/BottomBar;->getBackgroundColorProperty()Ldefpackage/jrp;
+    invoke-virtual {v0}, Lcom/google/android/apps/camera/bottombar/BottomBar;->getBackgroundColorProperty()Ljrp;
 
     move-result-object v0
 
@@ -240,7 +240,7 @@
     return v0
 .end method
 
-.method public lowerAccessibilityImportanceAwhile()Ldefpackage/lie;
+.method public lowerAccessibilityImportanceAwhile()Llie;
     .locals 1
 
     .line 328
@@ -416,7 +416,7 @@
     return-void
 .end method
 
-.method public makeClickableAwhile()Ldefpackage/lie;
+.method public makeClickableAwhile()Llie;
     .locals 1
 
     .line 338
@@ -442,17 +442,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ddf;
+    check-cast v1, Lddf;
 
-    sget-object v2, Ldefpackage/ddl;->aw:Ldefpackage/ddg;
+    sget-object v2, Lddl;->aw:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -472,17 +472,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ddf;
+    check-cast v1, Lddf;
 
-    sget-object v2, Ldefpackage/ddl;->aw:Ldefpackage/ddg;
+    sget-object v2, Lddl;->aw:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -551,17 +551,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ddf;
+    check-cast v1, Lddf;
 
-    sget-object v2, Ldefpackage/ddl;->aw:Ldefpackage/ddg;
+    sget-object v2, Lddl;->aw:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -581,17 +581,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ddf;
+    check-cast v1, Lddf;
 
-    sget-object v2, Ldefpackage/ddl;->aw:Ldefpackage/ddg;
+    sget-object v2, Lddl;->aw:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -814,42 +814,42 @@
 
     .line 431
     .local v0, "pauseResumeButton":Lcom/google/android/apps/camera/bottombar/PauseResumeButton;
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v1}, Lojc;->g()Z
 
     move-result v1
 
     if-eqz v1, :cond_3
 
     .line 432
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ddf;
+    check-cast v1, Lddf;
 
-    sget-object v3, Ldefpackage/dcu;->W:Ldefpackage/ddg;
+    sget-object v3, Ldcu;->W:Lddg;
 
-    invoke-interface {v1, v3}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v3}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ddf;
+    check-cast v1, Lddf;
 
-    sget-object v3, Ldefpackage/dcu;->p:Ldefpackage/ddg;
+    sget-object v3, Ldcu;->p:Lddg;
 
-    invoke-interface {v1, v3}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v3}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -873,17 +873,17 @@
     .line 433
     .local v1, "pauseResumeButton2":Lcom/google/android/apps/camera/bottombar/PauseResumeButton;
     :goto_1
-    iget-object v3, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v3, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v3}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v3}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/ddf;
+    check-cast v3, Lddf;
 
-    sget-object v4, Ldefpackage/dcu;->K:Ldefpackage/ddg;
+    sget-object v4, Ldcu;->K:Lddg;
 
-    invoke-interface {v3, v4}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v3, v4}, Lddf;->k(Lddg;)Z
 
     move-result v3
 
@@ -950,13 +950,13 @@
     .line 449
     iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->bottomBar:Lcom/google/android/apps/camera/bottombar/BottomBar;
 
-    invoke-virtual {v1}, Lcom/google/android/apps/camera/bottombar/BottomBar;->getUiOrientation()Ldefpackage/jrz;
+    invoke-virtual {v1}, Lcom/google/android/apps/camera/bottombar/BottomBar;->getUiOrientation()Ljrz;
 
     move-result-object v1
 
     .line 450
-    .local v1, "uiOrientation":Ldefpackage/jrz;
-    sget-object v2, Ldefpackage/jrz;->REVERSE_LANDSCAPE:Ldefpackage/jrz;
+    .local v1, "uiOrientation":Ljrz;
+    sget-object v2, Ljrz;->REVERSE_LANDSCAPE:Ljrz;
 
     if-ne v1, v2, :cond_0
 
@@ -967,7 +967,7 @@
 
     .line 452
     :cond_0
-    sget-object v2, Ldefpackage/jrz;->LANDSCAPE:Ldefpackage/jrz;
+    sget-object v2, Ljrz;->LANDSCAPE:Ljrz;
 
     if-ne v1, v2, :cond_1
 
@@ -1129,25 +1129,25 @@
     invoke-virtual {v0, v1, v2}, Lcom/google/android/apps/camera/bottombar/BottomBar;->fadeBackground(ZZ)V
 
     .line 487
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v0}, Lojc;->g()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v0}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ldefpackage/ddf;
+    check-cast v0, Lddf;
 
-    sget-object v1, Ldefpackage/deg;->e:Ldefpackage/ddg;
+    sget-object v1, Ldeg;->e:Lddg;
 
-    invoke-interface {v0, v1}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v0, v1}, Lddf;->k(Lddg;)Z
 
     move-result v0
 
@@ -1256,9 +1256,9 @@
     .locals 1
 
     .line 511
-    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->mode:Ldefpackage/jrl;
+    iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->mode:Ljrl;
 
-    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/bottombar/BottomBarController;->switchToMode(Ldefpackage/jrl;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/bottombar/BottomBarController;->switchToMode(Ljrl;)V
 
     .line 512
     return-void
@@ -1290,17 +1290,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ddf;
+    check-cast v1, Lddf;
 
-    sget-object v2, Ldefpackage/ddl;->aw:Ldefpackage/ddg;
+    sget-object v2, Lddl;->aw:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -1424,17 +1424,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ldefpackage/ddf;
+    check-cast v1, Lddf;
 
-    sget-object v2, Ldefpackage/ddl;->aw:Ldefpackage/ddg;
+    sget-object v2, Lddl;->aw:Lddg;
 
-    invoke-interface {v1, v2}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v1, v2}, Lddf;->k(Lddg;)Z
 
     move-result v1
 
@@ -1479,12 +1479,12 @@
     return-void
 .end method
 
-.method public switchToMode(Ldefpackage/jrl;)V
+.method public switchToMode(Ljrl;)V
     .locals 5
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
 
     .line 556
-    iput-object p1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->mode:Ldefpackage/jrl;
+    iput-object p1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->mode:Ljrl;
 
     .line 557
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->bottomBar:Lcom/google/android/apps/camera/bottombar/BottomBar;
@@ -1494,10 +1494,10 @@
     invoke-virtual {v0, v1, v1}, Lcom/google/android/apps/camera/bottombar/BottomBar;->fadeBackground(ZZ)V
 
     .line 558
-    sget-object v0, Ldefpackage/jrl;->UNINITIALIZED:Ldefpackage/jrl;
+    sget-object v0, Ljrl;->UNINITIALIZED:Ljrl;
 
     .line 559
-    .local v0, "jrlVar2":Ldefpackage/jrl;
+    .local v0, "jrlVar2":Ljrl;
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v2
@@ -1694,7 +1694,7 @@
     .locals 5
 
     .line 612
-    invoke-static {}, Ldefpackage/lar;->a()V
+    invoke-static {}, Llar;->a()V
 
     .line 613
     iget-object v0, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->bottomBar:Lcom/google/android/apps/camera/bottombar/BottomBar;
@@ -1731,9 +1731,9 @@
 
     iget-object v1, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->listenerDispatcher:Lcom/google/android/apps/camera/bottombar/BottomBarListener;
 
-    iget-object v2, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v2, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v2}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v2}, Lojc;->g()Z
 
     move-result v2
 
@@ -1741,17 +1741,17 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Ldefpackage/ojc;
+    iget-object v2, p0, Lcom/google/android/apps/camera/bottombar/BottomBarController;->gcaConfig:Lojc;
 
-    invoke-virtual {v2}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v2}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/ddf;
+    check-cast v2, Lddf;
 
-    sget-object v4, Ldefpackage/ddl;->aw:Ldefpackage/ddg;
+    sget-object v4, Lddl;->aw:Lddg;
 
-    invoke-interface {v2, v4}, Ldefpackage/ddf;->k(Ldefpackage/ddg;)Z
+    invoke-interface {v2, v4}, Lddf;->k(Lddg;)Z
 
     move-result v2
 

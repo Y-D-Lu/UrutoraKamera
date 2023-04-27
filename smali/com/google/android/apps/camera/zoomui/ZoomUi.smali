@@ -6,11 +6,11 @@
 # static fields
 .field public static final a:Ljava/lang/Object;
 
-.field public static final b:Ldefpackage/ouj;
+.field public static final b:Louj;
 
 
 # instance fields
-.field public c:Ldefpackage/jrz;
+.field public c:Ljrz;
 
 .field public d:Z
 
@@ -45,11 +45,11 @@
     .line 48
     const-string v0, "com/google/android/apps/camera/zoomui/ZoomUi"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->b:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->b:Louj;
 
     return-void
 .end method
@@ -122,9 +122,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 68
-    new-instance v1, Ldefpackage/adt;
+    new-instance v1, Ladt;
 
-    invoke-direct {v1}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v1}, Ladt;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -136,9 +136,9 @@
     .locals 9
 
     .line 73
-    iget-object v0, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ljrz;
 
-    invoke-static {p0, v0}, Ldefpackage/mip;->es(Landroid/view/View;Ldefpackage/jrz;)V
+    invoke-static {p0, v0}, Lmip;->es(Landroid/view/View;Ljrz;)V
 
     .line 74
     invoke-virtual {p0}, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c()Landroid/widget/ImageButton;
@@ -177,7 +177,7 @@
 
     aput-object v0, v7, v8
 
-    invoke-static/range {v1 .. v7}, Ldefpackage/ope;->M(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ldefpackage/ope;
+    invoke-static/range {v1 .. v7}, Lope;->M(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lope;
 
     move-result-object v0
 
@@ -590,11 +590,11 @@
 
     const v11, 0x7f090005
 
-    new-instance v12, Ldefpackage/kaf;
+    new-instance v12, Lkaf;
 
-    invoke-direct {v12, v5}, Ldefpackage/kaf;-><init>(Lcom/google/android/apps/camera/zoomui/ZoomKnob;)V
+    invoke-direct {v12, v5}, Lkaf;-><init>(Lcom/google/android/apps/camera/zoomui/ZoomKnob;)V
 
-    invoke-static {v10, v11, v12}, Ldefpackage/ei;->e(Landroid/content/Context;ILdefpackage/eg;)V
+    invoke-static {v10, v11, v12}, Lei;->e(Landroid/content/Context;ILeg;)V
 
     .line 167
     invoke-virtual {v1}, Landroid/widget/SeekBar;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -746,7 +746,7 @@
 
     .end local v2    # "dimensionPixelSize":I
     .local v18, "dimensionPixelSize":I
-    invoke-static {v1}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v1}, Ljsa;->b(F)I
 
     move-result v2
 
@@ -806,7 +806,7 @@
 
     const/high16 v3, 0x42500000    # 52.0f
 
-    invoke-static {v3}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v3}, Ljsa;->b(F)I
 
     move-result v1
 
@@ -868,7 +868,7 @@
 
     const/high16 v3, 0x42500000    # 52.0f
 
-    invoke-static {v3}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v3}, Ljsa;->b(F)I
 
     move-result v3
 
@@ -944,9 +944,9 @@
     .param p2, "i2"    # I
 
     .line 219
-    iget-object v0, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ljrz;
 
-    invoke-static {v0}, Ldefpackage/jrz;->b(Ldefpackage/jrz;)Z
+    invoke-static {v0}, Ljrz;->b(Ljrz;)Z
 
     move-result v0
 
@@ -966,10 +966,10 @@
     return-void
 .end method
 
-.method public final p(ZLdefpackage/lzi;)V
+.method public final p(ZLlzi;)V
     .locals 12
     .param p1, "z"    # Z
-    .param p2, "lziVar"    # Ldefpackage/lzi;
+    .param p2, "lziVar"    # Llzi;
 
     .line 228
     const/4 v0, 0x0
@@ -1151,7 +1151,7 @@
     .line 251
     const v0, 0x7f0400e9
 
-    invoke-static {v1, v0}, Ldefpackage/obr;->e(Landroid/view/View;I)I
+    invoke-static {v1, v0}, Lobr;->e(Landroid/view/View;I)I
 
     move-result v0
 
@@ -1167,7 +1167,7 @@
 
     const v4, 0x7f080065
 
-    invoke-static {v3, v4}, Ldefpackage/aar;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v3, v4}, Laar;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
@@ -1295,18 +1295,18 @@
 
     move-result-object v0
 
-    iput-object p2, v0, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->j:Ldefpackage/lzi;
+    iput-object p2, v0, Lcom/google/android/apps/camera/zoomui/ZoomKnob;->j:Llzi;
 
     .line 272
     return-void
 .end method
 
-.method public final q(Ldefpackage/jrz;)V
+.method public final q(Ljrz;)V
     .locals 3
-    .param p1, "jrzVar"    # Ldefpackage/jrz;
+    .param p1, "jrzVar"    # Ljrz;
 
     .line 275
-    iget-object v0, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ldefpackage/jrz;
+    iget-object v0, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ljrz;
 
     if-ne v0, p1, :cond_1
 
@@ -1325,7 +1325,7 @@
     .line 276
     :cond_1
     :goto_0
-    iput-object p1, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ldefpackage/jrz;
+    iput-object p1, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ljrz;
 
     .line 277
     invoke-direct {p0}, Lcom/google/android/apps/camera/zoomui/ZoomUi;->v()V
@@ -1345,15 +1345,15 @@
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setTranslationX(F)V
 
     .line 282
-    sget-object v0, Ldefpackage/kae;->ULTRAWIDE:Ldefpackage/kae;
+    sget-object v0, Lkae;->ULTRAWIDE:Lkae;
 
     .line 283
-    .local v0, "kaeVar":Ldefpackage/kae;
-    sget-object v1, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    .local v0, "kaeVar":Lkae;
+    sget-object v1, Ljrz;->PORTRAIT:Ljrz;
 
     .line 284
-    .local v1, "jrzVar2":Ldefpackage/jrz;
-    iget-object v2, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ldefpackage/jrz;
+    .local v1, "jrzVar2":Ljrz;
+    iget-object v2, p0, Lcom/google/android/apps/camera/zoomui/ZoomUi;->c:Ljrz;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -1778,14 +1778,14 @@
 
     .line 365
     .local v8, "i2":I
-    sget-object v9, Ldefpackage/kae;->ULTRAWIDE:Ldefpackage/kae;
+    sget-object v9, Lkae;->ULTRAWIDE:Lkae;
 
     .line 366
-    .local v9, "kaeVar":Ldefpackage/kae;
-    sget-object v10, Ldefpackage/jrz;->PORTRAIT:Ldefpackage/jrz;
+    .local v9, "kaeVar":Lkae;
+    sget-object v10, Ljrz;->PORTRAIT:Ljrz;
 
     .line 367
-    .local v10, "jrzVar":Ldefpackage/jrz;
+    .local v10, "jrzVar":Ljrz;
     if-eqz p1, :cond_1
 
     .line 368
@@ -1855,11 +1855,11 @@
 
     .line 380
     .local v12, "ofInt":Landroid/animation/ValueAnimator;
-    new-instance v14, Ldefpackage/kai;
+    new-instance v14, Lkai;
 
     const/4 v15, 0x3
 
-    invoke-direct {v14, v0, v15}, Ldefpackage/kai;-><init>(Lcom/google/android/apps/camera/zoomui/ZoomUi;I)V
+    invoke-direct {v14, v0, v15}, Lkai;-><init>(Lcom/google/android/apps/camera/zoomui/ZoomUi;I)V
 
     invoke-virtual {v12, v14}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -1876,9 +1876,9 @@
 
     .line 382
     .local v14, "ofInt2":Landroid/animation/ValueAnimator;
-    new-instance v15, Ldefpackage/kai;
+    new-instance v15, Lkai;
 
-    invoke-direct {v15, v0, v6}, Ldefpackage/kai;-><init>(Lcom/google/android/apps/camera/zoomui/ZoomUi;I)V
+    invoke-direct {v15, v0, v6}, Lkai;-><init>(Lcom/google/android/apps/camera/zoomui/ZoomUi;I)V
 
     invoke-virtual {v14, v15}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -1899,9 +1899,9 @@
 
     .line 384
     .local v5, "ofInt3":Landroid/animation/ValueAnimator;
-    new-instance v6, Ldefpackage/kai;
+    new-instance v6, Lkai;
 
-    invoke-direct {v6, v0, v13}, Ldefpackage/kai;-><init>(Lcom/google/android/apps/camera/zoomui/ZoomUi;I)V
+    invoke-direct {v6, v0, v13}, Lkai;-><init>(Lcom/google/android/apps/camera/zoomui/ZoomUi;I)V
 
     invoke-virtual {v5, v6}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -1929,9 +1929,9 @@
     invoke-virtual {v12, v0, v1}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 389
-    new-instance v0, Ldefpackage/adt;
+    new-instance v0, Ladt;
 
-    invoke-direct {v0}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v0}, Ladt;-><init>()V
 
     invoke-virtual {v6, v0}, Landroid/animation/AnimatorSet;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 

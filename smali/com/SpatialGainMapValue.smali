@@ -110,14 +110,14 @@
     return-object v1
 .end method
 
-.method public static final getSpatialGainMap(Ldefpackage/lzs;)Lcom/google/googlex/gcam/SpatialGainMap;
+.method public static final getSpatialGainMap(Llzs;)Lcom/google/googlex/gcam/SpatialGainMap;
     .locals 20
-    .param p0, "lzsVar"    # Ldefpackage/lzs;
+    .param p0, "lzsVar"    # Llzs;
 
     .line 26
     move-object/from16 v0, p0
 
-    iget v1, v0, Ldefpackage/lzs;->d:F
+    iget v1, v0, Llzs;->d:F
 
     float-to-int v1, v1
 

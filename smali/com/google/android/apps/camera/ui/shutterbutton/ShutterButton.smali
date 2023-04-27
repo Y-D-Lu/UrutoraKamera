@@ -1,5 +1,5 @@
 .class public Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
-.super Ldefpackage/mw;
+.super Lmw;
 .source ""
 
 
@@ -14,7 +14,7 @@
 
 .field private static final BUTTON_DISABLED_DELAY_MS:I = 0x1f4
 
-.field private static final CAROUSEL_IDLE_MODES:Ldefpackage/ope;
+.field private static final CAROUSEL_IDLE_MODES:Lope;
 
 .field public static final DISABLED_FILTER_COLOR_VALUE:I = 0xa5
 
@@ -38,15 +38,15 @@
 
 .field private static final VIDEO_RECORDING_INTER_CIRCLE_RING_ALPHA:F = 0.86f
 
-.field private static final logger:Ldefpackage/ouj;
+.field private static final logger:Louj;
 
-.field private static msgHandler:Ldefpackage/jke;
+.field private static msgHandler:Ljke;
 
-.field public static progressState:Ldefpackage/jkf;
+.field public static progressState:Ljkf;
 
 
 # instance fields
-.field private applicationMode:Ldefpackage/jrl;
+.field private applicationMode:Ljrl;
 
 .field private blockClickForAnimation:Z
 
@@ -60,7 +60,7 @@
 
 .field public clickEnabled:Z
 
-.field private final clickEnabledObservable:Ldefpackage/lcw;
+.field private final clickEnabledObservable:Llcw;
 
 .field private currentInnerPortraitRingPaint:Landroid/graphics/Paint;
 
@@ -74,7 +74,7 @@
 
 .field private currentScaleFactor:F
 
-.field private currentSpec:Ldefpackage/jlq;
+.field private currentSpec:Ljlq;
 
 .field private final currentSpecLock:Ljava/lang/Object;
 
@@ -86,13 +86,13 @@
 
 .field private enableStateChangeAnimator:Landroid/animation/ValueAnimator;
 
-.field private final filteredClickEnabledObservable:Ldefpackage/lco;
+.field private final filteredClickEnabledObservable:Llco;
 
 .field private gestureDetector:Landroid/view/GestureDetector;
 
 .field private hasPressAndReleaseHaptic:Z
 
-.field public inFlightSpecBuilder:Ldefpackage/jlp;
+.field public inFlightSpecBuilder:Ljlp;
 
 .field private innerDotsCirclePaint:Landroid/graphics/Paint;
 
@@ -114,9 +114,9 @@
 
 .field private isZoomLockEnabled:Z
 
-.field public listener:Ldefpackage/jli;
+.field public listener:Ljli;
 
-.field private longPressMotionListener:Ldefpackage/jka;
+.field private longPressMotionListener:Ljka;
 
 .field public longPressStartMotionEvent:Landroid/view/MotionEvent;
 
@@ -132,13 +132,13 @@
 
 .field private oldPressed:Z
 
-.field private onDrawListener:Ldefpackage/jkb;
+.field private onDrawListener:Ljkb;
 
 .field private final tickMarkCircleState:[Z
 
 .field private tickMarkPaint:Landroid/graphics/Paint;
 
-.field private touchCoordinate:Ldefpackage/jrw;
+.field private touchCoordinate:Ljrw;
 
 .field private videoButtonStopSquarePaint:Landroid/graphics/Paint;
 
@@ -152,45 +152,45 @@
     .line 130
     const-string v0, "com/google/android/apps/camera/ui/shutterbutton/ShutterButton"
 
-    invoke-static {v0}, Ldefpackage/ouj;->h(Ljava/lang/String;)Ldefpackage/ouj;
+    invoke-static {v0}, Louj;->h(Ljava/lang/String;)Louj;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->logger:Ldefpackage/ouj;
+    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->logger:Louj;
 
     .line 131
-    sget-object v1, Ldefpackage/jkc;->NIGHT_IDLE:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->NIGHT_IDLE:Ljkc;
 
-    sget-object v2, Ldefpackage/jkc;->ASTRO_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->ASTRO_IDLE:Ljkc;
 
-    sget-object v3, Ldefpackage/jkc;->PORTRAIT_IDLE:Ldefpackage/jkc;
+    sget-object v3, Ljkc;->PORTRAIT_IDLE:Ljkc;
 
-    sget-object v4, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v4, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    sget-object v5, Ldefpackage/jkc;->TIMELAPSE_IDLE:Ldefpackage/jkc;
+    sget-object v5, Ljkc;->TIMELAPSE_IDLE:Ljkc;
 
-    sget-object v6, Ldefpackage/jkc;->VIDEO_IDLE:Ldefpackage/jkc;
+    sget-object v6, Ljkc;->VIDEO_IDLE:Ljkc;
 
     const/4 v0, 0x1
 
     new-array v7, v0, [Ljava/lang/Object;
 
-    sget-object v0, Ldefpackage/jkc;->LASAGNA_IDLE:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->LASAGNA_IDLE:Ljkc;
 
     const/4 v8, 0x0
 
     aput-object v0, v7, v8
 
-    invoke-static/range {v1 .. v7}, Ldefpackage/ope;->M(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ldefpackage/ope;
+    invoke-static/range {v1 .. v7}, Lope;->M(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lope;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->CAROUSEL_IDLE_MODES:Ldefpackage/ope;
+    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->CAROUSEL_IDLE_MODES:Lope;
 
     .line 132
-    sget-object v0, Ldefpackage/jkf;->STATE_NONE:Ldefpackage/jkf;
+    sget-object v0, Ljkf;->STATE_NONE:Ljkf;
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
     return-void
 .end method
@@ -201,7 +201,7 @@
     .param p2, "attributeSet"    # Landroid/util/AttributeSet;
 
     .line 135
-    invoke-direct {p0, p1, p2}, Ldefpackage/mw;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lmw;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 136
     const/4 v0, 0x0
@@ -212,24 +212,24 @@
     iput-boolean v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->clickEnabled:Z
 
     .line 138
-    new-instance v1, Ldefpackage/lcw;
+    new-instance v1, Llcw;
 
     new-instance v2, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton$1;
 
     invoke-direct {v2, p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton$1;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
 
-    invoke-direct {v1, v2}, Ldefpackage/lcw;-><init>(Ldefpackage/ojz;)V
+    invoke-direct {v1, v2}, Llcw;-><init>(Lojz;)V
 
     .line 144
-    .local v1, "lcwVar":Ldefpackage/lcw;
-    iput-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->clickEnabledObservable:Ldefpackage/lcw;
+    .local v1, "lcwVar":Llcw;
+    iput-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->clickEnabledObservable:Llcw;
 
     .line 145
-    invoke-static {v1}, Ldefpackage/lci;->c(Ldefpackage/lco;)Ldefpackage/lco;
+    invoke-static {v1}, Llci;->c(Llco;)Llco;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->filteredClickEnabledObservable:Ldefpackage/lco;
+    iput-object v2, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->filteredClickEnabledObservable:Llco;
 
     .line 146
     new-instance v2, Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -340,9 +340,9 @@
     if-gtz v0, :cond_0
 
     .line 161
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->logger:Ldefpackage/ouj;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->logger:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->c()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->c()Lova;
 
     move-result-object v0
 
@@ -350,7 +350,7 @@
 
     const/16 v4, 0xd5b
 
-    invoke-interface {v0, v4}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v0, v4}, Lova;->G(I)Lova;
 
     move-result-object v0
 
@@ -358,7 +358,7 @@
 
     const-string v4, "System has invalid long press threshold value=%d ms"
 
-    invoke-interface {v0, v4, v2, v3}, Ldefpackage/ova;->q(Ljava/lang/String;J)V
+    invoke-interface {v0, v4, v2, v3}, Lova;->q(Ljava/lang/String;J)V
 
     .line 163
     :cond_0
@@ -368,11 +368,11 @@
     return-void
 .end method
 
-.method private animateMainButton(Ldefpackage/jkc;Ldefpackage/hti;Ldefpackage/jkz;)V
+.method private animateMainButton(Ljkc;Lhti;Ljkz;)V
     .locals 7
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
-    .param p2, "htiVar"    # Ldefpackage/hti;
-    .param p3, "jkzVar"    # Ldefpackage/jkz;
+    .param p1, "jkcVar"    # Ljkc;
+    .param p2, "htiVar"    # Lhti;
+    .param p3, "jkzVar"    # Ljkz;
 
     .line 167
     const/4 v0, 0x1
@@ -380,12 +380,12 @@
     invoke-virtual {p0, v0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->cancelModeTransitionAnimations(Z)V
 
     .line 168
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
     .line 169
-    .local v0, "currentSpec":Ldefpackage/jlq;
+    .local v0, "currentSpec":Ljlq;
     iget-boolean v4, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
     iget-boolean v5, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isZoomLockEnabled:Z
@@ -398,32 +398,32 @@
 
     move-object v3, p0
 
-    invoke-static/range {v1 .. v6}, Ldefpackage/jlq;->b(Ldefpackage/jkc;Ldefpackage/hti;Landroid/view/View;ZZZ)Ldefpackage/jlq;
+    invoke-static/range {v1 .. v6}, Ljlq;->b(Ljkc;Lhti;Landroid/view/View;ZZZ)Ljlq;
 
     move-result-object v1
 
     .line 170
-    .local v1, "b":Ldefpackage/jlq;
-    iget-object v2, p3, Ldefpackage/jkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
+    .local v1, "b":Ljlq;
+    iget-object v2, p3, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-    invoke-virtual {v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v2
 
-    invoke-virtual {p3, v2, v1}, Ldefpackage/jkz;->a(Ldefpackage/jlq;Ldefpackage/jlq;)Landroid/animation/AnimatorSet;
+    invoke-virtual {p3, v2, v1}, Ljkz;->a(Ljlq;Ljlq;)Landroid/animation/AnimatorSet;
 
     move-result-object v2
 
     .line 171
     .local v2, "a":Landroid/animation/AnimatorSet;
-    invoke-direct {p0, v0, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setSpecsForAnimatorTransition(Ldefpackage/jlq;Ldefpackage/jlq;)V
+    invoke-direct {p0, v0, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setSpecsForAnimatorTransition(Ljlq;Ljlq;)V
 
     .line 172
     new-instance v3, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton$2;
 
-    invoke-direct {v3, p0, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton$2;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;Ldefpackage/jlq;)V
+    invoke-direct {v3, p0, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton$2;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;Ljlq;)V
 
-    invoke-static {v3}, Ldefpackage/mip;->ev(Ljava/util/function/Consumer;)Landroid/animation/Animator$AnimatorListener;
+    invoke-static {v3}, Lmip;->ev(Ljava/util/function/Consumer;)Landroid/animation/Animator$AnimatorListener;
 
     move-result-object v3
 
@@ -444,15 +444,15 @@
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
     .line 188
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
     .line 189
-    .local v0, "currentSpec":Ldefpackage/jlq;
+    .local v0, "currentSpec":Ljlq;
     iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->innerDotsCirclePaint:Landroid/graphics/Paint;
 
-    iget v2, v0, Ldefpackage/jlq;->s:I
+    iget v2, v0, Ljlq;->s:I
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setAlpha(I)V
 
@@ -490,7 +490,7 @@
 
     .line 194
     .local v2, "i2":I
-    iget v3, v0, Ldefpackage/jlq;->E:I
+    iget v3, v0, Ljlq;->E:I
 
     .line 195
     .local v3, "i3":I
@@ -506,7 +506,7 @@
 
     const/high16 v6, 0x3fc00000    # 1.5f
 
-    invoke-static {v6}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v6}, Ljsa;->b(F)I
 
     move-result v6
 
@@ -541,15 +541,15 @@
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
     .line 201
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_NONE:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_NONE:Ljkf;
 
     if-eq v0, v1, :cond_4
 
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_IDLE:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_IDLE:Ljkf;
 
     if-ne v0, v1, :cond_0
 
@@ -557,25 +557,25 @@
 
     .line 204
     :cond_0
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
     .line 205
-    .local v0, "currentSpec":Ldefpackage/jlq;
-    iget v1, v0, Ldefpackage/jlq;->z:I
+    .local v0, "currentSpec":Ljlq;
+    iget v1, v0, Ljlq;->z:I
 
     int-to-float v1, v1
 
     .line 206
     .local v1, "f":F
-    iget v2, v0, Ldefpackage/jlq;->A:I
+    iget v2, v0, Ljlq;->A:I
 
     int-to-float v2, v2
 
     .line 207
     .local v2, "f2":F
-    iget v3, v0, Ldefpackage/jlq;->B:I
+    iget v3, v0, Ljlq;->B:I
 
     int-to-float v11, v3
 
@@ -601,9 +601,9 @@
 
     .line 222
     .end local v13    # "zArr":[Z
-    sget-object v3, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v3, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v4, Ldefpackage/jkf;->STATE_PAUSE:Ldefpackage/jkf;
+    sget-object v4, Ljkf;->STATE_PAUSE:Ljkf;
 
     if-eq v3, v4, :cond_1
 
@@ -649,7 +649,7 @@
 
     const/high16 v4, 0x3f000000    # 0.5f
 
-    invoke-static {v4}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v4}, Ljsa;->b(F)I
 
     move-result v5
 
@@ -659,7 +659,7 @@
 
     iget v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->buttonCenterX:I
 
-    invoke-static {v4}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v4}, Ljsa;->b(F)I
 
     move-result v4
 
@@ -697,7 +697,7 @@
     goto :goto_0
 
     .line 202
-    .end local v0    # "currentSpec":Ldefpackage/jlq;
+    .end local v0    # "currentSpec":Ljlq;
     .end local v1    # "f":F
     .end local v2    # "f2":F
     .end local v11    # "f3":F
@@ -711,10 +711,10 @@
     .locals 3
 
     .line 229
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     .line 230
-    .local v0, "jliVar":Ldefpackage/jli;
+    .local v0, "jliVar":Ljli;
     if-eqz v0, :cond_0
 
     .line 231
@@ -725,20 +725,20 @@
     invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 232
-    invoke-interface {v0}, Ldefpackage/jli;->onShutterButtonLongPressRelease()V
+    invoke-interface {v0}, Ljli;->onShutterButtonLongPressRelease()V
 
     .line 233
-    invoke-interface {v0, v2}, Ldefpackage/jli;->onShutterButtonPressedStateChanged(Z)V
+    invoke-interface {v0, v2}, Ljli;->onShutterButtonPressedStateChanged(Z)V
 
     .line 235
     :cond_0
     return-void
 .end method
 
-.method private getColorFilterToApply(ZLdefpackage/jkc;)Landroid/graphics/ColorFilter;
+.method private getColorFilterToApply(ZLjkc;)Landroid/graphics/ColorFilter;
     .locals 4
     .param p1, "z"    # Z
-    .param p2, "jkcVar"    # Ldefpackage/jkc;
+    .param p2, "jkcVar"    # Ljkc;
 
     .line 238
     iget-boolean v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->visualFeedbackForEnableState:Z
@@ -747,9 +747,9 @@
 
     if-nez p1, :cond_1
 
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->CAROUSEL_IDLE_MODES:Ldefpackage/ope;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->CAROUSEL_IDLE_MODES:Lope;
 
-    invoke-virtual {v0, p2}, Ldefpackage/ood;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p2}, Lood;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -784,15 +784,15 @@
     return-object v0
 .end method
 
-.method private getContentDescriptionIdForMode(Ldefpackage/jkc;)I
+.method private getContentDescriptionIdForMode(Ljkc;)I
     .locals 4
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
+    .param p1, "jkcVar"    # Ljkc;
 
     .line 246
-    sget-object v0, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->PHOTO_IDLE:Ljkc;
 
     .line 247
-    .local v0, "jkcVar2":Ldefpackage/jkc;
+    .local v0, "jkcVar2":Ljkc;
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
@@ -878,9 +878,9 @@
 
     .line 266
     :pswitch_c
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->applicationMode:Ldefpackage/jrl;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->applicationMode:Ljrl;
 
-    sget-object v3, Ldefpackage/jrl;->SLOW_MOTION:Ldefpackage/jrl;
+    sget-object v3, Ljrl;->SLOW_MOTION:Ljrl;
 
     if-ne v1, v3, :cond_0
 
@@ -903,9 +903,9 @@
 
     .line 257
     :pswitch_f
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->applicationMode:Ldefpackage/jrl;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->applicationMode:Ljrl;
 
-    sget-object v2, Ldefpackage/jrl;->SLOW_MOTION:Ldefpackage/jrl;
+    sget-object v2, Ljrl;->SLOW_MOTION:Ljrl;
 
     if-ne v1, v2, :cond_1
 
@@ -987,9 +987,9 @@
     .line 310
     new-instance v0, Landroid/view/GestureDetector;
 
-    new-instance v2, Ldefpackage/jjz;
+    new-instance v2, Ljjz;
 
-    invoke-direct {v2, v6}, Ldefpackage/jjz;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
+    invoke-direct {v2, v6}, Ljjz;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
 
     move-object/from16 v7, p1
 
@@ -1270,7 +1270,7 @@
 
     const v1, 0x40133333    # 2.3f
 
-    invoke-static {v1}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v1}, Ljsa;->b(F)I
 
     move-result v1
 
@@ -1279,9 +1279,9 @@
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 354
-    sget-object v0, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    sget-object v1, Ldefpackage/hti;->e:Ldefpackage/hti;
+    sget-object v1, Lhti;->e:Lhti;
 
     iget-boolean v3, v6, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
@@ -1291,13 +1291,13 @@
 
     move-object/from16 v2, p0
 
-    invoke-static/range {v0 .. v5}, Ldefpackage/jlq;->b(Ldefpackage/jkc;Ldefpackage/hti;Landroid/view/View;ZZZ)Ldefpackage/jlq;
+    invoke-static/range {v0 .. v5}, Ljlq;->b(Ljkc;Lhti;Landroid/view/View;ZZZ)Ljlq;
 
     move-result-object v0
 
     .line 355
-    .local v0, "b":Ldefpackage/jlq;
-    invoke-direct {v6, v0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setCurrentSpec(Ldefpackage/jlq;)V
+    .local v0, "b":Ljlq;
+    invoke-direct {v6, v0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setCurrentSpec(Ljlq;)V
 
     .line 356
     invoke-direct/range {p0 .. p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetShutterButton()V
@@ -1317,16 +1317,16 @@
     iput v1, v6, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentScaleFactor:F
 
     .line 359
-    new-instance v1, Ldefpackage/jkd;
+    new-instance v1, Ljkd;
 
-    invoke-direct {v1, v6}, Ldefpackage/jkd;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
+    invoke-direct {v1, v6}, Ljkd;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
 
     invoke-virtual {v6, v1}, Landroid/widget/ImageButton;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
 
     .line 360
-    iget-object v1, v0, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v1, v0, Ljlq;->x:Ljkc;
 
-    invoke-direct {v6, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->updateContentDescription(Ldefpackage/jkc;)V
+    invoke-direct {v6, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->updateContentDescription(Ljkc;)V
 
     .line 361
     invoke-virtual {v6, v10}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setClickEnabled(Z)V
@@ -1335,20 +1335,20 @@
     return-void
 .end method
 
-.method private isLasagnaShutter(Ldefpackage/jkc;)Z
+.method private isLasagnaShutter(Ljkc;)Z
     .locals 1
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
+    .param p1, "jkcVar"    # Ljkc;
 
     .line 365
-    sget-object v0, Ldefpackage/jkc;->LASAGNA_IDLE:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->LASAGNA_IDLE:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->LASAGNA_PRESSED:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->LASAGNA_PRESSED:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->LASAGNA_PROCESSING:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->LASAGNA_PROCESSING:Ljkc;
 
     if-ne p1, v0, :cond_0
 
@@ -1371,28 +1371,28 @@
     .locals 10
 
     .line 369
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
     .line 370
-    .local v0, "currentSpec":Ldefpackage/jlq;
-    iget-object v1, v0, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    .local v0, "currentSpec":Ljlq;
+    iget-object v1, v0, Ljlq;->x:Ljkc;
 
     .line 371
-    .local v1, "jkcVar":Ldefpackage/jkc;
-    iget-object v2, v0, Ldefpackage/jlq;->y:Ldefpackage/hti;
+    .local v1, "jkcVar":Ljkc;
+    iget-object v2, v0, Ljlq;->y:Lhti;
 
     .line 372
-    .local v2, "htiVar":Ldefpackage/hti;
+    .local v2, "htiVar":Lhti;
     const/4 v3, 0x0
 
     invoke-virtual {p0, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->cancelModeTransitionAnimations(Z)V
 
     .line 373
-    iget-object v4, v0, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v4, v0, Ljlq;->x:Ljkc;
 
-    iget-object v5, v0, Ldefpackage/jlq;->y:Ldefpackage/hti;
+    iget-object v5, v0, Ljlq;->y:Lhti;
 
     iget-boolean v7, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
@@ -1402,11 +1402,11 @@
 
     move-object v6, p0
 
-    invoke-static/range {v4 .. v9}, Ldefpackage/jlq;->b(Ldefpackage/jkc;Ldefpackage/hti;Landroid/view/View;ZZZ)Ldefpackage/jlq;
+    invoke-static/range {v4 .. v9}, Ljlq;->b(Ljkc;Lhti;Landroid/view/View;ZZZ)Ljlq;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setCurrentSpec(Ldefpackage/jlq;)V
+    invoke-direct {p0, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setCurrentSpec(Ljlq;)V
 
     .line 374
     invoke-virtual {p0}, Landroid/widget/ImageButton;->invalidate()V
@@ -1471,9 +1471,9 @@
     .line 385
     iget-object v2, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->enableStateChangeAnimator:Landroid/animation/ValueAnimator;
 
-    new-instance v4, Ldefpackage/jjw;
+    new-instance v4, Ljjw;
 
-    invoke-direct {v4, p0, v3}, Ldefpackage/jjw;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;I)V
+    invoke-direct {v4, p0, v3}, Ljjw;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;I)V
 
     invoke-virtual {v2, v4}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -1497,9 +1497,9 @@
     return-void
 .end method
 
-.method private setCurrentSpec(Ldefpackage/jlq;)V
+.method private setCurrentSpec(Ljlq;)V
     .locals 2
-    .param p1, "jlqVar"    # Ldefpackage/jlq;
+    .param p1, "jlqVar"    # Ljlq;
 
     .line 393
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentSpecLock:Ljava/lang/Object;
@@ -1508,7 +1508,7 @@
 
     .line 394
     :try_start_0
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentSpec:Ldefpackage/jlq;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentSpec:Ljlq;
 
     .line 395
     monitor-exit v0
@@ -1516,11 +1516,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 396
-    invoke-virtual {p1}, Ldefpackage/jlq;->c()Ldefpackage/jlp;
+    invoke-virtual {p1}, Ljlq;->c()Ljlp;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->inFlightSpecBuilder:Ldefpackage/jlp;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->inFlightSpecBuilder:Ljlp;
 
     .line 397
     return-void
@@ -1537,10 +1537,10 @@
     throw v1
 .end method
 
-.method private setSpecsForAnimatorTransition(Ldefpackage/jlq;Ldefpackage/jlq;)V
+.method private setSpecsForAnimatorTransition(Ljlq;Ljlq;)V
     .locals 2
-    .param p1, "jlqVar"    # Ldefpackage/jlq;
-    .param p2, "jlqVar2"    # Ldefpackage/jlq;
+    .param p1, "jlqVar"    # Ljlq;
+    .param p2, "jlqVar2"    # Ljlq;
 
     .line 400
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentSpecLock:Ljava/lang/Object;
@@ -1549,7 +1549,7 @@
 
     .line 401
     :try_start_0
-    iput-object p2, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentSpec:Ldefpackage/jlq;
+    iput-object p2, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentSpec:Ljlq;
 
     .line 402
     monitor-exit v0
@@ -1557,11 +1557,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 403
-    invoke-virtual {p1}, Ldefpackage/jlq;->c()Ldefpackage/jlp;
+    invoke-virtual {p1}, Ljlq;->c()Ljlp;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->inFlightSpecBuilder:Ldefpackage/jlp;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->inFlightSpecBuilder:Ljlp;
 
     .line 404
     return-void
@@ -1578,52 +1578,52 @@
     throw v1
 .end method
 
-.method private shouldDrawVideoDotOrSquare(Ldefpackage/jkc;)Z
+.method private shouldDrawVideoDotOrSquare(Ljkc;)Z
     .locals 1
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
+    .param p1, "jkcVar"    # Ljkc;
 
     .line 407
-    sget-object v0, Ldefpackage/jkc;->VIDEO_IDLE:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->VIDEO_IDLE:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->VIDEO_PRESSED:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->VIDEO_PRESSED:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->AUTOTIMER_RUNNING:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->AUTOTIMER_RUNNING:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->CONFIRM_ENABLED:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->CONFIRM_ENABLED:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->CONFIRM_DISABLED:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->CONFIRM_DISABLED:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->VIDEO_RECORDING:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->VIDEO_RECORDING:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->TIMELAPSE_IDLE:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->TIMELAPSE_IDLE:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->TIMELAPSE_RECORDING:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->TIMELAPSE_RECORDING:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->TIMELAPSE_PRESSED:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->TIMELAPSE_PRESSED:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->IMAX_RECORDING:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->IMAX_RECORDING:Ljkc;
 
     if-eq p1, v0, :cond_1
 
-    sget-object v0, Ldefpackage/jkc;->NIGHT_STOP:Ldefpackage/jkc;
+    sget-object v0, Ljkc;->NIGHT_STOP:Ljkc;
 
     if-ne p1, v0, :cond_0
 
@@ -1646,10 +1646,10 @@
     .locals 3
 
     .line 411
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     .line 412
-    .local v0, "jliVar":Ldefpackage/jli;
+    .local v0, "jliVar":Ljli;
     if-eqz v0, :cond_0
 
     .line 413
@@ -1660,10 +1660,10 @@
     invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 414
-    invoke-interface {v0, v2}, Ldefpackage/jli;->onShutterButtonPressedStateChanged(Z)V
+    invoke-interface {v0, v2}, Ljli;->onShutterButtonPressedStateChanged(Z)V
 
     .line 415
-    invoke-interface {v0}, Ldefpackage/jli;->onShutterButtonLongPressed()V
+    invoke-interface {v0}, Ljli;->onShutterButtonLongPressed()V
 
     .line 417
     :cond_0
@@ -1674,11 +1674,11 @@
     .locals 9
 
     .line 450
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
-    iget v0, v0, Ldefpackage/jlq;->v:I
+    iget v0, v0, Ljlq;->v:I
 
     int-to-float v0, v0
 
@@ -1726,16 +1726,16 @@
     return-void
 .end method
 
-.method private updateContentDescription(Ldefpackage/jkc;)V
+.method private updateContentDescription(Ljkc;)V
     .locals 2
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
+    .param p1, "jkcVar"    # Ljkc;
 
     .line 458
     invoke-virtual {p0}, Landroid/widget/ImageButton;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getContentDescriptionIdForMode(Ldefpackage/jkc;)I
+    invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getContentDescriptionIdForMode(Ljkc;)I
 
     move-result v1
 
@@ -1749,24 +1749,24 @@
     return-void
 .end method
 
-.method private updateHapticsForMode(Ldefpackage/jkc;)V
+.method private updateHapticsForMode(Ljkc;)V
     .locals 2
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
+    .param p1, "jkcVar"    # Ljkc;
 
     .line 462
     const/4 v0, 0x1
 
     .line 463
     .local v0, "z":Z
-    sget-object v1, Ldefpackage/jkc;->VIDEO_IDLE:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->VIDEO_IDLE:Ljkc;
 
     if-eq p1, v1, :cond_0
 
-    sget-object v1, Ldefpackage/jkc;->IMAX_IDLE:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->IMAX_IDLE:Ljkc;
 
     if-eq p1, v1, :cond_0
 
-    sget-object v1, Ldefpackage/jkc;->IMAX_RECORDING:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->IMAX_RECORDING:Ljkc;
 
     if-eq p1, v1, :cond_0
 
@@ -1785,7 +1785,7 @@
     .locals 4
 
     .line 470
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ldefpackage/jke;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ljke;
 
     const/16 v1, 0x3e9
 
@@ -1834,9 +1834,9 @@
 
     .line 475
     .local v0, "ofFloat":Landroid/animation/ValueAnimator;
-    new-instance v1, Ldefpackage/jjw;
+    new-instance v1, Ljjw;
 
-    invoke-direct {v1, p0, v2}, Ldefpackage/jjw;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;I)V
+    invoke-direct {v1, p0, v2}, Ljjw;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;I)V
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -1846,9 +1846,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 477
-    new-instance v1, Ldefpackage/adt;
+    new-instance v1, Ladt;
 
-    invoke-direct {v1}, Ldefpackage/adt;-><init>()V
+    invoke-direct {v1}, Ladt;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -1928,10 +1928,10 @@
 
     .line 523
     .local v2, "z":Z
-    iget-object v3, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v3, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     .line 524
-    .local v3, "jliVar":Ldefpackage/jli;
+    .local v3, "jliVar":Ljli;
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v4
@@ -2167,10 +2167,10 @@
 
     .line 539
     :cond_a
-    iget-object v13, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->longPressMotionListener:Ldefpackage/jka;
+    iget-object v13, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->longPressMotionListener:Ljka;
 
     .line 540
-    .local v13, "jkaVar":Ldefpackage/jka;
+    .local v13, "jkaVar":Ljka;
     iget-object v14, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->longPressStartMotionEvent:Landroid/view/MotionEvent;
 
     .line 541
@@ -2187,11 +2187,11 @@
 
     if-eqz v15, :cond_c
 
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getMode()Ldefpackage/jkc;
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getMode()Ljkc;
 
     move-result-object v15
 
-    sget-object v7, Ldefpackage/jkc;->PHOTO_LONGPRESS:Ldefpackage/jkc;
+    sget-object v7, Ljkc;->PHOTO_LONGPRESS:Ljkc;
 
     if-ne v15, v7, :cond_c
 
@@ -2206,7 +2206,7 @@
     const/4 v7, 0x0
 
     :goto_8
-    invoke-interface {v13, v1, v14, v6, v7}, Ldefpackage/jka;->a(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Landroid/graphics/Rect;Z)V
+    invoke-interface {v13, v1, v14, v6, v7}, Ljka;->a(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Landroid/graphics/Rect;Z)V
 
     .line 544
     :cond_c
@@ -2253,14 +2253,14 @@
 
     if-eqz v5, :cond_10
 
-    iget-object v5, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v5, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     move-object v3, v5
 
     if-eqz v5, :cond_10
 
     .line 548
-    invoke-interface {v3}, Ldefpackage/jli;->onShutterButtonLongPressRelease()V
+    invoke-interface {v3}, Ljli;->onShutterButtonLongPressRelease()V
 
     .line 550
     :cond_10
@@ -2273,7 +2273,7 @@
     if-ne v5, v7, :cond_11
 
     .line 551
-    new-instance v5, Ldefpackage/jrw;
+    new-instance v5, Ljrw;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -2295,9 +2295,9 @@
 
     int-to-float v15, v15
 
-    invoke-direct {v5, v7, v8, v9, v15}, Ldefpackage/jrw;-><init>(FFFF)V
+    invoke-direct {v5, v7, v8, v9, v15}, Ljrw;-><init>(FFFF)V
 
-    iput-object v5, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->touchCoordinate:Ldefpackage/jrw;
+    iput-object v5, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->touchCoordinate:Ljrw;
 
     .line 552
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->performHapticIfEnabled()V
@@ -2335,7 +2335,7 @@
     .end local v10    # "z2":Z
     .end local v11    # "iArr":[I
     .end local v12    # "i":I
-    .end local v13    # "jkaVar":Ldefpackage/jka;
+    .end local v13    # "jkaVar":Ljka;
     .end local v14    # "motionEvent2":Landroid/view/MotionEvent;
     :cond_13
     const/4 v2, 0x0
@@ -2467,10 +2467,10 @@
     nop
 
     .line 568
-    iget-object v12, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->longPressMotionListener:Ldefpackage/jka;
+    iget-object v12, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->longPressMotionListener:Ljka;
 
     .line 569
-    .local v12, "jkaVar":Ldefpackage/jka;
+    .local v12, "jkaVar":Ljka;
     iget-object v13, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->longPressStartMotionEvent:Landroid/view/MotionEvent;
 
     .line 570
@@ -2483,7 +2483,7 @@
     move v8, v11
 
     :cond_19
-    invoke-interface {v12, v1, v13, v10, v8}, Ldefpackage/jka;->a(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Landroid/graphics/Rect;Z)V
+    invoke-interface {v12, v1, v13, v10, v8}, Ljka;->a(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Landroid/graphics/Rect;Z)V
 
     .line 573
     :cond_1a
@@ -2522,7 +2522,7 @@
     .locals 4
 
     .line 597
-    invoke-super {p0}, Ldefpackage/mw;->drawableStateChanged()V
+    invoke-super {p0}, Lmw;->drawableStateChanged()V
 
     .line 598
     invoke-virtual {p0}, Landroid/widget/ImageButton;->isPressed()Z
@@ -2545,48 +2545,48 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     move-object v2, v1
 
-    .local v2, "jliVar":Ldefpackage/jli;
+    .local v2, "jliVar":Ljli;
     if-eqz v1, :cond_0
 
     .line 600
-    invoke-interface {v2}, Ldefpackage/jli;->onShutterButtonLongPressRelease()V
+    invoke-interface {v2}, Ljli;->onShutterButtonLongPressRelease()V
 
     .line 602
-    .end local v2    # "jliVar":Ldefpackage/jli;
+    .end local v2    # "jliVar":Ljli;
     :cond_0
     iget-boolean v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->oldPressed:Z
 
     if-eq v0, v1, :cond_2
 
     .line 603
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     .line 604
-    .local v1, "jliVar2":Ldefpackage/jli;
+    .local v1, "jliVar2":Ljli;
     if-eqz v1, :cond_1
 
     .line 605
-    invoke-interface {v1, v0}, Ldefpackage/jli;->onShutterButtonPressedStateChanged(Z)V
+    invoke-interface {v1, v0}, Ljli;->onShutterButtonPressedStateChanged(Z)V
 
     .line 607
     :cond_1
     iput-boolean v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->oldPressed:Z
 
     .line 609
-    .end local v1    # "jliVar2":Ldefpackage/jli;
+    .end local v1    # "jliVar2":Ljli;
     :cond_2
     return-void
 .end method
 
-.method public getClickEnabledObservable()Ldefpackage/lco;
+.method public getClickEnabledObservable()Llco;
     .locals 1
 
     .line 612
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->filteredClickEnabledObservable:Ldefpackage/lco;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->filteredClickEnabledObservable:Llco;
 
     return-object v0
 .end method
@@ -2606,7 +2606,7 @@
     return-object v0
 .end method
 
-.method public getCurrentSpec()Ldefpackage/jlq;
+.method public getCurrentSpec()Ljlq;
     .locals 2
 
     .line 621
@@ -2616,17 +2616,17 @@
 
     .line 622
     :try_start_0
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentSpec:Ldefpackage/jlq;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentSpec:Ljlq;
 
     .line 623
-    .local v1, "jlqVar":Ldefpackage/jlq;
+    .local v1, "jlqVar":Ljlq;
     monitor-exit v0
 
     .line 624
     return-object v1
 
     .line 623
-    .end local v1    # "jlqVar":Ldefpackage/jlq;
+    .end local v1    # "jlqVar":Ljlq;
     :catchall_0
     move-exception v1
 
@@ -2666,15 +2666,15 @@
     return v0
 .end method
 
-.method public getMode()Ldefpackage/jkc;
+.method public getMode()Ljkc;
     .locals 1
 
     .line 641
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
-    iget-object v0, v0, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v0, v0, Ljlq;->x:Ljkc;
 
     return-object v0
 .end method
@@ -2694,7 +2694,7 @@
     .line 649
     const/high16 v0, 0x40400000    # 3.0f
 
-    invoke-static {v0}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v0}, Ljsa;->b(F)I
 
     move-result v0
 
@@ -2782,17 +2782,17 @@
     return v0
 .end method
 
-.method public m45x7a0dc3(Ldefpackage/jlq;Landroid/animation/Animator;)V
+.method public m45x7a0dc3(Ljlq;Landroid/animation/Animator;)V
     .locals 1
-    .param p1, "jlqVar"    # Ldefpackage/jlq;
+    .param p1, "jlqVar"    # Ljlq;
     .param p2, "animator"    # Landroid/animation/Animator;
 
     .line 676
-    invoke-virtual {p1}, Ldefpackage/jlq;->c()Ldefpackage/jlp;
+    invoke-virtual {p1}, Ljlq;->c()Ljlp;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->inFlightSpecBuilder:Ldefpackage/jlp;
+    iput-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->inFlightSpecBuilder:Ljlp;
 
     .line 677
     invoke-virtual {p0}, Landroid/widget/ImageButton;->invalidate()V
@@ -2877,24 +2877,24 @@
 
     move-object/from16 v9, p1
 
-    iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->inFlightSpecBuilder:Ldefpackage/jlp;
+    iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->inFlightSpecBuilder:Ljlp;
 
-    invoke-virtual {v1}, Ldefpackage/jlp;->a()Ldefpackage/jlq;
+    invoke-virtual {v1}, Ljlp;->a()Ljlq;
 
     move-result-object v10
 
     .line 702
-    .local v10, "a":Ldefpackage/jlq;
+    .local v10, "a":Ljlq;
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentPhotoCirclePaint:Landroid/graphics/Paint;
 
-    iget v2, v10, Ldefpackage/jlq;->h:I
+    iget v2, v10, Ljlq;->h:I
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 703
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentPhotoCirclePaint:Landroid/graphics/Paint;
 
-    iget v2, v10, Ldefpackage/jlq;->g:I
+    iget v2, v10, Ljlq;->g:I
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setAlpha(I)V
 
@@ -2973,7 +2973,7 @@
 
     const/high16 v6, 0x40400000    # 3.0f
 
-    invoke-static {v6}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v6}, Ljsa;->b(F)I
 
     move-result v6
 
@@ -3034,14 +3034,14 @@
     .line 721
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->mainInnerCircleButtonPaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->u:I
+    iget v3, v10, Ljlq;->u:I
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 722
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->mainInnerCircleButtonPaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->k:I
+    iget v3, v10, Ljlq;->k:I
 
     if-lez v3, :cond_1
 
@@ -3065,21 +3065,21 @@
     :cond_2
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentRipplePaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->s:I
+    iget v3, v10, Ljlq;->s:I
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setAlpha(I)V
 
     .line 725
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentVideoCirclePaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->j:I
+    iget v3, v10, Ljlq;->j:I
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 726
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentMainButtonPaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->u:I
+    iget v3, v10, Ljlq;->u:I
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -3088,9 +3088,9 @@
 
     move-result v1
 
-    iget-object v3, v10, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v3, v10, Ljlq;->x:Ljkc;
 
-    invoke-direct {v0, v1, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getColorFilterToApply(ZLdefpackage/jkc;)Landroid/graphics/ColorFilter;
+    invoke-direct {v0, v1, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getColorFilterToApply(ZLjkc;)Landroid/graphics/ColorFilter;
 
     move-result-object v11
 
@@ -3143,14 +3143,14 @@
     invoke-virtual {v1, v11}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
     .line 739
-    iget-object v12, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->onDrawListener:Ldefpackage/jkb;
+    iget-object v12, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->onDrawListener:Ljkb;
 
     .line 740
-    .local v12, "jkbVar":Ldefpackage/jkb;
+    .local v12, "jkbVar":Ljkb;
     if-eqz v12, :cond_4
 
     .line 741
-    invoke-interface {v12}, Ldefpackage/jkb;->a()V
+    invoke-interface {v12}, Ljkb;->a()V
 
     .line 742
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isClickEnabledAndNotBlocked()Z
@@ -3160,9 +3160,9 @@
     if-eqz v1, :cond_4
 
     .line 743
-    iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->onDrawListener:Ldefpackage/jkb;
+    iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->onDrawListener:Ljkb;
 
-    invoke-interface {v1}, Ldefpackage/jkb;->b()V
+    invoke-interface {v1}, Ljkb;->b()V
 
     .line 746
     :cond_4
@@ -3173,14 +3173,14 @@
     .line 747
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->mainOuterCircleButtonPaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->D:I
+    iget v3, v10, Ljlq;->D:I
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setAlpha(I)V
 
     .line 748
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentRipplePaint:Landroid/graphics/Paint;
 
-    invoke-static/range {p0 .. p0}, Ldefpackage/mip;->dU(Landroid/view/View;)I
+    invoke-static/range {p0 .. p0}, Lmip;->dU(Landroid/view/View;)I
 
     move-result v3
 
@@ -3189,21 +3189,21 @@
     .line 749
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentPhotoCirclePaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->h:I
+    iget v3, v10, Ljlq;->h:I
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 750
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->currentPhotoCirclePaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->g:I
+    iget v3, v10, Ljlq;->g:I
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setAlpha(I)V
 
     .line 751
     iget-object v1, v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->innerDotsCirclePaint:Landroid/graphics/Paint;
 
-    iget v3, v10, Ldefpackage/jlq;->F:I
+    iget v3, v10, Ljlq;->F:I
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -3216,7 +3216,7 @@
 
     int-to-float v3, v3
 
-    iget v5, v10, Ldefpackage/jlq;->w:I
+    iget v5, v10, Ljlq;->w:I
 
     int-to-float v5, v5
 
@@ -3237,7 +3237,7 @@
 
     int-to-float v3, v3
 
-    iget v5, v10, Ldefpackage/jlq;->v:I
+    iget v5, v10, Ljlq;->v:I
 
     int-to-float v5, v5
 
@@ -3250,11 +3250,11 @@
     invoke-virtual {v9, v1, v3, v5, v6}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     .line 754
-    iget v1, v10, Ldefpackage/jlq;->m:I
+    iget v1, v10, Ljlq;->m:I
 
     .line 755
     .local v1, "i":I
-    iget v3, v10, Ldefpackage/jlq;->f:I
+    iget v3, v10, Ljlq;->f:I
 
     if-ne v1, v3, :cond_5
 
@@ -3279,11 +3279,11 @@
 
     .line 758
     :cond_5
-    iget v3, v10, Ldefpackage/jlq;->l:I
+    iget v3, v10, Ljlq;->l:I
 
     .line 759
     .local v3, "i2":I
-    iget v5, v10, Ldefpackage/jlq;->f:I
+    iget v5, v10, Ljlq;->f:I
 
     if-ge v3, v5, :cond_6
 
@@ -3308,7 +3308,7 @@
 
     .line 762
     :cond_6
-    iget v5, v10, Ldefpackage/jlq;->g:I
+    iget v5, v10, Ljlq;->g:I
 
     if-lez v5, :cond_7
 
@@ -3321,7 +3321,7 @@
 
     int-to-float v6, v6
 
-    iget v7, v10, Ldefpackage/jlq;->f:I
+    iget v7, v10, Ljlq;->f:I
 
     int-to-float v7, v7
 
@@ -3335,12 +3335,12 @@
 
     .line 765
     :cond_7
-    iget-boolean v5, v10, Ldefpackage/jlq;->r:Z
+    iget-boolean v5, v10, Ljlq;->r:Z
 
     if-eqz v5, :cond_c
 
     .line 766
-    iget v5, v10, Ldefpackage/jlq;->t:I
+    iget v5, v10, Ljlq;->t:I
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/ImageButton;->getResources()Landroid/content/res/Resources;
 
@@ -3355,9 +3355,9 @@
     if-lt v5, v6, :cond_a
 
     .line 767
-    iget-object v2, v10, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v2, v10, Ljlq;->x:Ljkc;
 
-    invoke-direct {v0, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isLasagnaShutter(Ldefpackage/jkc;)Z
+    invoke-direct {v0, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isLasagnaShutter(Ljkc;)Z
 
     move-result v2
 
@@ -3370,9 +3370,9 @@
 
     move-result-object v5
 
-    iget-object v6, v10, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v6, v10, Ljlq;->x:Ljkc;
 
-    sget-object v7, Ldefpackage/jkc;->PHOTO_LONGPRESS:Ldefpackage/jkc;
+    sget-object v7, Ljkc;->PHOTO_LONGPRESS:Ljkc;
 
     if-ne v6, v7, :cond_9
 
@@ -3403,13 +3403,13 @@
 
     .line 770
     :cond_a
-    iget-object v5, v10, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v5, v10, Ljlq;->x:Ljkc;
 
-    sget-object v6, Ldefpackage/jkc;->PHOTO_LONGPRESS:Ldefpackage/jkc;
+    sget-object v6, Ljkc;->PHOTO_LONGPRESS:Ljkc;
 
     if-ne v5, v6, :cond_b
 
-    iget v5, v10, Ldefpackage/jlq;->t:I
+    iget v5, v10, Ljlq;->t:I
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/ImageButton;->getResources()Landroid/content/res/Resources;
 
@@ -3447,7 +3447,7 @@
 
     int-to-float v4, v4
 
-    iget v5, v10, Ldefpackage/jlq;->t:I
+    iget v5, v10, Ljlq;->t:I
 
     int-to-float v5, v5
 
@@ -3461,7 +3461,7 @@
 
     .line 775
     :cond_c
-    iget v2, v10, Ldefpackage/jlq;->E:I
+    iget v2, v10, Ljlq;->E:I
 
     if-lez v2, :cond_d
 
@@ -3470,9 +3470,9 @@
 
     .line 778
     :cond_d
-    iget-object v2, v10, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v2, v10, Ljlq;->x:Ljkc;
 
-    invoke-direct {v0, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->shouldDrawVideoDotOrSquare(Ldefpackage/jkc;)Z
+    invoke-direct {v0, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->shouldDrawVideoDotOrSquare(Ljkc;)Z
 
     move-result v2
 
@@ -3484,7 +3484,7 @@
 
     .line 779
     :cond_e
-    iget v2, v10, Ldefpackage/jlq;->i:I
+    iget v2, v10, Ljlq;->i:I
 
     .line 780
     .local v2, "i3":I
@@ -3511,11 +3511,11 @@
 
     .line 783
     :cond_f
-    iget v4, v10, Ldefpackage/jlq;->k:I
+    iget v4, v10, Ljlq;->k:I
 
     if-lez v4, :cond_10
 
-    iget v4, v10, Ldefpackage/jlq;->C:I
+    iget v4, v10, Ljlq;->C:I
 
     if-lez v4, :cond_10
 
@@ -3539,7 +3539,7 @@
 
     int-to-float v2, v2
 
-    iget v3, v10, Ldefpackage/jlq;->v:I
+    iget v3, v10, Ljlq;->v:I
 
     int-to-float v3, v3
 
@@ -3552,11 +3552,11 @@
     invoke-virtual {v9, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     .line 789
-    iget v13, v10, Ldefpackage/jlq;->m:I
+    iget v13, v10, Ljlq;->m:I
 
     .line 790
     .local v13, "i4":I
-    iget v1, v10, Ldefpackage/jlq;->f:I
+    iget v1, v10, Ljlq;->f:I
 
     if-le v13, v1, :cond_12
 
@@ -3581,11 +3581,11 @@
 
     .line 793
     :cond_12
-    iget v14, v10, Ldefpackage/jlq;->l:I
+    iget v14, v10, Ljlq;->l:I
 
     .line 794
     .local v14, "i5":I
-    iget v1, v10, Ldefpackage/jlq;->f:I
+    iget v1, v10, Ljlq;->f:I
 
     if-le v14, v1, :cond_13
 
@@ -3610,7 +3610,7 @@
 
     .line 797
     :cond_13
-    iget v1, v10, Ldefpackage/jlq;->g:I
+    iget v1, v10, Ljlq;->g:I
 
     if-lez v1, :cond_14
 
@@ -3623,7 +3623,7 @@
 
     int-to-float v2, v2
 
-    iget v3, v10, Ldefpackage/jlq;->f:I
+    iget v3, v10, Ljlq;->f:I
 
     int-to-float v3, v3
 
@@ -3637,7 +3637,7 @@
 
     .line 800
     :cond_14
-    iget-boolean v1, v10, Ldefpackage/jlq;->r:Z
+    iget-boolean v1, v10, Ljlq;->r:Z
 
     if-eqz v1, :cond_15
 
@@ -3650,7 +3650,7 @@
 
     int-to-float v2, v2
 
-    iget v3, v10, Ldefpackage/jlq;->t:I
+    iget v3, v10, Ljlq;->t:I
 
     int-to-float v3, v3
 
@@ -3664,9 +3664,9 @@
 
     .line 803
     :cond_15
-    iget-object v1, v10, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v1, v10, Ljlq;->x:Ljkc;
 
-    invoke-direct {v0, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->shouldDrawVideoDotOrSquare(Ldefpackage/jkc;)Z
+    invoke-direct {v0, v1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->shouldDrawVideoDotOrSquare(Ljkc;)Z
 
     move-result v1
 
@@ -3678,7 +3678,7 @@
 
     .line 804
     :cond_16
-    iget v15, v10, Ldefpackage/jlq;->i:I
+    iget v15, v10, Ljlq;->i:I
 
     .line 805
     .local v15, "i6":I
@@ -3705,7 +3705,7 @@
 
     .line 808
     :cond_17
-    iget v8, v10, Ldefpackage/jlq;->k:I
+    iget v8, v10, Ljlq;->k:I
 
     .line 809
     .local v8, "i7":I
@@ -3840,7 +3840,7 @@
     .end local v7    # "f4":F
     .end local v8    # "f5":F
     :goto_3
-    iget v1, v10, Ldefpackage/jlq;->C:I
+    iget v1, v10, Ljlq;->C:I
 
     if-lez v1, :cond_1a
 
@@ -3863,9 +3863,9 @@
     .end local v15    # "i6":I
     :cond_1a
     :goto_4
-    iget-object v1, v10, Ldefpackage/jlq;->n:Ldefpackage/ojc;
+    iget-object v1, v10, Ljlq;->n:Lojc;
 
-    invoke-virtual {v1}, Ldefpackage/ojc;->f()Ljava/lang/Object;
+    invoke-virtual {v1}, Lojc;->f()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -3889,7 +3889,7 @@
     invoke-virtual {v2, v11}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
     .line 830
-    iget v3, v10, Ldefpackage/jlq;->q:I
+    iget v3, v10, Ljlq;->q:I
 
     .line 831
     .local v3, "i8":I
@@ -3934,19 +3934,19 @@
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
     .line 842
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
-    iget-object v0, v0, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    iget-object v0, v0, Ljlq;->x:Ljkc;
 
     .line 843
-    .local v0, "jkcVar":Ldefpackage/jkc;
-    sget-object v1, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    .local v0, "jkcVar":Ljkc;
+    sget-object v1, Ljkc;->PHOTO_IDLE:Ljkc;
 
     if-eq v0, v1, :cond_3
 
-    sget-object v1, Ldefpackage/jkc;->CATSHARK_PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->CATSHARK_PHOTO_IDLE:Ljkc;
 
     if-ne v0, v1, :cond_0
 
@@ -3954,11 +3954,11 @@
 
     .line 846
     :cond_0
-    sget-object v1, Ldefpackage/jkc;->PHOTO_LONGPRESS:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->PHOTO_LONGPRESS:Ljkc;
 
     if-eq v0, v1, :cond_1
 
-    sget-object v1, Ldefpackage/jkc;->PHOTO_LONGPRESS_LOCKED:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->PHOTO_LONGPRESS_LOCKED:Ljkc;
 
     if-eq v0, v1, :cond_1
 
@@ -4075,15 +4075,15 @@
     .locals 2
 
     .line 878
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_PAUSE:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_PAUSE:Ljkf;
 
     if-eq v0, v1, :cond_1
 
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_NONE:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_NONE:Ljkf;
 
     if-ne v0, v1, :cond_0
 
@@ -4180,37 +4180,37 @@
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     move-object v2, v1
 
-    .local v2, "jliVar":Ldefpackage/jli;
+    .local v2, "jliVar":Ljli;
     if-eqz v1, :cond_2
 
     .line 907
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->touchCoordinate:Ldefpackage/jrw;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->touchCoordinate:Ljrw;
 
     .line 908
-    .local v1, "jrwVar":Ldefpackage/jrw;
+    .local v1, "jrwVar":Ljrw;
     if-eqz v1, :cond_1
 
     .line 909
-    invoke-interface {v2, v1}, Ldefpackage/jli;->onShutterTouch(Ldefpackage/jrw;)V
+    invoke-interface {v2, v1}, Ljli;->onShutterTouch(Ljrw;)V
 
     .line 911
     :cond_1
     const/4 v3, 0x0
 
-    iput-object v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->touchCoordinate:Ldefpackage/jrw;
+    iput-object v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->touchCoordinate:Ljrw;
 
     .line 912
-    iget-object v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
-    invoke-interface {v3}, Ldefpackage/jli;->onShutterButtonClick()V
+    invoke-interface {v3}, Ljli;->onShutterButtonClick()V
 
     .line 914
-    .end local v1    # "jrwVar":Ldefpackage/jrw;
-    .end local v2    # "jliVar":Ldefpackage/jli;
+    .end local v1    # "jrwVar":Ljrw;
+    .end local v2    # "jliVar":Ljli;
     :cond_2
     return v0
 .end method
@@ -4224,7 +4224,7 @@
     if-eqz v0, :cond_0
 
     .line 919
-    invoke-static {p0}, Ldefpackage/jty;->e(Landroid/view/View;)V
+    invoke-static {p0}, Ljty;->e(Landroid/view/View;)V
 
     .line 921
     :cond_0
@@ -4251,10 +4251,10 @@
 
     .line 929
     :cond_0
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     .line 930
-    .local v0, "jliVar":Ldefpackage/jli;
+    .local v0, "jliVar":Ljli;
     if-nez v0, :cond_1
 
     .line 931
@@ -4262,13 +4262,13 @@
 
     .line 933
     :cond_1
-    invoke-interface {v0}, Ldefpackage/jli;->onShutterButtonDown()V
+    invoke-interface {v0}, Ljli;->onShutterButtonDown()V
 
     .line 934
     return-void
 
     .line 925
-    .end local v0    # "jliVar":Ldefpackage/jli;
+    .end local v0    # "jliVar":Ljli;
     :cond_2
     :goto_0
     invoke-virtual {p0}, Landroid/widget/ImageButton;->isEnabled()Z
@@ -4284,41 +4284,41 @@
     .locals 1
 
     .line 937
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     .line 938
-    .local v0, "jliVar":Ldefpackage/jli;
+    .local v0, "jliVar":Ljli;
     if-eqz v0, :cond_0
 
     .line 939
-    invoke-interface {v0}, Ldefpackage/jli;->onShutterTouchStart()V
+    invoke-interface {v0}, Ljli;->onShutterTouchStart()V
 
     .line 941
     :cond_0
     return-void
 .end method
 
-.method public resetTo(Ldefpackage/jkc;)V
+.method public resetTo(Ljkc;)V
     .locals 1
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
+    .param p1, "jkcVar"    # Ljkc;
 
     .line 944
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
-    iget-object v0, v0, Ldefpackage/jlq;->y:Ldefpackage/hti;
+    iget-object v0, v0, Ljlq;->y:Lhti;
 
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ldefpackage/jkc;Ldefpackage/hti;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;Lhti;)V
 
     .line 945
     return-void
 .end method
 
-.method public resetTo(Ldefpackage/jkc;Ldefpackage/hti;)V
+.method public resetTo(Ljkc;Lhti;)V
     .locals 6
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
-    .param p2, "htiVar"    # Ldefpackage/hti;
+    .param p1, "jkcVar"    # Ljkc;
+    .param p2, "htiVar"    # Lhti;
 
     .line 948
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
@@ -4333,11 +4333,11 @@
 
     move-object v2, p0
 
-    invoke-static/range {v0 .. v5}, Ldefpackage/jlq;->b(Ldefpackage/jkc;Ldefpackage/hti;Landroid/view/View;ZZZ)Ldefpackage/jlq;
+    invoke-static/range {v0 .. v5}, Ljlq;->b(Ljkc;Lhti;Landroid/view/View;ZZZ)Ljlq;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setCurrentSpec(Ldefpackage/jlq;)V
+    invoke-direct {p0, v0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setCurrentSpec(Ljlq;)V
 
     .line 949
     invoke-direct {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetShutterButton()V
@@ -4350,15 +4350,15 @@
     .locals 3
 
     .line 953
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_RESUME:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_RESUME:Ljkf;
 
     if-eq v0, v1, :cond_1
 
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v2, Ldefpackage/jkf;->STATE_NONE:Ldefpackage/jkf;
+    sget-object v2, Ljkf;->STATE_NONE:Ljkf;
 
     if-ne v0, v2, :cond_0
 
@@ -4366,17 +4366,17 @@
 
     .line 956
     :cond_0
-    sput-object v1, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sput-object v1, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
     .line 957
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ldefpackage/jke;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ljke;
 
     const/16 v1, 0x3e9
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 958
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ldefpackage/jke;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ljke;
 
     const/16 v1, 0x3e8
 
@@ -4395,18 +4395,18 @@
     return-void
 .end method
 
-.method public runPressedStateAnimation(ZLdefpackage/jkz;)V
+.method public runPressedStateAnimation(ZLjkz;)V
     .locals 4
     .param p1, "z"    # Z
-    .param p2, "jkzVar"    # Ldefpackage/jkz;
+    .param p2, "jkzVar"    # Ljkz;
 
     .line 962
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getMode()Ldefpackage/jkc;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getMode()Ljkc;
 
     move-result-object v0
 
     .line 963
-    .local v0, "mode":Ldefpackage/jkc;
+    .local v0, "mode":Ljkc;
     if-eqz p1, :cond_2
 
     .line 964
@@ -4428,17 +4428,17 @@
 
     const/16 v2, 0x64
 
-    invoke-virtual {p2, v1, v2}, Ldefpackage/jkz;->b(FI)Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {p2, v1, v2}, Ljkz;->b(FI)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v1
 
     invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
 
     .line 969
-    sget-object v1, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->PHOTO_IDLE:Ljkc;
 
     .line 970
-    .local v1, "jkcVar":Ldefpackage/jkc;
+    .local v1, "jkcVar":Ljkc;
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v2
@@ -4450,83 +4450,83 @@
 
     .line 990
     :sswitch_0
-    sget-object v2, Ldefpackage/jkc;->LASAGNA_PRESSED:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->LASAGNA_PRESSED:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 991
     return-void
 
     .line 987
     :sswitch_1
-    sget-object v2, Ldefpackage/jkc;->ASTRO_PRESSED:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->ASTRO_PRESSED:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 988
     return-void
 
     .line 984
     :sswitch_2
-    sget-object v2, Ldefpackage/jkc;->NIGHT_PRESSED:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->NIGHT_PRESSED:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 985
     return-void
 
     .line 981
     :sswitch_3
-    sget-object v2, Ldefpackage/jkc;->CATSHARK_PORTRAIT_PRESSED:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->CATSHARK_PORTRAIT_PRESSED:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 982
     return-void
 
     .line 978
     :sswitch_4
-    sget-object v2, Ldefpackage/jkc;->CATSHARK_PHOTO_PRESSED:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->CATSHARK_PHOTO_PRESSED:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 979
     return-void
 
     .line 975
     :sswitch_5
-    sget-object v2, Ldefpackage/jkc;->PORTRAIT_PRESSED:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->PORTRAIT_PRESSED:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 976
     return-void
 
     .line 972
     :sswitch_6
-    sget-object v2, Ldefpackage/jkc;->PHOTO_PRESSED:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->PHOTO_PRESSED:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 973
     return-void
 
     .line 965
-    .end local v1    # "jkcVar":Ldefpackage/jkc;
+    .end local v1    # "jkcVar":Ljkc;
     :cond_1
     :goto_0
     invoke-virtual {p0}, Landroid/widget/ImageButton;->isEnabled()Z
@@ -4540,7 +4540,7 @@
 
     const/16 v2, 0xfa
 
-    invoke-virtual {p2, v1, v2}, Ldefpackage/jkz;->b(FI)Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {p2, v1, v2}, Ljkz;->b(FI)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v1
 
@@ -4552,10 +4552,10 @@
     if-nez v1, :cond_3
 
     .line 998
-    sget-object v1, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->PHOTO_IDLE:Ljkc;
 
     .line 999
-    .local v1, "jkcVar2":Ldefpackage/jkc;
+    .local v1, "jkcVar2":Ljkc;
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v2
@@ -4567,44 +4567,44 @@
 
     .line 1007
     :sswitch_7
-    sget-object v2, Ldefpackage/jkc;->NIGHT_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->NIGHT_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1008
     return-void
 
     .line 1004
     :sswitch_8
-    sget-object v2, Ldefpackage/jkc;->PORTRAIT_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->PORTRAIT_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1005
     return-void
 
     .line 1001
     :sswitch_9
-    sget-object v2, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1002
     return-void
 
     .line 1013
-    .end local v1    # "jkcVar2":Ldefpackage/jkc;
+    .end local v1    # "jkcVar2":Ljkc;
     :cond_3
-    sget-object v1, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v1, Ljkc;->PHOTO_IDLE:Ljkc;
 
     .line 1014
-    .local v1, "jkcVar3":Ldefpackage/jkc;
+    .local v1, "jkcVar3":Ljkc;
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v2
@@ -4616,99 +4616,99 @@
 
     .line 1041
     :sswitch_a
-    sget-object v2, Ldefpackage/jkc;->TIMELAPSE_RECORDING:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->TIMELAPSE_RECORDING:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1042
     return-void
 
     .line 1038
     :sswitch_b
-    sget-object v2, Ldefpackage/jkc;->LASAGNA_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->LASAGNA_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1039
     return-void
 
     .line 1035
     :sswitch_c
-    sget-object v2, Ldefpackage/jkc;->ASTRO_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->ASTRO_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1036
     return-void
 
     .line 1032
     :sswitch_d
-    sget-object v2, Ldefpackage/jkc;->NIGHT_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->NIGHT_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1033
     return-void
 
     .line 1028
     :sswitch_e
-    sget-object v2, Ldefpackage/jkc;->CATSHARK_PORTRAIT_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->CATSHARK_PORTRAIT_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1029
     return-void
 
     .line 1025
     :sswitch_f
-    sget-object v2, Ldefpackage/jkc;->CATSHARK_PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->CATSHARK_PHOTO_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1026
     return-void
 
     .line 1022
     :sswitch_10
-    sget-object v2, Ldefpackage/jkc;->VIDEO_RECORDING:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->VIDEO_RECORDING:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1023
     return-void
 
     .line 1019
     :sswitch_11
-    sget-object v2, Ldefpackage/jkc;->PORTRAIT_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->PORTRAIT_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1020
     return-void
 
     .line 1016
     :sswitch_12
-    sget-object v2, Ldefpackage/jkc;->PHOTO_IDLE:Ldefpackage/jkc;
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
     iget-boolean v3, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
-    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, v2, p2, v3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Ljkz;Z)V
 
     .line 1017
     return-void
@@ -4746,12 +4746,12 @@
     .end sparse-switch
 .end method
 
-.method public setApplicationMode(Ldefpackage/jrl;)V
+.method public setApplicationMode(Ljrl;)V
     .locals 0
-    .param p1, "jrlVar"    # Ldefpackage/jrl;
+    .param p1, "jrlVar"    # Ljrl;
 
     .line 1049
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->applicationMode:Ldefpackage/jrl;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->applicationMode:Ljrl;
 
     .line 1050
     return-void
@@ -4771,9 +4771,9 @@
     invoke-virtual {p0, p1}, Landroid/widget/ImageButton;->setClickable(Z)V
 
     .line 1056
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->clickEnabledObservable:Ldefpackage/lcw;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->clickEnabledObservable:Llcw;
 
-    invoke-virtual {v0}, Ldefpackage/lcw;->c()V
+    invoke-virtual {v0}, Llcw;->c()V
 
     .line 1057
     invoke-virtual {p0}, Landroid/widget/ImageButton;->invalidate()V
@@ -4845,23 +4845,23 @@
     return-void
 .end method
 
-.method public setListener(Ldefpackage/jli;)V
+.method public setListener(Ljli;)V
     .locals 0
-    .param p1, "jliVar"    # Ldefpackage/jli;
+    .param p1, "jliVar"    # Ljli;
 
     .line 1081
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ldefpackage/jli;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->listener:Ljli;
 
     .line 1082
     return-void
 .end method
 
-.method public setLongPressMotionListener(Ldefpackage/jka;)V
+.method public setLongPressMotionListener(Ljka;)V
     .locals 0
-    .param p1, "jkaVar"    # Ldefpackage/jka;
+    .param p1, "jkaVar"    # Ljka;
 
     .line 1085
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->longPressMotionListener:Ldefpackage/jka;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->longPressMotionListener:Ljka;
 
     .line 1086
     return-void
@@ -4881,34 +4881,34 @@
     return-void
 .end method
 
-.method public setMode(Ldefpackage/jkc;Ldefpackage/hti;Ldefpackage/jkz;Z)V
+.method public setMode(Ljkc;Lhti;Ljkz;Z)V
     .locals 3
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
-    .param p2, "htiVar"    # Ldefpackage/hti;
-    .param p3, "jkzVar"    # Ldefpackage/jkz;
+    .param p1, "jkcVar"    # Ljkc;
+    .param p2, "htiVar"    # Lhti;
+    .param p3, "jkzVar"    # Ljkz;
     .param p4, "z"    # Z
 
     .line 1094
     iput-boolean p4, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIEnabled:Z
 
     .line 1095
-    invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->updateContentDescription(Ldefpackage/jkc;)V
+    invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->updateContentDescription(Ljkc;)V
 
     .line 1096
-    invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->updateHapticsForMode(Ldefpackage/jkc;)V
+    invoke-direct {p0, p1}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->updateHapticsForMode(Ljkc;)V
 
     .line 1097
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
     .line 1098
-    .local v0, "currentSpec":Ldefpackage/jlq;
-    iget-object v1, v0, Ldefpackage/jlq;->x:Ldefpackage/jkc;
+    .local v0, "currentSpec":Ljlq;
+    iget-object v1, v0, Ljlq;->x:Ljkc;
 
     if-ne p1, v1, :cond_1
 
-    iget-object v1, v0, Ldefpackage/jlq;->y:Ldefpackage/hti;
+    iget-object v1, v0, Ljlq;->y:Lhti;
 
     if-ne p2, v1, :cond_1
 
@@ -4931,11 +4931,11 @@
     iput-boolean v1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isP20NewUIUpdated:Z
 
     .line 1102
-    iget-object v1, v0, Ldefpackage/jlq;->y:Ldefpackage/hti;
+    iget-object v1, v0, Ljlq;->y:Lhti;
 
     .line 1103
-    .local v1, "htiVar2":Ldefpackage/hti;
-    invoke-direct {p0, p1, p2, p3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->animateMainButton(Ldefpackage/jkc;Ldefpackage/hti;Ldefpackage/jkz;)V
+    .local v1, "htiVar2":Lhti;
+    invoke-direct {p0, p1, p2, p3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->animateMainButton(Ljkc;Lhti;Ljkz;)V
 
     .line 1104
     invoke-virtual {p1}, Ljava/lang/Enum;->toString()Ljava/lang/String;
@@ -4948,31 +4948,31 @@
     return-void
 .end method
 
-.method public setMode(Ldefpackage/jkc;Ldefpackage/jkz;Z)V
+.method public setMode(Ljkc;Ljkz;Z)V
     .locals 1
-    .param p1, "jkcVar"    # Ldefpackage/jkc;
-    .param p2, "jkzVar"    # Ldefpackage/jkz;
+    .param p1, "jkcVar"    # Ljkc;
+    .param p2, "jkzVar"    # Ljkz;
     .param p3, "z"    # Z
 
     .line 1108
-    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ldefpackage/jlq;
+    invoke-virtual {p0}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->getCurrentSpec()Ljlq;
 
     move-result-object v0
 
-    iget-object v0, v0, Ldefpackage/jlq;->y:Ldefpackage/hti;
+    iget-object v0, v0, Ljlq;->y:Lhti;
 
-    invoke-virtual {p0, p1, v0, p2, p3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ldefpackage/jkc;Ldefpackage/hti;Ldefpackage/jkz;Z)V
+    invoke-virtual {p0, p1, v0, p2, p3}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->setMode(Ljkc;Lhti;Ljkz;Z)V
 
     .line 1109
     return-void
 .end method
 
-.method public setOnDrawListener(Ldefpackage/jkb;)V
+.method public setOnDrawListener(Ljkb;)V
     .locals 2
-    .param p1, "jkbVar"    # Ldefpackage/jkb;
+    .param p1, "jkbVar"    # Ljkb;
 
     .line 1112
-    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->onDrawListener:Ldefpackage/jkb;
+    iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->onDrawListener:Ljkb;
 
     if-nez v0, :cond_0
 
@@ -4986,10 +4986,10 @@
     :goto_0
     const-string v1, "Cannot set on draw listener more than once."
 
-    invoke-static {v0, v1}, Ldefpackage/obr;->aR(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lobr;->aR(ZLjava/lang/Object;)V
 
     .line 1113
-    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->onDrawListener:Ldefpackage/jkb;
+    iput-object p1, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->onDrawListener:Ljkb;
 
     .line 1114
     invoke-virtual {p0}, Landroid/widget/ImageButton;->invalidate()V
@@ -5052,9 +5052,9 @@
     .locals 3
 
     .line 1136
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_NONE:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_NONE:Ljkf;
 
     const/4 v2, 0x0
 
@@ -5066,11 +5066,11 @@
     invoke-static {v0, v2}, Ljava/util/Arrays;->fill([ZZ)V
 
     .line 1138
-    new-instance v0, Ldefpackage/jke;
+    new-instance v0, Ljke;
 
-    invoke-direct {v0, p0}, Ldefpackage/jke;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
+    invoke-direct {v0, p0}, Ljke;-><init>(Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;)V
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ldefpackage/jke;
+    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ljke;
 
     .line 1140
     :cond_0
@@ -5085,9 +5085,9 @@
     iput-boolean v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->isCircleWaitingVisible:Z
 
     .line 1143
-    sget-object v0, Ldefpackage/jkf;->STATE_IDLE:Ldefpackage/jkf;
+    sget-object v0, Ljkf;->STATE_IDLE:Ljkf;
 
-    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sput-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
     .line 1144
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->tickMarkPaint:Landroid/graphics/Paint;
@@ -5119,7 +5119,7 @@
 
     const v1, 0x40133333    # 2.3f
 
-    invoke-static {v1}, Ldefpackage/jsa;->b(F)I
+    invoke-static {v1}, Ljsa;->b(F)I
 
     move-result v1
 
@@ -5135,9 +5135,9 @@
     .locals 3
 
     .line 1151
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_NONE:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_NONE:Ljkf;
 
     if-ne v0, v1, :cond_0
 
@@ -5146,10 +5146,10 @@
 
     .line 1154
     :cond_0
-    sput-object v1, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sput-object v1, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
     .line 1155
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ldefpackage/jke;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ljke;
 
     const/4 v1, 0x0
 
@@ -5203,9 +5203,9 @@
     return-void
 .end method
 
-.method public updateAnimationProgressIndex(Ldefpackage/jkf;)V
+.method public updateAnimationProgressIndex(Ljkf;)V
     .locals 4
-    .param p1, "jkfVar"    # Ldefpackage/jkf;
+    .param p1, "jkfVar"    # Ljkf;
 
     .line 421
     iget v0, p0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->circleAnimationIndex:I
@@ -5234,7 +5234,7 @@
     .line 427
     .end local v0    # "z":Z
     :cond_0
-    sget-object v0, Ldefpackage/jkf;->STATE_PAUSE:Ldefpackage/jkf;
+    sget-object v0, Ljkf;->STATE_PAUSE:Ljkf;
 
     if-ne p1, v0, :cond_2
 
@@ -5280,7 +5280,7 @@
     goto :goto_3
 
     :cond_2
-    sget-object v0, Ldefpackage/jkf;->STATE_RESUME:Ldefpackage/jkf;
+    sget-object v0, Ljkf;->STATE_RESUME:Ljkf;
 
     if-ne p1, v0, :cond_4
 
@@ -5318,7 +5318,7 @@
 
     .line 439
     :cond_4
-    sget-object v0, Ldefpackage/jkf;->STATE_UPDATED:Ldefpackage/jkf;
+    sget-object v0, Ljkf;->STATE_UPDATED:Ljkf;
 
     if-eq p1, v0, :cond_5
 
@@ -5358,15 +5358,15 @@
     .locals 2
 
     .line 1167
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_PAUSE:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_PAUSE:Ljkf;
 
     if-eq v0, v1, :cond_1
 
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ldefpackage/jkf;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->progressState:Ljkf;
 
-    sget-object v1, Ldefpackage/jkf;->STATE_NONE:Ldefpackage/jkf;
+    sget-object v1, Ljkf;->STATE_NONE:Ljkf;
 
     if-ne v0, v1, :cond_0
 
@@ -5374,7 +5374,7 @@
 
     .line 1170
     :cond_0
-    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ldefpackage/jke;
+    sget-object v0, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->msgHandler:Ljke;
 
     const/16 v1, 0x3ea
 

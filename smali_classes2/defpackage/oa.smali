@@ -1,83 +1,66 @@
-.class public interface abstract Ldefpackage/oa;
+.class public Ldefpackage/Oa;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Llht;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfba;->b(Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lfba;
+
+
+# direct methods
+.method public constructor <init>(Lfba;)V
+    .locals 0
+    .param p1, "this$0"    # Lfba;
+
+    .line 27
+    iput-object p1, p0, Ldefpackage/Oa;->this$0:Lfba;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
 
 # virtual methods
-.method public abstract a()I
-.end method
+.method public final a(Ljava/lang/Object;)V
+    .locals 3
+    .param p1, "obj2"    # Ljava/lang/Object;
 
-.method public abstract b()Landroid/content/Context;
-.end method
+    .line 30
+    move-object v0, p1
 
-.method public abstract c(IJ)Ldefpackage/go;
-.end method
+    check-cast v0, Lbxg;
 
-.method public abstract d()Landroid/view/ViewGroup;
-.end method
+    .line 31
+    .local v0, "bxgVar":Lbxg;
+    iget-object v1, p0, Ldefpackage/Oa;->this$0:Lfba;
 
-.method public abstract e()V
-.end method
+    iget-object v1, v1, Lfba;->a:Lfbb;
 
-.method public abstract f()V
-.end method
+    iget-object v1, v1, Lfbb;->d:Lbts;
 
-.method public abstract g()V
-.end method
+    invoke-interface {v1}, Lbts;->g()Lbtv;
 
-.method public abstract h()V
-.end method
+    move-result-object v1
 
-.method public abstract i(I)V
-.end method
+    const/4 v2, 0x0
 
-.method public abstract j(Landroid/graphics/drawable/Drawable;)V
-.end method
+    invoke-interface {v1, v2}, Lbtv;->h(Z)V
 
-.method public abstract k(Landroid/view/Menu;Ldefpackage/lj;)V
-.end method
-
-.method public abstract l()V
-.end method
-
-.method public abstract m(Ljava/lang/CharSequence;)V
-.end method
-
-.method public abstract n(I)V
-.end method
-
-.method public abstract o(Landroid/view/Window$Callback;)V
-.end method
-
-.method public abstract p(Ljava/lang/CharSequence;)V
-.end method
-
-.method public abstract q()Z
-.end method
-
-.method public abstract r()Z
-.end method
-
-.method public abstract s()Z
-.end method
-
-.method public abstract t()Z
-.end method
-
-.method public abstract u()Z
-.end method
-
-.method public abstract v()Z
-.end method
-
-.method public abstract w()V
-.end method
-
-.method public abstract x()V
-.end method
-
-.method public abstract y()V
-.end method
-
-.method public abstract z()V
+    .line 32
+    return-void
 .end method

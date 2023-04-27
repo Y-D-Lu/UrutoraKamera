@@ -39,7 +39,7 @@
 
 .field private mBurnInProtection:Z
 
-.field private mComplicationRenderer:Ldefpackage/sq;
+.field private mComplicationRenderer:Lsq;
 
 .field private mContext:Landroid/content/Context;
 
@@ -63,7 +63,7 @@
 
 .field private mRangedValueProgressHidden:Z
 
-.field private final mRendererInvalidateListener:Ldefpackage/so;
+.field private final mRendererInvalidateListener:Lso;
 
 .field private final mUnhighlightRunnable:Ljava/lang/Runnable;
 
@@ -73,11 +73,11 @@
     .locals 2
 
     .line 47
-    new-instance v0, Ldefpackage/sk;
+    new-instance v0, Lsk;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Ldefpackage/sk;-><init>(I)V
+    invoke-direct {v0, v1}, Lsk;-><init>(I)V
 
     sput-object v0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -102,18 +102,18 @@
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mMainThreadHandler:Landroid/os/Handler;
 
     .line 76
-    new-instance v0, Ldefpackage/sl;
+    new-instance v0, Lsl;
 
-    invoke-direct {v0, p0}, Ldefpackage/sl;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
+    invoke-direct {v0, p0}, Lsl;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
 
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mUnhighlightRunnable:Ljava/lang/Runnable;
 
     .line 77
-    new-instance v0, Ldefpackage/sm;
+    new-instance v0, Lsm;
 
-    invoke-direct {v0, p0}, Ldefpackage/sm;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
+    invoke-direct {v0, p0}, Lsm;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
 
-    iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRendererInvalidateListener:Ldefpackage/so;
+    iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRendererInvalidateListener:Lso;
 
     .line 78
     new-instance v0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;
@@ -166,18 +166,18 @@
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mMainThreadHandler:Landroid/os/Handler;
 
     .line 89
-    new-instance v0, Ldefpackage/sl;
+    new-instance v0, Lsl;
 
-    invoke-direct {v0, p0}, Ldefpackage/sl;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
+    invoke-direct {v0, p0}, Lsl;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
 
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mUnhighlightRunnable:Ljava/lang/Runnable;
 
     .line 90
-    new-instance v0, Ldefpackage/sm;
+    new-instance v0, Lsm;
 
-    invoke-direct {v0, p0}, Ldefpackage/sm;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
+    invoke-direct {v0, p0}, Lsm;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
 
-    iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRendererInvalidateListener:Ldefpackage/so;
+    iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRendererInvalidateListener:Lso;
 
     .line 91
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -262,10 +262,10 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/os/Parcel;Ldefpackage/sk;)V
+.method public constructor <init>(Landroid/os/Parcel;Lsk;)V
     .locals 0
     .param p1, "parcel"    # Landroid/os/Parcel;
-    .param p2, "skVar"    # Ldefpackage/sk;
+    .param p2, "skVar"    # Lsk;
 
     .line 102
     invoke-direct {p0, p1}, Landroid/support/wearable/complications/rendering/ComplicationDrawable;-><init>(Landroid/os/Parcel;)V
@@ -293,18 +293,18 @@
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mMainThreadHandler:Landroid/os/Handler;
 
     .line 107
-    new-instance v0, Ldefpackage/sl;
+    new-instance v0, Lsl;
 
-    invoke-direct {v0, p0}, Ldefpackage/sl;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
+    invoke-direct {v0, p0}, Lsl;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
 
     iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mUnhighlightRunnable:Ljava/lang/Runnable;
 
     .line 108
-    new-instance v0, Ldefpackage/sm;
+    new-instance v0, Lsm;
 
-    invoke-direct {v0, p0}, Ldefpackage/sm;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
+    invoke-direct {v0, p0}, Lsm;-><init>(Landroid/support/wearable/complications/rendering/ComplicationDrawable;)V
 
-    iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRendererInvalidateListener:Ldefpackage/so;
+    iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRendererInvalidateListener:Lso;
 
     .line 109
     new-instance v0, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;
@@ -417,7 +417,7 @@
 
     move-result-object v0
 
-    sget-object v1, Ldefpackage/sf;->e:[I
+    sget-object v1, Lsf;->e:[I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/Resources;->obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -453,7 +453,7 @@
 
     move-result-object v0
 
-    sget-object v1, Ldefpackage/sf;->e:[I
+    sget-object v1, Lsf;->e:[I
 
     invoke-virtual {p2, v0, v1}, Landroid/content/res/Resources;->obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -1094,21 +1094,21 @@
     if-nez v0, :cond_0
 
     .line 222
-    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     iget-object v1, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mActiveStyleBuilder:Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;
 
-    invoke-virtual {v1}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Ldefpackage/sr;
+    invoke-virtual {v1}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Lsr;
 
     move-result-object v1
 
     iget-object v2, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mAmbientStyleBuilder:Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;
 
-    invoke-virtual {v2}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Ldefpackage/sr;
+    invoke-virtual {v2}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Lsr;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Ldefpackage/sq;->g(Ldefpackage/sr;Ldefpackage/sr;)V
+    invoke-virtual {v0, v1, v2}, Lsq;->g(Lsr;Lsr;)V
 
     .line 223
     const/4 v0, 0x1
@@ -1163,37 +1163,37 @@
     return-void
 .end method
 
-.method public getActiveStyle()Ldefpackage/sr;
+.method public getActiveStyle()Lsr;
     .locals 1
 
     .line 273
     iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mActiveStyleBuilder:Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;
 
-    invoke-virtual {v0}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Ldefpackage/sr;
+    invoke-virtual {v0}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Lsr;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public getAmbientStyle()Ldefpackage/sr;
+.method public getAmbientStyle()Lsr;
     .locals 1
 
     .line 277
     iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mAmbientStyleBuilder:Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;
 
-    invoke-virtual {v0}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Ldefpackage/sr;
+    invoke-virtual {v0}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Lsr;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public getComplicationRenderer()Ldefpackage/sq;
+.method public getComplicationRenderer()Lsq;
     .locals 1
 
     .line 281
-    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     return-object v0
 .end method
@@ -1464,14 +1464,14 @@
     .param p1, "rect"    # Landroid/graphics/Rect;
 
     .line 353
-    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     .line 354
-    .local v0, "sqVar":Ldefpackage/sq;
+    .local v0, "sqVar":Lsq;
     if-eqz v0, :cond_0
 
     .line 355
-    invoke-virtual {v0, p1}, Ldefpackage/sq;->h(Landroid/graphics/Rect;)V
+    invoke-virtual {v0, p1}, Lsq;->h(Landroid/graphics/Rect;)V
 
     .line 357
     :cond_0
@@ -1484,15 +1484,15 @@
     .param p2, "i2"    # I
 
     .line 361
-    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     .line 362
-    .local v0, "sqVar":Ldefpackage/sq;
+    .local v0, "sqVar":Lsq;
     const/4 v1, 0x0
 
     if-eqz v0, :cond_5
 
-    iget-object v2, v0, Ldefpackage/sq;->b:Landroid/support/wearable/complications/ComplicationData;
+    iget-object v2, v0, Lsq;->b:Landroid/support/wearable/complications/ComplicationData;
 
     move-object v3, v2
 
@@ -1535,7 +1535,7 @@
 
     .line 367
     .local v2, "context":Landroid/content/Context;
-    instance-of v4, v2, Ldefpackage/tr;
+    instance-of v4, v2, Ltr;
 
     if-nez v4, :cond_2
 
@@ -1556,7 +1556,7 @@
     .local v1, "componentName":Landroid/content/ComponentName;
     new-instance v4, Landroid/content/Intent;
 
-    const-class v5, Ldefpackage/sh;
+    const-class v5, Lsh;
 
     invoke-direct {v4, v2, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -2045,9 +2045,9 @@
     invoke-direct {p0}, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->assertInitialized()V
 
     .line 490
-    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
-    invoke-virtual {v0, p1}, Ldefpackage/sq;->d(Landroid/support/wearable/complications/ComplicationData;)V
+    invoke-virtual {v0, p1}, Lsq;->d(Landroid/support/wearable/complications/ComplicationData;)V
 
     .line 491
     return-void
@@ -2126,32 +2126,32 @@
 
     .line 506
     :cond_2
-    new-instance v0, Ldefpackage/sq;
+    new-instance v0, Lsq;
 
     iget-object v1, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mActiveStyleBuilder:Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;
 
-    invoke-virtual {v2}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Ldefpackage/sr;
+    invoke-virtual {v2}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Lsr;
 
     move-result-object v2
 
     iget-object v3, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mAmbientStyleBuilder:Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;
 
-    invoke-virtual {v3}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Ldefpackage/sr;
+    invoke-virtual {v3}, Landroid/support/wearable/complications/rendering/ComplicationStyle$Builder;->a()Lsr;
 
     move-result-object v3
 
-    invoke-direct {v0, v1, v2, v3}, Ldefpackage/sq;-><init>(Landroid/content/Context;Ldefpackage/sr;Ldefpackage/sr;)V
+    invoke-direct {v0, v1, v2, v3}, Lsq;-><init>(Landroid/content/Context;Lsr;Lsr;)V
 
     .line 507
-    .local v0, "sqVar":Ldefpackage/sq;
-    iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    .local v0, "sqVar":Lsq;
+    iput-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     .line 508
-    iget-object v1, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRendererInvalidateListener:Ldefpackage/so;
+    iget-object v1, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRendererInvalidateListener:Lso;
 
-    iput-object v1, v0, Ldefpackage/sq;->A:Ldefpackage/so;
+    iput-object v1, v0, Lsq;->A:Lso;
 
     .line 509
     iget-object v1, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mNoDataText:Ljava/lang/CharSequence;
@@ -2173,24 +2173,24 @@
 
     .line 513
     :cond_3
-    invoke-virtual {v0, v1}, Ldefpackage/sq;->e(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Lsq;->e(Ljava/lang/CharSequence;)V
 
     .line 515
     :goto_0
-    iget-object v2, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v2, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     iget-boolean v3, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRangedValueProgressHidden:Z
 
-    invoke-virtual {v2, v3}, Ldefpackage/sq;->f(Z)V
+    invoke-virtual {v2, v3}, Lsq;->f(Z)V
 
     .line 516
-    iget-object v2, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v2, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ldefpackage/sq;->h(Landroid/graphics/Rect;)V
+    invoke-virtual {v2, v3}, Lsq;->h(Landroid/graphics/Rect;)V
 
     .line 517
     const/4 v2, 0x1
@@ -2201,7 +2201,7 @@
     return-void
 
     .line 520
-    .end local v0    # "sqVar":Ldefpackage/sq;
+    .end local v0    # "sqVar":Lsq;
     .end local v1    # "charSequence":Ljava/lang/CharSequence;
     :cond_4
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -2441,16 +2441,16 @@
 
     .line 583
     :goto_0
-    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     .line 584
-    .local v0, "sqVar":Ldefpackage/sq;
+    .local v0, "sqVar":Lsq;
     if-eqz v0, :cond_1
 
     .line 585
     iget-object v1, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mNoDataText:Ljava/lang/CharSequence;
 
-    invoke-virtual {v0, v1}, Ldefpackage/sq;->e(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Lsq;->e(Ljava/lang/CharSequence;)V
 
     .line 587
     :cond_1
@@ -2507,14 +2507,14 @@
     iput-boolean p1, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mRangedValueProgressHidden:Z
 
     .line 601
-    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Ldefpackage/sq;
+    iget-object v0, p0, Landroid/support/wearable/complications/rendering/ComplicationDrawable;->mComplicationRenderer:Lsq;
 
     .line 602
-    .local v0, "sqVar":Ldefpackage/sq;
+    .local v0, "sqVar":Lsq;
     if-eqz v0, :cond_0
 
     .line 603
-    invoke-virtual {v0, p1}, Ldefpackage/sq;->f(Z)V
+    invoke-virtual {v0, p1}, Lsq;->f(Z)V
 
     .line 605
     :cond_0

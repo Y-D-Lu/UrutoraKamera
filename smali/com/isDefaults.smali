@@ -13,21 +13,21 @@
     return-void
 .end method
 
-.method public static overrideDefaults(Ldefpackage/ddj;Ldefpackage/ddf;)V
+.method public static overrideDefaults(Lddj;Lddf;)V
     .locals 3
-    .param p0, "ddjVar"    # Ldefpackage/ddj;
-    .param p1, "ddfVar"    # Ldefpackage/ddf;
+    .param p0, "ddjVar"    # Lddj;
+    .param p1, "ddfVar"    # Lddf;
 
     .line 11
     move-object v0, p0
 
-    check-cast v0, Ldefpackage/dep;
+    check-cast v0, Ldep;
 
-    sget-object v1, Ldefpackage/ddq;->e:Ldefpackage/ddg;
+    sget-object v1, Lddq;->e:Lddg;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Ldefpackage/dep;->s(Ldefpackage/ddg;Z)V
+    invoke-virtual {v0, v1, v2}, Ldep;->s(Lddg;Z)V
 
     .line 12
     return-void

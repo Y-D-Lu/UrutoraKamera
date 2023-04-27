@@ -1,5 +1,5 @@
 .class public final Lkotlinx/coroutines/android/AndroidExceptionPreHandler;
-.super Ldefpackage/qlc;
+.super Lqlc;
 .source ""
 
 # interfaces
@@ -15,9 +15,9 @@
     .locals 1
 
     .line 15
-    sget-object v0, Lkotlinx/coroutines/CoroutineExceptionHandler;->a:Ldefpackage/qli;
+    sget-object v0, Lkotlinx/coroutines/CoroutineExceptionHandler;->a:Lqli;
 
-    invoke-direct {p0, v0}, Ldefpackage/qlc;-><init>(Lqll;)V
+    invoke-direct {p0, v0}, Lqlc;-><init>(Lqll;)V
 
     .line 16
     iput-object p0, p0, Lkotlinx/coroutines/android/AndroidExceptionPreHandler;->_preHandler:Ljava/lang/Object;
@@ -109,9 +109,9 @@
 
 
 # virtual methods
-.method public handleException(Ldefpackage/qln;Ljava/lang/Throwable;)V
+.method public handleException(Lqln;Ljava/lang/Throwable;)V
     .locals 2
-    .param p1, "qlnVar"    # Ldefpackage/qln;
+    .param p1, "qlnVar"    # Lqln;
     .param p2, "th"    # Ljava/lang/Throwable;
 
     .line 40

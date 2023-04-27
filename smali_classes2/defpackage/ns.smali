@@ -1,56 +1,50 @@
-.class final Ldefpackage/ns;
+.class public Ldefpackage/Ns;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljava/util/concurrent/Callable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljts;->a(Landroid/net/Uri;)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/widget/TextView;
-
-.field public final b:Landroid/graphics/Typeface;
-
-.field public final c:I
+.field public final synthetic this$0:Ljts;
 
 
 # direct methods
-.method public constructor <init>(Landroid/widget/TextView;Landroid/graphics/Typeface;I)V
+.method public constructor <init>(Ljts;)V
     .locals 0
-    .param p1, "textView"    # Landroid/widget/TextView;
-    .param p2, "typeface"    # Landroid/graphics/Typeface;
-    .param p3, "i"    # I
+    .param p1, "this$0"    # Ljts;
 
-    .line 13
+    .line 20
+    iput-object p1, p0, Ldefpackage/Ns;->this$0:Ljts;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
-    iput-object p1, p0, Ldefpackage/ns;->a:Landroid/widget/TextView;
-
-    .line 15
-    iput-object p2, p0, Ldefpackage/ns;->b:Landroid/graphics/Typeface;
-
-    .line 16
-    iput p3, p0, Ldefpackage/ns;->c:I
-
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final call()Ljava/lang/Object;
+    .locals 2
 
-    .line 21
-    iget-object v0, p0, Ldefpackage/ns;->a:Landroid/widget/TextView;
+    .line 93
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Ldefpackage/ns;->b:Landroid/graphics/Typeface;
+    const-string v1, "Method not decompiled: defpackage.jtr.call():java.lang.Object"
 
-    iget v2, p0, Ldefpackage/ns;->c:I
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
-
-    .line 22
-    return-void
+    throw v0
 .end method

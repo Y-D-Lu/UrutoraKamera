@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public final a:Ldefpackage/pwc;
+.field public final a:Lpwc;
 
 .field private final c:Ljava/lang/Object;
 
-.field private volatile d:Ldefpackage/pwi;
+.field private volatile d:Lpwi;
 
 .field private e:I
 
@@ -43,12 +43,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 30
-    new-instance v0, Ldefpackage/pwc;
+    new-instance v0, Lpwc;
 
-    invoke-direct {v0, p1, p2}, Ldefpackage/pwc;-><init>(J)V
+    invoke-direct {v0, p1, p2}, Lpwc;-><init>(J)V
 
     .line 31
-    .local v0, "pwcVar":Ldefpackage/pwc;
+    .local v0, "pwcVar":Lpwc;
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
@@ -56,11 +56,11 @@
     iput-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->c:Ljava/lang/Object;
 
     .line 32
-    new-instance v1, Ldefpackage/pwi;
+    new-instance v1, Lpwi;
 
-    invoke-direct {v1}, Ldefpackage/pwi;-><init>()V
+    invoke-direct {v1}, Lpwi;-><init>()V
 
-    iput-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iput-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 33
     const/4 v1, 0x1
@@ -68,17 +68,17 @@
     iput v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->e:I
 
     .line 34
-    iput-object v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a:Ldefpackage/pwc;
+    iput-object v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a:Lpwc;
 
     .line 35
     return-void
 .end method
 
-.method private final a(IILdefpackage/pwg;Z)I
+.method private final a(IILpwg;Z)I
     .locals 13
     .param p1, "i"    # I
     .param p2, "i2"    # I
-    .param p3, "pwgVar"    # Ldefpackage/pwg;
+    .param p3, "pwgVar"    # Lpwg;
     .param p4, "z"    # Z
 
     .line 39
@@ -90,14 +90,14 @@
 
     .line 40
     :try_start_0
-    new-instance v0, Ldefpackage/pwi;
+    new-instance v0, Lpwi;
 
-    iget-object v3, v1, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v3, v1, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
-    invoke-direct {v0, v3}, Ldefpackage/pwi;-><init>(Ldefpackage/pwi;)V
+    invoke-direct {v0, v3}, Lpwi;-><init>(Lpwi;)V
 
     .line 41
-    .local v0, "pwiVar":Ldefpackage/pwi;
+    .local v0, "pwiVar":Lpwi;
     iget v3, v1, Lcom/google/vr/cardboard/ExternalSurfaceManager;->e:I
 
     .line 42
@@ -107,13 +107,13 @@
     iput v4, v1, Lcom/google/vr/cardboard/ExternalSurfaceManager;->e:I
 
     .line 43
-    iget-object v10, v0, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v10, v0, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v11
 
-    new-instance v12, Ldefpackage/pwf;
+    new-instance v12, Lpwf;
 
     move-object v4, v12
 
@@ -127,15 +127,15 @@
 
     move/from16 v9, p4
 
-    invoke-direct/range {v4 .. v9}, Ldefpackage/pwf;-><init>(IIILdefpackage/pwg;Z)V
+    invoke-direct/range {v4 .. v9}, Lpwf;-><init>(IIILpwg;Z)V
 
     invoke-virtual {v10, v11, v12}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 44
-    iput-object v0, v1, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iput-object v0, v1, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 45
-    .end local v0    # "pwiVar":Ldefpackage/pwi;
+    .end local v0    # "pwiVar":Lpwi;
     monitor-exit v2
 
     .line 46
@@ -153,20 +153,20 @@
     throw v0
 .end method
 
-.method private final b(Ldefpackage/pwh;)V
+.method private final b(Lpwh;)V
     .locals 4
-    .param p1, "pwhVar"    # Ldefpackage/pwh;
+    .param p1, "pwhVar"    # Lpwh;
 
     .line 50
-    iget-object v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 51
-    .local v0, "pwiVar":Ldefpackage/pwi;
+    .local v0, "pwiVar":Lpwi;
     iget-boolean v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->f:Z
 
     if-eqz v1, :cond_0
 
-    iget-object v1, v0, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v1, v0, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->isEmpty()Z
 
@@ -175,7 +175,7 @@
     if-nez v1, :cond_0
 
     .line 52
-    iget-object v1, v0, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v1, v0, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -198,22 +198,22 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/pwf;
+    check-cast v2, Lpwf;
 
     .line 53
-    .local v2, "pwfVar":Ldefpackage/pwf;
-    invoke-virtual {v2}, Ldefpackage/pwf;->a()V
+    .local v2, "pwfVar":Lpwf;
+    invoke-virtual {v2}, Lpwf;->a()V
 
     .line 54
-    invoke-interface {p1, v2}, Ldefpackage/pwh;->a(Ldefpackage/pwf;)V
+    invoke-interface {p1, v2}, Lpwh;->a(Lpwf;)V
 
     .line 55
-    .end local v2    # "pwfVar":Ldefpackage/pwf;
+    .end local v2    # "pwfVar":Lpwf;
     goto :goto_0
 
     .line 57
     :cond_0
-    iget-object v1, v0, Ldefpackage/pwi;->b:Ljava/util/HashMap;
+    iget-object v1, v0, Lpwi;->b:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->isEmpty()Z
 
@@ -222,7 +222,7 @@
     if-nez v1, :cond_1
 
     .line 58
-    iget-object v1, v0, Ldefpackage/pwi;->b:Ljava/util/HashMap;
+    iget-object v1, v0, Lpwi;->b:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -245,16 +245,16 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/pwf;
+    check-cast v2, Lpwf;
 
     .line 59
-    .local v2, "pwfVar2":Ldefpackage/pwf;
-    iget-object v3, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a:Ldefpackage/pwc;
+    .local v2, "pwfVar2":Lpwf;
+    iget-object v3, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a:Lpwc;
 
-    invoke-virtual {v2, v3}, Ldefpackage/pwf;->c(Ldefpackage/pwc;)V
+    invoke-virtual {v2, v3}, Lpwf;->c(Lpwc;)V
 
     .line 60
-    .end local v2    # "pwfVar2":Ldefpackage/pwf;
+    .end local v2    # "pwfVar2":Lpwf;
     goto :goto_1
 
     .line 62
@@ -279,11 +279,11 @@
     iput-boolean v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->f:Z
 
     .line 70
-    iget-object v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 71
-    .local v0, "pwiVar":Ldefpackage/pwi;
-    iget-object v1, v0, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    .local v0, "pwiVar":Lpwi;
+    iget-object v1, v0, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->isEmpty()Z
 
@@ -292,7 +292,7 @@
     if-nez v1, :cond_0
 
     .line 72
-    iget-object v1, v0, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v1, v0, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -315,14 +315,14 @@
 
     move-result-object v2
 
-    check-cast v2, Ldefpackage/pwf;
+    check-cast v2, Lpwf;
 
     .line 73
-    .local v2, "pwfVar":Ldefpackage/pwf;
-    invoke-virtual {v2}, Ldefpackage/pwf;->a()V
+    .local v2, "pwfVar":Lpwf;
+    invoke-virtual {v2}, Lpwf;->a()V
 
     .line 74
-    .end local v2    # "pwfVar":Ldefpackage/pwf;
+    .end local v2    # "pwfVar":Lpwf;
     goto :goto_0
 
     .line 76
@@ -340,13 +340,13 @@
     iput-boolean v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->f:Z
 
     .line 80
-    iget-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 81
-    .local v1, "pwiVar":Ldefpackage/pwi;
-    iget-object v2, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    .local v1, "pwiVar":Lpwi;
+    iget-object v2, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
-    iget-object v2, v2, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v2, v2, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->isEmpty()Z
 
@@ -357,9 +357,9 @@
     if-nez v2, :cond_1
 
     .line 82
-    iget-object v2, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v2, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
-    iget-object v2, v2, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v2, v2, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -445,7 +445,7 @@
 
     .line 91
     .local v4, "entry":Ljava/util/Map$Entry;
-    iget-object v5, v1, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v5, v1, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -458,7 +458,7 @@
     if-eqz v5, :cond_2
 
     .line 92
-    iget-object v5, v1, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v5, v1, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -468,7 +468,7 @@
 
     move-result-object v5
 
-    check-cast v5, Ldefpackage/pwf;
+    check-cast v5, Lpwf;
 
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -480,7 +480,7 @@
 
     move-result v6
 
-    invoke-virtual {v5, v6}, Ldefpackage/pwf;->b(I)V
+    invoke-virtual {v5, v6}, Lpwf;->b(I)V
 
     goto :goto_2
 
@@ -523,11 +523,11 @@
     iput-boolean v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->f:Z
 
     .line 102
-    iget-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 103
-    .local v1, "pwiVar":Ldefpackage/pwi;
-    iget-object v2, v1, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    .local v1, "pwiVar":Lpwi;
+    iget-object v2, v1, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->isEmpty()Z
 
@@ -536,7 +536,7 @@
     if-nez v2, :cond_2
 
     .line 104
-    iget-object v2, v1, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v2, v1, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -559,36 +559,36 @@
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/pwf;
+    check-cast v3, Lpwf;
 
     .line 105
-    .local v3, "pwfVar":Ldefpackage/pwf;
-    iget-boolean v4, v3, Ldefpackage/pwf;->i:Z
+    .local v3, "pwfVar":Lpwf;
+    iget-boolean v4, v3, Lpwf;->i:Z
 
     if-eqz v4, :cond_1
 
     .line 106
-    iget-object v4, v3, Ldefpackage/pwf;->b:Ldefpackage/pwg;
+    iget-object v4, v3, Lpwf;->b:Lpwg;
 
     .line 107
-    .local v4, "pwgVar":Ldefpackage/pwg;
+    .local v4, "pwgVar":Lpwg;
     if-eqz v4, :cond_0
 
     .line 108
-    invoke-interface {v4}, Ldefpackage/pwg;->a()V
+    invoke-interface {v4}, Lpwg;->a()V
 
     .line 110
     :cond_0
-    iget-object v5, v3, Ldefpackage/pwf;->g:Landroid/graphics/SurfaceTexture;
+    iget-object v5, v3, Lpwf;->g:Landroid/graphics/SurfaceTexture;
 
     invoke-virtual {v5}, Landroid/graphics/SurfaceTexture;->detachFromGLContext()V
 
     .line 111
-    iput-boolean v0, v3, Ldefpackage/pwf;->i:Z
+    iput-boolean v0, v3, Lpwf;->i:Z
 
     .line 113
-    .end local v3    # "pwfVar":Ldefpackage/pwf;
-    .end local v4    # "pwgVar":Ldefpackage/pwg;
+    .end local v3    # "pwfVar":Lpwf;
+    .end local v4    # "pwgVar":Lpwg;
     :cond_1
     goto :goto_0
 
@@ -601,13 +601,13 @@
     .locals 2
 
     .line 118
-    new-instance v0, Ldefpackage/pwb;
+    new-instance v0, Lpwb;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, p0, v1}, Ldefpackage/pwb;-><init>(Lcom/google/vr/cardboard/ExternalSurfaceManager;I)V
+    invoke-direct {v0, p0, v1}, Lpwb;-><init>(Lcom/google/vr/cardboard/ExternalSurfaceManager;I)V
 
-    invoke-direct {p0, v0}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->b(Ldefpackage/pwh;)V
+    invoke-direct {p0, v0}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->b(Lpwh;)V
 
     .line 119
     return-void
@@ -617,13 +617,13 @@
     .locals 2
 
     .line 122
-    new-instance v0, Ldefpackage/pwb;
+    new-instance v0, Lpwb;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Ldefpackage/pwb;-><init>(Lcom/google/vr/cardboard/ExternalSurfaceManager;I)V
+    invoke-direct {v0, p0, v1}, Lpwb;-><init>(Lcom/google/vr/cardboard/ExternalSurfaceManager;I)V
 
-    invoke-direct {p0, v0}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->b(Ldefpackage/pwh;)V
+    invoke-direct {p0, v0}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->b(Lpwh;)V
 
     .line 123
     return-void
@@ -639,7 +639,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {p0, v0, v0, v1, v2}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a(IILdefpackage/pwg;Z)I
+    invoke-direct {p0, v0, v0, v1, v2}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a(IILpwg;Z)I
 
     move-result v0
 
@@ -660,13 +660,13 @@
     if-eqz p5, :cond_0
 
     .line 133
-    new-instance v0, Ldefpackage/pwd;
+    new-instance v0, Lpwd;
 
-    invoke-direct {v0, p3, p4, p5}, Ldefpackage/pwd;-><init>(Ljava/lang/Runnable;Ljava/lang/Runnable;Landroid/os/Handler;)V
+    invoke-direct {v0, p3, p4, p5}, Lpwd;-><init>(Ljava/lang/Runnable;Ljava/lang/Runnable;Landroid/os/Handler;)V
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a(IILdefpackage/pwg;Z)I
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a(IILpwg;Z)I
 
     move-result v0
 
@@ -692,11 +692,11 @@
     .param p7, "z"    # Z
 
     .line 137
-    new-instance v0, Ldefpackage/pwk;
+    new-instance v0, Lpwk;
 
-    invoke-direct {v0, p3, p4, p5, p6}, Ldefpackage/pwk;-><init>(JJ)V
+    invoke-direct {v0, p3, p4, p5, p6}, Lpwk;-><init>(JJ)V
 
-    invoke-direct {p0, p1, p2, v0, p7}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a(IILdefpackage/pwg;Z)I
+    invoke-direct {p0, p1, p2, v0, p7}, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a(IILpwg;Z)I
 
     move-result v0
 
@@ -708,11 +708,11 @@
     .param p1, "i"    # I
 
     .line 141
-    iget-object v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v0, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 142
-    .local v0, "pwiVar":Ldefpackage/pwi;
-    iget-object v1, v0, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    .local v0, "pwiVar":Lpwi;
+    iget-object v1, v0, Lpwi;->a:Ljava/util/HashMap;
 
     .line 143
     .local v1, "hashMap":Ljava/util/HashMap;
@@ -731,22 +731,22 @@
     if-eqz v3, :cond_1
 
     .line 145
-    iget-object v3, v0, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v3, v0, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v3, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Ldefpackage/pwf;
+    check-cast v3, Lpwf;
 
     .line 146
-    .local v3, "pwfVar":Ldefpackage/pwf;
-    iget-boolean v5, v3, Ldefpackage/pwf;->i:Z
+    .local v3, "pwfVar":Lpwf;
+    iget-boolean v5, v3, Lpwf;->i:Z
 
     if-eqz v5, :cond_0
 
     .line 147
-    iget-object v4, v3, Ldefpackage/pwf;->h:Landroid/view/Surface;
+    iget-object v4, v3, Lpwf;->h:Landroid/view/Surface;
 
     return-object v4
 
@@ -755,7 +755,7 @@
     return-object v4
 
     .line 151
-    .end local v3    # "pwfVar":Ldefpackage/pwf;
+    .end local v3    # "pwfVar":Lpwf;
     :cond_1
     sget-object v3, Lcom/google/vr/cardboard/ExternalSurfaceManager;->b:Ljava/lang/String;
 
@@ -803,15 +803,15 @@
 
     .line 162
     :try_start_0
-    new-instance v1, Ldefpackage/pwi;
+    new-instance v1, Lpwi;
 
-    iget-object v2, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v2, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
-    invoke-direct {v1, v2}, Ldefpackage/pwi;-><init>(Ldefpackage/pwi;)V
+    invoke-direct {v1, v2}, Lpwi;-><init>(Lpwi;)V
 
     .line 163
-    .local v1, "pwiVar":Ldefpackage/pwi;
-    iget-object v2, v1, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    .local v1, "pwiVar":Lpwi;
+    iget-object v2, v1, Lpwi;->a:Ljava/util/HashMap;
 
     .line 164
     .local v2, "hashMap":Ljava/util/HashMap;
@@ -825,19 +825,19 @@
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/pwf;
+    check-cast v4, Lpwf;
 
     .line 166
-    .local v4, "pwfVar":Ldefpackage/pwf;
+    .local v4, "pwfVar":Lpwf;
     if-eqz v4, :cond_0
 
     .line 167
-    iget-object v5, v1, Ldefpackage/pwi;->b:Ljava/util/HashMap;
+    iget-object v5, v1, Lpwi;->b:Ljava/util/HashMap;
 
     invoke-virtual {v5, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 168
-    iput-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iput-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     goto :goto_0
 
@@ -870,10 +870,10 @@
     invoke-static {v5, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 176
-    .end local v1    # "pwiVar":Ldefpackage/pwi;
+    .end local v1    # "pwiVar":Lpwi;
     .end local v2    # "hashMap":Ljava/util/HashMap;
     .end local v3    # "valueOf":Ljava/lang/Integer;
-    .end local v4    # "pwfVar":Ldefpackage/pwf;
+    .end local v4    # "pwfVar":Lpwf;
     .end local v5    # "str":Ljava/lang/String;
     .end local v6    # "sb":Ljava/lang/StringBuilder;
     :goto_0
@@ -903,18 +903,18 @@
 
     .line 181
     :try_start_0
-    iget-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iget-object v1, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 182
-    .local v1, "pwiVar":Ldefpackage/pwi;
-    new-instance v2, Ldefpackage/pwi;
+    .local v1, "pwiVar":Lpwi;
+    new-instance v2, Lpwi;
 
-    invoke-direct {v2}, Ldefpackage/pwi;-><init>()V
+    invoke-direct {v2}, Lpwi;-><init>()V
 
-    iput-object v2, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Ldefpackage/pwi;
+    iput-object v2, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->d:Lpwi;
 
     .line 183
-    iget-object v2, v1, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v2, v1, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->isEmpty()Z
 
@@ -923,7 +923,7 @@
     if-nez v2, :cond_0
 
     .line 184
-    iget-object v2, v1, Ldefpackage/pwi;->a:Ljava/util/HashMap;
+    iget-object v2, v1, Lpwi;->a:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -952,11 +952,11 @@
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/pwf;
+    check-cast v4, Lpwf;
 
-    iget-object v5, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a:Ldefpackage/pwc;
+    iget-object v5, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a:Lpwc;
 
-    invoke-virtual {v4, v5}, Ldefpackage/pwf;->c(Ldefpackage/pwc;)V
+    invoke-virtual {v4, v5}, Lpwf;->c(Lpwc;)V
 
     .line 186
     .end local v3    # "entry":Ljava/util/Map$Entry;
@@ -964,7 +964,7 @@
 
     .line 188
     :cond_0
-    iget-object v2, v1, Ldefpackage/pwi;->b:Ljava/util/HashMap;
+    iget-object v2, v1, Lpwi;->b:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->isEmpty()Z
 
@@ -973,7 +973,7 @@
     if-nez v2, :cond_1
 
     .line 189
-    iget-object v2, v1, Ldefpackage/pwi;->b:Ljava/util/HashMap;
+    iget-object v2, v1, Lpwi;->b:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -1002,18 +1002,18 @@
 
     move-result-object v4
 
-    check-cast v4, Ldefpackage/pwf;
+    check-cast v4, Lpwf;
 
-    iget-object v5, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a:Ldefpackage/pwc;
+    iget-object v5, p0, Lcom/google/vr/cardboard/ExternalSurfaceManager;->a:Lpwc;
 
-    invoke-virtual {v4, v5}, Ldefpackage/pwf;->c(Ldefpackage/pwc;)V
+    invoke-virtual {v4, v5}, Lpwf;->c(Lpwc;)V
 
     .line 191
     .end local v3    # "entry2":Ljava/util/Map$Entry;
     goto :goto_1
 
     .line 193
-    .end local v1    # "pwiVar":Ldefpackage/pwi;
+    .end local v1    # "pwiVar":Lpwi;
     :cond_1
     monitor-exit v0
 

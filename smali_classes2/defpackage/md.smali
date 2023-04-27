@@ -1,99 +1,124 @@
-.class public final Ldefpackage/md;
-.super Ldefpackage/ot;
+.class public Ldefpackage/Md;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Llie;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgdj;->j(Lgew;Lgog;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/me;
+.field public final synthetic this$0:Lgdj;
+
+.field public final synthetic val$h:Lhsp;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/me;Landroid/view/View;)V
+.method public constructor <init>(Lgdj;Lhsp;)V
     .locals 0
-    .param p1, "meVar"    # Ldefpackage/me;
-    .param p2, "view"    # Landroid/view/View;
+    .param p1, "this$0"    # Lgdj;
 
-    .line 13
-    invoke-direct {p0, p2}, Ldefpackage/ot;-><init>(Landroid/view/View;)V
+    .line 342
+    iput-object p1, p0, Ldefpackage/Md;->this$0:Lgdj;
 
-    .line 14
-    iput-object p1, p0, Ldefpackage/md;->a:Ldefpackage/me;
+    iput-object p2, p0, Ldefpackage/Md;->val$h:Lhsp;
 
-    .line 15
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ldefpackage/lo;
-    .locals 2
+.method public final close()V
+    .locals 6
 
-    .line 19
-    iget-object v0, p0, Ldefpackage/md;->a:Ldefpackage/me;
+    .line 345
+    iget-object v0, p0, Ldefpackage/Md;->this$0:Lgdj;
 
-    iget-object v0, v0, Ldefpackage/me;->a:Ldefpackage/mh;
+    .line 346
+    .local v0, "gdjVar":Lgdj;
+    iget-object v1, p0, Ldefpackage/Md;->val$h:Lhsp;
 
-    iget-object v0, v0, Ldefpackage/mh;->i:Ldefpackage/mf;
+    .line 347
+    .local v1, "hspVar":Lhsp;
+    monitor-enter v0
 
-    .line 20
-    .local v0, "mfVar":Ldefpackage/mf;
-    if-nez v0, :cond_0
+    .line 348
+    :try_start_0
+    iget-object v2, v0, Lgdj;->b:Llis;
 
-    .line 21
-    const/4 v1, 0x0
+    .line 349
+    .local v2, "lisVar":Llis;
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    return-object v1
+    move-result-object v3
 
-    .line 23
-    :cond_0
-    invoke-virtual {v0}, Ldefpackage/li;->a()Ldefpackage/lg;
+    .line 350
+    .local v3, "valueOf":Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    return-object v1
-.end method
+    move-result-object v5
 
-.method public final b()Z
-    .locals 1
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
 
-    .line 28
-    iget-object v0, p0, Ldefpackage/md;->a:Ldefpackage/me;
+    move-result v5
 
-    iget-object v0, v0, Ldefpackage/me;->a:Ldefpackage/mh;
+    add-int/lit8 v5, v5, 0x18
 
-    invoke-virtual {v0}, Ldefpackage/mh;->m()Z
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 29
-    const/4 v0, 0x1
+    .line 351
+    .local v4, "sb":Ljava/lang/StringBuilder;
+    const-string v5, "removing fallback shot: "
 
-    return v0
-.end method
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public final c()Z
-    .locals 2
+    .line 352
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 34
-    iget-object v0, p0, Ldefpackage/md;->a:Ldefpackage/me;
+    .line 353
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    iget-object v0, v0, Ldefpackage/me;->a:Ldefpackage/mh;
+    move-result-object v5
 
-    .line 35
-    .local v0, "mhVar":Ldefpackage/mh;
-    iget-object v1, v0, Ldefpackage/mh;->k:Ldefpackage/mc;
+    invoke-interface {v2, v5}, Llis;->b(Ljava/lang/String;)V
 
-    if-eqz v1, :cond_0
+    .line 354
+    iget-object v5, v0, Lgdj;->f:Ljava/util/Set;
 
-    .line 36
-    const/4 v1, 0x0
+    invoke-interface {v5, v1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    return v1
+    .line 355
+    nop
 
-    .line 38
-    :cond_0
-    invoke-virtual {v0}, Ldefpackage/mh;->k()Z
+    .end local v2    # "lisVar":Llis;
+    .end local v3    # "valueOf":Ljava/lang/String;
+    .end local v4    # "sb":Ljava/lang/StringBuilder;
+    monitor-exit v0
 
-    .line 39
-    const/4 v1, 0x1
+    .line 356
+    return-void
 
-    return v1
+    .line 355
+    :catchall_0
+    move-exception v2
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v2
 .end method

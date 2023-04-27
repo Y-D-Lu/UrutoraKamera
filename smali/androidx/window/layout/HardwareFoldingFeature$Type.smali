@@ -39,7 +39,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Landroidx/window/layout/HardwareFoldingFeature$Type$Companion;-><init>(Ldefpackage/qnm;)V
+    invoke-direct {v0, v1}, Landroidx/window/layout/HardwareFoldingFeature$Type$Companion;-><init>(Lqnm;)V
 
     sput-object v0, Landroidx/window/layout/HardwareFoldingFeature$Type;->mCompanion:Landroidx/window/layout/HardwareFoldingFeature$Type$Companion;
 

@@ -255,9 +255,9 @@
     sput-object v0, Landroid/support/wearable/complications/ComplicationData;->d:[[Ljava/lang/String;
 
     .line 20
-    new-instance v0, Ldefpackage/si;
+    new-instance v0, Lsi;
 
-    invoke-direct {v0, v5}, Ldefpackage/si;-><init>(I)V
+    invoke-direct {v0, v5}, Lsi;-><init>(I)V
 
     sput-object v0, Landroid/support/wearable/complications/ComplicationData;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -297,20 +297,20 @@
     return-void
 .end method
 
-.method public constructor <init>(Ldefpackage/sg;)V
+.method public constructor <init>(Lsg;)V
     .locals 1
-    .param p1, "sgVar"    # Ldefpackage/sg;
+    .param p1, "sgVar"    # Lsg;
 
     .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 28
-    iget v0, p1, Ldefpackage/sg;->a:I
+    iget v0, p1, Lsg;->a:I
 
     iput v0, p0, Landroid/support/wearable/complications/ComplicationData;->b:I
 
     .line 29
-    iget-object v0, p1, Ldefpackage/sg;->b:Landroid/os/Bundle;
+    iget-object v0, p1, Lsg;->b:Landroid/os/Bundle;
 
     iput-object v0, p0, Landroid/support/wearable/complications/ComplicationData;->c:Landroid/os/Bundle;
 

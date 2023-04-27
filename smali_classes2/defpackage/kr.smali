@@ -1,246 +1,70 @@
-.class public final Ldefpackage/kr;
-.super Landroid/widget/BaseAdapter;
+.class public Ldefpackage/Kr;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ldefpackage/Lr;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/ks;
-
-.field private b:I
+.field public final synthetic this$1:Ldefpackage/Lr;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/ks;)V
-    .locals 1
-    .param p1, "ksVar"    # Ldefpackage/ks;
+.method public constructor <init>(Ldefpackage/Lr;)V
+    .locals 0
+    .param p1, "this$1"    # Ldefpackage/Lr;
 
-    .line 17
-    invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
+    .line 28184
+    iput-object p1, p0, Ldefpackage/Kr;->this$1:Ldefpackage/Lr;
 
-    .line 15
-    const/4 v0, -0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, Ldefpackage/kr;->b:I
-
-    .line 18
-    iput-object p1, p0, Ldefpackage/kr;->a:Ldefpackage/ks;
-
-    .line 19
-    invoke-virtual {p0}, Ldefpackage/kr;->b()V
-
-    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()V
-    .locals 6
-
-    .line 34
-    iget-object v0, p0, Ldefpackage/kr;->a:Ldefpackage/ks;
-
-    iget-object v0, v0, Ldefpackage/ks;->c:Ldefpackage/kw;
-
-    .line 35
-    .local v0, "kwVar":Ldefpackage/kw;
-    iget-object v1, v0, Ldefpackage/kw;->h:Ldefpackage/kz;
-
-    .line 36
-    .local v1, "kzVar":Ldefpackage/kz;
-    if-eqz v1, :cond_1
-
-    .line 37
-    invoke-virtual {v0}, Ldefpackage/kw;->e()Ljava/util/ArrayList;
-
-    move-result-object v2
-
-    .line 38
-    .local v2, "e":Ljava/util/ArrayList;
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
-    move-result v3
-
-    .line 39
-    .local v3, "size":I
-    const/4 v4, 0x0
-
-    .local v4, "i":I
-    :goto_0
-    if-ge v4, v3, :cond_1
-
-    .line 40
-    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ldefpackage/kz;
-
-    if-ne v5, v1, :cond_0
-
-    .line 41
-    iput v4, p0, Ldefpackage/kr;->b:I
-
-    .line 42
-    return-void
-
-    .line 39
-    :cond_0
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    .line 46
-    .end local v2    # "e":Ljava/util/ArrayList;
-    .end local v3    # "size":I
-    .end local v4    # "i":I
-    :cond_1
-    const/4 v2, -0x1
-
-    iput v2, p0, Ldefpackage/kr;->b:I
-
-    .line 47
-    return-void
-.end method
-
-.method public final getCount()I
-    .locals 2
-
-    .line 51
-    iget-object v0, p0, Ldefpackage/kr;->a:Ldefpackage/ks;
-
-    iget-object v0, v0, Ldefpackage/ks;->c:Ldefpackage/kw;
-
-    invoke-virtual {v0}, Ldefpackage/kw;->e()Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    .line 52
-    .local v0, "size":I
-    iget v1, p0, Ldefpackage/kr;->b:I
-
-    if-gez v1, :cond_0
-
-    move v1, v0
-
-    goto :goto_0
-
-    :cond_0
-    add-int/lit8 v1, v0, -0x1
-
-    :goto_0
-    return v1
-.end method
-
-.method public final getItem(I)Ldefpackage/kz;
+.method public final accept(Ljava/lang/Object;)V
     .locals 3
-    .param p1, "i"    # I
+    .param p1, "obj3"    # Ljava/lang/Object;
 
-    .line 25
-    iget-object v0, p0, Ldefpackage/kr;->a:Ldefpackage/ks;
+    .line 28187
+    move-object v0, p1
 
-    iget-object v0, v0, Ldefpackage/ks;->c:Ldefpackage/kw;
+    check-cast v0, Landroid/animation/Animator;
 
-    invoke-virtual {v0}, Ldefpackage/kw;->e()Ljava/util/ArrayList;
+    .line 28188
+    .local v0, "animator":Landroid/animation/Animator;
+    iget-object v1, p0, Ldefpackage/Kr;->this$1:Ldefpackage/Lr;
 
-    move-result-object v0
+    iget-object v1, v1, Ldefpackage/Lr;->this$0:Ljkz;
 
-    .line 26
-    .local v0, "e":Ljava/util/ArrayList;
-    iget v1, p0, Ldefpackage/kr;->b:I
+    iget-object v1, v1, Ljkz;->b:Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;
 
-    .line 27
-    .local v1, "i2":I
-    if-ltz v1, :cond_0
+    sget-object v2, Ljkc;->PHOTO_IDLE:Ljkc;
 
-    if-lt p1, v1, :cond_0
+    invoke-virtual {v1, v2}, Lcom/google/android/apps/camera/ui/shutterbutton/ShutterButton;->resetTo(Ljkc;)V
 
-    .line 28
-    add-int/lit8 p1, p1, 0x1
-
-    .line 30
-    :cond_0
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ldefpackage/kz;
-
-    return-object v2
+    .line 28189
+    return-void
 .end method
 
-.method public bridge synthetic getItem(I)Ljava/lang/Object;
+.method public final andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
     .locals 0
+    .param p1, "consumer"    # Ljava/util/function/Consumer;
 
-    .line 13
-    invoke-virtual {p0, p1}, Ldefpackage/kr;->getItem(I)Ldefpackage/kz;
-
-    move-result-object p1
-
+    .line 28193
     return-object p1
-.end method
-
-.method public final getItemId(I)J
-    .locals 2
-    .param p1, "i"    # I
-
-    .line 57
-    int-to-long v0, p1
-
-    return-wide v0
-.end method
-
-.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 3
-    .param p1, "i"    # I
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "viewGroup"    # Landroid/view/ViewGroup;
-
-    .line 62
-    if-nez p2, :cond_0
-
-    .line 63
-    iget-object v0, p0, Ldefpackage/kr;->a:Ldefpackage/ks;
-
-    iget-object v0, v0, Ldefpackage/ks;->b:Landroid/view/LayoutInflater;
-
-    const v1, 0x7f0d0010
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, p3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p2
-
-    .line 65
-    :cond_0
-    move-object v0, p2
-
-    check-cast v0, Ldefpackage/ll;
-
-    invoke-virtual {p0, p1}, Ldefpackage/kr;->getItem(I)Ldefpackage/kz;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Ldefpackage/ll;->f(Ldefpackage/kz;)V
-
-    .line 66
-    return-object p2
-.end method
-
-.method public final notifyDataSetChanged()V
-    .locals 0
-
-    .line 71
-    invoke-virtual {p0}, Ldefpackage/kr;->b()V
-
-    .line 72
-    invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
-
-    .line 73
-    return-void
 .end method

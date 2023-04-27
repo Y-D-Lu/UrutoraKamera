@@ -168,27 +168,27 @@
     if-lt v1, v3, :cond_8
 
     .line 51
-    new-instance v1, Ldefpackage/kij;
+    new-instance v1, Lkij;
 
     invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
-    invoke-direct {v1, v3}, Ldefpackage/kij;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v3}, Lkij;-><init>(Landroid/content/Context;)V
 
     .line 52
-    .local v1, "kijVar":Ldefpackage/kij;
-    new-instance v3, Ldefpackage/kpa;
+    .local v1, "kijVar":Lkij;
+    new-instance v3, Lkpa;
 
-    invoke-direct {v3}, Ldefpackage/kpa;-><init>()V
+    invoke-direct {v3}, Lkpa;-><init>()V
 
     .line 53
-    .local v3, "kpaVar":Ldefpackage/kpa;
+    .local v3, "kpaVar":Lkpa;
     new-instance v4, Landroid/app/ApplicationErrorReport;
 
     invoke-direct {v4}, Landroid/app/ApplicationErrorReport;-><init>()V
 
-    iput-object v4, v3, Ldefpackage/kpa;->d:Landroid/app/ApplicationErrorReport;
+    iput-object v4, v3, Lkpa;->d:Landroid/app/ApplicationErrorReport;
 
     .line 54
     new-instance v5, Landroid/app/ApplicationErrorReport$CrashInfo;
@@ -198,7 +198,7 @@
     iput-object v5, v4, Landroid/app/ApplicationErrorReport;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
     .line 55
-    iget-object v4, v3, Ldefpackage/kpa;->d:Landroid/app/ApplicationErrorReport;
+    iget-object v4, v3, Lkpa;->d:Landroid/app/ApplicationErrorReport;
 
     iget-object v4, v4, Landroid/app/ApplicationErrorReport;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -210,22 +210,22 @@
     if-nez p1, :cond_0
 
     .line 57
-    invoke-static {v3}, Ldefpackage/mip;->ci(Ldefpackage/kpa;)Ldefpackage/kpb;
+    invoke-static {v3}, Lmip;->ci(Lkpa;)Lkpb;
 
     move-result-object v2
 
-    .local v2, "ci":Ldefpackage/kpb;
+    .local v2, "ci":Lkpb;
     goto/16 :goto_0
 
     .line 59
-    .end local v2    # "ci":Ldefpackage/kpb;
+    .end local v2    # "ci":Lkpb;
     :cond_0
     const-string v4, " "
 
-    iput-object v4, v3, Ldefpackage/kpa;->a:Ljava/lang/String;
+    iput-object v4, v3, Lkpa;->a:Ljava/lang/String;
 
     .line 60
-    iput-boolean v2, v3, Ldefpackage/kpa;->c:Z
+    iput-boolean v2, v3, Lkpa;->c:Z
 
     .line 61
     const-string v2, "com.google.android.apps.camera.app.silentfeedback.SilentFeedbackService.exceptionClass"
@@ -237,7 +237,7 @@
     if-eqz v2, :cond_1
 
     .line 62
-    iget-object v2, v3, Ldefpackage/kpa;->d:Landroid/app/ApplicationErrorReport;
+    iget-object v2, v3, Lkpa;->d:Landroid/app/ApplicationErrorReport;
 
     iget-object v2, v2, Landroid/app/ApplicationErrorReport;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -260,7 +260,7 @@
     if-eqz v2, :cond_2
 
     .line 65
-    iget-object v2, v3, Ldefpackage/kpa;->d:Landroid/app/ApplicationErrorReport;
+    iget-object v2, v3, Lkpa;->d:Landroid/app/ApplicationErrorReport;
 
     iget-object v2, v2, Landroid/app/ApplicationErrorReport;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -283,7 +283,7 @@
     if-eqz v2, :cond_3
 
     .line 68
-    iget-object v2, v3, Ldefpackage/kpa;->d:Landroid/app/ApplicationErrorReport;
+    iget-object v2, v3, Lkpa;->d:Landroid/app/ApplicationErrorReport;
 
     iget-object v2, v2, Landroid/app/ApplicationErrorReport;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -306,7 +306,7 @@
     if-eqz v2, :cond_4
 
     .line 71
-    iget-object v2, v3, Ldefpackage/kpa;->d:Landroid/app/ApplicationErrorReport;
+    iget-object v2, v3, Lkpa;->d:Landroid/app/ApplicationErrorReport;
 
     iget-object v2, v2, Landroid/app/ApplicationErrorReport;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -329,7 +329,7 @@
     if-eqz v2, :cond_5
 
     .line 74
-    iget-object v2, v3, Ldefpackage/kpa;->d:Landroid/app/ApplicationErrorReport;
+    iget-object v2, v3, Lkpa;->d:Landroid/app/ApplicationErrorReport;
 
     iget-object v2, v2, Landroid/app/ApplicationErrorReport;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -352,7 +352,7 @@
     if-eqz v2, :cond_6
 
     .line 77
-    iget-object v2, v3, Ldefpackage/kpa;->d:Landroid/app/ApplicationErrorReport;
+    iget-object v2, v3, Lkpa;->d:Landroid/app/ApplicationErrorReport;
 
     iget-object v2, v2, Landroid/app/ApplicationErrorReport;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -381,41 +381,41 @@
 
     move-result-object v2
 
-    iput-object v2, v3, Ldefpackage/kpa;->b:Ljava/lang/String;
+    iput-object v2, v3, Lkpa;->b:Ljava/lang/String;
 
     .line 82
     :cond_7
-    invoke-static {v3}, Ldefpackage/mip;->ci(Ldefpackage/kpa;)Ldefpackage/kpb;
+    invoke-static {v3}, Lmip;->ci(Lkpa;)Lkpb;
 
     move-result-object v2
 
     .line 84
-    .restart local v2    # "ci":Ldefpackage/kpb;
+    .restart local v2    # "ci":Lkpb;
     :goto_0
-    iget-object v4, v1, Ldefpackage/kij;->j:Ldefpackage/kim;
+    iget-object v4, v1, Lkij;->j:Lkim;
 
     .line 85
-    .local v4, "kimVar":Ldefpackage/kim;
-    new-instance v5, Ldefpackage/kox;
+    .local v4, "kimVar":Lkim;
+    new-instance v5, Lkox;
 
-    invoke-direct {v5, v4, v2}, Ldefpackage/kox;-><init>(Ldefpackage/kim;Ldefpackage/kpb;)V
+    invoke-direct {v5, v4, v2}, Lkox;-><init>(Lkim;Lkpb;)V
 
     .line 86
-    .local v5, "koxVar":Ldefpackage/kox;
-    invoke-virtual {v4, v5}, Ldefpackage/kim;->b(Ldefpackage/kji;)V
+    .local v5, "koxVar":Lkox;
+    invoke-virtual {v4, v5}, Lkim;->b(Lkji;)V
 
     .line 87
-    invoke-static {v5}, Ldefpackage/mip;->dw(Ldefpackage/kip;)Ldefpackage/kvk;
+    invoke-static {v5}, Lmip;->dw(Lkip;)Lkvk;
 
     move-result-object v6
 
-    sget-object v7, Ldefpackage/pgr;->a:Ldefpackage/pgr;
+    sget-object v7, Lpgr;->a:Lpgr;
 
     new-instance v8, Lcom/google/android/apps/camera/app/silentfeedback/SilentFeedbackService$1;
 
     invoke-direct {v8, p0}, Lcom/google/android/apps/camera/app/silentfeedback/SilentFeedbackService$1;-><init>(Lcom/google/android/apps/camera/app/silentfeedback/SilentFeedbackService;)V
 
-    invoke-virtual {v6, v7, v8}, Ldefpackage/kvk;->g(Ljava/util/concurrent/Executor;Ldefpackage/kvc;)V
+    invoke-virtual {v6, v7, v8}, Lkvk;->g(Ljava/util/concurrent/Executor;Lkvc;)V
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -423,11 +423,11 @@
     return v0
 
     .line 96
-    .end local v1    # "kijVar":Ldefpackage/kij;
-    .end local v2    # "ci":Ldefpackage/kpb;
-    .end local v3    # "kpaVar":Ldefpackage/kpa;
-    .end local v4    # "kimVar":Ldefpackage/kim;
-    .end local v5    # "koxVar":Ldefpackage/kox;
+    .end local v1    # "kijVar":Lkij;
+    .end local v2    # "ci":Lkpb;
+    .end local v3    # "kpaVar":Lkpa;
+    .end local v4    # "kimVar":Lkim;
+    .end local v5    # "koxVar":Lkox;
     :cond_8
     goto :goto_1
 

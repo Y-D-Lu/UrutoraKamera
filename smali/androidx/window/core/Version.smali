@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field private final bigInteger$delegate:Ldefpackage/qkj;
+.field private final bigInteger$delegate:Lqkj;
 
 .field private final description:Ljava/lang/String;
 
@@ -49,7 +49,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Landroidx/window/core/Version$Companion;-><init>(Ldefpackage/qnm;)V
+    invoke-direct {v0, v1}, Landroidx/window/core/Version$Companion;-><init>(Lqnm;)V
 
     sput-object v0, Landroidx/window/core/Version;->mCompanion:Landroidx/window/core/Version$Companion;
 
@@ -117,23 +117,23 @@
 
     invoke-direct {v0, p0}, Landroidx/window/core/Version$bigInteger$2;-><init>(Landroidx/window/core/Version;)V
 
-    invoke-static {v0}, Ldefpackage/qmd;->N(Ldefpackage/qmj;)Ldefpackage/qkj;
+    invoke-static {v0}, Lqmd;->N(Lqmj;)Lqkj;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/window/core/Version;->bigInteger$delegate:Ldefpackage/qkj;
+    iput-object v0, p0, Landroidx/window/core/Version;->bigInteger$delegate:Lqkj;
 
     .line 100
     return-void
 .end method
 
-.method public constructor <init>(IIILjava/lang/String;Ldefpackage/qnm;)V
+.method public constructor <init>(IIILjava/lang/String;Lqnm;)V
     .locals 0
     .param p1, "i"    # I
     .param p2, "i2"    # I
     .param p3, "i3"    # I
     .param p4, "str"    # Ljava/lang/String;
-    .param p5, "qnmVar"    # Ldefpackage/qnm;
+    .param p5, "qnmVar"    # Lqnm;
 
     .line 103
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/window/core/Version;-><init>(IIILjava/lang/String;)V
@@ -182,9 +182,9 @@
     .locals 2
 
     .line 107
-    iget-object v0, p0, Landroidx/window/core/Version;->bigInteger$delegate:Ldefpackage/qkj;
+    iget-object v0, p0, Landroidx/window/core/Version;->bigInteger$delegate:Lqkj;
 
-    invoke-interface {v0}, Ldefpackage/qkj;->a()Ljava/lang/Object;
+    invoke-interface {v0}, Lqkj;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -349,7 +349,7 @@
     .line 145
     iget-object v0, p0, Landroidx/window/core/Version;->description:Ljava/lang/String;
 
-    invoke-static {v0}, Ldefpackage/qno;->j(Ljava/lang/CharSequence;)Z
+    invoke-static {v0}, Lqno;->j(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -359,7 +359,7 @@
 
     const-string v1, "-"
 
-    invoke-static {v1, v0}, Ldefpackage/qno;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lqno;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 

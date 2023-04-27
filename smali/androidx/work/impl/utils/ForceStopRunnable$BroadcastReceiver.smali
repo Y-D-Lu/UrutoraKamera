@@ -10,7 +10,7 @@
     .line 13
     const-string v0, "ForceStopRunnable$Rcvr"
 
-    invoke-static {v0}, Ldefpackage/kus;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lkus;->g(Ljava/lang/String;)Ljava/lang/String;
 
     .line 14
     return-void
@@ -51,10 +51,10 @@
 
     .line 21
     :cond_0
-    invoke-static {}, Ldefpackage/kus;->l()Ldefpackage/kus;
+    invoke-static {}, Lkus;->l()Lkus;
 
     .line 22
-    invoke-static {p1}, Ldefpackage/arl;->a(Landroid/content/Context;)V
+    invoke-static {p1}, Larl;->a(Landroid/content/Context;)V
 
     .line 23
     return-void

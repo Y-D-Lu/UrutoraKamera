@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->c(ILdefpackage/jhs;IZ)V
+    value = Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;->c(ILjhs;IZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,18 +20,18 @@
 # instance fields
 .field public final synthetic this$0:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;
 
-.field public final synthetic val$jhsVar:Ldefpackage/jhs;
+.field public final synthetic val$jhsVar:Ljhs;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;Ldefpackage/jhs;)V
+.method public constructor <init>(Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;Ljhs;)V
     .locals 0
     .param p1, "this$0"    # Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;
 
     .line 136
     iput-object p1, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView$1;->this$0:Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;
 
-    iput-object p2, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView$1;->val$jhsVar:Ldefpackage/jhs;
+    iput-object p2, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView$1;->val$jhsVar:Ljhs;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,18 +52,18 @@
 
     .line 140
     .local v0, "popupMenuView":Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView;
-    iget-object v1, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView$1;->val$jhsVar:Ldefpackage/jhs;
+    iget-object v1, p0, Lcom/google/android/apps/camera/ui/popupmenu/PopupMenuView$1;->val$jhsVar:Ljhs;
 
     .line 141
-    .local v1, "jhsVar2":Ldefpackage/jhs;
-    invoke-virtual {v1, p3}, Ldefpackage/jhs;->d(I)V
+    .local v1, "jhsVar2":Ljhs;
+    invoke-virtual {v1, p3}, Ljhs;->d(I)V
 
     .line 142
-    invoke-virtual {v1, p3}, Ldefpackage/jhs;->getItem(I)Ldefpackage/jhp;
+    invoke-virtual {v1, p3}, Ljhs;->getItem(I)Ljhp;
 
     move-result-object v2
 
-    iget-boolean v2, v2, Ldefpackage/jhp;->f:Z
+    iget-boolean v2, v2, Ljhp;->f:Z
 
     if-nez v2, :cond_0
 
@@ -76,7 +76,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Ldefpackage/jty;->b(Landroid/content/Context;)V
+    invoke-static {v2}, Ljty;->b(Landroid/content/Context;)V
 
     .line 146
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getResources()Landroid/content/res/Resources;
@@ -91,11 +91,11 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {v1, p3}, Ldefpackage/jhs;->getItem(I)Ldefpackage/jhp;
+    invoke-virtual {v1, p3}, Ljhs;->getItem(I)Ljhp;
 
     move-result-object v6
 
-    iget-object v6, v6, Ldefpackage/jhp;->b:Ljava/lang/String;
+    iget-object v6, v6, Ljhp;->b:Ljava/lang/String;
 
     aput-object v6, v4, v5
 

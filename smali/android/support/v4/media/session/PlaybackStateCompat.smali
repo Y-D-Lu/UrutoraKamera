@@ -47,11 +47,11 @@
     .locals 2
 
     .line 15
-    new-instance v0, Ldefpackage/ba;
+    new-instance v0, Lba;
 
     const/16 v1, 0xd
 
-    invoke-direct {v0, v1}, Ldefpackage/ba;-><init>(I)V
+    invoke-direct {v0, v1}, Lba;-><init>(I)V
 
     sput-object v0, Landroid/support/v4/media/session/PlaybackStateCompat;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -135,7 +135,7 @@
     iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->j:J
 
     .line 71
-    const-class v0, Ldefpackage/ew;
+    const-class v0, Lew;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 

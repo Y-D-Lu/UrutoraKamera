@@ -1,73 +1,58 @@
-.class final Ldefpackage/hw;
-.super Landroid/widget/ArrayAdapter;
+.class public Ldefpackage/Hw;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Lpgj;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmwr;->u(Lqwt;)Lpht;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/support/v7/app/AlertController$RecycleListView;
+.field public final synthetic this$0:Lmwr;
 
-.field public final b:Ldefpackage/hz;
+.field public final synthetic val$qwtVar:Lqwt;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/hz;Landroid/content/Context;I[Ljava/lang/CharSequence;Landroid/support/v7/app/AlertController$RecycleListView;)V
-    .locals 1
-    .param p1, "hzVar"    # Ldefpackage/hz;
-    .param p2, "context"    # Landroid/content/Context;
-    .param p3, "i"    # I
-    .param p4, "charSequenceArr"    # [Ljava/lang/CharSequence;
-    .param p5, "alertController$RecycleListView"    # Landroid/support/v7/app/AlertController$RecycleListView;
+.method public constructor <init>(Lmwr;Lqwt;)V
+    .locals 0
+    .param p1, "this$0"    # Lmwr;
 
-    .line 17
-    const v0, 0x1020014
+    .line 37
+    iput-object p1, p0, Ldefpackage/Hw;->this$0:Lmwr;
 
-    invoke-direct {p0, p2, p3, v0, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II[Ljava/lang/Object;)V
+    iput-object p2, p0, Ldefpackage/Hw;->val$qwtVar:Lqwt;
 
-    .line 18
-    iput-object p1, p0, Ldefpackage/hw;->b:Ldefpackage/hz;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
-    iput-object p5, p0, Ldefpackage/hw;->a:Landroid/support/v7/app/AlertController$RecycleListView;
-
-    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 4
-    .param p1, "i"    # I
-    .param p2, "view"    # Landroid/view/View;
-    .param p3, "viewGroup"    # Landroid/view/ViewGroup;
+.method public final a()Lpht;
+    .locals 3
 
-    .line 24
-    invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    .line 40
+    iget-object v0, p0, Ldefpackage/Hw;->this$0:Lmwr;
+
+    iget-object v1, p0, Ldefpackage/Hw;->val$qwtVar:Lqwt;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Lmwr;->q(Lqwt;Lmul;)Lpht;
 
     move-result-object v0
 
-    .line 25
-    .local v0, "view2":Landroid/view/View;
-    iget-object v1, p0, Ldefpackage/hw;->b:Ldefpackage/hz;
-
-    iget-object v1, v1, Ldefpackage/hz;->s:[Z
-
-    .line 26
-    .local v1, "zArr":[Z
-    if-eqz v1, :cond_0
-
-    aget-boolean v2, v1, p1
-
-    if-eqz v2, :cond_0
-
-    .line 27
-    iget-object v2, p0, Ldefpackage/hw;->a:Landroid/support/v7/app/AlertController$RecycleListView;
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v2, p1, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
-
-    .line 29
-    :cond_0
     return-object v0
 .end method

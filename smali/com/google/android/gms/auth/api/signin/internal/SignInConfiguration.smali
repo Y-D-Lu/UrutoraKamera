@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;
-.super Ldefpackage/kno;
+.super Lkno;
 .source ""
 
 # interfaces
@@ -21,11 +21,11 @@
     .locals 2
 
     .line 16
-    new-instance v0, Ldefpackage/si;
+    new-instance v0, Lsi;
 
     const/16 v1, 0x13
 
-    invoke-direct {v0, v1}, Ldefpackage/si;-><init>(I)V
+    invoke-direct {v0, v1}, Lsi;-><init>(I)V
 
     sput-object v0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -38,10 +38,10 @@
     .param p2, "googleSignInOptions"    # Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     .line 20
-    invoke-direct {p0}, Ldefpackage/kno;-><init>()V
+    invoke-direct {p0}, Lkno;-><init>()V
 
     .line 21
-    invoke-static {p1}, Ldefpackage/mip;->ds(Ljava/lang/String;)V
+    invoke-static {p1}, Lmip;->ds(Ljava/lang/String;)V
 
     .line 22
     iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->a:Ljava/lang/String;
@@ -128,25 +128,25 @@
     .locals 2
 
     .line 46
-    new-instance v0, Ldefpackage/kus;
+    new-instance v0, Lkus;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Ldefpackage/kus;-><init>([B)V
+    invoke-direct {v0, v1}, Lkus;-><init>([B)V
 
     .line 47
-    .local v0, "kusVar":Ldefpackage/kus;
+    .local v0, "kusVar":Lkus;
     iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ldefpackage/kus;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lkus;->b(Ljava/lang/Object;)V
 
     .line 48
     iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
-    invoke-virtual {v0, v1}, Ldefpackage/kus;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lkus;->b(Ljava/lang/Object;)V
 
     .line 49
-    iget v1, v0, Ldefpackage/kus;->a:I
+    iget v1, v0, Lkus;->a:I
 
     return v1
 .end method
@@ -157,7 +157,7 @@
     .param p2, "i"    # I
 
     .line 54
-    invoke-static {p1}, Ldefpackage/mip;->ct(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lmip;->ct(Landroid/os/Parcel;)I
 
     move-result v0
 
@@ -167,17 +167,17 @@
 
     const/4 v2, 0x2
 
-    invoke-static {p1, v2, v1}, Ldefpackage/mip;->cI(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, v2, v1}, Lmip;->cI(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 56
     iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     const/4 v2, 0x5
 
-    invoke-static {p1, v2, v1, p2}, Ldefpackage/mip;->cH(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+    invoke-static {p1, v2, v1, p2}, Lmip;->cH(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 
     .line 57
-    invoke-static {p1, v0}, Ldefpackage/mip;->cv(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lmip;->cv(Landroid/os/Parcel;I)V
 
     .line 58
     return-void

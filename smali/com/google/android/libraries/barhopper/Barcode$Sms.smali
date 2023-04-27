@@ -32,11 +32,11 @@
     .locals 2
 
     .line 490
-    new-instance v0, Ldefpackage/laa;
+    new-instance v0, Llaa;
 
     const/4 v1, 0x2
 
-    invoke-direct {v0, v1}, Ldefpackage/laa;-><init>(I)V
+    invoke-direct {v0, v1}, Llaa;-><init>(I)V
 
     sput-object v0, Lcom/google/android/libraries/barhopper/Barcode$Sms;->CREATOR:Landroid/os/Parcelable$Creator;
 

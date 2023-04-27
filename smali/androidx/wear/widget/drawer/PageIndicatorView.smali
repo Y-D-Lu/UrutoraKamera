@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/ala;
+.implements Lala;
 
 
 # instance fields
@@ -94,7 +94,7 @@
 
     move-result-object v1
 
-    sget-object v2, Ldefpackage/alx;->b:[I
+    sget-object v2, Lalx;->b:[I
 
     const v3, 0x7f1203f5
 
@@ -604,9 +604,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ldefpackage/amf;
+    new-instance v1, Lamf;
 
-    invoke-direct {v1, p0}, Ldefpackage/amf;-><init>(Landroidx/wear/widget/drawer/PageIndicatorView;)V
+    invoke-direct {v1, p0}, Lamf;-><init>(Landroidx/wear/widget/drawer/PageIndicatorView;)V
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 

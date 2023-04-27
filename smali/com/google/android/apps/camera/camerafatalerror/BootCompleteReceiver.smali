@@ -21,7 +21,7 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .line 13
-    invoke-static {p1}, Ldefpackage/ahj;->c(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p1}, Lahj;->c(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 

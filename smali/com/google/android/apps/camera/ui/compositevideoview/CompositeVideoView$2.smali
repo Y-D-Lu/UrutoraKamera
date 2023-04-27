@@ -43,10 +43,10 @@
     .line 147
     iget-object v0, p0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView$2;->this$0:Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;
 
-    iget-object v0, v0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->b:Ldefpackage/iwg;
+    iget-object v0, v0, Lcom/google/android/apps/camera/ui/compositevideoview/CompositeVideoView;->b:Liwg;
 
     .line 148
-    .local v0, "iwgVar":Ldefpackage/iwg;
+    .local v0, "iwgVar":Liwg;
     if-eqz v0, :cond_0
 
     .line 149

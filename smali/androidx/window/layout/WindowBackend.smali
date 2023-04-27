@@ -4,8 +4,8 @@
 
 
 # virtual methods
-.method public abstract registerLayoutChangeCallback(Landroid/app/Activity;Ljava/util/concurrent/Executor;Ldefpackage/fb;)V
+.method public abstract registerLayoutChangeCallback(Landroid/app/Activity;Ljava/util/concurrent/Executor;Lfb;)V
 .end method
 
-.method public abstract unregisterLayoutChangeCallback(Ldefpackage/fb;)V
+.method public abstract unregisterLayoutChangeCallback(Lfb;)V
 .end method

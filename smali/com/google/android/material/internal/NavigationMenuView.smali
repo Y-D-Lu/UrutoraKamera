@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/lm;
+.implements Llm;
 
 
 # direct methods
@@ -56,9 +56,9 @@
 
 
 # virtual methods
-.method public final a(Ldefpackage/kw;)V
+.method public final a(Lkw;)V
     .locals 0
-    .param p1, "kwVar"    # Ldefpackage/kw;
+    .param p1, "kwVar"    # Lkw;
 
     .line 28
     return-void

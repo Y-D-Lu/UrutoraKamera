@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ldefpackage/pjw;
+.implements Lpjw;
 
 
 # static fields

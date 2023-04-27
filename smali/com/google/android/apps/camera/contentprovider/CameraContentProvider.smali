@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Ldefpackage/deu;
+.field private a:Ldeu;
 
 .field private b:Landroid/content/pm/ProviderInfo;
 
-.field private volatile c:Ldefpackage/det;
+.field private volatile c:Ldet;
 
 
 # direct methods
@@ -21,14 +21,14 @@
     return-void
 .end method
 
-.method private final b()Ldefpackage/det;
+.method private final b()Ldet;
     .locals 6
 
     .line 53
-    iget-object v0, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->c:Ldefpackage/det;
+    iget-object v0, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->c:Ldet;
 
     .line 54
-    .local v0, "detVar":Ldefpackage/det;
+    .local v0, "detVar":Ldet;
     if-nez v0, :cond_1
 
     .line 55
@@ -36,7 +36,7 @@
 
     .line 56
     :try_start_0
-    iget-object v1, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->c:Ldefpackage/det;
+    iget-object v1, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->c:Ldet;
 
     move-object v0, v1
 
@@ -51,12 +51,12 @@
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 60
-    new-instance v2, Ldefpackage/dev;
+    new-instance v2, Ldev;
 
-    invoke-direct {v2, p0, v1}, Ldefpackage/dev;-><init>(Landroid/content/ContentProvider;Landroid/content/pm/ProviderInfo;)V
+    invoke-direct {v2, p0, v1}, Ldev;-><init>(Landroid/content/ContentProvider;Landroid/content/pm/ProviderInfo;)V
 
     .line 61
-    .local v2, "devVar":Ldefpackage/dev;
+    .local v2, "devVar":Ldev;
     invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object v3
@@ -68,33 +68,33 @@
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 63
-    invoke-interface {v3, v2}, Lcom/google/android/apps/camera/contentprovider/HasCameraContentProviderComponent;->cameraContentProviderComponent(Ldefpackage/dev;)Ldefpackage/der;
+    invoke-interface {v3, v2}, Lcom/google/android/apps/camera/contentprovider/HasCameraContentProviderComponent;->cameraContentProviderComponent(Ldev;)Lder;
 
     move-result-object v4
 
     .line 64
-    .local v4, "cameraContentProviderComponent":Ldefpackage/der;
-    invoke-interface {v4}, Ldefpackage/der;->b()Ldefpackage/qiz;
+    .local v4, "cameraContentProviderComponent":Lder;
+    invoke-interface {v4}, Lder;->b()Lqiz;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Ldefpackage/qiz;->a()V
+    invoke-virtual {v5}, Lqiz;->a()V
 
     .line 65
-    invoke-interface {v4}, Ldefpackage/der;->a()Ldefpackage/det;
+    invoke-interface {v4}, Lder;->a()Ldet;
 
     move-result-object v5
 
     move-object v0, v5
 
     .line 66
-    iput-object v0, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->c:Ldefpackage/det;
+    iput-object v0, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->c:Ldet;
 
     .line 68
     .end local v1    # "providerInfo":Landroid/content/pm/ProviderInfo;
-    .end local v2    # "devVar":Ldefpackage/dev;
+    .end local v2    # "devVar":Ldev;
     .end local v3    # "hasCameraContentProviderComponent":Lcom/google/android/apps/camera/contentprovider/HasCameraContentProviderComponent;
-    .end local v4    # "cameraContentProviderComponent":Ldefpackage/der;
+    .end local v4    # "cameraContentProviderComponent":Lder;
     :cond_0
     monitor-exit p0
 
@@ -121,10 +121,10 @@
     .locals 3
 
     .line 74
-    iget-object v0, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->a:Ldefpackage/deu;
+    iget-object v0, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->a:Ldeu;
 
     .line 75
-    .local v0, "deuVar":Ldefpackage/deu;
+    .local v0, "deuVar":Ldeu;
     if-eqz v0, :cond_0
 
     .line 76
@@ -137,7 +137,7 @@
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 78
-    invoke-virtual {v0, v1}, Ldefpackage/deu;->a(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Ldeu;->a(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -190,7 +190,7 @@
     if-eqz v1, :cond_0
 
     .line 95
-    invoke-direct {p0}, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->b()Ldefpackage/det;
+    invoke-direct {p0}, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->b()Ldet;
 
     .line 96
     new-instance v1, Landroid/os/Bundle;
@@ -292,7 +292,7 @@
     invoke-interface {v2}, Lcom/google/android/apps/camera/contentprovider/HasCameraContentProviderComponent;->initAppComponent()V
 
     .line 127
-    new-instance v3, Ldefpackage/deu;
+    new-instance v3, Ldeu;
 
     new-instance v4, Ljava/util/HashSet;
 
@@ -312,9 +312,9 @@
 
     invoke-direct {v4, v5}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    invoke-direct {v3, v1, v4}, Ldefpackage/deu;-><init>(Landroid/content/Context;Ljava/util/Set;)V
+    invoke-direct {v3, v1, v4}, Ldeu;-><init>(Landroid/content/Context;Ljava/util/Set;)V
 
-    iput-object v3, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->a:Ldefpackage/deu;
+    iput-object v3, p0, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->a:Ldeu;
 
     .line 128
     invoke-static {}, Landroid/os/Trace;->endSection()V
@@ -352,12 +352,12 @@
     invoke-static {v3}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 139
-    invoke-direct/range {p0 .. p0}, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->b()Ldefpackage/det;
+    invoke-direct/range {p0 .. p0}, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->b()Ldet;
 
     move-result-object v3
 
     .line 140
-    .local v3, "b":Ldefpackage/det;
+    .local v3, "b":Ldet;
     const-string v4, "r"
 
     move-object/from16 v5, p2
@@ -404,7 +404,7 @@
     .line 144
     .end local v0    # "valueOf":Ljava/lang/String;
     :cond_1
-    iget-object v4, v3, Ldefpackage/det;->b:Landroid/content/UriMatcher;
+    iget-object v4, v3, Ldet;->b:Landroid/content/UriMatcher;
 
     invoke-virtual {v4, v1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -464,17 +464,17 @@
     .local v2, "openPipeHelper":Landroid/os/ParcelFileDescriptor;
     :pswitch_1
     :try_start_0
-    iget-object v4, v3, Ldefpackage/det;->e:Ldefpackage/dxv;
+    iget-object v4, v3, Ldet;->e:Ldxv;
 
     .line 180
-    .local v4, "dxvVar":Ldefpackage/dxv;
-    sget v6, Ldefpackage/dxv;->b:I
+    .local v4, "dxvVar":Ldxv;
+    sget v6, Ldxv;->b:I
 
     add-int/lit8 v6, v6, 0x1
 
     .line 181
     .local v6, "i2":I
-    sput v6, Ldefpackage/dxv;->b:I
+    sput v6, Ldxv;->b:I
 
     .line 182
     new-instance v7, Ljava/lang/StringBuilder;
@@ -548,10 +548,10 @@
 
     .line 194
     .local v12, "sb5":Ljava/lang/String;
-    sget-object v13, Ldefpackage/oih;->a:Ldefpackage/oih;
+    sget-object v13, Loih;->a:Loih;
 
     .line 195
-    .local v13, "ojcVar":Ldefpackage/ojc;
+    .local v13, "ojcVar":Lojc;
     const-string v14, "width"
 
     invoke-virtual {v1, v14}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
@@ -566,7 +566,7 @@
 
     move-result-object v15
     :try_end_0
-    .catch Ldefpackage/dxy; {:try_start_0 .. :try_end_0} :catch_4
+    .catch Ldxy; {:try_start_0 .. :try_end_0} :catch_4
 
     .line 197
     .local v15, "queryParameter2":Ljava/lang/String;
@@ -596,7 +596,7 @@
 
     invoke-direct {v2, v5, v6}, Landroid/util/Size;-><init>(II)V
 
-    invoke-static {v2}, Ldefpackage/ojc;->i(Ljava/lang/Object;)Ldefpackage/ojc;
+    invoke-static {v2}, Lojc;->i(Ljava/lang/Object;)Lojc;
 
     move-result-object v2
 
@@ -620,44 +620,44 @@
     .restart local v16    # "openPipeHelper":Landroid/os/ParcelFileDescriptor;
     .restart local v17    # "i2":I
     :goto_1
-    iget-object v2, v4, Ldefpackage/dxv;->e:Ldefpackage/dwu;
+    iget-object v2, v4, Ldxv;->e:Ldwu;
 
-    invoke-virtual {v2, v9, v10}, Ldefpackage/dwu;->a(J)Ldefpackage/ojc;
+    invoke-virtual {v2, v9, v10}, Ldwu;->a(J)Lojc;
 
     move-result-object v2
 
     .line 201
-    .local v2, "a":Ldefpackage/ojc;
-    invoke-virtual {v2}, Ldefpackage/ojc;->g()Z
+    .local v2, "a":Lojc;
+    invoke-virtual {v2}, Lojc;->g()Z
 
     move-result v5
 
     if-eqz v5, :cond_9
 
     .line 205
-    invoke-virtual {v2}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v2}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v5
 
-    check-cast v5, Ldefpackage/dws;
+    check-cast v5, Ldws;
 
-    invoke-virtual {v5}, Ldefpackage/dws;->a()Ldefpackage/bcl;
+    invoke-virtual {v5}, Ldws;->a()Lbcl;
 
     move-result-object v5
 
     .line 206
-    .local v5, "a2":Ldefpackage/bcl;
+    .local v5, "a2":Lbcl;
     if-eqz v5, :cond_8
 
     .line 210
-    iget-object v6, v4, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v6, v4, Ldxv;->c:Lljf;
 
     .line 211
-    .local v6, "ljfVar":Ldefpackage/ljf;
+    .local v6, "ljfVar":Lljf;
     move-object/from16 v18, v2
 
-    .end local v2    # "a":Ldefpackage/ojc;
-    .local v18, "a":Ldefpackage/ojc;
+    .end local v2    # "a":Lojc;
+    .local v18, "a":Lojc;
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-static {v12}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -693,16 +693,16 @@
 
     move-result-object v7
 
-    invoke-interface {v6, v7}, Ldefpackage/ljf;->e(Ljava/lang/String;)V
+    invoke-interface {v6, v7}, Lljf;->e(Ljava/lang/String;)V
 
     .line 216
-    invoke-interface {v5}, Ldefpackage/bcl;->c()Ljava/lang/Object;
+    invoke-interface {v5}, Lbcl;->c()Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Landroid/graphics/drawable/Drawable;
 
-    invoke-static {v7}, Ldefpackage/mip;->eu(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
+    invoke-static {v7}, Lmip;->eu(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     move-result-object v7
 
@@ -712,23 +712,23 @@
 
     .end local v2    # "sb6":Ljava/lang/StringBuilder;
     .local v19, "sb6":Ljava/lang/StringBuilder;
-    iget-object v2, v4, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v2, v4, Ldxv;->c:Lljf;
 
-    invoke-interface {v2}, Ldefpackage/ljf;->f()V
+    invoke-interface {v2}, Lljf;->f()V
 
     .line 218
-    invoke-virtual {v13}, Ldefpackage/ojc;->g()Z
+    invoke-virtual {v13}, Lojc;->g()Z
 
     move-result v2
 
     if-eqz v2, :cond_6
 
     .line 219
-    iget-object v2, v4, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v2, v4, Ldxv;->c:Lljf;
 
     .line 220
-    .local v2, "ljfVar2":Ldefpackage/ljf;
-    invoke-virtual {v13}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    .local v2, "ljfVar2":Lljf;
+    invoke-virtual {v13}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v21
 
@@ -742,8 +742,8 @@
     .local v22, "valueOf3":Ljava/lang/String;
     move-object/from16 v21, v5
 
-    .end local v5    # "a2":Ldefpackage/bcl;
-    .local v21, "a2":Ldefpackage/bcl;
+    .end local v5    # "a2":Lbcl;
+    .local v21, "a2":Lbcl;
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-static {v12}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -766,8 +766,8 @@
 
     move-object/from16 v25, v6
 
-    .end local v6    # "ljfVar":Ldefpackage/ljf;
-    .local v25, "ljfVar":Ldefpackage/ljf;
+    .end local v6    # "ljfVar":Lljf;
+    .local v25, "ljfVar":Lljf;
     add-int v6, v23, v24
 
     invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(I)V
@@ -800,10 +800,10 @@
 
     move-result-object v6
 
-    invoke-interface {v2, v6}, Ldefpackage/ljf;->e(Ljava/lang/String;)V
+    invoke-interface {v2, v6}, Lljf;->e(Ljava/lang/String;)V
 
     .line 227
-    invoke-virtual {v13}, Ldefpackage/ojc;->c()Ljava/lang/Object;
+    invoke-virtual {v13}, Lojc;->c()Ljava/lang/Object;
 
     move-result-object v6
 
@@ -856,7 +856,7 @@
     .end local v27    # "width2":I
     .local v2, "width2":I
     .local v5, "width":I
-    .local v23, "ljfVar2":Ldefpackage/ljf;
+    .local v23, "ljfVar2":Lljf;
     .local v24, "sb7":Ljava/lang/StringBuilder;
     if-gt v5, v2, :cond_4
 
@@ -946,24 +946,24 @@
 
     .line 240
     :goto_4
-    iget-object v9, v4, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v9, v4, Ldxv;->c:Lljf;
 
-    invoke-interface {v9}, Ldefpackage/ljf;->f()V
+    invoke-interface {v9}, Lljf;->f()V
 
     goto :goto_5
 
     .line 218
     .end local v2    # "width2":I
-    .end local v21    # "a2":Ldefpackage/bcl;
+    .end local v21    # "a2":Lbcl;
     .end local v22    # "valueOf3":Ljava/lang/String;
-    .end local v23    # "ljfVar2":Ldefpackage/ljf;
+    .end local v23    # "ljfVar2":Lljf;
     .end local v24    # "sb7":Ljava/lang/StringBuilder;
-    .end local v25    # "ljfVar":Ldefpackage/ljf;
+    .end local v25    # "ljfVar":Lljf;
     .end local v26    # "sb3":Ljava/lang/String;
     .end local v27    # "size":Landroid/util/Size;
     .end local v28    # "parseId":J
-    .local v5, "a2":Ldefpackage/bcl;
-    .local v6, "ljfVar":Ldefpackage/ljf;
+    .local v5, "a2":Lbcl;
+    .local v6, "ljfVar":Lljf;
     .local v8, "sb3":Ljava/lang/String;
     .restart local v9    # "parseId":J
     :cond_6
@@ -976,19 +976,19 @@
     move-wide/from16 v28, v9
 
     .line 242
-    .end local v5    # "a2":Ldefpackage/bcl;
-    .end local v6    # "ljfVar":Ldefpackage/ljf;
+    .end local v5    # "a2":Lbcl;
+    .end local v6    # "ljfVar":Lljf;
     .end local v8    # "sb3":Ljava/lang/String;
     .end local v9    # "parseId":J
-    .restart local v21    # "a2":Ldefpackage/bcl;
-    .restart local v25    # "ljfVar":Ldefpackage/ljf;
+    .restart local v21    # "a2":Lbcl;
+    .restart local v25    # "ljfVar":Lljf;
     .restart local v26    # "sb3":Ljava/lang/String;
     .restart local v28    # "parseId":J
     :goto_5
-    iget-object v2, v4, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v2, v4, Ldxv;->c:Lljf;
 
     .line 243
-    .local v2, "ljfVar3":Ldefpackage/ljf;
+    .local v2, "ljfVar3":Lljf;
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-static {v12}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -1020,41 +1020,41 @@
 
     move-result-object v0
 
-    invoke-interface {v2, v0}, Ldefpackage/ljf;->e(Ljava/lang/String;)V
+    invoke-interface {v2, v0}, Lljf;->e(Ljava/lang/String;)V
     :try_end_1
-    .catch Ldefpackage/dxy; {:try_start_1 .. :try_end_1} :catch_3
+    .catch Ldxy; {:try_start_1 .. :try_end_1} :catch_3
 
     .line 249
     :try_start_2
-    iget-object v0, v4, Ldefpackage/dxv;->d:Ldefpackage/dxx;
+    iget-object v0, v4, Ldxv;->d:Ldxx;
 
     .line 250
-    .local v0, "dxxVar":Ldefpackage/dxx;
-    invoke-virtual {v13}, Ldefpackage/ojc;->g()Z
+    .local v0, "dxxVar":Ldxx;
+    invoke-virtual {v13}, Lojc;->g()Z
 
     move-result v6
 
     if-nez v6, :cond_7
 
     .line 251
-    iget-object v6, v4, Ldefpackage/dxv;->f:Ldefpackage/dxx;
+    iget-object v6, v4, Ldxv;->f:Ldxx;
 
     move-object v0, v6
 
     .line 253
     :cond_7
-    invoke-virtual {v0, v7}, Ldefpackage/dxx;->a(Landroid/graphics/Bitmap;)Ljava/io/ByteArrayOutputStream;
+    invoke-virtual {v0, v7}, Ldxx;->a(Landroid/graphics/Bitmap;)Ljava/io/ByteArrayOutputStream;
 
     move-result-object v6
 
     .line 254
     .local v6, "a3":Ljava/io/ByteArrayOutputStream;
-    iget-object v8, v4, Ldefpackage/dxv;->c:Ldefpackage/ljf;
+    iget-object v8, v4, Ldxv;->c:Lljf;
 
-    invoke-interface {v8}, Ldefpackage/ljf;->f()V
+    invoke-interface {v8}, Lljf;->f()V
 
     .line 255
-    iget-object v8, v3, Ldefpackage/det;->a:Landroid/content/ContentProvider;
+    iget-object v8, v3, Ldet;->a:Landroid/content/ContentProvider;
 
     sget-object v31, Landroid/net/Uri;->EMPTY:Landroid/net/Uri;
 
@@ -1067,12 +1067,12 @@
     new-instance v9, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ldefpackage/dxy; {:try_start_2 .. :try_end_2} :catch_3
+    .catch Ldxy; {:try_start_2 .. :try_end_2} :catch_3
 
     move-object/from16 v10, p0
 
     :try_start_3
-    invoke-direct {v9, v10, v4, v12, v6}, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;-><init>(Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;Ldefpackage/dxv;Ljava/lang/String;Ljava/io/ByteArrayOutputStream;)V
+    invoke-direct {v9, v10, v4, v12, v6}, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider$1;-><init>(Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;Ldxv;Ljava/lang/String;Ljava/io/ByteArrayOutputStream;)V
 
     move-object/from16 v30, v8
 
@@ -1083,7 +1083,7 @@
     move-result-object v8
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
-    .catch Ldefpackage/dxy; {:try_start_3 .. :try_end_3} :catch_2
+    .catch Ldxy; {:try_start_3 .. :try_end_3} :catch_2
 
     .line 301
     .end local v16    # "openPipeHelper":Landroid/os/ParcelFileDescriptor;
@@ -1093,7 +1093,7 @@
     goto/16 :goto_9
 
     .line 302
-    .end local v0    # "dxxVar":Ldefpackage/dxx;
+    .end local v0    # "dxxVar":Ldxx;
     .end local v6    # "a3":Ljava/io/ByteArrayOutputStream;
     .end local v8    # "openPipeHelper":Landroid/os/ParcelFileDescriptor;
     .restart local v16    # "openPipeHelper":Landroid/os/ParcelFileDescriptor;
@@ -1111,11 +1111,11 @@
     .local v0, "e":Ljava/io/IOException;
     :goto_6
     :try_start_4
-    new-instance v6, Ldefpackage/dxy;
+    new-instance v6, Ldxy;
 
-    invoke-direct {v6, v0}, Ldefpackage/dxy;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v6, v0}, Ldxy;-><init>(Ljava/lang/Throwable;)V
 
-    .end local v3    # "b":Ldefpackage/det;
+    .end local v3    # "b":Ldet;
     .end local v16    # "openPipeHelper":Landroid/os/ParcelFileDescriptor;
     .end local p0    # "this":Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
     .end local p1    # "uri":Landroid/net/Uri;
@@ -1124,16 +1124,16 @@
 
     .line 207
     .end local v0    # "e":Ljava/io/IOException;
-    .end local v18    # "a":Ldefpackage/ojc;
+    .end local v18    # "a":Lojc;
     .end local v19    # "sb6":Ljava/lang/StringBuilder;
     .end local v20    # "sb2":Ljava/lang/StringBuilder;
-    .end local v21    # "a2":Ldefpackage/bcl;
-    .end local v25    # "ljfVar":Ldefpackage/ljf;
+    .end local v21    # "a2":Lbcl;
+    .end local v25    # "ljfVar":Lljf;
     .end local v26    # "sb3":Ljava/lang/String;
     .end local v28    # "parseId":J
-    .local v2, "a":Ldefpackage/ojc;
-    .restart local v3    # "b":Ldefpackage/det;
-    .local v5, "a2":Ldefpackage/bcl;
+    .local v2, "a":Lojc;
+    .restart local v3    # "b":Ldet;
+    .local v5, "a2":Lbcl;
     .local v7, "sb2":Ljava/lang/StringBuilder;
     .local v8, "sb3":Ljava/lang/String;
     .restart local v9    # "parseId":J
@@ -1154,19 +1154,19 @@
 
     move-object/from16 v10, p0
 
-    .end local v2    # "a":Ldefpackage/ojc;
-    .end local v5    # "a2":Ldefpackage/bcl;
+    .end local v2    # "a":Lojc;
+    .end local v5    # "a2":Lbcl;
     .end local v7    # "sb2":Ljava/lang/StringBuilder;
     .end local v8    # "sb3":Ljava/lang/String;
     .end local v9    # "parseId":J
-    .restart local v18    # "a":Ldefpackage/ojc;
+    .restart local v18    # "a":Lojc;
     .restart local v20    # "sb2":Ljava/lang/StringBuilder;
-    .restart local v21    # "a2":Ldefpackage/bcl;
+    .restart local v21    # "a2":Lbcl;
     .restart local v26    # "sb3":Ljava/lang/String;
     .restart local v28    # "parseId":J
-    sget-object v0, Ldefpackage/dxv;->a:Ldefpackage/ouj;
+    sget-object v0, Ldxv;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->b()Lova;
 
     move-result-object v0
 
@@ -1174,7 +1174,7 @@
 
     const/16 v2, 0x3d9
 
-    invoke-interface {v0, v2}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v0, v2}, Lova;->G(I)Lova;
 
     move-result-object v0
 
@@ -1182,16 +1182,16 @@
 
     const-string v2, "%s DrawableResource is not set in ProcessingMedia"
 
-    invoke-interface {v0, v2, v12}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v0, v2, v12}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 208
-    new-instance v0, Ldefpackage/dxy;
+    new-instance v0, Ldxy;
 
     const-string v2, "DrawableResource is not set in ProcessingMedia"
 
-    invoke-direct {v0, v2}, Ldefpackage/dxy;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Ldxy;-><init>(Ljava/lang/String;)V
 
-    .end local v3    # "b":Ldefpackage/det;
+    .end local v3    # "b":Ldet;
     .end local v16    # "openPipeHelper":Landroid/os/ParcelFileDescriptor;
     .end local p0    # "this":Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
     .end local p1    # "uri":Landroid/net/Uri;
@@ -1199,13 +1199,13 @@
     throw v0
 
     .line 202
-    .end local v18    # "a":Ldefpackage/ojc;
+    .end local v18    # "a":Lojc;
     .end local v20    # "sb2":Ljava/lang/StringBuilder;
-    .end local v21    # "a2":Ldefpackage/bcl;
+    .end local v21    # "a2":Lbcl;
     .end local v26    # "sb3":Ljava/lang/String;
     .end local v28    # "parseId":J
-    .restart local v2    # "a":Ldefpackage/ojc;
-    .restart local v3    # "b":Ldefpackage/det;
+    .restart local v2    # "a":Lojc;
+    .restart local v3    # "b":Ldet;
     .restart local v7    # "sb2":Ljava/lang/StringBuilder;
     .restart local v8    # "sb3":Ljava/lang/String;
     .restart local v9    # "parseId":J
@@ -1224,17 +1224,17 @@
 
     move-object/from16 v10, p0
 
-    .end local v2    # "a":Ldefpackage/ojc;
+    .end local v2    # "a":Lojc;
     .end local v7    # "sb2":Ljava/lang/StringBuilder;
     .end local v8    # "sb3":Ljava/lang/String;
     .end local v9    # "parseId":J
-    .restart local v18    # "a":Ldefpackage/ojc;
+    .restart local v18    # "a":Lojc;
     .restart local v20    # "sb2":Ljava/lang/StringBuilder;
     .restart local v26    # "sb3":Ljava/lang/String;
     .restart local v28    # "parseId":J
-    sget-object v0, Ldefpackage/dxv;->a:Ldefpackage/ouj;
+    sget-object v0, Ldxv;->a:Louj;
 
-    invoke-virtual {v0}, Ldefpackage/oue;->b()Ldefpackage/ova;
+    invoke-virtual {v0}, Loue;->b()Lova;
 
     move-result-object v0
 
@@ -1242,7 +1242,7 @@
 
     const/16 v2, 0x3da
 
-    invoke-interface {v0, v2}, Ldefpackage/ova;->G(I)Ldefpackage/ova;
+    invoke-interface {v0, v2}, Lova;->G(I)Lova;
 
     move-result-object v0
 
@@ -1250,37 +1250,37 @@
 
     const-string v2, "%s ProcessingMedia does not exist in ProcessingMediaManager"
 
-    invoke-interface {v0, v2, v12}, Ldefpackage/ova;->r(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-interface {v0, v2, v12}, Lova;->r(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 203
-    new-instance v0, Ldefpackage/dxy;
+    new-instance v0, Ldxy;
 
     const-string v2, "ProcessingMedia does not exist in ProcessingMediaManager"
 
-    invoke-direct {v0, v2}, Ldefpackage/dxy;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Ldxy;-><init>(Ljava/lang/String;)V
 
-    .end local v3    # "b":Ldefpackage/det;
+    .end local v3    # "b":Ldet;
     .end local v16    # "openPipeHelper":Landroid/os/ParcelFileDescriptor;
     .end local p0    # "this":Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
     .end local p1    # "uri":Landroid/net/Uri;
     .end local p2    # "str":Ljava/lang/String;
     throw v0
     :try_end_4
-    .catch Ldefpackage/dxy; {:try_start_4 .. :try_end_4} :catch_2
+    .catch Ldxy; {:try_start_4 .. :try_end_4} :catch_2
 
     .line 305
-    .end local v4    # "dxvVar":Ldefpackage/dxv;
+    .end local v4    # "dxvVar":Ldxv;
     .end local v11    # "sb4":Ljava/lang/StringBuilder;
     .end local v12    # "sb5":Ljava/lang/String;
-    .end local v13    # "ojcVar":Ldefpackage/ojc;
+    .end local v13    # "ojcVar":Lojc;
     .end local v14    # "queryParameter":Ljava/lang/String;
     .end local v15    # "queryParameter2":Ljava/lang/String;
     .end local v17    # "i2":I
-    .end local v18    # "a":Ldefpackage/ojc;
+    .end local v18    # "a":Lojc;
     .end local v20    # "sb2":Ljava/lang/StringBuilder;
     .end local v26    # "sb3":Ljava/lang/String;
     .end local v28    # "parseId":J
-    .restart local v3    # "b":Ldefpackage/det;
+    .restart local v3    # "b":Ldet;
     .restart local v16    # "openPipeHelper":Landroid/os/ParcelFileDescriptor;
     .restart local p0    # "this":Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;
     .restart local p1    # "uri":Landroid/net/Uri;
@@ -1312,7 +1312,7 @@
     move-object v2, v0
 
     .line 306
-    .local v2, "e2":Ldefpackage/dxy;
+    .local v2, "e2":Ldxy;
     invoke-static/range {p1 .. p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
@@ -1378,8 +1378,8 @@
 
     invoke-direct {v0, v7}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
 
-    .end local v2    # "e2":Ldefpackage/dxy;
-    .end local v3    # "b":Ldefpackage/det;
+    .end local v2    # "e2":Ldxy;
+    .end local v3    # "b":Ldet;
     .end local v4    # "valueOf4":Ljava/lang/String;
     .end local v5    # "message":Ljava/lang/String;
     .end local v6    # "sb9":Ljava/lang/StringBuilder;
@@ -1392,8 +1392,8 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_5 .. :try_end_5} :catch_5
 
     .line 315
-    .restart local v2    # "e2":Ldefpackage/dxy;
-    .restart local v3    # "b":Ldefpackage/det;
+    .restart local v2    # "e2":Ldxy;
+    .restart local v3    # "b":Ldet;
     .restart local v4    # "valueOf4":Ljava/lang/String;
     .restart local v5    # "message":Ljava/lang/String;
     .restart local v6    # "sb9":Ljava/lang/StringBuilder;
@@ -1429,7 +1429,7 @@
     .line 164
     .local v2, "i":I
     :try_start_6
-    invoke-virtual {v3, v1, v2}, Ldefpackage/det;->a(Landroid/net/Uri;I)Landroid/os/ParcelFileDescriptor;
+    invoke-virtual {v3, v1, v2}, Ldet;->a(Landroid/net/Uri;I)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
     :try_end_6
@@ -1475,7 +1475,7 @@
     .line 156
     .local v2, "i":I
     :try_start_7
-    invoke-virtual {v3, v1, v2}, Ldefpackage/det;->a(Landroid/net/Uri;I)Landroid/os/ParcelFileDescriptor;
+    invoke-virtual {v3, v1, v2}, Ldet;->a(Landroid/net/Uri;I)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
     :try_end_7
@@ -1521,7 +1521,7 @@
     .line 148
     .local v2, "i":I
     :try_start_8
-    invoke-virtual {v3, v1, v2}, Ldefpackage/det;->a(Landroid/net/Uri;I)Landroid/os/ParcelFileDescriptor;
+    invoke-virtual {v3, v1, v2}, Ldet;->a(Landroid/net/Uri;I)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
     :try_end_8
@@ -1593,24 +1593,24 @@
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     .line 329
-    invoke-direct {p0}, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->b()Ldefpackage/det;
+    invoke-direct {p0}, Lcom/google/android/apps/camera/contentprovider/CameraContentProvider;->b()Ldet;
 
     move-result-object v0
 
     .line 330
-    .local v0, "b":Ldefpackage/det;
-    iget-object v1, v0, Ldefpackage/det;->c:Ldefpackage/ljf;
+    .local v0, "b":Ldet;
+    iget-object v1, v0, Ldet;->c:Lljf;
 
     const-string v2, "SpecialTypesQuery"
 
-    invoke-interface {v1, v2}, Ldefpackage/ljf;->e(Ljava/lang/String;)V
+    invoke-interface {v1, v2}, Lljf;->e(Ljava/lang/String;)V
 
     .line 331
-    iget-object v1, v0, Ldefpackage/det;->d:Ldefpackage/dxa;
+    iget-object v1, v0, Ldet;->d:Ldxa;
 
     .line 332
-    .local v1, "dxaVar":Ldefpackage/dxa;
-    iget-object v2, v1, Ldefpackage/dxa;->d:Landroid/content/UriMatcher;
+    .local v1, "dxaVar":Ldxa;
+    iget-object v2, v1, Ldxa;->d:Landroid/content/UriMatcher;
 
     invoke-virtual {v2, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -1663,41 +1663,41 @@
     .end local v2    # "valueOf":Ljava/lang/String;
     .end local v3    # "sb":Ljava/lang/StringBuilder;
     :sswitch_0
-    iget-object v2, v1, Ldefpackage/dxa;->c:Ldefpackage/dwz;
+    iget-object v2, v1, Ldxa;->c:Ldwz;
 
     .line 342
-    .local v2, "dwzVar":Ldefpackage/dwz;
+    .local v2, "dwzVar":Ldwz;
     goto :goto_0
 
     .line 337
-    .end local v2    # "dwzVar":Ldefpackage/dwz;
+    .end local v2    # "dwzVar":Ldwz;
     :sswitch_1
-    iget-object v2, v1, Ldefpackage/dxa;->b:Ldefpackage/dwz;
+    iget-object v2, v1, Ldxa;->b:Ldwz;
 
     .line 338
-    .restart local v2    # "dwzVar":Ldefpackage/dwz;
+    .restart local v2    # "dwzVar":Ldwz;
     goto :goto_0
 
     .line 334
-    .end local v2    # "dwzVar":Ldefpackage/dwz;
+    .end local v2    # "dwzVar":Ldwz;
     :sswitch_2
-    iget-object v2, v1, Ldefpackage/dxa;->a:Ldefpackage/dwz;
+    iget-object v2, v1, Ldxa;->a:Ldwz;
 
     .line 335
-    .restart local v2    # "dwzVar":Ldefpackage/dwz;
+    .restart local v2    # "dwzVar":Ldwz;
     nop
 
     .line 350
     :goto_0
-    invoke-interface {v2, p1, p2}, Ldefpackage/dwz;->a(Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-interface {v2, p1, p2}, Ldwz;->a(Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v3
 
     .line 351
     .local v3, "a":Landroid/database/Cursor;
-    iget-object v4, v0, Ldefpackage/det;->c:Ldefpackage/ljf;
+    iget-object v4, v0, Ldet;->c:Lljf;
 
-    invoke-interface {v4}, Ldefpackage/ljf;->f()V
+    invoke-interface {v4}, Lljf;->f()V
 
     .line 352
     invoke-static {}, Landroid/os/Trace;->endSection()V

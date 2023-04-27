@@ -1,51 +1,87 @@
-.class public final Ldefpackage/gc;
+.class public Ldefpackage/Gc;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Landroid/view/View$OnApplyWindowInsetsListener;
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lfrl;->a(Lpht;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Ldefpackage/ft;
+.field public final synthetic this$0:Lfrl;
+
+.field public final synthetic val$f:Lpih;
+
+.field public final synthetic val$mediaFormat:Landroid/media/MediaFormat;
+
+.field public final synthetic val$phtVar:Lpht;
 
 
 # direct methods
-.method public constructor <init>(Ldefpackage/ft;)V
+.method public constructor <init>(Lfrl;Lpht;Lpih;Landroid/media/MediaFormat;)V
     .locals 0
-    .param p1, "ftVar"    # Ldefpackage/ft;
+    .param p1, "this$0"    # Lfrl;
 
-    .line 12
+    .line 33
+    iput-object p1, p0, Ldefpackage/Gc;->this$0:Lfrl;
+
+    iput-object p2, p0, Ldefpackage/Gc;->val$phtVar:Lpht;
+
+    iput-object p3, p0, Ldefpackage/Gc;->val$f:Lpih;
+
+    iput-object p4, p0, Ldefpackage/Gc;->val$mediaFormat:Landroid/media/MediaFormat;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
-    iput-object p1, p0, Ldefpackage/gc;->a:Ldefpackage/ft;
-
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 2
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "windowInsets"    # Landroid/view/WindowInsets;
+.method public final run()V
+    .locals 4
 
-    .line 18
-    iget-object v0, p0, Ldefpackage/gc;->a:Ldefpackage/ft;
+    .line 36
+    iget-object v0, p0, Ldefpackage/Gc;->val$phtVar:Lpht;
 
-    invoke-static {p2, p1}, Ldefpackage/gy;->m(Landroid/view/WindowInsets;Landroid/view/View;)Ldefpackage/gy;
+    .line 37
+    .local v0, "phtVar2":Lpht;
+    iget-object v1, p0, Ldefpackage/Gc;->val$f:Lpih;
 
-    move-result-object v1
+    .line 38
+    .local v1, "pihVar":Lpih;
+    iget-object v2, p0, Ldefpackage/Gc;->val$mediaFormat:Landroid/media/MediaFormat;
 
-    invoke-interface {v0, p1, v1}, Ldefpackage/ft;->a(Landroid/view/View;Ldefpackage/gy;)Ldefpackage/gy;
+    .line 39
+    .local v2, "mediaFormat2":Landroid/media/MediaFormat;
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->isCancelled()Z
 
-    move-result-object v0
+    move-result v3
 
-    invoke-virtual {v0}, Ldefpackage/gy;->n()Landroid/view/WindowInsets;
+    if-eqz v3, :cond_0
 
-    move-result-object v0
+    .line 40
+    const/4 v3, 0x0
 
-    return-object v0
+    invoke-virtual {v1, v3}, Lpfx;->cancel(Z)Z
+
+    goto :goto_0
+
+    .line 42
+    :cond_0
+    invoke-virtual {v1, v2}, Lpih;->o(Ljava/lang/Object;)Z
+
+    .line 44
+    :goto_0
+    return-void
 .end method
