@@ -1,5 +1,7 @@
 package defpackage;
 
+import android.util.Log;
+
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -19,6 +21,10 @@ public final class lba implements ScheduledExecutorService {
     }
 
     private final void a(pht phtVar) {
+        if (phtVar == null) {
+            Log.e("lba", "luyuedong666 - a phtVar is null, return!");
+            return;
+        }
         phtVar.d(new lay(this, phtVar), pgr.a);
     }
 

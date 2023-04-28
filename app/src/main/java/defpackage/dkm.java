@@ -1,7 +1,6 @@
 package defpackage;
 
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -42,75 +41,7 @@ public final class dkm {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.lvs b(defpackage.lvq var1, defpackage.ddf var2, defpackage.lwd var3) {
-        lvs var4;
-        if (var3 == null) {
-            var4 = null;
-        } else {
-            label42: {
-                Integer var5 = (Integer)var2.a(ddl.y).c();
-                Integer var9 = (Integer)var2.a(ddl.z).c();
-                String var10;
-                switch (var3.ordinal()) {
-                    case 0:
-                        if (var9 != -1) {
-                            var10 = var9.toString();
-                        } else {
-                            var10 = null;
-                        }
-                        break;
-                    case 1:
-                        if (var5 != -1) {
-                            var10 = var5.toString();
-                        } else {
-                            var10 = null;
-                        }
-                        break;
-                    case 2:
-                        d.u(a.c(), "TestOnly camera facing %s is not supported", var3, '痰');
-                        var4 = null;
-                        break label42;
-                    default:
-                        var10 = null;
-                }
-
-                if (var10 == null) {
-                    var4 = null;
-                } else {
-                    Iterator var6 = var1.h(var3).iterator();
-
-                    while(true) {
-                        if (!var6.hasNext()) {
-                            d.u(a.c(), "TestOnly Camera id %s is not supported", var10, '檀');
-                            var4 = null;
-                            break;
-                        }
-
-                        lvs var11 = (lvs)var6.next();
-                        if (var11.a.equals(var10)) {
-                            var4 = var11;
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-
-        if (var4 != null) {
-            d.u(a.c(), "Set TestOnly camera id (%s)", var4, '坛');
-            return var4;
-        } else {
-            ddi var12 = ddl.a;
-            var2.b();
-            var2.b();
-            lks var7 = new lks(new lkp(var1), var1);
-            var7.b = new lkr(var7.b, new lko(var3));
-            var7.b = new lkr(var7.b, new lkn(var7));
-            var7.b.b();
-            lvp var8 = var7.b.a();
-            return var8 == null ? null : ((lvo)var8).a;
-        }
-
+    public final defpackage.lvs b(defpackage.lvq r6, defpackage.ddf r7, defpackage.lwd r8) {
         /*
             r5 = this;
             r0 = 0
@@ -222,6 +153,6 @@ public final class dkm {
             lvs r6 = r6.a
             return r6
         */
-//        throw new UnsupportedOperationException("Method not decompiled: defpackage.dkm.b(lvq, ddf, lwd):lvs");
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.dkm.b(lvq, ddf, lwd):lvs");
     }
 }

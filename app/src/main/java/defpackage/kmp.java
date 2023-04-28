@@ -2,10 +2,7 @@ package defpackage;
 
 import android.accounts.Account;
 
-import com.google.android.gms.common.api.Scope;
-
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.Executor;
 
@@ -22,68 +19,8 @@ public abstract class kmp extends kmb implements kie {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public kmp(android.content.Context var1, android.os.Looper var2, int var3, defpackage.kmf var4, defpackage.kjq var5, defpackage.kkw var6) {
-        super(var1, var2, kmr.h, khm.a, var3, new kmn(var5), new kmo(var6), var4.f);
-        Object var7 = kmr.a;
-        synchronized(var7){}
-
-        label175: {
-            Throwable var10000;
-            boolean var10001;
-            label170: {
-                try {
-                    if (kmr.h == null) {
-                        kmr var8 = new kmr(var1.getApplicationContext(), var1.getMainLooper());
-                        kmr.h = var8;
-                    }
-                } catch (Throwable var20) {
-                    var10000 = var20;
-                    var10001 = false;
-                    break label170;
-                }
-
-                label167:
-                try {
-                    break label175;
-                } catch (Throwable var19) {
-                    var10000 = var19;
-                    var10001 = false;
-                    break label167;
-                }
-            }
-
-            while(true) {
-                Throwable var21 = var10000;
-
-                try {
-                    throw var21;
-                } catch (Throwable var18) {
-                    var10000 = var18;
-                    var10001 = false;
-                    continue;
-                }
-            }
-        }
-
-        kmr var24 = kmr.h;
-        khm var25 = khm.a;
-        mip.dk(var5);
-        mip.dk(var6);
-//        super(var1, var2, var24, var25, var3, new kmn(var5), new kmo(var6), var4.f);
-        this.t = var4.a;
-        Set var22 = var4.c;
-        Iterator var23 = var22.iterator();
-
-        do {
-            if (!var23.hasNext()) {
-                this.s = var22;
-                return;
-            }
-        } while(var22.contains((Scope)var23.next()));
-
-        throw new IllegalStateException("Expanding scopes is not permitted, use implied scopes instead");
-
-//        super(r12, r13, null, null, r14, null, null, null);
+    public kmp(android.content.Context r12, android.os.Looper r13, int r14, defpackage.kmf r15, defpackage.kjq r16, defpackage.kkw r17) {
+        super(r12, r13, null, null, r14, null, null, null);
         /*
             r11 = this;
             r10 = r11
@@ -144,7 +81,7 @@ public abstract class kmp extends kmb implements kie {
         L66:
             goto L65
         */
-//        throw new UnsupportedOperationException("Method not decompiled: defpackage.kmp.<init>(android.content.Context, android.os.Looper, int, kmf, kjq, kkw):void");
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.kmp.<init>(android.content.Context, android.os.Looper, int, kmf, kjq, kkw):void");
     }
 
     @Override // defpackage.kmb

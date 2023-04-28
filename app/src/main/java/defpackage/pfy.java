@@ -34,17 +34,4 @@ public abstract class pfy extends AbstractExecutorService implements phv {
     protected final RunnableFuture newTaskFor(Callable callable) {
         return pip.g(callable);
     }
-
-    public final pht a(Runnable var1) {
-        return (pht)super.submit(var1);
-    }
-
-    public final pht b(Callable var1) {
-        return (pht)super.submit(var1);
-    }
-
-    public final pht c(Runnable var1, Object var2) {
-        return (pht)super.submit(var1, var2);
-    }
-
 }

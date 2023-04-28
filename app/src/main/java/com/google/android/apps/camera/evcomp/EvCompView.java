@@ -64,8 +64,8 @@ public class EvCompView extends FrameLayout {
         this.c = getResources().getDimensionPixelSize(R.dimen.evcomp_slider_icon_size);
         this.o = getResources().getDimensionPixelSize(R.dimen.evcomp_slider_knob_size);
         this.q = getResources().getDimensionPixelSize(R.dimen.evcomp_slider_touch_area_width);
-        this.h = c(dmg.BRIGHTNESS, 0.0f, 1.0f, R.drawable.ic_evc_brightness_24px, R.color.google_grey800, R.drawable.bg_evcomp_brightness_knob, R.string.brightness_knob_accessibility_description);
-        this.i = c(dmg.SHADOW, 0.0f, 1.0f, R.drawable.ic_evc_shadow_24px, R.color.google_grey100, R.drawable.bg_evcomp_shadow_knob, R.string.shadow_knob_accessibility_description);
+        this.h = c(dmg.BRIGHTNESS, DisplayHelper.DENSITY, 1.0f, R.drawable.ic_evc_brightness_24px, R.color.google_grey800, R.drawable.bg_evcomp_brightness_knob, R.string.brightness_knob_accessibility_description);
+        this.i = c(dmg.SHADOW, DisplayHelper.DENSITY, 1.0f, R.drawable.ic_evc_shadow_24px, R.color.google_grey100, R.drawable.bg_evcomp_shadow_knob, R.string.shadow_knob_accessibility_description);
     }
 
     public static String d(float f) {
@@ -132,8 +132,14 @@ public class EvCompView extends FrameLayout {
             dmfVar.d = f2;
             dmfVar.getDrawable().setTint(getResources().getColor(i2, null));
             return dmfVar;
+        } else {
+            dmfVar.e = f2;
+            dmfVar.d = f2;
+            dmfVar.getDrawable().setTint(getResources().getColor(i2, null));
+            Log.w("", "Min value is greater than max value set to " + f2);
+            return dmfVar;
         }
-        throw new IllegalArgumentException("Min value is greater than max value");
+//        throw new IllegalArgumentException("Min value is greater than max value");
     }
 
     public final void e(dmf dmfVar, float f) {

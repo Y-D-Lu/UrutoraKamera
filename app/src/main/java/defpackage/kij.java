@@ -1,8 +1,6 @@
 package defpackage;
 
 import android.accounts.Account;
-import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
 import android.location.Location;
 import android.os.DeadObjectException;
@@ -11,11 +9,8 @@ import android.os.Looper;
 import android.os.Parcel;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.common.api.GoogleApiActivity;
 import com.google.android.gms.common.api.internal.BasePendingResult;
 
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Collections;
 import java.util.Set;
 
@@ -53,126 +48,12 @@ public class kij {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public kij(android.content.Context var1, android.app.Activity var2, defpackage.kif var3, defpackage.kid var4, defpackage.kii var5) {
-        mip.du(var1, "Null context is not permitted.");
-        mip.du(var5, "Settings must not be null; use Settings.DEFAULT_SETTINGS instead.");
-        this.c = var1.getApplicationContext();
-
-        String var12;
-        label73: {
-            try {
-                var12 = (String)Context.class.getMethod("getAttributionTag").invoke(var1);
-                break label73;
-            } catch (NoSuchMethodException var9) {
-            } catch (IllegalAccessException var10) {
-            } catch (InvocationTargetException var11) {
-            }
-
-            var12 = null;
-        }
-
-        this.d = var12;
-        this.e = var3;
-        this.f = var4;
-        this.h = var5.b;
-        kjg var6 = new kjg(var3, var4, var12);
-        this.g = var6;
-        this.j = new kkh(this);
-        kkg var23 = kkg.c(this.c);
-        this.k = var23;
-        this.i = var23.j.getAndIncrement();
-        mip var13 = var5.c;
-        if (var2 != null && !(var2 instanceof GoogleApiActivity) && Looper.myLooper() == Looper.getMainLooper()) {
-            Object var18 = (new kkm(var2)).a;
-            WeakReference var15;
-            Object var17;
-            if (var18 instanceof by) {
-                label79: {
-                    by var19 = (by)var18;
-                    var15 = (WeakReference)klh.a.get(var19);
-                    klh var16;
-                    if (var15 != null) {
-                        var16 = (klh)var15.get();
-                        var17 = var16;
-                        if (var16 != null) {
-                            break label79;
-                        }
-                    }
-
-                    try {
-                        var16 = (klh)var19.fm().d("SupportLifecycleFragmentImpl");
-                    } catch (ClassCastException var8) {
-                        throw new IllegalStateException("Fragment with tag SupportLifecycleFragmentImpl is not a SupportLifecycleFragmentImpl", var8);
-                    }
-
-                    label51: {
-                        if (var16 != null) {
-                            var17 = var16;
-                            if (!var16.r) {
-                                break label51;
-                            }
-                        }
-
-                        var17 = new klh();
-                        dd var20 = var19.fm().h();
-                        var20.n((bu)var17, "SupportLifecycleFragmentImpl");
-                        var20.h();
-                    }
-
-                    klh.a.put(var19, new WeakReference(var17));
-                }
-            } else {
-                label80: {
-                    var15 = (WeakReference)kkp.a.get(var18);
-                    kkp var14;
-                    if (var15 != null) {
-                        var14 = (kkp)var15.get();
-                        var17 = var14;
-                        if (var14 != null) {
-                            break label80;
-                        }
-                    }
-
-                    try {
-                        var14 = (kkp)((Activity)var18).getFragmentManager().findFragmentByTag("LifecycleFragmentImpl");
-                    } catch (ClassCastException var7) {
-                        throw new IllegalStateException("Fragment with tag LifecycleFragmentImpl is not a LifecycleFragmentImpl", var7);
-                    }
-
-                    label60: {
-                        if (var14 != null) {
-                            var17 = var14;
-                            if (!var14.isRemoving()) {
-                                break label60;
-                            }
-                        }
-
-                        var17 = new kkp();
-                        ((Activity)var18).getFragmentManager().beginTransaction().add((Fragment)var17, "LifecycleFragmentImpl").commitAllowingStateLoss();
-                    }
-
-                    kkp.a.put(var18, new WeakReference(var17));
-                }
-            }
-
-            kju var21 = (kju)((kkn)var17).d(kju.class);
-            kju var22 = var21;
-            if (var21 == null) {
-                var22 = new kju((kkn)var17, var23);
-            }
-
-            var22.e.add(var6);
-            var23.g(var22);
-        }
-
-        Handler var24 = var23.o;
-        var24.sendMessage(var24.obtainMessage(7, this));
-
+    public kij(android.content.Context r7, android.app.Activity r8, defpackage.kif r9, defpackage.kid r10, defpackage.kii r11) {
         /*
             Method dump skipped, instructions count: 310
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-//        throw new UnsupportedOperationException("Method not decompiled: defpackage.kij.<init>(android.content.Context, android.app.Activity, kif, kid, kii):void");
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.kij.<init>(android.content.Context, android.app.Activity, kif, kid, kii):void");
     }
 
     public kij(Context context, kif kifVar, kid kidVar, kii kiiVar) {
@@ -185,8 +66,7 @@ public class kij {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public kij(android.content.Context var1, defpackage.kif var2, defpackage.kid var3, defpackage.mip var4, byte[] r5, byte[] r6, byte[] r7, byte[] r8) {
-        this(var1, var2, var3, new kih(var4).a());
+    public kij(android.content.Context r1, defpackage.kif r2, defpackage.kid r3, defpackage.mip r4, byte[] r5, byte[] r6, byte[] r7, byte[] r8) {
         /*
             r0 = this;
             kih r5 = new kih
@@ -196,7 +76,7 @@ public class kij {
             r0.<init>(r1, r2, r3, r4)
             return
         */
-//        throw new UnsupportedOperationException("Method not decompiled: defpackage.kij.<init>(android.content.Context, kif, kid, mip, byte[], byte[], byte[], byte[]):void");
+        throw new UnsupportedOperationException("Method not decompiled: defpackage.kij.<init>(android.content.Context, kif, kid, mip, byte[], byte[], byte[], byte[]):void");
     }
 
     public kij(Context context, kvx kvxVar) {
