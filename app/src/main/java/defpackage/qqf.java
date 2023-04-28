@@ -66,7 +66,19 @@ public abstract class qqf extends qlc implements qlj {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.qln minusKey(defpackage.qll r2) {
+    public final defpackage.qln minusKey(defpackage.qll var1) {
+        var1.getClass();
+        if (var1 instanceof qld) {
+            qld var2 = (qld)var1;
+            if (var2.b(this.getKey()) && var2.a(this) != null) {
+                return qlo.a;
+            }
+        } else if (qlj.a == var1) {
+            return qlo.a;
+        }
+
+        return this;
+
         /*
             r1 = this;
             r2.getClass()
@@ -88,7 +100,7 @@ public abstract class qqf extends qlc implements qlj {
         L21:
             return r1
         */
-        throw new UnsupportedOperationException("Method not decompiled: defpackage.qqf.minusKey(qll):qln");
+//        throw new UnsupportedOperationException("Method not decompiled: defpackage.qqf.minusKey(qll):qln");
     }
 
     public String toString() {

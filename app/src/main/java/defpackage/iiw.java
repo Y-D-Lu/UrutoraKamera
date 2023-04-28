@@ -155,15 +155,139 @@ public final class iiw implements fjs {
         }
 
         @Override
-        public void run() {
+        public final void run() {
             iiw var13 = this.a;
             ojz var11 = this.b;
-            long var7 = this.c;
+            long var6 = this.c;
             int var3 = this.d;
             int var4 = this.e;
-            final poy poy = (poy) b.a();
-            throw new UnsupportedOperationException("Method not decompiled: defpackage.iit.run():void");
+            poy var14 = (poy)var11.a();
+            pab var12 = pab.b(((pac)var14.b).d);
+            pab var15 = var12;
+            if (var12 == null) {
+                var15 = pab.UNKNOWN_TYPE;
+            }
+
+            pac var20;
+            label61: {
+                if (var15 != pab.CAPTURE_DONE) {
+                    var12 = pab.b(((pac)var14.b).d);
+                    var15 = var12;
+                    if (var12 == null) {
+                        var15 = pab.UNKNOWN_TYPE;
+                    }
+
+                    if (var15 != pab.CAPTURE_COMPUTE) {
+                        var12 = pab.b(((pac)var14.b).d);
+                        var15 = var12;
+                        if (var12 == null) {
+                            var15 = pab.UNKNOWN_TYPE;
+                        }
+
+                        if (var15 != pab.FOREGROUND_EVENT) {
+                            break label61;
+                        }
+                    }
+                }
+
+                String var16 = var13.d;
+                if (var14.c) {
+                    var14.m();
+                    var14.c = false;
+                }
+
+                var20 = (pac)var14.b;
+                var16.getClass();
+                var20.a |= 4;
+                var20.e = var16;
+            }
+
+            long var8 = var13.k;
+            if (var8 != -1L) {
+                if (var14.c) {
+                    var14.m();
+                    var14.c = false;
+                }
+
+                var20 = (pac)var14.b;
+                var20.c |= 4096;
+                var20.an = var8;
+            }
+
+            boolean var10 = var13.h;
+            if (var14.c) {
+                var14.m();
+                var14.c = false;
+            }
+
+            var20 = (pac)var14.b;
+            var20.a |= 536870912;
+            var20.z = var10;
+            var8 = var13.c;
+            var20.b |= 1048576;
+            var20.R = var8;
+            dei var22 = var13.f;
+            lwd var17 = lwd.FRONT;
+            hsr var18 = hsr.UNKNOWN;
+            pef var19 = pef.UNKNOWN;
+            int var5 = var22.ordinal();
+            int var2 = 1;
+            int var1 = var2;
+            switch (var5) {
+                case 0:
+                    break;
+                case 1:
+                    var1 = 2;
+                    break;
+                case 2:
+                    var1 = 3;
+                    break;
+                case 3:
+                    var1 = 4;
+                    break;
+                default:
+                    var1 = var2;
+            }
+
+            if (var14.c) {
+                var14.m();
+                var14.c = false;
+            }
+
+            pac var21 = (pac)var14.b;
+            var21.y = var1 - 1;
+            var2 = var21.a | 268435456;
+            var21.a = var2;
+            String var23 = var13.a;
+            var23.getClass();
+            var1 = 4 | var21.b;
+            var21.b = var1;
+            var21.C = var23;
+            var2 |= 134217728;
+            var21.a = var2;
+            var21.x = var6;
+            var21.a = 67108864 | var2;
+            var21.w = var3;
+            if (var4 != 0) {
+                var21.L = var4 - 1;
+                var21.b = var1 | 16384;
+                var20 = (pac)var14.j();
+                ((fjt)var13.b.mo37get()).a(var20);
+                var13.g.arriveAndDeregister();
+            } else {
+                throw null;
+            }
         }
+
+//        public void run() {
+//            iiw var13 = this.a;
+//            ojz var11 = this.b;
+//            long var7 = this.c;
+//            int var3 = this.d;
+//            int var4 = this.e;
+//            final poy poy = (poy) b.a();
+//            throw new UnsupportedOperationException("Method not decompiled: defpackage.iit.run():void");
+//        }
     }
     private final void aCbak(final ojz ojzVar) {
         final int i = this.x;

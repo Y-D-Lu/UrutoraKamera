@@ -1,7 +1,6 @@
 package defpackage;
 
 import java.util.List;
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
@@ -61,18 +60,18 @@ public class phz extends pfy {
         return sb.toString();
     }
 
-    @Override
-    public pht a(Runnable runnable) {
-        return null;
-    }
-
-    @Override
-    public pht b(Callable callable) {
-        return null;
-    }
-
-    @Override
-    public pht c(Runnable runnable, Object obj) {
-        return null;
-    }
+//    @Override
+//    public pht a(Runnable runnable) {
+//        return null;
+//    }
+//
+//    @Override
+//    public pht b(Callable callable) {
+//        return null;
+//    }
+//
+//    @Override
+//    public pht c(Runnable runnable, Object obj) {
+//        return null;
+//    }
 }

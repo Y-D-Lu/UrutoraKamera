@@ -28,9 +28,7 @@ public final class ek {
 
     public static int d(int i, int i2) {
         if (i2 < 0 || i2 > 255) {
-            android.util.Log.w("ek","alpha must be between 0 and 255, set to 255 from " + i2);
-            i2 = 255;
-            //throw new IllegalArgumentException("alpha must be between 0 and 255.");
+            throw new IllegalArgumentException("alpha must be between 0 and 255.");
         }
         return (i & 16777215) | (i2 << 24);
     }

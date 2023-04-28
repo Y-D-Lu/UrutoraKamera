@@ -8,6 +8,13 @@ public final class kih {
     public mip a;
     private Looper b;
 
+    public kih() {
+    }
+
+    public kih(mip aVar) {
+        a = aVar;
+    }
+
     public final kii a() {
         if (this.a == null) {
             this.a = new mip();
