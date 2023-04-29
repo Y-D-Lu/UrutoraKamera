@@ -98,6 +98,10 @@
 .method public static b(Lmbk;JLdxh;Ljava/lang/String;Llis;Lddf;Lmcc;Lhss;)Lhsg;
     .locals 10
 
+    invoke-static/range {p4 .. p4}, Lhsg;->addFileNamePostfixIfNeed(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
     move-object v0, p0
 
     move-wide v2, p1
@@ -110,7 +114,7 @@
 
     if-ne v7, v4, :cond_0
 
-    invoke-static {p4}, Loje;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6}, Loje;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -123,7 +127,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {p4}, Loje;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6}, Loje;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -154,7 +158,7 @@
 
     move-object v4, p3
 
-    move-object v5, p4
+    move-object v5, v6
 
     move-object v6, p5
 
@@ -1123,4 +1127,96 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method private static addDigitalZoomRatioIfNeed(Ljava/lang/String;)Ljava/lang/String;
+    .registers 7
+    .param p0, "str"    # Ljava/lang/String;
+
+    .line 226
+    sget-wide v0, Lcn/arsenals/ultracamera/UltraCamera$GlobalStatus;->digitalZoomRatio:D
+
+    .line 227
+    .local v0, "ratio":D
+    const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
+
+    sub-double v2, v0, v2
+
+    const-wide/16 v4, 0x1
+
+    cmpg-double v2, v2, v4
+
+    if-gez v2, :cond_d
+
+    .line 228
+    return-object p0
+
+    .line 230
+    :cond_d
+    if-nez p0, :cond_12
+
+    .line 231
+    const-string p0, ""
+
+    goto :goto_23
+
+    .line 233
+    :cond_12
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "_"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 235
+    :goto_23
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    new-instance v3, Ljava/text/DecimalFormat;
+
+    const-string v4, "#.##"
+
+    invoke-direct {v3, v4}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v0, v1}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "x"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 236
+    return-object p0
+.end method
+
+.method private static addFileNamePostfixIfNeed(Ljava/lang/String;)Ljava/lang/String;
+    .registers 1
+    .param p0, "str"    # Ljava/lang/String;
+
+    .line 221
+    invoke-static {p0}, Lhsg;->addDigitalZoomRatioIfNeed(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 222
+    return-object p0
 .end method
