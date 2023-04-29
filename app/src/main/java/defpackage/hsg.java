@@ -4,12 +4,15 @@ import android.content.Context;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
+
+import cn.arsenals.ultracamera.UltraCamera;
 
 /* renamed from: hsg  reason: default package */
 /* loaded from: classes2.dex */
@@ -42,6 +45,7 @@ public final class hsg {
     }
 
     public static hsg b(mbk mbkVar, long j, dxh dxhVar, String str, lis lisVar, ddf ddfVar, mcc mccVar, hss hssVar) {
+        str = addFileNamePostfixIfNeed(str);
         mas a;
         if (hssVar == hss.MARS_STORE) {
             a = mbkVar.a(mccVar, oje.c(str), j);
@@ -211,5 +215,24 @@ public final class hsg {
         sb.append(valueOf2);
         sb.append(")");
         return sb.toString();
+    }
+
+    private static String addFileNamePostfixIfNeed(String str) {
+        str = addDigitalZoomRatioIfNeed(str);
+        return str;
+    }
+
+    private static String addDigitalZoomRatioIfNeed(String str) {
+        double ratio = UltraCamera.GlobalStatus.digitalZoomRatio;
+        if (ratio - 1.0 < Double.MIN_VALUE) {
+            return str;
+        }
+        if (str == null) {
+            str = "";
+        } else {
+            str += "_";
+        }
+        str += new DecimalFormat("#.##").format(ratio) + "x";
+        return str;
     }
 }
