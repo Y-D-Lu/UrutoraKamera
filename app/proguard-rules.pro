@@ -20,12 +20,12 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class !cn.arsenals.ultracamera.UltraCamera,!defpackage.** { *; }
--keepclassmembers class ** { *; }
--allowaccessmodification
--applymapping mappings.txt
+#-keep class !cn.arsenals.ultracamera.UltraCamera,!defpackage.** { *; }
+#-keepclassmembers class ** { *; }
+#-allowaccessmodification
+#-applymapping mappings.txt
 
-#-dontobfuscate
+-dontobfuscate
 
 -verbose
 -dontshrink

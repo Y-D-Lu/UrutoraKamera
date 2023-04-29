@@ -16,6 +16,7 @@ import cn.arsenals.ultracamera.R;
 
 import java.util.concurrent.TimeUnit;
 
+import cn.arsenals.ultracamera.UltraCamera;
 import defpackage.afp;
 import defpackage.enc;
 import defpackage.enw;
@@ -116,6 +117,7 @@ public class ProcessingService extends Service implements hho {
                         }
                     }
                 }, 1000L);
+                UltraCamera.GlobalStatus.isHdrProcessing= true;
                 Helper.sHdr_process = 1;
                 Helper.sHdrProcessTime(1);
             }
@@ -178,6 +180,7 @@ public class ProcessingService extends Service implements hho {
         if (pihVar != null) {
             pihVar.o(Object.class);
         }
+        UltraCamera.GlobalStatus.isHdrProcessing= false;
         Helper.sHdr_process = 0;
         Helper.sHdrProcessTime(0);
     }

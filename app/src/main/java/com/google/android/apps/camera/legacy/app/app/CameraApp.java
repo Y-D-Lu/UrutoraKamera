@@ -10,6 +10,7 @@ import com.google.android.apps.camera.contentprovider.HasCameraContentProviderCo
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import cn.arsenals.ultracamera.UltraCameraManager;
 import defpackage.aar;
 import defpackage.aat;
 import defpackage.amh;
@@ -293,6 +294,8 @@ public class CameraApp extends fip implements HasCameraContentProviderComponent,
 
     @Override // defpackage.fip, android.app.Application
     public final void onCreate() {
+        UltraCameraManager.getInstance().init(getApplicationContext());
+
         android.util.Log.i("luyuedong666", "CameraApp onCreate");
         boolean z;
         Trace.beginSection("GCA_App#onCreate");

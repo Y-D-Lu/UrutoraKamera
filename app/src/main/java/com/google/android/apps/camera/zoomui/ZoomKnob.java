@@ -9,13 +9,13 @@ import android.widget.TextView;
 
 import com.hdrindicator.DisplayHelper;
 
-import cn.arsenals.ultracamera.R;
-
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
+import cn.arsenals.ultracamera.R;
+import cn.arsenals.ultracamera.UltraCamera;
 import defpackage.bpx;
 import defpackage.ddf;
 import defpackage.ddi;
@@ -120,6 +120,7 @@ public class ZoomKnob extends TextView {
         }
         Double.isNaN(Math.round(f * 100.0f));
         double doubleValue = new BigDecimal((float) (d / 100.0d)).setScale(2, 4).doubleValue();
+        UltraCamera.GlobalStatus.digitalZoomRatio = doubleValue;
         CharSequence concat = String.valueOf(new DecimalFormat("0.0").format(doubleValue)).concat("×");
         lzi lziVar = this.j;
         if (lziVar != null && lziVar.k && ((float) (Math.round(10.0d * doubleValue) / 10)) >= 4.0f) {

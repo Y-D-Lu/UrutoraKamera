@@ -1,14 +1,14 @@
 package cn.arsenals.ultracamera;
 
-import android.util.Log;
-
 public class UltraCamera {
-    private static final String TAG = "luyuedong666 - UltraCamera";
+    private static final String TAG = "UltraCamera";
 
-    public static void printLogAndStackTrace() {
-        Log.e(TAG, "printLogAndStackTrace start");
-        Throwable tr = new Throwable();
-        tr.printStackTrace();
-        Log.e(TAG, "printLogAndStackTrace end", tr);
+    public static class GlobalStatus {
+        public static boolean isHdrProcessing = false;
+        public static double digitalZoomRatio = 1.0;
+
+        public static String dump() {
+            return "isHdrProcessing " + isHdrProcessing + " digitalZoomRatio " + digitalZoomRatio;
+        }
     }
 }
