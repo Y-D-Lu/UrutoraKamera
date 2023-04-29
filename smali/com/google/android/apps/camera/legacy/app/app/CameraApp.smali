@@ -1073,6 +1073,16 @@
 .method public final onCreate()V
     .locals 9
 
+    invoke-static {}, Lcn/arsenals/ultracamera/UltraCameraManager;->getInstance()Lcn/arsenals/ultracamera/UltraCameraManager;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcn/arsenals/ultracamera/UltraCameraManager;->init(Landroid/content/Context;)V
+
     const-string v0, "GCA_App#onCreate"
 
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V

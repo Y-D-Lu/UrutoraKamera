@@ -461,6 +461,8 @@
 
     move-result-wide p1
 
+    sput-wide p1, Lcn/arsenals/ultracamera/UltraCamera$GlobalStatus;->digitalZoomRatio:D
+
     new-instance p3, Ljava/text/DecimalFormat;
 
     const-string p4, "0.0"

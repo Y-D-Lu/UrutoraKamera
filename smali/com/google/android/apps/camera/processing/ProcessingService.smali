@@ -296,6 +296,8 @@
 
     const/4 v1, 0x1
 
+    sput-boolean v1, Lcn/arsenals/ultracamera/UltraCamera$GlobalStatus;->isHdrProcessing:Z
+
     sput v1, Lcom/Helper;->sHdr_process:I
 
     invoke-static {v1}, Lcom/Helper;->sHdrProcessTime(I)V
@@ -604,6 +606,8 @@
 
     :cond_3
     const/4 v0, 0x0
+
+    sput-boolean v0, Lcn/arsenals/ultracamera/UltraCamera$GlobalStatus;->isHdrProcessing:Z
 
     sput v0, Lcom/Helper;->sHdr_process:I
 
