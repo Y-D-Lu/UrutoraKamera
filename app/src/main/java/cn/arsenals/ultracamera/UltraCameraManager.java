@@ -35,8 +35,6 @@ public class UltraCameraManager {
         handlerThread = new HandlerThread("UltraCameraManagerHandlerThread");
         handlerThread.start();
         handler = new Handler(handlerThread.getLooper());
-
-        startUltraCameraGlobalStatusPrint();
     }
 
     public void uninit() {
