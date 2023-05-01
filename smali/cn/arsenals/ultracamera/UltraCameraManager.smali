@@ -70,12 +70,12 @@
 .method private onTimeScheduled()V
     .locals 3
 
-    .line 63
+    .line 61
     invoke-static {}, Lcn/arsenals/ultracamera/UltraCamera$GlobalStatus;->dump()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 64
+    .line 62
     .local v0, "status":Ljava/lang/String;
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -95,7 +95,7 @@
 
     invoke-static {v2, v1}, Lcn/arsenals/ultracamera/utils/Alog;->debug(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 65
+    .line 63
     return-void
 .end method
 
@@ -140,37 +140,34 @@
 
     iput-object v0, p0, Lcn/arsenals/ultracamera/UltraCameraManager;->handler:Landroid/os/Handler;
 
-    .line 39
-    invoke-virtual {p0}, Lcn/arsenals/ultracamera/UltraCameraManager;->startUltraCameraGlobalStatusPrint()V
-
-    .line 40
+    .line 38
     return-void
 .end method
 
 .method public startUltraCameraGlobalStatusPrint()V
     .locals 8
 
-    .line 47
+    .line 45
     const-string v0, "UltraCameraManager"
 
     const-string v1, "startUltraCameraGlobalStatusPrint"
 
     invoke-static {v0, v1}, Lcn/arsenals/ultracamera/utils/Alog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 49
+    .line 47
     iget-object v1, p0, Lcn/arsenals/ultracamera/UltraCameraManager;->timer:Ljava/util/Timer;
 
     if-eqz v1, :cond_0
 
-    .line 50
+    .line 48
     const-string v1, "startUltraCameraGlobalStatusPrint timer not null, return!"
 
     invoke-static {v0, v1}, Lcn/arsenals/ultracamera/utils/Alog;->warn(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 51
+    .line 49
     return-void
 
-    .line 53
+    .line 51
     :cond_0
     new-instance v2, Ljava/util/Timer;
 
@@ -178,7 +175,7 @@
 
     iput-object v2, p0, Lcn/arsenals/ultracamera/UltraCameraManager;->timer:Ljava/util/Timer;
 
-    .line 54
+    .line 52
     new-instance v3, Lcn/arsenals/ultracamera/UltraCameraManager$1;
 
     invoke-direct {v3, p0}, Lcn/arsenals/ultracamera/UltraCameraManager$1;-><init>(Lcn/arsenals/ultracamera/UltraCameraManager;)V
@@ -189,56 +186,56 @@
 
     invoke-virtual/range {v2 .. v7}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;JJ)V
 
-    .line 60
+    .line 58
     return-void
 .end method
 
 .method public stopUltraCameraGlobalStatusPrint()V
     .locals 2
 
-    .line 68
+    .line 66
     const-string v0, "UltraCameraManager"
 
     const-string v1, "stopUltraCameraGlobalStatusPrint"
 
     invoke-static {v0, v1}, Lcn/arsenals/ultracamera/utils/Alog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 70
+    .line 68
     iget-object v1, p0, Lcn/arsenals/ultracamera/UltraCameraManager;->timer:Ljava/util/Timer;
 
     if-nez v1, :cond_0
 
-    .line 71
+    .line 69
     const-string v1, "stopUltraCameraGlobalStatusPrint timer is null, return!"
 
     invoke-static {v0, v1}, Lcn/arsenals/ultracamera/utils/Alog;->warn(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 72
+    .line 70
     return-void
 
-    .line 74
+    .line 72
     :cond_0
     invoke-virtual {v1}, Ljava/util/Timer;->cancel()V
 
-    .line 75
+    .line 73
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcn/arsenals/ultracamera/UltraCameraManager;->timer:Ljava/util/Timer;
 
-    .line 76
+    .line 74
     return-void
 .end method
 
 .method public uninit()V
     .locals 2
 
-    .line 43
+    .line 41
     const-string v0, "UltraCameraManager"
 
     const-string v1, "uninit"
 
     invoke-static {v0, v1}, Lcn/arsenals/ultracamera/utils/Alog;->info(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 44
+    .line 42
     return-void
 .end method
