@@ -3,6 +3,8 @@ package defpackage;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
+import cn.arsenals.ultracamera.utils.Alog;
+
 /* renamed from: jxl  reason: default package */
 /* loaded from: classes2.dex */
 final class jxl extends GestureDetector.SimpleOnGestureListener {
@@ -93,6 +95,10 @@ final class jxl extends GestureDetector.SimpleOnGestureListener {
                     jxnVar.m = f3;
                     jxnVar.n += f2;
                     if (jxn.e(f3)) {
+                        if (true) {
+                            Alog.warn("jxl", "onScroll not to switch mode, return true!");
+                            return true;
+                        }
                         jxn jxnVar2 = this.a;
                         jxnVar2.r.a(jxnVar2.m);
                         this.a.q = 2;
