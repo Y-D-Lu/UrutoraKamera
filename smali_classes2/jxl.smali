@@ -337,14 +337,6 @@
 
     if-eqz p1, :cond_1
 
-    const-string v5, "jxl"
-
-    const-string v6, "onScroll not to switch mode, return true!"
-
-    invoke-static {v5, v6}, Lcn/arsenals/ultracamera/utils/Alog;->warn(Ljava/lang/String;Ljava/lang/String;)V
-
-    return p1
-
     iget-object p1, p0, Ljxl;->a:Ljxn;
 
     iget-object p3, p1, Ljxn;->r:Ljqr;
