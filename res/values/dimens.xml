@@ -651,7 +651,7 @@
     <dimen name="overlap_with_top_bar">-10.0dip</dimen>
     <dimen name="photo_button_inner_radius">29.0dip</dimen>
     <dimen name="photo_button_outer_ring_radius">36.0dip</dimen>
-    <dimen name="photo_button_radius">34.0dip</dimen>
+    <dimen name="photo_button_radius">36.0dip</dimen>
     <dimen name="photo_video_switch_size">51.0dip</dimen>
     <dimen name="photos_oemapi_badge_icon_size">18.0dip</dimen>
     <dimen name="photos_oemapi_dialog_icon_size">24.0dip</dimen>
