@@ -733,25 +733,11 @@
 
     iget v1, p0, Lcom/mf/RotSeek;->currentPosToDraw:I
 
-    add-int/2addr v0, v1
-
-    iget v1, p0, Lcom/mf/RotSeek;->itemGap:I
-
-    div-int/lit8 v1, v1, 0x2
-
-    add-int/2addr v0, v1
-
-    iget v1, p0, Lcom/mf/RotSeek;->textsize:I
-
-    div-int/lit8 v1, v1, 0x2
-
-    sub-int v9, v0, v1
+    add-int/ v9, v0, v1
 
     # start x
 
     iget v0, p0, Lcom/mf/RotSeek;->textsize:I
-
-    div-int/lit8 v0, v0, 0x2
 
     sub-int v0, v9, v0
 
@@ -761,21 +747,17 @@
 
     iget v0, p0, Lcom/mf/RotSeek;->viewHeight:I
 
-    int-to-float v0, v0
+    div-int/lit8 v0, v0, 0x2
 
-    const/16 v2, 0xf
+    const/16 v2, 0x10
 
-    invoke-direct {p0, v2}, Lcom/mf/RotSeek;->convertDpiToPixel(I)F
+    sub-int v2, v0, v2
 
-    move-result v2
-
-    sub-float v2, v0, v2
+    int-to-float v2, v2
 
     # end x
 
     iget v0, p0, Lcom/mf/RotSeek;->textsize:I
-
-    div-int/lit8 v0, v0, 0x2
 
     sub-int v0, v9, v0
 
@@ -785,9 +767,13 @@
 
     iget v0, p0, Lcom/mf/RotSeek;->viewHeight:I
 
-    add-int/lit8 v0, v0, -0x14
+    div-int/lit8 v0, v0, 0x2
 
-    int-to-float v4, v0
+    const/16 v4, 0x10
+
+    add-int v4, v0, v4
+
+    int-to-float v4, v4
 
     # paint
 
@@ -801,7 +787,7 @@
 
     int-to-float v0, v9
 
-    const/high16 v1, 0x42a00000    # 80.0f
+    const/high16 v1, 0x42300000    # 48.0f
 
     iget-object v2, p0, Lcom/mf/RotSeek;->paint:Landroid/graphics/Paint;
 
@@ -831,12 +817,6 @@
 
     div-int/lit8 v0, v0, 0x2
 
-    iget v1, p0, Lcom/mf/RotSeek;->itemGap:I
-
-    div-int/lit8 v1, v1, 0x2
-
-    add-int/2addr v0, v1
-
     int-to-float v1, v0
 
     # start y
@@ -858,12 +838,6 @@
     iget v0, p0, Lcom/mf/RotSeek;->viewWidth:I
 
     div-int/lit8 v0, v0, 0x2
-
-    iget v3, p0, Lcom/mf/RotSeek;->itemGap:I
-
-    div-int/lit8 v3, v3, 0x2
-
-    add-int/2addr v0, v3
 
     int-to-float v3, v0
 
