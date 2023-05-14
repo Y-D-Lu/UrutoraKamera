@@ -26,7 +26,7 @@ public class RotSeek extends View {
     private final String TAG;
     private final int VISIBLE_ITEMS_INVIEW;
     private String[] Values;
-    private int allItemsHeight;
+    private int allItemsLength;
     private Context appContext;
     private boolean autoscroll;
     private int currentPosToDraw;
@@ -34,14 +34,14 @@ public class RotSeek extends View {
     private final boolean debug;
     private int distanceInPixelFromLastSwipe;
     private Handler handler;
-    private int itemHeight;
+    private int itemGap;
     private SeekBar.OnSeekBarChangeListener mListener;
     private Paint paint;
     private int realMax;
     private int realMin;
     private final int scrollsubstract;
     private boolean sliderMoving;
-    private int startY;
+    private int startX;
     private final int textColor;
     private int textsize;
     private int viewHeight;
@@ -88,7 +88,7 @@ public class RotSeek extends View {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void checkifCurrentValueHasChanged() {
-        int i = (this.currentPosToDraw + this.realMin) / this.itemHeight;
+        int i = (this.currentPosToDraw + this.realMin) / this.itemGap;
         if (i < 0) {
             i *= -1;
         }
@@ -233,10 +233,10 @@ public class RotSeek extends View {
 
     public void SetStringValues(String[] strArr) {
         this.Values = strArr;
-        this.itemHeight = this.viewHeight / 16;
-        this.allItemsHeight = (this.itemHeight * this.Values.length) + this.itemHeight;
-        this.realMin = ((-this.viewHeight) / 2) - (this.itemHeight / 2);
-        this.realMax = this.allItemsHeight - (this.viewHeight / 2);
+        this.itemGap = this.viewWidth / 16;
+        this.allItemsLength = (this.itemGap * this.Values.length) + this.itemGap;
+        this.realMin = ((-this.viewWidth) / 2) - (this.itemGap / 2);
+        this.realMax = this.allItemsLength - (this.viewWidth / 2);
         redraw();
     }
 
@@ -262,16 +262,16 @@ public class RotSeek extends View {
             if (i2 <= 8) {
                 this.paint.setAlpha(switchalpha(i2));
                 this.paint.setStrokeWidth(1.0f);
-                int i3 = ((((this.itemHeight * i) + this.textsize) + this.currentPosToDraw) + (this.itemHeight / 2)) - (this.textsize / 2);
-                canvas.drawLine(this.viewWidth - convertDpiToPixel(15), i3 - (this.textsize / 2), this.viewWidth - 20, i3 - (this.textsize / 2), this.paint);
+                int i3 = ((((this.itemGap * i) + this.textsize) + this.currentPosToDraw) + (this.itemGap / 2)) - (this.textsize / 2);
+                canvas.drawLine(i3 - (this.textsize / 2), this.viewHeight - convertDpiToPixel(15), i3 - (this.textsize / 2), this.viewHeight - 20, this.paint);
                 if (str != null) {
-                    canvas.drawText(str, 80.0f, i3, this.paint);
+                    canvas.drawText(str, i3, 80.0f, this.paint);
                 }
             }
         }
         this.paint.setAlpha(255);
         this.paint.setStrokeWidth(10.0f);
-        canvas.drawLine(this.viewWidth - convertDpiToPixel(15), (this.viewHeight / 2) + (this.itemHeight / 2), this.viewWidth, (this.viewHeight / 2) + (this.itemHeight / 2), this.paint);
+        canvas.drawLine((this.viewWidth / 2) + (this.itemGap / 2), this.viewHeight - convertDpiToPixel(15), (this.viewWidth / 2) + (this.itemGap / 2), this.viewHeight, this.paint);
     }
 
     @Override // android.view.View
@@ -279,10 +279,10 @@ public class RotSeek extends View {
         super.onSizeChanged(i, i2, i3, i4);
         this.viewWidth = i;
         this.viewHeight = i2;
-        this.itemHeight = this.viewHeight / 16;
-        this.allItemsHeight = (this.itemHeight * this.Values.length) + this.itemHeight;
-        this.realMin = ((-this.viewHeight) / 2) - (this.itemHeight / 2);
-        this.realMax = (this.allItemsHeight - (this.viewHeight / 2)) - (this.itemHeight * 2);
+        this.itemGap = this.viewWidth / 16;
+        this.allItemsLength = (this.itemGap * this.Values.length) + this.itemGap;
+        this.realMin = ((-this.viewWidth) / 2) - (this.itemGap / 2);
+        this.realMax = (this.allItemsLength - (this.viewWidth / 2)) - (this.itemGap * 2);
         setProgress(this.currentValue, false);
         redraw();
     }
@@ -293,7 +293,7 @@ public class RotSeek extends View {
         boolean z = false;
         switch (motionEvent.getAction()) {
             case 0:
-                this.startY = (int) motionEvent.getY();
+                this.startX = (int) motionEvent.getX();
                 this.autoscroll = false;
                 z = true;
                 break;
@@ -324,20 +324,20 @@ public class RotSeek extends View {
                 }
                 break;
             case 2:
-                if (!this.sliderMoving && ((signedDistance = getSignedDistance(this.startY, (int) motionEvent.getY())) > 40 || signedDistance < -40)) {
+                if (!this.sliderMoving && ((signedDistance = getSignedDistance(this.startX, (int) motionEvent.getX())) > 40 || signedDistance < -40)) {
                     this.sliderMoving = true;
                     if (this.mListener != null) {
                         this.mListener.onStartTrackingTouch(null);
                     }
                 }
                 if (this.sliderMoving) {
-                    this.distanceInPixelFromLastSwipe = getSignedDistance(this.startY, (int) motionEvent.getY());
+                    this.distanceInPixelFromLastSwipe = getSignedDistance(this.startX, (int) motionEvent.getX());
                     int i = this.currentPosToDraw - this.distanceInPixelFromLastSwipe;
                     int i2 = i * (-1);
                     if (i2 < this.realMax && i2 > this.realMin) {
                         this.currentPosToDraw = i;
                         checkifCurrentValueHasChanged();
-                        this.startY = (int) motionEvent.getY();
+                        this.startX = (int) motionEvent.getX();
                     }
                 }
                 z = this.sliderMoving;
@@ -393,7 +393,7 @@ public class RotSeek extends View {
         manualfocus.calcdist3(i, f);
         this.currentValue = i;
         log("setprogres" + i);
-        this.currentPosToDraw = ((this.itemHeight * i) + (this.itemHeight / 2) + this.realMin) * (-1);
+        this.currentPosToDraw = ((this.itemGap * i) + (this.itemGap / 2) + this.realMin) * (-1);
         redraw();
         if (this.mListener == null || !z) {
             return;

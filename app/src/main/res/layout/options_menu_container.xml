@@ -46,7 +46,7 @@
         </LinearLayout>
     </FrameLayout>
     <FrameLayout android:id="@+id/slider_focus" android:layout_width="match_parent" android:layout_height="match_parent">
-        <com.mf.RotSeek android:textStyle="bold" android:layout_gravity="bottom|right" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="40dp" android:layout_height="350dp" android:layout_marginRight="70dp" android:layout_marginBottom="30dp" android:layout_alignParentStart="true" android:contextClickable="true"/>
+        <com.mf.RotSeek android:textStyle="bold" android:layout_gravity="bottom|center_horizontal" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="300dp" android:layout_height="40dp" android:layout_marginBottom="30dp" android:contextClickable="true"/>
     </FrameLayout>
     <FrameLayout android:id="@+id/slider_exposure" android:layout_width="match_parent" android:layout_height="match_parent">
         <za.defcomk.prorec.cust.RotSeek android:layout_gravity="bottom|left" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="80dp" android:layout_height="190dp" android:layout_marginBottom="190dp" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:contextClickable="true"/>
