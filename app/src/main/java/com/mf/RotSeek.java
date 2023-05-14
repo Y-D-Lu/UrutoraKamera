@@ -246,10 +246,6 @@ public class RotSeek extends View {
 
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
-        if (Helper.MenuValue("pref_mf_key") == 0) {
-            setVisibility(8);
-            return;
-        }
         super.onDraw(canvas);
         this.paint.setColor(-1);
         this.paint.setTextSize(this.textsize);

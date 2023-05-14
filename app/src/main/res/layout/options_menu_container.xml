@@ -45,9 +45,6 @@
             <com.custom.ButtonUpscale android:theme="@style/CameraX" android:textSize="11sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@+id/button_upscale" android:background="@drawable/main_button" android:layout_width="@dimen/photo_button_radius" android:layout_height="@dimen/photo_button_radius" android:layout_marginTop="0.1dp" android:textOn="" android:textOff="" android:layout_below="@+id/action_menu_divider" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:textAllCaps="?android:attr/windowOverscan" android:textAlignment="center" android:backgroundTint="@null" android:paddingHorizontal="0dp" android:paddingVertical="0dp"/>
         </LinearLayout>
     </FrameLayout>
-    <FrameLayout android:id="@+id/slider_focus" android:layout_width="match_parent" android:layout_height="match_parent">
-        <com.mf.RotSeek android:textStyle="bold" android:layout_gravity="bottom|center_horizontal" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="300dp" android:layout_height="40dp" android:layout_marginBottom="30dp" android:contextClickable="true"/>
-    </FrameLayout>
     <FrameLayout android:id="@+id/slider_exposure" android:layout_width="match_parent" android:layout_height="match_parent">
         <za.defcomk.prorec.cust.RotSeek android:layout_gravity="bottom|left" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="80dp" android:layout_height="190dp" android:layout_marginBottom="190dp" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:contextClickable="true"/>
     </FrameLayout>
