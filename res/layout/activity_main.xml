@@ -28,4 +28,7 @@
     <com.google.android.apps.camera.ui.views.FrontLensIndicatorOverlay android:gravity="center" android:id="@id/front_lens_indicator_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:gca_box="cutoutArea" />
     <include layout="@layout/memory_monitor_container" />
     <FrameLayout android:id="@id/camera_hats_parent" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:gca_box="preview" />
+    <FrameLayout android:id="@+id/slider_focus" android:layout_width="match_parent" android:layout_height="64dp" custom:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="60dp">
+        <com.mf.RotSeek android:textStyle="bold" android:layout_gravity="center" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:contextClickable="true" android:background="#0FFFFFFF"/>
+    </FrameLayout>
 </com.google.android.apps.camera.ui.views.MainActivityLayout>

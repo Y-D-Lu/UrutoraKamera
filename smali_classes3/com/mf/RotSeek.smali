@@ -667,14 +667,6 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 10
 
-    const-string v0, "pref_mf_key"
-
-    invoke-static {v0}, Lcom/Fix/Pref;->MenuValue(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     iget-object v0, p0, Lcom/mf/RotSeek;->paint:Landroid/graphics/Paint;
@@ -893,13 +885,6 @@
 
     :goto_1
     return-void
-
-    :cond_3
-    const/16 v0, 0x9
-
-    invoke-virtual {p0, v0}, Lcom/mf/RotSeek;->setVisibility(I)V
-
-    goto :goto_1
 .end method
 
 .method protected onSizeChanged(IIII)V
