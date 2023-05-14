@@ -258,16 +258,16 @@ public class RotSeek extends View {
             if (i2 <= 8) {
                 this.paint.setAlpha(switchalpha(i2));
                 this.paint.setStrokeWidth(1.0f);
-                int i3 = ((((this.itemGap * i) + this.textsize) + this.currentPosToDraw) + (this.itemGap / 2)) - (this.textsize / 2);
-                canvas.drawLine(i3 - (this.textsize / 2), this.viewHeight - convertDpiToPixel(15), i3 - (this.textsize / 2), this.viewHeight - 20, this.paint);
+                int i3 = ((((this.itemGap * i) + this.textsize) + this.currentPosToDraw));
+                canvas.drawLine(i3 - this.textsize, this.viewHeight / 2 - 16, i3 - this.textsize, this.viewHeight / 2 + 16, this.paint);
                 if (str != null) {
-                    canvas.drawText(str, i3, 80.0f, this.paint);
+                    canvas.drawText(str, i3, 48.0f, this.paint);
                 }
             }
         }
         this.paint.setAlpha(255);
         this.paint.setStrokeWidth(10.0f);
-        canvas.drawLine((this.viewWidth / 2) + (this.itemGap / 2), this.viewHeight - convertDpiToPixel(15), (this.viewWidth / 2) + (this.itemGap / 2), this.viewHeight, this.paint);
+        canvas.drawLine(this.viewWidth / 2, this.viewHeight - convertDpiToPixel(15), this.viewWidth / 2, this.viewHeight, this.paint);
     }
 
     @Override // android.view.View
