@@ -733,7 +733,7 @@
 
     iget v1, p0, Lcom/mf/RotSeek;->currentPosToDraw:I
 
-    add-int/ v9, v0, v1
+    add-int v9, v0, v1
 
     # start x
 
