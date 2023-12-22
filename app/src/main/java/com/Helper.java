@@ -1025,16 +1025,16 @@ public class Helper {
                 mv_h = 480;
                 return;
             case 1:
-                mv_w = 1280;
-                mv_h = 720;
+                mv_w = 1024;
+                mv_h = 768;
                 return;
             case 2:
-                mv_w = 1920;
-                mv_h = 1080;
+                mv_w = 3200;
+                mv_h = 2400;
                 return;
             case 3:
-                mv_w = 3840;
-                mv_h = 2160;
+                mv_w = 4000;
+                mv_h = 3000;
                 return;
             default:
                 mv_w = 640;

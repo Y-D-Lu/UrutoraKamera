@@ -519,9 +519,9 @@
     </array>
     <array name="mv_entries">
         <item>640x480</item>
-        <item>1280x720</item>
-        <item>1920x1080</item>
-        <item>3840x2160</item>
+        <item>1024x768</item>
+        <item>3200x2400</item>
+        <item>4000x3000</item>
     </array>
     <array name="storage_saver_settings_changed">
         <item>@string/storage_saver_settings_changed_1</item>
