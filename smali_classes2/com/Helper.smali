@@ -3670,33 +3670,33 @@
     return-void
 
     :pswitch_1
-    const/16 v0, 0x500
+    const/16 v0, 0x400
 
     sput v0, Lcom/Helper;->mv_w:I
 
-    const/16 v0, 0x2d0
+    const/16 v0, 0x300
 
     sput v0, Lcom/Helper;->mv_h:I
 
     return-void
 
     :pswitch_2
-    const/16 v0, 0x780
+    const/16 v0, 0xc80
 
     sput v0, Lcom/Helper;->mv_w:I
 
-    const/16 v0, 0x438
+    const/16 v0, 0x960
 
     sput v0, Lcom/Helper;->mv_h:I
 
     return-void
 
     :pswitch_3
-    const/16 v0, 0xf00
+    const/16 v0, 0xfa0
 
     sput v0, Lcom/Helper;->mv_w:I
 
-    const/16 v0, 0x870
+    const/16 v0, 0xbb8
 
     sput v0, Lcom/Helper;->mv_h:I
 
